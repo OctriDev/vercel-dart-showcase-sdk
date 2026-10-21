@@ -8,7 +8,8 @@ part of 'inline.dart';
 class GetRoutesResponseVariant3RoutesItemRoute {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCaseSensitive> caseSensitive;
+  final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCaseSensitive>
+      caseSensitive;
   final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCheck> check;
   final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteContinue> continue_;
   final SdkOptional<String> dest;
@@ -16,19 +17,26 @@ class GetRoutesResponseVariant3RoutesItemRoute {
   final SdkOptional<List<String>> env;
   final SdkOptional<List<dynamic>> has;
   final SdkOptional<Map<String, String>> headers;
-  final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteImportant> important;
+  final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteImportant>
+      important;
   final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteLocale> locale;
   final SdkOptional<List<String>> methods;
+
   /// A middleware index in the `middleware` key under the build result
   final SdkOptional<double> middleware;
+
   /// A middleware key within the `output` key under the build result. Overrides a `middleware` definition.
   final SdkOptional<String> middlewarePath;
+
   /// The original middleware matchers.
   final SdkOptional<List<String>> middlewareRawSrc;
   final SdkOptional<List<dynamic>> missing;
   final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteMitigate> mitigate;
   final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteOverride> override_;
-  final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl> respectOriginCacheControl;
+  final SdkOptional<
+          GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl>
+      respectOriginCacheControl;
+
   /// Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`).
   final SdkOptional<String> source;
   final String src;
@@ -36,241 +44,632 @@ class GetRoutesResponseVariant3RoutesItemRoute {
   final SdkOptional<double> statusCode;
   final SdkOptional<List<dynamic>> transforms;
 
-  const GetRoutesResponseVariant3RoutesItemRoute({this.caseSensitive = const SdkOmitted(), this.check = const SdkOmitted(), this.continue_ = const SdkOmitted(), this.dest = const SdkOmitted(), this.destination = const SdkOmitted(), this.env = const SdkOmitted(), this.has = const SdkOmitted(), this.headers = const SdkOmitted(), this.important = const SdkOmitted(), this.locale = const SdkOmitted(), this.methods = const SdkOmitted(), this.middleware = const SdkOmitted(), this.middlewarePath = const SdkOmitted(), this.middlewareRawSrc = const SdkOmitted(), this.missing = const SdkOmitted(), this.mitigate = const SdkOmitted(), this.override_ = const SdkOmitted(), this.respectOriginCacheControl = const SdkOmitted(), this.source = const SdkOmitted(), required this.src, this.status = const SdkOmitted(), this.statusCode = const SdkOmitted(), this.transforms = const SdkOmitted()});
+  const GetRoutesResponseVariant3RoutesItemRoute(
+      {this.caseSensitive = const SdkOmitted(),
+      this.check = const SdkOmitted(),
+      this.continue_ = const SdkOmitted(),
+      this.dest = const SdkOmitted(),
+      this.destination = const SdkOmitted(),
+      this.env = const SdkOmitted(),
+      this.has = const SdkOmitted(),
+      this.headers = const SdkOmitted(),
+      this.important = const SdkOmitted(),
+      this.locale = const SdkOmitted(),
+      this.methods = const SdkOmitted(),
+      this.middleware = const SdkOmitted(),
+      this.middlewarePath = const SdkOmitted(),
+      this.middlewareRawSrc = const SdkOmitted(),
+      this.missing = const SdkOmitted(),
+      this.mitigate = const SdkOmitted(),
+      this.override_ = const SdkOmitted(),
+      this.respectOriginCacheControl = const SdkOmitted(),
+      this.source = const SdkOmitted(),
+      required this.src,
+      this.status = const SdkOmitted(),
+      this.statusCode = const SdkOmitted(),
+      this.transforms = const SdkOmitted()});
 
-  GetRoutesResponseVariant3RoutesItemRoute Function({SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCaseSensitive> caseSensitive, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCheck> check, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteContinue> continue_, SdkOptional<String> dest, SdkOptional<dynamic> destination, SdkOptional<List<String>> env, SdkOptional<List<dynamic>> has, SdkOptional<Map<String, String>> headers, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteImportant> important, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteLocale> locale, SdkOptional<List<String>> methods, SdkOptional<double> middleware, SdkOptional<String> middlewarePath, SdkOptional<List<String>> middlewareRawSrc, SdkOptional<List<dynamic>> missing, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteMitigate> mitigate, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteOverride> override_, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl> respectOriginCacheControl, SdkOptional<String> source, String src, SdkOptional<double> status, SdkOptional<double> statusCode, SdkOptional<List<dynamic>> transforms}) get copyWith => _copyWith;
+  GetRoutesResponseVariant3RoutesItemRoute Function(
+      {SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCaseSensitive>
+          caseSensitive,
+      SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCheck> check,
+      SdkOptional<GetRoutesResponseVariant3RoutesItemRouteContinue> continue_,
+      SdkOptional<String> dest,
+      SdkOptional<dynamic> destination,
+      SdkOptional<List<String>> env,
+      SdkOptional<List<dynamic>> has,
+      SdkOptional<Map<String, String>> headers,
+      SdkOptional<GetRoutesResponseVariant3RoutesItemRouteImportant> important,
+      SdkOptional<GetRoutesResponseVariant3RoutesItemRouteLocale> locale,
+      SdkOptional<List<String>> methods,
+      SdkOptional<double> middleware,
+      SdkOptional<String> middlewarePath,
+      SdkOptional<List<String>> middlewareRawSrc,
+      SdkOptional<List<dynamic>> missing,
+      SdkOptional<GetRoutesResponseVariant3RoutesItemRouteMitigate> mitigate,
+      SdkOptional<GetRoutesResponseVariant3RoutesItemRouteOverride> override_,
+      SdkOptional<
+              GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl>
+          respectOriginCacheControl,
+      SdkOptional<String> source,
+      String src,
+      SdkOptional<double> status,
+      SdkOptional<double> statusCode,
+      SdkOptional<List<dynamic>> transforms}) get copyWith => _copyWith;
 
-  GetRoutesResponseVariant3RoutesItemRoute _copyWith({Object? caseSensitive = sdkOmittedValue, Object? check = sdkOmittedValue, Object? continue_ = sdkOmittedValue, Object? dest = sdkOmittedValue, Object? destination = sdkOmittedValue, Object? env = sdkOmittedValue, Object? has = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? important = sdkOmittedValue, Object? locale = sdkOmittedValue, Object? methods = sdkOmittedValue, Object? middleware = sdkOmittedValue, Object? middlewarePath = sdkOmittedValue, Object? middlewareRawSrc = sdkOmittedValue, Object? missing = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? override_ = sdkOmittedValue, Object? respectOriginCacheControl = sdkOmittedValue, Object? source = sdkOmittedValue, Object? src = sdkOmittedValue, Object? status = sdkOmittedValue, Object? statusCode = sdkOmittedValue, Object? transforms = sdkOmittedValue}) => GetRoutesResponseVariant3RoutesItemRoute(
-    caseSensitive: identical(caseSensitive, sdkOmittedValue) ? this.caseSensitive : caseSensitive as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCaseSensitive>,
-    check: identical(check, sdkOmittedValue) ? this.check : check as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCheck>,
-    continue_: identical(continue_, sdkOmittedValue) ? this.continue_ : continue_ as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteContinue>,
-    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
-    destination: identical(destination, sdkOmittedValue) ? this.destination : destination as SdkOptional<dynamic>,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<List<String>>,
-    has: identical(has, sdkOmittedValue) ? this.has : has as SdkOptional<List<dynamic>>,
-    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as SdkOptional<Map<String, String>>,
-    important: identical(important, sdkOmittedValue) ? this.important : important as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteImportant>,
-    locale: identical(locale, sdkOmittedValue) ? this.locale : locale as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteLocale>,
-    methods: identical(methods, sdkOmittedValue) ? this.methods : methods as SdkOptional<List<String>>,
-    middleware: identical(middleware, sdkOmittedValue) ? this.middleware : middleware as SdkOptional<double>,
-    middlewarePath: identical(middlewarePath, sdkOmittedValue) ? this.middlewarePath : middlewarePath as SdkOptional<String>,
-    middlewareRawSrc: identical(middlewareRawSrc, sdkOmittedValue) ? this.middlewareRawSrc : middlewareRawSrc as SdkOptional<List<String>>,
-    missing: identical(missing, sdkOmittedValue) ? this.missing : missing as SdkOptional<List<dynamic>>,
-    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteMitigate>,
-    override_: identical(override_, sdkOmittedValue) ? this.override_ : override_ as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteOverride>,
-    respectOriginCacheControl: identical(respectOriginCacheControl, sdkOmittedValue) ? this.respectOriginCacheControl : respectOriginCacheControl as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<String>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as SdkOptional<double>,
-    statusCode: identical(statusCode, sdkOmittedValue) ? this.statusCode : statusCode as SdkOptional<double>,
-    transforms: identical(transforms, sdkOmittedValue) ? this.transforms : transforms as SdkOptional<List<dynamic>>,
-  );
+  GetRoutesResponseVariant3RoutesItemRoute _copyWith(
+          {Object? caseSensitive = sdkOmittedValue,
+          Object? check = sdkOmittedValue,
+          Object? continue_ = sdkOmittedValue,
+          Object? dest = sdkOmittedValue,
+          Object? destination = sdkOmittedValue,
+          Object? env = sdkOmittedValue,
+          Object? has = sdkOmittedValue,
+          Object? headers = sdkOmittedValue,
+          Object? important = sdkOmittedValue,
+          Object? locale = sdkOmittedValue,
+          Object? methods = sdkOmittedValue,
+          Object? middleware = sdkOmittedValue,
+          Object? middlewarePath = sdkOmittedValue,
+          Object? middlewareRawSrc = sdkOmittedValue,
+          Object? missing = sdkOmittedValue,
+          Object? mitigate = sdkOmittedValue,
+          Object? override_ = sdkOmittedValue,
+          Object? respectOriginCacheControl = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? statusCode = sdkOmittedValue,
+          Object? transforms = sdkOmittedValue}) =>
+      GetRoutesResponseVariant3RoutesItemRoute(
+        caseSensitive: identical(caseSensitive, sdkOmittedValue)
+            ? this.caseSensitive
+            : caseSensitive as SdkOptional<
+                GetRoutesResponseVariant3RoutesItemRouteCaseSensitive>,
+        check: identical(check, sdkOmittedValue)
+            ? this.check
+            : check
+                as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteCheck>,
+        continue_: identical(continue_, sdkOmittedValue)
+            ? this.continue_
+            : continue_ as SdkOptional<
+                GetRoutesResponseVariant3RoutesItemRouteContinue>,
+        dest: identical(dest, sdkOmittedValue)
+            ? this.dest
+            : dest as SdkOptional<String>,
+        destination: identical(destination, sdkOmittedValue)
+            ? this.destination
+            : destination as SdkOptional<dynamic>,
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<List<String>>,
+        has: identical(has, sdkOmittedValue)
+            ? this.has
+            : has as SdkOptional<List<dynamic>>,
+        headers: identical(headers, sdkOmittedValue)
+            ? this.headers
+            : headers as SdkOptional<Map<String, String>>,
+        important: identical(important, sdkOmittedValue)
+            ? this.important
+            : important as SdkOptional<
+                GetRoutesResponseVariant3RoutesItemRouteImportant>,
+        locale: identical(locale, sdkOmittedValue)
+            ? this.locale
+            : locale
+                as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteLocale>,
+        methods: identical(methods, sdkOmittedValue)
+            ? this.methods
+            : methods as SdkOptional<List<String>>,
+        middleware: identical(middleware, sdkOmittedValue)
+            ? this.middleware
+            : middleware as SdkOptional<double>,
+        middlewarePath: identical(middlewarePath, sdkOmittedValue)
+            ? this.middlewarePath
+            : middlewarePath as SdkOptional<String>,
+        middlewareRawSrc: identical(middlewareRawSrc, sdkOmittedValue)
+            ? this.middlewareRawSrc
+            : middlewareRawSrc as SdkOptional<List<String>>,
+        missing: identical(missing, sdkOmittedValue)
+            ? this.missing
+            : missing as SdkOptional<List<dynamic>>,
+        mitigate: identical(mitigate, sdkOmittedValue)
+            ? this.mitigate
+            : mitigate as SdkOptional<
+                GetRoutesResponseVariant3RoutesItemRouteMitigate>,
+        override_: identical(override_, sdkOmittedValue)
+            ? this.override_
+            : override_ as SdkOptional<
+                GetRoutesResponseVariant3RoutesItemRouteOverride>,
+        respectOriginCacheControl: identical(
+                respectOriginCacheControl, sdkOmittedValue)
+            ? this.respectOriginCacheControl
+            : respectOriginCacheControl as SdkOptional<
+                GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as SdkOptional<String>,
+        src: identical(src, sdkOmittedValue) ? this.src : src as String,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as SdkOptional<double>,
+        statusCode: identical(statusCode, sdkOmittedValue)
+            ? this.statusCode
+            : statusCode as SdkOptional<double>,
+        transforms: identical(transforms, sdkOmittedValue)
+            ? this.transforms
+            : transforms as SdkOptional<List<dynamic>>,
+      );
 
-  factory GetRoutesResponseVariant3RoutesItemRoute.fromJson(Map<String, dynamic> json) => GetRoutesResponseVariant3RoutesItemRoute(
-    caseSensitive: json['caseSensitive'] != null ? SdkPresent((json['caseSensitive'] != null ? GetRoutesResponseVariant3RoutesItemRouteCaseSensitive.fromJson(json['caseSensitive'] as bool) : null)!) : const SdkOmitted(),
-    check: json['check'] != null ? SdkPresent((json['check'] != null ? GetRoutesResponseVariant3RoutesItemRouteCheck.fromJson(json['check'] as bool) : null)!) : const SdkOmitted(),
-    continue_: json['continue'] != null ? SdkPresent((json['continue'] != null ? GetRoutesResponseVariant3RoutesItemRouteContinue.fromJson(json['continue'] as bool) : null)!) : const SdkOmitted(),
-    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
-    destination: json['destination'] != null ? SdkPresent((json['destination'])!) : const SdkOmitted(),
-    env: json['env'] != null ? SdkPresent(((json['env'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    has: json['has'] != null ? SdkPresent(((json['has'] as List?)?.map((e) => e).toList())!) : const SdkOmitted(),
-    headers: json['headers'] != null ? SdkPresent((json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    important: json['important'] != null ? SdkPresent((json['important'] != null ? GetRoutesResponseVariant3RoutesItemRouteImportant.fromJson(json['important'] as bool) : null)!) : const SdkOmitted(),
-    locale: json['locale'] != null ? SdkPresent((json['locale'] != null ? GetRoutesResponseVariant3RoutesItemRouteLocale.fromJson(json['locale'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    methods: json['methods'] != null ? SdkPresent(((json['methods'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    middleware: json['middleware'] != null ? SdkPresent(((json['middleware'] as num?)?.toDouble())!) : const SdkOmitted(),
-    middlewarePath: json['middlewarePath'] != null ? SdkPresent((json['middlewarePath'] as String?)!) : const SdkOmitted(),
-    middlewareRawSrc: json['middlewareRawSrc'] != null ? SdkPresent(((json['middlewareRawSrc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    missing: json['missing'] != null ? SdkPresent(((json['missing'] as List?)?.map((e) => e).toList())!) : const SdkOmitted(),
-    mitigate: json['mitigate'] != null ? SdkPresent((json['mitigate'] != null ? GetRoutesResponseVariant3RoutesItemRouteMitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    override_: json['override'] != null ? SdkPresent((json['override'] != null ? GetRoutesResponseVariant3RoutesItemRouteOverride.fromJson(json['override'] as bool) : null)!) : const SdkOmitted(),
-    respectOriginCacheControl: json['respectOriginCacheControl'] != null ? SdkPresent((json['respectOriginCacheControl'] != null ? GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl.fromJson(json['respectOriginCacheControl'] as bool) : null)!) : const SdkOmitted(),
-    source: json['source'] != null ? SdkPresent((json['source'] as String?)!) : const SdkOmitted(),
-    src: (json['src'] as String?)!,
-    status: json['status'] != null ? SdkPresent(((json['status'] as num?)?.toDouble())!) : const SdkOmitted(),
-    statusCode: json['statusCode'] != null ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!) : const SdkOmitted(),
-    transforms: json['transforms'] != null ? SdkPresent(((json['transforms'] as List?)?.map((e) => e).toList())!) : const SdkOmitted(),
-  );
+  factory GetRoutesResponseVariant3RoutesItemRoute.fromJson(
+          Map<String, dynamic> json) =>
+      GetRoutesResponseVariant3RoutesItemRoute(
+        caseSensitive: json['caseSensitive'] != null
+            ? SdkPresent((json['caseSensitive'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteCaseSensitive
+                    .fromJson(json['caseSensitive'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        check: json['check'] != null
+            ? SdkPresent((json['check'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteCheck.fromJson(
+                    json['check'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        continue_: json['continue'] != null
+            ? SdkPresent((json['continue'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteContinue.fromJson(
+                    json['continue'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        dest: json['dest'] != null
+            ? SdkPresent((json['dest'] as String?)!)
+            : const SdkOmitted(),
+        destination: json['destination'] != null
+            ? SdkPresent((json['destination'])!)
+            : const SdkOmitted(),
+        env: json['env'] != null
+            ? SdkPresent(
+                ((json['env'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        has: json['has'] != null
+            ? SdkPresent(((json['has'] as List?)?.map((e) => e).toList())!)
+            : const SdkOmitted(),
+        headers: json['headers'] != null
+            ? SdkPresent((json['headers'] == null
+                ? null
+                : Map<String, dynamic>.from(json['headers'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        important: json['important'] != null
+            ? SdkPresent((json['important'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteImportant.fromJson(
+                    json['important'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        locale: json['locale'] != null
+            ? SdkPresent((json['locale'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteLocale.fromJson(
+                    json['locale'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        methods: json['methods'] != null
+            ? SdkPresent(
+                ((json['methods'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        middleware: json['middleware'] != null
+            ? SdkPresent(((json['middleware'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        middlewarePath: json['middlewarePath'] != null
+            ? SdkPresent((json['middlewarePath'] as String?)!)
+            : const SdkOmitted(),
+        middlewareRawSrc: json['middlewareRawSrc'] != null
+            ? SdkPresent(((json['middlewareRawSrc'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        missing: json['missing'] != null
+            ? SdkPresent(((json['missing'] as List?)?.map((e) => e).toList())!)
+            : const SdkOmitted(),
+        mitigate: json['mitigate'] != null
+            ? SdkPresent((json['mitigate'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteMitigate.fromJson(
+                    json['mitigate'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        override_: json['override'] != null
+            ? SdkPresent((json['override'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteOverride.fromJson(
+                    json['override'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        respectOriginCacheControl: json['respectOriginCacheControl'] != null
+            ? SdkPresent((json['respectOriginCacheControl'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl
+                    .fromJson(json['respectOriginCacheControl'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        source: json['source'] != null
+            ? SdkPresent((json['source'] as String?)!)
+            : const SdkOmitted(),
+        src: (json['src'] as String?)!,
+        status: json['status'] != null
+            ? SdkPresent(((json['status'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        statusCode: json['statusCode'] != null
+            ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        transforms: json['transforms'] != null
+            ? SdkPresent(
+                ((json['transforms'] as List?)?.map((e) => e).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (caseSensitive) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteCaseSensitive>(value: final value) => {'caseSensitive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (check) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteCheck>(value: final value) => {'check': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (continue_) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteContinue>(value: final value) => {'continue': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dest) {
-      SdkPresent<String>(value: final value) => {'dest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (destination) {
-      SdkPresent<dynamic>(value: final value) => {'destination': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (env) {
-      SdkPresent<List<String>>(value: final value) => {'env': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (has) {
-      SdkPresent<List<dynamic>>(value: final value) => {'has': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (headers) {
-      SdkPresent<Map<String, String>>(value: final value) => {'headers': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (important) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteImportant>(value: final value) => {'important': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (locale) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteLocale>(value: final value) => {'locale': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (methods) {
-      SdkPresent<List<String>>(value: final value) => {'methods': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (middleware) {
-      SdkPresent<double>(value: final value) => {'middleware': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (middlewarePath) {
-      SdkPresent<String>(value: final value) => {'middlewarePath': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (middlewareRawSrc) {
-      SdkPresent<List<String>>(value: final value) => {'middlewareRawSrc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (missing) {
-      SdkPresent<List<dynamic>>(value: final value) => {'missing': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (mitigate) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteMitigate>(value: final value) => {'mitigate': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (override_) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteOverride>(value: final value) => {'override': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (respectOriginCacheControl) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl>(value: final value) => {'respectOriginCacheControl': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (source) {
-      SdkPresent<String>(value: final value) => {'source': value,},
-      _ => const <String, dynamic>{},
-    },
-    'src': src,
-    ...switch (status) {
-      SdkPresent<double>(value: final value) => {'status': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (statusCode) {
-      SdkPresent<double>(value: final value) => {'statusCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transforms) {
-      SdkPresent<List<dynamic>>(value: final value) => {'transforms': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (caseSensitive) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteCaseSensitive>(
+            value: final value
+          ) =>
+            {
+              'caseSensitive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (check) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteCheck>(
+            value: final value
+          ) =>
+            {
+              'check': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (continue_) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteContinue>(
+            value: final value
+          ) =>
+            {
+              'continue': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dest) {
+          SdkPresent<String>(value: final value) => {
+              'dest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (destination) {
+          SdkPresent<dynamic>(value: final value) => {
+              'destination': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (env) {
+          SdkPresent<List<String>>(value: final value) => {
+              'env': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (has) {
+          SdkPresent<List<dynamic>>(value: final value) => {
+              'has': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (headers) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'headers': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (important) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteImportant>(
+            value: final value
+          ) =>
+            {
+              'important': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (locale) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteLocale>(
+            value: final value
+          ) =>
+            {
+              'locale': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (methods) {
+          SdkPresent<List<String>>(value: final value) => {
+              'methods': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (middleware) {
+          SdkPresent<double>(value: final value) => {
+              'middleware': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (middlewarePath) {
+          SdkPresent<String>(value: final value) => {
+              'middlewarePath': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (middlewareRawSrc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'middlewareRawSrc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (missing) {
+          SdkPresent<List<dynamic>>(value: final value) => {
+              'missing': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (mitigate) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteMitigate>(
+            value: final value
+          ) =>
+            {
+              'mitigate': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (override_) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteOverride>(
+            value: final value
+          ) =>
+            {
+              'override': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (respectOriginCacheControl) {
+          SdkPresent<
+                GetRoutesResponseVariant3RoutesItemRouteRespectOriginCacheControl>(
+            value: final value
+          ) =>
+            {
+              'respectOriginCacheControl': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (source) {
+          SdkPresent<String>(value: final value) => {
+              'source': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'src': src,
+        ...switch (status) {
+          SdkPresent<double>(value: final value) => {
+              'status': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (statusCode) {
+          SdkPresent<double>(value: final value) => {
+              'statusCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transforms) {
+          SdkPresent<List<dynamic>>(value: final value) => {
+              'transforms': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// A routing rule with metadata for project-level routing.
 class GetRoutesResponseVariant3RoutesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional description of what the routing rule does.
   final SdkOptional<String> description;
+
   /// Whether the routing rule is enabled. Defaults to true.
   final SdkOptional<GetRoutesResponseVariant3RoutesItemEnabled> enabled;
+
   /// Unique identifier for the routing rule.
   final String id;
+
   /// Human-readable name for the routing rule.
   final String name;
+
   /// Original destination provided by user.
   final SdkOptional<String> rawDest;
+
   /// Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses.
   final SdkOptional<String> rawSrc;
+
   /// The route definition from @vercel/routing-utils.
   final GetRoutesResponseVariant3RoutesItemRoute route;
+
   /// Computed route type based on the route configuration. Only present in API responses, not stored in S3.
   final SdkOptional<GetRoutesResponseVariant3RoutesItemRouteType> routeType;
+
   /// The syntax type of the source pattern. Determines how the pattern is compiled to regex.
   final SdkOptional<GetRoutesResponseVariant3RoutesItemSrcSyntax> srcSyntax;
+
   /// Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production.
   final SdkOptional<GetRoutesResponseVariant3RoutesItemStaged> staged;
 
-  const GetRoutesResponseVariant3RoutesItem({this.description = const SdkOmitted(), this.enabled = const SdkOmitted(), required this.id, required this.name, this.rawDest = const SdkOmitted(), this.rawSrc = const SdkOmitted(), required this.route, this.routeType = const SdkOmitted(), this.srcSyntax = const SdkOmitted(), this.staged = const SdkOmitted()});
+  const GetRoutesResponseVariant3RoutesItem(
+      {this.description = const SdkOmitted(),
+      this.enabled = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      this.rawDest = const SdkOmitted(),
+      this.rawSrc = const SdkOmitted(),
+      required this.route,
+      this.routeType = const SdkOmitted(),
+      this.srcSyntax = const SdkOmitted(),
+      this.staged = const SdkOmitted()});
 
-  GetRoutesResponseVariant3RoutesItem Function({SdkOptional<String> description, SdkOptional<GetRoutesResponseVariant3RoutesItemEnabled> enabled, String id, String name, SdkOptional<String> rawDest, SdkOptional<String> rawSrc, GetRoutesResponseVariant3RoutesItemRoute route, SdkOptional<GetRoutesResponseVariant3RoutesItemRouteType> routeType, SdkOptional<GetRoutesResponseVariant3RoutesItemSrcSyntax> srcSyntax, SdkOptional<GetRoutesResponseVariant3RoutesItemStaged> staged}) get copyWith => _copyWith;
+  GetRoutesResponseVariant3RoutesItem Function(
+          {SdkOptional<String> description,
+          SdkOptional<GetRoutesResponseVariant3RoutesItemEnabled> enabled,
+          String id,
+          String name,
+          SdkOptional<String> rawDest,
+          SdkOptional<String> rawSrc,
+          GetRoutesResponseVariant3RoutesItemRoute route,
+          SdkOptional<GetRoutesResponseVariant3RoutesItemRouteType> routeType,
+          SdkOptional<GetRoutesResponseVariant3RoutesItemSrcSyntax> srcSyntax,
+          SdkOptional<GetRoutesResponseVariant3RoutesItemStaged> staged})
+      get copyWith => _copyWith;
 
-  GetRoutesResponseVariant3RoutesItem _copyWith({Object? description = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? rawDest = sdkOmittedValue, Object? rawSrc = sdkOmittedValue, Object? route = sdkOmittedValue, Object? routeType = sdkOmittedValue, Object? srcSyntax = sdkOmittedValue, Object? staged = sdkOmittedValue}) => GetRoutesResponseVariant3RoutesItem(
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<GetRoutesResponseVariant3RoutesItemEnabled>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    rawDest: identical(rawDest, sdkOmittedValue) ? this.rawDest : rawDest as SdkOptional<String>,
-    rawSrc: identical(rawSrc, sdkOmittedValue) ? this.rawSrc : rawSrc as SdkOptional<String>,
-    route: identical(route, sdkOmittedValue) ? this.route : route as GetRoutesResponseVariant3RoutesItemRoute,
-    routeType: identical(routeType, sdkOmittedValue) ? this.routeType : routeType as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteType>,
-    srcSyntax: identical(srcSyntax, sdkOmittedValue) ? this.srcSyntax : srcSyntax as SdkOptional<GetRoutesResponseVariant3RoutesItemSrcSyntax>,
-    staged: identical(staged, sdkOmittedValue) ? this.staged : staged as SdkOptional<GetRoutesResponseVariant3RoutesItemStaged>,
-  );
+  GetRoutesResponseVariant3RoutesItem _copyWith(
+          {Object? description = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? rawDest = sdkOmittedValue,
+          Object? rawSrc = sdkOmittedValue,
+          Object? route = sdkOmittedValue,
+          Object? routeType = sdkOmittedValue,
+          Object? srcSyntax = sdkOmittedValue,
+          Object? staged = sdkOmittedValue}) =>
+      GetRoutesResponseVariant3RoutesItem(
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled
+                as SdkOptional<GetRoutesResponseVariant3RoutesItemEnabled>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        rawDest: identical(rawDest, sdkOmittedValue)
+            ? this.rawDest
+            : rawDest as SdkOptional<String>,
+        rawSrc: identical(rawSrc, sdkOmittedValue)
+            ? this.rawSrc
+            : rawSrc as SdkOptional<String>,
+        route: identical(route, sdkOmittedValue)
+            ? this.route
+            : route as GetRoutesResponseVariant3RoutesItemRoute,
+        routeType: identical(routeType, sdkOmittedValue)
+            ? this.routeType
+            : routeType
+                as SdkOptional<GetRoutesResponseVariant3RoutesItemRouteType>,
+        srcSyntax: identical(srcSyntax, sdkOmittedValue)
+            ? this.srcSyntax
+            : srcSyntax
+                as SdkOptional<GetRoutesResponseVariant3RoutesItemSrcSyntax>,
+        staged: identical(staged, sdkOmittedValue)
+            ? this.staged
+            : staged as SdkOptional<GetRoutesResponseVariant3RoutesItemStaged>,
+      );
 
-  factory GetRoutesResponseVariant3RoutesItem.fromJson(Map<String, dynamic> json) => GetRoutesResponseVariant3RoutesItem(
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? GetRoutesResponseVariant3RoutesItemEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    rawDest: json['rawDest'] != null ? SdkPresent((json['rawDest'] as String?)!) : const SdkOmitted(),
-    rawSrc: json['rawSrc'] != null ? SdkPresent((json['rawSrc'] as String?)!) : const SdkOmitted(),
-    route: (json['route'] != null ? GetRoutesResponseVariant3RoutesItemRoute.fromJson(json['route'] as Map<String, dynamic>) : null)!,
-    routeType: json['routeType'] != null ? SdkPresent((json['routeType'] != null ? GetRoutesResponseVariant3RoutesItemRouteType.fromJson(json['routeType'] as String) : null)!) : const SdkOmitted(),
-    srcSyntax: json['srcSyntax'] != null ? SdkPresent((json['srcSyntax'] != null ? GetRoutesResponseVariant3RoutesItemSrcSyntax.fromJson(json['srcSyntax'] as String) : null)!) : const SdkOmitted(),
-    staged: json['staged'] != null ? SdkPresent((json['staged'] != null ? GetRoutesResponseVariant3RoutesItemStaged.fromJson(json['staged'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory GetRoutesResponseVariant3RoutesItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetRoutesResponseVariant3RoutesItem(
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] != null
+                ? GetRoutesResponseVariant3RoutesItemEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        rawDest: json['rawDest'] != null
+            ? SdkPresent((json['rawDest'] as String?)!)
+            : const SdkOmitted(),
+        rawSrc: json['rawSrc'] != null
+            ? SdkPresent((json['rawSrc'] as String?)!)
+            : const SdkOmitted(),
+        route: (json['route'] != null
+            ? GetRoutesResponseVariant3RoutesItemRoute.fromJson(
+                json['route'] as Map<String, dynamic>)
+            : null)!,
+        routeType: json['routeType'] != null
+            ? SdkPresent((json['routeType'] != null
+                ? GetRoutesResponseVariant3RoutesItemRouteType.fromJson(
+                    json['routeType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        srcSyntax: json['srcSyntax'] != null
+            ? SdkPresent((json['srcSyntax'] != null
+                ? GetRoutesResponseVariant3RoutesItemSrcSyntax.fromJson(
+                    json['srcSyntax'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        staged: json['staged'] != null
+            ? SdkPresent((json['staged'] != null
+                ? GetRoutesResponseVariant3RoutesItemStaged.fromJson(
+                    json['staged'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabled) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemEnabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    ...switch (rawDest) {
-      SdkPresent<String>(value: final value) => {'rawDest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rawSrc) {
-      SdkPresent<String>(value: final value) => {'rawSrc': value,},
-      _ => const <String, dynamic>{},
-    },
-    'route': route.toJson(),
-    ...switch (routeType) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemRouteType>(value: final value) => {'routeType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (srcSyntax) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemSrcSyntax>(value: final value) => {'srcSyntax': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (staged) {
-      SdkPresent<GetRoutesResponseVariant3RoutesItemStaged>(value: final value) => {'staged': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabled) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemEnabled>(
+            value: final value
+          ) =>
+            {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        ...switch (rawDest) {
+          SdkPresent<String>(value: final value) => {
+              'rawDest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rawSrc) {
+          SdkPresent<String>(value: final value) => {
+              'rawSrc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'route': route.toJson(),
+        ...switch (routeType) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemRouteType>(
+            value: final value
+          ) =>
+            {
+              'routeType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (srcSyntax) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemSrcSyntax>(
+            value: final value
+          ) =>
+            {
+              'srcSyntax': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (staged) {
+          SdkPresent<GetRoutesResponseVariant3RoutesItemStaged>(
+            value: final value
+          ) =>
+            {
+              'staged': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

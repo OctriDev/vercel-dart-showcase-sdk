@@ -10,36 +10,86 @@ class UploadProjectAvatarResponseSecurityManagedRules {
   final UploadProjectAvatarResponseSecurityManagedRulesAiBots aiBots;
   final UploadProjectAvatarResponseSecurityManagedRulesBotFilter botFilter;
   final UploadProjectAvatarResponseSecurityManagedRulesOwasp owasp;
-  final UploadProjectAvatarResponseSecurityManagedRulesTrafficSources trafficSources;
-  final UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset vercelRuleset;
+  final UploadProjectAvatarResponseSecurityManagedRulesTrafficSources
+      trafficSources;
+  final UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset
+      vercelRuleset;
 
-  const UploadProjectAvatarResponseSecurityManagedRules({required this.aiBots, required this.botFilter, required this.owasp, required this.trafficSources, required this.vercelRuleset});
+  const UploadProjectAvatarResponseSecurityManagedRules(
+      {required this.aiBots,
+      required this.botFilter,
+      required this.owasp,
+      required this.trafficSources,
+      required this.vercelRuleset});
 
-  UploadProjectAvatarResponseSecurityManagedRules Function({UploadProjectAvatarResponseSecurityManagedRulesAiBots aiBots, UploadProjectAvatarResponseSecurityManagedRulesBotFilter botFilter, UploadProjectAvatarResponseSecurityManagedRulesOwasp owasp, UploadProjectAvatarResponseSecurityManagedRulesTrafficSources trafficSources, UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset vercelRuleset}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseSecurityManagedRules Function(
+      {UploadProjectAvatarResponseSecurityManagedRulesAiBots aiBots,
+      UploadProjectAvatarResponseSecurityManagedRulesBotFilter botFilter,
+      UploadProjectAvatarResponseSecurityManagedRulesOwasp owasp,
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSources
+          trafficSources,
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset
+          vercelRuleset}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseSecurityManagedRules _copyWith({Object? aiBots = sdkOmittedValue, Object? botFilter = sdkOmittedValue, Object? owasp = sdkOmittedValue, Object? trafficSources = sdkOmittedValue, Object? vercelRuleset = sdkOmittedValue}) => UploadProjectAvatarResponseSecurityManagedRules(
-    aiBots: identical(aiBots, sdkOmittedValue) ? this.aiBots : aiBots as UploadProjectAvatarResponseSecurityManagedRulesAiBots,
-    botFilter: identical(botFilter, sdkOmittedValue) ? this.botFilter : botFilter as UploadProjectAvatarResponseSecurityManagedRulesBotFilter,
-    owasp: identical(owasp, sdkOmittedValue) ? this.owasp : owasp as UploadProjectAvatarResponseSecurityManagedRulesOwasp,
-    trafficSources: identical(trafficSources, sdkOmittedValue) ? this.trafficSources : trafficSources as UploadProjectAvatarResponseSecurityManagedRulesTrafficSources,
-    vercelRuleset: identical(vercelRuleset, sdkOmittedValue) ? this.vercelRuleset : vercelRuleset as UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset,
-  );
+  UploadProjectAvatarResponseSecurityManagedRules _copyWith(
+          {Object? aiBots = sdkOmittedValue,
+          Object? botFilter = sdkOmittedValue,
+          Object? owasp = sdkOmittedValue,
+          Object? trafficSources = sdkOmittedValue,
+          Object? vercelRuleset = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseSecurityManagedRules(
+        aiBots: identical(aiBots, sdkOmittedValue)
+            ? this.aiBots
+            : aiBots as UploadProjectAvatarResponseSecurityManagedRulesAiBots,
+        botFilter: identical(botFilter, sdkOmittedValue)
+            ? this.botFilter
+            : botFilter
+                as UploadProjectAvatarResponseSecurityManagedRulesBotFilter,
+        owasp: identical(owasp, sdkOmittedValue)
+            ? this.owasp
+            : owasp as UploadProjectAvatarResponseSecurityManagedRulesOwasp,
+        trafficSources: identical(trafficSources, sdkOmittedValue)
+            ? this.trafficSources
+            : trafficSources
+                as UploadProjectAvatarResponseSecurityManagedRulesTrafficSources,
+        vercelRuleset: identical(vercelRuleset, sdkOmittedValue)
+            ? this.vercelRuleset
+            : vercelRuleset
+                as UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset,
+      );
 
-  factory UploadProjectAvatarResponseSecurityManagedRules.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseSecurityManagedRules(
-    aiBots: (json['ai_bots'] != null ? UploadProjectAvatarResponseSecurityManagedRulesAiBots.fromJson(json['ai_bots'] as Map<String, dynamic>) : null)!,
-    botFilter: (json['bot_filter'] != null ? UploadProjectAvatarResponseSecurityManagedRulesBotFilter.fromJson(json['bot_filter'] as Map<String, dynamic>) : null)!,
-    owasp: (json['owasp'] != null ? UploadProjectAvatarResponseSecurityManagedRulesOwasp.fromJson(json['owasp'] as Map<String, dynamic>) : null)!,
-    trafficSources: (json['traffic_sources'] != null ? UploadProjectAvatarResponseSecurityManagedRulesTrafficSources.fromJson(json['traffic_sources'] as Map<String, dynamic>) : null)!,
-    vercelRuleset: (json['vercel_ruleset'] != null ? UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset.fromJson(json['vercel_ruleset'] as Map<String, dynamic>) : null)!,
-  );
+  factory UploadProjectAvatarResponseSecurityManagedRules.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseSecurityManagedRules(
+        aiBots: (json['ai_bots'] != null
+            ? UploadProjectAvatarResponseSecurityManagedRulesAiBots.fromJson(
+                json['ai_bots'] as Map<String, dynamic>)
+            : null)!,
+        botFilter: (json['bot_filter'] != null
+            ? UploadProjectAvatarResponseSecurityManagedRulesBotFilter.fromJson(
+                json['bot_filter'] as Map<String, dynamic>)
+            : null)!,
+        owasp: (json['owasp'] != null
+            ? UploadProjectAvatarResponseSecurityManagedRulesOwasp.fromJson(
+                json['owasp'] as Map<String, dynamic>)
+            : null)!,
+        trafficSources: (json['traffic_sources'] != null
+            ? UploadProjectAvatarResponseSecurityManagedRulesTrafficSources
+                .fromJson(json['traffic_sources'] as Map<String, dynamic>)
+            : null)!,
+        vercelRuleset: (json['vercel_ruleset'] != null
+            ? UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset
+                .fromJson(json['vercel_ruleset'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'ai_bots': aiBots.toJson(),
-    'bot_filter': botFilter.toJson(),
-    'owasp': owasp.toJson(),
-    'traffic_sources': trafficSources.toJson(),
-    'vercel_ruleset': vercelRuleset.toJson(),
-  };
+        'ai_bots': aiBots.toJson(),
+        'bot_filter': botFilter.toJson(),
+        'owasp': owasp.toJson(),
+        'traffic_sources': trafficSources.toJson(),
+        'vercel_ruleset': vercelRuleset.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseSecurityRulesetsValueRateLimit {
@@ -50,56 +100,97 @@ class UploadProjectAvatarResponseSecurityRulesetsValueRateLimit {
   final double limit;
   final double window;
 
-  const UploadProjectAvatarResponseSecurityRulesetsValueRateLimit({required this.algo, required this.keys, required this.limit, required this.window});
+  const UploadProjectAvatarResponseSecurityRulesetsValueRateLimit(
+      {required this.algo,
+      required this.keys,
+      required this.limit,
+      required this.window});
 
-  UploadProjectAvatarResponseSecurityRulesetsValueRateLimit Function({UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo algo, List<String> keys, double limit, double window}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseSecurityRulesetsValueRateLimit Function(
+      {UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo algo,
+      List<String> keys,
+      double limit,
+      double window}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseSecurityRulesetsValueRateLimit _copyWith({Object? algo = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? window = sdkOmittedValue}) => UploadProjectAvatarResponseSecurityRulesetsValueRateLimit(
-    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo,
-    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
-    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
-    window: identical(window, sdkOmittedValue) ? this.window : window as double,
-  );
+  UploadProjectAvatarResponseSecurityRulesetsValueRateLimit _copyWith(
+          {Object? algo = sdkOmittedValue,
+          Object? keys = sdkOmittedValue,
+          Object? limit = sdkOmittedValue,
+          Object? window = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueRateLimit(
+        algo: identical(algo, sdkOmittedValue)
+            ? this.algo
+            : algo
+                as UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo,
+        keys:
+            identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
+        limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
+        window:
+            identical(window, sdkOmittedValue) ? this.window : window as double,
+      );
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValueRateLimit.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseSecurityRulesetsValueRateLimit(
-    algo: (json['algo'] != null ? UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo.fromJson(json['algo'] as String) : null)!,
-    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-    limit: ((json['limit'] as num?)?.toDouble())!,
-    window: ((json['window'] as num?)?.toDouble())!,
-  );
+  factory UploadProjectAvatarResponseSecurityRulesetsValueRateLimit.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueRateLimit(
+        algo: (json['algo'] != null
+            ? UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo
+                .fromJson(json['algo'] as String)
+            : null)!,
+        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+        limit: ((json['limit'] as num?)?.toDouble())!,
+        window: ((json['window'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'algo': algo.toJson(),
-    'keys': keys,
-    'limit': limit,
-    'window': window,
-  };
+        'algo': algo.toJson(),
+        'keys': keys,
+        'limit': limit,
+        'window': window,
+      };
 }
 
 class UploadProjectAvatarResponseSecurityRulesetsValueRedirect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String location;
-  final UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent permanent;
+  final UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent
+      permanent;
 
-  const UploadProjectAvatarResponseSecurityRulesetsValueRedirect({required this.location, required this.permanent});
+  const UploadProjectAvatarResponseSecurityRulesetsValueRedirect(
+      {required this.location, required this.permanent});
 
-  UploadProjectAvatarResponseSecurityRulesetsValueRedirect Function({String location, UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent permanent}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseSecurityRulesetsValueRedirect Function(
+      {String location,
+      UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent
+          permanent}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseSecurityRulesetsValueRedirect _copyWith({Object? location = sdkOmittedValue, Object? permanent = sdkOmittedValue}) => UploadProjectAvatarResponseSecurityRulesetsValueRedirect(
-    location: identical(location, sdkOmittedValue) ? this.location : location as String,
-    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent,
-  );
+  UploadProjectAvatarResponseSecurityRulesetsValueRedirect _copyWith(
+          {Object? location = sdkOmittedValue,
+          Object? permanent = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueRedirect(
+        location: identical(location, sdkOmittedValue)
+            ? this.location
+            : location as String,
+        permanent: identical(permanent, sdkOmittedValue)
+            ? this.permanent
+            : permanent
+                as UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent,
+      );
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValueRedirect.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseSecurityRulesetsValueRedirect(
-    location: (json['location'] as String?)!,
-    permanent: (json['permanent'] != null ? UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent.fromJson(json['permanent'] as bool) : null)!,
-  );
+  factory UploadProjectAvatarResponseSecurityRulesetsValueRedirect.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueRedirect(
+        location: (json['location'] as String?)!,
+        permanent: (json['permanent'] != null
+            ? UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent
+                .fromJson(json['permanent'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'location': location,
-    'permanent': permanent.toJson(),
-  };
+        'location': location,
+        'permanent': permanent.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseSecurityRulesetsValue {
@@ -107,178 +198,487 @@ class UploadProjectAvatarResponseSecurityRulesetsValue {
   static const String constructionSurface = 'named';
   final UploadProjectAvatarResponseSecurityRulesetsValueAction action;
   final SdkOptional<String?> actionDuration;
-  final SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?> bypassSystem;
+  final SdkOptional<
+          UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?>
+      bypassSystem;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?> rateLimit;
-  final SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRedirect?> redirect;
+  final SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?>
+      rateLimit;
+  final SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRedirect?>
+      redirect;
 
-  const UploadProjectAvatarResponseSecurityRulesetsValue({required this.action, this.actionDuration = const SdkOmitted(), this.bypassSystem = const SdkOmitted(), this.logHeaders = const SdkOmitted(), this.rateLimit = const SdkOmitted(), this.redirect = const SdkOmitted()});
+  const UploadProjectAvatarResponseSecurityRulesetsValue(
+      {required this.action,
+      this.actionDuration = const SdkOmitted(),
+      this.bypassSystem = const SdkOmitted(),
+      this.logHeaders = const SdkOmitted(),
+      this.rateLimit = const SdkOmitted(),
+      this.redirect = const SdkOmitted()});
 
-  UploadProjectAvatarResponseSecurityRulesetsValue Function({UploadProjectAvatarResponseSecurityRulesetsValueAction action, SdkOptional<String?> actionDuration, SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?> bypassSystem, SdkOptional<dynamic> logHeaders, SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?> rateLimit, SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRedirect?> redirect}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseSecurityRulesetsValue Function(
+      {UploadProjectAvatarResponseSecurityRulesetsValueAction action,
+      SdkOptional<String?> actionDuration,
+      SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?>
+          bypassSystem,
+      SdkOptional<dynamic> logHeaders,
+      SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?>
+          rateLimit,
+      SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRedirect?>
+          redirect}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseSecurityRulesetsValue _copyWith({Object? action = sdkOmittedValue, Object? actionDuration = sdkOmittedValue, Object? bypassSystem = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? rateLimit = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => UploadProjectAvatarResponseSecurityRulesetsValue(
-    action: identical(action, sdkOmittedValue) ? this.action : action as UploadProjectAvatarResponseSecurityRulesetsValueAction,
-    actionDuration: identical(actionDuration, sdkOmittedValue) ? this.actionDuration : actionDuration as SdkOptional<String?>,
-    bypassSystem: identical(bypassSystem, sdkOmittedValue) ? this.bypassSystem : bypassSystem as SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
-    rateLimit: identical(rateLimit, sdkOmittedValue) ? this.rateLimit : rateLimit as SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<UploadProjectAvatarResponseSecurityRulesetsValueRedirect?>,
-  );
+  UploadProjectAvatarResponseSecurityRulesetsValue _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? actionDuration = sdkOmittedValue,
+          Object? bypassSystem = sdkOmittedValue,
+          Object? logHeaders = sdkOmittedValue,
+          Object? rateLimit = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseSecurityRulesetsValue(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UploadProjectAvatarResponseSecurityRulesetsValueAction,
+        actionDuration: identical(actionDuration, sdkOmittedValue)
+            ? this.actionDuration
+            : actionDuration as SdkOptional<String?>,
+        bypassSystem: identical(bypassSystem, sdkOmittedValue)
+            ? this.bypassSystem
+            : bypassSystem as SdkOptional<
+                UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?>,
+        logHeaders: identical(logHeaders, sdkOmittedValue)
+            ? this.logHeaders
+            : logHeaders as SdkOptional<dynamic>,
+        rateLimit: identical(rateLimit, sdkOmittedValue)
+            ? this.rateLimit
+            : rateLimit as SdkOptional<
+                UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<
+                UploadProjectAvatarResponseSecurityRulesetsValueRedirect?>,
+      );
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValue.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseSecurityRulesetsValue(
-    action: (json['action'] != null ? UploadProjectAvatarResponseSecurityRulesetsValueAction.fromJson(json['action'] as String) : null)!,
-    actionDuration: json.containsKey('actionDuration') ? SdkPresent(json['actionDuration'] as String?) : const SdkOmitted(),
-    bypassSystem: json.containsKey('bypassSystem') ? SdkPresent(json['bypassSystem'] != null ? UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem.fromJson(json['bypassSystem'] as bool) : null) : const SdkOmitted(),
-    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
-    rateLimit: json.containsKey('rateLimit') ? SdkPresent(json['rateLimit'] != null ? UploadProjectAvatarResponseSecurityRulesetsValueRateLimit.fromJson(json['rateLimit'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] != null ? UploadProjectAvatarResponseSecurityRulesetsValueRedirect.fromJson(json['redirect'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseSecurityRulesetsValue.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseSecurityRulesetsValue(
+        action: (json['action'] != null
+            ? UploadProjectAvatarResponseSecurityRulesetsValueAction.fromJson(
+                json['action'] as String)
+            : null)!,
+        actionDuration: json.containsKey('actionDuration')
+            ? SdkPresent(json['actionDuration'] as String?)
+            : const SdkOmitted(),
+        bypassSystem: json.containsKey('bypassSystem')
+            ? SdkPresent(json['bypassSystem'] != null
+                ? UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem
+                    .fromJson(json['bypassSystem'] as bool)
+                : null)
+            : const SdkOmitted(),
+        logHeaders: json['logHeaders'] != null
+            ? SdkPresent((json['logHeaders'])!)
+            : const SdkOmitted(),
+        rateLimit: json.containsKey('rateLimit')
+            ? SdkPresent(json['rateLimit'] != null
+                ? UploadProjectAvatarResponseSecurityRulesetsValueRateLimit
+                    .fromJson(json['rateLimit'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] != null
+                ? UploadProjectAvatarResponseSecurityRulesetsValueRedirect
+                    .fromJson(json['redirect'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    ...switch (actionDuration) {
-      SdkPresent<String?>(value: final value) => {'actionDuration': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (bypassSystem) {
-      SdkPresent<UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?>(value: final value) => {'bypassSystem': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rateLimit) {
-      SdkPresent<UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?>(value: final value) => {'rateLimit': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<UploadProjectAvatarResponseSecurityRulesetsValueRedirect?>(value: final value) => {'redirect': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action.toJson(),
+        ...switch (actionDuration) {
+          SdkPresent<String?>(value: final value) => {
+              'actionDuration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (bypassSystem) {
+          SdkPresent<
+                UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem?>(
+            value: final value
+          ) =>
+            {
+              'bypassSystem': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (logHeaders) {
+          SdkPresent<dynamic>(value: final value) => {
+              'logHeaders': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rateLimit) {
+          SdkPresent<
+                UploadProjectAvatarResponseSecurityRulesetsValueRateLimit?>(
+            value: final value
+          ) =>
+            {
+              'rateLimit': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<UploadProjectAvatarResponseSecurityRulesetsValueRedirect?>(
+            value: final value
+          ) =>
+            {
+              'redirect': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadProjectAvatarResponseSecurity {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double?> attackModeActiveUntil;
-  final SdkOptional<UploadProjectAvatarResponseSecurityAttackModeEnabled> attackModeEnabled;
+  final SdkOptional<UploadProjectAvatarResponseSecurityAttackModeEnabled>
+      attackModeEnabled;
   final SdkOptional<double> attackModeUpdatedAt;
-  final SdkOptional<UploadProjectAvatarResponseSecurityBotIdEnabled> botIdEnabled;
+  final SdkOptional<UploadProjectAvatarResponseSecurityBotIdEnabled>
+      botIdEnabled;
   final SdkOptional<List<String>> firewallBypassIps;
   final SdkOptional<double> firewallConfigVersion;
-  final SdkOptional<UploadProjectAvatarResponseSecurityFirewallEnabled> firewallEnabled;
-  final SdkOptional<UploadProjectAvatarResponseSecurityFirewallSeawallEnabled> firewallSeawallEnabled;
+  final SdkOptional<UploadProjectAvatarResponseSecurityFirewallEnabled>
+      firewallEnabled;
+  final SdkOptional<UploadProjectAvatarResponseSecurityFirewallSeawallEnabled>
+      firewallSeawallEnabled;
   final SdkOptional<double> firewallUpdatedAt;
   final SdkOptional<UploadProjectAvatarResponseSecurityJa3Enabled> ja3Enabled;
   final SdkOptional<UploadProjectAvatarResponseSecurityJa4Enabled> ja4Enabled;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<UploadProjectAvatarResponseSecurityManagedRules?> managedRules;
+  final SdkOptional<UploadProjectAvatarResponseSecurityManagedRules?>
+      managedRules;
+
   /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
-  final SdkOptional<UploadProjectAvatarResponseSecurityPageIntegrityEnabled> pageIntegrityEnabled;
-  final SdkOptional<Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>> rulesets;
+  final SdkOptional<UploadProjectAvatarResponseSecurityPageIntegrityEnabled>
+      pageIntegrityEnabled;
+  final SdkOptional<
+      Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>> rulesets;
 
-  const UploadProjectAvatarResponseSecurity({this.attackModeActiveUntil = const SdkOmitted(), this.attackModeEnabled = const SdkOmitted(), this.attackModeUpdatedAt = const SdkOmitted(), this.botIdEnabled = const SdkOmitted(), this.firewallBypassIps = const SdkOmitted(), this.firewallConfigVersion = const SdkOmitted(), this.firewallEnabled = const SdkOmitted(), this.firewallSeawallEnabled = const SdkOmitted(), this.firewallUpdatedAt = const SdkOmitted(), this.ja3Enabled = const SdkOmitted(), this.ja4Enabled = const SdkOmitted(), this.logHeaders = const SdkOmitted(), this.managedRules = const SdkOmitted(), this.pageIntegrityEnabled = const SdkOmitted(), this.rulesets = const SdkOmitted()});
+  const UploadProjectAvatarResponseSecurity(
+      {this.attackModeActiveUntil = const SdkOmitted(),
+      this.attackModeEnabled = const SdkOmitted(),
+      this.attackModeUpdatedAt = const SdkOmitted(),
+      this.botIdEnabled = const SdkOmitted(),
+      this.firewallBypassIps = const SdkOmitted(),
+      this.firewallConfigVersion = const SdkOmitted(),
+      this.firewallEnabled = const SdkOmitted(),
+      this.firewallSeawallEnabled = const SdkOmitted(),
+      this.firewallUpdatedAt = const SdkOmitted(),
+      this.ja3Enabled = const SdkOmitted(),
+      this.ja4Enabled = const SdkOmitted(),
+      this.logHeaders = const SdkOmitted(),
+      this.managedRules = const SdkOmitted(),
+      this.pageIntegrityEnabled = const SdkOmitted(),
+      this.rulesets = const SdkOmitted()});
 
-  UploadProjectAvatarResponseSecurity Function({SdkOptional<double?> attackModeActiveUntil, SdkOptional<UploadProjectAvatarResponseSecurityAttackModeEnabled> attackModeEnabled, SdkOptional<double> attackModeUpdatedAt, SdkOptional<UploadProjectAvatarResponseSecurityBotIdEnabled> botIdEnabled, SdkOptional<List<String>> firewallBypassIps, SdkOptional<double> firewallConfigVersion, SdkOptional<UploadProjectAvatarResponseSecurityFirewallEnabled> firewallEnabled, SdkOptional<UploadProjectAvatarResponseSecurityFirewallSeawallEnabled> firewallSeawallEnabled, SdkOptional<double> firewallUpdatedAt, SdkOptional<UploadProjectAvatarResponseSecurityJa3Enabled> ja3Enabled, SdkOptional<UploadProjectAvatarResponseSecurityJa4Enabled> ja4Enabled, SdkOptional<dynamic> logHeaders, SdkOptional<UploadProjectAvatarResponseSecurityManagedRules?> managedRules, SdkOptional<UploadProjectAvatarResponseSecurityPageIntegrityEnabled> pageIntegrityEnabled, SdkOptional<Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>> rulesets}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseSecurity Function(
+      {SdkOptional<double?> attackModeActiveUntil,
+      SdkOptional<UploadProjectAvatarResponseSecurityAttackModeEnabled>
+          attackModeEnabled,
+      SdkOptional<double> attackModeUpdatedAt,
+      SdkOptional<UploadProjectAvatarResponseSecurityBotIdEnabled> botIdEnabled,
+      SdkOptional<List<String>> firewallBypassIps,
+      SdkOptional<double> firewallConfigVersion,
+      SdkOptional<UploadProjectAvatarResponseSecurityFirewallEnabled>
+          firewallEnabled,
+      SdkOptional<UploadProjectAvatarResponseSecurityFirewallSeawallEnabled>
+          firewallSeawallEnabled,
+      SdkOptional<double> firewallUpdatedAt,
+      SdkOptional<UploadProjectAvatarResponseSecurityJa3Enabled> ja3Enabled,
+      SdkOptional<UploadProjectAvatarResponseSecurityJa4Enabled> ja4Enabled,
+      SdkOptional<dynamic> logHeaders,
+      SdkOptional<UploadProjectAvatarResponseSecurityManagedRules?>
+          managedRules,
+      SdkOptional<UploadProjectAvatarResponseSecurityPageIntegrityEnabled>
+          pageIntegrityEnabled,
+      SdkOptional<Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>>
+          rulesets}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseSecurity _copyWith({Object? attackModeActiveUntil = sdkOmittedValue, Object? attackModeEnabled = sdkOmittedValue, Object? attackModeUpdatedAt = sdkOmittedValue, Object? botIdEnabled = sdkOmittedValue, Object? firewallBypassIps = sdkOmittedValue, Object? firewallConfigVersion = sdkOmittedValue, Object? firewallEnabled = sdkOmittedValue, Object? firewallSeawallEnabled = sdkOmittedValue, Object? firewallUpdatedAt = sdkOmittedValue, Object? ja3Enabled = sdkOmittedValue, Object? ja4Enabled = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? managedRules = sdkOmittedValue, Object? pageIntegrityEnabled = sdkOmittedValue, Object? rulesets = sdkOmittedValue}) => UploadProjectAvatarResponseSecurity(
-    attackModeActiveUntil: identical(attackModeActiveUntil, sdkOmittedValue) ? this.attackModeActiveUntil : attackModeActiveUntil as SdkOptional<double?>,
-    attackModeEnabled: identical(attackModeEnabled, sdkOmittedValue) ? this.attackModeEnabled : attackModeEnabled as SdkOptional<UploadProjectAvatarResponseSecurityAttackModeEnabled>,
-    attackModeUpdatedAt: identical(attackModeUpdatedAt, sdkOmittedValue) ? this.attackModeUpdatedAt : attackModeUpdatedAt as SdkOptional<double>,
-    botIdEnabled: identical(botIdEnabled, sdkOmittedValue) ? this.botIdEnabled : botIdEnabled as SdkOptional<UploadProjectAvatarResponseSecurityBotIdEnabled>,
-    firewallBypassIps: identical(firewallBypassIps, sdkOmittedValue) ? this.firewallBypassIps : firewallBypassIps as SdkOptional<List<String>>,
-    firewallConfigVersion: identical(firewallConfigVersion, sdkOmittedValue) ? this.firewallConfigVersion : firewallConfigVersion as SdkOptional<double>,
-    firewallEnabled: identical(firewallEnabled, sdkOmittedValue) ? this.firewallEnabled : firewallEnabled as SdkOptional<UploadProjectAvatarResponseSecurityFirewallEnabled>,
-    firewallSeawallEnabled: identical(firewallSeawallEnabled, sdkOmittedValue) ? this.firewallSeawallEnabled : firewallSeawallEnabled as SdkOptional<UploadProjectAvatarResponseSecurityFirewallSeawallEnabled>,
-    firewallUpdatedAt: identical(firewallUpdatedAt, sdkOmittedValue) ? this.firewallUpdatedAt : firewallUpdatedAt as SdkOptional<double>,
-    ja3Enabled: identical(ja3Enabled, sdkOmittedValue) ? this.ja3Enabled : ja3Enabled as SdkOptional<UploadProjectAvatarResponseSecurityJa3Enabled>,
-    ja4Enabled: identical(ja4Enabled, sdkOmittedValue) ? this.ja4Enabled : ja4Enabled as SdkOptional<UploadProjectAvatarResponseSecurityJa4Enabled>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
-    managedRules: identical(managedRules, sdkOmittedValue) ? this.managedRules : managedRules as SdkOptional<UploadProjectAvatarResponseSecurityManagedRules?>,
-    pageIntegrityEnabled: identical(pageIntegrityEnabled, sdkOmittedValue) ? this.pageIntegrityEnabled : pageIntegrityEnabled as SdkOptional<UploadProjectAvatarResponseSecurityPageIntegrityEnabled>,
-    rulesets: identical(rulesets, sdkOmittedValue) ? this.rulesets : rulesets as SdkOptional<Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>>,
-  );
+  UploadProjectAvatarResponseSecurity _copyWith(
+          {Object? attackModeActiveUntil = sdkOmittedValue,
+          Object? attackModeEnabled = sdkOmittedValue,
+          Object? attackModeUpdatedAt = sdkOmittedValue,
+          Object? botIdEnabled = sdkOmittedValue,
+          Object? firewallBypassIps = sdkOmittedValue,
+          Object? firewallConfigVersion = sdkOmittedValue,
+          Object? firewallEnabled = sdkOmittedValue,
+          Object? firewallSeawallEnabled = sdkOmittedValue,
+          Object? firewallUpdatedAt = sdkOmittedValue,
+          Object? ja3Enabled = sdkOmittedValue,
+          Object? ja4Enabled = sdkOmittedValue,
+          Object? logHeaders = sdkOmittedValue,
+          Object? managedRules = sdkOmittedValue,
+          Object? pageIntegrityEnabled = sdkOmittedValue,
+          Object? rulesets = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseSecurity(
+        attackModeActiveUntil: identical(attackModeActiveUntil, sdkOmittedValue)
+            ? this.attackModeActiveUntil
+            : attackModeActiveUntil as SdkOptional<double?>,
+        attackModeEnabled: identical(attackModeEnabled, sdkOmittedValue)
+            ? this.attackModeEnabled
+            : attackModeEnabled as SdkOptional<
+                UploadProjectAvatarResponseSecurityAttackModeEnabled>,
+        attackModeUpdatedAt: identical(attackModeUpdatedAt, sdkOmittedValue)
+            ? this.attackModeUpdatedAt
+            : attackModeUpdatedAt as SdkOptional<double>,
+        botIdEnabled: identical(botIdEnabled, sdkOmittedValue)
+            ? this.botIdEnabled
+            : botIdEnabled
+                as SdkOptional<UploadProjectAvatarResponseSecurityBotIdEnabled>,
+        firewallBypassIps: identical(firewallBypassIps, sdkOmittedValue)
+            ? this.firewallBypassIps
+            : firewallBypassIps as SdkOptional<List<String>>,
+        firewallConfigVersion: identical(firewallConfigVersion, sdkOmittedValue)
+            ? this.firewallConfigVersion
+            : firewallConfigVersion as SdkOptional<double>,
+        firewallEnabled: identical(firewallEnabled, sdkOmittedValue)
+            ? this.firewallEnabled
+            : firewallEnabled as SdkOptional<
+                UploadProjectAvatarResponseSecurityFirewallEnabled>,
+        firewallSeawallEnabled:
+            identical(firewallSeawallEnabled, sdkOmittedValue)
+                ? this.firewallSeawallEnabled
+                : firewallSeawallEnabled as SdkOptional<
+                    UploadProjectAvatarResponseSecurityFirewallSeawallEnabled>,
+        firewallUpdatedAt: identical(firewallUpdatedAt, sdkOmittedValue)
+            ? this.firewallUpdatedAt
+            : firewallUpdatedAt as SdkOptional<double>,
+        ja3Enabled: identical(ja3Enabled, sdkOmittedValue)
+            ? this.ja3Enabled
+            : ja3Enabled
+                as SdkOptional<UploadProjectAvatarResponseSecurityJa3Enabled>,
+        ja4Enabled: identical(ja4Enabled, sdkOmittedValue)
+            ? this.ja4Enabled
+            : ja4Enabled
+                as SdkOptional<UploadProjectAvatarResponseSecurityJa4Enabled>,
+        logHeaders: identical(logHeaders, sdkOmittedValue)
+            ? this.logHeaders
+            : logHeaders as SdkOptional<dynamic>,
+        managedRules: identical(managedRules, sdkOmittedValue)
+            ? this.managedRules
+            : managedRules as SdkOptional<
+                UploadProjectAvatarResponseSecurityManagedRules?>,
+        pageIntegrityEnabled: identical(pageIntegrityEnabled, sdkOmittedValue)
+            ? this.pageIntegrityEnabled
+            : pageIntegrityEnabled as SdkOptional<
+                UploadProjectAvatarResponseSecurityPageIntegrityEnabled>,
+        rulesets: identical(rulesets, sdkOmittedValue)
+            ? this.rulesets
+            : rulesets as SdkOptional<
+                Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>>,
+      );
 
-  factory UploadProjectAvatarResponseSecurity.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseSecurity(
-    attackModeActiveUntil: json.containsKey('attackModeActiveUntil') ? SdkPresent((json['attackModeActiveUntil'] as num?)?.toDouble()) : const SdkOmitted(),
-    attackModeEnabled: json['attackModeEnabled'] != null ? SdkPresent((json['attackModeEnabled'] != null ? UploadProjectAvatarResponseSecurityAttackModeEnabled.fromJson(json['attackModeEnabled'] as bool) : null)!) : const SdkOmitted(),
-    attackModeUpdatedAt: json['attackModeUpdatedAt'] != null ? SdkPresent(((json['attackModeUpdatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    botIdEnabled: json['botIdEnabled'] != null ? SdkPresent((json['botIdEnabled'] != null ? UploadProjectAvatarResponseSecurityBotIdEnabled.fromJson(json['botIdEnabled'] as bool) : null)!) : const SdkOmitted(),
-    firewallBypassIps: json['firewallBypassIps'] != null ? SdkPresent(((json['firewallBypassIps'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    firewallConfigVersion: json['firewallConfigVersion'] != null ? SdkPresent(((json['firewallConfigVersion'] as num?)?.toDouble())!) : const SdkOmitted(),
-    firewallEnabled: json['firewallEnabled'] != null ? SdkPresent((json['firewallEnabled'] != null ? UploadProjectAvatarResponseSecurityFirewallEnabled.fromJson(json['firewallEnabled'] as bool) : null)!) : const SdkOmitted(),
-    firewallSeawallEnabled: json['firewallSeawallEnabled'] != null ? SdkPresent((json['firewallSeawallEnabled'] != null ? UploadProjectAvatarResponseSecurityFirewallSeawallEnabled.fromJson(json['firewallSeawallEnabled'] as bool) : null)!) : const SdkOmitted(),
-    firewallUpdatedAt: json['firewallUpdatedAt'] != null ? SdkPresent(((json['firewallUpdatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    ja3Enabled: json['ja3Enabled'] != null ? SdkPresent((json['ja3Enabled'] != null ? UploadProjectAvatarResponseSecurityJa3Enabled.fromJson(json['ja3Enabled'] as bool) : null)!) : const SdkOmitted(),
-    ja4Enabled: json['ja4Enabled'] != null ? SdkPresent((json['ja4Enabled'] != null ? UploadProjectAvatarResponseSecurityJa4Enabled.fromJson(json['ja4Enabled'] as bool) : null)!) : const SdkOmitted(),
-    logHeaders: json['log_headers'] != null ? SdkPresent((json['log_headers'])!) : const SdkOmitted(),
-    managedRules: json.containsKey('managedRules') ? SdkPresent(json['managedRules'] != null ? UploadProjectAvatarResponseSecurityManagedRules.fromJson(json['managedRules'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    pageIntegrityEnabled: json['pageIntegrityEnabled'] != null ? SdkPresent((json['pageIntegrityEnabled'] != null ? UploadProjectAvatarResponseSecurityPageIntegrityEnabled.fromJson(json['pageIntegrityEnabled'] as bool) : null)!) : const SdkOmitted(),
-    rulesets: json['rulesets'] != null ? SdkPresent((json['rulesets'] == null ? null : Map<String, dynamic>.from(json['rulesets'] as Map).map((key, value) => MapEntry(key, UploadProjectAvatarResponseSecurityRulesetsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseSecurity.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseSecurity(
+        attackModeActiveUntil: json.containsKey('attackModeActiveUntil')
+            ? SdkPresent((json['attackModeActiveUntil'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        attackModeEnabled: json['attackModeEnabled'] != null
+            ? SdkPresent((json['attackModeEnabled'] != null
+                ? UploadProjectAvatarResponseSecurityAttackModeEnabled.fromJson(
+                    json['attackModeEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        attackModeUpdatedAt: json['attackModeUpdatedAt'] != null
+            ? SdkPresent(((json['attackModeUpdatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        botIdEnabled: json['botIdEnabled'] != null
+            ? SdkPresent((json['botIdEnabled'] != null
+                ? UploadProjectAvatarResponseSecurityBotIdEnabled.fromJson(
+                    json['botIdEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        firewallBypassIps: json['firewallBypassIps'] != null
+            ? SdkPresent(((json['firewallBypassIps'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        firewallConfigVersion: json['firewallConfigVersion'] != null
+            ? SdkPresent(((json['firewallConfigVersion'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        firewallEnabled: json['firewallEnabled'] != null
+            ? SdkPresent((json['firewallEnabled'] != null
+                ? UploadProjectAvatarResponseSecurityFirewallEnabled.fromJson(
+                    json['firewallEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        firewallSeawallEnabled: json['firewallSeawallEnabled'] != null
+            ? SdkPresent((json['firewallSeawallEnabled'] != null
+                ? UploadProjectAvatarResponseSecurityFirewallSeawallEnabled
+                    .fromJson(json['firewallSeawallEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        firewallUpdatedAt: json['firewallUpdatedAt'] != null
+            ? SdkPresent(((json['firewallUpdatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        ja3Enabled: json['ja3Enabled'] != null
+            ? SdkPresent((json['ja3Enabled'] != null
+                ? UploadProjectAvatarResponseSecurityJa3Enabled.fromJson(
+                    json['ja3Enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        ja4Enabled: json['ja4Enabled'] != null
+            ? SdkPresent((json['ja4Enabled'] != null
+                ? UploadProjectAvatarResponseSecurityJa4Enabled.fromJson(
+                    json['ja4Enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        logHeaders: json['log_headers'] != null
+            ? SdkPresent((json['log_headers'])!)
+            : const SdkOmitted(),
+        managedRules: json.containsKey('managedRules')
+            ? SdkPresent(json['managedRules'] != null
+                ? UploadProjectAvatarResponseSecurityManagedRules.fromJson(
+                    json['managedRules'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        pageIntegrityEnabled: json['pageIntegrityEnabled'] != null
+            ? SdkPresent((json['pageIntegrityEnabled'] != null
+                ? UploadProjectAvatarResponseSecurityPageIntegrityEnabled
+                    .fromJson(json['pageIntegrityEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        rulesets: json['rulesets'] != null
+            ? SdkPresent((json['rulesets'] == null
+                ? null
+                : Map<String, dynamic>.from(json['rulesets'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        UploadProjectAvatarResponseSecurityRulesetsValue
+                            .fromJson(value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (attackModeActiveUntil) {
-      SdkPresent<double?>(value: final value) => {'attackModeActiveUntil': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (attackModeEnabled) {
-      SdkPresent<UploadProjectAvatarResponseSecurityAttackModeEnabled>(value: final value) => {'attackModeEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (attackModeUpdatedAt) {
-      SdkPresent<double>(value: final value) => {'attackModeUpdatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (botIdEnabled) {
-      SdkPresent<UploadProjectAvatarResponseSecurityBotIdEnabled>(value: final value) => {'botIdEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallBypassIps) {
-      SdkPresent<List<String>>(value: final value) => {'firewallBypassIps': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallConfigVersion) {
-      SdkPresent<double>(value: final value) => {'firewallConfigVersion': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallEnabled) {
-      SdkPresent<UploadProjectAvatarResponseSecurityFirewallEnabled>(value: final value) => {'firewallEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallSeawallEnabled) {
-      SdkPresent<UploadProjectAvatarResponseSecurityFirewallSeawallEnabled>(value: final value) => {'firewallSeawallEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallUpdatedAt) {
-      SdkPresent<double>(value: final value) => {'firewallUpdatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ja3Enabled) {
-      SdkPresent<UploadProjectAvatarResponseSecurityJa3Enabled>(value: final value) => {'ja3Enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ja4Enabled) {
-      SdkPresent<UploadProjectAvatarResponseSecurityJa4Enabled>(value: final value) => {'ja4Enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'log_headers': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (managedRules) {
-      SdkPresent<UploadProjectAvatarResponseSecurityManagedRules?>(value: final value) => {'managedRules': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pageIntegrityEnabled) {
-      SdkPresent<UploadProjectAvatarResponseSecurityPageIntegrityEnabled>(value: final value) => {'pageIntegrityEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rulesets) {
-      SdkPresent<Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>>(value: final value) => {'rulesets': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (attackModeActiveUntil) {
+          SdkPresent<double?>(value: final value) => {
+              'attackModeActiveUntil': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (attackModeEnabled) {
+          SdkPresent<UploadProjectAvatarResponseSecurityAttackModeEnabled>(
+            value: final value
+          ) =>
+            {
+              'attackModeEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (attackModeUpdatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'attackModeUpdatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (botIdEnabled) {
+          SdkPresent<UploadProjectAvatarResponseSecurityBotIdEnabled>(
+            value: final value
+          ) =>
+            {
+              'botIdEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallBypassIps) {
+          SdkPresent<List<String>>(value: final value) => {
+              'firewallBypassIps': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallConfigVersion) {
+          SdkPresent<double>(value: final value) => {
+              'firewallConfigVersion': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallEnabled) {
+          SdkPresent<UploadProjectAvatarResponseSecurityFirewallEnabled>(
+            value: final value
+          ) =>
+            {
+              'firewallEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallSeawallEnabled) {
+          SdkPresent<UploadProjectAvatarResponseSecurityFirewallSeawallEnabled>(
+            value: final value
+          ) =>
+            {
+              'firewallSeawallEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallUpdatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'firewallUpdatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ja3Enabled) {
+          SdkPresent<UploadProjectAvatarResponseSecurityJa3Enabled>(
+            value: final value
+          ) =>
+            {
+              'ja3Enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ja4Enabled) {
+          SdkPresent<UploadProjectAvatarResponseSecurityJa4Enabled>(
+            value: final value
+          ) =>
+            {
+              'ja4Enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (logHeaders) {
+          SdkPresent<dynamic>(value: final value) => {
+              'log_headers': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (managedRules) {
+          SdkPresent<UploadProjectAvatarResponseSecurityManagedRules?>(
+            value: final value
+          ) =>
+            {
+              'managedRules': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pageIntegrityEnabled) {
+          SdkPresent<UploadProjectAvatarResponseSecurityPageIntegrityEnabled>(
+            value: final value
+          ) =>
+            {
+              'pageIntegrityEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rulesets) {
+          SdkPresent<
+                Map<String, UploadProjectAvatarResponseSecurityRulesetsValue>>(
+            value: final value
+          ) =>
+            {
+              'rulesets':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

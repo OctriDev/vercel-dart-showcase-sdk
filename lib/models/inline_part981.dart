@@ -7,35 +7,74 @@ part of 'inline.dart';
 class UploadProjectAvatarResponseOidcTokenConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether or not to generate OpenID Connect JSON Web Tokens.
   final SdkOptional<UploadProjectAvatarResponseOidcTokenConfigEnabled> enabled;
+
   /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
-  final SdkOptional<UploadProjectAvatarResponseOidcTokenConfigIssuerMode> issuerMode;
+  final SdkOptional<UploadProjectAvatarResponseOidcTokenConfigIssuerMode>
+      issuerMode;
 
-  const UploadProjectAvatarResponseOidcTokenConfig({this.enabled = const SdkOmitted(), this.issuerMode = const SdkOmitted()});
+  const UploadProjectAvatarResponseOidcTokenConfig(
+      {this.enabled = const SdkOmitted(),
+      this.issuerMode = const SdkOmitted()});
 
-  UploadProjectAvatarResponseOidcTokenConfig Function({SdkOptional<UploadProjectAvatarResponseOidcTokenConfigEnabled> enabled, SdkOptional<UploadProjectAvatarResponseOidcTokenConfigIssuerMode> issuerMode}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseOidcTokenConfig Function(
+      {SdkOptional<UploadProjectAvatarResponseOidcTokenConfigEnabled> enabled,
+      SdkOptional<UploadProjectAvatarResponseOidcTokenConfigIssuerMode>
+          issuerMode}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseOidcTokenConfig _copyWith({Object? enabled = sdkOmittedValue, Object? issuerMode = sdkOmittedValue}) => UploadProjectAvatarResponseOidcTokenConfig(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<UploadProjectAvatarResponseOidcTokenConfigEnabled>,
-    issuerMode: identical(issuerMode, sdkOmittedValue) ? this.issuerMode : issuerMode as SdkOptional<UploadProjectAvatarResponseOidcTokenConfigIssuerMode>,
-  );
+  UploadProjectAvatarResponseOidcTokenConfig _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? issuerMode = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseOidcTokenConfig(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<
+                UploadProjectAvatarResponseOidcTokenConfigEnabled>,
+        issuerMode: identical(issuerMode, sdkOmittedValue)
+            ? this.issuerMode
+            : issuerMode as SdkOptional<
+                UploadProjectAvatarResponseOidcTokenConfigIssuerMode>,
+      );
 
-  factory UploadProjectAvatarResponseOidcTokenConfig.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseOidcTokenConfig(
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? UploadProjectAvatarResponseOidcTokenConfigEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-    issuerMode: json['issuerMode'] != null ? SdkPresent((json['issuerMode'] != null ? UploadProjectAvatarResponseOidcTokenConfigIssuerMode.fromJson(json['issuerMode'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseOidcTokenConfig.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseOidcTokenConfig(
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] != null
+                ? UploadProjectAvatarResponseOidcTokenConfigEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        issuerMode: json['issuerMode'] != null
+            ? SdkPresent((json['issuerMode'] != null
+                ? UploadProjectAvatarResponseOidcTokenConfigIssuerMode.fromJson(
+                    json['issuerMode'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enabled) {
-      SdkPresent<UploadProjectAvatarResponseOidcTokenConfigEnabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (issuerMode) {
-      SdkPresent<UploadProjectAvatarResponseOidcTokenConfigIssuerMode>(value: final value) => {'issuerMode': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enabled) {
+          SdkPresent<UploadProjectAvatarResponseOidcTokenConfigEnabled>(
+            value: final value
+          ) =>
+            {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (issuerMode) {
+          SdkPresent<UploadProjectAvatarResponseOidcTokenConfigIssuerMode>(
+            value: final value
+          ) =>
+            {
+              'issuerMode': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadProjectAvatarResponseOptionsAllowlistPathsItem {
@@ -43,21 +82,27 @@ class UploadProjectAvatarResponseOptionsAllowlistPathsItem {
   static const String constructionSurface = 'named';
   final String value;
 
-  const UploadProjectAvatarResponseOptionsAllowlistPathsItem({required this.value});
+  const UploadProjectAvatarResponseOptionsAllowlistPathsItem(
+      {required this.value});
 
-  UploadProjectAvatarResponseOptionsAllowlistPathsItem Function({String value}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseOptionsAllowlistPathsItem Function({String value})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseOptionsAllowlistPathsItem _copyWith({Object? value = sdkOmittedValue}) => UploadProjectAvatarResponseOptionsAllowlistPathsItem(
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  UploadProjectAvatarResponseOptionsAllowlistPathsItem _copyWith(
+          {Object? value = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseOptionsAllowlistPathsItem(
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory UploadProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseOptionsAllowlistPathsItem(
-    value: (json['value'] as String?)!,
-  );
+  factory UploadProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseOptionsAllowlistPathsItem(
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'value': value,
-  };
+        'value': value,
+      };
 }
 
 class UploadProjectAvatarResponseOptionsAllowlist {
@@ -67,19 +112,32 @@ class UploadProjectAvatarResponseOptionsAllowlist {
 
   const UploadProjectAvatarResponseOptionsAllowlist({required this.paths});
 
-  UploadProjectAvatarResponseOptionsAllowlist Function({List<UploadProjectAvatarResponseOptionsAllowlistPathsItem> paths}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseOptionsAllowlist Function(
+          {List<UploadProjectAvatarResponseOptionsAllowlistPathsItem> paths})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseOptionsAllowlist _copyWith({Object? paths = sdkOmittedValue}) => UploadProjectAvatarResponseOptionsAllowlist(
-    paths: identical(paths, sdkOmittedValue) ? this.paths : paths as List<UploadProjectAvatarResponseOptionsAllowlistPathsItem>,
-  );
+  UploadProjectAvatarResponseOptionsAllowlist _copyWith(
+          {Object? paths = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseOptionsAllowlist(
+        paths: identical(paths, sdkOmittedValue)
+            ? this.paths
+            : paths
+                as List<UploadProjectAvatarResponseOptionsAllowlistPathsItem>,
+      );
 
-  factory UploadProjectAvatarResponseOptionsAllowlist.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseOptionsAllowlist(
-    paths: ((json['paths'] as List?)?.map((e) => UploadProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory UploadProjectAvatarResponseOptionsAllowlist.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseOptionsAllowlist(
+        paths: ((json['paths'] as List?)
+            ?.map((e) =>
+                UploadProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'paths': paths.map((item) => item.toJson()).toList(),
-  };
+        'paths': paths.map((item) => item.toJson()).toList(),
+      };
 }
 
 class UploadProjectAvatarResponsePassport {
@@ -88,45 +146,76 @@ class UploadProjectAvatarResponsePassport {
   final String connectorId;
   final UploadProjectAvatarResponsePassportDeploymentType deploymentType;
 
-  const UploadProjectAvatarResponsePassport({required this.connectorId, required this.deploymentType});
+  const UploadProjectAvatarResponsePassport(
+      {required this.connectorId, required this.deploymentType});
 
-  UploadProjectAvatarResponsePassport Function({String connectorId, UploadProjectAvatarResponsePassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  UploadProjectAvatarResponsePassport Function(
+          {String connectorId,
+          UploadProjectAvatarResponsePassportDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponsePassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UploadProjectAvatarResponsePassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UploadProjectAvatarResponsePassportDeploymentType,
-  );
+  UploadProjectAvatarResponsePassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      UploadProjectAvatarResponsePassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UploadProjectAvatarResponsePassportDeploymentType,
+      );
 
-  factory UploadProjectAvatarResponsePassport.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponsePassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? UploadProjectAvatarResponsePassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponsePassport.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponsePassport(
+        connectorId: (json['connectorId'] as String?)!,
+        deploymentType: (json['deploymentType'] != null
+            ? UploadProjectAvatarResponsePassportDeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Password protection settings returned without the secret password hash.
 class UploadProjectAvatarResponsePasswordProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponsePasswordProtectionDeploymentType deploymentType;
+  final UploadProjectAvatarResponsePasswordProtectionDeploymentType
+      deploymentType;
 
-  const UploadProjectAvatarResponsePasswordProtection({required this.deploymentType});
+  const UploadProjectAvatarResponsePasswordProtection(
+      {required this.deploymentType});
 
-  UploadProjectAvatarResponsePasswordProtection Function({UploadProjectAvatarResponsePasswordProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
+  UploadProjectAvatarResponsePasswordProtection Function(
+      {UploadProjectAvatarResponsePasswordProtectionDeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponsePasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => UploadProjectAvatarResponsePasswordProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UploadProjectAvatarResponsePasswordProtectionDeploymentType,
-  );
+  UploadProjectAvatarResponsePasswordProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      UploadProjectAvatarResponsePasswordProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UploadProjectAvatarResponsePasswordProtectionDeploymentType,
+      );
 
-  factory UploadProjectAvatarResponsePasswordProtection.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponsePasswordProtection(
-    deploymentType: (json['deploymentType'] != null ? UploadProjectAvatarResponsePasswordProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponsePasswordProtection.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponsePasswordProtection(
+        deploymentType: (json['deploymentType'] != null
+            ? UploadProjectAvatarResponsePasswordProtectionDeploymentType
+                .fromJson(json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }

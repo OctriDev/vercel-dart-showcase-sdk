@@ -12,284 +12,605 @@ class GetTeamMembersResponseMembersItemProjectsItem {
   final String name;
   final SdkOptional<GetTeamMembersResponseMembersItemProjectsItemRole> role;
 
-  const GetTeamMembersResponseMembersItemProjectsItem({required this.id, required this.name, this.role = const SdkOmitted()});
+  const GetTeamMembersResponseMembersItemProjectsItem(
+      {required this.id, required this.name, this.role = const SdkOmitted()});
 
-  GetTeamMembersResponseMembersItemProjectsItem Function({String id, String name, SdkOptional<GetTeamMembersResponseMembersItemProjectsItemRole> role}) get copyWith => _copyWith;
+  GetTeamMembersResponseMembersItemProjectsItem Function(
+          {String id,
+          String name,
+          SdkOptional<GetTeamMembersResponseMembersItemProjectsItemRole> role})
+      get copyWith => _copyWith;
 
-  GetTeamMembersResponseMembersItemProjectsItem _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? role = sdkOmittedValue}) => GetTeamMembersResponseMembersItemProjectsItem(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<GetTeamMembersResponseMembersItemProjectsItemRole>,
-  );
+  GetTeamMembersResponseMembersItemProjectsItem _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? role = sdkOmittedValue}) =>
+      GetTeamMembersResponseMembersItemProjectsItem(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as SdkOptional<
+                GetTeamMembersResponseMembersItemProjectsItemRole>,
+      );
 
-  factory GetTeamMembersResponseMembersItemProjectsItem.fromJson(Map<String, dynamic> json) => GetTeamMembersResponseMembersItemProjectsItem(
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    role: json['role'] != null ? SdkPresent((json['role'] != null ? GetTeamMembersResponseMembersItemProjectsItemRole.fromJson(json['role'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory GetTeamMembersResponseMembersItemProjectsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetTeamMembersResponseMembersItemProjectsItem(
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        role: json['role'] != null
+            ? SdkPresent((json['role'] != null
+                ? GetTeamMembersResponseMembersItemProjectsItemRole.fromJson(
+                    json['role'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-    ...switch (role) {
-      SdkPresent<GetTeamMembersResponseMembersItemProjectsItemRole>(value: final value) => {'role': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        'name': name,
+        ...switch (role) {
+          SdkPresent<GetTeamMembersResponseMembersItemProjectsItemRole>(
+            value: final value
+          ) =>
+            {
+              'role': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetTeamMembersResponseMembersItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Timestamp in milliseconds for when this team member was accepted by an owner.
   final SdkOptional<double> accessRequestedAt;
+
   /// ID of the file for the Avatar of this member.
   final SdkOptional<String> avatar;
+
   /// Information about the Bitbucket account of this user.
   final SdkOptional<GetTeamMembersResponseMembersItemBitbucket> bitbucket;
+
   /// Boolean that indicates if this member was confirmed by an owner.
   final GetTeamMembersResponseMembersItemConfirmed confirmed;
+
   /// Timestamp in milliseconds when this member was added.
   final double createdAt;
+
   /// The email of this member.
   final String email;
+
   /// Information about the GitHub account for this user.
   final SdkOptional<GetTeamMembersResponseMembersItemGithub> github;
+
   /// Information about the GitLab account of this user.
   final SdkOptional<GetTeamMembersResponseMembersItemGitlab> gitlab;
+
   /// Indicates whether the user is managed by an enterprise.
-  final SdkOptional<GetTeamMembersResponseMembersItemIsEnterpriseManaged> isEnterpriseManaged;
+  final SdkOptional<GetTeamMembersResponseMembersItemIsEnterpriseManaged>
+      isEnterpriseManaged;
+
   /// Map with information about the members origin if they joined by requesting access.
   final SdkOptional<GetTeamMembersResponseMembersItemJoinedFrom> joinedFrom;
+
   /// The name of this user.
   final SdkOptional<String> name;
+
   /// Array of project memberships
-  final SdkOptional<List<GetTeamMembersResponseMembersItemProjectsItem>> projects;
+  final SdkOptional<List<GetTeamMembersResponseMembersItemProjectsItem>>
+      projects;
+
   /// Role of this user in the team.
   final GetTeamMembersResponseMembersItemRole role;
+
   /// The ID of this user.
   final String uid;
+
   /// The unique username of this user.
   final String username;
 
-  const GetTeamMembersResponseMembersItem({this.accessRequestedAt = const SdkOmitted(), this.avatar = const SdkOmitted(), this.bitbucket = const SdkOmitted(), required this.confirmed, required this.createdAt, required this.email, this.github = const SdkOmitted(), this.gitlab = const SdkOmitted(), this.isEnterpriseManaged = const SdkOmitted(), this.joinedFrom = const SdkOmitted(), this.name = const SdkOmitted(), this.projects = const SdkOmitted(), required this.role, required this.uid, required this.username});
+  const GetTeamMembersResponseMembersItem(
+      {this.accessRequestedAt = const SdkOmitted(),
+      this.avatar = const SdkOmitted(),
+      this.bitbucket = const SdkOmitted(),
+      required this.confirmed,
+      required this.createdAt,
+      required this.email,
+      this.github = const SdkOmitted(),
+      this.gitlab = const SdkOmitted(),
+      this.isEnterpriseManaged = const SdkOmitted(),
+      this.joinedFrom = const SdkOmitted(),
+      this.name = const SdkOmitted(),
+      this.projects = const SdkOmitted(),
+      required this.role,
+      required this.uid,
+      required this.username});
 
-  GetTeamMembersResponseMembersItem Function({SdkOptional<double> accessRequestedAt, SdkOptional<String> avatar, SdkOptional<GetTeamMembersResponseMembersItemBitbucket> bitbucket, GetTeamMembersResponseMembersItemConfirmed confirmed, double createdAt, String email, SdkOptional<GetTeamMembersResponseMembersItemGithub> github, SdkOptional<GetTeamMembersResponseMembersItemGitlab> gitlab, SdkOptional<GetTeamMembersResponseMembersItemIsEnterpriseManaged> isEnterpriseManaged, SdkOptional<GetTeamMembersResponseMembersItemJoinedFrom> joinedFrom, SdkOptional<String> name, SdkOptional<List<GetTeamMembersResponseMembersItemProjectsItem>> projects, GetTeamMembersResponseMembersItemRole role, String uid, String username}) get copyWith => _copyWith;
+  GetTeamMembersResponseMembersItem Function(
+      {SdkOptional<double> accessRequestedAt,
+      SdkOptional<String> avatar,
+      SdkOptional<GetTeamMembersResponseMembersItemBitbucket> bitbucket,
+      GetTeamMembersResponseMembersItemConfirmed confirmed,
+      double createdAt,
+      String email,
+      SdkOptional<GetTeamMembersResponseMembersItemGithub> github,
+      SdkOptional<GetTeamMembersResponseMembersItemGitlab> gitlab,
+      SdkOptional<GetTeamMembersResponseMembersItemIsEnterpriseManaged>
+          isEnterpriseManaged,
+      SdkOptional<GetTeamMembersResponseMembersItemJoinedFrom> joinedFrom,
+      SdkOptional<String> name,
+      SdkOptional<List<GetTeamMembersResponseMembersItemProjectsItem>> projects,
+      GetTeamMembersResponseMembersItemRole role,
+      String uid,
+      String username}) get copyWith => _copyWith;
 
-  GetTeamMembersResponseMembersItem _copyWith({Object? accessRequestedAt = sdkOmittedValue, Object? avatar = sdkOmittedValue, Object? bitbucket = sdkOmittedValue, Object? confirmed = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? email = sdkOmittedValue, Object? github = sdkOmittedValue, Object? gitlab = sdkOmittedValue, Object? isEnterpriseManaged = sdkOmittedValue, Object? joinedFrom = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? role = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => GetTeamMembersResponseMembersItem(
-    accessRequestedAt: identical(accessRequestedAt, sdkOmittedValue) ? this.accessRequestedAt : accessRequestedAt as SdkOptional<double>,
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String>,
-    bitbucket: identical(bitbucket, sdkOmittedValue) ? this.bitbucket : bitbucket as SdkOptional<GetTeamMembersResponseMembersItemBitbucket>,
-    confirmed: identical(confirmed, sdkOmittedValue) ? this.confirmed : confirmed as GetTeamMembersResponseMembersItemConfirmed,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    github: identical(github, sdkOmittedValue) ? this.github : github as SdkOptional<GetTeamMembersResponseMembersItemGithub>,
-    gitlab: identical(gitlab, sdkOmittedValue) ? this.gitlab : gitlab as SdkOptional<GetTeamMembersResponseMembersItemGitlab>,
-    isEnterpriseManaged: identical(isEnterpriseManaged, sdkOmittedValue) ? this.isEnterpriseManaged : isEnterpriseManaged as SdkOptional<GetTeamMembersResponseMembersItemIsEnterpriseManaged>,
-    joinedFrom: identical(joinedFrom, sdkOmittedValue) ? this.joinedFrom : joinedFrom as SdkOptional<GetTeamMembersResponseMembersItemJoinedFrom>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<List<GetTeamMembersResponseMembersItemProjectsItem>>,
-    role: identical(role, sdkOmittedValue) ? this.role : role as GetTeamMembersResponseMembersItemRole,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  GetTeamMembersResponseMembersItem _copyWith(
+          {Object? accessRequestedAt = sdkOmittedValue,
+          Object? avatar = sdkOmittedValue,
+          Object? bitbucket = sdkOmittedValue,
+          Object? confirmed = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? email = sdkOmittedValue,
+          Object? github = sdkOmittedValue,
+          Object? gitlab = sdkOmittedValue,
+          Object? isEnterpriseManaged = sdkOmittedValue,
+          Object? joinedFrom = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? projects = sdkOmittedValue,
+          Object? role = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      GetTeamMembersResponseMembersItem(
+        accessRequestedAt: identical(accessRequestedAt, sdkOmittedValue)
+            ? this.accessRequestedAt
+            : accessRequestedAt as SdkOptional<double>,
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as SdkOptional<String>,
+        bitbucket: identical(bitbucket, sdkOmittedValue)
+            ? this.bitbucket
+            : bitbucket
+                as SdkOptional<GetTeamMembersResponseMembersItemBitbucket>,
+        confirmed: identical(confirmed, sdkOmittedValue)
+            ? this.confirmed
+            : confirmed as GetTeamMembersResponseMembersItemConfirmed,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        github: identical(github, sdkOmittedValue)
+            ? this.github
+            : github as SdkOptional<GetTeamMembersResponseMembersItemGithub>,
+        gitlab: identical(gitlab, sdkOmittedValue)
+            ? this.gitlab
+            : gitlab as SdkOptional<GetTeamMembersResponseMembersItemGitlab>,
+        isEnterpriseManaged: identical(isEnterpriseManaged, sdkOmittedValue)
+            ? this.isEnterpriseManaged
+            : isEnterpriseManaged as SdkOptional<
+                GetTeamMembersResponseMembersItemIsEnterpriseManaged>,
+        joinedFrom: identical(joinedFrom, sdkOmittedValue)
+            ? this.joinedFrom
+            : joinedFrom
+                as SdkOptional<GetTeamMembersResponseMembersItemJoinedFrom>,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        projects: identical(projects, sdkOmittedValue)
+            ? this.projects
+            : projects as SdkOptional<
+                List<GetTeamMembersResponseMembersItemProjectsItem>>,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as GetTeamMembersResponseMembersItemRole,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory GetTeamMembersResponseMembersItem.fromJson(Map<String, dynamic> json) => GetTeamMembersResponseMembersItem(
-    accessRequestedAt: json['accessRequestedAt'] != null ? SdkPresent(((json['accessRequestedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    avatar: json['avatar'] != null ? SdkPresent((json['avatar'] as String?)!) : const SdkOmitted(),
-    bitbucket: json['bitbucket'] != null ? SdkPresent((json['bitbucket'] != null ? GetTeamMembersResponseMembersItemBitbucket.fromJson(json['bitbucket'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    confirmed: (json['confirmed'] != null ? GetTeamMembersResponseMembersItemConfirmed.fromJson(json['confirmed'] as bool) : null)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    email: (json['email'] as String?)!,
-    github: json['github'] != null ? SdkPresent((json['github'] != null ? GetTeamMembersResponseMembersItemGithub.fromJson(json['github'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    gitlab: json['gitlab'] != null ? SdkPresent((json['gitlab'] != null ? GetTeamMembersResponseMembersItemGitlab.fromJson(json['gitlab'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    isEnterpriseManaged: json['isEnterpriseManaged'] != null ? SdkPresent((json['isEnterpriseManaged'] != null ? GetTeamMembersResponseMembersItemIsEnterpriseManaged.fromJson(json['isEnterpriseManaged'] as bool) : null)!) : const SdkOmitted(),
-    joinedFrom: json['joinedFrom'] != null ? SdkPresent((json['joinedFrom'] != null ? GetTeamMembersResponseMembersItemJoinedFrom.fromJson(json['joinedFrom'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    projects: json['projects'] != null ? SdkPresent(((json['projects'] as List?)?.map((e) => GetTeamMembersResponseMembersItemProjectsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    role: (json['role'] != null ? GetTeamMembersResponseMembersItemRole.fromJson(json['role'] as String) : null)!,
-    uid: (json['uid'] as String?)!,
-    username: (json['username'] as String?)!,
-  );
+  factory GetTeamMembersResponseMembersItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetTeamMembersResponseMembersItem(
+        accessRequestedAt: json['accessRequestedAt'] != null
+            ? SdkPresent(((json['accessRequestedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        avatar: json['avatar'] != null
+            ? SdkPresent((json['avatar'] as String?)!)
+            : const SdkOmitted(),
+        bitbucket: json['bitbucket'] != null
+            ? SdkPresent((json['bitbucket'] != null
+                ? GetTeamMembersResponseMembersItemBitbucket.fromJson(
+                    json['bitbucket'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        confirmed: (json['confirmed'] != null
+            ? GetTeamMembersResponseMembersItemConfirmed.fromJson(
+                json['confirmed'] as bool)
+            : null)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        email: (json['email'] as String?)!,
+        github: json['github'] != null
+            ? SdkPresent((json['github'] != null
+                ? GetTeamMembersResponseMembersItemGithub.fromJson(
+                    json['github'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        gitlab: json['gitlab'] != null
+            ? SdkPresent((json['gitlab'] != null
+                ? GetTeamMembersResponseMembersItemGitlab.fromJson(
+                    json['gitlab'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        isEnterpriseManaged: json['isEnterpriseManaged'] != null
+            ? SdkPresent((json['isEnterpriseManaged'] != null
+                ? GetTeamMembersResponseMembersItemIsEnterpriseManaged.fromJson(
+                    json['isEnterpriseManaged'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        joinedFrom: json['joinedFrom'] != null
+            ? SdkPresent((json['joinedFrom'] != null
+                ? GetTeamMembersResponseMembersItemJoinedFrom.fromJson(
+                    json['joinedFrom'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+        projects: json['projects'] != null
+            ? SdkPresent(((json['projects'] as List?)
+                ?.map((e) =>
+                    GetTeamMembersResponseMembersItemProjectsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        role: (json['role'] != null
+            ? GetTeamMembersResponseMembersItemRole.fromJson(
+                json['role'] as String)
+            : null)!,
+        uid: (json['uid'] as String?)!,
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (accessRequestedAt) {
-      SdkPresent<double>(value: final value) => {'accessRequestedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (avatar) {
-      SdkPresent<String>(value: final value) => {'avatar': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (bitbucket) {
-      SdkPresent<GetTeamMembersResponseMembersItemBitbucket>(value: final value) => {'bitbucket': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'confirmed': confirmed.toJson(),
-    'createdAt': createdAt,
-    'email': email,
-    ...switch (github) {
-      SdkPresent<GetTeamMembersResponseMembersItemGithub>(value: final value) => {'github': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitlab) {
-      SdkPresent<GetTeamMembersResponseMembersItemGitlab>(value: final value) => {'gitlab': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isEnterpriseManaged) {
-      SdkPresent<GetTeamMembersResponseMembersItemIsEnterpriseManaged>(value: final value) => {'isEnterpriseManaged': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (joinedFrom) {
-      SdkPresent<GetTeamMembersResponseMembersItemJoinedFrom>(value: final value) => {'joinedFrom': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projects) {
-      SdkPresent<List<GetTeamMembersResponseMembersItemProjectsItem>>(value: final value) => {'projects': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'role': role.toJson(),
-    'uid': uid,
-    'username': username,
-  };
+        ...switch (accessRequestedAt) {
+          SdkPresent<double>(value: final value) => {
+              'accessRequestedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (avatar) {
+          SdkPresent<String>(value: final value) => {
+              'avatar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (bitbucket) {
+          SdkPresent<GetTeamMembersResponseMembersItemBitbucket>(
+            value: final value
+          ) =>
+            {
+              'bitbucket': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'confirmed': confirmed.toJson(),
+        'createdAt': createdAt,
+        'email': email,
+        ...switch (github) {
+          SdkPresent<GetTeamMembersResponseMembersItemGithub>(
+            value: final value
+          ) =>
+            {
+              'github': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitlab) {
+          SdkPresent<GetTeamMembersResponseMembersItemGitlab>(
+            value: final value
+          ) =>
+            {
+              'gitlab': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isEnterpriseManaged) {
+          SdkPresent<GetTeamMembersResponseMembersItemIsEnterpriseManaged>(
+            value: final value
+          ) =>
+            {
+              'isEnterpriseManaged': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (joinedFrom) {
+          SdkPresent<GetTeamMembersResponseMembersItemJoinedFrom>(
+            value: final value
+          ) =>
+            {
+              'joinedFrom': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projects) {
+          SdkPresent<List<GetTeamMembersResponseMembersItemProjectsItem>>(
+            value: final value
+          ) =>
+            {
+              'projects': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'role': role.toJson(),
+        'uid': uid,
+        'username': username,
+      };
 }
 
 class GetTeamMembersResponsePagination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Amount of items in the current page.
   final double count;
   final GetTeamMembersResponsePaginationHasNext hasNext;
+
   /// Timestamp that must be used to request the next page.
   final double? next;
+
   /// Timestamp that must be used to request the previous page.
   final double? prev;
 
-  const GetTeamMembersResponsePagination({required this.count, required this.hasNext, required this.next, required this.prev});
+  const GetTeamMembersResponsePagination(
+      {required this.count,
+      required this.hasNext,
+      required this.next,
+      required this.prev});
 
-  GetTeamMembersResponsePagination Function({double count, GetTeamMembersResponsePaginationHasNext hasNext, double? next, double? prev}) get copyWith => _copyWith;
+  GetTeamMembersResponsePagination Function(
+      {double count,
+      GetTeamMembersResponsePaginationHasNext hasNext,
+      double? next,
+      double? prev}) get copyWith => _copyWith;
 
-  GetTeamMembersResponsePagination _copyWith({Object? count = sdkOmittedValue, Object? hasNext = sdkOmittedValue, Object? next = sdkOmittedValue, Object? prev = sdkOmittedValue}) => GetTeamMembersResponsePagination(
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    hasNext: identical(hasNext, sdkOmittedValue) ? this.hasNext : hasNext as GetTeamMembersResponsePaginationHasNext,
-    next: identical(next, sdkOmittedValue) ? this.next : next as double?,
-    prev: identical(prev, sdkOmittedValue) ? this.prev : prev as double?,
-  );
+  GetTeamMembersResponsePagination _copyWith(
+          {Object? count = sdkOmittedValue,
+          Object? hasNext = sdkOmittedValue,
+          Object? next = sdkOmittedValue,
+          Object? prev = sdkOmittedValue}) =>
+      GetTeamMembersResponsePagination(
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        hasNext: identical(hasNext, sdkOmittedValue)
+            ? this.hasNext
+            : hasNext as GetTeamMembersResponsePaginationHasNext,
+        next: identical(next, sdkOmittedValue) ? this.next : next as double?,
+        prev: identical(prev, sdkOmittedValue) ? this.prev : prev as double?,
+      );
 
-  factory GetTeamMembersResponsePagination.fromJson(Map<String, dynamic> json) => GetTeamMembersResponsePagination(
-    count: ((json['count'] as num?)?.toDouble())!,
-    hasNext: (json['hasNext'] != null ? GetTeamMembersResponsePaginationHasNext.fromJson(json['hasNext'] as bool) : null)!,
-    next: json.containsKey('next') ? (json['next'] as num?)?.toDouble() : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-    prev: json.containsKey('prev') ? (json['prev'] as num?)?.toDouble() : throw ArgumentError.value(null, 'prev', 'Required property is missing'),
-  );
+  factory GetTeamMembersResponsePagination.fromJson(
+          Map<String, dynamic> json) =>
+      GetTeamMembersResponsePagination(
+        count: ((json['count'] as num?)?.toDouble())!,
+        hasNext: (json['hasNext'] != null
+            ? GetTeamMembersResponsePaginationHasNext.fromJson(
+                json['hasNext'] as bool)
+            : null)!,
+        next: json.containsKey('next')
+            ? (json['next'] as num?)?.toDouble()
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+        prev: json.containsKey('prev')
+            ? (json['prev'] as num?)?.toDouble()
+            : throw ArgumentError.value(
+                null, 'prev', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'count': count,
-    'hasNext': hasNext.toJson(),
-    'next': next,
-    'prev': prev,
-  };
+        'count': count,
+        'hasNext': hasNext.toJson(),
+        'next': next,
+        'prev': prev,
+      };
 }
 
 class GetTeamMembersResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<List<GetTeamMembersResponseEmailInviteCodesItem>> emailInviteCodes;
+  final SdkOptional<List<GetTeamMembersResponseEmailInviteCodesItem>>
+      emailInviteCodes;
   final List<GetTeamMembersResponseMembersItem> members;
   final GetTeamMembersResponsePagination pagination;
 
-  const GetTeamMembersResponse({this.emailInviteCodes = const SdkOmitted(), required this.members, required this.pagination});
+  const GetTeamMembersResponse(
+      {this.emailInviteCodes = const SdkOmitted(),
+      required this.members,
+      required this.pagination});
 
-  GetTeamMembersResponse Function({SdkOptional<List<GetTeamMembersResponseEmailInviteCodesItem>> emailInviteCodes, List<GetTeamMembersResponseMembersItem> members, GetTeamMembersResponsePagination pagination}) get copyWith => _copyWith;
+  GetTeamMembersResponse Function(
+      {SdkOptional<List<GetTeamMembersResponseEmailInviteCodesItem>>
+          emailInviteCodes,
+      List<GetTeamMembersResponseMembersItem> members,
+      GetTeamMembersResponsePagination pagination}) get copyWith => _copyWith;
 
-  GetTeamMembersResponse _copyWith({Object? emailInviteCodes = sdkOmittedValue, Object? members = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => GetTeamMembersResponse(
-    emailInviteCodes: identical(emailInviteCodes, sdkOmittedValue) ? this.emailInviteCodes : emailInviteCodes as SdkOptional<List<GetTeamMembersResponseEmailInviteCodesItem>>,
-    members: identical(members, sdkOmittedValue) ? this.members : members as List<GetTeamMembersResponseMembersItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as GetTeamMembersResponsePagination,
-  );
+  GetTeamMembersResponse _copyWith(
+          {Object? emailInviteCodes = sdkOmittedValue,
+          Object? members = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      GetTeamMembersResponse(
+        emailInviteCodes: identical(emailInviteCodes, sdkOmittedValue)
+            ? this.emailInviteCodes
+            : emailInviteCodes as SdkOptional<
+                List<GetTeamMembersResponseEmailInviteCodesItem>>,
+        members: identical(members, sdkOmittedValue)
+            ? this.members
+            : members as List<GetTeamMembersResponseMembersItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as GetTeamMembersResponsePagination,
+      );
 
-  factory GetTeamMembersResponse.fromJson(Map<String, dynamic> json) => GetTeamMembersResponse(
-    emailInviteCodes: json['emailInviteCodes'] != null ? SdkPresent(((json['emailInviteCodes'] as List?)?.map((e) => GetTeamMembersResponseEmailInviteCodesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    members: ((json['members'] as List?)?.map((e) => GetTeamMembersResponseMembersItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? GetTeamMembersResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetTeamMembersResponse.fromJson(Map<String, dynamic> json) =>
+      GetTeamMembersResponse(
+        emailInviteCodes: json['emailInviteCodes'] != null
+            ? SdkPresent(((json['emailInviteCodes'] as List?)
+                ?.map((e) =>
+                    GetTeamMembersResponseEmailInviteCodesItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        members: ((json['members'] as List?)
+            ?.map((e) => GetTeamMembersResponseMembersItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        pagination: (json['pagination'] != null
+            ? GetTeamMembersResponsePagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (emailInviteCodes) {
-      SdkPresent<List<GetTeamMembersResponseEmailInviteCodesItem>>(value: final value) => {'emailInviteCodes': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'members': members.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        ...switch (emailInviteCodes) {
+          SdkPresent<List<GetTeamMembersResponseEmailInviteCodesItem>>(
+            value: final value
+          ) =>
+            {
+              'emailInviteCodes': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'members': members.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 class InviteUserToTeamRequestBodyItemProjectsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The ID of the project.
   final String projectId;
+
   /// Sets the project roles for the invited user
   final InviteUserToTeamRequestBodyItemProjectsItemRole role;
 
-  const InviteUserToTeamRequestBodyItemProjectsItem({required this.projectId, required this.role});
+  const InviteUserToTeamRequestBodyItemProjectsItem(
+      {required this.projectId, required this.role});
 
-  InviteUserToTeamRequestBodyItemProjectsItem Function({String projectId, InviteUserToTeamRequestBodyItemProjectsItemRole role}) get copyWith => _copyWith;
+  InviteUserToTeamRequestBodyItemProjectsItem Function(
+          {String projectId,
+          InviteUserToTeamRequestBodyItemProjectsItemRole role})
+      get copyWith => _copyWith;
 
-  InviteUserToTeamRequestBodyItemProjectsItem _copyWith({Object? projectId = sdkOmittedValue, Object? role = sdkOmittedValue}) => InviteUserToTeamRequestBodyItemProjectsItem(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    role: identical(role, sdkOmittedValue) ? this.role : role as InviteUserToTeamRequestBodyItemProjectsItemRole,
-  );
+  InviteUserToTeamRequestBodyItemProjectsItem _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? role = sdkOmittedValue}) =>
+      InviteUserToTeamRequestBodyItemProjectsItem(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as InviteUserToTeamRequestBodyItemProjectsItemRole,
+      );
 
-  factory InviteUserToTeamRequestBodyItemProjectsItem.fromJson(Map<String, dynamic> json) => InviteUserToTeamRequestBodyItemProjectsItem(
-    projectId: (json['projectId'] as String?)!,
-    role: (json['role'] != null ? InviteUserToTeamRequestBodyItemProjectsItemRole.fromJson(json['role'] as String) : null)!,
-  );
+  factory InviteUserToTeamRequestBodyItemProjectsItem.fromJson(
+          Map<String, dynamic> json) =>
+      InviteUserToTeamRequestBodyItemProjectsItem(
+        projectId: (json['projectId'] as String?)!,
+        role: (json['role'] != null
+            ? InviteUserToTeamRequestBodyItemProjectsItemRole.fromJson(
+                json['role'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'role': role.toJson(),
-  };
+        'projectId': projectId,
+        'role': role.toJson(),
+      };
 }
 
 class InviteUserToTeamRequestBodyItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The email address of the user to invite
   final String email;
+
   /// The role of the user to invite
   final SdkOptional<InviteUserToTeamRequestBodyItemRole> role;
   final SdkOptional<List<InviteUserToTeamRequestBodyItemProjectsItem>> projects;
 
-  const InviteUserToTeamRequestBodyItem({required this.email, this.role = const SdkOmitted(), this.projects = const SdkOmitted()});
+  const InviteUserToTeamRequestBodyItem(
+      {required this.email,
+      this.role = const SdkOmitted(),
+      this.projects = const SdkOmitted()});
 
-  InviteUserToTeamRequestBodyItem Function({String email, SdkOptional<InviteUserToTeamRequestBodyItemRole> role, SdkOptional<List<InviteUserToTeamRequestBodyItemProjectsItem>> projects}) get copyWith => _copyWith;
+  InviteUserToTeamRequestBodyItem Function(
+      {String email,
+      SdkOptional<InviteUserToTeamRequestBodyItemRole> role,
+      SdkOptional<List<InviteUserToTeamRequestBodyItemProjectsItem>>
+          projects}) get copyWith => _copyWith;
 
-  InviteUserToTeamRequestBodyItem _copyWith({Object? email = sdkOmittedValue, Object? role = sdkOmittedValue, Object? projects = sdkOmittedValue}) => InviteUserToTeamRequestBodyItem(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<InviteUserToTeamRequestBodyItemRole>,
-    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<List<InviteUserToTeamRequestBodyItemProjectsItem>>,
-  );
+  InviteUserToTeamRequestBodyItem _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? role = sdkOmittedValue,
+          Object? projects = sdkOmittedValue}) =>
+      InviteUserToTeamRequestBodyItem(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as SdkOptional<InviteUserToTeamRequestBodyItemRole>,
+        projects: identical(projects, sdkOmittedValue)
+            ? this.projects
+            : projects as SdkOptional<
+                List<InviteUserToTeamRequestBodyItemProjectsItem>>,
+      );
 
-  factory InviteUserToTeamRequestBodyItem.fromJson(Map<String, dynamic> json) => InviteUserToTeamRequestBodyItem(
-    email: (json['email'] as String?)!,
-    role: json['role'] != null ? SdkPresent((json['role'] != null ? InviteUserToTeamRequestBodyItemRole.fromJson(json['role'] as String) : null)!) : const SdkOmitted(),
-    projects: json['projects'] != null ? SdkPresent(((json['projects'] as List?)?.map((e) => InviteUserToTeamRequestBodyItemProjectsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory InviteUserToTeamRequestBodyItem.fromJson(Map<String, dynamic> json) =>
+      InviteUserToTeamRequestBodyItem(
+        email: (json['email'] as String?)!,
+        role: json['role'] != null
+            ? SdkPresent((json['role'] != null
+                ? InviteUserToTeamRequestBodyItemRole.fromJson(
+                    json['role'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        projects: json['projects'] != null
+            ? SdkPresent(((json['projects'] as List?)
+                ?.map((e) =>
+                    InviteUserToTeamRequestBodyItemProjectsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'email': email,
-    ...switch (role) {
-      SdkPresent<InviteUserToTeamRequestBodyItemRole>(value: final value) => {'role': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projects) {
-      SdkPresent<List<InviteUserToTeamRequestBodyItemProjectsItem>>(value: final value) => {'projects': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'email': email,
+        ...switch (role) {
+          SdkPresent<InviteUserToTeamRequestBodyItemRole>(value: final value) =>
+            {
+              'role': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projects) {
+          SdkPresent<List<InviteUserToTeamRequestBodyItemProjectsItem>>(
+            value: final value
+          ) =>
+            {
+              'projects': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

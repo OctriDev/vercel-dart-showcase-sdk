@@ -10,89 +10,168 @@ class GetBypassIpResponse {
   final SdkOptional<GetBypassIpResponsePagination> pagination;
   final List<GetBypassIpResponseResultItem> result;
 
-  const GetBypassIpResponse({this.pagination = const SdkOmitted(), required this.result});
+  const GetBypassIpResponse(
+      {this.pagination = const SdkOmitted(), required this.result});
 
-  GetBypassIpResponse Function({SdkOptional<GetBypassIpResponsePagination> pagination, List<GetBypassIpResponseResultItem> result}) get copyWith => _copyWith;
+  GetBypassIpResponse Function(
+      {SdkOptional<GetBypassIpResponsePagination> pagination,
+      List<GetBypassIpResponseResultItem> result}) get copyWith => _copyWith;
 
-  GetBypassIpResponse _copyWith({Object? pagination = sdkOmittedValue, Object? result = sdkOmittedValue}) => GetBypassIpResponse(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as SdkOptional<GetBypassIpResponsePagination>,
-    result: identical(result, sdkOmittedValue) ? this.result : result as List<GetBypassIpResponseResultItem>,
-  );
+  GetBypassIpResponse _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? result = sdkOmittedValue}) =>
+      GetBypassIpResponse(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as SdkOptional<GetBypassIpResponsePagination>,
+        result: identical(result, sdkOmittedValue)
+            ? this.result
+            : result as List<GetBypassIpResponseResultItem>,
+      );
 
-  factory GetBypassIpResponse.fromJson(Map<String, dynamic> json) => GetBypassIpResponse(
-    pagination: json['pagination'] != null ? SdkPresent((json['pagination'] != null ? GetBypassIpResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    result: ((json['result'] as List?)?.map((e) => GetBypassIpResponseResultItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory GetBypassIpResponse.fromJson(Map<String, dynamic> json) =>
+      GetBypassIpResponse(
+        pagination: json['pagination'] != null
+            ? SdkPresent((json['pagination'] != null
+                ? GetBypassIpResponsePagination.fromJson(
+                    json['pagination'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        result: ((json['result'] as List?)
+            ?.map((e) => GetBypassIpResponseResultItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (pagination) {
-      SdkPresent<GetBypassIpResponsePagination>(value: final value) => {'pagination': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'result': result.map((item) => item.toJson()).toList(),
-  };
+        ...switch (pagination) {
+          SdkPresent<GetBypassIpResponsePagination>(value: final value) => {
+              'pagination': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'result': result.map((item) => item.toJson()).toList(),
+      };
 }
 
 class AddBypassIpRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> domain;
+
   /// If the specified bypass will apply to all domains for a project.
   final SdkOptional<bool> projectScope;
   final SdkOptional<String> sourceIp;
   final SdkOptional<bool> allSources;
+
   /// Time to live in milliseconds
   final SdkOptional<double> ttl;
   final SdkOptional<String> note;
 
-  const AddBypassIpRequestBody({this.domain = const SdkOmitted(), this.projectScope = const SdkOmitted(), this.sourceIp = const SdkOmitted(), this.allSources = const SdkOmitted(), this.ttl = const SdkOmitted(), this.note = const SdkOmitted()});
+  const AddBypassIpRequestBody(
+      {this.domain = const SdkOmitted(),
+      this.projectScope = const SdkOmitted(),
+      this.sourceIp = const SdkOmitted(),
+      this.allSources = const SdkOmitted(),
+      this.ttl = const SdkOmitted(),
+      this.note = const SdkOmitted()});
 
-  AddBypassIpRequestBody Function({SdkOptional<String> domain, SdkOptional<bool> projectScope, SdkOptional<String> sourceIp, SdkOptional<bool> allSources, SdkOptional<double> ttl, SdkOptional<String> note}) get copyWith => _copyWith;
+  AddBypassIpRequestBody Function(
+      {SdkOptional<String> domain,
+      SdkOptional<bool> projectScope,
+      SdkOptional<String> sourceIp,
+      SdkOptional<bool> allSources,
+      SdkOptional<double> ttl,
+      SdkOptional<String> note}) get copyWith => _copyWith;
 
-  AddBypassIpRequestBody _copyWith({Object? domain = sdkOmittedValue, Object? projectScope = sdkOmittedValue, Object? sourceIp = sdkOmittedValue, Object? allSources = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? note = sdkOmittedValue}) => AddBypassIpRequestBody(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as SdkOptional<String>,
-    projectScope: identical(projectScope, sdkOmittedValue) ? this.projectScope : projectScope as SdkOptional<bool>,
-    sourceIp: identical(sourceIp, sdkOmittedValue) ? this.sourceIp : sourceIp as SdkOptional<String>,
-    allSources: identical(allSources, sdkOmittedValue) ? this.allSources : allSources as SdkOptional<bool>,
-    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-  );
+  AddBypassIpRequestBody _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? projectScope = sdkOmittedValue,
+          Object? sourceIp = sdkOmittedValue,
+          Object? allSources = sdkOmittedValue,
+          Object? ttl = sdkOmittedValue,
+          Object? note = sdkOmittedValue}) =>
+      AddBypassIpRequestBody(
+        domain: identical(domain, sdkOmittedValue)
+            ? this.domain
+            : domain as SdkOptional<String>,
+        projectScope: identical(projectScope, sdkOmittedValue)
+            ? this.projectScope
+            : projectScope as SdkOptional<bool>,
+        sourceIp: identical(sourceIp, sdkOmittedValue)
+            ? this.sourceIp
+            : sourceIp as SdkOptional<String>,
+        allSources: identical(allSources, sdkOmittedValue)
+            ? this.allSources
+            : allSources as SdkOptional<bool>,
+        ttl: identical(ttl, sdkOmittedValue)
+            ? this.ttl
+            : ttl as SdkOptional<double>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+      );
 
-  factory AddBypassIpRequestBody.fromJson(Map<String, dynamic> json) => AddBypassIpRequestBody(
-    domain: json['domain'] != null ? SdkPresent((json['domain'] as String?)!) : const SdkOmitted(),
-    projectScope: json['projectScope'] != null ? SdkPresent((json['projectScope'] as bool?)!) : const SdkOmitted(),
-    sourceIp: json['sourceIp'] != null ? SdkPresent((json['sourceIp'] as String?)!) : const SdkOmitted(),
-    allSources: json['allSources'] != null ? SdkPresent((json['allSources'] as bool?)!) : const SdkOmitted(),
-    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-  );
+  factory AddBypassIpRequestBody.fromJson(Map<String, dynamic> json) =>
+      AddBypassIpRequestBody(
+        domain: json['domain'] != null
+            ? SdkPresent((json['domain'] as String?)!)
+            : const SdkOmitted(),
+        projectScope: json['projectScope'] != null
+            ? SdkPresent((json['projectScope'] as bool?)!)
+            : const SdkOmitted(),
+        sourceIp: json['sourceIp'] != null
+            ? SdkPresent((json['sourceIp'] as String?)!)
+            : const SdkOmitted(),
+        allSources: json['allSources'] != null
+            ? SdkPresent((json['allSources'] as bool?)!)
+            : const SdkOmitted(),
+        ttl: json['ttl'] != null
+            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (domain) {
-      SdkPresent<String>(value: final value) => {'domain': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectScope) {
-      SdkPresent<bool>(value: final value) => {'projectScope': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sourceIp) {
-      SdkPresent<String>(value: final value) => {'sourceIp': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (allSources) {
-      SdkPresent<bool>(value: final value) => {'allSources': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ttl) {
-      SdkPresent<double>(value: final value) => {'ttl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (domain) {
+          SdkPresent<String>(value: final value) => {
+              'domain': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectScope) {
+          SdkPresent<bool>(value: final value) => {
+              'projectScope': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sourceIp) {
+          SdkPresent<String>(value: final value) => {
+              'sourceIp': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (allSources) {
+          SdkPresent<bool>(value: final value) => {
+              'allSources': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ttl) {
+          SdkPresent<double>(value: final value) => {
+              'ttl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RemoveBypassIpRequestBody {
@@ -104,48 +183,95 @@ class RemoveBypassIpRequestBody {
   final SdkOptional<bool> allSources;
   final SdkOptional<String> note;
 
-  const RemoveBypassIpRequestBody({this.domain = const SdkOmitted(), this.projectScope = const SdkOmitted(), this.sourceIp = const SdkOmitted(), this.allSources = const SdkOmitted(), this.note = const SdkOmitted()});
+  const RemoveBypassIpRequestBody(
+      {this.domain = const SdkOmitted(),
+      this.projectScope = const SdkOmitted(),
+      this.sourceIp = const SdkOmitted(),
+      this.allSources = const SdkOmitted(),
+      this.note = const SdkOmitted()});
 
-  RemoveBypassIpRequestBody Function({SdkOptional<String> domain, SdkOptional<bool> projectScope, SdkOptional<String> sourceIp, SdkOptional<bool> allSources, SdkOptional<String> note}) get copyWith => _copyWith;
+  RemoveBypassIpRequestBody Function(
+      {SdkOptional<String> domain,
+      SdkOptional<bool> projectScope,
+      SdkOptional<String> sourceIp,
+      SdkOptional<bool> allSources,
+      SdkOptional<String> note}) get copyWith => _copyWith;
 
-  RemoveBypassIpRequestBody _copyWith({Object? domain = sdkOmittedValue, Object? projectScope = sdkOmittedValue, Object? sourceIp = sdkOmittedValue, Object? allSources = sdkOmittedValue, Object? note = sdkOmittedValue}) => RemoveBypassIpRequestBody(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as SdkOptional<String>,
-    projectScope: identical(projectScope, sdkOmittedValue) ? this.projectScope : projectScope as SdkOptional<bool>,
-    sourceIp: identical(sourceIp, sdkOmittedValue) ? this.sourceIp : sourceIp as SdkOptional<String>,
-    allSources: identical(allSources, sdkOmittedValue) ? this.allSources : allSources as SdkOptional<bool>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-  );
+  RemoveBypassIpRequestBody _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? projectScope = sdkOmittedValue,
+          Object? sourceIp = sdkOmittedValue,
+          Object? allSources = sdkOmittedValue,
+          Object? note = sdkOmittedValue}) =>
+      RemoveBypassIpRequestBody(
+        domain: identical(domain, sdkOmittedValue)
+            ? this.domain
+            : domain as SdkOptional<String>,
+        projectScope: identical(projectScope, sdkOmittedValue)
+            ? this.projectScope
+            : projectScope as SdkOptional<bool>,
+        sourceIp: identical(sourceIp, sdkOmittedValue)
+            ? this.sourceIp
+            : sourceIp as SdkOptional<String>,
+        allSources: identical(allSources, sdkOmittedValue)
+            ? this.allSources
+            : allSources as SdkOptional<bool>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+      );
 
-  factory RemoveBypassIpRequestBody.fromJson(Map<String, dynamic> json) => RemoveBypassIpRequestBody(
-    domain: json['domain'] != null ? SdkPresent((json['domain'] as String?)!) : const SdkOmitted(),
-    projectScope: json['projectScope'] != null ? SdkPresent((json['projectScope'] as bool?)!) : const SdkOmitted(),
-    sourceIp: json['sourceIp'] != null ? SdkPresent((json['sourceIp'] as String?)!) : const SdkOmitted(),
-    allSources: json['allSources'] != null ? SdkPresent((json['allSources'] as bool?)!) : const SdkOmitted(),
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-  );
+  factory RemoveBypassIpRequestBody.fromJson(Map<String, dynamic> json) =>
+      RemoveBypassIpRequestBody(
+        domain: json['domain'] != null
+            ? SdkPresent((json['domain'] as String?)!)
+            : const SdkOmitted(),
+        projectScope: json['projectScope'] != null
+            ? SdkPresent((json['projectScope'] as bool?)!)
+            : const SdkOmitted(),
+        sourceIp: json['sourceIp'] != null
+            ? SdkPresent((json['sourceIp'] as String?)!)
+            : const SdkOmitted(),
+        allSources: json['allSources'] != null
+            ? SdkPresent((json['allSources'] as bool?)!)
+            : const SdkOmitted(),
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (domain) {
-      SdkPresent<String>(value: final value) => {'domain': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectScope) {
-      SdkPresent<bool>(value: final value) => {'projectScope': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sourceIp) {
-      SdkPresent<String>(value: final value) => {'sourceIp': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (allSources) {
-      SdkPresent<bool>(value: final value) => {'allSources': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (domain) {
+          SdkPresent<String>(value: final value) => {
+              'domain': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectScope) {
+          SdkPresent<bool>(value: final value) => {
+              'projectScope': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sourceIp) {
+          SdkPresent<String>(value: final value) => {
+              'sourceIp': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (allSources) {
+          SdkPresent<bool>(value: final value) => {
+              'allSources': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RemoveBypassIpResponse {
@@ -155,141 +281,271 @@ class RemoveBypassIpResponse {
 
   const RemoveBypassIpResponse({required this.ok});
 
-  RemoveBypassIpResponse Function({RemoveBypassIpResponseOk ok}) get copyWith => _copyWith;
+  RemoveBypassIpResponse Function({RemoveBypassIpResponseOk ok}) get copyWith =>
+      _copyWith;
 
-  RemoveBypassIpResponse _copyWith({Object? ok = sdkOmittedValue}) => RemoveBypassIpResponse(
-    ok: identical(ok, sdkOmittedValue) ? this.ok : ok as RemoveBypassIpResponseOk,
-  );
+  RemoveBypassIpResponse _copyWith({Object? ok = sdkOmittedValue}) =>
+      RemoveBypassIpResponse(
+        ok: identical(ok, sdkOmittedValue)
+            ? this.ok
+            : ok as RemoveBypassIpResponseOk,
+      );
 
-  factory RemoveBypassIpResponse.fromJson(Map<String, dynamic> json) => RemoveBypassIpResponse(
-    ok: (json['ok'] != null ? RemoveBypassIpResponseOk.fromJson(json['ok'] as bool) : null)!,
-  );
+  factory RemoveBypassIpResponse.fromJson(Map<String, dynamic> json) =>
+      RemoveBypassIpResponse(
+        ok: (json['ok'] != null
+            ? RemoveBypassIpResponseOk.fromJson(json['ok'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'ok': ok.toJson(),
-  };
+        'ok': ok.toJson(),
+      };
 }
 
 class CreateConditionalBypassRequestBodyConditionGroupItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<CreateConditionalBypassRequestConditionGroupItemConditionsItem> conditions;
+  final List<CreateConditionalBypassRequestConditionGroupItemConditionsItem>
+      conditions;
 
-  const CreateConditionalBypassRequestBodyConditionGroupItem({required this.conditions});
+  const CreateConditionalBypassRequestBodyConditionGroupItem(
+      {required this.conditions});
 
-  CreateConditionalBypassRequestBodyConditionGroupItem Function({List<CreateConditionalBypassRequestConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
+  CreateConditionalBypassRequestBodyConditionGroupItem Function(
+      {List<CreateConditionalBypassRequestConditionGroupItemConditionsItem>
+          conditions}) get copyWith => _copyWith;
 
-  CreateConditionalBypassRequestBodyConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => CreateConditionalBypassRequestBodyConditionGroupItem(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<CreateConditionalBypassRequestConditionGroupItemConditionsItem>,
-  );
+  CreateConditionalBypassRequestBodyConditionGroupItem _copyWith(
+          {Object? conditions = sdkOmittedValue}) =>
+      CreateConditionalBypassRequestBodyConditionGroupItem(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<
+                CreateConditionalBypassRequestConditionGroupItemConditionsItem>,
+      );
 
-  factory CreateConditionalBypassRequestBodyConditionGroupItem.fromJson(Map<String, dynamic> json) => CreateConditionalBypassRequestBodyConditionGroupItem(
-    conditions: ((json['conditions'] as List?)?.map((e) => CreateConditionalBypassRequestConditionGroupItemConditionsItem.fromJson(e)).toList())!,
-  );
+  factory CreateConditionalBypassRequestBodyConditionGroupItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateConditionalBypassRequestBodyConditionGroupItem(
+        conditions: ((json['conditions'] as List?)
+            ?.map((e) =>
+                CreateConditionalBypassRequestConditionGroupItemConditionsItem
+                    .fromJson(e))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+      };
 }
 
 class CreateConditionalBypassRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String domain;
-  final List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup;
+  final List<CreateConditionalBypassRequestBodyConditionGroupItem>
+      conditionGroup;
   final SdkOptional<String> note;
 
-  const CreateConditionalBypassRequestBody({required this.domain, required this.conditionGroup, this.note = const SdkOmitted()});
+  const CreateConditionalBypassRequestBody(
+      {required this.domain,
+      required this.conditionGroup,
+      this.note = const SdkOmitted()});
 
-  CreateConditionalBypassRequestBody Function({String domain, List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup, SdkOptional<String> note}) get copyWith => _copyWith;
+  CreateConditionalBypassRequestBody Function(
+      {String domain,
+      List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup,
+      SdkOptional<String> note}) get copyWith => _copyWith;
 
-  CreateConditionalBypassRequestBody _copyWith({Object? domain = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? note = sdkOmittedValue}) => CreateConditionalBypassRequestBody(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<CreateConditionalBypassRequestBodyConditionGroupItem>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-  );
+  CreateConditionalBypassRequestBody _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? conditionGroup = sdkOmittedValue,
+          Object? note = sdkOmittedValue}) =>
+      CreateConditionalBypassRequestBody(
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        conditionGroup: identical(conditionGroup, sdkOmittedValue)
+            ? this.conditionGroup
+            : conditionGroup
+                as List<CreateConditionalBypassRequestBodyConditionGroupItem>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+      );
 
-  factory CreateConditionalBypassRequestBody.fromJson(Map<String, dynamic> json) => CreateConditionalBypassRequestBody(
-    domain: (json['domain'] as String?)!,
-    conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => CreateConditionalBypassRequestBodyConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateConditionalBypassRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      CreateConditionalBypassRequestBody(
+        domain: (json['domain'] as String?)!,
+        conditionGroup: ((json['conditionGroup'] as List?)
+            ?.map((e) =>
+                CreateConditionalBypassRequestBodyConditionGroupItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'domain': domain,
-    'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'domain': domain,
+        'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateConditionalBypassResponseResultConditionGroupItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> key;
-  final SdkOptional<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg> neg;
-  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp op;
-  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType type_;
+  final SdkOptional<
+          CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>
+      neg;
+  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp
+      op;
+  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType
+      type_;
   final SdkOptional<dynamic> value;
 
-  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItem({this.key = const SdkOmitted(), this.neg = const SdkOmitted(), required this.op, required this.type_, this.value = const SdkOmitted()});
+  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
+      {this.key = const SdkOmitted(),
+      this.neg = const SdkOmitted(),
+      required this.op,
+      required this.type_,
+      this.value = const SdkOmitted()});
 
-  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem Function({SdkOptional<String> key, SdkOptional<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg> neg, CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp op, CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem Function(
+      {SdkOptional<String> key,
+      SdkOptional<
+              CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>
+          neg,
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp
+          op,
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType
+          type_,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem _copyWith({Object? key = sdkOmittedValue, Object? neg = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    neg: identical(neg, sdkOmittedValue) ? this.neg : neg as SdkOptional<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>,
-    op: identical(op, sdkOmittedValue) ? this.op : op as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? neg = sdkOmittedValue,
+              Object? op = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
+            key: identical(key, sdkOmittedValue)
+                ? this.key
+                : key as SdkOptional<String>,
+            neg: identical(neg, sdkOmittedValue)
+                ? this.neg
+                : neg as SdkOptional<
+                    CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>,
+            op: identical(op, sdkOmittedValue)
+                ? this.op
+                : op
+                    as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as SdkOptional<dynamic>,
+          );
 
-  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItem.fromJson(Map<String, dynamic> json) => CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    neg: json['neg'] != null ? SdkPresent((json['neg'] != null ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg.fromJson(json['neg'] as bool) : null)!) : const SdkOmitted(),
-    op: (json['op'] != null ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp.fromJson(json['op'] as String) : null)!,
-    type_: (json['type'] != null ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType.fromJson(json['type'] as String) : null)!,
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  );
+  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        neg: json['neg'] != null
+            ? SdkPresent((json['neg'] != null
+                ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg
+                    .fromJson(json['neg'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        op: (json['op'] != null
+            ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp
+                .fromJson(json['op'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (neg) {
-      SdkPresent<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>(value: final value) => {'neg': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'op': op.toJson(),
-    'type': type_.toJson(),
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (neg) {
+          SdkPresent<
+                CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>(
+            value: final value
+          ) =>
+            {
+              'neg': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'op': op.toJson(),
+        'type': type_.toJson(),
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateConditionalBypassResponseResultConditionGroupItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem> conditions;
+  final List<
+          CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>
+      conditions;
 
-  const CreateConditionalBypassResponseResultConditionGroupItem({required this.conditions});
+  const CreateConditionalBypassResponseResultConditionGroupItem(
+      {required this.conditions});
 
-  CreateConditionalBypassResponseResultConditionGroupItem Function({List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
+  CreateConditionalBypassResponseResultConditionGroupItem Function(
+      {List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>
+          conditions}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponseResultConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => CreateConditionalBypassResponseResultConditionGroupItem(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>,
-  );
+  CreateConditionalBypassResponseResultConditionGroupItem _copyWith(
+          {Object? conditions = sdkOmittedValue}) =>
+      CreateConditionalBypassResponseResultConditionGroupItem(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<
+                CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>,
+      );
 
-  factory CreateConditionalBypassResponseResultConditionGroupItem.fromJson(Map<String, dynamic> json) => CreateConditionalBypassResponseResultConditionGroupItem(
-    conditions: ((json['conditions'] as List?)?.map((e) => CreateConditionalBypassResponseResultConditionGroupItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory CreateConditionalBypassResponseResultConditionGroupItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateConditionalBypassResponseResultConditionGroupItem(
+        conditions: ((json['conditions'] as List?)
+            ?.map((e) =>
+                CreateConditionalBypassResponseResultConditionGroupItemConditionsItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+      };
 }

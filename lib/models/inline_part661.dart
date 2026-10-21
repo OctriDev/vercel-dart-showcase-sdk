@@ -7,132 +7,266 @@ part of 'inline.dart';
 class ListEnvironmentCustomResponseEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Configuration for matching git branches to this environment
-  final SdkOptional<ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher> branchMatcher;
+  final SdkOptional<ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher>
+      branchMatcher;
+
   /// Timestamp when the environment was created
   final double createdAt;
+
   /// List of aliases for the current deployment
   final SdkOptional<List<String>> currentDeploymentAliases;
+
   /// Optional description of the environment's purpose
   final SdkOptional<String> description;
+
   /// List of domains associated with this environment
-  final SdkOptional<List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>> domains;
+  final SdkOptional<
+      List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>> domains;
+
   /// Unique identifier for the custom environment (format: env_*)
   final String id;
+
   /// URL-friendly name of the environment
   final String slug;
+
   /// The type of environment (production, preview, or development)
   final ListEnvironmentCustomResponseEnvironmentsItemType type_;
+
   /// Timestamp when the environment was last updated
   final double updatedAt;
 
-  const ListEnvironmentCustomResponseEnvironmentsItem({this.branchMatcher = const SdkOmitted(), required this.createdAt, this.currentDeploymentAliases = const SdkOmitted(), this.description = const SdkOmitted(), this.domains = const SdkOmitted(), required this.id, required this.slug, required this.type_, required this.updatedAt});
+  const ListEnvironmentCustomResponseEnvironmentsItem(
+      {this.branchMatcher = const SdkOmitted(),
+      required this.createdAt,
+      this.currentDeploymentAliases = const SdkOmitted(),
+      this.description = const SdkOmitted(),
+      this.domains = const SdkOmitted(),
+      required this.id,
+      required this.slug,
+      required this.type_,
+      required this.updatedAt});
 
-  ListEnvironmentCustomResponseEnvironmentsItem Function({SdkOptional<ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher> branchMatcher, double createdAt, SdkOptional<List<String>> currentDeploymentAliases, SdkOptional<String> description, SdkOptional<List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>> domains, String id, String slug, ListEnvironmentCustomResponseEnvironmentsItemType type_, double updatedAt}) get copyWith => _copyWith;
+  ListEnvironmentCustomResponseEnvironmentsItem Function(
+      {SdkOptional<ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher>
+          branchMatcher,
+      double createdAt,
+      SdkOptional<List<String>> currentDeploymentAliases,
+      SdkOptional<String> description,
+      SdkOptional<
+              List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>>
+          domains,
+      String id,
+      String slug,
+      ListEnvironmentCustomResponseEnvironmentsItemType type_,
+      double updatedAt}) get copyWith => _copyWith;
 
-  ListEnvironmentCustomResponseEnvironmentsItem _copyWith({Object? branchMatcher = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? currentDeploymentAliases = sdkOmittedValue, Object? description = sdkOmittedValue, Object? domains = sdkOmittedValue, Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ListEnvironmentCustomResponseEnvironmentsItem(
-    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    currentDeploymentAliases: identical(currentDeploymentAliases, sdkOmittedValue) ? this.currentDeploymentAliases : currentDeploymentAliases as SdkOptional<List<String>>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListEnvironmentCustomResponseEnvironmentsItemType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  ListEnvironmentCustomResponseEnvironmentsItem _copyWith(
+          {Object? branchMatcher = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? currentDeploymentAliases = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? domains = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      ListEnvironmentCustomResponseEnvironmentsItem(
+        branchMatcher: identical(branchMatcher, sdkOmittedValue)
+            ? this.branchMatcher
+            : branchMatcher as SdkOptional<
+                ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        currentDeploymentAliases:
+            identical(currentDeploymentAliases, sdkOmittedValue)
+                ? this.currentDeploymentAliases
+                : currentDeploymentAliases as SdkOptional<List<String>>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as SdkOptional<
+                List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListEnvironmentCustomResponseEnvironmentsItemType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory ListEnvironmentCustomResponseEnvironmentsItem.fromJson(Map<String, dynamic> json) => ListEnvironmentCustomResponseEnvironmentsItem(
-    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    currentDeploymentAliases: json['currentDeploymentAliases'] != null ? SdkPresent(((json['currentDeploymentAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    domains: json['domains'] != null ? SdkPresent(((json['domains'] as List?)?.map((e) => ListEnvironmentCustomResponseEnvironmentsItemDomainsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    slug: (json['slug'] as String?)!,
-    type_: (json['type'] != null ? ListEnvironmentCustomResponseEnvironmentsItemType.fromJson(json['type'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory ListEnvironmentCustomResponseEnvironmentsItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListEnvironmentCustomResponseEnvironmentsItem(
+        branchMatcher: json['branchMatcher'] != null
+            ? SdkPresent((json['branchMatcher'] != null
+                ? ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher
+                    .fromJson(json['branchMatcher'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        currentDeploymentAliases: json['currentDeploymentAliases'] != null
+            ? SdkPresent(((json['currentDeploymentAliases'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        domains: json['domains'] != null
+            ? SdkPresent(((json['domains'] as List?)
+                ?.map((e) =>
+                    ListEnvironmentCustomResponseEnvironmentsItemDomainsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        slug: (json['slug'] as String?)!,
+        type_: (json['type'] != null
+            ? ListEnvironmentCustomResponseEnvironmentsItemType.fromJson(
+                json['type'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (branchMatcher) {
-      SdkPresent<ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    ...switch (currentDeploymentAliases) {
-      SdkPresent<List<String>>(value: final value) => {'currentDeploymentAliases': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (domains) {
-      SdkPresent<List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>>(value: final value) => {'domains': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'slug': slug,
-    'type': type_.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (branchMatcher) {
+          SdkPresent<
+                ListEnvironmentCustomResponseEnvironmentsItemBranchMatcher>(
+            value: final value
+          ) =>
+            {
+              'branchMatcher': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        ...switch (currentDeploymentAliases) {
+          SdkPresent<List<String>>(value: final value) => {
+              'currentDeploymentAliases': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (domains) {
+          SdkPresent<
+                List<ListEnvironmentCustomResponseEnvironmentsItemDomainsItem>>(
+            value: final value
+          ) =>
+            {
+              'domains': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'slug': slug,
+        'type': type_.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 class ListEnvironmentCustomResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The maximum number of custom environments allowed either by the team's plan type or a custom override.
   final ListEnvironmentCustomResponseAccountLimit accountLimit;
   final List<ListEnvironmentCustomResponseEnvironmentsItem> environments;
 
-  const ListEnvironmentCustomResponse({required this.accountLimit, required this.environments});
+  const ListEnvironmentCustomResponse(
+      {required this.accountLimit, required this.environments});
 
-  ListEnvironmentCustomResponse Function({ListEnvironmentCustomResponseAccountLimit accountLimit, List<ListEnvironmentCustomResponseEnvironmentsItem> environments}) get copyWith => _copyWith;
+  ListEnvironmentCustomResponse Function(
+          {ListEnvironmentCustomResponseAccountLimit accountLimit,
+          List<ListEnvironmentCustomResponseEnvironmentsItem> environments})
+      get copyWith => _copyWith;
 
-  ListEnvironmentCustomResponse _copyWith({Object? accountLimit = sdkOmittedValue, Object? environments = sdkOmittedValue}) => ListEnvironmentCustomResponse(
-    accountLimit: identical(accountLimit, sdkOmittedValue) ? this.accountLimit : accountLimit as ListEnvironmentCustomResponseAccountLimit,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<ListEnvironmentCustomResponseEnvironmentsItem>,
-  );
+  ListEnvironmentCustomResponse _copyWith(
+          {Object? accountLimit = sdkOmittedValue,
+          Object? environments = sdkOmittedValue}) =>
+      ListEnvironmentCustomResponse(
+        accountLimit: identical(accountLimit, sdkOmittedValue)
+            ? this.accountLimit
+            : accountLimit as ListEnvironmentCustomResponseAccountLimit,
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments
+                as List<ListEnvironmentCustomResponseEnvironmentsItem>,
+      );
 
-  factory ListEnvironmentCustomResponse.fromJson(Map<String, dynamic> json) => ListEnvironmentCustomResponse(
-    accountLimit: (json['accountLimit'] != null ? ListEnvironmentCustomResponseAccountLimit.fromJson(json['accountLimit'] as Map<String, dynamic>) : null)!,
-    environments: ((json['environments'] as List?)?.map((e) => ListEnvironmentCustomResponseEnvironmentsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListEnvironmentCustomResponse.fromJson(Map<String, dynamic> json) =>
+      ListEnvironmentCustomResponse(
+        accountLimit: (json['accountLimit'] != null
+            ? ListEnvironmentCustomResponseAccountLimit.fromJson(
+                json['accountLimit'] as Map<String, dynamic>)
+            : null)!,
+        environments: ((json['environments'] as List?)
+            ?.map((e) => ListEnvironmentCustomResponseEnvironmentsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'accountLimit': accountLimit.toJson(),
-    'environments': environments.map((item) => item.toJson()).toList(),
-  };
+        'accountLimit': accountLimit.toJson(),
+        'environments': environments.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// Configuration for matching git branches to this environment
 class GetCustomEnvironmentResponseBranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The pattern to match against branch names
   final String pattern;
+
   /// The type of matching to perform
   final GetCustomEnvironmentResponseBranchMatcherType type_;
 
-  const GetCustomEnvironmentResponseBranchMatcher({required this.pattern, required this.type_});
+  const GetCustomEnvironmentResponseBranchMatcher(
+      {required this.pattern, required this.type_});
 
-  GetCustomEnvironmentResponseBranchMatcher Function({String pattern, GetCustomEnvironmentResponseBranchMatcherType type_}) get copyWith => _copyWith;
+  GetCustomEnvironmentResponseBranchMatcher Function(
+          {String pattern, GetCustomEnvironmentResponseBranchMatcherType type_})
+      get copyWith => _copyWith;
 
-  GetCustomEnvironmentResponseBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetCustomEnvironmentResponseBranchMatcher(
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetCustomEnvironmentResponseBranchMatcherType,
-  );
+  GetCustomEnvironmentResponseBranchMatcher _copyWith(
+          {Object? pattern = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetCustomEnvironmentResponseBranchMatcher(
+        pattern: identical(pattern, sdkOmittedValue)
+            ? this.pattern
+            : pattern as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetCustomEnvironmentResponseBranchMatcherType,
+      );
 
-  factory GetCustomEnvironmentResponseBranchMatcher.fromJson(Map<String, dynamic> json) => GetCustomEnvironmentResponseBranchMatcher(
-    pattern: (json['pattern'] as String?)!,
-    type_: (json['type'] != null ? GetCustomEnvironmentResponseBranchMatcherType.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetCustomEnvironmentResponseBranchMatcher.fromJson(
+          Map<String, dynamic> json) =>
+      GetCustomEnvironmentResponseBranchMatcher(
+        pattern: (json['pattern'] as String?)!,
+        type_: (json['type'] != null
+            ? GetCustomEnvironmentResponseBranchMatcherType.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pattern': pattern,
-    'type': type_.toJson(),
-  };
+        'pattern': pattern,
+        'type': type_.toJson(),
+      };
 }
 
 /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
@@ -144,30 +278,47 @@ class GetCustomEnvironmentResponseDomainsItemVerificationItem {
   final String type_;
   final String value;
 
-  const GetCustomEnvironmentResponseDomainsItemVerificationItem({required this.domain, required this.reason, required this.type_, required this.value});
+  const GetCustomEnvironmentResponseDomainsItemVerificationItem(
+      {required this.domain,
+      required this.reason,
+      required this.type_,
+      required this.value});
 
-  GetCustomEnvironmentResponseDomainsItemVerificationItem Function({String domain, String reason, String type_, String value}) get copyWith => _copyWith;
+  GetCustomEnvironmentResponseDomainsItemVerificationItem Function(
+      {String domain,
+      String reason,
+      String type_,
+      String value}) get copyWith => _copyWith;
 
-  GetCustomEnvironmentResponseDomainsItemVerificationItem _copyWith({Object? domain = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetCustomEnvironmentResponseDomainsItemVerificationItem(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  GetCustomEnvironmentResponseDomainsItemVerificationItem _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? reason = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GetCustomEnvironmentResponseDomainsItemVerificationItem(
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        reason:
+            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory GetCustomEnvironmentResponseDomainsItemVerificationItem.fromJson(Map<String, dynamic> json) => GetCustomEnvironmentResponseDomainsItemVerificationItem(
-    domain: (json['domain'] as String?)!,
-    reason: (json['reason'] as String?)!,
-    type_: (json['type'] as String?)!,
-    value: (json['value'] as String?)!,
-  );
+  factory GetCustomEnvironmentResponseDomainsItemVerificationItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetCustomEnvironmentResponseDomainsItemVerificationItem(
+        domain: (json['domain'] as String?)!,
+        reason: (json['reason'] as String?)!,
+        type_: (json['type'] as String?)!,
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'domain': domain,
-    'reason': reason,
-    'type': type_,
-    'value': value,
-  };
+        'domain': domain,
+        'reason': reason,
+        'type': type_,
+        'value': value,
+      };
 }
 
 /// List of domains associated with this environment
@@ -181,77 +332,189 @@ class GetCustomEnvironmentResponseDomainsItem {
   final String name;
   final String projectId;
   final SdkOptional<String?> redirect;
-  final SdkOptional<GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?> redirectStatusCode;
+  final SdkOptional<GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?>
+      redirectStatusCode;
   final SdkOptional<double> updatedAt;
+
   /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
-  final SdkOptional<List<GetCustomEnvironmentResponseDomainsItemVerificationItem>> verification;
+  final SdkOptional<
+          List<GetCustomEnvironmentResponseDomainsItemVerificationItem>>
+      verification;
+
   /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
   final GetCustomEnvironmentResponseDomainsItemVerified verified;
 
-  const GetCustomEnvironmentResponseDomainsItem({required this.apexName, this.createdAt = const SdkOmitted(), this.customEnvironmentId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), required this.name, required this.projectId, this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.verification = const SdkOmitted(), required this.verified});
+  const GetCustomEnvironmentResponseDomainsItem(
+      {required this.apexName,
+      this.createdAt = const SdkOmitted(),
+      this.customEnvironmentId = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      required this.name,
+      required this.projectId,
+      this.redirect = const SdkOmitted(),
+      this.redirectStatusCode = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.verification = const SdkOmitted(),
+      required this.verified});
 
-  GetCustomEnvironmentResponseDomainsItem Function({String apexName, SdkOptional<double> createdAt, SdkOptional<String?> customEnvironmentId, SdkOptional<String?> gitBranch, String name, String projectId, SdkOptional<String?> redirect, SdkOptional<GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?> redirectStatusCode, SdkOptional<double> updatedAt, SdkOptional<List<GetCustomEnvironmentResponseDomainsItemVerificationItem>> verification, GetCustomEnvironmentResponseDomainsItemVerified verified}) get copyWith => _copyWith;
+  GetCustomEnvironmentResponseDomainsItem Function(
+      {String apexName,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> customEnvironmentId,
+      SdkOptional<String?> gitBranch,
+      String name,
+      String projectId,
+      SdkOptional<String?> redirect,
+      SdkOptional<GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?>
+          redirectStatusCode,
+      SdkOptional<double> updatedAt,
+      SdkOptional<List<GetCustomEnvironmentResponseDomainsItemVerificationItem>>
+          verification,
+      GetCustomEnvironmentResponseDomainsItemVerified
+          verified}) get copyWith => _copyWith;
 
-  GetCustomEnvironmentResponseDomainsItem _copyWith({Object? apexName = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? verification = sdkOmittedValue, Object? verified = sdkOmittedValue}) => GetCustomEnvironmentResponseDomainsItem(
-    apexName: identical(apexName, sdkOmittedValue) ? this.apexName : apexName as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String?>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
-    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    verification: identical(verification, sdkOmittedValue) ? this.verification : verification as SdkOptional<List<GetCustomEnvironmentResponseDomainsItemVerificationItem>>,
-    verified: identical(verified, sdkOmittedValue) ? this.verified : verified as GetCustomEnvironmentResponseDomainsItemVerified,
-  );
+  GetCustomEnvironmentResponseDomainsItem _copyWith(
+          {Object? apexName = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? customEnvironmentId = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? redirectStatusCode = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? verification = sdkOmittedValue,
+          Object? verified = sdkOmittedValue}) =>
+      GetCustomEnvironmentResponseDomainsItem(
+        apexName: identical(apexName, sdkOmittedValue)
+            ? this.apexName
+            : apexName as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as SdkOptional<String?>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<String?>,
+        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
+            ? this.redirectStatusCode
+            : redirectStatusCode as SdkOptional<
+                GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        verification: identical(verification, sdkOmittedValue)
+            ? this.verification
+            : verification as SdkOptional<
+                List<GetCustomEnvironmentResponseDomainsItemVerificationItem>>,
+        verified: identical(verified, sdkOmittedValue)
+            ? this.verified
+            : verified as GetCustomEnvironmentResponseDomainsItemVerified,
+      );
 
-  factory GetCustomEnvironmentResponseDomainsItem.fromJson(Map<String, dynamic> json) => GetCustomEnvironmentResponseDomainsItem(
-    apexName: (json['apexName'] as String?)!,
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    customEnvironmentId: json.containsKey('customEnvironmentId') ? SdkPresent(json['customEnvironmentId'] as String?) : const SdkOmitted(),
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
-    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? GetCustomEnvironmentResponseDomainsItemRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    verification: json['verification'] != null ? SdkPresent(((json['verification'] as List?)?.map((e) => GetCustomEnvironmentResponseDomainsItemVerificationItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    verified: (json['verified'] != null ? GetCustomEnvironmentResponseDomainsItemVerified.fromJson(json['verified'] as bool) : null)!,
-  );
+  factory GetCustomEnvironmentResponseDomainsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetCustomEnvironmentResponseDomainsItem(
+        apexName: (json['apexName'] as String?)!,
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        customEnvironmentId: json.containsKey('customEnvironmentId')
+            ? SdkPresent(json['customEnvironmentId'] as String?)
+            : const SdkOmitted(),
+        gitBranch: json.containsKey('gitBranch')
+            ? SdkPresent(json['gitBranch'] as String?)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] as String?)
+            : const SdkOmitted(),
+        redirectStatusCode: json.containsKey('redirectStatusCode')
+            ? SdkPresent(json['redirectStatusCode'] != null
+                ? GetCustomEnvironmentResponseDomainsItemRedirectStatusCode
+                    .fromJson((json['redirectStatusCode'] as num).toDouble())
+                : null)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        verification: json['verification'] != null
+            ? SdkPresent(((json['verification'] as List?)
+                ?.map((e) =>
+                    GetCustomEnvironmentResponseDomainsItemVerificationItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        verified: (json['verified'] != null
+            ? GetCustomEnvironmentResponseDomainsItemVerified.fromJson(
+                json['verified'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'apexName': apexName,
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentId) {
-      SdkPresent<String?>(value: final value) => {'customEnvironmentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'projectId': projectId,
-    ...switch (redirect) {
-      SdkPresent<String?>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectStatusCode) {
-      SdkPresent<GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (verification) {
-      SdkPresent<List<GetCustomEnvironmentResponseDomainsItemVerificationItem>>(value: final value) => {'verification': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'verified': verified.toJson(),
-  };
+        'apexName': apexName,
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentId) {
+          SdkPresent<String?>(value: final value) => {
+              'customEnvironmentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'projectId': projectId,
+        ...switch (redirect) {
+          SdkPresent<String?>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectStatusCode) {
+          SdkPresent<
+                GetCustomEnvironmentResponseDomainsItemRedirectStatusCode?>(
+            value: final value
+          ) =>
+            {
+              'redirectStatusCode': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (verification) {
+          SdkPresent<
+                List<GetCustomEnvironmentResponseDomainsItemVerificationItem>>(
+            value: final value
+          ) =>
+            {
+              'verification': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'verified': verified.toJson(),
+      };
 }

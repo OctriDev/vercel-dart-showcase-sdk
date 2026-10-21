@@ -13,33 +13,79 @@ class CreateProjectResponseSecurityManagedRules {
   final CreateProjectResponseSecurityManagedRulesTrafficSources trafficSources;
   final CreateProjectResponseSecurityManagedRulesVercelRuleset vercelRuleset;
 
-  const CreateProjectResponseSecurityManagedRules({required this.aiBots, required this.botFilter, required this.owasp, required this.trafficSources, required this.vercelRuleset});
+  const CreateProjectResponseSecurityManagedRules(
+      {required this.aiBots,
+      required this.botFilter,
+      required this.owasp,
+      required this.trafficSources,
+      required this.vercelRuleset});
 
-  CreateProjectResponseSecurityManagedRules Function({CreateProjectResponseSecurityManagedRulesAiBots aiBots, CreateProjectResponseSecurityManagedRulesBotFilter botFilter, CreateProjectResponseSecurityManagedRulesOwasp owasp, CreateProjectResponseSecurityManagedRulesTrafficSources trafficSources, CreateProjectResponseSecurityManagedRulesVercelRuleset vercelRuleset}) get copyWith => _copyWith;
+  CreateProjectResponseSecurityManagedRules Function(
+      {CreateProjectResponseSecurityManagedRulesAiBots aiBots,
+      CreateProjectResponseSecurityManagedRulesBotFilter botFilter,
+      CreateProjectResponseSecurityManagedRulesOwasp owasp,
+      CreateProjectResponseSecurityManagedRulesTrafficSources trafficSources,
+      CreateProjectResponseSecurityManagedRulesVercelRuleset
+          vercelRuleset}) get copyWith => _copyWith;
 
-  CreateProjectResponseSecurityManagedRules _copyWith({Object? aiBots = sdkOmittedValue, Object? botFilter = sdkOmittedValue, Object? owasp = sdkOmittedValue, Object? trafficSources = sdkOmittedValue, Object? vercelRuleset = sdkOmittedValue}) => CreateProjectResponseSecurityManagedRules(
-    aiBots: identical(aiBots, sdkOmittedValue) ? this.aiBots : aiBots as CreateProjectResponseSecurityManagedRulesAiBots,
-    botFilter: identical(botFilter, sdkOmittedValue) ? this.botFilter : botFilter as CreateProjectResponseSecurityManagedRulesBotFilter,
-    owasp: identical(owasp, sdkOmittedValue) ? this.owasp : owasp as CreateProjectResponseSecurityManagedRulesOwasp,
-    trafficSources: identical(trafficSources, sdkOmittedValue) ? this.trafficSources : trafficSources as CreateProjectResponseSecurityManagedRulesTrafficSources,
-    vercelRuleset: identical(vercelRuleset, sdkOmittedValue) ? this.vercelRuleset : vercelRuleset as CreateProjectResponseSecurityManagedRulesVercelRuleset,
-  );
+  CreateProjectResponseSecurityManagedRules _copyWith(
+          {Object? aiBots = sdkOmittedValue,
+          Object? botFilter = sdkOmittedValue,
+          Object? owasp = sdkOmittedValue,
+          Object? trafficSources = sdkOmittedValue,
+          Object? vercelRuleset = sdkOmittedValue}) =>
+      CreateProjectResponseSecurityManagedRules(
+        aiBots: identical(aiBots, sdkOmittedValue)
+            ? this.aiBots
+            : aiBots as CreateProjectResponseSecurityManagedRulesAiBots,
+        botFilter: identical(botFilter, sdkOmittedValue)
+            ? this.botFilter
+            : botFilter as CreateProjectResponseSecurityManagedRulesBotFilter,
+        owasp: identical(owasp, sdkOmittedValue)
+            ? this.owasp
+            : owasp as CreateProjectResponseSecurityManagedRulesOwasp,
+        trafficSources: identical(trafficSources, sdkOmittedValue)
+            ? this.trafficSources
+            : trafficSources
+                as CreateProjectResponseSecurityManagedRulesTrafficSources,
+        vercelRuleset: identical(vercelRuleset, sdkOmittedValue)
+            ? this.vercelRuleset
+            : vercelRuleset
+                as CreateProjectResponseSecurityManagedRulesVercelRuleset,
+      );
 
-  factory CreateProjectResponseSecurityManagedRules.fromJson(Map<String, dynamic> json) => CreateProjectResponseSecurityManagedRules(
-    aiBots: (json['ai_bots'] != null ? CreateProjectResponseSecurityManagedRulesAiBots.fromJson(json['ai_bots'] as Map<String, dynamic>) : null)!,
-    botFilter: (json['bot_filter'] != null ? CreateProjectResponseSecurityManagedRulesBotFilter.fromJson(json['bot_filter'] as Map<String, dynamic>) : null)!,
-    owasp: (json['owasp'] != null ? CreateProjectResponseSecurityManagedRulesOwasp.fromJson(json['owasp'] as Map<String, dynamic>) : null)!,
-    trafficSources: (json['traffic_sources'] != null ? CreateProjectResponseSecurityManagedRulesTrafficSources.fromJson(json['traffic_sources'] as Map<String, dynamic>) : null)!,
-    vercelRuleset: (json['vercel_ruleset'] != null ? CreateProjectResponseSecurityManagedRulesVercelRuleset.fromJson(json['vercel_ruleset'] as Map<String, dynamic>) : null)!,
-  );
+  factory CreateProjectResponseSecurityManagedRules.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseSecurityManagedRules(
+        aiBots: (json['ai_bots'] != null
+            ? CreateProjectResponseSecurityManagedRulesAiBots.fromJson(
+                json['ai_bots'] as Map<String, dynamic>)
+            : null)!,
+        botFilter: (json['bot_filter'] != null
+            ? CreateProjectResponseSecurityManagedRulesBotFilter.fromJson(
+                json['bot_filter'] as Map<String, dynamic>)
+            : null)!,
+        owasp: (json['owasp'] != null
+            ? CreateProjectResponseSecurityManagedRulesOwasp.fromJson(
+                json['owasp'] as Map<String, dynamic>)
+            : null)!,
+        trafficSources: (json['traffic_sources'] != null
+            ? CreateProjectResponseSecurityManagedRulesTrafficSources.fromJson(
+                json['traffic_sources'] as Map<String, dynamic>)
+            : null)!,
+        vercelRuleset: (json['vercel_ruleset'] != null
+            ? CreateProjectResponseSecurityManagedRulesVercelRuleset.fromJson(
+                json['vercel_ruleset'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'ai_bots': aiBots.toJson(),
-    'bot_filter': botFilter.toJson(),
-    'owasp': owasp.toJson(),
-    'traffic_sources': trafficSources.toJson(),
-    'vercel_ruleset': vercelRuleset.toJson(),
-  };
+        'ai_bots': aiBots.toJson(),
+        'bot_filter': botFilter.toJson(),
+        'owasp': owasp.toJson(),
+        'traffic_sources': trafficSources.toJson(),
+        'vercel_ruleset': vercelRuleset.toJson(),
+      };
 }
 
 class CreateProjectResponseSecurityRulesetsValueRateLimit {
@@ -50,30 +96,52 @@ class CreateProjectResponseSecurityRulesetsValueRateLimit {
   final double limit;
   final double window;
 
-  const CreateProjectResponseSecurityRulesetsValueRateLimit({required this.algo, required this.keys, required this.limit, required this.window});
+  const CreateProjectResponseSecurityRulesetsValueRateLimit(
+      {required this.algo,
+      required this.keys,
+      required this.limit,
+      required this.window});
 
-  CreateProjectResponseSecurityRulesetsValueRateLimit Function({CreateProjectResponseSecurityRulesetsValueRateLimitAlgo algo, List<String> keys, double limit, double window}) get copyWith => _copyWith;
+  CreateProjectResponseSecurityRulesetsValueRateLimit Function(
+      {CreateProjectResponseSecurityRulesetsValueRateLimitAlgo algo,
+      List<String> keys,
+      double limit,
+      double window}) get copyWith => _copyWith;
 
-  CreateProjectResponseSecurityRulesetsValueRateLimit _copyWith({Object? algo = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? window = sdkOmittedValue}) => CreateProjectResponseSecurityRulesetsValueRateLimit(
-    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as CreateProjectResponseSecurityRulesetsValueRateLimitAlgo,
-    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
-    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
-    window: identical(window, sdkOmittedValue) ? this.window : window as double,
-  );
+  CreateProjectResponseSecurityRulesetsValueRateLimit _copyWith(
+          {Object? algo = sdkOmittedValue,
+          Object? keys = sdkOmittedValue,
+          Object? limit = sdkOmittedValue,
+          Object? window = sdkOmittedValue}) =>
+      CreateProjectResponseSecurityRulesetsValueRateLimit(
+        algo: identical(algo, sdkOmittedValue)
+            ? this.algo
+            : algo as CreateProjectResponseSecurityRulesetsValueRateLimitAlgo,
+        keys:
+            identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
+        limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
+        window:
+            identical(window, sdkOmittedValue) ? this.window : window as double,
+      );
 
-  factory CreateProjectResponseSecurityRulesetsValueRateLimit.fromJson(Map<String, dynamic> json) => CreateProjectResponseSecurityRulesetsValueRateLimit(
-    algo: (json['algo'] != null ? CreateProjectResponseSecurityRulesetsValueRateLimitAlgo.fromJson(json['algo'] as String) : null)!,
-    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-    limit: ((json['limit'] as num?)?.toDouble())!,
-    window: ((json['window'] as num?)?.toDouble())!,
-  );
+  factory CreateProjectResponseSecurityRulesetsValueRateLimit.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseSecurityRulesetsValueRateLimit(
+        algo: (json['algo'] != null
+            ? CreateProjectResponseSecurityRulesetsValueRateLimitAlgo.fromJson(
+                json['algo'] as String)
+            : null)!,
+        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+        limit: ((json['limit'] as num?)?.toDouble())!,
+        window: ((json['window'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'algo': algo.toJson(),
-    'keys': keys,
-    'limit': limit,
-    'window': window,
-  };
+        'algo': algo.toJson(),
+        'keys': keys,
+        'limit': limit,
+        'window': window,
+      };
 }
 
 class CreateProjectResponseSecurityRulesetsValueRedirect {
@@ -82,24 +150,41 @@ class CreateProjectResponseSecurityRulesetsValueRedirect {
   final String location;
   final CreateProjectResponseSecurityRulesetsValueRedirectPermanent permanent;
 
-  const CreateProjectResponseSecurityRulesetsValueRedirect({required this.location, required this.permanent});
+  const CreateProjectResponseSecurityRulesetsValueRedirect(
+      {required this.location, required this.permanent});
 
-  CreateProjectResponseSecurityRulesetsValueRedirect Function({String location, CreateProjectResponseSecurityRulesetsValueRedirectPermanent permanent}) get copyWith => _copyWith;
+  CreateProjectResponseSecurityRulesetsValueRedirect Function(
+      {String location,
+      CreateProjectResponseSecurityRulesetsValueRedirectPermanent
+          permanent}) get copyWith => _copyWith;
 
-  CreateProjectResponseSecurityRulesetsValueRedirect _copyWith({Object? location = sdkOmittedValue, Object? permanent = sdkOmittedValue}) => CreateProjectResponseSecurityRulesetsValueRedirect(
-    location: identical(location, sdkOmittedValue) ? this.location : location as String,
-    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as CreateProjectResponseSecurityRulesetsValueRedirectPermanent,
-  );
+  CreateProjectResponseSecurityRulesetsValueRedirect _copyWith(
+          {Object? location = sdkOmittedValue,
+          Object? permanent = sdkOmittedValue}) =>
+      CreateProjectResponseSecurityRulesetsValueRedirect(
+        location: identical(location, sdkOmittedValue)
+            ? this.location
+            : location as String,
+        permanent: identical(permanent, sdkOmittedValue)
+            ? this.permanent
+            : permanent
+                as CreateProjectResponseSecurityRulesetsValueRedirectPermanent,
+      );
 
-  factory CreateProjectResponseSecurityRulesetsValueRedirect.fromJson(Map<String, dynamic> json) => CreateProjectResponseSecurityRulesetsValueRedirect(
-    location: (json['location'] as String?)!,
-    permanent: (json['permanent'] != null ? CreateProjectResponseSecurityRulesetsValueRedirectPermanent.fromJson(json['permanent'] as bool) : null)!,
-  );
+  factory CreateProjectResponseSecurityRulesetsValueRedirect.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseSecurityRulesetsValueRedirect(
+        location: (json['location'] as String?)!,
+        permanent: (json['permanent'] != null
+            ? CreateProjectResponseSecurityRulesetsValueRedirectPermanent
+                .fromJson(json['permanent'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'location': location,
-    'permanent': permanent.toJson(),
-  };
+        'location': location,
+        'permanent': permanent.toJson(),
+      };
 }
 
 class CreateProjectResponseSecurityRulesetsValue {
@@ -107,178 +192,478 @@ class CreateProjectResponseSecurityRulesetsValue {
   static const String constructionSurface = 'named';
   final CreateProjectResponseSecurityRulesetsValueAction action;
   final SdkOptional<String?> actionDuration;
-  final SdkOptional<CreateProjectResponseSecurityRulesetsValueBypassSystem?> bypassSystem;
+  final SdkOptional<CreateProjectResponseSecurityRulesetsValueBypassSystem?>
+      bypassSystem;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<CreateProjectResponseSecurityRulesetsValueRateLimit?> rateLimit;
-  final SdkOptional<CreateProjectResponseSecurityRulesetsValueRedirect?> redirect;
+  final SdkOptional<CreateProjectResponseSecurityRulesetsValueRateLimit?>
+      rateLimit;
+  final SdkOptional<CreateProjectResponseSecurityRulesetsValueRedirect?>
+      redirect;
 
-  const CreateProjectResponseSecurityRulesetsValue({required this.action, this.actionDuration = const SdkOmitted(), this.bypassSystem = const SdkOmitted(), this.logHeaders = const SdkOmitted(), this.rateLimit = const SdkOmitted(), this.redirect = const SdkOmitted()});
+  const CreateProjectResponseSecurityRulesetsValue(
+      {required this.action,
+      this.actionDuration = const SdkOmitted(),
+      this.bypassSystem = const SdkOmitted(),
+      this.logHeaders = const SdkOmitted(),
+      this.rateLimit = const SdkOmitted(),
+      this.redirect = const SdkOmitted()});
 
-  CreateProjectResponseSecurityRulesetsValue Function({CreateProjectResponseSecurityRulesetsValueAction action, SdkOptional<String?> actionDuration, SdkOptional<CreateProjectResponseSecurityRulesetsValueBypassSystem?> bypassSystem, SdkOptional<dynamic> logHeaders, SdkOptional<CreateProjectResponseSecurityRulesetsValueRateLimit?> rateLimit, SdkOptional<CreateProjectResponseSecurityRulesetsValueRedirect?> redirect}) get copyWith => _copyWith;
+  CreateProjectResponseSecurityRulesetsValue Function(
+      {CreateProjectResponseSecurityRulesetsValueAction action,
+      SdkOptional<String?> actionDuration,
+      SdkOptional<CreateProjectResponseSecurityRulesetsValueBypassSystem?>
+          bypassSystem,
+      SdkOptional<dynamic> logHeaders,
+      SdkOptional<CreateProjectResponseSecurityRulesetsValueRateLimit?>
+          rateLimit,
+      SdkOptional<CreateProjectResponseSecurityRulesetsValueRedirect?>
+          redirect}) get copyWith => _copyWith;
 
-  CreateProjectResponseSecurityRulesetsValue _copyWith({Object? action = sdkOmittedValue, Object? actionDuration = sdkOmittedValue, Object? bypassSystem = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? rateLimit = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => CreateProjectResponseSecurityRulesetsValue(
-    action: identical(action, sdkOmittedValue) ? this.action : action as CreateProjectResponseSecurityRulesetsValueAction,
-    actionDuration: identical(actionDuration, sdkOmittedValue) ? this.actionDuration : actionDuration as SdkOptional<String?>,
-    bypassSystem: identical(bypassSystem, sdkOmittedValue) ? this.bypassSystem : bypassSystem as SdkOptional<CreateProjectResponseSecurityRulesetsValueBypassSystem?>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
-    rateLimit: identical(rateLimit, sdkOmittedValue) ? this.rateLimit : rateLimit as SdkOptional<CreateProjectResponseSecurityRulesetsValueRateLimit?>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<CreateProjectResponseSecurityRulesetsValueRedirect?>,
-  );
+  CreateProjectResponseSecurityRulesetsValue _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? actionDuration = sdkOmittedValue,
+          Object? bypassSystem = sdkOmittedValue,
+          Object? logHeaders = sdkOmittedValue,
+          Object? rateLimit = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue}) =>
+      CreateProjectResponseSecurityRulesetsValue(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as CreateProjectResponseSecurityRulesetsValueAction,
+        actionDuration: identical(actionDuration, sdkOmittedValue)
+            ? this.actionDuration
+            : actionDuration as SdkOptional<String?>,
+        bypassSystem: identical(bypassSystem, sdkOmittedValue)
+            ? this.bypassSystem
+            : bypassSystem as SdkOptional<
+                CreateProjectResponseSecurityRulesetsValueBypassSystem?>,
+        logHeaders: identical(logHeaders, sdkOmittedValue)
+            ? this.logHeaders
+            : logHeaders as SdkOptional<dynamic>,
+        rateLimit: identical(rateLimit, sdkOmittedValue)
+            ? this.rateLimit
+            : rateLimit as SdkOptional<
+                CreateProjectResponseSecurityRulesetsValueRateLimit?>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<
+                CreateProjectResponseSecurityRulesetsValueRedirect?>,
+      );
 
-  factory CreateProjectResponseSecurityRulesetsValue.fromJson(Map<String, dynamic> json) => CreateProjectResponseSecurityRulesetsValue(
-    action: (json['action'] != null ? CreateProjectResponseSecurityRulesetsValueAction.fromJson(json['action'] as String) : null)!,
-    actionDuration: json.containsKey('actionDuration') ? SdkPresent(json['actionDuration'] as String?) : const SdkOmitted(),
-    bypassSystem: json.containsKey('bypassSystem') ? SdkPresent(json['bypassSystem'] != null ? CreateProjectResponseSecurityRulesetsValueBypassSystem.fromJson(json['bypassSystem'] as bool) : null) : const SdkOmitted(),
-    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
-    rateLimit: json.containsKey('rateLimit') ? SdkPresent(json['rateLimit'] != null ? CreateProjectResponseSecurityRulesetsValueRateLimit.fromJson(json['rateLimit'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] != null ? CreateProjectResponseSecurityRulesetsValueRedirect.fromJson(json['redirect'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-  );
+  factory CreateProjectResponseSecurityRulesetsValue.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseSecurityRulesetsValue(
+        action: (json['action'] != null
+            ? CreateProjectResponseSecurityRulesetsValueAction.fromJson(
+                json['action'] as String)
+            : null)!,
+        actionDuration: json.containsKey('actionDuration')
+            ? SdkPresent(json['actionDuration'] as String?)
+            : const SdkOmitted(),
+        bypassSystem: json.containsKey('bypassSystem')
+            ? SdkPresent(json['bypassSystem'] != null
+                ? CreateProjectResponseSecurityRulesetsValueBypassSystem
+                    .fromJson(json['bypassSystem'] as bool)
+                : null)
+            : const SdkOmitted(),
+        logHeaders: json['logHeaders'] != null
+            ? SdkPresent((json['logHeaders'])!)
+            : const SdkOmitted(),
+        rateLimit: json.containsKey('rateLimit')
+            ? SdkPresent(json['rateLimit'] != null
+                ? CreateProjectResponseSecurityRulesetsValueRateLimit.fromJson(
+                    json['rateLimit'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] != null
+                ? CreateProjectResponseSecurityRulesetsValueRedirect.fromJson(
+                    json['redirect'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    ...switch (actionDuration) {
-      SdkPresent<String?>(value: final value) => {'actionDuration': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (bypassSystem) {
-      SdkPresent<CreateProjectResponseSecurityRulesetsValueBypassSystem?>(value: final value) => {'bypassSystem': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rateLimit) {
-      SdkPresent<CreateProjectResponseSecurityRulesetsValueRateLimit?>(value: final value) => {'rateLimit': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<CreateProjectResponseSecurityRulesetsValueRedirect?>(value: final value) => {'redirect': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action.toJson(),
+        ...switch (actionDuration) {
+          SdkPresent<String?>(value: final value) => {
+              'actionDuration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (bypassSystem) {
+          SdkPresent<CreateProjectResponseSecurityRulesetsValueBypassSystem?>(
+            value: final value
+          ) =>
+            {
+              'bypassSystem': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (logHeaders) {
+          SdkPresent<dynamic>(value: final value) => {
+              'logHeaders': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rateLimit) {
+          SdkPresent<CreateProjectResponseSecurityRulesetsValueRateLimit?>(
+            value: final value
+          ) =>
+            {
+              'rateLimit': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<CreateProjectResponseSecurityRulesetsValueRedirect?>(
+            value: final value
+          ) =>
+            {
+              'redirect': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateProjectResponseSecurity {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double?> attackModeActiveUntil;
-  final SdkOptional<CreateProjectResponseSecurityAttackModeEnabled> attackModeEnabled;
+  final SdkOptional<CreateProjectResponseSecurityAttackModeEnabled>
+      attackModeEnabled;
   final SdkOptional<double> attackModeUpdatedAt;
   final SdkOptional<CreateProjectResponseSecurityBotIdEnabled> botIdEnabled;
   final SdkOptional<List<String>> firewallBypassIps;
   final SdkOptional<double> firewallConfigVersion;
-  final SdkOptional<CreateProjectResponseSecurityFirewallEnabled> firewallEnabled;
-  final SdkOptional<CreateProjectResponseSecurityFirewallSeawallEnabled> firewallSeawallEnabled;
+  final SdkOptional<CreateProjectResponseSecurityFirewallEnabled>
+      firewallEnabled;
+  final SdkOptional<CreateProjectResponseSecurityFirewallSeawallEnabled>
+      firewallSeawallEnabled;
   final SdkOptional<double> firewallUpdatedAt;
   final SdkOptional<CreateProjectResponseSecurityJa3Enabled> ja3Enabled;
   final SdkOptional<CreateProjectResponseSecurityJa4Enabled> ja4Enabled;
   final SdkOptional<dynamic> logHeaders;
   final SdkOptional<CreateProjectResponseSecurityManagedRules?> managedRules;
+
   /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
-  final SdkOptional<CreateProjectResponseSecurityPageIntegrityEnabled> pageIntegrityEnabled;
-  final SdkOptional<Map<String, CreateProjectResponseSecurityRulesetsValue>> rulesets;
+  final SdkOptional<CreateProjectResponseSecurityPageIntegrityEnabled>
+      pageIntegrityEnabled;
+  final SdkOptional<Map<String, CreateProjectResponseSecurityRulesetsValue>>
+      rulesets;
 
-  const CreateProjectResponseSecurity({this.attackModeActiveUntil = const SdkOmitted(), this.attackModeEnabled = const SdkOmitted(), this.attackModeUpdatedAt = const SdkOmitted(), this.botIdEnabled = const SdkOmitted(), this.firewallBypassIps = const SdkOmitted(), this.firewallConfigVersion = const SdkOmitted(), this.firewallEnabled = const SdkOmitted(), this.firewallSeawallEnabled = const SdkOmitted(), this.firewallUpdatedAt = const SdkOmitted(), this.ja3Enabled = const SdkOmitted(), this.ja4Enabled = const SdkOmitted(), this.logHeaders = const SdkOmitted(), this.managedRules = const SdkOmitted(), this.pageIntegrityEnabled = const SdkOmitted(), this.rulesets = const SdkOmitted()});
+  const CreateProjectResponseSecurity(
+      {this.attackModeActiveUntil = const SdkOmitted(),
+      this.attackModeEnabled = const SdkOmitted(),
+      this.attackModeUpdatedAt = const SdkOmitted(),
+      this.botIdEnabled = const SdkOmitted(),
+      this.firewallBypassIps = const SdkOmitted(),
+      this.firewallConfigVersion = const SdkOmitted(),
+      this.firewallEnabled = const SdkOmitted(),
+      this.firewallSeawallEnabled = const SdkOmitted(),
+      this.firewallUpdatedAt = const SdkOmitted(),
+      this.ja3Enabled = const SdkOmitted(),
+      this.ja4Enabled = const SdkOmitted(),
+      this.logHeaders = const SdkOmitted(),
+      this.managedRules = const SdkOmitted(),
+      this.pageIntegrityEnabled = const SdkOmitted(),
+      this.rulesets = const SdkOmitted()});
 
-  CreateProjectResponseSecurity Function({SdkOptional<double?> attackModeActiveUntil, SdkOptional<CreateProjectResponseSecurityAttackModeEnabled> attackModeEnabled, SdkOptional<double> attackModeUpdatedAt, SdkOptional<CreateProjectResponseSecurityBotIdEnabled> botIdEnabled, SdkOptional<List<String>> firewallBypassIps, SdkOptional<double> firewallConfigVersion, SdkOptional<CreateProjectResponseSecurityFirewallEnabled> firewallEnabled, SdkOptional<CreateProjectResponseSecurityFirewallSeawallEnabled> firewallSeawallEnabled, SdkOptional<double> firewallUpdatedAt, SdkOptional<CreateProjectResponseSecurityJa3Enabled> ja3Enabled, SdkOptional<CreateProjectResponseSecurityJa4Enabled> ja4Enabled, SdkOptional<dynamic> logHeaders, SdkOptional<CreateProjectResponseSecurityManagedRules?> managedRules, SdkOptional<CreateProjectResponseSecurityPageIntegrityEnabled> pageIntegrityEnabled, SdkOptional<Map<String, CreateProjectResponseSecurityRulesetsValue>> rulesets}) get copyWith => _copyWith;
+  CreateProjectResponseSecurity Function(
+      {SdkOptional<double?> attackModeActiveUntil,
+      SdkOptional<CreateProjectResponseSecurityAttackModeEnabled>
+          attackModeEnabled,
+      SdkOptional<double> attackModeUpdatedAt,
+      SdkOptional<CreateProjectResponseSecurityBotIdEnabled> botIdEnabled,
+      SdkOptional<List<String>> firewallBypassIps,
+      SdkOptional<double> firewallConfigVersion,
+      SdkOptional<CreateProjectResponseSecurityFirewallEnabled> firewallEnabled,
+      SdkOptional<CreateProjectResponseSecurityFirewallSeawallEnabled>
+          firewallSeawallEnabled,
+      SdkOptional<double> firewallUpdatedAt,
+      SdkOptional<CreateProjectResponseSecurityJa3Enabled> ja3Enabled,
+      SdkOptional<CreateProjectResponseSecurityJa4Enabled> ja4Enabled,
+      SdkOptional<dynamic> logHeaders,
+      SdkOptional<CreateProjectResponseSecurityManagedRules?> managedRules,
+      SdkOptional<CreateProjectResponseSecurityPageIntegrityEnabled>
+          pageIntegrityEnabled,
+      SdkOptional<Map<String, CreateProjectResponseSecurityRulesetsValue>>
+          rulesets}) get copyWith => _copyWith;
 
-  CreateProjectResponseSecurity _copyWith({Object? attackModeActiveUntil = sdkOmittedValue, Object? attackModeEnabled = sdkOmittedValue, Object? attackModeUpdatedAt = sdkOmittedValue, Object? botIdEnabled = sdkOmittedValue, Object? firewallBypassIps = sdkOmittedValue, Object? firewallConfigVersion = sdkOmittedValue, Object? firewallEnabled = sdkOmittedValue, Object? firewallSeawallEnabled = sdkOmittedValue, Object? firewallUpdatedAt = sdkOmittedValue, Object? ja3Enabled = sdkOmittedValue, Object? ja4Enabled = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? managedRules = sdkOmittedValue, Object? pageIntegrityEnabled = sdkOmittedValue, Object? rulesets = sdkOmittedValue}) => CreateProjectResponseSecurity(
-    attackModeActiveUntil: identical(attackModeActiveUntil, sdkOmittedValue) ? this.attackModeActiveUntil : attackModeActiveUntil as SdkOptional<double?>,
-    attackModeEnabled: identical(attackModeEnabled, sdkOmittedValue) ? this.attackModeEnabled : attackModeEnabled as SdkOptional<CreateProjectResponseSecurityAttackModeEnabled>,
-    attackModeUpdatedAt: identical(attackModeUpdatedAt, sdkOmittedValue) ? this.attackModeUpdatedAt : attackModeUpdatedAt as SdkOptional<double>,
-    botIdEnabled: identical(botIdEnabled, sdkOmittedValue) ? this.botIdEnabled : botIdEnabled as SdkOptional<CreateProjectResponseSecurityBotIdEnabled>,
-    firewallBypassIps: identical(firewallBypassIps, sdkOmittedValue) ? this.firewallBypassIps : firewallBypassIps as SdkOptional<List<String>>,
-    firewallConfigVersion: identical(firewallConfigVersion, sdkOmittedValue) ? this.firewallConfigVersion : firewallConfigVersion as SdkOptional<double>,
-    firewallEnabled: identical(firewallEnabled, sdkOmittedValue) ? this.firewallEnabled : firewallEnabled as SdkOptional<CreateProjectResponseSecurityFirewallEnabled>,
-    firewallSeawallEnabled: identical(firewallSeawallEnabled, sdkOmittedValue) ? this.firewallSeawallEnabled : firewallSeawallEnabled as SdkOptional<CreateProjectResponseSecurityFirewallSeawallEnabled>,
-    firewallUpdatedAt: identical(firewallUpdatedAt, sdkOmittedValue) ? this.firewallUpdatedAt : firewallUpdatedAt as SdkOptional<double>,
-    ja3Enabled: identical(ja3Enabled, sdkOmittedValue) ? this.ja3Enabled : ja3Enabled as SdkOptional<CreateProjectResponseSecurityJa3Enabled>,
-    ja4Enabled: identical(ja4Enabled, sdkOmittedValue) ? this.ja4Enabled : ja4Enabled as SdkOptional<CreateProjectResponseSecurityJa4Enabled>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
-    managedRules: identical(managedRules, sdkOmittedValue) ? this.managedRules : managedRules as SdkOptional<CreateProjectResponseSecurityManagedRules?>,
-    pageIntegrityEnabled: identical(pageIntegrityEnabled, sdkOmittedValue) ? this.pageIntegrityEnabled : pageIntegrityEnabled as SdkOptional<CreateProjectResponseSecurityPageIntegrityEnabled>,
-    rulesets: identical(rulesets, sdkOmittedValue) ? this.rulesets : rulesets as SdkOptional<Map<String, CreateProjectResponseSecurityRulesetsValue>>,
-  );
+  CreateProjectResponseSecurity _copyWith(
+          {Object? attackModeActiveUntil = sdkOmittedValue,
+          Object? attackModeEnabled = sdkOmittedValue,
+          Object? attackModeUpdatedAt = sdkOmittedValue,
+          Object? botIdEnabled = sdkOmittedValue,
+          Object? firewallBypassIps = sdkOmittedValue,
+          Object? firewallConfigVersion = sdkOmittedValue,
+          Object? firewallEnabled = sdkOmittedValue,
+          Object? firewallSeawallEnabled = sdkOmittedValue,
+          Object? firewallUpdatedAt = sdkOmittedValue,
+          Object? ja3Enabled = sdkOmittedValue,
+          Object? ja4Enabled = sdkOmittedValue,
+          Object? logHeaders = sdkOmittedValue,
+          Object? managedRules = sdkOmittedValue,
+          Object? pageIntegrityEnabled = sdkOmittedValue,
+          Object? rulesets = sdkOmittedValue}) =>
+      CreateProjectResponseSecurity(
+        attackModeActiveUntil: identical(attackModeActiveUntil, sdkOmittedValue)
+            ? this.attackModeActiveUntil
+            : attackModeActiveUntil as SdkOptional<double?>,
+        attackModeEnabled: identical(attackModeEnabled, sdkOmittedValue)
+            ? this.attackModeEnabled
+            : attackModeEnabled
+                as SdkOptional<CreateProjectResponseSecurityAttackModeEnabled>,
+        attackModeUpdatedAt: identical(attackModeUpdatedAt, sdkOmittedValue)
+            ? this.attackModeUpdatedAt
+            : attackModeUpdatedAt as SdkOptional<double>,
+        botIdEnabled: identical(botIdEnabled, sdkOmittedValue)
+            ? this.botIdEnabled
+            : botIdEnabled
+                as SdkOptional<CreateProjectResponseSecurityBotIdEnabled>,
+        firewallBypassIps: identical(firewallBypassIps, sdkOmittedValue)
+            ? this.firewallBypassIps
+            : firewallBypassIps as SdkOptional<List<String>>,
+        firewallConfigVersion: identical(firewallConfigVersion, sdkOmittedValue)
+            ? this.firewallConfigVersion
+            : firewallConfigVersion as SdkOptional<double>,
+        firewallEnabled: identical(firewallEnabled, sdkOmittedValue)
+            ? this.firewallEnabled
+            : firewallEnabled
+                as SdkOptional<CreateProjectResponseSecurityFirewallEnabled>,
+        firewallSeawallEnabled:
+            identical(firewallSeawallEnabled, sdkOmittedValue)
+                ? this.firewallSeawallEnabled
+                : firewallSeawallEnabled as SdkOptional<
+                    CreateProjectResponseSecurityFirewallSeawallEnabled>,
+        firewallUpdatedAt: identical(firewallUpdatedAt, sdkOmittedValue)
+            ? this.firewallUpdatedAt
+            : firewallUpdatedAt as SdkOptional<double>,
+        ja3Enabled: identical(ja3Enabled, sdkOmittedValue)
+            ? this.ja3Enabled
+            : ja3Enabled
+                as SdkOptional<CreateProjectResponseSecurityJa3Enabled>,
+        ja4Enabled: identical(ja4Enabled, sdkOmittedValue)
+            ? this.ja4Enabled
+            : ja4Enabled
+                as SdkOptional<CreateProjectResponseSecurityJa4Enabled>,
+        logHeaders: identical(logHeaders, sdkOmittedValue)
+            ? this.logHeaders
+            : logHeaders as SdkOptional<dynamic>,
+        managedRules: identical(managedRules, sdkOmittedValue)
+            ? this.managedRules
+            : managedRules
+                as SdkOptional<CreateProjectResponseSecurityManagedRules?>,
+        pageIntegrityEnabled: identical(pageIntegrityEnabled, sdkOmittedValue)
+            ? this.pageIntegrityEnabled
+            : pageIntegrityEnabled as SdkOptional<
+                CreateProjectResponseSecurityPageIntegrityEnabled>,
+        rulesets: identical(rulesets, sdkOmittedValue)
+            ? this.rulesets
+            : rulesets as SdkOptional<
+                Map<String, CreateProjectResponseSecurityRulesetsValue>>,
+      );
 
-  factory CreateProjectResponseSecurity.fromJson(Map<String, dynamic> json) => CreateProjectResponseSecurity(
-    attackModeActiveUntil: json.containsKey('attackModeActiveUntil') ? SdkPresent((json['attackModeActiveUntil'] as num?)?.toDouble()) : const SdkOmitted(),
-    attackModeEnabled: json['attackModeEnabled'] != null ? SdkPresent((json['attackModeEnabled'] != null ? CreateProjectResponseSecurityAttackModeEnabled.fromJson(json['attackModeEnabled'] as bool) : null)!) : const SdkOmitted(),
-    attackModeUpdatedAt: json['attackModeUpdatedAt'] != null ? SdkPresent(((json['attackModeUpdatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    botIdEnabled: json['botIdEnabled'] != null ? SdkPresent((json['botIdEnabled'] != null ? CreateProjectResponseSecurityBotIdEnabled.fromJson(json['botIdEnabled'] as bool) : null)!) : const SdkOmitted(),
-    firewallBypassIps: json['firewallBypassIps'] != null ? SdkPresent(((json['firewallBypassIps'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    firewallConfigVersion: json['firewallConfigVersion'] != null ? SdkPresent(((json['firewallConfigVersion'] as num?)?.toDouble())!) : const SdkOmitted(),
-    firewallEnabled: json['firewallEnabled'] != null ? SdkPresent((json['firewallEnabled'] != null ? CreateProjectResponseSecurityFirewallEnabled.fromJson(json['firewallEnabled'] as bool) : null)!) : const SdkOmitted(),
-    firewallSeawallEnabled: json['firewallSeawallEnabled'] != null ? SdkPresent((json['firewallSeawallEnabled'] != null ? CreateProjectResponseSecurityFirewallSeawallEnabled.fromJson(json['firewallSeawallEnabled'] as bool) : null)!) : const SdkOmitted(),
-    firewallUpdatedAt: json['firewallUpdatedAt'] != null ? SdkPresent(((json['firewallUpdatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    ja3Enabled: json['ja3Enabled'] != null ? SdkPresent((json['ja3Enabled'] != null ? CreateProjectResponseSecurityJa3Enabled.fromJson(json['ja3Enabled'] as bool) : null)!) : const SdkOmitted(),
-    ja4Enabled: json['ja4Enabled'] != null ? SdkPresent((json['ja4Enabled'] != null ? CreateProjectResponseSecurityJa4Enabled.fromJson(json['ja4Enabled'] as bool) : null)!) : const SdkOmitted(),
-    logHeaders: json['log_headers'] != null ? SdkPresent((json['log_headers'])!) : const SdkOmitted(),
-    managedRules: json.containsKey('managedRules') ? SdkPresent(json['managedRules'] != null ? CreateProjectResponseSecurityManagedRules.fromJson(json['managedRules'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    pageIntegrityEnabled: json['pageIntegrityEnabled'] != null ? SdkPresent((json['pageIntegrityEnabled'] != null ? CreateProjectResponseSecurityPageIntegrityEnabled.fromJson(json['pageIntegrityEnabled'] as bool) : null)!) : const SdkOmitted(),
-    rulesets: json['rulesets'] != null ? SdkPresent((json['rulesets'] == null ? null : Map<String, dynamic>.from(json['rulesets'] as Map).map((key, value) => MapEntry(key, CreateProjectResponseSecurityRulesetsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-  );
+  factory CreateProjectResponseSecurity.fromJson(Map<String, dynamic> json) =>
+      CreateProjectResponseSecurity(
+        attackModeActiveUntil: json.containsKey('attackModeActiveUntil')
+            ? SdkPresent((json['attackModeActiveUntil'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        attackModeEnabled: json['attackModeEnabled'] != null
+            ? SdkPresent((json['attackModeEnabled'] != null
+                ? CreateProjectResponseSecurityAttackModeEnabled.fromJson(
+                    json['attackModeEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        attackModeUpdatedAt: json['attackModeUpdatedAt'] != null
+            ? SdkPresent(((json['attackModeUpdatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        botIdEnabled: json['botIdEnabled'] != null
+            ? SdkPresent((json['botIdEnabled'] != null
+                ? CreateProjectResponseSecurityBotIdEnabled.fromJson(
+                    json['botIdEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        firewallBypassIps: json['firewallBypassIps'] != null
+            ? SdkPresent(((json['firewallBypassIps'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        firewallConfigVersion: json['firewallConfigVersion'] != null
+            ? SdkPresent(((json['firewallConfigVersion'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        firewallEnabled: json['firewallEnabled'] != null
+            ? SdkPresent((json['firewallEnabled'] != null
+                ? CreateProjectResponseSecurityFirewallEnabled.fromJson(
+                    json['firewallEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        firewallSeawallEnabled: json['firewallSeawallEnabled'] != null
+            ? SdkPresent((json['firewallSeawallEnabled'] != null
+                ? CreateProjectResponseSecurityFirewallSeawallEnabled.fromJson(
+                    json['firewallSeawallEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        firewallUpdatedAt: json['firewallUpdatedAt'] != null
+            ? SdkPresent(((json['firewallUpdatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        ja3Enabled: json['ja3Enabled'] != null
+            ? SdkPresent((json['ja3Enabled'] != null
+                ? CreateProjectResponseSecurityJa3Enabled.fromJson(
+                    json['ja3Enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        ja4Enabled: json['ja4Enabled'] != null
+            ? SdkPresent((json['ja4Enabled'] != null
+                ? CreateProjectResponseSecurityJa4Enabled.fromJson(
+                    json['ja4Enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        logHeaders: json['log_headers'] != null
+            ? SdkPresent((json['log_headers'])!)
+            : const SdkOmitted(),
+        managedRules: json.containsKey('managedRules')
+            ? SdkPresent(json['managedRules'] != null
+                ? CreateProjectResponseSecurityManagedRules.fromJson(
+                    json['managedRules'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        pageIntegrityEnabled: json['pageIntegrityEnabled'] != null
+            ? SdkPresent((json['pageIntegrityEnabled'] != null
+                ? CreateProjectResponseSecurityPageIntegrityEnabled.fromJson(
+                    json['pageIntegrityEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        rulesets: json['rulesets'] != null
+            ? SdkPresent((json['rulesets'] == null
+                ? null
+                : Map<String, dynamic>.from(json['rulesets'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        CreateProjectResponseSecurityRulesetsValue.fromJson(
+                            value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (attackModeActiveUntil) {
-      SdkPresent<double?>(value: final value) => {'attackModeActiveUntil': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (attackModeEnabled) {
-      SdkPresent<CreateProjectResponseSecurityAttackModeEnabled>(value: final value) => {'attackModeEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (attackModeUpdatedAt) {
-      SdkPresent<double>(value: final value) => {'attackModeUpdatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (botIdEnabled) {
-      SdkPresent<CreateProjectResponseSecurityBotIdEnabled>(value: final value) => {'botIdEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallBypassIps) {
-      SdkPresent<List<String>>(value: final value) => {'firewallBypassIps': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallConfigVersion) {
-      SdkPresent<double>(value: final value) => {'firewallConfigVersion': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallEnabled) {
-      SdkPresent<CreateProjectResponseSecurityFirewallEnabled>(value: final value) => {'firewallEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallSeawallEnabled) {
-      SdkPresent<CreateProjectResponseSecurityFirewallSeawallEnabled>(value: final value) => {'firewallSeawallEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firewallUpdatedAt) {
-      SdkPresent<double>(value: final value) => {'firewallUpdatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ja3Enabled) {
-      SdkPresent<CreateProjectResponseSecurityJa3Enabled>(value: final value) => {'ja3Enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ja4Enabled) {
-      SdkPresent<CreateProjectResponseSecurityJa4Enabled>(value: final value) => {'ja4Enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'log_headers': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (managedRules) {
-      SdkPresent<CreateProjectResponseSecurityManagedRules?>(value: final value) => {'managedRules': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pageIntegrityEnabled) {
-      SdkPresent<CreateProjectResponseSecurityPageIntegrityEnabled>(value: final value) => {'pageIntegrityEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rulesets) {
-      SdkPresent<Map<String, CreateProjectResponseSecurityRulesetsValue>>(value: final value) => {'rulesets': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (attackModeActiveUntil) {
+          SdkPresent<double?>(value: final value) => {
+              'attackModeActiveUntil': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (attackModeEnabled) {
+          SdkPresent<CreateProjectResponseSecurityAttackModeEnabled>(
+            value: final value
+          ) =>
+            {
+              'attackModeEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (attackModeUpdatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'attackModeUpdatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (botIdEnabled) {
+          SdkPresent<CreateProjectResponseSecurityBotIdEnabled>(
+            value: final value
+          ) =>
+            {
+              'botIdEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallBypassIps) {
+          SdkPresent<List<String>>(value: final value) => {
+              'firewallBypassIps': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallConfigVersion) {
+          SdkPresent<double>(value: final value) => {
+              'firewallConfigVersion': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallEnabled) {
+          SdkPresent<CreateProjectResponseSecurityFirewallEnabled>(
+            value: final value
+          ) =>
+            {
+              'firewallEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallSeawallEnabled) {
+          SdkPresent<CreateProjectResponseSecurityFirewallSeawallEnabled>(
+            value: final value
+          ) =>
+            {
+              'firewallSeawallEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firewallUpdatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'firewallUpdatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ja3Enabled) {
+          SdkPresent<CreateProjectResponseSecurityJa3Enabled>(
+            value: final value
+          ) =>
+            {
+              'ja3Enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ja4Enabled) {
+          SdkPresent<CreateProjectResponseSecurityJa4Enabled>(
+            value: final value
+          ) =>
+            {
+              'ja4Enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (logHeaders) {
+          SdkPresent<dynamic>(value: final value) => {
+              'log_headers': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (managedRules) {
+          SdkPresent<CreateProjectResponseSecurityManagedRules?>(
+            value: final value
+          ) =>
+            {
+              'managedRules': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pageIntegrityEnabled) {
+          SdkPresent<CreateProjectResponseSecurityPageIntegrityEnabled>(
+            value: final value
+          ) =>
+            {
+              'pageIntegrityEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rulesets) {
+          SdkPresent<Map<String, CreateProjectResponseSecurityRulesetsValue>>(
+            value: final value
+          ) =>
+            {
+              'rulesets':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -10,24 +10,40 @@ class ListProjectsResponseItemEnvItemContentHintVariant11 {
   final String storeId;
   final ListProjectsResponseItemEnvItemContentHintVariant11Type type_;
 
-  const ListProjectsResponseItemEnvItemContentHintVariant11({required this.storeId, required this.type_});
+  const ListProjectsResponseItemEnvItemContentHintVariant11(
+      {required this.storeId, required this.type_});
 
-  ListProjectsResponseItemEnvItemContentHintVariant11 Function({String storeId, ListProjectsResponseItemEnvItemContentHintVariant11Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemEnvItemContentHintVariant11 Function(
+          {String storeId,
+          ListProjectsResponseItemEnvItemContentHintVariant11Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemEnvItemContentHintVariant11 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemEnvItemContentHintVariant11(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemEnvItemContentHintVariant11Type,
-  );
+  ListProjectsResponseItemEnvItemContentHintVariant11 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemEnvItemContentHintVariant11(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemEnvItemContentHintVariant11Type,
+      );
 
-  factory ListProjectsResponseItemEnvItemContentHintVariant11.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemEnvItemContentHintVariant11(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemEnvItemContentHintVariant11Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemEnvItemContentHintVariant11.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemEnvItemContentHintVariant11(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemEnvItemContentHintVariant11Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseItemEnvItemContentHintVariant12 {
@@ -36,24 +52,40 @@ class ListProjectsResponseItemEnvItemContentHintVariant12 {
   final String storeId;
   final ListProjectsResponseItemEnvItemContentHintVariant12Type type_;
 
-  const ListProjectsResponseItemEnvItemContentHintVariant12({required this.storeId, required this.type_});
+  const ListProjectsResponseItemEnvItemContentHintVariant12(
+      {required this.storeId, required this.type_});
 
-  ListProjectsResponseItemEnvItemContentHintVariant12 Function({String storeId, ListProjectsResponseItemEnvItemContentHintVariant12Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemEnvItemContentHintVariant12 Function(
+          {String storeId,
+          ListProjectsResponseItemEnvItemContentHintVariant12Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemEnvItemContentHintVariant12 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemEnvItemContentHintVariant12(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemEnvItemContentHintVariant12Type,
-  );
+  ListProjectsResponseItemEnvItemContentHintVariant12 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemEnvItemContentHintVariant12(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemEnvItemContentHintVariant12Type,
+      );
 
-  factory ListProjectsResponseItemEnvItemContentHintVariant12.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemEnvItemContentHintVariant12(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemEnvItemContentHintVariant12Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemEnvItemContentHintVariant12.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemEnvItemContentHintVariant12(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemEnvItemContentHintVariant12Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseItemEnvItemContentHintVariant13 {
@@ -62,24 +94,40 @@ class ListProjectsResponseItemEnvItemContentHintVariant13 {
   final String storeId;
   final ListProjectsResponseItemEnvItemContentHintVariant13Type type_;
 
-  const ListProjectsResponseItemEnvItemContentHintVariant13({required this.storeId, required this.type_});
+  const ListProjectsResponseItemEnvItemContentHintVariant13(
+      {required this.storeId, required this.type_});
 
-  ListProjectsResponseItemEnvItemContentHintVariant13 Function({String storeId, ListProjectsResponseItemEnvItemContentHintVariant13Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemEnvItemContentHintVariant13 Function(
+          {String storeId,
+          ListProjectsResponseItemEnvItemContentHintVariant13Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemEnvItemContentHintVariant13 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemEnvItemContentHintVariant13(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemEnvItemContentHintVariant13Type,
-  );
+  ListProjectsResponseItemEnvItemContentHintVariant13 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemEnvItemContentHintVariant13(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemEnvItemContentHintVariant13Type,
+      );
 
-  factory ListProjectsResponseItemEnvItemContentHintVariant13.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemEnvItemContentHintVariant13(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemEnvItemContentHintVariant13Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemEnvItemContentHintVariant13.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemEnvItemContentHintVariant13(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemEnvItemContentHintVariant13Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseItemEnvItemContentHintVariant14 {
@@ -88,24 +136,40 @@ class ListProjectsResponseItemEnvItemContentHintVariant14 {
   final String storeId;
   final ListProjectsResponseItemEnvItemContentHintVariant14Type type_;
 
-  const ListProjectsResponseItemEnvItemContentHintVariant14({required this.storeId, required this.type_});
+  const ListProjectsResponseItemEnvItemContentHintVariant14(
+      {required this.storeId, required this.type_});
 
-  ListProjectsResponseItemEnvItemContentHintVariant14 Function({String storeId, ListProjectsResponseItemEnvItemContentHintVariant14Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemEnvItemContentHintVariant14 Function(
+          {String storeId,
+          ListProjectsResponseItemEnvItemContentHintVariant14Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemEnvItemContentHintVariant14 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemEnvItemContentHintVariant14(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemEnvItemContentHintVariant14Type,
-  );
+  ListProjectsResponseItemEnvItemContentHintVariant14 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemEnvItemContentHintVariant14(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemEnvItemContentHintVariant14Type,
+      );
 
-  factory ListProjectsResponseItemEnvItemContentHintVariant14.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemEnvItemContentHintVariant14(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemEnvItemContentHintVariant14Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemEnvItemContentHintVariant14.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemEnvItemContentHintVariant14(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemEnvItemContentHintVariant14Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseItemEnvItemContentHintVariant15 {
@@ -117,33 +181,67 @@ class ListProjectsResponseItemEnvItemContentHintVariant15 {
   final String storeId;
   final ListProjectsResponseItemEnvItemContentHintVariant15Type type_;
 
-  const ListProjectsResponseItemEnvItemContentHintVariant15({required this.integrationConfigurationId, required this.integrationId, required this.integrationProductId, required this.storeId, required this.type_});
+  const ListProjectsResponseItemEnvItemContentHintVariant15(
+      {required this.integrationConfigurationId,
+      required this.integrationId,
+      required this.integrationProductId,
+      required this.storeId,
+      required this.type_});
 
-  ListProjectsResponseItemEnvItemContentHintVariant15 Function({String integrationConfigurationId, String integrationId, String integrationProductId, String storeId, ListProjectsResponseItemEnvItemContentHintVariant15Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemEnvItemContentHintVariant15 Function(
+          {String integrationConfigurationId,
+          String integrationId,
+          String integrationProductId,
+          String storeId,
+          ListProjectsResponseItemEnvItemContentHintVariant15Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemEnvItemContentHintVariant15 _copyWith({Object? integrationConfigurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationProductId = sdkOmittedValue, Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemEnvItemContentHintVariant15(
-    integrationConfigurationId: identical(integrationConfigurationId, sdkOmittedValue) ? this.integrationConfigurationId : integrationConfigurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    integrationProductId: identical(integrationProductId, sdkOmittedValue) ? this.integrationProductId : integrationProductId as String,
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemEnvItemContentHintVariant15Type,
-  );
+  ListProjectsResponseItemEnvItemContentHintVariant15 _copyWith(
+          {Object? integrationConfigurationId = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? integrationProductId = sdkOmittedValue,
+          Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemEnvItemContentHintVariant15(
+        integrationConfigurationId:
+            identical(integrationConfigurationId, sdkOmittedValue)
+                ? this.integrationConfigurationId
+                : integrationConfigurationId as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        integrationProductId: identical(integrationProductId, sdkOmittedValue)
+            ? this.integrationProductId
+            : integrationProductId as String,
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemEnvItemContentHintVariant15Type,
+      );
 
-  factory ListProjectsResponseItemEnvItemContentHintVariant15.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemEnvItemContentHintVariant15(
-    integrationConfigurationId: (json['integrationConfigurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-    integrationProductId: (json['integrationProductId'] as String?)!,
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemEnvItemContentHintVariant15Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemEnvItemContentHintVariant15.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemEnvItemContentHintVariant15(
+        integrationConfigurationId:
+            (json['integrationConfigurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+        integrationProductId: (json['integrationProductId'] as String?)!,
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemEnvItemContentHintVariant15Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integrationConfigurationId': integrationConfigurationId,
-    'integrationId': integrationId,
-    'integrationProductId': integrationProductId,
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'integrationConfigurationId': integrationConfigurationId,
+        'integrationId': integrationId,
+        'integrationProductId': integrationProductId,
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseItemEnvItemContentHintVariant16 {
@@ -152,24 +250,40 @@ class ListProjectsResponseItemEnvItemContentHintVariant16 {
   final String projectId;
   final ListProjectsResponseItemEnvItemContentHintVariant16Type type_;
 
-  const ListProjectsResponseItemEnvItemContentHintVariant16({required this.projectId, required this.type_});
+  const ListProjectsResponseItemEnvItemContentHintVariant16(
+      {required this.projectId, required this.type_});
 
-  ListProjectsResponseItemEnvItemContentHintVariant16 Function({String projectId, ListProjectsResponseItemEnvItemContentHintVariant16Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemEnvItemContentHintVariant16 Function(
+          {String projectId,
+          ListProjectsResponseItemEnvItemContentHintVariant16Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemEnvItemContentHintVariant16 _copyWith({Object? projectId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemEnvItemContentHintVariant16(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemEnvItemContentHintVariant16Type,
-  );
+  ListProjectsResponseItemEnvItemContentHintVariant16 _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemEnvItemContentHintVariant16(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemEnvItemContentHintVariant16Type,
+      );
 
-  factory ListProjectsResponseItemEnvItemContentHintVariant16.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemEnvItemContentHintVariant16(
-    projectId: (json['projectId'] as String?)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemEnvItemContentHintVariant16Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemEnvItemContentHintVariant16.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemEnvItemContentHintVariant16(
+        projectId: (json['projectId'] as String?)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemEnvItemContentHintVariant16Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'type': type_.toJson(),
-  };
+        'projectId': projectId,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class ListProjectsResponseItemEnvItemContentHint {
@@ -178,108 +292,329 @@ sealed class ListProjectsResponseItemEnvItemContentHint {
   const ListProjectsResponseItemEnvItemContentHint();
   factory ListProjectsResponseItemEnvItemContentHint.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant8.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant9.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant10.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant11.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant11(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant12.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant12(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant13.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant13(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant14.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant14(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant15.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant15(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemEnvItemContentHintVariant16.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant16(value); } } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant4.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant5.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant6.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant7.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant8.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant9.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant10.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant11.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant11(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant12.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant12(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant13.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant13(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant14.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant14(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant15.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant15(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemEnvItemContentHintVariant16.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant16(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0(ListProjectsResponseItemEnvItemContentHintVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1(ListProjectsResponseItemEnvItemContentHintVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2(ListProjectsResponseItemEnvItemContentHintVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3(ListProjectsResponseItemEnvItemContentHintVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4(ListProjectsResponseItemEnvItemContentHintVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5(ListProjectsResponseItemEnvItemContentHintVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6(ListProjectsResponseItemEnvItemContentHintVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7(ListProjectsResponseItemEnvItemContentHintVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8(ListProjectsResponseItemEnvItemContentHintVariant8.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9(ListProjectsResponseItemEnvItemContentHintVariant9.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10(ListProjectsResponseItemEnvItemContentHintVariant10.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant11(ListProjectsResponseItemEnvItemContentHintVariant11.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant12(ListProjectsResponseItemEnvItemContentHintVariant12.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant13(ListProjectsResponseItemEnvItemContentHintVariant13.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant14(ListProjectsResponseItemEnvItemContentHintVariant14.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant15(ListProjectsResponseItemEnvItemContentHintVariant15.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant16(ListProjectsResponseItemEnvItemContentHintVariant16.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for ListProjectsResponseItemEnvItemContentHint");
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0(
+          ListProjectsResponseItemEnvItemContentHintVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1(
+          ListProjectsResponseItemEnvItemContentHintVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2(
+          ListProjectsResponseItemEnvItemContentHintVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3(
+          ListProjectsResponseItemEnvItemContentHintVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4(
+          ListProjectsResponseItemEnvItemContentHintVariant4.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5(
+          ListProjectsResponseItemEnvItemContentHintVariant5.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6(
+          ListProjectsResponseItemEnvItemContentHintVariant6.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7(
+          ListProjectsResponseItemEnvItemContentHintVariant7.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8(
+          ListProjectsResponseItemEnvItemContentHintVariant8.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9(
+          ListProjectsResponseItemEnvItemContentHintVariant9.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10(
+          ListProjectsResponseItemEnvItemContentHintVariant10.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant11(
+          ListProjectsResponseItemEnvItemContentHintVariant11.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant12(
+          ListProjectsResponseItemEnvItemContentHintVariant12.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant13(
+          ListProjectsResponseItemEnvItemContentHintVariant13.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant14(
+          ListProjectsResponseItemEnvItemContentHintVariant14.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant15(
+          ListProjectsResponseItemEnvItemContentHintVariant15.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant16(
+          ListProjectsResponseItemEnvItemContentHintVariant16.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for ListProjectsResponseItemEnvItemContentHint");
   }
   Object? toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant0 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant1 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant2 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant3 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant4 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant4(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant5 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant5(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant6 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant6(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant7 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant7(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant8 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant8(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant9 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant9(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10 extends ListProjectsResponseItemEnvItemContentHint {
+final class ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10
+    extends ListProjectsResponseItemEnvItemContentHint {
   final ListProjectsResponseItemEnvItemContentHintVariant10 value;
-  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemEnvItemContentHintListProjectsResponseItemEnvItemContentHintVariant10(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

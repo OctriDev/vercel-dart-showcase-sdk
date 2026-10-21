@@ -8,101 +8,174 @@ part of 'user.dart';
 class DeploymentCheckUpdatedPayloadNext {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `targets` wire field.
   final List<String> targets;
 
   const DeploymentCheckUpdatedPayloadNext({required this.targets});
 
-  DeploymentCheckUpdatedPayloadNext Function({List<String> targets}) get copyWith => _copyWith;
+  DeploymentCheckUpdatedPayloadNext Function({List<String> targets})
+      get copyWith => _copyWith;
 
-  DeploymentCheckUpdatedPayloadNext _copyWith({Object? targets = sdkOmittedValue}) => DeploymentCheckUpdatedPayloadNext(
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
-  );
+  DeploymentCheckUpdatedPayloadNext _copyWith(
+          {Object? targets = sdkOmittedValue}) =>
+      DeploymentCheckUpdatedPayloadNext(
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as List<String>,
+      );
 
-  factory DeploymentCheckUpdatedPayloadNext.fromJson(Map<String, dynamic> json) => DeploymentCheckUpdatedPayloadNext(
-    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory DeploymentCheckUpdatedPayloadNext.fromJson(
+          Map<String, dynamic> json) =>
+      DeploymentCheckUpdatedPayloadNext(
+        targets:
+            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'targets': targets,
-  };
+        'targets': targets,
+      };
 }
 
 /// Optional object value serialized in the `previous` wire field.
 class DeploymentCheckUpdatedPayloadPrevious {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `targets` wire field.
   final List<String> targets;
 
   const DeploymentCheckUpdatedPayloadPrevious({required this.targets});
 
-  DeploymentCheckUpdatedPayloadPrevious Function({List<String> targets}) get copyWith => _copyWith;
+  DeploymentCheckUpdatedPayloadPrevious Function({List<String> targets})
+      get copyWith => _copyWith;
 
-  DeploymentCheckUpdatedPayloadPrevious _copyWith({Object? targets = sdkOmittedValue}) => DeploymentCheckUpdatedPayloadPrevious(
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
-  );
+  DeploymentCheckUpdatedPayloadPrevious _copyWith(
+          {Object? targets = sdkOmittedValue}) =>
+      DeploymentCheckUpdatedPayloadPrevious(
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as List<String>,
+      );
 
-  factory DeploymentCheckUpdatedPayloadPrevious.fromJson(Map<String, dynamic> json) => DeploymentCheckUpdatedPayloadPrevious(
-    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory DeploymentCheckUpdatedPayloadPrevious.fromJson(
+          Map<String, dynamic> json) =>
+      DeploymentCheckUpdatedPayloadPrevious(
+        targets:
+            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'targets': targets,
-  };
+        'targets': targets,
+      };
 }
 
 /// The payload of the event, if requested.
 class DeploymentCheckUpdatedPayload {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `checkId` wire field.
   final String checkId;
+
   /// Required `string` value serialized in the `checkName` wire field.
   final String checkName;
+
   /// Optional object value serialized in the `next` wire field.
   final SdkOptional<DeploymentCheckUpdatedPayloadNext> next;
+
   /// Optional object value serialized in the `previous` wire field.
   final SdkOptional<DeploymentCheckUpdatedPayloadPrevious> previous;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const DeploymentCheckUpdatedPayload({required this.checkId, required this.checkName, this.next = const SdkOmitted(), this.previous = const SdkOmitted(), required this.projectId, required this.projectName});
+  const DeploymentCheckUpdatedPayload(
+      {required this.checkId,
+      required this.checkName,
+      this.next = const SdkOmitted(),
+      this.previous = const SdkOmitted(),
+      required this.projectId,
+      required this.projectName});
 
-  DeploymentCheckUpdatedPayload Function({String checkId, String checkName, SdkOptional<DeploymentCheckUpdatedPayloadNext> next, SdkOptional<DeploymentCheckUpdatedPayloadPrevious> previous, String projectId, String projectName}) get copyWith => _copyWith;
+  DeploymentCheckUpdatedPayload Function(
+      {String checkId,
+      String checkName,
+      SdkOptional<DeploymentCheckUpdatedPayloadNext> next,
+      SdkOptional<DeploymentCheckUpdatedPayloadPrevious> previous,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  DeploymentCheckUpdatedPayload _copyWith({Object? checkId = sdkOmittedValue, Object? checkName = sdkOmittedValue, Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => DeploymentCheckUpdatedPayload(
-    checkId: identical(checkId, sdkOmittedValue) ? this.checkId : checkId as String,
-    checkName: identical(checkName, sdkOmittedValue) ? this.checkName : checkName as String,
-    next: identical(next, sdkOmittedValue) ? this.next : next as SdkOptional<DeploymentCheckUpdatedPayloadNext>,
-    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as SdkOptional<DeploymentCheckUpdatedPayloadPrevious>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  DeploymentCheckUpdatedPayload _copyWith(
+          {Object? checkId = sdkOmittedValue,
+          Object? checkName = sdkOmittedValue,
+          Object? next = sdkOmittedValue,
+          Object? previous = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      DeploymentCheckUpdatedPayload(
+        checkId: identical(checkId, sdkOmittedValue)
+            ? this.checkId
+            : checkId as String,
+        checkName: identical(checkName, sdkOmittedValue)
+            ? this.checkName
+            : checkName as String,
+        next: identical(next, sdkOmittedValue)
+            ? this.next
+            : next as SdkOptional<DeploymentCheckUpdatedPayloadNext>,
+        previous: identical(previous, sdkOmittedValue)
+            ? this.previous
+            : previous as SdkOptional<DeploymentCheckUpdatedPayloadPrevious>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory DeploymentCheckUpdatedPayload.fromJson(Map<String, dynamic> json) => DeploymentCheckUpdatedPayload(
-    checkId: (json['checkId'] as String?)!,
-    checkName: (json['checkName'] as String?)!,
-    next: json['next'] != null ? SdkPresent((json['next'] != null ? DeploymentCheckUpdatedPayloadNext.fromJson(json['next'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    previous: json['previous'] != null ? SdkPresent((json['previous'] != null ? DeploymentCheckUpdatedPayloadPrevious.fromJson(json['previous'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  );
+  factory DeploymentCheckUpdatedPayload.fromJson(Map<String, dynamic> json) =>
+      DeploymentCheckUpdatedPayload(
+        checkId: (json['checkId'] as String?)!,
+        checkName: (json['checkName'] as String?)!,
+        next: json['next'] != null
+            ? SdkPresent((json['next'] != null
+                ? DeploymentCheckUpdatedPayloadNext.fromJson(
+                    json['next'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        previous: json['previous'] != null
+            ? SdkPresent((json['previous'] != null
+                ? DeploymentCheckUpdatedPayloadPrevious.fromJson(
+                    json['previous'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'checkId': checkId,
-    'checkName': checkName,
-    ...switch (next) {
-      SdkPresent<DeploymentCheckUpdatedPayloadNext>(value: final value) => {'next': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (previous) {
-      SdkPresent<DeploymentCheckUpdatedPayloadPrevious>(value: final value) => {'previous': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'checkId': checkId,
+        'checkName': checkName,
+        ...switch (next) {
+          SdkPresent<DeploymentCheckUpdatedPayloadNext>(value: final value) => {
+              'next': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (previous) {
+          SdkPresent<DeploymentCheckUpdatedPayloadPrevious>(
+            value: final value
+          ) =>
+            {
+              'previous': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }

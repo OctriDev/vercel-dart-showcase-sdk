@@ -7,51 +7,84 @@ part of 'deployments.dart';
 class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type type_;
+  final CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type
+      type_;
   final dynamic value;
 
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0({required this.type_, required this.value});
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0(
+      {required this.type_, required this.value});
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0 Function({CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type type_, dynamic value}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0 Function(
+      {CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type
+          type_,
+      dynamic value}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as dynamic,
-  );
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0
+      _copyWith(
+              {Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0(
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as dynamic,
+          );
 
-  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0(
-    type_: (json['type'] != null ? CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'])!,
-  );
+  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0(
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'value': value,
-  };
+        'type': type_.toJson(),
+        'value': value,
+      };
 }
 
 sealed class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq();
-  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq.fromJson(Object? json) {
-    if (json is String) { return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqString(json); }
-    if (json is num) { return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqDouble(json.toDouble()); }
-    throw FormatException("No variant matched for CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq");
+  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqString(
+          json);
+    }
+    if (json is num) {
+      return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqDouble(
+          json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqString extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq {
+final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqString
+    extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq {
   final String value;
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqString(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqDouble extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq {
+final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqDouble
+    extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1Eq {
   final double value;
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqDouble(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1EqDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1 {
@@ -69,141 +102,287 @@ class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Valu
   final SdkOptional<String> re;
   final SdkOptional<String> suf;
 
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1({this.eq = const SdkOmitted(), this.gt = const SdkOmitted(), this.gte = const SdkOmitted(), this.inc = const SdkOmitted(), this.lt = const SdkOmitted(), this.lte = const SdkOmitted(), this.neq = const SdkOmitted(), this.ninc = const SdkOmitted(), this.pre = const SdkOmitted(), this.re = const SdkOmitted(), this.suf = const SdkOmitted()});
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(
+      {this.eq = const SdkOmitted(),
+      this.gt = const SdkOmitted(),
+      this.gte = const SdkOmitted(),
+      this.inc = const SdkOmitted(),
+      this.lt = const SdkOmitted(),
+      this.lte = const SdkOmitted(),
+      this.neq = const SdkOmitted(),
+      this.ninc = const SdkOmitted(),
+      this.pre = const SdkOmitted(),
+      this.re = const SdkOmitted(),
+      this.suf = const SdkOmitted()});
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1 Function({SdkOptional<dynamic> eq, SdkOptional<double> gt, SdkOptional<double> gte, SdkOptional<List<String>> inc, SdkOptional<double> lt, SdkOptional<double> lte, SdkOptional<String> neq, SdkOptional<List<String>> ninc, SdkOptional<String> pre, SdkOptional<String> re, SdkOptional<String> suf}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1 Function(
+      {SdkOptional<dynamic> eq,
+      SdkOptional<double> gt,
+      SdkOptional<double> gte,
+      SdkOptional<List<String>> inc,
+      SdkOptional<double> lt,
+      SdkOptional<double> lte,
+      SdkOptional<String> neq,
+      SdkOptional<List<String>> ninc,
+      SdkOptional<String> pre,
+      SdkOptional<String> re,
+      SdkOptional<String> suf}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1 _copyWith({Object? eq = sdkOmittedValue, Object? gt = sdkOmittedValue, Object? gte = sdkOmittedValue, Object? inc = sdkOmittedValue, Object? lt = sdkOmittedValue, Object? lte = sdkOmittedValue, Object? neq = sdkOmittedValue, Object? ninc = sdkOmittedValue, Object? pre = sdkOmittedValue, Object? re = sdkOmittedValue, Object? suf = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as SdkOptional<dynamic>,
-    gt: identical(gt, sdkOmittedValue) ? this.gt : gt as SdkOptional<double>,
-    gte: identical(gte, sdkOmittedValue) ? this.gte : gte as SdkOptional<double>,
-    inc: identical(inc, sdkOmittedValue) ? this.inc : inc as SdkOptional<List<String>>,
-    lt: identical(lt, sdkOmittedValue) ? this.lt : lt as SdkOptional<double>,
-    lte: identical(lte, sdkOmittedValue) ? this.lte : lte as SdkOptional<double>,
-    neq: identical(neq, sdkOmittedValue) ? this.neq : neq as SdkOptional<String>,
-    ninc: identical(ninc, sdkOmittedValue) ? this.ninc : ninc as SdkOptional<List<String>>,
-    pre: identical(pre, sdkOmittedValue) ? this.pre : pre as SdkOptional<String>,
-    re: identical(re, sdkOmittedValue) ? this.re : re as SdkOptional<String>,
-    suf: identical(suf, sdkOmittedValue) ? this.suf : suf as SdkOptional<String>,
-  );
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1
+      _copyWith(
+              {Object? eq = sdkOmittedValue,
+              Object? gt = sdkOmittedValue,
+              Object? gte = sdkOmittedValue,
+              Object? inc = sdkOmittedValue,
+              Object? lt = sdkOmittedValue,
+              Object? lte = sdkOmittedValue,
+              Object? neq = sdkOmittedValue,
+              Object? ninc = sdkOmittedValue,
+              Object? pre = sdkOmittedValue,
+              Object? re = sdkOmittedValue,
+              Object? suf = sdkOmittedValue}) =>
+          CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(
+            eq: identical(eq, sdkOmittedValue)
+                ? this.eq
+                : eq as SdkOptional<dynamic>,
+            gt: identical(gt, sdkOmittedValue)
+                ? this.gt
+                : gt as SdkOptional<double>,
+            gte: identical(gte, sdkOmittedValue)
+                ? this.gte
+                : gte as SdkOptional<double>,
+            inc: identical(inc, sdkOmittedValue)
+                ? this.inc
+                : inc as SdkOptional<List<String>>,
+            lt: identical(lt, sdkOmittedValue)
+                ? this.lt
+                : lt as SdkOptional<double>,
+            lte: identical(lte, sdkOmittedValue)
+                ? this.lte
+                : lte as SdkOptional<double>,
+            neq: identical(neq, sdkOmittedValue)
+                ? this.neq
+                : neq as SdkOptional<String>,
+            ninc: identical(ninc, sdkOmittedValue)
+                ? this.ninc
+                : ninc as SdkOptional<List<String>>,
+            pre: identical(pre, sdkOmittedValue)
+                ? this.pre
+                : pre as SdkOptional<String>,
+            re: identical(re, sdkOmittedValue)
+                ? this.re
+                : re as SdkOptional<String>,
+            suf: identical(suf, sdkOmittedValue)
+                ? this.suf
+                : suf as SdkOptional<String>,
+          );
 
-  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(
-    eq: json['eq'] != null ? SdkPresent((json['eq'])!) : const SdkOmitted(),
-    gt: json['gt'] != null ? SdkPresent(((json['gt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    gte: json['gte'] != null ? SdkPresent(((json['gte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    inc: json['inc'] != null ? SdkPresent(((json['inc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    lt: json['lt'] != null ? SdkPresent(((json['lt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    lte: json['lte'] != null ? SdkPresent(((json['lte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    neq: json['neq'] != null ? SdkPresent((json['neq'] as String?)!) : const SdkOmitted(),
-    ninc: json['ninc'] != null ? SdkPresent(((json['ninc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    pre: json['pre'] != null ? SdkPresent((json['pre'] as String?)!) : const SdkOmitted(),
-    re: json['re'] != null ? SdkPresent((json['re'] as String?)!) : const SdkOmitted(),
-    suf: json['suf'] != null ? SdkPresent((json['suf'] as String?)!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(
+        eq: json['eq'] != null ? SdkPresent((json['eq'])!) : const SdkOmitted(),
+        gt: json['gt'] != null
+            ? SdkPresent(((json['gt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        gte: json['gte'] != null
+            ? SdkPresent(((json['gte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        inc: json['inc'] != null
+            ? SdkPresent(
+                ((json['inc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        lt: json['lt'] != null
+            ? SdkPresent(((json['lt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        lte: json['lte'] != null
+            ? SdkPresent(((json['lte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        neq: json['neq'] != null
+            ? SdkPresent((json['neq'] as String?)!)
+            : const SdkOmitted(),
+        ninc: json['ninc'] != null
+            ? SdkPresent(
+                ((json['ninc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        pre: json['pre'] != null
+            ? SdkPresent((json['pre'] as String?)!)
+            : const SdkOmitted(),
+        re: json['re'] != null
+            ? SdkPresent((json['re'] as String?)!)
+            : const SdkOmitted(),
+        suf: json['suf'] != null
+            ? SdkPresent((json['suf'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (eq) {
-      SdkPresent<dynamic>(value: final value) => {'eq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gt) {
-      SdkPresent<double>(value: final value) => {'gt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gte) {
-      SdkPresent<double>(value: final value) => {'gte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (inc) {
-      SdkPresent<List<String>>(value: final value) => {'inc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lt) {
-      SdkPresent<double>(value: final value) => {'lt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lte) {
-      SdkPresent<double>(value: final value) => {'lte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (neq) {
-      SdkPresent<String>(value: final value) => {'neq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ninc) {
-      SdkPresent<List<String>>(value: final value) => {'ninc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pre) {
-      SdkPresent<String>(value: final value) => {'pre': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (re) {
-      SdkPresent<String>(value: final value) => {'re': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (suf) {
-      SdkPresent<String>(value: final value) => {'suf': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (eq) {
+          SdkPresent<dynamic>(value: final value) => {
+              'eq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gt) {
+          SdkPresent<double>(value: final value) => {
+              'gt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gte) {
+          SdkPresent<double>(value: final value) => {
+              'gte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (inc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'inc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lt) {
+          SdkPresent<double>(value: final value) => {
+              'lt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lte) {
+          SdkPresent<double>(value: final value) => {
+              'lte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (neq) {
+          SdkPresent<String>(value: final value) => {
+              'neq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ninc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'ninc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pre) {
+          SdkPresent<String>(value: final value) => {
+              'pre': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (re) {
+          SdkPresent<String>(value: final value) => {
+              're': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (suf) {
+          SdkPresent<String>(value: final value) => {
+              'suf': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value();
-  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value.fromJson(Object? json) {
-    if (json is String) { return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueString(json); }
-    try { return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueCancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value");
+  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueString(
+          json);
+    }
+    try {
+      return CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueCancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(
+          CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueString extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value {
+final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueString
+    extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value {
   final String value;
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueString(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueCancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1 extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value {
-  final CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1 value;
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueCancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueCancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1
+    extends CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Value {
+  final CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1
+      value;
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueCancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1ValueVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String key;
-  final CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type type_;
+  final CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type
+      type_;
   final SdkOptional<dynamic> value;
 
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1({required this.key, required this.type_, this.value = const SdkOmitted()});
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1(
+      {required this.key,
+      required this.type_,
+      this.value = const SdkOmitted()});
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1 Function({String key, CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1 Function(
+      {String key,
+      CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type
+          type_,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1(
+            key: identical(key, sdkOmittedValue) ? this.key : key as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as SdkOptional<dynamic>,
+          );
 
-  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1(
-    key: (json['key'] as String?)!,
-    type_: (json['type'] != null ? CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type.fromJson(json['type'] as String) : null)!,
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1(
+        key: (json['key'] as String?)!,
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseServicesItemVariant1HeadersItemHasItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'type': type_.toJson(),
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'key': key,
+        'type': type_.toJson(),
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem {
@@ -212,46 +391,66 @@ class CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem {
   final String key;
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem({required this.key, required this.value});
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem(
+      {required this.key, required this.value});
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem Function({String key, String value}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem Function(
+      {String key, String value}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem _copyWith(
+          {Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem(
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem(
-    key: (json['key'] as String?)!,
-    value: (json['value'] as String?)!,
-  );
+  factory CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant1HeadersItemHeadersItem(
+        key: (json['key'] as String?)!,
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'value': value,
-  };
+        'key': key,
+        'value': value,
+      };
 }
 
 sealed class CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq();
-  factory CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq.fromJson(Object? json) {
-    if (json is String) { return CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqString(json); }
-    if (json is num) { return CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqDouble(json.toDouble()); }
-    throw FormatException("No variant matched for CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq");
+  factory CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqString(
+          json);
+    }
+    if (json is num) {
+      return CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqDouble(
+          json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqString extends CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq {
+final class CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqString
+    extends CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq {
   final String value;
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqString(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqDouble extends CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq {
+final class CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqDouble
+    extends CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1Eq {
   final double value;
-  const CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqDouble(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant1HeadersItemMissingItemVariant0ValueVariant1EqDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }

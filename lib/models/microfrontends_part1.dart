@@ -7,59 +7,101 @@ part of 'microfrontends.dart';
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
+
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App({this.clientId = const SdkOmitted(), required this.id});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App(
+      {this.clientId = const SdkOmitted(), required this.id});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App
+          Function({SdkOptional<String> clientId, String id})
+      get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App
+      _copyWith(
+              {Object? clientId = sdkOmittedValue,
+              Object? id = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App(
+            clientId: identical(clientId, sdkOmittedValue)
+                ? this.clientId
+                : clientId as SdkOptional<String>,
+            id: identical(id, sdkOmittedValue) ? this.id : id as String,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App(
-    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App(
+        clientId: json['clientId'] != null
+            ? SdkPresent((json['clientId'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'clientId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'clientId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App app;
-  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App
+      app;
+  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0({required this.app, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
+      {required this.app, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0 Function({GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App app, GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App
+          app,
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0 _copyWith({Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
-    app: identical(app, sdkOmittedValue) ? this.app : app as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0
+      _copyWith(
+              {Object? app = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
+            app: identical(app, sdkOmittedValue)
+                ? this.app
+                : app
+                    as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
-    app: (json['app'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App.fromJson(json['app'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
+        app: (json['app'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0App
+                .fromJson(json['app'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'app': app.toJson(),
-    'type': type_.toJson(),
-  };
+        'app': app.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration {
@@ -68,79 +110,151 @@ class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Inte
   final String configurationId;
   final String integrationId;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration({required this.configurationId, required this.integrationId});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration(
+      {required this.configurationId, required this.integrationId});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration
+          Function({String configurationId, String integrationId})
+      get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration
+      _copyWith(
+              {Object? configurationId = sdkOmittedValue,
+              Object? integrationId = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration(
+            configurationId: identical(configurationId, sdkOmittedValue)
+                ? this.configurationId
+                : configurationId as String,
+            integrationId: identical(integrationId, sdkOmittedValue)
+                ? this.integrationId
+                : integrationId as String,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration(
-    configurationId: (json['configurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration(
+        configurationId: (json['configurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    'integrationId': integrationId,
-  };
+        'configurationId': configurationId,
+        'integrationId': integrationId,
+      };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration integration;
-  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration
+      integration;
+  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1({required this.integration, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
+      {required this.integration, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1 Function({GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration integration, GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration
+          integration,
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1
+      _copyWith(
+              {Object? integration = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
+            integration: identical(integration, sdkOmittedValue)
+                ? this.integration
+                : integration
+                    as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
-    integration: (json['integration'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
+        integration: (json['integration'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Integration
+                .fromJson(json['integration'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integration': integration.toJson(),
-    'type': type_.toJson(),
-  };
+        'integration': integration.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via();
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via.fromJson(Object? json) {
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via");
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
+          GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
+          GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0 extends GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via {
-  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0
+    extends GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via {
+  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1 extends GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via {
-  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1
+    extends GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Via {
+  final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaGetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User {
@@ -148,21 +262,27 @@ class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User {
   static const String constructionSurface = 'named';
   final String id;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User({required this.id});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User(
+      {required this.id});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User Function({String id}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User Function(
+      {String id}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User _copyWith({Object? id = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User _copyWith(
+          {Object? id = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User(
-    id: (json['id'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User(
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-  };
+        'id': id,
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0 {
@@ -172,58 +292,98 @@ class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0 {
   final dynamic via;
   final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User user;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0({required this.type_, required this.via, required this.user});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0(
+      {required this.type_, required this.via, required this.user});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0 Function({GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type type_, dynamic via, GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User user}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type type_,
+      dynamic via,
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User
+          user}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? via = sdkOmittedValue, Object? user = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type,
-    via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
-    user: identical(user, sdkOmittedValue) ? this.user : user as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0 _copyWith(
+          {Object? type_ = sdkOmittedValue,
+          Object? via = sdkOmittedValue,
+          Object? user = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type,
+        via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
+        user: identical(user, sdkOmittedValue)
+            ? this.user
+            : user
+                as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0(
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type.fromJson(json['type'] as String) : null)!,
-    via: json.containsKey('via') ? json['via'] : throw ArgumentError.value(null, 'via', 'Required property is missing'),
-    user: (json['user'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User.fromJson(json['user'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0(
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        via: json.containsKey('via')
+            ? json['via']
+            : throw ArgumentError.value(
+                null, 'via', 'Required property is missing'),
+        user: (json['user'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0User
+                .fromJson(json['user'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'via': via,
-    'user': user.toJson(),
-  };
+        'type': type_.toJson(),
+        'via': via,
+        'user': user.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
+
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App({this.clientId = const SdkOmitted(), required this.id});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App(
+      {this.clientId = const SdkOmitted(), required this.id});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App Function(
+      {SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App _copyWith(
+          {Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App(
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App(
-    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App(
+        clientId: json['clientId'] != null
+            ? SdkPresent((json['clientId'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'clientId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'clientId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1 {
@@ -232,24 +392,44 @@ class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1 {
   final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App app;
   final GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1({required this.app, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1(
+      {required this.app, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1 Function({GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App app, GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App app,
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1 _copyWith({Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1(
-    app: identical(app, sdkOmittedValue) ? this.app : app as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1 _copyWith(
+          {Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1(
+        app: identical(app, sdkOmittedValue)
+            ? this.app
+            : app
+                as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1(
-    app: (json['app'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App.fromJson(json['app'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1(
+        app: (json['app'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1App
+                .fromJson(json['app'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'app': app.toJson(),
-    'type': type_.toJson(),
-  };
+        'app': app.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration {
@@ -258,22 +438,35 @@ class GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration {
   final String configurationId;
   final String integrationId;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration({required this.configurationId, required this.integrationId});
+  const GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration(
+      {required this.configurationId, required this.integrationId});
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration
+          Function({String configurationId, String integrationId})
+      get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration
+      _copyWith(
+              {Object? configurationId = sdkOmittedValue,
+              Object? integrationId = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration(
+            configurationId: identical(configurationId, sdkOmittedValue)
+                ? this.configurationId
+                : configurationId as String,
+            integrationId: identical(integrationId, sdkOmittedValue)
+                ? this.integrationId
+                : integrationId as String,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration(
-    configurationId: (json['configurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Integration(
+        configurationId: (json['configurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    'integrationId': integrationId,
-  };
+        'configurationId': configurationId,
+        'integrationId': integrationId,
+      };
 }

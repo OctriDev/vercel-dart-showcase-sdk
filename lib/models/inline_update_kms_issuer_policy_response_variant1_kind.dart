@@ -9,14 +9,18 @@ enum UpdateKmsIssuerPolicyResponseVariant1Kind {
 
   static UpdateKmsIssuerPolicyResponseVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'connex-grant': return UpdateKmsIssuerPolicyResponseVariant1Kind.connexGrant;
-      default: throw ArgumentError('Unknown UpdateKmsIssuerPolicyResponseVariant1Kind: $value');
+      case 'connex-grant':
+        return UpdateKmsIssuerPolicyResponseVariant1Kind.connexGrant;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateKmsIssuerPolicyResponseVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateKmsIssuerPolicyResponseVariant1Kind.connexGrant: return 'connex-grant';
+      case UpdateKmsIssuerPolicyResponseVariant1Kind.connexGrant:
+        return 'connex-grant';
     }
   }
 
@@ -27,16 +31,21 @@ enum UpdateKmsIssuerPolicyResponseVariant1Kind {
 enum UpdateKmsIssuerResponsePoliciesItemVariant0Kind {
   projectGrant;
 
-  static UpdateKmsIssuerResponsePoliciesItemVariant0Kind fromJson(String value) {
+  static UpdateKmsIssuerResponsePoliciesItemVariant0Kind fromJson(
+      String value) {
     switch (value) {
-      case 'project-grant': return UpdateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant;
-      default: throw ArgumentError('Unknown UpdateKmsIssuerResponsePoliciesItemVariant0Kind: $value');
+      case 'project-grant':
+        return UpdateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateKmsIssuerResponsePoliciesItemVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant: return 'project-grant';
+      case UpdateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant:
+        return 'project-grant';
     }
   }
 
@@ -47,16 +56,21 @@ enum UpdateKmsIssuerResponsePoliciesItemVariant0Kind {
 enum UpdateKmsIssuerResponsePoliciesItemVariant1Kind {
   connexGrant;
 
-  static UpdateKmsIssuerResponsePoliciesItemVariant1Kind fromJson(String value) {
+  static UpdateKmsIssuerResponsePoliciesItemVariant1Kind fromJson(
+      String value) {
     switch (value) {
-      case 'connex-grant': return UpdateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant;
-      default: throw ArgumentError('Unknown UpdateKmsIssuerResponsePoliciesItemVariant1Kind: $value');
+      case 'connex-grant':
+        return UpdateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateKmsIssuerResponsePoliciesItemVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant: return 'connex-grant';
+      case UpdateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant:
+        return 'connex-grant';
     }
   }
 
@@ -67,16 +81,21 @@ enum UpdateKmsIssuerResponsePoliciesItemVariant1Kind {
 enum UpdateMicrofrontendsResponseCreatorVariant0Type {
   user;
 
-  static UpdateMicrofrontendsResponseCreatorVariant0Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseCreatorVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'user': return UpdateMicrofrontendsResponseCreatorVariant0Type.user;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseCreatorVariant0Type: $value');
+      case 'user':
+        return UpdateMicrofrontendsResponseCreatorVariant0Type.user;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseCreatorVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseCreatorVariant0Type.user: return 'user';
+      case UpdateMicrofrontendsResponseCreatorVariant0Type.user:
+        return 'user';
     }
   }
 
@@ -87,16 +106,21 @@ enum UpdateMicrofrontendsResponseCreatorVariant0Type {
 enum UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type {
   app;
 
-  static UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'app': return UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type.app;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type: $value');
+      case 'app':
+        return UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type.app;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type.app: return 'app';
+      case UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type.app:
+        return 'app';
     }
   }
 
@@ -107,16 +131,23 @@ enum UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type {
 enum UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type {
   integration;
 
-  static UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration': return UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type.integration;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type: $value');
+      case 'integration':
+        return UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type
+            .integration;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type.integration: return 'integration';
+      case UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type
+            .integration:
+        return 'integration';
     }
   }
 
@@ -127,16 +158,21 @@ enum UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type {
 enum UpdateMicrofrontendsResponseCreatorVariant1Type {
   app;
 
-  static UpdateMicrofrontendsResponseCreatorVariant1Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseCreatorVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'app': return UpdateMicrofrontendsResponseCreatorVariant1Type.app;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseCreatorVariant1Type: $value');
+      case 'app':
+        return UpdateMicrofrontendsResponseCreatorVariant1Type.app;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseCreatorVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseCreatorVariant1Type.app: return 'app';
+      case UpdateMicrofrontendsResponseCreatorVariant1Type.app:
+        return 'app';
     }
   }
 
@@ -147,16 +183,21 @@ enum UpdateMicrofrontendsResponseCreatorVariant1Type {
 enum UpdateMicrofrontendsResponseCreatorVariant2Type {
   integration;
 
-  static UpdateMicrofrontendsResponseCreatorVariant2Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseCreatorVariant2Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration': return UpdateMicrofrontendsResponseCreatorVariant2Type.integration;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseCreatorVariant2Type: $value');
+      case 'integration':
+        return UpdateMicrofrontendsResponseCreatorVariant2Type.integration;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseCreatorVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseCreatorVariant2Type.integration: return 'integration';
+      case UpdateMicrofrontendsResponseCreatorVariant2Type.integration:
+        return 'integration';
     }
   }
 
@@ -167,16 +208,21 @@ enum UpdateMicrofrontendsResponseCreatorVariant2Type {
 enum UpdateMicrofrontendsResponseCreatorVariant3Type {
   system;
 
-  static UpdateMicrofrontendsResponseCreatorVariant3Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseCreatorVariant3Type fromJson(
+      String value) {
     switch (value) {
-      case 'system': return UpdateMicrofrontendsResponseCreatorVariant3Type.system;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseCreatorVariant3Type: $value');
+      case 'system':
+        return UpdateMicrofrontendsResponseCreatorVariant3Type.system;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseCreatorVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseCreatorVariant3Type.system: return 'system';
+      case UpdateMicrofrontendsResponseCreatorVariant3Type.system:
+        return 'system';
     }
   }
 
@@ -185,39 +231,58 @@ enum UpdateMicrofrontendsResponseCreatorVariant3Type {
 }
 
 final class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(this.value);
+  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(value);
+  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._(value);
 
-  static const preview = UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('preview');
-  static const production = UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('production');
+  static const preview =
+      UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._('preview');
+  static const production =
+      UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'system': return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system':
+        return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+            .system;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
+      case UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+            .system:
+        return 'system';
     }
   }
 
@@ -228,16 +293,23 @@ enum UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmen
 enum UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'custom': return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom':
+        return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+            .custom;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
+      case UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+            .custom:
+        return 'custom';
     }
   }
 
@@ -246,39 +318,58 @@ enum UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmen
 }
 
 final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(this.value);
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(value);
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+          ._(value);
 
-  static const preview = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('preview');
-  static const production = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('production');
+  static const preview =
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+          ._('preview');
+  static const production =
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+          ._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'system': return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system':
+        return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+            .system;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
+      case UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+            .system:
+        return 'system';
     }
   }
 

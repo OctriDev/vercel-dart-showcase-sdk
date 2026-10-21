@@ -8,40 +8,73 @@ part of 'domains_registrar.dart';
 class Unauthorized {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final UnauthorizedStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final UnauthorizedCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
+
   /// Optional `string` value serialized in the `reason` wire field.
   final SdkOptional<String> reason;
 
-  const Unauthorized({required this.status, required this.code, required this.message, this.reason = const SdkOmitted()});
+  const Unauthorized(
+      {required this.status,
+      required this.code,
+      required this.message,
+      this.reason = const SdkOmitted()});
 
-  Unauthorized Function({UnauthorizedStatus status, UnauthorizedCode code, String message, SdkOptional<String> reason}) get copyWith => _copyWith;
+  Unauthorized Function(
+      {UnauthorizedStatus status,
+      UnauthorizedCode code,
+      String message,
+      SdkOptional<String> reason}) get copyWith => _copyWith;
 
-  Unauthorized _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue, Object? reason = sdkOmittedValue}) => Unauthorized(
-    status: identical(status, sdkOmittedValue) ? this.status : status as UnauthorizedStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as UnauthorizedCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<String>,
-  );
+  Unauthorized _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue,
+          Object? reason = sdkOmittedValue}) =>
+      Unauthorized(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as UnauthorizedStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as UnauthorizedCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+        reason: identical(reason, sdkOmittedValue)
+            ? this.reason
+            : reason as SdkOptional<String>,
+      );
 
   factory Unauthorized.fromJson(Map<String, dynamic> json) => Unauthorized(
-    status: (json['status'] != null ? UnauthorizedStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? UnauthorizedCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-    reason: json['reason'] != null ? SdkPresent((json['reason'] as String?)!) : const SdkOmitted(),
-  );
+        status: (json['status'] != null
+            ? UnauthorizedStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? UnauthorizedCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+        reason: json['reason'] != null
+            ? SdkPresent((json['reason'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-    ...switch (reason) {
-      SdkPresent<String>(value: final value) => {'reason': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+        ...switch (reason) {
+          SdkPresent<String>(value: final value) => {
+              'reason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

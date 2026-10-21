@@ -26,7 +26,8 @@ void main() {
   // part of the contract either.
   String normalizeQuery(String? query) {
     if (query == null || query.isEmpty) return '';
-    final pairs = Uri.splitQueryString(query.replaceAll('%20', '+')).entries
+    final pairs = Uri.splitQueryString(query.replaceAll('%20', '+'))
+        .entries
         .map((entry) => '${entry.key}=${entry.value}')
         .toList()
       ..sort();
@@ -55,7 +56,8 @@ void main() {
       final probe = item['probe'] as String?;
       final lost = probe == 'lost-response';
 
-      final auth = ClientAuthConfig(headers: Map<String, String>.from(authHeaders));
+      final auth =
+          ClientAuthConfig(headers: Map<String, String>.from(authHeaders));
       final config = ClientConfig(
         baseUrl: probe == 'default-base-url' ? null : baseUrl,
         auth: auth,
@@ -72,7 +74,8 @@ void main() {
             return SdkRawResponse(
               statusCode: status,
               statusText: '',
-              headers: mediaType == null ? const {} : {'content-type': mediaType},
+              headers:
+                  mediaType == null ? const {} : {'content-type': mediaType},
               bodyBytes: status == 204
                   ? const <int>[]
                   : utf8.encode(responseSpec['body'] as String),
@@ -95,9 +98,11 @@ void main() {
         method = requestSpec['method'] as String;
         path = requestSpec['pathTemplate'] as String;
         (requestSpec['pathParameters'] as Map).forEach((name, value) {
-          path = path.replaceAll('{$name}', SdkUtils.styledPathSegment('$name', value as Object));
+          path = path.replaceAll(
+              '{$name}', SdkUtils.styledPathSegment('$name', value as Object));
         });
-        for (final entry in (requestSpec['query'] as List).cast<Map<String, dynamic>>()) {
+        for (final entry
+            in (requestSpec['query'] as List).cast<Map<String, dynamic>>()) {
           final value = entry['value'];
           if (value == null) continue;
           query[entry['name'] as String] = SdkQueryValue(
@@ -106,9 +111,11 @@ void main() {
             explode: entry['explode'] as bool,
           );
         }
-        final headerInputs = (requestSpec['headers'] as Map).cast<String, dynamic>();
+        final headerInputs =
+            (requestSpec['headers'] as Map).cast<String, dynamic>();
         if (headerInputs.isNotEmpty) {
-          extraHeaders = headerInputs.map((key, value) => MapEntry(key, value.toString()));
+          extraHeaders =
+              headerInputs.map((key, value) => MapEntry(key, value.toString()));
         }
         bodyKind = requestSpec['bodyKind'] as String?;
         if (bodyKind != null) {
@@ -188,7 +195,9 @@ void main() {
         sent[name.toLowerCase()] = value;
       });
       final multipart = expectation['multipartFields'] != null;
-      (expectation['headers'] as Map).cast<String, dynamic>().forEach((name, value) {
+      (expectation['headers'] as Map)
+          .cast<String, dynamic>()
+          .forEach((name, value) {
         final actual = sent[name.toLowerCase()] ?? '';
         if (name == 'content-type' && multipart) {
           expect(actual.startsWith('multipart/form-data'), isTrue);

@@ -5,279 +5,421 @@ part of 'inline.dart';
 
 // Inline operation models (part 286)
 final class GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._(
+          value);
 
-  static const disabled = GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._('disabled');
-  static const enabled = GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._('enabled');
+  static const disabled =
+      GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._(
+          'disabled');
+  static const enabled =
+      GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus._(
+          'enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsMessagingStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus
+          ._(value);
 
-  static const disabled = GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus._('disabled');
-  static const enabled = GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus._('enabled');
+  static const disabled =
+      GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus
+          ._('disabled');
+  static const enabled =
+      GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus
+          ._('enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsObservabilityStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsOtherStatus {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsOtherStatus.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsOtherStatus.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._(value);
 
-  static const disabled = GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._('disabled');
-  static const enabled = GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._('enabled');
+  static const disabled =
+      GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._(
+          'disabled');
+  static const enabled =
+      GetConfigurationProductsResponseProductsItemProtocolsOtherStatus._(
+          'enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsOtherStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsOtherStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled {
-
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled.fromJson(bool value) => GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled.fromJson(
+          bool value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(
+          value);
 
-  static const false_ = GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(false);
-  static const true_ = GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(true);
+  static const false_ =
+      GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(
+          false);
+  static const true_ =
+      GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsStorageReplEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode {
-
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode.fromJson(bool value) => GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode.fromJson(
+          bool value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode
+          ._(value);
 
-  static const false_ = GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode._(false);
-  static const true_ = GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode._(true);
+  static const false_ =
+      GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode
+          ._(false);
+  static const true_ =
+      GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsStorageReplSupportsReadOnlyMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsStorageStatus {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsStorageStatus.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsStorageStatus.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._(
+          value);
 
-  static const disabled = GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._('disabled');
-  static const enabled = GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._('enabled');
+  static const disabled =
+      GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._(
+          'disabled');
+  static const enabled =
+      GetConfigurationProductsResponseProductsItemProtocolsStorageStatus._(
+          'enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsStorageStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsStorageStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._(
+          value);
 
-  static const json = GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._('json');
-  static const proto = GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._('proto');
+  static const json =
+      GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._(
+          'json');
+  static const proto =
+      GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat._(
+          'proto');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsTraceDrainFormat &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._(
+          value);
 
-  static const disabled = GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._('disabled');
-  static const enabled = GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._('enabled');
+  static const disabled =
+      GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._(
+          'disabled');
+  static const enabled =
+      GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus._(
+          'enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsTraceDrainStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsVideoStatus {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsVideoStatus.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsVideoStatus.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._(value);
 
-  static const disabled = GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._('disabled');
-  static const enabled = GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._('enabled');
+  static const disabled =
+      GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._(
+          'disabled');
+  static const enabled =
+      GetConfigurationProductsResponseProductsItemProtocolsVideoStatus._(
+          'enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsVideoStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsVideoStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._(this.value);
+  const GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus.fromJson(String value) => GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._(value);
+  factory GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._(
+          value);
 
-  static const disabled = GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._('disabled');
-  static const enabled = GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._('enabled');
+  static const disabled =
+      GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._(
+          'disabled');
+  static const enabled =
+      GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus._(
+          'enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemProtocolsWorkflowStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationsView {
-
   final String value;
 
   const GetConfigurationsView._(this.value);
 
-  factory GetConfigurationsView.fromJson(String value) => GetConfigurationsView._(value);
+  factory GetConfigurationsView.fromJson(String value) =>
+      GetConfigurationsView._(value);
 
   static const account = GetConfigurationsView._('account');
   static const project = GetConfigurationsView._('project');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationsView && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetConfigurationsView && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationsInstallationType {
-
   final String value;
 
   const GetConfigurationsInstallationType._(this.value);
 
-  factory GetConfigurationsInstallationType.fromJson(String value) => GetConfigurationsInstallationType._(value);
+  factory GetConfigurationsInstallationType.fromJson(String value) =>
+      GetConfigurationsInstallationType._(value);
 
   static const marketplace = GetConfigurationsInstallationType._('marketplace');
   static const external_ = GetConfigurationsInstallationType._('external');
-  static const provisioning = GetConfigurationsInstallationType._('provisioning');
+  static const provisioning =
+      GetConfigurationsInstallationType._('provisioning');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationsInstallationType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetConfigurationsInstallationType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationsResponseVariant0ItemDisabledReason {
-
   final String value;
 
   const GetConfigurationsResponseVariant0ItemDisabledReason._(this.value);
 
-  factory GetConfigurationsResponseVariant0ItemDisabledReason.fromJson(String value) => GetConfigurationsResponseVariant0ItemDisabledReason._(value);
+  factory GetConfigurationsResponseVariant0ItemDisabledReason.fromJson(
+          String value) =>
+      GetConfigurationsResponseVariant0ItemDisabledReason._(value);
 
-  static const accountPlanDowngrade = GetConfigurationsResponseVariant0ItemDisabledReason._('account-plan-downgrade');
-  static const disabledByAdmin = GetConfigurationsResponseVariant0ItemDisabledReason._('disabled-by-admin');
-  static const disabledByOwner = GetConfigurationsResponseVariant0ItemDisabledReason._('disabled-by-owner');
-  static const featureNotAvailable = GetConfigurationsResponseVariant0ItemDisabledReason._('feature-not-available');
-  static const originalOwnerLeftTheTeam = GetConfigurationsResponseVariant0ItemDisabledReason._('original-owner-left-the-team');
-  static const originalOwnerRoleDowngraded = GetConfigurationsResponseVariant0ItemDisabledReason._('original-owner-role-downgraded');
+  static const accountPlanDowngrade =
+      GetConfigurationsResponseVariant0ItemDisabledReason._(
+          'account-plan-downgrade');
+  static const disabledByAdmin =
+      GetConfigurationsResponseVariant0ItemDisabledReason._(
+          'disabled-by-admin');
+  static const disabledByOwner =
+      GetConfigurationsResponseVariant0ItemDisabledReason._(
+          'disabled-by-owner');
+  static const featureNotAvailable =
+      GetConfigurationsResponseVariant0ItemDisabledReason._(
+          'feature-not-available');
+  static const originalOwnerLeftTheTeam =
+      GetConfigurationsResponseVariant0ItemDisabledReason._(
+          'original-owner-left-the-team');
+  static const originalOwnerRoleDowngraded =
+      GetConfigurationsResponseVariant0ItemDisabledReason._(
+          'original-owner-role-downgraded');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationsResponseVariant0ItemDisabledReason && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetConfigurationsResponseVariant0ItemDisabledReason &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

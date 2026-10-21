@@ -12,13 +12,14 @@ class AiGatewayProviderOptionBag {
 
   const AiGatewayProviderOptionBag({this.value = const <String, dynamic>{}});
 
-  factory AiGatewayProviderOptionBag.fromJson(Map<String, dynamic> json) => AiGatewayProviderOptionBag(
-    value: json.map((key, value) => MapEntry(key, value)),
-  );
+  factory AiGatewayProviderOptionBag.fromJson(Map<String, dynamic> json) =>
+      AiGatewayProviderOptionBag(
+        value: json.map((key, value) => MapEntry(key, value)),
+      );
 
   Map<String, dynamic> toJson() => value.map(
-    (key, value) => MapEntry(key, value),
-  );
+        (key, value) => MapEntry(key, value),
+      );
 
   dynamic operator [](String key) => value[key];
   Iterable<String> get keys => value.keys;

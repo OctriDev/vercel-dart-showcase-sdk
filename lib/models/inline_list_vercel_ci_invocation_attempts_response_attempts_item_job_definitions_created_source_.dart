@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1 {
   vercelCiConfig;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'vercel-ci-config': return ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1.vercelCiConfig;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1: $value');
+      case 'vercel-ci-config':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1
+            .vercelCiConfig;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1.vercelCiConfig: return 'vercel-ci-config';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant1
+            .vercelCiConfig:
+        return 'vercel-ci-config';
     }
   }
 
@@ -27,16 +34,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSour
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2 {
   projectSettings;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2
+      fromJson(String value) {
     switch (value) {
-      case 'project-settings': return ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2.projectSettings;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2: $value');
+      case 'project-settings':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2
+            .projectSettings;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2.projectSettings: return 'project-settings';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant2
+            .projectSettings:
+        return 'project-settings';
     }
   }
 
@@ -47,16 +61,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSour
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0 {
   succeeded;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'succeeded': return ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0.succeeded;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0: $value');
+      case 'succeeded':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0
+            .succeeded;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0.succeeded: return 'succeeded';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0
+            .succeeded:
+        return 'succeeded';
     }
   }
 
@@ -67,16 +88,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVarian
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1 {
   failed;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'failed': return ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1.failed;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1: $value');
+      case 'failed':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1
+            .failed;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1.failed: return 'failed';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant1
+            .failed:
+        return 'failed';
     }
   }
 
@@ -87,16 +115,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVarian
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2 {
   skipped;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2
+      fromJson(String value) {
     switch (value) {
-      case 'skipped': return ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2.skipped;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2: $value');
+      case 'skipped':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2.skipped: return 'skipped';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant2
+            .skipped:
+        return 'skipped';
     }
   }
 
@@ -107,16 +142,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVarian
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0 {
   succeeded;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'succeeded': return ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0.succeeded;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0: $value');
+      case 'succeeded':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0
+            .succeeded;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0.succeeded: return 'succeeded';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0
+            .succeeded:
+        return 'succeeded';
     }
   }
 
@@ -127,16 +169,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVari
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1 {
   failed;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'failed': return ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1.failed;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1: $value');
+      case 'failed':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1
+            .failed;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1.failed: return 'failed';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant1
+            .failed:
+        return 'failed';
     }
   }
 
@@ -147,16 +196,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVari
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2 {
   skipped;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2
+      fromJson(String value) {
     switch (value) {
-      case 'skipped': return ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2.skipped;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2: $value');
+      case 'skipped':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2.skipped: return 'skipped';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant2
+            .skipped:
+        return 'skipped';
     }
   }
 
@@ -167,16 +223,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVari
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0 {
   new_;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'new': return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0.new_;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0: $value');
+      case 'new':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0
+            .new_;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0.new_: return 'new';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0
+            .new_:
+        return 'new';
     }
   }
 
@@ -187,16 +250,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant0 {
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1 {
   skipped;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'skipped': return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1.skipped;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1: $value');
+      case 'skipped':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1.skipped: return 'skipped';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1
+            .skipped:
+        return 'skipped';
     }
   }
 
@@ -207,16 +277,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant1 {
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10 {
   awaitingJobs;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10
+      fromJson(String value) {
     switch (value) {
-      case 'awaiting_jobs': return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10.awaitingJobs;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10: $value');
+      case 'awaiting_jobs':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10
+            .awaitingJobs;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10.awaitingJobs: return 'awaiting_jobs';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10
+            .awaitingJobs:
+        return 'awaiting_jobs';
     }
   }
 
@@ -227,16 +304,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant10 {
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11 {
   completed;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11
+      fromJson(String value) {
     switch (value) {
-      case 'completed': return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11.completed;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11: $value');
+      case 'completed':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11
+            .completed;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11.completed: return 'completed';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11
+            .completed:
+        return 'completed';
     }
   }
 
@@ -247,16 +331,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant11 {
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2 {
   bootstrapping;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2
+      fromJson(String value) {
     switch (value) {
-      case 'bootstrapping': return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2.bootstrapping;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2: $value');
+      case 'bootstrapping':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2
+            .bootstrapping;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2.bootstrapping: return 'bootstrapping';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2
+            .bootstrapping:
+        return 'bootstrapping';
     }
   }
 
@@ -267,16 +358,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant2 {
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3 {
   bootstrappingFailed;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3
+      fromJson(String value) {
     switch (value) {
-      case 'bootstrapping_failed': return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3.bootstrappingFailed;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3: $value');
+      case 'bootstrapping_failed':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3
+            .bootstrappingFailed;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3.bootstrappingFailed: return 'bootstrapping_failed';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemStatusVariant3
+            .bootstrappingFailed:
+        return 'bootstrapping_failed';
     }
   }
 

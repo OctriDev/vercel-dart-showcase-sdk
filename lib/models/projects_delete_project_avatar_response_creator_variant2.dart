@@ -10,24 +10,44 @@ class DeleteProjectAvatarResponseCreatorVariant2 {
   final DeleteProjectAvatarResponseCreatorVariant2Integration integration;
   final DeleteProjectAvatarResponseCreatorVariant2Type type_;
 
-  const DeleteProjectAvatarResponseCreatorVariant2({required this.integration, required this.type_});
+  const DeleteProjectAvatarResponseCreatorVariant2(
+      {required this.integration, required this.type_});
 
-  DeleteProjectAvatarResponseCreatorVariant2 Function({DeleteProjectAvatarResponseCreatorVariant2Integration integration, DeleteProjectAvatarResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseCreatorVariant2 Function(
+          {DeleteProjectAvatarResponseCreatorVariant2Integration integration,
+          DeleteProjectAvatarResponseCreatorVariant2Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseCreatorVariant2(
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as DeleteProjectAvatarResponseCreatorVariant2Integration,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseCreatorVariant2Type,
-  );
+  DeleteProjectAvatarResponseCreatorVariant2 _copyWith(
+          {Object? integration = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseCreatorVariant2(
+        integration: identical(integration, sdkOmittedValue)
+            ? this.integration
+            : integration
+                as DeleteProjectAvatarResponseCreatorVariant2Integration,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as DeleteProjectAvatarResponseCreatorVariant2Type,
+      );
 
-  factory DeleteProjectAvatarResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseCreatorVariant2(
-    integration: (json['integration'] != null ? DeleteProjectAvatarResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseCreatorVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseCreatorVariant2(
+        integration: (json['integration'] != null
+            ? DeleteProjectAvatarResponseCreatorVariant2Integration.fromJson(
+                json['integration'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseCreatorVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integration': integration.toJson(),
-    'type': type_.toJson(),
-  };
+        'integration': integration.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseCreatorVariant3 {
@@ -37,19 +57,30 @@ class DeleteProjectAvatarResponseCreatorVariant3 {
 
   const DeleteProjectAvatarResponseCreatorVariant3({required this.type_});
 
-  DeleteProjectAvatarResponseCreatorVariant3 Function({DeleteProjectAvatarResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseCreatorVariant3 Function(
+          {DeleteProjectAvatarResponseCreatorVariant3Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseCreatorVariant3(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseCreatorVariant3Type,
-  );
+  DeleteProjectAvatarResponseCreatorVariant3 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseCreatorVariant3(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as DeleteProjectAvatarResponseCreatorVariant3Type,
+      );
 
-  factory DeleteProjectAvatarResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseCreatorVariant3(
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseCreatorVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseCreatorVariant3(
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseCreatorVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 sealed class DeleteProjectAvatarResponseCreator {
@@ -58,40 +89,93 @@ sealed class DeleteProjectAvatarResponseCreator {
   const DeleteProjectAvatarResponseCreator();
   factory DeleteProjectAvatarResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = DeleteProjectAvatarResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0(value); } } catch (_) {}
-      try { final value = DeleteProjectAvatarResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1(value); } } catch (_) {}
-      try { final value = DeleteProjectAvatarResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2(value); } } catch (_) {}
-      try { final value = DeleteProjectAvatarResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3(value); } } catch (_) {}
+      try {
+        final value = DeleteProjectAvatarResponseCreatorVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = DeleteProjectAvatarResponseCreatorVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = DeleteProjectAvatarResponseCreatorVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = DeleteProjectAvatarResponseCreatorVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0(DeleteProjectAvatarResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1(DeleteProjectAvatarResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2(DeleteProjectAvatarResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3(DeleteProjectAvatarResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for DeleteProjectAvatarResponseCreator");
+    try {
+      return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0(
+          DeleteProjectAvatarResponseCreatorVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1(
+          DeleteProjectAvatarResponseCreatorVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2(
+          DeleteProjectAvatarResponseCreatorVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3(
+          DeleteProjectAvatarResponseCreatorVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for DeleteProjectAvatarResponseCreator");
   }
   Object? toJson();
 }
 
-final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0 extends DeleteProjectAvatarResponseCreator {
+final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0
+    extends DeleteProjectAvatarResponseCreator {
   final DeleteProjectAvatarResponseCreatorVariant0 value;
-  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1 extends DeleteProjectAvatarResponseCreator {
+final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1
+    extends DeleteProjectAvatarResponseCreator {
   final DeleteProjectAvatarResponseCreatorVariant1 value;
-  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2 extends DeleteProjectAvatarResponseCreator {
+final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2
+    extends DeleteProjectAvatarResponseCreator {
   final DeleteProjectAvatarResponseCreatorVariant2 value;
-  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3 extends DeleteProjectAvatarResponseCreator {
+final class DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3
+    extends DeleteProjectAvatarResponseCreator {
   final DeleteProjectAvatarResponseCreatorVariant3 value;
-  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseCreatorDeleteProjectAvatarResponseCreatorVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

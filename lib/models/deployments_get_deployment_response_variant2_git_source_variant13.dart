@@ -15,45 +15,88 @@ class GetDeploymentResponseVariant2GitSourceVariant13 {
   final String sha;
   final GetDeploymentResponseVariant2GitSourceVariant13Type type_;
 
-  const GetDeploymentResponseVariant2GitSourceVariant13({required this.host, this.org = const SdkOmitted(), required this.ref, this.repo = const SdkOmitted(), required this.repoId, required this.sha, required this.type_});
+  const GetDeploymentResponseVariant2GitSourceVariant13(
+      {required this.host,
+      this.org = const SdkOmitted(),
+      required this.ref,
+      this.repo = const SdkOmitted(),
+      required this.repoId,
+      required this.sha,
+      required this.type_});
 
-  GetDeploymentResponseVariant2GitSourceVariant13 Function({String host, SdkOptional<String> org, String ref, SdkOptional<String> repo, double repoId, String sha, GetDeploymentResponseVariant2GitSourceVariant13Type type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant13 Function(
+          {String host,
+          SdkOptional<String> org,
+          String ref,
+          SdkOptional<String> repo,
+          double repoId,
+          String sha,
+          GetDeploymentResponseVariant2GitSourceVariant13Type type_})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant13 _copyWith({Object? host = sdkOmittedValue, Object? org = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant13(
-    host: identical(host, sdkOmittedValue) ? this.host : host as String,
-    org: identical(org, sdkOmittedValue) ? this.org : org as SdkOptional<String>,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
-    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant2GitSourceVariant13Type,
-  );
+  GetDeploymentResponseVariant2GitSourceVariant13 _copyWith(
+          {Object? host = sdkOmittedValue,
+          Object? org = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? sha = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2GitSourceVariant13(
+        host: identical(host, sdkOmittedValue) ? this.host : host as String,
+        org: identical(org, sdkOmittedValue)
+            ? this.org
+            : org as SdkOptional<String>,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        repo: identical(repo, sdkOmittedValue)
+            ? this.repo
+            : repo as SdkOptional<String>,
+        repoId:
+            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
+        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetDeploymentResponseVariant2GitSourceVariant13Type,
+      );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant13.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant13(
-    host: (json['host'] as String?)!,
-    org: json['org'] != null ? SdkPresent((json['org'] as String?)!) : const SdkOmitted(),
-    ref: (json['ref'] as String?)!,
-    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
-    repoId: ((json['repoId'] as num?)?.toDouble())!,
-    sha: (json['sha'] as String?)!,
-    type_: (json['type'] != null ? GetDeploymentResponseVariant2GitSourceVariant13Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant2GitSourceVariant13.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2GitSourceVariant13(
+        host: (json['host'] as String?)!,
+        org: json['org'] != null
+            ? SdkPresent((json['org'] as String?)!)
+            : const SdkOmitted(),
+        ref: (json['ref'] as String?)!,
+        repo: json['repo'] != null
+            ? SdkPresent((json['repo'] as String?)!)
+            : const SdkOmitted(),
+        repoId: ((json['repoId'] as num?)?.toDouble())!,
+        sha: (json['sha'] as String?)!,
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant2GitSourceVariant13Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'host': host,
-    ...switch (org) {
-      SdkPresent<String>(value: final value) => {'org': value,},
-      _ => const <String, dynamic>{},
-    },
-    'ref': ref,
-    ...switch (repo) {
-      SdkPresent<String>(value: final value) => {'repo': value,},
-      _ => const <String, dynamic>{},
-    },
-    'repoId': repoId,
-    'sha': sha,
-    'type': type_.toJson(),
-  };
+        'host': host,
+        ...switch (org) {
+          SdkPresent<String>(value: final value) => {
+              'org': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ref': ref,
+        ...switch (repo) {
+          SdkPresent<String>(value: final value) => {
+              'repo': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'repoId': repoId,
+        'sha': sha,
+        'type': type_.toJson(),
+      };
 }
 
 class GetDeploymentResponseVariant2GitSourceVariant14 {
@@ -66,42 +109,82 @@ class GetDeploymentResponseVariant2GitSourceVariant14 {
   final String sha;
   final GetDeploymentResponseVariant2GitSourceVariant14Type type_;
 
-  const GetDeploymentResponseVariant2GitSourceVariant14({this.org = const SdkOmitted(), required this.ref, this.repo = const SdkOmitted(), required this.repoId, required this.sha, required this.type_});
+  const GetDeploymentResponseVariant2GitSourceVariant14(
+      {this.org = const SdkOmitted(),
+      required this.ref,
+      this.repo = const SdkOmitted(),
+      required this.repoId,
+      required this.sha,
+      required this.type_});
 
-  GetDeploymentResponseVariant2GitSourceVariant14 Function({SdkOptional<String> org, String ref, SdkOptional<String> repo, double repoId, String sha, GetDeploymentResponseVariant2GitSourceVariant14Type type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant14 Function(
+          {SdkOptional<String> org,
+          String ref,
+          SdkOptional<String> repo,
+          double repoId,
+          String sha,
+          GetDeploymentResponseVariant2GitSourceVariant14Type type_})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant14 _copyWith({Object? org = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant14(
-    org: identical(org, sdkOmittedValue) ? this.org : org as SdkOptional<String>,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
-    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant2GitSourceVariant14Type,
-  );
+  GetDeploymentResponseVariant2GitSourceVariant14 _copyWith(
+          {Object? org = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? sha = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2GitSourceVariant14(
+        org: identical(org, sdkOmittedValue)
+            ? this.org
+            : org as SdkOptional<String>,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        repo: identical(repo, sdkOmittedValue)
+            ? this.repo
+            : repo as SdkOptional<String>,
+        repoId:
+            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
+        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetDeploymentResponseVariant2GitSourceVariant14Type,
+      );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant14.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant14(
-    org: json['org'] != null ? SdkPresent((json['org'] as String?)!) : const SdkOmitted(),
-    ref: (json['ref'] as String?)!,
-    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
-    repoId: ((json['repoId'] as num?)?.toDouble())!,
-    sha: (json['sha'] as String?)!,
-    type_: (json['type'] != null ? GetDeploymentResponseVariant2GitSourceVariant14Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant2GitSourceVariant14.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2GitSourceVariant14(
+        org: json['org'] != null
+            ? SdkPresent((json['org'] as String?)!)
+            : const SdkOmitted(),
+        ref: (json['ref'] as String?)!,
+        repo: json['repo'] != null
+            ? SdkPresent((json['repo'] as String?)!)
+            : const SdkOmitted(),
+        repoId: ((json['repoId'] as num?)?.toDouble())!,
+        sha: (json['sha'] as String?)!,
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant2GitSourceVariant14Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (org) {
-      SdkPresent<String>(value: final value) => {'org': value,},
-      _ => const <String, dynamic>{},
-    },
-    'ref': ref,
-    ...switch (repo) {
-      SdkPresent<String>(value: final value) => {'repo': value,},
-      _ => const <String, dynamic>{},
-    },
-    'repoId': repoId,
-    'sha': sha,
-    'type': type_.toJson(),
-  };
+        ...switch (org) {
+          SdkPresent<String>(value: final value) => {
+              'org': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ref': ref,
+        ...switch (repo) {
+          SdkPresent<String>(value: final value) => {
+              'repo': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'repoId': repoId,
+        'sha': sha,
+        'type': type_.toJson(),
+      };
 }
 
 class GetDeploymentResponseVariant2GitSourceVariant15 {
@@ -112,30 +195,53 @@ class GetDeploymentResponseVariant2GitSourceVariant15 {
   final String sha;
   final GetDeploymentResponseVariant2GitSourceVariant15Type type_;
 
-  const GetDeploymentResponseVariant2GitSourceVariant15({required this.projectId, required this.ref, required this.sha, required this.type_});
+  const GetDeploymentResponseVariant2GitSourceVariant15(
+      {required this.projectId,
+      required this.ref,
+      required this.sha,
+      required this.type_});
 
-  GetDeploymentResponseVariant2GitSourceVariant15 Function({double projectId, String ref, String sha, GetDeploymentResponseVariant2GitSourceVariant15Type type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant15 Function(
+          {double projectId,
+          String ref,
+          String sha,
+          GetDeploymentResponseVariant2GitSourceVariant15Type type_})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant15 _copyWith({Object? projectId = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant15(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as double,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant2GitSourceVariant15Type,
-  );
+  GetDeploymentResponseVariant2GitSourceVariant15 _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? sha = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2GitSourceVariant15(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as double,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetDeploymentResponseVariant2GitSourceVariant15Type,
+      );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant15.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant15(
-    projectId: ((json['projectId'] as num?)?.toDouble())!,
-    ref: (json['ref'] as String?)!,
-    sha: (json['sha'] as String?)!,
-    type_: (json['type'] != null ? GetDeploymentResponseVariant2GitSourceVariant15Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant2GitSourceVariant15.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2GitSourceVariant15(
+        projectId: ((json['projectId'] as num?)?.toDouble())!,
+        ref: (json['ref'] as String?)!,
+        sha: (json['sha'] as String?)!,
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant2GitSourceVariant15Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'ref': ref,
-    'sha': sha,
-    'type': type_.toJson(),
-  };
+        'projectId': projectId,
+        'ref': ref,
+        'sha': sha,
+        'type': type_.toJson(),
+      };
 }
 
 class GetDeploymentResponseVariant2GitSourceVariant16 {
@@ -149,45 +255,90 @@ class GetDeploymentResponseVariant2GitSourceVariant16 {
   final GetDeploymentResponseVariant2GitSourceVariant16Type type_;
   final String workspaceUuid;
 
-  const GetDeploymentResponseVariant2GitSourceVariant16({this.owner = const SdkOmitted(), required this.ref, required this.repoUuid, required this.sha, this.slug = const SdkOmitted(), required this.type_, required this.workspaceUuid});
+  const GetDeploymentResponseVariant2GitSourceVariant16(
+      {this.owner = const SdkOmitted(),
+      required this.ref,
+      required this.repoUuid,
+      required this.sha,
+      this.slug = const SdkOmitted(),
+      required this.type_,
+      required this.workspaceUuid});
 
-  GetDeploymentResponseVariant2GitSourceVariant16 Function({SdkOptional<String> owner, String ref, String repoUuid, String sha, SdkOptional<String> slug, GetDeploymentResponseVariant2GitSourceVariant16Type type_, String workspaceUuid}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant16 Function(
+      {SdkOptional<String> owner,
+      String ref,
+      String repoUuid,
+      String sha,
+      SdkOptional<String> slug,
+      GetDeploymentResponseVariant2GitSourceVariant16Type type_,
+      String workspaceUuid}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant16 _copyWith({Object? owner = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repoUuid = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? workspaceUuid = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant16(
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as SdkOptional<String>,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    repoUuid: identical(repoUuid, sdkOmittedValue) ? this.repoUuid : repoUuid as String,
-    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant2GitSourceVariant16Type,
-    workspaceUuid: identical(workspaceUuid, sdkOmittedValue) ? this.workspaceUuid : workspaceUuid as String,
-  );
+  GetDeploymentResponseVariant2GitSourceVariant16 _copyWith(
+          {Object? owner = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? repoUuid = sdkOmittedValue,
+          Object? sha = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? workspaceUuid = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2GitSourceVariant16(
+        owner: identical(owner, sdkOmittedValue)
+            ? this.owner
+            : owner as SdkOptional<String>,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        repoUuid: identical(repoUuid, sdkOmittedValue)
+            ? this.repoUuid
+            : repoUuid as String,
+        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+        slug: identical(slug, sdkOmittedValue)
+            ? this.slug
+            : slug as SdkOptional<String>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetDeploymentResponseVariant2GitSourceVariant16Type,
+        workspaceUuid: identical(workspaceUuid, sdkOmittedValue)
+            ? this.workspaceUuid
+            : workspaceUuid as String,
+      );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant16.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant16(
-    owner: json['owner'] != null ? SdkPresent((json['owner'] as String?)!) : const SdkOmitted(),
-    ref: (json['ref'] as String?)!,
-    repoUuid: (json['repoUuid'] as String?)!,
-    sha: (json['sha'] as String?)!,
-    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? GetDeploymentResponseVariant2GitSourceVariant16Type.fromJson(json['type'] as String) : null)!,
-    workspaceUuid: (json['workspaceUuid'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2GitSourceVariant16.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2GitSourceVariant16(
+        owner: json['owner'] != null
+            ? SdkPresent((json['owner'] as String?)!)
+            : const SdkOmitted(),
+        ref: (json['ref'] as String?)!,
+        repoUuid: (json['repoUuid'] as String?)!,
+        sha: (json['sha'] as String?)!,
+        slug: json['slug'] != null
+            ? SdkPresent((json['slug'] as String?)!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant2GitSourceVariant16Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        workspaceUuid: (json['workspaceUuid'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (owner) {
-      SdkPresent<String>(value: final value) => {'owner': value,},
-      _ => const <String, dynamic>{},
-    },
-    'ref': ref,
-    'repoUuid': repoUuid,
-    'sha': sha,
-    ...switch (slug) {
-      SdkPresent<String>(value: final value) => {'slug': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    'workspaceUuid': workspaceUuid,
-  };
+        ...switch (owner) {
+          SdkPresent<String>(value: final value) => {
+              'owner': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ref': ref,
+        'repoUuid': repoUuid,
+        'sha': sha,
+        ...switch (slug) {
+          SdkPresent<String>(value: final value) => {
+              'slug': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        'workspaceUuid': workspaceUuid,
+      };
 }
 
 class GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor {
@@ -197,27 +348,35 @@ class GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor {
   final String email;
   final String name;
 
-  const GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor({required this.date, required this.email, required this.name});
+  const GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor(
+      {required this.date, required this.email, required this.name});
 
-  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor Function({String date, String email, String name}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor Function(
+      {String date, String email, String name}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor _copyWith({Object? date = sdkOmittedValue, Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor(
-    date: identical(date, sdkOmittedValue) ? this.date : date as String,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor _copyWith(
+          {Object? date = sdkOmittedValue,
+          Object? email = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor(
+        date: identical(date, sdkOmittedValue) ? this.date : date as String,
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor(
-    date: (json['date'] as String?)!,
-    email: (json['email'] as String?)!,
-    name: (json['name'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor(
+        date: (json['date'] as String?)!,
+        email: (json['email'] as String?)!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'date': date,
-    'email': email,
-    'name': name,
-  };
+        'date': date,
+        'email': email,
+        'name': name,
+      };
 }
 
 class GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter {
@@ -227,55 +386,95 @@ class GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter {
   final String email;
   final String name;
 
-  const GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter({required this.date, required this.email, required this.name});
+  const GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter(
+      {required this.date, required this.email, required this.name});
 
-  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter Function({String date, String email, String name}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter
+          Function({String date, String email, String name})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter _copyWith({Object? date = sdkOmittedValue, Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter(
-    date: identical(date, sdkOmittedValue) ? this.date : date as String,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter
+      _copyWith(
+              {Object? date = sdkOmittedValue,
+              Object? email = sdkOmittedValue,
+              Object? name = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter(
+            date: identical(date, sdkOmittedValue) ? this.date : date as String,
+            email: identical(email, sdkOmittedValue)
+                ? this.email
+                : email as String,
+            name: identical(name, sdkOmittedValue) ? this.name : name as String,
+          );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter(
-    date: (json['date'] as String?)!,
-    email: (json['email'] as String?)!,
-    name: (json['name'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter(
+        date: (json['date'] as String?)!,
+        email: (json['email'] as String?)!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'date': date,
-    'email': email,
-    'name': name,
-  };
+        'date': date,
+        'email': email,
+        'name': name,
+      };
 }
 
 class GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor author;
-  final GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter committer;
+  final GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor
+      author;
+  final GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter
+      committer;
   final String message;
 
-  const GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata({required this.author, required this.committer, required this.message});
+  const GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata(
+      {required this.author, required this.committer, required this.message});
 
-  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata Function({GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor author, GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter committer, String message}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata Function(
+      {GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor
+          author,
+      GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter
+          committer,
+      String message}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata _copyWith({Object? author = sdkOmittedValue, Object? committer = sdkOmittedValue, Object? message = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata(
-    author: identical(author, sdkOmittedValue) ? this.author : author as GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor,
-    committer: identical(committer, sdkOmittedValue) ? this.committer : committer as GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata _copyWith(
+          {Object? author = sdkOmittedValue,
+          Object? committer = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata(
+        author: identical(author, sdkOmittedValue)
+            ? this.author
+            : author
+                as GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor,
+        committer: identical(committer, sdkOmittedValue)
+            ? this.committer
+            : committer
+                as GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata(
-    author: (json['author'] != null ? GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor.fromJson(json['author'] as Map<String, dynamic>) : null)!,
-    committer: (json['committer'] != null ? GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter.fromJson(json['committer'] as Map<String, dynamic>) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata(
+        author: (json['author'] != null
+            ? GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataAuthor
+                .fromJson(json['author'] as Map<String, dynamic>)
+            : null)!,
+        committer: (json['committer'] != null
+            ? GetDeploymentResponseVariant2GitSourceVariant17CommitMetadataCommitter
+                .fromJson(json['committer'] as Map<String, dynamic>)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'author': author.toJson(),
-    'committer': committer.toJson(),
-    'message': message,
-  };
+        'author': author.toJson(),
+        'committer': committer.toJson(),
+        'message': message,
+      };
 }

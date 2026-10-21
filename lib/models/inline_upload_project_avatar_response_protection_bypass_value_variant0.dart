@@ -13,33 +13,66 @@ class UploadProjectAvatarResponseProtectionBypassValueVariant0 {
   final String integrationId;
   final UploadProjectAvatarResponseProtectionBypassValueVariant0Scope scope;
 
-  const UploadProjectAvatarResponseProtectionBypassValueVariant0({required this.configurationId, required this.createdAt, required this.createdBy, required this.integrationId, required this.scope});
+  const UploadProjectAvatarResponseProtectionBypassValueVariant0(
+      {required this.configurationId,
+      required this.createdAt,
+      required this.createdBy,
+      required this.integrationId,
+      required this.scope});
 
-  UploadProjectAvatarResponseProtectionBypassValueVariant0 Function({String configurationId, double createdAt, String createdBy, String integrationId, UploadProjectAvatarResponseProtectionBypassValueVariant0Scope scope}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseProtectionBypassValueVariant0 Function(
+          {String configurationId,
+          double createdAt,
+          String createdBy,
+          String integrationId,
+          UploadProjectAvatarResponseProtectionBypassValueVariant0Scope scope})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseProtectionBypassValueVariant0 _copyWith({Object? configurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? scope = sdkOmittedValue}) => UploadProjectAvatarResponseProtectionBypassValueVariant0(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as UploadProjectAvatarResponseProtectionBypassValueVariant0Scope,
-  );
+  UploadProjectAvatarResponseProtectionBypassValueVariant0 _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseProtectionBypassValueVariant0(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope
+                as UploadProjectAvatarResponseProtectionBypassValueVariant0Scope,
+      );
 
-  factory UploadProjectAvatarResponseProtectionBypassValueVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseProtectionBypassValueVariant0(
-    configurationId: (json['configurationId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-    scope: (json['scope'] != null ? UploadProjectAvatarResponseProtectionBypassValueVariant0Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseProtectionBypassValueVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseProtectionBypassValueVariant0(
+        configurationId: (json['configurationId'] as String?)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+        scope: (json['scope'] != null
+            ? UploadProjectAvatarResponseProtectionBypassValueVariant0Scope
+                .fromJson(json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    'integrationId': integrationId,
-    'scope': scope.toJson(),
-  };
+        'configurationId': configurationId,
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        'integrationId': integrationId,
+        'scope': scope.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseProtectionBypassValueVariant1 {
@@ -47,95 +80,196 @@ class UploadProjectAvatarResponseProtectionBypassValueVariant1 {
   static const String constructionSurface = 'named';
   final double createdAt;
   final String createdBy;
+
   /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
-  final SdkOptional<UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar> isEnvVar;
+  final SdkOptional<
+          UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar>
+      isEnvVar;
+
   /// Optional note about the bypass to be displayed in the UI
   final SdkOptional<String> note;
   final UploadProjectAvatarResponseProtectionBypassValueVariant1Scope scope;
 
-  const UploadProjectAvatarResponseProtectionBypassValueVariant1({required this.createdAt, required this.createdBy, this.isEnvVar = const SdkOmitted(), this.note = const SdkOmitted(), required this.scope});
+  const UploadProjectAvatarResponseProtectionBypassValueVariant1(
+      {required this.createdAt,
+      required this.createdBy,
+      this.isEnvVar = const SdkOmitted(),
+      this.note = const SdkOmitted(),
+      required this.scope});
 
-  UploadProjectAvatarResponseProtectionBypassValueVariant1 Function({double createdAt, String createdBy, SdkOptional<UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar> isEnvVar, SdkOptional<String> note, UploadProjectAvatarResponseProtectionBypassValueVariant1Scope scope}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseProtectionBypassValueVariant1 Function(
+      {double createdAt,
+      String createdBy,
+      SdkOptional<
+              UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar>
+          isEnvVar,
+      SdkOptional<String> note,
+      UploadProjectAvatarResponseProtectionBypassValueVariant1Scope
+          scope}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseProtectionBypassValueVariant1 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? isEnvVar = sdkOmittedValue, Object? note = sdkOmittedValue, Object? scope = sdkOmittedValue}) => UploadProjectAvatarResponseProtectionBypassValueVariant1(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    isEnvVar: identical(isEnvVar, sdkOmittedValue) ? this.isEnvVar : isEnvVar as SdkOptional<UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as UploadProjectAvatarResponseProtectionBypassValueVariant1Scope,
-  );
+  UploadProjectAvatarResponseProtectionBypassValueVariant1 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? isEnvVar = sdkOmittedValue,
+          Object? note = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseProtectionBypassValueVariant1(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        isEnvVar: identical(isEnvVar, sdkOmittedValue)
+            ? this.isEnvVar
+            : isEnvVar as SdkOptional<
+                UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope
+                as UploadProjectAvatarResponseProtectionBypassValueVariant1Scope,
+      );
 
-  factory UploadProjectAvatarResponseProtectionBypassValueVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseProtectionBypassValueVariant1(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    isEnvVar: json['isEnvVar'] != null ? SdkPresent((json['isEnvVar'] != null ? UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar.fromJson(json['isEnvVar'] as bool) : null)!) : const SdkOmitted(),
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    scope: (json['scope'] != null ? UploadProjectAvatarResponseProtectionBypassValueVariant1Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseProtectionBypassValueVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseProtectionBypassValueVariant1(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        isEnvVar: json['isEnvVar'] != null
+            ? SdkPresent((json['isEnvVar'] != null
+                ? UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar
+                    .fromJson(json['isEnvVar'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        scope: (json['scope'] != null
+            ? UploadProjectAvatarResponseProtectionBypassValueVariant1Scope
+                .fromJson(json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    ...switch (isEnvVar) {
-      SdkPresent<UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar>(value: final value) => {'isEnvVar': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'scope': scope.toJson(),
-  };
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        ...switch (isEnvVar) {
+          SdkPresent<
+                UploadProjectAvatarResponseProtectionBypassValueVariant1IsEnvVar>(
+            value: final value
+          ) =>
+            {
+              'isEnvVar': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'scope': scope.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseProtectionConfigSandboxUrls {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection> inheritDeploymentProtection;
+  final SdkOptional<
+          UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>
+      inheritDeploymentProtection;
 
-  const UploadProjectAvatarResponseProtectionConfigSandboxUrls({this.inheritDeploymentProtection = const SdkOmitted()});
+  const UploadProjectAvatarResponseProtectionConfigSandboxUrls(
+      {this.inheritDeploymentProtection = const SdkOmitted()});
 
-  UploadProjectAvatarResponseProtectionConfigSandboxUrls Function({SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection> inheritDeploymentProtection}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseProtectionConfigSandboxUrls Function(
+      {SdkOptional<
+              UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>
+          inheritDeploymentProtection}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseProtectionConfigSandboxUrls _copyWith({Object? inheritDeploymentProtection = sdkOmittedValue}) => UploadProjectAvatarResponseProtectionConfigSandboxUrls(
-    inheritDeploymentProtection: identical(inheritDeploymentProtection, sdkOmittedValue) ? this.inheritDeploymentProtection : inheritDeploymentProtection as SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>,
-  );
+  UploadProjectAvatarResponseProtectionConfigSandboxUrls _copyWith(
+          {Object? inheritDeploymentProtection = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseProtectionConfigSandboxUrls(
+        inheritDeploymentProtection: identical(
+                inheritDeploymentProtection, sdkOmittedValue)
+            ? this.inheritDeploymentProtection
+            : inheritDeploymentProtection as SdkOptional<
+                UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>,
+      );
 
-  factory UploadProjectAvatarResponseProtectionConfigSandboxUrls.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseProtectionConfigSandboxUrls(
-    inheritDeploymentProtection: json['inheritDeploymentProtection'] != null ? SdkPresent((json['inheritDeploymentProtection'] != null ? UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection.fromJson(json['inheritDeploymentProtection'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseProtectionConfigSandboxUrls.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseProtectionConfigSandboxUrls(
+        inheritDeploymentProtection: json['inheritDeploymentProtection'] != null
+            ? SdkPresent((json['inheritDeploymentProtection'] != null
+                ? UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection
+                    .fromJson(json['inheritDeploymentProtection'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (inheritDeploymentProtection) {
-      SdkPresent<UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>(value: final value) => {'inheritDeploymentProtection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (inheritDeploymentProtection) {
+          SdkPresent<
+                UploadProjectAvatarResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>(
+            value: final value
+          ) =>
+            {
+              'inheritDeploymentProtection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadProjectAvatarResponseProtectionConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrls> sandboxUrls;
+  final SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrls>
+      sandboxUrls;
 
-  const UploadProjectAvatarResponseProtectionConfig({this.sandboxUrls = const SdkOmitted()});
+  const UploadProjectAvatarResponseProtectionConfig(
+      {this.sandboxUrls = const SdkOmitted()});
 
-  UploadProjectAvatarResponseProtectionConfig Function({SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrls> sandboxUrls}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseProtectionConfig Function(
+      {SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrls>
+          sandboxUrls}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseProtectionConfig _copyWith({Object? sandboxUrls = sdkOmittedValue}) => UploadProjectAvatarResponseProtectionConfig(
-    sandboxUrls: identical(sandboxUrls, sdkOmittedValue) ? this.sandboxUrls : sandboxUrls as SdkOptional<UploadProjectAvatarResponseProtectionConfigSandboxUrls>,
-  );
+  UploadProjectAvatarResponseProtectionConfig _copyWith(
+          {Object? sandboxUrls = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseProtectionConfig(
+        sandboxUrls: identical(sandboxUrls, sdkOmittedValue)
+            ? this.sandboxUrls
+            : sandboxUrls as SdkOptional<
+                UploadProjectAvatarResponseProtectionConfigSandboxUrls>,
+      );
 
-  factory UploadProjectAvatarResponseProtectionConfig.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseProtectionConfig(
-    sandboxUrls: json['sandboxUrls'] != null ? SdkPresent((json['sandboxUrls'] != null ? UploadProjectAvatarResponseProtectionConfigSandboxUrls.fromJson(json['sandboxUrls'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseProtectionConfig.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseProtectionConfig(
+        sandboxUrls: json['sandboxUrls'] != null
+            ? SdkPresent((json['sandboxUrls'] != null
+                ? UploadProjectAvatarResponseProtectionConfigSandboxUrls
+                    .fromJson(json['sandboxUrls'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (sandboxUrls) {
-      SdkPresent<UploadProjectAvatarResponseProtectionConfigSandboxUrls>(value: final value) => {'sandboxUrls': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (sandboxUrls) {
+          SdkPresent<UploadProjectAvatarResponseProtectionConfigSandboxUrls>(
+            value: final value
+          ) =>
+            {
+              'sandboxUrls': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition {
@@ -143,54 +277,101 @@ class UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition {
   static const String constructionSurface = 'named';
   final String algorithmVersion;
   final double at;
-  final UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection direction;
+  final UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection
+      direction;
 
-  const UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition({required this.algorithmVersion, required this.at, required this.direction});
+  const UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition(
+      {required this.algorithmVersion,
+      required this.at,
+      required this.direction});
 
-  UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition Function({String algorithmVersion, double at, UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection direction}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition Function(
+      {String algorithmVersion,
+      double at,
+      UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection
+          direction}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition _copyWith({Object? algorithmVersion = sdkOmittedValue, Object? at = sdkOmittedValue, Object? direction = sdkOmittedValue}) => UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition(
-    algorithmVersion: identical(algorithmVersion, sdkOmittedValue) ? this.algorithmVersion : algorithmVersion as String,
-    at: identical(at, sdkOmittedValue) ? this.at : at as double,
-    direction: identical(direction, sdkOmittedValue) ? this.direction : direction as UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection,
-  );
+  UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition
+      _copyWith(
+              {Object? algorithmVersion = sdkOmittedValue,
+              Object? at = sdkOmittedValue,
+              Object? direction = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition(
+            algorithmVersion: identical(algorithmVersion, sdkOmittedValue)
+                ? this.algorithmVersion
+                : algorithmVersion as String,
+            at: identical(at, sdkOmittedValue) ? this.at : at as double,
+            direction: identical(direction, sdkOmittedValue)
+                ? this.direction
+                : direction
+                    as UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection,
+          );
 
-  factory UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition(
-    algorithmVersion: (json['algorithmVersion'] as String?)!,
-    at: ((json['at'] as num?)?.toDouble())!,
-    direction: (json['direction'] != null ? UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection.fromJson(json['direction'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransition(
+        algorithmVersion: (json['algorithmVersion'] as String?)!,
+        at: ((json['at'] as num?)?.toDouble())!,
+        direction: (json['direction'] != null
+            ? UploadProjectAvatarResponseResourceConfigBuildMachineElasticTransitionDirection
+                .fromJson(json['direction'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'algorithmVersion': algorithmVersion,
-    'at': at,
-    'direction': direction.toJson(),
-  };
+        'algorithmVersion': algorithmVersion,
+        'at': at,
+        'direction': direction.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration> configuration;
+  final SdkOptional<
+          UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration>
+      configuration;
 
-  const UploadProjectAvatarResponseResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
+  const UploadProjectAvatarResponseResourceConfigBuildQueue(
+      {this.configuration = const SdkOmitted()});
 
-  UploadProjectAvatarResponseResourceConfigBuildQueue Function({SdkOptional<UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseResourceConfigBuildQueue Function(
+      {SdkOptional<
+              UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration>
+          configuration}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => UploadProjectAvatarResponseResourceConfigBuildQueue(
-    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration>,
-  );
+  UploadProjectAvatarResponseResourceConfigBuildQueue _copyWith(
+          {Object? configuration = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseResourceConfigBuildQueue(
+        configuration: identical(configuration, sdkOmittedValue)
+            ? this.configuration
+            : configuration as SdkOptional<
+                UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration>,
+      );
 
-  factory UploadProjectAvatarResponseResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseResourceConfigBuildQueue(
-    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseResourceConfigBuildQueue.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseResourceConfigBuildQueue(
+        configuration: json['configuration'] != null
+            ? SdkPresent((json['configuration'] != null
+                ? UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration
+                    .fromJson(json['configuration'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (configuration) {
-      SdkPresent<UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (configuration) {
+          SdkPresent<
+                UploadProjectAvatarResponseResourceConfigBuildQueueConfiguration>(
+            value: final value
+          ) =>
+            {
+              'configuration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
@@ -198,29 +379,47 @@ class UploadProjectAvatarResponseResourceConfigElasticBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double cores;
+
   /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
   final UploadProjectAvatarResponseResourceConfigElasticBuildMachineLabel label;
   final double memory;
 
-  const UploadProjectAvatarResponseResourceConfigElasticBuildMachine({required this.cores, required this.label, required this.memory});
+  const UploadProjectAvatarResponseResourceConfigElasticBuildMachine(
+      {required this.cores, required this.label, required this.memory});
 
-  UploadProjectAvatarResponseResourceConfigElasticBuildMachine Function({double cores, UploadProjectAvatarResponseResourceConfigElasticBuildMachineLabel label, double memory}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseResourceConfigElasticBuildMachine Function(
+      {double cores,
+      UploadProjectAvatarResponseResourceConfigElasticBuildMachineLabel label,
+      double memory}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseResourceConfigElasticBuildMachine _copyWith({Object? cores = sdkOmittedValue, Object? label = sdkOmittedValue, Object? memory = sdkOmittedValue}) => UploadProjectAvatarResponseResourceConfigElasticBuildMachine(
-    cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
-    label: identical(label, sdkOmittedValue) ? this.label : label as UploadProjectAvatarResponseResourceConfigElasticBuildMachineLabel,
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as double,
-  );
+  UploadProjectAvatarResponseResourceConfigElasticBuildMachine _copyWith(
+          {Object? cores = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? memory = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseResourceConfigElasticBuildMachine(
+        cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label
+                as UploadProjectAvatarResponseResourceConfigElasticBuildMachineLabel,
+        memory:
+            identical(memory, sdkOmittedValue) ? this.memory : memory as double,
+      );
 
-  factory UploadProjectAvatarResponseResourceConfigElasticBuildMachine.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseResourceConfigElasticBuildMachine(
-    cores: ((json['cores'] as num?)?.toDouble())!,
-    label: (json['label'] != null ? UploadProjectAvatarResponseResourceConfigElasticBuildMachineLabel.fromJson(json['label'] as String) : null)!,
-    memory: ((json['memory'] as num?)?.toDouble())!,
-  );
+  factory UploadProjectAvatarResponseResourceConfigElasticBuildMachine.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseResourceConfigElasticBuildMachine(
+        cores: ((json['cores'] as num?)?.toDouble())!,
+        label: (json['label'] != null
+            ? UploadProjectAvatarResponseResourceConfigElasticBuildMachineLabel
+                .fromJson(json['label'] as String)
+            : null)!,
+        memory: ((json['memory'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'cores': cores,
-    'label': label.toJson(),
-    'memory': memory,
-  };
+        'cores': cores,
+        'label': label.toJson(),
+        'memory': memory,
+      };
 }

@@ -6,216 +6,254 @@ part of 'inline.dart';
 // Inline operation models
 /// Whether automatic code reviews are enabled
 final class UserEventPayloadVariant392NextEnabled {
-
   final bool value;
 
   const UserEventPayloadVariant392NextEnabled._(this.value);
 
-  factory UserEventPayloadVariant392NextEnabled.fromJson(bool value) => UserEventPayloadVariant392NextEnabled._(value);
+  factory UserEventPayloadVariant392NextEnabled.fromJson(bool value) =>
+      UserEventPayloadVariant392NextEnabled._(value);
 
   static const false_ = UserEventPayloadVariant392NextEnabled._(false);
   static const true_ = UserEventPayloadVariant392NextEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant392NextEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant392NextEnabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to include draft pull requests in automatic reviews
 final class UserEventPayloadVariant392NextIncludeDrafts {
-
   final bool value;
 
   const UserEventPayloadVariant392NextIncludeDrafts._(this.value);
 
-  factory UserEventPayloadVariant392NextIncludeDrafts.fromJson(bool value) => UserEventPayloadVariant392NextIncludeDrafts._(value);
+  factory UserEventPayloadVariant392NextIncludeDrafts.fromJson(bool value) =>
+      UserEventPayloadVariant392NextIncludeDrafts._(value);
 
   static const false_ = UserEventPayloadVariant392NextIncludeDrafts._(false);
   static const true_ = UserEventPayloadVariant392NextIncludeDrafts._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant392NextIncludeDrafts && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant392NextIncludeDrafts &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Which repository visibilities get automatic reviews
 final class UserEventPayloadVariant392NextScope {
-
   final String value;
 
   const UserEventPayloadVariant392NextScope._(this.value);
 
-  factory UserEventPayloadVariant392NextScope.fromJson(String value) => UserEventPayloadVariant392NextScope._(value);
+  factory UserEventPayloadVariant392NextScope.fromJson(String value) =>
+      UserEventPayloadVariant392NextScope._(value);
 
   static const all = UserEventPayloadVariant392NextScope._('all');
   static const private = UserEventPayloadVariant392NextScope._('private');
   static const public = UserEventPayloadVariant392NextScope._('public');
-  static const selectedRepos = UserEventPayloadVariant392NextScope._('selected_repos');
+  static const selectedRepos =
+      UserEventPayloadVariant392NextScope._('selected_repos');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant392NextScope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant392NextScope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether automatic code reviews are enabled
 final class UserEventPayloadVariant392PreviousEnabled {
-
   final bool value;
 
   const UserEventPayloadVariant392PreviousEnabled._(this.value);
 
-  factory UserEventPayloadVariant392PreviousEnabled.fromJson(bool value) => UserEventPayloadVariant392PreviousEnabled._(value);
+  factory UserEventPayloadVariant392PreviousEnabled.fromJson(bool value) =>
+      UserEventPayloadVariant392PreviousEnabled._(value);
 
   static const false_ = UserEventPayloadVariant392PreviousEnabled._(false);
   static const true_ = UserEventPayloadVariant392PreviousEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant392PreviousEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant392PreviousEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to include draft pull requests in automatic reviews
 final class UserEventPayloadVariant392PreviousIncludeDrafts {
-
   final bool value;
 
   const UserEventPayloadVariant392PreviousIncludeDrafts._(this.value);
 
-  factory UserEventPayloadVariant392PreviousIncludeDrafts.fromJson(bool value) => UserEventPayloadVariant392PreviousIncludeDrafts._(value);
+  factory UserEventPayloadVariant392PreviousIncludeDrafts.fromJson(
+          bool value) =>
+      UserEventPayloadVariant392PreviousIncludeDrafts._(value);
 
-  static const false_ = UserEventPayloadVariant392PreviousIncludeDrafts._(false);
+  static const false_ =
+      UserEventPayloadVariant392PreviousIncludeDrafts._(false);
   static const true_ = UserEventPayloadVariant392PreviousIncludeDrafts._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant392PreviousIncludeDrafts && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant392PreviousIncludeDrafts &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Which repository visibilities get automatic reviews
 final class UserEventPayloadVariant392PreviousScope {
-
   final String value;
 
   const UserEventPayloadVariant392PreviousScope._(this.value);
 
-  factory UserEventPayloadVariant392PreviousScope.fromJson(String value) => UserEventPayloadVariant392PreviousScope._(value);
+  factory UserEventPayloadVariant392PreviousScope.fromJson(String value) =>
+      UserEventPayloadVariant392PreviousScope._(value);
 
   static const all = UserEventPayloadVariant392PreviousScope._('all');
   static const private = UserEventPayloadVariant392PreviousScope._('private');
   static const public = UserEventPayloadVariant392PreviousScope._('public');
-  static const selectedRepos = UserEventPayloadVariant392PreviousScope._('selected_repos');
+  static const selectedRepos =
+      UserEventPayloadVariant392PreviousScope._('selected_repos');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant392PreviousScope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant392PreviousScope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `next` wire field.
 final class UserEventPayloadVariant396Next {
-
   final String value;
 
   const UserEventPayloadVariant396Next._(this.value);
 
-  factory UserEventPayloadVariant396Next.fromJson(String value) => UserEventPayloadVariant396Next._(value);
+  factory UserEventPayloadVariant396Next.fromJson(String value) =>
+      UserEventPayloadVariant396Next._(value);
 
   static const autoApproval = UserEventPayloadVariant396Next._('auto-approval');
   static const block = UserEventPayloadVariant396Next._('block');
-  static const manualApproval = UserEventPayloadVariant396Next._('manual-approval');
+  static const manualApproval =
+      UserEventPayloadVariant396Next._('manual-approval');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant396Next && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant396Next && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `previous` wire field.
 final class UserEventPayloadVariant396Previous {
-
   final String value;
 
   const UserEventPayloadVariant396Previous._(this.value);
 
-  factory UserEventPayloadVariant396Previous.fromJson(String value) => UserEventPayloadVariant396Previous._(value);
+  factory UserEventPayloadVariant396Previous.fromJson(String value) =>
+      UserEventPayloadVariant396Previous._(value);
 
-  static const autoApproval = UserEventPayloadVariant396Previous._('auto-approval');
+  static const autoApproval =
+      UserEventPayloadVariant396Previous._('auto-approval');
   static const block = UserEventPayloadVariant396Previous._('block');
-  static const manualApproval = UserEventPayloadVariant396Previous._('manual-approval');
+  static const manualApproval =
+      UserEventPayloadVariant396Previous._('manual-approval');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant396Previous && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant396Previous && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `isSystemInitiated` wire field.
 final class UserEventPayloadVariant397IsSystemInitiated {
-
   final bool value;
 
   const UserEventPayloadVariant397IsSystemInitiated._(this.value);
 
-  factory UserEventPayloadVariant397IsSystemInitiated.fromJson(bool value) => UserEventPayloadVariant397IsSystemInitiated._(value);
+  factory UserEventPayloadVariant397IsSystemInitiated.fromJson(bool value) =>
+      UserEventPayloadVariant397IsSystemInitiated._(value);
 
   static const false_ = UserEventPayloadVariant397IsSystemInitiated._(false);
   static const true_ = UserEventPayloadVariant397IsSystemInitiated._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant397IsSystemInitiated && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant397IsSystemInitiated &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `next` wire field.
 final class UserEventPayloadVariant397Next {
-
   final String value;
 
   const UserEventPayloadVariant397Next._(this.value);
 
-  factory UserEventPayloadVariant397Next.fromJson(String value) => UserEventPayloadVariant397Next._(value);
+  factory UserEventPayloadVariant397Next.fromJson(String value) =>
+      UserEventPayloadVariant397Next._(value);
 
   static const basic = UserEventPayloadVariant397Next._('basic');
   static const elastic = UserEventPayloadVariant397Next._('elastic');
@@ -225,22 +263,25 @@ final class UserEventPayloadVariant397Next {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant397Next && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant397Next && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `previous` wire field.
 final class UserEventPayloadVariant397Previous {
-
   final String value;
 
   const UserEventPayloadVariant397Previous._(this.value);
 
-  factory UserEventPayloadVariant397Previous.fromJson(String value) => UserEventPayloadVariant397Previous._(value);
+  factory UserEventPayloadVariant397Previous.fromJson(String value) =>
+      UserEventPayloadVariant397Previous._(value);
 
   static const basic = UserEventPayloadVariant397Previous._('basic');
   static const elastic = UserEventPayloadVariant397Previous._('elastic');
@@ -250,42 +291,57 @@ final class UserEventPayloadVariant397Previous {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant397Previous && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant397Previous && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `reason` wire field.
 final class UserEventPayloadVariant397Reason {
-
   final String value;
 
   const UserEventPayloadVariant397Reason._(this.value);
 
-  factory UserEventPayloadVariant397Reason.fromJson(String value) => UserEventPayloadVariant397Reason._(value);
+  factory UserEventPayloadVariant397Reason.fromJson(String value) =>
+      UserEventPayloadVariant397Reason._(value);
 
   static const basicFloor = UserEventPayloadVariant397Reason._('basic-floor');
-  static const buildTimeoutFailure = UserEventPayloadVariant397Reason._('build-timeout-failure');
-  static const enospcFailure = UserEventPayloadVariant397Reason._('enospc-failure');
-  static const enterpriseFloor = UserEventPayloadVariant397Reason._('enterprise-floor');
-  static const highPeakDisk = UserEventPayloadVariant397Reason._('high-peak-disk');
-  static const highPeakMemory = UserEventPayloadVariant397Reason._('high-peak-memory');
-  static const longBuildDuration = UserEventPayloadVariant397Reason._('long-build-duration');
+  static const buildTimeoutFailure =
+      UserEventPayloadVariant397Reason._('build-timeout-failure');
+  static const enospcFailure =
+      UserEventPayloadVariant397Reason._('enospc-failure');
+  static const enterpriseFloor =
+      UserEventPayloadVariant397Reason._('enterprise-floor');
+  static const highPeakDisk =
+      UserEventPayloadVariant397Reason._('high-peak-disk');
+  static const highPeakMemory =
+      UserEventPayloadVariant397Reason._('high-peak-memory');
+  static const longBuildDuration =
+      UserEventPayloadVariant397Reason._('long-build-duration');
   static const oomFailure = UserEventPayloadVariant397Reason._('oom-failure');
   static const planChange = UserEventPayloadVariant397Reason._('plan-change');
-  static const projectTransfer = UserEventPayloadVariant397Reason._('project-transfer');
-  static const shortBuildDuration = UserEventPayloadVariant397Reason._('short-build-duration');
-  static const sustainedHighCpu = UserEventPayloadVariant397Reason._('sustained-high-cpu');
+  static const projectTransfer =
+      UserEventPayloadVariant397Reason._('project-transfer');
+  static const shortBuildDuration =
+      UserEventPayloadVariant397Reason._('short-build-duration');
+  static const sustainedHighCpu =
+      UserEventPayloadVariant397Reason._('sustained-high-cpu');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant397Reason && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant397Reason && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

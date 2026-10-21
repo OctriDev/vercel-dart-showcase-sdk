@@ -8,102 +8,185 @@ part of 'global_config.dart';
 class GlobalConfigItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Optional `string` value serialized in the `description` wire field.
   final SdkOptional<String> description;
+
   /// Required `string` value serialized in the `edgeConfigId` wire field.
   final String edgeConfigId;
+
   /// Required `string` value serialized in the `key` wire field.
   final String key;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
+
   /// Required API value serialized in the `value` wire field.
   final GlobalConfigItemValue? value;
 
-  const GlobalConfigItem({required this.createdAt, this.description = const SdkOmitted(), required this.edgeConfigId, required this.key, required this.updatedAt, required this.value});
+  const GlobalConfigItem(
+      {required this.createdAt,
+      this.description = const SdkOmitted(),
+      required this.edgeConfigId,
+      required this.key,
+      required this.updatedAt,
+      required this.value});
 
-  GlobalConfigItem Function({double createdAt, SdkOptional<String> description, String edgeConfigId, String key, double updatedAt, GlobalConfigItemValue? value}) get copyWith => _copyWith;
+  GlobalConfigItem Function(
+      {double createdAt,
+      SdkOptional<String> description,
+      String edgeConfigId,
+      String key,
+      double updatedAt,
+      GlobalConfigItemValue? value}) get copyWith => _copyWith;
 
-  GlobalConfigItem _copyWith({Object? createdAt = sdkOmittedValue, Object? description = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? key = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? value = sdkOmittedValue}) => GlobalConfigItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as String,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    value: identical(value, sdkOmittedValue) ? this.value : value as GlobalConfigItemValue?,
-  );
+  GlobalConfigItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? edgeConfigId = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GlobalConfigItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
+            ? this.edgeConfigId
+            : edgeConfigId as String,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as GlobalConfigItemValue?,
+      );
 
-  factory GlobalConfigItem.fromJson(Map<String, dynamic> json) => GlobalConfigItem(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    edgeConfigId: (json['edgeConfigId'] as String?)!,
-    key: (json['key'] as String?)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    value: json.containsKey('value') ? json['value'] != null ? GlobalConfigItemValue.fromJson(json['value']) : null : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-  );
+  factory GlobalConfigItem.fromJson(Map<String, dynamic> json) =>
+      GlobalConfigItem(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        edgeConfigId: (json['edgeConfigId'] as String?)!,
+        key: (json['key'] as String?)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        value: json.containsKey('value')
+            ? json['value'] != null
+                ? GlobalConfigItemValue.fromJson(json['value'])
+                : null
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    'edgeConfigId': edgeConfigId,
-    'key': key,
-    'updatedAt': updatedAt,
-    'value': value?.toJson(),
-  };
+        'createdAt': createdAt,
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'edgeConfigId': edgeConfigId,
+        'key': key,
+        'updatedAt': updatedAt,
+        'value': value?.toJson(),
+      };
 }
 
 /// The Global Config.
 class GlobalConfigToken {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `string` value serialized in the `edgeConfigId` wire field.
   final String edgeConfigId;
+
   /// This is not the token itself, but rather an id to identify the token by
   final String id;
+
   /// Required `string` value serialized in the `label` wire field.
   final String label;
+
   /// A partially-masked representation of the token, safe to display in UIs. The format is the first 3 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` → `550********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length. Prefer this field for display/reference in UIs and logs. The full, plaintext token is only disclosed once at creation time via `POST /v1/edge-config/:edgeConfigId/token`; use `id` to reference a token in subsequent calls (e.g. when deleting).
   final String partialToken;
+
   /// Deprecated: the full, plaintext token. - Returned once by `POST /v1/edge-config/:edgeConfigId/token` (create). - Still returned by `GET /v1/edge-config/:edgeConfigId/token/:token` (detail) for backwards compatibility, but scheduled for removal. - **Not** returned by `GET /v1/edge-config/:edgeConfigId/tokens` (list); use `partialToken` for display and `id` to reference tokens. Do not rely on this field being present on read operations. Prefer `partialToken` for display and `id` for references.
   final SdkOptional<String> token;
 
-  const GlobalConfigToken({required this.createdAt, required this.edgeConfigId, required this.id, required this.label, required this.partialToken, this.token = const SdkOmitted()});
+  const GlobalConfigToken(
+      {required this.createdAt,
+      required this.edgeConfigId,
+      required this.id,
+      required this.label,
+      required this.partialToken,
+      this.token = const SdkOmitted()});
 
-  GlobalConfigToken Function({double createdAt, String edgeConfigId, String id, String label, String partialToken, SdkOptional<String> token}) get copyWith => _copyWith;
+  GlobalConfigToken Function(
+      {double createdAt,
+      String edgeConfigId,
+      String id,
+      String label,
+      String partialToken,
+      SdkOptional<String> token}) get copyWith => _copyWith;
 
-  GlobalConfigToken _copyWith({Object? createdAt = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? label = sdkOmittedValue, Object? partialToken = sdkOmittedValue, Object? token = sdkOmittedValue}) => GlobalConfigToken(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-    partialToken: identical(partialToken, sdkOmittedValue) ? this.partialToken : partialToken as String,
-    token: identical(token, sdkOmittedValue) ? this.token : token as SdkOptional<String>,
-  );
+  GlobalConfigToken _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? edgeConfigId = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? partialToken = sdkOmittedValue,
+          Object? token = sdkOmittedValue}) =>
+      GlobalConfigToken(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
+            ? this.edgeConfigId
+            : edgeConfigId as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        label: identical(label, sdkOmittedValue) ? this.label : label as String,
+        partialToken: identical(partialToken, sdkOmittedValue)
+            ? this.partialToken
+            : partialToken as String,
+        token: identical(token, sdkOmittedValue)
+            ? this.token
+            : token as SdkOptional<String>,
+      );
 
-  factory GlobalConfigToken.fromJson(Map<String, dynamic> json) => GlobalConfigToken(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    edgeConfigId: (json['edgeConfigId'] as String?)!,
-    id: (json['id'] as String?)!,
-    label: (json['label'] as String?)!,
-    partialToken: (json['partialToken'] as String?)!,
-    token: json['token'] != null ? SdkPresent((json['token'] as String?)!) : const SdkOmitted(),
-  );
+  factory GlobalConfigToken.fromJson(Map<String, dynamic> json) =>
+      GlobalConfigToken(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        edgeConfigId: (json['edgeConfigId'] as String?)!,
+        id: (json['id'] as String?)!,
+        label: (json['label'] as String?)!,
+        partialToken: (json['partialToken'] as String?)!,
+        token: json['token'] != null
+            ? SdkPresent((json['token'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'edgeConfigId': edgeConfigId,
-    'id': id,
-    'label': label,
-    'partialToken': partialToken,
-    ...switch (token) {
-      SdkPresent<String>(value: final value) => {'token': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        'edgeConfigId': edgeConfigId,
+        'id': id,
+        'label': label,
+        'partialToken': partialToken,
+        ...switch (token) {
+          SdkPresent<String>(value: final value) => {
+              'token': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

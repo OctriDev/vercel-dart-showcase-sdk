@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 507)
 final class CreateProjectResponseFramework {
-
   final String value;
 
   const CreateProjectResponseFramework._(this.value);
 
-  factory CreateProjectResponseFramework.fromJson(String value) => CreateProjectResponseFramework._(value);
+  factory CreateProjectResponseFramework.fromJson(String value) =>
+      CreateProjectResponseFramework._(value);
 
   static const actixWeb = CreateProjectResponseFramework._('actix-web');
   static const angular = CreateProjectResponseFramework._('angular');
@@ -21,7 +21,8 @@ final class CreateProjectResponseFramework {
   static const brunch = CreateProjectResponseFramework._('brunch');
   static const bun = CreateProjectResponseFramework._('bun');
   static const container = CreateProjectResponseFramework._('container');
-  static const createReactApp = CreateProjectResponseFramework._('create-react-app');
+  static const createReactApp =
+      CreateProjectResponseFramework._('create-react-app');
   static const django = CreateProjectResponseFramework._('django');
   static const docusaurus = CreateProjectResponseFramework._('docusaurus');
   static const docusaurus2 = CreateProjectResponseFramework._('docusaurus-2');
@@ -77,8 +78,10 @@ final class CreateProjectResponseFramework {
   static const svelte = CreateProjectResponseFramework._('svelte');
   static const sveltekit = CreateProjectResponseFramework._('sveltekit');
   static const sveltekit1 = CreateProjectResponseFramework._('sveltekit-1');
-  static const tanstackStart = CreateProjectResponseFramework._('tanstack-start');
-  static const tanstackStartLovable = CreateProjectResponseFramework._('tanstack-start-lovable');
+  static const tanstackStart =
+      CreateProjectResponseFramework._('tanstack-start');
+  static const tanstackStartLovable =
+      CreateProjectResponseFramework._('tanstack-start-lovable');
   static const umijs = CreateProjectResponseFramework._('umijs');
   static const vite = CreateProjectResponseFramework._('vite');
   static const vitepress = CreateProjectResponseFramework._('vitepress');
@@ -89,206 +92,272 @@ final class CreateProjectResponseFramework {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseFramework && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should comment on commits
 final class CreateProjectResponseGitCommentsOnCommit {
-
   final bool value;
 
   const CreateProjectResponseGitCommentsOnCommit._(this.value);
 
-  factory CreateProjectResponseGitCommentsOnCommit.fromJson(bool value) => CreateProjectResponseGitCommentsOnCommit._(value);
+  factory CreateProjectResponseGitCommentsOnCommit.fromJson(bool value) =>
+      CreateProjectResponseGitCommentsOnCommit._(value);
 
   static const false_ = CreateProjectResponseGitCommentsOnCommit._(false);
   static const true_ = CreateProjectResponseGitCommentsOnCommit._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitCommentsOnCommit && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseGitCommentsOnCommit && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should comment on PRs
 final class CreateProjectResponseGitCommentsOnPullRequest {
-
   final bool value;
 
   const CreateProjectResponseGitCommentsOnPullRequest._(this.value);
 
-  factory CreateProjectResponseGitCommentsOnPullRequest.fromJson(bool value) => CreateProjectResponseGitCommentsOnPullRequest._(value);
+  factory CreateProjectResponseGitCommentsOnPullRequest.fromJson(bool value) =>
+      CreateProjectResponseGitCommentsOnPullRequest._(value);
 
   static const false_ = CreateProjectResponseGitCommentsOnPullRequest._(false);
   static const true_ = CreateProjectResponseGitCommentsOnPullRequest._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitCommentsOnPullRequest && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseGitCommentsOnPullRequest &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseGitForkProtection {
-
   final bool value;
 
   const CreateProjectResponseGitForkProtection._(this.value);
 
-  factory CreateProjectResponseGitForkProtection.fromJson(bool value) => CreateProjectResponseGitForkProtection._(value);
+  factory CreateProjectResponseGitForkProtection.fromJson(bool value) =>
+      CreateProjectResponseGitForkProtection._(value);
 
   static const false_ = CreateProjectResponseGitForkProtection._(false);
   static const true_ = CreateProjectResponseGitForkProtection._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitForkProtection && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseGitForkProtection && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseGitLFS {
-
   final bool value;
 
   const CreateProjectResponseGitLFS._(this.value);
 
-  factory CreateProjectResponseGitLFS.fromJson(bool value) => CreateProjectResponseGitLFS._(value);
+  factory CreateProjectResponseGitLFS.fromJson(bool value) =>
+      CreateProjectResponseGitLFS._(value);
 
   static const false_ = CreateProjectResponseGitLFS._(false);
   static const true_ = CreateProjectResponseGitLFS._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitLFS && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseGitLFS && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether consolidated commit status is enabled.
 final class CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled {
-
   final bool value;
 
-  const CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(this.value);
+  const CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(
+      this.value);
 
-  factory CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(bool value) => CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(value);
+  factory CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(
+          bool value) =>
+      CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(value);
 
-  static const false_ = CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(false);
-  static const true_ = CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(true);
+  static const false_ =
+      CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(false);
+  static const true_ =
+      CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to propagate individual deployment failures to the consolidated status.
 final class CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures {
-
   final bool value;
 
-  const CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(this.value);
+  const CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(
+      this.value);
 
-  factory CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures.fromJson(bool value) => CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(value);
+  factory CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures.fromJson(
+          bool value) =>
+      CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
+          ._(value);
 
-  static const false_ = CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(false);
-  static const true_ = CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(true);
+  static const false_ =
+      CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
+          ._(false);
+  static const true_ =
+      CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead
 final class CreateProjectResponseGitProviderOptionsCreateDeployments {
-
   final String value;
 
   const CreateProjectResponseGitProviderOptionsCreateDeployments._(this.value);
 
-  factory CreateProjectResponseGitProviderOptionsCreateDeployments.fromJson(String value) => CreateProjectResponseGitProviderOptionsCreateDeployments._(value);
+  factory CreateProjectResponseGitProviderOptionsCreateDeployments.fromJson(
+          String value) =>
+      CreateProjectResponseGitProviderOptionsCreateDeployments._(value);
 
-  static const disabled = CreateProjectResponseGitProviderOptionsCreateDeployments._('disabled');
-  static const enabled = CreateProjectResponseGitProviderOptionsCreateDeployments._('enabled');
+  static const disabled =
+      CreateProjectResponseGitProviderOptionsCreateDeployments._('disabled');
+  static const enabled =
+      CreateProjectResponseGitProviderOptionsCreateDeployments._('enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitProviderOptionsCreateDeployments && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseGitProviderOptionsCreateDeployments &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`.
 final class CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents {
-
   final bool value;
 
-  const CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(this.value);
+  const CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(
+      this.value);
 
-  factory CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents.fromJson(bool value) => CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(value);
+  factory CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents.fromJson(
+          bool value) =>
+      CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(
+          value);
 
-  static const false_ = CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(false);
-  static const true_ = CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(true);
+  static const false_ =
+      CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(
+          false);
+  static const true_ =
+      CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
 final class CreateProjectResponseGitProviderOptionsGitCommitStatus {
-
   final bool value;
 
   const CreateProjectResponseGitProviderOptionsGitCommitStatus._(this.value);
 
-  factory CreateProjectResponseGitProviderOptionsGitCommitStatus.fromJson(bool value) => CreateProjectResponseGitProviderOptionsGitCommitStatus._(value);
+  factory CreateProjectResponseGitProviderOptionsGitCommitStatus.fromJson(
+          bool value) =>
+      CreateProjectResponseGitProviderOptionsGitCommitStatus._(value);
 
-  static const false_ = CreateProjectResponseGitProviderOptionsGitCommitStatus._(false);
-  static const true_ = CreateProjectResponseGitProviderOptionsGitCommitStatus._(true);
+  static const false_ =
+      CreateProjectResponseGitProviderOptionsGitCommitStatus._(false);
+  static const true_ =
+      CreateProjectResponseGitProviderOptionsGitCommitStatus._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseGitProviderOptionsGitCommitStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseGitProviderOptionsGitCommitStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

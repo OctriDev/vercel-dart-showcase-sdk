@@ -7,279 +7,620 @@ part of 'connect.dart';
 class ConnectConnectorUpdateDataRequestVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Authorization server base URL used for discovery.
   final SdkOptional<String> serverUrl;
+
   /// Authorization server metadata. Values override discovered metadata. Empty known string fields remove their stored overrides.
-  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ServerConfig> serverConfig;
+  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ServerConfig>
+      serverConfig;
+
   /// OAuth client ID.
   final SdkOptional<String> clientId;
+
   /// OAuth client name.
   final SdkOptional<String> clientName;
+
   /// OAuth client secret.
   final SdkOptional<String> clientSecret;
+
   /// OAuth token endpoint authentication method. Common values are client_secret_post, client_secret_basic, none, and private_key_jwt. If omitted, Vercel selects a supported method from serverConfig and otherwise uses client_secret_post.
   final SdkOptional<String> tokenEndpointAuthMethod;
+
   /// OAuth authorization response type. Defaults to code. Other provider-supported values are accepted. An empty string clears the configured type.
   final SdkOptional<String> responseType;
+
   /// Whether user authorization must use PKCE.
   final SdkOptional<bool> pkceRequired;
+
   /// PKCE code challenge method. Supported values are S256 and plain. Vercel prefers S256 when the provider supports it. An empty string clears the configured method.
   final SdkOptional<String> codeChallengeMethod;
+
   /// User authorization grant settings.
-  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0UserAuthorization> userAuthorization;
+  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0UserAuthorization>
+      userAuthorization;
+
   /// Refresh token settings.
-  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0RefreshTokens> refreshTokens;
+  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0RefreshTokens>
+      refreshTokens;
+
   /// Client credentials grant settings.
-  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientCredentials> clientCredentials;
+  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientCredentials>
+      clientCredentials;
+
   /// Allow-list of extra claims to propagate, keyed by source (idToken). Only claims named here and present in that source are exposed.
-  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ForwardedClaims> forwardedClaims;
+  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ForwardedClaims>
+      forwardedClaims;
+
   /// Default audience used when a token request omits one. An empty string clears the default.
   final SdkOptional<String> defaultAudience;
+
   /// Default RFC 8707 resource sent on authorization and token requests when a token request omits one. An empty string clears the default.
   final SdkOptional<String> defaultResource;
+
   /// Default token lifetime in seconds to use when the token response omits expires_in.
   final SdkOptional<double> defaultTokenExpiresIn;
+
   /// Extra query parameters added to authorization URLs.
   final SdkOptional<Map<String, String>> authorizationUrlParams;
+
   /// JWT bearer grant settings.
-  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0JwtBearer> jwtBearer;
+  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0JwtBearer>
+      jwtBearer;
+
   /// `private_key_jwt` client assertion settings.
-  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientAssertion> clientAssertion;
+  final SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientAssertion>
+      clientAssertion;
 
-  const ConnectConnectorUpdateDataRequestVariant0({this.serverUrl = const SdkOmitted(), this.serverConfig = const SdkOmitted(), this.clientId = const SdkOmitted(), this.clientName = const SdkOmitted(), this.clientSecret = const SdkOmitted(), this.tokenEndpointAuthMethod = const SdkOmitted(), this.responseType = const SdkOmitted(), this.pkceRequired = const SdkOmitted(), this.codeChallengeMethod = const SdkOmitted(), this.userAuthorization = const SdkOmitted(), this.refreshTokens = const SdkOmitted(), this.clientCredentials = const SdkOmitted(), this.forwardedClaims = const SdkOmitted(), this.defaultAudience = const SdkOmitted(), this.defaultResource = const SdkOmitted(), this.defaultTokenExpiresIn = const SdkOmitted(), this.authorizationUrlParams = const SdkOmitted(), this.jwtBearer = const SdkOmitted(), this.clientAssertion = const SdkOmitted()});
+  const ConnectConnectorUpdateDataRequestVariant0(
+      {this.serverUrl = const SdkOmitted(),
+      this.serverConfig = const SdkOmitted(),
+      this.clientId = const SdkOmitted(),
+      this.clientName = const SdkOmitted(),
+      this.clientSecret = const SdkOmitted(),
+      this.tokenEndpointAuthMethod = const SdkOmitted(),
+      this.responseType = const SdkOmitted(),
+      this.pkceRequired = const SdkOmitted(),
+      this.codeChallengeMethod = const SdkOmitted(),
+      this.userAuthorization = const SdkOmitted(),
+      this.refreshTokens = const SdkOmitted(),
+      this.clientCredentials = const SdkOmitted(),
+      this.forwardedClaims = const SdkOmitted(),
+      this.defaultAudience = const SdkOmitted(),
+      this.defaultResource = const SdkOmitted(),
+      this.defaultTokenExpiresIn = const SdkOmitted(),
+      this.authorizationUrlParams = const SdkOmitted(),
+      this.jwtBearer = const SdkOmitted(),
+      this.clientAssertion = const SdkOmitted()});
 
-  ConnectConnectorUpdateDataRequestVariant0 Function({SdkOptional<String> serverUrl, SdkOptional<ConnectConnectorUpdateDataRequestVariant0ServerConfig> serverConfig, SdkOptional<String> clientId, SdkOptional<String> clientName, SdkOptional<String> clientSecret, SdkOptional<String> tokenEndpointAuthMethod, SdkOptional<String> responseType, SdkOptional<bool> pkceRequired, SdkOptional<String> codeChallengeMethod, SdkOptional<ConnectConnectorUpdateDataRequestVariant0UserAuthorization> userAuthorization, SdkOptional<ConnectConnectorUpdateDataRequestVariant0RefreshTokens> refreshTokens, SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientCredentials> clientCredentials, SdkOptional<ConnectConnectorUpdateDataRequestVariant0ForwardedClaims> forwardedClaims, SdkOptional<String> defaultAudience, SdkOptional<String> defaultResource, SdkOptional<double> defaultTokenExpiresIn, SdkOptional<Map<String, String>> authorizationUrlParams, SdkOptional<ConnectConnectorUpdateDataRequestVariant0JwtBearer> jwtBearer, SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientAssertion> clientAssertion}) get copyWith => _copyWith;
+  ConnectConnectorUpdateDataRequestVariant0 Function(
+      {SdkOptional<String> serverUrl,
+      SdkOptional<ConnectConnectorUpdateDataRequestVariant0ServerConfig>
+          serverConfig,
+      SdkOptional<String> clientId,
+      SdkOptional<String> clientName,
+      SdkOptional<String> clientSecret,
+      SdkOptional<String> tokenEndpointAuthMethod,
+      SdkOptional<String> responseType,
+      SdkOptional<bool> pkceRequired,
+      SdkOptional<String> codeChallengeMethod,
+      SdkOptional<ConnectConnectorUpdateDataRequestVariant0UserAuthorization>
+          userAuthorization,
+      SdkOptional<ConnectConnectorUpdateDataRequestVariant0RefreshTokens>
+          refreshTokens,
+      SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientCredentials>
+          clientCredentials,
+      SdkOptional<ConnectConnectorUpdateDataRequestVariant0ForwardedClaims>
+          forwardedClaims,
+      SdkOptional<String> defaultAudience,
+      SdkOptional<String> defaultResource,
+      SdkOptional<double> defaultTokenExpiresIn,
+      SdkOptional<Map<String, String>> authorizationUrlParams,
+      SdkOptional<ConnectConnectorUpdateDataRequestVariant0JwtBearer> jwtBearer,
+      SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientAssertion>
+          clientAssertion}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateDataRequestVariant0 _copyWith({Object? serverUrl = sdkOmittedValue, Object? serverConfig = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? clientName = sdkOmittedValue, Object? clientSecret = sdkOmittedValue, Object? tokenEndpointAuthMethod = sdkOmittedValue, Object? responseType = sdkOmittedValue, Object? pkceRequired = sdkOmittedValue, Object? codeChallengeMethod = sdkOmittedValue, Object? userAuthorization = sdkOmittedValue, Object? refreshTokens = sdkOmittedValue, Object? clientCredentials = sdkOmittedValue, Object? forwardedClaims = sdkOmittedValue, Object? defaultAudience = sdkOmittedValue, Object? defaultResource = sdkOmittedValue, Object? defaultTokenExpiresIn = sdkOmittedValue, Object? authorizationUrlParams = sdkOmittedValue, Object? jwtBearer = sdkOmittedValue, Object? clientAssertion = sdkOmittedValue}) => ConnectConnectorUpdateDataRequestVariant0(
-    serverUrl: identical(serverUrl, sdkOmittedValue) ? this.serverUrl : serverUrl as SdkOptional<String>,
-    serverConfig: identical(serverConfig, sdkOmittedValue) ? this.serverConfig : serverConfig as SdkOptional<ConnectConnectorUpdateDataRequestVariant0ServerConfig>,
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-    clientName: identical(clientName, sdkOmittedValue) ? this.clientName : clientName as SdkOptional<String>,
-    clientSecret: identical(clientSecret, sdkOmittedValue) ? this.clientSecret : clientSecret as SdkOptional<String>,
-    tokenEndpointAuthMethod: identical(tokenEndpointAuthMethod, sdkOmittedValue) ? this.tokenEndpointAuthMethod : tokenEndpointAuthMethod as SdkOptional<String>,
-    responseType: identical(responseType, sdkOmittedValue) ? this.responseType : responseType as SdkOptional<String>,
-    pkceRequired: identical(pkceRequired, sdkOmittedValue) ? this.pkceRequired : pkceRequired as SdkOptional<bool>,
-    codeChallengeMethod: identical(codeChallengeMethod, sdkOmittedValue) ? this.codeChallengeMethod : codeChallengeMethod as SdkOptional<String>,
-    userAuthorization: identical(userAuthorization, sdkOmittedValue) ? this.userAuthorization : userAuthorization as SdkOptional<ConnectConnectorUpdateDataRequestVariant0UserAuthorization>,
-    refreshTokens: identical(refreshTokens, sdkOmittedValue) ? this.refreshTokens : refreshTokens as SdkOptional<ConnectConnectorUpdateDataRequestVariant0RefreshTokens>,
-    clientCredentials: identical(clientCredentials, sdkOmittedValue) ? this.clientCredentials : clientCredentials as SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientCredentials>,
-    forwardedClaims: identical(forwardedClaims, sdkOmittedValue) ? this.forwardedClaims : forwardedClaims as SdkOptional<ConnectConnectorUpdateDataRequestVariant0ForwardedClaims>,
-    defaultAudience: identical(defaultAudience, sdkOmittedValue) ? this.defaultAudience : defaultAudience as SdkOptional<String>,
-    defaultResource: identical(defaultResource, sdkOmittedValue) ? this.defaultResource : defaultResource as SdkOptional<String>,
-    defaultTokenExpiresIn: identical(defaultTokenExpiresIn, sdkOmittedValue) ? this.defaultTokenExpiresIn : defaultTokenExpiresIn as SdkOptional<double>,
-    authorizationUrlParams: identical(authorizationUrlParams, sdkOmittedValue) ? this.authorizationUrlParams : authorizationUrlParams as SdkOptional<Map<String, String>>,
-    jwtBearer: identical(jwtBearer, sdkOmittedValue) ? this.jwtBearer : jwtBearer as SdkOptional<ConnectConnectorUpdateDataRequestVariant0JwtBearer>,
-    clientAssertion: identical(clientAssertion, sdkOmittedValue) ? this.clientAssertion : clientAssertion as SdkOptional<ConnectConnectorUpdateDataRequestVariant0ClientAssertion>,
-  );
+  ConnectConnectorUpdateDataRequestVariant0 _copyWith(
+          {Object? serverUrl = sdkOmittedValue,
+          Object? serverConfig = sdkOmittedValue,
+          Object? clientId = sdkOmittedValue,
+          Object? clientName = sdkOmittedValue,
+          Object? clientSecret = sdkOmittedValue,
+          Object? tokenEndpointAuthMethod = sdkOmittedValue,
+          Object? responseType = sdkOmittedValue,
+          Object? pkceRequired = sdkOmittedValue,
+          Object? codeChallengeMethod = sdkOmittedValue,
+          Object? userAuthorization = sdkOmittedValue,
+          Object? refreshTokens = sdkOmittedValue,
+          Object? clientCredentials = sdkOmittedValue,
+          Object? forwardedClaims = sdkOmittedValue,
+          Object? defaultAudience = sdkOmittedValue,
+          Object? defaultResource = sdkOmittedValue,
+          Object? defaultTokenExpiresIn = sdkOmittedValue,
+          Object? authorizationUrlParams = sdkOmittedValue,
+          Object? jwtBearer = sdkOmittedValue,
+          Object? clientAssertion = sdkOmittedValue}) =>
+      ConnectConnectorUpdateDataRequestVariant0(
+        serverUrl: identical(serverUrl, sdkOmittedValue)
+            ? this.serverUrl
+            : serverUrl as SdkOptional<String>,
+        serverConfig: identical(serverConfig, sdkOmittedValue)
+            ? this.serverConfig
+            : serverConfig as SdkOptional<
+                ConnectConnectorUpdateDataRequestVariant0ServerConfig>,
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as SdkOptional<String>,
+        clientName: identical(clientName, sdkOmittedValue)
+            ? this.clientName
+            : clientName as SdkOptional<String>,
+        clientSecret: identical(clientSecret, sdkOmittedValue)
+            ? this.clientSecret
+            : clientSecret as SdkOptional<String>,
+        tokenEndpointAuthMethod:
+            identical(tokenEndpointAuthMethod, sdkOmittedValue)
+                ? this.tokenEndpointAuthMethod
+                : tokenEndpointAuthMethod as SdkOptional<String>,
+        responseType: identical(responseType, sdkOmittedValue)
+            ? this.responseType
+            : responseType as SdkOptional<String>,
+        pkceRequired: identical(pkceRequired, sdkOmittedValue)
+            ? this.pkceRequired
+            : pkceRequired as SdkOptional<bool>,
+        codeChallengeMethod: identical(codeChallengeMethod, sdkOmittedValue)
+            ? this.codeChallengeMethod
+            : codeChallengeMethod as SdkOptional<String>,
+        userAuthorization: identical(userAuthorization, sdkOmittedValue)
+            ? this.userAuthorization
+            : userAuthorization as SdkOptional<
+                ConnectConnectorUpdateDataRequestVariant0UserAuthorization>,
+        refreshTokens: identical(refreshTokens, sdkOmittedValue)
+            ? this.refreshTokens
+            : refreshTokens as SdkOptional<
+                ConnectConnectorUpdateDataRequestVariant0RefreshTokens>,
+        clientCredentials: identical(clientCredentials, sdkOmittedValue)
+            ? this.clientCredentials
+            : clientCredentials as SdkOptional<
+                ConnectConnectorUpdateDataRequestVariant0ClientCredentials>,
+        forwardedClaims: identical(forwardedClaims, sdkOmittedValue)
+            ? this.forwardedClaims
+            : forwardedClaims as SdkOptional<
+                ConnectConnectorUpdateDataRequestVariant0ForwardedClaims>,
+        defaultAudience: identical(defaultAudience, sdkOmittedValue)
+            ? this.defaultAudience
+            : defaultAudience as SdkOptional<String>,
+        defaultResource: identical(defaultResource, sdkOmittedValue)
+            ? this.defaultResource
+            : defaultResource as SdkOptional<String>,
+        defaultTokenExpiresIn: identical(defaultTokenExpiresIn, sdkOmittedValue)
+            ? this.defaultTokenExpiresIn
+            : defaultTokenExpiresIn as SdkOptional<double>,
+        authorizationUrlParams:
+            identical(authorizationUrlParams, sdkOmittedValue)
+                ? this.authorizationUrlParams
+                : authorizationUrlParams as SdkOptional<Map<String, String>>,
+        jwtBearer: identical(jwtBearer, sdkOmittedValue)
+            ? this.jwtBearer
+            : jwtBearer as SdkOptional<
+                ConnectConnectorUpdateDataRequestVariant0JwtBearer>,
+        clientAssertion: identical(clientAssertion, sdkOmittedValue)
+            ? this.clientAssertion
+            : clientAssertion as SdkOptional<
+                ConnectConnectorUpdateDataRequestVariant0ClientAssertion>,
+      );
 
-  factory ConnectConnectorUpdateDataRequestVariant0.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateDataRequestVariant0(
-    serverUrl: json['serverUrl'] != null ? SdkPresent((json['serverUrl'] as String?)!) : const SdkOmitted(),
-    serverConfig: json['serverConfig'] != null ? SdkPresent((json['serverConfig'] != null ? ConnectConnectorUpdateDataRequestVariant0ServerConfig.fromJson(json['serverConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
-    clientName: json['clientName'] != null ? SdkPresent((json['clientName'] as String?)!) : const SdkOmitted(),
-    clientSecret: json['clientSecret'] != null ? SdkPresent((json['clientSecret'] as String?)!) : const SdkOmitted(),
-    tokenEndpointAuthMethod: json['tokenEndpointAuthMethod'] != null ? SdkPresent((json['tokenEndpointAuthMethod'] as String?)!) : const SdkOmitted(),
-    responseType: json['responseType'] != null ? SdkPresent((json['responseType'] as String?)!) : const SdkOmitted(),
-    pkceRequired: json['pkceRequired'] != null ? SdkPresent((json['pkceRequired'] as bool?)!) : const SdkOmitted(),
-    codeChallengeMethod: json['codeChallengeMethod'] != null ? SdkPresent((json['codeChallengeMethod'] as String?)!) : const SdkOmitted(),
-    userAuthorization: json['userAuthorization'] != null ? SdkPresent((json['userAuthorization'] != null ? ConnectConnectorUpdateDataRequestVariant0UserAuthorization.fromJson(json['userAuthorization'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    refreshTokens: json['refreshTokens'] != null ? SdkPresent((json['refreshTokens'] != null ? ConnectConnectorUpdateDataRequestVariant0RefreshTokens.fromJson(json['refreshTokens'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    clientCredentials: json['clientCredentials'] != null ? SdkPresent((json['clientCredentials'] != null ? ConnectConnectorUpdateDataRequestVariant0ClientCredentials.fromJson(json['clientCredentials'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    forwardedClaims: json['forwardedClaims'] != null ? SdkPresent((json['forwardedClaims'] != null ? ConnectConnectorUpdateDataRequestVariant0ForwardedClaims.fromJson(json['forwardedClaims'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    defaultAudience: json['defaultAudience'] != null ? SdkPresent((json['defaultAudience'] as String?)!) : const SdkOmitted(),
-    defaultResource: json['defaultResource'] != null ? SdkPresent((json['defaultResource'] as String?)!) : const SdkOmitted(),
-    defaultTokenExpiresIn: json['defaultTokenExpiresIn'] != null ? SdkPresent(((json['defaultTokenExpiresIn'] as num?)?.toDouble())!) : const SdkOmitted(),
-    authorizationUrlParams: json['authorizationUrlParams'] != null ? SdkPresent((json['authorizationUrlParams'] == null ? null : Map<String, dynamic>.from(json['authorizationUrlParams'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    jwtBearer: json['jwtBearer'] != null ? SdkPresent((json['jwtBearer'] != null ? ConnectConnectorUpdateDataRequestVariant0JwtBearer.fromJson(json['jwtBearer'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    clientAssertion: json['clientAssertion'] != null ? SdkPresent((json['clientAssertion'] != null ? ConnectConnectorUpdateDataRequestVariant0ClientAssertion.fromJson(json['clientAssertion'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorUpdateDataRequestVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectConnectorUpdateDataRequestVariant0(
+        serverUrl: json['serverUrl'] != null
+            ? SdkPresent((json['serverUrl'] as String?)!)
+            : const SdkOmitted(),
+        serverConfig: json['serverConfig'] != null
+            ? SdkPresent((json['serverConfig'] != null
+                ? ConnectConnectorUpdateDataRequestVariant0ServerConfig
+                    .fromJson(json['serverConfig'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        clientId: json['clientId'] != null
+            ? SdkPresent((json['clientId'] as String?)!)
+            : const SdkOmitted(),
+        clientName: json['clientName'] != null
+            ? SdkPresent((json['clientName'] as String?)!)
+            : const SdkOmitted(),
+        clientSecret: json['clientSecret'] != null
+            ? SdkPresent((json['clientSecret'] as String?)!)
+            : const SdkOmitted(),
+        tokenEndpointAuthMethod: json['tokenEndpointAuthMethod'] != null
+            ? SdkPresent((json['tokenEndpointAuthMethod'] as String?)!)
+            : const SdkOmitted(),
+        responseType: json['responseType'] != null
+            ? SdkPresent((json['responseType'] as String?)!)
+            : const SdkOmitted(),
+        pkceRequired: json['pkceRequired'] != null
+            ? SdkPresent((json['pkceRequired'] as bool?)!)
+            : const SdkOmitted(),
+        codeChallengeMethod: json['codeChallengeMethod'] != null
+            ? SdkPresent((json['codeChallengeMethod'] as String?)!)
+            : const SdkOmitted(),
+        userAuthorization: json['userAuthorization'] != null
+            ? SdkPresent((json['userAuthorization'] != null
+                ? ConnectConnectorUpdateDataRequestVariant0UserAuthorization
+                    .fromJson(json['userAuthorization'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        refreshTokens: json['refreshTokens'] != null
+            ? SdkPresent((json['refreshTokens'] != null
+                ? ConnectConnectorUpdateDataRequestVariant0RefreshTokens
+                    .fromJson(json['refreshTokens'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        clientCredentials: json['clientCredentials'] != null
+            ? SdkPresent((json['clientCredentials'] != null
+                ? ConnectConnectorUpdateDataRequestVariant0ClientCredentials
+                    .fromJson(json['clientCredentials'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        forwardedClaims: json['forwardedClaims'] != null
+            ? SdkPresent((json['forwardedClaims'] != null
+                ? ConnectConnectorUpdateDataRequestVariant0ForwardedClaims
+                    .fromJson(json['forwardedClaims'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        defaultAudience: json['defaultAudience'] != null
+            ? SdkPresent((json['defaultAudience'] as String?)!)
+            : const SdkOmitted(),
+        defaultResource: json['defaultResource'] != null
+            ? SdkPresent((json['defaultResource'] as String?)!)
+            : const SdkOmitted(),
+        defaultTokenExpiresIn: json['defaultTokenExpiresIn'] != null
+            ? SdkPresent(((json['defaultTokenExpiresIn'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        authorizationUrlParams: json['authorizationUrlParams'] != null
+            ? SdkPresent((json['authorizationUrlParams'] == null
+                ? null
+                : Map<String, dynamic>.from(
+                        json['authorizationUrlParams'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        jwtBearer: json['jwtBearer'] != null
+            ? SdkPresent((json['jwtBearer'] != null
+                ? ConnectConnectorUpdateDataRequestVariant0JwtBearer.fromJson(
+                    json['jwtBearer'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        clientAssertion: json['clientAssertion'] != null
+            ? SdkPresent((json['clientAssertion'] != null
+                ? ConnectConnectorUpdateDataRequestVariant0ClientAssertion
+                    .fromJson(json['clientAssertion'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (serverUrl) {
-      SdkPresent<String>(value: final value) => {'serverUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (serverConfig) {
-      SdkPresent<ConnectConnectorUpdateDataRequestVariant0ServerConfig>(value: final value) => {'serverConfig': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'clientId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (clientName) {
-      SdkPresent<String>(value: final value) => {'clientName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (clientSecret) {
-      SdkPresent<String>(value: final value) => {'clientSecret': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (tokenEndpointAuthMethod) {
-      SdkPresent<String>(value: final value) => {'tokenEndpointAuthMethod': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (responseType) {
-      SdkPresent<String>(value: final value) => {'responseType': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pkceRequired) {
-      SdkPresent<bool>(value: final value) => {'pkceRequired': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (codeChallengeMethod) {
-      SdkPresent<String>(value: final value) => {'codeChallengeMethod': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (userAuthorization) {
-      SdkPresent<ConnectConnectorUpdateDataRequestVariant0UserAuthorization>(value: final value) => {'userAuthorization': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (refreshTokens) {
-      SdkPresent<ConnectConnectorUpdateDataRequestVariant0RefreshTokens>(value: final value) => {'refreshTokens': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (clientCredentials) {
-      SdkPresent<ConnectConnectorUpdateDataRequestVariant0ClientCredentials>(value: final value) => {'clientCredentials': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (forwardedClaims) {
-      SdkPresent<ConnectConnectorUpdateDataRequestVariant0ForwardedClaims>(value: final value) => {'forwardedClaims': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultAudience) {
-      SdkPresent<String>(value: final value) => {'defaultAudience': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultResource) {
-      SdkPresent<String>(value: final value) => {'defaultResource': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultTokenExpiresIn) {
-      SdkPresent<double>(value: final value) => {'defaultTokenExpiresIn': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (authorizationUrlParams) {
-      SdkPresent<Map<String, String>>(value: final value) => {'authorizationUrlParams': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (jwtBearer) {
-      SdkPresent<ConnectConnectorUpdateDataRequestVariant0JwtBearer>(value: final value) => {'jwtBearer': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (clientAssertion) {
-      SdkPresent<ConnectConnectorUpdateDataRequestVariant0ClientAssertion>(value: final value) => {'clientAssertion': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (serverUrl) {
+          SdkPresent<String>(value: final value) => {
+              'serverUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (serverConfig) {
+          SdkPresent<ConnectConnectorUpdateDataRequestVariant0ServerConfig>(
+            value: final value
+          ) =>
+            {
+              'serverConfig': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'clientId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (clientName) {
+          SdkPresent<String>(value: final value) => {
+              'clientName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (clientSecret) {
+          SdkPresent<String>(value: final value) => {
+              'clientSecret': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (tokenEndpointAuthMethod) {
+          SdkPresent<String>(value: final value) => {
+              'tokenEndpointAuthMethod': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (responseType) {
+          SdkPresent<String>(value: final value) => {
+              'responseType': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pkceRequired) {
+          SdkPresent<bool>(value: final value) => {
+              'pkceRequired': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (codeChallengeMethod) {
+          SdkPresent<String>(value: final value) => {
+              'codeChallengeMethod': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (userAuthorization) {
+          SdkPresent<
+                ConnectConnectorUpdateDataRequestVariant0UserAuthorization>(
+            value: final value
+          ) =>
+            {
+              'userAuthorization': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (refreshTokens) {
+          SdkPresent<ConnectConnectorUpdateDataRequestVariant0RefreshTokens>(
+            value: final value
+          ) =>
+            {
+              'refreshTokens': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (clientCredentials) {
+          SdkPresent<
+                ConnectConnectorUpdateDataRequestVariant0ClientCredentials>(
+            value: final value
+          ) =>
+            {
+              'clientCredentials': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (forwardedClaims) {
+          SdkPresent<ConnectConnectorUpdateDataRequestVariant0ForwardedClaims>(
+            value: final value
+          ) =>
+            {
+              'forwardedClaims': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultAudience) {
+          SdkPresent<String>(value: final value) => {
+              'defaultAudience': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultResource) {
+          SdkPresent<String>(value: final value) => {
+              'defaultResource': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultTokenExpiresIn) {
+          SdkPresent<double>(value: final value) => {
+              'defaultTokenExpiresIn': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (authorizationUrlParams) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'authorizationUrlParams': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (jwtBearer) {
+          SdkPresent<ConnectConnectorUpdateDataRequestVariant0JwtBearer>(
+            value: final value
+          ) =>
+            {
+              'jwtBearer': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (clientAssertion) {
+          SdkPresent<ConnectConnectorUpdateDataRequestVariant0ClientAssertion>(
+            value: final value
+          ) =>
+            {
+              'clientAssertion': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ConnectConnectorUpdateDataRequestVariant1ToAddItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// API key value.
   final String value;
+
   /// Optional scope associated with the API key value.
   final SdkOptional<String> scope;
+
   /// The timestamp when the API key value expires in milliseconds.
   final SdkOptional<int> expiresAt;
 
-  const ConnectConnectorUpdateDataRequestVariant1ToAddItem({required this.value, this.scope = const SdkOmitted(), this.expiresAt = const SdkOmitted()});
+  const ConnectConnectorUpdateDataRequestVariant1ToAddItem(
+      {required this.value,
+      this.scope = const SdkOmitted(),
+      this.expiresAt = const SdkOmitted()});
 
-  ConnectConnectorUpdateDataRequestVariant1ToAddItem Function({String value, SdkOptional<String> scope, SdkOptional<int> expiresAt}) get copyWith => _copyWith;
+  ConnectConnectorUpdateDataRequestVariant1ToAddItem Function(
+      {String value,
+      SdkOptional<String> scope,
+      SdkOptional<int> expiresAt}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateDataRequestVariant1ToAddItem _copyWith({Object? value = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? expiresAt = sdkOmittedValue}) => ConnectConnectorUpdateDataRequestVariant1ToAddItem(
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<String>,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<int>,
-  );
+  ConnectConnectorUpdateDataRequestVariant1ToAddItem _copyWith(
+          {Object? value = sdkOmittedValue,
+          Object? scope = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue}) =>
+      ConnectConnectorUpdateDataRequestVariant1ToAddItem(
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as SdkOptional<String>,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as SdkOptional<int>,
+      );
 
-  factory ConnectConnectorUpdateDataRequestVariant1ToAddItem.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateDataRequestVariant1ToAddItem(
-    value: (json['value'] as String?)!,
-    scope: json['scope'] != null ? SdkPresent((json['scope'] as String?)!) : const SdkOmitted(),
-    expiresAt: json['expiresAt'] != null ? SdkPresent(((json['expiresAt'] as num?)?.toInt())!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorUpdateDataRequestVariant1ToAddItem.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectConnectorUpdateDataRequestVariant1ToAddItem(
+        value: (json['value'] as String?)!,
+        scope: json['scope'] != null
+            ? SdkPresent((json['scope'] as String?)!)
+            : const SdkOmitted(),
+        expiresAt: json['expiresAt'] != null
+            ? SdkPresent(((json['expiresAt'] as num?)?.toInt())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'value': value,
-    ...switch (scope) {
-      SdkPresent<String>(value: final value) => {'scope': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiresAt) {
-      SdkPresent<int>(value: final value) => {'expiresAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'value': value,
+        ...switch (scope) {
+          SdkPresent<String>(value: final value) => {
+              'scope': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiresAt) {
+          SdkPresent<int>(value: final value) => {
+              'expiresAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt();
-  factory ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt.fromJson(Object? json) {
-    if (json is String) { return ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtString(json); }
-    if (json is num) { return ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtInt(json.toInt()); }
-    throw FormatException("No variant matched for ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt");
+  factory ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt.fromJson(
+      Object? json) {
+    if (json is String) {
+      return ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtString(
+          json);
+    }
+    if (json is num) {
+      return ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtInt(
+          json.toInt());
+    }
+    throw FormatException(
+        "No variant matched for ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt");
   }
   Object? toJson();
 }
 
-final class ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtInt extends ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt {
+final class ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtInt
+    extends ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt {
   final int value;
-  const ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtInt(this.value);
-  @override Object? toJson() => value;
+  const ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtInt(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtString extends ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt {
+final class ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtString
+    extends ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAt {
   final String value;
-  const ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtString(this.value);
-  @override Object? toJson() => value;
+  const ConnectConnectorUpdateDataRequestVariant1ToUpdateItemExpiresAtString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 class ConnectConnectorUpdateDataRequestVariant1ToUpdateItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Stored API key value ID.
   final String id;
+
   /// Replacement API key value. Use null to keep the stored value.
   final SdkOptional<String> value;
+
   /// Replacement scope. Use null to remove the scope.
   final SdkOptional<String> scope;
+
   /// The timestamp when the API key value expires in milliseconds.
   final SdkOptional<dynamic> expiresAt;
 
-  const ConnectConnectorUpdateDataRequestVariant1ToUpdateItem({required this.id, this.value = const SdkOmitted(), this.scope = const SdkOmitted(), this.expiresAt = const SdkOmitted()});
+  const ConnectConnectorUpdateDataRequestVariant1ToUpdateItem(
+      {required this.id,
+      this.value = const SdkOmitted(),
+      this.scope = const SdkOmitted(),
+      this.expiresAt = const SdkOmitted()});
 
-  ConnectConnectorUpdateDataRequestVariant1ToUpdateItem Function({String id, SdkOptional<String> value, SdkOptional<String> scope, SdkOptional<dynamic> expiresAt}) get copyWith => _copyWith;
+  ConnectConnectorUpdateDataRequestVariant1ToUpdateItem Function(
+      {String id,
+      SdkOptional<String> value,
+      SdkOptional<String> scope,
+      SdkOptional<dynamic> expiresAt}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateDataRequestVariant1ToUpdateItem _copyWith({Object? id = sdkOmittedValue, Object? value = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? expiresAt = sdkOmittedValue}) => ConnectConnectorUpdateDataRequestVariant1ToUpdateItem(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<String>,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<dynamic>,
-  );
+  ConnectConnectorUpdateDataRequestVariant1ToUpdateItem _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? scope = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue}) =>
+      ConnectConnectorUpdateDataRequestVariant1ToUpdateItem(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as SdkOptional<String>,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as SdkOptional<dynamic>,
+      );
 
-  factory ConnectConnectorUpdateDataRequestVariant1ToUpdateItem.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateDataRequestVariant1ToUpdateItem(
-    id: (json['id'] as String?)!,
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-    scope: json['scope'] != null ? SdkPresent((json['scope'] as String?)!) : const SdkOmitted(),
-    expiresAt: json['expiresAt'] != null ? SdkPresent((json['expiresAt'])!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorUpdateDataRequestVariant1ToUpdateItem.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectConnectorUpdateDataRequestVariant1ToUpdateItem(
+        id: (json['id'] as String?)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+        scope: json['scope'] != null
+            ? SdkPresent((json['scope'] as String?)!)
+            : const SdkOmitted(),
+        expiresAt: json['expiresAt'] != null
+            ? SdkPresent((json['expiresAt'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scope) {
-      SdkPresent<String>(value: final value) => {'scope': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiresAt) {
-      SdkPresent<dynamic>(value: final value) => {'expiresAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scope) {
+          SdkPresent<String>(value: final value) => {
+              'scope': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiresAt) {
+          SdkPresent<dynamic>(value: final value) => {
+              'expiresAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -8,173 +8,332 @@ part of 'user.dart';
 class AuthUserLimited {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// SHA1 hash of the avatar for the User account. Can be used in conjuction with the ... endpoint to retrieve the avatar image.
   final String? avatar;
+
   /// The user's default team.
   final String? defaultTeamId;
+
   /// Email address associated with the User account.
   final String email;
+
   /// The User's unique identifier.
   final String id;
+
   /// Indicates whether the user is managed by an enterprise.
   final SdkOptional<AuthUserLimitedIsEnterpriseManaged> isEnterpriseManaged;
+
   /// Property indicating that this User data contains only limited information, due to the authentication token missing privileges to read the full User data. Re-login with email, GitHub, GitLab or Bitbucket in order to upgrade the authentication token with the necessary privileges.
   final AuthUserLimitedLimited limited;
+
   /// Name associated with the User account, or `null` if none has been provided.
   final String? name;
+
   /// Whether the Enterprise Managed User joined the current team through the Update Account flow and should see its welcome experience.
-  final SdkOptional<AuthUserLimitedShouldShowEnterpriseManagedWelcome> shouldShowEnterpriseManagedWelcome;
+  final SdkOptional<AuthUserLimitedShouldShowEnterpriseManagedWelcome>
+      shouldShowEnterpriseManagedWelcome;
+
   /// Unique username associated with the User account.
   final String username;
 
-  const AuthUserLimited({required this.avatar, required this.defaultTeamId, required this.email, required this.id, this.isEnterpriseManaged = const SdkOmitted(), required this.limited, required this.name, this.shouldShowEnterpriseManagedWelcome = const SdkOmitted(), required this.username});
+  const AuthUserLimited(
+      {required this.avatar,
+      required this.defaultTeamId,
+      required this.email,
+      required this.id,
+      this.isEnterpriseManaged = const SdkOmitted(),
+      required this.limited,
+      required this.name,
+      this.shouldShowEnterpriseManagedWelcome = const SdkOmitted(),
+      required this.username});
 
-  AuthUserLimited Function({String? avatar, String? defaultTeamId, String email, String id, SdkOptional<AuthUserLimitedIsEnterpriseManaged> isEnterpriseManaged, AuthUserLimitedLimited limited, String? name, SdkOptional<AuthUserLimitedShouldShowEnterpriseManagedWelcome> shouldShowEnterpriseManagedWelcome, String username}) get copyWith => _copyWith;
+  AuthUserLimited Function(
+      {String? avatar,
+      String? defaultTeamId,
+      String email,
+      String id,
+      SdkOptional<AuthUserLimitedIsEnterpriseManaged> isEnterpriseManaged,
+      AuthUserLimitedLimited limited,
+      String? name,
+      SdkOptional<AuthUserLimitedShouldShowEnterpriseManagedWelcome>
+          shouldShowEnterpriseManagedWelcome,
+      String username}) get copyWith => _copyWith;
 
-  AuthUserLimited _copyWith({Object? avatar = sdkOmittedValue, Object? defaultTeamId = sdkOmittedValue, Object? email = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isEnterpriseManaged = sdkOmittedValue, Object? limited = sdkOmittedValue, Object? name = sdkOmittedValue, Object? shouldShowEnterpriseManagedWelcome = sdkOmittedValue, Object? username = sdkOmittedValue}) => AuthUserLimited(
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as String?,
-    defaultTeamId: identical(defaultTeamId, sdkOmittedValue) ? this.defaultTeamId : defaultTeamId as String?,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isEnterpriseManaged: identical(isEnterpriseManaged, sdkOmittedValue) ? this.isEnterpriseManaged : isEnterpriseManaged as SdkOptional<AuthUserLimitedIsEnterpriseManaged>,
-    limited: identical(limited, sdkOmittedValue) ? this.limited : limited as AuthUserLimitedLimited,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String?,
-    shouldShowEnterpriseManagedWelcome: identical(shouldShowEnterpriseManagedWelcome, sdkOmittedValue) ? this.shouldShowEnterpriseManagedWelcome : shouldShowEnterpriseManagedWelcome as SdkOptional<AuthUserLimitedShouldShowEnterpriseManagedWelcome>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  AuthUserLimited _copyWith(
+          {Object? avatar = sdkOmittedValue,
+          Object? defaultTeamId = sdkOmittedValue,
+          Object? email = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isEnterpriseManaged = sdkOmittedValue,
+          Object? limited = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? shouldShowEnterpriseManagedWelcome = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      AuthUserLimited(
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as String?,
+        defaultTeamId: identical(defaultTeamId, sdkOmittedValue)
+            ? this.defaultTeamId
+            : defaultTeamId as String?,
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isEnterpriseManaged: identical(isEnterpriseManaged, sdkOmittedValue)
+            ? this.isEnterpriseManaged
+            : isEnterpriseManaged
+                as SdkOptional<AuthUserLimitedIsEnterpriseManaged>,
+        limited: identical(limited, sdkOmittedValue)
+            ? this.limited
+            : limited as AuthUserLimitedLimited,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String?,
+        shouldShowEnterpriseManagedWelcome:
+            identical(shouldShowEnterpriseManagedWelcome, sdkOmittedValue)
+                ? this.shouldShowEnterpriseManagedWelcome
+                : shouldShowEnterpriseManagedWelcome as SdkOptional<
+                    AuthUserLimitedShouldShowEnterpriseManagedWelcome>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory AuthUserLimited.fromJson(Map<String, dynamic> json) => AuthUserLimited(
-    avatar: json.containsKey('avatar') ? json['avatar'] as String? : throw ArgumentError.value(null, 'avatar', 'Required property is missing'),
-    defaultTeamId: json.containsKey('defaultTeamId') ? json['defaultTeamId'] as String? : throw ArgumentError.value(null, 'defaultTeamId', 'Required property is missing'),
-    email: (json['email'] as String?)!,
-    id: (json['id'] as String?)!,
-    isEnterpriseManaged: json['isEnterpriseManaged'] != null ? SdkPresent((json['isEnterpriseManaged'] != null ? AuthUserLimitedIsEnterpriseManaged.fromJson(json['isEnterpriseManaged'] as bool) : null)!) : const SdkOmitted(),
-    limited: (json['limited'] != null ? AuthUserLimitedLimited.fromJson(json['limited'] as bool) : null)!,
-    name: json.containsKey('name') ? json['name'] as String? : throw ArgumentError.value(null, 'name', 'Required property is missing'),
-    shouldShowEnterpriseManagedWelcome: json['shouldShowEnterpriseManagedWelcome'] != null ? SdkPresent((json['shouldShowEnterpriseManagedWelcome'] != null ? AuthUserLimitedShouldShowEnterpriseManagedWelcome.fromJson(json['shouldShowEnterpriseManagedWelcome'] as bool) : null)!) : const SdkOmitted(),
-    username: (json['username'] as String?)!,
-  );
+  factory AuthUserLimited.fromJson(Map<String, dynamic> json) =>
+      AuthUserLimited(
+        avatar: json.containsKey('avatar')
+            ? json['avatar'] as String?
+            : throw ArgumentError.value(
+                null, 'avatar', 'Required property is missing'),
+        defaultTeamId: json.containsKey('defaultTeamId')
+            ? json['defaultTeamId'] as String?
+            : throw ArgumentError.value(
+                null, 'defaultTeamId', 'Required property is missing'),
+        email: (json['email'] as String?)!,
+        id: (json['id'] as String?)!,
+        isEnterpriseManaged: json['isEnterpriseManaged'] != null
+            ? SdkPresent((json['isEnterpriseManaged'] != null
+                ? AuthUserLimitedIsEnterpriseManaged.fromJson(
+                    json['isEnterpriseManaged'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        limited: (json['limited'] != null
+            ? AuthUserLimitedLimited.fromJson(json['limited'] as bool)
+            : null)!,
+        name: json.containsKey('name')
+            ? json['name'] as String?
+            : throw ArgumentError.value(
+                null, 'name', 'Required property is missing'),
+        shouldShowEnterpriseManagedWelcome:
+            json['shouldShowEnterpriseManagedWelcome'] != null
+                ? SdkPresent((json['shouldShowEnterpriseManagedWelcome'] != null
+                    ? AuthUserLimitedShouldShowEnterpriseManagedWelcome
+                        .fromJson(
+                            json['shouldShowEnterpriseManagedWelcome'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'avatar': avatar,
-    'defaultTeamId': defaultTeamId,
-    'email': email,
-    'id': id,
-    ...switch (isEnterpriseManaged) {
-      SdkPresent<AuthUserLimitedIsEnterpriseManaged>(value: final value) => {'isEnterpriseManaged': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'limited': limited.toJson(),
-    'name': name,
-    ...switch (shouldShowEnterpriseManagedWelcome) {
-      SdkPresent<AuthUserLimitedShouldShowEnterpriseManagedWelcome>(value: final value) => {'shouldShowEnterpriseManagedWelcome': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'username': username,
-  };
+        'avatar': avatar,
+        'defaultTeamId': defaultTeamId,
+        'email': email,
+        'id': id,
+        ...switch (isEnterpriseManaged) {
+          SdkPresent<AuthUserLimitedIsEnterpriseManaged>(value: final value) =>
+            {
+              'isEnterpriseManaged': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'limited': limited.toJson(),
+        'name': name,
+        ...switch (shouldShowEnterpriseManagedWelcome) {
+          SdkPresent<AuthUserLimitedShouldShowEnterpriseManagedWelcome>(
+            value: final value
+          ) =>
+            {
+              'shouldShowEnterpriseManagedWelcome': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'username': username,
+      };
 }
 
 /// Optional object value serialized in the `next` wire field.
 class DeploymentCheckUpdatedPayloadNext {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `targets` wire field.
   final List<String> targets;
 
   const DeploymentCheckUpdatedPayloadNext({required this.targets});
 
-  DeploymentCheckUpdatedPayloadNext Function({List<String> targets}) get copyWith => _copyWith;
+  DeploymentCheckUpdatedPayloadNext Function({List<String> targets})
+      get copyWith => _copyWith;
 
-  DeploymentCheckUpdatedPayloadNext _copyWith({Object? targets = sdkOmittedValue}) => DeploymentCheckUpdatedPayloadNext(
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
-  );
+  DeploymentCheckUpdatedPayloadNext _copyWith(
+          {Object? targets = sdkOmittedValue}) =>
+      DeploymentCheckUpdatedPayloadNext(
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as List<String>,
+      );
 
-  factory DeploymentCheckUpdatedPayloadNext.fromJson(Map<String, dynamic> json) => DeploymentCheckUpdatedPayloadNext(
-    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory DeploymentCheckUpdatedPayloadNext.fromJson(
+          Map<String, dynamic> json) =>
+      DeploymentCheckUpdatedPayloadNext(
+        targets:
+            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'targets': targets,
-  };
+        'targets': targets,
+      };
 }
 
 /// Optional object value serialized in the `previous` wire field.
 class DeploymentCheckUpdatedPayloadPrevious {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `targets` wire field.
   final List<String> targets;
 
   const DeploymentCheckUpdatedPayloadPrevious({required this.targets});
 
-  DeploymentCheckUpdatedPayloadPrevious Function({List<String> targets}) get copyWith => _copyWith;
+  DeploymentCheckUpdatedPayloadPrevious Function({List<String> targets})
+      get copyWith => _copyWith;
 
-  DeploymentCheckUpdatedPayloadPrevious _copyWith({Object? targets = sdkOmittedValue}) => DeploymentCheckUpdatedPayloadPrevious(
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
-  );
+  DeploymentCheckUpdatedPayloadPrevious _copyWith(
+          {Object? targets = sdkOmittedValue}) =>
+      DeploymentCheckUpdatedPayloadPrevious(
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as List<String>,
+      );
 
-  factory DeploymentCheckUpdatedPayloadPrevious.fromJson(Map<String, dynamic> json) => DeploymentCheckUpdatedPayloadPrevious(
-    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory DeploymentCheckUpdatedPayloadPrevious.fromJson(
+          Map<String, dynamic> json) =>
+      DeploymentCheckUpdatedPayloadPrevious(
+        targets:
+            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'targets': targets,
-  };
+        'targets': targets,
+      };
 }
 
 /// The payload of the event, if requested.
 class DeploymentCheckUpdatedPayload {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `checkId` wire field.
   final String checkId;
+
   /// Required `string` value serialized in the `checkName` wire field.
   final String checkName;
+
   /// Optional object value serialized in the `next` wire field.
   final SdkOptional<DeploymentCheckUpdatedPayloadNext> next;
+
   /// Optional object value serialized in the `previous` wire field.
   final SdkOptional<DeploymentCheckUpdatedPayloadPrevious> previous;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const DeploymentCheckUpdatedPayload({required this.checkId, required this.checkName, this.next = const SdkOmitted(), this.previous = const SdkOmitted(), required this.projectId, required this.projectName});
+  const DeploymentCheckUpdatedPayload(
+      {required this.checkId,
+      required this.checkName,
+      this.next = const SdkOmitted(),
+      this.previous = const SdkOmitted(),
+      required this.projectId,
+      required this.projectName});
 
-  DeploymentCheckUpdatedPayload Function({String checkId, String checkName, SdkOptional<DeploymentCheckUpdatedPayloadNext> next, SdkOptional<DeploymentCheckUpdatedPayloadPrevious> previous, String projectId, String projectName}) get copyWith => _copyWith;
+  DeploymentCheckUpdatedPayload Function(
+      {String checkId,
+      String checkName,
+      SdkOptional<DeploymentCheckUpdatedPayloadNext> next,
+      SdkOptional<DeploymentCheckUpdatedPayloadPrevious> previous,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  DeploymentCheckUpdatedPayload _copyWith({Object? checkId = sdkOmittedValue, Object? checkName = sdkOmittedValue, Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => DeploymentCheckUpdatedPayload(
-    checkId: identical(checkId, sdkOmittedValue) ? this.checkId : checkId as String,
-    checkName: identical(checkName, sdkOmittedValue) ? this.checkName : checkName as String,
-    next: identical(next, sdkOmittedValue) ? this.next : next as SdkOptional<DeploymentCheckUpdatedPayloadNext>,
-    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as SdkOptional<DeploymentCheckUpdatedPayloadPrevious>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  DeploymentCheckUpdatedPayload _copyWith(
+          {Object? checkId = sdkOmittedValue,
+          Object? checkName = sdkOmittedValue,
+          Object? next = sdkOmittedValue,
+          Object? previous = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      DeploymentCheckUpdatedPayload(
+        checkId: identical(checkId, sdkOmittedValue)
+            ? this.checkId
+            : checkId as String,
+        checkName: identical(checkName, sdkOmittedValue)
+            ? this.checkName
+            : checkName as String,
+        next: identical(next, sdkOmittedValue)
+            ? this.next
+            : next as SdkOptional<DeploymentCheckUpdatedPayloadNext>,
+        previous: identical(previous, sdkOmittedValue)
+            ? this.previous
+            : previous as SdkOptional<DeploymentCheckUpdatedPayloadPrevious>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory DeploymentCheckUpdatedPayload.fromJson(Map<String, dynamic> json) => DeploymentCheckUpdatedPayload(
-    checkId: (json['checkId'] as String?)!,
-    checkName: (json['checkName'] as String?)!,
-    next: json['next'] != null ? SdkPresent((json['next'] != null ? DeploymentCheckUpdatedPayloadNext.fromJson(json['next'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    previous: json['previous'] != null ? SdkPresent((json['previous'] != null ? DeploymentCheckUpdatedPayloadPrevious.fromJson(json['previous'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  );
+  factory DeploymentCheckUpdatedPayload.fromJson(Map<String, dynamic> json) =>
+      DeploymentCheckUpdatedPayload(
+        checkId: (json['checkId'] as String?)!,
+        checkName: (json['checkName'] as String?)!,
+        next: json['next'] != null
+            ? SdkPresent((json['next'] != null
+                ? DeploymentCheckUpdatedPayloadNext.fromJson(
+                    json['next'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        previous: json['previous'] != null
+            ? SdkPresent((json['previous'] != null
+                ? DeploymentCheckUpdatedPayloadPrevious.fromJson(
+                    json['previous'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'checkId': checkId,
-    'checkName': checkName,
-    ...switch (next) {
-      SdkPresent<DeploymentCheckUpdatedPayloadNext>(value: final value) => {'next': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (previous) {
-      SdkPresent<DeploymentCheckUpdatedPayloadPrevious>(value: final value) => {'previous': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'checkId': checkId,
+        'checkName': checkName,
+        ...switch (next) {
+          SdkPresent<DeploymentCheckUpdatedPayloadNext>(value: final value) => {
+              'next': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (previous) {
+          SdkPresent<DeploymentCheckUpdatedPayloadPrevious>(
+            value: final value
+          ) =>
+            {
+              'previous': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }
 
 sealed class GetAuthUserResponseUser {
@@ -183,11 +342,27 @@ sealed class GetAuthUserResponseUser {
   const GetAuthUserResponseUser();
   factory GetAuthUserResponseUser.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = AuthUser.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetAuthUserResponseUserAuthUser(value); } } catch (_) {}
-      try { final value = AuthUserLimited.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetAuthUserResponseUserAuthUserLimited(value); } } catch (_) {}
+      try {
+        final value = AuthUser.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetAuthUserResponseUserAuthUser(value);
+        }
+      } catch (_) {}
+      try {
+        final value = AuthUserLimited.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetAuthUserResponseUserAuthUserLimited(value);
+        }
+      } catch (_) {}
     }
-    try { return GetAuthUserResponseUserAuthUser(AuthUser.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetAuthUserResponseUserAuthUserLimited(AuthUserLimited.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return GetAuthUserResponseUserAuthUser(
+          AuthUser.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetAuthUserResponseUserAuthUserLimited(
+          AuthUserLimited.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for GetAuthUserResponseUser");
   }
   Object? toJson();
@@ -196,90 +371,155 @@ sealed class GetAuthUserResponseUser {
 final class GetAuthUserResponseUserAuthUser extends GetAuthUserResponseUser {
   final AuthUser value;
   const GetAuthUserResponseUserAuthUser(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetAuthUserResponseUserAuthUserLimited extends GetAuthUserResponseUser {
+final class GetAuthUserResponseUserAuthUserLimited
+    extends GetAuthUserResponseUser {
   final AuthUserLimited value;
   const GetAuthUserResponseUserAuthUserLimited(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// A user-facing event type.
 class ListEventType {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Categories that group this event type with related event types.
   final List<ListEventTypeCategoriesItem> categories;
+
   /// Present only when this event type is deprecated.
   final SdkOptional<ListEventTypeDeprecated> deprecated;
+
   /// Description of the event, visible to users in the Activity dashboard and docs.
   final String description;
+
   /// The name of the event type.
   final ListEventTypeName name;
+
   /// Event type names that supersede this deprecated event type.
   final SdkOptional<List<ListEventTypeReplacedByItem>> replacedBy;
 
-  const ListEventType({required this.categories, this.deprecated = const SdkOmitted(), required this.description, required this.name, this.replacedBy = const SdkOmitted()});
+  const ListEventType(
+      {required this.categories,
+      this.deprecated = const SdkOmitted(),
+      required this.description,
+      required this.name,
+      this.replacedBy = const SdkOmitted()});
 
-  ListEventType Function({List<ListEventTypeCategoriesItem> categories, SdkOptional<ListEventTypeDeprecated> deprecated, String description, ListEventTypeName name, SdkOptional<List<ListEventTypeReplacedByItem>> replacedBy}) get copyWith => _copyWith;
+  ListEventType Function(
+          {List<ListEventTypeCategoriesItem> categories,
+          SdkOptional<ListEventTypeDeprecated> deprecated,
+          String description,
+          ListEventTypeName name,
+          SdkOptional<List<ListEventTypeReplacedByItem>> replacedBy})
+      get copyWith => _copyWith;
 
-  ListEventType _copyWith({Object? categories = sdkOmittedValue, Object? deprecated = sdkOmittedValue, Object? description = sdkOmittedValue, Object? name = sdkOmittedValue, Object? replacedBy = sdkOmittedValue}) => ListEventType(
-    categories: identical(categories, sdkOmittedValue) ? this.categories : categories as List<ListEventTypeCategoriesItem>,
-    deprecated: identical(deprecated, sdkOmittedValue) ? this.deprecated : deprecated as SdkOptional<ListEventTypeDeprecated>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as ListEventTypeName,
-    replacedBy: identical(replacedBy, sdkOmittedValue) ? this.replacedBy : replacedBy as SdkOptional<List<ListEventTypeReplacedByItem>>,
-  );
+  ListEventType _copyWith(
+          {Object? categories = sdkOmittedValue,
+          Object? deprecated = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? replacedBy = sdkOmittedValue}) =>
+      ListEventType(
+        categories: identical(categories, sdkOmittedValue)
+            ? this.categories
+            : categories as List<ListEventTypeCategoriesItem>,
+        deprecated: identical(deprecated, sdkOmittedValue)
+            ? this.deprecated
+            : deprecated as SdkOptional<ListEventTypeDeprecated>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as ListEventTypeName,
+        replacedBy: identical(replacedBy, sdkOmittedValue)
+            ? this.replacedBy
+            : replacedBy as SdkOptional<List<ListEventTypeReplacedByItem>>,
+      );
 
   factory ListEventType.fromJson(Map<String, dynamic> json) => ListEventType(
-    categories: ((json['categories'] as List?)?.map((e) => ListEventTypeCategoriesItem.fromJson(e as String)).toList())!,
-    deprecated: json['deprecated'] != null ? SdkPresent((json['deprecated'] != null ? ListEventTypeDeprecated.fromJson(json['deprecated'] as bool) : null)!) : const SdkOmitted(),
-    description: (json['description'] as String?)!,
-    name: (json['name'] != null ? ListEventTypeName.fromJson(json['name'] as String) : null)!,
-    replacedBy: json['replacedBy'] != null ? SdkPresent(((json['replacedBy'] as List?)?.map((e) => ListEventTypeReplacedByItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-  );
+        categories: ((json['categories'] as List?)
+            ?.map((e) => ListEventTypeCategoriesItem.fromJson(e as String))
+            .toList())!,
+        deprecated: json['deprecated'] != null
+            ? SdkPresent((json['deprecated'] != null
+                ? ListEventTypeDeprecated.fromJson(json['deprecated'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        description: (json['description'] as String?)!,
+        name: (json['name'] != null
+            ? ListEventTypeName.fromJson(json['name'] as String)
+            : null)!,
+        replacedBy: json['replacedBy'] != null
+            ? SdkPresent(((json['replacedBy'] as List?)
+                ?.map((e) => ListEventTypeReplacedByItem.fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'categories': categories.map((item) => item.toJson()).toList(),
-    ...switch (deprecated) {
-      SdkPresent<ListEventTypeDeprecated>(value: final value) => {'deprecated': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'description': description,
-    'name': name.toJson(),
-    ...switch (replacedBy) {
-      SdkPresent<List<ListEventTypeReplacedByItem>>(value: final value) => {'replacedBy': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'categories': categories.map((item) => item.toJson()).toList(),
+        ...switch (deprecated) {
+          SdkPresent<ListEventTypeDeprecated>(value: final value) => {
+              'deprecated': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'description': description,
+        'name': name.toJson(),
+        ...switch (replacedBy) {
+          SdkPresent<List<ListEventTypeReplacedByItem>>(value: final value) => {
+              'replacedBy': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `categories[]` wire field.
 class ListEventTypesResponseCategoriesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `label` wire field.
   final String label;
+
   /// Required enumerated value serialized in the `name` wire field.
   final ListEventTypesResponseCategoriesItemName name;
 
-  const ListEventTypesResponseCategoriesItem({required this.label, required this.name});
+  const ListEventTypesResponseCategoriesItem(
+      {required this.label, required this.name});
 
-  ListEventTypesResponseCategoriesItem Function({String label, ListEventTypesResponseCategoriesItemName name}) get copyWith => _copyWith;
+  ListEventTypesResponseCategoriesItem Function(
+      {String label,
+      ListEventTypesResponseCategoriesItemName name}) get copyWith => _copyWith;
 
-  ListEventTypesResponseCategoriesItem _copyWith({Object? label = sdkOmittedValue, Object? name = sdkOmittedValue}) => ListEventTypesResponseCategoriesItem(
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as ListEventTypesResponseCategoriesItemName,
-  );
+  ListEventTypesResponseCategoriesItem _copyWith(
+          {Object? label = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      ListEventTypesResponseCategoriesItem(
+        label: identical(label, sdkOmittedValue) ? this.label : label as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as ListEventTypesResponseCategoriesItemName,
+      );
 
-  factory ListEventTypesResponseCategoriesItem.fromJson(Map<String, dynamic> json) => ListEventTypesResponseCategoriesItem(
-    label: (json['label'] as String?)!,
-    name: (json['name'] != null ? ListEventTypesResponseCategoriesItemName.fromJson(json['name'] as String) : null)!,
-  );
+  factory ListEventTypesResponseCategoriesItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListEventTypesResponseCategoriesItem(
+        label: (json['label'] as String?)!,
+        name: (json['name'] != null
+            ? ListEventTypesResponseCategoriesItemName.fromJson(
+                json['name'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'label': label,
-    'name': name.toJson(),
-  };
+        'label': label,
+        'name': name.toJson(),
+      };
 }

@@ -10,24 +10,44 @@ class UpdateMicrofrontendsResponseCreatorVariant2 {
   final UpdateMicrofrontendsResponseCreatorVariant2Integration integration;
   final UpdateMicrofrontendsResponseCreatorVariant2Type type_;
 
-  const UpdateMicrofrontendsResponseCreatorVariant2({required this.integration, required this.type_});
+  const UpdateMicrofrontendsResponseCreatorVariant2(
+      {required this.integration, required this.type_});
 
-  UpdateMicrofrontendsResponseCreatorVariant2 Function({UpdateMicrofrontendsResponseCreatorVariant2Integration integration, UpdateMicrofrontendsResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant2 Function(
+          {UpdateMicrofrontendsResponseCreatorVariant2Integration integration,
+          UpdateMicrofrontendsResponseCreatorVariant2Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant2(
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as UpdateMicrofrontendsResponseCreatorVariant2Integration,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant2Type,
-  );
+  UpdateMicrofrontendsResponseCreatorVariant2 _copyWith(
+          {Object? integration = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseCreatorVariant2(
+        integration: identical(integration, sdkOmittedValue)
+            ? this.integration
+            : integration
+                as UpdateMicrofrontendsResponseCreatorVariant2Integration,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UpdateMicrofrontendsResponseCreatorVariant2Type,
+      );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant2(
-    integration: (json['integration'] != null ? UpdateMicrofrontendsResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseCreatorVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseCreatorVariant2(
+        integration: (json['integration'] != null
+            ? UpdateMicrofrontendsResponseCreatorVariant2Integration.fromJson(
+                json['integration'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseCreatorVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integration': integration.toJson(),
-    'type': type_.toJson(),
-  };
+        'integration': integration.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant3 {
@@ -37,19 +57,30 @@ class UpdateMicrofrontendsResponseCreatorVariant3 {
 
   const UpdateMicrofrontendsResponseCreatorVariant3({required this.type_});
 
-  UpdateMicrofrontendsResponseCreatorVariant3 Function({UpdateMicrofrontendsResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant3 Function(
+          {UpdateMicrofrontendsResponseCreatorVariant3Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant3(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant3Type,
-  );
+  UpdateMicrofrontendsResponseCreatorVariant3 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseCreatorVariant3(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UpdateMicrofrontendsResponseCreatorVariant3Type,
+      );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant3(
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseCreatorVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseCreatorVariant3(
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseCreatorVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 sealed class UpdateMicrofrontendsResponseCreator {
@@ -58,40 +89,97 @@ sealed class UpdateMicrofrontendsResponseCreator {
   const UpdateMicrofrontendsResponseCreator();
   factory UpdateMicrofrontendsResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateMicrofrontendsResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(value); } } catch (_) {}
+      try {
+        final value =
+            UpdateMicrofrontendsResponseCreatorVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateMicrofrontendsResponseCreatorVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateMicrofrontendsResponseCreatorVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateMicrofrontendsResponseCreatorVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(UpdateMicrofrontendsResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(UpdateMicrofrontendsResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(UpdateMicrofrontendsResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(UpdateMicrofrontendsResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateMicrofrontendsResponseCreator");
+    try {
+      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(
+          UpdateMicrofrontendsResponseCreatorVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(
+          UpdateMicrofrontendsResponseCreatorVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(
+          UpdateMicrofrontendsResponseCreatorVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(
+          UpdateMicrofrontendsResponseCreatorVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateMicrofrontendsResponseCreator");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0 extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0
+    extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant0 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1 extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1
+    extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant1 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2 extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2
+    extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant2 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3 extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3
+    extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant3 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

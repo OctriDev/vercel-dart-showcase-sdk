@@ -8,231 +8,441 @@ part of 'deployments.dart';
 class GetDeploymentResponseVariant1ServicesItemVariant1Builder {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig> config;
+  final SdkOptional<
+      GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig> config;
   final SdkOptional<String> src;
   final String use;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1Builder({this.config = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
+  const GetDeploymentResponseVariant1ServicesItemVariant1Builder(
+      {this.config = const SdkOmitted(),
+      this.src = const SdkOmitted(),
+      required this.use});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1Builder Function({SdkOptional<GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig> config, SdkOptional<String> src, String use}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1Builder Function(
+      {SdkOptional<
+              GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig>
+          config,
+      SdkOptional<String> src,
+      String use}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1Builder _copyWith({Object? config = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1Builder(
-    config: identical(config, sdkOmittedValue) ? this.config : config as SdkOptional<GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-    use: identical(use, sdkOmittedValue) ? this.use : use as String,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1Builder _copyWith(
+          {Object? config = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? use = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1Builder(
+        config: identical(config, sdkOmittedValue)
+            ? this.config
+            : config as SdkOptional<
+                GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig>,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+        use: identical(use, sdkOmittedValue) ? this.use : use as String,
+      );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1Builder.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1Builder(
-    config: json['config'] != null ? SdkPresent((json['config'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig.fromJson(json['config'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-    use: (json['use'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1Builder.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1Builder(
+        config: json['config'] != null
+            ? SdkPresent((json['config'] != null
+                ? GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig
+                    .fromJson(json['config'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+        use: (json['use'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (config) {
-      SdkPresent<GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig>(value: final value) => {'config': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    'use': use,
-  };
+        ...switch (config) {
+          SdkPresent<
+                GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfig>(
+            value: final value
+          ) =>
+            {
+              'config': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'use': use,
+      };
 }
 
 class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode mode;
+  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode
+      mode;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity({required this.mode});
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity(
+      {required this.mode});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity Function({GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode mode}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity Function(
+      {GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode
+          mode}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity _copyWith({Object? mode = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity(
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity
+      _copyWith({Object? mode = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity(
+            mode: identical(mode, sdkOmittedValue)
+                ? this.mode
+                : mode
+                    as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity(
-    mode: (json['mode'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode.fromJson(json['mode'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinity(
+        mode: (json['mode'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode
+                .fromJson(json['mode'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'mode': mode.toJson(),
-  };
+        'mode': mode.toJson(),
+      };
 }
 
 sealed class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration();
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration.fromJson(Object? json) {
-    if (json is num) { return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationDouble(json.toDouble()); }
-    try { return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationGetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1(GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration");
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration.fromJson(
+      Object? json) {
+    if (json is num) {
+      return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationDouble(
+          json.toDouble());
+    }
+    try {
+      return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationGetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1(
+          GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1
+              .fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration");
   }
   Object? toJson();
 }
 
-final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationDouble extends GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration {
+final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationDouble
+    extends GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration {
   final double value;
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationDouble(this.value);
-  @override Object? toJson() => value;
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationGetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1 extends GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration {
-  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1 value;
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationGetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationGetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1
+    extends GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDuration {
+  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1
+      value;
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationGetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Queue trigger input event for v1beta (from vercel.json config). Requires explicit consumer name.
 class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Name of the consumer group for this trigger (REQUIRED)
   final String consumer;
+
   /// Initial delay in seconds before first execution attempt (OPTIONAL) Must be 0 or greater. Use 0 for no initial delay. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> initialDelaySeconds;
+
   /// Maximum number of concurrent executions for this consumer (OPTIONAL) Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> maxConcurrency;
+
   /// Maximum number of delivery attempts for message processing (OPTIONAL) This represents the total number of times a message can be delivered, not the number of retries. Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> maxDeliveries;
+
   /// Delay in seconds before retrying failed executions (OPTIONAL) Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> retryAfterSeconds;
+
   /// Name of the queue topic to consume from (REQUIRED)
   final String topic;
+
   /// Event type - must be "queue/v1beta" (REQUIRED)
-  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type type_;
+  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type
+      type_;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0({required this.consumer, this.initialDelaySeconds = const SdkOmitted(), this.maxConcurrency = const SdkOmitted(), this.maxDeliveries = const SdkOmitted(), this.retryAfterSeconds = const SdkOmitted(), required this.topic, required this.type_});
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0(
+      {required this.consumer,
+      this.initialDelaySeconds = const SdkOmitted(),
+      this.maxConcurrency = const SdkOmitted(),
+      this.maxDeliveries = const SdkOmitted(),
+      this.retryAfterSeconds = const SdkOmitted(),
+      required this.topic,
+      required this.type_});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0 Function({String consumer, SdkOptional<double> initialDelaySeconds, SdkOptional<double> maxConcurrency, SdkOptional<double> maxDeliveries, SdkOptional<double> retryAfterSeconds, String topic, GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0 Function(
+      {String consumer,
+      SdkOptional<double> initialDelaySeconds,
+      SdkOptional<double> maxConcurrency,
+      SdkOptional<double> maxDeliveries,
+      SdkOptional<double> retryAfterSeconds,
+      String topic,
+      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type
+          type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0 _copyWith({Object? consumer = sdkOmittedValue, Object? initialDelaySeconds = sdkOmittedValue, Object? maxConcurrency = sdkOmittedValue, Object? maxDeliveries = sdkOmittedValue, Object? retryAfterSeconds = sdkOmittedValue, Object? topic = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0(
-    consumer: identical(consumer, sdkOmittedValue) ? this.consumer : consumer as String,
-    initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue) ? this.initialDelaySeconds : initialDelaySeconds as SdkOptional<double>,
-    maxConcurrency: identical(maxConcurrency, sdkOmittedValue) ? this.maxConcurrency : maxConcurrency as SdkOptional<double>,
-    maxDeliveries: identical(maxDeliveries, sdkOmittedValue) ? this.maxDeliveries : maxDeliveries as SdkOptional<double>,
-    retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue) ? this.retryAfterSeconds : retryAfterSeconds as SdkOptional<double>,
-    topic: identical(topic, sdkOmittedValue) ? this.topic : topic as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0
+      _copyWith(
+              {Object? consumer = sdkOmittedValue,
+              Object? initialDelaySeconds = sdkOmittedValue,
+              Object? maxConcurrency = sdkOmittedValue,
+              Object? maxDeliveries = sdkOmittedValue,
+              Object? retryAfterSeconds = sdkOmittedValue,
+              Object? topic = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0(
+            consumer: identical(consumer, sdkOmittedValue)
+                ? this.consumer
+                : consumer as String,
+            initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue)
+                ? this.initialDelaySeconds
+                : initialDelaySeconds as SdkOptional<double>,
+            maxConcurrency: identical(maxConcurrency, sdkOmittedValue)
+                ? this.maxConcurrency
+                : maxConcurrency as SdkOptional<double>,
+            maxDeliveries: identical(maxDeliveries, sdkOmittedValue)
+                ? this.maxDeliveries
+                : maxDeliveries as SdkOptional<double>,
+            retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue)
+                ? this.retryAfterSeconds
+                : retryAfterSeconds as SdkOptional<double>,
+            topic: identical(topic, sdkOmittedValue)
+                ? this.topic
+                : topic as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0(
-    consumer: (json['consumer'] as String?)!,
-    initialDelaySeconds: json['initialDelaySeconds'] != null ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    maxConcurrency: json['maxConcurrency'] != null ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!) : const SdkOmitted(),
-    maxDeliveries: json['maxDeliveries'] != null ? SdkPresent(((json['maxDeliveries'] as num?)?.toDouble())!) : const SdkOmitted(),
-    retryAfterSeconds: json['retryAfterSeconds'] != null ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    topic: (json['topic'] as String?)!,
-    type_: (json['type'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0(
+        consumer: (json['consumer'] as String?)!,
+        initialDelaySeconds: json['initialDelaySeconds'] != null
+            ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        maxConcurrency: json['maxConcurrency'] != null
+            ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        maxDeliveries: json['maxDeliveries'] != null
+            ? SdkPresent(((json['maxDeliveries'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        retryAfterSeconds: json['retryAfterSeconds'] != null
+            ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        topic: (json['topic'] as String?)!,
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'consumer': consumer,
-    ...switch (initialDelaySeconds) {
-      SdkPresent<double>(value: final value) => {'initialDelaySeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxConcurrency) {
-      SdkPresent<double>(value: final value) => {'maxConcurrency': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxDeliveries) {
-      SdkPresent<double>(value: final value) => {'maxDeliveries': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (retryAfterSeconds) {
-      SdkPresent<double>(value: final value) => {'retryAfterSeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'topic': topic,
-    'type': type_.toJson(),
-  };
+        'consumer': consumer,
+        ...switch (initialDelaySeconds) {
+          SdkPresent<double>(value: final value) => {
+              'initialDelaySeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxConcurrency) {
+          SdkPresent<double>(value: final value) => {
+              'maxConcurrency': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxDeliveries) {
+          SdkPresent<double>(value: final value) => {
+              'maxDeliveries': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (retryAfterSeconds) {
+          SdkPresent<double>(value: final value) => {
+              'retryAfterSeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'topic': topic,
+        'type': type_.toJson(),
+      };
 }
 
 /// Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed.
 class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Initial delay in seconds before first execution attempt (OPTIONAL) Must be 0 or greater. Use 0 for no initial delay. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> initialDelaySeconds;
+
   /// Maximum number of concurrent executions for this consumer (OPTIONAL) Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> maxConcurrency;
+
   /// Maximum number of delivery attempts for message processing (OPTIONAL) This represents the total number of times a message can be delivered, not the number of retries. Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> maxDeliveries;
+
   /// Delay in seconds before retrying failed executions (OPTIONAL) Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> retryAfterSeconds;
+
   /// Name of the queue topic to consume from (REQUIRED)
   final String topic;
+
   /// Event type - must be "queue/v2beta" (REQUIRED)
-  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type type_;
+  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type
+      type_;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1({this.initialDelaySeconds = const SdkOmitted(), this.maxConcurrency = const SdkOmitted(), this.maxDeliveries = const SdkOmitted(), this.retryAfterSeconds = const SdkOmitted(), required this.topic, required this.type_});
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1(
+      {this.initialDelaySeconds = const SdkOmitted(),
+      this.maxConcurrency = const SdkOmitted(),
+      this.maxDeliveries = const SdkOmitted(),
+      this.retryAfterSeconds = const SdkOmitted(),
+      required this.topic,
+      required this.type_});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1 Function({SdkOptional<double> initialDelaySeconds, SdkOptional<double> maxConcurrency, SdkOptional<double> maxDeliveries, SdkOptional<double> retryAfterSeconds, String topic, GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1 Function(
+      {SdkOptional<double> initialDelaySeconds,
+      SdkOptional<double> maxConcurrency,
+      SdkOptional<double> maxDeliveries,
+      SdkOptional<double> retryAfterSeconds,
+      String topic,
+      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1 _copyWith({Object? initialDelaySeconds = sdkOmittedValue, Object? maxConcurrency = sdkOmittedValue, Object? maxDeliveries = sdkOmittedValue, Object? retryAfterSeconds = sdkOmittedValue, Object? topic = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1(
-    initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue) ? this.initialDelaySeconds : initialDelaySeconds as SdkOptional<double>,
-    maxConcurrency: identical(maxConcurrency, sdkOmittedValue) ? this.maxConcurrency : maxConcurrency as SdkOptional<double>,
-    maxDeliveries: identical(maxDeliveries, sdkOmittedValue) ? this.maxDeliveries : maxDeliveries as SdkOptional<double>,
-    retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue) ? this.retryAfterSeconds : retryAfterSeconds as SdkOptional<double>,
-    topic: identical(topic, sdkOmittedValue) ? this.topic : topic as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1
+      _copyWith(
+              {Object? initialDelaySeconds = sdkOmittedValue,
+              Object? maxConcurrency = sdkOmittedValue,
+              Object? maxDeliveries = sdkOmittedValue,
+              Object? retryAfterSeconds = sdkOmittedValue,
+              Object? topic = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1(
+            initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue)
+                ? this.initialDelaySeconds
+                : initialDelaySeconds as SdkOptional<double>,
+            maxConcurrency: identical(maxConcurrency, sdkOmittedValue)
+                ? this.maxConcurrency
+                : maxConcurrency as SdkOptional<double>,
+            maxDeliveries: identical(maxDeliveries, sdkOmittedValue)
+                ? this.maxDeliveries
+                : maxDeliveries as SdkOptional<double>,
+            retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue)
+                ? this.retryAfterSeconds
+                : retryAfterSeconds as SdkOptional<double>,
+            topic: identical(topic, sdkOmittedValue)
+                ? this.topic
+                : topic as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1(
-    initialDelaySeconds: json['initialDelaySeconds'] != null ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    maxConcurrency: json['maxConcurrency'] != null ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!) : const SdkOmitted(),
-    maxDeliveries: json['maxDeliveries'] != null ? SdkPresent(((json['maxDeliveries'] as num?)?.toDouble())!) : const SdkOmitted(),
-    retryAfterSeconds: json['retryAfterSeconds'] != null ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    topic: (json['topic'] as String?)!,
-    type_: (json['type'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1(
+        initialDelaySeconds: json['initialDelaySeconds'] != null
+            ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        maxConcurrency: json['maxConcurrency'] != null
+            ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        maxDeliveries: json['maxDeliveries'] != null
+            ? SdkPresent(((json['maxDeliveries'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        retryAfterSeconds: json['retryAfterSeconds'] != null
+            ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        topic: (json['topic'] as String?)!,
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (initialDelaySeconds) {
-      SdkPresent<double>(value: final value) => {'initialDelaySeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxConcurrency) {
-      SdkPresent<double>(value: final value) => {'maxConcurrency': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxDeliveries) {
-      SdkPresent<double>(value: final value) => {'maxDeliveries': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (retryAfterSeconds) {
-      SdkPresent<double>(value: final value) => {'retryAfterSeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'topic': topic,
-    'type': type_.toJson(),
-  };
+        ...switch (initialDelaySeconds) {
+          SdkPresent<double>(value: final value) => {
+              'initialDelaySeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxConcurrency) {
+          SdkPresent<double>(value: final value) => {
+              'maxConcurrency': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxDeliveries) {
+          SdkPresent<double>(value: final value) => {
+              'maxDeliveries': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (retryAfterSeconds) {
+          SdkPresent<double>(value: final value) => {
+              'retryAfterSeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'topic': topic,
+        'type': type_.toJson(),
+      };
 }
 
 class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Event type - must be "schedule/v1beta" (REQUIRED)
-  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type type_;
+  final GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type
+      type_;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2({required this.type_});
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2(
+      {required this.type_});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2 Function({GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2 Function(
+      {GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type
+          type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2 _copyWith({Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2
+      _copyWith({Object? type_ = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2(
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2(
-    type_: (json['type'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2(
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }

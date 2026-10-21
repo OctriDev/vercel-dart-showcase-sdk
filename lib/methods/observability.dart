@@ -21,16 +21,19 @@ Future<GetObservabilityConfigurationProjectsResponse>
           'GET', '/v1/observability/manage/configuration/projects',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getObservabilityConfigurationProjects',
-          fromJsonRaw: (value) => GetObservabilityConfigurationProjectsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetObservabilityConfigurationProjectsResponse.fromJson(
+                  value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates whether Observability Plus is disabled for a project. Identify the project with `projectIdOrName` and set `disabled` to the desired boolean value.
 ///
@@ -47,21 +50,25 @@ Future<UpdateObservabilityConfigurationProjectResponse>
         SdkOptional<String> teamId = const SdkOmitted(),
         SdkOptional<String> slug = const SdkOmitted(),
         RequestOptions? requestOptions}) async {
-  return (await sdkRequest<UpdateObservabilityConfigurationProjectResponse>('PUT',
+  return (await sdkRequest<UpdateObservabilityConfigurationProjectResponse>(
+          'PUT',
           '/v1/observability/manage/configuration/projects/${Uri.encodeComponent(projectIdOrName.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'disabled': disabled},
           decoder: SdkResponseDecoder.json,
           operationId: 'updateObservabilityConfigurationProject',
-          fromJsonRaw: (value) => UpdateObservabilityConfigurationProjectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateObservabilityConfigurationProjectResponse.fromJson(
+                  value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Runs an Observability query for a metric and an owner or project scope. Provide `metric` and `scope`, then use optional aggregation, grouping, filtering, and time settings to shape the results.
 ///
@@ -101,7 +108,8 @@ Future<Map<String, dynamic>> createObservabilityQuery(ClientConfig config,
     SdkOptional<String> filter = const SdkOmitted(),
     SdkOptional<double> limit = const SdkOmitted(),
     SdkOptional<String> orderBy = const SdkOmitted(),
-    SdkOptional<CreateObservabilityQueryRequestBodyOrderDirection> orderDirection = const SdkOmitted(),
+    SdkOptional<CreateObservabilityQueryRequestBodyOrderDirection>
+        orderDirection = const SdkOmitted(),
     SdkOptional<Map<String, dynamic>> granularity = const SdkOmitted(),
     SdkOptional<String> startTime = const SdkOmitted(),
     SdkOptional<String> endTime = const SdkOmitted(),
@@ -131,30 +139,36 @@ Future<Map<String, dynamic>> createObservabilityQuery(ClientConfig config,
       .data;
 }
 
-
 /// Retrieves the available Observability metrics schema. Use the metric IDs and descriptions in the returned list to identify metrics for querying.
-Future<GetObservabilitySchemaResponse> getObservabilitySchema(ClientConfig config,
+Future<GetObservabilitySchemaResponse> getObservabilitySchema(
+    ClientConfig config,
     {RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetObservabilitySchemaResponse>(
           'GET', '/v2/observability/schema',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getObservabilitySchema',
-          fromJsonRaw: (value) => GetObservabilitySchemaResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetObservabilitySchemaResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
 
-
 /// Retrieves the Observability schema for a specific metric. Supply `metricId` to get the metric's supported aggregations, dimensions, unit, and default aggregation.
-Future<List<GetObservabilitySchemaByMetricIdResponseItem>> getObservabilitySchemaByMetricId(ClientConfig config,
-    {required String metricId, RequestOptions? requestOptions}) async {
-  return (await sdkRequest<List<GetObservabilitySchemaByMetricIdResponseItem>>('GET',
+Future<List<GetObservabilitySchemaByMetricIdResponseItem>>
+    getObservabilitySchemaByMetricId(ClientConfig config,
+        {required String metricId, RequestOptions? requestOptions}) async {
+  return (await sdkRequest<List<GetObservabilitySchemaByMetricIdResponseItem>>(
+          'GET',
           '/v2/observability/schema/${Uri.encodeComponent(metricId.toString())}',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getObservabilitySchemaByMetricId',
-          fromJsonRaw: (value) => (value as List).map((item) => GetObservabilitySchemaByMetricIdResponseItem.fromJson(item as Map<String, dynamic>)).toList(),
+          fromJsonRaw: (value) => (value as List)
+              .map((item) =>
+                  GetObservabilitySchemaByMetricIdResponseItem.fromJson(
+                      item as Map<String, dynamic>))
+              .toList(),
           options: requestOptions))
       .data;
 }

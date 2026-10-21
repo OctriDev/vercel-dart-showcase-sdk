@@ -10,103 +10,145 @@ class DeleteProjectAvatarResponse {
   final String accountId;
   final List<DeleteProjectAvatarResponseAliasItem> alias;
   final SdkOptional<DeleteProjectAvatarResponseAnalytics> analytics;
-  final SdkOptional<DeleteProjectAvatarResponseAppliedCve55182Migration> appliedCve55182Migration;
-  final SdkOptional<DeleteProjectAvatarResponseAutoAssignCustomDomains> autoAssignCustomDomains;
+  final SdkOptional<DeleteProjectAvatarResponseAppliedCve55182Migration>
+      appliedCve55182Migration;
+  final SdkOptional<DeleteProjectAvatarResponseAutoAssignCustomDomains>
+      autoAssignCustomDomains;
   final SdkOptional<String> autoAssignCustomDomainsUpdatedBy;
-  final SdkOptional<DeleteProjectAvatarResponseAutoExposeSystemEnvs> autoExposeSystemEnvs;
+  final SdkOptional<DeleteProjectAvatarResponseAutoExposeSystemEnvs>
+      autoExposeSystemEnvs;
   final SdkOptional<String?> avatar;
   final SdkOptional<String?> avatarDarkMode;
   final SdkOptional<DeleteProjectAvatarResponseBlobs> blobs;
   final SdkOptional<String?> buildCommand;
   final SdkOptional<String?> commandForIgnoringBuildStep;
   final SdkOptional<String> concurrencyBucketName;
-  final SdkOptional<DeleteProjectAvatarResponseConnectBuildsEnabled> connectBuildsEnabled;
+  final SdkOptional<DeleteProjectAvatarResponseConnectBuildsEnabled>
+      connectBuildsEnabled;
   final SdkOptional<String?> connectConfigurationId;
-  final SdkOptional<List<DeleteProjectAvatarResponseConnectConfigurationsItem>?> connectConfigurations;
+  final SdkOptional<List<DeleteProjectAvatarResponseConnectConfigurationsItem>?>
+      connectConfigurations;
   final SdkOptional<double> createdAt;
+
   /// Typed representation of the `DeleteProjectAvatarResponseCreator` API schema.
   final SdkOptional<DeleteProjectAvatarResponseCreator> creator;
   final SdkOptional<DeleteProjectAvatarResponseCrons> crons;
-  final SdkOptional<List<DeleteProjectAvatarResponseCustomEnvironmentsItem>> customEnvironments;
-  final SdkOptional<DeleteProjectAvatarResponseCustomerSupportCodeVisibility> customerSupportCodeVisibility;
+  final SdkOptional<List<DeleteProjectAvatarResponseCustomEnvironmentsItem>>
+      customEnvironments;
+  final SdkOptional<DeleteProjectAvatarResponseCustomerSupportCodeVisibility>
+      customerSupportCodeVisibility;
   final SdkOptional<DeleteProjectAvatarResponseDataCache> dataCache;
   final DeleteProjectAvatarResponseDefaultResourceConfig defaultResourceConfig;
+
   /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
   final DeleteProjectAvatarResponseDeploymentExpiration deploymentExpiration;
+
   /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
-  final SdkOptional<DeleteProjectAvatarResponseDeploymentPolicy?> deploymentPolicy;
+  final SdkOptional<DeleteProjectAvatarResponseDeploymentPolicy?>
+      deploymentPolicy;
   final SdkOptional<String?> devCommand;
   final DeleteProjectAvatarResponseDirectoryListing directoryListing;
-  final SdkOptional<List<DeleteProjectAvatarResponseDismissedToastsItem>> dismissedToasts;
-  final SdkOptional<DeleteProjectAvatarResponseEnableAffectedProjectsDeployments> enableAffectedProjectsDeployments;
-  final SdkOptional<DeleteProjectAvatarResponseEnableExternalRewriteCaching> enableExternalRewriteCaching;
-  final SdkOptional<DeleteProjectAvatarResponseEnablePreviewFeedback?> enablePreviewFeedback;
-  final SdkOptional<DeleteProjectAvatarResponseEnableProductionFeedback?> enableProductionFeedback;
+  final SdkOptional<List<DeleteProjectAvatarResponseDismissedToastsItem>>
+      dismissedToasts;
+  final SdkOptional<
+          DeleteProjectAvatarResponseEnableAffectedProjectsDeployments>
+      enableAffectedProjectsDeployments;
+  final SdkOptional<DeleteProjectAvatarResponseEnableExternalRewriteCaching>
+      enableExternalRewriteCaching;
+  final SdkOptional<DeleteProjectAvatarResponseEnablePreviewFeedback?>
+      enablePreviewFeedback;
+  final SdkOptional<DeleteProjectAvatarResponseEnableProductionFeedback?>
+      enableProductionFeedback;
   final SdkOptional<List<DeleteProjectAvatarResponseEnvItem>> env;
+
   /// Typed representation of the `DeleteProjectAvatarResponseExpiration` API schema.
   final SdkOptional<DeleteProjectAvatarResponseExpiration> expiration;
   final SdkOptional<DeleteProjectAvatarResponseFeatures> features;
   final SdkOptional<DeleteProjectAvatarResponseFramework?> framework;
   final SdkOptional<DeleteProjectAvatarResponseGitComments> gitComments;
-  final SdkOptional<DeleteProjectAvatarResponseGitForkProtection> gitForkProtection;
+  final SdkOptional<DeleteProjectAvatarResponseGitForkProtection>
+      gitForkProtection;
   final SdkOptional<DeleteProjectAvatarResponseGitLFS> gitLfs;
-  final SdkOptional<DeleteProjectAvatarResponseGitProviderOptions> gitProviderOptions;
-  final SdkOptional<DeleteProjectAvatarResponseHasActiveBranches> hasActiveBranches;
+  final SdkOptional<DeleteProjectAvatarResponseGitProviderOptions>
+      gitProviderOptions;
+  final SdkOptional<DeleteProjectAvatarResponseHasActiveBranches>
+      hasActiveBranches;
   final SdkOptional<DeleteProjectAvatarResponseHasDeployments> hasDeployments;
   final String id;
   final SdkOptional<String?> installCommand;
-  final SdkOptional<List<DeleteProjectAvatarResponseInternalRoutesItem>> internalRoutes;
+  final SdkOptional<List<DeleteProjectAvatarResponseInternalRoutesItem>>
+      internalRoutes;
   final SdkOptional<List<DeleteProjectAvatarResponseIpBucketsItem>> ipBuckets;
   final SdkOptional<DeleteProjectAvatarResponseJobs> jobs;
-  final SdkOptional<DeleteProjectAvatarResponseLastAliasRequest?> lastAliasRequest;
+  final SdkOptional<DeleteProjectAvatarResponseLastAliasRequest?>
+      lastAliasRequest;
   final SdkOptional<Map<String, dynamic>?> lastRollbackTarget;
-  final SdkOptional<List<DeleteProjectAvatarResponseLatestDeploymentsItem>> latestDeployments;
+  final SdkOptional<List<DeleteProjectAvatarResponseLatestDeploymentsItem>>
+      latestDeployments;
+
   /// Typed representation of the `DeleteProjectAvatarResponseLink` API schema.
   final SdkOptional<DeleteProjectAvatarResponseLink> link;
   final SdkOptional<DeleteProjectAvatarResponseLive> live;
+
   /// Typed representation of the `DeleteProjectAvatarResponseMicrofrontends` API schema.
   final SdkOptional<DeleteProjectAvatarResponseMicrofrontends> microfrontends;
   final String name;
   final DeleteProjectAvatarResponseNodeVersion nodeVersion;
   final SdkOptional<DeleteProjectAvatarResponseOidcTokenConfig> oidcTokenConfig;
-  final SdkOptional<DeleteProjectAvatarResponseOptionsAllowlist?> optionsAllowlist;
+  final SdkOptional<DeleteProjectAvatarResponseOptionsAllowlist?>
+      optionsAllowlist;
   final SdkOptional<String?> outputDirectory;
   final SdkOptional<String?> passiveConnectConfigurationId;
   final SdkOptional<DeleteProjectAvatarResponsePassport?> passport;
+
   /// Password protection settings returned without the secret password hash.
-  final SdkOptional<DeleteProjectAvatarResponsePasswordProtection?> passwordProtection;
+  final SdkOptional<DeleteProjectAvatarResponsePasswordProtection?>
+      passwordProtection;
   final SdkOptional<DeleteProjectAvatarResponsePaused> paused;
+
   /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
   final SdkOptional<DeleteProjectAvatarResponsePermissions> permissions;
-  final SdkOptional<DeleteProjectAvatarResponseProductionDeploymentsFastLane> productionDeploymentsFastLane;
-  final SdkOptional<DeleteProjectAvatarResponseProtectedSourcemaps> protectedSourcemaps;
+  final SdkOptional<DeleteProjectAvatarResponseProductionDeploymentsFastLane>
+      productionDeploymentsFastLane;
+  final SdkOptional<DeleteProjectAvatarResponseProtectedSourcemaps>
+      protectedSourcemaps;
   final SdkOptional<Map<String, dynamic>> protectionBypass;
-  final SdkOptional<DeleteProjectAvatarResponseProtectionConfig> protectionConfig;
+  final SdkOptional<DeleteProjectAvatarResponseProtectionConfig>
+      protectionConfig;
   final DeleteProjectAvatarResponseResourceConfig resourceConfig;
+
   /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
-  final SdkOptional<DeleteProjectAvatarResponseRollbackDescription> rollbackDescription;
+  final SdkOptional<DeleteProjectAvatarResponseRollbackDescription>
+      rollbackDescription;
+
   /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
   final SdkOptional<DeleteProjectAvatarResponseRollingRelease?> rollingRelease;
   final SdkOptional<String?> rootDirectory;
   final SdkOptional<DeleteProjectAvatarResponseSandbox> sandbox;
   final SdkOptional<DeleteProjectAvatarResponseSecurity> security;
-  final SdkOptional<DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover> serverlessFunctionZeroConfigFailover;
+  final SdkOptional<
+          DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover>
+      serverlessFunctionZeroConfigFailover;
   final SdkOptional<List<DeleteProjectAvatarResponseServicesItem>> services;
   final SdkOptional<List<String>> skewProtectionAllowedDomains;
   final SdkOptional<double> skewProtectionBoundaryAt;
   final SdkOptional<double> skewProtectionMaxAge;
-  final SdkOptional<DeleteProjectAvatarResponseSkipGitConnectDuringLink> skipGitConnectDuringLink;
-  final SdkOptional<DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory;
+  final SdkOptional<DeleteProjectAvatarResponseSkipGitConnectDuringLink>
+      skipGitConnectDuringLink;
+  final SdkOptional<DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory>
+      sourceFilesOutsideRootDirectory;
   final SdkOptional<DeleteProjectAvatarResponseSpeedInsights> speedInsights;
   final SdkOptional<DeleteProjectAvatarResponseSsoProtection?> ssoProtection;
   final SdkOptional<DeleteProjectAvatarResponseStaticIps> staticIps;
-  final SdkOptional<Map<String, DeleteProjectAvatarResponseTargetsValue>> targets;
+  final SdkOptional<Map<String, DeleteProjectAvatarResponseTargetsValue>>
+      targets;
   final SdkOptional<DeleteProjectAvatarResponseTier> tier;
   final SdkOptional<DeleteProjectAvatarResponseTracing> tracing;
   final SdkOptional<double> transferCompletedAt;
   final SdkOptional<String> transferredFromAccountId;
   final SdkOptional<double> transferStartedAt;
   final SdkOptional<String> transferToAccountId;
+
   /// Typed representation of the `DeleteProjectAvatarResponseTrustedIps` API schema.
   final SdkOptional<DeleteProjectAvatarResponseTrustedIps?> trustedIps;
   final SdkOptional<DeleteProjectAvatarResponseTrustedSources?> trustedSources;
@@ -116,571 +158,1898 @@ class DeleteProjectAvatarResponse {
   final SdkOptional<DeleteProjectAvatarResponseV0Created> v0Created;
   final SdkOptional<DeleteProjectAvatarResponseWebAnalytics> webAnalytics;
 
-  const DeleteProjectAvatarResponse({required this.accountId, required this.alias, this.analytics = const SdkOmitted(), this.appliedCve55182Migration = const SdkOmitted(), this.autoAssignCustomDomains = const SdkOmitted(), this.autoAssignCustomDomainsUpdatedBy = const SdkOmitted(), this.autoExposeSystemEnvs = const SdkOmitted(), this.avatar = const SdkOmitted(), this.avatarDarkMode = const SdkOmitted(), this.blobs = const SdkOmitted(), this.buildCommand = const SdkOmitted(), this.commandForIgnoringBuildStep = const SdkOmitted(), this.concurrencyBucketName = const SdkOmitted(), this.connectBuildsEnabled = const SdkOmitted(), this.connectConfigurationId = const SdkOmitted(), this.connectConfigurations = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.creator = const SdkOmitted(), this.crons = const SdkOmitted(), this.customEnvironments = const SdkOmitted(), this.customerSupportCodeVisibility = const SdkOmitted(), this.dataCache = const SdkOmitted(), required this.defaultResourceConfig, required this.deploymentExpiration, this.deploymentPolicy = const SdkOmitted(), this.devCommand = const SdkOmitted(), required this.directoryListing, this.dismissedToasts = const SdkOmitted(), this.enableAffectedProjectsDeployments = const SdkOmitted(), this.enableExternalRewriteCaching = const SdkOmitted(), this.enablePreviewFeedback = const SdkOmitted(), this.enableProductionFeedback = const SdkOmitted(), this.env = const SdkOmitted(), this.expiration = const SdkOmitted(), this.features = const SdkOmitted(), this.framework = const SdkOmitted(), this.gitComments = const SdkOmitted(), this.gitForkProtection = const SdkOmitted(), this.gitLfs = const SdkOmitted(), this.gitProviderOptions = const SdkOmitted(), this.hasActiveBranches = const SdkOmitted(), this.hasDeployments = const SdkOmitted(), required this.id, this.installCommand = const SdkOmitted(), this.internalRoutes = const SdkOmitted(), this.ipBuckets = const SdkOmitted(), this.jobs = const SdkOmitted(), this.lastAliasRequest = const SdkOmitted(), this.lastRollbackTarget = const SdkOmitted(), this.latestDeployments = const SdkOmitted(), this.link = const SdkOmitted(), this.live = const SdkOmitted(), this.microfrontends = const SdkOmitted(), required this.name, required this.nodeVersion, this.oidcTokenConfig = const SdkOmitted(), this.optionsAllowlist = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.passiveConnectConfigurationId = const SdkOmitted(), this.passport = const SdkOmitted(), this.passwordProtection = const SdkOmitted(), this.paused = const SdkOmitted(), this.permissions = const SdkOmitted(), this.productionDeploymentsFastLane = const SdkOmitted(), this.protectedSourcemaps = const SdkOmitted(), this.protectionBypass = const SdkOmitted(), this.protectionConfig = const SdkOmitted(), required this.resourceConfig, this.rollbackDescription = const SdkOmitted(), this.rollingRelease = const SdkOmitted(), this.rootDirectory = const SdkOmitted(), this.sandbox = const SdkOmitted(), this.security = const SdkOmitted(), this.serverlessFunctionZeroConfigFailover = const SdkOmitted(), this.services = const SdkOmitted(), this.skewProtectionAllowedDomains = const SdkOmitted(), this.skewProtectionBoundaryAt = const SdkOmitted(), this.skewProtectionMaxAge = const SdkOmitted(), this.skipGitConnectDuringLink = const SdkOmitted(), this.sourceFilesOutsideRootDirectory = const SdkOmitted(), this.speedInsights = const SdkOmitted(), this.ssoProtection = const SdkOmitted(), this.staticIps = const SdkOmitted(), this.targets = const SdkOmitted(), this.tier = const SdkOmitted(), this.tracing = const SdkOmitted(), this.transferCompletedAt = const SdkOmitted(), this.transferredFromAccountId = const SdkOmitted(), this.transferStartedAt = const SdkOmitted(), this.transferToAccountId = const SdkOmitted(), this.trustedIps = const SdkOmitted(), this.trustedSources = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.usageStatus = const SdkOmitted(), this.v0 = const SdkOmitted(), this.v0Created = const SdkOmitted(), this.webAnalytics = const SdkOmitted()});
+  const DeleteProjectAvatarResponse(
+      {required this.accountId,
+      required this.alias,
+      this.analytics = const SdkOmitted(),
+      this.appliedCve55182Migration = const SdkOmitted(),
+      this.autoAssignCustomDomains = const SdkOmitted(),
+      this.autoAssignCustomDomainsUpdatedBy = const SdkOmitted(),
+      this.autoExposeSystemEnvs = const SdkOmitted(),
+      this.avatar = const SdkOmitted(),
+      this.avatarDarkMode = const SdkOmitted(),
+      this.blobs = const SdkOmitted(),
+      this.buildCommand = const SdkOmitted(),
+      this.commandForIgnoringBuildStep = const SdkOmitted(),
+      this.concurrencyBucketName = const SdkOmitted(),
+      this.connectBuildsEnabled = const SdkOmitted(),
+      this.connectConfigurationId = const SdkOmitted(),
+      this.connectConfigurations = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.creator = const SdkOmitted(),
+      this.crons = const SdkOmitted(),
+      this.customEnvironments = const SdkOmitted(),
+      this.customerSupportCodeVisibility = const SdkOmitted(),
+      this.dataCache = const SdkOmitted(),
+      required this.defaultResourceConfig,
+      required this.deploymentExpiration,
+      this.deploymentPolicy = const SdkOmitted(),
+      this.devCommand = const SdkOmitted(),
+      required this.directoryListing,
+      this.dismissedToasts = const SdkOmitted(),
+      this.enableAffectedProjectsDeployments = const SdkOmitted(),
+      this.enableExternalRewriteCaching = const SdkOmitted(),
+      this.enablePreviewFeedback = const SdkOmitted(),
+      this.enableProductionFeedback = const SdkOmitted(),
+      this.env = const SdkOmitted(),
+      this.expiration = const SdkOmitted(),
+      this.features = const SdkOmitted(),
+      this.framework = const SdkOmitted(),
+      this.gitComments = const SdkOmitted(),
+      this.gitForkProtection = const SdkOmitted(),
+      this.gitLfs = const SdkOmitted(),
+      this.gitProviderOptions = const SdkOmitted(),
+      this.hasActiveBranches = const SdkOmitted(),
+      this.hasDeployments = const SdkOmitted(),
+      required this.id,
+      this.installCommand = const SdkOmitted(),
+      this.internalRoutes = const SdkOmitted(),
+      this.ipBuckets = const SdkOmitted(),
+      this.jobs = const SdkOmitted(),
+      this.lastAliasRequest = const SdkOmitted(),
+      this.lastRollbackTarget = const SdkOmitted(),
+      this.latestDeployments = const SdkOmitted(),
+      this.link = const SdkOmitted(),
+      this.live = const SdkOmitted(),
+      this.microfrontends = const SdkOmitted(),
+      required this.name,
+      required this.nodeVersion,
+      this.oidcTokenConfig = const SdkOmitted(),
+      this.optionsAllowlist = const SdkOmitted(),
+      this.outputDirectory = const SdkOmitted(),
+      this.passiveConnectConfigurationId = const SdkOmitted(),
+      this.passport = const SdkOmitted(),
+      this.passwordProtection = const SdkOmitted(),
+      this.paused = const SdkOmitted(),
+      this.permissions = const SdkOmitted(),
+      this.productionDeploymentsFastLane = const SdkOmitted(),
+      this.protectedSourcemaps = const SdkOmitted(),
+      this.protectionBypass = const SdkOmitted(),
+      this.protectionConfig = const SdkOmitted(),
+      required this.resourceConfig,
+      this.rollbackDescription = const SdkOmitted(),
+      this.rollingRelease = const SdkOmitted(),
+      this.rootDirectory = const SdkOmitted(),
+      this.sandbox = const SdkOmitted(),
+      this.security = const SdkOmitted(),
+      this.serverlessFunctionZeroConfigFailover = const SdkOmitted(),
+      this.services = const SdkOmitted(),
+      this.skewProtectionAllowedDomains = const SdkOmitted(),
+      this.skewProtectionBoundaryAt = const SdkOmitted(),
+      this.skewProtectionMaxAge = const SdkOmitted(),
+      this.skipGitConnectDuringLink = const SdkOmitted(),
+      this.sourceFilesOutsideRootDirectory = const SdkOmitted(),
+      this.speedInsights = const SdkOmitted(),
+      this.ssoProtection = const SdkOmitted(),
+      this.staticIps = const SdkOmitted(),
+      this.targets = const SdkOmitted(),
+      this.tier = const SdkOmitted(),
+      this.tracing = const SdkOmitted(),
+      this.transferCompletedAt = const SdkOmitted(),
+      this.transferredFromAccountId = const SdkOmitted(),
+      this.transferStartedAt = const SdkOmitted(),
+      this.transferToAccountId = const SdkOmitted(),
+      this.trustedIps = const SdkOmitted(),
+      this.trustedSources = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.usageStatus = const SdkOmitted(),
+      this.v0 = const SdkOmitted(),
+      this.v0Created = const SdkOmitted(),
+      this.webAnalytics = const SdkOmitted()});
 
-  DeleteProjectAvatarResponse Function({String accountId, List<DeleteProjectAvatarResponseAliasItem> alias, SdkOptional<DeleteProjectAvatarResponseAnalytics> analytics, SdkOptional<DeleteProjectAvatarResponseAppliedCve55182Migration> appliedCve55182Migration, SdkOptional<DeleteProjectAvatarResponseAutoAssignCustomDomains> autoAssignCustomDomains, SdkOptional<String> autoAssignCustomDomainsUpdatedBy, SdkOptional<DeleteProjectAvatarResponseAutoExposeSystemEnvs> autoExposeSystemEnvs, SdkOptional<String?> avatar, SdkOptional<String?> avatarDarkMode, SdkOptional<DeleteProjectAvatarResponseBlobs> blobs, SdkOptional<String?> buildCommand, SdkOptional<String?> commandForIgnoringBuildStep, SdkOptional<String> concurrencyBucketName, SdkOptional<DeleteProjectAvatarResponseConnectBuildsEnabled> connectBuildsEnabled, SdkOptional<String?> connectConfigurationId, SdkOptional<List<DeleteProjectAvatarResponseConnectConfigurationsItem>?> connectConfigurations, SdkOptional<double> createdAt, SdkOptional<DeleteProjectAvatarResponseCreator> creator, SdkOptional<DeleteProjectAvatarResponseCrons> crons, SdkOptional<List<DeleteProjectAvatarResponseCustomEnvironmentsItem>> customEnvironments, SdkOptional<DeleteProjectAvatarResponseCustomerSupportCodeVisibility> customerSupportCodeVisibility, SdkOptional<DeleteProjectAvatarResponseDataCache> dataCache, DeleteProjectAvatarResponseDefaultResourceConfig defaultResourceConfig, DeleteProjectAvatarResponseDeploymentExpiration deploymentExpiration, SdkOptional<DeleteProjectAvatarResponseDeploymentPolicy?> deploymentPolicy, SdkOptional<String?> devCommand, DeleteProjectAvatarResponseDirectoryListing directoryListing, SdkOptional<List<DeleteProjectAvatarResponseDismissedToastsItem>> dismissedToasts, SdkOptional<DeleteProjectAvatarResponseEnableAffectedProjectsDeployments> enableAffectedProjectsDeployments, SdkOptional<DeleteProjectAvatarResponseEnableExternalRewriteCaching> enableExternalRewriteCaching, SdkOptional<DeleteProjectAvatarResponseEnablePreviewFeedback?> enablePreviewFeedback, SdkOptional<DeleteProjectAvatarResponseEnableProductionFeedback?> enableProductionFeedback, SdkOptional<List<DeleteProjectAvatarResponseEnvItem>> env, SdkOptional<DeleteProjectAvatarResponseExpiration> expiration, SdkOptional<DeleteProjectAvatarResponseFeatures> features, SdkOptional<DeleteProjectAvatarResponseFramework?> framework, SdkOptional<DeleteProjectAvatarResponseGitComments> gitComments, SdkOptional<DeleteProjectAvatarResponseGitForkProtection> gitForkProtection, SdkOptional<DeleteProjectAvatarResponseGitLFS> gitLfs, SdkOptional<DeleteProjectAvatarResponseGitProviderOptions> gitProviderOptions, SdkOptional<DeleteProjectAvatarResponseHasActiveBranches> hasActiveBranches, SdkOptional<DeleteProjectAvatarResponseHasDeployments> hasDeployments, String id, SdkOptional<String?> installCommand, SdkOptional<List<DeleteProjectAvatarResponseInternalRoutesItem>> internalRoutes, SdkOptional<List<DeleteProjectAvatarResponseIpBucketsItem>> ipBuckets, SdkOptional<DeleteProjectAvatarResponseJobs> jobs, SdkOptional<DeleteProjectAvatarResponseLastAliasRequest?> lastAliasRequest, SdkOptional<Map<String, dynamic>?> lastRollbackTarget, SdkOptional<List<DeleteProjectAvatarResponseLatestDeploymentsItem>> latestDeployments, SdkOptional<DeleteProjectAvatarResponseLink> link, SdkOptional<DeleteProjectAvatarResponseLive> live, SdkOptional<DeleteProjectAvatarResponseMicrofrontends> microfrontends, String name, DeleteProjectAvatarResponseNodeVersion nodeVersion, SdkOptional<DeleteProjectAvatarResponseOidcTokenConfig> oidcTokenConfig, SdkOptional<DeleteProjectAvatarResponseOptionsAllowlist?> optionsAllowlist, SdkOptional<String?> outputDirectory, SdkOptional<String?> passiveConnectConfigurationId, SdkOptional<DeleteProjectAvatarResponsePassport?> passport, SdkOptional<DeleteProjectAvatarResponsePasswordProtection?> passwordProtection, SdkOptional<DeleteProjectAvatarResponsePaused> paused, SdkOptional<DeleteProjectAvatarResponsePermissions> permissions, SdkOptional<DeleteProjectAvatarResponseProductionDeploymentsFastLane> productionDeploymentsFastLane, SdkOptional<DeleteProjectAvatarResponseProtectedSourcemaps> protectedSourcemaps, SdkOptional<Map<String, dynamic>> protectionBypass, SdkOptional<DeleteProjectAvatarResponseProtectionConfig> protectionConfig, DeleteProjectAvatarResponseResourceConfig resourceConfig, SdkOptional<DeleteProjectAvatarResponseRollbackDescription> rollbackDescription, SdkOptional<DeleteProjectAvatarResponseRollingRelease?> rollingRelease, SdkOptional<String?> rootDirectory, SdkOptional<DeleteProjectAvatarResponseSandbox> sandbox, SdkOptional<DeleteProjectAvatarResponseSecurity> security, SdkOptional<DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover> serverlessFunctionZeroConfigFailover, SdkOptional<List<DeleteProjectAvatarResponseServicesItem>> services, SdkOptional<List<String>> skewProtectionAllowedDomains, SdkOptional<double> skewProtectionBoundaryAt, SdkOptional<double> skewProtectionMaxAge, SdkOptional<DeleteProjectAvatarResponseSkipGitConnectDuringLink> skipGitConnectDuringLink, SdkOptional<DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory, SdkOptional<DeleteProjectAvatarResponseSpeedInsights> speedInsights, SdkOptional<DeleteProjectAvatarResponseSsoProtection?> ssoProtection, SdkOptional<DeleteProjectAvatarResponseStaticIps> staticIps, SdkOptional<Map<String, DeleteProjectAvatarResponseTargetsValue>> targets, SdkOptional<DeleteProjectAvatarResponseTier> tier, SdkOptional<DeleteProjectAvatarResponseTracing> tracing, SdkOptional<double> transferCompletedAt, SdkOptional<String> transferredFromAccountId, SdkOptional<double> transferStartedAt, SdkOptional<String> transferToAccountId, SdkOptional<DeleteProjectAvatarResponseTrustedIps?> trustedIps, SdkOptional<DeleteProjectAvatarResponseTrustedSources?> trustedSources, SdkOptional<double> updatedAt, SdkOptional<DeleteProjectAvatarResponseUsageStatus> usageStatus, SdkOptional<DeleteProjectAvatarResponseV0> v0, SdkOptional<DeleteProjectAvatarResponseV0Created> v0Created, SdkOptional<DeleteProjectAvatarResponseWebAnalytics> webAnalytics}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponse Function(
+      {String accountId,
+      List<DeleteProjectAvatarResponseAliasItem> alias,
+      SdkOptional<DeleteProjectAvatarResponseAnalytics> analytics,
+      SdkOptional<DeleteProjectAvatarResponseAppliedCve55182Migration>
+          appliedCve55182Migration,
+      SdkOptional<DeleteProjectAvatarResponseAutoAssignCustomDomains>
+          autoAssignCustomDomains,
+      SdkOptional<String> autoAssignCustomDomainsUpdatedBy,
+      SdkOptional<DeleteProjectAvatarResponseAutoExposeSystemEnvs>
+          autoExposeSystemEnvs,
+      SdkOptional<String?> avatar,
+      SdkOptional<String?> avatarDarkMode,
+      SdkOptional<DeleteProjectAvatarResponseBlobs> blobs,
+      SdkOptional<String?> buildCommand,
+      SdkOptional<String?> commandForIgnoringBuildStep,
+      SdkOptional<String> concurrencyBucketName,
+      SdkOptional<DeleteProjectAvatarResponseConnectBuildsEnabled>
+          connectBuildsEnabled,
+      SdkOptional<String?> connectConfigurationId,
+      SdkOptional<List<DeleteProjectAvatarResponseConnectConfigurationsItem>?>
+          connectConfigurations,
+      SdkOptional<double> createdAt,
+      SdkOptional<DeleteProjectAvatarResponseCreator> creator,
+      SdkOptional<DeleteProjectAvatarResponseCrons> crons,
+      SdkOptional<List<DeleteProjectAvatarResponseCustomEnvironmentsItem>>
+          customEnvironments,
+      SdkOptional<DeleteProjectAvatarResponseCustomerSupportCodeVisibility>
+          customerSupportCodeVisibility,
+      SdkOptional<DeleteProjectAvatarResponseDataCache> dataCache,
+      DeleteProjectAvatarResponseDefaultResourceConfig defaultResourceConfig,
+      DeleteProjectAvatarResponseDeploymentExpiration deploymentExpiration,
+      SdkOptional<DeleteProjectAvatarResponseDeploymentPolicy?>
+          deploymentPolicy,
+      SdkOptional<String?> devCommand,
+      DeleteProjectAvatarResponseDirectoryListing directoryListing,
+      SdkOptional<List<DeleteProjectAvatarResponseDismissedToastsItem>>
+          dismissedToasts,
+      SdkOptional<DeleteProjectAvatarResponseEnableAffectedProjectsDeployments>
+          enableAffectedProjectsDeployments,
+      SdkOptional<DeleteProjectAvatarResponseEnableExternalRewriteCaching>
+          enableExternalRewriteCaching,
+      SdkOptional<DeleteProjectAvatarResponseEnablePreviewFeedback?>
+          enablePreviewFeedback,
+      SdkOptional<DeleteProjectAvatarResponseEnableProductionFeedback?>
+          enableProductionFeedback,
+      SdkOptional<List<DeleteProjectAvatarResponseEnvItem>> env,
+      SdkOptional<DeleteProjectAvatarResponseExpiration> expiration,
+      SdkOptional<DeleteProjectAvatarResponseFeatures> features,
+      SdkOptional<DeleteProjectAvatarResponseFramework?> framework,
+      SdkOptional<DeleteProjectAvatarResponseGitComments> gitComments,
+      SdkOptional<DeleteProjectAvatarResponseGitForkProtection>
+          gitForkProtection,
+      SdkOptional<DeleteProjectAvatarResponseGitLFS> gitLfs,
+      SdkOptional<DeleteProjectAvatarResponseGitProviderOptions>
+          gitProviderOptions,
+      SdkOptional<DeleteProjectAvatarResponseHasActiveBranches>
+          hasActiveBranches,
+      SdkOptional<DeleteProjectAvatarResponseHasDeployments> hasDeployments,
+      String id,
+      SdkOptional<String?> installCommand,
+      SdkOptional<List<DeleteProjectAvatarResponseInternalRoutesItem>>
+          internalRoutes,
+      SdkOptional<List<DeleteProjectAvatarResponseIpBucketsItem>> ipBuckets,
+      SdkOptional<DeleteProjectAvatarResponseJobs> jobs,
+      SdkOptional<DeleteProjectAvatarResponseLastAliasRequest?>
+          lastAliasRequest,
+      SdkOptional<Map<String, dynamic>?> lastRollbackTarget,
+      SdkOptional<List<DeleteProjectAvatarResponseLatestDeploymentsItem>>
+          latestDeployments,
+      SdkOptional<DeleteProjectAvatarResponseLink> link,
+      SdkOptional<DeleteProjectAvatarResponseLive> live,
+      SdkOptional<DeleteProjectAvatarResponseMicrofrontends> microfrontends,
+      String name,
+      DeleteProjectAvatarResponseNodeVersion nodeVersion,
+      SdkOptional<DeleteProjectAvatarResponseOidcTokenConfig> oidcTokenConfig,
+      SdkOptional<DeleteProjectAvatarResponseOptionsAllowlist?>
+          optionsAllowlist,
+      SdkOptional<String?> outputDirectory,
+      SdkOptional<String?> passiveConnectConfigurationId,
+      SdkOptional<DeleteProjectAvatarResponsePassport?> passport,
+      SdkOptional<DeleteProjectAvatarResponsePasswordProtection?>
+          passwordProtection,
+      SdkOptional<DeleteProjectAvatarResponsePaused> paused,
+      SdkOptional<DeleteProjectAvatarResponsePermissions> permissions,
+      SdkOptional<DeleteProjectAvatarResponseProductionDeploymentsFastLane>
+          productionDeploymentsFastLane,
+      SdkOptional<DeleteProjectAvatarResponseProtectedSourcemaps>
+          protectedSourcemaps,
+      SdkOptional<Map<String, dynamic>> protectionBypass,
+      SdkOptional<DeleteProjectAvatarResponseProtectionConfig> protectionConfig,
+      DeleteProjectAvatarResponseResourceConfig resourceConfig,
+      SdkOptional<DeleteProjectAvatarResponseRollbackDescription>
+          rollbackDescription,
+      SdkOptional<DeleteProjectAvatarResponseRollingRelease?> rollingRelease,
+      SdkOptional<String?> rootDirectory,
+      SdkOptional<DeleteProjectAvatarResponseSandbox> sandbox,
+      SdkOptional<DeleteProjectAvatarResponseSecurity> security,
+      SdkOptional<
+              DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover>
+          serverlessFunctionZeroConfigFailover,
+      SdkOptional<List<DeleteProjectAvatarResponseServicesItem>> services,
+      SdkOptional<List<String>> skewProtectionAllowedDomains,
+      SdkOptional<double> skewProtectionBoundaryAt,
+      SdkOptional<double> skewProtectionMaxAge,
+      SdkOptional<DeleteProjectAvatarResponseSkipGitConnectDuringLink>
+          skipGitConnectDuringLink,
+      SdkOptional<DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory>
+          sourceFilesOutsideRootDirectory,
+      SdkOptional<DeleteProjectAvatarResponseSpeedInsights> speedInsights,
+      SdkOptional<DeleteProjectAvatarResponseSsoProtection?> ssoProtection,
+      SdkOptional<DeleteProjectAvatarResponseStaticIps> staticIps,
+      SdkOptional<Map<String, DeleteProjectAvatarResponseTargetsValue>> targets,
+      SdkOptional<DeleteProjectAvatarResponseTier> tier,
+      SdkOptional<DeleteProjectAvatarResponseTracing> tracing,
+      SdkOptional<double> transferCompletedAt,
+      SdkOptional<String> transferredFromAccountId,
+      SdkOptional<double> transferStartedAt,
+      SdkOptional<String> transferToAccountId,
+      SdkOptional<DeleteProjectAvatarResponseTrustedIps?> trustedIps,
+      SdkOptional<DeleteProjectAvatarResponseTrustedSources?> trustedSources,
+      SdkOptional<double> updatedAt,
+      SdkOptional<DeleteProjectAvatarResponseUsageStatus> usageStatus,
+      SdkOptional<DeleteProjectAvatarResponseV0> v0,
+      SdkOptional<DeleteProjectAvatarResponseV0Created> v0Created,
+      SdkOptional<DeleteProjectAvatarResponseWebAnalytics>
+          webAnalytics}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponse _copyWith({Object? accountId = sdkOmittedValue, Object? alias = sdkOmittedValue, Object? analytics = sdkOmittedValue, Object? appliedCve55182Migration = sdkOmittedValue, Object? autoAssignCustomDomains = sdkOmittedValue, Object? autoAssignCustomDomainsUpdatedBy = sdkOmittedValue, Object? autoExposeSystemEnvs = sdkOmittedValue, Object? avatar = sdkOmittedValue, Object? avatarDarkMode = sdkOmittedValue, Object? blobs = sdkOmittedValue, Object? buildCommand = sdkOmittedValue, Object? commandForIgnoringBuildStep = sdkOmittedValue, Object? concurrencyBucketName = sdkOmittedValue, Object? connectBuildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? connectConfigurations = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? creator = sdkOmittedValue, Object? crons = sdkOmittedValue, Object? customEnvironments = sdkOmittedValue, Object? customerSupportCodeVisibility = sdkOmittedValue, Object? dataCache = sdkOmittedValue, Object? defaultResourceConfig = sdkOmittedValue, Object? deploymentExpiration = sdkOmittedValue, Object? deploymentPolicy = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? directoryListing = sdkOmittedValue, Object? dismissedToasts = sdkOmittedValue, Object? enableAffectedProjectsDeployments = sdkOmittedValue, Object? enableExternalRewriteCaching = sdkOmittedValue, Object? enablePreviewFeedback = sdkOmittedValue, Object? enableProductionFeedback = sdkOmittedValue, Object? env = sdkOmittedValue, Object? expiration = sdkOmittedValue, Object? features = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? gitComments = sdkOmittedValue, Object? gitForkProtection = sdkOmittedValue, Object? gitLfs = sdkOmittedValue, Object? gitProviderOptions = sdkOmittedValue, Object? hasActiveBranches = sdkOmittedValue, Object? hasDeployments = sdkOmittedValue, Object? id = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? internalRoutes = sdkOmittedValue, Object? ipBuckets = sdkOmittedValue, Object? jobs = sdkOmittedValue, Object? lastAliasRequest = sdkOmittedValue, Object? lastRollbackTarget = sdkOmittedValue, Object? latestDeployments = sdkOmittedValue, Object? link = sdkOmittedValue, Object? live = sdkOmittedValue, Object? microfrontends = sdkOmittedValue, Object? name = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? oidcTokenConfig = sdkOmittedValue, Object? optionsAllowlist = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? passiveConnectConfigurationId = sdkOmittedValue, Object? passport = sdkOmittedValue, Object? passwordProtection = sdkOmittedValue, Object? paused = sdkOmittedValue, Object? permissions = sdkOmittedValue, Object? productionDeploymentsFastLane = sdkOmittedValue, Object? protectedSourcemaps = sdkOmittedValue, Object? protectionBypass = sdkOmittedValue, Object? protectionConfig = sdkOmittedValue, Object? resourceConfig = sdkOmittedValue, Object? rollbackDescription = sdkOmittedValue, Object? rollingRelease = sdkOmittedValue, Object? rootDirectory = sdkOmittedValue, Object? sandbox = sdkOmittedValue, Object? security = sdkOmittedValue, Object? serverlessFunctionZeroConfigFailover = sdkOmittedValue, Object? services = sdkOmittedValue, Object? skewProtectionAllowedDomains = sdkOmittedValue, Object? skewProtectionBoundaryAt = sdkOmittedValue, Object? skewProtectionMaxAge = sdkOmittedValue, Object? skipGitConnectDuringLink = sdkOmittedValue, Object? sourceFilesOutsideRootDirectory = sdkOmittedValue, Object? speedInsights = sdkOmittedValue, Object? ssoProtection = sdkOmittedValue, Object? staticIps = sdkOmittedValue, Object? targets = sdkOmittedValue, Object? tier = sdkOmittedValue, Object? tracing = sdkOmittedValue, Object? transferCompletedAt = sdkOmittedValue, Object? transferredFromAccountId = sdkOmittedValue, Object? transferStartedAt = sdkOmittedValue, Object? transferToAccountId = sdkOmittedValue, Object? trustedIps = sdkOmittedValue, Object? trustedSources = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? usageStatus = sdkOmittedValue, Object? v0 = sdkOmittedValue, Object? v0Created = sdkOmittedValue, Object? webAnalytics = sdkOmittedValue}) => DeleteProjectAvatarResponse(
-    accountId: identical(accountId, sdkOmittedValue) ? this.accountId : accountId as String,
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as List<DeleteProjectAvatarResponseAliasItem>,
-    analytics: identical(analytics, sdkOmittedValue) ? this.analytics : analytics as SdkOptional<DeleteProjectAvatarResponseAnalytics>,
-    appliedCve55182Migration: identical(appliedCve55182Migration, sdkOmittedValue) ? this.appliedCve55182Migration : appliedCve55182Migration as SdkOptional<DeleteProjectAvatarResponseAppliedCve55182Migration>,
-    autoAssignCustomDomains: identical(autoAssignCustomDomains, sdkOmittedValue) ? this.autoAssignCustomDomains : autoAssignCustomDomains as SdkOptional<DeleteProjectAvatarResponseAutoAssignCustomDomains>,
-    autoAssignCustomDomainsUpdatedBy: identical(autoAssignCustomDomainsUpdatedBy, sdkOmittedValue) ? this.autoAssignCustomDomainsUpdatedBy : autoAssignCustomDomainsUpdatedBy as SdkOptional<String>,
-    autoExposeSystemEnvs: identical(autoExposeSystemEnvs, sdkOmittedValue) ? this.autoExposeSystemEnvs : autoExposeSystemEnvs as SdkOptional<DeleteProjectAvatarResponseAutoExposeSystemEnvs>,
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String?>,
-    avatarDarkMode: identical(avatarDarkMode, sdkOmittedValue) ? this.avatarDarkMode : avatarDarkMode as SdkOptional<String?>,
-    blobs: identical(blobs, sdkOmittedValue) ? this.blobs : blobs as SdkOptional<DeleteProjectAvatarResponseBlobs>,
-    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String?>,
-    commandForIgnoringBuildStep: identical(commandForIgnoringBuildStep, sdkOmittedValue) ? this.commandForIgnoringBuildStep : commandForIgnoringBuildStep as SdkOptional<String?>,
-    concurrencyBucketName: identical(concurrencyBucketName, sdkOmittedValue) ? this.concurrencyBucketName : concurrencyBucketName as SdkOptional<String>,
-    connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue) ? this.connectBuildsEnabled : connectBuildsEnabled as SdkOptional<DeleteProjectAvatarResponseConnectBuildsEnabled>,
-    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as SdkOptional<String?>,
-    connectConfigurations: identical(connectConfigurations, sdkOmittedValue) ? this.connectConfigurations : connectConfigurations as SdkOptional<List<DeleteProjectAvatarResponseConnectConfigurationsItem>?>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as SdkOptional<DeleteProjectAvatarResponseCreator>,
-    crons: identical(crons, sdkOmittedValue) ? this.crons : crons as SdkOptional<DeleteProjectAvatarResponseCrons>,
-    customEnvironments: identical(customEnvironments, sdkOmittedValue) ? this.customEnvironments : customEnvironments as SdkOptional<List<DeleteProjectAvatarResponseCustomEnvironmentsItem>>,
-    customerSupportCodeVisibility: identical(customerSupportCodeVisibility, sdkOmittedValue) ? this.customerSupportCodeVisibility : customerSupportCodeVisibility as SdkOptional<DeleteProjectAvatarResponseCustomerSupportCodeVisibility>,
-    dataCache: identical(dataCache, sdkOmittedValue) ? this.dataCache : dataCache as SdkOptional<DeleteProjectAvatarResponseDataCache>,
-    defaultResourceConfig: identical(defaultResourceConfig, sdkOmittedValue) ? this.defaultResourceConfig : defaultResourceConfig as DeleteProjectAvatarResponseDefaultResourceConfig,
-    deploymentExpiration: identical(deploymentExpiration, sdkOmittedValue) ? this.deploymentExpiration : deploymentExpiration as DeleteProjectAvatarResponseDeploymentExpiration,
-    deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue) ? this.deploymentPolicy : deploymentPolicy as SdkOptional<DeleteProjectAvatarResponseDeploymentPolicy?>,
-    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String?>,
-    directoryListing: identical(directoryListing, sdkOmittedValue) ? this.directoryListing : directoryListing as DeleteProjectAvatarResponseDirectoryListing,
-    dismissedToasts: identical(dismissedToasts, sdkOmittedValue) ? this.dismissedToasts : dismissedToasts as SdkOptional<List<DeleteProjectAvatarResponseDismissedToastsItem>>,
-    enableAffectedProjectsDeployments: identical(enableAffectedProjectsDeployments, sdkOmittedValue) ? this.enableAffectedProjectsDeployments : enableAffectedProjectsDeployments as SdkOptional<DeleteProjectAvatarResponseEnableAffectedProjectsDeployments>,
-    enableExternalRewriteCaching: identical(enableExternalRewriteCaching, sdkOmittedValue) ? this.enableExternalRewriteCaching : enableExternalRewriteCaching as SdkOptional<DeleteProjectAvatarResponseEnableExternalRewriteCaching>,
-    enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue) ? this.enablePreviewFeedback : enablePreviewFeedback as SdkOptional<DeleteProjectAvatarResponseEnablePreviewFeedback?>,
-    enableProductionFeedback: identical(enableProductionFeedback, sdkOmittedValue) ? this.enableProductionFeedback : enableProductionFeedback as SdkOptional<DeleteProjectAvatarResponseEnableProductionFeedback?>,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<List<DeleteProjectAvatarResponseEnvItem>>,
-    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<DeleteProjectAvatarResponseExpiration>,
-    features: identical(features, sdkOmittedValue) ? this.features : features as SdkOptional<DeleteProjectAvatarResponseFeatures>,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<DeleteProjectAvatarResponseFramework?>,
-    gitComments: identical(gitComments, sdkOmittedValue) ? this.gitComments : gitComments as SdkOptional<DeleteProjectAvatarResponseGitComments>,
-    gitForkProtection: identical(gitForkProtection, sdkOmittedValue) ? this.gitForkProtection : gitForkProtection as SdkOptional<DeleteProjectAvatarResponseGitForkProtection>,
-    gitLfs: identical(gitLfs, sdkOmittedValue) ? this.gitLfs : gitLfs as SdkOptional<DeleteProjectAvatarResponseGitLFS>,
-    gitProviderOptions: identical(gitProviderOptions, sdkOmittedValue) ? this.gitProviderOptions : gitProviderOptions as SdkOptional<DeleteProjectAvatarResponseGitProviderOptions>,
-    hasActiveBranches: identical(hasActiveBranches, sdkOmittedValue) ? this.hasActiveBranches : hasActiveBranches as SdkOptional<DeleteProjectAvatarResponseHasActiveBranches>,
-    hasDeployments: identical(hasDeployments, sdkOmittedValue) ? this.hasDeployments : hasDeployments as SdkOptional<DeleteProjectAvatarResponseHasDeployments>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String?>,
-    internalRoutes: identical(internalRoutes, sdkOmittedValue) ? this.internalRoutes : internalRoutes as SdkOptional<List<DeleteProjectAvatarResponseInternalRoutesItem>>,
-    ipBuckets: identical(ipBuckets, sdkOmittedValue) ? this.ipBuckets : ipBuckets as SdkOptional<List<DeleteProjectAvatarResponseIpBucketsItem>>,
-    jobs: identical(jobs, sdkOmittedValue) ? this.jobs : jobs as SdkOptional<DeleteProjectAvatarResponseJobs>,
-    lastAliasRequest: identical(lastAliasRequest, sdkOmittedValue) ? this.lastAliasRequest : lastAliasRequest as SdkOptional<DeleteProjectAvatarResponseLastAliasRequest?>,
-    lastRollbackTarget: identical(lastRollbackTarget, sdkOmittedValue) ? this.lastRollbackTarget : lastRollbackTarget as SdkOptional<Map<String, dynamic>?>,
-    latestDeployments: identical(latestDeployments, sdkOmittedValue) ? this.latestDeployments : latestDeployments as SdkOptional<List<DeleteProjectAvatarResponseLatestDeploymentsItem>>,
-    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<DeleteProjectAvatarResponseLink>,
-    live: identical(live, sdkOmittedValue) ? this.live : live as SdkOptional<DeleteProjectAvatarResponseLive>,
-    microfrontends: identical(microfrontends, sdkOmittedValue) ? this.microfrontends : microfrontends as SdkOptional<DeleteProjectAvatarResponseMicrofrontends>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as DeleteProjectAvatarResponseNodeVersion,
-    oidcTokenConfig: identical(oidcTokenConfig, sdkOmittedValue) ? this.oidcTokenConfig : oidcTokenConfig as SdkOptional<DeleteProjectAvatarResponseOidcTokenConfig>,
-    optionsAllowlist: identical(optionsAllowlist, sdkOmittedValue) ? this.optionsAllowlist : optionsAllowlist as SdkOptional<DeleteProjectAvatarResponseOptionsAllowlist?>,
-    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String?>,
-    passiveConnectConfigurationId: identical(passiveConnectConfigurationId, sdkOmittedValue) ? this.passiveConnectConfigurationId : passiveConnectConfigurationId as SdkOptional<String?>,
-    passport: identical(passport, sdkOmittedValue) ? this.passport : passport as SdkOptional<DeleteProjectAvatarResponsePassport?>,
-    passwordProtection: identical(passwordProtection, sdkOmittedValue) ? this.passwordProtection : passwordProtection as SdkOptional<DeleteProjectAvatarResponsePasswordProtection?>,
-    paused: identical(paused, sdkOmittedValue) ? this.paused : paused as SdkOptional<DeleteProjectAvatarResponsePaused>,
-    permissions: identical(permissions, sdkOmittedValue) ? this.permissions : permissions as SdkOptional<DeleteProjectAvatarResponsePermissions>,
-    productionDeploymentsFastLane: identical(productionDeploymentsFastLane, sdkOmittedValue) ? this.productionDeploymentsFastLane : productionDeploymentsFastLane as SdkOptional<DeleteProjectAvatarResponseProductionDeploymentsFastLane>,
-    protectedSourcemaps: identical(protectedSourcemaps, sdkOmittedValue) ? this.protectedSourcemaps : protectedSourcemaps as SdkOptional<DeleteProjectAvatarResponseProtectedSourcemaps>,
-    protectionBypass: identical(protectionBypass, sdkOmittedValue) ? this.protectionBypass : protectionBypass as SdkOptional<Map<String, dynamic>>,
-    protectionConfig: identical(protectionConfig, sdkOmittedValue) ? this.protectionConfig : protectionConfig as SdkOptional<DeleteProjectAvatarResponseProtectionConfig>,
-    resourceConfig: identical(resourceConfig, sdkOmittedValue) ? this.resourceConfig : resourceConfig as DeleteProjectAvatarResponseResourceConfig,
-    rollbackDescription: identical(rollbackDescription, sdkOmittedValue) ? this.rollbackDescription : rollbackDescription as SdkOptional<DeleteProjectAvatarResponseRollbackDescription>,
-    rollingRelease: identical(rollingRelease, sdkOmittedValue) ? this.rollingRelease : rollingRelease as SdkOptional<DeleteProjectAvatarResponseRollingRelease?>,
-    rootDirectory: identical(rootDirectory, sdkOmittedValue) ? this.rootDirectory : rootDirectory as SdkOptional<String?>,
-    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as SdkOptional<DeleteProjectAvatarResponseSandbox>,
-    security: identical(security, sdkOmittedValue) ? this.security : security as SdkOptional<DeleteProjectAvatarResponseSecurity>,
-    serverlessFunctionZeroConfigFailover: identical(serverlessFunctionZeroConfigFailover, sdkOmittedValue) ? this.serverlessFunctionZeroConfigFailover : serverlessFunctionZeroConfigFailover as SdkOptional<DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover>,
-    services: identical(services, sdkOmittedValue) ? this.services : services as SdkOptional<List<DeleteProjectAvatarResponseServicesItem>>,
-    skewProtectionAllowedDomains: identical(skewProtectionAllowedDomains, sdkOmittedValue) ? this.skewProtectionAllowedDomains : skewProtectionAllowedDomains as SdkOptional<List<String>>,
-    skewProtectionBoundaryAt: identical(skewProtectionBoundaryAt, sdkOmittedValue) ? this.skewProtectionBoundaryAt : skewProtectionBoundaryAt as SdkOptional<double>,
-    skewProtectionMaxAge: identical(skewProtectionMaxAge, sdkOmittedValue) ? this.skewProtectionMaxAge : skewProtectionMaxAge as SdkOptional<double>,
-    skipGitConnectDuringLink: identical(skipGitConnectDuringLink, sdkOmittedValue) ? this.skipGitConnectDuringLink : skipGitConnectDuringLink as SdkOptional<DeleteProjectAvatarResponseSkipGitConnectDuringLink>,
-    sourceFilesOutsideRootDirectory: identical(sourceFilesOutsideRootDirectory, sdkOmittedValue) ? this.sourceFilesOutsideRootDirectory : sourceFilesOutsideRootDirectory as SdkOptional<DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory>,
-    speedInsights: identical(speedInsights, sdkOmittedValue) ? this.speedInsights : speedInsights as SdkOptional<DeleteProjectAvatarResponseSpeedInsights>,
-    ssoProtection: identical(ssoProtection, sdkOmittedValue) ? this.ssoProtection : ssoProtection as SdkOptional<DeleteProjectAvatarResponseSsoProtection?>,
-    staticIps: identical(staticIps, sdkOmittedValue) ? this.staticIps : staticIps as SdkOptional<DeleteProjectAvatarResponseStaticIps>,
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<Map<String, DeleteProjectAvatarResponseTargetsValue>>,
-    tier: identical(tier, sdkOmittedValue) ? this.tier : tier as SdkOptional<DeleteProjectAvatarResponseTier>,
-    tracing: identical(tracing, sdkOmittedValue) ? this.tracing : tracing as SdkOptional<DeleteProjectAvatarResponseTracing>,
-    transferCompletedAt: identical(transferCompletedAt, sdkOmittedValue) ? this.transferCompletedAt : transferCompletedAt as SdkOptional<double>,
-    transferredFromAccountId: identical(transferredFromAccountId, sdkOmittedValue) ? this.transferredFromAccountId : transferredFromAccountId as SdkOptional<String>,
-    transferStartedAt: identical(transferStartedAt, sdkOmittedValue) ? this.transferStartedAt : transferStartedAt as SdkOptional<double>,
-    transferToAccountId: identical(transferToAccountId, sdkOmittedValue) ? this.transferToAccountId : transferToAccountId as SdkOptional<String>,
-    trustedIps: identical(trustedIps, sdkOmittedValue) ? this.trustedIps : trustedIps as SdkOptional<DeleteProjectAvatarResponseTrustedIps?>,
-    trustedSources: identical(trustedSources, sdkOmittedValue) ? this.trustedSources : trustedSources as SdkOptional<DeleteProjectAvatarResponseTrustedSources?>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    usageStatus: identical(usageStatus, sdkOmittedValue) ? this.usageStatus : usageStatus as SdkOptional<DeleteProjectAvatarResponseUsageStatus>,
-    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<DeleteProjectAvatarResponseV0>,
-    v0Created: identical(v0Created, sdkOmittedValue) ? this.v0Created : v0Created as SdkOptional<DeleteProjectAvatarResponseV0Created>,
-    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<DeleteProjectAvatarResponseWebAnalytics>,
-  );
+  DeleteProjectAvatarResponse _copyWith(
+          {Object? accountId = sdkOmittedValue,
+          Object? alias = sdkOmittedValue,
+          Object? analytics = sdkOmittedValue,
+          Object? appliedCve55182Migration = sdkOmittedValue,
+          Object? autoAssignCustomDomains = sdkOmittedValue,
+          Object? autoAssignCustomDomainsUpdatedBy = sdkOmittedValue,
+          Object? autoExposeSystemEnvs = sdkOmittedValue,
+          Object? avatar = sdkOmittedValue,
+          Object? avatarDarkMode = sdkOmittedValue,
+          Object? blobs = sdkOmittedValue,
+          Object? buildCommand = sdkOmittedValue,
+          Object? commandForIgnoringBuildStep = sdkOmittedValue,
+          Object? concurrencyBucketName = sdkOmittedValue,
+          Object? connectBuildsEnabled = sdkOmittedValue,
+          Object? connectConfigurationId = sdkOmittedValue,
+          Object? connectConfigurations = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? creator = sdkOmittedValue,
+          Object? crons = sdkOmittedValue,
+          Object? customEnvironments = sdkOmittedValue,
+          Object? customerSupportCodeVisibility = sdkOmittedValue,
+          Object? dataCache = sdkOmittedValue,
+          Object? defaultResourceConfig = sdkOmittedValue,
+          Object? deploymentExpiration = sdkOmittedValue,
+          Object? deploymentPolicy = sdkOmittedValue,
+          Object? devCommand = sdkOmittedValue,
+          Object? directoryListing = sdkOmittedValue,
+          Object? dismissedToasts = sdkOmittedValue,
+          Object? enableAffectedProjectsDeployments = sdkOmittedValue,
+          Object? enableExternalRewriteCaching = sdkOmittedValue,
+          Object? enablePreviewFeedback = sdkOmittedValue,
+          Object? enableProductionFeedback = sdkOmittedValue,
+          Object? env = sdkOmittedValue,
+          Object? expiration = sdkOmittedValue,
+          Object? features = sdkOmittedValue,
+          Object? framework = sdkOmittedValue,
+          Object? gitComments = sdkOmittedValue,
+          Object? gitForkProtection = sdkOmittedValue,
+          Object? gitLfs = sdkOmittedValue,
+          Object? gitProviderOptions = sdkOmittedValue,
+          Object? hasActiveBranches = sdkOmittedValue,
+          Object? hasDeployments = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? installCommand = sdkOmittedValue,
+          Object? internalRoutes = sdkOmittedValue,
+          Object? ipBuckets = sdkOmittedValue,
+          Object? jobs = sdkOmittedValue,
+          Object? lastAliasRequest = sdkOmittedValue,
+          Object? lastRollbackTarget = sdkOmittedValue,
+          Object? latestDeployments = sdkOmittedValue,
+          Object? link = sdkOmittedValue,
+          Object? live = sdkOmittedValue,
+          Object? microfrontends = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? nodeVersion = sdkOmittedValue,
+          Object? oidcTokenConfig = sdkOmittedValue,
+          Object? optionsAllowlist = sdkOmittedValue,
+          Object? outputDirectory = sdkOmittedValue,
+          Object? passiveConnectConfigurationId = sdkOmittedValue,
+          Object? passport = sdkOmittedValue,
+          Object? passwordProtection = sdkOmittedValue,
+          Object? paused = sdkOmittedValue,
+          Object? permissions = sdkOmittedValue,
+          Object? productionDeploymentsFastLane = sdkOmittedValue,
+          Object? protectedSourcemaps = sdkOmittedValue,
+          Object? protectionBypass = sdkOmittedValue,
+          Object? protectionConfig = sdkOmittedValue,
+          Object? resourceConfig = sdkOmittedValue,
+          Object? rollbackDescription = sdkOmittedValue,
+          Object? rollingRelease = sdkOmittedValue,
+          Object? rootDirectory = sdkOmittedValue,
+          Object? sandbox = sdkOmittedValue,
+          Object? security = sdkOmittedValue,
+          Object? serverlessFunctionZeroConfigFailover = sdkOmittedValue,
+          Object? services = sdkOmittedValue,
+          Object? skewProtectionAllowedDomains = sdkOmittedValue,
+          Object? skewProtectionBoundaryAt = sdkOmittedValue,
+          Object? skewProtectionMaxAge = sdkOmittedValue,
+          Object? skipGitConnectDuringLink = sdkOmittedValue,
+          Object? sourceFilesOutsideRootDirectory = sdkOmittedValue,
+          Object? speedInsights = sdkOmittedValue,
+          Object? ssoProtection = sdkOmittedValue,
+          Object? staticIps = sdkOmittedValue,
+          Object? targets = sdkOmittedValue,
+          Object? tier = sdkOmittedValue,
+          Object? tracing = sdkOmittedValue,
+          Object? transferCompletedAt = sdkOmittedValue,
+          Object? transferredFromAccountId = sdkOmittedValue,
+          Object? transferStartedAt = sdkOmittedValue,
+          Object? transferToAccountId = sdkOmittedValue,
+          Object? trustedIps = sdkOmittedValue,
+          Object? trustedSources = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? usageStatus = sdkOmittedValue,
+          Object? v0 = sdkOmittedValue,
+          Object? v0Created = sdkOmittedValue,
+          Object? webAnalytics = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponse(
+        accountId: identical(accountId, sdkOmittedValue)
+            ? this.accountId
+            : accountId as String,
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as List<DeleteProjectAvatarResponseAliasItem>,
+        analytics: identical(analytics, sdkOmittedValue)
+            ? this.analytics
+            : analytics as SdkOptional<DeleteProjectAvatarResponseAnalytics>,
+        appliedCve55182Migration:
+            identical(appliedCve55182Migration, sdkOmittedValue)
+                ? this.appliedCve55182Migration
+                : appliedCve55182Migration as SdkOptional<
+                    DeleteProjectAvatarResponseAppliedCve55182Migration>,
+        autoAssignCustomDomains:
+            identical(autoAssignCustomDomains, sdkOmittedValue)
+                ? this.autoAssignCustomDomains
+                : autoAssignCustomDomains as SdkOptional<
+                    DeleteProjectAvatarResponseAutoAssignCustomDomains>,
+        autoAssignCustomDomainsUpdatedBy:
+            identical(autoAssignCustomDomainsUpdatedBy, sdkOmittedValue)
+                ? this.autoAssignCustomDomainsUpdatedBy
+                : autoAssignCustomDomainsUpdatedBy as SdkOptional<String>,
+        autoExposeSystemEnvs: identical(autoExposeSystemEnvs, sdkOmittedValue)
+            ? this.autoExposeSystemEnvs
+            : autoExposeSystemEnvs
+                as SdkOptional<DeleteProjectAvatarResponseAutoExposeSystemEnvs>,
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as SdkOptional<String?>,
+        avatarDarkMode: identical(avatarDarkMode, sdkOmittedValue)
+            ? this.avatarDarkMode
+            : avatarDarkMode as SdkOptional<String?>,
+        blobs: identical(blobs, sdkOmittedValue)
+            ? this.blobs
+            : blobs as SdkOptional<DeleteProjectAvatarResponseBlobs>,
+        buildCommand: identical(buildCommand, sdkOmittedValue)
+            ? this.buildCommand
+            : buildCommand as SdkOptional<String?>,
+        commandForIgnoringBuildStep:
+            identical(commandForIgnoringBuildStep, sdkOmittedValue)
+                ? this.commandForIgnoringBuildStep
+                : commandForIgnoringBuildStep as SdkOptional<String?>,
+        concurrencyBucketName: identical(concurrencyBucketName, sdkOmittedValue)
+            ? this.concurrencyBucketName
+            : concurrencyBucketName as SdkOptional<String>,
+        connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue)
+            ? this.connectBuildsEnabled
+            : connectBuildsEnabled
+                as SdkOptional<DeleteProjectAvatarResponseConnectBuildsEnabled>,
+        connectConfigurationId:
+            identical(connectConfigurationId, sdkOmittedValue)
+                ? this.connectConfigurationId
+                : connectConfigurationId as SdkOptional<String?>,
+        connectConfigurations: identical(connectConfigurations, sdkOmittedValue)
+            ? this.connectConfigurations
+            : connectConfigurations as SdkOptional<
+                List<DeleteProjectAvatarResponseConnectConfigurationsItem>?>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        creator: identical(creator, sdkOmittedValue)
+            ? this.creator
+            : creator as SdkOptional<DeleteProjectAvatarResponseCreator>,
+        crons: identical(crons, sdkOmittedValue)
+            ? this.crons
+            : crons as SdkOptional<DeleteProjectAvatarResponseCrons>,
+        customEnvironments: identical(customEnvironments, sdkOmittedValue)
+            ? this.customEnvironments
+            : customEnvironments as SdkOptional<
+                List<DeleteProjectAvatarResponseCustomEnvironmentsItem>>,
+        customerSupportCodeVisibility:
+            identical(customerSupportCodeVisibility, sdkOmittedValue)
+                ? this.customerSupportCodeVisibility
+                : customerSupportCodeVisibility as SdkOptional<
+                    DeleteProjectAvatarResponseCustomerSupportCodeVisibility>,
+        dataCache: identical(dataCache, sdkOmittedValue)
+            ? this.dataCache
+            : dataCache as SdkOptional<DeleteProjectAvatarResponseDataCache>,
+        defaultResourceConfig: identical(defaultResourceConfig, sdkOmittedValue)
+            ? this.defaultResourceConfig
+            : defaultResourceConfig
+                as DeleteProjectAvatarResponseDefaultResourceConfig,
+        deploymentExpiration: identical(deploymentExpiration, sdkOmittedValue)
+            ? this.deploymentExpiration
+            : deploymentExpiration
+                as DeleteProjectAvatarResponseDeploymentExpiration,
+        deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue)
+            ? this.deploymentPolicy
+            : deploymentPolicy
+                as SdkOptional<DeleteProjectAvatarResponseDeploymentPolicy?>,
+        devCommand: identical(devCommand, sdkOmittedValue)
+            ? this.devCommand
+            : devCommand as SdkOptional<String?>,
+        directoryListing: identical(directoryListing, sdkOmittedValue)
+            ? this.directoryListing
+            : directoryListing as DeleteProjectAvatarResponseDirectoryListing,
+        dismissedToasts: identical(dismissedToasts, sdkOmittedValue)
+            ? this.dismissedToasts
+            : dismissedToasts as SdkOptional<
+                List<DeleteProjectAvatarResponseDismissedToastsItem>>,
+        enableAffectedProjectsDeployments: identical(
+                enableAffectedProjectsDeployments, sdkOmittedValue)
+            ? this.enableAffectedProjectsDeployments
+            : enableAffectedProjectsDeployments as SdkOptional<
+                DeleteProjectAvatarResponseEnableAffectedProjectsDeployments>,
+        enableExternalRewriteCaching:
+            identical(enableExternalRewriteCaching, sdkOmittedValue)
+                ? this.enableExternalRewriteCaching
+                : enableExternalRewriteCaching as SdkOptional<
+                    DeleteProjectAvatarResponseEnableExternalRewriteCaching>,
+        enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue)
+            ? this.enablePreviewFeedback
+            : enablePreviewFeedback as SdkOptional<
+                DeleteProjectAvatarResponseEnablePreviewFeedback?>,
+        enableProductionFeedback:
+            identical(enableProductionFeedback, sdkOmittedValue)
+                ? this.enableProductionFeedback
+                : enableProductionFeedback as SdkOptional<
+                    DeleteProjectAvatarResponseEnableProductionFeedback?>,
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<List<DeleteProjectAvatarResponseEnvItem>>,
+        expiration: identical(expiration, sdkOmittedValue)
+            ? this.expiration
+            : expiration as SdkOptional<DeleteProjectAvatarResponseExpiration>,
+        features: identical(features, sdkOmittedValue)
+            ? this.features
+            : features as SdkOptional<DeleteProjectAvatarResponseFeatures>,
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<DeleteProjectAvatarResponseFramework?>,
+        gitComments: identical(gitComments, sdkOmittedValue)
+            ? this.gitComments
+            : gitComments
+                as SdkOptional<DeleteProjectAvatarResponseGitComments>,
+        gitForkProtection: identical(gitForkProtection, sdkOmittedValue)
+            ? this.gitForkProtection
+            : gitForkProtection
+                as SdkOptional<DeleteProjectAvatarResponseGitForkProtection>,
+        gitLfs: identical(gitLfs, sdkOmittedValue)
+            ? this.gitLfs
+            : gitLfs as SdkOptional<DeleteProjectAvatarResponseGitLFS>,
+        gitProviderOptions: identical(gitProviderOptions, sdkOmittedValue)
+            ? this.gitProviderOptions
+            : gitProviderOptions
+                as SdkOptional<DeleteProjectAvatarResponseGitProviderOptions>,
+        hasActiveBranches: identical(hasActiveBranches, sdkOmittedValue)
+            ? this.hasActiveBranches
+            : hasActiveBranches
+                as SdkOptional<DeleteProjectAvatarResponseHasActiveBranches>,
+        hasDeployments: identical(hasDeployments, sdkOmittedValue)
+            ? this.hasDeployments
+            : hasDeployments
+                as SdkOptional<DeleteProjectAvatarResponseHasDeployments>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        installCommand: identical(installCommand, sdkOmittedValue)
+            ? this.installCommand
+            : installCommand as SdkOptional<String?>,
+        internalRoutes: identical(internalRoutes, sdkOmittedValue)
+            ? this.internalRoutes
+            : internalRoutes as SdkOptional<
+                List<DeleteProjectAvatarResponseInternalRoutesItem>>,
+        ipBuckets: identical(ipBuckets, sdkOmittedValue)
+            ? this.ipBuckets
+            : ipBuckets
+                as SdkOptional<List<DeleteProjectAvatarResponseIpBucketsItem>>,
+        jobs: identical(jobs, sdkOmittedValue)
+            ? this.jobs
+            : jobs as SdkOptional<DeleteProjectAvatarResponseJobs>,
+        lastAliasRequest: identical(lastAliasRequest, sdkOmittedValue)
+            ? this.lastAliasRequest
+            : lastAliasRequest
+                as SdkOptional<DeleteProjectAvatarResponseLastAliasRequest?>,
+        lastRollbackTarget: identical(lastRollbackTarget, sdkOmittedValue)
+            ? this.lastRollbackTarget
+            : lastRollbackTarget as SdkOptional<Map<String, dynamic>?>,
+        latestDeployments: identical(latestDeployments, sdkOmittedValue)
+            ? this.latestDeployments
+            : latestDeployments as SdkOptional<
+                List<DeleteProjectAvatarResponseLatestDeploymentsItem>>,
+        link: identical(link, sdkOmittedValue)
+            ? this.link
+            : link as SdkOptional<DeleteProjectAvatarResponseLink>,
+        live: identical(live, sdkOmittedValue)
+            ? this.live
+            : live as SdkOptional<DeleteProjectAvatarResponseLive>,
+        microfrontends: identical(microfrontends, sdkOmittedValue)
+            ? this.microfrontends
+            : microfrontends
+                as SdkOptional<DeleteProjectAvatarResponseMicrofrontends>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        nodeVersion: identical(nodeVersion, sdkOmittedValue)
+            ? this.nodeVersion
+            : nodeVersion as DeleteProjectAvatarResponseNodeVersion,
+        oidcTokenConfig: identical(oidcTokenConfig, sdkOmittedValue)
+            ? this.oidcTokenConfig
+            : oidcTokenConfig
+                as SdkOptional<DeleteProjectAvatarResponseOidcTokenConfig>,
+        optionsAllowlist: identical(optionsAllowlist, sdkOmittedValue)
+            ? this.optionsAllowlist
+            : optionsAllowlist
+                as SdkOptional<DeleteProjectAvatarResponseOptionsAllowlist?>,
+        outputDirectory: identical(outputDirectory, sdkOmittedValue)
+            ? this.outputDirectory
+            : outputDirectory as SdkOptional<String?>,
+        passiveConnectConfigurationId:
+            identical(passiveConnectConfigurationId, sdkOmittedValue)
+                ? this.passiveConnectConfigurationId
+                : passiveConnectConfigurationId as SdkOptional<String?>,
+        passport: identical(passport, sdkOmittedValue)
+            ? this.passport
+            : passport as SdkOptional<DeleteProjectAvatarResponsePassport?>,
+        passwordProtection: identical(passwordProtection, sdkOmittedValue)
+            ? this.passwordProtection
+            : passwordProtection
+                as SdkOptional<DeleteProjectAvatarResponsePasswordProtection?>,
+        paused: identical(paused, sdkOmittedValue)
+            ? this.paused
+            : paused as SdkOptional<DeleteProjectAvatarResponsePaused>,
+        permissions: identical(permissions, sdkOmittedValue)
+            ? this.permissions
+            : permissions
+                as SdkOptional<DeleteProjectAvatarResponsePermissions>,
+        productionDeploymentsFastLane:
+            identical(productionDeploymentsFastLane, sdkOmittedValue)
+                ? this.productionDeploymentsFastLane
+                : productionDeploymentsFastLane as SdkOptional<
+                    DeleteProjectAvatarResponseProductionDeploymentsFastLane>,
+        protectedSourcemaps: identical(protectedSourcemaps, sdkOmittedValue)
+            ? this.protectedSourcemaps
+            : protectedSourcemaps
+                as SdkOptional<DeleteProjectAvatarResponseProtectedSourcemaps>,
+        protectionBypass: identical(protectionBypass, sdkOmittedValue)
+            ? this.protectionBypass
+            : protectionBypass as SdkOptional<Map<String, dynamic>>,
+        protectionConfig: identical(protectionConfig, sdkOmittedValue)
+            ? this.protectionConfig
+            : protectionConfig
+                as SdkOptional<DeleteProjectAvatarResponseProtectionConfig>,
+        resourceConfig: identical(resourceConfig, sdkOmittedValue)
+            ? this.resourceConfig
+            : resourceConfig as DeleteProjectAvatarResponseResourceConfig,
+        rollbackDescription: identical(rollbackDescription, sdkOmittedValue)
+            ? this.rollbackDescription
+            : rollbackDescription
+                as SdkOptional<DeleteProjectAvatarResponseRollbackDescription>,
+        rollingRelease: identical(rollingRelease, sdkOmittedValue)
+            ? this.rollingRelease
+            : rollingRelease
+                as SdkOptional<DeleteProjectAvatarResponseRollingRelease?>,
+        rootDirectory: identical(rootDirectory, sdkOmittedValue)
+            ? this.rootDirectory
+            : rootDirectory as SdkOptional<String?>,
+        sandbox: identical(sandbox, sdkOmittedValue)
+            ? this.sandbox
+            : sandbox as SdkOptional<DeleteProjectAvatarResponseSandbox>,
+        security: identical(security, sdkOmittedValue)
+            ? this.security
+            : security as SdkOptional<DeleteProjectAvatarResponseSecurity>,
+        serverlessFunctionZeroConfigFailover: identical(
+                serverlessFunctionZeroConfigFailover, sdkOmittedValue)
+            ? this.serverlessFunctionZeroConfigFailover
+            : serverlessFunctionZeroConfigFailover as SdkOptional<
+                DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover>,
+        services: identical(services, sdkOmittedValue)
+            ? this.services
+            : services
+                as SdkOptional<List<DeleteProjectAvatarResponseServicesItem>>,
+        skewProtectionAllowedDomains:
+            identical(skewProtectionAllowedDomains, sdkOmittedValue)
+                ? this.skewProtectionAllowedDomains
+                : skewProtectionAllowedDomains as SdkOptional<List<String>>,
+        skewProtectionBoundaryAt:
+            identical(skewProtectionBoundaryAt, sdkOmittedValue)
+                ? this.skewProtectionBoundaryAt
+                : skewProtectionBoundaryAt as SdkOptional<double>,
+        skewProtectionMaxAge: identical(skewProtectionMaxAge, sdkOmittedValue)
+            ? this.skewProtectionMaxAge
+            : skewProtectionMaxAge as SdkOptional<double>,
+        skipGitConnectDuringLink:
+            identical(skipGitConnectDuringLink, sdkOmittedValue)
+                ? this.skipGitConnectDuringLink
+                : skipGitConnectDuringLink as SdkOptional<
+                    DeleteProjectAvatarResponseSkipGitConnectDuringLink>,
+        sourceFilesOutsideRootDirectory:
+            identical(sourceFilesOutsideRootDirectory, sdkOmittedValue)
+                ? this.sourceFilesOutsideRootDirectory
+                : sourceFilesOutsideRootDirectory as SdkOptional<
+                    DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory>,
+        speedInsights: identical(speedInsights, sdkOmittedValue)
+            ? this.speedInsights
+            : speedInsights
+                as SdkOptional<DeleteProjectAvatarResponseSpeedInsights>,
+        ssoProtection: identical(ssoProtection, sdkOmittedValue)
+            ? this.ssoProtection
+            : ssoProtection
+                as SdkOptional<DeleteProjectAvatarResponseSsoProtection?>,
+        staticIps: identical(staticIps, sdkOmittedValue)
+            ? this.staticIps
+            : staticIps as SdkOptional<DeleteProjectAvatarResponseStaticIps>,
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as SdkOptional<
+                Map<String, DeleteProjectAvatarResponseTargetsValue>>,
+        tier: identical(tier, sdkOmittedValue)
+            ? this.tier
+            : tier as SdkOptional<DeleteProjectAvatarResponseTier>,
+        tracing: identical(tracing, sdkOmittedValue)
+            ? this.tracing
+            : tracing as SdkOptional<DeleteProjectAvatarResponseTracing>,
+        transferCompletedAt: identical(transferCompletedAt, sdkOmittedValue)
+            ? this.transferCompletedAt
+            : transferCompletedAt as SdkOptional<double>,
+        transferredFromAccountId:
+            identical(transferredFromAccountId, sdkOmittedValue)
+                ? this.transferredFromAccountId
+                : transferredFromAccountId as SdkOptional<String>,
+        transferStartedAt: identical(transferStartedAt, sdkOmittedValue)
+            ? this.transferStartedAt
+            : transferStartedAt as SdkOptional<double>,
+        transferToAccountId: identical(transferToAccountId, sdkOmittedValue)
+            ? this.transferToAccountId
+            : transferToAccountId as SdkOptional<String>,
+        trustedIps: identical(trustedIps, sdkOmittedValue)
+            ? this.trustedIps
+            : trustedIps as SdkOptional<DeleteProjectAvatarResponseTrustedIps?>,
+        trustedSources: identical(trustedSources, sdkOmittedValue)
+            ? this.trustedSources
+            : trustedSources
+                as SdkOptional<DeleteProjectAvatarResponseTrustedSources?>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        usageStatus: identical(usageStatus, sdkOmittedValue)
+            ? this.usageStatus
+            : usageStatus
+                as SdkOptional<DeleteProjectAvatarResponseUsageStatus>,
+        v0: identical(v0, sdkOmittedValue)
+            ? this.v0
+            : v0 as SdkOptional<DeleteProjectAvatarResponseV0>,
+        v0Created: identical(v0Created, sdkOmittedValue)
+            ? this.v0Created
+            : v0Created as SdkOptional<DeleteProjectAvatarResponseV0Created>,
+        webAnalytics: identical(webAnalytics, sdkOmittedValue)
+            ? this.webAnalytics
+            : webAnalytics
+                as SdkOptional<DeleteProjectAvatarResponseWebAnalytics>,
+      );
 
-  factory DeleteProjectAvatarResponse.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponse(
-    accountId: (json['accountId'] as String?)!,
-    alias: ((json['alias'] as List?)?.map((e) => DeleteProjectAvatarResponseAliasItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    analytics: json['analytics'] != null ? SdkPresent((json['analytics'] != null ? DeleteProjectAvatarResponseAnalytics.fromJson(json['analytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    appliedCve55182Migration: json['appliedCve55182Migration'] != null ? SdkPresent((json['appliedCve55182Migration'] != null ? DeleteProjectAvatarResponseAppliedCve55182Migration.fromJson(json['appliedCve55182Migration'] as bool) : null)!) : const SdkOmitted(),
-    autoAssignCustomDomains: json['autoAssignCustomDomains'] != null ? SdkPresent((json['autoAssignCustomDomains'] != null ? DeleteProjectAvatarResponseAutoAssignCustomDomains.fromJson(json['autoAssignCustomDomains'] as bool) : null)!) : const SdkOmitted(),
-    autoAssignCustomDomainsUpdatedBy: json['autoAssignCustomDomainsUpdatedBy'] != null ? SdkPresent((json['autoAssignCustomDomainsUpdatedBy'] as String?)!) : const SdkOmitted(),
-    autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null ? SdkPresent((json['autoExposeSystemEnvs'] != null ? DeleteProjectAvatarResponseAutoExposeSystemEnvs.fromJson(json['autoExposeSystemEnvs'] as bool) : null)!) : const SdkOmitted(),
-    avatar: json.containsKey('avatar') ? SdkPresent(json['avatar'] as String?) : const SdkOmitted(),
-    avatarDarkMode: json.containsKey('avatarDarkMode') ? SdkPresent(json['avatarDarkMode'] as String?) : const SdkOmitted(),
-    blobs: json['blobs'] != null ? SdkPresent((json['blobs'] != null ? DeleteProjectAvatarResponseBlobs.fromJson(json['blobs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildCommand: json.containsKey('buildCommand') ? SdkPresent(json['buildCommand'] as String?) : const SdkOmitted(),
-    commandForIgnoringBuildStep: json.containsKey('commandForIgnoringBuildStep') ? SdkPresent(json['commandForIgnoringBuildStep'] as String?) : const SdkOmitted(),
-    concurrencyBucketName: json['concurrencyBucketName'] != null ? SdkPresent((json['concurrencyBucketName'] as String?)!) : const SdkOmitted(),
-    connectBuildsEnabled: json['connectBuildsEnabled'] != null ? SdkPresent((json['connectBuildsEnabled'] != null ? DeleteProjectAvatarResponseConnectBuildsEnabled.fromJson(json['connectBuildsEnabled'] as bool) : null)!) : const SdkOmitted(),
-    connectConfigurationId: json.containsKey('connectConfigurationId') ? SdkPresent(json['connectConfigurationId'] as String?) : const SdkOmitted(),
-    connectConfigurations: json.containsKey('connectConfigurations') ? SdkPresent((json['connectConfigurations'] as List?)?.map((e) => DeleteProjectAvatarResponseConnectConfigurationsItem.fromJson(e as Map<String, dynamic>)).toList()) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    creator: json['creator'] != null ? SdkPresent((json['creator'] != null ? DeleteProjectAvatarResponseCreator.fromJson(json['creator']) : null)!) : const SdkOmitted(),
-    crons: json['crons'] != null ? SdkPresent((json['crons'] != null ? DeleteProjectAvatarResponseCrons.fromJson(json['crons'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    customEnvironments: json['customEnvironments'] != null ? SdkPresent(((json['customEnvironments'] as List?)?.map((e) => DeleteProjectAvatarResponseCustomEnvironmentsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    customerSupportCodeVisibility: json['customerSupportCodeVisibility'] != null ? SdkPresent((json['customerSupportCodeVisibility'] != null ? DeleteProjectAvatarResponseCustomerSupportCodeVisibility.fromJson(json['customerSupportCodeVisibility'] as bool) : null)!) : const SdkOmitted(),
-    dataCache: json['dataCache'] != null ? SdkPresent((json['dataCache'] != null ? DeleteProjectAvatarResponseDataCache.fromJson(json['dataCache'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    defaultResourceConfig: (json['defaultResourceConfig'] != null ? DeleteProjectAvatarResponseDefaultResourceConfig.fromJson(json['defaultResourceConfig'] as Map<String, dynamic>) : null)!,
-    deploymentExpiration: (json['deploymentExpiration'] != null ? DeleteProjectAvatarResponseDeploymentExpiration.fromJson(json['deploymentExpiration'] as Map<String, dynamic>) : null)!,
-    deploymentPolicy: json.containsKey('deploymentPolicy') ? SdkPresent(json['deploymentPolicy'] != null ? DeleteProjectAvatarResponseDeploymentPolicy.fromJson(json['deploymentPolicy'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    devCommand: json.containsKey('devCommand') ? SdkPresent(json['devCommand'] as String?) : const SdkOmitted(),
-    directoryListing: (json['directoryListing'] != null ? DeleteProjectAvatarResponseDirectoryListing.fromJson(json['directoryListing'] as bool) : null)!,
-    dismissedToasts: json['dismissedToasts'] != null ? SdkPresent(((json['dismissedToasts'] as List?)?.map((e) => DeleteProjectAvatarResponseDismissedToastsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    enableAffectedProjectsDeployments: json['enableAffectedProjectsDeployments'] != null ? SdkPresent((json['enableAffectedProjectsDeployments'] != null ? DeleteProjectAvatarResponseEnableAffectedProjectsDeployments.fromJson(json['enableAffectedProjectsDeployments'] as bool) : null)!) : const SdkOmitted(),
-    enableExternalRewriteCaching: json['enableExternalRewriteCaching'] != null ? SdkPresent((json['enableExternalRewriteCaching'] != null ? DeleteProjectAvatarResponseEnableExternalRewriteCaching.fromJson(json['enableExternalRewriteCaching'] as bool) : null)!) : const SdkOmitted(),
-    enablePreviewFeedback: json.containsKey('enablePreviewFeedback') ? SdkPresent(json['enablePreviewFeedback'] != null ? DeleteProjectAvatarResponseEnablePreviewFeedback.fromJson(json['enablePreviewFeedback'] as bool) : null) : const SdkOmitted(),
-    enableProductionFeedback: json.containsKey('enableProductionFeedback') ? SdkPresent(json['enableProductionFeedback'] != null ? DeleteProjectAvatarResponseEnableProductionFeedback.fromJson(json['enableProductionFeedback'] as bool) : null) : const SdkOmitted(),
-    env: json['env'] != null ? SdkPresent(((json['env'] as List?)?.map((e) => DeleteProjectAvatarResponseEnvItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    expiration: json['expiration'] != null ? SdkPresent((json['expiration'] != null ? DeleteProjectAvatarResponseExpiration.fromJson(json['expiration']) : null)!) : const SdkOmitted(),
-    features: json['features'] != null ? SdkPresent((json['features'] != null ? DeleteProjectAvatarResponseFeatures.fromJson(json['features'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? DeleteProjectAvatarResponseFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    gitComments: json['gitComments'] != null ? SdkPresent((json['gitComments'] != null ? DeleteProjectAvatarResponseGitComments.fromJson(json['gitComments'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    gitForkProtection: json['gitForkProtection'] != null ? SdkPresent((json['gitForkProtection'] != null ? DeleteProjectAvatarResponseGitForkProtection.fromJson(json['gitForkProtection'] as bool) : null)!) : const SdkOmitted(),
-    gitLfs: json['gitLFS'] != null ? SdkPresent((json['gitLFS'] != null ? DeleteProjectAvatarResponseGitLFS.fromJson(json['gitLFS'] as bool) : null)!) : const SdkOmitted(),
-    gitProviderOptions: json['gitProviderOptions'] != null ? SdkPresent((json['gitProviderOptions'] != null ? DeleteProjectAvatarResponseGitProviderOptions.fromJson(json['gitProviderOptions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    hasActiveBranches: json['hasActiveBranches'] != null ? SdkPresent((json['hasActiveBranches'] != null ? DeleteProjectAvatarResponseHasActiveBranches.fromJson(json['hasActiveBranches'] as bool) : null)!) : const SdkOmitted(),
-    hasDeployments: json['hasDeployments'] != null ? SdkPresent((json['hasDeployments'] != null ? DeleteProjectAvatarResponseHasDeployments.fromJson(json['hasDeployments'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    installCommand: json.containsKey('installCommand') ? SdkPresent(json['installCommand'] as String?) : const SdkOmitted(),
-    internalRoutes: json['internalRoutes'] != null ? SdkPresent(((json['internalRoutes'] as List?)?.map((e) => DeleteProjectAvatarResponseInternalRoutesItem.fromJson(e)).toList())!) : const SdkOmitted(),
-    ipBuckets: json['ipBuckets'] != null ? SdkPresent(((json['ipBuckets'] as List?)?.map((e) => DeleteProjectAvatarResponseIpBucketsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    jobs: json['jobs'] != null ? SdkPresent((json['jobs'] != null ? DeleteProjectAvatarResponseJobs.fromJson(json['jobs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    lastAliasRequest: json.containsKey('lastAliasRequest') ? SdkPresent(json['lastAliasRequest'] != null ? DeleteProjectAvatarResponseLastAliasRequest.fromJson(json['lastAliasRequest'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    lastRollbackTarget: json.containsKey('lastRollbackTarget') ? SdkPresent(json['lastRollbackTarget'] == null ? null : json['lastRollbackTarget'] as Map<String, dynamic>) : const SdkOmitted(),
-    latestDeployments: json['latestDeployments'] != null ? SdkPresent(((json['latestDeployments'] as List?)?.map((e) => DeleteProjectAvatarResponseLatestDeploymentsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    link: json['link'] != null ? SdkPresent((json['link'] != null ? DeleteProjectAvatarResponseLink.fromJson(json['link']) : null)!) : const SdkOmitted(),
-    live: json['live'] != null ? SdkPresent((json['live'] != null ? DeleteProjectAvatarResponseLive.fromJson(json['live'] as bool) : null)!) : const SdkOmitted(),
-    microfrontends: json['microfrontends'] != null ? SdkPresent((json['microfrontends'] != null ? DeleteProjectAvatarResponseMicrofrontends.fromJson(json['microfrontends']) : null)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    nodeVersion: (json['nodeVersion'] != null ? DeleteProjectAvatarResponseNodeVersion.fromJson(json['nodeVersion'] as String) : null)!,
-    oidcTokenConfig: json['oidcTokenConfig'] != null ? SdkPresent((json['oidcTokenConfig'] != null ? DeleteProjectAvatarResponseOidcTokenConfig.fromJson(json['oidcTokenConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    optionsAllowlist: json.containsKey('optionsAllowlist') ? SdkPresent(json['optionsAllowlist'] != null ? DeleteProjectAvatarResponseOptionsAllowlist.fromJson(json['optionsAllowlist'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    outputDirectory: json.containsKey('outputDirectory') ? SdkPresent(json['outputDirectory'] as String?) : const SdkOmitted(),
-    passiveConnectConfigurationId: json.containsKey('passiveConnectConfigurationId') ? SdkPresent(json['passiveConnectConfigurationId'] as String?) : const SdkOmitted(),
-    passport: json.containsKey('passport') ? SdkPresent(json['passport'] != null ? DeleteProjectAvatarResponsePassport.fromJson(json['passport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    passwordProtection: json.containsKey('passwordProtection') ? SdkPresent(json['passwordProtection'] != null ? DeleteProjectAvatarResponsePasswordProtection.fromJson(json['passwordProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    paused: json['paused'] != null ? SdkPresent((json['paused'] != null ? DeleteProjectAvatarResponsePaused.fromJson(json['paused'] as bool) : null)!) : const SdkOmitted(),
-    permissions: json['permissions'] != null ? SdkPresent((json['permissions'] != null ? DeleteProjectAvatarResponsePermissions.fromJson(json['permissions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    productionDeploymentsFastLane: json['productionDeploymentsFastLane'] != null ? SdkPresent((json['productionDeploymentsFastLane'] != null ? DeleteProjectAvatarResponseProductionDeploymentsFastLane.fromJson(json['productionDeploymentsFastLane'] as bool) : null)!) : const SdkOmitted(),
-    protectedSourcemaps: json['protectedSourcemaps'] != null ? SdkPresent((json['protectedSourcemaps'] != null ? DeleteProjectAvatarResponseProtectedSourcemaps.fromJson(json['protectedSourcemaps'] as bool) : null)!) : const SdkOmitted(),
-    protectionBypass: json['protectionBypass'] != null ? SdkPresent((json['protectionBypass'] == null ? null : json['protectionBypass'] as Map<String, dynamic>)!) : const SdkOmitted(),
-    protectionConfig: json['protectionConfig'] != null ? SdkPresent((json['protectionConfig'] != null ? DeleteProjectAvatarResponseProtectionConfig.fromJson(json['protectionConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    resourceConfig: (json['resourceConfig'] != null ? DeleteProjectAvatarResponseResourceConfig.fromJson(json['resourceConfig'] as Map<String, dynamic>) : null)!,
-    rollbackDescription: json['rollbackDescription'] != null ? SdkPresent((json['rollbackDescription'] != null ? DeleteProjectAvatarResponseRollbackDescription.fromJson(json['rollbackDescription'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    rollingRelease: json.containsKey('rollingRelease') ? SdkPresent(json['rollingRelease'] != null ? DeleteProjectAvatarResponseRollingRelease.fromJson(json['rollingRelease'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    rootDirectory: json.containsKey('rootDirectory') ? SdkPresent(json['rootDirectory'] as String?) : const SdkOmitted(),
-    sandbox: json['sandbox'] != null ? SdkPresent((json['sandbox'] != null ? DeleteProjectAvatarResponseSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    security: json['security'] != null ? SdkPresent((json['security'] != null ? DeleteProjectAvatarResponseSecurity.fromJson(json['security'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    serverlessFunctionZeroConfigFailover: json['serverlessFunctionZeroConfigFailover'] != null ? SdkPresent((json['serverlessFunctionZeroConfigFailover'] != null ? DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover.fromJson(json['serverlessFunctionZeroConfigFailover'] as bool) : null)!) : const SdkOmitted(),
-    services: json['services'] != null ? SdkPresent(((json['services'] as List?)?.map((e) => DeleteProjectAvatarResponseServicesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    skewProtectionAllowedDomains: json['skewProtectionAllowedDomains'] != null ? SdkPresent(((json['skewProtectionAllowedDomains'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    skewProtectionBoundaryAt: json['skewProtectionBoundaryAt'] != null ? SdkPresent(((json['skewProtectionBoundaryAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    skewProtectionMaxAge: json['skewProtectionMaxAge'] != null ? SdkPresent(((json['skewProtectionMaxAge'] as num?)?.toDouble())!) : const SdkOmitted(),
-    skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null ? SdkPresent((json['skipGitConnectDuringLink'] != null ? DeleteProjectAvatarResponseSkipGitConnectDuringLink.fromJson(json['skipGitConnectDuringLink'] as bool) : null)!) : const SdkOmitted(),
-    sourceFilesOutsideRootDirectory: json['sourceFilesOutsideRootDirectory'] != null ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null ? DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory.fromJson(json['sourceFilesOutsideRootDirectory'] as bool) : null)!) : const SdkOmitted(),
-    speedInsights: json['speedInsights'] != null ? SdkPresent((json['speedInsights'] != null ? DeleteProjectAvatarResponseSpeedInsights.fromJson(json['speedInsights'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    ssoProtection: json.containsKey('ssoProtection') ? SdkPresent(json['ssoProtection'] != null ? DeleteProjectAvatarResponseSsoProtection.fromJson(json['ssoProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    staticIps: json['staticIps'] != null ? SdkPresent((json['staticIps'] != null ? DeleteProjectAvatarResponseStaticIps.fromJson(json['staticIps'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    targets: json['targets'] != null ? SdkPresent((json['targets'] == null ? null : Map<String, dynamic>.from(json['targets'] as Map).map((key, value) => MapEntry(key, DeleteProjectAvatarResponseTargetsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    tier: json['tier'] != null ? SdkPresent((json['tier'] != null ? DeleteProjectAvatarResponseTier.fromJson(json['tier'] as String) : null)!) : const SdkOmitted(),
-    tracing: json['tracing'] != null ? SdkPresent((json['tracing'] != null ? DeleteProjectAvatarResponseTracing.fromJson(json['tracing'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    transferCompletedAt: json['transferCompletedAt'] != null ? SdkPresent(((json['transferCompletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    transferredFromAccountId: json['transferredFromAccountId'] != null ? SdkPresent((json['transferredFromAccountId'] as String?)!) : const SdkOmitted(),
-    transferStartedAt: json['transferStartedAt'] != null ? SdkPresent(((json['transferStartedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    transferToAccountId: json['transferToAccountId'] != null ? SdkPresent((json['transferToAccountId'] as String?)!) : const SdkOmitted(),
-    trustedIps: json.containsKey('trustedIps') ? SdkPresent(json['trustedIps'] != null ? DeleteProjectAvatarResponseTrustedIps.fromJson(json['trustedIps']) : null) : const SdkOmitted(),
-    trustedSources: json.containsKey('trustedSources') ? SdkPresent(json['trustedSources'] != null ? DeleteProjectAvatarResponseTrustedSources.fromJson(json['trustedSources'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    usageStatus: json['usageStatus'] != null ? SdkPresent((json['usageStatus'] != null ? DeleteProjectAvatarResponseUsageStatus.fromJson(json['usageStatus'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? DeleteProjectAvatarResponseV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
-    v0Created: json['v0Created'] != null ? SdkPresent((json['v0Created'] != null ? DeleteProjectAvatarResponseV0Created.fromJson(json['v0Created'] as bool) : null)!) : const SdkOmitted(),
-    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? DeleteProjectAvatarResponseWebAnalytics.fromJson(json['webAnalytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory DeleteProjectAvatarResponse.fromJson(Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponse(
+        accountId: (json['accountId'] as String?)!,
+        alias: ((json['alias'] as List?)
+            ?.map((e) => DeleteProjectAvatarResponseAliasItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        analytics: json['analytics'] != null
+            ? SdkPresent((json['analytics'] != null
+                ? DeleteProjectAvatarResponseAnalytics.fromJson(
+                    json['analytics'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        appliedCve55182Migration: json['appliedCve55182Migration'] != null
+            ? SdkPresent((json['appliedCve55182Migration'] != null
+                ? DeleteProjectAvatarResponseAppliedCve55182Migration.fromJson(
+                    json['appliedCve55182Migration'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        autoAssignCustomDomains: json['autoAssignCustomDomains'] != null
+            ? SdkPresent((json['autoAssignCustomDomains'] != null
+                ? DeleteProjectAvatarResponseAutoAssignCustomDomains.fromJson(
+                    json['autoAssignCustomDomains'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        autoAssignCustomDomainsUpdatedBy:
+            json['autoAssignCustomDomainsUpdatedBy'] != null
+                ? SdkPresent(
+                    (json['autoAssignCustomDomainsUpdatedBy'] as String?)!)
+                : const SdkOmitted(),
+        autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null
+            ? SdkPresent((json['autoExposeSystemEnvs'] != null
+                ? DeleteProjectAvatarResponseAutoExposeSystemEnvs.fromJson(
+                    json['autoExposeSystemEnvs'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        avatar: json.containsKey('avatar')
+            ? SdkPresent(json['avatar'] as String?)
+            : const SdkOmitted(),
+        avatarDarkMode: json.containsKey('avatarDarkMode')
+            ? SdkPresent(json['avatarDarkMode'] as String?)
+            : const SdkOmitted(),
+        blobs: json['blobs'] != null
+            ? SdkPresent((json['blobs'] != null
+                ? DeleteProjectAvatarResponseBlobs.fromJson(
+                    json['blobs'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        buildCommand: json.containsKey('buildCommand')
+            ? SdkPresent(json['buildCommand'] as String?)
+            : const SdkOmitted(),
+        commandForIgnoringBuildStep:
+            json.containsKey('commandForIgnoringBuildStep')
+                ? SdkPresent(json['commandForIgnoringBuildStep'] as String?)
+                : const SdkOmitted(),
+        concurrencyBucketName: json['concurrencyBucketName'] != null
+            ? SdkPresent((json['concurrencyBucketName'] as String?)!)
+            : const SdkOmitted(),
+        connectBuildsEnabled: json['connectBuildsEnabled'] != null
+            ? SdkPresent((json['connectBuildsEnabled'] != null
+                ? DeleteProjectAvatarResponseConnectBuildsEnabled.fromJson(
+                    json['connectBuildsEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        connectConfigurationId: json.containsKey('connectConfigurationId')
+            ? SdkPresent(json['connectConfigurationId'] as String?)
+            : const SdkOmitted(),
+        connectConfigurations: json.containsKey('connectConfigurations')
+            ? SdkPresent((json['connectConfigurations'] as List?)
+                ?.map((e) =>
+                    DeleteProjectAvatarResponseConnectConfigurationsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())
+            : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        creator: json['creator'] != null
+            ? SdkPresent((json['creator'] != null
+                ? DeleteProjectAvatarResponseCreator.fromJson(json['creator'])
+                : null)!)
+            : const SdkOmitted(),
+        crons: json['crons'] != null
+            ? SdkPresent((json['crons'] != null
+                ? DeleteProjectAvatarResponseCrons.fromJson(
+                    json['crons'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        customEnvironments: json['customEnvironments'] != null
+            ? SdkPresent(((json['customEnvironments'] as List?)
+                ?.map((e) =>
+                    DeleteProjectAvatarResponseCustomEnvironmentsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        customerSupportCodeVisibility:
+            json['customerSupportCodeVisibility'] != null
+                ? SdkPresent((json['customerSupportCodeVisibility'] != null
+                    ? DeleteProjectAvatarResponseCustomerSupportCodeVisibility
+                        .fromJson(json['customerSupportCodeVisibility'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        dataCache: json['dataCache'] != null
+            ? SdkPresent((json['dataCache'] != null
+                ? DeleteProjectAvatarResponseDataCache.fromJson(
+                    json['dataCache'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        defaultResourceConfig: (json['defaultResourceConfig'] != null
+            ? DeleteProjectAvatarResponseDefaultResourceConfig.fromJson(
+                json['defaultResourceConfig'] as Map<String, dynamic>)
+            : null)!,
+        deploymentExpiration: (json['deploymentExpiration'] != null
+            ? DeleteProjectAvatarResponseDeploymentExpiration.fromJson(
+                json['deploymentExpiration'] as Map<String, dynamic>)
+            : null)!,
+        deploymentPolicy: json.containsKey('deploymentPolicy')
+            ? SdkPresent(json['deploymentPolicy'] != null
+                ? DeleteProjectAvatarResponseDeploymentPolicy.fromJson(
+                    json['deploymentPolicy'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        devCommand: json.containsKey('devCommand')
+            ? SdkPresent(json['devCommand'] as String?)
+            : const SdkOmitted(),
+        directoryListing: (json['directoryListing'] != null
+            ? DeleteProjectAvatarResponseDirectoryListing.fromJson(
+                json['directoryListing'] as bool)
+            : null)!,
+        dismissedToasts: json['dismissedToasts'] != null
+            ? SdkPresent(((json['dismissedToasts'] as List?)
+                ?.map((e) =>
+                    DeleteProjectAvatarResponseDismissedToastsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        enableAffectedProjectsDeployments: json[
+                    'enableAffectedProjectsDeployments'] !=
+                null
+            ? SdkPresent((json['enableAffectedProjectsDeployments'] != null
+                ? DeleteProjectAvatarResponseEnableAffectedProjectsDeployments
+                    .fromJson(json['enableAffectedProjectsDeployments'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        enableExternalRewriteCaching:
+            json['enableExternalRewriteCaching'] != null
+                ? SdkPresent((json['enableExternalRewriteCaching'] != null
+                    ? DeleteProjectAvatarResponseEnableExternalRewriteCaching
+                        .fromJson(json['enableExternalRewriteCaching'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        enablePreviewFeedback: json.containsKey('enablePreviewFeedback')
+            ? SdkPresent(json['enablePreviewFeedback'] != null
+                ? DeleteProjectAvatarResponseEnablePreviewFeedback.fromJson(
+                    json['enablePreviewFeedback'] as bool)
+                : null)
+            : const SdkOmitted(),
+        enableProductionFeedback: json.containsKey('enableProductionFeedback')
+            ? SdkPresent(json['enableProductionFeedback'] != null
+                ? DeleteProjectAvatarResponseEnableProductionFeedback.fromJson(
+                    json['enableProductionFeedback'] as bool)
+                : null)
+            : const SdkOmitted(),
+        env: json['env'] != null
+            ? SdkPresent(((json['env'] as List?)
+                ?.map((e) => DeleteProjectAvatarResponseEnvItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        expiration: json['expiration'] != null
+            ? SdkPresent((json['expiration'] != null
+                ? DeleteProjectAvatarResponseExpiration.fromJson(
+                    json['expiration'])
+                : null)!)
+            : const SdkOmitted(),
+        features: json['features'] != null
+            ? SdkPresent((json['features'] != null
+                ? DeleteProjectAvatarResponseFeatures.fromJson(
+                    json['features'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] != null
+                ? DeleteProjectAvatarResponseFramework.fromJson(
+                    json['framework'] as String)
+                : null)
+            : const SdkOmitted(),
+        gitComments: json['gitComments'] != null
+            ? SdkPresent((json['gitComments'] != null
+                ? DeleteProjectAvatarResponseGitComments.fromJson(
+                    json['gitComments'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        gitForkProtection: json['gitForkProtection'] != null
+            ? SdkPresent((json['gitForkProtection'] != null
+                ? DeleteProjectAvatarResponseGitForkProtection.fromJson(
+                    json['gitForkProtection'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        gitLfs: json['gitLFS'] != null
+            ? SdkPresent((json['gitLFS'] != null
+                ? DeleteProjectAvatarResponseGitLFS.fromJson(
+                    json['gitLFS'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        gitProviderOptions: json['gitProviderOptions'] != null
+            ? SdkPresent((json['gitProviderOptions'] != null
+                ? DeleteProjectAvatarResponseGitProviderOptions.fromJson(
+                    json['gitProviderOptions'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        hasActiveBranches: json['hasActiveBranches'] != null
+            ? SdkPresent((json['hasActiveBranches'] != null
+                ? DeleteProjectAvatarResponseHasActiveBranches.fromJson(
+                    json['hasActiveBranches'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        hasDeployments: json['hasDeployments'] != null
+            ? SdkPresent((json['hasDeployments'] != null
+                ? DeleteProjectAvatarResponseHasDeployments.fromJson(
+                    json['hasDeployments'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        installCommand: json.containsKey('installCommand')
+            ? SdkPresent(json['installCommand'] as String?)
+            : const SdkOmitted(),
+        internalRoutes: json['internalRoutes'] != null
+            ? SdkPresent(((json['internalRoutes'] as List?)
+                ?.map((e) =>
+                    DeleteProjectAvatarResponseInternalRoutesItem.fromJson(e))
+                .toList())!)
+            : const SdkOmitted(),
+        ipBuckets: json['ipBuckets'] != null
+            ? SdkPresent(((json['ipBuckets'] as List?)
+                ?.map((e) => DeleteProjectAvatarResponseIpBucketsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        jobs: json['jobs'] != null
+            ? SdkPresent((json['jobs'] != null
+                ? DeleteProjectAvatarResponseJobs.fromJson(
+                    json['jobs'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        lastAliasRequest: json.containsKey('lastAliasRequest')
+            ? SdkPresent(json['lastAliasRequest'] != null
+                ? DeleteProjectAvatarResponseLastAliasRequest.fromJson(
+                    json['lastAliasRequest'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        lastRollbackTarget: json.containsKey('lastRollbackTarget')
+            ? SdkPresent(json['lastRollbackTarget'] == null
+                ? null
+                : json['lastRollbackTarget'] as Map<String, dynamic>)
+            : const SdkOmitted(),
+        latestDeployments: json['latestDeployments'] != null
+            ? SdkPresent(((json['latestDeployments'] as List?)
+                ?.map((e) =>
+                    DeleteProjectAvatarResponseLatestDeploymentsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        link: json['link'] != null
+            ? SdkPresent((json['link'] != null
+                ? DeleteProjectAvatarResponseLink.fromJson(json['link'])
+                : null)!)
+            : const SdkOmitted(),
+        live: json['live'] != null
+            ? SdkPresent((json['live'] != null
+                ? DeleteProjectAvatarResponseLive.fromJson(json['live'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        microfrontends: json['microfrontends'] != null
+            ? SdkPresent((json['microfrontends'] != null
+                ? DeleteProjectAvatarResponseMicrofrontends.fromJson(
+                    json['microfrontends'])
+                : null)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        nodeVersion: (json['nodeVersion'] != null
+            ? DeleteProjectAvatarResponseNodeVersion.fromJson(
+                json['nodeVersion'] as String)
+            : null)!,
+        oidcTokenConfig: json['oidcTokenConfig'] != null
+            ? SdkPresent((json['oidcTokenConfig'] != null
+                ? DeleteProjectAvatarResponseOidcTokenConfig.fromJson(
+                    json['oidcTokenConfig'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        optionsAllowlist: json.containsKey('optionsAllowlist')
+            ? SdkPresent(json['optionsAllowlist'] != null
+                ? DeleteProjectAvatarResponseOptionsAllowlist.fromJson(
+                    json['optionsAllowlist'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        outputDirectory: json.containsKey('outputDirectory')
+            ? SdkPresent(json['outputDirectory'] as String?)
+            : const SdkOmitted(),
+        passiveConnectConfigurationId:
+            json.containsKey('passiveConnectConfigurationId')
+                ? SdkPresent(json['passiveConnectConfigurationId'] as String?)
+                : const SdkOmitted(),
+        passport: json.containsKey('passport')
+            ? SdkPresent(json['passport'] != null
+                ? DeleteProjectAvatarResponsePassport.fromJson(
+                    json['passport'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        passwordProtection: json.containsKey('passwordProtection')
+            ? SdkPresent(json['passwordProtection'] != null
+                ? DeleteProjectAvatarResponsePasswordProtection.fromJson(
+                    json['passwordProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        paused: json['paused'] != null
+            ? SdkPresent((json['paused'] != null
+                ? DeleteProjectAvatarResponsePaused.fromJson(
+                    json['paused'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        permissions: json['permissions'] != null
+            ? SdkPresent((json['permissions'] != null
+                ? DeleteProjectAvatarResponsePermissions.fromJson(
+                    json['permissions'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        productionDeploymentsFastLane:
+            json['productionDeploymentsFastLane'] != null
+                ? SdkPresent((json['productionDeploymentsFastLane'] != null
+                    ? DeleteProjectAvatarResponseProductionDeploymentsFastLane
+                        .fromJson(json['productionDeploymentsFastLane'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        protectedSourcemaps: json['protectedSourcemaps'] != null
+            ? SdkPresent((json['protectedSourcemaps'] != null
+                ? DeleteProjectAvatarResponseProtectedSourcemaps.fromJson(
+                    json['protectedSourcemaps'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        protectionBypass: json['protectionBypass'] != null
+            ? SdkPresent((json['protectionBypass'] == null
+                ? null
+                : json['protectionBypass'] as Map<String, dynamic>)!)
+            : const SdkOmitted(),
+        protectionConfig: json['protectionConfig'] != null
+            ? SdkPresent((json['protectionConfig'] != null
+                ? DeleteProjectAvatarResponseProtectionConfig.fromJson(
+                    json['protectionConfig'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        resourceConfig: (json['resourceConfig'] != null
+            ? DeleteProjectAvatarResponseResourceConfig.fromJson(
+                json['resourceConfig'] as Map<String, dynamic>)
+            : null)!,
+        rollbackDescription: json['rollbackDescription'] != null
+            ? SdkPresent((json['rollbackDescription'] != null
+                ? DeleteProjectAvatarResponseRollbackDescription.fromJson(
+                    json['rollbackDescription'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        rollingRelease: json.containsKey('rollingRelease')
+            ? SdkPresent(json['rollingRelease'] != null
+                ? DeleteProjectAvatarResponseRollingRelease.fromJson(
+                    json['rollingRelease'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        rootDirectory: json.containsKey('rootDirectory')
+            ? SdkPresent(json['rootDirectory'] as String?)
+            : const SdkOmitted(),
+        sandbox: json['sandbox'] != null
+            ? SdkPresent((json['sandbox'] != null
+                ? DeleteProjectAvatarResponseSandbox.fromJson(
+                    json['sandbox'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        security: json['security'] != null
+            ? SdkPresent((json['security'] != null
+                ? DeleteProjectAvatarResponseSecurity.fromJson(
+                    json['security'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        serverlessFunctionZeroConfigFailover: json[
+                    'serverlessFunctionZeroConfigFailover'] !=
+                null
+            ? SdkPresent((json['serverlessFunctionZeroConfigFailover'] != null
+                ? DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover
+                    .fromJson(
+                        json['serverlessFunctionZeroConfigFailover'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        services: json['services'] != null
+            ? SdkPresent(((json['services'] as List?)
+                ?.map((e) => DeleteProjectAvatarResponseServicesItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        skewProtectionAllowedDomains:
+            json['skewProtectionAllowedDomains'] != null
+                ? SdkPresent(((json['skewProtectionAllowedDomains'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+        skewProtectionBoundaryAt: json['skewProtectionBoundaryAt'] != null
+            ? SdkPresent(
+                ((json['skewProtectionBoundaryAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        skewProtectionMaxAge: json['skewProtectionMaxAge'] != null
+            ? SdkPresent(((json['skewProtectionMaxAge'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null
+            ? SdkPresent((json['skipGitConnectDuringLink'] != null
+                ? DeleteProjectAvatarResponseSkipGitConnectDuringLink.fromJson(
+                    json['skipGitConnectDuringLink'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        sourceFilesOutsideRootDirectory:
+            json['sourceFilesOutsideRootDirectory'] != null
+                ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null
+                    ? DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory
+                        .fromJson(
+                            json['sourceFilesOutsideRootDirectory'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        speedInsights: json['speedInsights'] != null
+            ? SdkPresent((json['speedInsights'] != null
+                ? DeleteProjectAvatarResponseSpeedInsights.fromJson(
+                    json['speedInsights'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        ssoProtection: json.containsKey('ssoProtection')
+            ? SdkPresent(json['ssoProtection'] != null
+                ? DeleteProjectAvatarResponseSsoProtection.fromJson(
+                    json['ssoProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        staticIps: json['staticIps'] != null
+            ? SdkPresent((json['staticIps'] != null
+                ? DeleteProjectAvatarResponseStaticIps.fromJson(
+                    json['staticIps'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        targets: json['targets'] != null
+            ? SdkPresent((json['targets'] == null
+                ? null
+                : Map<String, dynamic>.from(json['targets'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        DeleteProjectAvatarResponseTargetsValue.fromJson(
+                            value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        tier: json['tier'] != null
+            ? SdkPresent((json['tier'] != null
+                ? DeleteProjectAvatarResponseTier.fromJson(
+                    json['tier'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        tracing: json['tracing'] != null
+            ? SdkPresent((json['tracing'] != null
+                ? DeleteProjectAvatarResponseTracing.fromJson(
+                    json['tracing'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        transferCompletedAt: json['transferCompletedAt'] != null
+            ? SdkPresent(((json['transferCompletedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        transferredFromAccountId: json['transferredFromAccountId'] != null
+            ? SdkPresent((json['transferredFromAccountId'] as String?)!)
+            : const SdkOmitted(),
+        transferStartedAt: json['transferStartedAt'] != null
+            ? SdkPresent(((json['transferStartedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        transferToAccountId: json['transferToAccountId'] != null
+            ? SdkPresent((json['transferToAccountId'] as String?)!)
+            : const SdkOmitted(),
+        trustedIps: json.containsKey('trustedIps')
+            ? SdkPresent(json['trustedIps'] != null
+                ? DeleteProjectAvatarResponseTrustedIps.fromJson(
+                    json['trustedIps'])
+                : null)
+            : const SdkOmitted(),
+        trustedSources: json.containsKey('trustedSources')
+            ? SdkPresent(json['trustedSources'] != null
+                ? DeleteProjectAvatarResponseTrustedSources.fromJson(
+                    json['trustedSources'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        usageStatus: json['usageStatus'] != null
+            ? SdkPresent((json['usageStatus'] != null
+                ? DeleteProjectAvatarResponseUsageStatus.fromJson(
+                    json['usageStatus'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        v0: json['v0'] != null
+            ? SdkPresent((json['v0'] != null
+                ? DeleteProjectAvatarResponseV0.fromJson(json['v0'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        v0Created: json['v0Created'] != null
+            ? SdkPresent((json['v0Created'] != null
+                ? DeleteProjectAvatarResponseV0Created.fromJson(
+                    json['v0Created'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        webAnalytics: json['webAnalytics'] != null
+            ? SdkPresent((json['webAnalytics'] != null
+                ? DeleteProjectAvatarResponseWebAnalytics.fromJson(
+                    json['webAnalytics'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'accountId': accountId,
-    'alias': alias.map((item) => item.toJson()).toList(),
-    ...switch (analytics) {
-      SdkPresent<DeleteProjectAvatarResponseAnalytics>(value: final value) => {'analytics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (appliedCve55182Migration) {
-      SdkPresent<DeleteProjectAvatarResponseAppliedCve55182Migration>(value: final value) => {'appliedCve55182Migration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (autoAssignCustomDomains) {
-      SdkPresent<DeleteProjectAvatarResponseAutoAssignCustomDomains>(value: final value) => {'autoAssignCustomDomains': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (autoAssignCustomDomainsUpdatedBy) {
-      SdkPresent<String>(value: final value) => {'autoAssignCustomDomainsUpdatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (autoExposeSystemEnvs) {
-      SdkPresent<DeleteProjectAvatarResponseAutoExposeSystemEnvs>(value: final value) => {'autoExposeSystemEnvs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (avatar) {
-      SdkPresent<String?>(value: final value) => {'avatar': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (avatarDarkMode) {
-      SdkPresent<String?>(value: final value) => {'avatarDarkMode': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (blobs) {
-      SdkPresent<DeleteProjectAvatarResponseBlobs>(value: final value) => {'blobs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildCommand) {
-      SdkPresent<String?>(value: final value) => {'buildCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (commandForIgnoringBuildStep) {
-      SdkPresent<String?>(value: final value) => {'commandForIgnoringBuildStep': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (concurrencyBucketName) {
-      SdkPresent<String>(value: final value) => {'concurrencyBucketName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectBuildsEnabled) {
-      SdkPresent<DeleteProjectAvatarResponseConnectBuildsEnabled>(value: final value) => {'connectBuildsEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectConfigurationId) {
-      SdkPresent<String?>(value: final value) => {'connectConfigurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectConfigurations) {
-      SdkPresent<List<DeleteProjectAvatarResponseConnectConfigurationsItem>?>(value: final value) => {'connectConfigurations': value?.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (creator) {
-      SdkPresent<DeleteProjectAvatarResponseCreator>(value: final value) => {'creator': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (crons) {
-      SdkPresent<DeleteProjectAvatarResponseCrons>(value: final value) => {'crons': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironments) {
-      SdkPresent<List<DeleteProjectAvatarResponseCustomEnvironmentsItem>>(value: final value) => {'customEnvironments': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customerSupportCodeVisibility) {
-      SdkPresent<DeleteProjectAvatarResponseCustomerSupportCodeVisibility>(value: final value) => {'customerSupportCodeVisibility': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dataCache) {
-      SdkPresent<DeleteProjectAvatarResponseDataCache>(value: final value) => {'dataCache': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'defaultResourceConfig': defaultResourceConfig.toJson(),
-    'deploymentExpiration': deploymentExpiration.toJson(),
-    ...switch (deploymentPolicy) {
-      SdkPresent<DeleteProjectAvatarResponseDeploymentPolicy?>(value: final value) => {'deploymentPolicy': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (devCommand) {
-      SdkPresent<String?>(value: final value) => {'devCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    'directoryListing': directoryListing.toJson(),
-    ...switch (dismissedToasts) {
-      SdkPresent<List<DeleteProjectAvatarResponseDismissedToastsItem>>(value: final value) => {'dismissedToasts': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enableAffectedProjectsDeployments) {
-      SdkPresent<DeleteProjectAvatarResponseEnableAffectedProjectsDeployments>(value: final value) => {'enableAffectedProjectsDeployments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enableExternalRewriteCaching) {
-      SdkPresent<DeleteProjectAvatarResponseEnableExternalRewriteCaching>(value: final value) => {'enableExternalRewriteCaching': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enablePreviewFeedback) {
-      SdkPresent<DeleteProjectAvatarResponseEnablePreviewFeedback?>(value: final value) => {'enablePreviewFeedback': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enableProductionFeedback) {
-      SdkPresent<DeleteProjectAvatarResponseEnableProductionFeedback?>(value: final value) => {'enableProductionFeedback': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (env) {
-      SdkPresent<List<DeleteProjectAvatarResponseEnvItem>>(value: final value) => {'env': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiration) {
-      SdkPresent<DeleteProjectAvatarResponseExpiration>(value: final value) => {'expiration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (features) {
-      SdkPresent<DeleteProjectAvatarResponseFeatures>(value: final value) => {'features': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (framework) {
-      SdkPresent<DeleteProjectAvatarResponseFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitComments) {
-      SdkPresent<DeleteProjectAvatarResponseGitComments>(value: final value) => {'gitComments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitForkProtection) {
-      SdkPresent<DeleteProjectAvatarResponseGitForkProtection>(value: final value) => {'gitForkProtection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitLfs) {
-      SdkPresent<DeleteProjectAvatarResponseGitLFS>(value: final value) => {'gitLFS': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitProviderOptions) {
-      SdkPresent<DeleteProjectAvatarResponseGitProviderOptions>(value: final value) => {'gitProviderOptions': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasActiveBranches) {
-      SdkPresent<DeleteProjectAvatarResponseHasActiveBranches>(value: final value) => {'hasActiveBranches': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasDeployments) {
-      SdkPresent<DeleteProjectAvatarResponseHasDeployments>(value: final value) => {'hasDeployments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (installCommand) {
-      SdkPresent<String?>(value: final value) => {'installCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (internalRoutes) {
-      SdkPresent<List<DeleteProjectAvatarResponseInternalRoutesItem>>(value: final value) => {'internalRoutes': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ipBuckets) {
-      SdkPresent<List<DeleteProjectAvatarResponseIpBucketsItem>>(value: final value) => {'ipBuckets': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (jobs) {
-      SdkPresent<DeleteProjectAvatarResponseJobs>(value: final value) => {'jobs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastAliasRequest) {
-      SdkPresent<DeleteProjectAvatarResponseLastAliasRequest?>(value: final value) => {'lastAliasRequest': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastRollbackTarget) {
-      SdkPresent<Map<String, dynamic>?>(value: final value) => {'lastRollbackTarget': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (latestDeployments) {
-      SdkPresent<List<DeleteProjectAvatarResponseLatestDeploymentsItem>>(value: final value) => {'latestDeployments': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (link) {
-      SdkPresent<DeleteProjectAvatarResponseLink>(value: final value) => {'link': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (live) {
-      SdkPresent<DeleteProjectAvatarResponseLive>(value: final value) => {'live': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (microfrontends) {
-      SdkPresent<DeleteProjectAvatarResponseMicrofrontends>(value: final value) => {'microfrontends': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'nodeVersion': nodeVersion.toJson(),
-    ...switch (oidcTokenConfig) {
-      SdkPresent<DeleteProjectAvatarResponseOidcTokenConfig>(value: final value) => {'oidcTokenConfig': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (optionsAllowlist) {
-      SdkPresent<DeleteProjectAvatarResponseOptionsAllowlist?>(value: final value) => {'optionsAllowlist': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (outputDirectory) {
-      SdkPresent<String?>(value: final value) => {'outputDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (passiveConnectConfigurationId) {
-      SdkPresent<String?>(value: final value) => {'passiveConnectConfigurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (passport) {
-      SdkPresent<DeleteProjectAvatarResponsePassport?>(value: final value) => {'passport': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (passwordProtection) {
-      SdkPresent<DeleteProjectAvatarResponsePasswordProtection?>(value: final value) => {'passwordProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (paused) {
-      SdkPresent<DeleteProjectAvatarResponsePaused>(value: final value) => {'paused': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (permissions) {
-      SdkPresent<DeleteProjectAvatarResponsePermissions>(value: final value) => {'permissions': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (productionDeploymentsFastLane) {
-      SdkPresent<DeleteProjectAvatarResponseProductionDeploymentsFastLane>(value: final value) => {'productionDeploymentsFastLane': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (protectedSourcemaps) {
-      SdkPresent<DeleteProjectAvatarResponseProtectedSourcemaps>(value: final value) => {'protectedSourcemaps': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (protectionBypass) {
-      SdkPresent<Map<String, dynamic>>(value: final value) => {'protectionBypass': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (protectionConfig) {
-      SdkPresent<DeleteProjectAvatarResponseProtectionConfig>(value: final value) => {'protectionConfig': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'resourceConfig': resourceConfig.toJson(),
-    ...switch (rollbackDescription) {
-      SdkPresent<DeleteProjectAvatarResponseRollbackDescription>(value: final value) => {'rollbackDescription': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rollingRelease) {
-      SdkPresent<DeleteProjectAvatarResponseRollingRelease?>(value: final value) => {'rollingRelease': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rootDirectory) {
-      SdkPresent<String?>(value: final value) => {'rootDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sandbox) {
-      SdkPresent<DeleteProjectAvatarResponseSandbox>(value: final value) => {'sandbox': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (security) {
-      SdkPresent<DeleteProjectAvatarResponseSecurity>(value: final value) => {'security': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (serverlessFunctionZeroConfigFailover) {
-      SdkPresent<DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover>(value: final value) => {'serverlessFunctionZeroConfigFailover': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (services) {
-      SdkPresent<List<DeleteProjectAvatarResponseServicesItem>>(value: final value) => {'services': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skewProtectionAllowedDomains) {
-      SdkPresent<List<String>>(value: final value) => {'skewProtectionAllowedDomains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skewProtectionBoundaryAt) {
-      SdkPresent<double>(value: final value) => {'skewProtectionBoundaryAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skewProtectionMaxAge) {
-      SdkPresent<double>(value: final value) => {'skewProtectionMaxAge': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skipGitConnectDuringLink) {
-      SdkPresent<DeleteProjectAvatarResponseSkipGitConnectDuringLink>(value: final value) => {'skipGitConnectDuringLink': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sourceFilesOutsideRootDirectory) {
-      SdkPresent<DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory>(value: final value) => {'sourceFilesOutsideRootDirectory': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (speedInsights) {
-      SdkPresent<DeleteProjectAvatarResponseSpeedInsights>(value: final value) => {'speedInsights': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoProtection) {
-      SdkPresent<DeleteProjectAvatarResponseSsoProtection?>(value: final value) => {'ssoProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (staticIps) {
-      SdkPresent<DeleteProjectAvatarResponseStaticIps>(value: final value) => {'staticIps': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (targets) {
-      SdkPresent<Map<String, DeleteProjectAvatarResponseTargetsValue>>(value: final value) => {'targets': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (tier) {
-      SdkPresent<DeleteProjectAvatarResponseTier>(value: final value) => {'tier': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (tracing) {
-      SdkPresent<DeleteProjectAvatarResponseTracing>(value: final value) => {'tracing': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferCompletedAt) {
-      SdkPresent<double>(value: final value) => {'transferCompletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferredFromAccountId) {
-      SdkPresent<String>(value: final value) => {'transferredFromAccountId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferStartedAt) {
-      SdkPresent<double>(value: final value) => {'transferStartedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferToAccountId) {
-      SdkPresent<String>(value: final value) => {'transferToAccountId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (trustedIps) {
-      SdkPresent<DeleteProjectAvatarResponseTrustedIps?>(value: final value) => {'trustedIps': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (trustedSources) {
-      SdkPresent<DeleteProjectAvatarResponseTrustedSources?>(value: final value) => {'trustedSources': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (usageStatus) {
-      SdkPresent<DeleteProjectAvatarResponseUsageStatus>(value: final value) => {'usageStatus': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (v0) {
-      SdkPresent<DeleteProjectAvatarResponseV0>(value: final value) => {'v0': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (v0Created) {
-      SdkPresent<DeleteProjectAvatarResponseV0Created>(value: final value) => {'v0Created': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webAnalytics) {
-      SdkPresent<DeleteProjectAvatarResponseWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'accountId': accountId,
+        'alias': alias.map((item) => item.toJson()).toList(),
+        ...switch (analytics) {
+          SdkPresent<DeleteProjectAvatarResponseAnalytics>(
+            value: final value
+          ) =>
+            {
+              'analytics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (appliedCve55182Migration) {
+          SdkPresent<DeleteProjectAvatarResponseAppliedCve55182Migration>(
+            value: final value
+          ) =>
+            {
+              'appliedCve55182Migration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (autoAssignCustomDomains) {
+          SdkPresent<DeleteProjectAvatarResponseAutoAssignCustomDomains>(
+            value: final value
+          ) =>
+            {
+              'autoAssignCustomDomains': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (autoAssignCustomDomainsUpdatedBy) {
+          SdkPresent<String>(value: final value) => {
+              'autoAssignCustomDomainsUpdatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (autoExposeSystemEnvs) {
+          SdkPresent<DeleteProjectAvatarResponseAutoExposeSystemEnvs>(
+            value: final value
+          ) =>
+            {
+              'autoExposeSystemEnvs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (avatar) {
+          SdkPresent<String?>(value: final value) => {
+              'avatar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (avatarDarkMode) {
+          SdkPresent<String?>(value: final value) => {
+              'avatarDarkMode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (blobs) {
+          SdkPresent<DeleteProjectAvatarResponseBlobs>(value: final value) => {
+              'blobs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'buildCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (commandForIgnoringBuildStep) {
+          SdkPresent<String?>(value: final value) => {
+              'commandForIgnoringBuildStep': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (concurrencyBucketName) {
+          SdkPresent<String>(value: final value) => {
+              'concurrencyBucketName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectBuildsEnabled) {
+          SdkPresent<DeleteProjectAvatarResponseConnectBuildsEnabled>(
+            value: final value
+          ) =>
+            {
+              'connectBuildsEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectConfigurationId) {
+          SdkPresent<String?>(value: final value) => {
+              'connectConfigurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectConfigurations) {
+          SdkPresent<
+                List<DeleteProjectAvatarResponseConnectConfigurationsItem>?>(
+            value: final value
+          ) =>
+            {
+              'connectConfigurations':
+                  value?.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (creator) {
+          SdkPresent<DeleteProjectAvatarResponseCreator>(value: final value) =>
+            {
+              'creator': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (crons) {
+          SdkPresent<DeleteProjectAvatarResponseCrons>(value: final value) => {
+              'crons': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironments) {
+          SdkPresent<List<DeleteProjectAvatarResponseCustomEnvironmentsItem>>(
+            value: final value
+          ) =>
+            {
+              'customEnvironments': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customerSupportCodeVisibility) {
+          SdkPresent<DeleteProjectAvatarResponseCustomerSupportCodeVisibility>(
+            value: final value
+          ) =>
+            {
+              'customerSupportCodeVisibility': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dataCache) {
+          SdkPresent<DeleteProjectAvatarResponseDataCache>(
+            value: final value
+          ) =>
+            {
+              'dataCache': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'defaultResourceConfig': defaultResourceConfig.toJson(),
+        'deploymentExpiration': deploymentExpiration.toJson(),
+        ...switch (deploymentPolicy) {
+          SdkPresent<DeleteProjectAvatarResponseDeploymentPolicy?>(
+            value: final value
+          ) =>
+            {
+              'deploymentPolicy': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (devCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'devCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'directoryListing': directoryListing.toJson(),
+        ...switch (dismissedToasts) {
+          SdkPresent<List<DeleteProjectAvatarResponseDismissedToastsItem>>(
+            value: final value
+          ) =>
+            {
+              'dismissedToasts': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enableAffectedProjectsDeployments) {
+          SdkPresent<
+                DeleteProjectAvatarResponseEnableAffectedProjectsDeployments>(
+            value: final value
+          ) =>
+            {
+              'enableAffectedProjectsDeployments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enableExternalRewriteCaching) {
+          SdkPresent<DeleteProjectAvatarResponseEnableExternalRewriteCaching>(
+            value: final value
+          ) =>
+            {
+              'enableExternalRewriteCaching': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enablePreviewFeedback) {
+          SdkPresent<DeleteProjectAvatarResponseEnablePreviewFeedback?>(
+            value: final value
+          ) =>
+            {
+              'enablePreviewFeedback': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enableProductionFeedback) {
+          SdkPresent<DeleteProjectAvatarResponseEnableProductionFeedback?>(
+            value: final value
+          ) =>
+            {
+              'enableProductionFeedback': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (env) {
+          SdkPresent<List<DeleteProjectAvatarResponseEnvItem>>(
+            value: final value
+          ) =>
+            {
+              'env': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiration) {
+          SdkPresent<DeleteProjectAvatarResponseExpiration>(
+            value: final value
+          ) =>
+            {
+              'expiration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (features) {
+          SdkPresent<DeleteProjectAvatarResponseFeatures>(value: final value) =>
+            {
+              'features': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (framework) {
+          SdkPresent<DeleteProjectAvatarResponseFramework?>(
+            value: final value
+          ) =>
+            {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitComments) {
+          SdkPresent<DeleteProjectAvatarResponseGitComments>(
+            value: final value
+          ) =>
+            {
+              'gitComments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitForkProtection) {
+          SdkPresent<DeleteProjectAvatarResponseGitForkProtection>(
+            value: final value
+          ) =>
+            {
+              'gitForkProtection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitLfs) {
+          SdkPresent<DeleteProjectAvatarResponseGitLFS>(value: final value) => {
+              'gitLFS': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitProviderOptions) {
+          SdkPresent<DeleteProjectAvatarResponseGitProviderOptions>(
+            value: final value
+          ) =>
+            {
+              'gitProviderOptions': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasActiveBranches) {
+          SdkPresent<DeleteProjectAvatarResponseHasActiveBranches>(
+            value: final value
+          ) =>
+            {
+              'hasActiveBranches': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasDeployments) {
+          SdkPresent<DeleteProjectAvatarResponseHasDeployments>(
+            value: final value
+          ) =>
+            {
+              'hasDeployments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (installCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'installCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (internalRoutes) {
+          SdkPresent<List<DeleteProjectAvatarResponseInternalRoutesItem>>(
+            value: final value
+          ) =>
+            {
+              'internalRoutes': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ipBuckets) {
+          SdkPresent<List<DeleteProjectAvatarResponseIpBucketsItem>>(
+            value: final value
+          ) =>
+            {
+              'ipBuckets': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (jobs) {
+          SdkPresent<DeleteProjectAvatarResponseJobs>(value: final value) => {
+              'jobs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastAliasRequest) {
+          SdkPresent<DeleteProjectAvatarResponseLastAliasRequest?>(
+            value: final value
+          ) =>
+            {
+              'lastAliasRequest': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastRollbackTarget) {
+          SdkPresent<Map<String, dynamic>?>(value: final value) => {
+              'lastRollbackTarget': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (latestDeployments) {
+          SdkPresent<List<DeleteProjectAvatarResponseLatestDeploymentsItem>>(
+            value: final value
+          ) =>
+            {
+              'latestDeployments': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (link) {
+          SdkPresent<DeleteProjectAvatarResponseLink>(value: final value) => {
+              'link': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (live) {
+          SdkPresent<DeleteProjectAvatarResponseLive>(value: final value) => {
+              'live': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (microfrontends) {
+          SdkPresent<DeleteProjectAvatarResponseMicrofrontends>(
+            value: final value
+          ) =>
+            {
+              'microfrontends': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'nodeVersion': nodeVersion.toJson(),
+        ...switch (oidcTokenConfig) {
+          SdkPresent<DeleteProjectAvatarResponseOidcTokenConfig>(
+            value: final value
+          ) =>
+            {
+              'oidcTokenConfig': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (optionsAllowlist) {
+          SdkPresent<DeleteProjectAvatarResponseOptionsAllowlist?>(
+            value: final value
+          ) =>
+            {
+              'optionsAllowlist': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (outputDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'outputDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (passiveConnectConfigurationId) {
+          SdkPresent<String?>(value: final value) => {
+              'passiveConnectConfigurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (passport) {
+          SdkPresent<DeleteProjectAvatarResponsePassport?>(
+            value: final value
+          ) =>
+            {
+              'passport': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (passwordProtection) {
+          SdkPresent<DeleteProjectAvatarResponsePasswordProtection?>(
+            value: final value
+          ) =>
+            {
+              'passwordProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (paused) {
+          SdkPresent<DeleteProjectAvatarResponsePaused>(value: final value) => {
+              'paused': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (permissions) {
+          SdkPresent<DeleteProjectAvatarResponsePermissions>(
+            value: final value
+          ) =>
+            {
+              'permissions': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (productionDeploymentsFastLane) {
+          SdkPresent<DeleteProjectAvatarResponseProductionDeploymentsFastLane>(
+            value: final value
+          ) =>
+            {
+              'productionDeploymentsFastLane': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (protectedSourcemaps) {
+          SdkPresent<DeleteProjectAvatarResponseProtectedSourcemaps>(
+            value: final value
+          ) =>
+            {
+              'protectedSourcemaps': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (protectionBypass) {
+          SdkPresent<Map<String, dynamic>>(value: final value) => {
+              'protectionBypass': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (protectionConfig) {
+          SdkPresent<DeleteProjectAvatarResponseProtectionConfig>(
+            value: final value
+          ) =>
+            {
+              'protectionConfig': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'resourceConfig': resourceConfig.toJson(),
+        ...switch (rollbackDescription) {
+          SdkPresent<DeleteProjectAvatarResponseRollbackDescription>(
+            value: final value
+          ) =>
+            {
+              'rollbackDescription': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rollingRelease) {
+          SdkPresent<DeleteProjectAvatarResponseRollingRelease?>(
+            value: final value
+          ) =>
+            {
+              'rollingRelease': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rootDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'rootDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sandbox) {
+          SdkPresent<DeleteProjectAvatarResponseSandbox>(value: final value) =>
+            {
+              'sandbox': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (security) {
+          SdkPresent<DeleteProjectAvatarResponseSecurity>(value: final value) =>
+            {
+              'security': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (serverlessFunctionZeroConfigFailover) {
+          SdkPresent<
+                DeleteProjectAvatarResponseServerlessFunctionZeroConfigFailover>(
+            value: final value
+          ) =>
+            {
+              'serverlessFunctionZeroConfigFailover': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (services) {
+          SdkPresent<List<DeleteProjectAvatarResponseServicesItem>>(
+            value: final value
+          ) =>
+            {
+              'services': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skewProtectionAllowedDomains) {
+          SdkPresent<List<String>>(value: final value) => {
+              'skewProtectionAllowedDomains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skewProtectionBoundaryAt) {
+          SdkPresent<double>(value: final value) => {
+              'skewProtectionBoundaryAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skewProtectionMaxAge) {
+          SdkPresent<double>(value: final value) => {
+              'skewProtectionMaxAge': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skipGitConnectDuringLink) {
+          SdkPresent<DeleteProjectAvatarResponseSkipGitConnectDuringLink>(
+            value: final value
+          ) =>
+            {
+              'skipGitConnectDuringLink': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sourceFilesOutsideRootDirectory) {
+          SdkPresent<
+                DeleteProjectAvatarResponseSourceFilesOutsideRootDirectory>(
+            value: final value
+          ) =>
+            {
+              'sourceFilesOutsideRootDirectory': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (speedInsights) {
+          SdkPresent<DeleteProjectAvatarResponseSpeedInsights>(
+            value: final value
+          ) =>
+            {
+              'speedInsights': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoProtection) {
+          SdkPresent<DeleteProjectAvatarResponseSsoProtection?>(
+            value: final value
+          ) =>
+            {
+              'ssoProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (staticIps) {
+          SdkPresent<DeleteProjectAvatarResponseStaticIps>(
+            value: final value
+          ) =>
+            {
+              'staticIps': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (targets) {
+          SdkPresent<Map<String, DeleteProjectAvatarResponseTargetsValue>>(
+            value: final value
+          ) =>
+            {
+              'targets':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (tier) {
+          SdkPresent<DeleteProjectAvatarResponseTier>(value: final value) => {
+              'tier': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (tracing) {
+          SdkPresent<DeleteProjectAvatarResponseTracing>(value: final value) =>
+            {
+              'tracing': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferCompletedAt) {
+          SdkPresent<double>(value: final value) => {
+              'transferCompletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferredFromAccountId) {
+          SdkPresent<String>(value: final value) => {
+              'transferredFromAccountId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferStartedAt) {
+          SdkPresent<double>(value: final value) => {
+              'transferStartedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferToAccountId) {
+          SdkPresent<String>(value: final value) => {
+              'transferToAccountId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (trustedIps) {
+          SdkPresent<DeleteProjectAvatarResponseTrustedIps?>(
+            value: final value
+          ) =>
+            {
+              'trustedIps': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (trustedSources) {
+          SdkPresent<DeleteProjectAvatarResponseTrustedSources?>(
+            value: final value
+          ) =>
+            {
+              'trustedSources': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (usageStatus) {
+          SdkPresent<DeleteProjectAvatarResponseUsageStatus>(
+            value: final value
+          ) =>
+            {
+              'usageStatus': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (v0) {
+          SdkPresent<DeleteProjectAvatarResponseV0>(value: final value) => {
+              'v0': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (v0Created) {
+          SdkPresent<DeleteProjectAvatarResponseV0Created>(
+            value: final value
+          ) =>
+            {
+              'v0Created': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webAnalytics) {
+          SdkPresent<DeleteProjectAvatarResponseWebAnalytics>(
+            value: final value
+          ) =>
+            {
+              'webAnalytics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

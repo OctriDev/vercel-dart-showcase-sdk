@@ -7,207 +7,417 @@ part of 'feature_flags.dart';
 final class FlagVariantsItemValueMap extends FlagVariantsItemValue {
   final Map<String, Object?> value;
   const FlagVariantsItemValueMap(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 final class FlagVariantsItemValueList extends FlagVariantsItemValue {
   final List<dynamic> value;
   const FlagVariantsItemValueList(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class FlagVariantsItemValueFlagVariantsItemValueVariant4 extends FlagVariantsItemValue {
+final class FlagVariantsItemValueFlagVariantsItemValueVariant4
+    extends FlagVariantsItemValue {
   final FlagVariantsItemValueVariant4 value;
   const FlagVariantsItemValueFlagVariantsItemValueVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Required object value serialized in the `variants[]` wire field.
 class FlagVariantsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `description` wire field.
   final SdkOptional<String> description;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `label` wire field.
   final SdkOptional<String> label;
+
   /// Required API value serialized in the `value` wire field.
   final dynamic value;
 
-  const FlagVariantsItem({this.description = const SdkOmitted(), required this.id, this.label = const SdkOmitted(), required this.value});
+  const FlagVariantsItem(
+      {this.description = const SdkOmitted(),
+      required this.id,
+      this.label = const SdkOmitted(),
+      required this.value});
 
-  FlagVariantsItem Function({SdkOptional<String> description, String id, SdkOptional<String> label, dynamic value}) get copyWith => _copyWith;
+  FlagVariantsItem Function(
+      {SdkOptional<String> description,
+      String id,
+      SdkOptional<String> label,
+      dynamic value}) get copyWith => _copyWith;
 
-  FlagVariantsItem _copyWith({Object? description = sdkOmittedValue, Object? id = sdkOmittedValue, Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => FlagVariantsItem(
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as dynamic,
-  );
+  FlagVariantsItem _copyWith(
+          {Object? description = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      FlagVariantsItem(
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        value:
+            identical(value, sdkOmittedValue) ? this.value : value as dynamic,
+      );
 
-  factory FlagVariantsItem.fromJson(Map<String, dynamic> json) => FlagVariantsItem(
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    value: json.containsKey('value') ? json['value'] : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-  );
+  factory FlagVariantsItem.fromJson(Map<String, dynamic> json) =>
+      FlagVariantsItem(
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+        value: json.containsKey('value')
+            ? json['value']
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 /// Typed representation of the `Flag` API schema.
 class Flag {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `string` value serialized in the `createdBy` wire field.
   final String createdBy;
+
   /// Optional `string` value serialized in the `description` wire field.
   final SdkOptional<String> description;
+
   /// Required object value serialized in the `environments` wire field.
   final Map<String, FlagEnvironmentsValue> environments;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required enumerated value serialized in the `kind` wire field.
   final FlagKind kind;
+
   /// Optional array value serialized in the `maintainerIds` wire field.
   final SdkOptional<List<String>> maintainerIds;
+
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
+
   /// Optional enumerated value serialized in the `permanent` wire field.
   final SdkOptional<FlagPermanent> permanent;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `number` value serialized in the `revision` wire field.
   final double revision;
+
   /// Required `number` value serialized in the `seed` wire field.
   final double seed;
+
   /// Optional enumerated value serialized in the `seenInProduction` wire field.
   final SdkOptional<FlagSeenInProduction> seenInProduction;
+
   /// Required `string` value serialized in the `slug` wire field.
   final String slug;
+
   /// Required enumerated value serialized in the `state` wire field.
   final FlagState state;
+
   /// Optional array value serialized in the `tags` wire field.
   final SdkOptional<List<String>> tags;
+
   /// Required enumerated value serialized in the `typeName` wire field.
   final FlagTypeName typeName;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
+
   /// Optional `string` value serialized in the `updatedBy` wire field.
   final SdkOptional<String> updatedBy;
+
   /// Required array value serialized in the `variants` wire field.
   final List<FlagVariantsItem> variants;
+
   /// Optional object value serialized in the `metadata` wire field.
   final SdkOptional<FlagMetadata> metadata;
 
-  const Flag({required this.createdAt, required this.createdBy, this.description = const SdkOmitted(), required this.environments, required this.id, required this.kind, this.maintainerIds = const SdkOmitted(), required this.ownerId, this.permanent = const SdkOmitted(), required this.projectId, required this.revision, required this.seed, this.seenInProduction = const SdkOmitted(), required this.slug, required this.state, this.tags = const SdkOmitted(), required this.typeName, required this.updatedAt, this.updatedBy = const SdkOmitted(), required this.variants, this.metadata = const SdkOmitted()});
+  const Flag(
+      {required this.createdAt,
+      required this.createdBy,
+      this.description = const SdkOmitted(),
+      required this.environments,
+      required this.id,
+      required this.kind,
+      this.maintainerIds = const SdkOmitted(),
+      required this.ownerId,
+      this.permanent = const SdkOmitted(),
+      required this.projectId,
+      required this.revision,
+      required this.seed,
+      this.seenInProduction = const SdkOmitted(),
+      required this.slug,
+      required this.state,
+      this.tags = const SdkOmitted(),
+      required this.typeName,
+      required this.updatedAt,
+      this.updatedBy = const SdkOmitted(),
+      required this.variants,
+      this.metadata = const SdkOmitted()});
 
-  Flag Function({double createdAt, String createdBy, SdkOptional<String> description, Map<String, FlagEnvironmentsValue> environments, String id, FlagKind kind, SdkOptional<List<String>> maintainerIds, String ownerId, SdkOptional<FlagPermanent> permanent, String projectId, double revision, double seed, SdkOptional<FlagSeenInProduction> seenInProduction, String slug, FlagState state, SdkOptional<List<String>> tags, FlagTypeName typeName, double updatedAt, SdkOptional<String> updatedBy, List<FlagVariantsItem> variants, SdkOptional<FlagMetadata> metadata}) get copyWith => _copyWith;
+  Flag Function(
+      {double createdAt,
+      String createdBy,
+      SdkOptional<String> description,
+      Map<String, FlagEnvironmentsValue> environments,
+      String id,
+      FlagKind kind,
+      SdkOptional<List<String>> maintainerIds,
+      String ownerId,
+      SdkOptional<FlagPermanent> permanent,
+      String projectId,
+      double revision,
+      double seed,
+      SdkOptional<FlagSeenInProduction> seenInProduction,
+      String slug,
+      FlagState state,
+      SdkOptional<List<String>> tags,
+      FlagTypeName typeName,
+      double updatedAt,
+      SdkOptional<String> updatedBy,
+      List<FlagVariantsItem> variants,
+      SdkOptional<FlagMetadata> metadata}) get copyWith => _copyWith;
 
-  Flag _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? description = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? id = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? maintainerIds = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? permanent = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? revision = sdkOmittedValue, Object? seed = sdkOmittedValue, Object? seenInProduction = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? state = sdkOmittedValue, Object? tags = sdkOmittedValue, Object? typeName = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? variants = sdkOmittedValue, Object? metadata = sdkOmittedValue}) => Flag(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as Map<String, FlagEnvironmentsValue>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as FlagKind,
-    maintainerIds: identical(maintainerIds, sdkOmittedValue) ? this.maintainerIds : maintainerIds as SdkOptional<List<String>>,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as SdkOptional<FlagPermanent>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    revision: identical(revision, sdkOmittedValue) ? this.revision : revision as double,
-    seed: identical(seed, sdkOmittedValue) ? this.seed : seed as double,
-    seenInProduction: identical(seenInProduction, sdkOmittedValue) ? this.seenInProduction : seenInProduction as SdkOptional<FlagSeenInProduction>,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    state: identical(state, sdkOmittedValue) ? this.state : state as FlagState,
-    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as SdkOptional<List<String>>,
-    typeName: identical(typeName, sdkOmittedValue) ? this.typeName : typeName as FlagTypeName,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String>,
-    variants: identical(variants, sdkOmittedValue) ? this.variants : variants as List<FlagVariantsItem>,
-    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<FlagMetadata>,
-  );
+  Flag _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? environments = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? maintainerIds = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? permanent = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? revision = sdkOmittedValue,
+          Object? seed = sdkOmittedValue,
+          Object? seenInProduction = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? state = sdkOmittedValue,
+          Object? tags = sdkOmittedValue,
+          Object? typeName = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedBy = sdkOmittedValue,
+          Object? variants = sdkOmittedValue,
+          Object? metadata = sdkOmittedValue}) =>
+      Flag(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as Map<String, FlagEnvironmentsValue>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as FlagKind,
+        maintainerIds: identical(maintainerIds, sdkOmittedValue)
+            ? this.maintainerIds
+            : maintainerIds as SdkOptional<List<String>>,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        permanent: identical(permanent, sdkOmittedValue)
+            ? this.permanent
+            : permanent as SdkOptional<FlagPermanent>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        revision: identical(revision, sdkOmittedValue)
+            ? this.revision
+            : revision as double,
+        seed: identical(seed, sdkOmittedValue) ? this.seed : seed as double,
+        seenInProduction: identical(seenInProduction, sdkOmittedValue)
+            ? this.seenInProduction
+            : seenInProduction as SdkOptional<FlagSeenInProduction>,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        state:
+            identical(state, sdkOmittedValue) ? this.state : state as FlagState,
+        tags: identical(tags, sdkOmittedValue)
+            ? this.tags
+            : tags as SdkOptional<List<String>>,
+        typeName: identical(typeName, sdkOmittedValue)
+            ? this.typeName
+            : typeName as FlagTypeName,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        updatedBy: identical(updatedBy, sdkOmittedValue)
+            ? this.updatedBy
+            : updatedBy as SdkOptional<String>,
+        variants: identical(variants, sdkOmittedValue)
+            ? this.variants
+            : variants as List<FlagVariantsItem>,
+        metadata: identical(metadata, sdkOmittedValue)
+            ? this.metadata
+            : metadata as SdkOptional<FlagMetadata>,
+      );
 
   factory Flag.fromJson(Map<String, dynamic> json) => Flag(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    environments: (json['environments'] == null ? null : Map<String, dynamic>.from(json['environments'] as Map).map((key, value) => MapEntry(key, FlagEnvironmentsValue.fromJson(value as Map<String, dynamic>))))!,
-    id: (json['id'] as String?)!,
-    kind: (json['kind'] != null ? FlagKind.fromJson(json['kind'] as String) : null)!,
-    maintainerIds: json['maintainerIds'] != null ? SdkPresent(((json['maintainerIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    ownerId: (json['ownerId'] as String?)!,
-    permanent: json['permanent'] != null ? SdkPresent((json['permanent'] != null ? FlagPermanent.fromJson(json['permanent'] as bool) : null)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    revision: ((json['revision'] as num?)?.toDouble())!,
-    seed: ((json['seed'] as num?)?.toDouble())!,
-    seenInProduction: json['seenInProduction'] != null ? SdkPresent((json['seenInProduction'] != null ? FlagSeenInProduction.fromJson(json['seenInProduction'] as bool) : null)!) : const SdkOmitted(),
-    slug: (json['slug'] as String?)!,
-    state: (json['state'] != null ? FlagState.fromJson(json['state'] as String) : null)!,
-    tags: json['tags'] != null ? SdkPresent(((json['tags'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    typeName: (json['typeName'] != null ? FlagTypeName.fromJson(json['typeName'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    updatedBy: json['updatedBy'] != null ? SdkPresent((json['updatedBy'] as String?)!) : const SdkOmitted(),
-    variants: ((json['variants'] as List?)?.map((e) => FlagVariantsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] != null ? FlagMetadata.fromJson(json['metadata'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        environments: (json['environments'] == null
+            ? null
+            : Map<String, dynamic>.from(json['environments'] as Map).map(
+                (key, value) => MapEntry(
+                    key,
+                    FlagEnvironmentsValue.fromJson(
+                        value as Map<String, dynamic>))))!,
+        id: (json['id'] as String?)!,
+        kind: (json['kind'] != null
+            ? FlagKind.fromJson(json['kind'] as String)
+            : null)!,
+        maintainerIds: json['maintainerIds'] != null
+            ? SdkPresent(((json['maintainerIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        ownerId: (json['ownerId'] as String?)!,
+        permanent: json['permanent'] != null
+            ? SdkPresent((json['permanent'] != null
+                ? FlagPermanent.fromJson(json['permanent'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        revision: ((json['revision'] as num?)?.toDouble())!,
+        seed: ((json['seed'] as num?)?.toDouble())!,
+        seenInProduction: json['seenInProduction'] != null
+            ? SdkPresent((json['seenInProduction'] != null
+                ? FlagSeenInProduction.fromJson(
+                    json['seenInProduction'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        slug: (json['slug'] as String?)!,
+        state: (json['state'] != null
+            ? FlagState.fromJson(json['state'] as String)
+            : null)!,
+        tags: json['tags'] != null
+            ? SdkPresent(
+                ((json['tags'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        typeName: (json['typeName'] != null
+            ? FlagTypeName.fromJson(json['typeName'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        updatedBy: json['updatedBy'] != null
+            ? SdkPresent((json['updatedBy'] as String?)!)
+            : const SdkOmitted(),
+        variants: ((json['variants'] as List?)
+            ?.map((e) => FlagVariantsItem.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        metadata: json['metadata'] != null
+            ? SdkPresent((json['metadata'] != null
+                ? FlagMetadata.fromJson(
+                    json['metadata'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    'environments': environments.map((key, value) => MapEntry(key, value.toJson())),
-    'id': id,
-    'kind': kind.toJson(),
-    ...switch (maintainerIds) {
-      SdkPresent<List<String>>(value: final value) => {'maintainerIds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'ownerId': ownerId,
-    ...switch (permanent) {
-      SdkPresent<FlagPermanent>(value: final value) => {'permanent': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'revision': revision,
-    'seed': seed,
-    ...switch (seenInProduction) {
-      SdkPresent<FlagSeenInProduction>(value: final value) => {'seenInProduction': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slug': slug,
-    'state': state.toJson(),
-    ...switch (tags) {
-      SdkPresent<List<String>>(value: final value) => {'tags': value,},
-      _ => const <String, dynamic>{},
-    },
-    'typeName': typeName.toJson(),
-    'updatedAt': updatedAt,
-    ...switch (updatedBy) {
-      SdkPresent<String>(value: final value) => {'updatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    'variants': variants.map((item) => item.toJson()).toList(),
-    ...switch (metadata) {
-      SdkPresent<FlagMetadata>(value: final value) => {'metadata': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'environments':
+            environments.map((key, value) => MapEntry(key, value.toJson())),
+        'id': id,
+        'kind': kind.toJson(),
+        ...switch (maintainerIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'maintainerIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ownerId': ownerId,
+        ...switch (permanent) {
+          SdkPresent<FlagPermanent>(value: final value) => {
+              'permanent': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'revision': revision,
+        'seed': seed,
+        ...switch (seenInProduction) {
+          SdkPresent<FlagSeenInProduction>(value: final value) => {
+              'seenInProduction': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slug': slug,
+        'state': state.toJson(),
+        ...switch (tags) {
+          SdkPresent<List<String>>(value: final value) => {
+              'tags': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'typeName': typeName.toJson(),
+        'updatedAt': updatedAt,
+        ...switch (updatedBy) {
+          SdkPresent<String>(value: final value) => {
+              'updatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'variants': variants.map((item) => item.toJson()).toList(),
+        ...switch (metadata) {
+          SdkPresent<FlagMetadata>(value: final value) => {
+              'metadata': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

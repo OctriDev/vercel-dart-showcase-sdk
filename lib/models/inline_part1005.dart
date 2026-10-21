@@ -7,35 +7,74 @@ part of 'inline.dart';
 class DeleteProjectAvatarResponseOidcTokenConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether or not to generate OpenID Connect JSON Web Tokens.
   final SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigEnabled> enabled;
+
   /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
-  final SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigIssuerMode> issuerMode;
+  final SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigIssuerMode>
+      issuerMode;
 
-  const DeleteProjectAvatarResponseOidcTokenConfig({this.enabled = const SdkOmitted(), this.issuerMode = const SdkOmitted()});
+  const DeleteProjectAvatarResponseOidcTokenConfig(
+      {this.enabled = const SdkOmitted(),
+      this.issuerMode = const SdkOmitted()});
 
-  DeleteProjectAvatarResponseOidcTokenConfig Function({SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigEnabled> enabled, SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigIssuerMode> issuerMode}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseOidcTokenConfig Function(
+      {SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigEnabled> enabled,
+      SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigIssuerMode>
+          issuerMode}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseOidcTokenConfig _copyWith({Object? enabled = sdkOmittedValue, Object? issuerMode = sdkOmittedValue}) => DeleteProjectAvatarResponseOidcTokenConfig(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigEnabled>,
-    issuerMode: identical(issuerMode, sdkOmittedValue) ? this.issuerMode : issuerMode as SdkOptional<DeleteProjectAvatarResponseOidcTokenConfigIssuerMode>,
-  );
+  DeleteProjectAvatarResponseOidcTokenConfig _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? issuerMode = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseOidcTokenConfig(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<
+                DeleteProjectAvatarResponseOidcTokenConfigEnabled>,
+        issuerMode: identical(issuerMode, sdkOmittedValue)
+            ? this.issuerMode
+            : issuerMode as SdkOptional<
+                DeleteProjectAvatarResponseOidcTokenConfigIssuerMode>,
+      );
 
-  factory DeleteProjectAvatarResponseOidcTokenConfig.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseOidcTokenConfig(
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? DeleteProjectAvatarResponseOidcTokenConfigEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-    issuerMode: json['issuerMode'] != null ? SdkPresent((json['issuerMode'] != null ? DeleteProjectAvatarResponseOidcTokenConfigIssuerMode.fromJson(json['issuerMode'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory DeleteProjectAvatarResponseOidcTokenConfig.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseOidcTokenConfig(
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] != null
+                ? DeleteProjectAvatarResponseOidcTokenConfigEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        issuerMode: json['issuerMode'] != null
+            ? SdkPresent((json['issuerMode'] != null
+                ? DeleteProjectAvatarResponseOidcTokenConfigIssuerMode.fromJson(
+                    json['issuerMode'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enabled) {
-      SdkPresent<DeleteProjectAvatarResponseOidcTokenConfigEnabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (issuerMode) {
-      SdkPresent<DeleteProjectAvatarResponseOidcTokenConfigIssuerMode>(value: final value) => {'issuerMode': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enabled) {
+          SdkPresent<DeleteProjectAvatarResponseOidcTokenConfigEnabled>(
+            value: final value
+          ) =>
+            {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (issuerMode) {
+          SdkPresent<DeleteProjectAvatarResponseOidcTokenConfigIssuerMode>(
+            value: final value
+          ) =>
+            {
+              'issuerMode': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class DeleteProjectAvatarResponseOptionsAllowlistPathsItem {
@@ -43,21 +82,27 @@ class DeleteProjectAvatarResponseOptionsAllowlistPathsItem {
   static const String constructionSurface = 'named';
   final String value;
 
-  const DeleteProjectAvatarResponseOptionsAllowlistPathsItem({required this.value});
+  const DeleteProjectAvatarResponseOptionsAllowlistPathsItem(
+      {required this.value});
 
-  DeleteProjectAvatarResponseOptionsAllowlistPathsItem Function({String value}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseOptionsAllowlistPathsItem Function({String value})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseOptionsAllowlistPathsItem _copyWith({Object? value = sdkOmittedValue}) => DeleteProjectAvatarResponseOptionsAllowlistPathsItem(
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  DeleteProjectAvatarResponseOptionsAllowlistPathsItem _copyWith(
+          {Object? value = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseOptionsAllowlistPathsItem(
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory DeleteProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseOptionsAllowlistPathsItem(
-    value: (json['value'] as String?)!,
-  );
+  factory DeleteProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseOptionsAllowlistPathsItem(
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'value': value,
-  };
+        'value': value,
+      };
 }
 
 class DeleteProjectAvatarResponseOptionsAllowlist {
@@ -67,19 +112,32 @@ class DeleteProjectAvatarResponseOptionsAllowlist {
 
   const DeleteProjectAvatarResponseOptionsAllowlist({required this.paths});
 
-  DeleteProjectAvatarResponseOptionsAllowlist Function({List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem> paths}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseOptionsAllowlist Function(
+          {List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem> paths})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseOptionsAllowlist _copyWith({Object? paths = sdkOmittedValue}) => DeleteProjectAvatarResponseOptionsAllowlist(
-    paths: identical(paths, sdkOmittedValue) ? this.paths : paths as List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem>,
-  );
+  DeleteProjectAvatarResponseOptionsAllowlist _copyWith(
+          {Object? paths = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseOptionsAllowlist(
+        paths: identical(paths, sdkOmittedValue)
+            ? this.paths
+            : paths
+                as List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem>,
+      );
 
-  factory DeleteProjectAvatarResponseOptionsAllowlist.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseOptionsAllowlist(
-    paths: ((json['paths'] as List?)?.map((e) => DeleteProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory DeleteProjectAvatarResponseOptionsAllowlist.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseOptionsAllowlist(
+        paths: ((json['paths'] as List?)
+            ?.map((e) =>
+                DeleteProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'paths': paths.map((item) => item.toJson()).toList(),
-  };
+        'paths': paths.map((item) => item.toJson()).toList(),
+      };
 }
 
 class DeleteProjectAvatarResponsePassport {
@@ -88,45 +146,76 @@ class DeleteProjectAvatarResponsePassport {
   final String connectorId;
   final DeleteProjectAvatarResponsePassportDeploymentType deploymentType;
 
-  const DeleteProjectAvatarResponsePassport({required this.connectorId, required this.deploymentType});
+  const DeleteProjectAvatarResponsePassport(
+      {required this.connectorId, required this.deploymentType});
 
-  DeleteProjectAvatarResponsePassport Function({String connectorId, DeleteProjectAvatarResponsePassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponsePassport Function(
+          {String connectorId,
+          DeleteProjectAvatarResponsePassportDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponsePassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => DeleteProjectAvatarResponsePassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as DeleteProjectAvatarResponsePassportDeploymentType,
-  );
+  DeleteProjectAvatarResponsePassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponsePassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as DeleteProjectAvatarResponsePassportDeploymentType,
+      );
 
-  factory DeleteProjectAvatarResponsePassport.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponsePassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? DeleteProjectAvatarResponsePassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponsePassport.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponsePassport(
+        connectorId: (json['connectorId'] as String?)!,
+        deploymentType: (json['deploymentType'] != null
+            ? DeleteProjectAvatarResponsePassportDeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Password protection settings returned without the secret password hash.
 class DeleteProjectAvatarResponsePasswordProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final DeleteProjectAvatarResponsePasswordProtectionDeploymentType deploymentType;
+  final DeleteProjectAvatarResponsePasswordProtectionDeploymentType
+      deploymentType;
 
-  const DeleteProjectAvatarResponsePasswordProtection({required this.deploymentType});
+  const DeleteProjectAvatarResponsePasswordProtection(
+      {required this.deploymentType});
 
-  DeleteProjectAvatarResponsePasswordProtection Function({DeleteProjectAvatarResponsePasswordProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponsePasswordProtection Function(
+      {DeleteProjectAvatarResponsePasswordProtectionDeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponsePasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => DeleteProjectAvatarResponsePasswordProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as DeleteProjectAvatarResponsePasswordProtectionDeploymentType,
-  );
+  DeleteProjectAvatarResponsePasswordProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponsePasswordProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as DeleteProjectAvatarResponsePasswordProtectionDeploymentType,
+      );
 
-  factory DeleteProjectAvatarResponsePasswordProtection.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponsePasswordProtection(
-    deploymentType: (json['deploymentType'] != null ? DeleteProjectAvatarResponsePasswordProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponsePasswordProtection.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponsePasswordProtection(
+        deploymentType: (json['deploymentType'] != null
+            ? DeleteProjectAvatarResponsePasswordProtectionDeploymentType
+                .fromJson(json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }

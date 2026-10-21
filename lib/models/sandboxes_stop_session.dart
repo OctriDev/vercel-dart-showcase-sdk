@@ -7,57 +7,89 @@ part of 'sandboxes.dart';
 class StopSessionResponseVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
 
   const StopSessionResponseVariant0({required this.session});
 
-  StopSessionResponseVariant0 Function({Session session}) get copyWith => _copyWith;
+  StopSessionResponseVariant0 Function({Session session}) get copyWith =>
+      _copyWith;
 
-  StopSessionResponseVariant0 _copyWith({Object? session = sdkOmittedValue}) => StopSessionResponseVariant0(
-    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
-  );
+  StopSessionResponseVariant0 _copyWith({Object? session = sdkOmittedValue}) =>
+      StopSessionResponseVariant0(
+        session: identical(session, sdkOmittedValue)
+            ? this.session
+            : session as Session,
+      );
 
-  factory StopSessionResponseVariant0.fromJson(Map<String, dynamic> json) => StopSessionResponseVariant0(
-    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
-  );
+  factory StopSessionResponseVariant0.fromJson(Map<String, dynamic> json) =>
+      StopSessionResponseVariant0(
+        session: (json['session'] != null
+            ? Session.fromJson(json['session'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'session': session.toJson(),
-  };
+        'session': session.toJson(),
+      };
 }
 
 class StopSessionResponseVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Vercel NamedSandbox.
   final NamedSandbox sandbox;
+
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
+
   /// This object contains information related to a Snapshot of a Vercel Sandbox session (v2 API).
   final Snapshot snapshot;
 
-  const StopSessionResponseVariant1({required this.sandbox, required this.session, required this.snapshot});
+  const StopSessionResponseVariant1(
+      {required this.sandbox, required this.session, required this.snapshot});
 
-  StopSessionResponseVariant1 Function({NamedSandbox sandbox, Session session, Snapshot snapshot}) get copyWith => _copyWith;
+  StopSessionResponseVariant1 Function(
+      {NamedSandbox sandbox,
+      Session session,
+      Snapshot snapshot}) get copyWith => _copyWith;
 
-  StopSessionResponseVariant1 _copyWith({Object? sandbox = sdkOmittedValue, Object? session = sdkOmittedValue, Object? snapshot = sdkOmittedValue}) => StopSessionResponseVariant1(
-    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as NamedSandbox,
-    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
-    snapshot: identical(snapshot, sdkOmittedValue) ? this.snapshot : snapshot as Snapshot,
-  );
+  StopSessionResponseVariant1 _copyWith(
+          {Object? sandbox = sdkOmittedValue,
+          Object? session = sdkOmittedValue,
+          Object? snapshot = sdkOmittedValue}) =>
+      StopSessionResponseVariant1(
+        sandbox: identical(sandbox, sdkOmittedValue)
+            ? this.sandbox
+            : sandbox as NamedSandbox,
+        session: identical(session, sdkOmittedValue)
+            ? this.session
+            : session as Session,
+        snapshot: identical(snapshot, sdkOmittedValue)
+            ? this.snapshot
+            : snapshot as Snapshot,
+      );
 
-  factory StopSessionResponseVariant1.fromJson(Map<String, dynamic> json) => StopSessionResponseVariant1(
-    sandbox: (json['sandbox'] != null ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!,
-    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
-    snapshot: (json['snapshot'] != null ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>) : null)!,
-  );
+  factory StopSessionResponseVariant1.fromJson(Map<String, dynamic> json) =>
+      StopSessionResponseVariant1(
+        sandbox: (json['sandbox'] != null
+            ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>)
+            : null)!,
+        session: (json['session'] != null
+            ? Session.fromJson(json['session'] as Map<String, dynamic>)
+            : null)!,
+        snapshot: (json['snapshot'] != null
+            ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'sandbox': sandbox.toJson(),
-    'session': session.toJson(),
-    'snapshot': snapshot.toJson(),
-  };
+        'sandbox': sandbox.toJson(),
+        'session': session.toJson(),
+        'snapshot': snapshot.toJson(),
+      };
 }
 
 sealed class StopSessionResponse {
@@ -66,24 +98,44 @@ sealed class StopSessionResponse {
   const StopSessionResponse();
   factory StopSessionResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = StopSessionResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return StopSessionResponseStopSessionResponseVariant0(value); } } catch (_) {}
-      try { final value = StopSessionResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return StopSessionResponseStopSessionResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = StopSessionResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return StopSessionResponseStopSessionResponseVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = StopSessionResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return StopSessionResponseStopSessionResponseVariant1(value);
+        }
+      } catch (_) {}
     }
-    try { return StopSessionResponseStopSessionResponseVariant0(StopSessionResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return StopSessionResponseStopSessionResponseVariant1(StopSessionResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return StopSessionResponseStopSessionResponseVariant0(
+          StopSessionResponseVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return StopSessionResponseStopSessionResponseVariant1(
+          StopSessionResponseVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for StopSessionResponse");
   }
   Object? toJson();
 }
 
-final class StopSessionResponseStopSessionResponseVariant0 extends StopSessionResponse {
+final class StopSessionResponseStopSessionResponseVariant0
+    extends StopSessionResponse {
   final StopSessionResponseVariant0 value;
   const StopSessionResponseStopSessionResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class StopSessionResponseStopSessionResponseVariant1 extends StopSessionResponse {
+final class StopSessionResponseStopSessionResponseVariant1
+    extends StopSessionResponse {
   final StopSessionResponseVariant1 value;
   const StopSessionResponseStopSessionResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

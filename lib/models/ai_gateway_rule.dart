@@ -8,157 +8,297 @@ part of 'ai_gateway.dart';
 class AiGatewayRuleAction {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `reason` wire field.
   final SdkOptional<String> reason;
+
   /// Optional `string` value serialized in the `rewriteModel` wire field.
   final SdkOptional<String> rewriteModel;
 
-  const AiGatewayRuleAction({this.reason = const SdkOmitted(), this.rewriteModel = const SdkOmitted()});
+  const AiGatewayRuleAction(
+      {this.reason = const SdkOmitted(),
+      this.rewriteModel = const SdkOmitted()});
 
-  AiGatewayRuleAction Function({SdkOptional<String> reason, SdkOptional<String> rewriteModel}) get copyWith => _copyWith;
+  AiGatewayRuleAction Function(
+      {SdkOptional<String> reason,
+      SdkOptional<String> rewriteModel}) get copyWith => _copyWith;
 
-  AiGatewayRuleAction _copyWith({Object? reason = sdkOmittedValue, Object? rewriteModel = sdkOmittedValue}) => AiGatewayRuleAction(
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<String>,
-    rewriteModel: identical(rewriteModel, sdkOmittedValue) ? this.rewriteModel : rewriteModel as SdkOptional<String>,
-  );
+  AiGatewayRuleAction _copyWith(
+          {Object? reason = sdkOmittedValue,
+          Object? rewriteModel = sdkOmittedValue}) =>
+      AiGatewayRuleAction(
+        reason: identical(reason, sdkOmittedValue)
+            ? this.reason
+            : reason as SdkOptional<String>,
+        rewriteModel: identical(rewriteModel, sdkOmittedValue)
+            ? this.rewriteModel
+            : rewriteModel as SdkOptional<String>,
+      );
 
-  factory AiGatewayRuleAction.fromJson(Map<String, dynamic> json) => AiGatewayRuleAction(
-    reason: json['reason'] != null ? SdkPresent((json['reason'] as String?)!) : const SdkOmitted(),
-    rewriteModel: json['rewriteModel'] != null ? SdkPresent((json['rewriteModel'] as String?)!) : const SdkOmitted(),
-  );
+  factory AiGatewayRuleAction.fromJson(Map<String, dynamic> json) =>
+      AiGatewayRuleAction(
+        reason: json['reason'] != null
+            ? SdkPresent((json['reason'] as String?)!)
+            : const SdkOmitted(),
+        rewriteModel: json['rewriteModel'] != null
+            ? SdkPresent((json['rewriteModel'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (reason) {
-      SdkPresent<String>(value: final value) => {'reason': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rewriteModel) {
-      SdkPresent<String>(value: final value) => {'rewriteModel': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (reason) {
+          SdkPresent<String>(value: final value) => {
+              'reason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rewriteModel) {
+          SdkPresent<String>(value: final value) => {
+              'rewriteModel': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `match` wire field.
 class AiGatewayRuleMatch {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `model` wire field.
   final SdkOptional<String> model;
 
   const AiGatewayRuleMatch({this.model = const SdkOmitted()});
 
-  AiGatewayRuleMatch Function({SdkOptional<String> model}) get copyWith => _copyWith;
+  AiGatewayRuleMatch Function({SdkOptional<String> model}) get copyWith =>
+      _copyWith;
 
-  AiGatewayRuleMatch _copyWith({Object? model = sdkOmittedValue}) => AiGatewayRuleMatch(
-    model: identical(model, sdkOmittedValue) ? this.model : model as SdkOptional<String>,
-  );
+  AiGatewayRuleMatch _copyWith({Object? model = sdkOmittedValue}) =>
+      AiGatewayRuleMatch(
+        model: identical(model, sdkOmittedValue)
+            ? this.model
+            : model as SdkOptional<String>,
+      );
 
-  factory AiGatewayRuleMatch.fromJson(Map<String, dynamic> json) => AiGatewayRuleMatch(
-    model: json['model'] != null ? SdkPresent((json['model'] as String?)!) : const SdkOmitted(),
-  );
+  factory AiGatewayRuleMatch.fromJson(Map<String, dynamic> json) =>
+      AiGatewayRuleMatch(
+        model: json['model'] != null
+            ? SdkPresent((json['model'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (model) {
-      SdkPresent<String>(value: final value) => {'model': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (model) {
+          SdkPresent<String>(value: final value) => {
+              'model': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Public response shape for AI Gateway routing rules. Used so OpenAPI generation can avoid ElectroDB's recursive EntityItem types.
 class AiGatewayRule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `action` wire field.
   final SdkOptional<AiGatewayRuleAction> action;
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Optional `string` value serialized in the `createdBy` wire field.
   final SdkOptional<String> createdBy;
+
   /// Optional enumerated value serialized in the `deleted` wire field.
   final SdkOptional<AiGatewayRuleDeleted> deleted;
+
   /// Optional `string` value serialized in the `description` wire field.
   final SdkOptional<String> description;
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final AiGatewayRuleEnabled enabled;
+
   /// Optional object value serialized in the `match` wire field.
   final SdkOptional<AiGatewayRuleMatch> match;
+
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
+
   /// Required `string` value serialized in the `ruleId` wire field.
   final String ruleId;
+
   /// Required enumerated value serialized in the `type` wire field.
   final AiGatewayRuleType type_;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
+
   /// Optional `string` value serialized in the `updatedBy` wire field.
   final SdkOptional<String> updatedBy;
 
-  const AiGatewayRule({this.action = const SdkOmitted(), required this.createdAt, this.createdBy = const SdkOmitted(), this.deleted = const SdkOmitted(), this.description = const SdkOmitted(), required this.enabled, this.match = const SdkOmitted(), required this.ownerId, required this.ruleId, required this.type_, required this.updatedAt, this.updatedBy = const SdkOmitted()});
+  const AiGatewayRule(
+      {this.action = const SdkOmitted(),
+      required this.createdAt,
+      this.createdBy = const SdkOmitted(),
+      this.deleted = const SdkOmitted(),
+      this.description = const SdkOmitted(),
+      required this.enabled,
+      this.match = const SdkOmitted(),
+      required this.ownerId,
+      required this.ruleId,
+      required this.type_,
+      required this.updatedAt,
+      this.updatedBy = const SdkOmitted()});
 
-  AiGatewayRule Function({SdkOptional<AiGatewayRuleAction> action, double createdAt, SdkOptional<String> createdBy, SdkOptional<AiGatewayRuleDeleted> deleted, SdkOptional<String> description, AiGatewayRuleEnabled enabled, SdkOptional<AiGatewayRuleMatch> match, String ownerId, String ruleId, AiGatewayRuleType type_, double updatedAt, SdkOptional<String> updatedBy}) get copyWith => _copyWith;
+  AiGatewayRule Function(
+      {SdkOptional<AiGatewayRuleAction> action,
+      double createdAt,
+      SdkOptional<String> createdBy,
+      SdkOptional<AiGatewayRuleDeleted> deleted,
+      SdkOptional<String> description,
+      AiGatewayRuleEnabled enabled,
+      SdkOptional<AiGatewayRuleMatch> match,
+      String ownerId,
+      String ruleId,
+      AiGatewayRuleType type_,
+      double updatedAt,
+      SdkOptional<String> updatedBy}) get copyWith => _copyWith;
 
-  AiGatewayRule _copyWith({Object? action = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? deleted = sdkOmittedValue, Object? description = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? match = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? ruleId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue}) => AiGatewayRule(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<AiGatewayRuleAction>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
-    deleted: identical(deleted, sdkOmittedValue) ? this.deleted : deleted as SdkOptional<AiGatewayRuleDeleted>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as AiGatewayRuleEnabled,
-    match: identical(match, sdkOmittedValue) ? this.match : match as SdkOptional<AiGatewayRuleMatch>,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    ruleId: identical(ruleId, sdkOmittedValue) ? this.ruleId : ruleId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as AiGatewayRuleType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String>,
-  );
+  AiGatewayRule _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? deleted = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? match = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? ruleId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedBy = sdkOmittedValue}) =>
+      AiGatewayRule(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<AiGatewayRuleAction>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as SdkOptional<String>,
+        deleted: identical(deleted, sdkOmittedValue)
+            ? this.deleted
+            : deleted as SdkOptional<AiGatewayRuleDeleted>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as AiGatewayRuleEnabled,
+        match: identical(match, sdkOmittedValue)
+            ? this.match
+            : match as SdkOptional<AiGatewayRuleMatch>,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        ruleId:
+            identical(ruleId, sdkOmittedValue) ? this.ruleId : ruleId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as AiGatewayRuleType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        updatedBy: identical(updatedBy, sdkOmittedValue)
+            ? this.updatedBy
+            : updatedBy as SdkOptional<String>,
+      );
 
   factory AiGatewayRule.fromJson(Map<String, dynamic> json) => AiGatewayRule(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? AiGatewayRuleAction.fromJson(json['action'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
-    deleted: json['deleted'] != null ? SdkPresent((json['deleted'] != null ? AiGatewayRuleDeleted.fromJson(json['deleted'] as bool) : null)!) : const SdkOmitted(),
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? AiGatewayRuleEnabled.fromJson(json['enabled'] as bool) : null)!,
-    match: json['match'] != null ? SdkPresent((json['match'] != null ? AiGatewayRuleMatch.fromJson(json['match'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    ownerId: (json['ownerId'] as String?)!,
-    ruleId: (json['ruleId'] as String?)!,
-    type_: (json['type'] != null ? AiGatewayRuleType.fromJson(json['type'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    updatedBy: json['updatedBy'] != null ? SdkPresent((json['updatedBy'] as String?)!) : const SdkOmitted(),
-  );
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? AiGatewayRuleAction.fromJson(
+                    json['action'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: json['createdBy'] != null
+            ? SdkPresent((json['createdBy'] as String?)!)
+            : const SdkOmitted(),
+        deleted: json['deleted'] != null
+            ? SdkPresent((json['deleted'] != null
+                ? AiGatewayRuleDeleted.fromJson(json['deleted'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        enabled: (json['enabled'] != null
+            ? AiGatewayRuleEnabled.fromJson(json['enabled'] as bool)
+            : null)!,
+        match: json['match'] != null
+            ? SdkPresent((json['match'] != null
+                ? AiGatewayRuleMatch.fromJson(
+                    json['match'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        ownerId: (json['ownerId'] as String?)!,
+        ruleId: (json['ruleId'] as String?)!,
+        type_: (json['type'] != null
+            ? AiGatewayRuleType.fromJson(json['type'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        updatedBy: json['updatedBy'] != null
+            ? SdkPresent((json['updatedBy'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<AiGatewayRuleAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    ...switch (createdBy) {
-      SdkPresent<String>(value: final value) => {'createdBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deleted) {
-      SdkPresent<AiGatewayRuleDeleted>(value: final value) => {'deleted': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    ...switch (match) {
-      SdkPresent<AiGatewayRuleMatch>(value: final value) => {'match': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'ownerId': ownerId,
-    'ruleId': ruleId,
-    'type': type_.toJson(),
-    'updatedAt': updatedAt,
-    ...switch (updatedBy) {
-      SdkPresent<String>(value: final value) => {'updatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<AiGatewayRuleAction>(value: final value) => {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        ...switch (createdBy) {
+          SdkPresent<String>(value: final value) => {
+              'createdBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deleted) {
+          SdkPresent<AiGatewayRuleDeleted>(value: final value) => {
+              'deleted': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        ...switch (match) {
+          SdkPresent<AiGatewayRuleMatch>(value: final value) => {
+              'match': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ownerId': ownerId,
+        'ruleId': ruleId,
+        'type': type_.toJson(),
+        'updatedAt': updatedAt,
+        ...switch (updatedBy) {
+          SdkPresent<String>(value: final value) => {
+              'updatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

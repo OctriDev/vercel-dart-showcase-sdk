@@ -4,38 +4,56 @@
 part of 'projects_delete.dart';
 
 // projects_delete domain models
-final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant11 extends DeleteProjectAvatarResponseEnvItemContentHint {
+final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant11
+    extends DeleteProjectAvatarResponseEnvItemContentHint {
   final DeleteProjectAvatarResponseEnvItemContentHintVariant11 value;
-  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant11(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant11(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant12 extends DeleteProjectAvatarResponseEnvItemContentHint {
+final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant12
+    extends DeleteProjectAvatarResponseEnvItemContentHint {
   final DeleteProjectAvatarResponseEnvItemContentHintVariant12 value;
-  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant12(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant12(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant13 extends DeleteProjectAvatarResponseEnvItemContentHint {
+final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant13
+    extends DeleteProjectAvatarResponseEnvItemContentHint {
   final DeleteProjectAvatarResponseEnvItemContentHintVariant13 value;
-  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant13(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant13(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant14 extends DeleteProjectAvatarResponseEnvItemContentHint {
+final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant14
+    extends DeleteProjectAvatarResponseEnvItemContentHint {
   final DeleteProjectAvatarResponseEnvItemContentHintVariant14 value;
-  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant14(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant14(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant15 extends DeleteProjectAvatarResponseEnvItemContentHint {
+final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant15
+    extends DeleteProjectAvatarResponseEnvItemContentHint {
   final DeleteProjectAvatarResponseEnvItemContentHintVariant15 value;
-  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant15(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant15(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant16 extends DeleteProjectAvatarResponseEnvItemContentHint {
+final class DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant16
+    extends DeleteProjectAvatarResponseEnvItemContentHint {
   final DeleteProjectAvatarResponseEnvItemContentHintVariant16 value;
-  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseEnvItemContentHintDeleteProjectAvatarResponseEnvItemContentHintVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

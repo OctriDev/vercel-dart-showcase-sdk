@@ -8,32 +8,53 @@ part of 'domains_registrar.dart';
 class Forbidden {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final ForbiddenStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final ForbiddenCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const Forbidden({required this.status, required this.code, required this.message});
+  const Forbidden(
+      {required this.status, required this.code, required this.message});
 
-  Forbidden Function({ForbiddenStatus status, ForbiddenCode code, String message}) get copyWith => _copyWith;
+  Forbidden Function(
+      {ForbiddenStatus status,
+      ForbiddenCode code,
+      String message}) get copyWith => _copyWith;
 
-  Forbidden _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => Forbidden(
-    status: identical(status, sdkOmittedValue) ? this.status : status as ForbiddenStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as ForbiddenCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  Forbidden _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      Forbidden(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as ForbiddenStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as ForbiddenCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
   factory Forbidden.fromJson(Map<String, dynamic> json) => Forbidden(
-    status: (json['status'] != null ? ForbiddenStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? ForbiddenCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+        status: (json['status'] != null
+            ? ForbiddenStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? ForbiddenCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }

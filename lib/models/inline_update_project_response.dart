@@ -10,39 +10,55 @@ class UpdateProjectResponse {
   final String accountId;
   final List<UpdateProjectResponseAliasItem> alias;
   final SdkOptional<UpdateProjectResponseAnalytics> analytics;
-  final SdkOptional<UpdateProjectResponseAppliedCve55182Migration> appliedCve55182Migration;
-  final SdkOptional<UpdateProjectResponseAutoAssignCustomDomains> autoAssignCustomDomains;
+  final SdkOptional<UpdateProjectResponseAppliedCve55182Migration>
+      appliedCve55182Migration;
+  final SdkOptional<UpdateProjectResponseAutoAssignCustomDomains>
+      autoAssignCustomDomains;
   final SdkOptional<String> autoAssignCustomDomainsUpdatedBy;
-  final SdkOptional<UpdateProjectResponseAutoExposeSystemEnvs> autoExposeSystemEnvs;
+  final SdkOptional<UpdateProjectResponseAutoExposeSystemEnvs>
+      autoExposeSystemEnvs;
   final SdkOptional<String?> avatar;
   final SdkOptional<String?> avatarDarkMode;
   final SdkOptional<UpdateProjectResponseBlobs> blobs;
   final SdkOptional<String?> buildCommand;
   final SdkOptional<String?> commandForIgnoringBuildStep;
   final SdkOptional<String> concurrencyBucketName;
-  final SdkOptional<UpdateProjectResponseConnectBuildsEnabled> connectBuildsEnabled;
+  final SdkOptional<UpdateProjectResponseConnectBuildsEnabled>
+      connectBuildsEnabled;
   final SdkOptional<String?> connectConfigurationId;
-  final SdkOptional<List<UpdateProjectResponseConnectConfigurationsItem>?> connectConfigurations;
+  final SdkOptional<List<UpdateProjectResponseConnectConfigurationsItem>?>
+      connectConfigurations;
   final SdkOptional<double> createdAt;
+
   /// Typed representation of the `UpdateProjectResponseCreator` API schema.
   final SdkOptional<UpdateProjectResponseCreator> creator;
   final SdkOptional<UpdateProjectResponseCrons> crons;
-  final SdkOptional<List<UpdateProjectResponseCustomEnvironmentsItem>> customEnvironments;
-  final SdkOptional<UpdateProjectResponseCustomerSupportCodeVisibility> customerSupportCodeVisibility;
+  final SdkOptional<List<UpdateProjectResponseCustomEnvironmentsItem>>
+      customEnvironments;
+  final SdkOptional<UpdateProjectResponseCustomerSupportCodeVisibility>
+      customerSupportCodeVisibility;
   final SdkOptional<UpdateProjectResponseDataCache> dataCache;
   final UpdateProjectResponseDefaultResourceConfig defaultResourceConfig;
+
   /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
   final UpdateProjectResponseDeploymentExpiration deploymentExpiration;
+
   /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
   final SdkOptional<UpdateProjectResponseDeploymentPolicy?> deploymentPolicy;
   final SdkOptional<String?> devCommand;
   final UpdateProjectResponseDirectoryListing directoryListing;
-  final SdkOptional<List<UpdateProjectResponseDismissedToastsItem>> dismissedToasts;
-  final SdkOptional<UpdateProjectResponseEnableAffectedProjectsDeployments> enableAffectedProjectsDeployments;
-  final SdkOptional<UpdateProjectResponseEnableExternalRewriteCaching> enableExternalRewriteCaching;
-  final SdkOptional<UpdateProjectResponseEnablePreviewFeedback?> enablePreviewFeedback;
-  final SdkOptional<UpdateProjectResponseEnableProductionFeedback?> enableProductionFeedback;
+  final SdkOptional<List<UpdateProjectResponseDismissedToastsItem>>
+      dismissedToasts;
+  final SdkOptional<UpdateProjectResponseEnableAffectedProjectsDeployments>
+      enableAffectedProjectsDeployments;
+  final SdkOptional<UpdateProjectResponseEnableExternalRewriteCaching>
+      enableExternalRewriteCaching;
+  final SdkOptional<UpdateProjectResponseEnablePreviewFeedback?>
+      enablePreviewFeedback;
+  final SdkOptional<UpdateProjectResponseEnableProductionFeedback?>
+      enableProductionFeedback;
   final SdkOptional<List<UpdateProjectResponseEnvItem>> env;
+
   /// Typed representation of the `UpdateProjectResponseExpiration` API schema.
   final SdkOptional<UpdateProjectResponseExpiration> expiration;
   final SdkOptional<UpdateProjectResponseFeatures> features;
@@ -55,15 +71,19 @@ class UpdateProjectResponse {
   final SdkOptional<UpdateProjectResponseHasDeployments> hasDeployments;
   final String id;
   final SdkOptional<String?> installCommand;
-  final SdkOptional<List<UpdateProjectResponseInternalRoutesItem>> internalRoutes;
+  final SdkOptional<List<UpdateProjectResponseInternalRoutesItem>>
+      internalRoutes;
   final SdkOptional<List<UpdateProjectResponseIpBucketsItem>> ipBuckets;
   final SdkOptional<UpdateProjectResponseJobs> jobs;
   final SdkOptional<UpdateProjectResponseLastAliasRequest?> lastAliasRequest;
   final SdkOptional<Map<String, dynamic>?> lastRollbackTarget;
-  final SdkOptional<List<UpdateProjectResponseLatestDeploymentsItem>> latestDeployments;
+  final SdkOptional<List<UpdateProjectResponseLatestDeploymentsItem>>
+      latestDeployments;
+
   /// Typed representation of the `UpdateProjectResponseLink` API schema.
   final SdkOptional<UpdateProjectResponseLink> link;
   final SdkOptional<UpdateProjectResponseLive> live;
+
   /// Typed representation of the `UpdateProjectResponseMicrofrontends` API schema.
   final SdkOptional<UpdateProjectResponseMicrofrontends> microfrontends;
   final String name;
@@ -73,30 +93,41 @@ class UpdateProjectResponse {
   final SdkOptional<String?> outputDirectory;
   final SdkOptional<String?> passiveConnectConfigurationId;
   final SdkOptional<UpdateProjectResponsePassport?> passport;
+
   /// Password protection settings returned without the secret password hash.
-  final SdkOptional<UpdateProjectResponsePasswordProtection?> passwordProtection;
+  final SdkOptional<UpdateProjectResponsePasswordProtection?>
+      passwordProtection;
   final SdkOptional<UpdateProjectResponsePaused> paused;
+
   /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
   final SdkOptional<UpdateProjectResponsePermissions> permissions;
-  final SdkOptional<UpdateProjectResponseProductionDeploymentsFastLane> productionDeploymentsFastLane;
-  final SdkOptional<UpdateProjectResponseProtectedSourcemaps> protectedSourcemaps;
+  final SdkOptional<UpdateProjectResponseProductionDeploymentsFastLane>
+      productionDeploymentsFastLane;
+  final SdkOptional<UpdateProjectResponseProtectedSourcemaps>
+      protectedSourcemaps;
   final SdkOptional<Map<String, dynamic>> protectionBypass;
   final SdkOptional<UpdateProjectResponseProtectionConfig> protectionConfig;
   final UpdateProjectResponseResourceConfig resourceConfig;
+
   /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
-  final SdkOptional<UpdateProjectResponseRollbackDescription> rollbackDescription;
+  final SdkOptional<UpdateProjectResponseRollbackDescription>
+      rollbackDescription;
+
   /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
   final SdkOptional<UpdateProjectResponseRollingRelease?> rollingRelease;
   final SdkOptional<String?> rootDirectory;
   final SdkOptional<UpdateProjectResponseSandbox> sandbox;
   final SdkOptional<UpdateProjectResponseSecurity> security;
-  final SdkOptional<UpdateProjectResponseServerlessFunctionZeroConfigFailover> serverlessFunctionZeroConfigFailover;
+  final SdkOptional<UpdateProjectResponseServerlessFunctionZeroConfigFailover>
+      serverlessFunctionZeroConfigFailover;
   final SdkOptional<List<UpdateProjectResponseServicesItem>> services;
   final SdkOptional<List<String>> skewProtectionAllowedDomains;
   final SdkOptional<double> skewProtectionBoundaryAt;
   final SdkOptional<double> skewProtectionMaxAge;
-  final SdkOptional<UpdateProjectResponseSkipGitConnectDuringLink> skipGitConnectDuringLink;
-  final SdkOptional<UpdateProjectResponseSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory;
+  final SdkOptional<UpdateProjectResponseSkipGitConnectDuringLink>
+      skipGitConnectDuringLink;
+  final SdkOptional<UpdateProjectResponseSourceFilesOutsideRootDirectory>
+      sourceFilesOutsideRootDirectory;
   final SdkOptional<UpdateProjectResponseSpeedInsights> speedInsights;
   final SdkOptional<UpdateProjectResponseSsoProtection?> ssoProtection;
   final SdkOptional<UpdateProjectResponseStaticIps> staticIps;
@@ -107,6 +138,7 @@ class UpdateProjectResponse {
   final SdkOptional<String> transferredFromAccountId;
   final SdkOptional<double> transferStartedAt;
   final SdkOptional<String> transferToAccountId;
+
   /// Typed representation of the `UpdateProjectResponseTrustedIps` API schema.
   final SdkOptional<UpdateProjectResponseTrustedIps?> trustedIps;
   final SdkOptional<UpdateProjectResponseTrustedSources?> trustedSources;
@@ -116,571 +148,1818 @@ class UpdateProjectResponse {
   final SdkOptional<UpdateProjectResponseV0Created> v0Created;
   final SdkOptional<UpdateProjectResponseWebAnalytics> webAnalytics;
 
-  const UpdateProjectResponse({required this.accountId, required this.alias, this.analytics = const SdkOmitted(), this.appliedCve55182Migration = const SdkOmitted(), this.autoAssignCustomDomains = const SdkOmitted(), this.autoAssignCustomDomainsUpdatedBy = const SdkOmitted(), this.autoExposeSystemEnvs = const SdkOmitted(), this.avatar = const SdkOmitted(), this.avatarDarkMode = const SdkOmitted(), this.blobs = const SdkOmitted(), this.buildCommand = const SdkOmitted(), this.commandForIgnoringBuildStep = const SdkOmitted(), this.concurrencyBucketName = const SdkOmitted(), this.connectBuildsEnabled = const SdkOmitted(), this.connectConfigurationId = const SdkOmitted(), this.connectConfigurations = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.creator = const SdkOmitted(), this.crons = const SdkOmitted(), this.customEnvironments = const SdkOmitted(), this.customerSupportCodeVisibility = const SdkOmitted(), this.dataCache = const SdkOmitted(), required this.defaultResourceConfig, required this.deploymentExpiration, this.deploymentPolicy = const SdkOmitted(), this.devCommand = const SdkOmitted(), required this.directoryListing, this.dismissedToasts = const SdkOmitted(), this.enableAffectedProjectsDeployments = const SdkOmitted(), this.enableExternalRewriteCaching = const SdkOmitted(), this.enablePreviewFeedback = const SdkOmitted(), this.enableProductionFeedback = const SdkOmitted(), this.env = const SdkOmitted(), this.expiration = const SdkOmitted(), this.features = const SdkOmitted(), this.framework = const SdkOmitted(), this.gitComments = const SdkOmitted(), this.gitForkProtection = const SdkOmitted(), this.gitLfs = const SdkOmitted(), this.gitProviderOptions = const SdkOmitted(), this.hasActiveBranches = const SdkOmitted(), this.hasDeployments = const SdkOmitted(), required this.id, this.installCommand = const SdkOmitted(), this.internalRoutes = const SdkOmitted(), this.ipBuckets = const SdkOmitted(), this.jobs = const SdkOmitted(), this.lastAliasRequest = const SdkOmitted(), this.lastRollbackTarget = const SdkOmitted(), this.latestDeployments = const SdkOmitted(), this.link = const SdkOmitted(), this.live = const SdkOmitted(), this.microfrontends = const SdkOmitted(), required this.name, required this.nodeVersion, this.oidcTokenConfig = const SdkOmitted(), this.optionsAllowlist = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.passiveConnectConfigurationId = const SdkOmitted(), this.passport = const SdkOmitted(), this.passwordProtection = const SdkOmitted(), this.paused = const SdkOmitted(), this.permissions = const SdkOmitted(), this.productionDeploymentsFastLane = const SdkOmitted(), this.protectedSourcemaps = const SdkOmitted(), this.protectionBypass = const SdkOmitted(), this.protectionConfig = const SdkOmitted(), required this.resourceConfig, this.rollbackDescription = const SdkOmitted(), this.rollingRelease = const SdkOmitted(), this.rootDirectory = const SdkOmitted(), this.sandbox = const SdkOmitted(), this.security = const SdkOmitted(), this.serverlessFunctionZeroConfigFailover = const SdkOmitted(), this.services = const SdkOmitted(), this.skewProtectionAllowedDomains = const SdkOmitted(), this.skewProtectionBoundaryAt = const SdkOmitted(), this.skewProtectionMaxAge = const SdkOmitted(), this.skipGitConnectDuringLink = const SdkOmitted(), this.sourceFilesOutsideRootDirectory = const SdkOmitted(), this.speedInsights = const SdkOmitted(), this.ssoProtection = const SdkOmitted(), this.staticIps = const SdkOmitted(), this.targets = const SdkOmitted(), this.tier = const SdkOmitted(), this.tracing = const SdkOmitted(), this.transferCompletedAt = const SdkOmitted(), this.transferredFromAccountId = const SdkOmitted(), this.transferStartedAt = const SdkOmitted(), this.transferToAccountId = const SdkOmitted(), this.trustedIps = const SdkOmitted(), this.trustedSources = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.usageStatus = const SdkOmitted(), this.v0 = const SdkOmitted(), this.v0Created = const SdkOmitted(), this.webAnalytics = const SdkOmitted()});
+  const UpdateProjectResponse(
+      {required this.accountId,
+      required this.alias,
+      this.analytics = const SdkOmitted(),
+      this.appliedCve55182Migration = const SdkOmitted(),
+      this.autoAssignCustomDomains = const SdkOmitted(),
+      this.autoAssignCustomDomainsUpdatedBy = const SdkOmitted(),
+      this.autoExposeSystemEnvs = const SdkOmitted(),
+      this.avatar = const SdkOmitted(),
+      this.avatarDarkMode = const SdkOmitted(),
+      this.blobs = const SdkOmitted(),
+      this.buildCommand = const SdkOmitted(),
+      this.commandForIgnoringBuildStep = const SdkOmitted(),
+      this.concurrencyBucketName = const SdkOmitted(),
+      this.connectBuildsEnabled = const SdkOmitted(),
+      this.connectConfigurationId = const SdkOmitted(),
+      this.connectConfigurations = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.creator = const SdkOmitted(),
+      this.crons = const SdkOmitted(),
+      this.customEnvironments = const SdkOmitted(),
+      this.customerSupportCodeVisibility = const SdkOmitted(),
+      this.dataCache = const SdkOmitted(),
+      required this.defaultResourceConfig,
+      required this.deploymentExpiration,
+      this.deploymentPolicy = const SdkOmitted(),
+      this.devCommand = const SdkOmitted(),
+      required this.directoryListing,
+      this.dismissedToasts = const SdkOmitted(),
+      this.enableAffectedProjectsDeployments = const SdkOmitted(),
+      this.enableExternalRewriteCaching = const SdkOmitted(),
+      this.enablePreviewFeedback = const SdkOmitted(),
+      this.enableProductionFeedback = const SdkOmitted(),
+      this.env = const SdkOmitted(),
+      this.expiration = const SdkOmitted(),
+      this.features = const SdkOmitted(),
+      this.framework = const SdkOmitted(),
+      this.gitComments = const SdkOmitted(),
+      this.gitForkProtection = const SdkOmitted(),
+      this.gitLfs = const SdkOmitted(),
+      this.gitProviderOptions = const SdkOmitted(),
+      this.hasActiveBranches = const SdkOmitted(),
+      this.hasDeployments = const SdkOmitted(),
+      required this.id,
+      this.installCommand = const SdkOmitted(),
+      this.internalRoutes = const SdkOmitted(),
+      this.ipBuckets = const SdkOmitted(),
+      this.jobs = const SdkOmitted(),
+      this.lastAliasRequest = const SdkOmitted(),
+      this.lastRollbackTarget = const SdkOmitted(),
+      this.latestDeployments = const SdkOmitted(),
+      this.link = const SdkOmitted(),
+      this.live = const SdkOmitted(),
+      this.microfrontends = const SdkOmitted(),
+      required this.name,
+      required this.nodeVersion,
+      this.oidcTokenConfig = const SdkOmitted(),
+      this.optionsAllowlist = const SdkOmitted(),
+      this.outputDirectory = const SdkOmitted(),
+      this.passiveConnectConfigurationId = const SdkOmitted(),
+      this.passport = const SdkOmitted(),
+      this.passwordProtection = const SdkOmitted(),
+      this.paused = const SdkOmitted(),
+      this.permissions = const SdkOmitted(),
+      this.productionDeploymentsFastLane = const SdkOmitted(),
+      this.protectedSourcemaps = const SdkOmitted(),
+      this.protectionBypass = const SdkOmitted(),
+      this.protectionConfig = const SdkOmitted(),
+      required this.resourceConfig,
+      this.rollbackDescription = const SdkOmitted(),
+      this.rollingRelease = const SdkOmitted(),
+      this.rootDirectory = const SdkOmitted(),
+      this.sandbox = const SdkOmitted(),
+      this.security = const SdkOmitted(),
+      this.serverlessFunctionZeroConfigFailover = const SdkOmitted(),
+      this.services = const SdkOmitted(),
+      this.skewProtectionAllowedDomains = const SdkOmitted(),
+      this.skewProtectionBoundaryAt = const SdkOmitted(),
+      this.skewProtectionMaxAge = const SdkOmitted(),
+      this.skipGitConnectDuringLink = const SdkOmitted(),
+      this.sourceFilesOutsideRootDirectory = const SdkOmitted(),
+      this.speedInsights = const SdkOmitted(),
+      this.ssoProtection = const SdkOmitted(),
+      this.staticIps = const SdkOmitted(),
+      this.targets = const SdkOmitted(),
+      this.tier = const SdkOmitted(),
+      this.tracing = const SdkOmitted(),
+      this.transferCompletedAt = const SdkOmitted(),
+      this.transferredFromAccountId = const SdkOmitted(),
+      this.transferStartedAt = const SdkOmitted(),
+      this.transferToAccountId = const SdkOmitted(),
+      this.trustedIps = const SdkOmitted(),
+      this.trustedSources = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.usageStatus = const SdkOmitted(),
+      this.v0 = const SdkOmitted(),
+      this.v0Created = const SdkOmitted(),
+      this.webAnalytics = const SdkOmitted()});
 
-  UpdateProjectResponse Function({String accountId, List<UpdateProjectResponseAliasItem> alias, SdkOptional<UpdateProjectResponseAnalytics> analytics, SdkOptional<UpdateProjectResponseAppliedCve55182Migration> appliedCve55182Migration, SdkOptional<UpdateProjectResponseAutoAssignCustomDomains> autoAssignCustomDomains, SdkOptional<String> autoAssignCustomDomainsUpdatedBy, SdkOptional<UpdateProjectResponseAutoExposeSystemEnvs> autoExposeSystemEnvs, SdkOptional<String?> avatar, SdkOptional<String?> avatarDarkMode, SdkOptional<UpdateProjectResponseBlobs> blobs, SdkOptional<String?> buildCommand, SdkOptional<String?> commandForIgnoringBuildStep, SdkOptional<String> concurrencyBucketName, SdkOptional<UpdateProjectResponseConnectBuildsEnabled> connectBuildsEnabled, SdkOptional<String?> connectConfigurationId, SdkOptional<List<UpdateProjectResponseConnectConfigurationsItem>?> connectConfigurations, SdkOptional<double> createdAt, SdkOptional<UpdateProjectResponseCreator> creator, SdkOptional<UpdateProjectResponseCrons> crons, SdkOptional<List<UpdateProjectResponseCustomEnvironmentsItem>> customEnvironments, SdkOptional<UpdateProjectResponseCustomerSupportCodeVisibility> customerSupportCodeVisibility, SdkOptional<UpdateProjectResponseDataCache> dataCache, UpdateProjectResponseDefaultResourceConfig defaultResourceConfig, UpdateProjectResponseDeploymentExpiration deploymentExpiration, SdkOptional<UpdateProjectResponseDeploymentPolicy?> deploymentPolicy, SdkOptional<String?> devCommand, UpdateProjectResponseDirectoryListing directoryListing, SdkOptional<List<UpdateProjectResponseDismissedToastsItem>> dismissedToasts, SdkOptional<UpdateProjectResponseEnableAffectedProjectsDeployments> enableAffectedProjectsDeployments, SdkOptional<UpdateProjectResponseEnableExternalRewriteCaching> enableExternalRewriteCaching, SdkOptional<UpdateProjectResponseEnablePreviewFeedback?> enablePreviewFeedback, SdkOptional<UpdateProjectResponseEnableProductionFeedback?> enableProductionFeedback, SdkOptional<List<UpdateProjectResponseEnvItem>> env, SdkOptional<UpdateProjectResponseExpiration> expiration, SdkOptional<UpdateProjectResponseFeatures> features, SdkOptional<UpdateProjectResponseFramework?> framework, SdkOptional<UpdateProjectResponseGitComments> gitComments, SdkOptional<UpdateProjectResponseGitForkProtection> gitForkProtection, SdkOptional<UpdateProjectResponseGitLFS> gitLfs, SdkOptional<UpdateProjectResponseGitProviderOptions> gitProviderOptions, SdkOptional<UpdateProjectResponseHasActiveBranches> hasActiveBranches, SdkOptional<UpdateProjectResponseHasDeployments> hasDeployments, String id, SdkOptional<String?> installCommand, SdkOptional<List<UpdateProjectResponseInternalRoutesItem>> internalRoutes, SdkOptional<List<UpdateProjectResponseIpBucketsItem>> ipBuckets, SdkOptional<UpdateProjectResponseJobs> jobs, SdkOptional<UpdateProjectResponseLastAliasRequest?> lastAliasRequest, SdkOptional<Map<String, dynamic>?> lastRollbackTarget, SdkOptional<List<UpdateProjectResponseLatestDeploymentsItem>> latestDeployments, SdkOptional<UpdateProjectResponseLink> link, SdkOptional<UpdateProjectResponseLive> live, SdkOptional<UpdateProjectResponseMicrofrontends> microfrontends, String name, UpdateProjectResponseNodeVersion nodeVersion, SdkOptional<UpdateProjectResponseOidcTokenConfig> oidcTokenConfig, SdkOptional<UpdateProjectResponseOptionsAllowlist?> optionsAllowlist, SdkOptional<String?> outputDirectory, SdkOptional<String?> passiveConnectConfigurationId, SdkOptional<UpdateProjectResponsePassport?> passport, SdkOptional<UpdateProjectResponsePasswordProtection?> passwordProtection, SdkOptional<UpdateProjectResponsePaused> paused, SdkOptional<UpdateProjectResponsePermissions> permissions, SdkOptional<UpdateProjectResponseProductionDeploymentsFastLane> productionDeploymentsFastLane, SdkOptional<UpdateProjectResponseProtectedSourcemaps> protectedSourcemaps, SdkOptional<Map<String, dynamic>> protectionBypass, SdkOptional<UpdateProjectResponseProtectionConfig> protectionConfig, UpdateProjectResponseResourceConfig resourceConfig, SdkOptional<UpdateProjectResponseRollbackDescription> rollbackDescription, SdkOptional<UpdateProjectResponseRollingRelease?> rollingRelease, SdkOptional<String?> rootDirectory, SdkOptional<UpdateProjectResponseSandbox> sandbox, SdkOptional<UpdateProjectResponseSecurity> security, SdkOptional<UpdateProjectResponseServerlessFunctionZeroConfigFailover> serverlessFunctionZeroConfigFailover, SdkOptional<List<UpdateProjectResponseServicesItem>> services, SdkOptional<List<String>> skewProtectionAllowedDomains, SdkOptional<double> skewProtectionBoundaryAt, SdkOptional<double> skewProtectionMaxAge, SdkOptional<UpdateProjectResponseSkipGitConnectDuringLink> skipGitConnectDuringLink, SdkOptional<UpdateProjectResponseSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory, SdkOptional<UpdateProjectResponseSpeedInsights> speedInsights, SdkOptional<UpdateProjectResponseSsoProtection?> ssoProtection, SdkOptional<UpdateProjectResponseStaticIps> staticIps, SdkOptional<Map<String, UpdateProjectResponseTargetsValue>> targets, SdkOptional<UpdateProjectResponseTier> tier, SdkOptional<UpdateProjectResponseTracing> tracing, SdkOptional<double> transferCompletedAt, SdkOptional<String> transferredFromAccountId, SdkOptional<double> transferStartedAt, SdkOptional<String> transferToAccountId, SdkOptional<UpdateProjectResponseTrustedIps?> trustedIps, SdkOptional<UpdateProjectResponseTrustedSources?> trustedSources, SdkOptional<double> updatedAt, SdkOptional<UpdateProjectResponseUsageStatus> usageStatus, SdkOptional<UpdateProjectResponseV0> v0, SdkOptional<UpdateProjectResponseV0Created> v0Created, SdkOptional<UpdateProjectResponseWebAnalytics> webAnalytics}) get copyWith => _copyWith;
+  UpdateProjectResponse Function(
+      {String accountId,
+      List<UpdateProjectResponseAliasItem> alias,
+      SdkOptional<UpdateProjectResponseAnalytics> analytics,
+      SdkOptional<UpdateProjectResponseAppliedCve55182Migration>
+          appliedCve55182Migration,
+      SdkOptional<UpdateProjectResponseAutoAssignCustomDomains>
+          autoAssignCustomDomains,
+      SdkOptional<String> autoAssignCustomDomainsUpdatedBy,
+      SdkOptional<UpdateProjectResponseAutoExposeSystemEnvs>
+          autoExposeSystemEnvs,
+      SdkOptional<String?> avatar,
+      SdkOptional<String?> avatarDarkMode,
+      SdkOptional<UpdateProjectResponseBlobs> blobs,
+      SdkOptional<String?> buildCommand,
+      SdkOptional<String?> commandForIgnoringBuildStep,
+      SdkOptional<String> concurrencyBucketName,
+      SdkOptional<UpdateProjectResponseConnectBuildsEnabled>
+          connectBuildsEnabled,
+      SdkOptional<String?> connectConfigurationId,
+      SdkOptional<List<UpdateProjectResponseConnectConfigurationsItem>?>
+          connectConfigurations,
+      SdkOptional<double> createdAt,
+      SdkOptional<UpdateProjectResponseCreator> creator,
+      SdkOptional<UpdateProjectResponseCrons> crons,
+      SdkOptional<List<UpdateProjectResponseCustomEnvironmentsItem>>
+          customEnvironments,
+      SdkOptional<UpdateProjectResponseCustomerSupportCodeVisibility>
+          customerSupportCodeVisibility,
+      SdkOptional<UpdateProjectResponseDataCache> dataCache,
+      UpdateProjectResponseDefaultResourceConfig defaultResourceConfig,
+      UpdateProjectResponseDeploymentExpiration deploymentExpiration,
+      SdkOptional<UpdateProjectResponseDeploymentPolicy?> deploymentPolicy,
+      SdkOptional<String?> devCommand,
+      UpdateProjectResponseDirectoryListing directoryListing,
+      SdkOptional<List<UpdateProjectResponseDismissedToastsItem>>
+          dismissedToasts,
+      SdkOptional<UpdateProjectResponseEnableAffectedProjectsDeployments>
+          enableAffectedProjectsDeployments,
+      SdkOptional<UpdateProjectResponseEnableExternalRewriteCaching>
+          enableExternalRewriteCaching,
+      SdkOptional<UpdateProjectResponseEnablePreviewFeedback?>
+          enablePreviewFeedback,
+      SdkOptional<UpdateProjectResponseEnableProductionFeedback?>
+          enableProductionFeedback,
+      SdkOptional<List<UpdateProjectResponseEnvItem>> env,
+      SdkOptional<UpdateProjectResponseExpiration> expiration,
+      SdkOptional<UpdateProjectResponseFeatures> features,
+      SdkOptional<UpdateProjectResponseFramework?> framework,
+      SdkOptional<UpdateProjectResponseGitComments> gitComments,
+      SdkOptional<UpdateProjectResponseGitForkProtection> gitForkProtection,
+      SdkOptional<UpdateProjectResponseGitLFS> gitLfs,
+      SdkOptional<UpdateProjectResponseGitProviderOptions> gitProviderOptions,
+      SdkOptional<UpdateProjectResponseHasActiveBranches> hasActiveBranches,
+      SdkOptional<UpdateProjectResponseHasDeployments> hasDeployments,
+      String id,
+      SdkOptional<String?> installCommand,
+      SdkOptional<List<UpdateProjectResponseInternalRoutesItem>> internalRoutes,
+      SdkOptional<List<UpdateProjectResponseIpBucketsItem>> ipBuckets,
+      SdkOptional<UpdateProjectResponseJobs> jobs,
+      SdkOptional<UpdateProjectResponseLastAliasRequest?> lastAliasRequest,
+      SdkOptional<Map<String, dynamic>?> lastRollbackTarget,
+      SdkOptional<List<UpdateProjectResponseLatestDeploymentsItem>>
+          latestDeployments,
+      SdkOptional<UpdateProjectResponseLink> link,
+      SdkOptional<UpdateProjectResponseLive> live,
+      SdkOptional<UpdateProjectResponseMicrofrontends> microfrontends,
+      String name,
+      UpdateProjectResponseNodeVersion nodeVersion,
+      SdkOptional<UpdateProjectResponseOidcTokenConfig> oidcTokenConfig,
+      SdkOptional<UpdateProjectResponseOptionsAllowlist?> optionsAllowlist,
+      SdkOptional<String?> outputDirectory,
+      SdkOptional<String?> passiveConnectConfigurationId,
+      SdkOptional<UpdateProjectResponsePassport?> passport,
+      SdkOptional<UpdateProjectResponsePasswordProtection?> passwordProtection,
+      SdkOptional<UpdateProjectResponsePaused> paused,
+      SdkOptional<UpdateProjectResponsePermissions> permissions,
+      SdkOptional<UpdateProjectResponseProductionDeploymentsFastLane>
+          productionDeploymentsFastLane,
+      SdkOptional<UpdateProjectResponseProtectedSourcemaps> protectedSourcemaps,
+      SdkOptional<Map<String, dynamic>> protectionBypass,
+      SdkOptional<UpdateProjectResponseProtectionConfig> protectionConfig,
+      UpdateProjectResponseResourceConfig resourceConfig,
+      SdkOptional<UpdateProjectResponseRollbackDescription> rollbackDescription,
+      SdkOptional<UpdateProjectResponseRollingRelease?> rollingRelease,
+      SdkOptional<String?> rootDirectory,
+      SdkOptional<UpdateProjectResponseSandbox> sandbox,
+      SdkOptional<UpdateProjectResponseSecurity> security,
+      SdkOptional<UpdateProjectResponseServerlessFunctionZeroConfigFailover>
+          serverlessFunctionZeroConfigFailover,
+      SdkOptional<List<UpdateProjectResponseServicesItem>> services,
+      SdkOptional<List<String>> skewProtectionAllowedDomains,
+      SdkOptional<double> skewProtectionBoundaryAt,
+      SdkOptional<double> skewProtectionMaxAge,
+      SdkOptional<UpdateProjectResponseSkipGitConnectDuringLink>
+          skipGitConnectDuringLink,
+      SdkOptional<UpdateProjectResponseSourceFilesOutsideRootDirectory>
+          sourceFilesOutsideRootDirectory,
+      SdkOptional<UpdateProjectResponseSpeedInsights> speedInsights,
+      SdkOptional<UpdateProjectResponseSsoProtection?> ssoProtection,
+      SdkOptional<UpdateProjectResponseStaticIps> staticIps,
+      SdkOptional<Map<String, UpdateProjectResponseTargetsValue>> targets,
+      SdkOptional<UpdateProjectResponseTier> tier,
+      SdkOptional<UpdateProjectResponseTracing> tracing,
+      SdkOptional<double> transferCompletedAt,
+      SdkOptional<String> transferredFromAccountId,
+      SdkOptional<double> transferStartedAt,
+      SdkOptional<String> transferToAccountId,
+      SdkOptional<UpdateProjectResponseTrustedIps?> trustedIps,
+      SdkOptional<UpdateProjectResponseTrustedSources?> trustedSources,
+      SdkOptional<double> updatedAt,
+      SdkOptional<UpdateProjectResponseUsageStatus> usageStatus,
+      SdkOptional<UpdateProjectResponseV0> v0,
+      SdkOptional<UpdateProjectResponseV0Created> v0Created,
+      SdkOptional<UpdateProjectResponseWebAnalytics>
+          webAnalytics}) get copyWith => _copyWith;
 
-  UpdateProjectResponse _copyWith({Object? accountId = sdkOmittedValue, Object? alias = sdkOmittedValue, Object? analytics = sdkOmittedValue, Object? appliedCve55182Migration = sdkOmittedValue, Object? autoAssignCustomDomains = sdkOmittedValue, Object? autoAssignCustomDomainsUpdatedBy = sdkOmittedValue, Object? autoExposeSystemEnvs = sdkOmittedValue, Object? avatar = sdkOmittedValue, Object? avatarDarkMode = sdkOmittedValue, Object? blobs = sdkOmittedValue, Object? buildCommand = sdkOmittedValue, Object? commandForIgnoringBuildStep = sdkOmittedValue, Object? concurrencyBucketName = sdkOmittedValue, Object? connectBuildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? connectConfigurations = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? creator = sdkOmittedValue, Object? crons = sdkOmittedValue, Object? customEnvironments = sdkOmittedValue, Object? customerSupportCodeVisibility = sdkOmittedValue, Object? dataCache = sdkOmittedValue, Object? defaultResourceConfig = sdkOmittedValue, Object? deploymentExpiration = sdkOmittedValue, Object? deploymentPolicy = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? directoryListing = sdkOmittedValue, Object? dismissedToasts = sdkOmittedValue, Object? enableAffectedProjectsDeployments = sdkOmittedValue, Object? enableExternalRewriteCaching = sdkOmittedValue, Object? enablePreviewFeedback = sdkOmittedValue, Object? enableProductionFeedback = sdkOmittedValue, Object? env = sdkOmittedValue, Object? expiration = sdkOmittedValue, Object? features = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? gitComments = sdkOmittedValue, Object? gitForkProtection = sdkOmittedValue, Object? gitLfs = sdkOmittedValue, Object? gitProviderOptions = sdkOmittedValue, Object? hasActiveBranches = sdkOmittedValue, Object? hasDeployments = sdkOmittedValue, Object? id = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? internalRoutes = sdkOmittedValue, Object? ipBuckets = sdkOmittedValue, Object? jobs = sdkOmittedValue, Object? lastAliasRequest = sdkOmittedValue, Object? lastRollbackTarget = sdkOmittedValue, Object? latestDeployments = sdkOmittedValue, Object? link = sdkOmittedValue, Object? live = sdkOmittedValue, Object? microfrontends = sdkOmittedValue, Object? name = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? oidcTokenConfig = sdkOmittedValue, Object? optionsAllowlist = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? passiveConnectConfigurationId = sdkOmittedValue, Object? passport = sdkOmittedValue, Object? passwordProtection = sdkOmittedValue, Object? paused = sdkOmittedValue, Object? permissions = sdkOmittedValue, Object? productionDeploymentsFastLane = sdkOmittedValue, Object? protectedSourcemaps = sdkOmittedValue, Object? protectionBypass = sdkOmittedValue, Object? protectionConfig = sdkOmittedValue, Object? resourceConfig = sdkOmittedValue, Object? rollbackDescription = sdkOmittedValue, Object? rollingRelease = sdkOmittedValue, Object? rootDirectory = sdkOmittedValue, Object? sandbox = sdkOmittedValue, Object? security = sdkOmittedValue, Object? serverlessFunctionZeroConfigFailover = sdkOmittedValue, Object? services = sdkOmittedValue, Object? skewProtectionAllowedDomains = sdkOmittedValue, Object? skewProtectionBoundaryAt = sdkOmittedValue, Object? skewProtectionMaxAge = sdkOmittedValue, Object? skipGitConnectDuringLink = sdkOmittedValue, Object? sourceFilesOutsideRootDirectory = sdkOmittedValue, Object? speedInsights = sdkOmittedValue, Object? ssoProtection = sdkOmittedValue, Object? staticIps = sdkOmittedValue, Object? targets = sdkOmittedValue, Object? tier = sdkOmittedValue, Object? tracing = sdkOmittedValue, Object? transferCompletedAt = sdkOmittedValue, Object? transferredFromAccountId = sdkOmittedValue, Object? transferStartedAt = sdkOmittedValue, Object? transferToAccountId = sdkOmittedValue, Object? trustedIps = sdkOmittedValue, Object? trustedSources = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? usageStatus = sdkOmittedValue, Object? v0 = sdkOmittedValue, Object? v0Created = sdkOmittedValue, Object? webAnalytics = sdkOmittedValue}) => UpdateProjectResponse(
-    accountId: identical(accountId, sdkOmittedValue) ? this.accountId : accountId as String,
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as List<UpdateProjectResponseAliasItem>,
-    analytics: identical(analytics, sdkOmittedValue) ? this.analytics : analytics as SdkOptional<UpdateProjectResponseAnalytics>,
-    appliedCve55182Migration: identical(appliedCve55182Migration, sdkOmittedValue) ? this.appliedCve55182Migration : appliedCve55182Migration as SdkOptional<UpdateProjectResponseAppliedCve55182Migration>,
-    autoAssignCustomDomains: identical(autoAssignCustomDomains, sdkOmittedValue) ? this.autoAssignCustomDomains : autoAssignCustomDomains as SdkOptional<UpdateProjectResponseAutoAssignCustomDomains>,
-    autoAssignCustomDomainsUpdatedBy: identical(autoAssignCustomDomainsUpdatedBy, sdkOmittedValue) ? this.autoAssignCustomDomainsUpdatedBy : autoAssignCustomDomainsUpdatedBy as SdkOptional<String>,
-    autoExposeSystemEnvs: identical(autoExposeSystemEnvs, sdkOmittedValue) ? this.autoExposeSystemEnvs : autoExposeSystemEnvs as SdkOptional<UpdateProjectResponseAutoExposeSystemEnvs>,
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String?>,
-    avatarDarkMode: identical(avatarDarkMode, sdkOmittedValue) ? this.avatarDarkMode : avatarDarkMode as SdkOptional<String?>,
-    blobs: identical(blobs, sdkOmittedValue) ? this.blobs : blobs as SdkOptional<UpdateProjectResponseBlobs>,
-    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String?>,
-    commandForIgnoringBuildStep: identical(commandForIgnoringBuildStep, sdkOmittedValue) ? this.commandForIgnoringBuildStep : commandForIgnoringBuildStep as SdkOptional<String?>,
-    concurrencyBucketName: identical(concurrencyBucketName, sdkOmittedValue) ? this.concurrencyBucketName : concurrencyBucketName as SdkOptional<String>,
-    connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue) ? this.connectBuildsEnabled : connectBuildsEnabled as SdkOptional<UpdateProjectResponseConnectBuildsEnabled>,
-    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as SdkOptional<String?>,
-    connectConfigurations: identical(connectConfigurations, sdkOmittedValue) ? this.connectConfigurations : connectConfigurations as SdkOptional<List<UpdateProjectResponseConnectConfigurationsItem>?>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as SdkOptional<UpdateProjectResponseCreator>,
-    crons: identical(crons, sdkOmittedValue) ? this.crons : crons as SdkOptional<UpdateProjectResponseCrons>,
-    customEnvironments: identical(customEnvironments, sdkOmittedValue) ? this.customEnvironments : customEnvironments as SdkOptional<List<UpdateProjectResponseCustomEnvironmentsItem>>,
-    customerSupportCodeVisibility: identical(customerSupportCodeVisibility, sdkOmittedValue) ? this.customerSupportCodeVisibility : customerSupportCodeVisibility as SdkOptional<UpdateProjectResponseCustomerSupportCodeVisibility>,
-    dataCache: identical(dataCache, sdkOmittedValue) ? this.dataCache : dataCache as SdkOptional<UpdateProjectResponseDataCache>,
-    defaultResourceConfig: identical(defaultResourceConfig, sdkOmittedValue) ? this.defaultResourceConfig : defaultResourceConfig as UpdateProjectResponseDefaultResourceConfig,
-    deploymentExpiration: identical(deploymentExpiration, sdkOmittedValue) ? this.deploymentExpiration : deploymentExpiration as UpdateProjectResponseDeploymentExpiration,
-    deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue) ? this.deploymentPolicy : deploymentPolicy as SdkOptional<UpdateProjectResponseDeploymentPolicy?>,
-    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String?>,
-    directoryListing: identical(directoryListing, sdkOmittedValue) ? this.directoryListing : directoryListing as UpdateProjectResponseDirectoryListing,
-    dismissedToasts: identical(dismissedToasts, sdkOmittedValue) ? this.dismissedToasts : dismissedToasts as SdkOptional<List<UpdateProjectResponseDismissedToastsItem>>,
-    enableAffectedProjectsDeployments: identical(enableAffectedProjectsDeployments, sdkOmittedValue) ? this.enableAffectedProjectsDeployments : enableAffectedProjectsDeployments as SdkOptional<UpdateProjectResponseEnableAffectedProjectsDeployments>,
-    enableExternalRewriteCaching: identical(enableExternalRewriteCaching, sdkOmittedValue) ? this.enableExternalRewriteCaching : enableExternalRewriteCaching as SdkOptional<UpdateProjectResponseEnableExternalRewriteCaching>,
-    enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue) ? this.enablePreviewFeedback : enablePreviewFeedback as SdkOptional<UpdateProjectResponseEnablePreviewFeedback?>,
-    enableProductionFeedback: identical(enableProductionFeedback, sdkOmittedValue) ? this.enableProductionFeedback : enableProductionFeedback as SdkOptional<UpdateProjectResponseEnableProductionFeedback?>,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<List<UpdateProjectResponseEnvItem>>,
-    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<UpdateProjectResponseExpiration>,
-    features: identical(features, sdkOmittedValue) ? this.features : features as SdkOptional<UpdateProjectResponseFeatures>,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<UpdateProjectResponseFramework?>,
-    gitComments: identical(gitComments, sdkOmittedValue) ? this.gitComments : gitComments as SdkOptional<UpdateProjectResponseGitComments>,
-    gitForkProtection: identical(gitForkProtection, sdkOmittedValue) ? this.gitForkProtection : gitForkProtection as SdkOptional<UpdateProjectResponseGitForkProtection>,
-    gitLfs: identical(gitLfs, sdkOmittedValue) ? this.gitLfs : gitLfs as SdkOptional<UpdateProjectResponseGitLFS>,
-    gitProviderOptions: identical(gitProviderOptions, sdkOmittedValue) ? this.gitProviderOptions : gitProviderOptions as SdkOptional<UpdateProjectResponseGitProviderOptions>,
-    hasActiveBranches: identical(hasActiveBranches, sdkOmittedValue) ? this.hasActiveBranches : hasActiveBranches as SdkOptional<UpdateProjectResponseHasActiveBranches>,
-    hasDeployments: identical(hasDeployments, sdkOmittedValue) ? this.hasDeployments : hasDeployments as SdkOptional<UpdateProjectResponseHasDeployments>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String?>,
-    internalRoutes: identical(internalRoutes, sdkOmittedValue) ? this.internalRoutes : internalRoutes as SdkOptional<List<UpdateProjectResponseInternalRoutesItem>>,
-    ipBuckets: identical(ipBuckets, sdkOmittedValue) ? this.ipBuckets : ipBuckets as SdkOptional<List<UpdateProjectResponseIpBucketsItem>>,
-    jobs: identical(jobs, sdkOmittedValue) ? this.jobs : jobs as SdkOptional<UpdateProjectResponseJobs>,
-    lastAliasRequest: identical(lastAliasRequest, sdkOmittedValue) ? this.lastAliasRequest : lastAliasRequest as SdkOptional<UpdateProjectResponseLastAliasRequest?>,
-    lastRollbackTarget: identical(lastRollbackTarget, sdkOmittedValue) ? this.lastRollbackTarget : lastRollbackTarget as SdkOptional<Map<String, dynamic>?>,
-    latestDeployments: identical(latestDeployments, sdkOmittedValue) ? this.latestDeployments : latestDeployments as SdkOptional<List<UpdateProjectResponseLatestDeploymentsItem>>,
-    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<UpdateProjectResponseLink>,
-    live: identical(live, sdkOmittedValue) ? this.live : live as SdkOptional<UpdateProjectResponseLive>,
-    microfrontends: identical(microfrontends, sdkOmittedValue) ? this.microfrontends : microfrontends as SdkOptional<UpdateProjectResponseMicrofrontends>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as UpdateProjectResponseNodeVersion,
-    oidcTokenConfig: identical(oidcTokenConfig, sdkOmittedValue) ? this.oidcTokenConfig : oidcTokenConfig as SdkOptional<UpdateProjectResponseOidcTokenConfig>,
-    optionsAllowlist: identical(optionsAllowlist, sdkOmittedValue) ? this.optionsAllowlist : optionsAllowlist as SdkOptional<UpdateProjectResponseOptionsAllowlist?>,
-    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String?>,
-    passiveConnectConfigurationId: identical(passiveConnectConfigurationId, sdkOmittedValue) ? this.passiveConnectConfigurationId : passiveConnectConfigurationId as SdkOptional<String?>,
-    passport: identical(passport, sdkOmittedValue) ? this.passport : passport as SdkOptional<UpdateProjectResponsePassport?>,
-    passwordProtection: identical(passwordProtection, sdkOmittedValue) ? this.passwordProtection : passwordProtection as SdkOptional<UpdateProjectResponsePasswordProtection?>,
-    paused: identical(paused, sdkOmittedValue) ? this.paused : paused as SdkOptional<UpdateProjectResponsePaused>,
-    permissions: identical(permissions, sdkOmittedValue) ? this.permissions : permissions as SdkOptional<UpdateProjectResponsePermissions>,
-    productionDeploymentsFastLane: identical(productionDeploymentsFastLane, sdkOmittedValue) ? this.productionDeploymentsFastLane : productionDeploymentsFastLane as SdkOptional<UpdateProjectResponseProductionDeploymentsFastLane>,
-    protectedSourcemaps: identical(protectedSourcemaps, sdkOmittedValue) ? this.protectedSourcemaps : protectedSourcemaps as SdkOptional<UpdateProjectResponseProtectedSourcemaps>,
-    protectionBypass: identical(protectionBypass, sdkOmittedValue) ? this.protectionBypass : protectionBypass as SdkOptional<Map<String, dynamic>>,
-    protectionConfig: identical(protectionConfig, sdkOmittedValue) ? this.protectionConfig : protectionConfig as SdkOptional<UpdateProjectResponseProtectionConfig>,
-    resourceConfig: identical(resourceConfig, sdkOmittedValue) ? this.resourceConfig : resourceConfig as UpdateProjectResponseResourceConfig,
-    rollbackDescription: identical(rollbackDescription, sdkOmittedValue) ? this.rollbackDescription : rollbackDescription as SdkOptional<UpdateProjectResponseRollbackDescription>,
-    rollingRelease: identical(rollingRelease, sdkOmittedValue) ? this.rollingRelease : rollingRelease as SdkOptional<UpdateProjectResponseRollingRelease?>,
-    rootDirectory: identical(rootDirectory, sdkOmittedValue) ? this.rootDirectory : rootDirectory as SdkOptional<String?>,
-    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as SdkOptional<UpdateProjectResponseSandbox>,
-    security: identical(security, sdkOmittedValue) ? this.security : security as SdkOptional<UpdateProjectResponseSecurity>,
-    serverlessFunctionZeroConfigFailover: identical(serverlessFunctionZeroConfigFailover, sdkOmittedValue) ? this.serverlessFunctionZeroConfigFailover : serverlessFunctionZeroConfigFailover as SdkOptional<UpdateProjectResponseServerlessFunctionZeroConfigFailover>,
-    services: identical(services, sdkOmittedValue) ? this.services : services as SdkOptional<List<UpdateProjectResponseServicesItem>>,
-    skewProtectionAllowedDomains: identical(skewProtectionAllowedDomains, sdkOmittedValue) ? this.skewProtectionAllowedDomains : skewProtectionAllowedDomains as SdkOptional<List<String>>,
-    skewProtectionBoundaryAt: identical(skewProtectionBoundaryAt, sdkOmittedValue) ? this.skewProtectionBoundaryAt : skewProtectionBoundaryAt as SdkOptional<double>,
-    skewProtectionMaxAge: identical(skewProtectionMaxAge, sdkOmittedValue) ? this.skewProtectionMaxAge : skewProtectionMaxAge as SdkOptional<double>,
-    skipGitConnectDuringLink: identical(skipGitConnectDuringLink, sdkOmittedValue) ? this.skipGitConnectDuringLink : skipGitConnectDuringLink as SdkOptional<UpdateProjectResponseSkipGitConnectDuringLink>,
-    sourceFilesOutsideRootDirectory: identical(sourceFilesOutsideRootDirectory, sdkOmittedValue) ? this.sourceFilesOutsideRootDirectory : sourceFilesOutsideRootDirectory as SdkOptional<UpdateProjectResponseSourceFilesOutsideRootDirectory>,
-    speedInsights: identical(speedInsights, sdkOmittedValue) ? this.speedInsights : speedInsights as SdkOptional<UpdateProjectResponseSpeedInsights>,
-    ssoProtection: identical(ssoProtection, sdkOmittedValue) ? this.ssoProtection : ssoProtection as SdkOptional<UpdateProjectResponseSsoProtection?>,
-    staticIps: identical(staticIps, sdkOmittedValue) ? this.staticIps : staticIps as SdkOptional<UpdateProjectResponseStaticIps>,
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<Map<String, UpdateProjectResponseTargetsValue>>,
-    tier: identical(tier, sdkOmittedValue) ? this.tier : tier as SdkOptional<UpdateProjectResponseTier>,
-    tracing: identical(tracing, sdkOmittedValue) ? this.tracing : tracing as SdkOptional<UpdateProjectResponseTracing>,
-    transferCompletedAt: identical(transferCompletedAt, sdkOmittedValue) ? this.transferCompletedAt : transferCompletedAt as SdkOptional<double>,
-    transferredFromAccountId: identical(transferredFromAccountId, sdkOmittedValue) ? this.transferredFromAccountId : transferredFromAccountId as SdkOptional<String>,
-    transferStartedAt: identical(transferStartedAt, sdkOmittedValue) ? this.transferStartedAt : transferStartedAt as SdkOptional<double>,
-    transferToAccountId: identical(transferToAccountId, sdkOmittedValue) ? this.transferToAccountId : transferToAccountId as SdkOptional<String>,
-    trustedIps: identical(trustedIps, sdkOmittedValue) ? this.trustedIps : trustedIps as SdkOptional<UpdateProjectResponseTrustedIps?>,
-    trustedSources: identical(trustedSources, sdkOmittedValue) ? this.trustedSources : trustedSources as SdkOptional<UpdateProjectResponseTrustedSources?>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    usageStatus: identical(usageStatus, sdkOmittedValue) ? this.usageStatus : usageStatus as SdkOptional<UpdateProjectResponseUsageStatus>,
-    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<UpdateProjectResponseV0>,
-    v0Created: identical(v0Created, sdkOmittedValue) ? this.v0Created : v0Created as SdkOptional<UpdateProjectResponseV0Created>,
-    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<UpdateProjectResponseWebAnalytics>,
-  );
+  UpdateProjectResponse _copyWith(
+          {Object? accountId = sdkOmittedValue,
+          Object? alias = sdkOmittedValue,
+          Object? analytics = sdkOmittedValue,
+          Object? appliedCve55182Migration = sdkOmittedValue,
+          Object? autoAssignCustomDomains = sdkOmittedValue,
+          Object? autoAssignCustomDomainsUpdatedBy = sdkOmittedValue,
+          Object? autoExposeSystemEnvs = sdkOmittedValue,
+          Object? avatar = sdkOmittedValue,
+          Object? avatarDarkMode = sdkOmittedValue,
+          Object? blobs = sdkOmittedValue,
+          Object? buildCommand = sdkOmittedValue,
+          Object? commandForIgnoringBuildStep = sdkOmittedValue,
+          Object? concurrencyBucketName = sdkOmittedValue,
+          Object? connectBuildsEnabled = sdkOmittedValue,
+          Object? connectConfigurationId = sdkOmittedValue,
+          Object? connectConfigurations = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? creator = sdkOmittedValue,
+          Object? crons = sdkOmittedValue,
+          Object? customEnvironments = sdkOmittedValue,
+          Object? customerSupportCodeVisibility = sdkOmittedValue,
+          Object? dataCache = sdkOmittedValue,
+          Object? defaultResourceConfig = sdkOmittedValue,
+          Object? deploymentExpiration = sdkOmittedValue,
+          Object? deploymentPolicy = sdkOmittedValue,
+          Object? devCommand = sdkOmittedValue,
+          Object? directoryListing = sdkOmittedValue,
+          Object? dismissedToasts = sdkOmittedValue,
+          Object? enableAffectedProjectsDeployments = sdkOmittedValue,
+          Object? enableExternalRewriteCaching = sdkOmittedValue,
+          Object? enablePreviewFeedback = sdkOmittedValue,
+          Object? enableProductionFeedback = sdkOmittedValue,
+          Object? env = sdkOmittedValue,
+          Object? expiration = sdkOmittedValue,
+          Object? features = sdkOmittedValue,
+          Object? framework = sdkOmittedValue,
+          Object? gitComments = sdkOmittedValue,
+          Object? gitForkProtection = sdkOmittedValue,
+          Object? gitLfs = sdkOmittedValue,
+          Object? gitProviderOptions = sdkOmittedValue,
+          Object? hasActiveBranches = sdkOmittedValue,
+          Object? hasDeployments = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? installCommand = sdkOmittedValue,
+          Object? internalRoutes = sdkOmittedValue,
+          Object? ipBuckets = sdkOmittedValue,
+          Object? jobs = sdkOmittedValue,
+          Object? lastAliasRequest = sdkOmittedValue,
+          Object? lastRollbackTarget = sdkOmittedValue,
+          Object? latestDeployments = sdkOmittedValue,
+          Object? link = sdkOmittedValue,
+          Object? live = sdkOmittedValue,
+          Object? microfrontends = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? nodeVersion = sdkOmittedValue,
+          Object? oidcTokenConfig = sdkOmittedValue,
+          Object? optionsAllowlist = sdkOmittedValue,
+          Object? outputDirectory = sdkOmittedValue,
+          Object? passiveConnectConfigurationId = sdkOmittedValue,
+          Object? passport = sdkOmittedValue,
+          Object? passwordProtection = sdkOmittedValue,
+          Object? paused = sdkOmittedValue,
+          Object? permissions = sdkOmittedValue,
+          Object? productionDeploymentsFastLane = sdkOmittedValue,
+          Object? protectedSourcemaps = sdkOmittedValue,
+          Object? protectionBypass = sdkOmittedValue,
+          Object? protectionConfig = sdkOmittedValue,
+          Object? resourceConfig = sdkOmittedValue,
+          Object? rollbackDescription = sdkOmittedValue,
+          Object? rollingRelease = sdkOmittedValue,
+          Object? rootDirectory = sdkOmittedValue,
+          Object? sandbox = sdkOmittedValue,
+          Object? security = sdkOmittedValue,
+          Object? serverlessFunctionZeroConfigFailover = sdkOmittedValue,
+          Object? services = sdkOmittedValue,
+          Object? skewProtectionAllowedDomains = sdkOmittedValue,
+          Object? skewProtectionBoundaryAt = sdkOmittedValue,
+          Object? skewProtectionMaxAge = sdkOmittedValue,
+          Object? skipGitConnectDuringLink = sdkOmittedValue,
+          Object? sourceFilesOutsideRootDirectory = sdkOmittedValue,
+          Object? speedInsights = sdkOmittedValue,
+          Object? ssoProtection = sdkOmittedValue,
+          Object? staticIps = sdkOmittedValue,
+          Object? targets = sdkOmittedValue,
+          Object? tier = sdkOmittedValue,
+          Object? tracing = sdkOmittedValue,
+          Object? transferCompletedAt = sdkOmittedValue,
+          Object? transferredFromAccountId = sdkOmittedValue,
+          Object? transferStartedAt = sdkOmittedValue,
+          Object? transferToAccountId = sdkOmittedValue,
+          Object? trustedIps = sdkOmittedValue,
+          Object? trustedSources = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? usageStatus = sdkOmittedValue,
+          Object? v0 = sdkOmittedValue,
+          Object? v0Created = sdkOmittedValue,
+          Object? webAnalytics = sdkOmittedValue}) =>
+      UpdateProjectResponse(
+        accountId: identical(accountId, sdkOmittedValue)
+            ? this.accountId
+            : accountId as String,
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as List<UpdateProjectResponseAliasItem>,
+        analytics: identical(analytics, sdkOmittedValue)
+            ? this.analytics
+            : analytics as SdkOptional<UpdateProjectResponseAnalytics>,
+        appliedCve55182Migration: identical(
+                appliedCve55182Migration, sdkOmittedValue)
+            ? this.appliedCve55182Migration
+            : appliedCve55182Migration
+                as SdkOptional<UpdateProjectResponseAppliedCve55182Migration>,
+        autoAssignCustomDomains: identical(
+                autoAssignCustomDomains, sdkOmittedValue)
+            ? this.autoAssignCustomDomains
+            : autoAssignCustomDomains
+                as SdkOptional<UpdateProjectResponseAutoAssignCustomDomains>,
+        autoAssignCustomDomainsUpdatedBy:
+            identical(autoAssignCustomDomainsUpdatedBy, sdkOmittedValue)
+                ? this.autoAssignCustomDomainsUpdatedBy
+                : autoAssignCustomDomainsUpdatedBy as SdkOptional<String>,
+        autoExposeSystemEnvs: identical(autoExposeSystemEnvs, sdkOmittedValue)
+            ? this.autoExposeSystemEnvs
+            : autoExposeSystemEnvs
+                as SdkOptional<UpdateProjectResponseAutoExposeSystemEnvs>,
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as SdkOptional<String?>,
+        avatarDarkMode: identical(avatarDarkMode, sdkOmittedValue)
+            ? this.avatarDarkMode
+            : avatarDarkMode as SdkOptional<String?>,
+        blobs: identical(blobs, sdkOmittedValue)
+            ? this.blobs
+            : blobs as SdkOptional<UpdateProjectResponseBlobs>,
+        buildCommand: identical(buildCommand, sdkOmittedValue)
+            ? this.buildCommand
+            : buildCommand as SdkOptional<String?>,
+        commandForIgnoringBuildStep:
+            identical(commandForIgnoringBuildStep, sdkOmittedValue)
+                ? this.commandForIgnoringBuildStep
+                : commandForIgnoringBuildStep as SdkOptional<String?>,
+        concurrencyBucketName: identical(concurrencyBucketName, sdkOmittedValue)
+            ? this.concurrencyBucketName
+            : concurrencyBucketName as SdkOptional<String>,
+        connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue)
+            ? this.connectBuildsEnabled
+            : connectBuildsEnabled
+                as SdkOptional<UpdateProjectResponseConnectBuildsEnabled>,
+        connectConfigurationId:
+            identical(connectConfigurationId, sdkOmittedValue)
+                ? this.connectConfigurationId
+                : connectConfigurationId as SdkOptional<String?>,
+        connectConfigurations: identical(connectConfigurations, sdkOmittedValue)
+            ? this.connectConfigurations
+            : connectConfigurations as SdkOptional<
+                List<UpdateProjectResponseConnectConfigurationsItem>?>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        creator: identical(creator, sdkOmittedValue)
+            ? this.creator
+            : creator as SdkOptional<UpdateProjectResponseCreator>,
+        crons: identical(crons, sdkOmittedValue)
+            ? this.crons
+            : crons as SdkOptional<UpdateProjectResponseCrons>,
+        customEnvironments: identical(customEnvironments, sdkOmittedValue)
+            ? this.customEnvironments
+            : customEnvironments as SdkOptional<
+                List<UpdateProjectResponseCustomEnvironmentsItem>>,
+        customerSupportCodeVisibility:
+            identical(customerSupportCodeVisibility, sdkOmittedValue)
+                ? this.customerSupportCodeVisibility
+                : customerSupportCodeVisibility as SdkOptional<
+                    UpdateProjectResponseCustomerSupportCodeVisibility>,
+        dataCache: identical(dataCache, sdkOmittedValue)
+            ? this.dataCache
+            : dataCache as SdkOptional<UpdateProjectResponseDataCache>,
+        defaultResourceConfig: identical(defaultResourceConfig, sdkOmittedValue)
+            ? this.defaultResourceConfig
+            : defaultResourceConfig
+                as UpdateProjectResponseDefaultResourceConfig,
+        deploymentExpiration: identical(deploymentExpiration, sdkOmittedValue)
+            ? this.deploymentExpiration
+            : deploymentExpiration as UpdateProjectResponseDeploymentExpiration,
+        deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue)
+            ? this.deploymentPolicy
+            : deploymentPolicy
+                as SdkOptional<UpdateProjectResponseDeploymentPolicy?>,
+        devCommand: identical(devCommand, sdkOmittedValue)
+            ? this.devCommand
+            : devCommand as SdkOptional<String?>,
+        directoryListing: identical(directoryListing, sdkOmittedValue)
+            ? this.directoryListing
+            : directoryListing as UpdateProjectResponseDirectoryListing,
+        dismissedToasts: identical(dismissedToasts, sdkOmittedValue)
+            ? this.dismissedToasts
+            : dismissedToasts
+                as SdkOptional<List<UpdateProjectResponseDismissedToastsItem>>,
+        enableAffectedProjectsDeployments:
+            identical(enableAffectedProjectsDeployments, sdkOmittedValue)
+                ? this.enableAffectedProjectsDeployments
+                : enableAffectedProjectsDeployments as SdkOptional<
+                    UpdateProjectResponseEnableAffectedProjectsDeployments>,
+        enableExternalRewriteCaching:
+            identical(enableExternalRewriteCaching, sdkOmittedValue)
+                ? this.enableExternalRewriteCaching
+                : enableExternalRewriteCaching as SdkOptional<
+                    UpdateProjectResponseEnableExternalRewriteCaching>,
+        enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue)
+            ? this.enablePreviewFeedback
+            : enablePreviewFeedback
+                as SdkOptional<UpdateProjectResponseEnablePreviewFeedback?>,
+        enableProductionFeedback: identical(
+                enableProductionFeedback, sdkOmittedValue)
+            ? this.enableProductionFeedback
+            : enableProductionFeedback
+                as SdkOptional<UpdateProjectResponseEnableProductionFeedback?>,
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<List<UpdateProjectResponseEnvItem>>,
+        expiration: identical(expiration, sdkOmittedValue)
+            ? this.expiration
+            : expiration as SdkOptional<UpdateProjectResponseExpiration>,
+        features: identical(features, sdkOmittedValue)
+            ? this.features
+            : features as SdkOptional<UpdateProjectResponseFeatures>,
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<UpdateProjectResponseFramework?>,
+        gitComments: identical(gitComments, sdkOmittedValue)
+            ? this.gitComments
+            : gitComments as SdkOptional<UpdateProjectResponseGitComments>,
+        gitForkProtection: identical(gitForkProtection, sdkOmittedValue)
+            ? this.gitForkProtection
+            : gitForkProtection
+                as SdkOptional<UpdateProjectResponseGitForkProtection>,
+        gitLfs: identical(gitLfs, sdkOmittedValue)
+            ? this.gitLfs
+            : gitLfs as SdkOptional<UpdateProjectResponseGitLFS>,
+        gitProviderOptions: identical(gitProviderOptions, sdkOmittedValue)
+            ? this.gitProviderOptions
+            : gitProviderOptions
+                as SdkOptional<UpdateProjectResponseGitProviderOptions>,
+        hasActiveBranches: identical(hasActiveBranches, sdkOmittedValue)
+            ? this.hasActiveBranches
+            : hasActiveBranches
+                as SdkOptional<UpdateProjectResponseHasActiveBranches>,
+        hasDeployments: identical(hasDeployments, sdkOmittedValue)
+            ? this.hasDeployments
+            : hasDeployments
+                as SdkOptional<UpdateProjectResponseHasDeployments>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        installCommand: identical(installCommand, sdkOmittedValue)
+            ? this.installCommand
+            : installCommand as SdkOptional<String?>,
+        internalRoutes: identical(internalRoutes, sdkOmittedValue)
+            ? this.internalRoutes
+            : internalRoutes
+                as SdkOptional<List<UpdateProjectResponseInternalRoutesItem>>,
+        ipBuckets: identical(ipBuckets, sdkOmittedValue)
+            ? this.ipBuckets
+            : ipBuckets
+                as SdkOptional<List<UpdateProjectResponseIpBucketsItem>>,
+        jobs: identical(jobs, sdkOmittedValue)
+            ? this.jobs
+            : jobs as SdkOptional<UpdateProjectResponseJobs>,
+        lastAliasRequest: identical(lastAliasRequest, sdkOmittedValue)
+            ? this.lastAliasRequest
+            : lastAliasRequest
+                as SdkOptional<UpdateProjectResponseLastAliasRequest?>,
+        lastRollbackTarget: identical(lastRollbackTarget, sdkOmittedValue)
+            ? this.lastRollbackTarget
+            : lastRollbackTarget as SdkOptional<Map<String, dynamic>?>,
+        latestDeployments: identical(latestDeployments, sdkOmittedValue)
+            ? this.latestDeployments
+            : latestDeployments as SdkOptional<
+                List<UpdateProjectResponseLatestDeploymentsItem>>,
+        link: identical(link, sdkOmittedValue)
+            ? this.link
+            : link as SdkOptional<UpdateProjectResponseLink>,
+        live: identical(live, sdkOmittedValue)
+            ? this.live
+            : live as SdkOptional<UpdateProjectResponseLive>,
+        microfrontends: identical(microfrontends, sdkOmittedValue)
+            ? this.microfrontends
+            : microfrontends
+                as SdkOptional<UpdateProjectResponseMicrofrontends>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        nodeVersion: identical(nodeVersion, sdkOmittedValue)
+            ? this.nodeVersion
+            : nodeVersion as UpdateProjectResponseNodeVersion,
+        oidcTokenConfig: identical(oidcTokenConfig, sdkOmittedValue)
+            ? this.oidcTokenConfig
+            : oidcTokenConfig
+                as SdkOptional<UpdateProjectResponseOidcTokenConfig>,
+        optionsAllowlist: identical(optionsAllowlist, sdkOmittedValue)
+            ? this.optionsAllowlist
+            : optionsAllowlist
+                as SdkOptional<UpdateProjectResponseOptionsAllowlist?>,
+        outputDirectory: identical(outputDirectory, sdkOmittedValue)
+            ? this.outputDirectory
+            : outputDirectory as SdkOptional<String?>,
+        passiveConnectConfigurationId:
+            identical(passiveConnectConfigurationId, sdkOmittedValue)
+                ? this.passiveConnectConfigurationId
+                : passiveConnectConfigurationId as SdkOptional<String?>,
+        passport: identical(passport, sdkOmittedValue)
+            ? this.passport
+            : passport as SdkOptional<UpdateProjectResponsePassport?>,
+        passwordProtection: identical(passwordProtection, sdkOmittedValue)
+            ? this.passwordProtection
+            : passwordProtection
+                as SdkOptional<UpdateProjectResponsePasswordProtection?>,
+        paused: identical(paused, sdkOmittedValue)
+            ? this.paused
+            : paused as SdkOptional<UpdateProjectResponsePaused>,
+        permissions: identical(permissions, sdkOmittedValue)
+            ? this.permissions
+            : permissions as SdkOptional<UpdateProjectResponsePermissions>,
+        productionDeploymentsFastLane:
+            identical(productionDeploymentsFastLane, sdkOmittedValue)
+                ? this.productionDeploymentsFastLane
+                : productionDeploymentsFastLane as SdkOptional<
+                    UpdateProjectResponseProductionDeploymentsFastLane>,
+        protectedSourcemaps: identical(protectedSourcemaps, sdkOmittedValue)
+            ? this.protectedSourcemaps
+            : protectedSourcemaps
+                as SdkOptional<UpdateProjectResponseProtectedSourcemaps>,
+        protectionBypass: identical(protectionBypass, sdkOmittedValue)
+            ? this.protectionBypass
+            : protectionBypass as SdkOptional<Map<String, dynamic>>,
+        protectionConfig: identical(protectionConfig, sdkOmittedValue)
+            ? this.protectionConfig
+            : protectionConfig
+                as SdkOptional<UpdateProjectResponseProtectionConfig>,
+        resourceConfig: identical(resourceConfig, sdkOmittedValue)
+            ? this.resourceConfig
+            : resourceConfig as UpdateProjectResponseResourceConfig,
+        rollbackDescription: identical(rollbackDescription, sdkOmittedValue)
+            ? this.rollbackDescription
+            : rollbackDescription
+                as SdkOptional<UpdateProjectResponseRollbackDescription>,
+        rollingRelease: identical(rollingRelease, sdkOmittedValue)
+            ? this.rollingRelease
+            : rollingRelease
+                as SdkOptional<UpdateProjectResponseRollingRelease?>,
+        rootDirectory: identical(rootDirectory, sdkOmittedValue)
+            ? this.rootDirectory
+            : rootDirectory as SdkOptional<String?>,
+        sandbox: identical(sandbox, sdkOmittedValue)
+            ? this.sandbox
+            : sandbox as SdkOptional<UpdateProjectResponseSandbox>,
+        security: identical(security, sdkOmittedValue)
+            ? this.security
+            : security as SdkOptional<UpdateProjectResponseSecurity>,
+        serverlessFunctionZeroConfigFailover:
+            identical(serverlessFunctionZeroConfigFailover, sdkOmittedValue)
+                ? this.serverlessFunctionZeroConfigFailover
+                : serverlessFunctionZeroConfigFailover as SdkOptional<
+                    UpdateProjectResponseServerlessFunctionZeroConfigFailover>,
+        services: identical(services, sdkOmittedValue)
+            ? this.services
+            : services as SdkOptional<List<UpdateProjectResponseServicesItem>>,
+        skewProtectionAllowedDomains:
+            identical(skewProtectionAllowedDomains, sdkOmittedValue)
+                ? this.skewProtectionAllowedDomains
+                : skewProtectionAllowedDomains as SdkOptional<List<String>>,
+        skewProtectionBoundaryAt:
+            identical(skewProtectionBoundaryAt, sdkOmittedValue)
+                ? this.skewProtectionBoundaryAt
+                : skewProtectionBoundaryAt as SdkOptional<double>,
+        skewProtectionMaxAge: identical(skewProtectionMaxAge, sdkOmittedValue)
+            ? this.skewProtectionMaxAge
+            : skewProtectionMaxAge as SdkOptional<double>,
+        skipGitConnectDuringLink: identical(
+                skipGitConnectDuringLink, sdkOmittedValue)
+            ? this.skipGitConnectDuringLink
+            : skipGitConnectDuringLink
+                as SdkOptional<UpdateProjectResponseSkipGitConnectDuringLink>,
+        sourceFilesOutsideRootDirectory:
+            identical(sourceFilesOutsideRootDirectory, sdkOmittedValue)
+                ? this.sourceFilesOutsideRootDirectory
+                : sourceFilesOutsideRootDirectory as SdkOptional<
+                    UpdateProjectResponseSourceFilesOutsideRootDirectory>,
+        speedInsights: identical(speedInsights, sdkOmittedValue)
+            ? this.speedInsights
+            : speedInsights as SdkOptional<UpdateProjectResponseSpeedInsights>,
+        ssoProtection: identical(ssoProtection, sdkOmittedValue)
+            ? this.ssoProtection
+            : ssoProtection as SdkOptional<UpdateProjectResponseSsoProtection?>,
+        staticIps: identical(staticIps, sdkOmittedValue)
+            ? this.staticIps
+            : staticIps as SdkOptional<UpdateProjectResponseStaticIps>,
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets
+                as SdkOptional<Map<String, UpdateProjectResponseTargetsValue>>,
+        tier: identical(tier, sdkOmittedValue)
+            ? this.tier
+            : tier as SdkOptional<UpdateProjectResponseTier>,
+        tracing: identical(tracing, sdkOmittedValue)
+            ? this.tracing
+            : tracing as SdkOptional<UpdateProjectResponseTracing>,
+        transferCompletedAt: identical(transferCompletedAt, sdkOmittedValue)
+            ? this.transferCompletedAt
+            : transferCompletedAt as SdkOptional<double>,
+        transferredFromAccountId:
+            identical(transferredFromAccountId, sdkOmittedValue)
+                ? this.transferredFromAccountId
+                : transferredFromAccountId as SdkOptional<String>,
+        transferStartedAt: identical(transferStartedAt, sdkOmittedValue)
+            ? this.transferStartedAt
+            : transferStartedAt as SdkOptional<double>,
+        transferToAccountId: identical(transferToAccountId, sdkOmittedValue)
+            ? this.transferToAccountId
+            : transferToAccountId as SdkOptional<String>,
+        trustedIps: identical(trustedIps, sdkOmittedValue)
+            ? this.trustedIps
+            : trustedIps as SdkOptional<UpdateProjectResponseTrustedIps?>,
+        trustedSources: identical(trustedSources, sdkOmittedValue)
+            ? this.trustedSources
+            : trustedSources
+                as SdkOptional<UpdateProjectResponseTrustedSources?>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        usageStatus: identical(usageStatus, sdkOmittedValue)
+            ? this.usageStatus
+            : usageStatus as SdkOptional<UpdateProjectResponseUsageStatus>,
+        v0: identical(v0, sdkOmittedValue)
+            ? this.v0
+            : v0 as SdkOptional<UpdateProjectResponseV0>,
+        v0Created: identical(v0Created, sdkOmittedValue)
+            ? this.v0Created
+            : v0Created as SdkOptional<UpdateProjectResponseV0Created>,
+        webAnalytics: identical(webAnalytics, sdkOmittedValue)
+            ? this.webAnalytics
+            : webAnalytics as SdkOptional<UpdateProjectResponseWebAnalytics>,
+      );
 
-  factory UpdateProjectResponse.fromJson(Map<String, dynamic> json) => UpdateProjectResponse(
-    accountId: (json['accountId'] as String?)!,
-    alias: ((json['alias'] as List?)?.map((e) => UpdateProjectResponseAliasItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    analytics: json['analytics'] != null ? SdkPresent((json['analytics'] != null ? UpdateProjectResponseAnalytics.fromJson(json['analytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    appliedCve55182Migration: json['appliedCve55182Migration'] != null ? SdkPresent((json['appliedCve55182Migration'] != null ? UpdateProjectResponseAppliedCve55182Migration.fromJson(json['appliedCve55182Migration'] as bool) : null)!) : const SdkOmitted(),
-    autoAssignCustomDomains: json['autoAssignCustomDomains'] != null ? SdkPresent((json['autoAssignCustomDomains'] != null ? UpdateProjectResponseAutoAssignCustomDomains.fromJson(json['autoAssignCustomDomains'] as bool) : null)!) : const SdkOmitted(),
-    autoAssignCustomDomainsUpdatedBy: json['autoAssignCustomDomainsUpdatedBy'] != null ? SdkPresent((json['autoAssignCustomDomainsUpdatedBy'] as String?)!) : const SdkOmitted(),
-    autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null ? SdkPresent((json['autoExposeSystemEnvs'] != null ? UpdateProjectResponseAutoExposeSystemEnvs.fromJson(json['autoExposeSystemEnvs'] as bool) : null)!) : const SdkOmitted(),
-    avatar: json.containsKey('avatar') ? SdkPresent(json['avatar'] as String?) : const SdkOmitted(),
-    avatarDarkMode: json.containsKey('avatarDarkMode') ? SdkPresent(json['avatarDarkMode'] as String?) : const SdkOmitted(),
-    blobs: json['blobs'] != null ? SdkPresent((json['blobs'] != null ? UpdateProjectResponseBlobs.fromJson(json['blobs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildCommand: json.containsKey('buildCommand') ? SdkPresent(json['buildCommand'] as String?) : const SdkOmitted(),
-    commandForIgnoringBuildStep: json.containsKey('commandForIgnoringBuildStep') ? SdkPresent(json['commandForIgnoringBuildStep'] as String?) : const SdkOmitted(),
-    concurrencyBucketName: json['concurrencyBucketName'] != null ? SdkPresent((json['concurrencyBucketName'] as String?)!) : const SdkOmitted(),
-    connectBuildsEnabled: json['connectBuildsEnabled'] != null ? SdkPresent((json['connectBuildsEnabled'] != null ? UpdateProjectResponseConnectBuildsEnabled.fromJson(json['connectBuildsEnabled'] as bool) : null)!) : const SdkOmitted(),
-    connectConfigurationId: json.containsKey('connectConfigurationId') ? SdkPresent(json['connectConfigurationId'] as String?) : const SdkOmitted(),
-    connectConfigurations: json.containsKey('connectConfigurations') ? SdkPresent((json['connectConfigurations'] as List?)?.map((e) => UpdateProjectResponseConnectConfigurationsItem.fromJson(e as Map<String, dynamic>)).toList()) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    creator: json['creator'] != null ? SdkPresent((json['creator'] != null ? UpdateProjectResponseCreator.fromJson(json['creator']) : null)!) : const SdkOmitted(),
-    crons: json['crons'] != null ? SdkPresent((json['crons'] != null ? UpdateProjectResponseCrons.fromJson(json['crons'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    customEnvironments: json['customEnvironments'] != null ? SdkPresent(((json['customEnvironments'] as List?)?.map((e) => UpdateProjectResponseCustomEnvironmentsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    customerSupportCodeVisibility: json['customerSupportCodeVisibility'] != null ? SdkPresent((json['customerSupportCodeVisibility'] != null ? UpdateProjectResponseCustomerSupportCodeVisibility.fromJson(json['customerSupportCodeVisibility'] as bool) : null)!) : const SdkOmitted(),
-    dataCache: json['dataCache'] != null ? SdkPresent((json['dataCache'] != null ? UpdateProjectResponseDataCache.fromJson(json['dataCache'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    defaultResourceConfig: (json['defaultResourceConfig'] != null ? UpdateProjectResponseDefaultResourceConfig.fromJson(json['defaultResourceConfig'] as Map<String, dynamic>) : null)!,
-    deploymentExpiration: (json['deploymentExpiration'] != null ? UpdateProjectResponseDeploymentExpiration.fromJson(json['deploymentExpiration'] as Map<String, dynamic>) : null)!,
-    deploymentPolicy: json.containsKey('deploymentPolicy') ? SdkPresent(json['deploymentPolicy'] != null ? UpdateProjectResponseDeploymentPolicy.fromJson(json['deploymentPolicy'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    devCommand: json.containsKey('devCommand') ? SdkPresent(json['devCommand'] as String?) : const SdkOmitted(),
-    directoryListing: (json['directoryListing'] != null ? UpdateProjectResponseDirectoryListing.fromJson(json['directoryListing'] as bool) : null)!,
-    dismissedToasts: json['dismissedToasts'] != null ? SdkPresent(((json['dismissedToasts'] as List?)?.map((e) => UpdateProjectResponseDismissedToastsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    enableAffectedProjectsDeployments: json['enableAffectedProjectsDeployments'] != null ? SdkPresent((json['enableAffectedProjectsDeployments'] != null ? UpdateProjectResponseEnableAffectedProjectsDeployments.fromJson(json['enableAffectedProjectsDeployments'] as bool) : null)!) : const SdkOmitted(),
-    enableExternalRewriteCaching: json['enableExternalRewriteCaching'] != null ? SdkPresent((json['enableExternalRewriteCaching'] != null ? UpdateProjectResponseEnableExternalRewriteCaching.fromJson(json['enableExternalRewriteCaching'] as bool) : null)!) : const SdkOmitted(),
-    enablePreviewFeedback: json.containsKey('enablePreviewFeedback') ? SdkPresent(json['enablePreviewFeedback'] != null ? UpdateProjectResponseEnablePreviewFeedback.fromJson(json['enablePreviewFeedback'] as bool) : null) : const SdkOmitted(),
-    enableProductionFeedback: json.containsKey('enableProductionFeedback') ? SdkPresent(json['enableProductionFeedback'] != null ? UpdateProjectResponseEnableProductionFeedback.fromJson(json['enableProductionFeedback'] as bool) : null) : const SdkOmitted(),
-    env: json['env'] != null ? SdkPresent(((json['env'] as List?)?.map((e) => UpdateProjectResponseEnvItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    expiration: json['expiration'] != null ? SdkPresent((json['expiration'] != null ? UpdateProjectResponseExpiration.fromJson(json['expiration']) : null)!) : const SdkOmitted(),
-    features: json['features'] != null ? SdkPresent((json['features'] != null ? UpdateProjectResponseFeatures.fromJson(json['features'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? UpdateProjectResponseFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    gitComments: json['gitComments'] != null ? SdkPresent((json['gitComments'] != null ? UpdateProjectResponseGitComments.fromJson(json['gitComments'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    gitForkProtection: json['gitForkProtection'] != null ? SdkPresent((json['gitForkProtection'] != null ? UpdateProjectResponseGitForkProtection.fromJson(json['gitForkProtection'] as bool) : null)!) : const SdkOmitted(),
-    gitLfs: json['gitLFS'] != null ? SdkPresent((json['gitLFS'] != null ? UpdateProjectResponseGitLFS.fromJson(json['gitLFS'] as bool) : null)!) : const SdkOmitted(),
-    gitProviderOptions: json['gitProviderOptions'] != null ? SdkPresent((json['gitProviderOptions'] != null ? UpdateProjectResponseGitProviderOptions.fromJson(json['gitProviderOptions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    hasActiveBranches: json['hasActiveBranches'] != null ? SdkPresent((json['hasActiveBranches'] != null ? UpdateProjectResponseHasActiveBranches.fromJson(json['hasActiveBranches'] as bool) : null)!) : const SdkOmitted(),
-    hasDeployments: json['hasDeployments'] != null ? SdkPresent((json['hasDeployments'] != null ? UpdateProjectResponseHasDeployments.fromJson(json['hasDeployments'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    installCommand: json.containsKey('installCommand') ? SdkPresent(json['installCommand'] as String?) : const SdkOmitted(),
-    internalRoutes: json['internalRoutes'] != null ? SdkPresent(((json['internalRoutes'] as List?)?.map((e) => UpdateProjectResponseInternalRoutesItem.fromJson(e)).toList())!) : const SdkOmitted(),
-    ipBuckets: json['ipBuckets'] != null ? SdkPresent(((json['ipBuckets'] as List?)?.map((e) => UpdateProjectResponseIpBucketsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    jobs: json['jobs'] != null ? SdkPresent((json['jobs'] != null ? UpdateProjectResponseJobs.fromJson(json['jobs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    lastAliasRequest: json.containsKey('lastAliasRequest') ? SdkPresent(json['lastAliasRequest'] != null ? UpdateProjectResponseLastAliasRequest.fromJson(json['lastAliasRequest'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    lastRollbackTarget: json.containsKey('lastRollbackTarget') ? SdkPresent(json['lastRollbackTarget'] == null ? null : json['lastRollbackTarget'] as Map<String, dynamic>) : const SdkOmitted(),
-    latestDeployments: json['latestDeployments'] != null ? SdkPresent(((json['latestDeployments'] as List?)?.map((e) => UpdateProjectResponseLatestDeploymentsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    link: json['link'] != null ? SdkPresent((json['link'] != null ? UpdateProjectResponseLink.fromJson(json['link']) : null)!) : const SdkOmitted(),
-    live: json['live'] != null ? SdkPresent((json['live'] != null ? UpdateProjectResponseLive.fromJson(json['live'] as bool) : null)!) : const SdkOmitted(),
-    microfrontends: json['microfrontends'] != null ? SdkPresent((json['microfrontends'] != null ? UpdateProjectResponseMicrofrontends.fromJson(json['microfrontends']) : null)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    nodeVersion: (json['nodeVersion'] != null ? UpdateProjectResponseNodeVersion.fromJson(json['nodeVersion'] as String) : null)!,
-    oidcTokenConfig: json['oidcTokenConfig'] != null ? SdkPresent((json['oidcTokenConfig'] != null ? UpdateProjectResponseOidcTokenConfig.fromJson(json['oidcTokenConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    optionsAllowlist: json.containsKey('optionsAllowlist') ? SdkPresent(json['optionsAllowlist'] != null ? UpdateProjectResponseOptionsAllowlist.fromJson(json['optionsAllowlist'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    outputDirectory: json.containsKey('outputDirectory') ? SdkPresent(json['outputDirectory'] as String?) : const SdkOmitted(),
-    passiveConnectConfigurationId: json.containsKey('passiveConnectConfigurationId') ? SdkPresent(json['passiveConnectConfigurationId'] as String?) : const SdkOmitted(),
-    passport: json.containsKey('passport') ? SdkPresent(json['passport'] != null ? UpdateProjectResponsePassport.fromJson(json['passport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    passwordProtection: json.containsKey('passwordProtection') ? SdkPresent(json['passwordProtection'] != null ? UpdateProjectResponsePasswordProtection.fromJson(json['passwordProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    paused: json['paused'] != null ? SdkPresent((json['paused'] != null ? UpdateProjectResponsePaused.fromJson(json['paused'] as bool) : null)!) : const SdkOmitted(),
-    permissions: json['permissions'] != null ? SdkPresent((json['permissions'] != null ? UpdateProjectResponsePermissions.fromJson(json['permissions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    productionDeploymentsFastLane: json['productionDeploymentsFastLane'] != null ? SdkPresent((json['productionDeploymentsFastLane'] != null ? UpdateProjectResponseProductionDeploymentsFastLane.fromJson(json['productionDeploymentsFastLane'] as bool) : null)!) : const SdkOmitted(),
-    protectedSourcemaps: json['protectedSourcemaps'] != null ? SdkPresent((json['protectedSourcemaps'] != null ? UpdateProjectResponseProtectedSourcemaps.fromJson(json['protectedSourcemaps'] as bool) : null)!) : const SdkOmitted(),
-    protectionBypass: json['protectionBypass'] != null ? SdkPresent((json['protectionBypass'] == null ? null : json['protectionBypass'] as Map<String, dynamic>)!) : const SdkOmitted(),
-    protectionConfig: json['protectionConfig'] != null ? SdkPresent((json['protectionConfig'] != null ? UpdateProjectResponseProtectionConfig.fromJson(json['protectionConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    resourceConfig: (json['resourceConfig'] != null ? UpdateProjectResponseResourceConfig.fromJson(json['resourceConfig'] as Map<String, dynamic>) : null)!,
-    rollbackDescription: json['rollbackDescription'] != null ? SdkPresent((json['rollbackDescription'] != null ? UpdateProjectResponseRollbackDescription.fromJson(json['rollbackDescription'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    rollingRelease: json.containsKey('rollingRelease') ? SdkPresent(json['rollingRelease'] != null ? UpdateProjectResponseRollingRelease.fromJson(json['rollingRelease'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    rootDirectory: json.containsKey('rootDirectory') ? SdkPresent(json['rootDirectory'] as String?) : const SdkOmitted(),
-    sandbox: json['sandbox'] != null ? SdkPresent((json['sandbox'] != null ? UpdateProjectResponseSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    security: json['security'] != null ? SdkPresent((json['security'] != null ? UpdateProjectResponseSecurity.fromJson(json['security'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    serverlessFunctionZeroConfigFailover: json['serverlessFunctionZeroConfigFailover'] != null ? SdkPresent((json['serverlessFunctionZeroConfigFailover'] != null ? UpdateProjectResponseServerlessFunctionZeroConfigFailover.fromJson(json['serverlessFunctionZeroConfigFailover'] as bool) : null)!) : const SdkOmitted(),
-    services: json['services'] != null ? SdkPresent(((json['services'] as List?)?.map((e) => UpdateProjectResponseServicesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    skewProtectionAllowedDomains: json['skewProtectionAllowedDomains'] != null ? SdkPresent(((json['skewProtectionAllowedDomains'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    skewProtectionBoundaryAt: json['skewProtectionBoundaryAt'] != null ? SdkPresent(((json['skewProtectionBoundaryAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    skewProtectionMaxAge: json['skewProtectionMaxAge'] != null ? SdkPresent(((json['skewProtectionMaxAge'] as num?)?.toDouble())!) : const SdkOmitted(),
-    skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null ? SdkPresent((json['skipGitConnectDuringLink'] != null ? UpdateProjectResponseSkipGitConnectDuringLink.fromJson(json['skipGitConnectDuringLink'] as bool) : null)!) : const SdkOmitted(),
-    sourceFilesOutsideRootDirectory: json['sourceFilesOutsideRootDirectory'] != null ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null ? UpdateProjectResponseSourceFilesOutsideRootDirectory.fromJson(json['sourceFilesOutsideRootDirectory'] as bool) : null)!) : const SdkOmitted(),
-    speedInsights: json['speedInsights'] != null ? SdkPresent((json['speedInsights'] != null ? UpdateProjectResponseSpeedInsights.fromJson(json['speedInsights'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    ssoProtection: json.containsKey('ssoProtection') ? SdkPresent(json['ssoProtection'] != null ? UpdateProjectResponseSsoProtection.fromJson(json['ssoProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    staticIps: json['staticIps'] != null ? SdkPresent((json['staticIps'] != null ? UpdateProjectResponseStaticIps.fromJson(json['staticIps'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    targets: json['targets'] != null ? SdkPresent((json['targets'] == null ? null : Map<String, dynamic>.from(json['targets'] as Map).map((key, value) => MapEntry(key, UpdateProjectResponseTargetsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    tier: json['tier'] != null ? SdkPresent((json['tier'] != null ? UpdateProjectResponseTier.fromJson(json['tier'] as String) : null)!) : const SdkOmitted(),
-    tracing: json['tracing'] != null ? SdkPresent((json['tracing'] != null ? UpdateProjectResponseTracing.fromJson(json['tracing'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    transferCompletedAt: json['transferCompletedAt'] != null ? SdkPresent(((json['transferCompletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    transferredFromAccountId: json['transferredFromAccountId'] != null ? SdkPresent((json['transferredFromAccountId'] as String?)!) : const SdkOmitted(),
-    transferStartedAt: json['transferStartedAt'] != null ? SdkPresent(((json['transferStartedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    transferToAccountId: json['transferToAccountId'] != null ? SdkPresent((json['transferToAccountId'] as String?)!) : const SdkOmitted(),
-    trustedIps: json.containsKey('trustedIps') ? SdkPresent(json['trustedIps'] != null ? UpdateProjectResponseTrustedIps.fromJson(json['trustedIps']) : null) : const SdkOmitted(),
-    trustedSources: json.containsKey('trustedSources') ? SdkPresent(json['trustedSources'] != null ? UpdateProjectResponseTrustedSources.fromJson(json['trustedSources'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    usageStatus: json['usageStatus'] != null ? SdkPresent((json['usageStatus'] != null ? UpdateProjectResponseUsageStatus.fromJson(json['usageStatus'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? UpdateProjectResponseV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
-    v0Created: json['v0Created'] != null ? SdkPresent((json['v0Created'] != null ? UpdateProjectResponseV0Created.fromJson(json['v0Created'] as bool) : null)!) : const SdkOmitted(),
-    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? UpdateProjectResponseWebAnalytics.fromJson(json['webAnalytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectResponse.fromJson(Map<String, dynamic> json) =>
+      UpdateProjectResponse(
+        accountId: (json['accountId'] as String?)!,
+        alias: ((json['alias'] as List?)
+            ?.map((e) => UpdateProjectResponseAliasItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        analytics: json['analytics'] != null
+            ? SdkPresent((json['analytics'] != null
+                ? UpdateProjectResponseAnalytics.fromJson(
+                    json['analytics'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        appliedCve55182Migration: json['appliedCve55182Migration'] != null
+            ? SdkPresent((json['appliedCve55182Migration'] != null
+                ? UpdateProjectResponseAppliedCve55182Migration.fromJson(
+                    json['appliedCve55182Migration'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        autoAssignCustomDomains: json['autoAssignCustomDomains'] != null
+            ? SdkPresent((json['autoAssignCustomDomains'] != null
+                ? UpdateProjectResponseAutoAssignCustomDomains.fromJson(
+                    json['autoAssignCustomDomains'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        autoAssignCustomDomainsUpdatedBy:
+            json['autoAssignCustomDomainsUpdatedBy'] != null
+                ? SdkPresent(
+                    (json['autoAssignCustomDomainsUpdatedBy'] as String?)!)
+                : const SdkOmitted(),
+        autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null
+            ? SdkPresent((json['autoExposeSystemEnvs'] != null
+                ? UpdateProjectResponseAutoExposeSystemEnvs.fromJson(
+                    json['autoExposeSystemEnvs'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        avatar: json.containsKey('avatar')
+            ? SdkPresent(json['avatar'] as String?)
+            : const SdkOmitted(),
+        avatarDarkMode: json.containsKey('avatarDarkMode')
+            ? SdkPresent(json['avatarDarkMode'] as String?)
+            : const SdkOmitted(),
+        blobs: json['blobs'] != null
+            ? SdkPresent((json['blobs'] != null
+                ? UpdateProjectResponseBlobs.fromJson(
+                    json['blobs'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        buildCommand: json.containsKey('buildCommand')
+            ? SdkPresent(json['buildCommand'] as String?)
+            : const SdkOmitted(),
+        commandForIgnoringBuildStep:
+            json.containsKey('commandForIgnoringBuildStep')
+                ? SdkPresent(json['commandForIgnoringBuildStep'] as String?)
+                : const SdkOmitted(),
+        concurrencyBucketName: json['concurrencyBucketName'] != null
+            ? SdkPresent((json['concurrencyBucketName'] as String?)!)
+            : const SdkOmitted(),
+        connectBuildsEnabled: json['connectBuildsEnabled'] != null
+            ? SdkPresent((json['connectBuildsEnabled'] != null
+                ? UpdateProjectResponseConnectBuildsEnabled.fromJson(
+                    json['connectBuildsEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        connectConfigurationId: json.containsKey('connectConfigurationId')
+            ? SdkPresent(json['connectConfigurationId'] as String?)
+            : const SdkOmitted(),
+        connectConfigurations: json.containsKey('connectConfigurations')
+            ? SdkPresent((json['connectConfigurations'] as List?)
+                ?.map((e) =>
+                    UpdateProjectResponseConnectConfigurationsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())
+            : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        creator: json['creator'] != null
+            ? SdkPresent((json['creator'] != null
+                ? UpdateProjectResponseCreator.fromJson(json['creator'])
+                : null)!)
+            : const SdkOmitted(),
+        crons: json['crons'] != null
+            ? SdkPresent((json['crons'] != null
+                ? UpdateProjectResponseCrons.fromJson(
+                    json['crons'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        customEnvironments: json['customEnvironments'] != null
+            ? SdkPresent(((json['customEnvironments'] as List?)
+                ?.map((e) =>
+                    UpdateProjectResponseCustomEnvironmentsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        customerSupportCodeVisibility: json['customerSupportCodeVisibility'] !=
+                null
+            ? SdkPresent((json['customerSupportCodeVisibility'] != null
+                ? UpdateProjectResponseCustomerSupportCodeVisibility.fromJson(
+                    json['customerSupportCodeVisibility'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        dataCache: json['dataCache'] != null
+            ? SdkPresent((json['dataCache'] != null
+                ? UpdateProjectResponseDataCache.fromJson(
+                    json['dataCache'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        defaultResourceConfig: (json['defaultResourceConfig'] != null
+            ? UpdateProjectResponseDefaultResourceConfig.fromJson(
+                json['defaultResourceConfig'] as Map<String, dynamic>)
+            : null)!,
+        deploymentExpiration: (json['deploymentExpiration'] != null
+            ? UpdateProjectResponseDeploymentExpiration.fromJson(
+                json['deploymentExpiration'] as Map<String, dynamic>)
+            : null)!,
+        deploymentPolicy: json.containsKey('deploymentPolicy')
+            ? SdkPresent(json['deploymentPolicy'] != null
+                ? UpdateProjectResponseDeploymentPolicy.fromJson(
+                    json['deploymentPolicy'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        devCommand: json.containsKey('devCommand')
+            ? SdkPresent(json['devCommand'] as String?)
+            : const SdkOmitted(),
+        directoryListing: (json['directoryListing'] != null
+            ? UpdateProjectResponseDirectoryListing.fromJson(
+                json['directoryListing'] as bool)
+            : null)!,
+        dismissedToasts: json['dismissedToasts'] != null
+            ? SdkPresent(((json['dismissedToasts'] as List?)
+                ?.map((e) => UpdateProjectResponseDismissedToastsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        enableAffectedProjectsDeployments:
+            json['enableAffectedProjectsDeployments'] != null
+                ? SdkPresent((json['enableAffectedProjectsDeployments'] != null
+                    ? UpdateProjectResponseEnableAffectedProjectsDeployments
+                        .fromJson(
+                            json['enableAffectedProjectsDeployments'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        enableExternalRewriteCaching: json['enableExternalRewriteCaching'] !=
+                null
+            ? SdkPresent((json['enableExternalRewriteCaching'] != null
+                ? UpdateProjectResponseEnableExternalRewriteCaching.fromJson(
+                    json['enableExternalRewriteCaching'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        enablePreviewFeedback: json.containsKey('enablePreviewFeedback')
+            ? SdkPresent(json['enablePreviewFeedback'] != null
+                ? UpdateProjectResponseEnablePreviewFeedback.fromJson(
+                    json['enablePreviewFeedback'] as bool)
+                : null)
+            : const SdkOmitted(),
+        enableProductionFeedback: json.containsKey('enableProductionFeedback')
+            ? SdkPresent(json['enableProductionFeedback'] != null
+                ? UpdateProjectResponseEnableProductionFeedback.fromJson(
+                    json['enableProductionFeedback'] as bool)
+                : null)
+            : const SdkOmitted(),
+        env: json['env'] != null
+            ? SdkPresent(((json['env'] as List?)
+                ?.map((e) => UpdateProjectResponseEnvItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        expiration: json['expiration'] != null
+            ? SdkPresent((json['expiration'] != null
+                ? UpdateProjectResponseExpiration.fromJson(json['expiration'])
+                : null)!)
+            : const SdkOmitted(),
+        features: json['features'] != null
+            ? SdkPresent((json['features'] != null
+                ? UpdateProjectResponseFeatures.fromJson(
+                    json['features'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] != null
+                ? UpdateProjectResponseFramework.fromJson(
+                    json['framework'] as String)
+                : null)
+            : const SdkOmitted(),
+        gitComments: json['gitComments'] != null
+            ? SdkPresent((json['gitComments'] != null
+                ? UpdateProjectResponseGitComments.fromJson(
+                    json['gitComments'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        gitForkProtection: json['gitForkProtection'] != null
+            ? SdkPresent((json['gitForkProtection'] != null
+                ? UpdateProjectResponseGitForkProtection.fromJson(
+                    json['gitForkProtection'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        gitLfs: json['gitLFS'] != null
+            ? SdkPresent((json['gitLFS'] != null
+                ? UpdateProjectResponseGitLFS.fromJson(json['gitLFS'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        gitProviderOptions: json['gitProviderOptions'] != null
+            ? SdkPresent((json['gitProviderOptions'] != null
+                ? UpdateProjectResponseGitProviderOptions.fromJson(
+                    json['gitProviderOptions'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        hasActiveBranches: json['hasActiveBranches'] != null
+            ? SdkPresent((json['hasActiveBranches'] != null
+                ? UpdateProjectResponseHasActiveBranches.fromJson(
+                    json['hasActiveBranches'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        hasDeployments: json['hasDeployments'] != null
+            ? SdkPresent((json['hasDeployments'] != null
+                ? UpdateProjectResponseHasDeployments.fromJson(
+                    json['hasDeployments'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        installCommand: json.containsKey('installCommand')
+            ? SdkPresent(json['installCommand'] as String?)
+            : const SdkOmitted(),
+        internalRoutes: json['internalRoutes'] != null
+            ? SdkPresent(((json['internalRoutes'] as List?)
+                ?.map(
+                    (e) => UpdateProjectResponseInternalRoutesItem.fromJson(e))
+                .toList())!)
+            : const SdkOmitted(),
+        ipBuckets: json['ipBuckets'] != null
+            ? SdkPresent(((json['ipBuckets'] as List?)
+                ?.map((e) => UpdateProjectResponseIpBucketsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        jobs: json['jobs'] != null
+            ? SdkPresent((json['jobs'] != null
+                ? UpdateProjectResponseJobs.fromJson(
+                    json['jobs'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        lastAliasRequest: json.containsKey('lastAliasRequest')
+            ? SdkPresent(json['lastAliasRequest'] != null
+                ? UpdateProjectResponseLastAliasRequest.fromJson(
+                    json['lastAliasRequest'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        lastRollbackTarget: json.containsKey('lastRollbackTarget')
+            ? SdkPresent(json['lastRollbackTarget'] == null
+                ? null
+                : json['lastRollbackTarget'] as Map<String, dynamic>)
+            : const SdkOmitted(),
+        latestDeployments: json['latestDeployments'] != null
+            ? SdkPresent(((json['latestDeployments'] as List?)
+                ?.map((e) =>
+                    UpdateProjectResponseLatestDeploymentsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        link: json['link'] != null
+            ? SdkPresent((json['link'] != null
+                ? UpdateProjectResponseLink.fromJson(json['link'])
+                : null)!)
+            : const SdkOmitted(),
+        live: json['live'] != null
+            ? SdkPresent((json['live'] != null
+                ? UpdateProjectResponseLive.fromJson(json['live'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        microfrontends: json['microfrontends'] != null
+            ? SdkPresent((json['microfrontends'] != null
+                ? UpdateProjectResponseMicrofrontends.fromJson(
+                    json['microfrontends'])
+                : null)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        nodeVersion: (json['nodeVersion'] != null
+            ? UpdateProjectResponseNodeVersion.fromJson(
+                json['nodeVersion'] as String)
+            : null)!,
+        oidcTokenConfig: json['oidcTokenConfig'] != null
+            ? SdkPresent((json['oidcTokenConfig'] != null
+                ? UpdateProjectResponseOidcTokenConfig.fromJson(
+                    json['oidcTokenConfig'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        optionsAllowlist: json.containsKey('optionsAllowlist')
+            ? SdkPresent(json['optionsAllowlist'] != null
+                ? UpdateProjectResponseOptionsAllowlist.fromJson(
+                    json['optionsAllowlist'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        outputDirectory: json.containsKey('outputDirectory')
+            ? SdkPresent(json['outputDirectory'] as String?)
+            : const SdkOmitted(),
+        passiveConnectConfigurationId:
+            json.containsKey('passiveConnectConfigurationId')
+                ? SdkPresent(json['passiveConnectConfigurationId'] as String?)
+                : const SdkOmitted(),
+        passport: json.containsKey('passport')
+            ? SdkPresent(json['passport'] != null
+                ? UpdateProjectResponsePassport.fromJson(
+                    json['passport'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        passwordProtection: json.containsKey('passwordProtection')
+            ? SdkPresent(json['passwordProtection'] != null
+                ? UpdateProjectResponsePasswordProtection.fromJson(
+                    json['passwordProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        paused: json['paused'] != null
+            ? SdkPresent((json['paused'] != null
+                ? UpdateProjectResponsePaused.fromJson(json['paused'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        permissions: json['permissions'] != null
+            ? SdkPresent((json['permissions'] != null
+                ? UpdateProjectResponsePermissions.fromJson(
+                    json['permissions'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        productionDeploymentsFastLane: json['productionDeploymentsFastLane'] !=
+                null
+            ? SdkPresent((json['productionDeploymentsFastLane'] != null
+                ? UpdateProjectResponseProductionDeploymentsFastLane.fromJson(
+                    json['productionDeploymentsFastLane'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        protectedSourcemaps: json['protectedSourcemaps'] != null
+            ? SdkPresent((json['protectedSourcemaps'] != null
+                ? UpdateProjectResponseProtectedSourcemaps.fromJson(
+                    json['protectedSourcemaps'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        protectionBypass: json['protectionBypass'] != null
+            ? SdkPresent((json['protectionBypass'] == null
+                ? null
+                : json['protectionBypass'] as Map<String, dynamic>)!)
+            : const SdkOmitted(),
+        protectionConfig: json['protectionConfig'] != null
+            ? SdkPresent((json['protectionConfig'] != null
+                ? UpdateProjectResponseProtectionConfig.fromJson(
+                    json['protectionConfig'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        resourceConfig: (json['resourceConfig'] != null
+            ? UpdateProjectResponseResourceConfig.fromJson(
+                json['resourceConfig'] as Map<String, dynamic>)
+            : null)!,
+        rollbackDescription: json['rollbackDescription'] != null
+            ? SdkPresent((json['rollbackDescription'] != null
+                ? UpdateProjectResponseRollbackDescription.fromJson(
+                    json['rollbackDescription'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        rollingRelease: json.containsKey('rollingRelease')
+            ? SdkPresent(json['rollingRelease'] != null
+                ? UpdateProjectResponseRollingRelease.fromJson(
+                    json['rollingRelease'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        rootDirectory: json.containsKey('rootDirectory')
+            ? SdkPresent(json['rootDirectory'] as String?)
+            : const SdkOmitted(),
+        sandbox: json['sandbox'] != null
+            ? SdkPresent((json['sandbox'] != null
+                ? UpdateProjectResponseSandbox.fromJson(
+                    json['sandbox'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        security: json['security'] != null
+            ? SdkPresent((json['security'] != null
+                ? UpdateProjectResponseSecurity.fromJson(
+                    json['security'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        serverlessFunctionZeroConfigFailover:
+            json['serverlessFunctionZeroConfigFailover'] != null
+                ? SdkPresent((json['serverlessFunctionZeroConfigFailover'] !=
+                        null
+                    ? UpdateProjectResponseServerlessFunctionZeroConfigFailover
+                        .fromJson(json['serverlessFunctionZeroConfigFailover']
+                            as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        services: json['services'] != null
+            ? SdkPresent(((json['services'] as List?)
+                ?.map((e) => UpdateProjectResponseServicesItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        skewProtectionAllowedDomains:
+            json['skewProtectionAllowedDomains'] != null
+                ? SdkPresent(((json['skewProtectionAllowedDomains'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+        skewProtectionBoundaryAt: json['skewProtectionBoundaryAt'] != null
+            ? SdkPresent(
+                ((json['skewProtectionBoundaryAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        skewProtectionMaxAge: json['skewProtectionMaxAge'] != null
+            ? SdkPresent(((json['skewProtectionMaxAge'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null
+            ? SdkPresent((json['skipGitConnectDuringLink'] != null
+                ? UpdateProjectResponseSkipGitConnectDuringLink.fromJson(
+                    json['skipGitConnectDuringLink'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        sourceFilesOutsideRootDirectory:
+            json['sourceFilesOutsideRootDirectory'] != null
+                ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null
+                    ? UpdateProjectResponseSourceFilesOutsideRootDirectory
+                        .fromJson(
+                            json['sourceFilesOutsideRootDirectory'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+        speedInsights: json['speedInsights'] != null
+            ? SdkPresent((json['speedInsights'] != null
+                ? UpdateProjectResponseSpeedInsights.fromJson(
+                    json['speedInsights'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        ssoProtection: json.containsKey('ssoProtection')
+            ? SdkPresent(json['ssoProtection'] != null
+                ? UpdateProjectResponseSsoProtection.fromJson(
+                    json['ssoProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        staticIps: json['staticIps'] != null
+            ? SdkPresent((json['staticIps'] != null
+                ? UpdateProjectResponseStaticIps.fromJson(
+                    json['staticIps'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        targets: json['targets'] != null
+            ? SdkPresent((json['targets'] == null
+                ? null
+                : Map<String, dynamic>.from(json['targets'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        UpdateProjectResponseTargetsValue.fromJson(
+                            value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        tier: json['tier'] != null
+            ? SdkPresent((json['tier'] != null
+                ? UpdateProjectResponseTier.fromJson(json['tier'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        tracing: json['tracing'] != null
+            ? SdkPresent((json['tracing'] != null
+                ? UpdateProjectResponseTracing.fromJson(
+                    json['tracing'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        transferCompletedAt: json['transferCompletedAt'] != null
+            ? SdkPresent(((json['transferCompletedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        transferredFromAccountId: json['transferredFromAccountId'] != null
+            ? SdkPresent((json['transferredFromAccountId'] as String?)!)
+            : const SdkOmitted(),
+        transferStartedAt: json['transferStartedAt'] != null
+            ? SdkPresent(((json['transferStartedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        transferToAccountId: json['transferToAccountId'] != null
+            ? SdkPresent((json['transferToAccountId'] as String?)!)
+            : const SdkOmitted(),
+        trustedIps: json.containsKey('trustedIps')
+            ? SdkPresent(json['trustedIps'] != null
+                ? UpdateProjectResponseTrustedIps.fromJson(json['trustedIps'])
+                : null)
+            : const SdkOmitted(),
+        trustedSources: json.containsKey('trustedSources')
+            ? SdkPresent(json['trustedSources'] != null
+                ? UpdateProjectResponseTrustedSources.fromJson(
+                    json['trustedSources'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        usageStatus: json['usageStatus'] != null
+            ? SdkPresent((json['usageStatus'] != null
+                ? UpdateProjectResponseUsageStatus.fromJson(
+                    json['usageStatus'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        v0: json['v0'] != null
+            ? SdkPresent((json['v0'] != null
+                ? UpdateProjectResponseV0.fromJson(json['v0'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        v0Created: json['v0Created'] != null
+            ? SdkPresent((json['v0Created'] != null
+                ? UpdateProjectResponseV0Created.fromJson(
+                    json['v0Created'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        webAnalytics: json['webAnalytics'] != null
+            ? SdkPresent((json['webAnalytics'] != null
+                ? UpdateProjectResponseWebAnalytics.fromJson(
+                    json['webAnalytics'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'accountId': accountId,
-    'alias': alias.map((item) => item.toJson()).toList(),
-    ...switch (analytics) {
-      SdkPresent<UpdateProjectResponseAnalytics>(value: final value) => {'analytics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (appliedCve55182Migration) {
-      SdkPresent<UpdateProjectResponseAppliedCve55182Migration>(value: final value) => {'appliedCve55182Migration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (autoAssignCustomDomains) {
-      SdkPresent<UpdateProjectResponseAutoAssignCustomDomains>(value: final value) => {'autoAssignCustomDomains': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (autoAssignCustomDomainsUpdatedBy) {
-      SdkPresent<String>(value: final value) => {'autoAssignCustomDomainsUpdatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (autoExposeSystemEnvs) {
-      SdkPresent<UpdateProjectResponseAutoExposeSystemEnvs>(value: final value) => {'autoExposeSystemEnvs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (avatar) {
-      SdkPresent<String?>(value: final value) => {'avatar': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (avatarDarkMode) {
-      SdkPresent<String?>(value: final value) => {'avatarDarkMode': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (blobs) {
-      SdkPresent<UpdateProjectResponseBlobs>(value: final value) => {'blobs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildCommand) {
-      SdkPresent<String?>(value: final value) => {'buildCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (commandForIgnoringBuildStep) {
-      SdkPresent<String?>(value: final value) => {'commandForIgnoringBuildStep': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (concurrencyBucketName) {
-      SdkPresent<String>(value: final value) => {'concurrencyBucketName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectBuildsEnabled) {
-      SdkPresent<UpdateProjectResponseConnectBuildsEnabled>(value: final value) => {'connectBuildsEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectConfigurationId) {
-      SdkPresent<String?>(value: final value) => {'connectConfigurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectConfigurations) {
-      SdkPresent<List<UpdateProjectResponseConnectConfigurationsItem>?>(value: final value) => {'connectConfigurations': value?.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (creator) {
-      SdkPresent<UpdateProjectResponseCreator>(value: final value) => {'creator': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (crons) {
-      SdkPresent<UpdateProjectResponseCrons>(value: final value) => {'crons': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironments) {
-      SdkPresent<List<UpdateProjectResponseCustomEnvironmentsItem>>(value: final value) => {'customEnvironments': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customerSupportCodeVisibility) {
-      SdkPresent<UpdateProjectResponseCustomerSupportCodeVisibility>(value: final value) => {'customerSupportCodeVisibility': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dataCache) {
-      SdkPresent<UpdateProjectResponseDataCache>(value: final value) => {'dataCache': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'defaultResourceConfig': defaultResourceConfig.toJson(),
-    'deploymentExpiration': deploymentExpiration.toJson(),
-    ...switch (deploymentPolicy) {
-      SdkPresent<UpdateProjectResponseDeploymentPolicy?>(value: final value) => {'deploymentPolicy': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (devCommand) {
-      SdkPresent<String?>(value: final value) => {'devCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    'directoryListing': directoryListing.toJson(),
-    ...switch (dismissedToasts) {
-      SdkPresent<List<UpdateProjectResponseDismissedToastsItem>>(value: final value) => {'dismissedToasts': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enableAffectedProjectsDeployments) {
-      SdkPresent<UpdateProjectResponseEnableAffectedProjectsDeployments>(value: final value) => {'enableAffectedProjectsDeployments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enableExternalRewriteCaching) {
-      SdkPresent<UpdateProjectResponseEnableExternalRewriteCaching>(value: final value) => {'enableExternalRewriteCaching': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enablePreviewFeedback) {
-      SdkPresent<UpdateProjectResponseEnablePreviewFeedback?>(value: final value) => {'enablePreviewFeedback': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enableProductionFeedback) {
-      SdkPresent<UpdateProjectResponseEnableProductionFeedback?>(value: final value) => {'enableProductionFeedback': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (env) {
-      SdkPresent<List<UpdateProjectResponseEnvItem>>(value: final value) => {'env': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiration) {
-      SdkPresent<UpdateProjectResponseExpiration>(value: final value) => {'expiration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (features) {
-      SdkPresent<UpdateProjectResponseFeatures>(value: final value) => {'features': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (framework) {
-      SdkPresent<UpdateProjectResponseFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitComments) {
-      SdkPresent<UpdateProjectResponseGitComments>(value: final value) => {'gitComments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitForkProtection) {
-      SdkPresent<UpdateProjectResponseGitForkProtection>(value: final value) => {'gitForkProtection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitLfs) {
-      SdkPresent<UpdateProjectResponseGitLFS>(value: final value) => {'gitLFS': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitProviderOptions) {
-      SdkPresent<UpdateProjectResponseGitProviderOptions>(value: final value) => {'gitProviderOptions': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasActiveBranches) {
-      SdkPresent<UpdateProjectResponseHasActiveBranches>(value: final value) => {'hasActiveBranches': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasDeployments) {
-      SdkPresent<UpdateProjectResponseHasDeployments>(value: final value) => {'hasDeployments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (installCommand) {
-      SdkPresent<String?>(value: final value) => {'installCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (internalRoutes) {
-      SdkPresent<List<UpdateProjectResponseInternalRoutesItem>>(value: final value) => {'internalRoutes': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ipBuckets) {
-      SdkPresent<List<UpdateProjectResponseIpBucketsItem>>(value: final value) => {'ipBuckets': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (jobs) {
-      SdkPresent<UpdateProjectResponseJobs>(value: final value) => {'jobs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastAliasRequest) {
-      SdkPresent<UpdateProjectResponseLastAliasRequest?>(value: final value) => {'lastAliasRequest': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastRollbackTarget) {
-      SdkPresent<Map<String, dynamic>?>(value: final value) => {'lastRollbackTarget': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (latestDeployments) {
-      SdkPresent<List<UpdateProjectResponseLatestDeploymentsItem>>(value: final value) => {'latestDeployments': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (link) {
-      SdkPresent<UpdateProjectResponseLink>(value: final value) => {'link': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (live) {
-      SdkPresent<UpdateProjectResponseLive>(value: final value) => {'live': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (microfrontends) {
-      SdkPresent<UpdateProjectResponseMicrofrontends>(value: final value) => {'microfrontends': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'nodeVersion': nodeVersion.toJson(),
-    ...switch (oidcTokenConfig) {
-      SdkPresent<UpdateProjectResponseOidcTokenConfig>(value: final value) => {'oidcTokenConfig': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (optionsAllowlist) {
-      SdkPresent<UpdateProjectResponseOptionsAllowlist?>(value: final value) => {'optionsAllowlist': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (outputDirectory) {
-      SdkPresent<String?>(value: final value) => {'outputDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (passiveConnectConfigurationId) {
-      SdkPresent<String?>(value: final value) => {'passiveConnectConfigurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (passport) {
-      SdkPresent<UpdateProjectResponsePassport?>(value: final value) => {'passport': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (passwordProtection) {
-      SdkPresent<UpdateProjectResponsePasswordProtection?>(value: final value) => {'passwordProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (paused) {
-      SdkPresent<UpdateProjectResponsePaused>(value: final value) => {'paused': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (permissions) {
-      SdkPresent<UpdateProjectResponsePermissions>(value: final value) => {'permissions': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (productionDeploymentsFastLane) {
-      SdkPresent<UpdateProjectResponseProductionDeploymentsFastLane>(value: final value) => {'productionDeploymentsFastLane': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (protectedSourcemaps) {
-      SdkPresent<UpdateProjectResponseProtectedSourcemaps>(value: final value) => {'protectedSourcemaps': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (protectionBypass) {
-      SdkPresent<Map<String, dynamic>>(value: final value) => {'protectionBypass': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (protectionConfig) {
-      SdkPresent<UpdateProjectResponseProtectionConfig>(value: final value) => {'protectionConfig': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'resourceConfig': resourceConfig.toJson(),
-    ...switch (rollbackDescription) {
-      SdkPresent<UpdateProjectResponseRollbackDescription>(value: final value) => {'rollbackDescription': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rollingRelease) {
-      SdkPresent<UpdateProjectResponseRollingRelease?>(value: final value) => {'rollingRelease': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rootDirectory) {
-      SdkPresent<String?>(value: final value) => {'rootDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sandbox) {
-      SdkPresent<UpdateProjectResponseSandbox>(value: final value) => {'sandbox': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (security) {
-      SdkPresent<UpdateProjectResponseSecurity>(value: final value) => {'security': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (serverlessFunctionZeroConfigFailover) {
-      SdkPresent<UpdateProjectResponseServerlessFunctionZeroConfigFailover>(value: final value) => {'serverlessFunctionZeroConfigFailover': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (services) {
-      SdkPresent<List<UpdateProjectResponseServicesItem>>(value: final value) => {'services': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skewProtectionAllowedDomains) {
-      SdkPresent<List<String>>(value: final value) => {'skewProtectionAllowedDomains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skewProtectionBoundaryAt) {
-      SdkPresent<double>(value: final value) => {'skewProtectionBoundaryAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skewProtectionMaxAge) {
-      SdkPresent<double>(value: final value) => {'skewProtectionMaxAge': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skipGitConnectDuringLink) {
-      SdkPresent<UpdateProjectResponseSkipGitConnectDuringLink>(value: final value) => {'skipGitConnectDuringLink': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sourceFilesOutsideRootDirectory) {
-      SdkPresent<UpdateProjectResponseSourceFilesOutsideRootDirectory>(value: final value) => {'sourceFilesOutsideRootDirectory': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (speedInsights) {
-      SdkPresent<UpdateProjectResponseSpeedInsights>(value: final value) => {'speedInsights': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoProtection) {
-      SdkPresent<UpdateProjectResponseSsoProtection?>(value: final value) => {'ssoProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (staticIps) {
-      SdkPresent<UpdateProjectResponseStaticIps>(value: final value) => {'staticIps': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (targets) {
-      SdkPresent<Map<String, UpdateProjectResponseTargetsValue>>(value: final value) => {'targets': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (tier) {
-      SdkPresent<UpdateProjectResponseTier>(value: final value) => {'tier': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (tracing) {
-      SdkPresent<UpdateProjectResponseTracing>(value: final value) => {'tracing': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferCompletedAt) {
-      SdkPresent<double>(value: final value) => {'transferCompletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferredFromAccountId) {
-      SdkPresent<String>(value: final value) => {'transferredFromAccountId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferStartedAt) {
-      SdkPresent<double>(value: final value) => {'transferStartedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transferToAccountId) {
-      SdkPresent<String>(value: final value) => {'transferToAccountId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (trustedIps) {
-      SdkPresent<UpdateProjectResponseTrustedIps?>(value: final value) => {'trustedIps': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (trustedSources) {
-      SdkPresent<UpdateProjectResponseTrustedSources?>(value: final value) => {'trustedSources': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (usageStatus) {
-      SdkPresent<UpdateProjectResponseUsageStatus>(value: final value) => {'usageStatus': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (v0) {
-      SdkPresent<UpdateProjectResponseV0>(value: final value) => {'v0': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (v0Created) {
-      SdkPresent<UpdateProjectResponseV0Created>(value: final value) => {'v0Created': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webAnalytics) {
-      SdkPresent<UpdateProjectResponseWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'accountId': accountId,
+        'alias': alias.map((item) => item.toJson()).toList(),
+        ...switch (analytics) {
+          SdkPresent<UpdateProjectResponseAnalytics>(value: final value) => {
+              'analytics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (appliedCve55182Migration) {
+          SdkPresent<UpdateProjectResponseAppliedCve55182Migration>(
+            value: final value
+          ) =>
+            {
+              'appliedCve55182Migration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (autoAssignCustomDomains) {
+          SdkPresent<UpdateProjectResponseAutoAssignCustomDomains>(
+            value: final value
+          ) =>
+            {
+              'autoAssignCustomDomains': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (autoAssignCustomDomainsUpdatedBy) {
+          SdkPresent<String>(value: final value) => {
+              'autoAssignCustomDomainsUpdatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (autoExposeSystemEnvs) {
+          SdkPresent<UpdateProjectResponseAutoExposeSystemEnvs>(
+            value: final value
+          ) =>
+            {
+              'autoExposeSystemEnvs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (avatar) {
+          SdkPresent<String?>(value: final value) => {
+              'avatar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (avatarDarkMode) {
+          SdkPresent<String?>(value: final value) => {
+              'avatarDarkMode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (blobs) {
+          SdkPresent<UpdateProjectResponseBlobs>(value: final value) => {
+              'blobs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'buildCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (commandForIgnoringBuildStep) {
+          SdkPresent<String?>(value: final value) => {
+              'commandForIgnoringBuildStep': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (concurrencyBucketName) {
+          SdkPresent<String>(value: final value) => {
+              'concurrencyBucketName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectBuildsEnabled) {
+          SdkPresent<UpdateProjectResponseConnectBuildsEnabled>(
+            value: final value
+          ) =>
+            {
+              'connectBuildsEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectConfigurationId) {
+          SdkPresent<String?>(value: final value) => {
+              'connectConfigurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectConfigurations) {
+          SdkPresent<List<UpdateProjectResponseConnectConfigurationsItem>?>(
+            value: final value
+          ) =>
+            {
+              'connectConfigurations':
+                  value?.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (creator) {
+          SdkPresent<UpdateProjectResponseCreator>(value: final value) => {
+              'creator': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (crons) {
+          SdkPresent<UpdateProjectResponseCrons>(value: final value) => {
+              'crons': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironments) {
+          SdkPresent<List<UpdateProjectResponseCustomEnvironmentsItem>>(
+            value: final value
+          ) =>
+            {
+              'customEnvironments': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customerSupportCodeVisibility) {
+          SdkPresent<UpdateProjectResponseCustomerSupportCodeVisibility>(
+            value: final value
+          ) =>
+            {
+              'customerSupportCodeVisibility': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dataCache) {
+          SdkPresent<UpdateProjectResponseDataCache>(value: final value) => {
+              'dataCache': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'defaultResourceConfig': defaultResourceConfig.toJson(),
+        'deploymentExpiration': deploymentExpiration.toJson(),
+        ...switch (deploymentPolicy) {
+          SdkPresent<UpdateProjectResponseDeploymentPolicy?>(
+            value: final value
+          ) =>
+            {
+              'deploymentPolicy': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (devCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'devCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'directoryListing': directoryListing.toJson(),
+        ...switch (dismissedToasts) {
+          SdkPresent<List<UpdateProjectResponseDismissedToastsItem>>(
+            value: final value
+          ) =>
+            {
+              'dismissedToasts': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enableAffectedProjectsDeployments) {
+          SdkPresent<UpdateProjectResponseEnableAffectedProjectsDeployments>(
+            value: final value
+          ) =>
+            {
+              'enableAffectedProjectsDeployments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enableExternalRewriteCaching) {
+          SdkPresent<UpdateProjectResponseEnableExternalRewriteCaching>(
+            value: final value
+          ) =>
+            {
+              'enableExternalRewriteCaching': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enablePreviewFeedback) {
+          SdkPresent<UpdateProjectResponseEnablePreviewFeedback?>(
+            value: final value
+          ) =>
+            {
+              'enablePreviewFeedback': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enableProductionFeedback) {
+          SdkPresent<UpdateProjectResponseEnableProductionFeedback?>(
+            value: final value
+          ) =>
+            {
+              'enableProductionFeedback': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (env) {
+          SdkPresent<List<UpdateProjectResponseEnvItem>>(value: final value) =>
+            {
+              'env': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiration) {
+          SdkPresent<UpdateProjectResponseExpiration>(value: final value) => {
+              'expiration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (features) {
+          SdkPresent<UpdateProjectResponseFeatures>(value: final value) => {
+              'features': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (framework) {
+          SdkPresent<UpdateProjectResponseFramework?>(value: final value) => {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitComments) {
+          SdkPresent<UpdateProjectResponseGitComments>(value: final value) => {
+              'gitComments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitForkProtection) {
+          SdkPresent<UpdateProjectResponseGitForkProtection>(
+            value: final value
+          ) =>
+            {
+              'gitForkProtection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitLfs) {
+          SdkPresent<UpdateProjectResponseGitLFS>(value: final value) => {
+              'gitLFS': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitProviderOptions) {
+          SdkPresent<UpdateProjectResponseGitProviderOptions>(
+            value: final value
+          ) =>
+            {
+              'gitProviderOptions': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasActiveBranches) {
+          SdkPresent<UpdateProjectResponseHasActiveBranches>(
+            value: final value
+          ) =>
+            {
+              'hasActiveBranches': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasDeployments) {
+          SdkPresent<UpdateProjectResponseHasDeployments>(value: final value) =>
+            {
+              'hasDeployments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (installCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'installCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (internalRoutes) {
+          SdkPresent<List<UpdateProjectResponseInternalRoutesItem>>(
+            value: final value
+          ) =>
+            {
+              'internalRoutes': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ipBuckets) {
+          SdkPresent<List<UpdateProjectResponseIpBucketsItem>>(
+            value: final value
+          ) =>
+            {
+              'ipBuckets': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (jobs) {
+          SdkPresent<UpdateProjectResponseJobs>(value: final value) => {
+              'jobs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastAliasRequest) {
+          SdkPresent<UpdateProjectResponseLastAliasRequest?>(
+            value: final value
+          ) =>
+            {
+              'lastAliasRequest': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastRollbackTarget) {
+          SdkPresent<Map<String, dynamic>?>(value: final value) => {
+              'lastRollbackTarget': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (latestDeployments) {
+          SdkPresent<List<UpdateProjectResponseLatestDeploymentsItem>>(
+            value: final value
+          ) =>
+            {
+              'latestDeployments': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (link) {
+          SdkPresent<UpdateProjectResponseLink>(value: final value) => {
+              'link': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (live) {
+          SdkPresent<UpdateProjectResponseLive>(value: final value) => {
+              'live': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (microfrontends) {
+          SdkPresent<UpdateProjectResponseMicrofrontends>(value: final value) =>
+            {
+              'microfrontends': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'nodeVersion': nodeVersion.toJson(),
+        ...switch (oidcTokenConfig) {
+          SdkPresent<UpdateProjectResponseOidcTokenConfig>(
+            value: final value
+          ) =>
+            {
+              'oidcTokenConfig': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (optionsAllowlist) {
+          SdkPresent<UpdateProjectResponseOptionsAllowlist?>(
+            value: final value
+          ) =>
+            {
+              'optionsAllowlist': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (outputDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'outputDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (passiveConnectConfigurationId) {
+          SdkPresent<String?>(value: final value) => {
+              'passiveConnectConfigurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (passport) {
+          SdkPresent<UpdateProjectResponsePassport?>(value: final value) => {
+              'passport': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (passwordProtection) {
+          SdkPresent<UpdateProjectResponsePasswordProtection?>(
+            value: final value
+          ) =>
+            {
+              'passwordProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (paused) {
+          SdkPresent<UpdateProjectResponsePaused>(value: final value) => {
+              'paused': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (permissions) {
+          SdkPresent<UpdateProjectResponsePermissions>(value: final value) => {
+              'permissions': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (productionDeploymentsFastLane) {
+          SdkPresent<UpdateProjectResponseProductionDeploymentsFastLane>(
+            value: final value
+          ) =>
+            {
+              'productionDeploymentsFastLane': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (protectedSourcemaps) {
+          SdkPresent<UpdateProjectResponseProtectedSourcemaps>(
+            value: final value
+          ) =>
+            {
+              'protectedSourcemaps': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (protectionBypass) {
+          SdkPresent<Map<String, dynamic>>(value: final value) => {
+              'protectionBypass': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (protectionConfig) {
+          SdkPresent<UpdateProjectResponseProtectionConfig>(
+            value: final value
+          ) =>
+            {
+              'protectionConfig': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'resourceConfig': resourceConfig.toJson(),
+        ...switch (rollbackDescription) {
+          SdkPresent<UpdateProjectResponseRollbackDescription>(
+            value: final value
+          ) =>
+            {
+              'rollbackDescription': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rollingRelease) {
+          SdkPresent<UpdateProjectResponseRollingRelease?>(
+            value: final value
+          ) =>
+            {
+              'rollingRelease': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rootDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'rootDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sandbox) {
+          SdkPresent<UpdateProjectResponseSandbox>(value: final value) => {
+              'sandbox': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (security) {
+          SdkPresent<UpdateProjectResponseSecurity>(value: final value) => {
+              'security': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (serverlessFunctionZeroConfigFailover) {
+          SdkPresent<UpdateProjectResponseServerlessFunctionZeroConfigFailover>(
+            value: final value
+          ) =>
+            {
+              'serverlessFunctionZeroConfigFailover': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (services) {
+          SdkPresent<List<UpdateProjectResponseServicesItem>>(
+            value: final value
+          ) =>
+            {
+              'services': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skewProtectionAllowedDomains) {
+          SdkPresent<List<String>>(value: final value) => {
+              'skewProtectionAllowedDomains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skewProtectionBoundaryAt) {
+          SdkPresent<double>(value: final value) => {
+              'skewProtectionBoundaryAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skewProtectionMaxAge) {
+          SdkPresent<double>(value: final value) => {
+              'skewProtectionMaxAge': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skipGitConnectDuringLink) {
+          SdkPresent<UpdateProjectResponseSkipGitConnectDuringLink>(
+            value: final value
+          ) =>
+            {
+              'skipGitConnectDuringLink': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sourceFilesOutsideRootDirectory) {
+          SdkPresent<UpdateProjectResponseSourceFilesOutsideRootDirectory>(
+            value: final value
+          ) =>
+            {
+              'sourceFilesOutsideRootDirectory': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (speedInsights) {
+          SdkPresent<UpdateProjectResponseSpeedInsights>(value: final value) =>
+            {
+              'speedInsights': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoProtection) {
+          SdkPresent<UpdateProjectResponseSsoProtection?>(value: final value) =>
+            {
+              'ssoProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (staticIps) {
+          SdkPresent<UpdateProjectResponseStaticIps>(value: final value) => {
+              'staticIps': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (targets) {
+          SdkPresent<Map<String, UpdateProjectResponseTargetsValue>>(
+            value: final value
+          ) =>
+            {
+              'targets':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (tier) {
+          SdkPresent<UpdateProjectResponseTier>(value: final value) => {
+              'tier': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (tracing) {
+          SdkPresent<UpdateProjectResponseTracing>(value: final value) => {
+              'tracing': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferCompletedAt) {
+          SdkPresent<double>(value: final value) => {
+              'transferCompletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferredFromAccountId) {
+          SdkPresent<String>(value: final value) => {
+              'transferredFromAccountId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferStartedAt) {
+          SdkPresent<double>(value: final value) => {
+              'transferStartedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transferToAccountId) {
+          SdkPresent<String>(value: final value) => {
+              'transferToAccountId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (trustedIps) {
+          SdkPresent<UpdateProjectResponseTrustedIps?>(value: final value) => {
+              'trustedIps': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (trustedSources) {
+          SdkPresent<UpdateProjectResponseTrustedSources?>(
+            value: final value
+          ) =>
+            {
+              'trustedSources': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (usageStatus) {
+          SdkPresent<UpdateProjectResponseUsageStatus>(value: final value) => {
+              'usageStatus': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (v0) {
+          SdkPresent<UpdateProjectResponseV0>(value: final value) => {
+              'v0': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (v0Created) {
+          SdkPresent<UpdateProjectResponseV0Created>(value: final value) => {
+              'v0Created': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webAnalytics) {
+          SdkPresent<UpdateProjectResponseWebAnalytics>(value: final value) => {
+              'webAnalytics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

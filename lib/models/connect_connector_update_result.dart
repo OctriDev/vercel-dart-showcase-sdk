@@ -8,46 +8,101 @@ part of 'connect.dart';
 class ConnectConnectorUpdateResult {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Updated connector.
   final ConnectConnector connector;
+
   /// Present when affected users must authorize the connector's new permissions.
   final SdkOptional<ConnectReconsent> reconsentNeeded;
+
   /// When true, prompt a team owner or administrator to reinstall the connector before relying on the change.
-  final SdkOptional<ConnectConnectorUpdateResultReinstallNeeded> reinstallNeeded;
+  final SdkOptional<ConnectConnectorUpdateResultReinstallNeeded>
+      reinstallNeeded;
+
   /// Result of synchronizing the change with the external service.
   final SdkOptional<ConnectServiceSync> serviceSync;
 
-  const ConnectConnectorUpdateResult({required this.connector, this.reconsentNeeded = const SdkOmitted(), this.reinstallNeeded = const SdkOmitted(), this.serviceSync = const SdkOmitted()});
+  const ConnectConnectorUpdateResult(
+      {required this.connector,
+      this.reconsentNeeded = const SdkOmitted(),
+      this.reinstallNeeded = const SdkOmitted(),
+      this.serviceSync = const SdkOmitted()});
 
-  ConnectConnectorUpdateResult Function({ConnectConnector connector, SdkOptional<ConnectReconsent> reconsentNeeded, SdkOptional<ConnectConnectorUpdateResultReinstallNeeded> reinstallNeeded, SdkOptional<ConnectServiceSync> serviceSync}) get copyWith => _copyWith;
+  ConnectConnectorUpdateResult Function(
+      {ConnectConnector connector,
+      SdkOptional<ConnectReconsent> reconsentNeeded,
+      SdkOptional<ConnectConnectorUpdateResultReinstallNeeded> reinstallNeeded,
+      SdkOptional<ConnectServiceSync> serviceSync}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateResult _copyWith({Object? connector = sdkOmittedValue, Object? reconsentNeeded = sdkOmittedValue, Object? reinstallNeeded = sdkOmittedValue, Object? serviceSync = sdkOmittedValue}) => ConnectConnectorUpdateResult(
-    connector: identical(connector, sdkOmittedValue) ? this.connector : connector as ConnectConnector,
-    reconsentNeeded: identical(reconsentNeeded, sdkOmittedValue) ? this.reconsentNeeded : reconsentNeeded as SdkOptional<ConnectReconsent>,
-    reinstallNeeded: identical(reinstallNeeded, sdkOmittedValue) ? this.reinstallNeeded : reinstallNeeded as SdkOptional<ConnectConnectorUpdateResultReinstallNeeded>,
-    serviceSync: identical(serviceSync, sdkOmittedValue) ? this.serviceSync : serviceSync as SdkOptional<ConnectServiceSync>,
-  );
+  ConnectConnectorUpdateResult _copyWith(
+          {Object? connector = sdkOmittedValue,
+          Object? reconsentNeeded = sdkOmittedValue,
+          Object? reinstallNeeded = sdkOmittedValue,
+          Object? serviceSync = sdkOmittedValue}) =>
+      ConnectConnectorUpdateResult(
+        connector: identical(connector, sdkOmittedValue)
+            ? this.connector
+            : connector as ConnectConnector,
+        reconsentNeeded: identical(reconsentNeeded, sdkOmittedValue)
+            ? this.reconsentNeeded
+            : reconsentNeeded as SdkOptional<ConnectReconsent>,
+        reinstallNeeded: identical(reinstallNeeded, sdkOmittedValue)
+            ? this.reinstallNeeded
+            : reinstallNeeded
+                as SdkOptional<ConnectConnectorUpdateResultReinstallNeeded>,
+        serviceSync: identical(serviceSync, sdkOmittedValue)
+            ? this.serviceSync
+            : serviceSync as SdkOptional<ConnectServiceSync>,
+      );
 
-  factory ConnectConnectorUpdateResult.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateResult(
-    connector: (json['connector'] != null ? ConnectConnector.fromJson(json['connector'] as Map<String, dynamic>) : null)!,
-    reconsentNeeded: json['reconsentNeeded'] != null ? SdkPresent((json['reconsentNeeded'] != null ? ConnectReconsent.fromJson(json['reconsentNeeded'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    reinstallNeeded: json['reinstallNeeded'] != null ? SdkPresent((json['reinstallNeeded'] != null ? ConnectConnectorUpdateResultReinstallNeeded.fromJson(json['reinstallNeeded'] as bool) : null)!) : const SdkOmitted(),
-    serviceSync: json['serviceSync'] != null ? SdkPresent((json['serviceSync'] != null ? ConnectServiceSync.fromJson(json['serviceSync'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorUpdateResult.fromJson(Map<String, dynamic> json) =>
+      ConnectConnectorUpdateResult(
+        connector: (json['connector'] != null
+            ? ConnectConnector.fromJson(
+                json['connector'] as Map<String, dynamic>)
+            : null)!,
+        reconsentNeeded: json['reconsentNeeded'] != null
+            ? SdkPresent((json['reconsentNeeded'] != null
+                ? ConnectReconsent.fromJson(
+                    json['reconsentNeeded'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        reinstallNeeded: json['reinstallNeeded'] != null
+            ? SdkPresent((json['reinstallNeeded'] != null
+                ? ConnectConnectorUpdateResultReinstallNeeded.fromJson(
+                    json['reinstallNeeded'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        serviceSync: json['serviceSync'] != null
+            ? SdkPresent((json['serviceSync'] != null
+                ? ConnectServiceSync.fromJson(
+                    json['serviceSync'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'connector': connector.toJson(),
-    ...switch (reconsentNeeded) {
-      SdkPresent<ConnectReconsent>(value: final value) => {'reconsentNeeded': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (reinstallNeeded) {
-      SdkPresent<ConnectConnectorUpdateResultReinstallNeeded>(value: final value) => {'reinstallNeeded': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (serviceSync) {
-      SdkPresent<ConnectServiceSync>(value: final value) => {'serviceSync': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'connector': connector.toJson(),
+        ...switch (reconsentNeeded) {
+          SdkPresent<ConnectReconsent>(value: final value) => {
+              'reconsentNeeded': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (reinstallNeeded) {
+          SdkPresent<ConnectConnectorUpdateResultReinstallNeeded>(
+            value: final value
+          ) =>
+            {
+              'reinstallNeeded': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (serviceSync) {
+          SdkPresent<ConnectServiceSync>(value: final value) => {
+              'serviceSync': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

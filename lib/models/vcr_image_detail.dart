@@ -8,86 +8,177 @@ part of 'vcr.dart';
 class VcrImageDetail {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// CPU architecture the manifest targets. Only present for single-platform manifests.
   final SdkOptional<String> arch;
+
   /// ISO 8601 timestamp of when the image was created.
   final String createdAt;
+
   /// Internal identifier of the image.
   final String id;
+
   /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
   final VcrImageDetailKind kind;
+
   /// Required array value serialized in the `layers` wire field.
   final List<VcrImageLayer> layers;
+
   /// SHA-256 digest of the image manifest.
   final String manifestDigest;
+
   /// Operating system the manifest targets. Only present for single-platform manifests.
   final SdkOptional<String> platform;
+
   /// Identifier of the actor that pushed the image.
   final SdkOptional<String> pushedBy;
+
   /// Identifier of the repository the image belongs to.
   final String repositoryId;
+
   /// Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry.
   final double sizeInBytes;
+
   /// VHS-readiness status, or `null` for a multi-platform index.
   final VcrImageDetailStatus? status;
+
   /// Tags pointing at this image's manifest.
   final List<String> tags;
 
-  const VcrImageDetail({this.arch = const SdkOmitted(), required this.createdAt, required this.id, required this.kind, required this.layers, required this.manifestDigest, this.platform = const SdkOmitted(), this.pushedBy = const SdkOmitted(), required this.repositoryId, required this.sizeInBytes, required this.status, required this.tags});
+  const VcrImageDetail(
+      {this.arch = const SdkOmitted(),
+      required this.createdAt,
+      required this.id,
+      required this.kind,
+      required this.layers,
+      required this.manifestDigest,
+      this.platform = const SdkOmitted(),
+      this.pushedBy = const SdkOmitted(),
+      required this.repositoryId,
+      required this.sizeInBytes,
+      required this.status,
+      required this.tags});
 
-  VcrImageDetail Function({SdkOptional<String> arch, String createdAt, String id, VcrImageDetailKind kind, List<VcrImageLayer> layers, String manifestDigest, SdkOptional<String> platform, SdkOptional<String> pushedBy, String repositoryId, double sizeInBytes, VcrImageDetailStatus? status, List<String> tags}) get copyWith => _copyWith;
+  VcrImageDetail Function(
+      {SdkOptional<String> arch,
+      String createdAt,
+      String id,
+      VcrImageDetailKind kind,
+      List<VcrImageLayer> layers,
+      String manifestDigest,
+      SdkOptional<String> platform,
+      SdkOptional<String> pushedBy,
+      String repositoryId,
+      double sizeInBytes,
+      VcrImageDetailStatus? status,
+      List<String> tags}) get copyWith => _copyWith;
 
-  VcrImageDetail _copyWith({Object? arch = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? layers = sdkOmittedValue, Object? manifestDigest = sdkOmittedValue, Object? platform = sdkOmittedValue, Object? pushedBy = sdkOmittedValue, Object? repositoryId = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? status = sdkOmittedValue, Object? tags = sdkOmittedValue}) => VcrImageDetail(
-    arch: identical(arch, sdkOmittedValue) ? this.arch : arch as SdkOptional<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as VcrImageDetailKind,
-    layers: identical(layers, sdkOmittedValue) ? this.layers : layers as List<VcrImageLayer>,
-    manifestDigest: identical(manifestDigest, sdkOmittedValue) ? this.manifestDigest : manifestDigest as String,
-    platform: identical(platform, sdkOmittedValue) ? this.platform : platform as SdkOptional<String>,
-    pushedBy: identical(pushedBy, sdkOmittedValue) ? this.pushedBy : pushedBy as SdkOptional<String>,
-    repositoryId: identical(repositoryId, sdkOmittedValue) ? this.repositoryId : repositoryId as String,
-    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
-    status: identical(status, sdkOmittedValue) ? this.status : status as VcrImageDetailStatus?,
-    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
-  );
+  VcrImageDetail _copyWith(
+          {Object? arch = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? layers = sdkOmittedValue,
+          Object? manifestDigest = sdkOmittedValue,
+          Object? platform = sdkOmittedValue,
+          Object? pushedBy = sdkOmittedValue,
+          Object? repositoryId = sdkOmittedValue,
+          Object? sizeInBytes = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? tags = sdkOmittedValue}) =>
+      VcrImageDetail(
+        arch: identical(arch, sdkOmittedValue)
+            ? this.arch
+            : arch as SdkOptional<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as VcrImageDetailKind,
+        layers: identical(layers, sdkOmittedValue)
+            ? this.layers
+            : layers as List<VcrImageLayer>,
+        manifestDigest: identical(manifestDigest, sdkOmittedValue)
+            ? this.manifestDigest
+            : manifestDigest as String,
+        platform: identical(platform, sdkOmittedValue)
+            ? this.platform
+            : platform as SdkOptional<String>,
+        pushedBy: identical(pushedBy, sdkOmittedValue)
+            ? this.pushedBy
+            : pushedBy as SdkOptional<String>,
+        repositoryId: identical(repositoryId, sdkOmittedValue)
+            ? this.repositoryId
+            : repositoryId as String,
+        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
+            ? this.sizeInBytes
+            : sizeInBytes as double,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as VcrImageDetailStatus?,
+        tags:
+            identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
+      );
 
   factory VcrImageDetail.fromJson(Map<String, dynamic> json) => VcrImageDetail(
-    arch: json['arch'] != null ? SdkPresent((json['arch'] as String?)!) : const SdkOmitted(),
-    createdAt: (json['createdAt'] as String?)!,
-    id: (json['id'] as String?)!,
-    kind: (json['kind'] != null ? VcrImageDetailKind.fromJson(json['kind'] as String) : null)!,
-    layers: ((json['layers'] as List?)?.map((e) => VcrImageLayer.fromJson(e)).toList())!,
-    manifestDigest: (json['manifestDigest'] as String?)!,
-    platform: json['platform'] != null ? SdkPresent((json['platform'] as String?)!) : const SdkOmitted(),
-    pushedBy: json['pushedBy'] != null ? SdkPresent((json['pushedBy'] as String?)!) : const SdkOmitted(),
-    repositoryId: (json['repositoryId'] as String?)!,
-    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-    status: json.containsKey('status') ? json['status'] != null ? VcrImageDetailStatus.fromJson(json['status'] as String) : null : throw ArgumentError.value(null, 'status', 'Required property is missing'),
-    tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
-  );
+        arch: json['arch'] != null
+            ? SdkPresent((json['arch'] as String?)!)
+            : const SdkOmitted(),
+        createdAt: (json['createdAt'] as String?)!,
+        id: (json['id'] as String?)!,
+        kind: (json['kind'] != null
+            ? VcrImageDetailKind.fromJson(json['kind'] as String)
+            : null)!,
+        layers: ((json['layers'] as List?)
+            ?.map((e) => VcrImageLayer.fromJson(e))
+            .toList())!,
+        manifestDigest: (json['manifestDigest'] as String?)!,
+        platform: json['platform'] != null
+            ? SdkPresent((json['platform'] as String?)!)
+            : const SdkOmitted(),
+        pushedBy: json['pushedBy'] != null
+            ? SdkPresent((json['pushedBy'] as String?)!)
+            : const SdkOmitted(),
+        repositoryId: (json['repositoryId'] as String?)!,
+        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+        status: json.containsKey('status')
+            ? json['status'] != null
+                ? VcrImageDetailStatus.fromJson(json['status'] as String)
+                : null
+            : throw ArgumentError.value(
+                null, 'status', 'Required property is missing'),
+        tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (arch) {
-      SdkPresent<String>(value: final value) => {'arch': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    'id': id,
-    'kind': kind.toJson(),
-    'layers': layers.map((item) => item.toJson()).toList(),
-    'manifestDigest': manifestDigest,
-    ...switch (platform) {
-      SdkPresent<String>(value: final value) => {'platform': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pushedBy) {
-      SdkPresent<String>(value: final value) => {'pushedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    'repositoryId': repositoryId,
-    'sizeInBytes': sizeInBytes,
-    'status': status?.toJson(),
-    'tags': tags,
-  };
+        ...switch (arch) {
+          SdkPresent<String>(value: final value) => {
+              'arch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        'id': id,
+        'kind': kind.toJson(),
+        'layers': layers.map((item) => item.toJson()).toList(),
+        'manifestDigest': manifestDigest,
+        ...switch (platform) {
+          SdkPresent<String>(value: final value) => {
+              'platform': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pushedBy) {
+          SdkPresent<String>(value: final value) => {
+              'pushedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'repositoryId': repositoryId,
+        'sizeInBytes': sizeInBytes,
+        'status': status?.toJson(),
+        'tags': tags,
+      };
 }

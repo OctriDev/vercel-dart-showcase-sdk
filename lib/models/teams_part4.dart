@@ -8,214 +8,420 @@ part of 'teams.dart';
 class TeamMembership {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `number` value serialized in the `accessRequestedAt` wire field.
   final SdkOptional<double> accessRequestedAt;
+
   /// Required enumerated value serialized in the `confirmed` wire field.
   final TeamMembershipConfirmed confirmed;
+
   /// Required `number` value serialized in the `created` wire field.
   final double created;
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Optional array value serialized in the `entitlements` wire field.
   final SdkOptional<List<TeamMembershipEntitlementsItem>> entitlements;
+
   /// Optional enumerated value serialized in the `isOrgBackingTeamMembership` wire field.
-  final SdkOptional<TeamMembershipIsOrgBackingTeamMembership> isOrgBackingTeamMembership;
+  final SdkOptional<TeamMembershipIsOrgBackingTeamMembership>
+      isOrgBackingTeamMembership;
+
   /// Optional object value serialized in the `joinedFrom` wire field.
   final SdkOptional<TeamMembershipJoinedFrom> joinedFrom;
+
   /// Optional `string` value serialized in the `organizationId` wire field.
   final SdkOptional<String> organizationId;
+
   /// Required enumerated value serialized in the `role` wire field.
   final TeamMembershipRole role;
+
   /// Optional `string` value serialized in the `teamId` wire field.
   final SdkOptional<String> teamId;
+
   /// Optional array value serialized in the `teamPermissions` wire field.
   final SdkOptional<List<TeamMembershipTeamPermissionsItem>> teamPermissions;
+
   /// Optional array value serialized in the `teamRoles` wire field.
   final SdkOptional<List<TeamMembershipTeamRolesItem>> teamRoles;
+
   /// Optional `string` value serialized in the `uid` wire field.
   final SdkOptional<String> uid;
 
-  const TeamMembership({this.accessRequestedAt = const SdkOmitted(), required this.confirmed, required this.created, required this.createdAt, this.entitlements = const SdkOmitted(), this.isOrgBackingTeamMembership = const SdkOmitted(), this.joinedFrom = const SdkOmitted(), this.organizationId = const SdkOmitted(), required this.role, this.teamId = const SdkOmitted(), this.teamPermissions = const SdkOmitted(), this.teamRoles = const SdkOmitted(), this.uid = const SdkOmitted()});
+  const TeamMembership(
+      {this.accessRequestedAt = const SdkOmitted(),
+      required this.confirmed,
+      required this.created,
+      required this.createdAt,
+      this.entitlements = const SdkOmitted(),
+      this.isOrgBackingTeamMembership = const SdkOmitted(),
+      this.joinedFrom = const SdkOmitted(),
+      this.organizationId = const SdkOmitted(),
+      required this.role,
+      this.teamId = const SdkOmitted(),
+      this.teamPermissions = const SdkOmitted(),
+      this.teamRoles = const SdkOmitted(),
+      this.uid = const SdkOmitted()});
 
-  TeamMembership Function({SdkOptional<double> accessRequestedAt, TeamMembershipConfirmed confirmed, double created, double createdAt, SdkOptional<List<TeamMembershipEntitlementsItem>> entitlements, SdkOptional<TeamMembershipIsOrgBackingTeamMembership> isOrgBackingTeamMembership, SdkOptional<TeamMembershipJoinedFrom> joinedFrom, SdkOptional<String> organizationId, TeamMembershipRole role, SdkOptional<String> teamId, SdkOptional<List<TeamMembershipTeamPermissionsItem>> teamPermissions, SdkOptional<List<TeamMembershipTeamRolesItem>> teamRoles, SdkOptional<String> uid}) get copyWith => _copyWith;
+  TeamMembership Function(
+      {SdkOptional<double> accessRequestedAt,
+      TeamMembershipConfirmed confirmed,
+      double created,
+      double createdAt,
+      SdkOptional<List<TeamMembershipEntitlementsItem>> entitlements,
+      SdkOptional<TeamMembershipIsOrgBackingTeamMembership>
+          isOrgBackingTeamMembership,
+      SdkOptional<TeamMembershipJoinedFrom> joinedFrom,
+      SdkOptional<String> organizationId,
+      TeamMembershipRole role,
+      SdkOptional<String> teamId,
+      SdkOptional<List<TeamMembershipTeamPermissionsItem>> teamPermissions,
+      SdkOptional<List<TeamMembershipTeamRolesItem>> teamRoles,
+      SdkOptional<String> uid}) get copyWith => _copyWith;
 
-  TeamMembership _copyWith({Object? accessRequestedAt = sdkOmittedValue, Object? confirmed = sdkOmittedValue, Object? created = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? entitlements = sdkOmittedValue, Object? isOrgBackingTeamMembership = sdkOmittedValue, Object? joinedFrom = sdkOmittedValue, Object? organizationId = sdkOmittedValue, Object? role = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? teamPermissions = sdkOmittedValue, Object? teamRoles = sdkOmittedValue, Object? uid = sdkOmittedValue}) => TeamMembership(
-    accessRequestedAt: identical(accessRequestedAt, sdkOmittedValue) ? this.accessRequestedAt : accessRequestedAt as SdkOptional<double>,
-    confirmed: identical(confirmed, sdkOmittedValue) ? this.confirmed : confirmed as TeamMembershipConfirmed,
-    created: identical(created, sdkOmittedValue) ? this.created : created as double,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    entitlements: identical(entitlements, sdkOmittedValue) ? this.entitlements : entitlements as SdkOptional<List<TeamMembershipEntitlementsItem>>,
-    isOrgBackingTeamMembership: identical(isOrgBackingTeamMembership, sdkOmittedValue) ? this.isOrgBackingTeamMembership : isOrgBackingTeamMembership as SdkOptional<TeamMembershipIsOrgBackingTeamMembership>,
-    joinedFrom: identical(joinedFrom, sdkOmittedValue) ? this.joinedFrom : joinedFrom as SdkOptional<TeamMembershipJoinedFrom>,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as SdkOptional<String>,
-    role: identical(role, sdkOmittedValue) ? this.role : role as TeamMembershipRole,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String>,
-    teamPermissions: identical(teamPermissions, sdkOmittedValue) ? this.teamPermissions : teamPermissions as SdkOptional<List<TeamMembershipTeamPermissionsItem>>,
-    teamRoles: identical(teamRoles, sdkOmittedValue) ? this.teamRoles : teamRoles as SdkOptional<List<TeamMembershipTeamRolesItem>>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as SdkOptional<String>,
-  );
+  TeamMembership _copyWith(
+          {Object? accessRequestedAt = sdkOmittedValue,
+          Object? confirmed = sdkOmittedValue,
+          Object? created = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? entitlements = sdkOmittedValue,
+          Object? isOrgBackingTeamMembership = sdkOmittedValue,
+          Object? joinedFrom = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue,
+          Object? role = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? teamPermissions = sdkOmittedValue,
+          Object? teamRoles = sdkOmittedValue,
+          Object? uid = sdkOmittedValue}) =>
+      TeamMembership(
+        accessRequestedAt: identical(accessRequestedAt, sdkOmittedValue)
+            ? this.accessRequestedAt
+            : accessRequestedAt as SdkOptional<double>,
+        confirmed: identical(confirmed, sdkOmittedValue)
+            ? this.confirmed
+            : confirmed as TeamMembershipConfirmed,
+        created: identical(created, sdkOmittedValue)
+            ? this.created
+            : created as double,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        entitlements: identical(entitlements, sdkOmittedValue)
+            ? this.entitlements
+            : entitlements as SdkOptional<List<TeamMembershipEntitlementsItem>>,
+        isOrgBackingTeamMembership:
+            identical(isOrgBackingTeamMembership, sdkOmittedValue)
+                ? this.isOrgBackingTeamMembership
+                : isOrgBackingTeamMembership
+                    as SdkOptional<TeamMembershipIsOrgBackingTeamMembership>,
+        joinedFrom: identical(joinedFrom, sdkOmittedValue)
+            ? this.joinedFrom
+            : joinedFrom as SdkOptional<TeamMembershipJoinedFrom>,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as SdkOptional<String>,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as TeamMembershipRole,
+        teamId: identical(teamId, sdkOmittedValue)
+            ? this.teamId
+            : teamId as SdkOptional<String>,
+        teamPermissions: identical(teamPermissions, sdkOmittedValue)
+            ? this.teamPermissions
+            : teamPermissions
+                as SdkOptional<List<TeamMembershipTeamPermissionsItem>>,
+        teamRoles: identical(teamRoles, sdkOmittedValue)
+            ? this.teamRoles
+            : teamRoles as SdkOptional<List<TeamMembershipTeamRolesItem>>,
+        uid: identical(uid, sdkOmittedValue)
+            ? this.uid
+            : uid as SdkOptional<String>,
+      );
 
   factory TeamMembership.fromJson(Map<String, dynamic> json) => TeamMembership(
-    accessRequestedAt: json['accessRequestedAt'] != null ? SdkPresent(((json['accessRequestedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    confirmed: (json['confirmed'] != null ? TeamMembershipConfirmed.fromJson(json['confirmed'] as bool) : null)!,
-    created: ((json['created'] as num?)?.toDouble())!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    entitlements: json['entitlements'] != null ? SdkPresent(((json['entitlements'] as List?)?.map((e) => TeamMembershipEntitlementsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    isOrgBackingTeamMembership: json['isOrgBackingTeamMembership'] != null ? SdkPresent((json['isOrgBackingTeamMembership'] != null ? TeamMembershipIsOrgBackingTeamMembership.fromJson(json['isOrgBackingTeamMembership'] as bool) : null)!) : const SdkOmitted(),
-    joinedFrom: json['joinedFrom'] != null ? SdkPresent((json['joinedFrom'] != null ? TeamMembershipJoinedFrom.fromJson(json['joinedFrom'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    organizationId: json['organizationId'] != null ? SdkPresent((json['organizationId'] as String?)!) : const SdkOmitted(),
-    role: (json['role'] != null ? TeamMembershipRole.fromJson(json['role'] as String) : null)!,
-    teamId: json['teamId'] != null ? SdkPresent((json['teamId'] as String?)!) : const SdkOmitted(),
-    teamPermissions: json['teamPermissions'] != null ? SdkPresent(((json['teamPermissions'] as List?)?.map((e) => TeamMembershipTeamPermissionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    teamRoles: json['teamRoles'] != null ? SdkPresent(((json['teamRoles'] as List?)?.map((e) => TeamMembershipTeamRolesItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    uid: json['uid'] != null ? SdkPresent((json['uid'] as String?)!) : const SdkOmitted(),
-  );
+        accessRequestedAt: json['accessRequestedAt'] != null
+            ? SdkPresent(((json['accessRequestedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        confirmed: (json['confirmed'] != null
+            ? TeamMembershipConfirmed.fromJson(json['confirmed'] as bool)
+            : null)!,
+        created: ((json['created'] as num?)?.toDouble())!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        entitlements: json['entitlements'] != null
+            ? SdkPresent(((json['entitlements'] as List?)
+                ?.map((e) => TeamMembershipEntitlementsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        isOrgBackingTeamMembership: json['isOrgBackingTeamMembership'] != null
+            ? SdkPresent((json['isOrgBackingTeamMembership'] != null
+                ? TeamMembershipIsOrgBackingTeamMembership.fromJson(
+                    json['isOrgBackingTeamMembership'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        joinedFrom: json['joinedFrom'] != null
+            ? SdkPresent((json['joinedFrom'] != null
+                ? TeamMembershipJoinedFrom.fromJson(
+                    json['joinedFrom'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        organizationId: json['organizationId'] != null
+            ? SdkPresent((json['organizationId'] as String?)!)
+            : const SdkOmitted(),
+        role: (json['role'] != null
+            ? TeamMembershipRole.fromJson(json['role'] as String)
+            : null)!,
+        teamId: json['teamId'] != null
+            ? SdkPresent((json['teamId'] as String?)!)
+            : const SdkOmitted(),
+        teamPermissions: json['teamPermissions'] != null
+            ? SdkPresent(((json['teamPermissions'] as List?)
+                ?.map((e) =>
+                    TeamMembershipTeamPermissionsItem.fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        teamRoles: json['teamRoles'] != null
+            ? SdkPresent(((json['teamRoles'] as List?)
+                ?.map((e) => TeamMembershipTeamRolesItem.fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        uid: json['uid'] != null
+            ? SdkPresent((json['uid'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (accessRequestedAt) {
-      SdkPresent<double>(value: final value) => {'accessRequestedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'confirmed': confirmed.toJson(),
-    'created': created,
-    'createdAt': createdAt,
-    ...switch (entitlements) {
-      SdkPresent<List<TeamMembershipEntitlementsItem>>(value: final value) => {'entitlements': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isOrgBackingTeamMembership) {
-      SdkPresent<TeamMembershipIsOrgBackingTeamMembership>(value: final value) => {'isOrgBackingTeamMembership': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (joinedFrom) {
-      SdkPresent<TeamMembershipJoinedFrom>(value: final value) => {'joinedFrom': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (organizationId) {
-      SdkPresent<String>(value: final value) => {'organizationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'role': role.toJson(),
-    ...switch (teamId) {
-      SdkPresent<String>(value: final value) => {'teamId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamPermissions) {
-      SdkPresent<List<TeamMembershipTeamPermissionsItem>>(value: final value) => {'teamPermissions': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamRoles) {
-      SdkPresent<List<TeamMembershipTeamRolesItem>>(value: final value) => {'teamRoles': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uid) {
-      SdkPresent<String>(value: final value) => {'uid': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (accessRequestedAt) {
+          SdkPresent<double>(value: final value) => {
+              'accessRequestedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'confirmed': confirmed.toJson(),
+        'created': created,
+        'createdAt': createdAt,
+        ...switch (entitlements) {
+          SdkPresent<List<TeamMembershipEntitlementsItem>>(
+            value: final value
+          ) =>
+            {
+              'entitlements': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isOrgBackingTeamMembership) {
+          SdkPresent<TeamMembershipIsOrgBackingTeamMembership>(
+            value: final value
+          ) =>
+            {
+              'isOrgBackingTeamMembership': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (joinedFrom) {
+          SdkPresent<TeamMembershipJoinedFrom>(value: final value) => {
+              'joinedFrom': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (organizationId) {
+          SdkPresent<String>(value: final value) => {
+              'organizationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'role': role.toJson(),
+        ...switch (teamId) {
+          SdkPresent<String>(value: final value) => {
+              'teamId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamPermissions) {
+          SdkPresent<List<TeamMembershipTeamPermissionsItem>>(
+            value: final value
+          ) =>
+            {
+              'teamPermissions': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamRoles) {
+          SdkPresent<List<TeamMembershipTeamRolesItem>>(value: final value) => {
+              'teamRoles': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uid) {
+          SdkPresent<String>(value: final value) => {
+              'uid': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// NSNB configuration for the team.
 class TeamNsnbConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `preference` wire field.
   final TeamNsnbConfigPreference preference;
 
   const TeamNsnbConfig({required this.preference});
 
-  TeamNsnbConfig Function({TeamNsnbConfigPreference preference}) get copyWith => _copyWith;
+  TeamNsnbConfig Function({TeamNsnbConfigPreference preference}) get copyWith =>
+      _copyWith;
 
-  TeamNsnbConfig _copyWith({Object? preference = sdkOmittedValue}) => TeamNsnbConfig(
-    preference: identical(preference, sdkOmittedValue) ? this.preference : preference as TeamNsnbConfigPreference,
-  );
+  TeamNsnbConfig _copyWith({Object? preference = sdkOmittedValue}) =>
+      TeamNsnbConfig(
+        preference: identical(preference, sdkOmittedValue)
+            ? this.preference
+            : preference as TeamNsnbConfigPreference,
+      );
 
   factory TeamNsnbConfig.fromJson(Map<String, dynamic> json) => TeamNsnbConfig(
-    preference: (json['preference'] != null ? TeamNsnbConfigPreference.fromJson(json['preference'] as String) : null)!,
-  );
+        preference: (json['preference'] != null
+            ? TeamNsnbConfigPreference.fromJson(json['preference'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'preference': preference.toJson(),
-  };
+        'preference': preference.toJson(),
+      };
 }
 
 /// Is remote caching enabled for this team
 class TeamRemoteCaching {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional enumerated value serialized in the `enabled` wire field.
   final SdkOptional<TeamRemoteCachingEnabled> enabled;
 
   const TeamRemoteCaching({this.enabled = const SdkOmitted()});
 
-  TeamRemoteCaching Function({SdkOptional<TeamRemoteCachingEnabled> enabled}) get copyWith => _copyWith;
+  TeamRemoteCaching Function({SdkOptional<TeamRemoteCachingEnabled> enabled})
+      get copyWith => _copyWith;
 
-  TeamRemoteCaching _copyWith({Object? enabled = sdkOmittedValue}) => TeamRemoteCaching(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<TeamRemoteCachingEnabled>,
-  );
+  TeamRemoteCaching _copyWith({Object? enabled = sdkOmittedValue}) =>
+      TeamRemoteCaching(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<TeamRemoteCachingEnabled>,
+      );
 
-  factory TeamRemoteCaching.fromJson(Map<String, dynamic> json) => TeamRemoteCaching(
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? TeamRemoteCachingEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory TeamRemoteCaching.fromJson(Map<String, dynamic> json) =>
+      TeamRemoteCaching(
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] != null
+                ? TeamRemoteCachingEnabled.fromJson(json['enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enabled) {
-      SdkPresent<TeamRemoteCachingEnabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enabled) {
+          SdkPresent<TeamRemoteCachingEnabled>(value: final value) => {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `buildEntitlements` wire field.
 class TeamResourceConfigBuildEntitlements {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional enumerated value serialized in the `enhancedBuilds` wire field.
-  final SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds> enhancedBuilds;
+  final SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds>
+      enhancedBuilds;
 
-  const TeamResourceConfigBuildEntitlements({this.enhancedBuilds = const SdkOmitted()});
+  const TeamResourceConfigBuildEntitlements(
+      {this.enhancedBuilds = const SdkOmitted()});
 
-  TeamResourceConfigBuildEntitlements Function({SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds> enhancedBuilds}) get copyWith => _copyWith;
+  TeamResourceConfigBuildEntitlements Function(
+      {SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds>
+          enhancedBuilds}) get copyWith => _copyWith;
 
-  TeamResourceConfigBuildEntitlements _copyWith({Object? enhancedBuilds = sdkOmittedValue}) => TeamResourceConfigBuildEntitlements(
-    enhancedBuilds: identical(enhancedBuilds, sdkOmittedValue) ? this.enhancedBuilds : enhancedBuilds as SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds>,
-  );
+  TeamResourceConfigBuildEntitlements _copyWith(
+          {Object? enhancedBuilds = sdkOmittedValue}) =>
+      TeamResourceConfigBuildEntitlements(
+        enhancedBuilds: identical(enhancedBuilds, sdkOmittedValue)
+            ? this.enhancedBuilds
+            : enhancedBuilds as SdkOptional<
+                TeamResourceConfigBuildEntitlementsEnhancedBuilds>,
+      );
 
-  factory TeamResourceConfigBuildEntitlements.fromJson(Map<String, dynamic> json) => TeamResourceConfigBuildEntitlements(
-    enhancedBuilds: json['enhancedBuilds'] != null ? SdkPresent((json['enhancedBuilds'] != null ? TeamResourceConfigBuildEntitlementsEnhancedBuilds.fromJson(json['enhancedBuilds'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory TeamResourceConfigBuildEntitlements.fromJson(
+          Map<String, dynamic> json) =>
+      TeamResourceConfigBuildEntitlements(
+        enhancedBuilds: json['enhancedBuilds'] != null
+            ? SdkPresent((json['enhancedBuilds'] != null
+                ? TeamResourceConfigBuildEntitlementsEnhancedBuilds.fromJson(
+                    json['enhancedBuilds'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enhancedBuilds) {
-      SdkPresent<TeamResourceConfigBuildEntitlementsEnhancedBuilds>(value: final value) => {'enhancedBuilds': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enhancedBuilds) {
+          SdkPresent<TeamResourceConfigBuildEntitlementsEnhancedBuilds>(
+            value: final value
+          ) =>
+            {
+              'enhancedBuilds': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Build machine configuration
 class TeamResourceConfigBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Default build machine type for new builds
   final SdkOptional<TeamResourceConfigBuildMachineDefault> default_;
 
   const TeamResourceConfigBuildMachine({this.default_ = const SdkOmitted()});
 
-  TeamResourceConfigBuildMachine Function({SdkOptional<TeamResourceConfigBuildMachineDefault> default_}) get copyWith => _copyWith;
+  TeamResourceConfigBuildMachine Function(
+          {SdkOptional<TeamResourceConfigBuildMachineDefault> default_})
+      get copyWith => _copyWith;
 
-  TeamResourceConfigBuildMachine _copyWith({Object? default_ = sdkOmittedValue}) => TeamResourceConfigBuildMachine(
-    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<TeamResourceConfigBuildMachineDefault>,
-  );
+  TeamResourceConfigBuildMachine _copyWith(
+          {Object? default_ = sdkOmittedValue}) =>
+      TeamResourceConfigBuildMachine(
+        default_: identical(default_, sdkOmittedValue)
+            ? this.default_
+            : default_ as SdkOptional<TeamResourceConfigBuildMachineDefault>,
+      );
 
-  factory TeamResourceConfigBuildMachine.fromJson(Map<String, dynamic> json) => TeamResourceConfigBuildMachine(
-    default_: json['default'] != null ? SdkPresent((json['default'] != null ? TeamResourceConfigBuildMachineDefault.fromJson(json['default'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory TeamResourceConfigBuildMachine.fromJson(Map<String, dynamic> json) =>
+      TeamResourceConfigBuildMachine(
+        default_: json['default'] != null
+            ? SdkPresent((json['default'] != null
+                ? TeamResourceConfigBuildMachineDefault.fromJson(
+                    json['default'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (default_) {
-      SdkPresent<TeamResourceConfigBuildMachineDefault>(value: final value) => {'default': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (default_) {
+          SdkPresent<TeamResourceConfigBuildMachineDefault>(
+            value: final value
+          ) =>
+            {
+              'default': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

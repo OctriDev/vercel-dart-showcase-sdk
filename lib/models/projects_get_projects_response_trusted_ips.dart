@@ -10,27 +10,39 @@ class GetProjectsResponseTrustedIpsVariant0AddressesItem {
   final SdkOptional<String> note;
   final String value;
 
-  const GetProjectsResponseTrustedIpsVariant0AddressesItem({this.note = const SdkOmitted(), required this.value});
+  const GetProjectsResponseTrustedIpsVariant0AddressesItem(
+      {this.note = const SdkOmitted(), required this.value});
 
-  GetProjectsResponseTrustedIpsVariant0AddressesItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  GetProjectsResponseTrustedIpsVariant0AddressesItem Function(
+      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  GetProjectsResponseTrustedIpsVariant0AddressesItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetProjectsResponseTrustedIpsVariant0AddressesItem(
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  GetProjectsResponseTrustedIpsVariant0AddressesItem _copyWith(
+          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      GetProjectsResponseTrustedIpsVariant0AddressesItem(
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory GetProjectsResponseTrustedIpsVariant0AddressesItem.fromJson(Map<String, dynamic> json) => GetProjectsResponseTrustedIpsVariant0AddressesItem(
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory GetProjectsResponseTrustedIpsVariant0AddressesItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseTrustedIpsVariant0AddressesItem(
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 class GetProjectsResponseTrustedIpsVariant0 {
@@ -40,27 +52,59 @@ class GetProjectsResponseTrustedIpsVariant0 {
   final GetProjectsResponseTrustedIpsVariant0DeploymentType deploymentType;
   final GetProjectsResponseTrustedIpsVariant0ProtectionMode protectionMode;
 
-  const GetProjectsResponseTrustedIpsVariant0({required this.addresses, required this.deploymentType, required this.protectionMode});
+  const GetProjectsResponseTrustedIpsVariant0(
+      {required this.addresses,
+      required this.deploymentType,
+      required this.protectionMode});
 
-  GetProjectsResponseTrustedIpsVariant0 Function({List<GetProjectsResponseTrustedIpsVariant0AddressesItem> addresses, GetProjectsResponseTrustedIpsVariant0DeploymentType deploymentType, GetProjectsResponseTrustedIpsVariant0ProtectionMode protectionMode}) get copyWith => _copyWith;
+  GetProjectsResponseTrustedIpsVariant0 Function(
+          {List<GetProjectsResponseTrustedIpsVariant0AddressesItem> addresses,
+          GetProjectsResponseTrustedIpsVariant0DeploymentType deploymentType,
+          GetProjectsResponseTrustedIpsVariant0ProtectionMode protectionMode})
+      get copyWith => _copyWith;
 
-  GetProjectsResponseTrustedIpsVariant0 _copyWith({Object? addresses = sdkOmittedValue, Object? deploymentType = sdkOmittedValue, Object? protectionMode = sdkOmittedValue}) => GetProjectsResponseTrustedIpsVariant0(
-    addresses: identical(addresses, sdkOmittedValue) ? this.addresses : addresses as List<GetProjectsResponseTrustedIpsVariant0AddressesItem>,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as GetProjectsResponseTrustedIpsVariant0DeploymentType,
-    protectionMode: identical(protectionMode, sdkOmittedValue) ? this.protectionMode : protectionMode as GetProjectsResponseTrustedIpsVariant0ProtectionMode,
-  );
+  GetProjectsResponseTrustedIpsVariant0 _copyWith(
+          {Object? addresses = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue,
+          Object? protectionMode = sdkOmittedValue}) =>
+      GetProjectsResponseTrustedIpsVariant0(
+        addresses: identical(addresses, sdkOmittedValue)
+            ? this.addresses
+            : addresses
+                as List<GetProjectsResponseTrustedIpsVariant0AddressesItem>,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as GetProjectsResponseTrustedIpsVariant0DeploymentType,
+        protectionMode: identical(protectionMode, sdkOmittedValue)
+            ? this.protectionMode
+            : protectionMode
+                as GetProjectsResponseTrustedIpsVariant0ProtectionMode,
+      );
 
-  factory GetProjectsResponseTrustedIpsVariant0.fromJson(Map<String, dynamic> json) => GetProjectsResponseTrustedIpsVariant0(
-    addresses: ((json['addresses'] as List?)?.map((e) => GetProjectsResponseTrustedIpsVariant0AddressesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    deploymentType: (json['deploymentType'] != null ? GetProjectsResponseTrustedIpsVariant0DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-    protectionMode: (json['protectionMode'] != null ? GetProjectsResponseTrustedIpsVariant0ProtectionMode.fromJson(json['protectionMode'] as String) : null)!,
-  );
+  factory GetProjectsResponseTrustedIpsVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseTrustedIpsVariant0(
+        addresses: ((json['addresses'] as List?)
+            ?.map((e) =>
+                GetProjectsResponseTrustedIpsVariant0AddressesItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        deploymentType: (json['deploymentType'] != null
+            ? GetProjectsResponseTrustedIpsVariant0DeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+        protectionMode: (json['protectionMode'] != null
+            ? GetProjectsResponseTrustedIpsVariant0ProtectionMode.fromJson(
+                json['protectionMode'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'addresses': addresses.map((item) => item.toJson()).toList(),
-    'deploymentType': deploymentType.toJson(),
-    'protectionMode': protectionMode.toJson(),
-  };
+        'addresses': addresses.map((item) => item.toJson()).toList(),
+        'deploymentType': deploymentType.toJson(),
+        'protectionMode': protectionMode.toJson(),
+      };
 }
 
 class GetProjectsResponseTrustedIpsVariant1 {
@@ -70,19 +114,31 @@ class GetProjectsResponseTrustedIpsVariant1 {
 
   const GetProjectsResponseTrustedIpsVariant1({required this.deploymentType});
 
-  GetProjectsResponseTrustedIpsVariant1 Function({GetProjectsResponseTrustedIpsVariant1DeploymentType deploymentType}) get copyWith => _copyWith;
+  GetProjectsResponseTrustedIpsVariant1 Function(
+          {GetProjectsResponseTrustedIpsVariant1DeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  GetProjectsResponseTrustedIpsVariant1 _copyWith({Object? deploymentType = sdkOmittedValue}) => GetProjectsResponseTrustedIpsVariant1(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as GetProjectsResponseTrustedIpsVariant1DeploymentType,
-  );
+  GetProjectsResponseTrustedIpsVariant1 _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      GetProjectsResponseTrustedIpsVariant1(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as GetProjectsResponseTrustedIpsVariant1DeploymentType,
+      );
 
-  factory GetProjectsResponseTrustedIpsVariant1.fromJson(Map<String, dynamic> json) => GetProjectsResponseTrustedIpsVariant1(
-    deploymentType: (json['deploymentType'] != null ? GetProjectsResponseTrustedIpsVariant1DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory GetProjectsResponseTrustedIpsVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseTrustedIpsVariant1(
+        deploymentType: (json['deploymentType'] != null
+            ? GetProjectsResponseTrustedIpsVariant1DeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 sealed class GetProjectsResponseTrustedIps {
@@ -91,24 +147,51 @@ sealed class GetProjectsResponseTrustedIps {
   const GetProjectsResponseTrustedIps();
   factory GetProjectsResponseTrustedIps.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetProjectsResponseTrustedIpsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0(value); } } catch (_) {}
-      try { final value = GetProjectsResponseTrustedIpsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1(value); } } catch (_) {}
+      try {
+        final value = GetProjectsResponseTrustedIpsVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetProjectsResponseTrustedIpsVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0(GetProjectsResponseTrustedIpsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1(GetProjectsResponseTrustedIpsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetProjectsResponseTrustedIps");
+    try {
+      return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0(
+          GetProjectsResponseTrustedIpsVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1(
+          GetProjectsResponseTrustedIpsVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetProjectsResponseTrustedIps");
   }
   Object? toJson();
 }
 
-final class GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0 extends GetProjectsResponseTrustedIps {
+final class GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0
+    extends GetProjectsResponseTrustedIps {
   final GetProjectsResponseTrustedIpsVariant0 value;
-  const GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1 extends GetProjectsResponseTrustedIps {
+final class GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1
+    extends GetProjectsResponseTrustedIps {
   final GetProjectsResponseTrustedIpsVariant1 value;
-  const GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseTrustedIpsGetProjectsResponseTrustedIpsVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

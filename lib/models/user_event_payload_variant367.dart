@@ -8,6 +8,7 @@ part of 'user.dart';
 class UserEventPayloadVariant367 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
 
@@ -15,41 +16,49 @@ class UserEventPayloadVariant367 {
 
   UserEventPayloadVariant367 Function({String email}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant367 _copyWith({Object? email = sdkOmittedValue}) => UserEventPayloadVariant367(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-  );
+  UserEventPayloadVariant367 _copyWith({Object? email = sdkOmittedValue}) =>
+      UserEventPayloadVariant367(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+      );
 
-  factory UserEventPayloadVariant367.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant367(
-    email: (json['email'] as String?)!,
-  );
+  factory UserEventPayloadVariant367.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant367(
+        email: (json['email'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'email': email,
-  };
+        'email': email,
+      };
 }
 
 /// Required object value serialized in the `name` wire field.
 class UserEventPayloadVariant368NameVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant368NameVariant1({required this.name});
 
-  UserEventPayloadVariant368NameVariant1 Function({String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant368NameVariant1 Function({String name}) get copyWith =>
+      _copyWith;
 
-  UserEventPayloadVariant368NameVariant1 _copyWith({Object? name = sdkOmittedValue}) => UserEventPayloadVariant368NameVariant1(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant368NameVariant1 _copyWith(
+          {Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant368NameVariant1(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant368NameVariant1.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant368NameVariant1(
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant368NameVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant368NameVariant1(
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-  };
+        'name': name,
+      };
 }
 
 sealed class UserEventPayloadVariant368Name {
@@ -57,148 +66,238 @@ sealed class UserEventPayloadVariant368Name {
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant368Name();
   factory UserEventPayloadVariant368Name.fromJson(Object? json) {
-    if (json is String) { return UserEventPayloadVariant368NameString(json); }
-    try { return UserEventPayloadVariant368NameUserEventPayloadVariant368NameVariant1(UserEventPayloadVariant368NameVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UserEventPayloadVariant368Name");
+    if (json is String) {
+      return UserEventPayloadVariant368NameString(json);
+    }
+    try {
+      return UserEventPayloadVariant368NameUserEventPayloadVariant368NameVariant1(
+          UserEventPayloadVariant368NameVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UserEventPayloadVariant368Name");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant368NameString extends UserEventPayloadVariant368Name {
+final class UserEventPayloadVariant368NameString
+    extends UserEventPayloadVariant368Name {
   final String value;
   const UserEventPayloadVariant368NameString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class UserEventPayloadVariant368NameUserEventPayloadVariant368NameVariant1 extends UserEventPayloadVariant368Name {
+final class UserEventPayloadVariant368NameUserEventPayloadVariant368NameVariant1
+    extends UserEventPayloadVariant368Name {
   final UserEventPayloadVariant368NameVariant1 value;
-  const UserEventPayloadVariant368NameUserEventPayloadVariant368NameVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UserEventPayloadVariant368NameUserEventPayloadVariant368NameVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant368 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required API value serialized in the `name` wire field.
   final dynamic name;
+
   /// Required `string` value serialized in the `uid` wire field.
   final String uid;
 
   const UserEventPayloadVariant368({required this.name, required this.uid});
 
-  UserEventPayloadVariant368 Function({dynamic name, String uid}) get copyWith => _copyWith;
+  UserEventPayloadVariant368 Function({dynamic name, String uid})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant368 _copyWith({Object? name = sdkOmittedValue, Object? uid = sdkOmittedValue}) => UserEventPayloadVariant368(
-    name: identical(name, sdkOmittedValue) ? this.name : name as dynamic,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-  );
+  UserEventPayloadVariant368 _copyWith(
+          {Object? name = sdkOmittedValue, Object? uid = sdkOmittedValue}) =>
+      UserEventPayloadVariant368(
+        name: identical(name, sdkOmittedValue) ? this.name : name as dynamic,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+      );
 
-  factory UserEventPayloadVariant368.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant368(
-    name: (json['name'])!,
-    uid: (json['uid'] as String?)!,
-  );
+  factory UserEventPayloadVariant368.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant368(
+        name: (json['name'])!,
+        uid: (json['uid'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'uid': uid,
-  };
+        'name': name,
+        'uid': uid,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant369 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `newName` wire field.
   final String newName;
+
   /// Required `string` value serialized in the `oldName` wire field.
   final String oldName;
+
   /// Optional `string` value serialized in the `uid` wire field.
   final SdkOptional<String> uid;
 
-  const UserEventPayloadVariant369({required this.newName, required this.oldName, this.uid = const SdkOmitted()});
+  const UserEventPayloadVariant369(
+      {required this.newName,
+      required this.oldName,
+      this.uid = const SdkOmitted()});
 
-  UserEventPayloadVariant369 Function({String newName, String oldName, SdkOptional<String> uid}) get copyWith => _copyWith;
+  UserEventPayloadVariant369 Function(
+      {String newName,
+      String oldName,
+      SdkOptional<String> uid}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant369 _copyWith({Object? newName = sdkOmittedValue, Object? oldName = sdkOmittedValue, Object? uid = sdkOmittedValue}) => UserEventPayloadVariant369(
-    newName: identical(newName, sdkOmittedValue) ? this.newName : newName as String,
-    oldName: identical(oldName, sdkOmittedValue) ? this.oldName : oldName as String,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as SdkOptional<String>,
-  );
+  UserEventPayloadVariant369 _copyWith(
+          {Object? newName = sdkOmittedValue,
+          Object? oldName = sdkOmittedValue,
+          Object? uid = sdkOmittedValue}) =>
+      UserEventPayloadVariant369(
+        newName: identical(newName, sdkOmittedValue)
+            ? this.newName
+            : newName as String,
+        oldName: identical(oldName, sdkOmittedValue)
+            ? this.oldName
+            : oldName as String,
+        uid: identical(uid, sdkOmittedValue)
+            ? this.uid
+            : uid as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant369.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant369(
-    newName: (json['newName'] as String?)!,
-    oldName: (json['oldName'] as String?)!,
-    uid: json['uid'] != null ? SdkPresent((json['uid'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant369.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant369(
+        newName: (json['newName'] as String?)!,
+        oldName: (json['oldName'] as String?)!,
+        uid: json['uid'] != null
+            ? SdkPresent((json['uid'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'newName': newName,
-    'oldName': oldName,
-    ...switch (uid) {
-      SdkPresent<String>(value: final value) => {'uid': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'newName': newName,
+        'oldName': oldName,
+        ...switch (uid) {
+          SdkPresent<String>(value: final value) => {
+              'uid': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant370 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final UserEventPayloadVariant370Enabled enabled;
+
   /// Optional `number` value serialized in the `firstEnabledAt` wire field.
   final SdkOptional<double> firstEnabledAt;
+
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
-  const UserEventPayloadVariant370({required this.enabled, this.firstEnabledAt = const SdkOmitted(), this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), required this.updatedAt});
+  const UserEventPayloadVariant370(
+      {required this.enabled,
+      this.firstEnabledAt = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      this.projectName = const SdkOmitted(),
+      required this.updatedAt});
 
-  UserEventPayloadVariant370 Function({UserEventPayloadVariant370Enabled enabled, SdkOptional<double> firstEnabledAt, SdkOptional<String> projectId, SdkOptional<String> projectName, double updatedAt}) get copyWith => _copyWith;
+  UserEventPayloadVariant370 Function(
+      {UserEventPayloadVariant370Enabled enabled,
+      SdkOptional<double> firstEnabledAt,
+      SdkOptional<String> projectId,
+      SdkOptional<String> projectName,
+      double updatedAt}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant370 _copyWith({Object? enabled = sdkOmittedValue, Object? firstEnabledAt = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UserEventPayloadVariant370(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UserEventPayloadVariant370Enabled,
-    firstEnabledAt: identical(firstEnabledAt, sdkOmittedValue) ? this.firstEnabledAt : firstEnabledAt as SdkOptional<double>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  UserEventPayloadVariant370 _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? firstEnabledAt = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UserEventPayloadVariant370(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as UserEventPayloadVariant370Enabled,
+        firstEnabledAt: identical(firstEnabledAt, sdkOmittedValue)
+            ? this.firstEnabledAt
+            : firstEnabledAt as SdkOptional<double>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory UserEventPayloadVariant370.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant370(
-    enabled: (json['enabled'] != null ? UserEventPayloadVariant370Enabled.fromJson(json['enabled'] as bool) : null)!,
-    firstEnabledAt: json['firstEnabledAt'] != null ? SdkPresent(((json['firstEnabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory UserEventPayloadVariant370.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant370(
+        enabled: (json['enabled'] != null
+            ? UserEventPayloadVariant370Enabled.fromJson(
+                json['enabled'] as bool)
+            : null)!,
+        firstEnabledAt: json['firstEnabledAt'] != null
+            ? SdkPresent(((json['firstEnabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        projectId: json['projectId'] != null
+            ? SdkPresent((json['projectId'] as String?)!)
+            : const SdkOmitted(),
+        projectName: json['projectName'] != null
+            ? SdkPresent((json['projectName'] as String?)!)
+            : const SdkOmitted(),
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    ...switch (firstEnabledAt) {
-      SdkPresent<double>(value: final value) => {'firstEnabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-  };
+        'enabled': enabled.toJson(),
+        ...switch (firstEnabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'firstEnabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant371 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `bio` wire field.
   final String bio;
 
@@ -206,17 +305,19 @@ class UserEventPayloadVariant371 {
 
   UserEventPayloadVariant371 Function({String bio}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant371 _copyWith({Object? bio = sdkOmittedValue}) => UserEventPayloadVariant371(
-    bio: identical(bio, sdkOmittedValue) ? this.bio : bio as String,
-  );
+  UserEventPayloadVariant371 _copyWith({Object? bio = sdkOmittedValue}) =>
+      UserEventPayloadVariant371(
+        bio: identical(bio, sdkOmittedValue) ? this.bio : bio as String,
+      );
 
-  factory UserEventPayloadVariant371.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant371(
-    bio: (json['bio'] as String?)!,
-  );
+  factory UserEventPayloadVariant371.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant371(
+        bio: (json['bio'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'bio': bio,
-  };
+        'bio': bio,
+      };
 }
 
 class UserEventPayloadVariant372ScalingRulesValue {
@@ -225,61 +326,95 @@ class UserEventPayloadVariant372ScalingRulesValue {
   final double max;
   final double min;
 
-  const UserEventPayloadVariant372ScalingRulesValue({required this.max, required this.min});
+  const UserEventPayloadVariant372ScalingRulesValue(
+      {required this.max, required this.min});
 
-  UserEventPayloadVariant372ScalingRulesValue Function({double max, double min}) get copyWith => _copyWith;
+  UserEventPayloadVariant372ScalingRulesValue Function({double max, double min})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant372ScalingRulesValue _copyWith({Object? max = sdkOmittedValue, Object? min = sdkOmittedValue}) => UserEventPayloadVariant372ScalingRulesValue(
-    max: identical(max, sdkOmittedValue) ? this.max : max as double,
-    min: identical(min, sdkOmittedValue) ? this.min : min as double,
-  );
+  UserEventPayloadVariant372ScalingRulesValue _copyWith(
+          {Object? max = sdkOmittedValue, Object? min = sdkOmittedValue}) =>
+      UserEventPayloadVariant372ScalingRulesValue(
+        max: identical(max, sdkOmittedValue) ? this.max : max as double,
+        min: identical(min, sdkOmittedValue) ? this.min : min as double,
+      );
 
-  factory UserEventPayloadVariant372ScalingRulesValue.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant372ScalingRulesValue(
-    max: ((json['max'] as num?)?.toDouble())!,
-    min: ((json['min'] as num?)?.toDouble())!,
-  );
+  factory UserEventPayloadVariant372ScalingRulesValue.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant372ScalingRulesValue(
+        max: ((json['max'] as num?)?.toDouble())!,
+        min: ((json['min'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'max': max,
-    'min': min,
-  };
+        'max': max,
+        'min': min,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant372 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `max` wire field.
   final double max;
+
   /// Required `number` value serialized in the `min` wire field.
   final double min;
+
   /// Required object value serialized in the `scalingRules` wire field.
   final Map<String, UserEventPayloadVariant372ScalingRulesValue> scalingRules;
+
   /// Required `string` value serialized in the `url` wire field.
   final String url;
 
-  const UserEventPayloadVariant372({required this.max, required this.min, required this.scalingRules, required this.url});
+  const UserEventPayloadVariant372(
+      {required this.max,
+      required this.min,
+      required this.scalingRules,
+      required this.url});
 
-  UserEventPayloadVariant372 Function({double max, double min, Map<String, UserEventPayloadVariant372ScalingRulesValue> scalingRules, String url}) get copyWith => _copyWith;
+  UserEventPayloadVariant372 Function(
+      {double max,
+      double min,
+      Map<String, UserEventPayloadVariant372ScalingRulesValue> scalingRules,
+      String url}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant372 _copyWith({Object? max = sdkOmittedValue, Object? min = sdkOmittedValue, Object? scalingRules = sdkOmittedValue, Object? url = sdkOmittedValue}) => UserEventPayloadVariant372(
-    max: identical(max, sdkOmittedValue) ? this.max : max as double,
-    min: identical(min, sdkOmittedValue) ? this.min : min as double,
-    scalingRules: identical(scalingRules, sdkOmittedValue) ? this.scalingRules : scalingRules as Map<String, UserEventPayloadVariant372ScalingRulesValue>,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  UserEventPayloadVariant372 _copyWith(
+          {Object? max = sdkOmittedValue,
+          Object? min = sdkOmittedValue,
+          Object? scalingRules = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      UserEventPayloadVariant372(
+        max: identical(max, sdkOmittedValue) ? this.max : max as double,
+        min: identical(min, sdkOmittedValue) ? this.min : min as double,
+        scalingRules: identical(scalingRules, sdkOmittedValue)
+            ? this.scalingRules
+            : scalingRules
+                as Map<String, UserEventPayloadVariant372ScalingRulesValue>,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory UserEventPayloadVariant372.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant372(
-    max: ((json['max'] as num?)?.toDouble())!,
-    min: ((json['min'] as num?)?.toDouble())!,
-    scalingRules: (json['scalingRules'] == null ? null : Map<String, dynamic>.from(json['scalingRules'] as Map).map((key, value) => MapEntry(key, UserEventPayloadVariant372ScalingRulesValue.fromJson(value as Map<String, dynamic>))))!,
-    url: (json['url'] as String?)!,
-  );
+  factory UserEventPayloadVariant372.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant372(
+        max: ((json['max'] as num?)?.toDouble())!,
+        min: ((json['min'] as num?)?.toDouble())!,
+        scalingRules: (json['scalingRules'] == null
+            ? null
+            : Map<String, dynamic>.from(json['scalingRules'] as Map).map(
+                (key, value) => MapEntry(
+                    key,
+                    UserEventPayloadVariant372ScalingRulesValue.fromJson(
+                        value as Map<String, dynamic>))))!,
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'max': max,
-    'min': min,
-    'scalingRules': scalingRules.map((key, value) => MapEntry(key, value.toJson())),
-    'url': url,
-  };
+        'max': max,
+        'min': min,
+        'scalingRules':
+            scalingRules.map((key, value) => MapEntry(key, value.toJson())),
+        'url': url,
+      };
 }

@@ -8,29 +8,39 @@ part of 'domains_registrar.dart';
 class PropertyKeyVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `_tag` wire field.
   final PropertyKeyVariant2Tag tag;
+
   /// Required `string` value serialized in the `key` wire field.
   final String key;
 
   const PropertyKeyVariant2({required this.tag, required this.key});
 
-  PropertyKeyVariant2 Function({PropertyKeyVariant2Tag tag, String key}) get copyWith => _copyWith;
+  PropertyKeyVariant2 Function({PropertyKeyVariant2Tag tag, String key})
+      get copyWith => _copyWith;
 
-  PropertyKeyVariant2 _copyWith({Object? tag = sdkOmittedValue, Object? key = sdkOmittedValue}) => PropertyKeyVariant2(
-    tag: identical(tag, sdkOmittedValue) ? this.tag : tag as PropertyKeyVariant2Tag,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-  );
+  PropertyKeyVariant2 _copyWith(
+          {Object? tag = sdkOmittedValue, Object? key = sdkOmittedValue}) =>
+      PropertyKeyVariant2(
+        tag: identical(tag, sdkOmittedValue)
+            ? this.tag
+            : tag as PropertyKeyVariant2Tag,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+      );
 
-  factory PropertyKeyVariant2.fromJson(Map<String, dynamic> json) => PropertyKeyVariant2(
-    tag: (json['_tag'] != null ? PropertyKeyVariant2Tag.fromJson(json['_tag'] as String) : null)!,
-    key: (json['key'] as String?)!,
-  );
+  factory PropertyKeyVariant2.fromJson(Map<String, dynamic> json) =>
+      PropertyKeyVariant2(
+        tag: (json['_tag'] != null
+            ? PropertyKeyVariant2Tag.fromJson(json['_tag'] as String)
+            : null)!,
+        key: (json['key'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    '_tag': tag.toJson(),
-    'key': key,
-  };
+        '_tag': tag.toJson(),
+        'key': key,
+      };
 }
 
 sealed class PropertyKey {
@@ -38,9 +48,16 @@ sealed class PropertyKey {
   static const String constructionSurface = 'named';
   const PropertyKey();
   factory PropertyKey.fromJson(Object? json) {
-    if (json is String) { return PropertyKeyString(json); }
-    if (json is num) { return PropertyKeyDouble(json.toDouble()); }
-    try { return PropertyKeyPropertyKeyVariant2(PropertyKeyVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    if (json is String) {
+      return PropertyKeyString(json);
+    }
+    if (json is num) {
+      return PropertyKeyDouble(json.toDouble());
+    }
+    try {
+      return PropertyKeyPropertyKeyVariant2(
+          PropertyKeyVariant2.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for PropertyKey");
   }
   Object? toJson();
@@ -49,17 +66,20 @@ sealed class PropertyKey {
 final class PropertyKeyString extends PropertyKey {
   final String value;
   const PropertyKeyString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 final class PropertyKeyDouble extends PropertyKey {
   final double value;
   const PropertyKeyDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 final class PropertyKeyPropertyKeyVariant2 extends PropertyKey {
   final PropertyKeyVariant2 value;
   const PropertyKeyPropertyKeyVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -8,252 +8,420 @@ part of 'user.dart';
 class UserEventPayloadVariant115 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `hookName` wire field.
   final String hookName;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
 
-  const UserEventPayloadVariant115({required this.hookName, required this.projectId, required this.projectName, required this.ref});
+  const UserEventPayloadVariant115(
+      {required this.hookName,
+      required this.projectId,
+      required this.projectName,
+      required this.ref});
 
-  UserEventPayloadVariant115 Function({String hookName, String projectId, String projectName, String ref}) get copyWith => _copyWith;
+  UserEventPayloadVariant115 Function(
+      {String hookName,
+      String projectId,
+      String projectName,
+      String ref}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant115 _copyWith({Object? hookName = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? ref = sdkOmittedValue}) => UserEventPayloadVariant115(
-    hookName: identical(hookName, sdkOmittedValue) ? this.hookName : hookName as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-  );
+  UserEventPayloadVariant115 _copyWith(
+          {Object? hookName = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? ref = sdkOmittedValue}) =>
+      UserEventPayloadVariant115(
+        hookName: identical(hookName, sdkOmittedValue)
+            ? this.hookName
+            : hookName as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+      );
 
-  factory UserEventPayloadVariant115.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant115(
-    hookName: (json['hookName'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-    ref: (json['ref'] as String?)!,
-  );
+  factory UserEventPayloadVariant115.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant115(
+        hookName: (json['hookName'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+        ref: (json['ref'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'hookName': hookName,
-    'projectId': projectId,
-    'projectName': projectName,
-    'ref': ref,
-  };
+        'hookName': hookName,
+        'projectId': projectId,
+        'projectName': projectName,
+        'ref': ref,
+      };
 }
 
 /// Required object value serialized in the `deployHook` wire field.
 class UserEventPayloadVariant116JobDeployHook {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
 
-  const UserEventPayloadVariant116JobDeployHook({required this.createdAt, required this.id, required this.name, required this.ref});
+  const UserEventPayloadVariant116JobDeployHook(
+      {required this.createdAt,
+      required this.id,
+      required this.name,
+      required this.ref});
 
-  UserEventPayloadVariant116JobDeployHook Function({double createdAt, String id, String name, String ref}) get copyWith => _copyWith;
+  UserEventPayloadVariant116JobDeployHook Function(
+      {double createdAt,
+      String id,
+      String name,
+      String ref}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant116JobDeployHook _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue}) => UserEventPayloadVariant116JobDeployHook(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-  );
+  UserEventPayloadVariant116JobDeployHook _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ref = sdkOmittedValue}) =>
+      UserEventPayloadVariant116JobDeployHook(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+      );
 
-  factory UserEventPayloadVariant116JobDeployHook.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant116JobDeployHook(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    ref: (json['ref'] as String?)!,
-  );
+  factory UserEventPayloadVariant116JobDeployHook.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant116JobDeployHook(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        ref: (json['ref'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'id': id,
-    'name': name,
-    'ref': ref,
-  };
+        'createdAt': createdAt,
+        'id': id,
+        'name': name,
+        'ref': ref,
+      };
 }
 
 /// Required object value serialized in the `job` wire field.
 class UserEventPayloadVariant116Job {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `deployHook` wire field.
   final UserEventPayloadVariant116JobDeployHook deployHook;
+
   /// Required `string` value serialized in the `state` wire field.
   final String state;
 
-  const UserEventPayloadVariant116Job({required this.deployHook, required this.state});
+  const UserEventPayloadVariant116Job(
+      {required this.deployHook, required this.state});
 
-  UserEventPayloadVariant116Job Function({UserEventPayloadVariant116JobDeployHook deployHook, String state}) get copyWith => _copyWith;
+  UserEventPayloadVariant116Job Function(
+      {UserEventPayloadVariant116JobDeployHook deployHook,
+      String state}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant116Job _copyWith({Object? deployHook = sdkOmittedValue, Object? state = sdkOmittedValue}) => UserEventPayloadVariant116Job(
-    deployHook: identical(deployHook, sdkOmittedValue) ? this.deployHook : deployHook as UserEventPayloadVariant116JobDeployHook,
-    state: identical(state, sdkOmittedValue) ? this.state : state as String,
-  );
+  UserEventPayloadVariant116Job _copyWith(
+          {Object? deployHook = sdkOmittedValue,
+          Object? state = sdkOmittedValue}) =>
+      UserEventPayloadVariant116Job(
+        deployHook: identical(deployHook, sdkOmittedValue)
+            ? this.deployHook
+            : deployHook as UserEventPayloadVariant116JobDeployHook,
+        state: identical(state, sdkOmittedValue) ? this.state : state as String,
+      );
 
-  factory UserEventPayloadVariant116Job.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant116Job(
-    deployHook: (json['deployHook'] != null ? UserEventPayloadVariant116JobDeployHook.fromJson(json['deployHook'] as Map<String, dynamic>) : null)!,
-    state: (json['state'] as String?)!,
-  );
+  factory UserEventPayloadVariant116Job.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant116Job(
+        deployHook: (json['deployHook'] != null
+            ? UserEventPayloadVariant116JobDeployHook.fromJson(
+                json['deployHook'] as Map<String, dynamic>)
+            : null)!,
+        state: (json['state'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deployHook': deployHook.toJson(),
-    'state': state,
-  };
+        'deployHook': deployHook.toJson(),
+        'state': state,
+      };
 }
 
 /// Required object value serialized in the `project` wire field.
 class UserEventPayloadVariant116Project {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant116Project({required this.name});
 
-  UserEventPayloadVariant116Project Function({String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant116Project Function({String name}) get copyWith =>
+      _copyWith;
 
-  UserEventPayloadVariant116Project _copyWith({Object? name = sdkOmittedValue}) => UserEventPayloadVariant116Project(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant116Project _copyWith(
+          {Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant116Project(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant116Project.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant116Project(
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant116Project.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant116Project(
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-  };
+        'name': name,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant116 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `job` wire field.
   final UserEventPayloadVariant116Job job;
+
   /// Required object value serialized in the `project` wire field.
   final UserEventPayloadVariant116Project project;
 
   const UserEventPayloadVariant116({required this.job, required this.project});
 
-  UserEventPayloadVariant116 Function({UserEventPayloadVariant116Job job, UserEventPayloadVariant116Project project}) get copyWith => _copyWith;
+  UserEventPayloadVariant116 Function(
+      {UserEventPayloadVariant116Job job,
+      UserEventPayloadVariant116Project project}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant116 _copyWith({Object? job = sdkOmittedValue, Object? project = sdkOmittedValue}) => UserEventPayloadVariant116(
-    job: identical(job, sdkOmittedValue) ? this.job : job as UserEventPayloadVariant116Job,
-    project: identical(project, sdkOmittedValue) ? this.project : project as UserEventPayloadVariant116Project,
-  );
+  UserEventPayloadVariant116 _copyWith(
+          {Object? job = sdkOmittedValue, Object? project = sdkOmittedValue}) =>
+      UserEventPayloadVariant116(
+        job: identical(job, sdkOmittedValue)
+            ? this.job
+            : job as UserEventPayloadVariant116Job,
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as UserEventPayloadVariant116Project,
+      );
 
-  factory UserEventPayloadVariant116.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant116(
-    job: (json['job'] != null ? UserEventPayloadVariant116Job.fromJson(json['job'] as Map<String, dynamic>) : null)!,
-    project: (json['project'] != null ? UserEventPayloadVariant116Project.fromJson(json['project'] as Map<String, dynamic>) : null)!,
-  );
+  factory UserEventPayloadVariant116.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant116(
+        job: (json['job'] != null
+            ? UserEventPayloadVariant116Job.fromJson(
+                json['job'] as Map<String, dynamic>)
+            : null)!,
+        project: (json['project'] != null
+            ? UserEventPayloadVariant116Project.fromJson(
+                json['project'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'job': job.toJson(),
-    'project': project.toJson(),
-  };
+        'job': job.toJson(),
+        'project': project.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant117 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `checkId` wire field.
   final String checkId;
+
   /// Required `string` value serialized in the `checkName` wire field.
   final String checkName;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant117({required this.checkId, required this.checkName, required this.projectId, required this.projectName});
+  const UserEventPayloadVariant117(
+      {required this.checkId,
+      required this.checkName,
+      required this.projectId,
+      required this.projectName});
 
-  UserEventPayloadVariant117 Function({String checkId, String checkName, String projectId, String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant117 Function(
+      {String checkId,
+      String checkName,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant117 _copyWith({Object? checkId = sdkOmittedValue, Object? checkName = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant117(
-    checkId: identical(checkId, sdkOmittedValue) ? this.checkId : checkId as String,
-    checkName: identical(checkName, sdkOmittedValue) ? this.checkName : checkName as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  UserEventPayloadVariant117 _copyWith(
+          {Object? checkId = sdkOmittedValue,
+          Object? checkName = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant117(
+        checkId: identical(checkId, sdkOmittedValue)
+            ? this.checkId
+            : checkId as String,
+        checkName: identical(checkName, sdkOmittedValue)
+            ? this.checkName
+            : checkName as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory UserEventPayloadVariant117.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant117(
-    checkId: (json['checkId'] as String?)!,
-    checkName: (json['checkName'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  );
+  factory UserEventPayloadVariant117.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant117(
+        checkId: (json['checkId'] as String?)!,
+        checkName: (json['checkName'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'checkId': checkId,
-    'checkName': checkName,
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'checkId': checkId,
+        'checkName': checkName,
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }
 
 /// Optional object value serialized in the `deployment` wire field.
 class UserEventPayloadVariant119Deployment {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A narrowed subset of the deployment's `readyStateReasonInternal` — only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log.
-  final SdkOptional<UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal> allowListedReadyStateReasonInternal;
+  final SdkOptional<
+          UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal>
+      allowListedReadyStateReasonInternal;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required object value serialized in the `meta` wire field.
   final Map<String, String> meta;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Optional `string` value serialized in the `readyState` wire field.
   final SdkOptional<String> readyState;
+
   /// Required `string` value serialized in the `url` wire field.
   final String url;
 
-  const UserEventPayloadVariant119Deployment({this.allowListedReadyStateReasonInternal = const SdkOmitted(), required this.id, required this.meta, required this.name, this.readyState = const SdkOmitted(), required this.url});
+  const UserEventPayloadVariant119Deployment(
+      {this.allowListedReadyStateReasonInternal = const SdkOmitted(),
+      required this.id,
+      required this.meta,
+      required this.name,
+      this.readyState = const SdkOmitted(),
+      required this.url});
 
-  UserEventPayloadVariant119Deployment Function({SdkOptional<UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal> allowListedReadyStateReasonInternal, String id, Map<String, String> meta, String name, SdkOptional<String> readyState, String url}) get copyWith => _copyWith;
+  UserEventPayloadVariant119Deployment Function(
+      {SdkOptional<
+              UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal>
+          allowListedReadyStateReasonInternal,
+      String id,
+      Map<String, String> meta,
+      String name,
+      SdkOptional<String> readyState,
+      String url}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant119Deployment _copyWith({Object? allowListedReadyStateReasonInternal = sdkOmittedValue, Object? id = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? name = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? url = sdkOmittedValue}) => UserEventPayloadVariant119Deployment(
-    allowListedReadyStateReasonInternal: identical(allowListedReadyStateReasonInternal, sdkOmittedValue) ? this.allowListedReadyStateReasonInternal : allowListedReadyStateReasonInternal as SdkOptional<UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as Map<String, String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as SdkOptional<String>,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  UserEventPayloadVariant119Deployment _copyWith(
+          {Object? allowListedReadyStateReasonInternal = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? meta = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? readyState = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      UserEventPayloadVariant119Deployment(
+        allowListedReadyStateReasonInternal: identical(
+                allowListedReadyStateReasonInternal, sdkOmittedValue)
+            ? this.allowListedReadyStateReasonInternal
+            : allowListedReadyStateReasonInternal as SdkOptional<
+                UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        meta: identical(meta, sdkOmittedValue)
+            ? this.meta
+            : meta as Map<String, String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        readyState: identical(readyState, sdkOmittedValue)
+            ? this.readyState
+            : readyState as SdkOptional<String>,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory UserEventPayloadVariant119Deployment.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant119Deployment(
-    allowListedReadyStateReasonInternal: json['allowListedReadyStateReasonInternal'] != null ? SdkPresent((json['allowListedReadyStateReasonInternal'] != null ? UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal.fromJson(json['allowListedReadyStateReasonInternal'] as String) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    meta: (json['meta'] == null ? null : Map<String, dynamic>.from(json['meta'] as Map).map((key, value) => MapEntry(key, value as String)))!,
-    name: (json['name'] as String?)!,
-    readyState: json['readyState'] != null ? SdkPresent((json['readyState'] as String?)!) : const SdkOmitted(),
-    url: (json['url'] as String?)!,
-  );
+  factory UserEventPayloadVariant119Deployment.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant119Deployment(
+        allowListedReadyStateReasonInternal: json[
+                    'allowListedReadyStateReasonInternal'] !=
+                null
+            ? SdkPresent((json['allowListedReadyStateReasonInternal'] != null
+                ? UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal
+                    .fromJson(
+                        json['allowListedReadyStateReasonInternal'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        meta: (json['meta'] == null
+            ? null
+            : Map<String, dynamic>.from(json['meta'] as Map)
+                .map((key, value) => MapEntry(key, value as String)))!,
+        name: (json['name'] as String?)!,
+        readyState: json['readyState'] != null
+            ? SdkPresent((json['readyState'] as String?)!)
+            : const SdkOmitted(),
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (allowListedReadyStateReasonInternal) {
-      SdkPresent<UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal>(value: final value) => {'allowListedReadyStateReasonInternal': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'meta': meta,
-    'name': name,
-    ...switch (readyState) {
-      SdkPresent<String>(value: final value) => {'readyState': value,},
-      _ => const <String, dynamic>{},
-    },
-    'url': url,
-  };
+        ...switch (allowListedReadyStateReasonInternal) {
+          SdkPresent<
+                UserEventPayloadVariant119DeploymentAllowListedReadyStateReasonInternal>(
+            value: final value
+          ) =>
+            {
+              'allowListedReadyStateReasonInternal': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'meta': meta,
+        'name': name,
+        ...switch (readyState) {
+          SdkPresent<String>(value: final value) => {
+              'readyState': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'url': url,
+      };
 }

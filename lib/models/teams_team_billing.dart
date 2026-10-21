@@ -8,6 +8,7 @@ part of 'teams.dart';
 class TeamBilling {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `plan` wire field.
   final TeamBillingPlan plan;
 
@@ -16,260 +17,421 @@ class TeamBilling {
   TeamBilling Function({TeamBillingPlan plan}) get copyWith => _copyWith;
 
   TeamBilling _copyWith({Object? plan = sdkOmittedValue}) => TeamBilling(
-    plan: identical(plan, sdkOmittedValue) ? this.plan : plan as TeamBillingPlan,
-  );
+        plan: identical(plan, sdkOmittedValue)
+            ? this.plan
+            : plan as TeamBillingPlan,
+      );
 
   factory TeamBilling.fromJson(Map<String, dynamic> json) => TeamBilling(
-    plan: (json['plan'] != null ? TeamBillingPlan.fromJson(json['plan'] as String) : null)!,
-  );
+        plan: (json['plan'] != null
+            ? TeamBillingPlan.fromJson(json['plan'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'plan': plan.toJson(),
-  };
+        'plan': plan.toJson(),
+      };
 }
 
 /// Optional object value serialized in the `connect` wire field.
 class TeamConnect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional enumerated value serialized in the `enabled` wire field.
   final SdkOptional<TeamConnectEnabled> enabled;
 
   const TeamConnect({this.enabled = const SdkOmitted()});
 
-  TeamConnect Function({SdkOptional<TeamConnectEnabled> enabled}) get copyWith => _copyWith;
+  TeamConnect Function({SdkOptional<TeamConnectEnabled> enabled})
+      get copyWith => _copyWith;
 
   TeamConnect _copyWith({Object? enabled = sdkOmittedValue}) => TeamConnect(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<TeamConnectEnabled>,
-  );
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<TeamConnectEnabled>,
+      );
 
   factory TeamConnect.fromJson(Map<String, dynamic> json) => TeamConnect(
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? TeamConnectEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-  );
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] != null
+                ? TeamConnectEnabled.fromJson(json['enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enabled) {
-      SdkPresent<TeamConnectEnabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enabled) {
+          SdkPresent<TeamConnectEnabled>(value: final value) => {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `passwordProtection` wire field.
 class TeamDefaultDeploymentProtectionPasswordProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `deploymentType` wire field.
   final String deploymentType;
 
-  const TeamDefaultDeploymentProtectionPasswordProtection({required this.deploymentType});
+  const TeamDefaultDeploymentProtectionPasswordProtection(
+      {required this.deploymentType});
 
-  TeamDefaultDeploymentProtectionPasswordProtection Function({String deploymentType}) get copyWith => _copyWith;
+  TeamDefaultDeploymentProtectionPasswordProtection Function(
+      {String deploymentType}) get copyWith => _copyWith;
 
-  TeamDefaultDeploymentProtectionPasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => TeamDefaultDeploymentProtectionPasswordProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as String,
-  );
+  TeamDefaultDeploymentProtectionPasswordProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      TeamDefaultDeploymentProtectionPasswordProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType as String,
+      );
 
-  factory TeamDefaultDeploymentProtectionPasswordProtection.fromJson(Map<String, dynamic> json) => TeamDefaultDeploymentProtectionPasswordProtection(
-    deploymentType: (json['deploymentType'] as String?)!,
-  );
+  factory TeamDefaultDeploymentProtectionPasswordProtection.fromJson(
+          Map<String, dynamic> json) =>
+      TeamDefaultDeploymentProtectionPasswordProtection(
+        deploymentType: (json['deploymentType'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType,
-  };
+        'deploymentType': deploymentType,
+      };
 }
 
 /// Optional object value serialized in the `ssoProtection` wire field.
 class TeamDefaultDeploymentProtectionSsoProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `deploymentType` wire field.
   final String deploymentType;
 
-  const TeamDefaultDeploymentProtectionSsoProtection({required this.deploymentType});
+  const TeamDefaultDeploymentProtectionSsoProtection(
+      {required this.deploymentType});
 
-  TeamDefaultDeploymentProtectionSsoProtection Function({String deploymentType}) get copyWith => _copyWith;
+  TeamDefaultDeploymentProtectionSsoProtection Function({String deploymentType})
+      get copyWith => _copyWith;
 
-  TeamDefaultDeploymentProtectionSsoProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => TeamDefaultDeploymentProtectionSsoProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as String,
-  );
+  TeamDefaultDeploymentProtectionSsoProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      TeamDefaultDeploymentProtectionSsoProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType as String,
+      );
 
-  factory TeamDefaultDeploymentProtectionSsoProtection.fromJson(Map<String, dynamic> json) => TeamDefaultDeploymentProtectionSsoProtection(
-    deploymentType: (json['deploymentType'] as String?)!,
-  );
+  factory TeamDefaultDeploymentProtectionSsoProtection.fromJson(
+          Map<String, dynamic> json) =>
+      TeamDefaultDeploymentProtectionSsoProtection(
+        deploymentType: (json['deploymentType'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType,
-  };
+        'deploymentType': deploymentType,
+      };
 }
 
 /// Default deployment protection for this team null indicates protection is disabled
 class TeamDefaultDeploymentProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `passwordProtection` wire field.
-  final SdkOptional<TeamDefaultDeploymentProtectionPasswordProtection?> passwordProtection;
+  final SdkOptional<TeamDefaultDeploymentProtectionPasswordProtection?>
+      passwordProtection;
+
   /// Optional object value serialized in the `ssoProtection` wire field.
-  final SdkOptional<TeamDefaultDeploymentProtectionSsoProtection?> ssoProtection;
+  final SdkOptional<TeamDefaultDeploymentProtectionSsoProtection?>
+      ssoProtection;
 
-  const TeamDefaultDeploymentProtection({this.passwordProtection = const SdkOmitted(), this.ssoProtection = const SdkOmitted()});
+  const TeamDefaultDeploymentProtection(
+      {this.passwordProtection = const SdkOmitted(),
+      this.ssoProtection = const SdkOmitted()});
 
-  TeamDefaultDeploymentProtection Function({SdkOptional<TeamDefaultDeploymentProtectionPasswordProtection?> passwordProtection, SdkOptional<TeamDefaultDeploymentProtectionSsoProtection?> ssoProtection}) get copyWith => _copyWith;
+  TeamDefaultDeploymentProtection Function(
+      {SdkOptional<TeamDefaultDeploymentProtectionPasswordProtection?>
+          passwordProtection,
+      SdkOptional<TeamDefaultDeploymentProtectionSsoProtection?>
+          ssoProtection}) get copyWith => _copyWith;
 
-  TeamDefaultDeploymentProtection _copyWith({Object? passwordProtection = sdkOmittedValue, Object? ssoProtection = sdkOmittedValue}) => TeamDefaultDeploymentProtection(
-    passwordProtection: identical(passwordProtection, sdkOmittedValue) ? this.passwordProtection : passwordProtection as SdkOptional<TeamDefaultDeploymentProtectionPasswordProtection?>,
-    ssoProtection: identical(ssoProtection, sdkOmittedValue) ? this.ssoProtection : ssoProtection as SdkOptional<TeamDefaultDeploymentProtectionSsoProtection?>,
-  );
+  TeamDefaultDeploymentProtection _copyWith(
+          {Object? passwordProtection = sdkOmittedValue,
+          Object? ssoProtection = sdkOmittedValue}) =>
+      TeamDefaultDeploymentProtection(
+        passwordProtection: identical(passwordProtection, sdkOmittedValue)
+            ? this.passwordProtection
+            : passwordProtection as SdkOptional<
+                TeamDefaultDeploymentProtectionPasswordProtection?>,
+        ssoProtection: identical(ssoProtection, sdkOmittedValue)
+            ? this.ssoProtection
+            : ssoProtection
+                as SdkOptional<TeamDefaultDeploymentProtectionSsoProtection?>,
+      );
 
-  factory TeamDefaultDeploymentProtection.fromJson(Map<String, dynamic> json) => TeamDefaultDeploymentProtection(
-    passwordProtection: json.containsKey('passwordProtection') ? SdkPresent(json['passwordProtection'] != null ? TeamDefaultDeploymentProtectionPasswordProtection.fromJson(json['passwordProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    ssoProtection: json.containsKey('ssoProtection') ? SdkPresent(json['ssoProtection'] != null ? TeamDefaultDeploymentProtectionSsoProtection.fromJson(json['ssoProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-  );
+  factory TeamDefaultDeploymentProtection.fromJson(Map<String, dynamic> json) =>
+      TeamDefaultDeploymentProtection(
+        passwordProtection: json.containsKey('passwordProtection')
+            ? SdkPresent(json['passwordProtection'] != null
+                ? TeamDefaultDeploymentProtectionPasswordProtection.fromJson(
+                    json['passwordProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        ssoProtection: json.containsKey('ssoProtection')
+            ? SdkPresent(json['ssoProtection'] != null
+                ? TeamDefaultDeploymentProtectionSsoProtection.fromJson(
+                    json['ssoProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (passwordProtection) {
-      SdkPresent<TeamDefaultDeploymentProtectionPasswordProtection?>(value: final value) => {'passwordProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoProtection) {
-      SdkPresent<TeamDefaultDeploymentProtectionSsoProtection?>(value: final value) => {'ssoProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (passwordProtection) {
+          SdkPresent<TeamDefaultDeploymentProtectionPasswordProtection?>(
+            value: final value
+          ) =>
+            {
+              'passwordProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoProtection) {
+          SdkPresent<TeamDefaultDeploymentProtectionSsoProtection?>(
+            value: final value
+          ) =>
+            {
+              'ssoProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Default deployment expiration settings for this team
 class TeamDefaultExpirationSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Minimum number of production deployments to keep for this project, even if they are over the production expiration limit.
   final SdkOptional<double> deploymentsToKeep;
+
   /// Number of days to keep non-production deployments (mostly preview deployments) before soft deletion.
   final SdkOptional<double> expirationDays;
+
   /// Number of days to keep canceled deployments before soft deletion.
   final SdkOptional<double> expirationDaysCanceled;
+
   /// Number of days to keep errored deployments before soft deletion.
   final SdkOptional<double> expirationDaysErrored;
+
   /// Number of days to keep production deployments before soft deletion.
   final SdkOptional<double> expirationDaysProduction;
 
-  const TeamDefaultExpirationSettings({this.deploymentsToKeep = const SdkOmitted(), this.expirationDays = const SdkOmitted(), this.expirationDaysCanceled = const SdkOmitted(), this.expirationDaysErrored = const SdkOmitted(), this.expirationDaysProduction = const SdkOmitted()});
+  const TeamDefaultExpirationSettings(
+      {this.deploymentsToKeep = const SdkOmitted(),
+      this.expirationDays = const SdkOmitted(),
+      this.expirationDaysCanceled = const SdkOmitted(),
+      this.expirationDaysErrored = const SdkOmitted(),
+      this.expirationDaysProduction = const SdkOmitted()});
 
-  TeamDefaultExpirationSettings Function({SdkOptional<double> deploymentsToKeep, SdkOptional<double> expirationDays, SdkOptional<double> expirationDaysCanceled, SdkOptional<double> expirationDaysErrored, SdkOptional<double> expirationDaysProduction}) get copyWith => _copyWith;
+  TeamDefaultExpirationSettings Function(
+      {SdkOptional<double> deploymentsToKeep,
+      SdkOptional<double> expirationDays,
+      SdkOptional<double> expirationDaysCanceled,
+      SdkOptional<double> expirationDaysErrored,
+      SdkOptional<double> expirationDaysProduction}) get copyWith => _copyWith;
 
-  TeamDefaultExpirationSettings _copyWith({Object? deploymentsToKeep = sdkOmittedValue, Object? expirationDays = sdkOmittedValue, Object? expirationDaysCanceled = sdkOmittedValue, Object? expirationDaysErrored = sdkOmittedValue, Object? expirationDaysProduction = sdkOmittedValue}) => TeamDefaultExpirationSettings(
-    deploymentsToKeep: identical(deploymentsToKeep, sdkOmittedValue) ? this.deploymentsToKeep : deploymentsToKeep as SdkOptional<double>,
-    expirationDays: identical(expirationDays, sdkOmittedValue) ? this.expirationDays : expirationDays as SdkOptional<double>,
-    expirationDaysCanceled: identical(expirationDaysCanceled, sdkOmittedValue) ? this.expirationDaysCanceled : expirationDaysCanceled as SdkOptional<double>,
-    expirationDaysErrored: identical(expirationDaysErrored, sdkOmittedValue) ? this.expirationDaysErrored : expirationDaysErrored as SdkOptional<double>,
-    expirationDaysProduction: identical(expirationDaysProduction, sdkOmittedValue) ? this.expirationDaysProduction : expirationDaysProduction as SdkOptional<double>,
-  );
+  TeamDefaultExpirationSettings _copyWith(
+          {Object? deploymentsToKeep = sdkOmittedValue,
+          Object? expirationDays = sdkOmittedValue,
+          Object? expirationDaysCanceled = sdkOmittedValue,
+          Object? expirationDaysErrored = sdkOmittedValue,
+          Object? expirationDaysProduction = sdkOmittedValue}) =>
+      TeamDefaultExpirationSettings(
+        deploymentsToKeep: identical(deploymentsToKeep, sdkOmittedValue)
+            ? this.deploymentsToKeep
+            : deploymentsToKeep as SdkOptional<double>,
+        expirationDays: identical(expirationDays, sdkOmittedValue)
+            ? this.expirationDays
+            : expirationDays as SdkOptional<double>,
+        expirationDaysCanceled:
+            identical(expirationDaysCanceled, sdkOmittedValue)
+                ? this.expirationDaysCanceled
+                : expirationDaysCanceled as SdkOptional<double>,
+        expirationDaysErrored: identical(expirationDaysErrored, sdkOmittedValue)
+            ? this.expirationDaysErrored
+            : expirationDaysErrored as SdkOptional<double>,
+        expirationDaysProduction:
+            identical(expirationDaysProduction, sdkOmittedValue)
+                ? this.expirationDaysProduction
+                : expirationDaysProduction as SdkOptional<double>,
+      );
 
-  factory TeamDefaultExpirationSettings.fromJson(Map<String, dynamic> json) => TeamDefaultExpirationSettings(
-    deploymentsToKeep: json['deploymentsToKeep'] != null ? SdkPresent(((json['deploymentsToKeep'] as num?)?.toDouble())!) : const SdkOmitted(),
-    expirationDays: json['expirationDays'] != null ? SdkPresent(((json['expirationDays'] as num?)?.toDouble())!) : const SdkOmitted(),
-    expirationDaysCanceled: json['expirationDaysCanceled'] != null ? SdkPresent(((json['expirationDaysCanceled'] as num?)?.toDouble())!) : const SdkOmitted(),
-    expirationDaysErrored: json['expirationDaysErrored'] != null ? SdkPresent(((json['expirationDaysErrored'] as num?)?.toDouble())!) : const SdkOmitted(),
-    expirationDaysProduction: json['expirationDaysProduction'] != null ? SdkPresent(((json['expirationDaysProduction'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory TeamDefaultExpirationSettings.fromJson(Map<String, dynamic> json) =>
+      TeamDefaultExpirationSettings(
+        deploymentsToKeep: json['deploymentsToKeep'] != null
+            ? SdkPresent(((json['deploymentsToKeep'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        expirationDays: json['expirationDays'] != null
+            ? SdkPresent(((json['expirationDays'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        expirationDaysCanceled: json['expirationDaysCanceled'] != null
+            ? SdkPresent(
+                ((json['expirationDaysCanceled'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        expirationDaysErrored: json['expirationDaysErrored'] != null
+            ? SdkPresent(((json['expirationDaysErrored'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        expirationDaysProduction: json['expirationDaysProduction'] != null
+            ? SdkPresent(
+                ((json['expirationDaysProduction'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (deploymentsToKeep) {
-      SdkPresent<double>(value: final value) => {'deploymentsToKeep': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expirationDays) {
-      SdkPresent<double>(value: final value) => {'expirationDays': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expirationDaysCanceled) {
-      SdkPresent<double>(value: final value) => {'expirationDaysCanceled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expirationDaysErrored) {
-      SdkPresent<double>(value: final value) => {'expirationDaysErrored': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expirationDaysProduction) {
-      SdkPresent<double>(value: final value) => {'expirationDaysProduction': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (deploymentsToKeep) {
+          SdkPresent<double>(value: final value) => {
+              'deploymentsToKeep': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expirationDays) {
+          SdkPresent<double>(value: final value) => {
+              'expirationDays': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expirationDaysCanceled) {
+          SdkPresent<double>(value: final value) => {
+              'expirationDaysCanceled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expirationDaysErrored) {
+          SdkPresent<double>(value: final value) => {
+              'expirationDaysErrored': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expirationDaysProduction) {
+          SdkPresent<double>(value: final value) => {
+              'expirationDaysProduction': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Default Passport configuration for new projects in this team.
 class TeamDefaultPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Default Passport configuration for new projects in this team.
   final String connectorId;
+
   /// Default Passport configuration for new projects in this team.
   final TeamDefaultPassportDeploymentType deploymentType;
 
-  const TeamDefaultPassport({required this.connectorId, required this.deploymentType});
+  const TeamDefaultPassport(
+      {required this.connectorId, required this.deploymentType});
 
-  TeamDefaultPassport Function({String connectorId, TeamDefaultPassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  TeamDefaultPassport Function(
+          {String connectorId,
+          TeamDefaultPassportDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  TeamDefaultPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => TeamDefaultPassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as TeamDefaultPassportDeploymentType,
-  );
+  TeamDefaultPassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      TeamDefaultPassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType as TeamDefaultPassportDeploymentType,
+      );
 
-  factory TeamDefaultPassport.fromJson(Map<String, dynamic> json) => TeamDefaultPassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? TeamDefaultPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory TeamDefaultPassport.fromJson(Map<String, dynamic> json) =>
+      TeamDefaultPassport(
+        connectorId: (json['connectorId'] as String?)!,
+        deploymentType: (json['deploymentType'] != null
+            ? TeamDefaultPassportDeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Default job configuration applied to new projects created in this team.
 class TeamDefaultProjectJobsFlagDefinitionsPresent {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Default job configuration applied to new projects created in this team.
   final List<String> targets;
 
   const TeamDefaultProjectJobsFlagDefinitionsPresent({required this.targets});
 
-  TeamDefaultProjectJobsFlagDefinitionsPresent Function({List<String> targets}) get copyWith => _copyWith;
+  TeamDefaultProjectJobsFlagDefinitionsPresent Function({List<String> targets})
+      get copyWith => _copyWith;
 
-  TeamDefaultProjectJobsFlagDefinitionsPresent _copyWith({Object? targets = sdkOmittedValue}) => TeamDefaultProjectJobsFlagDefinitionsPresent(
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
-  );
+  TeamDefaultProjectJobsFlagDefinitionsPresent _copyWith(
+          {Object? targets = sdkOmittedValue}) =>
+      TeamDefaultProjectJobsFlagDefinitionsPresent(
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as List<String>,
+      );
 
-  factory TeamDefaultProjectJobsFlagDefinitionsPresent.fromJson(Map<String, dynamic> json) => TeamDefaultProjectJobsFlagDefinitionsPresent(
-    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory TeamDefaultProjectJobsFlagDefinitionsPresent.fromJson(
+          Map<String, dynamic> json) =>
+      TeamDefaultProjectJobsFlagDefinitionsPresent(
+        targets:
+            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'targets': targets,
-  };
+        'targets': targets,
+      };
 }
 
 /// Default job configuration applied to new projects created in this team.
 class TeamDefaultProjectJobsLint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Default job configuration applied to new projects created in this team.
   final List<String> targets;
 
   const TeamDefaultProjectJobsLint({required this.targets});
 
-  TeamDefaultProjectJobsLint Function({List<String> targets}) get copyWith => _copyWith;
+  TeamDefaultProjectJobsLint Function({List<String> targets}) get copyWith =>
+      _copyWith;
 
-  TeamDefaultProjectJobsLint _copyWith({Object? targets = sdkOmittedValue}) => TeamDefaultProjectJobsLint(
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
-  );
+  TeamDefaultProjectJobsLint _copyWith({Object? targets = sdkOmittedValue}) =>
+      TeamDefaultProjectJobsLint(
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as List<String>,
+      );
 
-  factory TeamDefaultProjectJobsLint.fromJson(Map<String, dynamic> json) => TeamDefaultProjectJobsLint(
-    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory TeamDefaultProjectJobsLint.fromJson(Map<String, dynamic> json) =>
+      TeamDefaultProjectJobsLint(
+        targets:
+            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'targets': targets,
-  };
+        'targets': targets,
+      };
 }

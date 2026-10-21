@@ -6,55 +6,61 @@ part of 'inline.dart';
 // Inline operation models
 /// Optional enumerated value serialized in the `reason` wire field.
 final class UserEventPayloadVariant492Reason {
-
   final String value;
 
   const UserEventPayloadVariant492Reason._(this.value);
 
-  factory UserEventPayloadVariant492Reason.fromJson(String value) => UserEventPayloadVariant492Reason._(value);
+  factory UserEventPayloadVariant492Reason.fromJson(String value) =>
+      UserEventPayloadVariant492Reason._(value);
 
   static const logout = UserEventPayloadVariant492Reason._('logout');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492Reason && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492Reason && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `revoked` wire field.
 final class UserEventPayloadVariant492Revoked {
-
   final bool value;
 
   const UserEventPayloadVariant492Revoked._(this.value);
 
-  factory UserEventPayloadVariant492Revoked.fromJson(bool value) => UserEventPayloadVariant492Revoked._(value);
+  factory UserEventPayloadVariant492Revoked.fromJson(bool value) =>
+      UserEventPayloadVariant492Revoked._(value);
 
   static const false_ = UserEventPayloadVariant492Revoked._(false);
   static const true_ = UserEventPayloadVariant492Revoked._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492Revoked && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492Revoked && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `scope` wire field.
 final class UserEventPayloadVariant492Scope {
-
   final String value;
 
   const UserEventPayloadVariant492Scope._(this.value);
 
-  factory UserEventPayloadVariant492Scope.fromJson(String value) => UserEventPayloadVariant492Scope._(value);
+  factory UserEventPayloadVariant492Scope.fromJson(String value) =>
+      UserEventPayloadVariant492Scope._(value);
 
   static const project = UserEventPayloadVariant492Scope._('project');
   static const team = UserEventPayloadVariant492Scope._('team');
@@ -62,146 +68,197 @@ final class UserEventPayloadVariant492Scope {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492Scope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492Scope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `source` wire field.
 final class UserEventPayloadVariant492Source {
-
   final String value;
 
   const UserEventPayloadVariant492Source._(this.value);
 
-  factory UserEventPayloadVariant492Source.fromJson(String value) => UserEventPayloadVariant492Source._(value);
+  factory UserEventPayloadVariant492Source.fromJson(String value) =>
+      UserEventPayloadVariant492Source._(value);
 
   static const v0 = UserEventPayloadVariant492Source._('v0');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492Source && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492Source && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `action` wire field.
 final class UserEventPayloadVariant5Action {
-
   final String value;
 
   const UserEventPayloadVariant5Action._(this.value);
 
-  factory UserEventPayloadVariant5Action.fromJson(String value) => UserEventPayloadVariant5Action._(value);
+  factory UserEventPayloadVariant5Action.fromJson(String value) =>
+      UserEventPayloadVariant5Action._(value);
 
   static const read = UserEventPayloadVariant5Action._('read');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant5Action && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant5Action && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// A narrowed subset of the deployment's `readyStateReasonInternal` — only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log.
 final class UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal {
-
   final String value;
 
-  const UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(this.value);
+  const UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(
+      this.value);
 
-  factory UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal.fromJson(String value) => UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(value);
+  factory UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal.fromJson(
+          String value) =>
+      UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(
+          value);
 
-  static const earlyIgnoreStep = UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._('EARLY_IGNORE_STEP');
-  static const ignoreStep = UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._('IGNORE_STEP');
-  static const namespacePruned = UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._('NAMESPACE_PRUNED');
-  static const unaffectedProject = UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._('UNAFFECTED_PROJECT');
-  static const unverifiedCommit = UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._('UNVERIFIED_COMMIT');
+  static const earlyIgnoreStep =
+      UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(
+          'EARLY_IGNORE_STEP');
+  static const ignoreStep =
+      UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(
+          'IGNORE_STEP');
+  static const namespacePruned =
+      UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(
+          'NAMESPACE_PRUNED');
+  static const unaffectedProject =
+      UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(
+          'UNAFFECTED_PROJECT');
+  static const unverifiedCommit =
+      UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal._(
+          'UNVERIFIED_COMMIT');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `system` wire field.
 final class UserEventPayloadVariant50System {
-
   final bool value;
 
   const UserEventPayloadVariant50System._(this.value);
 
-  factory UserEventPayloadVariant50System.fromJson(bool value) => UserEventPayloadVariant50System._(value);
+  factory UserEventPayloadVariant50System.fromJson(bool value) =>
+      UserEventPayloadVariant50System._(value);
 
   static const false_ = UserEventPayloadVariant50System._(false);
   static const true_ = UserEventPayloadVariant50System._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant50System && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant50System && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// A narrowed subset of the deployment's `readyStateReasonInternal` — only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log.
 final class UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal {
-
   final String value;
 
-  const UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(this.value);
+  const UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(
+      this.value);
 
-  factory UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal.fromJson(String value) => UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(value);
+  factory UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal.fromJson(
+          String value) =>
+      UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(
+          value);
 
-  static const earlyIgnoreStep = UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._('EARLY_IGNORE_STEP');
-  static const ignoreStep = UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._('IGNORE_STEP');
-  static const namespacePruned = UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._('NAMESPACE_PRUNED');
-  static const unaffectedProject = UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._('UNAFFECTED_PROJECT');
-  static const unverifiedCommit = UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._('UNVERIFIED_COMMIT');
+  static const earlyIgnoreStep =
+      UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(
+          'EARLY_IGNORE_STEP');
+  static const ignoreStep =
+      UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(
+          'IGNORE_STEP');
+  static const namespacePruned =
+      UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(
+          'NAMESPACE_PRUNED');
+  static const unaffectedProject =
+      UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(
+          'UNAFFECTED_PROJECT');
+  static const unverifiedCommit =
+      UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal._(
+          'UNVERIFIED_COMMIT');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `action` wire field.
 final class UserEventPayloadVariant58Action {
-
   final String value;
 
   const UserEventPayloadVariant58Action._(this.value);
 
-  factory UserEventPayloadVariant58Action.fromJson(String value) => UserEventPayloadVariant58Action._(value);
+  factory UserEventPayloadVariant58Action.fromJson(String value) =>
+      UserEventPayloadVariant58Action._(value);
 
   static const created = UserEventPayloadVariant58Action._('created');
   static const removed = UserEventPayloadVariant58Action._('removed');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant58Action && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant58Action && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

@@ -5,274 +5,430 @@ part of 'inline.dart';
 
 // Inline operation models (part 416)
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive
+          ._(value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive
+          ._(false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._(
+          value);
 
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._('log');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._(
+          'deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(
+          value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(
+          false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._(
+          value);
 
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._('log');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._(
+          'deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(
+          value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(
+          false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._(
+          value);
 
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._('log');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._(
+          'deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(
+          value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(
+          false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._(
+          value);
 
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._('log');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._(
+          'deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(
+          value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(
+          false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._(
+          value);
 
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._('log');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._(
+          'deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(
+          value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(
+          false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._(
+          value);
 
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._('log');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._(
+          'deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(
+          value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(
+          false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsSdActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

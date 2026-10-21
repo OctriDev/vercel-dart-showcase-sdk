@@ -8,241 +8,514 @@ part of 'billing.dart';
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The quantity for the fixed price
   final double fixedPriceQuantity;
+
   /// The ID of the price to replace
   final String replacesPriceId;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem({required this.fixedPriceQuantity, required this.replacesPriceId});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem(
+      {required this.fixedPriceQuantity, required this.replacesPriceId});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem Function({double fixedPriceQuantity, String replacesPriceId}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem
+          Function({double fixedPriceQuantity, String replacesPriceId})
+      get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem _copyWith({Object? fixedPriceQuantity = sdkOmittedValue, Object? replacesPriceId = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem(
-    fixedPriceQuantity: identical(fixedPriceQuantity, sdkOmittedValue) ? this.fixedPriceQuantity : fixedPriceQuantity as double,
-    replacesPriceId: identical(replacesPriceId, sdkOmittedValue) ? this.replacesPriceId : replacesPriceId as String,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem
+      _copyWith(
+              {Object? fixedPriceQuantity = sdkOmittedValue,
+              Object? replacesPriceId = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem(
+            fixedPriceQuantity: identical(fixedPriceQuantity, sdkOmittedValue)
+                ? this.fixedPriceQuantity
+                : fixedPriceQuantity as double,
+            replacesPriceId: identical(replacesPriceId, sdkOmittedValue)
+                ? this.replacesPriceId
+                : replacesPriceId as String,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem(
-    fixedPriceQuantity: ((json['fixedPriceQuantity'] as num?)?.toDouble())!,
-    replacesPriceId: (json['replacesPriceId'] as String?)!,
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem(
+        fixedPriceQuantity: ((json['fixedPriceQuantity'] as num?)?.toDouble())!,
+        replacesPriceId: (json['replacesPriceId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'fixedPriceQuantity': fixedPriceQuantity,
-    'replacesPriceId': replacesPriceId,
-  };
+        'fixedPriceQuantity': fixedPriceQuantity,
+        'replacesPriceId': replacesPriceId,
+      };
 }
 
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The prices to add to the subscription
   final SdkOptional<List<dynamic>> addPrices;
+
   /// Whether to align the subscription start date with the billing subscription start date
-  final SdkOptional<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate> alignBillingWithSubscriptionStartDate;
+  final SdkOptional<
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate>
+      alignBillingWithSubscriptionStartDate;
+
   /// The coupon redemption code to apply to the subscription
   final SdkOptional<String> couponRedemptionCode;
+
   /// The external plan ID of the Orb plan to subscribe to
   final String externalPlanId;
+
   /// The initial phase order to use for the subscription
   final SdkOptional<double> initialPhaseOrder;
+
   /// Optional metadata to associate with the subscription
   final SdkOptional<Map<String, String>> metadata;
+
   /// The prices to remove in the subscription
-  final SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>> removePrices;
+  final SdkOptional<
+          List<
+              BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>>
+      removePrices;
+
   /// The prices to replace in the subscription
-  final SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>> replacePrices;
+  final SdkOptional<
+          List<
+              BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>>
+      replacePrices;
+
   /// The start date of the subscription
   final SdkOptional<String> startDate;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options({this.addPrices = const SdkOmitted(), this.alignBillingWithSubscriptionStartDate = const SdkOmitted(), this.couponRedemptionCode = const SdkOmitted(), required this.externalPlanId, this.initialPhaseOrder = const SdkOmitted(), this.metadata = const SdkOmitted(), this.removePrices = const SdkOmitted(), this.replacePrices = const SdkOmitted(), this.startDate = const SdkOmitted()});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options(
+      {this.addPrices = const SdkOmitted(),
+      this.alignBillingWithSubscriptionStartDate = const SdkOmitted(),
+      this.couponRedemptionCode = const SdkOmitted(),
+      required this.externalPlanId,
+      this.initialPhaseOrder = const SdkOmitted(),
+      this.metadata = const SdkOmitted(),
+      this.removePrices = const SdkOmitted(),
+      this.replacePrices = const SdkOmitted(),
+      this.startDate = const SdkOmitted()});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options Function({SdkOptional<List<dynamic>> addPrices, SdkOptional<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate> alignBillingWithSubscriptionStartDate, SdkOptional<String> couponRedemptionCode, String externalPlanId, SdkOptional<double> initialPhaseOrder, SdkOptional<Map<String, String>> metadata, SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>> removePrices, SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>> replacePrices, SdkOptional<String> startDate}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options Function(
+      {SdkOptional<List<dynamic>> addPrices,
+      SdkOptional<
+              BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate>
+          alignBillingWithSubscriptionStartDate,
+      SdkOptional<String> couponRedemptionCode,
+      String externalPlanId,
+      SdkOptional<double> initialPhaseOrder,
+      SdkOptional<Map<String, String>> metadata,
+      SdkOptional<
+              List<
+                  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>>
+          removePrices,
+      SdkOptional<
+              List<
+                  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>>
+          replacePrices,
+      SdkOptional<String> startDate}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options _copyWith({Object? addPrices = sdkOmittedValue, Object? alignBillingWithSubscriptionStartDate = sdkOmittedValue, Object? couponRedemptionCode = sdkOmittedValue, Object? externalPlanId = sdkOmittedValue, Object? initialPhaseOrder = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? removePrices = sdkOmittedValue, Object? replacePrices = sdkOmittedValue, Object? startDate = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options(
-    addPrices: identical(addPrices, sdkOmittedValue) ? this.addPrices : addPrices as SdkOptional<List<dynamic>>,
-    alignBillingWithSubscriptionStartDate: identical(alignBillingWithSubscriptionStartDate, sdkOmittedValue) ? this.alignBillingWithSubscriptionStartDate : alignBillingWithSubscriptionStartDate as SdkOptional<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate>,
-    couponRedemptionCode: identical(couponRedemptionCode, sdkOmittedValue) ? this.couponRedemptionCode : couponRedemptionCode as SdkOptional<String>,
-    externalPlanId: identical(externalPlanId, sdkOmittedValue) ? this.externalPlanId : externalPlanId as String,
-    initialPhaseOrder: identical(initialPhaseOrder, sdkOmittedValue) ? this.initialPhaseOrder : initialPhaseOrder as SdkOptional<double>,
-    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<Map<String, String>>,
-    removePrices: identical(removePrices, sdkOmittedValue) ? this.removePrices : removePrices as SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>>,
-    replacePrices: identical(replacePrices, sdkOmittedValue) ? this.replacePrices : replacePrices as SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>>,
-    startDate: identical(startDate, sdkOmittedValue) ? this.startDate : startDate as SdkOptional<String>,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options
+      _copyWith(
+              {Object? addPrices = sdkOmittedValue,
+              Object? alignBillingWithSubscriptionStartDate = sdkOmittedValue,
+              Object? couponRedemptionCode = sdkOmittedValue,
+              Object? externalPlanId = sdkOmittedValue,
+              Object? initialPhaseOrder = sdkOmittedValue,
+              Object? metadata = sdkOmittedValue,
+              Object? removePrices = sdkOmittedValue,
+              Object? replacePrices = sdkOmittedValue,
+              Object? startDate = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options(
+            addPrices: identical(addPrices, sdkOmittedValue)
+                ? this.addPrices
+                : addPrices as SdkOptional<List<dynamic>>,
+            alignBillingWithSubscriptionStartDate: identical(
+                    alignBillingWithSubscriptionStartDate, sdkOmittedValue)
+                ? this.alignBillingWithSubscriptionStartDate
+                : alignBillingWithSubscriptionStartDate as SdkOptional<
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate>,
+            couponRedemptionCode:
+                identical(couponRedemptionCode, sdkOmittedValue)
+                    ? this.couponRedemptionCode
+                    : couponRedemptionCode as SdkOptional<String>,
+            externalPlanId: identical(externalPlanId, sdkOmittedValue)
+                ? this.externalPlanId
+                : externalPlanId as String,
+            initialPhaseOrder: identical(initialPhaseOrder, sdkOmittedValue)
+                ? this.initialPhaseOrder
+                : initialPhaseOrder as SdkOptional<double>,
+            metadata: identical(metadata, sdkOmittedValue)
+                ? this.metadata
+                : metadata as SdkOptional<Map<String, String>>,
+            removePrices: identical(removePrices, sdkOmittedValue)
+                ? this.removePrices
+                : removePrices as SdkOptional<
+                    List<
+                        BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>>,
+            replacePrices: identical(replacePrices, sdkOmittedValue)
+                ? this.replacePrices
+                : replacePrices as SdkOptional<
+                    List<
+                        BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>>,
+            startDate: identical(startDate, sdkOmittedValue)
+                ? this.startDate
+                : startDate as SdkOptional<String>,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options(
-    addPrices: json['addPrices'] != null ? SdkPresent(((json['addPrices'] as List?)?.map((e) => e).toList())!) : const SdkOmitted(),
-    alignBillingWithSubscriptionStartDate: json['alignBillingWithSubscriptionStartDate'] != null ? SdkPresent((json['alignBillingWithSubscriptionStartDate'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate.fromJson(json['alignBillingWithSubscriptionStartDate'] as bool) : null)!) : const SdkOmitted(),
-    couponRedemptionCode: json['couponRedemptionCode'] != null ? SdkPresent((json['couponRedemptionCode'] as String?)!) : const SdkOmitted(),
-    externalPlanId: (json['externalPlanId'] as String?)!,
-    initialPhaseOrder: json['initialPhaseOrder'] != null ? SdkPresent(((json['initialPhaseOrder'] as num?)?.toDouble())!) : const SdkOmitted(),
-    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] == null ? null : Map<String, dynamic>.from(json['metadata'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    removePrices: json['removePrices'] != null ? SdkPresent(((json['removePrices'] as List?)?.map((e) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    replacePrices: json['replacePrices'] != null ? SdkPresent(((json['replacePrices'] as List?)?.map((e) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    startDate: json['startDate'] != null ? SdkPresent((json['startDate'] as String?)!) : const SdkOmitted(),
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options(
+        addPrices: json['addPrices'] != null
+            ? SdkPresent(
+                ((json['addPrices'] as List?)?.map((e) => e).toList())!)
+            : const SdkOmitted(),
+        alignBillingWithSubscriptionStartDate: json[
+                    'alignBillingWithSubscriptionStartDate'] !=
+                null
+            ? SdkPresent((json['alignBillingWithSubscriptionStartDate'] != null
+                ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate
+                    .fromJson(
+                        json['alignBillingWithSubscriptionStartDate'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        couponRedemptionCode: json['couponRedemptionCode'] != null
+            ? SdkPresent((json['couponRedemptionCode'] as String?)!)
+            : const SdkOmitted(),
+        externalPlanId: (json['externalPlanId'] as String?)!,
+        initialPhaseOrder: json['initialPhaseOrder'] != null
+            ? SdkPresent(((json['initialPhaseOrder'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        metadata: json['metadata'] != null
+            ? SdkPresent((json['metadata'] == null
+                ? null
+                : Map<String, dynamic>.from(json['metadata'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        removePrices: json['removePrices'] != null
+            ? SdkPresent(((json['removePrices'] as List?)
+                ?.map((e) =>
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        replacePrices: json['replacePrices'] != null
+            ? SdkPresent(((json['replacePrices'] as List?)
+                ?.map((e) =>
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        startDate: json['startDate'] != null
+            ? SdkPresent((json['startDate'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (addPrices) {
-      SdkPresent<List<dynamic>>(value: final value) => {'addPrices': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (alignBillingWithSubscriptionStartDate) {
-      SdkPresent<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate>(value: final value) => {'alignBillingWithSubscriptionStartDate': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (couponRedemptionCode) {
-      SdkPresent<String>(value: final value) => {'couponRedemptionCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    'externalPlanId': externalPlanId,
-    ...switch (initialPhaseOrder) {
-      SdkPresent<double>(value: final value) => {'initialPhaseOrder': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (metadata) {
-      SdkPresent<Map<String, String>>(value: final value) => {'metadata': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (removePrices) {
-      SdkPresent<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>>(value: final value) => {'removePrices': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (replacePrices) {
-      SdkPresent<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>>(value: final value) => {'replacePrices': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (startDate) {
-      SdkPresent<String>(value: final value) => {'startDate': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (addPrices) {
+          SdkPresent<List<dynamic>>(value: final value) => {
+              'addPrices': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (alignBillingWithSubscriptionStartDate) {
+          SdkPresent<
+                BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate>(
+            value: final value
+          ) =>
+            {
+              'alignBillingWithSubscriptionStartDate': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (couponRedemptionCode) {
+          SdkPresent<String>(value: final value) => {
+              'couponRedemptionCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'externalPlanId': externalPlanId,
+        ...switch (initialPhaseOrder) {
+          SdkPresent<double>(value: final value) => {
+              'initialPhaseOrder': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (metadata) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'metadata': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (removePrices) {
+          SdkPresent<
+                List<
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsRemovePricesItem>>(
+            value: final value
+          ) =>
+            {
+              'removePrices': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (replacePrices) {
+          SdkPresent<
+                List<
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsReplacePricesItem>>(
+            value: final value
+          ) =>
+            {
+              'replacePrices': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (startDate) {
+          SdkPresent<String>(value: final value) => {
+              'startDate': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The ID of the pending subscription change
   final String pendingSubscriptionChangeId;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output({required this.pendingSubscriptionChangeId});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output(
+      {required this.pendingSubscriptionChangeId});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output Function({String pendingSubscriptionChangeId}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output Function(
+      {String pendingSubscriptionChangeId}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output _copyWith({Object? pendingSubscriptionChangeId = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output(
-    pendingSubscriptionChangeId: identical(pendingSubscriptionChangeId, sdkOmittedValue) ? this.pendingSubscriptionChangeId : pendingSubscriptionChangeId as String,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output _copyWith(
+          {Object? pendingSubscriptionChangeId = sdkOmittedValue}) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output(
+        pendingSubscriptionChangeId:
+            identical(pendingSubscriptionChangeId, sdkOmittedValue)
+                ? this.pendingSubscriptionChangeId
+                : pendingSubscriptionChangeId as String,
+      );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output(
-    pendingSubscriptionChangeId: (json['pendingSubscriptionChangeId'] as String?)!,
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output(
+        pendingSubscriptionChangeId:
+            (json['pendingSubscriptionChangeId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pendingSubscriptionChangeId': pendingSubscriptionChangeId,
-  };
+        'pendingSubscriptionChangeId': pendingSubscriptionChangeId,
+      };
 }
 
 /// The configuration for a credit purchase
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options options;
-  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output output;
+  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options
+      options;
+  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output
+      output;
   final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type type_;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4({required this.options, required this.output, required this.type_});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4(
+      {required this.options, required this.output, required this.type_});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4 Function({BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options options, BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output output, BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type type_}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4 Function(
+      {BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options
+          options,
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output
+          output,
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type
+          type_}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4 _copyWith({Object? options = sdkOmittedValue, Object? output = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4(
-    options: identical(options, sdkOmittedValue) ? this.options : options as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options,
-    output: identical(output, sdkOmittedValue) ? this.output : output as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4 _copyWith(
+          {Object? options = sdkOmittedValue,
+          Object? output = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4(
+        options: identical(options, sdkOmittedValue)
+            ? this.options
+            : options
+                as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options,
+        output: identical(output, sdkOmittedValue)
+            ? this.output
+            : output
+                as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type,
+      );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4(
-    options: (json['options'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options.fromJson(json['options'] as Map<String, dynamic>) : null)!,
-    output: (json['output'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output.fromJson(json['output'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4(
+        options: (json['options'] != null
+            ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Options
+                .fromJson(json['options'] as Map<String, dynamic>)
+            : null)!,
+        output: (json['output'] != null
+            ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Output
+                .fromJson(json['output'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'options': options.toJson(),
-    'output': output.toJson(),
-    'type': type_.toJson(),
-  };
+        'options': options.toJson(),
+        'output': output.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 /// The line items that make up the Purchase Intent.
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The description of the line item
   final String description;
+
   /// The ID of the line item
   final String id;
+
   /// Optional metadata for the line item
   final SdkOptional<Map<String, String>> metadata;
+
   /// The name of the line item
   final String name;
+
   /// The alias of the product being purchased
   final SdkOptional<String> productAlias;
+
   /// The ID of the product being purchased
   final String productId;
+
   /// The quantity of the line item
   final String quantity;
+
   /// The amount of the line item that has been refunded
   final SdkOptional<String> refund;
+
   /// The unit amount of the line item
   final String unitAmount;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem({required this.description, required this.id, this.metadata = const SdkOmitted(), required this.name, this.productAlias = const SdkOmitted(), required this.productId, required this.quantity, this.refund = const SdkOmitted(), required this.unitAmount});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem(
+      {required this.description,
+      required this.id,
+      this.metadata = const SdkOmitted(),
+      required this.name,
+      this.productAlias = const SdkOmitted(),
+      required this.productId,
+      required this.quantity,
+      this.refund = const SdkOmitted(),
+      required this.unitAmount});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem Function({String description, String id, SdkOptional<Map<String, String>> metadata, String name, SdkOptional<String> productAlias, String productId, String quantity, SdkOptional<String> refund, String unitAmount}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem Function(
+      {String description,
+      String id,
+      SdkOptional<Map<String, String>> metadata,
+      String name,
+      SdkOptional<String> productAlias,
+      String productId,
+      String quantity,
+      SdkOptional<String> refund,
+      String unitAmount}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem _copyWith({Object? description = sdkOmittedValue, Object? id = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? name = sdkOmittedValue, Object? productAlias = sdkOmittedValue, Object? productId = sdkOmittedValue, Object? quantity = sdkOmittedValue, Object? refund = sdkOmittedValue, Object? unitAmount = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem(
-    description: identical(description, sdkOmittedValue) ? this.description : description as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<Map<String, String>>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    productAlias: identical(productAlias, sdkOmittedValue) ? this.productAlias : productAlias as SdkOptional<String>,
-    productId: identical(productId, sdkOmittedValue) ? this.productId : productId as String,
-    quantity: identical(quantity, sdkOmittedValue) ? this.quantity : quantity as String,
-    refund: identical(refund, sdkOmittedValue) ? this.refund : refund as SdkOptional<String>,
-    unitAmount: identical(unitAmount, sdkOmittedValue) ? this.unitAmount : unitAmount as String,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem
+      _copyWith(
+              {Object? description = sdkOmittedValue,
+              Object? id = sdkOmittedValue,
+              Object? metadata = sdkOmittedValue,
+              Object? name = sdkOmittedValue,
+              Object? productAlias = sdkOmittedValue,
+              Object? productId = sdkOmittedValue,
+              Object? quantity = sdkOmittedValue,
+              Object? refund = sdkOmittedValue,
+              Object? unitAmount = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem(
+            description: identical(description, sdkOmittedValue)
+                ? this.description
+                : description as String,
+            id: identical(id, sdkOmittedValue) ? this.id : id as String,
+            metadata: identical(metadata, sdkOmittedValue)
+                ? this.metadata
+                : metadata as SdkOptional<Map<String, String>>,
+            name: identical(name, sdkOmittedValue) ? this.name : name as String,
+            productAlias: identical(productAlias, sdkOmittedValue)
+                ? this.productAlias
+                : productAlias as SdkOptional<String>,
+            productId: identical(productId, sdkOmittedValue)
+                ? this.productId
+                : productId as String,
+            quantity: identical(quantity, sdkOmittedValue)
+                ? this.quantity
+                : quantity as String,
+            refund: identical(refund, sdkOmittedValue)
+                ? this.refund
+                : refund as SdkOptional<String>,
+            unitAmount: identical(unitAmount, sdkOmittedValue)
+                ? this.unitAmount
+                : unitAmount as String,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem(
-    description: (json['description'] as String?)!,
-    id: (json['id'] as String?)!,
-    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] == null ? null : Map<String, dynamic>.from(json['metadata'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    productAlias: json['productAlias'] != null ? SdkPresent((json['productAlias'] as String?)!) : const SdkOmitted(),
-    productId: (json['productId'] as String?)!,
-    quantity: (json['quantity'] as String?)!,
-    refund: json['refund'] != null ? SdkPresent((json['refund'] as String?)!) : const SdkOmitted(),
-    unitAmount: (json['unitAmount'] as String?)!,
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem(
+        description: (json['description'] as String?)!,
+        id: (json['id'] as String?)!,
+        metadata: json['metadata'] != null
+            ? SdkPresent((json['metadata'] == null
+                ? null
+                : Map<String, dynamic>.from(json['metadata'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        productAlias: json['productAlias'] != null
+            ? SdkPresent((json['productAlias'] as String?)!)
+            : const SdkOmitted(),
+        productId: (json['productId'] as String?)!,
+        quantity: (json['quantity'] as String?)!,
+        refund: json['refund'] != null
+            ? SdkPresent((json['refund'] as String?)!)
+            : const SdkOmitted(),
+        unitAmount: (json['unitAmount'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'description': description,
-    'id': id,
-    ...switch (metadata) {
-      SdkPresent<Map<String, String>>(value: final value) => {'metadata': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    ...switch (productAlias) {
-      SdkPresent<String>(value: final value) => {'productAlias': value,},
-      _ => const <String, dynamic>{},
-    },
-    'productId': productId,
-    'quantity': quantity,
-    ...switch (refund) {
-      SdkPresent<String>(value: final value) => {'refund': value,},
-      _ => const <String, dynamic>{},
-    },
-    'unitAmount': unitAmount,
-  };
+        'description': description,
+        'id': id,
+        ...switch (metadata) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'metadata': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        ...switch (productAlias) {
+          SdkPresent<String>(value: final value) => {
+              'productAlias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'productId': productId,
+        'quantity': quantity,
+        ...switch (refund) {
+          SdkPresent<String>(value: final value) => {
+              'refund': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'unitAmount': unitAmount,
+      };
 }

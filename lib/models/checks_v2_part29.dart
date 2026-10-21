@@ -10,26 +10,53 @@ sealed class UpdateDeploymentCheckRunResponse {
   const UpdateDeploymentCheckRunResponse();
   factory UpdateDeploymentCheckRunResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateDeploymentCheckRunResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0(value); } } catch (_) {}
-      try { final value = UpdateDeploymentCheckRunResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = UpdateDeploymentCheckRunResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateDeploymentCheckRunResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0(UpdateDeploymentCheckRunResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1(UpdateDeploymentCheckRunResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateDeploymentCheckRunResponse");
+    try {
+      return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0(
+          UpdateDeploymentCheckRunResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1(
+          UpdateDeploymentCheckRunResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateDeploymentCheckRunResponse");
   }
   Object? toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0 extends UpdateDeploymentCheckRunResponse {
+final class UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0
+    extends UpdateDeploymentCheckRunResponse {
   final UpdateDeploymentCheckRunResponseVariant0 value;
-  const UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1 extends UpdateDeploymentCheckRunResponse {
+final class UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1
+    extends UpdateDeploymentCheckRunResponse {
   final UpdateDeploymentCheckRunResponseVariant1 value;
-  const UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateDeploymentCheckRunResponseUpdateDeploymentCheckRunResponseVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class UpdateProjectCheckResponseSourceVariant0 {
@@ -41,39 +68,80 @@ class UpdateProjectCheckResponseSourceVariant0 {
   final UpdateProjectCheckResponseSourceVariant0Kind kind;
   final SdkOptional<String> resourceId;
 
-  const UpdateProjectCheckResponseSourceVariant0({this.externalResourceId = const SdkOmitted(), required this.integrationConfigurationId, required this.integrationId, required this.kind, this.resourceId = const SdkOmitted()});
+  const UpdateProjectCheckResponseSourceVariant0(
+      {this.externalResourceId = const SdkOmitted(),
+      required this.integrationConfigurationId,
+      required this.integrationId,
+      required this.kind,
+      this.resourceId = const SdkOmitted()});
 
-  UpdateProjectCheckResponseSourceVariant0 Function({SdkOptional<String> externalResourceId, String integrationConfigurationId, String integrationId, UpdateProjectCheckResponseSourceVariant0Kind kind, SdkOptional<String> resourceId}) get copyWith => _copyWith;
+  UpdateProjectCheckResponseSourceVariant0 Function(
+      {SdkOptional<String> externalResourceId,
+      String integrationConfigurationId,
+      String integrationId,
+      UpdateProjectCheckResponseSourceVariant0Kind kind,
+      SdkOptional<String> resourceId}) get copyWith => _copyWith;
 
-  UpdateProjectCheckResponseSourceVariant0 _copyWith({Object? externalResourceId = sdkOmittedValue, Object? integrationConfigurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? resourceId = sdkOmittedValue}) => UpdateProjectCheckResponseSourceVariant0(
-    externalResourceId: identical(externalResourceId, sdkOmittedValue) ? this.externalResourceId : externalResourceId as SdkOptional<String>,
-    integrationConfigurationId: identical(integrationConfigurationId, sdkOmittedValue) ? this.integrationConfigurationId : integrationConfigurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateProjectCheckResponseSourceVariant0Kind,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as SdkOptional<String>,
-  );
+  UpdateProjectCheckResponseSourceVariant0 _copyWith(
+          {Object? externalResourceId = sdkOmittedValue,
+          Object? integrationConfigurationId = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue}) =>
+      UpdateProjectCheckResponseSourceVariant0(
+        externalResourceId: identical(externalResourceId, sdkOmittedValue)
+            ? this.externalResourceId
+            : externalResourceId as SdkOptional<String>,
+        integrationConfigurationId:
+            identical(integrationConfigurationId, sdkOmittedValue)
+                ? this.integrationConfigurationId
+                : integrationConfigurationId as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as UpdateProjectCheckResponseSourceVariant0Kind,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as SdkOptional<String>,
+      );
 
-  factory UpdateProjectCheckResponseSourceVariant0.fromJson(Map<String, dynamic> json) => UpdateProjectCheckResponseSourceVariant0(
-    externalResourceId: json['externalResourceId'] != null ? SdkPresent((json['externalResourceId'] as String?)!) : const SdkOmitted(),
-    integrationConfigurationId: (json['integrationConfigurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-    kind: (json['kind'] != null ? UpdateProjectCheckResponseSourceVariant0Kind.fromJson(json['kind'] as String) : null)!,
-    resourceId: json['resourceId'] != null ? SdkPresent((json['resourceId'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectCheckResponseSourceVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectCheckResponseSourceVariant0(
+        externalResourceId: json['externalResourceId'] != null
+            ? SdkPresent((json['externalResourceId'] as String?)!)
+            : const SdkOmitted(),
+        integrationConfigurationId:
+            (json['integrationConfigurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+        kind: (json['kind'] != null
+            ? UpdateProjectCheckResponseSourceVariant0Kind.fromJson(
+                json['kind'] as String)
+            : null)!,
+        resourceId: json['resourceId'] != null
+            ? SdkPresent((json['resourceId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (externalResourceId) {
-      SdkPresent<String>(value: final value) => {'externalResourceId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'integrationConfigurationId': integrationConfigurationId,
-    'integrationId': integrationId,
-    'kind': kind.toJson(),
-    ...switch (resourceId) {
-      SdkPresent<String>(value: final value) => {'resourceId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (externalResourceId) {
+          SdkPresent<String>(value: final value) => {
+              'externalResourceId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'integrationConfigurationId': integrationConfigurationId,
+        'integrationId': integrationId,
+        'kind': kind.toJson(),
+        ...switch (resourceId) {
+          SdkPresent<String>(value: final value) => {
+              'resourceId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateProjectCheckResponseSourceVariant1 {
@@ -82,27 +150,46 @@ class UpdateProjectCheckResponseSourceVariant1 {
   final UpdateProjectCheckResponseSourceVariant1Kind kind;
   final SdkOptional<String> webhookId;
 
-  const UpdateProjectCheckResponseSourceVariant1({required this.kind, this.webhookId = const SdkOmitted()});
+  const UpdateProjectCheckResponseSourceVariant1(
+      {required this.kind, this.webhookId = const SdkOmitted()});
 
-  UpdateProjectCheckResponseSourceVariant1 Function({UpdateProjectCheckResponseSourceVariant1Kind kind, SdkOptional<String> webhookId}) get copyWith => _copyWith;
+  UpdateProjectCheckResponseSourceVariant1 Function(
+      {UpdateProjectCheckResponseSourceVariant1Kind kind,
+      SdkOptional<String> webhookId}) get copyWith => _copyWith;
 
-  UpdateProjectCheckResponseSourceVariant1 _copyWith({Object? kind = sdkOmittedValue, Object? webhookId = sdkOmittedValue}) => UpdateProjectCheckResponseSourceVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateProjectCheckResponseSourceVariant1Kind,
-    webhookId: identical(webhookId, sdkOmittedValue) ? this.webhookId : webhookId as SdkOptional<String>,
-  );
+  UpdateProjectCheckResponseSourceVariant1 _copyWith(
+          {Object? kind = sdkOmittedValue,
+          Object? webhookId = sdkOmittedValue}) =>
+      UpdateProjectCheckResponseSourceVariant1(
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as UpdateProjectCheckResponseSourceVariant1Kind,
+        webhookId: identical(webhookId, sdkOmittedValue)
+            ? this.webhookId
+            : webhookId as SdkOptional<String>,
+      );
 
-  factory UpdateProjectCheckResponseSourceVariant1.fromJson(Map<String, dynamic> json) => UpdateProjectCheckResponseSourceVariant1(
-    kind: (json['kind'] != null ? UpdateProjectCheckResponseSourceVariant1Kind.fromJson(json['kind'] as String) : null)!,
-    webhookId: json['webhookId'] != null ? SdkPresent((json['webhookId'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectCheckResponseSourceVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectCheckResponseSourceVariant1(
+        kind: (json['kind'] != null
+            ? UpdateProjectCheckResponseSourceVariant1Kind.fromJson(
+                json['kind'] as String)
+            : null)!,
+        webhookId: json['webhookId'] != null
+            ? SdkPresent((json['webhookId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-    ...switch (webhookId) {
-      SdkPresent<String>(value: final value) => {'webhookId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'kind': kind.toJson(),
+        ...switch (webhookId) {
+          SdkPresent<String>(value: final value) => {
+              'webhookId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateProjectCheckResponseSourceVariant2 {
@@ -112,27 +199,52 @@ class UpdateProjectCheckResponseSourceVariant2 {
   final UpdateProjectCheckResponseSourceVariant2Kind kind;
   final UpdateProjectCheckResponseSourceVariant2Provider provider;
 
-  const UpdateProjectCheckResponseSourceVariant2({required this.externalCheckName, required this.kind, required this.provider});
+  const UpdateProjectCheckResponseSourceVariant2(
+      {required this.externalCheckName,
+      required this.kind,
+      required this.provider});
 
-  UpdateProjectCheckResponseSourceVariant2 Function({String externalCheckName, UpdateProjectCheckResponseSourceVariant2Kind kind, UpdateProjectCheckResponseSourceVariant2Provider provider}) get copyWith => _copyWith;
+  UpdateProjectCheckResponseSourceVariant2 Function(
+          {String externalCheckName,
+          UpdateProjectCheckResponseSourceVariant2Kind kind,
+          UpdateProjectCheckResponseSourceVariant2Provider provider})
+      get copyWith => _copyWith;
 
-  UpdateProjectCheckResponseSourceVariant2 _copyWith({Object? externalCheckName = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? provider = sdkOmittedValue}) => UpdateProjectCheckResponseSourceVariant2(
-    externalCheckName: identical(externalCheckName, sdkOmittedValue) ? this.externalCheckName : externalCheckName as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateProjectCheckResponseSourceVariant2Kind,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as UpdateProjectCheckResponseSourceVariant2Provider,
-  );
+  UpdateProjectCheckResponseSourceVariant2 _copyWith(
+          {Object? externalCheckName = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? provider = sdkOmittedValue}) =>
+      UpdateProjectCheckResponseSourceVariant2(
+        externalCheckName: identical(externalCheckName, sdkOmittedValue)
+            ? this.externalCheckName
+            : externalCheckName as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as UpdateProjectCheckResponseSourceVariant2Kind,
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as UpdateProjectCheckResponseSourceVariant2Provider,
+      );
 
-  factory UpdateProjectCheckResponseSourceVariant2.fromJson(Map<String, dynamic> json) => UpdateProjectCheckResponseSourceVariant2(
-    externalCheckName: (json['externalCheckName'] as String?)!,
-    kind: (json['kind'] != null ? UpdateProjectCheckResponseSourceVariant2Kind.fromJson(json['kind'] as String) : null)!,
-    provider: (json['provider'] != null ? UpdateProjectCheckResponseSourceVariant2Provider.fromJson(json['provider'] as String) : null)!,
-  );
+  factory UpdateProjectCheckResponseSourceVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectCheckResponseSourceVariant2(
+        externalCheckName: (json['externalCheckName'] as String?)!,
+        kind: (json['kind'] != null
+            ? UpdateProjectCheckResponseSourceVariant2Kind.fromJson(
+                json['kind'] as String)
+            : null)!,
+        provider: (json['provider'] != null
+            ? UpdateProjectCheckResponseSourceVariant2Provider.fromJson(
+                json['provider'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'externalCheckName': externalCheckName,
-    'kind': kind.toJson(),
-    'provider': provider.toJson(),
-  };
+        'externalCheckName': externalCheckName,
+        'kind': kind.toJson(),
+        'provider': provider.toJson(),
+      };
 }
 
 sealed class UpdateProjectCheckResponseSource {
@@ -141,32 +253,72 @@ sealed class UpdateProjectCheckResponseSource {
   const UpdateProjectCheckResponseSource();
   factory UpdateProjectCheckResponseSource.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateProjectCheckResponseSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0(value); } } catch (_) {}
-      try { final value = UpdateProjectCheckResponseSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1(value); } } catch (_) {}
-      try { final value = UpdateProjectCheckResponseSourceVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2(value); } } catch (_) {}
+      try {
+        final value = UpdateProjectCheckResponseSourceVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateProjectCheckResponseSourceVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateProjectCheckResponseSourceVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0(UpdateProjectCheckResponseSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1(UpdateProjectCheckResponseSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2(UpdateProjectCheckResponseSourceVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateProjectCheckResponseSource");
+    try {
+      return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0(
+          UpdateProjectCheckResponseSourceVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1(
+          UpdateProjectCheckResponseSourceVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2(
+          UpdateProjectCheckResponseSourceVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateProjectCheckResponseSource");
   }
   Object? toJson();
 }
 
-final class UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0 extends UpdateProjectCheckResponseSource {
+final class UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0
+    extends UpdateProjectCheckResponseSource {
   final UpdateProjectCheckResponseSourceVariant0 value;
-  const UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1 extends UpdateProjectCheckResponseSource {
+final class UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1
+    extends UpdateProjectCheckResponseSource {
   final UpdateProjectCheckResponseSourceVariant1 value;
-  const UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2 extends UpdateProjectCheckResponseSource {
+final class UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2
+    extends UpdateProjectCheckResponseSource {
   final UpdateProjectCheckResponseSourceVariant2 value;
-  const UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectCheckResponseSourceUpdateProjectCheckResponseSourceVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

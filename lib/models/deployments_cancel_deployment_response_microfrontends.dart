@@ -7,92 +7,194 @@ part of 'deployments.dart';
 class CancelDeploymentResponseMicrofrontendsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The project name of the default app of this deployment's microfrontends group.
   final String defaultAppProjectName;
+
   /// A path that is used to take screenshots and as the default path in preview links when a domain for this microfrontend is shown in the UI.
   final SdkOptional<String> defaultRoute;
+
   /// The group of microfrontends that this project belongs to. Each microfrontend project must belong to a microfrontends group that is the set of microfrontends that are used together.
   final List<String> groupIds;
-  final SdkOptional<CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp> isDefaultApp;
+  final SdkOptional<CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp>
+      isDefaultApp;
 
-  const CancelDeploymentResponseMicrofrontendsVariant0({required this.defaultAppProjectName, this.defaultRoute = const SdkOmitted(), required this.groupIds, this.isDefaultApp = const SdkOmitted()});
+  const CancelDeploymentResponseMicrofrontendsVariant0(
+      {required this.defaultAppProjectName,
+      this.defaultRoute = const SdkOmitted(),
+      required this.groupIds,
+      this.isDefaultApp = const SdkOmitted()});
 
-  CancelDeploymentResponseMicrofrontendsVariant0 Function({String defaultAppProjectName, SdkOptional<String> defaultRoute, List<String> groupIds, SdkOptional<CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp> isDefaultApp}) get copyWith => _copyWith;
+  CancelDeploymentResponseMicrofrontendsVariant0 Function(
+      {String defaultAppProjectName,
+      SdkOptional<String> defaultRoute,
+      List<String> groupIds,
+      SdkOptional<CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp>
+          isDefaultApp}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseMicrofrontendsVariant0 _copyWith({Object? defaultAppProjectName = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue}) => CancelDeploymentResponseMicrofrontendsVariant0(
-    defaultAppProjectName: identical(defaultAppProjectName, sdkOmittedValue) ? this.defaultAppProjectName : defaultAppProjectName as String,
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<String>,
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as SdkOptional<CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp>,
-  );
+  CancelDeploymentResponseMicrofrontendsVariant0 _copyWith(
+          {Object? defaultAppProjectName = sdkOmittedValue,
+          Object? defaultRoute = sdkOmittedValue,
+          Object? groupIds = sdkOmittedValue,
+          Object? isDefaultApp = sdkOmittedValue}) =>
+      CancelDeploymentResponseMicrofrontendsVariant0(
+        defaultAppProjectName: identical(defaultAppProjectName, sdkOmittedValue)
+            ? this.defaultAppProjectName
+            : defaultAppProjectName as String,
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        groupIds: identical(groupIds, sdkOmittedValue)
+            ? this.groupIds
+            : groupIds as List<String>,
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp as SdkOptional<
+                CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp>,
+      );
 
-  factory CancelDeploymentResponseMicrofrontendsVariant0.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseMicrofrontendsVariant0(
-    defaultAppProjectName: (json['defaultAppProjectName'] as String?)!,
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    groupIds: ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
-    isDefaultApp: json['isDefaultApp'] != null ? SdkPresent((json['isDefaultApp'] != null ? CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseMicrofrontendsVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseMicrofrontendsVariant0(
+        defaultAppProjectName: (json['defaultAppProjectName'] as String?)!,
+        defaultRoute: json['defaultRoute'] != null
+            ? SdkPresent((json['defaultRoute'] as String?)!)
+            : const SdkOmitted(),
+        groupIds:
+            ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
+        isDefaultApp: json['isDefaultApp'] != null
+            ? SdkPresent((json['isDefaultApp'] != null
+                ? CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp
+                    .fromJson(json['isDefaultApp'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultAppProjectName': defaultAppProjectName,
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    'groupIds': groupIds,
-    ...switch (isDefaultApp) {
-      SdkPresent<CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp>(value: final value) => {'isDefaultApp': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'defaultAppProjectName': defaultAppProjectName,
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'groupIds': groupIds,
+        ...switch (isDefaultApp) {
+          SdkPresent<
+                CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp>(
+            value: final value
+          ) =>
+            {
+              'isDefaultApp': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CancelDeploymentResponseMicrofrontendsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The project name of the default app of this deployment's microfrontends group.
   final String defaultAppProjectName;
+
   /// A path that is used to take screenshots and as the default path in preview links when a domain for this microfrontend is shown in the UI.
   final SdkOptional<String> defaultRoute;
+
   /// The group of microfrontends that this project belongs to. Each microfrontend project must belong to a microfrontends group that is the set of microfrontends that are used together.
   final List<String> groupIds;
   final CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp isDefaultApp;
+
   /// The result of the microfrontends config upload during deployment creation / build. Only set for default app deployments. The config upload is attempted during deployment create, and then again during the build. If the config is not in the root directory, or the deployment is prebuilt, the config cannot be uploaded during deployment create. The upload during deployment build finds the config even if it's not in the root directory, as it has access to all files. Uploading the config during create is ideal, as then all child deployments are guaranteed to have access to the default app deployment config even if the default app has not yet started building. If the config is not uploaded, the child app will show as building until the config has been uploaded during the default app build. - `success` - The config was uploaded successfully, either when the deployment was created or during the build. - `waiting_on_build` - The config could not be uploaded during deployment create, will be attempted again during the build. - `no_config` - No config was found. Only set once the build has not found the config in any of the deployment's files. - `undefined` - Legacy deployments, or there was an error uploading the config during deployment create.
-  final SdkOptional<CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState> mfeConfigUploadState;
+  final SdkOptional<
+          CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState>
+      mfeConfigUploadState;
 
-  const CancelDeploymentResponseMicrofrontendsVariant1({required this.defaultAppProjectName, this.defaultRoute = const SdkOmitted(), required this.groupIds, required this.isDefaultApp, this.mfeConfigUploadState = const SdkOmitted()});
+  const CancelDeploymentResponseMicrofrontendsVariant1(
+      {required this.defaultAppProjectName,
+      this.defaultRoute = const SdkOmitted(),
+      required this.groupIds,
+      required this.isDefaultApp,
+      this.mfeConfigUploadState = const SdkOmitted()});
 
-  CancelDeploymentResponseMicrofrontendsVariant1 Function({String defaultAppProjectName, SdkOptional<String> defaultRoute, List<String> groupIds, CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp isDefaultApp, SdkOptional<CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState> mfeConfigUploadState}) get copyWith => _copyWith;
+  CancelDeploymentResponseMicrofrontendsVariant1 Function(
+      {String defaultAppProjectName,
+      SdkOptional<String> defaultRoute,
+      List<String> groupIds,
+      CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp isDefaultApp,
+      SdkOptional<
+              CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState>
+          mfeConfigUploadState}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseMicrofrontendsVariant1 _copyWith({Object? defaultAppProjectName = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue, Object? mfeConfigUploadState = sdkOmittedValue}) => CancelDeploymentResponseMicrofrontendsVariant1(
-    defaultAppProjectName: identical(defaultAppProjectName, sdkOmittedValue) ? this.defaultAppProjectName : defaultAppProjectName as String,
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<String>,
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp,
-    mfeConfigUploadState: identical(mfeConfigUploadState, sdkOmittedValue) ? this.mfeConfigUploadState : mfeConfigUploadState as SdkOptional<CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState>,
-  );
+  CancelDeploymentResponseMicrofrontendsVariant1 _copyWith(
+          {Object? defaultAppProjectName = sdkOmittedValue,
+          Object? defaultRoute = sdkOmittedValue,
+          Object? groupIds = sdkOmittedValue,
+          Object? isDefaultApp = sdkOmittedValue,
+          Object? mfeConfigUploadState = sdkOmittedValue}) =>
+      CancelDeploymentResponseMicrofrontendsVariant1(
+        defaultAppProjectName: identical(defaultAppProjectName, sdkOmittedValue)
+            ? this.defaultAppProjectName
+            : defaultAppProjectName as String,
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        groupIds: identical(groupIds, sdkOmittedValue)
+            ? this.groupIds
+            : groupIds as List<String>,
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp
+                as CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp,
+        mfeConfigUploadState: identical(mfeConfigUploadState, sdkOmittedValue)
+            ? this.mfeConfigUploadState
+            : mfeConfigUploadState as SdkOptional<
+                CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState>,
+      );
 
-  factory CancelDeploymentResponseMicrofrontendsVariant1.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseMicrofrontendsVariant1(
-    defaultAppProjectName: (json['defaultAppProjectName'] as String?)!,
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    groupIds: ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
-    isDefaultApp: (json['isDefaultApp'] != null ? CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!,
-    mfeConfigUploadState: json['mfeConfigUploadState'] != null ? SdkPresent((json['mfeConfigUploadState'] != null ? CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState.fromJson(json['mfeConfigUploadState'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseMicrofrontendsVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseMicrofrontendsVariant1(
+        defaultAppProjectName: (json['defaultAppProjectName'] as String?)!,
+        defaultRoute: json['defaultRoute'] != null
+            ? SdkPresent((json['defaultRoute'] as String?)!)
+            : const SdkOmitted(),
+        groupIds:
+            ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
+        isDefaultApp: (json['isDefaultApp'] != null
+            ? CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp
+                .fromJson(json['isDefaultApp'] as bool)
+            : null)!,
+        mfeConfigUploadState: json['mfeConfigUploadState'] != null
+            ? SdkPresent((json['mfeConfigUploadState'] != null
+                ? CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState
+                    .fromJson(json['mfeConfigUploadState'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultAppProjectName': defaultAppProjectName,
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    'groupIds': groupIds,
-    'isDefaultApp': isDefaultApp.toJson(),
-    ...switch (mfeConfigUploadState) {
-      SdkPresent<CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState>(value: final value) => {'mfeConfigUploadState': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'defaultAppProjectName': defaultAppProjectName,
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'groupIds': groupIds,
+        'isDefaultApp': isDefaultApp.toJson(),
+        ...switch (mfeConfigUploadState) {
+          SdkPresent<
+                CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState>(
+            value: final value
+          ) =>
+            {
+              'mfeConfigUploadState': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class CancelDeploymentResponseMicrofrontends {
@@ -101,24 +203,53 @@ sealed class CancelDeploymentResponseMicrofrontends {
   const CancelDeploymentResponseMicrofrontends();
   factory CancelDeploymentResponseMicrofrontends.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CancelDeploymentResponseMicrofrontendsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0(value); } } catch (_) {}
-      try { final value = CancelDeploymentResponseMicrofrontendsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            CancelDeploymentResponseMicrofrontendsVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            CancelDeploymentResponseMicrofrontendsVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0(CancelDeploymentResponseMicrofrontendsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1(CancelDeploymentResponseMicrofrontendsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CancelDeploymentResponseMicrofrontends");
+    try {
+      return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0(
+          CancelDeploymentResponseMicrofrontendsVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1(
+          CancelDeploymentResponseMicrofrontendsVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CancelDeploymentResponseMicrofrontends");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0 extends CancelDeploymentResponseMicrofrontends {
+final class CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0
+    extends CancelDeploymentResponseMicrofrontends {
   final CancelDeploymentResponseMicrofrontendsVariant0 value;
-  const CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1 extends CancelDeploymentResponseMicrofrontends {
+final class CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1
+    extends CancelDeploymentResponseMicrofrontends {
   final CancelDeploymentResponseMicrofrontendsVariant1 value;
-  const CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseMicrofrontendsCancelDeploymentResponseMicrofrontendsVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

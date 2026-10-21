@@ -5,272 +5,424 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1 {
-
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1.fromJson(bool value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1.fromJson(
+          bool value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1
+          ._(value);
 
-  static const false_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1._(false);
-  static const true_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1._(true);
+  static const false_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1
+          ._(false);
+  static const true_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2 {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2
+          ._(value);
 
-  static const create = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2._('create');
-  static const update = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2._('update');
+  static const create =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2
+          ._('create');
+  static const update =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2
+          ._('update');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant1UiReadOnlyVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type
+          ._(value);
 
-  static const string = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type._('string');
+  static const string =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type
+          ._('string');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl
+          ._(value);
 
-  static const domain = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl._('domain');
+  static const domain =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl
+          ._('domain');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiControl &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1 {
-
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1.fromJson(bool value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1.fromJson(
+          bool value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1
+          ._(value);
 
-  static const false_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1._(false);
-  static const true_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1._(true);
+  static const false_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1
+          ._(false);
+  static const true_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2 {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2
+          ._(value);
 
-  static const create = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2._('create');
-  static const update = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2._('update');
+  static const create =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2
+          ._('create');
+  static const update =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2
+          ._('update');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiDisabledVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1 {
-
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1.fromJson(bool value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1.fromJson(
+          bool value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1
+          ._(value);
 
-  static const false_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1._(false);
-  static const true_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1._(true);
+  static const false_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1
+          ._(false);
+  static const true_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2 {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2
+          ._(value);
 
-  static const create = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2._('create');
-  static const update = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2._('update');
+  static const create =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2
+          ._('create');
+  static const update =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2
+          ._('update');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiHiddenVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly {
-
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly.fromJson(bool value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly.fromJson(
+          bool value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly
+          ._(value);
 
-  static const false_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly._(false);
-  static const true_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly._(true);
+  static const false_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly
+          ._(false);
+  static const true_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiPaidOnly &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1 {
-
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1.fromJson(bool value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1.fromJson(
+          bool value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1
+          ._(value);
 
-  static const false_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1._(false);
-  static const true_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1._(true);
+  static const false_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1
+          ._(false);
+  static const true_ =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2 {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2
+          ._(value);
 
-  static const create = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2._('create');
-  static const update = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2._('update');
+  static const create =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2
+          ._('create');
+  static const update =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2
+          ._('update');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant10UiReadOnlyVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem
+          ._(value);
 
-  static const bitbucket = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem._('bitbucket');
-  static const github = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem._('github');
-  static const gitlab = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem._('gitlab');
+  static const bitbucket =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem
+          ._('bitbucket');
+  static const github =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem
+          ._('github');
+  static const gitlab =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem
+          ._('gitlab');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11GitProvidersItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type {
-
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type._(this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type._(
+      this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type.fromJson(
+          String value) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type
+          ._(value);
 
-  static const string = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type._('string');
+  static const string =
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type
+          ._('string');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant11Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

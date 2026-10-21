@@ -8,32 +8,55 @@ part of 'domains_registrar.dart';
 class AdditionalContactInfoRequired {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final AdditionalContactInfoRequiredStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final AdditionalContactInfoRequiredCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const AdditionalContactInfoRequired({required this.status, required this.code, required this.message});
+  const AdditionalContactInfoRequired(
+      {required this.status, required this.code, required this.message});
 
-  AdditionalContactInfoRequired Function({AdditionalContactInfoRequiredStatus status, AdditionalContactInfoRequiredCode code, String message}) get copyWith => _copyWith;
+  AdditionalContactInfoRequired Function(
+      {AdditionalContactInfoRequiredStatus status,
+      AdditionalContactInfoRequiredCode code,
+      String message}) get copyWith => _copyWith;
 
-  AdditionalContactInfoRequired _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => AdditionalContactInfoRequired(
-    status: identical(status, sdkOmittedValue) ? this.status : status as AdditionalContactInfoRequiredStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as AdditionalContactInfoRequiredCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  AdditionalContactInfoRequired _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      AdditionalContactInfoRequired(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as AdditionalContactInfoRequiredStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as AdditionalContactInfoRequiredCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory AdditionalContactInfoRequired.fromJson(Map<String, dynamic> json) => AdditionalContactInfoRequired(
-    status: (json['status'] != null ? AdditionalContactInfoRequiredStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? AdditionalContactInfoRequiredCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory AdditionalContactInfoRequired.fromJson(Map<String, dynamic> json) =>
+      AdditionalContactInfoRequired(
+        status: (json['status'] != null
+            ? AdditionalContactInfoRequiredStatus.fromJson(
+                (json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? AdditionalContactInfoRequiredCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }

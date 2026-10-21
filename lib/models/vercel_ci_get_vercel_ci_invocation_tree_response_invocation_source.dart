@@ -9,21 +9,34 @@ class GetVercelCiInvocationTreeResponseInvocationSourceVariant0 {
   static const String constructionSurface = 'named';
   final GetVercelCiInvocationTreeResponseInvocationSourceVariant0Type type_;
 
-  const GetVercelCiInvocationTreeResponseInvocationSourceVariant0({required this.type_});
+  const GetVercelCiInvocationTreeResponseInvocationSourceVariant0(
+      {required this.type_});
 
-  GetVercelCiInvocationTreeResponseInvocationSourceVariant0 Function({GetVercelCiInvocationTreeResponseInvocationSourceVariant0Type type_}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseInvocationSourceVariant0 Function(
+          {GetVercelCiInvocationTreeResponseInvocationSourceVariant0Type type_})
+      get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseInvocationSourceVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseInvocationSourceVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetVercelCiInvocationTreeResponseInvocationSourceVariant0Type,
-  );
+  GetVercelCiInvocationTreeResponseInvocationSourceVariant0 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      GetVercelCiInvocationTreeResponseInvocationSourceVariant0(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as GetVercelCiInvocationTreeResponseInvocationSourceVariant0Type,
+      );
 
-  factory GetVercelCiInvocationTreeResponseInvocationSourceVariant0.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseInvocationSourceVariant0(
-    type_: (json['type'] != null ? GetVercelCiInvocationTreeResponseInvocationSourceVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetVercelCiInvocationTreeResponseInvocationSourceVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetVercelCiInvocationTreeResponseInvocationSourceVariant0(
+        type_: (json['type'] != null
+            ? GetVercelCiInvocationTreeResponseInvocationSourceVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 class GetVercelCiInvocationTreeResponseInvocationSourceVariant1 {
@@ -34,56 +47,115 @@ class GetVercelCiInvocationTreeResponseInvocationSourceVariant1 {
   final String projectId;
   final String deploymentTargetSlug;
 
-  const GetVercelCiInvocationTreeResponseInvocationSourceVariant1({required this.type_, required this.deploymentId, required this.projectId, required this.deploymentTargetSlug});
+  const GetVercelCiInvocationTreeResponseInvocationSourceVariant1(
+      {required this.type_,
+      required this.deploymentId,
+      required this.projectId,
+      required this.deploymentTargetSlug});
 
-  GetVercelCiInvocationTreeResponseInvocationSourceVariant1 Function({GetVercelCiInvocationTreeResponseInvocationSourceVariant1Type type_, String deploymentId, String projectId, String deploymentTargetSlug}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseInvocationSourceVariant1 Function(
+      {GetVercelCiInvocationTreeResponseInvocationSourceVariant1Type type_,
+      String deploymentId,
+      String projectId,
+      String deploymentTargetSlug}) get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseInvocationSourceVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? deploymentTargetSlug = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseInvocationSourceVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetVercelCiInvocationTreeResponseInvocationSourceVariant1Type,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    deploymentTargetSlug: identical(deploymentTargetSlug, sdkOmittedValue) ? this.deploymentTargetSlug : deploymentTargetSlug as String,
-  );
+  GetVercelCiInvocationTreeResponseInvocationSourceVariant1 _copyWith(
+          {Object? type_ = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? deploymentTargetSlug = sdkOmittedValue}) =>
+      GetVercelCiInvocationTreeResponseInvocationSourceVariant1(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as GetVercelCiInvocationTreeResponseInvocationSourceVariant1Type,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        deploymentTargetSlug: identical(deploymentTargetSlug, sdkOmittedValue)
+            ? this.deploymentTargetSlug
+            : deploymentTargetSlug as String,
+      );
 
-  factory GetVercelCiInvocationTreeResponseInvocationSourceVariant1.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseInvocationSourceVariant1(
-    type_: (json['type'] != null ? GetVercelCiInvocationTreeResponseInvocationSourceVariant1Type.fromJson(json['type'] as String) : null)!,
-    deploymentId: (json['deploymentId'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    deploymentTargetSlug: (json['deploymentTargetSlug'] as String?)!,
-  );
+  factory GetVercelCiInvocationTreeResponseInvocationSourceVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetVercelCiInvocationTreeResponseInvocationSourceVariant1(
+        type_: (json['type'] != null
+            ? GetVercelCiInvocationTreeResponseInvocationSourceVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        deploymentId: (json['deploymentId'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        deploymentTargetSlug: (json['deploymentTargetSlug'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'deploymentId': deploymentId,
-    'projectId': projectId,
-    'deploymentTargetSlug': deploymentTargetSlug,
-  };
+        'type': type_.toJson(),
+        'deploymentId': deploymentId,
+        'projectId': projectId,
+        'deploymentTargetSlug': deploymentTargetSlug,
+      };
 }
 
 sealed class GetVercelCiInvocationTreeResponseInvocationSource {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetVercelCiInvocationTreeResponseInvocationSource();
-  factory GetVercelCiInvocationTreeResponseInvocationSource.fromJson(Object? json) {
+  factory GetVercelCiInvocationTreeResponseInvocationSource.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetVercelCiInvocationTreeResponseInvocationSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0(value); } } catch (_) {}
-      try { final value = GetVercelCiInvocationTreeResponseInvocationSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetVercelCiInvocationTreeResponseInvocationSourceVariant0.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetVercelCiInvocationTreeResponseInvocationSourceVariant1.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0(GetVercelCiInvocationTreeResponseInvocationSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1(GetVercelCiInvocationTreeResponseInvocationSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetVercelCiInvocationTreeResponseInvocationSource");
+    try {
+      return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0(
+          GetVercelCiInvocationTreeResponseInvocationSourceVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1(
+          GetVercelCiInvocationTreeResponseInvocationSourceVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetVercelCiInvocationTreeResponseInvocationSource");
   }
   Object? toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0 extends GetVercelCiInvocationTreeResponseInvocationSource {
+final class GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0
+    extends GetVercelCiInvocationTreeResponseInvocationSource {
   final GetVercelCiInvocationTreeResponseInvocationSourceVariant0 value;
-  const GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1 extends GetVercelCiInvocationTreeResponseInvocationSource {
+final class GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1
+    extends GetVercelCiInvocationTreeResponseInvocationSource {
   final GetVercelCiInvocationTreeResponseInvocationSourceVariant1 value;
-  const GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetVercelCiInvocationTreeResponseInvocationSourceGetVercelCiInvocationTreeResponseInvocationSourceVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

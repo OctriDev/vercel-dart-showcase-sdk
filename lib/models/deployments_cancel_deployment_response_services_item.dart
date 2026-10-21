@@ -7,45 +7,73 @@ part of 'deployments.dart';
 class CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory memory;
+  final CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+      memory;
 
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests({required this.memory});
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests(
+      {required this.memory});
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests Function({CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory memory}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests Function(
+      {CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+          memory}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests _copyWith({Object? memory = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests(
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory,
-  );
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests
+      _copyWith({Object? memory = sdkOmittedValue}) =>
+          CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests(
+            memory: identical(memory, sdkOmittedValue)
+                ? this.memory
+                : memory
+                    as CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory,
+          );
 
-  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests(
-    memory: (json['memory'] != null ? CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory.fromJson(json['memory'] as String) : null)!,
-  );
+  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests(
+        memory: (json['memory'] != null
+            ? CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+                .fromJson(json['memory'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'memory': memory.toJson(),
-  };
+        'memory': memory.toJson(),
+      };
 }
 
 class CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests requests;
+  final CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests
+      requests;
 
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources({required this.requests});
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources(
+      {required this.requests});
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources Function({CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests requests}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources Function(
+      {CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests
+          requests}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources _copyWith({Object? requests = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources(
-    requests: identical(requests, sdkOmittedValue) ? this.requests : requests as CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests,
-  );
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources
+      _copyWith({Object? requests = sdkOmittedValue}) =>
+          CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources(
+            requests: identical(requests, sdkOmittedValue)
+                ? this.requests
+                : requests
+                    as CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests,
+          );
 
-  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources(
-    requests: (json['requests'] != null ? CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests.fromJson(json['requests'] as Map<String, dynamic>) : null)!,
-  );
+  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources(
+        requests: (json['requests'] != null
+            ? CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResourcesRequests
+                .fromJson(json['requests'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'requests': requests.toJson(),
-  };
+        'requests': requests.toJson(),
+      };
 }
 
 /// Set when this build produces the named daemon.
@@ -54,200 +82,395 @@ class CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon {
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> command;
   final String entrypoint;
+
   /// Instance counts by region.
   final SdkOptional<Map<String, double>> instances;
+
   /// Instance counts by region.
   final SdkOptional<Map<String, double>> replicas;
-  final SdkOptional<CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources> resources;
+  final SdkOptional<
+          CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources>
+      resources;
   final String root;
   final SdkOptional<double> terminationGracePeriodSeconds;
   final String name;
 
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon({this.command = const SdkOmitted(), required this.entrypoint, this.instances = const SdkOmitted(), this.replicas = const SdkOmitted(), this.resources = const SdkOmitted(), required this.root, this.terminationGracePeriodSeconds = const SdkOmitted(), required this.name});
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon(
+      {this.command = const SdkOmitted(),
+      required this.entrypoint,
+      this.instances = const SdkOmitted(),
+      this.replicas = const SdkOmitted(),
+      this.resources = const SdkOmitted(),
+      required this.root,
+      this.terminationGracePeriodSeconds = const SdkOmitted(),
+      required this.name});
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon Function({SdkOptional<List<String>> command, String entrypoint, SdkOptional<Map<String, double>> instances, SdkOptional<Map<String, double>> replicas, SdkOptional<CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources> resources, String root, SdkOptional<double> terminationGracePeriodSeconds, String name}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon Function(
+      {SdkOptional<List<String>> command,
+      String entrypoint,
+      SdkOptional<Map<String, double>> instances,
+      SdkOptional<Map<String, double>> replicas,
+      SdkOptional<
+              CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources>
+          resources,
+      String root,
+      SdkOptional<double> terminationGracePeriodSeconds,
+      String name}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon _copyWith({Object? command = sdkOmittedValue, Object? entrypoint = sdkOmittedValue, Object? instances = sdkOmittedValue, Object? replicas = sdkOmittedValue, Object? resources = sdkOmittedValue, Object? root = sdkOmittedValue, Object? terminationGracePeriodSeconds = sdkOmittedValue, Object? name = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon(
-    command: identical(command, sdkOmittedValue) ? this.command : command as SdkOptional<List<String>>,
-    entrypoint: identical(entrypoint, sdkOmittedValue) ? this.entrypoint : entrypoint as String,
-    instances: identical(instances, sdkOmittedValue) ? this.instances : instances as SdkOptional<Map<String, double>>,
-    replicas: identical(replicas, sdkOmittedValue) ? this.replicas : replicas as SdkOptional<Map<String, double>>,
-    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as SdkOptional<CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources>,
-    root: identical(root, sdkOmittedValue) ? this.root : root as String,
-    terminationGracePeriodSeconds: identical(terminationGracePeriodSeconds, sdkOmittedValue) ? this.terminationGracePeriodSeconds : terminationGracePeriodSeconds as SdkOptional<double>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon _copyWith(
+          {Object? command = sdkOmittedValue,
+          Object? entrypoint = sdkOmittedValue,
+          Object? instances = sdkOmittedValue,
+          Object? replicas = sdkOmittedValue,
+          Object? resources = sdkOmittedValue,
+          Object? root = sdkOmittedValue,
+          Object? terminationGracePeriodSeconds = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon(
+        command: identical(command, sdkOmittedValue)
+            ? this.command
+            : command as SdkOptional<List<String>>,
+        entrypoint: identical(entrypoint, sdkOmittedValue)
+            ? this.entrypoint
+            : entrypoint as String,
+        instances: identical(instances, sdkOmittedValue)
+            ? this.instances
+            : instances as SdkOptional<Map<String, double>>,
+        replicas: identical(replicas, sdkOmittedValue)
+            ? this.replicas
+            : replicas as SdkOptional<Map<String, double>>,
+        resources: identical(resources, sdkOmittedValue)
+            ? this.resources
+            : resources as SdkOptional<
+                CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources>,
+        root: identical(root, sdkOmittedValue) ? this.root : root as String,
+        terminationGracePeriodSeconds:
+            identical(terminationGracePeriodSeconds, sdkOmittedValue)
+                ? this.terminationGracePeriodSeconds
+                : terminationGracePeriodSeconds as SdkOptional<double>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon(
-    command: json['command'] != null ? SdkPresent(((json['command'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    entrypoint: (json['entrypoint'] as String?)!,
-    instances: json['instances'] != null ? SdkPresent((json['instances'] == null ? null : Map<String, dynamic>.from(json['instances'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!) : const SdkOmitted(),
-    replicas: json['replicas'] != null ? SdkPresent((json['replicas'] == null ? null : Map<String, dynamic>.from(json['replicas'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!) : const SdkOmitted(),
-    resources: json['resources'] != null ? SdkPresent((json['resources'] != null ? CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources.fromJson(json['resources'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    root: (json['root'] as String?)!,
-    terminationGracePeriodSeconds: json['terminationGracePeriodSeconds'] != null ? SdkPresent(((json['terminationGracePeriodSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-  );
+  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemon(
+        command: json['command'] != null
+            ? SdkPresent(
+                ((json['command'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        entrypoint: (json['entrypoint'] as String?)!,
+        instances: json['instances'] != null
+            ? SdkPresent((json['instances'] == null
+                ? null
+                : Map<String, dynamic>.from(json['instances'] as Map).map(
+                    (key, value) => MapEntry(key, (value as num).toDouble())))!)
+            : const SdkOmitted(),
+        replicas: json['replicas'] != null
+            ? SdkPresent((json['replicas'] == null
+                ? null
+                : Map<String, dynamic>.from(json['replicas'] as Map).map(
+                    (key, value) => MapEntry(key, (value as num).toDouble())))!)
+            : const SdkOmitted(),
+        resources: json['resources'] != null
+            ? SdkPresent((json['resources'] != null
+                ? CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources
+                    .fromJson(json['resources'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        root: (json['root'] as String?)!,
+        terminationGracePeriodSeconds: json['terminationGracePeriodSeconds'] !=
+                null
+            ? SdkPresent(
+                ((json['terminationGracePeriodSeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (command) {
-      SdkPresent<List<String>>(value: final value) => {'command': value,},
-      _ => const <String, dynamic>{},
-    },
-    'entrypoint': entrypoint,
-    ...switch (instances) {
-      SdkPresent<Map<String, double>>(value: final value) => {'instances': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (replicas) {
-      SdkPresent<Map<String, double>>(value: final value) => {'replicas': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (resources) {
-      SdkPresent<CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources>(value: final value) => {'resources': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'root': root,
-    ...switch (terminationGracePeriodSeconds) {
-      SdkPresent<double>(value: final value) => {'terminationGracePeriodSeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-  };
+        ...switch (command) {
+          SdkPresent<List<String>>(value: final value) => {
+              'command': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'entrypoint': entrypoint,
+        ...switch (instances) {
+          SdkPresent<Map<String, double>>(value: final value) => {
+              'instances': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (replicas) {
+          SdkPresent<Map<String, double>>(value: final value) => {
+              'replicas': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (resources) {
+          SdkPresent<
+                CancelDeploymentResponseServicesItemVariant0BuilderConfigDaemonResources>(
+            value: final value
+          ) =>
+            {
+              'resources': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'root': root,
+        ...switch (terminationGracePeriodSeconds) {
+          SdkPresent<double>(value: final value) => {
+              'terminationGracePeriodSeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+      };
 }
 
 sealed class CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles();
-  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles.fromJson(Object? json) {
-    if (json is String) { return CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesString(json); }
-    if (json is List) { return CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesListString(json.map((e) => e as String).toList().cast<String>()); }
-    throw FormatException("No variant matched for CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles");
+  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesString(
+          json);
+    }
+    if (json is List) {
+      return CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesListString(
+          json.map((e) => e as String).toList().cast<String>());
+    }
+    throw FormatException(
+        "No variant matched for CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesString extends CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles {
+final class CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesString
+    extends CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles {
   final String value;
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesString(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesListString extends CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles {
+final class CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesListString
+    extends CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFiles {
   final List<String> value;
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesListString(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigExcludeFilesListString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 class CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode mode;
+  final CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+      mode;
 
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity({required this.mode});
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity(
+      {required this.mode});
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity Function({CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode mode}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity Function(
+      {CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+          mode}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity _copyWith({Object? mode = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity(
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode,
-  );
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity
+      _copyWith({Object? mode = sdkOmittedValue}) =>
+          CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity(
+            mode: identical(mode, sdkOmittedValue)
+                ? this.mode
+                : mode
+                    as CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode,
+          );
 
-  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity(
-    mode: (json['mode'] != null ? CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode.fromJson(json['mode'] as String) : null)!,
-  );
+  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinity(
+        mode: (json['mode'] != null
+            ? CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+                .fromJson(json['mode'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'mode': mode.toJson(),
-  };
+        'mode': mode.toJson(),
+      };
 }
 
 sealed class CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration();
-  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration.fromJson(Object? json) {
-    if (json is num) { return CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(json.toDouble()); }
-    try { return CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration");
+  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration.fromJson(
+      Object? json) {
+    if (json is num) {
+      return CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(
+          json.toDouble());
+    }
+    try {
+      return CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(
+          CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
+              .fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble extends CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
+final class CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble
+    extends CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
   final double value;
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(this.value);
-  @override Object? toJson() => value;
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1 extends CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
-  final CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1 value;
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
+    extends CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
+  final CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
+      value;
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Queue trigger input event for v1beta (from vercel.json config). Requires explicit consumer name.
 class CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Name of the consumer group for this trigger (REQUIRED)
   final String consumer;
+
   /// Initial delay in seconds before first execution attempt (OPTIONAL) Must be 0 or greater. Use 0 for no initial delay. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> initialDelaySeconds;
+
   /// Maximum number of concurrent executions for this consumer (OPTIONAL) Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> maxConcurrency;
+
   /// Maximum number of delivery attempts for message processing (OPTIONAL) This represents the total number of times a message can be delivered, not the number of retries. Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> maxDeliveries;
+
   /// Delay in seconds before retrying failed executions (OPTIONAL) Behavior when not specified depends on the server's default configuration.
   final SdkOptional<double> retryAfterSeconds;
+
   /// Name of the queue topic to consume from (REQUIRED)
   final String topic;
+
   /// Event type - must be "queue/v1beta" (REQUIRED)
-  final CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type type_;
+  final CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+      type_;
 
-  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0({required this.consumer, this.initialDelaySeconds = const SdkOmitted(), this.maxConcurrency = const SdkOmitted(), this.maxDeliveries = const SdkOmitted(), this.retryAfterSeconds = const SdkOmitted(), required this.topic, required this.type_});
+  const CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0(
+      {required this.consumer,
+      this.initialDelaySeconds = const SdkOmitted(),
+      this.maxConcurrency = const SdkOmitted(),
+      this.maxDeliveries = const SdkOmitted(),
+      this.retryAfterSeconds = const SdkOmitted(),
+      required this.topic,
+      required this.type_});
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0 Function({String consumer, SdkOptional<double> initialDelaySeconds, SdkOptional<double> maxConcurrency, SdkOptional<double> maxDeliveries, SdkOptional<double> retryAfterSeconds, String topic, CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type type_}) get copyWith => _copyWith;
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0 Function(
+      {String consumer,
+      SdkOptional<double> initialDelaySeconds,
+      SdkOptional<double> maxConcurrency,
+      SdkOptional<double> maxDeliveries,
+      SdkOptional<double> retryAfterSeconds,
+      String topic,
+      CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+          type_}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0 _copyWith({Object? consumer = sdkOmittedValue, Object? initialDelaySeconds = sdkOmittedValue, Object? maxConcurrency = sdkOmittedValue, Object? maxDeliveries = sdkOmittedValue, Object? retryAfterSeconds = sdkOmittedValue, Object? topic = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0(
-    consumer: identical(consumer, sdkOmittedValue) ? this.consumer : consumer as String,
-    initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue) ? this.initialDelaySeconds : initialDelaySeconds as SdkOptional<double>,
-    maxConcurrency: identical(maxConcurrency, sdkOmittedValue) ? this.maxConcurrency : maxConcurrency as SdkOptional<double>,
-    maxDeliveries: identical(maxDeliveries, sdkOmittedValue) ? this.maxDeliveries : maxDeliveries as SdkOptional<double>,
-    retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue) ? this.retryAfterSeconds : retryAfterSeconds as SdkOptional<double>,
-    topic: identical(topic, sdkOmittedValue) ? this.topic : topic as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type,
-  );
+  CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0
+      _copyWith(
+              {Object? consumer = sdkOmittedValue,
+              Object? initialDelaySeconds = sdkOmittedValue,
+              Object? maxConcurrency = sdkOmittedValue,
+              Object? maxDeliveries = sdkOmittedValue,
+              Object? retryAfterSeconds = sdkOmittedValue,
+              Object? topic = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0(
+            consumer: identical(consumer, sdkOmittedValue)
+                ? this.consumer
+                : consumer as String,
+            initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue)
+                ? this.initialDelaySeconds
+                : initialDelaySeconds as SdkOptional<double>,
+            maxConcurrency: identical(maxConcurrency, sdkOmittedValue)
+                ? this.maxConcurrency
+                : maxConcurrency as SdkOptional<double>,
+            maxDeliveries: identical(maxDeliveries, sdkOmittedValue)
+                ? this.maxDeliveries
+                : maxDeliveries as SdkOptional<double>,
+            retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue)
+                ? this.retryAfterSeconds
+                : retryAfterSeconds as SdkOptional<double>,
+            topic: identical(topic, sdkOmittedValue)
+                ? this.topic
+                : topic as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type,
+          );
 
-  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0(
-    consumer: (json['consumer'] as String?)!,
-    initialDelaySeconds: json['initialDelaySeconds'] != null ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    maxConcurrency: json['maxConcurrency'] != null ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!) : const SdkOmitted(),
-    maxDeliveries: json['maxDeliveries'] != null ? SdkPresent(((json['maxDeliveries'] as num?)?.toDouble())!) : const SdkOmitted(),
-    retryAfterSeconds: json['retryAfterSeconds'] != null ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    topic: (json['topic'] as String?)!,
-    type_: (json['type'] != null ? CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0(
+        consumer: (json['consumer'] as String?)!,
+        initialDelaySeconds: json['initialDelaySeconds'] != null
+            ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        maxConcurrency: json['maxConcurrency'] != null
+            ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        maxDeliveries: json['maxDeliveries'] != null
+            ? SdkPresent(((json['maxDeliveries'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        retryAfterSeconds: json['retryAfterSeconds'] != null
+            ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        topic: (json['topic'] as String?)!,
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'consumer': consumer,
-    ...switch (initialDelaySeconds) {
-      SdkPresent<double>(value: final value) => {'initialDelaySeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxConcurrency) {
-      SdkPresent<double>(value: final value) => {'maxConcurrency': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxDeliveries) {
-      SdkPresent<double>(value: final value) => {'maxDeliveries': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (retryAfterSeconds) {
-      SdkPresent<double>(value: final value) => {'retryAfterSeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'topic': topic,
-    'type': type_.toJson(),
-  };
+        'consumer': consumer,
+        ...switch (initialDelaySeconds) {
+          SdkPresent<double>(value: final value) => {
+              'initialDelaySeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxConcurrency) {
+          SdkPresent<double>(value: final value) => {
+              'maxConcurrency': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxDeliveries) {
+          SdkPresent<double>(value: final value) => {
+              'maxDeliveries': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (retryAfterSeconds) {
+          SdkPresent<double>(value: final value) => {
+              'retryAfterSeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'topic': topic,
+        'type': type_.toJson(),
+      };
 }

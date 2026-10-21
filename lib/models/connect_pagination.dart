@@ -8,6 +8,7 @@ part of 'connect.dart';
 class ConnectPagination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Opaque value to pass as `cursor` on the next request.
   final String? next;
 
@@ -15,15 +16,20 @@ class ConnectPagination {
 
   ConnectPagination Function({String? next}) get copyWith => _copyWith;
 
-  ConnectPagination _copyWith({Object? next = sdkOmittedValue}) => ConnectPagination(
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-  );
+  ConnectPagination _copyWith({Object? next = sdkOmittedValue}) =>
+      ConnectPagination(
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+      );
 
-  factory ConnectPagination.fromJson(Map<String, dynamic> json) => ConnectPagination(
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-  );
+  factory ConnectPagination.fromJson(Map<String, dynamic> json) =>
+      ConnectPagination(
+        next: json.containsKey('next')
+            ? json['next'] as String?
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'next': next,
-  };
+        'next': next,
+      };
 }

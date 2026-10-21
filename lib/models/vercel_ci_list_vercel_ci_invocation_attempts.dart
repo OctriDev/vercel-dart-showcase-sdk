@@ -7,83 +7,158 @@ part of 'vercel_ci.dart';
 class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type type_;
+  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type
+      type_;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0({required this.type_});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+      {required this.type_});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 Function({ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type type_}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 Function(
+      {ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type
+          type_}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0.fromJson(Map<String, dynamic> json) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
-    type_: (json['type'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+        type_: (json['type'] != null
+            ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type type_;
+  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type
+      type_;
   final String deploymentId;
   final String projectId;
   final String deploymentTargetSlug;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1({required this.type_, required this.deploymentId, required this.projectId, required this.deploymentTargetSlug});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+      {required this.type_,
+      required this.deploymentId,
+      required this.projectId,
+      required this.deploymentTargetSlug});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 Function({ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type type_, String deploymentId, String projectId, String deploymentTargetSlug}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 Function(
+      {ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type
+          type_,
+      String deploymentId,
+      String projectId,
+      String deploymentTargetSlug}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? deploymentTargetSlug = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    deploymentTargetSlug: identical(deploymentTargetSlug, sdkOmittedValue) ? this.deploymentTargetSlug : deploymentTargetSlug as String,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 _copyWith(
+          {Object? type_ = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? deploymentTargetSlug = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        deploymentTargetSlug: identical(deploymentTargetSlug, sdkOmittedValue)
+            ? this.deploymentTargetSlug
+            : deploymentTargetSlug as String,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1.fromJson(Map<String, dynamic> json) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
-    type_: (json['type'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type.fromJson(json['type'] as String) : null)!,
-    deploymentId: (json['deploymentId'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    deploymentTargetSlug: (json['deploymentTargetSlug'] as String?)!,
-  );
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+        type_: (json['type'] != null
+            ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        deploymentId: (json['deploymentId'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        deploymentTargetSlug: (json['deploymentTargetSlug'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'deploymentId': deploymentId,
-    'projectId': projectId,
-    'deploymentTargetSlug': deploymentTargetSlug,
-  };
+        'type': type_.toJson(),
+        'deploymentId': deploymentId,
+        'projectId': projectId,
+        'deploymentTargetSlug': deploymentTargetSlug,
+      };
 }
 
 sealed class ListVercelCiInvocationAttemptsResponseAttemptsItemSource {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const ListVercelCiInvocationAttemptsResponseAttemptsItemSource();
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSource.fromJson(Object? json) {
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSource.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(value); } } catch (_) {}
-      try { final value = ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for ListVercelCiInvocationAttemptsResponseAttemptsItemSource");
+    try {
+      return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for ListVercelCiInvocationAttemptsResponseAttemptsItemSource");
   }
   Object? toJson();
 }
 
-final class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 extends ListVercelCiInvocationAttemptsResponseAttemptsItemSource {
+final class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0
+    extends ListVercelCiInvocationAttemptsResponseAttemptsItemSource {
   final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 value;
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 extends ListVercelCiInvocationAttemptsResponseAttemptsItemSource {
+final class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1
+    extends ListVercelCiInvocationAttemptsResponseAttemptsItemSource {
   final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 value;
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

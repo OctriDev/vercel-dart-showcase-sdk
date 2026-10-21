@@ -10,24 +10,39 @@ class ListProjectsResponseVariant2 {
   final dynamic pagination;
   final List<ListProjectsResponseVariant2ProjectsItem> projects;
 
-  const ListProjectsResponseVariant2({required this.pagination, required this.projects});
+  const ListProjectsResponseVariant2(
+      {required this.pagination, required this.projects});
 
-  ListProjectsResponseVariant2 Function({dynamic pagination, List<ListProjectsResponseVariant2ProjectsItem> projects}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2 Function(
+          {dynamic pagination,
+          List<ListProjectsResponseVariant2ProjectsItem> projects})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2 _copyWith({Object? pagination = sdkOmittedValue, Object? projects = sdkOmittedValue}) => ListProjectsResponseVariant2(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as dynamic,
-    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as List<ListProjectsResponseVariant2ProjectsItem>,
-  );
+  ListProjectsResponseVariant2 _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? projects = sdkOmittedValue}) =>
+      ListProjectsResponseVariant2(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as dynamic,
+        projects: identical(projects, sdkOmittedValue)
+            ? this.projects
+            : projects as List<ListProjectsResponseVariant2ProjectsItem>,
+      );
 
-  factory ListProjectsResponseVariant2.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2(
-    pagination: (json['pagination'])!,
-    projects: ((json['projects'] as List?)?.map((e) => ListProjectsResponseVariant2ProjectsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListProjectsResponseVariant2.fromJson(Map<String, dynamic> json) =>
+      ListProjectsResponseVariant2(
+        pagination: (json['pagination'])!,
+        projects: ((json['projects'] as List?)
+            ?.map((e) => ListProjectsResponseVariant2ProjectsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pagination': pagination,
-    'projects': projects.map((item) => item.toJson()).toList(),
-  };
+        'pagination': pagination,
+        'projects': projects.map((item) => item.toJson()).toList(),
+      };
 }
 
 class GetProjectTraceResponseTraceResourcesItem {
@@ -36,24 +51,36 @@ class GetProjectTraceResponseTraceResourcesItem {
   final Map<String, String> attributes;
   final String name;
 
-  const GetProjectTraceResponseTraceResourcesItem({required this.attributes, required this.name});
+  const GetProjectTraceResponseTraceResourcesItem(
+      {required this.attributes, required this.name});
 
-  GetProjectTraceResponseTraceResourcesItem Function({Map<String, String> attributes, String name}) get copyWith => _copyWith;
+  GetProjectTraceResponseTraceResourcesItem Function(
+      {Map<String, String> attributes, String name}) get copyWith => _copyWith;
 
-  GetProjectTraceResponseTraceResourcesItem _copyWith({Object? attributes = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetProjectTraceResponseTraceResourcesItem(
-    attributes: identical(attributes, sdkOmittedValue) ? this.attributes : attributes as Map<String, String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  GetProjectTraceResponseTraceResourcesItem _copyWith(
+          {Object? attributes = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      GetProjectTraceResponseTraceResourcesItem(
+        attributes: identical(attributes, sdkOmittedValue)
+            ? this.attributes
+            : attributes as Map<String, String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory GetProjectTraceResponseTraceResourcesItem.fromJson(Map<String, dynamic> json) => GetProjectTraceResponseTraceResourcesItem(
-    attributes: (json['attributes'] == null ? null : Map<String, dynamic>.from(json['attributes'] as Map).map((key, value) => MapEntry(key, value as String)))!,
-    name: (json['name'] as String?)!,
-  );
+  factory GetProjectTraceResponseTraceResourcesItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectTraceResponseTraceResourcesItem(
+        attributes: (json['attributes'] == null
+            ? null
+            : Map<String, dynamic>.from(json['attributes'] as Map)
+                .map((key, value) => MapEntry(key, value as String)))!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'attributes': attributes,
-    'name': name,
-  };
+        'attributes': attributes,
+        'name': name,
+      };
 }
 
 class GetProjectTraceResponseTraceSpansItemEventsItem {
@@ -63,27 +90,46 @@ class GetProjectTraceResponseTraceSpansItemEventsItem {
   final String name;
   final List<double> timestamp;
 
-  const GetProjectTraceResponseTraceSpansItemEventsItem({required this.attributes, required this.name, required this.timestamp});
+  const GetProjectTraceResponseTraceSpansItemEventsItem(
+      {required this.attributes, required this.name, required this.timestamp});
 
-  GetProjectTraceResponseTraceSpansItemEventsItem Function({Map<String, Object?> attributes, String name, List<double> timestamp}) get copyWith => _copyWith;
+  GetProjectTraceResponseTraceSpansItemEventsItem Function(
+      {Map<String, Object?> attributes,
+      String name,
+      List<double> timestamp}) get copyWith => _copyWith;
 
-  GetProjectTraceResponseTraceSpansItemEventsItem _copyWith({Object? attributes = sdkOmittedValue, Object? name = sdkOmittedValue, Object? timestamp = sdkOmittedValue}) => GetProjectTraceResponseTraceSpansItemEventsItem(
-    attributes: identical(attributes, sdkOmittedValue) ? this.attributes : attributes as Map<String, Object?>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as List<double>,
-  );
+  GetProjectTraceResponseTraceSpansItemEventsItem _copyWith(
+          {Object? attributes = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? timestamp = sdkOmittedValue}) =>
+      GetProjectTraceResponseTraceSpansItemEventsItem(
+        attributes: identical(attributes, sdkOmittedValue)
+            ? this.attributes
+            : attributes as Map<String, Object?>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        timestamp: identical(timestamp, sdkOmittedValue)
+            ? this.timestamp
+            : timestamp as List<double>,
+      );
 
-  factory GetProjectTraceResponseTraceSpansItemEventsItem.fromJson(Map<String, dynamic> json) => GetProjectTraceResponseTraceSpansItemEventsItem(
-    attributes: (json['attributes'] == null ? null : Map<String, dynamic>.from(json['attributes'] as Map).map((key, value) => MapEntry(key, value)))!,
-    name: (json['name'] as String?)!,
-    timestamp: ((json['timestamp'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-  );
+  factory GetProjectTraceResponseTraceSpansItemEventsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectTraceResponseTraceSpansItemEventsItem(
+        attributes: (json['attributes'] == null
+            ? null
+            : Map<String, dynamic>.from(json['attributes'] as Map)
+                .map((key, value) => MapEntry(key, value)))!,
+        name: (json['name'] as String?)!,
+        timestamp: ((json['timestamp'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'attributes': attributes,
-    'name': name,
-    'timestamp': timestamp,
-  };
+        'attributes': attributes,
+        'name': name,
+        'timestamp': timestamp,
+      };
 }
 
 class GetProjectTraceResponseTraceSpansItemLibrary {
@@ -92,27 +138,40 @@ class GetProjectTraceResponseTraceSpansItemLibrary {
   final String name;
   final SdkOptional<String> version;
 
-  const GetProjectTraceResponseTraceSpansItemLibrary({required this.name, this.version = const SdkOmitted()});
+  const GetProjectTraceResponseTraceSpansItemLibrary(
+      {required this.name, this.version = const SdkOmitted()});
 
-  GetProjectTraceResponseTraceSpansItemLibrary Function({String name, SdkOptional<String> version}) get copyWith => _copyWith;
+  GetProjectTraceResponseTraceSpansItemLibrary Function(
+      {String name, SdkOptional<String> version}) get copyWith => _copyWith;
 
-  GetProjectTraceResponseTraceSpansItemLibrary _copyWith({Object? name = sdkOmittedValue, Object? version = sdkOmittedValue}) => GetProjectTraceResponseTraceSpansItemLibrary(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    version: identical(version, sdkOmittedValue) ? this.version : version as SdkOptional<String>,
-  );
+  GetProjectTraceResponseTraceSpansItemLibrary _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? version = sdkOmittedValue}) =>
+      GetProjectTraceResponseTraceSpansItemLibrary(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as SdkOptional<String>,
+      );
 
-  factory GetProjectTraceResponseTraceSpansItemLibrary.fromJson(Map<String, dynamic> json) => GetProjectTraceResponseTraceSpansItemLibrary(
-    name: (json['name'] as String?)!,
-    version: json['version'] != null ? SdkPresent((json['version'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetProjectTraceResponseTraceSpansItemLibrary.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectTraceResponseTraceSpansItemLibrary(
+        name: (json['name'] as String?)!,
+        version: json['version'] != null
+            ? SdkPresent((json['version'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    ...switch (version) {
-      SdkPresent<String>(value: final value) => {'version': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        ...switch (version) {
+          SdkPresent<String>(value: final value) => {
+              'version': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetProjectTraceResponseTraceSpansItemStatus {
@@ -121,27 +180,40 @@ class GetProjectTraceResponseTraceSpansItemStatus {
   final double code;
   final SdkOptional<String> message;
 
-  const GetProjectTraceResponseTraceSpansItemStatus({required this.code, this.message = const SdkOmitted()});
+  const GetProjectTraceResponseTraceSpansItemStatus(
+      {required this.code, this.message = const SdkOmitted()});
 
-  GetProjectTraceResponseTraceSpansItemStatus Function({double code, SdkOptional<String> message}) get copyWith => _copyWith;
+  GetProjectTraceResponseTraceSpansItemStatus Function(
+      {double code, SdkOptional<String> message}) get copyWith => _copyWith;
 
-  GetProjectTraceResponseTraceSpansItemStatus _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => GetProjectTraceResponseTraceSpansItemStatus(
-    code: identical(code, sdkOmittedValue) ? this.code : code as double,
-    message: identical(message, sdkOmittedValue) ? this.message : message as SdkOptional<String>,
-  );
+  GetProjectTraceResponseTraceSpansItemStatus _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      GetProjectTraceResponseTraceSpansItemStatus(
+        code: identical(code, sdkOmittedValue) ? this.code : code as double,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as SdkOptional<String>,
+      );
 
-  factory GetProjectTraceResponseTraceSpansItemStatus.fromJson(Map<String, dynamic> json) => GetProjectTraceResponseTraceSpansItemStatus(
-    code: ((json['code'] as num?)?.toDouble())!,
-    message: json['message'] != null ? SdkPresent((json['message'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetProjectTraceResponseTraceSpansItemStatus.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectTraceResponseTraceSpansItemStatus(
+        code: ((json['code'] as num?)?.toDouble())!,
+        message: json['message'] != null
+            ? SdkPresent((json['message'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code,
-    ...switch (message) {
-      SdkPresent<String>(value: final value) => {'message': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'code': code,
+        ...switch (message) {
+          SdkPresent<String>(value: final value) => {
+              'message': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetProjectTraceResponseTraceSpansItem {
@@ -163,69 +235,172 @@ class GetProjectTraceResponseTraceSpansItem {
   final double traceFlags;
   final SdkOptional<String> traceState;
 
-  const GetProjectTraceResponseTraceSpansItem({required this.attributes, required this.duration, required this.endTime, required this.events, required this.kind, required this.library_, required this.links, required this.name, this.parentSpanId = const SdkOmitted(), required this.resource, required this.spanId, required this.startTime, required this.status, required this.traceFlags, this.traceState = const SdkOmitted()});
+  const GetProjectTraceResponseTraceSpansItem(
+      {required this.attributes,
+      required this.duration,
+      required this.endTime,
+      required this.events,
+      required this.kind,
+      required this.library_,
+      required this.links,
+      required this.name,
+      this.parentSpanId = const SdkOmitted(),
+      required this.resource,
+      required this.spanId,
+      required this.startTime,
+      required this.status,
+      required this.traceFlags,
+      this.traceState = const SdkOmitted()});
 
-  GetProjectTraceResponseTraceSpansItem Function({Map<String, Object?> attributes, List<double> duration, List<double> endTime, List<GetProjectTraceResponseTraceSpansItemEventsItem> events, double kind, GetProjectTraceResponseTraceSpansItemLibrary library_, List<Map<String, Object?>> links, String name, SdkOptional<String> parentSpanId, String resource, String spanId, List<double> startTime, GetProjectTraceResponseTraceSpansItemStatus status, double traceFlags, SdkOptional<String> traceState}) get copyWith => _copyWith;
+  GetProjectTraceResponseTraceSpansItem Function(
+      {Map<String, Object?> attributes,
+      List<double> duration,
+      List<double> endTime,
+      List<GetProjectTraceResponseTraceSpansItemEventsItem> events,
+      double kind,
+      GetProjectTraceResponseTraceSpansItemLibrary library_,
+      List<Map<String, Object?>> links,
+      String name,
+      SdkOptional<String> parentSpanId,
+      String resource,
+      String spanId,
+      List<double> startTime,
+      GetProjectTraceResponseTraceSpansItemStatus status,
+      double traceFlags,
+      SdkOptional<String> traceState}) get copyWith => _copyWith;
 
-  GetProjectTraceResponseTraceSpansItem _copyWith({Object? attributes = sdkOmittedValue, Object? duration = sdkOmittedValue, Object? endTime = sdkOmittedValue, Object? events = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? library_ = sdkOmittedValue, Object? links = sdkOmittedValue, Object? name = sdkOmittedValue, Object? parentSpanId = sdkOmittedValue, Object? resource = sdkOmittedValue, Object? spanId = sdkOmittedValue, Object? startTime = sdkOmittedValue, Object? status = sdkOmittedValue, Object? traceFlags = sdkOmittedValue, Object? traceState = sdkOmittedValue}) => GetProjectTraceResponseTraceSpansItem(
-    attributes: identical(attributes, sdkOmittedValue) ? this.attributes : attributes as Map<String, Object?>,
-    duration: identical(duration, sdkOmittedValue) ? this.duration : duration as List<double>,
-    endTime: identical(endTime, sdkOmittedValue) ? this.endTime : endTime as List<double>,
-    events: identical(events, sdkOmittedValue) ? this.events : events as List<GetProjectTraceResponseTraceSpansItemEventsItem>,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as double,
-    library_: identical(library_, sdkOmittedValue) ? this.library_ : library_ as GetProjectTraceResponseTraceSpansItemLibrary,
-    links: identical(links, sdkOmittedValue) ? this.links : links as List<Map<String, Object?>>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    parentSpanId: identical(parentSpanId, sdkOmittedValue) ? this.parentSpanId : parentSpanId as SdkOptional<String>,
-    resource: identical(resource, sdkOmittedValue) ? this.resource : resource as String,
-    spanId: identical(spanId, sdkOmittedValue) ? this.spanId : spanId as String,
-    startTime: identical(startTime, sdkOmittedValue) ? this.startTime : startTime as List<double>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as GetProjectTraceResponseTraceSpansItemStatus,
-    traceFlags: identical(traceFlags, sdkOmittedValue) ? this.traceFlags : traceFlags as double,
-    traceState: identical(traceState, sdkOmittedValue) ? this.traceState : traceState as SdkOptional<String>,
-  );
+  GetProjectTraceResponseTraceSpansItem _copyWith(
+          {Object? attributes = sdkOmittedValue,
+          Object? duration = sdkOmittedValue,
+          Object? endTime = sdkOmittedValue,
+          Object? events = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? library_ = sdkOmittedValue,
+          Object? links = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? parentSpanId = sdkOmittedValue,
+          Object? resource = sdkOmittedValue,
+          Object? spanId = sdkOmittedValue,
+          Object? startTime = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? traceFlags = sdkOmittedValue,
+          Object? traceState = sdkOmittedValue}) =>
+      GetProjectTraceResponseTraceSpansItem(
+        attributes: identical(attributes, sdkOmittedValue)
+            ? this.attributes
+            : attributes as Map<String, Object?>,
+        duration: identical(duration, sdkOmittedValue)
+            ? this.duration
+            : duration as List<double>,
+        endTime: identical(endTime, sdkOmittedValue)
+            ? this.endTime
+            : endTime as List<double>,
+        events: identical(events, sdkOmittedValue)
+            ? this.events
+            : events as List<GetProjectTraceResponseTraceSpansItemEventsItem>,
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as double,
+        library_: identical(library_, sdkOmittedValue)
+            ? this.library_
+            : library_ as GetProjectTraceResponseTraceSpansItemLibrary,
+        links: identical(links, sdkOmittedValue)
+            ? this.links
+            : links as List<Map<String, Object?>>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        parentSpanId: identical(parentSpanId, sdkOmittedValue)
+            ? this.parentSpanId
+            : parentSpanId as SdkOptional<String>,
+        resource: identical(resource, sdkOmittedValue)
+            ? this.resource
+            : resource as String,
+        spanId:
+            identical(spanId, sdkOmittedValue) ? this.spanId : spanId as String,
+        startTime: identical(startTime, sdkOmittedValue)
+            ? this.startTime
+            : startTime as List<double>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as GetProjectTraceResponseTraceSpansItemStatus,
+        traceFlags: identical(traceFlags, sdkOmittedValue)
+            ? this.traceFlags
+            : traceFlags as double,
+        traceState: identical(traceState, sdkOmittedValue)
+            ? this.traceState
+            : traceState as SdkOptional<String>,
+      );
 
-  factory GetProjectTraceResponseTraceSpansItem.fromJson(Map<String, dynamic> json) => GetProjectTraceResponseTraceSpansItem(
-    attributes: (json['attributes'] == null ? null : Map<String, dynamic>.from(json['attributes'] as Map).map((key, value) => MapEntry(key, value)))!,
-    duration: ((json['duration'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    endTime: ((json['endTime'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    events: ((json['events'] as List?)?.map((e) => GetProjectTraceResponseTraceSpansItemEventsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    kind: ((json['kind'] as num?)?.toDouble())!,
-    library_: (json['library'] != null ? GetProjectTraceResponseTraceSpansItemLibrary.fromJson(json['library'] as Map<String, dynamic>) : null)!,
-    links: ((json['links'] as List?)?.map((e) => Map<String, dynamic>.from(e as Map).map((key, value) => MapEntry(key, value))).toList())!,
-    name: (json['name'] as String?)!,
-    parentSpanId: json['parentSpanId'] != null ? SdkPresent((json['parentSpanId'] as String?)!) : const SdkOmitted(),
-    resource: (json['resource'] as String?)!,
-    spanId: (json['spanId'] as String?)!,
-    startTime: ((json['startTime'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    status: (json['status'] != null ? GetProjectTraceResponseTraceSpansItemStatus.fromJson(json['status'] as Map<String, dynamic>) : null)!,
-    traceFlags: ((json['traceFlags'] as num?)?.toDouble())!,
-    traceState: json['traceState'] != null ? SdkPresent((json['traceState'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetProjectTraceResponseTraceSpansItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectTraceResponseTraceSpansItem(
+        attributes: (json['attributes'] == null
+            ? null
+            : Map<String, dynamic>.from(json['attributes'] as Map)
+                .map((key, value) => MapEntry(key, value)))!,
+        duration: ((json['duration'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        endTime: ((json['endTime'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        events: ((json['events'] as List?)
+            ?.map((e) =>
+                GetProjectTraceResponseTraceSpansItemEventsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        kind: ((json['kind'] as num?)?.toDouble())!,
+        library_: (json['library'] != null
+            ? GetProjectTraceResponseTraceSpansItemLibrary.fromJson(
+                json['library'] as Map<String, dynamic>)
+            : null)!,
+        links: ((json['links'] as List?)
+            ?.map((e) => Map<String, dynamic>.from(e as Map)
+                .map((key, value) => MapEntry(key, value)))
+            .toList())!,
+        name: (json['name'] as String?)!,
+        parentSpanId: json['parentSpanId'] != null
+            ? SdkPresent((json['parentSpanId'] as String?)!)
+            : const SdkOmitted(),
+        resource: (json['resource'] as String?)!,
+        spanId: (json['spanId'] as String?)!,
+        startTime: ((json['startTime'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        status: (json['status'] != null
+            ? GetProjectTraceResponseTraceSpansItemStatus.fromJson(
+                json['status'] as Map<String, dynamic>)
+            : null)!,
+        traceFlags: ((json['traceFlags'] as num?)?.toDouble())!,
+        traceState: json['traceState'] != null
+            ? SdkPresent((json['traceState'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'attributes': attributes,
-    'duration': duration,
-    'endTime': endTime,
-    'events': events.map((item) => item.toJson()).toList(),
-    'kind': kind,
-    'library': library_.toJson(),
-    'links': links,
-    'name': name,
-    ...switch (parentSpanId) {
-      SdkPresent<String>(value: final value) => {'parentSpanId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'resource': resource,
-    'spanId': spanId,
-    'startTime': startTime,
-    'status': status.toJson(),
-    'traceFlags': traceFlags,
-    ...switch (traceState) {
-      SdkPresent<String>(value: final value) => {'traceState': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'attributes': attributes,
+        'duration': duration,
+        'endTime': endTime,
+        'events': events.map((item) => item.toJson()).toList(),
+        'kind': kind,
+        'library': library_.toJson(),
+        'links': links,
+        'name': name,
+        ...switch (parentSpanId) {
+          SdkPresent<String>(value: final value) => {
+              'parentSpanId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'resource': resource,
+        'spanId': spanId,
+        'startTime': startTime,
+        'status': status.toJson(),
+        'traceFlags': traceFlags,
+        ...switch (traceState) {
+          SdkPresent<String>(value: final value) => {
+              'traceState': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetProjectTraceResponseTrace {
@@ -236,36 +411,76 @@ class GetProjectTraceResponseTrace {
   final List<GetProjectTraceResponseTraceSpansItem> spans;
   final String traceId;
 
-  const GetProjectTraceResponseTrace({this.resources = const SdkOmitted(), this.rootSpanId = const SdkOmitted(), required this.spans, required this.traceId});
+  const GetProjectTraceResponseTrace(
+      {this.resources = const SdkOmitted(),
+      this.rootSpanId = const SdkOmitted(),
+      required this.spans,
+      required this.traceId});
 
-  GetProjectTraceResponseTrace Function({SdkOptional<List<GetProjectTraceResponseTraceResourcesItem>> resources, SdkOptional<String> rootSpanId, List<GetProjectTraceResponseTraceSpansItem> spans, String traceId}) get copyWith => _copyWith;
+  GetProjectTraceResponseTrace Function(
+      {SdkOptional<List<GetProjectTraceResponseTraceResourcesItem>> resources,
+      SdkOptional<String> rootSpanId,
+      List<GetProjectTraceResponseTraceSpansItem> spans,
+      String traceId}) get copyWith => _copyWith;
 
-  GetProjectTraceResponseTrace _copyWith({Object? resources = sdkOmittedValue, Object? rootSpanId = sdkOmittedValue, Object? spans = sdkOmittedValue, Object? traceId = sdkOmittedValue}) => GetProjectTraceResponseTrace(
-    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as SdkOptional<List<GetProjectTraceResponseTraceResourcesItem>>,
-    rootSpanId: identical(rootSpanId, sdkOmittedValue) ? this.rootSpanId : rootSpanId as SdkOptional<String>,
-    spans: identical(spans, sdkOmittedValue) ? this.spans : spans as List<GetProjectTraceResponseTraceSpansItem>,
-    traceId: identical(traceId, sdkOmittedValue) ? this.traceId : traceId as String,
-  );
+  GetProjectTraceResponseTrace _copyWith(
+          {Object? resources = sdkOmittedValue,
+          Object? rootSpanId = sdkOmittedValue,
+          Object? spans = sdkOmittedValue,
+          Object? traceId = sdkOmittedValue}) =>
+      GetProjectTraceResponseTrace(
+        resources: identical(resources, sdkOmittedValue)
+            ? this.resources
+            : resources
+                as SdkOptional<List<GetProjectTraceResponseTraceResourcesItem>>,
+        rootSpanId: identical(rootSpanId, sdkOmittedValue)
+            ? this.rootSpanId
+            : rootSpanId as SdkOptional<String>,
+        spans: identical(spans, sdkOmittedValue)
+            ? this.spans
+            : spans as List<GetProjectTraceResponseTraceSpansItem>,
+        traceId: identical(traceId, sdkOmittedValue)
+            ? this.traceId
+            : traceId as String,
+      );
 
-  factory GetProjectTraceResponseTrace.fromJson(Map<String, dynamic> json) => GetProjectTraceResponseTrace(
-    resources: json['resources'] != null ? SdkPresent(((json['resources'] as List?)?.map((e) => GetProjectTraceResponseTraceResourcesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    rootSpanId: json['rootSpanId'] != null ? SdkPresent((json['rootSpanId'] as String?)!) : const SdkOmitted(),
-    spans: ((json['spans'] as List?)?.map((e) => GetProjectTraceResponseTraceSpansItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    traceId: (json['traceId'] as String?)!,
-  );
+  factory GetProjectTraceResponseTrace.fromJson(Map<String, dynamic> json) =>
+      GetProjectTraceResponseTrace(
+        resources: json['resources'] != null
+            ? SdkPresent(((json['resources'] as List?)
+                ?.map((e) => GetProjectTraceResponseTraceResourcesItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        rootSpanId: json['rootSpanId'] != null
+            ? SdkPresent((json['rootSpanId'] as String?)!)
+            : const SdkOmitted(),
+        spans: ((json['spans'] as List?)
+            ?.map((e) => GetProjectTraceResponseTraceSpansItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        traceId: (json['traceId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (resources) {
-      SdkPresent<List<GetProjectTraceResponseTraceResourcesItem>>(value: final value) => {'resources': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rootSpanId) {
-      SdkPresent<String>(value: final value) => {'rootSpanId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'spans': spans.map((item) => item.toJson()).toList(),
-    'traceId': traceId,
-  };
+        ...switch (resources) {
+          SdkPresent<List<GetProjectTraceResponseTraceResourcesItem>>(
+            value: final value
+          ) =>
+            {
+              'resources': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rootSpanId) {
+          SdkPresent<String>(value: final value) => {
+              'rootSpanId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'spans': spans.map((item) => item.toJson()).toList(),
+        'traceId': traceId,
+      };
 }
 
 class GetProjectTraceResponse {
@@ -275,17 +490,25 @@ class GetProjectTraceResponse {
 
   const GetProjectTraceResponse({required this.trace});
 
-  GetProjectTraceResponse Function({GetProjectTraceResponseTrace trace}) get copyWith => _copyWith;
+  GetProjectTraceResponse Function({GetProjectTraceResponseTrace trace})
+      get copyWith => _copyWith;
 
-  GetProjectTraceResponse _copyWith({Object? trace = sdkOmittedValue}) => GetProjectTraceResponse(
-    trace: identical(trace, sdkOmittedValue) ? this.trace : trace as GetProjectTraceResponseTrace,
-  );
+  GetProjectTraceResponse _copyWith({Object? trace = sdkOmittedValue}) =>
+      GetProjectTraceResponse(
+        trace: identical(trace, sdkOmittedValue)
+            ? this.trace
+            : trace as GetProjectTraceResponseTrace,
+      );
 
-  factory GetProjectTraceResponse.fromJson(Map<String, dynamic> json) => GetProjectTraceResponse(
-    trace: (json['trace'] != null ? GetProjectTraceResponseTrace.fromJson(json['trace'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetProjectTraceResponse.fromJson(Map<String, dynamic> json) =>
+      GetProjectTraceResponse(
+        trace: (json['trace'] != null
+            ? GetProjectTraceResponseTrace.fromJson(
+                json['trace'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'trace': trace.toJson(),
-  };
+        'trace': trace.toJson(),
+      };
 }

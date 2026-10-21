@@ -10,24 +10,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant0 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant0({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant0(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant0 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant0 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant0(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant0 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant0(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant0.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant0(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant0(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant1 {
@@ -36,24 +53,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant1 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant1({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant1(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant1 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant1 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant1(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant1 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant1(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant1.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant1(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant1(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant2 {
@@ -62,24 +96,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant2 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant2Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant2({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant2(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant2 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant2Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant2 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant2Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant2(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant2Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant2 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant2(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant2Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant2.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant2(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant2(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant2Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant3 {
@@ -88,24 +139,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant3 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant3Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant3({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant3(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant3 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant3Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant3 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant3Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant3 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant3(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant3Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant3 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant3(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant3Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant3.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant3(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant3(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant3Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant4 {
@@ -114,24 +182,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant4 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant4Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant4({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant4(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant4 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant4Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant4 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant4Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant4 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant4(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant4Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant4 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant4(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant4Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant4.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant4(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant4Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant4(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant4Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant5 {
@@ -140,24 +225,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant5 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant5Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant5({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant5(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant5 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant5Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant5 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant5Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant5 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant5(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant5Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant5 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant5(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant5Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant5.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant5(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant5Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant5(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant5Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant6 {
@@ -166,24 +268,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant6 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant6Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant6({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant6(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant6 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant6Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant6 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant6Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant6 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant6(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant6Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant6 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant6(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant6Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant6.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant6(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant6Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant6(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant6Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant7 {
@@ -192,24 +311,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant7 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant7Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant7({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant7(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant7 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant7Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant7 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant7Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant7 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant7(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant7Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant7 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant7(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant7Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant7.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant7(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant7Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant7(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant7Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant8 {
@@ -218,24 +354,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant8 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant8Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant8({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant8(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant8 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant8Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant8 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant8Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant8 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant8(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant8Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant8 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant8(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant8Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant8.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant8(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant8Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant8(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant8Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant9 {
@@ -244,24 +397,41 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant9 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant9Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant9({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant9(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant9 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant9Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant9 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant9Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant9 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant9(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant9Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant9 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant9(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant9Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant9.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant9(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant9Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant9(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant9Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseEnvItemContentHintVariant10 {
@@ -270,22 +440,39 @@ class UpdateMicrofrontendsResponseEnvItemContentHintVariant10 {
   final String storeId;
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type type_;
 
-  const UpdateMicrofrontendsResponseEnvItemContentHintVariant10({required this.storeId, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemContentHintVariant10(
+      {required this.storeId, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant10 Function({String storeId, UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant10 Function(
+          {String storeId,
+          UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemContentHintVariant10 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemContentHintVariant10(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type,
-  );
+  UpdateMicrofrontendsResponseEnvItemContentHintVariant10 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant10(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type,
+      );
 
-  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant10.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemContentHintVariant10(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseEnvItemContentHintVariant10.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseEnvItemContentHintVariant10(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }

@@ -6,12 +6,12 @@ part of 'inline.dart';
 // Inline operation models
 /// The status of the current sandbox.
 final class NamedSandboxStatus {
-
   final String value;
 
   const NamedSandboxStatus._(this.value);
 
-  factory NamedSandboxStatus.fromJson(String value) => NamedSandboxStatus._(value);
+  factory NamedSandboxStatus.fromJson(String value) =>
+      NamedSandboxStatus._(value);
 
   static const running = NamedSandboxStatus._('running');
   static const stopped = NamedSandboxStatus._('stopped');
@@ -19,17 +19,19 @@ final class NamedSandboxStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is NamedSandboxStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is NamedSandboxStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this sandbox is managed by v0 on the customer's behalf.
 final class NamedSandboxV0 {
-
   final bool value;
 
   const NamedSandboxV0._(this.value);
@@ -41,17 +43,19 @@ final class NamedSandboxV0 {
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is NamedSandboxV0 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is NamedSandboxV0 && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The status of the Network.
 final class NetworkStatus {
-
   final String value;
 
   const NetworkStatus._(this.value);
@@ -65,12 +69,15 @@ final class NetworkStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is NetworkStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is NetworkStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
@@ -79,14 +86,17 @@ enum NotAuthorizedForScopeCode {
 
   static NotAuthorizedForScopeCode fromJson(String value) {
     switch (value) {
-      case 'not_authorized_for_scope': return NotAuthorizedForScopeCode.notAuthorizedForScope;
-      default: throw ArgumentError('Unknown NotAuthorizedForScopeCode: $value');
+      case 'not_authorized_for_scope':
+        return NotAuthorizedForScopeCode.notAuthorizedForScope;
+      default:
+        throw ArgumentError('Unknown NotAuthorizedForScopeCode: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case NotAuthorizedForScopeCode.notAuthorizedForScope: return 'not_authorized_for_scope';
+      case NotAuthorizedForScopeCode.notAuthorizedForScope:
+        return 'not_authorized_for_scope';
     }
   }
 
@@ -96,28 +106,30 @@ enum NotAuthorizedForScopeCode {
 
 /// Required enumerated value serialized in the `status` wire field.
 final class NotAuthorizedForScopeStatus {
-
   final int value;
 
   const NotAuthorizedForScopeStatus._(this.value);
 
-  factory NotAuthorizedForScopeStatus.fromJson(int value) => NotAuthorizedForScopeStatus._(value);
+  factory NotAuthorizedForScopeStatus.fromJson(int value) =>
+      NotAuthorizedForScopeStatus._(value);
 
   static const v403 = NotAuthorizedForScopeStatus._(403);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is NotAuthorizedForScopeStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is NotAuthorizedForScopeStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class NotFoundCode {
-
   final String value;
 
   const NotFoundCode._(this.value);
@@ -128,17 +140,19 @@ final class NotFoundCode {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is NotFoundCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is NotFoundCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class NotFoundStatus {
-
   final int value;
 
   const NotFoundStatus._(this.value);
@@ -149,134 +163,170 @@ final class NotFoundStatus {
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is NotFoundStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is NotFoundStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class OrderTooExpensiveCode {
-
   final String value;
 
   const OrderTooExpensiveCode._(this.value);
 
-  factory OrderTooExpensiveCode.fromJson(String value) => OrderTooExpensiveCode._(value);
+  factory OrderTooExpensiveCode.fromJson(String value) =>
+      OrderTooExpensiveCode._(value);
 
-  static const orderTooExpensive = OrderTooExpensiveCode._('order_too_expensive');
+  static const orderTooExpensive =
+      OrderTooExpensiveCode._('order_too_expensive');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is OrderTooExpensiveCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is OrderTooExpensiveCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class OrderTooExpensiveStatus {
-
   final int value;
 
   const OrderTooExpensiveStatus._(this.value);
 
-  factory OrderTooExpensiveStatus.fromJson(int value) => OrderTooExpensiveStatus._(value);
+  factory OrderTooExpensiveStatus.fromJson(int value) =>
+      OrderTooExpensiveStatus._(value);
 
   static const v400 = OrderTooExpensiveStatus._(400);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is OrderTooExpensiveStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is OrderTooExpensiveStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PatchEdgeConfigItemsRequestItemsItemVariant0Operation {
-
   final String value;
 
   const PatchEdgeConfigItemsRequestItemsItemVariant0Operation._(this.value);
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant0Operation.fromJson(String value) => PatchEdgeConfigItemsRequestItemsItemVariant0Operation._(value);
+  factory PatchEdgeConfigItemsRequestItemsItemVariant0Operation.fromJson(
+          String value) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant0Operation._(value);
 
-  static const create = PatchEdgeConfigItemsRequestItemsItemVariant0Operation._('create');
+  static const create =
+      PatchEdgeConfigItemsRequestItemsItemVariant0Operation._('create');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PatchEdgeConfigItemsRequestItemsItemVariant0Operation && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PatchEdgeConfigItemsRequestItemsItemVariant0Operation &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PatchEdgeConfigItemsRequestItemsItemVariant1Operation {
-
   final String value;
 
   const PatchEdgeConfigItemsRequestItemsItemVariant1Operation._(this.value);
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant1Operation.fromJson(String value) => PatchEdgeConfigItemsRequestItemsItemVariant1Operation._(value);
+  factory PatchEdgeConfigItemsRequestItemsItemVariant1Operation.fromJson(
+          String value) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant1Operation._(value);
 
-  static const update = PatchEdgeConfigItemsRequestItemsItemVariant1Operation._('update');
-  static const upsert = PatchEdgeConfigItemsRequestItemsItemVariant1Operation._('upsert');
+  static const update =
+      PatchEdgeConfigItemsRequestItemsItemVariant1Operation._('update');
+  static const upsert =
+      PatchEdgeConfigItemsRequestItemsItemVariant1Operation._('upsert');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PatchEdgeConfigItemsRequestItemsItemVariant1Operation && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PatchEdgeConfigItemsRequestItemsItemVariant1Operation &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PatchEdgeConfigItemsRequestItemsItemVariant2Operation {
-
   final String value;
 
   const PatchEdgeConfigItemsRequestItemsItemVariant2Operation._(this.value);
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant2Operation.fromJson(String value) => PatchEdgeConfigItemsRequestItemsItemVariant2Operation._(value);
+  factory PatchEdgeConfigItemsRequestItemsItemVariant2Operation.fromJson(
+          String value) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant2Operation._(value);
 
-  static const update = PatchEdgeConfigItemsRequestItemsItemVariant2Operation._('update');
-  static const upsert = PatchEdgeConfigItemsRequestItemsItemVariant2Operation._('upsert');
+  static const update =
+      PatchEdgeConfigItemsRequestItemsItemVariant2Operation._('update');
+  static const upsert =
+      PatchEdgeConfigItemsRequestItemsItemVariant2Operation._('upsert');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PatchEdgeConfigItemsRequestItemsItemVariant2Operation && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PatchEdgeConfigItemsRequestItemsItemVariant2Operation &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PatchEdgeConfigItemsRequestItemsItemVariant3Operation {
-
   final String value;
 
   const PatchEdgeConfigItemsRequestItemsItemVariant3Operation._(this.value);
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant3Operation.fromJson(String value) => PatchEdgeConfigItemsRequestItemsItemVariant3Operation._(value);
+  factory PatchEdgeConfigItemsRequestItemsItemVariant3Operation.fromJson(
+          String value) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant3Operation._(value);
 
-  static const delete = PatchEdgeConfigItemsRequestItemsItemVariant3Operation._('delete');
+  static const delete =
+      PatchEdgeConfigItemsRequestItemsItemVariant3Operation._('delete');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PatchEdgeConfigItemsRequestItemsItemVariant3Operation && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PatchEdgeConfigItemsRequestItemsItemVariant3Operation &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

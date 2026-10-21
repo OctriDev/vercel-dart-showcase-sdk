@@ -7,196 +7,375 @@ part of 'inline.dart';
 class SubmitBillingDataRequestBodyBillingVariant1DiscountsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Partner's billing plan ID.
   final String billingPlanId;
+
   /// Partner's resource ID.
   final SdkOptional<String> resourceId;
+
   /// Start and end are only needed if different from the period's start/end.
   final SdkOptional<String> start;
+
   /// Start and end are only needed if different from the period's start/end.
   final SdkOptional<String> end;
+
   /// Discount name.
   final String name;
+
   /// Discount details.
   final SdkOptional<String> details;
+
   /// Discount amount.
   final String amount;
 
-  const SubmitBillingDataRequestBodyBillingVariant1DiscountsItem({required this.billingPlanId, this.resourceId = const SdkOmitted(), this.start = const SdkOmitted(), this.end = const SdkOmitted(), required this.name, this.details = const SdkOmitted(), required this.amount});
+  const SubmitBillingDataRequestBodyBillingVariant1DiscountsItem(
+      {required this.billingPlanId,
+      this.resourceId = const SdkOmitted(),
+      this.start = const SdkOmitted(),
+      this.end = const SdkOmitted(),
+      required this.name,
+      this.details = const SdkOmitted(),
+      required this.amount});
 
-  SubmitBillingDataRequestBodyBillingVariant1DiscountsItem Function({String billingPlanId, SdkOptional<String> resourceId, SdkOptional<String> start, SdkOptional<String> end, String name, SdkOptional<String> details, String amount}) get copyWith => _copyWith;
+  SubmitBillingDataRequestBodyBillingVariant1DiscountsItem Function(
+      {String billingPlanId,
+      SdkOptional<String> resourceId,
+      SdkOptional<String> start,
+      SdkOptional<String> end,
+      String name,
+      SdkOptional<String> details,
+      String amount}) get copyWith => _copyWith;
 
-  SubmitBillingDataRequestBodyBillingVariant1DiscountsItem _copyWith({Object? billingPlanId = sdkOmittedValue, Object? resourceId = sdkOmittedValue, Object? start = sdkOmittedValue, Object? end = sdkOmittedValue, Object? name = sdkOmittedValue, Object? details = sdkOmittedValue, Object? amount = sdkOmittedValue}) => SubmitBillingDataRequestBodyBillingVariant1DiscountsItem(
-    billingPlanId: identical(billingPlanId, sdkOmittedValue) ? this.billingPlanId : billingPlanId as String,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as SdkOptional<String>,
-    start: identical(start, sdkOmittedValue) ? this.start : start as SdkOptional<String>,
-    end: identical(end, sdkOmittedValue) ? this.end : end as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    details: identical(details, sdkOmittedValue) ? this.details : details as SdkOptional<String>,
-    amount: identical(amount, sdkOmittedValue) ? this.amount : amount as String,
-  );
+  SubmitBillingDataRequestBodyBillingVariant1DiscountsItem _copyWith(
+          {Object? billingPlanId = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue,
+          Object? start = sdkOmittedValue,
+          Object? end = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? details = sdkOmittedValue,
+          Object? amount = sdkOmittedValue}) =>
+      SubmitBillingDataRequestBodyBillingVariant1DiscountsItem(
+        billingPlanId: identical(billingPlanId, sdkOmittedValue)
+            ? this.billingPlanId
+            : billingPlanId as String,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as SdkOptional<String>,
+        start: identical(start, sdkOmittedValue)
+            ? this.start
+            : start as SdkOptional<String>,
+        end: identical(end, sdkOmittedValue)
+            ? this.end
+            : end as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        details: identical(details, sdkOmittedValue)
+            ? this.details
+            : details as SdkOptional<String>,
+        amount:
+            identical(amount, sdkOmittedValue) ? this.amount : amount as String,
+      );
 
-  factory SubmitBillingDataRequestBodyBillingVariant1DiscountsItem.fromJson(Map<String, dynamic> json) => SubmitBillingDataRequestBodyBillingVariant1DiscountsItem(
-    billingPlanId: (json['billingPlanId'] as String?)!,
-    resourceId: json['resourceId'] != null ? SdkPresent((json['resourceId'] as String?)!) : const SdkOmitted(),
-    start: json['start'] != null ? SdkPresent((json['start'] as String?)!) : const SdkOmitted(),
-    end: json['end'] != null ? SdkPresent((json['end'] as String?)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    details: json['details'] != null ? SdkPresent((json['details'] as String?)!) : const SdkOmitted(),
-    amount: (json['amount'] as String?)!,
-  );
+  factory SubmitBillingDataRequestBodyBillingVariant1DiscountsItem.fromJson(
+          Map<String, dynamic> json) =>
+      SubmitBillingDataRequestBodyBillingVariant1DiscountsItem(
+        billingPlanId: (json['billingPlanId'] as String?)!,
+        resourceId: json['resourceId'] != null
+            ? SdkPresent((json['resourceId'] as String?)!)
+            : const SdkOmitted(),
+        start: json['start'] != null
+            ? SdkPresent((json['start'] as String?)!)
+            : const SdkOmitted(),
+        end: json['end'] != null
+            ? SdkPresent((json['end'] as String?)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        details: json['details'] != null
+            ? SdkPresent((json['details'] as String?)!)
+            : const SdkOmitted(),
+        amount: (json['amount'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'billingPlanId': billingPlanId,
-    ...switch (resourceId) {
-      SdkPresent<String>(value: final value) => {'resourceId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (start) {
-      SdkPresent<String>(value: final value) => {'start': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (end) {
-      SdkPresent<String>(value: final value) => {'end': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    ...switch (details) {
-      SdkPresent<String>(value: final value) => {'details': value,},
-      _ => const <String, dynamic>{},
-    },
-    'amount': amount,
-  };
+        'billingPlanId': billingPlanId,
+        ...switch (resourceId) {
+          SdkPresent<String>(value: final value) => {
+              'resourceId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (start) {
+          SdkPresent<String>(value: final value) => {
+              'start': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (end) {
+          SdkPresent<String>(value: final value) => {
+              'end': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        ...switch (details) {
+          SdkPresent<String>(value: final value) => {
+              'details': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'amount': amount,
+      };
 }
 
 class SubmitBillingDataRequestBodyBillingVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<SubmitBillingDataRequestBodyBillingVariant1ItemsItem> items;
-  final SdkOptional<List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>> discounts;
+  final SdkOptional<
+      List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>> discounts;
 
-  const SubmitBillingDataRequestBodyBillingVariant1({required this.items, this.discounts = const SdkOmitted()});
+  const SubmitBillingDataRequestBodyBillingVariant1(
+      {required this.items, this.discounts = const SdkOmitted()});
 
-  SubmitBillingDataRequestBodyBillingVariant1 Function({List<SubmitBillingDataRequestBodyBillingVariant1ItemsItem> items, SdkOptional<List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>> discounts}) get copyWith => _copyWith;
+  SubmitBillingDataRequestBodyBillingVariant1 Function(
+      {List<SubmitBillingDataRequestBodyBillingVariant1ItemsItem> items,
+      SdkOptional<
+              List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>>
+          discounts}) get copyWith => _copyWith;
 
-  SubmitBillingDataRequestBodyBillingVariant1 _copyWith({Object? items = sdkOmittedValue, Object? discounts = sdkOmittedValue}) => SubmitBillingDataRequestBodyBillingVariant1(
-    items: identical(items, sdkOmittedValue) ? this.items : items as List<SubmitBillingDataRequestBodyBillingVariant1ItemsItem>,
-    discounts: identical(discounts, sdkOmittedValue) ? this.discounts : discounts as SdkOptional<List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>>,
-  );
+  SubmitBillingDataRequestBodyBillingVariant1 _copyWith(
+          {Object? items = sdkOmittedValue,
+          Object? discounts = sdkOmittedValue}) =>
+      SubmitBillingDataRequestBodyBillingVariant1(
+        items: identical(items, sdkOmittedValue)
+            ? this.items
+            : items
+                as List<SubmitBillingDataRequestBodyBillingVariant1ItemsItem>,
+        discounts: identical(discounts, sdkOmittedValue)
+            ? this.discounts
+            : discounts as SdkOptional<
+                List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>>,
+      );
 
-  factory SubmitBillingDataRequestBodyBillingVariant1.fromJson(Map<String, dynamic> json) => SubmitBillingDataRequestBodyBillingVariant1(
-    items: ((json['items'] as List?)?.map((e) => SubmitBillingDataRequestBodyBillingVariant1ItemsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    discounts: json['discounts'] != null ? SdkPresent(((json['discounts'] as List?)?.map((e) => SubmitBillingDataRequestBodyBillingVariant1DiscountsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory SubmitBillingDataRequestBodyBillingVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      SubmitBillingDataRequestBodyBillingVariant1(
+        items: ((json['items'] as List?)
+            ?.map((e) =>
+                SubmitBillingDataRequestBodyBillingVariant1ItemsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        discounts: json['discounts'] != null
+            ? SdkPresent(((json['discounts'] as List?)
+                ?.map((e) =>
+                    SubmitBillingDataRequestBodyBillingVariant1DiscountsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'items': items.map((item) => item.toJson()).toList(),
-    ...switch (discounts) {
-      SdkPresent<List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>>(value: final value) => {'discounts': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'items': items.map((item) => item.toJson()).toList(),
+        ...switch (discounts) {
+          SdkPresent<
+                List<SubmitBillingDataRequestBodyBillingVariant1DiscountsItem>>(
+            value: final value
+          ) =>
+            {
+              'discounts': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class SubmitBillingDataRequestBodyUsageItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Partner's resource ID.
   final SdkOptional<String> resourceId;
+
   /// Metric name.
   final String name;
+
   /// Type of the metric. - total: measured total value, such as Database size - interval: usage during the period, such as i/o or number of queries. - rate: rate of usage, such as queries per second.
   final SubmitBillingDataRequestBodyUsageItemType type_;
+
   /// Metric units. Example: "GB"
   final String units;
+
   /// Metric value for the day. Could be a final or an interim value for the day.
   final double dayValue;
+
   /// Metric value for the billing period. Could be a final or an interim value for the period.
   final double periodValue;
+
   /// The limit value of the metric for a billing period, if a limit is defined by the plan.
   final SdkOptional<double> planValue;
 
-  const SubmitBillingDataRequestBodyUsageItem({this.resourceId = const SdkOmitted(), required this.name, required this.type_, required this.units, required this.dayValue, required this.periodValue, this.planValue = const SdkOmitted()});
+  const SubmitBillingDataRequestBodyUsageItem(
+      {this.resourceId = const SdkOmitted(),
+      required this.name,
+      required this.type_,
+      required this.units,
+      required this.dayValue,
+      required this.periodValue,
+      this.planValue = const SdkOmitted()});
 
-  SubmitBillingDataRequestBodyUsageItem Function({SdkOptional<String> resourceId, String name, SubmitBillingDataRequestBodyUsageItemType type_, String units, double dayValue, double periodValue, SdkOptional<double> planValue}) get copyWith => _copyWith;
+  SubmitBillingDataRequestBodyUsageItem Function(
+      {SdkOptional<String> resourceId,
+      String name,
+      SubmitBillingDataRequestBodyUsageItemType type_,
+      String units,
+      double dayValue,
+      double periodValue,
+      SdkOptional<double> planValue}) get copyWith => _copyWith;
 
-  SubmitBillingDataRequestBodyUsageItem _copyWith({Object? resourceId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? units = sdkOmittedValue, Object? dayValue = sdkOmittedValue, Object? periodValue = sdkOmittedValue, Object? planValue = sdkOmittedValue}) => SubmitBillingDataRequestBodyUsageItem(
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SubmitBillingDataRequestBodyUsageItemType,
-    units: identical(units, sdkOmittedValue) ? this.units : units as String,
-    dayValue: identical(dayValue, sdkOmittedValue) ? this.dayValue : dayValue as double,
-    periodValue: identical(periodValue, sdkOmittedValue) ? this.periodValue : periodValue as double,
-    planValue: identical(planValue, sdkOmittedValue) ? this.planValue : planValue as SdkOptional<double>,
-  );
+  SubmitBillingDataRequestBodyUsageItem _copyWith(
+          {Object? resourceId = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? units = sdkOmittedValue,
+          Object? dayValue = sdkOmittedValue,
+          Object? periodValue = sdkOmittedValue,
+          Object? planValue = sdkOmittedValue}) =>
+      SubmitBillingDataRequestBodyUsageItem(
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SubmitBillingDataRequestBodyUsageItemType,
+        units: identical(units, sdkOmittedValue) ? this.units : units as String,
+        dayValue: identical(dayValue, sdkOmittedValue)
+            ? this.dayValue
+            : dayValue as double,
+        periodValue: identical(periodValue, sdkOmittedValue)
+            ? this.periodValue
+            : periodValue as double,
+        planValue: identical(planValue, sdkOmittedValue)
+            ? this.planValue
+            : planValue as SdkOptional<double>,
+      );
 
-  factory SubmitBillingDataRequestBodyUsageItem.fromJson(Map<String, dynamic> json) => SubmitBillingDataRequestBodyUsageItem(
-    resourceId: json['resourceId'] != null ? SdkPresent((json['resourceId'] as String?)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? SubmitBillingDataRequestBodyUsageItemType.fromJson(json['type'] as String) : null)!,
-    units: (json['units'] as String?)!,
-    dayValue: ((json['dayValue'] as num?)?.toDouble())!,
-    periodValue: ((json['periodValue'] as num?)?.toDouble())!,
-    planValue: json['planValue'] != null ? SdkPresent(((json['planValue'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory SubmitBillingDataRequestBodyUsageItem.fromJson(
+          Map<String, dynamic> json) =>
+      SubmitBillingDataRequestBodyUsageItem(
+        resourceId: json['resourceId'] != null
+            ? SdkPresent((json['resourceId'] as String?)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? SubmitBillingDataRequestBodyUsageItemType.fromJson(
+                json['type'] as String)
+            : null)!,
+        units: (json['units'] as String?)!,
+        dayValue: ((json['dayValue'] as num?)?.toDouble())!,
+        periodValue: ((json['periodValue'] as num?)?.toDouble())!,
+        planValue: json['planValue'] != null
+            ? SdkPresent(((json['planValue'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (resourceId) {
-      SdkPresent<String>(value: final value) => {'resourceId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'type': type_.toJson(),
-    'units': units,
-    'dayValue': dayValue,
-    'periodValue': periodValue,
-    ...switch (planValue) {
-      SdkPresent<double>(value: final value) => {'planValue': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (resourceId) {
+          SdkPresent<String>(value: final value) => {
+              'resourceId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'type': type_.toJson(),
+        'units': units,
+        'dayValue': dayValue,
+        'periodValue': periodValue,
+        ...switch (planValue) {
+          SdkPresent<double>(value: final value) => {
+              'planValue': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class SubmitBillingDataRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Server time of your integration, used to determine the most recent data for race conditions & updates. Only the latest usage data for a given day, week, and month will be kept.
   final String timestamp;
+
   /// End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your "end of day" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 24h earlier from our server's current time.
   final String eod;
+
   /// Period for the billing cycle. The period end date cannot be older than 24 hours earlier than our current server's time.
   final SubmitBillingDataRequestBodyPeriod period;
+
   /// Billing data (interim invoicing data).
   final dynamic billing;
   final List<SubmitBillingDataRequestBodyUsageItem> usage;
 
-  const SubmitBillingDataRequestBody({required this.timestamp, required this.eod, required this.period, required this.billing, required this.usage});
+  const SubmitBillingDataRequestBody(
+      {required this.timestamp,
+      required this.eod,
+      required this.period,
+      required this.billing,
+      required this.usage});
 
-  SubmitBillingDataRequestBody Function({String timestamp, String eod, SubmitBillingDataRequestBodyPeriod period, dynamic billing, List<SubmitBillingDataRequestBodyUsageItem> usage}) get copyWith => _copyWith;
+  SubmitBillingDataRequestBody Function(
+          {String timestamp,
+          String eod,
+          SubmitBillingDataRequestBodyPeriod period,
+          dynamic billing,
+          List<SubmitBillingDataRequestBodyUsageItem> usage})
+      get copyWith => _copyWith;
 
-  SubmitBillingDataRequestBody _copyWith({Object? timestamp = sdkOmittedValue, Object? eod = sdkOmittedValue, Object? period = sdkOmittedValue, Object? billing = sdkOmittedValue, Object? usage = sdkOmittedValue}) => SubmitBillingDataRequestBody(
-    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as String,
-    eod: identical(eod, sdkOmittedValue) ? this.eod : eod as String,
-    period: identical(period, sdkOmittedValue) ? this.period : period as SubmitBillingDataRequestBodyPeriod,
-    billing: identical(billing, sdkOmittedValue) ? this.billing : billing as dynamic,
-    usage: identical(usage, sdkOmittedValue) ? this.usage : usage as List<SubmitBillingDataRequestBodyUsageItem>,
-  );
+  SubmitBillingDataRequestBody _copyWith(
+          {Object? timestamp = sdkOmittedValue,
+          Object? eod = sdkOmittedValue,
+          Object? period = sdkOmittedValue,
+          Object? billing = sdkOmittedValue,
+          Object? usage = sdkOmittedValue}) =>
+      SubmitBillingDataRequestBody(
+        timestamp: identical(timestamp, sdkOmittedValue)
+            ? this.timestamp
+            : timestamp as String,
+        eod: identical(eod, sdkOmittedValue) ? this.eod : eod as String,
+        period: identical(period, sdkOmittedValue)
+            ? this.period
+            : period as SubmitBillingDataRequestBodyPeriod,
+        billing: identical(billing, sdkOmittedValue)
+            ? this.billing
+            : billing as dynamic,
+        usage: identical(usage, sdkOmittedValue)
+            ? this.usage
+            : usage as List<SubmitBillingDataRequestBodyUsageItem>,
+      );
 
-  factory SubmitBillingDataRequestBody.fromJson(Map<String, dynamic> json) => SubmitBillingDataRequestBody(
-    timestamp: (json['timestamp'] as String?)!,
-    eod: (json['eod'] as String?)!,
-    period: (json['period'] != null ? SubmitBillingDataRequestBodyPeriod.fromJson(json['period'] as Map<String, dynamic>) : null)!,
-    billing: (json['billing'])!,
-    usage: ((json['usage'] as List?)?.map((e) => SubmitBillingDataRequestBodyUsageItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory SubmitBillingDataRequestBody.fromJson(Map<String, dynamic> json) =>
+      SubmitBillingDataRequestBody(
+        timestamp: (json['timestamp'] as String?)!,
+        eod: (json['eod'] as String?)!,
+        period: (json['period'] != null
+            ? SubmitBillingDataRequestBodyPeriod.fromJson(
+                json['period'] as Map<String, dynamic>)
+            : null)!,
+        billing: (json['billing'])!,
+        usage: ((json['usage'] as List?)
+            ?.map((e) => SubmitBillingDataRequestBodyUsageItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'timestamp': timestamp,
-    'eod': eod,
-    'period': period.toJson(),
-    'billing': billing,
-    'usage': usage.map((item) => item.toJson()).toList(),
-  };
+        'timestamp': timestamp,
+        'eod': eod,
+        'period': period.toJson(),
+        'billing': billing,
+        'usage': usage.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// Subscription period for this billing cycle.
@@ -206,22 +385,27 @@ class SubmitInvoiceRequestBodyPeriod {
   final String start;
   final String end;
 
-  const SubmitInvoiceRequestBodyPeriod({required this.start, required this.end});
+  const SubmitInvoiceRequestBodyPeriod(
+      {required this.start, required this.end});
 
-  SubmitInvoiceRequestBodyPeriod Function({String start, String end}) get copyWith => _copyWith;
+  SubmitInvoiceRequestBodyPeriod Function({String start, String end})
+      get copyWith => _copyWith;
 
-  SubmitInvoiceRequestBodyPeriod _copyWith({Object? start = sdkOmittedValue, Object? end = sdkOmittedValue}) => SubmitInvoiceRequestBodyPeriod(
-    start: identical(start, sdkOmittedValue) ? this.start : start as String,
-    end: identical(end, sdkOmittedValue) ? this.end : end as String,
-  );
+  SubmitInvoiceRequestBodyPeriod _copyWith(
+          {Object? start = sdkOmittedValue, Object? end = sdkOmittedValue}) =>
+      SubmitInvoiceRequestBodyPeriod(
+        start: identical(start, sdkOmittedValue) ? this.start : start as String,
+        end: identical(end, sdkOmittedValue) ? this.end : end as String,
+      );
 
-  factory SubmitInvoiceRequestBodyPeriod.fromJson(Map<String, dynamic> json) => SubmitInvoiceRequestBodyPeriod(
-    start: (json['start'] as String?)!,
-    end: (json['end'] as String?)!,
-  );
+  factory SubmitInvoiceRequestBodyPeriod.fromJson(Map<String, dynamic> json) =>
+      SubmitInvoiceRequestBodyPeriod(
+        start: (json['start'] as String?)!,
+        end: (json['end'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'start': start,
-    'end': end,
-  };
+        'start': start,
+        'end': end,
+      };
 }

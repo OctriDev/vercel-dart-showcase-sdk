@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateStorageStoresBlobRequestBodyRegion {
-
   final String value;
 
   const CreateStorageStoresBlobRequestBodyRegion._(this.value);
 
-  factory CreateStorageStoresBlobRequestBodyRegion.fromJson(String value) => CreateStorageStoresBlobRequestBodyRegion._(value);
+  factory CreateStorageStoresBlobRequestBodyRegion.fromJson(String value) =>
+      CreateStorageStoresBlobRequestBodyRegion._(value);
 
   static const arn1 = CreateStorageStoresBlobRequestBodyRegion._('arn1');
   static const bom1 = CreateStorageStoresBlobRequestBodyRegion._('bom1');
@@ -35,251 +35,473 @@ final class CreateStorageStoresBlobRequestBodyRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobRequestBodyRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateStorageStoresBlobRequestBodyRegion && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateStorageStoresBlobResponseStoreAccess {
-
   final String value;
 
   const CreateStorageStoresBlobResponseStoreAccess._(this.value);
 
-  factory CreateStorageStoresBlobResponseStoreAccess.fromJson(String value) => CreateStorageStoresBlobResponseStoreAccess._(value);
+  factory CreateStorageStoresBlobResponseStoreAccess.fromJson(String value) =>
+      CreateStorageStoresBlobResponseStoreAccess._(value);
 
-  static const private = CreateStorageStoresBlobResponseStoreAccess._('private');
+  static const private =
+      CreateStorageStoresBlobResponseStoreAccess._('private');
   static const public = CreateStorageStoresBlobResponseStoreAccess._('public');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreAccess && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateStorageStoresBlobResponseStoreAccess &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateStorageStoresBlobResponseStoreIsTokenExpired {
-
   final bool value;
 
   const CreateStorageStoresBlobResponseStoreIsTokenExpired._(this.value);
 
-  factory CreateStorageStoresBlobResponseStoreIsTokenExpired.fromJson(bool value) => CreateStorageStoresBlobResponseStoreIsTokenExpired._(value);
+  factory CreateStorageStoresBlobResponseStoreIsTokenExpired.fromJson(
+          bool value) =>
+      CreateStorageStoresBlobResponseStoreIsTokenExpired._(value);
 
-  static const false_ = CreateStorageStoresBlobResponseStoreIsTokenExpired._(false);
-  static const true_ = CreateStorageStoresBlobResponseStoreIsTokenExpired._(true);
+  static const false_ =
+      CreateStorageStoresBlobResponseStoreIsTokenExpired._(false);
+  static const true_ =
+      CreateStorageStoresBlobResponseStoreIsTokenExpired._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreIsTokenExpired && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateStorageStoresBlobResponseStoreIsTokenExpired &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// A project-default store is a private blob store that is lazily created per-project, uses OIDC auth instead of read-write tokens, and cannot be modified through standard store mutation APIs. Undefined for legacy stores.
 final class CreateStorageStoresBlobResponseStoreKind {
-
   final String value;
 
   const CreateStorageStoresBlobResponseStoreKind._(this.value);
 
-  factory CreateStorageStoresBlobResponseStoreKind.fromJson(String value) => CreateStorageStoresBlobResponseStoreKind._(value);
+  factory CreateStorageStoresBlobResponseStoreKind.fromJson(String value) =>
+      CreateStorageStoresBlobResponseStoreKind._(value);
 
-  static const projectDefault = CreateStorageStoresBlobResponseStoreKind._('project-default');
-  static const userCreated = CreateStorageStoresBlobResponseStoreKind._('user-created');
+  static const projectDefault =
+      CreateStorageStoresBlobResponseStoreKind._('project-default');
+  static const userCreated =
+      CreateStorageStoresBlobResponseStoreKind._('user-created');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateStorageStoresBlobResponseStoreKind && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item {
-
   final String value;
 
-  const CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item._(this.value);
+  const CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item._(
+      this.value);
 
-  factory CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item.fromJson(String value) => CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item._(value);
+  factory CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item.fromJson(
+          String value) =>
+      CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item
+          ._(value);
 
-  static const bitbucket = CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item._('bitbucket');
-  static const github = CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item._('github');
-  static const gitlab = CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item._('gitlab');
+  static const bitbucket =
+      CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item
+          ._('bitbucket');
+  static const github =
+      CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item
+          ._('github');
+  static const gitlab =
+      CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item
+          ._('gitlab');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant0Item &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1 {
-
   final String value;
 
-  const CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1._(this.value);
+  const CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1._(
+      this.value);
 
-  factory CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1.fromJson(String value) => CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1._(value);
+  factory CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1.fromJson(
+          String value) =>
+      CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1._(
+          value);
 
-  static const unknown = CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1._('*');
+  static const unknown =
+      CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1._(
+          '*');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired {
-
   final bool value;
 
-  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired._(this.value);
+  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired._(
+      this.value);
 
-  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired.fromJson(bool value) => CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired._(value);
+  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired.fromJson(
+          bool value) =>
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired
+          ._(value);
 
-  static const false_ = CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired._(false);
-  static const true_ = CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired._(true);
+  static const false_ =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired
+          ._(false);
+  static const true_ =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsRequired &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework {
-
   final String value;
 
-  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(this.value);
+  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+      this.value);
 
-  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.fromJson(String value) => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(value);
+  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.fromJson(
+          String value) =>
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          value);
 
-  static const actixWeb = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('actix-web');
-  static const angular = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('angular');
-  static const ash = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('ash');
-  static const astro = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('astro');
-  static const axum = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('axum');
-  static const blitzjs = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('blitzjs');
-  static const brunch = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('brunch');
-  static const bun = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('bun');
-  static const container = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('container');
-  static const createReactApp = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('create-react-app');
-  static const django = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('django');
-  static const docusaurus = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('docusaurus');
-  static const docusaurus2 = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('docusaurus-2');
-  static const dojo = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('dojo');
-  static const eleventy = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('eleventy');
-  static const elysia = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('elysia');
-  static const ember = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('ember');
-  static const eve = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('eve');
-  static const express = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('express');
-  static const factoryEve = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('factory-eve');
-  static const fastapi = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('fastapi');
-  static const fasthtml = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('fasthtml');
-  static const fastify = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('fastify');
-  static const flask = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('flask');
-  static const gatsby = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('gatsby');
-  static const go = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('go');
-  static const gridsome = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('gridsome');
-  static const h3 = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('h3');
-  static const hexo = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('hexo');
-  static const hono = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('hono');
-  static const hugo = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('hugo');
-  static const hydrogen = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('hydrogen');
-  static const ionicAngular = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('ionic-angular');
-  static const ionicReact = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('ionic-react');
-  static const jekyll = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('jekyll');
-  static const koa = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('koa');
-  static const mastra = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('mastra');
-  static const middleman = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('middleman');
-  static const nestjs = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('nestjs');
-  static const nextjs = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('nextjs');
-  static const nitro = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('nitro');
-  static const node = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('node');
-  static const nuxtjs = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('nuxtjs');
-  static const parcel = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('parcel');
-  static const polymer = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('polymer');
-  static const preact = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('preact');
-  static const python = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('python');
-  static const reactRouter = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('react-router');
-  static const redwoodjs = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('redwoodjs');
-  static const remix = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('remix');
-  static const ruby = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('ruby');
-  static const rust = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('rust');
-  static const saber = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('saber');
-  static const sanity = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('sanity');
-  static const sanityV2 = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('sanity-v2');
-  static const sapper = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('sapper');
-  static const scully = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('scully');
-  static const services = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('services');
-  static const solidstart = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('solidstart');
-  static const solidstart1 = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('solidstart-1');
-  static const stencil = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('stencil');
-  static const storybook = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('storybook');
-  static const svelte = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('svelte');
-  static const sveltekit = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('sveltekit');
-  static const sveltekit1 = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('sveltekit-1');
-  static const tanstackStart = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('tanstack-start');
-  static const tanstackStartLovable = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('tanstack-start-lovable');
-  static const umijs = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('umijs');
-  static const vite = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('vite');
-  static const vitepress = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('vitepress');
-  static const vue = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('vue');
-  static const vuepress = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('vuepress');
-  static const xmcp = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('xmcp');
-  static const zola = CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('zola');
+  static const actixWeb =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'actix-web');
+  static const angular =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'angular');
+  static const ash =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'ash');
+  static const astro =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'astro');
+  static const axum =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'axum');
+  static const blitzjs =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'blitzjs');
+  static const brunch =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'brunch');
+  static const bun =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'bun');
+  static const container =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'container');
+  static const createReactApp =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'create-react-app');
+  static const django =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'django');
+  static const docusaurus =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'docusaurus');
+  static const docusaurus2 =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'docusaurus-2');
+  static const dojo =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'dojo');
+  static const eleventy =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'eleventy');
+  static const elysia =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'elysia');
+  static const ember =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'ember');
+  static const eve =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'eve');
+  static const express =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'express');
+  static const factoryEve =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'factory-eve');
+  static const fastapi =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'fastapi');
+  static const fasthtml =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'fasthtml');
+  static const fastify =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'fastify');
+  static const flask =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'flask');
+  static const gatsby =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'gatsby');
+  static const go =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('go');
+  static const gridsome =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'gridsome');
+  static const h3 =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._('h3');
+  static const hexo =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'hexo');
+  static const hono =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'hono');
+  static const hugo =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'hugo');
+  static const hydrogen =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'hydrogen');
+  static const ionicAngular =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'ionic-angular');
+  static const ionicReact =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'ionic-react');
+  static const jekyll =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'jekyll');
+  static const koa =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'koa');
+  static const mastra =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'mastra');
+  static const middleman =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'middleman');
+  static const nestjs =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'nestjs');
+  static const nextjs =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'nextjs');
+  static const nitro =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'nitro');
+  static const node =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'node');
+  static const nuxtjs =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'nuxtjs');
+  static const parcel =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'parcel');
+  static const polymer =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'polymer');
+  static const preact =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'preact');
+  static const python =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'python');
+  static const reactRouter =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'react-router');
+  static const redwoodjs =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'redwoodjs');
+  static const remix =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'remix');
+  static const ruby =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'ruby');
+  static const rust =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'rust');
+  static const saber =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'saber');
+  static const sanity =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'sanity');
+  static const sanityV2 =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'sanity-v2');
+  static const sapper =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'sapper');
+  static const scully =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'scully');
+  static const services =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'services');
+  static const solidstart =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'solidstart');
+  static const solidstart1 =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'solidstart-1');
+  static const stencil =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'stencil');
+  static const storybook =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'storybook');
+  static const svelte =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'svelte');
+  static const sveltekit =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'sveltekit');
+  static const sveltekit1 =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'sveltekit-1');
+  static const tanstackStart =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'tanstack-start');
+  static const tanstackStartLovable =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'tanstack-start-lovable');
+  static const umijs =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'umijs');
+  static const vite =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'vite');
+  static const vitepress =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'vitepress');
+  static const vue =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'vue');
+  static const vuepress =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'vuepress');
+  static const xmcp =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'xmcp');
+  static const zola =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework._(
+          'zola');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive {
-
   final bool value;
 
-  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive._(this.value);
+  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive._(
+      this.value);
 
-  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive.fromJson(bool value) => CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive._(value);
+  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive.fromJson(
+          bool value) =>
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive
+          ._(value);
 
-  static const false_ = CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive._(false);
-  static const true_ = CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive._(true);
+  static const false_ =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive
+          ._(false);
+  static const true_ =
+      CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateStorageStoresBlobResponseStoreProjectsMetadataItemMakeEnvVarsSensitive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

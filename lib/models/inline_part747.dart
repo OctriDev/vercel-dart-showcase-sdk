@@ -7,279 +7,540 @@ part of 'inline.dart';
 class GetInvoiceResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// System creation date. ISO 8601 timestamp.
   final String created;
+
   /// Invoice discounts.
   final SdkOptional<List<GetInvoiceResponseDiscountsItem>> discounts;
+
   /// Partner-supplied Invoice ID, if applicable.
   final SdkOptional<String> externalId;
+
   /// Invoice date. ISO 8601 timestamp.
   final String invoiceDate;
+
   /// Vercel Marketplace Invoice ID.
   final String invoiceId;
+
   /// User-readable invoice number.
   final SdkOptional<String> invoiceNumber;
+
   /// Invoice items.
   final List<GetInvoiceResponseItemsItem> items;
+
   /// Additional memo for the invoice.
   final SdkOptional<String> memo;
+
   /// Moment the invoice was paid. ISO 8601 timestamp.
   final SdkOptional<String> paidAt;
+
   /// Subscription period for this billing cycle. ISO 8601 timestamps.
   final GetInvoiceResponsePeriod period;
+
   /// Most recent moment the invoice was refunded. ISO 8601 timestamp.
   final SdkOptional<String> refundedAt;
+
   /// The reason for refund. Only applicable for states "refunded" or "refund_request".
   final SdkOptional<String> refundReason;
+
   /// Refund amount. Only applicable for states "refunded" or "refund_request". A dollar-based decimal string.
   final SdkOptional<String> refundTotal;
+
   /// Invoice state.
   final GetInvoiceResponseState state;
+
   /// Whether the invoice is in the testmode (no real transaction created).
   final SdkOptional<GetInvoiceResponseTest> test;
+
   /// Invoice total amount. A dollar-based decimal string.
   final String total;
+
   /// System update date. ISO 8601 timestamp.
   final String updated;
 
-  const GetInvoiceResponse({required this.created, this.discounts = const SdkOmitted(), this.externalId = const SdkOmitted(), required this.invoiceDate, required this.invoiceId, this.invoiceNumber = const SdkOmitted(), required this.items, this.memo = const SdkOmitted(), this.paidAt = const SdkOmitted(), required this.period, this.refundedAt = const SdkOmitted(), this.refundReason = const SdkOmitted(), this.refundTotal = const SdkOmitted(), required this.state, this.test = const SdkOmitted(), required this.total, required this.updated});
+  const GetInvoiceResponse(
+      {required this.created,
+      this.discounts = const SdkOmitted(),
+      this.externalId = const SdkOmitted(),
+      required this.invoiceDate,
+      required this.invoiceId,
+      this.invoiceNumber = const SdkOmitted(),
+      required this.items,
+      this.memo = const SdkOmitted(),
+      this.paidAt = const SdkOmitted(),
+      required this.period,
+      this.refundedAt = const SdkOmitted(),
+      this.refundReason = const SdkOmitted(),
+      this.refundTotal = const SdkOmitted(),
+      required this.state,
+      this.test = const SdkOmitted(),
+      required this.total,
+      required this.updated});
 
-  GetInvoiceResponse Function({String created, SdkOptional<List<GetInvoiceResponseDiscountsItem>> discounts, SdkOptional<String> externalId, String invoiceDate, String invoiceId, SdkOptional<String> invoiceNumber, List<GetInvoiceResponseItemsItem> items, SdkOptional<String> memo, SdkOptional<String> paidAt, GetInvoiceResponsePeriod period, SdkOptional<String> refundedAt, SdkOptional<String> refundReason, SdkOptional<String> refundTotal, GetInvoiceResponseState state, SdkOptional<GetInvoiceResponseTest> test, String total, String updated}) get copyWith => _copyWith;
+  GetInvoiceResponse Function(
+      {String created,
+      SdkOptional<List<GetInvoiceResponseDiscountsItem>> discounts,
+      SdkOptional<String> externalId,
+      String invoiceDate,
+      String invoiceId,
+      SdkOptional<String> invoiceNumber,
+      List<GetInvoiceResponseItemsItem> items,
+      SdkOptional<String> memo,
+      SdkOptional<String> paidAt,
+      GetInvoiceResponsePeriod period,
+      SdkOptional<String> refundedAt,
+      SdkOptional<String> refundReason,
+      SdkOptional<String> refundTotal,
+      GetInvoiceResponseState state,
+      SdkOptional<GetInvoiceResponseTest> test,
+      String total,
+      String updated}) get copyWith => _copyWith;
 
-  GetInvoiceResponse _copyWith({Object? created = sdkOmittedValue, Object? discounts = sdkOmittedValue, Object? externalId = sdkOmittedValue, Object? invoiceDate = sdkOmittedValue, Object? invoiceId = sdkOmittedValue, Object? invoiceNumber = sdkOmittedValue, Object? items = sdkOmittedValue, Object? memo = sdkOmittedValue, Object? paidAt = sdkOmittedValue, Object? period = sdkOmittedValue, Object? refundedAt = sdkOmittedValue, Object? refundReason = sdkOmittedValue, Object? refundTotal = sdkOmittedValue, Object? state = sdkOmittedValue, Object? test = sdkOmittedValue, Object? total = sdkOmittedValue, Object? updated = sdkOmittedValue}) => GetInvoiceResponse(
-    created: identical(created, sdkOmittedValue) ? this.created : created as String,
-    discounts: identical(discounts, sdkOmittedValue) ? this.discounts : discounts as SdkOptional<List<GetInvoiceResponseDiscountsItem>>,
-    externalId: identical(externalId, sdkOmittedValue) ? this.externalId : externalId as SdkOptional<String>,
-    invoiceDate: identical(invoiceDate, sdkOmittedValue) ? this.invoiceDate : invoiceDate as String,
-    invoiceId: identical(invoiceId, sdkOmittedValue) ? this.invoiceId : invoiceId as String,
-    invoiceNumber: identical(invoiceNumber, sdkOmittedValue) ? this.invoiceNumber : invoiceNumber as SdkOptional<String>,
-    items: identical(items, sdkOmittedValue) ? this.items : items as List<GetInvoiceResponseItemsItem>,
-    memo: identical(memo, sdkOmittedValue) ? this.memo : memo as SdkOptional<String>,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<String>,
-    period: identical(period, sdkOmittedValue) ? this.period : period as GetInvoiceResponsePeriod,
-    refundedAt: identical(refundedAt, sdkOmittedValue) ? this.refundedAt : refundedAt as SdkOptional<String>,
-    refundReason: identical(refundReason, sdkOmittedValue) ? this.refundReason : refundReason as SdkOptional<String>,
-    refundTotal: identical(refundTotal, sdkOmittedValue) ? this.refundTotal : refundTotal as SdkOptional<String>,
-    state: identical(state, sdkOmittedValue) ? this.state : state as GetInvoiceResponseState,
-    test: identical(test, sdkOmittedValue) ? this.test : test as SdkOptional<GetInvoiceResponseTest>,
-    total: identical(total, sdkOmittedValue) ? this.total : total as String,
-    updated: identical(updated, sdkOmittedValue) ? this.updated : updated as String,
-  );
+  GetInvoiceResponse _copyWith(
+          {Object? created = sdkOmittedValue,
+          Object? discounts = sdkOmittedValue,
+          Object? externalId = sdkOmittedValue,
+          Object? invoiceDate = sdkOmittedValue,
+          Object? invoiceId = sdkOmittedValue,
+          Object? invoiceNumber = sdkOmittedValue,
+          Object? items = sdkOmittedValue,
+          Object? memo = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue,
+          Object? period = sdkOmittedValue,
+          Object? refundedAt = sdkOmittedValue,
+          Object? refundReason = sdkOmittedValue,
+          Object? refundTotal = sdkOmittedValue,
+          Object? state = sdkOmittedValue,
+          Object? test = sdkOmittedValue,
+          Object? total = sdkOmittedValue,
+          Object? updated = sdkOmittedValue}) =>
+      GetInvoiceResponse(
+        created: identical(created, sdkOmittedValue)
+            ? this.created
+            : created as String,
+        discounts: identical(discounts, sdkOmittedValue)
+            ? this.discounts
+            : discounts as SdkOptional<List<GetInvoiceResponseDiscountsItem>>,
+        externalId: identical(externalId, sdkOmittedValue)
+            ? this.externalId
+            : externalId as SdkOptional<String>,
+        invoiceDate: identical(invoiceDate, sdkOmittedValue)
+            ? this.invoiceDate
+            : invoiceDate as String,
+        invoiceId: identical(invoiceId, sdkOmittedValue)
+            ? this.invoiceId
+            : invoiceId as String,
+        invoiceNumber: identical(invoiceNumber, sdkOmittedValue)
+            ? this.invoiceNumber
+            : invoiceNumber as SdkOptional<String>,
+        items: identical(items, sdkOmittedValue)
+            ? this.items
+            : items as List<GetInvoiceResponseItemsItem>,
+        memo: identical(memo, sdkOmittedValue)
+            ? this.memo
+            : memo as SdkOptional<String>,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<String>,
+        period: identical(period, sdkOmittedValue)
+            ? this.period
+            : period as GetInvoiceResponsePeriod,
+        refundedAt: identical(refundedAt, sdkOmittedValue)
+            ? this.refundedAt
+            : refundedAt as SdkOptional<String>,
+        refundReason: identical(refundReason, sdkOmittedValue)
+            ? this.refundReason
+            : refundReason as SdkOptional<String>,
+        refundTotal: identical(refundTotal, sdkOmittedValue)
+            ? this.refundTotal
+            : refundTotal as SdkOptional<String>,
+        state: identical(state, sdkOmittedValue)
+            ? this.state
+            : state as GetInvoiceResponseState,
+        test: identical(test, sdkOmittedValue)
+            ? this.test
+            : test as SdkOptional<GetInvoiceResponseTest>,
+        total: identical(total, sdkOmittedValue) ? this.total : total as String,
+        updated: identical(updated, sdkOmittedValue)
+            ? this.updated
+            : updated as String,
+      );
 
-  factory GetInvoiceResponse.fromJson(Map<String, dynamic> json) => GetInvoiceResponse(
-    created: (json['created'] as String?)!,
-    discounts: json['discounts'] != null ? SdkPresent(((json['discounts'] as List?)?.map((e) => GetInvoiceResponseDiscountsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    externalId: json['externalId'] != null ? SdkPresent((json['externalId'] as String?)!) : const SdkOmitted(),
-    invoiceDate: (json['invoiceDate'] as String?)!,
-    invoiceId: (json['invoiceId'] as String?)!,
-    invoiceNumber: json['invoiceNumber'] != null ? SdkPresent((json['invoiceNumber'] as String?)!) : const SdkOmitted(),
-    items: ((json['items'] as List?)?.map((e) => GetInvoiceResponseItemsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    memo: json['memo'] != null ? SdkPresent((json['memo'] as String?)!) : const SdkOmitted(),
-    paidAt: json['paidAt'] != null ? SdkPresent((json['paidAt'] as String?)!) : const SdkOmitted(),
-    period: (json['period'] != null ? GetInvoiceResponsePeriod.fromJson(json['period'] as Map<String, dynamic>) : null)!,
-    refundedAt: json['refundedAt'] != null ? SdkPresent((json['refundedAt'] as String?)!) : const SdkOmitted(),
-    refundReason: json['refundReason'] != null ? SdkPresent((json['refundReason'] as String?)!) : const SdkOmitted(),
-    refundTotal: json['refundTotal'] != null ? SdkPresent((json['refundTotal'] as String?)!) : const SdkOmitted(),
-    state: (json['state'] != null ? GetInvoiceResponseState.fromJson(json['state'] as String) : null)!,
-    test: json['test'] != null ? SdkPresent((json['test'] != null ? GetInvoiceResponseTest.fromJson(json['test'] as bool) : null)!) : const SdkOmitted(),
-    total: (json['total'] as String?)!,
-    updated: (json['updated'] as String?)!,
-  );
+  factory GetInvoiceResponse.fromJson(Map<String, dynamic> json) =>
+      GetInvoiceResponse(
+        created: (json['created'] as String?)!,
+        discounts: json['discounts'] != null
+            ? SdkPresent(((json['discounts'] as List?)
+                ?.map((e) => GetInvoiceResponseDiscountsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        externalId: json['externalId'] != null
+            ? SdkPresent((json['externalId'] as String?)!)
+            : const SdkOmitted(),
+        invoiceDate: (json['invoiceDate'] as String?)!,
+        invoiceId: (json['invoiceId'] as String?)!,
+        invoiceNumber: json['invoiceNumber'] != null
+            ? SdkPresent((json['invoiceNumber'] as String?)!)
+            : const SdkOmitted(),
+        items: ((json['items'] as List?)
+            ?.map((e) =>
+                GetInvoiceResponseItemsItem.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        memo: json['memo'] != null
+            ? SdkPresent((json['memo'] as String?)!)
+            : const SdkOmitted(),
+        paidAt: json['paidAt'] != null
+            ? SdkPresent((json['paidAt'] as String?)!)
+            : const SdkOmitted(),
+        period: (json['period'] != null
+            ? GetInvoiceResponsePeriod.fromJson(
+                json['period'] as Map<String, dynamic>)
+            : null)!,
+        refundedAt: json['refundedAt'] != null
+            ? SdkPresent((json['refundedAt'] as String?)!)
+            : const SdkOmitted(),
+        refundReason: json['refundReason'] != null
+            ? SdkPresent((json['refundReason'] as String?)!)
+            : const SdkOmitted(),
+        refundTotal: json['refundTotal'] != null
+            ? SdkPresent((json['refundTotal'] as String?)!)
+            : const SdkOmitted(),
+        state: (json['state'] != null
+            ? GetInvoiceResponseState.fromJson(json['state'] as String)
+            : null)!,
+        test: json['test'] != null
+            ? SdkPresent((json['test'] != null
+                ? GetInvoiceResponseTest.fromJson(json['test'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        total: (json['total'] as String?)!,
+        updated: (json['updated'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'created': created,
-    ...switch (discounts) {
-      SdkPresent<List<GetInvoiceResponseDiscountsItem>>(value: final value) => {'discounts': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (externalId) {
-      SdkPresent<String>(value: final value) => {'externalId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'invoiceDate': invoiceDate,
-    'invoiceId': invoiceId,
-    ...switch (invoiceNumber) {
-      SdkPresent<String>(value: final value) => {'invoiceNumber': value,},
-      _ => const <String, dynamic>{},
-    },
-    'items': items.map((item) => item.toJson()).toList(),
-    ...switch (memo) {
-      SdkPresent<String>(value: final value) => {'memo': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (paidAt) {
-      SdkPresent<String>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'period': period.toJson(),
-    ...switch (refundedAt) {
-      SdkPresent<String>(value: final value) => {'refundedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (refundReason) {
-      SdkPresent<String>(value: final value) => {'refundReason': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (refundTotal) {
-      SdkPresent<String>(value: final value) => {'refundTotal': value,},
-      _ => const <String, dynamic>{},
-    },
-    'state': state.toJson(),
-    ...switch (test) {
-      SdkPresent<GetInvoiceResponseTest>(value: final value) => {'test': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'total': total,
-    'updated': updated,
-  };
+        'created': created,
+        ...switch (discounts) {
+          SdkPresent<List<GetInvoiceResponseDiscountsItem>>(
+            value: final value
+          ) =>
+            {
+              'discounts': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (externalId) {
+          SdkPresent<String>(value: final value) => {
+              'externalId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'invoiceDate': invoiceDate,
+        'invoiceId': invoiceId,
+        ...switch (invoiceNumber) {
+          SdkPresent<String>(value: final value) => {
+              'invoiceNumber': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'items': items.map((item) => item.toJson()).toList(),
+        ...switch (memo) {
+          SdkPresent<String>(value: final value) => {
+              'memo': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (paidAt) {
+          SdkPresent<String>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'period': period.toJson(),
+        ...switch (refundedAt) {
+          SdkPresent<String>(value: final value) => {
+              'refundedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (refundReason) {
+          SdkPresent<String>(value: final value) => {
+              'refundReason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (refundTotal) {
+          SdkPresent<String>(value: final value) => {
+              'refundTotal': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'state': state.toJson(),
+        ...switch (test) {
+          SdkPresent<GetInvoiceResponseTest>(value: final value) => {
+              'test': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'total': total,
+        'updated': updated,
+      };
 }
 
 class UpdateInvoiceRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final UpdateInvoiceRequestBodyAction action;
+
   /// Refund reason.
   final String reason;
+
   /// The total amount to be refunded. Must be less than or equal to the total amount of the invoice.
   final String total;
 
-  const UpdateInvoiceRequestBody({required this.action, required this.reason, required this.total});
+  const UpdateInvoiceRequestBody(
+      {required this.action, required this.reason, required this.total});
 
-  UpdateInvoiceRequestBody Function({UpdateInvoiceRequestBodyAction action, String reason, String total}) get copyWith => _copyWith;
+  UpdateInvoiceRequestBody Function(
+      {UpdateInvoiceRequestBodyAction action,
+      String reason,
+      String total}) get copyWith => _copyWith;
 
-  UpdateInvoiceRequestBody _copyWith({Object? action = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? total = sdkOmittedValue}) => UpdateInvoiceRequestBody(
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateInvoiceRequestBodyAction,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-    total: identical(total, sdkOmittedValue) ? this.total : total as String,
-  );
+  UpdateInvoiceRequestBody _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? reason = sdkOmittedValue,
+          Object? total = sdkOmittedValue}) =>
+      UpdateInvoiceRequestBody(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UpdateInvoiceRequestBodyAction,
+        reason:
+            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+        total: identical(total, sdkOmittedValue) ? this.total : total as String,
+      );
 
-  factory UpdateInvoiceRequestBody.fromJson(Map<String, dynamic> json) => UpdateInvoiceRequestBody(
-    action: (json['action'] != null ? UpdateInvoiceRequestBodyAction.fromJson(json['action'] as String) : null)!,
-    reason: (json['reason'] as String?)!,
-    total: (json['total'] as String?)!,
-  );
+  factory UpdateInvoiceRequestBody.fromJson(Map<String, dynamic> json) =>
+      UpdateInvoiceRequestBody(
+        action: (json['action'] != null
+            ? UpdateInvoiceRequestBodyAction.fromJson(json['action'] as String)
+            : null)!,
+        reason: (json['reason'] as String?)!,
+        total: (json['total'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'reason': reason,
-    'total': total,
-  };
+        'action': action.toJson(),
+        'reason': reason,
+        'total': total,
+      };
 }
 
 /// A credit balance for a particular token type
 class SubmitPrepaymentBalancesRequestBodyBalancesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Partner's resource ID, exclude if credits are tied to the installation and not an individual resource.
   final SdkOptional<String> resourceId;
+
   /// A human-readable description of the credits the user currently has, e.g. "2,000 Tokens"
   final SdkOptional<String> credit;
+
   /// The name of the credits, for display purposes, e.g. "Tokens"
   final SdkOptional<String> nameLabel;
+
   /// The dollar value of the credit balance, in USD and provided in cents, which is used to trigger automatic purchase thresholds.
   final double currencyValueInCents;
 
-  const SubmitPrepaymentBalancesRequestBodyBalancesItem({this.resourceId = const SdkOmitted(), this.credit = const SdkOmitted(), this.nameLabel = const SdkOmitted(), required this.currencyValueInCents});
+  const SubmitPrepaymentBalancesRequestBodyBalancesItem(
+      {this.resourceId = const SdkOmitted(),
+      this.credit = const SdkOmitted(),
+      this.nameLabel = const SdkOmitted(),
+      required this.currencyValueInCents});
 
-  SubmitPrepaymentBalancesRequestBodyBalancesItem Function({SdkOptional<String> resourceId, SdkOptional<String> credit, SdkOptional<String> nameLabel, double currencyValueInCents}) get copyWith => _copyWith;
+  SubmitPrepaymentBalancesRequestBodyBalancesItem Function(
+      {SdkOptional<String> resourceId,
+      SdkOptional<String> credit,
+      SdkOptional<String> nameLabel,
+      double currencyValueInCents}) get copyWith => _copyWith;
 
-  SubmitPrepaymentBalancesRequestBodyBalancesItem _copyWith({Object? resourceId = sdkOmittedValue, Object? credit = sdkOmittedValue, Object? nameLabel = sdkOmittedValue, Object? currencyValueInCents = sdkOmittedValue}) => SubmitPrepaymentBalancesRequestBodyBalancesItem(
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as SdkOptional<String>,
-    credit: identical(credit, sdkOmittedValue) ? this.credit : credit as SdkOptional<String>,
-    nameLabel: identical(nameLabel, sdkOmittedValue) ? this.nameLabel : nameLabel as SdkOptional<String>,
-    currencyValueInCents: identical(currencyValueInCents, sdkOmittedValue) ? this.currencyValueInCents : currencyValueInCents as double,
-  );
+  SubmitPrepaymentBalancesRequestBodyBalancesItem _copyWith(
+          {Object? resourceId = sdkOmittedValue,
+          Object? credit = sdkOmittedValue,
+          Object? nameLabel = sdkOmittedValue,
+          Object? currencyValueInCents = sdkOmittedValue}) =>
+      SubmitPrepaymentBalancesRequestBodyBalancesItem(
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as SdkOptional<String>,
+        credit: identical(credit, sdkOmittedValue)
+            ? this.credit
+            : credit as SdkOptional<String>,
+        nameLabel: identical(nameLabel, sdkOmittedValue)
+            ? this.nameLabel
+            : nameLabel as SdkOptional<String>,
+        currencyValueInCents: identical(currencyValueInCents, sdkOmittedValue)
+            ? this.currencyValueInCents
+            : currencyValueInCents as double,
+      );
 
-  factory SubmitPrepaymentBalancesRequestBodyBalancesItem.fromJson(Map<String, dynamic> json) => SubmitPrepaymentBalancesRequestBodyBalancesItem(
-    resourceId: json['resourceId'] != null ? SdkPresent((json['resourceId'] as String?)!) : const SdkOmitted(),
-    credit: json['credit'] != null ? SdkPresent((json['credit'] as String?)!) : const SdkOmitted(),
-    nameLabel: json['nameLabel'] != null ? SdkPresent((json['nameLabel'] as String?)!) : const SdkOmitted(),
-    currencyValueInCents: ((json['currencyValueInCents'] as num?)?.toDouble())!,
-  );
+  factory SubmitPrepaymentBalancesRequestBodyBalancesItem.fromJson(
+          Map<String, dynamic> json) =>
+      SubmitPrepaymentBalancesRequestBodyBalancesItem(
+        resourceId: json['resourceId'] != null
+            ? SdkPresent((json['resourceId'] as String?)!)
+            : const SdkOmitted(),
+        credit: json['credit'] != null
+            ? SdkPresent((json['credit'] as String?)!)
+            : const SdkOmitted(),
+        nameLabel: json['nameLabel'] != null
+            ? SdkPresent((json['nameLabel'] as String?)!)
+            : const SdkOmitted(),
+        currencyValueInCents:
+            ((json['currencyValueInCents'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (resourceId) {
-      SdkPresent<String>(value: final value) => {'resourceId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (credit) {
-      SdkPresent<String>(value: final value) => {'credit': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (nameLabel) {
-      SdkPresent<String>(value: final value) => {'nameLabel': value,},
-      _ => const <String, dynamic>{},
-    },
-    'currencyValueInCents': currencyValueInCents,
-  };
+        ...switch (resourceId) {
+          SdkPresent<String>(value: final value) => {
+              'resourceId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (credit) {
+          SdkPresent<String>(value: final value) => {
+              'credit': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (nameLabel) {
+          SdkPresent<String>(value: final value) => {
+              'nameLabel': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'currencyValueInCents': currencyValueInCents,
+      };
 }
 
 class SubmitPrepaymentBalancesRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Server time of your integration, used to determine the most recent data for race conditions & updates. Only the latest usage data for a given day, week, and month will be kept.
   final String timestamp;
   final List<SubmitPrepaymentBalancesRequestBodyBalancesItem> balances;
 
-  const SubmitPrepaymentBalancesRequestBody({required this.timestamp, required this.balances});
+  const SubmitPrepaymentBalancesRequestBody(
+      {required this.timestamp, required this.balances});
 
-  SubmitPrepaymentBalancesRequestBody Function({String timestamp, List<SubmitPrepaymentBalancesRequestBodyBalancesItem> balances}) get copyWith => _copyWith;
+  SubmitPrepaymentBalancesRequestBody Function(
+          {String timestamp,
+          List<SubmitPrepaymentBalancesRequestBodyBalancesItem> balances})
+      get copyWith => _copyWith;
 
-  SubmitPrepaymentBalancesRequestBody _copyWith({Object? timestamp = sdkOmittedValue, Object? balances = sdkOmittedValue}) => SubmitPrepaymentBalancesRequestBody(
-    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as String,
-    balances: identical(balances, sdkOmittedValue) ? this.balances : balances as List<SubmitPrepaymentBalancesRequestBodyBalancesItem>,
-  );
+  SubmitPrepaymentBalancesRequestBody _copyWith(
+          {Object? timestamp = sdkOmittedValue,
+          Object? balances = sdkOmittedValue}) =>
+      SubmitPrepaymentBalancesRequestBody(
+        timestamp: identical(timestamp, sdkOmittedValue)
+            ? this.timestamp
+            : timestamp as String,
+        balances: identical(balances, sdkOmittedValue)
+            ? this.balances
+            : balances as List<SubmitPrepaymentBalancesRequestBodyBalancesItem>,
+      );
 
-  factory SubmitPrepaymentBalancesRequestBody.fromJson(Map<String, dynamic> json) => SubmitPrepaymentBalancesRequestBody(
-    timestamp: (json['timestamp'] as String?)!,
-    balances: ((json['balances'] as List?)?.map((e) => SubmitPrepaymentBalancesRequestBodyBalancesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory SubmitPrepaymentBalancesRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      SubmitPrepaymentBalancesRequestBody(
+        timestamp: (json['timestamp'] as String?)!,
+        balances: ((json['balances'] as List?)
+            ?.map((e) =>
+                SubmitPrepaymentBalancesRequestBodyBalancesItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'timestamp': timestamp,
-    'balances': balances.map((item) => item.toJson()).toList(),
-  };
+        'timestamp': timestamp,
+        'balances': balances.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// A map of environments to override values for the secret, used for setting different values across deployments in production, preview, and development environments. Note: the same value will be used for all deployments in the given environment.
 class UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Value used for development environment.
   final SdkOptional<String> development;
+
   /// Value used for preview environment.
   final SdkOptional<String> preview;
+
   /// Value used for production environment.
   final SdkOptional<String> production;
 
-  const UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides({this.development = const SdkOmitted(), this.preview = const SdkOmitted(), this.production = const SdkOmitted()});
+  const UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides(
+      {this.development = const SdkOmitted(),
+      this.preview = const SdkOmitted(),
+      this.production = const SdkOmitted()});
 
-  UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides Function({SdkOptional<String> development, SdkOptional<String> preview, SdkOptional<String> production}) get copyWith => _copyWith;
+  UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides Function(
+      {SdkOptional<String> development,
+      SdkOptional<String> preview,
+      SdkOptional<String> production}) get copyWith => _copyWith;
 
-  UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides _copyWith({Object? development = sdkOmittedValue, Object? preview = sdkOmittedValue, Object? production = sdkOmittedValue}) => UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides(
-    development: identical(development, sdkOmittedValue) ? this.development : development as SdkOptional<String>,
-    preview: identical(preview, sdkOmittedValue) ? this.preview : preview as SdkOptional<String>,
-    production: identical(production, sdkOmittedValue) ? this.production : production as SdkOptional<String>,
-  );
+  UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides _copyWith(
+          {Object? development = sdkOmittedValue,
+          Object? preview = sdkOmittedValue,
+          Object? production = sdkOmittedValue}) =>
+      UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides(
+        development: identical(development, sdkOmittedValue)
+            ? this.development
+            : development as SdkOptional<String>,
+        preview: identical(preview, sdkOmittedValue)
+            ? this.preview
+            : preview as SdkOptional<String>,
+        production: identical(production, sdkOmittedValue)
+            ? this.production
+            : production as SdkOptional<String>,
+      );
 
-  factory UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides.fromJson(Map<String, dynamic> json) => UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides(
-    development: json['development'] != null ? SdkPresent((json['development'] as String?)!) : const SdkOmitted(),
-    preview: json['preview'] != null ? SdkPresent((json['preview'] as String?)!) : const SdkOmitted(),
-    production: json['production'] != null ? SdkPresent((json['production'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateResourceSecretsRequestBodySecretsItemEnvironmentOverrides(
+        development: json['development'] != null
+            ? SdkPresent((json['development'] as String?)!)
+            : const SdkOmitted(),
+        preview: json['preview'] != null
+            ? SdkPresent((json['preview'] as String?)!)
+            : const SdkOmitted(),
+        production: json['production'] != null
+            ? SdkPresent((json['production'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (development) {
-      SdkPresent<String>(value: final value) => {'development': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (preview) {
-      SdkPresent<String>(value: final value) => {'preview': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (production) {
-      SdkPresent<String>(value: final value) => {'production': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (development) {
+          SdkPresent<String>(value: final value) => {
+              'development': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (preview) {
+          SdkPresent<String>(value: final value) => {
+              'preview': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (production) {
+          SdkPresent<String>(value: final value) => {
+              'production': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

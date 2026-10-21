@@ -8,76 +8,171 @@ part of 'inline.dart';
 class CreateProjectResponseCustomEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Configuration for matching git branches to this environment
-  final SdkOptional<CreateProjectResponseCustomEnvironmentsItemBranchMatcher> branchMatcher;
+  final SdkOptional<CreateProjectResponseCustomEnvironmentsItemBranchMatcher>
+      branchMatcher;
+
   /// Timestamp when the environment was created
   final double createdAt;
+
   /// List of aliases for the current deployment
   final SdkOptional<List<String>> currentDeploymentAliases;
+
   /// Optional description of the environment's purpose
   final SdkOptional<String> description;
+
   /// List of domains associated with this environment
-  final SdkOptional<List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>> domains;
+  final SdkOptional<
+      List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>> domains;
+
   /// Unique identifier for the custom environment (format: env_*)
   final String id;
+
   /// URL-friendly name of the environment
   final String slug;
+
   /// The type of environment (production, preview, or development)
   final CreateProjectResponseCustomEnvironmentsItemType type_;
+
   /// Timestamp when the environment was last updated
   final double updatedAt;
 
-  const CreateProjectResponseCustomEnvironmentsItem({this.branchMatcher = const SdkOmitted(), required this.createdAt, this.currentDeploymentAliases = const SdkOmitted(), this.description = const SdkOmitted(), this.domains = const SdkOmitted(), required this.id, required this.slug, required this.type_, required this.updatedAt});
+  const CreateProjectResponseCustomEnvironmentsItem(
+      {this.branchMatcher = const SdkOmitted(),
+      required this.createdAt,
+      this.currentDeploymentAliases = const SdkOmitted(),
+      this.description = const SdkOmitted(),
+      this.domains = const SdkOmitted(),
+      required this.id,
+      required this.slug,
+      required this.type_,
+      required this.updatedAt});
 
-  CreateProjectResponseCustomEnvironmentsItem Function({SdkOptional<CreateProjectResponseCustomEnvironmentsItemBranchMatcher> branchMatcher, double createdAt, SdkOptional<List<String>> currentDeploymentAliases, SdkOptional<String> description, SdkOptional<List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>> domains, String id, String slug, CreateProjectResponseCustomEnvironmentsItemType type_, double updatedAt}) get copyWith => _copyWith;
+  CreateProjectResponseCustomEnvironmentsItem Function(
+      {SdkOptional<CreateProjectResponseCustomEnvironmentsItemBranchMatcher>
+          branchMatcher,
+      double createdAt,
+      SdkOptional<List<String>> currentDeploymentAliases,
+      SdkOptional<String> description,
+      SdkOptional<List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>>
+          domains,
+      String id,
+      String slug,
+      CreateProjectResponseCustomEnvironmentsItemType type_,
+      double updatedAt}) get copyWith => _copyWith;
 
-  CreateProjectResponseCustomEnvironmentsItem _copyWith({Object? branchMatcher = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? currentDeploymentAliases = sdkOmittedValue, Object? description = sdkOmittedValue, Object? domains = sdkOmittedValue, Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateProjectResponseCustomEnvironmentsItem(
-    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<CreateProjectResponseCustomEnvironmentsItemBranchMatcher>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    currentDeploymentAliases: identical(currentDeploymentAliases, sdkOmittedValue) ? this.currentDeploymentAliases : currentDeploymentAliases as SdkOptional<List<String>>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseCustomEnvironmentsItemType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  CreateProjectResponseCustomEnvironmentsItem _copyWith(
+          {Object? branchMatcher = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? currentDeploymentAliases = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? domains = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      CreateProjectResponseCustomEnvironmentsItem(
+        branchMatcher: identical(branchMatcher, sdkOmittedValue)
+            ? this.branchMatcher
+            : branchMatcher as SdkOptional<
+                CreateProjectResponseCustomEnvironmentsItemBranchMatcher>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        currentDeploymentAliases:
+            identical(currentDeploymentAliases, sdkOmittedValue)
+                ? this.currentDeploymentAliases
+                : currentDeploymentAliases as SdkOptional<List<String>>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as SdkOptional<
+                List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateProjectResponseCustomEnvironmentsItemType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory CreateProjectResponseCustomEnvironmentsItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseCustomEnvironmentsItem(
-    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? CreateProjectResponseCustomEnvironmentsItemBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    currentDeploymentAliases: json['currentDeploymentAliases'] != null ? SdkPresent(((json['currentDeploymentAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    domains: json['domains'] != null ? SdkPresent(((json['domains'] as List?)?.map((e) => CreateProjectResponseCustomEnvironmentsItemDomainsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    slug: (json['slug'] as String?)!,
-    type_: (json['type'] != null ? CreateProjectResponseCustomEnvironmentsItemType.fromJson(json['type'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory CreateProjectResponseCustomEnvironmentsItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseCustomEnvironmentsItem(
+        branchMatcher: json['branchMatcher'] != null
+            ? SdkPresent((json['branchMatcher'] != null
+                ? CreateProjectResponseCustomEnvironmentsItemBranchMatcher
+                    .fromJson(json['branchMatcher'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        currentDeploymentAliases: json['currentDeploymentAliases'] != null
+            ? SdkPresent(((json['currentDeploymentAliases'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        domains: json['domains'] != null
+            ? SdkPresent(((json['domains'] as List?)
+                ?.map((e) =>
+                    CreateProjectResponseCustomEnvironmentsItemDomainsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        slug: (json['slug'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateProjectResponseCustomEnvironmentsItemType.fromJson(
+                json['type'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (branchMatcher) {
-      SdkPresent<CreateProjectResponseCustomEnvironmentsItemBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    ...switch (currentDeploymentAliases) {
-      SdkPresent<List<String>>(value: final value) => {'currentDeploymentAliases': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (domains) {
-      SdkPresent<List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>>(value: final value) => {'domains': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'slug': slug,
-    'type': type_.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (branchMatcher) {
+          SdkPresent<CreateProjectResponseCustomEnvironmentsItemBranchMatcher>(
+            value: final value
+          ) =>
+            {
+              'branchMatcher': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        ...switch (currentDeploymentAliases) {
+          SdkPresent<List<String>>(value: final value) => {
+              'currentDeploymentAliases': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (domains) {
+          SdkPresent<
+                List<CreateProjectResponseCustomEnvironmentsItemDomainsItem>>(
+            value: final value
+          ) =>
+            {
+              'domains': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'slug': slug,
+        'type': type_.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 class CreateProjectResponseDataCache {
@@ -87,33 +182,68 @@ class CreateProjectResponseDataCache {
   final SdkOptional<CreateProjectResponseDataCacheUnlimited> unlimited;
   final CreateProjectResponseDataCacheUserDisabled userDisabled;
 
-  const CreateProjectResponseDataCache({this.storageSizeBytes = const SdkOmitted(), this.unlimited = const SdkOmitted(), required this.userDisabled});
+  const CreateProjectResponseDataCache(
+      {this.storageSizeBytes = const SdkOmitted(),
+      this.unlimited = const SdkOmitted(),
+      required this.userDisabled});
 
-  CreateProjectResponseDataCache Function({SdkOptional<double?> storageSizeBytes, SdkOptional<CreateProjectResponseDataCacheUnlimited> unlimited, CreateProjectResponseDataCacheUserDisabled userDisabled}) get copyWith => _copyWith;
+  CreateProjectResponseDataCache Function(
+          {SdkOptional<double?> storageSizeBytes,
+          SdkOptional<CreateProjectResponseDataCacheUnlimited> unlimited,
+          CreateProjectResponseDataCacheUserDisabled userDisabled})
+      get copyWith => _copyWith;
 
-  CreateProjectResponseDataCache _copyWith({Object? storageSizeBytes = sdkOmittedValue, Object? unlimited = sdkOmittedValue, Object? userDisabled = sdkOmittedValue}) => CreateProjectResponseDataCache(
-    storageSizeBytes: identical(storageSizeBytes, sdkOmittedValue) ? this.storageSizeBytes : storageSizeBytes as SdkOptional<double?>,
-    unlimited: identical(unlimited, sdkOmittedValue) ? this.unlimited : unlimited as SdkOptional<CreateProjectResponseDataCacheUnlimited>,
-    userDisabled: identical(userDisabled, sdkOmittedValue) ? this.userDisabled : userDisabled as CreateProjectResponseDataCacheUserDisabled,
-  );
+  CreateProjectResponseDataCache _copyWith(
+          {Object? storageSizeBytes = sdkOmittedValue,
+          Object? unlimited = sdkOmittedValue,
+          Object? userDisabled = sdkOmittedValue}) =>
+      CreateProjectResponseDataCache(
+        storageSizeBytes: identical(storageSizeBytes, sdkOmittedValue)
+            ? this.storageSizeBytes
+            : storageSizeBytes as SdkOptional<double?>,
+        unlimited: identical(unlimited, sdkOmittedValue)
+            ? this.unlimited
+            : unlimited as SdkOptional<CreateProjectResponseDataCacheUnlimited>,
+        userDisabled: identical(userDisabled, sdkOmittedValue)
+            ? this.userDisabled
+            : userDisabled as CreateProjectResponseDataCacheUserDisabled,
+      );
 
-  factory CreateProjectResponseDataCache.fromJson(Map<String, dynamic> json) => CreateProjectResponseDataCache(
-    storageSizeBytes: json.containsKey('storageSizeBytes') ? SdkPresent((json['storageSizeBytes'] as num?)?.toDouble()) : const SdkOmitted(),
-    unlimited: json['unlimited'] != null ? SdkPresent((json['unlimited'] != null ? CreateProjectResponseDataCacheUnlimited.fromJson(json['unlimited'] as bool) : null)!) : const SdkOmitted(),
-    userDisabled: (json['userDisabled'] != null ? CreateProjectResponseDataCacheUserDisabled.fromJson(json['userDisabled'] as bool) : null)!,
-  );
+  factory CreateProjectResponseDataCache.fromJson(Map<String, dynamic> json) =>
+      CreateProjectResponseDataCache(
+        storageSizeBytes: json.containsKey('storageSizeBytes')
+            ? SdkPresent((json['storageSizeBytes'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        unlimited: json['unlimited'] != null
+            ? SdkPresent((json['unlimited'] != null
+                ? CreateProjectResponseDataCacheUnlimited.fromJson(
+                    json['unlimited'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        userDisabled: (json['userDisabled'] != null
+            ? CreateProjectResponseDataCacheUserDisabled.fromJson(
+                json['userDisabled'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (storageSizeBytes) {
-      SdkPresent<double?>(value: final value) => {'storageSizeBytes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (unlimited) {
-      SdkPresent<CreateProjectResponseDataCacheUnlimited>(value: final value) => {'unlimited': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'userDisabled': userDisabled.toJson(),
-  };
+        ...switch (storageSizeBytes) {
+          SdkPresent<double?>(value: final value) => {
+              'storageSizeBytes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (unlimited) {
+          SdkPresent<CreateProjectResponseDataCacheUnlimited>(
+            value: final value
+          ) =>
+            {
+              'unlimited': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'userDisabled': userDisabled.toJson(),
+      };
 }
 
 class CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition {
@@ -121,54 +251,101 @@ class CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition {
   static const String constructionSurface = 'named';
   final String algorithmVersion;
   final double at;
-  final CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection direction;
+  final CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
+      direction;
 
-  const CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition({required this.algorithmVersion, required this.at, required this.direction});
+  const CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition(
+      {required this.algorithmVersion,
+      required this.at,
+      required this.direction});
 
-  CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition Function({String algorithmVersion, double at, CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection direction}) get copyWith => _copyWith;
+  CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition Function(
+      {String algorithmVersion,
+      double at,
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
+          direction}) get copyWith => _copyWith;
 
-  CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition _copyWith({Object? algorithmVersion = sdkOmittedValue, Object? at = sdkOmittedValue, Object? direction = sdkOmittedValue}) => CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition(
-    algorithmVersion: identical(algorithmVersion, sdkOmittedValue) ? this.algorithmVersion : algorithmVersion as String,
-    at: identical(at, sdkOmittedValue) ? this.at : at as double,
-    direction: identical(direction, sdkOmittedValue) ? this.direction : direction as CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection,
-  );
+  CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition
+      _copyWith(
+              {Object? algorithmVersion = sdkOmittedValue,
+              Object? at = sdkOmittedValue,
+              Object? direction = sdkOmittedValue}) =>
+          CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition(
+            algorithmVersion: identical(algorithmVersion, sdkOmittedValue)
+                ? this.algorithmVersion
+                : algorithmVersion as String,
+            at: identical(at, sdkOmittedValue) ? this.at : at as double,
+            direction: identical(direction, sdkOmittedValue)
+                ? this.direction
+                : direction
+                    as CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection,
+          );
 
-  factory CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition.fromJson(Map<String, dynamic> json) => CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition(
-    algorithmVersion: (json['algorithmVersion'] as String?)!,
-    at: ((json['at'] as num?)?.toDouble())!,
-    direction: (json['direction'] != null ? CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection.fromJson(json['direction'] as String) : null)!,
-  );
+  factory CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransition(
+        algorithmVersion: (json['algorithmVersion'] as String?)!,
+        at: ((json['at'] as num?)?.toDouble())!,
+        direction: (json['direction'] != null
+            ? CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
+                .fromJson(json['direction'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'algorithmVersion': algorithmVersion,
-    'at': at,
-    'direction': direction.toJson(),
-  };
+        'algorithmVersion': algorithmVersion,
+        'at': at,
+        'direction': direction.toJson(),
+      };
 }
 
 class CreateProjectResponseDefaultResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration> configuration;
+  final SdkOptional<
+          CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration>
+      configuration;
 
-  const CreateProjectResponseDefaultResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
+  const CreateProjectResponseDefaultResourceConfigBuildQueue(
+      {this.configuration = const SdkOmitted()});
 
-  CreateProjectResponseDefaultResourceConfigBuildQueue Function({SdkOptional<CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
+  CreateProjectResponseDefaultResourceConfigBuildQueue Function(
+      {SdkOptional<
+              CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration>
+          configuration}) get copyWith => _copyWith;
 
-  CreateProjectResponseDefaultResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => CreateProjectResponseDefaultResourceConfigBuildQueue(
-    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration>,
-  );
+  CreateProjectResponseDefaultResourceConfigBuildQueue _copyWith(
+          {Object? configuration = sdkOmittedValue}) =>
+      CreateProjectResponseDefaultResourceConfigBuildQueue(
+        configuration: identical(configuration, sdkOmittedValue)
+            ? this.configuration
+            : configuration as SdkOptional<
+                CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration>,
+      );
 
-  factory CreateProjectResponseDefaultResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => CreateProjectResponseDefaultResourceConfigBuildQueue(
-    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory CreateProjectResponseDefaultResourceConfigBuildQueue.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseDefaultResourceConfigBuildQueue(
+        configuration: json['configuration'] != null
+            ? SdkPresent((json['configuration'] != null
+                ? CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration
+                    .fromJson(json['configuration'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (configuration) {
-      SdkPresent<CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (configuration) {
+          SdkPresent<
+                CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration>(
+            value: final value
+          ) =>
+            {
+              'configuration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
@@ -176,29 +353,48 @@ class CreateProjectResponseDefaultResourceConfigElasticBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double cores;
+
   /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
-  final CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel label;
+  final CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel
+      label;
   final double memory;
 
-  const CreateProjectResponseDefaultResourceConfigElasticBuildMachine({required this.cores, required this.label, required this.memory});
+  const CreateProjectResponseDefaultResourceConfigElasticBuildMachine(
+      {required this.cores, required this.label, required this.memory});
 
-  CreateProjectResponseDefaultResourceConfigElasticBuildMachine Function({double cores, CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel label, double memory}) get copyWith => _copyWith;
+  CreateProjectResponseDefaultResourceConfigElasticBuildMachine Function(
+      {double cores,
+      CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel label,
+      double memory}) get copyWith => _copyWith;
 
-  CreateProjectResponseDefaultResourceConfigElasticBuildMachine _copyWith({Object? cores = sdkOmittedValue, Object? label = sdkOmittedValue, Object? memory = sdkOmittedValue}) => CreateProjectResponseDefaultResourceConfigElasticBuildMachine(
-    cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
-    label: identical(label, sdkOmittedValue) ? this.label : label as CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel,
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as double,
-  );
+  CreateProjectResponseDefaultResourceConfigElasticBuildMachine _copyWith(
+          {Object? cores = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? memory = sdkOmittedValue}) =>
+      CreateProjectResponseDefaultResourceConfigElasticBuildMachine(
+        cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label
+                as CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel,
+        memory:
+            identical(memory, sdkOmittedValue) ? this.memory : memory as double,
+      );
 
-  factory CreateProjectResponseDefaultResourceConfigElasticBuildMachine.fromJson(Map<String, dynamic> json) => CreateProjectResponseDefaultResourceConfigElasticBuildMachine(
-    cores: ((json['cores'] as num?)?.toDouble())!,
-    label: (json['label'] != null ? CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel.fromJson(json['label'] as String) : null)!,
-    memory: ((json['memory'] as num?)?.toDouble())!,
-  );
+  factory CreateProjectResponseDefaultResourceConfigElasticBuildMachine.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseDefaultResourceConfigElasticBuildMachine(
+        cores: ((json['cores'] as num?)?.toDouble())!,
+        label: (json['label'] != null
+            ? CreateProjectResponseDefaultResourceConfigElasticBuildMachineLabel
+                .fromJson(json['label'] as String)
+            : null)!,
+        memory: ((json['memory'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'cores': cores,
-    'label': label.toJson(),
-    'memory': memory,
-  };
+        'cores': cores,
+        'label': label.toJson(),
+        'memory': memory,
+      };
 }

@@ -8,89 +8,178 @@ sealed class FlagEnvironmentsValueRulesItemConditionsItemRhs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const FlagEnvironmentsValueRulesItemConditionsItemRhs();
-  factory FlagEnvironmentsValueRulesItemConditionsItemRhs.fromJson(Object? json) {
-    if (json is String) { return FlagEnvironmentsValueRulesItemConditionsItemRhsString(json); }
-    if (json is num) { return FlagEnvironmentsValueRulesItemConditionsItemRhsDouble(json.toDouble()); }
-    if (json is Map<String, dynamic>) {
-      try { final value = FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2(value); } } catch (_) {}
-      try { final value = FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3(value); } } catch (_) {}
+  factory FlagEnvironmentsValueRulesItemConditionsItemRhs.fromJson(
+      Object? json) {
+    if (json is String) {
+      return FlagEnvironmentsValueRulesItemConditionsItemRhsString(json);
     }
-    try { return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2(FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3(FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant4(FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4.fromJson(json as bool)); } catch (_) {}
-    throw FormatException("No variant matched for FlagEnvironmentsValueRulesItemConditionsItemRhs");
+    if (json is num) {
+      return FlagEnvironmentsValueRulesItemConditionsItemRhsDouble(
+          json.toDouble());
+    }
+    if (json is Map<String, dynamic>) {
+      try {
+        final value =
+            FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3(
+              value);
+        }
+      } catch (_) {}
+    }
+    try {
+      return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2(
+          FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3(
+          FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant4(
+          FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4.fromJson(
+              json as bool));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for FlagEnvironmentsValueRulesItemConditionsItemRhs");
   }
   Object? toJson();
 }
 
-final class FlagEnvironmentsValueRulesItemConditionsItemRhsString extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
+final class FlagEnvironmentsValueRulesItemConditionsItemRhsString
+    extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
   final String value;
   const FlagEnvironmentsValueRulesItemConditionsItemRhsString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class FlagEnvironmentsValueRulesItemConditionsItemRhsDouble extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
+final class FlagEnvironmentsValueRulesItemConditionsItemRhsDouble
+    extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
   final double value;
   const FlagEnvironmentsValueRulesItemConditionsItemRhsDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2 extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
+final class FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2
+    extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
   final FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2 value;
-  const FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3 extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
+final class FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3
+    extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
   final FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3 value;
-  const FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant4 extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
+final class FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant4
+    extends FlagEnvironmentsValueRulesItemConditionsItemRhs {
   final FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4 value;
-  const FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  const FlagEnvironmentsValueRulesItemConditionsItemRhsFlagEnvironmentsValueRulesItemConditionsItemRhsVariant4(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class FlagEnvironmentsValueRulesItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final FlagEnvironmentsValueRulesItemConditionsItemCmp cmp;
-  final SdkOptional<FlagEnvironmentsValueRulesItemConditionsItemCmpOptions> cmpOptions;
+  final SdkOptional<FlagEnvironmentsValueRulesItemConditionsItemCmpOptions>
+      cmpOptions;
   final dynamic lhs;
   final SdkOptional<dynamic> rhs;
 
-  const FlagEnvironmentsValueRulesItemConditionsItem({required this.cmp, this.cmpOptions = const SdkOmitted(), required this.lhs, this.rhs = const SdkOmitted()});
+  const FlagEnvironmentsValueRulesItemConditionsItem(
+      {required this.cmp,
+      this.cmpOptions = const SdkOmitted(),
+      required this.lhs,
+      this.rhs = const SdkOmitted()});
 
-  FlagEnvironmentsValueRulesItemConditionsItem Function({FlagEnvironmentsValueRulesItemConditionsItemCmp cmp, SdkOptional<FlagEnvironmentsValueRulesItemConditionsItemCmpOptions> cmpOptions, dynamic lhs, SdkOptional<dynamic> rhs}) get copyWith => _copyWith;
+  FlagEnvironmentsValueRulesItemConditionsItem Function(
+      {FlagEnvironmentsValueRulesItemConditionsItemCmp cmp,
+      SdkOptional<FlagEnvironmentsValueRulesItemConditionsItemCmpOptions>
+          cmpOptions,
+      dynamic lhs,
+      SdkOptional<dynamic> rhs}) get copyWith => _copyWith;
 
-  FlagEnvironmentsValueRulesItemConditionsItem _copyWith({Object? cmp = sdkOmittedValue, Object? cmpOptions = sdkOmittedValue, Object? lhs = sdkOmittedValue, Object? rhs = sdkOmittedValue}) => FlagEnvironmentsValueRulesItemConditionsItem(
-    cmp: identical(cmp, sdkOmittedValue) ? this.cmp : cmp as FlagEnvironmentsValueRulesItemConditionsItemCmp,
-    cmpOptions: identical(cmpOptions, sdkOmittedValue) ? this.cmpOptions : cmpOptions as SdkOptional<FlagEnvironmentsValueRulesItemConditionsItemCmpOptions>,
-    lhs: identical(lhs, sdkOmittedValue) ? this.lhs : lhs as dynamic,
-    rhs: identical(rhs, sdkOmittedValue) ? this.rhs : rhs as SdkOptional<dynamic>,
-  );
+  FlagEnvironmentsValueRulesItemConditionsItem _copyWith(
+          {Object? cmp = sdkOmittedValue,
+          Object? cmpOptions = sdkOmittedValue,
+          Object? lhs = sdkOmittedValue,
+          Object? rhs = sdkOmittedValue}) =>
+      FlagEnvironmentsValueRulesItemConditionsItem(
+        cmp: identical(cmp, sdkOmittedValue)
+            ? this.cmp
+            : cmp as FlagEnvironmentsValueRulesItemConditionsItemCmp,
+        cmpOptions: identical(cmpOptions, sdkOmittedValue)
+            ? this.cmpOptions
+            : cmpOptions as SdkOptional<
+                FlagEnvironmentsValueRulesItemConditionsItemCmpOptions>,
+        lhs: identical(lhs, sdkOmittedValue) ? this.lhs : lhs as dynamic,
+        rhs: identical(rhs, sdkOmittedValue)
+            ? this.rhs
+            : rhs as SdkOptional<dynamic>,
+      );
 
-  factory FlagEnvironmentsValueRulesItemConditionsItem.fromJson(Map<String, dynamic> json) => FlagEnvironmentsValueRulesItemConditionsItem(
-    cmp: (json['cmp'] != null ? FlagEnvironmentsValueRulesItemConditionsItemCmp.fromJson(json['cmp'] as String) : null)!,
-    cmpOptions: json['cmpOptions'] != null ? SdkPresent((json['cmpOptions'] != null ? FlagEnvironmentsValueRulesItemConditionsItemCmpOptions.fromJson(json['cmpOptions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    lhs: (json['lhs'])!,
-    rhs: json['rhs'] != null ? SdkPresent((json['rhs'])!) : const SdkOmitted(),
-  );
+  factory FlagEnvironmentsValueRulesItemConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      FlagEnvironmentsValueRulesItemConditionsItem(
+        cmp: (json['cmp'] != null
+            ? FlagEnvironmentsValueRulesItemConditionsItemCmp.fromJson(
+                json['cmp'] as String)
+            : null)!,
+        cmpOptions: json['cmpOptions'] != null
+            ? SdkPresent((json['cmpOptions'] != null
+                ? FlagEnvironmentsValueRulesItemConditionsItemCmpOptions
+                    .fromJson(json['cmpOptions'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        lhs: (json['lhs'])!,
+        rhs: json['rhs'] != null
+            ? SdkPresent((json['rhs'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'cmp': cmp.toJson(),
-    ...switch (cmpOptions) {
-      SdkPresent<FlagEnvironmentsValueRulesItemConditionsItemCmpOptions>(value: final value) => {'cmpOptions': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'lhs': lhs,
-    ...switch (rhs) {
-      SdkPresent<dynamic>(value: final value) => {'rhs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'cmp': cmp.toJson(),
+        ...switch (cmpOptions) {
+          SdkPresent<FlagEnvironmentsValueRulesItemConditionsItemCmpOptions>(
+            value: final value
+          ) =>
+            {
+              'cmpOptions': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'lhs': lhs,
+        ...switch (rhs) {
+          SdkPresent<dynamic>(value: final value) => {
+              'rhs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class FlagEnvironmentsValueRulesItem {
@@ -100,27 +189,43 @@ class FlagEnvironmentsValueRulesItem {
   final String id;
   final dynamic outcome;
 
-  const FlagEnvironmentsValueRulesItem({required this.conditions, required this.id, required this.outcome});
+  const FlagEnvironmentsValueRulesItem(
+      {required this.conditions, required this.id, required this.outcome});
 
-  FlagEnvironmentsValueRulesItem Function({List<FlagEnvironmentsValueRulesItemConditionsItem> conditions, String id, dynamic outcome}) get copyWith => _copyWith;
+  FlagEnvironmentsValueRulesItem Function(
+      {List<FlagEnvironmentsValueRulesItemConditionsItem> conditions,
+      String id,
+      dynamic outcome}) get copyWith => _copyWith;
 
-  FlagEnvironmentsValueRulesItem _copyWith({Object? conditions = sdkOmittedValue, Object? id = sdkOmittedValue, Object? outcome = sdkOmittedValue}) => FlagEnvironmentsValueRulesItem(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<FlagEnvironmentsValueRulesItemConditionsItem>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    outcome: identical(outcome, sdkOmittedValue) ? this.outcome : outcome as dynamic,
-  );
+  FlagEnvironmentsValueRulesItem _copyWith(
+          {Object? conditions = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? outcome = sdkOmittedValue}) =>
+      FlagEnvironmentsValueRulesItem(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<FlagEnvironmentsValueRulesItemConditionsItem>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        outcome: identical(outcome, sdkOmittedValue)
+            ? this.outcome
+            : outcome as dynamic,
+      );
 
-  factory FlagEnvironmentsValueRulesItem.fromJson(Map<String, dynamic> json) => FlagEnvironmentsValueRulesItem(
-    conditions: ((json['conditions'] as List?)?.map((e) => FlagEnvironmentsValueRulesItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    id: (json['id'] as String?)!,
-    outcome: (json['outcome'])!,
-  );
+  factory FlagEnvironmentsValueRulesItem.fromJson(Map<String, dynamic> json) =>
+      FlagEnvironmentsValueRulesItem(
+        conditions: ((json['conditions'] as List?)
+            ?.map((e) => FlagEnvironmentsValueRulesItemConditionsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        id: (json['id'] as String?)!,
+        outcome: (json['outcome'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-    'id': id,
-    'outcome': outcome,
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+        'id': id,
+        'outcome': outcome,
+      };
 }
 
 class FlagEnvironmentsValueTargetsValueValueValueItem {
@@ -129,27 +234,39 @@ class FlagEnvironmentsValueTargetsValueValueValueItem {
   final SdkOptional<String> note;
   final String value;
 
-  const FlagEnvironmentsValueTargetsValueValueValueItem({this.note = const SdkOmitted(), required this.value});
+  const FlagEnvironmentsValueTargetsValueValueValueItem(
+      {this.note = const SdkOmitted(), required this.value});
 
-  FlagEnvironmentsValueTargetsValueValueValueItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  FlagEnvironmentsValueTargetsValueValueValueItem Function(
+      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  FlagEnvironmentsValueTargetsValueValueValueItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => FlagEnvironmentsValueTargetsValueValueValueItem(
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  FlagEnvironmentsValueTargetsValueValueValueItem _copyWith(
+          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      FlagEnvironmentsValueTargetsValueValueValueItem(
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory FlagEnvironmentsValueTargetsValueValueValueItem.fromJson(Map<String, dynamic> json) => FlagEnvironmentsValueTargetsValueValueValueItem(
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory FlagEnvironmentsValueTargetsValueValueValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      FlagEnvironmentsValueTargetsValueValueValueItem(
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 class FlagEnvironmentsValue {
@@ -161,106 +278,235 @@ class FlagEnvironmentsValue {
   final SdkOptional<FlagEnvironmentsValueReuse> reuse;
   final SdkOptional<double> revision;
   final List<FlagEnvironmentsValueRulesItem> rules;
-  final SdkOptional<Map<String, Map<String, Map<String, List<FlagEnvironmentsValueTargetsValueValueValueItem>>>>> targets;
+  final SdkOptional<
+          Map<
+              String,
+              Map<
+                  String,
+                  Map<String,
+                      List<FlagEnvironmentsValueTargetsValueValueValueItem>>>>>
+      targets;
 
-  const FlagEnvironmentsValue({required this.active, required this.fallthrough, required this.pausedOutcome, this.reuse = const SdkOmitted(), this.revision = const SdkOmitted(), required this.rules, this.targets = const SdkOmitted()});
+  const FlagEnvironmentsValue(
+      {required this.active,
+      required this.fallthrough,
+      required this.pausedOutcome,
+      this.reuse = const SdkOmitted(),
+      this.revision = const SdkOmitted(),
+      required this.rules,
+      this.targets = const SdkOmitted()});
 
-  FlagEnvironmentsValue Function({FlagEnvironmentsValueActive active, dynamic fallthrough, FlagEnvironmentsValuePausedOutcome pausedOutcome, SdkOptional<FlagEnvironmentsValueReuse> reuse, SdkOptional<double> revision, List<FlagEnvironmentsValueRulesItem> rules, SdkOptional<Map<String, Map<String, Map<String, List<FlagEnvironmentsValueTargetsValueValueValueItem>>>>> targets}) get copyWith => _copyWith;
+  FlagEnvironmentsValue Function(
+      {FlagEnvironmentsValueActive active,
+      dynamic fallthrough,
+      FlagEnvironmentsValuePausedOutcome pausedOutcome,
+      SdkOptional<FlagEnvironmentsValueReuse> reuse,
+      SdkOptional<double> revision,
+      List<FlagEnvironmentsValueRulesItem> rules,
+      SdkOptional<
+              Map<
+                  String,
+                  Map<
+                      String,
+                      Map<
+                          String,
+                          List<
+                              FlagEnvironmentsValueTargetsValueValueValueItem>>>>>
+          targets}) get copyWith => _copyWith;
 
-  FlagEnvironmentsValue _copyWith({Object? active = sdkOmittedValue, Object? fallthrough = sdkOmittedValue, Object? pausedOutcome = sdkOmittedValue, Object? reuse = sdkOmittedValue, Object? revision = sdkOmittedValue, Object? rules = sdkOmittedValue, Object? targets = sdkOmittedValue}) => FlagEnvironmentsValue(
-    active: identical(active, sdkOmittedValue) ? this.active : active as FlagEnvironmentsValueActive,
-    fallthrough: identical(fallthrough, sdkOmittedValue) ? this.fallthrough : fallthrough as dynamic,
-    pausedOutcome: identical(pausedOutcome, sdkOmittedValue) ? this.pausedOutcome : pausedOutcome as FlagEnvironmentsValuePausedOutcome,
-    reuse: identical(reuse, sdkOmittedValue) ? this.reuse : reuse as SdkOptional<FlagEnvironmentsValueReuse>,
-    revision: identical(revision, sdkOmittedValue) ? this.revision : revision as SdkOptional<double>,
-    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as List<FlagEnvironmentsValueRulesItem>,
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<Map<String, Map<String, Map<String, List<FlagEnvironmentsValueTargetsValueValueValueItem>>>>>,
-  );
+  FlagEnvironmentsValue _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? fallthrough = sdkOmittedValue,
+          Object? pausedOutcome = sdkOmittedValue,
+          Object? reuse = sdkOmittedValue,
+          Object? revision = sdkOmittedValue,
+          Object? rules = sdkOmittedValue,
+          Object? targets = sdkOmittedValue}) =>
+      FlagEnvironmentsValue(
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active as FlagEnvironmentsValueActive,
+        fallthrough: identical(fallthrough, sdkOmittedValue)
+            ? this.fallthrough
+            : fallthrough as dynamic,
+        pausedOutcome: identical(pausedOutcome, sdkOmittedValue)
+            ? this.pausedOutcome
+            : pausedOutcome as FlagEnvironmentsValuePausedOutcome,
+        reuse: identical(reuse, sdkOmittedValue)
+            ? this.reuse
+            : reuse as SdkOptional<FlagEnvironmentsValueReuse>,
+        revision: identical(revision, sdkOmittedValue)
+            ? this.revision
+            : revision as SdkOptional<double>,
+        rules: identical(rules, sdkOmittedValue)
+            ? this.rules
+            : rules as List<FlagEnvironmentsValueRulesItem>,
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as SdkOptional<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        Map<
+                            String,
+                            List<
+                                FlagEnvironmentsValueTargetsValueValueValueItem>>>>>,
+      );
 
-  factory FlagEnvironmentsValue.fromJson(Map<String, dynamic> json) => FlagEnvironmentsValue(
-    active: (json['active'] != null ? FlagEnvironmentsValueActive.fromJson(json['active'] as bool) : null)!,
-    fallthrough: (json['fallthrough'])!,
-    pausedOutcome: (json['pausedOutcome'] != null ? FlagEnvironmentsValuePausedOutcome.fromJson(json['pausedOutcome'] as Map<String, dynamic>) : null)!,
-    reuse: json['reuse'] != null ? SdkPresent((json['reuse'] != null ? FlagEnvironmentsValueReuse.fromJson(json['reuse'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    revision: json['revision'] != null ? SdkPresent(((json['revision'] as num?)?.toDouble())!) : const SdkOmitted(),
-    rules: ((json['rules'] as List?)?.map((e) => FlagEnvironmentsValueRulesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    targets: json['targets'] != null ? SdkPresent((json['targets'] == null ? null : Map<String, dynamic>.from(json['targets'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => FlagEnvironmentsValueTargetsValueValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))))!) : const SdkOmitted(),
-  );
+  factory FlagEnvironmentsValue.fromJson(Map<String, dynamic> json) =>
+      FlagEnvironmentsValue(
+        active: (json['active'] != null
+            ? FlagEnvironmentsValueActive.fromJson(json['active'] as bool)
+            : null)!,
+        fallthrough: (json['fallthrough'])!,
+        pausedOutcome: (json['pausedOutcome'] != null
+            ? FlagEnvironmentsValuePausedOutcome.fromJson(
+                json['pausedOutcome'] as Map<String, dynamic>)
+            : null)!,
+        reuse: json['reuse'] != null
+            ? SdkPresent((json['reuse'] != null
+                ? FlagEnvironmentsValueReuse.fromJson(
+                    json['reuse'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        revision: json['revision'] != null
+            ? SdkPresent(((json['revision'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        rules: ((json['rules'] as List?)
+            ?.map((e) => FlagEnvironmentsValueRulesItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        targets: json['targets'] != null
+            ? SdkPresent((json['targets'] == null
+                ? null
+                : Map<String, dynamic>.from(json['targets'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(
+                            key,
+                            Map<String, dynamic>.from(value as Map).map(
+                                (key, value) => MapEntry(
+                                    key,
+                                    (value as List)
+                                        .map((item) => FlagEnvironmentsValueTargetsValueValueValueItem.fromJson(item as Map<String, dynamic>))
+                                        .toList())))))))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active.toJson(),
-    'fallthrough': fallthrough,
-    'pausedOutcome': pausedOutcome.toJson(),
-    ...switch (reuse) {
-      SdkPresent<FlagEnvironmentsValueReuse>(value: final value) => {'reuse': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (revision) {
-      SdkPresent<double>(value: final value) => {'revision': value,},
-      _ => const <String, dynamic>{},
-    },
-    'rules': rules.map((item) => item.toJson()).toList(),
-    ...switch (targets) {
-      SdkPresent<Map<String, Map<String, Map<String, List<FlagEnvironmentsValueTargetsValueValueValueItem>>>>>(value: final value) => {'targets': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))))),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'active': active.toJson(),
+        'fallthrough': fallthrough,
+        'pausedOutcome': pausedOutcome.toJson(),
+        ...switch (reuse) {
+          SdkPresent<FlagEnvironmentsValueReuse>(value: final value) => {
+              'reuse': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (revision) {
+          SdkPresent<double>(value: final value) => {
+              'revision': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'rules': rules.map((item) => item.toJson()).toList(),
+        ...switch (targets) {
+          SdkPresent<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        Map<
+                            String,
+                            List<
+                                FlagEnvironmentsValueTargetsValueValueValueItem>>>>>(
+            value: final value
+          ) =>
+            {
+              'targets': value.map((key, value) => MapEntry(
+                  key,
+                  value.map((key, value) => MapEntry(
+                      key,
+                      value.map((key, value) => MapEntry(key,
+                          value.map((item) => item.toJson()).toList())))))),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `creator` wire field.
 class FlagMetadataCreator {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const FlagMetadataCreator({required this.id, required this.name});
 
-  FlagMetadataCreator Function({String id, String name}) get copyWith => _copyWith;
+  FlagMetadataCreator Function({String id, String name}) get copyWith =>
+      _copyWith;
 
-  FlagMetadataCreator _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => FlagMetadataCreator(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  FlagMetadataCreator _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      FlagMetadataCreator(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory FlagMetadataCreator.fromJson(Map<String, dynamic> json) => FlagMetadataCreator(
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-  );
+  factory FlagMetadataCreator.fromJson(Map<String, dynamic> json) =>
+      FlagMetadataCreator(
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-  };
+        'id': id,
+        'name': name,
+      };
 }
 
 /// Optional object value serialized in the `metadata` wire field.
 class FlagMetadata {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `creator` wire field.
   final SdkOptional<FlagMetadataCreator> creator;
 
   const FlagMetadata({this.creator = const SdkOmitted()});
 
-  FlagMetadata Function({SdkOptional<FlagMetadataCreator> creator}) get copyWith => _copyWith;
+  FlagMetadata Function({SdkOptional<FlagMetadataCreator> creator})
+      get copyWith => _copyWith;
 
   FlagMetadata _copyWith({Object? creator = sdkOmittedValue}) => FlagMetadata(
-    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as SdkOptional<FlagMetadataCreator>,
-  );
+        creator: identical(creator, sdkOmittedValue)
+            ? this.creator
+            : creator as SdkOptional<FlagMetadataCreator>,
+      );
 
   factory FlagMetadata.fromJson(Map<String, dynamic> json) => FlagMetadata(
-    creator: json['creator'] != null ? SdkPresent((json['creator'] != null ? FlagMetadataCreator.fromJson(json['creator'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+        creator: json['creator'] != null
+            ? SdkPresent((json['creator'] != null
+                ? FlagMetadataCreator.fromJson(
+                    json['creator'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (creator) {
-      SdkPresent<FlagMetadataCreator>(value: final value) => {'creator': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (creator) {
+          SdkPresent<FlagMetadataCreator>(value: final value) => {
+              'creator': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class FlagVariantsItemValue {
@@ -268,11 +514,23 @@ sealed class FlagVariantsItemValue {
   static const String constructionSurface = 'named';
   const FlagVariantsItemValue();
   factory FlagVariantsItemValue.fromJson(Object? json) {
-    if (json is String) { return FlagVariantsItemValueString(json); }
-    if (json is num) { return FlagVariantsItemValueDouble(json.toDouble()); }
-    if (json is List) { return FlagVariantsItemValueList(json.map((e) => e).toList().cast<dynamic>()); }
-    if (json is Map) { return FlagVariantsItemValueMap(Map<String, Object?>.from(json)); }
-    try { return FlagVariantsItemValueFlagVariantsItemValueVariant4(FlagVariantsItemValueVariant4.fromJson(json as bool)); } catch (_) {}
+    if (json is String) {
+      return FlagVariantsItemValueString(json);
+    }
+    if (json is num) {
+      return FlagVariantsItemValueDouble(json.toDouble());
+    }
+    if (json is List) {
+      return FlagVariantsItemValueList(
+          json.map((e) => e).toList().cast<dynamic>());
+    }
+    if (json is Map) {
+      return FlagVariantsItemValueMap(Map<String, Object?>.from(json));
+    }
+    try {
+      return FlagVariantsItemValueFlagVariantsItemValueVariant4(
+          FlagVariantsItemValueVariant4.fromJson(json as bool));
+    } catch (_) {}
     throw FormatException("No variant matched for FlagVariantsItemValue");
   }
   Object? toJson();
@@ -281,11 +539,13 @@ sealed class FlagVariantsItemValue {
 final class FlagVariantsItemValueString extends FlagVariantsItemValue {
   final String value;
   const FlagVariantsItemValueString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 final class FlagVariantsItemValueDouble extends FlagVariantsItemValue {
   final double value;
   const FlagVariantsItemValueDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }

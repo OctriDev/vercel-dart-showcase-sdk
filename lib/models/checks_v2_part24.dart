@@ -10,27 +10,47 @@ class UpdateDeploymentCheckRunResponseVariant0SourceVariant1 {
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant1Kind kind;
   final SdkOptional<String> webhookId;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant1({required this.kind, this.webhookId = const SdkOmitted()});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant1(
+      {required this.kind, this.webhookId = const SdkOmitted()});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant1 Function({UpdateDeploymentCheckRunResponseVariant0SourceVariant1Kind kind, SdkOptional<String> webhookId}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant1 Function(
+      {UpdateDeploymentCheckRunResponseVariant0SourceVariant1Kind kind,
+      SdkOptional<String> webhookId}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant1 _copyWith({Object? kind = sdkOmittedValue, Object? webhookId = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateDeploymentCheckRunResponseVariant0SourceVariant1Kind,
-    webhookId: identical(webhookId, sdkOmittedValue) ? this.webhookId : webhookId as SdkOptional<String>,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant1 _copyWith(
+          {Object? kind = sdkOmittedValue,
+          Object? webhookId = sdkOmittedValue}) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant1(
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind
+                as UpdateDeploymentCheckRunResponseVariant0SourceVariant1Kind,
+        webhookId: identical(webhookId, sdkOmittedValue)
+            ? this.webhookId
+            : webhookId as SdkOptional<String>,
+      );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant1.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant1(
-    kind: (json['kind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant1Kind.fromJson(json['kind'] as String) : null)!,
-    webhookId: json['webhookId'] != null ? SdkPresent((json['webhookId'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant1(
+        kind: (json['kind'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant1Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        webhookId: json['webhookId'] != null
+            ? SdkPresent((json['webhookId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-    ...switch (webhookId) {
-      SdkPresent<String>(value: final value) => {'webhookId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'kind': kind.toJson(),
+        ...switch (webhookId) {
+          SdkPresent<String>(value: final value) => {
+              'webhookId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateDeploymentCheckRunResponseVariant0SourceVariant2 {
@@ -40,215 +60,449 @@ class UpdateDeploymentCheckRunResponseVariant0SourceVariant2 {
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant2Kind kind;
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant2Provider provider;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant2({required this.externalCheckName, required this.kind, required this.provider});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant2(
+      {required this.externalCheckName,
+      required this.kind,
+      required this.provider});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant2 Function({String externalCheckName, UpdateDeploymentCheckRunResponseVariant0SourceVariant2Kind kind, UpdateDeploymentCheckRunResponseVariant0SourceVariant2Provider provider}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant2 Function(
+      {String externalCheckName,
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant2Kind kind,
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant2Provider
+          provider}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant2 _copyWith({Object? externalCheckName = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? provider = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant2(
-    externalCheckName: identical(externalCheckName, sdkOmittedValue) ? this.externalCheckName : externalCheckName as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateDeploymentCheckRunResponseVariant0SourceVariant2Kind,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as UpdateDeploymentCheckRunResponseVariant0SourceVariant2Provider,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant2 _copyWith(
+          {Object? externalCheckName = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? provider = sdkOmittedValue}) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant2(
+        externalCheckName: identical(externalCheckName, sdkOmittedValue)
+            ? this.externalCheckName
+            : externalCheckName as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind
+                as UpdateDeploymentCheckRunResponseVariant0SourceVariant2Kind,
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider
+                as UpdateDeploymentCheckRunResponseVariant0SourceVariant2Provider,
+      );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant2.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant2(
-    externalCheckName: (json['externalCheckName'] as String?)!,
-    kind: (json['kind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant2Kind.fromJson(json['kind'] as String) : null)!,
-    provider: (json['provider'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant2Provider.fromJson(json['provider'] as String) : null)!,
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant2(
+        externalCheckName: (json['externalCheckName'] as String?)!,
+        kind: (json['kind'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant2Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        provider: (json['provider'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant2Provider
+                .fromJson(json['provider'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'externalCheckName': externalCheckName,
-    'kind': kind.toJson(),
-    'provider': provider.toJson(),
-  };
+        'externalCheckName': externalCheckName,
+        'kind': kind.toJson(),
+        'provider': provider.toJson(),
+      };
 }
 
 /// Native Vercel checks — check definition and check run `source`.
 class UpdateDeploymentCheckRunResponseVariant0SourceVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin> origin;
-  final SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind> subKind;
+  final SdkOptional<
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin> origin;
+  final SdkOptional<
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind> subKind;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant3({this.origin = const SdkOmitted(), this.subKind = const SdkOmitted()});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant3(
+      {this.origin = const SdkOmitted(), this.subKind = const SdkOmitted()});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant3 Function({SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin> origin, SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind> subKind}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant3 Function(
+      {SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin>
+          origin,
+      SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind>
+          subKind}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant3 _copyWith({Object? origin = sdkOmittedValue, Object? subKind = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant3(
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin>,
-    subKind: identical(subKind, sdkOmittedValue) ? this.subKind : subKind as SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind>,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant3 _copyWith(
+          {Object? origin = sdkOmittedValue,
+          Object? subKind = sdkOmittedValue}) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant3(
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin as SdkOptional<
+                UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin>,
+        subKind: identical(subKind, sdkOmittedValue)
+            ? this.subKind
+            : subKind as SdkOptional<
+                UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind>,
+      );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant3.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant3(
-    origin: json['origin'] != null ? SdkPresent((json['origin'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin.fromJson(json['origin'] as String) : null)!) : const SdkOmitted(),
-    subKind: json['subKind'] != null ? SdkPresent((json['subKind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind.fromJson(json['subKind'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant3(
+        origin: json['origin'] != null
+            ? SdkPresent((json['origin'] != null
+                ? UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin
+                    .fromJson(json['origin'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        subKind: json['subKind'] != null
+            ? SdkPresent((json['subKind'] != null
+                ? UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind
+                    .fromJson(json['subKind'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (origin) {
-      SdkPresent<UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin>(value: final value) => {'origin': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (subKind) {
-      SdkPresent<UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind>(value: final value) => {'subKind': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (origin) {
+          SdkPresent<
+                UpdateDeploymentCheckRunResponseVariant0SourceVariant3Origin>(
+            value: final value
+          ) =>
+            {
+              'origin': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (subKind) {
+          SdkPresent<
+                UpdateDeploymentCheckRunResponseVariant0SourceVariant3SubKind>(
+            value: final value
+          ) =>
+            {
+              'subKind': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind kind;
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind
+      kind;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0({required this.kind});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
+      {required this.kind});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 Function({UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind kind}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 Function(
+      {UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind
+          kind}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 _copyWith({Object? kind = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
+      _copyWith({Object? kind = sdkOmittedValue}) =>
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind,
+          );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
-    kind: (json['kind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind.fromJson(json['kind'] as String) : null)!,
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
+        kind: (json['kind'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-  };
+        'kind': kind.toJson(),
+      };
 }
 
 class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind kind;
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind
+      kind;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1({required this.kind});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
+      {required this.kind});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 Function({UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind kind}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 Function(
+      {UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind
+          kind}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 _copyWith({Object? kind = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
+      _copyWith({Object? kind = sdkOmittedValue}) =>
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind,
+          );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
-    kind: (json['kind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind.fromJson(json['kind'] as String) : null)!,
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
+        kind: (json['kind'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-  };
+        'kind': kind.toJson(),
+      };
 }
 
 class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String job;
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind kind;
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind
+      kind;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2({required this.job, required this.kind});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
+      {required this.job, required this.kind});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 Function({String job, UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind kind}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 Function(
+      {String job,
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind
+          kind}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 _copyWith({Object? job = sdkOmittedValue, Object? kind = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
-    job: identical(job, sdkOmittedValue) ? this.job : job as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
+      _copyWith(
+              {Object? job = sdkOmittedValue,
+              Object? kind = sdkOmittedValue}) =>
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
+            job: identical(job, sdkOmittedValue) ? this.job : job as String,
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind,
+          );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
-    job: (json['job'] as String?)!,
-    kind: (json['kind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind.fromJson(json['kind'] as String) : null)!,
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
+        job: (json['job'] as String?)!,
+        kind: (json['kind'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'job': job,
-    'kind': kind.toJson(),
-  };
+        'job': job,
+        'kind': kind.toJson(),
+      };
 }
 
 class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch> failIfNoMatch;
+  final SdkOptional<
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>
+      failIfNoMatch;
   final List<String> filters;
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job job;
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind kind;
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
+      job;
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
+      kind;
   final String task;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3({this.failIfNoMatch = const SdkOmitted(), required this.filters, required this.job, required this.kind, required this.task});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+      {this.failIfNoMatch = const SdkOmitted(),
+      required this.filters,
+      required this.job,
+      required this.kind,
+      required this.task});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 Function({SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch> failIfNoMatch, List<String> filters, UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job job, UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind kind, String task}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 Function(
+      {SdkOptional<
+              UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>
+          failIfNoMatch,
+      List<String> filters,
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
+          job,
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
+          kind,
+      String task}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 _copyWith({Object? failIfNoMatch = sdkOmittedValue, Object? filters = sdkOmittedValue, Object? job = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? task = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-    failIfNoMatch: identical(failIfNoMatch, sdkOmittedValue) ? this.failIfNoMatch : failIfNoMatch as SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>,
-    filters: identical(filters, sdkOmittedValue) ? this.filters : filters as List<String>,
-    job: identical(job, sdkOmittedValue) ? this.job : job as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind,
-    task: identical(task, sdkOmittedValue) ? this.task : task as String,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
+      _copyWith(
+              {Object? failIfNoMatch = sdkOmittedValue,
+              Object? filters = sdkOmittedValue,
+              Object? job = sdkOmittedValue,
+              Object? kind = sdkOmittedValue,
+              Object? task = sdkOmittedValue}) =>
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+            failIfNoMatch: identical(failIfNoMatch, sdkOmittedValue)
+                ? this.failIfNoMatch
+                : failIfNoMatch as SdkOptional<
+                    UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>,
+            filters: identical(filters, sdkOmittedValue)
+                ? this.filters
+                : filters as List<String>,
+            job: identical(job, sdkOmittedValue)
+                ? this.job
+                : job
+                    as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job,
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind,
+            task: identical(task, sdkOmittedValue) ? this.task : task as String,
+          );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-    failIfNoMatch: json['failIfNoMatch'] != null ? SdkPresent((json['failIfNoMatch'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch.fromJson(json['failIfNoMatch'] as bool) : null)!) : const SdkOmitted(),
-    filters: ((json['filters'] as List?)?.map((e) => e as String).toList())!,
-    job: (json['job'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job.fromJson(json['job'] as String) : null)!,
-    kind: (json['kind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind.fromJson(json['kind'] as String) : null)!,
-    task: (json['task'] as String?)!,
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+        failIfNoMatch: json['failIfNoMatch'] != null
+            ? SdkPresent((json['failIfNoMatch'] != null
+                ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch
+                    .fromJson(json['failIfNoMatch'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        filters:
+            ((json['filters'] as List?)?.map((e) => e as String).toList())!,
+        job: (json['job'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
+                .fromJson(json['job'] as String)
+            : null)!,
+        kind: (json['kind'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        task: (json['task'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (failIfNoMatch) {
-      SdkPresent<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>(value: final value) => {'failIfNoMatch': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'filters': filters,
-    'job': job.toJson(),
-    'kind': kind.toJson(),
-    'task': task,
-  };
+        ...switch (failIfNoMatch) {
+          SdkPresent<
+                UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>(
+            value: final value
+          ) =>
+            {
+              'failIfNoMatch': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'filters': filters,
+        'job': job.toJson(),
+        'kind': kind.toJson(),
+        'task': task,
+      };
 }
 
 sealed class UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection();
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection.fromJson(Object? json) {
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(value); } } catch (_) {}
-      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(value); } } catch (_) {}
-      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(value); } } catch (_) {}
-      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(value); } } catch (_) {}
+      try {
+        final value =
+            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection");
+    try {
+      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection");
   }
   Object? toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
+    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
+      value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
+    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
+      value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
+    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
+      value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
+    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
+      value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Project-defined CI requirement; its selection is frozen on each check run.
@@ -259,25 +513,50 @@ class UpdateDeploymentCheckRunResponseVariant0SourceVariant4 {
   final dynamic selection;
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind subKind;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4({required this.origin, required this.selection, required this.subKind});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
+      {required this.origin, required this.selection, required this.subKind});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 Function({UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin origin, dynamic selection, UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind subKind}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 Function(
+      {UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin origin,
+      dynamic selection,
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind
+          subKind}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 _copyWith({Object? origin = sdkOmittedValue, Object? selection = sdkOmittedValue, Object? subKind = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin,
-    selection: identical(selection, sdkOmittedValue) ? this.selection : selection as dynamic,
-    subKind: identical(subKind, sdkOmittedValue) ? this.subKind : subKind as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind,
-  );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 _copyWith(
+          {Object? origin = sdkOmittedValue,
+          Object? selection = sdkOmittedValue,
+          Object? subKind = sdkOmittedValue}) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin
+                as UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin,
+        selection: identical(selection, sdkOmittedValue)
+            ? this.selection
+            : selection as dynamic,
+        subKind: identical(subKind, sdkOmittedValue)
+            ? this.subKind
+            : subKind
+                as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind,
+      );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-    origin: (json['origin'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin.fromJson(json['origin'] as String) : null)!,
-    selection: (json['selection'])!,
-    subKind: (json['subKind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind.fromJson(json['subKind'] as String) : null)!,
-  );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
+        origin: (json['origin'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin
+                .fromJson(json['origin'] as String)
+            : null)!,
+        selection: (json['selection'])!,
+        subKind: (json['subKind'] != null
+            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind
+                .fromJson(json['subKind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'origin': origin.toJson(),
-    'selection': selection,
-    'subKind': subKind.toJson(),
-  };
+        'origin': origin.toJson(),
+        'selection': selection,
+        'subKind': subKind.toJson(),
+      };
 }

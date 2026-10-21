@@ -15,69 +15,172 @@ class GetProjectsResponseAliasItem {
   final GetProjectsResponseAliasItemEnvironment environment;
   final SdkOptional<String?> gitBranch;
   final SdkOptional<String?> redirect;
-  final SdkOptional<GetProjectsResponseAliasItemRedirectStatusCode?> redirectStatusCode;
+  final SdkOptional<GetProjectsResponseAliasItemRedirectStatusCode?>
+      redirectStatusCode;
   final GetProjectsResponseAliasItemTarget target;
 
-  const GetProjectsResponseAliasItem({this.configuredBy = const SdkOmitted(), this.configuredChangedAt = const SdkOmitted(), this.createdAt = const SdkOmitted(), required this.deployment, required this.domain, required this.environment, this.gitBranch = const SdkOmitted(), this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), required this.target});
+  const GetProjectsResponseAliasItem(
+      {this.configuredBy = const SdkOmitted(),
+      this.configuredChangedAt = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      required this.deployment,
+      required this.domain,
+      required this.environment,
+      this.gitBranch = const SdkOmitted(),
+      this.redirect = const SdkOmitted(),
+      this.redirectStatusCode = const SdkOmitted(),
+      required this.target});
 
-  GetProjectsResponseAliasItem Function({SdkOptional<GetProjectsResponseAliasItemConfiguredBy?> configuredBy, SdkOptional<double?> configuredChangedAt, SdkOptional<double?> createdAt, GetProjectsResponseAliasItemDeployment? deployment, String domain, GetProjectsResponseAliasItemEnvironment environment, SdkOptional<String?> gitBranch, SdkOptional<String?> redirect, SdkOptional<GetProjectsResponseAliasItemRedirectStatusCode?> redirectStatusCode, GetProjectsResponseAliasItemTarget target}) get copyWith => _copyWith;
+  GetProjectsResponseAliasItem Function(
+      {SdkOptional<GetProjectsResponseAliasItemConfiguredBy?> configuredBy,
+      SdkOptional<double?> configuredChangedAt,
+      SdkOptional<double?> createdAt,
+      GetProjectsResponseAliasItemDeployment? deployment,
+      String domain,
+      GetProjectsResponseAliasItemEnvironment environment,
+      SdkOptional<String?> gitBranch,
+      SdkOptional<String?> redirect,
+      SdkOptional<GetProjectsResponseAliasItemRedirectStatusCode?>
+          redirectStatusCode,
+      GetProjectsResponseAliasItemTarget target}) get copyWith => _copyWith;
 
-  GetProjectsResponseAliasItem _copyWith({Object? configuredBy = sdkOmittedValue, Object? configuredChangedAt = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? deployment = sdkOmittedValue, Object? domain = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? target = sdkOmittedValue}) => GetProjectsResponseAliasItem(
-    configuredBy: identical(configuredBy, sdkOmittedValue) ? this.configuredBy : configuredBy as SdkOptional<GetProjectsResponseAliasItemConfiguredBy?>,
-    configuredChangedAt: identical(configuredChangedAt, sdkOmittedValue) ? this.configuredChangedAt : configuredChangedAt as SdkOptional<double?>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double?>,
-    deployment: identical(deployment, sdkOmittedValue) ? this.deployment : deployment as GetProjectsResponseAliasItemDeployment?,
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as GetProjectsResponseAliasItemEnvironment,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
-    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<GetProjectsResponseAliasItemRedirectStatusCode?>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as GetProjectsResponseAliasItemTarget,
-  );
+  GetProjectsResponseAliasItem _copyWith(
+          {Object? configuredBy = sdkOmittedValue,
+          Object? configuredChangedAt = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? deployment = sdkOmittedValue,
+          Object? domain = sdkOmittedValue,
+          Object? environment = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? redirectStatusCode = sdkOmittedValue,
+          Object? target = sdkOmittedValue}) =>
+      GetProjectsResponseAliasItem(
+        configuredBy: identical(configuredBy, sdkOmittedValue)
+            ? this.configuredBy
+            : configuredBy
+                as SdkOptional<GetProjectsResponseAliasItemConfiguredBy?>,
+        configuredChangedAt: identical(configuredChangedAt, sdkOmittedValue)
+            ? this.configuredChangedAt
+            : configuredChangedAt as SdkOptional<double?>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double?>,
+        deployment: identical(deployment, sdkOmittedValue)
+            ? this.deployment
+            : deployment as GetProjectsResponseAliasItemDeployment?,
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        environment: identical(environment, sdkOmittedValue)
+            ? this.environment
+            : environment as GetProjectsResponseAliasItemEnvironment,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<String?>,
+        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
+            ? this.redirectStatusCode
+            : redirectStatusCode
+                as SdkOptional<GetProjectsResponseAliasItemRedirectStatusCode?>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as GetProjectsResponseAliasItemTarget,
+      );
 
-  factory GetProjectsResponseAliasItem.fromJson(Map<String, dynamic> json) => GetProjectsResponseAliasItem(
-    configuredBy: json.containsKey('configuredBy') ? SdkPresent(json['configuredBy'] != null ? GetProjectsResponseAliasItemConfiguredBy.fromJson(json['configuredBy'] as String) : null) : const SdkOmitted(),
-    configuredChangedAt: json.containsKey('configuredChangedAt') ? SdkPresent((json['configuredChangedAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    createdAt: json.containsKey('createdAt') ? SdkPresent((json['createdAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    deployment: json.containsKey('deployment') ? json['deployment'] != null ? GetProjectsResponseAliasItemDeployment.fromJson(json['deployment'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'deployment', 'Required property is missing'),
-    domain: (json['domain'] as String?)!,
-    environment: (json['environment'] != null ? GetProjectsResponseAliasItemEnvironment.fromJson(json['environment'] as String) : null)!,
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
-    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? GetProjectsResponseAliasItemRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
-    target: (json['target'] != null ? GetProjectsResponseAliasItemTarget.fromJson(json['target'] as String) : null)!,
-  );
+  factory GetProjectsResponseAliasItem.fromJson(Map<String, dynamic> json) =>
+      GetProjectsResponseAliasItem(
+        configuredBy: json.containsKey('configuredBy')
+            ? SdkPresent(json['configuredBy'] != null
+                ? GetProjectsResponseAliasItemConfiguredBy.fromJson(
+                    json['configuredBy'] as String)
+                : null)
+            : const SdkOmitted(),
+        configuredChangedAt: json.containsKey('configuredChangedAt')
+            ? SdkPresent((json['configuredChangedAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        createdAt: json.containsKey('createdAt')
+            ? SdkPresent((json['createdAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        deployment: json.containsKey('deployment')
+            ? json['deployment'] != null
+                ? GetProjectsResponseAliasItemDeployment.fromJson(
+                    json['deployment'] as Map<String, dynamic>)
+                : null
+            : throw ArgumentError.value(
+                null, 'deployment', 'Required property is missing'),
+        domain: (json['domain'] as String?)!,
+        environment: (json['environment'] != null
+            ? GetProjectsResponseAliasItemEnvironment.fromJson(
+                json['environment'] as String)
+            : null)!,
+        gitBranch: json.containsKey('gitBranch')
+            ? SdkPresent(json['gitBranch'] as String?)
+            : const SdkOmitted(),
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] as String?)
+            : const SdkOmitted(),
+        redirectStatusCode: json.containsKey('redirectStatusCode')
+            ? SdkPresent(json['redirectStatusCode'] != null
+                ? GetProjectsResponseAliasItemRedirectStatusCode.fromJson(
+                    (json['redirectStatusCode'] as num).toDouble())
+                : null)
+            : const SdkOmitted(),
+        target: (json['target'] != null
+            ? GetProjectsResponseAliasItemTarget.fromJson(
+                json['target'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (configuredBy) {
-      SdkPresent<GetProjectsResponseAliasItemConfiguredBy?>(value: final value) => {'configuredBy': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (configuredChangedAt) {
-      SdkPresent<double?>(value: final value) => {'configuredChangedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double?>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'deployment': deployment?.toJson(),
-    'domain': domain,
-    'environment': environment.toJson(),
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<String?>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectStatusCode) {
-      SdkPresent<GetProjectsResponseAliasItemRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'target': target.toJson(),
-  };
+        ...switch (configuredBy) {
+          SdkPresent<GetProjectsResponseAliasItemConfiguredBy?>(
+            value: final value
+          ) =>
+            {
+              'configuredBy': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (configuredChangedAt) {
+          SdkPresent<double?>(value: final value) => {
+              'configuredChangedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double?>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'deployment': deployment?.toJson(),
+        'domain': domain,
+        'environment': environment.toJson(),
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<String?>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectStatusCode) {
+          SdkPresent<GetProjectsResponseAliasItemRedirectStatusCode?>(
+            value: final value
+          ) =>
+            {
+              'redirectStatusCode': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'target': target.toJson(),
+      };
 }
 
 class GetProjectsResponseAnalytics {
@@ -91,77 +194,146 @@ class GetProjectsResponseAnalytics {
   final SdkOptional<double?> sampleRatePercent;
   final SdkOptional<double?> spendLimitInDollars;
 
-  const GetProjectsResponseAnalytics({this.canceledAt = const SdkOmitted(), required this.disabledAt, required this.enabledAt, required this.id, this.paidAt = const SdkOmitted(), this.sampleRatePercent = const SdkOmitted(), this.spendLimitInDollars = const SdkOmitted()});
+  const GetProjectsResponseAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      required this.disabledAt,
+      required this.enabledAt,
+      required this.id,
+      this.paidAt = const SdkOmitted(),
+      this.sampleRatePercent = const SdkOmitted(),
+      this.spendLimitInDollars = const SdkOmitted()});
 
-  GetProjectsResponseAnalytics Function({SdkOptional<double?> canceledAt, double disabledAt, double enabledAt, String id, SdkOptional<double> paidAt, SdkOptional<double?> sampleRatePercent, SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
+  GetProjectsResponseAnalytics Function(
+      {SdkOptional<double?> canceledAt,
+      double disabledAt,
+      double enabledAt,
+      String id,
+      SdkOptional<double> paidAt,
+      SdkOptional<double?> sampleRatePercent,
+      SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
 
-  GetProjectsResponseAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue, Object? sampleRatePercent = sdkOmittedValue, Object? spendLimitInDollars = sdkOmittedValue}) => GetProjectsResponseAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double?>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as double,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-    sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue) ? this.sampleRatePercent : sampleRatePercent as SdkOptional<double?>,
-    spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue) ? this.spendLimitInDollars : spendLimitInDollars as SdkOptional<double?>,
-  );
+  GetProjectsResponseAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue,
+          Object? sampleRatePercent = sdkOmittedValue,
+          Object? spendLimitInDollars = sdkOmittedValue}) =>
+      GetProjectsResponseAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double?>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as double,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+        sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue)
+            ? this.sampleRatePercent
+            : sampleRatePercent as SdkOptional<double?>,
+        spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue)
+            ? this.spendLimitInDollars
+            : spendLimitInDollars as SdkOptional<double?>,
+      );
 
-  factory GetProjectsResponseAnalytics.fromJson(Map<String, dynamic> json) => GetProjectsResponseAnalytics(
-    canceledAt: json.containsKey('canceledAt') ? SdkPresent((json['canceledAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
-    enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    sampleRatePercent: json.containsKey('sampleRatePercent') ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble()) : const SdkOmitted(),
-    spendLimitInDollars: json.containsKey('spendLimitInDollars') ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble()) : const SdkOmitted(),
-  );
+  factory GetProjectsResponseAnalytics.fromJson(Map<String, dynamic> json) =>
+      GetProjectsResponseAnalytics(
+        canceledAt: json.containsKey('canceledAt')
+            ? SdkPresent((json['canceledAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
+        enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
+        id: (json['id'] as String?)!,
+        paidAt: json['paidAt'] != null
+            ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        sampleRatePercent: json.containsKey('sampleRatePercent')
+            ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        spendLimitInDollars: json.containsKey('spendLimitInDollars')
+            ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble())
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double?>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'disabledAt': disabledAt,
-    'enabledAt': enabledAt,
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sampleRatePercent) {
-      SdkPresent<double?>(value: final value) => {'sampleRatePercent': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (spendLimitInDollars) {
-      SdkPresent<double?>(value: final value) => {'spendLimitInDollars': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double?>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'disabledAt': disabledAt,
+        'enabledAt': enabledAt,
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sampleRatePercent) {
+          SdkPresent<double?>(value: final value) => {
+              'sampleRatePercent': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (spendLimitInDollars) {
+          SdkPresent<double?>(value: final value) => {
+              'spendLimitInDollars': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetProjectsResponseBlobs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation — guards rely on it to protect the connected stores from being lost when the project is deleted or transferred.
   final SdkOptional<GetProjectsResponseBlobsIsDefaultApp> isDefaultApp;
 
   const GetProjectsResponseBlobs({this.isDefaultApp = const SdkOmitted()});
 
-  GetProjectsResponseBlobs Function({SdkOptional<GetProjectsResponseBlobsIsDefaultApp> isDefaultApp}) get copyWith => _copyWith;
+  GetProjectsResponseBlobs Function(
+          {SdkOptional<GetProjectsResponseBlobsIsDefaultApp> isDefaultApp})
+      get copyWith => _copyWith;
 
-  GetProjectsResponseBlobs _copyWith({Object? isDefaultApp = sdkOmittedValue}) => GetProjectsResponseBlobs(
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as SdkOptional<GetProjectsResponseBlobsIsDefaultApp>,
-  );
+  GetProjectsResponseBlobs _copyWith(
+          {Object? isDefaultApp = sdkOmittedValue}) =>
+      GetProjectsResponseBlobs(
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp as SdkOptional<GetProjectsResponseBlobsIsDefaultApp>,
+      );
 
-  factory GetProjectsResponseBlobs.fromJson(Map<String, dynamic> json) => GetProjectsResponseBlobs(
-    isDefaultApp: json['isDefaultApp'] != null ? SdkPresent((json['isDefaultApp'] != null ? GetProjectsResponseBlobsIsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory GetProjectsResponseBlobs.fromJson(Map<String, dynamic> json) =>
+      GetProjectsResponseBlobs(
+        isDefaultApp: json['isDefaultApp'] != null
+            ? SdkPresent((json['isDefaultApp'] != null
+                ? GetProjectsResponseBlobsIsDefaultApp.fromJson(
+                    json['isDefaultApp'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (isDefaultApp) {
-      SdkPresent<GetProjectsResponseBlobsIsDefaultApp>(value: final value) => {'isDefaultApp': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (isDefaultApp) {
+          SdkPresent<GetProjectsResponseBlobsIsDefaultApp>(
+            value: final value
+          ) =>
+            {
+              'isDefaultApp': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetProjectsResponseConnectConfigurationsItemAws {
@@ -170,27 +342,44 @@ class GetProjectsResponseConnectConfigurationsItemAws {
   final SdkOptional<String> securityGroupId;
   final List<String> subnetIds;
 
-  const GetProjectsResponseConnectConfigurationsItemAws({this.securityGroupId = const SdkOmitted(), required this.subnetIds});
+  const GetProjectsResponseConnectConfigurationsItemAws(
+      {this.securityGroupId = const SdkOmitted(), required this.subnetIds});
 
-  GetProjectsResponseConnectConfigurationsItemAws Function({SdkOptional<String> securityGroupId, List<String> subnetIds}) get copyWith => _copyWith;
+  GetProjectsResponseConnectConfigurationsItemAws Function(
+      {SdkOptional<String> securityGroupId,
+      List<String> subnetIds}) get copyWith => _copyWith;
 
-  GetProjectsResponseConnectConfigurationsItemAws _copyWith({Object? securityGroupId = sdkOmittedValue, Object? subnetIds = sdkOmittedValue}) => GetProjectsResponseConnectConfigurationsItemAws(
-    securityGroupId: identical(securityGroupId, sdkOmittedValue) ? this.securityGroupId : securityGroupId as SdkOptional<String>,
-    subnetIds: identical(subnetIds, sdkOmittedValue) ? this.subnetIds : subnetIds as List<String>,
-  );
+  GetProjectsResponseConnectConfigurationsItemAws _copyWith(
+          {Object? securityGroupId = sdkOmittedValue,
+          Object? subnetIds = sdkOmittedValue}) =>
+      GetProjectsResponseConnectConfigurationsItemAws(
+        securityGroupId: identical(securityGroupId, sdkOmittedValue)
+            ? this.securityGroupId
+            : securityGroupId as SdkOptional<String>,
+        subnetIds: identical(subnetIds, sdkOmittedValue)
+            ? this.subnetIds
+            : subnetIds as List<String>,
+      );
 
-  factory GetProjectsResponseConnectConfigurationsItemAws.fromJson(Map<String, dynamic> json) => GetProjectsResponseConnectConfigurationsItemAws(
-    securityGroupId: json['securityGroupId'] != null ? SdkPresent((json['securityGroupId'] as String?)!) : const SdkOmitted(),
-    subnetIds: ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory GetProjectsResponseConnectConfigurationsItemAws.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseConnectConfigurationsItemAws(
+        securityGroupId: json['securityGroupId'] != null
+            ? SdkPresent((json['securityGroupId'] as String?)!)
+            : const SdkOmitted(),
+        subnetIds:
+            ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (securityGroupId) {
-      SdkPresent<String>(value: final value) => {'securityGroupId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'subnetIds': subnetIds,
-  };
+        ...switch (securityGroupId) {
+          SdkPresent<String>(value: final value) => {
+              'securityGroupId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'subnetIds': subnetIds,
+      };
 }
 
 class GetProjectsResponseConnectConfigurationsItem {
@@ -205,46 +394,110 @@ class GetProjectsResponseConnectConfigurationsItem {
   final GetProjectsResponseConnectConfigurationsItemPassive passive;
   final double updatedAt;
 
-  const GetProjectsResponseConnectConfigurationsItem({this.aws = const SdkOmitted(), required this.buildsEnabled, required this.connectConfigurationId, required this.createdAt, this.dc = const SdkOmitted(), required this.envId, required this.passive, required this.updatedAt});
+  const GetProjectsResponseConnectConfigurationsItem(
+      {this.aws = const SdkOmitted(),
+      required this.buildsEnabled,
+      required this.connectConfigurationId,
+      required this.createdAt,
+      this.dc = const SdkOmitted(),
+      required this.envId,
+      required this.passive,
+      required this.updatedAt});
 
-  GetProjectsResponseConnectConfigurationsItem Function({SdkOptional<GetProjectsResponseConnectConfigurationsItemAws> aws, GetProjectsResponseConnectConfigurationsItemBuildsEnabled buildsEnabled, String connectConfigurationId, double createdAt, SdkOptional<String> dc, String envId, GetProjectsResponseConnectConfigurationsItemPassive passive, double updatedAt}) get copyWith => _copyWith;
+  GetProjectsResponseConnectConfigurationsItem Function(
+      {SdkOptional<GetProjectsResponseConnectConfigurationsItemAws> aws,
+      GetProjectsResponseConnectConfigurationsItemBuildsEnabled buildsEnabled,
+      String connectConfigurationId,
+      double createdAt,
+      SdkOptional<String> dc,
+      String envId,
+      GetProjectsResponseConnectConfigurationsItemPassive passive,
+      double updatedAt}) get copyWith => _copyWith;
 
-  GetProjectsResponseConnectConfigurationsItem _copyWith({Object? aws = sdkOmittedValue, Object? buildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? dc = sdkOmittedValue, Object? envId = sdkOmittedValue, Object? passive = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetProjectsResponseConnectConfigurationsItem(
-    aws: identical(aws, sdkOmittedValue) ? this.aws : aws as SdkOptional<GetProjectsResponseConnectConfigurationsItemAws>,
-    buildsEnabled: identical(buildsEnabled, sdkOmittedValue) ? this.buildsEnabled : buildsEnabled as GetProjectsResponseConnectConfigurationsItemBuildsEnabled,
-    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    dc: identical(dc, sdkOmittedValue) ? this.dc : dc as SdkOptional<String>,
-    envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
-    passive: identical(passive, sdkOmittedValue) ? this.passive : passive as GetProjectsResponseConnectConfigurationsItemPassive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  GetProjectsResponseConnectConfigurationsItem _copyWith(
+          {Object? aws = sdkOmittedValue,
+          Object? buildsEnabled = sdkOmittedValue,
+          Object? connectConfigurationId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? dc = sdkOmittedValue,
+          Object? envId = sdkOmittedValue,
+          Object? passive = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      GetProjectsResponseConnectConfigurationsItem(
+        aws: identical(aws, sdkOmittedValue)
+            ? this.aws
+            : aws
+                as SdkOptional<GetProjectsResponseConnectConfigurationsItemAws>,
+        buildsEnabled: identical(buildsEnabled, sdkOmittedValue)
+            ? this.buildsEnabled
+            : buildsEnabled
+                as GetProjectsResponseConnectConfigurationsItemBuildsEnabled,
+        connectConfigurationId:
+            identical(connectConfigurationId, sdkOmittedValue)
+                ? this.connectConfigurationId
+                : connectConfigurationId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        dc: identical(dc, sdkOmittedValue)
+            ? this.dc
+            : dc as SdkOptional<String>,
+        envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
+        passive: identical(passive, sdkOmittedValue)
+            ? this.passive
+            : passive as GetProjectsResponseConnectConfigurationsItemPassive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory GetProjectsResponseConnectConfigurationsItem.fromJson(Map<String, dynamic> json) => GetProjectsResponseConnectConfigurationsItem(
-    aws: json['aws'] != null ? SdkPresent((json['aws'] != null ? GetProjectsResponseConnectConfigurationsItemAws.fromJson(json['aws'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildsEnabled: (json['buildsEnabled'] != null ? GetProjectsResponseConnectConfigurationsItemBuildsEnabled.fromJson(json['buildsEnabled'] as bool) : null)!,
-    connectConfigurationId: (json['connectConfigurationId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    dc: json['dc'] != null ? SdkPresent((json['dc'] as String?)!) : const SdkOmitted(),
-    envId: (json['envId'] as String?)!,
-    passive: (json['passive'] != null ? GetProjectsResponseConnectConfigurationsItemPassive.fromJson(json['passive'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory GetProjectsResponseConnectConfigurationsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseConnectConfigurationsItem(
+        aws: json['aws'] != null
+            ? SdkPresent((json['aws'] != null
+                ? GetProjectsResponseConnectConfigurationsItemAws.fromJson(
+                    json['aws'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        buildsEnabled: (json['buildsEnabled'] != null
+            ? GetProjectsResponseConnectConfigurationsItemBuildsEnabled
+                .fromJson(json['buildsEnabled'] as bool)
+            : null)!,
+        connectConfigurationId: (json['connectConfigurationId'] as String?)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        dc: json['dc'] != null
+            ? SdkPresent((json['dc'] as String?)!)
+            : const SdkOmitted(),
+        envId: (json['envId'] as String?)!,
+        passive: (json['passive'] != null
+            ? GetProjectsResponseConnectConfigurationsItemPassive.fromJson(
+                json['passive'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (aws) {
-      SdkPresent<GetProjectsResponseConnectConfigurationsItemAws>(value: final value) => {'aws': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'buildsEnabled': buildsEnabled.toJson(),
-    'connectConfigurationId': connectConfigurationId,
-    'createdAt': createdAt,
-    ...switch (dc) {
-      SdkPresent<String>(value: final value) => {'dc': value,},
-      _ => const <String, dynamic>{},
-    },
-    'envId': envId,
-    'passive': passive.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (aws) {
+          SdkPresent<GetProjectsResponseConnectConfigurationsItemAws>(
+            value: final value
+          ) =>
+            {
+              'aws': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'buildsEnabled': buildsEnabled.toJson(),
+        'connectConfigurationId': connectConfigurationId,
+        'createdAt': createdAt,
+        ...switch (dc) {
+          SdkPresent<String>(value: final value) => {
+              'dc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'envId': envId,
+        'passive': passive.toJson(),
+        'updatedAt': updatedAt,
+      };
 }

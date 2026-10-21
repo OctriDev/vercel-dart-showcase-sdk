@@ -8,65 +8,138 @@ class GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> canceledAt;
+
   /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
   final SdkOptional<double> dataReceivedAt;
   final SdkOptional<double> disabledAt;
   final SdkOptional<double> enabledAt;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData> hasData;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData>
+      hasData;
   final String id;
   final SdkOptional<double> paidAt;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights({this.canceledAt = const SdkOmitted(), this.dataReceivedAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id, this.paidAt = const SdkOmitted()});
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights(
+      {this.canceledAt = const SdkOmitted(),
+      this.dataReceivedAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id,
+      this.paidAt = const SdkOmitted()});
 
-  GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights Function({SdkOptional<double> canceledAt, SdkOptional<double> dataReceivedAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData> hasData, String id, SdkOptional<double> paidAt}) get copyWith => _copyWith;
+  GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> dataReceivedAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData>
+          hasData,
+      String id,
+      SdkOptional<double> paidAt}) get copyWith => _copyWith;
 
-  GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights _copyWith({Object? canceledAt = sdkOmittedValue, Object? dataReceivedAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue}) => GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue) ? this.dataReceivedAt : dataReceivedAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-  );
+  GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? dataReceivedAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue}) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue)
+            ? this.dataReceivedAt
+            : dataReceivedAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+      );
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights.fromJson(Map<String, dynamic> json) => GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    dataReceivedAt: json['dataReceivedAt'] != null ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights(
+        canceledAt: json['canceledAt'] != null
+            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        dataReceivedAt: json['dataReceivedAt'] != null
+            ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        disabledAt: json['disabledAt'] != null
+            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        enabledAt: json['enabledAt'] != null
+            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        hasData: json['hasData'] != null
+            ? SdkPresent((json['hasData'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData
+                    .fromJson(json['hasData'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        paidAt: json['paidAt'] != null
+            ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dataReceivedAt) {
-      SdkPresent<double>(value: final value) => {'dataReceivedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dataReceivedAt) {
+          SdkPresent<double>(value: final value) => {
+              'dataReceivedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics {
@@ -75,48 +148,102 @@ class GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics {
   final SdkOptional<double> canceledAt;
   final SdkOptional<double> disabledAt;
   final SdkOptional<double> enabledAt;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData> hasData;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData>
+      hasData;
   final String id;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics({this.canceledAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id});
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id});
 
-  GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics Function({SdkOptional<double> canceledAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData> hasData, String id}) get copyWith => _copyWith;
+  GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData>
+          hasData,
+      String id}) get copyWith => _copyWith;
 
-  GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue}) => GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics.fromJson(Map<String, dynamic> json) => GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  );
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics(
+        canceledAt: json['canceledAt'] != null
+            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        disabledAt: json['disabledAt'] != null
+            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        enabledAt: json['enabledAt'] != null
+            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        hasData: json['hasData'] != null
+            ? SdkPresent((json['hasData'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData
+                    .fromJson(json['hasData'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }
 
 /// The project settings which was used for this deployment
@@ -126,134 +253,416 @@ class GetDeploymentsResponseDeploymentsItemProjectSettings {
   final SdkOptional<String?> buildCommand;
   final SdkOptional<String?> commandForIgnoringBuildStep;
   final SdkOptional<double> createdAt;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility> customerSupportCodeVisibility;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility>
+      customerSupportCodeVisibility;
   final SdkOptional<String?> devCommand;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?> framework;
+  final SdkOptional<
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?> framework;
+
   /// Since June '23
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments> gitComments;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection> gitForkProtection;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS> gitLfs;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments>
+      gitComments;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection>
+      gitForkProtection;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS>
+      gitLfs;
   final SdkOptional<String?> installCommand;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion> nodeVersion;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion>
+      nodeVersion;
   final SdkOptional<String?> outputDirectory;
   final SdkOptional<String?> rootDirectory;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink> skipGitConnectDuringLink;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights> speedInsights;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics> webAnalytics;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink>
+      skipGitConnectDuringLink;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory>
+      sourceFilesOutsideRootDirectory;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights>
+      speedInsights;
+  final SdkOptional<
+          GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics>
+      webAnalytics;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettings({this.buildCommand = const SdkOmitted(), this.commandForIgnoringBuildStep = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.customerSupportCodeVisibility = const SdkOmitted(), this.devCommand = const SdkOmitted(), this.framework = const SdkOmitted(), this.gitComments = const SdkOmitted(), this.gitForkProtection = const SdkOmitted(), this.gitLfs = const SdkOmitted(), this.installCommand = const SdkOmitted(), this.nodeVersion = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.rootDirectory = const SdkOmitted(), this.skipGitConnectDuringLink = const SdkOmitted(), this.sourceFilesOutsideRootDirectory = const SdkOmitted(), this.speedInsights = const SdkOmitted(), this.webAnalytics = const SdkOmitted()});
+  const GetDeploymentsResponseDeploymentsItemProjectSettings(
+      {this.buildCommand = const SdkOmitted(),
+      this.commandForIgnoringBuildStep = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.customerSupportCodeVisibility = const SdkOmitted(),
+      this.devCommand = const SdkOmitted(),
+      this.framework = const SdkOmitted(),
+      this.gitComments = const SdkOmitted(),
+      this.gitForkProtection = const SdkOmitted(),
+      this.gitLfs = const SdkOmitted(),
+      this.installCommand = const SdkOmitted(),
+      this.nodeVersion = const SdkOmitted(),
+      this.outputDirectory = const SdkOmitted(),
+      this.rootDirectory = const SdkOmitted(),
+      this.skipGitConnectDuringLink = const SdkOmitted(),
+      this.sourceFilesOutsideRootDirectory = const SdkOmitted(),
+      this.speedInsights = const SdkOmitted(),
+      this.webAnalytics = const SdkOmitted()});
 
-  GetDeploymentsResponseDeploymentsItemProjectSettings Function({SdkOptional<String?> buildCommand, SdkOptional<String?> commandForIgnoringBuildStep, SdkOptional<double> createdAt, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility> customerSupportCodeVisibility, SdkOptional<String?> devCommand, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?> framework, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments> gitComments, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection> gitForkProtection, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS> gitLfs, SdkOptional<String?> installCommand, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion> nodeVersion, SdkOptional<String?> outputDirectory, SdkOptional<String?> rootDirectory, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink> skipGitConnectDuringLink, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights> speedInsights, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics> webAnalytics}) get copyWith => _copyWith;
+  GetDeploymentsResponseDeploymentsItemProjectSettings Function(
+      {SdkOptional<String?> buildCommand,
+      SdkOptional<String?> commandForIgnoringBuildStep,
+      SdkOptional<double> createdAt,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility>
+          customerSupportCodeVisibility,
+      SdkOptional<String?> devCommand,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?>
+          framework,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments>
+          gitComments,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection>
+          gitForkProtection,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS>
+          gitLfs,
+      SdkOptional<String?> installCommand,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion>
+          nodeVersion,
+      SdkOptional<String?> outputDirectory,
+      SdkOptional<String?> rootDirectory,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink>
+          skipGitConnectDuringLink,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory>
+          sourceFilesOutsideRootDirectory,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights>
+          speedInsights,
+      SdkOptional<
+              GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics>
+          webAnalytics}) get copyWith => _copyWith;
 
-  GetDeploymentsResponseDeploymentsItemProjectSettings _copyWith({Object? buildCommand = sdkOmittedValue, Object? commandForIgnoringBuildStep = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customerSupportCodeVisibility = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? gitComments = sdkOmittedValue, Object? gitForkProtection = sdkOmittedValue, Object? gitLfs = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? rootDirectory = sdkOmittedValue, Object? skipGitConnectDuringLink = sdkOmittedValue, Object? sourceFilesOutsideRootDirectory = sdkOmittedValue, Object? speedInsights = sdkOmittedValue, Object? webAnalytics = sdkOmittedValue}) => GetDeploymentsResponseDeploymentsItemProjectSettings(
-    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String?>,
-    commandForIgnoringBuildStep: identical(commandForIgnoringBuildStep, sdkOmittedValue) ? this.commandForIgnoringBuildStep : commandForIgnoringBuildStep as SdkOptional<String?>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    customerSupportCodeVisibility: identical(customerSupportCodeVisibility, sdkOmittedValue) ? this.customerSupportCodeVisibility : customerSupportCodeVisibility as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility>,
-    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String?>,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?>,
-    gitComments: identical(gitComments, sdkOmittedValue) ? this.gitComments : gitComments as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments>,
-    gitForkProtection: identical(gitForkProtection, sdkOmittedValue) ? this.gitForkProtection : gitForkProtection as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection>,
-    gitLfs: identical(gitLfs, sdkOmittedValue) ? this.gitLfs : gitLfs as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS>,
-    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String?>,
-    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion>,
-    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String?>,
-    rootDirectory: identical(rootDirectory, sdkOmittedValue) ? this.rootDirectory : rootDirectory as SdkOptional<String?>,
-    skipGitConnectDuringLink: identical(skipGitConnectDuringLink, sdkOmittedValue) ? this.skipGitConnectDuringLink : skipGitConnectDuringLink as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink>,
-    sourceFilesOutsideRootDirectory: identical(sourceFilesOutsideRootDirectory, sdkOmittedValue) ? this.sourceFilesOutsideRootDirectory : sourceFilesOutsideRootDirectory as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory>,
-    speedInsights: identical(speedInsights, sdkOmittedValue) ? this.speedInsights : speedInsights as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights>,
-    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics>,
-  );
+  GetDeploymentsResponseDeploymentsItemProjectSettings _copyWith(
+          {Object? buildCommand = sdkOmittedValue,
+          Object? commandForIgnoringBuildStep = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? customerSupportCodeVisibility = sdkOmittedValue,
+          Object? devCommand = sdkOmittedValue,
+          Object? framework = sdkOmittedValue,
+          Object? gitComments = sdkOmittedValue,
+          Object? gitForkProtection = sdkOmittedValue,
+          Object? gitLfs = sdkOmittedValue,
+          Object? installCommand = sdkOmittedValue,
+          Object? nodeVersion = sdkOmittedValue,
+          Object? outputDirectory = sdkOmittedValue,
+          Object? rootDirectory = sdkOmittedValue,
+          Object? skipGitConnectDuringLink = sdkOmittedValue,
+          Object? sourceFilesOutsideRootDirectory = sdkOmittedValue,
+          Object? speedInsights = sdkOmittedValue,
+          Object? webAnalytics = sdkOmittedValue}) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettings(
+        buildCommand: identical(buildCommand, sdkOmittedValue)
+            ? this.buildCommand
+            : buildCommand as SdkOptional<String?>,
+        commandForIgnoringBuildStep:
+            identical(commandForIgnoringBuildStep, sdkOmittedValue)
+                ? this.commandForIgnoringBuildStep
+                : commandForIgnoringBuildStep as SdkOptional<String?>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        customerSupportCodeVisibility: identical(
+                customerSupportCodeVisibility, sdkOmittedValue)
+            ? this.customerSupportCodeVisibility
+            : customerSupportCodeVisibility as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility>,
+        devCommand: identical(devCommand, sdkOmittedValue)
+            ? this.devCommand
+            : devCommand as SdkOptional<String?>,
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?>,
+        gitComments: identical(gitComments, sdkOmittedValue)
+            ? this.gitComments
+            : gitComments as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments>,
+        gitForkProtection: identical(gitForkProtection, sdkOmittedValue)
+            ? this.gitForkProtection
+            : gitForkProtection as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection>,
+        gitLfs: identical(gitLfs, sdkOmittedValue)
+            ? this.gitLfs
+            : gitLfs as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS>,
+        installCommand: identical(installCommand, sdkOmittedValue)
+            ? this.installCommand
+            : installCommand as SdkOptional<String?>,
+        nodeVersion: identical(nodeVersion, sdkOmittedValue)
+            ? this.nodeVersion
+            : nodeVersion as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion>,
+        outputDirectory: identical(outputDirectory, sdkOmittedValue)
+            ? this.outputDirectory
+            : outputDirectory as SdkOptional<String?>,
+        rootDirectory: identical(rootDirectory, sdkOmittedValue)
+            ? this.rootDirectory
+            : rootDirectory as SdkOptional<String?>,
+        skipGitConnectDuringLink: identical(
+                skipGitConnectDuringLink, sdkOmittedValue)
+            ? this.skipGitConnectDuringLink
+            : skipGitConnectDuringLink as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink>,
+        sourceFilesOutsideRootDirectory: identical(
+                sourceFilesOutsideRootDirectory, sdkOmittedValue)
+            ? this.sourceFilesOutsideRootDirectory
+            : sourceFilesOutsideRootDirectory as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory>,
+        speedInsights: identical(speedInsights, sdkOmittedValue)
+            ? this.speedInsights
+            : speedInsights as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights>,
+        webAnalytics: identical(webAnalytics, sdkOmittedValue)
+            ? this.webAnalytics
+            : webAnalytics as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics>,
+      );
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettings.fromJson(Map<String, dynamic> json) => GetDeploymentsResponseDeploymentsItemProjectSettings(
-    buildCommand: json.containsKey('buildCommand') ? SdkPresent(json['buildCommand'] as String?) : const SdkOmitted(),
-    commandForIgnoringBuildStep: json.containsKey('commandForIgnoringBuildStep') ? SdkPresent(json['commandForIgnoringBuildStep'] as String?) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    customerSupportCodeVisibility: json['customerSupportCodeVisibility'] != null ? SdkPresent((json['customerSupportCodeVisibility'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility.fromJson(json['customerSupportCodeVisibility'] as bool) : null)!) : const SdkOmitted(),
-    devCommand: json.containsKey('devCommand') ? SdkPresent(json['devCommand'] as String?) : const SdkOmitted(),
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    gitComments: json['gitComments'] != null ? SdkPresent((json['gitComments'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments.fromJson(json['gitComments'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    gitForkProtection: json['gitForkProtection'] != null ? SdkPresent((json['gitForkProtection'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection.fromJson(json['gitForkProtection'] as bool) : null)!) : const SdkOmitted(),
-    gitLfs: json['gitLFS'] != null ? SdkPresent((json['gitLFS'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS.fromJson(json['gitLFS'] as bool) : null)!) : const SdkOmitted(),
-    installCommand: json.containsKey('installCommand') ? SdkPresent(json['installCommand'] as String?) : const SdkOmitted(),
-    nodeVersion: json['nodeVersion'] != null ? SdkPresent((json['nodeVersion'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion.fromJson(json['nodeVersion'] as String) : null)!) : const SdkOmitted(),
-    outputDirectory: json.containsKey('outputDirectory') ? SdkPresent(json['outputDirectory'] as String?) : const SdkOmitted(),
-    rootDirectory: json.containsKey('rootDirectory') ? SdkPresent(json['rootDirectory'] as String?) : const SdkOmitted(),
-    skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null ? SdkPresent((json['skipGitConnectDuringLink'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink.fromJson(json['skipGitConnectDuringLink'] as bool) : null)!) : const SdkOmitted(),
-    sourceFilesOutsideRootDirectory: json['sourceFilesOutsideRootDirectory'] != null ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory.fromJson(json['sourceFilesOutsideRootDirectory'] as bool) : null)!) : const SdkOmitted(),
-    speedInsights: json['speedInsights'] != null ? SdkPresent((json['speedInsights'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights.fromJson(json['speedInsights'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics.fromJson(json['webAnalytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory GetDeploymentsResponseDeploymentsItemProjectSettings.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettings(
+        buildCommand: json.containsKey('buildCommand')
+            ? SdkPresent(json['buildCommand'] as String?)
+            : const SdkOmitted(),
+        commandForIgnoringBuildStep:
+            json.containsKey('commandForIgnoringBuildStep')
+                ? SdkPresent(json['commandForIgnoringBuildStep'] as String?)
+                : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        customerSupportCodeVisibility: json['customerSupportCodeVisibility'] !=
+                null
+            ? SdkPresent((json['customerSupportCodeVisibility'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility
+                    .fromJson(json['customerSupportCodeVisibility'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        devCommand: json.containsKey('devCommand')
+            ? SdkPresent(json['devCommand'] as String?)
+            : const SdkOmitted(),
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsFramework
+                    .fromJson(json['framework'] as String)
+                : null)
+            : const SdkOmitted(),
+        gitComments: json['gitComments'] != null
+            ? SdkPresent((json['gitComments'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments
+                    .fromJson(json['gitComments'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        gitForkProtection: json['gitForkProtection'] != null
+            ? SdkPresent((json['gitForkProtection'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection
+                    .fromJson(json['gitForkProtection'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        gitLfs: json['gitLFS'] != null
+            ? SdkPresent((json['gitLFS'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS
+                    .fromJson(json['gitLFS'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        installCommand: json.containsKey('installCommand')
+            ? SdkPresent(json['installCommand'] as String?)
+            : const SdkOmitted(),
+        nodeVersion: json['nodeVersion'] != null
+            ? SdkPresent((json['nodeVersion'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion
+                    .fromJson(json['nodeVersion'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        outputDirectory: json.containsKey('outputDirectory')
+            ? SdkPresent(json['outputDirectory'] as String?)
+            : const SdkOmitted(),
+        rootDirectory: json.containsKey('rootDirectory')
+            ? SdkPresent(json['rootDirectory'] as String?)
+            : const SdkOmitted(),
+        skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null
+            ? SdkPresent((json['skipGitConnectDuringLink'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink
+                    .fromJson(json['skipGitConnectDuringLink'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        sourceFilesOutsideRootDirectory: json[
+                    'sourceFilesOutsideRootDirectory'] !=
+                null
+            ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory
+                    .fromJson(json['sourceFilesOutsideRootDirectory'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        speedInsights: json['speedInsights'] != null
+            ? SdkPresent((json['speedInsights'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights
+                    .fromJson(json['speedInsights'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        webAnalytics: json['webAnalytics'] != null
+            ? SdkPresent((json['webAnalytics'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics
+                    .fromJson(json['webAnalytics'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (buildCommand) {
-      SdkPresent<String?>(value: final value) => {'buildCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (commandForIgnoringBuildStep) {
-      SdkPresent<String?>(value: final value) => {'commandForIgnoringBuildStep': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customerSupportCodeVisibility) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility>(value: final value) => {'customerSupportCodeVisibility': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (devCommand) {
-      SdkPresent<String?>(value: final value) => {'devCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (framework) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitComments) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments>(value: final value) => {'gitComments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitForkProtection) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection>(value: final value) => {'gitForkProtection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitLfs) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS>(value: final value) => {'gitLFS': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (installCommand) {
-      SdkPresent<String?>(value: final value) => {'installCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (nodeVersion) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion>(value: final value) => {'nodeVersion': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (outputDirectory) {
-      SdkPresent<String?>(value: final value) => {'outputDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rootDirectory) {
-      SdkPresent<String?>(value: final value) => {'rootDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skipGitConnectDuringLink) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink>(value: final value) => {'skipGitConnectDuringLink': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sourceFilesOutsideRootDirectory) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory>(value: final value) => {'sourceFilesOutsideRootDirectory': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (speedInsights) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights>(value: final value) => {'speedInsights': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webAnalytics) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (buildCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'buildCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (commandForIgnoringBuildStep) {
+          SdkPresent<String?>(value: final value) => {
+              'commandForIgnoringBuildStep': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customerSupportCodeVisibility) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility>(
+            value: final value
+          ) =>
+            {
+              'customerSupportCodeVisibility': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (devCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'devCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (framework) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsFramework?>(
+            value: final value
+          ) =>
+            {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitComments) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsGitComments>(
+            value: final value
+          ) =>
+            {
+              'gitComments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitForkProtection) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection>(
+            value: final value
+          ) =>
+            {
+              'gitForkProtection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitLfs) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS>(
+            value: final value
+          ) =>
+            {
+              'gitLFS': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (installCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'installCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (nodeVersion) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion>(
+            value: final value
+          ) =>
+            {
+              'nodeVersion': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (outputDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'outputDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rootDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'rootDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skipGitConnectDuringLink) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink>(
+            value: final value
+          ) =>
+            {
+              'skipGitConnectDuringLink': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sourceFilesOutsideRootDirectory) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory>(
+            value: final value
+          ) =>
+            {
+              'sourceFilesOutsideRootDirectory': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (speedInsights) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsights>(
+            value: final value
+          ) =>
+            {
+              'speedInsights': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webAnalytics) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalytics>(
+            value: final value
+          ) =>
+            {
+              'webAnalytics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

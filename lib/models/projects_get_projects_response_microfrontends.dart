@@ -7,163 +7,400 @@ part of 'projects_get.dart';
 class GetProjectsResponseMicrofrontendsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A path that is used to take screenshots and as the default path in preview links when a domain for this microfrontend is shown in the UI. Includes the leading slash, e.g. `/docs`
   final SdkOptional<String> defaultRoute;
+
   /// Whether microfrontends are enabled for this project.
   final GetProjectsResponseMicrofrontendsVariant0Enabled enabled;
+
   /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
-  final SdkOptional<GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits> freeProjectForLegacyLimits;
+  final SdkOptional<
+          GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>
+      freeProjectForLegacyLimits;
+
   /// The group IDs of microfrontends that this project belongs to. Each microfrontend project must belong to a microfrontends group that is the set of microfrontends that are used together.
   final List<String> groupIds;
   final GetProjectsResponseMicrofrontendsVariant0IsDefaultApp isDefaultApp;
+
   /// Timestamp when the microfrontends settings were last updated.
   final double updatedAt;
 
-  const GetProjectsResponseMicrofrontendsVariant0({this.defaultRoute = const SdkOmitted(), required this.enabled, this.freeProjectForLegacyLimits = const SdkOmitted(), required this.groupIds, required this.isDefaultApp, required this.updatedAt});
+  const GetProjectsResponseMicrofrontendsVariant0(
+      {this.defaultRoute = const SdkOmitted(),
+      required this.enabled,
+      this.freeProjectForLegacyLimits = const SdkOmitted(),
+      required this.groupIds,
+      required this.isDefaultApp,
+      required this.updatedAt});
 
-  GetProjectsResponseMicrofrontendsVariant0 Function({SdkOptional<String> defaultRoute, GetProjectsResponseMicrofrontendsVariant0Enabled enabled, SdkOptional<GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits> freeProjectForLegacyLimits, List<String> groupIds, GetProjectsResponseMicrofrontendsVariant0IsDefaultApp isDefaultApp, double updatedAt}) get copyWith => _copyWith;
+  GetProjectsResponseMicrofrontendsVariant0 Function(
+      {SdkOptional<String> defaultRoute,
+      GetProjectsResponseMicrofrontendsVariant0Enabled enabled,
+      SdkOptional<
+              GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>
+          freeProjectForLegacyLimits,
+      List<String> groupIds,
+      GetProjectsResponseMicrofrontendsVariant0IsDefaultApp isDefaultApp,
+      double updatedAt}) get copyWith => _copyWith;
 
-  GetProjectsResponseMicrofrontendsVariant0 _copyWith({Object? defaultRoute = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? freeProjectForLegacyLimits = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetProjectsResponseMicrofrontendsVariant0(
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as GetProjectsResponseMicrofrontendsVariant0Enabled,
-    freeProjectForLegacyLimits: identical(freeProjectForLegacyLimits, sdkOmittedValue) ? this.freeProjectForLegacyLimits : freeProjectForLegacyLimits as SdkOptional<GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>,
-    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<String>,
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as GetProjectsResponseMicrofrontendsVariant0IsDefaultApp,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  GetProjectsResponseMicrofrontendsVariant0 _copyWith(
+          {Object? defaultRoute = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? freeProjectForLegacyLimits = sdkOmittedValue,
+          Object? groupIds = sdkOmittedValue,
+          Object? isDefaultApp = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      GetProjectsResponseMicrofrontendsVariant0(
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as GetProjectsResponseMicrofrontendsVariant0Enabled,
+        freeProjectForLegacyLimits: identical(
+                freeProjectForLegacyLimits, sdkOmittedValue)
+            ? this.freeProjectForLegacyLimits
+            : freeProjectForLegacyLimits as SdkOptional<
+                GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>,
+        groupIds: identical(groupIds, sdkOmittedValue)
+            ? this.groupIds
+            : groupIds as List<String>,
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp
+                as GetProjectsResponseMicrofrontendsVariant0IsDefaultApp,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory GetProjectsResponseMicrofrontendsVariant0.fromJson(Map<String, dynamic> json) => GetProjectsResponseMicrofrontendsVariant0(
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? GetProjectsResponseMicrofrontendsVariant0Enabled.fromJson(json['enabled'] as bool) : null)!,
-    freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null ? SdkPresent((json['freeProjectForLegacyLimits'] != null ? GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(json['freeProjectForLegacyLimits'] as bool) : null)!) : const SdkOmitted(),
-    groupIds: ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
-    isDefaultApp: (json['isDefaultApp'] != null ? GetProjectsResponseMicrofrontendsVariant0IsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory GetProjectsResponseMicrofrontendsVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseMicrofrontendsVariant0(
+        defaultRoute: json['defaultRoute'] != null
+            ? SdkPresent((json['defaultRoute'] as String?)!)
+            : const SdkOmitted(),
+        enabled: (json['enabled'] != null
+            ? GetProjectsResponseMicrofrontendsVariant0Enabled.fromJson(
+                json['enabled'] as bool)
+            : null)!,
+        freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null
+            ? SdkPresent((json['freeProjectForLegacyLimits'] != null
+                ? GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits
+                    .fromJson(json['freeProjectForLegacyLimits'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        groupIds:
+            ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
+        isDefaultApp: (json['isDefaultApp'] != null
+            ? GetProjectsResponseMicrofrontendsVariant0IsDefaultApp.fromJson(
+                json['isDefaultApp'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    ...switch (freeProjectForLegacyLimits) {
-      SdkPresent<GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>(value: final value) => {'freeProjectForLegacyLimits': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'groupIds': groupIds,
-    'isDefaultApp': isDefaultApp.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        ...switch (freeProjectForLegacyLimits) {
+          SdkPresent<
+                GetProjectsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>(
+            value: final value
+          ) =>
+            {
+              'freeProjectForLegacyLimits': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'groupIds': groupIds,
+        'isDefaultApp': isDefaultApp.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 class GetProjectsResponseMicrofrontendsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A path that is used to take screenshots and as the default path in preview links when a domain for this microfrontend is shown in the UI. Includes the leading slash, e.g. `/docs`
   final SdkOptional<String> defaultRoute;
+
   /// Whether to add microfrontends routing to aliases. This means domains in this project will route as a microfrontend.
-  final SdkOptional<GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting> doNotRouteWithMicrofrontendsRouting;
+  final SdkOptional<
+          GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>
+      doNotRouteWithMicrofrontendsRouting;
+
   /// Whether microfrontends are enabled for this project.
   final GetProjectsResponseMicrofrontendsVariant1Enabled enabled;
+
   /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
-  final SdkOptional<GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits> freeProjectForLegacyLimits;
+  final SdkOptional<
+          GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>
+      freeProjectForLegacyLimits;
+
   /// The group IDs of microfrontends that this project belongs to. Each microfrontend project must belong to a microfrontends group that is the set of microfrontends that are used together.
   final List<String> groupIds;
-  final SdkOptional<GetProjectsResponseMicrofrontendsVariant1IsDefaultApp> isDefaultApp;
+  final SdkOptional<GetProjectsResponseMicrofrontendsVariant1IsDefaultApp>
+      isDefaultApp;
+
   /// Whether observability data should be routed to this microfrontend project or a root project.
-  final SdkOptional<GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject> routeObservabilityToThisProject;
+  final SdkOptional<
+          GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject>
+      routeObservabilityToThisProject;
+
   /// Timestamp when the microfrontends settings were last updated.
   final double updatedAt;
 
-  const GetProjectsResponseMicrofrontendsVariant1({this.defaultRoute = const SdkOmitted(), this.doNotRouteWithMicrofrontendsRouting = const SdkOmitted(), required this.enabled, this.freeProjectForLegacyLimits = const SdkOmitted(), required this.groupIds, this.isDefaultApp = const SdkOmitted(), this.routeObservabilityToThisProject = const SdkOmitted(), required this.updatedAt});
+  const GetProjectsResponseMicrofrontendsVariant1(
+      {this.defaultRoute = const SdkOmitted(),
+      this.doNotRouteWithMicrofrontendsRouting = const SdkOmitted(),
+      required this.enabled,
+      this.freeProjectForLegacyLimits = const SdkOmitted(),
+      required this.groupIds,
+      this.isDefaultApp = const SdkOmitted(),
+      this.routeObservabilityToThisProject = const SdkOmitted(),
+      required this.updatedAt});
 
-  GetProjectsResponseMicrofrontendsVariant1 Function({SdkOptional<String> defaultRoute, SdkOptional<GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting> doNotRouteWithMicrofrontendsRouting, GetProjectsResponseMicrofrontendsVariant1Enabled enabled, SdkOptional<GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits> freeProjectForLegacyLimits, List<String> groupIds, SdkOptional<GetProjectsResponseMicrofrontendsVariant1IsDefaultApp> isDefaultApp, SdkOptional<GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject> routeObservabilityToThisProject, double updatedAt}) get copyWith => _copyWith;
+  GetProjectsResponseMicrofrontendsVariant1 Function(
+      {SdkOptional<String> defaultRoute,
+      SdkOptional<
+              GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>
+          doNotRouteWithMicrofrontendsRouting,
+      GetProjectsResponseMicrofrontendsVariant1Enabled enabled,
+      SdkOptional<
+              GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>
+          freeProjectForLegacyLimits,
+      List<String> groupIds,
+      SdkOptional<GetProjectsResponseMicrofrontendsVariant1IsDefaultApp>
+          isDefaultApp,
+      SdkOptional<
+              GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject>
+          routeObservabilityToThisProject,
+      double updatedAt}) get copyWith => _copyWith;
 
-  GetProjectsResponseMicrofrontendsVariant1 _copyWith({Object? defaultRoute = sdkOmittedValue, Object? doNotRouteWithMicrofrontendsRouting = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? freeProjectForLegacyLimits = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue, Object? routeObservabilityToThisProject = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetProjectsResponseMicrofrontendsVariant1(
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    doNotRouteWithMicrofrontendsRouting: identical(doNotRouteWithMicrofrontendsRouting, sdkOmittedValue) ? this.doNotRouteWithMicrofrontendsRouting : doNotRouteWithMicrofrontendsRouting as SdkOptional<GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as GetProjectsResponseMicrofrontendsVariant1Enabled,
-    freeProjectForLegacyLimits: identical(freeProjectForLegacyLimits, sdkOmittedValue) ? this.freeProjectForLegacyLimits : freeProjectForLegacyLimits as SdkOptional<GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>,
-    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<String>,
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as SdkOptional<GetProjectsResponseMicrofrontendsVariant1IsDefaultApp>,
-    routeObservabilityToThisProject: identical(routeObservabilityToThisProject, sdkOmittedValue) ? this.routeObservabilityToThisProject : routeObservabilityToThisProject as SdkOptional<GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  GetProjectsResponseMicrofrontendsVariant1 _copyWith(
+          {Object? defaultRoute = sdkOmittedValue,
+          Object? doNotRouteWithMicrofrontendsRouting = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? freeProjectForLegacyLimits = sdkOmittedValue,
+          Object? groupIds = sdkOmittedValue,
+          Object? isDefaultApp = sdkOmittedValue,
+          Object? routeObservabilityToThisProject = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      GetProjectsResponseMicrofrontendsVariant1(
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        doNotRouteWithMicrofrontendsRouting: identical(
+                doNotRouteWithMicrofrontendsRouting, sdkOmittedValue)
+            ? this.doNotRouteWithMicrofrontendsRouting
+            : doNotRouteWithMicrofrontendsRouting as SdkOptional<
+                GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as GetProjectsResponseMicrofrontendsVariant1Enabled,
+        freeProjectForLegacyLimits: identical(
+                freeProjectForLegacyLimits, sdkOmittedValue)
+            ? this.freeProjectForLegacyLimits
+            : freeProjectForLegacyLimits as SdkOptional<
+                GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>,
+        groupIds: identical(groupIds, sdkOmittedValue)
+            ? this.groupIds
+            : groupIds as List<String>,
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp as SdkOptional<
+                GetProjectsResponseMicrofrontendsVariant1IsDefaultApp>,
+        routeObservabilityToThisProject: identical(
+                routeObservabilityToThisProject, sdkOmittedValue)
+            ? this.routeObservabilityToThisProject
+            : routeObservabilityToThisProject as SdkOptional<
+                GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory GetProjectsResponseMicrofrontendsVariant1.fromJson(Map<String, dynamic> json) => GetProjectsResponseMicrofrontendsVariant1(
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    doNotRouteWithMicrofrontendsRouting: json['doNotRouteWithMicrofrontendsRouting'] != null ? SdkPresent((json['doNotRouteWithMicrofrontendsRouting'] != null ? GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(json['doNotRouteWithMicrofrontendsRouting'] as bool) : null)!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? GetProjectsResponseMicrofrontendsVariant1Enabled.fromJson(json['enabled'] as bool) : null)!,
-    freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null ? SdkPresent((json['freeProjectForLegacyLimits'] != null ? GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(json['freeProjectForLegacyLimits'] as bool) : null)!) : const SdkOmitted(),
-    groupIds: ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
-    isDefaultApp: json['isDefaultApp'] != null ? SdkPresent((json['isDefaultApp'] != null ? GetProjectsResponseMicrofrontendsVariant1IsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!) : const SdkOmitted(),
-    routeObservabilityToThisProject: json['routeObservabilityToThisProject'] != null ? SdkPresent((json['routeObservabilityToThisProject'] != null ? GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(json['routeObservabilityToThisProject'] as bool) : null)!) : const SdkOmitted(),
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory GetProjectsResponseMicrofrontendsVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseMicrofrontendsVariant1(
+        defaultRoute: json['defaultRoute'] != null
+            ? SdkPresent((json['defaultRoute'] as String?)!)
+            : const SdkOmitted(),
+        doNotRouteWithMicrofrontendsRouting: json[
+                    'doNotRouteWithMicrofrontendsRouting'] !=
+                null
+            ? SdkPresent((json['doNotRouteWithMicrofrontendsRouting'] != null
+                ? GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
+                    .fromJson(
+                        json['doNotRouteWithMicrofrontendsRouting'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        enabled: (json['enabled'] != null
+            ? GetProjectsResponseMicrofrontendsVariant1Enabled.fromJson(
+                json['enabled'] as bool)
+            : null)!,
+        freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null
+            ? SdkPresent((json['freeProjectForLegacyLimits'] != null
+                ? GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits
+                    .fromJson(json['freeProjectForLegacyLimits'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        groupIds:
+            ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
+        isDefaultApp: json['isDefaultApp'] != null
+            ? SdkPresent((json['isDefaultApp'] != null
+                ? GetProjectsResponseMicrofrontendsVariant1IsDefaultApp
+                    .fromJson(json['isDefaultApp'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        routeObservabilityToThisProject: json[
+                    'routeObservabilityToThisProject'] !=
+                null
+            ? SdkPresent((json['routeObservabilityToThisProject'] != null
+                ? GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject
+                    .fromJson(json['routeObservabilityToThisProject'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (doNotRouteWithMicrofrontendsRouting) {
-      SdkPresent<GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>(value: final value) => {'doNotRouteWithMicrofrontendsRouting': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    ...switch (freeProjectForLegacyLimits) {
-      SdkPresent<GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>(value: final value) => {'freeProjectForLegacyLimits': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'groupIds': groupIds,
-    ...switch (isDefaultApp) {
-      SdkPresent<GetProjectsResponseMicrofrontendsVariant1IsDefaultApp>(value: final value) => {'isDefaultApp': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (routeObservabilityToThisProject) {
-      SdkPresent<GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject>(value: final value) => {'routeObservabilityToThisProject': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-  };
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (doNotRouteWithMicrofrontendsRouting) {
+          SdkPresent<
+                GetProjectsResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>(
+            value: final value
+          ) =>
+            {
+              'doNotRouteWithMicrofrontendsRouting': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        ...switch (freeProjectForLegacyLimits) {
+          SdkPresent<
+                GetProjectsResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>(
+            value: final value
+          ) =>
+            {
+              'freeProjectForLegacyLimits': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'groupIds': groupIds,
+        ...switch (isDefaultApp) {
+          SdkPresent<GetProjectsResponseMicrofrontendsVariant1IsDefaultApp>(
+            value: final value
+          ) =>
+            {
+              'isDefaultApp': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (routeObservabilityToThisProject) {
+          SdkPresent<
+                GetProjectsResponseMicrofrontendsVariant1RouteObservabilityToThisProject>(
+            value: final value
+          ) =>
+            {
+              'routeObservabilityToThisProject': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+      };
 }
 
 class GetProjectsResponseMicrofrontendsVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final GetProjectsResponseMicrofrontendsVariant2Enabled enabled;
-  final SdkOptional<GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits> freeProjectForLegacyLimits;
+  final SdkOptional<
+          GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>
+      freeProjectForLegacyLimits;
   final List<dynamic> groupIds;
   final double updatedAt;
 
-  const GetProjectsResponseMicrofrontendsVariant2({required this.enabled, this.freeProjectForLegacyLimits = const SdkOmitted(), required this.groupIds, required this.updatedAt});
+  const GetProjectsResponseMicrofrontendsVariant2(
+      {required this.enabled,
+      this.freeProjectForLegacyLimits = const SdkOmitted(),
+      required this.groupIds,
+      required this.updatedAt});
 
-  GetProjectsResponseMicrofrontendsVariant2 Function({GetProjectsResponseMicrofrontendsVariant2Enabled enabled, SdkOptional<GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits> freeProjectForLegacyLimits, List<dynamic> groupIds, double updatedAt}) get copyWith => _copyWith;
+  GetProjectsResponseMicrofrontendsVariant2 Function(
+      {GetProjectsResponseMicrofrontendsVariant2Enabled enabled,
+      SdkOptional<
+              GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>
+          freeProjectForLegacyLimits,
+      List<dynamic> groupIds,
+      double updatedAt}) get copyWith => _copyWith;
 
-  GetProjectsResponseMicrofrontendsVariant2 _copyWith({Object? enabled = sdkOmittedValue, Object? freeProjectForLegacyLimits = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetProjectsResponseMicrofrontendsVariant2(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as GetProjectsResponseMicrofrontendsVariant2Enabled,
-    freeProjectForLegacyLimits: identical(freeProjectForLegacyLimits, sdkOmittedValue) ? this.freeProjectForLegacyLimits : freeProjectForLegacyLimits as SdkOptional<GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>,
-    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<dynamic>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  GetProjectsResponseMicrofrontendsVariant2 _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? freeProjectForLegacyLimits = sdkOmittedValue,
+          Object? groupIds = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      GetProjectsResponseMicrofrontendsVariant2(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as GetProjectsResponseMicrofrontendsVariant2Enabled,
+        freeProjectForLegacyLimits: identical(
+                freeProjectForLegacyLimits, sdkOmittedValue)
+            ? this.freeProjectForLegacyLimits
+            : freeProjectForLegacyLimits as SdkOptional<
+                GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>,
+        groupIds: identical(groupIds, sdkOmittedValue)
+            ? this.groupIds
+            : groupIds as List<dynamic>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory GetProjectsResponseMicrofrontendsVariant2.fromJson(Map<String, dynamic> json) => GetProjectsResponseMicrofrontendsVariant2(
-    enabled: (json['enabled'] != null ? GetProjectsResponseMicrofrontendsVariant2Enabled.fromJson(json['enabled'] as bool) : null)!,
-    freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null ? SdkPresent((json['freeProjectForLegacyLimits'] != null ? GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(json['freeProjectForLegacyLimits'] as bool) : null)!) : const SdkOmitted(),
-    groupIds: ((json['groupIds'] as List?)?.map((e) => e).toList())!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory GetProjectsResponseMicrofrontendsVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseMicrofrontendsVariant2(
+        enabled: (json['enabled'] != null
+            ? GetProjectsResponseMicrofrontendsVariant2Enabled.fromJson(
+                json['enabled'] as bool)
+            : null)!,
+        freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null
+            ? SdkPresent((json['freeProjectForLegacyLimits'] != null
+                ? GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits
+                    .fromJson(json['freeProjectForLegacyLimits'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        groupIds: ((json['groupIds'] as List?)?.map((e) => e).toList())!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    ...switch (freeProjectForLegacyLimits) {
-      SdkPresent<GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>(value: final value) => {'freeProjectForLegacyLimits': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'groupIds': groupIds,
-    'updatedAt': updatedAt,
-  };
+        'enabled': enabled.toJson(),
+        ...switch (freeProjectForLegacyLimits) {
+          SdkPresent<
+                GetProjectsResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>(
+            value: final value
+          ) =>
+            {
+              'freeProjectForLegacyLimits': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'groupIds': groupIds,
+        'updatedAt': updatedAt,
+      };
 }
 
 sealed class GetProjectsResponseMicrofrontends {
@@ -172,32 +409,72 @@ sealed class GetProjectsResponseMicrofrontends {
   const GetProjectsResponseMicrofrontends();
   factory GetProjectsResponseMicrofrontends.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetProjectsResponseMicrofrontendsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0(value); } } catch (_) {}
-      try { final value = GetProjectsResponseMicrofrontendsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1(value); } } catch (_) {}
-      try { final value = GetProjectsResponseMicrofrontendsVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2(value); } } catch (_) {}
+      try {
+        final value = GetProjectsResponseMicrofrontendsVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetProjectsResponseMicrofrontendsVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetProjectsResponseMicrofrontendsVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0(GetProjectsResponseMicrofrontendsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1(GetProjectsResponseMicrofrontendsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2(GetProjectsResponseMicrofrontendsVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetProjectsResponseMicrofrontends");
+    try {
+      return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0(
+          GetProjectsResponseMicrofrontendsVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1(
+          GetProjectsResponseMicrofrontendsVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2(
+          GetProjectsResponseMicrofrontendsVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetProjectsResponseMicrofrontends");
   }
   Object? toJson();
 }
 
-final class GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0 extends GetProjectsResponseMicrofrontends {
+final class GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0
+    extends GetProjectsResponseMicrofrontends {
   final GetProjectsResponseMicrofrontendsVariant0 value;
-  const GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1 extends GetProjectsResponseMicrofrontends {
+final class GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1
+    extends GetProjectsResponseMicrofrontends {
   final GetProjectsResponseMicrofrontendsVariant1 value;
-  const GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2 extends GetProjectsResponseMicrofrontends {
+final class GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2
+    extends GetProjectsResponseMicrofrontends {
   final GetProjectsResponseMicrofrontendsVariant2 value;
-  const GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseMicrofrontendsGetProjectsResponseMicrofrontendsVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

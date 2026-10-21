@@ -12,176 +12,325 @@ class AcceptProjectTransferRequestResponse {
   final List<Map<String, dynamic>> resourceTransferErrors;
   final List<String> transferredStoreIds;
 
-  const AcceptProjectTransferRequestResponse({required this.partnerCalls, required this.projectName, required this.resourceTransferErrors, required this.transferredStoreIds});
+  const AcceptProjectTransferRequestResponse(
+      {required this.partnerCalls,
+      required this.projectName,
+      required this.resourceTransferErrors,
+      required this.transferredStoreIds});
 
-  AcceptProjectTransferRequestResponse Function({List<AcceptProjectTransferRequestResponsePartnerCallsItem> partnerCalls, String projectName, List<Map<String, dynamic>> resourceTransferErrors, List<String> transferredStoreIds}) get copyWith => _copyWith;
+  AcceptProjectTransferRequestResponse Function(
+      {List<AcceptProjectTransferRequestResponsePartnerCallsItem> partnerCalls,
+      String projectName,
+      List<Map<String, dynamic>> resourceTransferErrors,
+      List<String> transferredStoreIds}) get copyWith => _copyWith;
 
-  AcceptProjectTransferRequestResponse _copyWith({Object? partnerCalls = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? resourceTransferErrors = sdkOmittedValue, Object? transferredStoreIds = sdkOmittedValue}) => AcceptProjectTransferRequestResponse(
-    partnerCalls: identical(partnerCalls, sdkOmittedValue) ? this.partnerCalls : partnerCalls as List<AcceptProjectTransferRequestResponsePartnerCallsItem>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    resourceTransferErrors: identical(resourceTransferErrors, sdkOmittedValue) ? this.resourceTransferErrors : resourceTransferErrors as List<Map<String, dynamic>>,
-    transferredStoreIds: identical(transferredStoreIds, sdkOmittedValue) ? this.transferredStoreIds : transferredStoreIds as List<String>,
-  );
+  AcceptProjectTransferRequestResponse _copyWith(
+          {Object? partnerCalls = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? resourceTransferErrors = sdkOmittedValue,
+          Object? transferredStoreIds = sdkOmittedValue}) =>
+      AcceptProjectTransferRequestResponse(
+        partnerCalls: identical(partnerCalls, sdkOmittedValue)
+            ? this.partnerCalls
+            : partnerCalls
+                as List<AcceptProjectTransferRequestResponsePartnerCallsItem>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        resourceTransferErrors:
+            identical(resourceTransferErrors, sdkOmittedValue)
+                ? this.resourceTransferErrors
+                : resourceTransferErrors as List<Map<String, dynamic>>,
+        transferredStoreIds: identical(transferredStoreIds, sdkOmittedValue)
+            ? this.transferredStoreIds
+            : transferredStoreIds as List<String>,
+      );
 
-  factory AcceptProjectTransferRequestResponse.fromJson(Map<String, dynamic> json) => AcceptProjectTransferRequestResponse(
-    partnerCalls: ((json['partnerCalls'] as List?)?.map((e) => AcceptProjectTransferRequestResponsePartnerCallsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    projectName: (json['projectName'] as String?)!,
-    resourceTransferErrors: ((json['resourceTransferErrors'] as List?)?.map((e) => e as Map<String, dynamic>).toList())!,
-    transferredStoreIds: ((json['transferredStoreIds'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory AcceptProjectTransferRequestResponse.fromJson(
+          Map<String, dynamic> json) =>
+      AcceptProjectTransferRequestResponse(
+        partnerCalls: ((json['partnerCalls'] as List?)
+            ?.map((e) =>
+                AcceptProjectTransferRequestResponsePartnerCallsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        projectName: (json['projectName'] as String?)!,
+        resourceTransferErrors: ((json['resourceTransferErrors'] as List?)
+            ?.map((e) => e as Map<String, dynamic>)
+            .toList())!,
+        transferredStoreIds: ((json['transferredStoreIds'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'partnerCalls': partnerCalls.map((item) => item.toJson()).toList(),
-    'projectName': projectName,
-    'resourceTransferErrors': resourceTransferErrors,
-    'transferredStoreIds': transferredStoreIds,
-  };
+        'partnerCalls': partnerCalls.map((item) => item.toJson()).toList(),
+        'projectName': projectName,
+        'resourceTransferErrors': resourceTransferErrors,
+        'transferredStoreIds': transferredStoreIds,
+      };
 }
 
 /// Optional instructions for revoking and regenerating a automation bypass
 class UpdateProjectProtectionBypassRequestBodyRevoke {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Automation bypass to revoked
   final String secret;
+
   /// Whether or not a new automation bypass should be created after the provided secret is revoked
   final bool regenerate;
 
-  const UpdateProjectProtectionBypassRequestBodyRevoke({required this.secret, required this.regenerate});
+  const UpdateProjectProtectionBypassRequestBodyRevoke(
+      {required this.secret, required this.regenerate});
 
-  UpdateProjectProtectionBypassRequestBodyRevoke Function({String secret, bool regenerate}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassRequestBodyRevoke Function(
+      {String secret, bool regenerate}) get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassRequestBodyRevoke _copyWith({Object? secret = sdkOmittedValue, Object? regenerate = sdkOmittedValue}) => UpdateProjectProtectionBypassRequestBodyRevoke(
-    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as String,
-    regenerate: identical(regenerate, sdkOmittedValue) ? this.regenerate : regenerate as bool,
-  );
+  UpdateProjectProtectionBypassRequestBodyRevoke _copyWith(
+          {Object? secret = sdkOmittedValue,
+          Object? regenerate = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassRequestBodyRevoke(
+        secret:
+            identical(secret, sdkOmittedValue) ? this.secret : secret as String,
+        regenerate: identical(regenerate, sdkOmittedValue)
+            ? this.regenerate
+            : regenerate as bool,
+      );
 
-  factory UpdateProjectProtectionBypassRequestBodyRevoke.fromJson(Map<String, dynamic> json) => UpdateProjectProtectionBypassRequestBodyRevoke(
-    secret: (json['secret'] as String?)!,
-    regenerate: (json['regenerate'] as bool?)!,
-  );
+  factory UpdateProjectProtectionBypassRequestBodyRevoke.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectProtectionBypassRequestBodyRevoke(
+        secret: (json['secret'] as String?)!,
+        regenerate: (json['regenerate'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'secret': secret,
-    'regenerate': regenerate,
-  };
+        'secret': secret,
+        'regenerate': regenerate,
+      };
 }
 
 /// Generate a new secret. If neither generate or revoke are provided, a new random secret will be generated.
 class UpdateProjectProtectionBypassRequestBodyGenerate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional value of the secret to generate, don't send it for oauth2 tokens
   final SdkOptional<String> secret;
+
   /// Note to be displayed in the UI for this bypass
   final SdkOptional<String> note;
 
-  const UpdateProjectProtectionBypassRequestBodyGenerate({this.secret = const SdkOmitted(), this.note = const SdkOmitted()});
+  const UpdateProjectProtectionBypassRequestBodyGenerate(
+      {this.secret = const SdkOmitted(), this.note = const SdkOmitted()});
 
-  UpdateProjectProtectionBypassRequestBodyGenerate Function({SdkOptional<String> secret, SdkOptional<String> note}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassRequestBodyGenerate Function(
+      {SdkOptional<String> secret,
+      SdkOptional<String> note}) get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassRequestBodyGenerate _copyWith({Object? secret = sdkOmittedValue, Object? note = sdkOmittedValue}) => UpdateProjectProtectionBypassRequestBodyGenerate(
-    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as SdkOptional<String>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-  );
+  UpdateProjectProtectionBypassRequestBodyGenerate _copyWith(
+          {Object? secret = sdkOmittedValue, Object? note = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassRequestBodyGenerate(
+        secret: identical(secret, sdkOmittedValue)
+            ? this.secret
+            : secret as SdkOptional<String>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+      );
 
-  factory UpdateProjectProtectionBypassRequestBodyGenerate.fromJson(Map<String, dynamic> json) => UpdateProjectProtectionBypassRequestBodyGenerate(
-    secret: json['secret'] != null ? SdkPresent((json['secret'] as String?)!) : const SdkOmitted(),
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectProtectionBypassRequestBodyGenerate.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectProtectionBypassRequestBodyGenerate(
+        secret: json['secret'] != null
+            ? SdkPresent((json['secret'] as String?)!)
+            : const SdkOmitted(),
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (secret) {
-      SdkPresent<String>(value: final value) => {'secret': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (secret) {
+          SdkPresent<String>(value: final value) => {
+              'secret': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Update an existing bypass
 class UpdateProjectProtectionBypassRequestBodyUpdate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Automation bypass to updated
   final String secret;
+
   /// Whether or not this bypass is set as the VERCEL_AUTOMATION_BYPASS_SECRET environment variable on deployments
   final SdkOptional<bool> isEnvVar;
+
   /// Note to be displayed in the UI for this bypass
   final SdkOptional<String> note;
 
-  const UpdateProjectProtectionBypassRequestBodyUpdate({required this.secret, this.isEnvVar = const SdkOmitted(), this.note = const SdkOmitted()});
+  const UpdateProjectProtectionBypassRequestBodyUpdate(
+      {required this.secret,
+      this.isEnvVar = const SdkOmitted(),
+      this.note = const SdkOmitted()});
 
-  UpdateProjectProtectionBypassRequestBodyUpdate Function({String secret, SdkOptional<bool> isEnvVar, SdkOptional<String> note}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassRequestBodyUpdate Function(
+      {String secret,
+      SdkOptional<bool> isEnvVar,
+      SdkOptional<String> note}) get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassRequestBodyUpdate _copyWith({Object? secret = sdkOmittedValue, Object? isEnvVar = sdkOmittedValue, Object? note = sdkOmittedValue}) => UpdateProjectProtectionBypassRequestBodyUpdate(
-    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as String,
-    isEnvVar: identical(isEnvVar, sdkOmittedValue) ? this.isEnvVar : isEnvVar as SdkOptional<bool>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-  );
+  UpdateProjectProtectionBypassRequestBodyUpdate _copyWith(
+          {Object? secret = sdkOmittedValue,
+          Object? isEnvVar = sdkOmittedValue,
+          Object? note = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassRequestBodyUpdate(
+        secret:
+            identical(secret, sdkOmittedValue) ? this.secret : secret as String,
+        isEnvVar: identical(isEnvVar, sdkOmittedValue)
+            ? this.isEnvVar
+            : isEnvVar as SdkOptional<bool>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+      );
 
-  factory UpdateProjectProtectionBypassRequestBodyUpdate.fromJson(Map<String, dynamic> json) => UpdateProjectProtectionBypassRequestBodyUpdate(
-    secret: (json['secret'] as String?)!,
-    isEnvVar: json['isEnvVar'] != null ? SdkPresent((json['isEnvVar'] as bool?)!) : const SdkOmitted(),
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectProtectionBypassRequestBodyUpdate.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectProtectionBypassRequestBodyUpdate(
+        secret: (json['secret'] as String?)!,
+        isEnvVar: json['isEnvVar'] != null
+            ? SdkPresent((json['isEnvVar'] as bool?)!)
+            : const SdkOmitted(),
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'secret': secret,
-    ...switch (isEnvVar) {
-      SdkPresent<bool>(value: final value) => {'isEnvVar': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'secret': secret,
+        ...switch (isEnvVar) {
+          SdkPresent<bool>(value: final value) => {
+              'isEnvVar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateProjectProtectionBypassRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional instructions for revoking and regenerating a automation bypass
   final SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke> revoke;
+
   /// Generate a new secret. If neither generate or revoke are provided, a new random secret will be generated.
   final SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate> generate;
+
   /// Update an existing bypass
   final SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate> update;
 
-  const UpdateProjectProtectionBypassRequestBody({this.revoke = const SdkOmitted(), this.generate = const SdkOmitted(), this.update = const SdkOmitted()});
+  const UpdateProjectProtectionBypassRequestBody(
+      {this.revoke = const SdkOmitted(),
+      this.generate = const SdkOmitted(),
+      this.update = const SdkOmitted()});
 
-  UpdateProjectProtectionBypassRequestBody Function({SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke> revoke, SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate> generate, SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate> update}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassRequestBody Function(
+      {SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke> revoke,
+      SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate> generate,
+      SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate>
+          update}) get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassRequestBody _copyWith({Object? revoke = sdkOmittedValue, Object? generate = sdkOmittedValue, Object? update = sdkOmittedValue}) => UpdateProjectProtectionBypassRequestBody(
-    revoke: identical(revoke, sdkOmittedValue) ? this.revoke : revoke as SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke>,
-    generate: identical(generate, sdkOmittedValue) ? this.generate : generate as SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate>,
-    update: identical(update, sdkOmittedValue) ? this.update : update as SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate>,
-  );
+  UpdateProjectProtectionBypassRequestBody _copyWith(
+          {Object? revoke = sdkOmittedValue,
+          Object? generate = sdkOmittedValue,
+          Object? update = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassRequestBody(
+        revoke: identical(revoke, sdkOmittedValue)
+            ? this.revoke
+            : revoke
+                as SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke>,
+        generate: identical(generate, sdkOmittedValue)
+            ? this.generate
+            : generate as SdkOptional<
+                UpdateProjectProtectionBypassRequestBodyGenerate>,
+        update: identical(update, sdkOmittedValue)
+            ? this.update
+            : update
+                as SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate>,
+      );
 
-  factory UpdateProjectProtectionBypassRequestBody.fromJson(Map<String, dynamic> json) => UpdateProjectProtectionBypassRequestBody(
-    revoke: json['revoke'] != null ? SdkPresent((json['revoke'] != null ? UpdateProjectProtectionBypassRequestBodyRevoke.fromJson(json['revoke'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    generate: json['generate'] != null ? SdkPresent((json['generate'] != null ? UpdateProjectProtectionBypassRequestBodyGenerate.fromJson(json['generate'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    update: json['update'] != null ? SdkPresent((json['update'] != null ? UpdateProjectProtectionBypassRequestBodyUpdate.fromJson(json['update'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectProtectionBypassRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectProtectionBypassRequestBody(
+        revoke: json['revoke'] != null
+            ? SdkPresent((json['revoke'] != null
+                ? UpdateProjectProtectionBypassRequestBodyRevoke.fromJson(
+                    json['revoke'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        generate: json['generate'] != null
+            ? SdkPresent((json['generate'] != null
+                ? UpdateProjectProtectionBypassRequestBodyGenerate.fromJson(
+                    json['generate'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        update: json['update'] != null
+            ? SdkPresent((json['update'] != null
+                ? UpdateProjectProtectionBypassRequestBodyUpdate.fromJson(
+                    json['update'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (revoke) {
-      SdkPresent<UpdateProjectProtectionBypassRequestBodyRevoke>(value: final value) => {'revoke': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (generate) {
-      SdkPresent<UpdateProjectProtectionBypassRequestBodyGenerate>(value: final value) => {'generate': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (update) {
-      SdkPresent<UpdateProjectProtectionBypassRequestBodyUpdate>(value: final value) => {'update': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (revoke) {
+          SdkPresent<UpdateProjectProtectionBypassRequestBodyRevoke>(
+            value: final value
+          ) =>
+            {
+              'revoke': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (generate) {
+          SdkPresent<UpdateProjectProtectionBypassRequestBodyGenerate>(
+            value: final value
+          ) =>
+            {
+              'generate': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (update) {
+          SdkPresent<UpdateProjectProtectionBypassRequestBodyUpdate>(
+            value: final value
+          ) =>
+            {
+              'update': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0 {
@@ -191,35 +340,69 @@ class UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0 {
   final double createdAt;
   final String createdBy;
   final String integrationId;
-  final UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope scope;
+  final UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope
+      scope;
 
-  const UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0({required this.configurationId, required this.createdAt, required this.createdBy, required this.integrationId, required this.scope});
+  const UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0(
+      {required this.configurationId,
+      required this.createdAt,
+      required this.createdBy,
+      required this.integrationId,
+      required this.scope});
 
-  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0 Function({String configurationId, double createdAt, String createdBy, String integrationId, UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope scope}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0 Function(
+      {String configurationId,
+      double createdAt,
+      String createdBy,
+      String integrationId,
+      UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope
+          scope}) get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0 _copyWith({Object? configurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? scope = sdkOmittedValue}) => UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope,
-  );
+  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0 _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope
+                as UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope,
+      );
 
-  factory UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0.fromJson(Map<String, dynamic> json) => UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0(
-    configurationId: (json['configurationId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-    scope: (json['scope'] != null ? UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0(
+        configurationId: (json['configurationId'] as String?)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+        scope: (json['scope'] != null
+            ? UpdateProjectProtectionBypassResponseProtectionBypassValueVariant0Scope
+                .fromJson(json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    'integrationId': integrationId,
-    'scope': scope.toJson(),
-  };
+        'configurationId': configurationId,
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        'integrationId': integrationId,
+        'scope': scope.toJson(),
+      };
 }
 
 class UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1 {
@@ -227,45 +410,101 @@ class UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1 {
   static const String constructionSurface = 'named';
   final double createdAt;
   final String createdBy;
+
   /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
-  final SdkOptional<UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar> isEnvVar;
+  final SdkOptional<
+          UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar>
+      isEnvVar;
+
   /// Optional note about the bypass to be displayed in the UI
   final SdkOptional<String> note;
-  final UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope scope;
+  final UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope
+      scope;
 
-  const UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1({required this.createdAt, required this.createdBy, this.isEnvVar = const SdkOmitted(), this.note = const SdkOmitted(), required this.scope});
+  const UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1(
+      {required this.createdAt,
+      required this.createdBy,
+      this.isEnvVar = const SdkOmitted(),
+      this.note = const SdkOmitted(),
+      required this.scope});
 
-  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1 Function({double createdAt, String createdBy, SdkOptional<UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar> isEnvVar, SdkOptional<String> note, UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope scope}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1 Function(
+      {double createdAt,
+      String createdBy,
+      SdkOptional<
+              UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar>
+          isEnvVar,
+      SdkOptional<String> note,
+      UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope
+          scope}) get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? isEnvVar = sdkOmittedValue, Object? note = sdkOmittedValue, Object? scope = sdkOmittedValue}) => UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    isEnvVar: identical(isEnvVar, sdkOmittedValue) ? this.isEnvVar : isEnvVar as SdkOptional<UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope,
-  );
+  UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? isEnvVar = sdkOmittedValue,
+          Object? note = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        isEnvVar: identical(isEnvVar, sdkOmittedValue)
+            ? this.isEnvVar
+            : isEnvVar as SdkOptional<
+                UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope
+                as UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope,
+      );
 
-  factory UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1.fromJson(Map<String, dynamic> json) => UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    isEnvVar: json['isEnvVar'] != null ? SdkPresent((json['isEnvVar'] != null ? UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar.fromJson(json['isEnvVar'] as bool) : null)!) : const SdkOmitted(),
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    scope: (json['scope'] != null ? UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        isEnvVar: json['isEnvVar'] != null
+            ? SdkPresent((json['isEnvVar'] != null
+                ? UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar
+                    .fromJson(json['isEnvVar'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        scope: (json['scope'] != null
+            ? UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1Scope
+                .fromJson(json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    ...switch (isEnvVar) {
-      SdkPresent<UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar>(value: final value) => {'isEnvVar': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'scope': scope.toJson(),
-  };
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        ...switch (isEnvVar) {
+          SdkPresent<
+                UpdateProjectProtectionBypassResponseProtectionBypassValueVariant1IsEnvVar>(
+            value: final value
+          ) =>
+            {
+              'isEnvVar': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'scope': scope.toJson(),
+      };
 }
 
 class UpdateProjectProtectionBypassResponse {
@@ -273,22 +512,37 @@ class UpdateProjectProtectionBypassResponse {
   static const String constructionSurface = 'named';
   final SdkOptional<Map<String, dynamic>> protectionBypass;
 
-  const UpdateProjectProtectionBypassResponse({this.protectionBypass = const SdkOmitted()});
+  const UpdateProjectProtectionBypassResponse(
+      {this.protectionBypass = const SdkOmitted()});
 
-  UpdateProjectProtectionBypassResponse Function({SdkOptional<Map<String, dynamic>> protectionBypass}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassResponse Function(
+          {SdkOptional<Map<String, dynamic>> protectionBypass})
+      get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassResponse _copyWith({Object? protectionBypass = sdkOmittedValue}) => UpdateProjectProtectionBypassResponse(
-    protectionBypass: identical(protectionBypass, sdkOmittedValue) ? this.protectionBypass : protectionBypass as SdkOptional<Map<String, dynamic>>,
-  );
+  UpdateProjectProtectionBypassResponse _copyWith(
+          {Object? protectionBypass = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassResponse(
+        protectionBypass: identical(protectionBypass, sdkOmittedValue)
+            ? this.protectionBypass
+            : protectionBypass as SdkOptional<Map<String, dynamic>>,
+      );
 
-  factory UpdateProjectProtectionBypassResponse.fromJson(Map<String, dynamic> json) => UpdateProjectProtectionBypassResponse(
-    protectionBypass: json['protectionBypass'] != null ? SdkPresent((json['protectionBypass'] == null ? null : json['protectionBypass'] as Map<String, dynamic>)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectProtectionBypassResponse.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectProtectionBypassResponse(
+        protectionBypass: json['protectionBypass'] != null
+            ? SdkPresent((json['protectionBypass'] == null
+                ? null
+                : json['protectionBypass'] as Map<String, dynamic>)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (protectionBypass) {
-      SdkPresent<Map<String, dynamic>>(value: final value) => {'protectionBypass': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (protectionBypass) {
+          SdkPresent<Map<String, dynamic>>(value: final value) => {
+              'protectionBypass': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

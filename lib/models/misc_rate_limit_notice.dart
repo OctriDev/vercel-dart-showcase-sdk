@@ -8,37 +8,55 @@ part of 'misc.dart';
 class RateLimitNotice {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `integer` value serialized in the `remaining` wire field.
   final int remaining;
+
   /// Required `integer` value serialized in the `reset` wire field.
   final int reset;
+
   /// Required `integer` value serialized in the `resetMs` wire field.
   final int resetMs;
+
   /// Required `integer` value serialized in the `total` wire field.
   final int total;
 
-  const RateLimitNotice({required this.remaining, required this.reset, required this.resetMs, required this.total});
+  const RateLimitNotice(
+      {required this.remaining,
+      required this.reset,
+      required this.resetMs,
+      required this.total});
 
-  RateLimitNotice Function({int remaining, int reset, int resetMs, int total}) get copyWith => _copyWith;
+  RateLimitNotice Function({int remaining, int reset, int resetMs, int total})
+      get copyWith => _copyWith;
 
-  RateLimitNotice _copyWith({Object? remaining = sdkOmittedValue, Object? reset = sdkOmittedValue, Object? resetMs = sdkOmittedValue, Object? total = sdkOmittedValue}) => RateLimitNotice(
-    remaining: identical(remaining, sdkOmittedValue) ? this.remaining : remaining as int,
-    reset: identical(reset, sdkOmittedValue) ? this.reset : reset as int,
-    resetMs: identical(resetMs, sdkOmittedValue) ? this.resetMs : resetMs as int,
-    total: identical(total, sdkOmittedValue) ? this.total : total as int,
-  );
+  RateLimitNotice _copyWith(
+          {Object? remaining = sdkOmittedValue,
+          Object? reset = sdkOmittedValue,
+          Object? resetMs = sdkOmittedValue,
+          Object? total = sdkOmittedValue}) =>
+      RateLimitNotice(
+        remaining: identical(remaining, sdkOmittedValue)
+            ? this.remaining
+            : remaining as int,
+        reset: identical(reset, sdkOmittedValue) ? this.reset : reset as int,
+        resetMs:
+            identical(resetMs, sdkOmittedValue) ? this.resetMs : resetMs as int,
+        total: identical(total, sdkOmittedValue) ? this.total : total as int,
+      );
 
-  factory RateLimitNotice.fromJson(Map<String, dynamic> json) => RateLimitNotice(
-    remaining: ((json['remaining'] as num?)?.toInt())!,
-    reset: ((json['reset'] as num?)?.toInt())!,
-    resetMs: ((json['resetMs'] as num?)?.toInt())!,
-    total: ((json['total'] as num?)?.toInt())!,
-  );
+  factory RateLimitNotice.fromJson(Map<String, dynamic> json) =>
+      RateLimitNotice(
+        remaining: ((json['remaining'] as num?)?.toInt())!,
+        reset: ((json['reset'] as num?)?.toInt())!,
+        resetMs: ((json['resetMs'] as num?)?.toInt())!,
+        total: ((json['total'] as num?)?.toInt())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'remaining': remaining,
-    'reset': reset,
-    'resetMs': resetMs,
-    'total': total,
-  };
+        'remaining': remaining,
+        'reset': reset,
+        'resetMs': resetMs,
+        'total': total,
+      };
 }

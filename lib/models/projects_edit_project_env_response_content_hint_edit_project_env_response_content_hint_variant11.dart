@@ -4,38 +4,56 @@
 part of 'projects.dart';
 
 // projects domain models
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11 extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11
+    extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant11 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12 extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12
+    extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant12 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13 extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13
+    extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant13 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14 extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14
+    extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant14 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15 extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15
+    extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant15 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16 extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16
+    extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant16 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

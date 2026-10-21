@@ -8,295 +8,597 @@ part of 'user.dart';
 class UserEventPayloadVariant49 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `currency` wire field.
   final SdkOptional<String> currency;
+
   /// Optional `number` value serialized in the `price` wire field.
   final SdkOptional<double> price;
 
-  const UserEventPayloadVariant49({this.currency = const SdkOmitted(), this.price = const SdkOmitted()});
+  const UserEventPayloadVariant49(
+      {this.currency = const SdkOmitted(), this.price = const SdkOmitted()});
 
-  UserEventPayloadVariant49 Function({SdkOptional<String> currency, SdkOptional<double> price}) get copyWith => _copyWith;
+  UserEventPayloadVariant49 Function(
+      {SdkOptional<String> currency,
+      SdkOptional<double> price}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant49 _copyWith({Object? currency = sdkOmittedValue, Object? price = sdkOmittedValue}) => UserEventPayloadVariant49(
-    currency: identical(currency, sdkOmittedValue) ? this.currency : currency as SdkOptional<String>,
-    price: identical(price, sdkOmittedValue) ? this.price : price as SdkOptional<double>,
-  );
+  UserEventPayloadVariant49 _copyWith(
+          {Object? currency = sdkOmittedValue,
+          Object? price = sdkOmittedValue}) =>
+      UserEventPayloadVariant49(
+        currency: identical(currency, sdkOmittedValue)
+            ? this.currency
+            : currency as SdkOptional<String>,
+        price: identical(price, sdkOmittedValue)
+            ? this.price
+            : price as SdkOptional<double>,
+      );
 
-  factory UserEventPayloadVariant49.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant49(
-    currency: json['currency'] != null ? SdkPresent((json['currency'] as String?)!) : const SdkOmitted(),
-    price: json['price'] != null ? SdkPresent(((json['price'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant49.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant49(
+        currency: json['currency'] != null
+            ? SdkPresent((json['currency'] as String?)!)
+            : const SdkOmitted(),
+        price: json['price'] != null
+            ? SdkPresent(((json['price'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (currency) {
-      SdkPresent<String>(value: final value) => {'currency': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (price) {
-      SdkPresent<double>(value: final value) => {'price': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (currency) {
+          SdkPresent<String>(value: final value) => {
+              'currency': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (price) {
+          SdkPresent<double>(value: final value) => {
+              'price': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `deployment` wire field.
 class UserEventPayloadVariant50Deployment {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A narrowed subset of the deployment's `readyStateReasonInternal` — only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log.
-  final SdkOptional<UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal> allowListedReadyStateReasonInternal;
+  final SdkOptional<
+          UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal>
+      allowListedReadyStateReasonInternal;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required object value serialized in the `meta` wire field.
   final Map<String, String> meta;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Optional `string` value serialized in the `readyState` wire field.
   final SdkOptional<String> readyState;
+
   /// Required `string` value serialized in the `url` wire field.
   final String url;
 
-  const UserEventPayloadVariant50Deployment({this.allowListedReadyStateReasonInternal = const SdkOmitted(), required this.id, required this.meta, required this.name, this.readyState = const SdkOmitted(), required this.url});
+  const UserEventPayloadVariant50Deployment(
+      {this.allowListedReadyStateReasonInternal = const SdkOmitted(),
+      required this.id,
+      required this.meta,
+      required this.name,
+      this.readyState = const SdkOmitted(),
+      required this.url});
 
-  UserEventPayloadVariant50Deployment Function({SdkOptional<UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal> allowListedReadyStateReasonInternal, String id, Map<String, String> meta, String name, SdkOptional<String> readyState, String url}) get copyWith => _copyWith;
+  UserEventPayloadVariant50Deployment Function(
+      {SdkOptional<
+              UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal>
+          allowListedReadyStateReasonInternal,
+      String id,
+      Map<String, String> meta,
+      String name,
+      SdkOptional<String> readyState,
+      String url}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant50Deployment _copyWith({Object? allowListedReadyStateReasonInternal = sdkOmittedValue, Object? id = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? name = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? url = sdkOmittedValue}) => UserEventPayloadVariant50Deployment(
-    allowListedReadyStateReasonInternal: identical(allowListedReadyStateReasonInternal, sdkOmittedValue) ? this.allowListedReadyStateReasonInternal : allowListedReadyStateReasonInternal as SdkOptional<UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as Map<String, String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as SdkOptional<String>,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  UserEventPayloadVariant50Deployment _copyWith(
+          {Object? allowListedReadyStateReasonInternal = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? meta = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? readyState = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      UserEventPayloadVariant50Deployment(
+        allowListedReadyStateReasonInternal: identical(
+                allowListedReadyStateReasonInternal, sdkOmittedValue)
+            ? this.allowListedReadyStateReasonInternal
+            : allowListedReadyStateReasonInternal as SdkOptional<
+                UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        meta: identical(meta, sdkOmittedValue)
+            ? this.meta
+            : meta as Map<String, String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        readyState: identical(readyState, sdkOmittedValue)
+            ? this.readyState
+            : readyState as SdkOptional<String>,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory UserEventPayloadVariant50Deployment.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant50Deployment(
-    allowListedReadyStateReasonInternal: json['allowListedReadyStateReasonInternal'] != null ? SdkPresent((json['allowListedReadyStateReasonInternal'] != null ? UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal.fromJson(json['allowListedReadyStateReasonInternal'] as String) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    meta: (json['meta'] == null ? null : Map<String, dynamic>.from(json['meta'] as Map).map((key, value) => MapEntry(key, value as String)))!,
-    name: (json['name'] as String?)!,
-    readyState: json['readyState'] != null ? SdkPresent((json['readyState'] as String?)!) : const SdkOmitted(),
-    url: (json['url'] as String?)!,
-  );
+  factory UserEventPayloadVariant50Deployment.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant50Deployment(
+        allowListedReadyStateReasonInternal: json[
+                    'allowListedReadyStateReasonInternal'] !=
+                null
+            ? SdkPresent((json['allowListedReadyStateReasonInternal'] != null
+                ? UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal
+                    .fromJson(
+                        json['allowListedReadyStateReasonInternal'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        meta: (json['meta'] == null
+            ? null
+            : Map<String, dynamic>.from(json['meta'] as Map)
+                .map((key, value) => MapEntry(key, value as String)))!,
+        name: (json['name'] as String?)!,
+        readyState: json['readyState'] != null
+            ? SdkPresent((json['readyState'] as String?)!)
+            : const SdkOmitted(),
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (allowListedReadyStateReasonInternal) {
-      SdkPresent<UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal>(value: final value) => {'allowListedReadyStateReasonInternal': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'meta': meta,
-    'name': name,
-    ...switch (readyState) {
-      SdkPresent<String>(value: final value) => {'readyState': value,},
-      _ => const <String, dynamic>{},
-    },
-    'url': url,
-  };
+        ...switch (allowListedReadyStateReasonInternal) {
+          SdkPresent<
+                UserEventPayloadVariant50DeploymentAllowListedReadyStateReasonInternal>(
+            value: final value
+          ) =>
+            {
+              'allowListedReadyStateReasonInternal': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'meta': meta,
+        'name': name,
+        ...switch (readyState) {
+          SdkPresent<String>(value: final value) => {
+              'readyState': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'url': url,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant50 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `alias` wire field.
   final SdkOptional<String> alias;
+
   /// Optional `string` value serialized in the `aliasId` wire field.
   final SdkOptional<String> aliasId;
+
   /// Optional `number` value serialized in the `aliasUpdatedAt` wire field.
   final SdkOptional<double> aliasUpdatedAt;
+
   /// Optional object value serialized in the `deployment` wire field.
   final SdkOptional<UserEventPayloadVariant50Deployment?> deployment;
+
   /// Optional `string` value serialized in the `deploymentId` wire field.
   final SdkOptional<String?> deploymentId;
+
   /// Optional `string` value serialized in the `deploymentUrl` wire field.
   final SdkOptional<String> deploymentUrl;
+
   /// Optional `string` value serialized in the `oldDeploymentId` wire field.
   final SdkOptional<String?> oldDeploymentId;
+
   /// Optional `string` value serialized in the `redirect` wire field.
   final SdkOptional<String> redirect;
+
   /// Optional `number` value serialized in the `redirectStatusCode` wire field.
   final SdkOptional<double?> redirectStatusCode;
+
   /// Optional `number` value serialized in the `ruleCount` wire field.
   final SdkOptional<double> ruleCount;
+
   /// Optional enumerated value serialized in the `system` wire field.
   final SdkOptional<UserEventPayloadVariant50System> system;
+
   /// Optional `string` value serialized in the `target` wire field.
   final SdkOptional<String?> target;
 
-  const UserEventPayloadVariant50({this.alias = const SdkOmitted(), this.aliasId = const SdkOmitted(), this.aliasUpdatedAt = const SdkOmitted(), this.deployment = const SdkOmitted(), this.deploymentId = const SdkOmitted(), this.deploymentUrl = const SdkOmitted(), this.oldDeploymentId = const SdkOmitted(), this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), this.ruleCount = const SdkOmitted(), this.system = const SdkOmitted(), this.target = const SdkOmitted()});
+  const UserEventPayloadVariant50(
+      {this.alias = const SdkOmitted(),
+      this.aliasId = const SdkOmitted(),
+      this.aliasUpdatedAt = const SdkOmitted(),
+      this.deployment = const SdkOmitted(),
+      this.deploymentId = const SdkOmitted(),
+      this.deploymentUrl = const SdkOmitted(),
+      this.oldDeploymentId = const SdkOmitted(),
+      this.redirect = const SdkOmitted(),
+      this.redirectStatusCode = const SdkOmitted(),
+      this.ruleCount = const SdkOmitted(),
+      this.system = const SdkOmitted(),
+      this.target = const SdkOmitted()});
 
-  UserEventPayloadVariant50 Function({SdkOptional<String> alias, SdkOptional<String> aliasId, SdkOptional<double> aliasUpdatedAt, SdkOptional<UserEventPayloadVariant50Deployment?> deployment, SdkOptional<String?> deploymentId, SdkOptional<String> deploymentUrl, SdkOptional<String?> oldDeploymentId, SdkOptional<String> redirect, SdkOptional<double?> redirectStatusCode, SdkOptional<double> ruleCount, SdkOptional<UserEventPayloadVariant50System> system, SdkOptional<String?> target}) get copyWith => _copyWith;
+  UserEventPayloadVariant50 Function(
+      {SdkOptional<String> alias,
+      SdkOptional<String> aliasId,
+      SdkOptional<double> aliasUpdatedAt,
+      SdkOptional<UserEventPayloadVariant50Deployment?> deployment,
+      SdkOptional<String?> deploymentId,
+      SdkOptional<String> deploymentUrl,
+      SdkOptional<String?> oldDeploymentId,
+      SdkOptional<String> redirect,
+      SdkOptional<double?> redirectStatusCode,
+      SdkOptional<double> ruleCount,
+      SdkOptional<UserEventPayloadVariant50System> system,
+      SdkOptional<String?> target}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant50 _copyWith({Object? alias = sdkOmittedValue, Object? aliasId = sdkOmittedValue, Object? aliasUpdatedAt = sdkOmittedValue, Object? deployment = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? deploymentUrl = sdkOmittedValue, Object? oldDeploymentId = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? ruleCount = sdkOmittedValue, Object? system = sdkOmittedValue, Object? target = sdkOmittedValue}) => UserEventPayloadVariant50(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    aliasId: identical(aliasId, sdkOmittedValue) ? this.aliasId : aliasId as SdkOptional<String>,
-    aliasUpdatedAt: identical(aliasUpdatedAt, sdkOmittedValue) ? this.aliasUpdatedAt : aliasUpdatedAt as SdkOptional<double>,
-    deployment: identical(deployment, sdkOmittedValue) ? this.deployment : deployment as SdkOptional<UserEventPayloadVariant50Deployment?>,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as SdkOptional<String?>,
-    deploymentUrl: identical(deploymentUrl, sdkOmittedValue) ? this.deploymentUrl : deploymentUrl as SdkOptional<String>,
-    oldDeploymentId: identical(oldDeploymentId, sdkOmittedValue) ? this.oldDeploymentId : oldDeploymentId as SdkOptional<String?>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String>,
-    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<double?>,
-    ruleCount: identical(ruleCount, sdkOmittedValue) ? this.ruleCount : ruleCount as SdkOptional<double>,
-    system: identical(system, sdkOmittedValue) ? this.system : system as SdkOptional<UserEventPayloadVariant50System>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<String?>,
-  );
+  UserEventPayloadVariant50 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? aliasId = sdkOmittedValue,
+          Object? aliasUpdatedAt = sdkOmittedValue,
+          Object? deployment = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? deploymentUrl = sdkOmittedValue,
+          Object? oldDeploymentId = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? redirectStatusCode = sdkOmittedValue,
+          Object? ruleCount = sdkOmittedValue,
+          Object? system = sdkOmittedValue,
+          Object? target = sdkOmittedValue}) =>
+      UserEventPayloadVariant50(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        aliasId: identical(aliasId, sdkOmittedValue)
+            ? this.aliasId
+            : aliasId as SdkOptional<String>,
+        aliasUpdatedAt: identical(aliasUpdatedAt, sdkOmittedValue)
+            ? this.aliasUpdatedAt
+            : aliasUpdatedAt as SdkOptional<double>,
+        deployment: identical(deployment, sdkOmittedValue)
+            ? this.deployment
+            : deployment as SdkOptional<UserEventPayloadVariant50Deployment?>,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as SdkOptional<String?>,
+        deploymentUrl: identical(deploymentUrl, sdkOmittedValue)
+            ? this.deploymentUrl
+            : deploymentUrl as SdkOptional<String>,
+        oldDeploymentId: identical(oldDeploymentId, sdkOmittedValue)
+            ? this.oldDeploymentId
+            : oldDeploymentId as SdkOptional<String?>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<String>,
+        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
+            ? this.redirectStatusCode
+            : redirectStatusCode as SdkOptional<double?>,
+        ruleCount: identical(ruleCount, sdkOmittedValue)
+            ? this.ruleCount
+            : ruleCount as SdkOptional<double>,
+        system: identical(system, sdkOmittedValue)
+            ? this.system
+            : system as SdkOptional<UserEventPayloadVariant50System>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<String?>,
+      );
 
-  factory UserEventPayloadVariant50.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant50(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    aliasId: json['aliasId'] != null ? SdkPresent((json['aliasId'] as String?)!) : const SdkOmitted(),
-    aliasUpdatedAt: json['aliasUpdatedAt'] != null ? SdkPresent(((json['aliasUpdatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    deployment: json.containsKey('deployment') ? SdkPresent(json['deployment'] != null ? UserEventPayloadVariant50Deployment.fromJson(json['deployment'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    deploymentId: json.containsKey('deploymentId') ? SdkPresent(json['deploymentId'] as String?) : const SdkOmitted(),
-    deploymentUrl: json['deploymentUrl'] != null ? SdkPresent((json['deploymentUrl'] as String?)!) : const SdkOmitted(),
-    oldDeploymentId: json.containsKey('oldDeploymentId') ? SdkPresent(json['oldDeploymentId'] as String?) : const SdkOmitted(),
-    redirect: json['redirect'] != null ? SdkPresent((json['redirect'] as String?)!) : const SdkOmitted(),
-    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent((json['redirectStatusCode'] as num?)?.toDouble()) : const SdkOmitted(),
-    ruleCount: json['ruleCount'] != null ? SdkPresent(((json['ruleCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-    system: json['system'] != null ? SdkPresent((json['system'] != null ? UserEventPayloadVariant50System.fromJson(json['system'] as bool) : null)!) : const SdkOmitted(),
-    target: json.containsKey('target') ? SdkPresent(json['target'] as String?) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant50.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant50(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+        aliasId: json['aliasId'] != null
+            ? SdkPresent((json['aliasId'] as String?)!)
+            : const SdkOmitted(),
+        aliasUpdatedAt: json['aliasUpdatedAt'] != null
+            ? SdkPresent(((json['aliasUpdatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        deployment: json.containsKey('deployment')
+            ? SdkPresent(json['deployment'] != null
+                ? UserEventPayloadVariant50Deployment.fromJson(
+                    json['deployment'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        deploymentId: json.containsKey('deploymentId')
+            ? SdkPresent(json['deploymentId'] as String?)
+            : const SdkOmitted(),
+        deploymentUrl: json['deploymentUrl'] != null
+            ? SdkPresent((json['deploymentUrl'] as String?)!)
+            : const SdkOmitted(),
+        oldDeploymentId: json.containsKey('oldDeploymentId')
+            ? SdkPresent(json['oldDeploymentId'] as String?)
+            : const SdkOmitted(),
+        redirect: json['redirect'] != null
+            ? SdkPresent((json['redirect'] as String?)!)
+            : const SdkOmitted(),
+        redirectStatusCode: json.containsKey('redirectStatusCode')
+            ? SdkPresent((json['redirectStatusCode'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        ruleCount: json['ruleCount'] != null
+            ? SdkPresent(((json['ruleCount'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        system: json['system'] != null
+            ? SdkPresent((json['system'] != null
+                ? UserEventPayloadVariant50System.fromJson(
+                    json['system'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        target: json.containsKey('target')
+            ? SdkPresent(json['target'] as String?)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (aliasId) {
-      SdkPresent<String>(value: final value) => {'aliasId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (aliasUpdatedAt) {
-      SdkPresent<double>(value: final value) => {'aliasUpdatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deployment) {
-      SdkPresent<UserEventPayloadVariant50Deployment?>(value: final value) => {'deployment': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deploymentId) {
-      SdkPresent<String?>(value: final value) => {'deploymentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deploymentUrl) {
-      SdkPresent<String>(value: final value) => {'deploymentUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (oldDeploymentId) {
-      SdkPresent<String?>(value: final value) => {'oldDeploymentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<String>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectStatusCode) {
-      SdkPresent<double?>(value: final value) => {'redirectStatusCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ruleCount) {
-      SdkPresent<double>(value: final value) => {'ruleCount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (system) {
-      SdkPresent<UserEventPayloadVariant50System>(value: final value) => {'system': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<String?>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (aliasId) {
+          SdkPresent<String>(value: final value) => {
+              'aliasId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (aliasUpdatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'aliasUpdatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deployment) {
+          SdkPresent<UserEventPayloadVariant50Deployment?>(
+            value: final value
+          ) =>
+            {
+              'deployment': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deploymentId) {
+          SdkPresent<String?>(value: final value) => {
+              'deploymentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deploymentUrl) {
+          SdkPresent<String>(value: final value) => {
+              'deploymentUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (oldDeploymentId) {
+          SdkPresent<String?>(value: final value) => {
+              'oldDeploymentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<String>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectStatusCode) {
+          SdkPresent<double?>(value: final value) => {
+              'redirectStatusCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ruleCount) {
+          SdkPresent<double>(value: final value) => {
+              'ruleCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (system) {
+          SdkPresent<UserEventPayloadVariant50System>(value: final value) => {
+              'system': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<String?>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `deployment` wire field.
 class UserEventPayloadVariant51Deployment {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A narrowed subset of the deployment's `readyStateReasonInternal` — only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log.
-  final SdkOptional<UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal> allowListedReadyStateReasonInternal;
+  final SdkOptional<
+          UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal>
+      allowListedReadyStateReasonInternal;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required object value serialized in the `meta` wire field.
   final Map<String, String> meta;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Optional `string` value serialized in the `readyState` wire field.
   final SdkOptional<String> readyState;
+
   /// Required `string` value serialized in the `url` wire field.
   final String url;
 
-  const UserEventPayloadVariant51Deployment({this.allowListedReadyStateReasonInternal = const SdkOmitted(), required this.id, required this.meta, required this.name, this.readyState = const SdkOmitted(), required this.url});
+  const UserEventPayloadVariant51Deployment(
+      {this.allowListedReadyStateReasonInternal = const SdkOmitted(),
+      required this.id,
+      required this.meta,
+      required this.name,
+      this.readyState = const SdkOmitted(),
+      required this.url});
 
-  UserEventPayloadVariant51Deployment Function({SdkOptional<UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal> allowListedReadyStateReasonInternal, String id, Map<String, String> meta, String name, SdkOptional<String> readyState, String url}) get copyWith => _copyWith;
+  UserEventPayloadVariant51Deployment Function(
+      {SdkOptional<
+              UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal>
+          allowListedReadyStateReasonInternal,
+      String id,
+      Map<String, String> meta,
+      String name,
+      SdkOptional<String> readyState,
+      String url}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant51Deployment _copyWith({Object? allowListedReadyStateReasonInternal = sdkOmittedValue, Object? id = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? name = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? url = sdkOmittedValue}) => UserEventPayloadVariant51Deployment(
-    allowListedReadyStateReasonInternal: identical(allowListedReadyStateReasonInternal, sdkOmittedValue) ? this.allowListedReadyStateReasonInternal : allowListedReadyStateReasonInternal as SdkOptional<UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as Map<String, String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as SdkOptional<String>,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  UserEventPayloadVariant51Deployment _copyWith(
+          {Object? allowListedReadyStateReasonInternal = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? meta = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? readyState = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      UserEventPayloadVariant51Deployment(
+        allowListedReadyStateReasonInternal: identical(
+                allowListedReadyStateReasonInternal, sdkOmittedValue)
+            ? this.allowListedReadyStateReasonInternal
+            : allowListedReadyStateReasonInternal as SdkOptional<
+                UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        meta: identical(meta, sdkOmittedValue)
+            ? this.meta
+            : meta as Map<String, String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        readyState: identical(readyState, sdkOmittedValue)
+            ? this.readyState
+            : readyState as SdkOptional<String>,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory UserEventPayloadVariant51Deployment.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant51Deployment(
-    allowListedReadyStateReasonInternal: json['allowListedReadyStateReasonInternal'] != null ? SdkPresent((json['allowListedReadyStateReasonInternal'] != null ? UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal.fromJson(json['allowListedReadyStateReasonInternal'] as String) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    meta: (json['meta'] == null ? null : Map<String, dynamic>.from(json['meta'] as Map).map((key, value) => MapEntry(key, value as String)))!,
-    name: (json['name'] as String?)!,
-    readyState: json['readyState'] != null ? SdkPresent((json['readyState'] as String?)!) : const SdkOmitted(),
-    url: (json['url'] as String?)!,
-  );
+  factory UserEventPayloadVariant51Deployment.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant51Deployment(
+        allowListedReadyStateReasonInternal: json[
+                    'allowListedReadyStateReasonInternal'] !=
+                null
+            ? SdkPresent((json['allowListedReadyStateReasonInternal'] != null
+                ? UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal
+                    .fromJson(
+                        json['allowListedReadyStateReasonInternal'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        meta: (json['meta'] == null
+            ? null
+            : Map<String, dynamic>.from(json['meta'] as Map)
+                .map((key, value) => MapEntry(key, value as String)))!,
+        name: (json['name'] as String?)!,
+        readyState: json['readyState'] != null
+            ? SdkPresent((json['readyState'] as String?)!)
+            : const SdkOmitted(),
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (allowListedReadyStateReasonInternal) {
-      SdkPresent<UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal>(value: final value) => {'allowListedReadyStateReasonInternal': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'meta': meta,
-    'name': name,
-    ...switch (readyState) {
-      SdkPresent<String>(value: final value) => {'readyState': value,},
-      _ => const <String, dynamic>{},
-    },
-    'url': url,
-  };
+        ...switch (allowListedReadyStateReasonInternal) {
+          SdkPresent<
+                UserEventPayloadVariant51DeploymentAllowListedReadyStateReasonInternal>(
+            value: final value
+          ) =>
+            {
+              'allowListedReadyStateReasonInternal': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'meta': meta,
+        'name': name,
+        ...switch (readyState) {
+          SdkPresent<String>(value: final value) => {
+              'readyState': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'url': url,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant51 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `aliasCount` wire field.
   final double aliasCount;
+
   /// Optional object value serialized in the `deployment` wire field.
   final SdkOptional<UserEventPayloadVariant51Deployment?> deployment;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
 
-  const UserEventPayloadVariant51({required this.aliasCount, this.deployment = const SdkOmitted(), required this.projectId});
+  const UserEventPayloadVariant51(
+      {required this.aliasCount,
+      this.deployment = const SdkOmitted(),
+      required this.projectId});
 
-  UserEventPayloadVariant51 Function({double aliasCount, SdkOptional<UserEventPayloadVariant51Deployment?> deployment, String projectId}) get copyWith => _copyWith;
+  UserEventPayloadVariant51 Function(
+      {double aliasCount,
+      SdkOptional<UserEventPayloadVariant51Deployment?> deployment,
+      String projectId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant51 _copyWith({Object? aliasCount = sdkOmittedValue, Object? deployment = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => UserEventPayloadVariant51(
-    aliasCount: identical(aliasCount, sdkOmittedValue) ? this.aliasCount : aliasCount as double,
-    deployment: identical(deployment, sdkOmittedValue) ? this.deployment : deployment as SdkOptional<UserEventPayloadVariant51Deployment?>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-  );
+  UserEventPayloadVariant51 _copyWith(
+          {Object? aliasCount = sdkOmittedValue,
+          Object? deployment = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      UserEventPayloadVariant51(
+        aliasCount: identical(aliasCount, sdkOmittedValue)
+            ? this.aliasCount
+            : aliasCount as double,
+        deployment: identical(deployment, sdkOmittedValue)
+            ? this.deployment
+            : deployment as SdkOptional<UserEventPayloadVariant51Deployment?>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+      );
 
-  factory UserEventPayloadVariant51.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant51(
-    aliasCount: ((json['aliasCount'] as num?)?.toDouble())!,
-    deployment: json.containsKey('deployment') ? SdkPresent(json['deployment'] != null ? UserEventPayloadVariant51Deployment.fromJson(json['deployment'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-  );
+  factory UserEventPayloadVariant51.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant51(
+        aliasCount: ((json['aliasCount'] as num?)?.toDouble())!,
+        deployment: json.containsKey('deployment')
+            ? SdkPresent(json['deployment'] != null
+                ? UserEventPayloadVariant51Deployment.fromJson(
+                    json['deployment'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'aliasCount': aliasCount,
-    ...switch (deployment) {
-      SdkPresent<UserEventPayloadVariant51Deployment?>(value: final value) => {'deployment': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-  };
+        'aliasCount': aliasCount,
+        ...switch (deployment) {
+          SdkPresent<UserEventPayloadVariant51Deployment?>(
+            value: final value
+          ) =>
+            {
+              'deployment': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+      };
 }

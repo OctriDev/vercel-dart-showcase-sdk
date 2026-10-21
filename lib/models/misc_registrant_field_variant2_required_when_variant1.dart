@@ -11,19 +11,27 @@ class RegistrantFieldVariant2RequiredWhenVariant1 {
 
   const RegistrantFieldVariant2RequiredWhenVariant1({required this.valueIn});
 
-  RegistrantFieldVariant2RequiredWhenVariant1 Function({List<String> valueIn}) get copyWith => _copyWith;
+  RegistrantFieldVariant2RequiredWhenVariant1 Function({List<String> valueIn})
+      get copyWith => _copyWith;
 
-  RegistrantFieldVariant2RequiredWhenVariant1 _copyWith({Object? valueIn = sdkOmittedValue}) => RegistrantFieldVariant2RequiredWhenVariant1(
-    valueIn: identical(valueIn, sdkOmittedValue) ? this.valueIn : valueIn as List<String>,
-  );
+  RegistrantFieldVariant2RequiredWhenVariant1 _copyWith(
+          {Object? valueIn = sdkOmittedValue}) =>
+      RegistrantFieldVariant2RequiredWhenVariant1(
+        valueIn: identical(valueIn, sdkOmittedValue)
+            ? this.valueIn
+            : valueIn as List<String>,
+      );
 
-  factory RegistrantFieldVariant2RequiredWhenVariant1.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant2RequiredWhenVariant1(
-    valueIn: ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory RegistrantFieldVariant2RequiredWhenVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      RegistrantFieldVariant2RequiredWhenVariant1(
+        valueIn:
+            ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'value_in': valueIn,
-  };
+        'value_in': valueIn,
+      };
 }
 
 sealed class RegistrantFieldVariant2RequiredWhen {
@@ -31,23 +39,35 @@ sealed class RegistrantFieldVariant2RequiredWhen {
   static const String constructionSurface = 'named';
   const RegistrantFieldVariant2RequiredWhen();
   factory RegistrantFieldVariant2RequiredWhen.fromJson(Object? json) {
-    if (json is String) { return RegistrantFieldVariant2RequiredWhenString(json); }
-    try { return RegistrantFieldVariant2RequiredWhenRegistrantFieldVariant2RequiredWhenVariant1(RegistrantFieldVariant2RequiredWhenVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for RegistrantFieldVariant2RequiredWhen");
+    if (json is String) {
+      return RegistrantFieldVariant2RequiredWhenString(json);
+    }
+    try {
+      return RegistrantFieldVariant2RequiredWhenRegistrantFieldVariant2RequiredWhenVariant1(
+          RegistrantFieldVariant2RequiredWhenVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for RegistrantFieldVariant2RequiredWhen");
   }
   Object? toJson();
 }
 
-final class RegistrantFieldVariant2RequiredWhenString extends RegistrantFieldVariant2RequiredWhen {
+final class RegistrantFieldVariant2RequiredWhenString
+    extends RegistrantFieldVariant2RequiredWhen {
   final String value;
   const RegistrantFieldVariant2RequiredWhenString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class RegistrantFieldVariant2RequiredWhenRegistrantFieldVariant2RequiredWhenVariant1 extends RegistrantFieldVariant2RequiredWhen {
+final class RegistrantFieldVariant2RequiredWhenRegistrantFieldVariant2RequiredWhenVariant1
+    extends RegistrantFieldVariant2RequiredWhen {
   final RegistrantFieldVariant2RequiredWhenVariant1 value;
-  const RegistrantFieldVariant2RequiredWhenRegistrantFieldVariant2RequiredWhenVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const RegistrantFieldVariant2RequiredWhenRegistrantFieldVariant2RequiredWhenVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class RegistrantFieldVariant2 {
@@ -61,51 +81,106 @@ class RegistrantFieldVariant2 {
   final RegistrantFieldVariant2Type type_;
   final SdkOptional<String> value;
 
-  const RegistrantFieldVariant2({required this.description, required this.required_, this.label = const SdkOmitted(), this.validation = const SdkOmitted(), this.requiredWhen = const SdkOmitted(), required this.type_, this.value = const SdkOmitted()});
+  const RegistrantFieldVariant2(
+      {required this.description,
+      required this.required_,
+      this.label = const SdkOmitted(),
+      this.validation = const SdkOmitted(),
+      this.requiredWhen = const SdkOmitted(),
+      required this.type_,
+      this.value = const SdkOmitted()});
 
-  RegistrantFieldVariant2 Function({String description, bool required_, SdkOptional<String> label, SdkOptional<String> validation, SdkOptional<dynamic> requiredWhen, RegistrantFieldVariant2Type type_, SdkOptional<String> value}) get copyWith => _copyWith;
+  RegistrantFieldVariant2 Function(
+      {String description,
+      bool required_,
+      SdkOptional<String> label,
+      SdkOptional<String> validation,
+      SdkOptional<dynamic> requiredWhen,
+      RegistrantFieldVariant2Type type_,
+      SdkOptional<String> value}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant2 _copyWith({Object? description = sdkOmittedValue, Object? required_ = sdkOmittedValue, Object? label = sdkOmittedValue, Object? validation = sdkOmittedValue, Object? requiredWhen = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => RegistrantFieldVariant2(
-    description: identical(description, sdkOmittedValue) ? this.description : description as String,
-    required_: identical(required_, sdkOmittedValue) ? this.required_ : required_ as bool,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    validation: identical(validation, sdkOmittedValue) ? this.validation : validation as SdkOptional<String>,
-    requiredWhen: identical(requiredWhen, sdkOmittedValue) ? this.requiredWhen : requiredWhen as SdkOptional<dynamic>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RegistrantFieldVariant2Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-  );
+  RegistrantFieldVariant2 _copyWith(
+          {Object? description = sdkOmittedValue,
+          Object? required_ = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? validation = sdkOmittedValue,
+          Object? requiredWhen = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      RegistrantFieldVariant2(
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as String,
+        required_: identical(required_, sdkOmittedValue)
+            ? this.required_
+            : required_ as bool,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        validation: identical(validation, sdkOmittedValue)
+            ? this.validation
+            : validation as SdkOptional<String>,
+        requiredWhen: identical(requiredWhen, sdkOmittedValue)
+            ? this.requiredWhen
+            : requiredWhen as SdkOptional<dynamic>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RegistrantFieldVariant2Type,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+      );
 
-  factory RegistrantFieldVariant2.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant2(
-    description: (json['description'] as String?)!,
-    required_: (json['required'] as bool?)!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    validation: json['validation'] != null ? SdkPresent((json['validation'] as String?)!) : const SdkOmitted(),
-    requiredWhen: json['required_when'] != null ? SdkPresent((json['required_when'])!) : const SdkOmitted(),
-    type_: (json['type'] != null ? RegistrantFieldVariant2Type.fromJson(json['type'] as String) : null)!,
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-  );
+  factory RegistrantFieldVariant2.fromJson(Map<String, dynamic> json) =>
+      RegistrantFieldVariant2(
+        description: (json['description'] as String?)!,
+        required_: (json['required'] as bool?)!,
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+        validation: json['validation'] != null
+            ? SdkPresent((json['validation'] as String?)!)
+            : const SdkOmitted(),
+        requiredWhen: json['required_when'] != null
+            ? SdkPresent((json['required_when'])!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? RegistrantFieldVariant2Type.fromJson(json['type'] as String)
+            : null)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'description': description,
-    'required': required_,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (validation) {
-      SdkPresent<String>(value: final value) => {'validation': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (requiredWhen) {
-      SdkPresent<dynamic>(value: final value) => {'required_when': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'description': description,
+        'required': required_,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (validation) {
+          SdkPresent<String>(value: final value) => {
+              'validation': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (requiredWhen) {
+          SdkPresent<dynamic>(value: final value) => {
+              'required_when': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RegistrantFieldVariant3RequiredWhenVariant1 {
@@ -115,19 +190,27 @@ class RegistrantFieldVariant3RequiredWhenVariant1 {
 
   const RegistrantFieldVariant3RequiredWhenVariant1({required this.valueIn});
 
-  RegistrantFieldVariant3RequiredWhenVariant1 Function({List<String> valueIn}) get copyWith => _copyWith;
+  RegistrantFieldVariant3RequiredWhenVariant1 Function({List<String> valueIn})
+      get copyWith => _copyWith;
 
-  RegistrantFieldVariant3RequiredWhenVariant1 _copyWith({Object? valueIn = sdkOmittedValue}) => RegistrantFieldVariant3RequiredWhenVariant1(
-    valueIn: identical(valueIn, sdkOmittedValue) ? this.valueIn : valueIn as List<String>,
-  );
+  RegistrantFieldVariant3RequiredWhenVariant1 _copyWith(
+          {Object? valueIn = sdkOmittedValue}) =>
+      RegistrantFieldVariant3RequiredWhenVariant1(
+        valueIn: identical(valueIn, sdkOmittedValue)
+            ? this.valueIn
+            : valueIn as List<String>,
+      );
 
-  factory RegistrantFieldVariant3RequiredWhenVariant1.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant3RequiredWhenVariant1(
-    valueIn: ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory RegistrantFieldVariant3RequiredWhenVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      RegistrantFieldVariant3RequiredWhenVariant1(
+        valueIn:
+            ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'value_in': valueIn,
-  };
+        'value_in': valueIn,
+      };
 }
 
 sealed class RegistrantFieldVariant3RequiredWhen {
@@ -135,23 +218,35 @@ sealed class RegistrantFieldVariant3RequiredWhen {
   static const String constructionSurface = 'named';
   const RegistrantFieldVariant3RequiredWhen();
   factory RegistrantFieldVariant3RequiredWhen.fromJson(Object? json) {
-    if (json is String) { return RegistrantFieldVariant3RequiredWhenString(json); }
-    try { return RegistrantFieldVariant3RequiredWhenRegistrantFieldVariant3RequiredWhenVariant1(RegistrantFieldVariant3RequiredWhenVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for RegistrantFieldVariant3RequiredWhen");
+    if (json is String) {
+      return RegistrantFieldVariant3RequiredWhenString(json);
+    }
+    try {
+      return RegistrantFieldVariant3RequiredWhenRegistrantFieldVariant3RequiredWhenVariant1(
+          RegistrantFieldVariant3RequiredWhenVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for RegistrantFieldVariant3RequiredWhen");
   }
   Object? toJson();
 }
 
-final class RegistrantFieldVariant3RequiredWhenString extends RegistrantFieldVariant3RequiredWhen {
+final class RegistrantFieldVariant3RequiredWhenString
+    extends RegistrantFieldVariant3RequiredWhen {
   final String value;
   const RegistrantFieldVariant3RequiredWhenString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class RegistrantFieldVariant3RequiredWhenRegistrantFieldVariant3RequiredWhenVariant1 extends RegistrantFieldVariant3RequiredWhen {
+final class RegistrantFieldVariant3RequiredWhenRegistrantFieldVariant3RequiredWhenVariant1
+    extends RegistrantFieldVariant3RequiredWhen {
   final RegistrantFieldVariant3RequiredWhenVariant1 value;
-  const RegistrantFieldVariant3RequiredWhenRegistrantFieldVariant3RequiredWhenVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const RegistrantFieldVariant3RequiredWhenRegistrantFieldVariant3RequiredWhenVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class RegistrantFieldVariant3 {
@@ -164,45 +259,91 @@ class RegistrantFieldVariant3 {
   final SdkOptional<dynamic> requiredWhen;
   final RegistrantFieldVariant3Type type_;
 
-  const RegistrantFieldVariant3({required this.description, required this.required_, this.label = const SdkOmitted(), this.validation = const SdkOmitted(), this.requiredWhen = const SdkOmitted(), required this.type_});
+  const RegistrantFieldVariant3(
+      {required this.description,
+      required this.required_,
+      this.label = const SdkOmitted(),
+      this.validation = const SdkOmitted(),
+      this.requiredWhen = const SdkOmitted(),
+      required this.type_});
 
-  RegistrantFieldVariant3 Function({String description, bool required_, SdkOptional<String> label, SdkOptional<String> validation, SdkOptional<dynamic> requiredWhen, RegistrantFieldVariant3Type type_}) get copyWith => _copyWith;
+  RegistrantFieldVariant3 Function(
+      {String description,
+      bool required_,
+      SdkOptional<String> label,
+      SdkOptional<String> validation,
+      SdkOptional<dynamic> requiredWhen,
+      RegistrantFieldVariant3Type type_}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant3 _copyWith({Object? description = sdkOmittedValue, Object? required_ = sdkOmittedValue, Object? label = sdkOmittedValue, Object? validation = sdkOmittedValue, Object? requiredWhen = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RegistrantFieldVariant3(
-    description: identical(description, sdkOmittedValue) ? this.description : description as String,
-    required_: identical(required_, sdkOmittedValue) ? this.required_ : required_ as bool,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    validation: identical(validation, sdkOmittedValue) ? this.validation : validation as SdkOptional<String>,
-    requiredWhen: identical(requiredWhen, sdkOmittedValue) ? this.requiredWhen : requiredWhen as SdkOptional<dynamic>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RegistrantFieldVariant3Type,
-  );
+  RegistrantFieldVariant3 _copyWith(
+          {Object? description = sdkOmittedValue,
+          Object? required_ = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? validation = sdkOmittedValue,
+          Object? requiredWhen = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RegistrantFieldVariant3(
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as String,
+        required_: identical(required_, sdkOmittedValue)
+            ? this.required_
+            : required_ as bool,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        validation: identical(validation, sdkOmittedValue)
+            ? this.validation
+            : validation as SdkOptional<String>,
+        requiredWhen: identical(requiredWhen, sdkOmittedValue)
+            ? this.requiredWhen
+            : requiredWhen as SdkOptional<dynamic>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RegistrantFieldVariant3Type,
+      );
 
-  factory RegistrantFieldVariant3.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant3(
-    description: (json['description'] as String?)!,
-    required_: (json['required'] as bool?)!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    validation: json['validation'] != null ? SdkPresent((json['validation'] as String?)!) : const SdkOmitted(),
-    requiredWhen: json['required_when'] != null ? SdkPresent((json['required_when'])!) : const SdkOmitted(),
-    type_: (json['type'] != null ? RegistrantFieldVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RegistrantFieldVariant3.fromJson(Map<String, dynamic> json) =>
+      RegistrantFieldVariant3(
+        description: (json['description'] as String?)!,
+        required_: (json['required'] as bool?)!,
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+        validation: json['validation'] != null
+            ? SdkPresent((json['validation'] as String?)!)
+            : const SdkOmitted(),
+        requiredWhen: json['required_when'] != null
+            ? SdkPresent((json['required_when'])!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? RegistrantFieldVariant3Type.fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'description': description,
-    'required': required_,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (validation) {
-      SdkPresent<String>(value: final value) => {'validation': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (requiredWhen) {
-      SdkPresent<dynamic>(value: final value) => {'required_when': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-  };
+        'description': description,
+        'required': required_,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (validation) {
+          SdkPresent<String>(value: final value) => {
+              'validation': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (requiredWhen) {
+          SdkPresent<dynamic>(value: final value) => {
+              'required_when': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+      };
 }
 
 sealed class RegistrantField {
@@ -211,15 +352,47 @@ sealed class RegistrantField {
   const RegistrantField();
   factory RegistrantField.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = RegistrantFieldVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return RegistrantFieldRegistrantFieldVariant0(value); } } catch (_) {}
-      try { final value = RegistrantFieldVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return RegistrantFieldRegistrantFieldVariant1(value); } } catch (_) {}
-      try { final value = RegistrantFieldVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return RegistrantFieldRegistrantFieldVariant2(value); } } catch (_) {}
-      try { final value = RegistrantFieldVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return RegistrantFieldRegistrantFieldVariant3(value); } } catch (_) {}
+      try {
+        final value = RegistrantFieldVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return RegistrantFieldRegistrantFieldVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = RegistrantFieldVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return RegistrantFieldRegistrantFieldVariant1(value);
+        }
+      } catch (_) {}
+      try {
+        final value = RegistrantFieldVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return RegistrantFieldRegistrantFieldVariant2(value);
+        }
+      } catch (_) {}
+      try {
+        final value = RegistrantFieldVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return RegistrantFieldRegistrantFieldVariant3(value);
+        }
+      } catch (_) {}
     }
-    try { return RegistrantFieldRegistrantFieldVariant0(RegistrantFieldVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return RegistrantFieldRegistrantFieldVariant1(RegistrantFieldVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return RegistrantFieldRegistrantFieldVariant2(RegistrantFieldVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return RegistrantFieldRegistrantFieldVariant3(RegistrantFieldVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return RegistrantFieldRegistrantFieldVariant0(
+          RegistrantFieldVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return RegistrantFieldRegistrantFieldVariant1(
+          RegistrantFieldVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return RegistrantFieldRegistrantFieldVariant2(
+          RegistrantFieldVariant2.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return RegistrantFieldRegistrantFieldVariant3(
+          RegistrantFieldVariant3.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for RegistrantField");
   }
   Object? toJson();
@@ -228,23 +401,27 @@ sealed class RegistrantField {
 final class RegistrantFieldRegistrantFieldVariant0 extends RegistrantField {
   final RegistrantFieldVariant0 value;
   const RegistrantFieldRegistrantFieldVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class RegistrantFieldRegistrantFieldVariant1 extends RegistrantField {
   final RegistrantFieldVariant1 value;
   const RegistrantFieldRegistrantFieldVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class RegistrantFieldRegistrantFieldVariant2 extends RegistrantField {
   final RegistrantFieldVariant2 value;
   const RegistrantFieldRegistrantFieldVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class RegistrantFieldRegistrantFieldVariant3 extends RegistrantField {
   final RegistrantFieldVariant3 value;
   const RegistrantFieldRegistrantFieldVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope {
   user;
 
-  static ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope fromJson(String value) {
+  static ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope
+      fromJson(String value) {
     switch (value) {
-      case 'user': return ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope.user;
-      default: throw ArgumentError('Unknown ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope: $value');
+      case 'user':
+        return ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope
+            .user;
+      default:
+        throw ArgumentError(
+            'Unknown ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope.user: return 'user';
+      case ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Scope
+            .user:
+        return 'user';
     }
   }
 
@@ -27,16 +34,23 @@ enum ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant1Sco
 enum ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope {
   aliasProtectionOverride;
 
-  static ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope fromJson(String value) {
+  static ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope
+      fromJson(String value) {
     switch (value) {
-      case 'alias-protection-override': return ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope.aliasProtectionOverride;
-      default: throw ArgumentError('Unknown ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope: $value');
+      case 'alias-protection-override':
+        return ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope
+            .aliasProtectionOverride;
+      default:
+        throw ArgumentError(
+            'Unknown ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope.aliasProtectionOverride: return 'alias-protection-override';
+      case ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Scope
+            .aliasProtectionOverride:
+        return 'alias-protection-override';
     }
   }
 
@@ -47,16 +61,23 @@ enum ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant2Sco
 enum ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope {
   emailInvite;
 
-  static ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope fromJson(String value) {
+  static ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope
+      fromJson(String value) {
     switch (value) {
-      case 'email_invite': return ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope.emailInvite;
-      default: throw ArgumentError('Unknown ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope: $value');
+      case 'email_invite':
+        return ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope
+            .emailInvite;
+      default:
+        throw ArgumentError(
+            'Unknown ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope.emailInvite: return 'email_invite';
+      case ListAliasesForDeploymentResponseAliasesItemProtectionBypassValueVariant3Scope
+            .emailInvite:
+        return 'email_invite';
     }
   }
 
@@ -70,14 +91,18 @@ enum CreateRecordRequestBodyVariant0Type {
 
   static CreateRecordRequestBodyVariant0Type fromJson(String value) {
     switch (value) {
-      case 'A': return CreateRecordRequestBodyVariant0Type.a;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant0Type: $value');
+      case 'A':
+        return CreateRecordRequestBodyVariant0Type.a;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant0Type.a: return 'A';
+      case CreateRecordRequestBodyVariant0Type.a:
+        return 'A';
     }
   }
 
@@ -91,14 +116,18 @@ enum CreateRecordRequestBodyVariant1Type {
 
   static CreateRecordRequestBodyVariant1Type fromJson(String value) {
     switch (value) {
-      case 'AAAA': return CreateRecordRequestBodyVariant1Type.aaaa;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant1Type: $value');
+      case 'AAAA':
+        return CreateRecordRequestBodyVariant1Type.aaaa;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant1Type.aaaa: return 'AAAA';
+      case CreateRecordRequestBodyVariant1Type.aaaa:
+        return 'AAAA';
     }
   }
 
@@ -112,14 +141,18 @@ enum CreateRecordRequestBodyVariant2Type {
 
   static CreateRecordRequestBodyVariant2Type fromJson(String value) {
     switch (value) {
-      case 'ALIAS': return CreateRecordRequestBodyVariant2Type.alias;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant2Type: $value');
+      case 'ALIAS':
+        return CreateRecordRequestBodyVariant2Type.alias;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant2Type.alias: return 'ALIAS';
+      case CreateRecordRequestBodyVariant2Type.alias:
+        return 'ALIAS';
     }
   }
 
@@ -133,14 +166,18 @@ enum CreateRecordRequestBodyVariant3Type {
 
   static CreateRecordRequestBodyVariant3Type fromJson(String value) {
     switch (value) {
-      case 'CAA': return CreateRecordRequestBodyVariant3Type.caa;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant3Type: $value');
+      case 'CAA':
+        return CreateRecordRequestBodyVariant3Type.caa;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant3Type.caa: return 'CAA';
+      case CreateRecordRequestBodyVariant3Type.caa:
+        return 'CAA';
     }
   }
 
@@ -154,14 +191,18 @@ enum CreateRecordRequestBodyVariant4Type {
 
   static CreateRecordRequestBodyVariant4Type fromJson(String value) {
     switch (value) {
-      case 'CNAME': return CreateRecordRequestBodyVariant4Type.cname;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant4Type: $value');
+      case 'CNAME':
+        return CreateRecordRequestBodyVariant4Type.cname;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant4Type.cname: return 'CNAME';
+      case CreateRecordRequestBodyVariant4Type.cname:
+        return 'CNAME';
     }
   }
 
@@ -175,14 +216,18 @@ enum CreateRecordRequestBodyVariant5Type {
 
   static CreateRecordRequestBodyVariant5Type fromJson(String value) {
     switch (value) {
-      case 'MX': return CreateRecordRequestBodyVariant5Type.mx;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant5Type: $value');
+      case 'MX':
+        return CreateRecordRequestBodyVariant5Type.mx;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant5Type.mx: return 'MX';
+      case CreateRecordRequestBodyVariant5Type.mx:
+        return 'MX';
     }
   }
 
@@ -196,14 +241,18 @@ enum CreateRecordRequestBodyVariant6Type {
 
   static CreateRecordRequestBodyVariant6Type fromJson(String value) {
     switch (value) {
-      case 'SRV': return CreateRecordRequestBodyVariant6Type.srv;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant6Type: $value');
+      case 'SRV':
+        return CreateRecordRequestBodyVariant6Type.srv;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant6Type.srv: return 'SRV';
+      case CreateRecordRequestBodyVariant6Type.srv:
+        return 'SRV';
     }
   }
 
@@ -217,14 +266,18 @@ enum CreateRecordRequestBodyVariant7Type {
 
   static CreateRecordRequestBodyVariant7Type fromJson(String value) {
     switch (value) {
-      case 'TXT': return CreateRecordRequestBodyVariant7Type.txt;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant7Type: $value');
+      case 'TXT':
+        return CreateRecordRequestBodyVariant7Type.txt;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant7Type.txt: return 'TXT';
+      case CreateRecordRequestBodyVariant7Type.txt:
+        return 'TXT';
     }
   }
 
@@ -238,14 +291,18 @@ enum CreateRecordRequestBodyVariant8Type {
 
   static CreateRecordRequestBodyVariant8Type fromJson(String value) {
     switch (value) {
-      case 'NS': return CreateRecordRequestBodyVariant8Type.ns;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant8Type: $value');
+      case 'NS':
+        return CreateRecordRequestBodyVariant8Type.ns;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant8Type.ns: return 'NS';
+      case CreateRecordRequestBodyVariant8Type.ns:
+        return 'NS';
     }
   }
 
@@ -259,14 +316,18 @@ enum CreateRecordRequestBodyVariant9Type {
 
   static CreateRecordRequestBodyVariant9Type fromJson(String value) {
     switch (value) {
-      case 'HTTPS': return CreateRecordRequestBodyVariant9Type.https;
-      default: throw ArgumentError('Unknown CreateRecordRequestBodyVariant9Type: $value');
+      case 'HTTPS':
+        return CreateRecordRequestBodyVariant9Type.https;
+      default:
+        throw ArgumentError(
+            'Unknown CreateRecordRequestBodyVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateRecordRequestBodyVariant9Type.https: return 'HTTPS';
+      case CreateRecordRequestBodyVariant9Type.https:
+        return 'HTTPS';
     }
   }
 

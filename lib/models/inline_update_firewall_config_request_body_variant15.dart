@@ -12,33 +12,58 @@ class UpdateFirewallConfigRequestBodyVariant15 {
   final SdkOptional<String> id;
   final SdkOptional<String> value;
 
-  const UpdateFirewallConfigRequestBodyVariant15({required this.action, this.id = const SdkOmitted(), this.value = const SdkOmitted()});
+  const UpdateFirewallConfigRequestBodyVariant15(
+      {required this.action,
+      this.id = const SdkOmitted(),
+      this.value = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant15 Function({String action, SdkOptional<String> id, SdkOptional<String> value}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant15 Function(
+      {String action,
+      SdkOptional<String> id,
+      SdkOptional<String> value}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant15 _copyWith({Object? action = sdkOmittedValue, Object? id = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant15(
-    action: identical(action, sdkOmittedValue) ? this.action : action as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-  );
+  UpdateFirewallConfigRequestBodyVariant15 _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant15(
+        action:
+            identical(action, sdkOmittedValue) ? this.action : action as String,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant15.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant15(
-    action: (json['action'] as String?)!,
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateFirewallConfigRequestBodyVariant15.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant15(
+        action: (json['action'] as String?)!,
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action,
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action,
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant16Value {
@@ -49,33 +74,62 @@ class UpdateFirewallConfigRequestBodyVariant16Value {
   final SdkOptional<String> notes;
   final UpdateFirewallConfigRequestBodyVariant16ValueAction action;
 
-  const UpdateFirewallConfigRequestBodyVariant16Value({required this.hostname, required this.ip, this.notes = const SdkOmitted(), required this.action});
+  const UpdateFirewallConfigRequestBodyVariant16Value(
+      {required this.hostname,
+      required this.ip,
+      this.notes = const SdkOmitted(),
+      required this.action});
 
-  UpdateFirewallConfigRequestBodyVariant16Value Function({String hostname, String ip, SdkOptional<String> notes, UpdateFirewallConfigRequestBodyVariant16ValueAction action}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant16Value Function(
+          {String hostname,
+          String ip,
+          SdkOptional<String> notes,
+          UpdateFirewallConfigRequestBodyVariant16ValueAction action})
+      get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant16Value _copyWith({Object? hostname = sdkOmittedValue, Object? ip = sdkOmittedValue, Object? notes = sdkOmittedValue, Object? action = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant16Value(
-    hostname: identical(hostname, sdkOmittedValue) ? this.hostname : hostname as String,
-    ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
-    notes: identical(notes, sdkOmittedValue) ? this.notes : notes as SdkOptional<String>,
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateFirewallConfigRequestBodyVariant16ValueAction,
-  );
+  UpdateFirewallConfigRequestBodyVariant16Value _copyWith(
+          {Object? hostname = sdkOmittedValue,
+          Object? ip = sdkOmittedValue,
+          Object? notes = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant16Value(
+        hostname: identical(hostname, sdkOmittedValue)
+            ? this.hostname
+            : hostname as String,
+        ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
+        notes: identical(notes, sdkOmittedValue)
+            ? this.notes
+            : notes as SdkOptional<String>,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UpdateFirewallConfigRequestBodyVariant16ValueAction,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant16Value.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant16Value(
-    hostname: (json['hostname'] as String?)!,
-    ip: (json['ip'] as String?)!,
-    notes: json['notes'] != null ? SdkPresent((json['notes'] as String?)!) : const SdkOmitted(),
-    action: (json['action'] != null ? UpdateFirewallConfigRequestBodyVariant16ValueAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant16Value.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant16Value(
+        hostname: (json['hostname'] as String?)!,
+        ip: (json['ip'] as String?)!,
+        notes: json['notes'] != null
+            ? SdkPresent((json['notes'] as String?)!)
+            : const SdkOmitted(),
+        action: (json['action'] != null
+            ? UpdateFirewallConfigRequestBodyVariant16ValueAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'hostname': hostname,
-    'ip': ip,
-    ...switch (notes) {
-      SdkPresent<String>(value: final value) => {'notes': value,},
-      _ => const <String, dynamic>{},
-    },
-    'action': action.toJson(),
-  };
+        'hostname': hostname,
+        'ip': ip,
+        ...switch (notes) {
+          SdkPresent<String>(value: final value) => {
+              'notes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'action': action.toJson(),
+      };
 }
 
 /// Add an IP Blocking rule
@@ -86,30 +140,55 @@ class UpdateFirewallConfigRequestBodyVariant16 {
   final SdkOptional<String> id;
   final UpdateFirewallConfigRequestBodyVariant16Value value;
 
-  const UpdateFirewallConfigRequestBodyVariant16({required this.action, this.id = const SdkOmitted(), required this.value});
+  const UpdateFirewallConfigRequestBodyVariant16(
+      {required this.action,
+      this.id = const SdkOmitted(),
+      required this.value});
 
-  UpdateFirewallConfigRequestBodyVariant16 Function({String action, SdkOptional<String> id, UpdateFirewallConfigRequestBodyVariant16Value value}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant16 Function(
+          {String action,
+          SdkOptional<String> id,
+          UpdateFirewallConfigRequestBodyVariant16Value value})
+      get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant16 _copyWith({Object? action = sdkOmittedValue, Object? id = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant16(
-    action: identical(action, sdkOmittedValue) ? this.action : action as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateFirewallConfigRequestBodyVariant16Value,
-  );
+  UpdateFirewallConfigRequestBodyVariant16 _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant16(
+        action:
+            identical(action, sdkOmittedValue) ? this.action : action as String,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as UpdateFirewallConfigRequestBodyVariant16Value,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant16.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant16(
-    action: (json['action'] as String?)!,
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] != null ? UpdateFirewallConfigRequestBodyVariant16Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant16.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant16(
+        action: (json['action'] as String?)!,
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] != null
+            ? UpdateFirewallConfigRequestBodyVariant16Value.fromJson(
+                json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action,
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value.toJson(),
-  };
+        'action': action,
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value.toJson(),
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant17Value {
@@ -120,33 +199,62 @@ class UpdateFirewallConfigRequestBodyVariant17Value {
   final SdkOptional<String> notes;
   final UpdateFirewallConfigRequestBodyVariant17ValueAction action;
 
-  const UpdateFirewallConfigRequestBodyVariant17Value({required this.hostname, required this.ip, this.notes = const SdkOmitted(), required this.action});
+  const UpdateFirewallConfigRequestBodyVariant17Value(
+      {required this.hostname,
+      required this.ip,
+      this.notes = const SdkOmitted(),
+      required this.action});
 
-  UpdateFirewallConfigRequestBodyVariant17Value Function({String hostname, String ip, SdkOptional<String> notes, UpdateFirewallConfigRequestBodyVariant17ValueAction action}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant17Value Function(
+          {String hostname,
+          String ip,
+          SdkOptional<String> notes,
+          UpdateFirewallConfigRequestBodyVariant17ValueAction action})
+      get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant17Value _copyWith({Object? hostname = sdkOmittedValue, Object? ip = sdkOmittedValue, Object? notes = sdkOmittedValue, Object? action = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant17Value(
-    hostname: identical(hostname, sdkOmittedValue) ? this.hostname : hostname as String,
-    ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
-    notes: identical(notes, sdkOmittedValue) ? this.notes : notes as SdkOptional<String>,
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateFirewallConfigRequestBodyVariant17ValueAction,
-  );
+  UpdateFirewallConfigRequestBodyVariant17Value _copyWith(
+          {Object? hostname = sdkOmittedValue,
+          Object? ip = sdkOmittedValue,
+          Object? notes = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant17Value(
+        hostname: identical(hostname, sdkOmittedValue)
+            ? this.hostname
+            : hostname as String,
+        ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
+        notes: identical(notes, sdkOmittedValue)
+            ? this.notes
+            : notes as SdkOptional<String>,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UpdateFirewallConfigRequestBodyVariant17ValueAction,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant17Value.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant17Value(
-    hostname: (json['hostname'] as String?)!,
-    ip: (json['ip'] as String?)!,
-    notes: json['notes'] != null ? SdkPresent((json['notes'] as String?)!) : const SdkOmitted(),
-    action: (json['action'] != null ? UpdateFirewallConfigRequestBodyVariant17ValueAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant17Value.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant17Value(
+        hostname: (json['hostname'] as String?)!,
+        ip: (json['ip'] as String?)!,
+        notes: json['notes'] != null
+            ? SdkPresent((json['notes'] as String?)!)
+            : const SdkOmitted(),
+        action: (json['action'] != null
+            ? UpdateFirewallConfigRequestBodyVariant17ValueAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'hostname': hostname,
-    'ip': ip,
-    ...switch (notes) {
-      SdkPresent<String>(value: final value) => {'notes': value,},
-      _ => const <String, dynamic>{},
-    },
-    'action': action.toJson(),
-  };
+        'hostname': hostname,
+        'ip': ip,
+        ...switch (notes) {
+          SdkPresent<String>(value: final value) => {
+              'notes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'action': action.toJson(),
+      };
 }
 
 /// Update an IP Blocking rule
@@ -157,27 +265,44 @@ class UpdateFirewallConfigRequestBodyVariant17 {
   final String id;
   final UpdateFirewallConfigRequestBodyVariant17Value value;
 
-  const UpdateFirewallConfigRequestBodyVariant17({required this.action, required this.id, required this.value});
+  const UpdateFirewallConfigRequestBodyVariant17(
+      {required this.action, required this.id, required this.value});
 
-  UpdateFirewallConfigRequestBodyVariant17 Function({String action, String id, UpdateFirewallConfigRequestBodyVariant17Value value}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant17 Function(
+          {String action,
+          String id,
+          UpdateFirewallConfigRequestBodyVariant17Value value})
+      get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant17 _copyWith({Object? action = sdkOmittedValue, Object? id = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant17(
-    action: identical(action, sdkOmittedValue) ? this.action : action as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateFirewallConfigRequestBodyVariant17Value,
-  );
+  UpdateFirewallConfigRequestBodyVariant17 _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant17(
+        action:
+            identical(action, sdkOmittedValue) ? this.action : action as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as UpdateFirewallConfigRequestBodyVariant17Value,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant17.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant17(
-    action: (json['action'] as String?)!,
-    id: (json['id'] as String?)!,
-    value: (json['value'] != null ? UpdateFirewallConfigRequestBodyVariant17Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant17.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant17(
+        action: (json['action'] as String?)!,
+        id: (json['id'] as String?)!,
+        value: (json['value'] != null
+            ? UpdateFirewallConfigRequestBodyVariant17Value.fromJson(
+                json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action,
-    'id': id,
-    'value': value.toJson(),
-  };
+        'action': action,
+        'id': id,
+        'value': value.toJson(),
+      };
 }
 
 /// Remove an IP Blocking rule
@@ -188,30 +313,49 @@ class UpdateFirewallConfigRequestBodyVariant18 {
   final String id;
   final SdkOptional<String> value;
 
-  const UpdateFirewallConfigRequestBodyVariant18({required this.action, required this.id, this.value = const SdkOmitted()});
+  const UpdateFirewallConfigRequestBodyVariant18(
+      {required this.action,
+      required this.id,
+      this.value = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant18 Function({String action, String id, SdkOptional<String> value}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant18 Function(
+      {String action,
+      String id,
+      SdkOptional<String> value}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant18 _copyWith({Object? action = sdkOmittedValue, Object? id = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant18(
-    action: identical(action, sdkOmittedValue) ? this.action : action as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-  );
+  UpdateFirewallConfigRequestBodyVariant18 _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant18(
+        action:
+            identical(action, sdkOmittedValue) ? this.action : action as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant18.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant18(
-    action: (json['action'] as String?)!,
-    id: (json['id'] as String?)!,
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateFirewallConfigRequestBodyVariant18.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant18(
+        action: (json['action'] as String?)!,
+        id: (json['id'] as String?)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action,
-    'id': id,
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action,
+        'id': id,
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant19Value {
@@ -220,27 +364,49 @@ class UpdateFirewallConfigRequestBodyVariant19Value {
   final SdkOptional<UpdateFirewallConfigRequestBodyVariant19ValueAction> action;
   final bool active;
 
-  const UpdateFirewallConfigRequestBodyVariant19Value({this.action = const SdkOmitted(), required this.active});
+  const UpdateFirewallConfigRequestBodyVariant19Value(
+      {this.action = const SdkOmitted(), required this.active});
 
-  UpdateFirewallConfigRequestBodyVariant19Value Function({SdkOptional<UpdateFirewallConfigRequestBodyVariant19ValueAction> action, bool active}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant19Value Function(
+      {SdkOptional<UpdateFirewallConfigRequestBodyVariant19ValueAction> action,
+      bool active}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant19Value _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant19Value(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UpdateFirewallConfigRequestBodyVariant19ValueAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-  );
+  UpdateFirewallConfigRequestBodyVariant19Value _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant19Value(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<
+                UpdateFirewallConfigRequestBodyVariant19ValueAction>,
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant19Value.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant19Value(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? UpdateFirewallConfigRequestBodyVariant19ValueAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] as bool?)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant19Value.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant19Value(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? UpdateFirewallConfigRequestBodyVariant19ValueAction.fromJson(
+                    json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<UpdateFirewallConfigRequestBodyVariant19ValueAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active,
-  };
+        ...switch (action) {
+          SdkPresent<UpdateFirewallConfigRequestBodyVariant19ValueAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active,
+      };
 }
 
 /// Update a managed ruleset
@@ -251,25 +417,47 @@ class UpdateFirewallConfigRequestBodyVariant19 {
   final UpdateFirewallConfigRequestBodyVariant19Id id;
   final UpdateFirewallConfigRequestBodyVariant19Value value;
 
-  const UpdateFirewallConfigRequestBodyVariant19({required this.action, required this.id, required this.value});
+  const UpdateFirewallConfigRequestBodyVariant19(
+      {required this.action, required this.id, required this.value});
 
-  UpdateFirewallConfigRequestBodyVariant19 Function({String action, UpdateFirewallConfigRequestBodyVariant19Id id, UpdateFirewallConfigRequestBodyVariant19Value value}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant19 Function(
+          {String action,
+          UpdateFirewallConfigRequestBodyVariant19Id id,
+          UpdateFirewallConfigRequestBodyVariant19Value value})
+      get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant19 _copyWith({Object? action = sdkOmittedValue, Object? id = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant19(
-    action: identical(action, sdkOmittedValue) ? this.action : action as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as UpdateFirewallConfigRequestBodyVariant19Id,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateFirewallConfigRequestBodyVariant19Value,
-  );
+  UpdateFirewallConfigRequestBodyVariant19 _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant19(
+        action:
+            identical(action, sdkOmittedValue) ? this.action : action as String,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as UpdateFirewallConfigRequestBodyVariant19Id,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as UpdateFirewallConfigRequestBodyVariant19Value,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant19.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant19(
-    action: (json['action'] as String?)!,
-    id: (json['id'] != null ? UpdateFirewallConfigRequestBodyVariant19Id.fromJson(json['id'] as String) : null)!,
-    value: (json['value'] != null ? UpdateFirewallConfigRequestBodyVariant19Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant19.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant19(
+        action: (json['action'] as String?)!,
+        id: (json['id'] != null
+            ? UpdateFirewallConfigRequestBodyVariant19Id.fromJson(
+                json['id'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? UpdateFirewallConfigRequestBodyVariant19Value.fromJson(
+                json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action,
-    'id': id.toJson(),
-    'value': value.toJson(),
-  };
+        'action': action,
+        'id': id.toJson(),
+        'value': value.toJson(),
+      };
 }

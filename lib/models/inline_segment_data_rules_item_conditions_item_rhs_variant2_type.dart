@@ -6,67 +6,84 @@ part of 'inline.dart';
 // Inline operation models
 /// Required enumerated value serialized in the `type` wire field.
 final class SegmentDataRulesItemConditionsItemRhsVariant2Type {
-
   final String value;
 
   const SegmentDataRulesItemConditionsItemRhsVariant2Type._(this.value);
 
-  factory SegmentDataRulesItemConditionsItemRhsVariant2Type.fromJson(String value) => SegmentDataRulesItemConditionsItemRhsVariant2Type._(value);
+  factory SegmentDataRulesItemConditionsItemRhsVariant2Type.fromJson(
+          String value) =>
+      SegmentDataRulesItemConditionsItemRhsVariant2Type._(value);
 
-  static const list = SegmentDataRulesItemConditionsItemRhsVariant2Type._('list');
-  static const listInline = SegmentDataRulesItemConditionsItemRhsVariant2Type._('list/inline');
+  static const list =
+      SegmentDataRulesItemConditionsItemRhsVariant2Type._('list');
+  static const listInline =
+      SegmentDataRulesItemConditionsItemRhsVariant2Type._('list/inline');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SegmentDataRulesItemConditionsItemRhsVariant2Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SegmentDataRulesItemConditionsItemRhsVariant2Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class SegmentDataRulesItemConditionsItemRhsVariant3Type {
-
   final String value;
 
   const SegmentDataRulesItemConditionsItemRhsVariant3Type._(this.value);
 
-  factory SegmentDataRulesItemConditionsItemRhsVariant3Type.fromJson(String value) => SegmentDataRulesItemConditionsItemRhsVariant3Type._(value);
+  factory SegmentDataRulesItemConditionsItemRhsVariant3Type.fromJson(
+          String value) =>
+      SegmentDataRulesItemConditionsItemRhsVariant3Type._(value);
 
-  static const regex = SegmentDataRulesItemConditionsItemRhsVariant3Type._('regex');
+  static const regex =
+      SegmentDataRulesItemConditionsItemRhsVariant3Type._('regex');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SegmentDataRulesItemConditionsItemRhsVariant3Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SegmentDataRulesItemConditionsItemRhsVariant3Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `rhs` wire field.
 final class SegmentDataRulesItemConditionsItemRhsVariant4 {
-
   final bool value;
 
   const SegmentDataRulesItemConditionsItemRhsVariant4._(this.value);
 
-  factory SegmentDataRulesItemConditionsItemRhsVariant4.fromJson(bool value) => SegmentDataRulesItemConditionsItemRhsVariant4._(value);
+  factory SegmentDataRulesItemConditionsItemRhsVariant4.fromJson(bool value) =>
+      SegmentDataRulesItemConditionsItemRhsVariant4._(value);
 
   static const false_ = SegmentDataRulesItemConditionsItemRhsVariant4._(false);
   static const true_ = SegmentDataRulesItemConditionsItemRhsVariant4._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SegmentDataRulesItemConditionsItemRhsVariant4 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SegmentDataRulesItemConditionsItemRhsVariant4 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
@@ -75,14 +92,18 @@ enum SegmentDataRulesItemOutcomeVariant0Type {
 
   static SegmentDataRulesItemOutcomeVariant0Type fromJson(String value) {
     switch (value) {
-      case 'all': return SegmentDataRulesItemOutcomeVariant0Type.all;
-      default: throw ArgumentError('Unknown SegmentDataRulesItemOutcomeVariant0Type: $value');
+      case 'all':
+        return SegmentDataRulesItemOutcomeVariant0Type.all;
+      default:
+        throw ArgumentError(
+            'Unknown SegmentDataRulesItemOutcomeVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SegmentDataRulesItemOutcomeVariant0Type.all: return 'all';
+      case SegmentDataRulesItemOutcomeVariant0Type.all:
+        return 'all';
     }
   }
 
@@ -92,23 +113,27 @@ enum SegmentDataRulesItemOutcomeVariant0Type {
 
 /// Required enumerated value serialized in the `type` wire field.
 final class SegmentDataRulesItemOutcomeVariant1BaseType {
-
   final String value;
 
   const SegmentDataRulesItemOutcomeVariant1BaseType._(this.value);
 
-  factory SegmentDataRulesItemOutcomeVariant1BaseType.fromJson(String value) => SegmentDataRulesItemOutcomeVariant1BaseType._(value);
+  factory SegmentDataRulesItemOutcomeVariant1BaseType.fromJson(String value) =>
+      SegmentDataRulesItemOutcomeVariant1BaseType._(value);
 
   static const entity = SegmentDataRulesItemOutcomeVariant1BaseType._('entity');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SegmentDataRulesItemOutcomeVariant1BaseType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SegmentDataRulesItemOutcomeVariant1BaseType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
@@ -117,14 +142,18 @@ enum SegmentDataRulesItemOutcomeVariant1Type {
 
   static SegmentDataRulesItemOutcomeVariant1Type fromJson(String value) {
     switch (value) {
-      case 'split': return SegmentDataRulesItemOutcomeVariant1Type.split;
-      default: throw ArgumentError('Unknown SegmentDataRulesItemOutcomeVariant1Type: $value');
+      case 'split':
+        return SegmentDataRulesItemOutcomeVariant1Type.split;
+      default:
+        throw ArgumentError(
+            'Unknown SegmentDataRulesItemOutcomeVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SegmentDataRulesItemOutcomeVariant1Type.split: return 'split';
+      case SegmentDataRulesItemOutcomeVariant1Type.split:
+        return 'split';
     }
   }
 
@@ -134,29 +163,31 @@ enum SegmentDataRulesItemOutcomeVariant1Type {
 
 /// CPU architecture of the sandbox.
 final class SessionArchitecture {
-
   final String value;
 
   const SessionArchitecture._(this.value);
 
-  factory SessionArchitecture.fromJson(String value) => SessionArchitecture._(value);
+  factory SessionArchitecture.fromJson(String value) =>
+      SessionArchitecture._(value);
 
   static const amd64 = SessionArchitecture._('amd64');
   static const arm64 = SessionArchitecture._('arm64');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SessionArchitecture && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SessionArchitecture && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The status of the sandbox.
 final class SessionStatus {
-
   final String value;
 
   const SessionStatus._(this.value);
@@ -173,17 +204,19 @@ final class SessionStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SessionStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SessionStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this sandbox is managed by v0 on the customer's behalf.
 final class SessionV0 {
-
   final bool value;
 
   const SessionV0._(this.value);
@@ -195,61 +228,68 @@ final class SessionV0 {
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SessionV0 && other.value == value;
+  @override
+  bool operator ==(Object other) => other is SessionV0 && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// CPU architecture required to restore the snapshot.
 final class SnapshotArchitecture {
-
   final String value;
 
   const SnapshotArchitecture._(this.value);
 
-  factory SnapshotArchitecture.fromJson(String value) => SnapshotArchitecture._(value);
+  factory SnapshotArchitecture.fromJson(String value) =>
+      SnapshotArchitecture._(value);
 
   static const amd64 = SnapshotArchitecture._('amd64');
   static const arm64 = SnapshotArchitecture._('arm64');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SnapshotArchitecture && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SnapshotArchitecture && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The method used to create the snapshot.
 final class SnapshotCreationMethod {
-
   final String value;
 
   const SnapshotCreationMethod._(this.value);
 
-  factory SnapshotCreationMethod.fromJson(String value) => SnapshotCreationMethod._(value);
+  factory SnapshotCreationMethod.fromJson(String value) =>
+      SnapshotCreationMethod._(value);
 
   static const automatic = SnapshotCreationMethod._('automatic');
   static const manual = SnapshotCreationMethod._('manual');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SnapshotCreationMethod && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SnapshotCreationMethod && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The status of the snapshot.
 final class SnapshotStatus {
-
   final String value;
 
   const SnapshotStatus._(this.value);
@@ -262,17 +302,19 @@ final class SnapshotStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SnapshotStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SnapshotStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this snapshot is managed by v0 on the customer's behalf.
 final class SnapshotV0 {
-
   final bool value;
 
   const SnapshotV0._(this.value);
@@ -284,10 +326,12 @@ final class SnapshotV0 {
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SnapshotV0 && other.value == value;
+  @override
+  bool operator ==(Object other) => other is SnapshotV0 && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

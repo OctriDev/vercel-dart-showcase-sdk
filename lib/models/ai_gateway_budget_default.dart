@@ -8,55 +8,113 @@ part of 'ai_gateway.dart';
 class AiGatewayBudgetDefault {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `active` wire field.
   final AiGatewayBudgetDefaultActive active;
+
   /// Optional array value serialized in the `alertThresholds` wire field.
   final SdkOptional<List<double>> alertThresholds;
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `number` value serialized in the `limitAmount` wire field.
   final double limitAmount;
+
   /// Required enumerated value serialized in the `refreshPeriod` wire field.
   final AiGatewayBudgetDefaultRefreshPeriod refreshPeriod;
+
   /// Required enumerated value serialized in the `scopeType` wire field.
   final AiGatewayBudgetDefaultScopeType scopeType;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
-  const AiGatewayBudgetDefault({required this.active, this.alertThresholds = const SdkOmitted(), required this.createdAt, required this.limitAmount, required this.refreshPeriod, required this.scopeType, required this.updatedAt});
+  const AiGatewayBudgetDefault(
+      {required this.active,
+      this.alertThresholds = const SdkOmitted(),
+      required this.createdAt,
+      required this.limitAmount,
+      required this.refreshPeriod,
+      required this.scopeType,
+      required this.updatedAt});
 
-  AiGatewayBudgetDefault Function({AiGatewayBudgetDefaultActive active, SdkOptional<List<double>> alertThresholds, double createdAt, double limitAmount, AiGatewayBudgetDefaultRefreshPeriod refreshPeriod, AiGatewayBudgetDefaultScopeType scopeType, double updatedAt}) get copyWith => _copyWith;
+  AiGatewayBudgetDefault Function(
+      {AiGatewayBudgetDefaultActive active,
+      SdkOptional<List<double>> alertThresholds,
+      double createdAt,
+      double limitAmount,
+      AiGatewayBudgetDefaultRefreshPeriod refreshPeriod,
+      AiGatewayBudgetDefaultScopeType scopeType,
+      double updatedAt}) get copyWith => _copyWith;
 
-  AiGatewayBudgetDefault _copyWith({Object? active = sdkOmittedValue, Object? alertThresholds = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? limitAmount = sdkOmittedValue, Object? refreshPeriod = sdkOmittedValue, Object? scopeType = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => AiGatewayBudgetDefault(
-    active: identical(active, sdkOmittedValue) ? this.active : active as AiGatewayBudgetDefaultActive,
-    alertThresholds: identical(alertThresholds, sdkOmittedValue) ? this.alertThresholds : alertThresholds as SdkOptional<List<double>>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    limitAmount: identical(limitAmount, sdkOmittedValue) ? this.limitAmount : limitAmount as double,
-    refreshPeriod: identical(refreshPeriod, sdkOmittedValue) ? this.refreshPeriod : refreshPeriod as AiGatewayBudgetDefaultRefreshPeriod,
-    scopeType: identical(scopeType, sdkOmittedValue) ? this.scopeType : scopeType as AiGatewayBudgetDefaultScopeType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  AiGatewayBudgetDefault _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? alertThresholds = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? limitAmount = sdkOmittedValue,
+          Object? refreshPeriod = sdkOmittedValue,
+          Object? scopeType = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      AiGatewayBudgetDefault(
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active as AiGatewayBudgetDefaultActive,
+        alertThresholds: identical(alertThresholds, sdkOmittedValue)
+            ? this.alertThresholds
+            : alertThresholds as SdkOptional<List<double>>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        limitAmount: identical(limitAmount, sdkOmittedValue)
+            ? this.limitAmount
+            : limitAmount as double,
+        refreshPeriod: identical(refreshPeriod, sdkOmittedValue)
+            ? this.refreshPeriod
+            : refreshPeriod as AiGatewayBudgetDefaultRefreshPeriod,
+        scopeType: identical(scopeType, sdkOmittedValue)
+            ? this.scopeType
+            : scopeType as AiGatewayBudgetDefaultScopeType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory AiGatewayBudgetDefault.fromJson(Map<String, dynamic> json) => AiGatewayBudgetDefault(
-    active: (json['active'] != null ? AiGatewayBudgetDefaultActive.fromJson(json['active'] as bool) : null)!,
-    alertThresholds: json['alertThresholds'] != null ? SdkPresent(((json['alertThresholds'] as List?)?.map((e) => (e as num).toDouble()).toList())!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
-    refreshPeriod: (json['refreshPeriod'] != null ? AiGatewayBudgetDefaultRefreshPeriod.fromJson(json['refreshPeriod'] as String) : null)!,
-    scopeType: (json['scopeType'] != null ? AiGatewayBudgetDefaultScopeType.fromJson(json['scopeType'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory AiGatewayBudgetDefault.fromJson(Map<String, dynamic> json) =>
+      AiGatewayBudgetDefault(
+        active: (json['active'] != null
+            ? AiGatewayBudgetDefaultActive.fromJson(json['active'] as bool)
+            : null)!,
+        alertThresholds: json['alertThresholds'] != null
+            ? SdkPresent(((json['alertThresholds'] as List?)
+                ?.map((e) => (e as num).toDouble())
+                .toList())!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
+        refreshPeriod: (json['refreshPeriod'] != null
+            ? AiGatewayBudgetDefaultRefreshPeriod.fromJson(
+                json['refreshPeriod'] as String)
+            : null)!,
+        scopeType: (json['scopeType'] != null
+            ? AiGatewayBudgetDefaultScopeType.fromJson(
+                json['scopeType'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active.toJson(),
-    ...switch (alertThresholds) {
-      SdkPresent<List<double>>(value: final value) => {'alertThresholds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    'limitAmount': limitAmount,
-    'refreshPeriod': refreshPeriod.toJson(),
-    'scopeType': scopeType.toJson(),
-    'updatedAt': updatedAt,
-  };
+        'active': active.toJson(),
+        ...switch (alertThresholds) {
+          SdkPresent<List<double>>(value: final value) => {
+              'alertThresholds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        'limitAmount': limitAmount,
+        'refreshPeriod': refreshPeriod.toJson(),
+        'scopeType': scopeType.toJson(),
+        'updatedAt': updatedAt,
+      };
 }

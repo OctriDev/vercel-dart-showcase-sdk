@@ -5,242 +5,324 @@ part of 'inline.dart';
 
 // Inline operation models (part 537)
 final class GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem {
-
   final String value;
 
   const GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._(this.value);
 
-  factory GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem.fromJson(String value) => GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._(value);
+  factory GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem.fromJson(
+          String value) =>
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._(value);
 
-  static const billing = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('BILLING');
-  static const contributor = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('CONTRIBUTOR');
-  static const developer = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('DEVELOPER');
-  static const member = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('MEMBER');
-  static const owner = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('OWNER');
-  static const security = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('SECURITY');
-  static const viewer = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('VIEWER');
-  static const viewerForPlus = GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('VIEWER_FOR_PLUS');
+  static const billing =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('BILLING');
+  static const contributor =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('CONTRIBUTOR');
+  static const developer =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('DEVELOPER');
+  static const member =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('MEMBER');
+  static const owner =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('OWNER');
+  static const security =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('SECURITY');
+  static const viewer =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._('VIEWER');
+  static const viewerForPlus =
+      GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem._(
+          'VIEWER_FOR_PLUS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamMembersResponseEmailInviteCodesItemTeamRolesItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Boolean that indicates if this member was confirmed by an owner.
 final class GetTeamMembersResponseMembersItemConfirmed {
-
   final bool value;
 
   const GetTeamMembersResponseMembersItemConfirmed._(this.value);
 
-  factory GetTeamMembersResponseMembersItemConfirmed.fromJson(bool value) => GetTeamMembersResponseMembersItemConfirmed._(value);
+  factory GetTeamMembersResponseMembersItemConfirmed.fromJson(bool value) =>
+      GetTeamMembersResponseMembersItemConfirmed._(value);
 
   static const false_ = GetTeamMembersResponseMembersItemConfirmed._(false);
   static const true_ = GetTeamMembersResponseMembersItemConfirmed._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamMembersResponseMembersItemConfirmed && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamMembersResponseMembersItemConfirmed &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Indicates whether the user is managed by an enterprise.
 final class GetTeamMembersResponseMembersItemIsEnterpriseManaged {
-
   final bool value;
 
   const GetTeamMembersResponseMembersItemIsEnterpriseManaged._(this.value);
 
-  factory GetTeamMembersResponseMembersItemIsEnterpriseManaged.fromJson(bool value) => GetTeamMembersResponseMembersItemIsEnterpriseManaged._(value);
+  factory GetTeamMembersResponseMembersItemIsEnterpriseManaged.fromJson(
+          bool value) =>
+      GetTeamMembersResponseMembersItemIsEnterpriseManaged._(value);
 
-  static const false_ = GetTeamMembersResponseMembersItemIsEnterpriseManaged._(false);
-  static const true_ = GetTeamMembersResponseMembersItemIsEnterpriseManaged._(true);
+  static const false_ =
+      GetTeamMembersResponseMembersItemIsEnterpriseManaged._(false);
+  static const true_ =
+      GetTeamMembersResponseMembersItemIsEnterpriseManaged._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamMembersResponseMembersItemIsEnterpriseManaged && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamMembersResponseMembersItemIsEnterpriseManaged &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetTeamMembersResponseMembersItemJoinedFromOrigin {
-
   final String value;
 
   const GetTeamMembersResponseMembersItemJoinedFromOrigin._(this.value);
 
-  factory GetTeamMembersResponseMembersItemJoinedFromOrigin.fromJson(String value) => GetTeamMembersResponseMembersItemJoinedFromOrigin._(value);
+  factory GetTeamMembersResponseMembersItemJoinedFromOrigin.fromJson(
+          String value) =>
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._(value);
 
-  static const accountUpdate = GetTeamMembersResponseMembersItemJoinedFromOrigin._('account-update');
-  static const bitbucket = GetTeamMembersResponseMembersItemJoinedFromOrigin._('bitbucket');
-  static const dsync = GetTeamMembersResponseMembersItemJoinedFromOrigin._('dsync');
-  static const feedback = GetTeamMembersResponseMembersItemJoinedFromOrigin._('feedback');
-  static const github = GetTeamMembersResponseMembersItemJoinedFromOrigin._('github');
-  static const gitlab = GetTeamMembersResponseMembersItemJoinedFromOrigin._('gitlab');
-  static const import_ = GetTeamMembersResponseMembersItemJoinedFromOrigin._('import');
-  static const link = GetTeamMembersResponseMembersItemJoinedFromOrigin._('link');
-  static const mail = GetTeamMembersResponseMembersItemJoinedFromOrigin._('mail');
-  static const nsnbAutoApprove = GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-auto-approve');
-  static const nsnbHobbyUpgrade = GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-hobby-upgrade');
-  static const nsnbInvite = GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-invite');
-  static const nsnbRedeploy = GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-redeploy');
-  static const nsnbRedeployAttributionCard = GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-redeploy-attribution-card');
-  static const nsnbRequestAccess = GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-request-access');
-  static const nsnbViewerUpgrade = GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-viewer-upgrade');
-  static const organizationTeams = GetTeamMembersResponseMembersItemJoinedFromOrigin._('organization-teams');
-  static const saml = GetTeamMembersResponseMembersItemJoinedFromOrigin._('saml');
-  static const teams = GetTeamMembersResponseMembersItemJoinedFromOrigin._('teams');
+  static const accountUpdate =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('account-update');
+  static const bitbucket =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('bitbucket');
+  static const dsync =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('dsync');
+  static const feedback =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('feedback');
+  static const github =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('github');
+  static const gitlab =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('gitlab');
+  static const import_ =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('import');
+  static const link =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('link');
+  static const mail =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('mail');
+  static const nsnbAutoApprove =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-auto-approve');
+  static const nsnbHobbyUpgrade =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-hobby-upgrade');
+  static const nsnbInvite =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-invite');
+  static const nsnbRedeploy =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('nsnb-redeploy');
+  static const nsnbRedeployAttributionCard =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._(
+          'nsnb-redeploy-attribution-card');
+  static const nsnbRequestAccess =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._(
+          'nsnb-request-access');
+  static const nsnbViewerUpgrade =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._(
+          'nsnb-viewer-upgrade');
+  static const organizationTeams =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('organization-teams');
+  static const saml =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('saml');
+  static const teams =
+      GetTeamMembersResponseMembersItemJoinedFromOrigin._('teams');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamMembersResponseMembersItemJoinedFromOrigin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamMembersResponseMembersItemJoinedFromOrigin &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetTeamMembersResponseMembersItemProjectsItemRole {
-
   final String value;
 
   const GetTeamMembersResponseMembersItemProjectsItemRole._(this.value);
 
-  factory GetTeamMembersResponseMembersItemProjectsItemRole.fromJson(String value) => GetTeamMembersResponseMembersItemProjectsItemRole._(value);
+  factory GetTeamMembersResponseMembersItemProjectsItemRole.fromJson(
+          String value) =>
+      GetTeamMembersResponseMembersItemProjectsItemRole._(value);
 
-  static const admin = GetTeamMembersResponseMembersItemProjectsItemRole._('ADMIN');
-  static const projectDeveloper = GetTeamMembersResponseMembersItemProjectsItemRole._('PROJECT_DEVELOPER');
-  static const projectGuest = GetTeamMembersResponseMembersItemProjectsItemRole._('PROJECT_GUEST');
-  static const projectViewer = GetTeamMembersResponseMembersItemProjectsItemRole._('PROJECT_VIEWER');
+  static const admin =
+      GetTeamMembersResponseMembersItemProjectsItemRole._('ADMIN');
+  static const projectDeveloper =
+      GetTeamMembersResponseMembersItemProjectsItemRole._('PROJECT_DEVELOPER');
+  static const projectGuest =
+      GetTeamMembersResponseMembersItemProjectsItemRole._('PROJECT_GUEST');
+  static const projectViewer =
+      GetTeamMembersResponseMembersItemProjectsItemRole._('PROJECT_VIEWER');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamMembersResponseMembersItemProjectsItemRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamMembersResponseMembersItemProjectsItemRole &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Role of this user in the team.
 final class GetTeamMembersResponseMembersItemRole {
-
   final String value;
 
   const GetTeamMembersResponseMembersItemRole._(this.value);
 
-  factory GetTeamMembersResponseMembersItemRole.fromJson(String value) => GetTeamMembersResponseMembersItemRole._(value);
+  factory GetTeamMembersResponseMembersItemRole.fromJson(String value) =>
+      GetTeamMembersResponseMembersItemRole._(value);
 
   static const billing = GetTeamMembersResponseMembersItemRole._('BILLING');
-  static const contributor = GetTeamMembersResponseMembersItemRole._('CONTRIBUTOR');
+  static const contributor =
+      GetTeamMembersResponseMembersItemRole._('CONTRIBUTOR');
   static const developer = GetTeamMembersResponseMembersItemRole._('DEVELOPER');
   static const member = GetTeamMembersResponseMembersItemRole._('MEMBER');
   static const owner = GetTeamMembersResponseMembersItemRole._('OWNER');
   static const security = GetTeamMembersResponseMembersItemRole._('SECURITY');
   static const viewer = GetTeamMembersResponseMembersItemRole._('VIEWER');
-  static const viewerForPlus = GetTeamMembersResponseMembersItemRole._('VIEWER_FOR_PLUS');
+  static const viewerForPlus =
+      GetTeamMembersResponseMembersItemRole._('VIEWER_FOR_PLUS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamMembersResponseMembersItemRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamMembersResponseMembersItemRole && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetTeamMembersResponsePaginationHasNext {
-
   final bool value;
 
   const GetTeamMembersResponsePaginationHasNext._(this.value);
 
-  factory GetTeamMembersResponsePaginationHasNext.fromJson(bool value) => GetTeamMembersResponsePaginationHasNext._(value);
+  factory GetTeamMembersResponsePaginationHasNext.fromJson(bool value) =>
+      GetTeamMembersResponsePaginationHasNext._(value);
 
   static const false_ = GetTeamMembersResponsePaginationHasNext._(false);
   static const true_ = GetTeamMembersResponsePaginationHasNext._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamMembersResponsePaginationHasNext && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamMembersResponsePaginationHasNext && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Identifies an explicit logout for the deletion event. Only applies when tokenId is current.
 final class DeleteAuthTokenReason {
-
   final String value;
 
   const DeleteAuthTokenReason._(this.value);
 
-  factory DeleteAuthTokenReason.fromJson(String value) => DeleteAuthTokenReason._(value);
+  factory DeleteAuthTokenReason.fromJson(String value) =>
+      DeleteAuthTokenReason._(value);
 
   static const logout = DeleteAuthTokenReason._('logout');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteAuthTokenReason && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteAuthTokenReason && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The product the caller is logging out of. Only applies when reason is logout and tokenId is current.
 final class DeleteAuthTokenLogoutSource {
-
   final String value;
 
   const DeleteAuthTokenLogoutSource._(this.value);
 
-  factory DeleteAuthTokenLogoutSource.fromJson(String value) => DeleteAuthTokenLogoutSource._(value);
+  factory DeleteAuthTokenLogoutSource.fromJson(String value) =>
+      DeleteAuthTokenLogoutSource._(value);
 
   static const v0 = DeleteAuthTokenLogoutSource._('v0');
   static const vercel = DeleteAuthTokenLogoutSource._('vercel');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteAuthTokenLogoutSource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteAuthTokenLogoutSource && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope {
   shareableLink;
 
-  static ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope fromJson(String value) {
+  static ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope
+      fromJson(String value) {
     switch (value) {
-      case 'shareable-link': return ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope.shareableLink;
-      default: throw ArgumentError('Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope: $value');
+      case 'shareable-link':
+        return ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope
+            .shareableLink;
+      default:
+        throw ArgumentError(
+            'Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope.shareableLink: return 'shareable-link';
+      case ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope
+            .shareableLink:
+        return 'shareable-link';
     }
   }
 
@@ -249,39 +331,58 @@ enum ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope {
 }
 
 final class ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access {
-
   final String value;
 
-  const ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._(this.value);
+  const ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._(
+      this.value);
 
-  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access.fromJson(String value) => ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._(value);
+  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access.fromJson(
+          String value) =>
+      ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._(
+          value);
 
-  static const granted = ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._('granted');
-  static const requested = ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._('requested');
+  static const granted =
+      ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._(
+          'granted');
+  static const requested =
+      ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access._(
+          'requested');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope {
   user;
 
-  static ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope fromJson(String value) {
+  static ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope
+      fromJson(String value) {
     switch (value) {
-      case 'user': return ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope.user;
-      default: throw ArgumentError('Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope: $value');
+      case 'user':
+        return ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope
+            .user;
+      default:
+        throw ArgumentError(
+            'Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope.user: return 'user';
+      case ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope
+            .user:
+        return 'user';
     }
   }
 

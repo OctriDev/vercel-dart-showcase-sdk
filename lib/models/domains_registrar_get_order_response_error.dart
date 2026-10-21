@@ -10,64 +10,134 @@ sealed class GetOrderResponseError {
   const GetOrderResponseError();
   factory GetOrderResponseError.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetOrderResponseErrorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant0(value); } } catch (_) {}
-      try { final value = GetOrderResponseErrorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant1(value); } } catch (_) {}
-      try { final value = GetOrderResponseErrorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant2(value); } } catch (_) {}
-      try { final value = GetOrderResponseErrorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant3(value); } } catch (_) {}
-      try { final value = GetOrderResponseErrorVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant4(value); } } catch (_) {}
-      try { final value = GetOrderResponseErrorVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant5(value); } } catch (_) {}
-      try { final value = GetOrderResponseErrorVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant6(value); } } catch (_) {}
+      try {
+        final value = GetOrderResponseErrorVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseErrorGetOrderResponseErrorVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetOrderResponseErrorVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseErrorGetOrderResponseErrorVariant1(value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetOrderResponseErrorVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseErrorGetOrderResponseErrorVariant2(value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetOrderResponseErrorVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseErrorGetOrderResponseErrorVariant3(value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetOrderResponseErrorVariant4.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseErrorGetOrderResponseErrorVariant4(value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetOrderResponseErrorVariant5.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseErrorGetOrderResponseErrorVariant5(value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetOrderResponseErrorVariant6.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseErrorGetOrderResponseErrorVariant6(value);
+        }
+      } catch (_) {}
     }
-    try { return GetOrderResponseErrorGetOrderResponseErrorVariant0(GetOrderResponseErrorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseErrorGetOrderResponseErrorVariant1(GetOrderResponseErrorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseErrorGetOrderResponseErrorVariant2(GetOrderResponseErrorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseErrorGetOrderResponseErrorVariant3(GetOrderResponseErrorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseErrorGetOrderResponseErrorVariant4(GetOrderResponseErrorVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseErrorGetOrderResponseErrorVariant5(GetOrderResponseErrorVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseErrorGetOrderResponseErrorVariant6(GetOrderResponseErrorVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return GetOrderResponseErrorGetOrderResponseErrorVariant0(
+          GetOrderResponseErrorVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseErrorGetOrderResponseErrorVariant1(
+          GetOrderResponseErrorVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseErrorGetOrderResponseErrorVariant2(
+          GetOrderResponseErrorVariant2.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseErrorGetOrderResponseErrorVariant3(
+          GetOrderResponseErrorVariant3.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseErrorGetOrderResponseErrorVariant4(
+          GetOrderResponseErrorVariant4.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseErrorGetOrderResponseErrorVariant5(
+          GetOrderResponseErrorVariant5.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseErrorGetOrderResponseErrorVariant6(
+          GetOrderResponseErrorVariant6.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for GetOrderResponseError");
   }
   Object? toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant0 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant0
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant0 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant1 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant1
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant1 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant2 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant2
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant2 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant3 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant3
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant3 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant4 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant4
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant4 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant5 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant5
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant5 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant5(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant6 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant6
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant6 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

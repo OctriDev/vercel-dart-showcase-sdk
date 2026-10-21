@@ -8,29 +8,40 @@ part of 'inline.dart';
 class ListProjectsResponseVariant1PaginationVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Amount of items in the current page.
   final double count;
+
   /// Continuation token that must be used to request the next page. Base32 encoded for safe URL transmission.
   final String? next;
 
-  const ListProjectsResponseVariant1PaginationVariant0({required this.count, required this.next});
+  const ListProjectsResponseVariant1PaginationVariant0(
+      {required this.count, required this.next});
 
-  ListProjectsResponseVariant1PaginationVariant0 Function({double count, String? next}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1PaginationVariant0 Function(
+      {double count, String? next}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1PaginationVariant0 _copyWith({Object? count = sdkOmittedValue, Object? next = sdkOmittedValue}) => ListProjectsResponseVariant1PaginationVariant0(
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-  );
+  ListProjectsResponseVariant1PaginationVariant0 _copyWith(
+          {Object? count = sdkOmittedValue, Object? next = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1PaginationVariant0(
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+      );
 
-  factory ListProjectsResponseVariant1PaginationVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1PaginationVariant0(
-    count: ((json['count'] as num?)?.toDouble())!,
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-  );
+  factory ListProjectsResponseVariant1PaginationVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1PaginationVariant0(
+        count: ((json['count'] as num?)?.toDouble())!,
+        next: json.containsKey('next')
+            ? json['next'] as String?
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'count': count,
-    'next': next,
-  };
+        'count': count,
+        'next': next,
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError {
@@ -39,52 +50,83 @@ class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError {
   final String code;
   final String message;
 
-  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError({required this.code, required this.message});
+  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError(
+      {required this.code, required this.message});
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError Function({String code, String message}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError
+      Function({String code, String message}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError
+      _copyWith(
+              {Object? code = sdkOmittedValue,
+              Object? message = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError(
+            code: identical(code, sdkOmittedValue) ? this.code : code as String,
+            message: identical(message, sdkOmittedValue)
+                ? this.message
+                : message as String,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError(
-    code: (json['code'] as String?)!,
-    message: (json['message'] as String?)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentAliasError(
+        code: (json['code'] as String?)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code,
-    'message': message,
-  };
+        'code': code,
+        'message': message,
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The pattern to match against branch names
   final String pattern;
+
   /// The type of matching to perform
-  final ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType type_;
+  final ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType
+      type_;
 
-  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher({required this.pattern, required this.type_});
+  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher(
+      {required this.pattern, required this.type_});
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher Function({String pattern, ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType type_}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher Function(
+      {String pattern,
+      ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType
+          type_}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher(
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType,
-  );
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher
+      _copyWith(
+              {Object? pattern = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher(
+            pattern: identical(pattern, sdkOmittedValue)
+                ? this.pattern
+                : pattern as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher(
-    pattern: (json['pattern'] as String?)!,
-    type_: (json['type'] != null ? ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcher(
+        pattern: (json['pattern'] as String?)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBranchMatcherType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pattern': pattern,
-    'type': type_.toJson(),
-  };
+        'pattern': pattern,
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem {
@@ -94,33 +136,58 @@ class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem {
   final SdkOptional<String> src;
   final String use;
 
-  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem({this.dest = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
+  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem(
+      {this.dest = const SdkOmitted(),
+      this.src = const SdkOmitted(),
+      required this.use});
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem Function({SdkOptional<String> dest, SdkOptional<String> src, String use}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem Function(
+      {SdkOptional<String> dest,
+      SdkOptional<String> src,
+      String use}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem _copyWith({Object? dest = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem(
-    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-    use: identical(use, sdkOmittedValue) ? this.use : use as String,
-  );
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem
+      _copyWith(
+              {Object? dest = sdkOmittedValue,
+              Object? src = sdkOmittedValue,
+              Object? use = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem(
+            dest: identical(dest, sdkOmittedValue)
+                ? this.dest
+                : dest as SdkOptional<String>,
+            src: identical(src, sdkOmittedValue)
+                ? this.src
+                : src as SdkOptional<String>,
+            use: identical(use, sdkOmittedValue) ? this.use : use as String,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem(
-    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-    use: (json['use'] as String?)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentBuildsItem(
+        dest: json['dest'] != null
+            ? SdkPresent((json['dest'] as String?)!)
+            : const SdkOmitted(),
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+        use: (json['use'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (dest) {
-      SdkPresent<String>(value: final value) => {'dest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    'use': use,
-  };
+        ...switch (dest) {
+          SdkPresent<String>(value: final value) => {
+              'dest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'use': use,
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator {
@@ -132,39 +199,71 @@ class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator {
   final String uid;
   final String username;
 
-  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator({required this.email, this.githubLogin = const SdkOmitted(), this.gitlabLogin = const SdkOmitted(), required this.uid, required this.username});
+  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator(
+      {required this.email,
+      this.githubLogin = const SdkOmitted(),
+      this.gitlabLogin = const SdkOmitted(),
+      required this.uid,
+      required this.username});
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator Function({String email, SdkOptional<String> githubLogin, SdkOptional<String> gitlabLogin, String uid, String username}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator Function(
+      {String email,
+      SdkOptional<String> githubLogin,
+      SdkOptional<String> gitlabLogin,
+      String uid,
+      String username}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator _copyWith({Object? email = sdkOmittedValue, Object? githubLogin = sdkOmittedValue, Object? gitlabLogin = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    githubLogin: identical(githubLogin, sdkOmittedValue) ? this.githubLogin : githubLogin as SdkOptional<String>,
-    gitlabLogin: identical(gitlabLogin, sdkOmittedValue) ? this.gitlabLogin : gitlabLogin as SdkOptional<String>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? githubLogin = sdkOmittedValue,
+          Object? gitlabLogin = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        githubLogin: identical(githubLogin, sdkOmittedValue)
+            ? this.githubLogin
+            : githubLogin as SdkOptional<String>,
+        gitlabLogin: identical(gitlabLogin, sdkOmittedValue)
+            ? this.gitlabLogin
+            : gitlabLogin as SdkOptional<String>,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator(
-    email: (json['email'] as String?)!,
-    githubLogin: json['githubLogin'] != null ? SdkPresent((json['githubLogin'] as String?)!) : const SdkOmitted(),
-    gitlabLogin: json['gitlabLogin'] != null ? SdkPresent((json['gitlabLogin'] as String?)!) : const SdkOmitted(),
-    uid: (json['uid'] as String?)!,
-    username: (json['username'] as String?)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentCreator(
+        email: (json['email'] as String?)!,
+        githubLogin: json['githubLogin'] != null
+            ? SdkPresent((json['githubLogin'] as String?)!)
+            : const SdkOmitted(),
+        gitlabLogin: json['gitlabLogin'] != null
+            ? SdkPresent((json['gitlabLogin'] as String?)!)
+            : const SdkOmitted(),
+        uid: (json['uid'] as String?)!,
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'email': email,
-    ...switch (githubLogin) {
-      SdkPresent<String>(value: final value) => {'githubLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitlabLogin) {
-      SdkPresent<String>(value: final value) => {'gitlabLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    'uid': uid,
-    'username': username,
-  };
+        'email': email,
+        ...switch (githubLogin) {
+          SdkPresent<String>(value: final value) => {
+              'githubLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitlabLogin) {
+          SdkPresent<String>(value: final value) => {
+              'gitlabLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'uid': uid,
+        'username': username,
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims {
@@ -184,67 +283,148 @@ class ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims
   final String scope;
   final String sub;
 
-  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims({required this.aud, this.customEnvironmentId = const SdkOmitted(), this.deploymentId = const SdkOmitted(), required this.environment, required this.iss, this.mfeGroupIds = const SdkOmitted(), required this.owner, required this.ownerId, this.plan = const SdkOmitted(), required this.project, required this.projectId, required this.scope, required this.sub});
+  const ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims(
+      {required this.aud,
+      this.customEnvironmentId = const SdkOmitted(),
+      this.deploymentId = const SdkOmitted(),
+      required this.environment,
+      required this.iss,
+      this.mfeGroupIds = const SdkOmitted(),
+      required this.owner,
+      required this.ownerId,
+      this.plan = const SdkOmitted(),
+      required this.project,
+      required this.projectId,
+      required this.scope,
+      required this.sub});
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims Function({String aud, SdkOptional<String> customEnvironmentId, SdkOptional<String> deploymentId, String environment, String iss, SdkOptional<List<String>> mfeGroupIds, String owner, String ownerId, SdkOptional<String> plan, String project, String projectId, String scope, String sub}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims Function(
+      {String aud,
+      SdkOptional<String> customEnvironmentId,
+      SdkOptional<String> deploymentId,
+      String environment,
+      String iss,
+      SdkOptional<List<String>> mfeGroupIds,
+      String owner,
+      String ownerId,
+      SdkOptional<String> plan,
+      String project,
+      String projectId,
+      String scope,
+      String sub}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims _copyWith({Object? aud = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? iss = sdkOmittedValue, Object? mfeGroupIds = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? plan = sdkOmittedValue, Object? project = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? sub = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims(
-    aud: identical(aud, sdkOmittedValue) ? this.aud : aud as String,
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String>,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as SdkOptional<String>,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
-    iss: identical(iss, sdkOmittedValue) ? this.iss : iss as String,
-    mfeGroupIds: identical(mfeGroupIds, sdkOmittedValue) ? this.mfeGroupIds : mfeGroupIds as SdkOptional<List<String>>,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    plan: identical(plan, sdkOmittedValue) ? this.plan : plan as SdkOptional<String>,
-    project: identical(project, sdkOmittedValue) ? this.project : project as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as String,
-    sub: identical(sub, sdkOmittedValue) ? this.sub : sub as String,
-  );
+  ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims
+      _copyWith(
+              {Object? aud = sdkOmittedValue,
+              Object? customEnvironmentId = sdkOmittedValue,
+              Object? deploymentId = sdkOmittedValue,
+              Object? environment = sdkOmittedValue,
+              Object? iss = sdkOmittedValue,
+              Object? mfeGroupIds = sdkOmittedValue,
+              Object? owner = sdkOmittedValue,
+              Object? ownerId = sdkOmittedValue,
+              Object? plan = sdkOmittedValue,
+              Object? project = sdkOmittedValue,
+              Object? projectId = sdkOmittedValue,
+              Object? scope = sdkOmittedValue,
+              Object? sub = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims(
+            aud: identical(aud, sdkOmittedValue) ? this.aud : aud as String,
+            customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+                ? this.customEnvironmentId
+                : customEnvironmentId as SdkOptional<String>,
+            deploymentId: identical(deploymentId, sdkOmittedValue)
+                ? this.deploymentId
+                : deploymentId as SdkOptional<String>,
+            environment: identical(environment, sdkOmittedValue)
+                ? this.environment
+                : environment as String,
+            iss: identical(iss, sdkOmittedValue) ? this.iss : iss as String,
+            mfeGroupIds: identical(mfeGroupIds, sdkOmittedValue)
+                ? this.mfeGroupIds
+                : mfeGroupIds as SdkOptional<List<String>>,
+            owner: identical(owner, sdkOmittedValue)
+                ? this.owner
+                : owner as String,
+            ownerId: identical(ownerId, sdkOmittedValue)
+                ? this.ownerId
+                : ownerId as String,
+            plan: identical(plan, sdkOmittedValue)
+                ? this.plan
+                : plan as SdkOptional<String>,
+            project: identical(project, sdkOmittedValue)
+                ? this.project
+                : project as String,
+            projectId: identical(projectId, sdkOmittedValue)
+                ? this.projectId
+                : projectId as String,
+            scope: identical(scope, sdkOmittedValue)
+                ? this.scope
+                : scope as String,
+            sub: identical(sub, sdkOmittedValue) ? this.sub : sub as String,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims(
-    aud: (json['aud'] as String?)!,
-    customEnvironmentId: json['custom_environment_id'] != null ? SdkPresent((json['custom_environment_id'] as String?)!) : const SdkOmitted(),
-    deploymentId: json['deployment_id'] != null ? SdkPresent((json['deployment_id'] as String?)!) : const SdkOmitted(),
-    environment: (json['environment'] as String?)!,
-    iss: (json['iss'] as String?)!,
-    mfeGroupIds: json['mfe_group_ids'] != null ? SdkPresent(((json['mfe_group_ids'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    owner: (json['owner'] as String?)!,
-    ownerId: (json['owner_id'] as String?)!,
-    plan: json['plan'] != null ? SdkPresent((json['plan'] as String?)!) : const SdkOmitted(),
-    project: (json['project'] as String?)!,
-    projectId: (json['project_id'] as String?)!,
-    scope: (json['scope'] as String?)!,
-    sub: (json['sub'] as String?)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemAliasItemDeploymentOidcTokenClaims(
+        aud: (json['aud'] as String?)!,
+        customEnvironmentId: json['custom_environment_id'] != null
+            ? SdkPresent((json['custom_environment_id'] as String?)!)
+            : const SdkOmitted(),
+        deploymentId: json['deployment_id'] != null
+            ? SdkPresent((json['deployment_id'] as String?)!)
+            : const SdkOmitted(),
+        environment: (json['environment'] as String?)!,
+        iss: (json['iss'] as String?)!,
+        mfeGroupIds: json['mfe_group_ids'] != null
+            ? SdkPresent(((json['mfe_group_ids'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        owner: (json['owner'] as String?)!,
+        ownerId: (json['owner_id'] as String?)!,
+        plan: json['plan'] != null
+            ? SdkPresent((json['plan'] as String?)!)
+            : const SdkOmitted(),
+        project: (json['project'] as String?)!,
+        projectId: (json['project_id'] as String?)!,
+        scope: (json['scope'] as String?)!,
+        sub: (json['sub'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'aud': aud,
-    ...switch (customEnvironmentId) {
-      SdkPresent<String>(value: final value) => {'custom_environment_id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deploymentId) {
-      SdkPresent<String>(value: final value) => {'deployment_id': value,},
-      _ => const <String, dynamic>{},
-    },
-    'environment': environment,
-    'iss': iss,
-    ...switch (mfeGroupIds) {
-      SdkPresent<List<String>>(value: final value) => {'mfe_group_ids': value,},
-      _ => const <String, dynamic>{},
-    },
-    'owner': owner,
-    'owner_id': ownerId,
-    ...switch (plan) {
-      SdkPresent<String>(value: final value) => {'plan': value,},
-      _ => const <String, dynamic>{},
-    },
-    'project': project,
-    'project_id': projectId,
-    'scope': scope,
-    'sub': sub,
-  };
+        'aud': aud,
+        ...switch (customEnvironmentId) {
+          SdkPresent<String>(value: final value) => {
+              'custom_environment_id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deploymentId) {
+          SdkPresent<String>(value: final value) => {
+              'deployment_id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'environment': environment,
+        'iss': iss,
+        ...switch (mfeGroupIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'mfe_group_ids': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'owner': owner,
+        'owner_id': ownerId,
+        ...switch (plan) {
+          SdkPresent<String>(value: final value) => {
+              'plan': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'project': project,
+        'project_id': projectId,
+        'scope': scope,
+        'sub': sub,
+      };
 }

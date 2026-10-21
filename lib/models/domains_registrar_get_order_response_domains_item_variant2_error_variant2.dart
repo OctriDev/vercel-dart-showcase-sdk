@@ -11,19 +11,30 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant2 {
 
   const GetOrderResponseDomainsItemVariant2ErrorVariant2({required this.code});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant2 Function({GetOrderResponseDomainsItemVariant2ErrorVariant2Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant2 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant2Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant2 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant2(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant2Code,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant2 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant2(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant2Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant2.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant2(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant2Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant2(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant2Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant3 {
@@ -33,19 +44,30 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant3 {
 
   const GetOrderResponseDomainsItemVariant2ErrorVariant3({required this.code});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant3 Function({GetOrderResponseDomainsItemVariant2ErrorVariant3Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant3 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant3Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant3 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant3(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant3Code,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant3 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant3(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant3Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant3.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant3(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant3Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant3(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant3Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant4 {
@@ -55,19 +77,30 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant4 {
 
   const GetOrderResponseDomainsItemVariant2ErrorVariant4({required this.code});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant4 Function({GetOrderResponseDomainsItemVariant2ErrorVariant4Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant4 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant4Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant4 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant4(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant4Code,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant4 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant4(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant4Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant4.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant4(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant4Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant4(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant4Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant5Details {
@@ -75,21 +108,31 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant5Details {
   static const String constructionSurface = 'named';
   final double numDaysUntilTransferrable;
 
-  const GetOrderResponseDomainsItemVariant2ErrorVariant5Details({required this.numDaysUntilTransferrable});
+  const GetOrderResponseDomainsItemVariant2ErrorVariant5Details(
+      {required this.numDaysUntilTransferrable});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant5Details Function({double numDaysUntilTransferrable}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant5Details Function(
+      {double numDaysUntilTransferrable}) get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant5Details _copyWith({Object? numDaysUntilTransferrable = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant5Details(
-    numDaysUntilTransferrable: identical(numDaysUntilTransferrable, sdkOmittedValue) ? this.numDaysUntilTransferrable : numDaysUntilTransferrable as double,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant5Details _copyWith(
+          {Object? numDaysUntilTransferrable = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant5Details(
+        numDaysUntilTransferrable:
+            identical(numDaysUntilTransferrable, sdkOmittedValue)
+                ? this.numDaysUntilTransferrable
+                : numDaysUntilTransferrable as double,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant5Details.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant5Details(
-    numDaysUntilTransferrable: ((json['numDaysUntilTransferrable'] as num?)?.toDouble())!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant5Details.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant5Details(
+        numDaysUntilTransferrable:
+            ((json['numDaysUntilTransferrable'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'numDaysUntilTransferrable': numDaysUntilTransferrable,
-  };
+        'numDaysUntilTransferrable': numDaysUntilTransferrable,
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant5 {
@@ -98,24 +141,44 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant5 {
   final GetOrderResponseDomainsItemVariant2ErrorVariant5Code code;
   final GetOrderResponseDomainsItemVariant2ErrorVariant5Details details;
 
-  const GetOrderResponseDomainsItemVariant2ErrorVariant5({required this.code, required this.details});
+  const GetOrderResponseDomainsItemVariant2ErrorVariant5(
+      {required this.code, required this.details});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant5 Function({GetOrderResponseDomainsItemVariant2ErrorVariant5Code code, GetOrderResponseDomainsItemVariant2ErrorVariant5Details details}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant5 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant5Code code,
+          GetOrderResponseDomainsItemVariant2ErrorVariant5Details details})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant5 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant5(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant5Code,
-    details: identical(details, sdkOmittedValue) ? this.details : details as GetOrderResponseDomainsItemVariant2ErrorVariant5Details,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant5 _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? details = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant5(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant5Code,
+        details: identical(details, sdkOmittedValue)
+            ? this.details
+            : details
+                as GetOrderResponseDomainsItemVariant2ErrorVariant5Details,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant5.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant5(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant5Code.fromJson(json['code'] as String) : null)!,
-    details: (json['details'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant5Details.fromJson(json['details'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant5(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant5Code.fromJson(
+                json['code'] as String)
+            : null)!,
+        details: (json['details'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant5Details.fromJson(
+                json['details'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-    'details': details.toJson(),
-  };
+        'code': code.toJson(),
+        'details': details.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant6 {
@@ -125,19 +188,30 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant6 {
 
   const GetOrderResponseDomainsItemVariant2ErrorVariant6({required this.code});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant6 Function({GetOrderResponseDomainsItemVariant2ErrorVariant6Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant6 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant6Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant6 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant6(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant6Code,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant6 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant6(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant6Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant6.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant6(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant6Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant6(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant6Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant7 {
@@ -147,19 +221,30 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant7 {
 
   const GetOrderResponseDomainsItemVariant2ErrorVariant7({required this.code});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant7 Function({GetOrderResponseDomainsItemVariant2ErrorVariant7Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant7 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant7Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant7 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant7(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant7Code,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant7 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant7(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant7Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant7.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant7(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant7Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant7(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant7Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant8 {
@@ -169,44 +254,79 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant8 {
 
   const GetOrderResponseDomainsItemVariant2ErrorVariant8({required this.code});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant8 Function({GetOrderResponseDomainsItemVariant2ErrorVariant8Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant8 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant8Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant8 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant8(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant8Code,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant8 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant8(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant8Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant8.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant8(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant8Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant8(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant8Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant9Details {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField> invalidField;
+  final SdkOptional<
+          GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField>
+      invalidField;
 
-  const GetOrderResponseDomainsItemVariant2ErrorVariant9Details({this.invalidField = const SdkOmitted()});
+  const GetOrderResponseDomainsItemVariant2ErrorVariant9Details(
+      {this.invalidField = const SdkOmitted()});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant9Details Function({SdkOptional<GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField> invalidField}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant9Details Function(
+      {SdkOptional<
+              GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField>
+          invalidField}) get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant9Details _copyWith({Object? invalidField = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant9Details(
-    invalidField: identical(invalidField, sdkOmittedValue) ? this.invalidField : invalidField as SdkOptional<GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField>,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant9Details _copyWith(
+          {Object? invalidField = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant9Details(
+        invalidField: identical(invalidField, sdkOmittedValue)
+            ? this.invalidField
+            : invalidField as SdkOptional<
+                GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField>,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant9Details.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant9Details(
-    invalidField: json['invalidField'] != null ? SdkPresent((json['invalidField'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField.fromJson(json['invalidField'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant9Details.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant9Details(
+        invalidField: json['invalidField'] != null
+            ? SdkPresent((json['invalidField'] != null
+                ? GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField
+                    .fromJson(json['invalidField'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (invalidField) {
-      SdkPresent<GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField>(value: final value) => {'invalidField': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (invalidField) {
+          SdkPresent<
+                GetOrderResponseDomainsItemVariant2ErrorVariant9DetailsInvalidField>(
+            value: final value
+          ) =>
+            {
+              'invalidField': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant9 {
@@ -215,24 +335,44 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant9 {
   final GetOrderResponseDomainsItemVariant2ErrorVariant9Code code;
   final GetOrderResponseDomainsItemVariant2ErrorVariant9Details details;
 
-  const GetOrderResponseDomainsItemVariant2ErrorVariant9({required this.code, required this.details});
+  const GetOrderResponseDomainsItemVariant2ErrorVariant9(
+      {required this.code, required this.details});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant9 Function({GetOrderResponseDomainsItemVariant2ErrorVariant9Code code, GetOrderResponseDomainsItemVariant2ErrorVariant9Details details}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant9 Function(
+          {GetOrderResponseDomainsItemVariant2ErrorVariant9Code code,
+          GetOrderResponseDomainsItemVariant2ErrorVariant9Details details})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant9 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant9(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant2ErrorVariant9Code,
-    details: identical(details, sdkOmittedValue) ? this.details : details as GetOrderResponseDomainsItemVariant2ErrorVariant9Details,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant9 _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? details = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant9(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant2ErrorVariant9Code,
+        details: identical(details, sdkOmittedValue)
+            ? this.details
+            : details
+                as GetOrderResponseDomainsItemVariant2ErrorVariant9Details,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant9.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant9(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant9Code.fromJson(json['code'] as String) : null)!,
-    details: (json['details'] != null ? GetOrderResponseDomainsItemVariant2ErrorVariant9Details.fromJson(json['details'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant9(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant9Code.fromJson(
+                json['code'] as String)
+            : null)!,
+        details: (json['details'] != null
+            ? GetOrderResponseDomainsItemVariant2ErrorVariant9Details.fromJson(
+                json['details'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-    'details': details.toJson(),
-  };
+        'code': code.toJson(),
+        'details': details.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant2ErrorVariant10 {
@@ -241,25 +381,38 @@ class GetOrderResponseDomainsItemVariant2ErrorVariant10 {
   final String code;
   final SdkOptional<dynamic> details;
 
-  const GetOrderResponseDomainsItemVariant2ErrorVariant10({required this.code, this.details = const SdkOmitted()});
+  const GetOrderResponseDomainsItemVariant2ErrorVariant10(
+      {required this.code, this.details = const SdkOmitted()});
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant10 Function({String code, SdkOptional<dynamic> details}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2ErrorVariant10 Function(
+      {String code, SdkOptional<dynamic> details}) get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2ErrorVariant10 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2ErrorVariant10(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    details: identical(details, sdkOmittedValue) ? this.details : details as SdkOptional<dynamic>,
-  );
+  GetOrderResponseDomainsItemVariant2ErrorVariant10 _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? details = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant10(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        details: identical(details, sdkOmittedValue)
+            ? this.details
+            : details as SdkOptional<dynamic>,
+      );
 
-  factory GetOrderResponseDomainsItemVariant2ErrorVariant10.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2ErrorVariant10(
-    code: (json['code'] as String?)!,
-    details: json['details'] != null ? SdkPresent((json['details'])!) : const SdkOmitted(),
-  );
+  factory GetOrderResponseDomainsItemVariant2ErrorVariant10.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant2ErrorVariant10(
+        code: (json['code'] as String?)!,
+        details: json['details'] != null
+            ? SdkPresent((json['details'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code,
-    ...switch (details) {
-      SdkPresent<dynamic>(value: final value) => {'details': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'code': code,
+        ...switch (details) {
+          SdkPresent<dynamic>(value: final value) => {
+              'details': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

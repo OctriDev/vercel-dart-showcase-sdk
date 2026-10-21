@@ -5,282 +5,416 @@ part of 'inline.dart';
 
 // Inline operation models (part 457)
 final class ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._(this.value);
+  const ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration.fromJson(String value) => ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._(
+          value);
 
-  static const skipNamespaceQueue = ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._('SKIP_NAMESPACE_QUEUE');
-  static const waitForNamespaceQueue = ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._('WAIT_FOR_NAMESPACE_QUEUE');
+  static const skipNamespaceQueue =
+      ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._(
+          'SKIP_NAMESPACE_QUEUE');
+  static const waitForNamespaceQueue =
+      ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration._(
+          'WAIT_FOR_NAMESPACE_QUEUE');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemResourceConfigBuildQueueConfiguration &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
 final class ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._(this.value);
+  const ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel.fromJson(String value) => ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._(
+          value);
 
-  static const enhanced = ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._('enhanced');
-  static const standard = ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._('standard');
-  static const turbo = ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._('turbo');
+  static const enhanced =
+      ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._(
+          'enhanced');
+  static const standard =
+      ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._(
+          'standard');
+  static const turbo =
+      ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel._(
+          'turbo');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemResourceConfigElasticBuildMachineLabel &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled {
-
   final bool value;
 
-  const ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(this.value);
+  const ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled.fromJson(bool value) => ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(false);
-  static const true_ = ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemResourceConfigElasticConcurrencyEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta {
-
   final bool value;
 
-  const ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(this.value);
+  const ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta.fromJson(bool value) => ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(false);
-  static const true_ = ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemResourceConfigEnableFunctionsBeta &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemResourceConfigFluid {
-
   final bool value;
 
   const ListProjectsResponseVariant0ItemResourceConfigFluid._(this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigFluid.fromJson(bool value) => ListProjectsResponseVariant0ItemResourceConfigFluid._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigFluid.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemResourceConfigFluid._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemResourceConfigFluid._(false);
-  static const true_ = ListProjectsResponseVariant0ItemResourceConfigFluid._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemResourceConfigFluid._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemResourceConfigFluid._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigFluid && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemResourceConfigFluid &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(this.value);
+  const ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType.fromJson(String value) => ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(
+          value);
 
-  static const performance = ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._('performance');
-  static const performanceXl = ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._('performance_xl');
-  static const standard = ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._('standard');
-  static const standardLegacy = ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._('standard_legacy');
+  static const performance =
+      ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(
+          'performance');
+  static const performanceXl =
+      ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(
+          'performance_xl');
+  static const standard =
+      ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(
+          'standard');
+  static const standardLegacy =
+      ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType._(
+          'standard_legacy');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemResourceConfigFunctionDefaultMemoryType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover {
-
   final bool value;
 
-  const ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover._(this.value);
+  const ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover.fromJson(bool value) => ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover._(false);
-  static const true_ = ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover
+          ._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemResourceConfigFunctionZeroConfigFailover &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled {
-
   final bool value;
 
-  const ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(this.value);
+  const ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled.fromJson(bool value) => ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(value);
+  factory ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(false);
-  static const true_ = ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemResourceConfigIsNSNBDisabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.
 final class ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader {
-
   final bool value;
 
-  const ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(this.value);
+  const ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader.fromJson(bool value) => ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(value);
+  factory ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(false);
-  static const true_ = ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemRollingReleaseCanaryResponseHeader &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// What to do when the gate trips: pause the rollout, or roll it back.
 final class ListProjectsResponseVariant0ItemRollingReleaseGateAction {
-
   final String value;
 
   const ListProjectsResponseVariant0ItemRollingReleaseGateAction._(this.value);
 
-  factory ListProjectsResponseVariant0ItemRollingReleaseGateAction.fromJson(String value) => ListProjectsResponseVariant0ItemRollingReleaseGateAction._(value);
+  factory ListProjectsResponseVariant0ItemRollingReleaseGateAction.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemRollingReleaseGateAction._(value);
 
-  static const pause = ListProjectsResponseVariant0ItemRollingReleaseGateAction._('pause');
-  static const rollback = ListProjectsResponseVariant0ItemRollingReleaseGateAction._('rollback');
+  static const pause =
+      ListProjectsResponseVariant0ItemRollingReleaseGateAction._('pause');
+  static const rollback =
+      ListProjectsResponseVariant0ItemRollingReleaseGateAction._('rollback');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemRollingReleaseGateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemRollingReleaseGateAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The metric this check evaluates.
 final class ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType._(this.value);
+  const ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType.fromJson(String value) => ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType._(value);
+  factory ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType._(value);
 
-  static const errorRate5xx = ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType._('error-rate-5xx');
+  static const errorRate5xx =
+      ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType._(
+          'error-rate-5xx');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemRollingReleaseGateChecksItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// When true, a tripped gate is only reported — {@link action} is not taken.
 final class ListProjectsResponseVariant0ItemRollingReleaseGateDryRun {
-
   final bool value;
 
   const ListProjectsResponseVariant0ItemRollingReleaseGateDryRun._(this.value);
 
-  factory ListProjectsResponseVariant0ItemRollingReleaseGateDryRun.fromJson(bool value) => ListProjectsResponseVariant0ItemRollingReleaseGateDryRun._(value);
+  factory ListProjectsResponseVariant0ItemRollingReleaseGateDryRun.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemRollingReleaseGateDryRun._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemRollingReleaseGateDryRun._(false);
-  static const true_ = ListProjectsResponseVariant0ItemRollingReleaseGateDryRun._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemRollingReleaseGateDryRun._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemRollingReleaseGateDryRun._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemRollingReleaseGateDryRun && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemRollingReleaseGateDryRun &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether automated gating is enabled for this project's rollouts.
 final class ListProjectsResponseVariant0ItemRollingReleaseGateEnabled {
-
   final bool value;
 
   const ListProjectsResponseVariant0ItemRollingReleaseGateEnabled._(this.value);
 
-  factory ListProjectsResponseVariant0ItemRollingReleaseGateEnabled.fromJson(bool value) => ListProjectsResponseVariant0ItemRollingReleaseGateEnabled._(value);
+  factory ListProjectsResponseVariant0ItemRollingReleaseGateEnabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemRollingReleaseGateEnabled._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemRollingReleaseGateEnabled._(false);
-  static const true_ = ListProjectsResponseVariant0ItemRollingReleaseGateEnabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemRollingReleaseGateEnabled._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemRollingReleaseGateEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemRollingReleaseGateEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemRollingReleaseGateEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

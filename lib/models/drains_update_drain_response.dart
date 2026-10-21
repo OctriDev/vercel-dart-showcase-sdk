@@ -10,24 +10,44 @@ sealed class UpdateDrainResponse {
   const UpdateDrainResponse();
   factory UpdateDrainResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateDrainResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDrainResponseUpdateDrainResponseVariant0(value); } } catch (_) {}
-      try { final value = UpdateDrainResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDrainResponseUpdateDrainResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = UpdateDrainResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDrainResponseUpdateDrainResponseVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateDrainResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateDrainResponseUpdateDrainResponseVariant1(value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateDrainResponseUpdateDrainResponseVariant0(UpdateDrainResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateDrainResponseUpdateDrainResponseVariant1(UpdateDrainResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return UpdateDrainResponseUpdateDrainResponseVariant0(
+          UpdateDrainResponseVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateDrainResponseUpdateDrainResponseVariant1(
+          UpdateDrainResponseVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for UpdateDrainResponse");
   }
   Object? toJson();
 }
 
-final class UpdateDrainResponseUpdateDrainResponseVariant0 extends UpdateDrainResponse {
+final class UpdateDrainResponseUpdateDrainResponseVariant0
+    extends UpdateDrainResponse {
   final UpdateDrainResponseVariant0 value;
   const UpdateDrainResponseUpdateDrainResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateDrainResponseUpdateDrainResponseVariant1 extends UpdateDrainResponse {
+final class UpdateDrainResponseUpdateDrainResponseVariant1
+    extends UpdateDrainResponse {
   final UpdateDrainResponseVariant1 value;
   const UpdateDrainResponseUpdateDrainResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-url-non-pooling': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type.postgresUrlNonPooling;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type
+            .postgresUrlNonPooling;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type
+            .postgresUrlNonPooling:
+        return 'postgres-url-non-pooling';
     }
   }
 
@@ -27,16 +34,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant8Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-prisma-url': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type.postgresPrismaUrl;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type: $value');
+      case 'postgres-prisma-url':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type
+            .postgresPrismaUrl;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type
+            .postgresPrismaUrl:
+        return 'postgres-prisma-url';
     }
   }
 
@@ -45,171 +59,236 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant9Type {
 }
 
 final class FilterProjectEnvsResponseVariant1EnvsItemDecrypted {
-
   final bool value;
 
   const FilterProjectEnvsResponseVariant1EnvsItemDecrypted._(this.value);
 
-  factory FilterProjectEnvsResponseVariant1EnvsItemDecrypted.fromJson(bool value) => FilterProjectEnvsResponseVariant1EnvsItemDecrypted._(value);
+  factory FilterProjectEnvsResponseVariant1EnvsItemDecrypted.fromJson(
+          bool value) =>
+      FilterProjectEnvsResponseVariant1EnvsItemDecrypted._(value);
 
-  static const false_ = FilterProjectEnvsResponseVariant1EnvsItemDecrypted._(false);
-  static const true_ = FilterProjectEnvsResponseVariant1EnvsItemDecrypted._(true);
+  static const false_ =
+      FilterProjectEnvsResponseVariant1EnvsItemDecrypted._(false);
+  static const true_ =
+      FilterProjectEnvsResponseVariant1EnvsItemDecrypted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant1EnvsItemDecrypted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant1EnvsItemDecrypted &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem {
-
   final String value;
 
-  const FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._(this.value);
+  const FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._(
+      this.value);
 
-  factory FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem.fromJson(String value) => FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._(value);
+  factory FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._(value);
 
-  static const flagsSecretNeedsSplit = FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._('flags-secret-needs-split');
-  static const readableSecret = FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._('readable-secret');
+  static const flagsSecretNeedsSplit =
+      FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._(
+          'flags-secret-needs-split');
+  static const readableSecret =
+      FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem._(
+          'readable-secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant1EnvsItemSystem {
-
   final bool value;
 
   const FilterProjectEnvsResponseVariant1EnvsItemSystem._(this.value);
 
-  factory FilterProjectEnvsResponseVariant1EnvsItemSystem.fromJson(bool value) => FilterProjectEnvsResponseVariant1EnvsItemSystem._(value);
+  factory FilterProjectEnvsResponseVariant1EnvsItemSystem.fromJson(
+          bool value) =>
+      FilterProjectEnvsResponseVariant1EnvsItemSystem._(value);
 
-  static const false_ = FilterProjectEnvsResponseVariant1EnvsItemSystem._(false);
+  static const false_ =
+      FilterProjectEnvsResponseVariant1EnvsItemSystem._(false);
   static const true_ = FilterProjectEnvsResponseVariant1EnvsItemSystem._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant1EnvsItemSystem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant1EnvsItemSystem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item {
-
   final String value;
 
-  const FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._(this.value);
+  const FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._(
+      this.value);
 
-  factory FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item.fromJson(String value) => FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._(value);
+  factory FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._(value);
 
-  static const development = FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._('development');
-  static const preview = FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._('preview');
-  static const production = FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._('production');
+  static const development =
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._(
+          'development');
+  static const preview =
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._('preview');
+  static const production =
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item._(
+          'production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1 {
-
   final String value;
 
   const FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._(this.value);
 
-  factory FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1.fromJson(String value) => FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._(value);
+  factory FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._(value);
 
-  static const development = FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._('development');
-  static const preview = FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._('preview');
-  static const production = FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._('production');
+  static const development =
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._('development');
+  static const preview =
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._('preview');
+  static const production =
+      FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant1EnvsItemType {
-
   final String value;
 
   const FilterProjectEnvsResponseVariant1EnvsItemType._(this.value);
 
-  factory FilterProjectEnvsResponseVariant1EnvsItemType.fromJson(String value) => FilterProjectEnvsResponseVariant1EnvsItemType._(value);
+  factory FilterProjectEnvsResponseVariant1EnvsItemType.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant1EnvsItemType._(value);
 
-  static const encrypted = FilterProjectEnvsResponseVariant1EnvsItemType._('encrypted');
+  static const encrypted =
+      FilterProjectEnvsResponseVariant1EnvsItemType._('encrypted');
   static const plain = FilterProjectEnvsResponseVariant1EnvsItemType._('plain');
-  static const secret = FilterProjectEnvsResponseVariant1EnvsItemType._('secret');
-  static const sensitive = FilterProjectEnvsResponseVariant1EnvsItemType._('sensitive');
-  static const system = FilterProjectEnvsResponseVariant1EnvsItemType._('system');
+  static const secret =
+      FilterProjectEnvsResponseVariant1EnvsItemType._('secret');
+  static const sensitive =
+      FilterProjectEnvsResponseVariant1EnvsItemType._('sensitive');
+  static const system =
+      FilterProjectEnvsResponseVariant1EnvsItemType._('system');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant1EnvsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant1EnvsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
 final class FilterProjectEnvsResponseVariant1EnvsItemVisibility {
-
   final String value;
 
   const FilterProjectEnvsResponseVariant1EnvsItemVisibility._(this.value);
 
-  factory FilterProjectEnvsResponseVariant1EnvsItemVisibility.fromJson(String value) => FilterProjectEnvsResponseVariant1EnvsItemVisibility._(value);
+  factory FilterProjectEnvsResponseVariant1EnvsItemVisibility.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant1EnvsItemVisibility._(value);
 
-  static const config = FilterProjectEnvsResponseVariant1EnvsItemVisibility._('config');
-  static const secret = FilterProjectEnvsResponseVariant1EnvsItemVisibility._('secret');
+  static const config =
+      FilterProjectEnvsResponseVariant1EnvsItemVisibility._('config');
+  static const secret =
+      FilterProjectEnvsResponseVariant1EnvsItemVisibility._('secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant1EnvsItemVisibility && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant1EnvsItemVisibility &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type {
   redisUrl;
 
-  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'redis-url': return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type.redisUrl;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type: $value');
+      case 'redis-url':
+        return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type
+            .redisUrl;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type.redisUrl: return 'redis-url';
+      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type
+            .redisUrl:
+        return 'redis-url';
     }
   }
 
@@ -220,16 +299,23 @@ enum FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type {
 enum FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type {
   redisRestApiUrl;
 
-  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-url': return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type.redisRestApiUrl;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type: $value');
+      case 'redis-rest-api-url':
+        return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type
+            .redisRestApiUrl;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type.redisRestApiUrl: return 'redis-rest-api-url';
+      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type
+            .redisRestApiUrl:
+        return 'redis-rest-api-url';
     }
   }
 
@@ -240,16 +326,23 @@ enum FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type {
 enum FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type {
   postgresUser;
 
-  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-user': return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type.postgresUser;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type: $value');
+      case 'postgres-user':
+        return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type
+            .postgresUser;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type.postgresUser: return 'postgres-user';
+      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type
+            .postgresUser:
+        return 'postgres-user';
     }
   }
 
@@ -260,16 +353,23 @@ enum FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10Type {
 enum FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type {
   postgresHost;
 
-  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-host': return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type.postgresHost;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type: $value');
+      case 'postgres-host':
+        return FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type
+            .postgresHost;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type.postgresHost: return 'postgres-host';
+      case FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11Type
+            .postgresHost:
+        return 'postgres-host';
     }
   }
 

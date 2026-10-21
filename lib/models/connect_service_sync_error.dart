@@ -8,38 +8,70 @@ part of 'connect.dart';
 class ConnectServiceSyncError {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Connector fields that caused the synchronization error.
   final SdkOptional<List<String>> fields;
+
   /// Human-readable provider synchronization error.
   final String message;
+
   /// Provider-specific error details that are safe to expose.
   final SdkOptional<Map<String, Object?>> vendor;
 
-  const ConnectServiceSyncError({this.fields = const SdkOmitted(), required this.message, this.vendor = const SdkOmitted()});
+  const ConnectServiceSyncError(
+      {this.fields = const SdkOmitted(),
+      required this.message,
+      this.vendor = const SdkOmitted()});
 
-  ConnectServiceSyncError Function({SdkOptional<List<String>> fields, String message, SdkOptional<Map<String, Object?>> vendor}) get copyWith => _copyWith;
+  ConnectServiceSyncError Function(
+      {SdkOptional<List<String>> fields,
+      String message,
+      SdkOptional<Map<String, Object?>> vendor}) get copyWith => _copyWith;
 
-  ConnectServiceSyncError _copyWith({Object? fields = sdkOmittedValue, Object? message = sdkOmittedValue, Object? vendor = sdkOmittedValue}) => ConnectServiceSyncError(
-    fields: identical(fields, sdkOmittedValue) ? this.fields : fields as SdkOptional<List<String>>,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-    vendor: identical(vendor, sdkOmittedValue) ? this.vendor : vendor as SdkOptional<Map<String, Object?>>,
-  );
+  ConnectServiceSyncError _copyWith(
+          {Object? fields = sdkOmittedValue,
+          Object? message = sdkOmittedValue,
+          Object? vendor = sdkOmittedValue}) =>
+      ConnectServiceSyncError(
+        fields: identical(fields, sdkOmittedValue)
+            ? this.fields
+            : fields as SdkOptional<List<String>>,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+        vendor: identical(vendor, sdkOmittedValue)
+            ? this.vendor
+            : vendor as SdkOptional<Map<String, Object?>>,
+      );
 
-  factory ConnectServiceSyncError.fromJson(Map<String, dynamic> json) => ConnectServiceSyncError(
-    fields: json['fields'] != null ? SdkPresent(((json['fields'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    message: (json['message'] as String?)!,
-    vendor: json['vendor'] != null ? SdkPresent((json['vendor'] == null ? null : Map<String, dynamic>.from(json['vendor'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
-  );
+  factory ConnectServiceSyncError.fromJson(Map<String, dynamic> json) =>
+      ConnectServiceSyncError(
+        fields: json['fields'] != null
+            ? SdkPresent(
+                ((json['fields'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        message: (json['message'] as String?)!,
+        vendor: json['vendor'] != null
+            ? SdkPresent((json['vendor'] == null
+                ? null
+                : Map<String, dynamic>.from(json['vendor'] as Map)
+                    .map((key, value) => MapEntry(key, value)))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (fields) {
-      SdkPresent<List<String>>(value: final value) => {'fields': value,},
-      _ => const <String, dynamic>{},
-    },
-    'message': message,
-    ...switch (vendor) {
-      SdkPresent<Map<String, Object?>>(value: final value) => {'vendor': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (fields) {
+          SdkPresent<List<String>>(value: final value) => {
+              'fields': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'message': message,
+        ...switch (vendor) {
+          SdkPresent<Map<String, Object?>>(value: final value) => {
+              'vendor': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -6,267 +6,404 @@ part of 'inline.dart';
 // Inline operation models (part 251)
 /// Required enumerated value serialized in the `type` wire field.
 final class UserEventPayloadVariant65BeforeResourcesProjectIdsType {
-
   final String value;
 
   const UserEventPayloadVariant65BeforeResourcesProjectIdsType._(this.value);
 
-  factory UserEventPayloadVariant65BeforeResourcesProjectIdsType.fromJson(String value) => UserEventPayloadVariant65BeforeResourcesProjectIdsType._(value);
+  factory UserEventPayloadVariant65BeforeResourcesProjectIdsType.fromJson(
+          String value) =>
+      UserEventPayloadVariant65BeforeResourcesProjectIdsType._(value);
 
-  static const list = UserEventPayloadVariant65BeforeResourcesProjectIdsType._('list');
+  static const list =
+      UserEventPayloadVariant65BeforeResourcesProjectIdsType._('list');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant65BeforeResourcesProjectIdsType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant65BeforeResourcesProjectIdsType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `permissions[]` wire field.
 final class UserEventPayloadVariant66PermissionsItem {
-
   final String value;
 
   const UserEventPayloadVariant66PermissionsItem._(this.value);
 
-  factory UserEventPayloadVariant66PermissionsItem.fromJson(String value) => UserEventPayloadVariant66PermissionsItem._(value);
+  factory UserEventPayloadVariant66PermissionsItem.fromJson(String value) =>
+      UserEventPayloadVariant66PermissionsItem._(value);
 
-  static const manageSpeedInsights = UserEventPayloadVariant66PermissionsItem._('manage:speed-insights');
-  static const manageWebAnalytics = UserEventPayloadVariant66PermissionsItem._('manage:web-analytics');
-  static const readWriteAiGatewayApiKey = UserEventPayloadVariant66PermissionsItem._('read-write:ai-gateway-api-key');
-  static const readWriteAiGatewayBudgets = UserEventPayloadVariant66PermissionsItem._('read-write:ai-gateway-budgets');
-  static const readWriteAiGatewayGuardrails = UserEventPayloadVariant66PermissionsItem._('read-write:ai-gateway-guardrails');
-  static const readWriteAiGatewayPrivateModels = UserEventPayloadVariant66PermissionsItem._('read-write:ai-gateway-private-models');
-  static const readWriteAiGatewayRules = UserEventPayloadVariant66PermissionsItem._('read-write:ai-gateway-rules');
-  static const readWriteAiGatewayVirtualModelConfigs = UserEventPayloadVariant66PermissionsItem._('read-write:ai-gateway-virtual-model-configs');
-  static const readWriteAlerts = UserEventPayloadVariant66PermissionsItem._('read-write:alerts');
-  static const readWriteAutomations = UserEventPayloadVariant66PermissionsItem._('read-write:automations');
-  static const readWriteBilling = UserEventPayloadVariant66PermissionsItem._('read-write:billing');
-  static const readWriteBlob = UserEventPayloadVariant66PermissionsItem._('read-write:blob');
-  static const readWriteConnect = UserEventPayloadVariant66PermissionsItem._('read-write:connect');
-  static const readWriteDeployment = UserEventPayloadVariant66PermissionsItem._('read-write:deployment');
-  static const readWriteDomain = UserEventPayloadVariant66PermissionsItem._('read-write:domain');
-  static const readWriteDomainRegistrar = UserEventPayloadVariant66PermissionsItem._('read-write:domain-registrar');
-  static const readWriteDrains = UserEventPayloadVariant66PermissionsItem._('read-write:drains');
-  static const readWriteEdgeCache = UserEventPayloadVariant66PermissionsItem._('read-write:edge-cache');
-  static const readWriteEdgeConfig = UserEventPayloadVariant66PermissionsItem._('read-write:edge-config');
-  static const readWriteFirewall = UserEventPayloadVariant66PermissionsItem._('read-write:firewall');
-  static const readWriteIntegrationConfiguration = UserEventPayloadVariant66PermissionsItem._('read-write:integration-configuration');
-  static const readWriteIntegrationResource = UserEventPayloadVariant66PermissionsItem._('read-write:integration-resource');
-  static const readWriteKms = UserEventPayloadVariant66PermissionsItem._('read-write:kms');
-  static const readWriteMessageboard = UserEventPayloadVariant66PermissionsItem._('read-write:messageboard');
-  static const readWriteProject = UserEventPayloadVariant66PermissionsItem._('read-write:project');
-  static const readWriteProjectEnvVars = UserEventPayloadVariant66PermissionsItem._('read-write:project-env-vars');
-  static const readWriteProjectEnvVarsNonProduction = UserEventPayloadVariant66PermissionsItem._('read-write:project-env-vars-non-production');
-  static const readWriteProjectEnvVarsProduction = UserEventPayloadVariant66PermissionsItem._('read-write:project-env-vars-production');
-  static const readWriteProjectFlagsNonProduction = UserEventPayloadVariant66PermissionsItem._('read-write:project-flags-non-production');
-  static const readWriteProjectFlagsProduction = UserEventPayloadVariant66PermissionsItem._('read-write:project-flags-production');
-  static const readWriteProjectMembers = UserEventPayloadVariant66PermissionsItem._('read-write:project-members');
-  static const readWriteProjectProtectionBypass = UserEventPayloadVariant66PermissionsItem._('read-write:project-protection-bypass');
-  static const readWriteProjectTrustedSources = UserEventPayloadVariant66PermissionsItem._('read-write:project-trusted-sources');
-  static const readWriteRemoteCache = UserEventPayloadVariant66PermissionsItem._('read-write:remote-cache');
-  static const readWriteSandbox = UserEventPayloadVariant66PermissionsItem._('read-write:sandbox');
-  static const readWriteSchedule = UserEventPayloadVariant66PermissionsItem._('read-write:schedule');
-  static const readWriteTeamMembers = UserEventPayloadVariant66PermissionsItem._('read-write:team-members');
-  static const readWriteVcr = UserEventPayloadVariant66PermissionsItem._('read-write:vcr');
-  static const readAccessGroup = UserEventPayloadVariant66PermissionsItem._('read:access-group');
-  static const readAiGatewayBudgets = UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-budgets');
-  static const readAiGatewayGuardrails = UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-guardrails');
-  static const readAiGatewayPrivateModels = UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-private-models');
-  static const readAiGatewayRules = UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-rules');
-  static const readAiGatewayVirtualModelConfigs = UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-virtual-model-configs');
-  static const readAlerts = UserEventPayloadVariant66PermissionsItem._('read:alerts');
-  static const readAuditLog = UserEventPayloadVariant66PermissionsItem._('read:audit-log');
-  static const readAutomations = UserEventPayloadVariant66PermissionsItem._('read:automations');
-  static const readBilling = UserEventPayloadVariant66PermissionsItem._('read:billing');
-  static const readConnect = UserEventPayloadVariant66PermissionsItem._('read:connect');
-  static const readDeployment = UserEventPayloadVariant66PermissionsItem._('read:deployment');
-  static const readDomain = UserEventPayloadVariant66PermissionsItem._('read:domain');
-  static const readEvent = UserEventPayloadVariant66PermissionsItem._('read:event');
-  static const readFirewall = UserEventPayloadVariant66PermissionsItem._('read:firewall');
-  static const readIntegrationConfiguration = UserEventPayloadVariant66PermissionsItem._('read:integration-configuration');
-  static const readIntegrationResource = UserEventPayloadVariant66PermissionsItem._('read:integration-resource');
+  static const manageSpeedInsights =
+      UserEventPayloadVariant66PermissionsItem._('manage:speed-insights');
+  static const manageWebAnalytics =
+      UserEventPayloadVariant66PermissionsItem._('manage:web-analytics');
+  static const readWriteAiGatewayApiKey =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:ai-gateway-api-key');
+  static const readWriteAiGatewayBudgets =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:ai-gateway-budgets');
+  static const readWriteAiGatewayGuardrails =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:ai-gateway-guardrails');
+  static const readWriteAiGatewayPrivateModels =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:ai-gateway-private-models');
+  static const readWriteAiGatewayRules =
+      UserEventPayloadVariant66PermissionsItem._('read-write:ai-gateway-rules');
+  static const readWriteAiGatewayVirtualModelConfigs =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:ai-gateway-virtual-model-configs');
+  static const readWriteAlerts =
+      UserEventPayloadVariant66PermissionsItem._('read-write:alerts');
+  static const readWriteAutomations =
+      UserEventPayloadVariant66PermissionsItem._('read-write:automations');
+  static const readWriteBilling =
+      UserEventPayloadVariant66PermissionsItem._('read-write:billing');
+  static const readWriteBlob =
+      UserEventPayloadVariant66PermissionsItem._('read-write:blob');
+  static const readWriteConnect =
+      UserEventPayloadVariant66PermissionsItem._('read-write:connect');
+  static const readWriteDeployment =
+      UserEventPayloadVariant66PermissionsItem._('read-write:deployment');
+  static const readWriteDomain =
+      UserEventPayloadVariant66PermissionsItem._('read-write:domain');
+  static const readWriteDomainRegistrar =
+      UserEventPayloadVariant66PermissionsItem._('read-write:domain-registrar');
+  static const readWriteDrains =
+      UserEventPayloadVariant66PermissionsItem._('read-write:drains');
+  static const readWriteEdgeCache =
+      UserEventPayloadVariant66PermissionsItem._('read-write:edge-cache');
+  static const readWriteEdgeConfig =
+      UserEventPayloadVariant66PermissionsItem._('read-write:edge-config');
+  static const readWriteFirewall =
+      UserEventPayloadVariant66PermissionsItem._('read-write:firewall');
+  static const readWriteIntegrationConfiguration =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:integration-configuration');
+  static const readWriteIntegrationResource =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:integration-resource');
+  static const readWriteKms =
+      UserEventPayloadVariant66PermissionsItem._('read-write:kms');
+  static const readWriteMessageboard =
+      UserEventPayloadVariant66PermissionsItem._('read-write:messageboard');
+  static const readWriteProject =
+      UserEventPayloadVariant66PermissionsItem._('read-write:project');
+  static const readWriteProjectEnvVars =
+      UserEventPayloadVariant66PermissionsItem._('read-write:project-env-vars');
+  static const readWriteProjectEnvVarsNonProduction =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:project-env-vars-non-production');
+  static const readWriteProjectEnvVarsProduction =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:project-env-vars-production');
+  static const readWriteProjectFlagsNonProduction =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:project-flags-non-production');
+  static const readWriteProjectFlagsProduction =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:project-flags-production');
+  static const readWriteProjectMembers =
+      UserEventPayloadVariant66PermissionsItem._('read-write:project-members');
+  static const readWriteProjectProtectionBypass =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:project-protection-bypass');
+  static const readWriteProjectTrustedSources =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read-write:project-trusted-sources');
+  static const readWriteRemoteCache =
+      UserEventPayloadVariant66PermissionsItem._('read-write:remote-cache');
+  static const readWriteSandbox =
+      UserEventPayloadVariant66PermissionsItem._('read-write:sandbox');
+  static const readWriteSchedule =
+      UserEventPayloadVariant66PermissionsItem._('read-write:schedule');
+  static const readWriteTeamMembers =
+      UserEventPayloadVariant66PermissionsItem._('read-write:team-members');
+  static const readWriteVcr =
+      UserEventPayloadVariant66PermissionsItem._('read-write:vcr');
+  static const readAccessGroup =
+      UserEventPayloadVariant66PermissionsItem._('read:access-group');
+  static const readAiGatewayBudgets =
+      UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-budgets');
+  static const readAiGatewayGuardrails =
+      UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-guardrails');
+  static const readAiGatewayPrivateModels =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read:ai-gateway-private-models');
+  static const readAiGatewayRules =
+      UserEventPayloadVariant66PermissionsItem._('read:ai-gateway-rules');
+  static const readAiGatewayVirtualModelConfigs =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read:ai-gateway-virtual-model-configs');
+  static const readAlerts =
+      UserEventPayloadVariant66PermissionsItem._('read:alerts');
+  static const readAuditLog =
+      UserEventPayloadVariant66PermissionsItem._('read:audit-log');
+  static const readAutomations =
+      UserEventPayloadVariant66PermissionsItem._('read:automations');
+  static const readBilling =
+      UserEventPayloadVariant66PermissionsItem._('read:billing');
+  static const readConnect =
+      UserEventPayloadVariant66PermissionsItem._('read:connect');
+  static const readDeployment =
+      UserEventPayloadVariant66PermissionsItem._('read:deployment');
+  static const readDomain =
+      UserEventPayloadVariant66PermissionsItem._('read:domain');
+  static const readEvent =
+      UserEventPayloadVariant66PermissionsItem._('read:event');
+  static const readFirewall =
+      UserEventPayloadVariant66PermissionsItem._('read:firewall');
+  static const readIntegrationConfiguration =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read:integration-configuration');
+  static const readIntegrationResource =
+      UserEventPayloadVariant66PermissionsItem._('read:integration-resource');
   static const readKms = UserEventPayloadVariant66PermissionsItem._('read:kms');
-  static const readMessageboard = UserEventPayloadVariant66PermissionsItem._('read:messageboard');
-  static const readMonitoring = UserEventPayloadVariant66PermissionsItem._('read:monitoring');
-  static const readProject = UserEventPayloadVariant66PermissionsItem._('read:project');
-  static const readProjectEnvVarsNonProduction = UserEventPayloadVariant66PermissionsItem._('read:project-env-vars-non-production');
-  static const readProjectEnvVarsProduction = UserEventPayloadVariant66PermissionsItem._('read:project-env-vars-production');
-  static const readProjectFlags = UserEventPayloadVariant66PermissionsItem._('read:project-flags');
-  static const readProjectMembers = UserEventPayloadVariant66PermissionsItem._('read:project-members');
-  static const readProjectTrustedSources = UserEventPayloadVariant66PermissionsItem._('read:project-trusted-sources');
-  static const readRemoteCache = UserEventPayloadVariant66PermissionsItem._('read:remote-cache');
-  static const readSandbox = UserEventPayloadVariant66PermissionsItem._('read:sandbox');
-  static const readSchedule = UserEventPayloadVariant66PermissionsItem._('read:schedule');
-  static const readSpeedInsights = UserEventPayloadVariant66PermissionsItem._('read:speed-insights');
-  static const readTeam = UserEventPayloadVariant66PermissionsItem._('read:team');
+  static const readMessageboard =
+      UserEventPayloadVariant66PermissionsItem._('read:messageboard');
+  static const readMonitoring =
+      UserEventPayloadVariant66PermissionsItem._('read:monitoring');
+  static const readProject =
+      UserEventPayloadVariant66PermissionsItem._('read:project');
+  static const readProjectEnvVarsNonProduction =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read:project-env-vars-non-production');
+  static const readProjectEnvVarsProduction =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read:project-env-vars-production');
+  static const readProjectFlags =
+      UserEventPayloadVariant66PermissionsItem._('read:project-flags');
+  static const readProjectMembers =
+      UserEventPayloadVariant66PermissionsItem._('read:project-members');
+  static const readProjectTrustedSources =
+      UserEventPayloadVariant66PermissionsItem._(
+          'read:project-trusted-sources');
+  static const readRemoteCache =
+      UserEventPayloadVariant66PermissionsItem._('read:remote-cache');
+  static const readSandbox =
+      UserEventPayloadVariant66PermissionsItem._('read:sandbox');
+  static const readSchedule =
+      UserEventPayloadVariant66PermissionsItem._('read:schedule');
+  static const readSpeedInsights =
+      UserEventPayloadVariant66PermissionsItem._('read:speed-insights');
+  static const readTeam =
+      UserEventPayloadVariant66PermissionsItem._('read:team');
   static const readVcr = UserEventPayloadVariant66PermissionsItem._('read:vcr');
-  static const readWebAnalytics = UserEventPayloadVariant66PermissionsItem._('read:web-analytics');
-  static const readWebhooks = UserEventPayloadVariant66PermissionsItem._('read:webhooks');
-  static const useAiGateway = UserEventPayloadVariant66PermissionsItem._('use:ai-gateway');
+  static const readWebAnalytics =
+      UserEventPayloadVariant66PermissionsItem._('read:web-analytics');
+  static const readWebhooks =
+      UserEventPayloadVariant66PermissionsItem._('read:webhooks');
+  static const useAiGateway =
+      UserEventPayloadVariant66PermissionsItem._('use:ai-gateway');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant66PermissionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant66PermissionsItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class UserEventPayloadVariant66ResourcesProjectIdsItemsType {
-
   final String value;
 
   const UserEventPayloadVariant66ResourcesProjectIdsItemsType._(this.value);
 
-  factory UserEventPayloadVariant66ResourcesProjectIdsItemsType.fromJson(String value) => UserEventPayloadVariant66ResourcesProjectIdsItemsType._(value);
+  factory UserEventPayloadVariant66ResourcesProjectIdsItemsType.fromJson(
+          String value) =>
+      UserEventPayloadVariant66ResourcesProjectIdsItemsType._(value);
 
-  static const string = UserEventPayloadVariant66ResourcesProjectIdsItemsType._('string');
+  static const string =
+      UserEventPayloadVariant66ResourcesProjectIdsItemsType._('string');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant66ResourcesProjectIdsItemsType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant66ResourcesProjectIdsItemsType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `required` wire field.
 final class UserEventPayloadVariant66ResourcesProjectIdsRequired {
-
   final bool value;
 
   const UserEventPayloadVariant66ResourcesProjectIdsRequired._(this.value);
 
-  factory UserEventPayloadVariant66ResourcesProjectIdsRequired.fromJson(bool value) => UserEventPayloadVariant66ResourcesProjectIdsRequired._(value);
+  factory UserEventPayloadVariant66ResourcesProjectIdsRequired.fromJson(
+          bool value) =>
+      UserEventPayloadVariant66ResourcesProjectIdsRequired._(value);
 
-  static const true_ = UserEventPayloadVariant66ResourcesProjectIdsRequired._(true);
+  static const true_ =
+      UserEventPayloadVariant66ResourcesProjectIdsRequired._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant66ResourcesProjectIdsRequired && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant66ResourcesProjectIdsRequired &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class UserEventPayloadVariant66ResourcesProjectIdsType {
-
   final String value;
 
   const UserEventPayloadVariant66ResourcesProjectIdsType._(this.value);
 
-  factory UserEventPayloadVariant66ResourcesProjectIdsType.fromJson(String value) => UserEventPayloadVariant66ResourcesProjectIdsType._(value);
+  factory UserEventPayloadVariant66ResourcesProjectIdsType.fromJson(
+          String value) =>
+      UserEventPayloadVariant66ResourcesProjectIdsType._(value);
 
-  static const list = UserEventPayloadVariant66ResourcesProjectIdsType._('list');
+  static const list =
+      UserEventPayloadVariant66ResourcesProjectIdsType._('list');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant66ResourcesProjectIdsType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant66ResourcesProjectIdsType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `attackModeEnabled` wire field.
 final class UserEventPayloadVariant69AttackModeEnabled {
-
   final bool value;
 
   const UserEventPayloadVariant69AttackModeEnabled._(this.value);
 
-  factory UserEventPayloadVariant69AttackModeEnabled.fromJson(bool value) => UserEventPayloadVariant69AttackModeEnabled._(value);
+  factory UserEventPayloadVariant69AttackModeEnabled.fromJson(bool value) =>
+      UserEventPayloadVariant69AttackModeEnabled._(value);
 
   static const false_ = UserEventPayloadVariant69AttackModeEnabled._(false);
   static const true_ = UserEventPayloadVariant69AttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant69AttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant69AttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `prevAttackModeEnabled` wire field.
 final class UserEventPayloadVariant69PrevAttackModeEnabled {
-
   final bool value;
 
   const UserEventPayloadVariant69PrevAttackModeEnabled._(this.value);
 
-  factory UserEventPayloadVariant69PrevAttackModeEnabled.fromJson(bool value) => UserEventPayloadVariant69PrevAttackModeEnabled._(value);
+  factory UserEventPayloadVariant69PrevAttackModeEnabled.fromJson(bool value) =>
+      UserEventPayloadVariant69PrevAttackModeEnabled._(value);
 
   static const false_ = UserEventPayloadVariant69PrevAttackModeEnabled._(false);
   static const true_ = UserEventPayloadVariant69PrevAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant69PrevAttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant69PrevAttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `autoExposeSystemEnvs` wire field.
 final class UserEventPayloadVariant70AutoExposeSystemEnvs {
-
   final bool value;
 
   const UserEventPayloadVariant70AutoExposeSystemEnvs._(this.value);
 
-  factory UserEventPayloadVariant70AutoExposeSystemEnvs.fromJson(bool value) => UserEventPayloadVariant70AutoExposeSystemEnvs._(value);
+  factory UserEventPayloadVariant70AutoExposeSystemEnvs.fromJson(bool value) =>
+      UserEventPayloadVariant70AutoExposeSystemEnvs._(value);
 
   static const false_ = UserEventPayloadVariant70AutoExposeSystemEnvs._(false);
   static const true_ = UserEventPayloadVariant70AutoExposeSystemEnvs._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant70AutoExposeSystemEnvs && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant70AutoExposeSystemEnvs &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `settlementMethod` wire field.
 final class UserEventPayloadVariant73SettlementMethod {
-
   final String value;
 
   const UserEventPayloadVariant73SettlementMethod._(this.value);
 
-  factory UserEventPayloadVariant73SettlementMethod.fromJson(String value) => UserEventPayloadVariant73SettlementMethod._(value);
+  factory UserEventPayloadVariant73SettlementMethod.fromJson(String value) =>
+      UserEventPayloadVariant73SettlementMethod._(value);
 
-  static const creditedPaid = UserEventPayloadVariant73SettlementMethod._('credited-paid');
-  static const creditedPaymentPending = UserEventPayloadVariant73SettlementMethod._('credited-payment-pending');
-  static const refundedPaid = UserEventPayloadVariant73SettlementMethod._('refunded-paid');
-  static const refundedPaymentPending = UserEventPayloadVariant73SettlementMethod._('refunded-payment-pending');
+  static const creditedPaid =
+      UserEventPayloadVariant73SettlementMethod._('credited-paid');
+  static const creditedPaymentPending =
+      UserEventPayloadVariant73SettlementMethod._('credited-payment-pending');
+  static const refundedPaid =
+      UserEventPayloadVariant73SettlementMethod._('refunded-paid');
+  static const refundedPaymentPending =
+      UserEventPayloadVariant73SettlementMethod._('refunded-payment-pending');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant73SettlementMethod && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant73SettlementMethod &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

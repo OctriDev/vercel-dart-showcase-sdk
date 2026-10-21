@@ -7,15 +7,20 @@ part of 'inline.dart';
 class GetSecurityFirewallConfigResponseVersionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled> botIdEnabled;
+  final SdkOptional<GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled>
+      botIdEnabled;
   final List<Map<String, dynamic>> changes;
-  final SdkOptional<List<GetSecurityFirewallConfigResponseVersionsItemConditionsItem>> conditions;
+  final SdkOptional<
+          List<GetSecurityFirewallConfigResponseVersionsItemConditionsItem>>
+      conditions;
   final SdkOptional<GetSecurityFirewallConfigResponseVersionsItemCrs> crs;
-  final GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled firewallEnabled;
+  final GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled
+      firewallEnabled;
   final String id;
   final List<GetSecurityFirewallConfigResponseVersionsItemIpsItem> ips;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<GetSecurityFirewallConfigResponseVersionsItemManagedRules> managedRules;
+  final SdkOptional<GetSecurityFirewallConfigResponseVersionsItemManagedRules>
+      managedRules;
   final String ownerId;
   final String projectKey;
   final List<GetSecurityFirewallConfigResponseVersionsItemRulesItem> rules;
@@ -23,81 +28,233 @@ class GetSecurityFirewallConfigResponseVersionsItem {
   final String updatedAt;
   final double version;
 
-  const GetSecurityFirewallConfigResponseVersionsItem({this.botIdEnabled = const SdkOmitted(), required this.changes, this.conditions = const SdkOmitted(), this.crs = const SdkOmitted(), required this.firewallEnabled, required this.id, required this.ips, this.logHeaders = const SdkOmitted(), this.managedRules = const SdkOmitted(), required this.ownerId, required this.projectKey, required this.rules, this.rulesets = const SdkOmitted(), required this.updatedAt, required this.version});
+  const GetSecurityFirewallConfigResponseVersionsItem(
+      {this.botIdEnabled = const SdkOmitted(),
+      required this.changes,
+      this.conditions = const SdkOmitted(),
+      this.crs = const SdkOmitted(),
+      required this.firewallEnabled,
+      required this.id,
+      required this.ips,
+      this.logHeaders = const SdkOmitted(),
+      this.managedRules = const SdkOmitted(),
+      required this.ownerId,
+      required this.projectKey,
+      required this.rules,
+      this.rulesets = const SdkOmitted(),
+      required this.updatedAt,
+      required this.version});
 
-  GetSecurityFirewallConfigResponseVersionsItem Function({SdkOptional<GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled> botIdEnabled, List<Map<String, dynamic>> changes, SdkOptional<List<GetSecurityFirewallConfigResponseVersionsItemConditionsItem>> conditions, SdkOptional<GetSecurityFirewallConfigResponseVersionsItemCrs> crs, GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled firewallEnabled, String id, List<GetSecurityFirewallConfigResponseVersionsItemIpsItem> ips, SdkOptional<dynamic> logHeaders, SdkOptional<GetSecurityFirewallConfigResponseVersionsItemManagedRules> managedRules, String ownerId, String projectKey, List<GetSecurityFirewallConfigResponseVersionsItemRulesItem> rules, SdkOptional<dynamic> rulesets, String updatedAt, double version}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseVersionsItem Function(
+      {SdkOptional<GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled>
+          botIdEnabled,
+      List<Map<String, dynamic>> changes,
+      SdkOptional<
+              List<GetSecurityFirewallConfigResponseVersionsItemConditionsItem>>
+          conditions,
+      SdkOptional<GetSecurityFirewallConfigResponseVersionsItemCrs> crs,
+      GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled
+          firewallEnabled,
+      String id,
+      List<GetSecurityFirewallConfigResponseVersionsItemIpsItem> ips,
+      SdkOptional<dynamic> logHeaders,
+      SdkOptional<GetSecurityFirewallConfigResponseVersionsItemManagedRules>
+          managedRules,
+      String ownerId,
+      String projectKey,
+      List<GetSecurityFirewallConfigResponseVersionsItemRulesItem> rules,
+      SdkOptional<dynamic> rulesets,
+      String updatedAt,
+      double version}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseVersionsItem _copyWith({Object? botIdEnabled = sdkOmittedValue, Object? changes = sdkOmittedValue, Object? conditions = sdkOmittedValue, Object? crs = sdkOmittedValue, Object? firewallEnabled = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ips = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? managedRules = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectKey = sdkOmittedValue, Object? rules = sdkOmittedValue, Object? rulesets = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? version = sdkOmittedValue}) => GetSecurityFirewallConfigResponseVersionsItem(
-    botIdEnabled: identical(botIdEnabled, sdkOmittedValue) ? this.botIdEnabled : botIdEnabled as SdkOptional<GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled>,
-    changes: identical(changes, sdkOmittedValue) ? this.changes : changes as List<Map<String, dynamic>>,
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as SdkOptional<List<GetSecurityFirewallConfigResponseVersionsItemConditionsItem>>,
-    crs: identical(crs, sdkOmittedValue) ? this.crs : crs as SdkOptional<GetSecurityFirewallConfigResponseVersionsItemCrs>,
-    firewallEnabled: identical(firewallEnabled, sdkOmittedValue) ? this.firewallEnabled : firewallEnabled as GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    ips: identical(ips, sdkOmittedValue) ? this.ips : ips as List<GetSecurityFirewallConfigResponseVersionsItemIpsItem>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
-    managedRules: identical(managedRules, sdkOmittedValue) ? this.managedRules : managedRules as SdkOptional<GetSecurityFirewallConfigResponseVersionsItemManagedRules>,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    projectKey: identical(projectKey, sdkOmittedValue) ? this.projectKey : projectKey as String,
-    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as List<GetSecurityFirewallConfigResponseVersionsItemRulesItem>,
-    rulesets: identical(rulesets, sdkOmittedValue) ? this.rulesets : rulesets as SdkOptional<dynamic>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-    version: identical(version, sdkOmittedValue) ? this.version : version as double,
-  );
+  GetSecurityFirewallConfigResponseVersionsItem _copyWith(
+          {Object? botIdEnabled = sdkOmittedValue,
+          Object? changes = sdkOmittedValue,
+          Object? conditions = sdkOmittedValue,
+          Object? crs = sdkOmittedValue,
+          Object? firewallEnabled = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? ips = sdkOmittedValue,
+          Object? logHeaders = sdkOmittedValue,
+          Object? managedRules = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectKey = sdkOmittedValue,
+          Object? rules = sdkOmittedValue,
+          Object? rulesets = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? version = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponseVersionsItem(
+        botIdEnabled: identical(botIdEnabled, sdkOmittedValue)
+            ? this.botIdEnabled
+            : botIdEnabled as SdkOptional<
+                GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled>,
+        changes: identical(changes, sdkOmittedValue)
+            ? this.changes
+            : changes as List<Map<String, dynamic>>,
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as SdkOptional<
+                List<
+                    GetSecurityFirewallConfigResponseVersionsItemConditionsItem>>,
+        crs: identical(crs, sdkOmittedValue)
+            ? this.crs
+            : crs as SdkOptional<
+                GetSecurityFirewallConfigResponseVersionsItemCrs>,
+        firewallEnabled: identical(firewallEnabled, sdkOmittedValue)
+            ? this.firewallEnabled
+            : firewallEnabled
+                as GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        ips: identical(ips, sdkOmittedValue)
+            ? this.ips
+            : ips as List<GetSecurityFirewallConfigResponseVersionsItemIpsItem>,
+        logHeaders: identical(logHeaders, sdkOmittedValue)
+            ? this.logHeaders
+            : logHeaders as SdkOptional<dynamic>,
+        managedRules: identical(managedRules, sdkOmittedValue)
+            ? this.managedRules
+            : managedRules as SdkOptional<
+                GetSecurityFirewallConfigResponseVersionsItemManagedRules>,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        projectKey: identical(projectKey, sdkOmittedValue)
+            ? this.projectKey
+            : projectKey as String,
+        rules: identical(rules, sdkOmittedValue)
+            ? this.rules
+            : rules
+                as List<GetSecurityFirewallConfigResponseVersionsItemRulesItem>,
+        rulesets: identical(rulesets, sdkOmittedValue)
+            ? this.rulesets
+            : rulesets as SdkOptional<dynamic>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as double,
+      );
 
-  factory GetSecurityFirewallConfigResponseVersionsItem.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseVersionsItem(
-    botIdEnabled: json['botIdEnabled'] != null ? SdkPresent((json['botIdEnabled'] != null ? GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled.fromJson(json['botIdEnabled'] as bool) : null)!) : const SdkOmitted(),
-    changes: ((json['changes'] as List?)?.map((e) => e as Map<String, dynamic>).toList())!,
-    conditions: json['conditions'] != null ? SdkPresent(((json['conditions'] as List?)?.map((e) => GetSecurityFirewallConfigResponseVersionsItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    crs: json['crs'] != null ? SdkPresent((json['crs'] != null ? GetSecurityFirewallConfigResponseVersionsItemCrs.fromJson(json['crs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    firewallEnabled: (json['firewallEnabled'] != null ? GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled.fromJson(json['firewallEnabled'] as bool) : null)!,
-    id: (json['id'] as String?)!,
-    ips: ((json['ips'] as List?)?.map((e) => GetSecurityFirewallConfigResponseVersionsItemIpsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
-    managedRules: json['managedRules'] != null ? SdkPresent((json['managedRules'] != null ? GetSecurityFirewallConfigResponseVersionsItemManagedRules.fromJson(json['managedRules'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    ownerId: (json['ownerId'] as String?)!,
-    projectKey: (json['projectKey'] as String?)!,
-    rules: ((json['rules'] as List?)?.map((e) => GetSecurityFirewallConfigResponseVersionsItemRulesItem.fromJson(e)).toList())!,
-    rulesets: json['rulesets'] != null ? SdkPresent((json['rulesets'])!) : const SdkOmitted(),
-    updatedAt: (json['updatedAt'] as String?)!,
-    version: ((json['version'] as num?)?.toDouble())!,
-  );
+  factory GetSecurityFirewallConfigResponseVersionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponseVersionsItem(
+        botIdEnabled: json['botIdEnabled'] != null
+            ? SdkPresent((json['botIdEnabled'] != null
+                ? GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled
+                    .fromJson(json['botIdEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        changes: ((json['changes'] as List?)
+            ?.map((e) => e as Map<String, dynamic>)
+            .toList())!,
+        conditions: json['conditions'] != null
+            ? SdkPresent(((json['conditions'] as List?)
+                ?.map((e) =>
+                    GetSecurityFirewallConfigResponseVersionsItemConditionsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        crs: json['crs'] != null
+            ? SdkPresent((json['crs'] != null
+                ? GetSecurityFirewallConfigResponseVersionsItemCrs.fromJson(
+                    json['crs'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        firewallEnabled: (json['firewallEnabled'] != null
+            ? GetSecurityFirewallConfigResponseVersionsItemFirewallEnabled
+                .fromJson(json['firewallEnabled'] as bool)
+            : null)!,
+        id: (json['id'] as String?)!,
+        ips: ((json['ips'] as List?)
+            ?.map((e) =>
+                GetSecurityFirewallConfigResponseVersionsItemIpsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        logHeaders: json['logHeaders'] != null
+            ? SdkPresent((json['logHeaders'])!)
+            : const SdkOmitted(),
+        managedRules: json['managedRules'] != null
+            ? SdkPresent((json['managedRules'] != null
+                ? GetSecurityFirewallConfigResponseVersionsItemManagedRules
+                    .fromJson(json['managedRules'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        ownerId: (json['ownerId'] as String?)!,
+        projectKey: (json['projectKey'] as String?)!,
+        rules: ((json['rules'] as List?)
+            ?.map((e) =>
+                GetSecurityFirewallConfigResponseVersionsItemRulesItem.fromJson(
+                    e))
+            .toList())!,
+        rulesets: json['rulesets'] != null
+            ? SdkPresent((json['rulesets'])!)
+            : const SdkOmitted(),
+        updatedAt: (json['updatedAt'] as String?)!,
+        version: ((json['version'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (botIdEnabled) {
-      SdkPresent<GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled>(value: final value) => {'botIdEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'changes': changes,
-    ...switch (conditions) {
-      SdkPresent<List<GetSecurityFirewallConfigResponseVersionsItemConditionsItem>>(value: final value) => {'conditions': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (crs) {
-      SdkPresent<GetSecurityFirewallConfigResponseVersionsItemCrs>(value: final value) => {'crs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'firewallEnabled': firewallEnabled.toJson(),
-    'id': id,
-    'ips': ips.map((item) => item.toJson()).toList(),
-    ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (managedRules) {
-      SdkPresent<GetSecurityFirewallConfigResponseVersionsItemManagedRules>(value: final value) => {'managedRules': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'ownerId': ownerId,
-    'projectKey': projectKey,
-    'rules': rules.map((item) => item.toJson()).toList(),
-    ...switch (rulesets) {
-      SdkPresent<dynamic>(value: final value) => {'rulesets': value,},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-    'version': version,
-  };
+        ...switch (botIdEnabled) {
+          SdkPresent<GetSecurityFirewallConfigResponseVersionsItemBotIdEnabled>(
+            value: final value
+          ) =>
+            {
+              'botIdEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'changes': changes,
+        ...switch (conditions) {
+          SdkPresent<
+                List<
+                    GetSecurityFirewallConfigResponseVersionsItemConditionsItem>>(
+            value: final value
+          ) =>
+            {
+              'conditions': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (crs) {
+          SdkPresent<GetSecurityFirewallConfigResponseVersionsItemCrs>(
+            value: final value
+          ) =>
+            {
+              'crs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'firewallEnabled': firewallEnabled.toJson(),
+        'id': id,
+        'ips': ips.map((item) => item.toJson()).toList(),
+        ...switch (logHeaders) {
+          SdkPresent<dynamic>(value: final value) => {
+              'logHeaders': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (managedRules) {
+          SdkPresent<GetSecurityFirewallConfigResponseVersionsItemManagedRules>(
+            value: final value
+          ) =>
+            {
+              'managedRules': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ownerId': ownerId,
+        'projectKey': projectKey,
+        'rules': rules.map((item) => item.toJson()).toList(),
+        ...switch (rulesets) {
+          SdkPresent<dynamic>(value: final value) => {
+              'rulesets': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+        'version': version,
+      };
 }
 
 class GetSecurityFirewallConfigResponse {
@@ -107,27 +264,59 @@ class GetSecurityFirewallConfigResponse {
   final GetSecurityFirewallConfigResponseDraft? draft;
   final List<GetSecurityFirewallConfigResponseVersionsItem> versions;
 
-  const GetSecurityFirewallConfigResponse({required this.active, required this.draft, required this.versions});
+  const GetSecurityFirewallConfigResponse(
+      {required this.active, required this.draft, required this.versions});
 
-  GetSecurityFirewallConfigResponse Function({GetSecurityFirewallConfigResponseActive? active, GetSecurityFirewallConfigResponseDraft? draft, List<GetSecurityFirewallConfigResponseVersionsItem> versions}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponse Function(
+          {GetSecurityFirewallConfigResponseActive? active,
+          GetSecurityFirewallConfigResponseDraft? draft,
+          List<GetSecurityFirewallConfigResponseVersionsItem> versions})
+      get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponse _copyWith({Object? active = sdkOmittedValue, Object? draft = sdkOmittedValue, Object? versions = sdkOmittedValue}) => GetSecurityFirewallConfigResponse(
-    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActive?,
-    draft: identical(draft, sdkOmittedValue) ? this.draft : draft as GetSecurityFirewallConfigResponseDraft?,
-    versions: identical(versions, sdkOmittedValue) ? this.versions : versions as List<GetSecurityFirewallConfigResponseVersionsItem>,
-  );
+  GetSecurityFirewallConfigResponse _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? draft = sdkOmittedValue,
+          Object? versions = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponse(
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active as GetSecurityFirewallConfigResponseActive?,
+        draft: identical(draft, sdkOmittedValue)
+            ? this.draft
+            : draft as GetSecurityFirewallConfigResponseDraft?,
+        versions: identical(versions, sdkOmittedValue)
+            ? this.versions
+            : versions as List<GetSecurityFirewallConfigResponseVersionsItem>,
+      );
 
-  factory GetSecurityFirewallConfigResponse.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponse(
-    active: json.containsKey('active') ? json['active'] != null ? GetSecurityFirewallConfigResponseActive.fromJson(json['active'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'active', 'Required property is missing'),
-    draft: json.containsKey('draft') ? json['draft'] != null ? GetSecurityFirewallConfigResponseDraft.fromJson(json['draft'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'draft', 'Required property is missing'),
-    versions: ((json['versions'] as List?)?.map((e) => GetSecurityFirewallConfigResponseVersionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory GetSecurityFirewallConfigResponse.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponse(
+        active: json.containsKey('active')
+            ? json['active'] != null
+                ? GetSecurityFirewallConfigResponseActive.fromJson(
+                    json['active'] as Map<String, dynamic>)
+                : null
+            : throw ArgumentError.value(
+                null, 'active', 'Required property is missing'),
+        draft: json.containsKey('draft')
+            ? json['draft'] != null
+                ? GetSecurityFirewallConfigResponseDraft.fromJson(
+                    json['draft'] as Map<String, dynamic>)
+                : null
+            : throw ArgumentError.value(
+                null, 'draft', 'Required property is missing'),
+        versions: ((json['versions'] as List?)
+            ?.map((e) => GetSecurityFirewallConfigResponseVersionsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active?.toJson(),
-    'draft': draft?.toJson(),
-    'versions': versions.map((item) => item.toJson()).toList(),
-  };
+        'active': active?.toJson(),
+        'draft': draft?.toJson(),
+        'versions': versions.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// Scanner Detection - Detect and prevent reconnaissance activities from network scanning tools.
@@ -137,24 +326,38 @@ class PutFirewallConfigRequestBodyCrsSd {
   final bool active;
   final PutFirewallConfigRequestBodyCrsSdAction action;
 
-  const PutFirewallConfigRequestBodyCrsSd({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsSd(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsSd Function({bool active, PutFirewallConfigRequestBodyCrsSdAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsSd Function(
+          {bool active, PutFirewallConfigRequestBodyCrsSdAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsSd _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsSd(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsSdAction,
-  );
+  PutFirewallConfigRequestBodyCrsSd _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsSd(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsSdAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsSd.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsSd(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsSdAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsSd.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsSd(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsSdAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Multipart Attack - Block attempts to bypass security controls using multipart/form-data encoding.
@@ -164,24 +367,38 @@ class PutFirewallConfigRequestBodyCrsMa {
   final bool active;
   final PutFirewallConfigRequestBodyCrsMaAction action;
 
-  const PutFirewallConfigRequestBodyCrsMa({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsMa(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsMa Function({bool active, PutFirewallConfigRequestBodyCrsMaAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsMa Function(
+          {bool active, PutFirewallConfigRequestBodyCrsMaAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsMa _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsMa(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsMaAction,
-  );
+  PutFirewallConfigRequestBodyCrsMa _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsMa(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsMaAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsMa.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsMa(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsMaAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsMa.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsMa(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsMaAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Local File Inclusion Attack - Prevent unauthorized access to local files through web applications.
@@ -191,24 +408,38 @@ class PutFirewallConfigRequestBodyCrsLfi {
   final bool active;
   final PutFirewallConfigRequestBodyCrsLfiAction action;
 
-  const PutFirewallConfigRequestBodyCrsLfi({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsLfi(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsLfi Function({bool active, PutFirewallConfigRequestBodyCrsLfiAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsLfi Function(
+          {bool active, PutFirewallConfigRequestBodyCrsLfiAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsLfi _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsLfi(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsLfiAction,
-  );
+  PutFirewallConfigRequestBodyCrsLfi _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsLfi(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsLfiAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsLfi.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsLfi(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsLfiAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsLfi.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsLfi(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsLfiAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Remote File Inclusion Attack - Prohibit unauthorized upload or execution of remote files.
@@ -218,24 +449,38 @@ class PutFirewallConfigRequestBodyCrsRfi {
   final bool active;
   final PutFirewallConfigRequestBodyCrsRfiAction action;
 
-  const PutFirewallConfigRequestBodyCrsRfi({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsRfi(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsRfi Function({bool active, PutFirewallConfigRequestBodyCrsRfiAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsRfi Function(
+          {bool active, PutFirewallConfigRequestBodyCrsRfiAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsRfi _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsRfi(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsRfiAction,
-  );
+  PutFirewallConfigRequestBodyCrsRfi _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsRfi(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsRfiAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsRfi.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsRfi(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsRfiAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsRfi.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsRfi(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsRfiAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Remote Execution Attack - Prevent unauthorized execution of remote scripts or commands.
@@ -245,24 +490,38 @@ class PutFirewallConfigRequestBodyCrsRce {
   final bool active;
   final PutFirewallConfigRequestBodyCrsRceAction action;
 
-  const PutFirewallConfigRequestBodyCrsRce({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsRce(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsRce Function({bool active, PutFirewallConfigRequestBodyCrsRceAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsRce Function(
+          {bool active, PutFirewallConfigRequestBodyCrsRceAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsRce _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsRce(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsRceAction,
-  );
+  PutFirewallConfigRequestBodyCrsRce _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsRce(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsRceAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsRce.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsRce(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsRceAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsRce.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsRce(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsRceAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// PHP Attack - Safeguard against vulnerability exploits in PHP-based applications.
@@ -272,22 +531,36 @@ class PutFirewallConfigRequestBodyCrsPhp {
   final bool active;
   final PutFirewallConfigRequestBodyCrsPhpAction action;
 
-  const PutFirewallConfigRequestBodyCrsPhp({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsPhp(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsPhp Function({bool active, PutFirewallConfigRequestBodyCrsPhpAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsPhp Function(
+          {bool active, PutFirewallConfigRequestBodyCrsPhpAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsPhp _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsPhp(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsPhpAction,
-  );
+  PutFirewallConfigRequestBodyCrsPhp _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsPhp(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsPhpAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsPhp.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsPhp(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsPhpAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsPhp.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsPhp(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsPhpAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }

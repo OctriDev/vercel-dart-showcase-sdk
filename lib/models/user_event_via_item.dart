@@ -8,163 +8,272 @@ part of 'user.dart';
 class UserEventViaItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `avatar` wire field.
   final String avatar;
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
+
   /// Optional `string` value serialized in the `slug` wire field.
   final SdkOptional<String> slug;
+
   /// Optional enumerated value serialized in the `type` wire field.
   final SdkOptional<UserEventViaItemVariant0Type> type_;
+
   /// Required `string` value serialized in the `uid` wire field.
   final String uid;
+
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventViaItemVariant0({required this.avatar, required this.email, this.slug = const SdkOmitted(), this.type_ = const SdkOmitted(), required this.uid, required this.username});
+  const UserEventViaItemVariant0(
+      {required this.avatar,
+      required this.email,
+      this.slug = const SdkOmitted(),
+      this.type_ = const SdkOmitted(),
+      required this.uid,
+      required this.username});
 
-  UserEventViaItemVariant0 Function({String avatar, String email, SdkOptional<String> slug, SdkOptional<UserEventViaItemVariant0Type> type_, String uid, String username}) get copyWith => _copyWith;
+  UserEventViaItemVariant0 Function(
+      {String avatar,
+      String email,
+      SdkOptional<String> slug,
+      SdkOptional<UserEventViaItemVariant0Type> type_,
+      String uid,
+      String username}) get copyWith => _copyWith;
 
-  UserEventViaItemVariant0 _copyWith({Object? avatar = sdkOmittedValue, Object? email = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventViaItemVariant0(
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as String,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<UserEventViaItemVariant0Type>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  UserEventViaItemVariant0 _copyWith(
+          {Object? avatar = sdkOmittedValue,
+          Object? email = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventViaItemVariant0(
+        avatar:
+            identical(avatar, sdkOmittedValue) ? this.avatar : avatar as String,
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        slug: identical(slug, sdkOmittedValue)
+            ? this.slug
+            : slug as SdkOptional<String>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<UserEventViaItemVariant0Type>,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory UserEventViaItemVariant0.fromJson(Map<String, dynamic> json) => UserEventViaItemVariant0(
-    avatar: (json['avatar'] as String?)!,
-    email: (json['email'] as String?)!,
-    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? UserEventViaItemVariant0Type.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-    uid: (json['uid'] as String?)!,
-    username: (json['username'] as String?)!,
-  );
+  factory UserEventViaItemVariant0.fromJson(Map<String, dynamic> json) =>
+      UserEventViaItemVariant0(
+        avatar: (json['avatar'] as String?)!,
+        email: (json['email'] as String?)!,
+        slug: json['slug'] != null
+            ? SdkPresent((json['slug'] as String?)!)
+            : const SdkOmitted(),
+        type_: json['type'] != null
+            ? SdkPresent((json['type'] != null
+                ? UserEventViaItemVariant0Type.fromJson(json['type'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        uid: (json['uid'] as String?)!,
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'avatar': avatar,
-    'email': email,
-    ...switch (slug) {
-      SdkPresent<String>(value: final value) => {'slug': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (type_) {
-      SdkPresent<UserEventViaItemVariant0Type>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'uid': uid,
-    'username': username,
-  };
+        'avatar': avatar,
+        'email': email,
+        ...switch (slug) {
+          SdkPresent<String>(value: final value) => {
+              'slug': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (type_) {
+          SdkPresent<UserEventViaItemVariant0Type>(value: final value) => {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'uid': uid,
+        'username': username,
+      };
 }
 
 /// Metadata for {@link viaIds}.
 class UserEventViaItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The OAuth 2.0 client ID, which may be a CIMD URL.
   final String clientId;
+
   /// The backing Vercel App ID. When absent, defaults to `clientId`.
   final SdkOptional<String> id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventViaItemVariant1Type type_;
 
-  const UserEventViaItemVariant1({required this.clientId, this.id = const SdkOmitted(), required this.name, required this.type_});
+  const UserEventViaItemVariant1(
+      {required this.clientId,
+      this.id = const SdkOmitted(),
+      required this.name,
+      required this.type_});
 
-  UserEventViaItemVariant1 Function({String clientId, SdkOptional<String> id, String name, UserEventViaItemVariant1Type type_}) get copyWith => _copyWith;
+  UserEventViaItemVariant1 Function(
+      {String clientId,
+      SdkOptional<String> id,
+      String name,
+      UserEventViaItemVariant1Type type_}) get copyWith => _copyWith;
 
-  UserEventViaItemVariant1 _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventViaItemVariant1(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventViaItemVariant1Type,
-  );
+  UserEventViaItemVariant1 _copyWith(
+          {Object? clientId = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UserEventViaItemVariant1(
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as String,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventViaItemVariant1Type,
+      );
 
-  factory UserEventViaItemVariant1.fromJson(Map<String, dynamic> json) => UserEventViaItemVariant1(
-    clientId: (json['clientId'] as String?)!,
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? UserEventViaItemVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UserEventViaItemVariant1.fromJson(Map<String, dynamic> json) =>
+      UserEventViaItemVariant1(
+        clientId: (json['clientId'] as String?)!,
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? UserEventViaItemVariant1Type.fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'clientId': clientId,
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'type': type_.toJson(),
-  };
+        'clientId': clientId,
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'type': type_.toJson(),
+      };
 }
 
 /// Metadata for {@link viaIds}.
 class UserEventViaItemVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `email` wire field.
   final SdkOptional<String> email;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventViaItemVariant2Type type_;
 
-  const UserEventViaItemVariant2({this.email = const SdkOmitted(), required this.id, required this.name, required this.type_});
+  const UserEventViaItemVariant2(
+      {this.email = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      required this.type_});
 
-  UserEventViaItemVariant2 Function({SdkOptional<String> email, String id, String name, UserEventViaItemVariant2Type type_}) get copyWith => _copyWith;
+  UserEventViaItemVariant2 Function(
+      {SdkOptional<String> email,
+      String id,
+      String name,
+      UserEventViaItemVariant2Type type_}) get copyWith => _copyWith;
 
-  UserEventViaItemVariant2 _copyWith({Object? email = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventViaItemVariant2(
-    email: identical(email, sdkOmittedValue) ? this.email : email as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventViaItemVariant2Type,
-  );
+  UserEventViaItemVariant2 _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UserEventViaItemVariant2(
+        email: identical(email, sdkOmittedValue)
+            ? this.email
+            : email as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventViaItemVariant2Type,
+      );
 
-  factory UserEventViaItemVariant2.fromJson(Map<String, dynamic> json) => UserEventViaItemVariant2(
-    email: json['email'] != null ? SdkPresent((json['email'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? UserEventViaItemVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UserEventViaItemVariant2.fromJson(Map<String, dynamic> json) =>
+      UserEventViaItemVariant2(
+        email: json['email'] != null
+            ? SdkPresent((json['email'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? UserEventViaItemVariant2Type.fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (email) {
-      SdkPresent<String>(value: final value) => {'email': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    'type': type_.toJson(),
-  };
+        ...switch (email) {
+          SdkPresent<String>(value: final value) => {
+              'email': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        'type': type_.toJson(),
+      };
 }
 
 /// Metadata for {@link viaIds}.
 class UserEventViaItemVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventViaItemVariant3Type type_;
 
   const UserEventViaItemVariant3({required this.type_});
 
-  UserEventViaItemVariant3 Function({UserEventViaItemVariant3Type type_}) get copyWith => _copyWith;
+  UserEventViaItemVariant3 Function({UserEventViaItemVariant3Type type_})
+      get copyWith => _copyWith;
 
-  UserEventViaItemVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => UserEventViaItemVariant3(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventViaItemVariant3Type,
-  );
+  UserEventViaItemVariant3 _copyWith({Object? type_ = sdkOmittedValue}) =>
+      UserEventViaItemVariant3(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventViaItemVariant3Type,
+      );
 
-  factory UserEventViaItemVariant3.fromJson(Map<String, dynamic> json) => UserEventViaItemVariant3(
-    type_: (json['type'] != null ? UserEventViaItemVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UserEventViaItemVariant3.fromJson(Map<String, dynamic> json) =>
+      UserEventViaItemVariant3(
+        type_: (json['type'] != null
+            ? UserEventViaItemVariant3Type.fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 sealed class UserEventViaItem {
@@ -173,15 +282,47 @@ sealed class UserEventViaItem {
   const UserEventViaItem();
   factory UserEventViaItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UserEventViaItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UserEventViaItemUserEventViaItemVariant0(value); } } catch (_) {}
-      try { final value = UserEventViaItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UserEventViaItemUserEventViaItemVariant1(value); } } catch (_) {}
-      try { final value = UserEventViaItemVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UserEventViaItemUserEventViaItemVariant2(value); } } catch (_) {}
-      try { final value = UserEventViaItemVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UserEventViaItemUserEventViaItemVariant3(value); } } catch (_) {}
+      try {
+        final value = UserEventViaItemVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UserEventViaItemUserEventViaItemVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = UserEventViaItemVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UserEventViaItemUserEventViaItemVariant1(value);
+        }
+      } catch (_) {}
+      try {
+        final value = UserEventViaItemVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UserEventViaItemUserEventViaItemVariant2(value);
+        }
+      } catch (_) {}
+      try {
+        final value = UserEventViaItemVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UserEventViaItemUserEventViaItemVariant3(value);
+        }
+      } catch (_) {}
     }
-    try { return UserEventViaItemUserEventViaItemVariant0(UserEventViaItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UserEventViaItemUserEventViaItemVariant1(UserEventViaItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UserEventViaItemUserEventViaItemVariant2(UserEventViaItemVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UserEventViaItemUserEventViaItemVariant3(UserEventViaItemVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return UserEventViaItemUserEventViaItemVariant0(
+          UserEventViaItemVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UserEventViaItemUserEventViaItemVariant1(
+          UserEventViaItemVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UserEventViaItemUserEventViaItemVariant2(
+          UserEventViaItemVariant2.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UserEventViaItemUserEventViaItemVariant3(
+          UserEventViaItemVariant3.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for UserEventViaItem");
   }
   Object? toJson();
@@ -190,23 +331,27 @@ sealed class UserEventViaItem {
 final class UserEventViaItemUserEventViaItemVariant0 extends UserEventViaItem {
   final UserEventViaItemVariant0 value;
   const UserEventViaItemUserEventViaItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class UserEventViaItemUserEventViaItemVariant1 extends UserEventViaItem {
   final UserEventViaItemVariant1 value;
   const UserEventViaItemUserEventViaItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class UserEventViaItemUserEventViaItemVariant2 extends UserEventViaItem {
   final UserEventViaItemVariant2 value;
   const UserEventViaItemUserEventViaItemVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class UserEventViaItemUserEventViaItemVariant3 extends UserEventViaItem {
   final UserEventViaItemVariant3 value;
   const UserEventViaItemUserEventViaItemVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

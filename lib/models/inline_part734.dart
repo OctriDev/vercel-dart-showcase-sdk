@@ -7,175 +7,393 @@ part of 'inline.dart';
 class CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget target;
+  final CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget
+      target;
   final String url;
 
-  const CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem({required this.target, required this.url});
+  const CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem(
+      {required this.target, required this.url});
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem Function({CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget target, String url}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem Function(
+      {CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget
+          target,
+      String url}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem _copyWith({Object? target = sdkOmittedValue, Object? url = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem(
-    target: identical(target, sdkOmittedValue) ? this.target : target as CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem
+      _copyWith(
+              {Object? target = sdkOmittedValue,
+              Object? url = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem(
+            target: identical(target, sdkOmittedValue)
+                ? this.target
+                : target
+                    as CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget,
+            url: identical(url, sdkOmittedValue) ? this.url : url as String,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem(
-    target: (json['target'] != null ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget.fromJson(json['target'] as String) : null)!,
-    url: (json['url'] as String?)!,
-  );
+  factory CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem(
+        target: (json['target'] != null
+            ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItemTarget
+                .fromJson(json['target'] as String)
+            : null)!,
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'target': target.toJson(),
-    'url': url,
-  };
+        'target': target.toJson(),
+        'url': url,
+      };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<List<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>> appUrls;
+  final SdkOptional<
+          List<
+              CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>>
+      appUrls;
 
-  const CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication({this.appUrls = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication(
+      {this.appUrls = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication Function({SdkOptional<List<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>> appUrls}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication Function(
+      {SdkOptional<
+              List<
+                  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>>
+          appUrls}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication _copyWith({Object? appUrls = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication(
-    appUrls: identical(appUrls, sdkOmittedValue) ? this.appUrls : appUrls as SdkOptional<List<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>>,
-  );
+  CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication
+      _copyWith({Object? appUrls = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication(
+            appUrls: identical(appUrls, sdkOmittedValue)
+                ? this.appUrls
+                : appUrls as SdkOptional<
+                    List<
+                        CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>>,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication(
-    appUrls: json['appUrls'] != null ? SdkPresent(((json['appUrls'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication.fromJson(
+          Map<String, dynamic> json) =>
+      CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication(
+        appUrls: json['appUrls'] != null
+            ? SdkPresent(((json['appUrls'] as List?)
+                ?.map((e) =>
+                    CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (appUrls) {
-      SdkPresent<List<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>>(value: final value) => {'appUrls': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (appUrls) {
+          SdkPresent<
+                List<
+                    CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlsItem>>(
+            value: final value
+          ) =>
+            {
+              'appUrls': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> edgeConfigId;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled> edgeConfigSyncingEnabled;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled>
+      edgeConfigSyncingEnabled;
   final SdkOptional<String> edgeConfigTokenId;
   final SdkOptional<String> globalConfigId;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled> globalConfigSyncingEnabled;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled>
+      globalConfigSyncingEnabled;
 
-  const CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation({this.edgeConfigId = const SdkOmitted(), this.edgeConfigSyncingEnabled = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.globalConfigId = const SdkOmitted(), this.globalConfigSyncingEnabled = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation(
+      {this.edgeConfigId = const SdkOmitted(),
+      this.edgeConfigSyncingEnabled = const SdkOmitted(),
+      this.edgeConfigTokenId = const SdkOmitted(),
+      this.globalConfigId = const SdkOmitted(),
+      this.globalConfigSyncingEnabled = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation Function({SdkOptional<String> edgeConfigId, SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled> edgeConfigSyncingEnabled, SdkOptional<String> edgeConfigTokenId, SdkOptional<String> globalConfigId, SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled> globalConfigSyncingEnabled}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation Function(
+      {SdkOptional<String> edgeConfigId,
+      SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled>
+          edgeConfigSyncingEnabled,
+      SdkOptional<String> edgeConfigTokenId,
+      SdkOptional<String> globalConfigId,
+      SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled>
+          globalConfigSyncingEnabled}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation _copyWith({Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigSyncingEnabled = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? globalConfigId = sdkOmittedValue, Object? globalConfigSyncingEnabled = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation(
-    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String>,
-    edgeConfigSyncingEnabled: identical(edgeConfigSyncingEnabled, sdkOmittedValue) ? this.edgeConfigSyncingEnabled : edgeConfigSyncingEnabled as SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled>,
-    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String>,
-    globalConfigId: identical(globalConfigId, sdkOmittedValue) ? this.globalConfigId : globalConfigId as SdkOptional<String>,
-    globalConfigSyncingEnabled: identical(globalConfigSyncingEnabled, sdkOmittedValue) ? this.globalConfigSyncingEnabled : globalConfigSyncingEnabled as SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled>,
-  );
+  CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation
+      _copyWith(
+              {Object? edgeConfigId = sdkOmittedValue,
+              Object? edgeConfigSyncingEnabled = sdkOmittedValue,
+              Object? edgeConfigTokenId = sdkOmittedValue,
+              Object? globalConfigId = sdkOmittedValue,
+              Object? globalConfigSyncingEnabled = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation(
+            edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
+                ? this.edgeConfigId
+                : edgeConfigId as SdkOptional<String>,
+            edgeConfigSyncingEnabled: identical(
+                    edgeConfigSyncingEnabled, sdkOmittedValue)
+                ? this.edgeConfigSyncingEnabled
+                : edgeConfigSyncingEnabled as SdkOptional<
+                    CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled>,
+            edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
+                ? this.edgeConfigTokenId
+                : edgeConfigTokenId as SdkOptional<String>,
+            globalConfigId: identical(globalConfigId, sdkOmittedValue)
+                ? this.globalConfigId
+                : globalConfigId as SdkOptional<String>,
+            globalConfigSyncingEnabled: identical(
+                    globalConfigSyncingEnabled, sdkOmittedValue)
+                ? this.globalConfigSyncingEnabled
+                : globalConfigSyncingEnabled as SdkOptional<
+                    CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled>,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation(
-    edgeConfigId: json['edgeConfigId'] != null ? SdkPresent((json['edgeConfigId'] as String?)!) : const SdkOmitted(),
-    edgeConfigSyncingEnabled: json['edgeConfigSyncingEnabled'] != null ? SdkPresent((json['edgeConfigSyncingEnabled'] != null ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled.fromJson(json['edgeConfigSyncingEnabled'] as bool) : null)!) : const SdkOmitted(),
-    edgeConfigTokenId: json['edgeConfigTokenId'] != null ? SdkPresent((json['edgeConfigTokenId'] as String?)!) : const SdkOmitted(),
-    globalConfigId: json['globalConfigId'] != null ? SdkPresent((json['globalConfigId'] as String?)!) : const SdkOmitted(),
-    globalConfigSyncingEnabled: json['globalConfigSyncingEnabled'] != null ? SdkPresent((json['globalConfigSyncingEnabled'] != null ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled.fromJson(json['globalConfigSyncingEnabled'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation.fromJson(
+          Map<String, dynamic> json) =>
+      CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation(
+        edgeConfigId: json['edgeConfigId'] != null
+            ? SdkPresent((json['edgeConfigId'] as String?)!)
+            : const SdkOmitted(),
+        edgeConfigSyncingEnabled: json['edgeConfigSyncingEnabled'] != null
+            ? SdkPresent((json['edgeConfigSyncingEnabled'] != null
+                ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled
+                    .fromJson(json['edgeConfigSyncingEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        edgeConfigTokenId: json['edgeConfigTokenId'] != null
+            ? SdkPresent((json['edgeConfigTokenId'] as String?)!)
+            : const SdkOmitted(),
+        globalConfigId: json['globalConfigId'] != null
+            ? SdkPresent((json['globalConfigId'] as String?)!)
+            : const SdkOmitted(),
+        globalConfigSyncingEnabled: json['globalConfigSyncingEnabled'] != null
+            ? SdkPresent((json['globalConfigSyncingEnabled'] != null
+                ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled
+                    .fromJson(json['globalConfigSyncingEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (edgeConfigId) {
-      SdkPresent<String>(value: final value) => {'edgeConfigId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigSyncingEnabled) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled>(value: final value) => {'edgeConfigSyncingEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigTokenId) {
-      SdkPresent<String>(value: final value) => {'edgeConfigTokenId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (globalConfigId) {
-      SdkPresent<String>(value: final value) => {'globalConfigId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (globalConfigSyncingEnabled) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled>(value: final value) => {'globalConfigSyncingEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (edgeConfigId) {
+          SdkPresent<String>(value: final value) => {
+              'edgeConfigId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigSyncingEnabled) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationEdgeConfigSyncingEnabled>(
+            value: final value
+          ) =>
+            {
+              'edgeConfigSyncingEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigTokenId) {
+          SdkPresent<String>(value: final value) => {
+              'edgeConfigTokenId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (globalConfigId) {
+          SdkPresent<String>(value: final value) => {
+              'globalConfigId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (globalConfigSyncingEnabled) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentationGlobalConfigSyncingEnabled>(
+            value: final value
+          ) =>
+            {
+              'globalConfigSyncingEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProtocolSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication> authentication;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation> experimentation;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication>
+      authentication;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation>
+      experimentation;
 
-  const CreateIntegrationStoreDirectResponseStoreProtocolSettings({this.authentication = const SdkOmitted(), this.experimentation = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreProtocolSettings(
+      {this.authentication = const SdkOmitted(),
+      this.experimentation = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettings Function({SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication> authentication, SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation> experimentation}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProtocolSettings Function(
+      {SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication>
+          authentication,
+      SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation>
+          experimentation}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProtocolSettings _copyWith({Object? authentication = sdkOmittedValue, Object? experimentation = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProtocolSettings(
-    authentication: identical(authentication, sdkOmittedValue) ? this.authentication : authentication as SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication>,
-    experimentation: identical(experimentation, sdkOmittedValue) ? this.experimentation : experimentation as SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation>,
-  );
+  CreateIntegrationStoreDirectResponseStoreProtocolSettings _copyWith(
+          {Object? authentication = sdkOmittedValue,
+          Object? experimentation = sdkOmittedValue}) =>
+      CreateIntegrationStoreDirectResponseStoreProtocolSettings(
+        authentication: identical(authentication, sdkOmittedValue)
+            ? this.authentication
+            : authentication as SdkOptional<
+                CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication>,
+        experimentation: identical(experimentation, sdkOmittedValue)
+            ? this.experimentation
+            : experimentation as SdkOptional<
+                CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation>,
+      );
 
-  factory CreateIntegrationStoreDirectResponseStoreProtocolSettings.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProtocolSettings(
-    authentication: json['authentication'] != null ? SdkPresent((json['authentication'] != null ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication.fromJson(json['authentication'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    experimentation: json['experimentation'] != null ? SdkPresent((json['experimentation'] != null ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation.fromJson(json['experimentation'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory CreateIntegrationStoreDirectResponseStoreProtocolSettings.fromJson(
+          Map<String, dynamic> json) =>
+      CreateIntegrationStoreDirectResponseStoreProtocolSettings(
+        authentication: json['authentication'] != null
+            ? SdkPresent((json['authentication'] != null
+                ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication
+                    .fromJson(json['authentication'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        experimentation: json['experimentation'] != null
+            ? SdkPresent((json['experimentation'] != null
+                ? CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation
+                    .fromJson(json['experimentation'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (authentication) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication>(value: final value) => {'authentication': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (experimentation) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation>(value: final value) => {'experimentation': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (authentication) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication>(
+            value: final value
+          ) =>
+            {
+              'authentication': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (experimentation) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation>(
+            value: final value
+          ) =>
+            {
+              'experimentation': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateIntegrationStoreDirectResponseStoreSecretsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable> frameworkPublishable;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>
+      frameworkPublishable;
   final double length;
   final String name;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive> nonSensitive;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>
+      nonSensitive;
 
-  const CreateIntegrationStoreDirectResponseStoreSecretsItem({this.frameworkPublishable = const SdkOmitted(), required this.length, required this.name, this.nonSensitive = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreSecretsItem(
+      {this.frameworkPublishable = const SdkOmitted(),
+      required this.length,
+      required this.name,
+      this.nonSensitive = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreSecretsItem Function({SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable> frameworkPublishable, double length, String name, SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive> nonSensitive}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreSecretsItem Function(
+      {SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>
+          frameworkPublishable,
+      double length,
+      String name,
+      SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>
+          nonSensitive}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreSecretsItem _copyWith({Object? frameworkPublishable = sdkOmittedValue, Object? length = sdkOmittedValue, Object? name = sdkOmittedValue, Object? nonSensitive = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreSecretsItem(
-    frameworkPublishable: identical(frameworkPublishable, sdkOmittedValue) ? this.frameworkPublishable : frameworkPublishable as SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>,
-    length: identical(length, sdkOmittedValue) ? this.length : length as double,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    nonSensitive: identical(nonSensitive, sdkOmittedValue) ? this.nonSensitive : nonSensitive as SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>,
-  );
+  CreateIntegrationStoreDirectResponseStoreSecretsItem _copyWith(
+          {Object? frameworkPublishable = sdkOmittedValue,
+          Object? length = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? nonSensitive = sdkOmittedValue}) =>
+      CreateIntegrationStoreDirectResponseStoreSecretsItem(
+        frameworkPublishable: identical(frameworkPublishable, sdkOmittedValue)
+            ? this.frameworkPublishable
+            : frameworkPublishable as SdkOptional<
+                CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>,
+        length:
+            identical(length, sdkOmittedValue) ? this.length : length as double,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        nonSensitive: identical(nonSensitive, sdkOmittedValue)
+            ? this.nonSensitive
+            : nonSensitive as SdkOptional<
+                CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>,
+      );
 
-  factory CreateIntegrationStoreDirectResponseStoreSecretsItem.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreSecretsItem(
-    frameworkPublishable: json['frameworkPublishable'] != null ? SdkPresent((json['frameworkPublishable'] != null ? CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable.fromJson(json['frameworkPublishable'] as bool) : null)!) : const SdkOmitted(),
-    length: ((json['length'] as num?)?.toDouble())!,
-    name: (json['name'] as String?)!,
-    nonSensitive: json['nonSensitive'] != null ? SdkPresent((json['nonSensitive'] != null ? CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive.fromJson(json['nonSensitive'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory CreateIntegrationStoreDirectResponseStoreSecretsItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateIntegrationStoreDirectResponseStoreSecretsItem(
+        frameworkPublishable: json['frameworkPublishable'] != null
+            ? SdkPresent((json['frameworkPublishable'] != null
+                ? CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable
+                    .fromJson(json['frameworkPublishable'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        length: ((json['length'] as num?)?.toDouble())!,
+        name: (json['name'] as String?)!,
+        nonSensitive: json['nonSensitive'] != null
+            ? SdkPresent((json['nonSensitive'] != null
+                ? CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive
+                    .fromJson(json['nonSensitive'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (frameworkPublishable) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>(value: final value) => {'frameworkPublishable': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'length': length,
-    'name': name,
-    ...switch (nonSensitive) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>(value: final value) => {'nonSensitive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (frameworkPublishable) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>(
+            value: final value
+          ) =>
+            {
+              'frameworkPublishable': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'length': length,
+        'name': name,
+        ...switch (nonSensitive) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>(
+            value: final value
+          ) =>
+            {
+              'nonSensitive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

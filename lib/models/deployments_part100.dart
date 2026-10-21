@@ -11,24 +11,33 @@ class GetDeploymentResponseVariant0AliasError {
   final String code;
   final String message;
 
-  const GetDeploymentResponseVariant0AliasError({required this.code, required this.message});
+  const GetDeploymentResponseVariant0AliasError(
+      {required this.code, required this.message});
 
-  GetDeploymentResponseVariant0AliasError Function({String code, String message}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant0AliasError Function(
+      {String code, String message}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant0AliasError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => GetDeploymentResponseVariant0AliasError(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  GetDeploymentResponseVariant0AliasError _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant0AliasError(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory GetDeploymentResponseVariant0AliasError.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant0AliasError(
-    code: (json['code'] as String?)!,
-    message: (json['message'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant0AliasError.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant0AliasError(
+        code: (json['code'] as String?)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code,
-    'message': message,
-  };
+        'code': code,
+        'message': message,
+      };
 }
 
 class GetDeploymentResponseVariant0AliasWarning {
@@ -39,110 +48,214 @@ class GetDeploymentResponseVariant0AliasWarning {
   final SdkOptional<String> link;
   final String message;
 
-  const GetDeploymentResponseVariant0AliasWarning({this.action = const SdkOmitted(), required this.code, this.link = const SdkOmitted(), required this.message});
+  const GetDeploymentResponseVariant0AliasWarning(
+      {this.action = const SdkOmitted(),
+      required this.code,
+      this.link = const SdkOmitted(),
+      required this.message});
 
-  GetDeploymentResponseVariant0AliasWarning Function({SdkOptional<String> action, String code, SdkOptional<String> link, String message}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant0AliasWarning Function(
+      {SdkOptional<String> action,
+      String code,
+      SdkOptional<String> link,
+      String message}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant0AliasWarning _copyWith({Object? action = sdkOmittedValue, Object? code = sdkOmittedValue, Object? link = sdkOmittedValue, Object? message = sdkOmittedValue}) => GetDeploymentResponseVariant0AliasWarning(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<String>,
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<String>,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  GetDeploymentResponseVariant0AliasWarning _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? link = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant0AliasWarning(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<String>,
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        link: identical(link, sdkOmittedValue)
+            ? this.link
+            : link as SdkOptional<String>,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory GetDeploymentResponseVariant0AliasWarning.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant0AliasWarning(
-    action: json['action'] != null ? SdkPresent((json['action'] as String?)!) : const SdkOmitted(),
-    code: (json['code'] as String?)!,
-    link: json['link'] != null ? SdkPresent((json['link'] as String?)!) : const SdkOmitted(),
-    message: (json['message'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant0AliasWarning.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant0AliasWarning(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] as String?)!)
+            : const SdkOmitted(),
+        code: (json['code'] as String?)!,
+        link: json['link'] != null
+            ? SdkPresent((json['link'] as String?)!)
+            : const SdkOmitted(),
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<String>(value: final value) => {'action': value,},
-      _ => const <String, dynamic>{},
-    },
-    'code': code,
-    ...switch (link) {
-      SdkPresent<String>(value: final value) => {'link': value,},
-      _ => const <String, dynamic>{},
-    },
-    'message': message,
-  };
+        ...switch (action) {
+          SdkPresent<String>(value: final value) => {
+              'action': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'code': code,
+        ...switch (link) {
+          SdkPresent<String>(value: final value) => {
+              'link': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'message': message,
+      };
 }
 
 class GetDeploymentResponseVariant0Duration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Unix timestamp in milliseconds when the build container exited.
   final SdkOptional<double> endTime;
+
   /// Build-container exit Unix timestamp in milliseconds, capped at 45 minutes after `startTime`.
   final SdkOptional<double> endTimeCapped;
+
   /// Unix timestamp in milliseconds when the deployment entered BUILDING.
   final SdkOptional<double> startTime;
+
   /// Billable build-container duration in milliseconds, capped at 45 minutes, rounded up to a whole minute, with a one-minute minimum.
   final SdkOptional<double> timeForBilling;
+
   /// Milliseconds from entering BUILDING until the build container exited, without the billing cap.
   final SdkOptional<double> timeToContainerExit;
+
   /// Build-container duration in milliseconds, capped at 45 minutes and without billing rounding.
   final SdkOptional<double> timeToContainerExitCapped;
+
   /// Milliseconds from entering BUILDING until the deployment reached its current ready state.
   final SdkOptional<double> timeToReady;
 
-  const GetDeploymentResponseVariant0Duration({this.endTime = const SdkOmitted(), this.endTimeCapped = const SdkOmitted(), this.startTime = const SdkOmitted(), this.timeForBilling = const SdkOmitted(), this.timeToContainerExit = const SdkOmitted(), this.timeToContainerExitCapped = const SdkOmitted(), this.timeToReady = const SdkOmitted()});
+  const GetDeploymentResponseVariant0Duration(
+      {this.endTime = const SdkOmitted(),
+      this.endTimeCapped = const SdkOmitted(),
+      this.startTime = const SdkOmitted(),
+      this.timeForBilling = const SdkOmitted(),
+      this.timeToContainerExit = const SdkOmitted(),
+      this.timeToContainerExitCapped = const SdkOmitted(),
+      this.timeToReady = const SdkOmitted()});
 
-  GetDeploymentResponseVariant0Duration Function({SdkOptional<double> endTime, SdkOptional<double> endTimeCapped, SdkOptional<double> startTime, SdkOptional<double> timeForBilling, SdkOptional<double> timeToContainerExit, SdkOptional<double> timeToContainerExitCapped, SdkOptional<double> timeToReady}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant0Duration Function(
+      {SdkOptional<double> endTime,
+      SdkOptional<double> endTimeCapped,
+      SdkOptional<double> startTime,
+      SdkOptional<double> timeForBilling,
+      SdkOptional<double> timeToContainerExit,
+      SdkOptional<double> timeToContainerExitCapped,
+      SdkOptional<double> timeToReady}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant0Duration _copyWith({Object? endTime = sdkOmittedValue, Object? endTimeCapped = sdkOmittedValue, Object? startTime = sdkOmittedValue, Object? timeForBilling = sdkOmittedValue, Object? timeToContainerExit = sdkOmittedValue, Object? timeToContainerExitCapped = sdkOmittedValue, Object? timeToReady = sdkOmittedValue}) => GetDeploymentResponseVariant0Duration(
-    endTime: identical(endTime, sdkOmittedValue) ? this.endTime : endTime as SdkOptional<double>,
-    endTimeCapped: identical(endTimeCapped, sdkOmittedValue) ? this.endTimeCapped : endTimeCapped as SdkOptional<double>,
-    startTime: identical(startTime, sdkOmittedValue) ? this.startTime : startTime as SdkOptional<double>,
-    timeForBilling: identical(timeForBilling, sdkOmittedValue) ? this.timeForBilling : timeForBilling as SdkOptional<double>,
-    timeToContainerExit: identical(timeToContainerExit, sdkOmittedValue) ? this.timeToContainerExit : timeToContainerExit as SdkOptional<double>,
-    timeToContainerExitCapped: identical(timeToContainerExitCapped, sdkOmittedValue) ? this.timeToContainerExitCapped : timeToContainerExitCapped as SdkOptional<double>,
-    timeToReady: identical(timeToReady, sdkOmittedValue) ? this.timeToReady : timeToReady as SdkOptional<double>,
-  );
+  GetDeploymentResponseVariant0Duration _copyWith(
+          {Object? endTime = sdkOmittedValue,
+          Object? endTimeCapped = sdkOmittedValue,
+          Object? startTime = sdkOmittedValue,
+          Object? timeForBilling = sdkOmittedValue,
+          Object? timeToContainerExit = sdkOmittedValue,
+          Object? timeToContainerExitCapped = sdkOmittedValue,
+          Object? timeToReady = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant0Duration(
+        endTime: identical(endTime, sdkOmittedValue)
+            ? this.endTime
+            : endTime as SdkOptional<double>,
+        endTimeCapped: identical(endTimeCapped, sdkOmittedValue)
+            ? this.endTimeCapped
+            : endTimeCapped as SdkOptional<double>,
+        startTime: identical(startTime, sdkOmittedValue)
+            ? this.startTime
+            : startTime as SdkOptional<double>,
+        timeForBilling: identical(timeForBilling, sdkOmittedValue)
+            ? this.timeForBilling
+            : timeForBilling as SdkOptional<double>,
+        timeToContainerExit: identical(timeToContainerExit, sdkOmittedValue)
+            ? this.timeToContainerExit
+            : timeToContainerExit as SdkOptional<double>,
+        timeToContainerExitCapped:
+            identical(timeToContainerExitCapped, sdkOmittedValue)
+                ? this.timeToContainerExitCapped
+                : timeToContainerExitCapped as SdkOptional<double>,
+        timeToReady: identical(timeToReady, sdkOmittedValue)
+            ? this.timeToReady
+            : timeToReady as SdkOptional<double>,
+      );
 
-  factory GetDeploymentResponseVariant0Duration.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant0Duration(
-    endTime: json['endTime'] != null ? SdkPresent(((json['endTime'] as num?)?.toDouble())!) : const SdkOmitted(),
-    endTimeCapped: json['endTimeCapped'] != null ? SdkPresent(((json['endTimeCapped'] as num?)?.toDouble())!) : const SdkOmitted(),
-    startTime: json['startTime'] != null ? SdkPresent(((json['startTime'] as num?)?.toDouble())!) : const SdkOmitted(),
-    timeForBilling: json['timeForBilling'] != null ? SdkPresent(((json['timeForBilling'] as num?)?.toDouble())!) : const SdkOmitted(),
-    timeToContainerExit: json['timeToContainerExit'] != null ? SdkPresent(((json['timeToContainerExit'] as num?)?.toDouble())!) : const SdkOmitted(),
-    timeToContainerExitCapped: json['timeToContainerExitCapped'] != null ? SdkPresent(((json['timeToContainerExitCapped'] as num?)?.toDouble())!) : const SdkOmitted(),
-    timeToReady: json['timeToReady'] != null ? SdkPresent(((json['timeToReady'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory GetDeploymentResponseVariant0Duration.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant0Duration(
+        endTime: json['endTime'] != null
+            ? SdkPresent(((json['endTime'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        endTimeCapped: json['endTimeCapped'] != null
+            ? SdkPresent(((json['endTimeCapped'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        startTime: json['startTime'] != null
+            ? SdkPresent(((json['startTime'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        timeForBilling: json['timeForBilling'] != null
+            ? SdkPresent(((json['timeForBilling'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        timeToContainerExit: json['timeToContainerExit'] != null
+            ? SdkPresent(((json['timeToContainerExit'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        timeToContainerExitCapped: json['timeToContainerExitCapped'] != null
+            ? SdkPresent(
+                ((json['timeToContainerExitCapped'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        timeToReady: json['timeToReady'] != null
+            ? SdkPresent(((json['timeToReady'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (endTime) {
-      SdkPresent<double>(value: final value) => {'endTime': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (endTimeCapped) {
-      SdkPresent<double>(value: final value) => {'endTimeCapped': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (startTime) {
-      SdkPresent<double>(value: final value) => {'startTime': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeForBilling) {
-      SdkPresent<double>(value: final value) => {'timeForBilling': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeToContainerExit) {
-      SdkPresent<double>(value: final value) => {'timeToContainerExit': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeToContainerExitCapped) {
-      SdkPresent<double>(value: final value) => {'timeToContainerExitCapped': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeToReady) {
-      SdkPresent<double>(value: final value) => {'timeToReady': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (endTime) {
+          SdkPresent<double>(value: final value) => {
+              'endTime': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (endTimeCapped) {
+          SdkPresent<double>(value: final value) => {
+              'endTimeCapped': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (startTime) {
+          SdkPresent<double>(value: final value) => {
+              'startTime': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeForBilling) {
+          SdkPresent<double>(value: final value) => {
+              'timeForBilling': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeToContainerExit) {
+          SdkPresent<double>(value: final value) => {
+              'timeToContainerExit': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeToContainerExitCapped) {
+          SdkPresent<double>(value: final value) => {
+              'timeToContainerExitCapped': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeToReady) {
+          SdkPresent<double>(value: final value) => {
+              'timeToReady': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Returns the reduced deployment view for anonymous (`vcn_`) callers. Pool-team details are withheld.
@@ -151,79 +264,188 @@ class GetDeploymentResponseVariant0 {
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> alias;
   final GetDeploymentResponseVariant0AliasAssigned aliasAssigned;
+
   /// An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`
   final SdkOptional<GetDeploymentResponseVariant0AliasError?> aliasError;
   final SdkOptional<GetDeploymentResponseVariant0AliasWarning?> aliasWarning;
   final GetDeploymentResponseVariant0Duration duration;
   final SdkOptional<String> errorCode;
   final SdkOptional<String?> errorMessage;
+
   /// A string holding the unique ID of the deployment
   final String id;
+
   /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state
   final GetDeploymentResponseVariant0ReadyState readyState;
+
   /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.
   final SdkOptional<GetDeploymentResponseVariant0Target?> target;
 
-  const GetDeploymentResponseVariant0({this.alias = const SdkOmitted(), required this.aliasAssigned, this.aliasError = const SdkOmitted(), this.aliasWarning = const SdkOmitted(), required this.duration, this.errorCode = const SdkOmitted(), this.errorMessage = const SdkOmitted(), required this.id, required this.readyState, this.target = const SdkOmitted()});
+  const GetDeploymentResponseVariant0(
+      {this.alias = const SdkOmitted(),
+      required this.aliasAssigned,
+      this.aliasError = const SdkOmitted(),
+      this.aliasWarning = const SdkOmitted(),
+      required this.duration,
+      this.errorCode = const SdkOmitted(),
+      this.errorMessage = const SdkOmitted(),
+      required this.id,
+      required this.readyState,
+      this.target = const SdkOmitted()});
 
-  GetDeploymentResponseVariant0 Function({SdkOptional<List<String>> alias, GetDeploymentResponseVariant0AliasAssigned aliasAssigned, SdkOptional<GetDeploymentResponseVariant0AliasError?> aliasError, SdkOptional<GetDeploymentResponseVariant0AliasWarning?> aliasWarning, GetDeploymentResponseVariant0Duration duration, SdkOptional<String> errorCode, SdkOptional<String?> errorMessage, String id, GetDeploymentResponseVariant0ReadyState readyState, SdkOptional<GetDeploymentResponseVariant0Target?> target}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant0 Function(
+          {SdkOptional<List<String>> alias,
+          GetDeploymentResponseVariant0AliasAssigned aliasAssigned,
+          SdkOptional<GetDeploymentResponseVariant0AliasError?> aliasError,
+          SdkOptional<GetDeploymentResponseVariant0AliasWarning?> aliasWarning,
+          GetDeploymentResponseVariant0Duration duration,
+          SdkOptional<String> errorCode,
+          SdkOptional<String?> errorMessage,
+          String id,
+          GetDeploymentResponseVariant0ReadyState readyState,
+          SdkOptional<GetDeploymentResponseVariant0Target?> target})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant0 _copyWith({Object? alias = sdkOmittedValue, Object? aliasAssigned = sdkOmittedValue, Object? aliasError = sdkOmittedValue, Object? aliasWarning = sdkOmittedValue, Object? duration = sdkOmittedValue, Object? errorCode = sdkOmittedValue, Object? errorMessage = sdkOmittedValue, Object? id = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? target = sdkOmittedValue}) => GetDeploymentResponseVariant0(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<List<String>>,
-    aliasAssigned: identical(aliasAssigned, sdkOmittedValue) ? this.aliasAssigned : aliasAssigned as GetDeploymentResponseVariant0AliasAssigned,
-    aliasError: identical(aliasError, sdkOmittedValue) ? this.aliasError : aliasError as SdkOptional<GetDeploymentResponseVariant0AliasError?>,
-    aliasWarning: identical(aliasWarning, sdkOmittedValue) ? this.aliasWarning : aliasWarning as SdkOptional<GetDeploymentResponseVariant0AliasWarning?>,
-    duration: identical(duration, sdkOmittedValue) ? this.duration : duration as GetDeploymentResponseVariant0Duration,
-    errorCode: identical(errorCode, sdkOmittedValue) ? this.errorCode : errorCode as SdkOptional<String>,
-    errorMessage: identical(errorMessage, sdkOmittedValue) ? this.errorMessage : errorMessage as SdkOptional<String?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as GetDeploymentResponseVariant0ReadyState,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<GetDeploymentResponseVariant0Target?>,
-  );
+  GetDeploymentResponseVariant0 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? aliasAssigned = sdkOmittedValue,
+          Object? aliasError = sdkOmittedValue,
+          Object? aliasWarning = sdkOmittedValue,
+          Object? duration = sdkOmittedValue,
+          Object? errorCode = sdkOmittedValue,
+          Object? errorMessage = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? readyState = sdkOmittedValue,
+          Object? target = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant0(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<List<String>>,
+        aliasAssigned: identical(aliasAssigned, sdkOmittedValue)
+            ? this.aliasAssigned
+            : aliasAssigned as GetDeploymentResponseVariant0AliasAssigned,
+        aliasError: identical(aliasError, sdkOmittedValue)
+            ? this.aliasError
+            : aliasError
+                as SdkOptional<GetDeploymentResponseVariant0AliasError?>,
+        aliasWarning: identical(aliasWarning, sdkOmittedValue)
+            ? this.aliasWarning
+            : aliasWarning
+                as SdkOptional<GetDeploymentResponseVariant0AliasWarning?>,
+        duration: identical(duration, sdkOmittedValue)
+            ? this.duration
+            : duration as GetDeploymentResponseVariant0Duration,
+        errorCode: identical(errorCode, sdkOmittedValue)
+            ? this.errorCode
+            : errorCode as SdkOptional<String>,
+        errorMessage: identical(errorMessage, sdkOmittedValue)
+            ? this.errorMessage
+            : errorMessage as SdkOptional<String?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        readyState: identical(readyState, sdkOmittedValue)
+            ? this.readyState
+            : readyState as GetDeploymentResponseVariant0ReadyState,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<GetDeploymentResponseVariant0Target?>,
+      );
 
-  factory GetDeploymentResponseVariant0.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant0(
-    alias: json['alias'] != null ? SdkPresent(((json['alias'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    aliasAssigned: (json['aliasAssigned'] != null ? GetDeploymentResponseVariant0AliasAssigned.fromJson(json['aliasAssigned'] as bool) : null)!,
-    aliasError: json.containsKey('aliasError') ? SdkPresent(json['aliasError'] != null ? GetDeploymentResponseVariant0AliasError.fromJson(json['aliasError'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    aliasWarning: json.containsKey('aliasWarning') ? SdkPresent(json['aliasWarning'] != null ? GetDeploymentResponseVariant0AliasWarning.fromJson(json['aliasWarning'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    duration: (json['duration'] != null ? GetDeploymentResponseVariant0Duration.fromJson(json['duration'] as Map<String, dynamic>) : null)!,
-    errorCode: json['errorCode'] != null ? SdkPresent((json['errorCode'] as String?)!) : const SdkOmitted(),
-    errorMessage: json.containsKey('errorMessage') ? SdkPresent(json['errorMessage'] as String?) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    readyState: (json['readyState'] != null ? GetDeploymentResponseVariant0ReadyState.fromJson(json['readyState'] as String) : null)!,
-    target: json.containsKey('target') ? SdkPresent(json['target'] != null ? GetDeploymentResponseVariant0Target.fromJson(json['target'] as String) : null) : const SdkOmitted(),
-  );
+  factory GetDeploymentResponseVariant0.fromJson(Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant0(
+        alias: json['alias'] != null
+            ? SdkPresent(
+                ((json['alias'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        aliasAssigned: (json['aliasAssigned'] != null
+            ? GetDeploymentResponseVariant0AliasAssigned.fromJson(
+                json['aliasAssigned'] as bool)
+            : null)!,
+        aliasError: json.containsKey('aliasError')
+            ? SdkPresent(json['aliasError'] != null
+                ? GetDeploymentResponseVariant0AliasError.fromJson(
+                    json['aliasError'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        aliasWarning: json.containsKey('aliasWarning')
+            ? SdkPresent(json['aliasWarning'] != null
+                ? GetDeploymentResponseVariant0AliasWarning.fromJson(
+                    json['aliasWarning'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        duration: (json['duration'] != null
+            ? GetDeploymentResponseVariant0Duration.fromJson(
+                json['duration'] as Map<String, dynamic>)
+            : null)!,
+        errorCode: json['errorCode'] != null
+            ? SdkPresent((json['errorCode'] as String?)!)
+            : const SdkOmitted(),
+        errorMessage: json.containsKey('errorMessage')
+            ? SdkPresent(json['errorMessage'] as String?)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        readyState: (json['readyState'] != null
+            ? GetDeploymentResponseVariant0ReadyState.fromJson(
+                json['readyState'] as String)
+            : null)!,
+        target: json.containsKey('target')
+            ? SdkPresent(json['target'] != null
+                ? GetDeploymentResponseVariant0Target.fromJson(
+                    json['target'] as String)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<List<String>>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    'aliasAssigned': aliasAssigned.toJson(),
-    ...switch (aliasError) {
-      SdkPresent<GetDeploymentResponseVariant0AliasError?>(value: final value) => {'aliasError': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (aliasWarning) {
-      SdkPresent<GetDeploymentResponseVariant0AliasWarning?>(value: final value) => {'aliasWarning': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'duration': duration.toJson(),
-    ...switch (errorCode) {
-      SdkPresent<String>(value: final value) => {'errorCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (errorMessage) {
-      SdkPresent<String?>(value: final value) => {'errorMessage': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'readyState': readyState.toJson(),
-    ...switch (target) {
-      SdkPresent<GetDeploymentResponseVariant0Target?>(value: final value) => {'target': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<List<String>>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'aliasAssigned': aliasAssigned.toJson(),
+        ...switch (aliasError) {
+          SdkPresent<GetDeploymentResponseVariant0AliasError?>(
+            value: final value
+          ) =>
+            {
+              'aliasError': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (aliasWarning) {
+          SdkPresent<GetDeploymentResponseVariant0AliasWarning?>(
+            value: final value
+          ) =>
+            {
+              'aliasWarning': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'duration': duration.toJson(),
+        ...switch (errorCode) {
+          SdkPresent<String>(value: final value) => {
+              'errorCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (errorMessage) {
+          SdkPresent<String?>(value: final value) => {
+              'errorMessage': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'readyState': readyState.toJson(),
+        ...switch (target) {
+          SdkPresent<GetDeploymentResponseVariant0Target?>(
+            value: final value
+          ) =>
+            {
+              'target': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class GetDeploymentResponseVariant1AliasAssignedAt {
@@ -231,23 +453,36 @@ sealed class GetDeploymentResponseVariant1AliasAssignedAt {
   static const String constructionSurface = 'named';
   const GetDeploymentResponseVariant1AliasAssignedAt();
   factory GetDeploymentResponseVariant1AliasAssignedAt.fromJson(Object? json) {
-    if (json is num) { return GetDeploymentResponseVariant1AliasAssignedAtDouble(json.toDouble()); }
-    try { return GetDeploymentResponseVariant1AliasAssignedAtGetDeploymentResponseVariant1AliasAssignedAtVariant1(GetDeploymentResponseVariant1AliasAssignedAtVariant1.fromJson(json as bool)); } catch (_) {}
-    throw FormatException("No variant matched for GetDeploymentResponseVariant1AliasAssignedAt");
+    if (json is num) {
+      return GetDeploymentResponseVariant1AliasAssignedAtDouble(
+          json.toDouble());
+    }
+    try {
+      return GetDeploymentResponseVariant1AliasAssignedAtGetDeploymentResponseVariant1AliasAssignedAtVariant1(
+          GetDeploymentResponseVariant1AliasAssignedAtVariant1.fromJson(
+              json as bool));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetDeploymentResponseVariant1AliasAssignedAt");
   }
   Object? toJson();
 }
 
-final class GetDeploymentResponseVariant1AliasAssignedAtDouble extends GetDeploymentResponseVariant1AliasAssignedAt {
+final class GetDeploymentResponseVariant1AliasAssignedAtDouble
+    extends GetDeploymentResponseVariant1AliasAssignedAt {
   final double value;
   const GetDeploymentResponseVariant1AliasAssignedAtDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class GetDeploymentResponseVariant1AliasAssignedAtGetDeploymentResponseVariant1AliasAssignedAtVariant1 extends GetDeploymentResponseVariant1AliasAssignedAt {
+final class GetDeploymentResponseVariant1AliasAssignedAtGetDeploymentResponseVariant1AliasAssignedAtVariant1
+    extends GetDeploymentResponseVariant1AliasAssignedAt {
   final GetDeploymentResponseVariant1AliasAssignedAtVariant1 value;
-  const GetDeploymentResponseVariant1AliasAssignedAtGetDeploymentResponseVariant1AliasAssignedAtVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant1AliasAssignedAtGetDeploymentResponseVariant1AliasAssignedAtVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`
@@ -257,22 +492,31 @@ class GetDeploymentResponseVariant1AliasError {
   final String code;
   final String message;
 
-  const GetDeploymentResponseVariant1AliasError({required this.code, required this.message});
+  const GetDeploymentResponseVariant1AliasError(
+      {required this.code, required this.message});
 
-  GetDeploymentResponseVariant1AliasError Function({String code, String message}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1AliasError Function(
+      {String code, String message}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1AliasError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => GetDeploymentResponseVariant1AliasError(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  GetDeploymentResponseVariant1AliasError _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1AliasError(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory GetDeploymentResponseVariant1AliasError.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1AliasError(
-    code: (json['code'] as String?)!,
-    message: (json['message'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant1AliasError.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1AliasError(
+        code: (json['code'] as String?)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code,
-    'message': message,
-  };
+        'code': code,
+        'message': message,
+      };
 }

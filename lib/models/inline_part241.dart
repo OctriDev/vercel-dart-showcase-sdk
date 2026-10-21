@@ -6,12 +6,12 @@ part of 'inline.dart';
 // Inline operation models (part 241)
 /// Required enumerated value serialized in the `plan` wire field.
 final class UserEventPayloadVariant420Plan {
-
   final String value;
 
   const UserEventPayloadVariant420Plan._(this.value);
 
-  factory UserEventPayloadVariant420Plan.fromJson(String value) => UserEventPayloadVariant420Plan._(value);
+  factory UserEventPayloadVariant420Plan.fromJson(String value) =>
+      UserEventPayloadVariant420Plan._(value);
 
   static const enterprise = UserEventPayloadVariant420Plan._('enterprise');
   static const hobby = UserEventPayloadVariant420Plan._('hobby');
@@ -19,44 +19,51 @@ final class UserEventPayloadVariant420Plan {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant420Plan && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant420Plan && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `convertedFromTrial` wire field.
 final class UserEventPayloadVariant421ConvertedFromTrial {
-
   final bool value;
 
   const UserEventPayloadVariant421ConvertedFromTrial._(this.value);
 
-  factory UserEventPayloadVariant421ConvertedFromTrial.fromJson(bool value) => UserEventPayloadVariant421ConvertedFromTrial._(value);
+  factory UserEventPayloadVariant421ConvertedFromTrial.fromJson(bool value) =>
+      UserEventPayloadVariant421ConvertedFromTrial._(value);
 
   static const false_ = UserEventPayloadVariant421ConvertedFromTrial._(false);
   static const true_ = UserEventPayloadVariant421ConvertedFromTrial._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant421ConvertedFromTrial && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant421ConvertedFromTrial &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `plan` wire field.
 final class UserEventPayloadVariant421Plan {
-
   final String value;
 
   const UserEventPayloadVariant421Plan._(this.value);
 
-  factory UserEventPayloadVariant421Plan.fromJson(String value) => UserEventPayloadVariant421Plan._(value);
+  factory UserEventPayloadVariant421Plan.fromJson(String value) =>
+      UserEventPayloadVariant421Plan._(value);
 
   static const enterprise = UserEventPayloadVariant421Plan._('enterprise');
   static const hobby = UserEventPayloadVariant421Plan._('hobby');
@@ -64,109 +71,125 @@ final class UserEventPayloadVariant421Plan {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant421Plan && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant421Plan && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `actorType` wire field.
 final class UserEventPayloadVariant424ActorType {
-
   final String value;
 
   const UserEventPayloadVariant424ActorType._(this.value);
 
-  factory UserEventPayloadVariant424ActorType.fromJson(String value) => UserEventPayloadVariant424ActorType._(value);
+  factory UserEventPayloadVariant424ActorType.fromJson(String value) =>
+      UserEventPayloadVariant424ActorType._(value);
 
   static const admin = UserEventPayloadVariant424ActorType._('admin');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant424ActorType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant424ActorType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `decision` wire field.
 final class UserEventPayloadVariant425Decision {
-
   final String value;
 
   const UserEventPayloadVariant425Decision._(this.value);
 
-  factory UserEventPayloadVariant425Decision.fromJson(String value) => UserEventPayloadVariant425Decision._(value);
+  factory UserEventPayloadVariant425Decision.fromJson(String value) =>
+      UserEventPayloadVariant425Decision._(value);
 
   static const keepOn = UserEventPayloadVariant425Decision._('keep_on');
   static const turnOff = UserEventPayloadVariant425Decision._('turn_off');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant425Decision && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant425Decision && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `consent` wire field.
 final class UserEventPayloadVariant426Consent {
-
   final String value;
 
   const UserEventPayloadVariant426Consent._(this.value);
 
-  factory UserEventPayloadVariant426Consent.fromJson(String value) => UserEventPayloadVariant426Consent._(value);
+  factory UserEventPayloadVariant426Consent.fromJson(String value) =>
+      UserEventPayloadVariant426Consent._(value);
 
   static const granted = UserEventPayloadVariant426Consent._('granted');
   static const refused = UserEventPayloadVariant426Consent._('refused');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant426Consent && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant426Consent && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `enabled` wire field.
 final class UserEventPayloadVariant427RemoteCachingEnabled {
-
   final bool value;
 
   const UserEventPayloadVariant427RemoteCachingEnabled._(this.value);
 
-  factory UserEventPayloadVariant427RemoteCachingEnabled.fromJson(bool value) => UserEventPayloadVariant427RemoteCachingEnabled._(value);
+  factory UserEventPayloadVariant427RemoteCachingEnabled.fromJson(bool value) =>
+      UserEventPayloadVariant427RemoteCachingEnabled._(value);
 
   static const false_ = UserEventPayloadVariant427RemoteCachingEnabled._(false);
   static const true_ = UserEventPayloadVariant427RemoteCachingEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant427RemoteCachingEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant427RemoteCachingEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `enabled` wire field.
 final class UserEventPayloadVariant429Enabled {
-
   final String value;
 
   const UserEventPayloadVariant429Enabled._(this.value);
 
-  factory UserEventPayloadVariant429Enabled.fromJson(String value) => UserEventPayloadVariant429Enabled._(value);
+  factory UserEventPayloadVariant429Enabled.fromJson(String value) =>
+      UserEventPayloadVariant429Enabled._(value);
 
   static const default_ = UserEventPayloadVariant429Enabled._('default');
   static const off = UserEventPayloadVariant429Enabled._('off');
@@ -174,99 +197,132 @@ final class UserEventPayloadVariant429Enabled {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant429Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant429Enabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `changedFields[]` wire field.
 final class UserEventPayloadVariant43ChangedFieldsItem {
-
   final String value;
 
   const UserEventPayloadVariant43ChangedFieldsItem._(this.value);
 
-  factory UserEventPayloadVariant43ChangedFieldsItem.fromJson(String value) => UserEventPayloadVariant43ChangedFieldsItem._(value);
+  factory UserEventPayloadVariant43ChangedFieldsItem.fromJson(String value) =>
+      UserEventPayloadVariant43ChangedFieldsItem._(value);
 
-  static const allowfallbackfromfast = UserEventPayloadVariant43ChangedFieldsItem._('allowFallbackFromFast');
-  static const baseurl = UserEventPayloadVariant43ChangedFieldsItem._('baseUrl');
-  static const byokcredentialids = UserEventPayloadVariant43ChangedFieldsItem._('byokCredentialIds');
-  static const caching = UserEventPayloadVariant43ChangedFieldsItem._('caching');
-  static const description = UserEventPayloadVariant43ChangedFieldsItem._('description');
-  static const disallowprompttraining = UserEventPayloadVariant43ChangedFieldsItem._('disallowPromptTraining');
-  static const displayname = UserEventPayloadVariant43ChangedFieldsItem._('displayName');
+  static const allowfallbackfromfast =
+      UserEventPayloadVariant43ChangedFieldsItem._('allowFallbackFromFast');
+  static const baseurl =
+      UserEventPayloadVariant43ChangedFieldsItem._('baseUrl');
+  static const byokcredentialids =
+      UserEventPayloadVariant43ChangedFieldsItem._('byokCredentialIds');
+  static const caching =
+      UserEventPayloadVariant43ChangedFieldsItem._('caching');
+  static const description =
+      UserEventPayloadVariant43ChangedFieldsItem._('description');
+  static const disallowprompttraining =
+      UserEventPayloadVariant43ChangedFieldsItem._('disallowPromptTraining');
+  static const displayname =
+      UserEventPayloadVariant43ChangedFieldsItem._('displayName');
   static const has = UserEventPayloadVariant43ChangedFieldsItem._('has');
-  static const hipaacompliant = UserEventPayloadVariant43ChangedFieldsItem._('hipaaCompliant');
-  static const inferenceregion = UserEventPayloadVariant43ChangedFieldsItem._('inferenceRegion');
-  static const modelslug = UserEventPayloadVariant43ChangedFieldsItem._('modelSlug');
+  static const hipaacompliant =
+      UserEventPayloadVariant43ChangedFieldsItem._('hipaaCompliant');
+  static const inferenceregion =
+      UserEventPayloadVariant43ChangedFieldsItem._('inferenceRegion');
+  static const modelslug =
+      UserEventPayloadVariant43ChangedFieldsItem._('modelSlug');
   static const models = UserEventPayloadVariant43ChangedFieldsItem._('models');
-  static const observabilitytags = UserEventPayloadVariant43ChangedFieldsItem._('observabilityTags');
-  static const provideronly = UserEventPayloadVariant43ChangedFieldsItem._('providerOnly');
-  static const provideroptions = UserEventPayloadVariant43ChangedFieldsItem._('providerOptions');
-  static const providerorder = UserEventPayloadVariant43ChangedFieldsItem._('providerOrder');
-  static const providertimeouts = UserEventPayloadVariant43ChangedFieldsItem._('providerTimeouts');
-  static const selector = UserEventPayloadVariant43ChangedFieldsItem._('selector');
-  static const selectoroptions = UserEventPayloadVariant43ChangedFieldsItem._('selectorOptions');
-  static const servicetier = UserEventPayloadVariant43ChangedFieldsItem._('serviceTier');
+  static const observabilitytags =
+      UserEventPayloadVariant43ChangedFieldsItem._('observabilityTags');
+  static const provideronly =
+      UserEventPayloadVariant43ChangedFieldsItem._('providerOnly');
+  static const provideroptions =
+      UserEventPayloadVariant43ChangedFieldsItem._('providerOptions');
+  static const providerorder =
+      UserEventPayloadVariant43ChangedFieldsItem._('providerOrder');
+  static const providertimeouts =
+      UserEventPayloadVariant43ChangedFieldsItem._('providerTimeouts');
+  static const selector =
+      UserEventPayloadVariant43ChangedFieldsItem._('selector');
+  static const selectoroptions =
+      UserEventPayloadVariant43ChangedFieldsItem._('selectorOptions');
+  static const servicetier =
+      UserEventPayloadVariant43ChangedFieldsItem._('serviceTier');
   static const sort = UserEventPayloadVariant43ChangedFieldsItem._('sort');
   static const speed = UserEventPayloadVariant43ChangedFieldsItem._('speed');
   static const status = UserEventPayloadVariant43ChangedFieldsItem._('status');
-  static const visibility = UserEventPayloadVariant43ChangedFieldsItem._('visibility');
-  static const zerodataretention = UserEventPayloadVariant43ChangedFieldsItem._('zeroDataRetention');
+  static const visibility =
+      UserEventPayloadVariant43ChangedFieldsItem._('visibility');
+  static const zerodataretention =
+      UserEventPayloadVariant43ChangedFieldsItem._('zeroDataRetention');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant43ChangedFieldsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant43ChangedFieldsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `enabled` wire field.
 final class UserEventPayloadVariant430Enabled {
-
   final bool value;
 
   const UserEventPayloadVariant430Enabled._(this.value);
 
-  factory UserEventPayloadVariant430Enabled.fromJson(bool value) => UserEventPayloadVariant430Enabled._(value);
+  factory UserEventPayloadVariant430Enabled.fromJson(bool value) =>
+      UserEventPayloadVariant430Enabled._(value);
 
   static const false_ = UserEventPayloadVariant430Enabled._(false);
   static const true_ = UserEventPayloadVariant430Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant430Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant430Enabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `scope` wire field.
 final class UserEventPayloadVariant430Scope {
-
   final String value;
 
   const UserEventPayloadVariant430Scope._(this.value);
 
-  factory UserEventPayloadVariant430Scope.fromJson(String value) => UserEventPayloadVariant430Scope._(value);
+  factory UserEventPayloadVariant430Scope.fromJson(String value) =>
+      UserEventPayloadVariant430Scope._(value);
 
   static const dashboard = UserEventPayloadVariant430Scope._('dashboard');
   static const logDrains = UserEventPayloadVariant430Scope._('log-drains');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant430Scope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant430Scope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

@@ -9,84 +9,159 @@ class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint {
   static const String constructionSurface = 'named';
   final String traces;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint({required this.traces});
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint(
+      {required this.traces});
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint Function({String traces}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint
+      Function({String traces}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint _copyWith({Object? traces = sdkOmittedValue}) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint(
-    traces: identical(traces, sdkOmittedValue) ? this.traces : traces as String,
-  );
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint
+      _copyWith({Object? traces = sdkOmittedValue}) =>
+          ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint(
+            traces: identical(traces, sdkOmittedValue)
+                ? this.traces
+                : traces as String,
+          );
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint(
-    traces: (json['traces'] as String?)!,
-  );
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint(
+        traces: (json['traces'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'traces': traces,
-  };
+        'traces': traces,
+      };
 }
 
 class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind kind;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind
+      kind;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1({required this.kind});
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1(
+      {required this.kind});
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1 Function({ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind kind}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1 Function(
+      {ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind
+          kind}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1 _copyWith({Object? kind = sdkOmittedValue}) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind,
-  );
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1
+      _copyWith({Object? kind = sdkOmittedValue}) =>
+          ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1(
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind,
+          );
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1(
-    kind: (json['kind'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind.fromJson(json['kind'] as String) : null)!,
-  );
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1(
+        kind: (json['kind'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-  };
+        'kind': kind.toJson(),
+      };
 }
 
 class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding encoding;
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint endpoint;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding
+      encoding;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint
+      endpoint;
   final Map<String, String> headers;
   final SdkOptional<dynamic> secret;
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type type_;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type
+      type_;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1({required this.encoding, required this.endpoint, required this.headers, this.secret = const SdkOmitted(), required this.type_});
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1(
+      {required this.encoding,
+      required this.endpoint,
+      required this.headers,
+      this.secret = const SdkOmitted(),
+      required this.type_});
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1 Function({ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding encoding, ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint endpoint, Map<String, String> headers, SdkOptional<dynamic> secret, ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type type_}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1 Function(
+      {ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding
+          encoding,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint
+          endpoint,
+      Map<String, String> headers,
+      SdkOptional<dynamic> secret,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1 _copyWith({Object? encoding = sdkOmittedValue, Object? endpoint = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? secret = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1(
-    encoding: identical(encoding, sdkOmittedValue) ? this.encoding : encoding as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding,
-    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint,
-    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as Map<String, String>,
-    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as SdkOptional<dynamic>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type,
-  );
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1 _copyWith(
+          {Object? encoding = sdkOmittedValue,
+          Object? endpoint = sdkOmittedValue,
+          Object? headers = sdkOmittedValue,
+          Object? secret = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1(
+        encoding: identical(encoding, sdkOmittedValue)
+            ? this.encoding
+            : encoding
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding,
+        endpoint: identical(endpoint, sdkOmittedValue)
+            ? this.endpoint
+            : endpoint
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint,
+        headers: identical(headers, sdkOmittedValue)
+            ? this.headers
+            : headers as Map<String, String>,
+        secret: identical(secret, sdkOmittedValue)
+            ? this.secret
+            : secret as SdkOptional<dynamic>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type,
+      );
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1(
-    encoding: (json['encoding'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding.fromJson(json['encoding'] as String) : null)!,
-    endpoint: (json['endpoint'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint.fromJson(json['endpoint'] as Map<String, dynamic>) : null)!,
-    headers: (json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!,
-    secret: json['secret'] != null ? SdkPresent((json['secret'])!) : const SdkOmitted(),
-    type_: (json['type'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1(
+        encoding: (json['encoding'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding
+                .fromJson(json['encoding'] as String)
+            : null)!,
+        endpoint: (json['endpoint'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Endpoint
+                .fromJson(json['endpoint'] as Map<String, dynamic>)
+            : null)!,
+        headers: (json['headers'] == null
+            ? null
+            : Map<String, dynamic>.from(json['headers'] as Map)
+                .map((key, value) => MapEntry(key, value as String)))!,
+        secret: json['secret'] != null
+            ? SdkPresent((json['secret'])!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'encoding': encoding.toJson(),
-    'endpoint': endpoint.toJson(),
-    'headers': headers,
-    ...switch (secret) {
-      SdkPresent<dynamic>(value: final value) => {'secret': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-  };
+        'encoding': encoding.toJson(),
+        'endpoint': endpoint.toJson(),
+        'headers': headers,
+        ...switch (secret) {
+          SdkPresent<dynamic>(value: final value) => {
+              'secret': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+      };
 }
 
 class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2 {
@@ -94,153 +169,345 @@ class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2 {
   static const String constructionSurface = 'named';
   final String endpoint;
   final String table;
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type type_;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type
+      type_;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2({required this.endpoint, required this.table, required this.type_});
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2(
+      {required this.endpoint, required this.table, required this.type_});
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2 Function({String endpoint, String table, ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type type_}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2 Function(
+      {String endpoint,
+      String table,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type
+          type_}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2 _copyWith({Object? endpoint = sdkOmittedValue, Object? table = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2(
-    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as String,
-    table: identical(table, sdkOmittedValue) ? this.table : table as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type,
-  );
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2 _copyWith(
+          {Object? endpoint = sdkOmittedValue,
+          Object? table = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2(
+        endpoint: identical(endpoint, sdkOmittedValue)
+            ? this.endpoint
+            : endpoint as String,
+        table: identical(table, sdkOmittedValue) ? this.table : table as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type,
+      );
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2(
-    endpoint: (json['endpoint'] as String?)!,
-    table: (json['table'] as String?)!,
-    type_: (json['type'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2(
+        endpoint: (json['endpoint'] as String?)!,
+        table: (json['table'] as String?)!,
+        type_: (json['type'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'endpoint': endpoint,
-    'table': table,
-    'type': type_.toJson(),
-  };
+        'endpoint': endpoint,
+        'table': table,
+        'type': type_.toJson(),
+      };
 }
 
 class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression compression;
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding encoding;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression
+      compression;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding
+      encoding;
   final String endpoint;
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure fileStructure;
-  final SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl> objectAcl;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure
+      fileStructure;
+  final SdkOptional<
+          ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl>
+      objectAcl;
   final String region;
   final String roleArn;
-  final SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption> serverSideEncryption;
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type type_;
+  final SdkOptional<
+          ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption>
+      serverSideEncryption;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type
+      type_;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3({required this.compression, required this.encoding, required this.endpoint, required this.fileStructure, this.objectAcl = const SdkOmitted(), required this.region, required this.roleArn, this.serverSideEncryption = const SdkOmitted(), required this.type_});
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3(
+      {required this.compression,
+      required this.encoding,
+      required this.endpoint,
+      required this.fileStructure,
+      this.objectAcl = const SdkOmitted(),
+      required this.region,
+      required this.roleArn,
+      this.serverSideEncryption = const SdkOmitted(),
+      required this.type_});
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3 Function({ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression compression, ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding encoding, String endpoint, ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure fileStructure, SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl> objectAcl, String region, String roleArn, SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption> serverSideEncryption, ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type type_}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3 Function(
+      {ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression
+          compression,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding
+          encoding,
+      String endpoint,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure
+          fileStructure,
+      SdkOptional<
+              ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl>
+          objectAcl,
+      String region,
+      String roleArn,
+      SdkOptional<
+              ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption>
+          serverSideEncryption,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type
+          type_}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3 _copyWith({Object? compression = sdkOmittedValue, Object? encoding = sdkOmittedValue, Object? endpoint = sdkOmittedValue, Object? fileStructure = sdkOmittedValue, Object? objectAcl = sdkOmittedValue, Object? region = sdkOmittedValue, Object? roleArn = sdkOmittedValue, Object? serverSideEncryption = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3(
-    compression: identical(compression, sdkOmittedValue) ? this.compression : compression as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression,
-    encoding: identical(encoding, sdkOmittedValue) ? this.encoding : encoding as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding,
-    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as String,
-    fileStructure: identical(fileStructure, sdkOmittedValue) ? this.fileStructure : fileStructure as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure,
-    objectAcl: identical(objectAcl, sdkOmittedValue) ? this.objectAcl : objectAcl as SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl>,
-    region: identical(region, sdkOmittedValue) ? this.region : region as String,
-    roleArn: identical(roleArn, sdkOmittedValue) ? this.roleArn : roleArn as String,
-    serverSideEncryption: identical(serverSideEncryption, sdkOmittedValue) ? this.serverSideEncryption : serverSideEncryption as SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type,
-  );
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3 _copyWith(
+          {Object? compression = sdkOmittedValue,
+          Object? encoding = sdkOmittedValue,
+          Object? endpoint = sdkOmittedValue,
+          Object? fileStructure = sdkOmittedValue,
+          Object? objectAcl = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? roleArn = sdkOmittedValue,
+          Object? serverSideEncryption = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3(
+        compression: identical(compression, sdkOmittedValue)
+            ? this.compression
+            : compression
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression,
+        encoding: identical(encoding, sdkOmittedValue)
+            ? this.encoding
+            : encoding
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding,
+        endpoint: identical(endpoint, sdkOmittedValue)
+            ? this.endpoint
+            : endpoint as String,
+        fileStructure: identical(fileStructure, sdkOmittedValue)
+            ? this.fileStructure
+            : fileStructure
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure,
+        objectAcl: identical(objectAcl, sdkOmittedValue)
+            ? this.objectAcl
+            : objectAcl as SdkOptional<
+                ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl>,
+        region:
+            identical(region, sdkOmittedValue) ? this.region : region as String,
+        roleArn: identical(roleArn, sdkOmittedValue)
+            ? this.roleArn
+            : roleArn as String,
+        serverSideEncryption: identical(serverSideEncryption, sdkOmittedValue)
+            ? this.serverSideEncryption
+            : serverSideEncryption as SdkOptional<
+                ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type,
+      );
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3(
-    compression: (json['compression'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression.fromJson(json['compression'] as String) : null)!,
-    encoding: (json['encoding'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding.fromJson(json['encoding'] as String) : null)!,
-    endpoint: (json['endpoint'] as String?)!,
-    fileStructure: (json['fileStructure'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure.fromJson(json['fileStructure'] as String) : null)!,
-    objectAcl: json['objectAcl'] != null ? SdkPresent((json['objectAcl'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl.fromJson(json['objectAcl'] as String) : null)!) : const SdkOmitted(),
-    region: (json['region'] as String?)!,
-    roleArn: (json['roleArn'] as String?)!,
-    serverSideEncryption: json['serverSideEncryption'] != null ? SdkPresent((json['serverSideEncryption'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption.fromJson(json['serverSideEncryption'] as String) : null)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3(
+        compression: (json['compression'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression
+                .fromJson(json['compression'] as String)
+            : null)!,
+        encoding: (json['encoding'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding
+                .fromJson(json['encoding'] as String)
+            : null)!,
+        endpoint: (json['endpoint'] as String?)!,
+        fileStructure: (json['fileStructure'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure
+                .fromJson(json['fileStructure'] as String)
+            : null)!,
+        objectAcl: json['objectAcl'] != null
+            ? SdkPresent((json['objectAcl'] != null
+                ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
+                    .fromJson(json['objectAcl'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        region: (json['region'] as String?)!,
+        roleArn: (json['roleArn'] as String?)!,
+        serverSideEncryption: json['serverSideEncryption'] != null
+            ? SdkPresent((json['serverSideEncryption'] != null
+                ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption
+                    .fromJson(json['serverSideEncryption'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'compression': compression.toJson(),
-    'encoding': encoding.toJson(),
-    'endpoint': endpoint,
-    'fileStructure': fileStructure.toJson(),
-    ...switch (objectAcl) {
-      SdkPresent<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl>(value: final value) => {'objectAcl': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'region': region,
-    'roleArn': roleArn,
-    ...switch (serverSideEncryption) {
-      SdkPresent<ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption>(value: final value) => {'serverSideEncryption': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-  };
+        'compression': compression.toJson(),
+        'encoding': encoding.toJson(),
+        'endpoint': endpoint,
+        'fileStructure': fileStructure.toJson(),
+        ...switch (objectAcl) {
+          SdkPresent<
+                ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl>(
+            value: final value
+          ) =>
+            {
+              'objectAcl': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'region': region,
+        'roleArn': roleArn,
+        ...switch (serverSideEncryption) {
+          SdkPresent<
+                ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption>(
+            value: final value
+          ) =>
+            {
+              'serverSideEncryption': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+      };
 }
 
 class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target target;
-  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type type_;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target
+      target;
+  final ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type
+      type_;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4({required this.target, required this.type_});
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4(
+      {required this.target, required this.type_});
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4 Function({ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target target, ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type type_}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4 Function(
+      {ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target
+          target,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type
+          type_}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4 _copyWith({Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4(
-    target: identical(target, sdkOmittedValue) ? this.target : target as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type,
-  );
+  ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4 _copyWith(
+          {Object? target = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4(
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type,
+      );
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4(
-    target: (json['target'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target.fromJson(json['target'] as String) : null)!,
-    type_: (json['type'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4(
+        target: (json['target'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Target
+                .fromJson(json['target'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant4Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'target': target.toJson(),
-    'type': type_.toJson(),
-  };
+        'target': target.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv> env;
+  final SdkOptional<
+      ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv> env;
   final double rate;
   final SdkOptional<String> requestPath;
   final ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemType type_;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem({this.env = const SdkOmitted(), required this.rate, this.requestPath = const SdkOmitted(), required this.type_});
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem(
+      {this.env = const SdkOmitted(),
+      required this.rate,
+      this.requestPath = const SdkOmitted(),
+      required this.type_});
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem Function({SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv> env, double rate, SdkOptional<String> requestPath, ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemType type_}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem Function(
+      {SdkOptional<
+              ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv>
+          env,
+      double rate,
+      SdkOptional<String> requestPath,
+      ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemType
+          type_}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem _copyWith({Object? env = sdkOmittedValue, Object? rate = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem(
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv>,
-    rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
-    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as SdkOptional<String>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemType,
-  );
+  ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem _copyWith(
+          {Object? env = sdkOmittedValue,
+          Object? rate = sdkOmittedValue,
+          Object? requestPath = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem(
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<
+                ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv>,
+        rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
+        requestPath: identical(requestPath, sdkOmittedValue)
+            ? this.requestPath
+            : requestPath as SdkOptional<String>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemType,
+      );
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem(
-    env: json['env'] != null ? SdkPresent((json['env'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv.fromJson(json['env'] as String) : null)!) : const SdkOmitted(),
-    rate: ((json['rate'] as num?)?.toDouble())!,
-    requestPath: json['requestPath'] != null ? SdkPresent((json['requestPath'] as String?)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemType.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItem(
+        env: json['env'] != null
+            ? SdkPresent((json['env'] != null
+                ? ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv
+                    .fromJson(json['env'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        rate: ((json['rate'] as num?)?.toDouble())!,
+        requestPath: json['requestPath'] != null
+            ? SdkPresent((json['requestPath'] as String?)!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (env) {
-      SdkPresent<ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv>(value: final value) => {'env': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'rate': rate,
-    ...switch (requestPath) {
-      SdkPresent<String>(value: final value) => {'requestPath': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-  };
+        ...switch (env) {
+          SdkPresent<
+                ListLogDrainsResponseVariant1DrainsVariant1ItemSamplingItemEnv>(
+            value: final value
+          ) =>
+            {
+              'env': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'rate': rate,
+        ...switch (requestPath) {
+          SdkPresent<String>(value: final value) => {
+              'requestPath': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+      };
 }

@@ -6,7 +6,6 @@ part of 'shared.dart';
 // shared domain models
 /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
 final class ACLAction {
-
   final String value;
 
   const ACLAction._(this.value);
@@ -21,12 +20,14 @@ final class ACLAction {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ACLAction && other.value == value;
+  @override
+  bool operator ==(Object other) => other is ACLAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 sealed class GlobalConfigItemValue {
@@ -34,10 +35,20 @@ sealed class GlobalConfigItemValue {
   static const String constructionSurface = 'named';
   const GlobalConfigItemValue();
   factory GlobalConfigItemValue.fromJson(Object? json) {
-    if (json is String) { return GlobalConfigItemValueString(json); }
-    if (json is num) { return GlobalConfigItemValueDouble(json.toDouble()); }
-    try { return GlobalConfigItemValueGlobalConfigItemValue(GlobalConfigItemValue.fromJson(json)); } catch (_) {}
-    try { return GlobalConfigItemValueGlobalConfigItemValueVariant4(GlobalConfigItemValueVariant4.fromJson(json as bool)); } catch (_) {}
+    if (json is String) {
+      return GlobalConfigItemValueString(json);
+    }
+    if (json is num) {
+      return GlobalConfigItemValueDouble(json.toDouble());
+    }
+    try {
+      return GlobalConfigItemValueGlobalConfigItemValue(
+          GlobalConfigItemValue.fromJson(json));
+    } catch (_) {}
+    try {
+      return GlobalConfigItemValueGlobalConfigItemValueVariant4(
+          GlobalConfigItemValueVariant4.fromJson(json as bool));
+    } catch (_) {}
     throw FormatException("No variant matched for GlobalConfigItemValue");
   }
   Object? toJson();
@@ -46,57 +57,78 @@ sealed class GlobalConfigItemValue {
 final class GlobalConfigItemValueString extends GlobalConfigItemValue {
   final String value;
   const GlobalConfigItemValueString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 final class GlobalConfigItemValueDouble extends GlobalConfigItemValue {
   final double value;
   const GlobalConfigItemValueDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class GlobalConfigItemValueGlobalConfigItemValue extends GlobalConfigItemValue {
+final class GlobalConfigItemValueGlobalConfigItemValue
+    extends GlobalConfigItemValue {
   final GlobalConfigItemValue value;
   const GlobalConfigItemValueGlobalConfigItemValue(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GlobalConfigItemValueGlobalConfigItemValueVariant4 extends GlobalConfigItemValue {
+final class GlobalConfigItemValueGlobalConfigItemValueVariant4
+    extends GlobalConfigItemValue {
   final GlobalConfigItemValueVariant4 value;
   const GlobalConfigItemValueGlobalConfigItemValueVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
 class Pagination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Amount of items in the current page.
   final double count;
+
   /// Timestamp that must be used to request the next page.
   final double? next;
+
   /// Timestamp that must be used to request the previous page.
   final double? prev;
 
-  const Pagination({required this.count, required this.next, required this.prev});
+  const Pagination(
+      {required this.count, required this.next, required this.prev});
 
-  Pagination Function({double count, double? next, double? prev}) get copyWith => _copyWith;
+  Pagination Function({double count, double? next, double? prev})
+      get copyWith => _copyWith;
 
-  Pagination _copyWith({Object? count = sdkOmittedValue, Object? next = sdkOmittedValue, Object? prev = sdkOmittedValue}) => Pagination(
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    next: identical(next, sdkOmittedValue) ? this.next : next as double?,
-    prev: identical(prev, sdkOmittedValue) ? this.prev : prev as double?,
-  );
+  Pagination _copyWith(
+          {Object? count = sdkOmittedValue,
+          Object? next = sdkOmittedValue,
+          Object? prev = sdkOmittedValue}) =>
+      Pagination(
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        next: identical(next, sdkOmittedValue) ? this.next : next as double?,
+        prev: identical(prev, sdkOmittedValue) ? this.prev : prev as double?,
+      );
 
   factory Pagination.fromJson(Map<String, dynamic> json) => Pagination(
-    count: ((json['count'] as num?)?.toDouble())!,
-    next: json.containsKey('next') ? (json['next'] as num?)?.toDouble() : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-    prev: json.containsKey('prev') ? (json['prev'] as num?)?.toDouble() : throw ArgumentError.value(null, 'prev', 'Required property is missing'),
-  );
+        count: ((json['count'] as num?)?.toDouble())!,
+        next: json.containsKey('next')
+            ? (json['next'] as num?)?.toDouble()
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+        prev: json.containsKey('prev')
+            ? (json['prev'] as num?)?.toDouble()
+            : throw ArgumentError.value(
+                null, 'prev', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'count': count,
-    'next': next,
-    'prev': prev,
-  };
+        'count': count,
+        'next': next,
+        'prev': prev,
+      };
 }

@@ -5,285 +5,434 @@ part of 'inline.dart';
 
 // Inline operation models (part 61)
 final class CreateProjectResponseTrustedIpsVariant0DeploymentType {
-
   final String value;
 
   const CreateProjectResponseTrustedIpsVariant0DeploymentType._(this.value);
 
-  factory CreateProjectResponseTrustedIpsVariant0DeploymentType.fromJson(String value) => CreateProjectResponseTrustedIpsVariant0DeploymentType._(value);
+  factory CreateProjectResponseTrustedIpsVariant0DeploymentType.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedIpsVariant0DeploymentType._(value);
 
-  static const all = CreateProjectResponseTrustedIpsVariant0DeploymentType._('all');
-  static const allExceptCustomDomains = CreateProjectResponseTrustedIpsVariant0DeploymentType._('all_except_custom_domains');
-  static const preview = CreateProjectResponseTrustedIpsVariant0DeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = CreateProjectResponseTrustedIpsVariant0DeploymentType._('prod_deployment_urls_and_all_previews');
-  static const production = CreateProjectResponseTrustedIpsVariant0DeploymentType._('production');
+  static const all =
+      CreateProjectResponseTrustedIpsVariant0DeploymentType._('all');
+  static const allExceptCustomDomains =
+      CreateProjectResponseTrustedIpsVariant0DeploymentType._(
+          'all_except_custom_domains');
+  static const preview =
+      CreateProjectResponseTrustedIpsVariant0DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      CreateProjectResponseTrustedIpsVariant0DeploymentType._(
+          'prod_deployment_urls_and_all_previews');
+  static const production =
+      CreateProjectResponseTrustedIpsVariant0DeploymentType._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedIpsVariant0DeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseTrustedIpsVariant0DeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedIpsVariant0ProtectionMode {
-
   final String value;
 
   const CreateProjectResponseTrustedIpsVariant0ProtectionMode._(this.value);
 
-  factory CreateProjectResponseTrustedIpsVariant0ProtectionMode.fromJson(String value) => CreateProjectResponseTrustedIpsVariant0ProtectionMode._(value);
+  factory CreateProjectResponseTrustedIpsVariant0ProtectionMode.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedIpsVariant0ProtectionMode._(value);
 
-  static const additional = CreateProjectResponseTrustedIpsVariant0ProtectionMode._('additional');
-  static const exclusive = CreateProjectResponseTrustedIpsVariant0ProtectionMode._('exclusive');
+  static const additional =
+      CreateProjectResponseTrustedIpsVariant0ProtectionMode._('additional');
+  static const exclusive =
+      CreateProjectResponseTrustedIpsVariant0ProtectionMode._('exclusive');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedIpsVariant0ProtectionMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseTrustedIpsVariant0ProtectionMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedIpsVariant1DeploymentType {
-
   final String value;
 
   const CreateProjectResponseTrustedIpsVariant1DeploymentType._(this.value);
 
-  factory CreateProjectResponseTrustedIpsVariant1DeploymentType.fromJson(String value) => CreateProjectResponseTrustedIpsVariant1DeploymentType._(value);
+  factory CreateProjectResponseTrustedIpsVariant1DeploymentType.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedIpsVariant1DeploymentType._(value);
 
-  static const all = CreateProjectResponseTrustedIpsVariant1DeploymentType._('all');
-  static const allExceptCustomDomains = CreateProjectResponseTrustedIpsVariant1DeploymentType._('all_except_custom_domains');
-  static const preview = CreateProjectResponseTrustedIpsVariant1DeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = CreateProjectResponseTrustedIpsVariant1DeploymentType._('prod_deployment_urls_and_all_previews');
-  static const production = CreateProjectResponseTrustedIpsVariant1DeploymentType._('production');
+  static const all =
+      CreateProjectResponseTrustedIpsVariant1DeploymentType._('all');
+  static const allExceptCustomDomains =
+      CreateProjectResponseTrustedIpsVariant1DeploymentType._(
+          'all_except_custom_domains');
+  static const preview =
+      CreateProjectResponseTrustedIpsVariant1DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      CreateProjectResponseTrustedIpsVariant1DeploymentType._(
+          'prod_deployment_urls_and_all_previews');
+  static const production =
+      CreateProjectResponseTrustedIpsVariant1DeploymentType._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedIpsVariant1DeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseTrustedIpsVariant1DeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.
 final class CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode {
-
   final String value;
 
-  const CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._(this.value);
+  const CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._(
+      this.value);
 
-  factory CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode.fromJson(String value) => CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._(value);
+  factory CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode.fromJson(
+          String value) =>
+      CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._(value);
 
-  static const allowAll = CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._('allow-all');
-  static const denyAll = CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._('deny-all');
-  static const custom = CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._('custom');
-  static const defaultAllow = CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._('default-allow');
-  static const defaultDeny = CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._('default-deny');
+  static const allowAll =
+      CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._(
+          'allow-all');
+  static const denyAll =
+      CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._('deny-all');
+  static const custom =
+      CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._('custom');
+  static const defaultAllow =
+      CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._(
+          'default-allow');
+  static const defaultDeny =
+      CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode._(
+          'default-deny');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesByNameForkV2RequestNetworkPolicyVariant0Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.
 final class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode {
-
   final String value;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._(this.value);
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._(
+      this.value);
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode.fromJson(String value) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._(value);
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode.fromJson(
+          String value) =>
+      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._(value);
 
-  static const allowAll = CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._('allow-all');
-  static const denyAll = CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._('deny-all');
-  static const custom = CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._('custom');
-  static const defaultAllow = CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._('default-allow');
-  static const defaultDeny = CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._('default-deny');
+  static const allowAll =
+      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._(
+          'allow-all');
+  static const denyAll =
+      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._('deny-all');
+  static const custom =
+      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._('custom');
+  static const defaultAllow =
+      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._(
+          'default-allow');
+  static const defaultDeny =
+      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode._(
+          'default-deny');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesByNameForkV3RequestNetworkPolicyVariant0Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.
 final class CreateSandboxesV2RequestNetworkPolicyVariant0Mode {
-
   final String value;
 
   const CreateSandboxesV2RequestNetworkPolicyVariant0Mode._(this.value);
 
-  factory CreateSandboxesV2RequestNetworkPolicyVariant0Mode.fromJson(String value) => CreateSandboxesV2RequestNetworkPolicyVariant0Mode._(value);
+  factory CreateSandboxesV2RequestNetworkPolicyVariant0Mode.fromJson(
+          String value) =>
+      CreateSandboxesV2RequestNetworkPolicyVariant0Mode._(value);
 
-  static const allowAll = CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('allow-all');
-  static const denyAll = CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('deny-all');
-  static const custom = CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('custom');
-  static const defaultAllow = CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('default-allow');
-  static const defaultDeny = CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('default-deny');
+  static const allowAll =
+      CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('allow-all');
+  static const denyAll =
+      CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('deny-all');
+  static const custom =
+      CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('custom');
+  static const defaultAllow =
+      CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('default-allow');
+  static const defaultDeny =
+      CreateSandboxesV2RequestNetworkPolicyVariant0Mode._('default-deny');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV2RequestNetworkPolicyVariant0Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV2RequestNetworkPolicyVariant0Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.
 final class CreateSandboxesV3RequestNetworkPolicyVariant0Mode {
-
   final String value;
 
   const CreateSandboxesV3RequestNetworkPolicyVariant0Mode._(this.value);
 
-  factory CreateSandboxesV3RequestNetworkPolicyVariant0Mode.fromJson(String value) => CreateSandboxesV3RequestNetworkPolicyVariant0Mode._(value);
+  factory CreateSandboxesV3RequestNetworkPolicyVariant0Mode.fromJson(
+          String value) =>
+      CreateSandboxesV3RequestNetworkPolicyVariant0Mode._(value);
 
-  static const allowAll = CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('allow-all');
-  static const denyAll = CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('deny-all');
-  static const custom = CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('custom');
-  static const defaultAllow = CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('default-allow');
-  static const defaultDeny = CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('default-deny');
+  static const allowAll =
+      CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('allow-all');
+  static const denyAll =
+      CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('deny-all');
+  static const custom =
+      CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('custom');
+  static const defaultAllow =
+      CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('default-allow');
+  static const defaultDeny =
+      CreateSandboxesV3RequestNetworkPolicyVariant0Mode._('default-deny');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV3RequestNetworkPolicyVariant0Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV3RequestNetworkPolicyVariant0Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.
 final class CreateSandboxesV4RequestNetworkPolicyVariant0Mode {
-
   final String value;
 
   const CreateSandboxesV4RequestNetworkPolicyVariant0Mode._(this.value);
 
-  factory CreateSandboxesV4RequestNetworkPolicyVariant0Mode.fromJson(String value) => CreateSandboxesV4RequestNetworkPolicyVariant0Mode._(value);
+  factory CreateSandboxesV4RequestNetworkPolicyVariant0Mode.fromJson(
+          String value) =>
+      CreateSandboxesV4RequestNetworkPolicyVariant0Mode._(value);
 
-  static const allowAll = CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('allow-all');
-  static const denyAll = CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('deny-all');
-  static const custom = CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('custom');
-  static const defaultAllow = CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('default-allow');
-  static const defaultDeny = CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('default-deny');
+  static const allowAll =
+      CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('allow-all');
+  static const denyAll =
+      CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('deny-all');
+  static const custom =
+      CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('custom');
+  static const defaultAllow =
+      CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('default-allow');
+  static const defaultDeny =
+      CreateSandboxesV4RequestNetworkPolicyVariant0Mode._('default-deny');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV4RequestNetworkPolicyVariant0Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV4RequestNetworkPolicyVariant0Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._(value);
 
-  static const allow = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._('allow');
-  static const bypass = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._('bypass');
-  static const challenge = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._('challenge');
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._('log');
-  static const rateLimit = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._('rate_limit');
-  static const redirect = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction._('redirect');
+  static const allow =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._('allow');
+  static const bypass =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._('bypass');
+  static const challenge =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._('challenge');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._('deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._('log');
+  static const rateLimit =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._('rate_limit');
+  static const redirect =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
+          ._('redirect');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem {
-
   final bool value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem.fromJson(bool value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem.fromJson(
+          bool value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem
+          ._(value);
 
-  static const false_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem._(false);
-  static const true_ = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem._(true);
+  static const false_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem
+          ._(false);
+  static const true_ =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1 {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1
+          ._(value);
 
-  static const unknown = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1._('*');
+  static const unknown =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1
+          ._('*');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction {
-
   final String value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction._(this.value);
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction._(
+      this.value);
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction.fromJson(String value) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction._(value);
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction.fromJson(
+          String value) =>
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction
+          ._(value);
 
-  static const challenge = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction._('challenge');
-  static const deny = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction._('deny');
-  static const log = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction._('log');
-  static const rateLimit = CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction._('rate_limit');
+  static const challenge =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction
+          ._('challenge');
+  static const deny =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction
+          ._('deny');
+  static const log =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction
+          ._('log');
+  static const rateLimit =
+      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction
+          ._('rate_limit');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

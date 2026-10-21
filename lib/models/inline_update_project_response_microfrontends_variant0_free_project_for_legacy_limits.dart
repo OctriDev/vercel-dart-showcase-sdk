@@ -6,281 +6,402 @@ part of 'inline.dart';
 // Inline operation models
 /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
 final class UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits {
-
   final bool value;
 
-  const UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(this.value);
+  const UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(
+      this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(
+          value);
 
-  static const false_ = UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(false);
-  static const true_ = UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(true);
+  static const false_ =
+      UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(
+          false);
+  static const true_ =
+      UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseMicrofrontendsVariant0FreeProjectForLegacyLimits &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp {
-
   final bool value;
 
   const UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp._(this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp._(value);
 
-  static const true_ = UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp._(true);
+  static const true_ =
+      UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseMicrofrontendsVariant0IsDefaultApp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to add microfrontends routing to aliases. This means domains in this project will route as a microfrontend.
 final class UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting {
-
   final bool value;
 
-  const UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(this.value);
+  const UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(
+      this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
+          ._(value);
 
-  static const false_ = UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(false);
-  static const true_ = UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(true);
+  static const false_ =
+      UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
+          ._(false);
+  static const true_ =
+      UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether microfrontends are enabled for this project.
 final class UpdateProjectResponseMicrofrontendsVariant1Enabled {
-
   final bool value;
 
   const UpdateProjectResponseMicrofrontendsVariant1Enabled._(this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant1Enabled.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant1Enabled._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant1Enabled.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant1Enabled._(value);
 
-  static const true_ = UpdateProjectResponseMicrofrontendsVariant1Enabled._(true);
+  static const true_ =
+      UpdateProjectResponseMicrofrontendsVariant1Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant1Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseMicrofrontendsVariant1Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
 final class UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits {
-
   final bool value;
 
-  const UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(this.value);
+  const UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(
+      this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(
+          value);
 
-  static const false_ = UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(false);
-  static const true_ = UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(true);
+  static const false_ =
+      UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(
+          false);
+  static const true_ =
+      UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseMicrofrontendsVariant1FreeProjectForLegacyLimits &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp {
-
   final bool value;
 
   const UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp._(this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp._(value);
 
-  static const false_ = UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp._(false);
+  static const false_ =
+      UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp._(false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseMicrofrontendsVariant1IsDefaultApp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether observability data should be routed to this microfrontend project or a root project.
 final class UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject {
-
   final bool value;
 
-  const UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject._(this.value);
+  const UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject._(
+      this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject
+          ._(value);
 
-  static const false_ = UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject._(false);
-  static const true_ = UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject._(true);
+  static const false_ =
+      UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject
+          ._(false);
+  static const true_ =
+      UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseMicrofrontendsVariant1RouteObservabilityToThisProject &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseMicrofrontendsVariant2Enabled {
-
   final bool value;
 
   const UpdateProjectResponseMicrofrontendsVariant2Enabled._(this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant2Enabled.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant2Enabled._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant2Enabled.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant2Enabled._(value);
 
-  static const false_ = UpdateProjectResponseMicrofrontendsVariant2Enabled._(false);
+  static const false_ =
+      UpdateProjectResponseMicrofrontendsVariant2Enabled._(false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant2Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseMicrofrontendsVariant2Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits {
-
   final bool value;
 
-  const UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(this.value);
+  const UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(
+      this.value);
 
-  factory UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(bool value) => UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(value);
+  factory UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(
+          bool value) =>
+      UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(
+          value);
 
-  static const false_ = UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(false);
-  static const true_ = UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(true);
+  static const false_ =
+      UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(
+          false);
+  static const true_ =
+      UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseMicrofrontendsVariant2FreeProjectForLegacyLimits &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseTrustedIpsVariant0DeploymentType {
-
   final String value;
 
   const UpdateProjectResponseTrustedIpsVariant0DeploymentType._(this.value);
 
-  factory UpdateProjectResponseTrustedIpsVariant0DeploymentType.fromJson(String value) => UpdateProjectResponseTrustedIpsVariant0DeploymentType._(value);
+  factory UpdateProjectResponseTrustedIpsVariant0DeploymentType.fromJson(
+          String value) =>
+      UpdateProjectResponseTrustedIpsVariant0DeploymentType._(value);
 
-  static const all = UpdateProjectResponseTrustedIpsVariant0DeploymentType._('all');
-  static const allExceptCustomDomains = UpdateProjectResponseTrustedIpsVariant0DeploymentType._('all_except_custom_domains');
-  static const preview = UpdateProjectResponseTrustedIpsVariant0DeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectResponseTrustedIpsVariant0DeploymentType._('prod_deployment_urls_and_all_previews');
-  static const production = UpdateProjectResponseTrustedIpsVariant0DeploymentType._('production');
+  static const all =
+      UpdateProjectResponseTrustedIpsVariant0DeploymentType._('all');
+  static const allExceptCustomDomains =
+      UpdateProjectResponseTrustedIpsVariant0DeploymentType._(
+          'all_except_custom_domains');
+  static const preview =
+      UpdateProjectResponseTrustedIpsVariant0DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      UpdateProjectResponseTrustedIpsVariant0DeploymentType._(
+          'prod_deployment_urls_and_all_previews');
+  static const production =
+      UpdateProjectResponseTrustedIpsVariant0DeploymentType._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseTrustedIpsVariant0DeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseTrustedIpsVariant0DeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseTrustedIpsVariant0ProtectionMode {
-
   final String value;
 
   const UpdateProjectResponseTrustedIpsVariant0ProtectionMode._(this.value);
 
-  factory UpdateProjectResponseTrustedIpsVariant0ProtectionMode.fromJson(String value) => UpdateProjectResponseTrustedIpsVariant0ProtectionMode._(value);
+  factory UpdateProjectResponseTrustedIpsVariant0ProtectionMode.fromJson(
+          String value) =>
+      UpdateProjectResponseTrustedIpsVariant0ProtectionMode._(value);
 
-  static const additional = UpdateProjectResponseTrustedIpsVariant0ProtectionMode._('additional');
-  static const exclusive = UpdateProjectResponseTrustedIpsVariant0ProtectionMode._('exclusive');
+  static const additional =
+      UpdateProjectResponseTrustedIpsVariant0ProtectionMode._('additional');
+  static const exclusive =
+      UpdateProjectResponseTrustedIpsVariant0ProtectionMode._('exclusive');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseTrustedIpsVariant0ProtectionMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseTrustedIpsVariant0ProtectionMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseTrustedIpsVariant1DeploymentType {
-
   final String value;
 
   const UpdateProjectResponseTrustedIpsVariant1DeploymentType._(this.value);
 
-  factory UpdateProjectResponseTrustedIpsVariant1DeploymentType.fromJson(String value) => UpdateProjectResponseTrustedIpsVariant1DeploymentType._(value);
+  factory UpdateProjectResponseTrustedIpsVariant1DeploymentType.fromJson(
+          String value) =>
+      UpdateProjectResponseTrustedIpsVariant1DeploymentType._(value);
 
-  static const all = UpdateProjectResponseTrustedIpsVariant1DeploymentType._('all');
-  static const allExceptCustomDomains = UpdateProjectResponseTrustedIpsVariant1DeploymentType._('all_except_custom_domains');
-  static const preview = UpdateProjectResponseTrustedIpsVariant1DeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectResponseTrustedIpsVariant1DeploymentType._('prod_deployment_urls_and_all_previews');
-  static const production = UpdateProjectResponseTrustedIpsVariant1DeploymentType._('production');
+  static const all =
+      UpdateProjectResponseTrustedIpsVariant1DeploymentType._('all');
+  static const allExceptCustomDomains =
+      UpdateProjectResponseTrustedIpsVariant1DeploymentType._(
+          'all_except_custom_domains');
+  static const preview =
+      UpdateProjectResponseTrustedIpsVariant1DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      UpdateProjectResponseTrustedIpsVariant1DeploymentType._(
+          'prod_deployment_urls_and_all_previews');
+  static const production =
+      UpdateProjectResponseTrustedIpsVariant1DeploymentType._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseTrustedIpsVariant1DeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseTrustedIpsVariant1DeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateResourceRequestNotificationVariant0Level {
-
   final String value;
 
   const UpdateResourceRequestNotificationVariant0Level._(this.value);
 
-  factory UpdateResourceRequestNotificationVariant0Level.fromJson(String value) => UpdateResourceRequestNotificationVariant0Level._(value);
+  factory UpdateResourceRequestNotificationVariant0Level.fromJson(
+          String value) =>
+      UpdateResourceRequestNotificationVariant0Level._(value);
 
   static const info = UpdateResourceRequestNotificationVariant0Level._('info');
   static const warn = UpdateResourceRequestNotificationVariant0Level._('warn');
-  static const error = UpdateResourceRequestNotificationVariant0Level._('error');
+  static const error =
+      UpdateResourceRequestNotificationVariant0Level._('error');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateResourceRequestNotificationVariant0Level && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateResourceRequestNotificationVariant0Level &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

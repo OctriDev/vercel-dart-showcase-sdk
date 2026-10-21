@@ -11,30 +11,50 @@ class RevokeInstallationCredentialRequestBody {
   final String clientSecret;
   final SdkOptional<String> clientId;
 
-  const RevokeInstallationCredentialRequestBody({required this.token, required this.clientSecret, this.clientId = const SdkOmitted()});
+  const RevokeInstallationCredentialRequestBody(
+      {required this.token,
+      required this.clientSecret,
+      this.clientId = const SdkOmitted()});
 
-  RevokeInstallationCredentialRequestBody Function({String token, String clientSecret, SdkOptional<String> clientId}) get copyWith => _copyWith;
+  RevokeInstallationCredentialRequestBody Function(
+      {String token,
+      String clientSecret,
+      SdkOptional<String> clientId}) get copyWith => _copyWith;
 
-  RevokeInstallationCredentialRequestBody _copyWith({Object? token = sdkOmittedValue, Object? clientSecret = sdkOmittedValue, Object? clientId = sdkOmittedValue}) => RevokeInstallationCredentialRequestBody(
-    token: identical(token, sdkOmittedValue) ? this.token : token as String,
-    clientSecret: identical(clientSecret, sdkOmittedValue) ? this.clientSecret : clientSecret as String,
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-  );
+  RevokeInstallationCredentialRequestBody _copyWith(
+          {Object? token = sdkOmittedValue,
+          Object? clientSecret = sdkOmittedValue,
+          Object? clientId = sdkOmittedValue}) =>
+      RevokeInstallationCredentialRequestBody(
+        token: identical(token, sdkOmittedValue) ? this.token : token as String,
+        clientSecret: identical(clientSecret, sdkOmittedValue)
+            ? this.clientSecret
+            : clientSecret as String,
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as SdkOptional<String>,
+      );
 
-  factory RevokeInstallationCredentialRequestBody.fromJson(Map<String, dynamic> json) => RevokeInstallationCredentialRequestBody(
-    token: (json['token'] as String?)!,
-    clientSecret: (json['client_secret'] as String?)!,
-    clientId: json['client_id'] != null ? SdkPresent((json['client_id'] as String?)!) : const SdkOmitted(),
-  );
+  factory RevokeInstallationCredentialRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      RevokeInstallationCredentialRequestBody(
+        token: (json['token'] as String?)!,
+        clientSecret: (json['client_secret'] as String?)!,
+        clientId: json['client_id'] != null
+            ? SdkPresent((json['client_id'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'token': token,
-    'client_secret': clientSecret,
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'client_id': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'token': token,
+        'client_secret': clientSecret,
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'client_id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RevokeInstallationCredentialResponse {
@@ -43,47 +63,75 @@ class RevokeInstallationCredentialResponse {
   final RevokeInstallationCredentialResponseAlreadyRevoked alreadyRevoked;
   final RevokeInstallationCredentialResponseRevoked revoked;
 
-  const RevokeInstallationCredentialResponse({required this.alreadyRevoked, required this.revoked});
+  const RevokeInstallationCredentialResponse(
+      {required this.alreadyRevoked, required this.revoked});
 
-  RevokeInstallationCredentialResponse Function({RevokeInstallationCredentialResponseAlreadyRevoked alreadyRevoked, RevokeInstallationCredentialResponseRevoked revoked}) get copyWith => _copyWith;
+  RevokeInstallationCredentialResponse Function(
+          {RevokeInstallationCredentialResponseAlreadyRevoked alreadyRevoked,
+          RevokeInstallationCredentialResponseRevoked revoked})
+      get copyWith => _copyWith;
 
-  RevokeInstallationCredentialResponse _copyWith({Object? alreadyRevoked = sdkOmittedValue, Object? revoked = sdkOmittedValue}) => RevokeInstallationCredentialResponse(
-    alreadyRevoked: identical(alreadyRevoked, sdkOmittedValue) ? this.alreadyRevoked : alreadyRevoked as RevokeInstallationCredentialResponseAlreadyRevoked,
-    revoked: identical(revoked, sdkOmittedValue) ? this.revoked : revoked as RevokeInstallationCredentialResponseRevoked,
-  );
+  RevokeInstallationCredentialResponse _copyWith(
+          {Object? alreadyRevoked = sdkOmittedValue,
+          Object? revoked = sdkOmittedValue}) =>
+      RevokeInstallationCredentialResponse(
+        alreadyRevoked: identical(alreadyRevoked, sdkOmittedValue)
+            ? this.alreadyRevoked
+            : alreadyRevoked
+                as RevokeInstallationCredentialResponseAlreadyRevoked,
+        revoked: identical(revoked, sdkOmittedValue)
+            ? this.revoked
+            : revoked as RevokeInstallationCredentialResponseRevoked,
+      );
 
-  factory RevokeInstallationCredentialResponse.fromJson(Map<String, dynamic> json) => RevokeInstallationCredentialResponse(
-    alreadyRevoked: (json['already_revoked'] != null ? RevokeInstallationCredentialResponseAlreadyRevoked.fromJson(json['already_revoked'] as bool) : null)!,
-    revoked: (json['revoked'] != null ? RevokeInstallationCredentialResponseRevoked.fromJson(json['revoked'] as bool) : null)!,
-  );
+  factory RevokeInstallationCredentialResponse.fromJson(
+          Map<String, dynamic> json) =>
+      RevokeInstallationCredentialResponse(
+        alreadyRevoked: (json['already_revoked'] != null
+            ? RevokeInstallationCredentialResponseAlreadyRevoked.fromJson(
+                json['already_revoked'] as bool)
+            : null)!,
+        revoked: (json['revoked'] != null
+            ? RevokeInstallationCredentialResponseRevoked.fromJson(
+                json['revoked'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'already_revoked': alreadyRevoked.toJson(),
-    'revoked': revoked.toJson(),
-  };
+        'already_revoked': alreadyRevoked.toJson(),
+        'revoked': revoked.toJson(),
+      };
 }
 
 class CreateEventRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Typed representation of the `CreateEventRequestEvent` API schema.
   final CreateEventRequestEvent event;
 
   const CreateEventRequestBody({required this.event});
 
-  CreateEventRequestBody Function({CreateEventRequestEvent event}) get copyWith => _copyWith;
+  CreateEventRequestBody Function({CreateEventRequestEvent event})
+      get copyWith => _copyWith;
 
-  CreateEventRequestBody _copyWith({Object? event = sdkOmittedValue}) => CreateEventRequestBody(
-    event: identical(event, sdkOmittedValue) ? this.event : event as CreateEventRequestEvent,
-  );
+  CreateEventRequestBody _copyWith({Object? event = sdkOmittedValue}) =>
+      CreateEventRequestBody(
+        event: identical(event, sdkOmittedValue)
+            ? this.event
+            : event as CreateEventRequestEvent,
+      );
 
-  factory CreateEventRequestBody.fromJson(Map<String, dynamic> json) => CreateEventRequestBody(
-    event: (json['event'] != null ? CreateEventRequestEvent.fromJson(json['event']) : null)!,
-  );
+  factory CreateEventRequestBody.fromJson(Map<String, dynamic> json) =>
+      CreateEventRequestBody(
+        event: (json['event'] != null
+            ? CreateEventRequestEvent.fromJson(json['event'])
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'event': event.toJson(),
-  };
+        'event': event.toJson(),
+      };
 }
 
 /// The notification, if set, displayed to the user when viewing the resource in Vercel
@@ -95,171 +143,370 @@ class GetIntegrationResourcesResponseResourcesItemNotification {
   final SdkOptional<String> message;
   final String title;
 
-  const GetIntegrationResourcesResponseResourcesItemNotification({this.href = const SdkOmitted(), required this.level, this.message = const SdkOmitted(), required this.title});
+  const GetIntegrationResourcesResponseResourcesItemNotification(
+      {this.href = const SdkOmitted(),
+      required this.level,
+      this.message = const SdkOmitted(),
+      required this.title});
 
-  GetIntegrationResourcesResponseResourcesItemNotification Function({SdkOptional<String> href, GetIntegrationResourcesResponseResourcesItemNotificationLevel level, SdkOptional<String> message, String title}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItemNotification Function(
+      {SdkOptional<String> href,
+      GetIntegrationResourcesResponseResourcesItemNotificationLevel level,
+      SdkOptional<String> message,
+      String title}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItemNotification _copyWith({Object? href = sdkOmittedValue, Object? level = sdkOmittedValue, Object? message = sdkOmittedValue, Object? title = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItemNotification(
-    href: identical(href, sdkOmittedValue) ? this.href : href as SdkOptional<String>,
-    level: identical(level, sdkOmittedValue) ? this.level : level as GetIntegrationResourcesResponseResourcesItemNotificationLevel,
-    message: identical(message, sdkOmittedValue) ? this.message : message as SdkOptional<String>,
-    title: identical(title, sdkOmittedValue) ? this.title : title as String,
-  );
+  GetIntegrationResourcesResponseResourcesItemNotification _copyWith(
+          {Object? href = sdkOmittedValue,
+          Object? level = sdkOmittedValue,
+          Object? message = sdkOmittedValue,
+          Object? title = sdkOmittedValue}) =>
+      GetIntegrationResourcesResponseResourcesItemNotification(
+        href: identical(href, sdkOmittedValue)
+            ? this.href
+            : href as SdkOptional<String>,
+        level: identical(level, sdkOmittedValue)
+            ? this.level
+            : level
+                as GetIntegrationResourcesResponseResourcesItemNotificationLevel,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as SdkOptional<String>,
+        title: identical(title, sdkOmittedValue) ? this.title : title as String,
+      );
 
-  factory GetIntegrationResourcesResponseResourcesItemNotification.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItemNotification(
-    href: json['href'] != null ? SdkPresent((json['href'] as String?)!) : const SdkOmitted(),
-    level: (json['level'] != null ? GetIntegrationResourcesResponseResourcesItemNotificationLevel.fromJson(json['level'] as String) : null)!,
-    message: json['message'] != null ? SdkPresent((json['message'] as String?)!) : const SdkOmitted(),
-    title: (json['title'] as String?)!,
-  );
+  factory GetIntegrationResourcesResponseResourcesItemNotification.fromJson(
+          Map<String, dynamic> json) =>
+      GetIntegrationResourcesResponseResourcesItemNotification(
+        href: json['href'] != null
+            ? SdkPresent((json['href'] as String?)!)
+            : const SdkOmitted(),
+        level: (json['level'] != null
+            ? GetIntegrationResourcesResponseResourcesItemNotificationLevel
+                .fromJson(json['level'] as String)
+            : null)!,
+        message: json['message'] != null
+            ? SdkPresent((json['message'] as String?)!)
+            : const SdkOmitted(),
+        title: (json['title'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (href) {
-      SdkPresent<String>(value: final value) => {'href': value,},
-      _ => const <String, dynamic>{},
-    },
-    'level': level.toJson(),
-    ...switch (message) {
-      SdkPresent<String>(value: final value) => {'message': value,},
-      _ => const <String, dynamic>{},
-    },
-    'title': title,
-  };
+        ...switch (href) {
+          SdkPresent<String>(value: final value) => {
+              'href': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'level': level.toJson(),
+        ...switch (message) {
+          SdkPresent<String>(value: final value) => {
+              'message': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'title': title,
+      };
 }
 
 class GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget target;
+  final GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget
+      target;
   final String url;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem({required this.target, required this.url});
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem(
+      {required this.target, required this.url});
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem Function({GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget target, String url}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem Function(
+      {GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget
+          target,
+      String url}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem _copyWith({Object? target = sdkOmittedValue, Object? url = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem(
-    target: identical(target, sdkOmittedValue) ? this.target : target as GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem
+      _copyWith(
+              {Object? target = sdkOmittedValue,
+              Object? url = sdkOmittedValue}) =>
+          GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem(
+            target: identical(target, sdkOmittedValue)
+                ? this.target
+                : target
+                    as GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget,
+            url: identical(url, sdkOmittedValue) ? this.url : url as String,
+          );
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem(
-    target: (json['target'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget.fromJson(json['target'] as String) : null)!,
-    url: (json['url'] as String?)!,
-  );
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem(
+        target: (json['target'] != null
+            ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget
+                .fromJson(json['target'] as String)
+            : null)!,
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'target': target.toJson(),
-    'url': url,
-  };
+        'target': target.toJson(),
+        'url': url,
+      };
 }
 
 class GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<List<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>> appUrls;
+  final SdkOptional<
+          List<
+              GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>>
+      appUrls;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication({this.appUrls = const SdkOmitted()});
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication(
+      {this.appUrls = const SdkOmitted()});
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication Function({SdkOptional<List<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>> appUrls}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication Function(
+      {SdkOptional<
+              List<
+                  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>>
+          appUrls}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication _copyWith({Object? appUrls = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication(
-    appUrls: identical(appUrls, sdkOmittedValue) ? this.appUrls : appUrls as SdkOptional<List<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>>,
-  );
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication
+      _copyWith({Object? appUrls = sdkOmittedValue}) =>
+          GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication(
+            appUrls: identical(appUrls, sdkOmittedValue)
+                ? this.appUrls
+                : appUrls as SdkOptional<
+                    List<
+                        GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>>,
+          );
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication(
-    appUrls: json['appUrls'] != null ? SdkPresent(((json['appUrls'] as List?)?.map((e) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication.fromJson(
+          Map<String, dynamic> json) =>
+      GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication(
+        appUrls: json['appUrls'] != null
+            ? SdkPresent(((json['appUrls'] as List?)
+                ?.map((e) =>
+                    GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (appUrls) {
-      SdkPresent<List<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>>(value: final value) => {'appUrls': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (appUrls) {
+          SdkPresent<
+                List<
+                    GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItem>>(
+            value: final value
+          ) =>
+            {
+              'appUrls': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> edgeConfigId;
-  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled> edgeConfigSyncingEnabled;
+  final SdkOptional<
+          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>
+      edgeConfigSyncingEnabled;
   final SdkOptional<String> edgeConfigTokenId;
   final SdkOptional<String> globalConfigId;
-  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled> globalConfigSyncingEnabled;
+  final SdkOptional<
+          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>
+      globalConfigSyncingEnabled;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation({this.edgeConfigId = const SdkOmitted(), this.edgeConfigSyncingEnabled = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.globalConfigId = const SdkOmitted(), this.globalConfigSyncingEnabled = const SdkOmitted()});
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
+      {this.edgeConfigId = const SdkOmitted(),
+      this.edgeConfigSyncingEnabled = const SdkOmitted(),
+      this.edgeConfigTokenId = const SdkOmitted(),
+      this.globalConfigId = const SdkOmitted(),
+      this.globalConfigSyncingEnabled = const SdkOmitted()});
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation Function({SdkOptional<String> edgeConfigId, SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled> edgeConfigSyncingEnabled, SdkOptional<String> edgeConfigTokenId, SdkOptional<String> globalConfigId, SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled> globalConfigSyncingEnabled}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation Function(
+      {SdkOptional<String> edgeConfigId,
+      SdkOptional<
+              GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>
+          edgeConfigSyncingEnabled,
+      SdkOptional<String> edgeConfigTokenId,
+      SdkOptional<String> globalConfigId,
+      SdkOptional<
+              GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>
+          globalConfigSyncingEnabled}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation _copyWith({Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigSyncingEnabled = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? globalConfigId = sdkOmittedValue, Object? globalConfigSyncingEnabled = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
-    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String>,
-    edgeConfigSyncingEnabled: identical(edgeConfigSyncingEnabled, sdkOmittedValue) ? this.edgeConfigSyncingEnabled : edgeConfigSyncingEnabled as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>,
-    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String>,
-    globalConfigId: identical(globalConfigId, sdkOmittedValue) ? this.globalConfigId : globalConfigId as SdkOptional<String>,
-    globalConfigSyncingEnabled: identical(globalConfigSyncingEnabled, sdkOmittedValue) ? this.globalConfigSyncingEnabled : globalConfigSyncingEnabled as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>,
-  );
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation
+      _copyWith(
+              {Object? edgeConfigId = sdkOmittedValue,
+              Object? edgeConfigSyncingEnabled = sdkOmittedValue,
+              Object? edgeConfigTokenId = sdkOmittedValue,
+              Object? globalConfigId = sdkOmittedValue,
+              Object? globalConfigSyncingEnabled = sdkOmittedValue}) =>
+          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
+            edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
+                ? this.edgeConfigId
+                : edgeConfigId as SdkOptional<String>,
+            edgeConfigSyncingEnabled: identical(
+                    edgeConfigSyncingEnabled, sdkOmittedValue)
+                ? this.edgeConfigSyncingEnabled
+                : edgeConfigSyncingEnabled as SdkOptional<
+                    GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>,
+            edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
+                ? this.edgeConfigTokenId
+                : edgeConfigTokenId as SdkOptional<String>,
+            globalConfigId: identical(globalConfigId, sdkOmittedValue)
+                ? this.globalConfigId
+                : globalConfigId as SdkOptional<String>,
+            globalConfigSyncingEnabled: identical(
+                    globalConfigSyncingEnabled, sdkOmittedValue)
+                ? this.globalConfigSyncingEnabled
+                : globalConfigSyncingEnabled as SdkOptional<
+                    GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>,
+          );
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
-    edgeConfigId: json['edgeConfigId'] != null ? SdkPresent((json['edgeConfigId'] as String?)!) : const SdkOmitted(),
-    edgeConfigSyncingEnabled: json['edgeConfigSyncingEnabled'] != null ? SdkPresent((json['edgeConfigSyncingEnabled'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled.fromJson(json['edgeConfigSyncingEnabled'] as bool) : null)!) : const SdkOmitted(),
-    edgeConfigTokenId: json['edgeConfigTokenId'] != null ? SdkPresent((json['edgeConfigTokenId'] as String?)!) : const SdkOmitted(),
-    globalConfigId: json['globalConfigId'] != null ? SdkPresent((json['globalConfigId'] as String?)!) : const SdkOmitted(),
-    globalConfigSyncingEnabled: json['globalConfigSyncingEnabled'] != null ? SdkPresent((json['globalConfigSyncingEnabled'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled.fromJson(json['globalConfigSyncingEnabled'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation.fromJson(
+          Map<String, dynamic> json) =>
+      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
+        edgeConfigId: json['edgeConfigId'] != null
+            ? SdkPresent((json['edgeConfigId'] as String?)!)
+            : const SdkOmitted(),
+        edgeConfigSyncingEnabled: json['edgeConfigSyncingEnabled'] != null
+            ? SdkPresent((json['edgeConfigSyncingEnabled'] != null
+                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled
+                    .fromJson(json['edgeConfigSyncingEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        edgeConfigTokenId: json['edgeConfigTokenId'] != null
+            ? SdkPresent((json['edgeConfigTokenId'] as String?)!)
+            : const SdkOmitted(),
+        globalConfigId: json['globalConfigId'] != null
+            ? SdkPresent((json['globalConfigId'] as String?)!)
+            : const SdkOmitted(),
+        globalConfigSyncingEnabled: json['globalConfigSyncingEnabled'] != null
+            ? SdkPresent((json['globalConfigSyncingEnabled'] != null
+                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled
+                    .fromJson(json['globalConfigSyncingEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (edgeConfigId) {
-      SdkPresent<String>(value: final value) => {'edgeConfigId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigSyncingEnabled) {
-      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>(value: final value) => {'edgeConfigSyncingEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigTokenId) {
-      SdkPresent<String>(value: final value) => {'edgeConfigTokenId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (globalConfigId) {
-      SdkPresent<String>(value: final value) => {'globalConfigId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (globalConfigSyncingEnabled) {
-      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>(value: final value) => {'globalConfigSyncingEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (edgeConfigId) {
+          SdkPresent<String>(value: final value) => {
+              'edgeConfigId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigSyncingEnabled) {
+          SdkPresent<
+                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>(
+            value: final value
+          ) =>
+            {
+              'edgeConfigSyncingEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigTokenId) {
+          SdkPresent<String>(value: final value) => {
+              'edgeConfigTokenId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (globalConfigId) {
+          SdkPresent<String>(value: final value) => {
+              'globalConfigId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (globalConfigSyncingEnabled) {
+          SdkPresent<
+                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>(
+            value: final value
+          ) =>
+            {
+              'globalConfigSyncingEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Any settings provided for the resource to support its product's protocols
 class GetIntegrationResourcesResponseResourcesItemProtocolSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication> authentication;
-  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation> experimentation;
+  final SdkOptional<
+          GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>
+      authentication;
+  final SdkOptional<
+          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>
+      experimentation;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettings({this.authentication = const SdkOmitted(), this.experimentation = const SdkOmitted()});
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettings(
+      {this.authentication = const SdkOmitted(),
+      this.experimentation = const SdkOmitted()});
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettings Function({SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication> authentication, SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation> experimentation}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItemProtocolSettings Function(
+      {SdkOptional<
+              GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>
+          authentication,
+      SdkOptional<
+              GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>
+          experimentation}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettings _copyWith({Object? authentication = sdkOmittedValue, Object? experimentation = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItemProtocolSettings(
-    authentication: identical(authentication, sdkOmittedValue) ? this.authentication : authentication as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>,
-    experimentation: identical(experimentation, sdkOmittedValue) ? this.experimentation : experimentation as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>,
-  );
+  GetIntegrationResourcesResponseResourcesItemProtocolSettings _copyWith(
+          {Object? authentication = sdkOmittedValue,
+          Object? experimentation = sdkOmittedValue}) =>
+      GetIntegrationResourcesResponseResourcesItemProtocolSettings(
+        authentication: identical(authentication, sdkOmittedValue)
+            ? this.authentication
+            : authentication as SdkOptional<
+                GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>,
+        experimentation: identical(experimentation, sdkOmittedValue)
+            ? this.experimentation
+            : experimentation as SdkOptional<
+                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>,
+      );
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettings.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItemProtocolSettings(
-    authentication: json['authentication'] != null ? SdkPresent((json['authentication'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication.fromJson(json['authentication'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    experimentation: json['experimentation'] != null ? SdkPresent((json['experimentation'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation.fromJson(json['experimentation'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettings.fromJson(
+          Map<String, dynamic> json) =>
+      GetIntegrationResourcesResponseResourcesItemProtocolSettings(
+        authentication: json['authentication'] != null
+            ? SdkPresent((json['authentication'] != null
+                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication
+                    .fromJson(json['authentication'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        experimentation: json['experimentation'] != null
+            ? SdkPresent((json['experimentation'] != null
+                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation
+                    .fromJson(json['experimentation'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (authentication) {
-      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>(value: final value) => {'authentication': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (experimentation) {
-      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>(value: final value) => {'experimentation': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (authentication) {
+          SdkPresent<
+                GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>(
+            value: final value
+          ) =>
+            {
+              'authentication': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (experimentation) {
+          SdkPresent<
+                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>(
+            value: final value
+          ) =>
+            {
+              'experimentation': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

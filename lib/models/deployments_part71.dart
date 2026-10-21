@@ -7,37 +7,72 @@ part of 'deployments.dart';
 class CreateDeploymentResponseVariant1ServicesItemVariant0Builder {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig> config;
+  final SdkOptional<
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig> config;
   final SdkOptional<String> src;
   final String use;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0Builder({this.config = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
+      {this.config = const SdkOmitted(),
+      this.src = const SdkOmitted(),
+      required this.use});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0Builder Function({SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig> config, SdkOptional<String> src, String use}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0Builder Function(
+      {SdkOptional<
+              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>
+          config,
+      SdkOptional<String> src,
+      String use}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0Builder _copyWith({Object? config = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
-    config: identical(config, sdkOmittedValue) ? this.config : config as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-    use: identical(use, sdkOmittedValue) ? this.use : use as String,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0Builder _copyWith(
+          {Object? config = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? use = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
+        config: identical(config, sdkOmittedValue)
+            ? this.config
+            : config as SdkOptional<
+                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+        use: identical(use, sdkOmittedValue) ? this.use : use as String,
+      );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0Builder.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
-    config: json['config'] != null ? SdkPresent((json['config'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig.fromJson(json['config'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-    use: (json['use'] as String?)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0Builder.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
+        config: json['config'] != null
+            ? SdkPresent((json['config'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig
+                    .fromJson(json['config'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+        use: (json['use'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (config) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>(value: final value) => {'config': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    'use': use,
-  };
+        ...switch (config) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>(
+            value: final value
+          ) =>
+            {
+              'config': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'use': use,
+      };
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue {
@@ -46,72 +81,117 @@ class CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue {
   final String service;
   final CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType type_;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue({required this.service, required this.type_});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
+      {required this.service, required this.type_});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue Function({String service, CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType type_}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue Function(
+      {String service,
+      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType
+          type_}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue _copyWith({Object? service = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
-    service: identical(service, sdkOmittedValue) ? this.service : service as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue _copyWith(
+          {Object? service = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
+        service: identical(service, sdkOmittedValue)
+            ? this.service
+            : service as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType,
+      );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
-    service: (json['service'] as String?)!,
-    type_: (json['type'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType.fromJson(json['type'] as String) : null)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
+        service: (json['service'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'service': service,
-    'type': type_.toJson(),
-  };
+        'service': service,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentResponseVariant1ServicesItemVariant0Schedule();
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0Schedule.fromJson(Object? json) {
-    if (json is String) { return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(json); }
-    if (json is List) { return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(json.map((e) => e as String).toList().cast<String>()); }
-    throw FormatException("No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0Schedule");
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0Schedule.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(
+          json);
+    }
+    if (json is List) {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(
+          json.map((e) => e as String).toList().cast<String>());
+    }
+    throw FormatException(
+        "No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0Schedule");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
   final String value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(this.value);
-  @override Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
   final List<String> value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(this.value);
-  @override Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 sealed class CreateDeploymentResponseVariant1ServicesItemVariant0Topics {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentResponseVariant1ServicesItemVariant0Topics();
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0Topics.fromJson(Object? json) {
-    if (json is List) { return CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListString(json.map((e) => e as String).toList().cast<String>()); }
-    if (json is List) { return CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListMapStringdynamic(json.map((e) => e).toList().cast<Map<String, dynamic>>()); }
-    throw FormatException("No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0Topics");
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0Topics.fromJson(
+      Object? json) {
+    if (json is List) {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListString(
+          json.map((e) => e as String).toList().cast<String>());
+    }
+    if (json is List) {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListMapStringdynamic(
+          json.map((e) => e).toList().cast<Map<String, dynamic>>());
+    }
+    throw FormatException(
+        "No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0Topics");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListString extends CreateDeploymentResponseVariant1ServicesItemVariant0Topics {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListString
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0Topics {
   final List<String> value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListString(this.value);
-  @override Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListMapStringdynamic extends CreateDeploymentResponseVariant1ServicesItemVariant0Topics {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListMapStringdynamic
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0Topics {
   final List<Map<String, dynamic>> value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListMapStringdynamic(this.value);
-  @override Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0TopicsListMapStringdynamic(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item {
@@ -121,33 +201,60 @@ class CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item {
   final SdkOptional<double> retryAfterSeconds;
   final String topic;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item({this.initialDelaySeconds = const SdkOmitted(), this.retryAfterSeconds = const SdkOmitted(), required this.topic});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item(
+      {this.initialDelaySeconds = const SdkOmitted(),
+      this.retryAfterSeconds = const SdkOmitted(),
+      required this.topic});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item Function({SdkOptional<double> initialDelaySeconds, SdkOptional<double> retryAfterSeconds, String topic}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item Function(
+      {SdkOptional<double> initialDelaySeconds,
+      SdkOptional<double> retryAfterSeconds,
+      String topic}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item _copyWith({Object? initialDelaySeconds = sdkOmittedValue, Object? retryAfterSeconds = sdkOmittedValue, Object? topic = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item(
-    initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue) ? this.initialDelaySeconds : initialDelaySeconds as SdkOptional<double>,
-    retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue) ? this.retryAfterSeconds : retryAfterSeconds as SdkOptional<double>,
-    topic: identical(topic, sdkOmittedValue) ? this.topic : topic as String,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item
+      _copyWith(
+              {Object? initialDelaySeconds = sdkOmittedValue,
+              Object? retryAfterSeconds = sdkOmittedValue,
+              Object? topic = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item(
+            initialDelaySeconds: identical(initialDelaySeconds, sdkOmittedValue)
+                ? this.initialDelaySeconds
+                : initialDelaySeconds as SdkOptional<double>,
+            retryAfterSeconds: identical(retryAfterSeconds, sdkOmittedValue)
+                ? this.retryAfterSeconds
+                : retryAfterSeconds as SdkOptional<double>,
+            topic: identical(topic, sdkOmittedValue)
+                ? this.topic
+                : topic as String,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item(
-    initialDelaySeconds: json['initialDelaySeconds'] != null ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    retryAfterSeconds: json['retryAfterSeconds'] != null ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    topic: (json['topic'] as String?)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0TopicsVariant1Item(
+        initialDelaySeconds: json['initialDelaySeconds'] != null
+            ? SdkPresent(((json['initialDelaySeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        retryAfterSeconds: json['retryAfterSeconds'] != null
+            ? SdkPresent(((json['retryAfterSeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        topic: (json['topic'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (initialDelaySeconds) {
-      SdkPresent<double>(value: final value) => {'initialDelaySeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (retryAfterSeconds) {
-      SdkPresent<double>(value: final value) => {'retryAfterSeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'topic': topic,
-  };
+        ...switch (initialDelaySeconds) {
+          SdkPresent<double>(value: final value) => {
+              'initialDelaySeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (retryAfterSeconds) {
+          SdkPresent<double>(value: final value) => {
+              'retryAfterSeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'topic': topic,
+      };
 }
 
 /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
@@ -157,7 +264,9 @@ class CreateDeploymentResponseVariant1ServicesItemVariant0 {
   final SdkOptional<String> buildCommand;
   final CreateDeploymentResponseVariant1ServicesItemVariant0Builder builder;
   final SdkOptional<String> entrypoint;
-  final SdkOptional<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>> env;
+  final SdkOptional<
+      Map<String,
+          CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>> env;
   final SdkOptional<String> framework;
   final SdkOptional<String> group;
   final SdkOptional<String> handlerFunction;
@@ -165,131 +274,341 @@ class CreateDeploymentResponseVariant1ServicesItemVariant0 {
   final String name;
   final SdkOptional<String> preDeployCommand;
   final SdkOptional<String> routePrefix;
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource> routePrefixSource;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource>
+      routePrefixSource;
   final SdkOptional<String> runtime;
   final SdkOptional<dynamic> schedule;
   final CreateDeploymentResponseVariant1ServicesItemVariant0Schema schema;
   final SdkOptional<String> subdomain;
   final SdkOptional<dynamic> topics;
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0Trigger> trigger;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0Trigger>
+      trigger;
   final CreateDeploymentResponseVariant1ServicesItemVariant0Type type_;
   final String workspace;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0({this.buildCommand = const SdkOmitted(), required this.builder, this.entrypoint = const SdkOmitted(), this.env = const SdkOmitted(), this.framework = const SdkOmitted(), this.group = const SdkOmitted(), this.handlerFunction = const SdkOmitted(), this.installCommand = const SdkOmitted(), required this.name, this.preDeployCommand = const SdkOmitted(), this.routePrefix = const SdkOmitted(), this.routePrefixSource = const SdkOmitted(), this.runtime = const SdkOmitted(), this.schedule = const SdkOmitted(), required this.schema, this.subdomain = const SdkOmitted(), this.topics = const SdkOmitted(), this.trigger = const SdkOmitted(), required this.type_, required this.workspace});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0(
+      {this.buildCommand = const SdkOmitted(),
+      required this.builder,
+      this.entrypoint = const SdkOmitted(),
+      this.env = const SdkOmitted(),
+      this.framework = const SdkOmitted(),
+      this.group = const SdkOmitted(),
+      this.handlerFunction = const SdkOmitted(),
+      this.installCommand = const SdkOmitted(),
+      required this.name,
+      this.preDeployCommand = const SdkOmitted(),
+      this.routePrefix = const SdkOmitted(),
+      this.routePrefixSource = const SdkOmitted(),
+      this.runtime = const SdkOmitted(),
+      this.schedule = const SdkOmitted(),
+      required this.schema,
+      this.subdomain = const SdkOmitted(),
+      this.topics = const SdkOmitted(),
+      this.trigger = const SdkOmitted(),
+      required this.type_,
+      required this.workspace});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0 Function({SdkOptional<String> buildCommand, CreateDeploymentResponseVariant1ServicesItemVariant0Builder builder, SdkOptional<String> entrypoint, SdkOptional<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>> env, SdkOptional<String> framework, SdkOptional<String> group, SdkOptional<String> handlerFunction, SdkOptional<String> installCommand, String name, SdkOptional<String> preDeployCommand, SdkOptional<String> routePrefix, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource> routePrefixSource, SdkOptional<String> runtime, SdkOptional<dynamic> schedule, CreateDeploymentResponseVariant1ServicesItemVariant0Schema schema, SdkOptional<String> subdomain, SdkOptional<dynamic> topics, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0Trigger> trigger, CreateDeploymentResponseVariant1ServicesItemVariant0Type type_, String workspace}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0 Function(
+      {SdkOptional<String> buildCommand,
+      CreateDeploymentResponseVariant1ServicesItemVariant0Builder builder,
+      SdkOptional<String> entrypoint,
+      SdkOptional<
+              Map<String,
+                  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>>
+          env,
+      SdkOptional<String> framework,
+      SdkOptional<String> group,
+      SdkOptional<String> handlerFunction,
+      SdkOptional<String> installCommand,
+      String name,
+      SdkOptional<String> preDeployCommand,
+      SdkOptional<String> routePrefix,
+      SdkOptional<
+              CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource>
+          routePrefixSource,
+      SdkOptional<String> runtime,
+      SdkOptional<dynamic> schedule,
+      CreateDeploymentResponseVariant1ServicesItemVariant0Schema schema,
+      SdkOptional<String> subdomain,
+      SdkOptional<dynamic> topics,
+      SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0Trigger>
+          trigger,
+      CreateDeploymentResponseVariant1ServicesItemVariant0Type type_,
+      String workspace}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0 _copyWith({Object? buildCommand = sdkOmittedValue, Object? builder = sdkOmittedValue, Object? entrypoint = sdkOmittedValue, Object? env = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? group = sdkOmittedValue, Object? handlerFunction = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? name = sdkOmittedValue, Object? preDeployCommand = sdkOmittedValue, Object? routePrefix = sdkOmittedValue, Object? routePrefixSource = sdkOmittedValue, Object? runtime = sdkOmittedValue, Object? schedule = sdkOmittedValue, Object? schema = sdkOmittedValue, Object? subdomain = sdkOmittedValue, Object? topics = sdkOmittedValue, Object? trigger = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? workspace = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0(
-    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String>,
-    builder: identical(builder, sdkOmittedValue) ? this.builder : builder as CreateDeploymentResponseVariant1ServicesItemVariant0Builder,
-    entrypoint: identical(entrypoint, sdkOmittedValue) ? this.entrypoint : entrypoint as SdkOptional<String>,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>>,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<String>,
-    group: identical(group, sdkOmittedValue) ? this.group : group as SdkOptional<String>,
-    handlerFunction: identical(handlerFunction, sdkOmittedValue) ? this.handlerFunction : handlerFunction as SdkOptional<String>,
-    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    preDeployCommand: identical(preDeployCommand, sdkOmittedValue) ? this.preDeployCommand : preDeployCommand as SdkOptional<String>,
-    routePrefix: identical(routePrefix, sdkOmittedValue) ? this.routePrefix : routePrefix as SdkOptional<String>,
-    routePrefixSource: identical(routePrefixSource, sdkOmittedValue) ? this.routePrefixSource : routePrefixSource as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource>,
-    runtime: identical(runtime, sdkOmittedValue) ? this.runtime : runtime as SdkOptional<String>,
-    schedule: identical(schedule, sdkOmittedValue) ? this.schedule : schedule as SdkOptional<dynamic>,
-    schema: identical(schema, sdkOmittedValue) ? this.schema : schema as CreateDeploymentResponseVariant1ServicesItemVariant0Schema,
-    subdomain: identical(subdomain, sdkOmittedValue) ? this.subdomain : subdomain as SdkOptional<String>,
-    topics: identical(topics, sdkOmittedValue) ? this.topics : topics as SdkOptional<dynamic>,
-    trigger: identical(trigger, sdkOmittedValue) ? this.trigger : trigger as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0Trigger>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentResponseVariant1ServicesItemVariant0Type,
-    workspace: identical(workspace, sdkOmittedValue) ? this.workspace : workspace as String,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0 _copyWith(
+          {Object? buildCommand = sdkOmittedValue,
+          Object? builder = sdkOmittedValue,
+          Object? entrypoint = sdkOmittedValue,
+          Object? env = sdkOmittedValue,
+          Object? framework = sdkOmittedValue,
+          Object? group = sdkOmittedValue,
+          Object? handlerFunction = sdkOmittedValue,
+          Object? installCommand = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? preDeployCommand = sdkOmittedValue,
+          Object? routePrefix = sdkOmittedValue,
+          Object? routePrefixSource = sdkOmittedValue,
+          Object? runtime = sdkOmittedValue,
+          Object? schedule = sdkOmittedValue,
+          Object? schema = sdkOmittedValue,
+          Object? subdomain = sdkOmittedValue,
+          Object? topics = sdkOmittedValue,
+          Object? trigger = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? workspace = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0(
+        buildCommand: identical(buildCommand, sdkOmittedValue)
+            ? this.buildCommand
+            : buildCommand as SdkOptional<String>,
+        builder: identical(builder, sdkOmittedValue)
+            ? this.builder
+            : builder
+                as CreateDeploymentResponseVariant1ServicesItemVariant0Builder,
+        entrypoint: identical(entrypoint, sdkOmittedValue)
+            ? this.entrypoint
+            : entrypoint as SdkOptional<String>,
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<
+                Map<String,
+                    CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>>,
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<String>,
+        group: identical(group, sdkOmittedValue)
+            ? this.group
+            : group as SdkOptional<String>,
+        handlerFunction: identical(handlerFunction, sdkOmittedValue)
+            ? this.handlerFunction
+            : handlerFunction as SdkOptional<String>,
+        installCommand: identical(installCommand, sdkOmittedValue)
+            ? this.installCommand
+            : installCommand as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        preDeployCommand: identical(preDeployCommand, sdkOmittedValue)
+            ? this.preDeployCommand
+            : preDeployCommand as SdkOptional<String>,
+        routePrefix: identical(routePrefix, sdkOmittedValue)
+            ? this.routePrefix
+            : routePrefix as SdkOptional<String>,
+        routePrefixSource: identical(routePrefixSource, sdkOmittedValue)
+            ? this.routePrefixSource
+            : routePrefixSource as SdkOptional<
+                CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource>,
+        runtime: identical(runtime, sdkOmittedValue)
+            ? this.runtime
+            : runtime as SdkOptional<String>,
+        schedule: identical(schedule, sdkOmittedValue)
+            ? this.schedule
+            : schedule as SdkOptional<dynamic>,
+        schema: identical(schema, sdkOmittedValue)
+            ? this.schema
+            : schema
+                as CreateDeploymentResponseVariant1ServicesItemVariant0Schema,
+        subdomain: identical(subdomain, sdkOmittedValue)
+            ? this.subdomain
+            : subdomain as SdkOptional<String>,
+        topics: identical(topics, sdkOmittedValue)
+            ? this.topics
+            : topics as SdkOptional<dynamic>,
+        trigger: identical(trigger, sdkOmittedValue)
+            ? this.trigger
+            : trigger as SdkOptional<
+                CreateDeploymentResponseVariant1ServicesItemVariant0Trigger>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateDeploymentResponseVariant1ServicesItemVariant0Type,
+        workspace: identical(workspace, sdkOmittedValue)
+            ? this.workspace
+            : workspace as String,
+      );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0(
-    buildCommand: json['buildCommand'] != null ? SdkPresent((json['buildCommand'] as String?)!) : const SdkOmitted(),
-    builder: (json['builder'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0Builder.fromJson(json['builder'] as Map<String, dynamic>) : null)!,
-    entrypoint: json['entrypoint'] != null ? SdkPresent((json['entrypoint'] as String?)!) : const SdkOmitted(),
-    env: json['env'] != null ? SdkPresent((json['env'] == null ? null : Map<String, dynamic>.from(json['env'] as Map).map((key, value) => MapEntry(key, CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    framework: json['framework'] != null ? SdkPresent((json['framework'] as String?)!) : const SdkOmitted(),
-    group: json['group'] != null ? SdkPresent((json['group'] as String?)!) : const SdkOmitted(),
-    handlerFunction: json['handlerFunction'] != null ? SdkPresent((json['handlerFunction'] as String?)!) : const SdkOmitted(),
-    installCommand: json['installCommand'] != null ? SdkPresent((json['installCommand'] as String?)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    preDeployCommand: json['preDeployCommand'] != null ? SdkPresent((json['preDeployCommand'] as String?)!) : const SdkOmitted(),
-    routePrefix: json['routePrefix'] != null ? SdkPresent((json['routePrefix'] as String?)!) : const SdkOmitted(),
-    routePrefixSource: json['routePrefixSource'] != null ? SdkPresent((json['routePrefixSource'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource.fromJson(json['routePrefixSource'] as String) : null)!) : const SdkOmitted(),
-    runtime: json['runtime'] != null ? SdkPresent((json['runtime'] as String?)!) : const SdkOmitted(),
-    schedule: json['schedule'] != null ? SdkPresent((json['schedule'])!) : const SdkOmitted(),
-    schema: (json['schema'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0Schema.fromJson(json['schema'] as String) : null)!,
-    subdomain: json['subdomain'] != null ? SdkPresent((json['subdomain'] as String?)!) : const SdkOmitted(),
-    topics: json['topics'] != null ? SdkPresent((json['topics'])!) : const SdkOmitted(),
-    trigger: json['trigger'] != null ? SdkPresent((json['trigger'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0Trigger.fromJson(json['trigger'] as String) : null)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    workspace: (json['workspace'] as String?)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0(
+        buildCommand: json['buildCommand'] != null
+            ? SdkPresent((json['buildCommand'] as String?)!)
+            : const SdkOmitted(),
+        builder: (json['builder'] != null
+            ? CreateDeploymentResponseVariant1ServicesItemVariant0Builder
+                .fromJson(json['builder'] as Map<String, dynamic>)
+            : null)!,
+        entrypoint: json['entrypoint'] != null
+            ? SdkPresent((json['entrypoint'] as String?)!)
+            : const SdkOmitted(),
+        env: json['env'] != null
+            ? SdkPresent((json['env'] == null
+                ? null
+                : Map<String, dynamic>.from(json['env'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue
+                            .fromJson(value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        framework: json['framework'] != null
+            ? SdkPresent((json['framework'] as String?)!)
+            : const SdkOmitted(),
+        group: json['group'] != null
+            ? SdkPresent((json['group'] as String?)!)
+            : const SdkOmitted(),
+        handlerFunction: json['handlerFunction'] != null
+            ? SdkPresent((json['handlerFunction'] as String?)!)
+            : const SdkOmitted(),
+        installCommand: json['installCommand'] != null
+            ? SdkPresent((json['installCommand'] as String?)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        preDeployCommand: json['preDeployCommand'] != null
+            ? SdkPresent((json['preDeployCommand'] as String?)!)
+            : const SdkOmitted(),
+        routePrefix: json['routePrefix'] != null
+            ? SdkPresent((json['routePrefix'] as String?)!)
+            : const SdkOmitted(),
+        routePrefixSource: json['routePrefixSource'] != null
+            ? SdkPresent((json['routePrefixSource'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource
+                    .fromJson(json['routePrefixSource'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        runtime: json['runtime'] != null
+            ? SdkPresent((json['runtime'] as String?)!)
+            : const SdkOmitted(),
+        schedule: json['schedule'] != null
+            ? SdkPresent((json['schedule'])!)
+            : const SdkOmitted(),
+        schema: (json['schema'] != null
+            ? CreateDeploymentResponseVariant1ServicesItemVariant0Schema
+                .fromJson(json['schema'] as String)
+            : null)!,
+        subdomain: json['subdomain'] != null
+            ? SdkPresent((json['subdomain'] as String?)!)
+            : const SdkOmitted(),
+        topics: json['topics'] != null
+            ? SdkPresent((json['topics'])!)
+            : const SdkOmitted(),
+        trigger: json['trigger'] != null
+            ? SdkPresent((json['trigger'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant0Trigger
+                    .fromJson(json['trigger'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? CreateDeploymentResponseVariant1ServicesItemVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        workspace: (json['workspace'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (buildCommand) {
-      SdkPresent<String>(value: final value) => {'buildCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    'builder': builder.toJson(),
-    ...switch (entrypoint) {
-      SdkPresent<String>(value: final value) => {'entrypoint': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (env) {
-      SdkPresent<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>>(value: final value) => {'env': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (framework) {
-      SdkPresent<String>(value: final value) => {'framework': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (group) {
-      SdkPresent<String>(value: final value) => {'group': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (handlerFunction) {
-      SdkPresent<String>(value: final value) => {'handlerFunction': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (installCommand) {
-      SdkPresent<String>(value: final value) => {'installCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    ...switch (preDeployCommand) {
-      SdkPresent<String>(value: final value) => {'preDeployCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (routePrefix) {
-      SdkPresent<String>(value: final value) => {'routePrefix': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (routePrefixSource) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource>(value: final value) => {'routePrefixSource': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (runtime) {
-      SdkPresent<String>(value: final value) => {'runtime': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (schedule) {
-      SdkPresent<dynamic>(value: final value) => {'schedule': value,},
-      _ => const <String, dynamic>{},
-    },
-    'schema': schema.toJson(),
-    ...switch (subdomain) {
-      SdkPresent<String>(value: final value) => {'subdomain': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (topics) {
-      SdkPresent<dynamic>(value: final value) => {'topics': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (trigger) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0Trigger>(value: final value) => {'trigger': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    'workspace': workspace,
-  };
+        ...switch (buildCommand) {
+          SdkPresent<String>(value: final value) => {
+              'buildCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'builder': builder.toJson(),
+        ...switch (entrypoint) {
+          SdkPresent<String>(value: final value) => {
+              'entrypoint': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (env) {
+          SdkPresent<
+                Map<String,
+                    CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue>>(
+            value: final value
+          ) =>
+            {
+              'env': value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (framework) {
+          SdkPresent<String>(value: final value) => {
+              'framework': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (group) {
+          SdkPresent<String>(value: final value) => {
+              'group': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (handlerFunction) {
+          SdkPresent<String>(value: final value) => {
+              'handlerFunction': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (installCommand) {
+          SdkPresent<String>(value: final value) => {
+              'installCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        ...switch (preDeployCommand) {
+          SdkPresent<String>(value: final value) => {
+              'preDeployCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (routePrefix) {
+          SdkPresent<String>(value: final value) => {
+              'routePrefix': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (routePrefixSource) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource>(
+            value: final value
+          ) =>
+            {
+              'routePrefixSource': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (runtime) {
+          SdkPresent<String>(value: final value) => {
+              'runtime': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (schedule) {
+          SdkPresent<dynamic>(value: final value) => {
+              'schedule': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'schema': schema.toJson(),
+        ...switch (subdomain) {
+          SdkPresent<String>(value: final value) => {
+              'subdomain': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (topics) {
+          SdkPresent<dynamic>(value: final value) => {
+              'topics': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (trigger) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant0Trigger>(
+            value: final value
+          ) =>
+            {
+              'trigger': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        'workspace': workspace,
+      };
 }

@@ -8,254 +8,465 @@ part of 'user.dart';
 class UserEventPayloadVariant25Commitment {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `deferredInvoiceTargetBalance` wire field.
   final String deferredInvoiceTargetBalance;
+
   /// Required `string` value serialized in the `maximumMonthlySpend` wire field.
   final String? maximumMonthlySpend;
 
-  const UserEventPayloadVariant25Commitment({required this.deferredInvoiceTargetBalance, required this.maximumMonthlySpend});
+  const UserEventPayloadVariant25Commitment(
+      {required this.deferredInvoiceTargetBalance,
+      required this.maximumMonthlySpend});
 
-  UserEventPayloadVariant25Commitment Function({String deferredInvoiceTargetBalance, String? maximumMonthlySpend}) get copyWith => _copyWith;
+  UserEventPayloadVariant25Commitment Function(
+      {String deferredInvoiceTargetBalance,
+      String? maximumMonthlySpend}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant25Commitment _copyWith({Object? deferredInvoiceTargetBalance = sdkOmittedValue, Object? maximumMonthlySpend = sdkOmittedValue}) => UserEventPayloadVariant25Commitment(
-    deferredInvoiceTargetBalance: identical(deferredInvoiceTargetBalance, sdkOmittedValue) ? this.deferredInvoiceTargetBalance : deferredInvoiceTargetBalance as String,
-    maximumMonthlySpend: identical(maximumMonthlySpend, sdkOmittedValue) ? this.maximumMonthlySpend : maximumMonthlySpend as String?,
-  );
+  UserEventPayloadVariant25Commitment _copyWith(
+          {Object? deferredInvoiceTargetBalance = sdkOmittedValue,
+          Object? maximumMonthlySpend = sdkOmittedValue}) =>
+      UserEventPayloadVariant25Commitment(
+        deferredInvoiceTargetBalance:
+            identical(deferredInvoiceTargetBalance, sdkOmittedValue)
+                ? this.deferredInvoiceTargetBalance
+                : deferredInvoiceTargetBalance as String,
+        maximumMonthlySpend: identical(maximumMonthlySpend, sdkOmittedValue)
+            ? this.maximumMonthlySpend
+            : maximumMonthlySpend as String?,
+      );
 
-  factory UserEventPayloadVariant25Commitment.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant25Commitment(
-    deferredInvoiceTargetBalance: (json['deferredInvoiceTargetBalance'] as String?)!,
-    maximumMonthlySpend: json.containsKey('maximumMonthlySpend') ? json['maximumMonthlySpend'] as String? : throw ArgumentError.value(null, 'maximumMonthlySpend', 'Required property is missing'),
-  );
+  factory UserEventPayloadVariant25Commitment.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant25Commitment(
+        deferredInvoiceTargetBalance:
+            (json['deferredInvoiceTargetBalance'] as String?)!,
+        maximumMonthlySpend: json.containsKey('maximumMonthlySpend')
+            ? json['maximumMonthlySpend'] as String?
+            : throw ArgumentError.value(
+                null, 'maximumMonthlySpend', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'deferredInvoiceTargetBalance': deferredInvoiceTargetBalance,
-    'maximumMonthlySpend': maximumMonthlySpend,
-  };
+        'deferredInvoiceTargetBalance': deferredInvoiceTargetBalance,
+        'maximumMonthlySpend': maximumMonthlySpend,
+      };
 }
 
 /// Optional object value serialized in the `previous` wire field.
 class UserEventPayloadVariant25Previous {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `maximumMonthlySpend` wire field.
   final String? maximumMonthlySpend;
+
   /// Required `string` value serialized in the `minimumBalance` wire field.
   final String minimumBalance;
+
   /// Required `string` value serialized in the `targetBalance` wire field.
   final String targetBalance;
 
-  const UserEventPayloadVariant25Previous({required this.maximumMonthlySpend, required this.minimumBalance, required this.targetBalance});
+  const UserEventPayloadVariant25Previous(
+      {required this.maximumMonthlySpend,
+      required this.minimumBalance,
+      required this.targetBalance});
 
-  UserEventPayloadVariant25Previous Function({String? maximumMonthlySpend, String minimumBalance, String targetBalance}) get copyWith => _copyWith;
+  UserEventPayloadVariant25Previous Function(
+      {String? maximumMonthlySpend,
+      String minimumBalance,
+      String targetBalance}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant25Previous _copyWith({Object? maximumMonthlySpend = sdkOmittedValue, Object? minimumBalance = sdkOmittedValue, Object? targetBalance = sdkOmittedValue}) => UserEventPayloadVariant25Previous(
-    maximumMonthlySpend: identical(maximumMonthlySpend, sdkOmittedValue) ? this.maximumMonthlySpend : maximumMonthlySpend as String?,
-    minimumBalance: identical(minimumBalance, sdkOmittedValue) ? this.minimumBalance : minimumBalance as String,
-    targetBalance: identical(targetBalance, sdkOmittedValue) ? this.targetBalance : targetBalance as String,
-  );
+  UserEventPayloadVariant25Previous _copyWith(
+          {Object? maximumMonthlySpend = sdkOmittedValue,
+          Object? minimumBalance = sdkOmittedValue,
+          Object? targetBalance = sdkOmittedValue}) =>
+      UserEventPayloadVariant25Previous(
+        maximumMonthlySpend: identical(maximumMonthlySpend, sdkOmittedValue)
+            ? this.maximumMonthlySpend
+            : maximumMonthlySpend as String?,
+        minimumBalance: identical(minimumBalance, sdkOmittedValue)
+            ? this.minimumBalance
+            : minimumBalance as String,
+        targetBalance: identical(targetBalance, sdkOmittedValue)
+            ? this.targetBalance
+            : targetBalance as String,
+      );
 
-  factory UserEventPayloadVariant25Previous.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant25Previous(
-    maximumMonthlySpend: json.containsKey('maximumMonthlySpend') ? json['maximumMonthlySpend'] as String? : throw ArgumentError.value(null, 'maximumMonthlySpend', 'Required property is missing'),
-    minimumBalance: (json['minimumBalance'] as String?)!,
-    targetBalance: (json['targetBalance'] as String?)!,
-  );
+  factory UserEventPayloadVariant25Previous.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant25Previous(
+        maximumMonthlySpend: json.containsKey('maximumMonthlySpend')
+            ? json['maximumMonthlySpend'] as String?
+            : throw ArgumentError.value(
+                null, 'maximumMonthlySpend', 'Required property is missing'),
+        minimumBalance: (json['minimumBalance'] as String?)!,
+        targetBalance: (json['targetBalance'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'maximumMonthlySpend': maximumMonthlySpend,
-    'minimumBalance': minimumBalance,
-    'targetBalance': targetBalance,
-  };
+        'maximumMonthlySpend': maximumMonthlySpend,
+        'minimumBalance': minimumBalance,
+        'targetBalance': targetBalance,
+      };
 }
 
 /// Optional object value serialized in the `settings` wire field.
 class UserEventPayloadVariant25Settings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `maximumMonthlySpend` wire field.
   final String? maximumMonthlySpend;
+
   /// Required `string` value serialized in the `minimumBalance` wire field.
   final String minimumBalance;
+
   /// Required `string` value serialized in the `targetBalance` wire field.
   final String targetBalance;
 
-  const UserEventPayloadVariant25Settings({required this.maximumMonthlySpend, required this.minimumBalance, required this.targetBalance});
+  const UserEventPayloadVariant25Settings(
+      {required this.maximumMonthlySpend,
+      required this.minimumBalance,
+      required this.targetBalance});
 
-  UserEventPayloadVariant25Settings Function({String? maximumMonthlySpend, String minimumBalance, String targetBalance}) get copyWith => _copyWith;
+  UserEventPayloadVariant25Settings Function(
+      {String? maximumMonthlySpend,
+      String minimumBalance,
+      String targetBalance}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant25Settings _copyWith({Object? maximumMonthlySpend = sdkOmittedValue, Object? minimumBalance = sdkOmittedValue, Object? targetBalance = sdkOmittedValue}) => UserEventPayloadVariant25Settings(
-    maximumMonthlySpend: identical(maximumMonthlySpend, sdkOmittedValue) ? this.maximumMonthlySpend : maximumMonthlySpend as String?,
-    minimumBalance: identical(minimumBalance, sdkOmittedValue) ? this.minimumBalance : minimumBalance as String,
-    targetBalance: identical(targetBalance, sdkOmittedValue) ? this.targetBalance : targetBalance as String,
-  );
+  UserEventPayloadVariant25Settings _copyWith(
+          {Object? maximumMonthlySpend = sdkOmittedValue,
+          Object? minimumBalance = sdkOmittedValue,
+          Object? targetBalance = sdkOmittedValue}) =>
+      UserEventPayloadVariant25Settings(
+        maximumMonthlySpend: identical(maximumMonthlySpend, sdkOmittedValue)
+            ? this.maximumMonthlySpend
+            : maximumMonthlySpend as String?,
+        minimumBalance: identical(minimumBalance, sdkOmittedValue)
+            ? this.minimumBalance
+            : minimumBalance as String,
+        targetBalance: identical(targetBalance, sdkOmittedValue)
+            ? this.targetBalance
+            : targetBalance as String,
+      );
 
-  factory UserEventPayloadVariant25Settings.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant25Settings(
-    maximumMonthlySpend: json.containsKey('maximumMonthlySpend') ? json['maximumMonthlySpend'] as String? : throw ArgumentError.value(null, 'maximumMonthlySpend', 'Required property is missing'),
-    minimumBalance: (json['minimumBalance'] as String?)!,
-    targetBalance: (json['targetBalance'] as String?)!,
-  );
+  factory UserEventPayloadVariant25Settings.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant25Settings(
+        maximumMonthlySpend: json.containsKey('maximumMonthlySpend')
+            ? json['maximumMonthlySpend'] as String?
+            : throw ArgumentError.value(
+                null, 'maximumMonthlySpend', 'Required property is missing'),
+        minimumBalance: (json['minimumBalance'] as String?)!,
+        targetBalance: (json['targetBalance'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'maximumMonthlySpend': maximumMonthlySpend,
-    'minimumBalance': minimumBalance,
-    'targetBalance': targetBalance,
-  };
+        'maximumMonthlySpend': maximumMonthlySpend,
+        'minimumBalance': minimumBalance,
+        'targetBalance': targetBalance,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant25 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `change` wire field.
   final UserEventPayloadVariant25Change change;
+
   /// Optional object value serialized in the `commitment` wire field.
   final SdkOptional<UserEventPayloadVariant25Commitment> commitment;
+
   /// Optional object value serialized in the `previous` wire field.
   final SdkOptional<UserEventPayloadVariant25Previous> previous;
+
   /// Optional object value serialized in the `settings` wire field.
   final SdkOptional<UserEventPayloadVariant25Settings> settings;
 
-  const UserEventPayloadVariant25({required this.change, this.commitment = const SdkOmitted(), this.previous = const SdkOmitted(), this.settings = const SdkOmitted()});
+  const UserEventPayloadVariant25(
+      {required this.change,
+      this.commitment = const SdkOmitted(),
+      this.previous = const SdkOmitted(),
+      this.settings = const SdkOmitted()});
 
-  UserEventPayloadVariant25 Function({UserEventPayloadVariant25Change change, SdkOptional<UserEventPayloadVariant25Commitment> commitment, SdkOptional<UserEventPayloadVariant25Previous> previous, SdkOptional<UserEventPayloadVariant25Settings> settings}) get copyWith => _copyWith;
+  UserEventPayloadVariant25 Function(
+          {UserEventPayloadVariant25Change change,
+          SdkOptional<UserEventPayloadVariant25Commitment> commitment,
+          SdkOptional<UserEventPayloadVariant25Previous> previous,
+          SdkOptional<UserEventPayloadVariant25Settings> settings})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant25 _copyWith({Object? change = sdkOmittedValue, Object? commitment = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? settings = sdkOmittedValue}) => UserEventPayloadVariant25(
-    change: identical(change, sdkOmittedValue) ? this.change : change as UserEventPayloadVariant25Change,
-    commitment: identical(commitment, sdkOmittedValue) ? this.commitment : commitment as SdkOptional<UserEventPayloadVariant25Commitment>,
-    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as SdkOptional<UserEventPayloadVariant25Previous>,
-    settings: identical(settings, sdkOmittedValue) ? this.settings : settings as SdkOptional<UserEventPayloadVariant25Settings>,
-  );
+  UserEventPayloadVariant25 _copyWith(
+          {Object? change = sdkOmittedValue,
+          Object? commitment = sdkOmittedValue,
+          Object? previous = sdkOmittedValue,
+          Object? settings = sdkOmittedValue}) =>
+      UserEventPayloadVariant25(
+        change: identical(change, sdkOmittedValue)
+            ? this.change
+            : change as UserEventPayloadVariant25Change,
+        commitment: identical(commitment, sdkOmittedValue)
+            ? this.commitment
+            : commitment as SdkOptional<UserEventPayloadVariant25Commitment>,
+        previous: identical(previous, sdkOmittedValue)
+            ? this.previous
+            : previous as SdkOptional<UserEventPayloadVariant25Previous>,
+        settings: identical(settings, sdkOmittedValue)
+            ? this.settings
+            : settings as SdkOptional<UserEventPayloadVariant25Settings>,
+      );
 
-  factory UserEventPayloadVariant25.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant25(
-    change: (json['change'] != null ? UserEventPayloadVariant25Change.fromJson(json['change'] as String) : null)!,
-    commitment: json['commitment'] != null ? SdkPresent((json['commitment'] != null ? UserEventPayloadVariant25Commitment.fromJson(json['commitment'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    previous: json['previous'] != null ? SdkPresent((json['previous'] != null ? UserEventPayloadVariant25Previous.fromJson(json['previous'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    settings: json['settings'] != null ? SdkPresent((json['settings'] != null ? UserEventPayloadVariant25Settings.fromJson(json['settings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant25.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant25(
+        change: (json['change'] != null
+            ? UserEventPayloadVariant25Change.fromJson(json['change'] as String)
+            : null)!,
+        commitment: json['commitment'] != null
+            ? SdkPresent((json['commitment'] != null
+                ? UserEventPayloadVariant25Commitment.fromJson(
+                    json['commitment'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        previous: json['previous'] != null
+            ? SdkPresent((json['previous'] != null
+                ? UserEventPayloadVariant25Previous.fromJson(
+                    json['previous'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        settings: json['settings'] != null
+            ? SdkPresent((json['settings'] != null
+                ? UserEventPayloadVariant25Settings.fromJson(
+                    json['settings'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'change': change.toJson(),
-    ...switch (commitment) {
-      SdkPresent<UserEventPayloadVariant25Commitment>(value: final value) => {'commitment': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (previous) {
-      SdkPresent<UserEventPayloadVariant25Previous>(value: final value) => {'previous': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (settings) {
-      SdkPresent<UserEventPayloadVariant25Settings>(value: final value) => {'settings': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'change': change.toJson(),
+        ...switch (commitment) {
+          SdkPresent<UserEventPayloadVariant25Commitment>(value: final value) =>
+            {
+              'commitment': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (previous) {
+          SdkPresent<UserEventPayloadVariant25Previous>(value: final value) => {
+              'previous': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (settings) {
+          SdkPresent<UserEventPayloadVariant25Settings>(value: final value) => {
+              'settings': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Spend budget on an AI Gateway API key, as surfaced in activity messages. Defined locally (rather than imported from `@api/pubsub-types`) because `@api/pubsub-types` already depends on `@api/events`; importing it here would create a circular dependency. Must stay structurally aligned with `APIKeyBudget` in `@api/pubsub-types/event-payloads/api-keys`.
 class UserEventPayloadVariant26Budget {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional array value serialized in the `alertThresholds` wire field.
   final SdkOptional<List<double>> alertThresholds;
+
   /// Spend cap, in dollars.
   final double limitAmount;
+
   /// Required enumerated value serialized in the `refreshPeriod` wire field.
   final UserEventPayloadVariant26BudgetRefreshPeriod refreshPeriod;
 
-  const UserEventPayloadVariant26Budget({this.alertThresholds = const SdkOmitted(), required this.limitAmount, required this.refreshPeriod});
+  const UserEventPayloadVariant26Budget(
+      {this.alertThresholds = const SdkOmitted(),
+      required this.limitAmount,
+      required this.refreshPeriod});
 
-  UserEventPayloadVariant26Budget Function({SdkOptional<List<double>> alertThresholds, double limitAmount, UserEventPayloadVariant26BudgetRefreshPeriod refreshPeriod}) get copyWith => _copyWith;
+  UserEventPayloadVariant26Budget Function(
+          {SdkOptional<List<double>> alertThresholds,
+          double limitAmount,
+          UserEventPayloadVariant26BudgetRefreshPeriod refreshPeriod})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant26Budget _copyWith({Object? alertThresholds = sdkOmittedValue, Object? limitAmount = sdkOmittedValue, Object? refreshPeriod = sdkOmittedValue}) => UserEventPayloadVariant26Budget(
-    alertThresholds: identical(alertThresholds, sdkOmittedValue) ? this.alertThresholds : alertThresholds as SdkOptional<List<double>>,
-    limitAmount: identical(limitAmount, sdkOmittedValue) ? this.limitAmount : limitAmount as double,
-    refreshPeriod: identical(refreshPeriod, sdkOmittedValue) ? this.refreshPeriod : refreshPeriod as UserEventPayloadVariant26BudgetRefreshPeriod,
-  );
+  UserEventPayloadVariant26Budget _copyWith(
+          {Object? alertThresholds = sdkOmittedValue,
+          Object? limitAmount = sdkOmittedValue,
+          Object? refreshPeriod = sdkOmittedValue}) =>
+      UserEventPayloadVariant26Budget(
+        alertThresholds: identical(alertThresholds, sdkOmittedValue)
+            ? this.alertThresholds
+            : alertThresholds as SdkOptional<List<double>>,
+        limitAmount: identical(limitAmount, sdkOmittedValue)
+            ? this.limitAmount
+            : limitAmount as double,
+        refreshPeriod: identical(refreshPeriod, sdkOmittedValue)
+            ? this.refreshPeriod
+            : refreshPeriod as UserEventPayloadVariant26BudgetRefreshPeriod,
+      );
 
-  factory UserEventPayloadVariant26Budget.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant26Budget(
-    alertThresholds: json['alertThresholds'] != null ? SdkPresent(((json['alertThresholds'] as List?)?.map((e) => (e as num).toDouble()).toList())!) : const SdkOmitted(),
-    limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
-    refreshPeriod: (json['refreshPeriod'] != null ? UserEventPayloadVariant26BudgetRefreshPeriod.fromJson(json['refreshPeriod'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant26Budget.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant26Budget(
+        alertThresholds: json['alertThresholds'] != null
+            ? SdkPresent(((json['alertThresholds'] as List?)
+                ?.map((e) => (e as num).toDouble())
+                .toList())!)
+            : const SdkOmitted(),
+        limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
+        refreshPeriod: (json['refreshPeriod'] != null
+            ? UserEventPayloadVariant26BudgetRefreshPeriod.fromJson(
+                json['refreshPeriod'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alertThresholds) {
-      SdkPresent<List<double>>(value: final value) => {'alertThresholds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'limitAmount': limitAmount,
-    'refreshPeriod': refreshPeriod.toJson(),
-  };
+        ...switch (alertThresholds) {
+          SdkPresent<List<double>>(value: final value) => {
+              'alertThresholds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'limitAmount': limitAmount,
+        'refreshPeriod': refreshPeriod.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant26 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Spend budget on an AI Gateway API key, as surfaced in activity messages. Defined locally (rather than imported from `@api/pubsub-types`) because `@api/pubsub-types` already depends on `@api/events`; importing it here would create a circular dependency. Must stay structurally aligned with `APIKeyBudget` in `@api/pubsub-types/event-payloads/api-keys`.
   final SdkOptional<UserEventPayloadVariant26Budget?> budget;
+
   /// Required enumerated value serialized in the `change` wire field.
   final UserEventPayloadVariant26Change change;
+
   /// Required enumerated value serialized in the `scopeType` wire field.
   final UserEventPayloadVariant26ScopeType scopeType;
 
-  const UserEventPayloadVariant26({this.budget = const SdkOmitted(), required this.change, required this.scopeType});
+  const UserEventPayloadVariant26(
+      {this.budget = const SdkOmitted(),
+      required this.change,
+      required this.scopeType});
 
-  UserEventPayloadVariant26 Function({SdkOptional<UserEventPayloadVariant26Budget?> budget, UserEventPayloadVariant26Change change, UserEventPayloadVariant26ScopeType scopeType}) get copyWith => _copyWith;
+  UserEventPayloadVariant26 Function(
+      {SdkOptional<UserEventPayloadVariant26Budget?> budget,
+      UserEventPayloadVariant26Change change,
+      UserEventPayloadVariant26ScopeType scopeType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant26 _copyWith({Object? budget = sdkOmittedValue, Object? change = sdkOmittedValue, Object? scopeType = sdkOmittedValue}) => UserEventPayloadVariant26(
-    budget: identical(budget, sdkOmittedValue) ? this.budget : budget as SdkOptional<UserEventPayloadVariant26Budget?>,
-    change: identical(change, sdkOmittedValue) ? this.change : change as UserEventPayloadVariant26Change,
-    scopeType: identical(scopeType, sdkOmittedValue) ? this.scopeType : scopeType as UserEventPayloadVariant26ScopeType,
-  );
+  UserEventPayloadVariant26 _copyWith(
+          {Object? budget = sdkOmittedValue,
+          Object? change = sdkOmittedValue,
+          Object? scopeType = sdkOmittedValue}) =>
+      UserEventPayloadVariant26(
+        budget: identical(budget, sdkOmittedValue)
+            ? this.budget
+            : budget as SdkOptional<UserEventPayloadVariant26Budget?>,
+        change: identical(change, sdkOmittedValue)
+            ? this.change
+            : change as UserEventPayloadVariant26Change,
+        scopeType: identical(scopeType, sdkOmittedValue)
+            ? this.scopeType
+            : scopeType as UserEventPayloadVariant26ScopeType,
+      );
 
-  factory UserEventPayloadVariant26.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant26(
-    budget: json.containsKey('budget') ? SdkPresent(json['budget'] != null ? UserEventPayloadVariant26Budget.fromJson(json['budget'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    change: (json['change'] != null ? UserEventPayloadVariant26Change.fromJson(json['change'] as String) : null)!,
-    scopeType: (json['scopeType'] != null ? UserEventPayloadVariant26ScopeType.fromJson(json['scopeType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant26.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant26(
+        budget: json.containsKey('budget')
+            ? SdkPresent(json['budget'] != null
+                ? UserEventPayloadVariant26Budget.fromJson(
+                    json['budget'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        change: (json['change'] != null
+            ? UserEventPayloadVariant26Change.fromJson(json['change'] as String)
+            : null)!,
+        scopeType: (json['scopeType'] != null
+            ? UserEventPayloadVariant26ScopeType.fromJson(
+                json['scopeType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (budget) {
-      SdkPresent<UserEventPayloadVariant26Budget?>(value: final value) => {'budget': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'change': change.toJson(),
-    'scopeType': scopeType.toJson(),
-  };
+        ...switch (budget) {
+          SdkPresent<UserEventPayloadVariant26Budget?>(value: final value) => {
+              'budget': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'change': change.toJson(),
+        'scopeType': scopeType.toJson(),
+      };
 }
 
 /// Spend budget on an AI Gateway API key, as surfaced in activity messages. Defined locally (rather than imported from `@api/pubsub-types`) because `@api/pubsub-types` already depends on `@api/events`; importing it here would create a circular dependency. Must stay structurally aligned with `APIKeyBudget` in `@api/pubsub-types/event-payloads/api-keys`.
 class UserEventPayloadVariant27Budget {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional array value serialized in the `alertThresholds` wire field.
   final SdkOptional<List<double>> alertThresholds;
+
   /// Spend cap, in dollars.
   final double limitAmount;
+
   /// Required enumerated value serialized in the `refreshPeriod` wire field.
   final UserEventPayloadVariant27BudgetRefreshPeriod refreshPeriod;
 
-  const UserEventPayloadVariant27Budget({this.alertThresholds = const SdkOmitted(), required this.limitAmount, required this.refreshPeriod});
+  const UserEventPayloadVariant27Budget(
+      {this.alertThresholds = const SdkOmitted(),
+      required this.limitAmount,
+      required this.refreshPeriod});
 
-  UserEventPayloadVariant27Budget Function({SdkOptional<List<double>> alertThresholds, double limitAmount, UserEventPayloadVariant27BudgetRefreshPeriod refreshPeriod}) get copyWith => _copyWith;
+  UserEventPayloadVariant27Budget Function(
+          {SdkOptional<List<double>> alertThresholds,
+          double limitAmount,
+          UserEventPayloadVariant27BudgetRefreshPeriod refreshPeriod})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant27Budget _copyWith({Object? alertThresholds = sdkOmittedValue, Object? limitAmount = sdkOmittedValue, Object? refreshPeriod = sdkOmittedValue}) => UserEventPayloadVariant27Budget(
-    alertThresholds: identical(alertThresholds, sdkOmittedValue) ? this.alertThresholds : alertThresholds as SdkOptional<List<double>>,
-    limitAmount: identical(limitAmount, sdkOmittedValue) ? this.limitAmount : limitAmount as double,
-    refreshPeriod: identical(refreshPeriod, sdkOmittedValue) ? this.refreshPeriod : refreshPeriod as UserEventPayloadVariant27BudgetRefreshPeriod,
-  );
+  UserEventPayloadVariant27Budget _copyWith(
+          {Object? alertThresholds = sdkOmittedValue,
+          Object? limitAmount = sdkOmittedValue,
+          Object? refreshPeriod = sdkOmittedValue}) =>
+      UserEventPayloadVariant27Budget(
+        alertThresholds: identical(alertThresholds, sdkOmittedValue)
+            ? this.alertThresholds
+            : alertThresholds as SdkOptional<List<double>>,
+        limitAmount: identical(limitAmount, sdkOmittedValue)
+            ? this.limitAmount
+            : limitAmount as double,
+        refreshPeriod: identical(refreshPeriod, sdkOmittedValue)
+            ? this.refreshPeriod
+            : refreshPeriod as UserEventPayloadVariant27BudgetRefreshPeriod,
+      );
 
-  factory UserEventPayloadVariant27Budget.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant27Budget(
-    alertThresholds: json['alertThresholds'] != null ? SdkPresent(((json['alertThresholds'] as List?)?.map((e) => (e as num).toDouble()).toList())!) : const SdkOmitted(),
-    limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
-    refreshPeriod: (json['refreshPeriod'] != null ? UserEventPayloadVariant27BudgetRefreshPeriod.fromJson(json['refreshPeriod'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant27Budget.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant27Budget(
+        alertThresholds: json['alertThresholds'] != null
+            ? SdkPresent(((json['alertThresholds'] as List?)
+                ?.map((e) => (e as num).toDouble())
+                .toList())!)
+            : const SdkOmitted(),
+        limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
+        refreshPeriod: (json['refreshPeriod'] != null
+            ? UserEventPayloadVariant27BudgetRefreshPeriod.fromJson(
+                json['refreshPeriod'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alertThresholds) {
-      SdkPresent<List<double>>(value: final value) => {'alertThresholds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'limitAmount': limitAmount,
-    'refreshPeriod': refreshPeriod.toJson(),
-  };
+        ...switch (alertThresholds) {
+          SdkPresent<List<double>>(value: final value) => {
+              'alertThresholds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'limitAmount': limitAmount,
+        'refreshPeriod': refreshPeriod.toJson(),
+      };
 }

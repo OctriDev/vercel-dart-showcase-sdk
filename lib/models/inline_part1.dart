@@ -5,275 +5,346 @@ part of 'inline.dart';
 
 // Inline operation models (part 1)
 final class AddBypassIpResponseVariant0Ok {
-
   final bool value;
 
   const AddBypassIpResponseVariant0Ok._(this.value);
 
-  factory AddBypassIpResponseVariant0Ok.fromJson(bool value) => AddBypassIpResponseVariant0Ok._(value);
+  factory AddBypassIpResponseVariant0Ok.fromJson(bool value) =>
+      AddBypassIpResponseVariant0Ok._(value);
 
   static const false_ = AddBypassIpResponseVariant0Ok._(false);
   static const true_ = AddBypassIpResponseVariant0Ok._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddBypassIpResponseVariant0Ok && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddBypassIpResponseVariant0Ok && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddBypassIpResponseVariant0ResultItemIsProjectRule {
-
   final bool value;
 
   const AddBypassIpResponseVariant0ResultItemIsProjectRule._(this.value);
 
-  factory AddBypassIpResponseVariant0ResultItemIsProjectRule.fromJson(bool value) => AddBypassIpResponseVariant0ResultItemIsProjectRule._(value);
+  factory AddBypassIpResponseVariant0ResultItemIsProjectRule.fromJson(
+          bool value) =>
+      AddBypassIpResponseVariant0ResultItemIsProjectRule._(value);
 
-  static const false_ = AddBypassIpResponseVariant0ResultItemIsProjectRule._(false);
-  static const true_ = AddBypassIpResponseVariant0ResultItemIsProjectRule._(true);
+  static const false_ =
+      AddBypassIpResponseVariant0ResultItemIsProjectRule._(false);
+  static const true_ =
+      AddBypassIpResponseVariant0ResultItemIsProjectRule._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddBypassIpResponseVariant0ResultItemIsProjectRule && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddBypassIpResponseVariant0ResultItemIsProjectRule &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddBypassIpResponseVariant1Ok {
-
   final bool value;
 
   const AddBypassIpResponseVariant1Ok._(this.value);
 
-  factory AddBypassIpResponseVariant1Ok.fromJson(bool value) => AddBypassIpResponseVariant1Ok._(value);
+  factory AddBypassIpResponseVariant1Ok.fromJson(bool value) =>
+      AddBypassIpResponseVariant1Ok._(value);
 
   static const false_ = AddBypassIpResponseVariant1Ok._(false);
   static const true_ = AddBypassIpResponseVariant1Ok._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddBypassIpResponseVariant1Ok && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddBypassIpResponseVariant1Ok && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddBypassIpResponseVariant1ResultItemAction {
-
   final String value;
 
   const AddBypassIpResponseVariant1ResultItemAction._(this.value);
 
-  factory AddBypassIpResponseVariant1ResultItemAction.fromJson(String value) => AddBypassIpResponseVariant1ResultItemAction._(value);
+  factory AddBypassIpResponseVariant1ResultItemAction.fromJson(String value) =>
+      AddBypassIpResponseVariant1ResultItemAction._(value);
 
   static const block = AddBypassIpResponseVariant1ResultItemAction._('block');
   static const bypass = AddBypassIpResponseVariant1ResultItemAction._('bypass');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddBypassIpResponseVariant1ResultItemAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddBypassIpResponseVariant1ResultItemAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddBypassIpResponseVariant1ResultItemIsProjectRule {
-
   final bool value;
 
   const AddBypassIpResponseVariant1ResultItemIsProjectRule._(this.value);
 
-  factory AddBypassIpResponseVariant1ResultItemIsProjectRule.fromJson(bool value) => AddBypassIpResponseVariant1ResultItemIsProjectRule._(value);
+  factory AddBypassIpResponseVariant1ResultItemIsProjectRule.fromJson(
+          bool value) =>
+      AddBypassIpResponseVariant1ResultItemIsProjectRule._(value);
 
-  static const false_ = AddBypassIpResponseVariant1ResultItemIsProjectRule._(false);
-  static const true_ = AddBypassIpResponseVariant1ResultItemIsProjectRule._(true);
+  static const false_ =
+      AddBypassIpResponseVariant1ResultItemIsProjectRule._(false);
+  static const true_ =
+      AddBypassIpResponseVariant1ResultItemIsProjectRule._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddBypassIpResponseVariant1ResultItemIsProjectRule && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddBypassIpResponseVariant1ResultItemIsProjectRule &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class AdditionalContactInfoRequiredCode {
-
   final String value;
 
   const AdditionalContactInfoRequiredCode._(this.value);
 
-  factory AdditionalContactInfoRequiredCode.fromJson(String value) => AdditionalContactInfoRequiredCode._(value);
+  factory AdditionalContactInfoRequiredCode.fromJson(String value) =>
+      AdditionalContactInfoRequiredCode._(value);
 
-  static const additionalContactInfoRequired = AdditionalContactInfoRequiredCode._('additional_contact_info_required');
+  static const additionalContactInfoRequired =
+      AdditionalContactInfoRequiredCode._('additional_contact_info_required');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AdditionalContactInfoRequiredCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AdditionalContactInfoRequiredCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class AdditionalContactInfoRequiredStatus {
-
   final int value;
 
   const AdditionalContactInfoRequiredStatus._(this.value);
 
-  factory AdditionalContactInfoRequiredStatus.fromJson(int value) => AdditionalContactInfoRequiredStatus._(value);
+  factory AdditionalContactInfoRequiredStatus.fromJson(int value) =>
+      AdditionalContactInfoRequiredStatus._(value);
 
   static const v400 = AdditionalContactInfoRequiredStatus._(400);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AdditionalContactInfoRequiredStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AdditionalContactInfoRequiredStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
 final class AddRouteResponseRouteRouteDestinationVariant1Type {
-
   final String value;
 
   const AddRouteResponseRouteRouteDestinationVariant1Type._(this.value);
 
-  factory AddRouteResponseRouteRouteDestinationVariant1Type.fromJson(String value) => AddRouteResponseRouteRouteDestinationVariant1Type._(value);
+  factory AddRouteResponseRouteRouteDestinationVariant1Type.fromJson(
+          String value) =>
+      AddRouteResponseRouteRouteDestinationVariant1Type._(value);
 
-  static const service = AddRouteResponseRouteRouteDestinationVariant1Type._('service');
+  static const service =
+      AddRouteResponseRouteRouteDestinationVariant1Type._('service');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteDestinationVariant1Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteDestinationVariant1Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteHasItemVariant0Type {
-
   final String value;
 
   const AddRouteResponseRouteRouteHasItemVariant0Type._(this.value);
 
-  factory AddRouteResponseRouteRouteHasItemVariant0Type.fromJson(String value) => AddRouteResponseRouteRouteHasItemVariant0Type._(value);
+  factory AddRouteResponseRouteRouteHasItemVariant0Type.fromJson(
+          String value) =>
+      AddRouteResponseRouteRouteHasItemVariant0Type._(value);
 
   static const host = AddRouteResponseRouteRouteHasItemVariant0Type._('host');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteHasItemVariant0Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteHasItemVariant0Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteHasItemVariant1Type {
-
   final String value;
 
   const AddRouteResponseRouteRouteHasItemVariant1Type._(this.value);
 
-  factory AddRouteResponseRouteRouteHasItemVariant1Type.fromJson(String value) => AddRouteResponseRouteRouteHasItemVariant1Type._(value);
+  factory AddRouteResponseRouteRouteHasItemVariant1Type.fromJson(
+          String value) =>
+      AddRouteResponseRouteRouteHasItemVariant1Type._(value);
 
-  static const cookie = AddRouteResponseRouteRouteHasItemVariant1Type._('cookie');
-  static const header = AddRouteResponseRouteRouteHasItemVariant1Type._('header');
+  static const cookie =
+      AddRouteResponseRouteRouteHasItemVariant1Type._('cookie');
+  static const header =
+      AddRouteResponseRouteRouteHasItemVariant1Type._('header');
   static const query = AddRouteResponseRouteRouteHasItemVariant1Type._('query');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteHasItemVariant1Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteHasItemVariant1Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteMissingItemVariant0Type {
-
   final String value;
 
   const AddRouteResponseRouteRouteMissingItemVariant0Type._(this.value);
 
-  factory AddRouteResponseRouteRouteMissingItemVariant0Type.fromJson(String value) => AddRouteResponseRouteRouteMissingItemVariant0Type._(value);
+  factory AddRouteResponseRouteRouteMissingItemVariant0Type.fromJson(
+          String value) =>
+      AddRouteResponseRouteRouteMissingItemVariant0Type._(value);
 
-  static const host = AddRouteResponseRouteRouteMissingItemVariant0Type._('host');
+  static const host =
+      AddRouteResponseRouteRouteMissingItemVariant0Type._('host');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteMissingItemVariant0Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteMissingItemVariant0Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteMissingItemVariant1Type {
-
   final String value;
 
   const AddRouteResponseRouteRouteMissingItemVariant1Type._(this.value);
 
-  factory AddRouteResponseRouteRouteMissingItemVariant1Type.fromJson(String value) => AddRouteResponseRouteRouteMissingItemVariant1Type._(value);
+  factory AddRouteResponseRouteRouteMissingItemVariant1Type.fromJson(
+          String value) =>
+      AddRouteResponseRouteRouteMissingItemVariant1Type._(value);
 
-  static const cookie = AddRouteResponseRouteRouteMissingItemVariant1Type._('cookie');
-  static const header = AddRouteResponseRouteRouteMissingItemVariant1Type._('header');
-  static const query = AddRouteResponseRouteRouteMissingItemVariant1Type._('query');
+  static const cookie =
+      AddRouteResponseRouteRouteMissingItemVariant1Type._('cookie');
+  static const header =
+      AddRouteResponseRouteRouteMissingItemVariant1Type._('header');
+  static const query =
+      AddRouteResponseRouteRouteMissingItemVariant1Type._('query');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteMissingItemVariant1Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteMissingItemVariant1Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteTransformsItemVariant0Op {
-
   final String value;
 
   const AddRouteResponseRouteRouteTransformsItemVariant0Op._(this.value);
 
-  factory AddRouteResponseRouteRouteTransformsItemVariant0Op.fromJson(String value) => AddRouteResponseRouteRouteTransformsItemVariant0Op._(value);
+  factory AddRouteResponseRouteRouteTransformsItemVariant0Op.fromJson(
+          String value) =>
+      AddRouteResponseRouteRouteTransformsItemVariant0Op._(value);
 
-  static const append = AddRouteResponseRouteRouteTransformsItemVariant0Op._('append');
-  static const delete = AddRouteResponseRouteRouteTransformsItemVariant0Op._('delete');
-  static const set_ = AddRouteResponseRouteRouteTransformsItemVariant0Op._('set');
+  static const append =
+      AddRouteResponseRouteRouteTransformsItemVariant0Op._('append');
+  static const delete =
+      AddRouteResponseRouteRouteTransformsItemVariant0Op._('delete');
+  static const set_ =
+      AddRouteResponseRouteRouteTransformsItemVariant0Op._('set');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteTransformsItemVariant0Op && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteTransformsItemVariant0Op &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

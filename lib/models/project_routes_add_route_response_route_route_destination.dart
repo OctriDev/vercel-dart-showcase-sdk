@@ -7,39 +7,75 @@ part of 'project_routes.dart';
 class AddRouteResponseRouteRouteDestinationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Routing-only path used to select a route inside the target service.
   final SdkOptional<String> path;
   final String service;
+
   /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
   final SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type> type_;
 
-  const AddRouteResponseRouteRouteDestinationVariant1({this.path = const SdkOmitted(), required this.service, this.type_ = const SdkOmitted()});
+  const AddRouteResponseRouteRouteDestinationVariant1(
+      {this.path = const SdkOmitted(),
+      required this.service,
+      this.type_ = const SdkOmitted()});
 
-  AddRouteResponseRouteRouteDestinationVariant1 Function({SdkOptional<String> path, String service, SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type> type_}) get copyWith => _copyWith;
+  AddRouteResponseRouteRouteDestinationVariant1 Function(
+          {SdkOptional<String> path,
+          String service,
+          SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type> type_})
+      get copyWith => _copyWith;
 
-  AddRouteResponseRouteRouteDestinationVariant1 _copyWith({Object? path = sdkOmittedValue, Object? service = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => AddRouteResponseRouteRouteDestinationVariant1(
-    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
-    service: identical(service, sdkOmittedValue) ? this.service : service as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type>,
-  );
+  AddRouteResponseRouteRouteDestinationVariant1 _copyWith(
+          {Object? path = sdkOmittedValue,
+          Object? service = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      AddRouteResponseRouteRouteDestinationVariant1(
+        path: identical(path, sdkOmittedValue)
+            ? this.path
+            : path as SdkOptional<String>,
+        service: identical(service, sdkOmittedValue)
+            ? this.service
+            : service as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<
+                AddRouteResponseRouteRouteDestinationVariant1Type>,
+      );
 
-  factory AddRouteResponseRouteRouteDestinationVariant1.fromJson(Map<String, dynamic> json) => AddRouteResponseRouteRouteDestinationVariant1(
-    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
-    service: (json['service'] as String?)!,
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? AddRouteResponseRouteRouteDestinationVariant1Type.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory AddRouteResponseRouteRouteDestinationVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      AddRouteResponseRouteRouteDestinationVariant1(
+        path: json['path'] != null
+            ? SdkPresent((json['path'] as String?)!)
+            : const SdkOmitted(),
+        service: (json['service'] as String?)!,
+        type_: json['type'] != null
+            ? SdkPresent((json['type'] != null
+                ? AddRouteResponseRouteRouteDestinationVariant1Type.fromJson(
+                    json['type'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (path) {
-      SdkPresent<String>(value: final value) => {'path': value,},
-      _ => const <String, dynamic>{},
-    },
-    'service': service,
-    ...switch (type_) {
-      SdkPresent<AddRouteResponseRouteRouteDestinationVariant1Type>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (path) {
+          SdkPresent<String>(value: final value) => {
+              'path': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'service': service,
+        ...switch (type_) {
+          SdkPresent<AddRouteResponseRouteRouteDestinationVariant1Type>(
+            value: final value
+          ) =>
+            {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class AddRouteResponseRouteRouteDestination {
@@ -47,21 +83,33 @@ sealed class AddRouteResponseRouteRouteDestination {
   static const String constructionSurface = 'named';
   const AddRouteResponseRouteRouteDestination();
   factory AddRouteResponseRouteRouteDestination.fromJson(Object? json) {
-    if (json is String) { return AddRouteResponseRouteRouteDestinationString(json); }
-    try { return AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(AddRouteResponseRouteRouteDestinationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for AddRouteResponseRouteRouteDestination");
+    if (json is String) {
+      return AddRouteResponseRouteRouteDestinationString(json);
+    }
+    try {
+      return AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(
+          AddRouteResponseRouteRouteDestinationVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for AddRouteResponseRouteRouteDestination");
   }
   Object? toJson();
 }
 
-final class AddRouteResponseRouteRouteDestinationString extends AddRouteResponseRouteRouteDestination {
+final class AddRouteResponseRouteRouteDestinationString
+    extends AddRouteResponseRouteRouteDestination {
   final String value;
   const AddRouteResponseRouteRouteDestinationString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1 extends AddRouteResponseRouteRouteDestination {
+final class AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1
+    extends AddRouteResponseRouteRouteDestination {
   final AddRouteResponseRouteRouteDestinationVariant1 value;
-  const AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

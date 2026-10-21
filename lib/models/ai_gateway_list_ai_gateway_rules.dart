@@ -8,27 +8,43 @@ part of 'ai_gateway.dart';
 class AiGatewayRuleList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `nextCursor` wire field.
   final String? nextCursor;
+
   /// Required array value serialized in the `rules` wire field.
   final List<AiGatewayRule> rules;
 
   const AiGatewayRuleList({required this.nextCursor, required this.rules});
 
-  AiGatewayRuleList Function({String? nextCursor, List<AiGatewayRule> rules}) get copyWith => _copyWith;
+  AiGatewayRuleList Function({String? nextCursor, List<AiGatewayRule> rules})
+      get copyWith => _copyWith;
 
-  AiGatewayRuleList _copyWith({Object? nextCursor = sdkOmittedValue, Object? rules = sdkOmittedValue}) => AiGatewayRuleList(
-    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as String?,
-    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as List<AiGatewayRule>,
-  );
+  AiGatewayRuleList _copyWith(
+          {Object? nextCursor = sdkOmittedValue,
+          Object? rules = sdkOmittedValue}) =>
+      AiGatewayRuleList(
+        nextCursor: identical(nextCursor, sdkOmittedValue)
+            ? this.nextCursor
+            : nextCursor as String?,
+        rules: identical(rules, sdkOmittedValue)
+            ? this.rules
+            : rules as List<AiGatewayRule>,
+      );
 
-  factory AiGatewayRuleList.fromJson(Map<String, dynamic> json) => AiGatewayRuleList(
-    nextCursor: json.containsKey('nextCursor') ? json['nextCursor'] as String? : throw ArgumentError.value(null, 'nextCursor', 'Required property is missing'),
-    rules: ((json['rules'] as List?)?.map((e) => AiGatewayRule.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory AiGatewayRuleList.fromJson(Map<String, dynamic> json) =>
+      AiGatewayRuleList(
+        nextCursor: json.containsKey('nextCursor')
+            ? json['nextCursor'] as String?
+            : throw ArgumentError.value(
+                null, 'nextCursor', 'Required property is missing'),
+        rules: ((json['rules'] as List?)
+            ?.map((e) => AiGatewayRule.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'nextCursor': nextCursor,
-    'rules': rules.map((item) => item.toJson()).toList(),
-  };
+        'nextCursor': nextCursor,
+        'rules': rules.map((item) => item.toJson()).toList(),
+      };
 }

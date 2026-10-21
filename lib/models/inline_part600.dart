@@ -11,38 +11,96 @@ class ListChecksResponseChecksItemOutputMetrics {
   final ListChecksResponseChecksItemOutputMetricsFCP fcp;
   final ListChecksResponseChecksItemOutputMetricsLCP lcp;
   final ListChecksResponseChecksItemOutputMetricsTBT tbt;
-  final SdkOptional<ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore> virtualExperienceScore;
+  final SdkOptional<
+          ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore>
+      virtualExperienceScore;
 
-  const ListChecksResponseChecksItemOutputMetrics({required this.cls, required this.fcp, required this.lcp, required this.tbt, this.virtualExperienceScore = const SdkOmitted()});
+  const ListChecksResponseChecksItemOutputMetrics(
+      {required this.cls,
+      required this.fcp,
+      required this.lcp,
+      required this.tbt,
+      this.virtualExperienceScore = const SdkOmitted()});
 
-  ListChecksResponseChecksItemOutputMetrics Function({ListChecksResponseChecksItemOutputMetricsCLS cls, ListChecksResponseChecksItemOutputMetricsFCP fcp, ListChecksResponseChecksItemOutputMetricsLCP lcp, ListChecksResponseChecksItemOutputMetricsTBT tbt, SdkOptional<ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore> virtualExperienceScore}) get copyWith => _copyWith;
+  ListChecksResponseChecksItemOutputMetrics Function(
+      {ListChecksResponseChecksItemOutputMetricsCLS cls,
+      ListChecksResponseChecksItemOutputMetricsFCP fcp,
+      ListChecksResponseChecksItemOutputMetricsLCP lcp,
+      ListChecksResponseChecksItemOutputMetricsTBT tbt,
+      SdkOptional<
+              ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore>
+          virtualExperienceScore}) get copyWith => _copyWith;
 
-  ListChecksResponseChecksItemOutputMetrics _copyWith({Object? cls = sdkOmittedValue, Object? fcp = sdkOmittedValue, Object? lcp = sdkOmittedValue, Object? tbt = sdkOmittedValue, Object? virtualExperienceScore = sdkOmittedValue}) => ListChecksResponseChecksItemOutputMetrics(
-    cls: identical(cls, sdkOmittedValue) ? this.cls : cls as ListChecksResponseChecksItemOutputMetricsCLS,
-    fcp: identical(fcp, sdkOmittedValue) ? this.fcp : fcp as ListChecksResponseChecksItemOutputMetricsFCP,
-    lcp: identical(lcp, sdkOmittedValue) ? this.lcp : lcp as ListChecksResponseChecksItemOutputMetricsLCP,
-    tbt: identical(tbt, sdkOmittedValue) ? this.tbt : tbt as ListChecksResponseChecksItemOutputMetricsTBT,
-    virtualExperienceScore: identical(virtualExperienceScore, sdkOmittedValue) ? this.virtualExperienceScore : virtualExperienceScore as SdkOptional<ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore>,
-  );
+  ListChecksResponseChecksItemOutputMetrics _copyWith(
+          {Object? cls = sdkOmittedValue,
+          Object? fcp = sdkOmittedValue,
+          Object? lcp = sdkOmittedValue,
+          Object? tbt = sdkOmittedValue,
+          Object? virtualExperienceScore = sdkOmittedValue}) =>
+      ListChecksResponseChecksItemOutputMetrics(
+        cls: identical(cls, sdkOmittedValue)
+            ? this.cls
+            : cls as ListChecksResponseChecksItemOutputMetricsCLS,
+        fcp: identical(fcp, sdkOmittedValue)
+            ? this.fcp
+            : fcp as ListChecksResponseChecksItemOutputMetricsFCP,
+        lcp: identical(lcp, sdkOmittedValue)
+            ? this.lcp
+            : lcp as ListChecksResponseChecksItemOutputMetricsLCP,
+        tbt: identical(tbt, sdkOmittedValue)
+            ? this.tbt
+            : tbt as ListChecksResponseChecksItemOutputMetricsTBT,
+        virtualExperienceScore: identical(
+                virtualExperienceScore, sdkOmittedValue)
+            ? this.virtualExperienceScore
+            : virtualExperienceScore as SdkOptional<
+                ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore>,
+      );
 
-  factory ListChecksResponseChecksItemOutputMetrics.fromJson(Map<String, dynamic> json) => ListChecksResponseChecksItemOutputMetrics(
-    cls: (json['CLS'] != null ? ListChecksResponseChecksItemOutputMetricsCLS.fromJson(json['CLS'] as Map<String, dynamic>) : null)!,
-    fcp: (json['FCP'] != null ? ListChecksResponseChecksItemOutputMetricsFCP.fromJson(json['FCP'] as Map<String, dynamic>) : null)!,
-    lcp: (json['LCP'] != null ? ListChecksResponseChecksItemOutputMetricsLCP.fromJson(json['LCP'] as Map<String, dynamic>) : null)!,
-    tbt: (json['TBT'] != null ? ListChecksResponseChecksItemOutputMetricsTBT.fromJson(json['TBT'] as Map<String, dynamic>) : null)!,
-    virtualExperienceScore: json['virtualExperienceScore'] != null ? SdkPresent((json['virtualExperienceScore'] != null ? ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore.fromJson(json['virtualExperienceScore'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory ListChecksResponseChecksItemOutputMetrics.fromJson(
+          Map<String, dynamic> json) =>
+      ListChecksResponseChecksItemOutputMetrics(
+        cls: (json['CLS'] != null
+            ? ListChecksResponseChecksItemOutputMetricsCLS.fromJson(
+                json['CLS'] as Map<String, dynamic>)
+            : null)!,
+        fcp: (json['FCP'] != null
+            ? ListChecksResponseChecksItemOutputMetricsFCP.fromJson(
+                json['FCP'] as Map<String, dynamic>)
+            : null)!,
+        lcp: (json['LCP'] != null
+            ? ListChecksResponseChecksItemOutputMetricsLCP.fromJson(
+                json['LCP'] as Map<String, dynamic>)
+            : null)!,
+        tbt: (json['TBT'] != null
+            ? ListChecksResponseChecksItemOutputMetricsTBT.fromJson(
+                json['TBT'] as Map<String, dynamic>)
+            : null)!,
+        virtualExperienceScore: json['virtualExperienceScore'] != null
+            ? SdkPresent((json['virtualExperienceScore'] != null
+                ? ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore
+                    .fromJson(
+                        json['virtualExperienceScore'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'CLS': cls.toJson(),
-    'FCP': fcp.toJson(),
-    'LCP': lcp.toJson(),
-    'TBT': tbt.toJson(),
-    ...switch (virtualExperienceScore) {
-      SdkPresent<ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore>(value: final value) => {'virtualExperienceScore': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'CLS': cls.toJson(),
+        'FCP': fcp.toJson(),
+        'LCP': lcp.toJson(),
+        'TBT': tbt.toJson(),
+        ...switch (virtualExperienceScore) {
+          SdkPresent<
+                ListChecksResponseChecksItemOutputMetricsVirtualExperienceScore>(
+            value: final value
+          ) =>
+            {
+              'virtualExperienceScore': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListChecksResponseChecksItemOutput {
@@ -52,22 +110,40 @@ class ListChecksResponseChecksItemOutput {
 
   const ListChecksResponseChecksItemOutput({this.metrics = const SdkOmitted()});
 
-  ListChecksResponseChecksItemOutput Function({SdkOptional<ListChecksResponseChecksItemOutputMetrics> metrics}) get copyWith => _copyWith;
+  ListChecksResponseChecksItemOutput Function(
+          {SdkOptional<ListChecksResponseChecksItemOutputMetrics> metrics})
+      get copyWith => _copyWith;
 
-  ListChecksResponseChecksItemOutput _copyWith({Object? metrics = sdkOmittedValue}) => ListChecksResponseChecksItemOutput(
-    metrics: identical(metrics, sdkOmittedValue) ? this.metrics : metrics as SdkOptional<ListChecksResponseChecksItemOutputMetrics>,
-  );
+  ListChecksResponseChecksItemOutput _copyWith(
+          {Object? metrics = sdkOmittedValue}) =>
+      ListChecksResponseChecksItemOutput(
+        metrics: identical(metrics, sdkOmittedValue)
+            ? this.metrics
+            : metrics as SdkOptional<ListChecksResponseChecksItemOutputMetrics>,
+      );
 
-  factory ListChecksResponseChecksItemOutput.fromJson(Map<String, dynamic> json) => ListChecksResponseChecksItemOutput(
-    metrics: json['metrics'] != null ? SdkPresent((json['metrics'] != null ? ListChecksResponseChecksItemOutputMetrics.fromJson(json['metrics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory ListChecksResponseChecksItemOutput.fromJson(
+          Map<String, dynamic> json) =>
+      ListChecksResponseChecksItemOutput(
+        metrics: json['metrics'] != null
+            ? SdkPresent((json['metrics'] != null
+                ? ListChecksResponseChecksItemOutputMetrics.fromJson(
+                    json['metrics'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (metrics) {
-      SdkPresent<ListChecksResponseChecksItemOutputMetrics>(value: final value) => {'metrics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (metrics) {
+          SdkPresent<ListChecksResponseChecksItemOutputMetrics>(
+            value: final value
+          ) =>
+            {
+              'metrics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListChecksResponseChecksItem {
@@ -88,78 +164,189 @@ class ListChecksResponseChecksItem {
   final ListChecksResponseChecksItemStatus status;
   final double updatedAt;
 
-  const ListChecksResponseChecksItem({required this.blocking, this.completedAt = const SdkOmitted(), this.conclusion = const SdkOmitted(), required this.createdAt, this.detailsUrl = const SdkOmitted(), required this.id, required this.integrationId, required this.name, this.output = const SdkOmitted(), this.path = const SdkOmitted(), required this.rerequestable, this.startedAt = const SdkOmitted(), required this.status, required this.updatedAt});
+  const ListChecksResponseChecksItem(
+      {required this.blocking,
+      this.completedAt = const SdkOmitted(),
+      this.conclusion = const SdkOmitted(),
+      required this.createdAt,
+      this.detailsUrl = const SdkOmitted(),
+      required this.id,
+      required this.integrationId,
+      required this.name,
+      this.output = const SdkOmitted(),
+      this.path = const SdkOmitted(),
+      required this.rerequestable,
+      this.startedAt = const SdkOmitted(),
+      required this.status,
+      required this.updatedAt});
 
-  ListChecksResponseChecksItem Function({ListChecksResponseChecksItemBlocking blocking, SdkOptional<double> completedAt, SdkOptional<ListChecksResponseChecksItemConclusion> conclusion, double createdAt, SdkOptional<String> detailsUrl, String id, String integrationId, String name, SdkOptional<ListChecksResponseChecksItemOutput> output, SdkOptional<String> path, ListChecksResponseChecksItemRerequestable rerequestable, SdkOptional<double> startedAt, ListChecksResponseChecksItemStatus status, double updatedAt}) get copyWith => _copyWith;
+  ListChecksResponseChecksItem Function(
+      {ListChecksResponseChecksItemBlocking blocking,
+      SdkOptional<double> completedAt,
+      SdkOptional<ListChecksResponseChecksItemConclusion> conclusion,
+      double createdAt,
+      SdkOptional<String> detailsUrl,
+      String id,
+      String integrationId,
+      String name,
+      SdkOptional<ListChecksResponseChecksItemOutput> output,
+      SdkOptional<String> path,
+      ListChecksResponseChecksItemRerequestable rerequestable,
+      SdkOptional<double> startedAt,
+      ListChecksResponseChecksItemStatus status,
+      double updatedAt}) get copyWith => _copyWith;
 
-  ListChecksResponseChecksItem _copyWith({Object? blocking = sdkOmittedValue, Object? completedAt = sdkOmittedValue, Object? conclusion = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? detailsUrl = sdkOmittedValue, Object? id = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? output = sdkOmittedValue, Object? path = sdkOmittedValue, Object? rerequestable = sdkOmittedValue, Object? startedAt = sdkOmittedValue, Object? status = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ListChecksResponseChecksItem(
-    blocking: identical(blocking, sdkOmittedValue) ? this.blocking : blocking as ListChecksResponseChecksItemBlocking,
-    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
-    conclusion: identical(conclusion, sdkOmittedValue) ? this.conclusion : conclusion as SdkOptional<ListChecksResponseChecksItemConclusion>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    detailsUrl: identical(detailsUrl, sdkOmittedValue) ? this.detailsUrl : detailsUrl as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    output: identical(output, sdkOmittedValue) ? this.output : output as SdkOptional<ListChecksResponseChecksItemOutput>,
-    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
-    rerequestable: identical(rerequestable, sdkOmittedValue) ? this.rerequestable : rerequestable as ListChecksResponseChecksItemRerequestable,
-    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as SdkOptional<double>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as ListChecksResponseChecksItemStatus,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  ListChecksResponseChecksItem _copyWith(
+          {Object? blocking = sdkOmittedValue,
+          Object? completedAt = sdkOmittedValue,
+          Object? conclusion = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? detailsUrl = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? output = sdkOmittedValue,
+          Object? path = sdkOmittedValue,
+          Object? rerequestable = sdkOmittedValue,
+          Object? startedAt = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      ListChecksResponseChecksItem(
+        blocking: identical(blocking, sdkOmittedValue)
+            ? this.blocking
+            : blocking as ListChecksResponseChecksItemBlocking,
+        completedAt: identical(completedAt, sdkOmittedValue)
+            ? this.completedAt
+            : completedAt as SdkOptional<double>,
+        conclusion: identical(conclusion, sdkOmittedValue)
+            ? this.conclusion
+            : conclusion as SdkOptional<ListChecksResponseChecksItemConclusion>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        detailsUrl: identical(detailsUrl, sdkOmittedValue)
+            ? this.detailsUrl
+            : detailsUrl as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        output: identical(output, sdkOmittedValue)
+            ? this.output
+            : output as SdkOptional<ListChecksResponseChecksItemOutput>,
+        path: identical(path, sdkOmittedValue)
+            ? this.path
+            : path as SdkOptional<String>,
+        rerequestable: identical(rerequestable, sdkOmittedValue)
+            ? this.rerequestable
+            : rerequestable as ListChecksResponseChecksItemRerequestable,
+        startedAt: identical(startedAt, sdkOmittedValue)
+            ? this.startedAt
+            : startedAt as SdkOptional<double>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as ListChecksResponseChecksItemStatus,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory ListChecksResponseChecksItem.fromJson(Map<String, dynamic> json) => ListChecksResponseChecksItem(
-    blocking: (json['blocking'] != null ? ListChecksResponseChecksItemBlocking.fromJson(json['blocking'] as bool) : null)!,
-    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    conclusion: json['conclusion'] != null ? SdkPresent((json['conclusion'] != null ? ListChecksResponseChecksItemConclusion.fromJson(json['conclusion'] as String) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    detailsUrl: json['detailsUrl'] != null ? SdkPresent((json['detailsUrl'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-    name: (json['name'] as String?)!,
-    output: json['output'] != null ? SdkPresent((json['output'] != null ? ListChecksResponseChecksItemOutput.fromJson(json['output'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
-    rerequestable: (json['rerequestable'] != null ? ListChecksResponseChecksItemRerequestable.fromJson(json['rerequestable'] as bool) : null)!,
-    startedAt: json['startedAt'] != null ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    status: (json['status'] != null ? ListChecksResponseChecksItemStatus.fromJson(json['status'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory ListChecksResponseChecksItem.fromJson(Map<String, dynamic> json) =>
+      ListChecksResponseChecksItem(
+        blocking: (json['blocking'] != null
+            ? ListChecksResponseChecksItemBlocking.fromJson(
+                json['blocking'] as bool)
+            : null)!,
+        completedAt: json['completedAt'] != null
+            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        conclusion: json['conclusion'] != null
+            ? SdkPresent((json['conclusion'] != null
+                ? ListChecksResponseChecksItemConclusion.fromJson(
+                    json['conclusion'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        detailsUrl: json['detailsUrl'] != null
+            ? SdkPresent((json['detailsUrl'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+        name: (json['name'] as String?)!,
+        output: json['output'] != null
+            ? SdkPresent((json['output'] != null
+                ? ListChecksResponseChecksItemOutput.fromJson(
+                    json['output'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        path: json['path'] != null
+            ? SdkPresent((json['path'] as String?)!)
+            : const SdkOmitted(),
+        rerequestable: (json['rerequestable'] != null
+            ? ListChecksResponseChecksItemRerequestable.fromJson(
+                json['rerequestable'] as bool)
+            : null)!,
+        startedAt: json['startedAt'] != null
+            ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        status: (json['status'] != null
+            ? ListChecksResponseChecksItemStatus.fromJson(
+                json['status'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'blocking': blocking.toJson(),
-    ...switch (completedAt) {
-      SdkPresent<double>(value: final value) => {'completedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (conclusion) {
-      SdkPresent<ListChecksResponseChecksItemConclusion>(value: final value) => {'conclusion': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    ...switch (detailsUrl) {
-      SdkPresent<String>(value: final value) => {'detailsUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'integrationId': integrationId,
-    'name': name,
-    ...switch (output) {
-      SdkPresent<ListChecksResponseChecksItemOutput>(value: final value) => {'output': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (path) {
-      SdkPresent<String>(value: final value) => {'path': value,},
-      _ => const <String, dynamic>{},
-    },
-    'rerequestable': rerequestable.toJson(),
-    ...switch (startedAt) {
-      SdkPresent<double>(value: final value) => {'startedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'status': status.toJson(),
-    'updatedAt': updatedAt,
-  };
+        'blocking': blocking.toJson(),
+        ...switch (completedAt) {
+          SdkPresent<double>(value: final value) => {
+              'completedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (conclusion) {
+          SdkPresent<ListChecksResponseChecksItemConclusion>(
+            value: final value
+          ) =>
+            {
+              'conclusion': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        ...switch (detailsUrl) {
+          SdkPresent<String>(value: final value) => {
+              'detailsUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'integrationId': integrationId,
+        'name': name,
+        ...switch (output) {
+          SdkPresent<ListChecksResponseChecksItemOutput>(value: final value) =>
+            {
+              'output': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (path) {
+          SdkPresent<String>(value: final value) => {
+              'path': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'rerequestable': rerequestable.toJson(),
+        ...switch (startedAt) {
+          SdkPresent<double>(value: final value) => {
+              'startedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'status': status.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 class ListChecksResponse {
@@ -169,19 +356,27 @@ class ListChecksResponse {
 
   const ListChecksResponse({required this.checks});
 
-  ListChecksResponse Function({List<ListChecksResponseChecksItem> checks}) get copyWith => _copyWith;
+  ListChecksResponse Function({List<ListChecksResponseChecksItem> checks})
+      get copyWith => _copyWith;
 
-  ListChecksResponse _copyWith({Object? checks = sdkOmittedValue}) => ListChecksResponse(
-    checks: identical(checks, sdkOmittedValue) ? this.checks : checks as List<ListChecksResponseChecksItem>,
-  );
+  ListChecksResponse _copyWith({Object? checks = sdkOmittedValue}) =>
+      ListChecksResponse(
+        checks: identical(checks, sdkOmittedValue)
+            ? this.checks
+            : checks as List<ListChecksResponseChecksItem>,
+      );
 
-  factory ListChecksResponse.fromJson(Map<String, dynamic> json) => ListChecksResponse(
-    checks: ((json['checks'] as List?)?.map((e) => ListChecksResponseChecksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListChecksResponse.fromJson(Map<String, dynamic> json) =>
+      ListChecksResponse(
+        checks: ((json['checks'] as List?)
+            ?.map((e) => ListChecksResponseChecksItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'checks': checks.map((item) => item.toJson()).toList(),
-  };
+        'checks': checks.map((item) => item.toJson()).toList(),
+      };
 }
 
 class GetCheckResponseOutputMetricsCLS {
@@ -191,30 +386,57 @@ class GetCheckResponseOutputMetricsCLS {
   final GetCheckResponseOutputMetricsCLSSource source;
   final double? value;
 
-  const GetCheckResponseOutputMetricsCLS({this.previousValue = const SdkOmitted(), required this.source, required this.value});
+  const GetCheckResponseOutputMetricsCLS(
+      {this.previousValue = const SdkOmitted(),
+      required this.source,
+      required this.value});
 
-  GetCheckResponseOutputMetricsCLS Function({SdkOptional<double> previousValue, GetCheckResponseOutputMetricsCLSSource source, double? value}) get copyWith => _copyWith;
+  GetCheckResponseOutputMetricsCLS Function(
+      {SdkOptional<double> previousValue,
+      GetCheckResponseOutputMetricsCLSSource source,
+      double? value}) get copyWith => _copyWith;
 
-  GetCheckResponseOutputMetricsCLS _copyWith({Object? previousValue = sdkOmittedValue, Object? source = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetCheckResponseOutputMetricsCLS(
-    previousValue: identical(previousValue, sdkOmittedValue) ? this.previousValue : previousValue as SdkOptional<double>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as GetCheckResponseOutputMetricsCLSSource,
-    value: identical(value, sdkOmittedValue) ? this.value : value as double?,
-  );
+  GetCheckResponseOutputMetricsCLS _copyWith(
+          {Object? previousValue = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GetCheckResponseOutputMetricsCLS(
+        previousValue: identical(previousValue, sdkOmittedValue)
+            ? this.previousValue
+            : previousValue as SdkOptional<double>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as GetCheckResponseOutputMetricsCLSSource,
+        value:
+            identical(value, sdkOmittedValue) ? this.value : value as double?,
+      );
 
-  factory GetCheckResponseOutputMetricsCLS.fromJson(Map<String, dynamic> json) => GetCheckResponseOutputMetricsCLS(
-    previousValue: json['previousValue'] != null ? SdkPresent(((json['previousValue'] as num?)?.toDouble())!) : const SdkOmitted(),
-    source: (json['source'] != null ? GetCheckResponseOutputMetricsCLSSource.fromJson(json['source'] as String) : null)!,
-    value: json.containsKey('value') ? (json['value'] as num?)?.toDouble() : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-  );
+  factory GetCheckResponseOutputMetricsCLS.fromJson(
+          Map<String, dynamic> json) =>
+      GetCheckResponseOutputMetricsCLS(
+        previousValue: json['previousValue'] != null
+            ? SdkPresent(((json['previousValue'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        source: (json['source'] != null
+            ? GetCheckResponseOutputMetricsCLSSource.fromJson(
+                json['source'] as String)
+            : null)!,
+        value: json.containsKey('value')
+            ? (json['value'] as num?)?.toDouble()
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (previousValue) {
-      SdkPresent<double>(value: final value) => {'previousValue': value,},
-      _ => const <String, dynamic>{},
-    },
-    'source': source.toJson(),
-    'value': value,
-  };
+        ...switch (previousValue) {
+          SdkPresent<double>(value: final value) => {
+              'previousValue': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'source': source.toJson(),
+        'value': value,
+      };
 }
 
 class GetCheckResponseOutputMetricsFCP {
@@ -224,30 +446,57 @@ class GetCheckResponseOutputMetricsFCP {
   final GetCheckResponseOutputMetricsFCPSource source;
   final double? value;
 
-  const GetCheckResponseOutputMetricsFCP({this.previousValue = const SdkOmitted(), required this.source, required this.value});
+  const GetCheckResponseOutputMetricsFCP(
+      {this.previousValue = const SdkOmitted(),
+      required this.source,
+      required this.value});
 
-  GetCheckResponseOutputMetricsFCP Function({SdkOptional<double> previousValue, GetCheckResponseOutputMetricsFCPSource source, double? value}) get copyWith => _copyWith;
+  GetCheckResponseOutputMetricsFCP Function(
+      {SdkOptional<double> previousValue,
+      GetCheckResponseOutputMetricsFCPSource source,
+      double? value}) get copyWith => _copyWith;
 
-  GetCheckResponseOutputMetricsFCP _copyWith({Object? previousValue = sdkOmittedValue, Object? source = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetCheckResponseOutputMetricsFCP(
-    previousValue: identical(previousValue, sdkOmittedValue) ? this.previousValue : previousValue as SdkOptional<double>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as GetCheckResponseOutputMetricsFCPSource,
-    value: identical(value, sdkOmittedValue) ? this.value : value as double?,
-  );
+  GetCheckResponseOutputMetricsFCP _copyWith(
+          {Object? previousValue = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GetCheckResponseOutputMetricsFCP(
+        previousValue: identical(previousValue, sdkOmittedValue)
+            ? this.previousValue
+            : previousValue as SdkOptional<double>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as GetCheckResponseOutputMetricsFCPSource,
+        value:
+            identical(value, sdkOmittedValue) ? this.value : value as double?,
+      );
 
-  factory GetCheckResponseOutputMetricsFCP.fromJson(Map<String, dynamic> json) => GetCheckResponseOutputMetricsFCP(
-    previousValue: json['previousValue'] != null ? SdkPresent(((json['previousValue'] as num?)?.toDouble())!) : const SdkOmitted(),
-    source: (json['source'] != null ? GetCheckResponseOutputMetricsFCPSource.fromJson(json['source'] as String) : null)!,
-    value: json.containsKey('value') ? (json['value'] as num?)?.toDouble() : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-  );
+  factory GetCheckResponseOutputMetricsFCP.fromJson(
+          Map<String, dynamic> json) =>
+      GetCheckResponseOutputMetricsFCP(
+        previousValue: json['previousValue'] != null
+            ? SdkPresent(((json['previousValue'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        source: (json['source'] != null
+            ? GetCheckResponseOutputMetricsFCPSource.fromJson(
+                json['source'] as String)
+            : null)!,
+        value: json.containsKey('value')
+            ? (json['value'] as num?)?.toDouble()
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (previousValue) {
-      SdkPresent<double>(value: final value) => {'previousValue': value,},
-      _ => const <String, dynamic>{},
-    },
-    'source': source.toJson(),
-    'value': value,
-  };
+        ...switch (previousValue) {
+          SdkPresent<double>(value: final value) => {
+              'previousValue': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'source': source.toJson(),
+        'value': value,
+      };
 }
 
 class GetCheckResponseOutputMetricsLCP {
@@ -257,28 +506,55 @@ class GetCheckResponseOutputMetricsLCP {
   final GetCheckResponseOutputMetricsLCPSource source;
   final double? value;
 
-  const GetCheckResponseOutputMetricsLCP({this.previousValue = const SdkOmitted(), required this.source, required this.value});
+  const GetCheckResponseOutputMetricsLCP(
+      {this.previousValue = const SdkOmitted(),
+      required this.source,
+      required this.value});
 
-  GetCheckResponseOutputMetricsLCP Function({SdkOptional<double> previousValue, GetCheckResponseOutputMetricsLCPSource source, double? value}) get copyWith => _copyWith;
+  GetCheckResponseOutputMetricsLCP Function(
+      {SdkOptional<double> previousValue,
+      GetCheckResponseOutputMetricsLCPSource source,
+      double? value}) get copyWith => _copyWith;
 
-  GetCheckResponseOutputMetricsLCP _copyWith({Object? previousValue = sdkOmittedValue, Object? source = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetCheckResponseOutputMetricsLCP(
-    previousValue: identical(previousValue, sdkOmittedValue) ? this.previousValue : previousValue as SdkOptional<double>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as GetCheckResponseOutputMetricsLCPSource,
-    value: identical(value, sdkOmittedValue) ? this.value : value as double?,
-  );
+  GetCheckResponseOutputMetricsLCP _copyWith(
+          {Object? previousValue = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GetCheckResponseOutputMetricsLCP(
+        previousValue: identical(previousValue, sdkOmittedValue)
+            ? this.previousValue
+            : previousValue as SdkOptional<double>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as GetCheckResponseOutputMetricsLCPSource,
+        value:
+            identical(value, sdkOmittedValue) ? this.value : value as double?,
+      );
 
-  factory GetCheckResponseOutputMetricsLCP.fromJson(Map<String, dynamic> json) => GetCheckResponseOutputMetricsLCP(
-    previousValue: json['previousValue'] != null ? SdkPresent(((json['previousValue'] as num?)?.toDouble())!) : const SdkOmitted(),
-    source: (json['source'] != null ? GetCheckResponseOutputMetricsLCPSource.fromJson(json['source'] as String) : null)!,
-    value: json.containsKey('value') ? (json['value'] as num?)?.toDouble() : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-  );
+  factory GetCheckResponseOutputMetricsLCP.fromJson(
+          Map<String, dynamic> json) =>
+      GetCheckResponseOutputMetricsLCP(
+        previousValue: json['previousValue'] != null
+            ? SdkPresent(((json['previousValue'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        source: (json['source'] != null
+            ? GetCheckResponseOutputMetricsLCPSource.fromJson(
+                json['source'] as String)
+            : null)!,
+        value: json.containsKey('value')
+            ? (json['value'] as num?)?.toDouble()
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (previousValue) {
-      SdkPresent<double>(value: final value) => {'previousValue': value,},
-      _ => const <String, dynamic>{},
-    },
-    'source': source.toJson(),
-    'value': value,
-  };
+        ...switch (previousValue) {
+          SdkPresent<double>(value: final value) => {
+              'previousValue': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'source': source.toJson(),
+        'value': value,
+      };
 }

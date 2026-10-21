@@ -13,110 +13,219 @@ class UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem {
   final String ref;
   final String url;
 
-  const UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
+  const UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem(
+      {this.createdAt = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      required this.ref,
+      required this.url});
 
-  UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem Function(
+      {SdkOptional<double> createdAt,
+      String id,
+      String name,
+      String ref,
+      String url}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    ref: (json['ref'] as String?)!,
-    url: (json['url'] as String?)!,
-  );
+  factory UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem(
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        ref: (json['ref'] as String?)!,
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    'ref': ref,
-    'url': url,
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        'ref': ref,
+        'url': url,
+      };
 }
 
 class UpdateMicrofrontendsResponseLinkVariant7 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> createdAt;
-  final List<UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem> deployHooks;
+  final List<UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem>
+      deployHooks;
   final String gitCredentialId;
+
   /// Owner (namespace) slug, e.g. `acme`.
   final String owner;
+
   /// Origin namespace id (`ns_…`) of the owner.
   final String ownerId;
   final String productionBranch;
   final String repo;
+
   /// Origin repository id.
   final String repoId;
-  final SdkOptional<UpdateMicrofrontendsResponseLinkVariant7Sourceless> sourceless;
+  final SdkOptional<UpdateMicrofrontendsResponseLinkVariant7Sourceless>
+      sourceless;
   final UpdateMicrofrontendsResponseLinkVariant7Type type_;
   final SdkOptional<double> updatedAt;
 
-  const UpdateMicrofrontendsResponseLinkVariant7({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.owner, required this.ownerId, required this.productionBranch, required this.repo, required this.repoId, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseLinkVariant7(
+      {this.createdAt = const SdkOmitted(),
+      required this.deployHooks,
+      required this.gitCredentialId,
+      required this.owner,
+      required this.ownerId,
+      required this.productionBranch,
+      required this.repo,
+      required this.repoId,
+      this.sourceless = const SdkOmitted(),
+      required this.type_,
+      this.updatedAt = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseLinkVariant7 Function({SdkOptional<double> createdAt, List<UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem> deployHooks, String gitCredentialId, String owner, String ownerId, String productionBranch, String repo, String repoId, SdkOptional<UpdateMicrofrontendsResponseLinkVariant7Sourceless> sourceless, UpdateMicrofrontendsResponseLinkVariant7Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseLinkVariant7 Function(
+      {SdkOptional<double> createdAt,
+      List<UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem> deployHooks,
+      String gitCredentialId,
+      String owner,
+      String ownerId,
+      String productionBranch,
+      String repo,
+      String repoId,
+      SdkOptional<UpdateMicrofrontendsResponseLinkVariant7Sourceless>
+          sourceless,
+      UpdateMicrofrontendsResponseLinkVariant7Type type_,
+      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseLinkVariant7 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateMicrofrontendsResponseLinkVariant7(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem>,
-    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<UpdateMicrofrontendsResponseLinkVariant7Sourceless>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseLinkVariant7Type,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-  );
+  UpdateMicrofrontendsResponseLinkVariant7 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? deployHooks = sdkOmittedValue,
+          Object? gitCredentialId = sdkOmittedValue,
+          Object? owner = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? productionBranch = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? sourceless = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseLinkVariant7(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        deployHooks: identical(deployHooks, sdkOmittedValue)
+            ? this.deployHooks
+            : deployHooks as List<
+                UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem>,
+        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
+            ? this.gitCredentialId
+            : gitCredentialId as String,
+        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        productionBranch: identical(productionBranch, sdkOmittedValue)
+            ? this.productionBranch
+            : productionBranch as String,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        repoId:
+            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+        sourceless: identical(sourceless, sdkOmittedValue)
+            ? this.sourceless
+            : sourceless as SdkOptional<
+                UpdateMicrofrontendsResponseLinkVariant7Sourceless>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UpdateMicrofrontendsResponseLinkVariant7Type,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+      );
 
-  factory UpdateMicrofrontendsResponseLinkVariant7.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseLinkVariant7(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    deployHooks: ((json['deployHooks'] as List?)?.map((e) => UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    gitCredentialId: (json['gitCredentialId'] as String?)!,
-    owner: (json['owner'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    productionBranch: (json['productionBranch'] as String?)!,
-    repo: (json['repo'] as String?)!,
-    repoId: (json['repoId'] as String?)!,
-    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? UpdateMicrofrontendsResponseLinkVariant7Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseLinkVariant7Type.fromJson(json['type'] as String) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory UpdateMicrofrontendsResponseLinkVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseLinkVariant7(
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        deployHooks: ((json['deployHooks'] as List?)
+            ?.map((e) => UpdateMicrofrontendsResponseLinkVariant7DeployHooksItem
+                .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        gitCredentialId: (json['gitCredentialId'] as String?)!,
+        owner: (json['owner'] as String?)!,
+        ownerId: (json['ownerId'] as String?)!,
+        productionBranch: (json['productionBranch'] as String?)!,
+        repo: (json['repo'] as String?)!,
+        repoId: (json['repoId'] as String?)!,
+        sourceless: json['sourceless'] != null
+            ? SdkPresent((json['sourceless'] != null
+                ? UpdateMicrofrontendsResponseLinkVariant7Sourceless.fromJson(
+                    json['sourceless'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseLinkVariant7Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-    'gitCredentialId': gitCredentialId,
-    'owner': owner,
-    'ownerId': ownerId,
-    'productionBranch': productionBranch,
-    'repo': repo,
-    'repoId': repoId,
-    ...switch (sourceless) {
-      SdkPresent<UpdateMicrofrontendsResponseLinkVariant7Sourceless>(value: final value) => {'sourceless': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+        'gitCredentialId': gitCredentialId,
+        'owner': owner,
+        'ownerId': ownerId,
+        'productionBranch': productionBranch,
+        'repo': repo,
+        'repoId': repoId,
+        ...switch (sourceless) {
+          SdkPresent<UpdateMicrofrontendsResponseLinkVariant7Sourceless>(
+            value: final value
+          ) =>
+            {
+              'sourceless': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class UpdateMicrofrontendsResponseLink {
@@ -125,125 +234,300 @@ sealed class UpdateMicrofrontendsResponseLink {
   const UpdateMicrofrontendsResponseLink();
   factory UpdateMicrofrontendsResponseLink.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateMicrofrontendsResponseLinkVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseLinkVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseLinkVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseLinkVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseLinkVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseLinkVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseLinkVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseLinkVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7(value); } } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant4.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant5.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant6.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateMicrofrontendsResponseLinkVariant7.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0(UpdateMicrofrontendsResponseLinkVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1(UpdateMicrofrontendsResponseLinkVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2(UpdateMicrofrontendsResponseLinkVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3(UpdateMicrofrontendsResponseLinkVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4(UpdateMicrofrontendsResponseLinkVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5(UpdateMicrofrontendsResponseLinkVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6(UpdateMicrofrontendsResponseLinkVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7(UpdateMicrofrontendsResponseLinkVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateMicrofrontendsResponseLink");
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0(
+          UpdateMicrofrontendsResponseLinkVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1(
+          UpdateMicrofrontendsResponseLinkVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2(
+          UpdateMicrofrontendsResponseLinkVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3(
+          UpdateMicrofrontendsResponseLinkVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4(
+          UpdateMicrofrontendsResponseLinkVariant4.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5(
+          UpdateMicrofrontendsResponseLinkVariant5.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6(
+          UpdateMicrofrontendsResponseLinkVariant6.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7(
+          UpdateMicrofrontendsResponseLinkVariant7.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateMicrofrontendsResponseLink");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant0 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant1 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant2 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant3 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant4 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant4(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant5 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant5(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant6 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant6(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7 extends UpdateMicrofrontendsResponseLink {
+final class UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7
+    extends UpdateMicrofrontendsResponseLink {
   final UpdateMicrofrontendsResponseLinkVariant7 value;
-  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseLinkUpdateMicrofrontendsResponseLinkVariant7(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class UpdateMicrofrontendsResponseMicrofrontendsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A path that is used to take screenshots and as the default path in preview links when a domain for this microfrontend is shown in the UI. Includes the leading slash, e.g. `/docs`
   final SdkOptional<String> defaultRoute;
+
   /// Whether microfrontends are enabled for this project.
   final UpdateMicrofrontendsResponseMicrofrontendsVariant0Enabled enabled;
+
   /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
-  final SdkOptional<UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits> freeProjectForLegacyLimits;
+  final SdkOptional<
+          UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>
+      freeProjectForLegacyLimits;
+
   /// The group IDs of microfrontends that this project belongs to. Each microfrontend project must belong to a microfrontends group that is the set of microfrontends that are used together.
   final List<String> groupIds;
-  final UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp isDefaultApp;
+  final UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp
+      isDefaultApp;
+
   /// Timestamp when the microfrontends settings were last updated.
   final double updatedAt;
 
-  const UpdateMicrofrontendsResponseMicrofrontendsVariant0({this.defaultRoute = const SdkOmitted(), required this.enabled, this.freeProjectForLegacyLimits = const SdkOmitted(), required this.groupIds, required this.isDefaultApp, required this.updatedAt});
+  const UpdateMicrofrontendsResponseMicrofrontendsVariant0(
+      {this.defaultRoute = const SdkOmitted(),
+      required this.enabled,
+      this.freeProjectForLegacyLimits = const SdkOmitted(),
+      required this.groupIds,
+      required this.isDefaultApp,
+      required this.updatedAt});
 
-  UpdateMicrofrontendsResponseMicrofrontendsVariant0 Function({SdkOptional<String> defaultRoute, UpdateMicrofrontendsResponseMicrofrontendsVariant0Enabled enabled, SdkOptional<UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits> freeProjectForLegacyLimits, List<String> groupIds, UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp isDefaultApp, double updatedAt}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseMicrofrontendsVariant0 Function(
+      {SdkOptional<String> defaultRoute,
+      UpdateMicrofrontendsResponseMicrofrontendsVariant0Enabled enabled,
+      SdkOptional<
+              UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>
+          freeProjectForLegacyLimits,
+      List<String> groupIds,
+      UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp
+          isDefaultApp,
+      double updatedAt}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseMicrofrontendsVariant0 _copyWith({Object? defaultRoute = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? freeProjectForLegacyLimits = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateMicrofrontendsResponseMicrofrontendsVariant0(
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UpdateMicrofrontendsResponseMicrofrontendsVariant0Enabled,
-    freeProjectForLegacyLimits: identical(freeProjectForLegacyLimits, sdkOmittedValue) ? this.freeProjectForLegacyLimits : freeProjectForLegacyLimits as SdkOptional<UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>,
-    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<String>,
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  UpdateMicrofrontendsResponseMicrofrontendsVariant0 _copyWith(
+          {Object? defaultRoute = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? freeProjectForLegacyLimits = sdkOmittedValue,
+          Object? groupIds = sdkOmittedValue,
+          Object? isDefaultApp = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseMicrofrontendsVariant0(
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled
+                as UpdateMicrofrontendsResponseMicrofrontendsVariant0Enabled,
+        freeProjectForLegacyLimits: identical(
+                freeProjectForLegacyLimits, sdkOmittedValue)
+            ? this.freeProjectForLegacyLimits
+            : freeProjectForLegacyLimits as SdkOptional<
+                UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>,
+        groupIds: identical(groupIds, sdkOmittedValue)
+            ? this.groupIds
+            : groupIds as List<String>,
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp
+                as UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory UpdateMicrofrontendsResponseMicrofrontendsVariant0.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseMicrofrontendsVariant0(
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? UpdateMicrofrontendsResponseMicrofrontendsVariant0Enabled.fromJson(json['enabled'] as bool) : null)!,
-    freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null ? SdkPresent((json['freeProjectForLegacyLimits'] != null ? UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(json['freeProjectForLegacyLimits'] as bool) : null)!) : const SdkOmitted(),
-    groupIds: ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
-    isDefaultApp: (json['isDefaultApp'] != null ? UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory UpdateMicrofrontendsResponseMicrofrontendsVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseMicrofrontendsVariant0(
+        defaultRoute: json['defaultRoute'] != null
+            ? SdkPresent((json['defaultRoute'] as String?)!)
+            : const SdkOmitted(),
+        enabled: (json['enabled'] != null
+            ? UpdateMicrofrontendsResponseMicrofrontendsVariant0Enabled
+                .fromJson(json['enabled'] as bool)
+            : null)!,
+        freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null
+            ? SdkPresent((json['freeProjectForLegacyLimits'] != null
+                ? UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits
+                    .fromJson(json['freeProjectForLegacyLimits'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        groupIds:
+            ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
+        isDefaultApp: (json['isDefaultApp'] != null
+            ? UpdateMicrofrontendsResponseMicrofrontendsVariant0IsDefaultApp
+                .fromJson(json['isDefaultApp'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    ...switch (freeProjectForLegacyLimits) {
-      SdkPresent<UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>(value: final value) => {'freeProjectForLegacyLimits': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'groupIds': groupIds,
-    'isDefaultApp': isDefaultApp.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        ...switch (freeProjectForLegacyLimits) {
+          SdkPresent<
+                UpdateMicrofrontendsResponseMicrofrontendsVariant0FreeProjectForLegacyLimits>(
+            value: final value
+          ) =>
+            {
+              'freeProjectForLegacyLimits': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'groupIds': groupIds,
+        'isDefaultApp': isDefaultApp.toJson(),
+        'updatedAt': updatedAt,
+      };
 }

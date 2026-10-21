@@ -6,291 +6,477 @@ part of 'inline.dart';
 // Inline operation models (part 541)
 /// The flag saying if Secure Compute network is used for builds
 final class GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled {
-
   final bool value;
 
   const GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled._(value);
+  factory GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled.fromJson(
+          bool value) =>
+      GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled._(value);
 
-  static const false_ = GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled._(false);
-  static const true_ = GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled._(true);
+  static const false_ =
+      GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled._(false);
+  static const true_ =
+      GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Principal type of the deployment creator. Defaults to `"user"` if absent (legacy deployments created before principal attribution was recorded).
 final class GetDeploymentsResponseDeploymentsItemCreatorType {
-
   final String value;
 
   const GetDeploymentsResponseDeploymentsItemCreatorType._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemCreatorType.fromJson(String value) => GetDeploymentsResponseDeploymentsItemCreatorType._(value);
+  factory GetDeploymentsResponseDeploymentsItemCreatorType.fromJson(
+          String value) =>
+      GetDeploymentsResponseDeploymentsItemCreatorType._(value);
 
   static const app = GetDeploymentsResponseDeploymentsItemCreatorType._('app');
-  static const integration = GetDeploymentsResponseDeploymentsItemCreatorType._('integration');
-  static const system = GetDeploymentsResponseDeploymentsItemCreatorType._('system');
-  static const user = GetDeploymentsResponseDeploymentsItemCreatorType._('user');
+  static const integration =
+      GetDeploymentsResponseDeploymentsItemCreatorType._('integration');
+  static const system =
+      GetDeploymentsResponseDeploymentsItemCreatorType._('system');
+  static const user =
+      GetDeploymentsResponseDeploymentsItemCreatorType._('user');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemCreatorType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemCreatorType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Deployment can be used for instant rollback
 final class GetDeploymentsResponseDeploymentsItemIsRollbackCandidate {
-
   final bool value;
 
   const GetDeploymentsResponseDeploymentsItemIsRollbackCandidate._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemIsRollbackCandidate.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemIsRollbackCandidate._(value);
+  factory GetDeploymentsResponseDeploymentsItemIsRollbackCandidate.fromJson(
+          bool value) =>
+      GetDeploymentsResponseDeploymentsItemIsRollbackCandidate._(value);
 
-  static const false_ = GetDeploymentsResponseDeploymentsItemIsRollbackCandidate._(false);
-  static const true_ = GetDeploymentsResponseDeploymentsItemIsRollbackCandidate._(true);
+  static const false_ =
+      GetDeploymentsResponseDeploymentsItemIsRollbackCandidate._(false);
+  static const true_ =
+      GetDeploymentsResponseDeploymentsItemIsRollbackCandidate._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemIsRollbackCandidate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemIsRollbackCandidate &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Current provisioning state
 final class GetDeploymentsResponseDeploymentsItemManualProvisioningState {
-
   final String value;
 
-  const GetDeploymentsResponseDeploymentsItemManualProvisioningState._(this.value);
+  const GetDeploymentsResponseDeploymentsItemManualProvisioningState._(
+      this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemManualProvisioningState.fromJson(String value) => GetDeploymentsResponseDeploymentsItemManualProvisioningState._(value);
+  factory GetDeploymentsResponseDeploymentsItemManualProvisioningState.fromJson(
+          String value) =>
+      GetDeploymentsResponseDeploymentsItemManualProvisioningState._(value);
 
-  static const complete = GetDeploymentsResponseDeploymentsItemManualProvisioningState._('COMPLETE');
-  static const pending = GetDeploymentsResponseDeploymentsItemManualProvisioningState._('PENDING');
-  static const timeout = GetDeploymentsResponseDeploymentsItemManualProvisioningState._('TIMEOUT');
+  static const complete =
+      GetDeploymentsResponseDeploymentsItemManualProvisioningState._(
+          'COMPLETE');
+  static const pending =
+      GetDeploymentsResponseDeploymentsItemManualProvisioningState._('PENDING');
+  static const timeout =
+      GetDeploymentsResponseDeploymentsItemManualProvisioningState._('TIMEOUT');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemManualProvisioningState && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemManualProvisioningState &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Indicates if the deployment encountered an out-of-memory error.
 final class GetDeploymentsResponseDeploymentsItemOomReport {
-
   final String value;
 
   const GetDeploymentsResponseDeploymentsItemOomReport._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemOomReport.fromJson(String value) => GetDeploymentsResponseDeploymentsItemOomReport._(value);
+  factory GetDeploymentsResponseDeploymentsItemOomReport.fromJson(
+          String value) =>
+      GetDeploymentsResponseDeploymentsItemOomReport._(value);
 
-  static const outOfMemory = GetDeploymentsResponseDeploymentsItemOomReport._('out-of-memory');
+  static const outOfMemory =
+      GetDeploymentsResponseDeploymentsItemOomReport._('out-of-memory');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemOomReport && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemOomReport &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the value is an opaque identifier or a URL.
 final class GetDeploymentsResponseDeploymentsItemPlatformOriginType {
-
   final String value;
 
   const GetDeploymentsResponseDeploymentsItemPlatformOriginType._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemPlatformOriginType.fromJson(String value) => GetDeploymentsResponseDeploymentsItemPlatformOriginType._(value);
+  factory GetDeploymentsResponseDeploymentsItemPlatformOriginType.fromJson(
+          String value) =>
+      GetDeploymentsResponseDeploymentsItemPlatformOriginType._(value);
 
-  static const id = GetDeploymentsResponseDeploymentsItemPlatformOriginType._('id');
-  static const url = GetDeploymentsResponseDeploymentsItemPlatformOriginType._('url');
+  static const id =
+      GetDeploymentsResponseDeploymentsItemPlatformOriginType._('id');
+  static const url =
+      GetDeploymentsResponseDeploymentsItemPlatformOriginType._('url');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemPlatformOriginType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemPlatformOriginType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDeploymentsResponseDeploymentsItemPrebuilt {
-
   final bool value;
 
   const GetDeploymentsResponseDeploymentsItemPrebuilt._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemPrebuilt.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemPrebuilt._(value);
+  factory GetDeploymentsResponseDeploymentsItemPrebuilt.fromJson(bool value) =>
+      GetDeploymentsResponseDeploymentsItemPrebuilt._(value);
 
   static const false_ = GetDeploymentsResponseDeploymentsItemPrebuilt._(false);
   static const true_ = GetDeploymentsResponseDeploymentsItemPrebuilt._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemPrebuilt && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemPrebuilt &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility {
-
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility._(this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility._(
+      this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility.fromJson(
+          bool value) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility
+          ._(value);
 
-  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility._(false);
-  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility._(true);
+  static const false_ =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility
+          ._(false);
+  static const true_ =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetDeploymentsResponseDeploymentsItemProjectSettingsCustomerSupportCodeVisibility &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsFramework {
-
   final String value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+      this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsFramework.fromJson(String value) => GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsFramework.fromJson(
+          String value) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(value);
 
-  static const actixWeb = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('actix-web');
-  static const angular = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('angular');
-  static const ash = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ash');
-  static const astro = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('astro');
-  static const axum = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('axum');
-  static const blitzjs = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('blitzjs');
-  static const brunch = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('brunch');
-  static const bun = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('bun');
-  static const container = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('container');
-  static const createReactApp = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('create-react-app');
-  static const django = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('django');
-  static const docusaurus = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('docusaurus');
-  static const docusaurus2 = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('docusaurus-2');
-  static const dojo = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('dojo');
-  static const eleventy = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('eleventy');
-  static const elysia = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('elysia');
-  static const ember = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ember');
-  static const eve = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('eve');
-  static const express = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('express');
-  static const factoryEve = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('factory-eve');
-  static const fastapi = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('fastapi');
-  static const fasthtml = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('fasthtml');
-  static const fastify = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('fastify');
-  static const flask = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('flask');
-  static const gatsby = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('gatsby');
-  static const go = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('go');
-  static const gridsome = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('gridsome');
-  static const h3 = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('h3');
-  static const hexo = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('hexo');
-  static const hono = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('hono');
-  static const hugo = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('hugo');
-  static const hydrogen = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('hydrogen');
-  static const ionicAngular = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ionic-angular');
-  static const ionicReact = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ionic-react');
-  static const jekyll = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('jekyll');
-  static const koa = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('koa');
-  static const mastra = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('mastra');
-  static const middleman = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('middleman');
-  static const nestjs = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nestjs');
-  static const nextjs = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nextjs');
-  static const nitro = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nitro');
-  static const node = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('node');
-  static const nuxtjs = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nuxtjs');
-  static const parcel = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('parcel');
-  static const polymer = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('polymer');
-  static const preact = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('preact');
-  static const python = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('python');
-  static const reactRouter = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('react-router');
-  static const redwoodjs = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('redwoodjs');
-  static const remix = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('remix');
-  static const ruby = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ruby');
-  static const rust = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('rust');
-  static const saber = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('saber');
-  static const sanity = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('sanity');
-  static const sanityV2 = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('sanity-v2');
-  static const sapper = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('sapper');
-  static const scully = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('scully');
-  static const services = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('services');
-  static const solidstart = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('solidstart');
-  static const solidstart1 = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('solidstart-1');
-  static const stencil = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('stencil');
-  static const storybook = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('storybook');
-  static const svelte = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('svelte');
-  static const sveltekit = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('sveltekit');
-  static const sveltekit1 = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('sveltekit-1');
-  static const tanstackStart = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('tanstack-start');
-  static const tanstackStartLovable = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('tanstack-start-lovable');
-  static const umijs = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('umijs');
-  static const vite = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('vite');
-  static const vitepress = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('vitepress');
-  static const vue = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('vue');
-  static const vuepress = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('vuepress');
-  static const xmcp = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('xmcp');
-  static const zola = GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('zola');
+  static const actixWeb =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'actix-web');
+  static const angular =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'angular');
+  static const ash =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ash');
+  static const astro =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('astro');
+  static const axum =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('axum');
+  static const blitzjs =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'blitzjs');
+  static const brunch =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('brunch');
+  static const bun =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('bun');
+  static const container =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'container');
+  static const createReactApp =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'create-react-app');
+  static const django =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('django');
+  static const docusaurus =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'docusaurus');
+  static const docusaurus2 =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'docusaurus-2');
+  static const dojo =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('dojo');
+  static const eleventy =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'eleventy');
+  static const elysia =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('elysia');
+  static const ember =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ember');
+  static const eve =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('eve');
+  static const express =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'express');
+  static const factoryEve =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'factory-eve');
+  static const fastapi =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'fastapi');
+  static const fasthtml =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'fasthtml');
+  static const fastify =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'fastify');
+  static const flask =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('flask');
+  static const gatsby =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('gatsby');
+  static const go =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('go');
+  static const gridsome =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'gridsome');
+  static const h3 =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('h3');
+  static const hexo =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('hexo');
+  static const hono =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('hono');
+  static const hugo =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('hugo');
+  static const hydrogen =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'hydrogen');
+  static const ionicAngular =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'ionic-angular');
+  static const ionicReact =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'ionic-react');
+  static const jekyll =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('jekyll');
+  static const koa =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('koa');
+  static const mastra =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('mastra');
+  static const middleman =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'middleman');
+  static const nestjs =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nestjs');
+  static const nextjs =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nextjs');
+  static const nitro =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nitro');
+  static const node =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('node');
+  static const nuxtjs =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('nuxtjs');
+  static const parcel =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('parcel');
+  static const polymer =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'polymer');
+  static const preact =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('preact');
+  static const python =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('python');
+  static const reactRouter =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'react-router');
+  static const redwoodjs =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'redwoodjs');
+  static const remix =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('remix');
+  static const ruby =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('ruby');
+  static const rust =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('rust');
+  static const saber =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('saber');
+  static const sanity =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('sanity');
+  static const sanityV2 =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'sanity-v2');
+  static const sapper =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('sapper');
+  static const scully =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('scully');
+  static const services =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'services');
+  static const solidstart =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'solidstart');
+  static const solidstart1 =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'solidstart-1');
+  static const stencil =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'stencil');
+  static const storybook =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'storybook');
+  static const svelte =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('svelte');
+  static const sveltekit =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'sveltekit');
+  static const sveltekit1 =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'sveltekit-1');
+  static const tanstackStart =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'tanstack-start');
+  static const tanstackStartLovable =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'tanstack-start-lovable');
+  static const umijs =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('umijs');
+  static const vite =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('vite');
+  static const vitepress =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'vitepress');
+  static const vue =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('vue');
+  static const vuepress =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._(
+          'vuepress');
+  static const xmcp =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('xmcp');
+  static const zola =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsFramework._('zola');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentsResponseDeploymentsItemProjectSettingsFramework &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should comment on commits
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit {
-
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(
+      this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit.fromJson(
+          bool value) =>
+      GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(
+          value);
 
-  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(false);
-  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(true);
+  static const false_ =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(
+          false);
+  static const true_ =
+      GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnCommit &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

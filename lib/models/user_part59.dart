@@ -8,115 +8,247 @@ part of 'user.dart';
 class UserEventPayloadVariant168 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional array value serialized in the `customEnvironmentSlugs` wire field.
   final SdkOptional<List<String>> customEnvironmentSlugs;
+
   /// Optional `string` value serialized in the `edgeConfigId` wire field.
   final SdkOptional<String?> edgeConfigId;
+
   /// Optional `string` value serialized in the `edgeConfigTokenId` wire field.
   final SdkOptional<String?> edgeConfigTokenId;
+
   /// Optional `string` value serialized in the `gitBranch` wire field.
   final SdkOptional<String> gitBranch;
+
   /// Optional `string` value serialized in the `id` wire field.
   final SdkOptional<String> id;
+
   /// Optional `string` value serialized in the `ipAddress` wire field.
   final SdkOptional<String> ipAddress;
+
   /// Optional `string` value serialized in the `key` wire field.
   final SdkOptional<String> key;
+
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
+
   /// Optional `string` value serialized in the `source` wire field.
   final SdkOptional<String> source;
+
   /// Optional API value serialized in the `target` wire field.
   final SdkOptional<dynamic> target;
+
   /// Optional object value serialized in the `updateDiff` wire field.
   final SdkOptional<UserEventPayloadVariant168UpdateDiff> updateDiff;
 
-  const UserEventPayloadVariant168({this.customEnvironmentSlugs = const SdkOmitted(), this.edgeConfigId = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.id = const SdkOmitted(), this.ipAddress = const SdkOmitted(), this.key = const SdkOmitted(), this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), this.source = const SdkOmitted(), this.target = const SdkOmitted(), this.updateDiff = const SdkOmitted()});
+  const UserEventPayloadVariant168(
+      {this.customEnvironmentSlugs = const SdkOmitted(),
+      this.edgeConfigId = const SdkOmitted(),
+      this.edgeConfigTokenId = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.id = const SdkOmitted(),
+      this.ipAddress = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      this.projectName = const SdkOmitted(),
+      this.source = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      this.updateDiff = const SdkOmitted()});
 
-  UserEventPayloadVariant168 Function({SdkOptional<List<String>> customEnvironmentSlugs, SdkOptional<String?> edgeConfigId, SdkOptional<String?> edgeConfigTokenId, SdkOptional<String> gitBranch, SdkOptional<String> id, SdkOptional<String> ipAddress, SdkOptional<String> key, SdkOptional<String> projectId, SdkOptional<String> projectName, SdkOptional<String> source, SdkOptional<dynamic> target, SdkOptional<UserEventPayloadVariant168UpdateDiff> updateDiff}) get copyWith => _copyWith;
+  UserEventPayloadVariant168 Function(
+          {SdkOptional<List<String>> customEnvironmentSlugs,
+          SdkOptional<String?> edgeConfigId,
+          SdkOptional<String?> edgeConfigTokenId,
+          SdkOptional<String> gitBranch,
+          SdkOptional<String> id,
+          SdkOptional<String> ipAddress,
+          SdkOptional<String> key,
+          SdkOptional<String> projectId,
+          SdkOptional<String> projectName,
+          SdkOptional<String> source,
+          SdkOptional<dynamic> target,
+          SdkOptional<UserEventPayloadVariant168UpdateDiff> updateDiff})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant168 _copyWith({Object? customEnvironmentSlugs = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ipAddress = sdkOmittedValue, Object? key = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? source = sdkOmittedValue, Object? target = sdkOmittedValue, Object? updateDiff = sdkOmittedValue}) => UserEventPayloadVariant168(
-    customEnvironmentSlugs: identical(customEnvironmentSlugs, sdkOmittedValue) ? this.customEnvironmentSlugs : customEnvironmentSlugs as SdkOptional<List<String>>,
-    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String?>,
-    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String?>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    ipAddress: identical(ipAddress, sdkOmittedValue) ? this.ipAddress : ipAddress as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<String>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
-    updateDiff: identical(updateDiff, sdkOmittedValue) ? this.updateDiff : updateDiff as SdkOptional<UserEventPayloadVariant168UpdateDiff>,
-  );
+  UserEventPayloadVariant168 _copyWith(
+          {Object? customEnvironmentSlugs = sdkOmittedValue,
+          Object? edgeConfigId = sdkOmittedValue,
+          Object? edgeConfigTokenId = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? ipAddress = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? updateDiff = sdkOmittedValue}) =>
+      UserEventPayloadVariant168(
+        customEnvironmentSlugs:
+            identical(customEnvironmentSlugs, sdkOmittedValue)
+                ? this.customEnvironmentSlugs
+                : customEnvironmentSlugs as SdkOptional<List<String>>,
+        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
+            ? this.edgeConfigId
+            : edgeConfigId as SdkOptional<String?>,
+        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
+            ? this.edgeConfigTokenId
+            : edgeConfigTokenId as SdkOptional<String?>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        ipAddress: identical(ipAddress, sdkOmittedValue)
+            ? this.ipAddress
+            : ipAddress as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as SdkOptional<String>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<dynamic>,
+        updateDiff: identical(updateDiff, sdkOmittedValue)
+            ? this.updateDiff
+            : updateDiff as SdkOptional<UserEventPayloadVariant168UpdateDiff>,
+      );
 
-  factory UserEventPayloadVariant168.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant168(
-    customEnvironmentSlugs: json['customEnvironmentSlugs'] != null ? SdkPresent(((json['customEnvironmentSlugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    edgeConfigId: json.containsKey('edgeConfigId') ? SdkPresent(json['edgeConfigId'] as String?) : const SdkOmitted(),
-    edgeConfigTokenId: json.containsKey('edgeConfigTokenId') ? SdkPresent(json['edgeConfigTokenId'] as String?) : const SdkOmitted(),
-    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    ipAddress: json['ipAddress'] != null ? SdkPresent((json['ipAddress'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-    source: json['source'] != null ? SdkPresent((json['source'] as String?)!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
-    updateDiff: json['updateDiff'] != null ? SdkPresent((json['updateDiff'] != null ? UserEventPayloadVariant168UpdateDiff.fromJson(json['updateDiff'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant168.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant168(
+        customEnvironmentSlugs: json['customEnvironmentSlugs'] != null
+            ? SdkPresent(((json['customEnvironmentSlugs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        edgeConfigId: json.containsKey('edgeConfigId')
+            ? SdkPresent(json['edgeConfigId'] as String?)
+            : const SdkOmitted(),
+        edgeConfigTokenId: json.containsKey('edgeConfigTokenId')
+            ? SdkPresent(json['edgeConfigTokenId'] as String?)
+            : const SdkOmitted(),
+        gitBranch: json['gitBranch'] != null
+            ? SdkPresent((json['gitBranch'] as String?)!)
+            : const SdkOmitted(),
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        ipAddress: json['ipAddress'] != null
+            ? SdkPresent((json['ipAddress'] as String?)!)
+            : const SdkOmitted(),
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        projectId: json['projectId'] != null
+            ? SdkPresent((json['projectId'] as String?)!)
+            : const SdkOmitted(),
+        projectName: json['projectName'] != null
+            ? SdkPresent((json['projectName'] as String?)!)
+            : const SdkOmitted(),
+        source: json['source'] != null
+            ? SdkPresent((json['source'] as String?)!)
+            : const SdkOmitted(),
+        target: json['target'] != null
+            ? SdkPresent((json['target'])!)
+            : const SdkOmitted(),
+        updateDiff: json['updateDiff'] != null
+            ? SdkPresent((json['updateDiff'] != null
+                ? UserEventPayloadVariant168UpdateDiff.fromJson(
+                    json['updateDiff'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (customEnvironmentSlugs) {
-      SdkPresent<List<String>>(value: final value) => {'customEnvironmentSlugs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigId) {
-      SdkPresent<String?>(value: final value) => {'edgeConfigId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigTokenId) {
-      SdkPresent<String?>(value: final value) => {'edgeConfigTokenId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ipAddress) {
-      SdkPresent<String>(value: final value) => {'ipAddress': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (source) {
-      SdkPresent<String>(value: final value) => {'source': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<dynamic>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updateDiff) {
-      SdkPresent<UserEventPayloadVariant168UpdateDiff>(value: final value) => {'updateDiff': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (customEnvironmentSlugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'customEnvironmentSlugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigId) {
+          SdkPresent<String?>(value: final value) => {
+              'edgeConfigId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigTokenId) {
+          SdkPresent<String?>(value: final value) => {
+              'edgeConfigTokenId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ipAddress) {
+          SdkPresent<String>(value: final value) => {
+              'ipAddress': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (source) {
+          SdkPresent<String>(value: final value) => {
+              'source': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<dynamic>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updateDiff) {
+          SdkPresent<UserEventPayloadVariant168UpdateDiff>(
+            value: final value
+          ) =>
+            {
+              'updateDiff': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class UserEventPayloadVariant169Target {
@@ -124,138 +256,275 @@ sealed class UserEventPayloadVariant169Target {
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant169Target();
   factory UserEventPayloadVariant169Target.fromJson(Object? json) {
-    if (json is String) { return UserEventPayloadVariant169TargetString(json); }
-    if (json is List) { return UserEventPayloadVariant169TargetListString(json.map((e) => e as String).toList().cast<String>()); }
-    throw FormatException("No variant matched for UserEventPayloadVariant169Target");
+    if (json is String) {
+      return UserEventPayloadVariant169TargetString(json);
+    }
+    if (json is List) {
+      return UserEventPayloadVariant169TargetListString(
+          json.map((e) => e as String).toList().cast<String>());
+    }
+    throw FormatException(
+        "No variant matched for UserEventPayloadVariant169Target");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant169TargetString extends UserEventPayloadVariant169Target {
+final class UserEventPayloadVariant169TargetString
+    extends UserEventPayloadVariant169Target {
   final String value;
   const UserEventPayloadVariant169TargetString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class UserEventPayloadVariant169TargetListString extends UserEventPayloadVariant169Target {
+final class UserEventPayloadVariant169TargetListString
+    extends UserEventPayloadVariant169Target {
   final List<String> value;
   const UserEventPayloadVariant169TargetListString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant169 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional array value serialized in the `customEnvironmentSlugs` wire field.
   final SdkOptional<List<String>> customEnvironmentSlugs;
+
   /// Optional `string` value serialized in the `edgeConfigId` wire field.
   final SdkOptional<String?> edgeConfigId;
+
   /// Optional `string` value serialized in the `edgeConfigTokenId` wire field.
   final SdkOptional<String?> edgeConfigTokenId;
+
   /// Optional `string` value serialized in the `gitBranch` wire field.
   final SdkOptional<String> gitBranch;
+
   /// Optional `string` value serialized in the `id` wire field.
   final SdkOptional<String> id;
+
   /// Optional `string` value serialized in the `ipAddress` wire field.
   final SdkOptional<String> ipAddress;
+
   /// Optional `string` value serialized in the `key` wire field.
   final SdkOptional<String> key;
+
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
+
   /// Optional `string` value serialized in the `source` wire field.
   final SdkOptional<String> source;
+
   /// Optional API value serialized in the `target` wire field.
   final SdkOptional<dynamic> target;
+
   /// Required `string` value serialized in the `deploymentId` wire field.
   final String deploymentId;
+
   /// Required `string` value serialized in the `deploymentUrl` wire field.
   final String deploymentUrl;
 
-  const UserEventPayloadVariant169({this.customEnvironmentSlugs = const SdkOmitted(), this.edgeConfigId = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.id = const SdkOmitted(), this.ipAddress = const SdkOmitted(), this.key = const SdkOmitted(), this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), this.source = const SdkOmitted(), this.target = const SdkOmitted(), required this.deploymentId, required this.deploymentUrl});
+  const UserEventPayloadVariant169(
+      {this.customEnvironmentSlugs = const SdkOmitted(),
+      this.edgeConfigId = const SdkOmitted(),
+      this.edgeConfigTokenId = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.id = const SdkOmitted(),
+      this.ipAddress = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      this.projectName = const SdkOmitted(),
+      this.source = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      required this.deploymentId,
+      required this.deploymentUrl});
 
-  UserEventPayloadVariant169 Function({SdkOptional<List<String>> customEnvironmentSlugs, SdkOptional<String?> edgeConfigId, SdkOptional<String?> edgeConfigTokenId, SdkOptional<String> gitBranch, SdkOptional<String> id, SdkOptional<String> ipAddress, SdkOptional<String> key, SdkOptional<String> projectId, SdkOptional<String> projectName, SdkOptional<String> source, SdkOptional<dynamic> target, String deploymentId, String deploymentUrl}) get copyWith => _copyWith;
+  UserEventPayloadVariant169 Function(
+      {SdkOptional<List<String>> customEnvironmentSlugs,
+      SdkOptional<String?> edgeConfigId,
+      SdkOptional<String?> edgeConfigTokenId,
+      SdkOptional<String> gitBranch,
+      SdkOptional<String> id,
+      SdkOptional<String> ipAddress,
+      SdkOptional<String> key,
+      SdkOptional<String> projectId,
+      SdkOptional<String> projectName,
+      SdkOptional<String> source,
+      SdkOptional<dynamic> target,
+      String deploymentId,
+      String deploymentUrl}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant169 _copyWith({Object? customEnvironmentSlugs = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ipAddress = sdkOmittedValue, Object? key = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? source = sdkOmittedValue, Object? target = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? deploymentUrl = sdkOmittedValue}) => UserEventPayloadVariant169(
-    customEnvironmentSlugs: identical(customEnvironmentSlugs, sdkOmittedValue) ? this.customEnvironmentSlugs : customEnvironmentSlugs as SdkOptional<List<String>>,
-    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String?>,
-    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String?>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    ipAddress: identical(ipAddress, sdkOmittedValue) ? this.ipAddress : ipAddress as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<String>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
-    deploymentUrl: identical(deploymentUrl, sdkOmittedValue) ? this.deploymentUrl : deploymentUrl as String,
-  );
+  UserEventPayloadVariant169 _copyWith(
+          {Object? customEnvironmentSlugs = sdkOmittedValue,
+          Object? edgeConfigId = sdkOmittedValue,
+          Object? edgeConfigTokenId = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? ipAddress = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? deploymentUrl = sdkOmittedValue}) =>
+      UserEventPayloadVariant169(
+        customEnvironmentSlugs:
+            identical(customEnvironmentSlugs, sdkOmittedValue)
+                ? this.customEnvironmentSlugs
+                : customEnvironmentSlugs as SdkOptional<List<String>>,
+        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
+            ? this.edgeConfigId
+            : edgeConfigId as SdkOptional<String?>,
+        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
+            ? this.edgeConfigTokenId
+            : edgeConfigTokenId as SdkOptional<String?>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        ipAddress: identical(ipAddress, sdkOmittedValue)
+            ? this.ipAddress
+            : ipAddress as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as SdkOptional<String>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<dynamic>,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as String,
+        deploymentUrl: identical(deploymentUrl, sdkOmittedValue)
+            ? this.deploymentUrl
+            : deploymentUrl as String,
+      );
 
-  factory UserEventPayloadVariant169.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant169(
-    customEnvironmentSlugs: json['customEnvironmentSlugs'] != null ? SdkPresent(((json['customEnvironmentSlugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    edgeConfigId: json.containsKey('edgeConfigId') ? SdkPresent(json['edgeConfigId'] as String?) : const SdkOmitted(),
-    edgeConfigTokenId: json.containsKey('edgeConfigTokenId') ? SdkPresent(json['edgeConfigTokenId'] as String?) : const SdkOmitted(),
-    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    ipAddress: json['ipAddress'] != null ? SdkPresent((json['ipAddress'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-    source: json['source'] != null ? SdkPresent((json['source'] as String?)!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
-    deploymentId: (json['deploymentId'] as String?)!,
-    deploymentUrl: (json['deploymentUrl'] as String?)!,
-  );
+  factory UserEventPayloadVariant169.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant169(
+        customEnvironmentSlugs: json['customEnvironmentSlugs'] != null
+            ? SdkPresent(((json['customEnvironmentSlugs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        edgeConfigId: json.containsKey('edgeConfigId')
+            ? SdkPresent(json['edgeConfigId'] as String?)
+            : const SdkOmitted(),
+        edgeConfigTokenId: json.containsKey('edgeConfigTokenId')
+            ? SdkPresent(json['edgeConfigTokenId'] as String?)
+            : const SdkOmitted(),
+        gitBranch: json['gitBranch'] != null
+            ? SdkPresent((json['gitBranch'] as String?)!)
+            : const SdkOmitted(),
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        ipAddress: json['ipAddress'] != null
+            ? SdkPresent((json['ipAddress'] as String?)!)
+            : const SdkOmitted(),
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        projectId: json['projectId'] != null
+            ? SdkPresent((json['projectId'] as String?)!)
+            : const SdkOmitted(),
+        projectName: json['projectName'] != null
+            ? SdkPresent((json['projectName'] as String?)!)
+            : const SdkOmitted(),
+        source: json['source'] != null
+            ? SdkPresent((json['source'] as String?)!)
+            : const SdkOmitted(),
+        target: json['target'] != null
+            ? SdkPresent((json['target'])!)
+            : const SdkOmitted(),
+        deploymentId: (json['deploymentId'] as String?)!,
+        deploymentUrl: (json['deploymentUrl'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (customEnvironmentSlugs) {
-      SdkPresent<List<String>>(value: final value) => {'customEnvironmentSlugs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigId) {
-      SdkPresent<String?>(value: final value) => {'edgeConfigId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigTokenId) {
-      SdkPresent<String?>(value: final value) => {'edgeConfigTokenId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ipAddress) {
-      SdkPresent<String>(value: final value) => {'ipAddress': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (source) {
-      SdkPresent<String>(value: final value) => {'source': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<dynamic>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-    'deploymentId': deploymentId,
-    'deploymentUrl': deploymentUrl,
-  };
+        ...switch (customEnvironmentSlugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'customEnvironmentSlugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigId) {
+          SdkPresent<String?>(value: final value) => {
+              'edgeConfigId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigTokenId) {
+          SdkPresent<String?>(value: final value) => {
+              'edgeConfigTokenId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ipAddress) {
+          SdkPresent<String>(value: final value) => {
+              'ipAddress': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (source) {
+          SdkPresent<String>(value: final value) => {
+              'source': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<dynamic>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'deploymentId': deploymentId,
+        'deploymentUrl': deploymentUrl,
+      };
 }

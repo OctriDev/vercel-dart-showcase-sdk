@@ -5,156 +5,210 @@ part of 'inline.dart';
 
 // Inline operation models (part 78)
 final class FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem {
-
   final String value;
 
-  const FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._(this.value);
+  const FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._(
+      this.value);
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem.fromJson(String value) => FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._(value);
+  factory FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._(value);
 
-  static const flagsSecretNeedsSplit = FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._('flags-secret-needs-split');
-  static const readableSecret = FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._('readable-secret');
+  static const flagsSecretNeedsSplit =
+      FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._(
+          'flags-secret-needs-split');
+  static const readableSecret =
+      FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem._(
+          'readable-secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant2EnvsItemSecurityIssuesItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant2EnvsItemSystem {
-
   final bool value;
 
   const FilterProjectEnvsResponseVariant2EnvsItemSystem._(this.value);
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemSystem.fromJson(bool value) => FilterProjectEnvsResponseVariant2EnvsItemSystem._(value);
+  factory FilterProjectEnvsResponseVariant2EnvsItemSystem.fromJson(
+          bool value) =>
+      FilterProjectEnvsResponseVariant2EnvsItemSystem._(value);
 
-  static const false_ = FilterProjectEnvsResponseVariant2EnvsItemSystem._(false);
+  static const false_ =
+      FilterProjectEnvsResponseVariant2EnvsItemSystem._(false);
   static const true_ = FilterProjectEnvsResponseVariant2EnvsItemSystem._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant2EnvsItemSystem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant2EnvsItemSystem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item {
-
   final String value;
 
-  const FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._(this.value);
+  const FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._(
+      this.value);
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item.fromJson(String value) => FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._(value);
+  factory FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._(value);
 
-  static const development = FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._('development');
-  static const preview = FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._('preview');
-  static const production = FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._('production');
+  static const development =
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._(
+          'development');
+  static const preview =
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._('preview');
+  static const production =
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item._(
+          'production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1 {
-
   final String value;
 
   const FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._(this.value);
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1.fromJson(String value) => FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._(value);
+  factory FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._(value);
 
-  static const development = FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._('development');
-  static const preview = FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._('preview');
-  static const production = FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._('production');
+  static const development =
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._('development');
+  static const preview =
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._('preview');
+  static const production =
+      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FilterProjectEnvsResponseVariant2EnvsItemType {
-
   final String value;
 
   const FilterProjectEnvsResponseVariant2EnvsItemType._(this.value);
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemType.fromJson(String value) => FilterProjectEnvsResponseVariant2EnvsItemType._(value);
+  factory FilterProjectEnvsResponseVariant2EnvsItemType.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant2EnvsItemType._(value);
 
-  static const encrypted = FilterProjectEnvsResponseVariant2EnvsItemType._('encrypted');
+  static const encrypted =
+      FilterProjectEnvsResponseVariant2EnvsItemType._('encrypted');
   static const plain = FilterProjectEnvsResponseVariant2EnvsItemType._('plain');
-  static const secret = FilterProjectEnvsResponseVariant2EnvsItemType._('secret');
-  static const sensitive = FilterProjectEnvsResponseVariant2EnvsItemType._('sensitive');
-  static const system = FilterProjectEnvsResponseVariant2EnvsItemType._('system');
+  static const secret =
+      FilterProjectEnvsResponseVariant2EnvsItemType._('secret');
+  static const sensitive =
+      FilterProjectEnvsResponseVariant2EnvsItemType._('sensitive');
+  static const system =
+      FilterProjectEnvsResponseVariant2EnvsItemType._('system');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant2EnvsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant2EnvsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
 final class FilterProjectEnvsResponseVariant2EnvsItemVisibility {
-
   final String value;
 
   const FilterProjectEnvsResponseVariant2EnvsItemVisibility._(this.value);
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemVisibility.fromJson(String value) => FilterProjectEnvsResponseVariant2EnvsItemVisibility._(value);
+  factory FilterProjectEnvsResponseVariant2EnvsItemVisibility.fromJson(
+          String value) =>
+      FilterProjectEnvsResponseVariant2EnvsItemVisibility._(value);
 
-  static const config = FilterProjectEnvsResponseVariant2EnvsItemVisibility._('config');
-  static const secret = FilterProjectEnvsResponseVariant2EnvsItemVisibility._('secret');
+  static const config =
+      FilterProjectEnvsResponseVariant2EnvsItemVisibility._('config');
+  static const secret =
+      FilterProjectEnvsResponseVariant2EnvsItemVisibility._('secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FilterProjectEnvsResponseVariant2EnvsItemVisibility && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FilterProjectEnvsResponseVariant2EnvsItemVisibility &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class FlagEnvironmentsValueActive {
-
   final bool value;
 
   const FlagEnvironmentsValueActive._(this.value);
 
-  factory FlagEnvironmentsValueActive.fromJson(bool value) => FlagEnvironmentsValueActive._(value);
+  factory FlagEnvironmentsValueActive.fromJson(bool value) =>
+      FlagEnvironmentsValueActive._(value);
 
   static const false_ = FlagEnvironmentsValueActive._(false);
   static const true_ = FlagEnvironmentsValueActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FlagEnvironmentsValueActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FlagEnvironmentsValueActive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum FlagEnvironmentsValueFallthroughVariant0Type {
@@ -162,14 +216,18 @@ enum FlagEnvironmentsValueFallthroughVariant0Type {
 
   static FlagEnvironmentsValueFallthroughVariant0Type fromJson(String value) {
     switch (value) {
-      case 'variant': return FlagEnvironmentsValueFallthroughVariant0Type.variant;
-      default: throw ArgumentError('Unknown FlagEnvironmentsValueFallthroughVariant0Type: $value');
+      case 'variant':
+        return FlagEnvironmentsValueFallthroughVariant0Type.variant;
+      default:
+        throw ArgumentError(
+            'Unknown FlagEnvironmentsValueFallthroughVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueFallthroughVariant0Type.variant: return 'variant';
+      case FlagEnvironmentsValueFallthroughVariant0Type.variant:
+        return 'variant';
     }
   }
 
@@ -178,23 +236,29 @@ enum FlagEnvironmentsValueFallthroughVariant0Type {
 }
 
 final class FlagEnvironmentsValueFallthroughVariant1BaseType {
-
   final String value;
 
   const FlagEnvironmentsValueFallthroughVariant1BaseType._(this.value);
 
-  factory FlagEnvironmentsValueFallthroughVariant1BaseType.fromJson(String value) => FlagEnvironmentsValueFallthroughVariant1BaseType._(value);
+  factory FlagEnvironmentsValueFallthroughVariant1BaseType.fromJson(
+          String value) =>
+      FlagEnvironmentsValueFallthroughVariant1BaseType._(value);
 
-  static const entity = FlagEnvironmentsValueFallthroughVariant1BaseType._('entity');
+  static const entity =
+      FlagEnvironmentsValueFallthroughVariant1BaseType._('entity');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FlagEnvironmentsValueFallthroughVariant1BaseType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FlagEnvironmentsValueFallthroughVariant1BaseType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum FlagEnvironmentsValueFallthroughVariant1Type {
@@ -202,14 +266,18 @@ enum FlagEnvironmentsValueFallthroughVariant1Type {
 
   static FlagEnvironmentsValueFallthroughVariant1Type fromJson(String value) {
     switch (value) {
-      case 'split': return FlagEnvironmentsValueFallthroughVariant1Type.split;
-      default: throw ArgumentError('Unknown FlagEnvironmentsValueFallthroughVariant1Type: $value');
+      case 'split':
+        return FlagEnvironmentsValueFallthroughVariant1Type.split;
+      default:
+        throw ArgumentError(
+            'Unknown FlagEnvironmentsValueFallthroughVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueFallthroughVariant1Type.split: return 'split';
+      case FlagEnvironmentsValueFallthroughVariant1Type.split:
+        return 'split';
     }
   }
 
@@ -218,23 +286,29 @@ enum FlagEnvironmentsValueFallthroughVariant1Type {
 }
 
 final class FlagEnvironmentsValueFallthroughVariant2BaseType {
-
   final String value;
 
   const FlagEnvironmentsValueFallthroughVariant2BaseType._(this.value);
 
-  factory FlagEnvironmentsValueFallthroughVariant2BaseType.fromJson(String value) => FlagEnvironmentsValueFallthroughVariant2BaseType._(value);
+  factory FlagEnvironmentsValueFallthroughVariant2BaseType.fromJson(
+          String value) =>
+      FlagEnvironmentsValueFallthroughVariant2BaseType._(value);
 
-  static const entity = FlagEnvironmentsValueFallthroughVariant2BaseType._('entity');
+  static const entity =
+      FlagEnvironmentsValueFallthroughVariant2BaseType._('entity');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is FlagEnvironmentsValueFallthroughVariant2BaseType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is FlagEnvironmentsValueFallthroughVariant2BaseType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum FlagEnvironmentsValueFallthroughVariant2Type {
@@ -242,14 +316,18 @@ enum FlagEnvironmentsValueFallthroughVariant2Type {
 
   static FlagEnvironmentsValueFallthroughVariant2Type fromJson(String value) {
     switch (value) {
-      case 'rollout': return FlagEnvironmentsValueFallthroughVariant2Type.rollout;
-      default: throw ArgumentError('Unknown FlagEnvironmentsValueFallthroughVariant2Type: $value');
+      case 'rollout':
+        return FlagEnvironmentsValueFallthroughVariant2Type.rollout;
+      default:
+        throw ArgumentError(
+            'Unknown FlagEnvironmentsValueFallthroughVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueFallthroughVariant2Type.rollout: return 'rollout';
+      case FlagEnvironmentsValueFallthroughVariant2Type.rollout:
+        return 'rollout';
     }
   }
 
@@ -262,14 +340,18 @@ enum FlagEnvironmentsValueFallthroughVariant3Type {
 
   static FlagEnvironmentsValueFallthroughVariant3Type fromJson(String value) {
     switch (value) {
-      case 'experiment': return FlagEnvironmentsValueFallthroughVariant3Type.experiment;
-      default: throw ArgumentError('Unknown FlagEnvironmentsValueFallthroughVariant3Type: $value');
+      case 'experiment':
+        return FlagEnvironmentsValueFallthroughVariant3Type.experiment;
+      default:
+        throw ArgumentError(
+            'Unknown FlagEnvironmentsValueFallthroughVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueFallthroughVariant3Type.experiment: return 'experiment';
+      case FlagEnvironmentsValueFallthroughVariant3Type.experiment:
+        return 'experiment';
     }
   }
 

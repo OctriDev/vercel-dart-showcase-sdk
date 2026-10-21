@@ -8,81 +8,163 @@ part of 'vcr.dart';
 class VcrTag {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// CPU architecture the manifest targets. Only present for single-platform manifests.
   final SdkOptional<String> arch;
+
   /// ISO 8601 timestamp of when the tag was created.
   final String createdAt;
+
   /// Internal identifier of the image the tag points at.
   final String imageId;
+
   /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
   final VcrTagKind kind;
+
   /// SHA-256 digest of the image manifest the tag points at.
   final String manifestDigest;
+
   /// Operating system the manifest targets. Only present for single-platform manifests.
   final SdkOptional<String> platform;
+
   /// Identifier of the actor that pushed the image.
   final SdkOptional<String> pushedBy;
+
   /// Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry.
   final double sizeInBytes;
+
   /// VHS-readiness status, or `null` for a multi-platform index.
   final VcrTagStatus? status;
+
   /// The tag name.
   final String tag;
+
   /// ISO 8601 timestamp of when the tag was last updated.
   final String updatedAt;
 
-  const VcrTag({this.arch = const SdkOmitted(), required this.createdAt, required this.imageId, required this.kind, required this.manifestDigest, this.platform = const SdkOmitted(), this.pushedBy = const SdkOmitted(), required this.sizeInBytes, required this.status, required this.tag, required this.updatedAt});
+  const VcrTag(
+      {this.arch = const SdkOmitted(),
+      required this.createdAt,
+      required this.imageId,
+      required this.kind,
+      required this.manifestDigest,
+      this.platform = const SdkOmitted(),
+      this.pushedBy = const SdkOmitted(),
+      required this.sizeInBytes,
+      required this.status,
+      required this.tag,
+      required this.updatedAt});
 
-  VcrTag Function({SdkOptional<String> arch, String createdAt, String imageId, VcrTagKind kind, String manifestDigest, SdkOptional<String> platform, SdkOptional<String> pushedBy, double sizeInBytes, VcrTagStatus? status, String tag, String updatedAt}) get copyWith => _copyWith;
+  VcrTag Function(
+      {SdkOptional<String> arch,
+      String createdAt,
+      String imageId,
+      VcrTagKind kind,
+      String manifestDigest,
+      SdkOptional<String> platform,
+      SdkOptional<String> pushedBy,
+      double sizeInBytes,
+      VcrTagStatus? status,
+      String tag,
+      String updatedAt}) get copyWith => _copyWith;
 
-  VcrTag _copyWith({Object? arch = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? imageId = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? manifestDigest = sdkOmittedValue, Object? platform = sdkOmittedValue, Object? pushedBy = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? status = sdkOmittedValue, Object? tag = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => VcrTag(
-    arch: identical(arch, sdkOmittedValue) ? this.arch : arch as SdkOptional<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    imageId: identical(imageId, sdkOmittedValue) ? this.imageId : imageId as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as VcrTagKind,
-    manifestDigest: identical(manifestDigest, sdkOmittedValue) ? this.manifestDigest : manifestDigest as String,
-    platform: identical(platform, sdkOmittedValue) ? this.platform : platform as SdkOptional<String>,
-    pushedBy: identical(pushedBy, sdkOmittedValue) ? this.pushedBy : pushedBy as SdkOptional<String>,
-    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
-    status: identical(status, sdkOmittedValue) ? this.status : status as VcrTagStatus?,
-    tag: identical(tag, sdkOmittedValue) ? this.tag : tag as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-  );
+  VcrTag _copyWith(
+          {Object? arch = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? imageId = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? manifestDigest = sdkOmittedValue,
+          Object? platform = sdkOmittedValue,
+          Object? pushedBy = sdkOmittedValue,
+          Object? sizeInBytes = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? tag = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      VcrTag(
+        arch: identical(arch, sdkOmittedValue)
+            ? this.arch
+            : arch as SdkOptional<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        imageId: identical(imageId, sdkOmittedValue)
+            ? this.imageId
+            : imageId as String,
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as VcrTagKind,
+        manifestDigest: identical(manifestDigest, sdkOmittedValue)
+            ? this.manifestDigest
+            : manifestDigest as String,
+        platform: identical(platform, sdkOmittedValue)
+            ? this.platform
+            : platform as SdkOptional<String>,
+        pushedBy: identical(pushedBy, sdkOmittedValue)
+            ? this.pushedBy
+            : pushedBy as SdkOptional<String>,
+        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
+            ? this.sizeInBytes
+            : sizeInBytes as double,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as VcrTagStatus?,
+        tag: identical(tag, sdkOmittedValue) ? this.tag : tag as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+      );
 
   factory VcrTag.fromJson(Map<String, dynamic> json) => VcrTag(
-    arch: json['arch'] != null ? SdkPresent((json['arch'] as String?)!) : const SdkOmitted(),
-    createdAt: (json['createdAt'] as String?)!,
-    imageId: (json['imageId'] as String?)!,
-    kind: (json['kind'] != null ? VcrTagKind.fromJson(json['kind'] as String) : null)!,
-    manifestDigest: (json['manifestDigest'] as String?)!,
-    platform: json['platform'] != null ? SdkPresent((json['platform'] as String?)!) : const SdkOmitted(),
-    pushedBy: json['pushedBy'] != null ? SdkPresent((json['pushedBy'] as String?)!) : const SdkOmitted(),
-    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-    status: json.containsKey('status') ? json['status'] != null ? VcrTagStatus.fromJson(json['status'] as String) : null : throw ArgumentError.value(null, 'status', 'Required property is missing'),
-    tag: (json['tag'] as String?)!,
-    updatedAt: (json['updatedAt'] as String?)!,
-  );
+        arch: json['arch'] != null
+            ? SdkPresent((json['arch'] as String?)!)
+            : const SdkOmitted(),
+        createdAt: (json['createdAt'] as String?)!,
+        imageId: (json['imageId'] as String?)!,
+        kind: (json['kind'] != null
+            ? VcrTagKind.fromJson(json['kind'] as String)
+            : null)!,
+        manifestDigest: (json['manifestDigest'] as String?)!,
+        platform: json['platform'] != null
+            ? SdkPresent((json['platform'] as String?)!)
+            : const SdkOmitted(),
+        pushedBy: json['pushedBy'] != null
+            ? SdkPresent((json['pushedBy'] as String?)!)
+            : const SdkOmitted(),
+        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+        status: json.containsKey('status')
+            ? json['status'] != null
+                ? VcrTagStatus.fromJson(json['status'] as String)
+                : null
+            : throw ArgumentError.value(
+                null, 'status', 'Required property is missing'),
+        tag: (json['tag'] as String?)!,
+        updatedAt: (json['updatedAt'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (arch) {
-      SdkPresent<String>(value: final value) => {'arch': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    'imageId': imageId,
-    'kind': kind.toJson(),
-    'manifestDigest': manifestDigest,
-    ...switch (platform) {
-      SdkPresent<String>(value: final value) => {'platform': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pushedBy) {
-      SdkPresent<String>(value: final value) => {'pushedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    'sizeInBytes': sizeInBytes,
-    'status': status?.toJson(),
-    'tag': tag,
-    'updatedAt': updatedAt,
-  };
+        ...switch (arch) {
+          SdkPresent<String>(value: final value) => {
+              'arch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        'imageId': imageId,
+        'kind': kind.toJson(),
+        'manifestDigest': manifestDigest,
+        ...switch (platform) {
+          SdkPresent<String>(value: final value) => {
+              'platform': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pushedBy) {
+          SdkPresent<String>(value: final value) => {
+              'pushedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'sizeInBytes': sizeInBytes,
+        'status': status?.toJson(),
+        'tag': tag,
+        'updatedAt': updatedAt,
+      };
 }

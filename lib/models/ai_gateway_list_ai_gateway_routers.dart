@@ -8,22 +8,31 @@ part of 'ai_gateway.dart';
 class AiGatewayRouterList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Active and archived router configurations owned by the authenticated team.
   final List<AiGatewayVirtualModelConfig> routers;
 
   const AiGatewayRouterList({required this.routers});
 
-  AiGatewayRouterList Function({List<AiGatewayVirtualModelConfig> routers}) get copyWith => _copyWith;
+  AiGatewayRouterList Function({List<AiGatewayVirtualModelConfig> routers})
+      get copyWith => _copyWith;
 
-  AiGatewayRouterList _copyWith({Object? routers = sdkOmittedValue}) => AiGatewayRouterList(
-    routers: identical(routers, sdkOmittedValue) ? this.routers : routers as List<AiGatewayVirtualModelConfig>,
-  );
+  AiGatewayRouterList _copyWith({Object? routers = sdkOmittedValue}) =>
+      AiGatewayRouterList(
+        routers: identical(routers, sdkOmittedValue)
+            ? this.routers
+            : routers as List<AiGatewayVirtualModelConfig>,
+      );
 
-  factory AiGatewayRouterList.fromJson(Map<String, dynamic> json) => AiGatewayRouterList(
-    routers: ((json['routers'] as List?)?.map((e) => AiGatewayVirtualModelConfig.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory AiGatewayRouterList.fromJson(Map<String, dynamic> json) =>
+      AiGatewayRouterList(
+        routers: ((json['routers'] as List?)
+            ?.map((e) =>
+                AiGatewayVirtualModelConfig.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'routers': routers.map((item) => item.toJson()).toList(),
-  };
+        'routers': routers.map((item) => item.toJson()).toList(),
+      };
 }

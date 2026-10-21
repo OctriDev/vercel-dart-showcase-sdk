@@ -8,22 +8,32 @@ part of 'connect.dart';
 class ConnectUpsertProjectConnectionRequest {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// One or more built-in environment names or stable custom environment IDs that belong to the project. Duplicate values are accepted and removed.
   final List<String> environments;
 
   const ConnectUpsertProjectConnectionRequest({required this.environments});
 
-  ConnectUpsertProjectConnectionRequest Function({List<String> environments}) get copyWith => _copyWith;
+  ConnectUpsertProjectConnectionRequest Function({List<String> environments})
+      get copyWith => _copyWith;
 
-  ConnectUpsertProjectConnectionRequest _copyWith({Object? environments = sdkOmittedValue}) => ConnectUpsertProjectConnectionRequest(
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<String>,
-  );
+  ConnectUpsertProjectConnectionRequest _copyWith(
+          {Object? environments = sdkOmittedValue}) =>
+      ConnectUpsertProjectConnectionRequest(
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as List<String>,
+      );
 
-  factory ConnectUpsertProjectConnectionRequest.fromJson(Map<String, dynamic> json) => ConnectUpsertProjectConnectionRequest(
-    environments: ((json['environments'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory ConnectUpsertProjectConnectionRequest.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectUpsertProjectConnectionRequest(
+        environments: ((json['environments'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'environments': environments,
-  };
+        'environments': environments,
+      };
 }

@@ -8,32 +8,55 @@ part of 'domains_registrar.dart';
 class ExpectedPriceMismatch {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final ExpectedPriceMismatchStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final ExpectedPriceMismatchCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const ExpectedPriceMismatch({required this.status, required this.code, required this.message});
+  const ExpectedPriceMismatch(
+      {required this.status, required this.code, required this.message});
 
-  ExpectedPriceMismatch Function({ExpectedPriceMismatchStatus status, ExpectedPriceMismatchCode code, String message}) get copyWith => _copyWith;
+  ExpectedPriceMismatch Function(
+      {ExpectedPriceMismatchStatus status,
+      ExpectedPriceMismatchCode code,
+      String message}) get copyWith => _copyWith;
 
-  ExpectedPriceMismatch _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => ExpectedPriceMismatch(
-    status: identical(status, sdkOmittedValue) ? this.status : status as ExpectedPriceMismatchStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as ExpectedPriceMismatchCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  ExpectedPriceMismatch _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      ExpectedPriceMismatch(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as ExpectedPriceMismatchStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as ExpectedPriceMismatchCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory ExpectedPriceMismatch.fromJson(Map<String, dynamic> json) => ExpectedPriceMismatch(
-    status: (json['status'] != null ? ExpectedPriceMismatchStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? ExpectedPriceMismatchCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory ExpectedPriceMismatch.fromJson(Map<String, dynamic> json) =>
+      ExpectedPriceMismatch(
+        status: (json['status'] != null
+            ? ExpectedPriceMismatchStatus.fromJson(
+                (json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? ExpectedPriceMismatchCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }

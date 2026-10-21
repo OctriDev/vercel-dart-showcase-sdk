@@ -7,107 +7,207 @@ part of 'vercel_ci.dart';
 class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind kind;
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind
+      kind;
   final String command;
 
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0({required this.kind, required this.command});
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
+      {required this.kind, required this.command});
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0 Function({GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind kind, String command}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0 Function(
+      {GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind
+          kind,
+      String command}) get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0 _copyWith({Object? kind = sdkOmittedValue, Object? command = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind,
-    command: identical(command, sdkOmittedValue) ? this.command : command as String,
-  );
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0
+      _copyWith(
+              {Object? kind = sdkOmittedValue,
+              Object? command = sdkOmittedValue}) =>
+          GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind,
+            command: identical(command, sdkOmittedValue)
+                ? this.command
+                : command as String,
+          );
 
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
-    kind: (json['kind'] != null ? GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind.fromJson(json['kind'] as String) : null)!,
-    command: (json['command'] as String?)!,
-  );
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
+        kind: (json['kind'] != null
+            ? GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        command: (json['command'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-    'command': command,
-  };
+        'kind': kind.toJson(),
+        'command': command,
+      };
 }
 
 sealed class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target();
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target.fromJson(Object? json) {
-    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0(GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0.fromJson(json as String)); } catch (_) {}
-    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1(GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target");
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target.fromJson(
+      Object? json) {
+    try {
+      return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0(
+          GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0
+              .fromJson(json as String));
+    } catch (_) {}
+    try {
+      return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1(
+          GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1
+              .fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target");
   }
   Object? toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0 value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0
+    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0
+      value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1 value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1
+    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Target {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1
+      value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind kind;
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind
+      kind;
   final String projectId;
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0 target;
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0
+      target;
 
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1({required this.kind, required this.projectId, required this.target});
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
+      {required this.kind, required this.projectId, required this.target});
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1 Function({GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind kind, String projectId, GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0 target}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1 Function(
+      {GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind
+          kind,
+      String projectId,
+      GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0
+          target}) get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1 _copyWith({Object? kind = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? target = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    target: identical(target, sdkOmittedValue) ? this.target : target as GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0,
-  );
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1
+      _copyWith(
+              {Object? kind = sdkOmittedValue,
+              Object? projectId = sdkOmittedValue,
+              Object? target = sdkOmittedValue}) =>
+          GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind,
+            projectId: identical(projectId, sdkOmittedValue)
+                ? this.projectId
+                : projectId as String,
+            target: identical(target, sdkOmittedValue)
+                ? this.target
+                : target
+                    as GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0,
+          );
 
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
-    kind: (json['kind'] != null ? GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind.fromJson(json['kind'] as String) : null)!,
-    projectId: (json['projectId'] as String?)!,
-    target: (json['target'] != null ? GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0.fromJson(json['target'] as String) : null)!,
-  );
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
+        kind: (json['kind'] != null
+            ? GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        projectId: (json['projectId'] as String?)!,
+        target: (json['target'] != null
+            ? GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1TargetVariant0
+                .fromJson(json['target'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-    'projectId': projectId,
-    'target': target.toJson(),
-  };
+        'kind': kind.toJson(),
+        'projectId': projectId,
+        'target': target.toJson(),
+      };
 }
 
 sealed class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation();
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation.fromJson(Object? json) {
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(value); } } catch (_) {}
-      try { final value = GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation");
+    try {
+      return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
+          GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
+          GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation");
   }
   Object? toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0 value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0
+    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0
+      value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1 value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1
+    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperation {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1
+      value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationGetVercelCiInvocationTreeResponseJobsItemTasksItemDefinitionOperationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
