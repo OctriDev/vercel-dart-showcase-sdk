@@ -6,65 +6,48 @@ part of 'inline.dart';
 // Inline operation models
 /// GitHub App owner type.
 final class ConnectConnectorUpdateDataRequestVariant2OwnerType {
+
   final String value;
 
   const ConnectConnectorUpdateDataRequestVariant2OwnerType._(this.value);
 
-  factory ConnectConnectorUpdateDataRequestVariant2OwnerType.fromJson(
-          String value) =>
-      ConnectConnectorUpdateDataRequestVariant2OwnerType._(value);
+  factory ConnectConnectorUpdateDataRequestVariant2OwnerType.fromJson(String value) => ConnectConnectorUpdateDataRequestVariant2OwnerType._(value);
 
-  static const user =
-      ConnectConnectorUpdateDataRequestVariant2OwnerType._('user');
-  static const organization =
-      ConnectConnectorUpdateDataRequestVariant2OwnerType._('organization');
-  static const user2 =
-      ConnectConnectorUpdateDataRequestVariant2OwnerType._('User');
-  static const organization2 =
-      ConnectConnectorUpdateDataRequestVariant2OwnerType._('Organization');
+  static const user = ConnectConnectorUpdateDataRequestVariant2OwnerType._('user');
+  static const organization = ConnectConnectorUpdateDataRequestVariant2OwnerType._('organization');
+  static const user2 = ConnectConnectorUpdateDataRequestVariant2OwnerType._('User');
+  static const organization2 = ConnectConnectorUpdateDataRequestVariant2OwnerType._('Organization');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorUpdateDataRequestVariant2OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorUpdateDataRequestVariant2OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Where Slack exposes the shortcut.
 final class ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType {
+
   final String value;
 
-  const ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._(
-      this.value);
+  const ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._(this.value);
 
-  factory ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType.fromJson(
-          String value) =>
-      ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._(value);
+  factory ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType.fromJson(String value) => ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._(value);
 
-  static const global =
-      ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._('global');
-  static const message =
-      ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._('message');
+  static const global = ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._('global');
+  static const message = ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType._('message');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorUpdateDataRequestVariant5ShortcutsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Principal kind.
@@ -73,18 +56,14 @@ enum ConnectConnectorUpdatedByVariant0Type {
 
   static ConnectConnectorUpdatedByVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user':
-        return ConnectConnectorUpdatedByVariant0Type.user;
-      default:
-        throw ArgumentError(
-            'Unknown ConnectConnectorUpdatedByVariant0Type: $value');
+      case 'user': return ConnectConnectorUpdatedByVariant0Type.user;
+      default: throw ArgumentError('Unknown ConnectConnectorUpdatedByVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ConnectConnectorUpdatedByVariant0Type.user:
-        return 'user';
+      case ConnectConnectorUpdatedByVariant0Type.user: return 'user';
     }
   }
 
@@ -94,33 +73,25 @@ enum ConnectConnectorUpdatedByVariant0Type {
 
 /// Required enumerated value serialized in the `environment` wire field.
 final class ConnectConnectorUpdatedByVariant1EnvironmentVariant1 {
+
   final String value;
 
   const ConnectConnectorUpdatedByVariant1EnvironmentVariant1._(this.value);
 
-  factory ConnectConnectorUpdatedByVariant1EnvironmentVariant1.fromJson(
-          String value) =>
-      ConnectConnectorUpdatedByVariant1EnvironmentVariant1._(value);
+  factory ConnectConnectorUpdatedByVariant1EnvironmentVariant1.fromJson(String value) => ConnectConnectorUpdatedByVariant1EnvironmentVariant1._(value);
 
-  static const development =
-      ConnectConnectorUpdatedByVariant1EnvironmentVariant1._('development');
-  static const preview =
-      ConnectConnectorUpdatedByVariant1EnvironmentVariant1._('preview');
-  static const production =
-      ConnectConnectorUpdatedByVariant1EnvironmentVariant1._('production');
+  static const development = ConnectConnectorUpdatedByVariant1EnvironmentVariant1._('development');
+  static const preview = ConnectConnectorUpdatedByVariant1EnvironmentVariant1._('preview');
+  static const production = ConnectConnectorUpdatedByVariant1EnvironmentVariant1._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorUpdatedByVariant1EnvironmentVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorUpdatedByVariant1EnvironmentVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Principal kind.
@@ -129,18 +100,14 @@ enum ConnectConnectorUpdatedByVariant1Type {
 
   static ConnectConnectorUpdatedByVariant1Type fromJson(String value) {
     switch (value) {
-      case 'project':
-        return ConnectConnectorUpdatedByVariant1Type.project;
-      default:
-        throw ArgumentError(
-            'Unknown ConnectConnectorUpdatedByVariant1Type: $value');
+      case 'project': return ConnectConnectorUpdatedByVariant1Type.project;
+      default: throw ArgumentError('Unknown ConnectConnectorUpdatedByVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ConnectConnectorUpdatedByVariant1Type.project:
-        return 'project';
+      case ConnectConnectorUpdatedByVariant1Type.project: return 'project';
     }
   }
 
@@ -150,37 +117,33 @@ enum ConnectConnectorUpdatedByVariant1Type {
 
 /// When true, prompt a team owner or administrator to reinstall the connector before relying on the change.
 final class ConnectConnectorUpdateResultReinstallNeeded {
+
   final bool value;
 
   const ConnectConnectorUpdateResultReinstallNeeded._(this.value);
 
-  factory ConnectConnectorUpdateResultReinstallNeeded.fromJson(bool value) =>
-      ConnectConnectorUpdateResultReinstallNeeded._(value);
+  factory ConnectConnectorUpdateResultReinstallNeeded.fromJson(bool value) => ConnectConnectorUpdateResultReinstallNeeded._(value);
 
   static const false_ = ConnectConnectorUpdateResultReinstallNeeded._(false);
   static const true_ = ConnectConnectorUpdateResultReinstallNeeded._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorUpdateResultReinstallNeeded &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorUpdateResultReinstallNeeded && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ConnectEnvironmentVariant0 {
+
   final String value;
 
   const ConnectEnvironmentVariant0._(this.value);
 
-  factory ConnectEnvironmentVariant0.fromJson(String value) =>
-      ConnectEnvironmentVariant0._(value);
+  factory ConnectEnvironmentVariant0.fromJson(String value) => ConnectEnvironmentVariant0._(value);
 
   static const development = ConnectEnvironmentVariant0._('development');
   static const preview = ConnectEnvironmentVariant0._('preview');
@@ -188,120 +151,100 @@ final class ConnectEnvironmentVariant0 {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectEnvironmentVariant0 && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectEnvironmentVariant0 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `enabledEnvironments[]` wire field.
 final class ConnectProjectConnectionEnabledEnvironmentsItemVariant1 {
+
   final String value;
 
   const ConnectProjectConnectionEnabledEnvironmentsItemVariant1._(this.value);
 
-  factory ConnectProjectConnectionEnabledEnvironmentsItemVariant1.fromJson(
-          String value) =>
-      ConnectProjectConnectionEnabledEnvironmentsItemVariant1._(value);
+  factory ConnectProjectConnectionEnabledEnvironmentsItemVariant1.fromJson(String value) => ConnectProjectConnectionEnabledEnvironmentsItemVariant1._(value);
 
-  static const development =
-      ConnectProjectConnectionEnabledEnvironmentsItemVariant1._('development');
-  static const preview =
-      ConnectProjectConnectionEnabledEnvironmentsItemVariant1._('preview');
-  static const production =
-      ConnectProjectConnectionEnabledEnvironmentsItemVariant1._('production');
+  static const development = ConnectProjectConnectionEnabledEnvironmentsItemVariant1._('development');
+  static const preview = ConnectProjectConnectionEnabledEnvironmentsItemVariant1._('preview');
+  static const production = ConnectProjectConnectionEnabledEnvironmentsItemVariant1._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectProjectConnectionEnabledEnvironmentsItemVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectProjectConnectionEnabledEnvironmentsItemVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The affected authorization scope. user means each affected user must authorize again.
 final class ConnectReconsentScope {
+
   final String value;
 
   const ConnectReconsentScope._(this.value);
 
-  factory ConnectReconsentScope.fromJson(String value) =>
-      ConnectReconsentScope._(value);
+  factory ConnectReconsentScope.fromJson(String value) => ConnectReconsentScope._(value);
 
   static const user = ConnectReconsentScope._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectReconsentScope && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectReconsentScope && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// done means the external service was updated. required means the Vercel update was saved, but provider-side configuration still needs attention.
 final class ConnectServiceSyncStatus {
+
   final String value;
 
   const ConnectServiceSyncStatus._(this.value);
 
-  factory ConnectServiceSyncStatus.fromJson(String value) =>
-      ConnectServiceSyncStatus._(value);
+  factory ConnectServiceSyncStatus.fromJson(String value) => ConnectServiceSyncStatus._(value);
 
   static const done = ConnectServiceSyncStatus._('done');
   static const required_ = ConnectServiceSyncStatus._('required');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectServiceSyncStatus && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectServiceSyncStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether incoming triggers are enabled for the connector.
 final class ConnectTriggerConfigurationEnabled {
+
   final bool value;
 
   const ConnectTriggerConfigurationEnabled._(this.value);
 
-  factory ConnectTriggerConfigurationEnabled.fromJson(bool value) =>
-      ConnectTriggerConfigurationEnabled._(value);
+  factory ConnectTriggerConfigurationEnabled.fromJson(bool value) => ConnectTriggerConfigurationEnabled._(value);
 
   static const false_ = ConnectTriggerConfigurationEnabled._(false);
   static const true_ = ConnectTriggerConfigurationEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectTriggerConfigurationEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectTriggerConfigurationEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `verified` wire field.
@@ -310,18 +253,14 @@ enum ContactPendingVerificationVerified {
 
   static ContactPendingVerificationVerified fromJson(bool value) {
     switch (value) {
-      case false:
-        return ContactPendingVerificationVerified.false_;
-      default:
-        throw ArgumentError(
-            'Unknown ContactPendingVerificationVerified: $value');
+      case false: return ContactPendingVerificationVerified.false_;
+      default: throw ArgumentError('Unknown ContactPendingVerificationVerified: $value');
     }
   }
 
   bool toJson() {
     switch (this) {
-      case ContactPendingVerificationVerified.false_:
-        return false;
+      case ContactPendingVerificationVerified.false_: return false;
     }
   }
 
@@ -335,17 +274,14 @@ enum ContactVerifiedVerified {
 
   static ContactVerifiedVerified fromJson(bool value) {
     switch (value) {
-      case true:
-        return ContactVerifiedVerified.true_;
-      default:
-        throw ArgumentError('Unknown ContactVerifiedVerified: $value');
+      case true: return ContactVerifiedVerified.true_;
+      default: throw ArgumentError('Unknown ContactVerifiedVerified: $value');
     }
   }
 
   bool toJson() {
     switch (this) {
-      case ContactVerifiedVerified.true_:
-        return true;
+      case ContactVerifiedVerified.true_: return true;
     }
   }
 

@@ -7,307 +7,139 @@ part of 'inline.dart';
 class GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?>
-      action;
-  final GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo
-      algo;
+  final SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?> action;
+  final GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo algo;
   final List<String> keys;
   final double limit;
   final double window;
 
-  const GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit(
-      {this.action = const SdkOmitted(),
-      required this.algo,
-      required this.keys,
-      required this.limit,
-      required this.window});
+  const GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit({this.action = const SdkOmitted(), required this.algo, required this.keys, required this.limit, required this.window});
 
-  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit Function(
-      {SdkOptional<
-              GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?>
-          action,
-      GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo
-          algo,
-      List<String> keys,
-      double limit,
-      double window}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit Function({SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?> action, GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo algo, List<String> keys, double limit, double window}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit
-      _copyWith(
-              {Object? action = sdkOmittedValue,
-              Object? algo = sdkOmittedValue,
-              Object? keys = sdkOmittedValue,
-              Object? limit = sdkOmittedValue,
-              Object? window = sdkOmittedValue}) =>
-          GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit(
-            action: identical(action, sdkOmittedValue)
-                ? this.action
-                : action as SdkOptional<
-                    GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?>,
-            algo: identical(algo, sdkOmittedValue)
-                ? this.algo
-                : algo
-                    as GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo,
-            keys: identical(keys, sdkOmittedValue)
-                ? this.keys
-                : keys as List<String>,
-            limit: identical(limit, sdkOmittedValue)
-                ? this.limit
-                : limit as double,
-            window: identical(window, sdkOmittedValue)
-                ? this.window
-                : window as double,
-          );
+  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit _copyWith({Object? action = sdkOmittedValue, Object? algo = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? window = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?>,
+    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo,
+    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
+    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
+    window: identical(window, sdkOmittedValue) ? this.window : window as double,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit(
-        action: json.containsKey('action')
-            ? SdkPresent(json['action'] != null
-                ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction
-                    .fromJson(json['action'] as String)
-                : null)
-            : const SdkOmitted(),
-        algo: (json['algo'] != null
-            ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo
-                .fromJson(json['algo'] as String)
-            : null)!,
-        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-        limit: ((json['limit'] as num?)?.toDouble())!,
-        window: ((json['window'] as num?)?.toDouble())!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit(
+    action: json.containsKey('action') ? SdkPresent(json['action'] != null ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction.fromJson(json['action'] as String) : null) : const SdkOmitted(),
+    algo: (json['algo'] != null ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAlgo.fromJson(json['algo'] as String) : null)!,
+    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+    limit: ((json['limit'] as num?)?.toDouble())!,
+    window: ((json['window'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<
-                GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?>(
-            value: final value
-          ) =>
-            {
-              'action': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'algo': algo.toJson(),
-        'keys': keys,
-        'limit': limit,
-        'window': window,
-      };
+    ...switch (action) {
+      SdkPresent<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimitAction?>(value: final value) => {'action': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'algo': algo.toJson(),
+    'keys': keys,
+    'limit': limit,
+    'window': window,
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String location;
-  final GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent
-      permanent;
+  final GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent permanent;
 
-  const GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect(
-      {required this.location, required this.permanent});
+  const GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect({required this.location, required this.permanent});
 
-  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect Function(
-      {String location,
-      GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent
-          permanent}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect Function({String location, GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent permanent}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect
-      _copyWith(
-              {Object? location = sdkOmittedValue,
-              Object? permanent = sdkOmittedValue}) =>
-          GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect(
-            location: identical(location, sdkOmittedValue)
-                ? this.location
-                : location as String,
-            permanent: identical(permanent, sdkOmittedValue)
-                ? this.permanent
-                : permanent
-                    as GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent,
-          );
+  GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect _copyWith({Object? location = sdkOmittedValue, Object? permanent = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect(
+    location: identical(location, sdkOmittedValue) ? this.location : location as String,
+    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect(
-        location: (json['location'] as String?)!,
-        permanent: (json['permanent'] != null
-            ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent
-                .fromJson(json['permanent'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect(
+    location: (json['location'] as String?)!,
+    permanent: (json['permanent'] != null ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirectPermanent.fromJson(json['permanent'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'location': location,
-        'permanent': permanent.toJson(),
-      };
+    'location': location,
+    'permanent': permanent.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction
-      action;
+  final GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction action;
   final SdkOptional<String?> actionDuration;
-  final SdkOptional<
-          GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?>
-      bypassSystem;
+  final SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?> bypassSystem;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<
-          GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?>
-      rateLimit;
-  final SdkOptional<
-          GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?>
-      redirect;
+  final SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?> rateLimit;
+  final SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?> redirect;
 
-  const GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value(
-      {required this.action,
-      this.actionDuration = const SdkOmitted(),
-      this.bypassSystem = const SdkOmitted(),
-      this.logHeaders = const SdkOmitted(),
-      this.rateLimit = const SdkOmitted(),
-      this.redirect = const SdkOmitted()});
+  const GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value({required this.action, this.actionDuration = const SdkOmitted(), this.bypassSystem = const SdkOmitted(), this.logHeaders = const SdkOmitted(), this.rateLimit = const SdkOmitted(), this.redirect = const SdkOmitted()});
 
-  GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value Function(
-      {GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction
-          action,
-      SdkOptional<String?> actionDuration,
-      SdkOptional<
-              GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?>
-          bypassSystem,
-      SdkOptional<dynamic> logHeaders,
-      SdkOptional<
-              GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?>
-          rateLimit,
-      SdkOptional<
-              GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?>
-          redirect}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value Function({GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction action, SdkOptional<String?> actionDuration, SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?> bypassSystem, SdkOptional<dynamic> logHeaders, SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?> rateLimit, SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?> redirect}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? actionDuration = sdkOmittedValue,
-          Object? bypassSystem = sdkOmittedValue,
-          Object? logHeaders = sdkOmittedValue,
-          Object? rateLimit = sdkOmittedValue,
-          Object? redirect = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction,
-        actionDuration: identical(actionDuration, sdkOmittedValue)
-            ? this.actionDuration
-            : actionDuration as SdkOptional<String?>,
-        bypassSystem: identical(bypassSystem, sdkOmittedValue)
-            ? this.bypassSystem
-            : bypassSystem as SdkOptional<
-                GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?>,
-        logHeaders: identical(logHeaders, sdkOmittedValue)
-            ? this.logHeaders
-            : logHeaders as SdkOptional<dynamic>,
-        rateLimit: identical(rateLimit, sdkOmittedValue)
-            ? this.rateLimit
-            : rateLimit as SdkOptional<
-                GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?>,
-        redirect: identical(redirect, sdkOmittedValue)
-            ? this.redirect
-            : redirect as SdkOptional<
-                GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?>,
-      );
+  GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value _copyWith({Object? action = sdkOmittedValue, Object? actionDuration = sdkOmittedValue, Object? bypassSystem = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? rateLimit = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction,
+    actionDuration: identical(actionDuration, sdkOmittedValue) ? this.actionDuration : actionDuration as SdkOptional<String?>,
+    bypassSystem: identical(bypassSystem, sdkOmittedValue) ? this.bypassSystem : bypassSystem as SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?>,
+    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
+    rateLimit: identical(rateLimit, sdkOmittedValue) ? this.rateLimit : rateLimit as SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?>,
+    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?>,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        actionDuration: json.containsKey('actionDuration')
-            ? SdkPresent(json['actionDuration'] as String?)
-            : const SdkOmitted(),
-        bypassSystem: json.containsKey('bypassSystem')
-            ? SdkPresent(json['bypassSystem'] != null
-                ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem
-                    .fromJson(json['bypassSystem'] as bool)
-                : null)
-            : const SdkOmitted(),
-        logHeaders: json['logHeaders'] != null
-            ? SdkPresent((json['logHeaders'])!)
-            : const SdkOmitted(),
-        rateLimit: json.containsKey('rateLimit')
-            ? SdkPresent(json['rateLimit'] != null
-                ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit
-                    .fromJson(json['rateLimit'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        redirect: json.containsKey('redirect')
-            ? SdkPresent(json['redirect'] != null
-                ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect
-                    .fromJson(json['redirect'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-      );
+  factory GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveRulesetsVariant1Value(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueAction.fromJson(json['action'] as String) : null)!,
+    actionDuration: json.containsKey('actionDuration') ? SdkPresent(json['actionDuration'] as String?) : const SdkOmitted(),
+    bypassSystem: json.containsKey('bypassSystem') ? SdkPresent(json['bypassSystem'] != null ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem.fromJson(json['bypassSystem'] as bool) : null) : const SdkOmitted(),
+    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
+    rateLimit: json.containsKey('rateLimit') ? SdkPresent(json['rateLimit'] != null ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit.fromJson(json['rateLimit'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] != null ? GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect.fromJson(json['redirect'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        ...switch (actionDuration) {
-          SdkPresent<String?>(value: final value) => {
-              'actionDuration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (bypassSystem) {
-          SdkPresent<
-                GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?>(
-            value: final value
-          ) =>
-            {
-              'bypassSystem': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (logHeaders) {
-          SdkPresent<dynamic>(value: final value) => {
-              'logHeaders': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rateLimit) {
-          SdkPresent<
-                GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?>(
-            value: final value
-          ) =>
-            {
-              'rateLimit': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (redirect) {
-          SdkPresent<
-                GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?>(
-            value: final value
-          ) =>
-            {
-              'redirect': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'action': action.toJson(),
+    ...switch (actionDuration) {
+      SdkPresent<String?>(value: final value) => {'actionDuration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (bypassSystem) {
+      SdkPresent<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueBypassSystem?>(value: final value) => {'bypassSystem': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (logHeaders) {
+      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rateLimit) {
+      SdkPresent<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRateLimit?>(value: final value) => {'rateLimit': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (redirect) {
+      SdkPresent<GetSecurityFirewallConfigResponseActiveRulesetsVariant1ValueRedirect?>(value: final value) => {'redirect': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetSecurityFirewallConfigResponseActive {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetSecurityFirewallConfigResponseActiveBotIdEnabled>
-      botIdEnabled;
+  final SdkOptional<GetSecurityFirewallConfigResponseActiveBotIdEnabled> botIdEnabled;
   final List<Map<String, dynamic>> changes;
-  final SdkOptional<List<GetSecurityFirewallConfigResponseActiveConditionsItem>>
-      conditions;
+  final SdkOptional<List<GetSecurityFirewallConfigResponseActiveConditionsItem>> conditions;
   final SdkOptional<GetSecurityFirewallConfigResponseActiveCrs> crs;
   final GetSecurityFirewallConfigResponseActiveFirewallEnabled firewallEnabled;
   final String id;
   final List<GetSecurityFirewallConfigResponseActiveIpsItem> ips;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<GetSecurityFirewallConfigResponseActiveManagedRules>
-      managedRules;
+  final SdkOptional<GetSecurityFirewallConfigResponseActiveManagedRules> managedRules;
   final String ownerId;
   final String projectKey;
   final List<GetSecurityFirewallConfigResponseActiveRulesItem> rules;
@@ -315,374 +147,148 @@ class GetSecurityFirewallConfigResponseActive {
   final String updatedAt;
   final double version;
 
-  const GetSecurityFirewallConfigResponseActive(
-      {this.botIdEnabled = const SdkOmitted(),
-      required this.changes,
-      this.conditions = const SdkOmitted(),
-      this.crs = const SdkOmitted(),
-      required this.firewallEnabled,
-      required this.id,
-      required this.ips,
-      this.logHeaders = const SdkOmitted(),
-      this.managedRules = const SdkOmitted(),
-      required this.ownerId,
-      required this.projectKey,
-      required this.rules,
-      this.rulesets = const SdkOmitted(),
-      required this.updatedAt,
-      required this.version});
+  const GetSecurityFirewallConfigResponseActive({this.botIdEnabled = const SdkOmitted(), required this.changes, this.conditions = const SdkOmitted(), this.crs = const SdkOmitted(), required this.firewallEnabled, required this.id, required this.ips, this.logHeaders = const SdkOmitted(), this.managedRules = const SdkOmitted(), required this.ownerId, required this.projectKey, required this.rules, this.rulesets = const SdkOmitted(), required this.updatedAt, required this.version});
 
-  GetSecurityFirewallConfigResponseActive Function(
-      {SdkOptional<GetSecurityFirewallConfigResponseActiveBotIdEnabled>
-          botIdEnabled,
-      List<Map<String, dynamic>> changes,
-      SdkOptional<List<GetSecurityFirewallConfigResponseActiveConditionsItem>>
-          conditions,
-      SdkOptional<GetSecurityFirewallConfigResponseActiveCrs> crs,
-      GetSecurityFirewallConfigResponseActiveFirewallEnabled firewallEnabled,
-      String id,
-      List<GetSecurityFirewallConfigResponseActiveIpsItem> ips,
-      SdkOptional<dynamic> logHeaders,
-      SdkOptional<GetSecurityFirewallConfigResponseActiveManagedRules>
-          managedRules,
-      String ownerId,
-      String projectKey,
-      List<GetSecurityFirewallConfigResponseActiveRulesItem> rules,
-      SdkOptional<dynamic> rulesets,
-      String updatedAt,
-      double version}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActive Function({SdkOptional<GetSecurityFirewallConfigResponseActiveBotIdEnabled> botIdEnabled, List<Map<String, dynamic>> changes, SdkOptional<List<GetSecurityFirewallConfigResponseActiveConditionsItem>> conditions, SdkOptional<GetSecurityFirewallConfigResponseActiveCrs> crs, GetSecurityFirewallConfigResponseActiveFirewallEnabled firewallEnabled, String id, List<GetSecurityFirewallConfigResponseActiveIpsItem> ips, SdkOptional<dynamic> logHeaders, SdkOptional<GetSecurityFirewallConfigResponseActiveManagedRules> managedRules, String ownerId, String projectKey, List<GetSecurityFirewallConfigResponseActiveRulesItem> rules, SdkOptional<dynamic> rulesets, String updatedAt, double version}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActive _copyWith(
-          {Object? botIdEnabled = sdkOmittedValue,
-          Object? changes = sdkOmittedValue,
-          Object? conditions = sdkOmittedValue,
-          Object? crs = sdkOmittedValue,
-          Object? firewallEnabled = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? ips = sdkOmittedValue,
-          Object? logHeaders = sdkOmittedValue,
-          Object? managedRules = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectKey = sdkOmittedValue,
-          Object? rules = sdkOmittedValue,
-          Object? rulesets = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActive(
-        botIdEnabled: identical(botIdEnabled, sdkOmittedValue)
-            ? this.botIdEnabled
-            : botIdEnabled as SdkOptional<
-                GetSecurityFirewallConfigResponseActiveBotIdEnabled>,
-        changes: identical(changes, sdkOmittedValue)
-            ? this.changes
-            : changes as List<Map<String, dynamic>>,
-        conditions: identical(conditions, sdkOmittedValue)
-            ? this.conditions
-            : conditions as SdkOptional<
-                List<GetSecurityFirewallConfigResponseActiveConditionsItem>>,
-        crs: identical(crs, sdkOmittedValue)
-            ? this.crs
-            : crs as SdkOptional<GetSecurityFirewallConfigResponseActiveCrs>,
-        firewallEnabled: identical(firewallEnabled, sdkOmittedValue)
-            ? this.firewallEnabled
-            : firewallEnabled
-                as GetSecurityFirewallConfigResponseActiveFirewallEnabled,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        ips: identical(ips, sdkOmittedValue)
-            ? this.ips
-            : ips as List<GetSecurityFirewallConfigResponseActiveIpsItem>,
-        logHeaders: identical(logHeaders, sdkOmittedValue)
-            ? this.logHeaders
-            : logHeaders as SdkOptional<dynamic>,
-        managedRules: identical(managedRules, sdkOmittedValue)
-            ? this.managedRules
-            : managedRules as SdkOptional<
-                GetSecurityFirewallConfigResponseActiveManagedRules>,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectKey: identical(projectKey, sdkOmittedValue)
-            ? this.projectKey
-            : projectKey as String,
-        rules: identical(rules, sdkOmittedValue)
-            ? this.rules
-            : rules as List<GetSecurityFirewallConfigResponseActiveRulesItem>,
-        rulesets: identical(rulesets, sdkOmittedValue)
-            ? this.rulesets
-            : rulesets as SdkOptional<dynamic>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as String,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as double,
-      );
+  GetSecurityFirewallConfigResponseActive _copyWith({Object? botIdEnabled = sdkOmittedValue, Object? changes = sdkOmittedValue, Object? conditions = sdkOmittedValue, Object? crs = sdkOmittedValue, Object? firewallEnabled = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ips = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? managedRules = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectKey = sdkOmittedValue, Object? rules = sdkOmittedValue, Object? rulesets = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? version = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActive(
+    botIdEnabled: identical(botIdEnabled, sdkOmittedValue) ? this.botIdEnabled : botIdEnabled as SdkOptional<GetSecurityFirewallConfigResponseActiveBotIdEnabled>,
+    changes: identical(changes, sdkOmittedValue) ? this.changes : changes as List<Map<String, dynamic>>,
+    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as SdkOptional<List<GetSecurityFirewallConfigResponseActiveConditionsItem>>,
+    crs: identical(crs, sdkOmittedValue) ? this.crs : crs as SdkOptional<GetSecurityFirewallConfigResponseActiveCrs>,
+    firewallEnabled: identical(firewallEnabled, sdkOmittedValue) ? this.firewallEnabled : firewallEnabled as GetSecurityFirewallConfigResponseActiveFirewallEnabled,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    ips: identical(ips, sdkOmittedValue) ? this.ips : ips as List<GetSecurityFirewallConfigResponseActiveIpsItem>,
+    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
+    managedRules: identical(managedRules, sdkOmittedValue) ? this.managedRules : managedRules as SdkOptional<GetSecurityFirewallConfigResponseActiveManagedRules>,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectKey: identical(projectKey, sdkOmittedValue) ? this.projectKey : projectKey as String,
+    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as List<GetSecurityFirewallConfigResponseActiveRulesItem>,
+    rulesets: identical(rulesets, sdkOmittedValue) ? this.rulesets : rulesets as SdkOptional<dynamic>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
+    version: identical(version, sdkOmittedValue) ? this.version : version as double,
+  );
 
-  factory GetSecurityFirewallConfigResponseActive.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActive(
-        botIdEnabled: json['botIdEnabled'] != null
-            ? SdkPresent((json['botIdEnabled'] != null
-                ? GetSecurityFirewallConfigResponseActiveBotIdEnabled.fromJson(
-                    json['botIdEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        changes: ((json['changes'] as List?)
-            ?.map((e) => e as Map<String, dynamic>)
-            .toList())!,
-        conditions: json['conditions'] != null
-            ? SdkPresent(((json['conditions'] as List?)
-                ?.map((e) =>
-                    GetSecurityFirewallConfigResponseActiveConditionsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        crs: json['crs'] != null
-            ? SdkPresent((json['crs'] != null
-                ? GetSecurityFirewallConfigResponseActiveCrs.fromJson(
-                    json['crs'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        firewallEnabled: (json['firewallEnabled'] != null
-            ? GetSecurityFirewallConfigResponseActiveFirewallEnabled.fromJson(
-                json['firewallEnabled'] as bool)
-            : null)!,
-        id: (json['id'] as String?)!,
-        ips: ((json['ips'] as List?)
-            ?.map((e) =>
-                GetSecurityFirewallConfigResponseActiveIpsItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        logHeaders: json['logHeaders'] != null
-            ? SdkPresent((json['logHeaders'])!)
-            : const SdkOmitted(),
-        managedRules: json['managedRules'] != null
-            ? SdkPresent((json['managedRules'] != null
-                ? GetSecurityFirewallConfigResponseActiveManagedRules.fromJson(
-                    json['managedRules'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        ownerId: (json['ownerId'] as String?)!,
-        projectKey: (json['projectKey'] as String?)!,
-        rules: ((json['rules'] as List?)
-            ?.map((e) =>
-                GetSecurityFirewallConfigResponseActiveRulesItem.fromJson(e))
-            .toList())!,
-        rulesets: json['rulesets'] != null
-            ? SdkPresent((json['rulesets'])!)
-            : const SdkOmitted(),
-        updatedAt: (json['updatedAt'] as String?)!,
-        version: ((json['version'] as num?)?.toDouble())!,
-      );
+  factory GetSecurityFirewallConfigResponseActive.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActive(
+    botIdEnabled: json['botIdEnabled'] != null ? SdkPresent((json['botIdEnabled'] != null ? GetSecurityFirewallConfigResponseActiveBotIdEnabled.fromJson(json['botIdEnabled'] as bool) : null)!) : const SdkOmitted(),
+    changes: ((json['changes'] as List?)?.map((e) => e as Map<String, dynamic>).toList())!,
+    conditions: json['conditions'] != null ? SdkPresent(((json['conditions'] as List?)?.map((e) => GetSecurityFirewallConfigResponseActiveConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    crs: json['crs'] != null ? SdkPresent((json['crs'] != null ? GetSecurityFirewallConfigResponseActiveCrs.fromJson(json['crs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    firewallEnabled: (json['firewallEnabled'] != null ? GetSecurityFirewallConfigResponseActiveFirewallEnabled.fromJson(json['firewallEnabled'] as bool) : null)!,
+    id: (json['id'] as String?)!,
+    ips: ((json['ips'] as List?)?.map((e) => GetSecurityFirewallConfigResponseActiveIpsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
+    managedRules: json['managedRules'] != null ? SdkPresent((json['managedRules'] != null ? GetSecurityFirewallConfigResponseActiveManagedRules.fromJson(json['managedRules'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    ownerId: (json['ownerId'] as String?)!,
+    projectKey: (json['projectKey'] as String?)!,
+    rules: ((json['rules'] as List?)?.map((e) => GetSecurityFirewallConfigResponseActiveRulesItem.fromJson(e)).toList())!,
+    rulesets: json['rulesets'] != null ? SdkPresent((json['rulesets'])!) : const SdkOmitted(),
+    updatedAt: (json['updatedAt'] as String?)!,
+    version: ((json['version'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (botIdEnabled) {
-          SdkPresent<GetSecurityFirewallConfigResponseActiveBotIdEnabled>(
-            value: final value
-          ) =>
-            {
-              'botIdEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'changes': changes,
-        ...switch (conditions) {
-          SdkPresent<
-                List<GetSecurityFirewallConfigResponseActiveConditionsItem>>(
-            value: final value
-          ) =>
-            {
-              'conditions': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (crs) {
-          SdkPresent<GetSecurityFirewallConfigResponseActiveCrs>(
-            value: final value
-          ) =>
-            {
-              'crs': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'firewallEnabled': firewallEnabled.toJson(),
-        'id': id,
-        'ips': ips.map((item) => item.toJson()).toList(),
-        ...switch (logHeaders) {
-          SdkPresent<dynamic>(value: final value) => {
-              'logHeaders': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (managedRules) {
-          SdkPresent<GetSecurityFirewallConfigResponseActiveManagedRules>(
-            value: final value
-          ) =>
-            {
-              'managedRules': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'ownerId': ownerId,
-        'projectKey': projectKey,
-        'rules': rules.map((item) => item.toJson()).toList(),
-        ...switch (rulesets) {
-          SdkPresent<dynamic>(value: final value) => {
-              'rulesets': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'updatedAt': updatedAt,
-        'version': version,
-      };
+    ...switch (botIdEnabled) {
+      SdkPresent<GetSecurityFirewallConfigResponseActiveBotIdEnabled>(value: final value) => {'botIdEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'changes': changes,
+    ...switch (conditions) {
+      SdkPresent<List<GetSecurityFirewallConfigResponseActiveConditionsItem>>(value: final value) => {'conditions': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (crs) {
+      SdkPresent<GetSecurityFirewallConfigResponseActiveCrs>(value: final value) => {'crs': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'firewallEnabled': firewallEnabled.toJson(),
+    'id': id,
+    'ips': ips.map((item) => item.toJson()).toList(),
+    ...switch (logHeaders) {
+      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (managedRules) {
+      SdkPresent<GetSecurityFirewallConfigResponseActiveManagedRules>(value: final value) => {'managedRules': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'ownerId': ownerId,
+    'projectKey': projectKey,
+    'rules': rules.map((item) => item.toJson()).toList(),
+    ...switch (rulesets) {
+      SdkPresent<dynamic>(value: final value) => {'rulesets': value,},
+      _ => const <String, dynamic>{},
+    },
+    'updatedAt': updatedAt,
+    'version': version,
+  };
 }
 
 class GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> key;
-  final SdkOptional<
-          GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg>
-      neg;
-  final GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp
-      op;
-  final GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType
-      type_;
+  final SdkOptional<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg> neg;
+  final GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp op;
+  final GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType type_;
   final SdkOptional<dynamic> value;
 
-  const GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem(
-      {this.key = const SdkOmitted(),
-      this.neg = const SdkOmitted(),
-      required this.op,
-      required this.type_,
-      this.value = const SdkOmitted()});
+  const GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem({this.key = const SdkOmitted(), this.neg = const SdkOmitted(), required this.op, required this.type_, this.value = const SdkOmitted()});
 
-  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem Function(
-      {SdkOptional<String> key,
-      SdkOptional<
-              GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg>
-          neg,
-      GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp
-          op,
-      GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType
-          type_,
-      SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem Function({SdkOptional<String> key, SdkOptional<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg> neg, GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp op, GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? neg = sdkOmittedValue,
-              Object? op = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key as SdkOptional<String>,
-            neg: identical(neg, sdkOmittedValue)
-                ? this.neg
-                : neg as SdkOptional<
-                    GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg>,
-            op: identical(op, sdkOmittedValue)
-                ? this.op
-                : op
-                    as GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as SdkOptional<dynamic>,
-          );
+  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem _copyWith({Object? key = sdkOmittedValue, Object? neg = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
+    neg: identical(neg, sdkOmittedValue) ? this.neg : neg as SdkOptional<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg>,
+    op: identical(op, sdkOmittedValue) ? this.op : op as GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
+  );
 
-  factory GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem(
-        key: json['key'] != null
-            ? SdkPresent((json['key'] as String?)!)
-            : const SdkOmitted(),
-        neg: json['neg'] != null
-            ? SdkPresent((json['neg'] != null
-                ? GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg
-                    .fromJson(json['neg'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        op: (json['op'] != null
-            ? GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp
-                .fromJson(json['op'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType
-                .fromJson(json['type'] as String)
-            : null)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'])!)
-            : const SdkOmitted(),
-      );
+  factory GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem(
+    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
+    neg: json['neg'] != null ? SdkPresent((json['neg'] != null ? GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg.fromJson(json['neg'] as bool) : null)!) : const SdkOmitted(),
+    op: (json['op'] != null ? GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemOp.fromJson(json['op'] as String) : null)!,
+    type_: (json['type'] != null ? GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemType.fromJson(json['type'] as String) : null)!,
+    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (key) {
-          SdkPresent<String>(value: final value) => {
-              'key': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (neg) {
-          SdkPresent<
-                GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg>(
-            value: final value
-          ) =>
-            {
-              'neg': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'op': op.toJson(),
-        'type': type_.toJson(),
-        ...switch (value) {
-          SdkPresent<dynamic>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (key) {
+      SdkPresent<String>(value: final value) => {'key': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (neg) {
+      SdkPresent<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItemNeg>(value: final value) => {'neg': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'op': op.toJson(),
+    'type': type_.toJson(),
+    ...switch (value) {
+      SdkPresent<dynamic>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<
-          GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem>
-      conditions;
+  final List<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem> conditions;
 
-  const GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem(
-      {required this.conditions});
+  const GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem({required this.conditions});
 
-  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem Function(
-      {List<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem>
-          conditions}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem Function({List<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem
-      _copyWith({Object? conditions = sdkOmittedValue}) =>
-          GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem(
-            conditions: identical(conditions, sdkOmittedValue)
-                ? this.conditions
-                : conditions as List<
-                    GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem>,
-          );
+  GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem(
+    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem>,
+  );
 
-  factory GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem(
-        conditions: ((json['conditions'] as List?)
-            ?.map((e) =>
-                GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItem(
+    conditions: ((json['conditions'] as List?)?.map((e) => GetSecurityFirewallConfigResponseDraftConditionsItemConditionGroupItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'conditions': conditions.map((item) => item.toJson()).toList(),
-      };
+    'conditions': conditions.map((item) => item.toJson()).toList(),
+  };
 }

@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant6Type fromJson(
-      String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant6Type fromJson(String value) {
     switch (value) {
-      case 'blob-webhook-public-key':
-        return DeleteProjectAvatarResponseEnvItemContentHintVariant6Type
-            .blobWebhookPublicKey;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key': return DeleteProjectAvatarResponseEnvItemContentHintVariant6Type.blobWebhookPublicKey;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant6Type
-            .blobWebhookPublicKey:
-        return 'blob-webhook-public-key';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
     }
   }
 
@@ -34,23 +27,16 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant6Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant7Type {
   postgresUrl;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant7Type fromJson(
-      String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant7Type fromJson(String value) {
     switch (value) {
-      case 'postgres-url':
-        return DeleteProjectAvatarResponseEnvItemContentHintVariant7Type
-            .postgresUrl;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant7Type: $value');
+      case 'postgres-url': return DeleteProjectAvatarResponseEnvItemContentHintVariant7Type.postgresUrl;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant7Type
-            .postgresUrl:
-        return 'postgres-url';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant7Type.postgresUrl: return 'postgres-url';
     }
   }
 
@@ -61,23 +47,16 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant7Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant8Type fromJson(
-      String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant8Type fromJson(String value) {
     switch (value) {
-      case 'postgres-url-non-pooling':
-        return DeleteProjectAvatarResponseEnvItemContentHintVariant8Type
-            .postgresUrlNonPooling;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling': return DeleteProjectAvatarResponseEnvItemContentHintVariant8Type.postgresUrlNonPooling;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant8Type
-            .postgresUrlNonPooling:
-        return 'postgres-url-non-pooling';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
     }
   }
 
@@ -88,23 +67,16 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant8Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant9Type fromJson(
-      String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant9Type fromJson(String value) {
     switch (value) {
-      case 'postgres-prisma-url':
-        return DeleteProjectAvatarResponseEnvItemContentHintVariant9Type
-            .postgresPrismaUrl;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant9Type: $value');
+      case 'postgres-prisma-url': return DeleteProjectAvatarResponseEnvItemContentHintVariant9Type.postgresPrismaUrl;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant9Type
-            .postgresPrismaUrl:
-        return 'postgres-prisma-url';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
     }
   }
 
@@ -113,55 +85,38 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant9Type {
 }
 
 final class DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key {
+
   final String value;
 
-  const DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-      this.value);
+  const DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(this.value);
 
-  factory DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-          value);
+  factory DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(String value) => DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(value);
 
-  static const xVercelIpCountry =
-      DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-          'x-vercel-ip-country');
+  static const xVercelIpCountry = DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._('x-vercel-ip-country');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type {
   header;
 
-  static DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
-      fromJson(String value) {
+  static DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'header':
-        return DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
-            .header;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type: $value');
+      case 'header': return DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type.header;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
-            .header:
-        return 'header';
+      case DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type.header: return 'header';
     }
   }
 
@@ -172,23 +127,16 @@ enum DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type {
 enum DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type {
   host;
 
-  static DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
-      fromJson(String value) {
+  static DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'host':
-        return DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
-            .host;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type: $value');
+      case 'host': return DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type.host;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
-            .host:
-        return 'host';
+      case DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type.host: return 'host';
     }
   }
 
@@ -197,61 +145,44 @@ enum DeleteProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type {
 }
 
 final class DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction {
+
   final String value;
 
-  const DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(
-      this.value);
+  const DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(this.value);
 
-  factory DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(
-          value);
+  factory DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction.fromJson(String value) => DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(value);
 
-  static const blockLegalCwc =
-      DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(
-          'block_legal_cwc');
+  static const blockLegalCwc = DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._('block_legal_cwc');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseInternalRoutesItemVariant1MitigateAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseLinkVariant0Sourceless {
+
   final bool value;
 
   const DeleteProjectAvatarResponseLinkVariant0Sourceless._(this.value);
 
-  factory DeleteProjectAvatarResponseLinkVariant0Sourceless.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseLinkVariant0Sourceless._(value);
+  factory DeleteProjectAvatarResponseLinkVariant0Sourceless.fromJson(bool value) => DeleteProjectAvatarResponseLinkVariant0Sourceless._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseLinkVariant0Sourceless._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseLinkVariant0Sourceless._(true);
+  static const false_ = DeleteProjectAvatarResponseLinkVariant0Sourceless._(false);
+  static const true_ = DeleteProjectAvatarResponseLinkVariant0Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseLinkVariant0Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseLinkVariant0Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum DeleteProjectAvatarResponseLinkVariant0Type {
@@ -259,18 +190,14 @@ enum DeleteProjectAvatarResponseLinkVariant0Type {
 
   static DeleteProjectAvatarResponseLinkVariant0Type fromJson(String value) {
     switch (value) {
-      case 'github':
-        return DeleteProjectAvatarResponseLinkVariant0Type.github;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseLinkVariant0Type: $value');
+      case 'github': return DeleteProjectAvatarResponseLinkVariant0Type.github;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseLinkVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseLinkVariant0Type.github:
-        return 'github';
+      case DeleteProjectAvatarResponseLinkVariant0Type.github: return 'github';
     }
   }
 
@@ -279,31 +206,24 @@ enum DeleteProjectAvatarResponseLinkVariant0Type {
 }
 
 final class DeleteProjectAvatarResponseLinkVariant1Sourceless {
+
   final bool value;
 
   const DeleteProjectAvatarResponseLinkVariant1Sourceless._(this.value);
 
-  factory DeleteProjectAvatarResponseLinkVariant1Sourceless.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseLinkVariant1Sourceless._(value);
+  factory DeleteProjectAvatarResponseLinkVariant1Sourceless.fromJson(bool value) => DeleteProjectAvatarResponseLinkVariant1Sourceless._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseLinkVariant1Sourceless._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseLinkVariant1Sourceless._(true);
+  static const false_ = DeleteProjectAvatarResponseLinkVariant1Sourceless._(false);
+  static const true_ = DeleteProjectAvatarResponseLinkVariant1Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseLinkVariant1Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseLinkVariant1Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum DeleteProjectAvatarResponseLinkVariant1Type {
@@ -311,18 +231,14 @@ enum DeleteProjectAvatarResponseLinkVariant1Type {
 
   static DeleteProjectAvatarResponseLinkVariant1Type fromJson(String value) {
     switch (value) {
-      case 'github-limited':
-        return DeleteProjectAvatarResponseLinkVariant1Type.githubLimited;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseLinkVariant1Type: $value');
+      case 'github-limited': return DeleteProjectAvatarResponseLinkVariant1Type.githubLimited;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseLinkVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseLinkVariant1Type.githubLimited:
-        return 'github-limited';
+      case DeleteProjectAvatarResponseLinkVariant1Type.githubLimited: return 'github-limited';
     }
   }
 
@@ -331,31 +247,24 @@ enum DeleteProjectAvatarResponseLinkVariant1Type {
 }
 
 final class DeleteProjectAvatarResponseLinkVariant2Sourceless {
+
   final bool value;
 
   const DeleteProjectAvatarResponseLinkVariant2Sourceless._(this.value);
 
-  factory DeleteProjectAvatarResponseLinkVariant2Sourceless.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseLinkVariant2Sourceless._(value);
+  factory DeleteProjectAvatarResponseLinkVariant2Sourceless.fromJson(bool value) => DeleteProjectAvatarResponseLinkVariant2Sourceless._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseLinkVariant2Sourceless._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseLinkVariant2Sourceless._(true);
+  static const false_ = DeleteProjectAvatarResponseLinkVariant2Sourceless._(false);
+  static const true_ = DeleteProjectAvatarResponseLinkVariant2Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseLinkVariant2Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseLinkVariant2Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum DeleteProjectAvatarResponseLinkVariant2Type {
@@ -363,18 +272,14 @@ enum DeleteProjectAvatarResponseLinkVariant2Type {
 
   static DeleteProjectAvatarResponseLinkVariant2Type fromJson(String value) {
     switch (value) {
-      case 'github-custom-host':
-        return DeleteProjectAvatarResponseLinkVariant2Type.githubCustomHost;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseLinkVariant2Type: $value');
+      case 'github-custom-host': return DeleteProjectAvatarResponseLinkVariant2Type.githubCustomHost;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseLinkVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseLinkVariant2Type.githubCustomHost:
-        return 'github-custom-host';
+      case DeleteProjectAvatarResponseLinkVariant2Type.githubCustomHost: return 'github-custom-host';
     }
   }
 

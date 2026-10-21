@@ -6,64 +6,47 @@ part of 'inline.dart';
 // Inline operation models
 /// Required enumerated value serialized in the `action` wire field.
 final class UserEventPayloadVariant120JobVariant3NsnbSideEffectAction {
+
   final String value;
 
   const UserEventPayloadVariant120JobVariant3NsnbSideEffectAction._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant3NsnbSideEffectAction.fromJson(
-          String value) =>
-      UserEventPayloadVariant120JobVariant3NsnbSideEffectAction._(value);
+  factory UserEventPayloadVariant120JobVariant3NsnbSideEffectAction.fromJson(String value) => UserEventPayloadVariant120JobVariant3NsnbSideEffectAction._(value);
 
-  static const autoApprovedMember =
-      UserEventPayloadVariant120JobVariant3NsnbSideEffectAction._(
-          'auto-approved-member');
-  static const autoApprovedPendingInvite =
-      UserEventPayloadVariant120JobVariant3NsnbSideEffectAction._(
-          'auto-approved-pending-invite');
+  static const autoApprovedMember = UserEventPayloadVariant120JobVariant3NsnbSideEffectAction._('auto-approved-member');
+  static const autoApprovedPendingInvite = UserEventPayloadVariant120JobVariant3NsnbSideEffectAction._('auto-approved-pending-invite');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant3NsnbSideEffectAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant3NsnbSideEffectAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `provider` wire field.
 final class UserEventPayloadVariant120JobVariant3Provider {
+
   final String value;
 
   const UserEventPayloadVariant120JobVariant3Provider._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant3Provider.fromJson(
-          String value) =>
-      UserEventPayloadVariant120JobVariant3Provider._(value);
+  factory UserEventPayloadVariant120JobVariant3Provider.fromJson(String value) => UserEventPayloadVariant120JobVariant3Provider._(value);
 
-  static const github =
-      UserEventPayloadVariant120JobVariant3Provider._('github');
-  static const githubCustomHost =
-      UserEventPayloadVariant120JobVariant3Provider._('github-custom-host');
-  static const githubLimited =
-      UserEventPayloadVariant120JobVariant3Provider._('github-limited');
+  static const github = UserEventPayloadVariant120JobVariant3Provider._('github');
+  static const githubCustomHost = UserEventPayloadVariant120JobVariant3Provider._('github-custom-host');
+  static const githubLimited = UserEventPayloadVariant120JobVariant3Provider._('github-limited');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant3Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant3Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
@@ -72,18 +55,14 @@ enum UserEventPayloadVariant120JobVariant3Type {
 
   static UserEventPayloadVariant120JobVariant3Type fromJson(String value) {
     switch (value) {
-      case 'push':
-        return UserEventPayloadVariant120JobVariant3Type.push;
-      default:
-        throw ArgumentError(
-            'Unknown UserEventPayloadVariant120JobVariant3Type: $value');
+      case 'push': return UserEventPayloadVariant120JobVariant3Type.push;
+      default: throw ArgumentError('Unknown UserEventPayloadVariant120JobVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPayloadVariant120JobVariant3Type.push:
-        return 'push';
+      case UserEventPayloadVariant120JobVariant3Type.push: return 'push';
     }
   }
 
@@ -93,170 +72,135 @@ enum UserEventPayloadVariant120JobVariant3Type {
 
 /// Optional enumerated value serialized in the `withCache` wire field.
 final class UserEventPayloadVariant120JobVariant3WithCache {
+
   final bool value;
 
   const UserEventPayloadVariant120JobVariant3WithCache._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant3WithCache.fromJson(bool value) =>
-      UserEventPayloadVariant120JobVariant3WithCache._(value);
+  factory UserEventPayloadVariant120JobVariant3WithCache.fromJson(bool value) => UserEventPayloadVariant120JobVariant3WithCache._(value);
 
   static const false_ = UserEventPayloadVariant120JobVariant3WithCache._(false);
   static const true_ = UserEventPayloadVariant120JobVariant3WithCache._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant3WithCache &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant3WithCache && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `eventful` wire field.
 final class UserEventPayloadVariant120JobVariant4Eventful {
+
   final bool value;
 
   const UserEventPayloadVariant120JobVariant4Eventful._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant4Eventful.fromJson(bool value) =>
-      UserEventPayloadVariant120JobVariant4Eventful._(value);
+  factory UserEventPayloadVariant120JobVariant4Eventful.fromJson(bool value) => UserEventPayloadVariant120JobVariant4Eventful._(value);
 
   static const false_ = UserEventPayloadVariant120JobVariant4Eventful._(false);
   static const true_ = UserEventPayloadVariant120JobVariant4Eventful._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant4Eventful &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant4Eventful && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `onCommit` wire field.
 final class UserEventPayloadVariant120JobVariant4GitCommentsOnCommit {
+
   final bool value;
 
   const UserEventPayloadVariant120JobVariant4GitCommentsOnCommit._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant4GitCommentsOnCommit.fromJson(
-          bool value) =>
-      UserEventPayloadVariant120JobVariant4GitCommentsOnCommit._(value);
+  factory UserEventPayloadVariant120JobVariant4GitCommentsOnCommit.fromJson(bool value) => UserEventPayloadVariant120JobVariant4GitCommentsOnCommit._(value);
 
-  static const false_ =
-      UserEventPayloadVariant120JobVariant4GitCommentsOnCommit._(false);
-  static const true_ =
-      UserEventPayloadVariant120JobVariant4GitCommentsOnCommit._(true);
+  static const false_ = UserEventPayloadVariant120JobVariant4GitCommentsOnCommit._(false);
+  static const true_ = UserEventPayloadVariant120JobVariant4GitCommentsOnCommit._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant4GitCommentsOnCommit &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant4GitCommentsOnCommit && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `onPullRequest` wire field.
 final class UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest {
+
   final bool value;
 
-  const UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(
-      this.value);
+  const UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest.fromJson(
-          bool value) =>
-      UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(value);
+  factory UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest.fromJson(bool value) => UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(value);
 
-  static const false_ =
-      UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(false);
-  static const true_ =
-      UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(true);
+  static const false_ = UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(false);
+  static const true_ = UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant4GitCommentsOnPullRequest && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `isPrivate` wire field.
 final class UserEventPayloadVariant120JobVariant4IsPrivate {
+
   final bool value;
 
   const UserEventPayloadVariant120JobVariant4IsPrivate._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant4IsPrivate.fromJson(bool value) =>
-      UserEventPayloadVariant120JobVariant4IsPrivate._(value);
+  factory UserEventPayloadVariant120JobVariant4IsPrivate.fromJson(bool value) => UserEventPayloadVariant120JobVariant4IsPrivate._(value);
 
   static const false_ = UserEventPayloadVariant120JobVariant4IsPrivate._(false);
   static const true_ = UserEventPayloadVariant120JobVariant4IsPrivate._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant4IsPrivate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant4IsPrivate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `provider` wire field.
 final class UserEventPayloadVariant120JobVariant4Provider {
+
   final String value;
 
   const UserEventPayloadVariant120JobVariant4Provider._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant4Provider.fromJson(
-          String value) =>
-      UserEventPayloadVariant120JobVariant4Provider._(value);
+  factory UserEventPayloadVariant120JobVariant4Provider.fromJson(String value) => UserEventPayloadVariant120JobVariant4Provider._(value);
 
-  static const github =
-      UserEventPayloadVariant120JobVariant4Provider._('github');
-  static const githubCustomHost =
-      UserEventPayloadVariant120JobVariant4Provider._('github-custom-host');
-  static const githubLimited =
-      UserEventPayloadVariant120JobVariant4Provider._('github-limited');
+  static const github = UserEventPayloadVariant120JobVariant4Provider._('github');
+  static const githubCustomHost = UserEventPayloadVariant120JobVariant4Provider._('github-custom-host');
+  static const githubLimited = UserEventPayloadVariant120JobVariant4Provider._('github-limited');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant4Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant4Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
@@ -265,18 +209,14 @@ enum UserEventPayloadVariant120JobVariant4Type {
 
   static UserEventPayloadVariant120JobVariant4Type fromJson(String value) {
     switch (value) {
-      case 'now-comment':
-        return UserEventPayloadVariant120JobVariant4Type.nowComment;
-      default:
-        throw ArgumentError(
-            'Unknown UserEventPayloadVariant120JobVariant4Type: $value');
+      case 'now-comment': return UserEventPayloadVariant120JobVariant4Type.nowComment;
+      default: throw ArgumentError('Unknown UserEventPayloadVariant120JobVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPayloadVariant120JobVariant4Type.nowComment:
-        return 'now-comment';
+      case UserEventPayloadVariant120JobVariant4Type.nowComment: return 'now-comment';
     }
   }
 
@@ -286,85 +226,67 @@ enum UserEventPayloadVariant120JobVariant4Type {
 
 /// Optional enumerated value serialized in the `authorized` wire field.
 final class UserEventPayloadVariant120JobVariant5Authorized {
+
   final bool value;
 
   const UserEventPayloadVariant120JobVariant5Authorized._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant5Authorized.fromJson(
-          bool value) =>
-      UserEventPayloadVariant120JobVariant5Authorized._(value);
+  factory UserEventPayloadVariant120JobVariant5Authorized.fromJson(bool value) => UserEventPayloadVariant120JobVariant5Authorized._(value);
 
-  static const false_ =
-      UserEventPayloadVariant120JobVariant5Authorized._(false);
+  static const false_ = UserEventPayloadVariant120JobVariant5Authorized._(false);
   static const true_ = UserEventPayloadVariant120JobVariant5Authorized._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant5Authorized &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant5Authorized && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Since 6 Nov 2025 The verification status of the commit. - 'verified' if the commit is verified - 'unverified' if the commit is not verified - 'unknown' if the commit verification status is unknown or not supported
 final class UserEventPayloadVariant120JobVariant5CommitVerification {
+
   final String value;
 
   const UserEventPayloadVariant120JobVariant5CommitVerification._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant5CommitVerification.fromJson(
-          String value) =>
-      UserEventPayloadVariant120JobVariant5CommitVerification._(value);
+  factory UserEventPayloadVariant120JobVariant5CommitVerification.fromJson(String value) => UserEventPayloadVariant120JobVariant5CommitVerification._(value);
 
-  static const unknown =
-      UserEventPayloadVariant120JobVariant5CommitVerification._('unknown');
-  static const unverified =
-      UserEventPayloadVariant120JobVariant5CommitVerification._('unverified');
-  static const verified =
-      UserEventPayloadVariant120JobVariant5CommitVerification._('verified');
+  static const unknown = UserEventPayloadVariant120JobVariant5CommitVerification._('unknown');
+  static const unverified = UserEventPayloadVariant120JobVariant5CommitVerification._('unverified');
+  static const verified = UserEventPayloadVariant120JobVariant5CommitVerification._('verified');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant5CommitVerification &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant5CommitVerification && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `eventful` wire field.
 final class UserEventPayloadVariant120JobVariant5Eventful {
+
   final bool value;
 
   const UserEventPayloadVariant120JobVariant5Eventful._(this.value);
 
-  factory UserEventPayloadVariant120JobVariant5Eventful.fromJson(bool value) =>
-      UserEventPayloadVariant120JobVariant5Eventful._(value);
+  factory UserEventPayloadVariant120JobVariant5Eventful.fromJson(bool value) => UserEventPayloadVariant120JobVariant5Eventful._(value);
 
   static const false_ = UserEventPayloadVariant120JobVariant5Eventful._(false);
   static const true_ = UserEventPayloadVariant120JobVariant5Eventful._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant120JobVariant5Eventful &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant120JobVariant5Eventful && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

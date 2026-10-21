@@ -23,26 +23,23 @@ Future<CreateRepositoryResponse> createRepository(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 255);
-  sdkValidatePattern(
-      'name', name, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('name', name, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
 
   return (await sdkRequest<CreateRepositoryResponse>(
           'POST', '/v1/vcr/repository',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'projectId': projectId, 'name': name},
           decoder: SdkResponseDecoder.json,
           operationId: 'createRepository',
-          fromJsonRaw: (value) =>
-              CreateRepositoryResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateRepositoryResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists container registry repositories for a project in the authenticated team. Supply `projectId` to select the project; use `cursor` to continue through paginated results and `limit` to control the page size.
 ///
@@ -71,22 +68,19 @@ Future<VcrRepositoryList> listRepositories(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listRepositories',
-          fromJsonRaw: (value) =>
-              VcrRepositoryList.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => VcrRepositoryList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
+
 
 /// Lists container registry repositories for a project in the authenticated team. Supply `projectId` to select the project; use `cursor` to continue through paginated results and `limit` to control the page size.
 ///
@@ -97,62 +91,23 @@ Future<VcrRepositoryList> listRepositories(ClientConfig config,
 /// [cursor] Opaque pagination cursor returned by a previous list response.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<VcrRepository> listRepositoriesPaginated(ClientConfig config,
-    {required String projectId,
-    int? limit,
-    String? cursor,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<VcrRepository> listRepositoriesPaginated(ClientConfig config, {required String projectId, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositories(config,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositories(config, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.repositories;
     if (sdkItems.isEmpty) return;
-    for (final sdkItem in sdkItems) {
-      yield sdkItem;
-    }
+    for (final sdkItem in sdkItems) { yield sdkItem; }
     final sdkNext = sdkPage.nextCursor.valueOrNull;
     if (sdkNext == null) return;
     sdkCursor = sdkNext;
   }
 }
 
-Stream<SdkPage<VcrRepositoryList, VcrRepository>> listRepositoriesPages(
-    ClientConfig config,
-    {required String projectId,
-    int? limit,
-    String? cursor,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<SdkPage<VcrRepositoryList, VcrRepository>> listRepositoriesPages(ClientConfig config, {required String projectId, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositories(config,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositories(config, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.repositories;
     if (sdkItems.isEmpty) return;
     final sdkNext = sdkPage.nextCursor.valueOrNull;
@@ -162,6 +117,7 @@ Stream<SdkPage<VcrRepositoryList, VcrRepository>> listRepositoriesPages(
     sdkCursor = sdkNext;
   }
 }
+
 
 /// Retrieves a container registry repository for a project by its identifier or name. Supply `projectId` to select the project; IDs take precedence over names when identifying the project.
 ///
@@ -184,18 +140,16 @@ Future<GetRepositoryResponse> getRepository(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRepository',
-          fromJsonRaw: (value) =>
-              GetRepositoryResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetRepositoryResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a container registry repository by scheduling it for removal. The repository disappears from list and get results immediately, while its images and associated data are reclaimed asynchronously.
 ///
@@ -218,10 +172,8 @@ Future<dynamic> deleteRepository(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteRepository',
@@ -229,6 +181,7 @@ Future<dynamic> deleteRepository(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Lists images and their tags for a container registry repository. Supply `projectId` and `idOrName` to identify the repository, and use `untagged` to filter for images without tags. Use `cursor` to continue through paginated results.
 ///
@@ -261,24 +214,20 @@ Future<VcrImageList> listRepositoryImages(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'untagged': SdkQueryValue(SdkUtils.unwrapOptional(untagged),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'untagged': SdkQueryValue(SdkUtils.unwrapOptional(untagged), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listRepositoryImages',
-          fromJsonRaw: (value) =>
-              VcrImageList.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => VcrImageList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
+
 
 /// Lists images and their tags for a container registry repository. Supply `projectId` and `idOrName` to identify the repository, and use `untagged` to filter for images without tags. Use `cursor` to continue through paginated results.
 ///
@@ -289,74 +238,23 @@ Future<VcrImageList> listRepositoryImages(ClientConfig config,
 /// [cursor] Opaque pagination cursor returned by a previous list response.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<VcrImageListItem> listRepositoryImagesPaginated(ClientConfig config,
-    {required String idOrName,
-    required String projectId,
-    int? limit,
-    String? cursor,
-    bool? untagged,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<VcrImageListItem> listRepositoryImagesPaginated(ClientConfig config, {required String idOrName, required String projectId, int? limit, String? cursor, bool? untagged, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositoryImages(config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        untagged: untagged == null
-            ? const SdkOmitted<bool>()
-            : SdkPresent<bool>(untagged),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositoryImages(config, idOrName: idOrName, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), untagged: untagged == null ? const SdkOmitted<bool>() : SdkPresent<bool>(untagged), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.images;
     if (sdkItems.isEmpty) return;
-    for (final sdkItem in sdkItems) {
-      yield sdkItem;
-    }
+    for (final sdkItem in sdkItems) { yield sdkItem; }
     final sdkNext = sdkPage.nextCursor.valueOrNull;
     if (sdkNext == null) return;
     sdkCursor = sdkNext;
   }
 }
 
-Stream<SdkPage<VcrImageList, VcrImageListItem>> listRepositoryImagesPages(
-    ClientConfig config,
-    {required String idOrName,
-    required String projectId,
-    int? limit,
-    String? cursor,
-    bool? untagged,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<SdkPage<VcrImageList, VcrImageListItem>> listRepositoryImagesPages(ClientConfig config, {required String idOrName, required String projectId, int? limit, String? cursor, bool? untagged, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositoryImages(config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        untagged: untagged == null
-            ? const SdkOmitted<bool>()
-            : SdkPresent<bool>(untagged),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositoryImages(config, idOrName: idOrName, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), untagged: untagged == null ? const SdkOmitted<bool>() : SdkPresent<bool>(untagged), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.images;
     if (sdkItems.isEmpty) return;
     final sdkNext = sdkPage.nextCursor.valueOrNull;
@@ -366,6 +264,7 @@ Stream<SdkPage<VcrImageList, VcrImageListItem>> listRepositoryImagesPages(
     sdkCursor = sdkNext;
   }
 }
+
 
 /// Grants a team access to a VCR repository, with sharing applied to the entire repository. Supply the repository and project identifiers, then identify the team using the request body. The response includes the permission grant and its creation time.
 ///
@@ -377,15 +276,15 @@ Stream<SdkPage<VcrImageList, VcrImageListItem>> listRepositoryImagesPages(
 /// [slug] The Team slug to perform the request on behalf of.
 /// [teamId_2] ID of a team that is granted access to a repository.
 /// [teamSlug] Slug of a team that is granted access to a repository.
-Future<AddRepositoryPermissionResponse> addRepositoryPermission(
-    ClientConfig config,
-    {required String idOrName,
-    required String projectId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<String> teamId_2 = const SdkOmitted(),
-    SdkOptional<String> teamSlug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AddRepositoryPermissionResponse>
+    addRepositoryPermission(ClientConfig config,
+        {required String idOrName,
+        required String projectId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<String> teamId_2 = const SdkOmitted(),
+        SdkOptional<String> teamSlug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateLength('idOrName', idOrName, max: 255);
   if (teamId_2 is SdkPresent<String>) {
     validateLength('teamId', teamId_2.value, max: 64);
@@ -393,8 +292,7 @@ Future<AddRepositoryPermissionResponse> addRepositoryPermission(
   }
   if (teamSlug is SdkPresent<String>) {
     validateLength('teamSlug', teamSlug.value, max: 64);
-    sdkValidatePattern(
-        'teamSlug', teamSlug.value, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+    sdkValidatePattern('teamSlug', teamSlug.value, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   }
 
   return (await sdkRequest<AddRepositoryPermissionResponse>('POST',
@@ -402,10 +300,8 @@ Future<AddRepositoryPermissionResponse> addRepositoryPermission(
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'teamId': SdkUtils.unwrapOptional(teamId_2),
@@ -413,11 +309,11 @@ Future<AddRepositoryPermissionResponse> addRepositoryPermission(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'addRepositoryPermission',
-          fromJsonRaw: (value) => AddRepositoryPermissionResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AddRepositoryPermissionResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Revokes a team's access to a VCR repository. Supply the repository and project identifiers, then identify the team whose permission you want to remove. The operation removes the team's repository-wide access grant.
 ///
@@ -444,8 +340,7 @@ Future<void> removeRepositoryPermission(ClientConfig config,
   }
   if (teamSlug is SdkPresent<String>) {
     validateLength('teamSlug', teamSlug.value, max: 64);
-    sdkValidatePattern(
-        'teamSlug', teamSlug.value, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+    sdkValidatePattern('teamSlug', teamSlug.value, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   }
 
   return (await sdkRequest<void>('DELETE',
@@ -453,10 +348,8 @@ Future<void> removeRepositoryPermission(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'teamId': SdkUtils.unwrapOptional(teamId_2),
@@ -468,6 +361,7 @@ Future<void> removeRepositoryPermission(ClientConfig config,
       .data;
 }
 
+
 /// Lists the teams that a container registry repository is shared with. Supply `projectId` and `idOrName` to identify the repository, and use `cursor` to continue through paginated results.
 ///
 /// List the teams a VCR repository is shared with.
@@ -477,15 +371,15 @@ Future<void> removeRepositoryPermission(ClientConfig config,
 /// [cursor] Opaque pagination cursor returned by a previous list response.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<VcrRepositoryPermissionList> listRepositoryPermissions(
-    ClientConfig config,
-    {required String idOrName,
-    required String projectId,
-    SdkOptional<int> limit = const SdkOmitted(),
-    SdkOptional<String> cursor = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<VcrRepositoryPermissionList>
+    listRepositoryPermissions(ClientConfig config,
+        {required String idOrName,
+        required String projectId,
+        SdkOptional<int> limit = const SdkOmitted(),
+        SdkOptional<String> cursor = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateLength('idOrName', idOrName, max: 255);
   if (limit is SdkPresent<int>) {
     validateRange('limit', limit.value, min: 1, max: 100);
@@ -499,22 +393,19 @@ Future<VcrRepositoryPermissionList> listRepositoryPermissions(
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listRepositoryPermissions',
-          fromJsonRaw: (value) => VcrRepositoryPermissionList.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => VcrRepositoryPermissionList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
+
 
 /// Lists the teams that a container registry repository is shared with. Supply `projectId` and `idOrName` to identify the repository, and use `cursor` to continue through paginated results.
 ///
@@ -525,67 +416,23 @@ Future<VcrRepositoryPermissionList> listRepositoryPermissions(
 /// [cursor] Opaque pagination cursor returned by a previous list response.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<VcrRepositoryPermission> listRepositoryPermissionsPaginated(
-    ClientConfig config,
-    {required String idOrName,
-    required String projectId,
-    int? limit,
-    String? cursor,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<VcrRepositoryPermission> listRepositoryPermissionsPaginated(ClientConfig config, {required String idOrName, required String projectId, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositoryPermissions(config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositoryPermissions(config, idOrName: idOrName, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.permissions;
     if (sdkItems.isEmpty) return;
-    for (final sdkItem in sdkItems) {
-      yield sdkItem;
-    }
+    for (final sdkItem in sdkItems) { yield sdkItem; }
     final sdkNext = sdkPage.nextCursor.valueOrNull;
     if (sdkNext == null) return;
     sdkCursor = sdkNext;
   }
 }
 
-Stream<SdkPage<VcrRepositoryPermissionList, VcrRepositoryPermission>>
-    listRepositoryPermissionsPages(ClientConfig config,
-        {required String idOrName,
-        required String projectId,
-        int? limit,
-        String? cursor,
-        String? teamId,
-        String? slug,
-        RequestOptions? requestOptions}) async* {
+Stream<SdkPage<VcrRepositoryPermissionList, VcrRepositoryPermission>> listRepositoryPermissionsPages(ClientConfig config, {required String idOrName, required String projectId, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositoryPermissions(config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositoryPermissions(config, idOrName: idOrName, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.permissions;
     if (sdkItems.isEmpty) return;
     final sdkNext = sdkPage.nextCursor.valueOrNull;
@@ -595,6 +442,7 @@ Stream<SdkPage<VcrRepositoryPermissionList, VcrRepositoryPermission>>
     sdkCursor = sdkNext;
   }
 }
+
 
 /// Revokes every team's access to a VCR repository. Use this operation to clear all repository permissions at once; clearing a repository with no shared access has no effect. The operation requires the repository and project identifiers.
 ///
@@ -617,16 +465,15 @@ Future<void> clearRepositoryPermissions(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'clearRepositoryPermissions',
           options: requestOptions))
       .data;
 }
+
 
 /// Lists tags in a VCR repository, with optional pagination and sorting for non-pinned tags. Use `cursor` to continue from a previous page and the sort parameters to control tag ordering. The response includes a `nextCursor` when another page is available.
 ///
@@ -658,26 +505,21 @@ Future<ListRepositoryTagsResponse> listRepositoryTags(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'sortBy': SdkQueryValue(SdkUtils.unwrapOptional(sortBy),
-                style: 'form', explode: true),
-            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'sortBy': SdkQueryValue(SdkUtils.unwrapOptional(sortBy), style: 'form', explode: true),
+            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listRepositoryTags',
-          fromJsonRaw: (value) => ListRepositoryTagsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListRepositoryTagsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
+
 
 /// Lists tags in a VCR repository, with optional pagination and sorting for non-pinned tags. Use `cursor` to continue from a previous page and the sort parameters to control tag ordering. The response includes a `nextCursor` when another page is available.
 ///
@@ -689,83 +531,23 @@ Future<ListRepositoryTagsResponse> listRepositoryTags(ClientConfig config,
 /// [sortOrder] Sort direction. Defaults to desc.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<ListRepositoryTagsResponseTagsItem> listRepositoryTagsPaginated(
-    ClientConfig config,
-    {required String idOrName,
-    required String projectId,
-    int? limit,
-    String? cursor,
-    ListRepositoryTagsSortBy? sortBy,
-    ListRepositoryTagsSortOrder? sortOrder,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<ListRepositoryTagsResponseTagsItem> listRepositoryTagsPaginated(ClientConfig config, {required String idOrName, required String projectId, int? limit, String? cursor, ListRepositoryTagsSortBy? sortBy, ListRepositoryTagsSortOrder? sortOrder, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositoryTags(config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        sortBy: sortBy == null
-            ? const SdkOmitted<ListRepositoryTagsSortBy>()
-            : SdkPresent<ListRepositoryTagsSortBy>(sortBy),
-        sortOrder: sortOrder == null
-            ? const SdkOmitted<ListRepositoryTagsSortOrder>()
-            : SdkPresent<ListRepositoryTagsSortOrder>(sortOrder),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositoryTags(config, idOrName: idOrName, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), sortBy: sortBy == null ? const SdkOmitted<ListRepositoryTagsSortBy>() : SdkPresent<ListRepositoryTagsSortBy>(sortBy), sortOrder: sortOrder == null ? const SdkOmitted<ListRepositoryTagsSortOrder>() : SdkPresent<ListRepositoryTagsSortOrder>(sortOrder), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.tags;
     if (sdkItems.isEmpty) return;
-    for (final sdkItem in sdkItems) {
-      yield sdkItem;
-    }
+    for (final sdkItem in sdkItems) { yield sdkItem; }
     final sdkNext = sdkPage.nextCursor.valueOrNull;
     if (sdkNext == null) return;
     sdkCursor = sdkNext;
   }
 }
 
-Stream<SdkPage<ListRepositoryTagsResponse, ListRepositoryTagsResponseTagsItem>>
-    listRepositoryTagsPages(ClientConfig config,
-        {required String idOrName,
-        required String projectId,
-        int? limit,
-        String? cursor,
-        ListRepositoryTagsSortBy? sortBy,
-        ListRepositoryTagsSortOrder? sortOrder,
-        String? teamId,
-        String? slug,
-        RequestOptions? requestOptions}) async* {
+Stream<SdkPage<ListRepositoryTagsResponse, ListRepositoryTagsResponseTagsItem>> listRepositoryTagsPages(ClientConfig config, {required String idOrName, required String projectId, int? limit, String? cursor, ListRepositoryTagsSortBy? sortBy, ListRepositoryTagsSortOrder? sortOrder, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listRepositoryTags(config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        sortBy: sortBy == null
-            ? const SdkOmitted<ListRepositoryTagsSortBy>()
-            : SdkPresent<ListRepositoryTagsSortBy>(sortBy),
-        sortOrder: sortOrder == null
-            ? const SdkOmitted<ListRepositoryTagsSortOrder>()
-            : SdkPresent<ListRepositoryTagsSortOrder>(sortOrder),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listRepositoryTags(config, idOrName: idOrName, projectId: projectId, limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), sortBy: sortBy == null ? const SdkOmitted<ListRepositoryTagsSortBy>() : SdkPresent<ListRepositoryTagsSortBy>(sortBy), sortOrder: sortOrder == null ? const SdkOmitted<ListRepositoryTagsSortOrder>() : SdkPresent<ListRepositoryTagsSortOrder>(sortOrder), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.tags;
     if (sdkItems.isEmpty) return;
     final sdkNext = sdkPage.nextCursor.valueOrNull;
@@ -775,6 +557,7 @@ Stream<SdkPage<ListRepositoryTagsResponse, ListRepositoryTagsResponseTagsItem>>
     sdkCursor = sdkNext;
   }
 }
+
 
 /// Retrieves a single tag from a VCR repository, including metadata for its backing image and its VHS-readiness status. Use the repository and tag identifiers to select the tag you want to inspect. The response contains the tag and its associated image details.
 ///
@@ -799,18 +582,16 @@ Future<GetRepositoryTagResponse> getRepositoryTag(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRepositoryTag',
-          fromJsonRaw: (value) =>
-              GetRepositoryTagResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetRepositoryTagResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves an image from a VCR repository, including its tags and resolved Dockerfile layer history. Identify the image by its internal ID or manifest digest to inspect its metadata and layer details. The image identifier may use the `image_` ID form or the `sha256:` digest form.
 ///
@@ -837,18 +618,16 @@ Future<GetRepositoryImageResponse> getRepositoryImage(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRepositoryImage',
-          fromJsonRaw: (value) => GetRepositoryImageResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetRepositoryImageResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Schedules a VCR repository image for deletion. The image disappears from list and retrieve results immediately, while its manifest, blobs, tags, and database record are reclaimed asynchronously. The cleanup is performed through the `VcrManifestRemoved` event.
 ///
@@ -873,10 +652,8 @@ Future<dynamic> deleteRepositoryImage(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteRepositoryImage',
@@ -884,6 +661,7 @@ Future<dynamic> deleteRepositoryImage(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Checks whether the Docker Registry API v2 is supported. Send valid credentials in the `Authorization` header to receive a successful response and proceed with registry requests. Without credentials, the registry returns an authentication challenge for the Docker client.
 ///
@@ -899,6 +677,7 @@ Future<Map<String, dynamic>> getRoot(ClientConfig config,
       .data;
 }
 
+
 /// Checks whether a blob exists in a Docker repository. Docker clients use this check before pushing a layer to avoid uploading content that is already present. Supply the repository components and the blob's content-addressable `digest`.
 ///
 /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Check whether a blob exists. Used by the Docker client before pushing a layer to avoid re-uploading content that already exists.
@@ -907,22 +686,19 @@ Future<Map<String, dynamic>> getRoot(ClientConfig config,
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [digest] Content-addressable digest (algorithm:hex).
-Future<void> headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String digest,
-    RequestOptions? requestOptions}) async {
+Future<void>
+    headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String digest,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('digest', digest, max: 255);
   sdkValidatePattern('digest', digest, '^[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+\$');
 
@@ -930,11 +706,11 @@ Future<void> headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/${Uri.encodeComponent(digest.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId:
-              'headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest',
+          operationId: 'headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest',
           options: requestOptions))
       .data;
 }
+
 
 /// Downloads a blob from a Docker Registry repository by its content-addressable digest. Supply the team, project, repository, and digest as path components to identify the blob. The digest must use an algorithm followed by a colon and hexadecimal value.
 ///
@@ -944,22 +720,19 @@ Future<void> headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [digest] Content-addressable digest (algorithm:hex).
-Future<void> getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String digest,
-    RequestOptions? requestOptions}) async {
+Future<void>
+    getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String digest,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('digest', digest, max: 255);
   sdkValidatePattern('digest', digest, '^[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+\$');
 
@@ -967,11 +740,11 @@ Future<void> getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/${Uri.encodeComponent(digest.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId:
-              'getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest',
+          operationId: 'getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest',
           options: requestOptions))
       .data;
 }
+
 
 /// Rejects attempts to delete a blob from a Docker Registry repository because blob deletion is intentionally unsupported. Use the team, project, repository, and digest path components to identify the blob involved in the request. The operation follows the behavior of most public registries.
 ///
@@ -981,22 +754,19 @@ Future<void> getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [digest] Content-addressable digest (algorithm:hex).
-Future<void> deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String digest,
-    RequestOptions? requestOptions}) async {
+Future<void>
+    deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String digest,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('digest', digest, max: 255);
   sdkValidatePattern('digest', digest, '^[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+\$');
 
@@ -1004,11 +774,11 @@ Future<void> deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/${Uri.encodeComponent(digest.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId:
-              'deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest',
+          operationId: 'deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest',
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the status of an in-progress blob upload in a Docker repository. Use this operation to check an upload session before resuming a partial upload after an interruption. Supply the repository components and the session's `uuid`.
 ///
@@ -1018,22 +788,19 @@ Future<void> deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [uuid] Blob upload session identifier.
-Future<void> getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String uuid,
-    RequestOptions? requestOptions}) async {
+Future<void>
+    getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String uuid,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('uuid', uuid, max: 40);
   sdkValidatePattern('uuid', uuid, '^[a-f0-9]{40}\$');
 
@@ -1041,11 +808,11 @@ Future<void> getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/uploads/${Uri.encodeComponent(uuid.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId:
-              'getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
+          operationId: 'getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an in-progress blob upload from a Docker repository and discards its session. Use this operation to cancel an upload; it also aborts the underlying multipart upload if one was started. Supply the repository components and upload session `uuid`.
 ///
@@ -1055,22 +822,19 @@ Future<void> getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [uuid] Blob upload session identifier.
-Future<void> deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String uuid,
-    RequestOptions? requestOptions}) async {
+Future<void>
+    deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String uuid,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('uuid', uuid, max: 40);
   sdkValidatePattern('uuid', uuid, '^[a-f0-9]{40}\$');
 
@@ -1078,11 +842,11 @@ Future<void> deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/uploads/${Uri.encodeComponent(uuid.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId:
-              'deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
+          operationId: 'deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
           options: requestOptions))
       .data;
 }
+
 
 /// Uploads a chunk of blob data to an in-progress Docker repository upload. The chunk is streamed to storage and hashed incrementally, so you can call this operation multiple times for a chunked upload. Supply the repository components and upload session `uuid`.
 ///
@@ -1092,35 +856,32 @@ Future<void> deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [uuid] Blob upload session identifier.
-Future<dynamic> updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String uuid,
-    RequestOptions? requestOptions}) async {
+Future<dynamic>
+    updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String uuid,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('uuid', uuid, max: 40);
   sdkValidatePattern('uuid', uuid, '^[a-f0-9]{40}\$');
 
-  return (await sdkRequest<dynamic>(
-          'PATCH', '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/uploads/${Uri.encodeComponent(uuid.toString())}',
+  return (await sdkRequest<dynamic>('PATCH',
+          '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/uploads/${Uri.encodeComponent(uuid.toString())}',
           config: config,
           decoder: SdkResponseDecoder.json,
-          operationId:
-              'updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
+          operationId: 'updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
           fromJsonRaw: (value) => value,
           options: requestOptions))
       .data;
 }
+
 
 /// Completes a blob upload to a Docker repository. Include the final data chunk in the request body for a monolithic upload, or omit it to finalize a previously uploaded chunked blob. Supply the upload session `uuid` and the blob's `digest`.
 ///
@@ -1132,8 +893,7 @@ Future<dynamic> updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
 /// [uuid] Blob upload session identifier.
 /// [digest] Content-addressable digest (algorithm:hex).
 Future<dynamic>
-    replaceByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
-        ClientConfig config,
+    replaceByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(ClientConfig config,
         {required String teamSlug,
         required String projectSlug,
         required String repositoryName,
@@ -1141,14 +901,11 @@ Future<dynamic>
         required String digest,
         RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('uuid', uuid, max: 40);
   sdkValidatePattern('uuid', uuid, '^[a-f0-9]{40}\$');
   validateLength('digest', digest, max: 255);
@@ -1161,12 +918,12 @@ Future<dynamic>
             'digest': SdkQueryValue(digest, style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
-          operationId:
-              'replaceByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
+          operationId: 'replaceByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid',
           fromJsonRaw: (value) => value,
           options: requestOptions))
       .data;
 }
+
 
 /// Starts a blob upload to a Docker repository. Use the optional `mount` and `from` query parameters to request mounting a blob from another repository; otherwise, the operation initiates an upload session. Use the UUID in the response's `Location` header for subsequent chunk upload and completion requests.
 ///
@@ -1177,50 +934,43 @@ Future<dynamic>
 /// [repositoryName] Single Docker repository name component.
 /// [mount] Digest of the blob to mount from another repository.
 /// [from] Source repository to mount the blob from.
-Future<dynamic> createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    SdkOptional<String> mount = const SdkOmitted(),
-    SdkOptional<String> from = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<dynamic>
+    createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        SdkOptional<String> mount = const SdkOmitted(),
+        SdkOptional<String> from = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   if (mount is SdkPresent<String>) {
     validateLength('mount', mount.value, max: 255);
-    sdkValidatePattern(
-        'mount', mount.value, '^[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+\$');
+    sdkValidatePattern('mount', mount.value, '^[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+\$');
   }
   if (from is SdkPresent<String>) {
     validateLength('from', from.value, max: 255);
-    sdkValidatePattern('from', from.value,
-        '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\\\\/[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\\\\/[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+    sdkValidatePattern('from', from.value, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\\\\/[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\\\\/[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   }
 
   return (await sdkRequest<dynamic>('POST',
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/blobs/uploads/',
           config: config,
           query: {
-            'mount': SdkQueryValue(SdkUtils.unwrapOptional(mount),
-                style: 'form', explode: true),
-            'from': SdkQueryValue(SdkUtils.unwrapOptional(from),
-                style: 'form', explode: true)
+            'mount': SdkQueryValue(SdkUtils.unwrapOptional(mount), style: 'form', explode: true),
+            'from': SdkQueryValue(SdkUtils.unwrapOptional(from), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
-          operationId:
-              'createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads',
+          operationId: 'createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads',
           fromJsonRaw: (value) => value,
           options: requestOptions))
       .data;
 }
+
 
 /// Uploads an image manifest to a Docker repository and associates it with the specified tag or digest reference. Use this operation to push a manifest after uploading its referenced blobs. The server computes the manifest digest and returns it in the `Docker-Content-Digest` header.
 ///
@@ -1231,36 +981,31 @@ Future<dynamic> createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads(
 /// [repositoryName] Single Docker repository name component.
 /// [reference] Manifest reference: a tag or digest.
 Future<dynamic>
-    replaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
-        ClientConfig config,
+    replaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(ClientConfig config,
         {required String teamSlug,
         required String projectSlug,
         required String repositoryName,
         required String reference,
         RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('reference', reference, max: 255);
-  sdkValidatePattern('reference', reference,
-      '^(?:[a-zA-Z0-9_][a-zA-Z0-9._-]{0,127}|[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+)\$');
+  sdkValidatePattern('reference', reference, '^(?:[a-zA-Z0-9_][a-zA-Z0-9._-]{0,127}|[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+)\$');
 
   return (await sdkRequest<dynamic>('PUT',
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/manifests/${Uri.encodeComponent(reference.toString())}',
           config: config,
           decoder: SdkResponseDecoder.json,
-          operationId:
-              'replaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
+          operationId: 'replaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
           fromJsonRaw: (value) => value,
           options: requestOptions))
       .data;
 }
+
 
 /// Checks whether a manifest exists in a Docker repository by its tag or digest reference. Docker clients use this check during a push to determine whether the manifest or a referenced config blob is already present. Supply the repository components and a valid `reference`.
 ///
@@ -1270,35 +1015,31 @@ Future<dynamic>
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [reference] Manifest reference: a tag or digest.
-Future<void> headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String reference,
-    RequestOptions? requestOptions}) async {
+Future<void>
+    headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String reference,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('reference', reference, max: 255);
-  sdkValidatePattern('reference', reference,
-      '^(?:[a-zA-Z0-9_][a-zA-Z0-9._-]{0,127}|[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+)\$');
+  sdkValidatePattern('reference', reference, '^(?:[a-zA-Z0-9_][a-zA-Z0-9._-]{0,127}|[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+)\$');
 
   return (await sdkRequest<void>('HEAD',
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/manifests/${Uri.encodeComponent(reference.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId:
-              'headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
+          operationId: 'headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves an image manifest from a Docker repository using its tag or digest as the reference. Use this operation when you need to fetch the manifest associated with a repository reference. Supply a valid `reference` along with the repository components.
 ///
@@ -1308,35 +1049,31 @@ Future<void> headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
 /// [projectSlug] Single Docker repository project slug component.
 /// [repositoryName] Single Docker repository name component.
 /// [reference] Manifest reference: a tag or digest.
-Future<void> getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
-    ClientConfig config,
-    {required String teamSlug,
-    required String projectSlug,
-    required String repositoryName,
-    required String reference,
-    RequestOptions? requestOptions}) async {
+Future<void>
+    getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(ClientConfig config,
+        {required String teamSlug,
+        required String projectSlug,
+        required String repositoryName,
+        required String reference,
+        RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('reference', reference, max: 255);
-  sdkValidatePattern('reference', reference,
-      '^(?:[a-zA-Z0-9_][a-zA-Z0-9._-]{0,127}|[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+)\$');
+  sdkValidatePattern('reference', reference, '^(?:[a-zA-Z0-9_][a-zA-Z0-9._-]{0,127}|[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+)\$');
 
   return (await sdkRequest<void>('GET',
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/manifests/${Uri.encodeComponent(reference.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId:
-              'getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
+          operationId: 'getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an image manifest from a Docker repository by its content-addressable digest. Use this operation to remove a manifest by digest rather than by tag. Supply the repository components and a digest-form `reference`.
 ///
@@ -1347,36 +1084,31 @@ Future<void> getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
 /// [repositoryName] Single Docker repository name component.
 /// [reference] Content-addressable digest (algorithm:hex).
 Future<dynamic>
-    deleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
-        ClientConfig config,
+    deleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(ClientConfig config,
         {required String teamSlug,
         required String projectSlug,
         required String repositoryName,
         required String reference,
         RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   validateLength('reference', reference, max: 255);
-  sdkValidatePattern(
-      'reference', reference, '^[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+\$');
+  sdkValidatePattern('reference', reference, '^[A-Za-z0-9_+.-]+:[A-Fa-f0-9]+\$');
 
   return (await sdkRequest<dynamic>('DELETE',
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/manifests/${Uri.encodeComponent(reference.toString())}',
           config: config,
           decoder: SdkResponseDecoder.json,
-          operationId:
-              'deleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
+          operationId: 'deleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference',
           fromJsonRaw: (value) => value,
           options: requestOptions))
       .data;
 }
+
 
 /// Lists image tags in a Docker repository. Use `teamSlug`, `projectSlug`, and `repositoryName` to identify the repository, and `n` to control the page size. Pass the opaque cursor from a previous response's `Link` header in `last` to continue listing.
 ///
@@ -1395,14 +1127,11 @@ Future<GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse>
         SdkOptional<String> last = const SdkOmitted(),
         RequestOptions? requestOptions}) async {
   validateLength('teamSlug', teamSlug, max: 255);
-  sdkValidatePattern(
-      'teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('teamSlug', teamSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('projectSlug', projectSlug, max: 255);
-  sdkValidatePattern(
-      'projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
+  sdkValidatePattern('projectSlug', projectSlug, '^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\$');
   validateLength('repositoryName', repositoryName, max: 255);
-  sdkValidatePattern('repositoryName', repositoryName,
-      '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
+  sdkValidatePattern('repositoryName', repositoryName, '^[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*\$');
   if (n is SdkPresent<int>) {
     validateRange('n', n.value, min: 1, max: 1000);
   }
@@ -1410,21 +1139,16 @@ Future<GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse>
     validateLength('last', last.value, max: 1024);
   }
 
-  return (await sdkRequest<
-              GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse>('GET',
+  return (await sdkRequest<GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse>('GET',
           '/v2/${Uri.encodeComponent(teamSlug.toString())}/${Uri.encodeComponent(projectSlug.toString())}/${Uri.encodeComponent(repositoryName.toString())}/tags/list',
           config: config,
           query: {
-            'n': SdkQueryValue(SdkUtils.unwrapOptional(n),
-                style: 'form', explode: true),
-            'last': SdkQueryValue(SdkUtils.unwrapOptional(last),
-                style: 'form', explode: true)
+            'n': SdkQueryValue(SdkUtils.unwrapOptional(n), style: 'form', explode: true),
+            'last': SdkQueryValue(SdkUtils.unwrapOptional(last), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getByTeamSlugByProjectSlugByRepositoryNameTagsList',
-          fromJsonRaw: (value) =>
-              GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse
-                  .fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

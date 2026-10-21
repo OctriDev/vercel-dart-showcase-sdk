@@ -30,8 +30,7 @@ final class SdkPresent<T> extends SdkOptional<T> {
 /// every key of the [raw] payload: an untagged union takes such a branch first.
 bool sdkKeepsEveryKey(Map<String, dynamic> raw, Object? encoded) =>
     encoded is Map &&
-    raw.entries.every(
-        (entry) => entry.value == null || encoded.containsKey(entry.key));
+    raw.entries.every((entry) => entry.value == null || encoded.containsKey(entry.key));
 
 const Object sdkOmittedValue = _SdkOmittedValue();
 
@@ -90,9 +89,7 @@ class SdkUtils {
   static String encodeBytes(List<int> value) => base64Encode(value);
 
   static Object encodeOptionalBytes(SdkOptional<List<int>> value) =>
-      value is SdkPresent<List<int>>
-          ? encodeBytes(value.value)
-          : sdkOmittedValue;
+      value is SdkPresent<List<int>> ? encodeBytes(value.value) : sdkOmittedValue;
 
   static Object? unwrapOptional<T>(SdkOptional<T> value) =>
       value is SdkPresent<T> ? value.value : sdkOmittedValue;
@@ -198,8 +195,7 @@ class SdkUtils {
         continue;
       }
       final token = number[0]!;
-      final isLong =
-          number[1] == null && number[2] == null && int.tryParse(token) == null;
+      final isLong = number[1] == null && number[2] == null && int.tryParse(token) == null;
       exact.write(isLong ? '"$token"' : token);
       index += token.length - 1;
     }
@@ -213,8 +209,7 @@ class SdkUtils {
   static String _writeJson(Object? value) => switch (value) {
         BigInt() => '$value',
         List() => '[${value.map(_writeJson).join(',')}]',
-        Map() =>
-          '{${value.entries.map((entry) => '${jsonEncode('${entry.key}')}:${_writeJson(entry.value)}').join(',')}}',
+        Map() => '{${value.entries.map((entry) => '${jsonEncode('${entry.key}')}:${_writeJson(entry.value)}').join(',')}}',
         _ => jsonEncode(value),
       };
 
@@ -282,7 +277,9 @@ class SdkUtils {
     final parts = <String>[];
     for (final entry in params.entries) {
       final value = entry.value;
-      final wrapped = value is SdkQueryValue ? value : SdkQueryValue(value);
+      final wrapped = value is SdkQueryValue
+          ? value
+          : SdkQueryValue(value);
       final wireValue = wrapped.value;
       if (wireValue == null || identical(wireValue, sdkOmittedValue)) {
         continue;
@@ -295,10 +292,8 @@ class SdkUtils {
       };
       final members = _objectMembers(wireValue);
       if (members != null) {
-        for (final (name, text)
-            in _objectQueryPairs(entry.key, members, wrapped, delimiter)) {
-          parts.add(
-              '${Uri.encodeQueryComponent(name)}=${Uri.encodeQueryComponent(text)}');
+        for (final (name, text) in _objectQueryPairs(entry.key, members, wrapped, delimiter)) {
+          parts.add('${Uri.encodeQueryComponent(name)}=${Uri.encodeQueryComponent(text)}');
         }
       } else if (wireValue is Iterable) {
         final items = wireValue
@@ -346,8 +341,7 @@ class SdkUtils {
       if (value == null) continue;
       final nested = query.style == 'deepObject' ? _objectMembers(value) : null;
       if (nested != null) {
-        pairs
-            .addAll(_objectQueryPairs('$name[$key]', nested, query, delimiter));
+        pairs.addAll(_objectQueryPairs('$name[$key]', nested, query, delimiter));
       } else if (query.style == 'deepObject') {
         pairs.add(('$name[$key]', _encodeQueryValue(value)));
       } else if (query.explode) {
@@ -364,35 +358,20 @@ class SdkUtils {
   /// `matrix` (";id=a,b"). An object is its "k,v" pairs, or "k=v" members
   /// when exploded. Each item is encoded on its own, so the delimiters stay
   /// literal and a comma inside an item is "%2C".
-  static String styledPathSegment(String name, Object value,
-      {String style = 'simple', bool explode = false}) {
+  static String styledPathSegment(String name, Object value, {String style = 'simple', bool explode = false}) {
     final wire = toJsonValue(value);
     final object = wire is Map;
     final pairs = wire is Map
         ? [
             for (final entry in wire.entries)
-              if (entry.value != null)
-                (
-                  Uri.encodeComponent('${entry.key}'),
-                  Uri.encodeComponent(_encodeQueryValue(entry.value))
-                ),
+              if (entry.value != null) (Uri.encodeComponent('${entry.key}'), Uri.encodeComponent(_encodeQueryValue(entry.value))),
           ]
-        : [
-            for (final item in wire is List ? wire : [value])
-              (name, Uri.encodeComponent(_encodeQueryValue(item)))
-          ];
+        : [for (final item in wire is List ? wire : [value]) (name, Uri.encodeComponent(_encodeQueryValue(item)))];
     if (!explode) {
-      final joined = [
-        for (final (key, item) in pairs) ...[if (object) key, item]
-      ].join(',');
-      return style == 'matrix'
-          ? ';$name=$joined'
-          : '${style == 'label' ? '.' : ''}$joined';
+      final joined = [for (final (key, item) in pairs) ...[if (object) key, item]].join(',');
+      return style == 'matrix' ? ';$name=$joined' : '${style == 'label' ? '.' : ''}$joined';
     }
-    final members = [
-      for (final (key, item) in pairs)
-        object || style == 'matrix' ? '$key=$item' : item
-    ];
+    final members = [for (final (key, item) in pairs) object || style == 'matrix' ? '$key=$item' : item];
     if (style == 'matrix') return members.map((member) => ';$member').join();
     return style == 'label' ? '.${members.join('.')}' : members.join(',');
   }

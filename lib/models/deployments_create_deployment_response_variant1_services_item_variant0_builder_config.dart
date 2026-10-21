@@ -8,649 +8,241 @@ class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> buildCommand;
-
   /// Buildpack runtime slug (e.g. "ruby").
   final SdkOptional<String> buildpack;
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle>
-      bundle;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle> bundle;
   final SdkOptional<String> bunVersion;
-
   /// Set when this build produces the named daemon.
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon>
-      daemon;
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug>
-      debug;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon> daemon;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug> debug;
   final SdkOptional<String> devCommand;
   final SdkOptional<dynamic> excludeFiles;
   final SdkOptional<String?> framework;
-  final SdkOptional<
-          Map<String,
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>>
-      functions;
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers>
-      helpers;
+  final SdkOptional<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>> functions;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers> helpers;
   final SdkOptional<Map<String, String>> import_;
   final SdkOptional<dynamic> includeFiles;
   final SdkOptional<String> installCommand;
   final SdkOptional<String> ldsflags;
   final SdkOptional<String> maxLambdaSize;
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware>
-      middleware;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware> middleware;
   final SdkOptional<dynamic> middlewareMatcher;
-
   /// Enforced runtime for explicitly configured Routing Middleware.
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime>
-      middlewareRuntime;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime> middlewareRuntime;
   final SdkOptional<String> nodeVersion;
   final SdkOptional<String> outputDirectory;
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings>
-      projectSettings;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings> projectSettings;
   final SdkOptional<String> rust;
-
   /// Set when this build produces a function for schedule entrypoints.
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction>
-      scheduleFunction;
-
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction> scheduleFunction;
   /// Owning service name; scopes per-function config such as the v2beta consumer.
   final SdkOptional<String> serviceName;
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig>
-      zeroConfig;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig> zeroConfig;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig(
-      {this.buildCommand = const SdkOmitted(),
-      this.buildpack = const SdkOmitted(),
-      this.bundle = const SdkOmitted(),
-      this.bunVersion = const SdkOmitted(),
-      this.daemon = const SdkOmitted(),
-      this.debug = const SdkOmitted(),
-      this.devCommand = const SdkOmitted(),
-      this.excludeFiles = const SdkOmitted(),
-      this.framework = const SdkOmitted(),
-      this.functions = const SdkOmitted(),
-      this.helpers = const SdkOmitted(),
-      this.import_ = const SdkOmitted(),
-      this.includeFiles = const SdkOmitted(),
-      this.installCommand = const SdkOmitted(),
-      this.ldsflags = const SdkOmitted(),
-      this.maxLambdaSize = const SdkOmitted(),
-      this.middleware = const SdkOmitted(),
-      this.middlewareMatcher = const SdkOmitted(),
-      this.middlewareRuntime = const SdkOmitted(),
-      this.nodeVersion = const SdkOmitted(),
-      this.outputDirectory = const SdkOmitted(),
-      this.projectSettings = const SdkOmitted(),
-      this.rust = const SdkOmitted(),
-      this.scheduleFunction = const SdkOmitted(),
-      this.serviceName = const SdkOmitted(),
-      this.zeroConfig = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig({this.buildCommand = const SdkOmitted(), this.buildpack = const SdkOmitted(), this.bundle = const SdkOmitted(), this.bunVersion = const SdkOmitted(), this.daemon = const SdkOmitted(), this.debug = const SdkOmitted(), this.devCommand = const SdkOmitted(), this.excludeFiles = const SdkOmitted(), this.framework = const SdkOmitted(), this.functions = const SdkOmitted(), this.helpers = const SdkOmitted(), this.import_ = const SdkOmitted(), this.includeFiles = const SdkOmitted(), this.installCommand = const SdkOmitted(), this.ldsflags = const SdkOmitted(), this.maxLambdaSize = const SdkOmitted(), this.middleware = const SdkOmitted(), this.middlewareMatcher = const SdkOmitted(), this.middlewareRuntime = const SdkOmitted(), this.nodeVersion = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.projectSettings = const SdkOmitted(), this.rust = const SdkOmitted(), this.scheduleFunction = const SdkOmitted(), this.serviceName = const SdkOmitted(), this.zeroConfig = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig Function(
-      {SdkOptional<String> buildCommand,
-      SdkOptional<String> buildpack,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle>
-          bundle,
-      SdkOptional<String> bunVersion,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon>
-          daemon,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug>
-          debug,
-      SdkOptional<String> devCommand,
-      SdkOptional<dynamic> excludeFiles,
-      SdkOptional<String?> framework,
-      SdkOptional<
-              Map<String,
-                  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>>
-          functions,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers>
-          helpers,
-      SdkOptional<Map<String, String>> import_,
-      SdkOptional<dynamic> includeFiles,
-      SdkOptional<String> installCommand,
-      SdkOptional<String> ldsflags,
-      SdkOptional<String> maxLambdaSize,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware>
-          middleware,
-      SdkOptional<dynamic> middlewareMatcher,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime>
-          middlewareRuntime,
-      SdkOptional<String> nodeVersion,
-      SdkOptional<String> outputDirectory,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings>
-          projectSettings,
-      SdkOptional<String> rust,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction>
-          scheduleFunction,
-      SdkOptional<String> serviceName,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig>
-          zeroConfig}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig Function({SdkOptional<String> buildCommand, SdkOptional<String> buildpack, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle> bundle, SdkOptional<String> bunVersion, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon> daemon, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug> debug, SdkOptional<String> devCommand, SdkOptional<dynamic> excludeFiles, SdkOptional<String?> framework, SdkOptional<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>> functions, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers> helpers, SdkOptional<Map<String, String>> import_, SdkOptional<dynamic> includeFiles, SdkOptional<String> installCommand, SdkOptional<String> ldsflags, SdkOptional<String> maxLambdaSize, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware> middleware, SdkOptional<dynamic> middlewareMatcher, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime> middlewareRuntime, SdkOptional<String> nodeVersion, SdkOptional<String> outputDirectory, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings> projectSettings, SdkOptional<String> rust, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction> scheduleFunction, SdkOptional<String> serviceName, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig> zeroConfig}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig _copyWith(
-          {Object? buildCommand = sdkOmittedValue,
-          Object? buildpack = sdkOmittedValue,
-          Object? bundle = sdkOmittedValue,
-          Object? bunVersion = sdkOmittedValue,
-          Object? daemon = sdkOmittedValue,
-          Object? debug = sdkOmittedValue,
-          Object? devCommand = sdkOmittedValue,
-          Object? excludeFiles = sdkOmittedValue,
-          Object? framework = sdkOmittedValue,
-          Object? functions = sdkOmittedValue,
-          Object? helpers = sdkOmittedValue,
-          Object? import_ = sdkOmittedValue,
-          Object? includeFiles = sdkOmittedValue,
-          Object? installCommand = sdkOmittedValue,
-          Object? ldsflags = sdkOmittedValue,
-          Object? maxLambdaSize = sdkOmittedValue,
-          Object? middleware = sdkOmittedValue,
-          Object? middlewareMatcher = sdkOmittedValue,
-          Object? middlewareRuntime = sdkOmittedValue,
-          Object? nodeVersion = sdkOmittedValue,
-          Object? outputDirectory = sdkOmittedValue,
-          Object? projectSettings = sdkOmittedValue,
-          Object? rust = sdkOmittedValue,
-          Object? scheduleFunction = sdkOmittedValue,
-          Object? serviceName = sdkOmittedValue,
-          Object? zeroConfig = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig(
-        buildCommand: identical(buildCommand, sdkOmittedValue)
-            ? this.buildCommand
-            : buildCommand as SdkOptional<String>,
-        buildpack: identical(buildpack, sdkOmittedValue)
-            ? this.buildpack
-            : buildpack as SdkOptional<String>,
-        bundle: identical(bundle, sdkOmittedValue)
-            ? this.bundle
-            : bundle as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle>,
-        bunVersion: identical(bunVersion, sdkOmittedValue)
-            ? this.bunVersion
-            : bunVersion as SdkOptional<String>,
-        daemon: identical(daemon, sdkOmittedValue)
-            ? this.daemon
-            : daemon as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon>,
-        debug: identical(debug, sdkOmittedValue)
-            ? this.debug
-            : debug as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug>,
-        devCommand: identical(devCommand, sdkOmittedValue)
-            ? this.devCommand
-            : devCommand as SdkOptional<String>,
-        excludeFiles: identical(excludeFiles, sdkOmittedValue)
-            ? this.excludeFiles
-            : excludeFiles as SdkOptional<dynamic>,
-        framework: identical(framework, sdkOmittedValue)
-            ? this.framework
-            : framework as SdkOptional<String?>,
-        functions: identical(functions, sdkOmittedValue)
-            ? this.functions
-            : functions as SdkOptional<
-                Map<String,
-                    CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>>,
-        helpers: identical(helpers, sdkOmittedValue)
-            ? this.helpers
-            : helpers as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers>,
-        import_: identical(import_, sdkOmittedValue)
-            ? this.import_
-            : import_ as SdkOptional<Map<String, String>>,
-        includeFiles: identical(includeFiles, sdkOmittedValue)
-            ? this.includeFiles
-            : includeFiles as SdkOptional<dynamic>,
-        installCommand: identical(installCommand, sdkOmittedValue)
-            ? this.installCommand
-            : installCommand as SdkOptional<String>,
-        ldsflags: identical(ldsflags, sdkOmittedValue)
-            ? this.ldsflags
-            : ldsflags as SdkOptional<String>,
-        maxLambdaSize: identical(maxLambdaSize, sdkOmittedValue)
-            ? this.maxLambdaSize
-            : maxLambdaSize as SdkOptional<String>,
-        middleware: identical(middleware, sdkOmittedValue)
-            ? this.middleware
-            : middleware as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware>,
-        middlewareMatcher: identical(middlewareMatcher, sdkOmittedValue)
-            ? this.middlewareMatcher
-            : middlewareMatcher as SdkOptional<dynamic>,
-        middlewareRuntime: identical(middlewareRuntime, sdkOmittedValue)
-            ? this.middlewareRuntime
-            : middlewareRuntime as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime>,
-        nodeVersion: identical(nodeVersion, sdkOmittedValue)
-            ? this.nodeVersion
-            : nodeVersion as SdkOptional<String>,
-        outputDirectory: identical(outputDirectory, sdkOmittedValue)
-            ? this.outputDirectory
-            : outputDirectory as SdkOptional<String>,
-        projectSettings: identical(projectSettings, sdkOmittedValue)
-            ? this.projectSettings
-            : projectSettings as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings>,
-        rust: identical(rust, sdkOmittedValue)
-            ? this.rust
-            : rust as SdkOptional<String>,
-        scheduleFunction: identical(scheduleFunction, sdkOmittedValue)
-            ? this.scheduleFunction
-            : scheduleFunction as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction>,
-        serviceName: identical(serviceName, sdkOmittedValue)
-            ? this.serviceName
-            : serviceName as SdkOptional<String>,
-        zeroConfig: identical(zeroConfig, sdkOmittedValue)
-            ? this.zeroConfig
-            : zeroConfig as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig>,
-      );
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig _copyWith({Object? buildCommand = sdkOmittedValue, Object? buildpack = sdkOmittedValue, Object? bundle = sdkOmittedValue, Object? bunVersion = sdkOmittedValue, Object? daemon = sdkOmittedValue, Object? debug = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? excludeFiles = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? functions = sdkOmittedValue, Object? helpers = sdkOmittedValue, Object? import_ = sdkOmittedValue, Object? includeFiles = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? ldsflags = sdkOmittedValue, Object? maxLambdaSize = sdkOmittedValue, Object? middleware = sdkOmittedValue, Object? middlewareMatcher = sdkOmittedValue, Object? middlewareRuntime = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? projectSettings = sdkOmittedValue, Object? rust = sdkOmittedValue, Object? scheduleFunction = sdkOmittedValue, Object? serviceName = sdkOmittedValue, Object? zeroConfig = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig(
+    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String>,
+    buildpack: identical(buildpack, sdkOmittedValue) ? this.buildpack : buildpack as SdkOptional<String>,
+    bundle: identical(bundle, sdkOmittedValue) ? this.bundle : bundle as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle>,
+    bunVersion: identical(bunVersion, sdkOmittedValue) ? this.bunVersion : bunVersion as SdkOptional<String>,
+    daemon: identical(daemon, sdkOmittedValue) ? this.daemon : daemon as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon>,
+    debug: identical(debug, sdkOmittedValue) ? this.debug : debug as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug>,
+    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String>,
+    excludeFiles: identical(excludeFiles, sdkOmittedValue) ? this.excludeFiles : excludeFiles as SdkOptional<dynamic>,
+    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<String?>,
+    functions: identical(functions, sdkOmittedValue) ? this.functions : functions as SdkOptional<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>>,
+    helpers: identical(helpers, sdkOmittedValue) ? this.helpers : helpers as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers>,
+    import_: identical(import_, sdkOmittedValue) ? this.import_ : import_ as SdkOptional<Map<String, String>>,
+    includeFiles: identical(includeFiles, sdkOmittedValue) ? this.includeFiles : includeFiles as SdkOptional<dynamic>,
+    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String>,
+    ldsflags: identical(ldsflags, sdkOmittedValue) ? this.ldsflags : ldsflags as SdkOptional<String>,
+    maxLambdaSize: identical(maxLambdaSize, sdkOmittedValue) ? this.maxLambdaSize : maxLambdaSize as SdkOptional<String>,
+    middleware: identical(middleware, sdkOmittedValue) ? this.middleware : middleware as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware>,
+    middlewareMatcher: identical(middlewareMatcher, sdkOmittedValue) ? this.middlewareMatcher : middlewareMatcher as SdkOptional<dynamic>,
+    middlewareRuntime: identical(middlewareRuntime, sdkOmittedValue) ? this.middlewareRuntime : middlewareRuntime as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime>,
+    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as SdkOptional<String>,
+    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String>,
+    projectSettings: identical(projectSettings, sdkOmittedValue) ? this.projectSettings : projectSettings as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings>,
+    rust: identical(rust, sdkOmittedValue) ? this.rust : rust as SdkOptional<String>,
+    scheduleFunction: identical(scheduleFunction, sdkOmittedValue) ? this.scheduleFunction : scheduleFunction as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction>,
+    serviceName: identical(serviceName, sdkOmittedValue) ? this.serviceName : serviceName as SdkOptional<String>,
+    zeroConfig: identical(zeroConfig, sdkOmittedValue) ? this.zeroConfig : zeroConfig as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig>,
+  );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig(
-        buildCommand: json['buildCommand'] != null
-            ? SdkPresent((json['buildCommand'] as String?)!)
-            : const SdkOmitted(),
-        buildpack: json['buildpack'] != null
-            ? SdkPresent((json['buildpack'] as String?)!)
-            : const SdkOmitted(),
-        bundle: json['bundle'] != null
-            ? SdkPresent((json['bundle'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle
-                    .fromJson(json['bundle'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        bunVersion: json['bunVersion'] != null
-            ? SdkPresent((json['bunVersion'] as String?)!)
-            : const SdkOmitted(),
-        daemon: json['daemon'] != null
-            ? SdkPresent((json['daemon'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon
-                    .fromJson(json['daemon'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        debug: json['debug'] != null
-            ? SdkPresent((json['debug'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug
-                    .fromJson(json['debug'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        devCommand: json['devCommand'] != null
-            ? SdkPresent((json['devCommand'] as String?)!)
-            : const SdkOmitted(),
-        excludeFiles: json['excludeFiles'] != null
-            ? SdkPresent((json['excludeFiles'])!)
-            : const SdkOmitted(),
-        framework: json.containsKey('framework')
-            ? SdkPresent(json['framework'] as String?)
-            : const SdkOmitted(),
-        functions: json['functions'] != null
-            ? SdkPresent((json['functions'] == null
-                ? null
-                : Map<String, dynamic>.from(json['functions'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue
-                            .fromJson(value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-        helpers: json['helpers'] != null
-            ? SdkPresent((json['helpers'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers
-                    .fromJson(json['helpers'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        import_: json['import'] != null
-            ? SdkPresent((json['import'] == null
-                ? null
-                : Map<String, dynamic>.from(json['import'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        includeFiles: json['includeFiles'] != null
-            ? SdkPresent((json['includeFiles'])!)
-            : const SdkOmitted(),
-        installCommand: json['installCommand'] != null
-            ? SdkPresent((json['installCommand'] as String?)!)
-            : const SdkOmitted(),
-        ldsflags: json['ldsflags'] != null
-            ? SdkPresent((json['ldsflags'] as String?)!)
-            : const SdkOmitted(),
-        maxLambdaSize: json['maxLambdaSize'] != null
-            ? SdkPresent((json['maxLambdaSize'] as String?)!)
-            : const SdkOmitted(),
-        middleware: json['middleware'] != null
-            ? SdkPresent((json['middleware'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware
-                    .fromJson(json['middleware'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        middlewareMatcher: json['middlewareMatcher'] != null
-            ? SdkPresent((json['middlewareMatcher'])!)
-            : const SdkOmitted(),
-        middlewareRuntime: json['middlewareRuntime'] != null
-            ? SdkPresent((json['middlewareRuntime'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime
-                    .fromJson(json['middlewareRuntime'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        nodeVersion: json['nodeVersion'] != null
-            ? SdkPresent((json['nodeVersion'] as String?)!)
-            : const SdkOmitted(),
-        outputDirectory: json['outputDirectory'] != null
-            ? SdkPresent((json['outputDirectory'] as String?)!)
-            : const SdkOmitted(),
-        projectSettings: json['projectSettings'] != null
-            ? SdkPresent((json['projectSettings'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings
-                    .fromJson(json['projectSettings'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        rust: json['rust'] != null
-            ? SdkPresent((json['rust'] as String?)!)
-            : const SdkOmitted(),
-        scheduleFunction: json['scheduleFunction'] != null
-            ? SdkPresent((json['scheduleFunction'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction
-                    .fromJson(json['scheduleFunction'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        serviceName: json['serviceName'] != null
-            ? SdkPresent((json['serviceName'] as String?)!)
-            : const SdkOmitted(),
-        zeroConfig: json['zeroConfig'] != null
-            ? SdkPresent((json['zeroConfig'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig
-                    .fromJson(json['zeroConfig'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig(
+    buildCommand: json['buildCommand'] != null ? SdkPresent((json['buildCommand'] as String?)!) : const SdkOmitted(),
+    buildpack: json['buildpack'] != null ? SdkPresent((json['buildpack'] as String?)!) : const SdkOmitted(),
+    bundle: json['bundle'] != null ? SdkPresent((json['bundle'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle.fromJson(json['bundle'] as bool) : null)!) : const SdkOmitted(),
+    bunVersion: json['bunVersion'] != null ? SdkPresent((json['bunVersion'] as String?)!) : const SdkOmitted(),
+    daemon: json['daemon'] != null ? SdkPresent((json['daemon'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon.fromJson(json['daemon'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    debug: json['debug'] != null ? SdkPresent((json['debug'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug.fromJson(json['debug'] as bool) : null)!) : const SdkOmitted(),
+    devCommand: json['devCommand'] != null ? SdkPresent((json['devCommand'] as String?)!) : const SdkOmitted(),
+    excludeFiles: json['excludeFiles'] != null ? SdkPresent((json['excludeFiles'])!) : const SdkOmitted(),
+    framework: json.containsKey('framework') ? SdkPresent(json['framework'] as String?) : const SdkOmitted(),
+    functions: json['functions'] != null ? SdkPresent((json['functions'] == null ? null : Map<String, dynamic>.from(json['functions'] as Map).map((key, value) => MapEntry(key, CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+    helpers: json['helpers'] != null ? SdkPresent((json['helpers'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers.fromJson(json['helpers'] as bool) : null)!) : const SdkOmitted(),
+    import_: json['import'] != null ? SdkPresent((json['import'] == null ? null : Map<String, dynamic>.from(json['import'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    includeFiles: json['includeFiles'] != null ? SdkPresent((json['includeFiles'])!) : const SdkOmitted(),
+    installCommand: json['installCommand'] != null ? SdkPresent((json['installCommand'] as String?)!) : const SdkOmitted(),
+    ldsflags: json['ldsflags'] != null ? SdkPresent((json['ldsflags'] as String?)!) : const SdkOmitted(),
+    maxLambdaSize: json['maxLambdaSize'] != null ? SdkPresent((json['maxLambdaSize'] as String?)!) : const SdkOmitted(),
+    middleware: json['middleware'] != null ? SdkPresent((json['middleware'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware.fromJson(json['middleware'] as bool) : null)!) : const SdkOmitted(),
+    middlewareMatcher: json['middlewareMatcher'] != null ? SdkPresent((json['middlewareMatcher'])!) : const SdkOmitted(),
+    middlewareRuntime: json['middlewareRuntime'] != null ? SdkPresent((json['middlewareRuntime'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime.fromJson(json['middlewareRuntime'] as String) : null)!) : const SdkOmitted(),
+    nodeVersion: json['nodeVersion'] != null ? SdkPresent((json['nodeVersion'] as String?)!) : const SdkOmitted(),
+    outputDirectory: json['outputDirectory'] != null ? SdkPresent((json['outputDirectory'] as String?)!) : const SdkOmitted(),
+    projectSettings: json['projectSettings'] != null ? SdkPresent((json['projectSettings'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings.fromJson(json['projectSettings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    rust: json['rust'] != null ? SdkPresent((json['rust'] as String?)!) : const SdkOmitted(),
+    scheduleFunction: json['scheduleFunction'] != null ? SdkPresent((json['scheduleFunction'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction.fromJson(json['scheduleFunction'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    serviceName: json['serviceName'] != null ? SdkPresent((json['serviceName'] as String?)!) : const SdkOmitted(),
+    zeroConfig: json['zeroConfig'] != null ? SdkPresent((json['zeroConfig'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig.fromJson(json['zeroConfig'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (buildCommand) {
-          SdkPresent<String>(value: final value) => {
-              'buildCommand': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildpack) {
-          SdkPresent<String>(value: final value) => {
-              'buildpack': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (bundle) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle>(
-            value: final value
-          ) =>
-            {
-              'bundle': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (bunVersion) {
-          SdkPresent<String>(value: final value) => {
-              'bunVersion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (daemon) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon>(
-            value: final value
-          ) =>
-            {
-              'daemon': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (debug) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug>(
-            value: final value
-          ) =>
-            {
-              'debug': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (devCommand) {
-          SdkPresent<String>(value: final value) => {
-              'devCommand': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (excludeFiles) {
-          SdkPresent<dynamic>(value: final value) => {
-              'excludeFiles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (framework) {
-          SdkPresent<String?>(value: final value) => {
-              'framework': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functions) {
-          SdkPresent<
-                Map<String,
-                    CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>>(
-            value: final value
-          ) =>
-            {
-              'functions':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (helpers) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers>(
-            value: final value
-          ) =>
-            {
-              'helpers': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (import_) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'import': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (includeFiles) {
-          SdkPresent<dynamic>(value: final value) => {
-              'includeFiles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (installCommand) {
-          SdkPresent<String>(value: final value) => {
-              'installCommand': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ldsflags) {
-          SdkPresent<String>(value: final value) => {
-              'ldsflags': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maxLambdaSize) {
-          SdkPresent<String>(value: final value) => {
-              'maxLambdaSize': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (middleware) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware>(
-            value: final value
-          ) =>
-            {
-              'middleware': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (middlewareMatcher) {
-          SdkPresent<dynamic>(value: final value) => {
-              'middlewareMatcher': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (middlewareRuntime) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime>(
-            value: final value
-          ) =>
-            {
-              'middlewareRuntime': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (nodeVersion) {
-          SdkPresent<String>(value: final value) => {
-              'nodeVersion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (outputDirectory) {
-          SdkPresent<String>(value: final value) => {
-              'outputDirectory': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectSettings) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings>(
-            value: final value
-          ) =>
-            {
-              'projectSettings': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rust) {
-          SdkPresent<String>(value: final value) => {
-              'rust': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scheduleFunction) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction>(
-            value: final value
-          ) =>
-            {
-              'scheduleFunction': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (serviceName) {
-          SdkPresent<String>(value: final value) => {
-              'serviceName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (zeroConfig) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig>(
-            value: final value
-          ) =>
-            {
-              'zeroConfig': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (buildCommand) {
+      SdkPresent<String>(value: final value) => {'buildCommand': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildpack) {
+      SdkPresent<String>(value: final value) => {'buildpack': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (bundle) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle>(value: final value) => {'bundle': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (bunVersion) {
+      SdkPresent<String>(value: final value) => {'bunVersion': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (daemon) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon>(value: final value) => {'daemon': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (debug) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug>(value: final value) => {'debug': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (devCommand) {
+      SdkPresent<String>(value: final value) => {'devCommand': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (excludeFiles) {
+      SdkPresent<dynamic>(value: final value) => {'excludeFiles': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (framework) {
+      SdkPresent<String?>(value: final value) => {'framework': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functions) {
+      SdkPresent<Map<String, CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValue>>(value: final value) => {'functions': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (helpers) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers>(value: final value) => {'helpers': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (import_) {
+      SdkPresent<Map<String, String>>(value: final value) => {'import': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (includeFiles) {
+      SdkPresent<dynamic>(value: final value) => {'includeFiles': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (installCommand) {
+      SdkPresent<String>(value: final value) => {'installCommand': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ldsflags) {
+      SdkPresent<String>(value: final value) => {'ldsflags': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maxLambdaSize) {
+      SdkPresent<String>(value: final value) => {'maxLambdaSize': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (middleware) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware>(value: final value) => {'middleware': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (middlewareMatcher) {
+      SdkPresent<dynamic>(value: final value) => {'middlewareMatcher': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (middlewareRuntime) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime>(value: final value) => {'middlewareRuntime': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (nodeVersion) {
+      SdkPresent<String>(value: final value) => {'nodeVersion': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (outputDirectory) {
+      SdkPresent<String>(value: final value) => {'outputDirectory': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectSettings) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettings>(value: final value) => {'projectSettings': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rust) {
+      SdkPresent<String>(value: final value) => {'rust': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scheduleFunction) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigScheduleFunction>(value: final value) => {'scheduleFunction': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (serviceName) {
+      SdkPresent<String>(value: final value) => {'serviceName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (zeroConfig) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig>(value: final value) => {'zeroConfig': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant0Builder {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig> config;
+  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig> config;
   final SdkOptional<String> src;
   final String use;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
-      {this.config = const SdkOmitted(),
-      this.src = const SdkOmitted(),
-      required this.use});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0Builder({this.config = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0Builder Function(
-      {SdkOptional<
-              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>
-          config,
-      SdkOptional<String> src,
-      String use}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0Builder Function({SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig> config, SdkOptional<String> src, String use}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0Builder _copyWith(
-          {Object? config = sdkOmittedValue,
-          Object? src = sdkOmittedValue,
-          Object? use = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
-        config: identical(config, sdkOmittedValue)
-            ? this.config
-            : config as SdkOptional<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>,
-        src: identical(src, sdkOmittedValue)
-            ? this.src
-            : src as SdkOptional<String>,
-        use: identical(use, sdkOmittedValue) ? this.use : use as String,
-      );
+  CreateDeploymentResponseVariant1ServicesItemVariant0Builder _copyWith({Object? config = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
+    config: identical(config, sdkOmittedValue) ? this.config : config as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>,
+    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
+    use: identical(use, sdkOmittedValue) ? this.use : use as String,
+  );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0Builder.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
-        config: json['config'] != null
-            ? SdkPresent((json['config'] != null
-                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig
-                    .fromJson(json['config'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        src: json['src'] != null
-            ? SdkPresent((json['src'] as String?)!)
-            : const SdkOmitted(),
-        use: (json['use'] as String?)!,
-      );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0Builder.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0Builder(
+    config: json['config'] != null ? SdkPresent((json['config'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig.fromJson(json['config'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
+    use: (json['use'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (config) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>(
-            value: final value
-          ) =>
-            {
-              'config': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (src) {
-          SdkPresent<String>(value: final value) => {
-              'src': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'use': use,
-      };
+    ...switch (config) {
+      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfig>(value: final value) => {'config': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (src) {
+      SdkPresent<String>(value: final value) => {'src': value,},
+      _ => const <String, dynamic>{},
+    },
+    'use': use,
+  };
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue {
@@ -659,77 +251,46 @@ class CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue {
   final String service;
   final CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType type_;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
-      {required this.service, required this.type_});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue({required this.service, required this.type_});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue Function(
-      {String service,
-      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType
-          type_}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue Function({String service, CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType type_}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue _copyWith(
-          {Object? service = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
-        service: identical(service, sdkOmittedValue)
-            ? this.service
-            : service as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType,
-      );
+  CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue _copyWith({Object? service = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
+    service: identical(service, sdkOmittedValue) ? this.service : service as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType,
+  );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
-        service: (json['service'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0EnvValue(
+    service: (json['service'] as String?)!,
+    type_: (json['type'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'service': service,
-        'type': type_.toJson(),
-      };
+    'service': service,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentResponseVariant1ServicesItemVariant0Schedule();
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0Schedule.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(
-          json);
-    }
-    if (json is List) {
-      return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(
-          json.map((e) => e as String).toList().cast<String>());
-    }
-    throw FormatException(
-        "No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0Schedule");
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0Schedule.fromJson(Object? json) {
+    if (json is String) { return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(json); }
+    if (json is List) { return CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(json.map((e) => e as String).toList().cast<String>()); }
+    throw FormatException("No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0Schedule");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString
-    extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
   final String value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString
-    extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString extends CreateDeploymentResponseVariant1ServicesItemVariant0Schedule {
   final List<String> value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0ScheduleListString(this.value);
+  @override Object? toJson() => value;
 }

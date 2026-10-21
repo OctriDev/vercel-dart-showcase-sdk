@@ -7,121 +7,64 @@ part of 'inline.dart';
 class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction
-      action;
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction action;
   final double dismissedAt;
   final String key;
-
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue` API schema.
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?
-      value;
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue? value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
-      {required this.action,
-      required this.dismissedAt,
-      required this.key,
-      required this.value});
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem({required this.action, required this.dismissedAt, required this.key, required this.value});
 
-  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem Function(
-      {GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction
-          action,
-      double dismissedAt,
-      String key,
-      GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?
-          value}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem Function({GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction action, double dismissedAt, String key, GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue? value}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? dismissedAt = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction,
-        dismissedAt: identical(dismissedAt, sdkOmittedValue)
-            ? this.dismissedAt
-            : dismissedAt as double,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value
-                as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem _copyWith({Object? action = sdkOmittedValue, Object? dismissedAt = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction,
+    dismissedAt: identical(dismissedAt, sdkOmittedValue) ? this.dismissedAt : dismissedAt as double,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
-        action: (json['action'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
-        key: (json['key'] as String?)!,
-        value: json.containsKey('value')
-            ? json['value'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue
-                    .fromJson(json['value'])
-                : null
-            : throw ArgumentError.value(
-                null, 'value', 'Required property is missing'),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
+    action: (json['action'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction.fromJson(json['action'] as String) : null)!,
+    dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
+    key: (json['key'] as String?)!,
+    value: json.containsKey('value') ? json['value'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue.fromJson(json['value']) : null : throw ArgumentError.value(null, 'value', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'dismissedAt': dismissedAt,
-        'key': key,
-        'value': value?.toJson(),
-      };
+    'action': action.toJson(),
+    'dismissedAt': dismissedAt,
+    'key': key,
+    'value': value?.toJson(),
+  };
 }
 
 /// Similar to `contentHints`, but should not be exposed to the user.
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
   final String encryptedValue;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType
-      type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
-      {required this.encryptedValue, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint({required this.encryptedValue, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint Function(
-      {String encryptedValue,
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType
-          type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint Function({String encryptedValue, GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint
-      _copyWith(
-              {Object? encryptedValue = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
-            encryptedValue: identical(encryptedValue, sdkOmittedValue)
-                ? this.encryptedValue
-                : encryptedValue as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint _copyWith({Object? encryptedValue = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
+    encryptedValue: identical(encryptedValue, sdkOmittedValue) ? this.encryptedValue : encryptedValue as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
-        encryptedValue: (json['encryptedValue'] as String?)!,
-        type_: (json['type'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
+    encryptedValue: (json['encryptedValue'] as String?)!,
+    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'encryptedValue': encryptedValue,
-        'type': type_.toJson(),
-      };
+    'encryptedValue': encryptedValue,
+    'type': type_.toJson(),
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItem {
@@ -129,30 +72,21 @@ class GetMicrofrontendsInGroupResponseProjectsItemEnvItem {
   static const String constructionSurface = 'named';
   final SdkOptional<String> comment;
   final SdkOptional<String?> configurationId;
-
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint` API schema.
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?>
-      contentHint;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?> contentHint;
   final SdkOptional<double> createdAt;
   final SdkOptional<String?> createdBy;
   final SdkOptional<List<String>> customEnvironmentIds;
-  final SdkOptional<
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted> decrypted;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted> decrypted;
   final SdkOptional<String?> edgeConfigId;
   final SdkOptional<String?> edgeConfigTokenId;
   final SdkOptional<String> gitBranch;
   final SdkOptional<String> id;
-
   /// Similar to `contentHints`, but should not be exposed to the user.
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?>
-      internalContentHint;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?> internalContentHint;
   final String key;
-
   /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
   final SdkOptional<String> legacyValue;
-
   /// This is used to identify variables that have been migrated from type secret to sensitive.
   final SdkOptional<String> sunsetSecretId;
   final SdkOptional<dynamic> target;
@@ -160,476 +94,196 @@ class GetMicrofrontendsInGroupResponseProjectsItemEnvItem {
   final SdkOptional<double> updatedAt;
   final SdkOptional<String?> updatedBy;
   final String value;
-
   /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
-  final SdkOptional<
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility> visibility;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility> visibility;
   final SdkOptional<String> vsmValue;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItem(
-      {this.comment = const SdkOmitted(),
-      this.configurationId = const SdkOmitted(),
-      this.contentHint = const SdkOmitted(),
-      this.createdAt = const SdkOmitted(),
-      this.createdBy = const SdkOmitted(),
-      this.customEnvironmentIds = const SdkOmitted(),
-      this.decrypted = const SdkOmitted(),
-      this.edgeConfigId = const SdkOmitted(),
-      this.edgeConfigTokenId = const SdkOmitted(),
-      this.gitBranch = const SdkOmitted(),
-      this.id = const SdkOmitted(),
-      this.internalContentHint = const SdkOmitted(),
-      required this.key,
-      this.legacyValue = const SdkOmitted(),
-      this.sunsetSecretId = const SdkOmitted(),
-      this.target = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted(),
-      this.updatedBy = const SdkOmitted(),
-      required this.value,
-      this.visibility = const SdkOmitted(),
-      this.vsmValue = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItem({this.comment = const SdkOmitted(), this.configurationId = const SdkOmitted(), this.contentHint = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.createdBy = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted(), this.decrypted = const SdkOmitted(), this.edgeConfigId = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.id = const SdkOmitted(), this.internalContentHint = const SdkOmitted(), required this.key, this.legacyValue = const SdkOmitted(), this.sunsetSecretId = const SdkOmitted(), this.target = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted(), required this.value, this.visibility = const SdkOmitted(), this.vsmValue = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItem Function(
-      {SdkOptional<String> comment,
-      SdkOptional<String?> configurationId,
-      SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?>
-          contentHint,
-      SdkOptional<double> createdAt,
-      SdkOptional<String?> createdBy,
-      SdkOptional<List<String>> customEnvironmentIds,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted>
-          decrypted,
-      SdkOptional<String?> edgeConfigId,
-      SdkOptional<String?> edgeConfigTokenId,
-      SdkOptional<String> gitBranch,
-      SdkOptional<String> id,
-      SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?>
-          internalContentHint,
-      String key,
-      SdkOptional<String> legacyValue,
-      SdkOptional<String> sunsetSecretId,
-      SdkOptional<dynamic> target,
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemType type_,
-      SdkOptional<double> updatedAt,
-      SdkOptional<String?> updatedBy,
-      String value,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility>
-          visibility,
-      SdkOptional<String> vsmValue}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItem Function({SdkOptional<String> comment, SdkOptional<String?> configurationId, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?> contentHint, SdkOptional<double> createdAt, SdkOptional<String?> createdBy, SdkOptional<List<String>> customEnvironmentIds, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted> decrypted, SdkOptional<String?> edgeConfigId, SdkOptional<String?> edgeConfigTokenId, SdkOptional<String> gitBranch, SdkOptional<String> id, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?> internalContentHint, String key, SdkOptional<String> legacyValue, SdkOptional<String> sunsetSecretId, SdkOptional<dynamic> target, GetMicrofrontendsInGroupResponseProjectsItemEnvItemType type_, SdkOptional<double> updatedAt, SdkOptional<String?> updatedBy, String value, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility> visibility, SdkOptional<String> vsmValue}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItem _copyWith(
-          {Object? comment = sdkOmittedValue,
-          Object? configurationId = sdkOmittedValue,
-          Object? contentHint = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? customEnvironmentIds = sdkOmittedValue,
-          Object? decrypted = sdkOmittedValue,
-          Object? edgeConfigId = sdkOmittedValue,
-          Object? edgeConfigTokenId = sdkOmittedValue,
-          Object? gitBranch = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? internalContentHint = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? legacyValue = sdkOmittedValue,
-          Object? sunsetSecretId = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? updatedBy = sdkOmittedValue,
-          Object? value = sdkOmittedValue,
-          Object? visibility = sdkOmittedValue,
-          Object? vsmValue = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItem(
-        comment: identical(comment, sdkOmittedValue)
-            ? this.comment
-            : comment as SdkOptional<String>,
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as SdkOptional<String?>,
-        contentHint: identical(contentHint, sdkOmittedValue)
-            ? this.contentHint
-            : contentHint as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String?>,
-        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
-            ? this.customEnvironmentIds
-            : customEnvironmentIds as SdkOptional<List<String>>,
-        decrypted: identical(decrypted, sdkOmittedValue)
-            ? this.decrypted
-            : decrypted as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted>,
-        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-            ? this.edgeConfigId
-            : edgeConfigId as SdkOptional<String?>,
-        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
-            ? this.edgeConfigTokenId
-            : edgeConfigTokenId as SdkOptional<String?>,
-        gitBranch: identical(gitBranch, sdkOmittedValue)
-            ? this.gitBranch
-            : gitBranch as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue)
-            ? this.id
-            : id as SdkOptional<String>,
-        internalContentHint: identical(internalContentHint, sdkOmittedValue)
-            ? this.internalContentHint
-            : internalContentHint as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?>,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        legacyValue: identical(legacyValue, sdkOmittedValue)
-            ? this.legacyValue
-            : legacyValue as SdkOptional<String>,
-        sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue)
-            ? this.sunsetSecretId
-            : sunsetSecretId as SdkOptional<String>,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemType,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        updatedBy: identical(updatedBy, sdkOmittedValue)
-            ? this.updatedBy
-            : updatedBy as SdkOptional<String?>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        visibility: identical(visibility, sdkOmittedValue)
-            ? this.visibility
-            : visibility as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility>,
-        vsmValue: identical(vsmValue, sdkOmittedValue)
-            ? this.vsmValue
-            : vsmValue as SdkOptional<String>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItem _copyWith({Object? comment = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? contentHint = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue, Object? decrypted = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? internalContentHint = sdkOmittedValue, Object? key = sdkOmittedValue, Object? legacyValue = sdkOmittedValue, Object? sunsetSecretId = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? value = sdkOmittedValue, Object? visibility = sdkOmittedValue, Object? vsmValue = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItem(
+    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String?>,
+    contentHint: identical(contentHint, sdkOmittedValue) ? this.contentHint : contentHint as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String?>,
+    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
+    decrypted: identical(decrypted, sdkOmittedValue) ? this.decrypted : decrypted as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted>,
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String?>,
+    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String?>,
+    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
+    internalContentHint: identical(internalContentHint, sdkOmittedValue) ? this.internalContentHint : internalContentHint as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?>,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    legacyValue: identical(legacyValue, sdkOmittedValue) ? this.legacyValue : legacyValue as SdkOptional<String>,
+    sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue) ? this.sunsetSecretId : sunsetSecretId as SdkOptional<String>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemType,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String?>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    visibility: identical(visibility, sdkOmittedValue) ? this.visibility : visibility as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility>,
+    vsmValue: identical(vsmValue, sdkOmittedValue) ? this.vsmValue : vsmValue as SdkOptional<String>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItem(
-        comment: json['comment'] != null
-            ? SdkPresent((json['comment'] as String?)!)
-            : const SdkOmitted(),
-        configurationId: json.containsKey('configurationId')
-            ? SdkPresent(json['configurationId'] as String?)
-            : const SdkOmitted(),
-        contentHint: json.containsKey('contentHint')
-            ? SdkPresent(json['contentHint'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint
-                    .fromJson(json['contentHint'])
-                : null)
-            : const SdkOmitted(),
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        createdBy: json.containsKey('createdBy')
-            ? SdkPresent(json['createdBy'] as String?)
-            : const SdkOmitted(),
-        customEnvironmentIds: json['customEnvironmentIds'] != null
-            ? SdkPresent(((json['customEnvironmentIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        decrypted: json['decrypted'] != null
-            ? SdkPresent((json['decrypted'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted
-                    .fromJson(json['decrypted'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        edgeConfigId: json.containsKey('edgeConfigId')
-            ? SdkPresent(json['edgeConfigId'] as String?)
-            : const SdkOmitted(),
-        edgeConfigTokenId: json.containsKey('edgeConfigTokenId')
-            ? SdkPresent(json['edgeConfigTokenId'] as String?)
-            : const SdkOmitted(),
-        gitBranch: json['gitBranch'] != null
-            ? SdkPresent((json['gitBranch'] as String?)!)
-            : const SdkOmitted(),
-        id: json['id'] != null
-            ? SdkPresent((json['id'] as String?)!)
-            : const SdkOmitted(),
-        internalContentHint: json.containsKey('internalContentHint')
-            ? SdkPresent(json['internalContentHint'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint
-                    .fromJson(
-                        json['internalContentHint'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        key: (json['key'] as String?)!,
-        legacyValue: json['legacyValue'] != null
-            ? SdkPresent((json['legacyValue'] as String?)!)
-            : const SdkOmitted(),
-        sunsetSecretId: json['sunsetSecretId'] != null
-            ? SdkPresent((json['sunsetSecretId'] as String?)!)
-            : const SdkOmitted(),
-        target: json['target'] != null
-            ? SdkPresent((json['target'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        updatedBy: json.containsKey('updatedBy')
-            ? SdkPresent(json['updatedBy'] as String?)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-        visibility: json['visibility'] != null
-            ? SdkPresent((json['visibility'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility
-                    .fromJson(json['visibility'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        vsmValue: json['vsmValue'] != null
-            ? SdkPresent((json['vsmValue'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItem(
+    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
+    configurationId: json.containsKey('configurationId') ? SdkPresent(json['configurationId'] as String?) : const SdkOmitted(),
+    contentHint: json.containsKey('contentHint') ? SdkPresent(json['contentHint'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint.fromJson(json['contentHint']) : null) : const SdkOmitted(),
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    createdBy: json.containsKey('createdBy') ? SdkPresent(json['createdBy'] as String?) : const SdkOmitted(),
+    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    decrypted: json['decrypted'] != null ? SdkPresent((json['decrypted'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted.fromJson(json['decrypted'] as bool) : null)!) : const SdkOmitted(),
+    edgeConfigId: json.containsKey('edgeConfigId') ? SdkPresent(json['edgeConfigId'] as String?) : const SdkOmitted(),
+    edgeConfigTokenId: json.containsKey('edgeConfigTokenId') ? SdkPresent(json['edgeConfigTokenId'] as String?) : const SdkOmitted(),
+    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
+    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
+    internalContentHint: json.containsKey('internalContentHint') ? SdkPresent(json['internalContentHint'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint.fromJson(json['internalContentHint'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    key: (json['key'] as String?)!,
+    legacyValue: json['legacyValue'] != null ? SdkPresent((json['legacyValue'] as String?)!) : const SdkOmitted(),
+    sunsetSecretId: json['sunsetSecretId'] != null ? SdkPresent((json['sunsetSecretId'] as String?)!) : const SdkOmitted(),
+    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemType.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    updatedBy: json.containsKey('updatedBy') ? SdkPresent(json['updatedBy'] as String?) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+    visibility: json['visibility'] != null ? SdkPresent((json['visibility'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility.fromJson(json['visibility'] as String) : null)!) : const SdkOmitted(),
+    vsmValue: json['vsmValue'] != null ? SdkPresent((json['vsmValue'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (comment) {
-          SdkPresent<String>(value: final value) => {
-              'comment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (configurationId) {
-          SdkPresent<String?>(value: final value) => {
-              'configurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (contentHint) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?>(
-            value: final value
-          ) =>
-            {
-              'contentHint': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdBy) {
-          SdkPresent<String?>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'customEnvironmentIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (decrypted) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted>(
-            value: final value
-          ) =>
-            {
-              'decrypted': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigTokenId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigTokenId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitBranch) {
-          SdkPresent<String>(value: final value) => {
-              'gitBranch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (id) {
-          SdkPresent<String>(value: final value) => {
-              'id': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (internalContentHint) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?>(
-            value: final value
-          ) =>
-            {
-              'internalContentHint': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'key': key,
-        ...switch (legacyValue) {
-          SdkPresent<String>(value: final value) => {
-              'legacyValue': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sunsetSecretId) {
-          SdkPresent<String>(value: final value) => {
-              'sunsetSecretId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (target) {
-          SdkPresent<dynamic>(value: final value) => {
-              'target': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (updatedBy) {
-          SdkPresent<String?>(value: final value) => {
-              'updatedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-        ...switch (visibility) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility>(
-            value: final value
-          ) =>
-            {
-              'visibility': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (vsmValue) {
-          SdkPresent<String>(value: final value) => {
-              'vsmValue': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (comment) {
+      SdkPresent<String>(value: final value) => {'comment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (configurationId) {
+      SdkPresent<String?>(value: final value) => {'configurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (contentHint) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint?>(value: final value) => {'contentHint': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdBy) {
+      SdkPresent<String?>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentIds) {
+      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (decrypted) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnvItemDecrypted>(value: final value) => {'decrypted': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigTokenId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigTokenId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitBranch) {
+      SdkPresent<String>(value: final value) => {'gitBranch': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (id) {
+      SdkPresent<String>(value: final value) => {'id': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (internalContentHint) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint?>(value: final value) => {'internalContentHint': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'key': key,
+    ...switch (legacyValue) {
+      SdkPresent<String>(value: final value) => {'legacyValue': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sunsetSecretId) {
+      SdkPresent<String>(value: final value) => {'sunsetSecretId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (target) {
+      SdkPresent<dynamic>(value: final value) => {'target': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (updatedBy) {
+      SdkPresent<String?>(value: final value) => {'updatedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+    ...switch (visibility) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility>(value: final value) => {'visibility': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (vsmValue) {
+      SdkPresent<String>(value: final value) => {'vsmValue': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemFeatures {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics>
-      webAnalytics;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics> webAnalytics;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemFeatures(
-      {this.webAnalytics = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemFeatures({this.webAnalytics = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemFeatures Function(
-      {SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics>
-          webAnalytics}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemFeatures Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics> webAnalytics}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemFeatures _copyWith(
-          {Object? webAnalytics = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemFeatures(
-        webAnalytics: identical(webAnalytics, sdkOmittedValue)
-            ? this.webAnalytics
-            : webAnalytics as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemFeatures _copyWith({Object? webAnalytics = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemFeatures(
+    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemFeatures.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemFeatures(
-        webAnalytics: json['webAnalytics'] != null
-            ? SdkPresent((json['webAnalytics'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics
-                    .fromJson(json['webAnalytics'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemFeatures.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemFeatures(
+    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics.fromJson(json['webAnalytics'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (webAnalytics) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics>(
-            value: final value
-          ) =>
-            {
-              'webAnalytics': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (webAnalytics) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemGitComments {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether the Vercel bot should comment on commits
-  final GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit
-      onCommit;
-
+  final GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit onCommit;
   /// Whether the Vercel bot should comment on PRs
-  final GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest
-      onPullRequest;
+  final GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest onPullRequest;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemGitComments(
-      {required this.onCommit, required this.onPullRequest});
+  const GetMicrofrontendsInGroupResponseProjectsItemGitComments({required this.onCommit, required this.onPullRequest});
 
-  GetMicrofrontendsInGroupResponseProjectsItemGitComments Function(
-      {GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit onCommit,
-      GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest
-          onPullRequest}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemGitComments Function({GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit onCommit, GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest onPullRequest}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemGitComments _copyWith(
-          {Object? onCommit = sdkOmittedValue,
-          Object? onPullRequest = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemGitComments(
-        onCommit: identical(onCommit, sdkOmittedValue)
-            ? this.onCommit
-            : onCommit
-                as GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit,
-        onPullRequest: identical(onPullRequest, sdkOmittedValue)
-            ? this.onPullRequest
-            : onPullRequest
-                as GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemGitComments _copyWith({Object? onCommit = sdkOmittedValue, Object? onPullRequest = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemGitComments(
+    onCommit: identical(onCommit, sdkOmittedValue) ? this.onCommit : onCommit as GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit,
+    onPullRequest: identical(onPullRequest, sdkOmittedValue) ? this.onPullRequest : onPullRequest as GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemGitComments.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemGitComments(
-        onCommit: (json['onCommit'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit
-                .fromJson(json['onCommit'] as bool)
-            : null)!,
-        onPullRequest: (json['onPullRequest'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest
-                .fromJson(json['onPullRequest'] as bool)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemGitComments.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemGitComments(
+    onCommit: (json['onCommit'] != null ? GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit.fromJson(json['onCommit'] as bool) : null)!,
+    onPullRequest: (json['onPullRequest'] != null ? GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest.fromJson(json['onPullRequest'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'onCommit': onCommit.toJson(),
-        'onPullRequest': onPullRequest.toJson(),
-      };
+    'onCommit': onCommit.toJson(),
+    'onPullRequest': onPullRequest.toJson(),
+  };
 }

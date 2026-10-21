@@ -10,42 +10,24 @@ class SearchRepoResponseVariant3 {
   final SearchRepoResponseVariant3GitAccount gitAccount;
   final List<SearchRepoResponseVariant3ReposItem> repos;
 
-  const SearchRepoResponseVariant3(
-      {required this.gitAccount, required this.repos});
+  const SearchRepoResponseVariant3({required this.gitAccount, required this.repos});
 
-  SearchRepoResponseVariant3 Function(
-          {SearchRepoResponseVariant3GitAccount gitAccount,
-          List<SearchRepoResponseVariant3ReposItem> repos})
-      get copyWith => _copyWith;
+  SearchRepoResponseVariant3 Function({SearchRepoResponseVariant3GitAccount gitAccount, List<SearchRepoResponseVariant3ReposItem> repos}) get copyWith => _copyWith;
 
-  SearchRepoResponseVariant3 _copyWith(
-          {Object? gitAccount = sdkOmittedValue,
-          Object? repos = sdkOmittedValue}) =>
-      SearchRepoResponseVariant3(
-        gitAccount: identical(gitAccount, sdkOmittedValue)
-            ? this.gitAccount
-            : gitAccount as SearchRepoResponseVariant3GitAccount,
-        repos: identical(repos, sdkOmittedValue)
-            ? this.repos
-            : repos as List<SearchRepoResponseVariant3ReposItem>,
-      );
+  SearchRepoResponseVariant3 _copyWith({Object? gitAccount = sdkOmittedValue, Object? repos = sdkOmittedValue}) => SearchRepoResponseVariant3(
+    gitAccount: identical(gitAccount, sdkOmittedValue) ? this.gitAccount : gitAccount as SearchRepoResponseVariant3GitAccount,
+    repos: identical(repos, sdkOmittedValue) ? this.repos : repos as List<SearchRepoResponseVariant3ReposItem>,
+  );
 
-  factory SearchRepoResponseVariant3.fromJson(Map<String, dynamic> json) =>
-      SearchRepoResponseVariant3(
-        gitAccount: (json['gitAccount'] != null
-            ? SearchRepoResponseVariant3GitAccount.fromJson(
-                json['gitAccount'] as Map<String, dynamic>)
-            : null)!,
-        repos: ((json['repos'] as List?)
-            ?.map((e) => SearchRepoResponseVariant3ReposItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory SearchRepoResponseVariant3.fromJson(Map<String, dynamic> json) => SearchRepoResponseVariant3(
+    gitAccount: (json['gitAccount'] != null ? SearchRepoResponseVariant3GitAccount.fromJson(json['gitAccount'] as Map<String, dynamic>) : null)!,
+    repos: ((json['repos'] as List?)?.map((e) => SearchRepoResponseVariant3ReposItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'gitAccount': gitAccount.toJson(),
-        'repos': repos.map((item) => item.toJson()).toList(),
-      };
+    'gitAccount': gitAccount.toJson(),
+    'repos': repos.map((item) => item.toJson()).toList(),
+  };
 }
 
 class GetBillingPlansResponsePlansItemDetailsItem {
@@ -54,39 +36,27 @@ class GetBillingPlansResponsePlansItemDetailsItem {
   final String label;
   final SdkOptional<String> value;
 
-  const GetBillingPlansResponsePlansItemDetailsItem(
-      {required this.label, this.value = const SdkOmitted()});
+  const GetBillingPlansResponsePlansItemDetailsItem({required this.label, this.value = const SdkOmitted()});
 
-  GetBillingPlansResponsePlansItemDetailsItem Function(
-      {String label, SdkOptional<String> value}) get copyWith => _copyWith;
+  GetBillingPlansResponsePlansItemDetailsItem Function({String label, SdkOptional<String> value}) get copyWith => _copyWith;
 
-  GetBillingPlansResponsePlansItemDetailsItem _copyWith(
-          {Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
-      GetBillingPlansResponsePlansItemDetailsItem(
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as SdkOptional<String>,
-      );
+  GetBillingPlansResponsePlansItemDetailsItem _copyWith({Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetBillingPlansResponsePlansItemDetailsItem(
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
+  );
 
-  factory GetBillingPlansResponsePlansItemDetailsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetBillingPlansResponsePlansItemDetailsItem(
-        label: (json['label'] as String?)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetBillingPlansResponsePlansItemDetailsItem.fromJson(Map<String, dynamic> json) => GetBillingPlansResponsePlansItemDetailsItem(
+    label: (json['label'] as String?)!,
+    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'label': label,
-        ...switch (value) {
-          SdkPresent<String>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'label': label,
+    ...switch (value) {
+      SdkPresent<String>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetBillingPlansResponsePlansItemHighlightedDetailsItem {
@@ -95,39 +65,27 @@ class GetBillingPlansResponsePlansItemHighlightedDetailsItem {
   final String label;
   final SdkOptional<String> value;
 
-  const GetBillingPlansResponsePlansItemHighlightedDetailsItem(
-      {required this.label, this.value = const SdkOmitted()});
+  const GetBillingPlansResponsePlansItemHighlightedDetailsItem({required this.label, this.value = const SdkOmitted()});
 
-  GetBillingPlansResponsePlansItemHighlightedDetailsItem Function(
-      {String label, SdkOptional<String> value}) get copyWith => _copyWith;
+  GetBillingPlansResponsePlansItemHighlightedDetailsItem Function({String label, SdkOptional<String> value}) get copyWith => _copyWith;
 
-  GetBillingPlansResponsePlansItemHighlightedDetailsItem _copyWith(
-          {Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
-      GetBillingPlansResponsePlansItemHighlightedDetailsItem(
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as SdkOptional<String>,
-      );
+  GetBillingPlansResponsePlansItemHighlightedDetailsItem _copyWith({Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetBillingPlansResponsePlansItemHighlightedDetailsItem(
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
+  );
 
-  factory GetBillingPlansResponsePlansItemHighlightedDetailsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetBillingPlansResponsePlansItemHighlightedDetailsItem(
-        label: (json['label'] as String?)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetBillingPlansResponsePlansItemHighlightedDetailsItem.fromJson(Map<String, dynamic> json) => GetBillingPlansResponsePlansItemHighlightedDetailsItem(
+    label: (json['label'] as String?)!,
+    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'label': label,
-        ...switch (value) {
-          SdkPresent<String>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'label': label,
+    ...switch (value) {
+      SdkPresent<String>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetBillingPlansResponsePlansItemQuoteItem {
@@ -136,31 +94,24 @@ class GetBillingPlansResponsePlansItemQuoteItem {
   final String amount;
   final String line;
 
-  const GetBillingPlansResponsePlansItemQuoteItem(
-      {required this.amount, required this.line});
+  const GetBillingPlansResponsePlansItemQuoteItem({required this.amount, required this.line});
 
-  GetBillingPlansResponsePlansItemQuoteItem Function(
-      {String amount, String line}) get copyWith => _copyWith;
+  GetBillingPlansResponsePlansItemQuoteItem Function({String amount, String line}) get copyWith => _copyWith;
 
-  GetBillingPlansResponsePlansItemQuoteItem _copyWith(
-          {Object? amount = sdkOmittedValue, Object? line = sdkOmittedValue}) =>
-      GetBillingPlansResponsePlansItemQuoteItem(
-        amount:
-            identical(amount, sdkOmittedValue) ? this.amount : amount as String,
-        line: identical(line, sdkOmittedValue) ? this.line : line as String,
-      );
+  GetBillingPlansResponsePlansItemQuoteItem _copyWith({Object? amount = sdkOmittedValue, Object? line = sdkOmittedValue}) => GetBillingPlansResponsePlansItemQuoteItem(
+    amount: identical(amount, sdkOmittedValue) ? this.amount : amount as String,
+    line: identical(line, sdkOmittedValue) ? this.line : line as String,
+  );
 
-  factory GetBillingPlansResponsePlansItemQuoteItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetBillingPlansResponsePlansItemQuoteItem(
-        amount: (json['amount'] as String?)!,
-        line: (json['line'] as String?)!,
-      );
+  factory GetBillingPlansResponsePlansItemQuoteItem.fromJson(Map<String, dynamic> json) => GetBillingPlansResponsePlansItemQuoteItem(
+    amount: (json['amount'] as String?)!,
+    line: (json['line'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'amount': amount,
-        'line': line,
-      };
+    'amount': amount,
+    'line': line,
+  };
 }
 
 class GetBillingPlansResponsePlansItem {
@@ -171,293 +122,115 @@ class GetBillingPlansResponsePlansItem {
   final SdkOptional<List<GetBillingPlansResponsePlansItemDetailsItem>> details;
   final SdkOptional<GetBillingPlansResponsePlansItemDisabled> disabled;
   final SdkOptional<String> effectiveDate;
-  final SdkOptional<
-          List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>>
-      highlightedDetails;
+  final SdkOptional<List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>> highlightedDetails;
   final String id;
   final SdkOptional<String> initialCharge;
   final SdkOptional<String> maximumAmount;
   final SdkOptional<String> maximumAmountAutoPurchasePerPeriod;
   final SdkOptional<String> minimumAmount;
   final String name;
-  final GetBillingPlansResponsePlansItemPaymentMethodRequired
-      paymentMethodRequired;
+  final GetBillingPlansResponsePlansItemPaymentMethodRequired paymentMethodRequired;
   final SdkOptional<double> preauthorizationAmount;
   final SdkOptional<List<GetBillingPlansResponsePlansItemQuoteItem>> quote;
   final GetBillingPlansResponsePlansItemScope scope;
   final GetBillingPlansResponsePlansItemType type_;
 
-  const GetBillingPlansResponsePlansItem(
-      {this.cost = const SdkOmitted(),
-      required this.description,
-      this.details = const SdkOmitted(),
-      this.disabled = const SdkOmitted(),
-      this.effectiveDate = const SdkOmitted(),
-      this.highlightedDetails = const SdkOmitted(),
-      required this.id,
-      this.initialCharge = const SdkOmitted(),
-      this.maximumAmount = const SdkOmitted(),
-      this.maximumAmountAutoPurchasePerPeriod = const SdkOmitted(),
-      this.minimumAmount = const SdkOmitted(),
-      required this.name,
-      required this.paymentMethodRequired,
-      this.preauthorizationAmount = const SdkOmitted(),
-      this.quote = const SdkOmitted(),
-      required this.scope,
-      required this.type_});
+  const GetBillingPlansResponsePlansItem({this.cost = const SdkOmitted(), required this.description, this.details = const SdkOmitted(), this.disabled = const SdkOmitted(), this.effectiveDate = const SdkOmitted(), this.highlightedDetails = const SdkOmitted(), required this.id, this.initialCharge = const SdkOmitted(), this.maximumAmount = const SdkOmitted(), this.maximumAmountAutoPurchasePerPeriod = const SdkOmitted(), this.minimumAmount = const SdkOmitted(), required this.name, required this.paymentMethodRequired, this.preauthorizationAmount = const SdkOmitted(), this.quote = const SdkOmitted(), required this.scope, required this.type_});
 
-  GetBillingPlansResponsePlansItem Function(
-      {SdkOptional<String> cost,
-      String description,
-      SdkOptional<List<GetBillingPlansResponsePlansItemDetailsItem>> details,
-      SdkOptional<GetBillingPlansResponsePlansItemDisabled> disabled,
-      SdkOptional<String> effectiveDate,
-      SdkOptional<List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>>
-          highlightedDetails,
-      String id,
-      SdkOptional<String> initialCharge,
-      SdkOptional<String> maximumAmount,
-      SdkOptional<String> maximumAmountAutoPurchasePerPeriod,
-      SdkOptional<String> minimumAmount,
-      String name,
-      GetBillingPlansResponsePlansItemPaymentMethodRequired
-          paymentMethodRequired,
-      SdkOptional<double> preauthorizationAmount,
-      SdkOptional<List<GetBillingPlansResponsePlansItemQuoteItem>> quote,
-      GetBillingPlansResponsePlansItemScope scope,
-      GetBillingPlansResponsePlansItemType type_}) get copyWith => _copyWith;
+  GetBillingPlansResponsePlansItem Function({SdkOptional<String> cost, String description, SdkOptional<List<GetBillingPlansResponsePlansItemDetailsItem>> details, SdkOptional<GetBillingPlansResponsePlansItemDisabled> disabled, SdkOptional<String> effectiveDate, SdkOptional<List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>> highlightedDetails, String id, SdkOptional<String> initialCharge, SdkOptional<String> maximumAmount, SdkOptional<String> maximumAmountAutoPurchasePerPeriod, SdkOptional<String> minimumAmount, String name, GetBillingPlansResponsePlansItemPaymentMethodRequired paymentMethodRequired, SdkOptional<double> preauthorizationAmount, SdkOptional<List<GetBillingPlansResponsePlansItemQuoteItem>> quote, GetBillingPlansResponsePlansItemScope scope, GetBillingPlansResponsePlansItemType type_}) get copyWith => _copyWith;
 
-  GetBillingPlansResponsePlansItem _copyWith(
-          {Object? cost = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? details = sdkOmittedValue,
-          Object? disabled = sdkOmittedValue,
-          Object? effectiveDate = sdkOmittedValue,
-          Object? highlightedDetails = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? initialCharge = sdkOmittedValue,
-          Object? maximumAmount = sdkOmittedValue,
-          Object? maximumAmountAutoPurchasePerPeriod = sdkOmittedValue,
-          Object? minimumAmount = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? paymentMethodRequired = sdkOmittedValue,
-          Object? preauthorizationAmount = sdkOmittedValue,
-          Object? quote = sdkOmittedValue,
-          Object? scope = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetBillingPlansResponsePlansItem(
-        cost: identical(cost, sdkOmittedValue)
-            ? this.cost
-            : cost as SdkOptional<String>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-        details: identical(details, sdkOmittedValue)
-            ? this.details
-            : details as SdkOptional<
-                List<GetBillingPlansResponsePlansItemDetailsItem>>,
-        disabled: identical(disabled, sdkOmittedValue)
-            ? this.disabled
-            : disabled as SdkOptional<GetBillingPlansResponsePlansItemDisabled>,
-        effectiveDate: identical(effectiveDate, sdkOmittedValue)
-            ? this.effectiveDate
-            : effectiveDate as SdkOptional<String>,
-        highlightedDetails: identical(highlightedDetails, sdkOmittedValue)
-            ? this.highlightedDetails
-            : highlightedDetails as SdkOptional<
-                List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        initialCharge: identical(initialCharge, sdkOmittedValue)
-            ? this.initialCharge
-            : initialCharge as SdkOptional<String>,
-        maximumAmount: identical(maximumAmount, sdkOmittedValue)
-            ? this.maximumAmount
-            : maximumAmount as SdkOptional<String>,
-        maximumAmountAutoPurchasePerPeriod:
-            identical(maximumAmountAutoPurchasePerPeriod, sdkOmittedValue)
-                ? this.maximumAmountAutoPurchasePerPeriod
-                : maximumAmountAutoPurchasePerPeriod as SdkOptional<String>,
-        minimumAmount: identical(minimumAmount, sdkOmittedValue)
-            ? this.minimumAmount
-            : minimumAmount as SdkOptional<String>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        paymentMethodRequired: identical(paymentMethodRequired, sdkOmittedValue)
-            ? this.paymentMethodRequired
-            : paymentMethodRequired
-                as GetBillingPlansResponsePlansItemPaymentMethodRequired,
-        preauthorizationAmount:
-            identical(preauthorizationAmount, sdkOmittedValue)
-                ? this.preauthorizationAmount
-                : preauthorizationAmount as SdkOptional<double>,
-        quote: identical(quote, sdkOmittedValue)
-            ? this.quote
-            : quote
-                as SdkOptional<List<GetBillingPlansResponsePlansItemQuoteItem>>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope as GetBillingPlansResponsePlansItemScope,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetBillingPlansResponsePlansItemType,
-      );
+  GetBillingPlansResponsePlansItem _copyWith({Object? cost = sdkOmittedValue, Object? description = sdkOmittedValue, Object? details = sdkOmittedValue, Object? disabled = sdkOmittedValue, Object? effectiveDate = sdkOmittedValue, Object? highlightedDetails = sdkOmittedValue, Object? id = sdkOmittedValue, Object? initialCharge = sdkOmittedValue, Object? maximumAmount = sdkOmittedValue, Object? maximumAmountAutoPurchasePerPeriod = sdkOmittedValue, Object? minimumAmount = sdkOmittedValue, Object? name = sdkOmittedValue, Object? paymentMethodRequired = sdkOmittedValue, Object? preauthorizationAmount = sdkOmittedValue, Object? quote = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetBillingPlansResponsePlansItem(
+    cost: identical(cost, sdkOmittedValue) ? this.cost : cost as SdkOptional<String>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+    details: identical(details, sdkOmittedValue) ? this.details : details as SdkOptional<List<GetBillingPlansResponsePlansItemDetailsItem>>,
+    disabled: identical(disabled, sdkOmittedValue) ? this.disabled : disabled as SdkOptional<GetBillingPlansResponsePlansItemDisabled>,
+    effectiveDate: identical(effectiveDate, sdkOmittedValue) ? this.effectiveDate : effectiveDate as SdkOptional<String>,
+    highlightedDetails: identical(highlightedDetails, sdkOmittedValue) ? this.highlightedDetails : highlightedDetails as SdkOptional<List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    initialCharge: identical(initialCharge, sdkOmittedValue) ? this.initialCharge : initialCharge as SdkOptional<String>,
+    maximumAmount: identical(maximumAmount, sdkOmittedValue) ? this.maximumAmount : maximumAmount as SdkOptional<String>,
+    maximumAmountAutoPurchasePerPeriod: identical(maximumAmountAutoPurchasePerPeriod, sdkOmittedValue) ? this.maximumAmountAutoPurchasePerPeriod : maximumAmountAutoPurchasePerPeriod as SdkOptional<String>,
+    minimumAmount: identical(minimumAmount, sdkOmittedValue) ? this.minimumAmount : minimumAmount as SdkOptional<String>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    paymentMethodRequired: identical(paymentMethodRequired, sdkOmittedValue) ? this.paymentMethodRequired : paymentMethodRequired as GetBillingPlansResponsePlansItemPaymentMethodRequired,
+    preauthorizationAmount: identical(preauthorizationAmount, sdkOmittedValue) ? this.preauthorizationAmount : preauthorizationAmount as SdkOptional<double>,
+    quote: identical(quote, sdkOmittedValue) ? this.quote : quote as SdkOptional<List<GetBillingPlansResponsePlansItemQuoteItem>>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetBillingPlansResponsePlansItemScope,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetBillingPlansResponsePlansItemType,
+  );
 
-  factory GetBillingPlansResponsePlansItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetBillingPlansResponsePlansItem(
-        cost: json['cost'] != null
-            ? SdkPresent((json['cost'] as String?)!)
-            : const SdkOmitted(),
-        description: (json['description'] as String?)!,
-        details: json['details'] != null
-            ? SdkPresent(((json['details'] as List?)
-                ?.map((e) =>
-                    GetBillingPlansResponsePlansItemDetailsItem.fromJson(
-                        e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        disabled: json['disabled'] != null
-            ? SdkPresent((json['disabled'] != null
-                ? GetBillingPlansResponsePlansItemDisabled.fromJson(
-                    json['disabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        effectiveDate: json['effectiveDate'] != null
-            ? SdkPresent((json['effectiveDate'] as String?)!)
-            : const SdkOmitted(),
-        highlightedDetails: json['highlightedDetails'] != null
-            ? SdkPresent(((json['highlightedDetails'] as List?)
-                ?.map((e) =>
-                    GetBillingPlansResponsePlansItemHighlightedDetailsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        initialCharge: json['initialCharge'] != null
-            ? SdkPresent((json['initialCharge'] as String?)!)
-            : const SdkOmitted(),
-        maximumAmount: json['maximumAmount'] != null
-            ? SdkPresent((json['maximumAmount'] as String?)!)
-            : const SdkOmitted(),
-        maximumAmountAutoPurchasePerPeriod:
-            json['maximumAmountAutoPurchasePerPeriod'] != null
-                ? SdkPresent(
-                    (json['maximumAmountAutoPurchasePerPeriod'] as String?)!)
-                : const SdkOmitted(),
-        minimumAmount: json['minimumAmount'] != null
-            ? SdkPresent((json['minimumAmount'] as String?)!)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        paymentMethodRequired: (json['paymentMethodRequired'] != null
-            ? GetBillingPlansResponsePlansItemPaymentMethodRequired.fromJson(
-                json['paymentMethodRequired'] as bool)
-            : null)!,
-        preauthorizationAmount: json['preauthorizationAmount'] != null
-            ? SdkPresent(
-                ((json['preauthorizationAmount'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        quote: json['quote'] != null
-            ? SdkPresent(((json['quote'] as List?)
-                ?.map((e) => GetBillingPlansResponsePlansItemQuoteItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        scope: (json['scope'] != null
-            ? GetBillingPlansResponsePlansItemScope.fromJson(
-                json['scope'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? GetBillingPlansResponsePlansItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetBillingPlansResponsePlansItem.fromJson(Map<String, dynamic> json) => GetBillingPlansResponsePlansItem(
+    cost: json['cost'] != null ? SdkPresent((json['cost'] as String?)!) : const SdkOmitted(),
+    description: (json['description'] as String?)!,
+    details: json['details'] != null ? SdkPresent(((json['details'] as List?)?.map((e) => GetBillingPlansResponsePlansItemDetailsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    disabled: json['disabled'] != null ? SdkPresent((json['disabled'] != null ? GetBillingPlansResponsePlansItemDisabled.fromJson(json['disabled'] as bool) : null)!) : const SdkOmitted(),
+    effectiveDate: json['effectiveDate'] != null ? SdkPresent((json['effectiveDate'] as String?)!) : const SdkOmitted(),
+    highlightedDetails: json['highlightedDetails'] != null ? SdkPresent(((json['highlightedDetails'] as List?)?.map((e) => GetBillingPlansResponsePlansItemHighlightedDetailsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    initialCharge: json['initialCharge'] != null ? SdkPresent((json['initialCharge'] as String?)!) : const SdkOmitted(),
+    maximumAmount: json['maximumAmount'] != null ? SdkPresent((json['maximumAmount'] as String?)!) : const SdkOmitted(),
+    maximumAmountAutoPurchasePerPeriod: json['maximumAmountAutoPurchasePerPeriod'] != null ? SdkPresent((json['maximumAmountAutoPurchasePerPeriod'] as String?)!) : const SdkOmitted(),
+    minimumAmount: json['minimumAmount'] != null ? SdkPresent((json['minimumAmount'] as String?)!) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    paymentMethodRequired: (json['paymentMethodRequired'] != null ? GetBillingPlansResponsePlansItemPaymentMethodRequired.fromJson(json['paymentMethodRequired'] as bool) : null)!,
+    preauthorizationAmount: json['preauthorizationAmount'] != null ? SdkPresent(((json['preauthorizationAmount'] as num?)?.toDouble())!) : const SdkOmitted(),
+    quote: json['quote'] != null ? SdkPresent(((json['quote'] as List?)?.map((e) => GetBillingPlansResponsePlansItemQuoteItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    scope: (json['scope'] != null ? GetBillingPlansResponsePlansItemScope.fromJson(json['scope'] as String) : null)!,
+    type_: (json['type'] != null ? GetBillingPlansResponsePlansItemType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (cost) {
-          SdkPresent<String>(value: final value) => {
-              'cost': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'description': description,
-        ...switch (details) {
-          SdkPresent<List<GetBillingPlansResponsePlansItemDetailsItem>>(
-            value: final value
-          ) =>
-            {
-              'details': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disabled) {
-          SdkPresent<GetBillingPlansResponsePlansItemDisabled>(
-            value: final value
-          ) =>
-            {
-              'disabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (effectiveDate) {
-          SdkPresent<String>(value: final value) => {
-              'effectiveDate': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (highlightedDetails) {
-          SdkPresent<
-                List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>>(
-            value: final value
-          ) =>
-            {
-              'highlightedDetails': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (initialCharge) {
-          SdkPresent<String>(value: final value) => {
-              'initialCharge': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maximumAmount) {
-          SdkPresent<String>(value: final value) => {
-              'maximumAmount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maximumAmountAutoPurchasePerPeriod) {
-          SdkPresent<String>(value: final value) => {
-              'maximumAmountAutoPurchasePerPeriod': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (minimumAmount) {
-          SdkPresent<String>(value: final value) => {
-              'minimumAmount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        'paymentMethodRequired': paymentMethodRequired.toJson(),
-        ...switch (preauthorizationAmount) {
-          SdkPresent<double>(value: final value) => {
-              'preauthorizationAmount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (quote) {
-          SdkPresent<List<GetBillingPlansResponsePlansItemQuoteItem>>(
-            value: final value
-          ) =>
-            {
-              'quote': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'scope': scope.toJson(),
-        'type': type_.toJson(),
-      };
+    ...switch (cost) {
+      SdkPresent<String>(value: final value) => {'cost': value,},
+      _ => const <String, dynamic>{},
+    },
+    'description': description,
+    ...switch (details) {
+      SdkPresent<List<GetBillingPlansResponsePlansItemDetailsItem>>(value: final value) => {'details': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disabled) {
+      SdkPresent<GetBillingPlansResponsePlansItemDisabled>(value: final value) => {'disabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (effectiveDate) {
+      SdkPresent<String>(value: final value) => {'effectiveDate': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (highlightedDetails) {
+      SdkPresent<List<GetBillingPlansResponsePlansItemHighlightedDetailsItem>>(value: final value) => {'highlightedDetails': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (initialCharge) {
+      SdkPresent<String>(value: final value) => {'initialCharge': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maximumAmount) {
+      SdkPresent<String>(value: final value) => {'maximumAmount': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maximumAmountAutoPurchasePerPeriod) {
+      SdkPresent<String>(value: final value) => {'maximumAmountAutoPurchasePerPeriod': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (minimumAmount) {
+      SdkPresent<String>(value: final value) => {'minimumAmount': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    'paymentMethodRequired': paymentMethodRequired.toJson(),
+    ...switch (preauthorizationAmount) {
+      SdkPresent<double>(value: final value) => {'preauthorizationAmount': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (quote) {
+      SdkPresent<List<GetBillingPlansResponsePlansItemQuoteItem>>(value: final value) => {'quote': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'scope': scope.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class GetBillingPlansResponse {
@@ -467,27 +240,19 @@ class GetBillingPlansResponse {
 
   const GetBillingPlansResponse({required this.plans});
 
-  GetBillingPlansResponse Function(
-      {List<GetBillingPlansResponsePlansItem> plans}) get copyWith => _copyWith;
+  GetBillingPlansResponse Function({List<GetBillingPlansResponsePlansItem> plans}) get copyWith => _copyWith;
 
-  GetBillingPlansResponse _copyWith({Object? plans = sdkOmittedValue}) =>
-      GetBillingPlansResponse(
-        plans: identical(plans, sdkOmittedValue)
-            ? this.plans
-            : plans as List<GetBillingPlansResponsePlansItem>,
-      );
+  GetBillingPlansResponse _copyWith({Object? plans = sdkOmittedValue}) => GetBillingPlansResponse(
+    plans: identical(plans, sdkOmittedValue) ? this.plans : plans as List<GetBillingPlansResponsePlansItem>,
+  );
 
-  factory GetBillingPlansResponse.fromJson(Map<String, dynamic> json) =>
-      GetBillingPlansResponse(
-        plans: ((json['plans'] as List?)
-            ?.map((e) => GetBillingPlansResponsePlansItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory GetBillingPlansResponse.fromJson(Map<String, dynamic> json) => GetBillingPlansResponse(
+    plans: ((json['plans'] as List?)?.map((e) => GetBillingPlansResponsePlansItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'plans': plans.map((item) => item.toJson()).toList(),
-      };
+    'plans': plans.map((item) => item.toJson()).toList(),
+  };
 }
 
 class ConnectIntegrationResourceToProjectRequestBody {
@@ -497,59 +262,31 @@ class ConnectIntegrationResourceToProjectRequestBody {
   final SdkOptional<List<String>> envVarEnvironments;
   final SdkOptional<bool> makeEnvVarsSensitive;
 
-  const ConnectIntegrationResourceToProjectRequestBody(
-      {required this.projectId,
-      this.envVarEnvironments = const SdkOmitted(),
-      this.makeEnvVarsSensitive = const SdkOmitted()});
+  const ConnectIntegrationResourceToProjectRequestBody({required this.projectId, this.envVarEnvironments = const SdkOmitted(), this.makeEnvVarsSensitive = const SdkOmitted()});
 
-  ConnectIntegrationResourceToProjectRequestBody Function(
-      {String projectId,
-      SdkOptional<List<String>> envVarEnvironments,
-      SdkOptional<bool> makeEnvVarsSensitive}) get copyWith => _copyWith;
+  ConnectIntegrationResourceToProjectRequestBody Function({String projectId, SdkOptional<List<String>> envVarEnvironments, SdkOptional<bool> makeEnvVarsSensitive}) get copyWith => _copyWith;
 
-  ConnectIntegrationResourceToProjectRequestBody _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? envVarEnvironments = sdkOmittedValue,
-          Object? makeEnvVarsSensitive = sdkOmittedValue}) =>
-      ConnectIntegrationResourceToProjectRequestBody(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        envVarEnvironments: identical(envVarEnvironments, sdkOmittedValue)
-            ? this.envVarEnvironments
-            : envVarEnvironments as SdkOptional<List<String>>,
-        makeEnvVarsSensitive: identical(makeEnvVarsSensitive, sdkOmittedValue)
-            ? this.makeEnvVarsSensitive
-            : makeEnvVarsSensitive as SdkOptional<bool>,
-      );
+  ConnectIntegrationResourceToProjectRequestBody _copyWith({Object? projectId = sdkOmittedValue, Object? envVarEnvironments = sdkOmittedValue, Object? makeEnvVarsSensitive = sdkOmittedValue}) => ConnectIntegrationResourceToProjectRequestBody(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    envVarEnvironments: identical(envVarEnvironments, sdkOmittedValue) ? this.envVarEnvironments : envVarEnvironments as SdkOptional<List<String>>,
+    makeEnvVarsSensitive: identical(makeEnvVarsSensitive, sdkOmittedValue) ? this.makeEnvVarsSensitive : makeEnvVarsSensitive as SdkOptional<bool>,
+  );
 
-  factory ConnectIntegrationResourceToProjectRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectIntegrationResourceToProjectRequestBody(
-        projectId: (json['projectId'] as String?)!,
-        envVarEnvironments: json['envVarEnvironments'] != null
-            ? SdkPresent(((json['envVarEnvironments'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        makeEnvVarsSensitive: json['makeEnvVarsSensitive'] != null
-            ? SdkPresent((json['makeEnvVarsSensitive'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectIntegrationResourceToProjectRequestBody.fromJson(Map<String, dynamic> json) => ConnectIntegrationResourceToProjectRequestBody(
+    projectId: (json['projectId'] as String?)!,
+    envVarEnvironments: json['envVarEnvironments'] != null ? SdkPresent(((json['envVarEnvironments'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    makeEnvVarsSensitive: json['makeEnvVarsSensitive'] != null ? SdkPresent((json['makeEnvVarsSensitive'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        ...switch (envVarEnvironments) {
-          SdkPresent<List<String>>(value: final value) => {
-              'envVarEnvironments': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (makeEnvVarsSensitive) {
-          SdkPresent<bool>(value: final value) => {
-              'makeEnvVarsSensitive': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'projectId': projectId,
+    ...switch (envVarEnvironments) {
+      SdkPresent<List<String>>(value: final value) => {'envVarEnvironments': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (makeEnvVarsSensitive) {
+      SdkPresent<bool>(value: final value) => {'makeEnvVarsSensitive': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

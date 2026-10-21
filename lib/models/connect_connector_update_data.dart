@@ -8,169 +8,86 @@ part of 'connect.dart';
 class ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// JSON Web Key type.
   final String kty;
-
   /// JSON Web Key identifier.
   final SdkOptional<String> kid;
-
   /// Intended key use: signing or encryption.
-  final SdkOptional<
-      ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse> use;
-
+  final SdkOptional<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse> use;
   /// Operations permitted for this key.
   final SdkOptional<List<String>> keyOps;
-
   /// Algorithm intended for this key.
   final SdkOptional<String> alg;
   final Map<String, dynamic> additionalProperties;
 
-  const ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem(
-      {required this.kty,
-      this.kid = const SdkOmitted(),
-      this.use = const SdkOmitted(),
-      this.keyOps = const SdkOmitted(),
-      this.alg = const SdkOmitted(),
-      this.additionalProperties = const <String, dynamic>{}});
+  const ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem({required this.kty, this.kid = const SdkOmitted(), this.use = const SdkOmitted(), this.keyOps = const SdkOmitted(), this.alg = const SdkOmitted(), this.additionalProperties = const <String, dynamic>{}});
 
-  ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem Function(
-      {String kty,
-      SdkOptional<String> kid,
-      SdkOptional<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse>
-          use,
-      SdkOptional<List<String>> keyOps,
-      SdkOptional<String> alg}) get copyWith => _copyWith;
+  ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem Function({String kty, SdkOptional<String> kid, SdkOptional<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse> use, SdkOptional<List<String>> keyOps, SdkOptional<String> alg}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem _copyWith(
-          {Object? kty = sdkOmittedValue,
-          Object? kid = sdkOmittedValue,
-          Object? use = sdkOmittedValue,
-          Object? keyOps = sdkOmittedValue,
-          Object? alg = sdkOmittedValue}) =>
-      ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem(
-        kty: identical(kty, sdkOmittedValue) ? this.kty : kty as String,
-        kid: identical(kid, sdkOmittedValue)
-            ? this.kid
-            : kid as SdkOptional<String>,
-        use: identical(use, sdkOmittedValue)
-            ? this.use
-            : use as SdkOptional<
-                ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse>,
-        keyOps: identical(keyOps, sdkOmittedValue)
-            ? this.keyOps
-            : keyOps as SdkOptional<List<String>>,
-        alg: identical(alg, sdkOmittedValue)
-            ? this.alg
-            : alg as SdkOptional<String>,
-        additionalProperties: additionalProperties,
-      );
+  ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem _copyWith({Object? kty = sdkOmittedValue, Object? kid = sdkOmittedValue, Object? use = sdkOmittedValue, Object? keyOps = sdkOmittedValue, Object? alg = sdkOmittedValue}) => ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem(
+    kty: identical(kty, sdkOmittedValue) ? this.kty : kty as String,
+    kid: identical(kid, sdkOmittedValue) ? this.kid : kid as SdkOptional<String>,
+    use: identical(use, sdkOmittedValue) ? this.use : use as SdkOptional<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse>,
+    keyOps: identical(keyOps, sdkOmittedValue) ? this.keyOps : keyOps as SdkOptional<List<String>>,
+    alg: identical(alg, sdkOmittedValue) ? this.alg : alg as SdkOptional<String>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem(
-        kty: (json['kty'] as String?)!,
-        kid: json['kid'] != null
-            ? SdkPresent((json['kid'] as String?)!)
-            : const SdkOmitted(),
-        use: json['use'] != null
-            ? SdkPresent((json['use'] != null
-                ? ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse
-                    .fromJson(json['use'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        keyOps: json['key_ops'] != null
-            ? SdkPresent(
-                ((json['key_ops'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        alg: json['alg'] != null
-            ? SdkPresent((json['alg'] as String?)!)
-            : const SdkOmitted(),
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{
-                'kty',
-                'kid',
-                'use',
-                'key_ops',
-                'alg'
-              }.contains(key)),
-      );
+  factory ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem(
+    kty: (json['kty'] as String?)!,
+    kid: json['kid'] != null ? SdkPresent((json['kid'] as String?)!) : const SdkOmitted(),
+    use: json['use'] != null ? SdkPresent((json['use'] != null ? ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse.fromJson(json['use'] as String) : null)!) : const SdkOmitted(),
+    keyOps: json['key_ops'] != null ? SdkPresent(((json['key_ops'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    alg: json['alg'] != null ? SdkPresent((json['alg'] as String?)!) : const SdkOmitted(),
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'kty', 'kid', 'use', 'key_ops', 'alg'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'kty': kty,
-        ...switch (kid) {
-          SdkPresent<String>(value: final value) => {
-              'kid': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (use) {
-          SdkPresent<
-                ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse>(
-            value: final value
-          ) =>
-            {
-              'use': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (keyOps) {
-          SdkPresent<List<String>>(value: final value) => {
-              'key_ops': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (alg) {
-          SdkPresent<String>(value: final value) => {
-              'alg': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...additionalProperties,
+    'kty': kty,
+    ...switch (kid) {
+      SdkPresent<String>(value: final value) => {'kid': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (use) {
+      SdkPresent<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItemUse>(value: final value) => {'use': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (keyOps) {
+      SdkPresent<List<String>>(value: final value) => {'key_ops': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (alg) {
+      SdkPresent<String>(value: final value) => {'alg': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Inline authorization server JSON Web Key Set.
 class ConnectConnectorUpdateDataVariant0ServerConfigJwks {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// JSON Web Keys published by the authorization server.
   final List<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem> keys;
   final Map<String, dynamic> additionalProperties;
 
-  const ConnectConnectorUpdateDataVariant0ServerConfigJwks(
-      {required this.keys,
-      this.additionalProperties = const <String, dynamic>{}});
+  const ConnectConnectorUpdateDataVariant0ServerConfigJwks({required this.keys, this.additionalProperties = const <String, dynamic>{}});
 
-  ConnectConnectorUpdateDataVariant0ServerConfigJwks Function(
-      {List<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem>
-          keys}) get copyWith => _copyWith;
+  ConnectConnectorUpdateDataVariant0ServerConfigJwks Function({List<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem> keys}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateDataVariant0ServerConfigJwks _copyWith(
-          {Object? keys = sdkOmittedValue}) =>
-      ConnectConnectorUpdateDataVariant0ServerConfigJwks(
-        keys: identical(keys, sdkOmittedValue)
-            ? this.keys
-            : keys as List<
-                ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem>,
-        additionalProperties: additionalProperties,
-      );
+  ConnectConnectorUpdateDataVariant0ServerConfigJwks _copyWith({Object? keys = sdkOmittedValue}) => ConnectConnectorUpdateDataVariant0ServerConfigJwks(
+    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory ConnectConnectorUpdateDataVariant0ServerConfigJwks.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorUpdateDataVariant0ServerConfigJwks(
-        keys: ((json['keys'] as List?)
-            ?.map((e) =>
-                ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{'keys'}.contains(key)),
-      );
+  factory ConnectConnectorUpdateDataVariant0ServerConfigJwks.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateDataVariant0ServerConfigJwks(
+    keys: ((json['keys'] as List?)?.map((e) => ConnectConnectorUpdateDataVariant0ServerConfigJwksKeysItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'keys'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'keys': keys.map((item) => item.toJson()).toList(),
-      };
+    ...additionalProperties,
+    'keys': keys.map((item) => item.toJson()).toList(),
+  };
 }

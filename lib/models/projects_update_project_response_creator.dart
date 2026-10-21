@@ -7,46 +7,32 @@ part of 'projects_update.dart';
 class UpdateProjectResponseCreatorVariant0ViaVariant0App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
-
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const UpdateProjectResponseCreatorVariant0ViaVariant0App(
-      {this.clientId = const SdkOmitted(), required this.id});
+  const UpdateProjectResponseCreatorVariant0ViaVariant0App({this.clientId = const SdkOmitted(), required this.id});
 
-  UpdateProjectResponseCreatorVariant0ViaVariant0App Function(
-      {SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant0ViaVariant0App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant0ViaVariant0App _copyWith(
-          {Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant0App(
-        clientId: identical(clientId, sdkOmittedValue)
-            ? this.clientId
-            : clientId as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UpdateProjectResponseCreatorVariant0ViaVariant0App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant0ViaVariant0App(
+    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UpdateProjectResponseCreatorVariant0ViaVariant0App.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant0App(
-        clientId: json['clientId'] != null
-            ? SdkPresent((json['clientId'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-      );
+  factory UpdateProjectResponseCreatorVariant0ViaVariant0App.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant0ViaVariant0App(
+    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (clientId) {
-          SdkPresent<String>(value: final value) => {
-              'clientId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-      };
+    ...switch (clientId) {
+      SdkPresent<String>(value: final value) => {'clientId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+  };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
@@ -56,42 +42,24 @@ class UpdateProjectResponseCreatorVariant0ViaVariant0 {
   final UpdateProjectResponseCreatorVariant0ViaVariant0App app;
   final UpdateProjectResponseCreatorVariant0ViaVariant0Type type_;
 
-  const UpdateProjectResponseCreatorVariant0ViaVariant0(
-      {required this.app, required this.type_});
+  const UpdateProjectResponseCreatorVariant0ViaVariant0({required this.app, required this.type_});
 
-  UpdateProjectResponseCreatorVariant0ViaVariant0 Function(
-          {UpdateProjectResponseCreatorVariant0ViaVariant0App app,
-          UpdateProjectResponseCreatorVariant0ViaVariant0Type type_})
-      get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant0ViaVariant0 Function({UpdateProjectResponseCreatorVariant0ViaVariant0App app, UpdateProjectResponseCreatorVariant0ViaVariant0Type type_}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant0ViaVariant0 _copyWith(
-          {Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant0(
-        app: identical(app, sdkOmittedValue)
-            ? this.app
-            : app as UpdateProjectResponseCreatorVariant0ViaVariant0App,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateProjectResponseCreatorVariant0ViaVariant0Type,
-      );
+  UpdateProjectResponseCreatorVariant0ViaVariant0 _copyWith({Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant0ViaVariant0(
+    app: identical(app, sdkOmittedValue) ? this.app : app as UpdateProjectResponseCreatorVariant0ViaVariant0App,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseCreatorVariant0ViaVariant0Type,
+  );
 
-  factory UpdateProjectResponseCreatorVariant0ViaVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant0(
-        app: (json['app'] != null
-            ? UpdateProjectResponseCreatorVariant0ViaVariant0App.fromJson(
-                json['app'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateProjectResponseCreatorVariant0ViaVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UpdateProjectResponseCreatorVariant0ViaVariant0.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant0ViaVariant0(
+    app: (json['app'] != null ? UpdateProjectResponseCreatorVariant0ViaVariant0App.fromJson(json['app'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? UpdateProjectResponseCreatorVariant0ViaVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'app': app.toJson(),
-        'type': type_.toJson(),
-      };
+    'app': app.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class UpdateProjectResponseCreatorVariant0ViaVariant1Integration {
@@ -100,35 +68,24 @@ class UpdateProjectResponseCreatorVariant0ViaVariant1Integration {
   final String configurationId;
   final String integrationId;
 
-  const UpdateProjectResponseCreatorVariant0ViaVariant1Integration(
-      {required this.configurationId, required this.integrationId});
+  const UpdateProjectResponseCreatorVariant0ViaVariant1Integration({required this.configurationId, required this.integrationId});
 
-  UpdateProjectResponseCreatorVariant0ViaVariant1Integration Function(
-      {String configurationId, String integrationId}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant0ViaVariant1Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant0ViaVariant1Integration _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant1Integration(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-      );
+  UpdateProjectResponseCreatorVariant0ViaVariant1Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant0ViaVariant1Integration(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+  );
 
-  factory UpdateProjectResponseCreatorVariant0ViaVariant1Integration.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant1Integration(
-        configurationId: (json['configurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-      );
+  factory UpdateProjectResponseCreatorVariant0ViaVariant1Integration.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant0ViaVariant1Integration(
+    configurationId: (json['configurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'integrationId': integrationId,
-      };
+    'configurationId': configurationId,
+    'integrationId': integrationId,
+  };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
@@ -138,44 +95,24 @@ class UpdateProjectResponseCreatorVariant0ViaVariant1 {
   final UpdateProjectResponseCreatorVariant0ViaVariant1Integration integration;
   final UpdateProjectResponseCreatorVariant0ViaVariant1Type type_;
 
-  const UpdateProjectResponseCreatorVariant0ViaVariant1(
-      {required this.integration, required this.type_});
+  const UpdateProjectResponseCreatorVariant0ViaVariant1({required this.integration, required this.type_});
 
-  UpdateProjectResponseCreatorVariant0ViaVariant1 Function(
-      {UpdateProjectResponseCreatorVariant0ViaVariant1Integration integration,
-      UpdateProjectResponseCreatorVariant0ViaVariant1Type
-          type_}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant0ViaVariant1 Function({UpdateProjectResponseCreatorVariant0ViaVariant1Integration integration, UpdateProjectResponseCreatorVariant0ViaVariant1Type type_}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant0ViaVariant1 _copyWith(
-          {Object? integration = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant1(
-        integration: identical(integration, sdkOmittedValue)
-            ? this.integration
-            : integration
-                as UpdateProjectResponseCreatorVariant0ViaVariant1Integration,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateProjectResponseCreatorVariant0ViaVariant1Type,
-      );
+  UpdateProjectResponseCreatorVariant0ViaVariant1 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant0ViaVariant1(
+    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as UpdateProjectResponseCreatorVariant0ViaVariant1Integration,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseCreatorVariant0ViaVariant1Type,
+  );
 
-  factory UpdateProjectResponseCreatorVariant0ViaVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant0ViaVariant1(
-        integration: (json['integration'] != null
-            ? UpdateProjectResponseCreatorVariant0ViaVariant1Integration
-                .fromJson(json['integration'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateProjectResponseCreatorVariant0ViaVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UpdateProjectResponseCreatorVariant0ViaVariant1.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant0ViaVariant1(
+    integration: (json['integration'] != null ? UpdateProjectResponseCreatorVariant0ViaVariant1Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? UpdateProjectResponseCreatorVariant0ViaVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'integration': integration.toJson(),
-        'type': type_.toJson(),
-      };
+    'integration': integration.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 sealed class UpdateProjectResponseCreatorVariant0Via {
@@ -184,55 +121,26 @@ sealed class UpdateProjectResponseCreatorVariant0Via {
   const UpdateProjectResponseCreatorVariant0Via();
   factory UpdateProjectResponseCreatorVariant0Via.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateProjectResponseCreatorVariant0ViaVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateProjectResponseCreatorVariant0ViaVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateProjectResponseCreatorVariant0ViaVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0(value); } } catch (_) {}
+      try { final value = UpdateProjectResponseCreatorVariant0ViaVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1(value); } } catch (_) {}
     }
-    try {
-      return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0(
-          UpdateProjectResponseCreatorVariant0ViaVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1(
-          UpdateProjectResponseCreatorVariant0ViaVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateProjectResponseCreatorVariant0Via");
+    try { return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0(UpdateProjectResponseCreatorVariant0ViaVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1(UpdateProjectResponseCreatorVariant0ViaVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateProjectResponseCreatorVariant0Via");
   }
   Object? toJson();
 }
 
-final class UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0
-    extends UpdateProjectResponseCreatorVariant0Via {
+final class UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0 extends UpdateProjectResponseCreatorVariant0Via {
   final UpdateProjectResponseCreatorVariant0ViaVariant0 value;
-  const UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1
-    extends UpdateProjectResponseCreatorVariant0Via {
+final class UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1 extends UpdateProjectResponseCreatorVariant0Via {
   final UpdateProjectResponseCreatorVariant0ViaVariant1 value;
-  const UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateProjectResponseCreatorVariant0ViaUpdateProjectResponseCreatorVariant0ViaVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class UpdateProjectResponseCreatorVariant0User {
@@ -242,24 +150,19 @@ class UpdateProjectResponseCreatorVariant0User {
 
   const UpdateProjectResponseCreatorVariant0User({required this.id});
 
-  UpdateProjectResponseCreatorVariant0User Function({String id}) get copyWith =>
-      _copyWith;
+  UpdateProjectResponseCreatorVariant0User Function({String id}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant0User _copyWith(
-          {Object? id = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant0User(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UpdateProjectResponseCreatorVariant0User _copyWith({Object? id = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant0User(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UpdateProjectResponseCreatorVariant0User.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant0User(
-        id: (json['id'] as String?)!,
-      );
+  factory UpdateProjectResponseCreatorVariant0User.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant0User(
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-      };
+    'id': id,
+  };
 }
 
 class UpdateProjectResponseCreatorVariant0 {
@@ -269,95 +172,58 @@ class UpdateProjectResponseCreatorVariant0 {
   final dynamic via;
   final UpdateProjectResponseCreatorVariant0User user;
 
-  const UpdateProjectResponseCreatorVariant0(
-      {required this.type_, required this.via, required this.user});
+  const UpdateProjectResponseCreatorVariant0({required this.type_, required this.via, required this.user});
 
-  UpdateProjectResponseCreatorVariant0 Function(
-      {UpdateProjectResponseCreatorVariant0Type type_,
-      dynamic via,
-      UpdateProjectResponseCreatorVariant0User user}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant0 Function({UpdateProjectResponseCreatorVariant0Type type_, dynamic via, UpdateProjectResponseCreatorVariant0User user}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? via = sdkOmittedValue,
-          Object? user = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateProjectResponseCreatorVariant0Type,
-        via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
-        user: identical(user, sdkOmittedValue)
-            ? this.user
-            : user as UpdateProjectResponseCreatorVariant0User,
-      );
+  UpdateProjectResponseCreatorVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? via = sdkOmittedValue, Object? user = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseCreatorVariant0Type,
+    via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
+    user: identical(user, sdkOmittedValue) ? this.user : user as UpdateProjectResponseCreatorVariant0User,
+  );
 
-  factory UpdateProjectResponseCreatorVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant0(
-        type_: (json['type'] != null
-            ? UpdateProjectResponseCreatorVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        via: json.containsKey('via')
-            ? json['via']
-            : throw ArgumentError.value(
-                null, 'via', 'Required property is missing'),
-        user: (json['user'] != null
-            ? UpdateProjectResponseCreatorVariant0User.fromJson(
-                json['user'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UpdateProjectResponseCreatorVariant0.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant0(
+    type_: (json['type'] != null ? UpdateProjectResponseCreatorVariant0Type.fromJson(json['type'] as String) : null)!,
+    via: json.containsKey('via') ? json['via'] : throw ArgumentError.value(null, 'via', 'Required property is missing'),
+    user: (json['user'] != null ? UpdateProjectResponseCreatorVariant0User.fromJson(json['user'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'via': via,
-        'user': user.toJson(),
-      };
+    'type': type_.toJson(),
+    'via': via,
+    'user': user.toJson(),
+  };
 }
 
 class UpdateProjectResponseCreatorVariant1App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
-
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const UpdateProjectResponseCreatorVariant1App(
-      {this.clientId = const SdkOmitted(), required this.id});
+  const UpdateProjectResponseCreatorVariant1App({this.clientId = const SdkOmitted(), required this.id});
 
-  UpdateProjectResponseCreatorVariant1App Function(
-      {SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant1App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant1App _copyWith(
-          {Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant1App(
-        clientId: identical(clientId, sdkOmittedValue)
-            ? this.clientId
-            : clientId as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UpdateProjectResponseCreatorVariant1App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant1App(
+    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UpdateProjectResponseCreatorVariant1App.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant1App(
-        clientId: json['clientId'] != null
-            ? SdkPresent((json['clientId'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-      );
+  factory UpdateProjectResponseCreatorVariant1App.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant1App(
+    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (clientId) {
-          SdkPresent<String>(value: final value) => {
-              'clientId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-      };
+    ...switch (clientId) {
+      SdkPresent<String>(value: final value) => {'clientId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+  };
 }
 
 class UpdateProjectResponseCreatorVariant1 {
@@ -366,42 +232,24 @@ class UpdateProjectResponseCreatorVariant1 {
   final UpdateProjectResponseCreatorVariant1App app;
   final UpdateProjectResponseCreatorVariant1Type type_;
 
-  const UpdateProjectResponseCreatorVariant1(
-      {required this.app, required this.type_});
+  const UpdateProjectResponseCreatorVariant1({required this.app, required this.type_});
 
-  UpdateProjectResponseCreatorVariant1 Function(
-          {UpdateProjectResponseCreatorVariant1App app,
-          UpdateProjectResponseCreatorVariant1Type type_})
-      get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant1 Function({UpdateProjectResponseCreatorVariant1App app, UpdateProjectResponseCreatorVariant1Type type_}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant1 _copyWith(
-          {Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant1(
-        app: identical(app, sdkOmittedValue)
-            ? this.app
-            : app as UpdateProjectResponseCreatorVariant1App,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateProjectResponseCreatorVariant1Type,
-      );
+  UpdateProjectResponseCreatorVariant1 _copyWith({Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant1(
+    app: identical(app, sdkOmittedValue) ? this.app : app as UpdateProjectResponseCreatorVariant1App,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseCreatorVariant1Type,
+  );
 
-  factory UpdateProjectResponseCreatorVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant1(
-        app: (json['app'] != null
-            ? UpdateProjectResponseCreatorVariant1App.fromJson(
-                json['app'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateProjectResponseCreatorVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UpdateProjectResponseCreatorVariant1.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant1(
+    app: (json['app'] != null ? UpdateProjectResponseCreatorVariant1App.fromJson(json['app'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? UpdateProjectResponseCreatorVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'app': app.toJson(),
-        'type': type_.toJson(),
-      };
+    'app': app.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class UpdateProjectResponseCreatorVariant2Integration {
@@ -410,33 +258,22 @@ class UpdateProjectResponseCreatorVariant2Integration {
   final String configurationId;
   final String integrationId;
 
-  const UpdateProjectResponseCreatorVariant2Integration(
-      {required this.configurationId, required this.integrationId});
+  const UpdateProjectResponseCreatorVariant2Integration({required this.configurationId, required this.integrationId});
 
-  UpdateProjectResponseCreatorVariant2Integration Function(
-      {String configurationId, String integrationId}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant2Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant2Integration _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue}) =>
-      UpdateProjectResponseCreatorVariant2Integration(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-      );
+  UpdateProjectResponseCreatorVariant2Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant2Integration(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+  );
 
-  factory UpdateProjectResponseCreatorVariant2Integration.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseCreatorVariant2Integration(
-        configurationId: (json['configurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-      );
+  factory UpdateProjectResponseCreatorVariant2Integration.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant2Integration(
+    configurationId: (json['configurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'integrationId': integrationId,
-      };
+    'configurationId': configurationId,
+    'integrationId': integrationId,
+  };
 }

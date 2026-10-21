@@ -8,453 +8,261 @@ part of 'user.dart';
 class UserEventPayloadVariant187 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `fromDeploymentId` wire field.
   final String fromDeploymentId;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
-
   /// Optional `string` value serialized in the `reason` wire field.
   final SdkOptional<String> reason;
-
   /// Required `string` value serialized in the `toDeploymentId` wire field.
   final String toDeploymentId;
 
-  const UserEventPayloadVariant187(
-      {required this.fromDeploymentId,
-      required this.projectId,
-      required this.projectName,
-      this.reason = const SdkOmitted(),
-      required this.toDeploymentId});
+  const UserEventPayloadVariant187({required this.fromDeploymentId, required this.projectId, required this.projectName, this.reason = const SdkOmitted(), required this.toDeploymentId});
 
-  UserEventPayloadVariant187 Function(
-      {String fromDeploymentId,
-      String projectId,
-      String projectName,
-      SdkOptional<String> reason,
-      String toDeploymentId}) get copyWith => _copyWith;
+  UserEventPayloadVariant187 Function({String fromDeploymentId, String projectId, String projectName, SdkOptional<String> reason, String toDeploymentId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant187 _copyWith(
-          {Object? fromDeploymentId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? reason = sdkOmittedValue,
-          Object? toDeploymentId = sdkOmittedValue}) =>
-      UserEventPayloadVariant187(
-        fromDeploymentId: identical(fromDeploymentId, sdkOmittedValue)
-            ? this.fromDeploymentId
-            : fromDeploymentId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-        reason: identical(reason, sdkOmittedValue)
-            ? this.reason
-            : reason as SdkOptional<String>,
-        toDeploymentId: identical(toDeploymentId, sdkOmittedValue)
-            ? this.toDeploymentId
-            : toDeploymentId as String,
-      );
+  UserEventPayloadVariant187 _copyWith({Object? fromDeploymentId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? toDeploymentId = sdkOmittedValue}) => UserEventPayloadVariant187(
+    fromDeploymentId: identical(fromDeploymentId, sdkOmittedValue) ? this.fromDeploymentId : fromDeploymentId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<String>,
+    toDeploymentId: identical(toDeploymentId, sdkOmittedValue) ? this.toDeploymentId : toDeploymentId as String,
+  );
 
-  factory UserEventPayloadVariant187.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant187(
-        fromDeploymentId: (json['fromDeploymentId'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-        reason: json['reason'] != null
-            ? SdkPresent((json['reason'] as String?)!)
-            : const SdkOmitted(),
-        toDeploymentId: (json['toDeploymentId'] as String?)!,
-      );
+  factory UserEventPayloadVariant187.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant187(
+    fromDeploymentId: (json['fromDeploymentId'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+    reason: json['reason'] != null ? SdkPresent((json['reason'] as String?)!) : const SdkOmitted(),
+    toDeploymentId: (json['toDeploymentId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'fromDeploymentId': fromDeploymentId,
-        'projectId': projectId,
-        'projectName': projectName,
-        ...switch (reason) {
-          SdkPresent<String>(value: final value) => {
-              'reason': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'toDeploymentId': toDeploymentId,
-      };
+    'fromDeploymentId': fromDeploymentId,
+    'projectId': projectId,
+    'projectName': projectName,
+    ...switch (reason) {
+      SdkPresent<String>(value: final value) => {'reason': value,},
+      _ => const <String, dynamic>{},
+    },
+    'toDeploymentId': toDeploymentId,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant188 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
-
   /// Required `string` value serialized in the `integrationId` wire field.
   final String integrationId;
-
   /// Required `string` value serialized in the `integrationName` wire field.
   final String integrationName;
-
   /// Required `string` value serialized in the `integrationSlug` wire field.
   final String integrationSlug;
 
-  const UserEventPayloadVariant188(
-      {required this.configurationId,
-      required this.integrationId,
-      required this.integrationName,
-      required this.integrationSlug});
+  const UserEventPayloadVariant188({required this.configurationId, required this.integrationId, required this.integrationName, required this.integrationSlug});
 
-  UserEventPayloadVariant188 Function(
-      {String configurationId,
-      String integrationId,
-      String integrationName,
-      String integrationSlug}) get copyWith => _copyWith;
+  UserEventPayloadVariant188 Function({String configurationId, String integrationId, String integrationName, String integrationSlug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant188 _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue,
-          Object? integrationName = sdkOmittedValue,
-          Object? integrationSlug = sdkOmittedValue}) =>
-      UserEventPayloadVariant188(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-        integrationName: identical(integrationName, sdkOmittedValue)
-            ? this.integrationName
-            : integrationName as String,
-        integrationSlug: identical(integrationSlug, sdkOmittedValue)
-            ? this.integrationSlug
-            : integrationSlug as String,
-      );
+  UserEventPayloadVariant188 _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationName = sdkOmittedValue, Object? integrationSlug = sdkOmittedValue}) => UserEventPayloadVariant188(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    integrationName: identical(integrationName, sdkOmittedValue) ? this.integrationName : integrationName as String,
+    integrationSlug: identical(integrationSlug, sdkOmittedValue) ? this.integrationSlug : integrationSlug as String,
+  );
 
-  factory UserEventPayloadVariant188.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant188(
-        configurationId: (json['configurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-        integrationName: (json['integrationName'] as String?)!,
-        integrationSlug: (json['integrationSlug'] as String?)!,
-      );
+  factory UserEventPayloadVariant188.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant188(
+    configurationId: (json['configurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+    integrationName: (json['integrationName'] as String?)!,
+    integrationSlug: (json['integrationSlug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'integrationId': integrationId,
-        'integrationName': integrationName,
-        'integrationSlug': integrationSlug,
-      };
+    'configurationId': configurationId,
+    'integrationId': integrationId,
+    'integrationName': integrationName,
+    'integrationSlug': integrationSlug,
+  };
 }
 
 /// Required object value serialized in the `newOwner` wire field.
 class UserEventPayloadVariant189NewOwner {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventPayloadVariant189NewOwner(
-      {required this.id, required this.username});
+  const UserEventPayloadVariant189NewOwner({required this.id, required this.username});
 
-  UserEventPayloadVariant189NewOwner Function({String id, String username})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant189NewOwner Function({String id, String username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant189NewOwner _copyWith(
-          {Object? id = sdkOmittedValue, Object? username = sdkOmittedValue}) =>
-      UserEventPayloadVariant189NewOwner(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  UserEventPayloadVariant189NewOwner _copyWith({Object? id = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant189NewOwner(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory UserEventPayloadVariant189NewOwner.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant189NewOwner(
-        id: (json['id'] as String?)!,
-        username: (json['username'] as String?)!,
-      );
+  factory UserEventPayloadVariant189NewOwner.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant189NewOwner(
+    id: (json['id'] as String?)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'username': username,
-      };
+    'id': id,
+    'username': username,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant189 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
-
   /// Required `string` value serialized in the `integrationId` wire field.
   final String integrationId;
-
   /// Optional `string` value serialized in the `integrationName` wire field.
   final SdkOptional<String> integrationName;
-
   /// Required `string` value serialized in the `integrationSlug` wire field.
   final String integrationSlug;
-
   /// Required object value serialized in the `newOwner` wire field.
   final UserEventPayloadVariant189NewOwner? newOwner;
-
   /// Required `string` value serialized in the `userId` wire field.
   final String userId;
 
-  const UserEventPayloadVariant189(
-      {required this.configurationId,
-      required this.integrationId,
-      this.integrationName = const SdkOmitted(),
-      required this.integrationSlug,
-      required this.newOwner,
-      required this.userId});
+  const UserEventPayloadVariant189({required this.configurationId, required this.integrationId, this.integrationName = const SdkOmitted(), required this.integrationSlug, required this.newOwner, required this.userId});
 
-  UserEventPayloadVariant189 Function(
-      {String configurationId,
-      String integrationId,
-      SdkOptional<String> integrationName,
-      String integrationSlug,
-      UserEventPayloadVariant189NewOwner? newOwner,
-      String userId}) get copyWith => _copyWith;
+  UserEventPayloadVariant189 Function({String configurationId, String integrationId, SdkOptional<String> integrationName, String integrationSlug, UserEventPayloadVariant189NewOwner? newOwner, String userId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant189 _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue,
-          Object? integrationName = sdkOmittedValue,
-          Object? integrationSlug = sdkOmittedValue,
-          Object? newOwner = sdkOmittedValue,
-          Object? userId = sdkOmittedValue}) =>
-      UserEventPayloadVariant189(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-        integrationName: identical(integrationName, sdkOmittedValue)
-            ? this.integrationName
-            : integrationName as SdkOptional<String>,
-        integrationSlug: identical(integrationSlug, sdkOmittedValue)
-            ? this.integrationSlug
-            : integrationSlug as String,
-        newOwner: identical(newOwner, sdkOmittedValue)
-            ? this.newOwner
-            : newOwner as UserEventPayloadVariant189NewOwner?,
-        userId:
-            identical(userId, sdkOmittedValue) ? this.userId : userId as String,
-      );
+  UserEventPayloadVariant189 _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationName = sdkOmittedValue, Object? integrationSlug = sdkOmittedValue, Object? newOwner = sdkOmittedValue, Object? userId = sdkOmittedValue}) => UserEventPayloadVariant189(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    integrationName: identical(integrationName, sdkOmittedValue) ? this.integrationName : integrationName as SdkOptional<String>,
+    integrationSlug: identical(integrationSlug, sdkOmittedValue) ? this.integrationSlug : integrationSlug as String,
+    newOwner: identical(newOwner, sdkOmittedValue) ? this.newOwner : newOwner as UserEventPayloadVariant189NewOwner?,
+    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as String,
+  );
 
-  factory UserEventPayloadVariant189.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant189(
-        configurationId: (json['configurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-        integrationName: json['integrationName'] != null
-            ? SdkPresent((json['integrationName'] as String?)!)
-            : const SdkOmitted(),
-        integrationSlug: (json['integrationSlug'] as String?)!,
-        newOwner: json.containsKey('newOwner')
-            ? json['newOwner'] != null
-                ? UserEventPayloadVariant189NewOwner.fromJson(
-                    json['newOwner'] as Map<String, dynamic>)
-                : null
-            : throw ArgumentError.value(
-                null, 'newOwner', 'Required property is missing'),
-        userId: (json['userId'] as String?)!,
-      );
+  factory UserEventPayloadVariant189.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant189(
+    configurationId: (json['configurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+    integrationName: json['integrationName'] != null ? SdkPresent((json['integrationName'] as String?)!) : const SdkOmitted(),
+    integrationSlug: (json['integrationSlug'] as String?)!,
+    newOwner: json.containsKey('newOwner') ? json['newOwner'] != null ? UserEventPayloadVariant189NewOwner.fromJson(json['newOwner'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'newOwner', 'Required property is missing'),
+    userId: (json['userId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'integrationId': integrationId,
-        ...switch (integrationName) {
-          SdkPresent<String>(value: final value) => {
-              'integrationName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'integrationSlug': integrationSlug,
-        'newOwner': newOwner?.toJson(),
-        'userId': userId,
-      };
+    'configurationId': configurationId,
+    'integrationId': integrationId,
+    ...switch (integrationName) {
+      SdkPresent<String>(value: final value) => {'integrationName': value,},
+      _ => const <String, dynamic>{},
+    },
+    'integrationSlug': integrationSlug,
+    'newOwner': newOwner?.toJson(),
+    'userId': userId,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant190 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
-
   /// Required array value serialized in the `confirmedScopes` wire field.
   final List<String> confirmedScopes;
-
   /// Required `string` value serialized in the `integrationId` wire field.
   final String integrationId;
-
   /// Required `string` value serialized in the `integrationName` wire field.
   final String integrationName;
-
   /// Required `string` value serialized in the `integrationSlug` wire field.
   final String integrationSlug;
-
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
-
   /// Optional array value serialized in the `projectIds` wire field.
   final SdkOptional<List<String>> projectIds;
 
-  const UserEventPayloadVariant190(
-      {required this.configurationId,
-      required this.confirmedScopes,
-      required this.integrationId,
-      required this.integrationName,
-      required this.integrationSlug,
-      required this.ownerId,
-      this.projectIds = const SdkOmitted()});
+  const UserEventPayloadVariant190({required this.configurationId, required this.confirmedScopes, required this.integrationId, required this.integrationName, required this.integrationSlug, required this.ownerId, this.projectIds = const SdkOmitted()});
 
-  UserEventPayloadVariant190 Function(
-      {String configurationId,
-      List<String> confirmedScopes,
-      String integrationId,
-      String integrationName,
-      String integrationSlug,
-      String ownerId,
-      SdkOptional<List<String>> projectIds}) get copyWith => _copyWith;
+  UserEventPayloadVariant190 Function({String configurationId, List<String> confirmedScopes, String integrationId, String integrationName, String integrationSlug, String ownerId, SdkOptional<List<String>> projectIds}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant190 _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? confirmedScopes = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue,
-          Object? integrationName = sdkOmittedValue,
-          Object? integrationSlug = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue}) =>
-      UserEventPayloadVariant190(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        confirmedScopes: identical(confirmedScopes, sdkOmittedValue)
-            ? this.confirmedScopes
-            : confirmedScopes as List<String>,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-        integrationName: identical(integrationName, sdkOmittedValue)
-            ? this.integrationName
-            : integrationName as String,
-        integrationSlug: identical(integrationSlug, sdkOmittedValue)
-            ? this.integrationSlug
-            : integrationSlug as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-      );
+  UserEventPayloadVariant190 _copyWith({Object? configurationId = sdkOmittedValue, Object? confirmedScopes = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationName = sdkOmittedValue, Object? integrationSlug = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectIds = sdkOmittedValue}) => UserEventPayloadVariant190(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    confirmedScopes: identical(confirmedScopes, sdkOmittedValue) ? this.confirmedScopes : confirmedScopes as List<String>,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    integrationName: identical(integrationName, sdkOmittedValue) ? this.integrationName : integrationName as String,
+    integrationSlug: identical(integrationSlug, sdkOmittedValue) ? this.integrationSlug : integrationSlug as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+  );
 
-  factory UserEventPayloadVariant190.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant190(
-        configurationId: (json['configurationId'] as String?)!,
-        confirmedScopes: ((json['confirmedScopes'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-        integrationId: (json['integrationId'] as String?)!,
-        integrationName: (json['integrationName'] as String?)!,
-        integrationSlug: (json['integrationSlug'] as String?)!,
-        ownerId: (json['ownerId'] as String?)!,
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant190.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant190(
+    configurationId: (json['configurationId'] as String?)!,
+    confirmedScopes: ((json['confirmedScopes'] as List?)?.map((e) => e as String).toList())!,
+    integrationId: (json['integrationId'] as String?)!,
+    integrationName: (json['integrationName'] as String?)!,
+    integrationSlug: (json['integrationSlug'] as String?)!,
+    ownerId: (json['ownerId'] as String?)!,
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'confirmedScopes': confirmedScopes,
-        'integrationId': integrationId,
-        'integrationName': integrationName,
-        'integrationSlug': integrationSlug,
-        'ownerId': ownerId,
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'configurationId': configurationId,
+    'confirmedScopes': confirmedScopes,
+    'integrationId': integrationId,
+    'integrationName': integrationName,
+    'integrationSlug': integrationSlug,
+    'ownerId': ownerId,
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `integration` wire field.
 class UserEventPayloadVariant191Integration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `name` wire field.
   final String name;
-
   /// Required `string` value serialized in the `slug` wire field.
   final String slug;
 
-  const UserEventPayloadVariant191Integration(
-      {required this.configurationId,
-      required this.id,
-      required this.name,
-      required this.slug});
+  const UserEventPayloadVariant191Integration({required this.configurationId, required this.id, required this.name, required this.slug});
 
-  UserEventPayloadVariant191Integration Function(
-      {String configurationId,
-      String id,
-      String name,
-      String slug}) get copyWith => _copyWith;
+  UserEventPayloadVariant191Integration Function({String configurationId, String id, String name, String slug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant191Integration _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? slug = sdkOmittedValue}) =>
-      UserEventPayloadVariant191Integration(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-      );
+  UserEventPayloadVariant191Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? slug = sdkOmittedValue}) => UserEventPayloadVariant191Integration(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+  );
 
-  factory UserEventPayloadVariant191Integration.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant191Integration(
-        configurationId: (json['configurationId'] as String?)!,
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        slug: (json['slug'] as String?)!,
-      );
+  factory UserEventPayloadVariant191Integration.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant191Integration(
+    configurationId: (json['configurationId'] as String?)!,
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    slug: (json['slug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'id': id,
-        'name': name,
-        'slug': slug,
-      };
+    'configurationId': configurationId,
+    'id': id,
+    'name': name,
+    'slug': slug,
+  };
 }

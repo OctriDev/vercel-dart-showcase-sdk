@@ -10,61 +10,32 @@ sealed class GetDomainContactVerificationResponse {
   const GetDomainContactVerificationResponse();
   factory GetDomainContactVerificationResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = ContactVerified.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDomainContactVerificationResponseContactVerified(value);
-        }
-      } catch (_) {}
-      try {
-        final value = ContactPendingVerification.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDomainContactVerificationResponseContactPendingVerification(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ContactVerified.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDomainContactVerificationResponseContactVerified(value); } } catch (_) {}
+      try { final value = ContactPendingVerification.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDomainContactVerificationResponseContactPendingVerification(value); } } catch (_) {}
     }
-    try {
-      return GetDomainContactVerificationResponseContactVerified(
-          ContactVerified.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDomainContactVerificationResponseContactPendingVerification(
-          ContactPendingVerification.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    if (json is Map<String, dynamic> &&
-        json["verified"] is String &&
-        !const {"true", "false"}.contains(json["verified"])) {
-      return UnknownGetDomainContactVerificationResponse(json);
-    }
-    throw FormatException(
-        "No variant matched for GetDomainContactVerificationResponse");
+    try { return GetDomainContactVerificationResponseContactVerified(ContactVerified.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDomainContactVerificationResponseContactPendingVerification(ContactPendingVerification.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    if (json is Map<String, dynamic> && json["verified"] is String && !const {"true", "false"}.contains(json["verified"])) { return UnknownGetDomainContactVerificationResponse(json); }
+    throw FormatException("No variant matched for GetDomainContactVerificationResponse");
   }
   Object? toJson();
 }
 
-final class GetDomainContactVerificationResponseContactVerified
-    extends GetDomainContactVerificationResponse {
+final class GetDomainContactVerificationResponseContactVerified extends GetDomainContactVerificationResponse {
   final ContactVerified value;
   const GetDomainContactVerificationResponseContactVerified(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDomainContactVerificationResponseContactPendingVerification
-    extends GetDomainContactVerificationResponse {
+final class GetDomainContactVerificationResponseContactPendingVerification extends GetDomainContactVerificationResponse {
   final ContactPendingVerification value;
-  const GetDomainContactVerificationResponseContactPendingVerification(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDomainContactVerificationResponseContactPendingVerification(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// A [GetDomainContactVerificationResponse] whose `verified` names no branch this SDK knows, kept as received.
-final class UnknownGetDomainContactVerificationResponse
-    extends GetDomainContactVerificationResponse {
+final class UnknownGetDomainContactVerificationResponse extends GetDomainContactVerificationResponse {
   final Map<String, dynamic> raw;
   const UnknownGetDomainContactVerificationResponse(this.raw);
-  @override
-  Object? toJson() => raw;
+  @override Object? toJson() => raw;
 }

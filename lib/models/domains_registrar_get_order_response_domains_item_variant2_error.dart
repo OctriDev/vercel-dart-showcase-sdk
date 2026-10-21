@@ -10,253 +10,98 @@ sealed class GetOrderResponseDomainsItemVariant2Error {
   const GetOrderResponseDomainsItemVariant2Error();
   factory GetOrderResponseDomainsItemVariant2Error.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant5.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant6.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant7.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant8.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant9.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetOrderResponseDomainsItemVariant2ErrorVariant10.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant8.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant9.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2ErrorVariant10.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10(value); } } catch (_) {}
     }
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0(
-          GetOrderResponseDomainsItemVariant2ErrorVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1(
-          GetOrderResponseDomainsItemVariant2ErrorVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2(
-          GetOrderResponseDomainsItemVariant2ErrorVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3(
-          GetOrderResponseDomainsItemVariant2ErrorVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4(
-          GetOrderResponseDomainsItemVariant2ErrorVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5(
-          GetOrderResponseDomainsItemVariant2ErrorVariant5.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6(
-          GetOrderResponseDomainsItemVariant2ErrorVariant6.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7(
-          GetOrderResponseDomainsItemVariant2ErrorVariant7.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8(
-          GetOrderResponseDomainsItemVariant2ErrorVariant8.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9(
-          GetOrderResponseDomainsItemVariant2ErrorVariant9.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10(
-          GetOrderResponseDomainsItemVariant2ErrorVariant10.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetOrderResponseDomainsItemVariant2Error");
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0(GetOrderResponseDomainsItemVariant2ErrorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1(GetOrderResponseDomainsItemVariant2ErrorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2(GetOrderResponseDomainsItemVariant2ErrorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3(GetOrderResponseDomainsItemVariant2ErrorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4(GetOrderResponseDomainsItemVariant2ErrorVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5(GetOrderResponseDomainsItemVariant2ErrorVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6(GetOrderResponseDomainsItemVariant2ErrorVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7(GetOrderResponseDomainsItemVariant2ErrorVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8(GetOrderResponseDomainsItemVariant2ErrorVariant8.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9(GetOrderResponseDomainsItemVariant2ErrorVariant9.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10(GetOrderResponseDomainsItemVariant2ErrorVariant10.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetOrderResponseDomainsItemVariant2Error");
   }
   Object? toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant0 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant1 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant2 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant3 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant4 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant5 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant5(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant6 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant6(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant7 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant7(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant8 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant8(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant9 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant9(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10
-    extends GetOrderResponseDomainsItemVariant2Error {
+final class GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10 extends GetOrderResponseDomainsItemVariant2Error {
   final GetOrderResponseDomainsItemVariant2ErrorVariant10 value;
-  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant2ErrorGetOrderResponseDomainsItemVariant2ErrorVariant10(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetOrderResponseDomainsItemVariant2 {
@@ -264,96 +109,50 @@ class GetOrderResponseDomainsItemVariant2 {
   static const String constructionSurface = 'named';
   final GetOrderResponseDomainsItemVariant2PurchaseType purchaseType;
   final bool autoRenew;
-
   /// The number of years the domain is being transferred for.
   final double years;
-
   /// A valid domain name
   final String domainName;
   final GetOrderResponseDomainsItemVariant2Status status;
   final double price;
   final SdkOptional<dynamic> error;
 
-  const GetOrderResponseDomainsItemVariant2(
-      {required this.purchaseType,
-      required this.autoRenew,
-      required this.years,
-      required this.domainName,
-      required this.status,
-      required this.price,
-      this.error = const SdkOmitted()});
+  const GetOrderResponseDomainsItemVariant2({required this.purchaseType, required this.autoRenew, required this.years, required this.domainName, required this.status, required this.price, this.error = const SdkOmitted()});
 
-  GetOrderResponseDomainsItemVariant2 Function(
-      {GetOrderResponseDomainsItemVariant2PurchaseType purchaseType,
-      bool autoRenew,
-      double years,
-      String domainName,
-      GetOrderResponseDomainsItemVariant2Status status,
-      double price,
-      SdkOptional<dynamic> error}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant2 Function({GetOrderResponseDomainsItemVariant2PurchaseType purchaseType, bool autoRenew, double years, String domainName, GetOrderResponseDomainsItemVariant2Status status, double price, SdkOptional<dynamic> error}) get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant2 _copyWith(
-          {Object? purchaseType = sdkOmittedValue,
-          Object? autoRenew = sdkOmittedValue,
-          Object? years = sdkOmittedValue,
-          Object? domainName = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? price = sdkOmittedValue,
-          Object? error = sdkOmittedValue}) =>
-      GetOrderResponseDomainsItemVariant2(
-        purchaseType: identical(purchaseType, sdkOmittedValue)
-            ? this.purchaseType
-            : purchaseType as GetOrderResponseDomainsItemVariant2PurchaseType,
-        autoRenew: identical(autoRenew, sdkOmittedValue)
-            ? this.autoRenew
-            : autoRenew as bool,
-        years: identical(years, sdkOmittedValue) ? this.years : years as double,
-        domainName: identical(domainName, sdkOmittedValue)
-            ? this.domainName
-            : domainName as String,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as GetOrderResponseDomainsItemVariant2Status,
-        price: identical(price, sdkOmittedValue) ? this.price : price as double,
-        error: identical(error, sdkOmittedValue)
-            ? this.error
-            : error as SdkOptional<dynamic>,
-      );
+  GetOrderResponseDomainsItemVariant2 _copyWith({Object? purchaseType = sdkOmittedValue, Object? autoRenew = sdkOmittedValue, Object? years = sdkOmittedValue, Object? domainName = sdkOmittedValue, Object? status = sdkOmittedValue, Object? price = sdkOmittedValue, Object? error = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant2(
+    purchaseType: identical(purchaseType, sdkOmittedValue) ? this.purchaseType : purchaseType as GetOrderResponseDomainsItemVariant2PurchaseType,
+    autoRenew: identical(autoRenew, sdkOmittedValue) ? this.autoRenew : autoRenew as bool,
+    years: identical(years, sdkOmittedValue) ? this.years : years as double,
+    domainName: identical(domainName, sdkOmittedValue) ? this.domainName : domainName as String,
+    status: identical(status, sdkOmittedValue) ? this.status : status as GetOrderResponseDomainsItemVariant2Status,
+    price: identical(price, sdkOmittedValue) ? this.price : price as double,
+    error: identical(error, sdkOmittedValue) ? this.error : error as SdkOptional<dynamic>,
+  );
 
-  factory GetOrderResponseDomainsItemVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetOrderResponseDomainsItemVariant2(
-        purchaseType: (json['purchaseType'] != null
-            ? GetOrderResponseDomainsItemVariant2PurchaseType.fromJson(
-                json['purchaseType'] as String)
-            : null)!,
-        autoRenew: (json['autoRenew'] as bool?)!,
-        years: ((json['years'] as num?)?.toDouble())!,
-        domainName: (json['domainName'] as String?)!,
-        status: (json['status'] != null
-            ? GetOrderResponseDomainsItemVariant2Status.fromJson(
-                json['status'] as String)
-            : null)!,
-        price: ((json['price'] as num?)?.toDouble())!,
-        error: json['error'] != null
-            ? SdkPresent((json['error'])!)
-            : const SdkOmitted(),
-      );
+  factory GetOrderResponseDomainsItemVariant2.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant2(
+    purchaseType: (json['purchaseType'] != null ? GetOrderResponseDomainsItemVariant2PurchaseType.fromJson(json['purchaseType'] as String) : null)!,
+    autoRenew: (json['autoRenew'] as bool?)!,
+    years: ((json['years'] as num?)?.toDouble())!,
+    domainName: (json['domainName'] as String?)!,
+    status: (json['status'] != null ? GetOrderResponseDomainsItemVariant2Status.fromJson(json['status'] as String) : null)!,
+    price: ((json['price'] as num?)?.toDouble())!,
+    error: json['error'] != null ? SdkPresent((json['error'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'purchaseType': purchaseType.toJson(),
-        'autoRenew': autoRenew,
-        'years': years,
-        'domainName': domainName,
-        'status': status.toJson(),
-        'price': price,
-        ...switch (error) {
-          SdkPresent<dynamic>(value: final value) => {
-              'error': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'purchaseType': purchaseType.toJson(),
+    'autoRenew': autoRenew,
+    'years': years,
+    'domainName': domainName,
+    'status': status.toJson(),
+    'price': price,
+    ...switch (error) {
+      SdkPresent<dynamic>(value: final value) => {'error': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class GetOrderResponseDomainsItem {
@@ -362,71 +161,32 @@ sealed class GetOrderResponseDomainsItem {
   const GetOrderResponseDomainsItem();
   factory GetOrderResponseDomainsItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetOrderResponseDomainsItemVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseDomainsItemVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseDomainsItemVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1(value); } } catch (_) {}
+      try { final value = GetOrderResponseDomainsItemVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2(value); } } catch (_) {}
     }
-    try {
-      return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0(
-          GetOrderResponseDomainsItemVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1(
-          GetOrderResponseDomainsItemVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2(
-          GetOrderResponseDomainsItemVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0(GetOrderResponseDomainsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1(GetOrderResponseDomainsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2(GetOrderResponseDomainsItemVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for GetOrderResponseDomainsItem");
   }
   Object? toJson();
 }
 
-final class GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0
-    extends GetOrderResponseDomainsItem {
+final class GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0 extends GetOrderResponseDomainsItem {
   final GetOrderResponseDomainsItemVariant0 value;
-  const GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1
-    extends GetOrderResponseDomainsItem {
+final class GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1 extends GetOrderResponseDomainsItem {
   final GetOrderResponseDomainsItemVariant1 value;
-  const GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2
-    extends GetOrderResponseDomainsItem {
+final class GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2 extends GetOrderResponseDomainsItem {
   final GetOrderResponseDomainsItemVariant2 value;
-  const GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemGetOrderResponseDomainsItemVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }

@@ -10,59 +10,32 @@ sealed class ListTeamFlagsV2ResponseDataItem {
   const ListTeamFlagsV2ResponseDataItem();
   factory ListTeamFlagsV2ResponseDataItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = Flag.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListTeamFlagsV2ResponseDataItemFlag(value);
-        }
-      } catch (_) {}
-      try {
-        final value = MarketplaceFlag.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListTeamFlagsV2ResponseDataItemMarketplaceFlag(value);
-        }
-      } catch (_) {}
+      try { final value = Flag.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListTeamFlagsV2ResponseDataItemFlag(value); } } catch (_) {}
+      try { final value = MarketplaceFlag.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListTeamFlagsV2ResponseDataItemMarketplaceFlag(value); } } catch (_) {}
     }
-    try {
-      return ListTeamFlagsV2ResponseDataItemFlag(
-          Flag.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListTeamFlagsV2ResponseDataItemMarketplaceFlag(
-          MarketplaceFlag.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    if (json is Map<String, dynamic> &&
-        json["typeName"] is String &&
-        !const {"flag", "marketplaceFlag"}.contains(json["typeName"])) {
-      return UnknownListTeamFlagsV2ResponseDataItem(json);
-    }
-    throw FormatException(
-        "No variant matched for ListTeamFlagsV2ResponseDataItem");
+    try { return ListTeamFlagsV2ResponseDataItemFlag(Flag.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListTeamFlagsV2ResponseDataItemMarketplaceFlag(MarketplaceFlag.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    if (json is Map<String, dynamic> && json["typeName"] is String && !const {"flag", "marketplaceFlag"}.contains(json["typeName"])) { return UnknownListTeamFlagsV2ResponseDataItem(json); }
+    throw FormatException("No variant matched for ListTeamFlagsV2ResponseDataItem");
   }
   Object? toJson();
 }
 
-final class ListTeamFlagsV2ResponseDataItemFlag
-    extends ListTeamFlagsV2ResponseDataItem {
+final class ListTeamFlagsV2ResponseDataItemFlag extends ListTeamFlagsV2ResponseDataItem {
   final Flag value;
   const ListTeamFlagsV2ResponseDataItemFlag(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListTeamFlagsV2ResponseDataItemMarketplaceFlag
-    extends ListTeamFlagsV2ResponseDataItem {
+final class ListTeamFlagsV2ResponseDataItemMarketplaceFlag extends ListTeamFlagsV2ResponseDataItem {
   final MarketplaceFlag value;
   const ListTeamFlagsV2ResponseDataItemMarketplaceFlag(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 /// A [ListTeamFlagsV2ResponseDataItem] whose `typeName` names no branch this SDK knows, kept as received.
-final class UnknownListTeamFlagsV2ResponseDataItem
-    extends ListTeamFlagsV2ResponseDataItem {
+final class UnknownListTeamFlagsV2ResponseDataItem extends ListTeamFlagsV2ResponseDataItem {
   final Map<String, dynamic> raw;
   const UnknownListTeamFlagsV2ResponseDataItem(this.raw);
-  @override
-  Object? toJson() => raw;
+  @override Object? toJson() => raw;
 }

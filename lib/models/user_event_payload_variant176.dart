@@ -8,54 +8,34 @@ part of 'user.dart';
 class UserEventPayloadVariant176 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required API value serialized in the `configVersion` wire field.
   final dynamic configVersion;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant176(
-      {required this.configVersion,
-      required this.projectId,
-      required this.projectName});
+  const UserEventPayloadVariant176({required this.configVersion, required this.projectId, required this.projectName});
 
-  UserEventPayloadVariant176 Function(
-      {dynamic configVersion,
-      String projectId,
-      String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant176 Function({dynamic configVersion, String projectId, String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant176 _copyWith(
-          {Object? configVersion = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant176(
-        configVersion: identical(configVersion, sdkOmittedValue)
-            ? this.configVersion
-            : configVersion as dynamic,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-      );
+  UserEventPayloadVariant176 _copyWith({Object? configVersion = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant176(
+    configVersion: identical(configVersion, sdkOmittedValue) ? this.configVersion : configVersion as dynamic,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+  );
 
-  factory UserEventPayloadVariant176.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant176(
-        configVersion: (json['configVersion'])!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-      );
+  factory UserEventPayloadVariant176.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant176(
+    configVersion: (json['configVersion'])!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configVersion': configVersion,
-        'projectId': projectId,
-        'projectName': projectName,
-      };
+    'configVersion': configVersion,
+    'projectId': projectId,
+    'projectName': projectName,
+  };
 }
 
 sealed class UserEventPayloadVariant177ConfigVersion {
@@ -63,63 +43,47 @@ sealed class UserEventPayloadVariant177ConfigVersion {
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant177ConfigVersion();
   factory UserEventPayloadVariant177ConfigVersion.fromJson(Object? json) {
-    if (json is String) {
-      return UserEventPayloadVariant177ConfigVersionString(json);
-    }
-    if (json is num) {
-      return UserEventPayloadVariant177ConfigVersionDouble(json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for UserEventPayloadVariant177ConfigVersion");
+    if (json is String) { return UserEventPayloadVariant177ConfigVersionString(json); }
+    if (json is num) { return UserEventPayloadVariant177ConfigVersionDouble(json.toDouble()); }
+    throw FormatException("No variant matched for UserEventPayloadVariant177ConfigVersion");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant177ConfigVersionString
-    extends UserEventPayloadVariant177ConfigVersion {
+final class UserEventPayloadVariant177ConfigVersionString extends UserEventPayloadVariant177ConfigVersion {
   final String value;
   const UserEventPayloadVariant177ConfigVersionString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class UserEventPayloadVariant177ConfigVersionDouble
-    extends UserEventPayloadVariant177ConfigVersion {
+final class UserEventPayloadVariant177ConfigVersionDouble extends UserEventPayloadVariant177ConfigVersion {
   final double value;
   const UserEventPayloadVariant177ConfigVersionDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant177 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required API value serialized in the `configVersion` wire field.
   final dynamic configVersion;
 
   const UserEventPayloadVariant177({required this.configVersion});
 
-  UserEventPayloadVariant177 Function({dynamic configVersion}) get copyWith =>
-      _copyWith;
+  UserEventPayloadVariant177 Function({dynamic configVersion}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant177 _copyWith(
-          {Object? configVersion = sdkOmittedValue}) =>
-      UserEventPayloadVariant177(
-        configVersion: identical(configVersion, sdkOmittedValue)
-            ? this.configVersion
-            : configVersion as dynamic,
-      );
+  UserEventPayloadVariant177 _copyWith({Object? configVersion = sdkOmittedValue}) => UserEventPayloadVariant177(
+    configVersion: identical(configVersion, sdkOmittedValue) ? this.configVersion : configVersion as dynamic,
+  );
 
-  factory UserEventPayloadVariant177.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant177(
-        configVersion: (json['configVersion'])!,
-      );
+  factory UserEventPayloadVariant177.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant177(
+    configVersion: (json['configVersion'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configVersion': configVersion,
-      };
+    'configVersion': configVersion,
+  };
 }
 
 sealed class UserEventPayloadVariant178ConfigVersion {
@@ -127,201 +91,115 @@ sealed class UserEventPayloadVariant178ConfigVersion {
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant178ConfigVersion();
   factory UserEventPayloadVariant178ConfigVersion.fromJson(Object? json) {
-    if (json is String) {
-      return UserEventPayloadVariant178ConfigVersionString(json);
-    }
-    if (json is num) {
-      return UserEventPayloadVariant178ConfigVersionDouble(json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for UserEventPayloadVariant178ConfigVersion");
+    if (json is String) { return UserEventPayloadVariant178ConfigVersionString(json); }
+    if (json is num) { return UserEventPayloadVariant178ConfigVersionDouble(json.toDouble()); }
+    throw FormatException("No variant matched for UserEventPayloadVariant178ConfigVersion");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant178ConfigVersionString
-    extends UserEventPayloadVariant178ConfigVersion {
+final class UserEventPayloadVariant178ConfigVersionString extends UserEventPayloadVariant178ConfigVersion {
   final String value;
   const UserEventPayloadVariant178ConfigVersionString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class UserEventPayloadVariant178ConfigVersionDouble
-    extends UserEventPayloadVariant178ConfigVersion {
+final class UserEventPayloadVariant178ConfigVersionDouble extends UserEventPayloadVariant178ConfigVersion {
   final double value;
   const UserEventPayloadVariant178ConfigVersionDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant178 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `number` value serialized in the `configChangeCount` wire field.
   final SdkOptional<double> configChangeCount;
-
   /// Optional array value serialized in the `configChanges` wire field.
   final SdkOptional<List<Map<String, dynamic>>> configChanges;
-
   /// Required API value serialized in the `configVersion` wire field.
   final dynamic configVersion;
 
-  const UserEventPayloadVariant178(
-      {this.configChangeCount = const SdkOmitted(),
-      this.configChanges = const SdkOmitted(),
-      required this.configVersion});
+  const UserEventPayloadVariant178({this.configChangeCount = const SdkOmitted(), this.configChanges = const SdkOmitted(), required this.configVersion});
 
-  UserEventPayloadVariant178 Function(
-      {SdkOptional<double> configChangeCount,
-      SdkOptional<List<Map<String, dynamic>>> configChanges,
-      dynamic configVersion}) get copyWith => _copyWith;
+  UserEventPayloadVariant178 Function({SdkOptional<double> configChangeCount, SdkOptional<List<Map<String, dynamic>>> configChanges, dynamic configVersion}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant178 _copyWith(
-          {Object? configChangeCount = sdkOmittedValue,
-          Object? configChanges = sdkOmittedValue,
-          Object? configVersion = sdkOmittedValue}) =>
-      UserEventPayloadVariant178(
-        configChangeCount: identical(configChangeCount, sdkOmittedValue)
-            ? this.configChangeCount
-            : configChangeCount as SdkOptional<double>,
-        configChanges: identical(configChanges, sdkOmittedValue)
-            ? this.configChanges
-            : configChanges as SdkOptional<List<Map<String, dynamic>>>,
-        configVersion: identical(configVersion, sdkOmittedValue)
-            ? this.configVersion
-            : configVersion as dynamic,
-      );
+  UserEventPayloadVariant178 _copyWith({Object? configChangeCount = sdkOmittedValue, Object? configChanges = sdkOmittedValue, Object? configVersion = sdkOmittedValue}) => UserEventPayloadVariant178(
+    configChangeCount: identical(configChangeCount, sdkOmittedValue) ? this.configChangeCount : configChangeCount as SdkOptional<double>,
+    configChanges: identical(configChanges, sdkOmittedValue) ? this.configChanges : configChanges as SdkOptional<List<Map<String, dynamic>>>,
+    configVersion: identical(configVersion, sdkOmittedValue) ? this.configVersion : configVersion as dynamic,
+  );
 
-  factory UserEventPayloadVariant178.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant178(
-        configChangeCount: json['configChangeCount'] != null
-            ? SdkPresent(((json['configChangeCount'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        configChanges: json['configChanges'] != null
-            ? SdkPresent(((json['configChanges'] as List?)
-                ?.map((e) => e as Map<String, dynamic>)
-                .toList())!)
-            : const SdkOmitted(),
-        configVersion: (json['configVersion'])!,
-      );
+  factory UserEventPayloadVariant178.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant178(
+    configChangeCount: json['configChangeCount'] != null ? SdkPresent(((json['configChangeCount'] as num?)?.toDouble())!) : const SdkOmitted(),
+    configChanges: json['configChanges'] != null ? SdkPresent(((json['configChanges'] as List?)?.map((e) => e as Map<String, dynamic>).toList())!) : const SdkOmitted(),
+    configVersion: (json['configVersion'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (configChangeCount) {
-          SdkPresent<double>(value: final value) => {
-              'configChangeCount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (configChanges) {
-          SdkPresent<List<Map<String, dynamic>>>(value: final value) => {
-              'configChanges': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'configVersion': configVersion,
-      };
+    ...switch (configChangeCount) {
+      SdkPresent<double>(value: final value) => {'configChangeCount': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (configChanges) {
+      SdkPresent<List<Map<String, dynamic>>>(value: final value) => {'configChanges': value,},
+      _ => const <String, dynamic>{},
+    },
+    'configVersion': configVersion,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant179 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `number` value serialized in the `configChangeCount` wire field.
   final double configChangeCount;
-
   /// Required array value serialized in the `configChanges` wire field.
   final List<Map<String, dynamic>> configChanges;
-
   /// Required `number` value serialized in the `configVersion` wire field.
   final double configVersion;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
-
   /// Required enumerated value serialized in the `restore` wire field.
   final UserEventPayloadVariant179Restore restore;
 
-  const UserEventPayloadVariant179(
-      {required this.configChangeCount,
-      required this.configChanges,
-      required this.configVersion,
-      required this.projectId,
-      this.projectName = const SdkOmitted(),
-      required this.restore});
+  const UserEventPayloadVariant179({required this.configChangeCount, required this.configChanges, required this.configVersion, required this.projectId, this.projectName = const SdkOmitted(), required this.restore});
 
-  UserEventPayloadVariant179 Function(
-      {double configChangeCount,
-      List<Map<String, dynamic>> configChanges,
-      double configVersion,
-      String projectId,
-      SdkOptional<String> projectName,
-      UserEventPayloadVariant179Restore restore}) get copyWith => _copyWith;
+  UserEventPayloadVariant179 Function({double configChangeCount, List<Map<String, dynamic>> configChanges, double configVersion, String projectId, SdkOptional<String> projectName, UserEventPayloadVariant179Restore restore}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant179 _copyWith(
-          {Object? configChangeCount = sdkOmittedValue,
-          Object? configChanges = sdkOmittedValue,
-          Object? configVersion = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? restore = sdkOmittedValue}) =>
-      UserEventPayloadVariant179(
-        configChangeCount: identical(configChangeCount, sdkOmittedValue)
-            ? this.configChangeCount
-            : configChangeCount as double,
-        configChanges: identical(configChanges, sdkOmittedValue)
-            ? this.configChanges
-            : configChanges as List<Map<String, dynamic>>,
-        configVersion: identical(configVersion, sdkOmittedValue)
-            ? this.configVersion
-            : configVersion as double,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-        restore: identical(restore, sdkOmittedValue)
-            ? this.restore
-            : restore as UserEventPayloadVariant179Restore,
-      );
+  UserEventPayloadVariant179 _copyWith({Object? configChangeCount = sdkOmittedValue, Object? configChanges = sdkOmittedValue, Object? configVersion = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? restore = sdkOmittedValue}) => UserEventPayloadVariant179(
+    configChangeCount: identical(configChangeCount, sdkOmittedValue) ? this.configChangeCount : configChangeCount as double,
+    configChanges: identical(configChanges, sdkOmittedValue) ? this.configChanges : configChanges as List<Map<String, dynamic>>,
+    configVersion: identical(configVersion, sdkOmittedValue) ? this.configVersion : configVersion as double,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+    restore: identical(restore, sdkOmittedValue) ? this.restore : restore as UserEventPayloadVariant179Restore,
+  );
 
-  factory UserEventPayloadVariant179.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant179(
-        configChangeCount: ((json['configChangeCount'] as num?)?.toDouble())!,
-        configChanges: ((json['configChanges'] as List?)
-            ?.map((e) => e as Map<String, dynamic>)
-            .toList())!,
-        configVersion: ((json['configVersion'] as num?)?.toDouble())!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-        restore: (json['restore'] != null
-            ? UserEventPayloadVariant179Restore.fromJson(
-                json['restore'] as bool)
-            : null)!,
-      );
+  factory UserEventPayloadVariant179.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant179(
+    configChangeCount: ((json['configChangeCount'] as num?)?.toDouble())!,
+    configChanges: ((json['configChanges'] as List?)?.map((e) => e as Map<String, dynamic>).toList())!,
+    configVersion: ((json['configVersion'] as num?)?.toDouble())!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+    restore: (json['restore'] != null ? UserEventPayloadVariant179Restore.fromJson(json['restore'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configChangeCount': configChangeCount,
-        'configChanges': configChanges,
-        'configVersion': configVersion,
-        'projectId': projectId,
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'restore': restore.toJson(),
-      };
+    'configChangeCount': configChangeCount,
+    'configChanges': configChanges,
+    'configVersion': configVersion,
+    'projectId': projectId,
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+    'restore': restore.toJson(),
+  };
 }
 
 class UserEventPayloadVariant180RuleGroupsValue {
@@ -330,114 +208,59 @@ class UserEventPayloadVariant180RuleGroupsValue {
   final SdkOptional<UserEventPayloadVariant180RuleGroupsValueAction> action;
   final UserEventPayloadVariant180RuleGroupsValueActive active;
 
-  const UserEventPayloadVariant180RuleGroupsValue(
-      {this.action = const SdkOmitted(), required this.active});
+  const UserEventPayloadVariant180RuleGroupsValue({this.action = const SdkOmitted(), required this.active});
 
-  UserEventPayloadVariant180RuleGroupsValue Function(
-          {SdkOptional<UserEventPayloadVariant180RuleGroupsValueAction> action,
-          UserEventPayloadVariant180RuleGroupsValueActive active})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant180RuleGroupsValue Function({SdkOptional<UserEventPayloadVariant180RuleGroupsValueAction> action, UserEventPayloadVariant180RuleGroupsValueActive active}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant180RuleGroupsValue _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      UserEventPayloadVariant180RuleGroupsValue(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as SdkOptional<UserEventPayloadVariant180RuleGroupsValueAction>,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as UserEventPayloadVariant180RuleGroupsValueActive,
-      );
+  UserEventPayloadVariant180RuleGroupsValue _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => UserEventPayloadVariant180RuleGroupsValue(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UserEventPayloadVariant180RuleGroupsValueAction>,
+    active: identical(active, sdkOmittedValue) ? this.active : active as UserEventPayloadVariant180RuleGroupsValueActive,
+  );
 
-  factory UserEventPayloadVariant180RuleGroupsValue.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant180RuleGroupsValue(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] != null
-                ? UserEventPayloadVariant180RuleGroupsValueAction.fromJson(
-                    json['action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        active: (json['active'] != null
-            ? UserEventPayloadVariant180RuleGroupsValueActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory UserEventPayloadVariant180RuleGroupsValue.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant180RuleGroupsValue(
+    action: json['action'] != null ? SdkPresent((json['action'] != null ? UserEventPayloadVariant180RuleGroupsValueAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
+    active: (json['active'] != null ? UserEventPayloadVariant180RuleGroupsValueActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<UserEventPayloadVariant180RuleGroupsValueAction>(
-            value: final value
-          ) =>
-            {
-              'action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'active': active.toJson(),
-      };
+    ...switch (action) {
+      SdkPresent<UserEventPayloadVariant180RuleGroupsValueAction>(value: final value) => {'action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'active': active.toJson(),
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant180 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required object value serialized in the `ruleGroups` wire field.
   final Map<String, UserEventPayloadVariant180RuleGroupsValue> ruleGroups;
-
   /// Required `string` value serialized in the `rulesetName` wire field.
   final String rulesetName;
 
-  const UserEventPayloadVariant180(
-      {required this.projectId,
-      required this.ruleGroups,
-      required this.rulesetName});
+  const UserEventPayloadVariant180({required this.projectId, required this.ruleGroups, required this.rulesetName});
 
-  UserEventPayloadVariant180 Function(
-      {String projectId,
-      Map<String, UserEventPayloadVariant180RuleGroupsValue> ruleGroups,
-      String rulesetName}) get copyWith => _copyWith;
+  UserEventPayloadVariant180 Function({String projectId, Map<String, UserEventPayloadVariant180RuleGroupsValue> ruleGroups, String rulesetName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant180 _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? ruleGroups = sdkOmittedValue,
-          Object? rulesetName = sdkOmittedValue}) =>
-      UserEventPayloadVariant180(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        ruleGroups: identical(ruleGroups, sdkOmittedValue)
-            ? this.ruleGroups
-            : ruleGroups
-                as Map<String, UserEventPayloadVariant180RuleGroupsValue>,
-        rulesetName: identical(rulesetName, sdkOmittedValue)
-            ? this.rulesetName
-            : rulesetName as String,
-      );
+  UserEventPayloadVariant180 _copyWith({Object? projectId = sdkOmittedValue, Object? ruleGroups = sdkOmittedValue, Object? rulesetName = sdkOmittedValue}) => UserEventPayloadVariant180(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    ruleGroups: identical(ruleGroups, sdkOmittedValue) ? this.ruleGroups : ruleGroups as Map<String, UserEventPayloadVariant180RuleGroupsValue>,
+    rulesetName: identical(rulesetName, sdkOmittedValue) ? this.rulesetName : rulesetName as String,
+  );
 
-  factory UserEventPayloadVariant180.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant180(
-        projectId: (json['projectId'] as String?)!,
-        ruleGroups: (json['ruleGroups'] == null
-            ? null
-            : Map<String, dynamic>.from(json['ruleGroups'] as Map).map(
-                (key, value) => MapEntry(
-                    key,
-                    UserEventPayloadVariant180RuleGroupsValue.fromJson(
-                        value as Map<String, dynamic>))))!,
-        rulesetName: (json['rulesetName'] as String?)!,
-      );
+  factory UserEventPayloadVariant180.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant180(
+    projectId: (json['projectId'] as String?)!,
+    ruleGroups: (json['ruleGroups'] == null ? null : Map<String, dynamic>.from(json['ruleGroups'] as Map).map((key, value) => MapEntry(key, UserEventPayloadVariant180RuleGroupsValue.fromJson(value as Map<String, dynamic>))))!,
+    rulesetName: (json['rulesetName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        'ruleGroups':
-            ruleGroups.map((key, value) => MapEntry(key, value.toJson())),
-        'rulesetName': rulesetName,
-      };
+    'projectId': projectId,
+    'ruleGroups': ruleGroups.map((key, value) => MapEntry(key, value.toJson())),
+    'rulesetName': rulesetName,
+  };
 }

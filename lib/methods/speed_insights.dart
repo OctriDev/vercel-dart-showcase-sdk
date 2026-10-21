@@ -7,11 +7,11 @@ import '../sdk_utils.dart';
 import '../types.dart';
 
 /// Updates the Speed Insights toggle for a project. Provide the `value` field to set the toggle state, and use `projectId` to select the project. The response confirms the resulting toggle value.
-Future<CreateSpeedInsightsToggleResponse> createSpeedInsightsToggle(
-    ClientConfig config,
-    {required String projectId,
-    required bool value_,
-    RequestOptions? requestOptions}) async {
+Future<CreateSpeedInsightsToggleResponse>
+    createSpeedInsightsToggle(ClientConfig config,
+        {required String projectId,
+        required bool value_,
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<CreateSpeedInsightsToggleResponse>(
           'POST', '/speed-insights/toggle',
           config: config,
@@ -21,8 +21,7 @@ Future<CreateSpeedInsightsToggleResponse> createSpeedInsightsToggle(
           body: {'value': value_},
           decoder: SdkResponseDecoder.json,
           operationId: 'createSpeedInsightsToggle',
-          fromJsonRaw: (value) => CreateSpeedInsightsToggleResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSpeedInsightsToggleResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

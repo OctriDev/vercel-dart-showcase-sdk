@@ -9,29 +9,21 @@ class ListAliasesResponseAliasesItemMicrofrontendsDefaultApp {
   static const String constructionSurface = 'named';
   final String projectId;
 
-  const ListAliasesResponseAliasesItemMicrofrontendsDefaultApp(
-      {required this.projectId});
+  const ListAliasesResponseAliasesItemMicrofrontendsDefaultApp({required this.projectId});
 
-  ListAliasesResponseAliasesItemMicrofrontendsDefaultApp Function(
-      {String projectId}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemMicrofrontendsDefaultApp Function({String projectId}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemMicrofrontendsDefaultApp _copyWith(
-          {Object? projectId = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemMicrofrontendsDefaultApp(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-      );
+  ListAliasesResponseAliasesItemMicrofrontendsDefaultApp _copyWith({Object? projectId = sdkOmittedValue}) => ListAliasesResponseAliasesItemMicrofrontendsDefaultApp(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+  );
 
-  factory ListAliasesResponseAliasesItemMicrofrontendsDefaultApp.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemMicrofrontendsDefaultApp(
-        projectId: (json['projectId'] as String?)!,
-      );
+  factory ListAliasesResponseAliasesItemMicrofrontendsDefaultApp.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemMicrofrontendsDefaultApp(
+    projectId: (json['projectId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-      };
+    'projectId': projectId,
+  };
 }
 
 /// The microfrontends for the alias including the routing configuration
@@ -41,41 +33,24 @@ class ListAliasesResponseAliasesItemMicrofrontends {
   final dynamic applications;
   final ListAliasesResponseAliasesItemMicrofrontendsDefaultApp defaultApp;
 
-  const ListAliasesResponseAliasesItemMicrofrontends(
-      {required this.applications, required this.defaultApp});
+  const ListAliasesResponseAliasesItemMicrofrontends({required this.applications, required this.defaultApp});
 
-  ListAliasesResponseAliasesItemMicrofrontends Function(
-          {dynamic applications,
-          ListAliasesResponseAliasesItemMicrofrontendsDefaultApp defaultApp})
-      get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemMicrofrontends Function({dynamic applications, ListAliasesResponseAliasesItemMicrofrontendsDefaultApp defaultApp}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemMicrofrontends _copyWith(
-          {Object? applications = sdkOmittedValue,
-          Object? defaultApp = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemMicrofrontends(
-        applications: identical(applications, sdkOmittedValue)
-            ? this.applications
-            : applications as dynamic,
-        defaultApp: identical(defaultApp, sdkOmittedValue)
-            ? this.defaultApp
-            : defaultApp
-                as ListAliasesResponseAliasesItemMicrofrontendsDefaultApp,
-      );
+  ListAliasesResponseAliasesItemMicrofrontends _copyWith({Object? applications = sdkOmittedValue, Object? defaultApp = sdkOmittedValue}) => ListAliasesResponseAliasesItemMicrofrontends(
+    applications: identical(applications, sdkOmittedValue) ? this.applications : applications as dynamic,
+    defaultApp: identical(defaultApp, sdkOmittedValue) ? this.defaultApp : defaultApp as ListAliasesResponseAliasesItemMicrofrontendsDefaultApp,
+  );
 
-  factory ListAliasesResponseAliasesItemMicrofrontends.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemMicrofrontends(
-        applications: (json['applications'])!,
-        defaultApp: (json['defaultApp'] != null
-            ? ListAliasesResponseAliasesItemMicrofrontendsDefaultApp.fromJson(
-                json['defaultApp'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory ListAliasesResponseAliasesItemMicrofrontends.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemMicrofrontends(
+    applications: (json['applications'])!,
+    defaultApp: (json['defaultApp'] != null ? ListAliasesResponseAliasesItemMicrofrontendsDefaultApp.fromJson(json['defaultApp'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'applications': applications,
-        'defaultApp': defaultApp.toJson(),
-      };
+    'applications': applications,
+    'defaultApp': defaultApp.toJson(),
+  };
 }
 
 /// The protection bypass for the alias
@@ -87,142 +62,72 @@ class ListAliasesResponseAliasesItemProtectionBypassValueVariant0 {
   final SdkOptional<double> expires;
   final ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope scope;
 
-  const ListAliasesResponseAliasesItemProtectionBypassValueVariant0(
-      {required this.createdAt,
-      required this.createdBy,
-      this.expires = const SdkOmitted(),
-      required this.scope});
+  const ListAliasesResponseAliasesItemProtectionBypassValueVariant0({required this.createdAt, required this.createdBy, this.expires = const SdkOmitted(), required this.scope});
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant0 Function(
-      {double createdAt,
-      String createdBy,
-      SdkOptional<double> expires,
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope
-          scope}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant0 Function({double createdAt, String createdBy, SdkOptional<double> expires, ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope scope}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant0 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? expires = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant0(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as String,
-        expires: identical(expires, sdkOmittedValue)
-            ? this.expires
-            : expires as SdkOptional<double>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope
-                as ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope,
-      );
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant0 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? expires = sdkOmittedValue, Object? scope = sdkOmittedValue}) => ListAliasesResponseAliasesItemProtectionBypassValueVariant0(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
+    expires: identical(expires, sdkOmittedValue) ? this.expires : expires as SdkOptional<double>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope,
+  );
 
-  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant0(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: (json['createdBy'] as String?)!,
-        expires: json['expires'] != null
-            ? SdkPresent(((json['expires'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        scope: (json['scope'] != null
-            ? ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope
-                .fromJson(json['scope'] as String)
-            : null)!,
-      );
+  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant0.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemProtectionBypassValueVariant0(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: (json['createdBy'] as String?)!,
+    expires: json['expires'] != null ? SdkPresent(((json['expires'] as num?)?.toDouble())!) : const SdkOmitted(),
+    scope: (json['scope'] != null ? ListAliasesResponseAliasesItemProtectionBypassValueVariant0Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'createdBy': createdBy,
-        ...switch (expires) {
-          SdkPresent<double>(value: final value) => {
-              'expires': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'scope': scope.toJson(),
-      };
+    'createdAt': createdAt,
+    'createdBy': createdBy,
+    ...switch (expires) {
+      SdkPresent<double>(value: final value) => {'expires': value,},
+      _ => const <String, dynamic>{},
+    },
+    'scope': scope.toJson(),
+  };
 }
 
 /// The protection bypass for the alias
 class ListAliasesResponseAliasesItemProtectionBypassValueVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access
-      access;
+  final ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access access;
   final double createdAt;
   final double lastUpdatedAt;
   final String lastUpdatedBy;
   final ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope scope;
 
-  const ListAliasesResponseAliasesItemProtectionBypassValueVariant1(
-      {required this.access,
-      required this.createdAt,
-      required this.lastUpdatedAt,
-      required this.lastUpdatedBy,
-      required this.scope});
+  const ListAliasesResponseAliasesItemProtectionBypassValueVariant1({required this.access, required this.createdAt, required this.lastUpdatedAt, required this.lastUpdatedBy, required this.scope});
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant1 Function(
-      {ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access access,
-      double createdAt,
-      double lastUpdatedAt,
-      String lastUpdatedBy,
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope
-          scope}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant1 Function({ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access access, double createdAt, double lastUpdatedAt, String lastUpdatedBy, ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope scope}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant1 _copyWith(
-          {Object? access = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? lastUpdatedAt = sdkOmittedValue,
-          Object? lastUpdatedBy = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant1(
-        access: identical(access, sdkOmittedValue)
-            ? this.access
-            : access
-                as ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue)
-            ? this.lastUpdatedAt
-            : lastUpdatedAt as double,
-        lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue)
-            ? this.lastUpdatedBy
-            : lastUpdatedBy as String,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope
-                as ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope,
-      );
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant1 _copyWith({Object? access = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? lastUpdatedAt = sdkOmittedValue, Object? lastUpdatedBy = sdkOmittedValue, Object? scope = sdkOmittedValue}) => ListAliasesResponseAliasesItemProtectionBypassValueVariant1(
+    access: identical(access, sdkOmittedValue) ? this.access : access as ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue) ? this.lastUpdatedAt : lastUpdatedAt as double,
+    lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue) ? this.lastUpdatedBy : lastUpdatedBy as String,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope,
+  );
 
-  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant1(
-        access: (json['access'] != null
-            ? ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access
-                .fromJson(json['access'] as String)
-            : null)!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
-        lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
-        scope: (json['scope'] != null
-            ? ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope
-                .fromJson(json['scope'] as String)
-            : null)!,
-      );
+  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant1.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemProtectionBypassValueVariant1(
+    access: (json['access'] != null ? ListAliasesResponseAliasesItemProtectionBypassValueVariant1Access.fromJson(json['access'] as String) : null)!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
+    lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
+    scope: (json['scope'] != null ? ListAliasesResponseAliasesItemProtectionBypassValueVariant1Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'access': access.toJson(),
-        'createdAt': createdAt,
-        'lastUpdatedAt': lastUpdatedAt,
-        'lastUpdatedBy': lastUpdatedBy,
-        'scope': scope.toJson(),
-      };
+    'access': access.toJson(),
+    'createdAt': createdAt,
+    'lastUpdatedAt': lastUpdatedAt,
+    'lastUpdatedBy': lastUpdatedBy,
+    'scope': scope.toJson(),
+  };
 }
 
 /// The protection bypass for the alias
@@ -233,48 +138,27 @@ class ListAliasesResponseAliasesItemProtectionBypassValueVariant2 {
   final String createdBy;
   final ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope scope;
 
-  const ListAliasesResponseAliasesItemProtectionBypassValueVariant2(
-      {required this.createdAt, required this.createdBy, required this.scope});
+  const ListAliasesResponseAliasesItemProtectionBypassValueVariant2({required this.createdAt, required this.createdBy, required this.scope});
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant2 Function(
-      {double createdAt,
-      String createdBy,
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope
-          scope}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant2 Function({double createdAt, String createdBy, ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope scope}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant2 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant2(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as String,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope
-                as ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope,
-      );
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant2 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? scope = sdkOmittedValue}) => ListAliasesResponseAliasesItemProtectionBypassValueVariant2(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope,
+  );
 
-  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant2(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: (json['createdBy'] as String?)!,
-        scope: (json['scope'] != null
-            ? ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope
-                .fromJson(json['scope'] as String)
-            : null)!,
-      );
+  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant2.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemProtectionBypassValueVariant2(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: (json['createdBy'] as String?)!,
+    scope: (json['scope'] != null ? ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'createdBy': createdBy,
-        'scope': scope.toJson(),
-      };
+    'createdAt': createdAt,
+    'createdBy': createdBy,
+    'scope': scope.toJson(),
+  };
 }
 
 /// The protection bypass for the alias
@@ -286,56 +170,28 @@ class ListAliasesResponseAliasesItemProtectionBypassValueVariant3 {
   final String lastUpdatedBy;
   final ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope scope;
 
-  const ListAliasesResponseAliasesItemProtectionBypassValueVariant3(
-      {required this.createdAt,
-      required this.lastUpdatedAt,
-      required this.lastUpdatedBy,
-      required this.scope});
+  const ListAliasesResponseAliasesItemProtectionBypassValueVariant3({required this.createdAt, required this.lastUpdatedAt, required this.lastUpdatedBy, required this.scope});
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant3 Function(
-      {double createdAt,
-      double lastUpdatedAt,
-      String lastUpdatedBy,
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope
-          scope}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant3 Function({double createdAt, double lastUpdatedAt, String lastUpdatedBy, ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope scope}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemProtectionBypassValueVariant3 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? lastUpdatedAt = sdkOmittedValue,
-          Object? lastUpdatedBy = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant3(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue)
-            ? this.lastUpdatedAt
-            : lastUpdatedAt as double,
-        lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue)
-            ? this.lastUpdatedBy
-            : lastUpdatedBy as String,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope
-                as ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope,
-      );
+  ListAliasesResponseAliasesItemProtectionBypassValueVariant3 _copyWith({Object? createdAt = sdkOmittedValue, Object? lastUpdatedAt = sdkOmittedValue, Object? lastUpdatedBy = sdkOmittedValue, Object? scope = sdkOmittedValue}) => ListAliasesResponseAliasesItemProtectionBypassValueVariant3(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue) ? this.lastUpdatedAt : lastUpdatedAt as double,
+    lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue) ? this.lastUpdatedBy : lastUpdatedBy as String,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope,
+  );
 
-  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemProtectionBypassValueVariant3(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
-        lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
-        scope: (json['scope'] != null
-            ? ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope
-                .fromJson(json['scope'] as String)
-            : null)!,
-      );
+  factory ListAliasesResponseAliasesItemProtectionBypassValueVariant3.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemProtectionBypassValueVariant3(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
+    lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
+    scope: (json['scope'] != null ? ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'lastUpdatedAt': lastUpdatedAt,
-        'lastUpdatedBy': lastUpdatedBy,
-        'scope': scope.toJson(),
-      };
+    'createdAt': createdAt,
+    'lastUpdatedAt': lastUpdatedAt,
+    'lastUpdatedBy': lastUpdatedBy,
+    'scope': scope.toJson(),
+  };
 }

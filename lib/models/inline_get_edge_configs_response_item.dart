@@ -9,7 +9,6 @@ class GetEdgeConfigsResponseItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double createdAt;
-
   /// The ID of the user who created the Global Config, optional because it is not always set.
   final SdkOptional<String> createdBy;
   final String digest;
@@ -17,99 +16,52 @@ class GetEdgeConfigsResponseItem {
   final double itemCount;
   final String ownerId;
   final double sizeInBytes;
-
   /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
   final String slug;
   final double updatedAt;
 
-  const GetEdgeConfigsResponseItem(
-      {required this.createdAt,
-      this.createdBy = const SdkOmitted(),
-      required this.digest,
-      required this.id,
-      required this.itemCount,
-      required this.ownerId,
-      required this.sizeInBytes,
-      required this.slug,
-      required this.updatedAt});
+  const GetEdgeConfigsResponseItem({required this.createdAt, this.createdBy = const SdkOmitted(), required this.digest, required this.id, required this.itemCount, required this.ownerId, required this.sizeInBytes, required this.slug, required this.updatedAt});
 
-  GetEdgeConfigsResponseItem Function(
-      {double createdAt,
-      SdkOptional<String> createdBy,
-      String digest,
-      String id,
-      double itemCount,
-      String ownerId,
-      double sizeInBytes,
-      String slug,
-      double updatedAt}) get copyWith => _copyWith;
+  GetEdgeConfigsResponseItem Function({double createdAt, SdkOptional<String> createdBy, String digest, String id, double itemCount, String ownerId, double sizeInBytes, String slug, double updatedAt}) get copyWith => _copyWith;
 
-  GetEdgeConfigsResponseItem _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? digest = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? itemCount = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? sizeInBytes = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      GetEdgeConfigsResponseItem(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String>,
-        digest:
-            identical(digest, sdkOmittedValue) ? this.digest : digest as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        itemCount: identical(itemCount, sdkOmittedValue)
-            ? this.itemCount
-            : itemCount as double,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
-            ? this.sizeInBytes
-            : sizeInBytes as double,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  GetEdgeConfigsResponseItem _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? digest = sdkOmittedValue, Object? id = sdkOmittedValue, Object? itemCount = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetEdgeConfigsResponseItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
+    digest: identical(digest, sdkOmittedValue) ? this.digest : digest as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    itemCount: identical(itemCount, sdkOmittedValue) ? this.itemCount : itemCount as double,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory GetEdgeConfigsResponseItem.fromJson(Map<String, dynamic> json) =>
-      GetEdgeConfigsResponseItem(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: json['createdBy'] != null
-            ? SdkPresent((json['createdBy'] as String?)!)
-            : const SdkOmitted(),
-        digest: (json['digest'] as String?)!,
-        id: (json['id'] as String?)!,
-        itemCount: ((json['itemCount'] as num?)?.toDouble())!,
-        ownerId: (json['ownerId'] as String?)!,
-        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-        slug: (json['slug'] as String?)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory GetEdgeConfigsResponseItem.fromJson(Map<String, dynamic> json) => GetEdgeConfigsResponseItem(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
+    digest: (json['digest'] as String?)!,
+    id: (json['id'] as String?)!,
+    itemCount: ((json['itemCount'] as num?)?.toDouble())!,
+    ownerId: (json['ownerId'] as String?)!,
+    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+    slug: (json['slug'] as String?)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        ...switch (createdBy) {
-          SdkPresent<String>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'digest': digest,
-        'id': id,
-        'itemCount': itemCount,
-        'ownerId': ownerId,
-        'sizeInBytes': sizeInBytes,
-        'slug': slug,
-        'updatedAt': updatedAt,
-      };
+    'createdAt': createdAt,
+    ...switch (createdBy) {
+      SdkPresent<String>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'digest': digest,
+    'id': id,
+    'itemCount': itemCount,
+    'ownerId': ownerId,
+    'sizeInBytes': sizeInBytes,
+    'slug': slug,
+    'updatedAt': updatedAt,
+  };
 }
 
 class CreateEdgeConfigRequestBody {
@@ -118,41 +70,27 @@ class CreateEdgeConfigRequestBody {
   final String slug;
   final SdkOptional<Map<String, dynamic>> items;
 
-  const CreateEdgeConfigRequestBody(
-      {required this.slug, this.items = const SdkOmitted()});
+  const CreateEdgeConfigRequestBody({required this.slug, this.items = const SdkOmitted()});
 
-  CreateEdgeConfigRequestBody Function(
-      {String slug,
-      SdkOptional<Map<String, dynamic>> items}) get copyWith => _copyWith;
+  CreateEdgeConfigRequestBody Function({String slug, SdkOptional<Map<String, dynamic>> items}) get copyWith => _copyWith;
 
-  CreateEdgeConfigRequestBody _copyWith(
-          {Object? slug = sdkOmittedValue, Object? items = sdkOmittedValue}) =>
-      CreateEdgeConfigRequestBody(
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        items: identical(items, sdkOmittedValue)
-            ? this.items
-            : items as SdkOptional<Map<String, dynamic>>,
-      );
+  CreateEdgeConfigRequestBody _copyWith({Object? slug = sdkOmittedValue, Object? items = sdkOmittedValue}) => CreateEdgeConfigRequestBody(
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    items: identical(items, sdkOmittedValue) ? this.items : items as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory CreateEdgeConfigRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateEdgeConfigRequestBody(
-        slug: (json['slug'] as String?)!,
-        items: json['items'] != null
-            ? SdkPresent((json['items'] == null
-                ? null
-                : json['items'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory CreateEdgeConfigRequestBody.fromJson(Map<String, dynamic> json) => CreateEdgeConfigRequestBody(
+    slug: (json['slug'] as String?)!,
+    items: json['items'] != null ? SdkPresent((json['items'] == null ? null : json['items'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'slug': slug,
-        ...switch (items) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'items': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'slug': slug,
+    ...switch (items) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'items': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// A Global Config
@@ -160,7 +98,6 @@ class CreateEdgeConfigResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double createdAt;
-
   /// The ID of the user who created the Global Config, optional because it is not always set.
   final SdkOptional<String> createdBy;
   final String digest;
@@ -168,99 +105,52 @@ class CreateEdgeConfigResponse {
   final double itemCount;
   final String ownerId;
   final double sizeInBytes;
-
   /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
   final String slug;
   final double updatedAt;
 
-  const CreateEdgeConfigResponse(
-      {required this.createdAt,
-      this.createdBy = const SdkOmitted(),
-      required this.digest,
-      required this.id,
-      required this.itemCount,
-      required this.ownerId,
-      required this.sizeInBytes,
-      required this.slug,
-      required this.updatedAt});
+  const CreateEdgeConfigResponse({required this.createdAt, this.createdBy = const SdkOmitted(), required this.digest, required this.id, required this.itemCount, required this.ownerId, required this.sizeInBytes, required this.slug, required this.updatedAt});
 
-  CreateEdgeConfigResponse Function(
-      {double createdAt,
-      SdkOptional<String> createdBy,
-      String digest,
-      String id,
-      double itemCount,
-      String ownerId,
-      double sizeInBytes,
-      String slug,
-      double updatedAt}) get copyWith => _copyWith;
+  CreateEdgeConfigResponse Function({double createdAt, SdkOptional<String> createdBy, String digest, String id, double itemCount, String ownerId, double sizeInBytes, String slug, double updatedAt}) get copyWith => _copyWith;
 
-  CreateEdgeConfigResponse _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? digest = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? itemCount = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? sizeInBytes = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      CreateEdgeConfigResponse(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String>,
-        digest:
-            identical(digest, sdkOmittedValue) ? this.digest : digest as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        itemCount: identical(itemCount, sdkOmittedValue)
-            ? this.itemCount
-            : itemCount as double,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
-            ? this.sizeInBytes
-            : sizeInBytes as double,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  CreateEdgeConfigResponse _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? digest = sdkOmittedValue, Object? id = sdkOmittedValue, Object? itemCount = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateEdgeConfigResponse(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
+    digest: identical(digest, sdkOmittedValue) ? this.digest : digest as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    itemCount: identical(itemCount, sdkOmittedValue) ? this.itemCount : itemCount as double,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory CreateEdgeConfigResponse.fromJson(Map<String, dynamic> json) =>
-      CreateEdgeConfigResponse(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: json['createdBy'] != null
-            ? SdkPresent((json['createdBy'] as String?)!)
-            : const SdkOmitted(),
-        digest: (json['digest'] as String?)!,
-        id: (json['id'] as String?)!,
-        itemCount: ((json['itemCount'] as num?)?.toDouble())!,
-        ownerId: (json['ownerId'] as String?)!,
-        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-        slug: (json['slug'] as String?)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory CreateEdgeConfigResponse.fromJson(Map<String, dynamic> json) => CreateEdgeConfigResponse(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
+    digest: (json['digest'] as String?)!,
+    id: (json['id'] as String?)!,
+    itemCount: ((json['itemCount'] as num?)?.toDouble())!,
+    ownerId: (json['ownerId'] as String?)!,
+    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+    slug: (json['slug'] as String?)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        ...switch (createdBy) {
-          SdkPresent<String>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'digest': digest,
-        'id': id,
-        'itemCount': itemCount,
-        'ownerId': ownerId,
-        'sizeInBytes': sizeInBytes,
-        'slug': slug,
-        'updatedAt': updatedAt,
-      };
+    'createdAt': createdAt,
+    ...switch (createdBy) {
+      SdkPresent<String>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'digest': digest,
+    'id': id,
+    'itemCount': itemCount,
+    'ownerId': ownerId,
+    'sizeInBytes': sizeInBytes,
+    'slug': slug,
+    'updatedAt': updatedAt,
+  };
 }
 
 /// The Global Config.
@@ -268,7 +158,6 @@ class GetEdgeConfigResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double createdAt;
-
   /// The ID of the user who created the Global Config, optional because it is not always set.
   final SdkOptional<String> createdBy;
   final String digest;
@@ -276,99 +165,52 @@ class GetEdgeConfigResponse {
   final double itemCount;
   final String ownerId;
   final double sizeInBytes;
-
   /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
   final String slug;
   final double updatedAt;
 
-  const GetEdgeConfigResponse(
-      {required this.createdAt,
-      this.createdBy = const SdkOmitted(),
-      required this.digest,
-      required this.id,
-      required this.itemCount,
-      required this.ownerId,
-      required this.sizeInBytes,
-      required this.slug,
-      required this.updatedAt});
+  const GetEdgeConfigResponse({required this.createdAt, this.createdBy = const SdkOmitted(), required this.digest, required this.id, required this.itemCount, required this.ownerId, required this.sizeInBytes, required this.slug, required this.updatedAt});
 
-  GetEdgeConfigResponse Function(
-      {double createdAt,
-      SdkOptional<String> createdBy,
-      String digest,
-      String id,
-      double itemCount,
-      String ownerId,
-      double sizeInBytes,
-      String slug,
-      double updatedAt}) get copyWith => _copyWith;
+  GetEdgeConfigResponse Function({double createdAt, SdkOptional<String> createdBy, String digest, String id, double itemCount, String ownerId, double sizeInBytes, String slug, double updatedAt}) get copyWith => _copyWith;
 
-  GetEdgeConfigResponse _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? digest = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? itemCount = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? sizeInBytes = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      GetEdgeConfigResponse(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String>,
-        digest:
-            identical(digest, sdkOmittedValue) ? this.digest : digest as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        itemCount: identical(itemCount, sdkOmittedValue)
-            ? this.itemCount
-            : itemCount as double,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
-            ? this.sizeInBytes
-            : sizeInBytes as double,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  GetEdgeConfigResponse _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? digest = sdkOmittedValue, Object? id = sdkOmittedValue, Object? itemCount = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetEdgeConfigResponse(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
+    digest: identical(digest, sdkOmittedValue) ? this.digest : digest as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    itemCount: identical(itemCount, sdkOmittedValue) ? this.itemCount : itemCount as double,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory GetEdgeConfigResponse.fromJson(Map<String, dynamic> json) =>
-      GetEdgeConfigResponse(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: json['createdBy'] != null
-            ? SdkPresent((json['createdBy'] as String?)!)
-            : const SdkOmitted(),
-        digest: (json['digest'] as String?)!,
-        id: (json['id'] as String?)!,
-        itemCount: ((json['itemCount'] as num?)?.toDouble())!,
-        ownerId: (json['ownerId'] as String?)!,
-        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-        slug: (json['slug'] as String?)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory GetEdgeConfigResponse.fromJson(Map<String, dynamic> json) => GetEdgeConfigResponse(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
+    digest: (json['digest'] as String?)!,
+    id: (json['id'] as String?)!,
+    itemCount: ((json['itemCount'] as num?)?.toDouble())!,
+    ownerId: (json['ownerId'] as String?)!,
+    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+    slug: (json['slug'] as String?)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        ...switch (createdBy) {
-          SdkPresent<String>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'digest': digest,
-        'id': id,
-        'itemCount': itemCount,
-        'ownerId': ownerId,
-        'sizeInBytes': sizeInBytes,
-        'slug': slug,
-        'updatedAt': updatedAt,
-      };
+    'createdAt': createdAt,
+    ...switch (createdBy) {
+      SdkPresent<String>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'digest': digest,
+    'id': id,
+    'itemCount': itemCount,
+    'ownerId': ownerId,
+    'sizeInBytes': sizeInBytes,
+    'slug': slug,
+    'updatedAt': updatedAt,
+  };
 }
 
 class UpdateEdgeConfigRequestBody {
@@ -380,19 +222,17 @@ class UpdateEdgeConfigRequestBody {
 
   UpdateEdgeConfigRequestBody Function({String slug}) get copyWith => _copyWith;
 
-  UpdateEdgeConfigRequestBody _copyWith({Object? slug = sdkOmittedValue}) =>
-      UpdateEdgeConfigRequestBody(
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-      );
+  UpdateEdgeConfigRequestBody _copyWith({Object? slug = sdkOmittedValue}) => UpdateEdgeConfigRequestBody(
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+  );
 
-  factory UpdateEdgeConfigRequestBody.fromJson(Map<String, dynamic> json) =>
-      UpdateEdgeConfigRequestBody(
-        slug: (json['slug'] as String?)!,
-      );
+  factory UpdateEdgeConfigRequestBody.fromJson(Map<String, dynamic> json) => UpdateEdgeConfigRequestBody(
+    slug: (json['slug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'slug': slug,
-      };
+    'slug': slug,
+  };
 }
 
 /// A Global Config
@@ -400,7 +240,6 @@ class UpdateEdgeConfigResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double createdAt;
-
   /// The ID of the user who created the Global Config, optional because it is not always set.
   final SdkOptional<String> createdBy;
   final String digest;
@@ -408,97 +247,50 @@ class UpdateEdgeConfigResponse {
   final double itemCount;
   final String ownerId;
   final double sizeInBytes;
-
   /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
   final String slug;
   final double updatedAt;
 
-  const UpdateEdgeConfigResponse(
-      {required this.createdAt,
-      this.createdBy = const SdkOmitted(),
-      required this.digest,
-      required this.id,
-      required this.itemCount,
-      required this.ownerId,
-      required this.sizeInBytes,
-      required this.slug,
-      required this.updatedAt});
+  const UpdateEdgeConfigResponse({required this.createdAt, this.createdBy = const SdkOmitted(), required this.digest, required this.id, required this.itemCount, required this.ownerId, required this.sizeInBytes, required this.slug, required this.updatedAt});
 
-  UpdateEdgeConfigResponse Function(
-      {double createdAt,
-      SdkOptional<String> createdBy,
-      String digest,
-      String id,
-      double itemCount,
-      String ownerId,
-      double sizeInBytes,
-      String slug,
-      double updatedAt}) get copyWith => _copyWith;
+  UpdateEdgeConfigResponse Function({double createdAt, SdkOptional<String> createdBy, String digest, String id, double itemCount, String ownerId, double sizeInBytes, String slug, double updatedAt}) get copyWith => _copyWith;
 
-  UpdateEdgeConfigResponse _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? digest = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? itemCount = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? sizeInBytes = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UpdateEdgeConfigResponse(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String>,
-        digest:
-            identical(digest, sdkOmittedValue) ? this.digest : digest as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        itemCount: identical(itemCount, sdkOmittedValue)
-            ? this.itemCount
-            : itemCount as double,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
-            ? this.sizeInBytes
-            : sizeInBytes as double,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  UpdateEdgeConfigResponse _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? digest = sdkOmittedValue, Object? id = sdkOmittedValue, Object? itemCount = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateEdgeConfigResponse(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
+    digest: identical(digest, sdkOmittedValue) ? this.digest : digest as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    itemCount: identical(itemCount, sdkOmittedValue) ? this.itemCount : itemCount as double,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory UpdateEdgeConfigResponse.fromJson(Map<String, dynamic> json) =>
-      UpdateEdgeConfigResponse(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: json['createdBy'] != null
-            ? SdkPresent((json['createdBy'] as String?)!)
-            : const SdkOmitted(),
-        digest: (json['digest'] as String?)!,
-        id: (json['id'] as String?)!,
-        itemCount: ((json['itemCount'] as num?)?.toDouble())!,
-        ownerId: (json['ownerId'] as String?)!,
-        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-        slug: (json['slug'] as String?)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory UpdateEdgeConfigResponse.fromJson(Map<String, dynamic> json) => UpdateEdgeConfigResponse(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
+    digest: (json['digest'] as String?)!,
+    id: (json['id'] as String?)!,
+    itemCount: ((json['itemCount'] as num?)?.toDouble())!,
+    ownerId: (json['ownerId'] as String?)!,
+    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+    slug: (json['slug'] as String?)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        ...switch (createdBy) {
-          SdkPresent<String>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'digest': digest,
-        'id': id,
-        'itemCount': itemCount,
-        'ownerId': ownerId,
-        'sizeInBytes': sizeInBytes,
-        'slug': slug,
-        'updatedAt': updatedAt,
-      };
+    'createdAt': createdAt,
+    ...switch (createdBy) {
+      SdkPresent<String>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'digest': digest,
+    'id': id,
+    'itemCount': itemCount,
+    'ownerId': ownerId,
+    'sizeInBytes': sizeInBytes,
+    'slug': slug,
+    'updatedAt': updatedAt,
+  };
 }

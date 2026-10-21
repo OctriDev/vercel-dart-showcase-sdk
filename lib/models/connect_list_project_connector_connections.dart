@@ -8,47 +8,27 @@ part of 'connect.dart';
 class ConnectProjectConnectorConnectionList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Connector connections in this page.
   final List<ConnectProjectConnection> connectors;
-
   /// Cursor for the next page.
   final ConnectPagination pagination;
 
-  const ConnectProjectConnectorConnectionList(
-      {required this.connectors, required this.pagination});
+  const ConnectProjectConnectorConnectionList({required this.connectors, required this.pagination});
 
-  ConnectProjectConnectorConnectionList Function(
-      {List<ConnectProjectConnection> connectors,
-      ConnectPagination pagination}) get copyWith => _copyWith;
+  ConnectProjectConnectorConnectionList Function({List<ConnectProjectConnection> connectors, ConnectPagination pagination}) get copyWith => _copyWith;
 
-  ConnectProjectConnectorConnectionList _copyWith(
-          {Object? connectors = sdkOmittedValue,
-          Object? pagination = sdkOmittedValue}) =>
-      ConnectProjectConnectorConnectionList(
-        connectors: identical(connectors, sdkOmittedValue)
-            ? this.connectors
-            : connectors as List<ConnectProjectConnection>,
-        pagination: identical(pagination, sdkOmittedValue)
-            ? this.pagination
-            : pagination as ConnectPagination,
-      );
+  ConnectProjectConnectorConnectionList _copyWith({Object? connectors = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ConnectProjectConnectorConnectionList(
+    connectors: identical(connectors, sdkOmittedValue) ? this.connectors : connectors as List<ConnectProjectConnection>,
+    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ConnectPagination,
+  );
 
-  factory ConnectProjectConnectorConnectionList.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectProjectConnectorConnectionList(
-        connectors: ((json['connectors'] as List?)
-            ?.map((e) =>
-                ConnectProjectConnection.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        pagination: (json['pagination'] != null
-            ? ConnectPagination.fromJson(
-                json['pagination'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory ConnectProjectConnectorConnectionList.fromJson(Map<String, dynamic> json) => ConnectProjectConnectorConnectionList(
+    connectors: ((json['connectors'] as List?)?.map((e) => ConnectProjectConnection.fromJson(e as Map<String, dynamic>)).toList())!,
+    pagination: (json['pagination'] != null ? ConnectPagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectors': connectors.map((item) => item.toJson()).toList(),
-        'pagination': pagination.toJson(),
-      };
+    'connectors': connectors.map((item) => item.toJson()).toList(),
+    'pagination': pagination.toJson(),
+  };
 }

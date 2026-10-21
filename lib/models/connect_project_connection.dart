@@ -8,184 +8,108 @@ part of 'connect.dart';
 class ConnectProjectConnectionProjectCustomEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Stable custom environment ID.
   final String id;
-
   /// Current human-readable custom environment slug.
   final String slug;
 
-  const ConnectProjectConnectionProjectCustomEnvironmentsItem(
-      {required this.id, required this.slug});
+  const ConnectProjectConnectionProjectCustomEnvironmentsItem({required this.id, required this.slug});
 
-  ConnectProjectConnectionProjectCustomEnvironmentsItem Function(
-      {String id, String slug}) get copyWith => _copyWith;
+  ConnectProjectConnectionProjectCustomEnvironmentsItem Function({String id, String slug}) get copyWith => _copyWith;
 
-  ConnectProjectConnectionProjectCustomEnvironmentsItem _copyWith(
-          {Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue}) =>
-      ConnectProjectConnectionProjectCustomEnvironmentsItem(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-      );
+  ConnectProjectConnectionProjectCustomEnvironmentsItem _copyWith({Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue}) => ConnectProjectConnectionProjectCustomEnvironmentsItem(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+  );
 
-  factory ConnectProjectConnectionProjectCustomEnvironmentsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectProjectConnectionProjectCustomEnvironmentsItem(
-        id: (json['id'] as String?)!,
-        slug: (json['slug'] as String?)!,
-      );
+  factory ConnectProjectConnectionProjectCustomEnvironmentsItem.fromJson(Map<String, dynamic> json) => ConnectProjectConnectionProjectCustomEnvironmentsItem(
+    id: (json['id'] as String?)!,
+    slug: (json['slug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'slug': slug,
-      };
+    'id': id,
+    'slug': slug,
+  };
 }
 
 /// Vercel project connected to the connector.
 class ConnectProjectConnectionProject {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Custom environments available on the project. This list can include environments where the connector is not enabled.
-  final SdkOptional<List<ConnectProjectConnectionProjectCustomEnvironmentsItem>>
-      customEnvironments;
-
+  final SdkOptional<List<ConnectProjectConnectionProjectCustomEnvironmentsItem>> customEnvironments;
   /// Same Vercel project ID as the connection's top-level `projectId`.
   final String id;
-
   /// Current Vercel project name.
   final String name;
 
-  const ConnectProjectConnectionProject(
-      {this.customEnvironments = const SdkOmitted(),
-      required this.id,
-      required this.name});
+  const ConnectProjectConnectionProject({this.customEnvironments = const SdkOmitted(), required this.id, required this.name});
 
-  ConnectProjectConnectionProject Function(
-      {SdkOptional<List<ConnectProjectConnectionProjectCustomEnvironmentsItem>>
-          customEnvironments,
-      String id,
-      String name}) get copyWith => _copyWith;
+  ConnectProjectConnectionProject Function({SdkOptional<List<ConnectProjectConnectionProjectCustomEnvironmentsItem>> customEnvironments, String id, String name}) get copyWith => _copyWith;
 
-  ConnectProjectConnectionProject _copyWith(
-          {Object? customEnvironments = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue}) =>
-      ConnectProjectConnectionProject(
-        customEnvironments: identical(customEnvironments, sdkOmittedValue)
-            ? this.customEnvironments
-            : customEnvironments as SdkOptional<
-                List<ConnectProjectConnectionProjectCustomEnvironmentsItem>>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  ConnectProjectConnectionProject _copyWith({Object? customEnvironments = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => ConnectProjectConnectionProject(
+    customEnvironments: identical(customEnvironments, sdkOmittedValue) ? this.customEnvironments : customEnvironments as SdkOptional<List<ConnectProjectConnectionProjectCustomEnvironmentsItem>>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory ConnectProjectConnectionProject.fromJson(Map<String, dynamic> json) =>
-      ConnectProjectConnectionProject(
-        customEnvironments: json['customEnvironments'] != null
-            ? SdkPresent(((json['customEnvironments'] as List?)
-                ?.map((e) =>
-                    ConnectProjectConnectionProjectCustomEnvironmentsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-      );
+  factory ConnectProjectConnectionProject.fromJson(Map<String, dynamic> json) => ConnectProjectConnectionProject(
+    customEnvironments: json['customEnvironments'] != null ? SdkPresent(((json['customEnvironments'] as List?)?.map((e) => ConnectProjectConnectionProjectCustomEnvironmentsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (customEnvironments) {
-          SdkPresent<
-                List<ConnectProjectConnectionProjectCustomEnvironmentsItem>>(
-            value: final value
-          ) =>
-            {
-              'customEnvironments': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-      };
+    ...switch (customEnvironments) {
+      SdkPresent<List<ConnectProjectConnectionProjectCustomEnvironmentsItem>>(value: final value) => {'customEnvironments': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+  };
 }
 
 /// A connection between a connector and a Vercel project, including the environments where the connector is enabled.
 class ConnectProjectConnection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Stable `scl_` connector ID, even when the request used a UID.
   final String connectorId;
-
   /// Time when the project connection was created, in epoch milliseconds.
   final double createdAt;
-
   /// Environments where the connector is enabled for the project.
   final List<String> enabledEnvironments;
-
   /// Vercel project connected to the connector.
   final ConnectProjectConnectionProject project;
-
   /// Time when the project connection was last updated, in epoch milliseconds.
   final double updatedAt;
 
-  const ConnectProjectConnection(
-      {required this.connectorId,
-      required this.createdAt,
-      required this.enabledEnvironments,
-      required this.project,
-      required this.updatedAt});
+  const ConnectProjectConnection({required this.connectorId, required this.createdAt, required this.enabledEnvironments, required this.project, required this.updatedAt});
 
-  ConnectProjectConnection Function(
-      {String connectorId,
-      double createdAt,
-      List<String> enabledEnvironments,
-      ConnectProjectConnectionProject project,
-      double updatedAt}) get copyWith => _copyWith;
+  ConnectProjectConnection Function({String connectorId, double createdAt, List<String> enabledEnvironments, ConnectProjectConnectionProject project, double updatedAt}) get copyWith => _copyWith;
 
-  ConnectProjectConnection _copyWith(
-          {Object? connectorId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? enabledEnvironments = sdkOmittedValue,
-          Object? project = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      ConnectProjectConnection(
-        connectorId: identical(connectorId, sdkOmittedValue)
-            ? this.connectorId
-            : connectorId as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        enabledEnvironments: identical(enabledEnvironments, sdkOmittedValue)
-            ? this.enabledEnvironments
-            : enabledEnvironments as List<String>,
-        project: identical(project, sdkOmittedValue)
-            ? this.project
-            : project as ConnectProjectConnectionProject,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  ConnectProjectConnection _copyWith({Object? connectorId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? enabledEnvironments = sdkOmittedValue, Object? project = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ConnectProjectConnection(
+    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    enabledEnvironments: identical(enabledEnvironments, sdkOmittedValue) ? this.enabledEnvironments : enabledEnvironments as List<String>,
+    project: identical(project, sdkOmittedValue) ? this.project : project as ConnectProjectConnectionProject,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory ConnectProjectConnection.fromJson(Map<String, dynamic> json) =>
-      ConnectProjectConnection(
-        connectorId: (json['connectorId'] as String?)!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        enabledEnvironments: ((json['enabledEnvironments'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-        project: (json['project'] != null
-            ? ConnectProjectConnectionProject.fromJson(
-                json['project'] as Map<String, dynamic>)
-            : null)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory ConnectProjectConnection.fromJson(Map<String, dynamic> json) => ConnectProjectConnection(
+    connectorId: (json['connectorId'] as String?)!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    enabledEnvironments: ((json['enabledEnvironments'] as List?)?.map((e) => e as String).toList())!,
+    project: (json['project'] != null ? ConnectProjectConnectionProject.fromJson(json['project'] as Map<String, dynamic>) : null)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectorId': connectorId,
-        'createdAt': createdAt,
-        'enabledEnvironments': enabledEnvironments,
-        'project': project.toJson(),
-        'updatedAt': updatedAt,
-      };
+    'connectorId': connectorId,
+    'createdAt': createdAt,
+    'enabledEnvironments': enabledEnvironments,
+    'project': project.toJson(),
+    'updatedAt': updatedAt,
+  };
 }

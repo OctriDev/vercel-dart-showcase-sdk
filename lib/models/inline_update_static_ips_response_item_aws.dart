@@ -10,43 +10,27 @@ class UpdateStaticIpsResponseItemAws {
   final SdkOptional<String> securityGroupId;
   final List<String> subnetIds;
 
-  const UpdateStaticIpsResponseItemAws(
-      {this.securityGroupId = const SdkOmitted(), required this.subnetIds});
+  const UpdateStaticIpsResponseItemAws({this.securityGroupId = const SdkOmitted(), required this.subnetIds});
 
-  UpdateStaticIpsResponseItemAws Function(
-      {SdkOptional<String> securityGroupId,
-      List<String> subnetIds}) get copyWith => _copyWith;
+  UpdateStaticIpsResponseItemAws Function({SdkOptional<String> securityGroupId, List<String> subnetIds}) get copyWith => _copyWith;
 
-  UpdateStaticIpsResponseItemAws _copyWith(
-          {Object? securityGroupId = sdkOmittedValue,
-          Object? subnetIds = sdkOmittedValue}) =>
-      UpdateStaticIpsResponseItemAws(
-        securityGroupId: identical(securityGroupId, sdkOmittedValue)
-            ? this.securityGroupId
-            : securityGroupId as SdkOptional<String>,
-        subnetIds: identical(subnetIds, sdkOmittedValue)
-            ? this.subnetIds
-            : subnetIds as List<String>,
-      );
+  UpdateStaticIpsResponseItemAws _copyWith({Object? securityGroupId = sdkOmittedValue, Object? subnetIds = sdkOmittedValue}) => UpdateStaticIpsResponseItemAws(
+    securityGroupId: identical(securityGroupId, sdkOmittedValue) ? this.securityGroupId : securityGroupId as SdkOptional<String>,
+    subnetIds: identical(subnetIds, sdkOmittedValue) ? this.subnetIds : subnetIds as List<String>,
+  );
 
-  factory UpdateStaticIpsResponseItemAws.fromJson(Map<String, dynamic> json) =>
-      UpdateStaticIpsResponseItemAws(
-        securityGroupId: json['securityGroupId'] != null
-            ? SdkPresent((json['securityGroupId'] as String?)!)
-            : const SdkOmitted(),
-        subnetIds:
-            ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory UpdateStaticIpsResponseItemAws.fromJson(Map<String, dynamic> json) => UpdateStaticIpsResponseItemAws(
+    securityGroupId: json['securityGroupId'] != null ? SdkPresent((json['securityGroupId'] as String?)!) : const SdkOmitted(),
+    subnetIds: ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (securityGroupId) {
-          SdkPresent<String>(value: final value) => {
-              'securityGroupId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'subnetIds': subnetIds,
-      };
+    ...switch (securityGroupId) {
+      SdkPresent<String>(value: final value) => {'securityGroupId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'subnetIds': subnetIds,
+  };
 }
 
 class UpdateStaticIpsResponseItem {
@@ -61,106 +45,48 @@ class UpdateStaticIpsResponseItem {
   final UpdateStaticIpsResponseItemPassive passive;
   final double updatedAt;
 
-  const UpdateStaticIpsResponseItem(
-      {this.aws = const SdkOmitted(),
-      required this.buildsEnabled,
-      required this.connectConfigurationId,
-      required this.createdAt,
-      this.dc = const SdkOmitted(),
-      required this.envId,
-      required this.passive,
-      required this.updatedAt});
+  const UpdateStaticIpsResponseItem({this.aws = const SdkOmitted(), required this.buildsEnabled, required this.connectConfigurationId, required this.createdAt, this.dc = const SdkOmitted(), required this.envId, required this.passive, required this.updatedAt});
 
-  UpdateStaticIpsResponseItem Function(
-      {SdkOptional<UpdateStaticIpsResponseItemAws> aws,
-      UpdateStaticIpsResponseItemBuildsEnabled buildsEnabled,
-      String connectConfigurationId,
-      double createdAt,
-      SdkOptional<String> dc,
-      String envId,
-      UpdateStaticIpsResponseItemPassive passive,
-      double updatedAt}) get copyWith => _copyWith;
+  UpdateStaticIpsResponseItem Function({SdkOptional<UpdateStaticIpsResponseItemAws> aws, UpdateStaticIpsResponseItemBuildsEnabled buildsEnabled, String connectConfigurationId, double createdAt, SdkOptional<String> dc, String envId, UpdateStaticIpsResponseItemPassive passive, double updatedAt}) get copyWith => _copyWith;
 
-  UpdateStaticIpsResponseItem _copyWith(
-          {Object? aws = sdkOmittedValue,
-          Object? buildsEnabled = sdkOmittedValue,
-          Object? connectConfigurationId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? dc = sdkOmittedValue,
-          Object? envId = sdkOmittedValue,
-          Object? passive = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UpdateStaticIpsResponseItem(
-        aws: identical(aws, sdkOmittedValue)
-            ? this.aws
-            : aws as SdkOptional<UpdateStaticIpsResponseItemAws>,
-        buildsEnabled: identical(buildsEnabled, sdkOmittedValue)
-            ? this.buildsEnabled
-            : buildsEnabled as UpdateStaticIpsResponseItemBuildsEnabled,
-        connectConfigurationId:
-            identical(connectConfigurationId, sdkOmittedValue)
-                ? this.connectConfigurationId
-                : connectConfigurationId as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        dc: identical(dc, sdkOmittedValue)
-            ? this.dc
-            : dc as SdkOptional<String>,
-        envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
-        passive: identical(passive, sdkOmittedValue)
-            ? this.passive
-            : passive as UpdateStaticIpsResponseItemPassive,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  UpdateStaticIpsResponseItem _copyWith({Object? aws = sdkOmittedValue, Object? buildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? dc = sdkOmittedValue, Object? envId = sdkOmittedValue, Object? passive = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateStaticIpsResponseItem(
+    aws: identical(aws, sdkOmittedValue) ? this.aws : aws as SdkOptional<UpdateStaticIpsResponseItemAws>,
+    buildsEnabled: identical(buildsEnabled, sdkOmittedValue) ? this.buildsEnabled : buildsEnabled as UpdateStaticIpsResponseItemBuildsEnabled,
+    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    dc: identical(dc, sdkOmittedValue) ? this.dc : dc as SdkOptional<String>,
+    envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
+    passive: identical(passive, sdkOmittedValue) ? this.passive : passive as UpdateStaticIpsResponseItemPassive,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory UpdateStaticIpsResponseItem.fromJson(Map<String, dynamic> json) =>
-      UpdateStaticIpsResponseItem(
-        aws: json['aws'] != null
-            ? SdkPresent((json['aws'] != null
-                ? UpdateStaticIpsResponseItemAws.fromJson(
-                    json['aws'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        buildsEnabled: (json['buildsEnabled'] != null
-            ? UpdateStaticIpsResponseItemBuildsEnabled.fromJson(
-                json['buildsEnabled'] as bool)
-            : null)!,
-        connectConfigurationId: (json['connectConfigurationId'] as String?)!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        dc: json['dc'] != null
-            ? SdkPresent((json['dc'] as String?)!)
-            : const SdkOmitted(),
-        envId: (json['envId'] as String?)!,
-        passive: (json['passive'] != null
-            ? UpdateStaticIpsResponseItemPassive.fromJson(
-                json['passive'] as bool)
-            : null)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory UpdateStaticIpsResponseItem.fromJson(Map<String, dynamic> json) => UpdateStaticIpsResponseItem(
+    aws: json['aws'] != null ? SdkPresent((json['aws'] != null ? UpdateStaticIpsResponseItemAws.fromJson(json['aws'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    buildsEnabled: (json['buildsEnabled'] != null ? UpdateStaticIpsResponseItemBuildsEnabled.fromJson(json['buildsEnabled'] as bool) : null)!,
+    connectConfigurationId: (json['connectConfigurationId'] as String?)!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    dc: json['dc'] != null ? SdkPresent((json['dc'] as String?)!) : const SdkOmitted(),
+    envId: (json['envId'] as String?)!,
+    passive: (json['passive'] != null ? UpdateStaticIpsResponseItemPassive.fromJson(json['passive'] as bool) : null)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (aws) {
-          SdkPresent<UpdateStaticIpsResponseItemAws>(value: final value) => {
-              'aws': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'buildsEnabled': buildsEnabled.toJson(),
-        'connectConfigurationId': connectConfigurationId,
-        'createdAt': createdAt,
-        ...switch (dc) {
-          SdkPresent<String>(value: final value) => {
-              'dc': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'envId': envId,
-        'passive': passive.toJson(),
-        'updatedAt': updatedAt,
-      };
+    ...switch (aws) {
+      SdkPresent<UpdateStaticIpsResponseItemAws>(value: final value) => {'aws': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'buildsEnabled': buildsEnabled.toJson(),
+    'connectConfigurationId': connectConfigurationId,
+    'createdAt': createdAt,
+    ...switch (dc) {
+      SdkPresent<String>(value: final value) => {'dc': value,},
+      _ => const <String, dynamic>{},
+    },
+    'envId': envId,
+    'passive': passive.toJson(),
+    'updatedAt': updatedAt,
+  };
 }
 
 class GetConnectorTokenRequestBodyAuthorizationDetailsItem {
@@ -169,194 +95,95 @@ class GetConnectorTokenRequestBodyAuthorizationDetailsItem {
   final SdkOptional<String> type_;
   final Map<String, dynamic> additionalProperties;
 
-  const GetConnectorTokenRequestBodyAuthorizationDetailsItem(
-      {this.type_ = const SdkOmitted(),
-      this.additionalProperties = const <String, dynamic>{}});
+  const GetConnectorTokenRequestBodyAuthorizationDetailsItem({this.type_ = const SdkOmitted(), this.additionalProperties = const <String, dynamic>{}});
 
-  GetConnectorTokenRequestBodyAuthorizationDetailsItem Function(
-      {SdkOptional<String> type_}) get copyWith => _copyWith;
+  GetConnectorTokenRequestBodyAuthorizationDetailsItem Function({SdkOptional<String> type_}) get copyWith => _copyWith;
 
-  GetConnectorTokenRequestBodyAuthorizationDetailsItem _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      GetConnectorTokenRequestBodyAuthorizationDetailsItem(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SdkOptional<String>,
-        additionalProperties: additionalProperties,
-      );
+  GetConnectorTokenRequestBodyAuthorizationDetailsItem _copyWith({Object? type_ = sdkOmittedValue}) => GetConnectorTokenRequestBodyAuthorizationDetailsItem(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<String>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory GetConnectorTokenRequestBodyAuthorizationDetailsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetConnectorTokenRequestBodyAuthorizationDetailsItem(
-        type_: json['type'] != null
-            ? SdkPresent((json['type'] as String?)!)
-            : const SdkOmitted(),
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{'type'}.contains(key)),
-      );
+  factory GetConnectorTokenRequestBodyAuthorizationDetailsItem.fromJson(Map<String, dynamic> json) => GetConnectorTokenRequestBodyAuthorizationDetailsItem(
+    type_: json['type'] != null ? SdkPresent((json['type'] as String?)!) : const SdkOmitted(),
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        ...switch (type_) {
-          SdkPresent<String>(value: final value) => {
-              'type': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...additionalProperties,
+    ...switch (type_) {
+      SdkPresent<String>(value: final value) => {'type': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetConnectorTokenRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Typed representation of the `GetConnectorTokenRequestSubject` API schema.
   final SdkOptional<GetConnectorTokenRequestSubject> subject;
   final SdkOptional<String> installationId;
   final SdkOptional<List<String>> audience;
   final SdkOptional<List<String>> scopes;
   final SdkOptional<List<String>> resources;
-  final SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>
-      authorizationDetails;
+  final SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>> authorizationDetails;
   final SdkOptional<double> validityBufferMs;
 
-  const GetConnectorTokenRequestBody(
-      {this.subject = const SdkOmitted(),
-      this.installationId = const SdkOmitted(),
-      this.audience = const SdkOmitted(),
-      this.scopes = const SdkOmitted(),
-      this.resources = const SdkOmitted(),
-      this.authorizationDetails = const SdkOmitted(),
-      this.validityBufferMs = const SdkOmitted()});
+  const GetConnectorTokenRequestBody({this.subject = const SdkOmitted(), this.installationId = const SdkOmitted(), this.audience = const SdkOmitted(), this.scopes = const SdkOmitted(), this.resources = const SdkOmitted(), this.authorizationDetails = const SdkOmitted(), this.validityBufferMs = const SdkOmitted()});
 
-  GetConnectorTokenRequestBody Function(
-      {SdkOptional<GetConnectorTokenRequestSubject> subject,
-      SdkOptional<String> installationId,
-      SdkOptional<List<String>> audience,
-      SdkOptional<List<String>> scopes,
-      SdkOptional<List<String>> resources,
-      SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>
-          authorizationDetails,
-      SdkOptional<double> validityBufferMs}) get copyWith => _copyWith;
+  GetConnectorTokenRequestBody Function({SdkOptional<GetConnectorTokenRequestSubject> subject, SdkOptional<String> installationId, SdkOptional<List<String>> audience, SdkOptional<List<String>> scopes, SdkOptional<List<String>> resources, SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>> authorizationDetails, SdkOptional<double> validityBufferMs}) get copyWith => _copyWith;
 
-  GetConnectorTokenRequestBody _copyWith(
-          {Object? subject = sdkOmittedValue,
-          Object? installationId = sdkOmittedValue,
-          Object? audience = sdkOmittedValue,
-          Object? scopes = sdkOmittedValue,
-          Object? resources = sdkOmittedValue,
-          Object? authorizationDetails = sdkOmittedValue,
-          Object? validityBufferMs = sdkOmittedValue}) =>
-      GetConnectorTokenRequestBody(
-        subject: identical(subject, sdkOmittedValue)
-            ? this.subject
-            : subject as SdkOptional<GetConnectorTokenRequestSubject>,
-        installationId: identical(installationId, sdkOmittedValue)
-            ? this.installationId
-            : installationId as SdkOptional<String>,
-        audience: identical(audience, sdkOmittedValue)
-            ? this.audience
-            : audience as SdkOptional<List<String>>,
-        scopes: identical(scopes, sdkOmittedValue)
-            ? this.scopes
-            : scopes as SdkOptional<List<String>>,
-        resources: identical(resources, sdkOmittedValue)
-            ? this.resources
-            : resources as SdkOptional<List<String>>,
-        authorizationDetails: identical(authorizationDetails, sdkOmittedValue)
-            ? this.authorizationDetails
-            : authorizationDetails as SdkOptional<
-                List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>,
-        validityBufferMs: identical(validityBufferMs, sdkOmittedValue)
-            ? this.validityBufferMs
-            : validityBufferMs as SdkOptional<double>,
-      );
+  GetConnectorTokenRequestBody _copyWith({Object? subject = sdkOmittedValue, Object? installationId = sdkOmittedValue, Object? audience = sdkOmittedValue, Object? scopes = sdkOmittedValue, Object? resources = sdkOmittedValue, Object? authorizationDetails = sdkOmittedValue, Object? validityBufferMs = sdkOmittedValue}) => GetConnectorTokenRequestBody(
+    subject: identical(subject, sdkOmittedValue) ? this.subject : subject as SdkOptional<GetConnectorTokenRequestSubject>,
+    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as SdkOptional<String>,
+    audience: identical(audience, sdkOmittedValue) ? this.audience : audience as SdkOptional<List<String>>,
+    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as SdkOptional<List<String>>,
+    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as SdkOptional<List<String>>,
+    authorizationDetails: identical(authorizationDetails, sdkOmittedValue) ? this.authorizationDetails : authorizationDetails as SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>,
+    validityBufferMs: identical(validityBufferMs, sdkOmittedValue) ? this.validityBufferMs : validityBufferMs as SdkOptional<double>,
+  );
 
-  factory GetConnectorTokenRequestBody.fromJson(Map<String, dynamic> json) =>
-      GetConnectorTokenRequestBody(
-        subject: json['subject'] != null
-            ? SdkPresent((json['subject'] != null
-                ? GetConnectorTokenRequestSubject.fromJson(json['subject'])
-                : null)!)
-            : const SdkOmitted(),
-        installationId: json['installationId'] != null
-            ? SdkPresent((json['installationId'] as String?)!)
-            : const SdkOmitted(),
-        audience: json['audience'] != null
-            ? SdkPresent(((json['audience'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        scopes: json['scopes'] != null
-            ? SdkPresent(
-                ((json['scopes'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        resources: json['resources'] != null
-            ? SdkPresent(((json['resources'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        authorizationDetails: json['authorizationDetails'] != null
-            ? SdkPresent(((json['authorizationDetails'] as List?)
-                ?.map((e) =>
-                    GetConnectorTokenRequestBodyAuthorizationDetailsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        validityBufferMs: json['validityBufferMs'] != null
-            ? SdkPresent(((json['validityBufferMs'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory GetConnectorTokenRequestBody.fromJson(Map<String, dynamic> json) => GetConnectorTokenRequestBody(
+    subject: json['subject'] != null ? SdkPresent((json['subject'] != null ? GetConnectorTokenRequestSubject.fromJson(json['subject']) : null)!) : const SdkOmitted(),
+    installationId: json['installationId'] != null ? SdkPresent((json['installationId'] as String?)!) : const SdkOmitted(),
+    audience: json['audience'] != null ? SdkPresent(((json['audience'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    scopes: json['scopes'] != null ? SdkPresent(((json['scopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    resources: json['resources'] != null ? SdkPresent(((json['resources'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    authorizationDetails: json['authorizationDetails'] != null ? SdkPresent(((json['authorizationDetails'] as List?)?.map((e) => GetConnectorTokenRequestBodyAuthorizationDetailsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    validityBufferMs: json['validityBufferMs'] != null ? SdkPresent(((json['validityBufferMs'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (subject) {
-          SdkPresent<GetConnectorTokenRequestSubject>(value: final value) => {
-              'subject': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (installationId) {
-          SdkPresent<String>(value: final value) => {
-              'installationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (audience) {
-          SdkPresent<List<String>>(value: final value) => {
-              'audience': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scopes) {
-          SdkPresent<List<String>>(value: final value) => {
-              'scopes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (resources) {
-          SdkPresent<List<String>>(value: final value) => {
-              'resources': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (authorizationDetails) {
-          SdkPresent<
-                List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>(
-            value: final value
-          ) =>
-            {
-              'authorizationDetails':
-                  value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (validityBufferMs) {
-          SdkPresent<double>(value: final value) => {
-              'validityBufferMs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (subject) {
+      SdkPresent<GetConnectorTokenRequestSubject>(value: final value) => {'subject': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (installationId) {
+      SdkPresent<String>(value: final value) => {'installationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (audience) {
+      SdkPresent<List<String>>(value: final value) => {'audience': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scopes) {
+      SdkPresent<List<String>>(value: final value) => {'scopes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (resources) {
+      SdkPresent<List<String>>(value: final value) => {'resources': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (authorizationDetails) {
+      SdkPresent<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>(value: final value) => {'authorizationDetails': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (validityBufferMs) {
+      SdkPresent<double>(value: final value) => {'validityBufferMs': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetConnectorTokenResponseConnector {
@@ -366,33 +193,25 @@ class GetConnectorTokenResponseConnector {
   final String type_;
   final String uid;
 
-  const GetConnectorTokenResponseConnector(
-      {required this.id, required this.type_, required this.uid});
+  const GetConnectorTokenResponseConnector({required this.id, required this.type_, required this.uid});
 
-  GetConnectorTokenResponseConnector Function(
-      {String id, String type_, String uid}) get copyWith => _copyWith;
+  GetConnectorTokenResponseConnector Function({String id, String type_, String uid}) get copyWith => _copyWith;
 
-  GetConnectorTokenResponseConnector _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? uid = sdkOmittedValue}) =>
-      GetConnectorTokenResponseConnector(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-      );
+  GetConnectorTokenResponseConnector _copyWith({Object? id = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? uid = sdkOmittedValue}) => GetConnectorTokenResponseConnector(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+  );
 
-  factory GetConnectorTokenResponseConnector.fromJson(
-          Map<String, dynamic> json) =>
-      GetConnectorTokenResponseConnector(
-        id: (json['id'] as String?)!,
-        type_: (json['type'] as String?)!,
-        uid: (json['uid'] as String?)!,
-      );
+  factory GetConnectorTokenResponseConnector.fromJson(Map<String, dynamic> json) => GetConnectorTokenResponseConnector(
+    id: (json['id'] as String?)!,
+    type_: (json['type'] as String?)!,
+    uid: (json['uid'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'type': type_,
-        'uid': uid,
-      };
+    'id': id,
+    'type': type_,
+    'uid': uid,
+  };
 }

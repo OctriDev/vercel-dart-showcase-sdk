@@ -7,109 +7,54 @@ part of 'inline.dart';
 class CreateProjectResponseServicesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Framework slug, when the service has one (omitted otherwise).
   final SdkOptional<CreateProjectResponseServicesItemFramework> framework;
-
   /// Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds.
   final SdkOptional<String> runtime;
-
   /// Service name from the deployment (Service.name).
   final String serviceName;
-
   /// Service kind (Service.type). Omitted for schemas that do not define one.
   final SdkOptional<CreateProjectResponseServicesItemServiceType> serviceType;
 
-  const CreateProjectResponseServicesItem(
-      {this.framework = const SdkOmitted(),
-      this.runtime = const SdkOmitted(),
-      required this.serviceName,
-      this.serviceType = const SdkOmitted()});
+  const CreateProjectResponseServicesItem({this.framework = const SdkOmitted(), this.runtime = const SdkOmitted(), required this.serviceName, this.serviceType = const SdkOmitted()});
 
-  CreateProjectResponseServicesItem Function(
-      {SdkOptional<CreateProjectResponseServicesItemFramework> framework,
-      SdkOptional<String> runtime,
-      String serviceName,
-      SdkOptional<CreateProjectResponseServicesItemServiceType>
-          serviceType}) get copyWith => _copyWith;
+  CreateProjectResponseServicesItem Function({SdkOptional<CreateProjectResponseServicesItemFramework> framework, SdkOptional<String> runtime, String serviceName, SdkOptional<CreateProjectResponseServicesItemServiceType> serviceType}) get copyWith => _copyWith;
 
-  CreateProjectResponseServicesItem _copyWith(
-          {Object? framework = sdkOmittedValue,
-          Object? runtime = sdkOmittedValue,
-          Object? serviceName = sdkOmittedValue,
-          Object? serviceType = sdkOmittedValue}) =>
-      CreateProjectResponseServicesItem(
-        framework: identical(framework, sdkOmittedValue)
-            ? this.framework
-            : framework
-                as SdkOptional<CreateProjectResponseServicesItemFramework>,
-        runtime: identical(runtime, sdkOmittedValue)
-            ? this.runtime
-            : runtime as SdkOptional<String>,
-        serviceName: identical(serviceName, sdkOmittedValue)
-            ? this.serviceName
-            : serviceName as String,
-        serviceType: identical(serviceType, sdkOmittedValue)
-            ? this.serviceType
-            : serviceType
-                as SdkOptional<CreateProjectResponseServicesItemServiceType>,
-      );
+  CreateProjectResponseServicesItem _copyWith({Object? framework = sdkOmittedValue, Object? runtime = sdkOmittedValue, Object? serviceName = sdkOmittedValue, Object? serviceType = sdkOmittedValue}) => CreateProjectResponseServicesItem(
+    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<CreateProjectResponseServicesItemFramework>,
+    runtime: identical(runtime, sdkOmittedValue) ? this.runtime : runtime as SdkOptional<String>,
+    serviceName: identical(serviceName, sdkOmittedValue) ? this.serviceName : serviceName as String,
+    serviceType: identical(serviceType, sdkOmittedValue) ? this.serviceType : serviceType as SdkOptional<CreateProjectResponseServicesItemServiceType>,
+  );
 
-  factory CreateProjectResponseServicesItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseServicesItem(
-        framework: json['framework'] != null
-            ? SdkPresent((json['framework'] != null
-                ? CreateProjectResponseServicesItemFramework.fromJson(
-                    json['framework'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        runtime: json['runtime'] != null
-            ? SdkPresent((json['runtime'] as String?)!)
-            : const SdkOmitted(),
-        serviceName: (json['serviceName'] as String?)!,
-        serviceType: json['serviceType'] != null
-            ? SdkPresent((json['serviceType'] != null
-                ? CreateProjectResponseServicesItemServiceType.fromJson(
-                    json['serviceType'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectResponseServicesItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseServicesItem(
+    framework: json['framework'] != null ? SdkPresent((json['framework'] != null ? CreateProjectResponseServicesItemFramework.fromJson(json['framework'] as String) : null)!) : const SdkOmitted(),
+    runtime: json['runtime'] != null ? SdkPresent((json['runtime'] as String?)!) : const SdkOmitted(),
+    serviceName: (json['serviceName'] as String?)!,
+    serviceType: json['serviceType'] != null ? SdkPresent((json['serviceType'] != null ? CreateProjectResponseServicesItemServiceType.fromJson(json['serviceType'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (framework) {
-          SdkPresent<CreateProjectResponseServicesItemFramework>(
-            value: final value
-          ) =>
-            {
-              'framework': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (runtime) {
-          SdkPresent<String>(value: final value) => {
-              'runtime': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'serviceName': serviceName,
-        ...switch (serviceType) {
-          SdkPresent<CreateProjectResponseServicesItemServiceType>(
-            value: final value
-          ) =>
-            {
-              'serviceType': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (framework) {
+      SdkPresent<CreateProjectResponseServicesItemFramework>(value: final value) => {'framework': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (runtime) {
+      SdkPresent<String>(value: final value) => {'runtime': value,},
+      _ => const <String, dynamic>{},
+    },
+    'serviceName': serviceName,
+    ...switch (serviceType) {
+      SdkPresent<CreateProjectResponseServicesItemServiceType>(value: final value) => {'serviceType': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateProjectResponseSpeedInsights {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> canceledAt;
-
   /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
   final SdkOptional<double> dataReceivedAt;
   final SdkOptional<double> disabledAt;
@@ -118,223 +63,93 @@ class CreateProjectResponseSpeedInsights {
   final String id;
   final SdkOptional<double> paidAt;
 
-  const CreateProjectResponseSpeedInsights(
-      {this.canceledAt = const SdkOmitted(),
-      this.dataReceivedAt = const SdkOmitted(),
-      this.disabledAt = const SdkOmitted(),
-      this.enabledAt = const SdkOmitted(),
-      this.hasData = const SdkOmitted(),
-      required this.id,
-      this.paidAt = const SdkOmitted()});
+  const CreateProjectResponseSpeedInsights({this.canceledAt = const SdkOmitted(), this.dataReceivedAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id, this.paidAt = const SdkOmitted()});
 
-  CreateProjectResponseSpeedInsights Function(
-      {SdkOptional<double> canceledAt,
-      SdkOptional<double> dataReceivedAt,
-      SdkOptional<double> disabledAt,
-      SdkOptional<double> enabledAt,
-      SdkOptional<CreateProjectResponseSpeedInsightsHasData> hasData,
-      String id,
-      SdkOptional<double> paidAt}) get copyWith => _copyWith;
+  CreateProjectResponseSpeedInsights Function({SdkOptional<double> canceledAt, SdkOptional<double> dataReceivedAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<CreateProjectResponseSpeedInsightsHasData> hasData, String id, SdkOptional<double> paidAt}) get copyWith => _copyWith;
 
-  CreateProjectResponseSpeedInsights _copyWith(
-          {Object? canceledAt = sdkOmittedValue,
-          Object? dataReceivedAt = sdkOmittedValue,
-          Object? disabledAt = sdkOmittedValue,
-          Object? enabledAt = sdkOmittedValue,
-          Object? hasData = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? paidAt = sdkOmittedValue}) =>
-      CreateProjectResponseSpeedInsights(
-        canceledAt: identical(canceledAt, sdkOmittedValue)
-            ? this.canceledAt
-            : canceledAt as SdkOptional<double>,
-        dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue)
-            ? this.dataReceivedAt
-            : dataReceivedAt as SdkOptional<double>,
-        disabledAt: identical(disabledAt, sdkOmittedValue)
-            ? this.disabledAt
-            : disabledAt as SdkOptional<double>,
-        enabledAt: identical(enabledAt, sdkOmittedValue)
-            ? this.enabledAt
-            : enabledAt as SdkOptional<double>,
-        hasData: identical(hasData, sdkOmittedValue)
-            ? this.hasData
-            : hasData as SdkOptional<CreateProjectResponseSpeedInsightsHasData>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        paidAt: identical(paidAt, sdkOmittedValue)
-            ? this.paidAt
-            : paidAt as SdkOptional<double>,
-      );
+  CreateProjectResponseSpeedInsights _copyWith({Object? canceledAt = sdkOmittedValue, Object? dataReceivedAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue}) => CreateProjectResponseSpeedInsights(
+    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
+    dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue) ? this.dataReceivedAt : dataReceivedAt as SdkOptional<double>,
+    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
+    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
+    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<CreateProjectResponseSpeedInsightsHasData>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
+  );
 
-  factory CreateProjectResponseSpeedInsights.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseSpeedInsights(
-        canceledAt: json['canceledAt'] != null
-            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        dataReceivedAt: json['dataReceivedAt'] != null
-            ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        disabledAt: json['disabledAt'] != null
-            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        enabledAt: json['enabledAt'] != null
-            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        hasData: json['hasData'] != null
-            ? SdkPresent((json['hasData'] != null
-                ? CreateProjectResponseSpeedInsightsHasData.fromJson(
-                    json['hasData'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        paidAt: json['paidAt'] != null
-            ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectResponseSpeedInsights.fromJson(Map<String, dynamic> json) => CreateProjectResponseSpeedInsights(
+    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    dataReceivedAt: json['dataReceivedAt'] != null ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? CreateProjectResponseSpeedInsightsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (canceledAt) {
-          SdkPresent<double>(value: final value) => {
-              'canceledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (dataReceivedAt) {
-          SdkPresent<double>(value: final value) => {
-              'dataReceivedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'disabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'enabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hasData) {
-          SdkPresent<CreateProjectResponseSpeedInsightsHasData>(
-            value: final value
-          ) =>
-            {
-              'hasData': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (paidAt) {
-          SdkPresent<double>(value: final value) => {
-              'paidAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (canceledAt) {
+      SdkPresent<double>(value: final value) => {'canceledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (dataReceivedAt) {
+      SdkPresent<double>(value: final value) => {'dataReceivedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disabledAt) {
+      SdkPresent<double>(value: final value) => {'disabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enabledAt) {
+      SdkPresent<double>(value: final value) => {'enabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hasData) {
+      SdkPresent<CreateProjectResponseSpeedInsightsHasData>(value: final value) => {'hasData': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (paidAt) {
+      SdkPresent<double>(value: final value) => {'paidAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateProjectResponseSsoProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>
-      april2026SecurityIncidentMigrationAppliedFrom;
-  final SdkOptional<
-          CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?>
-      cve55182MigrationAppliedFrom;
+  final SdkOptional<CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom;
+  final SdkOptional<CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom;
   final CreateProjectResponseSsoProtectionDeploymentType deploymentType;
 
-  const CreateProjectResponseSsoProtection(
-      {this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(),
-      this.cve55182MigrationAppliedFrom = const SdkOmitted(),
-      required this.deploymentType});
+  const CreateProjectResponseSsoProtection({this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(), this.cve55182MigrationAppliedFrom = const SdkOmitted(), required this.deploymentType});
 
-  CreateProjectResponseSsoProtection Function(
-      {SdkOptional<
-              CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>
-          april2026SecurityIncidentMigrationAppliedFrom,
-      SdkOptional<
-              CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?>
-          cve55182MigrationAppliedFrom,
-      CreateProjectResponseSsoProtectionDeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  CreateProjectResponseSsoProtection Function({SdkOptional<CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom, SdkOptional<CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom, CreateProjectResponseSsoProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
 
-  CreateProjectResponseSsoProtection _copyWith(
-          {Object? april2026SecurityIncidentMigrationAppliedFrom =
-              sdkOmittedValue,
-          Object? cve55182MigrationAppliedFrom = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue}) =>
-      CreateProjectResponseSsoProtection(
-        april2026SecurityIncidentMigrationAppliedFrom: identical(
-                april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue)
-            ? this.april2026SecurityIncidentMigrationAppliedFrom
-            : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<
-                CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>,
-        cve55182MigrationAppliedFrom: identical(
-                cve55182MigrationAppliedFrom, sdkOmittedValue)
-            ? this.cve55182MigrationAppliedFrom
-            : cve55182MigrationAppliedFrom as SdkOptional<
-                CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?>,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as CreateProjectResponseSsoProtectionDeploymentType,
-      );
+  CreateProjectResponseSsoProtection _copyWith({Object? april2026SecurityIncidentMigrationAppliedFrom = sdkOmittedValue, Object? cve55182MigrationAppliedFrom = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => CreateProjectResponseSsoProtection(
+    april2026SecurityIncidentMigrationAppliedFrom: identical(april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue) ? this.april2026SecurityIncidentMigrationAppliedFrom : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>,
+    cve55182MigrationAppliedFrom: identical(cve55182MigrationAppliedFrom, sdkOmittedValue) ? this.cve55182MigrationAppliedFrom : cve55182MigrationAppliedFrom as SdkOptional<CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?>,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as CreateProjectResponseSsoProtectionDeploymentType,
+  );
 
-  factory CreateProjectResponseSsoProtection.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseSsoProtection(
-        april2026SecurityIncidentMigrationAppliedFrom: json
-                .containsKey('april2026SecurityIncidentMigrationAppliedFrom')
-            ? SdkPresent(json[
-                        'april2026SecurityIncidentMigrationAppliedFrom'] !=
-                    null
-                ? CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
-                    .fromJson(
-                        json['april2026SecurityIncidentMigrationAppliedFrom']
-                            as String)
-                : null)
-            : const SdkOmitted(),
-        cve55182MigrationAppliedFrom: json
-                .containsKey('cve55182MigrationAppliedFrom')
-            ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null
-                ? CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom
-                    .fromJson(json['cve55182MigrationAppliedFrom'] as String)
-                : null)
-            : const SdkOmitted(),
-        deploymentType: (json['deploymentType'] != null
-            ? CreateProjectResponseSsoProtectionDeploymentType.fromJson(
-                json['deploymentType'] as String)
-            : null)!,
-      );
+  factory CreateProjectResponseSsoProtection.fromJson(Map<String, dynamic> json) => CreateProjectResponseSsoProtection(
+    april2026SecurityIncidentMigrationAppliedFrom: json.containsKey('april2026SecurityIncidentMigrationAppliedFrom') ? SdkPresent(json['april2026SecurityIncidentMigrationAppliedFrom'] != null ? CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom.fromJson(json['april2026SecurityIncidentMigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
+    cve55182MigrationAppliedFrom: json.containsKey('cve55182MigrationAppliedFrom') ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null ? CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom.fromJson(json['cve55182MigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
+    deploymentType: (json['deploymentType'] != null ? CreateProjectResponseSsoProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
-          SdkPresent<
-                CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>(
-            value: final value
-          ) =>
-            {
-              'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (cve55182MigrationAppliedFrom) {
-          SdkPresent<
-                CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?>(
-            value: final value
-          ) =>
-            {
-              'cve55182MigrationAppliedFrom': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deploymentType': deploymentType.toJson(),
-      };
+    ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
+      SdkPresent<CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>(value: final value) => {'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (cve55182MigrationAppliedFrom) {
+      SdkPresent<CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom?>(value: final value) => {'cve55182MigrationAppliedFrom': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 class CreateProjectResponseStaticIps {
@@ -344,49 +159,27 @@ class CreateProjectResponseStaticIps {
   final CreateProjectResponseStaticIpsEnabled enabled;
   final List<String> regions;
 
-  const CreateProjectResponseStaticIps(
-      {required this.builds, required this.enabled, required this.regions});
+  const CreateProjectResponseStaticIps({required this.builds, required this.enabled, required this.regions});
 
-  CreateProjectResponseStaticIps Function(
-      {CreateProjectResponseStaticIpsBuilds builds,
-      CreateProjectResponseStaticIpsEnabled enabled,
-      List<String> regions}) get copyWith => _copyWith;
+  CreateProjectResponseStaticIps Function({CreateProjectResponseStaticIpsBuilds builds, CreateProjectResponseStaticIpsEnabled enabled, List<String> regions}) get copyWith => _copyWith;
 
-  CreateProjectResponseStaticIps _copyWith(
-          {Object? builds = sdkOmittedValue,
-          Object? enabled = sdkOmittedValue,
-          Object? regions = sdkOmittedValue}) =>
-      CreateProjectResponseStaticIps(
-        builds: identical(builds, sdkOmittedValue)
-            ? this.builds
-            : builds as CreateProjectResponseStaticIpsBuilds,
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as CreateProjectResponseStaticIpsEnabled,
-        regions: identical(regions, sdkOmittedValue)
-            ? this.regions
-            : regions as List<String>,
-      );
+  CreateProjectResponseStaticIps _copyWith({Object? builds = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? regions = sdkOmittedValue}) => CreateProjectResponseStaticIps(
+    builds: identical(builds, sdkOmittedValue) ? this.builds : builds as CreateProjectResponseStaticIpsBuilds,
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as CreateProjectResponseStaticIpsEnabled,
+    regions: identical(regions, sdkOmittedValue) ? this.regions : regions as List<String>,
+  );
 
-  factory CreateProjectResponseStaticIps.fromJson(Map<String, dynamic> json) =>
-      CreateProjectResponseStaticIps(
-        builds: (json['builds'] != null
-            ? CreateProjectResponseStaticIpsBuilds.fromJson(
-                json['builds'] as bool)
-            : null)!,
-        enabled: (json['enabled'] != null
-            ? CreateProjectResponseStaticIpsEnabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        regions:
-            ((json['regions'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory CreateProjectResponseStaticIps.fromJson(Map<String, dynamic> json) => CreateProjectResponseStaticIps(
+    builds: (json['builds'] != null ? CreateProjectResponseStaticIpsBuilds.fromJson(json['builds'] as bool) : null)!,
+    enabled: (json['enabled'] != null ? CreateProjectResponseStaticIpsEnabled.fromJson(json['enabled'] as bool) : null)!,
+    regions: ((json['regions'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'builds': builds.toJson(),
-        'enabled': enabled.toJson(),
-        'regions': regions,
-      };
+    'builds': builds.toJson(),
+    'enabled': enabled.toJson(),
+    'regions': regions,
+  };
 }
 
 class CreateProjectResponseTargetsValueAliasError {
@@ -395,79 +188,52 @@ class CreateProjectResponseTargetsValueAliasError {
   final String code;
   final String message;
 
-  const CreateProjectResponseTargetsValueAliasError(
-      {required this.code, required this.message});
+  const CreateProjectResponseTargetsValueAliasError({required this.code, required this.message});
 
-  CreateProjectResponseTargetsValueAliasError Function(
-      {String code, String message}) get copyWith => _copyWith;
+  CreateProjectResponseTargetsValueAliasError Function({String code, String message}) get copyWith => _copyWith;
 
-  CreateProjectResponseTargetsValueAliasError _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? message = sdkOmittedValue}) =>
-      CreateProjectResponseTargetsValueAliasError(
-        code: identical(code, sdkOmittedValue) ? this.code : code as String,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-      );
+  CreateProjectResponseTargetsValueAliasError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => CreateProjectResponseTargetsValueAliasError(
+    code: identical(code, sdkOmittedValue) ? this.code : code as String,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+  );
 
-  factory CreateProjectResponseTargetsValueAliasError.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseTargetsValueAliasError(
-        code: (json['code'] as String?)!,
-        message: (json['message'] as String?)!,
-      );
+  factory CreateProjectResponseTargetsValueAliasError.fromJson(Map<String, dynamic> json) => CreateProjectResponseTargetsValueAliasError(
+    code: (json['code'] as String?)!,
+    message: (json['message'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code,
-        'message': message,
-      };
+    'code': code,
+    'message': message,
+  };
 }
 
 class CreateProjectResponseTargetsValueBranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The pattern to match against branch names
   final String pattern;
-
   /// The type of matching to perform
   final CreateProjectResponseTargetsValueBranchMatcherType type_;
 
-  const CreateProjectResponseTargetsValueBranchMatcher(
-      {required this.pattern, required this.type_});
+  const CreateProjectResponseTargetsValueBranchMatcher({required this.pattern, required this.type_});
 
-  CreateProjectResponseTargetsValueBranchMatcher Function(
-          {String pattern,
-          CreateProjectResponseTargetsValueBranchMatcherType type_})
-      get copyWith => _copyWith;
+  CreateProjectResponseTargetsValueBranchMatcher Function({String pattern, CreateProjectResponseTargetsValueBranchMatcherType type_}) get copyWith => _copyWith;
 
-  CreateProjectResponseTargetsValueBranchMatcher _copyWith(
-          {Object? pattern = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateProjectResponseTargetsValueBranchMatcher(
-        pattern: identical(pattern, sdkOmittedValue)
-            ? this.pattern
-            : pattern as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateProjectResponseTargetsValueBranchMatcherType,
-      );
+  CreateProjectResponseTargetsValueBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateProjectResponseTargetsValueBranchMatcher(
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseTargetsValueBranchMatcherType,
+  );
 
-  factory CreateProjectResponseTargetsValueBranchMatcher.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseTargetsValueBranchMatcher(
-        pattern: (json['pattern'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateProjectResponseTargetsValueBranchMatcherType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateProjectResponseTargetsValueBranchMatcher.fromJson(Map<String, dynamic> json) => CreateProjectResponseTargetsValueBranchMatcher(
+    pattern: (json['pattern'] as String?)!,
+    type_: (json['type'] != null ? CreateProjectResponseTargetsValueBranchMatcherType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'pattern': pattern,
-        'type': type_.toJson(),
-      };
+    'pattern': pattern,
+    'type': type_.toJson(),
+  };
 }
 
 class CreateProjectResponseTargetsValueBuildsItem {
@@ -477,55 +243,31 @@ class CreateProjectResponseTargetsValueBuildsItem {
   final SdkOptional<String> src;
   final String use;
 
-  const CreateProjectResponseTargetsValueBuildsItem(
-      {this.dest = const SdkOmitted(),
-      this.src = const SdkOmitted(),
-      required this.use});
+  const CreateProjectResponseTargetsValueBuildsItem({this.dest = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
 
-  CreateProjectResponseTargetsValueBuildsItem Function(
-      {SdkOptional<String> dest,
-      SdkOptional<String> src,
-      String use}) get copyWith => _copyWith;
+  CreateProjectResponseTargetsValueBuildsItem Function({SdkOptional<String> dest, SdkOptional<String> src, String use}) get copyWith => _copyWith;
 
-  CreateProjectResponseTargetsValueBuildsItem _copyWith(
-          {Object? dest = sdkOmittedValue,
-          Object? src = sdkOmittedValue,
-          Object? use = sdkOmittedValue}) =>
-      CreateProjectResponseTargetsValueBuildsItem(
-        dest: identical(dest, sdkOmittedValue)
-            ? this.dest
-            : dest as SdkOptional<String>,
-        src: identical(src, sdkOmittedValue)
-            ? this.src
-            : src as SdkOptional<String>,
-        use: identical(use, sdkOmittedValue) ? this.use : use as String,
-      );
+  CreateProjectResponseTargetsValueBuildsItem _copyWith({Object? dest = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => CreateProjectResponseTargetsValueBuildsItem(
+    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
+    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
+    use: identical(use, sdkOmittedValue) ? this.use : use as String,
+  );
 
-  factory CreateProjectResponseTargetsValueBuildsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseTargetsValueBuildsItem(
-        dest: json['dest'] != null
-            ? SdkPresent((json['dest'] as String?)!)
-            : const SdkOmitted(),
-        src: json['src'] != null
-            ? SdkPresent((json['src'] as String?)!)
-            : const SdkOmitted(),
-        use: (json['use'] as String?)!,
-      );
+  factory CreateProjectResponseTargetsValueBuildsItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseTargetsValueBuildsItem(
+    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
+    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
+    use: (json['use'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (dest) {
-          SdkPresent<String>(value: final value) => {
-              'dest': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (src) {
-          SdkPresent<String>(value: final value) => {
-              'src': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'use': use,
-      };
+    ...switch (dest) {
+      SdkPresent<String>(value: final value) => {'dest': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (src) {
+      SdkPresent<String>(value: final value) => {'src': value,},
+      _ => const <String, dynamic>{},
+    },
+    'use': use,
+  };
 }

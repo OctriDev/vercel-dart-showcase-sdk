@@ -8,222 +8,107 @@ part of 'feature_flags.dart';
 class MarketplaceFlag {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional enumerated value serialized in the `category` wire field.
   final SdkOptional<MarketplaceFlagCategory> category;
-
   /// Optional `number` value serialized in the `createdAt` wire field.
   final SdkOptional<double> createdAt;
-
   /// Optional `string` value serialized in the `description` wire field.
   final SdkOptional<String> description;
-
   /// Required `string` value serialized in the `externalId` wire field.
   final String externalId;
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `integrationConfigurationId` wire field.
   final String integrationConfigurationId;
-
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
-
   /// Required `string` value serialized in the `origin` wire field.
   final String origin;
-
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `resourceId` wire field.
   final String resourceId;
-
   /// Required `string` value serialized in the `slug` wire field.
   final String slug;
-
   /// Required enumerated value serialized in the `state` wire field.
   final MarketplaceFlagState state;
-
   /// Required enumerated value serialized in the `typeName` wire field.
   final MarketplaceFlagTypeName typeName;
-
   /// Optional `number` value serialized in the `updatedAt` wire field.
   final SdkOptional<double> updatedAt;
 
-  const MarketplaceFlag(
-      {this.category = const SdkOmitted(),
-      this.createdAt = const SdkOmitted(),
-      this.description = const SdkOmitted(),
-      required this.externalId,
-      required this.id,
-      required this.integrationConfigurationId,
-      this.name = const SdkOmitted(),
-      required this.origin,
-      required this.ownerId,
-      required this.projectId,
-      required this.resourceId,
-      required this.slug,
-      required this.state,
-      required this.typeName,
-      this.updatedAt = const SdkOmitted()});
+  const MarketplaceFlag({this.category = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.description = const SdkOmitted(), required this.externalId, required this.id, required this.integrationConfigurationId, this.name = const SdkOmitted(), required this.origin, required this.ownerId, required this.projectId, required this.resourceId, required this.slug, required this.state, required this.typeName, this.updatedAt = const SdkOmitted()});
 
-  MarketplaceFlag Function(
-      {SdkOptional<MarketplaceFlagCategory> category,
-      SdkOptional<double> createdAt,
-      SdkOptional<String> description,
-      String externalId,
-      String id,
-      String integrationConfigurationId,
-      SdkOptional<String> name,
-      String origin,
-      String ownerId,
-      String projectId,
-      String resourceId,
-      String slug,
-      MarketplaceFlagState state,
-      MarketplaceFlagTypeName typeName,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  MarketplaceFlag Function({SdkOptional<MarketplaceFlagCategory> category, SdkOptional<double> createdAt, SdkOptional<String> description, String externalId, String id, String integrationConfigurationId, SdkOptional<String> name, String origin, String ownerId, String projectId, String resourceId, String slug, MarketplaceFlagState state, MarketplaceFlagTypeName typeName, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  MarketplaceFlag _copyWith(
-          {Object? category = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? externalId = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? integrationConfigurationId = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? origin = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? resourceId = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? state = sdkOmittedValue,
-          Object? typeName = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      MarketplaceFlag(
-        category: identical(category, sdkOmittedValue)
-            ? this.category
-            : category as SdkOptional<MarketplaceFlagCategory>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        externalId: identical(externalId, sdkOmittedValue)
-            ? this.externalId
-            : externalId as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        integrationConfigurationId:
-            identical(integrationConfigurationId, sdkOmittedValue)
-                ? this.integrationConfigurationId
-                : integrationConfigurationId as String,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        origin:
-            identical(origin, sdkOmittedValue) ? this.origin : origin as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        resourceId: identical(resourceId, sdkOmittedValue)
-            ? this.resourceId
-            : resourceId as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        state: identical(state, sdkOmittedValue)
-            ? this.state
-            : state as MarketplaceFlagState,
-        typeName: identical(typeName, sdkOmittedValue)
-            ? this.typeName
-            : typeName as MarketplaceFlagTypeName,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  MarketplaceFlag _copyWith({Object? category = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? description = sdkOmittedValue, Object? externalId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? integrationConfigurationId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? resourceId = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? state = sdkOmittedValue, Object? typeName = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => MarketplaceFlag(
+    category: identical(category, sdkOmittedValue) ? this.category : category as SdkOptional<MarketplaceFlagCategory>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    externalId: identical(externalId, sdkOmittedValue) ? this.externalId : externalId as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    integrationConfigurationId: identical(integrationConfigurationId, sdkOmittedValue) ? this.integrationConfigurationId : integrationConfigurationId as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    state: identical(state, sdkOmittedValue) ? this.state : state as MarketplaceFlagState,
+    typeName: identical(typeName, sdkOmittedValue) ? this.typeName : typeName as MarketplaceFlagTypeName,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory MarketplaceFlag.fromJson(Map<String, dynamic> json) =>
-      MarketplaceFlag(
-        category: json['category'] != null
-            ? SdkPresent((json['category'] != null
-                ? MarketplaceFlagCategory.fromJson(json['category'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        externalId: (json['externalId'] as String?)!,
-        id: (json['id'] as String?)!,
-        integrationConfigurationId:
-            (json['integrationConfigurationId'] as String?)!,
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        origin: (json['origin'] as String?)!,
-        ownerId: (json['ownerId'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        resourceId: (json['resourceId'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        state: (json['state'] != null
-            ? MarketplaceFlagState.fromJson(json['state'] as String)
-            : null)!,
-        typeName: (json['typeName'] != null
-            ? MarketplaceFlagTypeName.fromJson(json['typeName'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory MarketplaceFlag.fromJson(Map<String, dynamic> json) => MarketplaceFlag(
+    category: json['category'] != null ? SdkPresent((json['category'] != null ? MarketplaceFlagCategory.fromJson(json['category'] as String) : null)!) : const SdkOmitted(),
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    externalId: (json['externalId'] as String?)!,
+    id: (json['id'] as String?)!,
+    integrationConfigurationId: (json['integrationConfigurationId'] as String?)!,
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    origin: (json['origin'] as String?)!,
+    ownerId: (json['ownerId'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    resourceId: (json['resourceId'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    state: (json['state'] != null ? MarketplaceFlagState.fromJson(json['state'] as String) : null)!,
+    typeName: (json['typeName'] != null ? MarketplaceFlagTypeName.fromJson(json['typeName'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (category) {
-          SdkPresent<MarketplaceFlagCategory>(value: final value) => {
-              'category': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'externalId': externalId,
-        'id': id,
-        'integrationConfigurationId': integrationConfigurationId,
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'origin': origin,
-        'ownerId': ownerId,
-        'projectId': projectId,
-        'resourceId': resourceId,
-        'slug': slug,
-        'state': state.toJson(),
-        'typeName': typeName.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (category) {
+      SdkPresent<MarketplaceFlagCategory>(value: final value) => {'category': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    'externalId': externalId,
+    'id': id,
+    'integrationConfigurationId': integrationConfigurationId,
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    'origin': origin,
+    'ownerId': ownerId,
+    'projectId': projectId,
+    'resourceId': resourceId,
+    'slug': slug,
+    'state': state.toJson(),
+    'typeName': typeName.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

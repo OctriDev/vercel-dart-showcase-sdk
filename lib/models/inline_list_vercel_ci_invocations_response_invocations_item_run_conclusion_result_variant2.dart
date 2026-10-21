@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2 {
   skipped;
 
-  static ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2
-      fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2 fromJson(String value) {
     switch (value) {
-      case 'skipped':
-        return ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2
-            .skipped;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2: $value');
+      case 'skipped': return ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2.skipped;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2
-            .skipped:
-        return 'skipped';
+      case ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2.skipped: return 'skipped';
     }
   }
 
@@ -34,23 +27,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant2 {
 enum ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0 {
   succeeded;
 
-  static ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0
-      fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0 fromJson(String value) {
     switch (value) {
-      case 'succeeded':
-        return ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0
-            .succeeded;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0: $value');
+      case 'succeeded': return ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0.succeeded;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0
-            .succeeded:
-        return 'succeeded';
+      case ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0.succeeded: return 'succeeded';
     }
   }
 
@@ -61,23 +47,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant0
 enum ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1 {
   failed;
 
-  static ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1
-      fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1 fromJson(String value) {
     switch (value) {
-      case 'failed':
-        return ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1
-            .failed;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1: $value');
+      case 'failed': return ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1.failed;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1
-            .failed:
-        return 'failed';
+      case ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1.failed: return 'failed';
     }
   }
 
@@ -88,23 +67,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant1
 enum ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2 {
   skipped;
 
-  static ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2
-      fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2 fromJson(String value) {
     switch (value) {
-      case 'skipped':
-        return ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2
-            .skipped;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2: $value');
+      case 'skipped': return ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2.skipped;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2
-            .skipped:
-        return 'skipped';
+      case ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2.skipped: return 'skipped';
     }
   }
 
@@ -115,22 +87,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemSetupConclusionResultVariant2
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant0 {
   new_;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant0 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant0 fromJson(String value) {
     switch (value) {
-      case 'new':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant0
-            .new_;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant0: $value');
+      case 'new': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant0.new_;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant0.new_:
-        return 'new';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant0.new_: return 'new';
     }
   }
 
@@ -141,22 +107,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant0 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant1 {
   skipped;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant1 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant1 fromJson(String value) {
     switch (value) {
-      case 'skipped':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant1
-            .skipped;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant1: $value');
+      case 'skipped': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant1.skipped;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant1.skipped:
-        return 'skipped';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant1.skipped: return 'skipped';
     }
   }
 
@@ -167,23 +127,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant1 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant10 {
   awaitingJobs;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant10 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant10 fromJson(String value) {
     switch (value) {
-      case 'awaiting_jobs':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant10
-            .awaitingJobs;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant10: $value');
+      case 'awaiting_jobs': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant10.awaitingJobs;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant10: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant10
-            .awaitingJobs:
-        return 'awaiting_jobs';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant10.awaitingJobs: return 'awaiting_jobs';
     }
   }
 
@@ -194,23 +147,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant10 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant11 {
   completed;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant11 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant11 fromJson(String value) {
     switch (value) {
-      case 'completed':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant11
-            .completed;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant11: $value');
+      case 'completed': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant11.completed;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant11: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant11
-            .completed:
-        return 'completed';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant11.completed: return 'completed';
     }
   }
 
@@ -221,23 +167,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant11 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant2 {
   bootstrapping;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant2 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant2 fromJson(String value) {
     switch (value) {
-      case 'bootstrapping':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant2
-            .bootstrapping;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant2: $value');
+      case 'bootstrapping': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant2.bootstrapping;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant2
-            .bootstrapping:
-        return 'bootstrapping';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant2.bootstrapping: return 'bootstrapping';
     }
   }
 
@@ -248,23 +187,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant2 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant3 {
   bootstrappingFailed;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant3 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant3 fromJson(String value) {
     switch (value) {
-      case 'bootstrapping_failed':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant3
-            .bootstrappingFailed;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant3: $value');
+      case 'bootstrapping_failed': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant3.bootstrappingFailed;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant3: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant3
-            .bootstrappingFailed:
-        return 'bootstrapping_failed';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant3.bootstrappingFailed: return 'bootstrapping_failed';
     }
   }
 
@@ -275,23 +207,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant3 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant4 {
   snapshotted;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant4 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant4 fromJson(String value) {
     switch (value) {
-      case 'snapshotted':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant4
-            .snapshotted;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant4: $value');
+      case 'snapshotted': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant4.snapshotted;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant4: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant4
-            .snapshotted:
-        return 'snapshotted';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant4.snapshotted: return 'snapshotted';
     }
   }
 
@@ -302,23 +227,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant4 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant5 {
   sandboxNamed;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant5 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant5 fromJson(String value) {
     switch (value) {
-      case 'sandbox_named':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant5
-            .sandboxNamed;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant5: $value');
+      case 'sandbox_named': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant5.sandboxNamed;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant5: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant5
-            .sandboxNamed:
-        return 'sandbox_named';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant5.sandboxNamed: return 'sandbox_named';
     }
   }
 
@@ -329,23 +247,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant5 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant6 {
   jobsOnHiveCloneDispatched;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant6 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant6 fromJson(String value) {
     switch (value) {
-      case 'jobs_on_hive_clone_dispatched':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant6
-            .jobsOnHiveCloneDispatched;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant6: $value');
+      case 'jobs_on_hive_clone_dispatched': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant6.jobsOnHiveCloneDispatched;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant6: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant6
-            .jobsOnHiveCloneDispatched:
-        return 'jobs_on_hive_clone_dispatched';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant6.jobsOnHiveCloneDispatched: return 'jobs_on_hive_clone_dispatched';
     }
   }
 
@@ -356,23 +267,16 @@ enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant6 {
 enum ListVercelCiInvocationsResponseInvocationsItemStatusVariant7 {
   jobsOnHiveDispatched;
 
-  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant7 fromJson(
-      String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemStatusVariant7 fromJson(String value) {
     switch (value) {
-      case 'jobs_on_hive_dispatched':
-        return ListVercelCiInvocationsResponseInvocationsItemStatusVariant7
-            .jobsOnHiveDispatched;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant7: $value');
+      case 'jobs_on_hive_dispatched': return ListVercelCiInvocationsResponseInvocationsItemStatusVariant7.jobsOnHiveDispatched;
+      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemStatusVariant7: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant7
-            .jobsOnHiveDispatched:
-        return 'jobs_on_hive_dispatched';
+      case ListVercelCiInvocationsResponseInvocationsItemStatusVariant7.jobsOnHiveDispatched: return 'jobs_on_hive_dispatched';
     }
   }
 

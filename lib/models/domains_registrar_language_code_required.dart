@@ -8,55 +8,32 @@ part of 'domains_registrar.dart';
 class LanguageCodeRequired {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `status` wire field.
   final LanguageCodeRequiredStatus status;
-
   /// Required enumerated value serialized in the `code` wire field.
   final LanguageCodeRequiredCode code;
-
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const LanguageCodeRequired(
-      {required this.status, required this.code, required this.message});
+  const LanguageCodeRequired({required this.status, required this.code, required this.message});
 
-  LanguageCodeRequired Function(
-      {LanguageCodeRequiredStatus status,
-      LanguageCodeRequiredCode code,
-      String message}) get copyWith => _copyWith;
+  LanguageCodeRequired Function({LanguageCodeRequiredStatus status, LanguageCodeRequiredCode code, String message}) get copyWith => _copyWith;
 
-  LanguageCodeRequired _copyWith(
-          {Object? status = sdkOmittedValue,
-          Object? code = sdkOmittedValue,
-          Object? message = sdkOmittedValue}) =>
-      LanguageCodeRequired(
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as LanguageCodeRequiredStatus,
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as LanguageCodeRequiredCode,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-      );
+  LanguageCodeRequired _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => LanguageCodeRequired(
+    status: identical(status, sdkOmittedValue) ? this.status : status as LanguageCodeRequiredStatus,
+    code: identical(code, sdkOmittedValue) ? this.code : code as LanguageCodeRequiredCode,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+  );
 
-  factory LanguageCodeRequired.fromJson(Map<String, dynamic> json) =>
-      LanguageCodeRequired(
-        status: (json['status'] != null
-            ? LanguageCodeRequiredStatus.fromJson(
-                (json['status'] as num).toInt())
-            : null)!,
-        code: (json['code'] != null
-            ? LanguageCodeRequiredCode.fromJson(json['code'] as String)
-            : null)!,
-        message: (json['message'] as String?)!,
-      );
+  factory LanguageCodeRequired.fromJson(Map<String, dynamic> json) => LanguageCodeRequired(
+    status: (json['status'] != null ? LanguageCodeRequiredStatus.fromJson((json['status'] as num).toInt()) : null)!,
+    code: (json['code'] != null ? LanguageCodeRequiredCode.fromJson(json['code'] as String) : null)!,
+    message: (json['message'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'status': status.toJson(),
-        'code': code.toJson(),
-        'message': message,
-      };
+    'status': status.toJson(),
+    'code': code.toJson(),
+    'message': message,
+  };
 }

@@ -8,53 +8,32 @@ part of 'domains_registrar.dart';
 class BadRequest {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `status` wire field.
   final BadRequestStatus status;
-
   /// Required enumerated value serialized in the `code` wire field.
   final BadRequestCode code;
-
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const BadRequest(
-      {required this.status, required this.code, required this.message});
+  const BadRequest({required this.status, required this.code, required this.message});
 
-  BadRequest Function(
-      {BadRequestStatus status,
-      BadRequestCode code,
-      String message}) get copyWith => _copyWith;
+  BadRequest Function({BadRequestStatus status, BadRequestCode code, String message}) get copyWith => _copyWith;
 
-  BadRequest _copyWith(
-          {Object? status = sdkOmittedValue,
-          Object? code = sdkOmittedValue,
-          Object? message = sdkOmittedValue}) =>
-      BadRequest(
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as BadRequestStatus,
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as BadRequestCode,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-      );
+  BadRequest _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => BadRequest(
+    status: identical(status, sdkOmittedValue) ? this.status : status as BadRequestStatus,
+    code: identical(code, sdkOmittedValue) ? this.code : code as BadRequestCode,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+  );
 
   factory BadRequest.fromJson(Map<String, dynamic> json) => BadRequest(
-        status: (json['status'] != null
-            ? BadRequestStatus.fromJson((json['status'] as num).toInt())
-            : null)!,
-        code: (json['code'] != null
-            ? BadRequestCode.fromJson(json['code'] as String)
-            : null)!,
-        message: (json['message'] as String?)!,
-      );
+    status: (json['status'] != null ? BadRequestStatus.fromJson((json['status'] as num).toInt()) : null)!,
+    code: (json['code'] != null ? BadRequestCode.fromJson(json['code'] as String) : null)!,
+    message: (json['message'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'status': status.toJson(),
-        'code': code.toJson(),
-        'message': message,
-      };
+    'status': status.toJson(),
+    'code': code.toJson(),
+    'message': message,
+  };
 }

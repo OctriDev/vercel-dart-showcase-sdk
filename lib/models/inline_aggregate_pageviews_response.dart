@@ -11,43 +11,27 @@ class AggregatePageviewsResponse {
   final AggregatePageviewsResponseQuery query;
   final double version;
 
-  const AggregatePageviewsResponse(
-      {required this.data, required this.query, required this.version});
+  const AggregatePageviewsResponse({required this.data, required this.query, required this.version});
 
-  AggregatePageviewsResponse Function(
-      {dynamic data,
-      AggregatePageviewsResponseQuery query,
-      double version}) get copyWith => _copyWith;
+  AggregatePageviewsResponse Function({dynamic data, AggregatePageviewsResponseQuery query, double version}) get copyWith => _copyWith;
 
-  AggregatePageviewsResponse _copyWith(
-          {Object? data = sdkOmittedValue,
-          Object? query = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      AggregatePageviewsResponse(
-        data: identical(data, sdkOmittedValue) ? this.data : data as dynamic,
-        query: identical(query, sdkOmittedValue)
-            ? this.query
-            : query as AggregatePageviewsResponseQuery,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as double,
-      );
+  AggregatePageviewsResponse _copyWith({Object? data = sdkOmittedValue, Object? query = sdkOmittedValue, Object? version = sdkOmittedValue}) => AggregatePageviewsResponse(
+    data: identical(data, sdkOmittedValue) ? this.data : data as dynamic,
+    query: identical(query, sdkOmittedValue) ? this.query : query as AggregatePageviewsResponseQuery,
+    version: identical(version, sdkOmittedValue) ? this.version : version as double,
+  );
 
-  factory AggregatePageviewsResponse.fromJson(Map<String, dynamic> json) =>
-      AggregatePageviewsResponse(
-        data: (json['data'])!,
-        query: (json['query'] != null
-            ? AggregatePageviewsResponseQuery.fromJson(
-                json['query'] as Map<String, dynamic>)
-            : null)!,
-        version: ((json['version'] as num?)?.toDouble())!,
-      );
+  factory AggregatePageviewsResponse.fromJson(Map<String, dynamic> json) => AggregatePageviewsResponse(
+    data: (json['data'])!,
+    query: (json['query'] != null ? AggregatePageviewsResponseQuery.fromJson(json['query'] as Map<String, dynamic>) : null)!,
+    version: ((json['version'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data,
-        'query': query.toJson(),
-        'version': version,
-      };
+    'data': data,
+    'query': query.toJson(),
+    'version': version,
+  };
 }
 
 class AggregateEventsResponseDataVariant0Item {
@@ -75,329 +59,141 @@ class AggregateEventsResponseDataVariant0Item {
   final SdkOptional<String> visitorId;
   final String timestamp;
 
-  const AggregateEventsResponseDataVariant0Item(
-      {this.browserName = const SdkOmitted(),
-      this.country = const SdkOmitted(),
-      this.deviceType = const SdkOmitted(),
-      this.environment = const SdkOmitted(),
-      this.eventData = const SdkOmitted(),
-      this.eventName = const SdkOmitted(),
-      this.flags = const SdkOmitted(),
-      this.osName = const SdkOmitted(),
-      this.projectId = const SdkOmitted(),
-      this.projectName = const SdkOmitted(),
-      this.referrerHostname = const SdkOmitted(),
-      this.requestHostname = const SdkOmitted(),
-      this.requestPath = const SdkOmitted(),
-      this.route = const SdkOmitted(),
-      this.utmCampaign = const SdkOmitted(),
-      this.utmContent = const SdkOmitted(),
-      this.utmMedium = const SdkOmitted(),
-      this.utmSource = const SdkOmitted(),
-      this.utmTerm = const SdkOmitted(),
-      this.visitorId = const SdkOmitted(),
-      required this.timestamp});
+  const AggregateEventsResponseDataVariant0Item({this.browserName = const SdkOmitted(), this.country = const SdkOmitted(), this.deviceType = const SdkOmitted(), this.environment = const SdkOmitted(), this.eventData = const SdkOmitted(), this.eventName = const SdkOmitted(), this.flags = const SdkOmitted(), this.osName = const SdkOmitted(), this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), this.referrerHostname = const SdkOmitted(), this.requestHostname = const SdkOmitted(), this.requestPath = const SdkOmitted(), this.route = const SdkOmitted(), this.utmCampaign = const SdkOmitted(), this.utmContent = const SdkOmitted(), this.utmMedium = const SdkOmitted(), this.utmSource = const SdkOmitted(), this.utmTerm = const SdkOmitted(), this.visitorId = const SdkOmitted(), required this.timestamp});
 
-  AggregateEventsResponseDataVariant0Item Function(
-      {SdkOptional<String> browserName,
-      SdkOptional<String> country,
-      SdkOptional<String> deviceType,
-      SdkOptional<String> environment,
-      SdkOptional<String> eventData,
-      SdkOptional<String> eventName,
-      SdkOptional<String> flags,
-      SdkOptional<String> osName,
-      SdkOptional<String> projectId,
-      SdkOptional<String> projectName,
-      SdkOptional<String> referrerHostname,
-      SdkOptional<String> requestHostname,
-      SdkOptional<String> requestPath,
-      SdkOptional<String> route,
-      SdkOptional<String> utmCampaign,
-      SdkOptional<String> utmContent,
-      SdkOptional<String> utmMedium,
-      SdkOptional<String> utmSource,
-      SdkOptional<String> utmTerm,
-      SdkOptional<String> visitorId,
-      String timestamp}) get copyWith => _copyWith;
+  AggregateEventsResponseDataVariant0Item Function({SdkOptional<String> browserName, SdkOptional<String> country, SdkOptional<String> deviceType, SdkOptional<String> environment, SdkOptional<String> eventData, SdkOptional<String> eventName, SdkOptional<String> flags, SdkOptional<String> osName, SdkOptional<String> projectId, SdkOptional<String> projectName, SdkOptional<String> referrerHostname, SdkOptional<String> requestHostname, SdkOptional<String> requestPath, SdkOptional<String> route, SdkOptional<String> utmCampaign, SdkOptional<String> utmContent, SdkOptional<String> utmMedium, SdkOptional<String> utmSource, SdkOptional<String> utmTerm, SdkOptional<String> visitorId, String timestamp}) get copyWith => _copyWith;
 
-  AggregateEventsResponseDataVariant0Item _copyWith(
-          {Object? browserName = sdkOmittedValue,
-          Object? country = sdkOmittedValue,
-          Object? deviceType = sdkOmittedValue,
-          Object? environment = sdkOmittedValue,
-          Object? eventData = sdkOmittedValue,
-          Object? eventName = sdkOmittedValue,
-          Object? flags = sdkOmittedValue,
-          Object? osName = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? referrerHostname = sdkOmittedValue,
-          Object? requestHostname = sdkOmittedValue,
-          Object? requestPath = sdkOmittedValue,
-          Object? route = sdkOmittedValue,
-          Object? utmCampaign = sdkOmittedValue,
-          Object? utmContent = sdkOmittedValue,
-          Object? utmMedium = sdkOmittedValue,
-          Object? utmSource = sdkOmittedValue,
-          Object? utmTerm = sdkOmittedValue,
-          Object? visitorId = sdkOmittedValue,
-          Object? timestamp = sdkOmittedValue}) =>
-      AggregateEventsResponseDataVariant0Item(
-        browserName: identical(browserName, sdkOmittedValue)
-            ? this.browserName
-            : browserName as SdkOptional<String>,
-        country: identical(country, sdkOmittedValue)
-            ? this.country
-            : country as SdkOptional<String>,
-        deviceType: identical(deviceType, sdkOmittedValue)
-            ? this.deviceType
-            : deviceType as SdkOptional<String>,
-        environment: identical(environment, sdkOmittedValue)
-            ? this.environment
-            : environment as SdkOptional<String>,
-        eventData: identical(eventData, sdkOmittedValue)
-            ? this.eventData
-            : eventData as SdkOptional<String>,
-        eventName: identical(eventName, sdkOmittedValue)
-            ? this.eventName
-            : eventName as SdkOptional<String>,
-        flags: identical(flags, sdkOmittedValue)
-            ? this.flags
-            : flags as SdkOptional<String>,
-        osName: identical(osName, sdkOmittedValue)
-            ? this.osName
-            : osName as SdkOptional<String>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-        referrerHostname: identical(referrerHostname, sdkOmittedValue)
-            ? this.referrerHostname
-            : referrerHostname as SdkOptional<String>,
-        requestHostname: identical(requestHostname, sdkOmittedValue)
-            ? this.requestHostname
-            : requestHostname as SdkOptional<String>,
-        requestPath: identical(requestPath, sdkOmittedValue)
-            ? this.requestPath
-            : requestPath as SdkOptional<String>,
-        route: identical(route, sdkOmittedValue)
-            ? this.route
-            : route as SdkOptional<String>,
-        utmCampaign: identical(utmCampaign, sdkOmittedValue)
-            ? this.utmCampaign
-            : utmCampaign as SdkOptional<String>,
-        utmContent: identical(utmContent, sdkOmittedValue)
-            ? this.utmContent
-            : utmContent as SdkOptional<String>,
-        utmMedium: identical(utmMedium, sdkOmittedValue)
-            ? this.utmMedium
-            : utmMedium as SdkOptional<String>,
-        utmSource: identical(utmSource, sdkOmittedValue)
-            ? this.utmSource
-            : utmSource as SdkOptional<String>,
-        utmTerm: identical(utmTerm, sdkOmittedValue)
-            ? this.utmTerm
-            : utmTerm as SdkOptional<String>,
-        visitorId: identical(visitorId, sdkOmittedValue)
-            ? this.visitorId
-            : visitorId as SdkOptional<String>,
-        timestamp: identical(timestamp, sdkOmittedValue)
-            ? this.timestamp
-            : timestamp as String,
-      );
+  AggregateEventsResponseDataVariant0Item _copyWith({Object? browserName = sdkOmittedValue, Object? country = sdkOmittedValue, Object? deviceType = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? eventData = sdkOmittedValue, Object? eventName = sdkOmittedValue, Object? flags = sdkOmittedValue, Object? osName = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? referrerHostname = sdkOmittedValue, Object? requestHostname = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? route = sdkOmittedValue, Object? utmCampaign = sdkOmittedValue, Object? utmContent = sdkOmittedValue, Object? utmMedium = sdkOmittedValue, Object? utmSource = sdkOmittedValue, Object? utmTerm = sdkOmittedValue, Object? visitorId = sdkOmittedValue, Object? timestamp = sdkOmittedValue}) => AggregateEventsResponseDataVariant0Item(
+    browserName: identical(browserName, sdkOmittedValue) ? this.browserName : browserName as SdkOptional<String>,
+    country: identical(country, sdkOmittedValue) ? this.country : country as SdkOptional<String>,
+    deviceType: identical(deviceType, sdkOmittedValue) ? this.deviceType : deviceType as SdkOptional<String>,
+    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as SdkOptional<String>,
+    eventData: identical(eventData, sdkOmittedValue) ? this.eventData : eventData as SdkOptional<String>,
+    eventName: identical(eventName, sdkOmittedValue) ? this.eventName : eventName as SdkOptional<String>,
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as SdkOptional<String>,
+    osName: identical(osName, sdkOmittedValue) ? this.osName : osName as SdkOptional<String>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+    referrerHostname: identical(referrerHostname, sdkOmittedValue) ? this.referrerHostname : referrerHostname as SdkOptional<String>,
+    requestHostname: identical(requestHostname, sdkOmittedValue) ? this.requestHostname : requestHostname as SdkOptional<String>,
+    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as SdkOptional<String>,
+    route: identical(route, sdkOmittedValue) ? this.route : route as SdkOptional<String>,
+    utmCampaign: identical(utmCampaign, sdkOmittedValue) ? this.utmCampaign : utmCampaign as SdkOptional<String>,
+    utmContent: identical(utmContent, sdkOmittedValue) ? this.utmContent : utmContent as SdkOptional<String>,
+    utmMedium: identical(utmMedium, sdkOmittedValue) ? this.utmMedium : utmMedium as SdkOptional<String>,
+    utmSource: identical(utmSource, sdkOmittedValue) ? this.utmSource : utmSource as SdkOptional<String>,
+    utmTerm: identical(utmTerm, sdkOmittedValue) ? this.utmTerm : utmTerm as SdkOptional<String>,
+    visitorId: identical(visitorId, sdkOmittedValue) ? this.visitorId : visitorId as SdkOptional<String>,
+    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as String,
+  );
 
-  factory AggregateEventsResponseDataVariant0Item.fromJson(
-          Map<String, dynamic> json) =>
-      AggregateEventsResponseDataVariant0Item(
-        browserName: json['browserName'] != null
-            ? SdkPresent((json['browserName'] as String?)!)
-            : const SdkOmitted(),
-        country: json['country'] != null
-            ? SdkPresent((json['country'] as String?)!)
-            : const SdkOmitted(),
-        deviceType: json['deviceType'] != null
-            ? SdkPresent((json['deviceType'] as String?)!)
-            : const SdkOmitted(),
-        environment: json['environment'] != null
-            ? SdkPresent((json['environment'] as String?)!)
-            : const SdkOmitted(),
-        eventData: json['eventData'] != null
-            ? SdkPresent((json['eventData'] as String?)!)
-            : const SdkOmitted(),
-        eventName: json['eventName'] != null
-            ? SdkPresent((json['eventName'] as String?)!)
-            : const SdkOmitted(),
-        flags: json['flags'] != null
-            ? SdkPresent((json['flags'] as String?)!)
-            : const SdkOmitted(),
-        osName: json['osName'] != null
-            ? SdkPresent((json['osName'] as String?)!)
-            : const SdkOmitted(),
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-        referrerHostname: json['referrerHostname'] != null
-            ? SdkPresent((json['referrerHostname'] as String?)!)
-            : const SdkOmitted(),
-        requestHostname: json['requestHostname'] != null
-            ? SdkPresent((json['requestHostname'] as String?)!)
-            : const SdkOmitted(),
-        requestPath: json['requestPath'] != null
-            ? SdkPresent((json['requestPath'] as String?)!)
-            : const SdkOmitted(),
-        route: json['route'] != null
-            ? SdkPresent((json['route'] as String?)!)
-            : const SdkOmitted(),
-        utmCampaign: json['utmCampaign'] != null
-            ? SdkPresent((json['utmCampaign'] as String?)!)
-            : const SdkOmitted(),
-        utmContent: json['utmContent'] != null
-            ? SdkPresent((json['utmContent'] as String?)!)
-            : const SdkOmitted(),
-        utmMedium: json['utmMedium'] != null
-            ? SdkPresent((json['utmMedium'] as String?)!)
-            : const SdkOmitted(),
-        utmSource: json['utmSource'] != null
-            ? SdkPresent((json['utmSource'] as String?)!)
-            : const SdkOmitted(),
-        utmTerm: json['utmTerm'] != null
-            ? SdkPresent((json['utmTerm'] as String?)!)
-            : const SdkOmitted(),
-        visitorId: json['visitorId'] != null
-            ? SdkPresent((json['visitorId'] as String?)!)
-            : const SdkOmitted(),
-        timestamp: (json['timestamp'] as String?)!,
-      );
+  factory AggregateEventsResponseDataVariant0Item.fromJson(Map<String, dynamic> json) => AggregateEventsResponseDataVariant0Item(
+    browserName: json['browserName'] != null ? SdkPresent((json['browserName'] as String?)!) : const SdkOmitted(),
+    country: json['country'] != null ? SdkPresent((json['country'] as String?)!) : const SdkOmitted(),
+    deviceType: json['deviceType'] != null ? SdkPresent((json['deviceType'] as String?)!) : const SdkOmitted(),
+    environment: json['environment'] != null ? SdkPresent((json['environment'] as String?)!) : const SdkOmitted(),
+    eventData: json['eventData'] != null ? SdkPresent((json['eventData'] as String?)!) : const SdkOmitted(),
+    eventName: json['eventName'] != null ? SdkPresent((json['eventName'] as String?)!) : const SdkOmitted(),
+    flags: json['flags'] != null ? SdkPresent((json['flags'] as String?)!) : const SdkOmitted(),
+    osName: json['osName'] != null ? SdkPresent((json['osName'] as String?)!) : const SdkOmitted(),
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+    referrerHostname: json['referrerHostname'] != null ? SdkPresent((json['referrerHostname'] as String?)!) : const SdkOmitted(),
+    requestHostname: json['requestHostname'] != null ? SdkPresent((json['requestHostname'] as String?)!) : const SdkOmitted(),
+    requestPath: json['requestPath'] != null ? SdkPresent((json['requestPath'] as String?)!) : const SdkOmitted(),
+    route: json['route'] != null ? SdkPresent((json['route'] as String?)!) : const SdkOmitted(),
+    utmCampaign: json['utmCampaign'] != null ? SdkPresent((json['utmCampaign'] as String?)!) : const SdkOmitted(),
+    utmContent: json['utmContent'] != null ? SdkPresent((json['utmContent'] as String?)!) : const SdkOmitted(),
+    utmMedium: json['utmMedium'] != null ? SdkPresent((json['utmMedium'] as String?)!) : const SdkOmitted(),
+    utmSource: json['utmSource'] != null ? SdkPresent((json['utmSource'] as String?)!) : const SdkOmitted(),
+    utmTerm: json['utmTerm'] != null ? SdkPresent((json['utmTerm'] as String?)!) : const SdkOmitted(),
+    visitorId: json['visitorId'] != null ? SdkPresent((json['visitorId'] as String?)!) : const SdkOmitted(),
+    timestamp: (json['timestamp'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (browserName) {
-          SdkPresent<String>(value: final value) => {
-              'browserName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (country) {
-          SdkPresent<String>(value: final value) => {
-              'country': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deviceType) {
-          SdkPresent<String>(value: final value) => {
-              'deviceType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environment) {
-          SdkPresent<String>(value: final value) => {
-              'environment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (eventData) {
-          SdkPresent<String>(value: final value) => {
-              'eventData': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (eventName) {
-          SdkPresent<String>(value: final value) => {
-              'eventName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (flags) {
-          SdkPresent<String>(value: final value) => {
-              'flags': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (osName) {
-          SdkPresent<String>(value: final value) => {
-              'osName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (referrerHostname) {
-          SdkPresent<String>(value: final value) => {
-              'referrerHostname': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requestHostname) {
-          SdkPresent<String>(value: final value) => {
-              'requestHostname': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requestPath) {
-          SdkPresent<String>(value: final value) => {
-              'requestPath': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (route) {
-          SdkPresent<String>(value: final value) => {
-              'route': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (utmCampaign) {
-          SdkPresent<String>(value: final value) => {
-              'utmCampaign': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (utmContent) {
-          SdkPresent<String>(value: final value) => {
-              'utmContent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (utmMedium) {
-          SdkPresent<String>(value: final value) => {
-              'utmMedium': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (utmSource) {
-          SdkPresent<String>(value: final value) => {
-              'utmSource': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (utmTerm) {
-          SdkPresent<String>(value: final value) => {
-              'utmTerm': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (visitorId) {
-          SdkPresent<String>(value: final value) => {
-              'visitorId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'timestamp': timestamp,
-      };
+    ...switch (browserName) {
+      SdkPresent<String>(value: final value) => {'browserName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (country) {
+      SdkPresent<String>(value: final value) => {'country': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deviceType) {
+      SdkPresent<String>(value: final value) => {'deviceType': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environment) {
+      SdkPresent<String>(value: final value) => {'environment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (eventData) {
+      SdkPresent<String>(value: final value) => {'eventData': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (eventName) {
+      SdkPresent<String>(value: final value) => {'eventName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (flags) {
+      SdkPresent<String>(value: final value) => {'flags': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (osName) {
+      SdkPresent<String>(value: final value) => {'osName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (referrerHostname) {
+      SdkPresent<String>(value: final value) => {'referrerHostname': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requestHostname) {
+      SdkPresent<String>(value: final value) => {'requestHostname': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requestPath) {
+      SdkPresent<String>(value: final value) => {'requestPath': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (route) {
+      SdkPresent<String>(value: final value) => {'route': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (utmCampaign) {
+      SdkPresent<String>(value: final value) => {'utmCampaign': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (utmContent) {
+      SdkPresent<String>(value: final value) => {'utmContent': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (utmMedium) {
+      SdkPresent<String>(value: final value) => {'utmMedium': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (utmSource) {
+      SdkPresent<String>(value: final value) => {'utmSource': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (utmTerm) {
+      SdkPresent<String>(value: final value) => {'utmTerm': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (visitorId) {
+      SdkPresent<String>(value: final value) => {'visitorId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'timestamp': timestamp,
+  };
 }
 
 class AggregateEventsResponseDataVariant1Item {
@@ -425,200 +221,79 @@ class AggregateEventsResponseDataVariant1Item {
   final String visitorId;
   final Map<String, dynamic> additionalProperties;
 
-  const AggregateEventsResponseDataVariant1Item(
-      {required this.browserName,
-      required this.country,
-      required this.deviceType,
-      required this.environment,
-      required this.eventData,
-      required this.eventName,
-      required this.flags,
-      required this.osName,
-      required this.projectId,
-      required this.projectName,
-      required this.referrerHostname,
-      required this.requestHostname,
-      required this.requestPath,
-      required this.route,
-      required this.utmCampaign,
-      required this.utmContent,
-      required this.utmMedium,
-      required this.utmSource,
-      required this.utmTerm,
-      required this.visitorId,
-      this.additionalProperties = const <String, dynamic>{}});
+  const AggregateEventsResponseDataVariant1Item({required this.browserName, required this.country, required this.deviceType, required this.environment, required this.eventData, required this.eventName, required this.flags, required this.osName, required this.projectId, required this.projectName, required this.referrerHostname, required this.requestHostname, required this.requestPath, required this.route, required this.utmCampaign, required this.utmContent, required this.utmMedium, required this.utmSource, required this.utmTerm, required this.visitorId, this.additionalProperties = const <String, dynamic>{}});
 
-  AggregateEventsResponseDataVariant1Item Function(
-      {String browserName,
-      String country,
-      String deviceType,
-      String environment,
-      String eventData,
-      String eventName,
-      String flags,
-      String osName,
-      String projectId,
-      String projectName,
-      String referrerHostname,
-      String requestHostname,
-      String requestPath,
-      String route,
-      String utmCampaign,
-      String utmContent,
-      String utmMedium,
-      String utmSource,
-      String utmTerm,
-      String visitorId}) get copyWith => _copyWith;
+  AggregateEventsResponseDataVariant1Item Function({String browserName, String country, String deviceType, String environment, String eventData, String eventName, String flags, String osName, String projectId, String projectName, String referrerHostname, String requestHostname, String requestPath, String route, String utmCampaign, String utmContent, String utmMedium, String utmSource, String utmTerm, String visitorId}) get copyWith => _copyWith;
 
-  AggregateEventsResponseDataVariant1Item _copyWith(
-          {Object? browserName = sdkOmittedValue,
-          Object? country = sdkOmittedValue,
-          Object? deviceType = sdkOmittedValue,
-          Object? environment = sdkOmittedValue,
-          Object? eventData = sdkOmittedValue,
-          Object? eventName = sdkOmittedValue,
-          Object? flags = sdkOmittedValue,
-          Object? osName = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? referrerHostname = sdkOmittedValue,
-          Object? requestHostname = sdkOmittedValue,
-          Object? requestPath = sdkOmittedValue,
-          Object? route = sdkOmittedValue,
-          Object? utmCampaign = sdkOmittedValue,
-          Object? utmContent = sdkOmittedValue,
-          Object? utmMedium = sdkOmittedValue,
-          Object? utmSource = sdkOmittedValue,
-          Object? utmTerm = sdkOmittedValue,
-          Object? visitorId = sdkOmittedValue}) =>
-      AggregateEventsResponseDataVariant1Item(
-        browserName: identical(browserName, sdkOmittedValue)
-            ? this.browserName
-            : browserName as String,
-        country: identical(country, sdkOmittedValue)
-            ? this.country
-            : country as String,
-        deviceType: identical(deviceType, sdkOmittedValue)
-            ? this.deviceType
-            : deviceType as String,
-        environment: identical(environment, sdkOmittedValue)
-            ? this.environment
-            : environment as String,
-        eventData: identical(eventData, sdkOmittedValue)
-            ? this.eventData
-            : eventData as String,
-        eventName: identical(eventName, sdkOmittedValue)
-            ? this.eventName
-            : eventName as String,
-        flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
-        osName:
-            identical(osName, sdkOmittedValue) ? this.osName : osName as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-        referrerHostname: identical(referrerHostname, sdkOmittedValue)
-            ? this.referrerHostname
-            : referrerHostname as String,
-        requestHostname: identical(requestHostname, sdkOmittedValue)
-            ? this.requestHostname
-            : requestHostname as String,
-        requestPath: identical(requestPath, sdkOmittedValue)
-            ? this.requestPath
-            : requestPath as String,
-        route: identical(route, sdkOmittedValue) ? this.route : route as String,
-        utmCampaign: identical(utmCampaign, sdkOmittedValue)
-            ? this.utmCampaign
-            : utmCampaign as String,
-        utmContent: identical(utmContent, sdkOmittedValue)
-            ? this.utmContent
-            : utmContent as String,
-        utmMedium: identical(utmMedium, sdkOmittedValue)
-            ? this.utmMedium
-            : utmMedium as String,
-        utmSource: identical(utmSource, sdkOmittedValue)
-            ? this.utmSource
-            : utmSource as String,
-        utmTerm: identical(utmTerm, sdkOmittedValue)
-            ? this.utmTerm
-            : utmTerm as String,
-        visitorId: identical(visitorId, sdkOmittedValue)
-            ? this.visitorId
-            : visitorId as String,
-        additionalProperties: additionalProperties,
-      );
+  AggregateEventsResponseDataVariant1Item _copyWith({Object? browserName = sdkOmittedValue, Object? country = sdkOmittedValue, Object? deviceType = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? eventData = sdkOmittedValue, Object? eventName = sdkOmittedValue, Object? flags = sdkOmittedValue, Object? osName = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? referrerHostname = sdkOmittedValue, Object? requestHostname = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? route = sdkOmittedValue, Object? utmCampaign = sdkOmittedValue, Object? utmContent = sdkOmittedValue, Object? utmMedium = sdkOmittedValue, Object? utmSource = sdkOmittedValue, Object? utmTerm = sdkOmittedValue, Object? visitorId = sdkOmittedValue}) => AggregateEventsResponseDataVariant1Item(
+    browserName: identical(browserName, sdkOmittedValue) ? this.browserName : browserName as String,
+    country: identical(country, sdkOmittedValue) ? this.country : country as String,
+    deviceType: identical(deviceType, sdkOmittedValue) ? this.deviceType : deviceType as String,
+    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
+    eventData: identical(eventData, sdkOmittedValue) ? this.eventData : eventData as String,
+    eventName: identical(eventName, sdkOmittedValue) ? this.eventName : eventName as String,
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
+    osName: identical(osName, sdkOmittedValue) ? this.osName : osName as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+    referrerHostname: identical(referrerHostname, sdkOmittedValue) ? this.referrerHostname : referrerHostname as String,
+    requestHostname: identical(requestHostname, sdkOmittedValue) ? this.requestHostname : requestHostname as String,
+    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as String,
+    route: identical(route, sdkOmittedValue) ? this.route : route as String,
+    utmCampaign: identical(utmCampaign, sdkOmittedValue) ? this.utmCampaign : utmCampaign as String,
+    utmContent: identical(utmContent, sdkOmittedValue) ? this.utmContent : utmContent as String,
+    utmMedium: identical(utmMedium, sdkOmittedValue) ? this.utmMedium : utmMedium as String,
+    utmSource: identical(utmSource, sdkOmittedValue) ? this.utmSource : utmSource as String,
+    utmTerm: identical(utmTerm, sdkOmittedValue) ? this.utmTerm : utmTerm as String,
+    visitorId: identical(visitorId, sdkOmittedValue) ? this.visitorId : visitorId as String,
+    additionalProperties: additionalProperties,
+  );
 
-  factory AggregateEventsResponseDataVariant1Item.fromJson(
-          Map<String, dynamic> json) =>
-      AggregateEventsResponseDataVariant1Item(
-        browserName: (json['browserName'] as String?)!,
-        country: (json['country'] as String?)!,
-        deviceType: (json['deviceType'] as String?)!,
-        environment: (json['environment'] as String?)!,
-        eventData: (json['eventData'] as String?)!,
-        eventName: (json['eventName'] as String?)!,
-        flags: (json['flags'] as String?)!,
-        osName: (json['osName'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-        referrerHostname: (json['referrerHostname'] as String?)!,
-        requestHostname: (json['requestHostname'] as String?)!,
-        requestPath: (json['requestPath'] as String?)!,
-        route: (json['route'] as String?)!,
-        utmCampaign: (json['utmCampaign'] as String?)!,
-        utmContent: (json['utmContent'] as String?)!,
-        utmMedium: (json['utmMedium'] as String?)!,
-        utmSource: (json['utmSource'] as String?)!,
-        utmTerm: (json['utmTerm'] as String?)!,
-        visitorId: (json['visitorId'] as String?)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{
-                'browserName',
-                'country',
-                'deviceType',
-                'environment',
-                'eventData',
-                'eventName',
-                'flags',
-                'osName',
-                'projectId',
-                'projectName',
-                'referrerHostname',
-                'requestHostname',
-                'requestPath',
-                'route',
-                'utmCampaign',
-                'utmContent',
-                'utmMedium',
-                'utmSource',
-                'utmTerm',
-                'visitorId'
-              }.contains(key)),
-      );
+  factory AggregateEventsResponseDataVariant1Item.fromJson(Map<String, dynamic> json) => AggregateEventsResponseDataVariant1Item(
+    browserName: (json['browserName'] as String?)!,
+    country: (json['country'] as String?)!,
+    deviceType: (json['deviceType'] as String?)!,
+    environment: (json['environment'] as String?)!,
+    eventData: (json['eventData'] as String?)!,
+    eventName: (json['eventName'] as String?)!,
+    flags: (json['flags'] as String?)!,
+    osName: (json['osName'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+    referrerHostname: (json['referrerHostname'] as String?)!,
+    requestHostname: (json['requestHostname'] as String?)!,
+    requestPath: (json['requestPath'] as String?)!,
+    route: (json['route'] as String?)!,
+    utmCampaign: (json['utmCampaign'] as String?)!,
+    utmContent: (json['utmContent'] as String?)!,
+    utmMedium: (json['utmMedium'] as String?)!,
+    utmSource: (json['utmSource'] as String?)!,
+    utmTerm: (json['utmTerm'] as String?)!,
+    visitorId: (json['visitorId'] as String?)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'browserName', 'country', 'deviceType', 'environment', 'eventData', 'eventName', 'flags', 'osName', 'projectId', 'projectName', 'referrerHostname', 'requestHostname', 'requestPath', 'route', 'utmCampaign', 'utmContent', 'utmMedium', 'utmSource', 'utmTerm', 'visitorId'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'browserName': browserName,
-        'country': country,
-        'deviceType': deviceType,
-        'environment': environment,
-        'eventData': eventData,
-        'eventName': eventName,
-        'flags': flags,
-        'osName': osName,
-        'projectId': projectId,
-        'projectName': projectName,
-        'referrerHostname': referrerHostname,
-        'requestHostname': requestHostname,
-        'requestPath': requestPath,
-        'route': route,
-        'utmCampaign': utmCampaign,
-        'utmContent': utmContent,
-        'utmMedium': utmMedium,
-        'utmSource': utmSource,
-        'utmTerm': utmTerm,
-        'visitorId': visitorId,
-      };
+    ...additionalProperties,
+    'browserName': browserName,
+    'country': country,
+    'deviceType': deviceType,
+    'environment': environment,
+    'eventData': eventData,
+    'eventName': eventName,
+    'flags': flags,
+    'osName': osName,
+    'projectId': projectId,
+    'projectName': projectName,
+    'referrerHostname': referrerHostname,
+    'requestHostname': requestHostname,
+    'requestPath': requestPath,
+    'route': route,
+    'utmCampaign': utmCampaign,
+    'utmContent': utmContent,
+    'utmMedium': utmMedium,
+    'utmSource': utmSource,
+    'utmTerm': utmTerm,
+    'visitorId': visitorId,
+  };
 }

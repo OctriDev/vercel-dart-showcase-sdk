@@ -13,60 +13,36 @@ class CreateProjectResponseLinkVariant7DeployHooksItem {
   final String ref;
   final String url;
 
-  const CreateProjectResponseLinkVariant7DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const CreateProjectResponseLinkVariant7DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  CreateProjectResponseLinkVariant7DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  CreateProjectResponseLinkVariant7DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  CreateProjectResponseLinkVariant7DeployHooksItem _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      CreateProjectResponseLinkVariant7DeployHooksItem(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  CreateProjectResponseLinkVariant7DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => CreateProjectResponseLinkVariant7DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory CreateProjectResponseLinkVariant7DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseLinkVariant7DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory CreateProjectResponseLinkVariant7DeployHooksItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseLinkVariant7DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }
 
 class CreateProjectResponseLinkVariant7 {
@@ -75,155 +51,72 @@ class CreateProjectResponseLinkVariant7 {
   final SdkOptional<double> createdAt;
   final List<CreateProjectResponseLinkVariant7DeployHooksItem> deployHooks;
   final String gitCredentialId;
-
   /// Owner (namespace) slug, e.g. `acme`.
   final String owner;
-
   /// Origin namespace id (`ns_…`) of the owner.
   final String ownerId;
   final String productionBranch;
   final String repo;
-
   /// Origin repository id.
   final String repoId;
   final SdkOptional<CreateProjectResponseLinkVariant7Sourceless> sourceless;
   final CreateProjectResponseLinkVariant7Type type_;
   final SdkOptional<double> updatedAt;
 
-  const CreateProjectResponseLinkVariant7(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.owner,
-      required this.ownerId,
-      required this.productionBranch,
-      required this.repo,
-      required this.repoId,
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted()});
+  const CreateProjectResponseLinkVariant7({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.owner, required this.ownerId, required this.productionBranch, required this.repo, required this.repoId, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
 
-  CreateProjectResponseLinkVariant7 Function(
-      {SdkOptional<double> createdAt,
-      List<CreateProjectResponseLinkVariant7DeployHooksItem> deployHooks,
-      String gitCredentialId,
-      String owner,
-      String ownerId,
-      String productionBranch,
-      String repo,
-      String repoId,
-      SdkOptional<CreateProjectResponseLinkVariant7Sourceless> sourceless,
-      CreateProjectResponseLinkVariant7Type type_,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  CreateProjectResponseLinkVariant7 Function({SdkOptional<double> createdAt, List<CreateProjectResponseLinkVariant7DeployHooksItem> deployHooks, String gitCredentialId, String owner, String ownerId, String productionBranch, String repo, String repoId, SdkOptional<CreateProjectResponseLinkVariant7Sourceless> sourceless, CreateProjectResponseLinkVariant7Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  CreateProjectResponseLinkVariant7 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? owner = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      CreateProjectResponseLinkVariant7(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks
-                as List<CreateProjectResponseLinkVariant7DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless
-                as SdkOptional<CreateProjectResponseLinkVariant7Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateProjectResponseLinkVariant7Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  CreateProjectResponseLinkVariant7 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateProjectResponseLinkVariant7(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<CreateProjectResponseLinkVariant7DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<CreateProjectResponseLinkVariant7Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseLinkVariant7Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory CreateProjectResponseLinkVariant7.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseLinkVariant7(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                CreateProjectResponseLinkVariant7DeployHooksItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        owner: (json['owner'] as String?)!,
-        ownerId: (json['ownerId'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: (json['repoId'] as String?)!,
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? CreateProjectResponseLinkVariant7Sourceless.fromJson(
-                    json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateProjectResponseLinkVariant7Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectResponseLinkVariant7.fromJson(Map<String, dynamic> json) => CreateProjectResponseLinkVariant7(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => CreateProjectResponseLinkVariant7DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    owner: (json['owner'] as String?)!,
+    ownerId: (json['ownerId'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: (json['repoId'] as String?)!,
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? CreateProjectResponseLinkVariant7Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateProjectResponseLinkVariant7Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'owner': owner,
-        'ownerId': ownerId,
-        'productionBranch': productionBranch,
-        'repo': repo,
-        'repoId': repoId,
-        ...switch (sourceless) {
-          SdkPresent<CreateProjectResponseLinkVariant7Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'owner': owner,
+    'ownerId': ownerId,
+    'productionBranch': productionBranch,
+    'repo': repo,
+    'repoId': repoId,
+    ...switch (sourceless) {
+      SdkPresent<CreateProjectResponseLinkVariant7Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class CreateProjectResponseLink {
@@ -232,168 +125,72 @@ sealed class CreateProjectResponseLink {
   const CreateProjectResponseLink();
   factory CreateProjectResponseLink.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CreateProjectResponseLinkVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseLinkVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseLinkVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseLinkVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseLinkVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant4(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseLinkVariant5.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant5(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseLinkVariant6.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant6(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseLinkVariant7.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseLinkCreateProjectResponseLinkVariant7(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant0(value); } } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant1(value); } } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant2(value); } } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant3(value); } } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant4(value); } } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant5(value); } } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant6(value); } } catch (_) {}
+      try { final value = CreateProjectResponseLinkVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseLinkCreateProjectResponseLinkVariant7(value); } } catch (_) {}
     }
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant0(
-          CreateProjectResponseLinkVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant1(
-          CreateProjectResponseLinkVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant2(
-          CreateProjectResponseLinkVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant3(
-          CreateProjectResponseLinkVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant4(
-          CreateProjectResponseLinkVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant5(
-          CreateProjectResponseLinkVariant5.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant6(
-          CreateProjectResponseLinkVariant6.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseLinkCreateProjectResponseLinkVariant7(
-          CreateProjectResponseLinkVariant7.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant0(CreateProjectResponseLinkVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant1(CreateProjectResponseLinkVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant2(CreateProjectResponseLinkVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant3(CreateProjectResponseLinkVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant4(CreateProjectResponseLinkVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant5(CreateProjectResponseLinkVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant6(CreateProjectResponseLinkVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseLinkCreateProjectResponseLinkVariant7(CreateProjectResponseLinkVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for CreateProjectResponseLink");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant0
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant0 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant0 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant1
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant1 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant1 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant2
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant2 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant2 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant2(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant3
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant3 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant3 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant3(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant4
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant4 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant4 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant4(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant5
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant5 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant5 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant5(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant6
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant6 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant6 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant6(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseLinkCreateProjectResponseLinkVariant7
-    extends CreateProjectResponseLink {
+final class CreateProjectResponseLinkCreateProjectResponseLinkVariant7 extends CreateProjectResponseLink {
   final CreateProjectResponseLinkVariant7 value;
   const CreateProjectResponseLinkCreateProjectResponseLinkVariant7(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

@@ -8,581 +8,277 @@ part of 'user.dart';
 class UserEventPayloadVariant492GeolocationMostSpecificSubdivision {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `names` wire field.
   final UserEventPayloadVariant492GeolocationMostSpecificSubdivisionNames names;
 
-  const UserEventPayloadVariant492GeolocationMostSpecificSubdivision(
-      {required this.names});
+  const UserEventPayloadVariant492GeolocationMostSpecificSubdivision({required this.names});
 
-  UserEventPayloadVariant492GeolocationMostSpecificSubdivision Function(
-      {UserEventPayloadVariant492GeolocationMostSpecificSubdivisionNames
-          names}) get copyWith => _copyWith;
+  UserEventPayloadVariant492GeolocationMostSpecificSubdivision Function({UserEventPayloadVariant492GeolocationMostSpecificSubdivisionNames names}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant492GeolocationMostSpecificSubdivision _copyWith(
-          {Object? names = sdkOmittedValue}) =>
-      UserEventPayloadVariant492GeolocationMostSpecificSubdivision(
-        names: identical(names, sdkOmittedValue)
-            ? this.names
-            : names
-                as UserEventPayloadVariant492GeolocationMostSpecificSubdivisionNames,
-      );
+  UserEventPayloadVariant492GeolocationMostSpecificSubdivision _copyWith({Object? names = sdkOmittedValue}) => UserEventPayloadVariant492GeolocationMostSpecificSubdivision(
+    names: identical(names, sdkOmittedValue) ? this.names : names as UserEventPayloadVariant492GeolocationMostSpecificSubdivisionNames,
+  );
 
-  factory UserEventPayloadVariant492GeolocationMostSpecificSubdivision.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant492GeolocationMostSpecificSubdivision(
-        names: (json['names'] != null
-            ? UserEventPayloadVariant492GeolocationMostSpecificSubdivisionNames
-                .fromJson(json['names'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant492GeolocationMostSpecificSubdivision.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant492GeolocationMostSpecificSubdivision(
+    names: (json['names'] != null ? UserEventPayloadVariant492GeolocationMostSpecificSubdivisionNames.fromJson(json['names'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'names': names.toJson(),
-      };
+    'names': names.toJson(),
+  };
 }
 
 /// Optional object value serialized in the `geolocation` wire field.
 class UserEventPayloadVariant492Geolocation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional object value serialized in the `city` wire field.
   final SdkOptional<UserEventPayloadVariant492GeolocationCity> city;
-
   /// Required object value serialized in the `country` wire field.
   final UserEventPayloadVariant492GeolocationCountry country;
-
   /// Optional object value serialized in the `most_specific_subdivision` wire field.
-  final SdkOptional<
-          UserEventPayloadVariant492GeolocationMostSpecificSubdivision>
-      mostSpecificSubdivision;
-
+  final SdkOptional<UserEventPayloadVariant492GeolocationMostSpecificSubdivision> mostSpecificSubdivision;
   /// Optional `string` value serialized in the `regionName` wire field.
   final SdkOptional<String> regionName;
 
-  const UserEventPayloadVariant492Geolocation(
-      {this.city = const SdkOmitted(),
-      required this.country,
-      this.mostSpecificSubdivision = const SdkOmitted(),
-      this.regionName = const SdkOmitted()});
+  const UserEventPayloadVariant492Geolocation({this.city = const SdkOmitted(), required this.country, this.mostSpecificSubdivision = const SdkOmitted(), this.regionName = const SdkOmitted()});
 
-  UserEventPayloadVariant492Geolocation Function(
-      {SdkOptional<UserEventPayloadVariant492GeolocationCity> city,
-      UserEventPayloadVariant492GeolocationCountry country,
-      SdkOptional<UserEventPayloadVariant492GeolocationMostSpecificSubdivision>
-          mostSpecificSubdivision,
-      SdkOptional<String> regionName}) get copyWith => _copyWith;
+  UserEventPayloadVariant492Geolocation Function({SdkOptional<UserEventPayloadVariant492GeolocationCity> city, UserEventPayloadVariant492GeolocationCountry country, SdkOptional<UserEventPayloadVariant492GeolocationMostSpecificSubdivision> mostSpecificSubdivision, SdkOptional<String> regionName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant492Geolocation _copyWith(
-          {Object? city = sdkOmittedValue,
-          Object? country = sdkOmittedValue,
-          Object? mostSpecificSubdivision = sdkOmittedValue,
-          Object? regionName = sdkOmittedValue}) =>
-      UserEventPayloadVariant492Geolocation(
-        city: identical(city, sdkOmittedValue)
-            ? this.city
-            : city as SdkOptional<UserEventPayloadVariant492GeolocationCity>,
-        country: identical(country, sdkOmittedValue)
-            ? this.country
-            : country as UserEventPayloadVariant492GeolocationCountry,
-        mostSpecificSubdivision: identical(
-                mostSpecificSubdivision, sdkOmittedValue)
-            ? this.mostSpecificSubdivision
-            : mostSpecificSubdivision as SdkOptional<
-                UserEventPayloadVariant492GeolocationMostSpecificSubdivision>,
-        regionName: identical(regionName, sdkOmittedValue)
-            ? this.regionName
-            : regionName as SdkOptional<String>,
-      );
+  UserEventPayloadVariant492Geolocation _copyWith({Object? city = sdkOmittedValue, Object? country = sdkOmittedValue, Object? mostSpecificSubdivision = sdkOmittedValue, Object? regionName = sdkOmittedValue}) => UserEventPayloadVariant492Geolocation(
+    city: identical(city, sdkOmittedValue) ? this.city : city as SdkOptional<UserEventPayloadVariant492GeolocationCity>,
+    country: identical(country, sdkOmittedValue) ? this.country : country as UserEventPayloadVariant492GeolocationCountry,
+    mostSpecificSubdivision: identical(mostSpecificSubdivision, sdkOmittedValue) ? this.mostSpecificSubdivision : mostSpecificSubdivision as SdkOptional<UserEventPayloadVariant492GeolocationMostSpecificSubdivision>,
+    regionName: identical(regionName, sdkOmittedValue) ? this.regionName : regionName as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant492Geolocation.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant492Geolocation(
-        city: json['city'] != null
-            ? SdkPresent((json['city'] != null
-                ? UserEventPayloadVariant492GeolocationCity.fromJson(
-                    json['city'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        country: (json['country'] != null
-            ? UserEventPayloadVariant492GeolocationCountry.fromJson(
-                json['country'] as Map<String, dynamic>)
-            : null)!,
-        mostSpecificSubdivision: json['most_specific_subdivision'] != null
-            ? SdkPresent((json['most_specific_subdivision'] != null
-                ? UserEventPayloadVariant492GeolocationMostSpecificSubdivision
-                    .fromJson(json['most_specific_subdivision']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        regionName: json['regionName'] != null
-            ? SdkPresent((json['regionName'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant492Geolocation.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant492Geolocation(
+    city: json['city'] != null ? SdkPresent((json['city'] != null ? UserEventPayloadVariant492GeolocationCity.fromJson(json['city'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    country: (json['country'] != null ? UserEventPayloadVariant492GeolocationCountry.fromJson(json['country'] as Map<String, dynamic>) : null)!,
+    mostSpecificSubdivision: json['most_specific_subdivision'] != null ? SdkPresent((json['most_specific_subdivision'] != null ? UserEventPayloadVariant492GeolocationMostSpecificSubdivision.fromJson(json['most_specific_subdivision'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    regionName: json['regionName'] != null ? SdkPresent((json['regionName'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (city) {
-          SdkPresent<UserEventPayloadVariant492GeolocationCity>(
-            value: final value
-          ) =>
-            {
-              'city': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'country': country.toJson(),
-        ...switch (mostSpecificSubdivision) {
-          SdkPresent<
-                UserEventPayloadVariant492GeolocationMostSpecificSubdivision>(
-            value: final value
-          ) =>
-            {
-              'most_specific_subdivision': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (regionName) {
-          SdkPresent<String>(value: final value) => {
-              'regionName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (city) {
+      SdkPresent<UserEventPayloadVariant492GeolocationCity>(value: final value) => {'city': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'country': country.toJson(),
+    ...switch (mostSpecificSubdivision) {
+      SdkPresent<UserEventPayloadVariant492GeolocationMostSpecificSubdivision>(value: final value) => {'most_specific_subdivision': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (regionName) {
+      SdkPresent<String>(value: final value) => {'regionName': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant492 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The token's public ID.
   final String actorTokenId;
-
   /// Optional `string` value serialized in the `createdByParentTeamId` wire field.
   final SdkOptional<String> createdByParentTeamId;
-
   /// Optional enumerated value serialized in the `expired` wire field.
   final SdkOptional<UserEventPayloadVariant492Expired> expired;
-
   /// Optional object value serialized in the `geolocation` wire field.
   final SdkOptional<UserEventPayloadVariant492Geolocation?> geolocation;
-
   /// Optional `string` value serialized in the `ip` wire field.
   final SdkOptional<String?> ip;
-
   /// Optional enumerated value serialized in the `leaked` wire field.
   final SdkOptional<UserEventPayloadVariant492Leaked> leaked;
-
   /// Optional enumerated value serialized in the `logoutSource` wire field.
   final SdkOptional<UserEventPayloadVariant492LogoutSource> logoutSource;
-
   /// Optional enumerated value serialized in the `origin` wire field.
   final SdkOptional<UserEventPayloadVariant492Origin> origin;
-
   /// Optional enumerated value serialized in the `reason` wire field.
   final SdkOptional<UserEventPayloadVariant492Reason> reason;
-
   /// Optional `string` value serialized in the `reqId` wire field.
   final SdkOptional<String> reqId;
-
   /// Optional `string` value serialized in the `reqUrl` wire field.
   final SdkOptional<String> reqUrl;
-
   /// Optional enumerated value serialized in the `revoked` wire field.
   final SdkOptional<UserEventPayloadVariant492Revoked> revoked;
-
   /// Optional enumerated value serialized in the `scope` wire field.
   final SdkOptional<UserEventPayloadVariant492Scope> scope;
-
   /// Optional enumerated value serialized in the `source` wire field.
   final SdkOptional<UserEventPayloadVariant492Source> source;
-
   /// Optional `string` value serialized in the `teamId` wire field.
   final SdkOptional<String> teamId;
-
   /// Required `string` value serialized in the `tokenId` wire field.
   final String tokenId;
-
   /// Required `string` value serialized in the `tokenName` wire field.
   final String tokenName;
-
   /// Required `string` value serialized in the `tokenType` wire field.
   final String tokenType;
-
   /// Optional `string` value serialized in the `userAgent` wire field.
   final SdkOptional<String> userAgent;
 
-  const UserEventPayloadVariant492(
-      {required this.actorTokenId,
-      this.createdByParentTeamId = const SdkOmitted(),
-      this.expired = const SdkOmitted(),
-      this.geolocation = const SdkOmitted(),
-      this.ip = const SdkOmitted(),
-      this.leaked = const SdkOmitted(),
-      this.logoutSource = const SdkOmitted(),
-      this.origin = const SdkOmitted(),
-      this.reason = const SdkOmitted(),
-      this.reqId = const SdkOmitted(),
-      this.reqUrl = const SdkOmitted(),
-      this.revoked = const SdkOmitted(),
-      this.scope = const SdkOmitted(),
-      this.source = const SdkOmitted(),
-      this.teamId = const SdkOmitted(),
-      required this.tokenId,
-      required this.tokenName,
-      required this.tokenType,
-      this.userAgent = const SdkOmitted()});
+  const UserEventPayloadVariant492({required this.actorTokenId, this.createdByParentTeamId = const SdkOmitted(), this.expired = const SdkOmitted(), this.geolocation = const SdkOmitted(), this.ip = const SdkOmitted(), this.leaked = const SdkOmitted(), this.logoutSource = const SdkOmitted(), this.origin = const SdkOmitted(), this.reason = const SdkOmitted(), this.reqId = const SdkOmitted(), this.reqUrl = const SdkOmitted(), this.revoked = const SdkOmitted(), this.scope = const SdkOmitted(), this.source = const SdkOmitted(), this.teamId = const SdkOmitted(), required this.tokenId, required this.tokenName, required this.tokenType, this.userAgent = const SdkOmitted()});
 
-  UserEventPayloadVariant492 Function(
-      {String actorTokenId,
-      SdkOptional<String> createdByParentTeamId,
-      SdkOptional<UserEventPayloadVariant492Expired> expired,
-      SdkOptional<UserEventPayloadVariant492Geolocation?> geolocation,
-      SdkOptional<String?> ip,
-      SdkOptional<UserEventPayloadVariant492Leaked> leaked,
-      SdkOptional<UserEventPayloadVariant492LogoutSource> logoutSource,
-      SdkOptional<UserEventPayloadVariant492Origin> origin,
-      SdkOptional<UserEventPayloadVariant492Reason> reason,
-      SdkOptional<String> reqId,
-      SdkOptional<String> reqUrl,
-      SdkOptional<UserEventPayloadVariant492Revoked> revoked,
-      SdkOptional<UserEventPayloadVariant492Scope> scope,
-      SdkOptional<UserEventPayloadVariant492Source> source,
-      SdkOptional<String> teamId,
-      String tokenId,
-      String tokenName,
-      String tokenType,
-      SdkOptional<String> userAgent}) get copyWith => _copyWith;
+  UserEventPayloadVariant492 Function({String actorTokenId, SdkOptional<String> createdByParentTeamId, SdkOptional<UserEventPayloadVariant492Expired> expired, SdkOptional<UserEventPayloadVariant492Geolocation?> geolocation, SdkOptional<String?> ip, SdkOptional<UserEventPayloadVariant492Leaked> leaked, SdkOptional<UserEventPayloadVariant492LogoutSource> logoutSource, SdkOptional<UserEventPayloadVariant492Origin> origin, SdkOptional<UserEventPayloadVariant492Reason> reason, SdkOptional<String> reqId, SdkOptional<String> reqUrl, SdkOptional<UserEventPayloadVariant492Revoked> revoked, SdkOptional<UserEventPayloadVariant492Scope> scope, SdkOptional<UserEventPayloadVariant492Source> source, SdkOptional<String> teamId, String tokenId, String tokenName, String tokenType, SdkOptional<String> userAgent}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant492 _copyWith(
-          {Object? actorTokenId = sdkOmittedValue,
-          Object? createdByParentTeamId = sdkOmittedValue,
-          Object? expired = sdkOmittedValue,
-          Object? geolocation = sdkOmittedValue,
-          Object? ip = sdkOmittedValue,
-          Object? leaked = sdkOmittedValue,
-          Object? logoutSource = sdkOmittedValue,
-          Object? origin = sdkOmittedValue,
-          Object? reason = sdkOmittedValue,
-          Object? reqId = sdkOmittedValue,
-          Object? reqUrl = sdkOmittedValue,
-          Object? revoked = sdkOmittedValue,
-          Object? scope = sdkOmittedValue,
-          Object? source = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue,
-          Object? tokenId = sdkOmittedValue,
-          Object? tokenName = sdkOmittedValue,
-          Object? tokenType = sdkOmittedValue,
-          Object? userAgent = sdkOmittedValue}) =>
-      UserEventPayloadVariant492(
-        actorTokenId: identical(actorTokenId, sdkOmittedValue)
-            ? this.actorTokenId
-            : actorTokenId as String,
-        createdByParentTeamId: identical(createdByParentTeamId, sdkOmittedValue)
-            ? this.createdByParentTeamId
-            : createdByParentTeamId as SdkOptional<String>,
-        expired: identical(expired, sdkOmittedValue)
-            ? this.expired
-            : expired as SdkOptional<UserEventPayloadVariant492Expired>,
-        geolocation: identical(geolocation, sdkOmittedValue)
-            ? this.geolocation
-            : geolocation
-                as SdkOptional<UserEventPayloadVariant492Geolocation?>,
-        ip: identical(ip, sdkOmittedValue)
-            ? this.ip
-            : ip as SdkOptional<String?>,
-        leaked: identical(leaked, sdkOmittedValue)
-            ? this.leaked
-            : leaked as SdkOptional<UserEventPayloadVariant492Leaked>,
-        logoutSource: identical(logoutSource, sdkOmittedValue)
-            ? this.logoutSource
-            : logoutSource
-                as SdkOptional<UserEventPayloadVariant492LogoutSource>,
-        origin: identical(origin, sdkOmittedValue)
-            ? this.origin
-            : origin as SdkOptional<UserEventPayloadVariant492Origin>,
-        reason: identical(reason, sdkOmittedValue)
-            ? this.reason
-            : reason as SdkOptional<UserEventPayloadVariant492Reason>,
-        reqId: identical(reqId, sdkOmittedValue)
-            ? this.reqId
-            : reqId as SdkOptional<String>,
-        reqUrl: identical(reqUrl, sdkOmittedValue)
-            ? this.reqUrl
-            : reqUrl as SdkOptional<String>,
-        revoked: identical(revoked, sdkOmittedValue)
-            ? this.revoked
-            : revoked as SdkOptional<UserEventPayloadVariant492Revoked>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope as SdkOptional<UserEventPayloadVariant492Scope>,
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source as SdkOptional<UserEventPayloadVariant492Source>,
-        teamId: identical(teamId, sdkOmittedValue)
-            ? this.teamId
-            : teamId as SdkOptional<String>,
-        tokenId: identical(tokenId, sdkOmittedValue)
-            ? this.tokenId
-            : tokenId as String,
-        tokenName: identical(tokenName, sdkOmittedValue)
-            ? this.tokenName
-            : tokenName as String,
-        tokenType: identical(tokenType, sdkOmittedValue)
-            ? this.tokenType
-            : tokenType as String,
-        userAgent: identical(userAgent, sdkOmittedValue)
-            ? this.userAgent
-            : userAgent as SdkOptional<String>,
-      );
+  UserEventPayloadVariant492 _copyWith({Object? actorTokenId = sdkOmittedValue, Object? createdByParentTeamId = sdkOmittedValue, Object? expired = sdkOmittedValue, Object? geolocation = sdkOmittedValue, Object? ip = sdkOmittedValue, Object? leaked = sdkOmittedValue, Object? logoutSource = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? reqId = sdkOmittedValue, Object? reqUrl = sdkOmittedValue, Object? revoked = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? source = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? tokenId = sdkOmittedValue, Object? tokenName = sdkOmittedValue, Object? tokenType = sdkOmittedValue, Object? userAgent = sdkOmittedValue}) => UserEventPayloadVariant492(
+    actorTokenId: identical(actorTokenId, sdkOmittedValue) ? this.actorTokenId : actorTokenId as String,
+    createdByParentTeamId: identical(createdByParentTeamId, sdkOmittedValue) ? this.createdByParentTeamId : createdByParentTeamId as SdkOptional<String>,
+    expired: identical(expired, sdkOmittedValue) ? this.expired : expired as SdkOptional<UserEventPayloadVariant492Expired>,
+    geolocation: identical(geolocation, sdkOmittedValue) ? this.geolocation : geolocation as SdkOptional<UserEventPayloadVariant492Geolocation?>,
+    ip: identical(ip, sdkOmittedValue) ? this.ip : ip as SdkOptional<String?>,
+    leaked: identical(leaked, sdkOmittedValue) ? this.leaked : leaked as SdkOptional<UserEventPayloadVariant492Leaked>,
+    logoutSource: identical(logoutSource, sdkOmittedValue) ? this.logoutSource : logoutSource as SdkOptional<UserEventPayloadVariant492LogoutSource>,
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as SdkOptional<UserEventPayloadVariant492Origin>,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<UserEventPayloadVariant492Reason>,
+    reqId: identical(reqId, sdkOmittedValue) ? this.reqId : reqId as SdkOptional<String>,
+    reqUrl: identical(reqUrl, sdkOmittedValue) ? this.reqUrl : reqUrl as SdkOptional<String>,
+    revoked: identical(revoked, sdkOmittedValue) ? this.revoked : revoked as SdkOptional<UserEventPayloadVariant492Revoked>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<UserEventPayloadVariant492Scope>,
+    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<UserEventPayloadVariant492Source>,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String>,
+    tokenId: identical(tokenId, sdkOmittedValue) ? this.tokenId : tokenId as String,
+    tokenName: identical(tokenName, sdkOmittedValue) ? this.tokenName : tokenName as String,
+    tokenType: identical(tokenType, sdkOmittedValue) ? this.tokenType : tokenType as String,
+    userAgent: identical(userAgent, sdkOmittedValue) ? this.userAgent : userAgent as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant492.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant492(
-        actorTokenId: (json['actorTokenId'] as String?)!,
-        createdByParentTeamId: json['createdByParentTeamId'] != null
-            ? SdkPresent((json['createdByParentTeamId'] as String?)!)
-            : const SdkOmitted(),
-        expired: json['expired'] != null
-            ? SdkPresent((json['expired'] != null
-                ? UserEventPayloadVariant492Expired.fromJson(
-                    json['expired'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        geolocation: json.containsKey('geolocation')
-            ? SdkPresent(json['geolocation'] != null
-                ? UserEventPayloadVariant492Geolocation.fromJson(
-                    json['geolocation'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        ip: json.containsKey('ip')
-            ? SdkPresent(json['ip'] as String?)
-            : const SdkOmitted(),
-        leaked: json['leaked'] != null
-            ? SdkPresent((json['leaked'] != null
-                ? UserEventPayloadVariant492Leaked.fromJson(
-                    json['leaked'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        logoutSource: json['logoutSource'] != null
-            ? SdkPresent((json['logoutSource'] != null
-                ? UserEventPayloadVariant492LogoutSource.fromJson(
-                    json['logoutSource'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        origin: json['origin'] != null
-            ? SdkPresent((json['origin'] != null
-                ? UserEventPayloadVariant492Origin.fromJson(
-                    json['origin'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        reason: json['reason'] != null
-            ? SdkPresent((json['reason'] != null
-                ? UserEventPayloadVariant492Reason.fromJson(
-                    json['reason'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        reqId: json['reqId'] != null
-            ? SdkPresent((json['reqId'] as String?)!)
-            : const SdkOmitted(),
-        reqUrl: json['reqUrl'] != null
-            ? SdkPresent((json['reqUrl'] as String?)!)
-            : const SdkOmitted(),
-        revoked: json['revoked'] != null
-            ? SdkPresent((json['revoked'] != null
-                ? UserEventPayloadVariant492Revoked.fromJson(
-                    json['revoked'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        scope: json['scope'] != null
-            ? SdkPresent((json['scope'] != null
-                ? UserEventPayloadVariant492Scope.fromJson(
-                    json['scope'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        source: json['source'] != null
-            ? SdkPresent((json['source'] != null
-                ? UserEventPayloadVariant492Source.fromJson(
-                    json['source'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        teamId: json['teamId'] != null
-            ? SdkPresent((json['teamId'] as String?)!)
-            : const SdkOmitted(),
-        tokenId: (json['tokenId'] as String?)!,
-        tokenName: (json['tokenName'] as String?)!,
-        tokenType: (json['tokenType'] as String?)!,
-        userAgent: json['userAgent'] != null
-            ? SdkPresent((json['userAgent'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant492.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant492(
+    actorTokenId: (json['actorTokenId'] as String?)!,
+    createdByParentTeamId: json['createdByParentTeamId'] != null ? SdkPresent((json['createdByParentTeamId'] as String?)!) : const SdkOmitted(),
+    expired: json['expired'] != null ? SdkPresent((json['expired'] != null ? UserEventPayloadVariant492Expired.fromJson(json['expired'] as bool) : null)!) : const SdkOmitted(),
+    geolocation: json.containsKey('geolocation') ? SdkPresent(json['geolocation'] != null ? UserEventPayloadVariant492Geolocation.fromJson(json['geolocation'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    ip: json.containsKey('ip') ? SdkPresent(json['ip'] as String?) : const SdkOmitted(),
+    leaked: json['leaked'] != null ? SdkPresent((json['leaked'] != null ? UserEventPayloadVariant492Leaked.fromJson(json['leaked'] as bool) : null)!) : const SdkOmitted(),
+    logoutSource: json['logoutSource'] != null ? SdkPresent((json['logoutSource'] != null ? UserEventPayloadVariant492LogoutSource.fromJson(json['logoutSource'] as String) : null)!) : const SdkOmitted(),
+    origin: json['origin'] != null ? SdkPresent((json['origin'] != null ? UserEventPayloadVariant492Origin.fromJson(json['origin'] as String) : null)!) : const SdkOmitted(),
+    reason: json['reason'] != null ? SdkPresent((json['reason'] != null ? UserEventPayloadVariant492Reason.fromJson(json['reason'] as String) : null)!) : const SdkOmitted(),
+    reqId: json['reqId'] != null ? SdkPresent((json['reqId'] as String?)!) : const SdkOmitted(),
+    reqUrl: json['reqUrl'] != null ? SdkPresent((json['reqUrl'] as String?)!) : const SdkOmitted(),
+    revoked: json['revoked'] != null ? SdkPresent((json['revoked'] != null ? UserEventPayloadVariant492Revoked.fromJson(json['revoked'] as bool) : null)!) : const SdkOmitted(),
+    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? UserEventPayloadVariant492Scope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
+    source: json['source'] != null ? SdkPresent((json['source'] != null ? UserEventPayloadVariant492Source.fromJson(json['source'] as String) : null)!) : const SdkOmitted(),
+    teamId: json['teamId'] != null ? SdkPresent((json['teamId'] as String?)!) : const SdkOmitted(),
+    tokenId: (json['tokenId'] as String?)!,
+    tokenName: (json['tokenName'] as String?)!,
+    tokenType: (json['tokenType'] as String?)!,
+    userAgent: json['userAgent'] != null ? SdkPresent((json['userAgent'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'actorTokenId': actorTokenId,
-        ...switch (createdByParentTeamId) {
-          SdkPresent<String>(value: final value) => {
-              'createdByParentTeamId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (expired) {
-          SdkPresent<UserEventPayloadVariant492Expired>(value: final value) => {
-              'expired': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (geolocation) {
-          SdkPresent<UserEventPayloadVariant492Geolocation?>(
-            value: final value
-          ) =>
-            {
-              'geolocation': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ip) {
-          SdkPresent<String?>(value: final value) => {
-              'ip': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (leaked) {
-          SdkPresent<UserEventPayloadVariant492Leaked>(value: final value) => {
-              'leaked': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (logoutSource) {
-          SdkPresent<UserEventPayloadVariant492LogoutSource>(
-            value: final value
-          ) =>
-            {
-              'logoutSource': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (origin) {
-          SdkPresent<UserEventPayloadVariant492Origin>(value: final value) => {
-              'origin': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (reason) {
-          SdkPresent<UserEventPayloadVariant492Reason>(value: final value) => {
-              'reason': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (reqId) {
-          SdkPresent<String>(value: final value) => {
-              'reqId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (reqUrl) {
-          SdkPresent<String>(value: final value) => {
-              'reqUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (revoked) {
-          SdkPresent<UserEventPayloadVariant492Revoked>(value: final value) => {
-              'revoked': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scope) {
-          SdkPresent<UserEventPayloadVariant492Scope>(value: final value) => {
-              'scope': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (source) {
-          SdkPresent<UserEventPayloadVariant492Source>(value: final value) => {
-              'source': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (teamId) {
-          SdkPresent<String>(value: final value) => {
-              'teamId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'tokenId': tokenId,
-        'tokenName': tokenName,
-        'tokenType': tokenType,
-        ...switch (userAgent) {
-          SdkPresent<String>(value: final value) => {
-              'userAgent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'actorTokenId': actorTokenId,
+    ...switch (createdByParentTeamId) {
+      SdkPresent<String>(value: final value) => {'createdByParentTeamId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (expired) {
+      SdkPresent<UserEventPayloadVariant492Expired>(value: final value) => {'expired': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (geolocation) {
+      SdkPresent<UserEventPayloadVariant492Geolocation?>(value: final value) => {'geolocation': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ip) {
+      SdkPresent<String?>(value: final value) => {'ip': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (leaked) {
+      SdkPresent<UserEventPayloadVariant492Leaked>(value: final value) => {'leaked': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (logoutSource) {
+      SdkPresent<UserEventPayloadVariant492LogoutSource>(value: final value) => {'logoutSource': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (origin) {
+      SdkPresent<UserEventPayloadVariant492Origin>(value: final value) => {'origin': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (reason) {
+      SdkPresent<UserEventPayloadVariant492Reason>(value: final value) => {'reason': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (reqId) {
+      SdkPresent<String>(value: final value) => {'reqId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (reqUrl) {
+      SdkPresent<String>(value: final value) => {'reqUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (revoked) {
+      SdkPresent<UserEventPayloadVariant492Revoked>(value: final value) => {'revoked': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scope) {
+      SdkPresent<UserEventPayloadVariant492Scope>(value: final value) => {'scope': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (source) {
+      SdkPresent<UserEventPayloadVariant492Source>(value: final value) => {'source': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (teamId) {
+      SdkPresent<String>(value: final value) => {'teamId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'tokenId': tokenId,
+    'tokenName': tokenName,
+    'tokenType': tokenType,
+    ...switch (userAgent) {
+      SdkPresent<String>(value: final value) => {'userAgent': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `names` wire field.
 class UserEventPayloadVariant493GeolocationCityNames {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `en` wire field.
   final String en;
 
   const UserEventPayloadVariant493GeolocationCityNames({required this.en});
 
-  UserEventPayloadVariant493GeolocationCityNames Function({String en})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant493GeolocationCityNames Function({String en}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant493GeolocationCityNames _copyWith(
-          {Object? en = sdkOmittedValue}) =>
-      UserEventPayloadVariant493GeolocationCityNames(
-        en: identical(en, sdkOmittedValue) ? this.en : en as String,
-      );
+  UserEventPayloadVariant493GeolocationCityNames _copyWith({Object? en = sdkOmittedValue}) => UserEventPayloadVariant493GeolocationCityNames(
+    en: identical(en, sdkOmittedValue) ? this.en : en as String,
+  );
 
-  factory UserEventPayloadVariant493GeolocationCityNames.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant493GeolocationCityNames(
-        en: (json['en'] as String?)!,
-      );
+  factory UserEventPayloadVariant493GeolocationCityNames.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant493GeolocationCityNames(
+    en: (json['en'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'en': en,
-      };
+    'en': en,
+  };
 }
 
 /// Optional object value serialized in the `city` wire field.
 class UserEventPayloadVariant493GeolocationCity {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `names` wire field.
   final UserEventPayloadVariant493GeolocationCityNames names;
 
   const UserEventPayloadVariant493GeolocationCity({required this.names});
 
-  UserEventPayloadVariant493GeolocationCity Function(
-          {UserEventPayloadVariant493GeolocationCityNames names})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant493GeolocationCity Function({UserEventPayloadVariant493GeolocationCityNames names}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant493GeolocationCity _copyWith(
-          {Object? names = sdkOmittedValue}) =>
-      UserEventPayloadVariant493GeolocationCity(
-        names: identical(names, sdkOmittedValue)
-            ? this.names
-            : names as UserEventPayloadVariant493GeolocationCityNames,
-      );
+  UserEventPayloadVariant493GeolocationCity _copyWith({Object? names = sdkOmittedValue}) => UserEventPayloadVariant493GeolocationCity(
+    names: identical(names, sdkOmittedValue) ? this.names : names as UserEventPayloadVariant493GeolocationCityNames,
+  );
 
-  factory UserEventPayloadVariant493GeolocationCity.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant493GeolocationCity(
-        names: (json['names'] != null
-            ? UserEventPayloadVariant493GeolocationCityNames.fromJson(
-                json['names'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant493GeolocationCity.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant493GeolocationCity(
+    names: (json['names'] != null ? UserEventPayloadVariant493GeolocationCityNames.fromJson(json['names'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'names': names.toJson(),
-      };
+    'names': names.toJson(),
+  };
 }

@@ -8,219 +8,84 @@ part of 'inline.dart';
 class DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether consolidated commit status is enabled.
-  final DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
-      enabled;
-
+  final DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled enabled;
   /// Whether to propagate individual deployment failures to the consolidated status.
-  final DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-      propagateFailures;
+  final DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures propagateFailures;
 
-  const DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus(
-      {required this.enabled, required this.propagateFailures});
+  const DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus({required this.enabled, required this.propagateFailures});
 
-  DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus Function(
-      {DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
-          enabled,
-      DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-          propagateFailures}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus Function({DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled enabled, DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures propagateFailures}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus
-      _copyWith(
-              {Object? enabled = sdkOmittedValue,
-              Object? propagateFailures = sdkOmittedValue}) =>
-          DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus(
-            enabled: identical(enabled, sdkOmittedValue)
-                ? this.enabled
-                : enabled
-                    as DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled,
-            propagateFailures: identical(propagateFailures, sdkOmittedValue)
-                ? this.propagateFailures
-                : propagateFailures
-                    as DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures,
-          );
+  DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus _copyWith({Object? enabled = sdkOmittedValue, Object? propagateFailures = sdkOmittedValue}) => DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled,
+    propagateFailures: identical(propagateFailures, sdkOmittedValue) ? this.propagateFailures : propagateFailures as DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures,
+  );
 
-  factory DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus(
-        enabled: (json['enabled'] != null
-            ? DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
-                .fromJson(json['enabled'] as bool)
-            : null)!,
-        propagateFailures: (json['propagateFailures'] != null
-            ? DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-                .fromJson(json['propagateFailures'] as bool)
-            : null)!,
-      );
+  factory DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus(
+    enabled: (json['enabled'] != null ? DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(json['enabled'] as bool) : null)!,
+    propagateFailures: (json['propagateFailures'] != null ? DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures.fromJson(json['propagateFailures'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-        'propagateFailures': propagateFailures.toJson(),
-      };
+    'enabled': enabled.toJson(),
+    'propagateFailures': propagateFailures.toJson(),
+  };
 }
 
 class DeleteProjectAvatarResponseGitProviderOptions {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Configuration for consolidated git commit status reporting. When enabled, Vercel will post a single consolidated commit status instead of individual statuses for each deployment.
-  final SdkOptional<
-          DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus>
-      consolidatedGitCommitStatus;
-
+  final SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus> consolidatedGitCommitStatus;
   /// Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead
-  final DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments
-      createDeployments;
-
+  final DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments createDeployments;
   /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`.
-  final SdkOptional<
-          DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents>
-      disableRepositoryDispatchEvents;
-
+  final SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents> disableRepositoryDispatchEvents;
   /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
-  final SdkOptional<
-          DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus>
-      gitCommitStatus;
-
+  final SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus> gitCommitStatus;
   /// Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`.
-  final SdkOptional<
-          DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits>
-      requireVerifiedCommits;
+  final SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits> requireVerifiedCommits;
 
-  const DeleteProjectAvatarResponseGitProviderOptions(
-      {this.consolidatedGitCommitStatus = const SdkOmitted(),
-      required this.createDeployments,
-      this.disableRepositoryDispatchEvents = const SdkOmitted(),
-      this.gitCommitStatus = const SdkOmitted(),
-      this.requireVerifiedCommits = const SdkOmitted()});
+  const DeleteProjectAvatarResponseGitProviderOptions({this.consolidatedGitCommitStatus = const SdkOmitted(), required this.createDeployments, this.disableRepositoryDispatchEvents = const SdkOmitted(), this.gitCommitStatus = const SdkOmitted(), this.requireVerifiedCommits = const SdkOmitted()});
 
-  DeleteProjectAvatarResponseGitProviderOptions Function(
-      {SdkOptional<
-              DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus>
-          consolidatedGitCommitStatus,
-      DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments
-          createDeployments,
-      SdkOptional<
-              DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents>
-          disableRepositoryDispatchEvents,
-      SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus>
-          gitCommitStatus,
-      SdkOptional<
-              DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits>
-          requireVerifiedCommits}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseGitProviderOptions Function({SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus> consolidatedGitCommitStatus, DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments createDeployments, SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents> disableRepositoryDispatchEvents, SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus> gitCommitStatus, SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits> requireVerifiedCommits}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseGitProviderOptions _copyWith(
-          {Object? consolidatedGitCommitStatus = sdkOmittedValue,
-          Object? createDeployments = sdkOmittedValue,
-          Object? disableRepositoryDispatchEvents = sdkOmittedValue,
-          Object? gitCommitStatus = sdkOmittedValue,
-          Object? requireVerifiedCommits = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseGitProviderOptions(
-        consolidatedGitCommitStatus: identical(
-                consolidatedGitCommitStatus, sdkOmittedValue)
-            ? this.consolidatedGitCommitStatus
-            : consolidatedGitCommitStatus as SdkOptional<
-                DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus>,
-        createDeployments: identical(createDeployments, sdkOmittedValue)
-            ? this.createDeployments
-            : createDeployments
-                as DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments,
-        disableRepositoryDispatchEvents: identical(
-                disableRepositoryDispatchEvents, sdkOmittedValue)
-            ? this.disableRepositoryDispatchEvents
-            : disableRepositoryDispatchEvents as SdkOptional<
-                DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents>,
-        gitCommitStatus: identical(gitCommitStatus, sdkOmittedValue)
-            ? this.gitCommitStatus
-            : gitCommitStatus as SdkOptional<
-                DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus>,
-        requireVerifiedCommits: identical(
-                requireVerifiedCommits, sdkOmittedValue)
-            ? this.requireVerifiedCommits
-            : requireVerifiedCommits as SdkOptional<
-                DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits>,
-      );
+  DeleteProjectAvatarResponseGitProviderOptions _copyWith({Object? consolidatedGitCommitStatus = sdkOmittedValue, Object? createDeployments = sdkOmittedValue, Object? disableRepositoryDispatchEvents = sdkOmittedValue, Object? gitCommitStatus = sdkOmittedValue, Object? requireVerifiedCommits = sdkOmittedValue}) => DeleteProjectAvatarResponseGitProviderOptions(
+    consolidatedGitCommitStatus: identical(consolidatedGitCommitStatus, sdkOmittedValue) ? this.consolidatedGitCommitStatus : consolidatedGitCommitStatus as SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus>,
+    createDeployments: identical(createDeployments, sdkOmittedValue) ? this.createDeployments : createDeployments as DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments,
+    disableRepositoryDispatchEvents: identical(disableRepositoryDispatchEvents, sdkOmittedValue) ? this.disableRepositoryDispatchEvents : disableRepositoryDispatchEvents as SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents>,
+    gitCommitStatus: identical(gitCommitStatus, sdkOmittedValue) ? this.gitCommitStatus : gitCommitStatus as SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus>,
+    requireVerifiedCommits: identical(requireVerifiedCommits, sdkOmittedValue) ? this.requireVerifiedCommits : requireVerifiedCommits as SdkOptional<DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits>,
+  );
 
-  factory DeleteProjectAvatarResponseGitProviderOptions.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseGitProviderOptions(
-        consolidatedGitCommitStatus: json['consolidatedGitCommitStatus'] != null
-            ? SdkPresent((json['consolidatedGitCommitStatus'] != null
-                ? DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus
-                    .fromJson(json['consolidatedGitCommitStatus']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        createDeployments: (json['createDeployments'] != null
-            ? DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments
-                .fromJson(json['createDeployments'] as String)
-            : null)!,
-        disableRepositoryDispatchEvents: json[
-                    'disableRepositoryDispatchEvents'] !=
-                null
-            ? SdkPresent((json['disableRepositoryDispatchEvents'] != null
-                ? DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents
-                    .fromJson(json['disableRepositoryDispatchEvents'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        gitCommitStatus: json['gitCommitStatus'] != null
-            ? SdkPresent((json['gitCommitStatus'] != null
-                ? DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus
-                    .fromJson(json['gitCommitStatus'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        requireVerifiedCommits: json['requireVerifiedCommits'] != null
-            ? SdkPresent((json['requireVerifiedCommits'] != null
-                ? DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits
-                    .fromJson(json['requireVerifiedCommits'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory DeleteProjectAvatarResponseGitProviderOptions.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseGitProviderOptions(
+    consolidatedGitCommitStatus: json['consolidatedGitCommitStatus'] != null ? SdkPresent((json['consolidatedGitCommitStatus'] != null ? DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus.fromJson(json['consolidatedGitCommitStatus'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    createDeployments: (json['createDeployments'] != null ? DeleteProjectAvatarResponseGitProviderOptionsCreateDeployments.fromJson(json['createDeployments'] as String) : null)!,
+    disableRepositoryDispatchEvents: json['disableRepositoryDispatchEvents'] != null ? SdkPresent((json['disableRepositoryDispatchEvents'] != null ? DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents.fromJson(json['disableRepositoryDispatchEvents'] as bool) : null)!) : const SdkOmitted(),
+    gitCommitStatus: json['gitCommitStatus'] != null ? SdkPresent((json['gitCommitStatus'] != null ? DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus.fromJson(json['gitCommitStatus'] as bool) : null)!) : const SdkOmitted(),
+    requireVerifiedCommits: json['requireVerifiedCommits'] != null ? SdkPresent((json['requireVerifiedCommits'] != null ? DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits.fromJson(json['requireVerifiedCommits'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (consolidatedGitCommitStatus) {
-          SdkPresent<
-                DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus>(
-            value: final value
-          ) =>
-            {
-              'consolidatedGitCommitStatus': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createDeployments': createDeployments.toJson(),
-        ...switch (disableRepositoryDispatchEvents) {
-          SdkPresent<
-                DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents>(
-            value: final value
-          ) =>
-            {
-              'disableRepositoryDispatchEvents': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitCommitStatus) {
-          SdkPresent<
-                DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus>(
-            value: final value
-          ) =>
-            {
-              'gitCommitStatus': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requireVerifiedCommits) {
-          SdkPresent<
-                DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits>(
-            value: final value
-          ) =>
-            {
-              'requireVerifiedCommits': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (consolidatedGitCommitStatus) {
+      SdkPresent<DeleteProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatus>(value: final value) => {'consolidatedGitCommitStatus': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'createDeployments': createDeployments.toJson(),
+    ...switch (disableRepositoryDispatchEvents) {
+      SdkPresent<DeleteProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents>(value: final value) => {'disableRepositoryDispatchEvents': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitCommitStatus) {
+      SdkPresent<DeleteProjectAvatarResponseGitProviderOptionsGitCommitStatus>(value: final value) => {'gitCommitStatus': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requireVerifiedCommits) {
+      SdkPresent<DeleteProjectAvatarResponseGitProviderOptionsRequireVerifiedCommits>(value: final value) => {'requireVerifiedCommits': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class DeleteProjectAvatarResponseIpBucketsItem {
@@ -230,65 +95,33 @@ class DeleteProjectAvatarResponseIpBucketsItem {
   final SdkOptional<DeleteProjectAvatarResponseIpBucketsItemDefault> default_;
   final SdkOptional<double> supportUntil;
 
-  const DeleteProjectAvatarResponseIpBucketsItem(
-      {required this.bucket,
-      this.default_ = const SdkOmitted(),
-      this.supportUntil = const SdkOmitted()});
+  const DeleteProjectAvatarResponseIpBucketsItem({required this.bucket, this.default_ = const SdkOmitted(), this.supportUntil = const SdkOmitted()});
 
-  DeleteProjectAvatarResponseIpBucketsItem Function(
-      {String bucket,
-      SdkOptional<DeleteProjectAvatarResponseIpBucketsItemDefault> default_,
-      SdkOptional<double> supportUntil}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseIpBucketsItem Function({String bucket, SdkOptional<DeleteProjectAvatarResponseIpBucketsItemDefault> default_, SdkOptional<double> supportUntil}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseIpBucketsItem _copyWith(
-          {Object? bucket = sdkOmittedValue,
-          Object? default_ = sdkOmittedValue,
-          Object? supportUntil = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseIpBucketsItem(
-        bucket:
-            identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
-        default_: identical(default_, sdkOmittedValue)
-            ? this.default_
-            : default_
-                as SdkOptional<DeleteProjectAvatarResponseIpBucketsItemDefault>,
-        supportUntil: identical(supportUntil, sdkOmittedValue)
-            ? this.supportUntil
-            : supportUntil as SdkOptional<double>,
-      );
+  DeleteProjectAvatarResponseIpBucketsItem _copyWith({Object? bucket = sdkOmittedValue, Object? default_ = sdkOmittedValue, Object? supportUntil = sdkOmittedValue}) => DeleteProjectAvatarResponseIpBucketsItem(
+    bucket: identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
+    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<DeleteProjectAvatarResponseIpBucketsItemDefault>,
+    supportUntil: identical(supportUntil, sdkOmittedValue) ? this.supportUntil : supportUntil as SdkOptional<double>,
+  );
 
-  factory DeleteProjectAvatarResponseIpBucketsItem.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseIpBucketsItem(
-        bucket: (json['bucket'] as String?)!,
-        default_: json['default'] != null
-            ? SdkPresent((json['default'] != null
-                ? DeleteProjectAvatarResponseIpBucketsItemDefault.fromJson(
-                    json['default'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        supportUntil: json['supportUntil'] != null
-            ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory DeleteProjectAvatarResponseIpBucketsItem.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseIpBucketsItem(
+    bucket: (json['bucket'] as String?)!,
+    default_: json['default'] != null ? SdkPresent((json['default'] != null ? DeleteProjectAvatarResponseIpBucketsItemDefault.fromJson(json['default'] as bool) : null)!) : const SdkOmitted(),
+    supportUntil: json['supportUntil'] != null ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'bucket': bucket,
-        ...switch (default_) {
-          SdkPresent<DeleteProjectAvatarResponseIpBucketsItemDefault>(
-            value: final value
-          ) =>
-            {
-              'default': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (supportUntil) {
-          SdkPresent<double>(value: final value) => {
-              'supportUntil': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'bucket': bucket,
+    ...switch (default_) {
+      SdkPresent<DeleteProjectAvatarResponseIpBucketsItemDefault>(value: final value) => {'default': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (supportUntil) {
+      SdkPresent<double>(value: final value) => {'supportUntil': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class DeleteProjectAvatarResponseJobsFlagDefinitionsPresent {
@@ -296,30 +129,21 @@ class DeleteProjectAvatarResponseJobsFlagDefinitionsPresent {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const DeleteProjectAvatarResponseJobsFlagDefinitionsPresent(
-      {required this.targets});
+  const DeleteProjectAvatarResponseJobsFlagDefinitionsPresent({required this.targets});
 
-  DeleteProjectAvatarResponseJobsFlagDefinitionsPresent Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseJobsFlagDefinitionsPresent Function({List<String> targets}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseJobsFlagDefinitionsPresent _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseJobsFlagDefinitionsPresent(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  DeleteProjectAvatarResponseJobsFlagDefinitionsPresent _copyWith({Object? targets = sdkOmittedValue}) => DeleteProjectAvatarResponseJobsFlagDefinitionsPresent(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory DeleteProjectAvatarResponseJobsFlagDefinitionsPresent.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseJobsFlagDefinitionsPresent(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory DeleteProjectAvatarResponseJobsFlagDefinitionsPresent.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseJobsFlagDefinitionsPresent(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class DeleteProjectAvatarResponseJobsLint {
@@ -329,27 +153,19 @@ class DeleteProjectAvatarResponseJobsLint {
 
   const DeleteProjectAvatarResponseJobsLint({required this.targets});
 
-  DeleteProjectAvatarResponseJobsLint Function({List<String> targets})
-      get copyWith => _copyWith;
+  DeleteProjectAvatarResponseJobsLint Function({List<String> targets}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseJobsLint _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseJobsLint(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  DeleteProjectAvatarResponseJobsLint _copyWith({Object? targets = sdkOmittedValue}) => DeleteProjectAvatarResponseJobsLint(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory DeleteProjectAvatarResponseJobsLint.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseJobsLint(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory DeleteProjectAvatarResponseJobsLint.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseJobsLint(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class DeleteProjectAvatarResponseJobsMfeConfigPresent {
@@ -357,30 +173,21 @@ class DeleteProjectAvatarResponseJobsMfeConfigPresent {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const DeleteProjectAvatarResponseJobsMfeConfigPresent(
-      {required this.targets});
+  const DeleteProjectAvatarResponseJobsMfeConfigPresent({required this.targets});
 
-  DeleteProjectAvatarResponseJobsMfeConfigPresent Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseJobsMfeConfigPresent Function({List<String> targets}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseJobsMfeConfigPresent _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseJobsMfeConfigPresent(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  DeleteProjectAvatarResponseJobsMfeConfigPresent _copyWith({Object? targets = sdkOmittedValue}) => DeleteProjectAvatarResponseJobsMfeConfigPresent(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory DeleteProjectAvatarResponseJobsMfeConfigPresent.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseJobsMfeConfigPresent(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory DeleteProjectAvatarResponseJobsMfeConfigPresent.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseJobsMfeConfigPresent(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class DeleteProjectAvatarResponseJobsTypecheck {
@@ -390,141 +197,63 @@ class DeleteProjectAvatarResponseJobsTypecheck {
 
   const DeleteProjectAvatarResponseJobsTypecheck({required this.targets});
 
-  DeleteProjectAvatarResponseJobsTypecheck Function({List<String> targets})
-      get copyWith => _copyWith;
+  DeleteProjectAvatarResponseJobsTypecheck Function({List<String> targets}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseJobsTypecheck _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseJobsTypecheck(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  DeleteProjectAvatarResponseJobsTypecheck _copyWith({Object? targets = sdkOmittedValue}) => DeleteProjectAvatarResponseJobsTypecheck(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory DeleteProjectAvatarResponseJobsTypecheck.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseJobsTypecheck(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory DeleteProjectAvatarResponseJobsTypecheck.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseJobsTypecheck(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class DeleteProjectAvatarResponseJobs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<DeleteProjectAvatarResponseJobsFlagDefinitionsPresent>
-      flagDefinitionsPresent;
+  final SdkOptional<DeleteProjectAvatarResponseJobsFlagDefinitionsPresent> flagDefinitionsPresent;
   final SdkOptional<DeleteProjectAvatarResponseJobsLint> lint;
-  final SdkOptional<DeleteProjectAvatarResponseJobsMfeConfigPresent>
-      mfeConfigPresent;
+  final SdkOptional<DeleteProjectAvatarResponseJobsMfeConfigPresent> mfeConfigPresent;
   final SdkOptional<DeleteProjectAvatarResponseJobsTypecheck> typecheck;
 
-  const DeleteProjectAvatarResponseJobs(
-      {this.flagDefinitionsPresent = const SdkOmitted(),
-      this.lint = const SdkOmitted(),
-      this.mfeConfigPresent = const SdkOmitted(),
-      this.typecheck = const SdkOmitted()});
+  const DeleteProjectAvatarResponseJobs({this.flagDefinitionsPresent = const SdkOmitted(), this.lint = const SdkOmitted(), this.mfeConfigPresent = const SdkOmitted(), this.typecheck = const SdkOmitted()});
 
-  DeleteProjectAvatarResponseJobs Function(
-          {SdkOptional<DeleteProjectAvatarResponseJobsFlagDefinitionsPresent>
-              flagDefinitionsPresent,
-          SdkOptional<DeleteProjectAvatarResponseJobsLint> lint,
-          SdkOptional<DeleteProjectAvatarResponseJobsMfeConfigPresent>
-              mfeConfigPresent,
-          SdkOptional<DeleteProjectAvatarResponseJobsTypecheck> typecheck})
-      get copyWith => _copyWith;
+  DeleteProjectAvatarResponseJobs Function({SdkOptional<DeleteProjectAvatarResponseJobsFlagDefinitionsPresent> flagDefinitionsPresent, SdkOptional<DeleteProjectAvatarResponseJobsLint> lint, SdkOptional<DeleteProjectAvatarResponseJobsMfeConfigPresent> mfeConfigPresent, SdkOptional<DeleteProjectAvatarResponseJobsTypecheck> typecheck}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseJobs _copyWith(
-          {Object? flagDefinitionsPresent = sdkOmittedValue,
-          Object? lint = sdkOmittedValue,
-          Object? mfeConfigPresent = sdkOmittedValue,
-          Object? typecheck = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseJobs(
-        flagDefinitionsPresent:
-            identical(flagDefinitionsPresent, sdkOmittedValue)
-                ? this.flagDefinitionsPresent
-                : flagDefinitionsPresent as SdkOptional<
-                    DeleteProjectAvatarResponseJobsFlagDefinitionsPresent>,
-        lint: identical(lint, sdkOmittedValue)
-            ? this.lint
-            : lint as SdkOptional<DeleteProjectAvatarResponseJobsLint>,
-        mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue)
-            ? this.mfeConfigPresent
-            : mfeConfigPresent
-                as SdkOptional<DeleteProjectAvatarResponseJobsMfeConfigPresent>,
-        typecheck: identical(typecheck, sdkOmittedValue)
-            ? this.typecheck
-            : typecheck
-                as SdkOptional<DeleteProjectAvatarResponseJobsTypecheck>,
-      );
+  DeleteProjectAvatarResponseJobs _copyWith({Object? flagDefinitionsPresent = sdkOmittedValue, Object? lint = sdkOmittedValue, Object? mfeConfigPresent = sdkOmittedValue, Object? typecheck = sdkOmittedValue}) => DeleteProjectAvatarResponseJobs(
+    flagDefinitionsPresent: identical(flagDefinitionsPresent, sdkOmittedValue) ? this.flagDefinitionsPresent : flagDefinitionsPresent as SdkOptional<DeleteProjectAvatarResponseJobsFlagDefinitionsPresent>,
+    lint: identical(lint, sdkOmittedValue) ? this.lint : lint as SdkOptional<DeleteProjectAvatarResponseJobsLint>,
+    mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue) ? this.mfeConfigPresent : mfeConfigPresent as SdkOptional<DeleteProjectAvatarResponseJobsMfeConfigPresent>,
+    typecheck: identical(typecheck, sdkOmittedValue) ? this.typecheck : typecheck as SdkOptional<DeleteProjectAvatarResponseJobsTypecheck>,
+  );
 
-  factory DeleteProjectAvatarResponseJobs.fromJson(Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseJobs(
-        flagDefinitionsPresent: json['flag-definitions-present'] != null
-            ? SdkPresent((json['flag-definitions-present'] != null
-                ? DeleteProjectAvatarResponseJobsFlagDefinitionsPresent
-                    .fromJson(json['flag-definitions-present']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        lint: json['lint'] != null
-            ? SdkPresent((json['lint'] != null
-                ? DeleteProjectAvatarResponseJobsLint.fromJson(
-                    json['lint'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        mfeConfigPresent: json['mfe-config-present'] != null
-            ? SdkPresent((json['mfe-config-present'] != null
-                ? DeleteProjectAvatarResponseJobsMfeConfigPresent.fromJson(
-                    json['mfe-config-present'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        typecheck: json['typecheck'] != null
-            ? SdkPresent((json['typecheck'] != null
-                ? DeleteProjectAvatarResponseJobsTypecheck.fromJson(
-                    json['typecheck'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory DeleteProjectAvatarResponseJobs.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseJobs(
+    flagDefinitionsPresent: json['flag-definitions-present'] != null ? SdkPresent((json['flag-definitions-present'] != null ? DeleteProjectAvatarResponseJobsFlagDefinitionsPresent.fromJson(json['flag-definitions-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    lint: json['lint'] != null ? SdkPresent((json['lint'] != null ? DeleteProjectAvatarResponseJobsLint.fromJson(json['lint'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    mfeConfigPresent: json['mfe-config-present'] != null ? SdkPresent((json['mfe-config-present'] != null ? DeleteProjectAvatarResponseJobsMfeConfigPresent.fromJson(json['mfe-config-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    typecheck: json['typecheck'] != null ? SdkPresent((json['typecheck'] != null ? DeleteProjectAvatarResponseJobsTypecheck.fromJson(json['typecheck'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (flagDefinitionsPresent) {
-          SdkPresent<DeleteProjectAvatarResponseJobsFlagDefinitionsPresent>(
-            value: final value
-          ) =>
-            {
-              'flag-definitions-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lint) {
-          SdkPresent<DeleteProjectAvatarResponseJobsLint>(value: final value) =>
-            {
-              'lint': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mfeConfigPresent) {
-          SdkPresent<DeleteProjectAvatarResponseJobsMfeConfigPresent>(
-            value: final value
-          ) =>
-            {
-              'mfe-config-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (typecheck) {
-          SdkPresent<DeleteProjectAvatarResponseJobsTypecheck>(
-            value: final value
-          ) =>
-            {
-              'typecheck': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (flagDefinitionsPresent) {
+      SdkPresent<DeleteProjectAvatarResponseJobsFlagDefinitionsPresent>(value: final value) => {'flag-definitions-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lint) {
+      SdkPresent<DeleteProjectAvatarResponseJobsLint>(value: final value) => {'lint': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mfeConfigPresent) {
+      SdkPresent<DeleteProjectAvatarResponseJobsMfeConfigPresent>(value: final value) => {'mfe-config-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (typecheck) {
+      SdkPresent<DeleteProjectAvatarResponseJobsTypecheck>(value: final value) => {'typecheck': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

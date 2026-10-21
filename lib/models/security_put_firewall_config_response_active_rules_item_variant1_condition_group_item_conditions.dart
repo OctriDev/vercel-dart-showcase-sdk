@@ -8,150 +8,69 @@ class PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditio
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> key;
-  final SdkOptional<
-          PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg>
-      neg;
-  final PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp
-      op;
-  final PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
-      type_;
+  final SdkOptional<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg> neg;
+  final PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp op;
+  final PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType type_;
   final SdkOptional<dynamic> value;
 
-  const PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem(
-      {this.key = const SdkOmitted(),
-      this.neg = const SdkOmitted(),
-      required this.op,
-      required this.type_,
-      this.value = const SdkOmitted()});
+  const PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem({this.key = const SdkOmitted(), this.neg = const SdkOmitted(), required this.op, required this.type_, this.value = const SdkOmitted()});
 
-  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem Function(
-      {SdkOptional<String> key,
-      SdkOptional<
-              PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg>
-          neg,
-      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp
-          op,
-      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
-          type_,
-      SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem Function({SdkOptional<String> key, SdkOptional<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg> neg, PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp op, PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? neg = sdkOmittedValue,
-              Object? op = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key as SdkOptional<String>,
-            neg: identical(neg, sdkOmittedValue)
-                ? this.neg
-                : neg as SdkOptional<
-                    PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg>,
-            op: identical(op, sdkOmittedValue)
-                ? this.op
-                : op
-                    as PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as SdkOptional<dynamic>,
-          );
+  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem _copyWith({Object? key = sdkOmittedValue, Object? neg = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
+    neg: identical(neg, sdkOmittedValue) ? this.neg : neg as SdkOptional<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg>,
+    op: identical(op, sdkOmittedValue) ? this.op : op as PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
+  );
 
-  factory PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem(
-        key: json['key'] != null
-            ? SdkPresent((json['key'] as String?)!)
-            : const SdkOmitted(),
-        neg: json['neg'] != null
-            ? SdkPresent((json['neg'] != null
-                ? PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg
-                    .fromJson(json['neg'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        op: (json['op'] != null
-            ? PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp
-                .fromJson(json['op'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
-                .fromJson(json['type'] as String)
-            : null)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'])!)
-            : const SdkOmitted(),
-      );
+  factory PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem.fromJson(Map<String, dynamic> json) => PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem(
+    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
+    neg: json['neg'] != null ? SdkPresent((json['neg'] != null ? PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg.fromJson(json['neg'] as bool) : null)!) : const SdkOmitted(),
+    op: (json['op'] != null ? PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemOp.fromJson(json['op'] as String) : null)!,
+    type_: (json['type'] != null ? PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType.fromJson(json['type'] as String) : null)!,
+    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (key) {
-          SdkPresent<String>(value: final value) => {
-              'key': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (neg) {
-          SdkPresent<
-                PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg>(
-            value: final value
-          ) =>
-            {
-              'neg': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'op': op.toJson(),
-        'type': type_.toJson(),
-        ...switch (value) {
-          SdkPresent<dynamic>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (key) {
+      SdkPresent<String>(value: final value) => {'key': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (neg) {
+      SdkPresent<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemNeg>(value: final value) => {'neg': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'op': op.toJson(),
+    'type': type_.toJson(),
+    ...switch (value) {
+      SdkPresent<dynamic>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<
-          PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem>
-      conditions;
+  final List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem> conditions;
 
-  const PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem(
-      {required this.conditions});
+  const PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem({required this.conditions});
 
-  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem Function(
-      {List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem>
-          conditions}) get copyWith => _copyWith;
+  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem Function({List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
 
-  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem _copyWith(
-          {Object? conditions = sdkOmittedValue}) =>
-      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem(
-        conditions: identical(conditions, sdkOmittedValue)
-            ? this.conditions
-            : conditions as List<
-                PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem>,
-      );
+  PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem(
+    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem>,
+  );
 
-  factory PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem.fromJson(
-          Map<String, dynamic> json) =>
-      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem(
-        conditions: ((json['conditions'] as List?)
-            ?.map((e) =>
-                PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem.fromJson(Map<String, dynamic> json) => PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem(
+    conditions: ((json['conditions'] as List?)?.map((e) => PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'conditions': conditions.map((item) => item.toJson()).toList(),
-      };
+    'conditions': conditions.map((item) => item.toJson()).toList(),
+  };
 }
 
 class PutFirewallConfigResponseActiveRulesItemVariant1 {
@@ -159,113 +78,52 @@ class PutFirewallConfigResponseActiveRulesItemVariant1 {
   static const String constructionSurface = 'named';
   final PutFirewallConfigResponseActiveRulesItemVariant1Action action;
   final PutFirewallConfigResponseActiveRulesItemVariant1Active active;
-  final List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem>
-      conditionGroup;
+  final List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem> conditionGroup;
   final SdkOptional<String> description;
   final String id;
   final String name;
   final PutFirewallConfigResponseActiveRulesItemVariant1Valid valid;
   final List<String> validationErrors;
 
-  const PutFirewallConfigResponseActiveRulesItemVariant1(
-      {required this.action,
-      required this.active,
-      required this.conditionGroup,
-      this.description = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.valid,
-      required this.validationErrors});
+  const PutFirewallConfigResponseActiveRulesItemVariant1({required this.action, required this.active, required this.conditionGroup, this.description = const SdkOmitted(), required this.id, required this.name, required this.valid, required this.validationErrors});
 
-  PutFirewallConfigResponseActiveRulesItemVariant1 Function(
-      {PutFirewallConfigResponseActiveRulesItemVariant1Action action,
-      PutFirewallConfigResponseActiveRulesItemVariant1Active active,
-      List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem>
-          conditionGroup,
-      SdkOptional<String> description,
-      String id,
-      String name,
-      PutFirewallConfigResponseActiveRulesItemVariant1Valid valid,
-      List<String> validationErrors}) get copyWith => _copyWith;
+  PutFirewallConfigResponseActiveRulesItemVariant1 Function({PutFirewallConfigResponseActiveRulesItemVariant1Action action, PutFirewallConfigResponseActiveRulesItemVariant1Active active, List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem> conditionGroup, SdkOptional<String> description, String id, String name, PutFirewallConfigResponseActiveRulesItemVariant1Valid valid, List<String> validationErrors}) get copyWith => _copyWith;
 
-  PutFirewallConfigResponseActiveRulesItemVariant1 _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue,
-          Object? conditionGroup = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? valid = sdkOmittedValue,
-          Object? validationErrors = sdkOmittedValue}) =>
-      PutFirewallConfigResponseActiveRulesItemVariant1(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as PutFirewallConfigResponseActiveRulesItemVariant1Action,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as PutFirewallConfigResponseActiveRulesItemVariant1Active,
-        conditionGroup: identical(conditionGroup, sdkOmittedValue)
-            ? this.conditionGroup
-            : conditionGroup as List<
-                PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        valid: identical(valid, sdkOmittedValue)
-            ? this.valid
-            : valid as PutFirewallConfigResponseActiveRulesItemVariant1Valid,
-        validationErrors: identical(validationErrors, sdkOmittedValue)
-            ? this.validationErrors
-            : validationErrors as List<String>,
-      );
+  PutFirewallConfigResponseActiveRulesItemVariant1 _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? description = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? valid = sdkOmittedValue, Object? validationErrors = sdkOmittedValue}) => PutFirewallConfigResponseActiveRulesItemVariant1(
+    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigResponseActiveRulesItemVariant1Action,
+    active: identical(active, sdkOmittedValue) ? this.active : active as PutFirewallConfigResponseActiveRulesItemVariant1Active,
+    conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    valid: identical(valid, sdkOmittedValue) ? this.valid : valid as PutFirewallConfigResponseActiveRulesItemVariant1Valid,
+    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as List<String>,
+  );
 
-  factory PutFirewallConfigResponseActiveRulesItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      PutFirewallConfigResponseActiveRulesItemVariant1(
-        action: (json['action'] != null
-            ? PutFirewallConfigResponseActiveRulesItemVariant1Action.fromJson(
-                json['action'] as Map<String, dynamic>)
-            : null)!,
-        active: (json['active'] != null
-            ? PutFirewallConfigResponseActiveRulesItemVariant1Active.fromJson(
-                json['active'] as bool)
-            : null)!,
-        conditionGroup: ((json['conditionGroup'] as List?)
-            ?.map((e) =>
-                PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        valid: (json['valid'] != null
-            ? PutFirewallConfigResponseActiveRulesItemVariant1Valid.fromJson(
-                json['valid'] as bool)
-            : null)!,
-        validationErrors: ((json['validationErrors'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-      );
+  factory PutFirewallConfigResponseActiveRulesItemVariant1.fromJson(Map<String, dynamic> json) => PutFirewallConfigResponseActiveRulesItemVariant1(
+    action: (json['action'] != null ? PutFirewallConfigResponseActiveRulesItemVariant1Action.fromJson(json['action'] as Map<String, dynamic>) : null)!,
+    active: (json['active'] != null ? PutFirewallConfigResponseActiveRulesItemVariant1Active.fromJson(json['active'] as bool) : null)!,
+    conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    valid: (json['valid'] != null ? PutFirewallConfigResponseActiveRulesItemVariant1Valid.fromJson(json['valid'] as bool) : null)!,
+    validationErrors: ((json['validationErrors'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-        'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'valid': valid.toJson(),
-        'validationErrors': validationErrors,
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+    'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'valid': valid.toJson(),
+    'validationErrors': validationErrors,
+  };
 }
 
 sealed class PutFirewallConfigResponseActiveRulesItem {
@@ -274,53 +132,24 @@ sealed class PutFirewallConfigResponseActiveRulesItem {
   const PutFirewallConfigResponseActiveRulesItem();
   factory PutFirewallConfigResponseActiveRulesItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            PutFirewallConfigResponseActiveRulesItemVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            PutFirewallConfigResponseActiveRulesItemVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = PutFirewallConfigResponseActiveRulesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0(value); } } catch (_) {}
+      try { final value = PutFirewallConfigResponseActiveRulesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1(value); } } catch (_) {}
     }
-    try {
-      return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0(
-          PutFirewallConfigResponseActiveRulesItemVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1(
-          PutFirewallConfigResponseActiveRulesItemVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for PutFirewallConfigResponseActiveRulesItem");
+    try { return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0(PutFirewallConfigResponseActiveRulesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1(PutFirewallConfigResponseActiveRulesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for PutFirewallConfigResponseActiveRulesItem");
   }
   Object? toJson();
 }
 
-final class PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0
-    extends PutFirewallConfigResponseActiveRulesItem {
+final class PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0 extends PutFirewallConfigResponseActiveRulesItem {
   final PutFirewallConfigResponseActiveRulesItemVariant0 value;
-  const PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1
-    extends PutFirewallConfigResponseActiveRulesItem {
+final class PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1 extends PutFirewallConfigResponseActiveRulesItem {
   final PutFirewallConfigResponseActiveRulesItemVariant1 value;
-  const PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const PutFirewallConfigResponseActiveRulesItemPutFirewallConfigResponseActiveRulesItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

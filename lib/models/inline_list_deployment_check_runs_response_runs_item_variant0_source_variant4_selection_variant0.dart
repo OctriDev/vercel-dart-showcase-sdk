@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind {
   invocation;
 
-  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind
-      fromJson(String value) {
+  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'invocation':
-        return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind
-            .invocation;
-      default:
-        throw ArgumentError(
-            'Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind: $value');
+      case 'invocation': return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind.invocation;
+      default: throw ArgumentError('Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind
-            .invocation:
-        return 'invocation';
+      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind.invocation: return 'invocation';
     }
   }
 
@@ -34,23 +27,16 @@ enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVaria
 enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind {
   deployment;
 
-  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind
-      fromJson(String value) {
+  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'deployment':
-        return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind
-            .deployment;
-      default:
-        throw ArgumentError(
-            'Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind: $value');
+      case 'deployment': return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind.deployment;
+      default: throw ArgumentError('Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind
-            .deployment:
-        return 'deployment';
+      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind.deployment: return 'deployment';
     }
   }
 
@@ -61,23 +47,16 @@ enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVaria
 enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind {
   job;
 
-  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind
-      fromJson(String value) {
+  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind fromJson(String value) {
     switch (value) {
-      case 'job':
-        return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind
-            .job;
-      default:
-        throw ArgumentError(
-            'Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind: $value');
+      case 'job': return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind.job;
+      default: throw ArgumentError('Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind
-            .job:
-        return 'job';
+      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind.job: return 'job';
     }
   }
 
@@ -86,88 +65,59 @@ enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVaria
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch {
+
   final bool value;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(
-      this.value);
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch.fromJson(
-          bool value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch
-          ._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch.fromJson(bool value) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(value);
 
-  static const false_ =
-      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch
-          ._(false);
-  static const true_ =
-      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch
-          ._(true);
+  static const false_ = ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(false);
+  static const true_ = ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job {
+
   final String value;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job._(
-      this.value);
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job.fromJson(
-          String value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job
-          ._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job._(value);
 
-  static const turborepo =
-      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job
-          ._('Turborepo');
+  static const turborepo = ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job._('Turborepo');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind {
   turborepo;
 
-  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind
-      fromJson(String value) {
+  static ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind fromJson(String value) {
     switch (value) {
-      case 'turborepo':
-        return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind
-            .turborepo;
-      default:
-        throw ArgumentError(
-            'Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind: $value');
+      case 'turborepo': return ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind.turborepo;
+      default: throw ArgumentError('Unknown ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind
-            .turborepo:
-        return 'turborepo';
+      case ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind.turborepo: return 'turborepo';
     }
   }
 
@@ -176,189 +126,131 @@ enum ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVaria
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind {
+
   final String value;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind._(
-      this.value);
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind.fromJson(
-          String value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind._(
-          value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind._(value);
 
-  static const vercelCiCheck =
-      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind._(
-          'vercel-ci-check');
+  static const vercelCiCheck = ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind._('vercel-ci-check');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SubKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant0Status {
+
   final String value;
 
   const ListDeploymentCheckRunsResponseRunsItemVariant0Status._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0Status.fromJson(
-          String value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant0Status._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0Status.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant0Status._(value);
 
-  static const completed =
-      ListDeploymentCheckRunsResponseRunsItemVariant0Status._('completed');
-  static const queued =
-      ListDeploymentCheckRunsResponseRunsItemVariant0Status._('queued');
-  static const running =
-      ListDeploymentCheckRunsResponseRunsItemVariant0Status._('running');
+  static const completed = ListDeploymentCheckRunsResponseRunsItemVariant0Status._('completed');
+  static const queued = ListDeploymentCheckRunsResponseRunsItemVariant0Status._('queued');
+  static const running = ListDeploymentCheckRunsResponseRunsItemVariant0Status._('running');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDeploymentCheckRunsResponseRunsItemVariant0Status &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant0Status && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant1Blocks {
+
   final String value;
 
   const ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1Blocks.fromJson(
-          String value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1Blocks.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._(value);
 
-  static const buildStart =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._('build-start');
-  static const deploymentAlias =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._(
-          'deployment-alias');
-  static const deploymentPromotion =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._(
-          'deployment-promotion');
-  static const deploymentStart =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._(
-          'deployment-start');
-  static const none =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._('none');
+  static const buildStart = ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._('build-start');
+  static const deploymentAlias = ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._('deployment-alias');
+  static const deploymentPromotion = ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._('deployment-promotion');
+  static const deploymentStart = ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._('deployment-start');
+  static const none = ListDeploymentCheckRunsResponseRunsItemVariant1Blocks._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDeploymentCheckRunsResponseRunsItemVariant1Blocks &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant1Blocks && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion {
+
   final String value;
 
   const ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion.fromJson(
-          String value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._(value);
 
-  static const canceled =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('canceled');
-  static const failed =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('failed');
-  static const neutral =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('neutral');
-  static const skipped =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('skipped');
-  static const succeeded =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('succeeded');
-  static const timeout =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('timeout');
+  static const canceled = ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('canceled');
+  static const failed = ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('failed');
+  static const neutral = ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('neutral');
+  static const skipped = ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('skipped');
+  static const succeeded = ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('succeeded');
+  static const timeout = ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion._('timeout');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant1Conclusion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant1Requires {
+
   final String value;
 
   const ListDeploymentCheckRunsResponseRunsItemVariant1Requires._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1Requires.fromJson(
-          String value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1Requires._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1Requires.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant1Requires._(value);
 
-  static const buildReady =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Requires._('build-ready');
-  static const deploymentUrl =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Requires._(
-          'deployment-url');
-  static const none =
-      ListDeploymentCheckRunsResponseRunsItemVariant1Requires._('none');
+  static const buildReady = ListDeploymentCheckRunsResponseRunsItemVariant1Requires._('build-ready');
+  static const deploymentUrl = ListDeploymentCheckRunsResponseRunsItemVariant1Requires._('deployment-url');
+  static const none = ListDeploymentCheckRunsResponseRunsItemVariant1Requires._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDeploymentCheckRunsResponseRunsItemVariant1Requires &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant1Requires && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin {
   config;
 
-  static ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin
-      fromJson(String value) {
+  static ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin fromJson(String value) {
     switch (value) {
-      case 'config':
-        return ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin
-            .config;
-      default:
-        throw ArgumentError(
-            'Unknown ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin: $value');
+      case 'config': return ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin.config;
+      default: throw ArgumentError('Unknown ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin
-            .config:
-        return 'config';
+      case ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin.config: return 'config';
     }
   }
 
@@ -367,31 +259,21 @@ enum ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin {
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind {
+
   final String value;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind._(
-      this.value);
+  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind.fromJson(
-          String value) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind._(
-          value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind._(value);
 
-  static const vercelCi =
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind._(
-          'vercel-ci');
+  static const vercelCi = ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind._('vercel-ci');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

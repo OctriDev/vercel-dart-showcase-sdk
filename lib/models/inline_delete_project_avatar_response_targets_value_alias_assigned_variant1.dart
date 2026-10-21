@@ -5,379 +5,286 @@ part of 'inline.dart';
 
 // Inline operation models
 final class DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1 {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(
-      this.value);
+  const DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(value);
+  factory DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1.fromJson(bool value) => DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(true);
+  static const false_ = DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(false);
+  static const true_ = DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueAliasAssignedVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of matching to perform
 final class DeleteProjectAvatarResponseTargetsValueBranchMatcherType {
+
   final String value;
 
   const DeleteProjectAvatarResponseTargetsValueBranchMatcherType._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueBranchMatcherType.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseTargetsValueBranchMatcherType._(value);
+  factory DeleteProjectAvatarResponseTargetsValueBranchMatcherType.fromJson(String value) => DeleteProjectAvatarResponseTargetsValueBranchMatcherType._(value);
 
-  static const endswith =
-      DeleteProjectAvatarResponseTargetsValueBranchMatcherType._('endsWith');
-  static const equals =
-      DeleteProjectAvatarResponseTargetsValueBranchMatcherType._('equals');
-  static const startswith =
-      DeleteProjectAvatarResponseTargetsValueBranchMatcherType._('startsWith');
+  static const endswith = DeleteProjectAvatarResponseTargetsValueBranchMatcherType._('endsWith');
+  static const equals = DeleteProjectAvatarResponseTargetsValueBranchMatcherType._('equals');
+  static const startswith = DeleteProjectAvatarResponseTargetsValueBranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueBranchMatcherType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueBranchMatcherType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueChecksConclusion {
+
   final String value;
 
   const DeleteProjectAvatarResponseTargetsValueChecksConclusion._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueChecksConclusion.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseTargetsValueChecksConclusion._(value);
+  factory DeleteProjectAvatarResponseTargetsValueChecksConclusion.fromJson(String value) => DeleteProjectAvatarResponseTargetsValueChecksConclusion._(value);
 
-  static const canceled =
-      DeleteProjectAvatarResponseTargetsValueChecksConclusion._('canceled');
-  static const failed =
-      DeleteProjectAvatarResponseTargetsValueChecksConclusion._('failed');
-  static const skipped =
-      DeleteProjectAvatarResponseTargetsValueChecksConclusion._('skipped');
-  static const succeeded =
-      DeleteProjectAvatarResponseTargetsValueChecksConclusion._('succeeded');
+  static const canceled = DeleteProjectAvatarResponseTargetsValueChecksConclusion._('canceled');
+  static const failed = DeleteProjectAvatarResponseTargetsValueChecksConclusion._('failed');
+  static const skipped = DeleteProjectAvatarResponseTargetsValueChecksConclusion._('skipped');
+  static const succeeded = DeleteProjectAvatarResponseTargetsValueChecksConclusion._('succeeded');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueChecksConclusion &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueChecksConclusion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueChecksState {
+
   final String value;
 
   const DeleteProjectAvatarResponseTargetsValueChecksState._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueChecksState.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseTargetsValueChecksState._(value);
+  factory DeleteProjectAvatarResponseTargetsValueChecksState.fromJson(String value) => DeleteProjectAvatarResponseTargetsValueChecksState._(value);
 
-  static const completed =
-      DeleteProjectAvatarResponseTargetsValueChecksState._('completed');
-  static const registered =
-      DeleteProjectAvatarResponseTargetsValueChecksState._('registered');
-  static const running =
-      DeleteProjectAvatarResponseTargetsValueChecksState._('running');
+  static const completed = DeleteProjectAvatarResponseTargetsValueChecksState._('completed');
+  static const registered = DeleteProjectAvatarResponseTargetsValueChecksState._('registered');
+  static const running = DeleteProjectAvatarResponseTargetsValueChecksState._('running');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueChecksState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueChecksState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(
-      this.value);
+  const DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(value);
+  factory DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled.fromJson(bool value) => DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(true);
+  static const false_ = DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(false);
+  static const true_ = DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueConnectBuildsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueForced {
+
   final bool value;
 
   const DeleteProjectAvatarResponseTargetsValueForced._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueForced.fromJson(bool value) =>
-      DeleteProjectAvatarResponseTargetsValueForced._(value);
+  factory DeleteProjectAvatarResponseTargetsValueForced.fromJson(bool value) => DeleteProjectAvatarResponseTargetsValueForced._(value);
 
   static const false_ = DeleteProjectAvatarResponseTargetsValueForced._(false);
   static const true_ = DeleteProjectAvatarResponseTargetsValueForced._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueForced &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueForced && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValuePlan {
+
   final String value;
 
   const DeleteProjectAvatarResponseTargetsValuePlan._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValuePlan.fromJson(String value) =>
-      DeleteProjectAvatarResponseTargetsValuePlan._(value);
+  factory DeleteProjectAvatarResponseTargetsValuePlan.fromJson(String value) => DeleteProjectAvatarResponseTargetsValuePlan._(value);
 
-  static const enterprise =
-      DeleteProjectAvatarResponseTargetsValuePlan._('enterprise');
+  static const enterprise = DeleteProjectAvatarResponseTargetsValuePlan._('enterprise');
   static const hobby = DeleteProjectAvatarResponseTargetsValuePlan._('hobby');
   static const pro = DeleteProjectAvatarResponseTargetsValuePlan._('pro');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValuePlan &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValuePlan && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not preview comments are enabled for the deployment
 final class DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(
-      this.value);
+  const DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(value);
+  factory DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled.fromJson(bool value) => DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(true);
+  static const false_ = DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(false);
+  static const true_ = DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValuePreviewCommentsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValuePrivate {
+
   final bool value;
 
   const DeleteProjectAvatarResponseTargetsValuePrivate._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValuePrivate.fromJson(bool value) =>
-      DeleteProjectAvatarResponseTargetsValuePrivate._(value);
+  factory DeleteProjectAvatarResponseTargetsValuePrivate.fromJson(bool value) => DeleteProjectAvatarResponseTargetsValuePrivate._(value);
 
   static const false_ = DeleteProjectAvatarResponseTargetsValuePrivate._(false);
   static const true_ = DeleteProjectAvatarResponseTargetsValuePrivate._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValuePrivate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValuePrivate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueReadyState {
+
   final String value;
 
   const DeleteProjectAvatarResponseTargetsValueReadyState._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueReadyState.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseTargetsValueReadyState._(value);
+  factory DeleteProjectAvatarResponseTargetsValueReadyState.fromJson(String value) => DeleteProjectAvatarResponseTargetsValueReadyState._(value);
 
-  static const blocked =
-      DeleteProjectAvatarResponseTargetsValueReadyState._('BLOCKED');
-  static const building =
-      DeleteProjectAvatarResponseTargetsValueReadyState._('BUILDING');
-  static const canceled =
-      DeleteProjectAvatarResponseTargetsValueReadyState._('CANCELED');
-  static const error =
-      DeleteProjectAvatarResponseTargetsValueReadyState._('ERROR');
-  static const initializing =
-      DeleteProjectAvatarResponseTargetsValueReadyState._('INITIALIZING');
-  static const queued =
-      DeleteProjectAvatarResponseTargetsValueReadyState._('QUEUED');
-  static const ready =
-      DeleteProjectAvatarResponseTargetsValueReadyState._('READY');
+  static const blocked = DeleteProjectAvatarResponseTargetsValueReadyState._('BLOCKED');
+  static const building = DeleteProjectAvatarResponseTargetsValueReadyState._('BUILDING');
+  static const canceled = DeleteProjectAvatarResponseTargetsValueReadyState._('CANCELED');
+  static const error = DeleteProjectAvatarResponseTargetsValueReadyState._('ERROR');
+  static const initializing = DeleteProjectAvatarResponseTargetsValueReadyState._('INITIALIZING');
+  static const queued = DeleteProjectAvatarResponseTargetsValueReadyState._('QUEUED');
+  static const ready = DeleteProjectAvatarResponseTargetsValueReadyState._('READY');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueReadyState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueReadyState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueReadySubstate {
+
   final String value;
 
   const DeleteProjectAvatarResponseTargetsValueReadySubstate._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueReadySubstate.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseTargetsValueReadySubstate._(value);
+  factory DeleteProjectAvatarResponseTargetsValueReadySubstate.fromJson(String value) => DeleteProjectAvatarResponseTargetsValueReadySubstate._(value);
 
-  static const promoted =
-      DeleteProjectAvatarResponseTargetsValueReadySubstate._('PROMOTED');
-  static const rolling =
-      DeleteProjectAvatarResponseTargetsValueReadySubstate._('ROLLING');
-  static const staged =
-      DeleteProjectAvatarResponseTargetsValueReadySubstate._('STAGED');
+  static const promoted = DeleteProjectAvatarResponseTargetsValueReadySubstate._('PROMOTED');
+  static const rolling = DeleteProjectAvatarResponseTargetsValueReadySubstate._('ROLLING');
+  static const staged = DeleteProjectAvatarResponseTargetsValueReadySubstate._('STAGED');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueReadySubstate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueReadySubstate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueType {
+
   final String value;
 
   const DeleteProjectAvatarResponseTargetsValueType._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueType.fromJson(String value) =>
-      DeleteProjectAvatarResponseTargetsValueType._(value);
+  factory DeleteProjectAvatarResponseTargetsValueType.fromJson(String value) => DeleteProjectAvatarResponseTargetsValueType._(value);
 
-  static const lambdas =
-      DeleteProjectAvatarResponseTargetsValueType._('LAMBDAS');
+  static const lambdas = DeleteProjectAvatarResponseTargetsValueType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseTargetsValueWithCache {
+
   final bool value;
 
   const DeleteProjectAvatarResponseTargetsValueWithCache._(this.value);
 
-  factory DeleteProjectAvatarResponseTargetsValueWithCache.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseTargetsValueWithCache._(value);
+  factory DeleteProjectAvatarResponseTargetsValueWithCache.fromJson(bool value) => DeleteProjectAvatarResponseTargetsValueWithCache._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseTargetsValueWithCache._(false);
+  static const false_ = DeleteProjectAvatarResponseTargetsValueWithCache._(false);
   static const true_ = DeleteProjectAvatarResponseTargetsValueWithCache._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseTargetsValueWithCache &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseTargetsValueWithCache && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -8,529 +8,290 @@ part of 'connect.dart';
 class ConnectConnectorCreateDataVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Linear application ID.
   final SdkOptional<String> appId;
-
   /// Linear application name.
   final SdkOptional<String> appName;
-
   /// OAuth client ID assigned by Linear.
   final String clientId;
-
   /// OAuth scopes requested for Linear application tokens.
   final SdkOptional<List<String>> appScopes;
-
   /// OAuth scopes requested for Linear user tokens.
   final SdkOptional<List<String>> userScopes;
-
   /// Linear organization that owns the OAuth application.
-  final SdkOptional<ConnectConnectorCreateDataVariant3OwnerOrganization>
-      ownerOrganization;
-
+  final SdkOptional<ConnectConnectorCreateDataVariant3OwnerOrganization> ownerOrganization;
   /// Linear OAuth application metadata.
   final SdkOptional<ConnectConnectorCreateDataVariant3Application> application;
-
   /// Additional provider metadata stored with the connector.
   final SdkOptional<Map<String, dynamic>> extras;
 
-  const ConnectConnectorCreateDataVariant3(
-      {this.appId = const SdkOmitted(),
-      this.appName = const SdkOmitted(),
-      required this.clientId,
-      this.appScopes = const SdkOmitted(),
-      this.userScopes = const SdkOmitted(),
-      this.ownerOrganization = const SdkOmitted(),
-      this.application = const SdkOmitted(),
-      this.extras = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant3({this.appId = const SdkOmitted(), this.appName = const SdkOmitted(), required this.clientId, this.appScopes = const SdkOmitted(), this.userScopes = const SdkOmitted(), this.ownerOrganization = const SdkOmitted(), this.application = const SdkOmitted(), this.extras = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant3 Function(
-      {SdkOptional<String> appId,
-      SdkOptional<String> appName,
-      String clientId,
-      SdkOptional<List<String>> appScopes,
-      SdkOptional<List<String>> userScopes,
-      SdkOptional<ConnectConnectorCreateDataVariant3OwnerOrganization>
-          ownerOrganization,
-      SdkOptional<ConnectConnectorCreateDataVariant3Application> application,
-      SdkOptional<Map<String, dynamic>> extras}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant3 Function({SdkOptional<String> appId, SdkOptional<String> appName, String clientId, SdkOptional<List<String>> appScopes, SdkOptional<List<String>> userScopes, SdkOptional<ConnectConnectorCreateDataVariant3OwnerOrganization> ownerOrganization, SdkOptional<ConnectConnectorCreateDataVariant3Application> application, SdkOptional<Map<String, dynamic>> extras}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant3 _copyWith(
-          {Object? appId = sdkOmittedValue,
-          Object? appName = sdkOmittedValue,
-          Object? clientId = sdkOmittedValue,
-          Object? appScopes = sdkOmittedValue,
-          Object? userScopes = sdkOmittedValue,
-          Object? ownerOrganization = sdkOmittedValue,
-          Object? application = sdkOmittedValue,
-          Object? extras = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataVariant3(
-        appId: identical(appId, sdkOmittedValue)
-            ? this.appId
-            : appId as SdkOptional<String>,
-        appName: identical(appName, sdkOmittedValue)
-            ? this.appName
-            : appName as SdkOptional<String>,
-        clientId: identical(clientId, sdkOmittedValue)
-            ? this.clientId
-            : clientId as String,
-        appScopes: identical(appScopes, sdkOmittedValue)
-            ? this.appScopes
-            : appScopes as SdkOptional<List<String>>,
-        userScopes: identical(userScopes, sdkOmittedValue)
-            ? this.userScopes
-            : userScopes as SdkOptional<List<String>>,
-        ownerOrganization: identical(ownerOrganization, sdkOmittedValue)
-            ? this.ownerOrganization
-            : ownerOrganization as SdkOptional<
-                ConnectConnectorCreateDataVariant3OwnerOrganization>,
-        application: identical(application, sdkOmittedValue)
-            ? this.application
-            : application
-                as SdkOptional<ConnectConnectorCreateDataVariant3Application>,
-        extras: identical(extras, sdkOmittedValue)
-            ? this.extras
-            : extras as SdkOptional<Map<String, dynamic>>,
-      );
+  ConnectConnectorCreateDataVariant3 _copyWith({Object? appId = sdkOmittedValue, Object? appName = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? appScopes = sdkOmittedValue, Object? userScopes = sdkOmittedValue, Object? ownerOrganization = sdkOmittedValue, Object? application = sdkOmittedValue, Object? extras = sdkOmittedValue}) => ConnectConnectorCreateDataVariant3(
+    appId: identical(appId, sdkOmittedValue) ? this.appId : appId as SdkOptional<String>,
+    appName: identical(appName, sdkOmittedValue) ? this.appName : appName as SdkOptional<String>,
+    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
+    appScopes: identical(appScopes, sdkOmittedValue) ? this.appScopes : appScopes as SdkOptional<List<String>>,
+    userScopes: identical(userScopes, sdkOmittedValue) ? this.userScopes : userScopes as SdkOptional<List<String>>,
+    ownerOrganization: identical(ownerOrganization, sdkOmittedValue) ? this.ownerOrganization : ownerOrganization as SdkOptional<ConnectConnectorCreateDataVariant3OwnerOrganization>,
+    application: identical(application, sdkOmittedValue) ? this.application : application as SdkOptional<ConnectConnectorCreateDataVariant3Application>,
+    extras: identical(extras, sdkOmittedValue) ? this.extras : extras as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory ConnectConnectorCreateDataVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataVariant3(
-        appId: json['appId'] != null
-            ? SdkPresent((json['appId'] as String?)!)
-            : const SdkOmitted(),
-        appName: json['appName'] != null
-            ? SdkPresent((json['appName'] as String?)!)
-            : const SdkOmitted(),
-        clientId: (json['clientId'] as String?)!,
-        appScopes: json['appScopes'] != null
-            ? SdkPresent(((json['appScopes'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        userScopes: json['userScopes'] != null
-            ? SdkPresent(((json['userScopes'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        ownerOrganization: json['ownerOrganization'] != null
-            ? SdkPresent((json['ownerOrganization'] != null
-                ? ConnectConnectorCreateDataVariant3OwnerOrganization.fromJson(
-                    json['ownerOrganization'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        application: json['application'] != null
-            ? SdkPresent((json['application'] != null
-                ? ConnectConnectorCreateDataVariant3Application.fromJson(
-                    json['application'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        extras: json['extras'] != null
-            ? SdkPresent((json['extras'] == null
-                ? null
-                : json['extras'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataVariant3.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant3(
+    appId: json['appId'] != null ? SdkPresent((json['appId'] as String?)!) : const SdkOmitted(),
+    appName: json['appName'] != null ? SdkPresent((json['appName'] as String?)!) : const SdkOmitted(),
+    clientId: (json['clientId'] as String?)!,
+    appScopes: json['appScopes'] != null ? SdkPresent(((json['appScopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    userScopes: json['userScopes'] != null ? SdkPresent(((json['userScopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    ownerOrganization: json['ownerOrganization'] != null ? SdkPresent((json['ownerOrganization'] != null ? ConnectConnectorCreateDataVariant3OwnerOrganization.fromJson(json['ownerOrganization'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    application: json['application'] != null ? SdkPresent((json['application'] != null ? ConnectConnectorCreateDataVariant3Application.fromJson(json['application'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    extras: json['extras'] != null ? SdkPresent((json['extras'] == null ? null : json['extras'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (appId) {
-          SdkPresent<String>(value: final value) => {
-              'appId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (appName) {
-          SdkPresent<String>(value: final value) => {
-              'appName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'clientId': clientId,
-        ...switch (appScopes) {
-          SdkPresent<List<String>>(value: final value) => {
-              'appScopes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (userScopes) {
-          SdkPresent<List<String>>(value: final value) => {
-              'userScopes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ownerOrganization) {
-          SdkPresent<ConnectConnectorCreateDataVariant3OwnerOrganization>(
-            value: final value
-          ) =>
-            {
-              'ownerOrganization': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (application) {
-          SdkPresent<ConnectConnectorCreateDataVariant3Application>(
-            value: final value
-          ) =>
-            {
-              'application': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (extras) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'extras': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (appId) {
+      SdkPresent<String>(value: final value) => {'appId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (appName) {
+      SdkPresent<String>(value: final value) => {'appName': value,},
+      _ => const <String, dynamic>{},
+    },
+    'clientId': clientId,
+    ...switch (appScopes) {
+      SdkPresent<List<String>>(value: final value) => {'appScopes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (userScopes) {
+      SdkPresent<List<String>>(value: final value) => {'userScopes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ownerOrganization) {
+      SdkPresent<ConnectConnectorCreateDataVariant3OwnerOrganization>(value: final value) => {'ownerOrganization': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (application) {
+      SdkPresent<ConnectConnectorCreateDataVariant3Application>(value: final value) => {'application': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (extras) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'extras': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `data` wire field.
 class ConnectConnectorCreateDataVariant4 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional array value serialized in the `phoneNumbers` wire field.
   final SdkOptional<List<String>> phoneNumbers;
 
-  const ConnectConnectorCreateDataVariant4(
-      {this.phoneNumbers = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant4({this.phoneNumbers = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant4 Function(
-      {SdkOptional<List<String>> phoneNumbers}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant4 Function({SdkOptional<List<String>> phoneNumbers}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant4 _copyWith(
-          {Object? phoneNumbers = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataVariant4(
-        phoneNumbers: identical(phoneNumbers, sdkOmittedValue)
-            ? this.phoneNumbers
-            : phoneNumbers as SdkOptional<List<String>>,
-      );
+  ConnectConnectorCreateDataVariant4 _copyWith({Object? phoneNumbers = sdkOmittedValue}) => ConnectConnectorCreateDataVariant4(
+    phoneNumbers: identical(phoneNumbers, sdkOmittedValue) ? this.phoneNumbers : phoneNumbers as SdkOptional<List<String>>,
+  );
 
-  factory ConnectConnectorCreateDataVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataVariant4(
-        phoneNumbers: json['phoneNumbers'] != null
-            ? SdkPresent(((json['phoneNumbers'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataVariant4.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant4(
+    phoneNumbers: json['phoneNumbers'] != null ? SdkPresent(((json['phoneNumbers'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (phoneNumbers) {
-          SdkPresent<List<String>>(value: final value) => {
-              'phoneNumbers': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (phoneNumbers) {
+      SdkPresent<List<String>>(value: final value) => {'phoneNumbers': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `data` wire field.
 class ConnectConnectorCreateDataVariant5 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Salesforce connected app consumer key.
   final String consumerKey;
-
   /// Salesforce login host, such as login.salesforce.com.
   final String loginHost;
 
-  const ConnectConnectorCreateDataVariant5(
-      {required this.consumerKey, required this.loginHost});
+  const ConnectConnectorCreateDataVariant5({required this.consumerKey, required this.loginHost});
 
-  ConnectConnectorCreateDataVariant5 Function(
-      {String consumerKey, String loginHost}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant5 Function({String consumerKey, String loginHost}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant5 _copyWith(
-          {Object? consumerKey = sdkOmittedValue,
-          Object? loginHost = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataVariant5(
-        consumerKey: identical(consumerKey, sdkOmittedValue)
-            ? this.consumerKey
-            : consumerKey as String,
-        loginHost: identical(loginHost, sdkOmittedValue)
-            ? this.loginHost
-            : loginHost as String,
-      );
+  ConnectConnectorCreateDataVariant5 _copyWith({Object? consumerKey = sdkOmittedValue, Object? loginHost = sdkOmittedValue}) => ConnectConnectorCreateDataVariant5(
+    consumerKey: identical(consumerKey, sdkOmittedValue) ? this.consumerKey : consumerKey as String,
+    loginHost: identical(loginHost, sdkOmittedValue) ? this.loginHost : loginHost as String,
+  );
 
-  factory ConnectConnectorCreateDataVariant5.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataVariant5(
-        consumerKey: (json['consumerKey'] as String?)!,
-        loginHost: (json['loginHost'] as String?)!,
-      );
+  factory ConnectConnectorCreateDataVariant5.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant5(
+    consumerKey: (json['consumerKey'] as String?)!,
+    loginHost: (json['loginHost'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'consumerKey': consumerKey,
-        'loginHost': loginHost,
-      };
+    'consumerKey': consumerKey,
+    'loginHost': loginHost,
+  };
 }
 
 /// Required object value serialized in the `data` wire field.
 class ConnectConnectorCreateDataVariant6 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Sendblue API key id (`sb-api-key-id`).
   final String apiKeyId;
-
   /// E.164 Sendblue lines this connector sends and receives on. Used as the connector's display name, and the only lines its webhooks are registered for; an empty array clears them, which also removes the webhook subscription.
   final SdkOptional<List<String>> phoneNumbers;
 
-  const ConnectConnectorCreateDataVariant6(
-      {required this.apiKeyId, this.phoneNumbers = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant6({required this.apiKeyId, this.phoneNumbers = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant6 Function(
-      {String apiKeyId,
-      SdkOptional<List<String>> phoneNumbers}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant6 Function({String apiKeyId, SdkOptional<List<String>> phoneNumbers}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant6 _copyWith(
-          {Object? apiKeyId = sdkOmittedValue,
-          Object? phoneNumbers = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataVariant6(
-        apiKeyId: identical(apiKeyId, sdkOmittedValue)
-            ? this.apiKeyId
-            : apiKeyId as String,
-        phoneNumbers: identical(phoneNumbers, sdkOmittedValue)
-            ? this.phoneNumbers
-            : phoneNumbers as SdkOptional<List<String>>,
-      );
+  ConnectConnectorCreateDataVariant6 _copyWith({Object? apiKeyId = sdkOmittedValue, Object? phoneNumbers = sdkOmittedValue}) => ConnectConnectorCreateDataVariant6(
+    apiKeyId: identical(apiKeyId, sdkOmittedValue) ? this.apiKeyId : apiKeyId as String,
+    phoneNumbers: identical(phoneNumbers, sdkOmittedValue) ? this.phoneNumbers : phoneNumbers as SdkOptional<List<String>>,
+  );
 
-  factory ConnectConnectorCreateDataVariant6.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataVariant6(
-        apiKeyId: (json['apiKeyId'] as String?)!,
-        phoneNumbers: json['phoneNumbers'] != null
-            ? SdkPresent(((json['phoneNumbers'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataVariant6.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant6(
+    apiKeyId: (json['apiKeyId'] as String?)!,
+    phoneNumbers: json['phoneNumbers'] != null ? SdkPresent(((json['phoneNumbers'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'apiKeyId': apiKeyId,
-        ...switch (phoneNumbers) {
-          SdkPresent<List<String>>(value: final value) => {
-              'phoneNumbers': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'apiKeyId': apiKeyId,
+    ...switch (phoneNumbers) {
+      SdkPresent<List<String>>(value: final value) => {'phoneNumbers': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Slack workspace metadata.
 class ConnectConnectorCreateDataVariant7SlackTeam {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Slack workspace ID.
   final String id;
-
   /// Slack workspace name.
   final SdkOptional<String> name;
-
   /// Slack workspace domain.
   final SdkOptional<String> domain;
 
-  const ConnectConnectorCreateDataVariant7SlackTeam(
-      {required this.id,
-      this.name = const SdkOmitted(),
-      this.domain = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant7SlackTeam({required this.id, this.name = const SdkOmitted(), this.domain = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant7SlackTeam Function(
-      {String id,
-      SdkOptional<String> name,
-      SdkOptional<String> domain}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant7SlackTeam Function({String id, SdkOptional<String> name, SdkOptional<String> domain}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant7SlackTeam _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? domain = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataVariant7SlackTeam(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        domain: identical(domain, sdkOmittedValue)
-            ? this.domain
-            : domain as SdkOptional<String>,
-      );
+  ConnectConnectorCreateDataVariant7SlackTeam _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? domain = sdkOmittedValue}) => ConnectConnectorCreateDataVariant7SlackTeam(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as SdkOptional<String>,
+  );
 
-  factory ConnectConnectorCreateDataVariant7SlackTeam.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataVariant7SlackTeam(
-        id: (json['id'] as String?)!,
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        domain: json['domain'] != null
-            ? SdkPresent((json['domain'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataVariant7SlackTeam.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant7SlackTeam(
+    id: (json['id'] as String?)!,
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    domain: json['domain'] != null ? SdkPresent((json['domain'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (domain) {
-          SdkPresent<String>(value: final value) => {
-              'domain': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'id': id,
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (domain) {
+      SdkPresent<String>(value: final value) => {'domain': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `slashCommands[]` wire field.
 class ConnectConnectorCreateDataVariant7SlashCommandsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Slash command including its leading slash.
   final String command;
-
   /// Description shown for the slash command in Slack.
   final String description;
-
   /// Optional usage hint shown for the slash command.
   final SdkOptional<String> usageHint;
-
   /// Whether Slack should escape command arguments.
   final SdkOptional<bool> shouldEscape;
 
-  const ConnectConnectorCreateDataVariant7SlashCommandsItem(
-      {required this.command,
-      required this.description,
-      this.usageHint = const SdkOmitted(),
-      this.shouldEscape = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant7SlashCommandsItem({required this.command, required this.description, this.usageHint = const SdkOmitted(), this.shouldEscape = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant7SlashCommandsItem Function(
-      {String command,
-      String description,
-      SdkOptional<String> usageHint,
-      SdkOptional<bool> shouldEscape}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant7SlashCommandsItem Function({String command, String description, SdkOptional<String> usageHint, SdkOptional<bool> shouldEscape}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant7SlashCommandsItem _copyWith(
-          {Object? command = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? usageHint = sdkOmittedValue,
-          Object? shouldEscape = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataVariant7SlashCommandsItem(
-        command: identical(command, sdkOmittedValue)
-            ? this.command
-            : command as String,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-        usageHint: identical(usageHint, sdkOmittedValue)
-            ? this.usageHint
-            : usageHint as SdkOptional<String>,
-        shouldEscape: identical(shouldEscape, sdkOmittedValue)
-            ? this.shouldEscape
-            : shouldEscape as SdkOptional<bool>,
-      );
+  ConnectConnectorCreateDataVariant7SlashCommandsItem _copyWith({Object? command = sdkOmittedValue, Object? description = sdkOmittedValue, Object? usageHint = sdkOmittedValue, Object? shouldEscape = sdkOmittedValue}) => ConnectConnectorCreateDataVariant7SlashCommandsItem(
+    command: identical(command, sdkOmittedValue) ? this.command : command as String,
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+    usageHint: identical(usageHint, sdkOmittedValue) ? this.usageHint : usageHint as SdkOptional<String>,
+    shouldEscape: identical(shouldEscape, sdkOmittedValue) ? this.shouldEscape : shouldEscape as SdkOptional<bool>,
+  );
 
-  factory ConnectConnectorCreateDataVariant7SlashCommandsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataVariant7SlashCommandsItem(
-        command: (json['command'] as String?)!,
-        description: (json['description'] as String?)!,
-        usageHint: json['usageHint'] != null
-            ? SdkPresent((json['usageHint'] as String?)!)
-            : const SdkOmitted(),
-        shouldEscape: json['shouldEscape'] != null
-            ? SdkPresent((json['shouldEscape'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataVariant7SlashCommandsItem.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant7SlashCommandsItem(
+    command: (json['command'] as String?)!,
+    description: (json['description'] as String?)!,
+    usageHint: json['usageHint'] != null ? SdkPresent((json['usageHint'] as String?)!) : const SdkOmitted(),
+    shouldEscape: json['shouldEscape'] != null ? SdkPresent((json['shouldEscape'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'command': command,
-        'description': description,
-        ...switch (usageHint) {
-          SdkPresent<String>(value: final value) => {
-              'usageHint': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (shouldEscape) {
-          SdkPresent<bool>(value: final value) => {
-              'shouldEscape': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'command': command,
+    'description': description,
+    ...switch (usageHint) {
+      SdkPresent<String>(value: final value) => {'usageHint': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (shouldEscape) {
+      SdkPresent<bool>(value: final value) => {'shouldEscape': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `shortcuts[]` wire field.
 class ConnectConnectorCreateDataVariant7ShortcutsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Where Slack exposes the shortcut.
   final ConnectConnectorCreateDataVariant7ShortcutsItemType type_;
-
   /// Shortcut display name.
   final String name;
-
   /// Identifier included in the shortcut callback.
   final String callbackId;
-
   /// Description shown for the shortcut in Slack.
   final String description;
 
-  const ConnectConnectorCreateDataVariant7ShortcutsItem(
-      {required this.type_,
-      required this.name,
-      required this.callbackId,
-      required this.description});
+  const ConnectConnectorCreateDataVariant7ShortcutsItem({required this.type_, required this.name, required this.callbackId, required this.description});
 
-  ConnectConnectorCreateDataVariant7ShortcutsItem Function(
-      {ConnectConnectorCreateDataVariant7ShortcutsItemType type_,
-      String name,
-      String callbackId,
-      String description}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant7ShortcutsItem Function({ConnectConnectorCreateDataVariant7ShortcutsItemType type_, String name, String callbackId, String description}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant7ShortcutsItem _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? callbackId = sdkOmittedValue,
-          Object? description = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataVariant7ShortcutsItem(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as ConnectConnectorCreateDataVariant7ShortcutsItemType,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        callbackId: identical(callbackId, sdkOmittedValue)
-            ? this.callbackId
-            : callbackId as String,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-      );
+  ConnectConnectorCreateDataVariant7ShortcutsItem _copyWith({Object? type_ = sdkOmittedValue, Object? name = sdkOmittedValue, Object? callbackId = sdkOmittedValue, Object? description = sdkOmittedValue}) => ConnectConnectorCreateDataVariant7ShortcutsItem(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ConnectConnectorCreateDataVariant7ShortcutsItemType,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    callbackId: identical(callbackId, sdkOmittedValue) ? this.callbackId : callbackId as String,
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+  );
 
-  factory ConnectConnectorCreateDataVariant7ShortcutsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataVariant7ShortcutsItem(
-        type_: (json['type'] != null
-            ? ConnectConnectorCreateDataVariant7ShortcutsItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-        name: (json['name'] as String?)!,
-        callbackId: (json['callbackId'] as String?)!,
-        description: (json['description'] as String?)!,
-      );
+  factory ConnectConnectorCreateDataVariant7ShortcutsItem.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant7ShortcutsItem(
+    type_: (json['type'] != null ? ConnectConnectorCreateDataVariant7ShortcutsItemType.fromJson(json['type'] as String) : null)!,
+    name: (json['name'] as String?)!,
+    callbackId: (json['callbackId'] as String?)!,
+    description: (json['description'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'name': name,
-        'callbackId': callbackId,
-        'description': description,
-      };
+    'type': type_.toJson(),
+    'name': name,
+    'callbackId': callbackId,
+    'description': description,
+  };
 }

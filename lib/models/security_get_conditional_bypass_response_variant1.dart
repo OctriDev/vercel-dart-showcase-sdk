@@ -10,44 +10,24 @@ class GetConditionalBypassResponseVariant1 {
   final GetConditionalBypassResponseVariant1Pagination pagination;
   final List<GetConditionalBypassResponseVariant1ResultItem> result;
 
-  const GetConditionalBypassResponseVariant1(
-      {required this.pagination, required this.result});
+  const GetConditionalBypassResponseVariant1({required this.pagination, required this.result});
 
-  GetConditionalBypassResponseVariant1 Function(
-          {GetConditionalBypassResponseVariant1Pagination pagination,
-          List<GetConditionalBypassResponseVariant1ResultItem> result})
-      get copyWith => _copyWith;
+  GetConditionalBypassResponseVariant1 Function({GetConditionalBypassResponseVariant1Pagination pagination, List<GetConditionalBypassResponseVariant1ResultItem> result}) get copyWith => _copyWith;
 
-  GetConditionalBypassResponseVariant1 _copyWith(
-          {Object? pagination = sdkOmittedValue,
-          Object? result = sdkOmittedValue}) =>
-      GetConditionalBypassResponseVariant1(
-        pagination: identical(pagination, sdkOmittedValue)
-            ? this.pagination
-            : pagination as GetConditionalBypassResponseVariant1Pagination,
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result as List<GetConditionalBypassResponseVariant1ResultItem>,
-      );
+  GetConditionalBypassResponseVariant1 _copyWith({Object? pagination = sdkOmittedValue, Object? result = sdkOmittedValue}) => GetConditionalBypassResponseVariant1(
+    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as GetConditionalBypassResponseVariant1Pagination,
+    result: identical(result, sdkOmittedValue) ? this.result : result as List<GetConditionalBypassResponseVariant1ResultItem>,
+  );
 
-  factory GetConditionalBypassResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetConditionalBypassResponseVariant1(
-        pagination: (json['pagination'] != null
-            ? GetConditionalBypassResponseVariant1Pagination.fromJson(
-                json['pagination'] as Map<String, dynamic>)
-            : null)!,
-        result: ((json['result'] as List?)
-            ?.map((e) =>
-                GetConditionalBypassResponseVariant1ResultItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory GetConditionalBypassResponseVariant1.fromJson(Map<String, dynamic> json) => GetConditionalBypassResponseVariant1(
+    pagination: (json['pagination'] != null ? GetConditionalBypassResponseVariant1Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
+    result: ((json['result'] as List?)?.map((e) => GetConditionalBypassResponseVariant1ResultItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'pagination': pagination.toJson(),
-        'result': result.map((item) => item.toJson()).toList(),
-      };
+    'pagination': pagination.toJson(),
+    'result': result.map((item) => item.toJson()).toList(),
+  };
 }
 
 sealed class GetConditionalBypassResponse {
@@ -56,51 +36,24 @@ sealed class GetConditionalBypassResponse {
   const GetConditionalBypassResponse();
   factory GetConditionalBypassResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetConditionalBypassResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetConditionalBypassResponseGetConditionalBypassResponseVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetConditionalBypassResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetConditionalBypassResponseGetConditionalBypassResponseVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetConditionalBypassResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConditionalBypassResponseGetConditionalBypassResponseVariant0(value); } } catch (_) {}
+      try { final value = GetConditionalBypassResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConditionalBypassResponseGetConditionalBypassResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return GetConditionalBypassResponseGetConditionalBypassResponseVariant0(
-          GetConditionalBypassResponseVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetConditionalBypassResponseGetConditionalBypassResponseVariant1(
-          GetConditionalBypassResponseVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetConditionalBypassResponse");
+    try { return GetConditionalBypassResponseGetConditionalBypassResponseVariant0(GetConditionalBypassResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetConditionalBypassResponseGetConditionalBypassResponseVariant1(GetConditionalBypassResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetConditionalBypassResponse");
   }
   Object? toJson();
 }
 
-final class GetConditionalBypassResponseGetConditionalBypassResponseVariant0
-    extends GetConditionalBypassResponse {
+final class GetConditionalBypassResponseGetConditionalBypassResponseVariant0 extends GetConditionalBypassResponse {
   final GetConditionalBypassResponseVariant0 value;
-  const GetConditionalBypassResponseGetConditionalBypassResponseVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetConditionalBypassResponseGetConditionalBypassResponseVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetConditionalBypassResponseGetConditionalBypassResponseVariant1
-    extends GetConditionalBypassResponse {
+final class GetConditionalBypassResponseGetConditionalBypassResponseVariant1 extends GetConditionalBypassResponse {
   final GetConditionalBypassResponseVariant1 value;
-  const GetConditionalBypassResponseGetConditionalBypassResponseVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetConditionalBypassResponseGetConditionalBypassResponseVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

@@ -10,27 +10,11 @@ sealed class GetDrainResponse {
   const GetDrainResponse();
   factory GetDrainResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetDrainResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainResponseGetDrainResponseVariant0(value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetDrainResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainResponseGetDrainResponseVariant1(value);
-        }
-      } catch (_) {}
+      try { final value = GetDrainResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainResponseGetDrainResponseVariant0(value); } } catch (_) {}
+      try { final value = GetDrainResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainResponseGetDrainResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return GetDrainResponseGetDrainResponseVariant0(
-          GetDrainResponseVariant0.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDrainResponseGetDrainResponseVariant1(
-          GetDrainResponseVariant1.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return GetDrainResponseGetDrainResponseVariant0(GetDrainResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDrainResponseGetDrainResponseVariant1(GetDrainResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for GetDrainResponse");
   }
   Object? toJson();
@@ -39,13 +23,11 @@ sealed class GetDrainResponse {
 final class GetDrainResponseGetDrainResponseVariant0 extends GetDrainResponse {
   final GetDrainResponseVariant0 value;
   const GetDrainResponseGetDrainResponseVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class GetDrainResponseGetDrainResponseVariant1 extends GetDrainResponse {
   final GetDrainResponseVariant1 value;
   const GetDrainResponseGetDrainResponseVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

@@ -4,22 +4,16 @@
 part of 'projects.dart';
 
 // projects domain models
-final class FilterProjectEnvsResponseVariant1EnvsItemTargetListFilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item
-    extends FilterProjectEnvsResponseVariant1EnvsItemTarget {
+final class FilterProjectEnvsResponseVariant1EnvsItemTargetListFilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item extends FilterProjectEnvsResponseVariant1EnvsItemTarget {
   final List<FilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item> value;
-  const FilterProjectEnvsResponseVariant1EnvsItemTargetListFilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item(
-      this.value);
-  @override
-  Object? toJson() => value.map((e) => e.toJson()).toList();
+  const FilterProjectEnvsResponseVariant1EnvsItemTargetListFilterProjectEnvsResponseVariant1EnvsItemTargetVariant0Item(this.value);
+  @override Object? toJson() => value.map((e) => e.toJson()).toList();
 }
 
-final class FilterProjectEnvsResponseVariant1EnvsItemTargetFilterProjectEnvsResponseVariant1EnvsItemTargetVariant1
-    extends FilterProjectEnvsResponseVariant1EnvsItemTarget {
+final class FilterProjectEnvsResponseVariant1EnvsItemTargetFilterProjectEnvsResponseVariant1EnvsItemTargetVariant1 extends FilterProjectEnvsResponseVariant1EnvsItemTarget {
   final FilterProjectEnvsResponseVariant1EnvsItemTargetVariant1 value;
-  const FilterProjectEnvsResponseVariant1EnvsItemTargetFilterProjectEnvsResponseVariant1EnvsItemTargetVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant1EnvsItemTargetFilterProjectEnvsResponseVariant1EnvsItemTargetVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class FilterProjectEnvsResponseVariant1EnvsItem {
@@ -31,16 +25,13 @@ class FilterProjectEnvsResponseVariant1EnvsItem {
   final SdkOptional<double> createdAt;
   final SdkOptional<String?> createdBy;
   final SdkOptional<List<String>> customEnvironmentIds;
-  final SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemDecrypted>
-      decrypted;
+  final SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemDecrypted> decrypted;
   final SdkOptional<String?> edgeConfigId;
   final SdkOptional<String?> edgeConfigTokenId;
   final SdkOptional<String> gitBranch;
   final SdkOptional<String> id;
   final String key;
-  final List<FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem>
-      securityIssues;
-
+  final List<FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem> securityIssues;
   /// This is used to identify variables that have been migrated from type secret to sensitive.
   final SdkOptional<String> sunsetSecretId;
   final SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemSystem> system;
@@ -49,387 +40,162 @@ class FilterProjectEnvsResponseVariant1EnvsItem {
   final SdkOptional<double> updatedAt;
   final SdkOptional<String?> updatedBy;
   final String value;
-
   /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
-  final SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemVisibility>
-      visibility;
+  final SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemVisibility> visibility;
 
-  const FilterProjectEnvsResponseVariant1EnvsItem(
-      {this.comment = const SdkOmitted(),
-      this.configurationId = const SdkOmitted(),
-      this.contentHint = const SdkOmitted(),
-      this.createdAt = const SdkOmitted(),
-      this.createdBy = const SdkOmitted(),
-      this.customEnvironmentIds = const SdkOmitted(),
-      this.decrypted = const SdkOmitted(),
-      this.edgeConfigId = const SdkOmitted(),
-      this.edgeConfigTokenId = const SdkOmitted(),
-      this.gitBranch = const SdkOmitted(),
-      this.id = const SdkOmitted(),
-      required this.key,
-      required this.securityIssues,
-      this.sunsetSecretId = const SdkOmitted(),
-      this.system = const SdkOmitted(),
-      this.target = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted(),
-      this.updatedBy = const SdkOmitted(),
-      required this.value,
-      this.visibility = const SdkOmitted()});
+  const FilterProjectEnvsResponseVariant1EnvsItem({this.comment = const SdkOmitted(), this.configurationId = const SdkOmitted(), this.contentHint = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.createdBy = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted(), this.decrypted = const SdkOmitted(), this.edgeConfigId = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.id = const SdkOmitted(), required this.key, required this.securityIssues, this.sunsetSecretId = const SdkOmitted(), this.system = const SdkOmitted(), this.target = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted(), required this.value, this.visibility = const SdkOmitted()});
 
-  FilterProjectEnvsResponseVariant1EnvsItem Function(
-      {SdkOptional<String> comment,
-      SdkOptional<String?> configurationId,
-      SdkOptional<dynamic> contentHint,
-      SdkOptional<double> createdAt,
-      SdkOptional<String?> createdBy,
-      SdkOptional<List<String>> customEnvironmentIds,
-      SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemDecrypted> decrypted,
-      SdkOptional<String?> edgeConfigId,
-      SdkOptional<String?> edgeConfigTokenId,
-      SdkOptional<String> gitBranch,
-      SdkOptional<String> id,
-      String key,
-      List<FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem>
-          securityIssues,
-      SdkOptional<String> sunsetSecretId,
-      SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemSystem> system,
-      SdkOptional<dynamic> target,
-      FilterProjectEnvsResponseVariant1EnvsItemType type_,
-      SdkOptional<double> updatedAt,
-      SdkOptional<String?> updatedBy,
-      String value,
-      SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemVisibility>
-          visibility}) get copyWith => _copyWith;
+  FilterProjectEnvsResponseVariant1EnvsItem Function({SdkOptional<String> comment, SdkOptional<String?> configurationId, SdkOptional<dynamic> contentHint, SdkOptional<double> createdAt, SdkOptional<String?> createdBy, SdkOptional<List<String>> customEnvironmentIds, SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemDecrypted> decrypted, SdkOptional<String?> edgeConfigId, SdkOptional<String?> edgeConfigTokenId, SdkOptional<String> gitBranch, SdkOptional<String> id, String key, List<FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem> securityIssues, SdkOptional<String> sunsetSecretId, SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemSystem> system, SdkOptional<dynamic> target, FilterProjectEnvsResponseVariant1EnvsItemType type_, SdkOptional<double> updatedAt, SdkOptional<String?> updatedBy, String value, SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemVisibility> visibility}) get copyWith => _copyWith;
 
-  FilterProjectEnvsResponseVariant1EnvsItem _copyWith(
-          {Object? comment = sdkOmittedValue,
-          Object? configurationId = sdkOmittedValue,
-          Object? contentHint = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? customEnvironmentIds = sdkOmittedValue,
-          Object? decrypted = sdkOmittedValue,
-          Object? edgeConfigId = sdkOmittedValue,
-          Object? edgeConfigTokenId = sdkOmittedValue,
-          Object? gitBranch = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? securityIssues = sdkOmittedValue,
-          Object? sunsetSecretId = sdkOmittedValue,
-          Object? system = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? updatedBy = sdkOmittedValue,
-          Object? value = sdkOmittedValue,
-          Object? visibility = sdkOmittedValue}) =>
-      FilterProjectEnvsResponseVariant1EnvsItem(
-        comment: identical(comment, sdkOmittedValue)
-            ? this.comment
-            : comment as SdkOptional<String>,
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as SdkOptional<String?>,
-        contentHint: identical(contentHint, sdkOmittedValue)
-            ? this.contentHint
-            : contentHint as SdkOptional<dynamic>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String?>,
-        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
-            ? this.customEnvironmentIds
-            : customEnvironmentIds as SdkOptional<List<String>>,
-        decrypted: identical(decrypted, sdkOmittedValue)
-            ? this.decrypted
-            : decrypted as SdkOptional<
-                FilterProjectEnvsResponseVariant1EnvsItemDecrypted>,
-        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-            ? this.edgeConfigId
-            : edgeConfigId as SdkOptional<String?>,
-        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
-            ? this.edgeConfigTokenId
-            : edgeConfigTokenId as SdkOptional<String?>,
-        gitBranch: identical(gitBranch, sdkOmittedValue)
-            ? this.gitBranch
-            : gitBranch as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue)
-            ? this.id
-            : id as SdkOptional<String>,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        securityIssues: identical(securityIssues, sdkOmittedValue)
-            ? this.securityIssues
-            : securityIssues as List<
-                FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem>,
-        sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue)
-            ? this.sunsetSecretId
-            : sunsetSecretId as SdkOptional<String>,
-        system: identical(system, sdkOmittedValue)
-            ? this.system
-            : system
-                as SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemSystem>,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as FilterProjectEnvsResponseVariant1EnvsItemType,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        updatedBy: identical(updatedBy, sdkOmittedValue)
-            ? this.updatedBy
-            : updatedBy as SdkOptional<String?>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        visibility: identical(visibility, sdkOmittedValue)
-            ? this.visibility
-            : visibility as SdkOptional<
-                FilterProjectEnvsResponseVariant1EnvsItemVisibility>,
-      );
+  FilterProjectEnvsResponseVariant1EnvsItem _copyWith({Object? comment = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? contentHint = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue, Object? decrypted = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? key = sdkOmittedValue, Object? securityIssues = sdkOmittedValue, Object? sunsetSecretId = sdkOmittedValue, Object? system = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? value = sdkOmittedValue, Object? visibility = sdkOmittedValue}) => FilterProjectEnvsResponseVariant1EnvsItem(
+    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String?>,
+    contentHint: identical(contentHint, sdkOmittedValue) ? this.contentHint : contentHint as SdkOptional<dynamic>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String?>,
+    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
+    decrypted: identical(decrypted, sdkOmittedValue) ? this.decrypted : decrypted as SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemDecrypted>,
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String?>,
+    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String?>,
+    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    securityIssues: identical(securityIssues, sdkOmittedValue) ? this.securityIssues : securityIssues as List<FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem>,
+    sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue) ? this.sunsetSecretId : sunsetSecretId as SdkOptional<String>,
+    system: identical(system, sdkOmittedValue) ? this.system : system as SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemSystem>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as FilterProjectEnvsResponseVariant1EnvsItemType,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String?>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    visibility: identical(visibility, sdkOmittedValue) ? this.visibility : visibility as SdkOptional<FilterProjectEnvsResponseVariant1EnvsItemVisibility>,
+  );
 
-  factory FilterProjectEnvsResponseVariant1EnvsItem.fromJson(
-          Map<String, dynamic> json) =>
-      FilterProjectEnvsResponseVariant1EnvsItem(
-        comment: json['comment'] != null
-            ? SdkPresent((json['comment'] as String?)!)
-            : const SdkOmitted(),
-        configurationId: json.containsKey('configurationId')
-            ? SdkPresent(json['configurationId'] as String?)
-            : const SdkOmitted(),
-        contentHint: json.containsKey('contentHint')
-            ? SdkPresent(json['contentHint'])
-            : const SdkOmitted(),
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        createdBy: json.containsKey('createdBy')
-            ? SdkPresent(json['createdBy'] as String?)
-            : const SdkOmitted(),
-        customEnvironmentIds: json['customEnvironmentIds'] != null
-            ? SdkPresent(((json['customEnvironmentIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        decrypted: json['decrypted'] != null
-            ? SdkPresent((json['decrypted'] != null
-                ? FilterProjectEnvsResponseVariant1EnvsItemDecrypted.fromJson(
-                    json['decrypted'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        edgeConfigId: json.containsKey('edgeConfigId')
-            ? SdkPresent(json['edgeConfigId'] as String?)
-            : const SdkOmitted(),
-        edgeConfigTokenId: json.containsKey('edgeConfigTokenId')
-            ? SdkPresent(json['edgeConfigTokenId'] as String?)
-            : const SdkOmitted(),
-        gitBranch: json['gitBranch'] != null
-            ? SdkPresent((json['gitBranch'] as String?)!)
-            : const SdkOmitted(),
-        id: json['id'] != null
-            ? SdkPresent((json['id'] as String?)!)
-            : const SdkOmitted(),
-        key: (json['key'] as String?)!,
-        securityIssues: ((json['securityIssues'] as List?)
-            ?.map((e) =>
-                FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem
-                    .fromJson(e as String))
-            .toList())!,
-        sunsetSecretId: json['sunsetSecretId'] != null
-            ? SdkPresent((json['sunsetSecretId'] as String?)!)
-            : const SdkOmitted(),
-        system: json['system'] != null
-            ? SdkPresent((json['system'] != null
-                ? FilterProjectEnvsResponseVariant1EnvsItemSystem.fromJson(
-                    json['system'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        target: json['target'] != null
-            ? SdkPresent((json['target'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? FilterProjectEnvsResponseVariant1EnvsItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        updatedBy: json.containsKey('updatedBy')
-            ? SdkPresent(json['updatedBy'] as String?)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-        visibility: json['visibility'] != null
-            ? SdkPresent((json['visibility'] != null
-                ? FilterProjectEnvsResponseVariant1EnvsItemVisibility.fromJson(
-                    json['visibility'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory FilterProjectEnvsResponseVariant1EnvsItem.fromJson(Map<String, dynamic> json) => FilterProjectEnvsResponseVariant1EnvsItem(
+    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
+    configurationId: json.containsKey('configurationId') ? SdkPresent(json['configurationId'] as String?) : const SdkOmitted(),
+    contentHint: json.containsKey('contentHint') ? SdkPresent(json['contentHint']) : const SdkOmitted(),
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    createdBy: json.containsKey('createdBy') ? SdkPresent(json['createdBy'] as String?) : const SdkOmitted(),
+    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    decrypted: json['decrypted'] != null ? SdkPresent((json['decrypted'] != null ? FilterProjectEnvsResponseVariant1EnvsItemDecrypted.fromJson(json['decrypted'] as bool) : null)!) : const SdkOmitted(),
+    edgeConfigId: json.containsKey('edgeConfigId') ? SdkPresent(json['edgeConfigId'] as String?) : const SdkOmitted(),
+    edgeConfigTokenId: json.containsKey('edgeConfigTokenId') ? SdkPresent(json['edgeConfigTokenId'] as String?) : const SdkOmitted(),
+    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
+    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
+    key: (json['key'] as String?)!,
+    securityIssues: ((json['securityIssues'] as List?)?.map((e) => FilterProjectEnvsResponseVariant1EnvsItemSecurityIssuesItem.fromJson(e as String)).toList())!,
+    sunsetSecretId: json['sunsetSecretId'] != null ? SdkPresent((json['sunsetSecretId'] as String?)!) : const SdkOmitted(),
+    system: json['system'] != null ? SdkPresent((json['system'] != null ? FilterProjectEnvsResponseVariant1EnvsItemSystem.fromJson(json['system'] as bool) : null)!) : const SdkOmitted(),
+    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? FilterProjectEnvsResponseVariant1EnvsItemType.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    updatedBy: json.containsKey('updatedBy') ? SdkPresent(json['updatedBy'] as String?) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+    visibility: json['visibility'] != null ? SdkPresent((json['visibility'] != null ? FilterProjectEnvsResponseVariant1EnvsItemVisibility.fromJson(json['visibility'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (comment) {
-          SdkPresent<String>(value: final value) => {
-              'comment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (configurationId) {
-          SdkPresent<String?>(value: final value) => {
-              'configurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (contentHint) {
-          SdkPresent<dynamic>(value: final value) => {
-              'contentHint': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdBy) {
-          SdkPresent<String?>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'customEnvironmentIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (decrypted) {
-          SdkPresent<FilterProjectEnvsResponseVariant1EnvsItemDecrypted>(
-            value: final value
-          ) =>
-            {
-              'decrypted': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigTokenId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigTokenId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitBranch) {
-          SdkPresent<String>(value: final value) => {
-              'gitBranch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (id) {
-          SdkPresent<String>(value: final value) => {
-              'id': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'key': key,
-        'securityIssues': securityIssues.map((item) => item.toJson()).toList(),
-        ...switch (sunsetSecretId) {
-          SdkPresent<String>(value: final value) => {
-              'sunsetSecretId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (system) {
-          SdkPresent<FilterProjectEnvsResponseVariant1EnvsItemSystem>(
-            value: final value
-          ) =>
-            {
-              'system': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (target) {
-          SdkPresent<dynamic>(value: final value) => {
-              'target': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (updatedBy) {
-          SdkPresent<String?>(value: final value) => {
-              'updatedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-        ...switch (visibility) {
-          SdkPresent<FilterProjectEnvsResponseVariant1EnvsItemVisibility>(
-            value: final value
-          ) =>
-            {
-              'visibility': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (comment) {
+      SdkPresent<String>(value: final value) => {'comment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (configurationId) {
+      SdkPresent<String?>(value: final value) => {'configurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (contentHint) {
+      SdkPresent<dynamic>(value: final value) => {'contentHint': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdBy) {
+      SdkPresent<String?>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentIds) {
+      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (decrypted) {
+      SdkPresent<FilterProjectEnvsResponseVariant1EnvsItemDecrypted>(value: final value) => {'decrypted': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigTokenId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigTokenId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitBranch) {
+      SdkPresent<String>(value: final value) => {'gitBranch': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (id) {
+      SdkPresent<String>(value: final value) => {'id': value,},
+      _ => const <String, dynamic>{},
+    },
+    'key': key,
+    'securityIssues': securityIssues.map((item) => item.toJson()).toList(),
+    ...switch (sunsetSecretId) {
+      SdkPresent<String>(value: final value) => {'sunsetSecretId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (system) {
+      SdkPresent<FilterProjectEnvsResponseVariant1EnvsItemSystem>(value: final value) => {'system': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (target) {
+      SdkPresent<dynamic>(value: final value) => {'target': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (updatedBy) {
+      SdkPresent<String?>(value: final value) => {'updatedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+    ...switch (visibility) {
+      SdkPresent<FilterProjectEnvsResponseVariant1EnvsItemVisibility>(value: final value) => {'visibility': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class FilterProjectEnvsResponseVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<FilterProjectEnvsResponseVariant1EnvsItem> envs;
-
   /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
   final Pagination pagination;
 
-  const FilterProjectEnvsResponseVariant1(
-      {required this.envs, required this.pagination});
+  const FilterProjectEnvsResponseVariant1({required this.envs, required this.pagination});
 
-  FilterProjectEnvsResponseVariant1 Function(
-      {List<FilterProjectEnvsResponseVariant1EnvsItem> envs,
-      Pagination pagination}) get copyWith => _copyWith;
+  FilterProjectEnvsResponseVariant1 Function({List<FilterProjectEnvsResponseVariant1EnvsItem> envs, Pagination pagination}) get copyWith => _copyWith;
 
-  FilterProjectEnvsResponseVariant1 _copyWith(
-          {Object? envs = sdkOmittedValue,
-          Object? pagination = sdkOmittedValue}) =>
-      FilterProjectEnvsResponseVariant1(
-        envs: identical(envs, sdkOmittedValue)
-            ? this.envs
-            : envs as List<FilterProjectEnvsResponseVariant1EnvsItem>,
-        pagination: identical(pagination, sdkOmittedValue)
-            ? this.pagination
-            : pagination as Pagination,
-      );
+  FilterProjectEnvsResponseVariant1 _copyWith({Object? envs = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => FilterProjectEnvsResponseVariant1(
+    envs: identical(envs, sdkOmittedValue) ? this.envs : envs as List<FilterProjectEnvsResponseVariant1EnvsItem>,
+    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Pagination,
+  );
 
-  factory FilterProjectEnvsResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      FilterProjectEnvsResponseVariant1(
-        envs: ((json['envs'] as List?)
-            ?.map((e) => FilterProjectEnvsResponseVariant1EnvsItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-        pagination: (json['pagination'] != null
-            ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory FilterProjectEnvsResponseVariant1.fromJson(Map<String, dynamic> json) => FilterProjectEnvsResponseVariant1(
+    envs: ((json['envs'] as List?)?.map((e) => FilterProjectEnvsResponseVariant1EnvsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    pagination: (json['pagination'] != null ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'envs': envs.map((item) => item.toJson()).toList(),
-        'pagination': pagination.toJson(),
-      };
+    'envs': envs.map((item) => item.toJson()).toList(),
+    'pagination': pagination.toJson(),
+  };
 }
 
 class FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0 {
@@ -438,41 +204,24 @@ class FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0 {
   final String storeId;
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type type_;
 
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0(
-      {required this.storeId, required this.type_});
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0({required this.storeId, required this.type_});
 
-  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0 Function(
-      {String storeId,
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type
-          type_}) get copyWith => _copyWith;
+  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0 Function({String storeId, FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type type_}) get copyWith => _copyWith;
 
-  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0 _copyWith(
-          {Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0(
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type,
-      );
+  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type,
+  );
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0.fromJson(Map<String, dynamic> json) => FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1 {
@@ -481,41 +230,24 @@ class FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1 {
   final String storeId;
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type type_;
 
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1(
-      {required this.storeId, required this.type_});
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1({required this.storeId, required this.type_});
 
-  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1 Function(
-      {String storeId,
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type
-          type_}) get copyWith => _copyWith;
+  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1 Function({String storeId, FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type type_}) get copyWith => _copyWith;
 
-  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1 _copyWith(
-          {Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1(
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type,
-      );
+  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type,
+  );
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1.fromJson(Map<String, dynamic> json) => FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2 {
@@ -524,39 +256,22 @@ class FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2 {
   final String storeId;
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2Type type_;
 
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2(
-      {required this.storeId, required this.type_});
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2({required this.storeId, required this.type_});
 
-  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2 Function(
-      {String storeId,
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2Type
-          type_}) get copyWith => _copyWith;
+  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2 Function({String storeId, FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2Type type_}) get copyWith => _copyWith;
 
-  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2 _copyWith(
-          {Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2(
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2Type,
-      );
+  FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2Type,
+  );
 
-  factory FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2.fromJson(Map<String, dynamic> json) => FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }

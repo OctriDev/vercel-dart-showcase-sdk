@@ -10,42 +10,24 @@ class GetProjectsResponseCreatorVariant2 {
   final GetProjectsResponseCreatorVariant2Integration integration;
   final GetProjectsResponseCreatorVariant2Type type_;
 
-  const GetProjectsResponseCreatorVariant2(
-      {required this.integration, required this.type_});
+  const GetProjectsResponseCreatorVariant2({required this.integration, required this.type_});
 
-  GetProjectsResponseCreatorVariant2 Function(
-      {GetProjectsResponseCreatorVariant2Integration integration,
-      GetProjectsResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseCreatorVariant2 Function({GetProjectsResponseCreatorVariant2Integration integration, GetProjectsResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseCreatorVariant2 _copyWith(
-          {Object? integration = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetProjectsResponseCreatorVariant2(
-        integration: identical(integration, sdkOmittedValue)
-            ? this.integration
-            : integration as GetProjectsResponseCreatorVariant2Integration,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetProjectsResponseCreatorVariant2Type,
-      );
+  GetProjectsResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectsResponseCreatorVariant2(
+    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as GetProjectsResponseCreatorVariant2Integration,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseCreatorVariant2Type,
+  );
 
-  factory GetProjectsResponseCreatorVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseCreatorVariant2(
-        integration: (json['integration'] != null
-            ? GetProjectsResponseCreatorVariant2Integration.fromJson(
-                json['integration'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? GetProjectsResponseCreatorVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetProjectsResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => GetProjectsResponseCreatorVariant2(
+    integration: (json['integration'] != null ? GetProjectsResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? GetProjectsResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'integration': integration.toJson(),
-        'type': type_.toJson(),
-      };
+    'integration': integration.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class GetProjectsResponseCreatorVariant3 {
@@ -55,29 +37,19 @@ class GetProjectsResponseCreatorVariant3 {
 
   const GetProjectsResponseCreatorVariant3({required this.type_});
 
-  GetProjectsResponseCreatorVariant3 Function(
-      {GetProjectsResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseCreatorVariant3 Function({GetProjectsResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseCreatorVariant3 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      GetProjectsResponseCreatorVariant3(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetProjectsResponseCreatorVariant3Type,
-      );
+  GetProjectsResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => GetProjectsResponseCreatorVariant3(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseCreatorVariant3Type,
+  );
 
-  factory GetProjectsResponseCreatorVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseCreatorVariant3(
-        type_: (json['type'] != null
-            ? GetProjectsResponseCreatorVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetProjectsResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => GetProjectsResponseCreatorVariant3(
+    type_: (json['type'] != null ? GetProjectsResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 sealed class GetProjectsResponseCreator {
@@ -86,92 +58,40 @@ sealed class GetProjectsResponseCreator {
   const GetProjectsResponseCreator();
   factory GetProjectsResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetProjectsResponseCreatorVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetProjectsResponseCreatorVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetProjectsResponseCreatorVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetProjectsResponseCreatorVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetProjectsResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(value); } } catch (_) {}
+      try { final value = GetProjectsResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(value); } } catch (_) {}
+      try { final value = GetProjectsResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(value); } } catch (_) {}
+      try { final value = GetProjectsResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(value); } } catch (_) {}
     }
-    try {
-      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(
-          GetProjectsResponseCreatorVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(
-          GetProjectsResponseCreatorVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(
-          GetProjectsResponseCreatorVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(
-          GetProjectsResponseCreatorVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(GetProjectsResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(GetProjectsResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(GetProjectsResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(GetProjectsResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for GetProjectsResponseCreator");
   }
   Object? toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0
-    extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0 extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant0 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1
-    extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1 extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant1 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2
-    extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2 extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant2 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3
-    extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3 extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant3 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }

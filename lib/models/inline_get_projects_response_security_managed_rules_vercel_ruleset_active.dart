@@ -5,248 +5,188 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetProjectsResponseSecurityManagedRulesVercelRulesetActive {
+
   final bool value;
 
-  const GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(
-      this.value);
+  const GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesVercelRulesetActive.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(value);
+  factory GetProjectsResponseSecurityManagedRulesVercelRulesetActive.fromJson(bool value) => GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(false);
-  static const true_ =
-      GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(true);
+  static const false_ = GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(false);
+  static const true_ = GetProjectsResponseSecurityManagedRulesVercelRulesetActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesVercelRulesetActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesVercelRulesetActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
 final class GetProjectsResponseSecurityPageIntegrityEnabled {
+
   final bool value;
 
   const GetProjectsResponseSecurityPageIntegrityEnabled._(this.value);
 
-  factory GetProjectsResponseSecurityPageIntegrityEnabled.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityPageIntegrityEnabled._(value);
+  factory GetProjectsResponseSecurityPageIntegrityEnabled.fromJson(bool value) => GetProjectsResponseSecurityPageIntegrityEnabled._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityPageIntegrityEnabled._(false);
+  static const false_ = GetProjectsResponseSecurityPageIntegrityEnabled._(false);
   static const true_ = GetProjectsResponseSecurityPageIntegrityEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityPageIntegrityEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityPageIntegrityEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityRulesetsValueAction {
+
   final String value;
 
   const GetProjectsResponseSecurityRulesetsValueAction._(this.value);
 
-  factory GetProjectsResponseSecurityRulesetsValueAction.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityRulesetsValueAction._(value);
+  factory GetProjectsResponseSecurityRulesetsValueAction.fromJson(String value) => GetProjectsResponseSecurityRulesetsValueAction._(value);
 
-  static const allow =
-      GetProjectsResponseSecurityRulesetsValueAction._('allow');
-  static const bypass =
-      GetProjectsResponseSecurityRulesetsValueAction._('bypass');
-  static const challenge =
-      GetProjectsResponseSecurityRulesetsValueAction._('challenge');
+  static const allow = GetProjectsResponseSecurityRulesetsValueAction._('allow');
+  static const bypass = GetProjectsResponseSecurityRulesetsValueAction._('bypass');
+  static const challenge = GetProjectsResponseSecurityRulesetsValueAction._('challenge');
   static const deny = GetProjectsResponseSecurityRulesetsValueAction._('deny');
   static const log = GetProjectsResponseSecurityRulesetsValueAction._('log');
-  static const rateLimit =
-      GetProjectsResponseSecurityRulesetsValueAction._('rate_limit');
-  static const redirect =
-      GetProjectsResponseSecurityRulesetsValueAction._('redirect');
+  static const rateLimit = GetProjectsResponseSecurityRulesetsValueAction._('rate_limit');
+  static const redirect = GetProjectsResponseSecurityRulesetsValueAction._('redirect');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityRulesetsValueAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityRulesetsValueAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityRulesetsValueBypassSystem {
+
   final bool value;
 
   const GetProjectsResponseSecurityRulesetsValueBypassSystem._(this.value);
 
-  factory GetProjectsResponseSecurityRulesetsValueBypassSystem.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityRulesetsValueBypassSystem._(value);
+  factory GetProjectsResponseSecurityRulesetsValueBypassSystem.fromJson(bool value) => GetProjectsResponseSecurityRulesetsValueBypassSystem._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityRulesetsValueBypassSystem._(false);
-  static const true_ =
-      GetProjectsResponseSecurityRulesetsValueBypassSystem._(true);
+  static const false_ = GetProjectsResponseSecurityRulesetsValueBypassSystem._(false);
+  static const true_ = GetProjectsResponseSecurityRulesetsValueBypassSystem._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityRulesetsValueBypassSystem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityRulesetsValueBypassSystem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1 {
+
   final String value;
 
-  const GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1._(
-      this.value);
+  const GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1._(this.value);
 
-  factory GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1._(value);
+  factory GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1.fromJson(String value) => GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1._(value);
 
-  static const unknown =
-      GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1._('*');
+  static const unknown = GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityRulesetsValueLogHeadersVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityRulesetsValueRateLimitAlgo {
+
   final String value;
 
   const GetProjectsResponseSecurityRulesetsValueRateLimitAlgo._(this.value);
 
-  factory GetProjectsResponseSecurityRulesetsValueRateLimitAlgo.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityRulesetsValueRateLimitAlgo._(value);
+  factory GetProjectsResponseSecurityRulesetsValueRateLimitAlgo.fromJson(String value) => GetProjectsResponseSecurityRulesetsValueRateLimitAlgo._(value);
 
-  static const fixedWindow =
-      GetProjectsResponseSecurityRulesetsValueRateLimitAlgo._('fixed_window');
-  static const tokenBucket =
-      GetProjectsResponseSecurityRulesetsValueRateLimitAlgo._('token_bucket');
+  static const fixedWindow = GetProjectsResponseSecurityRulesetsValueRateLimitAlgo._('fixed_window');
+  static const tokenBucket = GetProjectsResponseSecurityRulesetsValueRateLimitAlgo._('token_bucket');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityRulesetsValueRateLimitAlgo &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityRulesetsValueRateLimitAlgo && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityRulesetsValueRedirectPermanent {
+
   final bool value;
 
   const GetProjectsResponseSecurityRulesetsValueRedirectPermanent._(this.value);
 
-  factory GetProjectsResponseSecurityRulesetsValueRedirectPermanent.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityRulesetsValueRedirectPermanent._(value);
+  factory GetProjectsResponseSecurityRulesetsValueRedirectPermanent.fromJson(bool value) => GetProjectsResponseSecurityRulesetsValueRedirectPermanent._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityRulesetsValueRedirectPermanent._(false);
-  static const true_ =
-      GetProjectsResponseSecurityRulesetsValueRedirectPermanent._(true);
+  static const false_ = GetProjectsResponseSecurityRulesetsValueRedirectPermanent._(false);
+  static const true_ = GetProjectsResponseSecurityRulesetsValueRedirectPermanent._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityRulesetsValueRedirectPermanent &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityRulesetsValueRedirectPermanent && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseServerlessFunctionZeroConfigFailover {
+
   final bool value;
 
   const GetProjectsResponseServerlessFunctionZeroConfigFailover._(this.value);
 
-  factory GetProjectsResponseServerlessFunctionZeroConfigFailover.fromJson(
-          bool value) =>
-      GetProjectsResponseServerlessFunctionZeroConfigFailover._(value);
+  factory GetProjectsResponseServerlessFunctionZeroConfigFailover.fromJson(bool value) => GetProjectsResponseServerlessFunctionZeroConfigFailover._(value);
 
-  static const false_ =
-      GetProjectsResponseServerlessFunctionZeroConfigFailover._(false);
-  static const true_ =
-      GetProjectsResponseServerlessFunctionZeroConfigFailover._(true);
+  static const false_ = GetProjectsResponseServerlessFunctionZeroConfigFailover._(false);
+  static const true_ = GetProjectsResponseServerlessFunctionZeroConfigFailover._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseServerlessFunctionZeroConfigFailover &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseServerlessFunctionZeroConfigFailover && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Framework slug, when the service has one (omitted otherwise).
 final class GetProjectsResponseServicesItemFramework {
+
   final String value;
 
   const GetProjectsResponseServicesItemFramework._(this.value);
 
-  factory GetProjectsResponseServicesItemFramework.fromJson(String value) =>
-      GetProjectsResponseServicesItemFramework._(value);
+  factory GetProjectsResponseServicesItemFramework.fromJson(String value) => GetProjectsResponseServicesItemFramework._(value);
 
-  static const actixWeb =
-      GetProjectsResponseServicesItemFramework._('actix-web');
+  static const actixWeb = GetProjectsResponseServicesItemFramework._('actix-web');
   static const angular = GetProjectsResponseServicesItemFramework._('angular');
   static const ash = GetProjectsResponseServicesItemFramework._('ash');
   static const astro = GetProjectsResponseServicesItemFramework._('astro');
@@ -254,48 +194,36 @@ final class GetProjectsResponseServicesItemFramework {
   static const blitzjs = GetProjectsResponseServicesItemFramework._('blitzjs');
   static const brunch = GetProjectsResponseServicesItemFramework._('brunch');
   static const bun = GetProjectsResponseServicesItemFramework._('bun');
-  static const container =
-      GetProjectsResponseServicesItemFramework._('container');
-  static const createReactApp =
-      GetProjectsResponseServicesItemFramework._('create-react-app');
+  static const container = GetProjectsResponseServicesItemFramework._('container');
+  static const createReactApp = GetProjectsResponseServicesItemFramework._('create-react-app');
   static const django = GetProjectsResponseServicesItemFramework._('django');
-  static const docusaurus =
-      GetProjectsResponseServicesItemFramework._('docusaurus');
-  static const docusaurus2 =
-      GetProjectsResponseServicesItemFramework._('docusaurus-2');
+  static const docusaurus = GetProjectsResponseServicesItemFramework._('docusaurus');
+  static const docusaurus2 = GetProjectsResponseServicesItemFramework._('docusaurus-2');
   static const dojo = GetProjectsResponseServicesItemFramework._('dojo');
-  static const eleventy =
-      GetProjectsResponseServicesItemFramework._('eleventy');
+  static const eleventy = GetProjectsResponseServicesItemFramework._('eleventy');
   static const elysia = GetProjectsResponseServicesItemFramework._('elysia');
   static const ember = GetProjectsResponseServicesItemFramework._('ember');
   static const eve = GetProjectsResponseServicesItemFramework._('eve');
   static const express = GetProjectsResponseServicesItemFramework._('express');
-  static const factoryEve =
-      GetProjectsResponseServicesItemFramework._('factory-eve');
+  static const factoryEve = GetProjectsResponseServicesItemFramework._('factory-eve');
   static const fastapi = GetProjectsResponseServicesItemFramework._('fastapi');
-  static const fasthtml =
-      GetProjectsResponseServicesItemFramework._('fasthtml');
+  static const fasthtml = GetProjectsResponseServicesItemFramework._('fasthtml');
   static const fastify = GetProjectsResponseServicesItemFramework._('fastify');
   static const flask = GetProjectsResponseServicesItemFramework._('flask');
   static const gatsby = GetProjectsResponseServicesItemFramework._('gatsby');
   static const go = GetProjectsResponseServicesItemFramework._('go');
-  static const gridsome =
-      GetProjectsResponseServicesItemFramework._('gridsome');
+  static const gridsome = GetProjectsResponseServicesItemFramework._('gridsome');
   static const h3 = GetProjectsResponseServicesItemFramework._('h3');
   static const hexo = GetProjectsResponseServicesItemFramework._('hexo');
   static const hono = GetProjectsResponseServicesItemFramework._('hono');
   static const hugo = GetProjectsResponseServicesItemFramework._('hugo');
-  static const hydrogen =
-      GetProjectsResponseServicesItemFramework._('hydrogen');
-  static const ionicAngular =
-      GetProjectsResponseServicesItemFramework._('ionic-angular');
-  static const ionicReact =
-      GetProjectsResponseServicesItemFramework._('ionic-react');
+  static const hydrogen = GetProjectsResponseServicesItemFramework._('hydrogen');
+  static const ionicAngular = GetProjectsResponseServicesItemFramework._('ionic-angular');
+  static const ionicReact = GetProjectsResponseServicesItemFramework._('ionic-react');
   static const jekyll = GetProjectsResponseServicesItemFramework._('jekyll');
   static const koa = GetProjectsResponseServicesItemFramework._('koa');
   static const mastra = GetProjectsResponseServicesItemFramework._('mastra');
-  static const middleman =
-      GetProjectsResponseServicesItemFramework._('middleman');
+  static const middleman = GetProjectsResponseServicesItemFramework._('middleman');
   static const nestjs = GetProjectsResponseServicesItemFramework._('nestjs');
   static const nextjs = GetProjectsResponseServicesItemFramework._('nextjs');
   static const nitro = GetProjectsResponseServicesItemFramework._('nitro');
@@ -305,68 +233,52 @@ final class GetProjectsResponseServicesItemFramework {
   static const polymer = GetProjectsResponseServicesItemFramework._('polymer');
   static const preact = GetProjectsResponseServicesItemFramework._('preact');
   static const python = GetProjectsResponseServicesItemFramework._('python');
-  static const reactRouter =
-      GetProjectsResponseServicesItemFramework._('react-router');
-  static const redwoodjs =
-      GetProjectsResponseServicesItemFramework._('redwoodjs');
+  static const reactRouter = GetProjectsResponseServicesItemFramework._('react-router');
+  static const redwoodjs = GetProjectsResponseServicesItemFramework._('redwoodjs');
   static const remix = GetProjectsResponseServicesItemFramework._('remix');
   static const ruby = GetProjectsResponseServicesItemFramework._('ruby');
   static const rust = GetProjectsResponseServicesItemFramework._('rust');
   static const saber = GetProjectsResponseServicesItemFramework._('saber');
   static const sanity = GetProjectsResponseServicesItemFramework._('sanity');
-  static const sanityV2 =
-      GetProjectsResponseServicesItemFramework._('sanity-v2');
+  static const sanityV2 = GetProjectsResponseServicesItemFramework._('sanity-v2');
   static const sapper = GetProjectsResponseServicesItemFramework._('sapper');
   static const scully = GetProjectsResponseServicesItemFramework._('scully');
-  static const services =
-      GetProjectsResponseServicesItemFramework._('services');
-  static const solidstart =
-      GetProjectsResponseServicesItemFramework._('solidstart');
-  static const solidstart1 =
-      GetProjectsResponseServicesItemFramework._('solidstart-1');
+  static const services = GetProjectsResponseServicesItemFramework._('services');
+  static const solidstart = GetProjectsResponseServicesItemFramework._('solidstart');
+  static const solidstart1 = GetProjectsResponseServicesItemFramework._('solidstart-1');
   static const stencil = GetProjectsResponseServicesItemFramework._('stencil');
-  static const storybook =
-      GetProjectsResponseServicesItemFramework._('storybook');
+  static const storybook = GetProjectsResponseServicesItemFramework._('storybook');
   static const svelte = GetProjectsResponseServicesItemFramework._('svelte');
-  static const sveltekit =
-      GetProjectsResponseServicesItemFramework._('sveltekit');
-  static const sveltekit1 =
-      GetProjectsResponseServicesItemFramework._('sveltekit-1');
-  static const tanstackStart =
-      GetProjectsResponseServicesItemFramework._('tanstack-start');
-  static const tanstackStartLovable =
-      GetProjectsResponseServicesItemFramework._('tanstack-start-lovable');
+  static const sveltekit = GetProjectsResponseServicesItemFramework._('sveltekit');
+  static const sveltekit1 = GetProjectsResponseServicesItemFramework._('sveltekit-1');
+  static const tanstackStart = GetProjectsResponseServicesItemFramework._('tanstack-start');
+  static const tanstackStartLovable = GetProjectsResponseServicesItemFramework._('tanstack-start-lovable');
   static const umijs = GetProjectsResponseServicesItemFramework._('umijs');
   static const vite = GetProjectsResponseServicesItemFramework._('vite');
-  static const vitepress =
-      GetProjectsResponseServicesItemFramework._('vitepress');
+  static const vitepress = GetProjectsResponseServicesItemFramework._('vitepress');
   static const vue = GetProjectsResponseServicesItemFramework._('vue');
-  static const vuepress =
-      GetProjectsResponseServicesItemFramework._('vuepress');
+  static const vuepress = GetProjectsResponseServicesItemFramework._('vuepress');
   static const xmcp = GetProjectsResponseServicesItemFramework._('xmcp');
   static const zola = GetProjectsResponseServicesItemFramework._('zola');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseServicesItemFramework && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseServicesItemFramework && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Service kind (Service.type). Omitted for schemas that do not define one.
 final class GetProjectsResponseServicesItemServiceType {
+
   final String value;
 
   const GetProjectsResponseServicesItemServiceType._(this.value);
 
-  factory GetProjectsResponseServicesItemServiceType.fromJson(String value) =>
-      GetProjectsResponseServicesItemServiceType._(value);
+  factory GetProjectsResponseServicesItemServiceType.fromJson(String value) => GetProjectsResponseServicesItemServiceType._(value);
 
   static const cron = GetProjectsResponseServicesItemServiceType._('cron');
   static const job = GetProjectsResponseServicesItemServiceType._('job');
@@ -375,14 +287,10 @@ final class GetProjectsResponseServicesItemServiceType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseServicesItemServiceType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseServicesItemServiceType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

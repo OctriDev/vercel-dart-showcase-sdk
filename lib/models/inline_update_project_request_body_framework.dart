@@ -6,44 +6,39 @@ part of 'inline.dart';
 // Inline operation models
 /// The framework that is being used for this project. When `null` is used no framework is selected
 final class UpdateProjectRequestBodyFramework {
+
   final String value;
 
   const UpdateProjectRequestBodyFramework._(this.value);
 
-  factory UpdateProjectRequestBodyFramework.fromJson(String value) =>
-      UpdateProjectRequestBodyFramework._(value);
+  factory UpdateProjectRequestBodyFramework.fromJson(String value) => UpdateProjectRequestBodyFramework._(value);
 
   static const container = UpdateProjectRequestBodyFramework._('container');
   static const blitzjs = UpdateProjectRequestBodyFramework._('blitzjs');
   static const nextjs = UpdateProjectRequestBodyFramework._('nextjs');
   static const gatsby = UpdateProjectRequestBodyFramework._('gatsby');
   static const remix = UpdateProjectRequestBodyFramework._('remix');
-  static const reactRouter =
-      UpdateProjectRequestBodyFramework._('react-router');
+  static const reactRouter = UpdateProjectRequestBodyFramework._('react-router');
   static const astro = UpdateProjectRequestBodyFramework._('astro');
   static const hexo = UpdateProjectRequestBodyFramework._('hexo');
   static const eleventy = UpdateProjectRequestBodyFramework._('eleventy');
-  static const docusaurus2 =
-      UpdateProjectRequestBodyFramework._('docusaurus-2');
+  static const docusaurus2 = UpdateProjectRequestBodyFramework._('docusaurus-2');
   static const docusaurus = UpdateProjectRequestBodyFramework._('docusaurus');
   static const preact = UpdateProjectRequestBodyFramework._('preact');
-  static const solidstart1 =
-      UpdateProjectRequestBodyFramework._('solidstart-1');
+  static const solidstart1 = UpdateProjectRequestBodyFramework._('solidstart-1');
   static const solidstart = UpdateProjectRequestBodyFramework._('solidstart');
   static const dojo = UpdateProjectRequestBodyFramework._('dojo');
   static const ember = UpdateProjectRequestBodyFramework._('ember');
   static const vue = UpdateProjectRequestBodyFramework._('vue');
   static const scully = UpdateProjectRequestBodyFramework._('scully');
-  static const ionicAngular =
-      UpdateProjectRequestBodyFramework._('ionic-angular');
+  static const ionicAngular = UpdateProjectRequestBodyFramework._('ionic-angular');
   static const angular = UpdateProjectRequestBodyFramework._('angular');
   static const polymer = UpdateProjectRequestBodyFramework._('polymer');
   static const svelte = UpdateProjectRequestBodyFramework._('svelte');
   static const sveltekit = UpdateProjectRequestBodyFramework._('sveltekit');
   static const sveltekit1 = UpdateProjectRequestBodyFramework._('sveltekit-1');
   static const ionicReact = UpdateProjectRequestBodyFramework._('ionic-react');
-  static const createReactApp =
-      UpdateProjectRequestBodyFramework._('create-react-app');
+  static const createReactApp = UpdateProjectRequestBodyFramework._('create-react-app');
   static const gridsome = UpdateProjectRequestBodyFramework._('gridsome');
   static const umijs = UpdateProjectRequestBodyFramework._('umijs');
   static const sapper = UpdateProjectRequestBodyFramework._('sapper');
@@ -58,10 +53,8 @@ final class UpdateProjectRequestBodyFramework {
   static const zola = UpdateProjectRequestBodyFramework._('zola');
   static const hydrogen = UpdateProjectRequestBodyFramework._('hydrogen');
   static const vite = UpdateProjectRequestBodyFramework._('vite');
-  static const tanstackStart =
-      UpdateProjectRequestBodyFramework._('tanstack-start');
-  static const tanstackStartLovable =
-      UpdateProjectRequestBodyFramework._('tanstack-start-lovable');
+  static const tanstackStart = UpdateProjectRequestBodyFramework._('tanstack-start');
+  static const tanstackStartLovable = UpdateProjectRequestBodyFramework._('tanstack-start-lovable');
   static const vitepress = UpdateProjectRequestBodyFramework._('vitepress');
   static const vuepress = UpdateProjectRequestBodyFramework._('vuepress');
   static const parcel = UpdateProjectRequestBodyFramework._('parcel');
@@ -97,24 +90,21 @@ final class UpdateProjectRequestBodyFramework {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectRequestBodyFramework && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyFramework && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectRequestBodyNodeVersion {
+
   final String value;
 
   const UpdateProjectRequestBodyNodeVersion._(this.value);
 
-  factory UpdateProjectRequestBodyNodeVersion.fromJson(String value) =>
-      UpdateProjectRequestBodyNodeVersion._(value);
+  factory UpdateProjectRequestBodyNodeVersion.fromJson(String value) => UpdateProjectRequestBodyNodeVersion._(value);
 
   static const v26X = UpdateProjectRequestBodyNodeVersion._('26.x');
   static const v24X = UpdateProjectRequestBodyNodeVersion._('24.x');
@@ -128,259 +118,171 @@ final class UpdateProjectRequestBodyNodeVersion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectRequestBodyNodeVersion && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyNodeVersion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// team: `https://oidc.vercel.com/[team_slug]` global: `https://oidc.vercel.com`
 final class UpdateProjectRequestBodyOidcTokenConfigIssuerMode {
+
   final String value;
 
   const UpdateProjectRequestBodyOidcTokenConfigIssuerMode._(this.value);
 
-  factory UpdateProjectRequestBodyOidcTokenConfigIssuerMode.fromJson(
-          String value) =>
-      UpdateProjectRequestBodyOidcTokenConfigIssuerMode._(value);
+  factory UpdateProjectRequestBodyOidcTokenConfigIssuerMode.fromJson(String value) => UpdateProjectRequestBodyOidcTokenConfigIssuerMode._(value);
 
-  static const team =
-      UpdateProjectRequestBodyOidcTokenConfigIssuerMode._('team');
-  static const global =
-      UpdateProjectRequestBodyOidcTokenConfigIssuerMode._('global');
+  static const team = UpdateProjectRequestBodyOidcTokenConfigIssuerMode._('team');
+  static const global = UpdateProjectRequestBodyOidcTokenConfigIssuerMode._('global');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectRequestBodyOidcTokenConfigIssuerMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyOidcTokenConfigIssuerMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectRequestBodyPassportDeploymentType {
+
   final String value;
 
   const UpdateProjectRequestBodyPassportDeploymentType._(this.value);
 
-  factory UpdateProjectRequestBodyPassportDeploymentType.fromJson(
-          String value) =>
-      UpdateProjectRequestBodyPassportDeploymentType._(value);
+  factory UpdateProjectRequestBodyPassportDeploymentType.fromJson(String value) => UpdateProjectRequestBodyPassportDeploymentType._(value);
 
   static const all = UpdateProjectRequestBodyPassportDeploymentType._('all');
-  static const preview =
-      UpdateProjectRequestBodyPassportDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UpdateProjectRequestBodyPassportDeploymentType._(
-          'prod_deployment_urls_and_all_previews');
-  static const allExceptCustomDomains =
-      UpdateProjectRequestBodyPassportDeploymentType._(
-          'all_except_custom_domains');
+  static const preview = UpdateProjectRequestBodyPassportDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectRequestBodyPassportDeploymentType._('prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains = UpdateProjectRequestBodyPassportDeploymentType._('all_except_custom_domains');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectRequestBodyPassportDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyPassportDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Specify if the password will apply to every Deployment Target or just Preview
 final class UpdateProjectRequestBodyPasswordProtectionDeploymentType {
+
   final String value;
 
   const UpdateProjectRequestBodyPasswordProtectionDeploymentType._(this.value);
 
-  factory UpdateProjectRequestBodyPasswordProtectionDeploymentType.fromJson(
-          String value) =>
-      UpdateProjectRequestBodyPasswordProtectionDeploymentType._(value);
+  factory UpdateProjectRequestBodyPasswordProtectionDeploymentType.fromJson(String value) => UpdateProjectRequestBodyPasswordProtectionDeploymentType._(value);
 
-  static const all =
-      UpdateProjectRequestBodyPasswordProtectionDeploymentType._('all');
-  static const preview =
-      UpdateProjectRequestBodyPasswordProtectionDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UpdateProjectRequestBodyPasswordProtectionDeploymentType._(
-          'prod_deployment_urls_and_all_previews');
-  static const allExceptCustomDomains =
-      UpdateProjectRequestBodyPasswordProtectionDeploymentType._(
-          'all_except_custom_domains');
+  static const all = UpdateProjectRequestBodyPasswordProtectionDeploymentType._('all');
+  static const preview = UpdateProjectRequestBodyPasswordProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectRequestBodyPasswordProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains = UpdateProjectRequestBodyPasswordProtectionDeploymentType._('all_except_custom_domains');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectRequestBodyPasswordProtectionDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyPasswordProtectionDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason {
+
   final String value;
 
-  const UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-      this.value);
+  const UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(this.value);
 
-  factory UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason.fromJson(
-          String value) =>
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(value);
+  factory UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason.fromJson(String value) => UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(value);
 
-  static const oomFailure =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'oom-failure');
-  static const enospcFailure =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'enospc-failure');
-  static const buildTimeoutFailure =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'build-timeout-failure');
-  static const basicFloor =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'basic-floor');
-  static const highPeakMemory =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'high-peak-memory');
-  static const sustainedHighCpu =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'sustained-high-cpu');
-  static const highPeakDisk =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'high-peak-disk');
-  static const longBuildDuration =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'long-build-duration');
-  static const shortBuildDuration =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'short-build-duration');
-  static const enterpriseFloor =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._(
-          'enterprise-floor');
+  static const oomFailure = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('oom-failure');
+  static const enospcFailure = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('enospc-failure');
+  static const buildTimeoutFailure = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('build-timeout-failure');
+  static const basicFloor = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('basic-floor');
+  static const highPeakMemory = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('high-peak-memory');
+  static const sustainedHighCpu = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('sustained-high-cpu');
+  static const highPeakDisk = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('high-peak-disk');
+  static const longBuildDuration = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('long-build-duration');
+  static const shortBuildDuration = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('short-build-duration');
+  static const enterpriseFloor = UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason._('enterprise-floor');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection {
+
   final String value;
 
-  const UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection._(
-      this.value);
+  const UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection._(this.value);
 
-  factory UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection.fromJson(
-          String value) =>
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
-          ._(value);
+  factory UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection.fromJson(String value) => UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection._(value);
 
-  static const upgrade =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
-          ._('upgrade');
-  static const downgrade =
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
-          ._('downgrade');
+  static const upgrade = UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection._('upgrade');
+  static const downgrade = UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection._('downgrade');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectRequestBodyResourceConfigBuildMachineSelection {
+
   final String value;
 
-  const UpdateProjectRequestBodyResourceConfigBuildMachineSelection._(
-      this.value);
+  const UpdateProjectRequestBodyResourceConfigBuildMachineSelection._(this.value);
 
-  factory UpdateProjectRequestBodyResourceConfigBuildMachineSelection.fromJson(
-          String value) =>
-      UpdateProjectRequestBodyResourceConfigBuildMachineSelection._(value);
+  factory UpdateProjectRequestBodyResourceConfigBuildMachineSelection.fromJson(String value) => UpdateProjectRequestBodyResourceConfigBuildMachineSelection._(value);
 
-  static const elastic =
-      UpdateProjectRequestBodyResourceConfigBuildMachineSelection._('elastic');
-  static const fixed =
-      UpdateProjectRequestBodyResourceConfigBuildMachineSelection._('fixed');
+  static const elastic = UpdateProjectRequestBodyResourceConfigBuildMachineSelection._('elastic');
+  static const fixed = UpdateProjectRequestBodyResourceConfigBuildMachineSelection._('fixed');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectRequestBodyResourceConfigBuildMachineSelection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyResourceConfigBuildMachineSelection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration {
+
   final String value;
 
-  const UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._(
-      this.value);
+  const UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._(this.value);
 
-  factory UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration.fromJson(
-          String value) =>
-      UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._(value);
+  factory UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration.fromJson(String value) => UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._(value);
 
-  static const skipNamespaceQueue =
-      UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._(
-          'SKIP_NAMESPACE_QUEUE');
-  static const waitForNamespaceQueue =
-      UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._(
-          'WAIT_FOR_NAMESPACE_QUEUE');
+  static const skipNamespaceQueue = UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._('SKIP_NAMESPACE_QUEUE');
+  static const waitForNamespaceQueue = UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration._('WAIT_FOR_NAMESPACE_QUEUE');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

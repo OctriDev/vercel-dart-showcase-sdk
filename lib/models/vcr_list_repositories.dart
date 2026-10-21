@@ -8,49 +8,30 @@ part of 'vcr.dart';
 class VcrRepositoryList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Cursor to fetch the next page of results, when more are available.
   final SdkOptional<String> nextCursor;
-
   /// Required array value serialized in the `repositories` wire field.
   final List<VcrRepository> repositories;
 
-  const VcrRepositoryList(
-      {this.nextCursor = const SdkOmitted(), required this.repositories});
+  const VcrRepositoryList({this.nextCursor = const SdkOmitted(), required this.repositories});
 
-  VcrRepositoryList Function(
-      {SdkOptional<String> nextCursor,
-      List<VcrRepository> repositories}) get copyWith => _copyWith;
+  VcrRepositoryList Function({SdkOptional<String> nextCursor, List<VcrRepository> repositories}) get copyWith => _copyWith;
 
-  VcrRepositoryList _copyWith(
-          {Object? nextCursor = sdkOmittedValue,
-          Object? repositories = sdkOmittedValue}) =>
-      VcrRepositoryList(
-        nextCursor: identical(nextCursor, sdkOmittedValue)
-            ? this.nextCursor
-            : nextCursor as SdkOptional<String>,
-        repositories: identical(repositories, sdkOmittedValue)
-            ? this.repositories
-            : repositories as List<VcrRepository>,
-      );
+  VcrRepositoryList _copyWith({Object? nextCursor = sdkOmittedValue, Object? repositories = sdkOmittedValue}) => VcrRepositoryList(
+    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as SdkOptional<String>,
+    repositories: identical(repositories, sdkOmittedValue) ? this.repositories : repositories as List<VcrRepository>,
+  );
 
-  factory VcrRepositoryList.fromJson(Map<String, dynamic> json) =>
-      VcrRepositoryList(
-        nextCursor: json['nextCursor'] != null
-            ? SdkPresent((json['nextCursor'] as String?)!)
-            : const SdkOmitted(),
-        repositories: ((json['repositories'] as List?)
-            ?.map((e) => VcrRepository.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory VcrRepositoryList.fromJson(Map<String, dynamic> json) => VcrRepositoryList(
+    nextCursor: json['nextCursor'] != null ? SdkPresent((json['nextCursor'] as String?)!) : const SdkOmitted(),
+    repositories: ((json['repositories'] as List?)?.map((e) => VcrRepository.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (nextCursor) {
-          SdkPresent<String>(value: final value) => {
-              'nextCursor': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'repositories': repositories.map((item) => item.toJson()).toList(),
-      };
+    ...switch (nextCursor) {
+      SdkPresent<String>(value: final value) => {'nextCursor': value,},
+      _ => const <String, dynamic>{},
+    },
+    'repositories': repositories.map((item) => item.toJson()).toList(),
+  };
 }

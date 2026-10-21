@@ -8,126 +8,78 @@ sealed class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expirati
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expiration();
-  factory CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expiration.fromJson(
-      Object? json) {
-    if (json is num) {
-      return CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1ExpirationInt(
-          json.toInt());
-    }
-    throw FormatException(
-        "No variant matched for CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expiration");
+  factory CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expiration.fromJson(Object? json) {
+    if (json is num) { return CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1ExpirationInt(json.toInt()); }
+    throw FormatException("No variant matched for CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expiration");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1ExpirationInt
-    extends CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expiration {
+final class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1ExpirationInt extends CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1Expiration {
   final int value;
-  const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1ExpirationInt(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1ExpirationInt(this.value);
+  @override Object? toJson() => value;
 }
 
 class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Number of most recent snapshots to keep.
   final int count;
-
   /// Expiration time in milliseconds for kept snapshots. Falls back to snapshotExpiration.
   final SdkOptional<int?> expiration;
-
   /// Whether to immediately delete evicted snapshots. Defaults to true.
   final SdkOptional<bool> deleteEvicted;
 
-  const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(
-      {required this.count,
-      this.expiration = const SdkOmitted(),
-      this.deleteEvicted = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1({required this.count, this.expiration = const SdkOmitted(), this.deleteEvicted = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1 Function(
-      {int count,
-      SdkOptional<int?> expiration,
-      SdkOptional<bool> deleteEvicted}) get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1 Function({int count, SdkOptional<int?> expiration, SdkOptional<bool> deleteEvicted}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1 _copyWith(
-          {Object? count = sdkOmittedValue,
-          Object? expiration = sdkOmittedValue,
-          Object? deleteEvicted = sdkOmittedValue}) =>
-      CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(
-        count: identical(count, sdkOmittedValue) ? this.count : count as int,
-        expiration: identical(expiration, sdkOmittedValue)
-            ? this.expiration
-            : expiration as SdkOptional<int?>,
-        deleteEvicted: identical(deleteEvicted, sdkOmittedValue)
-            ? this.deleteEvicted
-            : deleteEvicted as SdkOptional<bool>,
-      );
+  CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1 _copyWith({Object? count = sdkOmittedValue, Object? expiration = sdkOmittedValue, Object? deleteEvicted = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(
+    count: identical(count, sdkOmittedValue) ? this.count : count as int,
+    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<int?>,
+    deleteEvicted: identical(deleteEvicted, sdkOmittedValue) ? this.deleteEvicted : deleteEvicted as SdkOptional<bool>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(
-        count: ((json['count'] as num?)?.toInt())!,
-        expiration: json.containsKey('expiration')
-            ? SdkPresent((json['expiration'] as num?)?.toInt())
-            : const SdkOmitted(),
-        deleteEvicted: json['deleteEvicted'] != null
-            ? SdkPresent((json['deleteEvicted'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(
+    count: ((json['count'] as num?)?.toInt())!,
+    expiration: json.containsKey('expiration') ? SdkPresent((json['expiration'] as num?)?.toInt()) : const SdkOmitted(),
+    deleteEvicted: json['deleteEvicted'] != null ? SdkPresent((json['deleteEvicted'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-        ...switch (expiration) {
-          SdkPresent<int?>(value: final value) => {
-              'expiration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deleteEvicted) {
-          SdkPresent<bool>(value: final value) => {
-              'deleteEvicted': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'count': count,
+    ...switch (expiration) {
+      SdkPresent<int?>(value: final value) => {'expiration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deleteEvicted) {
+      SdkPresent<bool>(value: final value) => {'deleteEvicted': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class CreateSandboxesByNameForkV3RequestKeepLastSnapshots {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateSandboxesByNameForkV3RequestKeepLastSnapshots();
-  factory CreateSandboxesByNameForkV3RequestKeepLastSnapshots.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CreateSandboxesByNameForkV3RequestKeepLastSnapshotsString(json);
-    }
-    try {
-      return CreateSandboxesByNameForkV3RequestKeepLastSnapshotsCreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(
-          CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateSandboxesByNameForkV3RequestKeepLastSnapshots");
+  factory CreateSandboxesByNameForkV3RequestKeepLastSnapshots.fromJson(Object? json) {
+    if (json is String) { return CreateSandboxesByNameForkV3RequestKeepLastSnapshotsString(json); }
+    try { return CreateSandboxesByNameForkV3RequestKeepLastSnapshotsCreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateSandboxesByNameForkV3RequestKeepLastSnapshots");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsString
-    extends CreateSandboxesByNameForkV3RequestKeepLastSnapshots {
+final class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsString extends CreateSandboxesByNameForkV3RequestKeepLastSnapshots {
   final String value;
   const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsCreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1
-    extends CreateSandboxesByNameForkV3RequestKeepLastSnapshots {
+final class CreateSandboxesByNameForkV3RequestKeepLastSnapshotsCreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1 extends CreateSandboxesByNameForkV3RequestKeepLastSnapshots {
   final CreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1 value;
-  const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsCreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesByNameForkV3RequestKeepLastSnapshotsCreateSandboxesByNameForkV3RequestKeepLastSnapshotsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

@@ -8,220 +8,84 @@ part of 'inline.dart';
 class ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether consolidated commit status is enabled.
-  final ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled
-      enabled;
-
+  final ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled enabled;
   /// Whether to propagate individual deployment failures to the consolidated status.
-  final ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-      propagateFailures;
+  final ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures propagateFailures;
 
-  const ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus(
-      {required this.enabled, required this.propagateFailures});
+  const ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus({required this.enabled, required this.propagateFailures});
 
-  ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus Function(
-      {ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled
-          enabled,
-      ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-          propagateFailures}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus Function({ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled enabled, ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures propagateFailures}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus
-      _copyWith(
-              {Object? enabled = sdkOmittedValue,
-              Object? propagateFailures = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus(
-            enabled: identical(enabled, sdkOmittedValue)
-                ? this.enabled
-                : enabled
-                    as ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled,
-            propagateFailures: identical(propagateFailures, sdkOmittedValue)
-                ? this.propagateFailures
-                : propagateFailures
-                    as ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures,
-          );
+  ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus _copyWith({Object? enabled = sdkOmittedValue, Object? propagateFailures = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled,
+    propagateFailures: identical(propagateFailures, sdkOmittedValue) ? this.propagateFailures : propagateFailures as ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus(
-        enabled: (json['enabled'] != null
-            ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled
-                .fromJson(json['enabled'] as bool)
-            : null)!,
-        propagateFailures: (json['propagateFailures'] != null
-            ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-                .fromJson(json['propagateFailures'] as bool)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus(
+    enabled: (json['enabled'] != null ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(json['enabled'] as bool) : null)!,
+    propagateFailures: (json['propagateFailures'] != null ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures.fromJson(json['propagateFailures'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-        'propagateFailures': propagateFailures.toJson(),
-      };
+    'enabled': enabled.toJson(),
+    'propagateFailures': propagateFailures.toJson(),
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemGitProviderOptions {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Configuration for consolidated git commit status reporting. When enabled, Vercel will post a single consolidated commit status instead of individual statuses for each deployment.
-  final SdkOptional<
-          ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus>
-      consolidatedGitCommitStatus;
-
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus> consolidatedGitCommitStatus;
   /// Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead
-  final ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments
-      createDeployments;
-
+  final ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments createDeployments;
   /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`.
-  final SdkOptional<
-          ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents>
-      disableRepositoryDispatchEvents;
-
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents> disableRepositoryDispatchEvents;
   /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
-  final SdkOptional<
-          ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus>
-      gitCommitStatus;
-
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus> gitCommitStatus;
   /// Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`.
-  final SdkOptional<
-          ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits>
-      requireVerifiedCommits;
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits> requireVerifiedCommits;
 
-  const ListProjectsResponseVariant2ProjectsItemGitProviderOptions(
-      {this.consolidatedGitCommitStatus = const SdkOmitted(),
-      required this.createDeployments,
-      this.disableRepositoryDispatchEvents = const SdkOmitted(),
-      this.gitCommitStatus = const SdkOmitted(),
-      this.requireVerifiedCommits = const SdkOmitted()});
+  const ListProjectsResponseVariant2ProjectsItemGitProviderOptions({this.consolidatedGitCommitStatus = const SdkOmitted(), required this.createDeployments, this.disableRepositoryDispatchEvents = const SdkOmitted(), this.gitCommitStatus = const SdkOmitted(), this.requireVerifiedCommits = const SdkOmitted()});
 
-  ListProjectsResponseVariant2ProjectsItemGitProviderOptions Function(
-      {SdkOptional<
-              ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus>
-          consolidatedGitCommitStatus,
-      ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments
-          createDeployments,
-      SdkOptional<
-              ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents>
-          disableRepositoryDispatchEvents,
-      SdkOptional<
-              ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus>
-          gitCommitStatus,
-      SdkOptional<
-              ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits>
-          requireVerifiedCommits}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemGitProviderOptions Function({SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus> consolidatedGitCommitStatus, ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments createDeployments, SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents> disableRepositoryDispatchEvents, SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus> gitCommitStatus, SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits> requireVerifiedCommits}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemGitProviderOptions _copyWith(
-          {Object? consolidatedGitCommitStatus = sdkOmittedValue,
-          Object? createDeployments = sdkOmittedValue,
-          Object? disableRepositoryDispatchEvents = sdkOmittedValue,
-          Object? gitCommitStatus = sdkOmittedValue,
-          Object? requireVerifiedCommits = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemGitProviderOptions(
-        consolidatedGitCommitStatus: identical(
-                consolidatedGitCommitStatus, sdkOmittedValue)
-            ? this.consolidatedGitCommitStatus
-            : consolidatedGitCommitStatus as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus>,
-        createDeployments: identical(createDeployments, sdkOmittedValue)
-            ? this.createDeployments
-            : createDeployments
-                as ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments,
-        disableRepositoryDispatchEvents: identical(
-                disableRepositoryDispatchEvents, sdkOmittedValue)
-            ? this.disableRepositoryDispatchEvents
-            : disableRepositoryDispatchEvents as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents>,
-        gitCommitStatus: identical(gitCommitStatus, sdkOmittedValue)
-            ? this.gitCommitStatus
-            : gitCommitStatus as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus>,
-        requireVerifiedCommits: identical(
-                requireVerifiedCommits, sdkOmittedValue)
-            ? this.requireVerifiedCommits
-            : requireVerifiedCommits as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits>,
-      );
+  ListProjectsResponseVariant2ProjectsItemGitProviderOptions _copyWith({Object? consolidatedGitCommitStatus = sdkOmittedValue, Object? createDeployments = sdkOmittedValue, Object? disableRepositoryDispatchEvents = sdkOmittedValue, Object? gitCommitStatus = sdkOmittedValue, Object? requireVerifiedCommits = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemGitProviderOptions(
+    consolidatedGitCommitStatus: identical(consolidatedGitCommitStatus, sdkOmittedValue) ? this.consolidatedGitCommitStatus : consolidatedGitCommitStatus as SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus>,
+    createDeployments: identical(createDeployments, sdkOmittedValue) ? this.createDeployments : createDeployments as ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments,
+    disableRepositoryDispatchEvents: identical(disableRepositoryDispatchEvents, sdkOmittedValue) ? this.disableRepositoryDispatchEvents : disableRepositoryDispatchEvents as SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents>,
+    gitCommitStatus: identical(gitCommitStatus, sdkOmittedValue) ? this.gitCommitStatus : gitCommitStatus as SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus>,
+    requireVerifiedCommits: identical(requireVerifiedCommits, sdkOmittedValue) ? this.requireVerifiedCommits : requireVerifiedCommits as SdkOptional<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemGitProviderOptions.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemGitProviderOptions(
-        consolidatedGitCommitStatus: json['consolidatedGitCommitStatus'] != null
-            ? SdkPresent((json['consolidatedGitCommitStatus'] != null
-                ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus
-                    .fromJson(json['consolidatedGitCommitStatus']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        createDeployments: (json['createDeployments'] != null
-            ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments
-                .fromJson(json['createDeployments'] as String)
-            : null)!,
-        disableRepositoryDispatchEvents: json[
-                    'disableRepositoryDispatchEvents'] !=
-                null
-            ? SdkPresent((json['disableRepositoryDispatchEvents'] != null
-                ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents
-                    .fromJson(json['disableRepositoryDispatchEvents'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        gitCommitStatus: json['gitCommitStatus'] != null
-            ? SdkPresent((json['gitCommitStatus'] != null
-                ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus
-                    .fromJson(json['gitCommitStatus'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        requireVerifiedCommits: json['requireVerifiedCommits'] != null
-            ? SdkPresent((json['requireVerifiedCommits'] != null
-                ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits
-                    .fromJson(json['requireVerifiedCommits'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant2ProjectsItemGitProviderOptions.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemGitProviderOptions(
+    consolidatedGitCommitStatus: json['consolidatedGitCommitStatus'] != null ? SdkPresent((json['consolidatedGitCommitStatus'] != null ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus.fromJson(json['consolidatedGitCommitStatus'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    createDeployments: (json['createDeployments'] != null ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsCreateDeployments.fromJson(json['createDeployments'] as String) : null)!,
+    disableRepositoryDispatchEvents: json['disableRepositoryDispatchEvents'] != null ? SdkPresent((json['disableRepositoryDispatchEvents'] != null ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents.fromJson(json['disableRepositoryDispatchEvents'] as bool) : null)!) : const SdkOmitted(),
+    gitCommitStatus: json['gitCommitStatus'] != null ? SdkPresent((json['gitCommitStatus'] != null ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus.fromJson(json['gitCommitStatus'] as bool) : null)!) : const SdkOmitted(),
+    requireVerifiedCommits: json['requireVerifiedCommits'] != null ? SdkPresent((json['requireVerifiedCommits'] != null ? ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits.fromJson(json['requireVerifiedCommits'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (consolidatedGitCommitStatus) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus>(
-            value: final value
-          ) =>
-            {
-              'consolidatedGitCommitStatus': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createDeployments': createDeployments.toJson(),
-        ...switch (disableRepositoryDispatchEvents) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents>(
-            value: final value
-          ) =>
-            {
-              'disableRepositoryDispatchEvents': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitCommitStatus) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus>(
-            value: final value
-          ) =>
-            {
-              'gitCommitStatus': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requireVerifiedCommits) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits>(
-            value: final value
-          ) =>
-            {
-              'requireVerifiedCommits': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (consolidatedGitCommitStatus) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsConsolidatedGitCommitStatus>(value: final value) => {'consolidatedGitCommitStatus': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'createDeployments': createDeployments.toJson(),
+    ...switch (disableRepositoryDispatchEvents) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsDisableRepositoryDispatchEvents>(value: final value) => {'disableRepositoryDispatchEvents': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitCommitStatus) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsGitCommitStatus>(value: final value) => {'gitCommitStatus': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requireVerifiedCommits) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemGitProviderOptionsRequireVerifiedCommits>(value: final value) => {'requireVerifiedCommits': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0 {
@@ -231,49 +95,30 @@ class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0 {
   final String src;
   final double status;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0(
-      {this.expiry = const SdkOmitted(),
-      required this.src,
-      required this.status});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0({this.expiry = const SdkOmitted(), required this.src, required this.status});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0 Function(
-      {SdkOptional<double> expiry,
-      String src,
-      double status}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0 Function({SdkOptional<double> expiry, String src, double status}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0 _copyWith(
-          {Object? expiry = sdkOmittedValue,
-          Object? src = sdkOmittedValue,
-          Object? status = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0(
-        expiry: identical(expiry, sdkOmittedValue)
-            ? this.expiry
-            : expiry as SdkOptional<double>,
-        src: identical(src, sdkOmittedValue) ? this.src : src as String,
-        status:
-            identical(status, sdkOmittedValue) ? this.status : status as double,
-      );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0 _copyWith({Object? expiry = sdkOmittedValue, Object? src = sdkOmittedValue, Object? status = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0(
+    expiry: identical(expiry, sdkOmittedValue) ? this.expiry : expiry as SdkOptional<double>,
+    src: identical(src, sdkOmittedValue) ? this.src : src as String,
+    status: identical(status, sdkOmittedValue) ? this.status : status as double,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0(
-        expiry: json['expiry'] != null
-            ? SdkPresent(((json['expiry'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        src: (json['src'] as String?)!,
-        status: ((json['status'] as num?)?.toDouble())!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant0(
+    expiry: json['expiry'] != null ? SdkPresent(((json['expiry'] as num?)?.toDouble())!) : const SdkOmitted(),
+    src: (json['src'] as String?)!,
+    status: ((json['status'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (expiry) {
-          SdkPresent<double>(value: final value) => {
-              'expiry': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'src': src,
-        'status': status,
-      };
+    ...switch (expiry) {
+      SdkPresent<double>(value: final value) => {'expiry': value,},
+      _ => const <String, dynamic>{},
+    },
+    'src': src,
+    'status': status,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value {
@@ -281,92 +126,51 @@ class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemV
   static const String constructionSurface = 'named';
   final String eq;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
-      {required this.eq});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value({required this.eq});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
-      Function({String eq}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value Function({String eq}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
-      _copyWith({Object? eq = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
-            eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value _copyWith({Object? eq = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
+    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
-        eq: (json['eq'] as String?)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
+    eq: (json['eq'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'eq': eq,
-      };
+    'eq': eq,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
-      key;
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
-      type_;
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
-      value;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key key;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type type_;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value value;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0(
-      {required this.key, required this.type_, required this.value});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0({required this.key, required this.type_, required this.value});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0 Function(
-      {ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
-          key,
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
-          type_,
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
-          value}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0 Function({ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key key, ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type type_, ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value value}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0(
+    key: identical(key, sdkOmittedValue) ? this.key : key as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type,
+    value: identical(value, sdkOmittedValue) ? this.value : value as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0(
-        key: (json['key'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
-                .fromJson(json['key'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        value: (json['value'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
-                .fromJson(json['value'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0(
+    key: (json['key'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Key.fromJson(json['key'] as String) : null)!,
+    type_: (json['type'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Type.fromJson(json['type'] as String) : null)!,
+    value: (json['value'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant0Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'key': key.toJson(),
-        'type': type_.toJson(),
-        'value': value.toJson(),
-      };
+    'key': key.toJson(),
+    'type': type_.toJson(),
+    'value': value.toJson(),
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value {
@@ -374,171 +178,100 @@ class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemV
   static const String constructionSurface = 'named';
   final String eq;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-      {required this.eq});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value({required this.eq});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-      Function({String eq}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value Function({String eq}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-      _copyWith({Object? eq = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-            eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value _copyWith({Object? eq = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
+    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-        eq: (json['eq'] as String?)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
+    eq: (json['eq'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'eq': eq,
-      };
+    'eq': eq,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
-      type_;
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-      value;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type type_;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value value;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-      {required this.type_, required this.value});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1({required this.type_, required this.value});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 Function(
-      {ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
-          type_,
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-          value}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 Function({ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type type_, ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value value}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1
-      _copyWith(
-              {Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type,
+    value: identical(value, sdkOmittedValue) ? this.value : value as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-        type_: (json['type'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        value: (json['value'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-                .fromJson(json['value'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
+    type_: (json['type'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type.fromJson(json['type'] as String) : null)!,
+    value: (json['value'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'value': value.toJson(),
-      };
+    'type': type_.toJson(),
+    'value': value.toJson(),
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction
-      action;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction action;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
-      {required this.action});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate({required this.action});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate Function(
-      {ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction
-          action}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate Function({ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction action}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-      _copyWith({Object? action = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
-            action: identical(action, sdkOmittedValue)
-                ? this.action
-                : action
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate _copyWith({Object? action = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
+    action: identical(action, sdkOmittedValue) ? this.action : action as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
-        action: (json['action'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction
-                .fromJson(json['action'] as String)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
+    action: (json['action'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction.fromJson(json['action'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-      };
+    'action': action.toJson(),
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<dynamic> has;
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-      mitigate;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate mitigate;
   final SdkOptional<String> src;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
-      {required this.has,
-      required this.mitigate,
-      this.src = const SdkOmitted()});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1({required this.has, required this.mitigate, this.src = const SdkOmitted()});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 Function(
-      {List<dynamic> has,
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-          mitigate,
-      SdkOptional<String> src}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 Function({List<dynamic> has, ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate mitigate, SdkOptional<String> src}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 _copyWith(
-          {Object? has = sdkOmittedValue,
-          Object? mitigate = sdkOmittedValue,
-          Object? src = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
-        has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
-        mitigate: identical(mitigate, sdkOmittedValue)
-            ? this.mitigate
-            : mitigate
-                as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate,
-        src: identical(src, sdkOmittedValue)
-            ? this.src
-            : src as SdkOptional<String>,
-      );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 _copyWith({Object? has = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? src = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
+    has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
+    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate,
+    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
-        has: ((json['has'] as List?)?.map((e) => e).toList())!,
-        mitigate: (json['mitigate'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-                .fromJson(json['mitigate'] as Map<String, dynamic>)
-            : null)!,
-        src: json['src'] != null
-            ? SdkPresent((json['src'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
+    has: ((json['has'] as List?)?.map((e) => e).toList())!,
+    mitigate: (json['mitigate'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!,
+    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'has': has,
-        'mitigate': mitigate.toJson(),
-        ...switch (src) {
-          SdkPresent<String>(value: final value) => {
-              'src': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'has': has,
+    'mitigate': mitigate.toJson(),
+    ...switch (src) {
+      SdkPresent<String>(value: final value) => {'src': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

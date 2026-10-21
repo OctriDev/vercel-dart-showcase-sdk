@@ -8,91 +8,58 @@ part of 'feature_flags.dart';
 class SegmentDataRulesItemConditionsItemLhsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemConditionsItemLhsVariant0Type type_;
 
   const SegmentDataRulesItemConditionsItemLhsVariant0({required this.type_});
 
-  SegmentDataRulesItemConditionsItemLhsVariant0 Function(
-          {SegmentDataRulesItemConditionsItemLhsVariant0Type type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemLhsVariant0 Function({SegmentDataRulesItemConditionsItemLhsVariant0Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemLhsVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemLhsVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemConditionsItemLhsVariant0Type,
-      );
+  SegmentDataRulesItemConditionsItemLhsVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemLhsVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemConditionsItemLhsVariant0Type,
+  );
 
-  factory SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemLhsVariant0(
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemConditionsItemLhsVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemLhsVariant0(
+    type_: (json['type'] != null ? SegmentDataRulesItemConditionsItemLhsVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 /// Required object value serialized in the `lhs` wire field.
 class SegmentDataRulesItemConditionsItemLhsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `attribute` wire field.
   final String attribute;
-
   /// Required `string` value serialized in the `kind` wire field.
   final String kind;
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemConditionsItemLhsVariant1Type type_;
 
-  const SegmentDataRulesItemConditionsItemLhsVariant1(
-      {required this.attribute, required this.kind, required this.type_});
+  const SegmentDataRulesItemConditionsItemLhsVariant1({required this.attribute, required this.kind, required this.type_});
 
-  SegmentDataRulesItemConditionsItemLhsVariant1 Function(
-          {String attribute,
-          String kind,
-          SegmentDataRulesItemConditionsItemLhsVariant1Type type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemLhsVariant1 Function({String attribute, String kind, SegmentDataRulesItemConditionsItemLhsVariant1Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemLhsVariant1 _copyWith(
-          {Object? attribute = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemLhsVariant1(
-        attribute: identical(attribute, sdkOmittedValue)
-            ? this.attribute
-            : attribute as String,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemConditionsItemLhsVariant1Type,
-      );
+  SegmentDataRulesItemConditionsItemLhsVariant1 _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemLhsVariant1(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemConditionsItemLhsVariant1Type,
+  );
 
-  factory SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemLhsVariant1(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemConditionsItemLhsVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemLhsVariant1(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? SegmentDataRulesItemConditionsItemLhsVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class SegmentDataRulesItemConditionsItemLhs {
@@ -101,53 +68,24 @@ sealed class SegmentDataRulesItemConditionsItemLhs {
   const SegmentDataRulesItemConditionsItemLhs();
   factory SegmentDataRulesItemConditionsItemLhs.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(value); } } catch (_) {}
+      try { final value = SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(value); } } catch (_) {}
     }
-    try {
-      return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(
-          SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(
-          SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for SegmentDataRulesItemConditionsItemLhs");
+    try { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for SegmentDataRulesItemConditionsItemLhs");
   }
   Object? toJson();
 }
 
-final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0
-    extends SegmentDataRulesItemConditionsItemLhs {
+final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0 extends SegmentDataRulesItemConditionsItemLhs {
   final SegmentDataRulesItemConditionsItemLhsVariant0 value;
-  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1
-    extends SegmentDataRulesItemConditionsItemLhs {
+final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1 extends SegmentDataRulesItemConditionsItemLhs {
   final SegmentDataRulesItemConditionsItemLhsVariant1 value;
-  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

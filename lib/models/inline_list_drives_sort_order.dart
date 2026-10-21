@@ -6,37 +6,34 @@ part of 'inline.dart';
 // Inline operation models
 /// Sort direction for results.
 final class ListDrivesSortOrder {
+
   final String value;
 
   const ListDrivesSortOrder._(this.value);
 
-  factory ListDrivesSortOrder.fromJson(String value) =>
-      ListDrivesSortOrder._(value);
+  factory ListDrivesSortOrder.fromJson(String value) => ListDrivesSortOrder._(value);
 
   static const asc = ListDrivesSortOrder._('asc');
   static const desc = ListDrivesSortOrder._('desc');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDrivesSortOrder && other.value == value;
+  @override bool operator ==(Object other) => other is ListDrivesSortOrder && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Region where the drive is stored. Defaults to iad1.
 final class GetOrCreateDriveRequestBodyRegion {
+
   final String value;
 
   const GetOrCreateDriveRequestBodyRegion._(this.value);
 
-  factory GetOrCreateDriveRequestBodyRegion.fromJson(String value) =>
-      GetOrCreateDriveRequestBodyRegion._(value);
+  factory GetOrCreateDriveRequestBodyRegion.fromJson(String value) => GetOrCreateDriveRequestBodyRegion._(value);
 
   static const iad1 = GetOrCreateDriveRequestBodyRegion._('iad1');
   static const sfo1 = GetOrCreateDriveRequestBodyRegion._('sfo1');
@@ -60,305 +57,229 @@ final class GetOrCreateDriveRequestBodyRegion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetOrCreateDriveRequestBodyRegion && other.value == value;
+  @override bool operator ==(Object other) => other is GetOrCreateDriveRequestBodyRegion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Sort direction for results by creation time.
 final class ListSessionsSortOrder {
+
   final String value;
 
   const ListSessionsSortOrder._(this.value);
 
-  factory ListSessionsSortOrder.fromJson(String value) =>
-      ListSessionsSortOrder._(value);
+  factory ListSessionsSortOrder.fromJson(String value) => ListSessionsSortOrder._(value);
 
   static const asc = ListSessionsSortOrder._('asc');
   static const desc = ListSessionsSortOrder._('desc');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListSessionsSortOrder && other.value == value;
+  @override bool operator ==(Object other) => other is ListSessionsSortOrder && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class RunSessionCommandResponseVariant0DataCode {
+
   final String value;
 
   const RunSessionCommandResponseVariant0DataCode._(this.value);
 
-  factory RunSessionCommandResponseVariant0DataCode.fromJson(String value) =>
-      RunSessionCommandResponseVariant0DataCode._(value);
+  factory RunSessionCommandResponseVariant0DataCode.fromJson(String value) => RunSessionCommandResponseVariant0DataCode._(value);
 
-  static const sandboxStreamClosed =
-      RunSessionCommandResponseVariant0DataCode._('sandbox_stream_closed');
+  static const sandboxStreamClosed = RunSessionCommandResponseVariant0DataCode._('sandbox_stream_closed');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is RunSessionCommandResponseVariant0DataCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is RunSessionCommandResponseVariant0DataCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class RunSessionCommandResponseVariant0DataMessage {
+
   final String value;
 
   const RunSessionCommandResponseVariant0DataMessage._(this.value);
 
-  factory RunSessionCommandResponseVariant0DataMessage.fromJson(String value) =>
-      RunSessionCommandResponseVariant0DataMessage._(value);
+  factory RunSessionCommandResponseVariant0DataMessage.fromJson(String value) => RunSessionCommandResponseVariant0DataMessage._(value);
 
-  static const sandboxStreamWasClosedAndIsNotAcceptingCommands =
-      RunSessionCommandResponseVariant0DataMessage._(
-          'Sandbox stream was closed and is not accepting commands.');
+  static const sandboxStreamWasClosedAndIsNotAcceptingCommands = RunSessionCommandResponseVariant0DataMessage._('Sandbox stream was closed and is not accepting commands.');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is RunSessionCommandResponseVariant0DataMessage &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is RunSessionCommandResponseVariant0DataMessage && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class RunSessionCommandResponseVariant2DataCode {
+
   final String value;
 
   const RunSessionCommandResponseVariant2DataCode._(this.value);
 
-  factory RunSessionCommandResponseVariant2DataCode.fromJson(String value) =>
-      RunSessionCommandResponseVariant2DataCode._(value);
+  factory RunSessionCommandResponseVariant2DataCode.fromJson(String value) => RunSessionCommandResponseVariant2DataCode._(value);
 
-  static const sandboxStreamClosed =
-      RunSessionCommandResponseVariant2DataCode._('sandbox_stream_closed');
+  static const sandboxStreamClosed = RunSessionCommandResponseVariant2DataCode._('sandbox_stream_closed');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is RunSessionCommandResponseVariant2DataCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is RunSessionCommandResponseVariant2DataCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class RunSessionCommandResponseVariant2DataMessage {
+
   final String value;
 
   const RunSessionCommandResponseVariant2DataMessage._(this.value);
 
-  factory RunSessionCommandResponseVariant2DataMessage.fromJson(String value) =>
-      RunSessionCommandResponseVariant2DataMessage._(value);
+  factory RunSessionCommandResponseVariant2DataMessage.fromJson(String value) => RunSessionCommandResponseVariant2DataMessage._(value);
 
-  static const sandboxStreamWasClosedAndIsNotAcceptingCommands =
-      RunSessionCommandResponseVariant2DataMessage._(
-          'Sandbox stream was closed and is not accepting commands.');
+  static const sandboxStreamWasClosedAndIsNotAcceptingCommands = RunSessionCommandResponseVariant2DataMessage._('Sandbox stream was closed and is not accepting commands.');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is RunSessionCommandResponseVariant2DataMessage &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is RunSessionCommandResponseVariant2DataMessage && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// If set to "true", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.
 final class GetSessionCommandWait {
+
   final String value;
 
   const GetSessionCommandWait._(this.value);
 
-  factory GetSessionCommandWait.fromJson(String value) =>
-      GetSessionCommandWait._(value);
+  factory GetSessionCommandWait.fromJson(String value) => GetSessionCommandWait._(value);
 
   static const true_ = GetSessionCommandWait._('true');
   static const false_ = GetSessionCommandWait._('false');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSessionCommandWait && other.value == value;
+  @override bool operator ==(Object other) => other is GetSessionCommandWait && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.
 final class UpdateSessionNetworkPolicyRequestBodyVariant0Mode {
+
   final String value;
 
   const UpdateSessionNetworkPolicyRequestBodyVariant0Mode._(this.value);
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0Mode.fromJson(
-          String value) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0Mode._(value);
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0Mode.fromJson(String value) => UpdateSessionNetworkPolicyRequestBodyVariant0Mode._(value);
 
-  static const allowAll =
-      UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('allow-all');
-  static const denyAll =
-      UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('deny-all');
-  static const custom =
-      UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('custom');
-  static const defaultAllow =
-      UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('default-allow');
-  static const defaultDeny =
-      UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('default-deny');
+  static const allowAll = UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('allow-all');
+  static const denyAll = UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('deny-all');
+  static const custom = UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('custom');
+  static const defaultAllow = UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('default-allow');
+  static const defaultDeny = UpdateSessionNetworkPolicyRequestBodyVariant0Mode._('default-deny');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateSessionNetworkPolicyRequestBodyVariant0Mode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSessionNetworkPolicyRequestBodyVariant0Mode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Sort direction for results by creation time.
 final class ListSessionSnapshotsSortOrder {
+
   final String value;
 
   const ListSessionSnapshotsSortOrder._(this.value);
 
-  factory ListSessionSnapshotsSortOrder.fromJson(String value) =>
-      ListSessionSnapshotsSortOrder._(value);
+  factory ListSessionSnapshotsSortOrder.fromJson(String value) => ListSessionSnapshotsSortOrder._(value);
 
   static const asc = ListSessionSnapshotsSortOrder._('asc');
   static const desc = ListSessionSnapshotsSortOrder._('desc');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListSessionSnapshotsSortOrder && other.value == value;
+  @override bool operator ==(Object other) => other is ListSessionSnapshotsSortOrder && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Specify if the password will apply to every Deployment Target or just Preview
 final class UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType {
+
   final String value;
 
-  const UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType._(
-      this.value);
+  const UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType._(this.value);
 
-  factory UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType.fromJson(
-          String value) =>
-      UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
-          ._(value);
+  factory UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType.fromJson(String value) => UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType._(value);
 
-  static const all =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
-          ._('all');
-  static const preview =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
-          ._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
-          ._('prod_deployment_urls_and_all_previews');
-  static const allExceptCustomDomains =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
-          ._('all_except_custom_domains');
+  static const all = UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType._('all');
+  static const preview = UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains = UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType._('all_except_custom_domains');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateTeamRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Specify if the Vercel Authentication (SSO Protection) will apply to every Deployment Target or just Preview
 final class UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType {
+
   final String value;
 
-  const UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType._(
-      this.value);
+  const UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType._(this.value);
 
-  factory UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType.fromJson(
-          String value) =>
-      UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
-          ._(value);
+  factory UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType.fromJson(String value) => UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType._(value);
 
-  static const all =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
-          ._('all');
-  static const preview =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
-          ._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
-          ._('prod_deployment_urls_and_all_previews');
-  static const allExceptCustomDomains =
-      UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
-          ._('all_except_custom_domains');
+  static const all = UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType._('all');
+  static const preview = UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains = UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType._('all_except_custom_domains');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateTeamRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

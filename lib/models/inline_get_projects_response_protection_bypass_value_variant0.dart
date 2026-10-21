@@ -13,65 +13,33 @@ class GetProjectsResponseProtectionBypassValueVariant0 {
   final String integrationId;
   final GetProjectsResponseProtectionBypassValueVariant0Scope scope;
 
-  const GetProjectsResponseProtectionBypassValueVariant0(
-      {required this.configurationId,
-      required this.createdAt,
-      required this.createdBy,
-      required this.integrationId,
-      required this.scope});
+  const GetProjectsResponseProtectionBypassValueVariant0({required this.configurationId, required this.createdAt, required this.createdBy, required this.integrationId, required this.scope});
 
-  GetProjectsResponseProtectionBypassValueVariant0 Function(
-          {String configurationId,
-          double createdAt,
-          String createdBy,
-          String integrationId,
-          GetProjectsResponseProtectionBypassValueVariant0Scope scope})
-      get copyWith => _copyWith;
+  GetProjectsResponseProtectionBypassValueVariant0 Function({String configurationId, double createdAt, String createdBy, String integrationId, GetProjectsResponseProtectionBypassValueVariant0Scope scope}) get copyWith => _copyWith;
 
-  GetProjectsResponseProtectionBypassValueVariant0 _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      GetProjectsResponseProtectionBypassValueVariant0(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope as GetProjectsResponseProtectionBypassValueVariant0Scope,
-      );
+  GetProjectsResponseProtectionBypassValueVariant0 _copyWith({Object? configurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetProjectsResponseProtectionBypassValueVariant0(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetProjectsResponseProtectionBypassValueVariant0Scope,
+  );
 
-  factory GetProjectsResponseProtectionBypassValueVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseProtectionBypassValueVariant0(
-        configurationId: (json['configurationId'] as String?)!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: (json['createdBy'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-        scope: (json['scope'] != null
-            ? GetProjectsResponseProtectionBypassValueVariant0Scope.fromJson(
-                json['scope'] as String)
-            : null)!,
-      );
+  factory GetProjectsResponseProtectionBypassValueVariant0.fromJson(Map<String, dynamic> json) => GetProjectsResponseProtectionBypassValueVariant0(
+    configurationId: (json['configurationId'] as String?)!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: (json['createdBy'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+    scope: (json['scope'] != null ? GetProjectsResponseProtectionBypassValueVariant0Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'createdAt': createdAt,
-        'createdBy': createdBy,
-        'integrationId': integrationId,
-        'scope': scope.toJson(),
-      };
+    'configurationId': configurationId,
+    'createdAt': createdAt,
+    'createdBy': createdBy,
+    'integrationId': integrationId,
+    'scope': scope.toJson(),
+  };
 }
 
 class GetProjectsResponseProtectionBypassValueVariant1 {
@@ -79,146 +47,70 @@ class GetProjectsResponseProtectionBypassValueVariant1 {
   static const String constructionSurface = 'named';
   final double createdAt;
   final String createdBy;
-
   /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
-  final SdkOptional<GetProjectsResponseProtectionBypassValueVariant1IsEnvVar>
-      isEnvVar;
-
+  final SdkOptional<GetProjectsResponseProtectionBypassValueVariant1IsEnvVar> isEnvVar;
   /// Optional note about the bypass to be displayed in the UI
   final SdkOptional<String> note;
   final GetProjectsResponseProtectionBypassValueVariant1Scope scope;
 
-  const GetProjectsResponseProtectionBypassValueVariant1(
-      {required this.createdAt,
-      required this.createdBy,
-      this.isEnvVar = const SdkOmitted(),
-      this.note = const SdkOmitted(),
-      required this.scope});
+  const GetProjectsResponseProtectionBypassValueVariant1({required this.createdAt, required this.createdBy, this.isEnvVar = const SdkOmitted(), this.note = const SdkOmitted(), required this.scope});
 
-  GetProjectsResponseProtectionBypassValueVariant1 Function(
-          {double createdAt,
-          String createdBy,
-          SdkOptional<GetProjectsResponseProtectionBypassValueVariant1IsEnvVar>
-              isEnvVar,
-          SdkOptional<String> note,
-          GetProjectsResponseProtectionBypassValueVariant1Scope scope})
-      get copyWith => _copyWith;
+  GetProjectsResponseProtectionBypassValueVariant1 Function({double createdAt, String createdBy, SdkOptional<GetProjectsResponseProtectionBypassValueVariant1IsEnvVar> isEnvVar, SdkOptional<String> note, GetProjectsResponseProtectionBypassValueVariant1Scope scope}) get copyWith => _copyWith;
 
-  GetProjectsResponseProtectionBypassValueVariant1 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? isEnvVar = sdkOmittedValue,
-          Object? note = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      GetProjectsResponseProtectionBypassValueVariant1(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as String,
-        isEnvVar: identical(isEnvVar, sdkOmittedValue)
-            ? this.isEnvVar
-            : isEnvVar as SdkOptional<
-                GetProjectsResponseProtectionBypassValueVariant1IsEnvVar>,
-        note: identical(note, sdkOmittedValue)
-            ? this.note
-            : note as SdkOptional<String>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope as GetProjectsResponseProtectionBypassValueVariant1Scope,
-      );
+  GetProjectsResponseProtectionBypassValueVariant1 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? isEnvVar = sdkOmittedValue, Object? note = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetProjectsResponseProtectionBypassValueVariant1(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
+    isEnvVar: identical(isEnvVar, sdkOmittedValue) ? this.isEnvVar : isEnvVar as SdkOptional<GetProjectsResponseProtectionBypassValueVariant1IsEnvVar>,
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetProjectsResponseProtectionBypassValueVariant1Scope,
+  );
 
-  factory GetProjectsResponseProtectionBypassValueVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseProtectionBypassValueVariant1(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: (json['createdBy'] as String?)!,
-        isEnvVar: json['isEnvVar'] != null
-            ? SdkPresent((json['isEnvVar'] != null
-                ? GetProjectsResponseProtectionBypassValueVariant1IsEnvVar
-                    .fromJson(json['isEnvVar'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        scope: (json['scope'] != null
-            ? GetProjectsResponseProtectionBypassValueVariant1Scope.fromJson(
-                json['scope'] as String)
-            : null)!,
-      );
+  factory GetProjectsResponseProtectionBypassValueVariant1.fromJson(Map<String, dynamic> json) => GetProjectsResponseProtectionBypassValueVariant1(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: (json['createdBy'] as String?)!,
+    isEnvVar: json['isEnvVar'] != null ? SdkPresent((json['isEnvVar'] != null ? GetProjectsResponseProtectionBypassValueVariant1IsEnvVar.fromJson(json['isEnvVar'] as bool) : null)!) : const SdkOmitted(),
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    scope: (json['scope'] != null ? GetProjectsResponseProtectionBypassValueVariant1Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'createdBy': createdBy,
-        ...switch (isEnvVar) {
-          SdkPresent<GetProjectsResponseProtectionBypassValueVariant1IsEnvVar>(
-            value: final value
-          ) =>
-            {
-              'isEnvVar': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'scope': scope.toJson(),
-      };
+    'createdAt': createdAt,
+    'createdBy': createdBy,
+    ...switch (isEnvVar) {
+      SdkPresent<GetProjectsResponseProtectionBypassValueVariant1IsEnvVar>(value: final value) => {'isEnvVar': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'scope': scope.toJson(),
+  };
 }
 
 class GetProjectsResponseProtectionConfigSandboxUrls {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>
-      inheritDeploymentProtection;
+  final SdkOptional<GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection> inheritDeploymentProtection;
 
-  const GetProjectsResponseProtectionConfigSandboxUrls(
-      {this.inheritDeploymentProtection = const SdkOmitted()});
+  const GetProjectsResponseProtectionConfigSandboxUrls({this.inheritDeploymentProtection = const SdkOmitted()});
 
-  GetProjectsResponseProtectionConfigSandboxUrls Function(
-      {SdkOptional<
-              GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>
-          inheritDeploymentProtection}) get copyWith => _copyWith;
+  GetProjectsResponseProtectionConfigSandboxUrls Function({SdkOptional<GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection> inheritDeploymentProtection}) get copyWith => _copyWith;
 
-  GetProjectsResponseProtectionConfigSandboxUrls _copyWith(
-          {Object? inheritDeploymentProtection = sdkOmittedValue}) =>
-      GetProjectsResponseProtectionConfigSandboxUrls(
-        inheritDeploymentProtection: identical(
-                inheritDeploymentProtection, sdkOmittedValue)
-            ? this.inheritDeploymentProtection
-            : inheritDeploymentProtection as SdkOptional<
-                GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>,
-      );
+  GetProjectsResponseProtectionConfigSandboxUrls _copyWith({Object? inheritDeploymentProtection = sdkOmittedValue}) => GetProjectsResponseProtectionConfigSandboxUrls(
+    inheritDeploymentProtection: identical(inheritDeploymentProtection, sdkOmittedValue) ? this.inheritDeploymentProtection : inheritDeploymentProtection as SdkOptional<GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>,
+  );
 
-  factory GetProjectsResponseProtectionConfigSandboxUrls.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseProtectionConfigSandboxUrls(
-        inheritDeploymentProtection: json['inheritDeploymentProtection'] != null
-            ? SdkPresent((json['inheritDeploymentProtection'] != null
-                ? GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection
-                    .fromJson(json['inheritDeploymentProtection'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetProjectsResponseProtectionConfigSandboxUrls.fromJson(Map<String, dynamic> json) => GetProjectsResponseProtectionConfigSandboxUrls(
+    inheritDeploymentProtection: json['inheritDeploymentProtection'] != null ? SdkPresent((json['inheritDeploymentProtection'] != null ? GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection.fromJson(json['inheritDeploymentProtection'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (inheritDeploymentProtection) {
-          SdkPresent<
-                GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>(
-            value: final value
-          ) =>
-            {
-              'inheritDeploymentProtection': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (inheritDeploymentProtection) {
+      SdkPresent<GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection>(value: final value) => {'inheritDeploymentProtection': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetProjectsResponseProtectionConfig {
@@ -226,44 +118,24 @@ class GetProjectsResponseProtectionConfig {
   static const String constructionSurface = 'named';
   final SdkOptional<GetProjectsResponseProtectionConfigSandboxUrls> sandboxUrls;
 
-  const GetProjectsResponseProtectionConfig(
-      {this.sandboxUrls = const SdkOmitted()});
+  const GetProjectsResponseProtectionConfig({this.sandboxUrls = const SdkOmitted()});
 
-  GetProjectsResponseProtectionConfig Function(
-      {SdkOptional<GetProjectsResponseProtectionConfigSandboxUrls>
-          sandboxUrls}) get copyWith => _copyWith;
+  GetProjectsResponseProtectionConfig Function({SdkOptional<GetProjectsResponseProtectionConfigSandboxUrls> sandboxUrls}) get copyWith => _copyWith;
 
-  GetProjectsResponseProtectionConfig _copyWith(
-          {Object? sandboxUrls = sdkOmittedValue}) =>
-      GetProjectsResponseProtectionConfig(
-        sandboxUrls: identical(sandboxUrls, sdkOmittedValue)
-            ? this.sandboxUrls
-            : sandboxUrls
-                as SdkOptional<GetProjectsResponseProtectionConfigSandboxUrls>,
-      );
+  GetProjectsResponseProtectionConfig _copyWith({Object? sandboxUrls = sdkOmittedValue}) => GetProjectsResponseProtectionConfig(
+    sandboxUrls: identical(sandboxUrls, sdkOmittedValue) ? this.sandboxUrls : sandboxUrls as SdkOptional<GetProjectsResponseProtectionConfigSandboxUrls>,
+  );
 
-  factory GetProjectsResponseProtectionConfig.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseProtectionConfig(
-        sandboxUrls: json['sandboxUrls'] != null
-            ? SdkPresent((json['sandboxUrls'] != null
-                ? GetProjectsResponseProtectionConfigSandboxUrls.fromJson(
-                    json['sandboxUrls'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetProjectsResponseProtectionConfig.fromJson(Map<String, dynamic> json) => GetProjectsResponseProtectionConfig(
+    sandboxUrls: json['sandboxUrls'] != null ? SdkPresent((json['sandboxUrls'] != null ? GetProjectsResponseProtectionConfigSandboxUrls.fromJson(json['sandboxUrls'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (sandboxUrls) {
-          SdkPresent<GetProjectsResponseProtectionConfigSandboxUrls>(
-            value: final value
-          ) =>
-            {
-              'sandboxUrls': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (sandboxUrls) {
+      SdkPresent<GetProjectsResponseProtectionConfigSandboxUrls>(value: final value) => {'sandboxUrls': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetProjectsResponseResourceConfigBuildMachineElasticTransition {
@@ -271,97 +143,54 @@ class GetProjectsResponseResourceConfigBuildMachineElasticTransition {
   static const String constructionSurface = 'named';
   final String algorithmVersion;
   final double at;
-  final GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection
-      direction;
+  final GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection direction;
 
-  const GetProjectsResponseResourceConfigBuildMachineElasticTransition(
-      {required this.algorithmVersion,
-      required this.at,
-      required this.direction});
+  const GetProjectsResponseResourceConfigBuildMachineElasticTransition({required this.algorithmVersion, required this.at, required this.direction});
 
-  GetProjectsResponseResourceConfigBuildMachineElasticTransition Function(
-      {String algorithmVersion,
-      double at,
-      GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection
-          direction}) get copyWith => _copyWith;
+  GetProjectsResponseResourceConfigBuildMachineElasticTransition Function({String algorithmVersion, double at, GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection direction}) get copyWith => _copyWith;
 
-  GetProjectsResponseResourceConfigBuildMachineElasticTransition _copyWith(
-          {Object? algorithmVersion = sdkOmittedValue,
-          Object? at = sdkOmittedValue,
-          Object? direction = sdkOmittedValue}) =>
-      GetProjectsResponseResourceConfigBuildMachineElasticTransition(
-        algorithmVersion: identical(algorithmVersion, sdkOmittedValue)
-            ? this.algorithmVersion
-            : algorithmVersion as String,
-        at: identical(at, sdkOmittedValue) ? this.at : at as double,
-        direction: identical(direction, sdkOmittedValue)
-            ? this.direction
-            : direction
-                as GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection,
-      );
+  GetProjectsResponseResourceConfigBuildMachineElasticTransition _copyWith({Object? algorithmVersion = sdkOmittedValue, Object? at = sdkOmittedValue, Object? direction = sdkOmittedValue}) => GetProjectsResponseResourceConfigBuildMachineElasticTransition(
+    algorithmVersion: identical(algorithmVersion, sdkOmittedValue) ? this.algorithmVersion : algorithmVersion as String,
+    at: identical(at, sdkOmittedValue) ? this.at : at as double,
+    direction: identical(direction, sdkOmittedValue) ? this.direction : direction as GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection,
+  );
 
-  factory GetProjectsResponseResourceConfigBuildMachineElasticTransition.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseResourceConfigBuildMachineElasticTransition(
-        algorithmVersion: (json['algorithmVersion'] as String?)!,
-        at: ((json['at'] as num?)?.toDouble())!,
-        direction: (json['direction'] != null
-            ? GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection
-                .fromJson(json['direction'] as String)
-            : null)!,
-      );
+  factory GetProjectsResponseResourceConfigBuildMachineElasticTransition.fromJson(Map<String, dynamic> json) => GetProjectsResponseResourceConfigBuildMachineElasticTransition(
+    algorithmVersion: (json['algorithmVersion'] as String?)!,
+    at: ((json['at'] as num?)?.toDouble())!,
+    direction: (json['direction'] != null ? GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection.fromJson(json['direction'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'algorithmVersion': algorithmVersion,
-        'at': at,
-        'direction': direction.toJson(),
-      };
+    'algorithmVersion': algorithmVersion,
+    'at': at,
+    'direction': direction.toJson(),
+  };
 }
 
 class GetProjectsResponseResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetProjectsResponseResourceConfigBuildQueueConfiguration>
-      configuration;
+  final SdkOptional<GetProjectsResponseResourceConfigBuildQueueConfiguration> configuration;
 
-  const GetProjectsResponseResourceConfigBuildQueue(
-      {this.configuration = const SdkOmitted()});
+  const GetProjectsResponseResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
 
-  GetProjectsResponseResourceConfigBuildQueue Function(
-      {SdkOptional<GetProjectsResponseResourceConfigBuildQueueConfiguration>
-          configuration}) get copyWith => _copyWith;
+  GetProjectsResponseResourceConfigBuildQueue Function({SdkOptional<GetProjectsResponseResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
 
-  GetProjectsResponseResourceConfigBuildQueue _copyWith(
-          {Object? configuration = sdkOmittedValue}) =>
-      GetProjectsResponseResourceConfigBuildQueue(
-        configuration: identical(configuration, sdkOmittedValue)
-            ? this.configuration
-            : configuration as SdkOptional<
-                GetProjectsResponseResourceConfigBuildQueueConfiguration>,
-      );
+  GetProjectsResponseResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => GetProjectsResponseResourceConfigBuildQueue(
+    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<GetProjectsResponseResourceConfigBuildQueueConfiguration>,
+  );
 
-  factory GetProjectsResponseResourceConfigBuildQueue.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseResourceConfigBuildQueue(
-        configuration: json['configuration'] != null
-            ? SdkPresent((json['configuration'] != null
-                ? GetProjectsResponseResourceConfigBuildQueueConfiguration
-                    .fromJson(json['configuration'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetProjectsResponseResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => GetProjectsResponseResourceConfigBuildQueue(
+    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? GetProjectsResponseResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (configuration) {
-          SdkPresent<GetProjectsResponseResourceConfigBuildQueueConfiguration>(
-            value: final value
-          ) =>
-            {
-              'configuration': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (configuration) {
+      SdkPresent<GetProjectsResponseResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
@@ -369,47 +198,29 @@ class GetProjectsResponseResourceConfigElasticBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double cores;
-
   /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
   final GetProjectsResponseResourceConfigElasticBuildMachineLabel label;
   final double memory;
 
-  const GetProjectsResponseResourceConfigElasticBuildMachine(
-      {required this.cores, required this.label, required this.memory});
+  const GetProjectsResponseResourceConfigElasticBuildMachine({required this.cores, required this.label, required this.memory});
 
-  GetProjectsResponseResourceConfigElasticBuildMachine Function(
-      {double cores,
-      GetProjectsResponseResourceConfigElasticBuildMachineLabel label,
-      double memory}) get copyWith => _copyWith;
+  GetProjectsResponseResourceConfigElasticBuildMachine Function({double cores, GetProjectsResponseResourceConfigElasticBuildMachineLabel label, double memory}) get copyWith => _copyWith;
 
-  GetProjectsResponseResourceConfigElasticBuildMachine _copyWith(
-          {Object? cores = sdkOmittedValue,
-          Object? label = sdkOmittedValue,
-          Object? memory = sdkOmittedValue}) =>
-      GetProjectsResponseResourceConfigElasticBuildMachine(
-        cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label
-                as GetProjectsResponseResourceConfigElasticBuildMachineLabel,
-        memory:
-            identical(memory, sdkOmittedValue) ? this.memory : memory as double,
-      );
+  GetProjectsResponseResourceConfigElasticBuildMachine _copyWith({Object? cores = sdkOmittedValue, Object? label = sdkOmittedValue, Object? memory = sdkOmittedValue}) => GetProjectsResponseResourceConfigElasticBuildMachine(
+    cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
+    label: identical(label, sdkOmittedValue) ? this.label : label as GetProjectsResponseResourceConfigElasticBuildMachineLabel,
+    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as double,
+  );
 
-  factory GetProjectsResponseResourceConfigElasticBuildMachine.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseResourceConfigElasticBuildMachine(
-        cores: ((json['cores'] as num?)?.toDouble())!,
-        label: (json['label'] != null
-            ? GetProjectsResponseResourceConfigElasticBuildMachineLabel
-                .fromJson(json['label'] as String)
-            : null)!,
-        memory: ((json['memory'] as num?)?.toDouble())!,
-      );
+  factory GetProjectsResponseResourceConfigElasticBuildMachine.fromJson(Map<String, dynamic> json) => GetProjectsResponseResourceConfigElasticBuildMachine(
+    cores: ((json['cores'] as num?)?.toDouble())!,
+    label: (json['label'] != null ? GetProjectsResponseResourceConfigElasticBuildMachineLabel.fromJson(json['label'] as String) : null)!,
+    memory: ((json['memory'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'cores': cores,
-        'label': label.toJson(),
-        'memory': memory,
-      };
+    'cores': cores,
+    'label': label.toJson(),
+    'memory': memory,
+  };
 }

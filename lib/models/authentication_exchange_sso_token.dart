@@ -13,81 +13,39 @@ class ExchangeSsoTokenResponseVariant0 {
   final SdkOptional<String> refreshToken;
   final String? tokenType;
 
-  const ExchangeSsoTokenResponseVariant0(
-      {required this.accessToken,
-      this.expiresIn = const SdkOmitted(),
-      required this.idToken,
-      this.refreshToken = const SdkOmitted(),
-      required this.tokenType});
+  const ExchangeSsoTokenResponseVariant0({required this.accessToken, this.expiresIn = const SdkOmitted(), required this.idToken, this.refreshToken = const SdkOmitted(), required this.tokenType});
 
-  ExchangeSsoTokenResponseVariant0 Function(
-      {String? accessToken,
-      SdkOptional<double> expiresIn,
-      String idToken,
-      SdkOptional<String> refreshToken,
-      String? tokenType}) get copyWith => _copyWith;
+  ExchangeSsoTokenResponseVariant0 Function({String? accessToken, SdkOptional<double> expiresIn, String idToken, SdkOptional<String> refreshToken, String? tokenType}) get copyWith => _copyWith;
 
-  ExchangeSsoTokenResponseVariant0 _copyWith(
-          {Object? accessToken = sdkOmittedValue,
-          Object? expiresIn = sdkOmittedValue,
-          Object? idToken = sdkOmittedValue,
-          Object? refreshToken = sdkOmittedValue,
-          Object? tokenType = sdkOmittedValue}) =>
-      ExchangeSsoTokenResponseVariant0(
-        accessToken: identical(accessToken, sdkOmittedValue)
-            ? this.accessToken
-            : accessToken as String?,
-        expiresIn: identical(expiresIn, sdkOmittedValue)
-            ? this.expiresIn
-            : expiresIn as SdkOptional<double>,
-        idToken: identical(idToken, sdkOmittedValue)
-            ? this.idToken
-            : idToken as String,
-        refreshToken: identical(refreshToken, sdkOmittedValue)
-            ? this.refreshToken
-            : refreshToken as SdkOptional<String>,
-        tokenType: identical(tokenType, sdkOmittedValue)
-            ? this.tokenType
-            : tokenType as String?,
-      );
+  ExchangeSsoTokenResponseVariant0 _copyWith({Object? accessToken = sdkOmittedValue, Object? expiresIn = sdkOmittedValue, Object? idToken = sdkOmittedValue, Object? refreshToken = sdkOmittedValue, Object? tokenType = sdkOmittedValue}) => ExchangeSsoTokenResponseVariant0(
+    accessToken: identical(accessToken, sdkOmittedValue) ? this.accessToken : accessToken as String?,
+    expiresIn: identical(expiresIn, sdkOmittedValue) ? this.expiresIn : expiresIn as SdkOptional<double>,
+    idToken: identical(idToken, sdkOmittedValue) ? this.idToken : idToken as String,
+    refreshToken: identical(refreshToken, sdkOmittedValue) ? this.refreshToken : refreshToken as SdkOptional<String>,
+    tokenType: identical(tokenType, sdkOmittedValue) ? this.tokenType : tokenType as String?,
+  );
 
-  factory ExchangeSsoTokenResponseVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ExchangeSsoTokenResponseVariant0(
-        accessToken: json.containsKey('access_token')
-            ? json['access_token'] as String?
-            : throw ArgumentError.value(
-                null, 'access_token', 'Required property is missing'),
-        expiresIn: json['expires_in'] != null
-            ? SdkPresent(((json['expires_in'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        idToken: (json['id_token'] as String?)!,
-        refreshToken: json['refresh_token'] != null
-            ? SdkPresent((json['refresh_token'] as String?)!)
-            : const SdkOmitted(),
-        tokenType: json.containsKey('token_type')
-            ? json['token_type'] as String?
-            : throw ArgumentError.value(
-                null, 'token_type', 'Required property is missing'),
-      );
+  factory ExchangeSsoTokenResponseVariant0.fromJson(Map<String, dynamic> json) => ExchangeSsoTokenResponseVariant0(
+    accessToken: json.containsKey('access_token') ? json['access_token'] as String? : throw ArgumentError.value(null, 'access_token', 'Required property is missing'),
+    expiresIn: json['expires_in'] != null ? SdkPresent(((json['expires_in'] as num?)?.toDouble())!) : const SdkOmitted(),
+    idToken: (json['id_token'] as String?)!,
+    refreshToken: json['refresh_token'] != null ? SdkPresent((json['refresh_token'] as String?)!) : const SdkOmitted(),
+    tokenType: json.containsKey('token_type') ? json['token_type'] as String? : throw ArgumentError.value(null, 'token_type', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'access_token': accessToken,
-        ...switch (expiresIn) {
-          SdkPresent<double>(value: final value) => {
-              'expires_in': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id_token': idToken,
-        ...switch (refreshToken) {
-          SdkPresent<String>(value: final value) => {
-              'refresh_token': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'token_type': tokenType,
-      };
+    'access_token': accessToken,
+    ...switch (expiresIn) {
+      SdkPresent<double>(value: final value) => {'expires_in': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id_token': idToken,
+    ...switch (refreshToken) {
+      SdkPresent<String>(value: final value) => {'refresh_token': value,},
+      _ => const <String, dynamic>{},
+    },
+    'token_type': tokenType,
+  };
 }
 
 class ExchangeSsoTokenResponseVariant1 {
@@ -99,61 +57,33 @@ class ExchangeSsoTokenResponseVariant1 {
   final String refreshToken;
   final String tokenType;
 
-  const ExchangeSsoTokenResponseVariant1(
-      {required this.accessToken,
-      required this.expiresIn,
-      required this.idToken,
-      required this.refreshToken,
-      required this.tokenType});
+  const ExchangeSsoTokenResponseVariant1({required this.accessToken, required this.expiresIn, required this.idToken, required this.refreshToken, required this.tokenType});
 
-  ExchangeSsoTokenResponseVariant1 Function(
-      {String accessToken,
-      double expiresIn,
-      String idToken,
-      String refreshToken,
-      String tokenType}) get copyWith => _copyWith;
+  ExchangeSsoTokenResponseVariant1 Function({String accessToken, double expiresIn, String idToken, String refreshToken, String tokenType}) get copyWith => _copyWith;
 
-  ExchangeSsoTokenResponseVariant1 _copyWith(
-          {Object? accessToken = sdkOmittedValue,
-          Object? expiresIn = sdkOmittedValue,
-          Object? idToken = sdkOmittedValue,
-          Object? refreshToken = sdkOmittedValue,
-          Object? tokenType = sdkOmittedValue}) =>
-      ExchangeSsoTokenResponseVariant1(
-        accessToken: identical(accessToken, sdkOmittedValue)
-            ? this.accessToken
-            : accessToken as String,
-        expiresIn: identical(expiresIn, sdkOmittedValue)
-            ? this.expiresIn
-            : expiresIn as double,
-        idToken: identical(idToken, sdkOmittedValue)
-            ? this.idToken
-            : idToken as String,
-        refreshToken: identical(refreshToken, sdkOmittedValue)
-            ? this.refreshToken
-            : refreshToken as String,
-        tokenType: identical(tokenType, sdkOmittedValue)
-            ? this.tokenType
-            : tokenType as String,
-      );
+  ExchangeSsoTokenResponseVariant1 _copyWith({Object? accessToken = sdkOmittedValue, Object? expiresIn = sdkOmittedValue, Object? idToken = sdkOmittedValue, Object? refreshToken = sdkOmittedValue, Object? tokenType = sdkOmittedValue}) => ExchangeSsoTokenResponseVariant1(
+    accessToken: identical(accessToken, sdkOmittedValue) ? this.accessToken : accessToken as String,
+    expiresIn: identical(expiresIn, sdkOmittedValue) ? this.expiresIn : expiresIn as double,
+    idToken: identical(idToken, sdkOmittedValue) ? this.idToken : idToken as String,
+    refreshToken: identical(refreshToken, sdkOmittedValue) ? this.refreshToken : refreshToken as String,
+    tokenType: identical(tokenType, sdkOmittedValue) ? this.tokenType : tokenType as String,
+  );
 
-  factory ExchangeSsoTokenResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ExchangeSsoTokenResponseVariant1(
-        accessToken: (json['access_token'] as String?)!,
-        expiresIn: ((json['expires_in'] as num?)?.toDouble())!,
-        idToken: (json['id_token'] as String?)!,
-        refreshToken: (json['refresh_token'] as String?)!,
-        tokenType: (json['token_type'] as String?)!,
-      );
+  factory ExchangeSsoTokenResponseVariant1.fromJson(Map<String, dynamic> json) => ExchangeSsoTokenResponseVariant1(
+    accessToken: (json['access_token'] as String?)!,
+    expiresIn: ((json['expires_in'] as num?)?.toDouble())!,
+    idToken: (json['id_token'] as String?)!,
+    refreshToken: (json['refresh_token'] as String?)!,
+    tokenType: (json['token_type'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'access_token': accessToken,
-        'expires_in': expiresIn,
-        'id_token': idToken,
-        'refresh_token': refreshToken,
-        'token_type': tokenType,
-      };
+    'access_token': accessToken,
+    'expires_in': expiresIn,
+    'id_token': idToken,
+    'refresh_token': refreshToken,
+    'token_type': tokenType,
+  };
 }
 
 sealed class ExchangeSsoTokenResponse {
@@ -162,48 +92,24 @@ sealed class ExchangeSsoTokenResponse {
   const ExchangeSsoTokenResponse();
   factory ExchangeSsoTokenResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = ExchangeSsoTokenResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ExchangeSsoTokenResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ExchangeSsoTokenResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant0(value); } } catch (_) {}
+      try { final value = ExchangeSsoTokenResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant0(
-          ExchangeSsoTokenResponseVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant1(
-          ExchangeSsoTokenResponseVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant0(ExchangeSsoTokenResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant1(ExchangeSsoTokenResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for ExchangeSsoTokenResponse");
   }
   Object? toJson();
 }
 
-final class ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant0
-    extends ExchangeSsoTokenResponse {
+final class ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant0 extends ExchangeSsoTokenResponse {
   final ExchangeSsoTokenResponseVariant0 value;
   const ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant1
-    extends ExchangeSsoTokenResponse {
+final class ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant1 extends ExchangeSsoTokenResponse {
   final ExchangeSsoTokenResponseVariant1 value;
   const ExchangeSsoTokenResponseExchangeSsoTokenResponseVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

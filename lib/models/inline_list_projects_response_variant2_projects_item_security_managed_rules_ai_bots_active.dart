@@ -5,455 +5,283 @@ part of 'inline.dart';
 
 // Inline operation models
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive
-          ._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive
-          ._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesAiBotsActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction._(value);
 
-  static const challenge =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction
-          ._('challenge');
-  static const deny =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction
-          ._('deny');
-  static const log =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction
-          ._('log');
+  static const challenge = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction._('challenge');
+  static const deny = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction._('deny');
+  static const log = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive
-          ._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive
-          ._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesBotFilterActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._(
-          value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._(value);
 
-  static const challenge =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._(
-          'challenge');
-  static const deny =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._(
-          'deny');
-  static const log =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._(
-          'log');
+  static const challenge = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._('challenge');
+  static const deny = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._('deny');
+  static const log = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(
-          value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(
-          false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(
-          true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesOwaspActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction._(value);
 
-  static const challenge =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._('challenge');
-  static const deny =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._('deny');
-  static const log =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._('log');
+  static const challenge = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction._('challenge');
+  static const deny = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction._('deny');
+  static const log = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive
-          ._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive
-          ._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesTrafficSourcesActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction._(value);
 
-  static const challenge =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._('challenge');
-  static const deny =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._('deny');
-  static const log =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._('log');
+  static const challenge = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction._('challenge');
+  static const deny = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction._('deny');
+  static const log = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive
-          ._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive
-          ._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityManagedRulesVercelRulesetActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
 final class ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(
-          value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(
-          false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(
-          true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityPageIntegrityEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(value);
 
-  static const allow =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          'allow');
-  static const bypass =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          'bypass');
-  static const challenge =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          'challenge');
-  static const deny =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          'deny');
-  static const log =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          'log');
-  static const rateLimit =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          'rate_limit');
-  static const redirect =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._(
-          'redirect');
+  static const allow = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._('allow');
+  static const bypass = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._('bypass');
+  static const challenge = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._('challenge');
+  static const deny = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._('deny');
+  static const log = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._('log');
+  static const rateLimit = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._('rate_limit');
+  static const redirect = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction._('redirect');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem
-          ._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem
-          ._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueBypassSystem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1 {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1._(value);
 
-  static const unknown =
-      ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1
-          ._('*');
+  static const unknown = ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemSecurityRulesetsValueLogHeadersVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

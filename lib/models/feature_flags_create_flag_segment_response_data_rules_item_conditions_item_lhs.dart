@@ -7,37 +7,23 @@ part of 'feature_flags.dart';
 class CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type
-      type_;
+  final CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type type_;
 
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
-      {required this.type_});
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0({required this.type_});
 
-  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0 Function(
-      {CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type
-          type_}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0 Function({CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type type_}) get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type,
-      );
+  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type,
+  );
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
-        type_: (json['type'] != null
-            ? CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
+    type_: (json['type'] != null ? CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 class CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 {
@@ -45,107 +31,55 @@ class CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 {
   static const String constructionSurface = 'named';
   final String attribute;
   final String kind;
-  final CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type
-      type_;
+  final CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type type_;
 
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
-      {required this.attribute, required this.kind, required this.type_});
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1({required this.attribute, required this.kind, required this.type_});
 
-  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 Function(
-      {String attribute,
-      String kind,
-      CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type
-          type_}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 Function({String attribute, String kind, CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type type_}) get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 _copyWith(
-          {Object? attribute = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
-        attribute: identical(attribute, sdkOmittedValue)
-            ? this.attribute
-            : attribute as String,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type,
-      );
+  CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type,
+  );
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class CreateFlagSegmentResponseDataRulesItemConditionsItemLhs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateFlagSegmentResponseDataRulesItemConditionsItemLhs();
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemLhs.fromJson(
-      Object? json) {
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemLhs.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(value); } } catch (_) {}
+      try { final value = CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(value); } } catch (_) {}
     }
-    try {
-      return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
-          CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
-          CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateFlagSegmentResponseDataRulesItemConditionsItemLhs");
+    try { return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateFlagSegmentResponseDataRulesItemConditionsItemLhs");
   }
   Object? toJson();
 }
 
-final class CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0
-    extends CreateFlagSegmentResponseDataRulesItemConditionsItemLhs {
+final class CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0 extends CreateFlagSegmentResponseDataRulesItemConditionsItemLhs {
   final CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0 value;
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1
-    extends CreateFlagSegmentResponseDataRulesItemConditionsItemLhs {
+final class CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 extends CreateFlagSegmentResponseDataRulesItemConditionsItemLhs {
   final CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1 value;
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemLhsCreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

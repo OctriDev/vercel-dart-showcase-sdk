@@ -8,48 +8,30 @@ part of 'sandboxes.dart';
 class SandboxInjectionRule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The domain (or pattern) that this injection rule applies to. Supports wildcards like *.vercel.com.
   final String domain;
-
   /// The names of HTTP headers that have value that will be injected for requests to this domain.
   final SdkOptional<List<String>> headerNames;
 
-  const SandboxInjectionRule(
-      {required this.domain, this.headerNames = const SdkOmitted()});
+  const SandboxInjectionRule({required this.domain, this.headerNames = const SdkOmitted()});
 
-  SandboxInjectionRule Function(
-      {String domain,
-      SdkOptional<List<String>> headerNames}) get copyWith => _copyWith;
+  SandboxInjectionRule Function({String domain, SdkOptional<List<String>> headerNames}) get copyWith => _copyWith;
 
-  SandboxInjectionRule _copyWith(
-          {Object? domain = sdkOmittedValue,
-          Object? headerNames = sdkOmittedValue}) =>
-      SandboxInjectionRule(
-        domain:
-            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-        headerNames: identical(headerNames, sdkOmittedValue)
-            ? this.headerNames
-            : headerNames as SdkOptional<List<String>>,
-      );
+  SandboxInjectionRule _copyWith({Object? domain = sdkOmittedValue, Object? headerNames = sdkOmittedValue}) => SandboxInjectionRule(
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    headerNames: identical(headerNames, sdkOmittedValue) ? this.headerNames : headerNames as SdkOptional<List<String>>,
+  );
 
-  factory SandboxInjectionRule.fromJson(Map<String, dynamic> json) =>
-      SandboxInjectionRule(
-        domain: (json['domain'] as String?)!,
-        headerNames: json['headerNames'] != null
-            ? SdkPresent(((json['headerNames'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory SandboxInjectionRule.fromJson(Map<String, dynamic> json) => SandboxInjectionRule(
+    domain: (json['domain'] as String?)!,
+    headerNames: json['headerNames'] != null ? SdkPresent(((json['headerNames'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'domain': domain,
-        ...switch (headerNames) {
-          SdkPresent<List<String>>(value: final value) => {
-              'headerNames': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'domain': domain,
+    ...switch (headerNames) {
+      SdkPresent<List<String>>(value: final value) => {'headerNames': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

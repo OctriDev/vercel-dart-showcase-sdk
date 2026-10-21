@@ -8,166 +8,75 @@ class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> createdAt;
-  final List<
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem>
-      deployHooks;
+  final List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem> deployHooks;
   final String gitCredentialId;
   final String name;
   final String owner;
   final String productionBranch;
   final String slug;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless>
-      sourceless;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless> sourceless;
   final GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Type type_;
   final SdkOptional<double> updatedAt;
   final String uuid;
   final String workspaceUuid;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.name,
-      required this.owner,
-      required this.productionBranch,
-      required this.slug,
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted(),
-      required this.uuid,
-      required this.workspaceUuid});
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.name, required this.owner, required this.productionBranch, required this.slug, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted(), required this.uuid, required this.workspaceUuid});
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4 Function(
-      {SdkOptional<double> createdAt,
-      List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem>
-          deployHooks,
-      String gitCredentialId,
-      String name,
-      String owner,
-      String productionBranch,
-      String slug,
-      SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless>
-          sourceless,
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Type type_,
-      SdkOptional<double> updatedAt,
-      String uuid,
-      String workspaceUuid}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4 Function({SdkOptional<double> createdAt, List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem> deployHooks, String gitCredentialId, String name, String owner, String productionBranch, String slug, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless> sourceless, GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Type type_, SdkOptional<double> updatedAt, String uuid, String workspaceUuid}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? owner = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? uuid = sdkOmittedValue,
-          Object? workspaceUuid = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks as List<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        uuid: identical(uuid, sdkOmittedValue) ? this.uuid : uuid as String,
-        workspaceUuid: identical(workspaceUuid, sdkOmittedValue)
-            ? this.workspaceUuid
-            : workspaceUuid as String,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? uuid = sdkOmittedValue, Object? workspaceUuid = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    uuid: identical(uuid, sdkOmittedValue) ? this.uuid : uuid as String,
+    workspaceUuid: identical(workspaceUuid, sdkOmittedValue) ? this.workspaceUuid : workspaceUuid as String,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        name: (json['name'] as String?)!,
-        owner: (json['owner'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless
-                    .fromJson(json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        uuid: (json['uuid'] as String?)!,
-        workspaceUuid: (json['workspaceUuid'] as String?)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    name: (json['name'] as String?)!,
+    owner: (json['owner'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    uuid: (json['uuid'] as String?)!,
+    workspaceUuid: (json['workspaceUuid'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'name': name,
-        'owner': owner,
-        'productionBranch': productionBranch,
-        'slug': slug,
-        ...switch (sourceless) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'uuid': uuid,
-        'workspaceUuid': workspaceUuid,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'name': name,
+    'owner': owner,
+    'productionBranch': productionBranch,
+    'slug': slug,
+    ...switch (sourceless) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'uuid': uuid,
+    'workspaceUuid': workspaceUuid,
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem {
@@ -179,212 +88,103 @@ class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem {
   final String ref;
   final String url;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem
-      _copyWith(
-              {Object? createdAt = sdkOmittedValue,
-              Object? id = sdkOmittedValue,
-              Object? name = sdkOmittedValue,
-              Object? ref = sdkOmittedValue,
-              Object? url = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem(
-            createdAt: identical(createdAt, sdkOmittedValue)
-                ? this.createdAt
-                : createdAt as SdkOptional<double>,
-            id: identical(id, sdkOmittedValue) ? this.id : id as String,
-            name: identical(name, sdkOmittedValue) ? this.name : name as String,
-            ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-            url: identical(url, sdkOmittedValue) ? this.url : url as String,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> createdAt;
-  final List<
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem>
-      deployHooks;
+  final List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem> deployHooks;
   final String gitCredentialId;
   final String org;
   final String productionBranch;
   final String repo;
   final String repoId;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless>
-      sourceless;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless> sourceless;
   final GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Type type_;
   final SdkOptional<double> updatedAt;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.org,
-      required this.productionBranch,
-      required this.repo,
-      required this.repoId,
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.org, required this.productionBranch, required this.repo, required this.repoId, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5 Function(
-      {SdkOptional<double> createdAt,
-      List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem>
-          deployHooks,
-      String gitCredentialId,
-      String org,
-      String productionBranch,
-      String repo,
-      String repoId,
-      SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless>
-          sourceless,
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Type type_,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5 Function({SdkOptional<double> createdAt, List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem> deployHooks, String gitCredentialId, String org, String productionBranch, String repo, String repoId, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless> sourceless, GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks as List<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? org = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        org: (json['org'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: (json['repoId'] as String?)!,
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless
-                    .fromJson(json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    org: (json['org'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: (json['repoId'] as String?)!,
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'org': org,
-        'productionBranch': productionBranch,
-        'repo': repo,
-        'repoId': repoId,
-        ...switch (sourceless) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'org': org,
+    'productionBranch': productionBranch,
+    'repo': repo,
+    'repoId': repoId,
+    ...switch (sourceless) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant5Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem {
@@ -396,210 +196,101 @@ class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem {
   final String ref;
   final String url;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem
-      _copyWith(
-              {Object? createdAt = sdkOmittedValue,
-              Object? id = sdkOmittedValue,
-              Object? name = sdkOmittedValue,
-              Object? ref = sdkOmittedValue,
-              Object? url = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem(
-            createdAt: identical(createdAt, sdkOmittedValue)
-                ? this.createdAt
-                : createdAt as SdkOptional<double>,
-            id: identical(id, sdkOmittedValue) ? this.id : id as String,
-            name: identical(name, sdkOmittedValue) ? this.name : name as String,
-            ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-            url: identical(url, sdkOmittedValue) ? this.url : url as String,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> createdAt;
-  final List<
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem>
-      deployHooks;
+  final List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem> deployHooks;
   final String gitCredentialId;
   final String org;
   final String productionBranch;
   final String repo;
   final String repoId;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless>
-      sourceless;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless> sourceless;
   final GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Type type_;
   final SdkOptional<double> updatedAt;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.org,
-      required this.productionBranch,
-      required this.repo,
-      required this.repoId,
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.org, required this.productionBranch, required this.repo, required this.repoId, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6 Function(
-      {SdkOptional<double> createdAt,
-      List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem>
-          deployHooks,
-      String gitCredentialId,
-      String org,
-      String productionBranch,
-      String repo,
-      String repoId,
-      SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless>
-          sourceless,
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Type type_,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6 Function({SdkOptional<double> createdAt, List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem> deployHooks, String gitCredentialId, String org, String productionBranch, String repo, String repoId, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless> sourceless, GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks as List<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? org = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        org: (json['org'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: (json['repoId'] as String?)!,
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless
-                    .fromJson(json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    org: (json['org'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: (json['repoId'] as String?)!,
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'org': org,
-        'productionBranch': productionBranch,
-        'repo': repo,
-        'repoId': repoId,
-        ...switch (sourceless) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'org': org,
+    'productionBranch': productionBranch,
+    'repo': repo,
+    'repoId': repoId,
+    ...switch (sourceless) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLinkVariant6Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

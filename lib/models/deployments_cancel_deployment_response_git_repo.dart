@@ -10,114 +10,48 @@ sealed class CancelDeploymentResponseGitRepo {
   const CancelDeploymentResponseGitRepo();
   factory CancelDeploymentResponseGitRepo.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CancelDeploymentResponseGitRepoVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CancelDeploymentResponseGitRepoVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CancelDeploymentResponseGitRepoVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CancelDeploymentResponseGitRepoVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CancelDeploymentResponseGitRepoVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CancelDeploymentResponseGitRepoVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0(value); } } catch (_) {}
+      try { final value = CancelDeploymentResponseGitRepoVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1(value); } } catch (_) {}
+      try { final value = CancelDeploymentResponseGitRepoVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2(value); } } catch (_) {}
+      try { final value = CancelDeploymentResponseGitRepoVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3(value); } } catch (_) {}
+      try { final value = CancelDeploymentResponseGitRepoVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4(value); } } catch (_) {}
     }
-    try {
-      return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0(
-          CancelDeploymentResponseGitRepoVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1(
-          CancelDeploymentResponseGitRepoVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2(
-          CancelDeploymentResponseGitRepoVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3(
-          CancelDeploymentResponseGitRepoVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4(
-          CancelDeploymentResponseGitRepoVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CancelDeploymentResponseGitRepo");
+    try { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0(CancelDeploymentResponseGitRepoVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1(CancelDeploymentResponseGitRepoVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2(CancelDeploymentResponseGitRepoVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3(CancelDeploymentResponseGitRepoVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4(CancelDeploymentResponseGitRepoVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CancelDeploymentResponseGitRepo");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0
-    extends CancelDeploymentResponseGitRepo {
+final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0 extends CancelDeploymentResponseGitRepo {
   final CancelDeploymentResponseGitRepoVariant0 value;
-  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1
-    extends CancelDeploymentResponseGitRepo {
+final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1 extends CancelDeploymentResponseGitRepo {
   final CancelDeploymentResponseGitRepoVariant1 value;
-  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2
-    extends CancelDeploymentResponseGitRepo {
+final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2 extends CancelDeploymentResponseGitRepo {
   final CancelDeploymentResponseGitRepoVariant2 value;
-  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3
-    extends CancelDeploymentResponseGitRepo {
+final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3 extends CancelDeploymentResponseGitRepo {
   final CancelDeploymentResponseGitRepoVariant3 value;
-  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4
-    extends CancelDeploymentResponseGitRepo {
+final class CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4 extends CancelDeploymentResponseGitRepo {
   final CancelDeploymentResponseGitRepoVariant4 value;
-  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitRepoCancelDeploymentResponseGitRepoVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }

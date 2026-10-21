@@ -8,50 +8,30 @@ part of 'vcr.dart';
 class VcrRepositoryPermissionList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Cursor to fetch the next page of results, when more are available.
   final SdkOptional<String> nextCursor;
-
   /// Required array value serialized in the `permissions` wire field.
   final List<VcrRepositoryPermission> permissions;
 
-  const VcrRepositoryPermissionList(
-      {this.nextCursor = const SdkOmitted(), required this.permissions});
+  const VcrRepositoryPermissionList({this.nextCursor = const SdkOmitted(), required this.permissions});
 
-  VcrRepositoryPermissionList Function(
-      {SdkOptional<String> nextCursor,
-      List<VcrRepositoryPermission> permissions}) get copyWith => _copyWith;
+  VcrRepositoryPermissionList Function({SdkOptional<String> nextCursor, List<VcrRepositoryPermission> permissions}) get copyWith => _copyWith;
 
-  VcrRepositoryPermissionList _copyWith(
-          {Object? nextCursor = sdkOmittedValue,
-          Object? permissions = sdkOmittedValue}) =>
-      VcrRepositoryPermissionList(
-        nextCursor: identical(nextCursor, sdkOmittedValue)
-            ? this.nextCursor
-            : nextCursor as SdkOptional<String>,
-        permissions: identical(permissions, sdkOmittedValue)
-            ? this.permissions
-            : permissions as List<VcrRepositoryPermission>,
-      );
+  VcrRepositoryPermissionList _copyWith({Object? nextCursor = sdkOmittedValue, Object? permissions = sdkOmittedValue}) => VcrRepositoryPermissionList(
+    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as SdkOptional<String>,
+    permissions: identical(permissions, sdkOmittedValue) ? this.permissions : permissions as List<VcrRepositoryPermission>,
+  );
 
-  factory VcrRepositoryPermissionList.fromJson(Map<String, dynamic> json) =>
-      VcrRepositoryPermissionList(
-        nextCursor: json['nextCursor'] != null
-            ? SdkPresent((json['nextCursor'] as String?)!)
-            : const SdkOmitted(),
-        permissions: ((json['permissions'] as List?)
-            ?.map((e) =>
-                VcrRepositoryPermission.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory VcrRepositoryPermissionList.fromJson(Map<String, dynamic> json) => VcrRepositoryPermissionList(
+    nextCursor: json['nextCursor'] != null ? SdkPresent((json['nextCursor'] as String?)!) : const SdkOmitted(),
+    permissions: ((json['permissions'] as List?)?.map((e) => VcrRepositoryPermission.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (nextCursor) {
-          SdkPresent<String>(value: final value) => {
-              'nextCursor': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'permissions': permissions.map((item) => item.toJson()).toList(),
-      };
+    ...switch (nextCursor) {
+      SdkPresent<String>(value: final value) => {'nextCursor': value,},
+      _ => const <String, dynamic>{},
+    },
+    'permissions': permissions.map((item) => item.toJson()).toList(),
+  };
 }

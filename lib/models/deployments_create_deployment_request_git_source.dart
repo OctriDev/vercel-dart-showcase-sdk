@@ -8,83 +8,55 @@ class CreateDeploymentRequestGitSourceVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final CreateDeploymentRequestGitSourceVariant0Type type_;
-
   /// The stable Vercel Git repository ID.
   final String repoId;
   final String sha;
 
-  const CreateDeploymentRequestGitSourceVariant0(
-      {required this.type_, required this.repoId, required this.sha});
+  const CreateDeploymentRequestGitSourceVariant0({required this.type_, required this.repoId, required this.sha});
 
-  CreateDeploymentRequestGitSourceVariant0 Function(
-      {CreateDeploymentRequestGitSourceVariant0Type type_,
-      String repoId,
-      String sha}) get copyWith => _copyWith;
+  CreateDeploymentRequestGitSourceVariant0 Function({CreateDeploymentRequestGitSourceVariant0Type type_, String repoId, String sha}) get copyWith => _copyWith;
 
-  CreateDeploymentRequestGitSourceVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sha = sdkOmittedValue}) =>
-      CreateDeploymentRequestGitSourceVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDeploymentRequestGitSourceVariant0Type,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-      );
+  CreateDeploymentRequestGitSourceVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue}) => CreateDeploymentRequestGitSourceVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentRequestGitSourceVariant0Type,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+  );
 
-  factory CreateDeploymentRequestGitSourceVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentRequestGitSourceVariant0(
-        type_: (json['type'] != null
-            ? CreateDeploymentRequestGitSourceVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        repoId: (json['repoId'] as String?)!,
-        sha: (json['sha'] as String?)!,
-      );
+  factory CreateDeploymentRequestGitSourceVariant0.fromJson(Map<String, dynamic> json) => CreateDeploymentRequestGitSourceVariant0(
+    type_: (json['type'] != null ? CreateDeploymentRequestGitSourceVariant0Type.fromJson(json['type'] as String) : null)!,
+    repoId: (json['repoId'] as String?)!,
+    sha: (json['sha'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'repoId': repoId,
-        'sha': sha,
-      };
+    'type': type_.toJson(),
+    'repoId': repoId,
+    'sha': sha,
+  };
 }
 
 sealed class CreateDeploymentRequestGitSourceVariant1RepoId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentRequestGitSourceVariant1RepoId();
-  factory CreateDeploymentRequestGitSourceVariant1RepoId.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CreateDeploymentRequestGitSourceVariant1RepoIdString(json);
-    }
-    if (json is num) {
-      return CreateDeploymentRequestGitSourceVariant1RepoIdDouble(
-          json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for CreateDeploymentRequestGitSourceVariant1RepoId");
+  factory CreateDeploymentRequestGitSourceVariant1RepoId.fromJson(Object? json) {
+    if (json is String) { return CreateDeploymentRequestGitSourceVariant1RepoIdString(json); }
+    if (json is num) { return CreateDeploymentRequestGitSourceVariant1RepoIdDouble(json.toDouble()); }
+    throw FormatException("No variant matched for CreateDeploymentRequestGitSourceVariant1RepoId");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentRequestGitSourceVariant1RepoIdDouble
-    extends CreateDeploymentRequestGitSourceVariant1RepoId {
+final class CreateDeploymentRequestGitSourceVariant1RepoIdDouble extends CreateDeploymentRequestGitSourceVariant1RepoId {
   final double value;
   const CreateDeploymentRequestGitSourceVariant1RepoIdDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CreateDeploymentRequestGitSourceVariant1RepoIdString
-    extends CreateDeploymentRequestGitSourceVariant1RepoId {
+final class CreateDeploymentRequestGitSourceVariant1RepoIdString extends CreateDeploymentRequestGitSourceVariant1RepoId {
   final String value;
   const CreateDeploymentRequestGitSourceVariant1RepoIdString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 class CreateDeploymentRequestGitSourceVariant1 {
@@ -95,62 +67,33 @@ class CreateDeploymentRequestGitSourceVariant1 {
   final SdkOptional<String> sha;
   final CreateDeploymentRequestGitSourceVariant1Type type_;
 
-  const CreateDeploymentRequestGitSourceVariant1(
-      {required this.ref,
-      required this.repoId,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CreateDeploymentRequestGitSourceVariant1({required this.ref, required this.repoId, this.sha = const SdkOmitted(), required this.type_});
 
-  CreateDeploymentRequestGitSourceVariant1 Function(
-          {String ref,
-          dynamic repoId,
-          SdkOptional<String> sha,
-          CreateDeploymentRequestGitSourceVariant1Type type_})
-      get copyWith => _copyWith;
+  CreateDeploymentRequestGitSourceVariant1 Function({String ref, dynamic repoId, SdkOptional<String> sha, CreateDeploymentRequestGitSourceVariant1Type type_}) get copyWith => _copyWith;
 
-  CreateDeploymentRequestGitSourceVariant1 _copyWith(
-          {Object? ref = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDeploymentRequestGitSourceVariant1(
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as dynamic,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDeploymentRequestGitSourceVariant1Type,
-      );
+  CreateDeploymentRequestGitSourceVariant1 _copyWith({Object? ref = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDeploymentRequestGitSourceVariant1(
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as dynamic,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentRequestGitSourceVariant1Type,
+  );
 
-  factory CreateDeploymentRequestGitSourceVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentRequestGitSourceVariant1(
-        ref: (json['ref'] as String?)!,
-        repoId: (json['repoId'])!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDeploymentRequestGitSourceVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDeploymentRequestGitSourceVariant1.fromJson(Map<String, dynamic> json) => CreateDeploymentRequestGitSourceVariant1(
+    ref: (json['ref'] as String?)!,
+    repoId: (json['repoId'])!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDeploymentRequestGitSourceVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'ref': ref,
-        'repoId': repoId,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'ref': ref,
+    'repoId': repoId,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class CreateDeploymentRequestGitSourceVariant2 {
@@ -162,101 +105,60 @@ class CreateDeploymentRequestGitSourceVariant2 {
   final SdkOptional<String> sha;
   final CreateDeploymentRequestGitSourceVariant2Type type_;
 
-  const CreateDeploymentRequestGitSourceVariant2(
-      {required this.org,
-      required this.ref,
-      required this.repo,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CreateDeploymentRequestGitSourceVariant2({required this.org, required this.ref, required this.repo, this.sha = const SdkOmitted(), required this.type_});
 
-  CreateDeploymentRequestGitSourceVariant2 Function(
-          {String org,
-          String ref,
-          String repo,
-          SdkOptional<String> sha,
-          CreateDeploymentRequestGitSourceVariant2Type type_})
-      get copyWith => _copyWith;
+  CreateDeploymentRequestGitSourceVariant2 Function({String org, String ref, String repo, SdkOptional<String> sha, CreateDeploymentRequestGitSourceVariant2Type type_}) get copyWith => _copyWith;
 
-  CreateDeploymentRequestGitSourceVariant2 _copyWith(
-          {Object? org = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDeploymentRequestGitSourceVariant2(
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDeploymentRequestGitSourceVariant2Type,
-      );
+  CreateDeploymentRequestGitSourceVariant2 _copyWith({Object? org = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDeploymentRequestGitSourceVariant2(
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentRequestGitSourceVariant2Type,
+  );
 
-  factory CreateDeploymentRequestGitSourceVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentRequestGitSourceVariant2(
-        org: (json['org'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDeploymentRequestGitSourceVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDeploymentRequestGitSourceVariant2.fromJson(Map<String, dynamic> json) => CreateDeploymentRequestGitSourceVariant2(
+    org: (json['org'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDeploymentRequestGitSourceVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'org': org,
-        'ref': ref,
-        'repo': repo,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'org': org,
+    'ref': ref,
+    'repo': repo,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 sealed class CreateDeploymentRequestGitSourceVariant3RepoId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentRequestGitSourceVariant3RepoId();
-  factory CreateDeploymentRequestGitSourceVariant3RepoId.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CreateDeploymentRequestGitSourceVariant3RepoIdString(json);
-    }
-    if (json is num) {
-      return CreateDeploymentRequestGitSourceVariant3RepoIdDouble(
-          json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for CreateDeploymentRequestGitSourceVariant3RepoId");
+  factory CreateDeploymentRequestGitSourceVariant3RepoId.fromJson(Object? json) {
+    if (json is String) { return CreateDeploymentRequestGitSourceVariant3RepoIdString(json); }
+    if (json is num) { return CreateDeploymentRequestGitSourceVariant3RepoIdDouble(json.toDouble()); }
+    throw FormatException("No variant matched for CreateDeploymentRequestGitSourceVariant3RepoId");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentRequestGitSourceVariant3RepoIdDouble
-    extends CreateDeploymentRequestGitSourceVariant3RepoId {
+final class CreateDeploymentRequestGitSourceVariant3RepoIdDouble extends CreateDeploymentRequestGitSourceVariant3RepoId {
   final double value;
   const CreateDeploymentRequestGitSourceVariant3RepoIdDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CreateDeploymentRequestGitSourceVariant3RepoIdString
-    extends CreateDeploymentRequestGitSourceVariant3RepoId {
+final class CreateDeploymentRequestGitSourceVariant3RepoIdString extends CreateDeploymentRequestGitSourceVariant3RepoId {
   final String value;
   const CreateDeploymentRequestGitSourceVariant3RepoIdString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 class CreateDeploymentRequestGitSourceVariant3 {
@@ -267,62 +169,33 @@ class CreateDeploymentRequestGitSourceVariant3 {
   final SdkOptional<String> sha;
   final CreateDeploymentRequestGitSourceVariant3Type type_;
 
-  const CreateDeploymentRequestGitSourceVariant3(
-      {required this.ref,
-      required this.repoId,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CreateDeploymentRequestGitSourceVariant3({required this.ref, required this.repoId, this.sha = const SdkOmitted(), required this.type_});
 
-  CreateDeploymentRequestGitSourceVariant3 Function(
-          {String ref,
-          dynamic repoId,
-          SdkOptional<String> sha,
-          CreateDeploymentRequestGitSourceVariant3Type type_})
-      get copyWith => _copyWith;
+  CreateDeploymentRequestGitSourceVariant3 Function({String ref, dynamic repoId, SdkOptional<String> sha, CreateDeploymentRequestGitSourceVariant3Type type_}) get copyWith => _copyWith;
 
-  CreateDeploymentRequestGitSourceVariant3 _copyWith(
-          {Object? ref = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDeploymentRequestGitSourceVariant3(
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as dynamic,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDeploymentRequestGitSourceVariant3Type,
-      );
+  CreateDeploymentRequestGitSourceVariant3 _copyWith({Object? ref = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDeploymentRequestGitSourceVariant3(
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as dynamic,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentRequestGitSourceVariant3Type,
+  );
 
-  factory CreateDeploymentRequestGitSourceVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentRequestGitSourceVariant3(
-        ref: (json['ref'] as String?)!,
-        repoId: (json['repoId'])!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDeploymentRequestGitSourceVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDeploymentRequestGitSourceVariant3.fromJson(Map<String, dynamic> json) => CreateDeploymentRequestGitSourceVariant3(
+    ref: (json['ref'] as String?)!,
+    repoId: (json['repoId'])!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDeploymentRequestGitSourceVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'ref': ref,
-        'repoId': repoId,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'ref': ref,
+    'repoId': repoId,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class CreateDeploymentRequestGitSourceVariant4 {
@@ -334,99 +207,58 @@ class CreateDeploymentRequestGitSourceVariant4 {
   final SdkOptional<String> sha;
   final CreateDeploymentRequestGitSourceVariant4Type type_;
 
-  const CreateDeploymentRequestGitSourceVariant4(
-      {required this.org,
-      required this.ref,
-      required this.repo,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CreateDeploymentRequestGitSourceVariant4({required this.org, required this.ref, required this.repo, this.sha = const SdkOmitted(), required this.type_});
 
-  CreateDeploymentRequestGitSourceVariant4 Function(
-          {String org,
-          String ref,
-          String repo,
-          SdkOptional<String> sha,
-          CreateDeploymentRequestGitSourceVariant4Type type_})
-      get copyWith => _copyWith;
+  CreateDeploymentRequestGitSourceVariant4 Function({String org, String ref, String repo, SdkOptional<String> sha, CreateDeploymentRequestGitSourceVariant4Type type_}) get copyWith => _copyWith;
 
-  CreateDeploymentRequestGitSourceVariant4 _copyWith(
-          {Object? org = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDeploymentRequestGitSourceVariant4(
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDeploymentRequestGitSourceVariant4Type,
-      );
+  CreateDeploymentRequestGitSourceVariant4 _copyWith({Object? org = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDeploymentRequestGitSourceVariant4(
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentRequestGitSourceVariant4Type,
+  );
 
-  factory CreateDeploymentRequestGitSourceVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentRequestGitSourceVariant4(
-        org: (json['org'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDeploymentRequestGitSourceVariant4Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDeploymentRequestGitSourceVariant4.fromJson(Map<String, dynamic> json) => CreateDeploymentRequestGitSourceVariant4(
+    org: (json['org'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDeploymentRequestGitSourceVariant4Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'org': org,
-        'ref': ref,
-        'repo': repo,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'org': org,
+    'ref': ref,
+    'repo': repo,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 sealed class CreateDeploymentRequestGitSourceVariant5ProjectId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentRequestGitSourceVariant5ProjectId();
-  factory CreateDeploymentRequestGitSourceVariant5ProjectId.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CreateDeploymentRequestGitSourceVariant5ProjectIdString(json);
-    }
-    if (json is num) {
-      return CreateDeploymentRequestGitSourceVariant5ProjectIdDouble(
-          json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for CreateDeploymentRequestGitSourceVariant5ProjectId");
+  factory CreateDeploymentRequestGitSourceVariant5ProjectId.fromJson(Object? json) {
+    if (json is String) { return CreateDeploymentRequestGitSourceVariant5ProjectIdString(json); }
+    if (json is num) { return CreateDeploymentRequestGitSourceVariant5ProjectIdDouble(json.toDouble()); }
+    throw FormatException("No variant matched for CreateDeploymentRequestGitSourceVariant5ProjectId");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentRequestGitSourceVariant5ProjectIdDouble
-    extends CreateDeploymentRequestGitSourceVariant5ProjectId {
+final class CreateDeploymentRequestGitSourceVariant5ProjectIdDouble extends CreateDeploymentRequestGitSourceVariant5ProjectId {
   final double value;
   const CreateDeploymentRequestGitSourceVariant5ProjectIdDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CreateDeploymentRequestGitSourceVariant5ProjectIdString
-    extends CreateDeploymentRequestGitSourceVariant5ProjectId {
+final class CreateDeploymentRequestGitSourceVariant5ProjectIdString extends CreateDeploymentRequestGitSourceVariant5ProjectId {
   final String value;
   const CreateDeploymentRequestGitSourceVariant5ProjectIdString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }

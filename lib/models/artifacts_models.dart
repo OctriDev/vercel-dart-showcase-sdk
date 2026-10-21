@@ -13,20 +13,17 @@ class StatusResponseVariant0 {
 
   StatusResponseVariant0 Function({String status}) get copyWith => _copyWith;
 
-  StatusResponseVariant0 _copyWith({Object? status = sdkOmittedValue}) =>
-      StatusResponseVariant0(
-        status:
-            identical(status, sdkOmittedValue) ? this.status : status as String,
-      );
+  StatusResponseVariant0 _copyWith({Object? status = sdkOmittedValue}) => StatusResponseVariant0(
+    status: identical(status, sdkOmittedValue) ? this.status : status as String,
+  );
 
-  factory StatusResponseVariant0.fromJson(Map<String, dynamic> json) =>
-      StatusResponseVariant0(
-        status: (json['status'] as String?)!,
-      );
+  factory StatusResponseVariant0.fromJson(Map<String, dynamic> json) => StatusResponseVariant0(
+    status: (json['status'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'status': status,
-      };
+    'status': status,
+  };
 }
 
 class StatusResponseVariant1 {
@@ -36,77 +33,49 @@ class StatusResponseVariant1 {
 
   const StatusResponseVariant1({required this.status});
 
-  StatusResponseVariant1 Function({StatusResponseVariant1Status status})
-      get copyWith => _copyWith;
+  StatusResponseVariant1 Function({StatusResponseVariant1Status status}) get copyWith => _copyWith;
 
-  StatusResponseVariant1 _copyWith({Object? status = sdkOmittedValue}) =>
-      StatusResponseVariant1(
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as StatusResponseVariant1Status,
-      );
+  StatusResponseVariant1 _copyWith({Object? status = sdkOmittedValue}) => StatusResponseVariant1(
+    status: identical(status, sdkOmittedValue) ? this.status : status as StatusResponseVariant1Status,
+  );
 
-  factory StatusResponseVariant1.fromJson(Map<String, dynamic> json) =>
-      StatusResponseVariant1(
-        status: (json['status'] != null
-            ? StatusResponseVariant1Status.fromJson(json['status'] as String)
-            : null)!,
-      );
+  factory StatusResponseVariant1.fromJson(Map<String, dynamic> json) => StatusResponseVariant1(
+    status: (json['status'] != null ? StatusResponseVariant1Status.fromJson(json['status'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'status': status.toJson(),
-      };
+    'status': status.toJson(),
+  };
 }
 
 class StatusResponseVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Present and `true` when the token can read artifacts but cannot upload them.
   final SdkOptional<StatusResponseVariant2ReadOnly> readOnly;
   final StatusResponseVariant2Status status;
 
-  const StatusResponseVariant2(
-      {this.readOnly = const SdkOmitted(), required this.status});
+  const StatusResponseVariant2({this.readOnly = const SdkOmitted(), required this.status});
 
-  StatusResponseVariant2 Function(
-      {SdkOptional<StatusResponseVariant2ReadOnly> readOnly,
-      StatusResponseVariant2Status status}) get copyWith => _copyWith;
+  StatusResponseVariant2 Function({SdkOptional<StatusResponseVariant2ReadOnly> readOnly, StatusResponseVariant2Status status}) get copyWith => _copyWith;
 
-  StatusResponseVariant2 _copyWith(
-          {Object? readOnly = sdkOmittedValue,
-          Object? status = sdkOmittedValue}) =>
-      StatusResponseVariant2(
-        readOnly: identical(readOnly, sdkOmittedValue)
-            ? this.readOnly
-            : readOnly as SdkOptional<StatusResponseVariant2ReadOnly>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as StatusResponseVariant2Status,
-      );
+  StatusResponseVariant2 _copyWith({Object? readOnly = sdkOmittedValue, Object? status = sdkOmittedValue}) => StatusResponseVariant2(
+    readOnly: identical(readOnly, sdkOmittedValue) ? this.readOnly : readOnly as SdkOptional<StatusResponseVariant2ReadOnly>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as StatusResponseVariant2Status,
+  );
 
-  factory StatusResponseVariant2.fromJson(Map<String, dynamic> json) =>
-      StatusResponseVariant2(
-        readOnly: json['readOnly'] != null
-            ? SdkPresent((json['readOnly'] != null
-                ? StatusResponseVariant2ReadOnly.fromJson(
-                    json['readOnly'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        status: (json['status'] != null
-            ? StatusResponseVariant2Status.fromJson(json['status'] as String)
-            : null)!,
-      );
+  factory StatusResponseVariant2.fromJson(Map<String, dynamic> json) => StatusResponseVariant2(
+    readOnly: json['readOnly'] != null ? SdkPresent((json['readOnly'] != null ? StatusResponseVariant2ReadOnly.fromJson(json['readOnly'] as bool) : null)!) : const SdkOmitted(),
+    status: (json['status'] != null ? StatusResponseVariant2Status.fromJson(json['status'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (readOnly) {
-          SdkPresent<StatusResponseVariant2ReadOnly>(value: final value) => {
-              'readOnly': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'status': status.toJson(),
-      };
+    ...switch (readOnly) {
+      SdkPresent<StatusResponseVariant2ReadOnly>(value: final value) => {'readOnly': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'status': status.toJson(),
+  };
 }
 
 sealed class StatusResponse {
@@ -115,37 +84,13 @@ sealed class StatusResponse {
   const StatusResponse();
   factory StatusResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = StatusResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return StatusResponseStatusResponseVariant0(value);
-        }
-      } catch (_) {}
-      try {
-        final value = StatusResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return StatusResponseStatusResponseVariant1(value);
-        }
-      } catch (_) {}
-      try {
-        final value = StatusResponseVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return StatusResponseStatusResponseVariant2(value);
-        }
-      } catch (_) {}
+      try { final value = StatusResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return StatusResponseStatusResponseVariant0(value); } } catch (_) {}
+      try { final value = StatusResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return StatusResponseStatusResponseVariant1(value); } } catch (_) {}
+      try { final value = StatusResponseVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return StatusResponseStatusResponseVariant2(value); } } catch (_) {}
     }
-    try {
-      return StatusResponseStatusResponseVariant0(
-          StatusResponseVariant0.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return StatusResponseStatusResponseVariant1(
-          StatusResponseVariant1.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return StatusResponseStatusResponseVariant2(
-          StatusResponseVariant2.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return StatusResponseStatusResponseVariant0(StatusResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return StatusResponseStatusResponseVariant1(StatusResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return StatusResponseStatusResponseVariant2(StatusResponseVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for StatusResponse");
   }
   Object? toJson();
@@ -154,20 +99,17 @@ sealed class StatusResponse {
 final class StatusResponseStatusResponseVariant0 extends StatusResponse {
   final StatusResponseVariant0 value;
   const StatusResponseStatusResponseVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class StatusResponseStatusResponseVariant1 extends StatusResponse {
   final StatusResponseVariant1 value;
   const StatusResponseStatusResponseVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class StatusResponseStatusResponseVariant2 extends StatusResponse {
   final StatusResponseVariant2 value;
   const StatusResponseStatusResponseVariant2(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

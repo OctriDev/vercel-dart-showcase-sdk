@@ -8,475 +8,290 @@ part of 'user.dart';
 class UserEventPayloadVariant159 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `string` value serialized in the `edgeConfigDigest` wire field.
   final SdkOptional<String> edgeConfigDigest;
-
   /// Required `string` value serialized in the `edgeConfigId` wire field.
   final String edgeConfigId;
-
   /// Required `string` value serialized in the `edgeConfigSlug` wire field.
   final String edgeConfigSlug;
 
-  const UserEventPayloadVariant159(
-      {this.edgeConfigDigest = const SdkOmitted(),
-      required this.edgeConfigId,
-      required this.edgeConfigSlug});
+  const UserEventPayloadVariant159({this.edgeConfigDigest = const SdkOmitted(), required this.edgeConfigId, required this.edgeConfigSlug});
 
-  UserEventPayloadVariant159 Function(
-      {SdkOptional<String> edgeConfigDigest,
-      String edgeConfigId,
-      String edgeConfigSlug}) get copyWith => _copyWith;
+  UserEventPayloadVariant159 Function({SdkOptional<String> edgeConfigDigest, String edgeConfigId, String edgeConfigSlug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant159 _copyWith(
-          {Object? edgeConfigDigest = sdkOmittedValue,
-          Object? edgeConfigId = sdkOmittedValue,
-          Object? edgeConfigSlug = sdkOmittedValue}) =>
-      UserEventPayloadVariant159(
-        edgeConfigDigest: identical(edgeConfigDigest, sdkOmittedValue)
-            ? this.edgeConfigDigest
-            : edgeConfigDigest as SdkOptional<String>,
-        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-            ? this.edgeConfigId
-            : edgeConfigId as String,
-        edgeConfigSlug: identical(edgeConfigSlug, sdkOmittedValue)
-            ? this.edgeConfigSlug
-            : edgeConfigSlug as String,
-      );
+  UserEventPayloadVariant159 _copyWith({Object? edgeConfigDigest = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigSlug = sdkOmittedValue}) => UserEventPayloadVariant159(
+    edgeConfigDigest: identical(edgeConfigDigest, sdkOmittedValue) ? this.edgeConfigDigest : edgeConfigDigest as SdkOptional<String>,
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as String,
+    edgeConfigSlug: identical(edgeConfigSlug, sdkOmittedValue) ? this.edgeConfigSlug : edgeConfigSlug as String,
+  );
 
-  factory UserEventPayloadVariant159.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant159(
-        edgeConfigDigest: json['edgeConfigDigest'] != null
-            ? SdkPresent((json['edgeConfigDigest'] as String?)!)
-            : const SdkOmitted(),
-        edgeConfigId: (json['edgeConfigId'] as String?)!,
-        edgeConfigSlug: (json['edgeConfigSlug'] as String?)!,
-      );
+  factory UserEventPayloadVariant159.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant159(
+    edgeConfigDigest: json['edgeConfigDigest'] != null ? SdkPresent((json['edgeConfigDigest'] as String?)!) : const SdkOmitted(),
+    edgeConfigId: (json['edgeConfigId'] as String?)!,
+    edgeConfigSlug: (json['edgeConfigSlug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (edgeConfigDigest) {
-          SdkPresent<String>(value: final value) => {
-              'edgeConfigDigest': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'edgeConfigId': edgeConfigId,
-        'edgeConfigSlug': edgeConfigSlug,
-      };
+    ...switch (edgeConfigDigest) {
+      SdkPresent<String>(value: final value) => {'edgeConfigDigest': value,},
+      _ => const <String, dynamic>{},
+    },
+    'edgeConfigId': edgeConfigId,
+    'edgeConfigSlug': edgeConfigSlug,
+  };
 }
 
 /// Required object value serialized in the `edgeConfig` wire field.
 class UserEventPayloadVariant160EdgeConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `slug` wire field.
   final String slug;
 
-  const UserEventPayloadVariant160EdgeConfig(
-      {required this.id, required this.slug});
+  const UserEventPayloadVariant160EdgeConfig({required this.id, required this.slug});
 
-  UserEventPayloadVariant160EdgeConfig Function({String id, String slug})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant160EdgeConfig Function({String id, String slug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant160EdgeConfig _copyWith(
-          {Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue}) =>
-      UserEventPayloadVariant160EdgeConfig(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-      );
+  UserEventPayloadVariant160EdgeConfig _copyWith({Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue}) => UserEventPayloadVariant160EdgeConfig(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+  );
 
-  factory UserEventPayloadVariant160EdgeConfig.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant160EdgeConfig(
-        id: (json['id'] as String?)!,
-        slug: (json['slug'] as String?)!,
-      );
+  factory UserEventPayloadVariant160EdgeConfig.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant160EdgeConfig(
+    id: (json['id'] as String?)!,
+    slug: (json['slug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'slug': slug,
-      };
+    'id': id,
+    'slug': slug,
+  };
 }
 
 /// Required object value serialized in the `fromAccount` wire field.
 class UserEventPayloadVariant160FromAccount {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `slug` wire field.
   final SdkOptional<String> slug;
-
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventPayloadVariant160FromAccountType type_;
-
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant160FromAccount(
-      {required this.id,
-      this.slug = const SdkOmitted(),
-      required this.type_,
-      this.username = const SdkOmitted()});
+  const UserEventPayloadVariant160FromAccount({required this.id, this.slug = const SdkOmitted(), required this.type_, this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant160FromAccount Function(
-      {String id,
-      SdkOptional<String> slug,
-      UserEventPayloadVariant160FromAccountType type_,
-      SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant160FromAccount Function({String id, SdkOptional<String> slug, UserEventPayloadVariant160FromAccountType type_, SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant160FromAccount _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      UserEventPayloadVariant160FromAccount(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue)
-            ? this.slug
-            : slug as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UserEventPayloadVariant160FromAccountType,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as SdkOptional<String>,
-      );
+  UserEventPayloadVariant160FromAccount _copyWith({Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant160FromAccount(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant160FromAccountType,
+    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant160FromAccount.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant160FromAccount(
-        id: (json['id'] as String?)!,
-        slug: json['slug'] != null
-            ? SdkPresent((json['slug'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UserEventPayloadVariant160FromAccountType.fromJson(
-                json['type'] as String)
-            : null)!,
-        username: json['username'] != null
-            ? SdkPresent((json['username'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant160FromAccount.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant160FromAccount(
+    id: (json['id'] as String?)!,
+    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UserEventPayloadVariant160FromAccountType.fromJson(json['type'] as String) : null)!,
+    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (slug) {
-          SdkPresent<String>(value: final value) => {
-              'slug': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (username) {
-          SdkPresent<String>(value: final value) => {
-              'username': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'id': id,
+    ...switch (slug) {
+      SdkPresent<String>(value: final value) => {'slug': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (username) {
+      SdkPresent<String>(value: final value) => {'username': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `toAccount` wire field.
 class UserEventPayloadVariant160ToAccount {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `slug` wire field.
   final SdkOptional<String> slug;
-
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventPayloadVariant160ToAccountType type_;
-
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant160ToAccount(
-      {required this.id,
-      this.slug = const SdkOmitted(),
-      required this.type_,
-      this.username = const SdkOmitted()});
+  const UserEventPayloadVariant160ToAccount({required this.id, this.slug = const SdkOmitted(), required this.type_, this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant160ToAccount Function(
-      {String id,
-      SdkOptional<String> slug,
-      UserEventPayloadVariant160ToAccountType type_,
-      SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant160ToAccount Function({String id, SdkOptional<String> slug, UserEventPayloadVariant160ToAccountType type_, SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant160ToAccount _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      UserEventPayloadVariant160ToAccount(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue)
-            ? this.slug
-            : slug as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UserEventPayloadVariant160ToAccountType,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as SdkOptional<String>,
-      );
+  UserEventPayloadVariant160ToAccount _copyWith({Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant160ToAccount(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant160ToAccountType,
+    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant160ToAccount.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant160ToAccount(
-        id: (json['id'] as String?)!,
-        slug: json['slug'] != null
-            ? SdkPresent((json['slug'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UserEventPayloadVariant160ToAccountType.fromJson(
-                json['type'] as String)
-            : null)!,
-        username: json['username'] != null
-            ? SdkPresent((json['username'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant160ToAccount.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant160ToAccount(
+    id: (json['id'] as String?)!,
+    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UserEventPayloadVariant160ToAccountType.fromJson(json['type'] as String) : null)!,
+    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (slug) {
-          SdkPresent<String>(value: final value) => {
-              'slug': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (username) {
-          SdkPresent<String>(value: final value) => {
-              'username': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'id': id,
+    ...switch (slug) {
+      SdkPresent<String>(value: final value) => {'slug': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (username) {
+      SdkPresent<String>(value: final value) => {'username': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant160 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `edgeConfig` wire field.
   final UserEventPayloadVariant160EdgeConfig edgeConfig;
-
   /// Required object value serialized in the `fromAccount` wire field.
   final UserEventPayloadVariant160FromAccount fromAccount;
-
   /// Required object value serialized in the `toAccount` wire field.
   final UserEventPayloadVariant160ToAccount toAccount;
 
-  const UserEventPayloadVariant160(
-      {required this.edgeConfig,
-      required this.fromAccount,
-      required this.toAccount});
+  const UserEventPayloadVariant160({required this.edgeConfig, required this.fromAccount, required this.toAccount});
 
-  UserEventPayloadVariant160 Function(
-      {UserEventPayloadVariant160EdgeConfig edgeConfig,
-      UserEventPayloadVariant160FromAccount fromAccount,
-      UserEventPayloadVariant160ToAccount toAccount}) get copyWith => _copyWith;
+  UserEventPayloadVariant160 Function({UserEventPayloadVariant160EdgeConfig edgeConfig, UserEventPayloadVariant160FromAccount fromAccount, UserEventPayloadVariant160ToAccount toAccount}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant160 _copyWith(
-          {Object? edgeConfig = sdkOmittedValue,
-          Object? fromAccount = sdkOmittedValue,
-          Object? toAccount = sdkOmittedValue}) =>
-      UserEventPayloadVariant160(
-        edgeConfig: identical(edgeConfig, sdkOmittedValue)
-            ? this.edgeConfig
-            : edgeConfig as UserEventPayloadVariant160EdgeConfig,
-        fromAccount: identical(fromAccount, sdkOmittedValue)
-            ? this.fromAccount
-            : fromAccount as UserEventPayloadVariant160FromAccount,
-        toAccount: identical(toAccount, sdkOmittedValue)
-            ? this.toAccount
-            : toAccount as UserEventPayloadVariant160ToAccount,
-      );
+  UserEventPayloadVariant160 _copyWith({Object? edgeConfig = sdkOmittedValue, Object? fromAccount = sdkOmittedValue, Object? toAccount = sdkOmittedValue}) => UserEventPayloadVariant160(
+    edgeConfig: identical(edgeConfig, sdkOmittedValue) ? this.edgeConfig : edgeConfig as UserEventPayloadVariant160EdgeConfig,
+    fromAccount: identical(fromAccount, sdkOmittedValue) ? this.fromAccount : fromAccount as UserEventPayloadVariant160FromAccount,
+    toAccount: identical(toAccount, sdkOmittedValue) ? this.toAccount : toAccount as UserEventPayloadVariant160ToAccount,
+  );
 
-  factory UserEventPayloadVariant160.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant160(
-        edgeConfig: (json['edgeConfig'] != null
-            ? UserEventPayloadVariant160EdgeConfig.fromJson(
-                json['edgeConfig'] as Map<String, dynamic>)
-            : null)!,
-        fromAccount: (json['fromAccount'] != null
-            ? UserEventPayloadVariant160FromAccount.fromJson(
-                json['fromAccount'] as Map<String, dynamic>)
-            : null)!,
-        toAccount: (json['toAccount'] != null
-            ? UserEventPayloadVariant160ToAccount.fromJson(
-                json['toAccount'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant160.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant160(
+    edgeConfig: (json['edgeConfig'] != null ? UserEventPayloadVariant160EdgeConfig.fromJson(json['edgeConfig'] as Map<String, dynamic>) : null)!,
+    fromAccount: (json['fromAccount'] != null ? UserEventPayloadVariant160FromAccount.fromJson(json['fromAccount'] as Map<String, dynamic>) : null)!,
+    toAccount: (json['toAccount'] != null ? UserEventPayloadVariant160ToAccount.fromJson(json['toAccount'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'edgeConfig': edgeConfig.toJson(),
-        'fromAccount': fromAccount.toJson(),
-        'toAccount': toAccount.toJson(),
-      };
+    'edgeConfig': edgeConfig.toJson(),
+    'fromAccount': fromAccount.toJson(),
+    'toAccount': toAccount.toJson(),
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant161 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `edgeConfigId` wire field.
   final String edgeConfigId;
-
   /// Required `string` value serialized in the `edgeConfigSlug` wire field.
   final String edgeConfigSlug;
-
   /// Required `string` value serialized in the `edgeConfigTokenId` wire field.
   final String edgeConfigTokenId;
-
   /// Required `string` value serialized in the `label` wire field.
   final String label;
 
-  const UserEventPayloadVariant161(
-      {required this.edgeConfigId,
-      required this.edgeConfigSlug,
-      required this.edgeConfigTokenId,
-      required this.label});
+  const UserEventPayloadVariant161({required this.edgeConfigId, required this.edgeConfigSlug, required this.edgeConfigTokenId, required this.label});
 
-  UserEventPayloadVariant161 Function(
-      {String edgeConfigId,
-      String edgeConfigSlug,
-      String edgeConfigTokenId,
-      String label}) get copyWith => _copyWith;
+  UserEventPayloadVariant161 Function({String edgeConfigId, String edgeConfigSlug, String edgeConfigTokenId, String label}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant161 _copyWith(
-          {Object? edgeConfigId = sdkOmittedValue,
-          Object? edgeConfigSlug = sdkOmittedValue,
-          Object? edgeConfigTokenId = sdkOmittedValue,
-          Object? label = sdkOmittedValue}) =>
-      UserEventPayloadVariant161(
-        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-            ? this.edgeConfigId
-            : edgeConfigId as String,
-        edgeConfigSlug: identical(edgeConfigSlug, sdkOmittedValue)
-            ? this.edgeConfigSlug
-            : edgeConfigSlug as String,
-        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
-            ? this.edgeConfigTokenId
-            : edgeConfigTokenId as String,
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-      );
+  UserEventPayloadVariant161 _copyWith({Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigSlug = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? label = sdkOmittedValue}) => UserEventPayloadVariant161(
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as String,
+    edgeConfigSlug: identical(edgeConfigSlug, sdkOmittedValue) ? this.edgeConfigSlug : edgeConfigSlug as String,
+    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as String,
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+  );
 
-  factory UserEventPayloadVariant161.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant161(
-        edgeConfigId: (json['edgeConfigId'] as String?)!,
-        edgeConfigSlug: (json['edgeConfigSlug'] as String?)!,
-        edgeConfigTokenId: (json['edgeConfigTokenId'] as String?)!,
-        label: (json['label'] as String?)!,
-      );
+  factory UserEventPayloadVariant161.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant161(
+    edgeConfigId: (json['edgeConfigId'] as String?)!,
+    edgeConfigSlug: (json['edgeConfigSlug'] as String?)!,
+    edgeConfigTokenId: (json['edgeConfigTokenId'] as String?)!,
+    label: (json['label'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'edgeConfigId': edgeConfigId,
-        'edgeConfigSlug': edgeConfigSlug,
-        'edgeConfigTokenId': edgeConfigTokenId,
-        'label': label,
-      };
+    'edgeConfigId': edgeConfigId,
+    'edgeConfigSlug': edgeConfigSlug,
+    'edgeConfigTokenId': edgeConfigTokenId,
+    'label': label,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant162 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `edgeConfigId` wire field.
   final String edgeConfigId;
-
   /// Required `string` value serialized in the `edgeConfigSlug` wire field.
   final String edgeConfigSlug;
-
   /// ids of deleted tokens
   final List<String> edgeConfigTokenIds;
 
-  const UserEventPayloadVariant162(
-      {required this.edgeConfigId,
-      required this.edgeConfigSlug,
-      required this.edgeConfigTokenIds});
+  const UserEventPayloadVariant162({required this.edgeConfigId, required this.edgeConfigSlug, required this.edgeConfigTokenIds});
 
-  UserEventPayloadVariant162 Function(
-      {String edgeConfigId,
-      String edgeConfigSlug,
-      List<String> edgeConfigTokenIds}) get copyWith => _copyWith;
+  UserEventPayloadVariant162 Function({String edgeConfigId, String edgeConfigSlug, List<String> edgeConfigTokenIds}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant162 _copyWith(
-          {Object? edgeConfigId = sdkOmittedValue,
-          Object? edgeConfigSlug = sdkOmittedValue,
-          Object? edgeConfigTokenIds = sdkOmittedValue}) =>
-      UserEventPayloadVariant162(
-        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-            ? this.edgeConfigId
-            : edgeConfigId as String,
-        edgeConfigSlug: identical(edgeConfigSlug, sdkOmittedValue)
-            ? this.edgeConfigSlug
-            : edgeConfigSlug as String,
-        edgeConfigTokenIds: identical(edgeConfigTokenIds, sdkOmittedValue)
-            ? this.edgeConfigTokenIds
-            : edgeConfigTokenIds as List<String>,
-      );
+  UserEventPayloadVariant162 _copyWith({Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigSlug = sdkOmittedValue, Object? edgeConfigTokenIds = sdkOmittedValue}) => UserEventPayloadVariant162(
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as String,
+    edgeConfigSlug: identical(edgeConfigSlug, sdkOmittedValue) ? this.edgeConfigSlug : edgeConfigSlug as String,
+    edgeConfigTokenIds: identical(edgeConfigTokenIds, sdkOmittedValue) ? this.edgeConfigTokenIds : edgeConfigTokenIds as List<String>,
+  );
 
-  factory UserEventPayloadVariant162.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant162(
-        edgeConfigId: (json['edgeConfigId'] as String?)!,
-        edgeConfigSlug: (json['edgeConfigSlug'] as String?)!,
-        edgeConfigTokenIds: ((json['edgeConfigTokenIds'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-      );
+  factory UserEventPayloadVariant162.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant162(
+    edgeConfigId: (json['edgeConfigId'] as String?)!,
+    edgeConfigSlug: (json['edgeConfigSlug'] as String?)!,
+    edgeConfigTokenIds: ((json['edgeConfigTokenIds'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'edgeConfigId': edgeConfigId,
-        'edgeConfigSlug': edgeConfigSlug,
-        'edgeConfigTokenIds': edgeConfigTokenIds,
-      };
+    'edgeConfigId': edgeConfigId,
+    'edgeConfigSlug': edgeConfigSlug,
+    'edgeConfigTokenIds': edgeConfigTokenIds,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant163 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `email` wire field.
   final String email;
-
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant163({required this.email, required this.name});
 
-  UserEventPayloadVariant163 Function({String email, String name})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant163 Function({String email, String name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant163 _copyWith(
-          {Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
-      UserEventPayloadVariant163(
-        email: identical(email, sdkOmittedValue) ? this.email : email as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  UserEventPayloadVariant163 _copyWith({Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant163(
+    email: identical(email, sdkOmittedValue) ? this.email : email as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory UserEventPayloadVariant163.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant163(
-        email: (json['email'] as String?)!,
-        name: (json['name'] as String?)!,
-      );
+  factory UserEventPayloadVariant163.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant163(
+    email: (json['email'] as String?)!,
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'email': email,
-        'name': name,
-      };
+    'email': email,
+    'name': name,
+  };
 }

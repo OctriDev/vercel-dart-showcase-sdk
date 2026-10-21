@@ -6,375 +6,269 @@ part of 'inline.dart';
 // Inline operation models
 /// The type of this cosmos doc instance, if blank, assume secret.
 final class ListSharedEnvVariableResponseDataItemType {
+
   final String value;
 
   const ListSharedEnvVariableResponseDataItemType._(this.value);
 
-  factory ListSharedEnvVariableResponseDataItemType.fromJson(String value) =>
-      ListSharedEnvVariableResponseDataItemType._(value);
+  factory ListSharedEnvVariableResponseDataItemType.fromJson(String value) => ListSharedEnvVariableResponseDataItemType._(value);
 
-  static const encrypted =
-      ListSharedEnvVariableResponseDataItemType._('encrypted');
+  static const encrypted = ListSharedEnvVariableResponseDataItemType._('encrypted');
   static const plain = ListSharedEnvVariableResponseDataItemType._('plain');
-  static const sensitive =
-      ListSharedEnvVariableResponseDataItemType._('sensitive');
+  static const sensitive = ListSharedEnvVariableResponseDataItemType._('sensitive');
   static const system = ListSharedEnvVariableResponseDataItemType._('system');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListSharedEnvVariableResponseDataItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListSharedEnvVariableResponseDataItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem {
+
   final String value;
 
   const UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._(this.value);
 
-  factory UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem.fromJson(
-          String value) =>
-      UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._(value);
+  factory UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem.fromJson(String value) => UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._(value);
 
-  static const production =
-      UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._('production');
-  static const preview =
-      UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._('preview');
-  static const development =
-      UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._('development');
+  static const production = UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._('production');
+  static const preview = UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._('preview');
+  static const development = UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem._('development');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The new type of the Shared Environment Variable
 final class UpdateSharedEnvVariableRequestBodyUpdatesValueType {
+
   final String value;
 
   const UpdateSharedEnvVariableRequestBodyUpdatesValueType._(this.value);
 
-  factory UpdateSharedEnvVariableRequestBodyUpdatesValueType.fromJson(
-          String value) =>
-      UpdateSharedEnvVariableRequestBodyUpdatesValueType._(value);
+  factory UpdateSharedEnvVariableRequestBodyUpdatesValueType.fromJson(String value) => UpdateSharedEnvVariableRequestBodyUpdatesValueType._(value);
 
-  static const encrypted =
-      UpdateSharedEnvVariableRequestBodyUpdatesValueType._('encrypted');
-  static const sensitive =
-      UpdateSharedEnvVariableRequestBodyUpdatesValueType._('sensitive');
+  static const encrypted = UpdateSharedEnvVariableRequestBodyUpdatesValueType._('encrypted');
+  static const sensitive = UpdateSharedEnvVariableRequestBodyUpdatesValueType._('sensitive');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateSharedEnvVariableRequestBodyUpdatesValueType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableRequestBodyUpdatesValueType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item {
+
   final String value;
 
-  const UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._(
-      this.value);
+  const UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._(this.value);
 
-  factory UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item.fromJson(
-          String value) =>
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._(value);
+  factory UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item.fromJson(String value) => UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._(value);
 
-  static const development =
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._(
-          'development');
-  static const preview =
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._(
-          'preview');
-  static const production =
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._(
-          'production');
+  static const development = UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._('development');
+  static const preview = UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._('preview');
+  static const production = UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant0Item && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1 {
+
   final String value;
 
-  const UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._(
-      this.value);
+  const UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._(this.value);
 
-  factory UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1.fromJson(
-          String value) =>
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._(value);
+  factory UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1.fromJson(String value) => UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._(value);
 
-  static const development =
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._(
-          'development');
-  static const preview =
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._('preview');
-  static const production =
-      UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._(
-          'production');
+  static const development = UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._('development');
+  static const preview = UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._('preview');
+  static const production = UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableResponseFailedItemErrorTargetVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item {
+
   final String value;
 
-  const UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._(
-      this.value);
+  const UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._(this.value);
 
-  factory UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item.fromJson(
-          String value) =>
-      UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._(value);
+  factory UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item.fromJson(String value) => UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._(value);
 
-  static const development =
-      UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._(
-          'development');
-  static const preview =
-      UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._(
-          'preview');
-  static const production =
-      UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._(
-          'production');
+  static const development = UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._('development');
+  static const preview = UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._('preview');
+  static const production = UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableResponseFailedItemErrorValueVariant1Item && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// whether or not this env varible applies to custom environments
 final class UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments {
+
   final bool value;
 
-  const UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(
-      this.value);
+  const UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(this.value);
 
-  factory UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments.fromJson(
-          bool value) =>
-      UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(
-          value);
+  factory UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments.fromJson(bool value) => UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(value);
 
-  static const false_ =
-      UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(
-          false);
-  static const true_ =
-      UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(
-          true);
+  static const false_ = UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(false);
+  static const true_ = UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableResponseUpdatedItemApplyToAllCustomEnvironments && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// whether or not this env variable is decrypted
 final class UpdateSharedEnvVariableResponseUpdatedItemDecrypted {
+
   final bool value;
 
   const UpdateSharedEnvVariableResponseUpdatedItemDecrypted._(this.value);
 
-  factory UpdateSharedEnvVariableResponseUpdatedItemDecrypted.fromJson(
-          bool value) =>
-      UpdateSharedEnvVariableResponseUpdatedItemDecrypted._(value);
+  factory UpdateSharedEnvVariableResponseUpdatedItemDecrypted.fromJson(bool value) => UpdateSharedEnvVariableResponseUpdatedItemDecrypted._(value);
 
-  static const false_ =
-      UpdateSharedEnvVariableResponseUpdatedItemDecrypted._(false);
-  static const true_ =
-      UpdateSharedEnvVariableResponseUpdatedItemDecrypted._(true);
+  static const false_ = UpdateSharedEnvVariableResponseUpdatedItemDecrypted._(false);
+  static const true_ = UpdateSharedEnvVariableResponseUpdatedItemDecrypted._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateSharedEnvVariableResponseUpdatedItemDecrypted &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableResponseUpdatedItemDecrypted && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// environments this env variable targets
 final class UpdateSharedEnvVariableResponseUpdatedItemTargetItem {
+
   final String value;
 
   const UpdateSharedEnvVariableResponseUpdatedItemTargetItem._(this.value);
 
-  factory UpdateSharedEnvVariableResponseUpdatedItemTargetItem.fromJson(
-          String value) =>
-      UpdateSharedEnvVariableResponseUpdatedItemTargetItem._(value);
+  factory UpdateSharedEnvVariableResponseUpdatedItemTargetItem.fromJson(String value) => UpdateSharedEnvVariableResponseUpdatedItemTargetItem._(value);
 
-  static const development =
-      UpdateSharedEnvVariableResponseUpdatedItemTargetItem._('development');
-  static const preview =
-      UpdateSharedEnvVariableResponseUpdatedItemTargetItem._('preview');
-  static const production =
-      UpdateSharedEnvVariableResponseUpdatedItemTargetItem._('production');
+  static const development = UpdateSharedEnvVariableResponseUpdatedItemTargetItem._('development');
+  static const preview = UpdateSharedEnvVariableResponseUpdatedItemTargetItem._('preview');
+  static const production = UpdateSharedEnvVariableResponseUpdatedItemTargetItem._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateSharedEnvVariableResponseUpdatedItemTargetItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableResponseUpdatedItemTargetItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of this cosmos doc instance, if blank, assume secret.
 final class UpdateSharedEnvVariableResponseUpdatedItemType {
+
   final String value;
 
   const UpdateSharedEnvVariableResponseUpdatedItemType._(this.value);
 
-  factory UpdateSharedEnvVariableResponseUpdatedItemType.fromJson(
-          String value) =>
-      UpdateSharedEnvVariableResponseUpdatedItemType._(value);
+  factory UpdateSharedEnvVariableResponseUpdatedItemType.fromJson(String value) => UpdateSharedEnvVariableResponseUpdatedItemType._(value);
 
-  static const encrypted =
-      UpdateSharedEnvVariableResponseUpdatedItemType._('encrypted');
-  static const plain =
-      UpdateSharedEnvVariableResponseUpdatedItemType._('plain');
-  static const sensitive =
-      UpdateSharedEnvVariableResponseUpdatedItemType._('sensitive');
-  static const system =
-      UpdateSharedEnvVariableResponseUpdatedItemType._('system');
+  static const encrypted = UpdateSharedEnvVariableResponseUpdatedItemType._('encrypted');
+  static const plain = UpdateSharedEnvVariableResponseUpdatedItemType._('plain');
+  static const sensitive = UpdateSharedEnvVariableResponseUpdatedItemType._('sensitive');
+  static const system = UpdateSharedEnvVariableResponseUpdatedItemType._('system');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateSharedEnvVariableResponseUpdatedItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateSharedEnvVariableResponseUpdatedItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateSharedEnvVariableRequestBodyTargetItem {
+
   final String value;
 
   const CreateSharedEnvVariableRequestBodyTargetItem._(this.value);
 
-  factory CreateSharedEnvVariableRequestBodyTargetItem.fromJson(String value) =>
-      CreateSharedEnvVariableRequestBodyTargetItem._(value);
+  factory CreateSharedEnvVariableRequestBodyTargetItem.fromJson(String value) => CreateSharedEnvVariableRequestBodyTargetItem._(value);
 
-  static const production =
-      CreateSharedEnvVariableRequestBodyTargetItem._('production');
-  static const preview =
-      CreateSharedEnvVariableRequestBodyTargetItem._('preview');
-  static const development =
-      CreateSharedEnvVariableRequestBodyTargetItem._('development');
+  static const production = CreateSharedEnvVariableRequestBodyTargetItem._('production');
+  static const preview = CreateSharedEnvVariableRequestBodyTargetItem._('preview');
+  static const development = CreateSharedEnvVariableRequestBodyTargetItem._('development');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSharedEnvVariableRequestBodyTargetItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateSharedEnvVariableRequestBodyTargetItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of environment variable
 final class CreateSharedEnvVariableRequestBodyType {
+
   final String value;
 
   const CreateSharedEnvVariableRequestBodyType._(this.value);
 
-  factory CreateSharedEnvVariableRequestBodyType.fromJson(String value) =>
-      CreateSharedEnvVariableRequestBodyType._(value);
+  factory CreateSharedEnvVariableRequestBodyType.fromJson(String value) => CreateSharedEnvVariableRequestBodyType._(value);
 
-  static const encrypted =
-      CreateSharedEnvVariableRequestBodyType._('encrypted');
-  static const sensitive =
-      CreateSharedEnvVariableRequestBodyType._('sensitive');
+  static const encrypted = CreateSharedEnvVariableRequestBodyType._('encrypted');
+  static const sensitive = CreateSharedEnvVariableRequestBodyType._('sensitive');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSharedEnvVariableRequestBodyType && other.value == value;
+  @override bool operator ==(Object other) => other is CreateSharedEnvVariableRequestBodyType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

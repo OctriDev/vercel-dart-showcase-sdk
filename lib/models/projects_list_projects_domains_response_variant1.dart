@@ -8,46 +8,27 @@ class ListProjectsDomainsResponseVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<ListProjectsDomainsResponseVariant1DomainsItem> domains;
-
   /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
   final Pagination pagination;
 
-  const ListProjectsDomainsResponseVariant1(
-      {required this.domains, required this.pagination});
+  const ListProjectsDomainsResponseVariant1({required this.domains, required this.pagination});
 
-  ListProjectsDomainsResponseVariant1 Function(
-      {List<ListProjectsDomainsResponseVariant1DomainsItem> domains,
-      Pagination pagination}) get copyWith => _copyWith;
+  ListProjectsDomainsResponseVariant1 Function({List<ListProjectsDomainsResponseVariant1DomainsItem> domains, Pagination pagination}) get copyWith => _copyWith;
 
-  ListProjectsDomainsResponseVariant1 _copyWith(
-          {Object? domains = sdkOmittedValue,
-          Object? pagination = sdkOmittedValue}) =>
-      ListProjectsDomainsResponseVariant1(
-        domains: identical(domains, sdkOmittedValue)
-            ? this.domains
-            : domains as List<ListProjectsDomainsResponseVariant1DomainsItem>,
-        pagination: identical(pagination, sdkOmittedValue)
-            ? this.pagination
-            : pagination as Pagination,
-      );
+  ListProjectsDomainsResponseVariant1 _copyWith({Object? domains = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListProjectsDomainsResponseVariant1(
+    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as List<ListProjectsDomainsResponseVariant1DomainsItem>,
+    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Pagination,
+  );
 
-  factory ListProjectsDomainsResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsDomainsResponseVariant1(
-        domains: ((json['domains'] as List?)
-            ?.map((e) =>
-                ListProjectsDomainsResponseVariant1DomainsItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        pagination: (json['pagination'] != null
-            ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory ListProjectsDomainsResponseVariant1.fromJson(Map<String, dynamic> json) => ListProjectsDomainsResponseVariant1(
+    domains: ((json['domains'] as List?)?.map((e) => ListProjectsDomainsResponseVariant1DomainsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    pagination: (json['pagination'] != null ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'domains': domains.map((item) => item.toJson()).toList(),
-        'pagination': pagination.toJson(),
-      };
+    'domains': domains.map((item) => item.toJson()).toList(),
+    'pagination': pagination.toJson(),
+  };
 }
 
 sealed class ListProjectsDomainsResponse {
@@ -56,50 +37,24 @@ sealed class ListProjectsDomainsResponse {
   const ListProjectsDomainsResponse();
   factory ListProjectsDomainsResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = ListProjectsDomainsResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ListProjectsDomainsResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ListProjectsDomainsResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(value); } } catch (_) {}
+      try { final value = ListProjectsDomainsResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
-          ListProjectsDomainsResponseVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
-          ListProjectsDomainsResponseVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(ListProjectsDomainsResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(ListProjectsDomainsResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for ListProjectsDomainsResponse");
   }
   Object? toJson();
 }
 
-final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant0
-    extends ListProjectsDomainsResponse {
+final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant0 extends ListProjectsDomainsResponse {
   final ListProjectsDomainsResponseVariant0 value;
-  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant1
-    extends ListProjectsDomainsResponse {
+final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant1 extends ListProjectsDomainsResponse {
   final ListProjectsDomainsResponseVariant1 value;
-  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

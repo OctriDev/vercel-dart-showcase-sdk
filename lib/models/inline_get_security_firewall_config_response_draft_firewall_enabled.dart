@@ -5,416 +5,280 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetSecurityFirewallConfigResponseDraftFirewallEnabled {
+
   final bool value;
 
   const GetSecurityFirewallConfigResponseDraftFirewallEnabled._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftFirewallEnabled.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseDraftFirewallEnabled._(value);
+  factory GetSecurityFirewallConfigResponseDraftFirewallEnabled.fromJson(bool value) => GetSecurityFirewallConfigResponseDraftFirewallEnabled._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseDraftFirewallEnabled._(false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseDraftFirewallEnabled._(true);
+  static const false_ = GetSecurityFirewallConfigResponseDraftFirewallEnabled._(false);
+  static const true_ = GetSecurityFirewallConfigResponseDraftFirewallEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseDraftFirewallEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftFirewallEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftIpsItemAction {
+
   final String value;
 
   const GetSecurityFirewallConfigResponseDraftIpsItemAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftIpsItemAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseDraftIpsItemAction._(value);
+  factory GetSecurityFirewallConfigResponseDraftIpsItemAction.fromJson(String value) => GetSecurityFirewallConfigResponseDraftIpsItemAction._(value);
 
-  static const bypass =
-      GetSecurityFirewallConfigResponseDraftIpsItemAction._('bypass');
-  static const challenge =
-      GetSecurityFirewallConfigResponseDraftIpsItemAction._('challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseDraftIpsItemAction._('deny');
-  static const log =
-      GetSecurityFirewallConfigResponseDraftIpsItemAction._('log');
+  static const bypass = GetSecurityFirewallConfigResponseDraftIpsItemAction._('bypass');
+  static const challenge = GetSecurityFirewallConfigResponseDraftIpsItemAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseDraftIpsItemAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseDraftIpsItemAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseDraftIpsItemAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftIpsItemAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftLogHeadersVariant1 {
+
   final String value;
 
   const GetSecurityFirewallConfigResponseDraftLogHeadersVariant1._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftLogHeadersVariant1.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseDraftLogHeadersVariant1._(value);
+  factory GetSecurityFirewallConfigResponseDraftLogHeadersVariant1.fromJson(String value) => GetSecurityFirewallConfigResponseDraftLogHeadersVariant1._(value);
 
-  static const unknown =
-      GetSecurityFirewallConfigResponseDraftLogHeadersVariant1._('*');
+  static const unknown = GetSecurityFirewallConfigResponseDraftLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseDraftLogHeadersVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftLogHeadersVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._(value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction.fromJson(String value) => GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._(value);
 
-  static const challenge =
-      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._(
-          'challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._('deny');
-  static const log =
-      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._('log');
+  static const challenge = GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive.fromJson(bool value) => GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(true);
+  static const false_ = GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(false);
+  static const true_ = GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._(
-          value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction.fromJson(String value) => GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._(value);
 
-  static const challenge =
-      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._(
-          'challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._(
-          'deny');
-  static const log =
-      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._(
-          'log');
+  static const challenge = GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(
-          value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive.fromJson(bool value) => GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(
-          false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(
-          true);
+  static const false_ = GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(false);
+  static const true_ = GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._(value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction.fromJson(String value) => GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._(value);
 
-  static const challenge =
-      GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._(
-          'challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._('deny');
-  static const log =
-      GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._('log');
+  static const challenge = GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive.fromJson(bool value) => GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(true);
+  static const false_ = GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(false);
+  static const true_ = GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesOwaspActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._(
-          value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction.fromJson(String value) => GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._(value);
 
-  static const challenge =
-      GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._(
-          'challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._(
-          'deny');
-  static const log =
-      GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._(
-          'log');
+  static const challenge = GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(
-          value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive.fromJson(bool value) => GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(
-          false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(
-          true);
+  static const false_ = GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(false);
+  static const true_ = GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesTrafficSourcesActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._(
-          value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction.fromJson(String value) => GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._(value);
 
-  static const challenge =
-      GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._(
-          'challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._(
-          'deny');
-  static const log =
-      GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._(
-          'log');
+  static const challenge = GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(
-      this.value);
+  const GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(this.value);
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(
-          value);
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive.fromJson(bool value) => GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(
-          false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(
-          true);
+  static const false_ = GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(false);
+  static const true_ = GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseDraftManagedRulesVercelRulesetActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

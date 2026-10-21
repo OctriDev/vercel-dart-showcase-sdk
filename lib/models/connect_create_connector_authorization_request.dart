@@ -10,39 +10,24 @@ class CreateConnectorAuthorizationRequestRequestSubjectVariant0 {
   final CreateConnectorAuthorizationRequestRequestSubjectVariant0Type type_;
   final Map<String, dynamic> additionalProperties;
 
-  const CreateConnectorAuthorizationRequestRequestSubjectVariant0(
-      {required this.type_,
-      this.additionalProperties = const <String, dynamic>{}});
+  const CreateConnectorAuthorizationRequestRequestSubjectVariant0({required this.type_, this.additionalProperties = const <String, dynamic>{}});
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant0 Function(
-          {CreateConnectorAuthorizationRequestRequestSubjectVariant0Type type_})
-      get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestRequestSubjectVariant0 Function({CreateConnectorAuthorizationRequestRequestSubjectVariant0Type type_}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateConnectorAuthorizationRequestRequestSubjectVariant0Type,
-        additionalProperties: additionalProperties,
-      );
+  CreateConnectorAuthorizationRequestRequestSubjectVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => CreateConnectorAuthorizationRequestRequestSubjectVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConnectorAuthorizationRequestRequestSubjectVariant0Type,
+    additionalProperties: additionalProperties,
+  );
 
-  factory CreateConnectorAuthorizationRequestRequestSubjectVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant0(
-        type_: (json['type'] != null
-            ? CreateConnectorAuthorizationRequestRequestSubjectVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{'type'}.contains(key)),
-      );
+  factory CreateConnectorAuthorizationRequestRequestSubjectVariant0.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestRequestSubjectVariant0(
+    type_: (json['type'] != null ? CreateConnectorAuthorizationRequestRequestSubjectVariant0Type.fromJson(json['type'] as String) : null)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_.toJson(),
-      };
+    ...additionalProperties,
+    'type': type_.toJson(),
+  };
 }
 
 class CreateConnectorAuthorizationRequestRequestSubjectVariant1 {
@@ -53,69 +38,36 @@ class CreateConnectorAuthorizationRequestRequestSubjectVariant1 {
   final SdkOptional<String> issuer;
   final Map<String, dynamic> additionalProperties;
 
-  const CreateConnectorAuthorizationRequestRequestSubjectVariant1(
-      {required this.type_,
-      this.id = const SdkOmitted(),
-      this.issuer = const SdkOmitted(),
-      this.additionalProperties = const <String, dynamic>{}});
+  const CreateConnectorAuthorizationRequestRequestSubjectVariant1({required this.type_, this.id = const SdkOmitted(), this.issuer = const SdkOmitted(), this.additionalProperties = const <String, dynamic>{}});
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant1 Function(
-      {CreateConnectorAuthorizationRequestRequestSubjectVariant1Type type_,
-      SdkOptional<String> id,
-      SdkOptional<String> issuer}) get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestRequestSubjectVariant1 Function({CreateConnectorAuthorizationRequestRequestSubjectVariant1Type type_, SdkOptional<String> id, SdkOptional<String> issuer}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant1 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? issuer = sdkOmittedValue}) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant1(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateConnectorAuthorizationRequestRequestSubjectVariant1Type,
-        id: identical(id, sdkOmittedValue)
-            ? this.id
-            : id as SdkOptional<String>,
-        issuer: identical(issuer, sdkOmittedValue)
-            ? this.issuer
-            : issuer as SdkOptional<String>,
-        additionalProperties: additionalProperties,
-      );
+  CreateConnectorAuthorizationRequestRequestSubjectVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? id = sdkOmittedValue, Object? issuer = sdkOmittedValue}) => CreateConnectorAuthorizationRequestRequestSubjectVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConnectorAuthorizationRequestRequestSubjectVariant1Type,
+    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
+    issuer: identical(issuer, sdkOmittedValue) ? this.issuer : issuer as SdkOptional<String>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory CreateConnectorAuthorizationRequestRequestSubjectVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant1(
-        type_: (json['type'] != null
-            ? CreateConnectorAuthorizationRequestRequestSubjectVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        id: json['id'] != null
-            ? SdkPresent((json['id'] as String?)!)
-            : const SdkOmitted(),
-        issuer: json['issuer'] != null
-            ? SdkPresent((json['issuer'] as String?)!)
-            : const SdkOmitted(),
-        additionalProperties: Map.of(json)
-          ..removeWhere(
-              (key, _) => const <String>{'type', 'id', 'issuer'}.contains(key)),
-      );
+  factory CreateConnectorAuthorizationRequestRequestSubjectVariant1.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestRequestSubjectVariant1(
+    type_: (json['type'] != null ? CreateConnectorAuthorizationRequestRequestSubjectVariant1Type.fromJson(json['type'] as String) : null)!,
+    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
+    issuer: json['issuer'] != null ? SdkPresent((json['issuer'] as String?)!) : const SdkOmitted(),
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type', 'id', 'issuer'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_.toJson(),
-        ...switch (id) {
-          SdkPresent<String>(value: final value) => {
-              'id': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (issuer) {
-          SdkPresent<String>(value: final value) => {
-              'issuer': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...additionalProperties,
+    'type': type_.toJson(),
+    ...switch (id) {
+      SdkPresent<String>(value: final value) => {'id': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (issuer) {
+      SdkPresent<String>(value: final value) => {'issuer': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateConnectorAuthorizationRequestRequestSubjectVariant2 {
@@ -128,108 +80,48 @@ class CreateConnectorAuthorizationRequestRequestSubjectVariant2 {
   final SdkOptional<Map<String, Object?>> additionalClaims;
   final Map<String, dynamic> additionalProperties;
 
-  const CreateConnectorAuthorizationRequestRequestSubjectVariant2(
-      {required this.type_,
-      this.sub = const SdkOmitted(),
-      this.iss = const SdkOmitted(),
-      this.aud = const SdkOmitted(),
-      this.additionalClaims = const SdkOmitted(),
-      this.additionalProperties = const <String, dynamic>{}});
+  const CreateConnectorAuthorizationRequestRequestSubjectVariant2({required this.type_, this.sub = const SdkOmitted(), this.iss = const SdkOmitted(), this.aud = const SdkOmitted(), this.additionalClaims = const SdkOmitted(), this.additionalProperties = const <String, dynamic>{}});
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant2 Function(
-          {CreateConnectorAuthorizationRequestRequestSubjectVariant2Type type_,
-          SdkOptional<String> sub,
-          SdkOptional<String> iss,
-          SdkOptional<String> aud,
-          SdkOptional<Map<String, Object?>> additionalClaims})
-      get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestRequestSubjectVariant2 Function({CreateConnectorAuthorizationRequestRequestSubjectVariant2Type type_, SdkOptional<String> sub, SdkOptional<String> iss, SdkOptional<String> aud, SdkOptional<Map<String, Object?>> additionalClaims}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant2 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? sub = sdkOmittedValue,
-          Object? iss = sdkOmittedValue,
-          Object? aud = sdkOmittedValue,
-          Object? additionalClaims = sdkOmittedValue}) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant2(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateConnectorAuthorizationRequestRequestSubjectVariant2Type,
-        sub: identical(sub, sdkOmittedValue)
-            ? this.sub
-            : sub as SdkOptional<String>,
-        iss: identical(iss, sdkOmittedValue)
-            ? this.iss
-            : iss as SdkOptional<String>,
-        aud: identical(aud, sdkOmittedValue)
-            ? this.aud
-            : aud as SdkOptional<String>,
-        additionalClaims: identical(additionalClaims, sdkOmittedValue)
-            ? this.additionalClaims
-            : additionalClaims as SdkOptional<Map<String, Object?>>,
-        additionalProperties: additionalProperties,
-      );
+  CreateConnectorAuthorizationRequestRequestSubjectVariant2 _copyWith({Object? type_ = sdkOmittedValue, Object? sub = sdkOmittedValue, Object? iss = sdkOmittedValue, Object? aud = sdkOmittedValue, Object? additionalClaims = sdkOmittedValue}) => CreateConnectorAuthorizationRequestRequestSubjectVariant2(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConnectorAuthorizationRequestRequestSubjectVariant2Type,
+    sub: identical(sub, sdkOmittedValue) ? this.sub : sub as SdkOptional<String>,
+    iss: identical(iss, sdkOmittedValue) ? this.iss : iss as SdkOptional<String>,
+    aud: identical(aud, sdkOmittedValue) ? this.aud : aud as SdkOptional<String>,
+    additionalClaims: identical(additionalClaims, sdkOmittedValue) ? this.additionalClaims : additionalClaims as SdkOptional<Map<String, Object?>>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory CreateConnectorAuthorizationRequestRequestSubjectVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant2(
-        type_: (json['type'] != null
-            ? CreateConnectorAuthorizationRequestRequestSubjectVariant2Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        sub: json['sub'] != null
-            ? SdkPresent((json['sub'] as String?)!)
-            : const SdkOmitted(),
-        iss: json['iss'] != null
-            ? SdkPresent((json['iss'] as String?)!)
-            : const SdkOmitted(),
-        aud: json['aud'] != null
-            ? SdkPresent((json['aud'] as String?)!)
-            : const SdkOmitted(),
-        additionalClaims: json['additionalClaims'] != null
-            ? SdkPresent((json['additionalClaims'] == null
-                ? null
-                : Map<String, dynamic>.from(json['additionalClaims'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{
-                'type',
-                'sub',
-                'iss',
-                'aud',
-                'additionalClaims'
-              }.contains(key)),
-      );
+  factory CreateConnectorAuthorizationRequestRequestSubjectVariant2.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestRequestSubjectVariant2(
+    type_: (json['type'] != null ? CreateConnectorAuthorizationRequestRequestSubjectVariant2Type.fromJson(json['type'] as String) : null)!,
+    sub: json['sub'] != null ? SdkPresent((json['sub'] as String?)!) : const SdkOmitted(),
+    iss: json['iss'] != null ? SdkPresent((json['iss'] as String?)!) : const SdkOmitted(),
+    aud: json['aud'] != null ? SdkPresent((json['aud'] as String?)!) : const SdkOmitted(),
+    additionalClaims: json['additionalClaims'] != null ? SdkPresent((json['additionalClaims'] == null ? null : Map<String, dynamic>.from(json['additionalClaims'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type', 'sub', 'iss', 'aud', 'additionalClaims'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_.toJson(),
-        ...switch (sub) {
-          SdkPresent<String>(value: final value) => {
-              'sub': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (iss) {
-          SdkPresent<String>(value: final value) => {
-              'iss': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aud) {
-          SdkPresent<String>(value: final value) => {
-              'aud': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (additionalClaims) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'additionalClaims': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...additionalProperties,
+    'type': type_.toJson(),
+    ...switch (sub) {
+      SdkPresent<String>(value: final value) => {'sub': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (iss) {
+      SdkPresent<String>(value: final value) => {'iss': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aud) {
+      SdkPresent<String>(value: final value) => {'aud': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (additionalClaims) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'additionalClaims': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateConnectorAuthorizationRequestRequestSubjectVariant3 {
@@ -238,37 +130,24 @@ class CreateConnectorAuthorizationRequestRequestSubjectVariant3 {
   final CreateConnectorAuthorizationRequestRequestSubjectVariant3Type type_;
   final String token;
 
-  const CreateConnectorAuthorizationRequestRequestSubjectVariant3(
-      {required this.type_, required this.token});
+  const CreateConnectorAuthorizationRequestRequestSubjectVariant3({required this.type_, required this.token});
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant3 Function(
-      {CreateConnectorAuthorizationRequestRequestSubjectVariant3Type type_,
-      String token}) get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestRequestSubjectVariant3 Function({CreateConnectorAuthorizationRequestRequestSubjectVariant3Type type_, String token}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant3 _copyWith(
-          {Object? type_ = sdkOmittedValue, Object? token = sdkOmittedValue}) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant3(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateConnectorAuthorizationRequestRequestSubjectVariant3Type,
-        token: identical(token, sdkOmittedValue) ? this.token : token as String,
-      );
+  CreateConnectorAuthorizationRequestRequestSubjectVariant3 _copyWith({Object? type_ = sdkOmittedValue, Object? token = sdkOmittedValue}) => CreateConnectorAuthorizationRequestRequestSubjectVariant3(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConnectorAuthorizationRequestRequestSubjectVariant3Type,
+    token: identical(token, sdkOmittedValue) ? this.token : token as String,
+  );
 
-  factory CreateConnectorAuthorizationRequestRequestSubjectVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant3(
-        type_: (json['type'] != null
-            ? CreateConnectorAuthorizationRequestRequestSubjectVariant3Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        token: (json['token'] as String?)!,
-      );
+  factory CreateConnectorAuthorizationRequestRequestSubjectVariant3.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestRequestSubjectVariant3(
+    type_: (json['type'] != null ? CreateConnectorAuthorizationRequestRequestSubjectVariant3Type.fromJson(json['type'] as String) : null)!,
+    token: (json['token'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'token': token,
-      };
+    'type': type_.toJson(),
+    'token': token,
+  };
 }
 
 class CreateConnectorAuthorizationRequestRequestSubjectVariant4 {
@@ -277,159 +156,74 @@ class CreateConnectorAuthorizationRequestRequestSubjectVariant4 {
   final String type_;
   final Map<String, dynamic> additionalProperties;
 
-  const CreateConnectorAuthorizationRequestRequestSubjectVariant4(
-      {required this.type_,
-      this.additionalProperties = const <String, dynamic>{}});
+  const CreateConnectorAuthorizationRequestRequestSubjectVariant4({required this.type_, this.additionalProperties = const <String, dynamic>{}});
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant4 Function(
-      {String type_}) get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestRequestSubjectVariant4 Function({String type_}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestRequestSubjectVariant4 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant4(
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-        additionalProperties: additionalProperties,
-      );
+  CreateConnectorAuthorizationRequestRequestSubjectVariant4 _copyWith({Object? type_ = sdkOmittedValue}) => CreateConnectorAuthorizationRequestRequestSubjectVariant4(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    additionalProperties: additionalProperties,
+  );
 
-  factory CreateConnectorAuthorizationRequestRequestSubjectVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestRequestSubjectVariant4(
-        type_: (json['type'] as String?)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{'type'}.contains(key)),
-      );
+  factory CreateConnectorAuthorizationRequestRequestSubjectVariant4.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestRequestSubjectVariant4(
+    type_: (json['type'] as String?)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_,
-      };
+    ...additionalProperties,
+    'type': type_,
+  };
 }
 
 sealed class CreateConnectorAuthorizationRequestRequestSubject {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateConnectorAuthorizationRequestRequestSubject();
-  factory CreateConnectorAuthorizationRequestRequestSubject.fromJson(
-      Object? json) {
+  factory CreateConnectorAuthorizationRequestRequestSubject.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            CreateConnectorAuthorizationRequestRequestSubjectVariant0.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateConnectorAuthorizationRequestRequestSubjectVariant1.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateConnectorAuthorizationRequestRequestSubjectVariant2.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateConnectorAuthorizationRequestRequestSubjectVariant3.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateConnectorAuthorizationRequestRequestSubjectVariant4.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateConnectorAuthorizationRequestRequestSubjectVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0(value); } } catch (_) {}
+      try { final value = CreateConnectorAuthorizationRequestRequestSubjectVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1(value); } } catch (_) {}
+      try { final value = CreateConnectorAuthorizationRequestRequestSubjectVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2(value); } } catch (_) {}
+      try { final value = CreateConnectorAuthorizationRequestRequestSubjectVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3(value); } } catch (_) {}
+      try { final value = CreateConnectorAuthorizationRequestRequestSubjectVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4(value); } } catch (_) {}
     }
-    try {
-      return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0(
-          CreateConnectorAuthorizationRequestRequestSubjectVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1(
-          CreateConnectorAuthorizationRequestRequestSubjectVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2(
-          CreateConnectorAuthorizationRequestRequestSubjectVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3(
-          CreateConnectorAuthorizationRequestRequestSubjectVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4(
-          CreateConnectorAuthorizationRequestRequestSubjectVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateConnectorAuthorizationRequestRequestSubject");
+    try { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0(CreateConnectorAuthorizationRequestRequestSubjectVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1(CreateConnectorAuthorizationRequestRequestSubjectVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2(CreateConnectorAuthorizationRequestRequestSubjectVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3(CreateConnectorAuthorizationRequestRequestSubjectVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4(CreateConnectorAuthorizationRequestRequestSubjectVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateConnectorAuthorizationRequestRequestSubject");
   }
   Object? toJson();
 }
 
-final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0
-    extends CreateConnectorAuthorizationRequestRequestSubject {
+final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0 extends CreateConnectorAuthorizationRequestRequestSubject {
   final CreateConnectorAuthorizationRequestRequestSubjectVariant0 value;
-  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1
-    extends CreateConnectorAuthorizationRequestRequestSubject {
+final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1 extends CreateConnectorAuthorizationRequestRequestSubject {
   final CreateConnectorAuthorizationRequestRequestSubjectVariant1 value;
-  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2
-    extends CreateConnectorAuthorizationRequestRequestSubject {
+final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2 extends CreateConnectorAuthorizationRequestRequestSubject {
   final CreateConnectorAuthorizationRequestRequestSubjectVariant2 value;
-  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3
-    extends CreateConnectorAuthorizationRequestRequestSubject {
+final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3 extends CreateConnectorAuthorizationRequestRequestSubject {
   final CreateConnectorAuthorizationRequestRequestSubjectVariant3 value;
-  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4
-    extends CreateConnectorAuthorizationRequestRequestSubject {
+final class CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4 extends CreateConnectorAuthorizationRequestRequestSubject {
   final CreateConnectorAuthorizationRequestRequestSubjectVariant4 value;
-  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateConnectorAuthorizationRequestRequestSubjectCreateConnectorAuthorizationRequestRequestSubjectVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }

@@ -6,405 +6,271 @@ part of 'inline.dart';
 // Inline operation models
 /// Whether the Vercel bot should comment on PRs
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest {
+
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest.fromJson(
-          bool value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest
-          ._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest._(value);
 
-  static const false_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest
-          ._(false);
-  static const true_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest
-          ._(true);
+  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest._(false);
+  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsGitCommentsOnPullRequest && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection {
+
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection.fromJson(
-          bool value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(
-          value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(value);
 
-  static const false_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(
-          false);
-  static const true_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(
-          true);
+  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(false);
+  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsGitForkProtection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS {
+
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS.fromJson(
-          bool value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(value);
 
-  static const false_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(false);
-  static const true_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(true);
+  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(false);
+  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsGitLFS && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion {
+
   final String value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion.fromJson(
-          String value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion.fromJson(String value) => GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._(value);
 
-  static const v10X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('10.x');
-  static const v12X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('12.x');
-  static const v14X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('14.x');
-  static const v16X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('16.x');
-  static const v18X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('18.x');
-  static const v20X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('20.x');
-  static const v22X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('22.x');
-  static const v24X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('24.x');
-  static const v26X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('26.x');
-  static const v810X =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._(
-          '8.10.x');
+  static const v10X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('10.x');
+  static const v12X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('12.x');
+  static const v14X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('14.x');
+  static const v16X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('16.x');
+  static const v18X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('18.x');
+  static const v20X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('20.x');
+  static const v22X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('22.x');
+  static const v24X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('24.x');
+  static const v26X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('26.x');
+  static const v810X = GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion._('8.10.x');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsNodeVersion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink {
+
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink.fromJson(
-          bool value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink
-          ._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink._(value);
 
-  static const false_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink
-          ._(false);
-  static const true_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink
-          ._(true);
+  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink._(false);
+  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsSkipGitConnectDuringLink && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory {
+
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory.fromJson(
-          bool value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory
-          ._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory._(value);
 
-  static const false_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory
-          ._(false);
-  static const true_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory
-          ._(true);
+  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory._(false);
+  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsSourceFilesOutsideRootDirectory && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData {
+
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData.fromJson(
-          bool value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData
-          ._(value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData._(value);
 
-  static const false_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData
-          ._(false);
-  static const true_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData
-          ._(true);
+  static const false_ = GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData._(false);
+  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsSpeedInsightsHasData && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData {
+
   final bool value;
 
-  const GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData._(
-      this.value);
+  const GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData.fromJson(
-          bool value) =>
-      GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData._(
-          value);
+  factory GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData.fromJson(bool value) => GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData._(value);
 
-  static const true_ =
-      GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData._(
-          true);
+  static const true_ = GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemProjectSettingsWebAnalyticsHasData && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentsResponseDeploymentsItemReadyState {
+
   final String value;
 
   const GetDeploymentsResponseDeploymentsItemReadyState._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemReadyState.fromJson(
-          String value) =>
-      GetDeploymentsResponseDeploymentsItemReadyState._(value);
+  factory GetDeploymentsResponseDeploymentsItemReadyState.fromJson(String value) => GetDeploymentsResponseDeploymentsItemReadyState._(value);
 
-  static const blocked =
-      GetDeploymentsResponseDeploymentsItemReadyState._('BLOCKED');
-  static const building =
-      GetDeploymentsResponseDeploymentsItemReadyState._('BUILDING');
-  static const canceled =
-      GetDeploymentsResponseDeploymentsItemReadyState._('CANCELED');
-  static const deleted =
-      GetDeploymentsResponseDeploymentsItemReadyState._('DELETED');
-  static const error =
-      GetDeploymentsResponseDeploymentsItemReadyState._('ERROR');
-  static const initializing =
-      GetDeploymentsResponseDeploymentsItemReadyState._('INITIALIZING');
-  static const queued =
-      GetDeploymentsResponseDeploymentsItemReadyState._('QUEUED');
-  static const ready =
-      GetDeploymentsResponseDeploymentsItemReadyState._('READY');
+  static const blocked = GetDeploymentsResponseDeploymentsItemReadyState._('BLOCKED');
+  static const building = GetDeploymentsResponseDeploymentsItemReadyState._('BUILDING');
+  static const canceled = GetDeploymentsResponseDeploymentsItemReadyState._('CANCELED');
+  static const deleted = GetDeploymentsResponseDeploymentsItemReadyState._('DELETED');
+  static const error = GetDeploymentsResponseDeploymentsItemReadyState._('ERROR');
+  static const initializing = GetDeploymentsResponseDeploymentsItemReadyState._('INITIALIZING');
+  static const queued = GetDeploymentsResponseDeploymentsItemReadyState._('QUEUED');
+  static const ready = GetDeploymentsResponseDeploymentsItemReadyState._('READY');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentsResponseDeploymentsItemReadyState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemReadyState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of gradually transitioning production traffic - PROMOTED: has seen production traffic
 final class GetDeploymentsResponseDeploymentsItemReadySubstate {
+
   final String value;
 
   const GetDeploymentsResponseDeploymentsItemReadySubstate._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemReadySubstate.fromJson(
-          String value) =>
-      GetDeploymentsResponseDeploymentsItemReadySubstate._(value);
+  factory GetDeploymentsResponseDeploymentsItemReadySubstate.fromJson(String value) => GetDeploymentsResponseDeploymentsItemReadySubstate._(value);
 
-  static const promoted =
-      GetDeploymentsResponseDeploymentsItemReadySubstate._('PROMOTED');
-  static const rolling =
-      GetDeploymentsResponseDeploymentsItemReadySubstate._('ROLLING');
-  static const staged =
-      GetDeploymentsResponseDeploymentsItemReadySubstate._('STAGED');
+  static const promoted = GetDeploymentsResponseDeploymentsItemReadySubstate._('PROMOTED');
+  static const rolling = GetDeploymentsResponseDeploymentsItemReadySubstate._('ROLLING');
+  static const staged = GetDeploymentsResponseDeploymentsItemReadySubstate._('STAGED');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentsResponseDeploymentsItemReadySubstate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemReadySubstate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The NSNB decision code for the seat block. TODO: We should consolidate block types.
 final class GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode {
+
   final String value;
 
   const GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode.fromJson(
-          String value) =>
-      GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode._(value);
+  factory GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode.fromJson(String value) => GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode._(value);
 
-  static const commitAuthorRequired =
-      GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode._(
-          'COMMIT_AUTHOR_REQUIRED');
-  static const teamAccessRequired =
-      GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode._(
-          'TEAM_ACCESS_REQUIRED');
+  static const commitAuthorRequired = GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode._('COMMIT_AUTHOR_REQUIRED');
+  static const teamAccessRequired = GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode._('TEAM_ACCESS_REQUIRED');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemSeatBlockBlockCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The git provider type associated with gitUserId.
 final class GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider {
+
   final String value;
 
   const GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._(this.value);
 
-  factory GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider.fromJson(
-          String value) =>
-      GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._(value);
+  factory GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider.fromJson(String value) => GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._(value);
 
-  static const bitbucket =
-      GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._('bitbucket');
-  static const github =
-      GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._('github');
-  static const gitlab =
-      GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._('gitlab');
+  static const bitbucket = GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._('bitbucket');
+  static const github = GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._('github');
+  static const gitlab = GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentsResponseDeploymentsItemSeatBlockGitProvider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

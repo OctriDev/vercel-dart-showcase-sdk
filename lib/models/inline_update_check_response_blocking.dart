@@ -5,36 +5,33 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UpdateCheckResponseBlocking {
+
   final bool value;
 
   const UpdateCheckResponseBlocking._(this.value);
 
-  factory UpdateCheckResponseBlocking.fromJson(bool value) =>
-      UpdateCheckResponseBlocking._(value);
+  factory UpdateCheckResponseBlocking.fromJson(bool value) => UpdateCheckResponseBlocking._(value);
 
   static const false_ = UpdateCheckResponseBlocking._(false);
   static const true_ = UpdateCheckResponseBlocking._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseBlocking && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseBlocking && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseConclusion {
+
   final String value;
 
   const UpdateCheckResponseConclusion._(this.value);
 
-  factory UpdateCheckResponseConclusion.fromJson(String value) =>
-      UpdateCheckResponseConclusion._(value);
+  factory UpdateCheckResponseConclusion.fromJson(String value) => UpdateCheckResponseConclusion._(value);
 
   static const canceled = UpdateCheckResponseConclusion._('canceled');
   static const failed = UpdateCheckResponseConclusion._('failed');
@@ -45,176 +42,142 @@ final class UpdateCheckResponseConclusion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseConclusion && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseConclusion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseOutputMetricsCLSSource {
+
   final String value;
 
   const UpdateCheckResponseOutputMetricsCLSSource._(this.value);
 
-  factory UpdateCheckResponseOutputMetricsCLSSource.fromJson(String value) =>
-      UpdateCheckResponseOutputMetricsCLSSource._(value);
+  factory UpdateCheckResponseOutputMetricsCLSSource.fromJson(String value) => UpdateCheckResponseOutputMetricsCLSSource._(value);
 
-  static const webVitals =
-      UpdateCheckResponseOutputMetricsCLSSource._('web-vitals');
+  static const webVitals = UpdateCheckResponseOutputMetricsCLSSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseOutputMetricsCLSSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseOutputMetricsCLSSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseOutputMetricsFCPSource {
+
   final String value;
 
   const UpdateCheckResponseOutputMetricsFCPSource._(this.value);
 
-  factory UpdateCheckResponseOutputMetricsFCPSource.fromJson(String value) =>
-      UpdateCheckResponseOutputMetricsFCPSource._(value);
+  factory UpdateCheckResponseOutputMetricsFCPSource.fromJson(String value) => UpdateCheckResponseOutputMetricsFCPSource._(value);
 
-  static const webVitals =
-      UpdateCheckResponseOutputMetricsFCPSource._('web-vitals');
+  static const webVitals = UpdateCheckResponseOutputMetricsFCPSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseOutputMetricsFCPSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseOutputMetricsFCPSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseOutputMetricsLCPSource {
+
   final String value;
 
   const UpdateCheckResponseOutputMetricsLCPSource._(this.value);
 
-  factory UpdateCheckResponseOutputMetricsLCPSource.fromJson(String value) =>
-      UpdateCheckResponseOutputMetricsLCPSource._(value);
+  factory UpdateCheckResponseOutputMetricsLCPSource.fromJson(String value) => UpdateCheckResponseOutputMetricsLCPSource._(value);
 
-  static const webVitals =
-      UpdateCheckResponseOutputMetricsLCPSource._('web-vitals');
+  static const webVitals = UpdateCheckResponseOutputMetricsLCPSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseOutputMetricsLCPSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseOutputMetricsLCPSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseOutputMetricsTBTSource {
+
   final String value;
 
   const UpdateCheckResponseOutputMetricsTBTSource._(this.value);
 
-  factory UpdateCheckResponseOutputMetricsTBTSource.fromJson(String value) =>
-      UpdateCheckResponseOutputMetricsTBTSource._(value);
+  factory UpdateCheckResponseOutputMetricsTBTSource.fromJson(String value) => UpdateCheckResponseOutputMetricsTBTSource._(value);
 
-  static const webVitals =
-      UpdateCheckResponseOutputMetricsTBTSource._('web-vitals');
+  static const webVitals = UpdateCheckResponseOutputMetricsTBTSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseOutputMetricsTBTSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseOutputMetricsTBTSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource {
+
   final String value;
 
-  const UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource._(
-      this.value);
+  const UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource._(this.value);
 
-  factory UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource.fromJson(
-          String value) =>
-      UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource._(value);
+  factory UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource.fromJson(String value) => UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource._(value);
 
-  static const webVitals =
-      UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource._(
-          'web-vitals');
+  static const webVitals = UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseRerequestable {
+
   final bool value;
 
   const UpdateCheckResponseRerequestable._(this.value);
 
-  factory UpdateCheckResponseRerequestable.fromJson(bool value) =>
-      UpdateCheckResponseRerequestable._(value);
+  factory UpdateCheckResponseRerequestable.fromJson(bool value) => UpdateCheckResponseRerequestable._(value);
 
   static const false_ = UpdateCheckResponseRerequestable._(false);
   static const true_ = UpdateCheckResponseRerequestable._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseRerequestable && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseRerequestable && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateCheckResponseStatus {
+
   final String value;
 
   const UpdateCheckResponseStatus._(this.value);
 
-  factory UpdateCheckResponseStatus.fromJson(String value) =>
-      UpdateCheckResponseStatus._(value);
+  factory UpdateCheckResponseStatus.fromJson(String value) => UpdateCheckResponseStatus._(value);
 
   static const completed = UpdateCheckResponseStatus._('completed');
   static const registered = UpdateCheckResponseStatus._('registered');
@@ -222,123 +185,89 @@ final class UpdateCheckResponseStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateCheckResponseStatus && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateCheckResponseStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateIntegrationDeploymentActionRequestBodyStatus {
+
   final String value;
 
   const UpdateIntegrationDeploymentActionRequestBodyStatus._(this.value);
 
-  factory UpdateIntegrationDeploymentActionRequestBodyStatus.fromJson(
-          String value) =>
-      UpdateIntegrationDeploymentActionRequestBodyStatus._(value);
+  factory UpdateIntegrationDeploymentActionRequestBodyStatus.fromJson(String value) => UpdateIntegrationDeploymentActionRequestBodyStatus._(value);
 
-  static const running =
-      UpdateIntegrationDeploymentActionRequestBodyStatus._('running');
-  static const succeeded =
-      UpdateIntegrationDeploymentActionRequestBodyStatus._('succeeded');
-  static const failed =
-      UpdateIntegrationDeploymentActionRequestBodyStatus._('failed');
+  static const running = UpdateIntegrationDeploymentActionRequestBodyStatus._('running');
+  static const succeeded = UpdateIntegrationDeploymentActionRequestBodyStatus._('succeeded');
+  static const failed = UpdateIntegrationDeploymentActionRequestBodyStatus._('failed');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateIntegrationDeploymentActionRequestBodyStatus &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateIntegrationDeploymentActionRequestBodyStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode {
+
   final double value;
 
-  const GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(
-      this.value);
+  const GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(this.value);
 
-  factory GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode.fromJson(
-          double value) =>
-      GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(
-          value);
+  factory GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode.fromJson(double value) => GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(value);
 
-  static const v301 =
-      GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(
-          301);
-  static const v302 =
-      GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(
-          302);
-  static const v307 =
-      GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(
-          307);
-  static const v308 =
-      GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(
-          308);
+  static const v301 = GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(301);
+  static const v302 = GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(302);
+  static const v307 = GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(307);
+  static const v308 = GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode._(308);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainProjectDomainsResponseProjectDomainsItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class GetDomainProjectDomainsResponseProjectDomainsItemVerified {
+
   final bool value;
 
   const GetDomainProjectDomainsResponseProjectDomainsItemVerified._(this.value);
 
-  factory GetDomainProjectDomainsResponseProjectDomainsItemVerified.fromJson(
-          bool value) =>
-      GetDomainProjectDomainsResponseProjectDomainsItemVerified._(value);
+  factory GetDomainProjectDomainsResponseProjectDomainsItemVerified.fromJson(bool value) => GetDomainProjectDomainsResponseProjectDomainsItemVerified._(value);
 
-  static const false_ =
-      GetDomainProjectDomainsResponseProjectDomainsItemVerified._(false);
-  static const true_ =
-      GetDomainProjectDomainsResponseProjectDomainsItemVerified._(true);
+  static const false_ = GetDomainProjectDomainsResponseProjectDomainsItemVerified._(false);
+  static const true_ = GetDomainProjectDomainsResponseProjectDomainsItemVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainProjectDomainsResponseProjectDomainsItemVerified &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainProjectDomainsResponseProjectDomainsItemVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of the DNS record
 final class UpdateRecordRequestBodyType {
+
   final String value;
 
   const UpdateRecordRequestBodyType._(this.value);
 
-  factory UpdateRecordRequestBodyType.fromJson(String value) =>
-      UpdateRecordRequestBodyType._(value);
+  factory UpdateRecordRequestBodyType.fromJson(String value) => UpdateRecordRequestBodyType._(value);
 
   static const a = UpdateRecordRequestBodyType._('A');
   static const aaaa = UpdateRecordRequestBodyType._('AAAA');
@@ -353,13 +282,10 @@ final class UpdateRecordRequestBodyType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateRecordRequestBodyType && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateRecordRequestBodyType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

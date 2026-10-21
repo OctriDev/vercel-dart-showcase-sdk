@@ -7,604 +7,282 @@ part of 'inline.dart';
 class CreateSandboxesV3RequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Typed representation of the `CreateSandboxesV3RequestNetworkPolicy` API schema.
   final SdkOptional<CreateSandboxesV3RequestNetworkPolicy> networkPolicy;
-
   /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.
   final SdkOptional<CreateSandboxesV3RequestBodyArchitecture> architecture;
-
   /// Resources to define the VM
   final SdkOptional<CreateSandboxesV3RequestBodyResources> resources;
-
   /// The source from which to initialize the sandbox filesystem. Can be a Git repository, a tarball URL, or an existing snapshot.
   final SdkOptional<CreateSandboxesV3RequestSource> source;
-
   /// The target project slug or ID in which the sandbox will be assigned to.
   final SdkOptional<String> projectId;
-
   /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.
   final SdkOptional<List<int>> ports;
-
   /// Image to use for the sandbox.
   final SdkOptional<String> image;
-
   /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.
   final SdkOptional<int> timeout;
-
   /// Default environment variables for the sandbox. These are inherited by all commands unless overridden.
   final SdkOptional<Map<String, String>> env;
-
   /// List of drives to mount to the sandbox at the provided path.
-  final SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>>
-      mounts;
-
+  final SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>> mounts;
   /// The Vercel region in which to create the sandbox.
   final SdkOptional<CreateSandboxesV3RequestBodyRegion> region;
-
   /// The regions the sandbox falls back to when it cannot be created in `region`.
-  final SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>
-      failoverRegions;
-
+  final SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>> failoverRegions;
   /// The Connect network id for the target Secure Compute private network.
   final SdkOptional<String> networkId;
-
   /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).
   final SdkOptional<String> name;
-
   /// Whether the sandbox persists its state across restarts via automatic snapshots. Defaults to true.
   final SdkOptional<bool> persistent;
-
   /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.
   final SdkOptional<int?> snapshotExpiration;
-
   /// Protect the N most recent snapshots with different expiration/deletion behavior.
-  final SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots>
-      keepLastSnapshots;
-
+  final SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots> keepLastSnapshots;
   /// Key-value tags to associate with the sandbox. Maximum 5 tags.
   final SdkOptional<Map<String, String>> tags;
 
-  const CreateSandboxesV3RequestBody(
-      {this.networkPolicy = const SdkOmitted(),
-      this.architecture = const SdkOmitted(),
-      this.resources = const SdkOmitted(),
-      this.source = const SdkOmitted(),
-      this.projectId = const SdkOmitted(),
-      this.ports = const SdkOmitted(),
-      this.image = const SdkOmitted(),
-      this.timeout = const SdkOmitted(),
-      this.env = const SdkOmitted(),
-      this.mounts = const SdkOmitted(),
-      this.region = const SdkOmitted(),
-      this.failoverRegions = const SdkOmitted(),
-      this.networkId = const SdkOmitted(),
-      this.name = const SdkOmitted(),
-      this.persistent = const SdkOmitted(),
-      this.snapshotExpiration = const SdkOmitted(),
-      this.keepLastSnapshots = const SdkOmitted(),
-      this.tags = const SdkOmitted()});
+  const CreateSandboxesV3RequestBody({this.networkPolicy = const SdkOmitted(), this.architecture = const SdkOmitted(), this.resources = const SdkOmitted(), this.source = const SdkOmitted(), this.projectId = const SdkOmitted(), this.ports = const SdkOmitted(), this.image = const SdkOmitted(), this.timeout = const SdkOmitted(), this.env = const SdkOmitted(), this.mounts = const SdkOmitted(), this.region = const SdkOmitted(), this.failoverRegions = const SdkOmitted(), this.networkId = const SdkOmitted(), this.name = const SdkOmitted(), this.persistent = const SdkOmitted(), this.snapshotExpiration = const SdkOmitted(), this.keepLastSnapshots = const SdkOmitted(), this.tags = const SdkOmitted()});
 
-  CreateSandboxesV3RequestBody Function(
-      {SdkOptional<CreateSandboxesV3RequestNetworkPolicy> networkPolicy,
-      SdkOptional<CreateSandboxesV3RequestBodyArchitecture> architecture,
-      SdkOptional<CreateSandboxesV3RequestBodyResources> resources,
-      SdkOptional<CreateSandboxesV3RequestSource> source,
-      SdkOptional<String> projectId,
-      SdkOptional<List<int>> ports,
-      SdkOptional<String> image,
-      SdkOptional<int> timeout,
-      SdkOptional<Map<String, String>> env,
-      SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>> mounts,
-      SdkOptional<CreateSandboxesV3RequestBodyRegion> region,
-      SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>
-          failoverRegions,
-      SdkOptional<String> networkId,
-      SdkOptional<String> name,
-      SdkOptional<bool> persistent,
-      SdkOptional<int?> snapshotExpiration,
-      SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots>
-          keepLastSnapshots,
-      SdkOptional<Map<String, String>> tags}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestBody Function({SdkOptional<CreateSandboxesV3RequestNetworkPolicy> networkPolicy, SdkOptional<CreateSandboxesV3RequestBodyArchitecture> architecture, SdkOptional<CreateSandboxesV3RequestBodyResources> resources, SdkOptional<CreateSandboxesV3RequestSource> source, SdkOptional<String> projectId, SdkOptional<List<int>> ports, SdkOptional<String> image, SdkOptional<int> timeout, SdkOptional<Map<String, String>> env, SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>> mounts, SdkOptional<CreateSandboxesV3RequestBodyRegion> region, SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>> failoverRegions, SdkOptional<String> networkId, SdkOptional<String> name, SdkOptional<bool> persistent, SdkOptional<int?> snapshotExpiration, SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots> keepLastSnapshots, SdkOptional<Map<String, String>> tags}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestBody _copyWith(
-          {Object? networkPolicy = sdkOmittedValue,
-          Object? architecture = sdkOmittedValue,
-          Object? resources = sdkOmittedValue,
-          Object? source = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? ports = sdkOmittedValue,
-          Object? image = sdkOmittedValue,
-          Object? timeout = sdkOmittedValue,
-          Object? env = sdkOmittedValue,
-          Object? mounts = sdkOmittedValue,
-          Object? region = sdkOmittedValue,
-          Object? failoverRegions = sdkOmittedValue,
-          Object? networkId = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? persistent = sdkOmittedValue,
-          Object? snapshotExpiration = sdkOmittedValue,
-          Object? keepLastSnapshots = sdkOmittedValue,
-          Object? tags = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestBody(
-        networkPolicy: identical(networkPolicy, sdkOmittedValue)
-            ? this.networkPolicy
-            : networkPolicy
-                as SdkOptional<CreateSandboxesV3RequestNetworkPolicy>,
-        architecture: identical(architecture, sdkOmittedValue)
-            ? this.architecture
-            : architecture
-                as SdkOptional<CreateSandboxesV3RequestBodyArchitecture>,
-        resources: identical(resources, sdkOmittedValue)
-            ? this.resources
-            : resources as SdkOptional<CreateSandboxesV3RequestBodyResources>,
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source as SdkOptional<CreateSandboxesV3RequestSource>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        ports: identical(ports, sdkOmittedValue)
-            ? this.ports
-            : ports as SdkOptional<List<int>>,
-        image: identical(image, sdkOmittedValue)
-            ? this.image
-            : image as SdkOptional<String>,
-        timeout: identical(timeout, sdkOmittedValue)
-            ? this.timeout
-            : timeout as SdkOptional<int>,
-        env: identical(env, sdkOmittedValue)
-            ? this.env
-            : env as SdkOptional<Map<String, String>>,
-        mounts: identical(mounts, sdkOmittedValue)
-            ? this.mounts
-            : mounts as SdkOptional<
-                Map<String, CreateSandboxesV3RequestBodyMountsValue>>,
-        region: identical(region, sdkOmittedValue)
-            ? this.region
-            : region as SdkOptional<CreateSandboxesV3RequestBodyRegion>,
-        failoverRegions: identical(failoverRegions, sdkOmittedValue)
-            ? this.failoverRegions
-            : failoverRegions as SdkOptional<
-                List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>,
-        networkId: identical(networkId, sdkOmittedValue)
-            ? this.networkId
-            : networkId as SdkOptional<String>,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        persistent: identical(persistent, sdkOmittedValue)
-            ? this.persistent
-            : persistent as SdkOptional<bool>,
-        snapshotExpiration: identical(snapshotExpiration, sdkOmittedValue)
-            ? this.snapshotExpiration
-            : snapshotExpiration as SdkOptional<int?>,
-        keepLastSnapshots: identical(keepLastSnapshots, sdkOmittedValue)
-            ? this.keepLastSnapshots
-            : keepLastSnapshots
-                as SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots>,
-        tags: identical(tags, sdkOmittedValue)
-            ? this.tags
-            : tags as SdkOptional<Map<String, String>>,
-      );
+  CreateSandboxesV3RequestBody _copyWith({Object? networkPolicy = sdkOmittedValue, Object? architecture = sdkOmittedValue, Object? resources = sdkOmittedValue, Object? source = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? ports = sdkOmittedValue, Object? image = sdkOmittedValue, Object? timeout = sdkOmittedValue, Object? env = sdkOmittedValue, Object? mounts = sdkOmittedValue, Object? region = sdkOmittedValue, Object? failoverRegions = sdkOmittedValue, Object? networkId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? persistent = sdkOmittedValue, Object? snapshotExpiration = sdkOmittedValue, Object? keepLastSnapshots = sdkOmittedValue, Object? tags = sdkOmittedValue}) => CreateSandboxesV3RequestBody(
+    networkPolicy: identical(networkPolicy, sdkOmittedValue) ? this.networkPolicy : networkPolicy as SdkOptional<CreateSandboxesV3RequestNetworkPolicy>,
+    architecture: identical(architecture, sdkOmittedValue) ? this.architecture : architecture as SdkOptional<CreateSandboxesV3RequestBodyArchitecture>,
+    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as SdkOptional<CreateSandboxesV3RequestBodyResources>,
+    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<CreateSandboxesV3RequestSource>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    ports: identical(ports, sdkOmittedValue) ? this.ports : ports as SdkOptional<List<int>>,
+    image: identical(image, sdkOmittedValue) ? this.image : image as SdkOptional<String>,
+    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as SdkOptional<int>,
+    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<Map<String, String>>,
+    mounts: identical(mounts, sdkOmittedValue) ? this.mounts : mounts as SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>>,
+    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<CreateSandboxesV3RequestBodyRegion>,
+    failoverRegions: identical(failoverRegions, sdkOmittedValue) ? this.failoverRegions : failoverRegions as SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>,
+    networkId: identical(networkId, sdkOmittedValue) ? this.networkId : networkId as SdkOptional<String>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    persistent: identical(persistent, sdkOmittedValue) ? this.persistent : persistent as SdkOptional<bool>,
+    snapshotExpiration: identical(snapshotExpiration, sdkOmittedValue) ? this.snapshotExpiration : snapshotExpiration as SdkOptional<int?>,
+    keepLastSnapshots: identical(keepLastSnapshots, sdkOmittedValue) ? this.keepLastSnapshots : keepLastSnapshots as SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots>,
+    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as SdkOptional<Map<String, String>>,
+  );
 
-  factory CreateSandboxesV3RequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestBody(
-        networkPolicy: json['networkPolicy'] != null
-            ? SdkPresent((json['networkPolicy'] != null
-                ? CreateSandboxesV3RequestNetworkPolicy.fromJson(
-                    json['networkPolicy'])
-                : null)!)
-            : const SdkOmitted(),
-        architecture: json['architecture'] != null
-            ? SdkPresent((json['architecture'] != null
-                ? CreateSandboxesV3RequestBodyArchitecture.fromJson(
-                    json['architecture'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        resources: json['resources'] != null
-            ? SdkPresent((json['resources'] != null
-                ? CreateSandboxesV3RequestBodyResources.fromJson(
-                    json['resources'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        source: json['source'] != null
-            ? SdkPresent((json['source'] != null
-                ? CreateSandboxesV3RequestSource.fromJson(json['source'])
-                : null)!)
-            : const SdkOmitted(),
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        ports: json['ports'] != null
-            ? SdkPresent(((json['ports'] as List?)
-                ?.map((e) => (e as num).toInt())
-                .toList())!)
-            : const SdkOmitted(),
-        image: json['image'] != null
-            ? SdkPresent((json['image'] as String?)!)
-            : const SdkOmitted(),
-        timeout: json['timeout'] != null
-            ? SdkPresent(((json['timeout'] as num?)?.toInt())!)
-            : const SdkOmitted(),
-        env: json['env'] != null
-            ? SdkPresent((json['env'] == null
-                ? null
-                : Map<String, dynamic>.from(json['env'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        mounts: json['mounts'] != null
-            ? SdkPresent((json['mounts'] == null
-                ? null
-                : Map<String, dynamic>.from(json['mounts'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        CreateSandboxesV3RequestBodyMountsValue.fromJson(
-                            value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-        region: json['region'] != null
-            ? SdkPresent((json['region'] != null
-                ? CreateSandboxesV3RequestBodyRegion.fromJson(
-                    json['region'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        failoverRegions: json['failoverRegions'] != null
-            ? SdkPresent(((json['failoverRegions'] as List?)
-                ?.map((e) =>
-                    CreateSandboxesV3RequestBodyFailoverRegionsItem.fromJson(
-                        e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        networkId: json['networkId'] != null
-            ? SdkPresent((json['networkId'] as String?)!)
-            : const SdkOmitted(),
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        persistent: json['persistent'] != null
-            ? SdkPresent((json['persistent'] as bool?)!)
-            : const SdkOmitted(),
-        snapshotExpiration: json.containsKey('snapshotExpiration')
-            ? SdkPresent((json['snapshotExpiration'] as num?)?.toInt())
-            : const SdkOmitted(),
-        keepLastSnapshots: json['keepLastSnapshots'] != null
-            ? SdkPresent((json['keepLastSnapshots'] != null
-                ? CreateSandboxesV3RequestBodyKeepLastSnapshots.fromJson(
-                    json['keepLastSnapshots'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        tags: json['tags'] != null
-            ? SdkPresent((json['tags'] == null
-                ? null
-                : Map<String, dynamic>.from(json['tags'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV3RequestBody.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestBody(
+    networkPolicy: json['networkPolicy'] != null ? SdkPresent((json['networkPolicy'] != null ? CreateSandboxesV3RequestNetworkPolicy.fromJson(json['networkPolicy']) : null)!) : const SdkOmitted(),
+    architecture: json['architecture'] != null ? SdkPresent((json['architecture'] != null ? CreateSandboxesV3RequestBodyArchitecture.fromJson(json['architecture'] as String) : null)!) : const SdkOmitted(),
+    resources: json['resources'] != null ? SdkPresent((json['resources'] != null ? CreateSandboxesV3RequestBodyResources.fromJson(json['resources'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    source: json['source'] != null ? SdkPresent((json['source'] != null ? CreateSandboxesV3RequestSource.fromJson(json['source']) : null)!) : const SdkOmitted(),
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    ports: json['ports'] != null ? SdkPresent(((json['ports'] as List?)?.map((e) => (e as num).toInt()).toList())!) : const SdkOmitted(),
+    image: json['image'] != null ? SdkPresent((json['image'] as String?)!) : const SdkOmitted(),
+    timeout: json['timeout'] != null ? SdkPresent(((json['timeout'] as num?)?.toInt())!) : const SdkOmitted(),
+    env: json['env'] != null ? SdkPresent((json['env'] == null ? null : Map<String, dynamic>.from(json['env'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    mounts: json['mounts'] != null ? SdkPresent((json['mounts'] == null ? null : Map<String, dynamic>.from(json['mounts'] as Map).map((key, value) => MapEntry(key, CreateSandboxesV3RequestBodyMountsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+    region: json['region'] != null ? SdkPresent((json['region'] != null ? CreateSandboxesV3RequestBodyRegion.fromJson(json['region'] as String) : null)!) : const SdkOmitted(),
+    failoverRegions: json['failoverRegions'] != null ? SdkPresent(((json['failoverRegions'] as List?)?.map((e) => CreateSandboxesV3RequestBodyFailoverRegionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    networkId: json['networkId'] != null ? SdkPresent((json['networkId'] as String?)!) : const SdkOmitted(),
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    persistent: json['persistent'] != null ? SdkPresent((json['persistent'] as bool?)!) : const SdkOmitted(),
+    snapshotExpiration: json.containsKey('snapshotExpiration') ? SdkPresent((json['snapshotExpiration'] as num?)?.toInt()) : const SdkOmitted(),
+    keepLastSnapshots: json['keepLastSnapshots'] != null ? SdkPresent((json['keepLastSnapshots'] != null ? CreateSandboxesV3RequestBodyKeepLastSnapshots.fromJson(json['keepLastSnapshots'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    tags: json['tags'] != null ? SdkPresent((json['tags'] == null ? null : Map<String, dynamic>.from(json['tags'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (networkPolicy) {
-          SdkPresent<CreateSandboxesV3RequestNetworkPolicy>(
-            value: final value
-          ) =>
-            {
-              'networkPolicy': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (architecture) {
-          SdkPresent<CreateSandboxesV3RequestBodyArchitecture>(
-            value: final value
-          ) =>
-            {
-              'architecture': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (resources) {
-          SdkPresent<CreateSandboxesV3RequestBodyResources>(
-            value: final value
-          ) =>
-            {
-              'resources': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (source) {
-          SdkPresent<CreateSandboxesV3RequestSource>(value: final value) => {
-              'source': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ports) {
-          SdkPresent<List<int>>(value: final value) => {
-              'ports': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (image) {
-          SdkPresent<String>(value: final value) => {
-              'image': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (timeout) {
-          SdkPresent<int>(value: final value) => {
-              'timeout': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (env) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'env': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mounts) {
-          SdkPresent<Map<String, CreateSandboxesV3RequestBodyMountsValue>>(
-            value: final value
-          ) =>
-            {
-              'mounts':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (region) {
-          SdkPresent<CreateSandboxesV3RequestBodyRegion>(value: final value) =>
-            {
-              'region': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (failoverRegions) {
-          SdkPresent<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>(
-            value: final value
-          ) =>
-            {
-              'failoverRegions': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (networkId) {
-          SdkPresent<String>(value: final value) => {
-              'networkId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (persistent) {
-          SdkPresent<bool>(value: final value) => {
-              'persistent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (snapshotExpiration) {
-          SdkPresent<int?>(value: final value) => {
-              'snapshotExpiration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (keepLastSnapshots) {
-          SdkPresent<CreateSandboxesV3RequestBodyKeepLastSnapshots>(
-            value: final value
-          ) =>
-            {
-              'keepLastSnapshots': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (tags) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'tags': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (networkPolicy) {
+      SdkPresent<CreateSandboxesV3RequestNetworkPolicy>(value: final value) => {'networkPolicy': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (architecture) {
+      SdkPresent<CreateSandboxesV3RequestBodyArchitecture>(value: final value) => {'architecture': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (resources) {
+      SdkPresent<CreateSandboxesV3RequestBodyResources>(value: final value) => {'resources': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (source) {
+      SdkPresent<CreateSandboxesV3RequestSource>(value: final value) => {'source': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ports) {
+      SdkPresent<List<int>>(value: final value) => {'ports': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (image) {
+      SdkPresent<String>(value: final value) => {'image': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (timeout) {
+      SdkPresent<int>(value: final value) => {'timeout': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (env) {
+      SdkPresent<Map<String, String>>(value: final value) => {'env': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mounts) {
+      SdkPresent<Map<String, CreateSandboxesV3RequestBodyMountsValue>>(value: final value) => {'mounts': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (region) {
+      SdkPresent<CreateSandboxesV3RequestBodyRegion>(value: final value) => {'region': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (failoverRegions) {
+      SdkPresent<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>(value: final value) => {'failoverRegions': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (networkId) {
+      SdkPresent<String>(value: final value) => {'networkId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (persistent) {
+      SdkPresent<bool>(value: final value) => {'persistent': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (snapshotExpiration) {
+      SdkPresent<int?>(value: final value) => {'snapshotExpiration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (keepLastSnapshots) {
+      SdkPresent<CreateSandboxesV3RequestBodyKeepLastSnapshots>(value: final value) => {'keepLastSnapshots': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (tags) {
+      SdkPresent<Map<String, String>>(value: final value) => {'tags': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSandboxesV3Response {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<SandboxPublicRoute> routes;
-
   /// This object contains information related to a Vercel NamedSandbox.
   final NamedSandbox sandbox;
-
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
 
-  const CreateSandboxesV3Response(
-      {required this.routes, required this.sandbox, required this.session});
+  const CreateSandboxesV3Response({required this.routes, required this.sandbox, required this.session});
 
-  CreateSandboxesV3Response Function(
-      {List<SandboxPublicRoute> routes,
-      NamedSandbox sandbox,
-      Session session}) get copyWith => _copyWith;
+  CreateSandboxesV3Response Function({List<SandboxPublicRoute> routes, NamedSandbox sandbox, Session session}) get copyWith => _copyWith;
 
-  CreateSandboxesV3Response _copyWith(
-          {Object? routes = sdkOmittedValue,
-          Object? sandbox = sdkOmittedValue,
-          Object? session = sdkOmittedValue}) =>
-      CreateSandboxesV3Response(
-        routes: identical(routes, sdkOmittedValue)
-            ? this.routes
-            : routes as List<SandboxPublicRoute>,
-        sandbox: identical(sandbox, sdkOmittedValue)
-            ? this.sandbox
-            : sandbox as NamedSandbox,
-        session: identical(session, sdkOmittedValue)
-            ? this.session
-            : session as Session,
-      );
+  CreateSandboxesV3Response _copyWith({Object? routes = sdkOmittedValue, Object? sandbox = sdkOmittedValue, Object? session = sdkOmittedValue}) => CreateSandboxesV3Response(
+    routes: identical(routes, sdkOmittedValue) ? this.routes : routes as List<SandboxPublicRoute>,
+    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as NamedSandbox,
+    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
+  );
 
-  factory CreateSandboxesV3Response.fromJson(Map<String, dynamic> json) =>
-      CreateSandboxesV3Response(
-        routes: ((json['routes'] as List?)
-            ?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        sandbox: (json['sandbox'] != null
-            ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>)
-            : null)!,
-        session: (json['session'] != null
-            ? Session.fromJson(json['session'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CreateSandboxesV3Response.fromJson(Map<String, dynamic> json) => CreateSandboxesV3Response(
+    routes: ((json['routes'] as List?)?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>)).toList())!,
+    sandbox: (json['sandbox'] != null ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!,
+    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'routes': routes.map((item) => item.toJson()).toList(),
-        'sandbox': sandbox.toJson(),
-        'session': session.toJson(),
-      };
+    'routes': routes.map((item) => item.toJson()).toList(),
+    'sandbox': sandbox.toJson(),
+    'session': session.toJson(),
+  };
 }
 
 class CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The number of milliseconds after which the snapshot will expire and be deleted. Defaults to 7 days when neither this field nor the sandbox configuration specifies an expiration. Use 0 for no expiration.
   final SdkOptional<int?> expiration;
 
-  const CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody(
-      {this.expiration = const SdkOmitted()});
+  const CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody({this.expiration = const SdkOmitted()});
 
-  CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody Function(
-      {SdkOptional<int?> expiration}) get copyWith => _copyWith;
+  CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody Function({SdkOptional<int?> expiration}) get copyWith => _copyWith;
 
-  CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody _copyWith(
-          {Object? expiration = sdkOmittedValue}) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody(
-        expiration: identical(expiration, sdkOmittedValue)
-            ? this.expiration
-            : expiration as SdkOptional<int?>,
-      );
+  CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody _copyWith({Object? expiration = sdkOmittedValue}) => CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody(
+    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<int?>,
+  );
 
-  factory CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody(
-        expiration: json.containsKey('expiration')
-            ? SdkPresent((json['expiration'] as num?)?.toInt())
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody.fromJson(Map<String, dynamic> json) => CreateSandboxesSessionsBySessionIdSnapshotV3RequestBody(
+    expiration: json.containsKey('expiration') ? SdkPresent((json['expiration'] as num?)?.toInt()) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (expiration) {
-          SdkPresent<int?>(value: final value) => {
-              'expiration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (expiration) {
+      SdkPresent<int?>(value: final value) => {'expiration': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSandboxesSessionsBySessionIdSnapshotV3Response {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
-
   /// This object contains information related to a Snapshot of a Vercel Sandbox session (v2 API).
   final Snapshot snapshot;
 
-  const CreateSandboxesSessionsBySessionIdSnapshotV3Response(
-      {required this.session, required this.snapshot});
+  const CreateSandboxesSessionsBySessionIdSnapshotV3Response({required this.session, required this.snapshot});
 
-  CreateSandboxesSessionsBySessionIdSnapshotV3Response Function(
-      {Session session, Snapshot snapshot}) get copyWith => _copyWith;
+  CreateSandboxesSessionsBySessionIdSnapshotV3Response Function({Session session, Snapshot snapshot}) get copyWith => _copyWith;
 
-  CreateSandboxesSessionsBySessionIdSnapshotV3Response _copyWith(
-          {Object? session = sdkOmittedValue,
-          Object? snapshot = sdkOmittedValue}) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV3Response(
-        session: identical(session, sdkOmittedValue)
-            ? this.session
-            : session as Session,
-        snapshot: identical(snapshot, sdkOmittedValue)
-            ? this.snapshot
-            : snapshot as Snapshot,
-      );
+  CreateSandboxesSessionsBySessionIdSnapshotV3Response _copyWith({Object? session = sdkOmittedValue, Object? snapshot = sdkOmittedValue}) => CreateSandboxesSessionsBySessionIdSnapshotV3Response(
+    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
+    snapshot: identical(snapshot, sdkOmittedValue) ? this.snapshot : snapshot as Snapshot,
+  );
 
-  factory CreateSandboxesSessionsBySessionIdSnapshotV3Response.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV3Response(
-        session: (json['session'] != null
-            ? Session.fromJson(json['session'] as Map<String, dynamic>)
-            : null)!,
-        snapshot: (json['snapshot'] != null
-            ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CreateSandboxesSessionsBySessionIdSnapshotV3Response.fromJson(Map<String, dynamic> json) => CreateSandboxesSessionsBySessionIdSnapshotV3Response(
+    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
+    snapshot: (json['snapshot'] != null ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'session': session.toJson(),
-        'snapshot': snapshot.toJson(),
-      };
+    'session': session.toJson(),
+    'snapshot': snapshot.toJson(),
+  };
 }
 
 /// Resources to define the VM
 class CreateSandboxesByNameForkV3RequestBodyResources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The number of virtual CPUs to allocate to the sandbox. Must be 1, or an even number.
   final SdkOptional<int> vcpus;
-
   /// The amount of memory in megabytes to allocate to the sandbox. Must equal vcpus * 2048.
   final SdkOptional<int> memory;
 
-  const CreateSandboxesByNameForkV3RequestBodyResources(
-      {this.vcpus = const SdkOmitted(), this.memory = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestBodyResources({this.vcpus = const SdkOmitted(), this.memory = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestBodyResources Function(
-      {SdkOptional<int> vcpus,
-      SdkOptional<int> memory}) get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestBodyResources Function({SdkOptional<int> vcpus, SdkOptional<int> memory}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestBodyResources _copyWith(
-          {Object? vcpus = sdkOmittedValue,
-          Object? memory = sdkOmittedValue}) =>
-      CreateSandboxesByNameForkV3RequestBodyResources(
-        vcpus: identical(vcpus, sdkOmittedValue)
-            ? this.vcpus
-            : vcpus as SdkOptional<int>,
-        memory: identical(memory, sdkOmittedValue)
-            ? this.memory
-            : memory as SdkOptional<int>,
-      );
+  CreateSandboxesByNameForkV3RequestBodyResources _copyWith({Object? vcpus = sdkOmittedValue, Object? memory = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestBodyResources(
+    vcpus: identical(vcpus, sdkOmittedValue) ? this.vcpus : vcpus as SdkOptional<int>,
+    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as SdkOptional<int>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestBodyResources.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestBodyResources(
-        vcpus: json['vcpus'] != null
-            ? SdkPresent(((json['vcpus'] as num?)?.toInt())!)
-            : const SdkOmitted(),
-        memory: json['memory'] != null
-            ? SdkPresent(((json['memory'] as num?)?.toInt())!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestBodyResources.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestBodyResources(
+    vcpus: json['vcpus'] != null ? SdkPresent(((json['vcpus'] as num?)?.toInt())!) : const SdkOmitted(),
+    memory: json['memory'] != null ? SdkPresent(((json['memory'] as num?)?.toInt())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (vcpus) {
-          SdkPresent<int>(value: final value) => {
-              'vcpus': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (memory) {
-          SdkPresent<int>(value: final value) => {
-              'memory': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (vcpus) {
+      SdkPresent<int>(value: final value) => {'vcpus': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (memory) {
+      SdkPresent<int>(value: final value) => {'memory': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

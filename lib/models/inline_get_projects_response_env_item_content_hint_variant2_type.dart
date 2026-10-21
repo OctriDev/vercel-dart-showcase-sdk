@@ -7,22 +7,16 @@ part of 'inline.dart';
 enum GetProjectsResponseEnvItemContentHintVariant2Type {
   redisRestApiToken;
 
-  static GetProjectsResponseEnvItemContentHintVariant2Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant2Type fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-token':
-        return GetProjectsResponseEnvItemContentHintVariant2Type
-            .redisRestApiToken;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant2Type: $value');
+      case 'redis-rest-api-token': return GetProjectsResponseEnvItemContentHintVariant2Type.redisRestApiToken;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant2Type.redisRestApiToken:
-        return 'redis-rest-api-token';
+      case GetProjectsResponseEnvItemContentHintVariant2Type.redisRestApiToken: return 'redis-rest-api-token';
     }
   }
 
@@ -33,23 +27,16 @@ enum GetProjectsResponseEnvItemContentHintVariant2Type {
 enum GetProjectsResponseEnvItemContentHintVariant3Type {
   redisRestApiReadOnlyToken;
 
-  static GetProjectsResponseEnvItemContentHintVariant3Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant3Type fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-read-only-token':
-        return GetProjectsResponseEnvItemContentHintVariant3Type
-            .redisRestApiReadOnlyToken;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant3Type: $value');
+      case 'redis-rest-api-read-only-token': return GetProjectsResponseEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant3Type
-            .redisRestApiReadOnlyToken:
-        return 'redis-rest-api-read-only-token';
+      case GetProjectsResponseEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken: return 'redis-rest-api-read-only-token';
     }
   }
 
@@ -60,22 +47,16 @@ enum GetProjectsResponseEnvItemContentHintVariant3Type {
 enum GetProjectsResponseEnvItemContentHintVariant4Type {
   blobReadWriteToken;
 
-  static GetProjectsResponseEnvItemContentHintVariant4Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant4Type fromJson(String value) {
     switch (value) {
-      case 'blob-read-write-token':
-        return GetProjectsResponseEnvItemContentHintVariant4Type
-            .blobReadWriteToken;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant4Type: $value');
+      case 'blob-read-write-token': return GetProjectsResponseEnvItemContentHintVariant4Type.blobReadWriteToken;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant4Type.blobReadWriteToken:
-        return 'blob-read-write-token';
+      case GetProjectsResponseEnvItemContentHintVariant4Type.blobReadWriteToken: return 'blob-read-write-token';
     }
   }
 
@@ -86,21 +67,16 @@ enum GetProjectsResponseEnvItemContentHintVariant4Type {
 enum GetProjectsResponseEnvItemContentHintVariant5Type {
   blobStoreId;
 
-  static GetProjectsResponseEnvItemContentHintVariant5Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant5Type fromJson(String value) {
     switch (value) {
-      case 'blob-store-id':
-        return GetProjectsResponseEnvItemContentHintVariant5Type.blobStoreId;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant5Type: $value');
+      case 'blob-store-id': return GetProjectsResponseEnvItemContentHintVariant5Type.blobStoreId;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant5Type.blobStoreId:
-        return 'blob-store-id';
+      case GetProjectsResponseEnvItemContentHintVariant5Type.blobStoreId: return 'blob-store-id';
     }
   }
 
@@ -111,23 +87,16 @@ enum GetProjectsResponseEnvItemContentHintVariant5Type {
 enum GetProjectsResponseEnvItemContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static GetProjectsResponseEnvItemContentHintVariant6Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant6Type fromJson(String value) {
     switch (value) {
-      case 'blob-webhook-public-key':
-        return GetProjectsResponseEnvItemContentHintVariant6Type
-            .blobWebhookPublicKey;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key': return GetProjectsResponseEnvItemContentHintVariant6Type.blobWebhookPublicKey;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant6Type
-            .blobWebhookPublicKey:
-        return 'blob-webhook-public-key';
+      case GetProjectsResponseEnvItemContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
     }
   }
 
@@ -138,21 +107,16 @@ enum GetProjectsResponseEnvItemContentHintVariant6Type {
 enum GetProjectsResponseEnvItemContentHintVariant7Type {
   postgresUrl;
 
-  static GetProjectsResponseEnvItemContentHintVariant7Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant7Type fromJson(String value) {
     switch (value) {
-      case 'postgres-url':
-        return GetProjectsResponseEnvItemContentHintVariant7Type.postgresUrl;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant7Type: $value');
+      case 'postgres-url': return GetProjectsResponseEnvItemContentHintVariant7Type.postgresUrl;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant7Type.postgresUrl:
-        return 'postgres-url';
+      case GetProjectsResponseEnvItemContentHintVariant7Type.postgresUrl: return 'postgres-url';
     }
   }
 
@@ -163,23 +127,16 @@ enum GetProjectsResponseEnvItemContentHintVariant7Type {
 enum GetProjectsResponseEnvItemContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static GetProjectsResponseEnvItemContentHintVariant8Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant8Type fromJson(String value) {
     switch (value) {
-      case 'postgres-url-non-pooling':
-        return GetProjectsResponseEnvItemContentHintVariant8Type
-            .postgresUrlNonPooling;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling': return GetProjectsResponseEnvItemContentHintVariant8Type.postgresUrlNonPooling;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant8Type
-            .postgresUrlNonPooling:
-        return 'postgres-url-non-pooling';
+      case GetProjectsResponseEnvItemContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
     }
   }
 
@@ -190,22 +147,16 @@ enum GetProjectsResponseEnvItemContentHintVariant8Type {
 enum GetProjectsResponseEnvItemContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static GetProjectsResponseEnvItemContentHintVariant9Type fromJson(
-      String value) {
+  static GetProjectsResponseEnvItemContentHintVariant9Type fromJson(String value) {
     switch (value) {
-      case 'postgres-prisma-url':
-        return GetProjectsResponseEnvItemContentHintVariant9Type
-            .postgresPrismaUrl;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseEnvItemContentHintVariant9Type: $value');
+      case 'postgres-prisma-url': return GetProjectsResponseEnvItemContentHintVariant9Type.postgresPrismaUrl;
+      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant9Type.postgresPrismaUrl:
-        return 'postgres-prisma-url';
+      case GetProjectsResponseEnvItemContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
     }
   }
 
@@ -214,54 +165,38 @@ enum GetProjectsResponseEnvItemContentHintVariant9Type {
 }
 
 final class GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key {
+
   final String value;
 
-  const GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-      this.value);
+  const GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key._(this.value);
 
-  factory GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(
-          String value) =>
-      GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key._(value);
+  factory GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(String value) => GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key._(value);
 
-  static const xVercelIpCountry =
-      GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-          'x-vercel-ip-country');
+  static const xVercelIpCountry = GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key._('x-vercel-ip-country');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Key && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type {
   header;
 
-  static GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type
-      fromJson(String value) {
+  static GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'header':
-        return GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type
-            .header;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type: $value');
+      case 'header': return GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type.header;
+      default: throw ArgumentError('Unknown GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type
-            .header:
-        return 'header';
+      case GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type.header: return 'header';
     }
   }
 
@@ -272,23 +207,16 @@ enum GetProjectsResponseInternalRoutesItemVariant1HasItemVariant0Type {
 enum GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type {
   host;
 
-  static GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type
-      fromJson(String value) {
+  static GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'host':
-        return GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type
-            .host;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type: $value');
+      case 'host': return GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type.host;
+      default: throw ArgumentError('Unknown GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type
-            .host:
-        return 'host';
+      case GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type.host: return 'host';
     }
   }
 
@@ -297,56 +225,44 @@ enum GetProjectsResponseInternalRoutesItemVariant1HasItemVariant1Type {
 }
 
 final class GetProjectsResponseInternalRoutesItemVariant1MitigateAction {
+
   final String value;
 
-  const GetProjectsResponseInternalRoutesItemVariant1MitigateAction._(
-      this.value);
+  const GetProjectsResponseInternalRoutesItemVariant1MitigateAction._(this.value);
 
-  factory GetProjectsResponseInternalRoutesItemVariant1MitigateAction.fromJson(
-          String value) =>
-      GetProjectsResponseInternalRoutesItemVariant1MitigateAction._(value);
+  factory GetProjectsResponseInternalRoutesItemVariant1MitigateAction.fromJson(String value) => GetProjectsResponseInternalRoutesItemVariant1MitigateAction._(value);
 
-  static const blockLegalCwc =
-      GetProjectsResponseInternalRoutesItemVariant1MitigateAction._(
-          'block_legal_cwc');
+  static const blockLegalCwc = GetProjectsResponseInternalRoutesItemVariant1MitigateAction._('block_legal_cwc');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseInternalRoutesItemVariant1MitigateAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseInternalRoutesItemVariant1MitigateAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseLinkVariant0Sourceless {
+
   final bool value;
 
   const GetProjectsResponseLinkVariant0Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant0Sourceless.fromJson(bool value) =>
-      GetProjectsResponseLinkVariant0Sourceless._(value);
+  factory GetProjectsResponseLinkVariant0Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant0Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant0Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant0Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseLinkVariant0Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant0Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetProjectsResponseLinkVariant0Type {
@@ -354,18 +270,14 @@ enum GetProjectsResponseLinkVariant0Type {
 
   static GetProjectsResponseLinkVariant0Type fromJson(String value) {
     switch (value) {
-      case 'github':
-        return GetProjectsResponseLinkVariant0Type.github;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseLinkVariant0Type: $value');
+      case 'github': return GetProjectsResponseLinkVariant0Type.github;
+      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant0Type.github:
-        return 'github';
+      case GetProjectsResponseLinkVariant0Type.github: return 'github';
     }
   }
 

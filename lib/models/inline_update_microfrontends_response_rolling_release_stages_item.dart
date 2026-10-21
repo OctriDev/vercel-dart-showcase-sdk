@@ -8,604 +8,271 @@ part of 'inline.dart';
 class UpdateMicrofrontendsResponseRollingReleaseStagesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Duration in minutes for automatic advancement to the next stage
   final SdkOptional<double> duration;
-
   /// Whether to linearly shift traffic over the duration of this stage
-  final SdkOptional<
-          UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift>
-      linearShift;
-
+  final SdkOptional<UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift> linearShift;
   /// Whether or not this stage requires manual approval to proceed
-  final SdkOptional<
-          UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval>
-      requireApproval;
-
+  final SdkOptional<UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval> requireApproval;
   /// The percentage of traffic to serve to the canary deployment (0-100)
   final double targetPercentage;
 
-  const UpdateMicrofrontendsResponseRollingReleaseStagesItem(
-      {this.duration = const SdkOmitted(),
-      this.linearShift = const SdkOmitted(),
-      this.requireApproval = const SdkOmitted(),
-      required this.targetPercentage});
+  const UpdateMicrofrontendsResponseRollingReleaseStagesItem({this.duration = const SdkOmitted(), this.linearShift = const SdkOmitted(), this.requireApproval = const SdkOmitted(), required this.targetPercentage});
 
-  UpdateMicrofrontendsResponseRollingReleaseStagesItem Function(
-      {SdkOptional<double> duration,
-      SdkOptional<
-              UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift>
-          linearShift,
-      SdkOptional<
-              UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval>
-          requireApproval,
-      double targetPercentage}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseRollingReleaseStagesItem Function({SdkOptional<double> duration, SdkOptional<UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift> linearShift, SdkOptional<UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval> requireApproval, double targetPercentage}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseRollingReleaseStagesItem _copyWith(
-          {Object? duration = sdkOmittedValue,
-          Object? linearShift = sdkOmittedValue,
-          Object? requireApproval = sdkOmittedValue,
-          Object? targetPercentage = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseRollingReleaseStagesItem(
-        duration: identical(duration, sdkOmittedValue)
-            ? this.duration
-            : duration as SdkOptional<double>,
-        linearShift: identical(linearShift, sdkOmittedValue)
-            ? this.linearShift
-            : linearShift as SdkOptional<
-                UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift>,
-        requireApproval: identical(requireApproval, sdkOmittedValue)
-            ? this.requireApproval
-            : requireApproval as SdkOptional<
-                UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval>,
-        targetPercentage: identical(targetPercentage, sdkOmittedValue)
-            ? this.targetPercentage
-            : targetPercentage as double,
-      );
+  UpdateMicrofrontendsResponseRollingReleaseStagesItem _copyWith({Object? duration = sdkOmittedValue, Object? linearShift = sdkOmittedValue, Object? requireApproval = sdkOmittedValue, Object? targetPercentage = sdkOmittedValue}) => UpdateMicrofrontendsResponseRollingReleaseStagesItem(
+    duration: identical(duration, sdkOmittedValue) ? this.duration : duration as SdkOptional<double>,
+    linearShift: identical(linearShift, sdkOmittedValue) ? this.linearShift : linearShift as SdkOptional<UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift>,
+    requireApproval: identical(requireApproval, sdkOmittedValue) ? this.requireApproval : requireApproval as SdkOptional<UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval>,
+    targetPercentage: identical(targetPercentage, sdkOmittedValue) ? this.targetPercentage : targetPercentage as double,
+  );
 
-  factory UpdateMicrofrontendsResponseRollingReleaseStagesItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseRollingReleaseStagesItem(
-        duration: json['duration'] != null
-            ? SdkPresent(((json['duration'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        linearShift: json['linearShift'] != null
-            ? SdkPresent((json['linearShift'] != null
-                ? UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift
-                    .fromJson(json['linearShift'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        requireApproval: json['requireApproval'] != null
-            ? SdkPresent((json['requireApproval'] != null
-                ? UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval
-                    .fromJson(json['requireApproval'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        targetPercentage: ((json['targetPercentage'] as num?)?.toDouble())!,
-      );
+  factory UpdateMicrofrontendsResponseRollingReleaseStagesItem.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseRollingReleaseStagesItem(
+    duration: json['duration'] != null ? SdkPresent(((json['duration'] as num?)?.toDouble())!) : const SdkOmitted(),
+    linearShift: json['linearShift'] != null ? SdkPresent((json['linearShift'] != null ? UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift.fromJson(json['linearShift'] as bool) : null)!) : const SdkOmitted(),
+    requireApproval: json['requireApproval'] != null ? SdkPresent((json['requireApproval'] != null ? UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval.fromJson(json['requireApproval'] as bool) : null)!) : const SdkOmitted(),
+    targetPercentage: ((json['targetPercentage'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (duration) {
-          SdkPresent<double>(value: final value) => {
-              'duration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (linearShift) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift>(
-            value: final value
-          ) =>
-            {
-              'linearShift': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requireApproval) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval>(
-            value: final value
-          ) =>
-            {
-              'requireApproval': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'targetPercentage': targetPercentage,
-      };
+    ...switch (duration) {
+      SdkPresent<double>(value: final value) => {'duration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (linearShift) {
+      SdkPresent<UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift>(value: final value) => {'linearShift': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requireApproval) {
+      SdkPresent<UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval>(value: final value) => {'requireApproval': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'targetPercentage': targetPercentage,
+  };
 }
 
 /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
 class UpdateMicrofrontendsResponseRollingRelease {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.
-  final SdkOptional<
-          UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader>
-      canaryResponseHeader;
-
+  final SdkOptional<UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader> canaryResponseHeader;
   /// Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`.
   final SdkOptional<UpdateMicrofrontendsResponseRollingReleaseGate> gate;
-
   /// An array of all the stages required during a deployment release. Each stage defines a target percentage and advancement rules. The final stage must always have targetPercentage: 100.
-  final SdkOptional<List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?>
-      stages;
-
+  final SdkOptional<List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?> stages;
   /// The environment that the release targets, currently only supports production. Adding in case we want to configure with alias groups or custom environments.
   final String target;
 
-  const UpdateMicrofrontendsResponseRollingRelease(
-      {this.canaryResponseHeader = const SdkOmitted(),
-      this.gate = const SdkOmitted(),
-      this.stages = const SdkOmitted(),
-      required this.target});
+  const UpdateMicrofrontendsResponseRollingRelease({this.canaryResponseHeader = const SdkOmitted(), this.gate = const SdkOmitted(), this.stages = const SdkOmitted(), required this.target});
 
-  UpdateMicrofrontendsResponseRollingRelease Function(
-      {SdkOptional<
-              UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader>
-          canaryResponseHeader,
-      SdkOptional<UpdateMicrofrontendsResponseRollingReleaseGate> gate,
-      SdkOptional<List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?>
-          stages,
-      String target}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseRollingRelease Function({SdkOptional<UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader> canaryResponseHeader, SdkOptional<UpdateMicrofrontendsResponseRollingReleaseGate> gate, SdkOptional<List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?> stages, String target}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseRollingRelease _copyWith(
-          {Object? canaryResponseHeader = sdkOmittedValue,
-          Object? gate = sdkOmittedValue,
-          Object? stages = sdkOmittedValue,
-          Object? target = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseRollingRelease(
-        canaryResponseHeader: identical(canaryResponseHeader, sdkOmittedValue)
-            ? this.canaryResponseHeader
-            : canaryResponseHeader as SdkOptional<
-                UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader>,
-        gate: identical(gate, sdkOmittedValue)
-            ? this.gate
-            : gate
-                as SdkOptional<UpdateMicrofrontendsResponseRollingReleaseGate>,
-        stages: identical(stages, sdkOmittedValue)
-            ? this.stages
-            : stages as SdkOptional<
-                List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?>,
-        target:
-            identical(target, sdkOmittedValue) ? this.target : target as String,
-      );
+  UpdateMicrofrontendsResponseRollingRelease _copyWith({Object? canaryResponseHeader = sdkOmittedValue, Object? gate = sdkOmittedValue, Object? stages = sdkOmittedValue, Object? target = sdkOmittedValue}) => UpdateMicrofrontendsResponseRollingRelease(
+    canaryResponseHeader: identical(canaryResponseHeader, sdkOmittedValue) ? this.canaryResponseHeader : canaryResponseHeader as SdkOptional<UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader>,
+    gate: identical(gate, sdkOmittedValue) ? this.gate : gate as SdkOptional<UpdateMicrofrontendsResponseRollingReleaseGate>,
+    stages: identical(stages, sdkOmittedValue) ? this.stages : stages as SdkOptional<List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as String,
+  );
 
-  factory UpdateMicrofrontendsResponseRollingRelease.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseRollingRelease(
-        canaryResponseHeader: json['canaryResponseHeader'] != null
-            ? SdkPresent((json['canaryResponseHeader'] != null
-                ? UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader
-                    .fromJson(json['canaryResponseHeader'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        gate: json['gate'] != null
-            ? SdkPresent((json['gate'] != null
-                ? UpdateMicrofrontendsResponseRollingReleaseGate.fromJson(
-                    json['gate'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        stages: json.containsKey('stages')
-            ? SdkPresent((json['stages'] as List?)
-                ?.map((e) =>
-                    UpdateMicrofrontendsResponseRollingReleaseStagesItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())
-            : const SdkOmitted(),
-        target: (json['target'] as String?)!,
-      );
+  factory UpdateMicrofrontendsResponseRollingRelease.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseRollingRelease(
+    canaryResponseHeader: json['canaryResponseHeader'] != null ? SdkPresent((json['canaryResponseHeader'] != null ? UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader.fromJson(json['canaryResponseHeader'] as bool) : null)!) : const SdkOmitted(),
+    gate: json['gate'] != null ? SdkPresent((json['gate'] != null ? UpdateMicrofrontendsResponseRollingReleaseGate.fromJson(json['gate'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    stages: json.containsKey('stages') ? SdkPresent((json['stages'] as List?)?.map((e) => UpdateMicrofrontendsResponseRollingReleaseStagesItem.fromJson(e as Map<String, dynamic>)).toList()) : const SdkOmitted(),
+    target: (json['target'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (canaryResponseHeader) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader>(
-            value: final value
-          ) =>
-            {
-              'canaryResponseHeader': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gate) {
-          SdkPresent<UpdateMicrofrontendsResponseRollingReleaseGate>(
-            value: final value
-          ) =>
-            {
-              'gate': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (stages) {
-          SdkPresent<
-                List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?>(
-            value: final value
-          ) =>
-            {
-              'stages': value?.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'target': target,
-      };
+    ...switch (canaryResponseHeader) {
+      SdkPresent<UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader>(value: final value) => {'canaryResponseHeader': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gate) {
+      SdkPresent<UpdateMicrofrontendsResponseRollingReleaseGate>(value: final value) => {'gate': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (stages) {
+      SdkPresent<List<UpdateMicrofrontendsResponseRollingReleaseStagesItem>?>(value: final value) => {'stages': value?.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'target': target,
+  };
 }
 
 class UpdateMicrofrontendsResponseSandbox {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>>
-      failoverRegions;
+  final SdkOptional<List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>> failoverRegions;
   final SdkOptional<UpdateMicrofrontendsResponseSandboxRegion> region;
 
-  const UpdateMicrofrontendsResponseSandbox(
-      {this.failoverRegions = const SdkOmitted(),
-      this.region = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseSandbox({this.failoverRegions = const SdkOmitted(), this.region = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseSandbox Function(
-      {SdkOptional<List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>>
-          failoverRegions,
-      SdkOptional<UpdateMicrofrontendsResponseSandboxRegion>
-          region}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseSandbox Function({SdkOptional<List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>> failoverRegions, SdkOptional<UpdateMicrofrontendsResponseSandboxRegion> region}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseSandbox _copyWith(
-          {Object? failoverRegions = sdkOmittedValue,
-          Object? region = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseSandbox(
-        failoverRegions: identical(failoverRegions, sdkOmittedValue)
-            ? this.failoverRegions
-            : failoverRegions as SdkOptional<
-                List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>>,
-        region: identical(region, sdkOmittedValue)
-            ? this.region
-            : region as SdkOptional<UpdateMicrofrontendsResponseSandboxRegion>,
-      );
+  UpdateMicrofrontendsResponseSandbox _copyWith({Object? failoverRegions = sdkOmittedValue, Object? region = sdkOmittedValue}) => UpdateMicrofrontendsResponseSandbox(
+    failoverRegions: identical(failoverRegions, sdkOmittedValue) ? this.failoverRegions : failoverRegions as SdkOptional<List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>>,
+    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<UpdateMicrofrontendsResponseSandboxRegion>,
+  );
 
-  factory UpdateMicrofrontendsResponseSandbox.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseSandbox(
-        failoverRegions: json['failoverRegions'] != null
-            ? SdkPresent(((json['failoverRegions'] as List?)
-                ?.map((e) =>
-                    UpdateMicrofrontendsResponseSandboxFailoverRegionsItem
-                        .fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        region: json['region'] != null
-            ? SdkPresent((json['region'] != null
-                ? UpdateMicrofrontendsResponseSandboxRegion.fromJson(
-                    json['region'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateMicrofrontendsResponseSandbox.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseSandbox(
+    failoverRegions: json['failoverRegions'] != null ? SdkPresent(((json['failoverRegions'] as List?)?.map((e) => UpdateMicrofrontendsResponseSandboxFailoverRegionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    region: json['region'] != null ? SdkPresent((json['region'] != null ? UpdateMicrofrontendsResponseSandboxRegion.fromJson(json['region'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (failoverRegions) {
-          SdkPresent<
-                List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>>(
-            value: final value
-          ) =>
-            {
-              'failoverRegions': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (region) {
-          SdkPresent<UpdateMicrofrontendsResponseSandboxRegion>(
-            value: final value
-          ) =>
-            {
-              'region': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (failoverRegions) {
+      SdkPresent<List<UpdateMicrofrontendsResponseSandboxFailoverRegionsItem>>(value: final value) => {'failoverRegions': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (region) {
+      SdkPresent<UpdateMicrofrontendsResponseSandboxRegion>(value: final value) => {'region': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateMicrofrontendsResponseSecurityManagedRulesAiBots {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-      UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction> action;
+  final SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction> action;
   final UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsActive active;
 
-  const UpdateMicrofrontendsResponseSecurityManagedRulesAiBots(
-      {this.action = const SdkOmitted(), required this.active});
+  const UpdateMicrofrontendsResponseSecurityManagedRulesAiBots({this.action = const SdkOmitted(), required this.active});
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesAiBots Function(
-      {SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction>
-          action,
-      UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsActive
-          active}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseSecurityManagedRulesAiBots Function({SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction> action, UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsActive active}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesAiBots _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesAiBots(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<
-                UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction>,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsActive,
-      );
+  UpdateMicrofrontendsResponseSecurityManagedRulesAiBots _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => UpdateMicrofrontendsResponseSecurityManagedRulesAiBots(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction>,
+    active: identical(active, sdkOmittedValue) ? this.active : active as UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsActive,
+  );
 
-  factory UpdateMicrofrontendsResponseSecurityManagedRulesAiBots.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesAiBots(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] != null
-                ? UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction
-                    .fromJson(json['action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        active: (json['active'] != null
-            ? UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseSecurityManagedRulesAiBots.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseSecurityManagedRulesAiBots(
+    action: json['action'] != null ? SdkPresent((json['action'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
+    active: (json['active'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction>(
-            value: final value
-          ) =>
-            {
-              'action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'active': active.toJson(),
-      };
+    ...switch (action) {
+      SdkPresent<UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction>(value: final value) => {'action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'active': active.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-      UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction> action;
+  final SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction> action;
   final UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterActive active;
 
-  const UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter(
-      {this.action = const SdkOmitted(), required this.active});
+  const UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter({this.action = const SdkOmitted(), required this.active});
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter Function(
-      {SdkOptional<
-              UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction>
-          action,
-      UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterActive
-          active}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter Function({SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction> action, UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterActive active}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<
-                UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction>,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterActive,
-      );
+  UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction>,
+    active: identical(active, sdkOmittedValue) ? this.active : active as UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterActive,
+  );
 
-  factory UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] != null
-                ? UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction
-                    .fromJson(json['action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        active: (json['active'] != null
-            ? UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter(
+    action: json['action'] != null ? SdkPresent((json['action'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
+    active: (json['active'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction>(
-            value: final value
-          ) =>
-            {
-              'action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'active': active.toJson(),
-      };
+    ...switch (action) {
+      SdkPresent<UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction>(value: final value) => {'action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'active': active.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseSecurityManagedRulesOwasp {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction>
-      action;
+  final SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction> action;
   final UpdateMicrofrontendsResponseSecurityManagedRulesOwaspActive active;
 
-  const UpdateMicrofrontendsResponseSecurityManagedRulesOwasp(
-      {this.action = const SdkOmitted(), required this.active});
+  const UpdateMicrofrontendsResponseSecurityManagedRulesOwasp({this.action = const SdkOmitted(), required this.active});
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesOwasp Function(
-      {SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction>
-          action,
-      UpdateMicrofrontendsResponseSecurityManagedRulesOwaspActive
-          active}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseSecurityManagedRulesOwasp Function({SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction> action, UpdateMicrofrontendsResponseSecurityManagedRulesOwaspActive active}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesOwasp _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesOwasp(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<
-                UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction>,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as UpdateMicrofrontendsResponseSecurityManagedRulesOwaspActive,
-      );
+  UpdateMicrofrontendsResponseSecurityManagedRulesOwasp _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => UpdateMicrofrontendsResponseSecurityManagedRulesOwasp(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction>,
+    active: identical(active, sdkOmittedValue) ? this.active : active as UpdateMicrofrontendsResponseSecurityManagedRulesOwaspActive,
+  );
 
-  factory UpdateMicrofrontendsResponseSecurityManagedRulesOwasp.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesOwasp(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] != null
-                ? UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction
-                    .fromJson(json['action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        active: (json['active'] != null
-            ? UpdateMicrofrontendsResponseSecurityManagedRulesOwaspActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseSecurityManagedRulesOwasp.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseSecurityManagedRulesOwasp(
+    action: json['action'] != null ? SdkPresent((json['action'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
+    active: (json['active'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesOwaspActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction>(
-            value: final value
-          ) =>
-            {
-              'action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'active': active.toJson(),
-      };
+    ...switch (action) {
+      SdkPresent<UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction>(value: final value) => {'action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'active': active.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction>
-      action;
-  final UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive
-      active;
+  final SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction> action;
+  final UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive active;
 
-  const UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources(
-      {this.action = const SdkOmitted(), required this.active});
+  const UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources({this.action = const SdkOmitted(), required this.active});
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources Function(
-      {SdkOptional<
-              UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction>
-          action,
-      UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive
-          active}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources Function({SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction> action, UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive active}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<
-                UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction>,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive,
-      );
+  UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction>,
+    active: identical(active, sdkOmittedValue) ? this.active : active as UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive,
+  );
 
-  factory UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] != null
-                ? UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction
-                    .fromJson(json['action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        active: (json['active'] != null
-            ? UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources(
+    action: json['action'] != null ? SdkPresent((json['action'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
+    active: (json['active'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction>(
-            value: final value
-          ) =>
-            {
-              'action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'active': active.toJson(),
-      };
+    ...switch (action) {
+      SdkPresent<UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction>(value: final value) => {'action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'active': active.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction>
-      action;
-  final UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive
-      active;
+  final SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction> action;
+  final UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive active;
 
-  const UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset(
-      {this.action = const SdkOmitted(), required this.active});
+  const UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset({this.action = const SdkOmitted(), required this.active});
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset Function(
-      {SdkOptional<
-              UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction>
-          action,
-      UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive
-          active}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset Function({SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction> action, UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive active}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<
-                UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction>,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive,
-      );
+  UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction>,
+    active: identical(active, sdkOmittedValue) ? this.active : active as UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive,
+  );
 
-  factory UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] != null
-                ? UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction
-                    .fromJson(json['action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        active: (json['active'] != null
-            ? UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset(
+    action: json['action'] != null ? SdkPresent((json['action'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
+    active: (json['active'] != null ? UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction>(
-            value: final value
-          ) =>
-            {
-              'action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'active': active.toJson(),
-      };
+    ...switch (action) {
+      SdkPresent<UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction>(value: final value) => {'action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'active': active.toJson(),
+  };
 }

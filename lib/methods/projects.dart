@@ -40,8 +40,7 @@ Future<dynamic> listProjects(ClientConfig config,
     {SdkOptional<String> from = const SdkOmitted(),
     SdkOptional<double> since = const SdkOmitted(),
     SdkOptional<double> until = const SdkOmitted(),
-    SdkOptional<ListProjectsGitForkProtection> gitForkProtection =
-        const SdkOmitted(),
+    SdkOptional<ListProjectsGitForkProtection> gitForkProtection = const SdkOmitted(),
     SdkOptional<String> limit = const SdkOmitted(),
     SdkOptional<String> search = const SdkOmitted(),
     SdkOptional<String> repo = const SdkOmitted(),
@@ -51,13 +50,10 @@ Future<dynamic> listProjects(ClientConfig config,
     SdkOptional<String> edgeConfigId = const SdkOmitted(),
     SdkOptional<String> edgeConfigTokenId = const SdkOmitted(),
     SdkOptional<bool> deprecated = const SdkOmitted(),
-    SdkOptional<ListProjectsElasticConcurrencyEnabled>
-        elasticConcurrencyEnabled = const SdkOmitted(),
-    SdkOptional<ListProjectsStaticIpsEnabled> staticIpsEnabled =
-        const SdkOmitted(),
+    SdkOptional<ListProjectsElasticConcurrencyEnabled> elasticConcurrencyEnabled = const SdkOmitted(),
+    SdkOptional<ListProjectsStaticIpsEnabled> staticIpsEnabled = const SdkOmitted(),
     SdkOptional<String> buildMachineTypes = const SdkOmitted(),
-    SdkOptional<ListProjectsBuildQueueConfiguration> buildQueueConfiguration =
-        const SdkOmitted(),
+    SdkOptional<ListProjectsBuildQueueConfiguration> buildQueueConfiguration = const SdkOmitted(),
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
@@ -68,56 +64,25 @@ Future<dynamic> listProjects(ClientConfig config,
   return (await sdkRequest<dynamic>('GET', '/v10/projects',
           config: config,
           query: {
-            'from': SdkQueryValue(SdkUtils.unwrapOptional(from),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'gitForkProtection': SdkQueryValue(
-                SdkUtils.unwrapOptional(gitForkProtection),
-                style: 'form',
-                explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
-                style: 'form', explode: true),
-            'repo': SdkQueryValue(SdkUtils.unwrapOptional(repo),
-                style: 'form', explode: true),
-            'repoId': SdkQueryValue(SdkUtils.unwrapOptional(repoId),
-                style: 'form', explode: true),
-            'repoUrl': SdkQueryValue(SdkUtils.unwrapOptional(repoUrl),
-                style: 'form', explode: true),
-            'excludeRepos': SdkQueryValue(SdkUtils.unwrapOptional(excludeRepos),
-                style: 'form', explode: true),
-            'edgeConfigId': SdkQueryValue(SdkUtils.unwrapOptional(edgeConfigId),
-                style: 'form', explode: true),
-            'edgeConfigTokenId': SdkQueryValue(
-                SdkUtils.unwrapOptional(edgeConfigTokenId),
-                style: 'form',
-                explode: true),
-            'deprecated': SdkQueryValue(SdkUtils.unwrapOptional(deprecated),
-                style: 'form', explode: true),
-            'elasticConcurrencyEnabled': SdkQueryValue(
-                SdkUtils.unwrapOptional(elasticConcurrencyEnabled),
-                style: 'form',
-                explode: true),
-            'staticIpsEnabled': SdkQueryValue(
-                SdkUtils.unwrapOptional(staticIpsEnabled),
-                style: 'form',
-                explode: true),
-            'buildMachineTypes': SdkQueryValue(
-                SdkUtils.unwrapOptional(buildMachineTypes),
-                style: 'form',
-                explode: true),
-            'buildQueueConfiguration': SdkQueryValue(
-                SdkUtils.unwrapOptional(buildQueueConfiguration),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'from': SdkQueryValue(SdkUtils.unwrapOptional(from), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'gitForkProtection': SdkQueryValue(SdkUtils.unwrapOptional(gitForkProtection), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
+            'repo': SdkQueryValue(SdkUtils.unwrapOptional(repo), style: 'form', explode: true),
+            'repoId': SdkQueryValue(SdkUtils.unwrapOptional(repoId), style: 'form', explode: true),
+            'repoUrl': SdkQueryValue(SdkUtils.unwrapOptional(repoUrl), style: 'form', explode: true),
+            'excludeRepos': SdkQueryValue(SdkUtils.unwrapOptional(excludeRepos), style: 'form', explode: true),
+            'edgeConfigId': SdkQueryValue(SdkUtils.unwrapOptional(edgeConfigId), style: 'form', explode: true),
+            'edgeConfigTokenId': SdkQueryValue(SdkUtils.unwrapOptional(edgeConfigTokenId), style: 'form', explode: true),
+            'deprecated': SdkQueryValue(SdkUtils.unwrapOptional(deprecated), style: 'form', explode: true),
+            'elasticConcurrencyEnabled': SdkQueryValue(SdkUtils.unwrapOptional(elasticConcurrencyEnabled), style: 'form', explode: true),
+            'staticIpsEnabled': SdkQueryValue(SdkUtils.unwrapOptional(staticIpsEnabled), style: 'form', explode: true),
+            'buildMachineTypes': SdkQueryValue(SdkUtils.unwrapOptional(buildMachineTypes), style: 'form', explode: true),
+            'buildQueueConfiguration': SdkQueryValue(SdkUtils.unwrapOptional(buildQueueConfiguration), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listProjects',
@@ -125,6 +90,7 @@ Future<dynamic> listProjects(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the OpenTelemetry trace associated with a Vercel CLI request. Provide the project identifier and request identifier to locate the trace. The response includes the trace spans and identifier, and may include resource data and a root span identifier.
 ///
@@ -149,18 +115,16 @@ Future<GetProjectTraceResponse> getProjectTrace(ClientConfig config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
             'requestId': SdkQueryValue(requestId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getProjectTrace',
-          fromJsonRaw: (value) =>
-              GetProjectTraceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetProjectTraceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a project with a required `name` and optional settings for its framework, build commands, environment variables, Git connection, and sandbox regions. Supply only the settings you want to configure; supported build and install commands can be detected automatically when set to `null`. A 200 response returns the created project object.
 ///
@@ -217,33 +181,27 @@ Future<CreateProjectResponse> createProject(ClientConfig config,
     SdkOptional<String?> buildCommand = const SdkOmitted(),
     SdkOptional<String?> commandForIgnoringBuildStep = const SdkOmitted(),
     SdkOptional<String?> devCommand = const SdkOmitted(),
-    SdkOptional<List<CreateProjectRequestBodyEnvironmentVariablesItem>>
-        environmentVariables = const SdkOmitted(),
+    SdkOptional<List<CreateProjectRequestBodyEnvironmentVariablesItem>> environmentVariables = const SdkOmitted(),
     SdkOptional<dynamic> framework = const SdkOmitted(),
-    SdkOptional<CreateProjectRequestBodyGitRepository> gitRepository =
-        const SdkOmitted(),
+    SdkOptional<CreateProjectRequestBodyGitRepository> gitRepository = const SdkOmitted(),
     SdkOptional<String?> installCommand = const SdkOmitted(),
     SdkOptional<bool> skipGitConnectDuringLink = const SdkOmitted(),
-    SdkOptional<CreateProjectRequestBodySsoProtection?>
-        ssoProtection = const SdkOmitted(),
+    SdkOptional<CreateProjectRequestBodySsoProtection?> ssoProtection = const SdkOmitted(),
     SdkOptional<CreateProjectRequestBodySandbox> sandbox = const SdkOmitted(),
     SdkOptional<String?> outputDirectory = const SdkOmitted(),
     SdkOptional<bool?> publicSource = const SdkOmitted(),
     SdkOptional<String?> rootDirectory = const SdkOmitted(),
     SdkOptional<String?> serverlessFunctionRegion = const SdkOmitted(),
     SdkOptional<bool> serverlessFunctionZeroConfigFailover = const SdkOmitted(),
-    SdkOptional<CreateProjectRequestBodyOidcTokenConfig> oidcTokenConfig =
-        const SdkOmitted(),
+    SdkOptional<CreateProjectRequestBodyOidcTokenConfig> oidcTokenConfig = const SdkOmitted(),
     SdkOptional<bool> enableAffectedProjectsDeployments = const SdkOmitted(),
-    SdkOptional<CreateProjectRequestBodyResourceConfig> resourceConfig =
-        const SdkOmitted(),
+    SdkOptional<CreateProjectRequestBodyResourceConfig> resourceConfig = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 100);
   if (previewDeploymentSuffix is SdkPresent<String?>) {
     final previewDeploymentSuffixValue = previewDeploymentSuffix.value;
     if (previewDeploymentSuffixValue != null) {
-      validateLength('previewDeploymentSuffix', previewDeploymentSuffixValue,
-          max: 253);
+      validateLength('previewDeploymentSuffix', previewDeploymentSuffixValue, max: 253);
     }
   }
   if (buildCommand is SdkPresent<String?>) {
@@ -255,9 +213,7 @@ Future<CreateProjectResponse> createProject(ClientConfig config,
   if (commandForIgnoringBuildStep is SdkPresent<String?>) {
     final commandForIgnoringBuildStepValue = commandForIgnoringBuildStep.value;
     if (commandForIgnoringBuildStepValue != null) {
-      validateLength(
-          'commandForIgnoringBuildStep', commandForIgnoringBuildStepValue,
-          max: 256);
+      validateLength('commandForIgnoringBuildStep', commandForIgnoringBuildStepValue, max: 256);
     }
   }
   if (devCommand is SdkPresent<String?>) {
@@ -287,61 +243,48 @@ Future<CreateProjectResponse> createProject(ClientConfig config,
   if (serverlessFunctionRegion is SdkPresent<String?>) {
     final serverlessFunctionRegionValue = serverlessFunctionRegion.value;
     if (serverlessFunctionRegionValue != null) {
-      validateLength('serverlessFunctionRegion', serverlessFunctionRegionValue,
-          max: 4);
+      validateLength('serverlessFunctionRegion', serverlessFunctionRegionValue, max: 4);
     }
   }
 
   return (await sdkRequest<CreateProjectResponse>('POST', '/v11/projects',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': name,
-            'enablePreviewFeedback':
-                SdkUtils.unwrapOptional(enablePreviewFeedback),
-            'enableProductionFeedback':
-                SdkUtils.unwrapOptional(enableProductionFeedback),
-            'previewDeploymentsDisabled':
-                SdkUtils.unwrapOptional(previewDeploymentsDisabled),
-            'previewDeploymentSuffix':
-                SdkUtils.unwrapOptional(previewDeploymentSuffix),
+            'enablePreviewFeedback': SdkUtils.unwrapOptional(enablePreviewFeedback),
+            'enableProductionFeedback': SdkUtils.unwrapOptional(enableProductionFeedback),
+            'previewDeploymentsDisabled': SdkUtils.unwrapOptional(previewDeploymentsDisabled),
+            'previewDeploymentSuffix': SdkUtils.unwrapOptional(previewDeploymentSuffix),
             'buildCommand': SdkUtils.unwrapOptional(buildCommand),
-            'commandForIgnoringBuildStep':
-                SdkUtils.unwrapOptional(commandForIgnoringBuildStep),
+            'commandForIgnoringBuildStep': SdkUtils.unwrapOptional(commandForIgnoringBuildStep),
             'devCommand': SdkUtils.unwrapOptional(devCommand),
-            'environmentVariables':
-                SdkUtils.unwrapOptional(environmentVariables),
+            'environmentVariables': SdkUtils.unwrapOptional(environmentVariables),
             'framework': SdkUtils.unwrapOptional(framework),
             'gitRepository': SdkUtils.unwrapOptional(gitRepository),
             'installCommand': SdkUtils.unwrapOptional(installCommand),
-            'skipGitConnectDuringLink':
-                SdkUtils.unwrapOptional(skipGitConnectDuringLink),
+            'skipGitConnectDuringLink': SdkUtils.unwrapOptional(skipGitConnectDuringLink),
             'ssoProtection': SdkUtils.unwrapOptional(ssoProtection),
             'sandbox': SdkUtils.unwrapOptional(sandbox),
             'outputDirectory': SdkUtils.unwrapOptional(outputDirectory),
             'publicSource': SdkUtils.unwrapOptional(publicSource),
             'rootDirectory': SdkUtils.unwrapOptional(rootDirectory),
-            'serverlessFunctionRegion':
-                SdkUtils.unwrapOptional(serverlessFunctionRegion),
-            'serverlessFunctionZeroConfigFailover':
-                SdkUtils.unwrapOptional(serverlessFunctionZeroConfigFailover),
+            'serverlessFunctionRegion': SdkUtils.unwrapOptional(serverlessFunctionRegion),
+            'serverlessFunctionZeroConfigFailover': SdkUtils.unwrapOptional(serverlessFunctionZeroConfigFailover),
             'oidcTokenConfig': SdkUtils.unwrapOptional(oidcTokenConfig),
-            'enableAffectedProjectsDeployments':
-                SdkUtils.unwrapOptional(enableAffectedProjectsDeployments),
+            'enableAffectedProjectsDeployments': SdkUtils.unwrapOptional(enableAffectedProjectsDeployments),
             'resourceConfig': SdkUtils.unwrapOptional(resourceConfig)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createProject',
-          fromJsonRaw: (value) =>
-              CreateProjectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateProjectResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates an OIDC token for a project identified by its ID or name. Provide the project identifier and optionally specify a `source` to identify what is calling the endpoint. The response contains the generated token.
 ///
@@ -366,19 +309,17 @@ Future<GetProjectTokenResponse> getProjectToken(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/token',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'source': SdkUtils.unwrapOptional(source)},
           decoder: SdkResponseDecoder.json,
           operationId: 'getProjectToken',
-          fromJsonRaw: (value) =>
-              GetProjectTokenResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetProjectTokenResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a short-lived HS256 JWT scoped to a deployment hostname. Supply the project identifier and deployment hostname in the request body to define the token scope. The Vercel CLI presents the token to the proxy with requests it wants traced.
 ///
@@ -398,19 +339,17 @@ Future<CreateTraceSessionResponse> createTraceSession(ClientConfig config,
           'POST', '/v1/projects/traces/session',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'projectId': projectId, 'hostname': hostname},
           decoder: SdkResponseDecoder.json,
           operationId: 'createTraceSession',
-          fromJsonRaw: (value) => CreateTraceSessionResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateTraceSessionResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves project information using the project's ID or name. Use the `teamId` or `slug` query parameter to make the request on behalf of a team.
 ///
@@ -428,18 +367,16 @@ Future<GetProjectsResponse> getProjects(ClientConfig config,
           'GET', '/v9/projects/${Uri.encodeComponent(idOrName.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getProjects',
-          fromJsonRaw: (value) =>
-              GetProjectsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetProjectsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates configuration fields for a project identified by its ID or name. Submit the settings you want to change; supported build and install commands can be set to `null` for automatic detection. The response contains the updated project object.
 ///
@@ -531,20 +468,17 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
     SdkOptional<bool> customerSupportCodeVisibility = const SdkOmitted(),
     SdkOptional<String?> devCommand = const SdkOmitted(),
     SdkOptional<bool> directoryListing = const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyFramework?> framework =
-        const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyFramework?> framework = const SdkOmitted(),
     SdkOptional<bool> gitForkProtection = const SdkOmitted(),
     SdkOptional<bool> gitLfs = const SdkOmitted(),
     SdkOptional<bool> protectedSourcemaps = const SdkOmitted(),
     SdkOptional<String?> installCommand = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyNodeVersion> nodeVersion =
-        const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyNodeVersion> nodeVersion = const SdkOmitted(),
     SdkOptional<String?> outputDirectory = const SdkOmitted(),
     SdkOptional<bool?> previewDeploymentsDisabled = const SdkOmitted(),
     SdkOptional<String?> previewDeploymentSuffix = const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyResourceConfig> resourceConfig =
-        const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyResourceConfig> resourceConfig = const SdkOmitted(),
     SdkOptional<bool?> publicSource = const SdkOmitted(),
     SdkOptional<String?> rootDirectory = const SdkOmitted(),
     SdkOptional<String?> serverlessFunctionRegion = const SdkOmitted(),
@@ -558,30 +492,19 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
     SdkOptional<bool?> enableProductionFeedback = const SdkOmitted(),
     SdkOptional<bool> enableAffectedProjectsDeployments = const SdkOmitted(),
     SdkOptional<bool> enableExternalRewriteCaching = const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyStaticIps> staticIps =
-        const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyStaticIps> staticIps = const SdkOmitted(),
     SdkOptional<UpdateProjectRequestBodyTracing?> tracing = const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyOidcTokenConfig> oidcTokenConfig =
-        const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyPasswordProtection?>
-        passwordProtection = const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyPassport?> passport =
-        const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyOidcTokenConfig> oidcTokenConfig = const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyPasswordProtection?> passwordProtection = const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyPassport?> passport = const SdkOmitted(),
     SdkOptional<UpdateProjectRequestBodySandbox> sandbox = const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodySsoProtection?> ssoProtection =
-        const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyTrustedIps?> trustedIps =
-        const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyTrustedSources?> trustedSources =
-        const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestDeploymentPolicy> deploymentPolicy =
-        const SdkOmitted(),
-    SdkOptional<UpdateProjectRequestBodyOptionsAllowlist?> optionsAllowlist =
-        const SdkOmitted(),
-    SdkOptional<List<Map<String, dynamic>>?> connectConfigurations =
-        const SdkOmitted(),
-    SdkOptional<List<UpdateProjectRequestBodyDismissedToastsItem>>
-        dismissedToasts = const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodySsoProtection?> ssoProtection = const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyTrustedIps?> trustedIps = const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyTrustedSources?> trustedSources = const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestDeploymentPolicy> deploymentPolicy = const SdkOmitted(),
+    SdkOptional<UpdateProjectRequestBodyOptionsAllowlist?> optionsAllowlist = const SdkOmitted(),
+    SdkOptional<List<Map<String, dynamic>>?> connectConfigurations = const SdkOmitted(),
+    SdkOptional<List<UpdateProjectRequestBodyDismissedToastsItem>> dismissedToasts = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (buildCommand is SdkPresent<String?>) {
     final buildCommandValue = buildCommand.value;
@@ -592,9 +515,7 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
   if (commandForIgnoringBuildStep is SdkPresent<String?>) {
     final commandForIgnoringBuildStepValue = commandForIgnoringBuildStep.value;
     if (commandForIgnoringBuildStepValue != null) {
-      validateLength(
-          'commandForIgnoringBuildStep', commandForIgnoringBuildStepValue,
-          max: 256);
+      validateLength('commandForIgnoringBuildStep', commandForIgnoringBuildStepValue, max: 256);
     }
   }
   if (devCommand is SdkPresent<String?>) {
@@ -621,8 +542,7 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
   if (previewDeploymentSuffix is SdkPresent<String?>) {
     final previewDeploymentSuffixValue = previewDeploymentSuffix.value;
     if (previewDeploymentSuffixValue != null) {
-      validateLength('previewDeploymentSuffix', previewDeploymentSuffixValue,
-          max: 253);
+      validateLength('previewDeploymentSuffix', previewDeploymentSuffixValue, max: 253);
     }
   }
   if (rootDirectory is SdkPresent<String?>) {
@@ -634,31 +554,25 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
   if (serverlessFunctionRegion is SdkPresent<String?>) {
     final serverlessFunctionRegionValue = serverlessFunctionRegion.value;
     if (serverlessFunctionRegionValue != null) {
-      validateLength('serverlessFunctionRegion', serverlessFunctionRegionValue,
-          max: 4);
+      validateLength('serverlessFunctionRegion', serverlessFunctionRegionValue, max: 4);
     }
   }
   if (skewProtectionBoundaryAt is SdkPresent<int>) {
-    validateRange('skewProtectionBoundaryAt', skewProtectionBoundaryAt.value,
-        min: 0);
+    validateRange('skewProtectionBoundaryAt', skewProtectionBoundaryAt.value, min: 0);
   }
   if (skewProtectionMaxAge is SdkPresent<int>) {
     validateRange('skewProtectionMaxAge', skewProtectionMaxAge.value, min: 0);
   }
   if (skewProtectionAllowedDomains is SdkPresent<List<String>>) {
-    validateItems(
-        'skewProtectionAllowedDomains', skewProtectionAllowedDomains.value,
-        max: 12);
+    validateItems('skewProtectionAllowedDomains', skewProtectionAllowedDomains.value, max: 12);
   }
   if (connectConfigurations is SdkPresent<List<Map<String, dynamic>>?>) {
     final connectConfigurationsValue = connectConfigurations.value;
     if (connectConfigurationsValue != null) {
-      validateItems('connectConfigurations', connectConfigurationsValue,
-          min: 1);
+      validateItems('connectConfigurations', connectConfigurationsValue, min: 1);
     }
   }
-  if (dismissedToasts
-      is SdkPresent<List<UpdateProjectRequestBodyDismissedToastsItem>>) {
+  if (dismissedToasts is SdkPresent<List<UpdateProjectRequestBodyDismissedToastsItem>>) {
     validateItems('dismissedToasts', dismissedToasts.value, min: 0, max: 50);
   }
 
@@ -666,23 +580,16 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
           'PATCH', '/v9/projects/${Uri.encodeComponent(idOrName.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
-            'autoExposeSystemEnvs':
-                SdkUtils.unwrapOptional(autoExposeSystemEnvs),
-            'autoAssignCustomDomains':
-                SdkUtils.unwrapOptional(autoAssignCustomDomains),
-            'autoAssignCustomDomainsUpdatedBy':
-                SdkUtils.unwrapOptional(autoAssignCustomDomainsUpdatedBy),
+            'autoExposeSystemEnvs': SdkUtils.unwrapOptional(autoExposeSystemEnvs),
+            'autoAssignCustomDomains': SdkUtils.unwrapOptional(autoAssignCustomDomains),
+            'autoAssignCustomDomainsUpdatedBy': SdkUtils.unwrapOptional(autoAssignCustomDomainsUpdatedBy),
             'buildCommand': SdkUtils.unwrapOptional(buildCommand),
-            'commandForIgnoringBuildStep':
-                SdkUtils.unwrapOptional(commandForIgnoringBuildStep),
-            'customerSupportCodeVisibility':
-                SdkUtils.unwrapOptional(customerSupportCodeVisibility),
+            'commandForIgnoringBuildStep': SdkUtils.unwrapOptional(commandForIgnoringBuildStep),
+            'customerSupportCodeVisibility': SdkUtils.unwrapOptional(customerSupportCodeVisibility),
             'devCommand': SdkUtils.unwrapOptional(devCommand),
             'directoryListing': SdkUtils.unwrapOptional(directoryListing),
             'framework': SdkUtils.unwrapOptional(framework),
@@ -693,35 +600,22 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
             'name': SdkUtils.unwrapOptional(name),
             'nodeVersion': SdkUtils.unwrapOptional(nodeVersion),
             'outputDirectory': SdkUtils.unwrapOptional(outputDirectory),
-            'previewDeploymentsDisabled':
-                SdkUtils.unwrapOptional(previewDeploymentsDisabled),
-            'previewDeploymentSuffix':
-                SdkUtils.unwrapOptional(previewDeploymentSuffix),
+            'previewDeploymentsDisabled': SdkUtils.unwrapOptional(previewDeploymentsDisabled),
+            'previewDeploymentSuffix': SdkUtils.unwrapOptional(previewDeploymentSuffix),
             'resourceConfig': SdkUtils.unwrapOptional(resourceConfig),
             'publicSource': SdkUtils.unwrapOptional(publicSource),
             'rootDirectory': SdkUtils.unwrapOptional(rootDirectory),
-            'serverlessFunctionRegion':
-                SdkUtils.unwrapOptional(serverlessFunctionRegion),
-            'serverlessFunctionZeroConfigFailover':
-                SdkUtils.unwrapOptional(serverlessFunctionZeroConfigFailover),
-            'skewProtectionBoundaryAt':
-                SdkUtils.unwrapOptional(skewProtectionBoundaryAt),
-            'skewProtectionMaxAge':
-                SdkUtils.unwrapOptional(skewProtectionMaxAge),
-            'skewProtectionAllowedDomains':
-                SdkUtils.unwrapOptional(skewProtectionAllowedDomains),
-            'skipGitConnectDuringLink':
-                SdkUtils.unwrapOptional(skipGitConnectDuringLink),
-            'sourceFilesOutsideRootDirectory':
-                SdkUtils.unwrapOptional(sourceFilesOutsideRootDirectory),
-            'enablePreviewFeedback':
-                SdkUtils.unwrapOptional(enablePreviewFeedback),
-            'enableProductionFeedback':
-                SdkUtils.unwrapOptional(enableProductionFeedback),
-            'enableAffectedProjectsDeployments':
-                SdkUtils.unwrapOptional(enableAffectedProjectsDeployments),
-            'enableExternalRewriteCaching':
-                SdkUtils.unwrapOptional(enableExternalRewriteCaching),
+            'serverlessFunctionRegion': SdkUtils.unwrapOptional(serverlessFunctionRegion),
+            'serverlessFunctionZeroConfigFailover': SdkUtils.unwrapOptional(serverlessFunctionZeroConfigFailover),
+            'skewProtectionBoundaryAt': SdkUtils.unwrapOptional(skewProtectionBoundaryAt),
+            'skewProtectionMaxAge': SdkUtils.unwrapOptional(skewProtectionMaxAge),
+            'skewProtectionAllowedDomains': SdkUtils.unwrapOptional(skewProtectionAllowedDomains),
+            'skipGitConnectDuringLink': SdkUtils.unwrapOptional(skipGitConnectDuringLink),
+            'sourceFilesOutsideRootDirectory': SdkUtils.unwrapOptional(sourceFilesOutsideRootDirectory),
+            'enablePreviewFeedback': SdkUtils.unwrapOptional(enablePreviewFeedback),
+            'enableProductionFeedback': SdkUtils.unwrapOptional(enableProductionFeedback),
+            'enableAffectedProjectsDeployments': SdkUtils.unwrapOptional(enableAffectedProjectsDeployments),
+            'enableExternalRewriteCaching': SdkUtils.unwrapOptional(enableExternalRewriteCaching),
             'staticIps': SdkUtils.unwrapOptional(staticIps),
             'tracing': SdkUtils.unwrapOptional(tracing),
             'oidcTokenConfig': SdkUtils.unwrapOptional(oidcTokenConfig),
@@ -733,17 +627,16 @@ Future<UpdateProjectResponse> updateProject(ClientConfig config,
             'trustedSources': SdkUtils.unwrapOptional(trustedSources),
             'deploymentPolicy': SdkUtils.unwrapOptional(deploymentPolicy),
             'optionsAllowlist': SdkUtils.unwrapOptional(optionsAllowlist),
-            'connectConfigurations':
-                SdkUtils.unwrapOptional(connectConfigurations),
+            'connectConfigurations': SdkUtils.unwrapOptional(connectConfigurations),
             'dismissedToasts': SdkUtils.unwrapOptional(dismissedToasts)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateProject',
-          fromJsonRaw: (value) =>
-              UpdateProjectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateProjectResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a project identified by its ID or name. Use the `teamId` or `slug` query parameter to make the request on behalf of a team. A 204 response confirms the project was removed.
 ///
@@ -761,16 +654,15 @@ Future<void> deleteProject(ClientConfig config,
           'DELETE', '/v9/projects/${Uri.encodeComponent(idOrName.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteProject',
           options: requestOptions))
       .data;
 }
+
 
 /// Uploads an image to use as the avatar for a project identified by its ID or name. Send the raw image bytes and declare the image type with the `Content-Type` header; accepted formats are JPG, PNG, and SVG. SVG images are sanitized and optimized before storage, and the response returns the updated project.
 ///
@@ -789,20 +681,18 @@ Future<UploadProjectAvatarResponse> uploadProjectAvatar(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/avatar',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: SdkUtils.unwrapOptional(body),
           contentType: 'application/octet-stream',
           decoder: SdkResponseDecoder.json,
           operationId: 'uploadProjectAvatar',
-          fromJsonRaw: (value) => UploadProjectAvatarResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UploadProjectAvatarResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Removes the avatar assignment from a project identified by its ID or name. This clears the project's avatar field so a later production deployment can run avatar auto-detection again, but it does not delete the stored image. The response returns the updated project.
 ///
@@ -820,18 +710,16 @@ Future<DeleteProjectAvatarResponse> deleteProjectAvatar(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/avatar',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteProjectAvatar',
-          fromJsonRaw: (value) => DeleteProjectAvatarResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteProjectAvatarResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists domains associated with a project. Use the query parameters to filter by environment, branch, redirect, or verification status, and to control the result limit and sort order.
 ///
@@ -874,34 +762,19 @@ Future<ListProjectsDomainsResponse> listProjectsDomains(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/domains',
           config: config,
           query: {
-            'production': SdkQueryValue(SdkUtils.unwrapOptional(production),
-                style: 'form', explode: true),
-            'target': SdkQueryValue(SdkUtils.unwrapOptional(target),
-                style: 'form', explode: true),
-            'customEnvironmentId': SdkQueryValue(
-                SdkUtils.unwrapOptional(customEnvironmentId),
-                style: 'form',
-                explode: true),
-            'gitBranch': SdkQueryValue(SdkUtils.unwrapOptional(gitBranch),
-                style: 'form', explode: true),
-            'redirects': SdkQueryValue(SdkUtils.unwrapOptional(redirects),
-                style: 'form', explode: true),
-            'redirect': SdkQueryValue(SdkUtils.unwrapOptional(redirect),
-                style: 'form', explode: true),
-            'verified': SdkQueryValue(SdkUtils.unwrapOptional(verified),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'order': SdkQueryValue(SdkUtils.unwrapOptional(order),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'production': SdkQueryValue(SdkUtils.unwrapOptional(production), style: 'form', explode: true),
+            'target': SdkQueryValue(SdkUtils.unwrapOptional(target), style: 'form', explode: true),
+            'customEnvironmentId': SdkQueryValue(SdkUtils.unwrapOptional(customEnvironmentId), style: 'form', explode: true),
+            'gitBranch': SdkQueryValue(SdkUtils.unwrapOptional(gitBranch), style: 'form', explode: true),
+            'redirects': SdkQueryValue(SdkUtils.unwrapOptional(redirects), style: 'form', explode: true),
+            'redirect': SdkQueryValue(SdkUtils.unwrapOptional(redirect), style: 'form', explode: true),
+            'verified': SdkQueryValue(SdkUtils.unwrapOptional(verified), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'order': SdkQueryValue(SdkUtils.unwrapOptional(order), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listProjectsDomains',
@@ -909,6 +782,7 @@ Future<ListProjectsDomainsResponse> listProjectsDomains(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a domain associated with a project. Use the project identifier or name and the domain name to identify the domain and inspect its configuration and verification status.
 ///
@@ -928,18 +802,16 @@ Future<GetProjectDomainResponse> getProjectDomain(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/domains/${Uri.encodeComponent(domain.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getProjectDomain',
-          fromJsonRaw: (value) =>
-              GetProjectDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetProjectDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a project domain’s configuration, including its Git branch association and redirect settings. Supply only the configuration fields you want to change; `redirectStatusCode` accepts 301, 302, 307, 308, or null.
 ///
@@ -959,8 +831,7 @@ Future<UpdateProjectDomainResponse> updateProjectDomain(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String?> gitBranch = const SdkOmitted(),
     SdkOptional<String?> redirect = const SdkOmitted(),
-    SdkOptional<UpdateProjectDomainRequestBodyRedirectStatusCode?>
-        redirectStatusCode = const SdkOmitted(),
+    SdkOptional<UpdateProjectDomainRequestBodyRedirectStatusCode?> redirectStatusCode = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (gitBranch is SdkPresent<String?>) {
     final gitBranchValue = gitBranch.value;
@@ -973,10 +844,8 @@ Future<UpdateProjectDomainResponse> updateProjectDomain(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/domains/${Uri.encodeComponent(domain.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'gitBranch': SdkUtils.unwrapOptional(gitBranch),
@@ -985,11 +854,11 @@ Future<UpdateProjectDomainResponse> updateProjectDomain(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateProjectDomain',
-          fromJsonRaw: (value) => UpdateProjectDomainResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateProjectDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Removes a domain from a project. Set `removeRedirects` to also remove project domains that redirect to the domain being deleted.
 ///
@@ -1012,10 +881,8 @@ Future<Map<String, dynamic>> removeProjectDomain(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/domains/${Uri.encodeComponent(domain.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'removeRedirects': SdkUtils.unwrapOptional(removeRedirects)},
           decoder: SdkResponseDecoder.json,
@@ -1024,6 +891,7 @@ Future<Map<String, dynamic>> removeProjectDomain(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a project-domain association for a project. Provide the domain name and optionally configure its Git branch, custom environment, or redirect; an unverified domain must complete the returned verification challenge before it can be used as an alias.
 ///
@@ -1046,8 +914,7 @@ Future<AddProjectDomainResponse> addProjectDomain(ClientConfig config,
     SdkOptional<String?> gitBranch = const SdkOmitted(),
     SdkOptional<String> customEnvironmentId = const SdkOmitted(),
     SdkOptional<String?> redirect = const SdkOmitted(),
-    SdkOptional<AddProjectDomainRequestBodyRedirectStatusCode?>
-        redirectStatusCode = const SdkOmitted(),
+    SdkOptional<AddProjectDomainRequestBodyRedirectStatusCode?> redirectStatusCode = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (gitBranch is SdkPresent<String?>) {
     final gitBranchValue = gitBranch.value;
@@ -1060,10 +927,8 @@ Future<AddProjectDomainResponse> addProjectDomain(ClientConfig config,
           '/v10/projects/${Uri.encodeComponent(idOrName.toString())}/domains',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -1074,11 +939,11 @@ Future<AddProjectDomainResponse> addProjectDomain(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'addProjectDomain',
-          fromJsonRaw: (value) =>
-              AddProjectDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AddProjectDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Moves a domain from one project to another and can move the domain's redirects with it. Supply the target `projectId`; optionally set `gitBranch`, `redirect`, or `redirectStatusCode` to configure the domain on the destination project.
 ///
@@ -1100,8 +965,7 @@ Future<MoveProjectDomainResponse> moveProjectDomain(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String?> gitBranch = const SdkOmitted(),
     SdkOptional<String?> redirect = const SdkOmitted(),
-    SdkOptional<MoveProjectDomainRequestBodyRedirectStatusCode?>
-        redirectStatusCode = const SdkOmitted(),
+    SdkOptional<MoveProjectDomainRequestBodyRedirectStatusCode?> redirectStatusCode = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (gitBranch is SdkPresent<String?>) {
     final gitBranchValue = gitBranch.value;
@@ -1114,10 +978,8 @@ Future<MoveProjectDomainResponse> moveProjectDomain(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/domains/${Uri.encodeComponent(domain.toString())}/move',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'projectId': projectId,
@@ -1127,11 +989,11 @@ Future<MoveProjectDomainResponse> moveProjectDomain(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'moveProjectDomain',
-          fromJsonRaw: (value) =>
-              MoveProjectDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => MoveProjectDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Verifies a project domain by checking its verification challenge when the domain is not yet verified. Use this operation after completing one of the challenges associated with the domain.
 ///
@@ -1151,18 +1013,16 @@ Future<VerifyProjectDomainResponse> verifyProjectDomain(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/domains/${Uri.encodeComponent(domain.toString())}/verify',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'verifyProjectDomain',
-          fromJsonRaw: (value) => VerifyProjectDomainResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => VerifyProjectDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists environment variables for a project, identified by its project ID or name. Use `gitBranch` to filter preview-target variables by branch, or select a custom environment with `customEnvironmentId` or `customEnvironmentSlug`.
 ///
@@ -1197,24 +1057,13 @@ Future<FilterProjectEnvsResponse> filterProjectEnvs(ClientConfig config,
           '/v10/projects/${Uri.encodeComponent(idOrName.toString())}/env',
           config: config,
           query: {
-            'gitBranch': SdkQueryValue(SdkUtils.unwrapOptional(gitBranch),
-                style: 'form', explode: true),
-            'decrypt': SdkQueryValue(SdkUtils.unwrapOptional(decrypt),
-                style: 'form', explode: true),
-            'source': SdkQueryValue(SdkUtils.unwrapOptional(source),
-                style: 'form', explode: true),
-            'customEnvironmentId': SdkQueryValue(
-                SdkUtils.unwrapOptional(customEnvironmentId),
-                style: 'form',
-                explode: true),
-            'customEnvironmentSlug': SdkQueryValue(
-                SdkUtils.unwrapOptional(customEnvironmentSlug),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'gitBranch': SdkQueryValue(SdkUtils.unwrapOptional(gitBranch), style: 'form', explode: true),
+            'decrypt': SdkQueryValue(SdkUtils.unwrapOptional(decrypt), style: 'form', explode: true),
+            'source': SdkQueryValue(SdkUtils.unwrapOptional(source), style: 'form', explode: true),
+            'customEnvironmentId': SdkQueryValue(SdkUtils.unwrapOptional(customEnvironmentId), style: 'form', explode: true),
+            'customEnvironmentSlug': SdkQueryValue(SdkUtils.unwrapOptional(customEnvironmentSlug), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'filterProjectEnvs',
@@ -1222,6 +1071,7 @@ Future<FilterProjectEnvsResponse> filterProjectEnvs(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Creates one or more environment variables for a project. Provide `key`, `value`, and `type`, and specify either `target` or `customEnvironmentIds`; use `upsert` to update an existing variable instead of creating a duplicate.
 ///
@@ -1242,21 +1092,18 @@ Future<CreateProjectEnvResponse> createProjectEnv(ClientConfig config,
           '/v10/projects/${Uri.encodeComponent(idOrName.toString())}/env',
           config: config,
           query: {
-            'upsert': SdkQueryValue(SdkUtils.unwrapOptional(upsert),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'upsert': SdkQueryValue(SdkUtils.unwrapOptional(upsert), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: body,
           decoder: SdkResponseDecoder.json,
           operationId: 'createProjectEnv',
-          fromJsonRaw: (value) =>
-              CreateProjectEnvResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateProjectEnvResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves an environment variable for a project, including its decrypted value when available. Use the project identifier or name together with the environment variable's unique ID to select the variable.
 ///
@@ -1276,10 +1123,8 @@ Future<GetProjectEnvResponse> getProjectEnv(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/env/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getProjectEnv',
@@ -1287,6 +1132,7 @@ Future<GetProjectEnvResponse> getProjectEnv(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a specific environment variable from a project. Identify the project and variable in the path, and use `customEnvironmentId` when the removal applies to a particular custom environment.
 ///
@@ -1309,14 +1155,9 @@ Future<dynamic> removeProjectEnv(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/env/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'customEnvironmentId': SdkQueryValue(
-                SdkUtils.unwrapOptional(customEnvironmentId),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'customEnvironmentId': SdkQueryValue(SdkUtils.unwrapOptional(customEnvironmentId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'removeProjectEnv',
@@ -1324,6 +1165,7 @@ Future<dynamic> removeProjectEnv(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Updates an environment variable belonging to a project. Send only the properties you want to change, such as `value`, `target`, or `comment`; the schema does not require any particular body property.
 ///
@@ -1348,8 +1190,7 @@ Future<EditProjectEnvResponse> editProjectEnv(ClientConfig config,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String> key = const SdkOmitted(),
-    SdkOptional<List<EditProjectEnvRequestBodyTargetItem>> target =
-        const SdkOmitted(),
+    SdkOptional<List<EditProjectEnvRequestBodyTargetItem>> target = const SdkOmitted(),
     SdkOptional<String?> gitBranch = const SdkOmitted(),
     SdkOptional<EditProjectEnvRequestBodyType> type_ = const SdkOmitted(),
     SdkOptional<String> value_ = const SdkOmitted(),
@@ -1370,10 +1211,8 @@ Future<EditProjectEnvResponse> editProjectEnv(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/env/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'key': SdkUtils.unwrapOptional(key),
@@ -1381,17 +1220,16 @@ Future<EditProjectEnvResponse> editProjectEnv(ClientConfig config,
             'gitBranch': SdkUtils.unwrapOptional(gitBranch),
             'type': SdkUtils.unwrapOptional(type_),
             'value': SdkUtils.unwrapOptional(value_),
-            'customEnvironmentIds':
-                SdkUtils.unwrapOptional(customEnvironmentIds),
+            'customEnvironmentIds': SdkUtils.unwrapOptional(customEnvironmentIds),
             'comment': SdkUtils.unwrapOptional(comment)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'editProjectEnv',
-          fromJsonRaw: (value) =>
-              EditProjectEnvResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => EditProjectEnvResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes multiple environment variables from a project in one request. Provide their IDs in the `ids` array, which must contain between 1 and 1,000 entries.
 ///
@@ -1413,19 +1251,17 @@ Future<BatchRemoveProjectEnvResponse> batchRemoveProjectEnv(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/env',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'ids': ids},
           decoder: SdkResponseDecoder.json,
           operationId: 'batchRemoveProjectEnv',
-          fromJsonRaw: (value) => BatchRemoveProjectEnvResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => BatchRemoveProjectEnvResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a request to transfer a project from one team to another. Use `idOrName` to identify the project, and optionally provide callback details to receive a signed webhook when the transfer is accepted. The response includes a transfer code that remains valid for 24 hours and can be used by another team to accept the request.
 ///
@@ -1437,22 +1273,20 @@ Future<BatchRemoveProjectEnvResponse> batchRemoveProjectEnv(ClientConfig config,
 /// [callbackUrl] The URL to send a webhook to when the transfer is accepted.
 /// [callbackSecret] The secret to use to sign the webhook payload with
 ///   HMAC-SHA256.
-Future<CreateProjectTransferRequestResponse> createProjectTransferRequest(
-    ClientConfig config,
-    {required String idOrName,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<String> callbackUrl = const SdkOmitted(),
-    SdkOptional<String> callbackSecret = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<CreateProjectTransferRequestResponse>
+    createProjectTransferRequest(ClientConfig config,
+        {required String idOrName,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<String> callbackUrl = const SdkOmitted(),
+        SdkOptional<String> callbackSecret = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<CreateProjectTransferRequestResponse>('POST',
           '/projects/${Uri.encodeComponent(idOrName.toString())}/transfer-request',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'callbackUrl': SdkUtils.unwrapOptional(callbackUrl),
@@ -1460,11 +1294,11 @@ Future<CreateProjectTransferRequestResponse> createProjectTransferRequest(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createProjectTransferRequest',
-          fromJsonRaw: (value) => CreateProjectTransferRequestResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateProjectTransferRequestResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Accepts a project transfer request initiated by another team. Use the `code` from the transfer request and optionally set the new project name, paid features, or accepted policies. The transfer response includes the project name and details about partner calls, resource transfer errors, and transferred stores.
 ///
@@ -1474,19 +1308,15 @@ Future<CreateProjectTransferRequestResponse> createProjectTransferRequest(
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
 /// [newProjectName] The desired name for the project
-Future<AcceptProjectTransferRequestResponse> acceptProjectTransferRequest(
-    ClientConfig config,
-    {required String code,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<String> newProjectName = const SdkOmitted(),
-    SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures>
-        paidFeatures = const SdkOmitted(),
-    SdkOptional<
-            Map<String,
-                AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>
-        acceptedPolicies = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AcceptProjectTransferRequestResponse>
+    acceptProjectTransferRequest(ClientConfig config,
+        {required String code,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<String> newProjectName = const SdkOmitted(),
+        SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures> paidFeatures = const SdkOmitted(),
+        SdkOptional<Map<String, AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>> acceptedPolicies = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (newProjectName is SdkPresent<String>) {
     validateLength('newProjectName', newProjectName.value, max: 100);
   }
@@ -1495,10 +1325,8 @@ Future<AcceptProjectTransferRequestResponse> acceptProjectTransferRequest(
           '/projects/transfer-request/${Uri.encodeComponent(code.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'newProjectName': SdkUtils.unwrapOptional(newProjectName),
@@ -1507,11 +1335,11 @@ Future<AcceptProjectTransferRequestResponse> acceptProjectTransferRequest(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'acceptProjectTransferRequest',
-          fromJsonRaw: (value) => AcceptProjectTransferRequestResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AcceptProjectTransferRequestResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a project's deployment protection automation bypass settings. Use `generate` to create a bypass, `revoke` to revoke one and optionally regenerate it, or `update` to change an existing bypass. If none of these actions is provided, the API generates a new random secret.
 ///
@@ -1525,26 +1353,21 @@ Future<AcceptProjectTransferRequestResponse> acceptProjectTransferRequest(
 /// [generate] Generate a new secret. If neither generate or revoke are
 ///   provided, a new random secret will be generated.
 /// [update] Update an existing bypass
-Future<UpdateProjectProtectionBypassResponse> updateProjectProtectionBypass(
-    ClientConfig config,
-    {required String idOrName,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke> revoke =
-        const SdkOmitted(),
-    SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate> generate =
-        const SdkOmitted(),
-    SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate> update =
-        const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<UpdateProjectProtectionBypassResponse>
+    updateProjectProtectionBypass(ClientConfig config,
+        {required String idOrName,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke> revoke = const SdkOmitted(),
+        SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate> generate = const SdkOmitted(),
+        SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate> update = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateProjectProtectionBypassResponse>('PATCH',
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/protection-bypass',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'revoke': SdkUtils.unwrapOptional(revoke),
@@ -1553,12 +1376,11 @@ Future<UpdateProjectProtectionBypassResponse> updateProjectProtectionBypass(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateProjectProtectionBypass',
-          fromJsonRaw: (value) =>
-              UpdateProjectProtectionBypassResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateProjectProtectionBypassResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Requests a rollback that points production traffic to a previous production deployment. Use `projectId` to identify the project and `deploymentId` to select the deployment to roll back to; optionally provide `description` to record the reason. A successful response confirms that the rollback request was created.
 ///
@@ -1579,18 +1401,16 @@ Future<void> requestRollback(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/rollback/${Uri.encodeComponent(deploymentId.toString())}',
           config: config,
           query: {
-            'description': SdkQueryValue(SdkUtils.unwrapOptional(description),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'description': SdkQueryValue(SdkUtils.unwrapOptional(description), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'requestRollback',
           options: requestOptions))
       .data;
 }
+
 
 /// Updates the reason recorded for a project rollback without changing its status. Supply the `description` field in the request body and identify the project and deployment in the path. The request body is optional.
 ///
@@ -1611,6 +1431,7 @@ Future<void> updateProjectsRollbackDescription(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Updates the microfrontends settings for a project. Use the optional fields to change the project's group, enablement, default application, route, or observability routing configuration. The two routing options can only be set for child applications.
 ///
@@ -1646,29 +1467,24 @@ Future<UpdateMicrofrontendsResponse> updateMicrofrontends(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/microfrontends',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
-            'microfrontendsGroupId':
-                SdkUtils.unwrapOptional(microfrontendsGroupId),
+            'microfrontendsGroupId': SdkUtils.unwrapOptional(microfrontendsGroupId),
             'enabled': SdkUtils.unwrapOptional(enabled),
             'isDefaultApp': SdkUtils.unwrapOptional(isDefaultApp),
             'defaultRoute': SdkUtils.unwrapOptional(defaultRoute),
-            'routeObservabilityToThisProject':
-                SdkUtils.unwrapOptional(routeObservabilityToThisProject),
-            'doNotRouteWithMicrofrontendsRouting':
-                SdkUtils.unwrapOptional(doNotRouteWithMicrofrontendsRouting)
+            'routeObservabilityToThisProject': SdkUtils.unwrapOptional(routeObservabilityToThisProject),
+            'doNotRouteWithMicrofrontendsRouting': SdkUtils.unwrapOptional(doNotRouteWithMicrofrontendsRouting)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateMicrofrontends',
-          fromJsonRaw: (value) => UpdateMicrofrontendsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateMicrofrontendsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Triggers a production promotion for a deployment in a project. Identify the project and deployment in the path, and use `teamId` or `slug` to select the team context when needed. Promotion does not rebuild the deployment; use the deployment creation operation when a rebuild is required.
 ///
@@ -1686,16 +1502,15 @@ Future<void> requestPromote(ClientConfig config,
           '/v10/projects/${Uri.encodeComponent(projectId.toString())}/promote/${Uri.encodeComponent(deploymentId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'requestPromote',
           options: requestOptions))
       .data;
 }
+
 
 /// Lists aliases associated with the latest promotion request for a project and their mapping status. Use `since` and `until` to filter by creation time, and `failedOnly` to limit results to aliases that failed to map to the requested deployment. Use `limit` to cap the number of aliases returned.
 ///
@@ -1725,18 +1540,12 @@ Future<dynamic> listPromoteAliases(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/promote/aliases',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'failedOnly': SdkQueryValue(SdkUtils.unwrapOptional(failedOnly),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'failedOnly': SdkQueryValue(SdkUtils.unwrapOptional(failedOnly), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listPromoteAliases',
@@ -1744,6 +1553,7 @@ Future<dynamic> listPromoteAliases(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Pauses a project identified by its project ID. Use `teamId` or `slug` to select the team context when needed. When the project disables automatic assignment of custom production domains, pausing also blocks its active production deployment.
 ///
@@ -1761,16 +1571,15 @@ Future<void> pauseProject(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/pause',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'pauseProject',
           options: requestOptions))
       .data;
 }
+
 
 /// Unpauses a project identified by its project ID. Use `teamId` or `slug` to select the team context when needed. When the project enables automatic assignment of custom production domains, unpausing also unblocks its active production deployment.
 ///
@@ -1788,10 +1597,8 @@ Future<void> unpauseProject(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/unpause',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'unpauseProject',

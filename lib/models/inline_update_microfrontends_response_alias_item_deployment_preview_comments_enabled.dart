@@ -6,385 +6,283 @@ part of 'inline.dart';
 // Inline operation models
 /// Whether or not preview comments are enabled for the deployment
 final class UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled {
+
   final bool value;
 
-  const UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(
-      this.value);
+  const UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(
-          value);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(
-          false);
-  static const true_ =
-      UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(
-          true);
+  static const false_ = UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(false);
+  static const true_ = UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemDeploymentPreviewCommentsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemDeploymentPrivate {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseAliasItemDeploymentPrivate._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentPrivate.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseAliasItemDeploymentPrivate._(value);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentPrivate.fromJson(bool value) => UpdateMicrofrontendsResponseAliasItemDeploymentPrivate._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseAliasItemDeploymentPrivate._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseAliasItemDeploymentPrivate._(true);
+  static const false_ = UpdateMicrofrontendsResponseAliasItemDeploymentPrivate._(false);
+  static const true_ = UpdateMicrofrontendsResponseAliasItemDeploymentPrivate._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemDeploymentPrivate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemDeploymentPrivate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemDeploymentReadyState {
+
   final String value;
 
   const UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentReadyState.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._(value);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentReadyState.fromJson(String value) => UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._(value);
 
-  static const blocked =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('BLOCKED');
-  static const building =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('BUILDING');
-  static const canceled =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('CANCELED');
-  static const error =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('ERROR');
-  static const initializing =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._(
-          'INITIALIZING');
-  static const queued =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('QUEUED');
-  static const ready =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('READY');
+  static const blocked = UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('BLOCKED');
+  static const building = UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('BUILDING');
+  static const canceled = UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('CANCELED');
+  static const error = UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('ERROR');
+  static const initializing = UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('INITIALIZING');
+  static const queued = UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('QUEUED');
+  static const ready = UpdateMicrofrontendsResponseAliasItemDeploymentReadyState._('READY');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemDeploymentReadyState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemDeploymentReadyState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate {
+
   final String value;
 
-  const UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._(
-      this.value);
+  const UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._(value);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate.fromJson(String value) => UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._(value);
 
-  static const promoted =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._(
-          'PROMOTED');
-  static const rolling =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._('ROLLING');
-  static const staged =
-      UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._('STAGED');
+  static const promoted = UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._('PROMOTED');
+  static const rolling = UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._('ROLLING');
+  static const staged = UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate._('STAGED');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemDeploymentReadySubstate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemDeploymentType {
+
   final String value;
 
   const UpdateMicrofrontendsResponseAliasItemDeploymentType._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentType.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseAliasItemDeploymentType._(value);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentType.fromJson(String value) => UpdateMicrofrontendsResponseAliasItemDeploymentType._(value);
 
-  static const lambdas =
-      UpdateMicrofrontendsResponseAliasItemDeploymentType._('LAMBDAS');
+  static const lambdas = UpdateMicrofrontendsResponseAliasItemDeploymentType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemDeploymentWithCache {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseAliasItemDeploymentWithCache._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentWithCache.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseAliasItemDeploymentWithCache._(value);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentWithCache.fromJson(bool value) => UpdateMicrofrontendsResponseAliasItemDeploymentWithCache._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseAliasItemDeploymentWithCache._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseAliasItemDeploymentWithCache._(true);
+  static const false_ = UpdateMicrofrontendsResponseAliasItemDeploymentWithCache._(false);
+  static const true_ = UpdateMicrofrontendsResponseAliasItemDeploymentWithCache._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemDeploymentWithCache &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemDeploymentWithCache && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemEnvironment {
+
   final String value;
 
   const UpdateMicrofrontendsResponseAliasItemEnvironment._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemEnvironment.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseAliasItemEnvironment._(value);
+  factory UpdateMicrofrontendsResponseAliasItemEnvironment.fromJson(String value) => UpdateMicrofrontendsResponseAliasItemEnvironment._(value);
 
-  static const preview =
-      UpdateMicrofrontendsResponseAliasItemEnvironment._('preview');
-  static const production =
-      UpdateMicrofrontendsResponseAliasItemEnvironment._('production');
+  static const preview = UpdateMicrofrontendsResponseAliasItemEnvironment._('preview');
+  static const production = UpdateMicrofrontendsResponseAliasItemEnvironment._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemEnvironment &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemEnvironment && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemRedirectStatusCode {
+
   final double value;
 
   const UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemRedirectStatusCode.fromJson(
-          double value) =>
-      UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(value);
+  factory UpdateMicrofrontendsResponseAliasItemRedirectStatusCode.fromJson(double value) => UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(value);
 
-  static const v301 =
-      UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(301);
-  static const v302 =
-      UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(302);
-  static const v307 =
-      UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(307);
-  static const v308 =
-      UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(308);
+  static const v301 = UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(301);
+  static const v302 = UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(302);
+  static const v307 = UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(307);
+  static const v308 = UpdateMicrofrontendsResponseAliasItemRedirectStatusCode._(308);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAliasItemTarget {
+
   final String value;
 
   const UpdateMicrofrontendsResponseAliasItemTarget._(this.value);
 
-  factory UpdateMicrofrontendsResponseAliasItemTarget.fromJson(String value) =>
-      UpdateMicrofrontendsResponseAliasItemTarget._(value);
+  factory UpdateMicrofrontendsResponseAliasItemTarget.fromJson(String value) => UpdateMicrofrontendsResponseAliasItemTarget._(value);
 
-  static const preview =
-      UpdateMicrofrontendsResponseAliasItemTarget._('PREVIEW');
-  static const production =
-      UpdateMicrofrontendsResponseAliasItemTarget._('PRODUCTION');
-  static const staging =
-      UpdateMicrofrontendsResponseAliasItemTarget._('STAGING');
+  static const preview = UpdateMicrofrontendsResponseAliasItemTarget._('PREVIEW');
+  static const production = UpdateMicrofrontendsResponseAliasItemTarget._('PRODUCTION');
+  static const staging = UpdateMicrofrontendsResponseAliasItemTarget._('STAGING');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAliasItemTarget &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAliasItemTarget && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAppliedCve55182Migration {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseAppliedCve55182Migration._(this.value);
 
-  factory UpdateMicrofrontendsResponseAppliedCve55182Migration.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseAppliedCve55182Migration._(value);
+  factory UpdateMicrofrontendsResponseAppliedCve55182Migration.fromJson(bool value) => UpdateMicrofrontendsResponseAppliedCve55182Migration._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseAppliedCve55182Migration._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseAppliedCve55182Migration._(true);
+  static const false_ = UpdateMicrofrontendsResponseAppliedCve55182Migration._(false);
+  static const true_ = UpdateMicrofrontendsResponseAppliedCve55182Migration._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAppliedCve55182Migration &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAppliedCve55182Migration && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAutoAssignCustomDomains {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseAutoAssignCustomDomains._(this.value);
 
-  factory UpdateMicrofrontendsResponseAutoAssignCustomDomains.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseAutoAssignCustomDomains._(value);
+  factory UpdateMicrofrontendsResponseAutoAssignCustomDomains.fromJson(bool value) => UpdateMicrofrontendsResponseAutoAssignCustomDomains._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseAutoAssignCustomDomains._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseAutoAssignCustomDomains._(true);
+  static const false_ = UpdateMicrofrontendsResponseAutoAssignCustomDomains._(false);
+  static const true_ = UpdateMicrofrontendsResponseAutoAssignCustomDomains._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAutoAssignCustomDomains &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAutoAssignCustomDomains && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseAutoExposeSystemEnvs {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseAutoExposeSystemEnvs._(this.value);
 
-  factory UpdateMicrofrontendsResponseAutoExposeSystemEnvs.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseAutoExposeSystemEnvs._(value);
+  factory UpdateMicrofrontendsResponseAutoExposeSystemEnvs.fromJson(bool value) => UpdateMicrofrontendsResponseAutoExposeSystemEnvs._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseAutoExposeSystemEnvs._(false);
+  static const false_ = UpdateMicrofrontendsResponseAutoExposeSystemEnvs._(false);
   static const true_ = UpdateMicrofrontendsResponseAutoExposeSystemEnvs._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseAutoExposeSystemEnvs &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseAutoExposeSystemEnvs && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation — guards rely on it to protect the connected stores from being lost when the project is deleted or transferred.
 final class UpdateMicrofrontendsResponseBlobsIsDefaultApp {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseBlobsIsDefaultApp._(this.value);
 
-  factory UpdateMicrofrontendsResponseBlobsIsDefaultApp.fromJson(bool value) =>
-      UpdateMicrofrontendsResponseBlobsIsDefaultApp._(value);
+  factory UpdateMicrofrontendsResponseBlobsIsDefaultApp.fromJson(bool value) => UpdateMicrofrontendsResponseBlobsIsDefaultApp._(value);
 
   static const false_ = UpdateMicrofrontendsResponseBlobsIsDefaultApp._(false);
   static const true_ = UpdateMicrofrontendsResponseBlobsIsDefaultApp._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseBlobsIsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseBlobsIsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

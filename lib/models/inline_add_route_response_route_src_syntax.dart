@@ -6,290 +6,234 @@ part of 'inline.dart';
 // Inline operation models
 /// The syntax type of the source pattern. Determines how the pattern is compiled to regex.
 final class AddRouteResponseRouteSrcSyntax {
+
   final String value;
 
   const AddRouteResponseRouteSrcSyntax._(this.value);
 
-  factory AddRouteResponseRouteSrcSyntax.fromJson(String value) =>
-      AddRouteResponseRouteSrcSyntax._(value);
+  factory AddRouteResponseRouteSrcSyntax.fromJson(String value) => AddRouteResponseRouteSrcSyntax._(value);
 
   static const equals = AddRouteResponseRouteSrcSyntax._('equals');
-  static const pathToRegexp =
-      AddRouteResponseRouteSrcSyntax._('path-to-regexp');
+  static const pathToRegexp = AddRouteResponseRouteSrcSyntax._('path-to-regexp');
   static const regex = AddRouteResponseRouteSrcSyntax._('regex');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AddRouteResponseRouteSrcSyntax && other.value == value;
+  @override bool operator ==(Object other) => other is AddRouteResponseRouteSrcSyntax && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production.
 final class AddRouteResponseRouteStaged {
+
   final bool value;
 
   const AddRouteResponseRouteStaged._(this.value);
 
-  factory AddRouteResponseRouteStaged.fromJson(bool value) =>
-      AddRouteResponseRouteStaged._(value);
+  factory AddRouteResponseRouteStaged.fromJson(bool value) => AddRouteResponseRouteStaged._(value);
 
   static const false_ = AddRouteResponseRouteStaged._(false);
   static const true_ = AddRouteResponseRouteStaged._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AddRouteResponseRouteStaged && other.value == value;
+  @override bool operator ==(Object other) => other is AddRouteResponseRouteStaged && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether this version is currently live in production.
 final class AddRouteResponseVersionIsLive {
+
   final bool value;
 
   const AddRouteResponseVersionIsLive._(this.value);
 
-  factory AddRouteResponseVersionIsLive.fromJson(bool value) =>
-      AddRouteResponseVersionIsLive._(value);
+  factory AddRouteResponseVersionIsLive.fromJson(bool value) => AddRouteResponseVersionIsLive._(value);
 
   static const false_ = AddRouteResponseVersionIsLive._(false);
   static const true_ = AddRouteResponseVersionIsLive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AddRouteResponseVersionIsLive && other.value == value;
+  @override bool operator ==(Object other) => other is AddRouteResponseVersionIsLive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether this version is staged and not yet promoted to production.
 final class AddRouteResponseVersionIsStaging {
+
   final bool value;
 
   const AddRouteResponseVersionIsStaging._(this.value);
 
-  factory AddRouteResponseVersionIsStaging.fromJson(bool value) =>
-      AddRouteResponseVersionIsStaging._(value);
+  factory AddRouteResponseVersionIsStaging.fromJson(bool value) => AddRouteResponseVersionIsStaging._(value);
 
   static const false_ = AddRouteResponseVersionIsStaging._(false);
   static const true_ = AddRouteResponseVersionIsStaging._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AddRouteResponseVersionIsStaging && other.value == value;
+  @override bool operator ==(Object other) => other is AddRouteResponseVersionIsStaging && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class StageRoutesRequestBodyRoutesItemRouteHasItemType {
+
   final String value;
 
   const StageRoutesRequestBodyRoutesItemRouteHasItemType._(this.value);
 
-  factory StageRoutesRequestBodyRoutesItemRouteHasItemType.fromJson(
-          String value) =>
-      StageRoutesRequestBodyRoutesItemRouteHasItemType._(value);
+  factory StageRoutesRequestBodyRoutesItemRouteHasItemType.fromJson(String value) => StageRoutesRequestBodyRoutesItemRouteHasItemType._(value);
 
-  static const host =
-      StageRoutesRequestBodyRoutesItemRouteHasItemType._('host');
-  static const header =
-      StageRoutesRequestBodyRoutesItemRouteHasItemType._('header');
-  static const cookie =
-      StageRoutesRequestBodyRoutesItemRouteHasItemType._('cookie');
-  static const query =
-      StageRoutesRequestBodyRoutesItemRouteHasItemType._('query');
+  static const host = StageRoutesRequestBodyRoutesItemRouteHasItemType._('host');
+  static const header = StageRoutesRequestBodyRoutesItemRouteHasItemType._('header');
+  static const cookie = StageRoutesRequestBodyRoutesItemRouteHasItemType._('cookie');
+  static const query = StageRoutesRequestBodyRoutesItemRouteHasItemType._('query');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StageRoutesRequestBodyRoutesItemRouteHasItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is StageRoutesRequestBodyRoutesItemRouteHasItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class StageRoutesRequestBodyRoutesItemRouteMissingItemType {
+
   final String value;
 
   const StageRoutesRequestBodyRoutesItemRouteMissingItemType._(this.value);
 
-  factory StageRoutesRequestBodyRoutesItemRouteMissingItemType.fromJson(
-          String value) =>
-      StageRoutesRequestBodyRoutesItemRouteMissingItemType._(value);
+  factory StageRoutesRequestBodyRoutesItemRouteMissingItemType.fromJson(String value) => StageRoutesRequestBodyRoutesItemRouteMissingItemType._(value);
 
-  static const host =
-      StageRoutesRequestBodyRoutesItemRouteMissingItemType._('host');
-  static const header =
-      StageRoutesRequestBodyRoutesItemRouteMissingItemType._('header');
-  static const cookie =
-      StageRoutesRequestBodyRoutesItemRouteMissingItemType._('cookie');
-  static const query =
-      StageRoutesRequestBodyRoutesItemRouteMissingItemType._('query');
+  static const host = StageRoutesRequestBodyRoutesItemRouteMissingItemType._('host');
+  static const header = StageRoutesRequestBodyRoutesItemRouteMissingItemType._('header');
+  static const cookie = StageRoutesRequestBodyRoutesItemRouteMissingItemType._('cookie');
+  static const query = StageRoutesRequestBodyRoutesItemRouteMissingItemType._('query');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StageRoutesRequestBodyRoutesItemRouteMissingItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is StageRoutesRequestBodyRoutesItemRouteMissingItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class StageRoutesRequestBodyRoutesItemRouteTransformsItemOp {
+
   final String value;
 
   const StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._(this.value);
 
-  factory StageRoutesRequestBodyRoutesItemRouteTransformsItemOp.fromJson(
-          String value) =>
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._(value);
+  factory StageRoutesRequestBodyRoutesItemRouteTransformsItemOp.fromJson(String value) => StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._(value);
 
-  static const append =
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._('append');
-  static const set_ =
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._('set');
-  static const delete =
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._('delete');
+  static const append = StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._('append');
+  static const set_ = StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._('set');
+  static const delete = StageRoutesRequestBodyRoutesItemRouteTransformsItemOp._('delete');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StageRoutesRequestBodyRoutesItemRouteTransformsItemOp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is StageRoutesRequestBodyRoutesItemRouteTransformsItemOp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class StageRoutesRequestBodyRoutesItemRouteTransformsItemType {
+
   final String value;
 
   const StageRoutesRequestBodyRoutesItemRouteTransformsItemType._(this.value);
 
-  factory StageRoutesRequestBodyRoutesItemRouteTransformsItemType.fromJson(
-          String value) =>
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemType._(value);
+  factory StageRoutesRequestBodyRoutesItemRouteTransformsItemType.fromJson(String value) => StageRoutesRequestBodyRoutesItemRouteTransformsItemType._(value);
 
-  static const requestHeaders =
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemType._(
-          'request.headers');
-  static const requestQuery =
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemType._(
-          'request.query');
-  static const responseHeaders =
-      StageRoutesRequestBodyRoutesItemRouteTransformsItemType._(
-          'response.headers');
+  static const requestHeaders = StageRoutesRequestBodyRoutesItemRouteTransformsItemType._('request.headers');
+  static const requestQuery = StageRoutesRequestBodyRoutesItemRouteTransformsItemType._('request.query');
+  static const responseHeaders = StageRoutesRequestBodyRoutesItemRouteTransformsItemType._('response.headers');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StageRoutesRequestBodyRoutesItemRouteTransformsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is StageRoutesRequestBodyRoutesItemRouteTransformsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether this version is currently live in production.
 final class StageRoutesResponseVersionIsLive {
+
   final bool value;
 
   const StageRoutesResponseVersionIsLive._(this.value);
 
-  factory StageRoutesResponseVersionIsLive.fromJson(bool value) =>
-      StageRoutesResponseVersionIsLive._(value);
+  factory StageRoutesResponseVersionIsLive.fromJson(bool value) => StageRoutesResponseVersionIsLive._(value);
 
   static const false_ = StageRoutesResponseVersionIsLive._(false);
   static const true_ = StageRoutesResponseVersionIsLive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StageRoutesResponseVersionIsLive && other.value == value;
+  @override bool operator ==(Object other) => other is StageRoutesResponseVersionIsLive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether this version is staged and not yet promoted to production.
 final class StageRoutesResponseVersionIsStaging {
+
   final bool value;
 
   const StageRoutesResponseVersionIsStaging._(this.value);
 
-  factory StageRoutesResponseVersionIsStaging.fromJson(bool value) =>
-      StageRoutesResponseVersionIsStaging._(value);
+  factory StageRoutesResponseVersionIsStaging.fromJson(bool value) => StageRoutesResponseVersionIsStaging._(value);
 
   static const false_ = StageRoutesResponseVersionIsStaging._(false);
   static const true_ = StageRoutesResponseVersionIsStaging._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StageRoutesResponseVersionIsStaging && other.value == value;
+  @override bool operator ==(Object other) => other is StageRoutesResponseVersionIsStaging && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditRouteRequestBodyRouteRouteHasItemType {
+
   final String value;
 
   const EditRouteRequestBodyRouteRouteHasItemType._(this.value);
 
-  factory EditRouteRequestBodyRouteRouteHasItemType.fromJson(String value) =>
-      EditRouteRequestBodyRouteRouteHasItemType._(value);
+  factory EditRouteRequestBodyRouteRouteHasItemType.fromJson(String value) => EditRouteRequestBodyRouteRouteHasItemType._(value);
 
   static const host = EditRouteRequestBodyRouteRouteHasItemType._('host');
   static const header = EditRouteRequestBodyRouteRouteHasItemType._('header');
@@ -298,44 +242,33 @@ final class EditRouteRequestBodyRouteRouteHasItemType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditRouteRequestBodyRouteRouteHasItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is EditRouteRequestBodyRouteRouteHasItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditRouteRequestBodyRouteRouteMissingItemType {
+
   final String value;
 
   const EditRouteRequestBodyRouteRouteMissingItemType._(this.value);
 
-  factory EditRouteRequestBodyRouteRouteMissingItemType.fromJson(
-          String value) =>
-      EditRouteRequestBodyRouteRouteMissingItemType._(value);
+  factory EditRouteRequestBodyRouteRouteMissingItemType.fromJson(String value) => EditRouteRequestBodyRouteRouteMissingItemType._(value);
 
   static const host = EditRouteRequestBodyRouteRouteMissingItemType._('host');
-  static const header =
-      EditRouteRequestBodyRouteRouteMissingItemType._('header');
-  static const cookie =
-      EditRouteRequestBodyRouteRouteMissingItemType._('cookie');
+  static const header = EditRouteRequestBodyRouteRouteMissingItemType._('header');
+  static const cookie = EditRouteRequestBodyRouteRouteMissingItemType._('cookie');
   static const query = EditRouteRequestBodyRouteRouteMissingItemType._('query');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditRouteRequestBodyRouteRouteMissingItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is EditRouteRequestBodyRouteRouteMissingItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

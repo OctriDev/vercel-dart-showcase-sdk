@@ -13,36 +13,31 @@ import '../types.dart';
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetVercelCiRepositorySettingsResponse> getVercelCiRepositorySettings(
-    ClientConfig config,
-    {required GetVercelCiRepositorySettingsProvider provider,
-    required String organizationId,
-    required String repository,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetVercelCiRepositorySettingsResponse>
+    getVercelCiRepositorySettings(ClientConfig config,
+        {required GetVercelCiRepositorySettingsProvider provider,
+        required String organizationId,
+        required String repository,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetVercelCiRepositorySettingsResponse>(
           'GET', '/v1/vercel-ci/repository-settings',
           config: config,
           query: {
             'provider': SdkQueryValue(provider, style: 'form', explode: true),
-            'organizationId':
-                SdkQueryValue(organizationId, style: 'form', explode: true),
-            'repository':
-                SdkQueryValue(repository, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'organizationId': SdkQueryValue(organizationId, style: 'form', explode: true),
+            'repository': SdkQueryValue(repository, style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiRepositorySettings',
-          fromJsonRaw: (value) =>
-              GetVercelCiRepositorySettingsResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiRepositorySettingsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates the Vercel CI enabled state for a connected repository. Identify the repository with `provider`, `organizationId`, and `repository`, then set `ciEnabled` in the request body. Use `teamId` or `slug` to perform the request on behalf of a team.
 ///
@@ -64,24 +59,19 @@ Future<UpdateVercelCiRepositorySettingsResponse>
           config: config,
           query: {
             'provider': SdkQueryValue(provider, style: 'form', explode: true),
-            'organizationId':
-                SdkQueryValue(organizationId, style: 'form', explode: true),
-            'repository':
-                SdkQueryValue(repository, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'organizationId': SdkQueryValue(organizationId, style: 'form', explode: true),
+            'repository': SdkQueryValue(repository, style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'ciEnabled': ciEnabled},
           decoder: SdkResponseDecoder.json,
           operationId: 'updateVercelCiRepositorySettings',
-          fromJsonRaw: (value) =>
-              UpdateVercelCiRepositorySettingsResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateVercelCiRepositorySettingsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists Vercel CI invocations for a team, with optional filters for repository, branch, commit, status, conclusion, source, author, and creation time. Use `cursor` to continue from a previous response and `limit` to set the page size. The response includes invocation records, repository details, and pagination metadata.
 ///
@@ -96,27 +86,24 @@ Future<UpdateVercelCiRepositorySettingsResponse>
 /// [cursor] Pagination cursor from a previous response.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListVercelCiInvocationsResponse> listVercelCiInvocations(
-    ClientConfig config,
-    {SdkOptional<ListVercelCiInvocationsProvider> provider = const SdkOmitted(),
-    SdkOptional<String> repository = const SdkOmitted(),
-    SdkOptional<String> branchName = const SdkOmitted(),
-    SdkOptional<String> snapshot = const SdkOmitted(),
-    SdkOptional<List<ListVercelCiInvocationsStatusItem>> status =
-        const SdkOmitted(),
-    SdkOptional<List<ListVercelCiInvocationsConclusionItem>> conclusion =
-        const SdkOmitted(),
-    SdkOptional<List<ListVercelCiInvocationsSourceItem>> source =
-        const SdkOmitted(),
-    SdkOptional<String> authorGitHubId = const SdkOmitted(),
-    SdkOptional<String> author = const SdkOmitted(),
-    SdkOptional<double> createdAfter = const SdkOmitted(),
-    SdkOptional<double> createdBefore = const SdkOmitted(),
-    SdkOptional<double> limit = const SdkOmitted(),
-    SdkOptional<String> cursor = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ListVercelCiInvocationsResponse>
+    listVercelCiInvocations(ClientConfig config,
+        {SdkOptional<ListVercelCiInvocationsProvider> provider = const SdkOmitted(),
+        SdkOptional<String> repository = const SdkOmitted(),
+        SdkOptional<String> branchName = const SdkOmitted(),
+        SdkOptional<String> snapshot = const SdkOmitted(),
+        SdkOptional<List<ListVercelCiInvocationsStatusItem>> status = const SdkOmitted(),
+        SdkOptional<List<ListVercelCiInvocationsConclusionItem>> conclusion = const SdkOmitted(),
+        SdkOptional<List<ListVercelCiInvocationsSourceItem>> source = const SdkOmitted(),
+        SdkOptional<String> authorGitHubId = const SdkOmitted(),
+        SdkOptional<String> author = const SdkOmitted(),
+        SdkOptional<double> createdAfter = const SdkOmitted(),
+        SdkOptional<double> createdBefore = const SdkOmitted(),
+        SdkOptional<double> limit = const SdkOmitted(),
+        SdkOptional<String> cursor = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (status is SdkPresent<List<ListVercelCiInvocationsStatusItem>>) {
     validateItems('status', status.value, min: 1);
   }
@@ -131,48 +118,29 @@ Future<ListVercelCiInvocationsResponse> listVercelCiInvocations(
           'GET', '/v2/vercel-ci/invocations',
           config: config,
           query: {
-            'provider': SdkQueryValue(SdkUtils.unwrapOptional(provider),
-                style: 'form', explode: true),
-            'repository': SdkQueryValue(SdkUtils.unwrapOptional(repository),
-                style: 'form', explode: true),
-            'branchName': SdkQueryValue(SdkUtils.unwrapOptional(branchName),
-                style: 'form', explode: true),
-            'snapshot': SdkQueryValue(SdkUtils.unwrapOptional(snapshot),
-                style: 'form', explode: true),
-            'status': SdkQueryValue(SdkUtils.unwrapOptional(status),
-                style: 'form', explode: true),
-            'conclusion': SdkQueryValue(SdkUtils.unwrapOptional(conclusion),
-                style: 'form', explode: true),
-            'source': SdkQueryValue(SdkUtils.unwrapOptional(source),
-                style: 'form', explode: true),
-            'authorGitHubId': SdkQueryValue(
-                SdkUtils.unwrapOptional(authorGitHubId),
-                style: 'form',
-                explode: true),
-            'author': SdkQueryValue(SdkUtils.unwrapOptional(author),
-                style: 'form', explode: true),
-            'createdAfter': SdkQueryValue(SdkUtils.unwrapOptional(createdAfter),
-                style: 'form', explode: true),
-            'createdBefore': SdkQueryValue(
-                SdkUtils.unwrapOptional(createdBefore),
-                style: 'form',
-                explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'provider': SdkQueryValue(SdkUtils.unwrapOptional(provider), style: 'form', explode: true),
+            'repository': SdkQueryValue(SdkUtils.unwrapOptional(repository), style: 'form', explode: true),
+            'branchName': SdkQueryValue(SdkUtils.unwrapOptional(branchName), style: 'form', explode: true),
+            'snapshot': SdkQueryValue(SdkUtils.unwrapOptional(snapshot), style: 'form', explode: true),
+            'status': SdkQueryValue(SdkUtils.unwrapOptional(status), style: 'form', explode: true),
+            'conclusion': SdkQueryValue(SdkUtils.unwrapOptional(conclusion), style: 'form', explode: true),
+            'source': SdkQueryValue(SdkUtils.unwrapOptional(source), style: 'form', explode: true),
+            'authorGitHubId': SdkQueryValue(SdkUtils.unwrapOptional(authorGitHubId), style: 'form', explode: true),
+            'author': SdkQueryValue(SdkUtils.unwrapOptional(author), style: 'form', explode: true),
+            'createdAfter': SdkQueryValue(SdkUtils.unwrapOptional(createdAfter), style: 'form', explode: true),
+            'createdBefore': SdkQueryValue(SdkUtils.unwrapOptional(createdBefore), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiInvocations',
-          fromJsonRaw: (value) => ListVercelCiInvocationsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiInvocationsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists Vercel CI branch suggestions for a team. Use `query` to filter the suggestions and `limit` to control how many results are returned. The response contains branch names and their counts.
 ///
@@ -197,22 +165,18 @@ Future<ListVercelCiBranchesResponse> listVercelCiBranches(ClientConfig config,
           'GET', '/v2/vercel-ci/branches',
           config: config,
           query: {
-            'query': SdkQueryValue(SdkUtils.unwrapOptional(query),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'query': SdkQueryValue(SdkUtils.unwrapOptional(query), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiBranches',
-          fromJsonRaw: (value) => ListVercelCiBranchesResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiBranchesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Starts an asynchronous Vercel CI task analysis for a repository. Supply the repository `owner` and `repo` in the request body, and use `teamId` or `slug` to perform the request on behalf of a team. A 202 response confirms acceptance and provides an `analysisId` to check the analysis status.
 ///
@@ -220,13 +184,13 @@ Future<ListVercelCiBranchesResponse> listVercelCiBranches(ClientConfig config,
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<CreateVercelCiTaskAnalysisResponse> createVercelCiTaskAnalysis(
-    ClientConfig config,
-    {required String owner,
-    required String repo,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<CreateVercelCiTaskAnalysisResponse>
+    createVercelCiTaskAnalysis(ClientConfig config,
+        {required String owner,
+        required String repo,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateLength('owner', owner, max: 100);
   validateLength('repo', repo, max: 100);
 
@@ -234,19 +198,17 @@ Future<CreateVercelCiTaskAnalysisResponse> createVercelCiTaskAnalysis(
           'POST', '/v1/vercel-ci/task-analyses',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'owner': owner, 'repo': repo},
           decoder: SdkResponseDecoder.json,
           operationId: 'createVercelCiTaskAnalysis',
-          fromJsonRaw: (value) => CreateVercelCiTaskAnalysisResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateVercelCiTaskAnalysisResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the current status of a Vercel CI task analysis. Use `analysisId` to identify the analysis and optionally pass `teamId` or `slug` to make the request on behalf of a team. The response includes a failure reason when one is available.
 ///
@@ -254,28 +216,26 @@ Future<CreateVercelCiTaskAnalysisResponse> createVercelCiTaskAnalysis(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetVercelCiTaskAnalysisResponse> getVercelCiTaskAnalysis(
-    ClientConfig config,
-    {required String analysisId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetVercelCiTaskAnalysisResponse>
+    getVercelCiTaskAnalysis(ClientConfig config,
+        {required String analysisId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetVercelCiTaskAnalysisResponse>('GET',
           '/v1/vercel-ci/task-analyses/${Uri.encodeComponent(analysisId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiTaskAnalysis',
-          fromJsonRaw: (value) => GetVercelCiTaskAnalysisResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiTaskAnalysisResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a GitHub pull request that adds Vercel CI tags for tasks discovered in a completed analysis. Identify the analysis with `analysisId` and provide the tasks and configuration paths in the request body. The response includes the pull request URL and the names of changed tasks.
 ///
@@ -286,33 +246,27 @@ Future<GetVercelCiTaskAnalysisResponse> getVercelCiTaskAnalysis(
 Future<CreateVercelCiTaskConfigurationPullRequestResponse>
     createVercelCiTaskConfigurationPullRequest(ClientConfig config,
         {required String analysisId,
-        required List<
-                CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem>
-            tasks,
+        required List<CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem> tasks,
         SdkOptional<String> teamId = const SdkOmitted(),
         SdkOptional<String> slug = const SdkOmitted(),
         RequestOptions? requestOptions}) async {
   validateItems('tasks', tasks, min: 1, max: 100);
 
-  return (await sdkRequest<CreateVercelCiTaskConfigurationPullRequestResponse>(
-          'POST',
+  return (await sdkRequest<CreateVercelCiTaskConfigurationPullRequestResponse>('POST',
           '/v1/vercel-ci/task-analyses/${Uri.encodeComponent(analysisId.toString())}/pull-request',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'tasks': tasks},
           decoder: SdkResponseDecoder.json,
           operationId: 'createVercelCiTaskConfigurationPullRequest',
-          fromJsonRaw: (value) =>
-              CreateVercelCiTaskConfigurationPullRequestResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateVercelCiTaskConfigurationPullRequestResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists tasks discovered by a completed Vercel CI task analysis. Identify the analysis with `analysisId`, and use `cursor` and `limit` to retrieve task results in pages. Each task includes its configuration path and recommendation reasons.
 ///
@@ -320,35 +274,30 @@ Future<CreateVercelCiTaskConfigurationPullRequestResponse>
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListVercelCiTaskAnalysisTasksResponse> listVercelCiTaskAnalysisTasks(
-    ClientConfig config,
-    {required String analysisId,
-    SdkOptional<String> cursor = const SdkOmitted(),
-    SdkOptional<String> limit = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ListVercelCiTaskAnalysisTasksResponse>
+    listVercelCiTaskAnalysisTasks(ClientConfig config,
+        {required String analysisId,
+        SdkOptional<String> cursor = const SdkOmitted(),
+        SdkOptional<String> limit = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<ListVercelCiTaskAnalysisTasksResponse>('GET',
           '/v1/vercel-ci/task-analyses/${Uri.encodeComponent(analysisId.toString())}/tasks',
           config: config,
           query: {
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiTaskAnalysisTasks',
-          fromJsonRaw: (value) =>
-              ListVercelCiTaskAnalysisTasksResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiTaskAnalysisTasksResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists all attempts for a Vercel CI invocation. Use `invocationId` to identify the invocation and optionally pass `teamId` or `slug` to make the request on behalf of a team. The response includes attempt records and repository details.
 ///
@@ -356,29 +305,26 @@ Future<ListVercelCiTaskAnalysisTasksResponse> listVercelCiTaskAnalysisTasks(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListVercelCiInvocationAttemptsResponse> listVercelCiInvocationAttempts(
-    ClientConfig config,
-    {required String invocationId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ListVercelCiInvocationAttemptsResponse>
+    listVercelCiInvocationAttempts(ClientConfig config,
+        {required String invocationId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<ListVercelCiInvocationAttemptsResponse>('GET',
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiInvocationAttempts',
-          fromJsonRaw: (value) =>
-              ListVercelCiInvocationAttemptsResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiInvocationAttemptsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves an invocation attempt with its job definitions, latest job runs, and task definitions and active task runs. Use `attempt` to select an attempt, or omit it to use the latest; set `follow` to `1` to receive newline-delimited JSON updates until the attempt finishes or the stream times out.
 ///
@@ -389,14 +335,14 @@ Future<ListVercelCiInvocationAttemptsResponse> listVercelCiInvocationAttempts(
 ///   finishes.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetVercelCiInvocationTreeResponse> getVercelCiInvocationTree(
-    ClientConfig config,
-    {required String invocationId,
-    SdkOptional<String> attempt = const SdkOmitted(),
-    SdkOptional<GetVercelCiInvocationTreeFollow> follow = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetVercelCiInvocationTreeResponse>
+    getVercelCiInvocationTree(ClientConfig config,
+        {required String invocationId,
+        SdkOptional<String> attempt = const SdkOmitted(),
+        SdkOptional<GetVercelCiInvocationTreeFollow> follow = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (attempt is SdkPresent<String>) {
     sdkValidatePattern('attempt', attempt.value, '^[1-9][0-9]*\$');
   }
@@ -405,22 +351,18 @@ Future<GetVercelCiInvocationTreeResponse> getVercelCiInvocationTree(
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/tree',
           config: config,
           query: {
-            'attempt': SdkQueryValue(SdkUtils.unwrapOptional(attempt),
-                style: 'form', explode: true),
-            'follow': SdkQueryValue(SdkUtils.unwrapOptional(follow),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'attempt': SdkQueryValue(SdkUtils.unwrapOptional(attempt), style: 'form', explode: true),
+            'follow': SdkQueryValue(SdkUtils.unwrapOptional(follow), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiInvocationTree',
-          fromJsonRaw: (value) => GetVercelCiInvocationTreeResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiInvocationTreeResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a specific invocation attempt and its repository details. Use `invocationId` and `attempt` to identify the attempt you want to inspect. The response includes the invocation record and associated repositories.
 ///
@@ -438,18 +380,16 @@ Future<GetVercelCiInvocationResponse> getVercelCiInvocation(ClientConfig config,
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiInvocation',
-          fromJsonRaw: (value) => GetVercelCiInvocationResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiInvocationResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Triggers a retry of a terminal Vercel CI invocation attempt. Use `invocationId` and `attempt` to identify the attempt to retry. The response confirms that the retry was scheduled and provides the new attempt number.
 ///
@@ -457,29 +397,27 @@ Future<GetVercelCiInvocationResponse> getVercelCiInvocation(ClientConfig config,
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<RetryVercelCiInvocationResponse> retryVercelCiInvocation(
-    ClientConfig config,
-    {required String invocationId,
-    required String attempt,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<RetryVercelCiInvocationResponse>
+    retryVercelCiInvocation(ClientConfig config,
+        {required String invocationId,
+        required String attempt,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<RetryVercelCiInvocationResponse>('POST',
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/retry',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'retryVercelCiInvocation',
-          fromJsonRaw: (value) => RetryVercelCiInvocationResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RetryVercelCiInvocationResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the job definitions associated with an invocation attempt. Use `invocationId` and `attempt` to select the attempt whose jobs you want to inspect. Each result includes the job definition's identifier, kind, name, command, and creation time.
 ///
@@ -487,29 +425,27 @@ Future<RetryVercelCiInvocationResponse> retryVercelCiInvocation(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListVercelCiJobDefinitionsResponse> listVercelCiJobDefinitions(
-    ClientConfig config,
-    {required String invocationId,
-    required String attempt,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ListVercelCiJobDefinitionsResponse>
+    listVercelCiJobDefinitions(ClientConfig config,
+        {required String invocationId,
+        required String attempt,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<ListVercelCiJobDefinitionsResponse>('GET',
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiJobDefinitions',
-          fromJsonRaw: (value) => ListVercelCiJobDefinitionsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiJobDefinitionsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a specific job definition for an invocation attempt. Use `invocationId`, `attempt`, and `jobDefinitionId` to identify the definition. The response contains the job definition's kind, name, command, and creation time.
 ///
@@ -517,30 +453,28 @@ Future<ListVercelCiJobDefinitionsResponse> listVercelCiJobDefinitions(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetVercelCiJobDefinitionResponse> getVercelCiJobDefinition(
-    ClientConfig config,
-    {required String invocationId,
-    required String attempt,
-    required String jobDefinitionId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetVercelCiJobDefinitionResponse>
+    getVercelCiJobDefinition(ClientConfig config,
+        {required String invocationId,
+        required String attempt,
+        required String jobDefinitionId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetVercelCiJobDefinitionResponse>('GET',
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions/${Uri.encodeComponent(jobDefinitionId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiJobDefinition',
-          fromJsonRaw: (value) => GetVercelCiJobDefinitionResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiJobDefinitionResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the runs for a job definition in a specific invocation attempt. Use `invocationId`, `attempt`, and `jobDefinitionId` to select the job whose run history you want to inspect. Each result includes the run attempt number and creation time, with start and completion details when available.
 ///
@@ -559,18 +493,16 @@ Future<ListVercelCiJobRunsResponse> listVercelCiJobRuns(ClientConfig config,
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions/${Uri.encodeComponent(jobDefinitionId.toString())}/runs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiJobRuns',
-          fromJsonRaw: (value) => ListVercelCiJobRunsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiJobRunsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a specific run attempt for a job definition. Use `invocationId`, `attempt`, `jobDefinitionId`, and `runAttempt` to identify the run. The response contains the run's creation time and any available start and completion details.
 ///
@@ -590,18 +522,16 @@ Future<GetVercelCiJobRunResponse> getVercelCiJobRun(ClientConfig config,
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions/${Uri.encodeComponent(jobDefinitionId.toString())}/runs/${Uri.encodeComponent(runAttempt.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiJobRun',
-          fromJsonRaw: (value) =>
-              GetVercelCiJobRunResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiJobRunResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the task definitions associated with a job run. Use `invocationId`, `attempt`, `jobDefinitionId`, and `runAttempt` to select the run. Each result includes its task definition identifier, name, operation, dependencies, and creation time.
 ///
@@ -609,31 +539,29 @@ Future<GetVercelCiJobRunResponse> getVercelCiJobRun(ClientConfig config,
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListVercelCiTaskDefinitionsResponse> listVercelCiTaskDefinitions(
-    ClientConfig config,
-    {required String invocationId,
-    required String attempt,
-    required String jobDefinitionId,
-    required String runAttempt,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ListVercelCiTaskDefinitionsResponse>
+    listVercelCiTaskDefinitions(ClientConfig config,
+        {required String invocationId,
+        required String attempt,
+        required String jobDefinitionId,
+        required String runAttempt,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<ListVercelCiTaskDefinitionsResponse>('GET',
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions/${Uri.encodeComponent(jobDefinitionId.toString())}/runs/${Uri.encodeComponent(runAttempt.toString())}/task-definitions',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiTaskDefinitions',
-          fromJsonRaw: (value) => ListVercelCiTaskDefinitionsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiTaskDefinitionsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the task runs for a job run. Use `invocationId`, `attempt`, `jobDefinitionId`, and `runAttempt` to select the job run, and use `taskRunAttempt` to filter the results by task run attempt. Each result includes task identifiers, the attempt number, creation time, and available start, completion, and deployment binding details.
 ///
@@ -654,22 +582,17 @@ Future<ListVercelCiTaskRunsResponse> listVercelCiTaskRuns(ClientConfig config,
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions/${Uri.encodeComponent(jobDefinitionId.toString())}/runs/${Uri.encodeComponent(runAttempt.toString())}/task-runs',
           config: config,
           query: {
-            'taskRunAttempt': SdkQueryValue(
-                SdkUtils.unwrapOptional(taskRunAttempt),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'taskRunAttempt': SdkQueryValue(SdkUtils.unwrapOptional(taskRunAttempt), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listVercelCiTaskRuns',
-          fromJsonRaw: (value) => ListVercelCiTaskRunsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListVercelCiTaskRunsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves log lines for a specific invocation attempt. Use `level` to filter the results to one or more log levels, such as `warn` or `error`. Each returned line includes its level, timestamp, and message.
 ///
@@ -678,15 +601,14 @@ Future<ListVercelCiTaskRunsResponse> listVercelCiTaskRuns(ClientConfig config,
 /// [level] Only return log lines with one of these levels.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetVercelCiInvocationLogsResponse> getVercelCiInvocationLogs(
-    ClientConfig config,
-    {required String invocationId,
-    required String attempt,
-    SdkOptional<List<GetVercelCiInvocationLogsLevelItem>> level =
-        const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetVercelCiInvocationLogsResponse>
+    getVercelCiInvocationLogs(ClientConfig config,
+        {required String invocationId,
+        required String attempt,
+        SdkOptional<List<GetVercelCiInvocationLogsLevelItem>> level = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (level is SdkPresent<List<GetVercelCiInvocationLogsLevelItem>>) {
     validateItems('level', level.value, min: 1);
   }
@@ -695,20 +617,17 @@ Future<GetVercelCiInvocationLogsResponse> getVercelCiInvocationLogs(
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/logs',
           config: config,
           query: {
-            'level': SdkQueryValue(SdkUtils.unwrapOptional(level),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'level': SdkQueryValue(SdkUtils.unwrapOptional(level), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiInvocationLogs',
-          fromJsonRaw: (value) => GetVercelCiInvocationLogsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiInvocationLogsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists log lines for tasks in a specific invocation attempt, grouped by task. Use `task`, `conclusion`, and `level` to filter the results, or use `search` to return only tasks with matching lines. Search returns at most 1,000 matching lines and ignores `limit`.
 ///
@@ -727,8 +646,7 @@ Future<GetVercelCiTaskLogsResponse> getVercelCiTaskLogs(ClientConfig config,
     {required String invocationId,
     required String attempt,
     SdkOptional<List<String>> task = const SdkOmitted(),
-    SdkOptional<List<GetVercelCiTaskLogsConclusionItem>> conclusion =
-        const SdkOmitted(),
+    SdkOptional<List<GetVercelCiTaskLogsConclusionItem>> conclusion = const SdkOmitted(),
     SdkOptional<List<GetVercelCiTaskLogsLevelItem>> level = const SdkOmitted(),
     SdkOptional<String> search = const SdkOmitted(),
     SdkOptional<double> limit = const SdkOmitted(),
@@ -752,28 +670,21 @@ Future<GetVercelCiTaskLogsResponse> getVercelCiTaskLogs(ClientConfig config,
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/task-logs',
           config: config,
           query: {
-            'task': SdkQueryValue(SdkUtils.unwrapOptional(task),
-                style: 'form', explode: true),
-            'conclusion': SdkQueryValue(SdkUtils.unwrapOptional(conclusion),
-                style: 'form', explode: true),
-            'level': SdkQueryValue(SdkUtils.unwrapOptional(level),
-                style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'task': SdkQueryValue(SdkUtils.unwrapOptional(task), style: 'form', explode: true),
+            'conclusion': SdkQueryValue(SdkUtils.unwrapOptional(conclusion), style: 'form', explode: true),
+            'level': SdkQueryValue(SdkUtils.unwrapOptional(level), style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiTaskLogs',
-          fromJsonRaw: (value) => GetVercelCiTaskLogsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiTaskLogsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Searches task logs across multiple invocation attempts and returns only invocations and tasks with matching lines. Supply up to 50 unique invocation attempts in `invocation` and a search string in `search`; matching is case-insensitive. When more than 1,000 lines match, the response keeps the newest lines.
 ///
@@ -802,23 +713,19 @@ Future<SearchVercelCiLogsResponse> searchVercelCiLogs(ClientConfig config,
           'GET', '/v1/vercel-ci/log-search',
           config: config,
           query: {
-            'invocation':
-                SdkQueryValue(invocation, style: 'form', explode: true),
+            'invocation': SdkQueryValue(invocation, style: 'form', explode: true),
             'search': SdkQueryValue(search, style: 'form', explode: true),
-            'level': SdkQueryValue(SdkUtils.unwrapOptional(level),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'level': SdkQueryValue(SdkUtils.unwrapOptional(level), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'searchVercelCiLogs',
-          fromJsonRaw: (value) => SearchVercelCiLogsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => SearchVercelCiLogsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves log lines for a specific job run attempt. Use `level` to filter the returned lines, or provide `since` to retrieve lines from a specified point. Set `follow` to 1 to request ongoing log output.
 ///
@@ -834,8 +741,7 @@ Future<GetVercelCiJobRunLogsResponse> getVercelCiJobRunLogs(ClientConfig config,
     required String runAttempt,
     SdkOptional<GetVercelCiJobRunLogsFollow> follow = const SdkOmitted(),
     SdkOptional<double> since = const SdkOmitted(),
-    SdkOptional<List<GetVercelCiJobRunLogsLevelItem>> level =
-        const SdkOmitted(),
+    SdkOptional<List<GetVercelCiJobRunLogsLevelItem>> level = const SdkOmitted(),
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
@@ -847,24 +753,19 @@ Future<GetVercelCiJobRunLogsResponse> getVercelCiJobRunLogs(ClientConfig config,
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions/${Uri.encodeComponent(jobDefinitionId.toString())}/runs/${Uri.encodeComponent(runAttempt.toString())}/logs',
           config: config,
           query: {
-            'follow': SdkQueryValue(SdkUtils.unwrapOptional(follow),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'level': SdkQueryValue(SdkUtils.unwrapOptional(level),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'follow': SdkQueryValue(SdkUtils.unwrapOptional(follow), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'level': SdkQueryValue(SdkUtils.unwrapOptional(level), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiJobRunLogs',
-          fromJsonRaw: (value) => GetVercelCiJobRunLogsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiJobRunLogsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves log lines for a specific task run attempt. Use `level` to filter the returned lines, or provide `since` to retrieve lines from a specified point. Set `follow` to 1 to stream newline-delimited JSON log lines until the task run finishes or the stream reaches its maximum duration.
 ///
@@ -875,21 +776,20 @@ Future<GetVercelCiJobRunLogsResponse> getVercelCiJobRunLogs(ClientConfig config,
 /// [level] Only return log lines with one of these levels.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetVercelCiTaskRunLogsResponse> getVercelCiTaskRunLogs(
-    ClientConfig config,
-    {required String invocationId,
-    required String attempt,
-    required String jobDefinitionId,
-    required String runAttempt,
-    required String taskDefinitionId,
-    required String taskRunAttempt,
-    SdkOptional<GetVercelCiTaskRunLogsFollow> follow = const SdkOmitted(),
-    SdkOptional<double> since = const SdkOmitted(),
-    SdkOptional<List<GetVercelCiTaskRunLogsLevelItem>> level =
-        const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetVercelCiTaskRunLogsResponse>
+    getVercelCiTaskRunLogs(ClientConfig config,
+        {required String invocationId,
+        required String attempt,
+        required String jobDefinitionId,
+        required String runAttempt,
+        required String taskDefinitionId,
+        required String taskRunAttempt,
+        SdkOptional<GetVercelCiTaskRunLogsFollow> follow = const SdkOmitted(),
+        SdkOptional<double> since = const SdkOmitted(),
+        SdkOptional<List<GetVercelCiTaskRunLogsLevelItem>> level = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (level is SdkPresent<List<GetVercelCiTaskRunLogsLevelItem>>) {
     validateItems('level', level.value, min: 1);
   }
@@ -898,21 +798,15 @@ Future<GetVercelCiTaskRunLogsResponse> getVercelCiTaskRunLogs(
           '/v1/vercel-ci/invocations/${Uri.encodeComponent(invocationId.toString())}/attempts/${Uri.encodeComponent(attempt.toString())}/job-definitions/${Uri.encodeComponent(jobDefinitionId.toString())}/runs/${Uri.encodeComponent(runAttempt.toString())}/task-definitions/${Uri.encodeComponent(taskDefinitionId.toString())}/runs/${Uri.encodeComponent(taskRunAttempt.toString())}/logs',
           config: config,
           query: {
-            'follow': SdkQueryValue(SdkUtils.unwrapOptional(follow),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'level': SdkQueryValue(SdkUtils.unwrapOptional(level),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'follow': SdkQueryValue(SdkUtils.unwrapOptional(follow), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'level': SdkQueryValue(SdkUtils.unwrapOptional(level), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVercelCiTaskRunLogs',
-          fromJsonRaw: (value) => GetVercelCiTaskRunLogsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetVercelCiTaskRunLogsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

@@ -6,269 +6,228 @@ part of 'inline.dart';
 // Inline operation models
 /// One of `LOCAL` or `REMOTE`. `LOCAL` specifies that the cache event was from the user's filesystem cache. `REMOTE` specifies that the cache event is from a remote cache.
 final class RecordEventsRequestBodyItemSource {
+
   final String value;
 
   const RecordEventsRequestBodyItemSource._(this.value);
 
-  factory RecordEventsRequestBodyItemSource.fromJson(String value) =>
-      RecordEventsRequestBodyItemSource._(value);
+  factory RecordEventsRequestBodyItemSource.fromJson(String value) => RecordEventsRequestBodyItemSource._(value);
 
   static const local = RecordEventsRequestBodyItemSource._('LOCAL');
   static const remote = RecordEventsRequestBodyItemSource._('REMOTE');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is RecordEventsRequestBodyItemSource && other.value == value;
+  @override bool operator ==(Object other) => other is RecordEventsRequestBodyItemSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetCertsResponseCertsItemAutoRenew {
+
   final bool value;
 
   const GetCertsResponseCertsItemAutoRenew._(this.value);
 
-  factory GetCertsResponseCertsItemAutoRenew.fromJson(bool value) =>
-      GetCertsResponseCertsItemAutoRenew._(value);
+  factory GetCertsResponseCertsItemAutoRenew.fromJson(bool value) => GetCertsResponseCertsItemAutoRenew._(value);
 
   static const false_ = GetCertsResponseCertsItemAutoRenew._(false);
   static const true_ = GetCertsResponseCertsItemAutoRenew._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetCertsResponseCertsItemAutoRenew && other.value == value;
+  @override bool operator ==(Object other) => other is GetCertsResponseCertsItemAutoRenew && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class IssueCertResponseAutoRenew {
+
   final bool value;
 
   const IssueCertResponseAutoRenew._(this.value);
 
-  factory IssueCertResponseAutoRenew.fromJson(bool value) =>
-      IssueCertResponseAutoRenew._(value);
+  factory IssueCertResponseAutoRenew.fromJson(bool value) => IssueCertResponseAutoRenew._(value);
 
   static const false_ = IssueCertResponseAutoRenew._(false);
   static const true_ = IssueCertResponseAutoRenew._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is IssueCertResponseAutoRenew && other.value == value;
+  @override bool operator ==(Object other) => other is IssueCertResponseAutoRenew && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadCertResponseAutoRenew {
+
   final bool value;
 
   const UploadCertResponseAutoRenew._(this.value);
 
-  factory UploadCertResponseAutoRenew.fromJson(bool value) =>
-      UploadCertResponseAutoRenew._(value);
+  factory UploadCertResponseAutoRenew.fromJson(bool value) => UploadCertResponseAutoRenew._(value);
 
   static const false_ = UploadCertResponseAutoRenew._(false);
   static const true_ = UploadCertResponseAutoRenew._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadCertResponseAutoRenew && other.value == value;
+  @override bool operator ==(Object other) => other is UploadCertResponseAutoRenew && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetCertByIdResponseAutoRenew {
+
   final bool value;
 
   const GetCertByIdResponseAutoRenew._(this.value);
 
-  factory GetCertByIdResponseAutoRenew.fromJson(bool value) =>
-      GetCertByIdResponseAutoRenew._(value);
+  factory GetCertByIdResponseAutoRenew.fromJson(bool value) => GetCertByIdResponseAutoRenew._(value);
 
   static const false_ = GetCertByIdResponseAutoRenew._(false);
   static const true_ = GetCertByIdResponseAutoRenew._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetCertByIdResponseAutoRenew && other.value == value;
+  @override bool operator ==(Object other) => other is GetCertByIdResponseAutoRenew && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller {
+
   final bool value;
 
   const ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller._(this.value);
 
-  factory ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller.fromJson(
-          bool value) =>
-      ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller._(value);
+  factory ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller.fromJson(bool value) => ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller._(value);
 
-  static const false_ =
-      ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller._(false);
-  static const true_ =
-      ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller._(true);
+  static const false_ = ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller._(false);
+  static const true_ = ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ClaimDomainOwnershipResponseDomainCreatorIsDomainReseller && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.
 final class ClaimDomainOwnershipResponseDomainEchMode {
+
   final String value;
 
   const ClaimDomainOwnershipResponseDomainEchMode._(this.value);
 
-  factory ClaimDomainOwnershipResponseDomainEchMode.fromJson(String value) =>
-      ClaimDomainOwnershipResponseDomainEchMode._(value);
+  factory ClaimDomainOwnershipResponseDomainEchMode.fromJson(String value) => ClaimDomainOwnershipResponseDomainEchMode._(value);
 
   static const auto = ClaimDomainOwnershipResponseDomainEchMode._('auto');
-  static const disabled =
-      ClaimDomainOwnershipResponseDomainEchMode._('disabled');
+  static const disabled = ClaimDomainOwnershipResponseDomainEchMode._('disabled');
   static const enabled = ClaimDomainOwnershipResponseDomainEchMode._('enabled');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ClaimDomainOwnershipResponseDomainEchMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ClaimDomainOwnershipResponseDomainEchMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Indicates whether the domain is set to automatically renew.
 final class ClaimDomainOwnershipResponseDomainRenew {
+
   final bool value;
 
   const ClaimDomainOwnershipResponseDomainRenew._(this.value);
 
-  factory ClaimDomainOwnershipResponseDomainRenew.fromJson(bool value) =>
-      ClaimDomainOwnershipResponseDomainRenew._(value);
+  factory ClaimDomainOwnershipResponseDomainRenew.fromJson(bool value) => ClaimDomainOwnershipResponseDomainRenew._(value);
 
   static const false_ = ClaimDomainOwnershipResponseDomainRenew._(false);
   static const true_ = ClaimDomainOwnershipResponseDomainRenew._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ClaimDomainOwnershipResponseDomainRenew && other.value == value;
+  @override bool operator ==(Object other) => other is ClaimDomainOwnershipResponseDomainRenew && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of service the domain is handled by. `external` if the DNS is externally handled, `zeit.world` if handled with Vercel, or `na` if the service is not available.
 final class ClaimDomainOwnershipResponseDomainServiceType {
+
   final String value;
 
   const ClaimDomainOwnershipResponseDomainServiceType._(this.value);
 
-  factory ClaimDomainOwnershipResponseDomainServiceType.fromJson(
-          String value) =>
-      ClaimDomainOwnershipResponseDomainServiceType._(value);
+  factory ClaimDomainOwnershipResponseDomainServiceType.fromJson(String value) => ClaimDomainOwnershipResponseDomainServiceType._(value);
 
-  static const external_ =
-      ClaimDomainOwnershipResponseDomainServiceType._('external');
+  static const external_ = ClaimDomainOwnershipResponseDomainServiceType._('external');
   static const na = ClaimDomainOwnershipResponseDomainServiceType._('na');
-  static const zeitWorld =
-      ClaimDomainOwnershipResponseDomainServiceType._('zeit.world');
+  static const zeitWorld = ClaimDomainOwnershipResponseDomainServiceType._('zeit.world');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ClaimDomainOwnershipResponseDomainServiceType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ClaimDomainOwnershipResponseDomainServiceType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// If the domain has the ownership verified.
 final class ClaimDomainOwnershipResponseDomainVerified {
+
   final bool value;
 
   const ClaimDomainOwnershipResponseDomainVerified._(this.value);
 
-  factory ClaimDomainOwnershipResponseDomainVerified.fromJson(bool value) =>
-      ClaimDomainOwnershipResponseDomainVerified._(value);
+  factory ClaimDomainOwnershipResponseDomainVerified.fromJson(bool value) => ClaimDomainOwnershipResponseDomainVerified._(value);
 
   static const false_ = ClaimDomainOwnershipResponseDomainVerified._(false);
   static const true_ = ClaimDomainOwnershipResponseDomainVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ClaimDomainOwnershipResponseDomainVerified &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ClaimDomainOwnershipResponseDomainVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseAliasItemConfiguredBy {
+
   final String value;
 
   const GetProjectsResponseAliasItemConfiguredBy._(this.value);
 
-  factory GetProjectsResponseAliasItemConfiguredBy.fromJson(String value) =>
-      GetProjectsResponseAliasItemConfiguredBy._(value);
+  factory GetProjectsResponseAliasItemConfiguredBy.fromJson(String value) => GetProjectsResponseAliasItemConfiguredBy._(value);
 
   static const a = GetProjectsResponseAliasItemConfiguredBy._('A');
   static const cname = GetProjectsResponseAliasItemConfiguredBy._('CNAME');
@@ -277,73 +236,54 @@ final class GetProjectsResponseAliasItemConfiguredBy {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseAliasItemConfiguredBy && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseAliasItemConfiguredBy && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1 {
+
   final bool value;
 
-  const GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(
-      this.value);
+  const GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(this.value);
 
-  factory GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1.fromJson(
-          bool value) =>
-      GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(value);
+  factory GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1.fromJson(bool value) => GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(value);
 
-  static const false_ =
-      GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(false);
-  static const true_ =
-      GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(true);
+  static const false_ = GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(false);
+  static const true_ = GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseAliasItemDeploymentAliasAssignedVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of matching to perform
 final class GetProjectsResponseAliasItemDeploymentBranchMatcherType {
+
   final String value;
 
   const GetProjectsResponseAliasItemDeploymentBranchMatcherType._(this.value);
 
-  factory GetProjectsResponseAliasItemDeploymentBranchMatcherType.fromJson(
-          String value) =>
-      GetProjectsResponseAliasItemDeploymentBranchMatcherType._(value);
+  factory GetProjectsResponseAliasItemDeploymentBranchMatcherType.fromJson(String value) => GetProjectsResponseAliasItemDeploymentBranchMatcherType._(value);
 
-  static const endswith =
-      GetProjectsResponseAliasItemDeploymentBranchMatcherType._('endsWith');
-  static const equals =
-      GetProjectsResponseAliasItemDeploymentBranchMatcherType._('equals');
-  static const startswith =
-      GetProjectsResponseAliasItemDeploymentBranchMatcherType._('startsWith');
+  static const endswith = GetProjectsResponseAliasItemDeploymentBranchMatcherType._('endsWith');
+  static const equals = GetProjectsResponseAliasItemDeploymentBranchMatcherType._('equals');
+  static const startswith = GetProjectsResponseAliasItemDeploymentBranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseAliasItemDeploymentBranchMatcherType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseAliasItemDeploymentBranchMatcherType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

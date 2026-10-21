@@ -8,508 +8,265 @@ part of 'user.dart';
 class UserEventPayloadVariant181 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional enumerated value serialized in the `action` wire field.
   final SdkOptional<UserEventPayloadVariant181Action> action;
-
   /// Required enumerated value serialized in the `active` wire field.
   final UserEventPayloadVariant181Active active;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `rulesetName` wire field.
   final String rulesetName;
 
-  const UserEventPayloadVariant181(
-      {this.action = const SdkOmitted(),
-      required this.active,
-      required this.projectId,
-      required this.rulesetName});
+  const UserEventPayloadVariant181({this.action = const SdkOmitted(), required this.active, required this.projectId, required this.rulesetName});
 
-  UserEventPayloadVariant181 Function(
-      {SdkOptional<UserEventPayloadVariant181Action> action,
-      UserEventPayloadVariant181Active active,
-      String projectId,
-      String rulesetName}) get copyWith => _copyWith;
+  UserEventPayloadVariant181 Function({SdkOptional<UserEventPayloadVariant181Action> action, UserEventPayloadVariant181Active active, String projectId, String rulesetName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant181 _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? rulesetName = sdkOmittedValue}) =>
-      UserEventPayloadVariant181(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<UserEventPayloadVariant181Action>,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as UserEventPayloadVariant181Active,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        rulesetName: identical(rulesetName, sdkOmittedValue)
-            ? this.rulesetName
-            : rulesetName as String,
-      );
+  UserEventPayloadVariant181 _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? rulesetName = sdkOmittedValue}) => UserEventPayloadVariant181(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<UserEventPayloadVariant181Action>,
+    active: identical(active, sdkOmittedValue) ? this.active : active as UserEventPayloadVariant181Active,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    rulesetName: identical(rulesetName, sdkOmittedValue) ? this.rulesetName : rulesetName as String,
+  );
 
-  factory UserEventPayloadVariant181.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant181(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] != null
-                ? UserEventPayloadVariant181Action.fromJson(
-                    json['action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        active: (json['active'] != null
-            ? UserEventPayloadVariant181Active.fromJson(json['active'] as bool)
-            : null)!,
-        projectId: (json['projectId'] as String?)!,
-        rulesetName: (json['rulesetName'] as String?)!,
-      );
+  factory UserEventPayloadVariant181.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant181(
+    action: json['action'] != null ? SdkPresent((json['action'] != null ? UserEventPayloadVariant181Action.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
+    active: (json['active'] != null ? UserEventPayloadVariant181Active.fromJson(json['active'] as bool) : null)!,
+    projectId: (json['projectId'] as String?)!,
+    rulesetName: (json['rulesetName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<UserEventPayloadVariant181Action>(value: final value) => {
-              'action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'active': active.toJson(),
-        'projectId': projectId,
-        'rulesetName': rulesetName,
-      };
+    ...switch (action) {
+      SdkPresent<UserEventPayloadVariant181Action>(value: final value) => {'action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'active': active.toJson(),
+    'projectId': projectId,
+    'rulesetName': rulesetName,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant182 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `consumerProjectId` wire field.
   final String consumerProjectId;
-
   /// Optional `string` value serialized in the `consumerProjectName` wire field.
   final SdkOptional<String> consumerProjectName;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
 
-  const UserEventPayloadVariant182(
-      {required this.consumerProjectId,
-      this.consumerProjectName = const SdkOmitted(),
-      required this.projectId,
-      this.projectName = const SdkOmitted()});
+  const UserEventPayloadVariant182({required this.consumerProjectId, this.consumerProjectName = const SdkOmitted(), required this.projectId, this.projectName = const SdkOmitted()});
 
-  UserEventPayloadVariant182 Function(
-      {String consumerProjectId,
-      SdkOptional<String> consumerProjectName,
-      String projectId,
-      SdkOptional<String> projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant182 Function({String consumerProjectId, SdkOptional<String> consumerProjectName, String projectId, SdkOptional<String> projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant182 _copyWith(
-          {Object? consumerProjectId = sdkOmittedValue,
-          Object? consumerProjectName = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant182(
-        consumerProjectId: identical(consumerProjectId, sdkOmittedValue)
-            ? this.consumerProjectId
-            : consumerProjectId as String,
-        consumerProjectName: identical(consumerProjectName, sdkOmittedValue)
-            ? this.consumerProjectName
-            : consumerProjectName as SdkOptional<String>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-      );
+  UserEventPayloadVariant182 _copyWith({Object? consumerProjectId = sdkOmittedValue, Object? consumerProjectName = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant182(
+    consumerProjectId: identical(consumerProjectId, sdkOmittedValue) ? this.consumerProjectId : consumerProjectId as String,
+    consumerProjectName: identical(consumerProjectName, sdkOmittedValue) ? this.consumerProjectName : consumerProjectName as SdkOptional<String>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant182.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant182(
-        consumerProjectId: (json['consumerProjectId'] as String?)!,
-        consumerProjectName: json['consumerProjectName'] != null
-            ? SdkPresent((json['consumerProjectName'] as String?)!)
-            : const SdkOmitted(),
-        projectId: (json['projectId'] as String?)!,
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant182.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant182(
+    consumerProjectId: (json['consumerProjectId'] as String?)!,
+    consumerProjectName: json['consumerProjectName'] != null ? SdkPresent((json['consumerProjectName'] as String?)!) : const SdkOmitted(),
+    projectId: (json['projectId'] as String?)!,
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'consumerProjectId': consumerProjectId,
-        ...switch (consumerProjectName) {
-          SdkPresent<String>(value: final value) => {
-              'consumerProjectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'projectId': projectId,
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'consumerProjectId': consumerProjectId,
+    ...switch (consumerProjectName) {
+      SdkPresent<String>(value: final value) => {'consumerProjectName': value,},
+      _ => const <String, dynamic>{},
+    },
+    'projectId': projectId,
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant183 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `newOwnerId` wire field.
   final String newOwnerId;
-
   /// Required `string` value serialized in the `previousOwnerId` wire field.
   final String previousOwnerId;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
 
-  const UserEventPayloadVariant183(
-      {required this.newOwnerId,
-      required this.previousOwnerId,
-      required this.projectId,
-      this.projectName = const SdkOmitted()});
+  const UserEventPayloadVariant183({required this.newOwnerId, required this.previousOwnerId, required this.projectId, this.projectName = const SdkOmitted()});
 
-  UserEventPayloadVariant183 Function(
-      {String newOwnerId,
-      String previousOwnerId,
-      String projectId,
-      SdkOptional<String> projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant183 Function({String newOwnerId, String previousOwnerId, String projectId, SdkOptional<String> projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant183 _copyWith(
-          {Object? newOwnerId = sdkOmittedValue,
-          Object? previousOwnerId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant183(
-        newOwnerId: identical(newOwnerId, sdkOmittedValue)
-            ? this.newOwnerId
-            : newOwnerId as String,
-        previousOwnerId: identical(previousOwnerId, sdkOmittedValue)
-            ? this.previousOwnerId
-            : previousOwnerId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-      );
+  UserEventPayloadVariant183 _copyWith({Object? newOwnerId = sdkOmittedValue, Object? previousOwnerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant183(
+    newOwnerId: identical(newOwnerId, sdkOmittedValue) ? this.newOwnerId : newOwnerId as String,
+    previousOwnerId: identical(previousOwnerId, sdkOmittedValue) ? this.previousOwnerId : previousOwnerId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant183.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant183(
-        newOwnerId: (json['newOwnerId'] as String?)!,
-        previousOwnerId: (json['previousOwnerId'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant183.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant183(
+    newOwnerId: (json['newOwnerId'] as String?)!,
+    previousOwnerId: (json['previousOwnerId'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'newOwnerId': newOwnerId,
-        'previousOwnerId': previousOwnerId,
-        'projectId': projectId,
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'newOwnerId': newOwnerId,
+    'previousOwnerId': previousOwnerId,
+    'projectId': projectId,
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant184 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `action` wire field.
   final UserEventPayloadVariant184Action action;
 
   const UserEventPayloadVariant184({required this.action});
 
-  UserEventPayloadVariant184 Function({UserEventPayloadVariant184Action action})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant184 Function({UserEventPayloadVariant184Action action}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant184 _copyWith({Object? action = sdkOmittedValue}) =>
-      UserEventPayloadVariant184(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as UserEventPayloadVariant184Action,
-      );
+  UserEventPayloadVariant184 _copyWith({Object? action = sdkOmittedValue}) => UserEventPayloadVariant184(
+    action: identical(action, sdkOmittedValue) ? this.action : action as UserEventPayloadVariant184Action,
+  );
 
-  factory UserEventPayloadVariant184.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant184(
-        action: (json['action'] != null
-            ? UserEventPayloadVariant184Action.fromJson(
-                json['action'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant184.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant184(
+    action: (json['action'] != null ? UserEventPayloadVariant184Action.fromJson(json['action'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-      };
+    'action': action.toJson(),
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant185 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `source` wire field.
   final UserEventPayloadVariant185Source source;
 
   const UserEventPayloadVariant185({required this.source});
 
-  UserEventPayloadVariant185 Function({UserEventPayloadVariant185Source source})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant185 Function({UserEventPayloadVariant185Source source}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant185 _copyWith({Object? source = sdkOmittedValue}) =>
-      UserEventPayloadVariant185(
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source as UserEventPayloadVariant185Source,
-      );
+  UserEventPayloadVariant185 _copyWith({Object? source = sdkOmittedValue}) => UserEventPayloadVariant185(
+    source: identical(source, sdkOmittedValue) ? this.source : source as UserEventPayloadVariant185Source,
+  );
 
-  factory UserEventPayloadVariant185.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant185(
-        source: (json['source'] != null
-            ? UserEventPayloadVariant185Source.fromJson(
-                json['source'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant185.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant185(
+    source: (json['source'] != null ? UserEventPayloadVariant185Source.fromJson(json['source'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'source': source.toJson(),
-      };
+    'source': source.toJson(),
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant186 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Stable account id on `provider`.
   final String? actorAccountId;
-
   /// Display name only. Logins are mutable; join on `actorAccountId`.
   final String? actorLogin;
-
   /// Branch actually pushed to, or the requested one if blocked.
   final String? destinationBranch;
-
   /// "owner/name", or the raw request value if blocked before it resolved.
   final String destinationRepo;
-
   /// Sanitized code, never a raw error message.
   final SdkOptional<String> failureCode;
-
   /// Mirrors `PushFailureStage` in `@api/git-push-repo`.
   final SdkOptional<UserEventPayloadVariant186FailureStage> failureStage;
-
   /// Set only when an App installation token was minted (GitHub only).
   final String? installationId;
-
   /// Required enumerated value serialized in the `outcome` wire field.
   final UserEventPayloadVariant186Outcome outcome;
-
   /// Required enumerated value serialized in the `provider` wire field.
   final UserEventPayloadVariant186Provider provider;
-
   /// Required `string` value serialized in the `resultCommitSha` wire field.
   final String? resultCommitSha;
-
   /// Required `string` value serialized in the `sourceCommitSha` wire field.
   final String? sourceCommitSha;
-
   /// Source repository, "owner/name". Null when the pushed content was generated in-request (push-files-to-repo) rather than copied from a repository.
   final String? sourceRepo;
-
   /// Required enumerated value serialized in the `usedAppToken` wire field.
   final UserEventPayloadVariant186UsedAppToken usedAppToken;
 
-  const UserEventPayloadVariant186(
-      {required this.actorAccountId,
-      required this.actorLogin,
-      required this.destinationBranch,
-      required this.destinationRepo,
-      this.failureCode = const SdkOmitted(),
-      this.failureStage = const SdkOmitted(),
-      required this.installationId,
-      required this.outcome,
-      required this.provider,
-      required this.resultCommitSha,
-      required this.sourceCommitSha,
-      required this.sourceRepo,
-      required this.usedAppToken});
+  const UserEventPayloadVariant186({required this.actorAccountId, required this.actorLogin, required this.destinationBranch, required this.destinationRepo, this.failureCode = const SdkOmitted(), this.failureStage = const SdkOmitted(), required this.installationId, required this.outcome, required this.provider, required this.resultCommitSha, required this.sourceCommitSha, required this.sourceRepo, required this.usedAppToken});
 
-  UserEventPayloadVariant186 Function(
-          {String? actorAccountId,
-          String? actorLogin,
-          String? destinationBranch,
-          String destinationRepo,
-          SdkOptional<String> failureCode,
-          SdkOptional<UserEventPayloadVariant186FailureStage> failureStage,
-          String? installationId,
-          UserEventPayloadVariant186Outcome outcome,
-          UserEventPayloadVariant186Provider provider,
-          String? resultCommitSha,
-          String? sourceCommitSha,
-          String? sourceRepo,
-          UserEventPayloadVariant186UsedAppToken usedAppToken})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant186 Function({String? actorAccountId, String? actorLogin, String? destinationBranch, String destinationRepo, SdkOptional<String> failureCode, SdkOptional<UserEventPayloadVariant186FailureStage> failureStage, String? installationId, UserEventPayloadVariant186Outcome outcome, UserEventPayloadVariant186Provider provider, String? resultCommitSha, String? sourceCommitSha, String? sourceRepo, UserEventPayloadVariant186UsedAppToken usedAppToken}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant186 _copyWith(
-          {Object? actorAccountId = sdkOmittedValue,
-          Object? actorLogin = sdkOmittedValue,
-          Object? destinationBranch = sdkOmittedValue,
-          Object? destinationRepo = sdkOmittedValue,
-          Object? failureCode = sdkOmittedValue,
-          Object? failureStage = sdkOmittedValue,
-          Object? installationId = sdkOmittedValue,
-          Object? outcome = sdkOmittedValue,
-          Object? provider = sdkOmittedValue,
-          Object? resultCommitSha = sdkOmittedValue,
-          Object? sourceCommitSha = sdkOmittedValue,
-          Object? sourceRepo = sdkOmittedValue,
-          Object? usedAppToken = sdkOmittedValue}) =>
-      UserEventPayloadVariant186(
-        actorAccountId: identical(actorAccountId, sdkOmittedValue)
-            ? this.actorAccountId
-            : actorAccountId as String?,
-        actorLogin: identical(actorLogin, sdkOmittedValue)
-            ? this.actorLogin
-            : actorLogin as String?,
-        destinationBranch: identical(destinationBranch, sdkOmittedValue)
-            ? this.destinationBranch
-            : destinationBranch as String?,
-        destinationRepo: identical(destinationRepo, sdkOmittedValue)
-            ? this.destinationRepo
-            : destinationRepo as String,
-        failureCode: identical(failureCode, sdkOmittedValue)
-            ? this.failureCode
-            : failureCode as SdkOptional<String>,
-        failureStage: identical(failureStage, sdkOmittedValue)
-            ? this.failureStage
-            : failureStage
-                as SdkOptional<UserEventPayloadVariant186FailureStage>,
-        installationId: identical(installationId, sdkOmittedValue)
-            ? this.installationId
-            : installationId as String?,
-        outcome: identical(outcome, sdkOmittedValue)
-            ? this.outcome
-            : outcome as UserEventPayloadVariant186Outcome,
-        provider: identical(provider, sdkOmittedValue)
-            ? this.provider
-            : provider as UserEventPayloadVariant186Provider,
-        resultCommitSha: identical(resultCommitSha, sdkOmittedValue)
-            ? this.resultCommitSha
-            : resultCommitSha as String?,
-        sourceCommitSha: identical(sourceCommitSha, sdkOmittedValue)
-            ? this.sourceCommitSha
-            : sourceCommitSha as String?,
-        sourceRepo: identical(sourceRepo, sdkOmittedValue)
-            ? this.sourceRepo
-            : sourceRepo as String?,
-        usedAppToken: identical(usedAppToken, sdkOmittedValue)
-            ? this.usedAppToken
-            : usedAppToken as UserEventPayloadVariant186UsedAppToken,
-      );
+  UserEventPayloadVariant186 _copyWith({Object? actorAccountId = sdkOmittedValue, Object? actorLogin = sdkOmittedValue, Object? destinationBranch = sdkOmittedValue, Object? destinationRepo = sdkOmittedValue, Object? failureCode = sdkOmittedValue, Object? failureStage = sdkOmittedValue, Object? installationId = sdkOmittedValue, Object? outcome = sdkOmittedValue, Object? provider = sdkOmittedValue, Object? resultCommitSha = sdkOmittedValue, Object? sourceCommitSha = sdkOmittedValue, Object? sourceRepo = sdkOmittedValue, Object? usedAppToken = sdkOmittedValue}) => UserEventPayloadVariant186(
+    actorAccountId: identical(actorAccountId, sdkOmittedValue) ? this.actorAccountId : actorAccountId as String?,
+    actorLogin: identical(actorLogin, sdkOmittedValue) ? this.actorLogin : actorLogin as String?,
+    destinationBranch: identical(destinationBranch, sdkOmittedValue) ? this.destinationBranch : destinationBranch as String?,
+    destinationRepo: identical(destinationRepo, sdkOmittedValue) ? this.destinationRepo : destinationRepo as String,
+    failureCode: identical(failureCode, sdkOmittedValue) ? this.failureCode : failureCode as SdkOptional<String>,
+    failureStage: identical(failureStage, sdkOmittedValue) ? this.failureStage : failureStage as SdkOptional<UserEventPayloadVariant186FailureStage>,
+    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as String?,
+    outcome: identical(outcome, sdkOmittedValue) ? this.outcome : outcome as UserEventPayloadVariant186Outcome,
+    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as UserEventPayloadVariant186Provider,
+    resultCommitSha: identical(resultCommitSha, sdkOmittedValue) ? this.resultCommitSha : resultCommitSha as String?,
+    sourceCommitSha: identical(sourceCommitSha, sdkOmittedValue) ? this.sourceCommitSha : sourceCommitSha as String?,
+    sourceRepo: identical(sourceRepo, sdkOmittedValue) ? this.sourceRepo : sourceRepo as String?,
+    usedAppToken: identical(usedAppToken, sdkOmittedValue) ? this.usedAppToken : usedAppToken as UserEventPayloadVariant186UsedAppToken,
+  );
 
-  factory UserEventPayloadVariant186.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant186(
-        actorAccountId: json.containsKey('actorAccountId')
-            ? json['actorAccountId'] as String?
-            : throw ArgumentError.value(
-                null, 'actorAccountId', 'Required property is missing'),
-        actorLogin: json.containsKey('actorLogin')
-            ? json['actorLogin'] as String?
-            : throw ArgumentError.value(
-                null, 'actorLogin', 'Required property is missing'),
-        destinationBranch: json.containsKey('destinationBranch')
-            ? json['destinationBranch'] as String?
-            : throw ArgumentError.value(
-                null, 'destinationBranch', 'Required property is missing'),
-        destinationRepo: (json['destinationRepo'] as String?)!,
-        failureCode: json['failureCode'] != null
-            ? SdkPresent((json['failureCode'] as String?)!)
-            : const SdkOmitted(),
-        failureStage: json['failureStage'] != null
-            ? SdkPresent((json['failureStage'] != null
-                ? UserEventPayloadVariant186FailureStage.fromJson(
-                    json['failureStage'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        installationId: json.containsKey('installationId')
-            ? json['installationId'] as String?
-            : throw ArgumentError.value(
-                null, 'installationId', 'Required property is missing'),
-        outcome: (json['outcome'] != null
-            ? UserEventPayloadVariant186Outcome.fromJson(
-                json['outcome'] as String)
-            : null)!,
-        provider: (json['provider'] != null
-            ? UserEventPayloadVariant186Provider.fromJson(
-                json['provider'] as String)
-            : null)!,
-        resultCommitSha: json.containsKey('resultCommitSha')
-            ? json['resultCommitSha'] as String?
-            : throw ArgumentError.value(
-                null, 'resultCommitSha', 'Required property is missing'),
-        sourceCommitSha: json.containsKey('sourceCommitSha')
-            ? json['sourceCommitSha'] as String?
-            : throw ArgumentError.value(
-                null, 'sourceCommitSha', 'Required property is missing'),
-        sourceRepo: json.containsKey('sourceRepo')
-            ? json['sourceRepo'] as String?
-            : throw ArgumentError.value(
-                null, 'sourceRepo', 'Required property is missing'),
-        usedAppToken: (json['usedAppToken'] != null
-            ? UserEventPayloadVariant186UsedAppToken.fromJson(
-                json['usedAppToken'] as bool)
-            : null)!,
-      );
+  factory UserEventPayloadVariant186.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant186(
+    actorAccountId: json.containsKey('actorAccountId') ? json['actorAccountId'] as String? : throw ArgumentError.value(null, 'actorAccountId', 'Required property is missing'),
+    actorLogin: json.containsKey('actorLogin') ? json['actorLogin'] as String? : throw ArgumentError.value(null, 'actorLogin', 'Required property is missing'),
+    destinationBranch: json.containsKey('destinationBranch') ? json['destinationBranch'] as String? : throw ArgumentError.value(null, 'destinationBranch', 'Required property is missing'),
+    destinationRepo: (json['destinationRepo'] as String?)!,
+    failureCode: json['failureCode'] != null ? SdkPresent((json['failureCode'] as String?)!) : const SdkOmitted(),
+    failureStage: json['failureStage'] != null ? SdkPresent((json['failureStage'] != null ? UserEventPayloadVariant186FailureStage.fromJson(json['failureStage'] as String) : null)!) : const SdkOmitted(),
+    installationId: json.containsKey('installationId') ? json['installationId'] as String? : throw ArgumentError.value(null, 'installationId', 'Required property is missing'),
+    outcome: (json['outcome'] != null ? UserEventPayloadVariant186Outcome.fromJson(json['outcome'] as String) : null)!,
+    provider: (json['provider'] != null ? UserEventPayloadVariant186Provider.fromJson(json['provider'] as String) : null)!,
+    resultCommitSha: json.containsKey('resultCommitSha') ? json['resultCommitSha'] as String? : throw ArgumentError.value(null, 'resultCommitSha', 'Required property is missing'),
+    sourceCommitSha: json.containsKey('sourceCommitSha') ? json['sourceCommitSha'] as String? : throw ArgumentError.value(null, 'sourceCommitSha', 'Required property is missing'),
+    sourceRepo: json.containsKey('sourceRepo') ? json['sourceRepo'] as String? : throw ArgumentError.value(null, 'sourceRepo', 'Required property is missing'),
+    usedAppToken: (json['usedAppToken'] != null ? UserEventPayloadVariant186UsedAppToken.fromJson(json['usedAppToken'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'actorAccountId': actorAccountId,
-        'actorLogin': actorLogin,
-        'destinationBranch': destinationBranch,
-        'destinationRepo': destinationRepo,
-        ...switch (failureCode) {
-          SdkPresent<String>(value: final value) => {
-              'failureCode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (failureStage) {
-          SdkPresent<UserEventPayloadVariant186FailureStage>(
-            value: final value
-          ) =>
-            {
-              'failureStage': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'installationId': installationId,
-        'outcome': outcome.toJson(),
-        'provider': provider.toJson(),
-        'resultCommitSha': resultCommitSha,
-        'sourceCommitSha': sourceCommitSha,
-        'sourceRepo': sourceRepo,
-        'usedAppToken': usedAppToken.toJson(),
-      };
+    'actorAccountId': actorAccountId,
+    'actorLogin': actorLogin,
+    'destinationBranch': destinationBranch,
+    'destinationRepo': destinationRepo,
+    ...switch (failureCode) {
+      SdkPresent<String>(value: final value) => {'failureCode': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (failureStage) {
+      SdkPresent<UserEventPayloadVariant186FailureStage>(value: final value) => {'failureStage': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'installationId': installationId,
+    'outcome': outcome.toJson(),
+    'provider': provider.toJson(),
+    'resultCommitSha': resultCommitSha,
+    'sourceCommitSha': sourceCommitSha,
+    'sourceRepo': sourceRepo,
+    'usedAppToken': usedAppToken.toJson(),
+  };
 }

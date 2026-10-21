@@ -7,271 +7,139 @@ part of 'vercel_ci.dart';
 class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result
-      result;
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result result;
 
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
-      {required this.result});
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0({required this.result});
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0 Function(
-      {GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result
-          result}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0 Function({GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result result}) get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0
-      _copyWith({Object? result = sdkOmittedValue}) =>
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
-            result: identical(result, sdkOmittedValue)
-                ? this.result
-                : result
-                    as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result,
-          );
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0 _copyWith({Object? result = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result,
+  );
 
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
-        result: (json['result'] != null
-            ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result
-                .fromJson(json['result'] as String)
-            : null)!,
-      );
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
+    result: (json['result'] != null ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0Result.fromJson(json['result'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-      };
+    'result': result.toJson(),
+  };
 }
 
 class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result
-      result;
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result result;
 
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
-      {required this.result});
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1({required this.result});
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1 Function(
-      {GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result
-          result}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1 Function({GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result result}) get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1
-      _copyWith({Object? result = sdkOmittedValue}) =>
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
-            result: identical(result, sdkOmittedValue)
-                ? this.result
-                : result
-                    as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result,
-          );
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1 _copyWith({Object? result = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result,
+  );
 
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
-        result: (json['result'] != null
-            ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result
-                .fromJson(json['result'] as String)
-            : null)!,
-      );
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
+    result: (json['result'] != null ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1Result.fromJson(json['result'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-      };
+    'result': result.toJson(),
+  };
 }
 
 class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result
-      result;
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result result;
   final String reason;
 
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
-      {required this.result, required this.reason});
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2({required this.result, required this.reason});
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2 Function(
-      {GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result
-          result,
-      String reason}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2 Function({GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result result, String reason}) get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2
-      _copyWith(
-              {Object? result = sdkOmittedValue,
-              Object? reason = sdkOmittedValue}) =>
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
-            result: identical(result, sdkOmittedValue)
-                ? this.result
-                : result
-                    as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result,
-            reason: identical(reason, sdkOmittedValue)
-                ? this.reason
-                : reason as String,
-          );
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+  );
 
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
-        result: (json['result'] != null
-            ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result
-                .fromJson(json['result'] as String)
-            : null)!,
-        reason: (json['reason'] as String?)!,
-      );
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
+    result: (json['result'] != null ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2Result.fromJson(json['result'] as String) : null)!,
+    reason: (json['reason'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-        'reason': reason,
-      };
+    'result': result.toJson(),
+    'reason': reason,
+  };
 }
 
 class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result
-      result;
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result result;
   final String reason;
 
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
-      {required this.result, required this.reason});
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3({required this.result, required this.reason});
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3 Function(
-      {GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result
-          result,
-      String reason}) get copyWith => _copyWith;
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3 Function({GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result result, String reason}) get copyWith => _copyWith;
 
-  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3
-      _copyWith(
-              {Object? result = sdkOmittedValue,
-              Object? reason = sdkOmittedValue}) =>
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
-            result: identical(result, sdkOmittedValue)
-                ? this.result
-                : result
-                    as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result,
-            reason: identical(reason, sdkOmittedValue)
-                ? this.reason
-                : reason as String,
-          );
+  GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+  );
 
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
-        result: (json['result'] != null
-            ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result
-                .fromJson(json['result'] as String)
-            : null)!,
-        reason: (json['reason'] as String?)!,
-      );
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3.fromJson(Map<String, dynamic> json) => GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
+    result: (json['result'] != null ? GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3Result.fromJson(json['result'] as String) : null)!,
+    reason: (json['reason'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-        'reason': reason,
-      };
+    'result': result.toJson(),
+    'reason': reason,
+  };
 }
 
 sealed class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion();
-  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion.fromJson(
-      Object? json) {
+  factory GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(value); } } catch (_) {}
+      try { final value = GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(value); } } catch (_) {}
+      try { final value = GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(value); } } catch (_) {}
+      try { final value = GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(value); } } catch (_) {}
     }
-    try {
-      return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
-          GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion");
+    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion");
   }
   Object? toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0
-    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0
-      value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0 value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1
-    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1
-      value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1 value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2
-    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2
-      value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2 value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3
-    extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
-  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3
-      value;
-  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3 extends GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusion {
+  final GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3 value;
+  const GetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionGetVercelCiInvocationTreeResponseJobsItemTasksItemRunCompletedConclusionVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }

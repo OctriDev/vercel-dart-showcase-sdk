@@ -10,157 +10,82 @@ class UpdateResourceRequestBodySecretsVariant0Item {
   final String name;
   final String value;
   final SdkOptional<String> prefix;
-
   /// A map of environments to override values for the secret, used for setting different values across deployments in production, preview, and development environments. Note: the same value will be used for all deployments in the given environment.
-  final SdkOptional<
-          UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides>
-      environmentOverrides;
+  final SdkOptional<UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides> environmentOverrides;
 
-  const UpdateResourceRequestBodySecretsVariant0Item(
-      {required this.name,
-      required this.value,
-      this.prefix = const SdkOmitted(),
-      this.environmentOverrides = const SdkOmitted()});
+  const UpdateResourceRequestBodySecretsVariant0Item({required this.name, required this.value, this.prefix = const SdkOmitted(), this.environmentOverrides = const SdkOmitted()});
 
-  UpdateResourceRequestBodySecretsVariant0Item Function(
-      {String name,
-      String value,
-      SdkOptional<String> prefix,
-      SdkOptional<
-              UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides>
-          environmentOverrides}) get copyWith => _copyWith;
+  UpdateResourceRequestBodySecretsVariant0Item Function({String name, String value, SdkOptional<String> prefix, SdkOptional<UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides> environmentOverrides}) get copyWith => _copyWith;
 
-  UpdateResourceRequestBodySecretsVariant0Item _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? value = sdkOmittedValue,
-          Object? prefix = sdkOmittedValue,
-          Object? environmentOverrides = sdkOmittedValue}) =>
-      UpdateResourceRequestBodySecretsVariant0Item(
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        prefix: identical(prefix, sdkOmittedValue)
-            ? this.prefix
-            : prefix as SdkOptional<String>,
-        environmentOverrides: identical(environmentOverrides, sdkOmittedValue)
-            ? this.environmentOverrides
-            : environmentOverrides as SdkOptional<
-                UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides>,
-      );
+  UpdateResourceRequestBodySecretsVariant0Item _copyWith({Object? name = sdkOmittedValue, Object? value = sdkOmittedValue, Object? prefix = sdkOmittedValue, Object? environmentOverrides = sdkOmittedValue}) => UpdateResourceRequestBodySecretsVariant0Item(
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    prefix: identical(prefix, sdkOmittedValue) ? this.prefix : prefix as SdkOptional<String>,
+    environmentOverrides: identical(environmentOverrides, sdkOmittedValue) ? this.environmentOverrides : environmentOverrides as SdkOptional<UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides>,
+  );
 
-  factory UpdateResourceRequestBodySecretsVariant0Item.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateResourceRequestBodySecretsVariant0Item(
-        name: (json['name'] as String?)!,
-        value: (json['value'] as String?)!,
-        prefix: json['prefix'] != null
-            ? SdkPresent((json['prefix'] as String?)!)
-            : const SdkOmitted(),
-        environmentOverrides: json['environmentOverrides'] != null
-            ? SdkPresent((json['environmentOverrides'] != null
-                ? UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides
-                    .fromJson(
-                        json['environmentOverrides'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateResourceRequestBodySecretsVariant0Item.fromJson(Map<String, dynamic> json) => UpdateResourceRequestBodySecretsVariant0Item(
+    name: (json['name'] as String?)!,
+    value: (json['value'] as String?)!,
+    prefix: json['prefix'] != null ? SdkPresent((json['prefix'] as String?)!) : const SdkOmitted(),
+    environmentOverrides: json['environmentOverrides'] != null ? SdkPresent((json['environmentOverrides'] != null ? UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides.fromJson(json['environmentOverrides'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        'value': value,
-        ...switch (prefix) {
-          SdkPresent<String>(value: final value) => {
-              'prefix': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environmentOverrides) {
-          SdkPresent<
-                UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides>(
-            value: final value
-          ) =>
-            {
-              'environmentOverrides': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'name': name,
+    'value': value,
+    ...switch (prefix) {
+      SdkPresent<String>(value: final value) => {'prefix': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environmentOverrides) {
+      SdkPresent<UpdateResourceRequestBodySecretsVariant0ItemEnvironmentOverrides>(value: final value) => {'environmentOverrides': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// A map of environments to override values for the secret, used for setting different values across deployments in production, preview, and development environments. Note: the same value will be used for all deployments in the given environment.
 class UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Value used for development environment.
   final SdkOptional<String> development;
-
   /// Value used for preview environment.
   final SdkOptional<String> preview;
-
   /// Value used for production environment.
   final SdkOptional<String> production;
 
-  const UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides(
-      {this.development = const SdkOmitted(),
-      this.preview = const SdkOmitted(),
-      this.production = const SdkOmitted()});
+  const UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides({this.development = const SdkOmitted(), this.preview = const SdkOmitted(), this.production = const SdkOmitted()});
 
-  UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides Function(
-      {SdkOptional<String> development,
-      SdkOptional<String> preview,
-      SdkOptional<String> production}) get copyWith => _copyWith;
+  UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides Function({SdkOptional<String> development, SdkOptional<String> preview, SdkOptional<String> production}) get copyWith => _copyWith;
 
-  UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides
-      _copyWith(
-              {Object? development = sdkOmittedValue,
-              Object? preview = sdkOmittedValue,
-              Object? production = sdkOmittedValue}) =>
-          UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides(
-            development: identical(development, sdkOmittedValue)
-                ? this.development
-                : development as SdkOptional<String>,
-            preview: identical(preview, sdkOmittedValue)
-                ? this.preview
-                : preview as SdkOptional<String>,
-            production: identical(production, sdkOmittedValue)
-                ? this.production
-                : production as SdkOptional<String>,
-          );
+  UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides _copyWith({Object? development = sdkOmittedValue, Object? preview = sdkOmittedValue, Object? production = sdkOmittedValue}) => UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides(
+    development: identical(development, sdkOmittedValue) ? this.development : development as SdkOptional<String>,
+    preview: identical(preview, sdkOmittedValue) ? this.preview : preview as SdkOptional<String>,
+    production: identical(production, sdkOmittedValue) ? this.production : production as SdkOptional<String>,
+  );
 
-  factory UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides(
-        development: json['development'] != null
-            ? SdkPresent((json['development'] as String?)!)
-            : const SdkOmitted(),
-        preview: json['preview'] != null
-            ? SdkPresent((json['preview'] as String?)!)
-            : const SdkOmitted(),
-        production: json['production'] != null
-            ? SdkPresent((json['production'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides.fromJson(Map<String, dynamic> json) => UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides(
+    development: json['development'] != null ? SdkPresent((json['development'] as String?)!) : const SdkOmitted(),
+    preview: json['preview'] != null ? SdkPresent((json['preview'] as String?)!) : const SdkOmitted(),
+    production: json['production'] != null ? SdkPresent((json['production'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (development) {
-          SdkPresent<String>(value: final value) => {
-              'development': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (preview) {
-          SdkPresent<String>(value: final value) => {
-              'preview': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (production) {
-          SdkPresent<String>(value: final value) => {
-              'production': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (development) {
+      SdkPresent<String>(value: final value) => {'development': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (preview) {
+      SdkPresent<String>(value: final value) => {'preview': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (production) {
+      SdkPresent<String>(value: final value) => {'production': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateResourceRequestBodySecretsVariant1SecretsItem {
@@ -169,333 +94,174 @@ class UpdateResourceRequestBodySecretsVariant1SecretsItem {
   final String name;
   final String value;
   final SdkOptional<String> prefix;
-
   /// A map of environments to override values for the secret, used for setting different values across deployments in production, preview, and development environments. Note: the same value will be used for all deployments in the given environment.
-  final SdkOptional<
-          UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides>
-      environmentOverrides;
+  final SdkOptional<UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides> environmentOverrides;
 
-  const UpdateResourceRequestBodySecretsVariant1SecretsItem(
-      {required this.name,
-      required this.value,
-      this.prefix = const SdkOmitted(),
-      this.environmentOverrides = const SdkOmitted()});
+  const UpdateResourceRequestBodySecretsVariant1SecretsItem({required this.name, required this.value, this.prefix = const SdkOmitted(), this.environmentOverrides = const SdkOmitted()});
 
-  UpdateResourceRequestBodySecretsVariant1SecretsItem Function(
-      {String name,
-      String value,
-      SdkOptional<String> prefix,
-      SdkOptional<
-              UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides>
-          environmentOverrides}) get copyWith => _copyWith;
+  UpdateResourceRequestBodySecretsVariant1SecretsItem Function({String name, String value, SdkOptional<String> prefix, SdkOptional<UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides> environmentOverrides}) get copyWith => _copyWith;
 
-  UpdateResourceRequestBodySecretsVariant1SecretsItem _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? value = sdkOmittedValue,
-          Object? prefix = sdkOmittedValue,
-          Object? environmentOverrides = sdkOmittedValue}) =>
-      UpdateResourceRequestBodySecretsVariant1SecretsItem(
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        prefix: identical(prefix, sdkOmittedValue)
-            ? this.prefix
-            : prefix as SdkOptional<String>,
-        environmentOverrides: identical(environmentOverrides, sdkOmittedValue)
-            ? this.environmentOverrides
-            : environmentOverrides as SdkOptional<
-                UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides>,
-      );
+  UpdateResourceRequestBodySecretsVariant1SecretsItem _copyWith({Object? name = sdkOmittedValue, Object? value = sdkOmittedValue, Object? prefix = sdkOmittedValue, Object? environmentOverrides = sdkOmittedValue}) => UpdateResourceRequestBodySecretsVariant1SecretsItem(
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    prefix: identical(prefix, sdkOmittedValue) ? this.prefix : prefix as SdkOptional<String>,
+    environmentOverrides: identical(environmentOverrides, sdkOmittedValue) ? this.environmentOverrides : environmentOverrides as SdkOptional<UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides>,
+  );
 
-  factory UpdateResourceRequestBodySecretsVariant1SecretsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateResourceRequestBodySecretsVariant1SecretsItem(
-        name: (json['name'] as String?)!,
-        value: (json['value'] as String?)!,
-        prefix: json['prefix'] != null
-            ? SdkPresent((json['prefix'] as String?)!)
-            : const SdkOmitted(),
-        environmentOverrides: json['environmentOverrides'] != null
-            ? SdkPresent((json['environmentOverrides'] != null
-                ? UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides
-                    .fromJson(
-                        json['environmentOverrides'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateResourceRequestBodySecretsVariant1SecretsItem.fromJson(Map<String, dynamic> json) => UpdateResourceRequestBodySecretsVariant1SecretsItem(
+    name: (json['name'] as String?)!,
+    value: (json['value'] as String?)!,
+    prefix: json['prefix'] != null ? SdkPresent((json['prefix'] as String?)!) : const SdkOmitted(),
+    environmentOverrides: json['environmentOverrides'] != null ? SdkPresent((json['environmentOverrides'] != null ? UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides.fromJson(json['environmentOverrides'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        'value': value,
-        ...switch (prefix) {
-          SdkPresent<String>(value: final value) => {
-              'prefix': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environmentOverrides) {
-          SdkPresent<
-                UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides>(
-            value: final value
-          ) =>
-            {
-              'environmentOverrides': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'name': name,
+    'value': value,
+    ...switch (prefix) {
+      SdkPresent<String>(value: final value) => {'prefix': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environmentOverrides) {
+      SdkPresent<UpdateResourceRequestBodySecretsVariant1SecretsItemEnvironmentOverrides>(value: final value) => {'environmentOverrides': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateResourceRequestBodySecretsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<UpdateResourceRequestBodySecretsVariant1SecretsItem> secrets;
-
   /// If true, will only overwrite the provided secrets instead of replacing all secrets.
   final SdkOptional<bool> partial;
 
-  const UpdateResourceRequestBodySecretsVariant1(
-      {required this.secrets, this.partial = const SdkOmitted()});
+  const UpdateResourceRequestBodySecretsVariant1({required this.secrets, this.partial = const SdkOmitted()});
 
-  UpdateResourceRequestBodySecretsVariant1 Function(
-      {List<UpdateResourceRequestBodySecretsVariant1SecretsItem> secrets,
-      SdkOptional<bool> partial}) get copyWith => _copyWith;
+  UpdateResourceRequestBodySecretsVariant1 Function({List<UpdateResourceRequestBodySecretsVariant1SecretsItem> secrets, SdkOptional<bool> partial}) get copyWith => _copyWith;
 
-  UpdateResourceRequestBodySecretsVariant1 _copyWith(
-          {Object? secrets = sdkOmittedValue,
-          Object? partial = sdkOmittedValue}) =>
-      UpdateResourceRequestBodySecretsVariant1(
-        secrets: identical(secrets, sdkOmittedValue)
-            ? this.secrets
-            : secrets
-                as List<UpdateResourceRequestBodySecretsVariant1SecretsItem>,
-        partial: identical(partial, sdkOmittedValue)
-            ? this.partial
-            : partial as SdkOptional<bool>,
-      );
+  UpdateResourceRequestBodySecretsVariant1 _copyWith({Object? secrets = sdkOmittedValue, Object? partial = sdkOmittedValue}) => UpdateResourceRequestBodySecretsVariant1(
+    secrets: identical(secrets, sdkOmittedValue) ? this.secrets : secrets as List<UpdateResourceRequestBodySecretsVariant1SecretsItem>,
+    partial: identical(partial, sdkOmittedValue) ? this.partial : partial as SdkOptional<bool>,
+  );
 
-  factory UpdateResourceRequestBodySecretsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateResourceRequestBodySecretsVariant1(
-        secrets: ((json['secrets'] as List?)
-            ?.map((e) =>
-                UpdateResourceRequestBodySecretsVariant1SecretsItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        partial: json['partial'] != null
-            ? SdkPresent((json['partial'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateResourceRequestBodySecretsVariant1.fromJson(Map<String, dynamic> json) => UpdateResourceRequestBodySecretsVariant1(
+    secrets: ((json['secrets'] as List?)?.map((e) => UpdateResourceRequestBodySecretsVariant1SecretsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    partial: json['partial'] != null ? SdkPresent((json['partial'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'secrets': secrets.map((item) => item.toJson()).toList(),
-        ...switch (partial) {
-          SdkPresent<bool>(value: final value) => {
-              'partial': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'secrets': secrets.map((item) => item.toJson()).toList(),
+    ...switch (partial) {
+      SdkPresent<bool>(value: final value) => {'partial': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Applies only when the token is minted for one of these roles.
   final SdkOptional<List<String>> role;
-
   /// Applies only when the token is minted for one of these environments: `production`, `preview`, `development`, or a custom environment slug. A custom environment also matches `preview`.
   final SdkOptional<List<String>> environment;
 
-  const UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen(
-      {this.role = const SdkOmitted(), this.environment = const SdkOmitted()});
+  const UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen({this.role = const SdkOmitted(), this.environment = const SdkOmitted()});
 
-  UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen Function(
-      {SdkOptional<List<String>> role,
-      SdkOptional<List<String>> environment}) get copyWith => _copyWith;
+  UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen Function({SdkOptional<List<String>> role, SdkOptional<List<String>> environment}) get copyWith => _copyWith;
 
-  UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen _copyWith(
-          {Object? role = sdkOmittedValue,
-          Object? environment = sdkOmittedValue}) =>
-      UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen(
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as SdkOptional<List<String>>,
-        environment: identical(environment, sdkOmittedValue)
-            ? this.environment
-            : environment as SdkOptional<List<String>>,
-      );
+  UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen _copyWith({Object? role = sdkOmittedValue, Object? environment = sdkOmittedValue}) => UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen(
+    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<List<String>>,
+    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as SdkOptional<List<String>>,
+  );
 
-  factory UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen(
-        role: json['role'] != null
-            ? SdkPresent(
-                ((json['role'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        environment: json['environment'] != null
-            ? SdkPresent(((json['environment'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen.fromJson(Map<String, dynamic> json) => UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen(
+    role: json['role'] != null ? SdkPresent(((json['role'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    environment: json['environment'] != null ? SdkPresent(((json['environment'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (role) {
-          SdkPresent<List<String>>(value: final value) => {
-              'role': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environment) {
-          SdkPresent<List<String>>(value: final value) => {
-              'environment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (role) {
+      SdkPresent<List<String>>(value: final value) => {'role': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environment) {
+      SdkPresent<List<String>>(value: final value) => {'environment': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateResourceRequestBodyCustomClaimsClaimRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen>
-      when_;
-
+  final SdkOptional<UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen> when_;
   /// Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
   final Map<String, dynamic> claims;
 
-  const UpdateResourceRequestBodyCustomClaimsClaimRulesItem(
-      {this.when_ = const SdkOmitted(), required this.claims});
+  const UpdateResourceRequestBodyCustomClaimsClaimRulesItem({this.when_ = const SdkOmitted(), required this.claims});
 
-  UpdateResourceRequestBodyCustomClaimsClaimRulesItem Function(
-      {SdkOptional<UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen>
-          when_,
-      Map<String, dynamic> claims}) get copyWith => _copyWith;
+  UpdateResourceRequestBodyCustomClaimsClaimRulesItem Function({SdkOptional<UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen> when_, Map<String, dynamic> claims}) get copyWith => _copyWith;
 
-  UpdateResourceRequestBodyCustomClaimsClaimRulesItem _copyWith(
-          {Object? when_ = sdkOmittedValue,
-          Object? claims = sdkOmittedValue}) =>
-      UpdateResourceRequestBodyCustomClaimsClaimRulesItem(
-        when_: identical(when_, sdkOmittedValue)
-            ? this.when_
-            : when_ as SdkOptional<
-                UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen>,
-        claims: identical(claims, sdkOmittedValue)
-            ? this.claims
-            : claims as Map<String, dynamic>,
-      );
+  UpdateResourceRequestBodyCustomClaimsClaimRulesItem _copyWith({Object? when_ = sdkOmittedValue, Object? claims = sdkOmittedValue}) => UpdateResourceRequestBodyCustomClaimsClaimRulesItem(
+    when_: identical(when_, sdkOmittedValue) ? this.when_ : when_ as SdkOptional<UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen>,
+    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as Map<String, dynamic>,
+  );
 
-  factory UpdateResourceRequestBodyCustomClaimsClaimRulesItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateResourceRequestBodyCustomClaimsClaimRulesItem(
-        when_: json['when'] != null
-            ? SdkPresent((json['when'] != null
-                ? UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen
-                    .fromJson(json['when'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        claims: (json['claims'] == null
-            ? null
-            : json['claims'] as Map<String, dynamic>)!,
-      );
+  factory UpdateResourceRequestBodyCustomClaimsClaimRulesItem.fromJson(Map<String, dynamic> json) => UpdateResourceRequestBodyCustomClaimsClaimRulesItem(
+    when_: json['when'] != null ? SdkPresent((json['when'] != null ? UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen.fromJson(json['when'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    claims: (json['claims'] == null ? null : json['claims'] as Map<String, dynamic>)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (when_) {
-          SdkPresent<UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen>(
-            value: final value
-          ) =>
-            {
-              'when': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'claims': claims,
-      };
+    ...switch (when_) {
+      SdkPresent<UpdateResourceRequestBodyCustomClaimsClaimRulesItemWhen>(value: final value) => {'when': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'claims': claims,
+  };
 }
 
 /// Custom claims embedded in the resource tokens Vercel mints for this resource.
 class UpdateResourceRequestBodyCustomClaims {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Roles a deployment may request when minting a token. The selected role becomes the `sub` claim.
   final SdkOptional<List<String>> roles;
-
   /// Role used when the deployment does not request one. Required when `roles` is set.
   final SdkOptional<String> defaultRole;
-
   /// Ordered rules resolved at mint time. Later rules win and shallow-merge over earlier ones.
-  final SdkOptional<List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>>
-      claimRules;
+  final SdkOptional<List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>> claimRules;
 
-  const UpdateResourceRequestBodyCustomClaims(
-      {this.roles = const SdkOmitted(),
-      this.defaultRole = const SdkOmitted(),
-      this.claimRules = const SdkOmitted()});
+  const UpdateResourceRequestBodyCustomClaims({this.roles = const SdkOmitted(), this.defaultRole = const SdkOmitted(), this.claimRules = const SdkOmitted()});
 
-  UpdateResourceRequestBodyCustomClaims Function(
-      {SdkOptional<List<String>> roles,
-      SdkOptional<String> defaultRole,
-      SdkOptional<List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>>
-          claimRules}) get copyWith => _copyWith;
+  UpdateResourceRequestBodyCustomClaims Function({SdkOptional<List<String>> roles, SdkOptional<String> defaultRole, SdkOptional<List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>> claimRules}) get copyWith => _copyWith;
 
-  UpdateResourceRequestBodyCustomClaims _copyWith(
-          {Object? roles = sdkOmittedValue,
-          Object? defaultRole = sdkOmittedValue,
-          Object? claimRules = sdkOmittedValue}) =>
-      UpdateResourceRequestBodyCustomClaims(
-        roles: identical(roles, sdkOmittedValue)
-            ? this.roles
-            : roles as SdkOptional<List<String>>,
-        defaultRole: identical(defaultRole, sdkOmittedValue)
-            ? this.defaultRole
-            : defaultRole as SdkOptional<String>,
-        claimRules: identical(claimRules, sdkOmittedValue)
-            ? this.claimRules
-            : claimRules as SdkOptional<
-                List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>>,
-      );
+  UpdateResourceRequestBodyCustomClaims _copyWith({Object? roles = sdkOmittedValue, Object? defaultRole = sdkOmittedValue, Object? claimRules = sdkOmittedValue}) => UpdateResourceRequestBodyCustomClaims(
+    roles: identical(roles, sdkOmittedValue) ? this.roles : roles as SdkOptional<List<String>>,
+    defaultRole: identical(defaultRole, sdkOmittedValue) ? this.defaultRole : defaultRole as SdkOptional<String>,
+    claimRules: identical(claimRules, sdkOmittedValue) ? this.claimRules : claimRules as SdkOptional<List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>>,
+  );
 
-  factory UpdateResourceRequestBodyCustomClaims.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateResourceRequestBodyCustomClaims(
-        roles: json['roles'] != null
-            ? SdkPresent(
-                ((json['roles'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        defaultRole: json['defaultRole'] != null
-            ? SdkPresent((json['defaultRole'] as String?)!)
-            : const SdkOmitted(),
-        claimRules: json['claimRules'] != null
-            ? SdkPresent(((json['claimRules'] as List?)
-                ?.map((e) => UpdateResourceRequestBodyCustomClaimsClaimRulesItem
-                    .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateResourceRequestBodyCustomClaims.fromJson(Map<String, dynamic> json) => UpdateResourceRequestBodyCustomClaims(
+    roles: json['roles'] != null ? SdkPresent(((json['roles'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    defaultRole: json['defaultRole'] != null ? SdkPresent((json['defaultRole'] as String?)!) : const SdkOmitted(),
+    claimRules: json['claimRules'] != null ? SdkPresent(((json['claimRules'] as List?)?.map((e) => UpdateResourceRequestBodyCustomClaimsClaimRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (roles) {
-          SdkPresent<List<String>>(value: final value) => {
-              'roles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultRole) {
-          SdkPresent<String>(value: final value) => {
-              'defaultRole': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (claimRules) {
-          SdkPresent<List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>>(
-            value: final value
-          ) =>
-            {
-              'claimRules': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (roles) {
+      SdkPresent<List<String>>(value: final value) => {'roles': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultRole) {
+      SdkPresent<String>(value: final value) => {'defaultRole': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (claimRules) {
+      SdkPresent<List<UpdateResourceRequestBodyCustomClaimsClaimRulesItem>>(value: final value) => {'claimRules': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

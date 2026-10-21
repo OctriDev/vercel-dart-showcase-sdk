@@ -7,21 +7,16 @@ part of 'inline.dart';
 enum FlagEnvironmentsValueRulesItemOutcomeVariant2Type {
   rollout;
 
-  static FlagEnvironmentsValueRulesItemOutcomeVariant2Type fromJson(
-      String value) {
+  static FlagEnvironmentsValueRulesItemOutcomeVariant2Type fromJson(String value) {
     switch (value) {
-      case 'rollout':
-        return FlagEnvironmentsValueRulesItemOutcomeVariant2Type.rollout;
-      default:
-        throw ArgumentError(
-            'Unknown FlagEnvironmentsValueRulesItemOutcomeVariant2Type: $value');
+      case 'rollout': return FlagEnvironmentsValueRulesItemOutcomeVariant2Type.rollout;
+      default: throw ArgumentError('Unknown FlagEnvironmentsValueRulesItemOutcomeVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueRulesItemOutcomeVariant2Type.rollout:
-        return 'rollout';
+      case FlagEnvironmentsValueRulesItemOutcomeVariant2Type.rollout: return 'rollout';
     }
   }
 
@@ -32,21 +27,16 @@ enum FlagEnvironmentsValueRulesItemOutcomeVariant2Type {
 enum FlagEnvironmentsValueRulesItemOutcomeVariant3Type {
   experiment;
 
-  static FlagEnvironmentsValueRulesItemOutcomeVariant3Type fromJson(
-      String value) {
+  static FlagEnvironmentsValueRulesItemOutcomeVariant3Type fromJson(String value) {
     switch (value) {
-      case 'experiment':
-        return FlagEnvironmentsValueRulesItemOutcomeVariant3Type.experiment;
-      default:
-        throw ArgumentError(
-            'Unknown FlagEnvironmentsValueRulesItemOutcomeVariant3Type: $value');
+      case 'experiment': return FlagEnvironmentsValueRulesItemOutcomeVariant3Type.experiment;
+      default: throw ArgumentError('Unknown FlagEnvironmentsValueRulesItemOutcomeVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueRulesItemOutcomeVariant3Type.experiment:
-        return 'experiment';
+      case FlagEnvironmentsValueRulesItemOutcomeVariant3Type.experiment: return 'experiment';
     }
   }
 
@@ -56,6 +46,7 @@ enum FlagEnvironmentsValueRulesItemOutcomeVariant3Type {
 
 /// Required enumerated value serialized in the `kind` wire field.
 final class FlagKind {
+
   final String value;
 
   const FlagKind._(this.value);
@@ -69,18 +60,17 @@ final class FlagKind {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) => other is FlagKind && other.value == value;
+  @override bool operator ==(Object other) => other is FlagKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `permanent` wire field.
 final class FlagPermanent {
+
   final bool value;
 
   const FlagPermanent._(this.value);
@@ -92,44 +82,39 @@ final class FlagPermanent {
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagPermanent && other.value == value;
+  @override bool operator ==(Object other) => other is FlagPermanent && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `seenInProduction` wire field.
 final class FlagSeenInProduction {
+
   final bool value;
 
   const FlagSeenInProduction._(this.value);
 
-  factory FlagSeenInProduction.fromJson(bool value) =>
-      FlagSeenInProduction._(value);
+  factory FlagSeenInProduction.fromJson(bool value) => FlagSeenInProduction._(value);
 
   static const false_ = FlagSeenInProduction._(false);
   static const true_ = FlagSeenInProduction._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagSeenInProduction && other.value == value;
+  @override bool operator ==(Object other) => other is FlagSeenInProduction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `state` wire field.
 final class FlagState {
+
   final String value;
 
   const FlagState._(this.value);
@@ -141,14 +126,12 @@ final class FlagState {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) => other is FlagState && other.value == value;
+  @override bool operator ==(Object other) => other is FlagState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `typeName` wire field.
@@ -157,17 +140,14 @@ enum FlagTypeName {
 
   static FlagTypeName fromJson(String value) {
     switch (value) {
-      case 'flag':
-        return FlagTypeName.flag;
-      default:
-        throw ArgumentError('Unknown FlagTypeName: $value');
+      case 'flag': return FlagTypeName.flag;
+      default: throw ArgumentError('Unknown FlagTypeName: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagTypeName.flag:
-        return 'flag';
+      case FlagTypeName.flag: return 'flag';
     }
   }
 
@@ -177,61 +157,55 @@ enum FlagTypeName {
 
 /// Required enumerated value serialized in the `value` wire field.
 final class FlagVariantsItemValueVariant4 {
+
   final bool value;
 
   const FlagVariantsItemValueVariant4._(this.value);
 
-  factory FlagVariantsItemValueVariant4.fromJson(bool value) =>
-      FlagVariantsItemValueVariant4._(value);
+  factory FlagVariantsItemValueVariant4.fromJson(bool value) => FlagVariantsItemValueVariant4._(value);
 
   static const false_ = FlagVariantsItemValueVariant4._(false);
   static const true_ = FlagVariantsItemValueVariant4._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagVariantsItemValueVariant4 && other.value == value;
+  @override bool operator ==(Object other) => other is FlagVariantsItemValueVariant4 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class FlagJSONValueVariant4 {
+
   final bool value;
 
   const FlagJSONValueVariant4._(this.value);
 
-  factory FlagJSONValueVariant4.fromJson(bool value) =>
-      FlagJSONValueVariant4._(value);
+  factory FlagJSONValueVariant4.fromJson(bool value) => FlagJSONValueVariant4._(value);
 
   static const false_ = FlagJSONValueVariant4._(false);
   static const true_ = FlagJSONValueVariant4._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagJSONValueVariant4 && other.value == value;
+  @override bool operator ==(Object other) => other is FlagJSONValueVariant4 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class FlagsSdkKeyWithSecretsType {
+
   final String value;
 
   const FlagsSdkKeyWithSecretsType._(this.value);
 
-  factory FlagsSdkKeyWithSecretsType.fromJson(String value) =>
-      FlagsSdkKeyWithSecretsType._(value);
+  factory FlagsSdkKeyWithSecretsType.fromJson(String value) => FlagsSdkKeyWithSecretsType._(value);
 
   static const client = FlagsSdkKeyWithSecretsType._('client');
   static const mobile = FlagsSdkKeyWithSecretsType._('mobile');
@@ -239,15 +213,12 @@ final class FlagsSdkKeyWithSecretsType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagsSdkKeyWithSecretsType && other.value == value;
+  @override bool operator ==(Object other) => other is FlagsSdkKeyWithSecretsType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `code` wire field.
@@ -256,17 +227,14 @@ enum ForbiddenCode {
 
   static ForbiddenCode fromJson(String value) {
     switch (value) {
-      case 'forbidden':
-        return ForbiddenCode.forbidden;
-      default:
-        throw ArgumentError('Unknown ForbiddenCode: $value');
+      case 'forbidden': return ForbiddenCode.forbidden;
+      default: throw ArgumentError('Unknown ForbiddenCode: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ForbiddenCode.forbidden:
-        return 'forbidden';
+      case ForbiddenCode.forbidden: return 'forbidden';
     }
   }
 
@@ -276,6 +244,7 @@ enum ForbiddenCode {
 
 /// Required enumerated value serialized in the `status` wire field.
 final class ForbiddenStatus {
+
   final int value;
 
   const ForbiddenStatus._(this.value);
@@ -286,43 +255,31 @@ final class ForbiddenStatus {
 
   int toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ForbiddenStatus && other.value == value;
+  @override bool operator ==(Object other) => other is ForbiddenStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg {
+
   final bool value;
 
-  const GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(
-      this.value);
+  const GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(this.value);
 
-  factory GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg.fromJson(
-          bool value) =>
-      GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(value);
+  factory GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg.fromJson(bool value) => GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(value);
 
-  static const false_ =
-      GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(false);
-  static const true_ =
-      GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(true);
+  static const false_ = GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(false);
+  static const true_ = GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetConditionalBypassResponseVariant0ResultItemConditionsItemNeg && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

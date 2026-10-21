@@ -4,27 +4,20 @@
 part of 'connect.dart';
 
 // connect domain models
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant9
-    extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant9 extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant9 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant9(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant9(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant10
-    extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant10 extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant10 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant10(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant10(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 final class ConnectConnectorCreateDataMap extends ConnectConnectorCreateData {
   final Map<String, Object?> value;
   const ConnectConnectorCreateDataMap(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }

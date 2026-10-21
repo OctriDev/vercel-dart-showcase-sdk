@@ -8,574 +8,291 @@ part of 'teams.dart';
 class TeamDefaultProjectJobsMfeConfigPresent {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Default job configuration applied to new projects created in this team.
   final List<String> targets;
 
   const TeamDefaultProjectJobsMfeConfigPresent({required this.targets});
 
-  TeamDefaultProjectJobsMfeConfigPresent Function({List<String> targets})
-      get copyWith => _copyWith;
+  TeamDefaultProjectJobsMfeConfigPresent Function({List<String> targets}) get copyWith => _copyWith;
 
-  TeamDefaultProjectJobsMfeConfigPresent _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      TeamDefaultProjectJobsMfeConfigPresent(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  TeamDefaultProjectJobsMfeConfigPresent _copyWith({Object? targets = sdkOmittedValue}) => TeamDefaultProjectJobsMfeConfigPresent(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory TeamDefaultProjectJobsMfeConfigPresent.fromJson(
-          Map<String, dynamic> json) =>
-      TeamDefaultProjectJobsMfeConfigPresent(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory TeamDefaultProjectJobsMfeConfigPresent.fromJson(Map<String, dynamic> json) => TeamDefaultProjectJobsMfeConfigPresent(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 /// Default job configuration applied to new projects created in this team.
 class TeamDefaultProjectJobsTypecheck {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Default job configuration applied to new projects created in this team.
   final List<String> targets;
 
   const TeamDefaultProjectJobsTypecheck({required this.targets});
 
-  TeamDefaultProjectJobsTypecheck Function({List<String> targets})
-      get copyWith => _copyWith;
+  TeamDefaultProjectJobsTypecheck Function({List<String> targets}) get copyWith => _copyWith;
 
-  TeamDefaultProjectJobsTypecheck _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      TeamDefaultProjectJobsTypecheck(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  TeamDefaultProjectJobsTypecheck _copyWith({Object? targets = sdkOmittedValue}) => TeamDefaultProjectJobsTypecheck(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory TeamDefaultProjectJobsTypecheck.fromJson(Map<String, dynamic> json) =>
-      TeamDefaultProjectJobsTypecheck(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory TeamDefaultProjectJobsTypecheck.fromJson(Map<String, dynamic> json) => TeamDefaultProjectJobsTypecheck(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 /// Default job configuration applied to new projects created in this team.
 class TeamDefaultProjectJobs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Default job configuration applied to new projects created in this team.
-  final SdkOptional<TeamDefaultProjectJobsFlagDefinitionsPresent>
-      flagDefinitionsPresent;
-
+  final SdkOptional<TeamDefaultProjectJobsFlagDefinitionsPresent> flagDefinitionsPresent;
   /// Default job configuration applied to new projects created in this team.
   final SdkOptional<TeamDefaultProjectJobsLint> lint;
-
   /// Default job configuration applied to new projects created in this team.
   final SdkOptional<TeamDefaultProjectJobsMfeConfigPresent> mfeConfigPresent;
-
   /// Default job configuration applied to new projects created in this team.
   final SdkOptional<TeamDefaultProjectJobsTypecheck> typecheck;
 
-  const TeamDefaultProjectJobs(
-      {this.flagDefinitionsPresent = const SdkOmitted(),
-      this.lint = const SdkOmitted(),
-      this.mfeConfigPresent = const SdkOmitted(),
-      this.typecheck = const SdkOmitted()});
+  const TeamDefaultProjectJobs({this.flagDefinitionsPresent = const SdkOmitted(), this.lint = const SdkOmitted(), this.mfeConfigPresent = const SdkOmitted(), this.typecheck = const SdkOmitted()});
 
-  TeamDefaultProjectJobs Function(
-          {SdkOptional<TeamDefaultProjectJobsFlagDefinitionsPresent>
-              flagDefinitionsPresent,
-          SdkOptional<TeamDefaultProjectJobsLint> lint,
-          SdkOptional<TeamDefaultProjectJobsMfeConfigPresent> mfeConfigPresent,
-          SdkOptional<TeamDefaultProjectJobsTypecheck> typecheck})
-      get copyWith => _copyWith;
+  TeamDefaultProjectJobs Function({SdkOptional<TeamDefaultProjectJobsFlagDefinitionsPresent> flagDefinitionsPresent, SdkOptional<TeamDefaultProjectJobsLint> lint, SdkOptional<TeamDefaultProjectJobsMfeConfigPresent> mfeConfigPresent, SdkOptional<TeamDefaultProjectJobsTypecheck> typecheck}) get copyWith => _copyWith;
 
-  TeamDefaultProjectJobs _copyWith(
-          {Object? flagDefinitionsPresent = sdkOmittedValue,
-          Object? lint = sdkOmittedValue,
-          Object? mfeConfigPresent = sdkOmittedValue,
-          Object? typecheck = sdkOmittedValue}) =>
-      TeamDefaultProjectJobs(
-        flagDefinitionsPresent: identical(
-                flagDefinitionsPresent, sdkOmittedValue)
-            ? this.flagDefinitionsPresent
-            : flagDefinitionsPresent
-                as SdkOptional<TeamDefaultProjectJobsFlagDefinitionsPresent>,
-        lint: identical(lint, sdkOmittedValue)
-            ? this.lint
-            : lint as SdkOptional<TeamDefaultProjectJobsLint>,
-        mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue)
-            ? this.mfeConfigPresent
-            : mfeConfigPresent
-                as SdkOptional<TeamDefaultProjectJobsMfeConfigPresent>,
-        typecheck: identical(typecheck, sdkOmittedValue)
-            ? this.typecheck
-            : typecheck as SdkOptional<TeamDefaultProjectJobsTypecheck>,
-      );
+  TeamDefaultProjectJobs _copyWith({Object? flagDefinitionsPresent = sdkOmittedValue, Object? lint = sdkOmittedValue, Object? mfeConfigPresent = sdkOmittedValue, Object? typecheck = sdkOmittedValue}) => TeamDefaultProjectJobs(
+    flagDefinitionsPresent: identical(flagDefinitionsPresent, sdkOmittedValue) ? this.flagDefinitionsPresent : flagDefinitionsPresent as SdkOptional<TeamDefaultProjectJobsFlagDefinitionsPresent>,
+    lint: identical(lint, sdkOmittedValue) ? this.lint : lint as SdkOptional<TeamDefaultProjectJobsLint>,
+    mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue) ? this.mfeConfigPresent : mfeConfigPresent as SdkOptional<TeamDefaultProjectJobsMfeConfigPresent>,
+    typecheck: identical(typecheck, sdkOmittedValue) ? this.typecheck : typecheck as SdkOptional<TeamDefaultProjectJobsTypecheck>,
+  );
 
-  factory TeamDefaultProjectJobs.fromJson(Map<String, dynamic> json) =>
-      TeamDefaultProjectJobs(
-        flagDefinitionsPresent: json['flag-definitions-present'] != null
-            ? SdkPresent((json['flag-definitions-present'] != null
-                ? TeamDefaultProjectJobsFlagDefinitionsPresent.fromJson(
-                    json['flag-definitions-present'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        lint: json['lint'] != null
-            ? SdkPresent((json['lint'] != null
-                ? TeamDefaultProjectJobsLint.fromJson(
-                    json['lint'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        mfeConfigPresent: json['mfe-config-present'] != null
-            ? SdkPresent((json['mfe-config-present'] != null
-                ? TeamDefaultProjectJobsMfeConfigPresent.fromJson(
-                    json['mfe-config-present'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        typecheck: json['typecheck'] != null
-            ? SdkPresent((json['typecheck'] != null
-                ? TeamDefaultProjectJobsTypecheck.fromJson(
-                    json['typecheck'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory TeamDefaultProjectJobs.fromJson(Map<String, dynamic> json) => TeamDefaultProjectJobs(
+    flagDefinitionsPresent: json['flag-definitions-present'] != null ? SdkPresent((json['flag-definitions-present'] != null ? TeamDefaultProjectJobsFlagDefinitionsPresent.fromJson(json['flag-definitions-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    lint: json['lint'] != null ? SdkPresent((json['lint'] != null ? TeamDefaultProjectJobsLint.fromJson(json['lint'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    mfeConfigPresent: json['mfe-config-present'] != null ? SdkPresent((json['mfe-config-present'] != null ? TeamDefaultProjectJobsMfeConfigPresent.fromJson(json['mfe-config-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    typecheck: json['typecheck'] != null ? SdkPresent((json['typecheck'] != null ? TeamDefaultProjectJobsTypecheck.fromJson(json['typecheck'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (flagDefinitionsPresent) {
-          SdkPresent<TeamDefaultProjectJobsFlagDefinitionsPresent>(
-            value: final value
-          ) =>
-            {
-              'flag-definitions-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lint) {
-          SdkPresent<TeamDefaultProjectJobsLint>(value: final value) => {
-              'lint': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mfeConfigPresent) {
-          SdkPresent<TeamDefaultProjectJobsMfeConfigPresent>(
-            value: final value
-          ) =>
-            {
-              'mfe-config-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (typecheck) {
-          SdkPresent<TeamDefaultProjectJobsTypecheck>(value: final value) => {
-              'typecheck': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (flagDefinitionsPresent) {
+      SdkPresent<TeamDefaultProjectJobsFlagDefinitionsPresent>(value: final value) => {'flag-definitions-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lint) {
+      SdkPresent<TeamDefaultProjectJobsLint>(value: final value) => {'lint': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mfeConfigPresent) {
+      SdkPresent<TeamDefaultProjectJobsMfeConfigPresent>(value: final value) => {'mfe-config-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (typecheck) {
+      SdkPresent<TeamDefaultProjectJobsTypecheck>(value: final value) => {'typecheck': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Default roles for the team.
 class TeamDefaultRoles {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional array value serialized in the `teamPermissions` wire field.
   final SdkOptional<List<TeamDefaultRolesTeamPermissionsItem>> teamPermissions;
-
   /// Optional array value serialized in the `teamRoles` wire field.
   final SdkOptional<List<TeamDefaultRolesTeamRolesItem>> teamRoles;
 
-  const TeamDefaultRoles(
-      {this.teamPermissions = const SdkOmitted(),
-      this.teamRoles = const SdkOmitted()});
+  const TeamDefaultRoles({this.teamPermissions = const SdkOmitted(), this.teamRoles = const SdkOmitted()});
 
-  TeamDefaultRoles Function(
-      {SdkOptional<List<TeamDefaultRolesTeamPermissionsItem>> teamPermissions,
-      SdkOptional<List<TeamDefaultRolesTeamRolesItem>>
-          teamRoles}) get copyWith => _copyWith;
+  TeamDefaultRoles Function({SdkOptional<List<TeamDefaultRolesTeamPermissionsItem>> teamPermissions, SdkOptional<List<TeamDefaultRolesTeamRolesItem>> teamRoles}) get copyWith => _copyWith;
 
-  TeamDefaultRoles _copyWith(
-          {Object? teamPermissions = sdkOmittedValue,
-          Object? teamRoles = sdkOmittedValue}) =>
-      TeamDefaultRoles(
-        teamPermissions: identical(teamPermissions, sdkOmittedValue)
-            ? this.teamPermissions
-            : teamPermissions
-                as SdkOptional<List<TeamDefaultRolesTeamPermissionsItem>>,
-        teamRoles: identical(teamRoles, sdkOmittedValue)
-            ? this.teamRoles
-            : teamRoles as SdkOptional<List<TeamDefaultRolesTeamRolesItem>>,
-      );
+  TeamDefaultRoles _copyWith({Object? teamPermissions = sdkOmittedValue, Object? teamRoles = sdkOmittedValue}) => TeamDefaultRoles(
+    teamPermissions: identical(teamPermissions, sdkOmittedValue) ? this.teamPermissions : teamPermissions as SdkOptional<List<TeamDefaultRolesTeamPermissionsItem>>,
+    teamRoles: identical(teamRoles, sdkOmittedValue) ? this.teamRoles : teamRoles as SdkOptional<List<TeamDefaultRolesTeamRolesItem>>,
+  );
 
-  factory TeamDefaultRoles.fromJson(Map<String, dynamic> json) =>
-      TeamDefaultRoles(
-        teamPermissions: json['teamPermissions'] != null
-            ? SdkPresent(((json['teamPermissions'] as List?)
-                ?.map((e) =>
-                    TeamDefaultRolesTeamPermissionsItem.fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        teamRoles: json['teamRoles'] != null
-            ? SdkPresent(((json['teamRoles'] as List?)
-                ?.map(
-                    (e) => TeamDefaultRolesTeamRolesItem.fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory TeamDefaultRoles.fromJson(Map<String, dynamic> json) => TeamDefaultRoles(
+    teamPermissions: json['teamPermissions'] != null ? SdkPresent(((json['teamPermissions'] as List?)?.map((e) => TeamDefaultRolesTeamPermissionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    teamRoles: json['teamRoles'] != null ? SdkPresent(((json['teamRoles'] as List?)?.map((e) => TeamDefaultRolesTeamRolesItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (teamPermissions) {
-          SdkPresent<List<TeamDefaultRolesTeamPermissionsItem>>(
-            value: final value
-          ) =>
-            {
-              'teamPermissions': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (teamRoles) {
-          SdkPresent<List<TeamDefaultRolesTeamRolesItem>>(value: final value) =>
-            {
-              'teamRoles': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (teamPermissions) {
+      SdkPresent<List<TeamDefaultRolesTeamPermissionsItem>>(value: final value) => {'teamPermissions': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (teamRoles) {
+      SdkPresent<List<TeamDefaultRolesTeamRolesItem>>(value: final value) => {'teamRoles': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// `enabled: true` with empty `sources` is deny-all.
 class TeamDeploymentPolicyDeploymentSourcesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `enabled` wire field.
   final TeamDeploymentPolicyDeploymentSourcesItemEnabled enabled;
-
   /// Required array value serialized in the `environments` wire field.
-  final List<TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem>
-      environments;
-
+  final List<TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem> environments;
   /// Required array value serialized in the `sources` wire field.
   final List<TeamDeploymentPolicyDeploymentSourcesItemSourcesItem> sources;
 
-  const TeamDeploymentPolicyDeploymentSourcesItem(
-      {required this.enabled,
-      required this.environments,
-      required this.sources});
+  const TeamDeploymentPolicyDeploymentSourcesItem({required this.enabled, required this.environments, required this.sources});
 
-  TeamDeploymentPolicyDeploymentSourcesItem Function(
-          {TeamDeploymentPolicyDeploymentSourcesItemEnabled enabled,
-          List<TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem>
-              environments,
-          List<TeamDeploymentPolicyDeploymentSourcesItemSourcesItem> sources})
-      get copyWith => _copyWith;
+  TeamDeploymentPolicyDeploymentSourcesItem Function({TeamDeploymentPolicyDeploymentSourcesItemEnabled enabled, List<TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem> environments, List<TeamDeploymentPolicyDeploymentSourcesItemSourcesItem> sources}) get copyWith => _copyWith;
 
-  TeamDeploymentPolicyDeploymentSourcesItem _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? environments = sdkOmittedValue,
-          Object? sources = sdkOmittedValue}) =>
-      TeamDeploymentPolicyDeploymentSourcesItem(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as TeamDeploymentPolicyDeploymentSourcesItemEnabled,
-        environments: identical(environments, sdkOmittedValue)
-            ? this.environments
-            : environments as List<
-                TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem>,
-        sources: identical(sources, sdkOmittedValue)
-            ? this.sources
-            : sources
-                as List<TeamDeploymentPolicyDeploymentSourcesItemSourcesItem>,
-      );
+  TeamDeploymentPolicyDeploymentSourcesItem _copyWith({Object? enabled = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? sources = sdkOmittedValue}) => TeamDeploymentPolicyDeploymentSourcesItem(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as TeamDeploymentPolicyDeploymentSourcesItemEnabled,
+    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem>,
+    sources: identical(sources, sdkOmittedValue) ? this.sources : sources as List<TeamDeploymentPolicyDeploymentSourcesItemSourcesItem>,
+  );
 
-  factory TeamDeploymentPolicyDeploymentSourcesItem.fromJson(
-          Map<String, dynamic> json) =>
-      TeamDeploymentPolicyDeploymentSourcesItem(
-        enabled: (json['enabled'] != null
-            ? TeamDeploymentPolicyDeploymentSourcesItemEnabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        environments: ((json['environments'] as List?)
-            ?.map((e) =>
-                TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem
-                    .fromJson(e))
-            .toList())!,
-        sources: ((json['sources'] as List?)
-            ?.map((e) =>
-                TeamDeploymentPolicyDeploymentSourcesItemSourcesItem.fromJson(
-                    e as String))
-            .toList())!,
-      );
+  factory TeamDeploymentPolicyDeploymentSourcesItem.fromJson(Map<String, dynamic> json) => TeamDeploymentPolicyDeploymentSourcesItem(
+    enabled: (json['enabled'] != null ? TeamDeploymentPolicyDeploymentSourcesItemEnabled.fromJson(json['enabled'] as bool) : null)!,
+    environments: ((json['environments'] as List?)?.map((e) => TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItem.fromJson(e)).toList())!,
+    sources: ((json['sources'] as List?)?.map((e) => TeamDeploymentPolicyDeploymentSourcesItemSourcesItem.fromJson(e as String)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-        'environments': environments.map((item) => item.toJson()).toList(),
-        'sources': sources.map((item) => item.toJson()).toList(),
-      };
+    'enabled': enabled.toJson(),
+    'environments': environments.map((item) => item.toJson()).toList(),
+    'sources': sources.map((item) => item.toJson()).toList(),
+  };
 }
 
 /// `enabled: true` with empty `sources` is deny-all.
 class TeamDeploymentPolicyGitSourcesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `enabled` wire field.
   final TeamDeploymentPolicyGitSourcesItemEnabled enabled;
-
   /// Required array value serialized in the `environments` wire field.
   final List<TeamDeploymentPolicyGitSourcesItemEnvironmentsItem> environments;
-
   /// Required array value serialized in the `sources` wire field.
   final List<TeamDeploymentPolicyGitSourcesItemSourcesItem> sources;
 
-  const TeamDeploymentPolicyGitSourcesItem(
-      {required this.enabled,
-      required this.environments,
-      required this.sources});
+  const TeamDeploymentPolicyGitSourcesItem({required this.enabled, required this.environments, required this.sources});
 
-  TeamDeploymentPolicyGitSourcesItem Function(
-          {TeamDeploymentPolicyGitSourcesItemEnabled enabled,
-          List<TeamDeploymentPolicyGitSourcesItemEnvironmentsItem> environments,
-          List<TeamDeploymentPolicyGitSourcesItemSourcesItem> sources})
-      get copyWith => _copyWith;
+  TeamDeploymentPolicyGitSourcesItem Function({TeamDeploymentPolicyGitSourcesItemEnabled enabled, List<TeamDeploymentPolicyGitSourcesItemEnvironmentsItem> environments, List<TeamDeploymentPolicyGitSourcesItemSourcesItem> sources}) get copyWith => _copyWith;
 
-  TeamDeploymentPolicyGitSourcesItem _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? environments = sdkOmittedValue,
-          Object? sources = sdkOmittedValue}) =>
-      TeamDeploymentPolicyGitSourcesItem(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as TeamDeploymentPolicyGitSourcesItemEnabled,
-        environments: identical(environments, sdkOmittedValue)
-            ? this.environments
-            : environments
-                as List<TeamDeploymentPolicyGitSourcesItemEnvironmentsItem>,
-        sources: identical(sources, sdkOmittedValue)
-            ? this.sources
-            : sources as List<TeamDeploymentPolicyGitSourcesItemSourcesItem>,
-      );
+  TeamDeploymentPolicyGitSourcesItem _copyWith({Object? enabled = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? sources = sdkOmittedValue}) => TeamDeploymentPolicyGitSourcesItem(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as TeamDeploymentPolicyGitSourcesItemEnabled,
+    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<TeamDeploymentPolicyGitSourcesItemEnvironmentsItem>,
+    sources: identical(sources, sdkOmittedValue) ? this.sources : sources as List<TeamDeploymentPolicyGitSourcesItemSourcesItem>,
+  );
 
-  factory TeamDeploymentPolicyGitSourcesItem.fromJson(
-          Map<String, dynamic> json) =>
-      TeamDeploymentPolicyGitSourcesItem(
-        enabled: (json['enabled'] != null
-            ? TeamDeploymentPolicyGitSourcesItemEnabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        environments: ((json['environments'] as List?)
-            ?.map((e) =>
-                TeamDeploymentPolicyGitSourcesItemEnvironmentsItem.fromJson(e))
-            .toList())!,
-        sources: ((json['sources'] as List?)
-            ?.map((e) =>
-                TeamDeploymentPolicyGitSourcesItemSourcesItem.fromJson(e))
-            .toList())!,
-      );
+  factory TeamDeploymentPolicyGitSourcesItem.fromJson(Map<String, dynamic> json) => TeamDeploymentPolicyGitSourcesItem(
+    enabled: (json['enabled'] != null ? TeamDeploymentPolicyGitSourcesItemEnabled.fromJson(json['enabled'] as bool) : null)!,
+    environments: ((json['environments'] as List?)?.map((e) => TeamDeploymentPolicyGitSourcesItemEnvironmentsItem.fromJson(e)).toList())!,
+    sources: ((json['sources'] as List?)?.map((e) => TeamDeploymentPolicyGitSourcesItemSourcesItem.fromJson(e)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-        'environments': environments.map((item) => item.toJson()).toList(),
-        'sources': sources.map((item) => item.toJson()).toList(),
-      };
+    'enabled': enabled.toJson(),
+    'environments': environments.map((item) => item.toJson()).toList(),
+    'sources': sources.map((item) => item.toJson()).toList(),
+  };
 }
 
 /// Composable deployment-time policy for the team. Used as the default for every project on the team, with optional per-project overrides on `project.deploymentPolicy`.
 class TeamDeploymentPolicy {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional array value serialized in the `deploymentSources` wire field.
-  final SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>
-      deploymentSources;
-
+  final SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>> deploymentSources;
   /// Optional array value serialized in the `gitSources` wire field.
   final SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>> gitSources;
 
-  const TeamDeploymentPolicy(
-      {this.deploymentSources = const SdkOmitted(),
-      this.gitSources = const SdkOmitted()});
+  const TeamDeploymentPolicy({this.deploymentSources = const SdkOmitted(), this.gitSources = const SdkOmitted()});
 
-  TeamDeploymentPolicy Function(
-          {SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>
-              deploymentSources,
-          SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>> gitSources})
-      get copyWith => _copyWith;
+  TeamDeploymentPolicy Function({SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>> deploymentSources, SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>> gitSources}) get copyWith => _copyWith;
 
-  TeamDeploymentPolicy _copyWith(
-          {Object? deploymentSources = sdkOmittedValue,
-          Object? gitSources = sdkOmittedValue}) =>
-      TeamDeploymentPolicy(
-        deploymentSources: identical(deploymentSources, sdkOmittedValue)
-            ? this.deploymentSources
-            : deploymentSources
-                as SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>,
-        gitSources: identical(gitSources, sdkOmittedValue)
-            ? this.gitSources
-            : gitSources
-                as SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>>,
-      );
+  TeamDeploymentPolicy _copyWith({Object? deploymentSources = sdkOmittedValue, Object? gitSources = sdkOmittedValue}) => TeamDeploymentPolicy(
+    deploymentSources: identical(deploymentSources, sdkOmittedValue) ? this.deploymentSources : deploymentSources as SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>,
+    gitSources: identical(gitSources, sdkOmittedValue) ? this.gitSources : gitSources as SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>>,
+  );
 
-  factory TeamDeploymentPolicy.fromJson(Map<String, dynamic> json) =>
-      TeamDeploymentPolicy(
-        deploymentSources: json['deploymentSources'] != null
-            ? SdkPresent(((json['deploymentSources'] as List?)
-                ?.map((e) => TeamDeploymentPolicyDeploymentSourcesItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        gitSources: json['gitSources'] != null
-            ? SdkPresent(((json['gitSources'] as List?)
-                ?.map((e) => TeamDeploymentPolicyGitSourcesItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory TeamDeploymentPolicy.fromJson(Map<String, dynamic> json) => TeamDeploymentPolicy(
+    deploymentSources: json['deploymentSources'] != null ? SdkPresent(((json['deploymentSources'] as List?)?.map((e) => TeamDeploymentPolicyDeploymentSourcesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    gitSources: json['gitSources'] != null ? SdkPresent(((json['gitSources'] as List?)?.map((e) => TeamDeploymentPolicyGitSourcesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (deploymentSources) {
-          SdkPresent<List<TeamDeploymentPolicyDeploymentSourcesItem>>(
-            value: final value
-          ) =>
-            {
-              'deploymentSources': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitSources) {
-          SdkPresent<List<TeamDeploymentPolicyGitSourcesItem>>(
-            value: final value
-          ) =>
-            {
-              'gitSources': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (deploymentSources) {
+      SdkPresent<List<TeamDeploymentPolicyDeploymentSourcesItem>>(value: final value) => {'deploymentSources': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitSources) {
+      SdkPresent<List<TeamDeploymentPolicyGitSourcesItem>>(value: final value) => {'gitSources': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Pro deployment-storage pricing rollout cohort and milestones. Absent when the team has not been placed in a rollout cohort yet.
 class TeamDeploymentStorageRollout {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `cohort` wire field.
   final TeamDeploymentStorageRolloutCohort cohort;
-
   /// When team-wide metering was recorded for this rollout.
   final SdkOptional<double> meteredAt;
-
   /// Optional enumerated value serialized in the `meterReason` wire field.
   final SdkOptional<TeamDeploymentStorageRolloutMeterReason> meterReason;
-
   /// When the calendar retention-reduce migration applied 30d retention.
   final SdkOptional<double> retentionAppliedAt;
-
   /// When the customer chose "keep my retention" before reduce day.
   final SdkOptional<double> retentionOptOutAt;
 
-  const TeamDeploymentStorageRollout(
-      {required this.cohort,
-      this.meteredAt = const SdkOmitted(),
-      this.meterReason = const SdkOmitted(),
-      this.retentionAppliedAt = const SdkOmitted(),
-      this.retentionOptOutAt = const SdkOmitted()});
+  const TeamDeploymentStorageRollout({required this.cohort, this.meteredAt = const SdkOmitted(), this.meterReason = const SdkOmitted(), this.retentionAppliedAt = const SdkOmitted(), this.retentionOptOutAt = const SdkOmitted()});
 
-  TeamDeploymentStorageRollout Function(
-      {TeamDeploymentStorageRolloutCohort cohort,
-      SdkOptional<double> meteredAt,
-      SdkOptional<TeamDeploymentStorageRolloutMeterReason> meterReason,
-      SdkOptional<double> retentionAppliedAt,
-      SdkOptional<double> retentionOptOutAt}) get copyWith => _copyWith;
+  TeamDeploymentStorageRollout Function({TeamDeploymentStorageRolloutCohort cohort, SdkOptional<double> meteredAt, SdkOptional<TeamDeploymentStorageRolloutMeterReason> meterReason, SdkOptional<double> retentionAppliedAt, SdkOptional<double> retentionOptOutAt}) get copyWith => _copyWith;
 
-  TeamDeploymentStorageRollout _copyWith(
-          {Object? cohort = sdkOmittedValue,
-          Object? meteredAt = sdkOmittedValue,
-          Object? meterReason = sdkOmittedValue,
-          Object? retentionAppliedAt = sdkOmittedValue,
-          Object? retentionOptOutAt = sdkOmittedValue}) =>
-      TeamDeploymentStorageRollout(
-        cohort: identical(cohort, sdkOmittedValue)
-            ? this.cohort
-            : cohort as TeamDeploymentStorageRolloutCohort,
-        meteredAt: identical(meteredAt, sdkOmittedValue)
-            ? this.meteredAt
-            : meteredAt as SdkOptional<double>,
-        meterReason: identical(meterReason, sdkOmittedValue)
-            ? this.meterReason
-            : meterReason
-                as SdkOptional<TeamDeploymentStorageRolloutMeterReason>,
-        retentionAppliedAt: identical(retentionAppliedAt, sdkOmittedValue)
-            ? this.retentionAppliedAt
-            : retentionAppliedAt as SdkOptional<double>,
-        retentionOptOutAt: identical(retentionOptOutAt, sdkOmittedValue)
-            ? this.retentionOptOutAt
-            : retentionOptOutAt as SdkOptional<double>,
-      );
+  TeamDeploymentStorageRollout _copyWith({Object? cohort = sdkOmittedValue, Object? meteredAt = sdkOmittedValue, Object? meterReason = sdkOmittedValue, Object? retentionAppliedAt = sdkOmittedValue, Object? retentionOptOutAt = sdkOmittedValue}) => TeamDeploymentStorageRollout(
+    cohort: identical(cohort, sdkOmittedValue) ? this.cohort : cohort as TeamDeploymentStorageRolloutCohort,
+    meteredAt: identical(meteredAt, sdkOmittedValue) ? this.meteredAt : meteredAt as SdkOptional<double>,
+    meterReason: identical(meterReason, sdkOmittedValue) ? this.meterReason : meterReason as SdkOptional<TeamDeploymentStorageRolloutMeterReason>,
+    retentionAppliedAt: identical(retentionAppliedAt, sdkOmittedValue) ? this.retentionAppliedAt : retentionAppliedAt as SdkOptional<double>,
+    retentionOptOutAt: identical(retentionOptOutAt, sdkOmittedValue) ? this.retentionOptOutAt : retentionOptOutAt as SdkOptional<double>,
+  );
 
-  factory TeamDeploymentStorageRollout.fromJson(Map<String, dynamic> json) =>
-      TeamDeploymentStorageRollout(
-        cohort: (json['cohort'] != null
-            ? TeamDeploymentStorageRolloutCohort.fromJson(
-                json['cohort'] as String)
-            : null)!,
-        meteredAt: json['meteredAt'] != null
-            ? SdkPresent(((json['meteredAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        meterReason: json['meterReason'] != null
-            ? SdkPresent((json['meterReason'] != null
-                ? TeamDeploymentStorageRolloutMeterReason.fromJson(
-                    json['meterReason'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        retentionAppliedAt: json['retentionAppliedAt'] != null
-            ? SdkPresent(((json['retentionAppliedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        retentionOptOutAt: json['retentionOptOutAt'] != null
-            ? SdkPresent(((json['retentionOptOutAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory TeamDeploymentStorageRollout.fromJson(Map<String, dynamic> json) => TeamDeploymentStorageRollout(
+    cohort: (json['cohort'] != null ? TeamDeploymentStorageRolloutCohort.fromJson(json['cohort'] as String) : null)!,
+    meteredAt: json['meteredAt'] != null ? SdkPresent(((json['meteredAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    meterReason: json['meterReason'] != null ? SdkPresent((json['meterReason'] != null ? TeamDeploymentStorageRolloutMeterReason.fromJson(json['meterReason'] as String) : null)!) : const SdkOmitted(),
+    retentionAppliedAt: json['retentionAppliedAt'] != null ? SdkPresent(((json['retentionAppliedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    retentionOptOutAt: json['retentionOptOutAt'] != null ? SdkPresent(((json['retentionOptOutAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'cohort': cohort.toJson(),
-        ...switch (meteredAt) {
-          SdkPresent<double>(value: final value) => {
-              'meteredAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (meterReason) {
-          SdkPresent<TeamDeploymentStorageRolloutMeterReason>(
-            value: final value
-          ) =>
-            {
-              'meterReason': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (retentionAppliedAt) {
-          SdkPresent<double>(value: final value) => {
-              'retentionAppliedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (retentionOptOutAt) {
-          SdkPresent<double>(value: final value) => {
-              'retentionOptOutAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'cohort': cohort.toJson(),
+    ...switch (meteredAt) {
+      SdkPresent<double>(value: final value) => {'meteredAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (meterReason) {
+      SdkPresent<TeamDeploymentStorageRolloutMeterReason>(value: final value) => {'meterReason': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (retentionAppliedAt) {
+      SdkPresent<double>(value: final value) => {'retentionAppliedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (retentionOptOutAt) {
+      SdkPresent<double>(value: final value) => {'retentionOptOutAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

@@ -7,143 +7,94 @@ part of 'inline.dart';
 class JoinTeamRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The invite code to join the team.
   final SdkOptional<String> inviteCode;
 
   const JoinTeamRequestBody({this.inviteCode = const SdkOmitted()});
 
-  JoinTeamRequestBody Function({SdkOptional<String> inviteCode}) get copyWith =>
-      _copyWith;
+  JoinTeamRequestBody Function({SdkOptional<String> inviteCode}) get copyWith => _copyWith;
 
-  JoinTeamRequestBody _copyWith({Object? inviteCode = sdkOmittedValue}) =>
-      JoinTeamRequestBody(
-        inviteCode: identical(inviteCode, sdkOmittedValue)
-            ? this.inviteCode
-            : inviteCode as SdkOptional<String>,
-      );
+  JoinTeamRequestBody _copyWith({Object? inviteCode = sdkOmittedValue}) => JoinTeamRequestBody(
+    inviteCode: identical(inviteCode, sdkOmittedValue) ? this.inviteCode : inviteCode as SdkOptional<String>,
+  );
 
-  factory JoinTeamRequestBody.fromJson(Map<String, dynamic> json) =>
-      JoinTeamRequestBody(
-        inviteCode: json['inviteCode'] != null
-            ? SdkPresent((json['inviteCode'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory JoinTeamRequestBody.fromJson(Map<String, dynamic> json) => JoinTeamRequestBody(
+    inviteCode: json['inviteCode'] != null ? SdkPresent((json['inviteCode'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (inviteCode) {
-          SdkPresent<String>(value: final value) => {
-              'inviteCode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (inviteCode) {
+      SdkPresent<String>(value: final value) => {'inviteCode': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Successfully joined a team.
 class JoinTeamResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The origin of how the user joined.
   final String from;
-
   /// The name of the team the user joined.
   final String name;
-
   /// The slug of the team the user joined.
   final String slug;
-
   /// The ID of the team the user joined.
   final String teamId;
 
-  const JoinTeamResponse(
-      {required this.from,
-      required this.name,
-      required this.slug,
-      required this.teamId});
+  const JoinTeamResponse({required this.from, required this.name, required this.slug, required this.teamId});
 
-  JoinTeamResponse Function(
-      {String from,
-      String name,
-      String slug,
-      String teamId}) get copyWith => _copyWith;
+  JoinTeamResponse Function({String from, String name, String slug, String teamId}) get copyWith => _copyWith;
 
-  JoinTeamResponse _copyWith(
-          {Object? from = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue}) =>
-      JoinTeamResponse(
-        from: identical(from, sdkOmittedValue) ? this.from : from as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        teamId:
-            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-      );
+  JoinTeamResponse _copyWith({Object? from = sdkOmittedValue, Object? name = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? teamId = sdkOmittedValue}) => JoinTeamResponse(
+    from: identical(from, sdkOmittedValue) ? this.from : from as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+  );
 
-  factory JoinTeamResponse.fromJson(Map<String, dynamic> json) =>
-      JoinTeamResponse(
-        from: (json['from'] as String?)!,
-        name: (json['name'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        teamId: (json['teamId'] as String?)!,
-      );
+  factory JoinTeamResponse.fromJson(Map<String, dynamic> json) => JoinTeamResponse(
+    from: (json['from'] as String?)!,
+    name: (json['name'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    teamId: (json['teamId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'from': from,
-        'name': name,
-        'slug': slug,
-        'teamId': teamId,
-      };
+    'from': from,
+    'name': name,
+    'slug': slug,
+    'teamId': teamId,
+  };
 }
 
 class UpdateTeamMemberRequestBodyProjectsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The ID of the project.
   final String projectId;
-
   /// The project role of the member that will be added. \"null\" will remove this project level role.
   final UpdateTeamMemberRequestBodyProjectsItemRole? role;
 
-  const UpdateTeamMemberRequestBodyProjectsItem(
-      {required this.projectId, required this.role});
+  const UpdateTeamMemberRequestBodyProjectsItem({required this.projectId, required this.role});
 
-  UpdateTeamMemberRequestBodyProjectsItem Function(
-          {String projectId, UpdateTeamMemberRequestBodyProjectsItemRole? role})
-      get copyWith => _copyWith;
+  UpdateTeamMemberRequestBodyProjectsItem Function({String projectId, UpdateTeamMemberRequestBodyProjectsItemRole? role}) get copyWith => _copyWith;
 
-  UpdateTeamMemberRequestBodyProjectsItem _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? role = sdkOmittedValue}) =>
-      UpdateTeamMemberRequestBodyProjectsItem(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as UpdateTeamMemberRequestBodyProjectsItemRole?,
-      );
+  UpdateTeamMemberRequestBodyProjectsItem _copyWith({Object? projectId = sdkOmittedValue, Object? role = sdkOmittedValue}) => UpdateTeamMemberRequestBodyProjectsItem(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    role: identical(role, sdkOmittedValue) ? this.role : role as UpdateTeamMemberRequestBodyProjectsItemRole?,
+  );
 
-  factory UpdateTeamMemberRequestBodyProjectsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateTeamMemberRequestBodyProjectsItem(
-        projectId: (json['projectId'] as String?)!,
-        role: json.containsKey('role')
-            ? json['role'] != null
-                ? UpdateTeamMemberRequestBodyProjectsItemRole.fromJson(
-                    json['role'] as String)
-                : null
-            : throw ArgumentError.value(
-                null, 'role', 'Required property is missing'),
-      );
+  factory UpdateTeamMemberRequestBodyProjectsItem.fromJson(Map<String, dynamic> json) => UpdateTeamMemberRequestBodyProjectsItem(
+    projectId: (json['projectId'] as String?)!,
+    role: json.containsKey('role') ? json['role'] != null ? UpdateTeamMemberRequestBodyProjectsItemRole.fromJson(json['role'] as String) : null : throw ArgumentError.value(null, 'role', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        'role': role?.toJson(),
-      };
+    'projectId': projectId,
+    'role': role?.toJson(),
+  };
 }
 
 class UpdateTeamMemberRequestBodyJoinedFrom {
@@ -151,178 +102,85 @@ class UpdateTeamMemberRequestBodyJoinedFrom {
   static const String constructionSurface = 'named';
   final SdkOptional<dynamic> ssoUserId;
 
-  const UpdateTeamMemberRequestBodyJoinedFrom(
-      {this.ssoUserId = const SdkOmitted()});
+  const UpdateTeamMemberRequestBodyJoinedFrom({this.ssoUserId = const SdkOmitted()});
 
-  UpdateTeamMemberRequestBodyJoinedFrom Function(
-      {SdkOptional<dynamic> ssoUserId}) get copyWith => _copyWith;
+  UpdateTeamMemberRequestBodyJoinedFrom Function({SdkOptional<dynamic> ssoUserId}) get copyWith => _copyWith;
 
-  UpdateTeamMemberRequestBodyJoinedFrom _copyWith(
-          {Object? ssoUserId = sdkOmittedValue}) =>
-      UpdateTeamMemberRequestBodyJoinedFrom(
-        ssoUserId: identical(ssoUserId, sdkOmittedValue)
-            ? this.ssoUserId
-            : ssoUserId as SdkOptional<dynamic>,
-      );
+  UpdateTeamMemberRequestBodyJoinedFrom _copyWith({Object? ssoUserId = sdkOmittedValue}) => UpdateTeamMemberRequestBodyJoinedFrom(
+    ssoUserId: identical(ssoUserId, sdkOmittedValue) ? this.ssoUserId : ssoUserId as SdkOptional<dynamic>,
+  );
 
-  factory UpdateTeamMemberRequestBodyJoinedFrom.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateTeamMemberRequestBodyJoinedFrom(
-        ssoUserId: json.containsKey('ssoUserId')
-            ? SdkPresent(json['ssoUserId'])
-            : const SdkOmitted(),
-      );
+  factory UpdateTeamMemberRequestBodyJoinedFrom.fromJson(Map<String, dynamic> json) => UpdateTeamMemberRequestBodyJoinedFrom(
+    ssoUserId: json.containsKey('ssoUserId') ? SdkPresent(json['ssoUserId']) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (ssoUserId) {
-          SdkPresent<dynamic>(value: final value) => {
-              'ssoUserId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (ssoUserId) {
+      SdkPresent<dynamic>(value: final value) => {'ssoUserId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateTeamMemberRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Accept a user who requested access to the team.
   final SdkOptional<UpdateTeamMemberRequestBodyConfirmed> confirmed;
-
   /// The role in the team of the member.
   final SdkOptional<String> role;
-
   /// The team permissions to set for the member. Permissions must be compatible with the team roles assigned to the member.
-  final SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>
-      teamPermissions;
+  final SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>> teamPermissions;
   final SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>> projects;
   final SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom> joinedFrom;
 
-  const UpdateTeamMemberRequestBody(
-      {this.confirmed = const SdkOmitted(),
-      this.role = const SdkOmitted(),
-      this.teamPermissions = const SdkOmitted(),
-      this.projects = const SdkOmitted(),
-      this.joinedFrom = const SdkOmitted()});
+  const UpdateTeamMemberRequestBody({this.confirmed = const SdkOmitted(), this.role = const SdkOmitted(), this.teamPermissions = const SdkOmitted(), this.projects = const SdkOmitted(), this.joinedFrom = const SdkOmitted()});
 
-  UpdateTeamMemberRequestBody Function(
-          {SdkOptional<UpdateTeamMemberRequestBodyConfirmed> confirmed,
-          SdkOptional<String> role,
-          SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>
-              teamPermissions,
-          SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>> projects,
-          SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom> joinedFrom})
-      get copyWith => _copyWith;
+  UpdateTeamMemberRequestBody Function({SdkOptional<UpdateTeamMemberRequestBodyConfirmed> confirmed, SdkOptional<String> role, SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>> teamPermissions, SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>> projects, SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom> joinedFrom}) get copyWith => _copyWith;
 
-  UpdateTeamMemberRequestBody _copyWith(
-          {Object? confirmed = sdkOmittedValue,
-          Object? role = sdkOmittedValue,
-          Object? teamPermissions = sdkOmittedValue,
-          Object? projects = sdkOmittedValue,
-          Object? joinedFrom = sdkOmittedValue}) =>
-      UpdateTeamMemberRequestBody(
-        confirmed: identical(confirmed, sdkOmittedValue)
-            ? this.confirmed
-            : confirmed as SdkOptional<UpdateTeamMemberRequestBodyConfirmed>,
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as SdkOptional<String>,
-        teamPermissions: identical(teamPermissions, sdkOmittedValue)
-            ? this.teamPermissions
-            : teamPermissions as SdkOptional<
-                List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>,
-        projects: identical(projects, sdkOmittedValue)
-            ? this.projects
-            : projects
-                as SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>>,
-        joinedFrom: identical(joinedFrom, sdkOmittedValue)
-            ? this.joinedFrom
-            : joinedFrom as SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom>,
-      );
+  UpdateTeamMemberRequestBody _copyWith({Object? confirmed = sdkOmittedValue, Object? role = sdkOmittedValue, Object? teamPermissions = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? joinedFrom = sdkOmittedValue}) => UpdateTeamMemberRequestBody(
+    confirmed: identical(confirmed, sdkOmittedValue) ? this.confirmed : confirmed as SdkOptional<UpdateTeamMemberRequestBodyConfirmed>,
+    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<String>,
+    teamPermissions: identical(teamPermissions, sdkOmittedValue) ? this.teamPermissions : teamPermissions as SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>,
+    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>>,
+    joinedFrom: identical(joinedFrom, sdkOmittedValue) ? this.joinedFrom : joinedFrom as SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom>,
+  );
 
-  factory UpdateTeamMemberRequestBody.fromJson(Map<String, dynamic> json) =>
-      UpdateTeamMemberRequestBody(
-        confirmed: json['confirmed'] != null
-            ? SdkPresent((json['confirmed'] != null
-                ? UpdateTeamMemberRequestBodyConfirmed.fromJson(
-                    json['confirmed'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        role: json['role'] != null
-            ? SdkPresent((json['role'] as String?)!)
-            : const SdkOmitted(),
-        teamPermissions: json['teamPermissions'] != null
-            ? SdkPresent(((json['teamPermissions'] as List?)
-                ?.map((e) =>
-                    UpdateTeamMemberRequestBodyTeamPermissionsItem.fromJson(
-                        e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        projects: json['projects'] != null
-            ? SdkPresent(((json['projects'] as List?)
-                ?.map((e) => UpdateTeamMemberRequestBodyProjectsItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        joinedFrom: json['joinedFrom'] != null
-            ? SdkPresent((json['joinedFrom'] != null
-                ? UpdateTeamMemberRequestBodyJoinedFrom.fromJson(
-                    json['joinedFrom'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateTeamMemberRequestBody.fromJson(Map<String, dynamic> json) => UpdateTeamMemberRequestBody(
+    confirmed: json['confirmed'] != null ? SdkPresent((json['confirmed'] != null ? UpdateTeamMemberRequestBodyConfirmed.fromJson(json['confirmed'] as bool) : null)!) : const SdkOmitted(),
+    role: json['role'] != null ? SdkPresent((json['role'] as String?)!) : const SdkOmitted(),
+    teamPermissions: json['teamPermissions'] != null ? SdkPresent(((json['teamPermissions'] as List?)?.map((e) => UpdateTeamMemberRequestBodyTeamPermissionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    projects: json['projects'] != null ? SdkPresent(((json['projects'] as List?)?.map((e) => UpdateTeamMemberRequestBodyProjectsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    joinedFrom: json['joinedFrom'] != null ? SdkPresent((json['joinedFrom'] != null ? UpdateTeamMemberRequestBodyJoinedFrom.fromJson(json['joinedFrom'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (confirmed) {
-          SdkPresent<UpdateTeamMemberRequestBodyConfirmed>(
-            value: final value
-          ) =>
-            {
-              'confirmed': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (role) {
-          SdkPresent<String>(value: final value) => {
-              'role': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (teamPermissions) {
-          SdkPresent<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>(
-            value: final value
-          ) =>
-            {
-              'teamPermissions': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projects) {
-          SdkPresent<List<UpdateTeamMemberRequestBodyProjectsItem>>(
-            value: final value
-          ) =>
-            {
-              'projects': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (joinedFrom) {
-          SdkPresent<UpdateTeamMemberRequestBodyJoinedFrom>(
-            value: final value
-          ) =>
-            {
-              'joinedFrom': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (confirmed) {
+      SdkPresent<UpdateTeamMemberRequestBodyConfirmed>(value: final value) => {'confirmed': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (role) {
+      SdkPresent<String>(value: final value) => {'role': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (teamPermissions) {
+      SdkPresent<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>(value: final value) => {'teamPermissions': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projects) {
+      SdkPresent<List<UpdateTeamMemberRequestBodyProjectsItem>>(value: final value) => {'projects': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (joinedFrom) {
+      SdkPresent<UpdateTeamMemberRequestBodyJoinedFrom>(value: final value) => {'joinedFrom': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateTeamMemberResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// ID of the team.
   final String id;
 
@@ -330,25 +188,22 @@ class UpdateTeamMemberResponse {
 
   UpdateTeamMemberResponse Function({String id}) get copyWith => _copyWith;
 
-  UpdateTeamMemberResponse _copyWith({Object? id = sdkOmittedValue}) =>
-      UpdateTeamMemberResponse(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UpdateTeamMemberResponse _copyWith({Object? id = sdkOmittedValue}) => UpdateTeamMemberResponse(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UpdateTeamMemberResponse.fromJson(Map<String, dynamic> json) =>
-      UpdateTeamMemberResponse(
-        id: (json['id'] as String?)!,
-      );
+  factory UpdateTeamMemberResponse.fromJson(Map<String, dynamic> json) => UpdateTeamMemberResponse(
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-      };
+    'id': id,
+  };
 }
 
 class RemoveTeamMemberResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// ID of the team.
   final String id;
 
@@ -356,19 +211,17 @@ class RemoveTeamMemberResponse {
 
   RemoveTeamMemberResponse Function({String id}) get copyWith => _copyWith;
 
-  RemoveTeamMemberResponse _copyWith({Object? id = sdkOmittedValue}) =>
-      RemoveTeamMemberResponse(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  RemoveTeamMemberResponse _copyWith({Object? id = sdkOmittedValue}) => RemoveTeamMemberResponse(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory RemoveTeamMemberResponse.fromJson(Map<String, dynamic> json) =>
-      RemoveTeamMemberResponse(
-        id: (json['id'] as String?)!,
-      );
+  factory RemoveTeamMemberResponse.fromJson(Map<String, dynamic> json) => RemoveTeamMemberResponse(
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-      };
+    'id': id,
+  };
 }
 
 class UpdateTeamRequestBodySamlRolesValueVariant1 {
@@ -376,84 +229,53 @@ class UpdateTeamRequestBodySamlRolesValueVariant1 {
   static const String constructionSurface = 'named';
   final String accessGroupId;
 
-  const UpdateTeamRequestBodySamlRolesValueVariant1(
-      {required this.accessGroupId});
+  const UpdateTeamRequestBodySamlRolesValueVariant1({required this.accessGroupId});
 
-  UpdateTeamRequestBodySamlRolesValueVariant1 Function({String accessGroupId})
-      get copyWith => _copyWith;
+  UpdateTeamRequestBodySamlRolesValueVariant1 Function({String accessGroupId}) get copyWith => _copyWith;
 
-  UpdateTeamRequestBodySamlRolesValueVariant1 _copyWith(
-          {Object? accessGroupId = sdkOmittedValue}) =>
-      UpdateTeamRequestBodySamlRolesValueVariant1(
-        accessGroupId: identical(accessGroupId, sdkOmittedValue)
-            ? this.accessGroupId
-            : accessGroupId as String,
-      );
+  UpdateTeamRequestBodySamlRolesValueVariant1 _copyWith({Object? accessGroupId = sdkOmittedValue}) => UpdateTeamRequestBodySamlRolesValueVariant1(
+    accessGroupId: identical(accessGroupId, sdkOmittedValue) ? this.accessGroupId : accessGroupId as String,
+  );
 
-  factory UpdateTeamRequestBodySamlRolesValueVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateTeamRequestBodySamlRolesValueVariant1(
-        accessGroupId: (json['accessGroupId'] as String?)!,
-      );
+  factory UpdateTeamRequestBodySamlRolesValueVariant1.fromJson(Map<String, dynamic> json) => UpdateTeamRequestBodySamlRolesValueVariant1(
+    accessGroupId: (json['accessGroupId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'accessGroupId': accessGroupId,
-      };
+    'accessGroupId': accessGroupId,
+  };
 }
 
 class UpdateTeamRequestBodySaml {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Require that members of the team use SAML Single Sign-On.
   final SdkOptional<bool> enforced;
-
   /// Directory groups to role or access group mappings.
   final SdkOptional<Map<String, dynamic>> roles;
 
-  const UpdateTeamRequestBodySaml(
-      {this.enforced = const SdkOmitted(), this.roles = const SdkOmitted()});
+  const UpdateTeamRequestBodySaml({this.enforced = const SdkOmitted(), this.roles = const SdkOmitted()});
 
-  UpdateTeamRequestBodySaml Function(
-      {SdkOptional<bool> enforced,
-      SdkOptional<Map<String, dynamic>> roles}) get copyWith => _copyWith;
+  UpdateTeamRequestBodySaml Function({SdkOptional<bool> enforced, SdkOptional<Map<String, dynamic>> roles}) get copyWith => _copyWith;
 
-  UpdateTeamRequestBodySaml _copyWith(
-          {Object? enforced = sdkOmittedValue,
-          Object? roles = sdkOmittedValue}) =>
-      UpdateTeamRequestBodySaml(
-        enforced: identical(enforced, sdkOmittedValue)
-            ? this.enforced
-            : enforced as SdkOptional<bool>,
-        roles: identical(roles, sdkOmittedValue)
-            ? this.roles
-            : roles as SdkOptional<Map<String, dynamic>>,
-      );
+  UpdateTeamRequestBodySaml _copyWith({Object? enforced = sdkOmittedValue, Object? roles = sdkOmittedValue}) => UpdateTeamRequestBodySaml(
+    enforced: identical(enforced, sdkOmittedValue) ? this.enforced : enforced as SdkOptional<bool>,
+    roles: identical(roles, sdkOmittedValue) ? this.roles : roles as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory UpdateTeamRequestBodySaml.fromJson(Map<String, dynamic> json) =>
-      UpdateTeamRequestBodySaml(
-        enforced: json['enforced'] != null
-            ? SdkPresent((json['enforced'] as bool?)!)
-            : const SdkOmitted(),
-        roles: json['roles'] != null
-            ? SdkPresent((json['roles'] == null
-                ? null
-                : json['roles'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateTeamRequestBodySaml.fromJson(Map<String, dynamic> json) => UpdateTeamRequestBodySaml(
+    enforced: json['enforced'] != null ? SdkPresent((json['enforced'] as bool?)!) : const SdkOmitted(),
+    roles: json['roles'] != null ? SdkPresent((json['roles'] == null ? null : json['roles'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enforced) {
-          SdkPresent<bool>(value: final value) => {
-              'enforced': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (roles) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'roles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enforced) {
+      SdkPresent<bool>(value: final value) => {'enforced': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (roles) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'roles': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

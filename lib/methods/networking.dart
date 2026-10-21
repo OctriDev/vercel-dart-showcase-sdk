@@ -33,33 +33,20 @@ Future<List<Network>> listNetworks(ClientConfig config,
   return (await sdkRequest<List<Network>>('GET', '/v1/connect/networks',
           config: config,
           query: {
-            'includeHostedZones': SdkQueryValue(
-                SdkUtils.unwrapOptional(includeHostedZones),
-                style: 'form',
-                explode: true),
-            'includePeeringConnections': SdkQueryValue(
-                SdkUtils.unwrapOptional(includePeeringConnections),
-                style: 'form',
-                explode: true),
-            'includeProjects': SdkQueryValue(
-                SdkUtils.unwrapOptional(includeProjects),
-                style: 'form',
-                explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'includeHostedZones': SdkQueryValue(SdkUtils.unwrapOptional(includeHostedZones), style: 'form', explode: true),
+            'includePeeringConnections': SdkQueryValue(SdkUtils.unwrapOptional(includePeeringConnections), style: 'form', explode: true),
+            'includeProjects': SdkQueryValue(SdkUtils.unwrapOptional(includeProjects), style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listNetworks',
-          fromJsonRaw: (value) => (value as List)
-              .map((item) => Network.fromJson(item as Map<String, dynamic>))
-              .toList(),
+          fromJsonRaw: (value) => (value as List).map((item) => Network.fromJson(item as Map<String, dynamic>)).toList(),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a Secure Compute network. Supply `cidr`, `name`, and `region`; optionally provide two AWS availability zone IDs for the network. A 201 response returns the created network while it is being provisioned.
 ///
@@ -80,32 +67,28 @@ Future<Network> createNetwork(ClientConfig config,
     RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 255);
   if (awsAvailabilityZoneIds is SdkPresent<List<String>>) {
-    validateItems('awsAvailabilityZoneIds', awsAvailabilityZoneIds.value,
-        min: 2, max: 2);
+    validateItems('awsAvailabilityZoneIds', awsAvailabilityZoneIds.value, min: 2, max: 2);
   }
 
   return (await sdkRequest<Network>('POST', '/v1/connect/networks',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'cidr': cidr,
             'name': name,
             'region': region,
-            'awsAvailabilityZoneIds':
-                SdkUtils.unwrapOptional(awsAvailabilityZoneIds)
+            'awsAvailabilityZoneIds': SdkUtils.unwrapOptional(awsAvailabilityZoneIds)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createNetwork',
-          fromJsonRaw: (value) =>
-              Network.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => Network.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a Secure Compute network by its identifier. Use `networkId` to select the network and the optional team parameters to make the request on behalf of a team. A 204 response confirms the deletion without returning a response body.
 ///
@@ -123,16 +106,15 @@ Future<void> deleteNetwork(ClientConfig config,
           '/v1/connect/networks/${Uri.encodeComponent(networkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteNetwork',
           options: requestOptions))
       .data;
 }
+
 
 /// Updates the name of a Secure Compute network. Supply the new `name` in the request body; the network's other configuration is not changed by this operation. A 200 response returns the updated network object.
 ///
@@ -154,19 +136,17 @@ Future<Network> updateNetwork(ClientConfig config,
           '/v1/connect/networks/${Uri.encodeComponent(networkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'name': name},
           decoder: SdkResponseDecoder.json,
           operationId: 'updateNetwork',
-          fromJsonRaw: (value) =>
-              Network.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => Network.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a Secure Compute network by its identifier. Use `networkId` to select the network and the optional team parameters to make the request on behalf of a team. The response includes network configuration, status, and associated-resource metadata.
 ///
@@ -184,18 +164,16 @@ Future<Network> readNetwork(ClientConfig config,
           '/v1/connect/networks/${Uri.encodeComponent(networkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'readNetwork',
-          fromJsonRaw: (value) =>
-              Network.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => Network.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a PrivateLink endpoint connecting a project to an AWS VPC endpoint service. Supply `projectId`, `name`, `vercelRegion`, and `awsServiceName`; Advanced Networking must be enabled for the project in the selected Vercel region. The endpoint is provisioned asynchronously, and the 201 response includes its current status.
 ///
@@ -231,10 +209,8 @@ Future<PrivateLinkEndpoint> createPrivateLinkEndpoint(ClientConfig config,
           'POST', '/v1/networking/privatelink/endpoints',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'projectId': projectId,
@@ -245,11 +221,11 @@ Future<PrivateLinkEndpoint> createPrivateLinkEndpoint(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createPrivateLinkEndpoint',
-          fromJsonRaw: (value) =>
-              PrivateLinkEndpoint.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => PrivateLinkEndpoint.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists PrivateLink endpoints associated with a project. Supply `projectId` to scope the results, and use the optional team parameters to make the request on behalf of a team. Each result includes the endpoint's status and connection details.
 ///
@@ -268,20 +244,16 @@ Future<List<PrivateLinkEndpoint>> listPrivateLinkEndpoints(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listPrivateLinkEndpoints',
-          fromJsonRaw: (value) => (value as List)
-              .map((item) =>
-                  PrivateLinkEndpoint.fromJson(item as Map<String, dynamic>))
-              .toList(),
+          fromJsonRaw: (value) => (value as List).map((item) => PrivateLinkEndpoint.fromJson(item as Map<String, dynamic>)).toList(),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a PrivateLink endpoint for a project. Supply `projectId` and `endpointId` to identify the endpoint, and use the optional team parameters to make the request on behalf of a team. The response includes endpoint status, service configuration, and available DNS names.
 ///
@@ -302,18 +274,16 @@ Future<PrivateLinkEndpoint> readPrivateLinkEndpoint(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'readPrivateLinkEndpoint',
-          fromJsonRaw: (value) =>
-              PrivateLinkEndpoint.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => PrivateLinkEndpoint.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a PrivateLink endpoint, including its project connections and installation records. Use this operation when you no longer need the endpoint or its associated records.
 ///
@@ -334,16 +304,15 @@ Future<void> deletePrivateLinkEndpoint(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deletePrivateLinkEndpoint',
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a PrivateLink endpoint's name or private DNS setting. Supply `name`, `enablePrivateDns`, or both; omitted values keep their current settings. When `enablePrivateDns` is true, the response includes the endpoint service's private DNS names.
 ///
@@ -376,10 +345,8 @@ Future<PrivateLinkEndpoint> updatePrivateLinkEndpoint(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
@@ -387,11 +354,11 @@ Future<PrivateLinkEndpoint> updatePrivateLinkEndpoint(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updatePrivateLinkEndpoint',
-          fromJsonRaw: (value) =>
-              PrivateLinkEndpoint.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => PrivateLinkEndpoint.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Configures Static IP settings for a project identified by its ID or name. Set `builds` to control Static IP usage for builds, or provide `regions` to select up to three regions. Include at least one of these fields to submit a configuration update.
 ///
@@ -416,10 +383,8 @@ Future<List<UpdateStaticIpsResponseItem>> updateStaticIps(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/shared-connect-links',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'builds': SdkUtils.unwrapOptional(builds),
@@ -427,10 +392,7 @@ Future<List<UpdateStaticIpsResponseItem>> updateStaticIps(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateStaticIps',
-          fromJsonRaw: (value) => (value as List)
-              .map((item) => UpdateStaticIpsResponseItem.fromJson(
-                  item as Map<String, dynamic>))
-              .toList(),
+          fromJsonRaw: (value) => (value as List).map((item) => UpdateStaticIpsResponseItem.fromJson(item as Map<String, dynamic>)).toList(),
           options: requestOptions))
       .data;
 }

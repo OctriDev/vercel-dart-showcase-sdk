@@ -4,56 +4,38 @@
 part of 'projects_update.dart';
 
 // projects_update domain models
-final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant11
-    extends UpdateMicrofrontendsResponseEnvItemContentHint {
+final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant11 extends UpdateMicrofrontendsResponseEnvItemContentHint {
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant11 value;
-  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant11(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant11(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant12
-    extends UpdateMicrofrontendsResponseEnvItemContentHint {
+final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant12 extends UpdateMicrofrontendsResponseEnvItemContentHint {
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant12 value;
-  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant12(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant12(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant13
-    extends UpdateMicrofrontendsResponseEnvItemContentHint {
+final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant13 extends UpdateMicrofrontendsResponseEnvItemContentHint {
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant13 value;
-  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant13(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant13(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant14
-    extends UpdateMicrofrontendsResponseEnvItemContentHint {
+final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant14 extends UpdateMicrofrontendsResponseEnvItemContentHint {
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant14 value;
-  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant14(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant14(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant15
-    extends UpdateMicrofrontendsResponseEnvItemContentHint {
+final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant15 extends UpdateMicrofrontendsResponseEnvItemContentHint {
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant15 value;
-  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant15(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant15(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant16
-    extends UpdateMicrofrontendsResponseEnvItemContentHint {
+final class UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant16 extends UpdateMicrofrontendsResponseEnvItemContentHint {
   final UpdateMicrofrontendsResponseEnvItemContentHintVariant16 value;
-  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant16(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseEnvItemContentHintUpdateMicrofrontendsResponseEnvItemContentHintVariant16(this.value);
+  @override Object? toJson() => value.toJson();
 }

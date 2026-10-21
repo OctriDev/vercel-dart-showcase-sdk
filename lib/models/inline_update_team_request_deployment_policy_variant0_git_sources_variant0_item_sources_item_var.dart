@@ -5,96 +5,67 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider {
+
   final String value;
 
-  const UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider._(
-      this.value);
+  const UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider._(this.value);
 
-  factory UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider.fromJson(
-          String value) =>
-      UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider
-          ._(value);
+  factory UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider.fromJson(String value) => UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider._(value);
 
-  static const github =
-      UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider
-          ._('github');
-  static const bitbucket =
-      UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider
-          ._('bitbucket');
+  static const github = UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider._('github');
+  static const bitbucket = UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider._('bitbucket');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant0Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider {
+
   final String value;
 
-  const UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._(
-      this.value);
+  const UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._(this.value);
 
-  factory UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider.fromJson(
-          String value) =>
-      UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider
-          ._(value);
+  factory UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider.fromJson(String value) => UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._(value);
 
-  static const gitlab =
-      UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider
-          ._('gitlab');
+  static const gitlab = UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateTeamRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The NSNB preference for the team.
 final class UpdateTeamRequestNsnbConfigVariant0Preference {
+
   final String value;
 
   const UpdateTeamRequestNsnbConfigVariant0Preference._(this.value);
 
-  factory UpdateTeamRequestNsnbConfigVariant0Preference.fromJson(
-          String value) =>
-      UpdateTeamRequestNsnbConfigVariant0Preference._(value);
+  factory UpdateTeamRequestNsnbConfigVariant0Preference.fromJson(String value) => UpdateTeamRequestNsnbConfigVariant0Preference._(value);
 
-  static const autoApproval =
-      UpdateTeamRequestNsnbConfigVariant0Preference._('auto-approval');
-  static const manualApproval =
-      UpdateTeamRequestNsnbConfigVariant0Preference._('manual-approval');
+  static const autoApproval = UpdateTeamRequestNsnbConfigVariant0Preference._('auto-approval');
+  static const manualApproval = UpdateTeamRequestNsnbConfigVariant0Preference._('manual-approval');
   static const block = UpdateTeamRequestNsnbConfigVariant0Preference._('block');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateTeamRequestNsnbConfigVariant0Preference &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateTeamRequestNsnbConfigVariant0Preference && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UploadProjectAvatarResponseCreatorVariant0Type {
@@ -102,18 +73,14 @@ enum UploadProjectAvatarResponseCreatorVariant0Type {
 
   static UploadProjectAvatarResponseCreatorVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user':
-        return UploadProjectAvatarResponseCreatorVariant0Type.user;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseCreatorVariant0Type: $value');
+      case 'user': return UploadProjectAvatarResponseCreatorVariant0Type.user;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseCreatorVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseCreatorVariant0Type.user:
-        return 'user';
+      case UploadProjectAvatarResponseCreatorVariant0Type.user: return 'user';
     }
   }
 
@@ -124,21 +91,16 @@ enum UploadProjectAvatarResponseCreatorVariant0Type {
 enum UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type {
   app;
 
-  static UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type fromJson(String value) {
     switch (value) {
-      case 'app':
-        return UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type.app;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type: $value');
+      case 'app': return UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type.app;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type.app:
-        return 'app';
+      case UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type.app: return 'app';
     }
   }
 
@@ -149,23 +111,16 @@ enum UploadProjectAvatarResponseCreatorVariant0ViaVariant0Type {
 enum UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type {
   integration;
 
-  static UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type
-            .integration;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type: $value');
+      case 'integration': return UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type.integration;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type
-            .integration:
-        return 'integration';
+      case UploadProjectAvatarResponseCreatorVariant0ViaVariant1Type.integration: return 'integration';
     }
   }
 
@@ -178,18 +133,14 @@ enum UploadProjectAvatarResponseCreatorVariant1Type {
 
   static UploadProjectAvatarResponseCreatorVariant1Type fromJson(String value) {
     switch (value) {
-      case 'app':
-        return UploadProjectAvatarResponseCreatorVariant1Type.app;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseCreatorVariant1Type: $value');
+      case 'app': return UploadProjectAvatarResponseCreatorVariant1Type.app;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseCreatorVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseCreatorVariant1Type.app:
-        return 'app';
+      case UploadProjectAvatarResponseCreatorVariant1Type.app: return 'app';
     }
   }
 
@@ -202,18 +153,14 @@ enum UploadProjectAvatarResponseCreatorVariant2Type {
 
   static UploadProjectAvatarResponseCreatorVariant2Type fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return UploadProjectAvatarResponseCreatorVariant2Type.integration;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseCreatorVariant2Type: $value');
+      case 'integration': return UploadProjectAvatarResponseCreatorVariant2Type.integration;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseCreatorVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseCreatorVariant2Type.integration:
-        return 'integration';
+      case UploadProjectAvatarResponseCreatorVariant2Type.integration: return 'integration';
     }
   }
 
@@ -226,18 +173,14 @@ enum UploadProjectAvatarResponseCreatorVariant3Type {
 
   static UploadProjectAvatarResponseCreatorVariant3Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return UploadProjectAvatarResponseCreatorVariant3Type.system;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseCreatorVariant3Type: $value');
+      case 'system': return UploadProjectAvatarResponseCreatorVariant3Type.system;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseCreatorVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseCreatorVariant3Type.system:
-        return 'system';
+      case UploadProjectAvatarResponseCreatorVariant3Type.system: return 'system';
     }
   }
 
@@ -246,58 +189,39 @@ enum UploadProjectAvatarResponseCreatorVariant3Type {
 }
 
 final class UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._(value);
+  factory UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._('preview');
-  static const production =
-      UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._('production');
+  static const preview = UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 
@@ -308,23 +232,16 @@ enum UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironment
 enum UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-      fromJson(String value) {
+  static UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'custom':
-        return UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom': return UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom:
-        return 'custom';
+      case UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
     }
   }
 
@@ -333,58 +250,39 @@ enum UploadProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironment
 }
 
 final class UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._(value);
+  factory UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._('preview');
-  static const production =
-      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._('production');
+  static const preview = UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 

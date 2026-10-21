@@ -8,68 +8,40 @@ part of 'sandboxes.dart';
 class SandboxPublicRoute {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The user port number that the route is mapped to.
   final double port;
-
   /// The subdomain assigned to this route.
   final String subdomain;
-
   /// Whether the route is reserved by the system (e.g. for internal use).
   final SdkOptional<SandboxPublicRouteSystem> system;
-
   /// A public URL to access the corresponding port in the Sandbox.
   final String url;
 
-  const SandboxPublicRoute(
-      {required this.port,
-      required this.subdomain,
-      this.system = const SdkOmitted(),
-      required this.url});
+  const SandboxPublicRoute({required this.port, required this.subdomain, this.system = const SdkOmitted(), required this.url});
 
-  SandboxPublicRoute Function(
-      {double port,
-      String subdomain,
-      SdkOptional<SandboxPublicRouteSystem> system,
-      String url}) get copyWith => _copyWith;
+  SandboxPublicRoute Function({double port, String subdomain, SdkOptional<SandboxPublicRouteSystem> system, String url}) get copyWith => _copyWith;
 
-  SandboxPublicRoute _copyWith(
-          {Object? port = sdkOmittedValue,
-          Object? subdomain = sdkOmittedValue,
-          Object? system = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      SandboxPublicRoute(
-        port: identical(port, sdkOmittedValue) ? this.port : port as double,
-        subdomain: identical(subdomain, sdkOmittedValue)
-            ? this.subdomain
-            : subdomain as String,
-        system: identical(system, sdkOmittedValue)
-            ? this.system
-            : system as SdkOptional<SandboxPublicRouteSystem>,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  SandboxPublicRoute _copyWith({Object? port = sdkOmittedValue, Object? subdomain = sdkOmittedValue, Object? system = sdkOmittedValue, Object? url = sdkOmittedValue}) => SandboxPublicRoute(
+    port: identical(port, sdkOmittedValue) ? this.port : port as double,
+    subdomain: identical(subdomain, sdkOmittedValue) ? this.subdomain : subdomain as String,
+    system: identical(system, sdkOmittedValue) ? this.system : system as SdkOptional<SandboxPublicRouteSystem>,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory SandboxPublicRoute.fromJson(Map<String, dynamic> json) =>
-      SandboxPublicRoute(
-        port: ((json['port'] as num?)?.toDouble())!,
-        subdomain: (json['subdomain'] as String?)!,
-        system: json['system'] != null
-            ? SdkPresent((json['system'] != null
-                ? SandboxPublicRouteSystem.fromJson(json['system'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        url: (json['url'] as String?)!,
-      );
+  factory SandboxPublicRoute.fromJson(Map<String, dynamic> json) => SandboxPublicRoute(
+    port: ((json['port'] as num?)?.toDouble())!,
+    subdomain: (json['subdomain'] as String?)!,
+    system: json['system'] != null ? SdkPresent((json['system'] != null ? SandboxPublicRouteSystem.fromJson(json['system'] as bool) : null)!) : const SdkOmitted(),
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'port': port,
-        'subdomain': subdomain,
-        ...switch (system) {
-          SdkPresent<SandboxPublicRouteSystem>(value: final value) => {
-              'system': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'url': url,
-      };
+    'port': port,
+    'subdomain': subdomain,
+    ...switch (system) {
+      SdkPresent<SandboxPublicRouteSystem>(value: final value) => {'system': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'url': url,
+  };
 }

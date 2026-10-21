@@ -6,411 +6,282 @@ part of 'inline.dart';
 // Inline operation models
 /// Required enumerated value serialized in the `enabled` wire field.
 final class UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled {
+
   final bool value;
 
-  const UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled._(
-      this.value);
+  const UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled._(this.value);
 
-  factory UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled._(
-          value);
+  factory UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled.fromJson(bool value) => UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled._(
-          false);
+  static const false_ = UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2Enabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `freeProjectForLegacyLimits` wire field.
 final class UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits {
+
   final bool value;
 
-  const UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(
-      this.value);
+  const UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(this.value);
 
-  factory UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(value);
+  factory UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(bool value) => UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(false);
-  static const true_ =
-      UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(true);
+  static const false_ = UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(false);
+  static const true_ = UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219PrevProjectMicrofrontendsVariant2FreeProjectForLegacyLimits && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether microfrontends are enabled for this project.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled._(value);
 
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled._(true);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant0Enabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits
-          ._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits
-          ._(false);
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits
-          ._(true);
+  static const false_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits._(false);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant0FreeProjectForLegacyLimits && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `isDefaultApp` wire field.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp._(
-          value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp._(value);
 
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp._(
-          true);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant0IsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether to add microfrontends routing to aliases. This means domains in this project will route as a microfrontend.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
-          ._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
-          ._(false);
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
-          ._(true);
+  static const false_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(false);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether microfrontends are enabled for this project.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled._(value);
 
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled._(true);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant1Enabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits
-          ._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits
-          ._(false);
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits
-          ._(true);
+  static const false_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits._(false);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant1FreeProjectForLegacyLimits && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `isDefaultApp` wire field.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp._(
-          value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp._(
-          false);
+  static const false_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant1IsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether observability data should be routed to this microfrontend project or a root project.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject
-          ._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject
-          ._(false);
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject
-          ._(true);
+  static const false_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject._(false);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant1RouteObservabilityToThisProject && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `enabled` wire field.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled._(false);
+  static const false_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant2Enabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `freeProjectForLegacyLimits` wire field.
 final class UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits {
+
   final bool value;
 
-  const UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(
-      this.value);
+  const UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(this.value);
 
-  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(
-          bool value) =>
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(value);
+  factory UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(bool value) => UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(value);
 
-  static const false_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(false);
-  static const true_ =
-      UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(true);
+  static const false_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(false);
+  static const true_ = UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant219ProjectMicrofrontendsVariant2FreeProjectForLegacyLimits && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `refreshPeriod` wire field.
 final class UserEventPayloadVariant22BudgetRefreshPeriod {
+
   final String value;
 
   const UserEventPayloadVariant22BudgetRefreshPeriod._(this.value);
 
-  factory UserEventPayloadVariant22BudgetRefreshPeriod.fromJson(String value) =>
-      UserEventPayloadVariant22BudgetRefreshPeriod._(value);
+  factory UserEventPayloadVariant22BudgetRefreshPeriod.fromJson(String value) => UserEventPayloadVariant22BudgetRefreshPeriod._(value);
 
   static const daily = UserEventPayloadVariant22BudgetRefreshPeriod._('daily');
-  static const monthly =
-      UserEventPayloadVariant22BudgetRefreshPeriod._('monthly');
+  static const monthly = UserEventPayloadVariant22BudgetRefreshPeriod._('monthly');
   static const none = UserEventPayloadVariant22BudgetRefreshPeriod._('none');
-  static const weekly =
-      UserEventPayloadVariant22BudgetRefreshPeriod._('weekly');
+  static const weekly = UserEventPayloadVariant22BudgetRefreshPeriod._('weekly');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant22BudgetRefreshPeriod &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant22BudgetRefreshPeriod && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -7,208 +7,86 @@ part of 'checks_v2.dart';
 class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch>
-      failIfNoMatch;
+  final SdkOptional<ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch> failIfNoMatch;
   final List<String> filters;
-  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job
-      job;
-  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind
-      kind;
+  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job job;
+  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind kind;
   final String task;
 
-  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
-      {this.failIfNoMatch = const SdkOmitted(),
-      required this.filters,
-      required this.job,
-      required this.kind,
-      required this.task});
+  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3({this.failIfNoMatch = const SdkOmitted(), required this.filters, required this.job, required this.kind, required this.task});
 
-  ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3 Function(
-      {SdkOptional<
-              ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch>
-          failIfNoMatch,
-      List<String> filters,
-      ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job
-          job,
-      ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind
-          kind,
-      String task}) get copyWith => _copyWith;
+  ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3 Function({SdkOptional<ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch> failIfNoMatch, List<String> filters, ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job job, ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind kind, String task}) get copyWith => _copyWith;
 
-  ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3
-      _copyWith(
-              {Object? failIfNoMatch = sdkOmittedValue,
-              Object? filters = sdkOmittedValue,
-              Object? job = sdkOmittedValue,
-              Object? kind = sdkOmittedValue,
-              Object? task = sdkOmittedValue}) =>
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
-            failIfNoMatch: identical(failIfNoMatch, sdkOmittedValue)
-                ? this.failIfNoMatch
-                : failIfNoMatch as SdkOptional<
-                    ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch>,
-            filters: identical(filters, sdkOmittedValue)
-                ? this.filters
-                : filters as List<String>,
-            job: identical(job, sdkOmittedValue)
-                ? this.job
-                : job
-                    as ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job,
-            kind: identical(kind, sdkOmittedValue)
-                ? this.kind
-                : kind
-                    as ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind,
-            task: identical(task, sdkOmittedValue) ? this.task : task as String,
-          );
+  ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3 _copyWith({Object? failIfNoMatch = sdkOmittedValue, Object? filters = sdkOmittedValue, Object? job = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? task = sdkOmittedValue}) => ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
+    failIfNoMatch: identical(failIfNoMatch, sdkOmittedValue) ? this.failIfNoMatch : failIfNoMatch as SdkOptional<ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch>,
+    filters: identical(filters, sdkOmittedValue) ? this.filters : filters as List<String>,
+    job: identical(job, sdkOmittedValue) ? this.job : job as ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind,
+    task: identical(task, sdkOmittedValue) ? this.task : task as String,
+  );
 
-  factory ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
-        failIfNoMatch: json['failIfNoMatch'] != null
-            ? SdkPresent((json['failIfNoMatch'] != null
-                ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch
-                    .fromJson(json['failIfNoMatch'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        filters:
-            ((json['filters'] as List?)?.map((e) => e as String).toList())!,
-        job: (json['job'] != null
-            ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job
-                .fromJson(json['job'] as String)
-            : null)!,
-        kind: (json['kind'] != null
-            ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind
-                .fromJson(json['kind'] as String)
-            : null)!,
-        task: (json['task'] as String?)!,
-      );
+  factory ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3.fromJson(Map<String, dynamic> json) => ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
+    failIfNoMatch: json['failIfNoMatch'] != null ? SdkPresent((json['failIfNoMatch'] != null ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch.fromJson(json['failIfNoMatch'] as bool) : null)!) : const SdkOmitted(),
+    filters: ((json['filters'] as List?)?.map((e) => e as String).toList())!,
+    job: (json['job'] != null ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Job.fromJson(json['job'] as String) : null)!,
+    kind: (json['kind'] != null ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3Kind.fromJson(json['kind'] as String) : null)!,
+    task: (json['task'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (failIfNoMatch) {
-          SdkPresent<
-                ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch>(
-            value: final value
-          ) =>
-            {
-              'failIfNoMatch': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'filters': filters,
-        'job': job.toJson(),
-        'kind': kind.toJson(),
-        'task': task,
-      };
+    ...switch (failIfNoMatch) {
+      SdkPresent<ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3FailIfNoMatch>(value: final value) => {'failIfNoMatch': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'filters': filters,
+    'job': job.toJson(),
+    'kind': kind.toJson(),
+    'task': task,
+  };
 }
 
 sealed class ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection();
-  factory ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection.fromJson(
-      Object? json) {
+  factory ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(value); } } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(value); } } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(value); } } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(value); } } catch (_) {}
     }
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection");
+    try { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection");
   }
   Object? toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0
-    extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
-  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0
-      value;
-  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0 extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
+  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0 value;
+  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1
-    extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
-  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1
-      value;
-  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1 extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
+  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1 value;
+  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2
-    extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
-  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2
-      value;
-  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2 extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
+  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2 value;
+  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3
-    extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
-  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3
-      value;
-  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3 extends ListCheckRunsResponseRunsItemVariant0SourceVariant4Selection {
+  final ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3 value;
+  const ListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionListCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// Project-defined CI requirement; its selection is frozen on each check run.
@@ -219,52 +97,27 @@ class ListCheckRunsResponseRunsItemVariant0SourceVariant4 {
   final dynamic selection;
   final ListCheckRunsResponseRunsItemVariant0SourceVariant4SubKind subKind;
 
-  const ListCheckRunsResponseRunsItemVariant0SourceVariant4(
-      {required this.origin, required this.selection, required this.subKind});
+  const ListCheckRunsResponseRunsItemVariant0SourceVariant4({required this.origin, required this.selection, required this.subKind});
 
-  ListCheckRunsResponseRunsItemVariant0SourceVariant4 Function(
-          {ListCheckRunsResponseRunsItemVariant0SourceVariant4Origin origin,
-          dynamic selection,
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4SubKind subKind})
-      get copyWith => _copyWith;
+  ListCheckRunsResponseRunsItemVariant0SourceVariant4 Function({ListCheckRunsResponseRunsItemVariant0SourceVariant4Origin origin, dynamic selection, ListCheckRunsResponseRunsItemVariant0SourceVariant4SubKind subKind}) get copyWith => _copyWith;
 
-  ListCheckRunsResponseRunsItemVariant0SourceVariant4 _copyWith(
-          {Object? origin = sdkOmittedValue,
-          Object? selection = sdkOmittedValue,
-          Object? subKind = sdkOmittedValue}) =>
-      ListCheckRunsResponseRunsItemVariant0SourceVariant4(
-        origin: identical(origin, sdkOmittedValue)
-            ? this.origin
-            : origin
-                as ListCheckRunsResponseRunsItemVariant0SourceVariant4Origin,
-        selection: identical(selection, sdkOmittedValue)
-            ? this.selection
-            : selection as dynamic,
-        subKind: identical(subKind, sdkOmittedValue)
-            ? this.subKind
-            : subKind
-                as ListCheckRunsResponseRunsItemVariant0SourceVariant4SubKind,
-      );
+  ListCheckRunsResponseRunsItemVariant0SourceVariant4 _copyWith({Object? origin = sdkOmittedValue, Object? selection = sdkOmittedValue, Object? subKind = sdkOmittedValue}) => ListCheckRunsResponseRunsItemVariant0SourceVariant4(
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as ListCheckRunsResponseRunsItemVariant0SourceVariant4Origin,
+    selection: identical(selection, sdkOmittedValue) ? this.selection : selection as dynamic,
+    subKind: identical(subKind, sdkOmittedValue) ? this.subKind : subKind as ListCheckRunsResponseRunsItemVariant0SourceVariant4SubKind,
+  );
 
-  factory ListCheckRunsResponseRunsItemVariant0SourceVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      ListCheckRunsResponseRunsItemVariant0SourceVariant4(
-        origin: (json['origin'] != null
-            ? ListCheckRunsResponseRunsItemVariant0SourceVariant4Origin
-                .fromJson(json['origin'] as String)
-            : null)!,
-        selection: (json['selection'])!,
-        subKind: (json['subKind'] != null
-            ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SubKind
-                .fromJson(json['subKind'] as String)
-            : null)!,
-      );
+  factory ListCheckRunsResponseRunsItemVariant0SourceVariant4.fromJson(Map<String, dynamic> json) => ListCheckRunsResponseRunsItemVariant0SourceVariant4(
+    origin: (json['origin'] != null ? ListCheckRunsResponseRunsItemVariant0SourceVariant4Origin.fromJson(json['origin'] as String) : null)!,
+    selection: (json['selection'])!,
+    subKind: (json['subKind'] != null ? ListCheckRunsResponseRunsItemVariant0SourceVariant4SubKind.fromJson(json['subKind'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'origin': origin.toJson(),
-        'selection': selection,
-        'subKind': subKind.toJson(),
-      };
+    'origin': origin.toJson(),
+    'selection': selection,
+    'subKind': subKind.toJson(),
+  };
 }
 
 sealed class ListCheckRunsResponseRunsItemVariant0Source {
@@ -273,119 +126,48 @@ sealed class ListCheckRunsResponseRunsItemVariant0Source {
   const ListCheckRunsResponseRunsItemVariant0Source();
   factory ListCheckRunsResponseRunsItemVariant0Source.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListCheckRunsResponseRunsItemVariant0SourceVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0(value); } } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1(value); } } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2(value); } } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3(value); } } catch (_) {}
+      try { final value = ListCheckRunsResponseRunsItemVariant0SourceVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4(value); } } catch (_) {}
     }
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4(
-          ListCheckRunsResponseRunsItemVariant0SourceVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for ListCheckRunsResponseRunsItemVariant0Source");
+    try { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0(ListCheckRunsResponseRunsItemVariant0SourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1(ListCheckRunsResponseRunsItemVariant0SourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2(ListCheckRunsResponseRunsItemVariant0SourceVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3(ListCheckRunsResponseRunsItemVariant0SourceVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4(ListCheckRunsResponseRunsItemVariant0SourceVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for ListCheckRunsResponseRunsItemVariant0Source");
   }
   Object? toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0
-    extends ListCheckRunsResponseRunsItemVariant0Source {
+final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0 extends ListCheckRunsResponseRunsItemVariant0Source {
   final ListCheckRunsResponseRunsItemVariant0SourceVariant0 value;
-  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1
-    extends ListCheckRunsResponseRunsItemVariant0Source {
+final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1 extends ListCheckRunsResponseRunsItemVariant0Source {
   final ListCheckRunsResponseRunsItemVariant0SourceVariant1 value;
-  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2
-    extends ListCheckRunsResponseRunsItemVariant0Source {
+final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2 extends ListCheckRunsResponseRunsItemVariant0Source {
   final ListCheckRunsResponseRunsItemVariant0SourceVariant2 value;
-  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3
-    extends ListCheckRunsResponseRunsItemVariant0Source {
+final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3 extends ListCheckRunsResponseRunsItemVariant0Source {
   final ListCheckRunsResponseRunsItemVariant0SourceVariant3 value;
-  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4
-    extends ListCheckRunsResponseRunsItemVariant0Source {
+final class ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4 extends ListCheckRunsResponseRunsItemVariant0Source {
   final ListCheckRunsResponseRunsItemVariant0SourceVariant4 value;
-  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ListCheckRunsResponseRunsItemVariant0SourceListCheckRunsResponseRunsItemVariant0SourceVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }

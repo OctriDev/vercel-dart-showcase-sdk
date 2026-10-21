@@ -9,19 +9,10 @@ sealed class FlagJSONValue {
   static const String constructionSurface = 'named';
   const FlagJSONValue();
   factory FlagJSONValue.fromJson(Object? json) {
-    if (json is String) {
-      return FlagJSONValueString(json);
-    }
-    if (json is num) {
-      return FlagJSONValueDouble(json.toDouble());
-    }
-    try {
-      return FlagJSONValueFlagJSONValue(FlagJSONValue.fromJson(json));
-    } catch (_) {}
-    try {
-      return FlagJSONValueFlagJSONValueVariant4(
-          FlagJSONValueVariant4.fromJson(json as bool));
-    } catch (_) {}
+    if (json is String) { return FlagJSONValueString(json); }
+    if (json is num) { return FlagJSONValueDouble(json.toDouble()); }
+    try { return FlagJSONValueFlagJSONValue(FlagJSONValue.fromJson(json)); } catch (_) {}
+    try { return FlagJSONValueFlagJSONValueVariant4(FlagJSONValueVariant4.fromJson(json as bool)); } catch (_) {}
     throw FormatException("No variant matched for FlagJSONValue");
   }
   Object? toJson();
@@ -30,27 +21,23 @@ sealed class FlagJSONValue {
 final class FlagJSONValueString extends FlagJSONValue {
   final String value;
   const FlagJSONValueString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 final class FlagJSONValueDouble extends FlagJSONValue {
   final double value;
   const FlagJSONValueDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 final class FlagJSONValueFlagJSONValue extends FlagJSONValue {
   final FlagJSONValue value;
   const FlagJSONValueFlagJSONValue(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class FlagJSONValueFlagJSONValueVariant4 extends FlagJSONValue {
   final FlagJSONValueVariant4 value;
   const FlagJSONValueFlagJSONValueVariant4(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

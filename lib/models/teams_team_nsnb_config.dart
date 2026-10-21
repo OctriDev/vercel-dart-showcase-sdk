@@ -8,525 +8,273 @@ part of 'teams.dart';
 class TeamNsnbConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `preference` wire field.
   final TeamNsnbConfigPreference preference;
 
   const TeamNsnbConfig({required this.preference});
 
-  TeamNsnbConfig Function({TeamNsnbConfigPreference preference}) get copyWith =>
-      _copyWith;
+  TeamNsnbConfig Function({TeamNsnbConfigPreference preference}) get copyWith => _copyWith;
 
-  TeamNsnbConfig _copyWith({Object? preference = sdkOmittedValue}) =>
-      TeamNsnbConfig(
-        preference: identical(preference, sdkOmittedValue)
-            ? this.preference
-            : preference as TeamNsnbConfigPreference,
-      );
+  TeamNsnbConfig _copyWith({Object? preference = sdkOmittedValue}) => TeamNsnbConfig(
+    preference: identical(preference, sdkOmittedValue) ? this.preference : preference as TeamNsnbConfigPreference,
+  );
 
   factory TeamNsnbConfig.fromJson(Map<String, dynamic> json) => TeamNsnbConfig(
-        preference: (json['preference'] != null
-            ? TeamNsnbConfigPreference.fromJson(json['preference'] as String)
-            : null)!,
-      );
+    preference: (json['preference'] != null ? TeamNsnbConfigPreference.fromJson(json['preference'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'preference': preference.toJson(),
-      };
+    'preference': preference.toJson(),
+  };
 }
 
 /// Is remote caching enabled for this team
 class TeamRemoteCaching {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional enumerated value serialized in the `enabled` wire field.
   final SdkOptional<TeamRemoteCachingEnabled> enabled;
 
   const TeamRemoteCaching({this.enabled = const SdkOmitted()});
 
-  TeamRemoteCaching Function({SdkOptional<TeamRemoteCachingEnabled> enabled})
-      get copyWith => _copyWith;
+  TeamRemoteCaching Function({SdkOptional<TeamRemoteCachingEnabled> enabled}) get copyWith => _copyWith;
 
-  TeamRemoteCaching _copyWith({Object? enabled = sdkOmittedValue}) =>
-      TeamRemoteCaching(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as SdkOptional<TeamRemoteCachingEnabled>,
-      );
+  TeamRemoteCaching _copyWith({Object? enabled = sdkOmittedValue}) => TeamRemoteCaching(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<TeamRemoteCachingEnabled>,
+  );
 
-  factory TeamRemoteCaching.fromJson(Map<String, dynamic> json) =>
-      TeamRemoteCaching(
-        enabled: json['enabled'] != null
-            ? SdkPresent((json['enabled'] != null
-                ? TeamRemoteCachingEnabled.fromJson(json['enabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory TeamRemoteCaching.fromJson(Map<String, dynamic> json) => TeamRemoteCaching(
+    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? TeamRemoteCachingEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enabled) {
-          SdkPresent<TeamRemoteCachingEnabled>(value: final value) => {
-              'enabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enabled) {
+      SdkPresent<TeamRemoteCachingEnabled>(value: final value) => {'enabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `buildEntitlements` wire field.
 class TeamResourceConfigBuildEntitlements {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional enumerated value serialized in the `enhancedBuilds` wire field.
-  final SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds>
-      enhancedBuilds;
+  final SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds> enhancedBuilds;
 
-  const TeamResourceConfigBuildEntitlements(
-      {this.enhancedBuilds = const SdkOmitted()});
+  const TeamResourceConfigBuildEntitlements({this.enhancedBuilds = const SdkOmitted()});
 
-  TeamResourceConfigBuildEntitlements Function(
-      {SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds>
-          enhancedBuilds}) get copyWith => _copyWith;
+  TeamResourceConfigBuildEntitlements Function({SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds> enhancedBuilds}) get copyWith => _copyWith;
 
-  TeamResourceConfigBuildEntitlements _copyWith(
-          {Object? enhancedBuilds = sdkOmittedValue}) =>
-      TeamResourceConfigBuildEntitlements(
-        enhancedBuilds: identical(enhancedBuilds, sdkOmittedValue)
-            ? this.enhancedBuilds
-            : enhancedBuilds as SdkOptional<
-                TeamResourceConfigBuildEntitlementsEnhancedBuilds>,
-      );
+  TeamResourceConfigBuildEntitlements _copyWith({Object? enhancedBuilds = sdkOmittedValue}) => TeamResourceConfigBuildEntitlements(
+    enhancedBuilds: identical(enhancedBuilds, sdkOmittedValue) ? this.enhancedBuilds : enhancedBuilds as SdkOptional<TeamResourceConfigBuildEntitlementsEnhancedBuilds>,
+  );
 
-  factory TeamResourceConfigBuildEntitlements.fromJson(
-          Map<String, dynamic> json) =>
-      TeamResourceConfigBuildEntitlements(
-        enhancedBuilds: json['enhancedBuilds'] != null
-            ? SdkPresent((json['enhancedBuilds'] != null
-                ? TeamResourceConfigBuildEntitlementsEnhancedBuilds.fromJson(
-                    json['enhancedBuilds'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory TeamResourceConfigBuildEntitlements.fromJson(Map<String, dynamic> json) => TeamResourceConfigBuildEntitlements(
+    enhancedBuilds: json['enhancedBuilds'] != null ? SdkPresent((json['enhancedBuilds'] != null ? TeamResourceConfigBuildEntitlementsEnhancedBuilds.fromJson(json['enhancedBuilds'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enhancedBuilds) {
-          SdkPresent<TeamResourceConfigBuildEntitlementsEnhancedBuilds>(
-            value: final value
-          ) =>
-            {
-              'enhancedBuilds': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enhancedBuilds) {
+      SdkPresent<TeamResourceConfigBuildEntitlementsEnhancedBuilds>(value: final value) => {'enhancedBuilds': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Build machine configuration
 class TeamResourceConfigBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Default build machine type for new builds
   final SdkOptional<TeamResourceConfigBuildMachineDefault> default_;
 
   const TeamResourceConfigBuildMachine({this.default_ = const SdkOmitted()});
 
-  TeamResourceConfigBuildMachine Function(
-          {SdkOptional<TeamResourceConfigBuildMachineDefault> default_})
-      get copyWith => _copyWith;
+  TeamResourceConfigBuildMachine Function({SdkOptional<TeamResourceConfigBuildMachineDefault> default_}) get copyWith => _copyWith;
 
-  TeamResourceConfigBuildMachine _copyWith(
-          {Object? default_ = sdkOmittedValue}) =>
-      TeamResourceConfigBuildMachine(
-        default_: identical(default_, sdkOmittedValue)
-            ? this.default_
-            : default_ as SdkOptional<TeamResourceConfigBuildMachineDefault>,
-      );
+  TeamResourceConfigBuildMachine _copyWith({Object? default_ = sdkOmittedValue}) => TeamResourceConfigBuildMachine(
+    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<TeamResourceConfigBuildMachineDefault>,
+  );
 
-  factory TeamResourceConfigBuildMachine.fromJson(Map<String, dynamic> json) =>
-      TeamResourceConfigBuildMachine(
-        default_: json['default'] != null
-            ? SdkPresent((json['default'] != null
-                ? TeamResourceConfigBuildMachineDefault.fromJson(
-                    json['default'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory TeamResourceConfigBuildMachine.fromJson(Map<String, dynamic> json) => TeamResourceConfigBuildMachine(
+    default_: json['default'] != null ? SdkPresent((json['default'] != null ? TeamResourceConfigBuildMachineDefault.fromJson(json['default'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (default_) {
-          SdkPresent<TeamResourceConfigBuildMachineDefault>(
-            value: final value
-          ) =>
-            {
-              'default': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (default_) {
+      SdkPresent<TeamResourceConfigBuildMachineDefault>(value: final value) => {'default': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `resourceConfig` wire field.
 class TeamResourceConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The maximum number of blob stores an account can create.
   final SdkOptional<double> blobStores;
-
   /// Optional object value serialized in the `buildEntitlements` wire field.
   final SdkOptional<TeamResourceConfigBuildEntitlements> buildEntitlements;
-
   /// Build machine configuration
   final SdkOptional<TeamResourceConfigBuildMachine> buildMachine;
-
   /// The total amount of concurrent builds that can be used.
   final SdkOptional<double> concurrentBuilds;
-
   /// The maximum number of custom environments allowed per project.
   final SdkOptional<double> customEnvironmentsPerProject;
-
   /// The maximum number of edge configs an account can create.
   final SdkOptional<double> edgeConfigs;
-
   /// The maximum size in kilobytes of a Global Config. Only specified if a custom limit is set.
   final SdkOptional<double> edgeConfigSize;
-
   /// Whether every build for this team / user has elastic concurrency enabled automatically.
-  final SdkOptional<TeamResourceConfigElasticConcurrencyEnabled>
-      elasticConcurrencyEnabled;
-
+  final SdkOptional<TeamResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled;
   /// The maximum number of kv databases an account can create.
   final SdkOptional<double> kvDatabases;
-
   /// The maximum number of postgres databases an account can create.
   final SdkOptional<double> postgresDatabases;
-
   /// The maximum memory size (in MB) for a serverless function. Only specified if a custom limit is set.
   final SdkOptional<double> serverlessFunctionMaxMemorySize;
 
-  const TeamResourceConfig(
-      {this.blobStores = const SdkOmitted(),
-      this.buildEntitlements = const SdkOmitted(),
-      this.buildMachine = const SdkOmitted(),
-      this.concurrentBuilds = const SdkOmitted(),
-      this.customEnvironmentsPerProject = const SdkOmitted(),
-      this.edgeConfigs = const SdkOmitted(),
-      this.edgeConfigSize = const SdkOmitted(),
-      this.elasticConcurrencyEnabled = const SdkOmitted(),
-      this.kvDatabases = const SdkOmitted(),
-      this.postgresDatabases = const SdkOmitted(),
-      this.serverlessFunctionMaxMemorySize = const SdkOmitted()});
+  const TeamResourceConfig({this.blobStores = const SdkOmitted(), this.buildEntitlements = const SdkOmitted(), this.buildMachine = const SdkOmitted(), this.concurrentBuilds = const SdkOmitted(), this.customEnvironmentsPerProject = const SdkOmitted(), this.edgeConfigs = const SdkOmitted(), this.edgeConfigSize = const SdkOmitted(), this.elasticConcurrencyEnabled = const SdkOmitted(), this.kvDatabases = const SdkOmitted(), this.postgresDatabases = const SdkOmitted(), this.serverlessFunctionMaxMemorySize = const SdkOmitted()});
 
-  TeamResourceConfig Function(
-          {SdkOptional<double> blobStores,
-          SdkOptional<TeamResourceConfigBuildEntitlements> buildEntitlements,
-          SdkOptional<TeamResourceConfigBuildMachine> buildMachine,
-          SdkOptional<double> concurrentBuilds,
-          SdkOptional<double> customEnvironmentsPerProject,
-          SdkOptional<double> edgeConfigs,
-          SdkOptional<double> edgeConfigSize,
-          SdkOptional<TeamResourceConfigElasticConcurrencyEnabled>
-              elasticConcurrencyEnabled,
-          SdkOptional<double> kvDatabases,
-          SdkOptional<double> postgresDatabases,
-          SdkOptional<double> serverlessFunctionMaxMemorySize})
-      get copyWith => _copyWith;
+  TeamResourceConfig Function({SdkOptional<double> blobStores, SdkOptional<TeamResourceConfigBuildEntitlements> buildEntitlements, SdkOptional<TeamResourceConfigBuildMachine> buildMachine, SdkOptional<double> concurrentBuilds, SdkOptional<double> customEnvironmentsPerProject, SdkOptional<double> edgeConfigs, SdkOptional<double> edgeConfigSize, SdkOptional<TeamResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled, SdkOptional<double> kvDatabases, SdkOptional<double> postgresDatabases, SdkOptional<double> serverlessFunctionMaxMemorySize}) get copyWith => _copyWith;
 
-  TeamResourceConfig _copyWith(
-          {Object? blobStores = sdkOmittedValue,
-          Object? buildEntitlements = sdkOmittedValue,
-          Object? buildMachine = sdkOmittedValue,
-          Object? concurrentBuilds = sdkOmittedValue,
-          Object? customEnvironmentsPerProject = sdkOmittedValue,
-          Object? edgeConfigs = sdkOmittedValue,
-          Object? edgeConfigSize = sdkOmittedValue,
-          Object? elasticConcurrencyEnabled = sdkOmittedValue,
-          Object? kvDatabases = sdkOmittedValue,
-          Object? postgresDatabases = sdkOmittedValue,
-          Object? serverlessFunctionMaxMemorySize = sdkOmittedValue}) =>
-      TeamResourceConfig(
-        blobStores: identical(blobStores, sdkOmittedValue)
-            ? this.blobStores
-            : blobStores as SdkOptional<double>,
-        buildEntitlements: identical(buildEntitlements, sdkOmittedValue)
-            ? this.buildEntitlements
-            : buildEntitlements
-                as SdkOptional<TeamResourceConfigBuildEntitlements>,
-        buildMachine: identical(buildMachine, sdkOmittedValue)
-            ? this.buildMachine
-            : buildMachine as SdkOptional<TeamResourceConfigBuildMachine>,
-        concurrentBuilds: identical(concurrentBuilds, sdkOmittedValue)
-            ? this.concurrentBuilds
-            : concurrentBuilds as SdkOptional<double>,
-        customEnvironmentsPerProject:
-            identical(customEnvironmentsPerProject, sdkOmittedValue)
-                ? this.customEnvironmentsPerProject
-                : customEnvironmentsPerProject as SdkOptional<double>,
-        edgeConfigs: identical(edgeConfigs, sdkOmittedValue)
-            ? this.edgeConfigs
-            : edgeConfigs as SdkOptional<double>,
-        edgeConfigSize: identical(edgeConfigSize, sdkOmittedValue)
-            ? this.edgeConfigSize
-            : edgeConfigSize as SdkOptional<double>,
-        elasticConcurrencyEnabled:
-            identical(elasticConcurrencyEnabled, sdkOmittedValue)
-                ? this.elasticConcurrencyEnabled
-                : elasticConcurrencyEnabled
-                    as SdkOptional<TeamResourceConfigElasticConcurrencyEnabled>,
-        kvDatabases: identical(kvDatabases, sdkOmittedValue)
-            ? this.kvDatabases
-            : kvDatabases as SdkOptional<double>,
-        postgresDatabases: identical(postgresDatabases, sdkOmittedValue)
-            ? this.postgresDatabases
-            : postgresDatabases as SdkOptional<double>,
-        serverlessFunctionMaxMemorySize:
-            identical(serverlessFunctionMaxMemorySize, sdkOmittedValue)
-                ? this.serverlessFunctionMaxMemorySize
-                : serverlessFunctionMaxMemorySize as SdkOptional<double>,
-      );
+  TeamResourceConfig _copyWith({Object? blobStores = sdkOmittedValue, Object? buildEntitlements = sdkOmittedValue, Object? buildMachine = sdkOmittedValue, Object? concurrentBuilds = sdkOmittedValue, Object? customEnvironmentsPerProject = sdkOmittedValue, Object? edgeConfigs = sdkOmittedValue, Object? edgeConfigSize = sdkOmittedValue, Object? elasticConcurrencyEnabled = sdkOmittedValue, Object? kvDatabases = sdkOmittedValue, Object? postgresDatabases = sdkOmittedValue, Object? serverlessFunctionMaxMemorySize = sdkOmittedValue}) => TeamResourceConfig(
+    blobStores: identical(blobStores, sdkOmittedValue) ? this.blobStores : blobStores as SdkOptional<double>,
+    buildEntitlements: identical(buildEntitlements, sdkOmittedValue) ? this.buildEntitlements : buildEntitlements as SdkOptional<TeamResourceConfigBuildEntitlements>,
+    buildMachine: identical(buildMachine, sdkOmittedValue) ? this.buildMachine : buildMachine as SdkOptional<TeamResourceConfigBuildMachine>,
+    concurrentBuilds: identical(concurrentBuilds, sdkOmittedValue) ? this.concurrentBuilds : concurrentBuilds as SdkOptional<double>,
+    customEnvironmentsPerProject: identical(customEnvironmentsPerProject, sdkOmittedValue) ? this.customEnvironmentsPerProject : customEnvironmentsPerProject as SdkOptional<double>,
+    edgeConfigs: identical(edgeConfigs, sdkOmittedValue) ? this.edgeConfigs : edgeConfigs as SdkOptional<double>,
+    edgeConfigSize: identical(edgeConfigSize, sdkOmittedValue) ? this.edgeConfigSize : edgeConfigSize as SdkOptional<double>,
+    elasticConcurrencyEnabled: identical(elasticConcurrencyEnabled, sdkOmittedValue) ? this.elasticConcurrencyEnabled : elasticConcurrencyEnabled as SdkOptional<TeamResourceConfigElasticConcurrencyEnabled>,
+    kvDatabases: identical(kvDatabases, sdkOmittedValue) ? this.kvDatabases : kvDatabases as SdkOptional<double>,
+    postgresDatabases: identical(postgresDatabases, sdkOmittedValue) ? this.postgresDatabases : postgresDatabases as SdkOptional<double>,
+    serverlessFunctionMaxMemorySize: identical(serverlessFunctionMaxMemorySize, sdkOmittedValue) ? this.serverlessFunctionMaxMemorySize : serverlessFunctionMaxMemorySize as SdkOptional<double>,
+  );
 
-  factory TeamResourceConfig.fromJson(Map<String, dynamic> json) =>
-      TeamResourceConfig(
-        blobStores: json['blobStores'] != null
-            ? SdkPresent(((json['blobStores'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        buildEntitlements: json['buildEntitlements'] != null
-            ? SdkPresent((json['buildEntitlements'] != null
-                ? TeamResourceConfigBuildEntitlements.fromJson(
-                    json['buildEntitlements'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        buildMachine: json['buildMachine'] != null
-            ? SdkPresent((json['buildMachine'] != null
-                ? TeamResourceConfigBuildMachine.fromJson(
-                    json['buildMachine'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        concurrentBuilds: json['concurrentBuilds'] != null
-            ? SdkPresent(((json['concurrentBuilds'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        customEnvironmentsPerProject: json['customEnvironmentsPerProject'] !=
-                null
-            ? SdkPresent(
-                ((json['customEnvironmentsPerProject'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        edgeConfigs: json['edgeConfigs'] != null
-            ? SdkPresent(((json['edgeConfigs'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        edgeConfigSize: json['edgeConfigSize'] != null
-            ? SdkPresent(((json['edgeConfigSize'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null
-            ? SdkPresent((json['elasticConcurrencyEnabled'] != null
-                ? TeamResourceConfigElasticConcurrencyEnabled.fromJson(
-                    json['elasticConcurrencyEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        kvDatabases: json['kvDatabases'] != null
-            ? SdkPresent(((json['kvDatabases'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        postgresDatabases: json['postgresDatabases'] != null
-            ? SdkPresent(((json['postgresDatabases'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        serverlessFunctionMaxMemorySize:
-            json['serverlessFunctionMaxMemorySize'] != null
-                ? SdkPresent(((json['serverlessFunctionMaxMemorySize'] as num?)
-                    ?.toDouble())!)
-                : const SdkOmitted(),
-      );
+  factory TeamResourceConfig.fromJson(Map<String, dynamic> json) => TeamResourceConfig(
+    blobStores: json['blobStores'] != null ? SdkPresent(((json['blobStores'] as num?)?.toDouble())!) : const SdkOmitted(),
+    buildEntitlements: json['buildEntitlements'] != null ? SdkPresent((json['buildEntitlements'] != null ? TeamResourceConfigBuildEntitlements.fromJson(json['buildEntitlements'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    buildMachine: json['buildMachine'] != null ? SdkPresent((json['buildMachine'] != null ? TeamResourceConfigBuildMachine.fromJson(json['buildMachine'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    concurrentBuilds: json['concurrentBuilds'] != null ? SdkPresent(((json['concurrentBuilds'] as num?)?.toDouble())!) : const SdkOmitted(),
+    customEnvironmentsPerProject: json['customEnvironmentsPerProject'] != null ? SdkPresent(((json['customEnvironmentsPerProject'] as num?)?.toDouble())!) : const SdkOmitted(),
+    edgeConfigs: json['edgeConfigs'] != null ? SdkPresent(((json['edgeConfigs'] as num?)?.toDouble())!) : const SdkOmitted(),
+    edgeConfigSize: json['edgeConfigSize'] != null ? SdkPresent(((json['edgeConfigSize'] as num?)?.toDouble())!) : const SdkOmitted(),
+    elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null ? SdkPresent((json['elasticConcurrencyEnabled'] != null ? TeamResourceConfigElasticConcurrencyEnabled.fromJson(json['elasticConcurrencyEnabled'] as bool) : null)!) : const SdkOmitted(),
+    kvDatabases: json['kvDatabases'] != null ? SdkPresent(((json['kvDatabases'] as num?)?.toDouble())!) : const SdkOmitted(),
+    postgresDatabases: json['postgresDatabases'] != null ? SdkPresent(((json['postgresDatabases'] as num?)?.toDouble())!) : const SdkOmitted(),
+    serverlessFunctionMaxMemorySize: json['serverlessFunctionMaxMemorySize'] != null ? SdkPresent(((json['serverlessFunctionMaxMemorySize'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (blobStores) {
-          SdkPresent<double>(value: final value) => {
-              'blobStores': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildEntitlements) {
-          SdkPresent<TeamResourceConfigBuildEntitlements>(value: final value) =>
-            {
-              'buildEntitlements': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachine) {
-          SdkPresent<TeamResourceConfigBuildMachine>(value: final value) => {
-              'buildMachine': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (concurrentBuilds) {
-          SdkPresent<double>(value: final value) => {
-              'concurrentBuilds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentsPerProject) {
-          SdkPresent<double>(value: final value) => {
-              'customEnvironmentsPerProject': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigs) {
-          SdkPresent<double>(value: final value) => {
-              'edgeConfigs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigSize) {
-          SdkPresent<double>(value: final value) => {
-              'edgeConfigSize': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (elasticConcurrencyEnabled) {
-          SdkPresent<TeamResourceConfigElasticConcurrencyEnabled>(
-            value: final value
-          ) =>
-            {
-              'elasticConcurrencyEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (kvDatabases) {
-          SdkPresent<double>(value: final value) => {
-              'kvDatabases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (postgresDatabases) {
-          SdkPresent<double>(value: final value) => {
-              'postgresDatabases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (serverlessFunctionMaxMemorySize) {
-          SdkPresent<double>(value: final value) => {
-              'serverlessFunctionMaxMemorySize': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (blobStores) {
+      SdkPresent<double>(value: final value) => {'blobStores': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildEntitlements) {
+      SdkPresent<TeamResourceConfigBuildEntitlements>(value: final value) => {'buildEntitlements': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachine) {
+      SdkPresent<TeamResourceConfigBuildMachine>(value: final value) => {'buildMachine': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (concurrentBuilds) {
+      SdkPresent<double>(value: final value) => {'concurrentBuilds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentsPerProject) {
+      SdkPresent<double>(value: final value) => {'customEnvironmentsPerProject': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigs) {
+      SdkPresent<double>(value: final value) => {'edgeConfigs': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigSize) {
+      SdkPresent<double>(value: final value) => {'edgeConfigSize': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (elasticConcurrencyEnabled) {
+      SdkPresent<TeamResourceConfigElasticConcurrencyEnabled>(value: final value) => {'elasticConcurrencyEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (kvDatabases) {
+      SdkPresent<double>(value: final value) => {'kvDatabases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (postgresDatabases) {
+      SdkPresent<double>(value: final value) => {'postgresDatabases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (serverlessFunctionMaxMemorySize) {
+      SdkPresent<double>(value: final value) => {'serverlessFunctionMaxMemorySize': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Information for the SAML Single Sign-On configuration.
 class TeamSamlConnection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Timestamp (in milliseconds) of when the configuration was connected.
   final double connectedAt;
-
   /// Timestamp (in milliseconds) of when the last webhook event was received from WorkOS.
   final SdkOptional<double> lastReceivedWebhookEvent;
-
   /// Timestamp (in milliseconds) of when the last directory sync was performed.
   final SdkOptional<double> lastSyncedAt;
-
   /// Current state of the connection.
   final String state;
-
   /// Controls whether directory sync events are processed. - 'SETUP': Directory connected but role mappings not yet configured. Events are acknowledged but not processed. - 'ACTIVE': Fully configured. Events are processed normally. - undefined: Legacy directory (pre-feature), treat as 'ACTIVE' for backwards compatibility.
   final SdkOptional<TeamSamlConnectionSyncState> syncState;
-
   /// The Identity Provider "type", for example Okta.
   final String type_;
-
   /// Required `string` value serialized in the `status` wire field.
   final String status;
 
-  const TeamSamlConnection(
-      {required this.connectedAt,
-      this.lastReceivedWebhookEvent = const SdkOmitted(),
-      this.lastSyncedAt = const SdkOmitted(),
-      required this.state,
-      this.syncState = const SdkOmitted(),
-      required this.type_,
-      required this.status});
+  const TeamSamlConnection({required this.connectedAt, this.lastReceivedWebhookEvent = const SdkOmitted(), this.lastSyncedAt = const SdkOmitted(), required this.state, this.syncState = const SdkOmitted(), required this.type_, required this.status});
 
-  TeamSamlConnection Function(
-      {double connectedAt,
-      SdkOptional<double> lastReceivedWebhookEvent,
-      SdkOptional<double> lastSyncedAt,
-      String state,
-      SdkOptional<TeamSamlConnectionSyncState> syncState,
-      String type_,
-      String status}) get copyWith => _copyWith;
+  TeamSamlConnection Function({double connectedAt, SdkOptional<double> lastReceivedWebhookEvent, SdkOptional<double> lastSyncedAt, String state, SdkOptional<TeamSamlConnectionSyncState> syncState, String type_, String status}) get copyWith => _copyWith;
 
-  TeamSamlConnection _copyWith(
-          {Object? connectedAt = sdkOmittedValue,
-          Object? lastReceivedWebhookEvent = sdkOmittedValue,
-          Object? lastSyncedAt = sdkOmittedValue,
-          Object? state = sdkOmittedValue,
-          Object? syncState = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? status = sdkOmittedValue}) =>
-      TeamSamlConnection(
-        connectedAt: identical(connectedAt, sdkOmittedValue)
-            ? this.connectedAt
-            : connectedAt as double,
-        lastReceivedWebhookEvent:
-            identical(lastReceivedWebhookEvent, sdkOmittedValue)
-                ? this.lastReceivedWebhookEvent
-                : lastReceivedWebhookEvent as SdkOptional<double>,
-        lastSyncedAt: identical(lastSyncedAt, sdkOmittedValue)
-            ? this.lastSyncedAt
-            : lastSyncedAt as SdkOptional<double>,
-        state: identical(state, sdkOmittedValue) ? this.state : state as String,
-        syncState: identical(syncState, sdkOmittedValue)
-            ? this.syncState
-            : syncState as SdkOptional<TeamSamlConnectionSyncState>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-        status:
-            identical(status, sdkOmittedValue) ? this.status : status as String,
-      );
+  TeamSamlConnection _copyWith({Object? connectedAt = sdkOmittedValue, Object? lastReceivedWebhookEvent = sdkOmittedValue, Object? lastSyncedAt = sdkOmittedValue, Object? state = sdkOmittedValue, Object? syncState = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? status = sdkOmittedValue}) => TeamSamlConnection(
+    connectedAt: identical(connectedAt, sdkOmittedValue) ? this.connectedAt : connectedAt as double,
+    lastReceivedWebhookEvent: identical(lastReceivedWebhookEvent, sdkOmittedValue) ? this.lastReceivedWebhookEvent : lastReceivedWebhookEvent as SdkOptional<double>,
+    lastSyncedAt: identical(lastSyncedAt, sdkOmittedValue) ? this.lastSyncedAt : lastSyncedAt as SdkOptional<double>,
+    state: identical(state, sdkOmittedValue) ? this.state : state as String,
+    syncState: identical(syncState, sdkOmittedValue) ? this.syncState : syncState as SdkOptional<TeamSamlConnectionSyncState>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    status: identical(status, sdkOmittedValue) ? this.status : status as String,
+  );
 
-  factory TeamSamlConnection.fromJson(Map<String, dynamic> json) =>
-      TeamSamlConnection(
-        connectedAt: ((json['connectedAt'] as num?)?.toDouble())!,
-        lastReceivedWebhookEvent: json['lastReceivedWebhookEvent'] != null
-            ? SdkPresent(
-                ((json['lastReceivedWebhookEvent'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        lastSyncedAt: json['lastSyncedAt'] != null
-            ? SdkPresent(((json['lastSyncedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        state: (json['state'] as String?)!,
-        syncState: json['syncState'] != null
-            ? SdkPresent((json['syncState'] != null
-                ? TeamSamlConnectionSyncState.fromJson(
-                    json['syncState'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-        status: (json['status'] as String?)!,
-      );
+  factory TeamSamlConnection.fromJson(Map<String, dynamic> json) => TeamSamlConnection(
+    connectedAt: ((json['connectedAt'] as num?)?.toDouble())!,
+    lastReceivedWebhookEvent: json['lastReceivedWebhookEvent'] != null ? SdkPresent(((json['lastReceivedWebhookEvent'] as num?)?.toDouble())!) : const SdkOmitted(),
+    lastSyncedAt: json['lastSyncedAt'] != null ? SdkPresent(((json['lastSyncedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    state: (json['state'] as String?)!,
+    syncState: json['syncState'] != null ? SdkPresent((json['syncState'] != null ? TeamSamlConnectionSyncState.fromJson(json['syncState'] as String) : null)!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+    status: (json['status'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectedAt': connectedAt,
-        ...switch (lastReceivedWebhookEvent) {
-          SdkPresent<double>(value: final value) => {
-              'lastReceivedWebhookEvent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lastSyncedAt) {
-          SdkPresent<double>(value: final value) => {
-              'lastSyncedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'state': state,
-        ...switch (syncState) {
-          SdkPresent<TeamSamlConnectionSyncState>(value: final value) => {
-              'syncState': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-        'status': status,
-      };
+    'connectedAt': connectedAt,
+    ...switch (lastReceivedWebhookEvent) {
+      SdkPresent<double>(value: final value) => {'lastReceivedWebhookEvent': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lastSyncedAt) {
+      SdkPresent<double>(value: final value) => {'lastSyncedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'state': state,
+    ...switch (syncState) {
+      SdkPresent<TeamSamlConnectionSyncState>(value: final value) => {'syncState': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+    'status': status,
+  };
 }

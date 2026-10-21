@@ -51,48 +51,24 @@ Future<ConnectConnectorList> listConnectors(ClientConfig config,
           'GET', '/v2/connect/connectors',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
-                style: 'form', explode: true),
-            'type': SdkQueryValue(SdkUtils.unwrapOptional(type_),
-                style: 'form', explode: true),
-            'service': SdkQueryValue(SdkUtils.unwrapOptional(service),
-                style: 'form', explode: true),
-            'sort': SdkQueryValue(SdkUtils.unwrapOptional(sort),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
+            'type': SdkQueryValue(SdkUtils.unwrapOptional(type_), style: 'form', explode: true),
+            'service': SdkQueryValue(SdkUtils.unwrapOptional(service), style: 'form', explode: true),
+            'sort': SdkQueryValue(SdkUtils.unwrapOptional(sort), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listConnectors',
-          fromJsonRaw: (value) =>
-              ConnectConnectorList.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectConnectorList.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '422': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '422': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves a connector by its stable ID or team-scoped UID. Use a dashboard or team requester, or a deployment's project OIDC token; project requesters can read only connectors linked to their project and environment.
 ///
@@ -117,34 +93,17 @@ Future<ConnectConnector> getConnector(ClientConfig config,
           '/v1/connect/connectors/${Uri.encodeComponent(connector.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConnector',
-          fromJsonRaw: (value) =>
-              ConnectConnector.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectConnector.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '422': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '422': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Deletes a connector and its project connections and installation records. Use this operation when you want to remove the connector and its associated connections and installations from the team.
 ///
@@ -169,34 +128,16 @@ Future<void> deleteConnector(ClientConfig config,
           '/v1/connect/connectors/${Uri.encodeComponent(connector.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteConnector',
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '422': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '502': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '422': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '502': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Creates a connector with provider configuration or a service connection method, and can optionally link it to a project. Choose either full configuration with `type` or preset configuration with `service` and `connectionMethod`; supply `data` for the provider configuration.
 ///
@@ -287,20 +228,16 @@ Future<ConnectConnectorCreateResult> createConnector(ClientConfig config,
     SdkOptional<List<String>> environments = const SdkOmitted(),
     SdkOptional<bool> triggers = const SdkOmitted(),
     SdkOptional<String> triggerType = const SdkOmitted(),
-    SdkOptional<Map<String, Object?>> triggerVerificationInput =
-        const SdkOmitted(),
-    SdkOptional<Map<String, Object?>> triggerRegistrationInput =
-        const SdkOmitted(),
-    SdkOptional<ConnectCreateConnectorRequestTriggerDestination>
-        triggerDestination = const SdkOmitted(),
+    SdkOptional<Map<String, Object?>> triggerVerificationInput = const SdkOmitted(),
+    SdkOptional<Map<String, Object?>> triggerRegistrationInput = const SdkOmitted(),
+    SdkOptional<ConnectCreateConnectorRequestTriggerDestination> triggerDestination = const SdkOmitted(),
     SdkOptional<List<String>> events = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (icon is SdkPresent<String>) {
     sdkValidatePattern('icon', icon.value, '^[0-9a-fA-F]{40}\$');
   }
   if (backgroundColor is SdkPresent<String>) {
-    sdkValidatePattern(
-        'backgroundColor', backgroundColor.value, '^#[0-9a-fA-F]{6}\$');
+    sdkValidatePattern('backgroundColor', backgroundColor.value, '^#[0-9a-fA-F]{6}\$');
   }
   if (accentColor is SdkPresent<String>) {
     sdkValidatePattern('accentColor', accentColor.value, '^#[0-9a-fA-F]{6}\$');
@@ -319,10 +256,8 @@ Future<ConnectConnectorCreateResult> createConnector(ClientConfig config,
           'POST', '/v1/connect/connectors',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'data': data,
@@ -340,40 +275,19 @@ Future<ConnectConnectorCreateResult> createConnector(ClientConfig config,
             'environments': SdkUtils.unwrapOptional(environments),
             'triggers': SdkUtils.unwrapOptional(triggers),
             'triggerType': SdkUtils.unwrapOptional(triggerType),
-            'triggerVerificationInput':
-                SdkUtils.unwrapOptional(triggerVerificationInput),
-            'triggerRegistrationInput':
-                SdkUtils.unwrapOptional(triggerRegistrationInput),
+            'triggerVerificationInput': SdkUtils.unwrapOptional(triggerVerificationInput),
+            'triggerRegistrationInput': SdkUtils.unwrapOptional(triggerRegistrationInput),
             'triggerDestination': SdkUtils.unwrapOptional(triggerDestination),
             'events': SdkUtils.unwrapOptional(events)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createConnector',
-          fromJsonRaw: (value) => ConnectConnectorCreateResult.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectConnectorCreateResult.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '422': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '502': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '422': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '500': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '502': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Updates connector configuration, trigger settings, or display details and returns any provider-side follow-up signals. Supply only the fields you want to change, and handle any reconsent, reinstall, or service synchronization information in the response.
 ///
@@ -427,10 +341,8 @@ Future<ConnectConnectorUpdateResult> updateConnector(ClientConfig config,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<bool> triggers = const SdkOmitted(),
-    SdkOptional<Map<String, Object?>> triggerVerificationInput =
-        const SdkOmitted(),
-    SdkOptional<Map<String, Object?>> triggerRegistrationInput =
-        const SdkOmitted(),
+    SdkOptional<Map<String, Object?>> triggerVerificationInput = const SdkOmitted(),
+    SdkOptional<Map<String, Object?>> triggerRegistrationInput = const SdkOmitted(),
     SdkOptional<List<String>> events = const SdkOmitted(),
     SdkOptional<ConnectConnectorUpdateDataRequest> data = const SdkOmitted(),
     SdkOptional<String> icon = const SdkOmitted(),
@@ -447,17 +359,13 @@ Future<ConnectConnectorUpdateResult> updateConnector(ClientConfig config,
           '/v2/connect/connectors/${Uri.encodeComponent(connector.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'triggers': SdkUtils.unwrapOptional(triggers),
-            'triggerVerificationInput':
-                SdkUtils.unwrapOptional(triggerVerificationInput),
-            'triggerRegistrationInput':
-                SdkUtils.unwrapOptional(triggerRegistrationInput),
+            'triggerVerificationInput': SdkUtils.unwrapOptional(triggerVerificationInput),
+            'triggerRegistrationInput': SdkUtils.unwrapOptional(triggerRegistrationInput),
             'events': SdkUtils.unwrapOptional(events),
             'data': SdkUtils.unwrapOptional(data),
             'icon': SdkUtils.unwrapOptional(icon),
@@ -468,31 +376,12 @@ Future<ConnectConnectorUpdateResult> updateConnector(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateConnector',
-          fromJsonRaw: (value) => ConnectConnectorUpdateResult.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectConnectorUpdateResult.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '422': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '502': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '422': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '500': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '502': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Replaces the complete set of trigger destinations for a connector. Submit all destinations you want to retain in `destinations`; an empty array removes every destination, and the replacement can contain at most three entries.
 ///
@@ -511,48 +400,31 @@ Future<ConnectConnectorUpdateResult> updateConnector(ClientConfig config,
 ///   both are omitted, Vercel uses the team associated with the token or the
 ///   authenticated user's default team. The request returns 401 if no team can be
 ///   selected.
-Future<ConnectConnector> replaceConnectorTriggerDestinations(
-    ClientConfig config,
-    {required String connector,
-    required List<ConnectTriggerDestinationInput> destinations,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ConnectConnector>
+    replaceConnectorTriggerDestinations(ClientConfig config,
+        {required String connector,
+        required List<ConnectTriggerDestinationInput> destinations,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateItems('destinations', destinations, max: 3);
 
   return (await sdkRequest<ConnectConnector>('PATCH',
           '/v1/connect/connectors/${Uri.encodeComponent(connector.toString())}/trigger-destinations',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'destinations': destinations},
           decoder: SdkResponseDecoder.json,
           operationId: 'replaceConnectorTriggerDestinations',
-          fromJsonRaw: (value) =>
-              ConnectConnector.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectConnector.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '422': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '422': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Disconnects a managed connector from its provider-side manager. Use this operation when you want the connector to stop being managed by that provider.
 ///
@@ -567,16 +439,15 @@ Future<ConnectConnector> ejectManagedConnector(ClientConfig config,
           '/v1/connect/connectors/${Uri.encodeComponent(connector.toString())}/managed/eject',
           config: config,
           query: {
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'ejectManagedConnector',
-          fromJsonRaw: (value) =>
-              ConnectConnector.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectConnector.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// List the projects connected to a connector and the environments where each connection is available.
 ///
@@ -592,14 +463,14 @@ Future<ConnectConnector> ejectManagedConnector(ClientConfig config,
 ///   both are omitted, Vercel uses the team associated with the token or the
 ///   authenticated user's default team. The request returns 401 if no team can be
 ///   selected.
-Future<ConnectConnectorProjectConnectionList> listConnectorProjectConnections(
-    ClientConfig config,
-    {required String connector,
-    SdkOptional<int> limit = const SdkOmitted(),
-    SdkOptional<String> cursor = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ConnectConnectorProjectConnectionList>
+    listConnectorProjectConnections(ClientConfig config,
+        {required String connector,
+        SdkOptional<int> limit = const SdkOmitted(),
+        SdkOptional<String> cursor = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (limit is SdkPresent<int>) {
     validateRange('limit', limit.value, min: 1, max: 100);
   }
@@ -608,37 +479,19 @@ Future<ConnectConnectorProjectConnectionList> listConnectorProjectConnections(
           '/v2/connect/connectors/${Uri.encodeComponent(connector.toString())}/projects',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listConnectorProjectConnections',
-          fromJsonRaw: (value) =>
-              ConnectConnectorProjectConnectionList.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectConnectorProjectConnectionList.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Get the configuration that connects a connector to a project.
 ///
@@ -653,43 +506,28 @@ Future<ConnectConnectorProjectConnectionList> listConnectorProjectConnections(
 ///   both are omitted, Vercel uses the team associated with the token or the
 ///   authenticated user's default team. The request returns 401 if no team can be
 ///   selected.
-Future<ConnectProjectConnection> getConnectorProjectConnection(
-    ClientConfig config,
-    {required String connector,
-    required String projectId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ConnectProjectConnection>
+    getConnectorProjectConnection(ClientConfig config,
+        {required String connector,
+        required String projectId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<ConnectProjectConnection>('GET',
           '/v1/connect/connectors/${Uri.encodeComponent(connector.toString())}/projects/${Uri.encodeComponent(projectId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConnectorProjectConnection',
-          fromJsonRaw: (value) =>
-              ConnectProjectConnection.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectProjectConnection.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Connect a connector to a project, or replace the environments on an existing project connection.
 ///
@@ -707,47 +545,32 @@ Future<ConnectProjectConnection> getConnectorProjectConnection(
 ///   both are omitted, Vercel uses the team associated with the token or the
 ///   authenticated user's default team. The request returns 401 if no team can be
 ///   selected.
-Future<ConnectProjectConnection> upsertConnectorProjectConnection(
-    ClientConfig config,
-    {required String connector,
-    required String projectId,
-    required List<String> environments,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ConnectProjectConnection>
+    upsertConnectorProjectConnection(ClientConfig config,
+        {required String connector,
+        required String projectId,
+        required List<String> environments,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateItems('environments', environments, min: 1);
 
   return (await sdkRequest<ConnectProjectConnection>('POST',
           '/v1/connect/connectors/${Uri.encodeComponent(connector.toString())}/projects/${Uri.encodeComponent(projectId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'environments': environments},
           decoder: SdkResponseDecoder.json,
           operationId: 'upsertConnectorProjectConnection',
-          fromJsonRaw: (value) =>
-              ConnectProjectConnection.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectProjectConnection.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Deletes the connection between a connector and a project. Supply the connector identifier or URL-encoded team-scoped UID in `connector` and the Vercel project ID in `projectId`. Use `teamId` or `slug` to select a team when the token or authenticated user's default team should not be used.
 ///
@@ -774,30 +597,16 @@ Future<void> deleteConnectorProjectConnection(ClientConfig config,
           '/v1/connect/connectors/${Uri.encodeComponent(connector.toString())}/projects/${Uri.encodeComponent(projectId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteConnectorProjectConnection',
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '409': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '409': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// List the connectors connected to a project and the environments where each connection is available.
 ///
@@ -812,14 +621,14 @@ Future<void> deleteConnectorProjectConnection(ClientConfig config,
 ///   both are omitted, Vercel uses the team associated with the token or the
 ///   authenticated user's default team. The request returns 401 if no team can be
 ///   selected.
-Future<ConnectProjectConnectorConnectionList> listProjectConnectorConnections(
-    ClientConfig config,
-    {required String projectId,
-    SdkOptional<int> limit = const SdkOmitted(),
-    SdkOptional<String> cursor = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ConnectProjectConnectorConnectionList>
+    listProjectConnectorConnections(ClientConfig config,
+        {required String projectId,
+        SdkOptional<int> limit = const SdkOmitted(),
+        SdkOptional<String> cursor = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (limit is SdkPresent<int>) {
     validateRange('limit', limit.value, min: 1, max: 100);
   }
@@ -828,35 +637,19 @@ Future<ConnectProjectConnectorConnectionList> listProjectConnectorConnections(
           '/v2/connect/projects/${Uri.encodeComponent(projectId.toString())}/connectors',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listProjectConnectorConnections',
-          fromJsonRaw: (value) =>
-              ConnectProjectConnectorConnectionList.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ConnectProjectConnectorConnectionList.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>),
-            '410': (value) =>
-                ConnectError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '401': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '403': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '404': (value) => ConnectError.fromJson(value as Map<String, dynamic>), '410': (value) => ConnectError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves an access token for a connector, scoped to the authenticated user or another subject specified in the request body. Supply the connector identifier in the path and optionally provide token settings such as `scopes`, `resources`, or `audience`. Use the returned token and expiration details to access the connector.
 ///
@@ -871,8 +664,7 @@ Future<GetConnectorTokenResponse> getConnectorToken(ClientConfig config,
     SdkOptional<List<String>> audience = const SdkOmitted(),
     SdkOptional<List<String>> scopes = const SdkOmitted(),
     SdkOptional<List<String>> resources = const SdkOmitted(),
-    SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>
-        authorizationDetails = const SdkOmitted(),
+    SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>> authorizationDetails = const SdkOmitted(),
     SdkOptional<double> validityBufferMs = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetConnectorTokenResponse>('POST',
@@ -884,17 +676,16 @@ Future<GetConnectorTokenResponse> getConnectorToken(ClientConfig config,
             'audience': SdkUtils.unwrapOptional(audience),
             'scopes': SdkUtils.unwrapOptional(scopes),
             'resources': SdkUtils.unwrapOptional(resources),
-            'authorizationDetails':
-                SdkUtils.unwrapOptional(authorizationDetails),
+            'authorizationDetails': SdkUtils.unwrapOptional(authorizationDetails),
             'validityBufferMs': SdkUtils.unwrapOptional(validityBufferMs)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConnectorToken',
-          fromJsonRaw: (value) =>
-              GetConnectorTokenResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetConnectorTokenResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates an authorization request for a connector and returns the URL and verifier details needed to complete the authorization flow. Supply the connector identifier and, if needed, settings such as `subject`, `scopes`, `returnUrl`, or `deviceCode`. Use the returned `url` and `verifier` to continue the connector authorization flow.
 ///
@@ -905,16 +696,12 @@ Future<GetConnectorTokenResponse> getConnectorToken(ClientConfig config,
 Future<CreateConnectorAuthorizationRequestResponse>
     createConnectorAuthorizationRequest(ClientConfig config,
         {required String connector,
-        SdkOptional<CreateConnectorAuthorizationRequestRequestSubject> subject =
-            const SdkOmitted(),
+        SdkOptional<CreateConnectorAuthorizationRequestRequestSubject> subject = const SdkOmitted(),
         SdkOptional<String> installationId = const SdkOmitted(),
         SdkOptional<List<String>> audience = const SdkOmitted(),
         SdkOptional<List<String>> scopes = const SdkOmitted(),
         SdkOptional<List<String>> resources = const SdkOmitted(),
-        SdkOptional<
-                List<
-                    CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>
-            authorizationDetails = const SdkOmitted(),
+        SdkOptional<List<CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>> authorizationDetails = const SdkOmitted(),
         SdkOptional<double> validityBufferMs = const SdkOmitted(),
         SdkOptional<String> returnUrl = const SdkOmitted(),
         SdkOptional<String> webhook = const SdkOmitted(),
@@ -932,8 +719,7 @@ Future<CreateConnectorAuthorizationRequestResponse>
             'audience': SdkUtils.unwrapOptional(audience),
             'scopes': SdkUtils.unwrapOptional(scopes),
             'resources': SdkUtils.unwrapOptional(resources),
-            'authorizationDetails':
-                SdkUtils.unwrapOptional(authorizationDetails),
+            'authorizationDetails': SdkUtils.unwrapOptional(authorizationDetails),
             'validityBufferMs': SdkUtils.unwrapOptional(validityBufferMs),
             'returnUrl': SdkUtils.unwrapOptional(returnUrl),
             'webhook': SdkUtils.unwrapOptional(webhook),
@@ -944,9 +730,7 @@ Future<CreateConnectorAuthorizationRequestResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createConnectorAuthorizationRequest',
-          fromJsonRaw: (value) =>
-              CreateConnectorAuthorizationRequestResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateConnectorAuthorizationRequestResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

@@ -7,74 +7,52 @@ part of 'projects_upload.dart';
 class UploadProjectAvatarResponseExpirationVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Unix ms timestamp when the project is scheduled to expire.
   final double expiresAt;
 
-  const UploadProjectAvatarResponseExpirationVariant0(
-      {required this.expiresAt});
+  const UploadProjectAvatarResponseExpirationVariant0({required this.expiresAt});
 
-  UploadProjectAvatarResponseExpirationVariant0 Function({double expiresAt})
-      get copyWith => _copyWith;
+  UploadProjectAvatarResponseExpirationVariant0 Function({double expiresAt}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseExpirationVariant0 _copyWith(
-          {Object? expiresAt = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseExpirationVariant0(
-        expiresAt: identical(expiresAt, sdkOmittedValue)
-            ? this.expiresAt
-            : expiresAt as double,
-      );
+  UploadProjectAvatarResponseExpirationVariant0 _copyWith({Object? expiresAt = sdkOmittedValue}) => UploadProjectAvatarResponseExpirationVariant0(
+    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
+  );
 
-  factory UploadProjectAvatarResponseExpirationVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseExpirationVariant0(
-        expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-      );
+  factory UploadProjectAvatarResponseExpirationVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseExpirationVariant0(
+    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expiresAt': expiresAt,
-      };
+    'expiresAt': expiresAt,
+  };
 }
 
 class UploadProjectAvatarResponseExpirationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Unix ms timestamp when the project was locked.
   final double lockedAt;
-
   /// userId of the actor that triggered the lock (system or admin).
   final String lockedBy;
 
-  const UploadProjectAvatarResponseExpirationVariant1(
-      {required this.lockedAt, required this.lockedBy});
+  const UploadProjectAvatarResponseExpirationVariant1({required this.lockedAt, required this.lockedBy});
 
-  UploadProjectAvatarResponseExpirationVariant1 Function(
-      {double lockedAt, String lockedBy}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseExpirationVariant1 Function({double lockedAt, String lockedBy}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseExpirationVariant1 _copyWith(
-          {Object? lockedAt = sdkOmittedValue,
-          Object? lockedBy = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseExpirationVariant1(
-        lockedAt: identical(lockedAt, sdkOmittedValue)
-            ? this.lockedAt
-            : lockedAt as double,
-        lockedBy: identical(lockedBy, sdkOmittedValue)
-            ? this.lockedBy
-            : lockedBy as String,
-      );
+  UploadProjectAvatarResponseExpirationVariant1 _copyWith({Object? lockedAt = sdkOmittedValue, Object? lockedBy = sdkOmittedValue}) => UploadProjectAvatarResponseExpirationVariant1(
+    lockedAt: identical(lockedAt, sdkOmittedValue) ? this.lockedAt : lockedAt as double,
+    lockedBy: identical(lockedBy, sdkOmittedValue) ? this.lockedBy : lockedBy as String,
+  );
 
-  factory UploadProjectAvatarResponseExpirationVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseExpirationVariant1(
-        lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
-        lockedBy: (json['lockedBy'] as String?)!,
-      );
+  factory UploadProjectAvatarResponseExpirationVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseExpirationVariant1(
+    lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
+    lockedBy: (json['lockedBy'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'lockedAt': lockedAt,
-        'lockedBy': lockedBy,
-      };
+    'lockedAt': lockedAt,
+    'lockedBy': lockedBy,
+  };
 }
 
 sealed class UploadProjectAvatarResponseExpiration {
@@ -83,53 +61,24 @@ sealed class UploadProjectAvatarResponseExpiration {
   const UploadProjectAvatarResponseExpiration();
   factory UploadProjectAvatarResponseExpiration.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UploadProjectAvatarResponseExpirationVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UploadProjectAvatarResponseExpirationVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UploadProjectAvatarResponseExpirationVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0(value); } } catch (_) {}
+      try { final value = UploadProjectAvatarResponseExpirationVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1(value); } } catch (_) {}
     }
-    try {
-      return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0(
-          UploadProjectAvatarResponseExpirationVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1(
-          UploadProjectAvatarResponseExpirationVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UploadProjectAvatarResponseExpiration");
+    try { return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0(UploadProjectAvatarResponseExpirationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1(UploadProjectAvatarResponseExpirationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UploadProjectAvatarResponseExpiration");
   }
   Object? toJson();
 }
 
-final class UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0
-    extends UploadProjectAvatarResponseExpiration {
+final class UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0 extends UploadProjectAvatarResponseExpiration {
   final UploadProjectAvatarResponseExpirationVariant0 value;
-  const UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1
-    extends UploadProjectAvatarResponseExpiration {
+final class UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1 extends UploadProjectAvatarResponseExpiration {
   final UploadProjectAvatarResponseExpirationVariant1 value;
-  const UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseExpirationUploadProjectAvatarResponseExpirationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

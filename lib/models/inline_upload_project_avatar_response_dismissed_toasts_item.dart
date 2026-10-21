@@ -10,111 +10,61 @@ class UploadProjectAvatarResponseDismissedToastsItem {
   final UploadProjectAvatarResponseDismissedToastsItemAction action;
   final double dismissedAt;
   final String key;
-
   /// Typed representation of the `UploadProjectAvatarResponseDismissedToastsItemValue` API schema.
   final UploadProjectAvatarResponseDismissedToastsItemValue? value;
 
-  const UploadProjectAvatarResponseDismissedToastsItem(
-      {required this.action,
-      required this.dismissedAt,
-      required this.key,
-      required this.value});
+  const UploadProjectAvatarResponseDismissedToastsItem({required this.action, required this.dismissedAt, required this.key, required this.value});
 
-  UploadProjectAvatarResponseDismissedToastsItem Function(
-          {UploadProjectAvatarResponseDismissedToastsItemAction action,
-          double dismissedAt,
-          String key,
-          UploadProjectAvatarResponseDismissedToastsItemValue? value})
-      get copyWith => _copyWith;
+  UploadProjectAvatarResponseDismissedToastsItem Function({UploadProjectAvatarResponseDismissedToastsItemAction action, double dismissedAt, String key, UploadProjectAvatarResponseDismissedToastsItemValue? value}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseDismissedToastsItem _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? dismissedAt = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseDismissedToastsItem(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as UploadProjectAvatarResponseDismissedToastsItemAction,
-        dismissedAt: identical(dismissedAt, sdkOmittedValue)
-            ? this.dismissedAt
-            : dismissedAt as double,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as UploadProjectAvatarResponseDismissedToastsItemValue?,
-      );
+  UploadProjectAvatarResponseDismissedToastsItem _copyWith({Object? action = sdkOmittedValue, Object? dismissedAt = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => UploadProjectAvatarResponseDismissedToastsItem(
+    action: identical(action, sdkOmittedValue) ? this.action : action as UploadProjectAvatarResponseDismissedToastsItemAction,
+    dismissedAt: identical(dismissedAt, sdkOmittedValue) ? this.dismissedAt : dismissedAt as double,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as UploadProjectAvatarResponseDismissedToastsItemValue?,
+  );
 
-  factory UploadProjectAvatarResponseDismissedToastsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseDismissedToastsItem(
-        action: (json['action'] != null
-            ? UploadProjectAvatarResponseDismissedToastsItemAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
-        key: (json['key'] as String?)!,
-        value: json.containsKey('value')
-            ? json['value'] != null
-                ? UploadProjectAvatarResponseDismissedToastsItemValue.fromJson(
-                    json['value'])
-                : null
-            : throw ArgumentError.value(
-                null, 'value', 'Required property is missing'),
-      );
+  factory UploadProjectAvatarResponseDismissedToastsItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseDismissedToastsItem(
+    action: (json['action'] != null ? UploadProjectAvatarResponseDismissedToastsItemAction.fromJson(json['action'] as String) : null)!,
+    dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
+    key: (json['key'] as String?)!,
+    value: json.containsKey('value') ? json['value'] != null ? UploadProjectAvatarResponseDismissedToastsItemValue.fromJson(json['value']) : null : throw ArgumentError.value(null, 'value', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'dismissedAt': dismissedAt,
-        'key': key,
-        'value': value?.toJson(),
-      };
+    'action': action.toJson(),
+    'dismissedAt': dismissedAt,
+    'key': key,
+    'value': value?.toJson(),
+  };
 }
 
 /// Similar to `contentHints`, but should not be exposed to the user.
 class UploadProjectAvatarResponseEnvItemInternalContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
   final String encryptedValue;
   final UploadProjectAvatarResponseEnvItemInternalContentHintType type_;
 
-  const UploadProjectAvatarResponseEnvItemInternalContentHint(
-      {required this.encryptedValue, required this.type_});
+  const UploadProjectAvatarResponseEnvItemInternalContentHint({required this.encryptedValue, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemInternalContentHint Function(
-          {String encryptedValue,
-          UploadProjectAvatarResponseEnvItemInternalContentHintType type_})
-      get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemInternalContentHint Function({String encryptedValue, UploadProjectAvatarResponseEnvItemInternalContentHintType type_}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemInternalContentHint _copyWith(
-          {Object? encryptedValue = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseEnvItemInternalContentHint(
-        encryptedValue: identical(encryptedValue, sdkOmittedValue)
-            ? this.encryptedValue
-            : encryptedValue as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as UploadProjectAvatarResponseEnvItemInternalContentHintType,
-      );
+  UploadProjectAvatarResponseEnvItemInternalContentHint _copyWith({Object? encryptedValue = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemInternalContentHint(
+    encryptedValue: identical(encryptedValue, sdkOmittedValue) ? this.encryptedValue : encryptedValue as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemInternalContentHintType,
+  );
 
-  factory UploadProjectAvatarResponseEnvItemInternalContentHint.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseEnvItemInternalContentHint(
-        encryptedValue: (json['encryptedValue'] as String?)!,
-        type_: (json['type'] != null
-            ? UploadProjectAvatarResponseEnvItemInternalContentHintType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UploadProjectAvatarResponseEnvItemInternalContentHint.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseEnvItemInternalContentHint(
+    encryptedValue: (json['encryptedValue'] as String?)!,
+    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemInternalContentHintType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'encryptedValue': encryptedValue,
-        'type': type_.toJson(),
-      };
+    'encryptedValue': encryptedValue,
+    'type': type_.toJson(),
+  };
 }
 
 class UploadProjectAvatarResponseEnvItem {
@@ -122,7 +72,6 @@ class UploadProjectAvatarResponseEnvItem {
   static const String constructionSurface = 'named';
   final SdkOptional<String> comment;
   final SdkOptional<String?> configurationId;
-
   /// Typed representation of the `UploadProjectAvatarResponseEnvItemContentHint` API schema.
   final SdkOptional<UploadProjectAvatarResponseEnvItemContentHint?> contentHint;
   final SdkOptional<double> createdAt;
@@ -133,15 +82,11 @@ class UploadProjectAvatarResponseEnvItem {
   final SdkOptional<String?> edgeConfigTokenId;
   final SdkOptional<String> gitBranch;
   final SdkOptional<String> id;
-
   /// Similar to `contentHints`, but should not be exposed to the user.
-  final SdkOptional<UploadProjectAvatarResponseEnvItemInternalContentHint?>
-      internalContentHint;
+  final SdkOptional<UploadProjectAvatarResponseEnvItemInternalContentHint?> internalContentHint;
   final String key;
-
   /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
   final SdkOptional<String> legacyValue;
-
   /// This is used to identify variables that have been migrated from type secret to sensitive.
   final SdkOptional<String> sunsetSecretId;
   final SdkOptional<dynamic> target;
@@ -149,460 +94,196 @@ class UploadProjectAvatarResponseEnvItem {
   final SdkOptional<double> updatedAt;
   final SdkOptional<String?> updatedBy;
   final String value;
-
   /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
   final SdkOptional<UploadProjectAvatarResponseEnvItemVisibility> visibility;
   final SdkOptional<String> vsmValue;
 
-  const UploadProjectAvatarResponseEnvItem(
-      {this.comment = const SdkOmitted(),
-      this.configurationId = const SdkOmitted(),
-      this.contentHint = const SdkOmitted(),
-      this.createdAt = const SdkOmitted(),
-      this.createdBy = const SdkOmitted(),
-      this.customEnvironmentIds = const SdkOmitted(),
-      this.decrypted = const SdkOmitted(),
-      this.edgeConfigId = const SdkOmitted(),
-      this.edgeConfigTokenId = const SdkOmitted(),
-      this.gitBranch = const SdkOmitted(),
-      this.id = const SdkOmitted(),
-      this.internalContentHint = const SdkOmitted(),
-      required this.key,
-      this.legacyValue = const SdkOmitted(),
-      this.sunsetSecretId = const SdkOmitted(),
-      this.target = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted(),
-      this.updatedBy = const SdkOmitted(),
-      required this.value,
-      this.visibility = const SdkOmitted(),
-      this.vsmValue = const SdkOmitted()});
+  const UploadProjectAvatarResponseEnvItem({this.comment = const SdkOmitted(), this.configurationId = const SdkOmitted(), this.contentHint = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.createdBy = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted(), this.decrypted = const SdkOmitted(), this.edgeConfigId = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.id = const SdkOmitted(), this.internalContentHint = const SdkOmitted(), required this.key, this.legacyValue = const SdkOmitted(), this.sunsetSecretId = const SdkOmitted(), this.target = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted(), required this.value, this.visibility = const SdkOmitted(), this.vsmValue = const SdkOmitted()});
 
-  UploadProjectAvatarResponseEnvItem Function(
-      {SdkOptional<String> comment,
-      SdkOptional<String?> configurationId,
-      SdkOptional<UploadProjectAvatarResponseEnvItemContentHint?> contentHint,
-      SdkOptional<double> createdAt,
-      SdkOptional<String?> createdBy,
-      SdkOptional<List<String>> customEnvironmentIds,
-      SdkOptional<UploadProjectAvatarResponseEnvItemDecrypted> decrypted,
-      SdkOptional<String?> edgeConfigId,
-      SdkOptional<String?> edgeConfigTokenId,
-      SdkOptional<String> gitBranch,
-      SdkOptional<String> id,
-      SdkOptional<UploadProjectAvatarResponseEnvItemInternalContentHint?>
-          internalContentHint,
-      String key,
-      SdkOptional<String> legacyValue,
-      SdkOptional<String> sunsetSecretId,
-      SdkOptional<dynamic> target,
-      UploadProjectAvatarResponseEnvItemType type_,
-      SdkOptional<double> updatedAt,
-      SdkOptional<String?> updatedBy,
-      String value,
-      SdkOptional<UploadProjectAvatarResponseEnvItemVisibility> visibility,
-      SdkOptional<String> vsmValue}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItem Function({SdkOptional<String> comment, SdkOptional<String?> configurationId, SdkOptional<UploadProjectAvatarResponseEnvItemContentHint?> contentHint, SdkOptional<double> createdAt, SdkOptional<String?> createdBy, SdkOptional<List<String>> customEnvironmentIds, SdkOptional<UploadProjectAvatarResponseEnvItemDecrypted> decrypted, SdkOptional<String?> edgeConfigId, SdkOptional<String?> edgeConfigTokenId, SdkOptional<String> gitBranch, SdkOptional<String> id, SdkOptional<UploadProjectAvatarResponseEnvItemInternalContentHint?> internalContentHint, String key, SdkOptional<String> legacyValue, SdkOptional<String> sunsetSecretId, SdkOptional<dynamic> target, UploadProjectAvatarResponseEnvItemType type_, SdkOptional<double> updatedAt, SdkOptional<String?> updatedBy, String value, SdkOptional<UploadProjectAvatarResponseEnvItemVisibility> visibility, SdkOptional<String> vsmValue}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItem _copyWith(
-          {Object? comment = sdkOmittedValue,
-          Object? configurationId = sdkOmittedValue,
-          Object? contentHint = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? customEnvironmentIds = sdkOmittedValue,
-          Object? decrypted = sdkOmittedValue,
-          Object? edgeConfigId = sdkOmittedValue,
-          Object? edgeConfigTokenId = sdkOmittedValue,
-          Object? gitBranch = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? internalContentHint = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? legacyValue = sdkOmittedValue,
-          Object? sunsetSecretId = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? updatedBy = sdkOmittedValue,
-          Object? value = sdkOmittedValue,
-          Object? visibility = sdkOmittedValue,
-          Object? vsmValue = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseEnvItem(
-        comment: identical(comment, sdkOmittedValue)
-            ? this.comment
-            : comment as SdkOptional<String>,
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as SdkOptional<String?>,
-        contentHint: identical(contentHint, sdkOmittedValue)
-            ? this.contentHint
-            : contentHint
-                as SdkOptional<UploadProjectAvatarResponseEnvItemContentHint?>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String?>,
-        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
-            ? this.customEnvironmentIds
-            : customEnvironmentIds as SdkOptional<List<String>>,
-        decrypted: identical(decrypted, sdkOmittedValue)
-            ? this.decrypted
-            : decrypted
-                as SdkOptional<UploadProjectAvatarResponseEnvItemDecrypted>,
-        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-            ? this.edgeConfigId
-            : edgeConfigId as SdkOptional<String?>,
-        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
-            ? this.edgeConfigTokenId
-            : edgeConfigTokenId as SdkOptional<String?>,
-        gitBranch: identical(gitBranch, sdkOmittedValue)
-            ? this.gitBranch
-            : gitBranch as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue)
-            ? this.id
-            : id as SdkOptional<String>,
-        internalContentHint: identical(internalContentHint, sdkOmittedValue)
-            ? this.internalContentHint
-            : internalContentHint as SdkOptional<
-                UploadProjectAvatarResponseEnvItemInternalContentHint?>,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        legacyValue: identical(legacyValue, sdkOmittedValue)
-            ? this.legacyValue
-            : legacyValue as SdkOptional<String>,
-        sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue)
-            ? this.sunsetSecretId
-            : sunsetSecretId as SdkOptional<String>,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UploadProjectAvatarResponseEnvItemType,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        updatedBy: identical(updatedBy, sdkOmittedValue)
-            ? this.updatedBy
-            : updatedBy as SdkOptional<String?>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        visibility: identical(visibility, sdkOmittedValue)
-            ? this.visibility
-            : visibility
-                as SdkOptional<UploadProjectAvatarResponseEnvItemVisibility>,
-        vsmValue: identical(vsmValue, sdkOmittedValue)
-            ? this.vsmValue
-            : vsmValue as SdkOptional<String>,
-      );
+  UploadProjectAvatarResponseEnvItem _copyWith({Object? comment = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? contentHint = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue, Object? decrypted = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? internalContentHint = sdkOmittedValue, Object? key = sdkOmittedValue, Object? legacyValue = sdkOmittedValue, Object? sunsetSecretId = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? value = sdkOmittedValue, Object? visibility = sdkOmittedValue, Object? vsmValue = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItem(
+    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String?>,
+    contentHint: identical(contentHint, sdkOmittedValue) ? this.contentHint : contentHint as SdkOptional<UploadProjectAvatarResponseEnvItemContentHint?>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String?>,
+    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
+    decrypted: identical(decrypted, sdkOmittedValue) ? this.decrypted : decrypted as SdkOptional<UploadProjectAvatarResponseEnvItemDecrypted>,
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String?>,
+    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String?>,
+    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
+    internalContentHint: identical(internalContentHint, sdkOmittedValue) ? this.internalContentHint : internalContentHint as SdkOptional<UploadProjectAvatarResponseEnvItemInternalContentHint?>,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    legacyValue: identical(legacyValue, sdkOmittedValue) ? this.legacyValue : legacyValue as SdkOptional<String>,
+    sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue) ? this.sunsetSecretId : sunsetSecretId as SdkOptional<String>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemType,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String?>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    visibility: identical(visibility, sdkOmittedValue) ? this.visibility : visibility as SdkOptional<UploadProjectAvatarResponseEnvItemVisibility>,
+    vsmValue: identical(vsmValue, sdkOmittedValue) ? this.vsmValue : vsmValue as SdkOptional<String>,
+  );
 
-  factory UploadProjectAvatarResponseEnvItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseEnvItem(
-        comment: json['comment'] != null
-            ? SdkPresent((json['comment'] as String?)!)
-            : const SdkOmitted(),
-        configurationId: json.containsKey('configurationId')
-            ? SdkPresent(json['configurationId'] as String?)
-            : const SdkOmitted(),
-        contentHint: json.containsKey('contentHint')
-            ? SdkPresent(json['contentHint'] != null
-                ? UploadProjectAvatarResponseEnvItemContentHint.fromJson(
-                    json['contentHint'])
-                : null)
-            : const SdkOmitted(),
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        createdBy: json.containsKey('createdBy')
-            ? SdkPresent(json['createdBy'] as String?)
-            : const SdkOmitted(),
-        customEnvironmentIds: json['customEnvironmentIds'] != null
-            ? SdkPresent(((json['customEnvironmentIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        decrypted: json['decrypted'] != null
-            ? SdkPresent((json['decrypted'] != null
-                ? UploadProjectAvatarResponseEnvItemDecrypted.fromJson(
-                    json['decrypted'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        edgeConfigId: json.containsKey('edgeConfigId')
-            ? SdkPresent(json['edgeConfigId'] as String?)
-            : const SdkOmitted(),
-        edgeConfigTokenId: json.containsKey('edgeConfigTokenId')
-            ? SdkPresent(json['edgeConfigTokenId'] as String?)
-            : const SdkOmitted(),
-        gitBranch: json['gitBranch'] != null
-            ? SdkPresent((json['gitBranch'] as String?)!)
-            : const SdkOmitted(),
-        id: json['id'] != null
-            ? SdkPresent((json['id'] as String?)!)
-            : const SdkOmitted(),
-        internalContentHint: json.containsKey('internalContentHint')
-            ? SdkPresent(json['internalContentHint'] != null
-                ? UploadProjectAvatarResponseEnvItemInternalContentHint
-                    .fromJson(
-                        json['internalContentHint'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        key: (json['key'] as String?)!,
-        legacyValue: json['legacyValue'] != null
-            ? SdkPresent((json['legacyValue'] as String?)!)
-            : const SdkOmitted(),
-        sunsetSecretId: json['sunsetSecretId'] != null
-            ? SdkPresent((json['sunsetSecretId'] as String?)!)
-            : const SdkOmitted(),
-        target: json['target'] != null
-            ? SdkPresent((json['target'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UploadProjectAvatarResponseEnvItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        updatedBy: json.containsKey('updatedBy')
-            ? SdkPresent(json['updatedBy'] as String?)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-        visibility: json['visibility'] != null
-            ? SdkPresent((json['visibility'] != null
-                ? UploadProjectAvatarResponseEnvItemVisibility.fromJson(
-                    json['visibility'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        vsmValue: json['vsmValue'] != null
-            ? SdkPresent((json['vsmValue'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseEnvItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseEnvItem(
+    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
+    configurationId: json.containsKey('configurationId') ? SdkPresent(json['configurationId'] as String?) : const SdkOmitted(),
+    contentHint: json.containsKey('contentHint') ? SdkPresent(json['contentHint'] != null ? UploadProjectAvatarResponseEnvItemContentHint.fromJson(json['contentHint']) : null) : const SdkOmitted(),
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    createdBy: json.containsKey('createdBy') ? SdkPresent(json['createdBy'] as String?) : const SdkOmitted(),
+    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    decrypted: json['decrypted'] != null ? SdkPresent((json['decrypted'] != null ? UploadProjectAvatarResponseEnvItemDecrypted.fromJson(json['decrypted'] as bool) : null)!) : const SdkOmitted(),
+    edgeConfigId: json.containsKey('edgeConfigId') ? SdkPresent(json['edgeConfigId'] as String?) : const SdkOmitted(),
+    edgeConfigTokenId: json.containsKey('edgeConfigTokenId') ? SdkPresent(json['edgeConfigTokenId'] as String?) : const SdkOmitted(),
+    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
+    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
+    internalContentHint: json.containsKey('internalContentHint') ? SdkPresent(json['internalContentHint'] != null ? UploadProjectAvatarResponseEnvItemInternalContentHint.fromJson(json['internalContentHint'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    key: (json['key'] as String?)!,
+    legacyValue: json['legacyValue'] != null ? SdkPresent((json['legacyValue'] as String?)!) : const SdkOmitted(),
+    sunsetSecretId: json['sunsetSecretId'] != null ? SdkPresent((json['sunsetSecretId'] as String?)!) : const SdkOmitted(),
+    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemType.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    updatedBy: json.containsKey('updatedBy') ? SdkPresent(json['updatedBy'] as String?) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+    visibility: json['visibility'] != null ? SdkPresent((json['visibility'] != null ? UploadProjectAvatarResponseEnvItemVisibility.fromJson(json['visibility'] as String) : null)!) : const SdkOmitted(),
+    vsmValue: json['vsmValue'] != null ? SdkPresent((json['vsmValue'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (comment) {
-          SdkPresent<String>(value: final value) => {
-              'comment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (configurationId) {
-          SdkPresent<String?>(value: final value) => {
-              'configurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (contentHint) {
-          SdkPresent<UploadProjectAvatarResponseEnvItemContentHint?>(
-            value: final value
-          ) =>
-            {
-              'contentHint': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdBy) {
-          SdkPresent<String?>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'customEnvironmentIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (decrypted) {
-          SdkPresent<UploadProjectAvatarResponseEnvItemDecrypted>(
-            value: final value
-          ) =>
-            {
-              'decrypted': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigTokenId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigTokenId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitBranch) {
-          SdkPresent<String>(value: final value) => {
-              'gitBranch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (id) {
-          SdkPresent<String>(value: final value) => {
-              'id': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (internalContentHint) {
-          SdkPresent<UploadProjectAvatarResponseEnvItemInternalContentHint?>(
-            value: final value
-          ) =>
-            {
-              'internalContentHint': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'key': key,
-        ...switch (legacyValue) {
-          SdkPresent<String>(value: final value) => {
-              'legacyValue': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sunsetSecretId) {
-          SdkPresent<String>(value: final value) => {
-              'sunsetSecretId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (target) {
-          SdkPresent<dynamic>(value: final value) => {
-              'target': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (updatedBy) {
-          SdkPresent<String?>(value: final value) => {
-              'updatedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-        ...switch (visibility) {
-          SdkPresent<UploadProjectAvatarResponseEnvItemVisibility>(
-            value: final value
-          ) =>
-            {
-              'visibility': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (vsmValue) {
-          SdkPresent<String>(value: final value) => {
-              'vsmValue': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (comment) {
+      SdkPresent<String>(value: final value) => {'comment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (configurationId) {
+      SdkPresent<String?>(value: final value) => {'configurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (contentHint) {
+      SdkPresent<UploadProjectAvatarResponseEnvItemContentHint?>(value: final value) => {'contentHint': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdBy) {
+      SdkPresent<String?>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentIds) {
+      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (decrypted) {
+      SdkPresent<UploadProjectAvatarResponseEnvItemDecrypted>(value: final value) => {'decrypted': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigTokenId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigTokenId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitBranch) {
+      SdkPresent<String>(value: final value) => {'gitBranch': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (id) {
+      SdkPresent<String>(value: final value) => {'id': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (internalContentHint) {
+      SdkPresent<UploadProjectAvatarResponseEnvItemInternalContentHint?>(value: final value) => {'internalContentHint': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'key': key,
+    ...switch (legacyValue) {
+      SdkPresent<String>(value: final value) => {'legacyValue': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sunsetSecretId) {
+      SdkPresent<String>(value: final value) => {'sunsetSecretId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (target) {
+      SdkPresent<dynamic>(value: final value) => {'target': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (updatedBy) {
+      SdkPresent<String?>(value: final value) => {'updatedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+    ...switch (visibility) {
+      SdkPresent<UploadProjectAvatarResponseEnvItemVisibility>(value: final value) => {'visibility': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (vsmValue) {
+      SdkPresent<String>(value: final value) => {'vsmValue': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UploadProjectAvatarResponseFeatures {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseFeaturesWebAnalytics>
-      webAnalytics;
+  final SdkOptional<UploadProjectAvatarResponseFeaturesWebAnalytics> webAnalytics;
 
-  const UploadProjectAvatarResponseFeatures(
-      {this.webAnalytics = const SdkOmitted()});
+  const UploadProjectAvatarResponseFeatures({this.webAnalytics = const SdkOmitted()});
 
-  UploadProjectAvatarResponseFeatures Function(
-      {SdkOptional<UploadProjectAvatarResponseFeaturesWebAnalytics>
-          webAnalytics}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseFeatures Function({SdkOptional<UploadProjectAvatarResponseFeaturesWebAnalytics> webAnalytics}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseFeatures _copyWith(
-          {Object? webAnalytics = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseFeatures(
-        webAnalytics: identical(webAnalytics, sdkOmittedValue)
-            ? this.webAnalytics
-            : webAnalytics
-                as SdkOptional<UploadProjectAvatarResponseFeaturesWebAnalytics>,
-      );
+  UploadProjectAvatarResponseFeatures _copyWith({Object? webAnalytics = sdkOmittedValue}) => UploadProjectAvatarResponseFeatures(
+    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<UploadProjectAvatarResponseFeaturesWebAnalytics>,
+  );
 
-  factory UploadProjectAvatarResponseFeatures.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseFeatures(
-        webAnalytics: json['webAnalytics'] != null
-            ? SdkPresent((json['webAnalytics'] != null
-                ? UploadProjectAvatarResponseFeaturesWebAnalytics.fromJson(
-                    json['webAnalytics'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseFeatures.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseFeatures(
+    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? UploadProjectAvatarResponseFeaturesWebAnalytics.fromJson(json['webAnalytics'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (webAnalytics) {
-          SdkPresent<UploadProjectAvatarResponseFeaturesWebAnalytics>(
-            value: final value
-          ) =>
-            {
-              'webAnalytics': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (webAnalytics) {
+      SdkPresent<UploadProjectAvatarResponseFeaturesWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UploadProjectAvatarResponseGitComments {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether the Vercel bot should comment on commits
   final UploadProjectAvatarResponseGitCommentsOnCommit onCommit;
-
   /// Whether the Vercel bot should comment on PRs
   final UploadProjectAvatarResponseGitCommentsOnPullRequest onPullRequest;
 
-  const UploadProjectAvatarResponseGitComments(
-      {required this.onCommit, required this.onPullRequest});
+  const UploadProjectAvatarResponseGitComments({required this.onCommit, required this.onPullRequest});
 
-  UploadProjectAvatarResponseGitComments Function(
-          {UploadProjectAvatarResponseGitCommentsOnCommit onCommit,
-          UploadProjectAvatarResponseGitCommentsOnPullRequest onPullRequest})
-      get copyWith => _copyWith;
+  UploadProjectAvatarResponseGitComments Function({UploadProjectAvatarResponseGitCommentsOnCommit onCommit, UploadProjectAvatarResponseGitCommentsOnPullRequest onPullRequest}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseGitComments _copyWith(
-          {Object? onCommit = sdkOmittedValue,
-          Object? onPullRequest = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseGitComments(
-        onCommit: identical(onCommit, sdkOmittedValue)
-            ? this.onCommit
-            : onCommit as UploadProjectAvatarResponseGitCommentsOnCommit,
-        onPullRequest: identical(onPullRequest, sdkOmittedValue)
-            ? this.onPullRequest
-            : onPullRequest
-                as UploadProjectAvatarResponseGitCommentsOnPullRequest,
-      );
+  UploadProjectAvatarResponseGitComments _copyWith({Object? onCommit = sdkOmittedValue, Object? onPullRequest = sdkOmittedValue}) => UploadProjectAvatarResponseGitComments(
+    onCommit: identical(onCommit, sdkOmittedValue) ? this.onCommit : onCommit as UploadProjectAvatarResponseGitCommentsOnCommit,
+    onPullRequest: identical(onPullRequest, sdkOmittedValue) ? this.onPullRequest : onPullRequest as UploadProjectAvatarResponseGitCommentsOnPullRequest,
+  );
 
-  factory UploadProjectAvatarResponseGitComments.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseGitComments(
-        onCommit: (json['onCommit'] != null
-            ? UploadProjectAvatarResponseGitCommentsOnCommit.fromJson(
-                json['onCommit'] as bool)
-            : null)!,
-        onPullRequest: (json['onPullRequest'] != null
-            ? UploadProjectAvatarResponseGitCommentsOnPullRequest.fromJson(
-                json['onPullRequest'] as bool)
-            : null)!,
-      );
+  factory UploadProjectAvatarResponseGitComments.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseGitComments(
+    onCommit: (json['onCommit'] != null ? UploadProjectAvatarResponseGitCommentsOnCommit.fromJson(json['onCommit'] as bool) : null)!,
+    onPullRequest: (json['onPullRequest'] != null ? UploadProjectAvatarResponseGitCommentsOnPullRequest.fromJson(json['onPullRequest'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'onCommit': onCommit.toJson(),
-        'onPullRequest': onPullRequest.toJson(),
-      };
+    'onCommit': onCommit.toJson(),
+    'onPullRequest': onPullRequest.toJson(),
+  };
 }

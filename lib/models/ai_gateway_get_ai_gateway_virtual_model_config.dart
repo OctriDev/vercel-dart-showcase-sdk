@@ -10,50 +10,24 @@ sealed class GetAiGatewayVirtualModelConfigResponse {
   const GetAiGatewayVirtualModelConfigResponse();
   factory GetAiGatewayVirtualModelConfigResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = AiGatewayVirtualModelConfig.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = AiGatewayVirtualModelConfigList.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList(
-              value);
-        }
-      } catch (_) {}
+      try { final value = AiGatewayVirtualModelConfig.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig(value); } } catch (_) {}
+      try { final value = AiGatewayVirtualModelConfigList.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList(value); } } catch (_) {}
     }
-    try {
-      return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig(
-          AiGatewayVirtualModelConfig.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList(
-          AiGatewayVirtualModelConfigList.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetAiGatewayVirtualModelConfigResponse");
+    try { return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig(AiGatewayVirtualModelConfig.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList(AiGatewayVirtualModelConfigList.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetAiGatewayVirtualModelConfigResponse");
   }
   Object? toJson();
 }
 
-final class GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig
-    extends GetAiGatewayVirtualModelConfigResponse {
+final class GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig extends GetAiGatewayVirtualModelConfigResponse {
   final AiGatewayVirtualModelConfig value;
-  const GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfig(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList
-    extends GetAiGatewayVirtualModelConfigResponse {
+final class GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList extends GetAiGatewayVirtualModelConfigResponse {
   final AiGatewayVirtualModelConfigList value;
-  const GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetAiGatewayVirtualModelConfigResponseAiGatewayVirtualModelConfigList(this.value);
+  @override Object? toJson() => value.toJson();
 }

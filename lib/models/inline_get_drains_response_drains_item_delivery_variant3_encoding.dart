@@ -5,154 +5,107 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetDrainsResponseDrainsItemDeliveryVariant3Encoding {
+
   final String value;
 
   const GetDrainsResponseDrainsItemDeliveryVariant3Encoding._(this.value);
 
-  factory GetDrainsResponseDrainsItemDeliveryVariant3Encoding.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDeliveryVariant3Encoding._(value);
+  factory GetDrainsResponseDrainsItemDeliveryVariant3Encoding.fromJson(String value) => GetDrainsResponseDrainsItemDeliveryVariant3Encoding._(value);
 
-  static const json =
-      GetDrainsResponseDrainsItemDeliveryVariant3Encoding._('json');
-  static const ndjson =
-      GetDrainsResponseDrainsItemDeliveryVariant3Encoding._('ndjson');
+  static const json = GetDrainsResponseDrainsItemDeliveryVariant3Encoding._('json');
+  static const ndjson = GetDrainsResponseDrainsItemDeliveryVariant3Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDeliveryVariant3Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDeliveryVariant3Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainsResponseDrainsItemDeliveryVariant3FileStructure {
+
   final String value;
 
   const GetDrainsResponseDrainsItemDeliveryVariant3FileStructure._(this.value);
 
-  factory GetDrainsResponseDrainsItemDeliveryVariant3FileStructure.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDeliveryVariant3FileStructure._(value);
+  factory GetDrainsResponseDrainsItemDeliveryVariant3FileStructure.fromJson(String value) => GetDrainsResponseDrainsItemDeliveryVariant3FileStructure._(value);
 
-  static const hive =
-      GetDrainsResponseDrainsItemDeliveryVariant3FileStructure._('hive');
+  static const hive = GetDrainsResponseDrainsItemDeliveryVariant3FileStructure._('hive');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDeliveryVariant3FileStructure &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDeliveryVariant3FileStructure && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl {
+
   final String value;
 
   const GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._(this.value);
 
-  factory GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._(value);
+  factory GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl.fromJson(String value) => GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._(value);
 
-  static const authenticatedRead =
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._(
-          'authenticated-read');
-  static const awsExecRead =
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('aws-exec-read');
-  static const bucketOwnerFullControl =
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._(
-          'bucket-owner-full-control');
-  static const bucketOwnerRead =
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._(
-          'bucket-owner-read');
-  static const private =
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('private');
-  static const publicRead =
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('public-read');
-  static const publicReadWrite =
-      GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._(
-          'public-read-write');
+  static const authenticatedRead = GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('authenticated-read');
+  static const awsExecRead = GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('aws-exec-read');
+  static const bucketOwnerFullControl = GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('bucket-owner-full-control');
+  static const bucketOwnerRead = GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('bucket-owner-read');
+  static const private = GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('private');
+  static const publicRead = GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('public-read');
+  static const publicReadWrite = GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl._('public-read-write');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDeliveryVariant3ObjectAcl && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption {
+
   final String value;
 
-  const GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._(
-      this.value);
+  const GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._(this.value);
 
-  factory GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._(value);
+  factory GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption.fromJson(String value) => GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._(value);
 
-  static const aes256 =
-      GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._(
-          'AES256');
-  static const awsKms =
-      GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._(
-          'aws:kms');
-  static const awsKmsDsse =
-      GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._(
-          'aws:kms:dsse');
+  static const aes256 = GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._('AES256');
+  static const awsKms = GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._('aws:kms');
+  static const awsKmsDsse = GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption._('aws:kms:dsse');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDeliveryVariant3ServerSideEncryption && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetDrainsResponseDrainsItemDeliveryVariant3Type {
   s3;
 
-  static GetDrainsResponseDrainsItemDeliveryVariant3Type fromJson(
-      String value) {
+  static GetDrainsResponseDrainsItemDeliveryVariant3Type fromJson(String value) {
     switch (value) {
-      case 's3':
-        return GetDrainsResponseDrainsItemDeliveryVariant3Type.s3;
-      default:
-        throw ArgumentError(
-            'Unknown GetDrainsResponseDrainsItemDeliveryVariant3Type: $value');
+      case 's3': return GetDrainsResponseDrainsItemDeliveryVariant3Type.s3;
+      default: throw ArgumentError('Unknown GetDrainsResponseDrainsItemDeliveryVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDrainsResponseDrainsItemDeliveryVariant3Type.s3:
-        return 's3';
+      case GetDrainsResponseDrainsItemDeliveryVariant3Type.s3: return 's3';
     }
   }
 
@@ -161,50 +114,38 @@ enum GetDrainsResponseDrainsItemDeliveryVariant3Type {
 }
 
 final class GetDrainsResponseDrainsItemDeliveryVariant4Target {
+
   final String value;
 
   const GetDrainsResponseDrainsItemDeliveryVariant4Target._(this.value);
 
-  factory GetDrainsResponseDrainsItemDeliveryVariant4Target.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDeliveryVariant4Target._(value);
+  factory GetDrainsResponseDrainsItemDeliveryVariant4Target.fromJson(String value) => GetDrainsResponseDrainsItemDeliveryVariant4Target._(value);
 
-  static const vercelOtelTracesDb =
-      GetDrainsResponseDrainsItemDeliveryVariant4Target._(
-          'vercel-otel-traces-db');
+  static const vercelOtelTracesDb = GetDrainsResponseDrainsItemDeliveryVariant4Target._('vercel-otel-traces-db');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDeliveryVariant4Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDeliveryVariant4Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetDrainsResponseDrainsItemDeliveryVariant4Type {
   internal;
 
-  static GetDrainsResponseDrainsItemDeliveryVariant4Type fromJson(
-      String value) {
+  static GetDrainsResponseDrainsItemDeliveryVariant4Type fromJson(String value) {
     switch (value) {
-      case 'internal':
-        return GetDrainsResponseDrainsItemDeliveryVariant4Type.internal;
-      default:
-        throw ArgumentError(
-            'Unknown GetDrainsResponseDrainsItemDeliveryVariant4Type: $value');
+      case 'internal': return GetDrainsResponseDrainsItemDeliveryVariant4Type.internal;
+      default: throw ArgumentError('Unknown GetDrainsResponseDrainsItemDeliveryVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDrainsResponseDrainsItemDeliveryVariant4Type.internal:
-        return 'internal';
+      case GetDrainsResponseDrainsItemDeliveryVariant4Type.internal: return 'internal';
     }
   }
 
@@ -213,107 +154,80 @@ enum GetDrainsResponseDrainsItemDeliveryVariant4Type {
 }
 
 final class GetDrainsResponseDrainsItemDelivery2Variant0Compression {
+
   final String value;
 
   const GetDrainsResponseDrainsItemDelivery2Variant0Compression._(this.value);
 
-  factory GetDrainsResponseDrainsItemDelivery2Variant0Compression.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDelivery2Variant0Compression._(value);
+  factory GetDrainsResponseDrainsItemDelivery2Variant0Compression.fromJson(String value) => GetDrainsResponseDrainsItemDelivery2Variant0Compression._(value);
 
-  static const gzip =
-      GetDrainsResponseDrainsItemDelivery2Variant0Compression._('gzip');
-  static const none =
-      GetDrainsResponseDrainsItemDelivery2Variant0Compression._('none');
+  static const gzip = GetDrainsResponseDrainsItemDelivery2Variant0Compression._('gzip');
+  static const none = GetDrainsResponseDrainsItemDelivery2Variant0Compression._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDelivery2Variant0Compression &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDelivery2Variant0Compression && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainsResponseDrainsItemDelivery2Variant0Encoding {
+
   final String value;
 
   const GetDrainsResponseDrainsItemDelivery2Variant0Encoding._(this.value);
 
-  factory GetDrainsResponseDrainsItemDelivery2Variant0Encoding.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDelivery2Variant0Encoding._(value);
+  factory GetDrainsResponseDrainsItemDelivery2Variant0Encoding.fromJson(String value) => GetDrainsResponseDrainsItemDelivery2Variant0Encoding._(value);
 
-  static const json =
-      GetDrainsResponseDrainsItemDelivery2Variant0Encoding._('json');
-  static const ndjson =
-      GetDrainsResponseDrainsItemDelivery2Variant0Encoding._('ndjson');
+  static const json = GetDrainsResponseDrainsItemDelivery2Variant0Encoding._('json');
+  static const ndjson = GetDrainsResponseDrainsItemDelivery2Variant0Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDelivery2Variant0Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDelivery2Variant0Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind {
+
   final String value;
 
-  const GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind._(
-      this.value);
+  const GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind._(this.value);
 
-  factory GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind._(value);
+  factory GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind.fromJson(String value) => GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind._(
-          'INTEGRATION_SECRET');
+  static const integrationSecret = GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDelivery2Variant0SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetDrainsResponseDrainsItemDelivery2Variant0Type {
   http;
 
-  static GetDrainsResponseDrainsItemDelivery2Variant0Type fromJson(
-      String value) {
+  static GetDrainsResponseDrainsItemDelivery2Variant0Type fromJson(String value) {
     switch (value) {
-      case 'http':
-        return GetDrainsResponseDrainsItemDelivery2Variant0Type.http;
-      default:
-        throw ArgumentError(
-            'Unknown GetDrainsResponseDrainsItemDelivery2Variant0Type: $value');
+      case 'http': return GetDrainsResponseDrainsItemDelivery2Variant0Type.http;
+      default: throw ArgumentError('Unknown GetDrainsResponseDrainsItemDelivery2Variant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDrainsResponseDrainsItemDelivery2Variant0Type.http:
-        return 'http';
+      case GetDrainsResponseDrainsItemDelivery2Variant0Type.http: return 'http';
     }
   }
 
@@ -322,57 +236,42 @@ enum GetDrainsResponseDrainsItemDelivery2Variant0Type {
 }
 
 final class GetDrainsResponseDrainsItemDelivery2Variant1Encoding {
+
   final String value;
 
   const GetDrainsResponseDrainsItemDelivery2Variant1Encoding._(this.value);
 
-  factory GetDrainsResponseDrainsItemDelivery2Variant1Encoding.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDelivery2Variant1Encoding._(value);
+  factory GetDrainsResponseDrainsItemDelivery2Variant1Encoding.fromJson(String value) => GetDrainsResponseDrainsItemDelivery2Variant1Encoding._(value);
 
-  static const json =
-      GetDrainsResponseDrainsItemDelivery2Variant1Encoding._('json');
-  static const proto =
-      GetDrainsResponseDrainsItemDelivery2Variant1Encoding._('proto');
+  static const json = GetDrainsResponseDrainsItemDelivery2Variant1Encoding._('json');
+  static const proto = GetDrainsResponseDrainsItemDelivery2Variant1Encoding._('proto');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDelivery2Variant1Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDelivery2Variant1Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind {
+
   final String value;
 
-  const GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind._(
-      this.value);
+  const GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind._(this.value);
 
-  factory GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind.fromJson(
-          String value) =>
-      GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind._(value);
+  factory GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind.fromJson(String value) => GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind._(
-          'INTEGRATION_SECRET');
+  static const integrationSecret = GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainsResponseDrainsItemDelivery2Variant1SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

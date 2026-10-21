@@ -7,74 +7,52 @@ part of 'projects_delete.dart';
 class DeleteProjectAvatarResponseExpirationVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Unix ms timestamp when the project is scheduled to expire.
   final double expiresAt;
 
-  const DeleteProjectAvatarResponseExpirationVariant0(
-      {required this.expiresAt});
+  const DeleteProjectAvatarResponseExpirationVariant0({required this.expiresAt});
 
-  DeleteProjectAvatarResponseExpirationVariant0 Function({double expiresAt})
-      get copyWith => _copyWith;
+  DeleteProjectAvatarResponseExpirationVariant0 Function({double expiresAt}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseExpirationVariant0 _copyWith(
-          {Object? expiresAt = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseExpirationVariant0(
-        expiresAt: identical(expiresAt, sdkOmittedValue)
-            ? this.expiresAt
-            : expiresAt as double,
-      );
+  DeleteProjectAvatarResponseExpirationVariant0 _copyWith({Object? expiresAt = sdkOmittedValue}) => DeleteProjectAvatarResponseExpirationVariant0(
+    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
+  );
 
-  factory DeleteProjectAvatarResponseExpirationVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseExpirationVariant0(
-        expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-      );
+  factory DeleteProjectAvatarResponseExpirationVariant0.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseExpirationVariant0(
+    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expiresAt': expiresAt,
-      };
+    'expiresAt': expiresAt,
+  };
 }
 
 class DeleteProjectAvatarResponseExpirationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Unix ms timestamp when the project was locked.
   final double lockedAt;
-
   /// userId of the actor that triggered the lock (system or admin).
   final String lockedBy;
 
-  const DeleteProjectAvatarResponseExpirationVariant1(
-      {required this.lockedAt, required this.lockedBy});
+  const DeleteProjectAvatarResponseExpirationVariant1({required this.lockedAt, required this.lockedBy});
 
-  DeleteProjectAvatarResponseExpirationVariant1 Function(
-      {double lockedAt, String lockedBy}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseExpirationVariant1 Function({double lockedAt, String lockedBy}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseExpirationVariant1 _copyWith(
-          {Object? lockedAt = sdkOmittedValue,
-          Object? lockedBy = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseExpirationVariant1(
-        lockedAt: identical(lockedAt, sdkOmittedValue)
-            ? this.lockedAt
-            : lockedAt as double,
-        lockedBy: identical(lockedBy, sdkOmittedValue)
-            ? this.lockedBy
-            : lockedBy as String,
-      );
+  DeleteProjectAvatarResponseExpirationVariant1 _copyWith({Object? lockedAt = sdkOmittedValue, Object? lockedBy = sdkOmittedValue}) => DeleteProjectAvatarResponseExpirationVariant1(
+    lockedAt: identical(lockedAt, sdkOmittedValue) ? this.lockedAt : lockedAt as double,
+    lockedBy: identical(lockedBy, sdkOmittedValue) ? this.lockedBy : lockedBy as String,
+  );
 
-  factory DeleteProjectAvatarResponseExpirationVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseExpirationVariant1(
-        lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
-        lockedBy: (json['lockedBy'] as String?)!,
-      );
+  factory DeleteProjectAvatarResponseExpirationVariant1.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseExpirationVariant1(
+    lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
+    lockedBy: (json['lockedBy'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'lockedAt': lockedAt,
-        'lockedBy': lockedBy,
-      };
+    'lockedAt': lockedAt,
+    'lockedBy': lockedBy,
+  };
 }
 
 sealed class DeleteProjectAvatarResponseExpiration {
@@ -83,53 +61,24 @@ sealed class DeleteProjectAvatarResponseExpiration {
   const DeleteProjectAvatarResponseExpiration();
   factory DeleteProjectAvatarResponseExpiration.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            DeleteProjectAvatarResponseExpirationVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            DeleteProjectAvatarResponseExpirationVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = DeleteProjectAvatarResponseExpirationVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0(value); } } catch (_) {}
+      try { final value = DeleteProjectAvatarResponseExpirationVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1(value); } } catch (_) {}
     }
-    try {
-      return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0(
-          DeleteProjectAvatarResponseExpirationVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1(
-          DeleteProjectAvatarResponseExpirationVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for DeleteProjectAvatarResponseExpiration");
+    try { return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0(DeleteProjectAvatarResponseExpirationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1(DeleteProjectAvatarResponseExpirationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for DeleteProjectAvatarResponseExpiration");
   }
   Object? toJson();
 }
 
-final class DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0
-    extends DeleteProjectAvatarResponseExpiration {
+final class DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0 extends DeleteProjectAvatarResponseExpiration {
   final DeleteProjectAvatarResponseExpirationVariant0 value;
-  const DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1
-    extends DeleteProjectAvatarResponseExpiration {
+final class DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1 extends DeleteProjectAvatarResponseExpiration {
   final DeleteProjectAvatarResponseExpirationVariant1 value;
-  const DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseExpirationDeleteProjectAvatarResponseExpirationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

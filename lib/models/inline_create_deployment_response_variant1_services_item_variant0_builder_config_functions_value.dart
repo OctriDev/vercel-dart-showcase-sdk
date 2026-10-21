@@ -8,23 +8,16 @@ part of 'inline.dart';
 enum CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type {
   scheduleV1beta;
 
-  static CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type
-      fromJson(String value) {
+  static CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type fromJson(String value) {
     switch (value) {
-      case 'schedule/v1beta':
-        return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type
-            .scheduleV1beta;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type: $value');
+      case 'schedule/v1beta': return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type
-            .scheduleV1beta:
-        return 'schedule/v1beta';
+      case CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta: return 'schedule/v1beta';
     }
   }
 
@@ -33,388 +26,251 @@ enum CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsV
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1 {
+
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1._(value);
 
-  static const max =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
-          ._('max');
+  static const max = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1._('max');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueSupportsCancellation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigHelpers && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddleware && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Enforced runtime for explicitly configured Routing Middleware.
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime {
+
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime._(value);
 
-  static const nodejs =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime
-          ._('nodejs');
+  static const nodejs = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime._('nodejs');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigMiddlewareRuntime && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsAutoExposeSystemEnvs && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsDirectoryListing && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsGitForkProtection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig
-          ._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig
-          ._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig
-          ._(true);
+  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig._(false);
+  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigZeroConfig && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType {
+
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType._(value);
 
-  static const serviceRef =
-      CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType._(
-          'service-ref');
+  static const serviceRef = CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType._('service-ref');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0EnvValueType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource {
+
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._(
-      this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._(this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._(
-          value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._(value);
 
-  static const configured =
-      CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._(
-          'configured');
-  static const generated =
-      CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._(
-          'generated');
+  static const configured = CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._('configured');
+  static const generated = CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource._('generated');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0RoutePrefixSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

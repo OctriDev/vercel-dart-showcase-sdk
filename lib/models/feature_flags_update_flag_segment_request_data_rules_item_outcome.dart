@@ -9,31 +9,21 @@ class UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0 {
   static const String constructionSurface = 'named';
   final dynamic type_;
 
-  const UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
-      {required this.type_});
+  const UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0({required this.type_});
 
-  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0 Function({dynamic type_})
-      get copyWith => _copyWith;
+  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0 Function({dynamic type_}) get copyWith => _copyWith;
 
-  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-      );
+  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+  );
 
-  factory UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-      );
+  factory UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0.fromJson(Map<String, dynamic> json) => UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-      };
+    'type': type_,
+  };
 }
 
 class UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base {
@@ -43,41 +33,27 @@ class UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base {
   final String kind;
   final String attribute;
 
-  const UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base(
-      {required this.type_, required this.kind, required this.attribute});
+  const UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base({required this.type_, required this.kind, required this.attribute});
 
-  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base Function(
-      {dynamic type_, String kind, String attribute}) get copyWith => _copyWith;
+  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base Function({dynamic type_, String kind, String attribute}) get copyWith => _copyWith;
 
-  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? attribute = sdkOmittedValue}) =>
-      UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        attribute: identical(attribute, sdkOmittedValue)
-            ? this.attribute
-            : attribute as String,
-      );
+  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base _copyWith({Object? type_ = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? attribute = sdkOmittedValue}) => UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+  );
 
-  factory UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-        kind: (json['kind'] as String?)!,
-        attribute: (json['attribute'] as String?)!,
-      );
+  factory UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base.fromJson(Map<String, dynamic> json) => UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+    kind: (json['kind'] as String?)!,
+    attribute: (json['attribute'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-        'kind': kind,
-        'attribute': attribute,
-      };
+    'type': type_,
+    'kind': kind,
+    'attribute': attribute,
+  };
 }
 
 class UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 {
@@ -87,48 +63,27 @@ class UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 {
   final UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base base_;
   final double passPromille;
 
-  const UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
-      {required this.type_, required this.base_, required this.passPromille});
+  const UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1({required this.type_, required this.base_, required this.passPromille});
 
-  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 Function(
-      {dynamic type_,
-      UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base base_,
-      double passPromille}) get copyWith => _copyWith;
+  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 Function({dynamic type_, UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base base_, double passPromille}) get copyWith => _copyWith;
 
-  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? base_ = sdkOmittedValue,
-          Object? passPromille = sdkOmittedValue}) =>
-      UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-        base_: identical(base_, sdkOmittedValue)
-            ? this.base_
-            : base_ as UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base,
-        passPromille: identical(passPromille, sdkOmittedValue)
-            ? this.passPromille
-            : passPromille as double,
-      );
+  UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? base_ = sdkOmittedValue, Object? passPromille = sdkOmittedValue}) => UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+    base_: identical(base_, sdkOmittedValue) ? this.base_ : base_ as UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base,
+    passPromille: identical(passPromille, sdkOmittedValue) ? this.passPromille : passPromille as double,
+  );
 
-  factory UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-        base_: (json['base'] != null
-            ? UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base.fromJson(
-                json['base'] as Map<String, dynamic>)
-            : null)!,
-        passPromille: ((json['passPromille'] as num?)?.toDouble())!,
-      );
+  factory UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1.fromJson(Map<String, dynamic> json) => UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+    base_: (json['base'] != null ? UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1Base.fromJson(json['base'] as Map<String, dynamic>) : null)!,
+    passPromille: ((json['passPromille'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-        'base': base_.toJson(),
-        'passPromille': passPromille,
-      };
+    'type': type_,
+    'base': base_.toJson(),
+    'passPromille': passPromille,
+  };
 }
 
 sealed class UpdateFlagSegmentRequestDataRulesItemOutcome {
@@ -137,53 +92,24 @@ sealed class UpdateFlagSegmentRequestDataRulesItemOutcome {
   const UpdateFlagSegmentRequestDataRulesItemOutcome();
   factory UpdateFlagSegmentRequestDataRulesItemOutcome.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(value); } } catch (_) {}
+      try { final value = UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(value); } } catch (_) {}
     }
-    try {
-      return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
-          UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
-          UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateFlagSegmentRequestDataRulesItemOutcome");
+    try { return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateFlagSegmentRequestDataRulesItemOutcome");
   }
   Object? toJson();
 }
 
-final class UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0
-    extends UpdateFlagSegmentRequestDataRulesItemOutcome {
+final class UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0 extends UpdateFlagSegmentRequestDataRulesItemOutcome {
   final UpdateFlagSegmentRequestDataRulesItemOutcomeVariant0 value;
-  const UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1
-    extends UpdateFlagSegmentRequestDataRulesItemOutcome {
+final class UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 extends UpdateFlagSegmentRequestDataRulesItemOutcome {
   final UpdateFlagSegmentRequestDataRulesItemOutcomeVariant1 value;
-  const UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateFlagSegmentRequestDataRulesItemOutcomeUpdateFlagSegmentRequestDataRulesItemOutcomeVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

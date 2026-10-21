@@ -8,49 +8,29 @@ part of 'deployments.dart';
 class CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The pattern to match against branch names
   final String pattern;
-
   /// The type of matching to perform
-  final CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType
-      type_;
+  final CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType type_;
 
-  const CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher(
-      {required this.pattern, required this.type_});
+  const CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher({required this.pattern, required this.type_});
 
-  CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher Function(
-      {String pattern,
-      CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType
-          type_}) get copyWith => _copyWith;
+  CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher Function({String pattern, CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType type_}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher _copyWith(
-          {Object? pattern = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher(
-        pattern: identical(pattern, sdkOmittedValue)
-            ? this.pattern
-            : pattern as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType,
-      );
+  CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher(
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType,
+  );
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher(
-        pattern: (json['pattern'] as String?)!,
-        type_: (json['type'] != null
-            ? CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher(
+    pattern: (json['pattern'] as String?)!,
+    type_: (json['type'] != null ? CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'pattern': pattern,
-        'type': type_.toJson(),
-      };
+    'pattern': pattern,
+    'type': type_.toJson(),
+  };
 }
 
 /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
@@ -62,52 +42,30 @@ class CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationIt
   final String type_;
   final String value;
 
-  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem(
-      {required this.domain,
-      required this.reason,
-      required this.type_,
-      required this.value});
+  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem({required this.domain, required this.reason, required this.type_, required this.value});
 
-  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem
-          Function({String domain, String reason, String type_, String value})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem Function({String domain, String reason, String type_, String value}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem
-      _copyWith(
-              {Object? domain = sdkOmittedValue,
-              Object? reason = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem(
-            domain: identical(domain, sdkOmittedValue)
-                ? this.domain
-                : domain as String,
-            reason: identical(reason, sdkOmittedValue)
-                ? this.reason
-                : reason as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_ as String,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as String,
-          );
+  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem _copyWith({Object? domain = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem(
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem(
-        domain: (json['domain'] as String?)!,
-        reason: (json['reason'] as String?)!,
-        type_: (json['type'] as String?)!,
-        value: (json['value'] as String?)!,
-      );
+  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem(
+    domain: (json['domain'] as String?)!,
+    reason: (json['reason'] as String?)!,
+    type_: (json['type'] as String?)!,
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'domain': domain,
-        'reason': reason,
-        'type': type_,
-        'value': value,
-      };
+    'domain': domain,
+    'reason': reason,
+    'type': type_,
+    'value': value,
+  };
 }
 
 /// List of domains associated with this environment
@@ -121,379 +79,155 @@ class CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem {
   final String name;
   final String projectId;
   final SdkOptional<String?> redirect;
-  final SdkOptional<
-          CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?>
-      redirectStatusCode;
+  final SdkOptional<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?> redirectStatusCode;
   final SdkOptional<double> updatedAt;
-
   /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
-  final SdkOptional<
-          List<
-              CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>>
-      verification;
-
+  final SdkOptional<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>> verification;
   /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
-  final CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified
-      verified;
+  final CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified verified;
 
-  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem(
-      {required this.apexName,
-      this.createdAt = const SdkOmitted(),
-      this.customEnvironmentId = const SdkOmitted(),
-      this.gitBranch = const SdkOmitted(),
-      required this.name,
-      required this.projectId,
-      this.redirect = const SdkOmitted(),
-      this.redirectStatusCode = const SdkOmitted(),
-      this.updatedAt = const SdkOmitted(),
-      this.verification = const SdkOmitted(),
-      required this.verified});
+  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem({required this.apexName, this.createdAt = const SdkOmitted(), this.customEnvironmentId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), required this.name, required this.projectId, this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.verification = const SdkOmitted(), required this.verified});
 
-  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem Function(
-      {String apexName,
-      SdkOptional<double> createdAt,
-      SdkOptional<String?> customEnvironmentId,
-      SdkOptional<String?> gitBranch,
-      String name,
-      String projectId,
-      SdkOptional<String?> redirect,
-      SdkOptional<
-              CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?>
-          redirectStatusCode,
-      SdkOptional<double> updatedAt,
-      SdkOptional<
-              List<
-                  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>>
-          verification,
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified
-          verified}) get copyWith => _copyWith;
+  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem Function({String apexName, SdkOptional<double> createdAt, SdkOptional<String?> customEnvironmentId, SdkOptional<String?> gitBranch, String name, String projectId, SdkOptional<String?> redirect, SdkOptional<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?> redirectStatusCode, SdkOptional<double> updatedAt, SdkOptional<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>> verification, CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified verified}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem _copyWith(
-          {Object? apexName = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? customEnvironmentId = sdkOmittedValue,
-          Object? gitBranch = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? redirect = sdkOmittedValue,
-          Object? redirectStatusCode = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? verification = sdkOmittedValue,
-          Object? verified = sdkOmittedValue}) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem(
-        apexName: identical(apexName, sdkOmittedValue)
-            ? this.apexName
-            : apexName as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
-            ? this.customEnvironmentId
-            : customEnvironmentId as SdkOptional<String?>,
-        gitBranch: identical(gitBranch, sdkOmittedValue)
-            ? this.gitBranch
-            : gitBranch as SdkOptional<String?>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        redirect: identical(redirect, sdkOmittedValue)
-            ? this.redirect
-            : redirect as SdkOptional<String?>,
-        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
-            ? this.redirectStatusCode
-            : redirectStatusCode as SdkOptional<
-                CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        verification: identical(verification, sdkOmittedValue)
-            ? this.verification
-            : verification as SdkOptional<
-                List<
-                    CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>>,
-        verified: identical(verified, sdkOmittedValue)
-            ? this.verified
-            : verified
-                as CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified,
-      );
+  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem _copyWith({Object? apexName = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? verification = sdkOmittedValue, Object? verified = sdkOmittedValue}) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem(
+    apexName: identical(apexName, sdkOmittedValue) ? this.apexName : apexName as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String?>,
+    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
+    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    verification: identical(verification, sdkOmittedValue) ? this.verification : verification as SdkOptional<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>>,
+    verified: identical(verified, sdkOmittedValue) ? this.verified : verified as CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified,
+  );
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem(
-        apexName: (json['apexName'] as String?)!,
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        customEnvironmentId: json.containsKey('customEnvironmentId')
-            ? SdkPresent(json['customEnvironmentId'] as String?)
-            : const SdkOmitted(),
-        gitBranch: json.containsKey('gitBranch')
-            ? SdkPresent(json['gitBranch'] as String?)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        redirect: json.containsKey('redirect')
-            ? SdkPresent(json['redirect'] as String?)
-            : const SdkOmitted(),
-        redirectStatusCode: json.containsKey('redirectStatusCode')
-            ? SdkPresent(json['redirectStatusCode'] != null
-                ? CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode
-                    .fromJson((json['redirectStatusCode'] as num).toDouble())
-                : null)
-            : const SdkOmitted(),
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        verification: json['verification'] != null
-            ? SdkPresent(((json['verification'] as List?)
-                ?.map((e) =>
-                    CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        verified: (json['verified'] != null
-            ? CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified
-                .fromJson(json['verified'] as bool)
-            : null)!,
-      );
+  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem(
+    apexName: (json['apexName'] as String?)!,
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    customEnvironmentId: json.containsKey('customEnvironmentId') ? SdkPresent(json['customEnvironmentId'] as String?) : const SdkOmitted(),
+    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
+    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    verification: json['verification'] != null ? SdkPresent(((json['verification'] as List?)?.map((e) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    verified: (json['verified'] != null ? CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified.fromJson(json['verified'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'apexName': apexName,
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentId) {
-          SdkPresent<String?>(value: final value) => {
-              'customEnvironmentId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitBranch) {
-          SdkPresent<String?>(value: final value) => {
-              'gitBranch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        'projectId': projectId,
-        ...switch (redirect) {
-          SdkPresent<String?>(value: final value) => {
-              'redirect': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (redirectStatusCode) {
-          SdkPresent<
-                CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?>(
-            value: final value
-          ) =>
-            {
-              'redirectStatusCode': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (verification) {
-          SdkPresent<
-                List<
-                    CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>>(
-            value: final value
-          ) =>
-            {
-              'verification': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'verified': verified.toJson(),
-      };
+    'apexName': apexName,
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentId) {
+      SdkPresent<String?>(value: final value) => {'customEnvironmentId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitBranch) {
+      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    'projectId': projectId,
+    ...switch (redirect) {
+      SdkPresent<String?>(value: final value) => {'redirect': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (redirectStatusCode) {
+      SdkPresent<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (verification) {
+      SdkPresent<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerificationItem>>(value: final value) => {'verification': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'verified': verified.toJson(),
+  };
 }
 
 /// If the deployment was created using a Custom Environment, then this property contains information regarding the environment used.
 class CancelDeploymentResponseCustomEnvironmentVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Configuration for matching git branches to this environment
-  final SdkOptional<
-          CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher>
-      branchMatcher;
-
+  final SdkOptional<CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher> branchMatcher;
   /// Timestamp when the environment was created
   final double createdAt;
-
   /// List of aliases for the current deployment
   final SdkOptional<List<String>> currentDeploymentAliases;
-
   /// Optional description of the environment's purpose
   final SdkOptional<String> description;
-
   /// List of domains associated with this environment
-  final SdkOptional<
-          List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>>
-      domains;
-
+  final SdkOptional<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>> domains;
   /// Unique identifier for the custom environment (format: env_*)
   final String id;
-
   /// URL-friendly name of the environment
   final String slug;
-
   /// The type of environment (production, preview, or development)
   final CancelDeploymentResponseCustomEnvironmentVariant0Type type_;
-
   /// Timestamp when the environment was last updated
   final double updatedAt;
 
-  const CancelDeploymentResponseCustomEnvironmentVariant0(
-      {this.branchMatcher = const SdkOmitted(),
-      required this.createdAt,
-      this.currentDeploymentAliases = const SdkOmitted(),
-      this.description = const SdkOmitted(),
-      this.domains = const SdkOmitted(),
-      required this.id,
-      required this.slug,
-      required this.type_,
-      required this.updatedAt});
+  const CancelDeploymentResponseCustomEnvironmentVariant0({this.branchMatcher = const SdkOmitted(), required this.createdAt, this.currentDeploymentAliases = const SdkOmitted(), this.description = const SdkOmitted(), this.domains = const SdkOmitted(), required this.id, required this.slug, required this.type_, required this.updatedAt});
 
-  CancelDeploymentResponseCustomEnvironmentVariant0 Function(
-      {SdkOptional<
-              CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher>
-          branchMatcher,
-      double createdAt,
-      SdkOptional<List<String>> currentDeploymentAliases,
-      SdkOptional<String> description,
-      SdkOptional<
-              List<
-                  CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>>
-          domains,
-      String id,
-      String slug,
-      CancelDeploymentResponseCustomEnvironmentVariant0Type type_,
-      double updatedAt}) get copyWith => _copyWith;
+  CancelDeploymentResponseCustomEnvironmentVariant0 Function({SdkOptional<CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher> branchMatcher, double createdAt, SdkOptional<List<String>> currentDeploymentAliases, SdkOptional<String> description, SdkOptional<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>> domains, String id, String slug, CancelDeploymentResponseCustomEnvironmentVariant0Type type_, double updatedAt}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseCustomEnvironmentVariant0 _copyWith(
-          {Object? branchMatcher = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? currentDeploymentAliases = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? domains = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0(
-        branchMatcher: identical(branchMatcher, sdkOmittedValue)
-            ? this.branchMatcher
-            : branchMatcher as SdkOptional<
-                CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        currentDeploymentAliases:
-            identical(currentDeploymentAliases, sdkOmittedValue)
-                ? this.currentDeploymentAliases
-                : currentDeploymentAliases as SdkOptional<List<String>>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        domains: identical(domains, sdkOmittedValue)
-            ? this.domains
-            : domains as SdkOptional<
-                List<
-                    CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CancelDeploymentResponseCustomEnvironmentVariant0Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  CancelDeploymentResponseCustomEnvironmentVariant0 _copyWith({Object? branchMatcher = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? currentDeploymentAliases = sdkOmittedValue, Object? description = sdkOmittedValue, Object? domains = sdkOmittedValue, Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CancelDeploymentResponseCustomEnvironmentVariant0(
+    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    currentDeploymentAliases: identical(currentDeploymentAliases, sdkOmittedValue) ? this.currentDeploymentAliases : currentDeploymentAliases as SdkOptional<List<String>>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseCustomEnvironmentVariant0Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0(
-        branchMatcher: json['branchMatcher'] != null
-            ? SdkPresent((json['branchMatcher'] != null
-                ? CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher
-                    .fromJson(json['branchMatcher'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        currentDeploymentAliases: json['currentDeploymentAliases'] != null
-            ? SdkPresent(((json['currentDeploymentAliases'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        domains: json['domains'] != null
-            ? SdkPresent(((json['domains'] as List?)
-                ?.map((e) =>
-                    CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        type_: (json['type'] != null
-            ? CancelDeploymentResponseCustomEnvironmentVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory CancelDeploymentResponseCustomEnvironmentVariant0.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseCustomEnvironmentVariant0(
+    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    currentDeploymentAliases: json['currentDeploymentAliases'] != null ? SdkPresent(((json['currentDeploymentAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    domains: json['domains'] != null ? SdkPresent(((json['domains'] as List?)?.map((e) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    type_: (json['type'] != null ? CancelDeploymentResponseCustomEnvironmentVariant0Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (branchMatcher) {
-          SdkPresent<
-                CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher>(
-            value: final value
-          ) =>
-            {
-              'branchMatcher': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        ...switch (currentDeploymentAliases) {
-          SdkPresent<List<String>>(value: final value) => {
-              'currentDeploymentAliases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (domains) {
-          SdkPresent<
-                List<
-                    CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>>(
-            value: final value
-          ) =>
-            {
-              'domains': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'slug': slug,
-        'type': type_.toJson(),
-        'updatedAt': updatedAt,
-      };
+    ...switch (branchMatcher) {
+      SdkPresent<CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    ...switch (currentDeploymentAliases) {
+      SdkPresent<List<String>>(value: final value) => {'currentDeploymentAliases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (domains) {
+      SdkPresent<List<CancelDeploymentResponseCustomEnvironmentVariant0DomainsItem>>(value: final value) => {'domains': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'slug': slug,
+    'type': type_.toJson(),
+    'updatedAt': updatedAt,
+  };
 }
 
 /// If the deployment was created using a Custom Environment, then this property contains information regarding the environment used.
@@ -504,24 +238,19 @@ class CancelDeploymentResponseCustomEnvironmentVariant1 {
 
   const CancelDeploymentResponseCustomEnvironmentVariant1({required this.id});
 
-  CancelDeploymentResponseCustomEnvironmentVariant1 Function({String id})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseCustomEnvironmentVariant1 Function({String id}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseCustomEnvironmentVariant1 _copyWith(
-          {Object? id = sdkOmittedValue}) =>
-      CancelDeploymentResponseCustomEnvironmentVariant1(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  CancelDeploymentResponseCustomEnvironmentVariant1 _copyWith({Object? id = sdkOmittedValue}) => CancelDeploymentResponseCustomEnvironmentVariant1(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseCustomEnvironmentVariant1(
-        id: (json['id'] as String?)!,
-      );
+  factory CancelDeploymentResponseCustomEnvironmentVariant1.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseCustomEnvironmentVariant1(
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-      };
+    'id': id,
+  };
 }
 
 sealed class CancelDeploymentResponseCustomEnvironment {
@@ -530,53 +259,24 @@ sealed class CancelDeploymentResponseCustomEnvironment {
   const CancelDeploymentResponseCustomEnvironment();
   factory CancelDeploymentResponseCustomEnvironment.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            CancelDeploymentResponseCustomEnvironmentVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CancelDeploymentResponseCustomEnvironmentVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CancelDeploymentResponseCustomEnvironmentVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0(value); } } catch (_) {}
+      try { final value = CancelDeploymentResponseCustomEnvironmentVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1(value); } } catch (_) {}
     }
-    try {
-      return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0(
-          CancelDeploymentResponseCustomEnvironmentVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1(
-          CancelDeploymentResponseCustomEnvironmentVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CancelDeploymentResponseCustomEnvironment");
+    try { return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0(CancelDeploymentResponseCustomEnvironmentVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1(CancelDeploymentResponseCustomEnvironmentVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CancelDeploymentResponseCustomEnvironment");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0
-    extends CancelDeploymentResponseCustomEnvironment {
+final class CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0 extends CancelDeploymentResponseCustomEnvironment {
   final CancelDeploymentResponseCustomEnvironmentVariant0 value;
-  const CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1
-    extends CancelDeploymentResponseCustomEnvironment {
+final class CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1 extends CancelDeploymentResponseCustomEnvironment {
   final CancelDeploymentResponseCustomEnvironmentVariant1 value;
-  const CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseCustomEnvironmentCancelDeploymentResponseCustomEnvironmentVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

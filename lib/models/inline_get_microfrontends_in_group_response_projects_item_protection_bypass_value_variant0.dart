@@ -11,70 +11,35 @@ class GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0 
   final double createdAt;
   final String createdBy;
   final String integrationId;
-  final GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope
-      scope;
+  final GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope scope;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0(
-      {required this.configurationId,
-      required this.createdAt,
-      required this.createdBy,
-      required this.integrationId,
-      required this.scope});
+  const GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0({required this.configurationId, required this.createdAt, required this.createdBy, required this.integrationId, required this.scope});
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0 Function(
-      {String configurationId,
-      double createdAt,
-      String createdBy,
-      String integrationId,
-      GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope
-          scope}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0 Function({String configurationId, double createdAt, String createdBy, String integrationId, GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope scope}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0
-      _copyWith(
-              {Object? configurationId = sdkOmittedValue,
-              Object? createdAt = sdkOmittedValue,
-              Object? createdBy = sdkOmittedValue,
-              Object? integrationId = sdkOmittedValue,
-              Object? scope = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0(
-            configurationId: identical(configurationId, sdkOmittedValue)
-                ? this.configurationId
-                : configurationId as String,
-            createdAt: identical(createdAt, sdkOmittedValue)
-                ? this.createdAt
-                : createdAt as double,
-            createdBy: identical(createdBy, sdkOmittedValue)
-                ? this.createdBy
-                : createdBy as String,
-            integrationId: identical(integrationId, sdkOmittedValue)
-                ? this.integrationId
-                : integrationId as String,
-            scope: identical(scope, sdkOmittedValue)
-                ? this.scope
-                : scope
-                    as GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0 _copyWith({Object? configurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0(
-        configurationId: (json['configurationId'] as String?)!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: (json['createdBy'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-        scope: (json['scope'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope
-                .fromJson(json['scope'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0(
+    configurationId: (json['configurationId'] as String?)!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: (json['createdBy'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+    scope: (json['scope'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant0Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'createdAt': createdAt,
-        'createdBy': createdBy,
-        'integrationId': integrationId,
-        'scope': scope.toJson(),
-      };
+    'configurationId': configurationId,
+    'createdAt': createdAt,
+    'createdBy': createdBy,
+    'integrationId': integrationId,
+    'scope': scope.toJson(),
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1 {
@@ -82,201 +47,95 @@ class GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1 
   static const String constructionSurface = 'named';
   final double createdAt;
   final String createdBy;
-
   /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar>
-      isEnvVar;
-
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar> isEnvVar;
   /// Optional note about the bypass to be displayed in the UI
   final SdkOptional<String> note;
-  final GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope
-      scope;
+  final GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope scope;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1(
-      {required this.createdAt,
-      required this.createdBy,
-      this.isEnvVar = const SdkOmitted(),
-      this.note = const SdkOmitted(),
-      required this.scope});
+  const GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1({required this.createdAt, required this.createdBy, this.isEnvVar = const SdkOmitted(), this.note = const SdkOmitted(), required this.scope});
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1 Function(
-      {double createdAt,
-      String createdBy,
-      SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar>
-          isEnvVar,
-      SdkOptional<String> note,
-      GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope
-          scope}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1 Function({double createdAt, String createdBy, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar> isEnvVar, SdkOptional<String> note, GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope scope}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1
-      _copyWith(
-              {Object? createdAt = sdkOmittedValue,
-              Object? createdBy = sdkOmittedValue,
-              Object? isEnvVar = sdkOmittedValue,
-              Object? note = sdkOmittedValue,
-              Object? scope = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1(
-            createdAt: identical(createdAt, sdkOmittedValue)
-                ? this.createdAt
-                : createdAt as double,
-            createdBy: identical(createdBy, sdkOmittedValue)
-                ? this.createdBy
-                : createdBy as String,
-            isEnvVar: identical(isEnvVar, sdkOmittedValue)
-                ? this.isEnvVar
-                : isEnvVar as SdkOptional<
-                    GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar>,
-            note: identical(note, sdkOmittedValue)
-                ? this.note
-                : note as SdkOptional<String>,
-            scope: identical(scope, sdkOmittedValue)
-                ? this.scope
-                : scope
-                    as GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? isEnvVar = sdkOmittedValue, Object? note = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
+    isEnvVar: identical(isEnvVar, sdkOmittedValue) ? this.isEnvVar : isEnvVar as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar>,
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: (json['createdBy'] as String?)!,
-        isEnvVar: json['isEnvVar'] != null
-            ? SdkPresent((json['isEnvVar'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar
-                    .fromJson(json['isEnvVar'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        scope: (json['scope'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope
-                .fromJson(json['scope'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: (json['createdBy'] as String?)!,
+    isEnvVar: json['isEnvVar'] != null ? SdkPresent((json['isEnvVar'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar.fromJson(json['isEnvVar'] as bool) : null)!) : const SdkOmitted(),
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    scope: (json['scope'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1Scope.fromJson(json['scope'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'createdBy': createdBy,
-        ...switch (isEnvVar) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar>(
-            value: final value
-          ) =>
-            {
-              'isEnvVar': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'scope': scope.toJson(),
-      };
+    'createdAt': createdAt,
+    'createdBy': createdBy,
+    ...switch (isEnvVar) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemProtectionBypassValueVariant1IsEnvVar>(value: final value) => {'isEnvVar': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'scope': scope.toJson(),
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection>
-      inheritDeploymentProtection;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection> inheritDeploymentProtection;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls(
-      {this.inheritDeploymentProtection = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls({this.inheritDeploymentProtection = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls Function(
-      {SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection>
-          inheritDeploymentProtection}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection> inheritDeploymentProtection}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls
-      _copyWith({Object? inheritDeploymentProtection = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls(
-            inheritDeploymentProtection: identical(
-                    inheritDeploymentProtection, sdkOmittedValue)
-                ? this.inheritDeploymentProtection
-                : inheritDeploymentProtection as SdkOptional<
-                    GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection>,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls _copyWith({Object? inheritDeploymentProtection = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls(
+    inheritDeploymentProtection: identical(inheritDeploymentProtection, sdkOmittedValue) ? this.inheritDeploymentProtection : inheritDeploymentProtection as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls(
-        inheritDeploymentProtection: json['inheritDeploymentProtection'] != null
-            ? SdkPresent((json['inheritDeploymentProtection'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection
-                    .fromJson(json['inheritDeploymentProtection'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls(
+    inheritDeploymentProtection: json['inheritDeploymentProtection'] != null ? SdkPresent((json['inheritDeploymentProtection'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection.fromJson(json['inheritDeploymentProtection'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (inheritDeploymentProtection) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection>(
-            value: final value
-          ) =>
-            {
-              'inheritDeploymentProtection': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (inheritDeploymentProtection) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrlsInheritDeploymentProtection>(value: final value) => {'inheritDeploymentProtection': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls>
-      sandboxUrls;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls> sandboxUrls;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig(
-      {this.sandboxUrls = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig({this.sandboxUrls = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig Function(
-      {SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls>
-          sandboxUrls}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls> sandboxUrls}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig _copyWith(
-          {Object? sandboxUrls = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig(
-        sandboxUrls: identical(sandboxUrls, sdkOmittedValue)
-            ? this.sandboxUrls
-            : sandboxUrls as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig _copyWith({Object? sandboxUrls = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig(
+    sandboxUrls: identical(sandboxUrls, sdkOmittedValue) ? this.sandboxUrls : sandboxUrls as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig(
-        sandboxUrls: json['sandboxUrls'] != null
-            ? SdkPresent((json['sandboxUrls'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls
-                    .fromJson(json['sandboxUrls'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig(
+    sandboxUrls: json['sandboxUrls'] != null ? SdkPresent((json['sandboxUrls'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls.fromJson(json['sandboxUrls'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (sandboxUrls) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls>(
-            value: final value
-          ) =>
-            {
-              'sandboxUrls': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (sandboxUrls) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfigSandboxUrls>(value: final value) => {'sandboxUrls': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition {
@@ -284,101 +143,54 @@ class GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElas
   static const String constructionSurface = 'named';
   final String algorithmVersion;
   final double at;
-  final GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection
-      direction;
+  final GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection direction;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition(
-      {required this.algorithmVersion,
-      required this.at,
-      required this.direction});
+  const GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition({required this.algorithmVersion, required this.at, required this.direction});
 
-  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition Function(
-      {String algorithmVersion,
-      double at,
-      GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection
-          direction}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition Function({String algorithmVersion, double at, GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection direction}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition
-      _copyWith(
-              {Object? algorithmVersion = sdkOmittedValue,
-              Object? at = sdkOmittedValue,
-              Object? direction = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition(
-            algorithmVersion: identical(algorithmVersion, sdkOmittedValue)
-                ? this.algorithmVersion
-                : algorithmVersion as String,
-            at: identical(at, sdkOmittedValue) ? this.at : at as double,
-            direction: identical(direction, sdkOmittedValue)
-                ? this.direction
-                : direction
-                    as GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition _copyWith({Object? algorithmVersion = sdkOmittedValue, Object? at = sdkOmittedValue, Object? direction = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition(
+    algorithmVersion: identical(algorithmVersion, sdkOmittedValue) ? this.algorithmVersion : algorithmVersion as String,
+    at: identical(at, sdkOmittedValue) ? this.at : at as double,
+    direction: identical(direction, sdkOmittedValue) ? this.direction : direction as GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition(
-        algorithmVersion: (json['algorithmVersion'] as String?)!,
-        at: ((json['at'] as num?)?.toDouble())!,
-        direction: (json['direction'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection
-                .fromJson(json['direction'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransition(
+    algorithmVersion: (json['algorithmVersion'] as String?)!,
+    at: ((json['at'] as num?)?.toDouble())!,
+    direction: (json['direction'] != null ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildMachineElasticTransitionDirection.fromJson(json['direction'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'algorithmVersion': algorithmVersion,
-        'at': at,
-        'direction': direction.toJson(),
-      };
+    'algorithmVersion': algorithmVersion,
+    'at': at,
+    'direction': direction.toJson(),
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration>
-      configuration;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration> configuration;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue(
-      {this.configuration = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue Function(
-      {SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration>
-          configuration}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue
-      _copyWith({Object? configuration = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue(
-            configuration: identical(configuration, sdkOmittedValue)
-                ? this.configuration
-                : configuration as SdkOptional<
-                    GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration>,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue(
+    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue(
-        configuration: json['configuration'] != null
-            ? SdkPresent((json['configuration'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration
-                    .fromJson(json['configuration'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueue(
+    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (configuration) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration>(
-            value: final value
-          ) =>
-            {
-              'configuration': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (configuration) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
@@ -386,53 +198,29 @@ class GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMach
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double cores;
-
   /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
-  final GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel
-      label;
+  final GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel label;
   final double memory;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine(
-      {required this.cores, required this.label, required this.memory});
+  const GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine({required this.cores, required this.label, required this.memory});
 
-  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine Function(
-      {double cores,
-      GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel
-          label,
-      double memory}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine Function({double cores, GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel label, double memory}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine
-      _copyWith(
-              {Object? cores = sdkOmittedValue,
-              Object? label = sdkOmittedValue,
-              Object? memory = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine(
-            cores: identical(cores, sdkOmittedValue)
-                ? this.cores
-                : cores as double,
-            label: identical(label, sdkOmittedValue)
-                ? this.label
-                : label
-                    as GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel,
-            memory: identical(memory, sdkOmittedValue)
-                ? this.memory
-                : memory as double,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine _copyWith({Object? cores = sdkOmittedValue, Object? label = sdkOmittedValue, Object? memory = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine(
+    cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
+    label: identical(label, sdkOmittedValue) ? this.label : label as GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel,
+    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as double,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine(
-        cores: ((json['cores'] as num?)?.toDouble())!,
-        label: (json['label'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel
-                .fromJson(json['label'] as String)
-            : null)!,
-        memory: ((json['memory'] as num?)?.toDouble())!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachine(
+    cores: ((json['cores'] as num?)?.toDouble())!,
+    label: (json['label'] != null ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfigElasticBuildMachineLabel.fromJson(json['label'] as String) : null)!,
+    memory: ((json['memory'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'cores': cores,
-        'label': label.toJson(),
-        'memory': memory,
-      };
+    'cores': cores,
+    'label': label.toJson(),
+    'memory': memory,
+  };
 }

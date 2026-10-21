@@ -13,239 +13,117 @@ class UploadProjectAvatarResponseLinkVariant0DeployHooksItem {
   final String ref;
   final String url;
 
-  const UploadProjectAvatarResponseLinkVariant0DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const UploadProjectAvatarResponseLinkVariant0DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  UploadProjectAvatarResponseLinkVariant0DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseLinkVariant0DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseLinkVariant0DeployHooksItem _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseLinkVariant0DeployHooksItem(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  UploadProjectAvatarResponseLinkVariant0DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => UploadProjectAvatarResponseLinkVariant0DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory UploadProjectAvatarResponseLinkVariant0DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseLinkVariant0DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory UploadProjectAvatarResponseLinkVariant0DeployHooksItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseLinkVariant0DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }
 
 class UploadProjectAvatarResponseLinkVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> createdAt;
-  final List<UploadProjectAvatarResponseLinkVariant0DeployHooksItem>
-      deployHooks;
+  final List<UploadProjectAvatarResponseLinkVariant0DeployHooksItem> deployHooks;
   final String gitCredentialId;
   final String org;
   final String productionBranch;
   final SdkOptional<String> repo;
   final SdkOptional<double> repoId;
-
   /// A new field, should be included in all new project links, is being added just in time when a deployment is created. This is needed for Protected Git scopes.
   final SdkOptional<double> repoOwnerId;
-  final SdkOptional<UploadProjectAvatarResponseLinkVariant0Sourceless>
-      sourceless;
+  final SdkOptional<UploadProjectAvatarResponseLinkVariant0Sourceless> sourceless;
   final UploadProjectAvatarResponseLinkVariant0Type type_;
   final SdkOptional<double> updatedAt;
 
-  const UploadProjectAvatarResponseLinkVariant0(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.org,
-      required this.productionBranch,
-      this.repo = const SdkOmitted(),
-      this.repoId = const SdkOmitted(),
-      this.repoOwnerId = const SdkOmitted(),
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted()});
+  const UploadProjectAvatarResponseLinkVariant0({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.org, required this.productionBranch, this.repo = const SdkOmitted(), this.repoId = const SdkOmitted(), this.repoOwnerId = const SdkOmitted(), this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
 
-  UploadProjectAvatarResponseLinkVariant0 Function(
-      {SdkOptional<double> createdAt,
-      List<UploadProjectAvatarResponseLinkVariant0DeployHooksItem> deployHooks,
-      String gitCredentialId,
-      String org,
-      String productionBranch,
-      SdkOptional<String> repo,
-      SdkOptional<double> repoId,
-      SdkOptional<double> repoOwnerId,
-      SdkOptional<UploadProjectAvatarResponseLinkVariant0Sourceless> sourceless,
-      UploadProjectAvatarResponseLinkVariant0Type type_,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseLinkVariant0 Function({SdkOptional<double> createdAt, List<UploadProjectAvatarResponseLinkVariant0DeployHooksItem> deployHooks, String gitCredentialId, String org, String productionBranch, SdkOptional<String> repo, SdkOptional<double> repoId, SdkOptional<double> repoOwnerId, SdkOptional<UploadProjectAvatarResponseLinkVariant0Sourceless> sourceless, UploadProjectAvatarResponseLinkVariant0Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseLinkVariant0 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? repoOwnerId = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseLinkVariant0(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks
-                as List<UploadProjectAvatarResponseLinkVariant0DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        repo: identical(repo, sdkOmittedValue)
-            ? this.repo
-            : repo as SdkOptional<String>,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as SdkOptional<double>,
-        repoOwnerId: identical(repoOwnerId, sdkOmittedValue)
-            ? this.repoOwnerId
-            : repoOwnerId as SdkOptional<double>,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless as SdkOptional<
-                UploadProjectAvatarResponseLinkVariant0Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UploadProjectAvatarResponseLinkVariant0Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  UploadProjectAvatarResponseLinkVariant0 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? org = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoOwnerId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UploadProjectAvatarResponseLinkVariant0(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<UploadProjectAvatarResponseLinkVariant0DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<double>,
+    repoOwnerId: identical(repoOwnerId, sdkOmittedValue) ? this.repoOwnerId : repoOwnerId as SdkOptional<double>,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<UploadProjectAvatarResponseLinkVariant0Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseLinkVariant0Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory UploadProjectAvatarResponseLinkVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseLinkVariant0(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                UploadProjectAvatarResponseLinkVariant0DeployHooksItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        org: (json['org'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        repo: json['repo'] != null
-            ? SdkPresent((json['repo'] as String?)!)
-            : const SdkOmitted(),
-        repoId: json['repoId'] != null
-            ? SdkPresent(((json['repoId'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        repoOwnerId: json['repoOwnerId'] != null
-            ? SdkPresent(((json['repoOwnerId'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? UploadProjectAvatarResponseLinkVariant0Sourceless.fromJson(
-                    json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UploadProjectAvatarResponseLinkVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseLinkVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseLinkVariant0(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => UploadProjectAvatarResponseLinkVariant0DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    org: (json['org'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
+    repoId: json['repoId'] != null ? SdkPresent(((json['repoId'] as num?)?.toDouble())!) : const SdkOmitted(),
+    repoOwnerId: json['repoOwnerId'] != null ? SdkPresent(((json['repoOwnerId'] as num?)?.toDouble())!) : const SdkOmitted(),
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? UploadProjectAvatarResponseLinkVariant0Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UploadProjectAvatarResponseLinkVariant0Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'org': org,
-        'productionBranch': productionBranch,
-        ...switch (repo) {
-          SdkPresent<String>(value: final value) => {
-              'repo': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (repoId) {
-          SdkPresent<double>(value: final value) => {
-              'repoId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (repoOwnerId) {
-          SdkPresent<double>(value: final value) => {
-              'repoOwnerId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sourceless) {
-          SdkPresent<UploadProjectAvatarResponseLinkVariant0Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'org': org,
+    'productionBranch': productionBranch,
+    ...switch (repo) {
+      SdkPresent<String>(value: final value) => {'repo': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (repoId) {
+      SdkPresent<double>(value: final value) => {'repoId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (repoOwnerId) {
+      SdkPresent<double>(value: final value) => {'repoOwnerId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sourceless) {
+      SdkPresent<UploadProjectAvatarResponseLinkVariant0Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UploadProjectAvatarResponseLinkVariant1DeployHooksItem {
@@ -257,239 +135,117 @@ class UploadProjectAvatarResponseLinkVariant1DeployHooksItem {
   final String ref;
   final String url;
 
-  const UploadProjectAvatarResponseLinkVariant1DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const UploadProjectAvatarResponseLinkVariant1DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  UploadProjectAvatarResponseLinkVariant1DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseLinkVariant1DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseLinkVariant1DeployHooksItem _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseLinkVariant1DeployHooksItem(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  UploadProjectAvatarResponseLinkVariant1DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => UploadProjectAvatarResponseLinkVariant1DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory UploadProjectAvatarResponseLinkVariant1DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseLinkVariant1DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory UploadProjectAvatarResponseLinkVariant1DeployHooksItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseLinkVariant1DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }
 
 class UploadProjectAvatarResponseLinkVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> createdAt;
-  final List<UploadProjectAvatarResponseLinkVariant1DeployHooksItem>
-      deployHooks;
+  final List<UploadProjectAvatarResponseLinkVariant1DeployHooksItem> deployHooks;
   final String gitCredentialId;
   final String org;
   final String productionBranch;
   final SdkOptional<String> repo;
   final SdkOptional<double> repoId;
-
   /// A new field, should be included in all new project links, is being added just in time when a deployment is created. This is needed for Protected Git scopes.
   final SdkOptional<double> repoOwnerId;
-  final SdkOptional<UploadProjectAvatarResponseLinkVariant1Sourceless>
-      sourceless;
+  final SdkOptional<UploadProjectAvatarResponseLinkVariant1Sourceless> sourceless;
   final UploadProjectAvatarResponseLinkVariant1Type type_;
   final SdkOptional<double> updatedAt;
 
-  const UploadProjectAvatarResponseLinkVariant1(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.org,
-      required this.productionBranch,
-      this.repo = const SdkOmitted(),
-      this.repoId = const SdkOmitted(),
-      this.repoOwnerId = const SdkOmitted(),
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted()});
+  const UploadProjectAvatarResponseLinkVariant1({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.org, required this.productionBranch, this.repo = const SdkOmitted(), this.repoId = const SdkOmitted(), this.repoOwnerId = const SdkOmitted(), this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
 
-  UploadProjectAvatarResponseLinkVariant1 Function(
-      {SdkOptional<double> createdAt,
-      List<UploadProjectAvatarResponseLinkVariant1DeployHooksItem> deployHooks,
-      String gitCredentialId,
-      String org,
-      String productionBranch,
-      SdkOptional<String> repo,
-      SdkOptional<double> repoId,
-      SdkOptional<double> repoOwnerId,
-      SdkOptional<UploadProjectAvatarResponseLinkVariant1Sourceless> sourceless,
-      UploadProjectAvatarResponseLinkVariant1Type type_,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseLinkVariant1 Function({SdkOptional<double> createdAt, List<UploadProjectAvatarResponseLinkVariant1DeployHooksItem> deployHooks, String gitCredentialId, String org, String productionBranch, SdkOptional<String> repo, SdkOptional<double> repoId, SdkOptional<double> repoOwnerId, SdkOptional<UploadProjectAvatarResponseLinkVariant1Sourceless> sourceless, UploadProjectAvatarResponseLinkVariant1Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseLinkVariant1 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? repoOwnerId = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseLinkVariant1(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks
-                as List<UploadProjectAvatarResponseLinkVariant1DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        repo: identical(repo, sdkOmittedValue)
-            ? this.repo
-            : repo as SdkOptional<String>,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as SdkOptional<double>,
-        repoOwnerId: identical(repoOwnerId, sdkOmittedValue)
-            ? this.repoOwnerId
-            : repoOwnerId as SdkOptional<double>,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless as SdkOptional<
-                UploadProjectAvatarResponseLinkVariant1Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UploadProjectAvatarResponseLinkVariant1Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  UploadProjectAvatarResponseLinkVariant1 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? org = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoOwnerId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UploadProjectAvatarResponseLinkVariant1(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<UploadProjectAvatarResponseLinkVariant1DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<double>,
+    repoOwnerId: identical(repoOwnerId, sdkOmittedValue) ? this.repoOwnerId : repoOwnerId as SdkOptional<double>,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<UploadProjectAvatarResponseLinkVariant1Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseLinkVariant1Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory UploadProjectAvatarResponseLinkVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseLinkVariant1(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                UploadProjectAvatarResponseLinkVariant1DeployHooksItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        org: (json['org'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        repo: json['repo'] != null
-            ? SdkPresent((json['repo'] as String?)!)
-            : const SdkOmitted(),
-        repoId: json['repoId'] != null
-            ? SdkPresent(((json['repoId'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        repoOwnerId: json['repoOwnerId'] != null
-            ? SdkPresent(((json['repoOwnerId'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? UploadProjectAvatarResponseLinkVariant1Sourceless.fromJson(
-                    json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UploadProjectAvatarResponseLinkVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseLinkVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseLinkVariant1(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => UploadProjectAvatarResponseLinkVariant1DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    org: (json['org'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
+    repoId: json['repoId'] != null ? SdkPresent(((json['repoId'] as num?)?.toDouble())!) : const SdkOmitted(),
+    repoOwnerId: json['repoOwnerId'] != null ? SdkPresent(((json['repoOwnerId'] as num?)?.toDouble())!) : const SdkOmitted(),
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? UploadProjectAvatarResponseLinkVariant1Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UploadProjectAvatarResponseLinkVariant1Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'org': org,
-        'productionBranch': productionBranch,
-        ...switch (repo) {
-          SdkPresent<String>(value: final value) => {
-              'repo': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (repoId) {
-          SdkPresent<double>(value: final value) => {
-              'repoId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (repoOwnerId) {
-          SdkPresent<double>(value: final value) => {
-              'repoOwnerId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sourceless) {
-          SdkPresent<UploadProjectAvatarResponseLinkVariant1Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'org': org,
+    'productionBranch': productionBranch,
+    ...switch (repo) {
+      SdkPresent<String>(value: final value) => {'repo': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (repoId) {
+      SdkPresent<double>(value: final value) => {'repoId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (repoOwnerId) {
+      SdkPresent<double>(value: final value) => {'repoOwnerId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sourceless) {
+      SdkPresent<UploadProjectAvatarResponseLinkVariant1Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UploadProjectAvatarResponseLinkVariant2DeployHooksItem {
@@ -501,58 +257,34 @@ class UploadProjectAvatarResponseLinkVariant2DeployHooksItem {
   final String ref;
   final String url;
 
-  const UploadProjectAvatarResponseLinkVariant2DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const UploadProjectAvatarResponseLinkVariant2DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  UploadProjectAvatarResponseLinkVariant2DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseLinkVariant2DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseLinkVariant2DeployHooksItem _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseLinkVariant2DeployHooksItem(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  UploadProjectAvatarResponseLinkVariant2DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => UploadProjectAvatarResponseLinkVariant2DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory UploadProjectAvatarResponseLinkVariant2DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseLinkVariant2DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory UploadProjectAvatarResponseLinkVariant2DeployHooksItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseLinkVariant2DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }

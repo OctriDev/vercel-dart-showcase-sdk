@@ -8,109 +8,60 @@ part of 'sandboxes.dart';
 class SessionCommand {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The arguments of the command.
   final List<String> args;
-
   /// The current working directory of the command.
   final String cwd;
-
   /// Duration of the command execution in milliseconds.
   final SdkOptional<double> durationMs;
-
   /// If the command did finish, the exit code.
   final double? exitCode;
-
   /// The ID of the command.
   final String id;
-
   /// The name of the command.
   final String name;
-
   /// The ID of the session associated with the command.
   final String sessionId;
-
   /// When the command was started, in milliseconds since the epoch.
   final double startedAt;
 
-  const SessionCommand(
-      {required this.args,
-      required this.cwd,
-      this.durationMs = const SdkOmitted(),
-      required this.exitCode,
-      required this.id,
-      required this.name,
-      required this.sessionId,
-      required this.startedAt});
+  const SessionCommand({required this.args, required this.cwd, this.durationMs = const SdkOmitted(), required this.exitCode, required this.id, required this.name, required this.sessionId, required this.startedAt});
 
-  SessionCommand Function(
-      {List<String> args,
-      String cwd,
-      SdkOptional<double> durationMs,
-      double? exitCode,
-      String id,
-      String name,
-      String sessionId,
-      double startedAt}) get copyWith => _copyWith;
+  SessionCommand Function({List<String> args, String cwd, SdkOptional<double> durationMs, double? exitCode, String id, String name, String sessionId, double startedAt}) get copyWith => _copyWith;
 
-  SessionCommand _copyWith(
-          {Object? args = sdkOmittedValue,
-          Object? cwd = sdkOmittedValue,
-          Object? durationMs = sdkOmittedValue,
-          Object? exitCode = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? sessionId = sdkOmittedValue,
-          Object? startedAt = sdkOmittedValue}) =>
-      SessionCommand(
-        args:
-            identical(args, sdkOmittedValue) ? this.args : args as List<String>,
-        cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as String,
-        durationMs: identical(durationMs, sdkOmittedValue)
-            ? this.durationMs
-            : durationMs as SdkOptional<double>,
-        exitCode: identical(exitCode, sdkOmittedValue)
-            ? this.exitCode
-            : exitCode as double?,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        sessionId: identical(sessionId, sdkOmittedValue)
-            ? this.sessionId
-            : sessionId as String,
-        startedAt: identical(startedAt, sdkOmittedValue)
-            ? this.startedAt
-            : startedAt as double,
-      );
+  SessionCommand _copyWith({Object? args = sdkOmittedValue, Object? cwd = sdkOmittedValue, Object? durationMs = sdkOmittedValue, Object? exitCode = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? sessionId = sdkOmittedValue, Object? startedAt = sdkOmittedValue}) => SessionCommand(
+    args: identical(args, sdkOmittedValue) ? this.args : args as List<String>,
+    cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as String,
+    durationMs: identical(durationMs, sdkOmittedValue) ? this.durationMs : durationMs as SdkOptional<double>,
+    exitCode: identical(exitCode, sdkOmittedValue) ? this.exitCode : exitCode as double?,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    sessionId: identical(sessionId, sdkOmittedValue) ? this.sessionId : sessionId as String,
+    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as double,
+  );
 
   factory SessionCommand.fromJson(Map<String, dynamic> json) => SessionCommand(
-        args: ((json['args'] as List?)?.map((e) => e as String).toList())!,
-        cwd: (json['cwd'] as String?)!,
-        durationMs: json['durationMs'] != null
-            ? SdkPresent(((json['durationMs'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        exitCode: json.containsKey('exitCode')
-            ? (json['exitCode'] as num?)?.toDouble()
-            : throw ArgumentError.value(
-                null, 'exitCode', 'Required property is missing'),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        sessionId: (json['sessionId'] as String?)!,
-        startedAt: ((json['startedAt'] as num?)?.toDouble())!,
-      );
+    args: ((json['args'] as List?)?.map((e) => e as String).toList())!,
+    cwd: (json['cwd'] as String?)!,
+    durationMs: json['durationMs'] != null ? SdkPresent(((json['durationMs'] as num?)?.toDouble())!) : const SdkOmitted(),
+    exitCode: json.containsKey('exitCode') ? (json['exitCode'] as num?)?.toDouble() : throw ArgumentError.value(null, 'exitCode', 'Required property is missing'),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    sessionId: (json['sessionId'] as String?)!,
+    startedAt: ((json['startedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'args': args,
-        'cwd': cwd,
-        ...switch (durationMs) {
-          SdkPresent<double>(value: final value) => {
-              'durationMs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'exitCode': exitCode,
-        'id': id,
-        'name': name,
-        'sessionId': sessionId,
-        'startedAt': startedAt,
-      };
+    'args': args,
+    'cwd': cwd,
+    ...switch (durationMs) {
+      SdkPresent<double>(value: final value) => {'durationMs': value,},
+      _ => const <String, dynamic>{},
+    },
+    'exitCode': exitCode,
+    'id': id,
+    'name': name,
+    'sessionId': sessionId,
+    'startedAt': startedAt,
+  };
 }

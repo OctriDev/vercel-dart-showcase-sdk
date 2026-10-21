@@ -8,18 +8,13 @@ part of 'checks_v2.dart';
 class ListDeploymentCheckRunsResponseRunsItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Blocks>
-      blocks;
+  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Blocks> blocks;
   final SdkOptional<double> completedAt;
-  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion>
-      conclusion;
+  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion> conclusion;
   final SdkOptional<String> conclusionText;
   final double createdAt;
   final String deploymentId;
-  final SdkOptional<
-          ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef>
-      expectationRef;
-
+  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef> expectationRef;
   /// Latest aggregate revision applied to this check run.
   final SdkOptional<double> expectationRevision;
   final SdkOptional<String> externalId;
@@ -29,368 +24,142 @@ class ListDeploymentCheckRunsResponseRunsItemVariant0 {
   final SdkOptional<Map<String, Object?>> output;
   final String ownerId;
   final SdkOptional<String> projectId;
-  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Requires>
-      requires;
+  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Requires> requires;
   final SdkOptional<double> startedAt;
   final ListDeploymentCheckRunsResponseRunsItemVariant0Status status;
   final SdkOptional<List<String>> targets;
-  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary>
-      taskSummary;
+  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary> taskSummary;
   final double timeout;
   final double updatedAt;
   final String checkId;
   final dynamic source;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0(
-      {this.blocks = const SdkOmitted(),
-      this.completedAt = const SdkOmitted(),
-      this.conclusion = const SdkOmitted(),
-      this.conclusionText = const SdkOmitted(),
-      required this.createdAt,
-      required this.deploymentId,
-      this.expectationRef = const SdkOmitted(),
-      this.expectationRevision = const SdkOmitted(),
-      this.externalId = const SdkOmitted(),
-      this.externalUrl = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      this.output = const SdkOmitted(),
-      required this.ownerId,
-      this.projectId = const SdkOmitted(),
-      this.requires = const SdkOmitted(),
-      this.startedAt = const SdkOmitted(),
-      required this.status,
-      this.targets = const SdkOmitted(),
-      this.taskSummary = const SdkOmitted(),
-      required this.timeout,
-      required this.updatedAt,
-      required this.checkId,
-      required this.source});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0({this.blocks = const SdkOmitted(), this.completedAt = const SdkOmitted(), this.conclusion = const SdkOmitted(), this.conclusionText = const SdkOmitted(), required this.createdAt, required this.deploymentId, this.expectationRef = const SdkOmitted(), this.expectationRevision = const SdkOmitted(), this.externalId = const SdkOmitted(), this.externalUrl = const SdkOmitted(), required this.id, required this.name, this.output = const SdkOmitted(), required this.ownerId, this.projectId = const SdkOmitted(), this.requires = const SdkOmitted(), this.startedAt = const SdkOmitted(), required this.status, this.targets = const SdkOmitted(), this.taskSummary = const SdkOmitted(), required this.timeout, required this.updatedAt, required this.checkId, required this.source});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0 Function(
-      {SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Blocks>
-          blocks,
-      SdkOptional<double> completedAt,
-      SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion>
-          conclusion,
-      SdkOptional<String> conclusionText,
-      double createdAt,
-      String deploymentId,
-      SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef>
-          expectationRef,
-      SdkOptional<double> expectationRevision,
-      SdkOptional<String> externalId,
-      SdkOptional<String> externalUrl,
-      String id,
-      String name,
-      SdkOptional<Map<String, Object?>> output,
-      String ownerId,
-      SdkOptional<String> projectId,
-      SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Requires>
-          requires,
-      SdkOptional<double> startedAt,
-      ListDeploymentCheckRunsResponseRunsItemVariant0Status status,
-      SdkOptional<List<String>> targets,
-      SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary>
-          taskSummary,
-      double timeout,
-      double updatedAt,
-      String checkId,
-      dynamic source}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0 Function({SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Blocks> blocks, SdkOptional<double> completedAt, SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion> conclusion, SdkOptional<String> conclusionText, double createdAt, String deploymentId, SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef> expectationRef, SdkOptional<double> expectationRevision, SdkOptional<String> externalId, SdkOptional<String> externalUrl, String id, String name, SdkOptional<Map<String, Object?>> output, String ownerId, SdkOptional<String> projectId, SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Requires> requires, SdkOptional<double> startedAt, ListDeploymentCheckRunsResponseRunsItemVariant0Status status, SdkOptional<List<String>> targets, SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary> taskSummary, double timeout, double updatedAt, String checkId, dynamic source}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0 _copyWith(
-          {Object? blocks = sdkOmittedValue,
-          Object? completedAt = sdkOmittedValue,
-          Object? conclusion = sdkOmittedValue,
-          Object? conclusionText = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? deploymentId = sdkOmittedValue,
-          Object? expectationRef = sdkOmittedValue,
-          Object? expectationRevision = sdkOmittedValue,
-          Object? externalId = sdkOmittedValue,
-          Object? externalUrl = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? output = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? requires = sdkOmittedValue,
-          Object? startedAt = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? targets = sdkOmittedValue,
-          Object? taskSummary = sdkOmittedValue,
-          Object? timeout = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? checkId = sdkOmittedValue,
-          Object? source = sdkOmittedValue}) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant0(
-        blocks: identical(blocks, sdkOmittedValue)
-            ? this.blocks
-            : blocks as SdkOptional<
-                ListDeploymentCheckRunsResponseRunsItemVariant0Blocks>,
-        completedAt: identical(completedAt, sdkOmittedValue)
-            ? this.completedAt
-            : completedAt as SdkOptional<double>,
-        conclusion: identical(conclusion, sdkOmittedValue)
-            ? this.conclusion
-            : conclusion as SdkOptional<
-                ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion>,
-        conclusionText: identical(conclusionText, sdkOmittedValue)
-            ? this.conclusionText
-            : conclusionText as SdkOptional<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        deploymentId: identical(deploymentId, sdkOmittedValue)
-            ? this.deploymentId
-            : deploymentId as String,
-        expectationRef: identical(expectationRef, sdkOmittedValue)
-            ? this.expectationRef
-            : expectationRef as SdkOptional<
-                ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef>,
-        expectationRevision: identical(expectationRevision, sdkOmittedValue)
-            ? this.expectationRevision
-            : expectationRevision as SdkOptional<double>,
-        externalId: identical(externalId, sdkOmittedValue)
-            ? this.externalId
-            : externalId as SdkOptional<String>,
-        externalUrl: identical(externalUrl, sdkOmittedValue)
-            ? this.externalUrl
-            : externalUrl as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        output: identical(output, sdkOmittedValue)
-            ? this.output
-            : output as SdkOptional<Map<String, Object?>>,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        requires: identical(requires, sdkOmittedValue)
-            ? this.requires
-            : requires as SdkOptional<
-                ListDeploymentCheckRunsResponseRunsItemVariant0Requires>,
-        startedAt: identical(startedAt, sdkOmittedValue)
-            ? this.startedAt
-            : startedAt as SdkOptional<double>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as ListDeploymentCheckRunsResponseRunsItemVariant0Status,
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as SdkOptional<List<String>>,
-        taskSummary: identical(taskSummary, sdkOmittedValue)
-            ? this.taskSummary
-            : taskSummary as SdkOptional<
-                ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary>,
-        timeout: identical(timeout, sdkOmittedValue)
-            ? this.timeout
-            : timeout as double,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-        checkId: identical(checkId, sdkOmittedValue)
-            ? this.checkId
-            : checkId as String,
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source as dynamic,
-      );
+  ListDeploymentCheckRunsResponseRunsItemVariant0 _copyWith({Object? blocks = sdkOmittedValue, Object? completedAt = sdkOmittedValue, Object? conclusion = sdkOmittedValue, Object? conclusionText = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? expectationRef = sdkOmittedValue, Object? expectationRevision = sdkOmittedValue, Object? externalId = sdkOmittedValue, Object? externalUrl = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? output = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? requires = sdkOmittedValue, Object? startedAt = sdkOmittedValue, Object? status = sdkOmittedValue, Object? targets = sdkOmittedValue, Object? taskSummary = sdkOmittedValue, Object? timeout = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? checkId = sdkOmittedValue, Object? source = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0(
+    blocks: identical(blocks, sdkOmittedValue) ? this.blocks : blocks as SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Blocks>,
+    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
+    conclusion: identical(conclusion, sdkOmittedValue) ? this.conclusion : conclusion as SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion>,
+    conclusionText: identical(conclusionText, sdkOmittedValue) ? this.conclusionText : conclusionText as SdkOptional<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
+    expectationRef: identical(expectationRef, sdkOmittedValue) ? this.expectationRef : expectationRef as SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef>,
+    expectationRevision: identical(expectationRevision, sdkOmittedValue) ? this.expectationRevision : expectationRevision as SdkOptional<double>,
+    externalId: identical(externalId, sdkOmittedValue) ? this.externalId : externalId as SdkOptional<String>,
+    externalUrl: identical(externalUrl, sdkOmittedValue) ? this.externalUrl : externalUrl as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    output: identical(output, sdkOmittedValue) ? this.output : output as SdkOptional<Map<String, Object?>>,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    requires: identical(requires, sdkOmittedValue) ? this.requires : requires as SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0Requires>,
+    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as SdkOptional<double>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as ListDeploymentCheckRunsResponseRunsItemVariant0Status,
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<List<String>>,
+    taskSummary: identical(taskSummary, sdkOmittedValue) ? this.taskSummary : taskSummary as SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary>,
+    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as double,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+    checkId: identical(checkId, sdkOmittedValue) ? this.checkId : checkId as String,
+    source: identical(source, sdkOmittedValue) ? this.source : source as dynamic,
+  );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant0(
-        blocks: json['blocks'] != null
-            ? SdkPresent((json['blocks'] != null
-                ? ListDeploymentCheckRunsResponseRunsItemVariant0Blocks
-                    .fromJson(json['blocks'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        completedAt: json['completedAt'] != null
-            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        conclusion: json['conclusion'] != null
-            ? SdkPresent((json['conclusion'] != null
-                ? ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion
-                    .fromJson(json['conclusion'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        conclusionText: json['conclusionText'] != null
-            ? SdkPresent((json['conclusionText'] as String?)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        deploymentId: (json['deploymentId'] as String?)!,
-        expectationRef: json['expectationRef'] != null
-            ? SdkPresent((json['expectationRef'] != null
-                ? ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef
-                    .fromJson(json['expectationRef'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        expectationRevision: json['expectationRevision'] != null
-            ? SdkPresent(((json['expectationRevision'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        externalId: json['externalId'] != null
-            ? SdkPresent((json['externalId'] as String?)!)
-            : const SdkOmitted(),
-        externalUrl: json['externalUrl'] != null
-            ? SdkPresent((json['externalUrl'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        output: json['output'] != null
-            ? SdkPresent((json['output'] == null
-                ? null
-                : Map<String, dynamic>.from(json['output'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        ownerId: (json['ownerId'] as String?)!,
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        requires: json['requires'] != null
-            ? SdkPresent((json['requires'] != null
-                ? ListDeploymentCheckRunsResponseRunsItemVariant0Requires
-                    .fromJson(json['requires'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        startedAt: json['startedAt'] != null
-            ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        status: (json['status'] != null
-            ? ListDeploymentCheckRunsResponseRunsItemVariant0Status.fromJson(
-                json['status'] as String)
-            : null)!,
-        targets: json['targets'] != null
-            ? SdkPresent(
-                ((json['targets'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        taskSummary: json['taskSummary'] != null
-            ? SdkPresent((json['taskSummary'] != null
-                ? ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary
-                    .fromJson(json['taskSummary'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        timeout: ((json['timeout'] as num?)?.toDouble())!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-        checkId: (json['checkId'] as String?)!,
-        source: (json['source'])!,
-      );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0(
+    blocks: json['blocks'] != null ? SdkPresent((json['blocks'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0Blocks.fromJson(json['blocks'] as String) : null)!) : const SdkOmitted(),
+    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    conclusion: json['conclusion'] != null ? SdkPresent((json['conclusion'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion.fromJson(json['conclusion'] as String) : null)!) : const SdkOmitted(),
+    conclusionText: json['conclusionText'] != null ? SdkPresent((json['conclusionText'] as String?)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    deploymentId: (json['deploymentId'] as String?)!,
+    expectationRef: json['expectationRef'] != null ? SdkPresent((json['expectationRef'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef.fromJson(json['expectationRef'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    expectationRevision: json['expectationRevision'] != null ? SdkPresent(((json['expectationRevision'] as num?)?.toDouble())!) : const SdkOmitted(),
+    externalId: json['externalId'] != null ? SdkPresent((json['externalId'] as String?)!) : const SdkOmitted(),
+    externalUrl: json['externalUrl'] != null ? SdkPresent((json['externalUrl'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    output: json['output'] != null ? SdkPresent((json['output'] == null ? null : Map<String, dynamic>.from(json['output'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    ownerId: (json['ownerId'] as String?)!,
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    requires: json['requires'] != null ? SdkPresent((json['requires'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0Requires.fromJson(json['requires'] as String) : null)!) : const SdkOmitted(),
+    startedAt: json['startedAt'] != null ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    status: (json['status'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0Status.fromJson(json['status'] as String) : null)!,
+    targets: json['targets'] != null ? SdkPresent(((json['targets'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    taskSummary: json['taskSummary'] != null ? SdkPresent((json['taskSummary'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary.fromJson(json['taskSummary'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    timeout: ((json['timeout'] as num?)?.toDouble())!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+    checkId: (json['checkId'] as String?)!,
+    source: (json['source'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (blocks) {
-          SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0Blocks>(
-            value: final value
-          ) =>
-            {
-              'blocks': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (completedAt) {
-          SdkPresent<double>(value: final value) => {
-              'completedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (conclusion) {
-          SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion>(
-            value: final value
-          ) =>
-            {
-              'conclusion': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (conclusionText) {
-          SdkPresent<String>(value: final value) => {
-              'conclusionText': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'deploymentId': deploymentId,
-        ...switch (expectationRef) {
-          SdkPresent<
-                ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef>(
-            value: final value
-          ) =>
-            {
-              'expectationRef': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (expectationRevision) {
-          SdkPresent<double>(value: final value) => {
-              'expectationRevision': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (externalId) {
-          SdkPresent<String>(value: final value) => {
-              'externalId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (externalUrl) {
-          SdkPresent<String>(value: final value) => {
-              'externalUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        ...switch (output) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'output': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'ownerId': ownerId,
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requires) {
-          SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0Requires>(
-            value: final value
-          ) =>
-            {
-              'requires': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startedAt) {
-          SdkPresent<double>(value: final value) => {
-              'startedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'status': status.toJson(),
-        ...switch (targets) {
-          SdkPresent<List<String>>(value: final value) => {
-              'targets': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (taskSummary) {
-          SdkPresent<
-                ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary>(
-            value: final value
-          ) =>
-            {
-              'taskSummary': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'timeout': timeout,
-        'updatedAt': updatedAt,
-        'checkId': checkId,
-        'source': source,
-      };
+    ...switch (blocks) {
+      SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0Blocks>(value: final value) => {'blocks': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (completedAt) {
+      SdkPresent<double>(value: final value) => {'completedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (conclusion) {
+      SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0Conclusion>(value: final value) => {'conclusion': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (conclusionText) {
+      SdkPresent<String>(value: final value) => {'conclusionText': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'deploymentId': deploymentId,
+    ...switch (expectationRef) {
+      SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef>(value: final value) => {'expectationRef': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (expectationRevision) {
+      SdkPresent<double>(value: final value) => {'expectationRevision': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (externalId) {
+      SdkPresent<String>(value: final value) => {'externalId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (externalUrl) {
+      SdkPresent<String>(value: final value) => {'externalUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    ...switch (output) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'output': value,},
+      _ => const <String, dynamic>{},
+    },
+    'ownerId': ownerId,
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requires) {
+      SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0Requires>(value: final value) => {'requires': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startedAt) {
+      SdkPresent<double>(value: final value) => {'startedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'status': status.toJson(),
+    ...switch (targets) {
+      SdkPresent<List<String>>(value: final value) => {'targets': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (taskSummary) {
+      SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary>(value: final value) => {'taskSummary': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'timeout': timeout,
+    'updatedAt': updatedAt,
+    'checkId': checkId,
+    'source': source,
+  };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef {
@@ -401,53 +170,30 @@ class ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef {
   final String jobDefinitionId;
   final double jobRunAttempt;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef(
-      {required this.invocationAttempt,
-      required this.invocationId,
-      required this.jobDefinitionId,
-      required this.jobRunAttempt});
+  const ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef({required this.invocationAttempt, required this.invocationId, required this.jobDefinitionId, required this.jobRunAttempt});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef Function(
-      {double invocationAttempt,
-      String invocationId,
-      String jobDefinitionId,
-      double jobRunAttempt}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef Function({double invocationAttempt, String invocationId, String jobDefinitionId, double jobRunAttempt}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef _copyWith(
-          {Object? invocationAttempt = sdkOmittedValue,
-          Object? invocationId = sdkOmittedValue,
-          Object? jobDefinitionId = sdkOmittedValue,
-          Object? jobRunAttempt = sdkOmittedValue}) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef(
-        invocationAttempt: identical(invocationAttempt, sdkOmittedValue)
-            ? this.invocationAttempt
-            : invocationAttempt as double,
-        invocationId: identical(invocationId, sdkOmittedValue)
-            ? this.invocationId
-            : invocationId as String,
-        jobDefinitionId: identical(jobDefinitionId, sdkOmittedValue)
-            ? this.jobDefinitionId
-            : jobDefinitionId as String,
-        jobRunAttempt: identical(jobRunAttempt, sdkOmittedValue)
-            ? this.jobRunAttempt
-            : jobRunAttempt as double,
-      );
+  ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef _copyWith({Object? invocationAttempt = sdkOmittedValue, Object? invocationId = sdkOmittedValue, Object? jobDefinitionId = sdkOmittedValue, Object? jobRunAttempt = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef(
+    invocationAttempt: identical(invocationAttempt, sdkOmittedValue) ? this.invocationAttempt : invocationAttempt as double,
+    invocationId: identical(invocationId, sdkOmittedValue) ? this.invocationId : invocationId as String,
+    jobDefinitionId: identical(jobDefinitionId, sdkOmittedValue) ? this.jobDefinitionId : jobDefinitionId as String,
+    jobRunAttempt: identical(jobRunAttempt, sdkOmittedValue) ? this.jobRunAttempt : jobRunAttempt as double,
+  );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef.fromJson(
-          Map<String, dynamic> json) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef(
-        invocationAttempt: ((json['invocationAttempt'] as num?)?.toDouble())!,
-        invocationId: (json['invocationId'] as String?)!,
-        jobDefinitionId: (json['jobDefinitionId'] as String?)!,
-        jobRunAttempt: ((json['jobRunAttempt'] as num?)?.toDouble())!,
-      );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant1ExpectationRef(
+    invocationAttempt: ((json['invocationAttempt'] as num?)?.toDouble())!,
+    invocationId: (json['invocationId'] as String?)!,
+    jobDefinitionId: (json['jobDefinitionId'] as String?)!,
+    jobRunAttempt: ((json['jobRunAttempt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'invocationAttempt': invocationAttempt,
-        'invocationId': invocationId,
-        'jobDefinitionId': jobDefinitionId,
-        'jobRunAttempt': jobRunAttempt,
-      };
+    'invocationAttempt': invocationAttempt,
+    'invocationId': invocationId,
+    'jobDefinitionId': jobDefinitionId,
+    'jobRunAttempt': jobRunAttempt,
+  };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary {
@@ -458,50 +204,30 @@ class ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary {
   final double succeeded;
   final double total;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary(
-      {required this.failed,
-      required this.pending,
-      required this.succeeded,
-      required this.total});
+  const ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary({required this.failed, required this.pending, required this.succeeded, required this.total});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary Function(
-      {double failed,
-      double pending,
-      double succeeded,
-      double total}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary Function({double failed, double pending, double succeeded, double total}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary _copyWith(
-          {Object? failed = sdkOmittedValue,
-          Object? pending = sdkOmittedValue,
-          Object? succeeded = sdkOmittedValue,
-          Object? total = sdkOmittedValue}) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary(
-        failed:
-            identical(failed, sdkOmittedValue) ? this.failed : failed as double,
-        pending: identical(pending, sdkOmittedValue)
-            ? this.pending
-            : pending as double,
-        succeeded: identical(succeeded, sdkOmittedValue)
-            ? this.succeeded
-            : succeeded as double,
-        total: identical(total, sdkOmittedValue) ? this.total : total as double,
-      );
+  ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary _copyWith({Object? failed = sdkOmittedValue, Object? pending = sdkOmittedValue, Object? succeeded = sdkOmittedValue, Object? total = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary(
+    failed: identical(failed, sdkOmittedValue) ? this.failed : failed as double,
+    pending: identical(pending, sdkOmittedValue) ? this.pending : pending as double,
+    succeeded: identical(succeeded, sdkOmittedValue) ? this.succeeded : succeeded as double,
+    total: identical(total, sdkOmittedValue) ? this.total : total as double,
+  );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary.fromJson(
-          Map<String, dynamic> json) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary(
-        failed: ((json['failed'] as num?)?.toDouble())!,
-        pending: ((json['pending'] as num?)?.toDouble())!,
-        succeeded: ((json['succeeded'] as num?)?.toDouble())!,
-        total: ((json['total'] as num?)?.toDouble())!,
-      );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant1TaskSummary(
+    failed: ((json['failed'] as num?)?.toDouble())!,
+    pending: ((json['pending'] as num?)?.toDouble())!,
+    succeeded: ((json['succeeded'] as num?)?.toDouble())!,
+    total: ((json['total'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'failed': failed,
-        'pending': pending,
-        'succeeded': succeeded,
-        'total': total,
-      };
+    'failed': failed,
+    'pending': pending,
+    'succeeded': succeeded,
+    'total': total,
+  };
 }
 
 /// Config-driven CI task — check run `source` only (no parent check).
@@ -511,132 +237,64 @@ class ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0 {
   final SdkOptional<double> invocationAttempt;
   final String invocationId;
   final String jobDefinitionId;
-  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin
-      origin;
-  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind
-      subKind;
+  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin origin;
+  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind subKind;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0(
-      {this.invocationAttempt = const SdkOmitted(),
-      required this.invocationId,
-      required this.jobDefinitionId,
-      required this.origin,
-      required this.subKind});
+  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0({this.invocationAttempt = const SdkOmitted(), required this.invocationId, required this.jobDefinitionId, required this.origin, required this.subKind});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0 Function(
-      {SdkOptional<double> invocationAttempt,
-      String invocationId,
-      String jobDefinitionId,
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin
-          origin,
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind
-          subKind}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0 Function({SdkOptional<double> invocationAttempt, String invocationId, String jobDefinitionId, ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin origin, ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind subKind}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0 _copyWith(
-          {Object? invocationAttempt = sdkOmittedValue,
-          Object? invocationId = sdkOmittedValue,
-          Object? jobDefinitionId = sdkOmittedValue,
-          Object? origin = sdkOmittedValue,
-          Object? subKind = sdkOmittedValue}) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0(
-        invocationAttempt: identical(invocationAttempt, sdkOmittedValue)
-            ? this.invocationAttempt
-            : invocationAttempt as SdkOptional<double>,
-        invocationId: identical(invocationId, sdkOmittedValue)
-            ? this.invocationId
-            : invocationId as String,
-        jobDefinitionId: identical(jobDefinitionId, sdkOmittedValue)
-            ? this.jobDefinitionId
-            : jobDefinitionId as String,
-        origin: identical(origin, sdkOmittedValue)
-            ? this.origin
-            : origin
-                as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin,
-        subKind: identical(subKind, sdkOmittedValue)
-            ? this.subKind
-            : subKind
-                as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind,
-      );
+  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0 _copyWith({Object? invocationAttempt = sdkOmittedValue, Object? invocationId = sdkOmittedValue, Object? jobDefinitionId = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? subKind = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0(
+    invocationAttempt: identical(invocationAttempt, sdkOmittedValue) ? this.invocationAttempt : invocationAttempt as SdkOptional<double>,
+    invocationId: identical(invocationId, sdkOmittedValue) ? this.invocationId : invocationId as String,
+    jobDefinitionId: identical(jobDefinitionId, sdkOmittedValue) ? this.jobDefinitionId : jobDefinitionId as String,
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin,
+    subKind: identical(subKind, sdkOmittedValue) ? this.subKind : subKind as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind,
+  );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0(
-        invocationAttempt: json['invocationAttempt'] != null
-            ? SdkPresent(((json['invocationAttempt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        invocationId: (json['invocationId'] as String?)!,
-        jobDefinitionId: (json['jobDefinitionId'] as String?)!,
-        origin: (json['origin'] != null
-            ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin
-                .fromJson(json['origin'] as String)
-            : null)!,
-        subKind: (json['subKind'] != null
-            ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind
-                .fromJson(json['subKind'] as String)
-            : null)!,
-      );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0(
+    invocationAttempt: json['invocationAttempt'] != null ? SdkPresent(((json['invocationAttempt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    invocationId: (json['invocationId'] as String?)!,
+    jobDefinitionId: (json['jobDefinitionId'] as String?)!,
+    origin: (json['origin'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0Origin.fromJson(json['origin'] as String) : null)!,
+    subKind: (json['subKind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant0SubKind.fromJson(json['subKind'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (invocationAttempt) {
-          SdkPresent<double>(value: final value) => {
-              'invocationAttempt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'invocationId': invocationId,
-        'jobDefinitionId': jobDefinitionId,
-        'origin': origin.toJson(),
-        'subKind': subKind.toJson(),
-      };
+    ...switch (invocationAttempt) {
+      SdkPresent<double>(value: final value) => {'invocationAttempt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'invocationId': invocationId,
+    'jobDefinitionId': jobDefinitionId,
+    'origin': origin.toJson(),
+    'subKind': subKind.toJson(),
+  };
 }
 
 /// CI sentinel — check run `source` only (no parent check).
 class ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin
-      origin;
-  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind
-      subKind;
+  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin origin;
+  final ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind subKind;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1(
-      {required this.origin, required this.subKind});
+  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1({required this.origin, required this.subKind});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1 Function(
-      {ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin
-          origin,
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind
-          subKind}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1 Function({ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin origin, ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind subKind}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1 _copyWith(
-          {Object? origin = sdkOmittedValue,
-          Object? subKind = sdkOmittedValue}) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1(
-        origin: identical(origin, sdkOmittedValue)
-            ? this.origin
-            : origin
-                as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin,
-        subKind: identical(subKind, sdkOmittedValue)
-            ? this.subKind
-            : subKind
-                as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind,
-      );
+  ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1 _copyWith({Object? origin = sdkOmittedValue, Object? subKind = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1(
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin,
+    subKind: identical(subKind, sdkOmittedValue) ? this.subKind : subKind as ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind,
+  );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1(
-        origin: (json['origin'] != null
-            ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin
-                .fromJson(json['origin'] as String)
-            : null)!,
-        subKind: (json['subKind'] != null
-            ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind
-                .fromJson(json['subKind'] as String)
-            : null)!,
-      );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1(
+    origin: (json['origin'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin.fromJson(json['origin'] as String) : null)!,
+    subKind: (json['subKind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind.fromJson(json['subKind'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'origin': origin.toJson(),
-        'subKind': subKind.toJson(),
-      };
+    'origin': origin.toJson(),
+    'subKind': subKind.toJson(),
+  };
 }

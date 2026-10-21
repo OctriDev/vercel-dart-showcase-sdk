@@ -10,48 +10,24 @@ sealed class CreateDeploymentResponse {
   const CreateDeploymentResponse();
   factory CreateDeploymentResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CreateDeploymentResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateDeploymentResponseCreateDeploymentResponseVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateDeploymentResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateDeploymentResponseCreateDeploymentResponseVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateDeploymentResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDeploymentResponseCreateDeploymentResponseVariant0(value); } } catch (_) {}
+      try { final value = CreateDeploymentResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDeploymentResponseCreateDeploymentResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return CreateDeploymentResponseCreateDeploymentResponseVariant0(
-          CreateDeploymentResponseVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateDeploymentResponseCreateDeploymentResponseVariant1(
-          CreateDeploymentResponseVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return CreateDeploymentResponseCreateDeploymentResponseVariant0(CreateDeploymentResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateDeploymentResponseCreateDeploymentResponseVariant1(CreateDeploymentResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for CreateDeploymentResponse");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentResponseCreateDeploymentResponseVariant0
-    extends CreateDeploymentResponse {
+final class CreateDeploymentResponseCreateDeploymentResponseVariant0 extends CreateDeploymentResponse {
   final CreateDeploymentResponseVariant0 value;
   const CreateDeploymentResponseCreateDeploymentResponseVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateDeploymentResponseCreateDeploymentResponseVariant1
-    extends CreateDeploymentResponse {
+final class CreateDeploymentResponseCreateDeploymentResponseVariant1 extends CreateDeploymentResponse {
   final CreateDeploymentResponseVariant1 value;
   const CreateDeploymentResponseCreateDeploymentResponseVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

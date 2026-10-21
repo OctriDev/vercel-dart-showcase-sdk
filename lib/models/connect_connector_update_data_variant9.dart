@@ -8,100 +8,62 @@ part of 'connect.dart';
 class ConnectConnectorUpdateDataVariant9 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Sendblue API key id (`sb-api-key-id`).
   final SdkOptional<String> apiKeyId;
-
   /// E.164 Sendblue lines this connector sends and receives on. Used as the connector's display name, and the only lines its webhooks are registered for; an empty array clears them, which also removes the webhook subscription.
   final SdkOptional<List<String>> phoneNumbers;
 
-  const ConnectConnectorUpdateDataVariant9(
-      {this.apiKeyId = const SdkOmitted(),
-      this.phoneNumbers = const SdkOmitted()});
+  const ConnectConnectorUpdateDataVariant9({this.apiKeyId = const SdkOmitted(), this.phoneNumbers = const SdkOmitted()});
 
-  ConnectConnectorUpdateDataVariant9 Function(
-      {SdkOptional<String> apiKeyId,
-      SdkOptional<List<String>> phoneNumbers}) get copyWith => _copyWith;
+  ConnectConnectorUpdateDataVariant9 Function({SdkOptional<String> apiKeyId, SdkOptional<List<String>> phoneNumbers}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateDataVariant9 _copyWith(
-          {Object? apiKeyId = sdkOmittedValue,
-          Object? phoneNumbers = sdkOmittedValue}) =>
-      ConnectConnectorUpdateDataVariant9(
-        apiKeyId: identical(apiKeyId, sdkOmittedValue)
-            ? this.apiKeyId
-            : apiKeyId as SdkOptional<String>,
-        phoneNumbers: identical(phoneNumbers, sdkOmittedValue)
-            ? this.phoneNumbers
-            : phoneNumbers as SdkOptional<List<String>>,
-      );
+  ConnectConnectorUpdateDataVariant9 _copyWith({Object? apiKeyId = sdkOmittedValue, Object? phoneNumbers = sdkOmittedValue}) => ConnectConnectorUpdateDataVariant9(
+    apiKeyId: identical(apiKeyId, sdkOmittedValue) ? this.apiKeyId : apiKeyId as SdkOptional<String>,
+    phoneNumbers: identical(phoneNumbers, sdkOmittedValue) ? this.phoneNumbers : phoneNumbers as SdkOptional<List<String>>,
+  );
 
-  factory ConnectConnectorUpdateDataVariant9.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorUpdateDataVariant9(
-        apiKeyId: json['apiKeyId'] != null
-            ? SdkPresent((json['apiKeyId'] as String?)!)
-            : const SdkOmitted(),
-        phoneNumbers: json['phoneNumbers'] != null
-            ? SdkPresent(((json['phoneNumbers'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorUpdateDataVariant9.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateDataVariant9(
+    apiKeyId: json['apiKeyId'] != null ? SdkPresent((json['apiKeyId'] as String?)!) : const SdkOmitted(),
+    phoneNumbers: json['phoneNumbers'] != null ? SdkPresent(((json['phoneNumbers'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (apiKeyId) {
-          SdkPresent<String>(value: final value) => {
-              'apiKeyId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (phoneNumbers) {
-          SdkPresent<List<String>>(value: final value) => {
-              'phoneNumbers': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (apiKeyId) {
+      SdkPresent<String>(value: final value) => {'apiKeyId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (phoneNumbers) {
+      SdkPresent<List<String>>(value: final value) => {'phoneNumbers': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `data` wire field.
 class ConnectConnectorUpdateDataVariant10 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether Connect should recreate the Photon webhook.
   final SdkOptional<bool> repairWebhook;
 
-  const ConnectConnectorUpdateDataVariant10(
-      {this.repairWebhook = const SdkOmitted()});
+  const ConnectConnectorUpdateDataVariant10({this.repairWebhook = const SdkOmitted()});
 
-  ConnectConnectorUpdateDataVariant10 Function(
-      {SdkOptional<bool> repairWebhook}) get copyWith => _copyWith;
+  ConnectConnectorUpdateDataVariant10 Function({SdkOptional<bool> repairWebhook}) get copyWith => _copyWith;
 
-  ConnectConnectorUpdateDataVariant10 _copyWith(
-          {Object? repairWebhook = sdkOmittedValue}) =>
-      ConnectConnectorUpdateDataVariant10(
-        repairWebhook: identical(repairWebhook, sdkOmittedValue)
-            ? this.repairWebhook
-            : repairWebhook as SdkOptional<bool>,
-      );
+  ConnectConnectorUpdateDataVariant10 _copyWith({Object? repairWebhook = sdkOmittedValue}) => ConnectConnectorUpdateDataVariant10(
+    repairWebhook: identical(repairWebhook, sdkOmittedValue) ? this.repairWebhook : repairWebhook as SdkOptional<bool>,
+  );
 
-  factory ConnectConnectorUpdateDataVariant10.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorUpdateDataVariant10(
-        repairWebhook: json['repairWebhook'] != null
-            ? SdkPresent((json['repairWebhook'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorUpdateDataVariant10.fromJson(Map<String, dynamic> json) => ConnectConnectorUpdateDataVariant10(
+    repairWebhook: json['repairWebhook'] != null ? SdkPresent((json['repairWebhook'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (repairWebhook) {
-          SdkPresent<bool>(value: final value) => {
-              'repairWebhook': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (repairWebhook) {
+      SdkPresent<bool>(value: final value) => {'repairWebhook': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class ConnectConnectorUpdateData {
@@ -109,250 +71,104 @@ sealed class ConnectConnectorUpdateData {
   static const String constructionSurface = 'named';
   const ConnectConnectorUpdateData();
   factory ConnectConnectorUpdateData.fromJson(Object? json) {
-    if (json is Map) {
-      return ConnectConnectorUpdateDataMap(Map<String, Object?>.from(json));
-    }
+    if (json is Map) { return ConnectConnectorUpdateDataMap(Map<String, Object?>.from(json)); }
     if (json is Map<String, dynamic>) {
-      try {
-        final value = ConnectConnectorUpdateDataVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant5.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant6.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant7.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant8.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant9.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = ConnectConnectorUpdateDataVariant10.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant8.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant9.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9(value); } } catch (_) {}
+      try { final value = ConnectConnectorUpdateDataVariant10.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10(value); } } catch (_) {}
     }
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0(
-          ConnectConnectorUpdateDataVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1(
-          ConnectConnectorUpdateDataVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2(
-          ConnectConnectorUpdateDataVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3(
-          ConnectConnectorUpdateDataVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4(
-          ConnectConnectorUpdateDataVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5(
-          ConnectConnectorUpdateDataVariant5.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6(
-          ConnectConnectorUpdateDataVariant6.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7(
-          ConnectConnectorUpdateDataVariant7.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8(
-          ConnectConnectorUpdateDataVariant8.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9(
-          ConnectConnectorUpdateDataVariant9.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10(
-          ConnectConnectorUpdateDataVariant10.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0(ConnectConnectorUpdateDataVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1(ConnectConnectorUpdateDataVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2(ConnectConnectorUpdateDataVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3(ConnectConnectorUpdateDataVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4(ConnectConnectorUpdateDataVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5(ConnectConnectorUpdateDataVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6(ConnectConnectorUpdateDataVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7(ConnectConnectorUpdateDataVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8(ConnectConnectorUpdateDataVariant8.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9(ConnectConnectorUpdateDataVariant9.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10(ConnectConnectorUpdateDataVariant10.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for ConnectConnectorUpdateData");
   }
   Object? toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant0 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant1 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant2 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant3 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant4 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant5 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant5(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant6 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant6(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant7 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant7(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant8 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant8(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant9 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant9(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10
-    extends ConnectConnectorUpdateData {
+final class ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10 extends ConnectConnectorUpdateData {
   final ConnectConnectorUpdateDataVariant10 value;
-  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectConnectorUpdateDataConnectConnectorUpdateDataVariant10(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 final class ConnectConnectorUpdateDataMap extends ConnectConnectorUpdateData {
   final Map<String, Object?> value;
   const ConnectConnectorUpdateDataMap(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }

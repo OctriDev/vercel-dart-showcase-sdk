@@ -10,38 +10,24 @@ class GetConnectorTokenRequestSubjectVariant0 {
   final GetConnectorTokenRequestSubjectVariant0Type type_;
   final Map<String, dynamic> additionalProperties;
 
-  const GetConnectorTokenRequestSubjectVariant0(
-      {required this.type_,
-      this.additionalProperties = const <String, dynamic>{}});
+  const GetConnectorTokenRequestSubjectVariant0({required this.type_, this.additionalProperties = const <String, dynamic>{}});
 
-  GetConnectorTokenRequestSubjectVariant0 Function(
-          {GetConnectorTokenRequestSubjectVariant0Type type_})
-      get copyWith => _copyWith;
+  GetConnectorTokenRequestSubjectVariant0 Function({GetConnectorTokenRequestSubjectVariant0Type type_}) get copyWith => _copyWith;
 
-  GetConnectorTokenRequestSubjectVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      GetConnectorTokenRequestSubjectVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetConnectorTokenRequestSubjectVariant0Type,
-        additionalProperties: additionalProperties,
-      );
+  GetConnectorTokenRequestSubjectVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => GetConnectorTokenRequestSubjectVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetConnectorTokenRequestSubjectVariant0Type,
+    additionalProperties: additionalProperties,
+  );
 
-  factory GetConnectorTokenRequestSubjectVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetConnectorTokenRequestSubjectVariant0(
-        type_: (json['type'] != null
-            ? GetConnectorTokenRequestSubjectVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{'type'}.contains(key)),
-      );
+  factory GetConnectorTokenRequestSubjectVariant0.fromJson(Map<String, dynamic> json) => GetConnectorTokenRequestSubjectVariant0(
+    type_: (json['type'] != null ? GetConnectorTokenRequestSubjectVariant0Type.fromJson(json['type'] as String) : null)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_.toJson(),
-      };
+    ...additionalProperties,
+    'type': type_.toJson(),
+  };
 }
 
 class GetConnectorTokenRequestSubjectVariant1 {
@@ -52,68 +38,36 @@ class GetConnectorTokenRequestSubjectVariant1 {
   final SdkOptional<String> issuer;
   final Map<String, dynamic> additionalProperties;
 
-  const GetConnectorTokenRequestSubjectVariant1(
-      {required this.type_,
-      this.id = const SdkOmitted(),
-      this.issuer = const SdkOmitted(),
-      this.additionalProperties = const <String, dynamic>{}});
+  const GetConnectorTokenRequestSubjectVariant1({required this.type_, this.id = const SdkOmitted(), this.issuer = const SdkOmitted(), this.additionalProperties = const <String, dynamic>{}});
 
-  GetConnectorTokenRequestSubjectVariant1 Function(
-      {GetConnectorTokenRequestSubjectVariant1Type type_,
-      SdkOptional<String> id,
-      SdkOptional<String> issuer}) get copyWith => _copyWith;
+  GetConnectorTokenRequestSubjectVariant1 Function({GetConnectorTokenRequestSubjectVariant1Type type_, SdkOptional<String> id, SdkOptional<String> issuer}) get copyWith => _copyWith;
 
-  GetConnectorTokenRequestSubjectVariant1 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? issuer = sdkOmittedValue}) =>
-      GetConnectorTokenRequestSubjectVariant1(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetConnectorTokenRequestSubjectVariant1Type,
-        id: identical(id, sdkOmittedValue)
-            ? this.id
-            : id as SdkOptional<String>,
-        issuer: identical(issuer, sdkOmittedValue)
-            ? this.issuer
-            : issuer as SdkOptional<String>,
-        additionalProperties: additionalProperties,
-      );
+  GetConnectorTokenRequestSubjectVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? id = sdkOmittedValue, Object? issuer = sdkOmittedValue}) => GetConnectorTokenRequestSubjectVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetConnectorTokenRequestSubjectVariant1Type,
+    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
+    issuer: identical(issuer, sdkOmittedValue) ? this.issuer : issuer as SdkOptional<String>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory GetConnectorTokenRequestSubjectVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetConnectorTokenRequestSubjectVariant1(
-        type_: (json['type'] != null
-            ? GetConnectorTokenRequestSubjectVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        id: json['id'] != null
-            ? SdkPresent((json['id'] as String?)!)
-            : const SdkOmitted(),
-        issuer: json['issuer'] != null
-            ? SdkPresent((json['issuer'] as String?)!)
-            : const SdkOmitted(),
-        additionalProperties: Map.of(json)
-          ..removeWhere(
-              (key, _) => const <String>{'type', 'id', 'issuer'}.contains(key)),
-      );
+  factory GetConnectorTokenRequestSubjectVariant1.fromJson(Map<String, dynamic> json) => GetConnectorTokenRequestSubjectVariant1(
+    type_: (json['type'] != null ? GetConnectorTokenRequestSubjectVariant1Type.fromJson(json['type'] as String) : null)!,
+    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
+    issuer: json['issuer'] != null ? SdkPresent((json['issuer'] as String?)!) : const SdkOmitted(),
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type', 'id', 'issuer'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_.toJson(),
-        ...switch (id) {
-          SdkPresent<String>(value: final value) => {
-              'id': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (issuer) {
-          SdkPresent<String>(value: final value) => {
-              'issuer': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...additionalProperties,
+    'type': type_.toJson(),
+    ...switch (id) {
+      SdkPresent<String>(value: final value) => {'id': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (issuer) {
+      SdkPresent<String>(value: final value) => {'issuer': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetConnectorTokenRequestSubjectVariant2 {
@@ -126,107 +80,48 @@ class GetConnectorTokenRequestSubjectVariant2 {
   final SdkOptional<Map<String, Object?>> additionalClaims;
   final Map<String, dynamic> additionalProperties;
 
-  const GetConnectorTokenRequestSubjectVariant2(
-      {required this.type_,
-      this.sub = const SdkOmitted(),
-      this.iss = const SdkOmitted(),
-      this.aud = const SdkOmitted(),
-      this.additionalClaims = const SdkOmitted(),
-      this.additionalProperties = const <String, dynamic>{}});
+  const GetConnectorTokenRequestSubjectVariant2({required this.type_, this.sub = const SdkOmitted(), this.iss = const SdkOmitted(), this.aud = const SdkOmitted(), this.additionalClaims = const SdkOmitted(), this.additionalProperties = const <String, dynamic>{}});
 
-  GetConnectorTokenRequestSubjectVariant2 Function(
-          {GetConnectorTokenRequestSubjectVariant2Type type_,
-          SdkOptional<String> sub,
-          SdkOptional<String> iss,
-          SdkOptional<String> aud,
-          SdkOptional<Map<String, Object?>> additionalClaims})
-      get copyWith => _copyWith;
+  GetConnectorTokenRequestSubjectVariant2 Function({GetConnectorTokenRequestSubjectVariant2Type type_, SdkOptional<String> sub, SdkOptional<String> iss, SdkOptional<String> aud, SdkOptional<Map<String, Object?>> additionalClaims}) get copyWith => _copyWith;
 
-  GetConnectorTokenRequestSubjectVariant2 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? sub = sdkOmittedValue,
-          Object? iss = sdkOmittedValue,
-          Object? aud = sdkOmittedValue,
-          Object? additionalClaims = sdkOmittedValue}) =>
-      GetConnectorTokenRequestSubjectVariant2(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetConnectorTokenRequestSubjectVariant2Type,
-        sub: identical(sub, sdkOmittedValue)
-            ? this.sub
-            : sub as SdkOptional<String>,
-        iss: identical(iss, sdkOmittedValue)
-            ? this.iss
-            : iss as SdkOptional<String>,
-        aud: identical(aud, sdkOmittedValue)
-            ? this.aud
-            : aud as SdkOptional<String>,
-        additionalClaims: identical(additionalClaims, sdkOmittedValue)
-            ? this.additionalClaims
-            : additionalClaims as SdkOptional<Map<String, Object?>>,
-        additionalProperties: additionalProperties,
-      );
+  GetConnectorTokenRequestSubjectVariant2 _copyWith({Object? type_ = sdkOmittedValue, Object? sub = sdkOmittedValue, Object? iss = sdkOmittedValue, Object? aud = sdkOmittedValue, Object? additionalClaims = sdkOmittedValue}) => GetConnectorTokenRequestSubjectVariant2(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetConnectorTokenRequestSubjectVariant2Type,
+    sub: identical(sub, sdkOmittedValue) ? this.sub : sub as SdkOptional<String>,
+    iss: identical(iss, sdkOmittedValue) ? this.iss : iss as SdkOptional<String>,
+    aud: identical(aud, sdkOmittedValue) ? this.aud : aud as SdkOptional<String>,
+    additionalClaims: identical(additionalClaims, sdkOmittedValue) ? this.additionalClaims : additionalClaims as SdkOptional<Map<String, Object?>>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory GetConnectorTokenRequestSubjectVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetConnectorTokenRequestSubjectVariant2(
-        type_: (json['type'] != null
-            ? GetConnectorTokenRequestSubjectVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        sub: json['sub'] != null
-            ? SdkPresent((json['sub'] as String?)!)
-            : const SdkOmitted(),
-        iss: json['iss'] != null
-            ? SdkPresent((json['iss'] as String?)!)
-            : const SdkOmitted(),
-        aud: json['aud'] != null
-            ? SdkPresent((json['aud'] as String?)!)
-            : const SdkOmitted(),
-        additionalClaims: json['additionalClaims'] != null
-            ? SdkPresent((json['additionalClaims'] == null
-                ? null
-                : Map<String, dynamic>.from(json['additionalClaims'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{
-                'type',
-                'sub',
-                'iss',
-                'aud',
-                'additionalClaims'
-              }.contains(key)),
-      );
+  factory GetConnectorTokenRequestSubjectVariant2.fromJson(Map<String, dynamic> json) => GetConnectorTokenRequestSubjectVariant2(
+    type_: (json['type'] != null ? GetConnectorTokenRequestSubjectVariant2Type.fromJson(json['type'] as String) : null)!,
+    sub: json['sub'] != null ? SdkPresent((json['sub'] as String?)!) : const SdkOmitted(),
+    iss: json['iss'] != null ? SdkPresent((json['iss'] as String?)!) : const SdkOmitted(),
+    aud: json['aud'] != null ? SdkPresent((json['aud'] as String?)!) : const SdkOmitted(),
+    additionalClaims: json['additionalClaims'] != null ? SdkPresent((json['additionalClaims'] == null ? null : Map<String, dynamic>.from(json['additionalClaims'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type', 'sub', 'iss', 'aud', 'additionalClaims'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_.toJson(),
-        ...switch (sub) {
-          SdkPresent<String>(value: final value) => {
-              'sub': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (iss) {
-          SdkPresent<String>(value: final value) => {
-              'iss': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aud) {
-          SdkPresent<String>(value: final value) => {
-              'aud': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (additionalClaims) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'additionalClaims': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...additionalProperties,
+    'type': type_.toJson(),
+    ...switch (sub) {
+      SdkPresent<String>(value: final value) => {'sub': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (iss) {
+      SdkPresent<String>(value: final value) => {'iss': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aud) {
+      SdkPresent<String>(value: final value) => {'aud': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (additionalClaims) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'additionalClaims': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetConnectorTokenRequestSubjectVariant3 {
@@ -235,36 +130,24 @@ class GetConnectorTokenRequestSubjectVariant3 {
   final GetConnectorTokenRequestSubjectVariant3Type type_;
   final String token;
 
-  const GetConnectorTokenRequestSubjectVariant3(
-      {required this.type_, required this.token});
+  const GetConnectorTokenRequestSubjectVariant3({required this.type_, required this.token});
 
-  GetConnectorTokenRequestSubjectVariant3 Function(
-      {GetConnectorTokenRequestSubjectVariant3Type type_,
-      String token}) get copyWith => _copyWith;
+  GetConnectorTokenRequestSubjectVariant3 Function({GetConnectorTokenRequestSubjectVariant3Type type_, String token}) get copyWith => _copyWith;
 
-  GetConnectorTokenRequestSubjectVariant3 _copyWith(
-          {Object? type_ = sdkOmittedValue, Object? token = sdkOmittedValue}) =>
-      GetConnectorTokenRequestSubjectVariant3(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetConnectorTokenRequestSubjectVariant3Type,
-        token: identical(token, sdkOmittedValue) ? this.token : token as String,
-      );
+  GetConnectorTokenRequestSubjectVariant3 _copyWith({Object? type_ = sdkOmittedValue, Object? token = sdkOmittedValue}) => GetConnectorTokenRequestSubjectVariant3(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetConnectorTokenRequestSubjectVariant3Type,
+    token: identical(token, sdkOmittedValue) ? this.token : token as String,
+  );
 
-  factory GetConnectorTokenRequestSubjectVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      GetConnectorTokenRequestSubjectVariant3(
-        type_: (json['type'] != null
-            ? GetConnectorTokenRequestSubjectVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        token: (json['token'] as String?)!,
-      );
+  factory GetConnectorTokenRequestSubjectVariant3.fromJson(Map<String, dynamic> json) => GetConnectorTokenRequestSubjectVariant3(
+    type_: (json['type'] != null ? GetConnectorTokenRequestSubjectVariant3Type.fromJson(json['type'] as String) : null)!,
+    token: (json['token'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'token': token,
-      };
+    'type': type_.toJson(),
+    'token': token,
+  };
 }
 
 class GetConnectorTokenRequestSubjectVariant4 {
@@ -273,32 +156,24 @@ class GetConnectorTokenRequestSubjectVariant4 {
   final String type_;
   final Map<String, dynamic> additionalProperties;
 
-  const GetConnectorTokenRequestSubjectVariant4(
-      {required this.type_,
-      this.additionalProperties = const <String, dynamic>{}});
+  const GetConnectorTokenRequestSubjectVariant4({required this.type_, this.additionalProperties = const <String, dynamic>{}});
 
-  GetConnectorTokenRequestSubjectVariant4 Function({String type_})
-      get copyWith => _copyWith;
+  GetConnectorTokenRequestSubjectVariant4 Function({String type_}) get copyWith => _copyWith;
 
-  GetConnectorTokenRequestSubjectVariant4 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      GetConnectorTokenRequestSubjectVariant4(
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-        additionalProperties: additionalProperties,
-      );
+  GetConnectorTokenRequestSubjectVariant4 _copyWith({Object? type_ = sdkOmittedValue}) => GetConnectorTokenRequestSubjectVariant4(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    additionalProperties: additionalProperties,
+  );
 
-  factory GetConnectorTokenRequestSubjectVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      GetConnectorTokenRequestSubjectVariant4(
-        type_: (json['type'] as String?)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{'type'}.contains(key)),
-      );
+  factory GetConnectorTokenRequestSubjectVariant4.fromJson(Map<String, dynamic> json) => GetConnectorTokenRequestSubjectVariant4(
+    type_: (json['type'] as String?)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'type': type_,
-      };
+    ...additionalProperties,
+    'type': type_,
+  };
 }
 
 sealed class GetConnectorTokenRequestSubject {
@@ -307,114 +182,48 @@ sealed class GetConnectorTokenRequestSubject {
   const GetConnectorTokenRequestSubject();
   factory GetConnectorTokenRequestSubject.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetConnectorTokenRequestSubjectVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetConnectorTokenRequestSubjectVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetConnectorTokenRequestSubjectVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetConnectorTokenRequestSubjectVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetConnectorTokenRequestSubjectVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetConnectorTokenRequestSubjectVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0(value); } } catch (_) {}
+      try { final value = GetConnectorTokenRequestSubjectVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1(value); } } catch (_) {}
+      try { final value = GetConnectorTokenRequestSubjectVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2(value); } } catch (_) {}
+      try { final value = GetConnectorTokenRequestSubjectVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3(value); } } catch (_) {}
+      try { final value = GetConnectorTokenRequestSubjectVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4(value); } } catch (_) {}
     }
-    try {
-      return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0(
-          GetConnectorTokenRequestSubjectVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1(
-          GetConnectorTokenRequestSubjectVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2(
-          GetConnectorTokenRequestSubjectVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3(
-          GetConnectorTokenRequestSubjectVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4(
-          GetConnectorTokenRequestSubjectVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetConnectorTokenRequestSubject");
+    try { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0(GetConnectorTokenRequestSubjectVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1(GetConnectorTokenRequestSubjectVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2(GetConnectorTokenRequestSubjectVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3(GetConnectorTokenRequestSubjectVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4(GetConnectorTokenRequestSubjectVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetConnectorTokenRequestSubject");
   }
   Object? toJson();
 }
 
-final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0
-    extends GetConnectorTokenRequestSubject {
+final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0 extends GetConnectorTokenRequestSubject {
   final GetConnectorTokenRequestSubjectVariant0 value;
-  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1
-    extends GetConnectorTokenRequestSubject {
+final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1 extends GetConnectorTokenRequestSubject {
   final GetConnectorTokenRequestSubjectVariant1 value;
-  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2
-    extends GetConnectorTokenRequestSubject {
+final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2 extends GetConnectorTokenRequestSubject {
   final GetConnectorTokenRequestSubjectVariant2 value;
-  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3
-    extends GetConnectorTokenRequestSubject {
+final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3 extends GetConnectorTokenRequestSubject {
   final GetConnectorTokenRequestSubjectVariant3 value;
-  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4
-    extends GetConnectorTokenRequestSubject {
+final class GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4 extends GetConnectorTokenRequestSubject {
   final GetConnectorTokenRequestSubjectVariant4 value;
-  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetConnectorTokenRequestSubjectGetConnectorTokenRequestSubjectVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }

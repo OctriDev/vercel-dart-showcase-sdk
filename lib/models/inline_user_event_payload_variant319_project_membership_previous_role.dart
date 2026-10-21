@@ -6,379 +6,277 @@ part of 'inline.dart';
 // Inline operation models
 /// Optional enumerated value serialized in the `previousRole` wire field.
 final class UserEventPayloadVariant319ProjectMembershipPreviousRole {
+
   final String value;
 
   const UserEventPayloadVariant319ProjectMembershipPreviousRole._(this.value);
 
-  factory UserEventPayloadVariant319ProjectMembershipPreviousRole.fromJson(
-          String value) =>
-      UserEventPayloadVariant319ProjectMembershipPreviousRole._(value);
+  factory UserEventPayloadVariant319ProjectMembershipPreviousRole.fromJson(String value) => UserEventPayloadVariant319ProjectMembershipPreviousRole._(value);
 
-  static const admin =
-      UserEventPayloadVariant319ProjectMembershipPreviousRole._('ADMIN');
-  static const projectDeveloper =
-      UserEventPayloadVariant319ProjectMembershipPreviousRole._(
-          'PROJECT_DEVELOPER');
-  static const projectGuest =
-      UserEventPayloadVariant319ProjectMembershipPreviousRole._(
-          'PROJECT_GUEST');
-  static const projectViewer =
-      UserEventPayloadVariant319ProjectMembershipPreviousRole._(
-          'PROJECT_VIEWER');
+  static const admin = UserEventPayloadVariant319ProjectMembershipPreviousRole._('ADMIN');
+  static const projectDeveloper = UserEventPayloadVariant319ProjectMembershipPreviousRole._('PROJECT_DEVELOPER');
+  static const projectGuest = UserEventPayloadVariant319ProjectMembershipPreviousRole._('PROJECT_GUEST');
+  static const projectViewer = UserEventPayloadVariant319ProjectMembershipPreviousRole._('PROJECT_VIEWER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant319ProjectMembershipPreviousRole &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant319ProjectMembershipPreviousRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `role` wire field.
 final class UserEventPayloadVariant319ProjectMembershipRole {
+
   final String value;
 
   const UserEventPayloadVariant319ProjectMembershipRole._(this.value);
 
-  factory UserEventPayloadVariant319ProjectMembershipRole.fromJson(
-          String value) =>
-      UserEventPayloadVariant319ProjectMembershipRole._(value);
+  factory UserEventPayloadVariant319ProjectMembershipRole.fromJson(String value) => UserEventPayloadVariant319ProjectMembershipRole._(value);
 
-  static const admin =
-      UserEventPayloadVariant319ProjectMembershipRole._('ADMIN');
-  static const projectDeveloper =
-      UserEventPayloadVariant319ProjectMembershipRole._('PROJECT_DEVELOPER');
-  static const projectGuest =
-      UserEventPayloadVariant319ProjectMembershipRole._('PROJECT_GUEST');
-  static const projectViewer =
-      UserEventPayloadVariant319ProjectMembershipRole._('PROJECT_VIEWER');
+  static const admin = UserEventPayloadVariant319ProjectMembershipRole._('ADMIN');
+  static const projectDeveloper = UserEventPayloadVariant319ProjectMembershipRole._('PROJECT_DEVELOPER');
+  static const projectGuest = UserEventPayloadVariant319ProjectMembershipRole._('PROJECT_GUEST');
+  static const projectViewer = UserEventPayloadVariant319ProjectMembershipRole._('PROJECT_VIEWER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant319ProjectMembershipRole &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant319ProjectMembershipRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `deploymentType` wire field.
 final class UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType {
+
   final String value;
 
-  const UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(
-      this.value);
+  const UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(this.value);
 
-  factory UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType.fromJson(
-          String value) =>
-      UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(
-          value);
+  factory UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType.fromJson(String value) => UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(value);
 
-  static const all =
-      UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(
-          'all');
-  static const allExceptCustomDomains =
-      UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(
-          'all_except_custom_domains');
-  static const preview =
-      UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(
-          'preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._(
-          'prod_deployment_urls_and_all_previews');
+  static const all = UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._('all');
+  static const allExceptCustomDomains = UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._('all_except_custom_domains');
+  static const preview = UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant326OldPasswordProtectionVariant0DeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `oldPasswordProtection` wire field.
 final class UserEventPayloadVariant326OldPasswordProtectionVariant1 {
+
   final String value;
 
   const UserEventPayloadVariant326OldPasswordProtectionVariant1._(this.value);
 
-  factory UserEventPayloadVariant326OldPasswordProtectionVariant1.fromJson(
-          String value) =>
-      UserEventPayloadVariant326OldPasswordProtectionVariant1._(value);
+  factory UserEventPayloadVariant326OldPasswordProtectionVariant1.fromJson(String value) => UserEventPayloadVariant326OldPasswordProtectionVariant1._(value);
 
-  static const all =
-      UserEventPayloadVariant326OldPasswordProtectionVariant1._('all');
-  static const allExceptCustomDomains =
-      UserEventPayloadVariant326OldPasswordProtectionVariant1._(
-          'all_except_custom_domains');
-  static const preview =
-      UserEventPayloadVariant326OldPasswordProtectionVariant1._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UserEventPayloadVariant326OldPasswordProtectionVariant1._(
-          'prod_deployment_urls_and_all_previews');
+  static const all = UserEventPayloadVariant326OldPasswordProtectionVariant1._('all');
+  static const allExceptCustomDomains = UserEventPayloadVariant326OldPasswordProtectionVariant1._('all_except_custom_domains');
+  static const preview = UserEventPayloadVariant326OldPasswordProtectionVariant1._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UserEventPayloadVariant326OldPasswordProtectionVariant1._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant326OldPasswordProtectionVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant326OldPasswordProtectionVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `passwordChanged` wire field.
 final class UserEventPayloadVariant326PasswordChanged {
+
   final bool value;
 
   const UserEventPayloadVariant326PasswordChanged._(this.value);
 
-  factory UserEventPayloadVariant326PasswordChanged.fromJson(bool value) =>
-      UserEventPayloadVariant326PasswordChanged._(value);
+  factory UserEventPayloadVariant326PasswordChanged.fromJson(bool value) => UserEventPayloadVariant326PasswordChanged._(value);
 
   static const false_ = UserEventPayloadVariant326PasswordChanged._(false);
   static const true_ = UserEventPayloadVariant326PasswordChanged._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant326PasswordChanged &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant326PasswordChanged && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `deploymentType` wire field.
 final class UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType {
+
   final String value;
 
-  const UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(
-      this.value);
+  const UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(this.value);
 
-  factory UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType.fromJson(
-          String value) =>
-      UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(
-          value);
+  factory UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType.fromJson(String value) => UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(value);
 
-  static const all =
-      UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(
-          'all');
-  static const allExceptCustomDomains =
-      UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(
-          'all_except_custom_domains');
-  static const preview =
-      UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(
-          'preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._(
-          'prod_deployment_urls_and_all_previews');
+  static const all = UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._('all');
+  static const allExceptCustomDomains = UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._('all_except_custom_domains');
+  static const preview = UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant326PasswordProtectionVariant0DeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `passwordProtection` wire field.
 final class UserEventPayloadVariant326PasswordProtectionVariant1 {
+
   final String value;
 
   const UserEventPayloadVariant326PasswordProtectionVariant1._(this.value);
 
-  factory UserEventPayloadVariant326PasswordProtectionVariant1.fromJson(
-          String value) =>
-      UserEventPayloadVariant326PasswordProtectionVariant1._(value);
+  factory UserEventPayloadVariant326PasswordProtectionVariant1.fromJson(String value) => UserEventPayloadVariant326PasswordProtectionVariant1._(value);
 
-  static const all =
-      UserEventPayloadVariant326PasswordProtectionVariant1._('all');
-  static const allExceptCustomDomains =
-      UserEventPayloadVariant326PasswordProtectionVariant1._(
-          'all_except_custom_domains');
-  static const preview =
-      UserEventPayloadVariant326PasswordProtectionVariant1._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UserEventPayloadVariant326PasswordProtectionVariant1._(
-          'prod_deployment_urls_and_all_previews');
+  static const all = UserEventPayloadVariant326PasswordProtectionVariant1._('all');
+  static const allExceptCustomDomains = UserEventPayloadVariant326PasswordProtectionVariant1._('all_except_custom_domains');
+  static const preview = UserEventPayloadVariant326PasswordProtectionVariant1._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UserEventPayloadVariant326PasswordProtectionVariant1._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant326PasswordProtectionVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant326PasswordProtectionVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `reasonCode` wire field.
 final class UserEventPayloadVariant329ReasonCode {
+
   final String value;
 
   const UserEventPayloadVariant329ReasonCode._(this.value);
 
-  factory UserEventPayloadVariant329ReasonCode.fromJson(String value) =>
-      UserEventPayloadVariant329ReasonCode._(value);
+  factory UserEventPayloadVariant329ReasonCode.fromJson(String value) => UserEventPayloadVariant329ReasonCode._(value);
 
-  static const backoffice =
-      UserEventPayloadVariant329ReasonCode._('BACKOFFICE');
-  static const budgetReached =
-      UserEventPayloadVariant329ReasonCode._('BUDGET_REACHED');
+  static const backoffice = UserEventPayloadVariant329ReasonCode._('BACKOFFICE');
+  static const budgetReached = UserEventPayloadVariant329ReasonCode._('BUDGET_REACHED');
   static const publicApi = UserEventPayloadVariant329ReasonCode._('PUBLIC_API');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant329ReasonCode && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant329ReasonCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `consent` wire field.
 final class UserEventPayloadVariant330Consent {
+
   final String value;
 
   const UserEventPayloadVariant330Consent._(this.value);
 
-  factory UserEventPayloadVariant330Consent.fromJson(String value) =>
-      UserEventPayloadVariant330Consent._(value);
+  factory UserEventPayloadVariant330Consent.fromJson(String value) => UserEventPayloadVariant330Consent._(value);
 
   static const granted = UserEventPayloadVariant330Consent._('granted');
   static const refused = UserEventPayloadVariant330Consent._('refused');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant330Consent && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant330Consent && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `issuerMode` wire field.
 final class UserEventPayloadVariant337NextIssuerMode {
+
   final String value;
 
   const UserEventPayloadVariant337NextIssuerMode._(this.value);
 
-  factory UserEventPayloadVariant337NextIssuerMode.fromJson(String value) =>
-      UserEventPayloadVariant337NextIssuerMode._(value);
+  factory UserEventPayloadVariant337NextIssuerMode.fromJson(String value) => UserEventPayloadVariant337NextIssuerMode._(value);
 
   static const global = UserEventPayloadVariant337NextIssuerMode._('global');
   static const team = UserEventPayloadVariant337NextIssuerMode._('team');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant337NextIssuerMode && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant337NextIssuerMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `issuerMode` wire field.
 final class UserEventPayloadVariant337PreviousIssuerMode {
+
   final String value;
 
   const UserEventPayloadVariant337PreviousIssuerMode._(this.value);
 
-  factory UserEventPayloadVariant337PreviousIssuerMode.fromJson(String value) =>
-      UserEventPayloadVariant337PreviousIssuerMode._(value);
+  factory UserEventPayloadVariant337PreviousIssuerMode.fromJson(String value) => UserEventPayloadVariant337PreviousIssuerMode._(value);
 
-  static const global =
-      UserEventPayloadVariant337PreviousIssuerMode._('global');
+  static const global = UserEventPayloadVariant337PreviousIssuerMode._('global');
   static const team = UserEventPayloadVariant337PreviousIssuerMode._('team');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant337PreviousIssuerMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant337PreviousIssuerMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `customerSupportCodeVisibility` wire field.
 final class UserEventPayloadVariant338CustomerSupportCodeVisibility {
+
   final bool value;
 
   const UserEventPayloadVariant338CustomerSupportCodeVisibility._(this.value);
 
-  factory UserEventPayloadVariant338CustomerSupportCodeVisibility.fromJson(
-          bool value) =>
-      UserEventPayloadVariant338CustomerSupportCodeVisibility._(value);
+  factory UserEventPayloadVariant338CustomerSupportCodeVisibility.fromJson(bool value) => UserEventPayloadVariant338CustomerSupportCodeVisibility._(value);
 
-  static const false_ =
-      UserEventPayloadVariant338CustomerSupportCodeVisibility._(false);
-  static const true_ =
-      UserEventPayloadVariant338CustomerSupportCodeVisibility._(true);
+  static const false_ = UserEventPayloadVariant338CustomerSupportCodeVisibility._(false);
+  static const true_ = UserEventPayloadVariant338CustomerSupportCodeVisibility._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant338CustomerSupportCodeVisibility &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant338CustomerSupportCodeVisibility && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

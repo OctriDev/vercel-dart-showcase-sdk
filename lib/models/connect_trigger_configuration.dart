@@ -8,31 +8,22 @@ part of 'connect.dart';
 class ConnectTriggerConfiguration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether incoming triggers are enabled for the connector.
   final ConnectTriggerConfigurationEnabled enabled;
 
   const ConnectTriggerConfiguration({required this.enabled});
 
-  ConnectTriggerConfiguration Function(
-      {ConnectTriggerConfigurationEnabled enabled}) get copyWith => _copyWith;
+  ConnectTriggerConfiguration Function({ConnectTriggerConfigurationEnabled enabled}) get copyWith => _copyWith;
 
-  ConnectTriggerConfiguration _copyWith({Object? enabled = sdkOmittedValue}) =>
-      ConnectTriggerConfiguration(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as ConnectTriggerConfigurationEnabled,
-      );
+  ConnectTriggerConfiguration _copyWith({Object? enabled = sdkOmittedValue}) => ConnectTriggerConfiguration(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as ConnectTriggerConfigurationEnabled,
+  );
 
-  factory ConnectTriggerConfiguration.fromJson(Map<String, dynamic> json) =>
-      ConnectTriggerConfiguration(
-        enabled: (json['enabled'] != null
-            ? ConnectTriggerConfigurationEnabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-      );
+  factory ConnectTriggerConfiguration.fromJson(Map<String, dynamic> json) => ConnectTriggerConfiguration(
+    enabled: (json['enabled'] != null ? ConnectTriggerConfigurationEnabled.fromJson(json['enabled'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-      };
+    'enabled': enabled.toJson(),
+  };
 }

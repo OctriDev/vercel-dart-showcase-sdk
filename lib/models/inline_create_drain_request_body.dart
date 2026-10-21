@@ -12,172 +12,70 @@ class CreateDrainRequestBody {
   final SdkOptional<List<String>> projectIds;
   final SdkOptional<CreateDrainRequestBodyFilter> filter;
   final Map<String, CreateDrainRequestBodySchemasValue> schemas;
-
   /// Typed representation of the `CreateDrainRequestDelivery` API schema.
   final SdkOptional<CreateDrainRequestDelivery> delivery;
   final SdkOptional<List<CreateDrainRequestBodySamplingItem>> sampling;
   final SdkOptional<List<CreateDrainRequestBodyTransformsItem>> transforms;
-
   /// Typed representation of the `CreateDrainRequestSource` API schema.
   final SdkOptional<CreateDrainRequestSource> source;
 
-  const CreateDrainRequestBody(
-      {required this.name,
-      required this.projects,
-      this.projectIds = const SdkOmitted(),
-      this.filter = const SdkOmitted(),
-      required this.schemas,
-      this.delivery = const SdkOmitted(),
-      this.sampling = const SdkOmitted(),
-      this.transforms = const SdkOmitted(),
-      this.source = const SdkOmitted()});
+  const CreateDrainRequestBody({required this.name, required this.projects, this.projectIds = const SdkOmitted(), this.filter = const SdkOmitted(), required this.schemas, this.delivery = const SdkOmitted(), this.sampling = const SdkOmitted(), this.transforms = const SdkOmitted(), this.source = const SdkOmitted()});
 
-  CreateDrainRequestBody Function(
-      {String name,
-      CreateDrainRequestBodyProjects projects,
-      SdkOptional<List<String>> projectIds,
-      SdkOptional<CreateDrainRequestBodyFilter> filter,
-      Map<String, CreateDrainRequestBodySchemasValue> schemas,
-      SdkOptional<CreateDrainRequestDelivery> delivery,
-      SdkOptional<List<CreateDrainRequestBodySamplingItem>> sampling,
-      SdkOptional<List<CreateDrainRequestBodyTransformsItem>> transforms,
-      SdkOptional<CreateDrainRequestSource> source}) get copyWith => _copyWith;
+  CreateDrainRequestBody Function({String name, CreateDrainRequestBodyProjects projects, SdkOptional<List<String>> projectIds, SdkOptional<CreateDrainRequestBodyFilter> filter, Map<String, CreateDrainRequestBodySchemasValue> schemas, SdkOptional<CreateDrainRequestDelivery> delivery, SdkOptional<List<CreateDrainRequestBodySamplingItem>> sampling, SdkOptional<List<CreateDrainRequestBodyTransformsItem>> transforms, SdkOptional<CreateDrainRequestSource> source}) get copyWith => _copyWith;
 
-  CreateDrainRequestBody _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? projects = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue,
-          Object? filter = sdkOmittedValue,
-          Object? schemas = sdkOmittedValue,
-          Object? delivery = sdkOmittedValue,
-          Object? sampling = sdkOmittedValue,
-          Object? transforms = sdkOmittedValue,
-          Object? source = sdkOmittedValue}) =>
-      CreateDrainRequestBody(
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        projects: identical(projects, sdkOmittedValue)
-            ? this.projects
-            : projects as CreateDrainRequestBodyProjects,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-        filter: identical(filter, sdkOmittedValue)
-            ? this.filter
-            : filter as SdkOptional<CreateDrainRequestBodyFilter>,
-        schemas: identical(schemas, sdkOmittedValue)
-            ? this.schemas
-            : schemas as Map<String, CreateDrainRequestBodySchemasValue>,
-        delivery: identical(delivery, sdkOmittedValue)
-            ? this.delivery
-            : delivery as SdkOptional<CreateDrainRequestDelivery>,
-        sampling: identical(sampling, sdkOmittedValue)
-            ? this.sampling
-            : sampling as SdkOptional<List<CreateDrainRequestBodySamplingItem>>,
-        transforms: identical(transforms, sdkOmittedValue)
-            ? this.transforms
-            : transforms
-                as SdkOptional<List<CreateDrainRequestBodyTransformsItem>>,
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source as SdkOptional<CreateDrainRequestSource>,
-      );
+  CreateDrainRequestBody _copyWith({Object? name = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? filter = sdkOmittedValue, Object? schemas = sdkOmittedValue, Object? delivery = sdkOmittedValue, Object? sampling = sdkOmittedValue, Object? transforms = sdkOmittedValue, Object? source = sdkOmittedValue}) => CreateDrainRequestBody(
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as CreateDrainRequestBodyProjects,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+    filter: identical(filter, sdkOmittedValue) ? this.filter : filter as SdkOptional<CreateDrainRequestBodyFilter>,
+    schemas: identical(schemas, sdkOmittedValue) ? this.schemas : schemas as Map<String, CreateDrainRequestBodySchemasValue>,
+    delivery: identical(delivery, sdkOmittedValue) ? this.delivery : delivery as SdkOptional<CreateDrainRequestDelivery>,
+    sampling: identical(sampling, sdkOmittedValue) ? this.sampling : sampling as SdkOptional<List<CreateDrainRequestBodySamplingItem>>,
+    transforms: identical(transforms, sdkOmittedValue) ? this.transforms : transforms as SdkOptional<List<CreateDrainRequestBodyTransformsItem>>,
+    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<CreateDrainRequestSource>,
+  );
 
-  factory CreateDrainRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateDrainRequestBody(
-        name: (json['name'] as String?)!,
-        projects: (json['projects'] != null
-            ? CreateDrainRequestBodyProjects.fromJson(
-                json['projects'] as String)
-            : null)!,
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        filter: json['filter'] != null
-            ? SdkPresent((json['filter'] != null
-                ? CreateDrainRequestBodyFilter.fromJson(
-                    json['filter'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        schemas: (json['schemas'] == null
-            ? null
-            : Map<String, dynamic>.from(json['schemas'] as Map).map(
-                (key, value) => MapEntry(
-                    key,
-                    CreateDrainRequestBodySchemasValue.fromJson(
-                        value as Map<String, dynamic>))))!,
-        delivery: json['delivery'] != null
-            ? SdkPresent((json['delivery'] != null
-                ? CreateDrainRequestDelivery.fromJson(json['delivery'])
-                : null)!)
-            : const SdkOmitted(),
-        sampling: json['sampling'] != null
-            ? SdkPresent(((json['sampling'] as List?)
-                ?.map((e) => CreateDrainRequestBodySamplingItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        transforms: json['transforms'] != null
-            ? SdkPresent(((json['transforms'] as List?)
-                ?.map((e) => CreateDrainRequestBodyTransformsItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        source: json['source'] != null
-            ? SdkPresent((json['source'] != null
-                ? CreateDrainRequestSource.fromJson(json['source'])
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateDrainRequestBody.fromJson(Map<String, dynamic> json) => CreateDrainRequestBody(
+    name: (json['name'] as String?)!,
+    projects: (json['projects'] != null ? CreateDrainRequestBodyProjects.fromJson(json['projects'] as String) : null)!,
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    filter: json['filter'] != null ? SdkPresent((json['filter'] != null ? CreateDrainRequestBodyFilter.fromJson(json['filter'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    schemas: (json['schemas'] == null ? null : Map<String, dynamic>.from(json['schemas'] as Map).map((key, value) => MapEntry(key, CreateDrainRequestBodySchemasValue.fromJson(value as Map<String, dynamic>))))!,
+    delivery: json['delivery'] != null ? SdkPresent((json['delivery'] != null ? CreateDrainRequestDelivery.fromJson(json['delivery']) : null)!) : const SdkOmitted(),
+    sampling: json['sampling'] != null ? SdkPresent(((json['sampling'] as List?)?.map((e) => CreateDrainRequestBodySamplingItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    transforms: json['transforms'] != null ? SdkPresent(((json['transforms'] as List?)?.map((e) => CreateDrainRequestBodyTransformsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    source: json['source'] != null ? SdkPresent((json['source'] != null ? CreateDrainRequestSource.fromJson(json['source']) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        'projects': projects.toJson(),
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (filter) {
-          SdkPresent<CreateDrainRequestBodyFilter>(value: final value) => {
-              'filter': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'schemas': schemas.map((key, value) => MapEntry(key, value.toJson())),
-        ...switch (delivery) {
-          SdkPresent<CreateDrainRequestDelivery>(value: final value) => {
-              'delivery': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sampling) {
-          SdkPresent<List<CreateDrainRequestBodySamplingItem>>(
-            value: final value
-          ) =>
-            {
-              'sampling': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transforms) {
-          SdkPresent<List<CreateDrainRequestBodyTransformsItem>>(
-            value: final value
-          ) =>
-            {
-              'transforms': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (source) {
-          SdkPresent<CreateDrainRequestSource>(value: final value) => {
-              'source': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'name': name,
+    'projects': projects.toJson(),
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (filter) {
+      SdkPresent<CreateDrainRequestBodyFilter>(value: final value) => {'filter': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'schemas': schemas.map((key, value) => MapEntry(key, value.toJson())),
+    ...switch (delivery) {
+      SdkPresent<CreateDrainRequestDelivery>(value: final value) => {'delivery': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sampling) {
+      SdkPresent<List<CreateDrainRequestBodySamplingItem>>(value: final value) => {'sampling': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transforms) {
+      SdkPresent<List<CreateDrainRequestBodyTransformsItem>>(value: final value) => {'transforms': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (source) {
+      SdkPresent<CreateDrainRequestSource>(value: final value) => {'source': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetDrainsResponseDrainsVariant0ItemSamplingItem {
@@ -188,76 +86,36 @@ class GetDrainsResponseDrainsVariant0ItemSamplingItem {
   final SdkOptional<String> requestPath;
   final GetDrainsResponseDrainsVariant0ItemSamplingItemType type_;
 
-  const GetDrainsResponseDrainsVariant0ItemSamplingItem(
-      {this.env = const SdkOmitted(),
-      required this.rate,
-      this.requestPath = const SdkOmitted(),
-      required this.type_});
+  const GetDrainsResponseDrainsVariant0ItemSamplingItem({this.env = const SdkOmitted(), required this.rate, this.requestPath = const SdkOmitted(), required this.type_});
 
-  GetDrainsResponseDrainsVariant0ItemSamplingItem Function(
-          {SdkOptional<GetDrainsResponseDrainsVariant0ItemSamplingItemEnv> env,
-          double rate,
-          SdkOptional<String> requestPath,
-          GetDrainsResponseDrainsVariant0ItemSamplingItemType type_})
-      get copyWith => _copyWith;
+  GetDrainsResponseDrainsVariant0ItemSamplingItem Function({SdkOptional<GetDrainsResponseDrainsVariant0ItemSamplingItemEnv> env, double rate, SdkOptional<String> requestPath, GetDrainsResponseDrainsVariant0ItemSamplingItemType type_}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsVariant0ItemSamplingItem _copyWith(
-          {Object? env = sdkOmittedValue,
-          Object? rate = sdkOmittedValue,
-          Object? requestPath = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsVariant0ItemSamplingItem(
-        env: identical(env, sdkOmittedValue)
-            ? this.env
-            : env as SdkOptional<
-                GetDrainsResponseDrainsVariant0ItemSamplingItemEnv>,
-        rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
-        requestPath: identical(requestPath, sdkOmittedValue)
-            ? this.requestPath
-            : requestPath as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDrainsResponseDrainsVariant0ItemSamplingItemType,
-      );
+  GetDrainsResponseDrainsVariant0ItemSamplingItem _copyWith({Object? env = sdkOmittedValue, Object? rate = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDrainsResponseDrainsVariant0ItemSamplingItem(
+    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<GetDrainsResponseDrainsVariant0ItemSamplingItemEnv>,
+    rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
+    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDrainsResponseDrainsVariant0ItemSamplingItemType,
+  );
 
-  factory GetDrainsResponseDrainsVariant0ItemSamplingItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsVariant0ItemSamplingItem(
-        env: json['env'] != null
-            ? SdkPresent((json['env'] != null
-                ? GetDrainsResponseDrainsVariant0ItemSamplingItemEnv.fromJson(
-                    json['env'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        rate: ((json['rate'] as num?)?.toDouble())!,
-        requestPath: json['requestPath'] != null
-            ? SdkPresent((json['requestPath'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? GetDrainsResponseDrainsVariant0ItemSamplingItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetDrainsResponseDrainsVariant0ItemSamplingItem.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsVariant0ItemSamplingItem(
+    env: json['env'] != null ? SdkPresent((json['env'] != null ? GetDrainsResponseDrainsVariant0ItemSamplingItemEnv.fromJson(json['env'] as String) : null)!) : const SdkOmitted(),
+    rate: ((json['rate'] as num?)?.toDouble())!,
+    requestPath: json['requestPath'] != null ? SdkPresent((json['requestPath'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? GetDrainsResponseDrainsVariant0ItemSamplingItemType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (env) {
-          SdkPresent<GetDrainsResponseDrainsVariant0ItemSamplingItemEnv>(
-            value: final value
-          ) =>
-            {
-              'env': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'rate': rate,
-        ...switch (requestPath) {
-          SdkPresent<String>(value: final value) => {
-              'requestPath': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    ...switch (env) {
+      SdkPresent<GetDrainsResponseDrainsVariant0ItemSamplingItemEnv>(value: final value) => {'env': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'rate': rate,
+    ...switch (requestPath) {
+      SdkPresent<String>(value: final value) => {'requestPath': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class GetDrainsResponseDrainsVariant0ItemSchemas {
@@ -271,184 +129,85 @@ class GetDrainsResponseDrainsVariant0ItemSchemas {
   final SdkOptional<Map<String, dynamic>> speedInsights;
   final SdkOptional<Map<String, dynamic>> trace;
 
-  const GetDrainsResponseDrainsVariant0ItemSchemas(
-      {this.aiGateway = const SdkOmitted(),
-      this.analytics = const SdkOmitted(),
-      this.auditLog = const SdkOmitted(),
-      this.connect = const SdkOmitted(),
-      this.log = const SdkOmitted(),
-      this.speedInsights = const SdkOmitted(),
-      this.trace = const SdkOmitted()});
+  const GetDrainsResponseDrainsVariant0ItemSchemas({this.aiGateway = const SdkOmitted(), this.analytics = const SdkOmitted(), this.auditLog = const SdkOmitted(), this.connect = const SdkOmitted(), this.log = const SdkOmitted(), this.speedInsights = const SdkOmitted(), this.trace = const SdkOmitted()});
 
-  GetDrainsResponseDrainsVariant0ItemSchemas Function(
-      {SdkOptional<Map<String, dynamic>> aiGateway,
-      SdkOptional<Map<String, dynamic>> analytics,
-      SdkOptional<Map<String, dynamic>> auditLog,
-      SdkOptional<Map<String, dynamic>> connect,
-      SdkOptional<Map<String, dynamic>> log,
-      SdkOptional<Map<String, dynamic>> speedInsights,
-      SdkOptional<Map<String, dynamic>> trace}) get copyWith => _copyWith;
+  GetDrainsResponseDrainsVariant0ItemSchemas Function({SdkOptional<Map<String, dynamic>> aiGateway, SdkOptional<Map<String, dynamic>> analytics, SdkOptional<Map<String, dynamic>> auditLog, SdkOptional<Map<String, dynamic>> connect, SdkOptional<Map<String, dynamic>> log, SdkOptional<Map<String, dynamic>> speedInsights, SdkOptional<Map<String, dynamic>> trace}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsVariant0ItemSchemas _copyWith(
-          {Object? aiGateway = sdkOmittedValue,
-          Object? analytics = sdkOmittedValue,
-          Object? auditLog = sdkOmittedValue,
-          Object? connect = sdkOmittedValue,
-          Object? log = sdkOmittedValue,
-          Object? speedInsights = sdkOmittedValue,
-          Object? trace = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsVariant0ItemSchemas(
-        aiGateway: identical(aiGateway, sdkOmittedValue)
-            ? this.aiGateway
-            : aiGateway as SdkOptional<Map<String, dynamic>>,
-        analytics: identical(analytics, sdkOmittedValue)
-            ? this.analytics
-            : analytics as SdkOptional<Map<String, dynamic>>,
-        auditLog: identical(auditLog, sdkOmittedValue)
-            ? this.auditLog
-            : auditLog as SdkOptional<Map<String, dynamic>>,
-        connect: identical(connect, sdkOmittedValue)
-            ? this.connect
-            : connect as SdkOptional<Map<String, dynamic>>,
-        log: identical(log, sdkOmittedValue)
-            ? this.log
-            : log as SdkOptional<Map<String, dynamic>>,
-        speedInsights: identical(speedInsights, sdkOmittedValue)
-            ? this.speedInsights
-            : speedInsights as SdkOptional<Map<String, dynamic>>,
-        trace: identical(trace, sdkOmittedValue)
-            ? this.trace
-            : trace as SdkOptional<Map<String, dynamic>>,
-      );
+  GetDrainsResponseDrainsVariant0ItemSchemas _copyWith({Object? aiGateway = sdkOmittedValue, Object? analytics = sdkOmittedValue, Object? auditLog = sdkOmittedValue, Object? connect = sdkOmittedValue, Object? log = sdkOmittedValue, Object? speedInsights = sdkOmittedValue, Object? trace = sdkOmittedValue}) => GetDrainsResponseDrainsVariant0ItemSchemas(
+    aiGateway: identical(aiGateway, sdkOmittedValue) ? this.aiGateway : aiGateway as SdkOptional<Map<String, dynamic>>,
+    analytics: identical(analytics, sdkOmittedValue) ? this.analytics : analytics as SdkOptional<Map<String, dynamic>>,
+    auditLog: identical(auditLog, sdkOmittedValue) ? this.auditLog : auditLog as SdkOptional<Map<String, dynamic>>,
+    connect: identical(connect, sdkOmittedValue) ? this.connect : connect as SdkOptional<Map<String, dynamic>>,
+    log: identical(log, sdkOmittedValue) ? this.log : log as SdkOptional<Map<String, dynamic>>,
+    speedInsights: identical(speedInsights, sdkOmittedValue) ? this.speedInsights : speedInsights as SdkOptional<Map<String, dynamic>>,
+    trace: identical(trace, sdkOmittedValue) ? this.trace : trace as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory GetDrainsResponseDrainsVariant0ItemSchemas.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsVariant0ItemSchemas(
-        aiGateway: json['ai_gateway'] != null
-            ? SdkPresent((json['ai_gateway'] == null
-                ? null
-                : json['ai_gateway'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        analytics: json['analytics'] != null
-            ? SdkPresent((json['analytics'] == null
-                ? null
-                : json['analytics'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        auditLog: json['audit_log'] != null
-            ? SdkPresent((json['audit_log'] == null
-                ? null
-                : json['audit_log'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        connect: json['connect'] != null
-            ? SdkPresent((json['connect'] == null
-                ? null
-                : json['connect'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        log: json['log'] != null
-            ? SdkPresent((json['log'] == null
-                ? null
-                : json['log'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        speedInsights: json['speed_insights'] != null
-            ? SdkPresent((json['speed_insights'] == null
-                ? null
-                : json['speed_insights'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        trace: json['trace'] != null
-            ? SdkPresent((json['trace'] == null
-                ? null
-                : json['trace'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory GetDrainsResponseDrainsVariant0ItemSchemas.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsVariant0ItemSchemas(
+    aiGateway: json['ai_gateway'] != null ? SdkPresent((json['ai_gateway'] == null ? null : json['ai_gateway'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    analytics: json['analytics'] != null ? SdkPresent((json['analytics'] == null ? null : json['analytics'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    auditLog: json['audit_log'] != null ? SdkPresent((json['audit_log'] == null ? null : json['audit_log'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    connect: json['connect'] != null ? SdkPresent((json['connect'] == null ? null : json['connect'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    log: json['log'] != null ? SdkPresent((json['log'] == null ? null : json['log'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    speedInsights: json['speed_insights'] != null ? SdkPresent((json['speed_insights'] == null ? null : json['speed_insights'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    trace: json['trace'] != null ? SdkPresent((json['trace'] == null ? null : json['trace'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (aiGateway) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'ai_gateway': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (analytics) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'analytics': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (auditLog) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'audit_log': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connect) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'connect': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (log) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'log': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (speedInsights) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'speed_insights': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (trace) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'trace': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (aiGateway) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'ai_gateway': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (analytics) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'analytics': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (auditLog) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'audit_log': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connect) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'connect': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (log) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'log': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (speedInsights) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'speed_insights': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (trace) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'trace': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetDrainsResponseDrainsVariant0ItemFilterV2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Typed representation of the `GetDrainsResponseDrainsItemFilterV2Filter` API schema.
   final GetDrainsResponseDrainsItemFilterV2Filter filter;
   final GetDrainsResponseDrainsVariant0ItemFilterV2Version version;
 
-  const GetDrainsResponseDrainsVariant0ItemFilterV2(
-      {required this.filter, required this.version});
+  const GetDrainsResponseDrainsVariant0ItemFilterV2({required this.filter, required this.version});
 
-  GetDrainsResponseDrainsVariant0ItemFilterV2 Function(
-          {GetDrainsResponseDrainsItemFilterV2Filter filter,
-          GetDrainsResponseDrainsVariant0ItemFilterV2Version version})
-      get copyWith => _copyWith;
+  GetDrainsResponseDrainsVariant0ItemFilterV2 Function({GetDrainsResponseDrainsItemFilterV2Filter filter, GetDrainsResponseDrainsVariant0ItemFilterV2Version version}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsVariant0ItemFilterV2 _copyWith(
-          {Object? filter = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsVariant0ItemFilterV2(
-        filter: identical(filter, sdkOmittedValue)
-            ? this.filter
-            : filter as GetDrainsResponseDrainsItemFilterV2Filter,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as GetDrainsResponseDrainsVariant0ItemFilterV2Version,
-      );
+  GetDrainsResponseDrainsVariant0ItemFilterV2 _copyWith({Object? filter = sdkOmittedValue, Object? version = sdkOmittedValue}) => GetDrainsResponseDrainsVariant0ItemFilterV2(
+    filter: identical(filter, sdkOmittedValue) ? this.filter : filter as GetDrainsResponseDrainsItemFilterV2Filter,
+    version: identical(version, sdkOmittedValue) ? this.version : version as GetDrainsResponseDrainsVariant0ItemFilterV2Version,
+  );
 
-  factory GetDrainsResponseDrainsVariant0ItemFilterV2.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsVariant0ItemFilterV2(
-        filter: (json['filter'] != null
-            ? GetDrainsResponseDrainsItemFilterV2Filter.fromJson(json['filter'])
-            : null)!,
-        version: (json['version'] != null
-            ? GetDrainsResponseDrainsVariant0ItemFilterV2Version.fromJson(
-                json['version'] as String)
-            : null)!,
-      );
+  factory GetDrainsResponseDrainsVariant0ItemFilterV2.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsVariant0ItemFilterV2(
+    filter: (json['filter'] != null ? GetDrainsResponseDrainsItemFilterV2Filter.fromJson(json['filter']) : null)!,
+    version: (json['version'] != null ? GetDrainsResponseDrainsVariant0ItemFilterV2Version.fromJson(json['version'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'filter': filter.toJson(),
-        'version': version.toJson(),
-      };
+    'filter': filter.toJson(),
+    'version': version.toJson(),
+  };
 }

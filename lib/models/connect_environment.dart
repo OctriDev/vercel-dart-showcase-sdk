@@ -9,29 +9,21 @@ sealed class ConnectEnvironment {
   static const String constructionSurface = 'named';
   const ConnectEnvironment();
   factory ConnectEnvironment.fromJson(Object? json) {
-    if (json is String) {
-      return ConnectEnvironmentString(json);
-    }
-    try {
-      return ConnectEnvironmentConnectEnvironmentVariant0(
-          ConnectEnvironmentVariant0.fromJson(json as String));
-    } catch (_) {}
+    if (json is String) { return ConnectEnvironmentString(json); }
+    try { return ConnectEnvironmentConnectEnvironmentVariant0(ConnectEnvironmentVariant0.fromJson(json as String)); } catch (_) {}
     throw FormatException("No variant matched for ConnectEnvironment");
   }
   Object? toJson();
 }
 
-final class ConnectEnvironmentConnectEnvironmentVariant0
-    extends ConnectEnvironment {
+final class ConnectEnvironmentConnectEnvironmentVariant0 extends ConnectEnvironment {
   final ConnectEnvironmentVariant0 value;
   const ConnectEnvironmentConnectEnvironmentVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class ConnectEnvironmentString extends ConnectEnvironment {
   final String value;
   const ConnectEnvironmentString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }

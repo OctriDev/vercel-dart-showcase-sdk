@@ -8,102 +8,62 @@ sealed class UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue();
-  factory UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueString(
-          json);
-    }
-    if (json is num) {
-      return UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueDouble(
-          json.toDouble());
-    }
-    if (json is bool) {
-      return UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueBool(
-          json);
-    }
-    throw FormatException(
-        "No variant matched for UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue");
+  factory UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue.fromJson(Object? json) {
+    if (json is String) { return UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueString(json); }
+    if (json is num) { return UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueDouble(json.toDouble()); }
+    if (json is bool) { return UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueBool(json); }
+    throw FormatException("No variant matched for UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue");
   }
   Object? toJson();
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueDouble
-    extends UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue {
+final class UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueDouble extends UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue {
   final double value;
-  const UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueDouble(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueBool
-    extends UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue {
+final class UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueBool extends UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue {
   final bool value;
-  const UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueBool(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueBool(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueString
-    extends UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue {
+final class UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueString extends UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValue {
   final String value;
-  const UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateProjectRequestDismissedToastsItemValueVariant4PreviousValueString(this.value);
+  @override Object? toJson() => value;
 }
 
 sealed class UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue();
-  factory UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueString(
-          json);
-    }
-    if (json is num) {
-      return UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueDouble(
-          json.toDouble());
-    }
-    if (json is bool) {
-      return UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueBool(
-          json);
-    }
-    throw FormatException(
-        "No variant matched for UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue");
+  factory UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue.fromJson(Object? json) {
+    if (json is String) { return UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueString(json); }
+    if (json is num) { return UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueDouble(json.toDouble()); }
+    if (json is bool) { return UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueBool(json); }
+    throw FormatException("No variant matched for UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue");
   }
   Object? toJson();
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueDouble
-    extends UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue {
+final class UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueDouble extends UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue {
   final double value;
-  const UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueDouble(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueBool
-    extends UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue {
+final class UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueBool extends UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue {
   final bool value;
-  const UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueBool(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueBool(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueString
-    extends UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue {
+final class UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueString extends UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValue {
   final String value;
-  const UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateProjectRequestDismissedToastsItemValueVariant4CurrentValueString(this.value);
+  @override Object? toJson() => value;
 }
 
 class UpdateProjectRequestDismissedToastsItemValueVariant4 {
@@ -112,35 +72,24 @@ class UpdateProjectRequestDismissedToastsItemValueVariant4 {
   final dynamic previousValue;
   final dynamic currentValue;
 
-  const UpdateProjectRequestDismissedToastsItemValueVariant4(
-      {required this.previousValue, required this.currentValue});
+  const UpdateProjectRequestDismissedToastsItemValueVariant4({required this.previousValue, required this.currentValue});
 
-  UpdateProjectRequestDismissedToastsItemValueVariant4 Function(
-      {dynamic previousValue, dynamic currentValue}) get copyWith => _copyWith;
+  UpdateProjectRequestDismissedToastsItemValueVariant4 Function({dynamic previousValue, dynamic currentValue}) get copyWith => _copyWith;
 
-  UpdateProjectRequestDismissedToastsItemValueVariant4 _copyWith(
-          {Object? previousValue = sdkOmittedValue,
-          Object? currentValue = sdkOmittedValue}) =>
-      UpdateProjectRequestDismissedToastsItemValueVariant4(
-        previousValue: identical(previousValue, sdkOmittedValue)
-            ? this.previousValue
-            : previousValue as dynamic,
-        currentValue: identical(currentValue, sdkOmittedValue)
-            ? this.currentValue
-            : currentValue as dynamic,
-      );
+  UpdateProjectRequestDismissedToastsItemValueVariant4 _copyWith({Object? previousValue = sdkOmittedValue, Object? currentValue = sdkOmittedValue}) => UpdateProjectRequestDismissedToastsItemValueVariant4(
+    previousValue: identical(previousValue, sdkOmittedValue) ? this.previousValue : previousValue as dynamic,
+    currentValue: identical(currentValue, sdkOmittedValue) ? this.currentValue : currentValue as dynamic,
+  );
 
-  factory UpdateProjectRequestDismissedToastsItemValueVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectRequestDismissedToastsItemValueVariant4(
-        previousValue: (json['previousValue'])!,
-        currentValue: (json['currentValue'])!,
-      );
+  factory UpdateProjectRequestDismissedToastsItemValueVariant4.fromJson(Map<String, dynamic> json) => UpdateProjectRequestDismissedToastsItemValueVariant4(
+    previousValue: (json['previousValue'])!,
+    currentValue: (json['currentValue'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'previousValue': previousValue,
-        'currentValue': currentValue,
-      };
+    'previousValue': previousValue,
+    'currentValue': currentValue,
+  };
 }
 
 sealed class UpdateProjectRequestDismissedToastsItemValue {
@@ -148,56 +97,35 @@ sealed class UpdateProjectRequestDismissedToastsItemValue {
   static const String constructionSurface = 'named';
   const UpdateProjectRequestDismissedToastsItemValue();
   factory UpdateProjectRequestDismissedToastsItemValue.fromJson(Object? json) {
-    if (json is String) {
-      return UpdateProjectRequestDismissedToastsItemValueString(json);
-    }
-    if (json is bool) {
-      return UpdateProjectRequestDismissedToastsItemValueBool(json);
-    }
-    if (json is num) {
-      return UpdateProjectRequestDismissedToastsItemValueDouble(
-          json.toDouble());
-    }
-    try {
-      return UpdateProjectRequestDismissedToastsItemValueUpdateProjectRequestDismissedToastsItemValueVariant4(
-          UpdateProjectRequestDismissedToastsItemValueVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateProjectRequestDismissedToastsItemValue");
+    if (json is String) { return UpdateProjectRequestDismissedToastsItemValueString(json); }
+    if (json is bool) { return UpdateProjectRequestDismissedToastsItemValueBool(json); }
+    if (json is num) { return UpdateProjectRequestDismissedToastsItemValueDouble(json.toDouble()); }
+    try { return UpdateProjectRequestDismissedToastsItemValueUpdateProjectRequestDismissedToastsItemValueVariant4(UpdateProjectRequestDismissedToastsItemValueVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateProjectRequestDismissedToastsItemValue");
   }
   Object? toJson();
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueString
-    extends UpdateProjectRequestDismissedToastsItemValue {
+final class UpdateProjectRequestDismissedToastsItemValueString extends UpdateProjectRequestDismissedToastsItemValue {
   final String value;
   const UpdateProjectRequestDismissedToastsItemValueString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueBool
-    extends UpdateProjectRequestDismissedToastsItemValue {
+final class UpdateProjectRequestDismissedToastsItemValueBool extends UpdateProjectRequestDismissedToastsItemValue {
   final bool value;
   const UpdateProjectRequestDismissedToastsItemValueBool(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueDouble
-    extends UpdateProjectRequestDismissedToastsItemValue {
+final class UpdateProjectRequestDismissedToastsItemValueDouble extends UpdateProjectRequestDismissedToastsItemValue {
   final double value;
   const UpdateProjectRequestDismissedToastsItemValueDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class UpdateProjectRequestDismissedToastsItemValueUpdateProjectRequestDismissedToastsItemValueVariant4
-    extends UpdateProjectRequestDismissedToastsItemValue {
+final class UpdateProjectRequestDismissedToastsItemValueUpdateProjectRequestDismissedToastsItemValueVariant4 extends UpdateProjectRequestDismissedToastsItemValue {
   final UpdateProjectRequestDismissedToastsItemValueVariant4 value;
-  const UpdateProjectRequestDismissedToastsItemValueUpdateProjectRequestDismissedToastsItemValueVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateProjectRequestDismissedToastsItemValueUpdateProjectRequestDismissedToastsItemValueVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }

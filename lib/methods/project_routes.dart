@@ -26,18 +26,12 @@ Future<dynamic> getRoutes(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes',
           config: config,
           query: {
-            'versionId': SdkQueryValue(SdkUtils.unwrapOptional(versionId),
-                style: 'form', explode: true),
-            'q': SdkQueryValue(SdkUtils.unwrapOptional(q),
-                style: 'form', explode: true),
-            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter),
-                style: 'form', explode: true),
-            'diff': SdkQueryValue(SdkUtils.unwrapOptional(diff),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'versionId': SdkQueryValue(SdkUtils.unwrapOptional(versionId), style: 'form', explode: true),
+            'q': SdkQueryValue(SdkUtils.unwrapOptional(q), style: 'form', explode: true),
+            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter), style: 'form', explode: true),
+            'diff': SdkQueryValue(SdkUtils.unwrapOptional(diff), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRoutes',
@@ -45,6 +39,7 @@ Future<dynamic> getRoutes(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Stages routing rules for a project and returns the new staged version. Set `overwrite` to replace all existing rules; otherwise, submitted rules are merged with existing rules by ID. Each item in `routes` must include an `id`, `name`, and route configuration with `src`.
 ///
@@ -57,17 +52,14 @@ Future<StageRoutesResponse> stageRoutes(ClientConfig config,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<bool> overwrite = const SdkOmitted(),
-    SdkOptional<List<StageRoutesRequestBodyRoutesItem>> routes =
-        const SdkOmitted(),
+    SdkOptional<List<StageRoutesRequestBodyRoutesItem>> routes = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<StageRoutesResponse>('PUT',
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'overwrite': SdkUtils.unwrapOptional(overwrite),
@@ -75,11 +67,11 @@ Future<StageRoutesResponse> stageRoutes(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'stageRoutes',
-          fromJsonRaw: (value) =>
-              StageRoutesResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => StageRoutesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Adds a routing rule to a project and stages a new routing-rule version. Supply a `route` with its `name` and route configuration; the route configuration must include `src`. Use `position` to choose where to insert the rule, or omit it to add the rule at the end.
 ///
@@ -100,19 +92,17 @@ Future<AddRouteResponse> addRoute(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'route': route, 'position': SdkUtils.unwrapOptional(position)},
           decoder: SdkResponseDecoder.json,
           operationId: 'addRoute',
-          fromJsonRaw: (value) =>
-              AddRouteResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AddRouteResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes one or more routing rules from a project by ID and stages a new version with those rules removed. Supply the IDs in `routeIds`; the array must contain at least one route ID. The response includes the number of deleted rules and the staged version.
 ///
@@ -133,19 +123,17 @@ Future<DeleteRoutesResponse> deleteRoutes(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'routeIds': routeIds},
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteRoutes',
-          fromJsonRaw: (value) =>
-              DeleteRoutesResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteRoutesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a routing rule in a project by replacing it or restoring its value from the current production version. Supply `route` with the complete replacement rule, or set `restore` to restore the production value. The update stages a new routing-rule version.
 ///
@@ -168,10 +156,8 @@ Future<EditRouteResponse> editRoute(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes/${Uri.encodeComponent(routeId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'route': SdkUtils.unwrapOptional(route),
@@ -179,11 +165,11 @@ Future<EditRouteResponse> editRoute(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'editRoute',
-          fromJsonRaw: (value) =>
-              EditRouteResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => EditRouteResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Generates a suggested routing-rule configuration from a natural-language description. Provide the request in `prompt`, which can be up to 2000 characters, and optionally include `currentRoute` as context. Review the suggested route before saving it with a routing-rule operation.
 ///
@@ -196,8 +182,7 @@ Future<GenerateRouteResponse> generateRoute(ClientConfig config,
     required String prompt,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<GenerateRouteRequestBodyCurrentRoute> currentRoute =
-        const SdkOmitted(),
+    SdkOptional<GenerateRouteRequestBodyCurrentRoute> currentRoute = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('prompt', prompt, max: 2000);
 
@@ -205,10 +190,8 @@ Future<GenerateRouteResponse> generateRoute(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes/generate',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'prompt': prompt,
@@ -216,11 +199,11 @@ Future<GenerateRouteResponse> generateRoute(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'generateRoute',
-          fromJsonRaw: (value) =>
-              GenerateRouteResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GenerateRouteResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the version history for a project's routing rules. The results include the staging version, when one exists, followed by production versions in descending recency. Use `isStaging` to identify the staged version and `isLive` to identify the current production version.
 ///
@@ -237,18 +220,16 @@ Future<GetRouteVersionsResponse> getRouteVersions(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes/versions',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRouteVersions',
-          fromJsonRaw: (value) =>
-              GetRouteVersionsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetRouteVersionsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Promotes staged routing rules to production, restores an earlier production version, or discards staged changes. Supply the version `id` and choose an `action` of `promote`, `restore`, or `discard`. The response returns the resulting routing-rule version.
 ///
@@ -267,16 +248,13 @@ Future<UpdateRouteVersionsResponse> updateRouteVersions(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/routes/versions',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'id': id, 'action': action},
           decoder: SdkResponseDecoder.json,
           operationId: 'updateRouteVersions',
-          fromJsonRaw: (value) => UpdateRouteVersionsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateRouteVersionsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

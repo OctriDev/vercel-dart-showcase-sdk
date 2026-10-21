@@ -10,76 +10,49 @@ class ListFlagVersionsResponseVersionsItemMetadataCreator {
   final String id;
   final String name;
 
-  const ListFlagVersionsResponseVersionsItemMetadataCreator(
-      {required this.id, required this.name});
+  const ListFlagVersionsResponseVersionsItemMetadataCreator({required this.id, required this.name});
 
-  ListFlagVersionsResponseVersionsItemMetadataCreator Function(
-      {String id, String name}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemMetadataCreator Function({String id, String name}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemMetadataCreator _copyWith(
-          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
-      ListFlagVersionsResponseVersionsItemMetadataCreator(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  ListFlagVersionsResponseVersionsItemMetadataCreator _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemMetadataCreator(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemMetadataCreator.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemMetadataCreator(
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-      );
+  factory ListFlagVersionsResponseVersionsItemMetadataCreator.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemMetadataCreator(
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'name': name,
-      };
+    'id': id,
+    'name': name,
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemMetadata {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListFlagVersionsResponseVersionsItemMetadataCreator>
-      creator;
+  final SdkOptional<ListFlagVersionsResponseVersionsItemMetadataCreator> creator;
 
-  const ListFlagVersionsResponseVersionsItemMetadata(
-      {this.creator = const SdkOmitted()});
+  const ListFlagVersionsResponseVersionsItemMetadata({this.creator = const SdkOmitted()});
 
-  ListFlagVersionsResponseVersionsItemMetadata Function(
-      {SdkOptional<ListFlagVersionsResponseVersionsItemMetadataCreator>
-          creator}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemMetadata Function({SdkOptional<ListFlagVersionsResponseVersionsItemMetadataCreator> creator}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemMetadata _copyWith(
-          {Object? creator = sdkOmittedValue}) =>
-      ListFlagVersionsResponseVersionsItemMetadata(
-        creator: identical(creator, sdkOmittedValue)
-            ? this.creator
-            : creator as SdkOptional<
-                ListFlagVersionsResponseVersionsItemMetadataCreator>,
-      );
+  ListFlagVersionsResponseVersionsItemMetadata _copyWith({Object? creator = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemMetadata(
+    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as SdkOptional<ListFlagVersionsResponseVersionsItemMetadataCreator>,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemMetadata.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemMetadata(
-        creator: json['creator'] != null
-            ? SdkPresent((json['creator'] != null
-                ? ListFlagVersionsResponseVersionsItemMetadataCreator.fromJson(
-                    json['creator'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory ListFlagVersionsResponseVersionsItemMetadata.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemMetadata(
+    creator: json['creator'] != null ? SdkPresent((json['creator'] != null ? ListFlagVersionsResponseVersionsItemMetadataCreator.fromJson(json['creator'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (creator) {
-          SdkPresent<ListFlagVersionsResponseVersionsItemMetadataCreator>(
-            value: final value
-          ) =>
-            {
-              'creator': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (creator) {
+      SdkPresent<ListFlagVersionsResponseVersionsItemMetadataCreator>(value: final value) => {'creator': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ListFlagVersionsResponseVersionsItem {
@@ -95,124 +68,54 @@ class ListFlagVersionsResponseVersionsItem {
   final ListFlagVersionsResponseVersionsItemData data;
   final SdkOptional<ListFlagVersionsResponseVersionsItemMetadata> metadata;
 
-  const ListFlagVersionsResponseVersionsItem(
-      {required this.changedEnvironments,
-      required this.createdAt,
-      this.createdBy = const SdkOmitted(),
-      required this.flagId,
-      required this.id,
-      this.message = const SdkOmitted(),
-      required this.revision,
-      required this.data,
-      this.metadata = const SdkOmitted()});
+  const ListFlagVersionsResponseVersionsItem({required this.changedEnvironments, required this.createdAt, this.createdBy = const SdkOmitted(), required this.flagId, required this.id, this.message = const SdkOmitted(), required this.revision, required this.data, this.metadata = const SdkOmitted()});
 
-  ListFlagVersionsResponseVersionsItem Function(
-          {List<String> changedEnvironments,
-          double createdAt,
-          SdkOptional<String> createdBy,
-          String flagId,
-          String id,
-          SdkOptional<String> message,
-          double revision,
-          ListFlagVersionsResponseVersionsItemData data,
-          SdkOptional<ListFlagVersionsResponseVersionsItemMetadata> metadata})
-      get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItem Function({List<String> changedEnvironments, double createdAt, SdkOptional<String> createdBy, String flagId, String id, SdkOptional<String> message, double revision, ListFlagVersionsResponseVersionsItemData data, SdkOptional<ListFlagVersionsResponseVersionsItemMetadata> metadata}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItem _copyWith(
-          {Object? changedEnvironments = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? flagId = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? revision = sdkOmittedValue,
-          Object? data = sdkOmittedValue,
-          Object? metadata = sdkOmittedValue}) =>
-      ListFlagVersionsResponseVersionsItem(
-        changedEnvironments: identical(changedEnvironments, sdkOmittedValue)
-            ? this.changedEnvironments
-            : changedEnvironments as List<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String>,
-        flagId:
-            identical(flagId, sdkOmittedValue) ? this.flagId : flagId as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as SdkOptional<String>,
-        revision: identical(revision, sdkOmittedValue)
-            ? this.revision
-            : revision as double,
-        data: identical(data, sdkOmittedValue)
-            ? this.data
-            : data as ListFlagVersionsResponseVersionsItemData,
-        metadata: identical(metadata, sdkOmittedValue)
-            ? this.metadata
-            : metadata
-                as SdkOptional<ListFlagVersionsResponseVersionsItemMetadata>,
-      );
+  ListFlagVersionsResponseVersionsItem _copyWith({Object? changedEnvironments = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? flagId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? message = sdkOmittedValue, Object? revision = sdkOmittedValue, Object? data = sdkOmittedValue, Object? metadata = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItem(
+    changedEnvironments: identical(changedEnvironments, sdkOmittedValue) ? this.changedEnvironments : changedEnvironments as List<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
+    flagId: identical(flagId, sdkOmittedValue) ? this.flagId : flagId as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    message: identical(message, sdkOmittedValue) ? this.message : message as SdkOptional<String>,
+    revision: identical(revision, sdkOmittedValue) ? this.revision : revision as double,
+    data: identical(data, sdkOmittedValue) ? this.data : data as ListFlagVersionsResponseVersionsItemData,
+    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<ListFlagVersionsResponseVersionsItemMetadata>,
+  );
 
-  factory ListFlagVersionsResponseVersionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItem(
-        changedEnvironments: ((json['changedEnvironments'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: json['createdBy'] != null
-            ? SdkPresent((json['createdBy'] as String?)!)
-            : const SdkOmitted(),
-        flagId: (json['flagId'] as String?)!,
-        id: (json['id'] as String?)!,
-        message: json['message'] != null
-            ? SdkPresent((json['message'] as String?)!)
-            : const SdkOmitted(),
-        revision: ((json['revision'] as num?)?.toDouble())!,
-        data: (json['data'] != null
-            ? ListFlagVersionsResponseVersionsItemData.fromJson(
-                json['data'] as Map<String, dynamic>)
-            : null)!,
-        metadata: json['metadata'] != null
-            ? SdkPresent((json['metadata'] != null
-                ? ListFlagVersionsResponseVersionsItemMetadata.fromJson(
-                    json['metadata'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory ListFlagVersionsResponseVersionsItem.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItem(
+    changedEnvironments: ((json['changedEnvironments'] as List?)?.map((e) => e as String).toList())!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
+    flagId: (json['flagId'] as String?)!,
+    id: (json['id'] as String?)!,
+    message: json['message'] != null ? SdkPresent((json['message'] as String?)!) : const SdkOmitted(),
+    revision: ((json['revision'] as num?)?.toDouble())!,
+    data: (json['data'] != null ? ListFlagVersionsResponseVersionsItemData.fromJson(json['data'] as Map<String, dynamic>) : null)!,
+    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] != null ? ListFlagVersionsResponseVersionsItemMetadata.fromJson(json['metadata'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'changedEnvironments': changedEnvironments,
-        'createdAt': createdAt,
-        ...switch (createdBy) {
-          SdkPresent<String>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'flagId': flagId,
-        'id': id,
-        ...switch (message) {
-          SdkPresent<String>(value: final value) => {
-              'message': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'revision': revision,
-        'data': data.toJson(),
-        ...switch (metadata) {
-          SdkPresent<ListFlagVersionsResponseVersionsItemMetadata>(
-            value: final value
-          ) =>
-            {
-              'metadata': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'changedEnvironments': changedEnvironments,
+    'createdAt': createdAt,
+    ...switch (createdBy) {
+      SdkPresent<String>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'flagId': flagId,
+    'id': id,
+    ...switch (message) {
+      SdkPresent<String>(value: final value) => {'message': value,},
+      _ => const <String, dynamic>{},
+    },
+    'revision': revision,
+    'data': data.toJson(),
+    ...switch (metadata) {
+      SdkPresent<ListFlagVersionsResponseVersionsItemMetadata>(value: final value) => {'metadata': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ListFlagVersionsResponse {
@@ -221,41 +124,24 @@ class ListFlagVersionsResponse {
   final Map<String, dynamic> pagination;
   final List<ListFlagVersionsResponseVersionsItem> versions;
 
-  const ListFlagVersionsResponse(
-      {required this.pagination, required this.versions});
+  const ListFlagVersionsResponse({required this.pagination, required this.versions});
 
-  ListFlagVersionsResponse Function(
-          {Map<String, dynamic> pagination,
-          List<ListFlagVersionsResponseVersionsItem> versions})
-      get copyWith => _copyWith;
+  ListFlagVersionsResponse Function({Map<String, dynamic> pagination, List<ListFlagVersionsResponseVersionsItem> versions}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponse _copyWith(
-          {Object? pagination = sdkOmittedValue,
-          Object? versions = sdkOmittedValue}) =>
-      ListFlagVersionsResponse(
-        pagination: identical(pagination, sdkOmittedValue)
-            ? this.pagination
-            : pagination as Map<String, dynamic>,
-        versions: identical(versions, sdkOmittedValue)
-            ? this.versions
-            : versions as List<ListFlagVersionsResponseVersionsItem>,
-      );
+  ListFlagVersionsResponse _copyWith({Object? pagination = sdkOmittedValue, Object? versions = sdkOmittedValue}) => ListFlagVersionsResponse(
+    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Map<String, dynamic>,
+    versions: identical(versions, sdkOmittedValue) ? this.versions : versions as List<ListFlagVersionsResponseVersionsItem>,
+  );
 
-  factory ListFlagVersionsResponse.fromJson(Map<String, dynamic> json) =>
-      ListFlagVersionsResponse(
-        pagination: (json['pagination'] == null
-            ? null
-            : json['pagination'] as Map<String, dynamic>)!,
-        versions: ((json['versions'] as List?)
-            ?.map((e) => ListFlagVersionsResponseVersionsItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory ListFlagVersionsResponse.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponse(
+    pagination: (json['pagination'] == null ? null : json['pagination'] as Map<String, dynamic>)!,
+    versions: ((json['versions'] as List?)?.map((e) => ListFlagVersionsResponseVersionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'pagination': pagination,
-        'versions': versions.map((item) => item.toJson()).toList(),
-      };
+    'pagination': pagination,
+    'versions': versions.map((item) => item.toJson()).toList(),
+  };
 }
 
 class GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem {
@@ -264,95 +150,57 @@ class GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem {
   final String label;
   final String value;
 
-  const GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem(
-      {required this.label, required this.value});
+  const GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem({required this.label, required this.value});
 
-  GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem Function(
-      {String label, String value}) get copyWith => _copyWith;
+  GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem Function({String label, String value}) get copyWith => _copyWith;
 
-  GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem _copyWith(
-          {Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
-      GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem(
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-      );
+  GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem _copyWith({Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem(
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem(
-        label: (json['label'] as String?)!,
-        value: (json['value'] as String?)!,
-      );
+  factory GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem.fromJson(Map<String, dynamic> json) => GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem(
+    label: (json['label'] as String?)!,
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'label': label,
-        'value': value,
-      };
+    'label': label,
+    'value': value,
+  };
 }
 
 class GetFlagSettingsResponseEntitiesItemAttributesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String key;
-  final SdkOptional<
-      List<GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>> labels;
+  final SdkOptional<List<GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>> labels;
   final String type_;
 
-  const GetFlagSettingsResponseEntitiesItemAttributesItem(
-      {required this.key,
-      this.labels = const SdkOmitted(),
-      required this.type_});
+  const GetFlagSettingsResponseEntitiesItemAttributesItem({required this.key, this.labels = const SdkOmitted(), required this.type_});
 
-  GetFlagSettingsResponseEntitiesItemAttributesItem Function(
-      {String key,
-      SdkOptional<
-              List<GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>>
-          labels,
-      String type_}) get copyWith => _copyWith;
+  GetFlagSettingsResponseEntitiesItemAttributesItem Function({String key, SdkOptional<List<GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>> labels, String type_}) get copyWith => _copyWith;
 
-  GetFlagSettingsResponseEntitiesItemAttributesItem _copyWith(
-          {Object? key = sdkOmittedValue,
-          Object? labels = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetFlagSettingsResponseEntitiesItemAttributesItem(
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        labels: identical(labels, sdkOmittedValue)
-            ? this.labels
-            : labels as SdkOptional<
-                List<
-                    GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-      );
+  GetFlagSettingsResponseEntitiesItemAttributesItem _copyWith({Object? key = sdkOmittedValue, Object? labels = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetFlagSettingsResponseEntitiesItemAttributesItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    labels: identical(labels, sdkOmittedValue) ? this.labels : labels as SdkOptional<List<GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+  );
 
-  factory GetFlagSettingsResponseEntitiesItemAttributesItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetFlagSettingsResponseEntitiesItemAttributesItem(
-        key: (json['key'] as String?)!,
-        labels: json['labels'] != null
-            ? SdkPresent(((json['labels'] as List?)
-                ?.map((e) =>
-                    GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-      );
+  factory GetFlagSettingsResponseEntitiesItemAttributesItem.fromJson(Map<String, dynamic> json) => GetFlagSettingsResponseEntitiesItemAttributesItem(
+    key: (json['key'] as String?)!,
+    labels: json['labels'] != null ? SdkPresent(((json['labels'] as List?)?.map((e) => GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'key': key,
-        ...switch (labels) {
-          SdkPresent<
-                List<
-                    GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>>(
-            value: final value
-          ) =>
-            {
-              'labels': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-      };
+    'key': key,
+    ...switch (labels) {
+      SdkPresent<List<GetFlagSettingsResponseEntitiesItemAttributesItemLabelsItem>>(value: final value) => {'labels': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+  };
 }
 
 class GetFlagSettingsResponseEntitiesItem {
@@ -362,44 +210,27 @@ class GetFlagSettingsResponseEntitiesItem {
   final String kind;
   final String label;
 
-  const GetFlagSettingsResponseEntitiesItem(
-      {required this.attributes, required this.kind, required this.label});
+  const GetFlagSettingsResponseEntitiesItem({required this.attributes, required this.kind, required this.label});
 
-  GetFlagSettingsResponseEntitiesItem Function(
-      {List<GetFlagSettingsResponseEntitiesItemAttributesItem> attributes,
-      String kind,
-      String label}) get copyWith => _copyWith;
+  GetFlagSettingsResponseEntitiesItem Function({List<GetFlagSettingsResponseEntitiesItemAttributesItem> attributes, String kind, String label}) get copyWith => _copyWith;
 
-  GetFlagSettingsResponseEntitiesItem _copyWith(
-          {Object? attributes = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? label = sdkOmittedValue}) =>
-      GetFlagSettingsResponseEntitiesItem(
-        attributes: identical(attributes, sdkOmittedValue)
-            ? this.attributes
-            : attributes
-                as List<GetFlagSettingsResponseEntitiesItemAttributesItem>,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-      );
+  GetFlagSettingsResponseEntitiesItem _copyWith({Object? attributes = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? label = sdkOmittedValue}) => GetFlagSettingsResponseEntitiesItem(
+    attributes: identical(attributes, sdkOmittedValue) ? this.attributes : attributes as List<GetFlagSettingsResponseEntitiesItemAttributesItem>,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+  );
 
-  factory GetFlagSettingsResponseEntitiesItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetFlagSettingsResponseEntitiesItem(
-        attributes: ((json['attributes'] as List?)
-            ?.map((e) =>
-                GetFlagSettingsResponseEntitiesItemAttributesItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        kind: (json['kind'] as String?)!,
-        label: (json['label'] as String?)!,
-      );
+  factory GetFlagSettingsResponseEntitiesItem.fromJson(Map<String, dynamic> json) => GetFlagSettingsResponseEntitiesItem(
+    attributes: ((json['attributes'] as List?)?.map((e) => GetFlagSettingsResponseEntitiesItemAttributesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    kind: (json['kind'] as String?)!,
+    label: (json['label'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attributes': attributes.map((item) => item.toJson()).toList(),
-        'kind': kind,
-        'label': label,
-      };
+    'attributes': attributes.map((item) => item.toJson()).toList(),
+    'kind': kind,
+    'label': label,
+  };
 }
 
 class GetFlagSettingsResponseMetadata {
@@ -412,80 +243,40 @@ class GetFlagSettingsResponseMetadata {
   final double packSizeInBytes;
   final double segmentCount;
 
-  const GetFlagSettingsResponseMetadata(
-      {required this.activeFlagCount,
-      required this.archivedFlagCount,
-      this.configUpdatedAt = const SdkOmitted(),
-      this.packRevision = const SdkOmitted(),
-      required this.packSizeInBytes,
-      required this.segmentCount});
+  const GetFlagSettingsResponseMetadata({required this.activeFlagCount, required this.archivedFlagCount, this.configUpdatedAt = const SdkOmitted(), this.packRevision = const SdkOmitted(), required this.packSizeInBytes, required this.segmentCount});
 
-  GetFlagSettingsResponseMetadata Function(
-      {double activeFlagCount,
-      double archivedFlagCount,
-      SdkOptional<double> configUpdatedAt,
-      SdkOptional<double> packRevision,
-      double packSizeInBytes,
-      double segmentCount}) get copyWith => _copyWith;
+  GetFlagSettingsResponseMetadata Function({double activeFlagCount, double archivedFlagCount, SdkOptional<double> configUpdatedAt, SdkOptional<double> packRevision, double packSizeInBytes, double segmentCount}) get copyWith => _copyWith;
 
-  GetFlagSettingsResponseMetadata _copyWith(
-          {Object? activeFlagCount = sdkOmittedValue,
-          Object? archivedFlagCount = sdkOmittedValue,
-          Object? configUpdatedAt = sdkOmittedValue,
-          Object? packRevision = sdkOmittedValue,
-          Object? packSizeInBytes = sdkOmittedValue,
-          Object? segmentCount = sdkOmittedValue}) =>
-      GetFlagSettingsResponseMetadata(
-        activeFlagCount: identical(activeFlagCount, sdkOmittedValue)
-            ? this.activeFlagCount
-            : activeFlagCount as double,
-        archivedFlagCount: identical(archivedFlagCount, sdkOmittedValue)
-            ? this.archivedFlagCount
-            : archivedFlagCount as double,
-        configUpdatedAt: identical(configUpdatedAt, sdkOmittedValue)
-            ? this.configUpdatedAt
-            : configUpdatedAt as SdkOptional<double>,
-        packRevision: identical(packRevision, sdkOmittedValue)
-            ? this.packRevision
-            : packRevision as SdkOptional<double>,
-        packSizeInBytes: identical(packSizeInBytes, sdkOmittedValue)
-            ? this.packSizeInBytes
-            : packSizeInBytes as double,
-        segmentCount: identical(segmentCount, sdkOmittedValue)
-            ? this.segmentCount
-            : segmentCount as double,
-      );
+  GetFlagSettingsResponseMetadata _copyWith({Object? activeFlagCount = sdkOmittedValue, Object? archivedFlagCount = sdkOmittedValue, Object? configUpdatedAt = sdkOmittedValue, Object? packRevision = sdkOmittedValue, Object? packSizeInBytes = sdkOmittedValue, Object? segmentCount = sdkOmittedValue}) => GetFlagSettingsResponseMetadata(
+    activeFlagCount: identical(activeFlagCount, sdkOmittedValue) ? this.activeFlagCount : activeFlagCount as double,
+    archivedFlagCount: identical(archivedFlagCount, sdkOmittedValue) ? this.archivedFlagCount : archivedFlagCount as double,
+    configUpdatedAt: identical(configUpdatedAt, sdkOmittedValue) ? this.configUpdatedAt : configUpdatedAt as SdkOptional<double>,
+    packRevision: identical(packRevision, sdkOmittedValue) ? this.packRevision : packRevision as SdkOptional<double>,
+    packSizeInBytes: identical(packSizeInBytes, sdkOmittedValue) ? this.packSizeInBytes : packSizeInBytes as double,
+    segmentCount: identical(segmentCount, sdkOmittedValue) ? this.segmentCount : segmentCount as double,
+  );
 
-  factory GetFlagSettingsResponseMetadata.fromJson(Map<String, dynamic> json) =>
-      GetFlagSettingsResponseMetadata(
-        activeFlagCount: ((json['activeFlagCount'] as num?)?.toDouble())!,
-        archivedFlagCount: ((json['archivedFlagCount'] as num?)?.toDouble())!,
-        configUpdatedAt: json['configUpdatedAt'] != null
-            ? SdkPresent(((json['configUpdatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        packRevision: json['packRevision'] != null
-            ? SdkPresent(((json['packRevision'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        packSizeInBytes: ((json['packSizeInBytes'] as num?)?.toDouble())!,
-        segmentCount: ((json['segmentCount'] as num?)?.toDouble())!,
-      );
+  factory GetFlagSettingsResponseMetadata.fromJson(Map<String, dynamic> json) => GetFlagSettingsResponseMetadata(
+    activeFlagCount: ((json['activeFlagCount'] as num?)?.toDouble())!,
+    archivedFlagCount: ((json['archivedFlagCount'] as num?)?.toDouble())!,
+    configUpdatedAt: json['configUpdatedAt'] != null ? SdkPresent(((json['configUpdatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    packRevision: json['packRevision'] != null ? SdkPresent(((json['packRevision'] as num?)?.toDouble())!) : const SdkOmitted(),
+    packSizeInBytes: ((json['packSizeInBytes'] as num?)?.toDouble())!,
+    segmentCount: ((json['segmentCount'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'activeFlagCount': activeFlagCount,
-        'archivedFlagCount': archivedFlagCount,
-        ...switch (configUpdatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'configUpdatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (packRevision) {
-          SdkPresent<double>(value: final value) => {
-              'packRevision': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'packSizeInBytes': packSizeInBytes,
-        'segmentCount': segmentCount,
-      };
+    'activeFlagCount': activeFlagCount,
+    'archivedFlagCount': archivedFlagCount,
+    ...switch (configUpdatedAt) {
+      SdkPresent<double>(value: final value) => {'configUpdatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (packRevision) {
+      SdkPresent<double>(value: final value) => {'packRevision': value,},
+      _ => const <String, dynamic>{},
+    },
+    'packSizeInBytes': packSizeInBytes,
+    'segmentCount': segmentCount,
+  };
 }

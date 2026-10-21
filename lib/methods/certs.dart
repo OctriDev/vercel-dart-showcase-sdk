@@ -22,18 +22,16 @@ Future<GetCertByIdResponse> getCertById(ClientConfig config,
           'GET', '/v8/certs/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getCertById',
-          fromJsonRaw: (value) =>
-              GetCertByIdResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetCertByIdResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a certificate identified by its certificate ID. Use `teamId` or `slug` to scope the request to a team. The response object confirms the removal.
 ///
@@ -51,10 +49,8 @@ Future<Map<String, dynamic>> removeCert(ClientConfig config,
           'DELETE', '/v8/certs/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'removeCert',
@@ -62,6 +58,7 @@ Future<Map<String, dynamic>> removeCert(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Lists certificates available to the authenticated user or team. Use `teamId` or `slug` to scope the request to a team. The response includes certificate details and pagination information.
 ///
@@ -76,18 +73,16 @@ Future<GetCertsResponse> getCerts(ClientConfig config,
   return (await sdkRequest<GetCertsResponse>('GET', '/v8/certs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getCerts',
-          fromJsonRaw: (value) =>
-              GetCertsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetCertsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Issues a new certificate for the common names you provide. Supply `cns` to specify the common names for which the certificate should be issued. The response includes the certificate identifier, common names, and certificate dates.
 ///
@@ -104,19 +99,17 @@ Future<IssueCertResponse> issueCert(ClientConfig config,
   return (await sdkRequest<IssueCertResponse>('POST', '/v8/certs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'cns': SdkUtils.unwrapOptional(cns)},
           decoder: SdkResponseDecoder.json,
           operationId: 'issueCert',
-          fromJsonRaw: (value) =>
-              IssueCertResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => IssueCertResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Uploads a certificate using its certificate authority, key, and certificate data. Provide `ca`, `key`, and `cert` in the request body; you can also set `skipValidation` to control certificate validation. The response includes the uploaded certificate details.
 ///
@@ -139,10 +132,8 @@ Future<UploadCertResponse> uploadCert(ClientConfig config,
   return (await sdkRequest<UploadCertResponse>('PUT', '/v8/certs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'ca': ca,
@@ -152,8 +143,7 @@ Future<UploadCertResponse> uploadCert(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'uploadCert',
-          fromJsonRaw: (value) =>
-              UploadCertResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UploadCertResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

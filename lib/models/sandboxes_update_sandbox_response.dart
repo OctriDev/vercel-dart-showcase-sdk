@@ -8,43 +8,27 @@ class UpdateSandboxResponseVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<SandboxPublicRoute> routes;
-
   /// This object contains information related to a Vercel NamedSandbox.
   final NamedSandbox sandbox;
 
-  const UpdateSandboxResponseVariant0(
-      {required this.routes, required this.sandbox});
+  const UpdateSandboxResponseVariant0({required this.routes, required this.sandbox});
 
-  UpdateSandboxResponseVariant0 Function(
-      {List<SandboxPublicRoute> routes,
-      NamedSandbox sandbox}) get copyWith => _copyWith;
+  UpdateSandboxResponseVariant0 Function({List<SandboxPublicRoute> routes, NamedSandbox sandbox}) get copyWith => _copyWith;
 
-  UpdateSandboxResponseVariant0 _copyWith(
-          {Object? routes = sdkOmittedValue,
-          Object? sandbox = sdkOmittedValue}) =>
-      UpdateSandboxResponseVariant0(
-        routes: identical(routes, sdkOmittedValue)
-            ? this.routes
-            : routes as List<SandboxPublicRoute>,
-        sandbox: identical(sandbox, sdkOmittedValue)
-            ? this.sandbox
-            : sandbox as NamedSandbox,
-      );
+  UpdateSandboxResponseVariant0 _copyWith({Object? routes = sdkOmittedValue, Object? sandbox = sdkOmittedValue}) => UpdateSandboxResponseVariant0(
+    routes: identical(routes, sdkOmittedValue) ? this.routes : routes as List<SandboxPublicRoute>,
+    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as NamedSandbox,
+  );
 
-  factory UpdateSandboxResponseVariant0.fromJson(Map<String, dynamic> json) =>
-      UpdateSandboxResponseVariant0(
-        routes: ((json['routes'] as List?)
-            ?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        sandbox: (json['sandbox'] != null
-            ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UpdateSandboxResponseVariant0.fromJson(Map<String, dynamic> json) => UpdateSandboxResponseVariant0(
+    routes: ((json['routes'] as List?)?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>)).toList())!,
+    sandbox: (json['sandbox'] != null ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'routes': routes.map((item) => item.toJson()).toList(),
-        'sandbox': sandbox.toJson(),
-      };
+    'routes': routes.map((item) => item.toJson()).toList(),
+    'sandbox': sandbox.toJson(),
+  };
 }
 
 class UpdateSandboxResponseVariant1 {
@@ -52,68 +36,35 @@ class UpdateSandboxResponseVariant1 {
   static const String constructionSurface = 'named';
   final UpdateSandboxResponseVariant1Resumed resumed;
   final List<SandboxPublicRoute> routes;
-
   /// This object contains information related to a Vercel NamedSandbox.
   final NamedSandbox sandbox;
-
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
 
-  const UpdateSandboxResponseVariant1(
-      {required this.resumed,
-      required this.routes,
-      required this.sandbox,
-      required this.session});
+  const UpdateSandboxResponseVariant1({required this.resumed, required this.routes, required this.sandbox, required this.session});
 
-  UpdateSandboxResponseVariant1 Function(
-      {UpdateSandboxResponseVariant1Resumed resumed,
-      List<SandboxPublicRoute> routes,
-      NamedSandbox sandbox,
-      Session session}) get copyWith => _copyWith;
+  UpdateSandboxResponseVariant1 Function({UpdateSandboxResponseVariant1Resumed resumed, List<SandboxPublicRoute> routes, NamedSandbox sandbox, Session session}) get copyWith => _copyWith;
 
-  UpdateSandboxResponseVariant1 _copyWith(
-          {Object? resumed = sdkOmittedValue,
-          Object? routes = sdkOmittedValue,
-          Object? sandbox = sdkOmittedValue,
-          Object? session = sdkOmittedValue}) =>
-      UpdateSandboxResponseVariant1(
-        resumed: identical(resumed, sdkOmittedValue)
-            ? this.resumed
-            : resumed as UpdateSandboxResponseVariant1Resumed,
-        routes: identical(routes, sdkOmittedValue)
-            ? this.routes
-            : routes as List<SandboxPublicRoute>,
-        sandbox: identical(sandbox, sdkOmittedValue)
-            ? this.sandbox
-            : sandbox as NamedSandbox,
-        session: identical(session, sdkOmittedValue)
-            ? this.session
-            : session as Session,
-      );
+  UpdateSandboxResponseVariant1 _copyWith({Object? resumed = sdkOmittedValue, Object? routes = sdkOmittedValue, Object? sandbox = sdkOmittedValue, Object? session = sdkOmittedValue}) => UpdateSandboxResponseVariant1(
+    resumed: identical(resumed, sdkOmittedValue) ? this.resumed : resumed as UpdateSandboxResponseVariant1Resumed,
+    routes: identical(routes, sdkOmittedValue) ? this.routes : routes as List<SandboxPublicRoute>,
+    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as NamedSandbox,
+    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
+  );
 
-  factory UpdateSandboxResponseVariant1.fromJson(Map<String, dynamic> json) =>
-      UpdateSandboxResponseVariant1(
-        resumed: (json['resumed'] != null
-            ? UpdateSandboxResponseVariant1Resumed.fromJson(
-                json['resumed'] as bool)
-            : null)!,
-        routes: ((json['routes'] as List?)
-            ?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        sandbox: (json['sandbox'] != null
-            ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>)
-            : null)!,
-        session: (json['session'] != null
-            ? Session.fromJson(json['session'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UpdateSandboxResponseVariant1.fromJson(Map<String, dynamic> json) => UpdateSandboxResponseVariant1(
+    resumed: (json['resumed'] != null ? UpdateSandboxResponseVariant1Resumed.fromJson(json['resumed'] as bool) : null)!,
+    routes: ((json['routes'] as List?)?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>)).toList())!,
+    sandbox: (json['sandbox'] != null ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!,
+    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'resumed': resumed.toJson(),
-        'routes': routes.map((item) => item.toJson()).toList(),
-        'sandbox': sandbox.toJson(),
-        'session': session.toJson(),
-      };
+    'resumed': resumed.toJson(),
+    'routes': routes.map((item) => item.toJson()).toList(),
+    'sandbox': sandbox.toJson(),
+    'session': session.toJson(),
+  };
 }
 
 sealed class UpdateSandboxResponse {
@@ -122,44 +73,24 @@ sealed class UpdateSandboxResponse {
   const UpdateSandboxResponse();
   factory UpdateSandboxResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = UpdateSandboxResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateSandboxResponseUpdateSandboxResponseVariant0(value);
-        }
-      } catch (_) {}
-      try {
-        final value = UpdateSandboxResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateSandboxResponseUpdateSandboxResponseVariant1(value);
-        }
-      } catch (_) {}
+      try { final value = UpdateSandboxResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateSandboxResponseUpdateSandboxResponseVariant0(value); } } catch (_) {}
+      try { final value = UpdateSandboxResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateSandboxResponseUpdateSandboxResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return UpdateSandboxResponseUpdateSandboxResponseVariant0(
-          UpdateSandboxResponseVariant0.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateSandboxResponseUpdateSandboxResponseVariant1(
-          UpdateSandboxResponseVariant1.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return UpdateSandboxResponseUpdateSandboxResponseVariant0(UpdateSandboxResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateSandboxResponseUpdateSandboxResponseVariant1(UpdateSandboxResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for UpdateSandboxResponse");
   }
   Object? toJson();
 }
 
-final class UpdateSandboxResponseUpdateSandboxResponseVariant0
-    extends UpdateSandboxResponse {
+final class UpdateSandboxResponseUpdateSandboxResponseVariant0 extends UpdateSandboxResponse {
   final UpdateSandboxResponseVariant0 value;
   const UpdateSandboxResponseUpdateSandboxResponseVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateSandboxResponseUpdateSandboxResponseVariant1
-    extends UpdateSandboxResponse {
+final class UpdateSandboxResponseUpdateSandboxResponseVariant1 extends UpdateSandboxResponse {
   final UpdateSandboxResponseVariant1 value;
   const UpdateSandboxResponseUpdateSandboxResponseVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

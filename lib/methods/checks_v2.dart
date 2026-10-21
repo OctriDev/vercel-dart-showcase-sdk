@@ -23,20 +23,17 @@ Future<ListProjectChecksResponse> listProjectChecks(ClientConfig config,
           '/v2/projects/${Uri.encodeComponent(projectIdOrName.toString())}/checks',
           config: config,
           query: {
-            'blocks': SdkQueryValue(SdkUtils.unwrapOptional(blocks),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'blocks': SdkQueryValue(SdkUtils.unwrapOptional(blocks), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listProjectChecks',
-          fromJsonRaw: (value) =>
-              ListProjectChecksResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListProjectChecksResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a check for a project. Provide `name` and `requires`, and configure its targets, source, blocking behavior, and timeout as needed. The check uses `deployment-url` for `requires`, `deployment-alias` for `blocks`, and 300 seconds for `timeout` when those fields are omitted.
 ///
@@ -54,8 +51,7 @@ Future<CreateProjectCheckResponse> createProjectCheck(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<bool> isRerequestable = const SdkOmitted(),
     SdkOptional<List<String>> targets = const SdkOmitted(),
-    SdkOptional<CreateProjectCheckRequestBodyBlocks> blocks =
-        const SdkOmitted(),
+    SdkOptional<CreateProjectCheckRequestBodyBlocks> blocks = const SdkOmitted(),
     SdkOptional<CreateProjectCheckRequestSource> source = const SdkOmitted(),
     SdkOptional<double> timeout = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
@@ -63,10 +59,8 @@ Future<CreateProjectCheckResponse> createProjectCheck(ClientConfig config,
           '/v2/projects/${Uri.encodeComponent(projectIdOrName.toString())}/checks',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -79,11 +73,11 @@ Future<CreateProjectCheckResponse> createProjectCheck(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createProjectCheck',
-          fromJsonRaw: (value) => CreateProjectCheckResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateProjectCheckResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the details of a single check configured for a project. Provide the project identifier or name and the check identifier to select the check you want to inspect.
 ///
@@ -102,18 +96,16 @@ Future<GetProjectCheckResponse> getProjectCheck(ClientConfig config,
           '/v2/projects/${Uri.encodeComponent(projectIdOrName.toString())}/checks/${Uri.encodeComponent(checkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getProjectCheck',
-          fromJsonRaw: (value) =>
-              GetProjectCheckResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetProjectCheckResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a project check's configuration, including its name, targets, and deployment behavior. Supply only the properties you want to change; `requires`, `blocks`, and `timeout` have defaults when omitted. Use the project and check identifiers to select the check to update.
 ///
@@ -128,21 +120,17 @@ Future<UpdateProjectCheckResponse> updateProjectCheck(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<bool> isRerequestable = const SdkOmitted(),
-    SdkOptional<UpdateProjectCheckRequestBodyRequires> requires =
-        const SdkOmitted(),
+    SdkOptional<UpdateProjectCheckRequestBodyRequires> requires = const SdkOmitted(),
     SdkOptional<List<String>> targets = const SdkOmitted(),
-    SdkOptional<UpdateProjectCheckRequestBodyBlocks> blocks =
-        const SdkOmitted(),
+    SdkOptional<UpdateProjectCheckRequestBodyBlocks> blocks = const SdkOmitted(),
     SdkOptional<double> timeout = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateProjectCheckResponse>('PATCH',
           '/v2/projects/${Uri.encodeComponent(projectIdOrName.toString())}/checks/${Uri.encodeComponent(checkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
@@ -154,11 +142,11 @@ Future<UpdateProjectCheckResponse> updateProjectCheck(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateProjectCheck',
-          fromJsonRaw: (value) => UpdateProjectCheckResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateProjectCheckResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a project check and all of its runs. Use the project and check identifiers to select the check to remove. The response confirms whether the deletion succeeded.
 ///
@@ -176,18 +164,16 @@ Future<DeleteProjectCheckResponse> deleteProjectCheck(ClientConfig config,
           '/v2/projects/${Uri.encodeComponent(projectIdOrName.toString())}/checks/${Uri.encodeComponent(checkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteProjectCheck',
-          fromJsonRaw: (value) => DeleteProjectCheckResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteProjectCheckResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists all runs associated with a project check. Use the project and check identifiers to select the check whose run history you need. The response groups the results in a `runs` array.
 ///
@@ -206,18 +192,16 @@ Future<ListCheckRunsResponse> listCheckRuns(ClientConfig config,
           '/v2/projects/${Uri.encodeComponent(projectIdOrName.toString())}/checks/${Uri.encodeComponent(checkId.toString())}/runs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listCheckRuns',
-          fromJsonRaw: (value) =>
-              ListCheckRunsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListCheckRunsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists all check runs associated with a deployment. Use `deploymentId` to select the deployment whose check runs you want to inspect. The response groups the results in a `runs` array.
 ///
@@ -225,28 +209,26 @@ Future<ListCheckRunsResponse> listCheckRuns(ClientConfig config,
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListDeploymentCheckRunsResponse> listDeploymentCheckRuns(
-    ClientConfig config,
-    {required String deploymentId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ListDeploymentCheckRunsResponse>
+    listDeploymentCheckRuns(ClientConfig config,
+        {required String deploymentId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<ListDeploymentCheckRunsResponse>('GET',
           '/v2/deployments/${Uri.encodeComponent(deploymentId.toString())}/check-runs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listDeploymentCheckRuns',
-          fromJsonRaw: (value) => ListDeploymentCheckRunsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListDeploymentCheckRunsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a check run for a deployment. Supply `checkId` to associate the run with a project-level check; the request body is optional in the operation definition, but `checkId` is required when you provide a body. Use the deployment identifier to select the deployment for the new run.
 ///
@@ -254,30 +236,28 @@ Future<ListDeploymentCheckRunsResponse> listDeploymentCheckRuns(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<CreateDeploymentCheckRunResponse> createDeploymentCheckRun(
-    ClientConfig config,
-    {required String deploymentId,
-    required String checkId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<CreateDeploymentCheckRunResponse>
+    createDeploymentCheckRun(ClientConfig config,
+        {required String deploymentId,
+        required String checkId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<CreateDeploymentCheckRunResponse>('POST',
           '/v2/deployments/${Uri.encodeComponent(deploymentId.toString())}/check-runs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'checkId': checkId},
           decoder: SdkResponseDecoder.json,
           operationId: 'createDeploymentCheckRun',
-          fromJsonRaw: (value) =>
-              CreateDeploymentCheckRunResponse.fromJson(value),
+          fromJsonRaw: (value) => CreateDeploymentCheckRunResponse.fromJson(value),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a single check run for a deployment. Use the deployment and check run identifiers to select the record. The response includes the run details and supports both runs backed by a project-level check and Vercel CI runs without a parent check.
 ///
@@ -296,10 +276,8 @@ Future<GetDeploymentCheckRunResponse> getDeploymentCheckRun(ClientConfig config,
           '/v2/deployments/${Uri.encodeComponent(deploymentId.toString())}/check-runs/${Uri.encodeComponent(checkRunId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDeploymentCheckRun',
@@ -308,28 +286,27 @@ Future<GetDeploymentCheckRunResponse> getDeploymentCheckRun(ClientConfig config,
       .data;
 }
 
+
 /// Updates a check run's status and related metadata for a deployment. Supply only the fields you want to change; `status` and `conclusion` are limited to their documented values, and `externalUrl` accepts the specified URL formats. The response returns the updated check run.
 ///
 /// Update an existing check run for a deployment.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<UpdateDeploymentCheckRunResponse> updateDeploymentCheckRun(
-    ClientConfig config,
-    {required String deploymentId,
-    required String checkRunId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<String> externalId = const SdkOmitted(),
-    SdkOptional<String> externalUrl = const SdkOmitted(),
-    SdkOptional<UpdateDeploymentCheckRunRequestBodyStatus> status =
-        const SdkOmitted(),
-    SdkOptional<Map<String, dynamic>> output = const SdkOmitted(),
-    SdkOptional<double> completedAt = const SdkOmitted(),
-    SdkOptional<UpdateDeploymentCheckRunRequestBodyConclusion> conclusion =
-        const SdkOmitted(),
-    SdkOptional<String> conclusionText = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<UpdateDeploymentCheckRunResponse>
+    updateDeploymentCheckRun(ClientConfig config,
+        {required String deploymentId,
+        required String checkRunId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<String> externalId = const SdkOmitted(),
+        SdkOptional<String> externalUrl = const SdkOmitted(),
+        SdkOptional<UpdateDeploymentCheckRunRequestBodyStatus> status = const SdkOmitted(),
+        SdkOptional<Map<String, dynamic>> output = const SdkOmitted(),
+        SdkOptional<double> completedAt = const SdkOmitted(),
+        SdkOptional<UpdateDeploymentCheckRunRequestBodyConclusion> conclusion = const SdkOmitted(),
+        SdkOptional<String> conclusionText = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (externalUrl is SdkPresent<String>) {
     sdkValidatePattern('externalUrl', externalUrl.value, '^https?://|^sso:');
     sdkValidateUri('externalUrl', externalUrl.value);
@@ -339,10 +316,8 @@ Future<UpdateDeploymentCheckRunResponse> updateDeploymentCheckRun(
           '/v2/deployments/${Uri.encodeComponent(deploymentId.toString())}/check-runs/${Uri.encodeComponent(checkRunId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'externalId': SdkUtils.unwrapOptional(externalId),
@@ -355,8 +330,7 @@ Future<UpdateDeploymentCheckRunResponse> updateDeploymentCheckRun(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateDeploymentCheckRun',
-          fromJsonRaw: (value) =>
-              UpdateDeploymentCheckRunResponse.fromJson(value),
+          fromJsonRaw: (value) => UpdateDeploymentCheckRunResponse.fromJson(value),
           options: requestOptions))
       .data;
 }

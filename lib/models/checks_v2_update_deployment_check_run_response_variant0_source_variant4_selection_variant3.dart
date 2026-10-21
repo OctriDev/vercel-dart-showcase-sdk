@@ -7,208 +7,86 @@ part of 'checks_v2.dart';
 class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>
-      failIfNoMatch;
+  final SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch> failIfNoMatch;
   final List<String> filters;
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
-      job;
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
-      kind;
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job job;
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind kind;
   final String task;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-      {this.failIfNoMatch = const SdkOmitted(),
-      required this.filters,
-      required this.job,
-      required this.kind,
-      required this.task});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3({this.failIfNoMatch = const SdkOmitted(), required this.filters, required this.job, required this.kind, required this.task});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 Function(
-      {SdkOptional<
-              UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>
-          failIfNoMatch,
-      List<String> filters,
-      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
-          job,
-      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
-          kind,
-      String task}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 Function({SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch> failIfNoMatch, List<String> filters, UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job job, UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind kind, String task}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
-      _copyWith(
-              {Object? failIfNoMatch = sdkOmittedValue,
-              Object? filters = sdkOmittedValue,
-              Object? job = sdkOmittedValue,
-              Object? kind = sdkOmittedValue,
-              Object? task = sdkOmittedValue}) =>
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-            failIfNoMatch: identical(failIfNoMatch, sdkOmittedValue)
-                ? this.failIfNoMatch
-                : failIfNoMatch as SdkOptional<
-                    UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>,
-            filters: identical(filters, sdkOmittedValue)
-                ? this.filters
-                : filters as List<String>,
-            job: identical(job, sdkOmittedValue)
-                ? this.job
-                : job
-                    as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job,
-            kind: identical(kind, sdkOmittedValue)
-                ? this.kind
-                : kind
-                    as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind,
-            task: identical(task, sdkOmittedValue) ? this.task : task as String,
-          );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 _copyWith({Object? failIfNoMatch = sdkOmittedValue, Object? filters = sdkOmittedValue, Object? job = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? task = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+    failIfNoMatch: identical(failIfNoMatch, sdkOmittedValue) ? this.failIfNoMatch : failIfNoMatch as SdkOptional<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>,
+    filters: identical(filters, sdkOmittedValue) ? this.filters : filters as List<String>,
+    job: identical(job, sdkOmittedValue) ? this.job : job as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind,
+    task: identical(task, sdkOmittedValue) ? this.task : task as String,
+  );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-        failIfNoMatch: json['failIfNoMatch'] != null
-            ? SdkPresent((json['failIfNoMatch'] != null
-                ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch
-                    .fromJson(json['failIfNoMatch'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        filters:
-            ((json['filters'] as List?)?.map((e) => e as String).toList())!,
-        job: (json['job'] != null
-            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
-                .fromJson(json['job'] as String)
-            : null)!,
-        kind: (json['kind'] != null
-            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
-                .fromJson(json['kind'] as String)
-            : null)!,
-        task: (json['task'] as String?)!,
-      );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
+    failIfNoMatch: json['failIfNoMatch'] != null ? SdkPresent((json['failIfNoMatch'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch.fromJson(json['failIfNoMatch'] as bool) : null)!) : const SdkOmitted(),
+    filters: ((json['filters'] as List?)?.map((e) => e as String).toList())!,
+    job: (json['job'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job.fromJson(json['job'] as String) : null)!,
+    kind: (json['kind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind.fromJson(json['kind'] as String) : null)!,
+    task: (json['task'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (failIfNoMatch) {
-          SdkPresent<
-                UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>(
-            value: final value
-          ) =>
-            {
-              'failIfNoMatch': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'filters': filters,
-        'job': job.toJson(),
-        'kind': kind.toJson(),
-        'task': task,
-      };
+    ...switch (failIfNoMatch) {
+      SdkPresent<UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch>(value: final value) => {'failIfNoMatch': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'filters': filters,
+    'job': job.toJson(),
+    'kind': kind.toJson(),
+    'task': task,
+  };
 }
 
 sealed class UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection();
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection.fromJson(
-      Object? json) {
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(value); } } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(value); } } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(value); } } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(value); } } catch (_) {}
     }
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection");
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection");
   }
   Object? toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
-    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0
-      value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0 value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
-    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1
-      value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1 value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
-    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2
-      value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2 value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
-    extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
-  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3
-      value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 extends UpdateDeploymentCheckRunResponseVariant0SourceVariant4Selection {
+  final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3 value;
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionUpdateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// Project-defined CI requirement; its selection is frozen on each check run.
@@ -219,179 +97,77 @@ class UpdateDeploymentCheckRunResponseVariant0SourceVariant4 {
   final dynamic selection;
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind subKind;
 
-  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-      {required this.origin, required this.selection, required this.subKind});
+  const UpdateDeploymentCheckRunResponseVariant0SourceVariant4({required this.origin, required this.selection, required this.subKind});
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 Function(
-      {UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin origin,
-      dynamic selection,
-      UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind
-          subKind}) get copyWith => _copyWith;
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 Function({UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin origin, dynamic selection, UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind subKind}) get copyWith => _copyWith;
 
-  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 _copyWith(
-          {Object? origin = sdkOmittedValue,
-          Object? selection = sdkOmittedValue,
-          Object? subKind = sdkOmittedValue}) =>
-      UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-        origin: identical(origin, sdkOmittedValue)
-            ? this.origin
-            : origin
-                as UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin,
-        selection: identical(selection, sdkOmittedValue)
-            ? this.selection
-            : selection as dynamic,
-        subKind: identical(subKind, sdkOmittedValue)
-            ? this.subKind
-            : subKind
-                as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind,
-      );
+  UpdateDeploymentCheckRunResponseVariant0SourceVariant4 _copyWith({Object? origin = sdkOmittedValue, Object? selection = sdkOmittedValue, Object? subKind = sdkOmittedValue}) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin,
+    selection: identical(selection, sdkOmittedValue) ? this.selection : selection as dynamic,
+    subKind: identical(subKind, sdkOmittedValue) ? this.subKind : subKind as UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind,
+  );
 
-  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-        origin: (json['origin'] != null
-            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin
-                .fromJson(json['origin'] as String)
-            : null)!,
-        selection: (json['selection'])!,
-        subKind: (json['subKind'] != null
-            ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind
-                .fromJson(json['subKind'] as String)
-            : null)!,
-      );
+  factory UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(Map<String, dynamic> json) => UpdateDeploymentCheckRunResponseVariant0SourceVariant4(
+    origin: (json['origin'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4Origin.fromJson(json['origin'] as String) : null)!,
+    selection: (json['selection'])!,
+    subKind: (json['subKind'] != null ? UpdateDeploymentCheckRunResponseVariant0SourceVariant4SubKind.fromJson(json['subKind'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'origin': origin.toJson(),
-        'selection': selection,
-        'subKind': subKind.toJson(),
-      };
+    'origin': origin.toJson(),
+    'selection': selection,
+    'subKind': subKind.toJson(),
+  };
 }
 
 sealed class UpdateDeploymentCheckRunResponseVariant0Source {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateDeploymentCheckRunResponseVariant0Source();
-  factory UpdateDeploymentCheckRunResponseVariant0Source.fromJson(
-      Object? json) {
+  factory UpdateDeploymentCheckRunResponseVariant0Source.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant0.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant1.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant2.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant3.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0(value); } } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1(value); } } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2(value); } } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3(value); } } catch (_) {}
+      try { final value = UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4(value); } } catch (_) {}
     }
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-          UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateDeploymentCheckRunResponseVariant0Source");
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0(UpdateDeploymentCheckRunResponseVariant0SourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1(UpdateDeploymentCheckRunResponseVariant0SourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2(UpdateDeploymentCheckRunResponseVariant0SourceVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3(UpdateDeploymentCheckRunResponseVariant0SourceVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4(UpdateDeploymentCheckRunResponseVariant0SourceVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateDeploymentCheckRunResponseVariant0Source");
   }
   Object? toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0
-    extends UpdateDeploymentCheckRunResponseVariant0Source {
+final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0 extends UpdateDeploymentCheckRunResponseVariant0Source {
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant0 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1
-    extends UpdateDeploymentCheckRunResponseVariant0Source {
+final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1 extends UpdateDeploymentCheckRunResponseVariant0Source {
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant1 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2
-    extends UpdateDeploymentCheckRunResponseVariant0Source {
+final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2 extends UpdateDeploymentCheckRunResponseVariant0Source {
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant2 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3
-    extends UpdateDeploymentCheckRunResponseVariant0Source {
+final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3 extends UpdateDeploymentCheckRunResponseVariant0Source {
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant3 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4
-    extends UpdateDeploymentCheckRunResponseVariant0Source {
+final class UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4 extends UpdateDeploymentCheckRunResponseVariant0Source {
   final UpdateDeploymentCheckRunResponseVariant0SourceVariant4 value;
-  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateDeploymentCheckRunResponseVariant0SourceUpdateDeploymentCheckRunResponseVariant0SourceVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }

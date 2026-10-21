@@ -10,206 +10,105 @@ class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesIte
   final SdkOptional<String> note;
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem(
-      {this.note = const SdkOmitted(), required this.value});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem({this.note = const SdkOmitted(), required this.value});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem
-          Function({SdkOptional<String> note, String value})
-      get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem
-      _copyWith(
-              {Object? note = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem(
-            note: identical(note, sdkOmittedValue)
-                ? this.note
-                : note as SdkOptional<String>,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as String,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem(
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem(
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem(
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-      };
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<
-          GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem>
-      addresses;
-  final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-      deploymentType;
-  final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode
-      protectionMode;
+  final List<GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem> addresses;
+  final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType deploymentType;
+  final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode protectionMode;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
-      {required this.addresses,
-      required this.deploymentType,
-      required this.protectionMode});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0({required this.addresses, required this.deploymentType, required this.protectionMode});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0 Function(
-      {List<GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem>
-          addresses,
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-          deploymentType,
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode
-          protectionMode}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0 Function({List<GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem> addresses, GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType deploymentType, GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode protectionMode}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0 _copyWith(
-          {Object? addresses = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue,
-          Object? protectionMode = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
-        addresses: identical(addresses, sdkOmittedValue)
-            ? this.addresses
-            : addresses as List<
-                GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem>,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType,
-        protectionMode: identical(protectionMode, sdkOmittedValue)
-            ? this.protectionMode
-            : protectionMode
-                as GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0 _copyWith({Object? addresses = sdkOmittedValue, Object? deploymentType = sdkOmittedValue, Object? protectionMode = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
+    addresses: identical(addresses, sdkOmittedValue) ? this.addresses : addresses as List<GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem>,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType,
+    protectionMode: identical(protectionMode, sdkOmittedValue) ? this.protectionMode : protectionMode as GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
-        addresses: ((json['addresses'] as List?)
-            ?.map((e) =>
-                GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        deploymentType: (json['deploymentType'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-        protectionMode: (json['protectionMode'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode
-                .fromJson(json['protectionMode'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
+    addresses: ((json['addresses'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0AddressesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    deploymentType: (json['deploymentType'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+    protectionMode: (json['protectionMode'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode.fromJson(json['protectionMode'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'addresses': addresses.map((item) => item.toJson()).toList(),
-        'deploymentType': deploymentType.toJson(),
-        'protectionMode': protectionMode.toJson(),
-      };
+    'addresses': addresses.map((item) => item.toJson()).toList(),
+    'deploymentType': deploymentType.toJson(),
+    'protectionMode': protectionMode.toJson(),
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-      deploymentType;
+  final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType deploymentType;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
-      {required this.deploymentType});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1({required this.deploymentType});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1 Function(
-      {GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1 Function({GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType deploymentType}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1 _copyWith(
-          {Object? deploymentType = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1 _copyWith({Object? deploymentType = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
-        deploymentType: (json['deploymentType'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
+    deploymentType: (json['deploymentType'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'deploymentType': deploymentType.toJson(),
-      };
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemTrustedIps {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemTrustedIps();
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIps.fromJson(
-      Object? json) {
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIps.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(value); } } catch (_) {}
+      try { final value = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(value); } } catch (_) {}
     }
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
-          GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
-          GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemTrustedIps");
+    try { return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemTrustedIps");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0
-    extends GetMicrofrontendsInGroupResponseProjectsItemTrustedIps {
+final class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0 extends GetMicrofrontendsInGroupResponseProjectsItemTrustedIps {
   final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1
-    extends GetMicrofrontendsInGroupResponseProjectsItemTrustedIps {
+final class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1 extends GetMicrofrontendsInGroupResponseProjectsItemTrustedIps {
   final GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsGetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

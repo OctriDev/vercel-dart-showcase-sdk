@@ -8,235 +8,143 @@ part of 'feature_flags.dart';
 class SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `string` value serialized in the `label` wire field.
   final SdkOptional<String> label;
-
   /// Optional `string` value serialized in the `note` wire field.
   final SdkOptional<String> note;
-
   /// Required `number` value serialized in the `value` wire field.
   final double value;
 
-  const SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
-      {this.label = const SdkOmitted(),
-      this.note = const SdkOmitted(),
-      required this.value});
+  const SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0({this.label = const SdkOmitted(), this.note = const SdkOmitted(), required this.value});
 
-  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0 Function(
-      {SdkOptional<String> label,
-      SdkOptional<String> note,
-      double value}) get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0 Function({SdkOptional<String> label, SdkOptional<String> note, double value}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0 _copyWith(
-          {Object? label = sdkOmittedValue,
-          Object? note = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label as SdkOptional<String>,
-        note: identical(note, sdkOmittedValue)
-            ? this.note
-            : note as SdkOptional<String>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as double,
-      );
+  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0 _copyWith({Object? label = sdkOmittedValue, Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as double,
+  );
 
-  factory SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        value: ((json['value'] as num?)?.toDouble())!,
-      );
+  factory SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    value: ((json['value'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-      };
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+  };
 }
 
 /// Required object value serialized in the `items[]` wire field.
 class SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `string` value serialized in the `label` wire field.
   final SdkOptional<String> label;
-
   /// Optional `string` value serialized in the `note` wire field.
   final SdkOptional<String> note;
-
   /// Required `string` value serialized in the `value` wire field.
   final String value;
 
-  const SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
-      {this.label = const SdkOmitted(),
-      this.note = const SdkOmitted(),
-      required this.value});
+  const SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1({this.label = const SdkOmitted(), this.note = const SdkOmitted(), required this.value});
 
-  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1 Function(
-      {SdkOptional<String> label,
-      SdkOptional<String> note,
-      String value}) get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1 Function({SdkOptional<String> label, SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1 _copyWith(
-          {Object? label = sdkOmittedValue,
-          Object? note = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label as SdkOptional<String>,
-        note: identical(note, sdkOmittedValue)
-            ? this.note
-            : note as SdkOptional<String>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-      );
+  SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1 _copyWith({Object? label = sdkOmittedValue, Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-      );
+  factory SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-      };
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+  };
 }
 
 /// Optional object value serialized in the `rhs` wire field.
 class SegmentDataRulesItemConditionsItemRhsVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required array value serialized in the `items` wire field.
   final List<dynamic> items;
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemConditionsItemRhsVariant2Type type_;
 
-  const SegmentDataRulesItemConditionsItemRhsVariant2(
-      {required this.items, required this.type_});
+  const SegmentDataRulesItemConditionsItemRhsVariant2({required this.items, required this.type_});
 
-  SegmentDataRulesItemConditionsItemRhsVariant2 Function(
-          {List<dynamic> items,
-          SegmentDataRulesItemConditionsItemRhsVariant2Type type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemRhsVariant2 Function({List<dynamic> items, SegmentDataRulesItemConditionsItemRhsVariant2Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemRhsVariant2 _copyWith(
-          {Object? items = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemRhsVariant2(
-        items: identical(items, sdkOmittedValue)
-            ? this.items
-            : items as List<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemConditionsItemRhsVariant2Type,
-      );
+  SegmentDataRulesItemConditionsItemRhsVariant2 _copyWith({Object? items = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemRhsVariant2(
+    items: identical(items, sdkOmittedValue) ? this.items : items as List<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemConditionsItemRhsVariant2Type,
+  );
 
-  factory SegmentDataRulesItemConditionsItemRhsVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemRhsVariant2(
-        items: ((json['items'] as List?)?.map((e) => e).toList())!,
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemConditionsItemRhsVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemConditionsItemRhsVariant2.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemRhsVariant2(
+    items: ((json['items'] as List?)?.map((e) => e).toList())!,
+    type_: (json['type'] != null ? SegmentDataRulesItemConditionsItemRhsVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'items': items,
-        'type': type_.toJson(),
-      };
+    'items': items,
+    'type': type_.toJson(),
+  };
 }
 
 /// Optional object value serialized in the `rhs` wire field.
 class SegmentDataRulesItemConditionsItemRhsVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `flags` wire field.
   final String flags;
-
   /// Required `string` value serialized in the `pattern` wire field.
   final String pattern;
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemConditionsItemRhsVariant3Type type_;
 
-  const SegmentDataRulesItemConditionsItemRhsVariant3(
-      {required this.flags, required this.pattern, required this.type_});
+  const SegmentDataRulesItemConditionsItemRhsVariant3({required this.flags, required this.pattern, required this.type_});
 
-  SegmentDataRulesItemConditionsItemRhsVariant3 Function(
-          {String flags,
-          String pattern,
-          SegmentDataRulesItemConditionsItemRhsVariant3Type type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemRhsVariant3 Function({String flags, String pattern, SegmentDataRulesItemConditionsItemRhsVariant3Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemRhsVariant3 _copyWith(
-          {Object? flags = sdkOmittedValue,
-          Object? pattern = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemRhsVariant3(
-        flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
-        pattern: identical(pattern, sdkOmittedValue)
-            ? this.pattern
-            : pattern as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemConditionsItemRhsVariant3Type,
-      );
+  SegmentDataRulesItemConditionsItemRhsVariant3 _copyWith({Object? flags = sdkOmittedValue, Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemRhsVariant3(
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemConditionsItemRhsVariant3Type,
+  );
 
-  factory SegmentDataRulesItemConditionsItemRhsVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemRhsVariant3(
-        flags: (json['flags'] as String?)!,
-        pattern: (json['pattern'] as String?)!,
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemConditionsItemRhsVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemConditionsItemRhsVariant3.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemRhsVariant3(
+    flags: (json['flags'] as String?)!,
+    pattern: (json['pattern'] as String?)!,
+    type_: (json['type'] != null ? SegmentDataRulesItemConditionsItemRhsVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'flags': flags,
-        'pattern': pattern,
-        'type': type_.toJson(),
-      };
+    'flags': flags,
+    'pattern': pattern,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class SegmentDataRulesItemConditionsItemRhs {
@@ -244,89 +152,46 @@ sealed class SegmentDataRulesItemConditionsItemRhs {
   static const String constructionSurface = 'named';
   const SegmentDataRulesItemConditionsItemRhs();
   factory SegmentDataRulesItemConditionsItemRhs.fromJson(Object? json) {
-    if (json is String) {
-      return SegmentDataRulesItemConditionsItemRhsString(json);
-    }
-    if (json is num) {
-      return SegmentDataRulesItemConditionsItemRhsDouble(json.toDouble());
-    }
+    if (json is String) { return SegmentDataRulesItemConditionsItemRhsString(json); }
+    if (json is num) { return SegmentDataRulesItemConditionsItemRhsDouble(json.toDouble()); }
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            SegmentDataRulesItemConditionsItemRhsVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            SegmentDataRulesItemConditionsItemRhsVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = SegmentDataRulesItemConditionsItemRhsVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2(value); } } catch (_) {}
+      try { final value = SegmentDataRulesItemConditionsItemRhsVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3(value); } } catch (_) {}
     }
-    try {
-      return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2(
-          SegmentDataRulesItemConditionsItemRhsVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3(
-          SegmentDataRulesItemConditionsItemRhsVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant4(
-          SegmentDataRulesItemConditionsItemRhsVariant4.fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for SegmentDataRulesItemConditionsItemRhs");
+    try { return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2(SegmentDataRulesItemConditionsItemRhsVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3(SegmentDataRulesItemConditionsItemRhsVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant4(SegmentDataRulesItemConditionsItemRhsVariant4.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for SegmentDataRulesItemConditionsItemRhs");
   }
   Object? toJson();
 }
 
-final class SegmentDataRulesItemConditionsItemRhsString
-    extends SegmentDataRulesItemConditionsItemRhs {
+final class SegmentDataRulesItemConditionsItemRhsString extends SegmentDataRulesItemConditionsItemRhs {
   final String value;
   const SegmentDataRulesItemConditionsItemRhsString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class SegmentDataRulesItemConditionsItemRhsDouble
-    extends SegmentDataRulesItemConditionsItemRhs {
+final class SegmentDataRulesItemConditionsItemRhsDouble extends SegmentDataRulesItemConditionsItemRhs {
   final double value;
   const SegmentDataRulesItemConditionsItemRhsDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2
-    extends SegmentDataRulesItemConditionsItemRhs {
+final class SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2 extends SegmentDataRulesItemConditionsItemRhs {
   final SegmentDataRulesItemConditionsItemRhsVariant2 value;
-  const SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3
-    extends SegmentDataRulesItemConditionsItemRhs {
+final class SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3 extends SegmentDataRulesItemConditionsItemRhs {
   final SegmentDataRulesItemConditionsItemRhsVariant3 value;
-  const SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant4
-    extends SegmentDataRulesItemConditionsItemRhs {
+final class SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant4 extends SegmentDataRulesItemConditionsItemRhs {
   final SegmentDataRulesItemConditionsItemRhsVariant4 value;
-  const SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemConditionsItemRhsSegmentDataRulesItemConditionsItemRhsVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }

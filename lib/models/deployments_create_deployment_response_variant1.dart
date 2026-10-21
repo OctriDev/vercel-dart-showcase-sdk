@@ -8,33 +8,25 @@ part of 'deployments.dart';
 class CreateDeploymentResponseVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A list of all the aliases (default aliases, staging aliases and production aliases) that were assigned upon deployment creation
   final SdkOptional<List<String>> alias;
-
   /// A boolean that will be true when the aliases from the alias property were assigned successfully
   final CreateDeploymentResponseVariant1AliasAssigned aliasAssigned;
   final SdkOptional<dynamic> aliasAssignedAt;
-
   /// An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`
   final SdkOptional<CreateDeploymentResponseVariant1AliasError?> aliasError;
   final SdkOptional<String?> aliasFinal;
   final SdkOptional<CreateDeploymentResponseVariant1AliasWarning?> aliasWarning;
-  final SdkOptional<CreateDeploymentResponseVariant1AlwaysRefuseToBuild>
-      alwaysRefuseToBuild;
+  final SdkOptional<CreateDeploymentResponseVariant1AlwaysRefuseToBuild> alwaysRefuseToBuild;
   final SdkOptional<dynamic> atproto;
-
   /// Attribution metadata for the deployment, linking commit author to git and Vercel users. Only populated when the `enable-deployment-attribution` flag is enabled.
   final SdkOptional<CreateDeploymentResponseVariant1Attribution> attribution;
-
   /// applies to custom domains only, defaults to `true`
-  final SdkOptional<CreateDeploymentResponseVariant1AutoAssignCustomDomains>
-      autoAssignCustomDomains;
+  final SdkOptional<CreateDeploymentResponseVariant1AutoAssignCustomDomains> autoAssignCustomDomains;
   final SdkOptional<List<String>> automaticAliases;
   final double bootedAt;
   final CreateDeploymentResponseVariant1Build build;
   final SdkOptional<List<String>> buildArtifactUrls;
-
   /// Since April 2025 it necessary for On-Demand Concurrency Minutes calculation
   final SdkOptional<double> buildContainerFinishedAt;
   final SdkOptional<double> buildErrorAt;
@@ -43,28 +35,21 @@ class CreateDeploymentResponseVariant1 {
   final CreateDeploymentResponseVariant1BuildSkipped buildSkipped;
   final SdkOptional<double> canceledAt;
   final SdkOptional<CreateDeploymentResponseVariant1Checks> checks;
-  final SdkOptional<CreateDeploymentResponseVariant1ChecksConclusion>
-      checksConclusion;
+  final SdkOptional<CreateDeploymentResponseVariant1ChecksConclusion> checksConclusion;
   final SdkOptional<CreateDeploymentResponseVariant1ChecksState> checksState;
-
   /// Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured
   final SdkOptional<CreateDeploymentResponseVariant1Config> config;
-  final SdkOptional<CreateDeploymentResponseVariant1ConnectBuildsEnabled>
-      connectBuildsEnabled;
+  final SdkOptional<CreateDeploymentResponseVariant1ConnectBuildsEnabled> connectBuildsEnabled;
   final SdkOptional<String> connectConfigurationId;
-
   /// A number containing the date when the deployment was created in milliseconds
   final double createdAt;
   final String createdIn;
-
   /// Information about the deployment creator
   final CreateDeploymentResponseVariant1Creator creator;
   final SdkOptional<List<CreateDeploymentResponseVariant1CronsItem>> crons;
   final SdkOptional<dynamic> customEnvironment;
-
   /// Computed field that is only available for deployments with a microfrontend configuration.
   final SdkOptional<String> defaultRoute;
-
   /// A number containing the date when the deployment was deleted at milliseconds
   final SdkOptional<double?> deletedAt;
   final CreateDeploymentResponseVariant1Duration duration;
@@ -74,1667 +59,576 @@ class CreateDeploymentResponseVariant1 {
   final SdkOptional<String?> errorMessage;
   final SdkOptional<String> errorStep;
   final SdkOptional<dynamic> flags;
-  final SdkOptional<
-      Map<String, CreateDeploymentResponseVariant1FunctionsValue>?> functions;
+  final SdkOptional<Map<String, CreateDeploymentResponseVariant1FunctionsValue>?> functions;
   final SdkOptional<dynamic> gitRepo;
   final SdkOptional<dynamic> gitSource;
-
   /// A string holding the unique ID of the deployment
   final String id;
   final SdkOptional<CreateDeploymentResponseVariant1Images> images;
   final SdkOptional<double> initReadyAt;
   final String? inspectorUrl;
   final SdkOptional<CreateDeploymentResponseVariant1Integrations> integrations;
-  final SdkOptional<CreateDeploymentResponseVariant1IsFirstBranchDeployment>
-      isFirstBranchDeployment;
-  final CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue
-      isInConcurrentBuildsQueue;
-
+  final SdkOptional<CreateDeploymentResponseVariant1IsFirstBranchDeployment> isFirstBranchDeployment;
+  final CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue isInConcurrentBuildsQueue;
   /// Whether this deployment completed through the instant static fast path.
-  final SdkOptional<CreateDeploymentResponseVariant1IsInstantStatic>
-      isInstantStatic;
-  final CreateDeploymentResponseVariant1IsInSystemBuildsQueue
-      isInSystemBuildsQueue;
+  final SdkOptional<CreateDeploymentResponseVariant1IsInstantStatic> isInstantStatic;
+  final CreateDeploymentResponseVariant1IsInSystemBuildsQueue isInSystemBuildsQueue;
   final SdkOptional<List<CreateDeploymentResponseVariant1LambdasItem>> lambdas;
-
   /// Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.
-  final SdkOptional<CreateDeploymentResponseVariant1ManualProvisioning>
-      manualProvisioning;
+  final SdkOptional<CreateDeploymentResponseVariant1ManualProvisioning> manualProvisioning;
   final Map<String, String> meta;
   final SdkOptional<dynamic> microfrontends;
   final SdkOptional<String?> monorepoManager;
-
   /// The name of the project associated with the deployment at the time that the deployment was created
   final String name;
-
   /// If set it overrides the `projectSettings.nodeVersion` for this deployment.
   final SdkOptional<CreateDeploymentResponseVariant1NodeVersion> nodeVersion;
-  final SdkOptional<CreateDeploymentResponseVariant1OidcTokenClaims>
-      oidcTokenClaims;
+  final SdkOptional<CreateDeploymentResponseVariant1OidcTokenClaims> oidcTokenClaims;
   final SdkOptional<CreateDeploymentResponseVariant1OomReport> oomReport;
   final SdkOptional<String> originCacheRegion;
   final String ownerId;
-
   /// Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)
   final SdkOptional<String> passiveConnectConfigurationId;
-
   /// Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service
   final SdkOptional<List<String>> passiveRegions;
   final CreateDeploymentResponseVariant1Plan plan;
-
   /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
   final SdkOptional<CreateDeploymentResponseVariant1Platform> platform;
   final SdkOptional<CreateDeploymentResponseVariant1Prebuilt> prebuilt;
-
   /// Whether or not preview comments are enabled for the deployment
-  final SdkOptional<CreateDeploymentResponseVariant1PreviewCommentsEnabled>
-      previewCommentsEnabled;
-
+  final SdkOptional<CreateDeploymentResponseVariant1PreviewCommentsEnabled> previewCommentsEnabled;
   /// The public project information associated with the deployment.
   final SdkOptional<CreateDeploymentResponseVariant1Project> project;
   final String projectId;
   final CreateDeploymentResponseVariant1ProjectSettings projectSettings;
-
   /// A boolean representing if the deployment is public or not. By default this is `false`
   final CreateDeploymentResponseVariant1Public public;
   final SdkOptional<double> ready;
-
   /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state
   final CreateDeploymentResponseVariant1ReadyState readyState;
   final SdkOptional<String> readyStateReason;
-
   /// Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of having production traffic gradually transitioned. - PROMOTED: has seen production traffic
-  final SdkOptional<CreateDeploymentResponseVariant1ReadySubstate>
-      readySubstate;
-
+  final SdkOptional<CreateDeploymentResponseVariant1ReadySubstate> readySubstate;
   /// The regions the deployment exists in
   final List<String> regions;
-  final SdkOptional<CreateDeploymentResponseVariant1ResourceConfig>
-      resourceConfig;
+  final SdkOptional<CreateDeploymentResponseVariant1ResourceConfig> resourceConfig;
   final List<dynamic>? routes;
-
   /// NSNB Blocked metadata
   final SdkOptional<CreateDeploymentResponseVariant1SeatBlock> seatBlock;
-
   /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
   final SdkOptional<List<dynamic>> services;
-
   /// flag to indicate if the deployment was deleted by retention policy
-  final SdkOptional<CreateDeploymentResponseVariant1SoftDeletedByRetention>
-      softDeletedByRetention;
-
+  final SdkOptional<CreateDeploymentResponseVariant1SoftDeletedByRetention> softDeletedByRetention;
   /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.
   final SdkOptional<CreateDeploymentResponseVariant1Source> source;
   final CreateDeploymentResponseVariant1Status status;
-
   /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.
   final SdkOptional<CreateDeploymentResponseVariant1Target?> target;
-
   /// The team that owns the deployment if any
   final SdkOptional<CreateDeploymentResponseVariant1Team> team;
   final SdkOptional<CreateDeploymentResponseVariant1TtyBuildLogs> ttyBuildLogs;
   final CreateDeploymentResponseVariant1Type type_;
-
   /// A number containing the date when the deployment was undeleted at milliseconds
   final SdkOptional<double> undeletedAt;
-
   /// A string with the unique URL of the deployment
   final String url;
-
   /// An array of domains that were provided by the user when creating the Deployment.
   final SdkOptional<List<String>> userAliases;
-
   /// Since January 2025 User-configured deployment ID for skew protection with pre-built deployments. This is set when users configure a custom deploymentId in their next.config.js file. This allows Next.js to use skew protection even when deployments are pre-built outside of Vercel's build system.
   final SdkOptional<String> userConfiguredDeploymentId;
-
   /// The platform version that was used to create the deployment.
   final CreateDeploymentResponseVariant1Version version;
 
-  const CreateDeploymentResponseVariant1(
-      {this.alias = const SdkOmitted(),
-      required this.aliasAssigned,
-      this.aliasAssignedAt = const SdkOmitted(),
-      this.aliasError = const SdkOmitted(),
-      this.aliasFinal = const SdkOmitted(),
-      this.aliasWarning = const SdkOmitted(),
-      this.alwaysRefuseToBuild = const SdkOmitted(),
-      this.atproto = const SdkOmitted(),
-      this.attribution = const SdkOmitted(),
-      this.autoAssignCustomDomains = const SdkOmitted(),
-      this.automaticAliases = const SdkOmitted(),
-      required this.bootedAt,
-      required this.build,
-      this.buildArtifactUrls = const SdkOmitted(),
-      this.buildContainerFinishedAt = const SdkOmitted(),
-      this.buildErrorAt = const SdkOmitted(),
-      required this.buildingAt,
-      this.builds = const SdkOmitted(),
-      required this.buildSkipped,
-      this.canceledAt = const SdkOmitted(),
-      this.checks = const SdkOmitted(),
-      this.checksConclusion = const SdkOmitted(),
-      this.checksState = const SdkOmitted(),
-      this.config = const SdkOmitted(),
-      this.connectBuildsEnabled = const SdkOmitted(),
-      this.connectConfigurationId = const SdkOmitted(),
-      required this.createdAt,
-      required this.createdIn,
-      required this.creator,
-      this.crons = const SdkOmitted(),
-      this.customEnvironment = const SdkOmitted(),
-      this.defaultRoute = const SdkOmitted(),
-      this.deletedAt = const SdkOmitted(),
-      required this.duration,
-      required this.env,
-      this.errorCode = const SdkOmitted(),
-      this.errorLink = const SdkOmitted(),
-      this.errorMessage = const SdkOmitted(),
-      this.errorStep = const SdkOmitted(),
-      this.flags = const SdkOmitted(),
-      this.functions = const SdkOmitted(),
-      this.gitRepo = const SdkOmitted(),
-      this.gitSource = const SdkOmitted(),
-      required this.id,
-      this.images = const SdkOmitted(),
-      this.initReadyAt = const SdkOmitted(),
-      required this.inspectorUrl,
-      this.integrations = const SdkOmitted(),
-      this.isFirstBranchDeployment = const SdkOmitted(),
-      required this.isInConcurrentBuildsQueue,
-      this.isInstantStatic = const SdkOmitted(),
-      required this.isInSystemBuildsQueue,
-      this.lambdas = const SdkOmitted(),
-      this.manualProvisioning = const SdkOmitted(),
-      required this.meta,
-      this.microfrontends = const SdkOmitted(),
-      this.monorepoManager = const SdkOmitted(),
-      required this.name,
-      this.nodeVersion = const SdkOmitted(),
-      this.oidcTokenClaims = const SdkOmitted(),
-      this.oomReport = const SdkOmitted(),
-      this.originCacheRegion = const SdkOmitted(),
-      required this.ownerId,
-      this.passiveConnectConfigurationId = const SdkOmitted(),
-      this.passiveRegions = const SdkOmitted(),
-      required this.plan,
-      this.platform = const SdkOmitted(),
-      this.prebuilt = const SdkOmitted(),
-      this.previewCommentsEnabled = const SdkOmitted(),
-      this.project = const SdkOmitted(),
-      required this.projectId,
-      required this.projectSettings,
-      required this.public,
-      this.ready = const SdkOmitted(),
-      required this.readyState,
-      this.readyStateReason = const SdkOmitted(),
-      this.readySubstate = const SdkOmitted(),
-      required this.regions,
-      this.resourceConfig = const SdkOmitted(),
-      required this.routes,
-      this.seatBlock = const SdkOmitted(),
-      this.services = const SdkOmitted(),
-      this.softDeletedByRetention = const SdkOmitted(),
-      this.source = const SdkOmitted(),
-      required this.status,
-      this.target = const SdkOmitted(),
-      this.team = const SdkOmitted(),
-      this.ttyBuildLogs = const SdkOmitted(),
-      required this.type_,
-      this.undeletedAt = const SdkOmitted(),
-      required this.url,
-      this.userAliases = const SdkOmitted(),
-      this.userConfiguredDeploymentId = const SdkOmitted(),
-      required this.version});
+  const CreateDeploymentResponseVariant1({this.alias = const SdkOmitted(), required this.aliasAssigned, this.aliasAssignedAt = const SdkOmitted(), this.aliasError = const SdkOmitted(), this.aliasFinal = const SdkOmitted(), this.aliasWarning = const SdkOmitted(), this.alwaysRefuseToBuild = const SdkOmitted(), this.atproto = const SdkOmitted(), this.attribution = const SdkOmitted(), this.autoAssignCustomDomains = const SdkOmitted(), this.automaticAliases = const SdkOmitted(), required this.bootedAt, required this.build, this.buildArtifactUrls = const SdkOmitted(), this.buildContainerFinishedAt = const SdkOmitted(), this.buildErrorAt = const SdkOmitted(), required this.buildingAt, this.builds = const SdkOmitted(), required this.buildSkipped, this.canceledAt = const SdkOmitted(), this.checks = const SdkOmitted(), this.checksConclusion = const SdkOmitted(), this.checksState = const SdkOmitted(), this.config = const SdkOmitted(), this.connectBuildsEnabled = const SdkOmitted(), this.connectConfigurationId = const SdkOmitted(), required this.createdAt, required this.createdIn, required this.creator, this.crons = const SdkOmitted(), this.customEnvironment = const SdkOmitted(), this.defaultRoute = const SdkOmitted(), this.deletedAt = const SdkOmitted(), required this.duration, required this.env, this.errorCode = const SdkOmitted(), this.errorLink = const SdkOmitted(), this.errorMessage = const SdkOmitted(), this.errorStep = const SdkOmitted(), this.flags = const SdkOmitted(), this.functions = const SdkOmitted(), this.gitRepo = const SdkOmitted(), this.gitSource = const SdkOmitted(), required this.id, this.images = const SdkOmitted(), this.initReadyAt = const SdkOmitted(), required this.inspectorUrl, this.integrations = const SdkOmitted(), this.isFirstBranchDeployment = const SdkOmitted(), required this.isInConcurrentBuildsQueue, this.isInstantStatic = const SdkOmitted(), required this.isInSystemBuildsQueue, this.lambdas = const SdkOmitted(), this.manualProvisioning = const SdkOmitted(), required this.meta, this.microfrontends = const SdkOmitted(), this.monorepoManager = const SdkOmitted(), required this.name, this.nodeVersion = const SdkOmitted(), this.oidcTokenClaims = const SdkOmitted(), this.oomReport = const SdkOmitted(), this.originCacheRegion = const SdkOmitted(), required this.ownerId, this.passiveConnectConfigurationId = const SdkOmitted(), this.passiveRegions = const SdkOmitted(), required this.plan, this.platform = const SdkOmitted(), this.prebuilt = const SdkOmitted(), this.previewCommentsEnabled = const SdkOmitted(), this.project = const SdkOmitted(), required this.projectId, required this.projectSettings, required this.public, this.ready = const SdkOmitted(), required this.readyState, this.readyStateReason = const SdkOmitted(), this.readySubstate = const SdkOmitted(), required this.regions, this.resourceConfig = const SdkOmitted(), required this.routes, this.seatBlock = const SdkOmitted(), this.services = const SdkOmitted(), this.softDeletedByRetention = const SdkOmitted(), this.source = const SdkOmitted(), required this.status, this.target = const SdkOmitted(), this.team = const SdkOmitted(), this.ttyBuildLogs = const SdkOmitted(), required this.type_, this.undeletedAt = const SdkOmitted(), required this.url, this.userAliases = const SdkOmitted(), this.userConfiguredDeploymentId = const SdkOmitted(), required this.version});
 
-  CreateDeploymentResponseVariant1 Function(
-      {SdkOptional<List<String>> alias,
-      CreateDeploymentResponseVariant1AliasAssigned aliasAssigned,
-      SdkOptional<dynamic> aliasAssignedAt,
-      SdkOptional<CreateDeploymentResponseVariant1AliasError?> aliasError,
-      SdkOptional<String?> aliasFinal,
-      SdkOptional<CreateDeploymentResponseVariant1AliasWarning?> aliasWarning,
-      SdkOptional<CreateDeploymentResponseVariant1AlwaysRefuseToBuild>
-          alwaysRefuseToBuild,
-      SdkOptional<dynamic> atproto,
-      SdkOptional<CreateDeploymentResponseVariant1Attribution> attribution,
-      SdkOptional<CreateDeploymentResponseVariant1AutoAssignCustomDomains>
-          autoAssignCustomDomains,
-      SdkOptional<List<String>> automaticAliases,
-      double bootedAt,
-      CreateDeploymentResponseVariant1Build build,
-      SdkOptional<List<String>> buildArtifactUrls,
-      SdkOptional<double> buildContainerFinishedAt,
-      SdkOptional<double> buildErrorAt,
-      double buildingAt,
-      SdkOptional<List<CreateDeploymentResponseVariant1BuildsItem>> builds,
-      CreateDeploymentResponseVariant1BuildSkipped buildSkipped,
-      SdkOptional<double> canceledAt,
-      SdkOptional<CreateDeploymentResponseVariant1Checks> checks,
-      SdkOptional<CreateDeploymentResponseVariant1ChecksConclusion>
-          checksConclusion,
-      SdkOptional<CreateDeploymentResponseVariant1ChecksState> checksState,
-      SdkOptional<CreateDeploymentResponseVariant1Config> config,
-      SdkOptional<CreateDeploymentResponseVariant1ConnectBuildsEnabled>
-          connectBuildsEnabled,
-      SdkOptional<String> connectConfigurationId,
-      double createdAt,
-      String createdIn,
-      CreateDeploymentResponseVariant1Creator creator,
-      SdkOptional<List<CreateDeploymentResponseVariant1CronsItem>> crons,
-      SdkOptional<dynamic> customEnvironment,
-      SdkOptional<String> defaultRoute,
-      SdkOptional<double?> deletedAt,
-      CreateDeploymentResponseVariant1Duration duration,
-      List<String> env,
-      SdkOptional<String> errorCode,
-      SdkOptional<String> errorLink,
-      SdkOptional<String?> errorMessage,
-      SdkOptional<String> errorStep,
-      SdkOptional<dynamic> flags,
-      SdkOptional<Map<String, CreateDeploymentResponseVariant1FunctionsValue>?>
-          functions,
-      SdkOptional<dynamic> gitRepo,
-      SdkOptional<dynamic> gitSource,
-      String id,
-      SdkOptional<CreateDeploymentResponseVariant1Images> images,
-      SdkOptional<double> initReadyAt,
-      String? inspectorUrl,
-      SdkOptional<CreateDeploymentResponseVariant1Integrations> integrations,
-      SdkOptional<CreateDeploymentResponseVariant1IsFirstBranchDeployment>
-          isFirstBranchDeployment,
-      CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue
-          isInConcurrentBuildsQueue,
-      SdkOptional<CreateDeploymentResponseVariant1IsInstantStatic>
-          isInstantStatic,
-      CreateDeploymentResponseVariant1IsInSystemBuildsQueue
-          isInSystemBuildsQueue,
-      SdkOptional<List<CreateDeploymentResponseVariant1LambdasItem>> lambdas,
-      SdkOptional<CreateDeploymentResponseVariant1ManualProvisioning>
-          manualProvisioning,
-      Map<String, String> meta,
-      SdkOptional<dynamic> microfrontends,
-      SdkOptional<String?> monorepoManager,
-      String name,
-      SdkOptional<CreateDeploymentResponseVariant1NodeVersion> nodeVersion,
-      SdkOptional<CreateDeploymentResponseVariant1OidcTokenClaims>
-          oidcTokenClaims,
-      SdkOptional<CreateDeploymentResponseVariant1OomReport> oomReport,
-      SdkOptional<String> originCacheRegion,
-      String ownerId,
-      SdkOptional<String> passiveConnectConfigurationId,
-      SdkOptional<List<String>> passiveRegions,
-      CreateDeploymentResponseVariant1Plan plan,
-      SdkOptional<CreateDeploymentResponseVariant1Platform> platform,
-      SdkOptional<CreateDeploymentResponseVariant1Prebuilt> prebuilt,
-      SdkOptional<CreateDeploymentResponseVariant1PreviewCommentsEnabled>
-          previewCommentsEnabled,
-      SdkOptional<CreateDeploymentResponseVariant1Project> project,
-      String projectId,
-      CreateDeploymentResponseVariant1ProjectSettings projectSettings,
-      CreateDeploymentResponseVariant1Public public,
-      SdkOptional<double> ready,
-      CreateDeploymentResponseVariant1ReadyState readyState,
-      SdkOptional<String> readyStateReason,
-      SdkOptional<CreateDeploymentResponseVariant1ReadySubstate> readySubstate,
-      List<String> regions,
-      SdkOptional<CreateDeploymentResponseVariant1ResourceConfig>
-          resourceConfig,
-      List<dynamic>? routes,
-      SdkOptional<CreateDeploymentResponseVariant1SeatBlock> seatBlock,
-      SdkOptional<List<dynamic>> services,
-      SdkOptional<CreateDeploymentResponseVariant1SoftDeletedByRetention>
-          softDeletedByRetention,
-      SdkOptional<CreateDeploymentResponseVariant1Source> source,
-      CreateDeploymentResponseVariant1Status status,
-      SdkOptional<CreateDeploymentResponseVariant1Target?> target,
-      SdkOptional<CreateDeploymentResponseVariant1Team> team,
-      SdkOptional<CreateDeploymentResponseVariant1TtyBuildLogs> ttyBuildLogs,
-      CreateDeploymentResponseVariant1Type type_,
-      SdkOptional<double> undeletedAt,
-      String url,
-      SdkOptional<List<String>> userAliases,
-      SdkOptional<String> userConfiguredDeploymentId,
-      CreateDeploymentResponseVariant1Version
-          version}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1 Function({SdkOptional<List<String>> alias, CreateDeploymentResponseVariant1AliasAssigned aliasAssigned, SdkOptional<dynamic> aliasAssignedAt, SdkOptional<CreateDeploymentResponseVariant1AliasError?> aliasError, SdkOptional<String?> aliasFinal, SdkOptional<CreateDeploymentResponseVariant1AliasWarning?> aliasWarning, SdkOptional<CreateDeploymentResponseVariant1AlwaysRefuseToBuild> alwaysRefuseToBuild, SdkOptional<dynamic> atproto, SdkOptional<CreateDeploymentResponseVariant1Attribution> attribution, SdkOptional<CreateDeploymentResponseVariant1AutoAssignCustomDomains> autoAssignCustomDomains, SdkOptional<List<String>> automaticAliases, double bootedAt, CreateDeploymentResponseVariant1Build build, SdkOptional<List<String>> buildArtifactUrls, SdkOptional<double> buildContainerFinishedAt, SdkOptional<double> buildErrorAt, double buildingAt, SdkOptional<List<CreateDeploymentResponseVariant1BuildsItem>> builds, CreateDeploymentResponseVariant1BuildSkipped buildSkipped, SdkOptional<double> canceledAt, SdkOptional<CreateDeploymentResponseVariant1Checks> checks, SdkOptional<CreateDeploymentResponseVariant1ChecksConclusion> checksConclusion, SdkOptional<CreateDeploymentResponseVariant1ChecksState> checksState, SdkOptional<CreateDeploymentResponseVariant1Config> config, SdkOptional<CreateDeploymentResponseVariant1ConnectBuildsEnabled> connectBuildsEnabled, SdkOptional<String> connectConfigurationId, double createdAt, String createdIn, CreateDeploymentResponseVariant1Creator creator, SdkOptional<List<CreateDeploymentResponseVariant1CronsItem>> crons, SdkOptional<dynamic> customEnvironment, SdkOptional<String> defaultRoute, SdkOptional<double?> deletedAt, CreateDeploymentResponseVariant1Duration duration, List<String> env, SdkOptional<String> errorCode, SdkOptional<String> errorLink, SdkOptional<String?> errorMessage, SdkOptional<String> errorStep, SdkOptional<dynamic> flags, SdkOptional<Map<String, CreateDeploymentResponseVariant1FunctionsValue>?> functions, SdkOptional<dynamic> gitRepo, SdkOptional<dynamic> gitSource, String id, SdkOptional<CreateDeploymentResponseVariant1Images> images, SdkOptional<double> initReadyAt, String? inspectorUrl, SdkOptional<CreateDeploymentResponseVariant1Integrations> integrations, SdkOptional<CreateDeploymentResponseVariant1IsFirstBranchDeployment> isFirstBranchDeployment, CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue isInConcurrentBuildsQueue, SdkOptional<CreateDeploymentResponseVariant1IsInstantStatic> isInstantStatic, CreateDeploymentResponseVariant1IsInSystemBuildsQueue isInSystemBuildsQueue, SdkOptional<List<CreateDeploymentResponseVariant1LambdasItem>> lambdas, SdkOptional<CreateDeploymentResponseVariant1ManualProvisioning> manualProvisioning, Map<String, String> meta, SdkOptional<dynamic> microfrontends, SdkOptional<String?> monorepoManager, String name, SdkOptional<CreateDeploymentResponseVariant1NodeVersion> nodeVersion, SdkOptional<CreateDeploymentResponseVariant1OidcTokenClaims> oidcTokenClaims, SdkOptional<CreateDeploymentResponseVariant1OomReport> oomReport, SdkOptional<String> originCacheRegion, String ownerId, SdkOptional<String> passiveConnectConfigurationId, SdkOptional<List<String>> passiveRegions, CreateDeploymentResponseVariant1Plan plan, SdkOptional<CreateDeploymentResponseVariant1Platform> platform, SdkOptional<CreateDeploymentResponseVariant1Prebuilt> prebuilt, SdkOptional<CreateDeploymentResponseVariant1PreviewCommentsEnabled> previewCommentsEnabled, SdkOptional<CreateDeploymentResponseVariant1Project> project, String projectId, CreateDeploymentResponseVariant1ProjectSettings projectSettings, CreateDeploymentResponseVariant1Public public, SdkOptional<double> ready, CreateDeploymentResponseVariant1ReadyState readyState, SdkOptional<String> readyStateReason, SdkOptional<CreateDeploymentResponseVariant1ReadySubstate> readySubstate, List<String> regions, SdkOptional<CreateDeploymentResponseVariant1ResourceConfig> resourceConfig, List<dynamic>? routes, SdkOptional<CreateDeploymentResponseVariant1SeatBlock> seatBlock, SdkOptional<List<dynamic>> services, SdkOptional<CreateDeploymentResponseVariant1SoftDeletedByRetention> softDeletedByRetention, SdkOptional<CreateDeploymentResponseVariant1Source> source, CreateDeploymentResponseVariant1Status status, SdkOptional<CreateDeploymentResponseVariant1Target?> target, SdkOptional<CreateDeploymentResponseVariant1Team> team, SdkOptional<CreateDeploymentResponseVariant1TtyBuildLogs> ttyBuildLogs, CreateDeploymentResponseVariant1Type type_, SdkOptional<double> undeletedAt, String url, SdkOptional<List<String>> userAliases, SdkOptional<String> userConfiguredDeploymentId, CreateDeploymentResponseVariant1Version version}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1 _copyWith(
-          {Object? alias = sdkOmittedValue,
-          Object? aliasAssigned = sdkOmittedValue,
-          Object? aliasAssignedAt = sdkOmittedValue,
-          Object? aliasError = sdkOmittedValue,
-          Object? aliasFinal = sdkOmittedValue,
-          Object? aliasWarning = sdkOmittedValue,
-          Object? alwaysRefuseToBuild = sdkOmittedValue,
-          Object? atproto = sdkOmittedValue,
-          Object? attribution = sdkOmittedValue,
-          Object? autoAssignCustomDomains = sdkOmittedValue,
-          Object? automaticAliases = sdkOmittedValue,
-          Object? bootedAt = sdkOmittedValue,
-          Object? build = sdkOmittedValue,
-          Object? buildArtifactUrls = sdkOmittedValue,
-          Object? buildContainerFinishedAt = sdkOmittedValue,
-          Object? buildErrorAt = sdkOmittedValue,
-          Object? buildingAt = sdkOmittedValue,
-          Object? builds = sdkOmittedValue,
-          Object? buildSkipped = sdkOmittedValue,
-          Object? canceledAt = sdkOmittedValue,
-          Object? checks = sdkOmittedValue,
-          Object? checksConclusion = sdkOmittedValue,
-          Object? checksState = sdkOmittedValue,
-          Object? config = sdkOmittedValue,
-          Object? connectBuildsEnabled = sdkOmittedValue,
-          Object? connectConfigurationId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdIn = sdkOmittedValue,
-          Object? creator = sdkOmittedValue,
-          Object? crons = sdkOmittedValue,
-          Object? customEnvironment = sdkOmittedValue,
-          Object? defaultRoute = sdkOmittedValue,
-          Object? deletedAt = sdkOmittedValue,
-          Object? duration = sdkOmittedValue,
-          Object? env = sdkOmittedValue,
-          Object? errorCode = sdkOmittedValue,
-          Object? errorLink = sdkOmittedValue,
-          Object? errorMessage = sdkOmittedValue,
-          Object? errorStep = sdkOmittedValue,
-          Object? flags = sdkOmittedValue,
-          Object? functions = sdkOmittedValue,
-          Object? gitRepo = sdkOmittedValue,
-          Object? gitSource = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? images = sdkOmittedValue,
-          Object? initReadyAt = sdkOmittedValue,
-          Object? inspectorUrl = sdkOmittedValue,
-          Object? integrations = sdkOmittedValue,
-          Object? isFirstBranchDeployment = sdkOmittedValue,
-          Object? isInConcurrentBuildsQueue = sdkOmittedValue,
-          Object? isInstantStatic = sdkOmittedValue,
-          Object? isInSystemBuildsQueue = sdkOmittedValue,
-          Object? lambdas = sdkOmittedValue,
-          Object? manualProvisioning = sdkOmittedValue,
-          Object? meta = sdkOmittedValue,
-          Object? microfrontends = sdkOmittedValue,
-          Object? monorepoManager = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? nodeVersion = sdkOmittedValue,
-          Object? oidcTokenClaims = sdkOmittedValue,
-          Object? oomReport = sdkOmittedValue,
-          Object? originCacheRegion = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? passiveConnectConfigurationId = sdkOmittedValue,
-          Object? passiveRegions = sdkOmittedValue,
-          Object? plan = sdkOmittedValue,
-          Object? platform = sdkOmittedValue,
-          Object? prebuilt = sdkOmittedValue,
-          Object? previewCommentsEnabled = sdkOmittedValue,
-          Object? project = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectSettings = sdkOmittedValue,
-          Object? public = sdkOmittedValue,
-          Object? ready = sdkOmittedValue,
-          Object? readyState = sdkOmittedValue,
-          Object? readyStateReason = sdkOmittedValue,
-          Object? readySubstate = sdkOmittedValue,
-          Object? regions = sdkOmittedValue,
-          Object? resourceConfig = sdkOmittedValue,
-          Object? routes = sdkOmittedValue,
-          Object? seatBlock = sdkOmittedValue,
-          Object? services = sdkOmittedValue,
-          Object? softDeletedByRetention = sdkOmittedValue,
-          Object? source = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? team = sdkOmittedValue,
-          Object? ttyBuildLogs = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? undeletedAt = sdkOmittedValue,
-          Object? url = sdkOmittedValue,
-          Object? userAliases = sdkOmittedValue,
-          Object? userConfiguredDeploymentId = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1(
-        alias: identical(alias, sdkOmittedValue)
-            ? this.alias
-            : alias as SdkOptional<List<String>>,
-        aliasAssigned: identical(aliasAssigned, sdkOmittedValue)
-            ? this.aliasAssigned
-            : aliasAssigned as CreateDeploymentResponseVariant1AliasAssigned,
-        aliasAssignedAt: identical(aliasAssignedAt, sdkOmittedValue)
-            ? this.aliasAssignedAt
-            : aliasAssignedAt as SdkOptional<dynamic>,
-        aliasError: identical(aliasError, sdkOmittedValue)
-            ? this.aliasError
-            : aliasError
-                as SdkOptional<CreateDeploymentResponseVariant1AliasError?>,
-        aliasFinal: identical(aliasFinal, sdkOmittedValue)
-            ? this.aliasFinal
-            : aliasFinal as SdkOptional<String?>,
-        aliasWarning: identical(aliasWarning, sdkOmittedValue)
-            ? this.aliasWarning
-            : aliasWarning
-                as SdkOptional<CreateDeploymentResponseVariant1AliasWarning?>,
-        alwaysRefuseToBuild: identical(alwaysRefuseToBuild, sdkOmittedValue)
-            ? this.alwaysRefuseToBuild
-            : alwaysRefuseToBuild as SdkOptional<
-                CreateDeploymentResponseVariant1AlwaysRefuseToBuild>,
-        atproto: identical(atproto, sdkOmittedValue)
-            ? this.atproto
-            : atproto as SdkOptional<dynamic>,
-        attribution: identical(attribution, sdkOmittedValue)
-            ? this.attribution
-            : attribution
-                as SdkOptional<CreateDeploymentResponseVariant1Attribution>,
-        autoAssignCustomDomains:
-            identical(autoAssignCustomDomains, sdkOmittedValue)
-                ? this.autoAssignCustomDomains
-                : autoAssignCustomDomains as SdkOptional<
-                    CreateDeploymentResponseVariant1AutoAssignCustomDomains>,
-        automaticAliases: identical(automaticAliases, sdkOmittedValue)
-            ? this.automaticAliases
-            : automaticAliases as SdkOptional<List<String>>,
-        bootedAt: identical(bootedAt, sdkOmittedValue)
-            ? this.bootedAt
-            : bootedAt as double,
-        build: identical(build, sdkOmittedValue)
-            ? this.build
-            : build as CreateDeploymentResponseVariant1Build,
-        buildArtifactUrls: identical(buildArtifactUrls, sdkOmittedValue)
-            ? this.buildArtifactUrls
-            : buildArtifactUrls as SdkOptional<List<String>>,
-        buildContainerFinishedAt:
-            identical(buildContainerFinishedAt, sdkOmittedValue)
-                ? this.buildContainerFinishedAt
-                : buildContainerFinishedAt as SdkOptional<double>,
-        buildErrorAt: identical(buildErrorAt, sdkOmittedValue)
-            ? this.buildErrorAt
-            : buildErrorAt as SdkOptional<double>,
-        buildingAt: identical(buildingAt, sdkOmittedValue)
-            ? this.buildingAt
-            : buildingAt as double,
-        builds: identical(builds, sdkOmittedValue)
-            ? this.builds
-            : builds as SdkOptional<
-                List<CreateDeploymentResponseVariant1BuildsItem>>,
-        buildSkipped: identical(buildSkipped, sdkOmittedValue)
-            ? this.buildSkipped
-            : buildSkipped as CreateDeploymentResponseVariant1BuildSkipped,
-        canceledAt: identical(canceledAt, sdkOmittedValue)
-            ? this.canceledAt
-            : canceledAt as SdkOptional<double>,
-        checks: identical(checks, sdkOmittedValue)
-            ? this.checks
-            : checks as SdkOptional<CreateDeploymentResponseVariant1Checks>,
-        checksConclusion: identical(checksConclusion, sdkOmittedValue)
-            ? this.checksConclusion
-            : checksConclusion as SdkOptional<
-                CreateDeploymentResponseVariant1ChecksConclusion>,
-        checksState: identical(checksState, sdkOmittedValue)
-            ? this.checksState
-            : checksState
-                as SdkOptional<CreateDeploymentResponseVariant1ChecksState>,
-        config: identical(config, sdkOmittedValue)
-            ? this.config
-            : config as SdkOptional<CreateDeploymentResponseVariant1Config>,
-        connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue)
-            ? this.connectBuildsEnabled
-            : connectBuildsEnabled as SdkOptional<
-                CreateDeploymentResponseVariant1ConnectBuildsEnabled>,
-        connectConfigurationId:
-            identical(connectConfigurationId, sdkOmittedValue)
-                ? this.connectConfigurationId
-                : connectConfigurationId as SdkOptional<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdIn: identical(createdIn, sdkOmittedValue)
-            ? this.createdIn
-            : createdIn as String,
-        creator: identical(creator, sdkOmittedValue)
-            ? this.creator
-            : creator as CreateDeploymentResponseVariant1Creator,
-        crons: identical(crons, sdkOmittedValue)
-            ? this.crons
-            : crons
-                as SdkOptional<List<CreateDeploymentResponseVariant1CronsItem>>,
-        customEnvironment: identical(customEnvironment, sdkOmittedValue)
-            ? this.customEnvironment
-            : customEnvironment as SdkOptional<dynamic>,
-        defaultRoute: identical(defaultRoute, sdkOmittedValue)
-            ? this.defaultRoute
-            : defaultRoute as SdkOptional<String>,
-        deletedAt: identical(deletedAt, sdkOmittedValue)
-            ? this.deletedAt
-            : deletedAt as SdkOptional<double?>,
-        duration: identical(duration, sdkOmittedValue)
-            ? this.duration
-            : duration as CreateDeploymentResponseVariant1Duration,
-        env: identical(env, sdkOmittedValue) ? this.env : env as List<String>,
-        errorCode: identical(errorCode, sdkOmittedValue)
-            ? this.errorCode
-            : errorCode as SdkOptional<String>,
-        errorLink: identical(errorLink, sdkOmittedValue)
-            ? this.errorLink
-            : errorLink as SdkOptional<String>,
-        errorMessage: identical(errorMessage, sdkOmittedValue)
-            ? this.errorMessage
-            : errorMessage as SdkOptional<String?>,
-        errorStep: identical(errorStep, sdkOmittedValue)
-            ? this.errorStep
-            : errorStep as SdkOptional<String>,
-        flags: identical(flags, sdkOmittedValue)
-            ? this.flags
-            : flags as SdkOptional<dynamic>,
-        functions: identical(functions, sdkOmittedValue)
-            ? this.functions
-            : functions as SdkOptional<
-                Map<String, CreateDeploymentResponseVariant1FunctionsValue>?>,
-        gitRepo: identical(gitRepo, sdkOmittedValue)
-            ? this.gitRepo
-            : gitRepo as SdkOptional<dynamic>,
-        gitSource: identical(gitSource, sdkOmittedValue)
-            ? this.gitSource
-            : gitSource as SdkOptional<dynamic>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        images: identical(images, sdkOmittedValue)
-            ? this.images
-            : images as SdkOptional<CreateDeploymentResponseVariant1Images>,
-        initReadyAt: identical(initReadyAt, sdkOmittedValue)
-            ? this.initReadyAt
-            : initReadyAt as SdkOptional<double>,
-        inspectorUrl: identical(inspectorUrl, sdkOmittedValue)
-            ? this.inspectorUrl
-            : inspectorUrl as String?,
-        integrations: identical(integrations, sdkOmittedValue)
-            ? this.integrations
-            : integrations
-                as SdkOptional<CreateDeploymentResponseVariant1Integrations>,
-        isFirstBranchDeployment:
-            identical(isFirstBranchDeployment, sdkOmittedValue)
-                ? this.isFirstBranchDeployment
-                : isFirstBranchDeployment as SdkOptional<
-                    CreateDeploymentResponseVariant1IsFirstBranchDeployment>,
-        isInConcurrentBuildsQueue: identical(
-                isInConcurrentBuildsQueue, sdkOmittedValue)
-            ? this.isInConcurrentBuildsQueue
-            : isInConcurrentBuildsQueue
-                as CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue,
-        isInstantStatic: identical(isInstantStatic, sdkOmittedValue)
-            ? this.isInstantStatic
-            : isInstantStatic
-                as SdkOptional<CreateDeploymentResponseVariant1IsInstantStatic>,
-        isInSystemBuildsQueue: identical(isInSystemBuildsQueue, sdkOmittedValue)
-            ? this.isInSystemBuildsQueue
-            : isInSystemBuildsQueue
-                as CreateDeploymentResponseVariant1IsInSystemBuildsQueue,
-        lambdas: identical(lambdas, sdkOmittedValue)
-            ? this.lambdas
-            : lambdas as SdkOptional<
-                List<CreateDeploymentResponseVariant1LambdasItem>>,
-        manualProvisioning: identical(manualProvisioning, sdkOmittedValue)
-            ? this.manualProvisioning
-            : manualProvisioning as SdkOptional<
-                CreateDeploymentResponseVariant1ManualProvisioning>,
-        meta: identical(meta, sdkOmittedValue)
-            ? this.meta
-            : meta as Map<String, String>,
-        microfrontends: identical(microfrontends, sdkOmittedValue)
-            ? this.microfrontends
-            : microfrontends as SdkOptional<dynamic>,
-        monorepoManager: identical(monorepoManager, sdkOmittedValue)
-            ? this.monorepoManager
-            : monorepoManager as SdkOptional<String?>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        nodeVersion: identical(nodeVersion, sdkOmittedValue)
-            ? this.nodeVersion
-            : nodeVersion
-                as SdkOptional<CreateDeploymentResponseVariant1NodeVersion>,
-        oidcTokenClaims: identical(oidcTokenClaims, sdkOmittedValue)
-            ? this.oidcTokenClaims
-            : oidcTokenClaims
-                as SdkOptional<CreateDeploymentResponseVariant1OidcTokenClaims>,
-        oomReport: identical(oomReport, sdkOmittedValue)
-            ? this.oomReport
-            : oomReport
-                as SdkOptional<CreateDeploymentResponseVariant1OomReport>,
-        originCacheRegion: identical(originCacheRegion, sdkOmittedValue)
-            ? this.originCacheRegion
-            : originCacheRegion as SdkOptional<String>,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        passiveConnectConfigurationId:
-            identical(passiveConnectConfigurationId, sdkOmittedValue)
-                ? this.passiveConnectConfigurationId
-                : passiveConnectConfigurationId as SdkOptional<String>,
-        passiveRegions: identical(passiveRegions, sdkOmittedValue)
-            ? this.passiveRegions
-            : passiveRegions as SdkOptional<List<String>>,
-        plan: identical(plan, sdkOmittedValue)
-            ? this.plan
-            : plan as CreateDeploymentResponseVariant1Plan,
-        platform: identical(platform, sdkOmittedValue)
-            ? this.platform
-            : platform as SdkOptional<CreateDeploymentResponseVariant1Platform>,
-        prebuilt: identical(prebuilt, sdkOmittedValue)
-            ? this.prebuilt
-            : prebuilt as SdkOptional<CreateDeploymentResponseVariant1Prebuilt>,
-        previewCommentsEnabled:
-            identical(previewCommentsEnabled, sdkOmittedValue)
-                ? this.previewCommentsEnabled
-                : previewCommentsEnabled as SdkOptional<
-                    CreateDeploymentResponseVariant1PreviewCommentsEnabled>,
-        project: identical(project, sdkOmittedValue)
-            ? this.project
-            : project as SdkOptional<CreateDeploymentResponseVariant1Project>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectSettings: identical(projectSettings, sdkOmittedValue)
-            ? this.projectSettings
-            : projectSettings
-                as CreateDeploymentResponseVariant1ProjectSettings,
-        public: identical(public, sdkOmittedValue)
-            ? this.public
-            : public as CreateDeploymentResponseVariant1Public,
-        ready: identical(ready, sdkOmittedValue)
-            ? this.ready
-            : ready as SdkOptional<double>,
-        readyState: identical(readyState, sdkOmittedValue)
-            ? this.readyState
-            : readyState as CreateDeploymentResponseVariant1ReadyState,
-        readyStateReason: identical(readyStateReason, sdkOmittedValue)
-            ? this.readyStateReason
-            : readyStateReason as SdkOptional<String>,
-        readySubstate: identical(readySubstate, sdkOmittedValue)
-            ? this.readySubstate
-            : readySubstate
-                as SdkOptional<CreateDeploymentResponseVariant1ReadySubstate>,
-        regions: identical(regions, sdkOmittedValue)
-            ? this.regions
-            : regions as List<String>,
-        resourceConfig: identical(resourceConfig, sdkOmittedValue)
-            ? this.resourceConfig
-            : resourceConfig
-                as SdkOptional<CreateDeploymentResponseVariant1ResourceConfig>,
-        routes: identical(routes, sdkOmittedValue)
-            ? this.routes
-            : routes as List<dynamic>?,
-        seatBlock: identical(seatBlock, sdkOmittedValue)
-            ? this.seatBlock
-            : seatBlock
-                as SdkOptional<CreateDeploymentResponseVariant1SeatBlock>,
-        services: identical(services, sdkOmittedValue)
-            ? this.services
-            : services as SdkOptional<List<dynamic>>,
-        softDeletedByRetention:
-            identical(softDeletedByRetention, sdkOmittedValue)
-                ? this.softDeletedByRetention
-                : softDeletedByRetention as SdkOptional<
-                    CreateDeploymentResponseVariant1SoftDeletedByRetention>,
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source as SdkOptional<CreateDeploymentResponseVariant1Source>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as CreateDeploymentResponseVariant1Status,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<CreateDeploymentResponseVariant1Target?>,
-        team: identical(team, sdkOmittedValue)
-            ? this.team
-            : team as SdkOptional<CreateDeploymentResponseVariant1Team>,
-        ttyBuildLogs: identical(ttyBuildLogs, sdkOmittedValue)
-            ? this.ttyBuildLogs
-            : ttyBuildLogs
-                as SdkOptional<CreateDeploymentResponseVariant1TtyBuildLogs>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDeploymentResponseVariant1Type,
-        undeletedAt: identical(undeletedAt, sdkOmittedValue)
-            ? this.undeletedAt
-            : undeletedAt as SdkOptional<double>,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        userAliases: identical(userAliases, sdkOmittedValue)
-            ? this.userAliases
-            : userAliases as SdkOptional<List<String>>,
-        userConfiguredDeploymentId:
-            identical(userConfiguredDeploymentId, sdkOmittedValue)
-                ? this.userConfiguredDeploymentId
-                : userConfiguredDeploymentId as SdkOptional<String>,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as CreateDeploymentResponseVariant1Version,
-      );
+  CreateDeploymentResponseVariant1 _copyWith({Object? alias = sdkOmittedValue, Object? aliasAssigned = sdkOmittedValue, Object? aliasAssignedAt = sdkOmittedValue, Object? aliasError = sdkOmittedValue, Object? aliasFinal = sdkOmittedValue, Object? aliasWarning = sdkOmittedValue, Object? alwaysRefuseToBuild = sdkOmittedValue, Object? atproto = sdkOmittedValue, Object? attribution = sdkOmittedValue, Object? autoAssignCustomDomains = sdkOmittedValue, Object? automaticAliases = sdkOmittedValue, Object? bootedAt = sdkOmittedValue, Object? build = sdkOmittedValue, Object? buildArtifactUrls = sdkOmittedValue, Object? buildContainerFinishedAt = sdkOmittedValue, Object? buildErrorAt = sdkOmittedValue, Object? buildingAt = sdkOmittedValue, Object? builds = sdkOmittedValue, Object? buildSkipped = sdkOmittedValue, Object? canceledAt = sdkOmittedValue, Object? checks = sdkOmittedValue, Object? checksConclusion = sdkOmittedValue, Object? checksState = sdkOmittedValue, Object? config = sdkOmittedValue, Object? connectBuildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdIn = sdkOmittedValue, Object? creator = sdkOmittedValue, Object? crons = sdkOmittedValue, Object? customEnvironment = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? duration = sdkOmittedValue, Object? env = sdkOmittedValue, Object? errorCode = sdkOmittedValue, Object? errorLink = sdkOmittedValue, Object? errorMessage = sdkOmittedValue, Object? errorStep = sdkOmittedValue, Object? flags = sdkOmittedValue, Object? functions = sdkOmittedValue, Object? gitRepo = sdkOmittedValue, Object? gitSource = sdkOmittedValue, Object? id = sdkOmittedValue, Object? images = sdkOmittedValue, Object? initReadyAt = sdkOmittedValue, Object? inspectorUrl = sdkOmittedValue, Object? integrations = sdkOmittedValue, Object? isFirstBranchDeployment = sdkOmittedValue, Object? isInConcurrentBuildsQueue = sdkOmittedValue, Object? isInstantStatic = sdkOmittedValue, Object? isInSystemBuildsQueue = sdkOmittedValue, Object? lambdas = sdkOmittedValue, Object? manualProvisioning = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? microfrontends = sdkOmittedValue, Object? monorepoManager = sdkOmittedValue, Object? name = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? oidcTokenClaims = sdkOmittedValue, Object? oomReport = sdkOmittedValue, Object? originCacheRegion = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? passiveConnectConfigurationId = sdkOmittedValue, Object? passiveRegions = sdkOmittedValue, Object? plan = sdkOmittedValue, Object? platform = sdkOmittedValue, Object? prebuilt = sdkOmittedValue, Object? previewCommentsEnabled = sdkOmittedValue, Object? project = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectSettings = sdkOmittedValue, Object? public = sdkOmittedValue, Object? ready = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? readyStateReason = sdkOmittedValue, Object? readySubstate = sdkOmittedValue, Object? regions = sdkOmittedValue, Object? resourceConfig = sdkOmittedValue, Object? routes = sdkOmittedValue, Object? seatBlock = sdkOmittedValue, Object? services = sdkOmittedValue, Object? softDeletedByRetention = sdkOmittedValue, Object? source = sdkOmittedValue, Object? status = sdkOmittedValue, Object? target = sdkOmittedValue, Object? team = sdkOmittedValue, Object? ttyBuildLogs = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? undeletedAt = sdkOmittedValue, Object? url = sdkOmittedValue, Object? userAliases = sdkOmittedValue, Object? userConfiguredDeploymentId = sdkOmittedValue, Object? version = sdkOmittedValue}) => CreateDeploymentResponseVariant1(
+    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<List<String>>,
+    aliasAssigned: identical(aliasAssigned, sdkOmittedValue) ? this.aliasAssigned : aliasAssigned as CreateDeploymentResponseVariant1AliasAssigned,
+    aliasAssignedAt: identical(aliasAssignedAt, sdkOmittedValue) ? this.aliasAssignedAt : aliasAssignedAt as SdkOptional<dynamic>,
+    aliasError: identical(aliasError, sdkOmittedValue) ? this.aliasError : aliasError as SdkOptional<CreateDeploymentResponseVariant1AliasError?>,
+    aliasFinal: identical(aliasFinal, sdkOmittedValue) ? this.aliasFinal : aliasFinal as SdkOptional<String?>,
+    aliasWarning: identical(aliasWarning, sdkOmittedValue) ? this.aliasWarning : aliasWarning as SdkOptional<CreateDeploymentResponseVariant1AliasWarning?>,
+    alwaysRefuseToBuild: identical(alwaysRefuseToBuild, sdkOmittedValue) ? this.alwaysRefuseToBuild : alwaysRefuseToBuild as SdkOptional<CreateDeploymentResponseVariant1AlwaysRefuseToBuild>,
+    atproto: identical(atproto, sdkOmittedValue) ? this.atproto : atproto as SdkOptional<dynamic>,
+    attribution: identical(attribution, sdkOmittedValue) ? this.attribution : attribution as SdkOptional<CreateDeploymentResponseVariant1Attribution>,
+    autoAssignCustomDomains: identical(autoAssignCustomDomains, sdkOmittedValue) ? this.autoAssignCustomDomains : autoAssignCustomDomains as SdkOptional<CreateDeploymentResponseVariant1AutoAssignCustomDomains>,
+    automaticAliases: identical(automaticAliases, sdkOmittedValue) ? this.automaticAliases : automaticAliases as SdkOptional<List<String>>,
+    bootedAt: identical(bootedAt, sdkOmittedValue) ? this.bootedAt : bootedAt as double,
+    build: identical(build, sdkOmittedValue) ? this.build : build as CreateDeploymentResponseVariant1Build,
+    buildArtifactUrls: identical(buildArtifactUrls, sdkOmittedValue) ? this.buildArtifactUrls : buildArtifactUrls as SdkOptional<List<String>>,
+    buildContainerFinishedAt: identical(buildContainerFinishedAt, sdkOmittedValue) ? this.buildContainerFinishedAt : buildContainerFinishedAt as SdkOptional<double>,
+    buildErrorAt: identical(buildErrorAt, sdkOmittedValue) ? this.buildErrorAt : buildErrorAt as SdkOptional<double>,
+    buildingAt: identical(buildingAt, sdkOmittedValue) ? this.buildingAt : buildingAt as double,
+    builds: identical(builds, sdkOmittedValue) ? this.builds : builds as SdkOptional<List<CreateDeploymentResponseVariant1BuildsItem>>,
+    buildSkipped: identical(buildSkipped, sdkOmittedValue) ? this.buildSkipped : buildSkipped as CreateDeploymentResponseVariant1BuildSkipped,
+    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
+    checks: identical(checks, sdkOmittedValue) ? this.checks : checks as SdkOptional<CreateDeploymentResponseVariant1Checks>,
+    checksConclusion: identical(checksConclusion, sdkOmittedValue) ? this.checksConclusion : checksConclusion as SdkOptional<CreateDeploymentResponseVariant1ChecksConclusion>,
+    checksState: identical(checksState, sdkOmittedValue) ? this.checksState : checksState as SdkOptional<CreateDeploymentResponseVariant1ChecksState>,
+    config: identical(config, sdkOmittedValue) ? this.config : config as SdkOptional<CreateDeploymentResponseVariant1Config>,
+    connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue) ? this.connectBuildsEnabled : connectBuildsEnabled as SdkOptional<CreateDeploymentResponseVariant1ConnectBuildsEnabled>,
+    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as SdkOptional<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdIn: identical(createdIn, sdkOmittedValue) ? this.createdIn : createdIn as String,
+    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as CreateDeploymentResponseVariant1Creator,
+    crons: identical(crons, sdkOmittedValue) ? this.crons : crons as SdkOptional<List<CreateDeploymentResponseVariant1CronsItem>>,
+    customEnvironment: identical(customEnvironment, sdkOmittedValue) ? this.customEnvironment : customEnvironment as SdkOptional<dynamic>,
+    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
+    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double?>,
+    duration: identical(duration, sdkOmittedValue) ? this.duration : duration as CreateDeploymentResponseVariant1Duration,
+    env: identical(env, sdkOmittedValue) ? this.env : env as List<String>,
+    errorCode: identical(errorCode, sdkOmittedValue) ? this.errorCode : errorCode as SdkOptional<String>,
+    errorLink: identical(errorLink, sdkOmittedValue) ? this.errorLink : errorLink as SdkOptional<String>,
+    errorMessage: identical(errorMessage, sdkOmittedValue) ? this.errorMessage : errorMessage as SdkOptional<String?>,
+    errorStep: identical(errorStep, sdkOmittedValue) ? this.errorStep : errorStep as SdkOptional<String>,
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as SdkOptional<dynamic>,
+    functions: identical(functions, sdkOmittedValue) ? this.functions : functions as SdkOptional<Map<String, CreateDeploymentResponseVariant1FunctionsValue>?>,
+    gitRepo: identical(gitRepo, sdkOmittedValue) ? this.gitRepo : gitRepo as SdkOptional<dynamic>,
+    gitSource: identical(gitSource, sdkOmittedValue) ? this.gitSource : gitSource as SdkOptional<dynamic>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    images: identical(images, sdkOmittedValue) ? this.images : images as SdkOptional<CreateDeploymentResponseVariant1Images>,
+    initReadyAt: identical(initReadyAt, sdkOmittedValue) ? this.initReadyAt : initReadyAt as SdkOptional<double>,
+    inspectorUrl: identical(inspectorUrl, sdkOmittedValue) ? this.inspectorUrl : inspectorUrl as String?,
+    integrations: identical(integrations, sdkOmittedValue) ? this.integrations : integrations as SdkOptional<CreateDeploymentResponseVariant1Integrations>,
+    isFirstBranchDeployment: identical(isFirstBranchDeployment, sdkOmittedValue) ? this.isFirstBranchDeployment : isFirstBranchDeployment as SdkOptional<CreateDeploymentResponseVariant1IsFirstBranchDeployment>,
+    isInConcurrentBuildsQueue: identical(isInConcurrentBuildsQueue, sdkOmittedValue) ? this.isInConcurrentBuildsQueue : isInConcurrentBuildsQueue as CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue,
+    isInstantStatic: identical(isInstantStatic, sdkOmittedValue) ? this.isInstantStatic : isInstantStatic as SdkOptional<CreateDeploymentResponseVariant1IsInstantStatic>,
+    isInSystemBuildsQueue: identical(isInSystemBuildsQueue, sdkOmittedValue) ? this.isInSystemBuildsQueue : isInSystemBuildsQueue as CreateDeploymentResponseVariant1IsInSystemBuildsQueue,
+    lambdas: identical(lambdas, sdkOmittedValue) ? this.lambdas : lambdas as SdkOptional<List<CreateDeploymentResponseVariant1LambdasItem>>,
+    manualProvisioning: identical(manualProvisioning, sdkOmittedValue) ? this.manualProvisioning : manualProvisioning as SdkOptional<CreateDeploymentResponseVariant1ManualProvisioning>,
+    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as Map<String, String>,
+    microfrontends: identical(microfrontends, sdkOmittedValue) ? this.microfrontends : microfrontends as SdkOptional<dynamic>,
+    monorepoManager: identical(monorepoManager, sdkOmittedValue) ? this.monorepoManager : monorepoManager as SdkOptional<String?>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as SdkOptional<CreateDeploymentResponseVariant1NodeVersion>,
+    oidcTokenClaims: identical(oidcTokenClaims, sdkOmittedValue) ? this.oidcTokenClaims : oidcTokenClaims as SdkOptional<CreateDeploymentResponseVariant1OidcTokenClaims>,
+    oomReport: identical(oomReport, sdkOmittedValue) ? this.oomReport : oomReport as SdkOptional<CreateDeploymentResponseVariant1OomReport>,
+    originCacheRegion: identical(originCacheRegion, sdkOmittedValue) ? this.originCacheRegion : originCacheRegion as SdkOptional<String>,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    passiveConnectConfigurationId: identical(passiveConnectConfigurationId, sdkOmittedValue) ? this.passiveConnectConfigurationId : passiveConnectConfigurationId as SdkOptional<String>,
+    passiveRegions: identical(passiveRegions, sdkOmittedValue) ? this.passiveRegions : passiveRegions as SdkOptional<List<String>>,
+    plan: identical(plan, sdkOmittedValue) ? this.plan : plan as CreateDeploymentResponseVariant1Plan,
+    platform: identical(platform, sdkOmittedValue) ? this.platform : platform as SdkOptional<CreateDeploymentResponseVariant1Platform>,
+    prebuilt: identical(prebuilt, sdkOmittedValue) ? this.prebuilt : prebuilt as SdkOptional<CreateDeploymentResponseVariant1Prebuilt>,
+    previewCommentsEnabled: identical(previewCommentsEnabled, sdkOmittedValue) ? this.previewCommentsEnabled : previewCommentsEnabled as SdkOptional<CreateDeploymentResponseVariant1PreviewCommentsEnabled>,
+    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<CreateDeploymentResponseVariant1Project>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectSettings: identical(projectSettings, sdkOmittedValue) ? this.projectSettings : projectSettings as CreateDeploymentResponseVariant1ProjectSettings,
+    public: identical(public, sdkOmittedValue) ? this.public : public as CreateDeploymentResponseVariant1Public,
+    ready: identical(ready, sdkOmittedValue) ? this.ready : ready as SdkOptional<double>,
+    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as CreateDeploymentResponseVariant1ReadyState,
+    readyStateReason: identical(readyStateReason, sdkOmittedValue) ? this.readyStateReason : readyStateReason as SdkOptional<String>,
+    readySubstate: identical(readySubstate, sdkOmittedValue) ? this.readySubstate : readySubstate as SdkOptional<CreateDeploymentResponseVariant1ReadySubstate>,
+    regions: identical(regions, sdkOmittedValue) ? this.regions : regions as List<String>,
+    resourceConfig: identical(resourceConfig, sdkOmittedValue) ? this.resourceConfig : resourceConfig as SdkOptional<CreateDeploymentResponseVariant1ResourceConfig>,
+    routes: identical(routes, sdkOmittedValue) ? this.routes : routes as List<dynamic>?,
+    seatBlock: identical(seatBlock, sdkOmittedValue) ? this.seatBlock : seatBlock as SdkOptional<CreateDeploymentResponseVariant1SeatBlock>,
+    services: identical(services, sdkOmittedValue) ? this.services : services as SdkOptional<List<dynamic>>,
+    softDeletedByRetention: identical(softDeletedByRetention, sdkOmittedValue) ? this.softDeletedByRetention : softDeletedByRetention as SdkOptional<CreateDeploymentResponseVariant1SoftDeletedByRetention>,
+    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<CreateDeploymentResponseVariant1Source>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as CreateDeploymentResponseVariant1Status,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<CreateDeploymentResponseVariant1Target?>,
+    team: identical(team, sdkOmittedValue) ? this.team : team as SdkOptional<CreateDeploymentResponseVariant1Team>,
+    ttyBuildLogs: identical(ttyBuildLogs, sdkOmittedValue) ? this.ttyBuildLogs : ttyBuildLogs as SdkOptional<CreateDeploymentResponseVariant1TtyBuildLogs>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentResponseVariant1Type,
+    undeletedAt: identical(undeletedAt, sdkOmittedValue) ? this.undeletedAt : undeletedAt as SdkOptional<double>,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    userAliases: identical(userAliases, sdkOmittedValue) ? this.userAliases : userAliases as SdkOptional<List<String>>,
+    userConfiguredDeploymentId: identical(userConfiguredDeploymentId, sdkOmittedValue) ? this.userConfiguredDeploymentId : userConfiguredDeploymentId as SdkOptional<String>,
+    version: identical(version, sdkOmittedValue) ? this.version : version as CreateDeploymentResponseVariant1Version,
+  );
 
-  factory CreateDeploymentResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1(
-        alias: json['alias'] != null
-            ? SdkPresent(
-                ((json['alias'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        aliasAssigned: (json['aliasAssigned'] != null
-            ? CreateDeploymentResponseVariant1AliasAssigned.fromJson(
-                json['aliasAssigned'] as bool)
-            : null)!,
-        aliasAssignedAt: json.containsKey('aliasAssignedAt')
-            ? SdkPresent(json['aliasAssignedAt'])
-            : const SdkOmitted(),
-        aliasError: json.containsKey('aliasError')
-            ? SdkPresent(json['aliasError'] != null
-                ? CreateDeploymentResponseVariant1AliasError.fromJson(
-                    json['aliasError'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        aliasFinal: json.containsKey('aliasFinal')
-            ? SdkPresent(json['aliasFinal'] as String?)
-            : const SdkOmitted(),
-        aliasWarning: json.containsKey('aliasWarning')
-            ? SdkPresent(json['aliasWarning'] != null
-                ? CreateDeploymentResponseVariant1AliasWarning.fromJson(
-                    json['aliasWarning'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        alwaysRefuseToBuild: json['alwaysRefuseToBuild'] != null
-            ? SdkPresent((json['alwaysRefuseToBuild'] != null
-                ? CreateDeploymentResponseVariant1AlwaysRefuseToBuild.fromJson(
-                    json['alwaysRefuseToBuild'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        atproto: json['atproto'] != null
-            ? SdkPresent((json['atproto'])!)
-            : const SdkOmitted(),
-        attribution: json['attribution'] != null
-            ? SdkPresent((json['attribution'] != null
-                ? CreateDeploymentResponseVariant1Attribution.fromJson(
-                    json['attribution'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        autoAssignCustomDomains: json['autoAssignCustomDomains'] != null
-            ? SdkPresent((json['autoAssignCustomDomains'] != null
-                ? CreateDeploymentResponseVariant1AutoAssignCustomDomains
-                    .fromJson(json['autoAssignCustomDomains'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        automaticAliases: json['automaticAliases'] != null
-            ? SdkPresent(((json['automaticAliases'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        bootedAt: ((json['bootedAt'] as num?)?.toDouble())!,
-        build: (json['build'] != null
-            ? CreateDeploymentResponseVariant1Build.fromJson(
-                json['build'] as Map<String, dynamic>)
-            : null)!,
-        buildArtifactUrls: json['buildArtifactUrls'] != null
-            ? SdkPresent(((json['buildArtifactUrls'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        buildContainerFinishedAt: json['buildContainerFinishedAt'] != null
-            ? SdkPresent(
-                ((json['buildContainerFinishedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        buildErrorAt: json['buildErrorAt'] != null
-            ? SdkPresent(((json['buildErrorAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        buildingAt: ((json['buildingAt'] as num?)?.toDouble())!,
-        builds: json['builds'] != null
-            ? SdkPresent(((json['builds'] as List?)
-                ?.map((e) =>
-                    CreateDeploymentResponseVariant1BuildsItem.fromJson(
-                        e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        buildSkipped: (json['buildSkipped'] != null
-            ? CreateDeploymentResponseVariant1BuildSkipped.fromJson(
-                json['buildSkipped'] as bool)
-            : null)!,
-        canceledAt: json['canceledAt'] != null
-            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        checks: json['checks'] != null
-            ? SdkPresent((json['checks'] != null
-                ? CreateDeploymentResponseVariant1Checks.fromJson(
-                    json['checks'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        checksConclusion: json['checksConclusion'] != null
-            ? SdkPresent((json['checksConclusion'] != null
-                ? CreateDeploymentResponseVariant1ChecksConclusion.fromJson(
-                    json['checksConclusion'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        checksState: json['checksState'] != null
-            ? SdkPresent((json['checksState'] != null
-                ? CreateDeploymentResponseVariant1ChecksState.fromJson(
-                    json['checksState'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        config: json['config'] != null
-            ? SdkPresent((json['config'] != null
-                ? CreateDeploymentResponseVariant1Config.fromJson(
-                    json['config'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        connectBuildsEnabled: json['connectBuildsEnabled'] != null
-            ? SdkPresent((json['connectBuildsEnabled'] != null
-                ? CreateDeploymentResponseVariant1ConnectBuildsEnabled.fromJson(
-                    json['connectBuildsEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        connectConfigurationId: json['connectConfigurationId'] != null
-            ? SdkPresent((json['connectConfigurationId'] as String?)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdIn: (json['createdIn'] as String?)!,
-        creator: (json['creator'] != null
-            ? CreateDeploymentResponseVariant1Creator.fromJson(
-                json['creator'] as Map<String, dynamic>)
-            : null)!,
-        crons: json['crons'] != null
-            ? SdkPresent(((json['crons'] as List?)
-                ?.map((e) => CreateDeploymentResponseVariant1CronsItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        customEnvironment: json['customEnvironment'] != null
-            ? SdkPresent((json['customEnvironment'])!)
-            : const SdkOmitted(),
-        defaultRoute: json['defaultRoute'] != null
-            ? SdkPresent((json['defaultRoute'] as String?)!)
-            : const SdkOmitted(),
-        deletedAt: json.containsKey('deletedAt')
-            ? SdkPresent((json['deletedAt'] as num?)?.toDouble())
-            : const SdkOmitted(),
-        duration: (json['duration'] != null
-            ? CreateDeploymentResponseVariant1Duration.fromJson(
-                json['duration'] as Map<String, dynamic>)
-            : null)!,
-        env: ((json['env'] as List?)?.map((e) => e as String).toList())!,
-        errorCode: json['errorCode'] != null
-            ? SdkPresent((json['errorCode'] as String?)!)
-            : const SdkOmitted(),
-        errorLink: json['errorLink'] != null
-            ? SdkPresent((json['errorLink'] as String?)!)
-            : const SdkOmitted(),
-        errorMessage: json.containsKey('errorMessage')
-            ? SdkPresent(json['errorMessage'] as String?)
-            : const SdkOmitted(),
-        errorStep: json['errorStep'] != null
-            ? SdkPresent((json['errorStep'] as String?)!)
-            : const SdkOmitted(),
-        flags: json['flags'] != null
-            ? SdkPresent((json['flags'])!)
-            : const SdkOmitted(),
-        functions: json.containsKey('functions')
-            ? SdkPresent(json['functions'] == null
-                ? null
-                : Map<String, dynamic>.from(json['functions'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        CreateDeploymentResponseVariant1FunctionsValue.fromJson(
-                            value as Map<String, dynamic>))))
-            : const SdkOmitted(),
-        gitRepo: json.containsKey('gitRepo')
-            ? SdkPresent(json['gitRepo'])
-            : const SdkOmitted(),
-        gitSource: json['gitSource'] != null
-            ? SdkPresent((json['gitSource'])!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        images: json['images'] != null
-            ? SdkPresent((json['images'] != null
-                ? CreateDeploymentResponseVariant1Images.fromJson(
-                    json['images'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        initReadyAt: json['initReadyAt'] != null
-            ? SdkPresent(((json['initReadyAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        inspectorUrl: json.containsKey('inspectorUrl')
-            ? json['inspectorUrl'] as String?
-            : throw ArgumentError.value(
-                null, 'inspectorUrl', 'Required property is missing'),
-        integrations: json['integrations'] != null
-            ? SdkPresent((json['integrations'] != null
-                ? CreateDeploymentResponseVariant1Integrations.fromJson(
-                    json['integrations'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        isFirstBranchDeployment: json['isFirstBranchDeployment'] != null
-            ? SdkPresent((json['isFirstBranchDeployment'] != null
-                ? CreateDeploymentResponseVariant1IsFirstBranchDeployment
-                    .fromJson(json['isFirstBranchDeployment'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        isInConcurrentBuildsQueue: (json['isInConcurrentBuildsQueue'] != null
-            ? CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue
-                .fromJson(json['isInConcurrentBuildsQueue'] as bool)
-            : null)!,
-        isInstantStatic: json['isInstantStatic'] != null
-            ? SdkPresent((json['isInstantStatic'] != null
-                ? CreateDeploymentResponseVariant1IsInstantStatic.fromJson(
-                    json['isInstantStatic'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        isInSystemBuildsQueue: (json['isInSystemBuildsQueue'] != null
-            ? CreateDeploymentResponseVariant1IsInSystemBuildsQueue.fromJson(
-                json['isInSystemBuildsQueue'] as bool)
-            : null)!,
-        lambdas: json['lambdas'] != null
-            ? SdkPresent(((json['lambdas'] as List?)
-                ?.map((e) =>
-                    CreateDeploymentResponseVariant1LambdasItem.fromJson(
-                        e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        manualProvisioning: json['manualProvisioning'] != null
-            ? SdkPresent((json['manualProvisioning'] != null
-                ? CreateDeploymentResponseVariant1ManualProvisioning.fromJson(
-                    json['manualProvisioning'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        meta: (json['meta'] == null
-            ? null
-            : Map<String, dynamic>.from(json['meta'] as Map)
-                .map((key, value) => MapEntry(key, value as String)))!,
-        microfrontends: json['microfrontends'] != null
-            ? SdkPresent((json['microfrontends'])!)
-            : const SdkOmitted(),
-        monorepoManager: json.containsKey('monorepoManager')
-            ? SdkPresent(json['monorepoManager'] as String?)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        nodeVersion: json['nodeVersion'] != null
-            ? SdkPresent((json['nodeVersion'] != null
-                ? CreateDeploymentResponseVariant1NodeVersion.fromJson(
-                    json['nodeVersion'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        oidcTokenClaims: json['oidcTokenClaims'] != null
-            ? SdkPresent((json['oidcTokenClaims'] != null
-                ? CreateDeploymentResponseVariant1OidcTokenClaims.fromJson(
-                    json['oidcTokenClaims'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        oomReport: json['oomReport'] != null
-            ? SdkPresent((json['oomReport'] != null
-                ? CreateDeploymentResponseVariant1OomReport.fromJson(
-                    json['oomReport'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        originCacheRegion: json['originCacheRegion'] != null
-            ? SdkPresent((json['originCacheRegion'] as String?)!)
-            : const SdkOmitted(),
-        ownerId: (json['ownerId'] as String?)!,
-        passiveConnectConfigurationId: json['passiveConnectConfigurationId'] !=
-                null
-            ? SdkPresent((json['passiveConnectConfigurationId'] as String?)!)
-            : const SdkOmitted(),
-        passiveRegions: json['passiveRegions'] != null
-            ? SdkPresent(((json['passiveRegions'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        plan: (json['plan'] != null
-            ? CreateDeploymentResponseVariant1Plan.fromJson(
-                json['plan'] as String)
-            : null)!,
-        platform: json['platform'] != null
-            ? SdkPresent((json['platform'] != null
-                ? CreateDeploymentResponseVariant1Platform.fromJson(
-                    json['platform'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        prebuilt: json['prebuilt'] != null
-            ? SdkPresent((json['prebuilt'] != null
-                ? CreateDeploymentResponseVariant1Prebuilt.fromJson(
-                    json['prebuilt'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        previewCommentsEnabled: json['previewCommentsEnabled'] != null
-            ? SdkPresent((json['previewCommentsEnabled'] != null
-                ? CreateDeploymentResponseVariant1PreviewCommentsEnabled
-                    .fromJson(json['previewCommentsEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        project: json['project'] != null
-            ? SdkPresent((json['project'] != null
-                ? CreateDeploymentResponseVariant1Project.fromJson(
-                    json['project'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        projectId: (json['projectId'] as String?)!,
-        projectSettings: (json['projectSettings'] != null
-            ? CreateDeploymentResponseVariant1ProjectSettings.fromJson(
-                json['projectSettings'] as Map<String, dynamic>)
-            : null)!,
-        public: (json['public'] != null
-            ? CreateDeploymentResponseVariant1Public.fromJson(
-                json['public'] as bool)
-            : null)!,
-        ready: json['ready'] != null
-            ? SdkPresent(((json['ready'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        readyState: (json['readyState'] != null
-            ? CreateDeploymentResponseVariant1ReadyState.fromJson(
-                json['readyState'] as String)
-            : null)!,
-        readyStateReason: json['readyStateReason'] != null
-            ? SdkPresent((json['readyStateReason'] as String?)!)
-            : const SdkOmitted(),
-        readySubstate: json['readySubstate'] != null
-            ? SdkPresent((json['readySubstate'] != null
-                ? CreateDeploymentResponseVariant1ReadySubstate.fromJson(
-                    json['readySubstate'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        regions:
-            ((json['regions'] as List?)?.map((e) => e as String).toList())!,
-        resourceConfig: json['resourceConfig'] != null
-            ? SdkPresent((json['resourceConfig'] != null
-                ? CreateDeploymentResponseVariant1ResourceConfig.fromJson(
-                    json['resourceConfig'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        routes: json.containsKey('routes')
-            ? (json['routes'] as List?)?.map((e) => e).toList()
-            : throw ArgumentError.value(
-                null, 'routes', 'Required property is missing'),
-        seatBlock: json['seatBlock'] != null
-            ? SdkPresent((json['seatBlock'] != null
-                ? CreateDeploymentResponseVariant1SeatBlock.fromJson(
-                    json['seatBlock'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        services: json['services'] != null
-            ? SdkPresent(((json['services'] as List?)?.map((e) => e).toList())!)
-            : const SdkOmitted(),
-        softDeletedByRetention: json['softDeletedByRetention'] != null
-            ? SdkPresent((json['softDeletedByRetention'] != null
-                ? CreateDeploymentResponseVariant1SoftDeletedByRetention
-                    .fromJson(json['softDeletedByRetention'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        source: json['source'] != null
-            ? SdkPresent((json['source'] != null
-                ? CreateDeploymentResponseVariant1Source.fromJson(
-                    json['source'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        status: (json['status'] != null
-            ? CreateDeploymentResponseVariant1Status.fromJson(
-                json['status'] as String)
-            : null)!,
-        target: json.containsKey('target')
-            ? SdkPresent(json['target'] != null
-                ? CreateDeploymentResponseVariant1Target.fromJson(
-                    json['target'] as String)
-                : null)
-            : const SdkOmitted(),
-        team: json['team'] != null
-            ? SdkPresent((json['team'] != null
-                ? CreateDeploymentResponseVariant1Team.fromJson(
-                    json['team'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        ttyBuildLogs: json['ttyBuildLogs'] != null
-            ? SdkPresent((json['ttyBuildLogs'] != null
-                ? CreateDeploymentResponseVariant1TtyBuildLogs.fromJson(
-                    json['ttyBuildLogs'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDeploymentResponseVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        undeletedAt: json['undeletedAt'] != null
-            ? SdkPresent(((json['undeletedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        url: (json['url'] as String?)!,
-        userAliases: json['userAliases'] != null
-            ? SdkPresent(((json['userAliases'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        userConfiguredDeploymentId: json['userConfiguredDeploymentId'] != null
-            ? SdkPresent((json['userConfiguredDeploymentId'] as String?)!)
-            : const SdkOmitted(),
-        version: (json['version'] != null
-            ? CreateDeploymentResponseVariant1Version.fromJson(
-                (json['version'] as num).toInt())
-            : null)!,
-      );
+  factory CreateDeploymentResponseVariant1.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1(
+    alias: json['alias'] != null ? SdkPresent(((json['alias'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    aliasAssigned: (json['aliasAssigned'] != null ? CreateDeploymentResponseVariant1AliasAssigned.fromJson(json['aliasAssigned'] as bool) : null)!,
+    aliasAssignedAt: json.containsKey('aliasAssignedAt') ? SdkPresent(json['aliasAssignedAt']) : const SdkOmitted(),
+    aliasError: json.containsKey('aliasError') ? SdkPresent(json['aliasError'] != null ? CreateDeploymentResponseVariant1AliasError.fromJson(json['aliasError'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    aliasFinal: json.containsKey('aliasFinal') ? SdkPresent(json['aliasFinal'] as String?) : const SdkOmitted(),
+    aliasWarning: json.containsKey('aliasWarning') ? SdkPresent(json['aliasWarning'] != null ? CreateDeploymentResponseVariant1AliasWarning.fromJson(json['aliasWarning'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    alwaysRefuseToBuild: json['alwaysRefuseToBuild'] != null ? SdkPresent((json['alwaysRefuseToBuild'] != null ? CreateDeploymentResponseVariant1AlwaysRefuseToBuild.fromJson(json['alwaysRefuseToBuild'] as bool) : null)!) : const SdkOmitted(),
+    atproto: json['atproto'] != null ? SdkPresent((json['atproto'])!) : const SdkOmitted(),
+    attribution: json['attribution'] != null ? SdkPresent((json['attribution'] != null ? CreateDeploymentResponseVariant1Attribution.fromJson(json['attribution'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    autoAssignCustomDomains: json['autoAssignCustomDomains'] != null ? SdkPresent((json['autoAssignCustomDomains'] != null ? CreateDeploymentResponseVariant1AutoAssignCustomDomains.fromJson(json['autoAssignCustomDomains'] as bool) : null)!) : const SdkOmitted(),
+    automaticAliases: json['automaticAliases'] != null ? SdkPresent(((json['automaticAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    bootedAt: ((json['bootedAt'] as num?)?.toDouble())!,
+    build: (json['build'] != null ? CreateDeploymentResponseVariant1Build.fromJson(json['build'] as Map<String, dynamic>) : null)!,
+    buildArtifactUrls: json['buildArtifactUrls'] != null ? SdkPresent(((json['buildArtifactUrls'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    buildContainerFinishedAt: json['buildContainerFinishedAt'] != null ? SdkPresent(((json['buildContainerFinishedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    buildErrorAt: json['buildErrorAt'] != null ? SdkPresent(((json['buildErrorAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    buildingAt: ((json['buildingAt'] as num?)?.toDouble())!,
+    builds: json['builds'] != null ? SdkPresent(((json['builds'] as List?)?.map((e) => CreateDeploymentResponseVariant1BuildsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    buildSkipped: (json['buildSkipped'] != null ? CreateDeploymentResponseVariant1BuildSkipped.fromJson(json['buildSkipped'] as bool) : null)!,
+    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    checks: json['checks'] != null ? SdkPresent((json['checks'] != null ? CreateDeploymentResponseVariant1Checks.fromJson(json['checks'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    checksConclusion: json['checksConclusion'] != null ? SdkPresent((json['checksConclusion'] != null ? CreateDeploymentResponseVariant1ChecksConclusion.fromJson(json['checksConclusion'] as String) : null)!) : const SdkOmitted(),
+    checksState: json['checksState'] != null ? SdkPresent((json['checksState'] != null ? CreateDeploymentResponseVariant1ChecksState.fromJson(json['checksState'] as String) : null)!) : const SdkOmitted(),
+    config: json['config'] != null ? SdkPresent((json['config'] != null ? CreateDeploymentResponseVariant1Config.fromJson(json['config'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    connectBuildsEnabled: json['connectBuildsEnabled'] != null ? SdkPresent((json['connectBuildsEnabled'] != null ? CreateDeploymentResponseVariant1ConnectBuildsEnabled.fromJson(json['connectBuildsEnabled'] as bool) : null)!) : const SdkOmitted(),
+    connectConfigurationId: json['connectConfigurationId'] != null ? SdkPresent((json['connectConfigurationId'] as String?)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdIn: (json['createdIn'] as String?)!,
+    creator: (json['creator'] != null ? CreateDeploymentResponseVariant1Creator.fromJson(json['creator'] as Map<String, dynamic>) : null)!,
+    crons: json['crons'] != null ? SdkPresent(((json['crons'] as List?)?.map((e) => CreateDeploymentResponseVariant1CronsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    customEnvironment: json['customEnvironment'] != null ? SdkPresent((json['customEnvironment'])!) : const SdkOmitted(),
+    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
+    deletedAt: json.containsKey('deletedAt') ? SdkPresent((json['deletedAt'] as num?)?.toDouble()) : const SdkOmitted(),
+    duration: (json['duration'] != null ? CreateDeploymentResponseVariant1Duration.fromJson(json['duration'] as Map<String, dynamic>) : null)!,
+    env: ((json['env'] as List?)?.map((e) => e as String).toList())!,
+    errorCode: json['errorCode'] != null ? SdkPresent((json['errorCode'] as String?)!) : const SdkOmitted(),
+    errorLink: json['errorLink'] != null ? SdkPresent((json['errorLink'] as String?)!) : const SdkOmitted(),
+    errorMessage: json.containsKey('errorMessage') ? SdkPresent(json['errorMessage'] as String?) : const SdkOmitted(),
+    errorStep: json['errorStep'] != null ? SdkPresent((json['errorStep'] as String?)!) : const SdkOmitted(),
+    flags: json['flags'] != null ? SdkPresent((json['flags'])!) : const SdkOmitted(),
+    functions: json.containsKey('functions') ? SdkPresent(json['functions'] == null ? null : Map<String, dynamic>.from(json['functions'] as Map).map((key, value) => MapEntry(key, CreateDeploymentResponseVariant1FunctionsValue.fromJson(value as Map<String, dynamic>)))) : const SdkOmitted(),
+    gitRepo: json.containsKey('gitRepo') ? SdkPresent(json['gitRepo']) : const SdkOmitted(),
+    gitSource: json['gitSource'] != null ? SdkPresent((json['gitSource'])!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    images: json['images'] != null ? SdkPresent((json['images'] != null ? CreateDeploymentResponseVariant1Images.fromJson(json['images'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    initReadyAt: json['initReadyAt'] != null ? SdkPresent(((json['initReadyAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    inspectorUrl: json.containsKey('inspectorUrl') ? json['inspectorUrl'] as String? : throw ArgumentError.value(null, 'inspectorUrl', 'Required property is missing'),
+    integrations: json['integrations'] != null ? SdkPresent((json['integrations'] != null ? CreateDeploymentResponseVariant1Integrations.fromJson(json['integrations'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    isFirstBranchDeployment: json['isFirstBranchDeployment'] != null ? SdkPresent((json['isFirstBranchDeployment'] != null ? CreateDeploymentResponseVariant1IsFirstBranchDeployment.fromJson(json['isFirstBranchDeployment'] as bool) : null)!) : const SdkOmitted(),
+    isInConcurrentBuildsQueue: (json['isInConcurrentBuildsQueue'] != null ? CreateDeploymentResponseVariant1IsInConcurrentBuildsQueue.fromJson(json['isInConcurrentBuildsQueue'] as bool) : null)!,
+    isInstantStatic: json['isInstantStatic'] != null ? SdkPresent((json['isInstantStatic'] != null ? CreateDeploymentResponseVariant1IsInstantStatic.fromJson(json['isInstantStatic'] as bool) : null)!) : const SdkOmitted(),
+    isInSystemBuildsQueue: (json['isInSystemBuildsQueue'] != null ? CreateDeploymentResponseVariant1IsInSystemBuildsQueue.fromJson(json['isInSystemBuildsQueue'] as bool) : null)!,
+    lambdas: json['lambdas'] != null ? SdkPresent(((json['lambdas'] as List?)?.map((e) => CreateDeploymentResponseVariant1LambdasItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    manualProvisioning: json['manualProvisioning'] != null ? SdkPresent((json['manualProvisioning'] != null ? CreateDeploymentResponseVariant1ManualProvisioning.fromJson(json['manualProvisioning'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    meta: (json['meta'] == null ? null : Map<String, dynamic>.from(json['meta'] as Map).map((key, value) => MapEntry(key, value as String)))!,
+    microfrontends: json['microfrontends'] != null ? SdkPresent((json['microfrontends'])!) : const SdkOmitted(),
+    monorepoManager: json.containsKey('monorepoManager') ? SdkPresent(json['monorepoManager'] as String?) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    nodeVersion: json['nodeVersion'] != null ? SdkPresent((json['nodeVersion'] != null ? CreateDeploymentResponseVariant1NodeVersion.fromJson(json['nodeVersion'] as String) : null)!) : const SdkOmitted(),
+    oidcTokenClaims: json['oidcTokenClaims'] != null ? SdkPresent((json['oidcTokenClaims'] != null ? CreateDeploymentResponseVariant1OidcTokenClaims.fromJson(json['oidcTokenClaims'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    oomReport: json['oomReport'] != null ? SdkPresent((json['oomReport'] != null ? CreateDeploymentResponseVariant1OomReport.fromJson(json['oomReport'] as String) : null)!) : const SdkOmitted(),
+    originCacheRegion: json['originCacheRegion'] != null ? SdkPresent((json['originCacheRegion'] as String?)!) : const SdkOmitted(),
+    ownerId: (json['ownerId'] as String?)!,
+    passiveConnectConfigurationId: json['passiveConnectConfigurationId'] != null ? SdkPresent((json['passiveConnectConfigurationId'] as String?)!) : const SdkOmitted(),
+    passiveRegions: json['passiveRegions'] != null ? SdkPresent(((json['passiveRegions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    plan: (json['plan'] != null ? CreateDeploymentResponseVariant1Plan.fromJson(json['plan'] as String) : null)!,
+    platform: json['platform'] != null ? SdkPresent((json['platform'] != null ? CreateDeploymentResponseVariant1Platform.fromJson(json['platform'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    prebuilt: json['prebuilt'] != null ? SdkPresent((json['prebuilt'] != null ? CreateDeploymentResponseVariant1Prebuilt.fromJson(json['prebuilt'] as bool) : null)!) : const SdkOmitted(),
+    previewCommentsEnabled: json['previewCommentsEnabled'] != null ? SdkPresent((json['previewCommentsEnabled'] != null ? CreateDeploymentResponseVariant1PreviewCommentsEnabled.fromJson(json['previewCommentsEnabled'] as bool) : null)!) : const SdkOmitted(),
+    project: json['project'] != null ? SdkPresent((json['project'] != null ? CreateDeploymentResponseVariant1Project.fromJson(json['project'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    projectId: (json['projectId'] as String?)!,
+    projectSettings: (json['projectSettings'] != null ? CreateDeploymentResponseVariant1ProjectSettings.fromJson(json['projectSettings'] as Map<String, dynamic>) : null)!,
+    public: (json['public'] != null ? CreateDeploymentResponseVariant1Public.fromJson(json['public'] as bool) : null)!,
+    ready: json['ready'] != null ? SdkPresent(((json['ready'] as num?)?.toDouble())!) : const SdkOmitted(),
+    readyState: (json['readyState'] != null ? CreateDeploymentResponseVariant1ReadyState.fromJson(json['readyState'] as String) : null)!,
+    readyStateReason: json['readyStateReason'] != null ? SdkPresent((json['readyStateReason'] as String?)!) : const SdkOmitted(),
+    readySubstate: json['readySubstate'] != null ? SdkPresent((json['readySubstate'] != null ? CreateDeploymentResponseVariant1ReadySubstate.fromJson(json['readySubstate'] as String) : null)!) : const SdkOmitted(),
+    regions: ((json['regions'] as List?)?.map((e) => e as String).toList())!,
+    resourceConfig: json['resourceConfig'] != null ? SdkPresent((json['resourceConfig'] != null ? CreateDeploymentResponseVariant1ResourceConfig.fromJson(json['resourceConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    routes: json.containsKey('routes') ? (json['routes'] as List?)?.map((e) => e).toList() : throw ArgumentError.value(null, 'routes', 'Required property is missing'),
+    seatBlock: json['seatBlock'] != null ? SdkPresent((json['seatBlock'] != null ? CreateDeploymentResponseVariant1SeatBlock.fromJson(json['seatBlock'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    services: json['services'] != null ? SdkPresent(((json['services'] as List?)?.map((e) => e).toList())!) : const SdkOmitted(),
+    softDeletedByRetention: json['softDeletedByRetention'] != null ? SdkPresent((json['softDeletedByRetention'] != null ? CreateDeploymentResponseVariant1SoftDeletedByRetention.fromJson(json['softDeletedByRetention'] as bool) : null)!) : const SdkOmitted(),
+    source: json['source'] != null ? SdkPresent((json['source'] != null ? CreateDeploymentResponseVariant1Source.fromJson(json['source'] as String) : null)!) : const SdkOmitted(),
+    status: (json['status'] != null ? CreateDeploymentResponseVariant1Status.fromJson(json['status'] as String) : null)!,
+    target: json.containsKey('target') ? SdkPresent(json['target'] != null ? CreateDeploymentResponseVariant1Target.fromJson(json['target'] as String) : null) : const SdkOmitted(),
+    team: json['team'] != null ? SdkPresent((json['team'] != null ? CreateDeploymentResponseVariant1Team.fromJson(json['team'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    ttyBuildLogs: json['ttyBuildLogs'] != null ? SdkPresent((json['ttyBuildLogs'] != null ? CreateDeploymentResponseVariant1TtyBuildLogs.fromJson(json['ttyBuildLogs'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDeploymentResponseVariant1Type.fromJson(json['type'] as String) : null)!,
+    undeletedAt: json['undeletedAt'] != null ? SdkPresent(((json['undeletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    url: (json['url'] as String?)!,
+    userAliases: json['userAliases'] != null ? SdkPresent(((json['userAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    userConfiguredDeploymentId: json['userConfiguredDeploymentId'] != null ? SdkPresent((json['userConfiguredDeploymentId'] as String?)!) : const SdkOmitted(),
+    version: (json['version'] != null ? CreateDeploymentResponseVariant1Version.fromJson((json['version'] as num).toInt()) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (alias) {
-          SdkPresent<List<String>>(value: final value) => {
-              'alias': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'aliasAssigned': aliasAssigned.toJson(),
-        ...switch (aliasAssignedAt) {
-          SdkPresent<dynamic>(value: final value) => {
-              'aliasAssignedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasError) {
-          SdkPresent<CreateDeploymentResponseVariant1AliasError?>(
-            value: final value
-          ) =>
-            {
-              'aliasError': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasFinal) {
-          SdkPresent<String?>(value: final value) => {
-              'aliasFinal': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasWarning) {
-          SdkPresent<CreateDeploymentResponseVariant1AliasWarning?>(
-            value: final value
-          ) =>
-            {
-              'aliasWarning': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (alwaysRefuseToBuild) {
-          SdkPresent<CreateDeploymentResponseVariant1AlwaysRefuseToBuild>(
-            value: final value
-          ) =>
-            {
-              'alwaysRefuseToBuild': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (atproto) {
-          SdkPresent<dynamic>(value: final value) => {
-              'atproto': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (attribution) {
-          SdkPresent<CreateDeploymentResponseVariant1Attribution>(
-            value: final value
-          ) =>
-            {
-              'attribution': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (autoAssignCustomDomains) {
-          SdkPresent<CreateDeploymentResponseVariant1AutoAssignCustomDomains>(
-            value: final value
-          ) =>
-            {
-              'autoAssignCustomDomains': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (automaticAliases) {
-          SdkPresent<List<String>>(value: final value) => {
-              'automaticAliases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'bootedAt': bootedAt,
-        'build': build.toJson(),
-        ...switch (buildArtifactUrls) {
-          SdkPresent<List<String>>(value: final value) => {
-              'buildArtifactUrls': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildContainerFinishedAt) {
-          SdkPresent<double>(value: final value) => {
-              'buildContainerFinishedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildErrorAt) {
-          SdkPresent<double>(value: final value) => {
-              'buildErrorAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'buildingAt': buildingAt,
-        ...switch (builds) {
-          SdkPresent<List<CreateDeploymentResponseVariant1BuildsItem>>(
-            value: final value
-          ) =>
-            {
-              'builds': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'buildSkipped': buildSkipped.toJson(),
-        ...switch (canceledAt) {
-          SdkPresent<double>(value: final value) => {
-              'canceledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (checks) {
-          SdkPresent<CreateDeploymentResponseVariant1Checks>(
-            value: final value
-          ) =>
-            {
-              'checks': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (checksConclusion) {
-          SdkPresent<CreateDeploymentResponseVariant1ChecksConclusion>(
-            value: final value
-          ) =>
-            {
-              'checksConclusion': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (checksState) {
-          SdkPresent<CreateDeploymentResponseVariant1ChecksState>(
-            value: final value
-          ) =>
-            {
-              'checksState': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (config) {
-          SdkPresent<CreateDeploymentResponseVariant1Config>(
-            value: final value
-          ) =>
-            {
-              'config': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectBuildsEnabled) {
-          SdkPresent<CreateDeploymentResponseVariant1ConnectBuildsEnabled>(
-            value: final value
-          ) =>
-            {
-              'connectBuildsEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectConfigurationId) {
-          SdkPresent<String>(value: final value) => {
-              'connectConfigurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'createdIn': createdIn,
-        'creator': creator.toJson(),
-        ...switch (crons) {
-          SdkPresent<List<CreateDeploymentResponseVariant1CronsItem>>(
-            value: final value
-          ) =>
-            {
-              'crons': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironment) {
-          SdkPresent<dynamic>(value: final value) => {
-              'customEnvironment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultRoute) {
-          SdkPresent<String>(value: final value) => {
-              'defaultRoute': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deletedAt) {
-          SdkPresent<double?>(value: final value) => {
-              'deletedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'duration': duration.toJson(),
-        'env': env,
-        ...switch (errorCode) {
-          SdkPresent<String>(value: final value) => {
-              'errorCode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (errorLink) {
-          SdkPresent<String>(value: final value) => {
-              'errorLink': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (errorMessage) {
-          SdkPresent<String?>(value: final value) => {
-              'errorMessage': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (errorStep) {
-          SdkPresent<String>(value: final value) => {
-              'errorStep': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (flags) {
-          SdkPresent<dynamic>(value: final value) => {
-              'flags': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functions) {
-          SdkPresent<
-                Map<String, CreateDeploymentResponseVariant1FunctionsValue>?>(
-            value: final value
-          ) =>
-            {
-              'functions':
-                  value?.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitRepo) {
-          SdkPresent<dynamic>(value: final value) => {
-              'gitRepo': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitSource) {
-          SdkPresent<dynamic>(value: final value) => {
-              'gitSource': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (images) {
-          SdkPresent<CreateDeploymentResponseVariant1Images>(
-            value: final value
-          ) =>
-            {
-              'images': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (initReadyAt) {
-          SdkPresent<double>(value: final value) => {
-              'initReadyAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'inspectorUrl': inspectorUrl,
-        ...switch (integrations) {
-          SdkPresent<CreateDeploymentResponseVariant1Integrations>(
-            value: final value
-          ) =>
-            {
-              'integrations': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (isFirstBranchDeployment) {
-          SdkPresent<CreateDeploymentResponseVariant1IsFirstBranchDeployment>(
-            value: final value
-          ) =>
-            {
-              'isFirstBranchDeployment': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'isInConcurrentBuildsQueue': isInConcurrentBuildsQueue.toJson(),
-        ...switch (isInstantStatic) {
-          SdkPresent<CreateDeploymentResponseVariant1IsInstantStatic>(
-            value: final value
-          ) =>
-            {
-              'isInstantStatic': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'isInSystemBuildsQueue': isInSystemBuildsQueue.toJson(),
-        ...switch (lambdas) {
-          SdkPresent<List<CreateDeploymentResponseVariant1LambdasItem>>(
-            value: final value
-          ) =>
-            {
-              'lambdas': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (manualProvisioning) {
-          SdkPresent<CreateDeploymentResponseVariant1ManualProvisioning>(
-            value: final value
-          ) =>
-            {
-              'manualProvisioning': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'meta': meta,
-        ...switch (microfrontends) {
-          SdkPresent<dynamic>(value: final value) => {
-              'microfrontends': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (monorepoManager) {
-          SdkPresent<String?>(value: final value) => {
-              'monorepoManager': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        ...switch (nodeVersion) {
-          SdkPresent<CreateDeploymentResponseVariant1NodeVersion>(
-            value: final value
-          ) =>
-            {
-              'nodeVersion': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (oidcTokenClaims) {
-          SdkPresent<CreateDeploymentResponseVariant1OidcTokenClaims>(
-            value: final value
-          ) =>
-            {
-              'oidcTokenClaims': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (oomReport) {
-          SdkPresent<CreateDeploymentResponseVariant1OomReport>(
-            value: final value
-          ) =>
-            {
-              'oomReport': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (originCacheRegion) {
-          SdkPresent<String>(value: final value) => {
-              'originCacheRegion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'ownerId': ownerId,
-        ...switch (passiveConnectConfigurationId) {
-          SdkPresent<String>(value: final value) => {
-              'passiveConnectConfigurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (passiveRegions) {
-          SdkPresent<List<String>>(value: final value) => {
-              'passiveRegions': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'plan': plan.toJson(),
-        ...switch (platform) {
-          SdkPresent<CreateDeploymentResponseVariant1Platform>(
-            value: final value
-          ) =>
-            {
-              'platform': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (prebuilt) {
-          SdkPresent<CreateDeploymentResponseVariant1Prebuilt>(
-            value: final value
-          ) =>
-            {
-              'prebuilt': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (previewCommentsEnabled) {
-          SdkPresent<CreateDeploymentResponseVariant1PreviewCommentsEnabled>(
-            value: final value
-          ) =>
-            {
-              'previewCommentsEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (project) {
-          SdkPresent<CreateDeploymentResponseVariant1Project>(
-            value: final value
-          ) =>
-            {
-              'project': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'projectId': projectId,
-        'projectSettings': projectSettings.toJson(),
-        'public': public.toJson(),
-        ...switch (ready) {
-          SdkPresent<double>(value: final value) => {
-              'ready': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'readyState': readyState.toJson(),
-        ...switch (readyStateReason) {
-          SdkPresent<String>(value: final value) => {
-              'readyStateReason': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (readySubstate) {
-          SdkPresent<CreateDeploymentResponseVariant1ReadySubstate>(
-            value: final value
-          ) =>
-            {
-              'readySubstate': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'regions': regions,
-        ...switch (resourceConfig) {
-          SdkPresent<CreateDeploymentResponseVariant1ResourceConfig>(
-            value: final value
-          ) =>
-            {
-              'resourceConfig': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'routes': routes,
-        ...switch (seatBlock) {
-          SdkPresent<CreateDeploymentResponseVariant1SeatBlock>(
-            value: final value
-          ) =>
-            {
-              'seatBlock': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (services) {
-          SdkPresent<List<dynamic>>(value: final value) => {
-              'services': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (softDeletedByRetention) {
-          SdkPresent<CreateDeploymentResponseVariant1SoftDeletedByRetention>(
-            value: final value
-          ) =>
-            {
-              'softDeletedByRetention': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (source) {
-          SdkPresent<CreateDeploymentResponseVariant1Source>(
-            value: final value
-          ) =>
-            {
-              'source': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'status': status.toJson(),
-        ...switch (target) {
-          SdkPresent<CreateDeploymentResponseVariant1Target?>(
-            value: final value
-          ) =>
-            {
-              'target': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (team) {
-          SdkPresent<CreateDeploymentResponseVariant1Team>(
-            value: final value
-          ) =>
-            {
-              'team': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ttyBuildLogs) {
-          SdkPresent<CreateDeploymentResponseVariant1TtyBuildLogs>(
-            value: final value
-          ) =>
-            {
-              'ttyBuildLogs': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (undeletedAt) {
-          SdkPresent<double>(value: final value) => {
-              'undeletedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'url': url,
-        ...switch (userAliases) {
-          SdkPresent<List<String>>(value: final value) => {
-              'userAliases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (userConfiguredDeploymentId) {
-          SdkPresent<String>(value: final value) => {
-              'userConfiguredDeploymentId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'version': version.toJson(),
-      };
+    ...switch (alias) {
+      SdkPresent<List<String>>(value: final value) => {'alias': value,},
+      _ => const <String, dynamic>{},
+    },
+    'aliasAssigned': aliasAssigned.toJson(),
+    ...switch (aliasAssignedAt) {
+      SdkPresent<dynamic>(value: final value) => {'aliasAssignedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasError) {
+      SdkPresent<CreateDeploymentResponseVariant1AliasError?>(value: final value) => {'aliasError': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasFinal) {
+      SdkPresent<String?>(value: final value) => {'aliasFinal': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasWarning) {
+      SdkPresent<CreateDeploymentResponseVariant1AliasWarning?>(value: final value) => {'aliasWarning': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (alwaysRefuseToBuild) {
+      SdkPresent<CreateDeploymentResponseVariant1AlwaysRefuseToBuild>(value: final value) => {'alwaysRefuseToBuild': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (atproto) {
+      SdkPresent<dynamic>(value: final value) => {'atproto': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (attribution) {
+      SdkPresent<CreateDeploymentResponseVariant1Attribution>(value: final value) => {'attribution': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (autoAssignCustomDomains) {
+      SdkPresent<CreateDeploymentResponseVariant1AutoAssignCustomDomains>(value: final value) => {'autoAssignCustomDomains': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (automaticAliases) {
+      SdkPresent<List<String>>(value: final value) => {'automaticAliases': value,},
+      _ => const <String, dynamic>{},
+    },
+    'bootedAt': bootedAt,
+    'build': build.toJson(),
+    ...switch (buildArtifactUrls) {
+      SdkPresent<List<String>>(value: final value) => {'buildArtifactUrls': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildContainerFinishedAt) {
+      SdkPresent<double>(value: final value) => {'buildContainerFinishedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildErrorAt) {
+      SdkPresent<double>(value: final value) => {'buildErrorAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'buildingAt': buildingAt,
+    ...switch (builds) {
+      SdkPresent<List<CreateDeploymentResponseVariant1BuildsItem>>(value: final value) => {'builds': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'buildSkipped': buildSkipped.toJson(),
+    ...switch (canceledAt) {
+      SdkPresent<double>(value: final value) => {'canceledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (checks) {
+      SdkPresent<CreateDeploymentResponseVariant1Checks>(value: final value) => {'checks': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (checksConclusion) {
+      SdkPresent<CreateDeploymentResponseVariant1ChecksConclusion>(value: final value) => {'checksConclusion': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (checksState) {
+      SdkPresent<CreateDeploymentResponseVariant1ChecksState>(value: final value) => {'checksState': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (config) {
+      SdkPresent<CreateDeploymentResponseVariant1Config>(value: final value) => {'config': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectBuildsEnabled) {
+      SdkPresent<CreateDeploymentResponseVariant1ConnectBuildsEnabled>(value: final value) => {'connectBuildsEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectConfigurationId) {
+      SdkPresent<String>(value: final value) => {'connectConfigurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'createdIn': createdIn,
+    'creator': creator.toJson(),
+    ...switch (crons) {
+      SdkPresent<List<CreateDeploymentResponseVariant1CronsItem>>(value: final value) => {'crons': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironment) {
+      SdkPresent<dynamic>(value: final value) => {'customEnvironment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultRoute) {
+      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deletedAt) {
+      SdkPresent<double?>(value: final value) => {'deletedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'duration': duration.toJson(),
+    'env': env,
+    ...switch (errorCode) {
+      SdkPresent<String>(value: final value) => {'errorCode': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (errorLink) {
+      SdkPresent<String>(value: final value) => {'errorLink': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (errorMessage) {
+      SdkPresent<String?>(value: final value) => {'errorMessage': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (errorStep) {
+      SdkPresent<String>(value: final value) => {'errorStep': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (flags) {
+      SdkPresent<dynamic>(value: final value) => {'flags': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functions) {
+      SdkPresent<Map<String, CreateDeploymentResponseVariant1FunctionsValue>?>(value: final value) => {'functions': value?.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitRepo) {
+      SdkPresent<dynamic>(value: final value) => {'gitRepo': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitSource) {
+      SdkPresent<dynamic>(value: final value) => {'gitSource': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (images) {
+      SdkPresent<CreateDeploymentResponseVariant1Images>(value: final value) => {'images': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (initReadyAt) {
+      SdkPresent<double>(value: final value) => {'initReadyAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'inspectorUrl': inspectorUrl,
+    ...switch (integrations) {
+      SdkPresent<CreateDeploymentResponseVariant1Integrations>(value: final value) => {'integrations': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (isFirstBranchDeployment) {
+      SdkPresent<CreateDeploymentResponseVariant1IsFirstBranchDeployment>(value: final value) => {'isFirstBranchDeployment': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'isInConcurrentBuildsQueue': isInConcurrentBuildsQueue.toJson(),
+    ...switch (isInstantStatic) {
+      SdkPresent<CreateDeploymentResponseVariant1IsInstantStatic>(value: final value) => {'isInstantStatic': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'isInSystemBuildsQueue': isInSystemBuildsQueue.toJson(),
+    ...switch (lambdas) {
+      SdkPresent<List<CreateDeploymentResponseVariant1LambdasItem>>(value: final value) => {'lambdas': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (manualProvisioning) {
+      SdkPresent<CreateDeploymentResponseVariant1ManualProvisioning>(value: final value) => {'manualProvisioning': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'meta': meta,
+    ...switch (microfrontends) {
+      SdkPresent<dynamic>(value: final value) => {'microfrontends': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (monorepoManager) {
+      SdkPresent<String?>(value: final value) => {'monorepoManager': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    ...switch (nodeVersion) {
+      SdkPresent<CreateDeploymentResponseVariant1NodeVersion>(value: final value) => {'nodeVersion': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (oidcTokenClaims) {
+      SdkPresent<CreateDeploymentResponseVariant1OidcTokenClaims>(value: final value) => {'oidcTokenClaims': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (oomReport) {
+      SdkPresent<CreateDeploymentResponseVariant1OomReport>(value: final value) => {'oomReport': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (originCacheRegion) {
+      SdkPresent<String>(value: final value) => {'originCacheRegion': value,},
+      _ => const <String, dynamic>{},
+    },
+    'ownerId': ownerId,
+    ...switch (passiveConnectConfigurationId) {
+      SdkPresent<String>(value: final value) => {'passiveConnectConfigurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (passiveRegions) {
+      SdkPresent<List<String>>(value: final value) => {'passiveRegions': value,},
+      _ => const <String, dynamic>{},
+    },
+    'plan': plan.toJson(),
+    ...switch (platform) {
+      SdkPresent<CreateDeploymentResponseVariant1Platform>(value: final value) => {'platform': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (prebuilt) {
+      SdkPresent<CreateDeploymentResponseVariant1Prebuilt>(value: final value) => {'prebuilt': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (previewCommentsEnabled) {
+      SdkPresent<CreateDeploymentResponseVariant1PreviewCommentsEnabled>(value: final value) => {'previewCommentsEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (project) {
+      SdkPresent<CreateDeploymentResponseVariant1Project>(value: final value) => {'project': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'projectId': projectId,
+    'projectSettings': projectSettings.toJson(),
+    'public': public.toJson(),
+    ...switch (ready) {
+      SdkPresent<double>(value: final value) => {'ready': value,},
+      _ => const <String, dynamic>{},
+    },
+    'readyState': readyState.toJson(),
+    ...switch (readyStateReason) {
+      SdkPresent<String>(value: final value) => {'readyStateReason': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (readySubstate) {
+      SdkPresent<CreateDeploymentResponseVariant1ReadySubstate>(value: final value) => {'readySubstate': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'regions': regions,
+    ...switch (resourceConfig) {
+      SdkPresent<CreateDeploymentResponseVariant1ResourceConfig>(value: final value) => {'resourceConfig': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'routes': routes,
+    ...switch (seatBlock) {
+      SdkPresent<CreateDeploymentResponseVariant1SeatBlock>(value: final value) => {'seatBlock': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (services) {
+      SdkPresent<List<dynamic>>(value: final value) => {'services': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (softDeletedByRetention) {
+      SdkPresent<CreateDeploymentResponseVariant1SoftDeletedByRetention>(value: final value) => {'softDeletedByRetention': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (source) {
+      SdkPresent<CreateDeploymentResponseVariant1Source>(value: final value) => {'source': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'status': status.toJson(),
+    ...switch (target) {
+      SdkPresent<CreateDeploymentResponseVariant1Target?>(value: final value) => {'target': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (team) {
+      SdkPresent<CreateDeploymentResponseVariant1Team>(value: final value) => {'team': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ttyBuildLogs) {
+      SdkPresent<CreateDeploymentResponseVariant1TtyBuildLogs>(value: final value) => {'ttyBuildLogs': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (undeletedAt) {
+      SdkPresent<double>(value: final value) => {'undeletedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'url': url,
+    ...switch (userAliases) {
+      SdkPresent<List<String>>(value: final value) => {'userAliases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (userConfiguredDeploymentId) {
+      SdkPresent<String>(value: final value) => {'userConfiguredDeploymentId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'version': version.toJson(),
+  };
 }

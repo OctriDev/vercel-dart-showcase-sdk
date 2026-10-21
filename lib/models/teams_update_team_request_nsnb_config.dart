@@ -8,36 +8,24 @@ part of 'teams.dart';
 class UpdateTeamRequestNsnbConfigVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The NSNB preference for the team.
   final UpdateTeamRequestNsnbConfigVariant0Preference preference;
 
   const UpdateTeamRequestNsnbConfigVariant0({required this.preference});
 
-  UpdateTeamRequestNsnbConfigVariant0 Function(
-          {UpdateTeamRequestNsnbConfigVariant0Preference preference})
-      get copyWith => _copyWith;
+  UpdateTeamRequestNsnbConfigVariant0 Function({UpdateTeamRequestNsnbConfigVariant0Preference preference}) get copyWith => _copyWith;
 
-  UpdateTeamRequestNsnbConfigVariant0 _copyWith(
-          {Object? preference = sdkOmittedValue}) =>
-      UpdateTeamRequestNsnbConfigVariant0(
-        preference: identical(preference, sdkOmittedValue)
-            ? this.preference
-            : preference as UpdateTeamRequestNsnbConfigVariant0Preference,
-      );
+  UpdateTeamRequestNsnbConfigVariant0 _copyWith({Object? preference = sdkOmittedValue}) => UpdateTeamRequestNsnbConfigVariant0(
+    preference: identical(preference, sdkOmittedValue) ? this.preference : preference as UpdateTeamRequestNsnbConfigVariant0Preference,
+  );
 
-  factory UpdateTeamRequestNsnbConfigVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateTeamRequestNsnbConfigVariant0(
-        preference: (json['preference'] != null
-            ? UpdateTeamRequestNsnbConfigVariant0Preference.fromJson(
-                json['preference'] as String)
-            : null)!,
-      );
+  factory UpdateTeamRequestNsnbConfigVariant0.fromJson(Map<String, dynamic> json) => UpdateTeamRequestNsnbConfigVariant0(
+    preference: (json['preference'] != null ? UpdateTeamRequestNsnbConfigVariant0Preference.fromJson(json['preference'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'preference': preference.toJson(),
-      };
+    'preference': preference.toJson(),
+  };
 }
 
 sealed class UpdateTeamRequestNsnbConfig {
@@ -45,32 +33,21 @@ sealed class UpdateTeamRequestNsnbConfig {
   static const String constructionSurface = 'named';
   const UpdateTeamRequestNsnbConfig();
   factory UpdateTeamRequestNsnbConfig.fromJson(Object? json) {
-    if (json is String) {
-      return UpdateTeamRequestNsnbConfigString(json);
-    }
-    try {
-      return UpdateTeamRequestNsnbConfigUpdateTeamRequestNsnbConfigVariant0(
-          UpdateTeamRequestNsnbConfigVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    if (json is String) { return UpdateTeamRequestNsnbConfigString(json); }
+    try { return UpdateTeamRequestNsnbConfigUpdateTeamRequestNsnbConfigVariant0(UpdateTeamRequestNsnbConfigVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for UpdateTeamRequestNsnbConfig");
   }
   Object? toJson();
 }
 
-final class UpdateTeamRequestNsnbConfigUpdateTeamRequestNsnbConfigVariant0
-    extends UpdateTeamRequestNsnbConfig {
+final class UpdateTeamRequestNsnbConfigUpdateTeamRequestNsnbConfigVariant0 extends UpdateTeamRequestNsnbConfig {
   final UpdateTeamRequestNsnbConfigVariant0 value;
-  const UpdateTeamRequestNsnbConfigUpdateTeamRequestNsnbConfigVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateTeamRequestNsnbConfigUpdateTeamRequestNsnbConfigVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateTeamRequestNsnbConfigString
-    extends UpdateTeamRequestNsnbConfig {
+final class UpdateTeamRequestNsnbConfigString extends UpdateTeamRequestNsnbConfig {
   final String value;
   const UpdateTeamRequestNsnbConfigString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }

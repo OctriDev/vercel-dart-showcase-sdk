@@ -8,330 +8,162 @@ part of 'ai_gateway.dart';
 class AiGatewayVirtualModelConfigInferenceRegionProvidersValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Geo zone (e.g. "us", "eu").
   final SdkOptional<String> geoRegion;
-
   /// Provider-specific region identifier.
   final SdkOptional<String> providerRegion;
-
   /// Pin scope: `specific` (one provider region), `zone` (geo zone), or `global`.
-  final SdkOptional<
-      AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope> scope;
+  final SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope> scope;
 
-  const AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
-      {this.geoRegion = const SdkOmitted(),
-      this.providerRegion = const SdkOmitted(),
-      this.scope = const SdkOmitted()});
+  const AiGatewayVirtualModelConfigInferenceRegionProvidersValue({this.geoRegion = const SdkOmitted(), this.providerRegion = const SdkOmitted(), this.scope = const SdkOmitted()});
 
-  AiGatewayVirtualModelConfigInferenceRegionProvidersValue Function(
-      {SdkOptional<String> geoRegion,
-      SdkOptional<String> providerRegion,
-      SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>
-          scope}) get copyWith => _copyWith;
+  AiGatewayVirtualModelConfigInferenceRegionProvidersValue Function({SdkOptional<String> geoRegion, SdkOptional<String> providerRegion, SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope> scope}) get copyWith => _copyWith;
 
-  AiGatewayVirtualModelConfigInferenceRegionProvidersValue _copyWith(
-          {Object? geoRegion = sdkOmittedValue,
-          Object? providerRegion = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
-        geoRegion: identical(geoRegion, sdkOmittedValue)
-            ? this.geoRegion
-            : geoRegion as SdkOptional<String>,
-        providerRegion: identical(providerRegion, sdkOmittedValue)
-            ? this.providerRegion
-            : providerRegion as SdkOptional<String>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope as SdkOptional<
-                AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>,
-      );
+  AiGatewayVirtualModelConfigInferenceRegionProvidersValue _copyWith({Object? geoRegion = sdkOmittedValue, Object? providerRegion = sdkOmittedValue, Object? scope = sdkOmittedValue}) => AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
+    geoRegion: identical(geoRegion, sdkOmittedValue) ? this.geoRegion : geoRegion as SdkOptional<String>,
+    providerRegion: identical(providerRegion, sdkOmittedValue) ? this.providerRegion : providerRegion as SdkOptional<String>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>,
+  );
 
-  factory AiGatewayVirtualModelConfigInferenceRegionProvidersValue.fromJson(
-          Map<String, dynamic> json) =>
-      AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
-        geoRegion: json['geoRegion'] != null
-            ? SdkPresent((json['geoRegion'] as String?)!)
-            : const SdkOmitted(),
-        providerRegion: json['providerRegion'] != null
-            ? SdkPresent((json['providerRegion'] as String?)!)
-            : const SdkOmitted(),
-        scope: json['scope'] != null
-            ? SdkPresent((json['scope'] != null
-                ? AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope
-                    .fromJson(json['scope'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory AiGatewayVirtualModelConfigInferenceRegionProvidersValue.fromJson(Map<String, dynamic> json) => AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
+    geoRegion: json['geoRegion'] != null ? SdkPresent((json['geoRegion'] as String?)!) : const SdkOmitted(),
+    providerRegion: json['providerRegion'] != null ? SdkPresent((json['providerRegion'] as String?)!) : const SdkOmitted(),
+    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (geoRegion) {
-          SdkPresent<String>(value: final value) => {
-              'geoRegion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (providerRegion) {
-          SdkPresent<String>(value: final value) => {
-              'providerRegion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scope) {
-          SdkPresent<
-                AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>(
-            value: final value
-          ) =>
-            {
-              'scope': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (geoRegion) {
+      SdkPresent<String>(value: final value) => {'geoRegion': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (providerRegion) {
+      SdkPresent<String>(value: final value) => {'providerRegion': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scope) {
+      SdkPresent<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>(value: final value) => {'scope': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Region pinned on the VMC for system-credential routing (alias/router only).
 class AiGatewayVirtualModelConfigInferenceRegion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Geo zone (e.g. "us", "eu").
   final SdkOptional<String> geoRegion;
-
   /// Provider-specific region identifier.
   final SdkOptional<String> providerRegion;
-
   /// Per-provider region overrides keyed by provider slug.
-  final SdkOptional<
-          Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>
-      providers;
-
+  final SdkOptional<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>> providers;
   /// Pin scope: `specific` (one provider region), `zone` (geo zone), or `global`.
   final SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope> scope;
 
-  const AiGatewayVirtualModelConfigInferenceRegion(
-      {this.geoRegion = const SdkOmitted(),
-      this.providerRegion = const SdkOmitted(),
-      this.providers = const SdkOmitted(),
-      this.scope = const SdkOmitted()});
+  const AiGatewayVirtualModelConfigInferenceRegion({this.geoRegion = const SdkOmitted(), this.providerRegion = const SdkOmitted(), this.providers = const SdkOmitted(), this.scope = const SdkOmitted()});
 
-  AiGatewayVirtualModelConfigInferenceRegion Function(
-          {SdkOptional<String> geoRegion,
-          SdkOptional<String> providerRegion,
-          SdkOptional<
-                  Map<String,
-                      AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>
-              providers,
-          SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope> scope})
-      get copyWith => _copyWith;
+  AiGatewayVirtualModelConfigInferenceRegion Function({SdkOptional<String> geoRegion, SdkOptional<String> providerRegion, SdkOptional<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>> providers, SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope> scope}) get copyWith => _copyWith;
 
-  AiGatewayVirtualModelConfigInferenceRegion _copyWith(
-          {Object? geoRegion = sdkOmittedValue,
-          Object? providerRegion = sdkOmittedValue,
-          Object? providers = sdkOmittedValue,
-          Object? scope = sdkOmittedValue}) =>
-      AiGatewayVirtualModelConfigInferenceRegion(
-        geoRegion: identical(geoRegion, sdkOmittedValue)
-            ? this.geoRegion
-            : geoRegion as SdkOptional<String>,
-        providerRegion: identical(providerRegion, sdkOmittedValue)
-            ? this.providerRegion
-            : providerRegion as SdkOptional<String>,
-        providers: identical(providers, sdkOmittedValue)
-            ? this.providers
-            : providers as SdkOptional<
-                Map<String,
-                    AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope
-                as SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope>,
-      );
+  AiGatewayVirtualModelConfigInferenceRegion _copyWith({Object? geoRegion = sdkOmittedValue, Object? providerRegion = sdkOmittedValue, Object? providers = sdkOmittedValue, Object? scope = sdkOmittedValue}) => AiGatewayVirtualModelConfigInferenceRegion(
+    geoRegion: identical(geoRegion, sdkOmittedValue) ? this.geoRegion : geoRegion as SdkOptional<String>,
+    providerRegion: identical(providerRegion, sdkOmittedValue) ? this.providerRegion : providerRegion as SdkOptional<String>,
+    providers: identical(providers, sdkOmittedValue) ? this.providers : providers as SdkOptional<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope>,
+  );
 
-  factory AiGatewayVirtualModelConfigInferenceRegion.fromJson(
-          Map<String, dynamic> json) =>
-      AiGatewayVirtualModelConfigInferenceRegion(
-        geoRegion: json['geoRegion'] != null
-            ? SdkPresent((json['geoRegion'] as String?)!)
-            : const SdkOmitted(),
-        providerRegion: json['providerRegion'] != null
-            ? SdkPresent((json['providerRegion'] as String?)!)
-            : const SdkOmitted(),
-        providers: json['providers'] != null
-            ? SdkPresent((json['providers'] == null
-                ? null
-                : Map<String, dynamic>.from(json['providers'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        AiGatewayVirtualModelConfigInferenceRegionProvidersValue
-                            .fromJson(value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-        scope: json['scope'] != null
-            ? SdkPresent((json['scope'] != null
-                ? AiGatewayVirtualModelConfigInferenceRegionScope.fromJson(
-                    json['scope'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory AiGatewayVirtualModelConfigInferenceRegion.fromJson(Map<String, dynamic> json) => AiGatewayVirtualModelConfigInferenceRegion(
+    geoRegion: json['geoRegion'] != null ? SdkPresent((json['geoRegion'] as String?)!) : const SdkOmitted(),
+    providerRegion: json['providerRegion'] != null ? SdkPresent((json['providerRegion'] as String?)!) : const SdkOmitted(),
+    providers: json['providers'] != null ? SdkPresent((json['providers'] == null ? null : Map<String, dynamic>.from(json['providers'] as Map).map((key, value) => MapEntry(key, AiGatewayVirtualModelConfigInferenceRegionProvidersValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? AiGatewayVirtualModelConfigInferenceRegionScope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (geoRegion) {
-          SdkPresent<String>(value: final value) => {
-              'geoRegion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (providerRegion) {
-          SdkPresent<String>(value: final value) => {
-              'providerRegion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (providers) {
-          SdkPresent<
-                Map<String,
-                    AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>(
-            value: final value
-          ) =>
-            {
-              'providers':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scope) {
-          SdkPresent<AiGatewayVirtualModelConfigInferenceRegionScope>(
-            value: final value
-          ) =>
-            {
-              'scope': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (geoRegion) {
+      SdkPresent<String>(value: final value) => {'geoRegion': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (providerRegion) {
+      SdkPresent<String>(value: final value) => {'providerRegion': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (providers) {
+      SdkPresent<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>(value: final value) => {'providers': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scope) {
+      SdkPresent<AiGatewayVirtualModelConfigInferenceRegionScope>(value: final value) => {'scope': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Per-request provider timeouts in ms, keyed by provider slug for BYOK credentials.
 class AiGatewayVirtualModelConfigProviderTimeouts {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional object value serialized in the `byok` wire field.
   final SdkOptional<Map<String, double>> byok;
 
-  const AiGatewayVirtualModelConfigProviderTimeouts(
-      {this.byok = const SdkOmitted()});
+  const AiGatewayVirtualModelConfigProviderTimeouts({this.byok = const SdkOmitted()});
 
-  AiGatewayVirtualModelConfigProviderTimeouts Function(
-      {SdkOptional<Map<String, double>> byok}) get copyWith => _copyWith;
+  AiGatewayVirtualModelConfigProviderTimeouts Function({SdkOptional<Map<String, double>> byok}) get copyWith => _copyWith;
 
-  AiGatewayVirtualModelConfigProviderTimeouts _copyWith(
-          {Object? byok = sdkOmittedValue}) =>
-      AiGatewayVirtualModelConfigProviderTimeouts(
-        byok: identical(byok, sdkOmittedValue)
-            ? this.byok
-            : byok as SdkOptional<Map<String, double>>,
-      );
+  AiGatewayVirtualModelConfigProviderTimeouts _copyWith({Object? byok = sdkOmittedValue}) => AiGatewayVirtualModelConfigProviderTimeouts(
+    byok: identical(byok, sdkOmittedValue) ? this.byok : byok as SdkOptional<Map<String, double>>,
+  );
 
-  factory AiGatewayVirtualModelConfigProviderTimeouts.fromJson(
-          Map<String, dynamic> json) =>
-      AiGatewayVirtualModelConfigProviderTimeouts(
-        byok: json['byok'] != null
-            ? SdkPresent((json['byok'] == null
-                ? null
-                : Map<String, dynamic>.from(json['byok'] as Map).map(
-                    (key, value) => MapEntry(key, (value as num).toDouble())))!)
-            : const SdkOmitted(),
-      );
+  factory AiGatewayVirtualModelConfigProviderTimeouts.fromJson(Map<String, dynamic> json) => AiGatewayVirtualModelConfigProviderTimeouts(
+    byok: json['byok'] != null ? SdkPresent((json['byok'] == null ? null : Map<String, dynamic>.from(json['byok'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (byok) {
-          SdkPresent<Map<String, double>>(value: final value) => {
-              'byok': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (byok) {
+      SdkPresent<Map<String, double>>(value: final value) => {'byok': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
 class AiGatewayVirtualModelConfigSelectorOptions {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
   final SdkOptional<Map<String, dynamic>> cost;
-
   /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
   final SdkOptional<Map<String, dynamic>> tps;
-
   /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
   final SdkOptional<Map<String, dynamic>> ttft;
 
-  const AiGatewayVirtualModelConfigSelectorOptions(
-      {this.cost = const SdkOmitted(),
-      this.tps = const SdkOmitted(),
-      this.ttft = const SdkOmitted()});
+  const AiGatewayVirtualModelConfigSelectorOptions({this.cost = const SdkOmitted(), this.tps = const SdkOmitted(), this.ttft = const SdkOmitted()});
 
-  AiGatewayVirtualModelConfigSelectorOptions Function(
-      {SdkOptional<Map<String, dynamic>> cost,
-      SdkOptional<Map<String, dynamic>> tps,
-      SdkOptional<Map<String, dynamic>> ttft}) get copyWith => _copyWith;
+  AiGatewayVirtualModelConfigSelectorOptions Function({SdkOptional<Map<String, dynamic>> cost, SdkOptional<Map<String, dynamic>> tps, SdkOptional<Map<String, dynamic>> ttft}) get copyWith => _copyWith;
 
-  AiGatewayVirtualModelConfigSelectorOptions _copyWith(
-          {Object? cost = sdkOmittedValue,
-          Object? tps = sdkOmittedValue,
-          Object? ttft = sdkOmittedValue}) =>
-      AiGatewayVirtualModelConfigSelectorOptions(
-        cost: identical(cost, sdkOmittedValue)
-            ? this.cost
-            : cost as SdkOptional<Map<String, dynamic>>,
-        tps: identical(tps, sdkOmittedValue)
-            ? this.tps
-            : tps as SdkOptional<Map<String, dynamic>>,
-        ttft: identical(ttft, sdkOmittedValue)
-            ? this.ttft
-            : ttft as SdkOptional<Map<String, dynamic>>,
-      );
+  AiGatewayVirtualModelConfigSelectorOptions _copyWith({Object? cost = sdkOmittedValue, Object? tps = sdkOmittedValue, Object? ttft = sdkOmittedValue}) => AiGatewayVirtualModelConfigSelectorOptions(
+    cost: identical(cost, sdkOmittedValue) ? this.cost : cost as SdkOptional<Map<String, dynamic>>,
+    tps: identical(tps, sdkOmittedValue) ? this.tps : tps as SdkOptional<Map<String, dynamic>>,
+    ttft: identical(ttft, sdkOmittedValue) ? this.ttft : ttft as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory AiGatewayVirtualModelConfigSelectorOptions.fromJson(
-          Map<String, dynamic> json) =>
-      AiGatewayVirtualModelConfigSelectorOptions(
-        cost: json['cost'] != null
-            ? SdkPresent((json['cost'] == null
-                ? null
-                : json['cost'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        tps: json['tps'] != null
-            ? SdkPresent((json['tps'] == null
-                ? null
-                : json['tps'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        ttft: json['ttft'] != null
-            ? SdkPresent((json['ttft'] == null
-                ? null
-                : json['ttft'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory AiGatewayVirtualModelConfigSelectorOptions.fromJson(Map<String, dynamic> json) => AiGatewayVirtualModelConfigSelectorOptions(
+    cost: json['cost'] != null ? SdkPresent((json['cost'] == null ? null : json['cost'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    tps: json['tps'] != null ? SdkPresent((json['tps'] == null ? null : json['tps'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    ttft: json['ttft'] != null ? SdkPresent((json['ttft'] == null ? null : json['ttft'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (cost) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'cost': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (tps) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'tps': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ttft) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'ttft': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (cost) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'cost': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (tps) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'tps': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ttft) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'ttft': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

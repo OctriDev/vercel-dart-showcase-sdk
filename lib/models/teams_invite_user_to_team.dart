@@ -8,110 +8,53 @@ part of 'teams.dart';
 class InvitedTeamMember {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The email of the invited user.
   final String email;
-
   /// The role used for the invitation
   final InvitedTeamMemberRole role;
-
   /// The team permissions of the user
   final SdkOptional<List<InvitedTeamMemberTeamPermissionsItem>> teamPermissions;
-
   /// The team roles of the user
   final SdkOptional<List<InvitedTeamMemberTeamRolesItem>> teamRoles;
-
   /// The ID of the invited user
   final String uid;
-
   /// The username of the invited user
   final String username;
 
-  const InvitedTeamMember(
-      {required this.email,
-      required this.role,
-      this.teamPermissions = const SdkOmitted(),
-      this.teamRoles = const SdkOmitted(),
-      required this.uid,
-      required this.username});
+  const InvitedTeamMember({required this.email, required this.role, this.teamPermissions = const SdkOmitted(), this.teamRoles = const SdkOmitted(), required this.uid, required this.username});
 
-  InvitedTeamMember Function(
-      {String email,
-      InvitedTeamMemberRole role,
-      SdkOptional<List<InvitedTeamMemberTeamPermissionsItem>> teamPermissions,
-      SdkOptional<List<InvitedTeamMemberTeamRolesItem>> teamRoles,
-      String uid,
-      String username}) get copyWith => _copyWith;
+  InvitedTeamMember Function({String email, InvitedTeamMemberRole role, SdkOptional<List<InvitedTeamMemberTeamPermissionsItem>> teamPermissions, SdkOptional<List<InvitedTeamMemberTeamRolesItem>> teamRoles, String uid, String username}) get copyWith => _copyWith;
 
-  InvitedTeamMember _copyWith(
-          {Object? email = sdkOmittedValue,
-          Object? role = sdkOmittedValue,
-          Object? teamPermissions = sdkOmittedValue,
-          Object? teamRoles = sdkOmittedValue,
-          Object? uid = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      InvitedTeamMember(
-        email: identical(email, sdkOmittedValue) ? this.email : email as String,
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as InvitedTeamMemberRole,
-        teamPermissions: identical(teamPermissions, sdkOmittedValue)
-            ? this.teamPermissions
-            : teamPermissions
-                as SdkOptional<List<InvitedTeamMemberTeamPermissionsItem>>,
-        teamRoles: identical(teamRoles, sdkOmittedValue)
-            ? this.teamRoles
-            : teamRoles as SdkOptional<List<InvitedTeamMemberTeamRolesItem>>,
-        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  InvitedTeamMember _copyWith({Object? email = sdkOmittedValue, Object? role = sdkOmittedValue, Object? teamPermissions = sdkOmittedValue, Object? teamRoles = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => InvitedTeamMember(
+    email: identical(email, sdkOmittedValue) ? this.email : email as String,
+    role: identical(role, sdkOmittedValue) ? this.role : role as InvitedTeamMemberRole,
+    teamPermissions: identical(teamPermissions, sdkOmittedValue) ? this.teamPermissions : teamPermissions as SdkOptional<List<InvitedTeamMemberTeamPermissionsItem>>,
+    teamRoles: identical(teamRoles, sdkOmittedValue) ? this.teamRoles : teamRoles as SdkOptional<List<InvitedTeamMemberTeamRolesItem>>,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory InvitedTeamMember.fromJson(Map<String, dynamic> json) =>
-      InvitedTeamMember(
-        email: (json['email'] as String?)!,
-        role: (json['role'] != null
-            ? InvitedTeamMemberRole.fromJson(json['role'] as String)
-            : null)!,
-        teamPermissions: json['teamPermissions'] != null
-            ? SdkPresent(((json['teamPermissions'] as List?)
-                ?.map((e) =>
-                    InvitedTeamMemberTeamPermissionsItem.fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        teamRoles: json['teamRoles'] != null
-            ? SdkPresent(((json['teamRoles'] as List?)
-                ?.map(
-                    (e) => InvitedTeamMemberTeamRolesItem.fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        uid: (json['uid'] as String?)!,
-        username: (json['username'] as String?)!,
-      );
+  factory InvitedTeamMember.fromJson(Map<String, dynamic> json) => InvitedTeamMember(
+    email: (json['email'] as String?)!,
+    role: (json['role'] != null ? InvitedTeamMemberRole.fromJson(json['role'] as String) : null)!,
+    teamPermissions: json['teamPermissions'] != null ? SdkPresent(((json['teamPermissions'] as List?)?.map((e) => InvitedTeamMemberTeamPermissionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    teamRoles: json['teamRoles'] != null ? SdkPresent(((json['teamRoles'] as List?)?.map((e) => InvitedTeamMemberTeamRolesItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    uid: (json['uid'] as String?)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'email': email,
-        'role': role.toJson(),
-        ...switch (teamPermissions) {
-          SdkPresent<List<InvitedTeamMemberTeamPermissionsItem>>(
-            value: final value
-          ) =>
-            {
-              'teamPermissions': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (teamRoles) {
-          SdkPresent<List<InvitedTeamMemberTeamRolesItem>>(
-            value: final value
-          ) =>
-            {
-              'teamRoles': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'uid': uid,
-        'username': username,
-      };
+    'email': email,
+    'role': role.toJson(),
+    ...switch (teamPermissions) {
+      SdkPresent<List<InvitedTeamMemberTeamPermissionsItem>>(value: final value) => {'teamPermissions': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (teamRoles) {
+      SdkPresent<List<InvitedTeamMemberTeamRolesItem>>(value: final value) => {'teamRoles': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'uid': uid,
+    'username': username,
+  };
 }

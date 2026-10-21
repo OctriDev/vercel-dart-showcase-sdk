@@ -8,37 +8,24 @@ sealed class AddRouteResponseRouteRouteMissingItemVariant1Value {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const AddRouteResponseRouteRouteMissingItemVariant1Value();
-  factory AddRouteResponseRouteRouteMissingItemVariant1Value.fromJson(
-      Object? json) {
-    if (json is String) {
-      return AddRouteResponseRouteRouteMissingItemVariant1ValueString(json);
-    }
-    try {
-      return AddRouteResponseRouteRouteMissingItemVariant1ValueAddRouteResponseRouteRouteMissingItemVariant1ValueVariant1(
-          AddRouteResponseRouteRouteMissingItemVariant1ValueVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for AddRouteResponseRouteRouteMissingItemVariant1Value");
+  factory AddRouteResponseRouteRouteMissingItemVariant1Value.fromJson(Object? json) {
+    if (json is String) { return AddRouteResponseRouteRouteMissingItemVariant1ValueString(json); }
+    try { return AddRouteResponseRouteRouteMissingItemVariant1ValueAddRouteResponseRouteRouteMissingItemVariant1ValueVariant1(AddRouteResponseRouteRouteMissingItemVariant1ValueVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for AddRouteResponseRouteRouteMissingItemVariant1Value");
   }
   Object? toJson();
 }
 
-final class AddRouteResponseRouteRouteMissingItemVariant1ValueString
-    extends AddRouteResponseRouteRouteMissingItemVariant1Value {
+final class AddRouteResponseRouteRouteMissingItemVariant1ValueString extends AddRouteResponseRouteRouteMissingItemVariant1Value {
   final String value;
   const AddRouteResponseRouteRouteMissingItemVariant1ValueString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class AddRouteResponseRouteRouteMissingItemVariant1ValueAddRouteResponseRouteRouteMissingItemVariant1ValueVariant1
-    extends AddRouteResponseRouteRouteMissingItemVariant1Value {
+final class AddRouteResponseRouteRouteMissingItemVariant1ValueAddRouteResponseRouteRouteMissingItemVariant1ValueVariant1 extends AddRouteResponseRouteRouteMissingItemVariant1Value {
   final AddRouteResponseRouteRouteMissingItemVariant1ValueVariant1 value;
-  const AddRouteResponseRouteRouteMissingItemVariant1ValueAddRouteResponseRouteRouteMissingItemVariant1ValueVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const AddRouteResponseRouteRouteMissingItemVariant1ValueAddRouteResponseRouteRouteMissingItemVariant1ValueVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class AddRouteResponseRouteRouteMissingItemVariant1 {
@@ -48,53 +35,30 @@ class AddRouteResponseRouteRouteMissingItemVariant1 {
   final AddRouteResponseRouteRouteMissingItemVariant1Type type_;
   final SdkOptional<dynamic> value;
 
-  const AddRouteResponseRouteRouteMissingItemVariant1(
-      {required this.key,
-      required this.type_,
-      this.value = const SdkOmitted()});
+  const AddRouteResponseRouteRouteMissingItemVariant1({required this.key, required this.type_, this.value = const SdkOmitted()});
 
-  AddRouteResponseRouteRouteMissingItemVariant1 Function(
-      {String key,
-      AddRouteResponseRouteRouteMissingItemVariant1Type type_,
-      SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  AddRouteResponseRouteRouteMissingItemVariant1 Function({String key, AddRouteResponseRouteRouteMissingItemVariant1Type type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  AddRouteResponseRouteRouteMissingItemVariant1 _copyWith(
-          {Object? key = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      AddRouteResponseRouteRouteMissingItemVariant1(
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as AddRouteResponseRouteRouteMissingItemVariant1Type,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as SdkOptional<dynamic>,
-      );
+  AddRouteResponseRouteRouteMissingItemVariant1 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => AddRouteResponseRouteRouteMissingItemVariant1(
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as AddRouteResponseRouteRouteMissingItemVariant1Type,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
+  );
 
-  factory AddRouteResponseRouteRouteMissingItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      AddRouteResponseRouteRouteMissingItemVariant1(
-        key: (json['key'] as String?)!,
-        type_: (json['type'] != null
-            ? AddRouteResponseRouteRouteMissingItemVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'])!)
-            : const SdkOmitted(),
-      );
+  factory AddRouteResponseRouteRouteMissingItemVariant1.fromJson(Map<String, dynamic> json) => AddRouteResponseRouteRouteMissingItemVariant1(
+    key: (json['key'] as String?)!,
+    type_: (json['type'] != null ? AddRouteResponseRouteRouteMissingItemVariant1Type.fromJson(json['type'] as String) : null)!,
+    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'key': key,
-        'type': type_.toJson(),
-        ...switch (value) {
-          SdkPresent<dynamic>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'key': key,
+    'type': type_.toJson(),
+    ...switch (value) {
+      SdkPresent<dynamic>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class AddRouteResponseRouteRouteMissingItem {
@@ -103,53 +67,24 @@ sealed class AddRouteResponseRouteRouteMissingItem {
   const AddRouteResponseRouteRouteMissingItem();
   factory AddRouteResponseRouteRouteMissingItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            AddRouteResponseRouteRouteMissingItemVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            AddRouteResponseRouteRouteMissingItemVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = AddRouteResponseRouteRouteMissingItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0(value); } } catch (_) {}
+      try { final value = AddRouteResponseRouteRouteMissingItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1(value); } } catch (_) {}
     }
-    try {
-      return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0(
-          AddRouteResponseRouteRouteMissingItemVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1(
-          AddRouteResponseRouteRouteMissingItemVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for AddRouteResponseRouteRouteMissingItem");
+    try { return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0(AddRouteResponseRouteRouteMissingItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1(AddRouteResponseRouteRouteMissingItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for AddRouteResponseRouteRouteMissingItem");
   }
   Object? toJson();
 }
 
-final class AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0
-    extends AddRouteResponseRouteRouteMissingItem {
+final class AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0 extends AddRouteResponseRouteRouteMissingItem {
   final AddRouteResponseRouteRouteMissingItemVariant0 value;
-  const AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1
-    extends AddRouteResponseRouteRouteMissingItem {
+final class AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1 extends AddRouteResponseRouteRouteMissingItem {
   final AddRouteResponseRouteRouteMissingItemVariant1 value;
-  const AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const AddRouteResponseRouteRouteMissingItemAddRouteResponseRouteRouteMissingItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

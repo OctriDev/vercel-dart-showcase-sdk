@@ -11,82 +11,42 @@ class ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0 {
   final SdkOptional<String> avatar;
   final String id;
   final SdkOptional<String?> name;
-  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type
-      type_;
+  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type type_;
   final String username;
 
-  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
-      {this.avatar = const SdkOmitted(),
-      required this.id,
-      this.name = const SdkOmitted(),
-      required this.type_,
-      required this.username});
+  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0({this.avatar = const SdkOmitted(), required this.id, this.name = const SdkOmitted(), required this.type_, required this.username});
 
-  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0 Function(
-      {SdkOptional<String> avatar,
-      String id,
-      SdkOptional<String?> name,
-      ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type
-          type_,
-      String username}) get copyWith => _copyWith;
+  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0 Function({SdkOptional<String> avatar, String id, SdkOptional<String?> name, ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type type_, String username}) get copyWith => _copyWith;
 
-  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0 _copyWith(
-          {Object? avatar = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
-        avatar: identical(avatar, sdkOmittedValue)
-            ? this.avatar
-            : avatar as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String?>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0 _copyWith({Object? avatar = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? username = sdkOmittedValue}) => ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
+    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String?>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
-        avatar: json['avatar'] != null
-            ? SdkPresent((json['avatar'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: json.containsKey('name')
-            ? SdkPresent(json['name'] as String?)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        username: (json['username'] as String?)!,
-      );
+  factory ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0.fromJson(Map<String, dynamic> json) => ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
+    avatar: json['avatar'] != null ? SdkPresent((json['avatar'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: json.containsKey('name') ? SdkPresent(json['name'] as String?) : const SdkOmitted(),
+    type_: (json['type'] != null ? ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0Type.fromJson(json['type'] as String) : null)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (avatar) {
-          SdkPresent<String>(value: final value) => {
-              'avatar': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (name) {
-          SdkPresent<String?>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        'username': username,
-      };
+    ...switch (avatar) {
+      SdkPresent<String>(value: final value) => {'avatar': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (name) {
+      SdkPresent<String?>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    'username': username,
+  };
 }
 
 /// The principal that last edited this env var, when the editor id resolves to a known user or app. Lets clients render the right avatar instead of assuming every editor is a user.
@@ -96,124 +56,61 @@ class ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1 {
   final SdkOptional<String> avatar;
   final String id;
   final String name;
-  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type
-      type_;
+  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type type_;
 
-  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
-      {this.avatar = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.type_});
+  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1({this.avatar = const SdkOmitted(), required this.id, required this.name, required this.type_});
 
-  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1 Function(
-      {SdkOptional<String> avatar,
-      String id,
-      String name,
-      ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type
-          type_}) get copyWith => _copyWith;
+  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1 Function({SdkOptional<String> avatar, String id, String name, ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type type_}) get copyWith => _copyWith;
 
-  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1 _copyWith(
-          {Object? avatar = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
-        avatar: identical(avatar, sdkOmittedValue)
-            ? this.avatar
-            : avatar as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type,
-      );
+  ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1 _copyWith({Object? avatar = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
+    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type,
+  );
 
-  factory ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
-        avatar: json['avatar'] != null
-            ? SdkPresent((json['avatar'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        type_: (json['type'] != null
-            ? ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1.fromJson(Map<String, dynamic> json) => ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
+    avatar: json['avatar'] != null ? SdkPresent((json['avatar'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    type_: (json['type'] != null ? ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (avatar) {
-          SdkPresent<String>(value: final value) => {
-              'avatar': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'type': type_.toJson(),
-      };
+    ...switch (avatar) {
+      SdkPresent<String>(value: final value) => {'avatar': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class ListSharedEnvVariableResponseDataItemLastEditedByPrincipal {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const ListSharedEnvVariableResponseDataItemLastEditedByPrincipal();
-  factory ListSharedEnvVariableResponseDataItemLastEditedByPrincipal.fromJson(
-      Object? json) {
+  factory ListSharedEnvVariableResponseDataItemLastEditedByPrincipal.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(value); } } catch (_) {}
+      try { final value = ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(value); } } catch (_) {}
     }
-    try {
-      return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
-          ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
-          ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for ListSharedEnvVariableResponseDataItemLastEditedByPrincipal");
+    try { return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for ListSharedEnvVariableResponseDataItemLastEditedByPrincipal");
   }
   Object? toJson();
 }
 
-final class ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0
-    extends ListSharedEnvVariableResponseDataItemLastEditedByPrincipal {
-  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0
-      value;
-  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0 extends ListSharedEnvVariableResponseDataItemLastEditedByPrincipal {
+  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0 value;
+  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1
-    extends ListSharedEnvVariableResponseDataItemLastEditedByPrincipal {
-  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1
-      value;
-  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1 extends ListSharedEnvVariableResponseDataItemLastEditedByPrincipal {
+  final ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1 value;
+  const ListSharedEnvVariableResponseDataItemLastEditedByPrincipalListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

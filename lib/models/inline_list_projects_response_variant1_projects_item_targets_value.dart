@@ -9,738 +9,267 @@ class ListProjectsResponseVariant1ProjectsItemTargetsValue {
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> alias;
   final SdkOptional<dynamic> aliasAssigned;
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?>
-      aliasError;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?> aliasError;
   final SdkOptional<String?> aliasFinal;
   final SdkOptional<List<String>> automaticAliases;
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher>
-      branchMatcher;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher> branchMatcher;
   final SdkOptional<double> buildingAt;
-  final SdkOptional<
-          List<ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>>
-      builds;
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion>
-      checksConclusion;
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState>
-      checksState;
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled>
-      connectBuildsEnabled;
+  final SdkOptional<List<ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>> builds;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion> checksConclusion;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState> checksState;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled> connectBuildsEnabled;
   final SdkOptional<String> connectConfigurationId;
   final double createdAt;
   final String createdIn;
   final ListProjectsResponseVariant1ProjectsItemTargetsValueCreator? creator;
   final SdkOptional<double> deletedAt;
   final String deploymentHostname;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueForced>
-      forced;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueForced> forced;
   final String id;
   final SdkOptional<Map<String, String>> meta;
   final SdkOptional<String?> monorepoManager;
   final String name;
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims>
-      oidcTokenClaims;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims> oidcTokenClaims;
   final ListProjectsResponseVariant1ProjectsItemTargetsValuePlan plan;
-
   /// Whether or not preview comments are enabled for the deployment
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled>
-      previewCommentsEnabled;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled> previewCommentsEnabled;
   final ListProjectsResponseVariant1ProjectsItemTargetsValuePrivate private;
   final SdkOptional<double> readyAt;
-  final ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState
-      readyState;
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate>
-      readySubstate;
+  final ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState readyState;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate> readySubstate;
   final SdkOptional<double> requestedAt;
   final SdkOptional<String?> target;
   final SdkOptional<String?> teamId;
   final ListProjectsResponseVariant1ProjectsItemTargetsValueType type_;
   final String url;
-
   /// Present for user creators; omitted for app/integration/system creators.
   final SdkOptional<String> userId;
-  final SdkOptional<
-      ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache> withCache;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache> withCache;
 
-  const ListProjectsResponseVariant1ProjectsItemTargetsValue(
-      {this.alias = const SdkOmitted(),
-      this.aliasAssigned = const SdkOmitted(),
-      this.aliasError = const SdkOmitted(),
-      this.aliasFinal = const SdkOmitted(),
-      this.automaticAliases = const SdkOmitted(),
-      this.branchMatcher = const SdkOmitted(),
-      this.buildingAt = const SdkOmitted(),
-      this.builds = const SdkOmitted(),
-      this.checksConclusion = const SdkOmitted(),
-      this.checksState = const SdkOmitted(),
-      this.connectBuildsEnabled = const SdkOmitted(),
-      this.connectConfigurationId = const SdkOmitted(),
-      required this.createdAt,
-      required this.createdIn,
-      required this.creator,
-      this.deletedAt = const SdkOmitted(),
-      required this.deploymentHostname,
-      this.forced = const SdkOmitted(),
-      required this.id,
-      this.meta = const SdkOmitted(),
-      this.monorepoManager = const SdkOmitted(),
-      required this.name,
-      this.oidcTokenClaims = const SdkOmitted(),
-      required this.plan,
-      this.previewCommentsEnabled = const SdkOmitted(),
-      required this.private,
-      this.readyAt = const SdkOmitted(),
-      required this.readyState,
-      this.readySubstate = const SdkOmitted(),
-      this.requestedAt = const SdkOmitted(),
-      this.target = const SdkOmitted(),
-      this.teamId = const SdkOmitted(),
-      required this.type_,
-      required this.url,
-      this.userId = const SdkOmitted(),
-      this.withCache = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemTargetsValue({this.alias = const SdkOmitted(), this.aliasAssigned = const SdkOmitted(), this.aliasError = const SdkOmitted(), this.aliasFinal = const SdkOmitted(), this.automaticAliases = const SdkOmitted(), this.branchMatcher = const SdkOmitted(), this.buildingAt = const SdkOmitted(), this.builds = const SdkOmitted(), this.checksConclusion = const SdkOmitted(), this.checksState = const SdkOmitted(), this.connectBuildsEnabled = const SdkOmitted(), this.connectConfigurationId = const SdkOmitted(), required this.createdAt, required this.createdIn, required this.creator, this.deletedAt = const SdkOmitted(), required this.deploymentHostname, this.forced = const SdkOmitted(), required this.id, this.meta = const SdkOmitted(), this.monorepoManager = const SdkOmitted(), required this.name, this.oidcTokenClaims = const SdkOmitted(), required this.plan, this.previewCommentsEnabled = const SdkOmitted(), required this.private, this.readyAt = const SdkOmitted(), required this.readyState, this.readySubstate = const SdkOmitted(), this.requestedAt = const SdkOmitted(), this.target = const SdkOmitted(), this.teamId = const SdkOmitted(), required this.type_, required this.url, this.userId = const SdkOmitted(), this.withCache = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemTargetsValue Function(
-      {SdkOptional<List<String>> alias,
-      SdkOptional<dynamic> aliasAssigned,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?>
-          aliasError,
-      SdkOptional<String?> aliasFinal,
-      SdkOptional<List<String>> automaticAliases,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher>
-          branchMatcher,
-      SdkOptional<double> buildingAt,
-      SdkOptional<
-              List<
-                  ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>>
-          builds,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion>
-          checksConclusion,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState>
-          checksState,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled>
-          connectBuildsEnabled,
-      SdkOptional<String> connectConfigurationId,
-      double createdAt,
-      String createdIn,
-      ListProjectsResponseVariant1ProjectsItemTargetsValueCreator? creator,
-      SdkOptional<double> deletedAt,
-      String deploymentHostname,
-      SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueForced>
-          forced,
-      String id,
-      SdkOptional<Map<String, String>> meta,
-      SdkOptional<String?> monorepoManager,
-      String name,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims>
-          oidcTokenClaims,
-      ListProjectsResponseVariant1ProjectsItemTargetsValuePlan plan,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled>
-          previewCommentsEnabled,
-      ListProjectsResponseVariant1ProjectsItemTargetsValuePrivate private,
-      SdkOptional<double> readyAt,
-      ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState readyState,
-      SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate>
-          readySubstate,
-      SdkOptional<double> requestedAt,
-      SdkOptional<String?> target,
-      SdkOptional<String?> teamId,
-      ListProjectsResponseVariant1ProjectsItemTargetsValueType type_,
-      String url,
-      SdkOptional<String> userId,
-      SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache>
-          withCache}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTargetsValue Function({SdkOptional<List<String>> alias, SdkOptional<dynamic> aliasAssigned, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?> aliasError, SdkOptional<String?> aliasFinal, SdkOptional<List<String>> automaticAliases, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher> branchMatcher, SdkOptional<double> buildingAt, SdkOptional<List<ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>> builds, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion> checksConclusion, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState> checksState, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled> connectBuildsEnabled, SdkOptional<String> connectConfigurationId, double createdAt, String createdIn, ListProjectsResponseVariant1ProjectsItemTargetsValueCreator? creator, SdkOptional<double> deletedAt, String deploymentHostname, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueForced> forced, String id, SdkOptional<Map<String, String>> meta, SdkOptional<String?> monorepoManager, String name, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims> oidcTokenClaims, ListProjectsResponseVariant1ProjectsItemTargetsValuePlan plan, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled> previewCommentsEnabled, ListProjectsResponseVariant1ProjectsItemTargetsValuePrivate private, SdkOptional<double> readyAt, ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState readyState, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate> readySubstate, SdkOptional<double> requestedAt, SdkOptional<String?> target, SdkOptional<String?> teamId, ListProjectsResponseVariant1ProjectsItemTargetsValueType type_, String url, SdkOptional<String> userId, SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache> withCache}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTargetsValue _copyWith(
-          {Object? alias = sdkOmittedValue,
-          Object? aliasAssigned = sdkOmittedValue,
-          Object? aliasError = sdkOmittedValue,
-          Object? aliasFinal = sdkOmittedValue,
-          Object? automaticAliases = sdkOmittedValue,
-          Object? branchMatcher = sdkOmittedValue,
-          Object? buildingAt = sdkOmittedValue,
-          Object? builds = sdkOmittedValue,
-          Object? checksConclusion = sdkOmittedValue,
-          Object? checksState = sdkOmittedValue,
-          Object? connectBuildsEnabled = sdkOmittedValue,
-          Object? connectConfigurationId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdIn = sdkOmittedValue,
-          Object? creator = sdkOmittedValue,
-          Object? deletedAt = sdkOmittedValue,
-          Object? deploymentHostname = sdkOmittedValue,
-          Object? forced = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? meta = sdkOmittedValue,
-          Object? monorepoManager = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? oidcTokenClaims = sdkOmittedValue,
-          Object? plan = sdkOmittedValue,
-          Object? previewCommentsEnabled = sdkOmittedValue,
-          Object? private = sdkOmittedValue,
-          Object? readyAt = sdkOmittedValue,
-          Object? readyState = sdkOmittedValue,
-          Object? readySubstate = sdkOmittedValue,
-          Object? requestedAt = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? url = sdkOmittedValue,
-          Object? userId = sdkOmittedValue,
-          Object? withCache = sdkOmittedValue}) =>
-      ListProjectsResponseVariant1ProjectsItemTargetsValue(
-        alias: identical(alias, sdkOmittedValue)
-            ? this.alias
-            : alias as SdkOptional<List<String>>,
-        aliasAssigned: identical(aliasAssigned, sdkOmittedValue)
-            ? this.aliasAssigned
-            : aliasAssigned as SdkOptional<dynamic>,
-        aliasError: identical(aliasError, sdkOmittedValue)
-            ? this.aliasError
-            : aliasError as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?>,
-        aliasFinal: identical(aliasFinal, sdkOmittedValue)
-            ? this.aliasFinal
-            : aliasFinal as SdkOptional<String?>,
-        automaticAliases: identical(automaticAliases, sdkOmittedValue)
-            ? this.automaticAliases
-            : automaticAliases as SdkOptional<List<String>>,
-        branchMatcher: identical(branchMatcher, sdkOmittedValue)
-            ? this.branchMatcher
-            : branchMatcher as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher>,
-        buildingAt: identical(buildingAt, sdkOmittedValue)
-            ? this.buildingAt
-            : buildingAt as SdkOptional<double>,
-        builds: identical(builds, sdkOmittedValue)
-            ? this.builds
-            : builds as SdkOptional<
-                List<
-                    ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>>,
-        checksConclusion: identical(checksConclusion, sdkOmittedValue)
-            ? this.checksConclusion
-            : checksConclusion as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion>,
-        checksState: identical(checksState, sdkOmittedValue)
-            ? this.checksState
-            : checksState as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState>,
-        connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue)
-            ? this.connectBuildsEnabled
-            : connectBuildsEnabled as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled>,
-        connectConfigurationId:
-            identical(connectConfigurationId, sdkOmittedValue)
-                ? this.connectConfigurationId
-                : connectConfigurationId as SdkOptional<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdIn: identical(createdIn, sdkOmittedValue)
-            ? this.createdIn
-            : createdIn as String,
-        creator: identical(creator, sdkOmittedValue)
-            ? this.creator
-            : creator
-                as ListProjectsResponseVariant1ProjectsItemTargetsValueCreator?,
-        deletedAt: identical(deletedAt, sdkOmittedValue)
-            ? this.deletedAt
-            : deletedAt as SdkOptional<double>,
-        deploymentHostname: identical(deploymentHostname, sdkOmittedValue)
-            ? this.deploymentHostname
-            : deploymentHostname as String,
-        forced: identical(forced, sdkOmittedValue)
-            ? this.forced
-            : forced as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueForced>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        meta: identical(meta, sdkOmittedValue)
-            ? this.meta
-            : meta as SdkOptional<Map<String, String>>,
-        monorepoManager: identical(monorepoManager, sdkOmittedValue)
-            ? this.monorepoManager
-            : monorepoManager as SdkOptional<String?>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        oidcTokenClaims: identical(oidcTokenClaims, sdkOmittedValue)
-            ? this.oidcTokenClaims
-            : oidcTokenClaims as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims>,
-        plan: identical(plan, sdkOmittedValue)
-            ? this.plan
-            : plan as ListProjectsResponseVariant1ProjectsItemTargetsValuePlan,
-        previewCommentsEnabled: identical(
-                previewCommentsEnabled, sdkOmittedValue)
-            ? this.previewCommentsEnabled
-            : previewCommentsEnabled as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled>,
-        private: identical(private, sdkOmittedValue)
-            ? this.private
-            : private
-                as ListProjectsResponseVariant1ProjectsItemTargetsValuePrivate,
-        readyAt: identical(readyAt, sdkOmittedValue)
-            ? this.readyAt
-            : readyAt as SdkOptional<double>,
-        readyState: identical(readyState, sdkOmittedValue)
-            ? this.readyState
-            : readyState
-                as ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState,
-        readySubstate: identical(readySubstate, sdkOmittedValue)
-            ? this.readySubstate
-            : readySubstate as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate>,
-        requestedAt: identical(requestedAt, sdkOmittedValue)
-            ? this.requestedAt
-            : requestedAt as SdkOptional<double>,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<String?>,
-        teamId: identical(teamId, sdkOmittedValue)
-            ? this.teamId
-            : teamId as SdkOptional<String?>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as ListProjectsResponseVariant1ProjectsItemTargetsValueType,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        userId: identical(userId, sdkOmittedValue)
-            ? this.userId
-            : userId as SdkOptional<String>,
-        withCache: identical(withCache, sdkOmittedValue)
-            ? this.withCache
-            : withCache as SdkOptional<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache>,
-      );
+  ListProjectsResponseVariant1ProjectsItemTargetsValue _copyWith({Object? alias = sdkOmittedValue, Object? aliasAssigned = sdkOmittedValue, Object? aliasError = sdkOmittedValue, Object? aliasFinal = sdkOmittedValue, Object? automaticAliases = sdkOmittedValue, Object? branchMatcher = sdkOmittedValue, Object? buildingAt = sdkOmittedValue, Object? builds = sdkOmittedValue, Object? checksConclusion = sdkOmittedValue, Object? checksState = sdkOmittedValue, Object? connectBuildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdIn = sdkOmittedValue, Object? creator = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? deploymentHostname = sdkOmittedValue, Object? forced = sdkOmittedValue, Object? id = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? monorepoManager = sdkOmittedValue, Object? name = sdkOmittedValue, Object? oidcTokenClaims = sdkOmittedValue, Object? plan = sdkOmittedValue, Object? previewCommentsEnabled = sdkOmittedValue, Object? private = sdkOmittedValue, Object? readyAt = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? readySubstate = sdkOmittedValue, Object? requestedAt = sdkOmittedValue, Object? target = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? withCache = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTargetsValue(
+    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<List<String>>,
+    aliasAssigned: identical(aliasAssigned, sdkOmittedValue) ? this.aliasAssigned : aliasAssigned as SdkOptional<dynamic>,
+    aliasError: identical(aliasError, sdkOmittedValue) ? this.aliasError : aliasError as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?>,
+    aliasFinal: identical(aliasFinal, sdkOmittedValue) ? this.aliasFinal : aliasFinal as SdkOptional<String?>,
+    automaticAliases: identical(automaticAliases, sdkOmittedValue) ? this.automaticAliases : automaticAliases as SdkOptional<List<String>>,
+    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher>,
+    buildingAt: identical(buildingAt, sdkOmittedValue) ? this.buildingAt : buildingAt as SdkOptional<double>,
+    builds: identical(builds, sdkOmittedValue) ? this.builds : builds as SdkOptional<List<ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>>,
+    checksConclusion: identical(checksConclusion, sdkOmittedValue) ? this.checksConclusion : checksConclusion as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion>,
+    checksState: identical(checksState, sdkOmittedValue) ? this.checksState : checksState as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState>,
+    connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue) ? this.connectBuildsEnabled : connectBuildsEnabled as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled>,
+    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as SdkOptional<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdIn: identical(createdIn, sdkOmittedValue) ? this.createdIn : createdIn as String,
+    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as ListProjectsResponseVariant1ProjectsItemTargetsValueCreator?,
+    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double>,
+    deploymentHostname: identical(deploymentHostname, sdkOmittedValue) ? this.deploymentHostname : deploymentHostname as String,
+    forced: identical(forced, sdkOmittedValue) ? this.forced : forced as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueForced>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as SdkOptional<Map<String, String>>,
+    monorepoManager: identical(monorepoManager, sdkOmittedValue) ? this.monorepoManager : monorepoManager as SdkOptional<String?>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    oidcTokenClaims: identical(oidcTokenClaims, sdkOmittedValue) ? this.oidcTokenClaims : oidcTokenClaims as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims>,
+    plan: identical(plan, sdkOmittedValue) ? this.plan : plan as ListProjectsResponseVariant1ProjectsItemTargetsValuePlan,
+    previewCommentsEnabled: identical(previewCommentsEnabled, sdkOmittedValue) ? this.previewCommentsEnabled : previewCommentsEnabled as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled>,
+    private: identical(private, sdkOmittedValue) ? this.private : private as ListProjectsResponseVariant1ProjectsItemTargetsValuePrivate,
+    readyAt: identical(readyAt, sdkOmittedValue) ? this.readyAt : readyAt as SdkOptional<double>,
+    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState,
+    readySubstate: identical(readySubstate, sdkOmittedValue) ? this.readySubstate : readySubstate as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate>,
+    requestedAt: identical(requestedAt, sdkOmittedValue) ? this.requestedAt : requestedAt as SdkOptional<double>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<String?>,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String?>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant1ProjectsItemTargetsValueType,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
+    withCache: identical(withCache, sdkOmittedValue) ? this.withCache : withCache as SdkOptional<ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache>,
+  );
 
-  factory ListProjectsResponseVariant1ProjectsItemTargetsValue.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant1ProjectsItemTargetsValue(
-        alias: json['alias'] != null
-            ? SdkPresent(
-                ((json['alias'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        aliasAssigned: json.containsKey('aliasAssigned')
-            ? SdkPresent(json['aliasAssigned'])
-            : const SdkOmitted(),
-        aliasError: json.containsKey('aliasError')
-            ? SdkPresent(json['aliasError'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError
-                    .fromJson(json['aliasError'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        aliasFinal: json.containsKey('aliasFinal')
-            ? SdkPresent(json['aliasFinal'] as String?)
-            : const SdkOmitted(),
-        automaticAliases: json['automaticAliases'] != null
-            ? SdkPresent(((json['automaticAliases'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        branchMatcher: json['branchMatcher'] != null
-            ? SdkPresent((json['branchMatcher'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher
-                    .fromJson(json['branchMatcher'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        buildingAt: json['buildingAt'] != null
-            ? SdkPresent(((json['buildingAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        builds: json['builds'] != null
-            ? SdkPresent(((json['builds'] as List?)
-                ?.map((e) =>
-                    ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        checksConclusion: json['checksConclusion'] != null
-            ? SdkPresent((json['checksConclusion'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion
-                    .fromJson(json['checksConclusion'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        checksState: json['checksState'] != null
-            ? SdkPresent((json['checksState'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState
-                    .fromJson(json['checksState'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        connectBuildsEnabled: json['connectBuildsEnabled'] != null
-            ? SdkPresent((json['connectBuildsEnabled'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled
-                    .fromJson(json['connectBuildsEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        connectConfigurationId: json['connectConfigurationId'] != null
-            ? SdkPresent((json['connectConfigurationId'] as String?)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdIn: (json['createdIn'] as String?)!,
-        creator: json.containsKey('creator')
-            ? json['creator'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueCreator
-                    .fromJson(json['creator'] as Map<String, dynamic>)
-                : null
-            : throw ArgumentError.value(
-                null, 'creator', 'Required property is missing'),
-        deletedAt: json['deletedAt'] != null
-            ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deploymentHostname: (json['deploymentHostname'] as String?)!,
-        forced: json['forced'] != null
-            ? SdkPresent((json['forced'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueForced
-                    .fromJson(json['forced'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        meta: json['meta'] != null
-            ? SdkPresent((json['meta'] == null
-                ? null
-                : Map<String, dynamic>.from(json['meta'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        monorepoManager: json.containsKey('monorepoManager')
-            ? SdkPresent(json['monorepoManager'] as String?)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        oidcTokenClaims: json['oidcTokenClaims'] != null
-            ? SdkPresent((json['oidcTokenClaims'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims
-                    .fromJson(json['oidcTokenClaims'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        plan: (json['plan'] != null
-            ? ListProjectsResponseVariant1ProjectsItemTargetsValuePlan.fromJson(
-                json['plan'] as String)
-            : null)!,
-        previewCommentsEnabled: json['previewCommentsEnabled'] != null
-            ? SdkPresent((json['previewCommentsEnabled'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled
-                    .fromJson(json['previewCommentsEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        private: (json['private'] != null
-            ? ListProjectsResponseVariant1ProjectsItemTargetsValuePrivate
-                .fromJson(json['private'] as bool)
-            : null)!,
-        readyAt: json['readyAt'] != null
-            ? SdkPresent(((json['readyAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        readyState: (json['readyState'] != null
-            ? ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState
-                .fromJson(json['readyState'] as String)
-            : null)!,
-        readySubstate: json['readySubstate'] != null
-            ? SdkPresent((json['readySubstate'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate
-                    .fromJson(json['readySubstate'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        requestedAt: json['requestedAt'] != null
-            ? SdkPresent(((json['requestedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        target: json.containsKey('target')
-            ? SdkPresent(json['target'] as String?)
-            : const SdkOmitted(),
-        teamId: json.containsKey('teamId')
-            ? SdkPresent(json['teamId'] as String?)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? ListProjectsResponseVariant1ProjectsItemTargetsValueType.fromJson(
-                json['type'] as String)
-            : null)!,
-        url: (json['url'] as String?)!,
-        userId: json['userId'] != null
-            ? SdkPresent((json['userId'] as String?)!)
-            : const SdkOmitted(),
-        withCache: json['withCache'] != null
-            ? SdkPresent((json['withCache'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache
-                    .fromJson(json['withCache'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant1ProjectsItemTargetsValue.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTargetsValue(
+    alias: json['alias'] != null ? SdkPresent(((json['alias'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    aliasAssigned: json.containsKey('aliasAssigned') ? SdkPresent(json['aliasAssigned']) : const SdkOmitted(),
+    aliasError: json.containsKey('aliasError') ? SdkPresent(json['aliasError'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError.fromJson(json['aliasError'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    aliasFinal: json.containsKey('aliasFinal') ? SdkPresent(json['aliasFinal'] as String?) : const SdkOmitted(),
+    automaticAliases: json['automaticAliases'] != null ? SdkPresent(((json['automaticAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    buildingAt: json['buildingAt'] != null ? SdkPresent(((json['buildingAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    builds: json['builds'] != null ? SdkPresent(((json['builds'] as List?)?.map((e) => ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    checksConclusion: json['checksConclusion'] != null ? SdkPresent((json['checksConclusion'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion.fromJson(json['checksConclusion'] as String) : null)!) : const SdkOmitted(),
+    checksState: json['checksState'] != null ? SdkPresent((json['checksState'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState.fromJson(json['checksState'] as String) : null)!) : const SdkOmitted(),
+    connectBuildsEnabled: json['connectBuildsEnabled'] != null ? SdkPresent((json['connectBuildsEnabled'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled.fromJson(json['connectBuildsEnabled'] as bool) : null)!) : const SdkOmitted(),
+    connectConfigurationId: json['connectConfigurationId'] != null ? SdkPresent((json['connectConfigurationId'] as String?)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdIn: (json['createdIn'] as String?)!,
+    creator: json.containsKey('creator') ? json['creator'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueCreator.fromJson(json['creator'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'creator', 'Required property is missing'),
+    deletedAt: json['deletedAt'] != null ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deploymentHostname: (json['deploymentHostname'] as String?)!,
+    forced: json['forced'] != null ? SdkPresent((json['forced'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueForced.fromJson(json['forced'] as bool) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    meta: json['meta'] != null ? SdkPresent((json['meta'] == null ? null : Map<String, dynamic>.from(json['meta'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    monorepoManager: json.containsKey('monorepoManager') ? SdkPresent(json['monorepoManager'] as String?) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    oidcTokenClaims: json['oidcTokenClaims'] != null ? SdkPresent((json['oidcTokenClaims'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims.fromJson(json['oidcTokenClaims'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    plan: (json['plan'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValuePlan.fromJson(json['plan'] as String) : null)!,
+    previewCommentsEnabled: json['previewCommentsEnabled'] != null ? SdkPresent((json['previewCommentsEnabled'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled.fromJson(json['previewCommentsEnabled'] as bool) : null)!) : const SdkOmitted(),
+    private: (json['private'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValuePrivate.fromJson(json['private'] as bool) : null)!,
+    readyAt: json['readyAt'] != null ? SdkPresent(((json['readyAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    readyState: (json['readyState'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueReadyState.fromJson(json['readyState'] as String) : null)!,
+    readySubstate: json['readySubstate'] != null ? SdkPresent((json['readySubstate'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate.fromJson(json['readySubstate'] as String) : null)!) : const SdkOmitted(),
+    requestedAt: json['requestedAt'] != null ? SdkPresent(((json['requestedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    target: json.containsKey('target') ? SdkPresent(json['target'] as String?) : const SdkOmitted(),
+    teamId: json.containsKey('teamId') ? SdkPresent(json['teamId'] as String?) : const SdkOmitted(),
+    type_: (json['type'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueType.fromJson(json['type'] as String) : null)!,
+    url: (json['url'] as String?)!,
+    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
+    withCache: json['withCache'] != null ? SdkPresent((json['withCache'] != null ? ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache.fromJson(json['withCache'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (alias) {
-          SdkPresent<List<String>>(value: final value) => {
-              'alias': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasAssigned) {
-          SdkPresent<dynamic>(value: final value) => {
-              'aliasAssigned': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasError) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?>(
-            value: final value
-          ) =>
-            {
-              'aliasError': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasFinal) {
-          SdkPresent<String?>(value: final value) => {
-              'aliasFinal': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (automaticAliases) {
-          SdkPresent<List<String>>(value: final value) => {
-              'automaticAliases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (branchMatcher) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher>(
-            value: final value
-          ) =>
-            {
-              'branchMatcher': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildingAt) {
-          SdkPresent<double>(value: final value) => {
-              'buildingAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (builds) {
-          SdkPresent<
-                List<
-                    ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>>(
-            value: final value
-          ) =>
-            {
-              'builds': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (checksConclusion) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion>(
-            value: final value
-          ) =>
-            {
-              'checksConclusion': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (checksState) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState>(
-            value: final value
-          ) =>
-            {
-              'checksState': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectBuildsEnabled) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled>(
-            value: final value
-          ) =>
-            {
-              'connectBuildsEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectConfigurationId) {
-          SdkPresent<String>(value: final value) => {
-              'connectConfigurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'createdIn': createdIn,
-        'creator': creator?.toJson(),
-        ...switch (deletedAt) {
-          SdkPresent<double>(value: final value) => {
-              'deletedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deploymentHostname': deploymentHostname,
-        ...switch (forced) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueForced>(
-            value: final value
-          ) =>
-            {
-              'forced': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (meta) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'meta': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (monorepoManager) {
-          SdkPresent<String?>(value: final value) => {
-              'monorepoManager': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        ...switch (oidcTokenClaims) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims>(
-            value: final value
-          ) =>
-            {
-              'oidcTokenClaims': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'plan': plan.toJson(),
-        ...switch (previewCommentsEnabled) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled>(
-            value: final value
-          ) =>
-            {
-              'previewCommentsEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'private': private.toJson(),
-        ...switch (readyAt) {
-          SdkPresent<double>(value: final value) => {
-              'readyAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'readyState': readyState.toJson(),
-        ...switch (readySubstate) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate>(
-            value: final value
-          ) =>
-            {
-              'readySubstate': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requestedAt) {
-          SdkPresent<double>(value: final value) => {
-              'requestedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (target) {
-          SdkPresent<String?>(value: final value) => {
-              'target': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (teamId) {
-          SdkPresent<String?>(value: final value) => {
-              'teamId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        'url': url,
-        ...switch (userId) {
-          SdkPresent<String>(value: final value) => {
-              'userId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (withCache) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache>(
-            value: final value
-          ) =>
-            {
-              'withCache': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (alias) {
+      SdkPresent<List<String>>(value: final value) => {'alias': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasAssigned) {
+      SdkPresent<dynamic>(value: final value) => {'aliasAssigned': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasError) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueAliasError?>(value: final value) => {'aliasError': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasFinal) {
+      SdkPresent<String?>(value: final value) => {'aliasFinal': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (automaticAliases) {
+      SdkPresent<List<String>>(value: final value) => {'automaticAliases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (branchMatcher) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildingAt) {
+      SdkPresent<double>(value: final value) => {'buildingAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (builds) {
+      SdkPresent<List<ListProjectsResponseVariant1ProjectsItemTargetsValueBuildsItem>>(value: final value) => {'builds': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (checksConclusion) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksConclusion>(value: final value) => {'checksConclusion': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (checksState) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueChecksState>(value: final value) => {'checksState': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectBuildsEnabled) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueConnectBuildsEnabled>(value: final value) => {'connectBuildsEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectConfigurationId) {
+      SdkPresent<String>(value: final value) => {'connectConfigurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'createdIn': createdIn,
+    'creator': creator?.toJson(),
+    ...switch (deletedAt) {
+      SdkPresent<double>(value: final value) => {'deletedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deploymentHostname': deploymentHostname,
+    ...switch (forced) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueForced>(value: final value) => {'forced': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (meta) {
+      SdkPresent<Map<String, String>>(value: final value) => {'meta': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (monorepoManager) {
+      SdkPresent<String?>(value: final value) => {'monorepoManager': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    ...switch (oidcTokenClaims) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueOidcTokenClaims>(value: final value) => {'oidcTokenClaims': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'plan': plan.toJson(),
+    ...switch (previewCommentsEnabled) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValuePreviewCommentsEnabled>(value: final value) => {'previewCommentsEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'private': private.toJson(),
+    ...switch (readyAt) {
+      SdkPresent<double>(value: final value) => {'readyAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'readyState': readyState.toJson(),
+    ...switch (readySubstate) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueReadySubstate>(value: final value) => {'readySubstate': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requestedAt) {
+      SdkPresent<double>(value: final value) => {'requestedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (target) {
+      SdkPresent<String?>(value: final value) => {'target': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (teamId) {
+      SdkPresent<String?>(value: final value) => {'teamId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    'url': url,
+    ...switch (userId) {
+      SdkPresent<String>(value: final value) => {'userId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (withCache) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTargetsValueWithCache>(value: final value) => {'withCache': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The target envs on the current project that may be accessed.
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>
-      preset;
-
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset;
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
-      {this.preset = const SdkOmitted(), required this.slugs});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0({this.preset = const SdkOmitted(), required this.slugs});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 Function(
-      {SdkOptional<
-              ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>
-          preset,
-      List<String> slugs}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0
-      _copyWith(
-              {Object? preset = sdkOmittedValue,
-              Object? slugs = sdkOmittedValue}) =>
-          ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
-            preset: identical(preset, sdkOmittedValue)
-                ? this.preset
-                : preset as SdkOptional<
-                    ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
-            slugs: identical(slugs, sdkOmittedValue)
-                ? this.slugs
-                : slugs as List<String>,
-          );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
+    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
+  );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
-        preset: json['preset'] != null
-            ? SdkPresent((json['preset'] != null
-                ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset
-                    .fromJson(json['preset'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
+    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (preset) {
-          SdkPresent<
-                ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>(
-            value: final value
-          ) =>
-            {
-              'preset': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'slugs': slugs,
-      };
+    ...switch (preset) {
+      SdkPresent<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>(value: final value) => {'preset': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'slugs': slugs,
+  };
 }

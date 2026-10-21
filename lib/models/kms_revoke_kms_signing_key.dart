@@ -8,7 +8,6 @@ class RevokeKmsSigningKeyResponsePoliciesItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String createdAt;
-
   /// Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim.
   final List<String> environments;
   final RevokeKmsSigningKeyResponsePoliciesItemVariant0Kind kind;
@@ -17,91 +16,42 @@ class RevokeKmsSigningKeyResponsePoliciesItemVariant0 {
   final SdkOptional<Map<String, Object?>> tokenClaims;
   final String updatedAt;
 
-  const RevokeKmsSigningKeyResponsePoliciesItemVariant0(
-      {required this.createdAt,
-      required this.environments,
-      required this.kind,
-      required this.projectId,
-      required this.teamId,
-      this.tokenClaims = const SdkOmitted(),
-      required this.updatedAt});
+  const RevokeKmsSigningKeyResponsePoliciesItemVariant0({required this.createdAt, required this.environments, required this.kind, required this.projectId, required this.teamId, this.tokenClaims = const SdkOmitted(), required this.updatedAt});
 
-  RevokeKmsSigningKeyResponsePoliciesItemVariant0 Function(
-      {String createdAt,
-      List<String> environments,
-      RevokeKmsSigningKeyResponsePoliciesItemVariant0Kind kind,
-      String projectId,
-      String teamId,
-      SdkOptional<Map<String, Object?>> tokenClaims,
-      String updatedAt}) get copyWith => _copyWith;
+  RevokeKmsSigningKeyResponsePoliciesItemVariant0 Function({String createdAt, List<String> environments, RevokeKmsSigningKeyResponsePoliciesItemVariant0Kind kind, String projectId, String teamId, SdkOptional<Map<String, Object?>> tokenClaims, String updatedAt}) get copyWith => _copyWith;
 
-  RevokeKmsSigningKeyResponsePoliciesItemVariant0 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? environments = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue,
-          Object? tokenClaims = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      RevokeKmsSigningKeyResponsePoliciesItemVariant0(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as String,
-        environments: identical(environments, sdkOmittedValue)
-            ? this.environments
-            : environments as List<String>,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as RevokeKmsSigningKeyResponsePoliciesItemVariant0Kind,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        teamId:
-            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-        tokenClaims: identical(tokenClaims, sdkOmittedValue)
-            ? this.tokenClaims
-            : tokenClaims as SdkOptional<Map<String, Object?>>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as String,
-      );
+  RevokeKmsSigningKeyResponsePoliciesItemVariant0 _copyWith({Object? createdAt = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? tokenClaims = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => RevokeKmsSigningKeyResponsePoliciesItemVariant0(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
+    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<String>,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as RevokeKmsSigningKeyResponsePoliciesItemVariant0Kind,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+    tokenClaims: identical(tokenClaims, sdkOmittedValue) ? this.tokenClaims : tokenClaims as SdkOptional<Map<String, Object?>>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
+  );
 
-  factory RevokeKmsSigningKeyResponsePoliciesItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      RevokeKmsSigningKeyResponsePoliciesItemVariant0(
-        createdAt: (json['createdAt'] as String?)!,
-        environments: ((json['environments'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-        kind: (json['kind'] != null
-            ? RevokeKmsSigningKeyResponsePoliciesItemVariant0Kind.fromJson(
-                json['kind'] as String)
-            : null)!,
-        projectId: (json['projectId'] as String?)!,
-        teamId: (json['teamId'] as String?)!,
-        tokenClaims: json['tokenClaims'] != null
-            ? SdkPresent((json['tokenClaims'] == null
-                ? null
-                : Map<String, dynamic>.from(json['tokenClaims'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        updatedAt: (json['updatedAt'] as String?)!,
-      );
+  factory RevokeKmsSigningKeyResponsePoliciesItemVariant0.fromJson(Map<String, dynamic> json) => RevokeKmsSigningKeyResponsePoliciesItemVariant0(
+    createdAt: (json['createdAt'] as String?)!,
+    environments: ((json['environments'] as List?)?.map((e) => e as String).toList())!,
+    kind: (json['kind'] != null ? RevokeKmsSigningKeyResponsePoliciesItemVariant0Kind.fromJson(json['kind'] as String) : null)!,
+    projectId: (json['projectId'] as String?)!,
+    teamId: (json['teamId'] as String?)!,
+    tokenClaims: json['tokenClaims'] != null ? SdkPresent((json['tokenClaims'] == null ? null : Map<String, dynamic>.from(json['tokenClaims'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    updatedAt: (json['updatedAt'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'environments': environments,
-        'kind': kind.toJson(),
-        'projectId': projectId,
-        'teamId': teamId,
-        ...switch (tokenClaims) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'tokenClaims': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'updatedAt': updatedAt,
-      };
+    'createdAt': createdAt,
+    'environments': environments,
+    'kind': kind.toJson(),
+    'projectId': projectId,
+    'teamId': teamId,
+    ...switch (tokenClaims) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'tokenClaims': value,},
+      _ => const <String, dynamic>{},
+    },
+    'updatedAt': updatedAt,
+  };
 }
 
 class RevokeKmsSigningKeyResponsePoliciesItemVariant1 {
@@ -113,74 +63,36 @@ class RevokeKmsSigningKeyResponsePoliciesItemVariant1 {
   final SdkOptional<Map<String, Object?>> tokenClaims;
   final String updatedAt;
 
-  const RevokeKmsSigningKeyResponsePoliciesItemVariant1(
-      {required this.clientId,
-      required this.createdAt,
-      required this.kind,
-      this.tokenClaims = const SdkOmitted(),
-      required this.updatedAt});
+  const RevokeKmsSigningKeyResponsePoliciesItemVariant1({required this.clientId, required this.createdAt, required this.kind, this.tokenClaims = const SdkOmitted(), required this.updatedAt});
 
-  RevokeKmsSigningKeyResponsePoliciesItemVariant1 Function(
-      {String clientId,
-      String createdAt,
-      RevokeKmsSigningKeyResponsePoliciesItemVariant1Kind kind,
-      SdkOptional<Map<String, Object?>> tokenClaims,
-      String updatedAt}) get copyWith => _copyWith;
+  RevokeKmsSigningKeyResponsePoliciesItemVariant1 Function({String clientId, String createdAt, RevokeKmsSigningKeyResponsePoliciesItemVariant1Kind kind, SdkOptional<Map<String, Object?>> tokenClaims, String updatedAt}) get copyWith => _copyWith;
 
-  RevokeKmsSigningKeyResponsePoliciesItemVariant1 _copyWith(
-          {Object? clientId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? tokenClaims = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      RevokeKmsSigningKeyResponsePoliciesItemVariant1(
-        clientId: identical(clientId, sdkOmittedValue)
-            ? this.clientId
-            : clientId as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as String,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as RevokeKmsSigningKeyResponsePoliciesItemVariant1Kind,
-        tokenClaims: identical(tokenClaims, sdkOmittedValue)
-            ? this.tokenClaims
-            : tokenClaims as SdkOptional<Map<String, Object?>>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as String,
-      );
+  RevokeKmsSigningKeyResponsePoliciesItemVariant1 _copyWith({Object? clientId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? tokenClaims = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => RevokeKmsSigningKeyResponsePoliciesItemVariant1(
+    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as RevokeKmsSigningKeyResponsePoliciesItemVariant1Kind,
+    tokenClaims: identical(tokenClaims, sdkOmittedValue) ? this.tokenClaims : tokenClaims as SdkOptional<Map<String, Object?>>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
+  );
 
-  factory RevokeKmsSigningKeyResponsePoliciesItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      RevokeKmsSigningKeyResponsePoliciesItemVariant1(
-        clientId: (json['clientId'] as String?)!,
-        createdAt: (json['createdAt'] as String?)!,
-        kind: (json['kind'] != null
-            ? RevokeKmsSigningKeyResponsePoliciesItemVariant1Kind.fromJson(
-                json['kind'] as String)
-            : null)!,
-        tokenClaims: json['tokenClaims'] != null
-            ? SdkPresent((json['tokenClaims'] == null
-                ? null
-                : Map<String, dynamic>.from(json['tokenClaims'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        updatedAt: (json['updatedAt'] as String?)!,
-      );
+  factory RevokeKmsSigningKeyResponsePoliciesItemVariant1.fromJson(Map<String, dynamic> json) => RevokeKmsSigningKeyResponsePoliciesItemVariant1(
+    clientId: (json['clientId'] as String?)!,
+    createdAt: (json['createdAt'] as String?)!,
+    kind: (json['kind'] != null ? RevokeKmsSigningKeyResponsePoliciesItemVariant1Kind.fromJson(json['kind'] as String) : null)!,
+    tokenClaims: json['tokenClaims'] != null ? SdkPresent((json['tokenClaims'] == null ? null : Map<String, dynamic>.from(json['tokenClaims'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    updatedAt: (json['updatedAt'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'clientId': clientId,
-        'createdAt': createdAt,
-        'kind': kind.toJson(),
-        ...switch (tokenClaims) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'tokenClaims': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'updatedAt': updatedAt,
-      };
+    'clientId': clientId,
+    'createdAt': createdAt,
+    'kind': kind.toJson(),
+    ...switch (tokenClaims) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'tokenClaims': value,},
+      _ => const <String, dynamic>{},
+    },
+    'updatedAt': updatedAt,
+  };
 }
 
 sealed class RevokeKmsSigningKeyResponsePoliciesItem {
@@ -189,53 +101,24 @@ sealed class RevokeKmsSigningKeyResponsePoliciesItem {
   const RevokeKmsSigningKeyResponsePoliciesItem();
   factory RevokeKmsSigningKeyResponsePoliciesItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            RevokeKmsSigningKeyResponsePoliciesItemVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            RevokeKmsSigningKeyResponsePoliciesItemVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = RevokeKmsSigningKeyResponsePoliciesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0(value); } } catch (_) {}
+      try { final value = RevokeKmsSigningKeyResponsePoliciesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1(value); } } catch (_) {}
     }
-    try {
-      return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0(
-          RevokeKmsSigningKeyResponsePoliciesItemVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1(
-          RevokeKmsSigningKeyResponsePoliciesItemVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for RevokeKmsSigningKeyResponsePoliciesItem");
+    try { return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0(RevokeKmsSigningKeyResponsePoliciesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1(RevokeKmsSigningKeyResponsePoliciesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for RevokeKmsSigningKeyResponsePoliciesItem");
   }
   Object? toJson();
 }
 
-final class RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0
-    extends RevokeKmsSigningKeyResponsePoliciesItem {
+final class RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0 extends RevokeKmsSigningKeyResponsePoliciesItem {
   final RevokeKmsSigningKeyResponsePoliciesItemVariant0 value;
-  const RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1
-    extends RevokeKmsSigningKeyResponsePoliciesItem {
+final class RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1 extends RevokeKmsSigningKeyResponsePoliciesItem {
   final RevokeKmsSigningKeyResponsePoliciesItemVariant1 value;
-  const RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RevokeKmsSigningKeyResponsePoliciesItemRevokeKmsSigningKeyResponsePoliciesItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

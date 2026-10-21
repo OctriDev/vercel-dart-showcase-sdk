@@ -5,507 +5,264 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateWebhookRequestBodyEventsItem {
+
   final String value;
 
   const CreateWebhookRequestBodyEventsItem._(this.value);
 
-  factory CreateWebhookRequestBodyEventsItem.fromJson(String value) =>
-      CreateWebhookRequestBodyEventsItem._(value);
+  factory CreateWebhookRequestBodyEventsItem.fromJson(String value) => CreateWebhookRequestBodyEventsItem._(value);
 
-  static const budgetReached =
-      CreateWebhookRequestBodyEventsItem._('budget.reached');
-  static const domainCreated =
-      CreateWebhookRequestBodyEventsItem._('domain.created');
-  static const domainDnsRecordsChanged =
-      CreateWebhookRequestBodyEventsItem._('domain.dns.records.changed');
-  static const domainTransferInStarted =
-      CreateWebhookRequestBodyEventsItem._('domain.transfer-in.started');
-  static const domainTransferInCompleted =
-      CreateWebhookRequestBodyEventsItem._('domain.transfer-in.completed');
-  static const domainTransferInFailed =
-      CreateWebhookRequestBodyEventsItem._('domain.transfer-in.failed');
-  static const domainCertificateAdd =
-      CreateWebhookRequestBodyEventsItem._('domain.certificate.add');
-  static const domainCertificateAddFailed =
-      CreateWebhookRequestBodyEventsItem._('domain.certificate.add.failed');
-  static const domainCertificateRenew =
-      CreateWebhookRequestBodyEventsItem._('domain.certificate.renew');
-  static const domainCertificateRenewFailed =
-      CreateWebhookRequestBodyEventsItem._('domain.certificate.renew.failed');
-  static const domainCertificateDeleted =
-      CreateWebhookRequestBodyEventsItem._('domain.certificate.deleted');
-  static const domainRenewal =
-      CreateWebhookRequestBodyEventsItem._('domain.renewal');
-  static const domainRenewalFailed =
-      CreateWebhookRequestBodyEventsItem._('domain.renewal.failed');
-  static const domainAutoRenewChanged =
-      CreateWebhookRequestBodyEventsItem._('domain.auto-renew.changed');
-  static const deploymentCreated =
-      CreateWebhookRequestBodyEventsItem._('deployment.created');
-  static const deploymentBuildRequested =
-      CreateWebhookRequestBodyEventsItem._('deployment.build-requested');
-  static const deploymentCleanup =
-      CreateWebhookRequestBodyEventsItem._('deployment.cleanup');
-  static const deploymentError =
-      CreateWebhookRequestBodyEventsItem._('deployment.error');
-  static const deploymentBlocked =
-      CreateWebhookRequestBodyEventsItem._('deployment.blocked');
-  static const deploymentCanceled =
-      CreateWebhookRequestBodyEventsItem._('deployment.canceled');
-  static const deploymentSucceeded =
-      CreateWebhookRequestBodyEventsItem._('deployment.succeeded');
-  static const deploymentReady =
-      CreateWebhookRequestBodyEventsItem._('deployment.ready');
-  static const deploymentCheckRerequested =
-      CreateWebhookRequestBodyEventsItem._('deployment.check-rerequested');
-  static const deploymentPromoted =
-      CreateWebhookRequestBodyEventsItem._('deployment.promoted');
-  static const deploymentRollback =
-      CreateWebhookRequestBodyEventsItem._('deployment.rollback');
-  static const deploymentIntegrationActionStart =
-      CreateWebhookRequestBodyEventsItem._(
-          'deployment.integration.action.start');
-  static const deploymentIntegrationActionCancel =
-      CreateWebhookRequestBodyEventsItem._(
-          'deployment.integration.action.cancel');
-  static const deploymentIntegrationActionCleanup =
-      CreateWebhookRequestBodyEventsItem._(
-          'deployment.integration.action.cleanup');
-  static const deploymentCheckrunStart =
-      CreateWebhookRequestBodyEventsItem._('deployment.checkrun.start');
-  static const deploymentCheckrunCancel =
-      CreateWebhookRequestBodyEventsItem._('deployment.checkrun.cancel');
-  static const edgeConfigCreated =
-      CreateWebhookRequestBodyEventsItem._('edge-config.created');
-  static const edgeConfigDeleted =
-      CreateWebhookRequestBodyEventsItem._('edge-config.deleted');
-  static const edgeConfigItemsUpdated =
-      CreateWebhookRequestBodyEventsItem._('edge-config.items.updated');
-  static const firewallAttack =
-      CreateWebhookRequestBodyEventsItem._('firewall.attack');
-  static const firewallSystemRuleAnomaly =
-      CreateWebhookRequestBodyEventsItem._('firewall.system-rule-anomaly');
-  static const firewallCustomRuleAnomaly =
-      CreateWebhookRequestBodyEventsItem._('firewall.custom-rule-anomaly');
-  static const functionArchivalRequired =
-      CreateWebhookRequestBodyEventsItem._('function.archival-required');
-  static const functionRemovalRequired =
-      CreateWebhookRequestBodyEventsItem._('function.removal-required');
-  static const alertsTriggered =
-      CreateWebhookRequestBodyEventsItem._('alerts.triggered');
-  static const integrationConfigurationPermissionUpgraded =
-      CreateWebhookRequestBodyEventsItem._(
-          'integration-configuration.permission-upgraded');
-  static const integrationConfigurationRemoved =
-      CreateWebhookRequestBodyEventsItem._('integration-configuration.removed');
-  static const integrationConfigurationScopeChangeConfirmed =
-      CreateWebhookRequestBodyEventsItem._(
-          'integration-configuration.scope-change-confirmed');
-  static const integrationConfigurationTransferred =
-      CreateWebhookRequestBodyEventsItem._(
-          'integration-configuration.transferred');
-  static const integrationResourceProjectConnected =
-      CreateWebhookRequestBodyEventsItem._(
-          'integration-resource.project-connected');
-  static const integrationResourceProjectDisconnected =
-      CreateWebhookRequestBodyEventsItem._(
-          'integration-resource.project-disconnected');
-  static const projectCreated =
-      CreateWebhookRequestBodyEventsItem._('project.created');
-  static const projectRemoved =
-      CreateWebhookRequestBodyEventsItem._('project.removed');
-  static const projectRenamed =
-      CreateWebhookRequestBodyEventsItem._('project.renamed');
-  static const projectEnvVariableCreated =
-      CreateWebhookRequestBodyEventsItem._('project.env-variable.created');
-  static const projectEnvVariableUpdated =
-      CreateWebhookRequestBodyEventsItem._('project.env-variable.updated');
-  static const projectEnvVariableDeleted =
-      CreateWebhookRequestBodyEventsItem._('project.env-variable.deleted');
-  static const projectDomainCreated =
-      CreateWebhookRequestBodyEventsItem._('project.domain.created');
-  static const projectDomainUpdated =
-      CreateWebhookRequestBodyEventsItem._('project.domain.updated');
-  static const projectDomainDeleted =
-      CreateWebhookRequestBodyEventsItem._('project.domain.deleted');
-  static const projectDomainVerified =
-      CreateWebhookRequestBodyEventsItem._('project.domain.verified');
-  static const projectDomainUnverified =
-      CreateWebhookRequestBodyEventsItem._('project.domain.unverified');
-  static const projectDomainMoved =
-      CreateWebhookRequestBodyEventsItem._('project.domain.moved');
-  static const projectRollingReleaseStarted =
-      CreateWebhookRequestBodyEventsItem._('project.rolling-release.started');
-  static const projectRollingReleaseAborted =
-      CreateWebhookRequestBodyEventsItem._('project.rolling-release.aborted');
-  static const projectRollingReleaseCompleted =
-      CreateWebhookRequestBodyEventsItem._('project.rolling-release.completed');
-  static const projectRollingReleaseApproved =
-      CreateWebhookRequestBodyEventsItem._('project.rolling-release.approved');
-  static const deploymentChecksFailed =
-      CreateWebhookRequestBodyEventsItem._('deployment.checks.failed');
-  static const deploymentChecksSucceeded =
-      CreateWebhookRequestBodyEventsItem._('deployment.checks.succeeded');
-  static const deploymentChecksCompleted =
-      CreateWebhookRequestBodyEventsItem._('deployment-checks-completed');
-  static const deploymentReady2 =
-      CreateWebhookRequestBodyEventsItem._('deployment-ready');
-  static const deploymentPrepared =
-      CreateWebhookRequestBodyEventsItem._('deployment-prepared');
-  static const deploymentError2 =
-      CreateWebhookRequestBodyEventsItem._('deployment-error');
-  static const deploymentCheckRerequested2 =
-      CreateWebhookRequestBodyEventsItem._('deployment-check-rerequested');
-  static const deploymentCanceled2 =
-      CreateWebhookRequestBodyEventsItem._('deployment-canceled');
-  static const projectCreated2 =
-      CreateWebhookRequestBodyEventsItem._('project-created');
-  static const projectRemoved2 =
-      CreateWebhookRequestBodyEventsItem._('project-removed');
-  static const domainCreated2 =
-      CreateWebhookRequestBodyEventsItem._('domain-created');
+  static const budgetReached = CreateWebhookRequestBodyEventsItem._('budget.reached');
+  static const domainCreated = CreateWebhookRequestBodyEventsItem._('domain.created');
+  static const domainDnsRecordsChanged = CreateWebhookRequestBodyEventsItem._('domain.dns.records.changed');
+  static const domainTransferInStarted = CreateWebhookRequestBodyEventsItem._('domain.transfer-in.started');
+  static const domainTransferInCompleted = CreateWebhookRequestBodyEventsItem._('domain.transfer-in.completed');
+  static const domainTransferInFailed = CreateWebhookRequestBodyEventsItem._('domain.transfer-in.failed');
+  static const domainCertificateAdd = CreateWebhookRequestBodyEventsItem._('domain.certificate.add');
+  static const domainCertificateAddFailed = CreateWebhookRequestBodyEventsItem._('domain.certificate.add.failed');
+  static const domainCertificateRenew = CreateWebhookRequestBodyEventsItem._('domain.certificate.renew');
+  static const domainCertificateRenewFailed = CreateWebhookRequestBodyEventsItem._('domain.certificate.renew.failed');
+  static const domainCertificateDeleted = CreateWebhookRequestBodyEventsItem._('domain.certificate.deleted');
+  static const domainRenewal = CreateWebhookRequestBodyEventsItem._('domain.renewal');
+  static const domainRenewalFailed = CreateWebhookRequestBodyEventsItem._('domain.renewal.failed');
+  static const domainAutoRenewChanged = CreateWebhookRequestBodyEventsItem._('domain.auto-renew.changed');
+  static const deploymentCreated = CreateWebhookRequestBodyEventsItem._('deployment.created');
+  static const deploymentBuildRequested = CreateWebhookRequestBodyEventsItem._('deployment.build-requested');
+  static const deploymentCleanup = CreateWebhookRequestBodyEventsItem._('deployment.cleanup');
+  static const deploymentError = CreateWebhookRequestBodyEventsItem._('deployment.error');
+  static const deploymentBlocked = CreateWebhookRequestBodyEventsItem._('deployment.blocked');
+  static const deploymentCanceled = CreateWebhookRequestBodyEventsItem._('deployment.canceled');
+  static const deploymentSucceeded = CreateWebhookRequestBodyEventsItem._('deployment.succeeded');
+  static const deploymentReady = CreateWebhookRequestBodyEventsItem._('deployment.ready');
+  static const deploymentCheckRerequested = CreateWebhookRequestBodyEventsItem._('deployment.check-rerequested');
+  static const deploymentPromoted = CreateWebhookRequestBodyEventsItem._('deployment.promoted');
+  static const deploymentRollback = CreateWebhookRequestBodyEventsItem._('deployment.rollback');
+  static const deploymentIntegrationActionStart = CreateWebhookRequestBodyEventsItem._('deployment.integration.action.start');
+  static const deploymentIntegrationActionCancel = CreateWebhookRequestBodyEventsItem._('deployment.integration.action.cancel');
+  static const deploymentIntegrationActionCleanup = CreateWebhookRequestBodyEventsItem._('deployment.integration.action.cleanup');
+  static const deploymentCheckrunStart = CreateWebhookRequestBodyEventsItem._('deployment.checkrun.start');
+  static const deploymentCheckrunCancel = CreateWebhookRequestBodyEventsItem._('deployment.checkrun.cancel');
+  static const edgeConfigCreated = CreateWebhookRequestBodyEventsItem._('edge-config.created');
+  static const edgeConfigDeleted = CreateWebhookRequestBodyEventsItem._('edge-config.deleted');
+  static const edgeConfigItemsUpdated = CreateWebhookRequestBodyEventsItem._('edge-config.items.updated');
+  static const firewallAttack = CreateWebhookRequestBodyEventsItem._('firewall.attack');
+  static const firewallSystemRuleAnomaly = CreateWebhookRequestBodyEventsItem._('firewall.system-rule-anomaly');
+  static const firewallCustomRuleAnomaly = CreateWebhookRequestBodyEventsItem._('firewall.custom-rule-anomaly');
+  static const functionArchivalRequired = CreateWebhookRequestBodyEventsItem._('function.archival-required');
+  static const functionRemovalRequired = CreateWebhookRequestBodyEventsItem._('function.removal-required');
+  static const alertsTriggered = CreateWebhookRequestBodyEventsItem._('alerts.triggered');
+  static const integrationConfigurationPermissionUpgraded = CreateWebhookRequestBodyEventsItem._('integration-configuration.permission-upgraded');
+  static const integrationConfigurationRemoved = CreateWebhookRequestBodyEventsItem._('integration-configuration.removed');
+  static const integrationConfigurationScopeChangeConfirmed = CreateWebhookRequestBodyEventsItem._('integration-configuration.scope-change-confirmed');
+  static const integrationConfigurationTransferred = CreateWebhookRequestBodyEventsItem._('integration-configuration.transferred');
+  static const integrationResourceProjectConnected = CreateWebhookRequestBodyEventsItem._('integration-resource.project-connected');
+  static const integrationResourceProjectDisconnected = CreateWebhookRequestBodyEventsItem._('integration-resource.project-disconnected');
+  static const projectCreated = CreateWebhookRequestBodyEventsItem._('project.created');
+  static const projectRemoved = CreateWebhookRequestBodyEventsItem._('project.removed');
+  static const projectRenamed = CreateWebhookRequestBodyEventsItem._('project.renamed');
+  static const projectEnvVariableCreated = CreateWebhookRequestBodyEventsItem._('project.env-variable.created');
+  static const projectEnvVariableUpdated = CreateWebhookRequestBodyEventsItem._('project.env-variable.updated');
+  static const projectEnvVariableDeleted = CreateWebhookRequestBodyEventsItem._('project.env-variable.deleted');
+  static const projectDomainCreated = CreateWebhookRequestBodyEventsItem._('project.domain.created');
+  static const projectDomainUpdated = CreateWebhookRequestBodyEventsItem._('project.domain.updated');
+  static const projectDomainDeleted = CreateWebhookRequestBodyEventsItem._('project.domain.deleted');
+  static const projectDomainVerified = CreateWebhookRequestBodyEventsItem._('project.domain.verified');
+  static const projectDomainUnverified = CreateWebhookRequestBodyEventsItem._('project.domain.unverified');
+  static const projectDomainMoved = CreateWebhookRequestBodyEventsItem._('project.domain.moved');
+  static const projectRollingReleaseStarted = CreateWebhookRequestBodyEventsItem._('project.rolling-release.started');
+  static const projectRollingReleaseAborted = CreateWebhookRequestBodyEventsItem._('project.rolling-release.aborted');
+  static const projectRollingReleaseCompleted = CreateWebhookRequestBodyEventsItem._('project.rolling-release.completed');
+  static const projectRollingReleaseApproved = CreateWebhookRequestBodyEventsItem._('project.rolling-release.approved');
+  static const deploymentChecksFailed = CreateWebhookRequestBodyEventsItem._('deployment.checks.failed');
+  static const deploymentChecksSucceeded = CreateWebhookRequestBodyEventsItem._('deployment.checks.succeeded');
+  static const deploymentChecksCompleted = CreateWebhookRequestBodyEventsItem._('deployment-checks-completed');
+  static const deploymentReady2 = CreateWebhookRequestBodyEventsItem._('deployment-ready');
+  static const deploymentPrepared = CreateWebhookRequestBodyEventsItem._('deployment-prepared');
+  static const deploymentError2 = CreateWebhookRequestBodyEventsItem._('deployment-error');
+  static const deploymentCheckRerequested2 = CreateWebhookRequestBodyEventsItem._('deployment-check-rerequested');
+  static const deploymentCanceled2 = CreateWebhookRequestBodyEventsItem._('deployment-canceled');
+  static const projectCreated2 = CreateWebhookRequestBodyEventsItem._('project-created');
+  static const projectRemoved2 = CreateWebhookRequestBodyEventsItem._('project-removed');
+  static const domainCreated2 = CreateWebhookRequestBodyEventsItem._('domain-created');
   static const deployment = CreateWebhookRequestBodyEventsItem._('deployment');
-  static const integrationConfigurationPermissionUpdated =
-      CreateWebhookRequestBodyEventsItem._(
-          'integration-configuration-permission-updated');
-  static const integrationConfigurationRemoved2 =
-      CreateWebhookRequestBodyEventsItem._('integration-configuration-removed');
-  static const integrationConfigurationScopeChangeConfirmed2 =
-      CreateWebhookRequestBodyEventsItem._(
-          'integration-configuration-scope-change-confirmed');
-  static const marketplaceMemberChanged =
-      CreateWebhookRequestBodyEventsItem._('marketplace.member.changed');
-  static const marketplaceInvoiceCreated =
-      CreateWebhookRequestBodyEventsItem._('marketplace.invoice.created');
-  static const marketplaceInvoicePaid =
-      CreateWebhookRequestBodyEventsItem._('marketplace.invoice.paid');
-  static const marketplaceInvoiceNotpaid =
-      CreateWebhookRequestBodyEventsItem._('marketplace.invoice.notpaid');
-  static const marketplaceInvoiceOverdue =
-      CreateWebhookRequestBodyEventsItem._('marketplace.invoice.overdue');
-  static const marketplaceInvoiceRefunded =
-      CreateWebhookRequestBodyEventsItem._('marketplace.invoice.refunded');
-  static const aiGatewayBalanceDepleted =
-      CreateWebhookRequestBodyEventsItem._('ai-gateway.balance-depleted');
-  static const aiGatewayAutoReloadLimitReached =
-      CreateWebhookRequestBodyEventsItem._(
-          'ai-gateway.auto-reload.limit-reached');
-  static const observabilityAnomaly =
-      CreateWebhookRequestBodyEventsItem._('observability.anomaly');
-  static const observabilityAnomalyError =
-      CreateWebhookRequestBodyEventsItem._('observability.anomaly-error');
-  static const observabilityUsageAnomaly =
-      CreateWebhookRequestBodyEventsItem._('observability.usage-anomaly');
-  static const observabilityErrorAnomaly =
-      CreateWebhookRequestBodyEventsItem._('observability.error-anomaly');
-  static const botidAnomaly =
-      CreateWebhookRequestBodyEventsItem._('botid.anomaly');
-  static const flagCreated =
-      CreateWebhookRequestBodyEventsItem._('flag.created');
-  static const flagUpdated =
-      CreateWebhookRequestBodyEventsItem._('flag.updated');
-  static const flagDeleted =
-      CreateWebhookRequestBodyEventsItem._('flag.deleted');
-  static const flagSegmentCreated =
-      CreateWebhookRequestBodyEventsItem._('flag.segment.created');
-  static const flagSegmentUpdated =
-      CreateWebhookRequestBodyEventsItem._('flag.segment.updated');
-  static const flagSegmentDeleted =
-      CreateWebhookRequestBodyEventsItem._('flag.segment.deleted');
-  static const testWebhook =
-      CreateWebhookRequestBodyEventsItem._('test-webhook');
-  static const messageCreated =
-      CreateWebhookRequestBodyEventsItem._('message.created');
-  static const messageUpdated =
-      CreateWebhookRequestBodyEventsItem._('message.updated');
-  static const messageDeleted =
-      CreateWebhookRequestBodyEventsItem._('message.deleted');
-  static const threadResolved =
-      CreateWebhookRequestBodyEventsItem._('thread.resolved');
-  static const threadUnresolved =
-      CreateWebhookRequestBodyEventsItem._('thread.unresolved');
-  static const messageReactionAdded =
-      CreateWebhookRequestBodyEventsItem._('message.reaction-added');
-  static const messageReactionRemoved =
-      CreateWebhookRequestBodyEventsItem._('message.reaction-removed');
-  static const messageMentioned =
-      CreateWebhookRequestBodyEventsItem._('message.mentioned');
-  static const commentCreated =
-      CreateWebhookRequestBodyEventsItem._('comment.created');
-  static const commentUpdated =
-      CreateWebhookRequestBodyEventsItem._('comment.updated');
-  static const commentDeleted =
-      CreateWebhookRequestBodyEventsItem._('comment.deleted');
-  static const commentResolved =
-      CreateWebhookRequestBodyEventsItem._('comment.resolved');
-  static const commentUnresolved =
-      CreateWebhookRequestBodyEventsItem._('comment.unresolved');
-  static const commentReactionAdded =
-      CreateWebhookRequestBodyEventsItem._('comment.reaction-added');
-  static const commentReactionRemoved =
-      CreateWebhookRequestBodyEventsItem._('comment.reaction-removed');
-  static const commentMentioned =
-      CreateWebhookRequestBodyEventsItem._('comment.mentioned');
+  static const integrationConfigurationPermissionUpdated = CreateWebhookRequestBodyEventsItem._('integration-configuration-permission-updated');
+  static const integrationConfigurationRemoved2 = CreateWebhookRequestBodyEventsItem._('integration-configuration-removed');
+  static const integrationConfigurationScopeChangeConfirmed2 = CreateWebhookRequestBodyEventsItem._('integration-configuration-scope-change-confirmed');
+  static const marketplaceMemberChanged = CreateWebhookRequestBodyEventsItem._('marketplace.member.changed');
+  static const marketplaceInvoiceCreated = CreateWebhookRequestBodyEventsItem._('marketplace.invoice.created');
+  static const marketplaceInvoicePaid = CreateWebhookRequestBodyEventsItem._('marketplace.invoice.paid');
+  static const marketplaceInvoiceNotpaid = CreateWebhookRequestBodyEventsItem._('marketplace.invoice.notpaid');
+  static const marketplaceInvoiceOverdue = CreateWebhookRequestBodyEventsItem._('marketplace.invoice.overdue');
+  static const marketplaceInvoiceRefunded = CreateWebhookRequestBodyEventsItem._('marketplace.invoice.refunded');
+  static const aiGatewayBalanceDepleted = CreateWebhookRequestBodyEventsItem._('ai-gateway.balance-depleted');
+  static const aiGatewayAutoReloadLimitReached = CreateWebhookRequestBodyEventsItem._('ai-gateway.auto-reload.limit-reached');
+  static const observabilityAnomaly = CreateWebhookRequestBodyEventsItem._('observability.anomaly');
+  static const observabilityAnomalyError = CreateWebhookRequestBodyEventsItem._('observability.anomaly-error');
+  static const observabilityUsageAnomaly = CreateWebhookRequestBodyEventsItem._('observability.usage-anomaly');
+  static const observabilityErrorAnomaly = CreateWebhookRequestBodyEventsItem._('observability.error-anomaly');
+  static const botidAnomaly = CreateWebhookRequestBodyEventsItem._('botid.anomaly');
+  static const flagCreated = CreateWebhookRequestBodyEventsItem._('flag.created');
+  static const flagUpdated = CreateWebhookRequestBodyEventsItem._('flag.updated');
+  static const flagDeleted = CreateWebhookRequestBodyEventsItem._('flag.deleted');
+  static const flagSegmentCreated = CreateWebhookRequestBodyEventsItem._('flag.segment.created');
+  static const flagSegmentUpdated = CreateWebhookRequestBodyEventsItem._('flag.segment.updated');
+  static const flagSegmentDeleted = CreateWebhookRequestBodyEventsItem._('flag.segment.deleted');
+  static const testWebhook = CreateWebhookRequestBodyEventsItem._('test-webhook');
+  static const messageCreated = CreateWebhookRequestBodyEventsItem._('message.created');
+  static const messageUpdated = CreateWebhookRequestBodyEventsItem._('message.updated');
+  static const messageDeleted = CreateWebhookRequestBodyEventsItem._('message.deleted');
+  static const threadResolved = CreateWebhookRequestBodyEventsItem._('thread.resolved');
+  static const threadUnresolved = CreateWebhookRequestBodyEventsItem._('thread.unresolved');
+  static const messageReactionAdded = CreateWebhookRequestBodyEventsItem._('message.reaction-added');
+  static const messageReactionRemoved = CreateWebhookRequestBodyEventsItem._('message.reaction-removed');
+  static const messageMentioned = CreateWebhookRequestBodyEventsItem._('message.mentioned');
+  static const commentCreated = CreateWebhookRequestBodyEventsItem._('comment.created');
+  static const commentUpdated = CreateWebhookRequestBodyEventsItem._('comment.updated');
+  static const commentDeleted = CreateWebhookRequestBodyEventsItem._('comment.deleted');
+  static const commentResolved = CreateWebhookRequestBodyEventsItem._('comment.resolved');
+  static const commentUnresolved = CreateWebhookRequestBodyEventsItem._('comment.unresolved');
+  static const commentReactionAdded = CreateWebhookRequestBodyEventsItem._('comment.reaction-added');
+  static const commentReactionRemoved = CreateWebhookRequestBodyEventsItem._('comment.reaction-removed');
+  static const commentMentioned = CreateWebhookRequestBodyEventsItem._('comment.mentioned');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateWebhookRequestBodyEventsItem && other.value == value;
+  @override bool operator ==(Object other) => other is CreateWebhookRequestBodyEventsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The webhooks events
 final class CreateWebhookResponseEventsItem {
+
   final String value;
 
   const CreateWebhookResponseEventsItem._(this.value);
 
-  factory CreateWebhookResponseEventsItem.fromJson(String value) =>
-      CreateWebhookResponseEventsItem._(value);
+  factory CreateWebhookResponseEventsItem.fromJson(String value) => CreateWebhookResponseEventsItem._(value);
 
-  static const aiGatewayAutoReloadLimitReached =
-      CreateWebhookResponseEventsItem._('ai-gateway.auto-reload.limit-reached');
-  static const aiGatewayBalanceDepleted =
-      CreateWebhookResponseEventsItem._('ai-gateway.balance-depleted');
-  static const alertsTriggered =
-      CreateWebhookResponseEventsItem._('alerts.triggered');
-  static const botidAnomaly =
-      CreateWebhookResponseEventsItem._('botid.anomaly');
-  static const budgetReached =
-      CreateWebhookResponseEventsItem._('budget.reached');
-  static const commentCreated =
-      CreateWebhookResponseEventsItem._('comment.created');
-  static const commentDeleted =
-      CreateWebhookResponseEventsItem._('comment.deleted');
-  static const commentMentioned =
-      CreateWebhookResponseEventsItem._('comment.mentioned');
-  static const commentReactionAdded =
-      CreateWebhookResponseEventsItem._('comment.reaction-added');
-  static const commentReactionRemoved =
-      CreateWebhookResponseEventsItem._('comment.reaction-removed');
-  static const commentResolved =
-      CreateWebhookResponseEventsItem._('comment.resolved');
-  static const commentUnresolved =
-      CreateWebhookResponseEventsItem._('comment.unresolved');
-  static const commentUpdated =
-      CreateWebhookResponseEventsItem._('comment.updated');
+  static const aiGatewayAutoReloadLimitReached = CreateWebhookResponseEventsItem._('ai-gateway.auto-reload.limit-reached');
+  static const aiGatewayBalanceDepleted = CreateWebhookResponseEventsItem._('ai-gateway.balance-depleted');
+  static const alertsTriggered = CreateWebhookResponseEventsItem._('alerts.triggered');
+  static const botidAnomaly = CreateWebhookResponseEventsItem._('botid.anomaly');
+  static const budgetReached = CreateWebhookResponseEventsItem._('budget.reached');
+  static const commentCreated = CreateWebhookResponseEventsItem._('comment.created');
+  static const commentDeleted = CreateWebhookResponseEventsItem._('comment.deleted');
+  static const commentMentioned = CreateWebhookResponseEventsItem._('comment.mentioned');
+  static const commentReactionAdded = CreateWebhookResponseEventsItem._('comment.reaction-added');
+  static const commentReactionRemoved = CreateWebhookResponseEventsItem._('comment.reaction-removed');
+  static const commentResolved = CreateWebhookResponseEventsItem._('comment.resolved');
+  static const commentUnresolved = CreateWebhookResponseEventsItem._('comment.unresolved');
+  static const commentUpdated = CreateWebhookResponseEventsItem._('comment.updated');
   static const deployment = CreateWebhookResponseEventsItem._('deployment');
-  static const deploymentCanceled =
-      CreateWebhookResponseEventsItem._('deployment-canceled');
-  static const deploymentCheckRerequested =
-      CreateWebhookResponseEventsItem._('deployment-check-rerequested');
-  static const deploymentChecksCompleted =
-      CreateWebhookResponseEventsItem._('deployment-checks-completed');
-  static const deploymentError =
-      CreateWebhookResponseEventsItem._('deployment-error');
-  static const deploymentPrepared =
-      CreateWebhookResponseEventsItem._('deployment-prepared');
-  static const deploymentReady =
-      CreateWebhookResponseEventsItem._('deployment-ready');
-  static const deploymentBlocked =
-      CreateWebhookResponseEventsItem._('deployment.blocked');
-  static const deploymentBuildRequested =
-      CreateWebhookResponseEventsItem._('deployment.build-requested');
-  static const deploymentCanceled2 =
-      CreateWebhookResponseEventsItem._('deployment.canceled');
-  static const deploymentCheckRerequested2 =
-      CreateWebhookResponseEventsItem._('deployment.check-rerequested');
-  static const deploymentCheckrunCancel =
-      CreateWebhookResponseEventsItem._('deployment.checkrun.cancel');
-  static const deploymentCheckrunStart =
-      CreateWebhookResponseEventsItem._('deployment.checkrun.start');
-  static const deploymentChecksFailed =
-      CreateWebhookResponseEventsItem._('deployment.checks.failed');
-  static const deploymentChecksSucceeded =
-      CreateWebhookResponseEventsItem._('deployment.checks.succeeded');
-  static const deploymentCleanup =
-      CreateWebhookResponseEventsItem._('deployment.cleanup');
-  static const deploymentCreated =
-      CreateWebhookResponseEventsItem._('deployment.created');
-  static const deploymentError2 =
-      CreateWebhookResponseEventsItem._('deployment.error');
-  static const deploymentIntegrationActionCancel =
-      CreateWebhookResponseEventsItem._('deployment.integration.action.cancel');
-  static const deploymentIntegrationActionCleanup =
-      CreateWebhookResponseEventsItem._(
-          'deployment.integration.action.cleanup');
-  static const deploymentIntegrationActionStart =
-      CreateWebhookResponseEventsItem._('deployment.integration.action.start');
-  static const deploymentPromoted =
-      CreateWebhookResponseEventsItem._('deployment.promoted');
-  static const deploymentReady2 =
-      CreateWebhookResponseEventsItem._('deployment.ready');
-  static const deploymentRollback =
-      CreateWebhookResponseEventsItem._('deployment.rollback');
-  static const deploymentSucceeded =
-      CreateWebhookResponseEventsItem._('deployment.succeeded');
-  static const domainCreated =
-      CreateWebhookResponseEventsItem._('domain-created');
-  static const domainAutoRenewChanged =
-      CreateWebhookResponseEventsItem._('domain.auto-renew.changed');
-  static const domainCertificateAdd =
-      CreateWebhookResponseEventsItem._('domain.certificate.add');
-  static const domainCertificateAddFailed =
-      CreateWebhookResponseEventsItem._('domain.certificate.add.failed');
-  static const domainCertificateDeleted =
-      CreateWebhookResponseEventsItem._('domain.certificate.deleted');
-  static const domainCertificateRenew =
-      CreateWebhookResponseEventsItem._('domain.certificate.renew');
-  static const domainCertificateRenewFailed =
-      CreateWebhookResponseEventsItem._('domain.certificate.renew.failed');
-  static const domainCreated2 =
-      CreateWebhookResponseEventsItem._('domain.created');
-  static const domainDnsRecordsChanged =
-      CreateWebhookResponseEventsItem._('domain.dns.records.changed');
-  static const domainRenewal =
-      CreateWebhookResponseEventsItem._('domain.renewal');
-  static const domainRenewalFailed =
-      CreateWebhookResponseEventsItem._('domain.renewal.failed');
-  static const domainTransferInCompleted =
-      CreateWebhookResponseEventsItem._('domain.transfer-in.completed');
-  static const domainTransferInFailed =
-      CreateWebhookResponseEventsItem._('domain.transfer-in.failed');
-  static const domainTransferInStarted =
-      CreateWebhookResponseEventsItem._('domain.transfer-in.started');
-  static const edgeConfigCreated =
-      CreateWebhookResponseEventsItem._('edge-config.created');
-  static const edgeConfigDeleted =
-      CreateWebhookResponseEventsItem._('edge-config.deleted');
-  static const edgeConfigItemsUpdated =
-      CreateWebhookResponseEventsItem._('edge-config.items.updated');
-  static const firewallAttack =
-      CreateWebhookResponseEventsItem._('firewall.attack');
-  static const firewallCustomRuleAnomaly =
-      CreateWebhookResponseEventsItem._('firewall.custom-rule-anomaly');
-  static const firewallSystemRuleAnomaly =
-      CreateWebhookResponseEventsItem._('firewall.system-rule-anomaly');
+  static const deploymentCanceled = CreateWebhookResponseEventsItem._('deployment-canceled');
+  static const deploymentCheckRerequested = CreateWebhookResponseEventsItem._('deployment-check-rerequested');
+  static const deploymentChecksCompleted = CreateWebhookResponseEventsItem._('deployment-checks-completed');
+  static const deploymentError = CreateWebhookResponseEventsItem._('deployment-error');
+  static const deploymentPrepared = CreateWebhookResponseEventsItem._('deployment-prepared');
+  static const deploymentReady = CreateWebhookResponseEventsItem._('deployment-ready');
+  static const deploymentBlocked = CreateWebhookResponseEventsItem._('deployment.blocked');
+  static const deploymentBuildRequested = CreateWebhookResponseEventsItem._('deployment.build-requested');
+  static const deploymentCanceled2 = CreateWebhookResponseEventsItem._('deployment.canceled');
+  static const deploymentCheckRerequested2 = CreateWebhookResponseEventsItem._('deployment.check-rerequested');
+  static const deploymentCheckrunCancel = CreateWebhookResponseEventsItem._('deployment.checkrun.cancel');
+  static const deploymentCheckrunStart = CreateWebhookResponseEventsItem._('deployment.checkrun.start');
+  static const deploymentChecksFailed = CreateWebhookResponseEventsItem._('deployment.checks.failed');
+  static const deploymentChecksSucceeded = CreateWebhookResponseEventsItem._('deployment.checks.succeeded');
+  static const deploymentCleanup = CreateWebhookResponseEventsItem._('deployment.cleanup');
+  static const deploymentCreated = CreateWebhookResponseEventsItem._('deployment.created');
+  static const deploymentError2 = CreateWebhookResponseEventsItem._('deployment.error');
+  static const deploymentIntegrationActionCancel = CreateWebhookResponseEventsItem._('deployment.integration.action.cancel');
+  static const deploymentIntegrationActionCleanup = CreateWebhookResponseEventsItem._('deployment.integration.action.cleanup');
+  static const deploymentIntegrationActionStart = CreateWebhookResponseEventsItem._('deployment.integration.action.start');
+  static const deploymentPromoted = CreateWebhookResponseEventsItem._('deployment.promoted');
+  static const deploymentReady2 = CreateWebhookResponseEventsItem._('deployment.ready');
+  static const deploymentRollback = CreateWebhookResponseEventsItem._('deployment.rollback');
+  static const deploymentSucceeded = CreateWebhookResponseEventsItem._('deployment.succeeded');
+  static const domainCreated = CreateWebhookResponseEventsItem._('domain-created');
+  static const domainAutoRenewChanged = CreateWebhookResponseEventsItem._('domain.auto-renew.changed');
+  static const domainCertificateAdd = CreateWebhookResponseEventsItem._('domain.certificate.add');
+  static const domainCertificateAddFailed = CreateWebhookResponseEventsItem._('domain.certificate.add.failed');
+  static const domainCertificateDeleted = CreateWebhookResponseEventsItem._('domain.certificate.deleted');
+  static const domainCertificateRenew = CreateWebhookResponseEventsItem._('domain.certificate.renew');
+  static const domainCertificateRenewFailed = CreateWebhookResponseEventsItem._('domain.certificate.renew.failed');
+  static const domainCreated2 = CreateWebhookResponseEventsItem._('domain.created');
+  static const domainDnsRecordsChanged = CreateWebhookResponseEventsItem._('domain.dns.records.changed');
+  static const domainRenewal = CreateWebhookResponseEventsItem._('domain.renewal');
+  static const domainRenewalFailed = CreateWebhookResponseEventsItem._('domain.renewal.failed');
+  static const domainTransferInCompleted = CreateWebhookResponseEventsItem._('domain.transfer-in.completed');
+  static const domainTransferInFailed = CreateWebhookResponseEventsItem._('domain.transfer-in.failed');
+  static const domainTransferInStarted = CreateWebhookResponseEventsItem._('domain.transfer-in.started');
+  static const edgeConfigCreated = CreateWebhookResponseEventsItem._('edge-config.created');
+  static const edgeConfigDeleted = CreateWebhookResponseEventsItem._('edge-config.deleted');
+  static const edgeConfigItemsUpdated = CreateWebhookResponseEventsItem._('edge-config.items.updated');
+  static const firewallAttack = CreateWebhookResponseEventsItem._('firewall.attack');
+  static const firewallCustomRuleAnomaly = CreateWebhookResponseEventsItem._('firewall.custom-rule-anomaly');
+  static const firewallSystemRuleAnomaly = CreateWebhookResponseEventsItem._('firewall.system-rule-anomaly');
   static const flagCreated = CreateWebhookResponseEventsItem._('flag.created');
   static const flagDeleted = CreateWebhookResponseEventsItem._('flag.deleted');
-  static const flagSegmentCreated =
-      CreateWebhookResponseEventsItem._('flag.segment.created');
-  static const flagSegmentDeleted =
-      CreateWebhookResponseEventsItem._('flag.segment.deleted');
-  static const flagSegmentUpdated =
-      CreateWebhookResponseEventsItem._('flag.segment.updated');
+  static const flagSegmentCreated = CreateWebhookResponseEventsItem._('flag.segment.created');
+  static const flagSegmentDeleted = CreateWebhookResponseEventsItem._('flag.segment.deleted');
+  static const flagSegmentUpdated = CreateWebhookResponseEventsItem._('flag.segment.updated');
   static const flagUpdated = CreateWebhookResponseEventsItem._('flag.updated');
-  static const functionArchivalRequired =
-      CreateWebhookResponseEventsItem._('function.archival-required');
-  static const functionRemovalRequired =
-      CreateWebhookResponseEventsItem._('function.removal-required');
-  static const integrationConfigurationPermissionUpdated =
-      CreateWebhookResponseEventsItem._(
-          'integration-configuration-permission-updated');
-  static const integrationConfigurationRemoved =
-      CreateWebhookResponseEventsItem._('integration-configuration-removed');
-  static const integrationConfigurationScopeChangeConfirmed =
-      CreateWebhookResponseEventsItem._(
-          'integration-configuration-scope-change-confirmed');
-  static const integrationConfigurationPermissionUpgraded =
-      CreateWebhookResponseEventsItem._(
-          'integration-configuration.permission-upgraded');
-  static const integrationConfigurationRemoved2 =
-      CreateWebhookResponseEventsItem._('integration-configuration.removed');
-  static const integrationConfigurationScopeChangeConfirmed2 =
-      CreateWebhookResponseEventsItem._(
-          'integration-configuration.scope-change-confirmed');
-  static const integrationConfigurationTransferred =
-      CreateWebhookResponseEventsItem._(
-          'integration-configuration.transferred');
-  static const integrationResourceProjectConnected =
-      CreateWebhookResponseEventsItem._(
-          'integration-resource.project-connected');
-  static const integrationResourceProjectDisconnected =
-      CreateWebhookResponseEventsItem._(
-          'integration-resource.project-disconnected');
-  static const marketplaceInvoiceCreated =
-      CreateWebhookResponseEventsItem._('marketplace.invoice.created');
-  static const marketplaceInvoiceNotpaid =
-      CreateWebhookResponseEventsItem._('marketplace.invoice.notpaid');
-  static const marketplaceInvoiceOverdue =
-      CreateWebhookResponseEventsItem._('marketplace.invoice.overdue');
-  static const marketplaceInvoicePaid =
-      CreateWebhookResponseEventsItem._('marketplace.invoice.paid');
-  static const marketplaceInvoiceRefunded =
-      CreateWebhookResponseEventsItem._('marketplace.invoice.refunded');
-  static const marketplaceMemberChanged =
-      CreateWebhookResponseEventsItem._('marketplace.member.changed');
-  static const messageCreated =
-      CreateWebhookResponseEventsItem._('message.created');
-  static const messageDeleted =
-      CreateWebhookResponseEventsItem._('message.deleted');
-  static const messageMentioned =
-      CreateWebhookResponseEventsItem._('message.mentioned');
-  static const messageReactionAdded =
-      CreateWebhookResponseEventsItem._('message.reaction-added');
-  static const messageReactionRemoved =
-      CreateWebhookResponseEventsItem._('message.reaction-removed');
-  static const messageUpdated =
-      CreateWebhookResponseEventsItem._('message.updated');
-  static const observabilityAnomaly =
-      CreateWebhookResponseEventsItem._('observability.anomaly');
-  static const observabilityAnomalyError =
-      CreateWebhookResponseEventsItem._('observability.anomaly-error');
-  static const observabilityErrorAnomaly =
-      CreateWebhookResponseEventsItem._('observability.error-anomaly');
-  static const observabilityUsageAnomaly =
-      CreateWebhookResponseEventsItem._('observability.usage-anomaly');
-  static const projectCreated =
-      CreateWebhookResponseEventsItem._('project-created');
-  static const projectRemoved =
-      CreateWebhookResponseEventsItem._('project-removed');
-  static const projectCreated2 =
-      CreateWebhookResponseEventsItem._('project.created');
-  static const projectDomainCreated =
-      CreateWebhookResponseEventsItem._('project.domain.created');
-  static const projectDomainDeleted =
-      CreateWebhookResponseEventsItem._('project.domain.deleted');
-  static const projectDomainMoved =
-      CreateWebhookResponseEventsItem._('project.domain.moved');
-  static const projectDomainUnverified =
-      CreateWebhookResponseEventsItem._('project.domain.unverified');
-  static const projectDomainUpdated =
-      CreateWebhookResponseEventsItem._('project.domain.updated');
-  static const projectDomainVerified =
-      CreateWebhookResponseEventsItem._('project.domain.verified');
-  static const projectEnvVariableCreated =
-      CreateWebhookResponseEventsItem._('project.env-variable.created');
-  static const projectEnvVariableDeleted =
-      CreateWebhookResponseEventsItem._('project.env-variable.deleted');
-  static const projectEnvVariableUpdated =
-      CreateWebhookResponseEventsItem._('project.env-variable.updated');
-  static const projectRemoved2 =
-      CreateWebhookResponseEventsItem._('project.removed');
-  static const projectRenamed =
-      CreateWebhookResponseEventsItem._('project.renamed');
-  static const projectRollingReleaseAborted =
-      CreateWebhookResponseEventsItem._('project.rolling-release.aborted');
-  static const projectRollingReleaseApproved =
-      CreateWebhookResponseEventsItem._('project.rolling-release.approved');
-  static const projectRollingReleaseCompleted =
-      CreateWebhookResponseEventsItem._('project.rolling-release.completed');
-  static const projectRollingReleaseStarted =
-      CreateWebhookResponseEventsItem._('project.rolling-release.started');
+  static const functionArchivalRequired = CreateWebhookResponseEventsItem._('function.archival-required');
+  static const functionRemovalRequired = CreateWebhookResponseEventsItem._('function.removal-required');
+  static const integrationConfigurationPermissionUpdated = CreateWebhookResponseEventsItem._('integration-configuration-permission-updated');
+  static const integrationConfigurationRemoved = CreateWebhookResponseEventsItem._('integration-configuration-removed');
+  static const integrationConfigurationScopeChangeConfirmed = CreateWebhookResponseEventsItem._('integration-configuration-scope-change-confirmed');
+  static const integrationConfigurationPermissionUpgraded = CreateWebhookResponseEventsItem._('integration-configuration.permission-upgraded');
+  static const integrationConfigurationRemoved2 = CreateWebhookResponseEventsItem._('integration-configuration.removed');
+  static const integrationConfigurationScopeChangeConfirmed2 = CreateWebhookResponseEventsItem._('integration-configuration.scope-change-confirmed');
+  static const integrationConfigurationTransferred = CreateWebhookResponseEventsItem._('integration-configuration.transferred');
+  static const integrationResourceProjectConnected = CreateWebhookResponseEventsItem._('integration-resource.project-connected');
+  static const integrationResourceProjectDisconnected = CreateWebhookResponseEventsItem._('integration-resource.project-disconnected');
+  static const marketplaceInvoiceCreated = CreateWebhookResponseEventsItem._('marketplace.invoice.created');
+  static const marketplaceInvoiceNotpaid = CreateWebhookResponseEventsItem._('marketplace.invoice.notpaid');
+  static const marketplaceInvoiceOverdue = CreateWebhookResponseEventsItem._('marketplace.invoice.overdue');
+  static const marketplaceInvoicePaid = CreateWebhookResponseEventsItem._('marketplace.invoice.paid');
+  static const marketplaceInvoiceRefunded = CreateWebhookResponseEventsItem._('marketplace.invoice.refunded');
+  static const marketplaceMemberChanged = CreateWebhookResponseEventsItem._('marketplace.member.changed');
+  static const messageCreated = CreateWebhookResponseEventsItem._('message.created');
+  static const messageDeleted = CreateWebhookResponseEventsItem._('message.deleted');
+  static const messageMentioned = CreateWebhookResponseEventsItem._('message.mentioned');
+  static const messageReactionAdded = CreateWebhookResponseEventsItem._('message.reaction-added');
+  static const messageReactionRemoved = CreateWebhookResponseEventsItem._('message.reaction-removed');
+  static const messageUpdated = CreateWebhookResponseEventsItem._('message.updated');
+  static const observabilityAnomaly = CreateWebhookResponseEventsItem._('observability.anomaly');
+  static const observabilityAnomalyError = CreateWebhookResponseEventsItem._('observability.anomaly-error');
+  static const observabilityErrorAnomaly = CreateWebhookResponseEventsItem._('observability.error-anomaly');
+  static const observabilityUsageAnomaly = CreateWebhookResponseEventsItem._('observability.usage-anomaly');
+  static const projectCreated = CreateWebhookResponseEventsItem._('project-created');
+  static const projectRemoved = CreateWebhookResponseEventsItem._('project-removed');
+  static const projectCreated2 = CreateWebhookResponseEventsItem._('project.created');
+  static const projectDomainCreated = CreateWebhookResponseEventsItem._('project.domain.created');
+  static const projectDomainDeleted = CreateWebhookResponseEventsItem._('project.domain.deleted');
+  static const projectDomainMoved = CreateWebhookResponseEventsItem._('project.domain.moved');
+  static const projectDomainUnverified = CreateWebhookResponseEventsItem._('project.domain.unverified');
+  static const projectDomainUpdated = CreateWebhookResponseEventsItem._('project.domain.updated');
+  static const projectDomainVerified = CreateWebhookResponseEventsItem._('project.domain.verified');
+  static const projectEnvVariableCreated = CreateWebhookResponseEventsItem._('project.env-variable.created');
+  static const projectEnvVariableDeleted = CreateWebhookResponseEventsItem._('project.env-variable.deleted');
+  static const projectEnvVariableUpdated = CreateWebhookResponseEventsItem._('project.env-variable.updated');
+  static const projectRemoved2 = CreateWebhookResponseEventsItem._('project.removed');
+  static const projectRenamed = CreateWebhookResponseEventsItem._('project.renamed');
+  static const projectRollingReleaseAborted = CreateWebhookResponseEventsItem._('project.rolling-release.aborted');
+  static const projectRollingReleaseApproved = CreateWebhookResponseEventsItem._('project.rolling-release.approved');
+  static const projectRollingReleaseCompleted = CreateWebhookResponseEventsItem._('project.rolling-release.completed');
+  static const projectRollingReleaseStarted = CreateWebhookResponseEventsItem._('project.rolling-release.started');
   static const testWebhook = CreateWebhookResponseEventsItem._('test-webhook');
-  static const threadResolved =
-      CreateWebhookResponseEventsItem._('thread.resolved');
-  static const threadUnresolved =
-      CreateWebhookResponseEventsItem._('thread.unresolved');
+  static const threadResolved = CreateWebhookResponseEventsItem._('thread.resolved');
+  static const threadUnresolved = CreateWebhookResponseEventsItem._('thread.unresolved');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateWebhookResponseEventsItem && other.value == value;
+  @override bool operator ==(Object other) => other is CreateWebhookResponseEventsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

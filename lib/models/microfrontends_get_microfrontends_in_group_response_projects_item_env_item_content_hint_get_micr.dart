@@ -4,62 +4,38 @@
 part of 'microfrontends.dart';
 
 // microfrontends domain models
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11
-    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12
-    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13
-    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14
-    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15
-    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16
-    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(this.value);
+  @override Object? toJson() => value.toJson();
 }

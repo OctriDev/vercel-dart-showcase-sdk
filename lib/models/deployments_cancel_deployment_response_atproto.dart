@@ -11,30 +11,19 @@ class CancelDeploymentResponseAtprotoVariant0 {
 
   const CancelDeploymentResponseAtprotoVariant0({required this.enabled});
 
-  CancelDeploymentResponseAtprotoVariant0 Function(
-          {CancelDeploymentResponseAtprotoVariant0Enabled enabled})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseAtprotoVariant0 Function({CancelDeploymentResponseAtprotoVariant0Enabled enabled}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseAtprotoVariant0 _copyWith(
-          {Object? enabled = sdkOmittedValue}) =>
-      CancelDeploymentResponseAtprotoVariant0(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as CancelDeploymentResponseAtprotoVariant0Enabled,
-      );
+  CancelDeploymentResponseAtprotoVariant0 _copyWith({Object? enabled = sdkOmittedValue}) => CancelDeploymentResponseAtprotoVariant0(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as CancelDeploymentResponseAtprotoVariant0Enabled,
+  );
 
-  factory CancelDeploymentResponseAtprotoVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseAtprotoVariant0(
-        enabled: (json['enabled'] != null
-            ? CancelDeploymentResponseAtprotoVariant0Enabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-      );
+  factory CancelDeploymentResponseAtprotoVariant0.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseAtprotoVariant0(
+    enabled: (json['enabled'] != null ? CancelDeploymentResponseAtprotoVariant0Enabled.fromJson(json['enabled'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-      };
+    'enabled': enabled.toJson(),
+  };
 }
 
 class CancelDeploymentResponseAtprotoVariant1Subscription {
@@ -42,85 +31,39 @@ class CancelDeploymentResponseAtprotoVariant1Subscription {
   static const String constructionSurface = 'named';
   final List<String> collections;
   final SdkOptional<List<String>> dids;
-  final SdkOptional<
-      List<CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>> kinds;
+  final SdkOptional<List<CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>> kinds;
   final String path;
 
-  const CancelDeploymentResponseAtprotoVariant1Subscription(
-      {required this.collections,
-      this.dids = const SdkOmitted(),
-      this.kinds = const SdkOmitted(),
-      required this.path});
+  const CancelDeploymentResponseAtprotoVariant1Subscription({required this.collections, this.dids = const SdkOmitted(), this.kinds = const SdkOmitted(), required this.path});
 
-  CancelDeploymentResponseAtprotoVariant1Subscription Function(
-      {List<String> collections,
-      SdkOptional<List<String>> dids,
-      SdkOptional<
-              List<
-                  CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>>
-          kinds,
-      String path}) get copyWith => _copyWith;
+  CancelDeploymentResponseAtprotoVariant1Subscription Function({List<String> collections, SdkOptional<List<String>> dids, SdkOptional<List<CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>> kinds, String path}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseAtprotoVariant1Subscription _copyWith(
-          {Object? collections = sdkOmittedValue,
-          Object? dids = sdkOmittedValue,
-          Object? kinds = sdkOmittedValue,
-          Object? path = sdkOmittedValue}) =>
-      CancelDeploymentResponseAtprotoVariant1Subscription(
-        collections: identical(collections, sdkOmittedValue)
-            ? this.collections
-            : collections as List<String>,
-        dids: identical(dids, sdkOmittedValue)
-            ? this.dids
-            : dids as SdkOptional<List<String>>,
-        kinds: identical(kinds, sdkOmittedValue)
-            ? this.kinds
-            : kinds as SdkOptional<
-                List<
-                    CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>>,
-        path: identical(path, sdkOmittedValue) ? this.path : path as String,
-      );
+  CancelDeploymentResponseAtprotoVariant1Subscription _copyWith({Object? collections = sdkOmittedValue, Object? dids = sdkOmittedValue, Object? kinds = sdkOmittedValue, Object? path = sdkOmittedValue}) => CancelDeploymentResponseAtprotoVariant1Subscription(
+    collections: identical(collections, sdkOmittedValue) ? this.collections : collections as List<String>,
+    dids: identical(dids, sdkOmittedValue) ? this.dids : dids as SdkOptional<List<String>>,
+    kinds: identical(kinds, sdkOmittedValue) ? this.kinds : kinds as SdkOptional<List<CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>>,
+    path: identical(path, sdkOmittedValue) ? this.path : path as String,
+  );
 
-  factory CancelDeploymentResponseAtprotoVariant1Subscription.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseAtprotoVariant1Subscription(
-        collections:
-            ((json['collections'] as List?)?.map((e) => e as String).toList())!,
-        dids: json['dids'] != null
-            ? SdkPresent(
-                ((json['dids'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        kinds: json['kinds'] != null
-            ? SdkPresent(((json['kinds'] as List?)
-                ?.map((e) =>
-                    CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem
-                        .fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        path: (json['path'] as String?)!,
-      );
+  factory CancelDeploymentResponseAtprotoVariant1Subscription.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseAtprotoVariant1Subscription(
+    collections: ((json['collections'] as List?)?.map((e) => e as String).toList())!,
+    dids: json['dids'] != null ? SdkPresent(((json['dids'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    kinds: json['kinds'] != null ? SdkPresent(((json['kinds'] as List?)?.map((e) => CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    path: (json['path'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'collections': collections,
-        ...switch (dids) {
-          SdkPresent<List<String>>(value: final value) => {
-              'dids': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (kinds) {
-          SdkPresent<
-                List<
-                    CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>>(
-            value: final value
-          ) =>
-            {
-              'kinds': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'path': path,
-      };
+    'collections': collections,
+    ...switch (dids) {
+      SdkPresent<List<String>>(value: final value) => {'dids': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (kinds) {
+      SdkPresent<List<CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem>>(value: final value) => {'kinds': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'path': path,
+  };
 }
 
 class CancelDeploymentResponseAtprotoVariant1 {
@@ -129,44 +72,24 @@ class CancelDeploymentResponseAtprotoVariant1 {
   final CancelDeploymentResponseAtprotoVariant1Enabled enabled;
   final CancelDeploymentResponseAtprotoVariant1Subscription subscription;
 
-  const CancelDeploymentResponseAtprotoVariant1(
-      {required this.enabled, required this.subscription});
+  const CancelDeploymentResponseAtprotoVariant1({required this.enabled, required this.subscription});
 
-  CancelDeploymentResponseAtprotoVariant1 Function(
-          {CancelDeploymentResponseAtprotoVariant1Enabled enabled,
-          CancelDeploymentResponseAtprotoVariant1Subscription subscription})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseAtprotoVariant1 Function({CancelDeploymentResponseAtprotoVariant1Enabled enabled, CancelDeploymentResponseAtprotoVariant1Subscription subscription}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseAtprotoVariant1 _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? subscription = sdkOmittedValue}) =>
-      CancelDeploymentResponseAtprotoVariant1(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as CancelDeploymentResponseAtprotoVariant1Enabled,
-        subscription: identical(subscription, sdkOmittedValue)
-            ? this.subscription
-            : subscription
-                as CancelDeploymentResponseAtprotoVariant1Subscription,
-      );
+  CancelDeploymentResponseAtprotoVariant1 _copyWith({Object? enabled = sdkOmittedValue, Object? subscription = sdkOmittedValue}) => CancelDeploymentResponseAtprotoVariant1(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as CancelDeploymentResponseAtprotoVariant1Enabled,
+    subscription: identical(subscription, sdkOmittedValue) ? this.subscription : subscription as CancelDeploymentResponseAtprotoVariant1Subscription,
+  );
 
-  factory CancelDeploymentResponseAtprotoVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseAtprotoVariant1(
-        enabled: (json['enabled'] != null
-            ? CancelDeploymentResponseAtprotoVariant1Enabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        subscription: (json['subscription'] != null
-            ? CancelDeploymentResponseAtprotoVariant1Subscription.fromJson(
-                json['subscription'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CancelDeploymentResponseAtprotoVariant1.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseAtprotoVariant1(
+    enabled: (json['enabled'] != null ? CancelDeploymentResponseAtprotoVariant1Enabled.fromJson(json['enabled'] as bool) : null)!,
+    subscription: (json['subscription'] != null ? CancelDeploymentResponseAtprotoVariant1Subscription.fromJson(json['subscription'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-        'subscription': subscription.toJson(),
-      };
+    'enabled': enabled.toJson(),
+    'subscription': subscription.toJson(),
+  };
 }
 
 sealed class CancelDeploymentResponseAtproto {
@@ -175,51 +98,24 @@ sealed class CancelDeploymentResponseAtproto {
   const CancelDeploymentResponseAtproto();
   factory CancelDeploymentResponseAtproto.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CancelDeploymentResponseAtprotoVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CancelDeploymentResponseAtprotoVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CancelDeploymentResponseAtprotoVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0(value); } } catch (_) {}
+      try { final value = CancelDeploymentResponseAtprotoVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1(value); } } catch (_) {}
     }
-    try {
-      return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0(
-          CancelDeploymentResponseAtprotoVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1(
-          CancelDeploymentResponseAtprotoVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CancelDeploymentResponseAtproto");
+    try { return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0(CancelDeploymentResponseAtprotoVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1(CancelDeploymentResponseAtprotoVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CancelDeploymentResponseAtproto");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0
-    extends CancelDeploymentResponseAtproto {
+final class CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0 extends CancelDeploymentResponseAtproto {
   final CancelDeploymentResponseAtprotoVariant0 value;
-  const CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1
-    extends CancelDeploymentResponseAtproto {
+final class CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1 extends CancelDeploymentResponseAtproto {
   final CancelDeploymentResponseAtprotoVariant1 value;
-  const CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CancelDeploymentResponseAtprotoCancelDeploymentResponseAtprotoVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

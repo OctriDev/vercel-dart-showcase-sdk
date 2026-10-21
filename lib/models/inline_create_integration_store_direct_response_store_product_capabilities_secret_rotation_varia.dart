@@ -5,63 +5,43 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1
-          ._(false);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1
-          ._(false);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateKmsIssuerPolicyResponseVariant0Kind {
@@ -69,18 +49,14 @@ enum CreateKmsIssuerPolicyResponseVariant0Kind {
 
   static CreateKmsIssuerPolicyResponseVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'project-grant':
-        return CreateKmsIssuerPolicyResponseVariant0Kind.projectGrant;
-      default:
-        throw ArgumentError(
-            'Unknown CreateKmsIssuerPolicyResponseVariant0Kind: $value');
+      case 'project-grant': return CreateKmsIssuerPolicyResponseVariant0Kind.projectGrant;
+      default: throw ArgumentError('Unknown CreateKmsIssuerPolicyResponseVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateKmsIssuerPolicyResponseVariant0Kind.projectGrant:
-        return 'project-grant';
+      case CreateKmsIssuerPolicyResponseVariant0Kind.projectGrant: return 'project-grant';
     }
   }
 
@@ -93,18 +69,14 @@ enum CreateKmsIssuerPolicyResponseVariant1Kind {
 
   static CreateKmsIssuerPolicyResponseVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'connex-grant':
-        return CreateKmsIssuerPolicyResponseVariant1Kind.connexGrant;
-      default:
-        throw ArgumentError(
-            'Unknown CreateKmsIssuerPolicyResponseVariant1Kind: $value');
+      case 'connex-grant': return CreateKmsIssuerPolicyResponseVariant1Kind.connexGrant;
+      default: throw ArgumentError('Unknown CreateKmsIssuerPolicyResponseVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateKmsIssuerPolicyResponseVariant1Kind.connexGrant:
-        return 'connex-grant';
+      case CreateKmsIssuerPolicyResponseVariant1Kind.connexGrant: return 'connex-grant';
     }
   }
 
@@ -117,18 +89,14 @@ enum CreateKmsIssuerRequestPolicyVariant0Kind {
 
   static CreateKmsIssuerRequestPolicyVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'project-grant':
-        return CreateKmsIssuerRequestPolicyVariant0Kind.projectGrant;
-      default:
-        throw ArgumentError(
-            'Unknown CreateKmsIssuerRequestPolicyVariant0Kind: $value');
+      case 'project-grant': return CreateKmsIssuerRequestPolicyVariant0Kind.projectGrant;
+      default: throw ArgumentError('Unknown CreateKmsIssuerRequestPolicyVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateKmsIssuerRequestPolicyVariant0Kind.projectGrant:
-        return 'project-grant';
+      case CreateKmsIssuerRequestPolicyVariant0Kind.projectGrant: return 'project-grant';
     }
   }
 
@@ -141,18 +109,14 @@ enum CreateKmsIssuerRequestPolicyVariant1Kind {
 
   static CreateKmsIssuerRequestPolicyVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'connex-grant':
-        return CreateKmsIssuerRequestPolicyVariant1Kind.connexGrant;
-      default:
-        throw ArgumentError(
-            'Unknown CreateKmsIssuerRequestPolicyVariant1Kind: $value');
+      case 'connex-grant': return CreateKmsIssuerRequestPolicyVariant1Kind.connexGrant;
+      default: throw ArgumentError('Unknown CreateKmsIssuerRequestPolicyVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateKmsIssuerRequestPolicyVariant1Kind.connexGrant:
-        return 'connex-grant';
+      case CreateKmsIssuerRequestPolicyVariant1Kind.connexGrant: return 'connex-grant';
     }
   }
 
@@ -163,21 +127,16 @@ enum CreateKmsIssuerRequestPolicyVariant1Kind {
 enum CreateKmsIssuerResponsePoliciesItemVariant0Kind {
   projectGrant;
 
-  static CreateKmsIssuerResponsePoliciesItemVariant0Kind fromJson(
-      String value) {
+  static CreateKmsIssuerResponsePoliciesItemVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'project-grant':
-        return CreateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant;
-      default:
-        throw ArgumentError(
-            'Unknown CreateKmsIssuerResponsePoliciesItemVariant0Kind: $value');
+      case 'project-grant': return CreateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant;
+      default: throw ArgumentError('Unknown CreateKmsIssuerResponsePoliciesItemVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant:
-        return 'project-grant';
+      case CreateKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant: return 'project-grant';
     }
   }
 
@@ -188,21 +147,16 @@ enum CreateKmsIssuerResponsePoliciesItemVariant0Kind {
 enum CreateKmsIssuerResponsePoliciesItemVariant1Kind {
   connexGrant;
 
-  static CreateKmsIssuerResponsePoliciesItemVariant1Kind fromJson(
-      String value) {
+  static CreateKmsIssuerResponsePoliciesItemVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'connex-grant':
-        return CreateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant;
-      default:
-        throw ArgumentError(
-            'Unknown CreateKmsIssuerResponsePoliciesItemVariant1Kind: $value');
+      case 'connex-grant': return CreateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant;
+      default: throw ArgumentError('Unknown CreateKmsIssuerResponsePoliciesItemVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant:
-        return 'connex-grant';
+      case CreateKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant: return 'connex-grant';
     }
   }
 
@@ -212,29 +166,23 @@ enum CreateKmsIssuerResponsePoliciesItemVariant1Kind {
 
 /// Informational marker for a system-owned default drain.
 final class CreateLogDrainResponseSourceVariant0DefaultFor {
+
   final String value;
 
   const CreateLogDrainResponseSourceVariant0DefaultFor._(this.value);
 
-  factory CreateLogDrainResponseSourceVariant0DefaultFor.fromJson(
-          String value) =>
-      CreateLogDrainResponseSourceVariant0DefaultFor._(value);
+  factory CreateLogDrainResponseSourceVariant0DefaultFor.fromJson(String value) => CreateLogDrainResponseSourceVariant0DefaultFor._(value);
 
-  static const eveTracing =
-      CreateLogDrainResponseSourceVariant0DefaultFor._('eve-tracing');
+  static const eveTracing = CreateLogDrainResponseSourceVariant0DefaultFor._('eve-tracing');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateLogDrainResponseSourceVariant0DefaultFor &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateLogDrainResponseSourceVariant0DefaultFor && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateLogDrainResponseSourceVariant0Kind {
@@ -242,18 +190,14 @@ enum CreateLogDrainResponseSourceVariant0Kind {
 
   static CreateLogDrainResponseSourceVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'self-served':
-        return CreateLogDrainResponseSourceVariant0Kind.selfServed;
-      default:
-        throw ArgumentError(
-            'Unknown CreateLogDrainResponseSourceVariant0Kind: $value');
+      case 'self-served': return CreateLogDrainResponseSourceVariant0Kind.selfServed;
+      default: throw ArgumentError('Unknown CreateLogDrainResponseSourceVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateLogDrainResponseSourceVariant0Kind.selfServed:
-        return 'self-served';
+      case CreateLogDrainResponseSourceVariant0Kind.selfServed: return 'self-served';
     }
   }
 
@@ -266,18 +210,14 @@ enum CreateLogDrainResponseSourceVariant1Kind {
 
   static CreateLogDrainResponseSourceVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return CreateLogDrainResponseSourceVariant1Kind.integration;
-      default:
-        throw ArgumentError(
-            'Unknown CreateLogDrainResponseSourceVariant1Kind: $value');
+      case 'integration': return CreateLogDrainResponseSourceVariant1Kind.integration;
+      default: throw ArgumentError('Unknown CreateLogDrainResponseSourceVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateLogDrainResponseSourceVariant1Kind.integration:
-        return 'integration';
+      case CreateLogDrainResponseSourceVariant1Kind.integration: return 'integration';
     }
   }
 
@@ -286,29 +226,23 @@ enum CreateLogDrainResponseSourceVariant1Kind {
 }
 
 final class CreateProjectCheckRequestSourceVariant2Provider {
+
   final String value;
 
   const CreateProjectCheckRequestSourceVariant2Provider._(this.value);
 
-  factory CreateProjectCheckRequestSourceVariant2Provider.fromJson(
-          String value) =>
-      CreateProjectCheckRequestSourceVariant2Provider._(value);
+  factory CreateProjectCheckRequestSourceVariant2Provider.fromJson(String value) => CreateProjectCheckRequestSourceVariant2Provider._(value);
 
-  static const github =
-      CreateProjectCheckRequestSourceVariant2Provider._('github');
+  static const github = CreateProjectCheckRequestSourceVariant2Provider._('github');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectCheckRequestSourceVariant2Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectCheckRequestSourceVariant2Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateProjectCheckResponseSourceVariant0Kind {
@@ -316,18 +250,14 @@ enum CreateProjectCheckResponseSourceVariant0Kind {
 
   static CreateProjectCheckResponseSourceVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return CreateProjectCheckResponseSourceVariant0Kind.integration;
-      default:
-        throw ArgumentError(
-            'Unknown CreateProjectCheckResponseSourceVariant0Kind: $value');
+      case 'integration': return CreateProjectCheckResponseSourceVariant0Kind.integration;
+      default: throw ArgumentError('Unknown CreateProjectCheckResponseSourceVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectCheckResponseSourceVariant0Kind.integration:
-        return 'integration';
+      case CreateProjectCheckResponseSourceVariant0Kind.integration: return 'integration';
     }
   }
 
@@ -340,18 +270,14 @@ enum CreateProjectCheckResponseSourceVariant1Kind {
 
   static CreateProjectCheckResponseSourceVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'webhook':
-        return CreateProjectCheckResponseSourceVariant1Kind.webhook;
-      default:
-        throw ArgumentError(
-            'Unknown CreateProjectCheckResponseSourceVariant1Kind: $value');
+      case 'webhook': return CreateProjectCheckResponseSourceVariant1Kind.webhook;
+      default: throw ArgumentError('Unknown CreateProjectCheckResponseSourceVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectCheckResponseSourceVariant1Kind.webhook:
-        return 'webhook';
+      case CreateProjectCheckResponseSourceVariant1Kind.webhook: return 'webhook';
     }
   }
 

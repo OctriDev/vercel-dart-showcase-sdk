@@ -10,96 +10,46 @@ class ListProjectsResponseVariant0ItemWebAnalytics {
   final SdkOptional<double> canceledAt;
   final SdkOptional<double> disabledAt;
   final SdkOptional<double> enabledAt;
-  final SdkOptional<ListProjectsResponseVariant0ItemWebAnalyticsHasData>
-      hasData;
+  final SdkOptional<ListProjectsResponseVariant0ItemWebAnalyticsHasData> hasData;
   final String id;
 
-  const ListProjectsResponseVariant0ItemWebAnalytics(
-      {this.canceledAt = const SdkOmitted(),
-      this.disabledAt = const SdkOmitted(),
-      this.enabledAt = const SdkOmitted(),
-      this.hasData = const SdkOmitted(),
-      required this.id});
+  const ListProjectsResponseVariant0ItemWebAnalytics({this.canceledAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id});
 
-  ListProjectsResponseVariant0ItemWebAnalytics Function(
-      {SdkOptional<double> canceledAt,
-      SdkOptional<double> disabledAt,
-      SdkOptional<double> enabledAt,
-      SdkOptional<ListProjectsResponseVariant0ItemWebAnalyticsHasData> hasData,
-      String id}) get copyWith => _copyWith;
+  ListProjectsResponseVariant0ItemWebAnalytics Function({SdkOptional<double> canceledAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<ListProjectsResponseVariant0ItemWebAnalyticsHasData> hasData, String id}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant0ItemWebAnalytics _copyWith(
-          {Object? canceledAt = sdkOmittedValue,
-          Object? disabledAt = sdkOmittedValue,
-          Object? enabledAt = sdkOmittedValue,
-          Object? hasData = sdkOmittedValue,
-          Object? id = sdkOmittedValue}) =>
-      ListProjectsResponseVariant0ItemWebAnalytics(
-        canceledAt: identical(canceledAt, sdkOmittedValue)
-            ? this.canceledAt
-            : canceledAt as SdkOptional<double>,
-        disabledAt: identical(disabledAt, sdkOmittedValue)
-            ? this.disabledAt
-            : disabledAt as SdkOptional<double>,
-        enabledAt: identical(enabledAt, sdkOmittedValue)
-            ? this.enabledAt
-            : enabledAt as SdkOptional<double>,
-        hasData: identical(hasData, sdkOmittedValue)
-            ? this.hasData
-            : hasData as SdkOptional<
-                ListProjectsResponseVariant0ItemWebAnalyticsHasData>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  ListProjectsResponseVariant0ItemWebAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue}) => ListProjectsResponseVariant0ItemWebAnalytics(
+    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
+    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
+    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
+    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<ListProjectsResponseVariant0ItemWebAnalyticsHasData>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory ListProjectsResponseVariant0ItemWebAnalytics.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant0ItemWebAnalytics(
-        canceledAt: json['canceledAt'] != null
-            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        disabledAt: json['disabledAt'] != null
-            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        enabledAt: json['enabledAt'] != null
-            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        hasData: json['hasData'] != null
-            ? SdkPresent((json['hasData'] != null
-                ? ListProjectsResponseVariant0ItemWebAnalyticsHasData.fromJson(
-                    json['hasData'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-      );
+  factory ListProjectsResponseVariant0ItemWebAnalytics.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant0ItemWebAnalytics(
+    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? ListProjectsResponseVariant0ItemWebAnalyticsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (canceledAt) {
-          SdkPresent<double>(value: final value) => {
-              'canceledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'disabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'enabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hasData) {
-          SdkPresent<ListProjectsResponseVariant0ItemWebAnalyticsHasData>(
-            value: final value
-          ) =>
-            {
-              'hasData': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-      };
+    ...switch (canceledAt) {
+      SdkPresent<double>(value: final value) => {'canceledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disabledAt) {
+      SdkPresent<double>(value: final value) => {'disabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enabledAt) {
+      SdkPresent<double>(value: final value) => {'enabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hasData) {
+      SdkPresent<ListProjectsResponseVariant0ItemWebAnalyticsHasData>(value: final value) => {'hasData': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+  };
 }

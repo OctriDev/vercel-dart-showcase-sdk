@@ -6,149 +6,128 @@ part of 'inline.dart';
 // Inline operation models
 /// Required enumerated value serialized in the `enabled` wire field.
 final class TeamDeploymentPolicyGitSourcesItemEnabled {
+
   final bool value;
 
   const TeamDeploymentPolicyGitSourcesItemEnabled._(this.value);
 
-  factory TeamDeploymentPolicyGitSourcesItemEnabled.fromJson(bool value) =>
-      TeamDeploymentPolicyGitSourcesItemEnabled._(value);
+  factory TeamDeploymentPolicyGitSourcesItemEnabled.fromJson(bool value) => TeamDeploymentPolicyGitSourcesItemEnabled._(value);
 
   static const false_ = TeamDeploymentPolicyGitSourcesItemEnabled._(false);
   static const true_ = TeamDeploymentPolicyGitSourcesItemEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDeploymentPolicyGitSourcesItemEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentPolicyGitSourcesItemEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `cohort` wire field.
 final class TeamDeploymentStorageRolloutCohort {
+
   final String value;
 
   const TeamDeploymentStorageRolloutCohort._(this.value);
 
-  factory TeamDeploymentStorageRolloutCohort.fromJson(String value) =>
-      TeamDeploymentStorageRolloutCohort._(value);
+  factory TeamDeploymentStorageRolloutCohort.fromJson(String value) => TeamDeploymentStorageRolloutCohort._(value);
 
-  static const alreadyMetered =
-      TeamDeploymentStorageRolloutCohort._('already_metered');
+  static const alreadyMetered = TeamDeploymentStorageRolloutCohort._('already_metered');
   static const extreme = TeamDeploymentStorageRolloutCohort._('extreme');
   static const high = TeamDeploymentStorageRolloutCohort._('high');
   static const low = TeamDeploymentStorageRolloutCohort._('low');
   static const medium = TeamDeploymentStorageRolloutCohort._('medium');
   static const mediumPlus = TeamDeploymentStorageRolloutCohort._('medium_plus');
-  static const meteredOptIn =
-      TeamDeploymentStorageRolloutCohort._('metered_opt_in');
+  static const meteredOptIn = TeamDeploymentStorageRolloutCohort._('metered_opt_in');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDeploymentStorageRolloutCohort && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentStorageRolloutCohort && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `meterReason` wire field.
 final class TeamDeploymentStorageRolloutMeterReason {
+
   final String value;
 
   const TeamDeploymentStorageRolloutMeterReason._(this.value);
 
-  factory TeamDeploymentStorageRolloutMeterReason.fromJson(String value) =>
-      TeamDeploymentStorageRolloutMeterReason._(value);
+  factory TeamDeploymentStorageRolloutMeterReason.fromJson(String value) => TeamDeploymentStorageRolloutMeterReason._(value);
 
-  static const lowScheduled =
-      TeamDeploymentStorageRolloutMeterReason._('low_scheduled');
-  static const mediumScheduled =
-      TeamDeploymentStorageRolloutMeterReason._('medium_scheduled');
-  static const retentionOptOut =
-      TeamDeploymentStorageRolloutMeterReason._('retention_opt_out');
+  static const lowScheduled = TeamDeploymentStorageRolloutMeterReason._('low_scheduled');
+  static const mediumScheduled = TeamDeploymentStorageRolloutMeterReason._('medium_scheduled');
+  static const retentionOptOut = TeamDeploymentStorageRolloutMeterReason._('retention_opt_out');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDeploymentStorageRolloutMeterReason && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentStorageRolloutMeterReason && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `disableHardAutoBlocks` wire field.
 final class TeamDisableHardAutoBlocksVariant1 {
+
   final bool value;
 
   const TeamDisableHardAutoBlocksVariant1._(this.value);
 
-  factory TeamDisableHardAutoBlocksVariant1.fromJson(bool value) =>
-      TeamDisableHardAutoBlocksVariant1._(value);
+  factory TeamDisableHardAutoBlocksVariant1.fromJson(bool value) => TeamDisableHardAutoBlocksVariant1._(value);
 
   static const false_ = TeamDisableHardAutoBlocksVariant1._(false);
   static const true_ = TeamDisableHardAutoBlocksVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDisableHardAutoBlocksVariant1 && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDisableHardAutoBlocksVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`.
 final class TeamDisableRepositoryDispatchEvents {
+
   final bool value;
 
   const TeamDisableRepositoryDispatchEvents._(this.value);
 
-  factory TeamDisableRepositoryDispatchEvents.fromJson(bool value) =>
-      TeamDisableRepositoryDispatchEvents._(value);
+  factory TeamDisableRepositoryDispatchEvents.fromJson(bool value) => TeamDisableRepositoryDispatchEvents._(value);
 
   static const false_ = TeamDisableRepositoryDispatchEvents._(false);
   static const true_ = TeamDisableRepositoryDispatchEvents._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDisableRepositoryDispatchEvents && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDisableRepositoryDispatchEvents && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Require production secrets to use a different value than preview or development.
 final class TeamDisjunctiveProductionSecretPolicy {
+
   final String value;
 
   const TeamDisjunctiveProductionSecretPolicy._(this.value);
 
-  factory TeamDisjunctiveProductionSecretPolicy.fromJson(String value) =>
-      TeamDisjunctiveProductionSecretPolicy._(value);
+  factory TeamDisjunctiveProductionSecretPolicy.fromJson(String value) => TeamDisjunctiveProductionSecretPolicy._(value);
 
   static const default_ = TeamDisjunctiveProductionSecretPolicy._('default');
   static const off = TeamDisjunctiveProductionSecretPolicy._('off');
@@ -156,25 +135,22 @@ final class TeamDisjunctiveProductionSecretPolicy {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDisjunctiveProductionSecretPolicy && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDisjunctiveProductionSecretPolicy && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Controls who can request access to protected deployments.
 final class TeamDpAccessRequestsMode {
+
   final String value;
 
   const TeamDpAccessRequestsMode._(this.value);
 
-  factory TeamDpAccessRequestsMode.fromJson(String value) =>
-      TeamDpAccessRequestsMode._(value);
+  factory TeamDpAccessRequestsMode.fromJson(String value) => TeamDpAccessRequestsMode._(value);
 
   static const all = TeamDpAccessRequestsMode._('all');
   static const emailDomain = TeamDpAccessRequestsMode._('email-domain');
@@ -182,25 +158,22 @@ final class TeamDpAccessRequestsMode {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDpAccessRequestsMode && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDpAccessRequestsMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether toolbar is enabled on preview deployments
 final class TeamEnablePreviewFeedback {
+
   final String value;
 
   const TeamEnablePreviewFeedback._(this.value);
 
-  factory TeamEnablePreviewFeedback.fromJson(String value) =>
-      TeamEnablePreviewFeedback._(value);
+  factory TeamEnablePreviewFeedback.fromJson(String value) => TeamEnablePreviewFeedback._(value);
 
   static const default_ = TeamEnablePreviewFeedback._('default');
   static const defaultForce = TeamEnablePreviewFeedback._('default-force');
@@ -211,25 +184,22 @@ final class TeamEnablePreviewFeedback {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamEnablePreviewFeedback && other.value == value;
+  @override bool operator ==(Object other) => other is TeamEnablePreviewFeedback && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether toolbar is enabled on production deployments
 final class TeamEnableProductionFeedback {
+
   final String value;
 
   const TeamEnableProductionFeedback._(this.value);
 
-  factory TeamEnableProductionFeedback.fromJson(String value) =>
-      TeamEnableProductionFeedback._(value);
+  factory TeamEnableProductionFeedback.fromJson(String value) => TeamEnableProductionFeedback._(value);
 
   static const default_ = TeamEnableProductionFeedback._('default');
   static const defaultForce = TeamEnableProductionFeedback._('default-force');
@@ -240,88 +210,76 @@ final class TeamEnableProductionFeedback {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamEnableProductionFeedback && other.value == value;
+  @override bool operator ==(Object other) => other is TeamEnableProductionFeedback && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Indicates if IP addresses should be accessible in observability (o11y) tooling
 final class TeamHideIpAddresses {
+
   final bool value;
 
   const TeamHideIpAddresses._(this.value);
 
-  factory TeamHideIpAddresses.fromJson(bool value) =>
-      TeamHideIpAddresses._(value);
+  factory TeamHideIpAddresses.fromJson(bool value) => TeamHideIpAddresses._(value);
 
   static const false_ = TeamHideIpAddresses._(false);
   static const true_ = TeamHideIpAddresses._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamHideIpAddresses && other.value == value;
+  @override bool operator ==(Object other) => other is TeamHideIpAddresses && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Indicates if IP addresses should be accessible in log drains
 final class TeamHideIpAddressesInLogDrains {
+
   final bool value;
 
   const TeamHideIpAddressesInLogDrains._(this.value);
 
-  factory TeamHideIpAddressesInLogDrains.fromJson(bool value) =>
-      TeamHideIpAddressesInLogDrains._(value);
+  factory TeamHideIpAddressesInLogDrains.fromJson(bool value) => TeamHideIpAddressesInLogDrains._(value);
 
   static const false_ = TeamHideIpAddressesInLogDrains._(false);
   static const true_ = TeamHideIpAddressesInLogDrains._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamHideIpAddressesInLogDrains && other.value == value;
+  @override bool operator ==(Object other) => other is TeamHideIpAddressesInLogDrains && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `default` wire field.
 final class TeamIpBucketsItemDefault {
+
   final bool value;
 
   const TeamIpBucketsItemDefault._(this.value);
 
-  factory TeamIpBucketsItemDefault.fromJson(bool value) =>
-      TeamIpBucketsItemDefault._(value);
+  factory TeamIpBucketsItemDefault.fromJson(bool value) => TeamIpBucketsItemDefault._(value);
 
   static const false_ = TeamIpBucketsItemDefault._(false);
   static const true_ = TeamIpBucketsItemDefault._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamIpBucketsItemDefault && other.value == value;
+  @override bool operator ==(Object other) => other is TeamIpBucketsItemDefault && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

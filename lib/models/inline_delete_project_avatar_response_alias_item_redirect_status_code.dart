@@ -5,386 +5,281 @@ part of 'inline.dart';
 
 // Inline operation models
 final class DeleteProjectAvatarResponseAliasItemRedirectStatusCode {
+
   final double value;
 
   const DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(this.value);
 
-  factory DeleteProjectAvatarResponseAliasItemRedirectStatusCode.fromJson(
-          double value) =>
-      DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(value);
+  factory DeleteProjectAvatarResponseAliasItemRedirectStatusCode.fromJson(double value) => DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(value);
 
-  static const v301 =
-      DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(301);
-  static const v302 =
-      DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(302);
-  static const v307 =
-      DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(307);
-  static const v308 =
-      DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(308);
+  static const v301 = DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(301);
+  static const v302 = DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(302);
+  static const v307 = DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(307);
+  static const v308 = DeleteProjectAvatarResponseAliasItemRedirectStatusCode._(308);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseAliasItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseAliasItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseAliasItemTarget {
+
   final String value;
 
   const DeleteProjectAvatarResponseAliasItemTarget._(this.value);
 
-  factory DeleteProjectAvatarResponseAliasItemTarget.fromJson(String value) =>
-      DeleteProjectAvatarResponseAliasItemTarget._(value);
+  factory DeleteProjectAvatarResponseAliasItemTarget.fromJson(String value) => DeleteProjectAvatarResponseAliasItemTarget._(value);
 
-  static const preview =
-      DeleteProjectAvatarResponseAliasItemTarget._('PREVIEW');
-  static const production =
-      DeleteProjectAvatarResponseAliasItemTarget._('PRODUCTION');
-  static const staging =
-      DeleteProjectAvatarResponseAliasItemTarget._('STAGING');
+  static const preview = DeleteProjectAvatarResponseAliasItemTarget._('PREVIEW');
+  static const production = DeleteProjectAvatarResponseAliasItemTarget._('PRODUCTION');
+  static const staging = DeleteProjectAvatarResponseAliasItemTarget._('STAGING');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseAliasItemTarget &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseAliasItemTarget && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseAppliedCve55182Migration {
+
   final bool value;
 
   const DeleteProjectAvatarResponseAppliedCve55182Migration._(this.value);
 
-  factory DeleteProjectAvatarResponseAppliedCve55182Migration.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseAppliedCve55182Migration._(value);
+  factory DeleteProjectAvatarResponseAppliedCve55182Migration.fromJson(bool value) => DeleteProjectAvatarResponseAppliedCve55182Migration._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseAppliedCve55182Migration._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseAppliedCve55182Migration._(true);
+  static const false_ = DeleteProjectAvatarResponseAppliedCve55182Migration._(false);
+  static const true_ = DeleteProjectAvatarResponseAppliedCve55182Migration._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseAppliedCve55182Migration &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseAppliedCve55182Migration && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseAutoAssignCustomDomains {
+
   final bool value;
 
   const DeleteProjectAvatarResponseAutoAssignCustomDomains._(this.value);
 
-  factory DeleteProjectAvatarResponseAutoAssignCustomDomains.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseAutoAssignCustomDomains._(value);
+  factory DeleteProjectAvatarResponseAutoAssignCustomDomains.fromJson(bool value) => DeleteProjectAvatarResponseAutoAssignCustomDomains._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseAutoAssignCustomDomains._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseAutoAssignCustomDomains._(true);
+  static const false_ = DeleteProjectAvatarResponseAutoAssignCustomDomains._(false);
+  static const true_ = DeleteProjectAvatarResponseAutoAssignCustomDomains._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseAutoAssignCustomDomains &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseAutoAssignCustomDomains && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseAutoExposeSystemEnvs {
+
   final bool value;
 
   const DeleteProjectAvatarResponseAutoExposeSystemEnvs._(this.value);
 
-  factory DeleteProjectAvatarResponseAutoExposeSystemEnvs.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseAutoExposeSystemEnvs._(value);
+  factory DeleteProjectAvatarResponseAutoExposeSystemEnvs.fromJson(bool value) => DeleteProjectAvatarResponseAutoExposeSystemEnvs._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseAutoExposeSystemEnvs._(false);
+  static const false_ = DeleteProjectAvatarResponseAutoExposeSystemEnvs._(false);
   static const true_ = DeleteProjectAvatarResponseAutoExposeSystemEnvs._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseAutoExposeSystemEnvs &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseAutoExposeSystemEnvs && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation — guards rely on it to protect the connected stores from being lost when the project is deleted or transferred.
 final class DeleteProjectAvatarResponseBlobsIsDefaultApp {
+
   final bool value;
 
   const DeleteProjectAvatarResponseBlobsIsDefaultApp._(this.value);
 
-  factory DeleteProjectAvatarResponseBlobsIsDefaultApp.fromJson(bool value) =>
-      DeleteProjectAvatarResponseBlobsIsDefaultApp._(value);
+  factory DeleteProjectAvatarResponseBlobsIsDefaultApp.fromJson(bool value) => DeleteProjectAvatarResponseBlobsIsDefaultApp._(value);
 
   static const false_ = DeleteProjectAvatarResponseBlobsIsDefaultApp._(false);
   static const true_ = DeleteProjectAvatarResponseBlobsIsDefaultApp._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseBlobsIsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseBlobsIsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseConnectBuildsEnabled {
+
   final bool value;
 
   const DeleteProjectAvatarResponseConnectBuildsEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseConnectBuildsEnabled.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseConnectBuildsEnabled._(value);
+  factory DeleteProjectAvatarResponseConnectBuildsEnabled.fromJson(bool value) => DeleteProjectAvatarResponseConnectBuildsEnabled._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseConnectBuildsEnabled._(false);
+  static const false_ = DeleteProjectAvatarResponseConnectBuildsEnabled._(false);
   static const true_ = DeleteProjectAvatarResponseConnectBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseConnectBuildsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseConnectBuildsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(
-      this.value);
+  const DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(
-          value);
+  factory DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled.fromJson(bool value) => DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(
-          false);
-  static const true_ =
-      DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(true);
+  static const false_ = DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(false);
+  static const true_ = DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1 {
+
   final String value;
 
-  const DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-      this.value);
+  const DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(this.value);
 
-  factory DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-          value);
+  factory DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1.fromJson(String value) => DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(value);
 
-  static const preview =
-      DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-          'preview');
-  static const production =
-      DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-          'production');
+  static const preview = DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._('preview');
+  static const production = DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseConnectConfigurationsItemPassive {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(
-      this.value);
+  const DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(this.value);
 
-  factory DeleteProjectAvatarResponseConnectConfigurationsItemPassive.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(value);
+  factory DeleteProjectAvatarResponseConnectConfigurationsItemPassive.fromJson(bool value) => DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(true);
+  static const false_ = DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(false);
+  static const true_ = DeleteProjectAvatarResponseConnectConfigurationsItemPassive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseConnectConfigurationsItemPassive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseConnectConfigurationsItemPassive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the host was inferred from the production deployment URL rather than explicitly provided.
 final class DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(
-      this.value);
+  const DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(this.value);
 
-  factory DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(value);
+  factory DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred.fromJson(bool value) => DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(true);
+  static const false_ = DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(false);
+  static const true_ = DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseCronsDefinitionsItemHostInferred && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The origin of this definition. 'api' means created via the API. Undefined means it originated from a deployment (vercel.json).
 final class DeleteProjectAvatarResponseCronsDefinitionsItemSource {
+
   final String value;
 
   const DeleteProjectAvatarResponseCronsDefinitionsItemSource._(this.value);
 
-  factory DeleteProjectAvatarResponseCronsDefinitionsItemSource.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseCronsDefinitionsItemSource._(value);
+  factory DeleteProjectAvatarResponseCronsDefinitionsItemSource.fromJson(String value) => DeleteProjectAvatarResponseCronsDefinitionsItemSource._(value);
 
-  static const api =
-      DeleteProjectAvatarResponseCronsDefinitionsItemSource._('api');
+  static const api = DeleteProjectAvatarResponseCronsDefinitionsItemSource._('api');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseCronsDefinitionsItemSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseCronsDefinitionsItemSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of matching to perform
 final class DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType {
+
   final String value;
 
-  const DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-      this.value);
+  const DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(this.value);
 
-  factory DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          value);
+  factory DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType.fromJson(String value) => DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(value);
 
-  static const endswith =
-      DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          'endsWith');
-  static const equals =
-      DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          'equals');
-  static const startswith =
-      DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          'startsWith');
+  static const endswith = DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._('endsWith');
+  static const equals = DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._('equals');
+  static const startswith = DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

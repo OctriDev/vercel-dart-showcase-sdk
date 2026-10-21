@@ -8,410 +8,211 @@ part of 'user.dart';
 class UserEventUser {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `avatar` wire field.
   final String avatar;
-
   /// Required `string` value serialized in the `email` wire field.
   final String email;
-
   /// Optional `string` value serialized in the `slug` wire field.
   final SdkOptional<String> slug;
-
   /// Required `string` value serialized in the `uid` wire field.
   final String uid;
-
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventUser(
-      {required this.avatar,
-      required this.email,
-      this.slug = const SdkOmitted(),
-      required this.uid,
-      required this.username});
+  const UserEventUser({required this.avatar, required this.email, this.slug = const SdkOmitted(), required this.uid, required this.username});
 
-  UserEventUser Function(
-      {String avatar,
-      String email,
-      SdkOptional<String> slug,
-      String uid,
-      String username}) get copyWith => _copyWith;
+  UserEventUser Function({String avatar, String email, SdkOptional<String> slug, String uid, String username}) get copyWith => _copyWith;
 
-  UserEventUser _copyWith(
-          {Object? avatar = sdkOmittedValue,
-          Object? email = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? uid = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      UserEventUser(
-        avatar:
-            identical(avatar, sdkOmittedValue) ? this.avatar : avatar as String,
-        email: identical(email, sdkOmittedValue) ? this.email : email as String,
-        slug: identical(slug, sdkOmittedValue)
-            ? this.slug
-            : slug as SdkOptional<String>,
-        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  UserEventUser _copyWith({Object? avatar = sdkOmittedValue, Object? email = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventUser(
+    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as String,
+    email: identical(email, sdkOmittedValue) ? this.email : email as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
   factory UserEventUser.fromJson(Map<String, dynamic> json) => UserEventUser(
-        avatar: (json['avatar'] as String?)!,
-        email: (json['email'] as String?)!,
-        slug: json['slug'] != null
-            ? SdkPresent((json['slug'] as String?)!)
-            : const SdkOmitted(),
-        uid: (json['uid'] as String?)!,
-        username: (json['username'] as String?)!,
-      );
+    avatar: (json['avatar'] as String?)!,
+    email: (json['email'] as String?)!,
+    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
+    uid: (json['uid'] as String?)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'avatar': avatar,
-        'email': email,
-        ...switch (slug) {
-          SdkPresent<String>(value: final value) => {
-              'slug': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'uid': uid,
-        'username': username,
-      };
+    'avatar': avatar,
+    'email': email,
+    ...switch (slug) {
+      SdkPresent<String>(value: final value) => {'slug': value,},
+      _ => const <String, dynamic>{},
+    },
+    'uid': uid,
+    'username': username,
+  };
 }
 
 /// A list of "entities" within the event `text`. Useful for enhancing the displayed text with additional styling and links.
 class UserEventEntitiesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The index of where the entity ends within the `text` (non-inclusive).
   final double end;
-
   /// The index of where the entity begins within the `text` (inclusive).
   final double start;
-
   /// The type of entity.
   final UserEventEntitiesItemType type_;
 
-  const UserEventEntitiesItem(
-      {required this.end, required this.start, required this.type_});
+  const UserEventEntitiesItem({required this.end, required this.start, required this.type_});
 
-  UserEventEntitiesItem Function(
-      {double end,
-      double start,
-      UserEventEntitiesItemType type_}) get copyWith => _copyWith;
+  UserEventEntitiesItem Function({double end, double start, UserEventEntitiesItemType type_}) get copyWith => _copyWith;
 
-  UserEventEntitiesItem _copyWith(
-          {Object? end = sdkOmittedValue,
-          Object? start = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UserEventEntitiesItem(
-        end: identical(end, sdkOmittedValue) ? this.end : end as double,
-        start: identical(start, sdkOmittedValue) ? this.start : start as double,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UserEventEntitiesItemType,
-      );
+  UserEventEntitiesItem _copyWith({Object? end = sdkOmittedValue, Object? start = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventEntitiesItem(
+    end: identical(end, sdkOmittedValue) ? this.end : end as double,
+    start: identical(start, sdkOmittedValue) ? this.start : start as double,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventEntitiesItemType,
+  );
 
-  factory UserEventEntitiesItem.fromJson(Map<String, dynamic> json) =>
-      UserEventEntitiesItem(
-        end: ((json['end'] as num?)?.toDouble())!,
-        start: ((json['start'] as num?)?.toDouble())!,
-        type_: (json['type'] != null
-            ? UserEventEntitiesItemType.fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UserEventEntitiesItem.fromJson(Map<String, dynamic> json) => UserEventEntitiesItem(
+    end: ((json['end'] as num?)?.toDouble())!,
+    start: ((json['start'] as num?)?.toDouble())!,
+    type_: (json['type'] != null ? UserEventEntitiesItemType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'end': end,
-        'start': start,
-        'type': type_.toJson(),
-      };
+    'end': end,
+    'start': start,
+    'type': type_.toJson(),
+  };
 }
 
 /// Array of events generated by the User.
 class UserEvent {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.
   final SdkOptional<List<UserEventCategoriesItem>> categories;
-
   /// Timestamp (in milliseconds) of when the event was generated.
   final double createdAt;
-
   /// A list of "entities" within the event `text`. Useful for enhancing the displayed text with additional styling and links.
   final List<UserEventEntitiesItem> entities;
-
   /// The unique identifier of the Event.
   final String id;
-
   /// Optional API value serialized in the `payload` wire field.
   final SdkOptional<UserEventPayload> payload;
-
   /// Optional API value serialized in the `principal` wire field.
   final SdkOptional<UserEventPrincipal> principal;
-
   /// The ID of the principal who generated the event. The principal is typically a user, but it could also be an app, an integration, etc. The principal may have delegated its authority to an acting party, and so {@link viaIds} should be checked as well.
   final String principalId;
-
   /// Optional `string` value serialized in the `requestId` wire field.
   final SdkOptional<String> requestId;
-
   /// The ID of the session that the principal's token belongs to, when it belongs to one.
   final SdkOptional<String> sessionId;
-
   /// The human-readable text of the Event.
   final String text;
-
   /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
   final SdkOptional<String> tokenId;
-
   /// The type of the event.
   final SdkOptional<UserEventType> type_;
-
   /// Metadata for {@link userId}.
   final SdkOptional<UserEventUser> user;
-
   /// When the principal who generated the event is a user, this is their ID; otherwise, it is empty.
   final SdkOptional<String> userId;
-
   /// Metadata for {@link viaIds}.
   final SdkOptional<List<UserEventViaItem>> via;
-
   /// If the principal delegated its authority (for example, a user delegating to an app), then this array contains the ID of the current actor. For example, if `principalId` is "user123" and `viaIds` is `["app456"]`, we can say the event was triggered by - "app456 on behalf of user123", or - "user123 via app4556". Both are equivalent. Arbitrarily long chains of delegation can be represented. For example, if `principalId` is "user123" and `viaIds` is `["service1", "service2"]`, we can say the event was triggered by "user123 via service1 via service2".
   final SdkOptional<List<String>> viaIds;
 
-  const UserEvent(
-      {this.categories = const SdkOmitted(),
-      required this.createdAt,
-      required this.entities,
-      required this.id,
-      this.payload = const SdkOmitted(),
-      this.principal = const SdkOmitted(),
-      required this.principalId,
-      this.requestId = const SdkOmitted(),
-      this.sessionId = const SdkOmitted(),
-      required this.text,
-      this.tokenId = const SdkOmitted(),
-      this.type_ = const SdkOmitted(),
-      this.user = const SdkOmitted(),
-      this.userId = const SdkOmitted(),
-      this.via = const SdkOmitted(),
-      this.viaIds = const SdkOmitted()});
+  const UserEvent({this.categories = const SdkOmitted(), required this.createdAt, required this.entities, required this.id, this.payload = const SdkOmitted(), this.principal = const SdkOmitted(), required this.principalId, this.requestId = const SdkOmitted(), this.sessionId = const SdkOmitted(), required this.text, this.tokenId = const SdkOmitted(), this.type_ = const SdkOmitted(), this.user = const SdkOmitted(), this.userId = const SdkOmitted(), this.via = const SdkOmitted(), this.viaIds = const SdkOmitted()});
 
-  UserEvent Function(
-      {SdkOptional<List<UserEventCategoriesItem>> categories,
-      double createdAt,
-      List<UserEventEntitiesItem> entities,
-      String id,
-      SdkOptional<UserEventPayload> payload,
-      SdkOptional<UserEventPrincipal> principal,
-      String principalId,
-      SdkOptional<String> requestId,
-      SdkOptional<String> sessionId,
-      String text,
-      SdkOptional<String> tokenId,
-      SdkOptional<UserEventType> type_,
-      SdkOptional<UserEventUser> user,
-      SdkOptional<String> userId,
-      SdkOptional<List<UserEventViaItem>> via,
-      SdkOptional<List<String>> viaIds}) get copyWith => _copyWith;
+  UserEvent Function({SdkOptional<List<UserEventCategoriesItem>> categories, double createdAt, List<UserEventEntitiesItem> entities, String id, SdkOptional<UserEventPayload> payload, SdkOptional<UserEventPrincipal> principal, String principalId, SdkOptional<String> requestId, SdkOptional<String> sessionId, String text, SdkOptional<String> tokenId, SdkOptional<UserEventType> type_, SdkOptional<UserEventUser> user, SdkOptional<String> userId, SdkOptional<List<UserEventViaItem>> via, SdkOptional<List<String>> viaIds}) get copyWith => _copyWith;
 
-  UserEvent _copyWith(
-          {Object? categories = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? entities = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? payload = sdkOmittedValue,
-          Object? principal = sdkOmittedValue,
-          Object? principalId = sdkOmittedValue,
-          Object? requestId = sdkOmittedValue,
-          Object? sessionId = sdkOmittedValue,
-          Object? text = sdkOmittedValue,
-          Object? tokenId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? user = sdkOmittedValue,
-          Object? userId = sdkOmittedValue,
-          Object? via = sdkOmittedValue,
-          Object? viaIds = sdkOmittedValue}) =>
-      UserEvent(
-        categories: identical(categories, sdkOmittedValue)
-            ? this.categories
-            : categories as SdkOptional<List<UserEventCategoriesItem>>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        entities: identical(entities, sdkOmittedValue)
-            ? this.entities
-            : entities as List<UserEventEntitiesItem>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        payload: identical(payload, sdkOmittedValue)
-            ? this.payload
-            : payload as SdkOptional<UserEventPayload>,
-        principal: identical(principal, sdkOmittedValue)
-            ? this.principal
-            : principal as SdkOptional<UserEventPrincipal>,
-        principalId: identical(principalId, sdkOmittedValue)
-            ? this.principalId
-            : principalId as String,
-        requestId: identical(requestId, sdkOmittedValue)
-            ? this.requestId
-            : requestId as SdkOptional<String>,
-        sessionId: identical(sessionId, sdkOmittedValue)
-            ? this.sessionId
-            : sessionId as SdkOptional<String>,
-        text: identical(text, sdkOmittedValue) ? this.text : text as String,
-        tokenId: identical(tokenId, sdkOmittedValue)
-            ? this.tokenId
-            : tokenId as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SdkOptional<UserEventType>,
-        user: identical(user, sdkOmittedValue)
-            ? this.user
-            : user as SdkOptional<UserEventUser>,
-        userId: identical(userId, sdkOmittedValue)
-            ? this.userId
-            : userId as SdkOptional<String>,
-        via: identical(via, sdkOmittedValue)
-            ? this.via
-            : via as SdkOptional<List<UserEventViaItem>>,
-        viaIds: identical(viaIds, sdkOmittedValue)
-            ? this.viaIds
-            : viaIds as SdkOptional<List<String>>,
-      );
+  UserEvent _copyWith({Object? categories = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? entities = sdkOmittedValue, Object? id = sdkOmittedValue, Object? payload = sdkOmittedValue, Object? principal = sdkOmittedValue, Object? principalId = sdkOmittedValue, Object? requestId = sdkOmittedValue, Object? sessionId = sdkOmittedValue, Object? text = sdkOmittedValue, Object? tokenId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? user = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? via = sdkOmittedValue, Object? viaIds = sdkOmittedValue}) => UserEvent(
+    categories: identical(categories, sdkOmittedValue) ? this.categories : categories as SdkOptional<List<UserEventCategoriesItem>>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    entities: identical(entities, sdkOmittedValue) ? this.entities : entities as List<UserEventEntitiesItem>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    payload: identical(payload, sdkOmittedValue) ? this.payload : payload as SdkOptional<UserEventPayload>,
+    principal: identical(principal, sdkOmittedValue) ? this.principal : principal as SdkOptional<UserEventPrincipal>,
+    principalId: identical(principalId, sdkOmittedValue) ? this.principalId : principalId as String,
+    requestId: identical(requestId, sdkOmittedValue) ? this.requestId : requestId as SdkOptional<String>,
+    sessionId: identical(sessionId, sdkOmittedValue) ? this.sessionId : sessionId as SdkOptional<String>,
+    text: identical(text, sdkOmittedValue) ? this.text : text as String,
+    tokenId: identical(tokenId, sdkOmittedValue) ? this.tokenId : tokenId as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<UserEventType>,
+    user: identical(user, sdkOmittedValue) ? this.user : user as SdkOptional<UserEventUser>,
+    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
+    via: identical(via, sdkOmittedValue) ? this.via : via as SdkOptional<List<UserEventViaItem>>,
+    viaIds: identical(viaIds, sdkOmittedValue) ? this.viaIds : viaIds as SdkOptional<List<String>>,
+  );
 
   factory UserEvent.fromJson(Map<String, dynamic> json) => UserEvent(
-        categories: json['categories'] != null
-            ? SdkPresent(((json['categories'] as List?)
-                ?.map((e) => UserEventCategoriesItem.fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        entities: ((json['entities'] as List?)
-            ?.map((e) =>
-                UserEventEntitiesItem.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        id: (json['id'] as String?)!,
-        payload: json['payload'] != null
-            ? SdkPresent((json['payload'] != null
-                ? UserEventPayload.fromJson(json['payload'])
-                : null)!)
-            : const SdkOmitted(),
-        principal: json['principal'] != null
-            ? SdkPresent((json['principal'] != null
-                ? UserEventPrincipal.fromJson(json['principal'])
-                : null)!)
-            : const SdkOmitted(),
-        principalId: (json['principalId'] as String?)!,
-        requestId: json['requestId'] != null
-            ? SdkPresent((json['requestId'] as String?)!)
-            : const SdkOmitted(),
-        sessionId: json['sessionId'] != null
-            ? SdkPresent((json['sessionId'] as String?)!)
-            : const SdkOmitted(),
-        text: (json['text'] as String?)!,
-        tokenId: json['tokenId'] != null
-            ? SdkPresent((json['tokenId'] as String?)!)
-            : const SdkOmitted(),
-        type_: json['type'] != null
-            ? SdkPresent((json['type'] != null
-                ? UserEventType.fromJson(json['type'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        user: json['user'] != null
-            ? SdkPresent((json['user'] != null
-                ? UserEventUser.fromJson(json['user'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        userId: json['userId'] != null
-            ? SdkPresent((json['userId'] as String?)!)
-            : const SdkOmitted(),
-        via: json['via'] != null
-            ? SdkPresent(((json['via'] as List?)
-                ?.map((e) => UserEventViaItem.fromJson(e))
-                .toList())!)
-            : const SdkOmitted(),
-        viaIds: json['viaIds'] != null
-            ? SdkPresent(
-                ((json['viaIds'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+    categories: json['categories'] != null ? SdkPresent(((json['categories'] as List?)?.map((e) => UserEventCategoriesItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    entities: ((json['entities'] as List?)?.map((e) => UserEventEntitiesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    id: (json['id'] as String?)!,
+    payload: json['payload'] != null ? SdkPresent((json['payload'] != null ? UserEventPayload.fromJson(json['payload']) : null)!) : const SdkOmitted(),
+    principal: json['principal'] != null ? SdkPresent((json['principal'] != null ? UserEventPrincipal.fromJson(json['principal']) : null)!) : const SdkOmitted(),
+    principalId: (json['principalId'] as String?)!,
+    requestId: json['requestId'] != null ? SdkPresent((json['requestId'] as String?)!) : const SdkOmitted(),
+    sessionId: json['sessionId'] != null ? SdkPresent((json['sessionId'] as String?)!) : const SdkOmitted(),
+    text: (json['text'] as String?)!,
+    tokenId: json['tokenId'] != null ? SdkPresent((json['tokenId'] as String?)!) : const SdkOmitted(),
+    type_: json['type'] != null ? SdkPresent((json['type'] != null ? UserEventType.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
+    user: json['user'] != null ? SdkPresent((json['user'] != null ? UserEventUser.fromJson(json['user'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
+    via: json['via'] != null ? SdkPresent(((json['via'] as List?)?.map((e) => UserEventViaItem.fromJson(e)).toList())!) : const SdkOmitted(),
+    viaIds: json['viaIds'] != null ? SdkPresent(((json['viaIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (categories) {
-          SdkPresent<List<UserEventCategoriesItem>>(value: final value) => {
-              'categories': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'entities': entities.map((item) => item.toJson()).toList(),
-        'id': id,
-        ...switch (payload) {
-          SdkPresent<UserEventPayload>(value: final value) => {
-              'payload': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (principal) {
-          SdkPresent<UserEventPrincipal>(value: final value) => {
-              'principal': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'principalId': principalId,
-        ...switch (requestId) {
-          SdkPresent<String>(value: final value) => {
-              'requestId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sessionId) {
-          SdkPresent<String>(value: final value) => {
-              'sessionId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'text': text,
-        ...switch (tokenId) {
-          SdkPresent<String>(value: final value) => {
-              'tokenId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (type_) {
-          SdkPresent<UserEventType>(value: final value) => {
-              'type': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (user) {
-          SdkPresent<UserEventUser>(value: final value) => {
-              'user': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (userId) {
-          SdkPresent<String>(value: final value) => {
-              'userId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (via) {
-          SdkPresent<List<UserEventViaItem>>(value: final value) => {
-              'via': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (viaIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'viaIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (categories) {
+      SdkPresent<List<UserEventCategoriesItem>>(value: final value) => {'categories': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'entities': entities.map((item) => item.toJson()).toList(),
+    'id': id,
+    ...switch (payload) {
+      SdkPresent<UserEventPayload>(value: final value) => {'payload': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (principal) {
+      SdkPresent<UserEventPrincipal>(value: final value) => {'principal': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'principalId': principalId,
+    ...switch (requestId) {
+      SdkPresent<String>(value: final value) => {'requestId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sessionId) {
+      SdkPresent<String>(value: final value) => {'sessionId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'text': text,
+    ...switch (tokenId) {
+      SdkPresent<String>(value: final value) => {'tokenId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (type_) {
+      SdkPresent<UserEventType>(value: final value) => {'type': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (user) {
+      SdkPresent<UserEventUser>(value: final value) => {'user': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (userId) {
+      SdkPresent<String>(value: final value) => {'userId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (via) {
+      SdkPresent<List<UserEventViaItem>>(value: final value) => {'via': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (viaIds) {
+      SdkPresent<List<String>>(value: final value) => {'viaIds': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

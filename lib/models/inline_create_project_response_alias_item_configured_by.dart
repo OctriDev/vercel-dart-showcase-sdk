@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateProjectResponseAliasItemConfiguredBy {
+
   final String value;
 
   const CreateProjectResponseAliasItemConfiguredBy._(this.value);
 
-  factory CreateProjectResponseAliasItemConfiguredBy.fromJson(String value) =>
-      CreateProjectResponseAliasItemConfiguredBy._(value);
+  factory CreateProjectResponseAliasItemConfiguredBy.fromJson(String value) => CreateProjectResponseAliasItemConfiguredBy._(value);
 
   static const a = CreateProjectResponseAliasItemConfiguredBy._('A');
   static const cname = CreateProjectResponseAliasItemConfiguredBy._('CNAME');
@@ -19,367 +19,274 @@ final class CreateProjectResponseAliasItemConfiguredBy {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemConfiguredBy &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemConfiguredBy && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1 {
+
   final bool value;
 
-  const CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(
-      this.value);
+  const CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1.fromJson(
-          bool value) =>
-      CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(value);
+  factory CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1.fromJson(bool value) => CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(value);
 
-  static const false_ =
-      CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(false);
-  static const true_ =
-      CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(true);
+  static const false_ = CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(false);
+  static const true_ = CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentAliasAssignedVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of matching to perform
 final class CreateProjectResponseAliasItemDeploymentBranchMatcherType {
+
   final String value;
 
   const CreateProjectResponseAliasItemDeploymentBranchMatcherType._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentBranchMatcherType.fromJson(
-          String value) =>
-      CreateProjectResponseAliasItemDeploymentBranchMatcherType._(value);
+  factory CreateProjectResponseAliasItemDeploymentBranchMatcherType.fromJson(String value) => CreateProjectResponseAliasItemDeploymentBranchMatcherType._(value);
 
-  static const endswith =
-      CreateProjectResponseAliasItemDeploymentBranchMatcherType._('endsWith');
-  static const equals =
-      CreateProjectResponseAliasItemDeploymentBranchMatcherType._('equals');
-  static const startswith =
-      CreateProjectResponseAliasItemDeploymentBranchMatcherType._('startsWith');
+  static const endswith = CreateProjectResponseAliasItemDeploymentBranchMatcherType._('endsWith');
+  static const equals = CreateProjectResponseAliasItemDeploymentBranchMatcherType._('equals');
+  static const startswith = CreateProjectResponseAliasItemDeploymentBranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentBranchMatcherType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentBranchMatcherType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentChecksConclusion {
+
   final String value;
 
   const CreateProjectResponseAliasItemDeploymentChecksConclusion._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentChecksConclusion.fromJson(
-          String value) =>
-      CreateProjectResponseAliasItemDeploymentChecksConclusion._(value);
+  factory CreateProjectResponseAliasItemDeploymentChecksConclusion.fromJson(String value) => CreateProjectResponseAliasItemDeploymentChecksConclusion._(value);
 
-  static const canceled =
-      CreateProjectResponseAliasItemDeploymentChecksConclusion._('canceled');
-  static const failed =
-      CreateProjectResponseAliasItemDeploymentChecksConclusion._('failed');
-  static const skipped =
-      CreateProjectResponseAliasItemDeploymentChecksConclusion._('skipped');
-  static const succeeded =
-      CreateProjectResponseAliasItemDeploymentChecksConclusion._('succeeded');
+  static const canceled = CreateProjectResponseAliasItemDeploymentChecksConclusion._('canceled');
+  static const failed = CreateProjectResponseAliasItemDeploymentChecksConclusion._('failed');
+  static const skipped = CreateProjectResponseAliasItemDeploymentChecksConclusion._('skipped');
+  static const succeeded = CreateProjectResponseAliasItemDeploymentChecksConclusion._('succeeded');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentChecksConclusion &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentChecksConclusion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentChecksState {
+
   final String value;
 
   const CreateProjectResponseAliasItemDeploymentChecksState._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentChecksState.fromJson(
-          String value) =>
-      CreateProjectResponseAliasItemDeploymentChecksState._(value);
+  factory CreateProjectResponseAliasItemDeploymentChecksState.fromJson(String value) => CreateProjectResponseAliasItemDeploymentChecksState._(value);
 
-  static const completed =
-      CreateProjectResponseAliasItemDeploymentChecksState._('completed');
-  static const registered =
-      CreateProjectResponseAliasItemDeploymentChecksState._('registered');
-  static const running =
-      CreateProjectResponseAliasItemDeploymentChecksState._('running');
+  static const completed = CreateProjectResponseAliasItemDeploymentChecksState._('completed');
+  static const registered = CreateProjectResponseAliasItemDeploymentChecksState._('registered');
+  static const running = CreateProjectResponseAliasItemDeploymentChecksState._('running');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentChecksState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentChecksState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled {
+
   final bool value;
 
-  const CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(
-      this.value);
+  const CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled.fromJson(
-          bool value) =>
-      CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(value);
+  factory CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled.fromJson(bool value) => CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(value);
 
-  static const false_ =
-      CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(false);
-  static const true_ =
-      CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(true);
+  static const false_ = CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(false);
+  static const true_ = CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentConnectBuildsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentForced {
+
   final bool value;
 
   const CreateProjectResponseAliasItemDeploymentForced._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentForced.fromJson(bool value) =>
-      CreateProjectResponseAliasItemDeploymentForced._(value);
+  factory CreateProjectResponseAliasItemDeploymentForced.fromJson(bool value) => CreateProjectResponseAliasItemDeploymentForced._(value);
 
   static const false_ = CreateProjectResponseAliasItemDeploymentForced._(false);
   static const true_ = CreateProjectResponseAliasItemDeploymentForced._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentForced &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentForced && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentPlan {
+
   final String value;
 
   const CreateProjectResponseAliasItemDeploymentPlan._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentPlan.fromJson(String value) =>
-      CreateProjectResponseAliasItemDeploymentPlan._(value);
+  factory CreateProjectResponseAliasItemDeploymentPlan.fromJson(String value) => CreateProjectResponseAliasItemDeploymentPlan._(value);
 
-  static const enterprise =
-      CreateProjectResponseAliasItemDeploymentPlan._('enterprise');
+  static const enterprise = CreateProjectResponseAliasItemDeploymentPlan._('enterprise');
   static const hobby = CreateProjectResponseAliasItemDeploymentPlan._('hobby');
   static const pro = CreateProjectResponseAliasItemDeploymentPlan._('pro');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentPlan &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentPlan && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not preview comments are enabled for the deployment
 final class CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled {
+
   final bool value;
 
-  const CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(
-      this.value);
+  const CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled.fromJson(
-          bool value) =>
-      CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(value);
+  factory CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled.fromJson(bool value) => CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(value);
 
-  static const false_ =
-      CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(false);
-  static const true_ =
-      CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(true);
+  static const false_ = CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(false);
+  static const true_ = CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentPreviewCommentsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentPrivate {
+
   final bool value;
 
   const CreateProjectResponseAliasItemDeploymentPrivate._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentPrivate.fromJson(
-          bool value) =>
-      CreateProjectResponseAliasItemDeploymentPrivate._(value);
+  factory CreateProjectResponseAliasItemDeploymentPrivate.fromJson(bool value) => CreateProjectResponseAliasItemDeploymentPrivate._(value);
 
-  static const false_ =
-      CreateProjectResponseAliasItemDeploymentPrivate._(false);
+  static const false_ = CreateProjectResponseAliasItemDeploymentPrivate._(false);
   static const true_ = CreateProjectResponseAliasItemDeploymentPrivate._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentPrivate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentPrivate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentReadyState {
+
   final String value;
 
   const CreateProjectResponseAliasItemDeploymentReadyState._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentReadyState.fromJson(
-          String value) =>
-      CreateProjectResponseAliasItemDeploymentReadyState._(value);
+  factory CreateProjectResponseAliasItemDeploymentReadyState.fromJson(String value) => CreateProjectResponseAliasItemDeploymentReadyState._(value);
 
-  static const blocked =
-      CreateProjectResponseAliasItemDeploymentReadyState._('BLOCKED');
-  static const building =
-      CreateProjectResponseAliasItemDeploymentReadyState._('BUILDING');
-  static const canceled =
-      CreateProjectResponseAliasItemDeploymentReadyState._('CANCELED');
-  static const error =
-      CreateProjectResponseAliasItemDeploymentReadyState._('ERROR');
-  static const initializing =
-      CreateProjectResponseAliasItemDeploymentReadyState._('INITIALIZING');
-  static const queued =
-      CreateProjectResponseAliasItemDeploymentReadyState._('QUEUED');
-  static const ready =
-      CreateProjectResponseAliasItemDeploymentReadyState._('READY');
+  static const blocked = CreateProjectResponseAliasItemDeploymentReadyState._('BLOCKED');
+  static const building = CreateProjectResponseAliasItemDeploymentReadyState._('BUILDING');
+  static const canceled = CreateProjectResponseAliasItemDeploymentReadyState._('CANCELED');
+  static const error = CreateProjectResponseAliasItemDeploymentReadyState._('ERROR');
+  static const initializing = CreateProjectResponseAliasItemDeploymentReadyState._('INITIALIZING');
+  static const queued = CreateProjectResponseAliasItemDeploymentReadyState._('QUEUED');
+  static const ready = CreateProjectResponseAliasItemDeploymentReadyState._('READY');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentReadyState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentReadyState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentReadySubstate {
+
   final String value;
 
   const CreateProjectResponseAliasItemDeploymentReadySubstate._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentReadySubstate.fromJson(
-          String value) =>
-      CreateProjectResponseAliasItemDeploymentReadySubstate._(value);
+  factory CreateProjectResponseAliasItemDeploymentReadySubstate.fromJson(String value) => CreateProjectResponseAliasItemDeploymentReadySubstate._(value);
 
-  static const promoted =
-      CreateProjectResponseAliasItemDeploymentReadySubstate._('PROMOTED');
-  static const rolling =
-      CreateProjectResponseAliasItemDeploymentReadySubstate._('ROLLING');
-  static const staged =
-      CreateProjectResponseAliasItemDeploymentReadySubstate._('STAGED');
+  static const promoted = CreateProjectResponseAliasItemDeploymentReadySubstate._('PROMOTED');
+  static const rolling = CreateProjectResponseAliasItemDeploymentReadySubstate._('ROLLING');
+  static const staged = CreateProjectResponseAliasItemDeploymentReadySubstate._('STAGED');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentReadySubstate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentReadySubstate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateProjectResponseAliasItemDeploymentType {
+
   final String value;
 
   const CreateProjectResponseAliasItemDeploymentType._(this.value);
 
-  factory CreateProjectResponseAliasItemDeploymentType.fromJson(String value) =>
-      CreateProjectResponseAliasItemDeploymentType._(value);
+  factory CreateProjectResponseAliasItemDeploymentType.fromJson(String value) => CreateProjectResponseAliasItemDeploymentType._(value);
 
-  static const lambdas =
-      CreateProjectResponseAliasItemDeploymentType._('LAMBDAS');
+  static const lambdas = CreateProjectResponseAliasItemDeploymentType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseAliasItemDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

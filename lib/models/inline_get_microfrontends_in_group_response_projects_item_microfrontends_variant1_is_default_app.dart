@@ -5,407 +5,273 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp
-          ._(false);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1IsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether observability data should be routed to this microfrontend project or a root project.
 final class GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled
-          ._(false);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2Enabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._(value);
 
-  static const all =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-          ._('all');
-  static const allExceptCustomDomains =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-          ._('all_except_custom_domains');
-  static const preview =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-          ._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-          ._('prod_deployment_urls_and_all_previews');
-  static const production =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType
-          ._('production');
+  static const all = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._('all');
+  static const allExceptCustomDomains = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._('all_except_custom_domains');
+  static const preview = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._('prod_deployment_urls_and_all_previews');
+  static const production = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0DeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode._(value);
 
-  static const additional =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode
-          ._('additional');
-  static const exclusive =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode
-          ._('exclusive');
+  static const additional = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode._('additional');
+  static const exclusive = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode._('exclusive');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant0ProtectionMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._(value);
 
-  static const all =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-          ._('all');
-  static const allExceptCustomDomains =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-          ._('all_except_custom_domains');
-  static const preview =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-          ._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-          ._('prod_deployment_urls_and_all_previews');
-  static const production =
-      GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType
-          ._('production');
+  static const all = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._('all');
+  static const allExceptCustomDomains = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._('all_except_custom_domains');
+  static const preview = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._('prod_deployment_urls_and_all_previews');
+  static const production = GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemTrustedIpsVariant1DeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetOrderResponseDomainsItemVariant0ErrorVariant0Code {
+
   final String value;
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant0Code._(this.value);
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant0Code.fromJson(
-          String value) =>
-      GetOrderResponseDomainsItemVariant0ErrorVariant0Code._(value);
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant0Code.fromJson(String value) => GetOrderResponseDomainsItemVariant0ErrorVariant0Code._(value);
 
-  static const unsupportedLanguageCode =
-      GetOrderResponseDomainsItemVariant0ErrorVariant0Code._(
-          'unsupported-language-code');
+  static const unsupportedLanguageCode = GetOrderResponseDomainsItemVariant0ErrorVariant0Code._('unsupported-language-code');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetOrderResponseDomainsItemVariant0ErrorVariant0Code &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetOrderResponseDomainsItemVariant0ErrorVariant0Code && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetOrderResponseDomainsItemVariant0ErrorVariant1Code {
+
   final String value;
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant1Code._(this.value);
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant1Code.fromJson(
-          String value) =>
-      GetOrderResponseDomainsItemVariant0ErrorVariant1Code._(value);
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant1Code.fromJson(String value) => GetOrderResponseDomainsItemVariant0ErrorVariant1Code._(value);
 
-  static const incorrectLanguageCode =
-      GetOrderResponseDomainsItemVariant0ErrorVariant1Code._(
-          'incorrect-language-code');
+  static const incorrectLanguageCode = GetOrderResponseDomainsItemVariant0ErrorVariant1Code._('incorrect-language-code');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetOrderResponseDomainsItemVariant0ErrorVariant1Code &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetOrderResponseDomainsItemVariant0ErrorVariant1Code && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetOrderResponseDomainsItemVariant0ErrorVariant2Code {
+
   final String value;
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant2Code._(this.value);
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant2Code.fromJson(
-          String value) =>
-      GetOrderResponseDomainsItemVariant0ErrorVariant2Code._(value);
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant2Code.fromJson(String value) => GetOrderResponseDomainsItemVariant0ErrorVariant2Code._(value);
 
-  static const clientTransferProhibited =
-      GetOrderResponseDomainsItemVariant0ErrorVariant2Code._(
-          'client-transfer-prohibited');
+  static const clientTransferProhibited = GetOrderResponseDomainsItemVariant0ErrorVariant2Code._('client-transfer-prohibited');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetOrderResponseDomainsItemVariant0ErrorVariant2Code &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetOrderResponseDomainsItemVariant0ErrorVariant2Code && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetOrderResponseDomainsItemVariant0ErrorVariant3Code {
+
   final String value;
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant3Code._(this.value);
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant3Code.fromJson(
-          String value) =>
-      GetOrderResponseDomainsItemVariant0ErrorVariant3Code._(value);
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant3Code.fromJson(String value) => GetOrderResponseDomainsItemVariant0ErrorVariant3Code._(value);
 
-  static const incorrectAuthCode =
-      GetOrderResponseDomainsItemVariant0ErrorVariant3Code._(
-          'incorrect-auth-code');
+  static const incorrectAuthCode = GetOrderResponseDomainsItemVariant0ErrorVariant3Code._('incorrect-auth-code');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetOrderResponseDomainsItemVariant0ErrorVariant3Code &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetOrderResponseDomainsItemVariant0ErrorVariant3Code && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetOrderResponseDomainsItemVariant0ErrorVariant4Code {
+
   final String value;
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant4Code._(this.value);
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant4Code.fromJson(
-          String value) =>
-      GetOrderResponseDomainsItemVariant0ErrorVariant4Code._(value);
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant4Code.fromJson(String value) => GetOrderResponseDomainsItemVariant0ErrorVariant4Code._(value);
 
-  static const claimsNoticeRequired =
-      GetOrderResponseDomainsItemVariant0ErrorVariant4Code._(
-          'claims-notice-required');
+  static const claimsNoticeRequired = GetOrderResponseDomainsItemVariant0ErrorVariant4Code._('claims-notice-required');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetOrderResponseDomainsItemVariant0ErrorVariant4Code &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetOrderResponseDomainsItemVariant0ErrorVariant4Code && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetOrderResponseDomainsItemVariant0ErrorVariant5Code {
+
   final String value;
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant5Code._(this.value);
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant5Code.fromJson(
-          String value) =>
-      GetOrderResponseDomainsItemVariant0ErrorVariant5Code._(value);
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant5Code.fromJson(String value) => GetOrderResponseDomainsItemVariant0ErrorVariant5Code._(value);
 
-  static const cannotTransferInUntil =
-      GetOrderResponseDomainsItemVariant0ErrorVariant5Code._(
-          'cannot-transfer-in-until');
+  static const cannotTransferInUntil = GetOrderResponseDomainsItemVariant0ErrorVariant5Code._('cannot-transfer-in-until');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetOrderResponseDomainsItemVariant0ErrorVariant5Code &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetOrderResponseDomainsItemVariant0ErrorVariant5Code && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -8,45 +8,26 @@ class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditio
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<dynamic> items;
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type
-      type_;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type type_;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2(
-      {required this.items, required this.type_});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2({required this.items, required this.type_});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2 Function(
-      {List<dynamic> items,
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type
-          type_}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2 Function({List<dynamic> items, ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type type_}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2
-      _copyWith(
-              {Object? items = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2(
-            items: identical(items, sdkOmittedValue)
-                ? this.items
-                : items as List<dynamic>,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2 _copyWith({Object? items = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2(
+    items: identical(items, sdkOmittedValue) ? this.items : items as List<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2(
-        items: ((json['items'] as List?)?.map((e) => e).toList())!,
-        type_: (json['type'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2(
+    items: ((json['items'] as List?)?.map((e) => e).toList())!,
+    type_: (json['type'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'items': items,
-        'type': type_.toJson(),
-      };
+    'items': items,
+    'type': type_.toJson(),
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3 {
@@ -54,185 +35,95 @@ class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditio
   static const String constructionSurface = 'named';
   final String flags;
   final String pattern;
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type
-      type_;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type type_;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3(
-      {required this.flags, required this.pattern, required this.type_});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3({required this.flags, required this.pattern, required this.type_});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3 Function(
-      {String flags,
-      String pattern,
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type
-          type_}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3 Function({String flags, String pattern, ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type type_}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3
-      _copyWith(
-              {Object? flags = sdkOmittedValue,
-              Object? pattern = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3(
-            flags: identical(flags, sdkOmittedValue)
-                ? this.flags
-                : flags as String,
-            pattern: identical(pattern, sdkOmittedValue)
-                ? this.pattern
-                : pattern as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3 _copyWith({Object? flags = sdkOmittedValue, Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3(
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3(
-        flags: (json['flags'] as String?)!,
-        pattern: (json['pattern'] as String?)!,
-        type_: (json['type'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3(
+    flags: (json['flags'] as String?)!,
+    pattern: (json['pattern'] as String?)!,
+    type_: (json['type'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemRhsVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'flags': flags,
-        'pattern': pattern,
-        'type': type_.toJson(),
-      };
+    'flags': flags,
+    'pattern': pattern,
+    'type': type_.toJson(),
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
-      cmp;
-  final SdkOptional<
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions>
-      cmpOptions;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp cmp;
+  final SdkOptional<ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions> cmpOptions;
   final dynamic lhs;
   final SdkOptional<dynamic> rhs;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem(
-      {required this.cmp,
-      this.cmpOptions = const SdkOmitted(),
-      required this.lhs,
-      this.rhs = const SdkOmitted()});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem({required this.cmp, this.cmpOptions = const SdkOmitted(), required this.lhs, this.rhs = const SdkOmitted()});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem Function(
-      {ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
-          cmp,
-      SdkOptional<
-              ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions>
-          cmpOptions,
-      dynamic lhs,
-      SdkOptional<dynamic> rhs}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem Function({ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp cmp, SdkOptional<ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions> cmpOptions, dynamic lhs, SdkOptional<dynamic> rhs}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem
-      _copyWith(
-              {Object? cmp = sdkOmittedValue,
-              Object? cmpOptions = sdkOmittedValue,
-              Object? lhs = sdkOmittedValue,
-              Object? rhs = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem(
-            cmp: identical(cmp, sdkOmittedValue)
-                ? this.cmp
-                : cmp
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp,
-            cmpOptions: identical(cmpOptions, sdkOmittedValue)
-                ? this.cmpOptions
-                : cmpOptions as SdkOptional<
-                    ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions>,
-            lhs: identical(lhs, sdkOmittedValue) ? this.lhs : lhs as dynamic,
-            rhs: identical(rhs, sdkOmittedValue)
-                ? this.rhs
-                : rhs as SdkOptional<dynamic>,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem _copyWith({Object? cmp = sdkOmittedValue, Object? cmpOptions = sdkOmittedValue, Object? lhs = sdkOmittedValue, Object? rhs = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem(
+    cmp: identical(cmp, sdkOmittedValue) ? this.cmp : cmp as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp,
+    cmpOptions: identical(cmpOptions, sdkOmittedValue) ? this.cmpOptions : cmpOptions as SdkOptional<ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions>,
+    lhs: identical(lhs, sdkOmittedValue) ? this.lhs : lhs as dynamic,
+    rhs: identical(rhs, sdkOmittedValue) ? this.rhs : rhs as SdkOptional<dynamic>,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem(
-        cmp: (json['cmp'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
-                .fromJson(json['cmp'] as String)
-            : null)!,
-        cmpOptions: json['cmpOptions'] != null
-            ? SdkPresent((json['cmpOptions'] != null
-                ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions
-                    .fromJson(json['cmpOptions'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        lhs: (json['lhs'])!,
-        rhs: json['rhs'] != null
-            ? SdkPresent((json['rhs'])!)
-            : const SdkOmitted(),
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItem(
+    cmp: (json['cmp'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp.fromJson(json['cmp'] as String) : null)!,
+    cmpOptions: json['cmpOptions'] != null ? SdkPresent((json['cmpOptions'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions.fromJson(json['cmpOptions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    lhs: (json['lhs'])!,
+    rhs: json['rhs'] != null ? SdkPresent((json['rhs'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'cmp': cmp.toJson(),
-        ...switch (cmpOptions) {
-          SdkPresent<
-                ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions>(
-            value: final value
-          ) =>
-            {
-              'cmpOptions': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'lhs': lhs,
-        ...switch (rhs) {
-          SdkPresent<dynamic>(value: final value) => {
-              'rhs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'cmp': cmp.toJson(),
+    ...switch (cmpOptions) {
+      SdkPresent<ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptions>(value: final value) => {'cmpOptions': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'lhs': lhs,
+    ...switch (rhs) {
+      SdkPresent<dynamic>(value: final value) => {'rhs': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type
-      type_;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type type_;
   final String variantId;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0(
-      {required this.type_, required this.variantId});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0({required this.type_, required this.variantId});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0 Function(
-      {ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type
-          type_,
-      String variantId}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0 Function({ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type type_, String variantId}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0
-      _copyWith(
-              {Object? type_ = sdkOmittedValue,
-              Object? variantId = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type,
-            variantId: identical(variantId, sdkOmittedValue)
-                ? this.variantId
-                : variantId as String,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? variantId = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type,
+    variantId: identical(variantId, sdkOmittedValue) ? this.variantId : variantId as String,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0(
-        type_: (json['type'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        variantId: (json['variantId'] as String?)!,
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0(
+    type_: (json['type'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant0Type.fromJson(json['type'] as String) : null)!,
+    variantId: (json['variantId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'variantId': variantId,
-      };
+    'type': type_.toJson(),
+    'variantId': variantId,
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base {
@@ -240,123 +131,63 @@ class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeV
   static const String constructionSurface = 'named';
   final String attribute;
   final String kind;
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType
-      type_;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType type_;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base(
-      {required this.attribute, required this.kind, required this.type_});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base({required this.attribute, required this.kind, required this.type_});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base Function(
-      {String attribute,
-      String kind,
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType
-          type_}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base Function({String attribute, String kind, ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType type_}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base
-      _copyWith(
-              {Object? attribute = sdkOmittedValue,
-              Object? kind = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base(
-            attribute: identical(attribute, sdkOmittedValue)
-                ? this.attribute
-                : attribute as String,
-            kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1BaseType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base
-      base_;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base base_;
   final String defaultVariantId;
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type
-      type_;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type type_;
   final Map<String, double> weights;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1(
-      {required this.base_,
-      required this.defaultVariantId,
-      required this.type_,
-      required this.weights});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1({required this.base_, required this.defaultVariantId, required this.type_, required this.weights});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1 Function(
-      {ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base
-          base_,
-      String defaultVariantId,
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type
-          type_,
-      Map<String, double> weights}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1 Function({ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base base_, String defaultVariantId, ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type type_, Map<String, double> weights}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1
-      _copyWith(
-              {Object? base_ = sdkOmittedValue,
-              Object? defaultVariantId = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue,
-              Object? weights = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1(
-            base_: identical(base_, sdkOmittedValue)
-                ? this.base_
-                : base_
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base,
-            defaultVariantId: identical(defaultVariantId, sdkOmittedValue)
-                ? this.defaultVariantId
-                : defaultVariantId as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type,
-            weights: identical(weights, sdkOmittedValue)
-                ? this.weights
-                : weights as Map<String, double>,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1 _copyWith({Object? base_ = sdkOmittedValue, Object? defaultVariantId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? weights = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1(
+    base_: identical(base_, sdkOmittedValue) ? this.base_ : base_ as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base,
+    defaultVariantId: identical(defaultVariantId, sdkOmittedValue) ? this.defaultVariantId : defaultVariantId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type,
+    weights: identical(weights, sdkOmittedValue) ? this.weights : weights as Map<String, double>,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1(
-        base_: (json['base'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base
-                .fromJson(json['base'] as Map<String, dynamic>)
-            : null)!,
-        defaultVariantId: (json['defaultVariantId'] as String?)!,
-        type_: (json['type'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        weights: (json['weights'] == null
-            ? null
-            : Map<String, dynamic>.from(json['weights'] as Map).map(
-                (key, value) => MapEntry(key, (value as num).toDouble())))!,
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1(
+    base_: (json['base'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Base.fromJson(json['base'] as Map<String, dynamic>) : null)!,
+    defaultVariantId: (json['defaultVariantId'] as String?)!,
+    type_: (json['type'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant1Type.fromJson(json['type'] as String) : null)!,
+    weights: (json['weights'] == null ? null : Map<String, dynamic>.from(json['weights'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'base': base_.toJson(),
-        'defaultVariantId': defaultVariantId,
-        'type': type_.toJson(),
-        'weights': weights,
-      };
+    'base': base_.toJson(),
+    'defaultVariantId': defaultVariantId,
+    'type': type_.toJson(),
+    'weights': weights,
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base {
@@ -364,50 +195,29 @@ class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeV
   static const String constructionSurface = 'named';
   final String attribute;
   final String kind;
-  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType
-      type_;
+  final ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType type_;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base(
-      {required this.attribute, required this.kind, required this.type_});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base({required this.attribute, required this.kind, required this.type_});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base Function(
-      {String attribute,
-      String kind,
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType
-          type_}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base Function({String attribute, String kind, ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType type_}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base
-      _copyWith(
-              {Object? attribute = sdkOmittedValue,
-              Object? kind = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base(
-            attribute: identical(attribute, sdkOmittedValue)
-                ? this.attribute
-                : attribute as String,
-            kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2Base(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2BaseType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }
 
 class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem {
@@ -416,34 +226,22 @@ class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeV
   final double durationMs;
   final double promille;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem(
-      {required this.durationMs, required this.promille});
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem({required this.durationMs, required this.promille});
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem
-      Function({double durationMs, double promille}) get copyWith => _copyWith;
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem Function({double durationMs, double promille}) get copyWith => _copyWith;
 
-  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem
-      _copyWith(
-              {Object? durationMs = sdkOmittedValue,
-              Object? promille = sdkOmittedValue}) =>
-          ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem(
-            durationMs: identical(durationMs, sdkOmittedValue)
-                ? this.durationMs
-                : durationMs as double,
-            promille: identical(promille, sdkOmittedValue)
-                ? this.promille
-                : promille as double,
-          );
+  ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem _copyWith({Object? durationMs = sdkOmittedValue, Object? promille = sdkOmittedValue}) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem(
+    durationMs: identical(durationMs, sdkOmittedValue) ? this.durationMs : durationMs as double,
+    promille: identical(promille, sdkOmittedValue) ? this.promille : promille as double,
+  );
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem(
-        durationMs: ((json['durationMs'] as num?)?.toDouble())!,
-        promille: ((json['promille'] as num?)?.toDouble())!,
-      );
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem.fromJson(Map<String, dynamic> json) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemOutcomeVariant2SlotsItem(
+    durationMs: ((json['durationMs'] as num?)?.toDouble())!,
+    promille: ((json['promille'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'durationMs': durationMs,
-        'promille': promille,
-      };
+    'durationMs': durationMs,
+    'promille': promille,
+  };
 }

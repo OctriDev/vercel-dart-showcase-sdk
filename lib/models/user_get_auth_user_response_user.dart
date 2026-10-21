@@ -10,27 +10,11 @@ sealed class GetAuthUserResponseUser {
   const GetAuthUserResponseUser();
   factory GetAuthUserResponseUser.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = AuthUser.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetAuthUserResponseUserAuthUser(value);
-        }
-      } catch (_) {}
-      try {
-        final value = AuthUserLimited.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetAuthUserResponseUserAuthUserLimited(value);
-        }
-      } catch (_) {}
+      try { final value = AuthUser.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetAuthUserResponseUserAuthUser(value); } } catch (_) {}
+      try { final value = AuthUserLimited.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetAuthUserResponseUserAuthUserLimited(value); } } catch (_) {}
     }
-    try {
-      return GetAuthUserResponseUserAuthUser(
-          AuthUser.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetAuthUserResponseUserAuthUserLimited(
-          AuthUserLimited.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return GetAuthUserResponseUserAuthUser(AuthUser.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetAuthUserResponseUserAuthUserLimited(AuthUserLimited.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for GetAuthUserResponseUser");
   }
   Object? toJson();
@@ -39,14 +23,11 @@ sealed class GetAuthUserResponseUser {
 final class GetAuthUserResponseUserAuthUser extends GetAuthUserResponseUser {
   final AuthUser value;
   const GetAuthUserResponseUserAuthUser(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetAuthUserResponseUserAuthUserLimited
-    extends GetAuthUserResponseUser {
+final class GetAuthUserResponseUserAuthUserLimited extends GetAuthUserResponseUser {
   final AuthUserLimited value;
   const GetAuthUserResponseUserAuthUserLimited(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

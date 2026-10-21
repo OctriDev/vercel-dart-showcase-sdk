@@ -13,28 +13,26 @@ import '../types.dart';
 /// [id] The ID of the deployment the aliases should be listed for
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListAliasesForDeploymentResponse> listAliasesForDeployment(
-    ClientConfig config,
-    {required String id,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<ListAliasesForDeploymentResponse>
+    listAliasesForDeployment(ClientConfig config,
+        {required String id,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<ListAliasesForDeploymentResponse>('GET',
           '/v2/deployments/${Uri.encodeComponent(id.toString())}/aliases',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAliasesForDeployment',
-          fromJsonRaw: (value) => ListAliasesForDeploymentResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListAliasesForDeploymentResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates an alias for the deployment identified by a deployment or alias ID or URL. Provide the alias name in `alias`, and optionally set `redirect` to route the alias to another hostname with a 307 status code. If the alias is already assigned to another deployment, it is removed from that deployment and assigned to this one.
 ///
@@ -58,10 +56,8 @@ Future<AssignAliasResponse> assignAlias(ClientConfig config,
           '/v2/deployments/${Uri.encodeComponent(id.toString())}/aliases',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'alias': SdkUtils.unwrapOptional(alias),
@@ -69,11 +65,11 @@ Future<AssignAliasResponse> assignAlias(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'assignAlias',
-          fromJsonRaw: (value) =>
-              AssignAliasResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AssignAliasResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists aliases for the authenticated user or team, with optional filters for domain, project, creation time, or rollback deployment. Use `limit` to control the number of aliases returned, and inspect `pagination` for the previous and next page values.
 ///
@@ -103,34 +99,23 @@ Future<ListAliasesResponse> listAliases(ClientConfig config,
   return (await sdkRequest<ListAliasesResponse>('GET', '/v4/aliases',
           config: config,
           query: {
-            'domain': SdkQueryValue(SdkUtils.unwrapOptional(domain),
-                style: 'form', explode: true),
-            'from': SdkQueryValue(SdkUtils.unwrapOptional(from),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'rollbackDeploymentId': SdkQueryValue(
-                SdkUtils.unwrapOptional(rollbackDeploymentId),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'domain': SdkQueryValue(SdkUtils.unwrapOptional(domain), style: 'form', explode: true),
+            'from': SdkQueryValue(SdkUtils.unwrapOptional(from), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'rollbackDeploymentId': SdkQueryValue(SdkUtils.unwrapOptional(rollbackDeploymentId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAliases',
-          fromJsonRaw: (value) =>
-              ListAliasesResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListAliasesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves an alias by its hostname or alias ID. Use `projectId` to restrict the result to an alias assigned to a specific project, or use `since` and `until` to filter by creation time.
 ///
@@ -157,26 +142,20 @@ Future<GetAliasResponse> getAlias(ClientConfig config,
           'GET', '/v4/aliases/${Uri.encodeComponent(idOrAlias.toString())}',
           config: config,
           query: {
-            'from': SdkQueryValue(SdkUtils.unwrapOptional(from),
-                style: 'form', explode: true),
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'from': SdkQueryValue(SdkUtils.unwrapOptional(from), style: 'form', explode: true),
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getAlias',
-          fromJsonRaw: (value) =>
-              GetAliasResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetAliasResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an alias by its ID or alias name. Use `teamId` or `slug` to specify the team context for the request. A successful response confirms that the alias was removed.
 ///
@@ -194,18 +173,16 @@ Future<DeleteAliasResponse> deleteAlias(ClientConfig config,
           'DELETE', '/v2/aliases/${Uri.encodeComponent(aliasId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteAlias',
-          fromJsonRaw: (value) =>
-              DeleteAliasResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteAliasResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates protection-bypass settings for an alias or deployment URL. Use the request body to configure a shareable link, user-scoped access, or an override for access behavior. The `ttl` value for a shareable link cannot exceed 63,072,000 seconds.
 ///
@@ -224,16 +201,13 @@ Future<Map<String, Object?>> patchUrlProtectionBypass(ClientConfig config,
           '/aliases/${Uri.encodeComponent(id.toString())}/protection-bypass',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: SdkUtils.unwrapOptional(body),
           decoder: SdkResponseDecoder.json,
           operationId: 'patchUrlProtectionBypass',
-          fromJsonRaw: (value) => Map<String, dynamic>.from(value as Map)
-              .map((key, value) => MapEntry(key, value)),
+          fromJsonRaw: (value) => Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, value)),
           options: requestOptions))
       .data;
 }

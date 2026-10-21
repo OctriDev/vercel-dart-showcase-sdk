@@ -8,215 +8,84 @@ part of 'inline.dart';
 class UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether consolidated commit status is enabled.
-  final UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
-      enabled;
-
+  final UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled enabled;
   /// Whether to propagate individual deployment failures to the consolidated status.
-  final UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-      propagateFailures;
+  final UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures propagateFailures;
 
-  const UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus(
-      {required this.enabled, required this.propagateFailures});
+  const UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus({required this.enabled, required this.propagateFailures});
 
-  UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus Function(
-      {UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
-          enabled,
-      UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-          propagateFailures}) get copyWith => _copyWith;
+  UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus Function({UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled enabled, UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures propagateFailures}) get copyWith => _copyWith;
 
-  UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? propagateFailures = sdkOmittedValue}) =>
-      UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled
-                as UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled,
-        propagateFailures: identical(propagateFailures, sdkOmittedValue)
-            ? this.propagateFailures
-            : propagateFailures
-                as UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures,
-      );
+  UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus _copyWith({Object? enabled = sdkOmittedValue, Object? propagateFailures = sdkOmittedValue}) => UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled,
+    propagateFailures: identical(propagateFailures, sdkOmittedValue) ? this.propagateFailures : propagateFailures as UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures,
+  );
 
-  factory UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus(
-        enabled: (json['enabled'] != null
-            ? UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
-                .fromJson(json['enabled'] as bool)
-            : null)!,
-        propagateFailures: (json['propagateFailures'] != null
-            ? UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
-                .fromJson(json['propagateFailures'] as bool)
-            : null)!,
-      );
+  factory UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus.fromJson(Map<String, dynamic> json) => UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus(
+    enabled: (json['enabled'] != null ? UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(json['enabled'] as bool) : null)!,
+    propagateFailures: (json['propagateFailures'] != null ? UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures.fromJson(json['propagateFailures'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-        'propagateFailures': propagateFailures.toJson(),
-      };
+    'enabled': enabled.toJson(),
+    'propagateFailures': propagateFailures.toJson(),
+  };
 }
 
 class UpdateProjectResponseGitProviderOptions {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Configuration for consolidated git commit status reporting. When enabled, Vercel will post a single consolidated commit status instead of individual statuses for each deployment.
-  final SdkOptional<
-          UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus>
-      consolidatedGitCommitStatus;
-
+  final SdkOptional<UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus> consolidatedGitCommitStatus;
   /// Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead
-  final UpdateProjectResponseGitProviderOptionsCreateDeployments
-      createDeployments;
-
+  final UpdateProjectResponseGitProviderOptionsCreateDeployments createDeployments;
   /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`.
-  final SdkOptional<
-          UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents>
-      disableRepositoryDispatchEvents;
-
+  final SdkOptional<UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents> disableRepositoryDispatchEvents;
   /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
-  final SdkOptional<UpdateProjectResponseGitProviderOptionsGitCommitStatus>
-      gitCommitStatus;
-
+  final SdkOptional<UpdateProjectResponseGitProviderOptionsGitCommitStatus> gitCommitStatus;
   /// Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`.
-  final SdkOptional<
-          UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits>
-      requireVerifiedCommits;
+  final SdkOptional<UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits> requireVerifiedCommits;
 
-  const UpdateProjectResponseGitProviderOptions(
-      {this.consolidatedGitCommitStatus = const SdkOmitted(),
-      required this.createDeployments,
-      this.disableRepositoryDispatchEvents = const SdkOmitted(),
-      this.gitCommitStatus = const SdkOmitted(),
-      this.requireVerifiedCommits = const SdkOmitted()});
+  const UpdateProjectResponseGitProviderOptions({this.consolidatedGitCommitStatus = const SdkOmitted(), required this.createDeployments, this.disableRepositoryDispatchEvents = const SdkOmitted(), this.gitCommitStatus = const SdkOmitted(), this.requireVerifiedCommits = const SdkOmitted()});
 
-  UpdateProjectResponseGitProviderOptions Function(
-      {SdkOptional<
-              UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus>
-          consolidatedGitCommitStatus,
-      UpdateProjectResponseGitProviderOptionsCreateDeployments
-          createDeployments,
-      SdkOptional<
-              UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents>
-          disableRepositoryDispatchEvents,
-      SdkOptional<UpdateProjectResponseGitProviderOptionsGitCommitStatus>
-          gitCommitStatus,
-      SdkOptional<UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits>
-          requireVerifiedCommits}) get copyWith => _copyWith;
+  UpdateProjectResponseGitProviderOptions Function({SdkOptional<UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus> consolidatedGitCommitStatus, UpdateProjectResponseGitProviderOptionsCreateDeployments createDeployments, SdkOptional<UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents> disableRepositoryDispatchEvents, SdkOptional<UpdateProjectResponseGitProviderOptionsGitCommitStatus> gitCommitStatus, SdkOptional<UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits> requireVerifiedCommits}) get copyWith => _copyWith;
 
-  UpdateProjectResponseGitProviderOptions _copyWith(
-          {Object? consolidatedGitCommitStatus = sdkOmittedValue,
-          Object? createDeployments = sdkOmittedValue,
-          Object? disableRepositoryDispatchEvents = sdkOmittedValue,
-          Object? gitCommitStatus = sdkOmittedValue,
-          Object? requireVerifiedCommits = sdkOmittedValue}) =>
-      UpdateProjectResponseGitProviderOptions(
-        consolidatedGitCommitStatus: identical(
-                consolidatedGitCommitStatus, sdkOmittedValue)
-            ? this.consolidatedGitCommitStatus
-            : consolidatedGitCommitStatus as SdkOptional<
-                UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus>,
-        createDeployments: identical(createDeployments, sdkOmittedValue)
-            ? this.createDeployments
-            : createDeployments
-                as UpdateProjectResponseGitProviderOptionsCreateDeployments,
-        disableRepositoryDispatchEvents: identical(
-                disableRepositoryDispatchEvents, sdkOmittedValue)
-            ? this.disableRepositoryDispatchEvents
-            : disableRepositoryDispatchEvents as SdkOptional<
-                UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents>,
-        gitCommitStatus: identical(gitCommitStatus, sdkOmittedValue)
-            ? this.gitCommitStatus
-            : gitCommitStatus as SdkOptional<
-                UpdateProjectResponseGitProviderOptionsGitCommitStatus>,
-        requireVerifiedCommits: identical(
-                requireVerifiedCommits, sdkOmittedValue)
-            ? this.requireVerifiedCommits
-            : requireVerifiedCommits as SdkOptional<
-                UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits>,
-      );
+  UpdateProjectResponseGitProviderOptions _copyWith({Object? consolidatedGitCommitStatus = sdkOmittedValue, Object? createDeployments = sdkOmittedValue, Object? disableRepositoryDispatchEvents = sdkOmittedValue, Object? gitCommitStatus = sdkOmittedValue, Object? requireVerifiedCommits = sdkOmittedValue}) => UpdateProjectResponseGitProviderOptions(
+    consolidatedGitCommitStatus: identical(consolidatedGitCommitStatus, sdkOmittedValue) ? this.consolidatedGitCommitStatus : consolidatedGitCommitStatus as SdkOptional<UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus>,
+    createDeployments: identical(createDeployments, sdkOmittedValue) ? this.createDeployments : createDeployments as UpdateProjectResponseGitProviderOptionsCreateDeployments,
+    disableRepositoryDispatchEvents: identical(disableRepositoryDispatchEvents, sdkOmittedValue) ? this.disableRepositoryDispatchEvents : disableRepositoryDispatchEvents as SdkOptional<UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents>,
+    gitCommitStatus: identical(gitCommitStatus, sdkOmittedValue) ? this.gitCommitStatus : gitCommitStatus as SdkOptional<UpdateProjectResponseGitProviderOptionsGitCommitStatus>,
+    requireVerifiedCommits: identical(requireVerifiedCommits, sdkOmittedValue) ? this.requireVerifiedCommits : requireVerifiedCommits as SdkOptional<UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits>,
+  );
 
-  factory UpdateProjectResponseGitProviderOptions.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseGitProviderOptions(
-        consolidatedGitCommitStatus: json['consolidatedGitCommitStatus'] != null
-            ? SdkPresent((json['consolidatedGitCommitStatus'] != null
-                ? UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus
-                    .fromJson(json['consolidatedGitCommitStatus']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        createDeployments: (json['createDeployments'] != null
-            ? UpdateProjectResponseGitProviderOptionsCreateDeployments.fromJson(
-                json['createDeployments'] as String)
-            : null)!,
-        disableRepositoryDispatchEvents: json[
-                    'disableRepositoryDispatchEvents'] !=
-                null
-            ? SdkPresent((json['disableRepositoryDispatchEvents'] != null
-                ? UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents
-                    .fromJson(json['disableRepositoryDispatchEvents'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        gitCommitStatus: json['gitCommitStatus'] != null
-            ? SdkPresent((json['gitCommitStatus'] != null
-                ? UpdateProjectResponseGitProviderOptionsGitCommitStatus
-                    .fromJson(json['gitCommitStatus'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        requireVerifiedCommits: json['requireVerifiedCommits'] != null
-            ? SdkPresent((json['requireVerifiedCommits'] != null
-                ? UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits
-                    .fromJson(json['requireVerifiedCommits'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateProjectResponseGitProviderOptions.fromJson(Map<String, dynamic> json) => UpdateProjectResponseGitProviderOptions(
+    consolidatedGitCommitStatus: json['consolidatedGitCommitStatus'] != null ? SdkPresent((json['consolidatedGitCommitStatus'] != null ? UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus.fromJson(json['consolidatedGitCommitStatus'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    createDeployments: (json['createDeployments'] != null ? UpdateProjectResponseGitProviderOptionsCreateDeployments.fromJson(json['createDeployments'] as String) : null)!,
+    disableRepositoryDispatchEvents: json['disableRepositoryDispatchEvents'] != null ? SdkPresent((json['disableRepositoryDispatchEvents'] != null ? UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents.fromJson(json['disableRepositoryDispatchEvents'] as bool) : null)!) : const SdkOmitted(),
+    gitCommitStatus: json['gitCommitStatus'] != null ? SdkPresent((json['gitCommitStatus'] != null ? UpdateProjectResponseGitProviderOptionsGitCommitStatus.fromJson(json['gitCommitStatus'] as bool) : null)!) : const SdkOmitted(),
+    requireVerifiedCommits: json['requireVerifiedCommits'] != null ? SdkPresent((json['requireVerifiedCommits'] != null ? UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits.fromJson(json['requireVerifiedCommits'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (consolidatedGitCommitStatus) {
-          SdkPresent<
-                UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus>(
-            value: final value
-          ) =>
-            {
-              'consolidatedGitCommitStatus': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createDeployments': createDeployments.toJson(),
-        ...switch (disableRepositoryDispatchEvents) {
-          SdkPresent<
-                UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents>(
-            value: final value
-          ) =>
-            {
-              'disableRepositoryDispatchEvents': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitCommitStatus) {
-          SdkPresent<UpdateProjectResponseGitProviderOptionsGitCommitStatus>(
-            value: final value
-          ) =>
-            {
-              'gitCommitStatus': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requireVerifiedCommits) {
-          SdkPresent<
-                UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits>(
-            value: final value
-          ) =>
-            {
-              'requireVerifiedCommits': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (consolidatedGitCommitStatus) {
+      SdkPresent<UpdateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus>(value: final value) => {'consolidatedGitCommitStatus': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'createDeployments': createDeployments.toJson(),
+    ...switch (disableRepositoryDispatchEvents) {
+      SdkPresent<UpdateProjectResponseGitProviderOptionsDisableRepositoryDispatchEvents>(value: final value) => {'disableRepositoryDispatchEvents': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitCommitStatus) {
+      SdkPresent<UpdateProjectResponseGitProviderOptionsGitCommitStatus>(value: final value) => {'gitCommitStatus': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requireVerifiedCommits) {
+      SdkPresent<UpdateProjectResponseGitProviderOptionsRequireVerifiedCommits>(value: final value) => {'requireVerifiedCommits': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateProjectResponseIpBucketsItem {
@@ -226,65 +95,33 @@ class UpdateProjectResponseIpBucketsItem {
   final SdkOptional<UpdateProjectResponseIpBucketsItemDefault> default_;
   final SdkOptional<double> supportUntil;
 
-  const UpdateProjectResponseIpBucketsItem(
-      {required this.bucket,
-      this.default_ = const SdkOmitted(),
-      this.supportUntil = const SdkOmitted()});
+  const UpdateProjectResponseIpBucketsItem({required this.bucket, this.default_ = const SdkOmitted(), this.supportUntil = const SdkOmitted()});
 
-  UpdateProjectResponseIpBucketsItem Function(
-      {String bucket,
-      SdkOptional<UpdateProjectResponseIpBucketsItemDefault> default_,
-      SdkOptional<double> supportUntil}) get copyWith => _copyWith;
+  UpdateProjectResponseIpBucketsItem Function({String bucket, SdkOptional<UpdateProjectResponseIpBucketsItemDefault> default_, SdkOptional<double> supportUntil}) get copyWith => _copyWith;
 
-  UpdateProjectResponseIpBucketsItem _copyWith(
-          {Object? bucket = sdkOmittedValue,
-          Object? default_ = sdkOmittedValue,
-          Object? supportUntil = sdkOmittedValue}) =>
-      UpdateProjectResponseIpBucketsItem(
-        bucket:
-            identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
-        default_: identical(default_, sdkOmittedValue)
-            ? this.default_
-            : default_
-                as SdkOptional<UpdateProjectResponseIpBucketsItemDefault>,
-        supportUntil: identical(supportUntil, sdkOmittedValue)
-            ? this.supportUntil
-            : supportUntil as SdkOptional<double>,
-      );
+  UpdateProjectResponseIpBucketsItem _copyWith({Object? bucket = sdkOmittedValue, Object? default_ = sdkOmittedValue, Object? supportUntil = sdkOmittedValue}) => UpdateProjectResponseIpBucketsItem(
+    bucket: identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
+    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<UpdateProjectResponseIpBucketsItemDefault>,
+    supportUntil: identical(supportUntil, sdkOmittedValue) ? this.supportUntil : supportUntil as SdkOptional<double>,
+  );
 
-  factory UpdateProjectResponseIpBucketsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseIpBucketsItem(
-        bucket: (json['bucket'] as String?)!,
-        default_: json['default'] != null
-            ? SdkPresent((json['default'] != null
-                ? UpdateProjectResponseIpBucketsItemDefault.fromJson(
-                    json['default'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        supportUntil: json['supportUntil'] != null
-            ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateProjectResponseIpBucketsItem.fromJson(Map<String, dynamic> json) => UpdateProjectResponseIpBucketsItem(
+    bucket: (json['bucket'] as String?)!,
+    default_: json['default'] != null ? SdkPresent((json['default'] != null ? UpdateProjectResponseIpBucketsItemDefault.fromJson(json['default'] as bool) : null)!) : const SdkOmitted(),
+    supportUntil: json['supportUntil'] != null ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'bucket': bucket,
-        ...switch (default_) {
-          SdkPresent<UpdateProjectResponseIpBucketsItemDefault>(
-            value: final value
-          ) =>
-            {
-              'default': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (supportUntil) {
-          SdkPresent<double>(value: final value) => {
-              'supportUntil': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'bucket': bucket,
+    ...switch (default_) {
+      SdkPresent<UpdateProjectResponseIpBucketsItemDefault>(value: final value) => {'default': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (supportUntil) {
+      SdkPresent<double>(value: final value) => {'supportUntil': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateProjectResponseJobsFlagDefinitionsPresent {
@@ -292,30 +129,21 @@ class UpdateProjectResponseJobsFlagDefinitionsPresent {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const UpdateProjectResponseJobsFlagDefinitionsPresent(
-      {required this.targets});
+  const UpdateProjectResponseJobsFlagDefinitionsPresent({required this.targets});
 
-  UpdateProjectResponseJobsFlagDefinitionsPresent Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  UpdateProjectResponseJobsFlagDefinitionsPresent Function({List<String> targets}) get copyWith => _copyWith;
 
-  UpdateProjectResponseJobsFlagDefinitionsPresent _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      UpdateProjectResponseJobsFlagDefinitionsPresent(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  UpdateProjectResponseJobsFlagDefinitionsPresent _copyWith({Object? targets = sdkOmittedValue}) => UpdateProjectResponseJobsFlagDefinitionsPresent(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory UpdateProjectResponseJobsFlagDefinitionsPresent.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseJobsFlagDefinitionsPresent(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory UpdateProjectResponseJobsFlagDefinitionsPresent.fromJson(Map<String, dynamic> json) => UpdateProjectResponseJobsFlagDefinitionsPresent(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class UpdateProjectResponseJobsLint {
@@ -325,26 +153,19 @@ class UpdateProjectResponseJobsLint {
 
   const UpdateProjectResponseJobsLint({required this.targets});
 
-  UpdateProjectResponseJobsLint Function({List<String> targets}) get copyWith =>
-      _copyWith;
+  UpdateProjectResponseJobsLint Function({List<String> targets}) get copyWith => _copyWith;
 
-  UpdateProjectResponseJobsLint _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      UpdateProjectResponseJobsLint(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  UpdateProjectResponseJobsLint _copyWith({Object? targets = sdkOmittedValue}) => UpdateProjectResponseJobsLint(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory UpdateProjectResponseJobsLint.fromJson(Map<String, dynamic> json) =>
-      UpdateProjectResponseJobsLint(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory UpdateProjectResponseJobsLint.fromJson(Map<String, dynamic> json) => UpdateProjectResponseJobsLint(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class UpdateProjectResponseJobsMfeConfigPresent {
@@ -354,27 +175,19 @@ class UpdateProjectResponseJobsMfeConfigPresent {
 
   const UpdateProjectResponseJobsMfeConfigPresent({required this.targets});
 
-  UpdateProjectResponseJobsMfeConfigPresent Function({List<String> targets})
-      get copyWith => _copyWith;
+  UpdateProjectResponseJobsMfeConfigPresent Function({List<String> targets}) get copyWith => _copyWith;
 
-  UpdateProjectResponseJobsMfeConfigPresent _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      UpdateProjectResponseJobsMfeConfigPresent(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  UpdateProjectResponseJobsMfeConfigPresent _copyWith({Object? targets = sdkOmittedValue}) => UpdateProjectResponseJobsMfeConfigPresent(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory UpdateProjectResponseJobsMfeConfigPresent.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseJobsMfeConfigPresent(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory UpdateProjectResponseJobsMfeConfigPresent.fromJson(Map<String, dynamic> json) => UpdateProjectResponseJobsMfeConfigPresent(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class UpdateProjectResponseJobsTypecheck {
@@ -384,134 +197,63 @@ class UpdateProjectResponseJobsTypecheck {
 
   const UpdateProjectResponseJobsTypecheck({required this.targets});
 
-  UpdateProjectResponseJobsTypecheck Function({List<String> targets})
-      get copyWith => _copyWith;
+  UpdateProjectResponseJobsTypecheck Function({List<String> targets}) get copyWith => _copyWith;
 
-  UpdateProjectResponseJobsTypecheck _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      UpdateProjectResponseJobsTypecheck(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  UpdateProjectResponseJobsTypecheck _copyWith({Object? targets = sdkOmittedValue}) => UpdateProjectResponseJobsTypecheck(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory UpdateProjectResponseJobsTypecheck.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectResponseJobsTypecheck(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory UpdateProjectResponseJobsTypecheck.fromJson(Map<String, dynamic> json) => UpdateProjectResponseJobsTypecheck(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class UpdateProjectResponseJobs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UpdateProjectResponseJobsFlagDefinitionsPresent>
-      flagDefinitionsPresent;
+  final SdkOptional<UpdateProjectResponseJobsFlagDefinitionsPresent> flagDefinitionsPresent;
   final SdkOptional<UpdateProjectResponseJobsLint> lint;
   final SdkOptional<UpdateProjectResponseJobsMfeConfigPresent> mfeConfigPresent;
   final SdkOptional<UpdateProjectResponseJobsTypecheck> typecheck;
 
-  const UpdateProjectResponseJobs(
-      {this.flagDefinitionsPresent = const SdkOmitted(),
-      this.lint = const SdkOmitted(),
-      this.mfeConfigPresent = const SdkOmitted(),
-      this.typecheck = const SdkOmitted()});
+  const UpdateProjectResponseJobs({this.flagDefinitionsPresent = const SdkOmitted(), this.lint = const SdkOmitted(), this.mfeConfigPresent = const SdkOmitted(), this.typecheck = const SdkOmitted()});
 
-  UpdateProjectResponseJobs Function(
-      {SdkOptional<UpdateProjectResponseJobsFlagDefinitionsPresent>
-          flagDefinitionsPresent,
-      SdkOptional<UpdateProjectResponseJobsLint> lint,
-      SdkOptional<UpdateProjectResponseJobsMfeConfigPresent> mfeConfigPresent,
-      SdkOptional<UpdateProjectResponseJobsTypecheck>
-          typecheck}) get copyWith => _copyWith;
+  UpdateProjectResponseJobs Function({SdkOptional<UpdateProjectResponseJobsFlagDefinitionsPresent> flagDefinitionsPresent, SdkOptional<UpdateProjectResponseJobsLint> lint, SdkOptional<UpdateProjectResponseJobsMfeConfigPresent> mfeConfigPresent, SdkOptional<UpdateProjectResponseJobsTypecheck> typecheck}) get copyWith => _copyWith;
 
-  UpdateProjectResponseJobs _copyWith(
-          {Object? flagDefinitionsPresent = sdkOmittedValue,
-          Object? lint = sdkOmittedValue,
-          Object? mfeConfigPresent = sdkOmittedValue,
-          Object? typecheck = sdkOmittedValue}) =>
-      UpdateProjectResponseJobs(
-        flagDefinitionsPresent: identical(
-                flagDefinitionsPresent, sdkOmittedValue)
-            ? this.flagDefinitionsPresent
-            : flagDefinitionsPresent
-                as SdkOptional<UpdateProjectResponseJobsFlagDefinitionsPresent>,
-        lint: identical(lint, sdkOmittedValue)
-            ? this.lint
-            : lint as SdkOptional<UpdateProjectResponseJobsLint>,
-        mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue)
-            ? this.mfeConfigPresent
-            : mfeConfigPresent
-                as SdkOptional<UpdateProjectResponseJobsMfeConfigPresent>,
-        typecheck: identical(typecheck, sdkOmittedValue)
-            ? this.typecheck
-            : typecheck as SdkOptional<UpdateProjectResponseJobsTypecheck>,
-      );
+  UpdateProjectResponseJobs _copyWith({Object? flagDefinitionsPresent = sdkOmittedValue, Object? lint = sdkOmittedValue, Object? mfeConfigPresent = sdkOmittedValue, Object? typecheck = sdkOmittedValue}) => UpdateProjectResponseJobs(
+    flagDefinitionsPresent: identical(flagDefinitionsPresent, sdkOmittedValue) ? this.flagDefinitionsPresent : flagDefinitionsPresent as SdkOptional<UpdateProjectResponseJobsFlagDefinitionsPresent>,
+    lint: identical(lint, sdkOmittedValue) ? this.lint : lint as SdkOptional<UpdateProjectResponseJobsLint>,
+    mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue) ? this.mfeConfigPresent : mfeConfigPresent as SdkOptional<UpdateProjectResponseJobsMfeConfigPresent>,
+    typecheck: identical(typecheck, sdkOmittedValue) ? this.typecheck : typecheck as SdkOptional<UpdateProjectResponseJobsTypecheck>,
+  );
 
-  factory UpdateProjectResponseJobs.fromJson(Map<String, dynamic> json) =>
-      UpdateProjectResponseJobs(
-        flagDefinitionsPresent: json['flag-definitions-present'] != null
-            ? SdkPresent((json['flag-definitions-present'] != null
-                ? UpdateProjectResponseJobsFlagDefinitionsPresent.fromJson(
-                    json['flag-definitions-present'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        lint: json['lint'] != null
-            ? SdkPresent((json['lint'] != null
-                ? UpdateProjectResponseJobsLint.fromJson(
-                    json['lint'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        mfeConfigPresent: json['mfe-config-present'] != null
-            ? SdkPresent((json['mfe-config-present'] != null
-                ? UpdateProjectResponseJobsMfeConfigPresent.fromJson(
-                    json['mfe-config-present'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        typecheck: json['typecheck'] != null
-            ? SdkPresent((json['typecheck'] != null
-                ? UpdateProjectResponseJobsTypecheck.fromJson(
-                    json['typecheck'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateProjectResponseJobs.fromJson(Map<String, dynamic> json) => UpdateProjectResponseJobs(
+    flagDefinitionsPresent: json['flag-definitions-present'] != null ? SdkPresent((json['flag-definitions-present'] != null ? UpdateProjectResponseJobsFlagDefinitionsPresent.fromJson(json['flag-definitions-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    lint: json['lint'] != null ? SdkPresent((json['lint'] != null ? UpdateProjectResponseJobsLint.fromJson(json['lint'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    mfeConfigPresent: json['mfe-config-present'] != null ? SdkPresent((json['mfe-config-present'] != null ? UpdateProjectResponseJobsMfeConfigPresent.fromJson(json['mfe-config-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    typecheck: json['typecheck'] != null ? SdkPresent((json['typecheck'] != null ? UpdateProjectResponseJobsTypecheck.fromJson(json['typecheck'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (flagDefinitionsPresent) {
-          SdkPresent<UpdateProjectResponseJobsFlagDefinitionsPresent>(
-            value: final value
-          ) =>
-            {
-              'flag-definitions-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lint) {
-          SdkPresent<UpdateProjectResponseJobsLint>(value: final value) => {
-              'lint': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mfeConfigPresent) {
-          SdkPresent<UpdateProjectResponseJobsMfeConfigPresent>(
-            value: final value
-          ) =>
-            {
-              'mfe-config-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (typecheck) {
-          SdkPresent<UpdateProjectResponseJobsTypecheck>(value: final value) =>
-            {
-              'typecheck': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (flagDefinitionsPresent) {
+      SdkPresent<UpdateProjectResponseJobsFlagDefinitionsPresent>(value: final value) => {'flag-definitions-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lint) {
+      SdkPresent<UpdateProjectResponseJobsLint>(value: final value) => {'lint': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mfeConfigPresent) {
+      SdkPresent<UpdateProjectResponseJobsMfeConfigPresent>(value: final value) => {'mfe-config-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (typecheck) {
+      SdkPresent<UpdateProjectResponseJobsTypecheck>(value: final value) => {'typecheck': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

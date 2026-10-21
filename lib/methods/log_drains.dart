@@ -13,28 +13,26 @@ import '../types.dart';
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetConfigurableLogDrainResponse> getConfigurableLogDrain(
-    ClientConfig config,
-    {required String id,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetConfigurableLogDrainResponse>
+    getConfigurableLogDrain(ClientConfig config,
+        {required String id,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetConfigurableLogDrainResponse>(
           'GET', '/v1/log-drains/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConfigurableLogDrain',
-          fromJsonRaw: (value) => GetConfigurableLogDrainResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetConfigurableLogDrainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a configurable log drain owned by the authenticated team. Call this deprecated operation with a team AccessToken; integration OAuth2 clients are not allowed.
 ///
@@ -51,16 +49,15 @@ Future<void> deleteConfigurableLogDrain(ClientConfig config,
           'DELETE', '/v1/log-drains/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteConfigurableLogDrain',
           options: requestOptions))
       .data;
 }
+
 
 /// Lists log drains owned by the authenticated account. Use `projectId` or `projectIdOrName` to scope the list to a project, and `includeMetadata` to control whether project metadata is included; this deprecated operation requires an account AccessToken.
 ///
@@ -82,20 +79,11 @@ Future<dynamic> listLogDrains(ClientConfig config,
   return (await sdkRequest<dynamic>('GET', '/v1/log-drains',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'projectIdOrName': SdkQueryValue(
-                SdkUtils.unwrapOptional(projectIdOrName),
-                style: 'form',
-                explode: true),
-            'includeMetadata': SdkQueryValue(
-                SdkUtils.unwrapOptional(includeMetadata),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'projectIdOrName': SdkQueryValue(SdkUtils.unwrapOptional(projectIdOrName), style: 'form', explode: true),
+            'includeMetadata': SdkQueryValue(SdkUtils.unwrapOptional(includeMetadata), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listLogDrains',
@@ -103,6 +91,7 @@ Future<dynamic> listLogDrains(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a configurable log drain for the authenticated team. Supply `deliveryFormat`, `url`, and `sources`; use the remaining fields to select projects, environments, headers, and sampling behavior. Call this deprecated operation with a team AccessToken, not an integration OAuth2 client.
 ///
@@ -118,16 +107,14 @@ Future<dynamic> listLogDrains(ClientConfig config,
 ///   percentage rate between 0 and 100. With max 2 decimal points
 /// [name] The custom name of this log drain.
 Future<Map<String, dynamic>> createConfigurableLogDrain(ClientConfig config,
-    {required CreateConfigurableLogDrainRequestBodyDeliveryFormat
-        deliveryFormat,
+    {required CreateConfigurableLogDrainRequestBodyDeliveryFormat deliveryFormat,
     required String url,
     required List<CreateConfigurableLogDrainRequestBodySourcesItem> sources,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<Map<String, String>> headers = const SdkOmitted(),
     SdkOptional<List<String>> projectIds = const SdkOmitted(),
-    SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>
-        environments = const SdkOmitted(),
+    SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>> environments = const SdkOmitted(),
     SdkOptional<String> secret = const SdkOmitted(),
     SdkOptional<double> samplingRate = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
@@ -138,22 +125,18 @@ Future<Map<String, dynamic>> createConfigurableLogDrain(ClientConfig config,
   if (projectIds is SdkPresent<List<String>>) {
     validateItems('projectIds', projectIds.value, min: 1, max: 50);
   }
-  if (environments is SdkPresent<
-      List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>) {
+  if (environments is SdkPresent<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>) {
     validateItems('environments', environments.value, min: 1);
   }
   if (samplingRate is SdkPresent<double>) {
-    validateRange('samplingRate', samplingRate.value,
-        min: 0.01, max: 1, multipleOf: 0.01);
+    validateRange('samplingRate', samplingRate.value, min: 0.01, max: 1, multipleOf: 0.01);
   }
 
   return (await sdkRequest<Map<String, dynamic>>('POST', '/v1/log-drains',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'deliveryFormat': deliveryFormat,
@@ -173,35 +156,32 @@ Future<Map<String, dynamic>> createConfigurableLogDrain(ClientConfig config,
       .data;
 }
 
+
 /// Lists integration log drains defined for the authenticated user or team. When you use an OAuth2 token, the results are limited to log drains created by the authenticated integration. Use `teamId` or `slug` to scope the request to a team.
 ///
 /// Retrieves a list of all Integration log drains that are defined for the authenticated user or team. When using an OAuth2 token, the list is limited to log drains created by the authenticated integration.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<List<GetIntegrationLogDrainsResponseItem>> getIntegrationLogDrains(
-    ClientConfig config,
-    {SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<List<GetIntegrationLogDrainsResponseItem>>
+    getIntegrationLogDrains(ClientConfig config,
+        {SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<List<GetIntegrationLogDrainsResponseItem>>(
           'GET', '/v2/integrations/log-drains',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getIntegrationLogDrains',
-          fromJsonRaw: (value) => (value as List)
-              .map((item) => GetIntegrationLogDrainsResponseItem.fromJson(
-                  item as Map<String, dynamic>))
-              .toList(),
+          fromJsonRaw: (value) => (value as List).map((item) => GetIntegrationLogDrainsResponseItem.fromJson(item as Map<String, dynamic>)).toList(),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates an integration log drain for delivering logs to a destination URL. Use an OAuth2 client token because log drains created through this operation are tied to integrations. Provide `name` and `url`; you can also configure projects, sources, environments, headers, and delivery format.
 ///
@@ -223,13 +203,10 @@ Future<CreateLogDrainResponse> createLogDrain(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<List<String>> projectIds = const SdkOmitted(),
     SdkOptional<String> secret = const SdkOmitted(),
-    SdkOptional<CreateLogDrainRequestBodyDeliveryFormat> deliveryFormat =
-        const SdkOmitted(),
-    SdkOptional<List<CreateLogDrainRequestBodySourcesItem>> sources =
-        const SdkOmitted(),
+    SdkOptional<CreateLogDrainRequestBodyDeliveryFormat> deliveryFormat = const SdkOmitted(),
+    SdkOptional<List<CreateLogDrainRequestBodySourcesItem>> sources = const SdkOmitted(),
     SdkOptional<Map<String, String>> headers = const SdkOmitted(),
-    SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>> environments =
-        const SdkOmitted(),
+    SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>> environments = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 100);
   sdkValidatePattern('name', name, '^[A-z0-9_ -]+\$');
@@ -245,8 +222,7 @@ Future<CreateLogDrainResponse> createLogDrain(ClientConfig config,
   if (sources is SdkPresent<List<CreateLogDrainRequestBodySourcesItem>>) {
     validateItems('sources', sources.value, min: 1);
   }
-  if (environments
-      is SdkPresent<List<CreateLogDrainRequestBodyEnvironmentsItem>>) {
+  if (environments is SdkPresent<List<CreateLogDrainRequestBodyEnvironmentsItem>>) {
     validateItems('environments', environments.value, min: 1);
   }
 
@@ -254,10 +230,8 @@ Future<CreateLogDrainResponse> createLogDrain(ClientConfig config,
           'POST', '/v2/integrations/log-drains',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -271,11 +245,11 @@ Future<CreateLogDrainResponse> createLogDrain(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createLogDrain',
-          fromJsonRaw: (value) =>
-              CreateLogDrainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateLogDrainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an integration log drain by its identifier. When using an OAuth2 token, you can delete only a log drain owned by the authenticated integration. Use `teamId` or `slug` to make the request on behalf of a team.
 ///
@@ -293,10 +267,8 @@ Future<void> deleteIntegrationLogDrain(ClientConfig config,
           '/v1/integrations/log-drains/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteIntegrationLogDrain',

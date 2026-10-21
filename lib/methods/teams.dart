@@ -40,34 +40,22 @@ Future<GetTeamMembersResponse> getTeamMembers(ClientConfig config,
           'GET', '/v3/teams/${Uri.encodeComponent(teamId.toString())}/members',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
-                style: 'form', explode: true),
-            'role': SdkQueryValue(SdkUtils.unwrapOptional(role),
-                style: 'form', explode: true),
-            'excludeProject': SdkQueryValue(
-                SdkUtils.unwrapOptional(excludeProject),
-                style: 'form',
-                explode: true),
-            'eligibleMembersForProjectId': SdkQueryValue(
-                SdkUtils.unwrapOptional(eligibleMembersForProjectId),
-                style: 'form',
-                explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
+            'role': SdkQueryValue(SdkUtils.unwrapOptional(role), style: 'form', explode: true),
+            'excludeProject': SdkQueryValue(SdkUtils.unwrapOptional(excludeProject), style: 'form', explode: true),
+            'eligibleMembersForProjectId': SdkQueryValue(SdkUtils.unwrapOptional(eligibleMembersForProjectId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getTeamMembers',
-          fromJsonRaw: (value) =>
-              GetTeamMembersResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetTeamMembersResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Invites one or more users to join the specified team by email. Each invitation requires an `email`; you can also assign a team role and project-specific roles. The authenticated user must be an `OWNER` to invite members.
 ///
@@ -78,24 +66,22 @@ Future<GetTeamMembersResponse> getTeamMembers(ClientConfig config,
 Future<InvitedTeamMember> inviteUserToTeam(ClientConfig config,
     {required String teamId,
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<List<InviteUserToTeamRequestBodyItem>> body =
-        const SdkOmitted(),
+    SdkOptional<List<InviteUserToTeamRequestBodyItem>> body = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<InvitedTeamMember>(
           'POST', '/v2/teams/${Uri.encodeComponent(teamId.toString())}/members',
           config: config,
           query: {
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: SdkUtils.unwrapOptional(body),
           decoder: SdkResponseDecoder.json,
           operationId: 'inviteUserToTeam',
-          fromJsonRaw: (value) =>
-              InvitedTeamMember.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => InvitedTeamMember.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Submits a request for the authenticated user to join the specified team. Include `joinedFrom.origin` to identify where the request originated, and provide the relevant repository or Git account details when applicable. A team owner must approve the request, and no more than 100 users can have pending access requests at the same time.
 ///
@@ -110,11 +96,11 @@ Future<RequestAccessToTeamResponse> requestAccessToTeam(ClientConfig config,
           body: {'joinedFrom': joinedFrom},
           decoder: SdkResponseDecoder.json,
           operationId: 'requestAccessToTeam',
-          fromJsonRaw: (value) => RequestAccessToTeamResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RequestAccessToTeamResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the status of a user's request to join a team. Use `userId` to identify whose request to check; the endpoint returns the authenticated user's status when that path segment is not provided. A declined request is reported as not found.
 ///
@@ -128,11 +114,11 @@ Future<GetTeamAccessRequestResponse> getTeamAccessRequest(ClientConfig config,
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getTeamAccessRequest',
-          fromJsonRaw: (value) => GetTeamAccessRequestResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetTeamAccessRequestResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Joins the authenticated user to a team using the team identifier and, when applicable, an invite code. Include `inviteCode` in the request body when joining with a code. The response identifies the team the user joined and the source of the join.
 ///
@@ -149,11 +135,11 @@ Future<JoinTeamResponse> joinTeam(ClientConfig config,
           body: {'inviteCode': SdkUtils.unwrapOptional(inviteCode)},
           decoder: SdkResponseDecoder.json,
           operationId: 'joinTeam',
-          fromJsonRaw: (value) =>
-              JoinTeamResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => JoinTeamResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a member's membership on the specified team, including their team role, permissions, or project roles. You can also confirm an unconfirmed member by setting `confirmed` to `true`. The authenticated user must be a team owner, except when disconnecting their own SAML connection.
 ///
@@ -167,15 +153,11 @@ Future<JoinTeamResponse> joinTeam(ClientConfig config,
 Future<UpdateTeamMemberResponse> updateTeamMember(ClientConfig config,
     {required String uid,
     required String teamId,
-    SdkOptional<UpdateTeamMemberRequestBodyConfirmed> confirmed =
-        const SdkOmitted(),
+    SdkOptional<UpdateTeamMemberRequestBodyConfirmed> confirmed = const SdkOmitted(),
     SdkOptional<String> role = const SdkOmitted(),
-    SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>
-        teamPermissions = const SdkOmitted(),
-    SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>>
-        projects = const SdkOmitted(),
-    SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom> joinedFrom =
-        const SdkOmitted(),
+    SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>> teamPermissions = const SdkOmitted(),
+    SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>> projects = const SdkOmitted(),
+    SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom> joinedFrom = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateTeamMemberResponse>('PATCH',
           '/v1/teams/${Uri.encodeComponent(teamId.toString())}/members/${Uri.encodeComponent(uid.toString())}',
@@ -189,11 +171,11 @@ Future<UpdateTeamMemberResponse> updateTeamMember(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateTeamMember',
-          fromJsonRaw: (value) =>
-              UpdateTeamMemberResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateTeamMemberResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Removes a member from a team, dismisses a user's access request, or lets a member leave the team. Use `newDefaultTeamId` to set a replacement default team for the user. Directory Sync members can be removed when their directory email is absent or does not match a primary or verified secondary email.
 ///
@@ -211,18 +193,15 @@ Future<RemoveTeamMemberResponse> removeTeamMember(ClientConfig config,
           '/v1/teams/${Uri.encodeComponent(teamId.toString())}/members/${Uri.encodeComponent(uid.toString())}',
           config: config,
           query: {
-            'newDefaultTeamId': SdkQueryValue(
-                SdkUtils.unwrapOptional(newDefaultTeamId),
-                style: 'form',
-                explode: true)
+            'newDefaultTeamId': SdkQueryValue(SdkUtils.unwrapOptional(newDefaultTeamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'removeTeamMember',
-          fromJsonRaw: (value) =>
-              RemoveTeamMemberResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RemoveTeamMemberResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves information about the specified team, including its billing plan, creation details, and team configuration. Use the team identifier to select the team; you can also supply its slug as request context.
 ///
@@ -237,8 +216,7 @@ Future<Team> getTeams(ClientConfig config,
           'GET', '/v2/teams/${Uri.encodeComponent(teamId.toString())}',
           config: config,
           query: {
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getTeams',
@@ -246,6 +224,7 @@ Future<Team> getTeams(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Updates the specified team's information using the fields supplied in the request body. Include only the team properties you want to change, such as its name, slug, avatar, or feedback settings. The authenticated user must be a team owner to update the team.
 ///
@@ -312,35 +291,23 @@ Future<Team> updateTeam(ClientConfig config,
     SdkOptional<String> enableProductionFeedback = const SdkOmitted(),
     SdkOptional<String> sensitiveEnvironmentVariablePolicy = const SdkOmitted(),
     SdkOptional<String> disjunctiveProductionSecretPolicy = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyRemoteCaching> remoteCaching =
-        const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyRemoteCaching> remoteCaching = const SdkOmitted(),
     SdkOptional<bool> hideIpAddresses = const SdkOmitted(),
     SdkOptional<bool> hideIpAddressesInLogDrains = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyDpAccessRequestsMode> dpAccessRequestsMode =
-        const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyDpAccessRequestsMode> dpAccessRequestsMode = const SdkOmitted(),
     SdkOptional<bool> requireVerifiedCommits = const SdkOmitted(),
     SdkOptional<bool> disableRepositoryDispatchEvents = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyDefaultDeploymentProtection>
-        defaultDeploymentProtection = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyDefaultPassport?> defaultPassport =
-        const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyDefaultExpirationSettings>
-        defaultExpirationSettings = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestDeploymentPolicy> deploymentPolicy =
-        const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyStrictDeploymentProtectionSettings>
-        strictDeploymentProtectionSettings = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyStrictShareableLinks>
-        strictShareableLinks = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyStrictPasswordProtectionSettings>
-        strictPasswordProtectionSettings = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyStrictConnectors> strictConnectors =
-        const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyDefaultDeploymentProtection> defaultDeploymentProtection = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyDefaultPassport?> defaultPassport = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyDefaultExpirationSettings> defaultExpirationSettings = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestDeploymentPolicy> deploymentPolicy = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyStrictDeploymentProtectionSettings> strictDeploymentProtectionSettings = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyStrictShareableLinks> strictShareableLinks = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyStrictPasswordProtectionSettings> strictPasswordProtectionSettings = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyStrictConnectors> strictConnectors = const SdkOmitted(),
     SdkOptional<UpdateTeamRequestNsnbConfig> nsnbConfig = const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestDefaultProjectJobs> defaultProjectJobs =
-        const SdkOmitted(),
-    SdkOptional<UpdateTeamRequestBodyResourceConfig> resourceConfig =
-        const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestDefaultProjectJobs> defaultProjectJobs = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyResourceConfig> resourceConfig = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (avatar is SdkPresent<String?>) {
     final avatarValue = avatar.value;
@@ -360,50 +327,34 @@ Future<Team> updateTeam(ClientConfig config,
           'PATCH', '/v2/teams/${Uri.encodeComponent(teamId.toString())}',
           config: config,
           query: {
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'avatar': SdkUtils.unwrapOptional(avatar),
             'description': SdkUtils.unwrapOptional(description),
             'emailDomain': SdkUtils.unwrapOptional(emailDomain),
             'name': SdkUtils.unwrapOptional(name),
-            'previewDeploymentSuffix':
-                SdkUtils.unwrapOptional(previewDeploymentSuffix),
-            'regenerateInviteCode':
-                SdkUtils.unwrapOptional(regenerateInviteCode),
+            'previewDeploymentSuffix': SdkUtils.unwrapOptional(previewDeploymentSuffix),
+            'regenerateInviteCode': SdkUtils.unwrapOptional(regenerateInviteCode),
             'saml': SdkUtils.unwrapOptional(saml),
             'slug': SdkUtils.unwrapOptional(slug_2),
-            'enablePreviewFeedback':
-                SdkUtils.unwrapOptional(enablePreviewFeedback),
-            'enableProductionFeedback':
-                SdkUtils.unwrapOptional(enableProductionFeedback),
-            'sensitiveEnvironmentVariablePolicy':
-                SdkUtils.unwrapOptional(sensitiveEnvironmentVariablePolicy),
-            'disjunctiveProductionSecretPolicy':
-                SdkUtils.unwrapOptional(disjunctiveProductionSecretPolicy),
+            'enablePreviewFeedback': SdkUtils.unwrapOptional(enablePreviewFeedback),
+            'enableProductionFeedback': SdkUtils.unwrapOptional(enableProductionFeedback),
+            'sensitiveEnvironmentVariablePolicy': SdkUtils.unwrapOptional(sensitiveEnvironmentVariablePolicy),
+            'disjunctiveProductionSecretPolicy': SdkUtils.unwrapOptional(disjunctiveProductionSecretPolicy),
             'remoteCaching': SdkUtils.unwrapOptional(remoteCaching),
             'hideIpAddresses': SdkUtils.unwrapOptional(hideIpAddresses),
-            'hideIpAddressesInLogDrains':
-                SdkUtils.unwrapOptional(hideIpAddressesInLogDrains),
-            'dpAccessRequestsMode':
-                SdkUtils.unwrapOptional(dpAccessRequestsMode),
-            'requireVerifiedCommits':
-                SdkUtils.unwrapOptional(requireVerifiedCommits),
-            'disableRepositoryDispatchEvents':
-                SdkUtils.unwrapOptional(disableRepositoryDispatchEvents),
-            'defaultDeploymentProtection':
-                SdkUtils.unwrapOptional(defaultDeploymentProtection),
+            'hideIpAddressesInLogDrains': SdkUtils.unwrapOptional(hideIpAddressesInLogDrains),
+            'dpAccessRequestsMode': SdkUtils.unwrapOptional(dpAccessRequestsMode),
+            'requireVerifiedCommits': SdkUtils.unwrapOptional(requireVerifiedCommits),
+            'disableRepositoryDispatchEvents': SdkUtils.unwrapOptional(disableRepositoryDispatchEvents),
+            'defaultDeploymentProtection': SdkUtils.unwrapOptional(defaultDeploymentProtection),
             'defaultPassport': SdkUtils.unwrapOptional(defaultPassport),
-            'defaultExpirationSettings':
-                SdkUtils.unwrapOptional(defaultExpirationSettings),
+            'defaultExpirationSettings': SdkUtils.unwrapOptional(defaultExpirationSettings),
             'deploymentPolicy': SdkUtils.unwrapOptional(deploymentPolicy),
-            'strictDeploymentProtectionSettings':
-                SdkUtils.unwrapOptional(strictDeploymentProtectionSettings),
-            'strictShareableLinks':
-                SdkUtils.unwrapOptional(strictShareableLinks),
-            'strictPasswordProtectionSettings':
-                SdkUtils.unwrapOptional(strictPasswordProtectionSettings),
+            'strictDeploymentProtectionSettings': SdkUtils.unwrapOptional(strictDeploymentProtectionSettings),
+            'strictShareableLinks': SdkUtils.unwrapOptional(strictShareableLinks),
+            'strictPasswordProtectionSettings': SdkUtils.unwrapOptional(strictPasswordProtectionSettings),
             'strictConnectors': SdkUtils.unwrapOptional(strictConnectors),
             'nsnbConfig': SdkUtils.unwrapOptional(nsnbConfig),
             'defaultProjectJobs': SdkUtils.unwrapOptional(defaultProjectJobs),
@@ -415,6 +366,7 @@ Future<Team> updateTeam(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Lists teams that the authenticated user belongs to, with pagination metadata. Use `limit` to cap the number of teams and `since` or `until` to filter by creation time in milliseconds.
 ///
@@ -433,20 +385,17 @@ Future<ListTeamsResponse> listTeams(ClientConfig config,
   return (await sdkRequest<ListTeamsResponse>('GET', '/v2/teams',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listTeams',
-          fromJsonRaw: (value) =>
-              ListTeamsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListTeamsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a new team under the authenticated user's account. Supply `slug` and optionally `name`; the team name is generated from the slug when you omit `name`. A successful response includes the created team's identifier and slug.
 ///
@@ -459,8 +408,7 @@ Future<ListTeamsResponse> listTeams(ClientConfig config,
 Future<CreateTeamResponse> createTeam(ClientConfig config,
     {required String slug,
     SdkOptional<String> name = const SdkOmitted(),
-    SdkOptional<CreateTeamRequestBodyAttribution> attribution =
-        const SdkOmitted(),
+    SdkOptional<CreateTeamRequestBodyAttribution> attribution = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('slug', slug, max: 48);
   if (name is SdkPresent<String>) {
@@ -476,11 +424,11 @@ Future<CreateTeamResponse> createTeam(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createTeam',
-          fromJsonRaw: (value) =>
-              CreateTeamResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateTeamResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates Directory Sync role mappings for a team, associating directory groups with team roles or access groups. Identify the team with `teamId` or `slug` and provide the mappings in `roles`.
 ///
@@ -498,17 +446,16 @@ Future<PostTeamDsyncRolesResponse> postTeamDsyncRoles(ClientConfig config,
           '/v1/teams/${Uri.encodeComponent(teamId.toString())}/dsync-roles',
           config: config,
           query: {
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'roles': roles},
           decoder: SdkResponseDecoder.json,
           operationId: 'postTeamDsyncRoles',
-          fromJsonRaw: (value) => PostTeamDsyncRolesResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => PostTeamDsyncRolesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a team under the authenticated user's account. Identify the team with `teamId` and optionally provide `newDefaultTeamId` to select a replacement default team. Enterprise teams can be deleted only in test billing mode and when they are not linked to an organization.
 ///
@@ -523,28 +470,23 @@ Future<DeleteTeamResponse> deleteTeam(ClientConfig config,
     {required String teamId,
     SdkOptional<String> newDefaultTeamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<List<DeleteTeamRequestBodyReasonsItem>> reasons =
-        const SdkOmitted(),
+    SdkOptional<List<DeleteTeamRequestBodyReasonsItem>> reasons = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<DeleteTeamResponse>(
           'DELETE', '/v1/teams/${Uri.encodeComponent(teamId.toString())}',
           config: config,
           query: {
-            'newDefaultTeamId': SdkQueryValue(
-                SdkUtils.unwrapOptional(newDefaultTeamId),
-                style: 'form',
-                explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'newDefaultTeamId': SdkQueryValue(SdkUtils.unwrapOptional(newDefaultTeamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'reasons': SdkUtils.unwrapOptional(reasons)},
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteTeam',
-          fromJsonRaw: (value) =>
-              DeleteTeamResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteTeamResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an active team invite code. Use `teamId` and `inviteId` to identify the team and invite code to remove.
 ///
@@ -561,11 +503,11 @@ Future<DeleteTeamInviteCodeResponse> deleteTeamInviteCode(ClientConfig config,
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteTeamInviteCode',
-          fromJsonRaw: (value) => DeleteTeamInviteCodeResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteTeamInviteCodeResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates the settings of a microfrontends group in a team. Supply any of `name`, `fallbackEnvironment`, or `enablePolyrepoBranchRouting` to change that setting; fields you omit are not specified for update.
 ///
@@ -579,35 +521,33 @@ Future<DeleteTeamInviteCodeResponse> deleteTeamInviteCode(ClientConfig config,
 ///   from the default app.
 /// [enablePolyrepoBranchRouting] Whether Preview Deployments can link to
 ///   branches with the same name in other Git repositories.
-Future<UpdateMicrofrontendsGroupResponse> updateMicrofrontendsGroup(
-    ClientConfig config,
-    {required String groupId,
-    required String teamId,
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<String> name = const SdkOmitted(),
-    SdkOptional<String> fallbackEnvironment = const SdkOmitted(),
-    SdkOptional<bool> enablePolyrepoBranchRouting = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<UpdateMicrofrontendsGroupResponse>
+    updateMicrofrontendsGroup(ClientConfig config,
+        {required String groupId,
+        required String teamId,
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<String> name = const SdkOmitted(),
+        SdkOptional<String> fallbackEnvironment = const SdkOmitted(),
+        SdkOptional<bool> enablePolyrepoBranchRouting = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateMicrofrontendsGroupResponse>('PATCH',
           '/v1/teams/${Uri.encodeComponent(teamId.toString())}/microfrontends/${Uri.encodeComponent(groupId.toString())}',
           config: config,
           query: {
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
             'fallbackEnvironment': SdkUtils.unwrapOptional(fallbackEnvironment),
-            'enablePolyrepoBranchRouting':
-                SdkUtils.unwrapOptional(enablePolyrepoBranchRouting)
+            'enablePolyrepoBranchRouting': SdkUtils.unwrapOptional(enablePolyrepoBranchRouting)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateMicrofrontendsGroup',
-          fromJsonRaw: (value) => UpdateMicrofrontendsGroupResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateMicrofrontendsGroupResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a microfrontends group from the team associated with its group identifier. Use `groupId` and `teamId` to identify the group and team.
 ///
@@ -625,8 +565,7 @@ Future<Map<String, dynamic>> deleteMicrofrontendsGroup(ClientConfig config,
           '/v1/teams/${Uri.encodeComponent(teamId.toString())}/microfrontends/${Uri.encodeComponent(groupId.toString())}',
           config: config,
           query: {
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteMicrofrontendsGroup',

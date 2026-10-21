@@ -7,10 +7,8 @@ part of 'deployments.dart';
 class GetDeploymentResponseVariant1FunctionsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetDeploymentResponseVariant1FunctionsValueAffinity>
-      affinity;
-  final SdkOptional<GetDeploymentResponseVariant1FunctionsValueArchitecture>
-      architecture;
+  final SdkOptional<GetDeploymentResponseVariant1FunctionsValueAffinity> affinity;
+  final SdkOptional<GetDeploymentResponseVariant1FunctionsValueArchitecture> architecture;
   final SdkOptional<String> excludeFiles;
   final SdkOptional<List<dynamic>> experimentalTriggers;
   final SdkOptional<List<String>> functionFailoverRegions;
@@ -20,237 +18,92 @@ class GetDeploymentResponseVariant1FunctionsValue {
   final SdkOptional<double> memory;
   final SdkOptional<List<String>> regions;
   final SdkOptional<String> runtime;
-  final SdkOptional<
-          GetDeploymentResponseVariant1FunctionsValueSupportsCancellation>
-      supportsCancellation;
+  final SdkOptional<GetDeploymentResponseVariant1FunctionsValueSupportsCancellation> supportsCancellation;
 
-  const GetDeploymentResponseVariant1FunctionsValue(
-      {this.affinity = const SdkOmitted(),
-      this.architecture = const SdkOmitted(),
-      this.excludeFiles = const SdkOmitted(),
-      this.experimentalTriggers = const SdkOmitted(),
-      this.functionFailoverRegions = const SdkOmitted(),
-      this.includeFiles = const SdkOmitted(),
-      this.maxConcurrency = const SdkOmitted(),
-      this.maxDuration = const SdkOmitted(),
-      this.memory = const SdkOmitted(),
-      this.regions = const SdkOmitted(),
-      this.runtime = const SdkOmitted(),
-      this.supportsCancellation = const SdkOmitted()});
+  const GetDeploymentResponseVariant1FunctionsValue({this.affinity = const SdkOmitted(), this.architecture = const SdkOmitted(), this.excludeFiles = const SdkOmitted(), this.experimentalTriggers = const SdkOmitted(), this.functionFailoverRegions = const SdkOmitted(), this.includeFiles = const SdkOmitted(), this.maxConcurrency = const SdkOmitted(), this.maxDuration = const SdkOmitted(), this.memory = const SdkOmitted(), this.regions = const SdkOmitted(), this.runtime = const SdkOmitted(), this.supportsCancellation = const SdkOmitted()});
 
-  GetDeploymentResponseVariant1FunctionsValue Function(
-      {SdkOptional<GetDeploymentResponseVariant1FunctionsValueAffinity>
-          affinity,
-      SdkOptional<GetDeploymentResponseVariant1FunctionsValueArchitecture>
-          architecture,
-      SdkOptional<String> excludeFiles,
-      SdkOptional<List<dynamic>> experimentalTriggers,
-      SdkOptional<List<String>> functionFailoverRegions,
-      SdkOptional<String> includeFiles,
-      SdkOptional<double> maxConcurrency,
-      SdkOptional<dynamic> maxDuration,
-      SdkOptional<double> memory,
-      SdkOptional<List<String>> regions,
-      SdkOptional<String> runtime,
-      SdkOptional<
-              GetDeploymentResponseVariant1FunctionsValueSupportsCancellation>
-          supportsCancellation}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1FunctionsValue Function({SdkOptional<GetDeploymentResponseVariant1FunctionsValueAffinity> affinity, SdkOptional<GetDeploymentResponseVariant1FunctionsValueArchitecture> architecture, SdkOptional<String> excludeFiles, SdkOptional<List<dynamic>> experimentalTriggers, SdkOptional<List<String>> functionFailoverRegions, SdkOptional<String> includeFiles, SdkOptional<double> maxConcurrency, SdkOptional<dynamic> maxDuration, SdkOptional<double> memory, SdkOptional<List<String>> regions, SdkOptional<String> runtime, SdkOptional<GetDeploymentResponseVariant1FunctionsValueSupportsCancellation> supportsCancellation}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1FunctionsValue _copyWith(
-          {Object? affinity = sdkOmittedValue,
-          Object? architecture = sdkOmittedValue,
-          Object? excludeFiles = sdkOmittedValue,
-          Object? experimentalTriggers = sdkOmittedValue,
-          Object? functionFailoverRegions = sdkOmittedValue,
-          Object? includeFiles = sdkOmittedValue,
-          Object? maxConcurrency = sdkOmittedValue,
-          Object? maxDuration = sdkOmittedValue,
-          Object? memory = sdkOmittedValue,
-          Object? regions = sdkOmittedValue,
-          Object? runtime = sdkOmittedValue,
-          Object? supportsCancellation = sdkOmittedValue}) =>
-      GetDeploymentResponseVariant1FunctionsValue(
-        affinity: identical(affinity, sdkOmittedValue)
-            ? this.affinity
-            : affinity as SdkOptional<
-                GetDeploymentResponseVariant1FunctionsValueAffinity>,
-        architecture: identical(architecture, sdkOmittedValue)
-            ? this.architecture
-            : architecture as SdkOptional<
-                GetDeploymentResponseVariant1FunctionsValueArchitecture>,
-        excludeFiles: identical(excludeFiles, sdkOmittedValue)
-            ? this.excludeFiles
-            : excludeFiles as SdkOptional<String>,
-        experimentalTriggers: identical(experimentalTriggers, sdkOmittedValue)
-            ? this.experimentalTriggers
-            : experimentalTriggers as SdkOptional<List<dynamic>>,
-        functionFailoverRegions:
-            identical(functionFailoverRegions, sdkOmittedValue)
-                ? this.functionFailoverRegions
-                : functionFailoverRegions as SdkOptional<List<String>>,
-        includeFiles: identical(includeFiles, sdkOmittedValue)
-            ? this.includeFiles
-            : includeFiles as SdkOptional<String>,
-        maxConcurrency: identical(maxConcurrency, sdkOmittedValue)
-            ? this.maxConcurrency
-            : maxConcurrency as SdkOptional<double>,
-        maxDuration: identical(maxDuration, sdkOmittedValue)
-            ? this.maxDuration
-            : maxDuration as SdkOptional<dynamic>,
-        memory: identical(memory, sdkOmittedValue)
-            ? this.memory
-            : memory as SdkOptional<double>,
-        regions: identical(regions, sdkOmittedValue)
-            ? this.regions
-            : regions as SdkOptional<List<String>>,
-        runtime: identical(runtime, sdkOmittedValue)
-            ? this.runtime
-            : runtime as SdkOptional<String>,
-        supportsCancellation: identical(supportsCancellation, sdkOmittedValue)
-            ? this.supportsCancellation
-            : supportsCancellation as SdkOptional<
-                GetDeploymentResponseVariant1FunctionsValueSupportsCancellation>,
-      );
+  GetDeploymentResponseVariant1FunctionsValue _copyWith({Object? affinity = sdkOmittedValue, Object? architecture = sdkOmittedValue, Object? excludeFiles = sdkOmittedValue, Object? experimentalTriggers = sdkOmittedValue, Object? functionFailoverRegions = sdkOmittedValue, Object? includeFiles = sdkOmittedValue, Object? maxConcurrency = sdkOmittedValue, Object? maxDuration = sdkOmittedValue, Object? memory = sdkOmittedValue, Object? regions = sdkOmittedValue, Object? runtime = sdkOmittedValue, Object? supportsCancellation = sdkOmittedValue}) => GetDeploymentResponseVariant1FunctionsValue(
+    affinity: identical(affinity, sdkOmittedValue) ? this.affinity : affinity as SdkOptional<GetDeploymentResponseVariant1FunctionsValueAffinity>,
+    architecture: identical(architecture, sdkOmittedValue) ? this.architecture : architecture as SdkOptional<GetDeploymentResponseVariant1FunctionsValueArchitecture>,
+    excludeFiles: identical(excludeFiles, sdkOmittedValue) ? this.excludeFiles : excludeFiles as SdkOptional<String>,
+    experimentalTriggers: identical(experimentalTriggers, sdkOmittedValue) ? this.experimentalTriggers : experimentalTriggers as SdkOptional<List<dynamic>>,
+    functionFailoverRegions: identical(functionFailoverRegions, sdkOmittedValue) ? this.functionFailoverRegions : functionFailoverRegions as SdkOptional<List<String>>,
+    includeFiles: identical(includeFiles, sdkOmittedValue) ? this.includeFiles : includeFiles as SdkOptional<String>,
+    maxConcurrency: identical(maxConcurrency, sdkOmittedValue) ? this.maxConcurrency : maxConcurrency as SdkOptional<double>,
+    maxDuration: identical(maxDuration, sdkOmittedValue) ? this.maxDuration : maxDuration as SdkOptional<dynamic>,
+    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as SdkOptional<double>,
+    regions: identical(regions, sdkOmittedValue) ? this.regions : regions as SdkOptional<List<String>>,
+    runtime: identical(runtime, sdkOmittedValue) ? this.runtime : runtime as SdkOptional<String>,
+    supportsCancellation: identical(supportsCancellation, sdkOmittedValue) ? this.supportsCancellation : supportsCancellation as SdkOptional<GetDeploymentResponseVariant1FunctionsValueSupportsCancellation>,
+  );
 
-  factory GetDeploymentResponseVariant1FunctionsValue.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentResponseVariant1FunctionsValue(
-        affinity: json['affinity'] != null
-            ? SdkPresent((json['affinity'] != null
-                ? GetDeploymentResponseVariant1FunctionsValueAffinity.fromJson(
-                    json['affinity'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        architecture: json['architecture'] != null
-            ? SdkPresent((json['architecture'] != null
-                ? GetDeploymentResponseVariant1FunctionsValueArchitecture
-                    .fromJson(json['architecture'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        excludeFiles: json['excludeFiles'] != null
-            ? SdkPresent((json['excludeFiles'] as String?)!)
-            : const SdkOmitted(),
-        experimentalTriggers: json['experimentalTriggers'] != null
-            ? SdkPresent(((json['experimentalTriggers'] as List?)
-                ?.map((e) => e)
-                .toList())!)
-            : const SdkOmitted(),
-        functionFailoverRegions: json['functionFailoverRegions'] != null
-            ? SdkPresent(((json['functionFailoverRegions'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        includeFiles: json['includeFiles'] != null
-            ? SdkPresent((json['includeFiles'] as String?)!)
-            : const SdkOmitted(),
-        maxConcurrency: json['maxConcurrency'] != null
-            ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        maxDuration: json['maxDuration'] != null
-            ? SdkPresent((json['maxDuration'])!)
-            : const SdkOmitted(),
-        memory: json['memory'] != null
-            ? SdkPresent(((json['memory'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        regions: json['regions'] != null
-            ? SdkPresent(
-                ((json['regions'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        runtime: json['runtime'] != null
-            ? SdkPresent((json['runtime'] as String?)!)
-            : const SdkOmitted(),
-        supportsCancellation: json['supportsCancellation'] != null
-            ? SdkPresent((json['supportsCancellation'] != null
-                ? GetDeploymentResponseVariant1FunctionsValueSupportsCancellation
-                    .fromJson(json['supportsCancellation'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetDeploymentResponseVariant1FunctionsValue.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1FunctionsValue(
+    affinity: json['affinity'] != null ? SdkPresent((json['affinity'] != null ? GetDeploymentResponseVariant1FunctionsValueAffinity.fromJson(json['affinity'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    architecture: json['architecture'] != null ? SdkPresent((json['architecture'] != null ? GetDeploymentResponseVariant1FunctionsValueArchitecture.fromJson(json['architecture'] as String) : null)!) : const SdkOmitted(),
+    excludeFiles: json['excludeFiles'] != null ? SdkPresent((json['excludeFiles'] as String?)!) : const SdkOmitted(),
+    experimentalTriggers: json['experimentalTriggers'] != null ? SdkPresent(((json['experimentalTriggers'] as List?)?.map((e) => e).toList())!) : const SdkOmitted(),
+    functionFailoverRegions: json['functionFailoverRegions'] != null ? SdkPresent(((json['functionFailoverRegions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    includeFiles: json['includeFiles'] != null ? SdkPresent((json['includeFiles'] as String?)!) : const SdkOmitted(),
+    maxConcurrency: json['maxConcurrency'] != null ? SdkPresent(((json['maxConcurrency'] as num?)?.toDouble())!) : const SdkOmitted(),
+    maxDuration: json['maxDuration'] != null ? SdkPresent((json['maxDuration'])!) : const SdkOmitted(),
+    memory: json['memory'] != null ? SdkPresent(((json['memory'] as num?)?.toDouble())!) : const SdkOmitted(),
+    regions: json['regions'] != null ? SdkPresent(((json['regions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    runtime: json['runtime'] != null ? SdkPresent((json['runtime'] as String?)!) : const SdkOmitted(),
+    supportsCancellation: json['supportsCancellation'] != null ? SdkPresent((json['supportsCancellation'] != null ? GetDeploymentResponseVariant1FunctionsValueSupportsCancellation.fromJson(json['supportsCancellation'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (affinity) {
-          SdkPresent<GetDeploymentResponseVariant1FunctionsValueAffinity>(
-            value: final value
-          ) =>
-            {
-              'affinity': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (architecture) {
-          SdkPresent<GetDeploymentResponseVariant1FunctionsValueArchitecture>(
-            value: final value
-          ) =>
-            {
-              'architecture': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (excludeFiles) {
-          SdkPresent<String>(value: final value) => {
-              'excludeFiles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (experimentalTriggers) {
-          SdkPresent<List<dynamic>>(value: final value) => {
-              'experimentalTriggers': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functionFailoverRegions) {
-          SdkPresent<List<String>>(value: final value) => {
-              'functionFailoverRegions': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (includeFiles) {
-          SdkPresent<String>(value: final value) => {
-              'includeFiles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maxConcurrency) {
-          SdkPresent<double>(value: final value) => {
-              'maxConcurrency': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maxDuration) {
-          SdkPresent<dynamic>(value: final value) => {
-              'maxDuration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (memory) {
-          SdkPresent<double>(value: final value) => {
-              'memory': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (regions) {
-          SdkPresent<List<String>>(value: final value) => {
-              'regions': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (runtime) {
-          SdkPresent<String>(value: final value) => {
-              'runtime': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (supportsCancellation) {
-          SdkPresent<
-                GetDeploymentResponseVariant1FunctionsValueSupportsCancellation>(
-            value: final value
-          ) =>
-            {
-              'supportsCancellation': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (affinity) {
+      SdkPresent<GetDeploymentResponseVariant1FunctionsValueAffinity>(value: final value) => {'affinity': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (architecture) {
+      SdkPresent<GetDeploymentResponseVariant1FunctionsValueArchitecture>(value: final value) => {'architecture': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (excludeFiles) {
+      SdkPresent<String>(value: final value) => {'excludeFiles': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (experimentalTriggers) {
+      SdkPresent<List<dynamic>>(value: final value) => {'experimentalTriggers': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functionFailoverRegions) {
+      SdkPresent<List<String>>(value: final value) => {'functionFailoverRegions': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (includeFiles) {
+      SdkPresent<String>(value: final value) => {'includeFiles': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maxConcurrency) {
+      SdkPresent<double>(value: final value) => {'maxConcurrency': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maxDuration) {
+      SdkPresent<dynamic>(value: final value) => {'maxDuration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (memory) {
+      SdkPresent<double>(value: final value) => {'memory': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (regions) {
+      SdkPresent<List<String>>(value: final value) => {'regions': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (runtime) {
+      SdkPresent<String>(value: final value) => {'runtime': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (supportsCancellation) {
+      SdkPresent<GetDeploymentResponseVariant1FunctionsValueSupportsCancellation>(value: final value) => {'supportsCancellation': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetDeploymentResponseVariant1GitRepoVariant0 {
@@ -266,97 +119,45 @@ class GetDeploymentResponseVariant1GitRepoVariant0 {
   final GetDeploymentResponseVariant1GitRepoVariant0Type type_;
   final String url;
 
-  const GetDeploymentResponseVariant1GitRepoVariant0(
-      {required this.defaultBranch,
-      required this.name,
-      required this.namespace,
-      required this.ownerType,
-      required this.path,
-      required this.private,
-      required this.projectId,
-      required this.type_,
-      required this.url});
+  const GetDeploymentResponseVariant1GitRepoVariant0({required this.defaultBranch, required this.name, required this.namespace, required this.ownerType, required this.path, required this.private, required this.projectId, required this.type_, required this.url});
 
-  GetDeploymentResponseVariant1GitRepoVariant0 Function(
-      {String defaultBranch,
-      String name,
-      String namespace,
-      GetDeploymentResponseVariant1GitRepoVariant0OwnerType ownerType,
-      String path,
-      GetDeploymentResponseVariant1GitRepoVariant0Private private,
-      double projectId,
-      GetDeploymentResponseVariant1GitRepoVariant0Type type_,
-      String url}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1GitRepoVariant0 Function({String defaultBranch, String name, String namespace, GetDeploymentResponseVariant1GitRepoVariant0OwnerType ownerType, String path, GetDeploymentResponseVariant1GitRepoVariant0Private private, double projectId, GetDeploymentResponseVariant1GitRepoVariant0Type type_, String url}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1GitRepoVariant0 _copyWith(
-          {Object? defaultBranch = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? namespace = sdkOmittedValue,
-          Object? ownerType = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? private = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      GetDeploymentResponseVariant1GitRepoVariant0(
-        defaultBranch: identical(defaultBranch, sdkOmittedValue)
-            ? this.defaultBranch
-            : defaultBranch as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        namespace: identical(namespace, sdkOmittedValue)
-            ? this.namespace
-            : namespace as String,
-        ownerType: identical(ownerType, sdkOmittedValue)
-            ? this.ownerType
-            : ownerType
-                as GetDeploymentResponseVariant1GitRepoVariant0OwnerType,
-        path: identical(path, sdkOmittedValue) ? this.path : path as String,
-        private: identical(private, sdkOmittedValue)
-            ? this.private
-            : private as GetDeploymentResponseVariant1GitRepoVariant0Private,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as double,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDeploymentResponseVariant1GitRepoVariant0Type,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  GetDeploymentResponseVariant1GitRepoVariant0 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? namespace = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue}) => GetDeploymentResponseVariant1GitRepoVariant0(
+    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    namespace: identical(namespace, sdkOmittedValue) ? this.namespace : namespace as String,
+    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as GetDeploymentResponseVariant1GitRepoVariant0OwnerType,
+    path: identical(path, sdkOmittedValue) ? this.path : path as String,
+    private: identical(private, sdkOmittedValue) ? this.private : private as GetDeploymentResponseVariant1GitRepoVariant0Private,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as double,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1GitRepoVariant0Type,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory GetDeploymentResponseVariant1GitRepoVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentResponseVariant1GitRepoVariant0(
-        defaultBranch: (json['defaultBranch'] as String?)!,
-        name: (json['name'] as String?)!,
-        namespace: (json['namespace'] as String?)!,
-        ownerType: (json['ownerType'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant0OwnerType.fromJson(
-                json['ownerType'] as String)
-            : null)!,
-        path: (json['path'] as String?)!,
-        private: (json['private'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant0Private.fromJson(
-                json['private'] as bool)
-            : null)!,
-        projectId: ((json['projectId'] as num?)?.toDouble())!,
-        type_: (json['type'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        url: (json['url'] as String?)!,
-      );
+  factory GetDeploymentResponseVariant1GitRepoVariant0.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1GitRepoVariant0(
+    defaultBranch: (json['defaultBranch'] as String?)!,
+    name: (json['name'] as String?)!,
+    namespace: (json['namespace'] as String?)!,
+    ownerType: (json['ownerType'] != null ? GetDeploymentResponseVariant1GitRepoVariant0OwnerType.fromJson(json['ownerType'] as String) : null)!,
+    path: (json['path'] as String?)!,
+    private: (json['private'] != null ? GetDeploymentResponseVariant1GitRepoVariant0Private.fromJson(json['private'] as bool) : null)!,
+    projectId: ((json['projectId'] as num?)?.toDouble())!,
+    type_: (json['type'] != null ? GetDeploymentResponseVariant1GitRepoVariant0Type.fromJson(json['type'] as String) : null)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'defaultBranch': defaultBranch,
-        'name': name,
-        'namespace': namespace,
-        'ownerType': ownerType.toJson(),
-        'path': path,
-        'private': private.toJson(),
-        'projectId': projectId,
-        'type': type_.toJson(),
-        'url': url,
-      };
+    'defaultBranch': defaultBranch,
+    'name': name,
+    'namespace': namespace,
+    'ownerType': ownerType.toJson(),
+    'path': path,
+    'private': private.toJson(),
+    'projectId': projectId,
+    'type': type_.toJson(),
+    'url': url,
+  };
 }
 
 class GetDeploymentResponseVariant1GitRepoVariant1 {
@@ -373,103 +174,48 @@ class GetDeploymentResponseVariant1GitRepoVariant1 {
   final double repoOwnerId;
   final GetDeploymentResponseVariant1GitRepoVariant1Type type_;
 
-  const GetDeploymentResponseVariant1GitRepoVariant1(
-      {required this.defaultBranch,
-      required this.name,
-      required this.org,
-      required this.ownerType,
-      required this.path,
-      required this.private,
-      required this.repo,
-      required this.repoId,
-      required this.repoOwnerId,
-      required this.type_});
+  const GetDeploymentResponseVariant1GitRepoVariant1({required this.defaultBranch, required this.name, required this.org, required this.ownerType, required this.path, required this.private, required this.repo, required this.repoId, required this.repoOwnerId, required this.type_});
 
-  GetDeploymentResponseVariant1GitRepoVariant1 Function(
-          {String defaultBranch,
-          String name,
-          String org,
-          GetDeploymentResponseVariant1GitRepoVariant1OwnerType ownerType,
-          String path,
-          GetDeploymentResponseVariant1GitRepoVariant1Private private,
-          String repo,
-          double repoId,
-          double repoOwnerId,
-          GetDeploymentResponseVariant1GitRepoVariant1Type type_})
-      get copyWith => _copyWith;
+  GetDeploymentResponseVariant1GitRepoVariant1 Function({String defaultBranch, String name, String org, GetDeploymentResponseVariant1GitRepoVariant1OwnerType ownerType, String path, GetDeploymentResponseVariant1GitRepoVariant1Private private, String repo, double repoId, double repoOwnerId, GetDeploymentResponseVariant1GitRepoVariant1Type type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1GitRepoVariant1 _copyWith(
-          {Object? defaultBranch = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? ownerType = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? private = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? repoOwnerId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetDeploymentResponseVariant1GitRepoVariant1(
-        defaultBranch: identical(defaultBranch, sdkOmittedValue)
-            ? this.defaultBranch
-            : defaultBranch as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        ownerType: identical(ownerType, sdkOmittedValue)
-            ? this.ownerType
-            : ownerType
-                as GetDeploymentResponseVariant1GitRepoVariant1OwnerType,
-        path: identical(path, sdkOmittedValue) ? this.path : path as String,
-        private: identical(private, sdkOmittedValue)
-            ? this.private
-            : private as GetDeploymentResponseVariant1GitRepoVariant1Private,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
-        repoOwnerId: identical(repoOwnerId, sdkOmittedValue)
-            ? this.repoOwnerId
-            : repoOwnerId as double,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDeploymentResponseVariant1GitRepoVariant1Type,
-      );
+  GetDeploymentResponseVariant1GitRepoVariant1 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? org = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoOwnerId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant1GitRepoVariant1(
+    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as GetDeploymentResponseVariant1GitRepoVariant1OwnerType,
+    path: identical(path, sdkOmittedValue) ? this.path : path as String,
+    private: identical(private, sdkOmittedValue) ? this.private : private as GetDeploymentResponseVariant1GitRepoVariant1Private,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
+    repoOwnerId: identical(repoOwnerId, sdkOmittedValue) ? this.repoOwnerId : repoOwnerId as double,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1GitRepoVariant1Type,
+  );
 
-  factory GetDeploymentResponseVariant1GitRepoVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentResponseVariant1GitRepoVariant1(
-        defaultBranch: (json['defaultBranch'] as String?)!,
-        name: (json['name'] as String?)!,
-        org: (json['org'] as String?)!,
-        ownerType: (json['ownerType'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant1OwnerType.fromJson(
-                json['ownerType'] as String)
-            : null)!,
-        path: (json['path'] as String?)!,
-        private: (json['private'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant1Private.fromJson(
-                json['private'] as bool)
-            : null)!,
-        repo: (json['repo'] as String?)!,
-        repoId: ((json['repoId'] as num?)?.toDouble())!,
-        repoOwnerId: ((json['repoOwnerId'] as num?)?.toDouble())!,
-        type_: (json['type'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetDeploymentResponseVariant1GitRepoVariant1.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1GitRepoVariant1(
+    defaultBranch: (json['defaultBranch'] as String?)!,
+    name: (json['name'] as String?)!,
+    org: (json['org'] as String?)!,
+    ownerType: (json['ownerType'] != null ? GetDeploymentResponseVariant1GitRepoVariant1OwnerType.fromJson(json['ownerType'] as String) : null)!,
+    path: (json['path'] as String?)!,
+    private: (json['private'] != null ? GetDeploymentResponseVariant1GitRepoVariant1Private.fromJson(json['private'] as bool) : null)!,
+    repo: (json['repo'] as String?)!,
+    repoId: ((json['repoId'] as num?)?.toDouble())!,
+    repoOwnerId: ((json['repoOwnerId'] as num?)?.toDouble())!,
+    type_: (json['type'] != null ? GetDeploymentResponseVariant1GitRepoVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'defaultBranch': defaultBranch,
-        'name': name,
-        'org': org,
-        'ownerType': ownerType.toJson(),
-        'path': path,
-        'private': private.toJson(),
-        'repo': repo,
-        'repoId': repoId,
-        'repoOwnerId': repoOwnerId,
-        'type': type_.toJson(),
-      };
+    'defaultBranch': defaultBranch,
+    'name': name,
+    'org': org,
+    'ownerType': ownerType.toJson(),
+    'path': path,
+    'private': private.toJson(),
+    'repo': repo,
+    'repoId': repoId,
+    'repoOwnerId': repoOwnerId,
+    'type': type_.toJson(),
+  };
 }
 
 class GetDeploymentResponseVariant1GitRepoVariant2 {
@@ -486,101 +232,46 @@ class GetDeploymentResponseVariant1GitRepoVariant2 {
   final GetDeploymentResponseVariant1GitRepoVariant2Type type_;
   final String workspaceUuid;
 
-  const GetDeploymentResponseVariant1GitRepoVariant2(
-      {required this.defaultBranch,
-      required this.name,
-      required this.owner,
-      required this.ownerType,
-      required this.path,
-      required this.private,
-      required this.repoUuid,
-      required this.slug,
-      required this.type_,
-      required this.workspaceUuid});
+  const GetDeploymentResponseVariant1GitRepoVariant2({required this.defaultBranch, required this.name, required this.owner, required this.ownerType, required this.path, required this.private, required this.repoUuid, required this.slug, required this.type_, required this.workspaceUuid});
 
-  GetDeploymentResponseVariant1GitRepoVariant2 Function(
-      {String defaultBranch,
-      String name,
-      String owner,
-      GetDeploymentResponseVariant1GitRepoVariant2OwnerType ownerType,
-      String path,
-      GetDeploymentResponseVariant1GitRepoVariant2Private private,
-      String repoUuid,
-      String slug,
-      GetDeploymentResponseVariant1GitRepoVariant2Type type_,
-      String workspaceUuid}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1GitRepoVariant2 Function({String defaultBranch, String name, String owner, GetDeploymentResponseVariant1GitRepoVariant2OwnerType ownerType, String path, GetDeploymentResponseVariant1GitRepoVariant2Private private, String repoUuid, String slug, GetDeploymentResponseVariant1GitRepoVariant2Type type_, String workspaceUuid}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1GitRepoVariant2 _copyWith(
-          {Object? defaultBranch = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? owner = sdkOmittedValue,
-          Object? ownerType = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? private = sdkOmittedValue,
-          Object? repoUuid = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? workspaceUuid = sdkOmittedValue}) =>
-      GetDeploymentResponseVariant1GitRepoVariant2(
-        defaultBranch: identical(defaultBranch, sdkOmittedValue)
-            ? this.defaultBranch
-            : defaultBranch as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-        ownerType: identical(ownerType, sdkOmittedValue)
-            ? this.ownerType
-            : ownerType
-                as GetDeploymentResponseVariant1GitRepoVariant2OwnerType,
-        path: identical(path, sdkOmittedValue) ? this.path : path as String,
-        private: identical(private, sdkOmittedValue)
-            ? this.private
-            : private as GetDeploymentResponseVariant1GitRepoVariant2Private,
-        repoUuid: identical(repoUuid, sdkOmittedValue)
-            ? this.repoUuid
-            : repoUuid as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDeploymentResponseVariant1GitRepoVariant2Type,
-        workspaceUuid: identical(workspaceUuid, sdkOmittedValue)
-            ? this.workspaceUuid
-            : workspaceUuid as String,
-      );
+  GetDeploymentResponseVariant1GitRepoVariant2 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? repoUuid = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? workspaceUuid = sdkOmittedValue}) => GetDeploymentResponseVariant1GitRepoVariant2(
+    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as GetDeploymentResponseVariant1GitRepoVariant2OwnerType,
+    path: identical(path, sdkOmittedValue) ? this.path : path as String,
+    private: identical(private, sdkOmittedValue) ? this.private : private as GetDeploymentResponseVariant1GitRepoVariant2Private,
+    repoUuid: identical(repoUuid, sdkOmittedValue) ? this.repoUuid : repoUuid as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1GitRepoVariant2Type,
+    workspaceUuid: identical(workspaceUuid, sdkOmittedValue) ? this.workspaceUuid : workspaceUuid as String,
+  );
 
-  factory GetDeploymentResponseVariant1GitRepoVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentResponseVariant1GitRepoVariant2(
-        defaultBranch: (json['defaultBranch'] as String?)!,
-        name: (json['name'] as String?)!,
-        owner: (json['owner'] as String?)!,
-        ownerType: (json['ownerType'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant2OwnerType.fromJson(
-                json['ownerType'] as String)
-            : null)!,
-        path: (json['path'] as String?)!,
-        private: (json['private'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant2Private.fromJson(
-                json['private'] as bool)
-            : null)!,
-        repoUuid: (json['repoUuid'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        type_: (json['type'] != null
-            ? GetDeploymentResponseVariant1GitRepoVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        workspaceUuid: (json['workspaceUuid'] as String?)!,
-      );
+  factory GetDeploymentResponseVariant1GitRepoVariant2.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1GitRepoVariant2(
+    defaultBranch: (json['defaultBranch'] as String?)!,
+    name: (json['name'] as String?)!,
+    owner: (json['owner'] as String?)!,
+    ownerType: (json['ownerType'] != null ? GetDeploymentResponseVariant1GitRepoVariant2OwnerType.fromJson(json['ownerType'] as String) : null)!,
+    path: (json['path'] as String?)!,
+    private: (json['private'] != null ? GetDeploymentResponseVariant1GitRepoVariant2Private.fromJson(json['private'] as bool) : null)!,
+    repoUuid: (json['repoUuid'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    type_: (json['type'] != null ? GetDeploymentResponseVariant1GitRepoVariant2Type.fromJson(json['type'] as String) : null)!,
+    workspaceUuid: (json['workspaceUuid'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'defaultBranch': defaultBranch,
-        'name': name,
-        'owner': owner,
-        'ownerType': ownerType.toJson(),
-        'path': path,
-        'private': private.toJson(),
-        'repoUuid': repoUuid,
-        'slug': slug,
-        'type': type_.toJson(),
-        'workspaceUuid': workspaceUuid,
-      };
+    'defaultBranch': defaultBranch,
+    'name': name,
+    'owner': owner,
+    'ownerType': ownerType.toJson(),
+    'path': path,
+    'private': private.toJson(),
+    'repoUuid': repoUuid,
+    'slug': slug,
+    'type': type_.toJson(),
+    'workspaceUuid': workspaceUuid,
+  };
 }

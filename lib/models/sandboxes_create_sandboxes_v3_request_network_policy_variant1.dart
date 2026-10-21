@@ -8,61 +8,32 @@ class CreateSandboxesV3RequestNetworkPolicyVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<dynamic> allow;
-  final SdkOptional<CreateSandboxesV3RequestNetworkPolicyVariant1Subnets>
-      subnets;
+  final SdkOptional<CreateSandboxesV3RequestNetworkPolicyVariant1Subnets> subnets;
 
-  const CreateSandboxesV3RequestNetworkPolicyVariant1(
-      {this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
+  const CreateSandboxesV3RequestNetworkPolicyVariant1({this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
 
-  CreateSandboxesV3RequestNetworkPolicyVariant1 Function(
-      {SdkOptional<dynamic> allow,
-      SdkOptional<CreateSandboxesV3RequestNetworkPolicyVariant1Subnets>
-          subnets}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestNetworkPolicyVariant1 Function({SdkOptional<dynamic> allow, SdkOptional<CreateSandboxesV3RequestNetworkPolicyVariant1Subnets> subnets}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestNetworkPolicyVariant1 _copyWith(
-          {Object? allow = sdkOmittedValue,
-          Object? subnets = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestNetworkPolicyVariant1(
-        allow: identical(allow, sdkOmittedValue)
-            ? this.allow
-            : allow as SdkOptional<dynamic>,
-        subnets: identical(subnets, sdkOmittedValue)
-            ? this.subnets
-            : subnets as SdkOptional<
-                CreateSandboxesV3RequestNetworkPolicyVariant1Subnets>,
-      );
+  CreateSandboxesV3RequestNetworkPolicyVariant1 _copyWith({Object? allow = sdkOmittedValue, Object? subnets = sdkOmittedValue}) => CreateSandboxesV3RequestNetworkPolicyVariant1(
+    allow: identical(allow, sdkOmittedValue) ? this.allow : allow as SdkOptional<dynamic>,
+    subnets: identical(subnets, sdkOmittedValue) ? this.subnets : subnets as SdkOptional<CreateSandboxesV3RequestNetworkPolicyVariant1Subnets>,
+  );
 
-  factory CreateSandboxesV3RequestNetworkPolicyVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestNetworkPolicyVariant1(
-        allow: json['allow'] != null
-            ? SdkPresent((json['allow'])!)
-            : const SdkOmitted(),
-        subnets: json['subnets'] != null
-            ? SdkPresent((json['subnets'] != null
-                ? CreateSandboxesV3RequestNetworkPolicyVariant1Subnets.fromJson(
-                    json['subnets'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV3RequestNetworkPolicyVariant1.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestNetworkPolicyVariant1(
+    allow: json['allow'] != null ? SdkPresent((json['allow'])!) : const SdkOmitted(),
+    subnets: json['subnets'] != null ? SdkPresent((json['subnets'] != null ? CreateSandboxesV3RequestNetworkPolicyVariant1Subnets.fromJson(json['subnets'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (allow) {
-          SdkPresent<dynamic>(value: final value) => {
-              'allow': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (subnets) {
-          SdkPresent<CreateSandboxesV3RequestNetworkPolicyVariant1Subnets>(
-            value: final value
-          ) =>
-            {
-              'subnets': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (allow) {
+      SdkPresent<dynamic>(value: final value) => {'allow': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (subnets) {
+      SdkPresent<CreateSandboxesV3RequestNetworkPolicyVariant1Subnets>(value: final value) => {'subnets': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class CreateSandboxesV3RequestNetworkPolicy {
@@ -71,53 +42,24 @@ sealed class CreateSandboxesV3RequestNetworkPolicy {
   const CreateSandboxesV3RequestNetworkPolicy();
   factory CreateSandboxesV3RequestNetworkPolicy.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            CreateSandboxesV3RequestNetworkPolicyVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateSandboxesV3RequestNetworkPolicyVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateSandboxesV3RequestNetworkPolicyVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(value); } } catch (_) {}
+      try { final value = CreateSandboxesV3RequestNetworkPolicyVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(value); } } catch (_) {}
     }
-    try {
-      return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(
-          CreateSandboxesV3RequestNetworkPolicyVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(
-          CreateSandboxesV3RequestNetworkPolicyVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateSandboxesV3RequestNetworkPolicy");
+    try { return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(CreateSandboxesV3RequestNetworkPolicyVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(CreateSandboxesV3RequestNetworkPolicyVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateSandboxesV3RequestNetworkPolicy");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0
-    extends CreateSandboxesV3RequestNetworkPolicy {
+final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0 extends CreateSandboxesV3RequestNetworkPolicy {
   final CreateSandboxesV3RequestNetworkPolicyVariant0 value;
-  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1
-    extends CreateSandboxesV3RequestNetworkPolicy {
+final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1 extends CreateSandboxesV3RequestNetworkPolicy {
   final CreateSandboxesV3RequestNetworkPolicyVariant1 value;
-  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

@@ -20,145 +20,63 @@ class CreateProjectResponseLinkVariant4 {
   final String uuid;
   final String workspaceUuid;
 
-  const CreateProjectResponseLinkVariant4(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.name,
-      required this.owner,
-      required this.productionBranch,
-      required this.slug,
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted(),
-      required this.uuid,
-      required this.workspaceUuid});
+  const CreateProjectResponseLinkVariant4({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.name, required this.owner, required this.productionBranch, required this.slug, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted(), required this.uuid, required this.workspaceUuid});
 
-  CreateProjectResponseLinkVariant4 Function(
-      {SdkOptional<double> createdAt,
-      List<CreateProjectResponseLinkVariant4DeployHooksItem> deployHooks,
-      String gitCredentialId,
-      String name,
-      String owner,
-      String productionBranch,
-      String slug,
-      SdkOptional<CreateProjectResponseLinkVariant4Sourceless> sourceless,
-      CreateProjectResponseLinkVariant4Type type_,
-      SdkOptional<double> updatedAt,
-      String uuid,
-      String workspaceUuid}) get copyWith => _copyWith;
+  CreateProjectResponseLinkVariant4 Function({SdkOptional<double> createdAt, List<CreateProjectResponseLinkVariant4DeployHooksItem> deployHooks, String gitCredentialId, String name, String owner, String productionBranch, String slug, SdkOptional<CreateProjectResponseLinkVariant4Sourceless> sourceless, CreateProjectResponseLinkVariant4Type type_, SdkOptional<double> updatedAt, String uuid, String workspaceUuid}) get copyWith => _copyWith;
 
-  CreateProjectResponseLinkVariant4 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? owner = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? uuid = sdkOmittedValue,
-          Object? workspaceUuid = sdkOmittedValue}) =>
-      CreateProjectResponseLinkVariant4(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks
-                as List<CreateProjectResponseLinkVariant4DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless
-                as SdkOptional<CreateProjectResponseLinkVariant4Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateProjectResponseLinkVariant4Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        uuid: identical(uuid, sdkOmittedValue) ? this.uuid : uuid as String,
-        workspaceUuid: identical(workspaceUuid, sdkOmittedValue)
-            ? this.workspaceUuid
-            : workspaceUuid as String,
-      );
+  CreateProjectResponseLinkVariant4 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? uuid = sdkOmittedValue, Object? workspaceUuid = sdkOmittedValue}) => CreateProjectResponseLinkVariant4(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<CreateProjectResponseLinkVariant4DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<CreateProjectResponseLinkVariant4Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseLinkVariant4Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    uuid: identical(uuid, sdkOmittedValue) ? this.uuid : uuid as String,
+    workspaceUuid: identical(workspaceUuid, sdkOmittedValue) ? this.workspaceUuid : workspaceUuid as String,
+  );
 
-  factory CreateProjectResponseLinkVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseLinkVariant4(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                CreateProjectResponseLinkVariant4DeployHooksItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        name: (json['name'] as String?)!,
-        owner: (json['owner'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? CreateProjectResponseLinkVariant4Sourceless.fromJson(
-                    json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateProjectResponseLinkVariant4Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        uuid: (json['uuid'] as String?)!,
-        workspaceUuid: (json['workspaceUuid'] as String?)!,
-      );
+  factory CreateProjectResponseLinkVariant4.fromJson(Map<String, dynamic> json) => CreateProjectResponseLinkVariant4(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => CreateProjectResponseLinkVariant4DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    name: (json['name'] as String?)!,
+    owner: (json['owner'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? CreateProjectResponseLinkVariant4Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateProjectResponseLinkVariant4Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    uuid: (json['uuid'] as String?)!,
+    workspaceUuid: (json['workspaceUuid'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'name': name,
-        'owner': owner,
-        'productionBranch': productionBranch,
-        'slug': slug,
-        ...switch (sourceless) {
-          SdkPresent<CreateProjectResponseLinkVariant4Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'uuid': uuid,
-        'workspaceUuid': workspaceUuid,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'name': name,
+    'owner': owner,
+    'productionBranch': productionBranch,
+    'slug': slug,
+    ...switch (sourceless) {
+      SdkPresent<CreateProjectResponseLinkVariant4Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'uuid': uuid,
+    'workspaceUuid': workspaceUuid,
+  };
 }
 
 class CreateProjectResponseLinkVariant5DeployHooksItem {
@@ -170,60 +88,36 @@ class CreateProjectResponseLinkVariant5DeployHooksItem {
   final String ref;
   final String url;
 
-  const CreateProjectResponseLinkVariant5DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const CreateProjectResponseLinkVariant5DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  CreateProjectResponseLinkVariant5DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  CreateProjectResponseLinkVariant5DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  CreateProjectResponseLinkVariant5DeployHooksItem _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      CreateProjectResponseLinkVariant5DeployHooksItem(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  CreateProjectResponseLinkVariant5DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => CreateProjectResponseLinkVariant5DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory CreateProjectResponseLinkVariant5DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseLinkVariant5DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory CreateProjectResponseLinkVariant5DeployHooksItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseLinkVariant5DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }
 
 class CreateProjectResponseLinkVariant5 {
@@ -240,132 +134,57 @@ class CreateProjectResponseLinkVariant5 {
   final CreateProjectResponseLinkVariant5Type type_;
   final SdkOptional<double> updatedAt;
 
-  const CreateProjectResponseLinkVariant5(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.org,
-      required this.productionBranch,
-      required this.repo,
-      required this.repoId,
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted()});
+  const CreateProjectResponseLinkVariant5({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.org, required this.productionBranch, required this.repo, required this.repoId, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
 
-  CreateProjectResponseLinkVariant5 Function(
-      {SdkOptional<double> createdAt,
-      List<CreateProjectResponseLinkVariant5DeployHooksItem> deployHooks,
-      String gitCredentialId,
-      String org,
-      String productionBranch,
-      String repo,
-      String repoId,
-      SdkOptional<CreateProjectResponseLinkVariant5Sourceless> sourceless,
-      CreateProjectResponseLinkVariant5Type type_,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  CreateProjectResponseLinkVariant5 Function({SdkOptional<double> createdAt, List<CreateProjectResponseLinkVariant5DeployHooksItem> deployHooks, String gitCredentialId, String org, String productionBranch, String repo, String repoId, SdkOptional<CreateProjectResponseLinkVariant5Sourceless> sourceless, CreateProjectResponseLinkVariant5Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  CreateProjectResponseLinkVariant5 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      CreateProjectResponseLinkVariant5(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks
-                as List<CreateProjectResponseLinkVariant5DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless
-                as SdkOptional<CreateProjectResponseLinkVariant5Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateProjectResponseLinkVariant5Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  CreateProjectResponseLinkVariant5 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? org = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateProjectResponseLinkVariant5(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<CreateProjectResponseLinkVariant5DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<CreateProjectResponseLinkVariant5Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseLinkVariant5Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory CreateProjectResponseLinkVariant5.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseLinkVariant5(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                CreateProjectResponseLinkVariant5DeployHooksItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        org: (json['org'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: (json['repoId'] as String?)!,
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? CreateProjectResponseLinkVariant5Sourceless.fromJson(
-                    json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateProjectResponseLinkVariant5Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectResponseLinkVariant5.fromJson(Map<String, dynamic> json) => CreateProjectResponseLinkVariant5(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => CreateProjectResponseLinkVariant5DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    org: (json['org'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: (json['repoId'] as String?)!,
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? CreateProjectResponseLinkVariant5Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateProjectResponseLinkVariant5Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'org': org,
-        'productionBranch': productionBranch,
-        'repo': repo,
-        'repoId': repoId,
-        ...switch (sourceless) {
-          SdkPresent<CreateProjectResponseLinkVariant5Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'org': org,
+    'productionBranch': productionBranch,
+    'repo': repo,
+    'repoId': repoId,
+    ...switch (sourceless) {
+      SdkPresent<CreateProjectResponseLinkVariant5Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateProjectResponseLinkVariant6DeployHooksItem {
@@ -377,60 +196,36 @@ class CreateProjectResponseLinkVariant6DeployHooksItem {
   final String ref;
   final String url;
 
-  const CreateProjectResponseLinkVariant6DeployHooksItem(
-      {this.createdAt = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ref,
-      required this.url});
+  const CreateProjectResponseLinkVariant6DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
 
-  CreateProjectResponseLinkVariant6DeployHooksItem Function(
-      {SdkOptional<double> createdAt,
-      String id,
-      String name,
-      String ref,
-      String url}) get copyWith => _copyWith;
+  CreateProjectResponseLinkVariant6DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
 
-  CreateProjectResponseLinkVariant6DeployHooksItem _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      CreateProjectResponseLinkVariant6DeployHooksItem(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  CreateProjectResponseLinkVariant6DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => CreateProjectResponseLinkVariant6DeployHooksItem(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory CreateProjectResponseLinkVariant6DeployHooksItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseLinkVariant6DeployHooksItem(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        url: (json['url'] as String?)!,
-      );
+  factory CreateProjectResponseLinkVariant6DeployHooksItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseLinkVariant6DeployHooksItem(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ref': ref,
-        'url': url,
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ref': ref,
+    'url': url,
+  };
 }
 
 class CreateProjectResponseLinkVariant6 {
@@ -447,130 +242,55 @@ class CreateProjectResponseLinkVariant6 {
   final CreateProjectResponseLinkVariant6Type type_;
   final SdkOptional<double> updatedAt;
 
-  const CreateProjectResponseLinkVariant6(
-      {this.createdAt = const SdkOmitted(),
-      required this.deployHooks,
-      required this.gitCredentialId,
-      required this.org,
-      required this.productionBranch,
-      required this.repo,
-      required this.repoId,
-      this.sourceless = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted()});
+  const CreateProjectResponseLinkVariant6({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.org, required this.productionBranch, required this.repo, required this.repoId, this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
 
-  CreateProjectResponseLinkVariant6 Function(
-      {SdkOptional<double> createdAt,
-      List<CreateProjectResponseLinkVariant6DeployHooksItem> deployHooks,
-      String gitCredentialId,
-      String org,
-      String productionBranch,
-      String repo,
-      String repoId,
-      SdkOptional<CreateProjectResponseLinkVariant6Sourceless> sourceless,
-      CreateProjectResponseLinkVariant6Type type_,
-      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  CreateProjectResponseLinkVariant6 Function({SdkOptional<double> createdAt, List<CreateProjectResponseLinkVariant6DeployHooksItem> deployHooks, String gitCredentialId, String org, String productionBranch, String repo, String repoId, SdkOptional<CreateProjectResponseLinkVariant6Sourceless> sourceless, CreateProjectResponseLinkVariant6Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  CreateProjectResponseLinkVariant6 _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? deployHooks = sdkOmittedValue,
-          Object? gitCredentialId = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? productionBranch = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sourceless = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      CreateProjectResponseLinkVariant6(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        deployHooks: identical(deployHooks, sdkOmittedValue)
-            ? this.deployHooks
-            : deployHooks
-                as List<CreateProjectResponseLinkVariant6DeployHooksItem>,
-        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
-            ? this.gitCredentialId
-            : gitCredentialId as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        productionBranch: identical(productionBranch, sdkOmittedValue)
-            ? this.productionBranch
-            : productionBranch as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sourceless: identical(sourceless, sdkOmittedValue)
-            ? this.sourceless
-            : sourceless
-                as SdkOptional<CreateProjectResponseLinkVariant6Sourceless>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateProjectResponseLinkVariant6Type,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-      );
+  CreateProjectResponseLinkVariant6 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? org = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateProjectResponseLinkVariant6(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<CreateProjectResponseLinkVariant6DeployHooksItem>,
+    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<CreateProjectResponseLinkVariant6Sourceless>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseLinkVariant6Type,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+  );
 
-  factory CreateProjectResponseLinkVariant6.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseLinkVariant6(
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deployHooks: ((json['deployHooks'] as List?)
-            ?.map((e) =>
-                CreateProjectResponseLinkVariant6DeployHooksItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        gitCredentialId: (json['gitCredentialId'] as String?)!,
-        org: (json['org'] as String?)!,
-        productionBranch: (json['productionBranch'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: (json['repoId'] as String?)!,
-        sourceless: json['sourceless'] != null
-            ? SdkPresent((json['sourceless'] != null
-                ? CreateProjectResponseLinkVariant6Sourceless.fromJson(
-                    json['sourceless'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateProjectResponseLinkVariant6Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectResponseLinkVariant6.fromJson(Map<String, dynamic> json) => CreateProjectResponseLinkVariant6(
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deployHooks: ((json['deployHooks'] as List?)?.map((e) => CreateProjectResponseLinkVariant6DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    gitCredentialId: (json['gitCredentialId'] as String?)!,
+    org: (json['org'] as String?)!,
+    productionBranch: (json['productionBranch'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: (json['repoId'] as String?)!,
+    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? CreateProjectResponseLinkVariant6Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateProjectResponseLinkVariant6Type.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-        'gitCredentialId': gitCredentialId,
-        'org': org,
-        'productionBranch': productionBranch,
-        'repo': repo,
-        'repoId': repoId,
-        ...switch (sourceless) {
-          SdkPresent<CreateProjectResponseLinkVariant6Sourceless>(
-            value: final value
-          ) =>
-            {
-              'sourceless': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+    'gitCredentialId': gitCredentialId,
+    'org': org,
+    'productionBranch': productionBranch,
+    'repo': repo,
+    'repoId': repoId,
+    ...switch (sourceless) {
+      SdkPresent<CreateProjectResponseLinkVariant6Sourceless>(value: final value) => {'sourceless': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

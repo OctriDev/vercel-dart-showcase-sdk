@@ -7,186 +7,95 @@ part of 'rolling_release.dart';
 class GetRollingReleaseBillingStatusResponseVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetRollingReleaseBillingStatusResponseVariant0AvailableSlots
-      availableSlots;
+  final GetRollingReleaseBillingStatusResponseVariant0AvailableSlots availableSlots;
   final String message;
   final GetRollingReleaseBillingStatusResponseVariant0Reason reason;
 
-  const GetRollingReleaseBillingStatusResponseVariant0(
-      {required this.availableSlots,
-      required this.message,
-      required this.reason});
+  const GetRollingReleaseBillingStatusResponseVariant0({required this.availableSlots, required this.message, required this.reason});
 
-  GetRollingReleaseBillingStatusResponseVariant0 Function(
-          {GetRollingReleaseBillingStatusResponseVariant0AvailableSlots
-              availableSlots,
-          String message,
-          GetRollingReleaseBillingStatusResponseVariant0Reason reason})
-      get copyWith => _copyWith;
+  GetRollingReleaseBillingStatusResponseVariant0 Function({GetRollingReleaseBillingStatusResponseVariant0AvailableSlots availableSlots, String message, GetRollingReleaseBillingStatusResponseVariant0Reason reason}) get copyWith => _copyWith;
 
-  GetRollingReleaseBillingStatusResponseVariant0 _copyWith(
-          {Object? availableSlots = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetRollingReleaseBillingStatusResponseVariant0(
-        availableSlots: identical(availableSlots, sdkOmittedValue)
-            ? this.availableSlots
-            : availableSlots
-                as GetRollingReleaseBillingStatusResponseVariant0AvailableSlots,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-        reason: identical(reason, sdkOmittedValue)
-            ? this.reason
-            : reason as GetRollingReleaseBillingStatusResponseVariant0Reason,
-      );
+  GetRollingReleaseBillingStatusResponseVariant0 _copyWith({Object? availableSlots = sdkOmittedValue, Object? message = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetRollingReleaseBillingStatusResponseVariant0(
+    availableSlots: identical(availableSlots, sdkOmittedValue) ? this.availableSlots : availableSlots as GetRollingReleaseBillingStatusResponseVariant0AvailableSlots,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as GetRollingReleaseBillingStatusResponseVariant0Reason,
+  );
 
-  factory GetRollingReleaseBillingStatusResponseVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetRollingReleaseBillingStatusResponseVariant0(
-        availableSlots: (json['availableSlots'] != null
-            ? GetRollingReleaseBillingStatusResponseVariant0AvailableSlots
-                .fromJson((json['availableSlots'] as num).toInt())
-            : null)!,
-        message: (json['message'] as String?)!,
-        reason: (json['reason'] != null
-            ? GetRollingReleaseBillingStatusResponseVariant0Reason.fromJson(
-                json['reason'] as String)
-            : null)!,
-      );
+  factory GetRollingReleaseBillingStatusResponseVariant0.fromJson(Map<String, dynamic> json) => GetRollingReleaseBillingStatusResponseVariant0(
+    availableSlots: (json['availableSlots'] != null ? GetRollingReleaseBillingStatusResponseVariant0AvailableSlots.fromJson((json['availableSlots'] as num).toInt()) : null)!,
+    message: (json['message'] as String?)!,
+    reason: (json['reason'] != null ? GetRollingReleaseBillingStatusResponseVariant0Reason.fromJson(json['reason'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'availableSlots': availableSlots.toJson(),
-        'message': message,
-        'reason': reason.toJson(),
-      };
+    'availableSlots': availableSlots.toJson(),
+    'message': message,
+    'reason': reason.toJson(),
+  };
 }
 
 class GetRollingReleaseBillingStatusResponseVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetRollingReleaseBillingStatusResponseVariant1AvailableSlots
-      availableSlots;
+  final GetRollingReleaseBillingStatusResponseVariant1AvailableSlots availableSlots;
   final String message;
   final GetRollingReleaseBillingStatusResponseVariant1Reason reason;
 
-  const GetRollingReleaseBillingStatusResponseVariant1(
-      {required this.availableSlots,
-      required this.message,
-      required this.reason});
+  const GetRollingReleaseBillingStatusResponseVariant1({required this.availableSlots, required this.message, required this.reason});
 
-  GetRollingReleaseBillingStatusResponseVariant1 Function(
-          {GetRollingReleaseBillingStatusResponseVariant1AvailableSlots
-              availableSlots,
-          String message,
-          GetRollingReleaseBillingStatusResponseVariant1Reason reason})
-      get copyWith => _copyWith;
+  GetRollingReleaseBillingStatusResponseVariant1 Function({GetRollingReleaseBillingStatusResponseVariant1AvailableSlots availableSlots, String message, GetRollingReleaseBillingStatusResponseVariant1Reason reason}) get copyWith => _copyWith;
 
-  GetRollingReleaseBillingStatusResponseVariant1 _copyWith(
-          {Object? availableSlots = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetRollingReleaseBillingStatusResponseVariant1(
-        availableSlots: identical(availableSlots, sdkOmittedValue)
-            ? this.availableSlots
-            : availableSlots
-                as GetRollingReleaseBillingStatusResponseVariant1AvailableSlots,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-        reason: identical(reason, sdkOmittedValue)
-            ? this.reason
-            : reason as GetRollingReleaseBillingStatusResponseVariant1Reason,
-      );
+  GetRollingReleaseBillingStatusResponseVariant1 _copyWith({Object? availableSlots = sdkOmittedValue, Object? message = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetRollingReleaseBillingStatusResponseVariant1(
+    availableSlots: identical(availableSlots, sdkOmittedValue) ? this.availableSlots : availableSlots as GetRollingReleaseBillingStatusResponseVariant1AvailableSlots,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as GetRollingReleaseBillingStatusResponseVariant1Reason,
+  );
 
-  factory GetRollingReleaseBillingStatusResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetRollingReleaseBillingStatusResponseVariant1(
-        availableSlots: (json['availableSlots'] != null
-            ? GetRollingReleaseBillingStatusResponseVariant1AvailableSlots
-                .fromJson(json['availableSlots'] as String)
-            : null)!,
-        message: (json['message'] as String?)!,
-        reason: (json['reason'] != null
-            ? GetRollingReleaseBillingStatusResponseVariant1Reason.fromJson(
-                json['reason'] as String)
-            : null)!,
-      );
+  factory GetRollingReleaseBillingStatusResponseVariant1.fromJson(Map<String, dynamic> json) => GetRollingReleaseBillingStatusResponseVariant1(
+    availableSlots: (json['availableSlots'] != null ? GetRollingReleaseBillingStatusResponseVariant1AvailableSlots.fromJson(json['availableSlots'] as String) : null)!,
+    message: (json['message'] as String?)!,
+    reason: (json['reason'] != null ? GetRollingReleaseBillingStatusResponseVariant1Reason.fromJson(json['reason'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'availableSlots': availableSlots.toJson(),
-        'message': message,
-        'reason': reason.toJson(),
-      };
+    'availableSlots': availableSlots.toJson(),
+    'message': message,
+    'reason': reason.toJson(),
+  };
 }
 
 class GetRollingReleaseBillingStatusResponseVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetRollingReleaseBillingStatusResponseVariant2AvailableSlots
-      availableSlots;
+  final GetRollingReleaseBillingStatusResponseVariant2AvailableSlots availableSlots;
   final List<String> enabledProjects;
   final String message;
   final GetRollingReleaseBillingStatusResponseVariant2Reason reason;
 
-  const GetRollingReleaseBillingStatusResponseVariant2(
-      {required this.availableSlots,
-      required this.enabledProjects,
-      required this.message,
-      required this.reason});
+  const GetRollingReleaseBillingStatusResponseVariant2({required this.availableSlots, required this.enabledProjects, required this.message, required this.reason});
 
-  GetRollingReleaseBillingStatusResponseVariant2 Function(
-          {GetRollingReleaseBillingStatusResponseVariant2AvailableSlots
-              availableSlots,
-          List<String> enabledProjects,
-          String message,
-          GetRollingReleaseBillingStatusResponseVariant2Reason reason})
-      get copyWith => _copyWith;
+  GetRollingReleaseBillingStatusResponseVariant2 Function({GetRollingReleaseBillingStatusResponseVariant2AvailableSlots availableSlots, List<String> enabledProjects, String message, GetRollingReleaseBillingStatusResponseVariant2Reason reason}) get copyWith => _copyWith;
 
-  GetRollingReleaseBillingStatusResponseVariant2 _copyWith(
-          {Object? availableSlots = sdkOmittedValue,
-          Object? enabledProjects = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetRollingReleaseBillingStatusResponseVariant2(
-        availableSlots: identical(availableSlots, sdkOmittedValue)
-            ? this.availableSlots
-            : availableSlots
-                as GetRollingReleaseBillingStatusResponseVariant2AvailableSlots,
-        enabledProjects: identical(enabledProjects, sdkOmittedValue)
-            ? this.enabledProjects
-            : enabledProjects as List<String>,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-        reason: identical(reason, sdkOmittedValue)
-            ? this.reason
-            : reason as GetRollingReleaseBillingStatusResponseVariant2Reason,
-      );
+  GetRollingReleaseBillingStatusResponseVariant2 _copyWith({Object? availableSlots = sdkOmittedValue, Object? enabledProjects = sdkOmittedValue, Object? message = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetRollingReleaseBillingStatusResponseVariant2(
+    availableSlots: identical(availableSlots, sdkOmittedValue) ? this.availableSlots : availableSlots as GetRollingReleaseBillingStatusResponseVariant2AvailableSlots,
+    enabledProjects: identical(enabledProjects, sdkOmittedValue) ? this.enabledProjects : enabledProjects as List<String>,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as GetRollingReleaseBillingStatusResponseVariant2Reason,
+  );
 
-  factory GetRollingReleaseBillingStatusResponseVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetRollingReleaseBillingStatusResponseVariant2(
-        availableSlots: (json['availableSlots'] != null
-            ? GetRollingReleaseBillingStatusResponseVariant2AvailableSlots
-                .fromJson((json['availableSlots'] as num).toInt())
-            : null)!,
-        enabledProjects: ((json['enabledProjects'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-        message: (json['message'] as String?)!,
-        reason: (json['reason'] != null
-            ? GetRollingReleaseBillingStatusResponseVariant2Reason.fromJson(
-                json['reason'] as String)
-            : null)!,
-      );
+  factory GetRollingReleaseBillingStatusResponseVariant2.fromJson(Map<String, dynamic> json) => GetRollingReleaseBillingStatusResponseVariant2(
+    availableSlots: (json['availableSlots'] != null ? GetRollingReleaseBillingStatusResponseVariant2AvailableSlots.fromJson((json['availableSlots'] as num).toInt()) : null)!,
+    enabledProjects: ((json['enabledProjects'] as List?)?.map((e) => e as String).toList())!,
+    message: (json['message'] as String?)!,
+    reason: (json['reason'] != null ? GetRollingReleaseBillingStatusResponseVariant2Reason.fromJson(json['reason'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'availableSlots': availableSlots.toJson(),
-        'enabledProjects': enabledProjects,
-        'message': message,
-        'reason': reason.toJson(),
-      };
+    'availableSlots': availableSlots.toJson(),
+    'enabledProjects': enabledProjects,
+    'message': message,
+    'reason': reason.toJson(),
+  };
 }
 
 class GetRollingReleaseBillingStatusResponseVariant3 {
@@ -196,49 +105,27 @@ class GetRollingReleaseBillingStatusResponseVariant3 {
   final String message;
   final GetRollingReleaseBillingStatusResponseVariant3Reason reason;
 
-  const GetRollingReleaseBillingStatusResponseVariant3(
-      {required this.availableSlots,
-      required this.message,
-      required this.reason});
+  const GetRollingReleaseBillingStatusResponseVariant3({required this.availableSlots, required this.message, required this.reason});
 
-  GetRollingReleaseBillingStatusResponseVariant3 Function(
-          {double availableSlots,
-          String message,
-          GetRollingReleaseBillingStatusResponseVariant3Reason reason})
-      get copyWith => _copyWith;
+  GetRollingReleaseBillingStatusResponseVariant3 Function({double availableSlots, String message, GetRollingReleaseBillingStatusResponseVariant3Reason reason}) get copyWith => _copyWith;
 
-  GetRollingReleaseBillingStatusResponseVariant3 _copyWith(
-          {Object? availableSlots = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetRollingReleaseBillingStatusResponseVariant3(
-        availableSlots: identical(availableSlots, sdkOmittedValue)
-            ? this.availableSlots
-            : availableSlots as double,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-        reason: identical(reason, sdkOmittedValue)
-            ? this.reason
-            : reason as GetRollingReleaseBillingStatusResponseVariant3Reason,
-      );
+  GetRollingReleaseBillingStatusResponseVariant3 _copyWith({Object? availableSlots = sdkOmittedValue, Object? message = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetRollingReleaseBillingStatusResponseVariant3(
+    availableSlots: identical(availableSlots, sdkOmittedValue) ? this.availableSlots : availableSlots as double,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as GetRollingReleaseBillingStatusResponseVariant3Reason,
+  );
 
-  factory GetRollingReleaseBillingStatusResponseVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      GetRollingReleaseBillingStatusResponseVariant3(
-        availableSlots: ((json['availableSlots'] as num?)?.toDouble())!,
-        message: (json['message'] as String?)!,
-        reason: (json['reason'] != null
-            ? GetRollingReleaseBillingStatusResponseVariant3Reason.fromJson(
-                json['reason'] as String)
-            : null)!,
-      );
+  factory GetRollingReleaseBillingStatusResponseVariant3.fromJson(Map<String, dynamic> json) => GetRollingReleaseBillingStatusResponseVariant3(
+    availableSlots: ((json['availableSlots'] as num?)?.toDouble())!,
+    message: (json['message'] as String?)!,
+    reason: (json['reason'] != null ? GetRollingReleaseBillingStatusResponseVariant3Reason.fromJson(json['reason'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'availableSlots': availableSlots,
-        'message': message,
-        'reason': reason.toJson(),
-      };
+    'availableSlots': availableSlots,
+    'message': message,
+    'reason': reason.toJson(),
+  };
 }
 
 sealed class GetRollingReleaseBillingStatusResponse {
@@ -247,97 +134,40 @@ sealed class GetRollingReleaseBillingStatusResponse {
   const GetRollingReleaseBillingStatusResponse();
   factory GetRollingReleaseBillingStatusResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetRollingReleaseBillingStatusResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetRollingReleaseBillingStatusResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetRollingReleaseBillingStatusResponseVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetRollingReleaseBillingStatusResponseVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetRollingReleaseBillingStatusResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0(value); } } catch (_) {}
+      try { final value = GetRollingReleaseBillingStatusResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1(value); } } catch (_) {}
+      try { final value = GetRollingReleaseBillingStatusResponseVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2(value); } } catch (_) {}
+      try { final value = GetRollingReleaseBillingStatusResponseVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3(value); } } catch (_) {}
     }
-    try {
-      return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0(
-          GetRollingReleaseBillingStatusResponseVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1(
-          GetRollingReleaseBillingStatusResponseVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2(
-          GetRollingReleaseBillingStatusResponseVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3(
-          GetRollingReleaseBillingStatusResponseVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetRollingReleaseBillingStatusResponse");
+    try { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0(GetRollingReleaseBillingStatusResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1(GetRollingReleaseBillingStatusResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2(GetRollingReleaseBillingStatusResponseVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3(GetRollingReleaseBillingStatusResponseVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetRollingReleaseBillingStatusResponse");
   }
   Object? toJson();
 }
 
-final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0
-    extends GetRollingReleaseBillingStatusResponse {
+final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0 extends GetRollingReleaseBillingStatusResponse {
   final GetRollingReleaseBillingStatusResponseVariant0 value;
-  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1
-    extends GetRollingReleaseBillingStatusResponse {
+final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1 extends GetRollingReleaseBillingStatusResponse {
   final GetRollingReleaseBillingStatusResponseVariant1 value;
-  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2
-    extends GetRollingReleaseBillingStatusResponse {
+final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2 extends GetRollingReleaseBillingStatusResponse {
   final GetRollingReleaseBillingStatusResponseVariant2 value;
-  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3
-    extends GetRollingReleaseBillingStatusResponse {
+final class GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3 extends GetRollingReleaseBillingStatusResponse {
   final GetRollingReleaseBillingStatusResponseVariant3 value;
-  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetRollingReleaseBillingStatusResponseGetRollingReleaseBillingStatusResponseVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }

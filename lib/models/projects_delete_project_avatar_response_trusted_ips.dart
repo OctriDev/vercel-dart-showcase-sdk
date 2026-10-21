@@ -10,142 +10,79 @@ class DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem {
   final SdkOptional<String> note;
   final String value;
 
-  const DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-      {this.note = const SdkOmitted(), required this.value});
+  const DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem({this.note = const SdkOmitted(), required this.value});
 
-  DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem Function(
-      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem _copyWith(
-          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-        note: identical(note, sdkOmittedValue)
-            ? this.note
-            : note as SdkOptional<String>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-      );
+  DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem(
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-      );
+  factory DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem(
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-      };
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+  };
 }
 
 class DeleteProjectAvatarResponseTrustedIpsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem>
-      addresses;
-  final DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType
-      deploymentType;
-  final DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode
-      protectionMode;
+  final List<DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem> addresses;
+  final DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType deploymentType;
+  final DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode protectionMode;
 
-  const DeleteProjectAvatarResponseTrustedIpsVariant0(
-      {required this.addresses,
-      required this.deploymentType,
-      required this.protectionMode});
+  const DeleteProjectAvatarResponseTrustedIpsVariant0({required this.addresses, required this.deploymentType, required this.protectionMode});
 
-  DeleteProjectAvatarResponseTrustedIpsVariant0 Function(
-      {List<DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem>
-          addresses,
-      DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType
-          deploymentType,
-      DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode
-          protectionMode}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseTrustedIpsVariant0 Function({List<DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem> addresses, DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType deploymentType, DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode protectionMode}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseTrustedIpsVariant0 _copyWith(
-          {Object? addresses = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue,
-          Object? protectionMode = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseTrustedIpsVariant0(
-        addresses: identical(addresses, sdkOmittedValue)
-            ? this.addresses
-            : addresses as List<
-                DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem>,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType,
-        protectionMode: identical(protectionMode, sdkOmittedValue)
-            ? this.protectionMode
-            : protectionMode
-                as DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode,
-      );
+  DeleteProjectAvatarResponseTrustedIpsVariant0 _copyWith({Object? addresses = sdkOmittedValue, Object? deploymentType = sdkOmittedValue, Object? protectionMode = sdkOmittedValue}) => DeleteProjectAvatarResponseTrustedIpsVariant0(
+    addresses: identical(addresses, sdkOmittedValue) ? this.addresses : addresses as List<DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem>,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType,
+    protectionMode: identical(protectionMode, sdkOmittedValue) ? this.protectionMode : protectionMode as DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode,
+  );
 
-  factory DeleteProjectAvatarResponseTrustedIpsVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseTrustedIpsVariant0(
-        addresses: ((json['addresses'] as List?)
-            ?.map((e) =>
-                DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        deploymentType: (json['deploymentType'] != null
-            ? DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-        protectionMode: (json['protectionMode'] != null
-            ? DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode
-                .fromJson(json['protectionMode'] as String)
-            : null)!,
-      );
+  factory DeleteProjectAvatarResponseTrustedIpsVariant0.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseTrustedIpsVariant0(
+    addresses: ((json['addresses'] as List?)?.map((e) => DeleteProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    deploymentType: (json['deploymentType'] != null ? DeleteProjectAvatarResponseTrustedIpsVariant0DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+    protectionMode: (json['protectionMode'] != null ? DeleteProjectAvatarResponseTrustedIpsVariant0ProtectionMode.fromJson(json['protectionMode'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'addresses': addresses.map((item) => item.toJson()).toList(),
-        'deploymentType': deploymentType.toJson(),
-        'protectionMode': protectionMode.toJson(),
-      };
+    'addresses': addresses.map((item) => item.toJson()).toList(),
+    'deploymentType': deploymentType.toJson(),
+    'protectionMode': protectionMode.toJson(),
+  };
 }
 
 class DeleteProjectAvatarResponseTrustedIpsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType
-      deploymentType;
+  final DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType deploymentType;
 
-  const DeleteProjectAvatarResponseTrustedIpsVariant1(
-      {required this.deploymentType});
+  const DeleteProjectAvatarResponseTrustedIpsVariant1({required this.deploymentType});
 
-  DeleteProjectAvatarResponseTrustedIpsVariant1 Function(
-      {DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseTrustedIpsVariant1 Function({DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType deploymentType}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseTrustedIpsVariant1 _copyWith(
-          {Object? deploymentType = sdkOmittedValue}) =>
-      DeleteProjectAvatarResponseTrustedIpsVariant1(
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType,
-      );
+  DeleteProjectAvatarResponseTrustedIpsVariant1 _copyWith({Object? deploymentType = sdkOmittedValue}) => DeleteProjectAvatarResponseTrustedIpsVariant1(
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType,
+  );
 
-  factory DeleteProjectAvatarResponseTrustedIpsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      DeleteProjectAvatarResponseTrustedIpsVariant1(
-        deploymentType: (json['deploymentType'] != null
-            ? DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory DeleteProjectAvatarResponseTrustedIpsVariant1.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseTrustedIpsVariant1(
+    deploymentType: (json['deploymentType'] != null ? DeleteProjectAvatarResponseTrustedIpsVariant1DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'deploymentType': deploymentType.toJson(),
-      };
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 sealed class DeleteProjectAvatarResponseTrustedIps {
@@ -154,53 +91,24 @@ sealed class DeleteProjectAvatarResponseTrustedIps {
   const DeleteProjectAvatarResponseTrustedIps();
   factory DeleteProjectAvatarResponseTrustedIps.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            DeleteProjectAvatarResponseTrustedIpsVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            DeleteProjectAvatarResponseTrustedIpsVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = DeleteProjectAvatarResponseTrustedIpsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0(value); } } catch (_) {}
+      try { final value = DeleteProjectAvatarResponseTrustedIpsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1(value); } } catch (_) {}
     }
-    try {
-      return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0(
-          DeleteProjectAvatarResponseTrustedIpsVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1(
-          DeleteProjectAvatarResponseTrustedIpsVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for DeleteProjectAvatarResponseTrustedIps");
+    try { return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0(DeleteProjectAvatarResponseTrustedIpsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1(DeleteProjectAvatarResponseTrustedIpsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for DeleteProjectAvatarResponseTrustedIps");
   }
   Object? toJson();
 }
 
-final class DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0
-    extends DeleteProjectAvatarResponseTrustedIps {
+final class DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0 extends DeleteProjectAvatarResponseTrustedIps {
   final DeleteProjectAvatarResponseTrustedIpsVariant0 value;
-  const DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1
-    extends DeleteProjectAvatarResponseTrustedIps {
+final class DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1 extends DeleteProjectAvatarResponseTrustedIps {
   final DeleteProjectAvatarResponseTrustedIpsVariant1 value;
-  const DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const DeleteProjectAvatarResponseTrustedIpsDeleteProjectAvatarResponseTrustedIpsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

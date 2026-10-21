@@ -8,52 +8,30 @@ part of 'connect.dart';
 class ConnectServiceSync {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Provider synchronization errors. Present when serviceSync.status is required.
   final SdkOptional<List<ConnectServiceSyncError>> errors;
-
   /// done means the external service was updated. required means the Vercel update was saved, but provider-side configuration still needs attention.
   final ConnectServiceSyncStatus status;
 
-  const ConnectServiceSync(
-      {this.errors = const SdkOmitted(), required this.status});
+  const ConnectServiceSync({this.errors = const SdkOmitted(), required this.status});
 
-  ConnectServiceSync Function(
-      {SdkOptional<List<ConnectServiceSyncError>> errors,
-      ConnectServiceSyncStatus status}) get copyWith => _copyWith;
+  ConnectServiceSync Function({SdkOptional<List<ConnectServiceSyncError>> errors, ConnectServiceSyncStatus status}) get copyWith => _copyWith;
 
-  ConnectServiceSync _copyWith(
-          {Object? errors = sdkOmittedValue,
-          Object? status = sdkOmittedValue}) =>
-      ConnectServiceSync(
-        errors: identical(errors, sdkOmittedValue)
-            ? this.errors
-            : errors as SdkOptional<List<ConnectServiceSyncError>>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as ConnectServiceSyncStatus,
-      );
+  ConnectServiceSync _copyWith({Object? errors = sdkOmittedValue, Object? status = sdkOmittedValue}) => ConnectServiceSync(
+    errors: identical(errors, sdkOmittedValue) ? this.errors : errors as SdkOptional<List<ConnectServiceSyncError>>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as ConnectServiceSyncStatus,
+  );
 
-  factory ConnectServiceSync.fromJson(Map<String, dynamic> json) =>
-      ConnectServiceSync(
-        errors: json['errors'] != null
-            ? SdkPresent(((json['errors'] as List?)
-                ?.map((e) =>
-                    ConnectServiceSyncError.fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        status: (json['status'] != null
-            ? ConnectServiceSyncStatus.fromJson(json['status'] as String)
-            : null)!,
-      );
+  factory ConnectServiceSync.fromJson(Map<String, dynamic> json) => ConnectServiceSync(
+    errors: json['errors'] != null ? SdkPresent(((json['errors'] as List?)?.map((e) => ConnectServiceSyncError.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    status: (json['status'] != null ? ConnectServiceSyncStatus.fromJson(json['status'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (errors) {
-          SdkPresent<List<ConnectServiceSyncError>>(value: final value) => {
-              'errors': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'status': status.toJson(),
-      };
+    ...switch (errors) {
+      SdkPresent<List<ConnectServiceSyncError>>(value: final value) => {'errors': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'status': status.toJson(),
+  };
 }

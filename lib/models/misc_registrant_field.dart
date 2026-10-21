@@ -11,27 +11,19 @@ class RegistrantFieldVariant0RequiredWhenVariant1 {
 
   const RegistrantFieldVariant0RequiredWhenVariant1({required this.valueIn});
 
-  RegistrantFieldVariant0RequiredWhenVariant1 Function({List<String> valueIn})
-      get copyWith => _copyWith;
+  RegistrantFieldVariant0RequiredWhenVariant1 Function({List<String> valueIn}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant0RequiredWhenVariant1 _copyWith(
-          {Object? valueIn = sdkOmittedValue}) =>
-      RegistrantFieldVariant0RequiredWhenVariant1(
-        valueIn: identical(valueIn, sdkOmittedValue)
-            ? this.valueIn
-            : valueIn as List<String>,
-      );
+  RegistrantFieldVariant0RequiredWhenVariant1 _copyWith({Object? valueIn = sdkOmittedValue}) => RegistrantFieldVariant0RequiredWhenVariant1(
+    valueIn: identical(valueIn, sdkOmittedValue) ? this.valueIn : valueIn as List<String>,
+  );
 
-  factory RegistrantFieldVariant0RequiredWhenVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      RegistrantFieldVariant0RequiredWhenVariant1(
-        valueIn:
-            ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory RegistrantFieldVariant0RequiredWhenVariant1.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant0RequiredWhenVariant1(
+    valueIn: ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'value_in': valueIn,
-      };
+    'value_in': valueIn,
+  };
 }
 
 sealed class RegistrantFieldVariant0RequiredWhen {
@@ -39,35 +31,23 @@ sealed class RegistrantFieldVariant0RequiredWhen {
   static const String constructionSurface = 'named';
   const RegistrantFieldVariant0RequiredWhen();
   factory RegistrantFieldVariant0RequiredWhen.fromJson(Object? json) {
-    if (json is String) {
-      return RegistrantFieldVariant0RequiredWhenString(json);
-    }
-    try {
-      return RegistrantFieldVariant0RequiredWhenRegistrantFieldVariant0RequiredWhenVariant1(
-          RegistrantFieldVariant0RequiredWhenVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for RegistrantFieldVariant0RequiredWhen");
+    if (json is String) { return RegistrantFieldVariant0RequiredWhenString(json); }
+    try { return RegistrantFieldVariant0RequiredWhenRegistrantFieldVariant0RequiredWhenVariant1(RegistrantFieldVariant0RequiredWhenVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for RegistrantFieldVariant0RequiredWhen");
   }
   Object? toJson();
 }
 
-final class RegistrantFieldVariant0RequiredWhenString
-    extends RegistrantFieldVariant0RequiredWhen {
+final class RegistrantFieldVariant0RequiredWhenString extends RegistrantFieldVariant0RequiredWhen {
   final String value;
   const RegistrantFieldVariant0RequiredWhenString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class RegistrantFieldVariant0RequiredWhenRegistrantFieldVariant0RequiredWhenVariant1
-    extends RegistrantFieldVariant0RequiredWhen {
+final class RegistrantFieldVariant0RequiredWhenRegistrantFieldVariant0RequiredWhenVariant1 extends RegistrantFieldVariant0RequiredWhen {
   final RegistrantFieldVariant0RequiredWhenVariant1 value;
-  const RegistrantFieldVariant0RequiredWhenRegistrantFieldVariant0RequiredWhenVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RegistrantFieldVariant0RequiredWhenRegistrantFieldVariant0RequiredWhenVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class RegistrantFieldVariant0OptionsItem {
@@ -77,50 +57,30 @@ class RegistrantFieldVariant0OptionsItem {
   final String label;
   final SdkOptional<Map<String, dynamic>> fields;
 
-  const RegistrantFieldVariant0OptionsItem(
-      {required this.value,
-      required this.label,
-      this.fields = const SdkOmitted()});
+  const RegistrantFieldVariant0OptionsItem({required this.value, required this.label, this.fields = const SdkOmitted()});
 
-  RegistrantFieldVariant0OptionsItem Function(
-      {String value,
-      String label,
-      SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
+  RegistrantFieldVariant0OptionsItem Function({String value, String label, SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant0OptionsItem _copyWith(
-          {Object? value = sdkOmittedValue,
-          Object? label = sdkOmittedValue,
-          Object? fields = sdkOmittedValue}) =>
-      RegistrantFieldVariant0OptionsItem(
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        fields: identical(fields, sdkOmittedValue)
-            ? this.fields
-            : fields as SdkOptional<Map<String, dynamic>>,
-      );
+  RegistrantFieldVariant0OptionsItem _copyWith({Object? value = sdkOmittedValue, Object? label = sdkOmittedValue, Object? fields = sdkOmittedValue}) => RegistrantFieldVariant0OptionsItem(
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    fields: identical(fields, sdkOmittedValue) ? this.fields : fields as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory RegistrantFieldVariant0OptionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      RegistrantFieldVariant0OptionsItem(
-        value: (json['value'] as String?)!,
-        label: (json['label'] as String?)!,
-        fields: json['fields'] != null
-            ? SdkPresent((json['fields'] == null
-                ? null
-                : json['fields'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory RegistrantFieldVariant0OptionsItem.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant0OptionsItem(
+    value: (json['value'] as String?)!,
+    label: (json['label'] as String?)!,
+    fields: json['fields'] != null ? SdkPresent((json['fields'] == null ? null : json['fields'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'value': value,
-        'label': label,
-        ...switch (fields) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'fields': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'value': value,
+    'label': label,
+    ...switch (fields) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'fields': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class RegistrantFieldVariant0 {
@@ -135,129 +95,57 @@ class RegistrantFieldVariant0 {
   final SdkOptional<List<RegistrantFieldVariant0OptionsItem>> options;
   final SdkOptional<Map<String, dynamic>> fields;
 
-  const RegistrantFieldVariant0(
-      {required this.description,
-      required this.required_,
-      this.label = const SdkOmitted(),
-      this.validation = const SdkOmitted(),
-      this.requiredWhen = const SdkOmitted(),
-      required this.type_,
-      this.options = const SdkOmitted(),
-      this.fields = const SdkOmitted()});
+  const RegistrantFieldVariant0({required this.description, required this.required_, this.label = const SdkOmitted(), this.validation = const SdkOmitted(), this.requiredWhen = const SdkOmitted(), required this.type_, this.options = const SdkOmitted(), this.fields = const SdkOmitted()});
 
-  RegistrantFieldVariant0 Function(
-      {String description,
-      bool required_,
-      SdkOptional<String> label,
-      SdkOptional<String> validation,
-      SdkOptional<dynamic> requiredWhen,
-      RegistrantFieldVariant0Type type_,
-      SdkOptional<List<RegistrantFieldVariant0OptionsItem>> options,
-      SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
+  RegistrantFieldVariant0 Function({String description, bool required_, SdkOptional<String> label, SdkOptional<String> validation, SdkOptional<dynamic> requiredWhen, RegistrantFieldVariant0Type type_, SdkOptional<List<RegistrantFieldVariant0OptionsItem>> options, SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant0 _copyWith(
-          {Object? description = sdkOmittedValue,
-          Object? required_ = sdkOmittedValue,
-          Object? label = sdkOmittedValue,
-          Object? validation = sdkOmittedValue,
-          Object? requiredWhen = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? options = sdkOmittedValue,
-          Object? fields = sdkOmittedValue}) =>
-      RegistrantFieldVariant0(
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-        required_: identical(required_, sdkOmittedValue)
-            ? this.required_
-            : required_ as bool,
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label as SdkOptional<String>,
-        validation: identical(validation, sdkOmittedValue)
-            ? this.validation
-            : validation as SdkOptional<String>,
-        requiredWhen: identical(requiredWhen, sdkOmittedValue)
-            ? this.requiredWhen
-            : requiredWhen as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as RegistrantFieldVariant0Type,
-        options: identical(options, sdkOmittedValue)
-            ? this.options
-            : options as SdkOptional<List<RegistrantFieldVariant0OptionsItem>>,
-        fields: identical(fields, sdkOmittedValue)
-            ? this.fields
-            : fields as SdkOptional<Map<String, dynamic>>,
-      );
+  RegistrantFieldVariant0 _copyWith({Object? description = sdkOmittedValue, Object? required_ = sdkOmittedValue, Object? label = sdkOmittedValue, Object? validation = sdkOmittedValue, Object? requiredWhen = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? options = sdkOmittedValue, Object? fields = sdkOmittedValue}) => RegistrantFieldVariant0(
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+    required_: identical(required_, sdkOmittedValue) ? this.required_ : required_ as bool,
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+    validation: identical(validation, sdkOmittedValue) ? this.validation : validation as SdkOptional<String>,
+    requiredWhen: identical(requiredWhen, sdkOmittedValue) ? this.requiredWhen : requiredWhen as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RegistrantFieldVariant0Type,
+    options: identical(options, sdkOmittedValue) ? this.options : options as SdkOptional<List<RegistrantFieldVariant0OptionsItem>>,
+    fields: identical(fields, sdkOmittedValue) ? this.fields : fields as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory RegistrantFieldVariant0.fromJson(Map<String, dynamic> json) =>
-      RegistrantFieldVariant0(
-        description: (json['description'] as String?)!,
-        required_: (json['required'] as bool?)!,
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-        validation: json['validation'] != null
-            ? SdkPresent((json['validation'] as String?)!)
-            : const SdkOmitted(),
-        requiredWhen: json['required_when'] != null
-            ? SdkPresent((json['required_when'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? RegistrantFieldVariant0Type.fromJson(json['type'] as String)
-            : null)!,
-        options: json['options'] != null
-            ? SdkPresent(((json['options'] as List?)
-                ?.map((e) => RegistrantFieldVariant0OptionsItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        fields: json['fields'] != null
-            ? SdkPresent((json['fields'] == null
-                ? null
-                : json['fields'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory RegistrantFieldVariant0.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant0(
+    description: (json['description'] as String?)!,
+    required_: (json['required'] as bool?)!,
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+    validation: json['validation'] != null ? SdkPresent((json['validation'] as String?)!) : const SdkOmitted(),
+    requiredWhen: json['required_when'] != null ? SdkPresent((json['required_when'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? RegistrantFieldVariant0Type.fromJson(json['type'] as String) : null)!,
+    options: json['options'] != null ? SdkPresent(((json['options'] as List?)?.map((e) => RegistrantFieldVariant0OptionsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    fields: json['fields'] != null ? SdkPresent((json['fields'] == null ? null : json['fields'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'description': description,
-        'required': required_,
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (validation) {
-          SdkPresent<String>(value: final value) => {
-              'validation': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requiredWhen) {
-          SdkPresent<dynamic>(value: final value) => {
-              'required_when': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (options) {
-          SdkPresent<List<RegistrantFieldVariant0OptionsItem>>(
-            value: final value
-          ) =>
-            {
-              'options': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (fields) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'fields': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'description': description,
+    'required': required_,
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (validation) {
+      SdkPresent<String>(value: final value) => {'validation': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requiredWhen) {
+      SdkPresent<dynamic>(value: final value) => {'required_when': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (options) {
+      SdkPresent<List<RegistrantFieldVariant0OptionsItem>>(value: final value) => {'options': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (fields) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'fields': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class RegistrantFieldVariant1RequiredWhenVariant1 {
@@ -267,27 +155,19 @@ class RegistrantFieldVariant1RequiredWhenVariant1 {
 
   const RegistrantFieldVariant1RequiredWhenVariant1({required this.valueIn});
 
-  RegistrantFieldVariant1RequiredWhenVariant1 Function({List<String> valueIn})
-      get copyWith => _copyWith;
+  RegistrantFieldVariant1RequiredWhenVariant1 Function({List<String> valueIn}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant1RequiredWhenVariant1 _copyWith(
-          {Object? valueIn = sdkOmittedValue}) =>
-      RegistrantFieldVariant1RequiredWhenVariant1(
-        valueIn: identical(valueIn, sdkOmittedValue)
-            ? this.valueIn
-            : valueIn as List<String>,
-      );
+  RegistrantFieldVariant1RequiredWhenVariant1 _copyWith({Object? valueIn = sdkOmittedValue}) => RegistrantFieldVariant1RequiredWhenVariant1(
+    valueIn: identical(valueIn, sdkOmittedValue) ? this.valueIn : valueIn as List<String>,
+  );
 
-  factory RegistrantFieldVariant1RequiredWhenVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      RegistrantFieldVariant1RequiredWhenVariant1(
-        valueIn:
-            ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory RegistrantFieldVariant1RequiredWhenVariant1.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant1RequiredWhenVariant1(
+    valueIn: ((json['value_in'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'value_in': valueIn,
-      };
+    'value_in': valueIn,
+  };
 }
 
 sealed class RegistrantFieldVariant1RequiredWhen {
@@ -295,35 +175,23 @@ sealed class RegistrantFieldVariant1RequiredWhen {
   static const String constructionSurface = 'named';
   const RegistrantFieldVariant1RequiredWhen();
   factory RegistrantFieldVariant1RequiredWhen.fromJson(Object? json) {
-    if (json is String) {
-      return RegistrantFieldVariant1RequiredWhenString(json);
-    }
-    try {
-      return RegistrantFieldVariant1RequiredWhenRegistrantFieldVariant1RequiredWhenVariant1(
-          RegistrantFieldVariant1RequiredWhenVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for RegistrantFieldVariant1RequiredWhen");
+    if (json is String) { return RegistrantFieldVariant1RequiredWhenString(json); }
+    try { return RegistrantFieldVariant1RequiredWhenRegistrantFieldVariant1RequiredWhenVariant1(RegistrantFieldVariant1RequiredWhenVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for RegistrantFieldVariant1RequiredWhen");
   }
   Object? toJson();
 }
 
-final class RegistrantFieldVariant1RequiredWhenString
-    extends RegistrantFieldVariant1RequiredWhen {
+final class RegistrantFieldVariant1RequiredWhenString extends RegistrantFieldVariant1RequiredWhen {
   final String value;
   const RegistrantFieldVariant1RequiredWhenString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class RegistrantFieldVariant1RequiredWhenRegistrantFieldVariant1RequiredWhenVariant1
-    extends RegistrantFieldVariant1RequiredWhen {
+final class RegistrantFieldVariant1RequiredWhenRegistrantFieldVariant1RequiredWhenVariant1 extends RegistrantFieldVariant1RequiredWhen {
   final RegistrantFieldVariant1RequiredWhenVariant1 value;
-  const RegistrantFieldVariant1RequiredWhenRegistrantFieldVariant1RequiredWhenVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RegistrantFieldVariant1RequiredWhenRegistrantFieldVariant1RequiredWhenVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class RegistrantFieldVariant1OptionsItem {
@@ -333,50 +201,30 @@ class RegistrantFieldVariant1OptionsItem {
   final String label;
   final SdkOptional<Map<String, dynamic>> fields;
 
-  const RegistrantFieldVariant1OptionsItem(
-      {required this.value,
-      required this.label,
-      this.fields = const SdkOmitted()});
+  const RegistrantFieldVariant1OptionsItem({required this.value, required this.label, this.fields = const SdkOmitted()});
 
-  RegistrantFieldVariant1OptionsItem Function(
-      {String value,
-      String label,
-      SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
+  RegistrantFieldVariant1OptionsItem Function({String value, String label, SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant1OptionsItem _copyWith(
-          {Object? value = sdkOmittedValue,
-          Object? label = sdkOmittedValue,
-          Object? fields = sdkOmittedValue}) =>
-      RegistrantFieldVariant1OptionsItem(
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        fields: identical(fields, sdkOmittedValue)
-            ? this.fields
-            : fields as SdkOptional<Map<String, dynamic>>,
-      );
+  RegistrantFieldVariant1OptionsItem _copyWith({Object? value = sdkOmittedValue, Object? label = sdkOmittedValue, Object? fields = sdkOmittedValue}) => RegistrantFieldVariant1OptionsItem(
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    fields: identical(fields, sdkOmittedValue) ? this.fields : fields as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory RegistrantFieldVariant1OptionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      RegistrantFieldVariant1OptionsItem(
-        value: (json['value'] as String?)!,
-        label: (json['label'] as String?)!,
-        fields: json['fields'] != null
-            ? SdkPresent((json['fields'] == null
-                ? null
-                : json['fields'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory RegistrantFieldVariant1OptionsItem.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant1OptionsItem(
+    value: (json['value'] as String?)!,
+    label: (json['label'] as String?)!,
+    fields: json['fields'] != null ? SdkPresent((json['fields'] == null ? null : json['fields'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'value': value,
-        'label': label,
-        ...switch (fields) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'fields': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'value': value,
+    'label': label,
+    ...switch (fields) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'fields': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class RegistrantFieldVariant1 {
@@ -391,117 +239,52 @@ class RegistrantFieldVariant1 {
   final List<RegistrantFieldVariant1OptionsItem> options;
   final SdkOptional<Map<String, dynamic>> fields;
 
-  const RegistrantFieldVariant1(
-      {required this.description,
-      required this.required_,
-      this.label = const SdkOmitted(),
-      this.validation = const SdkOmitted(),
-      this.requiredWhen = const SdkOmitted(),
-      required this.type_,
-      required this.options,
-      this.fields = const SdkOmitted()});
+  const RegistrantFieldVariant1({required this.description, required this.required_, this.label = const SdkOmitted(), this.validation = const SdkOmitted(), this.requiredWhen = const SdkOmitted(), required this.type_, required this.options, this.fields = const SdkOmitted()});
 
-  RegistrantFieldVariant1 Function(
-      {String description,
-      bool required_,
-      SdkOptional<String> label,
-      SdkOptional<String> validation,
-      SdkOptional<dynamic> requiredWhen,
-      RegistrantFieldVariant1Type type_,
-      List<RegistrantFieldVariant1OptionsItem> options,
-      SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
+  RegistrantFieldVariant1 Function({String description, bool required_, SdkOptional<String> label, SdkOptional<String> validation, SdkOptional<dynamic> requiredWhen, RegistrantFieldVariant1Type type_, List<RegistrantFieldVariant1OptionsItem> options, SdkOptional<Map<String, dynamic>> fields}) get copyWith => _copyWith;
 
-  RegistrantFieldVariant1 _copyWith(
-          {Object? description = sdkOmittedValue,
-          Object? required_ = sdkOmittedValue,
-          Object? label = sdkOmittedValue,
-          Object? validation = sdkOmittedValue,
-          Object? requiredWhen = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? options = sdkOmittedValue,
-          Object? fields = sdkOmittedValue}) =>
-      RegistrantFieldVariant1(
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-        required_: identical(required_, sdkOmittedValue)
-            ? this.required_
-            : required_ as bool,
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label as SdkOptional<String>,
-        validation: identical(validation, sdkOmittedValue)
-            ? this.validation
-            : validation as SdkOptional<String>,
-        requiredWhen: identical(requiredWhen, sdkOmittedValue)
-            ? this.requiredWhen
-            : requiredWhen as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as RegistrantFieldVariant1Type,
-        options: identical(options, sdkOmittedValue)
-            ? this.options
-            : options as List<RegistrantFieldVariant1OptionsItem>,
-        fields: identical(fields, sdkOmittedValue)
-            ? this.fields
-            : fields as SdkOptional<Map<String, dynamic>>,
-      );
+  RegistrantFieldVariant1 _copyWith({Object? description = sdkOmittedValue, Object? required_ = sdkOmittedValue, Object? label = sdkOmittedValue, Object? validation = sdkOmittedValue, Object? requiredWhen = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? options = sdkOmittedValue, Object? fields = sdkOmittedValue}) => RegistrantFieldVariant1(
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+    required_: identical(required_, sdkOmittedValue) ? this.required_ : required_ as bool,
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+    validation: identical(validation, sdkOmittedValue) ? this.validation : validation as SdkOptional<String>,
+    requiredWhen: identical(requiredWhen, sdkOmittedValue) ? this.requiredWhen : requiredWhen as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RegistrantFieldVariant1Type,
+    options: identical(options, sdkOmittedValue) ? this.options : options as List<RegistrantFieldVariant1OptionsItem>,
+    fields: identical(fields, sdkOmittedValue) ? this.fields : fields as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory RegistrantFieldVariant1.fromJson(Map<String, dynamic> json) =>
-      RegistrantFieldVariant1(
-        description: (json['description'] as String?)!,
-        required_: (json['required'] as bool?)!,
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-        validation: json['validation'] != null
-            ? SdkPresent((json['validation'] as String?)!)
-            : const SdkOmitted(),
-        requiredWhen: json['required_when'] != null
-            ? SdkPresent((json['required_when'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? RegistrantFieldVariant1Type.fromJson(json['type'] as String)
-            : null)!,
-        options: ((json['options'] as List?)
-            ?.map((e) => RegistrantFieldVariant1OptionsItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-        fields: json['fields'] != null
-            ? SdkPresent((json['fields'] == null
-                ? null
-                : json['fields'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory RegistrantFieldVariant1.fromJson(Map<String, dynamic> json) => RegistrantFieldVariant1(
+    description: (json['description'] as String?)!,
+    required_: (json['required'] as bool?)!,
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+    validation: json['validation'] != null ? SdkPresent((json['validation'] as String?)!) : const SdkOmitted(),
+    requiredWhen: json['required_when'] != null ? SdkPresent((json['required_when'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? RegistrantFieldVariant1Type.fromJson(json['type'] as String) : null)!,
+    options: ((json['options'] as List?)?.map((e) => RegistrantFieldVariant1OptionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    fields: json['fields'] != null ? SdkPresent((json['fields'] == null ? null : json['fields'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'description': description,
-        'required': required_,
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (validation) {
-          SdkPresent<String>(value: final value) => {
-              'validation': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requiredWhen) {
-          SdkPresent<dynamic>(value: final value) => {
-              'required_when': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        'options': options.map((item) => item.toJson()).toList(),
-        ...switch (fields) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'fields': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'description': description,
+    'required': required_,
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (validation) {
+      SdkPresent<String>(value: final value) => {'validation': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requiredWhen) {
+      SdkPresent<dynamic>(value: final value) => {'required_when': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    'options': options.map((item) => item.toJson()).toList(),
+    ...switch (fields) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'fields': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

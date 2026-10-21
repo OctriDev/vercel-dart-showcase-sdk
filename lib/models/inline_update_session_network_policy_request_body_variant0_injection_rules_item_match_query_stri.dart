@@ -8,551 +8,258 @@ part of 'inline.dart';
 class UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Matcher for the entry key (header name or query key).
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey>
-      key;
-
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey> key;
   /// Matcher for the entry value.
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue>
-      value;
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue> value;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem(
-      {this.key = const SdkOmitted(), this.value = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem({this.key = const SdkOmitted(), this.value = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem Function(
-      {SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey>
-          key,
-      SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue>
-          value}) get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem Function({SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey> key, SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue> value}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key as SdkOptional<
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey>,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as SdkOptional<
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue>,
-          );
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem(
-        key: json['key'] != null
-            ? SdkPresent((json['key'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey
-                    .fromJson(json['key'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        value: json['value'] != null
-            ? SdkPresent((json['value'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue
-                    .fromJson(json['value'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem(
+    key: json['key'] != null ? SdkPresent((json['key'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey.fromJson(json['key'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    value: json['value'] != null ? SdkPresent((json['value'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue.fromJson(json['value'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (key) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey>(
-            value: final value
-          ) =>
-            {
-              'key': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (value) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue>(
-            value: final value
-          ) =>
-            {
-              'value': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (key) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemKey>(value: final value) => {'key': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (value) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItemValue>(value: final value) => {'value': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Matcher for the entry key (header name or query key).
 class UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Matcher for the entry value.
 class UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Matcher for the entry key (header name or query key).
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey>
-      key;
-
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey> key;
   /// Matcher for the entry value.
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue>
-      value;
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue> value;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem(
-      {this.key = const SdkOmitted(), this.value = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem({this.key = const SdkOmitted(), this.value = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem Function(
-      {SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey>
-          key,
-      SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue>
-          value}) get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem Function({SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey> key, SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue> value}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key as SdkOptional<
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey>,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as SdkOptional<
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue>,
-          );
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem(
-        key: json['key'] != null
-            ? SdkPresent((json['key'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey
-                    .fromJson(json['key'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        value: json['value'] != null
-            ? SdkPresent((json['value'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue
-                    .fromJson(json['value'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem(
+    key: json['key'] != null ? SdkPresent((json['key'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey.fromJson(json['key'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    value: json['value'] != null ? SdkPresent((json['value'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue.fromJson(json['value'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (key) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey>(
-            value: final value
-          ) =>
-            {
-              'key': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (value) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue>(
-            value: final value
-          ) =>
-            {
-              'value': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (key) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemKey>(value: final value) => {'key': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (value) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItemValue>(value: final value) => {'value': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.
 class UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match on the request path. Comparison is case-sensitive.
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath>
-      path;
-
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath> path;
   /// HTTP methods to match. Any single match succeeds (OR semantics).
   final SdkOptional<List<String>> method;
-
   /// Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.
-  final SdkOptional<
-          List<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>>
-      queryString;
-
+  final SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>> queryString;
   /// Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.
-  final SdkOptional<
-          List<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>>
-      headers;
+  final SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>> headers;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch(
-      {this.path = const SdkOmitted(),
-      this.method = const SdkOmitted(),
-      this.queryString = const SdkOmitted(),
-      this.headers = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch({this.path = const SdkOmitted(), this.method = const SdkOmitted(), this.queryString = const SdkOmitted(), this.headers = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch Function(
-      {SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath>
-          path,
-      SdkOptional<List<String>> method,
-      SdkOptional<
-              List<
-                  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>>
-          queryString,
-      SdkOptional<
-              List<
-                  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>>
-          headers}) get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch Function({SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath> path, SdkOptional<List<String>> method, SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>> queryString, SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>> headers}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch
-      _copyWith(
-              {Object? path = sdkOmittedValue,
-              Object? method = sdkOmittedValue,
-              Object? queryString = sdkOmittedValue,
-              Object? headers = sdkOmittedValue}) =>
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch(
-            path: identical(path, sdkOmittedValue)
-                ? this.path
-                : path as SdkOptional<
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath>,
-            method: identical(method, sdkOmittedValue)
-                ? this.method
-                : method as SdkOptional<List<String>>,
-            queryString: identical(queryString, sdkOmittedValue)
-                ? this.queryString
-                : queryString as SdkOptional<
-                    List<
-                        UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>>,
-            headers: identical(headers, sdkOmittedValue)
-                ? this.headers
-                : headers as SdkOptional<
-                    List<
-                        UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>>,
-          );
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch _copyWith({Object? path = sdkOmittedValue, Object? method = sdkOmittedValue, Object? queryString = sdkOmittedValue, Object? headers = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch(
+    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath>,
+    method: identical(method, sdkOmittedValue) ? this.method : method as SdkOptional<List<String>>,
+    queryString: identical(queryString, sdkOmittedValue) ? this.queryString : queryString as SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>>,
+    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch(
-        path: json['path'] != null
-            ? SdkPresent((json['path'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath
-                    .fromJson(json['path'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        method: json['method'] != null
-            ? SdkPresent(
-                ((json['method'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        queryString: json['queryString'] != null
-            ? SdkPresent(((json['queryString'] as List?)
-                ?.map((e) =>
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        headers: json['headers'] != null
-            ? SdkPresent(((json['headers'] as List?)
-                ?.map((e) =>
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch(
+    path: json['path'] != null ? SdkPresent((json['path'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath.fromJson(json['path'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    method: json['method'] != null ? SdkPresent(((json['method'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    queryString: json['queryString'] != null ? SdkPresent(((json['queryString'] as List?)?.map((e) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    headers: json['headers'] != null ? SdkPresent(((json['headers'] as List?)?.map((e) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (path) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath>(
-            value: final value
-          ) =>
-            {
-              'path': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (method) {
-          SdkPresent<List<String>>(value: final value) => {
-              'method': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (queryString) {
-          SdkPresent<
-                List<
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>>(
-            value: final value
-          ) =>
-            {
-              'queryString': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (headers) {
-          SdkPresent<
-                List<
-                    UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>>(
-            value: final value
-          ) =>
-            {
-              'headers': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (path) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchPath>(value: final value) => {'path': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (method) {
+      SdkPresent<List<String>>(value: final value) => {'method': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (queryString) {
+      SdkPresent<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchQueryStringItem>>(value: final value) => {'queryString': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (headers) {
+      SdkPresent<List<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatchHeadersItem>>(value: final value) => {'headers': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The domain (or pattern) of requests to add headers for. Supports wildcards like *.example.com.
   final String domain;
-
   /// HTTP headers to inject into requests for this domain. Existing headers with the same name will be overridden.
   final Map<String, String> headers;
-
   /// Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch>
-      match;
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch> match;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem(
-      {required this.domain,
-      required this.headers,
-      this.match = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem({required this.domain, required this.headers, this.match = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem Function(
-      {String domain,
-      Map<String, String> headers,
-      SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch>
-          match}) get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem Function({String domain, Map<String, String> headers, SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch> match}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem _copyWith(
-          {Object? domain = sdkOmittedValue,
-          Object? headers = sdkOmittedValue,
-          Object? match = sdkOmittedValue}) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem(
-        domain:
-            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-        headers: identical(headers, sdkOmittedValue)
-            ? this.headers
-            : headers as Map<String, String>,
-        match: identical(match, sdkOmittedValue)
-            ? this.match
-            : match as SdkOptional<
-                UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch>,
-      );
+  UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem _copyWith({Object? domain = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? match = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem(
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as Map<String, String>,
+    match: identical(match, sdkOmittedValue) ? this.match : match as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem(
-        domain: (json['domain'] as String?)!,
-        headers: (json['headers'] == null
-            ? null
-            : Map<String, dynamic>.from(json['headers'] as Map)
-                .map((key, value) => MapEntry(key, value as String)))!,
-        match: json['match'] != null
-            ? SdkPresent((json['match'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch
-                    .fromJson(json['match'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItem(
+    domain: (json['domain'] as String?)!,
+    headers: (json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!,
+    match: json['match'] != null ? SdkPresent((json['match'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch.fromJson(json['match'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'domain': domain,
-        'headers': headers,
-        ...switch (match) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch>(
-            value: final value
-          ) =>
-            {
-              'match': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'domain': domain,
+    'headers': headers,
+    ...switch (match) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant0InjectionRulesItemMatch>(value: final value) => {'match': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

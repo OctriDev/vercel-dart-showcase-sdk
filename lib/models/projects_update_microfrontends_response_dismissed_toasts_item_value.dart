@@ -8,106 +8,62 @@ sealed class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2Current
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue();
-  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueString(
-          json);
-    }
-    if (json is num) {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueDouble(
-          json.toDouble());
-    }
-    try {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2(
-          UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue");
+  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue.fromJson(Object? json) {
+    if (json is String) { return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueString(json); }
+    if (json is num) { return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueDouble(json.toDouble()); }
+    try { return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2(UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueString
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueString extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue {
   final String value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueDouble
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueDouble extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue {
   final double value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueDouble(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue {
-  final UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2
-      value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValue {
+  final UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 value;
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 sealed class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue();
-  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueString(
-          json);
-    }
-    if (json is num) {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueDouble(
-          json.toDouble());
-    }
-    try {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2(
-          UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue");
+  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue.fromJson(Object? json) {
+    if (json is String) { return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueString(json); }
+    if (json is num) { return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueDouble(json.toDouble()); }
+    try { return UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2(UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueString
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueString extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue {
   final String value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueDouble
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueDouble extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue {
   final double value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueDouble(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue {
-  final UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
-      value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 extends UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValue {
+  final UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 value;
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 {
@@ -116,96 +72,60 @@ class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 {
   final dynamic currentValue;
   final dynamic previousValue;
 
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(
-      {required this.currentValue, required this.previousValue});
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2({required this.currentValue, required this.previousValue});
 
-  UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 Function(
-      {dynamic currentValue, dynamic previousValue}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 Function({dynamic currentValue, dynamic previousValue}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 _copyWith(
-          {Object? currentValue = sdkOmittedValue,
-          Object? previousValue = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(
-        currentValue: identical(currentValue, sdkOmittedValue)
-            ? this.currentValue
-            : currentValue as dynamic,
-        previousValue: identical(previousValue, sdkOmittedValue)
-            ? this.previousValue
-            : previousValue as dynamic,
-      );
+  UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 _copyWith({Object? currentValue = sdkOmittedValue, Object? previousValue = sdkOmittedValue}) => UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(
+    currentValue: identical(currentValue, sdkOmittedValue) ? this.currentValue : currentValue as dynamic,
+    previousValue: identical(previousValue, sdkOmittedValue) ? this.previousValue : previousValue as dynamic,
+  );
 
-  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(
-        currentValue: (json['currentValue'])!,
-        previousValue: (json['previousValue'])!,
-      );
+  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(
+    currentValue: (json['currentValue'])!,
+    previousValue: (json['previousValue'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'currentValue': currentValue,
-        'previousValue': previousValue,
-      };
+    'currentValue': currentValue,
+    'previousValue': previousValue,
+  };
 }
 
 sealed class UpdateMicrofrontendsResponseDismissedToastsItemValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateMicrofrontendsResponseDismissedToastsItemValue();
-  factory UpdateMicrofrontendsResponseDismissedToastsItemValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueString(json);
-    }
-    if (json is num) {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueDouble(
-          json.toDouble());
-    }
-    try {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(
-          UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant3(
-          UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3.fromJson(
-              json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateMicrofrontendsResponseDismissedToastsItemValue");
+  factory UpdateMicrofrontendsResponseDismissedToastsItemValue.fromJson(Object? json) {
+    if (json is String) { return UpdateMicrofrontendsResponseDismissedToastsItemValueString(json); }
+    if (json is num) { return UpdateMicrofrontendsResponseDismissedToastsItemValueDouble(json.toDouble()); }
+    try { return UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant3(UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateMicrofrontendsResponseDismissedToastsItemValue");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueString
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueString extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
   final String value;
   const UpdateMicrofrontendsResponseDismissedToastsItemValueString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueDouble
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueDouble extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
   final double value;
   const UpdateMicrofrontendsResponseDismissedToastsItemValueDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
   final UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2 value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant3
-    extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
+final class UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant3 extends UpdateMicrofrontendsResponseDismissedToastsItemValue {
   final UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3 value;
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueUpdateMicrofrontendsResponseDismissedToastsItemValueVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }

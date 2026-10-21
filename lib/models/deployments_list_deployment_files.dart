@@ -8,105 +8,56 @@ part of 'deployments.dart';
 class FileTree {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The list of children files of the directory (only valid for the `directory` type)
   final SdkOptional<List<FileTree>> children;
-
   /// The content-type of the file (only valid for the `file` type)
   final SdkOptional<String> contentType;
-
   /// The file "mode" indicating file type and permissions.
   final double mode;
-
   /// The name of the file tree entry
   final String name;
-
   /// String indicating the type of file tree entry.
   final FileTreeType type_;
-
   /// The unique identifier of the file (only valid for the `file` type)
   final SdkOptional<String> uid;
 
-  const FileTree(
-      {this.children = const SdkOmitted(),
-      this.contentType = const SdkOmitted(),
-      required this.mode,
-      required this.name,
-      required this.type_,
-      this.uid = const SdkOmitted()});
+  const FileTree({this.children = const SdkOmitted(), this.contentType = const SdkOmitted(), required this.mode, required this.name, required this.type_, this.uid = const SdkOmitted()});
 
-  FileTree Function(
-      {SdkOptional<List<FileTree>> children,
-      SdkOptional<String> contentType,
-      double mode,
-      String name,
-      FileTreeType type_,
-      SdkOptional<String> uid}) get copyWith => _copyWith;
+  FileTree Function({SdkOptional<List<FileTree>> children, SdkOptional<String> contentType, double mode, String name, FileTreeType type_, SdkOptional<String> uid}) get copyWith => _copyWith;
 
-  FileTree _copyWith(
-          {Object? children = sdkOmittedValue,
-          Object? contentType = sdkOmittedValue,
-          Object? mode = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? uid = sdkOmittedValue}) =>
-      FileTree(
-        children: identical(children, sdkOmittedValue)
-            ? this.children
-            : children as SdkOptional<List<FileTree>>,
-        contentType: identical(contentType, sdkOmittedValue)
-            ? this.contentType
-            : contentType as SdkOptional<String>,
-        mode: identical(mode, sdkOmittedValue) ? this.mode : mode as double,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as FileTreeType,
-        uid: identical(uid, sdkOmittedValue)
-            ? this.uid
-            : uid as SdkOptional<String>,
-      );
+  FileTree _copyWith({Object? children = sdkOmittedValue, Object? contentType = sdkOmittedValue, Object? mode = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? uid = sdkOmittedValue}) => FileTree(
+    children: identical(children, sdkOmittedValue) ? this.children : children as SdkOptional<List<FileTree>>,
+    contentType: identical(contentType, sdkOmittedValue) ? this.contentType : contentType as SdkOptional<String>,
+    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as double,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as FileTreeType,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as SdkOptional<String>,
+  );
 
   factory FileTree.fromJson(Map<String, dynamic> json) => FileTree(
-        children: json['children'] != null
-            ? SdkPresent(((json['children'] as List?)
-                ?.map((e) => FileTree.fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        contentType: json['contentType'] != null
-            ? SdkPresent((json['contentType'] as String?)!)
-            : const SdkOmitted(),
-        mode: ((json['mode'] as num?)?.toDouble())!,
-        name: (json['name'] as String?)!,
-        type_: (json['type'] != null
-            ? FileTreeType.fromJson(json['type'] as String)
-            : null)!,
-        uid: json['uid'] != null
-            ? SdkPresent((json['uid'] as String?)!)
-            : const SdkOmitted(),
-      );
+    children: json['children'] != null ? SdkPresent(((json['children'] as List?)?.map((e) => FileTree.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    contentType: json['contentType'] != null ? SdkPresent((json['contentType'] as String?)!) : const SdkOmitted(),
+    mode: ((json['mode'] as num?)?.toDouble())!,
+    name: (json['name'] as String?)!,
+    type_: (json['type'] != null ? FileTreeType.fromJson(json['type'] as String) : null)!,
+    uid: json['uid'] != null ? SdkPresent((json['uid'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (children) {
-          SdkPresent<List<FileTree>>(value: final value) => {
-              'children': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (contentType) {
-          SdkPresent<String>(value: final value) => {
-              'contentType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'mode': mode,
-        'name': name,
-        'type': type_.toJson(),
-        ...switch (uid) {
-          SdkPresent<String>(value: final value) => {
-              'uid': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (children) {
+      SdkPresent<List<FileTree>>(value: final value) => {'children': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (contentType) {
+      SdkPresent<String>(value: final value) => {'contentType': value,},
+      _ => const <String, dynamic>{},
+    },
+    'mode': mode,
+    'name': name,
+    'type': type_.toJson(),
+    ...switch (uid) {
+      SdkPresent<String>(value: final value) => {'uid': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

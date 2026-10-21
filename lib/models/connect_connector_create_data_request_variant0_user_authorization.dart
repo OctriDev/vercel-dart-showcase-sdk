@@ -8,421 +8,239 @@ part of 'connect.dart';
 class ConnectConnectorCreateDataRequestVariant0UserAuthorization {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether this OAuth grant is enabled.
   final bool enabled;
-
   /// Default scopes to request when token params specify scopes: [\"*\"].
   final SdkOptional<List<String>> scopes;
 
-  const ConnectConnectorCreateDataRequestVariant0UserAuthorization(
-      {required this.enabled, this.scopes = const SdkOmitted()});
+  const ConnectConnectorCreateDataRequestVariant0UserAuthorization({required this.enabled, this.scopes = const SdkOmitted()});
 
-  ConnectConnectorCreateDataRequestVariant0UserAuthorization Function(
-      {bool enabled,
-      SdkOptional<List<String>> scopes}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataRequestVariant0UserAuthorization Function({bool enabled, SdkOptional<List<String>> scopes}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataRequestVariant0UserAuthorization _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? scopes = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataRequestVariant0UserAuthorization(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as bool,
-        scopes: identical(scopes, sdkOmittedValue)
-            ? this.scopes
-            : scopes as SdkOptional<List<String>>,
-      );
+  ConnectConnectorCreateDataRequestVariant0UserAuthorization _copyWith({Object? enabled = sdkOmittedValue, Object? scopes = sdkOmittedValue}) => ConnectConnectorCreateDataRequestVariant0UserAuthorization(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
+    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as SdkOptional<List<String>>,
+  );
 
-  factory ConnectConnectorCreateDataRequestVariant0UserAuthorization.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataRequestVariant0UserAuthorization(
-        enabled: (json['enabled'] as bool?)!,
-        scopes: json['scopes'] != null
-            ? SdkPresent(
-                ((json['scopes'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataRequestVariant0UserAuthorization.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataRequestVariant0UserAuthorization(
+    enabled: (json['enabled'] as bool?)!,
+    scopes: json['scopes'] != null ? SdkPresent(((json['scopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled,
-        ...switch (scopes) {
-          SdkPresent<List<String>>(value: final value) => {
-              'scopes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'enabled': enabled,
+    ...switch (scopes) {
+      SdkPresent<List<String>>(value: final value) => {'scopes': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Refresh token settings.
 class ConnectConnectorCreateDataRequestVariant0RefreshTokens {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether this OAuth grant is enabled.
   final bool enabled;
 
-  const ConnectConnectorCreateDataRequestVariant0RefreshTokens(
-      {required this.enabled});
+  const ConnectConnectorCreateDataRequestVariant0RefreshTokens({required this.enabled});
 
-  ConnectConnectorCreateDataRequestVariant0RefreshTokens Function(
-      {bool enabled}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataRequestVariant0RefreshTokens Function({bool enabled}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataRequestVariant0RefreshTokens _copyWith(
-          {Object? enabled = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataRequestVariant0RefreshTokens(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as bool,
-      );
+  ConnectConnectorCreateDataRequestVariant0RefreshTokens _copyWith({Object? enabled = sdkOmittedValue}) => ConnectConnectorCreateDataRequestVariant0RefreshTokens(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
+  );
 
-  factory ConnectConnectorCreateDataRequestVariant0RefreshTokens.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataRequestVariant0RefreshTokens(
-        enabled: (json['enabled'] as bool?)!,
-      );
+  factory ConnectConnectorCreateDataRequestVariant0RefreshTokens.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataRequestVariant0RefreshTokens(
+    enabled: (json['enabled'] as bool?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled,
-      };
+    'enabled': enabled,
+  };
 }
 
 /// Client credentials grant settings.
 class ConnectConnectorCreateDataRequestVariant0ClientCredentials {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether this OAuth grant is enabled.
   final bool enabled;
-
   /// Default scopes to request when token params specify scopes: [\"*\"].
   final SdkOptional<List<String>> scopes;
 
-  const ConnectConnectorCreateDataRequestVariant0ClientCredentials(
-      {required this.enabled, this.scopes = const SdkOmitted()});
+  const ConnectConnectorCreateDataRequestVariant0ClientCredentials({required this.enabled, this.scopes = const SdkOmitted()});
 
-  ConnectConnectorCreateDataRequestVariant0ClientCredentials Function(
-      {bool enabled,
-      SdkOptional<List<String>> scopes}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataRequestVariant0ClientCredentials Function({bool enabled, SdkOptional<List<String>> scopes}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataRequestVariant0ClientCredentials _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? scopes = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataRequestVariant0ClientCredentials(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as bool,
-        scopes: identical(scopes, sdkOmittedValue)
-            ? this.scopes
-            : scopes as SdkOptional<List<String>>,
-      );
+  ConnectConnectorCreateDataRequestVariant0ClientCredentials _copyWith({Object? enabled = sdkOmittedValue, Object? scopes = sdkOmittedValue}) => ConnectConnectorCreateDataRequestVariant0ClientCredentials(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
+    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as SdkOptional<List<String>>,
+  );
 
-  factory ConnectConnectorCreateDataRequestVariant0ClientCredentials.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataRequestVariant0ClientCredentials(
-        enabled: (json['enabled'] as bool?)!,
-        scopes: json['scopes'] != null
-            ? SdkPresent(
-                ((json['scopes'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataRequestVariant0ClientCredentials.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataRequestVariant0ClientCredentials(
+    enabled: (json['enabled'] as bool?)!,
+    scopes: json['scopes'] != null ? SdkPresent(((json['scopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled,
-        ...switch (scopes) {
-          SdkPresent<List<String>>(value: final value) => {
-              'scopes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'enabled': enabled,
+    ...switch (scopes) {
+      SdkPresent<List<String>>(value: final value) => {'scopes': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Allow-list of extra claims to propagate, keyed by source (idToken). Only claims named here and present in that source are exposed.
 class ConnectConnectorCreateDataRequestVariant0ForwardedClaims {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// ID token claim names that Connect can expose.
   final SdkOptional<List<String>> idToken;
 
-  const ConnectConnectorCreateDataRequestVariant0ForwardedClaims(
-      {this.idToken = const SdkOmitted()});
+  const ConnectConnectorCreateDataRequestVariant0ForwardedClaims({this.idToken = const SdkOmitted()});
 
-  ConnectConnectorCreateDataRequestVariant0ForwardedClaims Function(
-      {SdkOptional<List<String>> idToken}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataRequestVariant0ForwardedClaims Function({SdkOptional<List<String>> idToken}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataRequestVariant0ForwardedClaims _copyWith(
-          {Object? idToken = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataRequestVariant0ForwardedClaims(
-        idToken: identical(idToken, sdkOmittedValue)
-            ? this.idToken
-            : idToken as SdkOptional<List<String>>,
-      );
+  ConnectConnectorCreateDataRequestVariant0ForwardedClaims _copyWith({Object? idToken = sdkOmittedValue}) => ConnectConnectorCreateDataRequestVariant0ForwardedClaims(
+    idToken: identical(idToken, sdkOmittedValue) ? this.idToken : idToken as SdkOptional<List<String>>,
+  );
 
-  factory ConnectConnectorCreateDataRequestVariant0ForwardedClaims.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataRequestVariant0ForwardedClaims(
-        idToken: json['idToken'] != null
-            ? SdkPresent(
-                ((json['idToken'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataRequestVariant0ForwardedClaims.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataRequestVariant0ForwardedClaims(
+    idToken: json['idToken'] != null ? SdkPresent(((json['idToken'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (idToken) {
-          SdkPresent<List<String>>(value: final value) => {
-              'idToken': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (idToken) {
+      SdkPresent<List<String>>(value: final value) => {'idToken': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// JWT bearer grant settings.
 class ConnectConnectorCreateDataRequestVariant0JwtBearer {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether JWT bearer grants are enabled.
   final SdkOptional<bool> enabled;
-
   /// Default scopes to request when token params specify scopes: [\"*\"].
   final SdkOptional<List<String>> scopes;
-
   /// Default JWT subject claim.
   final SdkOptional<String> sub;
-
   /// Default JWT issuer claim.
   final SdkOptional<String> iss;
-
   /// Default JWT audience claim.
   final SdkOptional<String> aud;
-
   /// Additional claims included in generated JWT assertions.
   final SdkOptional<Map<String, dynamic>> additionalClaims;
-
   /// JWT lifetime in seconds.
   final SdkOptional<double> ttl;
-
   /// Whether JWT bearer requests also use client credentials.
   final SdkOptional<bool> useClientCredentials;
 
-  const ConnectConnectorCreateDataRequestVariant0JwtBearer(
-      {this.enabled = const SdkOmitted(),
-      this.scopes = const SdkOmitted(),
-      this.sub = const SdkOmitted(),
-      this.iss = const SdkOmitted(),
-      this.aud = const SdkOmitted(),
-      this.additionalClaims = const SdkOmitted(),
-      this.ttl = const SdkOmitted(),
-      this.useClientCredentials = const SdkOmitted()});
+  const ConnectConnectorCreateDataRequestVariant0JwtBearer({this.enabled = const SdkOmitted(), this.scopes = const SdkOmitted(), this.sub = const SdkOmitted(), this.iss = const SdkOmitted(), this.aud = const SdkOmitted(), this.additionalClaims = const SdkOmitted(), this.ttl = const SdkOmitted(), this.useClientCredentials = const SdkOmitted()});
 
-  ConnectConnectorCreateDataRequestVariant0JwtBearer Function(
-      {SdkOptional<bool> enabled,
-      SdkOptional<List<String>> scopes,
-      SdkOptional<String> sub,
-      SdkOptional<String> iss,
-      SdkOptional<String> aud,
-      SdkOptional<Map<String, dynamic>> additionalClaims,
-      SdkOptional<double> ttl,
-      SdkOptional<bool> useClientCredentials}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataRequestVariant0JwtBearer Function({SdkOptional<bool> enabled, SdkOptional<List<String>> scopes, SdkOptional<String> sub, SdkOptional<String> iss, SdkOptional<String> aud, SdkOptional<Map<String, dynamic>> additionalClaims, SdkOptional<double> ttl, SdkOptional<bool> useClientCredentials}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataRequestVariant0JwtBearer _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? scopes = sdkOmittedValue,
-          Object? sub = sdkOmittedValue,
-          Object? iss = sdkOmittedValue,
-          Object? aud = sdkOmittedValue,
-          Object? additionalClaims = sdkOmittedValue,
-          Object? ttl = sdkOmittedValue,
-          Object? useClientCredentials = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataRequestVariant0JwtBearer(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as SdkOptional<bool>,
-        scopes: identical(scopes, sdkOmittedValue)
-            ? this.scopes
-            : scopes as SdkOptional<List<String>>,
-        sub: identical(sub, sdkOmittedValue)
-            ? this.sub
-            : sub as SdkOptional<String>,
-        iss: identical(iss, sdkOmittedValue)
-            ? this.iss
-            : iss as SdkOptional<String>,
-        aud: identical(aud, sdkOmittedValue)
-            ? this.aud
-            : aud as SdkOptional<String>,
-        additionalClaims: identical(additionalClaims, sdkOmittedValue)
-            ? this.additionalClaims
-            : additionalClaims as SdkOptional<Map<String, dynamic>>,
-        ttl: identical(ttl, sdkOmittedValue)
-            ? this.ttl
-            : ttl as SdkOptional<double>,
-        useClientCredentials: identical(useClientCredentials, sdkOmittedValue)
-            ? this.useClientCredentials
-            : useClientCredentials as SdkOptional<bool>,
-      );
+  ConnectConnectorCreateDataRequestVariant0JwtBearer _copyWith({Object? enabled = sdkOmittedValue, Object? scopes = sdkOmittedValue, Object? sub = sdkOmittedValue, Object? iss = sdkOmittedValue, Object? aud = sdkOmittedValue, Object? additionalClaims = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? useClientCredentials = sdkOmittedValue}) => ConnectConnectorCreateDataRequestVariant0JwtBearer(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<bool>,
+    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as SdkOptional<List<String>>,
+    sub: identical(sub, sdkOmittedValue) ? this.sub : sub as SdkOptional<String>,
+    iss: identical(iss, sdkOmittedValue) ? this.iss : iss as SdkOptional<String>,
+    aud: identical(aud, sdkOmittedValue) ? this.aud : aud as SdkOptional<String>,
+    additionalClaims: identical(additionalClaims, sdkOmittedValue) ? this.additionalClaims : additionalClaims as SdkOptional<Map<String, dynamic>>,
+    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
+    useClientCredentials: identical(useClientCredentials, sdkOmittedValue) ? this.useClientCredentials : useClientCredentials as SdkOptional<bool>,
+  );
 
-  factory ConnectConnectorCreateDataRequestVariant0JwtBearer.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataRequestVariant0JwtBearer(
-        enabled: json['enabled'] != null
-            ? SdkPresent((json['enabled'] as bool?)!)
-            : const SdkOmitted(),
-        scopes: json['scopes'] != null
-            ? SdkPresent(
-                ((json['scopes'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        sub: json['sub'] != null
-            ? SdkPresent((json['sub'] as String?)!)
-            : const SdkOmitted(),
-        iss: json['iss'] != null
-            ? SdkPresent((json['iss'] as String?)!)
-            : const SdkOmitted(),
-        aud: json['aud'] != null
-            ? SdkPresent((json['aud'] as String?)!)
-            : const SdkOmitted(),
-        additionalClaims: json['additionalClaims'] != null
-            ? SdkPresent((json['additionalClaims'] == null
-                ? null
-                : json['additionalClaims'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        ttl: json['ttl'] != null
-            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        useClientCredentials: json['useClientCredentials'] != null
-            ? SdkPresent((json['useClientCredentials'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataRequestVariant0JwtBearer.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataRequestVariant0JwtBearer(
+    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] as bool?)!) : const SdkOmitted(),
+    scopes: json['scopes'] != null ? SdkPresent(((json['scopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    sub: json['sub'] != null ? SdkPresent((json['sub'] as String?)!) : const SdkOmitted(),
+    iss: json['iss'] != null ? SdkPresent((json['iss'] as String?)!) : const SdkOmitted(),
+    aud: json['aud'] != null ? SdkPresent((json['aud'] as String?)!) : const SdkOmitted(),
+    additionalClaims: json['additionalClaims'] != null ? SdkPresent((json['additionalClaims'] == null ? null : json['additionalClaims'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
+    useClientCredentials: json['useClientCredentials'] != null ? SdkPresent((json['useClientCredentials'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enabled) {
-          SdkPresent<bool>(value: final value) => {
-              'enabled': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scopes) {
-          SdkPresent<List<String>>(value: final value) => {
-              'scopes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sub) {
-          SdkPresent<String>(value: final value) => {
-              'sub': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (iss) {
-          SdkPresent<String>(value: final value) => {
-              'iss': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aud) {
-          SdkPresent<String>(value: final value) => {
-              'aud': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (additionalClaims) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'additionalClaims': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ttl) {
-          SdkPresent<double>(value: final value) => {
-              'ttl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (useClientCredentials) {
-          SdkPresent<bool>(value: final value) => {
-              'useClientCredentials': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enabled) {
+      SdkPresent<bool>(value: final value) => {'enabled': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scopes) {
+      SdkPresent<List<String>>(value: final value) => {'scopes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sub) {
+      SdkPresent<String>(value: final value) => {'sub': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (iss) {
+      SdkPresent<String>(value: final value) => {'iss': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aud) {
+      SdkPresent<String>(value: final value) => {'aud': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (additionalClaims) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'additionalClaims': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ttl) {
+      SdkPresent<double>(value: final value) => {'ttl': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (useClientCredentials) {
+      SdkPresent<bool>(value: final value) => {'useClientCredentials': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// `private_key_jwt` client assertion settings.
 class ConnectConnectorCreateDataRequestVariant0ClientAssertion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// OAuth client assertion type. Defaults to urn:ietf:params:oauth:client-assertion-type:jwt-bearer. An empty string clears the configured type.
   final SdkOptional<String> type_;
-
   /// Client assertion lifetime in seconds.
   final SdkOptional<double> ttl;
-
   /// Additional claims included in the client assertion.
   final SdkOptional<Map<String, dynamic>> claims;
 
-  const ConnectConnectorCreateDataRequestVariant0ClientAssertion(
-      {this.type_ = const SdkOmitted(),
-      this.ttl = const SdkOmitted(),
-      this.claims = const SdkOmitted()});
+  const ConnectConnectorCreateDataRequestVariant0ClientAssertion({this.type_ = const SdkOmitted(), this.ttl = const SdkOmitted(), this.claims = const SdkOmitted()});
 
-  ConnectConnectorCreateDataRequestVariant0ClientAssertion Function(
-      {SdkOptional<String> type_,
-      SdkOptional<double> ttl,
-      SdkOptional<Map<String, dynamic>> claims}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataRequestVariant0ClientAssertion Function({SdkOptional<String> type_, SdkOptional<double> ttl, SdkOptional<Map<String, dynamic>> claims}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataRequestVariant0ClientAssertion _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? ttl = sdkOmittedValue,
-          Object? claims = sdkOmittedValue}) =>
-      ConnectConnectorCreateDataRequestVariant0ClientAssertion(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SdkOptional<String>,
-        ttl: identical(ttl, sdkOmittedValue)
-            ? this.ttl
-            : ttl as SdkOptional<double>,
-        claims: identical(claims, sdkOmittedValue)
-            ? this.claims
-            : claims as SdkOptional<Map<String, dynamic>>,
-      );
+  ConnectConnectorCreateDataRequestVariant0ClientAssertion _copyWith({Object? type_ = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? claims = sdkOmittedValue}) => ConnectConnectorCreateDataRequestVariant0ClientAssertion(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<String>,
+    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
+    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as SdkOptional<Map<String, dynamic>>,
+  );
 
-  factory ConnectConnectorCreateDataRequestVariant0ClientAssertion.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectConnectorCreateDataRequestVariant0ClientAssertion(
-        type_: json['type'] != null
-            ? SdkPresent((json['type'] as String?)!)
-            : const SdkOmitted(),
-        ttl: json['ttl'] != null
-            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        claims: json['claims'] != null
-            ? SdkPresent((json['claims'] == null
-                ? null
-                : json['claims'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectConnectorCreateDataRequestVariant0ClientAssertion.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataRequestVariant0ClientAssertion(
+    type_: json['type'] != null ? SdkPresent((json['type'] as String?)!) : const SdkOmitted(),
+    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
+    claims: json['claims'] != null ? SdkPresent((json['claims'] == null ? null : json['claims'] as Map<String, dynamic>)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (type_) {
-          SdkPresent<String>(value: final value) => {
-              'type': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ttl) {
-          SdkPresent<double>(value: final value) => {
-              'ttl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (claims) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'claims': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (type_) {
+      SdkPresent<String>(value: final value) => {'type': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ttl) {
+      SdkPresent<double>(value: final value) => {'ttl': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (claims) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'claims': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

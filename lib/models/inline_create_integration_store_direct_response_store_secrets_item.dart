@@ -7,553 +7,201 @@ part of 'inline.dart';
 class CreateIntegrationStoreDirectResponseStoreSecretsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>
-      frameworkPublishable;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable> frameworkPublishable;
   final double length;
   final String name;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>
-      nonSensitive;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive> nonSensitive;
 
-  const CreateIntegrationStoreDirectResponseStoreSecretsItem(
-      {this.frameworkPublishable = const SdkOmitted(),
-      required this.length,
-      required this.name,
-      this.nonSensitive = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreSecretsItem({this.frameworkPublishable = const SdkOmitted(), required this.length, required this.name, this.nonSensitive = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreSecretsItem Function(
-      {SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>
-          frameworkPublishable,
-      double length,
-      String name,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>
-          nonSensitive}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreSecretsItem Function({SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable> frameworkPublishable, double length, String name, SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive> nonSensitive}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreSecretsItem _copyWith(
-          {Object? frameworkPublishable = sdkOmittedValue,
-          Object? length = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? nonSensitive = sdkOmittedValue}) =>
-      CreateIntegrationStoreDirectResponseStoreSecretsItem(
-        frameworkPublishable: identical(frameworkPublishable, sdkOmittedValue)
-            ? this.frameworkPublishable
-            : frameworkPublishable as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>,
-        length:
-            identical(length, sdkOmittedValue) ? this.length : length as double,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        nonSensitive: identical(nonSensitive, sdkOmittedValue)
-            ? this.nonSensitive
-            : nonSensitive as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>,
-      );
+  CreateIntegrationStoreDirectResponseStoreSecretsItem _copyWith({Object? frameworkPublishable = sdkOmittedValue, Object? length = sdkOmittedValue, Object? name = sdkOmittedValue, Object? nonSensitive = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreSecretsItem(
+    frameworkPublishable: identical(frameworkPublishable, sdkOmittedValue) ? this.frameworkPublishable : frameworkPublishable as SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>,
+    length: identical(length, sdkOmittedValue) ? this.length : length as double,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    nonSensitive: identical(nonSensitive, sdkOmittedValue) ? this.nonSensitive : nonSensitive as SdkOptional<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreSecretsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreSecretsItem(
-        frameworkPublishable: json['frameworkPublishable'] != null
-            ? SdkPresent((json['frameworkPublishable'] != null
-                ? CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable
-                    .fromJson(json['frameworkPublishable'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        length: ((json['length'] as num?)?.toDouble())!,
-        name: (json['name'] as String?)!,
-        nonSensitive: json['nonSensitive'] != null
-            ? SdkPresent((json['nonSensitive'] != null
-                ? CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive
-                    .fromJson(json['nonSensitive'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateIntegrationStoreDirectResponseStoreSecretsItem.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreSecretsItem(
+    frameworkPublishable: json['frameworkPublishable'] != null ? SdkPresent((json['frameworkPublishable'] != null ? CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable.fromJson(json['frameworkPublishable'] as bool) : null)!) : const SdkOmitted(),
+    length: ((json['length'] as num?)?.toDouble())!,
+    name: (json['name'] as String?)!,
+    nonSensitive: json['nonSensitive'] != null ? SdkPresent((json['nonSensitive'] != null ? CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive.fromJson(json['nonSensitive'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (frameworkPublishable) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>(
-            value: final value
-          ) =>
-            {
-              'frameworkPublishable': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'length': length,
-        'name': name,
-        ...switch (nonSensitive) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>(
-            value: final value
-          ) =>
-            {
-              'nonSensitive': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (frameworkPublishable) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreSecretsItemFrameworkPublishable>(value: final value) => {'frameworkPublishable': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'length': length,
+    'name': name,
+    ...switch (nonSensitive) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreSecretsItemNonSensitive>(value: final value) => {'nonSensitive': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStore {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProjectFilter>
-      projectFilter;
-  final List<CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem>
-      projectsMetadata;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProjectFilter> projectFilter;
+  final List<CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem> projectsMetadata;
   final CreateIntegrationStoreDirectResponseStoreStatus? status;
   final SdkOptional<double> totalConnectedProjects;
-  final CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded
-      usageQuotaExceeded;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlan>
-      billingPlan;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilities>
-      capabilities;
+  final CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded usageQuotaExceeded;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlan> billingPlan;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilities> capabilities;
   final SdkOptional<String> directPartnerConsoleUrl;
   final String externalResourceId;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?>
-      externalResourceStatus;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?> externalResourceStatus;
   final SdkOptional<Map<String, dynamic>> metadata;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreNotification>
-      notification;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreOwnership>
-      ownership;
-
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreNotification> notification;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreOwnership> ownership;
   /// The ID of the parent resource. Used to establish a parent-child relationship between resources, such as sandbox resources linking to their owner account resource.
   final SdkOptional<String> parentId;
   final CreateIntegrationStoreDirectResponseStoreProduct product;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettings>
-      protocolSettings;
-
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettings> protocolSettings;
   /// The timestamp when secret rotation was completed.
   final SdkOptional<double> secretRotationCompletedAt;
-
   /// The timestamp when secret rotation was requested.
   final SdkOptional<double> secretRotationRequestedAt;
-
   /// The ID of the user/team who requested the secret rotation.
   final SdkOptional<String> secretRotationRequestedBy;
-
   /// The reason for the secret rotation request.
   final SdkOptional<String> secretRotationRequestedReason;
   final List<CreateIntegrationStoreDirectResponseStoreSecretsItem> secrets;
-
   /// The deployment targets that this resource is available for.
-  final SdkOptional<List<CreateIntegrationStoreDirectResponseStoreTargetsItem>>
-      targets;
+  final SdkOptional<List<CreateIntegrationStoreDirectResponseStoreTargetsItem>> targets;
 
-  const CreateIntegrationStoreDirectResponseStore(
-      {this.projectFilter = const SdkOmitted(),
-      required this.projectsMetadata,
-      required this.status,
-      this.totalConnectedProjects = const SdkOmitted(),
-      required this.usageQuotaExceeded,
-      this.billingPlan = const SdkOmitted(),
-      this.capabilities = const SdkOmitted(),
-      this.directPartnerConsoleUrl = const SdkOmitted(),
-      required this.externalResourceId,
-      this.externalResourceStatus = const SdkOmitted(),
-      this.metadata = const SdkOmitted(),
-      this.notification = const SdkOmitted(),
-      this.ownership = const SdkOmitted(),
-      this.parentId = const SdkOmitted(),
-      required this.product,
-      this.protocolSettings = const SdkOmitted(),
-      this.secretRotationCompletedAt = const SdkOmitted(),
-      this.secretRotationRequestedAt = const SdkOmitted(),
-      this.secretRotationRequestedBy = const SdkOmitted(),
-      this.secretRotationRequestedReason = const SdkOmitted(),
-      required this.secrets,
-      this.targets = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStore({this.projectFilter = const SdkOmitted(), required this.projectsMetadata, required this.status, this.totalConnectedProjects = const SdkOmitted(), required this.usageQuotaExceeded, this.billingPlan = const SdkOmitted(), this.capabilities = const SdkOmitted(), this.directPartnerConsoleUrl = const SdkOmitted(), required this.externalResourceId, this.externalResourceStatus = const SdkOmitted(), this.metadata = const SdkOmitted(), this.notification = const SdkOmitted(), this.ownership = const SdkOmitted(), this.parentId = const SdkOmitted(), required this.product, this.protocolSettings = const SdkOmitted(), this.secretRotationCompletedAt = const SdkOmitted(), this.secretRotationRequestedAt = const SdkOmitted(), this.secretRotationRequestedBy = const SdkOmitted(), this.secretRotationRequestedReason = const SdkOmitted(), required this.secrets, this.targets = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStore Function(
-      {SdkOptional<CreateIntegrationStoreDirectResponseStoreProjectFilter>
-          projectFilter,
-      List<CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem>
-          projectsMetadata,
-      CreateIntegrationStoreDirectResponseStoreStatus? status,
-      SdkOptional<double> totalConnectedProjects,
-      CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded
-          usageQuotaExceeded,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlan>
-          billingPlan,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilities>
-          capabilities,
-      SdkOptional<String> directPartnerConsoleUrl,
-      String externalResourceId,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?>
-          externalResourceStatus,
-      SdkOptional<Map<String, dynamic>> metadata,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreNotification>
-          notification,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreOwnership> ownership,
-      SdkOptional<String> parentId,
-      CreateIntegrationStoreDirectResponseStoreProduct product,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettings>
-          protocolSettings,
-      SdkOptional<double> secretRotationCompletedAt,
-      SdkOptional<double> secretRotationRequestedAt,
-      SdkOptional<String> secretRotationRequestedBy,
-      SdkOptional<String> secretRotationRequestedReason,
-      List<CreateIntegrationStoreDirectResponseStoreSecretsItem> secrets,
-      SdkOptional<List<CreateIntegrationStoreDirectResponseStoreTargetsItem>>
-          targets}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStore Function({SdkOptional<CreateIntegrationStoreDirectResponseStoreProjectFilter> projectFilter, List<CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem> projectsMetadata, CreateIntegrationStoreDirectResponseStoreStatus? status, SdkOptional<double> totalConnectedProjects, CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded usageQuotaExceeded, SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlan> billingPlan, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilities> capabilities, SdkOptional<String> directPartnerConsoleUrl, String externalResourceId, SdkOptional<CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?> externalResourceStatus, SdkOptional<Map<String, dynamic>> metadata, SdkOptional<CreateIntegrationStoreDirectResponseStoreNotification> notification, SdkOptional<CreateIntegrationStoreDirectResponseStoreOwnership> ownership, SdkOptional<String> parentId, CreateIntegrationStoreDirectResponseStoreProduct product, SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettings> protocolSettings, SdkOptional<double> secretRotationCompletedAt, SdkOptional<double> secretRotationRequestedAt, SdkOptional<String> secretRotationRequestedBy, SdkOptional<String> secretRotationRequestedReason, List<CreateIntegrationStoreDirectResponseStoreSecretsItem> secrets, SdkOptional<List<CreateIntegrationStoreDirectResponseStoreTargetsItem>> targets}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStore _copyWith(
-          {Object? projectFilter = sdkOmittedValue,
-          Object? projectsMetadata = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? totalConnectedProjects = sdkOmittedValue,
-          Object? usageQuotaExceeded = sdkOmittedValue,
-          Object? billingPlan = sdkOmittedValue,
-          Object? capabilities = sdkOmittedValue,
-          Object? directPartnerConsoleUrl = sdkOmittedValue,
-          Object? externalResourceId = sdkOmittedValue,
-          Object? externalResourceStatus = sdkOmittedValue,
-          Object? metadata = sdkOmittedValue,
-          Object? notification = sdkOmittedValue,
-          Object? ownership = sdkOmittedValue,
-          Object? parentId = sdkOmittedValue,
-          Object? product = sdkOmittedValue,
-          Object? protocolSettings = sdkOmittedValue,
-          Object? secretRotationCompletedAt = sdkOmittedValue,
-          Object? secretRotationRequestedAt = sdkOmittedValue,
-          Object? secretRotationRequestedBy = sdkOmittedValue,
-          Object? secretRotationRequestedReason = sdkOmittedValue,
-          Object? secrets = sdkOmittedValue,
-          Object? targets = sdkOmittedValue}) =>
-      CreateIntegrationStoreDirectResponseStore(
-        projectFilter: identical(projectFilter, sdkOmittedValue)
-            ? this.projectFilter
-            : projectFilter as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProjectFilter>,
-        projectsMetadata: identical(projectsMetadata, sdkOmittedValue)
-            ? this.projectsMetadata
-            : projectsMetadata as List<
-                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as CreateIntegrationStoreDirectResponseStoreStatus?,
-        totalConnectedProjects:
-            identical(totalConnectedProjects, sdkOmittedValue)
-                ? this.totalConnectedProjects
-                : totalConnectedProjects as SdkOptional<double>,
-        usageQuotaExceeded: identical(usageQuotaExceeded, sdkOmittedValue)
-            ? this.usageQuotaExceeded
-            : usageQuotaExceeded
-                as CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded,
-        billingPlan: identical(billingPlan, sdkOmittedValue)
-            ? this.billingPlan
-            : billingPlan as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreBillingPlan>,
-        capabilities: identical(capabilities, sdkOmittedValue)
-            ? this.capabilities
-            : capabilities as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilities>,
-        directPartnerConsoleUrl:
-            identical(directPartnerConsoleUrl, sdkOmittedValue)
-                ? this.directPartnerConsoleUrl
-                : directPartnerConsoleUrl as SdkOptional<String>,
-        externalResourceId: identical(externalResourceId, sdkOmittedValue)
-            ? this.externalResourceId
-            : externalResourceId as String,
-        externalResourceStatus: identical(
-                externalResourceStatus, sdkOmittedValue)
-            ? this.externalResourceStatus
-            : externalResourceStatus as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?>,
-        metadata: identical(metadata, sdkOmittedValue)
-            ? this.metadata
-            : metadata as SdkOptional<Map<String, dynamic>>,
-        notification: identical(notification, sdkOmittedValue)
-            ? this.notification
-            : notification as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreNotification>,
-        ownership: identical(ownership, sdkOmittedValue)
-            ? this.ownership
-            : ownership as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreOwnership>,
-        parentId: identical(parentId, sdkOmittedValue)
-            ? this.parentId
-            : parentId as SdkOptional<String>,
-        product: identical(product, sdkOmittedValue)
-            ? this.product
-            : product as CreateIntegrationStoreDirectResponseStoreProduct,
-        protocolSettings: identical(protocolSettings, sdkOmittedValue)
-            ? this.protocolSettings
-            : protocolSettings as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProtocolSettings>,
-        secretRotationCompletedAt:
-            identical(secretRotationCompletedAt, sdkOmittedValue)
-                ? this.secretRotationCompletedAt
-                : secretRotationCompletedAt as SdkOptional<double>,
-        secretRotationRequestedAt:
-            identical(secretRotationRequestedAt, sdkOmittedValue)
-                ? this.secretRotationRequestedAt
-                : secretRotationRequestedAt as SdkOptional<double>,
-        secretRotationRequestedBy:
-            identical(secretRotationRequestedBy, sdkOmittedValue)
-                ? this.secretRotationRequestedBy
-                : secretRotationRequestedBy as SdkOptional<String>,
-        secretRotationRequestedReason:
-            identical(secretRotationRequestedReason, sdkOmittedValue)
-                ? this.secretRotationRequestedReason
-                : secretRotationRequestedReason as SdkOptional<String>,
-        secrets: identical(secrets, sdkOmittedValue)
-            ? this.secrets
-            : secrets
-                as List<CreateIntegrationStoreDirectResponseStoreSecretsItem>,
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as SdkOptional<
-                List<CreateIntegrationStoreDirectResponseStoreTargetsItem>>,
-      );
+  CreateIntegrationStoreDirectResponseStore _copyWith({Object? projectFilter = sdkOmittedValue, Object? projectsMetadata = sdkOmittedValue, Object? status = sdkOmittedValue, Object? totalConnectedProjects = sdkOmittedValue, Object? usageQuotaExceeded = sdkOmittedValue, Object? billingPlan = sdkOmittedValue, Object? capabilities = sdkOmittedValue, Object? directPartnerConsoleUrl = sdkOmittedValue, Object? externalResourceId = sdkOmittedValue, Object? externalResourceStatus = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? notification = sdkOmittedValue, Object? ownership = sdkOmittedValue, Object? parentId = sdkOmittedValue, Object? product = sdkOmittedValue, Object? protocolSettings = sdkOmittedValue, Object? secretRotationCompletedAt = sdkOmittedValue, Object? secretRotationRequestedAt = sdkOmittedValue, Object? secretRotationRequestedBy = sdkOmittedValue, Object? secretRotationRequestedReason = sdkOmittedValue, Object? secrets = sdkOmittedValue, Object? targets = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStore(
+    projectFilter: identical(projectFilter, sdkOmittedValue) ? this.projectFilter : projectFilter as SdkOptional<CreateIntegrationStoreDirectResponseStoreProjectFilter>,
+    projectsMetadata: identical(projectsMetadata, sdkOmittedValue) ? this.projectsMetadata : projectsMetadata as List<CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as CreateIntegrationStoreDirectResponseStoreStatus?,
+    totalConnectedProjects: identical(totalConnectedProjects, sdkOmittedValue) ? this.totalConnectedProjects : totalConnectedProjects as SdkOptional<double>,
+    usageQuotaExceeded: identical(usageQuotaExceeded, sdkOmittedValue) ? this.usageQuotaExceeded : usageQuotaExceeded as CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded,
+    billingPlan: identical(billingPlan, sdkOmittedValue) ? this.billingPlan : billingPlan as SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlan>,
+    capabilities: identical(capabilities, sdkOmittedValue) ? this.capabilities : capabilities as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilities>,
+    directPartnerConsoleUrl: identical(directPartnerConsoleUrl, sdkOmittedValue) ? this.directPartnerConsoleUrl : directPartnerConsoleUrl as SdkOptional<String>,
+    externalResourceId: identical(externalResourceId, sdkOmittedValue) ? this.externalResourceId : externalResourceId as String,
+    externalResourceStatus: identical(externalResourceStatus, sdkOmittedValue) ? this.externalResourceStatus : externalResourceStatus as SdkOptional<CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?>,
+    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<Map<String, dynamic>>,
+    notification: identical(notification, sdkOmittedValue) ? this.notification : notification as SdkOptional<CreateIntegrationStoreDirectResponseStoreNotification>,
+    ownership: identical(ownership, sdkOmittedValue) ? this.ownership : ownership as SdkOptional<CreateIntegrationStoreDirectResponseStoreOwnership>,
+    parentId: identical(parentId, sdkOmittedValue) ? this.parentId : parentId as SdkOptional<String>,
+    product: identical(product, sdkOmittedValue) ? this.product : product as CreateIntegrationStoreDirectResponseStoreProduct,
+    protocolSettings: identical(protocolSettings, sdkOmittedValue) ? this.protocolSettings : protocolSettings as SdkOptional<CreateIntegrationStoreDirectResponseStoreProtocolSettings>,
+    secretRotationCompletedAt: identical(secretRotationCompletedAt, sdkOmittedValue) ? this.secretRotationCompletedAt : secretRotationCompletedAt as SdkOptional<double>,
+    secretRotationRequestedAt: identical(secretRotationRequestedAt, sdkOmittedValue) ? this.secretRotationRequestedAt : secretRotationRequestedAt as SdkOptional<double>,
+    secretRotationRequestedBy: identical(secretRotationRequestedBy, sdkOmittedValue) ? this.secretRotationRequestedBy : secretRotationRequestedBy as SdkOptional<String>,
+    secretRotationRequestedReason: identical(secretRotationRequestedReason, sdkOmittedValue) ? this.secretRotationRequestedReason : secretRotationRequestedReason as SdkOptional<String>,
+    secrets: identical(secrets, sdkOmittedValue) ? this.secrets : secrets as List<CreateIntegrationStoreDirectResponseStoreSecretsItem>,
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<List<CreateIntegrationStoreDirectResponseStoreTargetsItem>>,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStore.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStore(
-        projectFilter: json['projectFilter'] != null
-            ? SdkPresent((json['projectFilter'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProjectFilter
-                    .fromJson(json['projectFilter'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        projectsMetadata: ((json['projectsMetadata'] as List?)
-            ?.map((e) =>
-                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        status: json.containsKey('status')
-            ? json['status'] != null
-                ? CreateIntegrationStoreDirectResponseStoreStatus.fromJson(
-                    json['status'] as String)
-                : null
-            : throw ArgumentError.value(
-                null, 'status', 'Required property is missing'),
-        totalConnectedProjects: json['totalConnectedProjects'] != null
-            ? SdkPresent(
-                ((json['totalConnectedProjects'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        usageQuotaExceeded: (json['usageQuotaExceeded'] != null
-            ? CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded
-                .fromJson(json['usageQuotaExceeded'] as bool)
-            : null)!,
-        billingPlan: json['billingPlan'] != null
-            ? SdkPresent((json['billingPlan'] != null
-                ? CreateIntegrationStoreDirectResponseStoreBillingPlan.fromJson(
-                    json['billingPlan'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        capabilities: json['capabilities'] != null
-            ? SdkPresent((json['capabilities'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilities
-                    .fromJson(json['capabilities'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        directPartnerConsoleUrl: json['directPartnerConsoleUrl'] != null
-            ? SdkPresent((json['directPartnerConsoleUrl'] as String?)!)
-            : const SdkOmitted(),
-        externalResourceId: (json['externalResourceId'] as String?)!,
-        externalResourceStatus: json.containsKey('externalResourceStatus')
-            ? SdkPresent(json['externalResourceStatus'] != null
-                ? CreateIntegrationStoreDirectResponseStoreExternalResourceStatus
-                    .fromJson(json['externalResourceStatus'] as String)
-                : null)
-            : const SdkOmitted(),
-        metadata: json['metadata'] != null
-            ? SdkPresent((json['metadata'] == null
-                ? null
-                : json['metadata'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        notification: json['notification'] != null
-            ? SdkPresent((json['notification'] != null
-                ? CreateIntegrationStoreDirectResponseStoreNotification
-                    .fromJson(json['notification'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        ownership: json['ownership'] != null
-            ? SdkPresent((json['ownership'] != null
-                ? CreateIntegrationStoreDirectResponseStoreOwnership.fromJson(
-                    json['ownership'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        parentId: json['parentId'] != null
-            ? SdkPresent((json['parentId'] as String?)!)
-            : const SdkOmitted(),
-        product: (json['product'] != null
-            ? CreateIntegrationStoreDirectResponseStoreProduct.fromJson(
-                json['product'] as Map<String, dynamic>)
-            : null)!,
-        protocolSettings: json['protocolSettings'] != null
-            ? SdkPresent((json['protocolSettings'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProtocolSettings
-                    .fromJson(json['protocolSettings'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        secretRotationCompletedAt: json['secretRotationCompletedAt'] != null
-            ? SdkPresent(
-                ((json['secretRotationCompletedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        secretRotationRequestedAt: json['secretRotationRequestedAt'] != null
-            ? SdkPresent(
-                ((json['secretRotationRequestedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        secretRotationRequestedBy: json['secretRotationRequestedBy'] != null
-            ? SdkPresent((json['secretRotationRequestedBy'] as String?)!)
-            : const SdkOmitted(),
-        secretRotationRequestedReason: json['secretRotationRequestedReason'] !=
-                null
-            ? SdkPresent((json['secretRotationRequestedReason'] as String?)!)
-            : const SdkOmitted(),
-        secrets: ((json['secrets'] as List?)
-            ?.map((e) =>
-                CreateIntegrationStoreDirectResponseStoreSecretsItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        targets: json['targets'] != null
-            ? SdkPresent(((json['targets'] as List?)
-                ?.map((e) =>
-                    CreateIntegrationStoreDirectResponseStoreTargetsItem
-                        .fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory CreateIntegrationStoreDirectResponseStore.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStore(
+    projectFilter: json['projectFilter'] != null ? SdkPresent((json['projectFilter'] != null ? CreateIntegrationStoreDirectResponseStoreProjectFilter.fromJson(json['projectFilter'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    projectsMetadata: ((json['projectsMetadata'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    status: json.containsKey('status') ? json['status'] != null ? CreateIntegrationStoreDirectResponseStoreStatus.fromJson(json['status'] as String) : null : throw ArgumentError.value(null, 'status', 'Required property is missing'),
+    totalConnectedProjects: json['totalConnectedProjects'] != null ? SdkPresent(((json['totalConnectedProjects'] as num?)?.toDouble())!) : const SdkOmitted(),
+    usageQuotaExceeded: (json['usageQuotaExceeded'] != null ? CreateIntegrationStoreDirectResponseStoreUsageQuotaExceeded.fromJson(json['usageQuotaExceeded'] as bool) : null)!,
+    billingPlan: json['billingPlan'] != null ? SdkPresent((json['billingPlan'] != null ? CreateIntegrationStoreDirectResponseStoreBillingPlan.fromJson(json['billingPlan'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    capabilities: json['capabilities'] != null ? SdkPresent((json['capabilities'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilities.fromJson(json['capabilities'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    directPartnerConsoleUrl: json['directPartnerConsoleUrl'] != null ? SdkPresent((json['directPartnerConsoleUrl'] as String?)!) : const SdkOmitted(),
+    externalResourceId: (json['externalResourceId'] as String?)!,
+    externalResourceStatus: json.containsKey('externalResourceStatus') ? SdkPresent(json['externalResourceStatus'] != null ? CreateIntegrationStoreDirectResponseStoreExternalResourceStatus.fromJson(json['externalResourceStatus'] as String) : null) : const SdkOmitted(),
+    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] == null ? null : json['metadata'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    notification: json['notification'] != null ? SdkPresent((json['notification'] != null ? CreateIntegrationStoreDirectResponseStoreNotification.fromJson(json['notification'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    ownership: json['ownership'] != null ? SdkPresent((json['ownership'] != null ? CreateIntegrationStoreDirectResponseStoreOwnership.fromJson(json['ownership'] as String) : null)!) : const SdkOmitted(),
+    parentId: json['parentId'] != null ? SdkPresent((json['parentId'] as String?)!) : const SdkOmitted(),
+    product: (json['product'] != null ? CreateIntegrationStoreDirectResponseStoreProduct.fromJson(json['product'] as Map<String, dynamic>) : null)!,
+    protocolSettings: json['protocolSettings'] != null ? SdkPresent((json['protocolSettings'] != null ? CreateIntegrationStoreDirectResponseStoreProtocolSettings.fromJson(json['protocolSettings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    secretRotationCompletedAt: json['secretRotationCompletedAt'] != null ? SdkPresent(((json['secretRotationCompletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    secretRotationRequestedAt: json['secretRotationRequestedAt'] != null ? SdkPresent(((json['secretRotationRequestedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    secretRotationRequestedBy: json['secretRotationRequestedBy'] != null ? SdkPresent((json['secretRotationRequestedBy'] as String?)!) : const SdkOmitted(),
+    secretRotationRequestedReason: json['secretRotationRequestedReason'] != null ? SdkPresent((json['secretRotationRequestedReason'] as String?)!) : const SdkOmitted(),
+    secrets: ((json['secrets'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreSecretsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    targets: json['targets'] != null ? SdkPresent(((json['targets'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreTargetsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (projectFilter) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreProjectFilter>(
-            value: final value
-          ) =>
-            {
-              'projectFilter': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'projectsMetadata':
-            projectsMetadata.map((item) => item.toJson()).toList(),
-        'status': status?.toJson(),
-        ...switch (totalConnectedProjects) {
-          SdkPresent<double>(value: final value) => {
-              'totalConnectedProjects': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'usageQuotaExceeded': usageQuotaExceeded.toJson(),
-        ...switch (billingPlan) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreBillingPlan>(
-            value: final value
-          ) =>
-            {
-              'billingPlan': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (capabilities) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilities>(
-            value: final value
-          ) =>
-            {
-              'capabilities': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (directPartnerConsoleUrl) {
-          SdkPresent<String>(value: final value) => {
-              'directPartnerConsoleUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'externalResourceId': externalResourceId,
-        ...switch (externalResourceStatus) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?>(
-            value: final value
-          ) =>
-            {
-              'externalResourceStatus': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (metadata) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'metadata': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (notification) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreNotification>(
-            value: final value
-          ) =>
-            {
-              'notification': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ownership) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreOwnership>(
-            value: final value
-          ) =>
-            {
-              'ownership': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (parentId) {
-          SdkPresent<String>(value: final value) => {
-              'parentId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'product': product.toJson(),
-        ...switch (protocolSettings) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreProtocolSettings>(
-            value: final value
-          ) =>
-            {
-              'protocolSettings': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretRotationCompletedAt) {
-          SdkPresent<double>(value: final value) => {
-              'secretRotationCompletedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretRotationRequestedAt) {
-          SdkPresent<double>(value: final value) => {
-              'secretRotationRequestedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretRotationRequestedBy) {
-          SdkPresent<String>(value: final value) => {
-              'secretRotationRequestedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretRotationRequestedReason) {
-          SdkPresent<String>(value: final value) => {
-              'secretRotationRequestedReason': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'secrets': secrets.map((item) => item.toJson()).toList(),
-        ...switch (targets) {
-          SdkPresent<
-                List<CreateIntegrationStoreDirectResponseStoreTargetsItem>>(
-            value: final value
-          ) =>
-            {
-              'targets': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (projectFilter) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProjectFilter>(value: final value) => {'projectFilter': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'projectsMetadata': projectsMetadata.map((item) => item.toJson()).toList(),
+    'status': status?.toJson(),
+    ...switch (totalConnectedProjects) {
+      SdkPresent<double>(value: final value) => {'totalConnectedProjects': value,},
+      _ => const <String, dynamic>{},
+    },
+    'usageQuotaExceeded': usageQuotaExceeded.toJson(),
+    ...switch (billingPlan) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreBillingPlan>(value: final value) => {'billingPlan': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (capabilities) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilities>(value: final value) => {'capabilities': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (directPartnerConsoleUrl) {
+      SdkPresent<String>(value: final value) => {'directPartnerConsoleUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+    'externalResourceId': externalResourceId,
+    ...switch (externalResourceStatus) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreExternalResourceStatus?>(value: final value) => {'externalResourceStatus': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (metadata) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'metadata': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (notification) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreNotification>(value: final value) => {'notification': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ownership) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreOwnership>(value: final value) => {'ownership': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (parentId) {
+      SdkPresent<String>(value: final value) => {'parentId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'product': product.toJson(),
+    ...switch (protocolSettings) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProtocolSettings>(value: final value) => {'protocolSettings': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretRotationCompletedAt) {
+      SdkPresent<double>(value: final value) => {'secretRotationCompletedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretRotationRequestedAt) {
+      SdkPresent<double>(value: final value) => {'secretRotationRequestedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretRotationRequestedBy) {
+      SdkPresent<String>(value: final value) => {'secretRotationRequestedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretRotationRequestedReason) {
+      SdkPresent<String>(value: final value) => {'secretRotationRequestedReason': value,},
+      _ => const <String, dynamic>{},
+    },
+    'secrets': secrets.map((item) => item.toJson()).toList(),
+    ...switch (targets) {
+      SdkPresent<List<CreateIntegrationStoreDirectResponseStoreTargetsItem>>(value: final value) => {'targets': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateIntegrationStoreDirectResponse {
@@ -563,33 +211,19 @@ class CreateIntegrationStoreDirectResponse {
 
   const CreateIntegrationStoreDirectResponse({required this.store});
 
-  CreateIntegrationStoreDirectResponse Function(
-          {CreateIntegrationStoreDirectResponseStore? store})
-      get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponse Function({CreateIntegrationStoreDirectResponseStore? store}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponse _copyWith(
-          {Object? store = sdkOmittedValue}) =>
-      CreateIntegrationStoreDirectResponse(
-        store: identical(store, sdkOmittedValue)
-            ? this.store
-            : store as CreateIntegrationStoreDirectResponseStore?,
-      );
+  CreateIntegrationStoreDirectResponse _copyWith({Object? store = sdkOmittedValue}) => CreateIntegrationStoreDirectResponse(
+    store: identical(store, sdkOmittedValue) ? this.store : store as CreateIntegrationStoreDirectResponseStore?,
+  );
 
-  factory CreateIntegrationStoreDirectResponse.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponse(
-        store: json.containsKey('store')
-            ? json['store'] != null
-                ? CreateIntegrationStoreDirectResponseStore.fromJson(
-                    json['store'] as Map<String, dynamic>)
-                : null
-            : throw ArgumentError.value(
-                null, 'store', 'Required property is missing'),
-      );
+  factory CreateIntegrationStoreDirectResponse.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponse(
+    store: json.containsKey('store') ? json['store'] != null ? CreateIntegrationStoreDirectResponseStore.fromJson(json['store'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'store', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'store': store?.toJson(),
-      };
+    'store': store?.toJson(),
+  };
 }
 
 class UpdateInstallationRequestBodyBillingPlanDetailsItem {
@@ -598,39 +232,27 @@ class UpdateInstallationRequestBodyBillingPlanDetailsItem {
   final String label;
   final SdkOptional<String> value;
 
-  const UpdateInstallationRequestBodyBillingPlanDetailsItem(
-      {required this.label, this.value = const SdkOmitted()});
+  const UpdateInstallationRequestBodyBillingPlanDetailsItem({required this.label, this.value = const SdkOmitted()});
 
-  UpdateInstallationRequestBodyBillingPlanDetailsItem Function(
-      {String label, SdkOptional<String> value}) get copyWith => _copyWith;
+  UpdateInstallationRequestBodyBillingPlanDetailsItem Function({String label, SdkOptional<String> value}) get copyWith => _copyWith;
 
-  UpdateInstallationRequestBodyBillingPlanDetailsItem _copyWith(
-          {Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
-      UpdateInstallationRequestBodyBillingPlanDetailsItem(
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as SdkOptional<String>,
-      );
+  UpdateInstallationRequestBodyBillingPlanDetailsItem _copyWith({Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateInstallationRequestBodyBillingPlanDetailsItem(
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
+  );
 
-  factory UpdateInstallationRequestBodyBillingPlanDetailsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateInstallationRequestBodyBillingPlanDetailsItem(
-        label: (json['label'] as String?)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateInstallationRequestBodyBillingPlanDetailsItem.fromJson(Map<String, dynamic> json) => UpdateInstallationRequestBodyBillingPlanDetailsItem(
+    label: (json['label'] as String?)!,
+    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'label': label,
-        ...switch (value) {
-          SdkPresent<String>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'label': label,
+    ...switch (value) {
+      SdkPresent<String>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem {
@@ -639,37 +261,25 @@ class UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem {
   final String label;
   final SdkOptional<String> value;
 
-  const UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem(
-      {required this.label, this.value = const SdkOmitted()});
+  const UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem({required this.label, this.value = const SdkOmitted()});
 
-  UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem Function(
-      {String label, SdkOptional<String> value}) get copyWith => _copyWith;
+  UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem Function({String label, SdkOptional<String> value}) get copyWith => _copyWith;
 
-  UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem _copyWith(
-          {Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
-      UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem(
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as SdkOptional<String>,
-      );
+  UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem _copyWith({Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem(
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
+  );
 
-  factory UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem(
-        label: (json['label'] as String?)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem.fromJson(Map<String, dynamic> json) => UpdateInstallationRequestBodyBillingPlanHighlightedDetailsItem(
+    label: (json['label'] as String?)!,
+    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'label': label,
-        ...switch (value) {
-          SdkPresent<String>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'label': label,
+    ...switch (value) {
+      SdkPresent<String>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

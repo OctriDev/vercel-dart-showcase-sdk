@@ -10,40 +10,24 @@ class EditProjectEnvResponseContentHintVariant11 {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant11Type type_;
 
-  const EditProjectEnvResponseContentHintVariant11(
-      {required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant11({required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant11 Function(
-          {String storeId,
-          EditProjectEnvResponseContentHintVariant11Type type_})
-      get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant11 Function({String storeId, EditProjectEnvResponseContentHintVariant11Type type_}) get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant11 _copyWith(
-          {Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      EditProjectEnvResponseContentHintVariant11(
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as EditProjectEnvResponseContentHintVariant11Type,
-      );
+  EditProjectEnvResponseContentHintVariant11 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant11(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant11Type,
+  );
 
-  factory EditProjectEnvResponseContentHintVariant11.fromJson(
-          Map<String, dynamic> json) =>
-      EditProjectEnvResponseContentHintVariant11(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? EditProjectEnvResponseContentHintVariant11Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory EditProjectEnvResponseContentHintVariant11.fromJson(Map<String, dynamic> json) => EditProjectEnvResponseContentHintVariant11(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant11Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class EditProjectEnvResponseContentHintVariant12 {
@@ -52,40 +36,24 @@ class EditProjectEnvResponseContentHintVariant12 {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant12Type type_;
 
-  const EditProjectEnvResponseContentHintVariant12(
-      {required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant12({required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant12 Function(
-          {String storeId,
-          EditProjectEnvResponseContentHintVariant12Type type_})
-      get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant12 Function({String storeId, EditProjectEnvResponseContentHintVariant12Type type_}) get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant12 _copyWith(
-          {Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      EditProjectEnvResponseContentHintVariant12(
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as EditProjectEnvResponseContentHintVariant12Type,
-      );
+  EditProjectEnvResponseContentHintVariant12 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant12(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant12Type,
+  );
 
-  factory EditProjectEnvResponseContentHintVariant12.fromJson(
-          Map<String, dynamic> json) =>
-      EditProjectEnvResponseContentHintVariant12(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? EditProjectEnvResponseContentHintVariant12Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory EditProjectEnvResponseContentHintVariant12.fromJson(Map<String, dynamic> json) => EditProjectEnvResponseContentHintVariant12(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant12Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class EditProjectEnvResponseContentHintVariant13 {
@@ -94,40 +62,24 @@ class EditProjectEnvResponseContentHintVariant13 {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant13Type type_;
 
-  const EditProjectEnvResponseContentHintVariant13(
-      {required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant13({required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant13 Function(
-          {String storeId,
-          EditProjectEnvResponseContentHintVariant13Type type_})
-      get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant13 Function({String storeId, EditProjectEnvResponseContentHintVariant13Type type_}) get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant13 _copyWith(
-          {Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      EditProjectEnvResponseContentHintVariant13(
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as EditProjectEnvResponseContentHintVariant13Type,
-      );
+  EditProjectEnvResponseContentHintVariant13 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant13(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant13Type,
+  );
 
-  factory EditProjectEnvResponseContentHintVariant13.fromJson(
-          Map<String, dynamic> json) =>
-      EditProjectEnvResponseContentHintVariant13(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? EditProjectEnvResponseContentHintVariant13Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory EditProjectEnvResponseContentHintVariant13.fromJson(Map<String, dynamic> json) => EditProjectEnvResponseContentHintVariant13(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant13Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class EditProjectEnvResponseContentHintVariant14 {
@@ -136,40 +88,24 @@ class EditProjectEnvResponseContentHintVariant14 {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant14Type type_;
 
-  const EditProjectEnvResponseContentHintVariant14(
-      {required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant14({required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant14 Function(
-          {String storeId,
-          EditProjectEnvResponseContentHintVariant14Type type_})
-      get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant14 Function({String storeId, EditProjectEnvResponseContentHintVariant14Type type_}) get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant14 _copyWith(
-          {Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      EditProjectEnvResponseContentHintVariant14(
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as EditProjectEnvResponseContentHintVariant14Type,
-      );
+  EditProjectEnvResponseContentHintVariant14 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant14(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant14Type,
+  );
 
-  factory EditProjectEnvResponseContentHintVariant14.fromJson(
-          Map<String, dynamic> json) =>
-      EditProjectEnvResponseContentHintVariant14(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? EditProjectEnvResponseContentHintVariant14Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory EditProjectEnvResponseContentHintVariant14.fromJson(Map<String, dynamic> json) => EditProjectEnvResponseContentHintVariant14(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant14Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class EditProjectEnvResponseContentHintVariant15 {
@@ -181,67 +117,33 @@ class EditProjectEnvResponseContentHintVariant15 {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant15Type type_;
 
-  const EditProjectEnvResponseContentHintVariant15(
-      {required this.integrationConfigurationId,
-      required this.integrationId,
-      required this.integrationProductId,
-      required this.storeId,
-      required this.type_});
+  const EditProjectEnvResponseContentHintVariant15({required this.integrationConfigurationId, required this.integrationId, required this.integrationProductId, required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant15 Function(
-          {String integrationConfigurationId,
-          String integrationId,
-          String integrationProductId,
-          String storeId,
-          EditProjectEnvResponseContentHintVariant15Type type_})
-      get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant15 Function({String integrationConfigurationId, String integrationId, String integrationProductId, String storeId, EditProjectEnvResponseContentHintVariant15Type type_}) get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant15 _copyWith(
-          {Object? integrationConfigurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue,
-          Object? integrationProductId = sdkOmittedValue,
-          Object? storeId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      EditProjectEnvResponseContentHintVariant15(
-        integrationConfigurationId:
-            identical(integrationConfigurationId, sdkOmittedValue)
-                ? this.integrationConfigurationId
-                : integrationConfigurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-        integrationProductId: identical(integrationProductId, sdkOmittedValue)
-            ? this.integrationProductId
-            : integrationProductId as String,
-        storeId: identical(storeId, sdkOmittedValue)
-            ? this.storeId
-            : storeId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as EditProjectEnvResponseContentHintVariant15Type,
-      );
+  EditProjectEnvResponseContentHintVariant15 _copyWith({Object? integrationConfigurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationProductId = sdkOmittedValue, Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant15(
+    integrationConfigurationId: identical(integrationConfigurationId, sdkOmittedValue) ? this.integrationConfigurationId : integrationConfigurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    integrationProductId: identical(integrationProductId, sdkOmittedValue) ? this.integrationProductId : integrationProductId as String,
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant15Type,
+  );
 
-  factory EditProjectEnvResponseContentHintVariant15.fromJson(
-          Map<String, dynamic> json) =>
-      EditProjectEnvResponseContentHintVariant15(
-        integrationConfigurationId:
-            (json['integrationConfigurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-        integrationProductId: (json['integrationProductId'] as String?)!,
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? EditProjectEnvResponseContentHintVariant15Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory EditProjectEnvResponseContentHintVariant15.fromJson(Map<String, dynamic> json) => EditProjectEnvResponseContentHintVariant15(
+    integrationConfigurationId: (json['integrationConfigurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+    integrationProductId: (json['integrationProductId'] as String?)!,
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant15Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'integrationConfigurationId': integrationConfigurationId,
-        'integrationId': integrationId,
-        'integrationProductId': integrationProductId,
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'integrationConfigurationId': integrationConfigurationId,
+    'integrationId': integrationId,
+    'integrationProductId': integrationProductId,
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class EditProjectEnvResponseContentHintVariant16 {
@@ -250,40 +152,24 @@ class EditProjectEnvResponseContentHintVariant16 {
   final String projectId;
   final EditProjectEnvResponseContentHintVariant16Type type_;
 
-  const EditProjectEnvResponseContentHintVariant16(
-      {required this.projectId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant16({required this.projectId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant16 Function(
-          {String projectId,
-          EditProjectEnvResponseContentHintVariant16Type type_})
-      get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant16 Function({String projectId, EditProjectEnvResponseContentHintVariant16Type type_}) get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant16 _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      EditProjectEnvResponseContentHintVariant16(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as EditProjectEnvResponseContentHintVariant16Type,
-      );
+  EditProjectEnvResponseContentHintVariant16 _copyWith({Object? projectId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant16(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant16Type,
+  );
 
-  factory EditProjectEnvResponseContentHintVariant16.fromJson(
-          Map<String, dynamic> json) =>
-      EditProjectEnvResponseContentHintVariant16(
-        projectId: (json['projectId'] as String?)!,
-        type_: (json['type'] != null
-            ? EditProjectEnvResponseContentHintVariant16Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory EditProjectEnvResponseContentHintVariant16.fromJson(Map<String, dynamic> json) => EditProjectEnvResponseContentHintVariant16(
+    projectId: (json['projectId'] as String?)!,
+    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant16Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        'type': type_.toJson(),
-      };
+    'projectId': projectId,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class EditProjectEnvResponseContentHint {
@@ -292,312 +178,108 @@ sealed class EditProjectEnvResponseContentHint {
   const EditProjectEnvResponseContentHint();
   factory EditProjectEnvResponseContentHint.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = EditProjectEnvResponseContentHintVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant5.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant6.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant7.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant8.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant9.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant10.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant11.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant12.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant13.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant14.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant15.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = EditProjectEnvResponseContentHintVariant16.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16(
-              value);
-        }
-      } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant8.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant9.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant10.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant11.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant12.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant13.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant14.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant15.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15(value); } } catch (_) {}
+      try { final value = EditProjectEnvResponseContentHintVariant16.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16(value); } } catch (_) {}
     }
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0(
-          EditProjectEnvResponseContentHintVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1(
-          EditProjectEnvResponseContentHintVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2(
-          EditProjectEnvResponseContentHintVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3(
-          EditProjectEnvResponseContentHintVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4(
-          EditProjectEnvResponseContentHintVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5(
-          EditProjectEnvResponseContentHintVariant5.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6(
-          EditProjectEnvResponseContentHintVariant6.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7(
-          EditProjectEnvResponseContentHintVariant7.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8(
-          EditProjectEnvResponseContentHintVariant8.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9(
-          EditProjectEnvResponseContentHintVariant9.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10(
-          EditProjectEnvResponseContentHintVariant10.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11(
-          EditProjectEnvResponseContentHintVariant11.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12(
-          EditProjectEnvResponseContentHintVariant12.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13(
-          EditProjectEnvResponseContentHintVariant13.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14(
-          EditProjectEnvResponseContentHintVariant14.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15(
-          EditProjectEnvResponseContentHintVariant15.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16(
-          EditProjectEnvResponseContentHintVariant16.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for EditProjectEnvResponseContentHint");
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0(EditProjectEnvResponseContentHintVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1(EditProjectEnvResponseContentHintVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2(EditProjectEnvResponseContentHintVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3(EditProjectEnvResponseContentHintVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4(EditProjectEnvResponseContentHintVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5(EditProjectEnvResponseContentHintVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6(EditProjectEnvResponseContentHintVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7(EditProjectEnvResponseContentHintVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8(EditProjectEnvResponseContentHintVariant8.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9(EditProjectEnvResponseContentHintVariant9.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10(EditProjectEnvResponseContentHintVariant10.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant11(EditProjectEnvResponseContentHintVariant11.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant12(EditProjectEnvResponseContentHintVariant12.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant13(EditProjectEnvResponseContentHintVariant13.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant14(EditProjectEnvResponseContentHintVariant14.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant15(EditProjectEnvResponseContentHintVariant15.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant16(EditProjectEnvResponseContentHintVariant16.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for EditProjectEnvResponseContentHint");
   }
   Object? toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant0 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant1 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant2 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant3 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant4 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant5 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant5(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant6 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant6(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant7 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant7(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant8 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant8(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant9 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant9(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10
-    extends EditProjectEnvResponseContentHint {
+final class EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10 extends EditProjectEnvResponseContentHint {
   final EditProjectEnvResponseContentHintVariant10 value;
-  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const EditProjectEnvResponseContentHintEditProjectEnvResponseContentHintVariant10(this.value);
+  @override Object? toJson() => value.toJson();
 }

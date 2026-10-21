@@ -8,84 +8,46 @@ part of 'connect.dart';
 class ConnectTriggerDestination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Git branch used to select a preview deployment.
   final SdkOptional<String> branch;
-
   /// Stable custom-environment ID to route this destination to. Mutually exclusive with `branch`; omitted destinations keep the legacy production behavior.
   final SdkOptional<String> customEnvironmentId;
-
   /// Route path that receives the forwarded trigger request.
   final SdkOptional<String> path;
-
   /// Vercel project that receives matching trigger requests.
   final String projectId;
 
-  const ConnectTriggerDestination(
-      {this.branch = const SdkOmitted(),
-      this.customEnvironmentId = const SdkOmitted(),
-      this.path = const SdkOmitted(),
-      required this.projectId});
+  const ConnectTriggerDestination({this.branch = const SdkOmitted(), this.customEnvironmentId = const SdkOmitted(), this.path = const SdkOmitted(), required this.projectId});
 
-  ConnectTriggerDestination Function(
-      {SdkOptional<String> branch,
-      SdkOptional<String> customEnvironmentId,
-      SdkOptional<String> path,
-      String projectId}) get copyWith => _copyWith;
+  ConnectTriggerDestination Function({SdkOptional<String> branch, SdkOptional<String> customEnvironmentId, SdkOptional<String> path, String projectId}) get copyWith => _copyWith;
 
-  ConnectTriggerDestination _copyWith(
-          {Object? branch = sdkOmittedValue,
-          Object? customEnvironmentId = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue}) =>
-      ConnectTriggerDestination(
-        branch: identical(branch, sdkOmittedValue)
-            ? this.branch
-            : branch as SdkOptional<String>,
-        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
-            ? this.customEnvironmentId
-            : customEnvironmentId as SdkOptional<String>,
-        path: identical(path, sdkOmittedValue)
-            ? this.path
-            : path as SdkOptional<String>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-      );
+  ConnectTriggerDestination _copyWith({Object? branch = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? path = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => ConnectTriggerDestination(
+    branch: identical(branch, sdkOmittedValue) ? this.branch : branch as SdkOptional<String>,
+    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String>,
+    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+  );
 
-  factory ConnectTriggerDestination.fromJson(Map<String, dynamic> json) =>
-      ConnectTriggerDestination(
-        branch: json['branch'] != null
-            ? SdkPresent((json['branch'] as String?)!)
-            : const SdkOmitted(),
-        customEnvironmentId: json['customEnvironmentId'] != null
-            ? SdkPresent((json['customEnvironmentId'] as String?)!)
-            : const SdkOmitted(),
-        path: json['path'] != null
-            ? SdkPresent((json['path'] as String?)!)
-            : const SdkOmitted(),
-        projectId: (json['projectId'] as String?)!,
-      );
+  factory ConnectTriggerDestination.fromJson(Map<String, dynamic> json) => ConnectTriggerDestination(
+    branch: json['branch'] != null ? SdkPresent((json['branch'] as String?)!) : const SdkOmitted(),
+    customEnvironmentId: json['customEnvironmentId'] != null ? SdkPresent((json['customEnvironmentId'] as String?)!) : const SdkOmitted(),
+    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
+    projectId: (json['projectId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (branch) {
-          SdkPresent<String>(value: final value) => {
-              'branch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentId) {
-          SdkPresent<String>(value: final value) => {
-              'customEnvironmentId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (path) {
-          SdkPresent<String>(value: final value) => {
-              'path': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'projectId': projectId,
-      };
+    ...switch (branch) {
+      SdkPresent<String>(value: final value) => {'branch': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentId) {
+      SdkPresent<String>(value: final value) => {'customEnvironmentId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (path) {
+      SdkPresent<String>(value: final value) => {'path': value,},
+      _ => const <String, dynamic>{},
+    },
+    'projectId': projectId,
+  };
 }

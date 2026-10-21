@@ -5,367 +5,259 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetIntegrationResourcesResponseResourcesItemNotificationLevel {
+
   final String value;
 
-  const GetIntegrationResourcesResponseResourcesItemNotificationLevel._(
-      this.value);
+  const GetIntegrationResourcesResponseResourcesItemNotificationLevel._(this.value);
 
-  factory GetIntegrationResourcesResponseResourcesItemNotificationLevel.fromJson(
-          String value) =>
-      GetIntegrationResourcesResponseResourcesItemNotificationLevel._(value);
+  factory GetIntegrationResourcesResponseResourcesItemNotificationLevel.fromJson(String value) => GetIntegrationResourcesResponseResourcesItemNotificationLevel._(value);
 
-  static const error =
-      GetIntegrationResourcesResponseResourcesItemNotificationLevel._('error');
-  static const info =
-      GetIntegrationResourcesResponseResourcesItemNotificationLevel._('info');
-  static const warn =
-      GetIntegrationResourcesResponseResourcesItemNotificationLevel._('warn');
+  static const error = GetIntegrationResourcesResponseResourcesItemNotificationLevel._('error');
+  static const info = GetIntegrationResourcesResponseResourcesItemNotificationLevel._('info');
+  static const warn = GetIntegrationResourcesResponseResourcesItemNotificationLevel._('warn');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetIntegrationResourcesResponseResourcesItemNotificationLevel &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourcesResponseResourcesItemNotificationLevel && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget {
+
   final String value;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget._(
-      this.value);
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget._(this.value);
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget.fromJson(
-          String value) =>
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._(value);
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget.fromJson(String value) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget._(value);
 
-  static const development =
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._('development');
-  static const preview =
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._('preview');
-  static const production =
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._('production');
+  static const development = GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget._('development');
+  static const preview = GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget._('preview');
+  static const production = GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthenticationAppUrlsItemTarget && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled {
+
   final bool value;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled._(
-      this.value);
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled._(this.value);
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled.fromJson(
-          bool value) =>
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled
-          ._(value);
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled.fromJson(bool value) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled._(value);
 
-  static const false_ =
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled
-          ._(false);
-  static const true_ =
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled
-          ._(true);
+  static const false_ = GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled._(false);
+  static const true_ = GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled {
+
   final bool value;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled._(
-      this.value);
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled._(this.value);
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled.fromJson(
-          bool value) =>
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled
-          ._(value);
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled.fromJson(bool value) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled._(value);
 
-  static const false_ =
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled
-          ._(false);
-  static const true_ =
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled
-          ._(true);
+  static const false_ = GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled._(false);
+  static const true_ = GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The current status of the resource
 final class GetIntegrationResourcesResponseResourcesItemStatus {
+
   final String value;
 
   const GetIntegrationResourcesResponseResourcesItemStatus._(this.value);
 
-  factory GetIntegrationResourcesResponseResourcesItemStatus.fromJson(
-          String value) =>
-      GetIntegrationResourcesResponseResourcesItemStatus._(value);
+  factory GetIntegrationResourcesResponseResourcesItemStatus.fromJson(String value) => GetIntegrationResourcesResponseResourcesItemStatus._(value);
 
-  static const error =
-      GetIntegrationResourcesResponseResourcesItemStatus._('error');
-  static const onboarding =
-      GetIntegrationResourcesResponseResourcesItemStatus._('onboarding');
-  static const pending =
-      GetIntegrationResourcesResponseResourcesItemStatus._('pending');
-  static const ready =
-      GetIntegrationResourcesResponseResourcesItemStatus._('ready');
-  static const resumed =
-      GetIntegrationResourcesResponseResourcesItemStatus._('resumed');
-  static const suspended =
-      GetIntegrationResourcesResponseResourcesItemStatus._('suspended');
-  static const uninstalled =
-      GetIntegrationResourcesResponseResourcesItemStatus._('uninstalled');
+  static const error = GetIntegrationResourcesResponseResourcesItemStatus._('error');
+  static const onboarding = GetIntegrationResourcesResponseResourcesItemStatus._('onboarding');
+  static const pending = GetIntegrationResourcesResponseResourcesItemStatus._('pending');
+  static const ready = GetIntegrationResourcesResponseResourcesItemStatus._('ready');
+  static const resumed = GetIntegrationResourcesResponseResourcesItemStatus._('resumed');
+  static const suspended = GetIntegrationResourcesResponseResourcesItemStatus._('suspended');
+  static const uninstalled = GetIntegrationResourcesResponseResourcesItemStatus._('uninstalled');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetIntegrationResourcesResponseResourcesItemStatus &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourcesResponseResourcesItemStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3 {
+
   final bool value;
 
-  const GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3._(
-      this.value);
+  const GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3._(this.value);
 
-  factory GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3.fromJson(
-          bool value) =>
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3
-          ._(value);
+  factory GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3.fromJson(bool value) => GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3._(value);
 
-  static const false_ =
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3
-          ._(false);
-  static const true_ =
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3
-          ._(true);
+  static const false_ = GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3._(false);
+  static const true_ = GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourceResponseCustomClaimsClaimRulesItemClaimsValueVariant3 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetIntegrationResourceResponseMetadataValueVariant4 {
+
   final bool value;
 
   const GetIntegrationResourceResponseMetadataValueVariant4._(this.value);
 
-  factory GetIntegrationResourceResponseMetadataValueVariant4.fromJson(
-          bool value) =>
-      GetIntegrationResourceResponseMetadataValueVariant4._(value);
+  factory GetIntegrationResourceResponseMetadataValueVariant4.fromJson(bool value) => GetIntegrationResourceResponseMetadataValueVariant4._(value);
 
-  static const false_ =
-      GetIntegrationResourceResponseMetadataValueVariant4._(false);
-  static const true_ =
-      GetIntegrationResourceResponseMetadataValueVariant4._(true);
+  static const false_ = GetIntegrationResourceResponseMetadataValueVariant4._(false);
+  static const true_ = GetIntegrationResourceResponseMetadataValueVariant4._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetIntegrationResourceResponseMetadataValueVariant4 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourceResponseMetadataValueVariant4 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetIntegrationResourceResponseNotificationLevel {
+
   final String value;
 
   const GetIntegrationResourceResponseNotificationLevel._(this.value);
 
-  factory GetIntegrationResourceResponseNotificationLevel.fromJson(
-          String value) =>
-      GetIntegrationResourceResponseNotificationLevel._(value);
+  factory GetIntegrationResourceResponseNotificationLevel.fromJson(String value) => GetIntegrationResourceResponseNotificationLevel._(value);
 
-  static const error =
-      GetIntegrationResourceResponseNotificationLevel._('error');
+  static const error = GetIntegrationResourceResponseNotificationLevel._('error');
   static const info = GetIntegrationResourceResponseNotificationLevel._('info');
   static const warn = GetIntegrationResourceResponseNotificationLevel._('warn');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetIntegrationResourceResponseNotificationLevel &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourceResponseNotificationLevel && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget {
+
   final String value;
 
-  const GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget._(
-      this.value);
+  const GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget._(this.value);
 
-  factory GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget.fromJson(
-          String value) =>
-      GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._(value);
+  factory GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget.fromJson(String value) => GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget._(value);
 
-  static const development =
-      GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._('development');
-  static const preview =
-      GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._('preview');
-  static const production =
-      GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget
-          ._('production');
+  static const development = GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget._('development');
+  static const preview = GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget._('preview');
+  static const production = GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrlsItemTarget && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The current status of the resource
 final class GetIntegrationResourceResponseStatus {
+
   final String value;
 
   const GetIntegrationResourceResponseStatus._(this.value);
 
-  factory GetIntegrationResourceResponseStatus.fromJson(String value) =>
-      GetIntegrationResourceResponseStatus._(value);
+  factory GetIntegrationResourceResponseStatus.fromJson(String value) => GetIntegrationResourceResponseStatus._(value);
 
   static const error = GetIntegrationResourceResponseStatus._('error');
-  static const onboarding =
-      GetIntegrationResourceResponseStatus._('onboarding');
+  static const onboarding = GetIntegrationResourceResponseStatus._('onboarding');
   static const pending = GetIntegrationResourceResponseStatus._('pending');
   static const ready = GetIntegrationResourceResponseStatus._('ready');
   static const resumed = GetIntegrationResourceResponseStatus._('resumed');
   static const suspended = GetIntegrationResourceResponseStatus._('suspended');
-  static const uninstalled =
-      GetIntegrationResourceResponseStatus._('uninstalled');
+  static const uninstalled = GetIntegrationResourceResponseStatus._('uninstalled');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetIntegrationResourceResponseStatus && other.value == value;
+  @override bool operator ==(Object other) => other is GetIntegrationResourceResponseStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateResourceRequestBodyBillingPlanType {
+
   final String value;
 
   const UpdateResourceRequestBodyBillingPlanType._(this.value);
 
-  factory UpdateResourceRequestBodyBillingPlanType.fromJson(String value) =>
-      UpdateResourceRequestBodyBillingPlanType._(value);
+  factory UpdateResourceRequestBodyBillingPlanType.fromJson(String value) => UpdateResourceRequestBodyBillingPlanType._(value);
 
-  static const prepayment =
-      UpdateResourceRequestBodyBillingPlanType._('prepayment');
-  static const subscription =
-      UpdateResourceRequestBodyBillingPlanType._('subscription');
+  static const prepayment = UpdateResourceRequestBodyBillingPlanType._('prepayment');
+  static const subscription = UpdateResourceRequestBodyBillingPlanType._('subscription');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateResourceRequestBodyBillingPlanType && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateResourceRequestBodyBillingPlanType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateResourceRequestBodyOwnership {
+
   final String value;
 
   const UpdateResourceRequestBodyOwnership._(this.value);
 
-  factory UpdateResourceRequestBodyOwnership.fromJson(String value) =>
-      UpdateResourceRequestBodyOwnership._(value);
+  factory UpdateResourceRequestBodyOwnership.fromJson(String value) => UpdateResourceRequestBodyOwnership._(value);
 
   static const owned = UpdateResourceRequestBodyOwnership._('owned');
   static const linked = UpdateResourceRequestBodyOwnership._('linked');
@@ -373,13 +265,10 @@ final class UpdateResourceRequestBodyOwnership {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateResourceRequestBodyOwnership && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateResourceRequestBodyOwnership && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

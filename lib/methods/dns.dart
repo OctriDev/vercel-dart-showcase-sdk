@@ -28,16 +28,11 @@ Future<dynamic> getRecords(ClientConfig config,
           '/v5/domains/${Uri.encodeComponent(domain.toString())}/records',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRecords',
@@ -45,6 +40,7 @@ Future<dynamic> getRecords(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a DNS record for a domain. Provide the record `type`, `name`, and `value`; the accepted fields and value format depend on the record type. The response includes the identifier of the newly created record.
 ///
@@ -64,10 +60,8 @@ Future<CreateRecordResponse> createRecord(ClientConfig config,
           '/v2/domains/${Uri.encodeComponent(domain.toString())}/records',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'type': type_},
           decoder: SdkResponseDecoder.json,
@@ -76,6 +70,7 @@ Future<CreateRecordResponse> createRecord(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Updates an existing DNS record for a domain. Supply only the record properties you want to change, such as its `name`, `value`, or `ttl`; record-specific data can be provided through `srv` or `https`. The response contains the updated DNS record.
 ///
@@ -123,10 +118,8 @@ Future<UpdateRecordResponse> updateRecord(ClientConfig config,
           '/v1/domains/records/${Uri.encodeComponent(recordId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
@@ -140,11 +133,11 @@ Future<UpdateRecordResponse> updateRecord(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateRecord',
-          fromJsonRaw: (value) =>
-              UpdateRecordResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateRecordResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an existing DNS record from a domain. Supply the domain and record identifiers to select the record to remove. The response confirms removal of the specified record.
 ///
@@ -162,10 +155,8 @@ Future<Map<String, dynamic>> removeRecord(ClientConfig config,
           '/v2/domains/${Uri.encodeComponent(domain.toString())}/records/${Uri.encodeComponent(recordId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'removeRecord',

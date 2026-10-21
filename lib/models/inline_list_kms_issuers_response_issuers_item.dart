@@ -19,136 +19,57 @@ class ListKmsIssuersResponseIssuersItem {
   final List<ListKmsIssuersResponseIssuersItemSigningKeysItem> signingKeys;
   final String updatedAt;
 
-  const ListKmsIssuersResponseIssuersItem(
-      {required this.algorithm,
-      this.claimsSchema = const SdkOmitted(),
-      required this.createdAt,
-      required this.id,
-      this.managedBy = const SdkOmitted(),
-      required this.name,
-      required this.origin,
-      required this.ownerId,
-      required this.policies,
-      required this.signingKeys,
-      required this.updatedAt});
+  const ListKmsIssuersResponseIssuersItem({required this.algorithm, this.claimsSchema = const SdkOmitted(), required this.createdAt, required this.id, this.managedBy = const SdkOmitted(), required this.name, required this.origin, required this.ownerId, required this.policies, required this.signingKeys, required this.updatedAt});
 
-  ListKmsIssuersResponseIssuersItem Function(
-      {ListKmsIssuersResponseIssuersItemAlgorithm algorithm,
-      SdkOptional<Map<String, Object?>> claimsSchema,
-      String createdAt,
-      String id,
-      SdkOptional<String> managedBy,
-      String name,
-      ListKmsIssuersResponseIssuersItemOrigin origin,
-      String ownerId,
-      List<ListKmsIssuersResponseIssuersItemPoliciesItem> policies,
-      List<ListKmsIssuersResponseIssuersItemSigningKeysItem> signingKeys,
-      String updatedAt}) get copyWith => _copyWith;
+  ListKmsIssuersResponseIssuersItem Function({ListKmsIssuersResponseIssuersItemAlgorithm algorithm, SdkOptional<Map<String, Object?>> claimsSchema, String createdAt, String id, SdkOptional<String> managedBy, String name, ListKmsIssuersResponseIssuersItemOrigin origin, String ownerId, List<ListKmsIssuersResponseIssuersItemPoliciesItem> policies, List<ListKmsIssuersResponseIssuersItemSigningKeysItem> signingKeys, String updatedAt}) get copyWith => _copyWith;
 
-  ListKmsIssuersResponseIssuersItem _copyWith(
-          {Object? algorithm = sdkOmittedValue,
-          Object? claimsSchema = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? managedBy = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? origin = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? policies = sdkOmittedValue,
-          Object? signingKeys = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      ListKmsIssuersResponseIssuersItem(
-        algorithm: identical(algorithm, sdkOmittedValue)
-            ? this.algorithm
-            : algorithm as ListKmsIssuersResponseIssuersItemAlgorithm,
-        claimsSchema: identical(claimsSchema, sdkOmittedValue)
-            ? this.claimsSchema
-            : claimsSchema as SdkOptional<Map<String, Object?>>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        managedBy: identical(managedBy, sdkOmittedValue)
-            ? this.managedBy
-            : managedBy as SdkOptional<String>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        origin: identical(origin, sdkOmittedValue)
-            ? this.origin
-            : origin as ListKmsIssuersResponseIssuersItemOrigin,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        policies: identical(policies, sdkOmittedValue)
-            ? this.policies
-            : policies as List<ListKmsIssuersResponseIssuersItemPoliciesItem>,
-        signingKeys: identical(signingKeys, sdkOmittedValue)
-            ? this.signingKeys
-            : signingKeys
-                as List<ListKmsIssuersResponseIssuersItemSigningKeysItem>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as String,
-      );
+  ListKmsIssuersResponseIssuersItem _copyWith({Object? algorithm = sdkOmittedValue, Object? claimsSchema = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? managedBy = sdkOmittedValue, Object? name = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? policies = sdkOmittedValue, Object? signingKeys = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ListKmsIssuersResponseIssuersItem(
+    algorithm: identical(algorithm, sdkOmittedValue) ? this.algorithm : algorithm as ListKmsIssuersResponseIssuersItemAlgorithm,
+    claimsSchema: identical(claimsSchema, sdkOmittedValue) ? this.claimsSchema : claimsSchema as SdkOptional<Map<String, Object?>>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    managedBy: identical(managedBy, sdkOmittedValue) ? this.managedBy : managedBy as SdkOptional<String>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as ListKmsIssuersResponseIssuersItemOrigin,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    policies: identical(policies, sdkOmittedValue) ? this.policies : policies as List<ListKmsIssuersResponseIssuersItemPoliciesItem>,
+    signingKeys: identical(signingKeys, sdkOmittedValue) ? this.signingKeys : signingKeys as List<ListKmsIssuersResponseIssuersItemSigningKeysItem>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
+  );
 
-  factory ListKmsIssuersResponseIssuersItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListKmsIssuersResponseIssuersItem(
-        algorithm: (json['algorithm'] != null
-            ? ListKmsIssuersResponseIssuersItemAlgorithm.fromJson(
-                json['algorithm'] as String)
-            : null)!,
-        claimsSchema: json['claimsSchema'] != null
-            ? SdkPresent((json['claimsSchema'] == null
-                ? null
-                : Map<String, dynamic>.from(json['claimsSchema'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        createdAt: (json['createdAt'] as String?)!,
-        id: (json['id'] as String?)!,
-        managedBy: json['managedBy'] != null
-            ? SdkPresent((json['managedBy'] as String?)!)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        origin: (json['origin'] != null
-            ? ListKmsIssuersResponseIssuersItemOrigin.fromJson(
-                json['origin'] as String)
-            : null)!,
-        ownerId: (json['ownerId'] as String?)!,
-        policies: ((json['policies'] as List?)
-            ?.map((e) =>
-                ListKmsIssuersResponseIssuersItemPoliciesItem.fromJson(e))
-            .toList())!,
-        signingKeys: ((json['signingKeys'] as List?)
-            ?.map((e) =>
-                ListKmsIssuersResponseIssuersItemSigningKeysItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        updatedAt: (json['updatedAt'] as String?)!,
-      );
+  factory ListKmsIssuersResponseIssuersItem.fromJson(Map<String, dynamic> json) => ListKmsIssuersResponseIssuersItem(
+    algorithm: (json['algorithm'] != null ? ListKmsIssuersResponseIssuersItemAlgorithm.fromJson(json['algorithm'] as String) : null)!,
+    claimsSchema: json['claimsSchema'] != null ? SdkPresent((json['claimsSchema'] == null ? null : Map<String, dynamic>.from(json['claimsSchema'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    createdAt: (json['createdAt'] as String?)!,
+    id: (json['id'] as String?)!,
+    managedBy: json['managedBy'] != null ? SdkPresent((json['managedBy'] as String?)!) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    origin: (json['origin'] != null ? ListKmsIssuersResponseIssuersItemOrigin.fromJson(json['origin'] as String) : null)!,
+    ownerId: (json['ownerId'] as String?)!,
+    policies: ((json['policies'] as List?)?.map((e) => ListKmsIssuersResponseIssuersItemPoliciesItem.fromJson(e)).toList())!,
+    signingKeys: ((json['signingKeys'] as List?)?.map((e) => ListKmsIssuersResponseIssuersItemSigningKeysItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    updatedAt: (json['updatedAt'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'algorithm': algorithm.toJson(),
-        ...switch (claimsSchema) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'claimsSchema': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'id': id,
-        ...switch (managedBy) {
-          SdkPresent<String>(value: final value) => {
-              'managedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        'origin': origin.toJson(),
-        'ownerId': ownerId,
-        'policies': policies.map((item) => item.toJson()).toList(),
-        'signingKeys': signingKeys.map((item) => item.toJson()).toList(),
-        'updatedAt': updatedAt,
-      };
+    'algorithm': algorithm.toJson(),
+    ...switch (claimsSchema) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'claimsSchema': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'id': id,
+    ...switch (managedBy) {
+      SdkPresent<String>(value: final value) => {'managedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    'origin': origin.toJson(),
+    'ownerId': ownerId,
+    'policies': policies.map((item) => item.toJson()).toList(),
+    'signingKeys': signingKeys.map((item) => item.toJson()).toList(),
+    'updatedAt': updatedAt,
+  };
 }
 
 class ListKmsIssuersResponsePagination {
@@ -157,33 +78,24 @@ class ListKmsIssuersResponsePagination {
   final double count;
   final String? next;
 
-  const ListKmsIssuersResponsePagination(
-      {required this.count, required this.next});
+  const ListKmsIssuersResponsePagination({required this.count, required this.next});
 
-  ListKmsIssuersResponsePagination Function({double count, String? next})
-      get copyWith => _copyWith;
+  ListKmsIssuersResponsePagination Function({double count, String? next}) get copyWith => _copyWith;
 
-  ListKmsIssuersResponsePagination _copyWith(
-          {Object? count = sdkOmittedValue, Object? next = sdkOmittedValue}) =>
-      ListKmsIssuersResponsePagination(
-        count: identical(count, sdkOmittedValue) ? this.count : count as double,
-        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-      );
+  ListKmsIssuersResponsePagination _copyWith({Object? count = sdkOmittedValue, Object? next = sdkOmittedValue}) => ListKmsIssuersResponsePagination(
+    count: identical(count, sdkOmittedValue) ? this.count : count as double,
+    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+  );
 
-  factory ListKmsIssuersResponsePagination.fromJson(
-          Map<String, dynamic> json) =>
-      ListKmsIssuersResponsePagination(
-        count: ((json['count'] as num?)?.toDouble())!,
-        next: json.containsKey('next')
-            ? json['next'] as String?
-            : throw ArgumentError.value(
-                null, 'next', 'Required property is missing'),
-      );
+  factory ListKmsIssuersResponsePagination.fromJson(Map<String, dynamic> json) => ListKmsIssuersResponsePagination(
+    count: ((json['count'] as num?)?.toDouble())!,
+    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-        'next': next,
-      };
+    'count': count,
+    'next': next,
+  };
 }
 
 class ListKmsIssuersResponse {
@@ -192,169 +104,87 @@ class ListKmsIssuersResponse {
   final List<ListKmsIssuersResponseIssuersItem> issuers;
   final ListKmsIssuersResponsePagination pagination;
 
-  const ListKmsIssuersResponse(
-      {required this.issuers, required this.pagination});
+  const ListKmsIssuersResponse({required this.issuers, required this.pagination});
 
-  ListKmsIssuersResponse Function(
-      {List<ListKmsIssuersResponseIssuersItem> issuers,
-      ListKmsIssuersResponsePagination pagination}) get copyWith => _copyWith;
+  ListKmsIssuersResponse Function({List<ListKmsIssuersResponseIssuersItem> issuers, ListKmsIssuersResponsePagination pagination}) get copyWith => _copyWith;
 
-  ListKmsIssuersResponse _copyWith(
-          {Object? issuers = sdkOmittedValue,
-          Object? pagination = sdkOmittedValue}) =>
-      ListKmsIssuersResponse(
-        issuers: identical(issuers, sdkOmittedValue)
-            ? this.issuers
-            : issuers as List<ListKmsIssuersResponseIssuersItem>,
-        pagination: identical(pagination, sdkOmittedValue)
-            ? this.pagination
-            : pagination as ListKmsIssuersResponsePagination,
-      );
+  ListKmsIssuersResponse _copyWith({Object? issuers = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListKmsIssuersResponse(
+    issuers: identical(issuers, sdkOmittedValue) ? this.issuers : issuers as List<ListKmsIssuersResponseIssuersItem>,
+    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListKmsIssuersResponsePagination,
+  );
 
-  factory ListKmsIssuersResponse.fromJson(Map<String, dynamic> json) =>
-      ListKmsIssuersResponse(
-        issuers: ((json['issuers'] as List?)
-            ?.map((e) => ListKmsIssuersResponseIssuersItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-        pagination: (json['pagination'] != null
-            ? ListKmsIssuersResponsePagination.fromJson(
-                json['pagination'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory ListKmsIssuersResponse.fromJson(Map<String, dynamic> json) => ListKmsIssuersResponse(
+    issuers: ((json['issuers'] as List?)?.map((e) => ListKmsIssuersResponseIssuersItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    pagination: (json['pagination'] != null ? ListKmsIssuersResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'issuers': issuers.map((item) => item.toJson()).toList(),
-        'pagination': pagination.toJson(),
-      };
+    'issuers': issuers.map((item) => item.toJson()).toList(),
+    'pagination': pagination.toJson(),
+  };
 }
 
 class CreateKmsIssuerRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The name of the issuer.
   final String name;
-
   /// The signing algorithm to use for the issuer.
   final SdkOptional<CreateKmsIssuerRequestBodyAlgorithm> algorithm;
-
   /// A JSON Schema used to validate the resolved token claims when signing tokens for this issuer.
   final SdkOptional<Map<String, Object?>> claimsSchema;
-
   /// Typed representation of the `CreateKmsIssuerRequestPolicy` API schema.
   final SdkOptional<CreateKmsIssuerRequestPolicy> policy;
-
   /// The PEM-encoded private key to use for the issuer.
   final SdkOptional<String> importKey;
-
   /// The key id to use as the imported key's JWT/JWKS `kid`. Only allowed when `importKey` is provided. Not required to be unique; the addressable key id is the server-minted `keyId` returned in the response.
   final SdkOptional<String> importKeyId;
 
-  const CreateKmsIssuerRequestBody(
-      {required this.name,
-      this.algorithm = const SdkOmitted(),
-      this.claimsSchema = const SdkOmitted(),
-      this.policy = const SdkOmitted(),
-      this.importKey = const SdkOmitted(),
-      this.importKeyId = const SdkOmitted()});
+  const CreateKmsIssuerRequestBody({required this.name, this.algorithm = const SdkOmitted(), this.claimsSchema = const SdkOmitted(), this.policy = const SdkOmitted(), this.importKey = const SdkOmitted(), this.importKeyId = const SdkOmitted()});
 
-  CreateKmsIssuerRequestBody Function(
-      {String name,
-      SdkOptional<CreateKmsIssuerRequestBodyAlgorithm> algorithm,
-      SdkOptional<Map<String, Object?>> claimsSchema,
-      SdkOptional<CreateKmsIssuerRequestPolicy> policy,
-      SdkOptional<String> importKey,
-      SdkOptional<String> importKeyId}) get copyWith => _copyWith;
+  CreateKmsIssuerRequestBody Function({String name, SdkOptional<CreateKmsIssuerRequestBodyAlgorithm> algorithm, SdkOptional<Map<String, Object?>> claimsSchema, SdkOptional<CreateKmsIssuerRequestPolicy> policy, SdkOptional<String> importKey, SdkOptional<String> importKeyId}) get copyWith => _copyWith;
 
-  CreateKmsIssuerRequestBody _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? algorithm = sdkOmittedValue,
-          Object? claimsSchema = sdkOmittedValue,
-          Object? policy = sdkOmittedValue,
-          Object? importKey = sdkOmittedValue,
-          Object? importKeyId = sdkOmittedValue}) =>
-      CreateKmsIssuerRequestBody(
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        algorithm: identical(algorithm, sdkOmittedValue)
-            ? this.algorithm
-            : algorithm as SdkOptional<CreateKmsIssuerRequestBodyAlgorithm>,
-        claimsSchema: identical(claimsSchema, sdkOmittedValue)
-            ? this.claimsSchema
-            : claimsSchema as SdkOptional<Map<String, Object?>>,
-        policy: identical(policy, sdkOmittedValue)
-            ? this.policy
-            : policy as SdkOptional<CreateKmsIssuerRequestPolicy>,
-        importKey: identical(importKey, sdkOmittedValue)
-            ? this.importKey
-            : importKey as SdkOptional<String>,
-        importKeyId: identical(importKeyId, sdkOmittedValue)
-            ? this.importKeyId
-            : importKeyId as SdkOptional<String>,
-      );
+  CreateKmsIssuerRequestBody _copyWith({Object? name = sdkOmittedValue, Object? algorithm = sdkOmittedValue, Object? claimsSchema = sdkOmittedValue, Object? policy = sdkOmittedValue, Object? importKey = sdkOmittedValue, Object? importKeyId = sdkOmittedValue}) => CreateKmsIssuerRequestBody(
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    algorithm: identical(algorithm, sdkOmittedValue) ? this.algorithm : algorithm as SdkOptional<CreateKmsIssuerRequestBodyAlgorithm>,
+    claimsSchema: identical(claimsSchema, sdkOmittedValue) ? this.claimsSchema : claimsSchema as SdkOptional<Map<String, Object?>>,
+    policy: identical(policy, sdkOmittedValue) ? this.policy : policy as SdkOptional<CreateKmsIssuerRequestPolicy>,
+    importKey: identical(importKey, sdkOmittedValue) ? this.importKey : importKey as SdkOptional<String>,
+    importKeyId: identical(importKeyId, sdkOmittedValue) ? this.importKeyId : importKeyId as SdkOptional<String>,
+  );
 
-  factory CreateKmsIssuerRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateKmsIssuerRequestBody(
-        name: (json['name'] as String?)!,
-        algorithm: json['algorithm'] != null
-            ? SdkPresent((json['algorithm'] != null
-                ? CreateKmsIssuerRequestBodyAlgorithm.fromJson(
-                    json['algorithm'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        claimsSchema: json['claimsSchema'] != null
-            ? SdkPresent((json['claimsSchema'] == null
-                ? null
-                : Map<String, dynamic>.from(json['claimsSchema'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        policy: json['policy'] != null
-            ? SdkPresent((json['policy'] != null
-                ? CreateKmsIssuerRequestPolicy.fromJson(json['policy'])
-                : null)!)
-            : const SdkOmitted(),
-        importKey: json['importKey'] != null
-            ? SdkPresent((json['importKey'] as String?)!)
-            : const SdkOmitted(),
-        importKeyId: json['importKeyId'] != null
-            ? SdkPresent((json['importKeyId'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateKmsIssuerRequestBody.fromJson(Map<String, dynamic> json) => CreateKmsIssuerRequestBody(
+    name: (json['name'] as String?)!,
+    algorithm: json['algorithm'] != null ? SdkPresent((json['algorithm'] != null ? CreateKmsIssuerRequestBodyAlgorithm.fromJson(json['algorithm'] as String) : null)!) : const SdkOmitted(),
+    claimsSchema: json['claimsSchema'] != null ? SdkPresent((json['claimsSchema'] == null ? null : Map<String, dynamic>.from(json['claimsSchema'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    policy: json['policy'] != null ? SdkPresent((json['policy'] != null ? CreateKmsIssuerRequestPolicy.fromJson(json['policy']) : null)!) : const SdkOmitted(),
+    importKey: json['importKey'] != null ? SdkPresent((json['importKey'] as String?)!) : const SdkOmitted(),
+    importKeyId: json['importKeyId'] != null ? SdkPresent((json['importKeyId'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        ...switch (algorithm) {
-          SdkPresent<CreateKmsIssuerRequestBodyAlgorithm>(value: final value) =>
-            {
-              'algorithm': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (claimsSchema) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'claimsSchema': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (policy) {
-          SdkPresent<CreateKmsIssuerRequestPolicy>(value: final value) => {
-              'policy': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (importKey) {
-          SdkPresent<String>(value: final value) => {
-              'importKey': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (importKeyId) {
-          SdkPresent<String>(value: final value) => {
-              'importKeyId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'name': name,
+    ...switch (algorithm) {
+      SdkPresent<CreateKmsIssuerRequestBodyAlgorithm>(value: final value) => {'algorithm': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (claimsSchema) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'claimsSchema': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (policy) {
+      SdkPresent<CreateKmsIssuerRequestPolicy>(value: final value) => {'policy': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (importKey) {
+      SdkPresent<String>(value: final value) => {'importKey': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (importKeyId) {
+      SdkPresent<String>(value: final value) => {'importKeyId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateKmsIssuerResponseSigningKeysItemPublicKey {
@@ -365,133 +195,63 @@ class CreateKmsIssuerResponseSigningKeysItemPublicKey {
   final SdkOptional<String> kid;
   final SdkOptional<String> kty;
   final SdkOptional<String> use;
-
   /// The X.509 certificate chain (RFC 7517 §4.7). Each entry is the base64 DER (not base64url) of a certificate. For keys minted with a stored certificate this holds the single self-signed cert as `[x5c]`.
   final SdkOptional<List<String>> x5c;
-
   /// The base64url SHA-256 thumbprint of the DER certificate in `x5c[0]` (RFC 7517 §4.9).
   final SdkOptional<String> x5tS256;
 
-  const CreateKmsIssuerResponseSigningKeysItemPublicKey(
-      {this.alg = const SdkOmitted(),
-      this.keyOps = const SdkOmitted(),
-      this.kid = const SdkOmitted(),
-      this.kty = const SdkOmitted(),
-      this.use = const SdkOmitted(),
-      this.x5c = const SdkOmitted(),
-      this.x5tS256 = const SdkOmitted()});
+  const CreateKmsIssuerResponseSigningKeysItemPublicKey({this.alg = const SdkOmitted(), this.keyOps = const SdkOmitted(), this.kid = const SdkOmitted(), this.kty = const SdkOmitted(), this.use = const SdkOmitted(), this.x5c = const SdkOmitted(), this.x5tS256 = const SdkOmitted()});
 
-  CreateKmsIssuerResponseSigningKeysItemPublicKey Function(
-      {SdkOptional<String> alg,
-      SdkOptional<List<String>> keyOps,
-      SdkOptional<String> kid,
-      SdkOptional<String> kty,
-      SdkOptional<String> use,
-      SdkOptional<List<String>> x5c,
-      SdkOptional<String> x5tS256}) get copyWith => _copyWith;
+  CreateKmsIssuerResponseSigningKeysItemPublicKey Function({SdkOptional<String> alg, SdkOptional<List<String>> keyOps, SdkOptional<String> kid, SdkOptional<String> kty, SdkOptional<String> use, SdkOptional<List<String>> x5c, SdkOptional<String> x5tS256}) get copyWith => _copyWith;
 
-  CreateKmsIssuerResponseSigningKeysItemPublicKey _copyWith(
-          {Object? alg = sdkOmittedValue,
-          Object? keyOps = sdkOmittedValue,
-          Object? kid = sdkOmittedValue,
-          Object? kty = sdkOmittedValue,
-          Object? use = sdkOmittedValue,
-          Object? x5c = sdkOmittedValue,
-          Object? x5tS256 = sdkOmittedValue}) =>
-      CreateKmsIssuerResponseSigningKeysItemPublicKey(
-        alg: identical(alg, sdkOmittedValue)
-            ? this.alg
-            : alg as SdkOptional<String>,
-        keyOps: identical(keyOps, sdkOmittedValue)
-            ? this.keyOps
-            : keyOps as SdkOptional<List<String>>,
-        kid: identical(kid, sdkOmittedValue)
-            ? this.kid
-            : kid as SdkOptional<String>,
-        kty: identical(kty, sdkOmittedValue)
-            ? this.kty
-            : kty as SdkOptional<String>,
-        use: identical(use, sdkOmittedValue)
-            ? this.use
-            : use as SdkOptional<String>,
-        x5c: identical(x5c, sdkOmittedValue)
-            ? this.x5c
-            : x5c as SdkOptional<List<String>>,
-        x5tS256: identical(x5tS256, sdkOmittedValue)
-            ? this.x5tS256
-            : x5tS256 as SdkOptional<String>,
-      );
+  CreateKmsIssuerResponseSigningKeysItemPublicKey _copyWith({Object? alg = sdkOmittedValue, Object? keyOps = sdkOmittedValue, Object? kid = sdkOmittedValue, Object? kty = sdkOmittedValue, Object? use = sdkOmittedValue, Object? x5c = sdkOmittedValue, Object? x5tS256 = sdkOmittedValue}) => CreateKmsIssuerResponseSigningKeysItemPublicKey(
+    alg: identical(alg, sdkOmittedValue) ? this.alg : alg as SdkOptional<String>,
+    keyOps: identical(keyOps, sdkOmittedValue) ? this.keyOps : keyOps as SdkOptional<List<String>>,
+    kid: identical(kid, sdkOmittedValue) ? this.kid : kid as SdkOptional<String>,
+    kty: identical(kty, sdkOmittedValue) ? this.kty : kty as SdkOptional<String>,
+    use: identical(use, sdkOmittedValue) ? this.use : use as SdkOptional<String>,
+    x5c: identical(x5c, sdkOmittedValue) ? this.x5c : x5c as SdkOptional<List<String>>,
+    x5tS256: identical(x5tS256, sdkOmittedValue) ? this.x5tS256 : x5tS256 as SdkOptional<String>,
+  );
 
-  factory CreateKmsIssuerResponseSigningKeysItemPublicKey.fromJson(
-          Map<String, dynamic> json) =>
-      CreateKmsIssuerResponseSigningKeysItemPublicKey(
-        alg: json['alg'] != null
-            ? SdkPresent((json['alg'] as String?)!)
-            : const SdkOmitted(),
-        keyOps: json['key_ops'] != null
-            ? SdkPresent(
-                ((json['key_ops'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        kid: json['kid'] != null
-            ? SdkPresent((json['kid'] as String?)!)
-            : const SdkOmitted(),
-        kty: json['kty'] != null
-            ? SdkPresent((json['kty'] as String?)!)
-            : const SdkOmitted(),
-        use: json['use'] != null
-            ? SdkPresent((json['use'] as String?)!)
-            : const SdkOmitted(),
-        x5c: json['x5c'] != null
-            ? SdkPresent(
-                ((json['x5c'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        x5tS256: json['x5t#S256'] != null
-            ? SdkPresent((json['x5t#S256'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateKmsIssuerResponseSigningKeysItemPublicKey.fromJson(Map<String, dynamic> json) => CreateKmsIssuerResponseSigningKeysItemPublicKey(
+    alg: json['alg'] != null ? SdkPresent((json['alg'] as String?)!) : const SdkOmitted(),
+    keyOps: json['key_ops'] != null ? SdkPresent(((json['key_ops'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    kid: json['kid'] != null ? SdkPresent((json['kid'] as String?)!) : const SdkOmitted(),
+    kty: json['kty'] != null ? SdkPresent((json['kty'] as String?)!) : const SdkOmitted(),
+    use: json['use'] != null ? SdkPresent((json['use'] as String?)!) : const SdkOmitted(),
+    x5c: json['x5c'] != null ? SdkPresent(((json['x5c'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    x5tS256: json['x5t#S256'] != null ? SdkPresent((json['x5t#S256'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (alg) {
-          SdkPresent<String>(value: final value) => {
-              'alg': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (keyOps) {
-          SdkPresent<List<String>>(value: final value) => {
-              'key_ops': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (kid) {
-          SdkPresent<String>(value: final value) => {
-              'kid': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (kty) {
-          SdkPresent<String>(value: final value) => {
-              'kty': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (use) {
-          SdkPresent<String>(value: final value) => {
-              'use': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (x5c) {
-          SdkPresent<List<String>>(value: final value) => {
-              'x5c': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (x5tS256) {
-          SdkPresent<String>(value: final value) => {
-              'x5t#S256': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (alg) {
+      SdkPresent<String>(value: final value) => {'alg': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (keyOps) {
+      SdkPresent<List<String>>(value: final value) => {'key_ops': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (kid) {
+      SdkPresent<String>(value: final value) => {'kid': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (kty) {
+      SdkPresent<String>(value: final value) => {'kty': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (use) {
+      SdkPresent<String>(value: final value) => {'use': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (x5c) {
+      SdkPresent<List<String>>(value: final value) => {'x5c': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (x5tS256) {
+      SdkPresent<String>(value: final value) => {'x5t#S256': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

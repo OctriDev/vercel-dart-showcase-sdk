@@ -5,96 +5,82 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CancelDeploymentResponseProjectSettingsWebAnalyticsHasData {
+
   final bool value;
 
-  const CancelDeploymentResponseProjectSettingsWebAnalyticsHasData._(
-      this.value);
+  const CancelDeploymentResponseProjectSettingsWebAnalyticsHasData._(this.value);
 
-  factory CancelDeploymentResponseProjectSettingsWebAnalyticsHasData.fromJson(
-          bool value) =>
-      CancelDeploymentResponseProjectSettingsWebAnalyticsHasData._(value);
+  factory CancelDeploymentResponseProjectSettingsWebAnalyticsHasData.fromJson(bool value) => CancelDeploymentResponseProjectSettingsWebAnalyticsHasData._(value);
 
-  static const true_ =
-      CancelDeploymentResponseProjectSettingsWebAnalyticsHasData._(true);
+  static const true_ = CancelDeploymentResponseProjectSettingsWebAnalyticsHasData._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseProjectSettingsWebAnalyticsHasData &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseProjectSettingsWebAnalyticsHasData && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// A boolean representing if the deployment is public or not. By default this is `false`
 final class CancelDeploymentResponsePublic {
+
   final bool value;
 
   const CancelDeploymentResponsePublic._(this.value);
 
-  factory CancelDeploymentResponsePublic.fromJson(bool value) =>
-      CancelDeploymentResponsePublic._(value);
+  factory CancelDeploymentResponsePublic.fromJson(bool value) => CancelDeploymentResponsePublic._(value);
 
   static const false_ = CancelDeploymentResponsePublic._(false);
   static const true_ = CancelDeploymentResponsePublic._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponsePublic && other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponsePublic && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state
 final class CancelDeploymentResponseReadyState {
+
   final String value;
 
   const CancelDeploymentResponseReadyState._(this.value);
 
-  factory CancelDeploymentResponseReadyState.fromJson(String value) =>
-      CancelDeploymentResponseReadyState._(value);
+  factory CancelDeploymentResponseReadyState.fromJson(String value) => CancelDeploymentResponseReadyState._(value);
 
   static const blocked = CancelDeploymentResponseReadyState._('BLOCKED');
   static const building = CancelDeploymentResponseReadyState._('BUILDING');
   static const canceled = CancelDeploymentResponseReadyState._('CANCELED');
   static const error = CancelDeploymentResponseReadyState._('ERROR');
-  static const initializing =
-      CancelDeploymentResponseReadyState._('INITIALIZING');
+  static const initializing = CancelDeploymentResponseReadyState._('INITIALIZING');
   static const queued = CancelDeploymentResponseReadyState._('QUEUED');
   static const ready = CancelDeploymentResponseReadyState._('READY');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseReadyState && other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseReadyState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of having production traffic gradually transitioned. - PROMOTED: has seen production traffic
 final class CancelDeploymentResponseReadySubstate {
+
   final String value;
 
   const CancelDeploymentResponseReadySubstate._(this.value);
 
-  factory CancelDeploymentResponseReadySubstate.fromJson(String value) =>
-      CancelDeploymentResponseReadySubstate._(value);
+  factory CancelDeploymentResponseReadySubstate.fromJson(String value) => CancelDeploymentResponseReadySubstate._(value);
 
   static const promoted = CancelDeploymentResponseReadySubstate._('PROMOTED');
   static const rolling = CancelDeploymentResponseReadySubstate._('ROLLING');
@@ -102,279 +88,195 @@ final class CancelDeploymentResponseReadySubstate {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseReadySubstate && other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseReadySubstate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type.
 final class CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType {
+
   final String value;
 
-  const CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(
-      this.value);
+  const CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(this.value);
 
-  factory CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.fromJson(
-          String value) =>
-      CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(
-          value);
+  factory CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.fromJson(String value) => CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(value);
 
-  static const basic =
-      CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(
-          'basic');
-  static const enhanced =
-      CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(
-          'enhanced');
-  static const none =
-      CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(
-          'none');
-  static const standard =
-      CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._(
-          'standard');
+  static const basic = CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._('basic');
+  static const enhanced = CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._('enhanced');
+  static const none = CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._('none');
+  static const standard = CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType._('standard');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the build ran on a fixed or elastic machine. Used to drive billing for the build.
 final class CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType {
+
   final String value;
 
-  const CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._(
-      this.value);
+  const CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._(this.value);
 
-  factory CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType.fromJson(
-          String value) =>
-      CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._(
-          value);
+  factory CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType.fromJson(String value) => CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._(value);
 
-  static const elastic =
-      CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._(
-          'elastic');
-  static const fixed =
-      CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._(
-          'fixed');
+  static const elastic = CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._('elastic');
+  static const fixed = CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType._('fixed');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project.
 final class CancelDeploymentResponseResourceConfigBuildMachinePurchaseType {
+
   final String value;
 
-  const CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._(
-      this.value);
+  const CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._(this.value);
 
-  factory CancelDeploymentResponseResourceConfigBuildMachinePurchaseType.fromJson(
-          String value) =>
-      CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._(value);
+  factory CancelDeploymentResponseResourceConfigBuildMachinePurchaseType.fromJson(String value) => CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._(value);
 
-  static const basic =
-      CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._('basic');
-  static const enhanced =
-      CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._(
-          'enhanced');
-  static const standard =
-      CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._(
-          'standard');
-  static const turbo =
-      CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._('turbo');
+  static const basic = CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._('basic');
+  static const enhanced = CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._('enhanced');
+  static const standard = CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._('standard');
+  static const turbo = CancelDeploymentResponseResourceConfigBuildMachinePurchaseType._('turbo');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseResourceConfigBuildMachinePurchaseType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseResourceConfigBuildMachinePurchaseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history.
 final class CancelDeploymentResponseResourceConfigBuildMachineSelectionSource {
+
   final String value;
 
-  const CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-      this.value);
+  const CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(this.value);
 
-  factory CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.fromJson(
-          String value) =>
-      CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-          value);
+  factory CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.fromJson(String value) => CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(value);
 
-  static const deploymentOverride =
-      CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-          'deployment-override');
-  static const elasticAlgorithm =
-      CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-          'elastic-algorithm');
-  static const planDefault =
-      CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-          'plan-default');
-  static const projectSetting =
-      CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-          'project-setting');
-  static const teamEntitlement =
-      CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-          'team-entitlement');
-  static const teamSetting =
-      CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._(
-          'team-setting');
+  static const deploymentOverride = CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._('deployment-override');
+  static const elasticAlgorithm = CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._('elastic-algorithm');
+  static const planDefault = CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._('plan-default');
+  static const projectSetting = CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._('project-setting');
+  static const teamEntitlement = CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._('team-entitlement');
+  static const teamSetting = CancelDeploymentResponseResourceConfigBuildMachineSelectionSource._('team-setting');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseResourceConfigBuildMachineSelectionSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseResourceConfigBuildMachineSelectionSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The NSNB decision code for the seat block. TODO: We should consolidate block types.
 final class CancelDeploymentResponseSeatBlockBlockCode {
+
   final String value;
 
   const CancelDeploymentResponseSeatBlockBlockCode._(this.value);
 
-  factory CancelDeploymentResponseSeatBlockBlockCode.fromJson(String value) =>
-      CancelDeploymentResponseSeatBlockBlockCode._(value);
+  factory CancelDeploymentResponseSeatBlockBlockCode.fromJson(String value) => CancelDeploymentResponseSeatBlockBlockCode._(value);
 
-  static const commitAuthorRequired =
-      CancelDeploymentResponseSeatBlockBlockCode._('COMMIT_AUTHOR_REQUIRED');
-  static const teamAccessRequired =
-      CancelDeploymentResponseSeatBlockBlockCode._('TEAM_ACCESS_REQUIRED');
+  static const commitAuthorRequired = CancelDeploymentResponseSeatBlockBlockCode._('COMMIT_AUTHOR_REQUIRED');
+  static const teamAccessRequired = CancelDeploymentResponseSeatBlockBlockCode._('TEAM_ACCESS_REQUIRED');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseSeatBlockBlockCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseSeatBlockBlockCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The git provider type associated with gitUserId.
 final class CancelDeploymentResponseSeatBlockGitProvider {
+
   final String value;
 
   const CancelDeploymentResponseSeatBlockGitProvider._(this.value);
 
-  factory CancelDeploymentResponseSeatBlockGitProvider.fromJson(String value) =>
-      CancelDeploymentResponseSeatBlockGitProvider._(value);
+  factory CancelDeploymentResponseSeatBlockGitProvider.fromJson(String value) => CancelDeploymentResponseSeatBlockGitProvider._(value);
 
-  static const bitbucket =
-      CancelDeploymentResponseSeatBlockGitProvider._('bitbucket');
-  static const github =
-      CancelDeploymentResponseSeatBlockGitProvider._('github');
-  static const gitlab =
-      CancelDeploymentResponseSeatBlockGitProvider._('gitlab');
+  static const bitbucket = CancelDeploymentResponseSeatBlockGitProvider._('bitbucket');
+  static const github = CancelDeploymentResponseSeatBlockGitProvider._('github');
+  static const gitlab = CancelDeploymentResponseSeatBlockGitProvider._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseSeatBlockGitProvider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseSeatBlockGitProvider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Determines if the user was verified during the block. In the git integration case, the commit sender was the author.
 final class CancelDeploymentResponseSeatBlockIsVerified {
+
   final bool value;
 
   const CancelDeploymentResponseSeatBlockIsVerified._(this.value);
 
-  factory CancelDeploymentResponseSeatBlockIsVerified.fromJson(bool value) =>
-      CancelDeploymentResponseSeatBlockIsVerified._(value);
+  factory CancelDeploymentResponseSeatBlockIsVerified.fromJson(bool value) => CancelDeploymentResponseSeatBlockIsVerified._(value);
 
   static const false_ = CancelDeploymentResponseSeatBlockIsVerified._(false);
   static const true_ = CancelDeploymentResponseSeatBlockIsVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseSeatBlockIsVerified &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseSeatBlockIsVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// flag to indicate if the deployment was deleted by retention policy
 final class CancelDeploymentResponseSoftDeletedByRetention {
+
   final bool value;
 
   const CancelDeploymentResponseSoftDeletedByRetention._(this.value);
 
-  factory CancelDeploymentResponseSoftDeletedByRetention.fromJson(bool value) =>
-      CancelDeploymentResponseSoftDeletedByRetention._(value);
+  factory CancelDeploymentResponseSoftDeletedByRetention.fromJson(bool value) => CancelDeploymentResponseSoftDeletedByRetention._(value);
 
   static const false_ = CancelDeploymentResponseSoftDeletedByRetention._(false);
   static const true_ = CancelDeploymentResponseSoftDeletedByRetention._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseSoftDeletedByRetention &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseSoftDeletedByRetention && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

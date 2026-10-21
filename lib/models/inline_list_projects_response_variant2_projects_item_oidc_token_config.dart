@@ -7,81 +7,35 @@ part of 'inline.dart';
 class ListProjectsResponseVariant2ProjectsItemOidcTokenConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether or not to generate OpenID Connect JSON Web Tokens.
-  final SdkOptional<
-      ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled> enabled;
-
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled> enabled;
   /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
-  final SdkOptional<
-          ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode>
-      issuerMode;
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode> issuerMode;
 
-  const ListProjectsResponseVariant2ProjectsItemOidcTokenConfig(
-      {this.enabled = const SdkOmitted(),
-      this.issuerMode = const SdkOmitted()});
+  const ListProjectsResponseVariant2ProjectsItemOidcTokenConfig({this.enabled = const SdkOmitted(), this.issuerMode = const SdkOmitted()});
 
-  ListProjectsResponseVariant2ProjectsItemOidcTokenConfig Function(
-      {SdkOptional<
-              ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled>
-          enabled,
-      SdkOptional<
-              ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode>
-          issuerMode}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemOidcTokenConfig Function({SdkOptional<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled> enabled, SdkOptional<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode> issuerMode}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemOidcTokenConfig _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? issuerMode = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemOidcTokenConfig(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled>,
-        issuerMode: identical(issuerMode, sdkOmittedValue)
-            ? this.issuerMode
-            : issuerMode as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode>,
-      );
+  ListProjectsResponseVariant2ProjectsItemOidcTokenConfig _copyWith({Object? enabled = sdkOmittedValue, Object? issuerMode = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemOidcTokenConfig(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled>,
+    issuerMode: identical(issuerMode, sdkOmittedValue) ? this.issuerMode : issuerMode as SdkOptional<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemOidcTokenConfig.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemOidcTokenConfig(
-        enabled: json['enabled'] != null
-            ? SdkPresent((json['enabled'] != null
-                ? ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled
-                    .fromJson(json['enabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        issuerMode: json['issuerMode'] != null
-            ? SdkPresent((json['issuerMode'] != null
-                ? ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode
-                    .fromJson(json['issuerMode'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant2ProjectsItemOidcTokenConfig.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemOidcTokenConfig(
+    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
+    issuerMode: json['issuerMode'] != null ? SdkPresent((json['issuerMode'] != null ? ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode.fromJson(json['issuerMode'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enabled) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled>(
-            value: final value
-          ) =>
-            {
-              'enabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (issuerMode) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode>(
-            value: final value
-          ) =>
-            {
-              'issuerMode': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enabled) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled>(value: final value) => {'enabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (issuerMode) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode>(value: final value) => {'issuerMode': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem {
@@ -89,143 +43,90 @@ class ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem {
   static const String constructionSurface = 'named';
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem(
-      {required this.value});
+  const ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem({required this.value});
 
-  ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem Function(
-      {String value}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem Function({String value}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem _copyWith(
-          {Object? value = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem(
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-      );
+  ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem _copyWith({Object? value = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem(
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem(
-        value: (json['value'] as String?)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem(
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'value': value,
-      };
+    'value': value,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemOptionsAllowlist {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem>
-      paths;
+  final List<ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem> paths;
 
-  const ListProjectsResponseVariant2ProjectsItemOptionsAllowlist(
-      {required this.paths});
+  const ListProjectsResponseVariant2ProjectsItemOptionsAllowlist({required this.paths});
 
-  ListProjectsResponseVariant2ProjectsItemOptionsAllowlist Function(
-      {List<ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem>
-          paths}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemOptionsAllowlist Function({List<ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem> paths}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemOptionsAllowlist _copyWith(
-          {Object? paths = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemOptionsAllowlist(
-        paths: identical(paths, sdkOmittedValue)
-            ? this.paths
-            : paths as List<
-                ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem>,
-      );
+  ListProjectsResponseVariant2ProjectsItemOptionsAllowlist _copyWith({Object? paths = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemOptionsAllowlist(
+    paths: identical(paths, sdkOmittedValue) ? this.paths : paths as List<ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemOptionsAllowlist.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemOptionsAllowlist(
-        paths: ((json['paths'] as List?)
-            ?.map((e) =>
-                ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemOptionsAllowlist.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemOptionsAllowlist(
+    paths: ((json['paths'] as List?)?.map((e) => ListProjectsResponseVariant2ProjectsItemOptionsAllowlistPathsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'paths': paths.map((item) => item.toJson()).toList(),
-      };
+    'paths': paths.map((item) => item.toJson()).toList(),
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String connectorId;
-  final ListProjectsResponseVariant2ProjectsItemPassportDeploymentType
-      deploymentType;
+  final ListProjectsResponseVariant2ProjectsItemPassportDeploymentType deploymentType;
 
-  const ListProjectsResponseVariant2ProjectsItemPassport(
-      {required this.connectorId, required this.deploymentType});
+  const ListProjectsResponseVariant2ProjectsItemPassport({required this.connectorId, required this.deploymentType});
 
-  ListProjectsResponseVariant2ProjectsItemPassport Function(
-      {String connectorId,
-      ListProjectsResponseVariant2ProjectsItemPassportDeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemPassport Function({String connectorId, ListProjectsResponseVariant2ProjectsItemPassportDeploymentType deploymentType}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemPassport _copyWith(
-          {Object? connectorId = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemPassport(
-        connectorId: identical(connectorId, sdkOmittedValue)
-            ? this.connectorId
-            : connectorId as String,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as ListProjectsResponseVariant2ProjectsItemPassportDeploymentType,
-      );
+  ListProjectsResponseVariant2ProjectsItemPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemPassport(
+    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as ListProjectsResponseVariant2ProjectsItemPassportDeploymentType,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemPassport.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemPassport(
-        connectorId: (json['connectorId'] as String?)!,
-        deploymentType: (json['deploymentType'] != null
-            ? ListProjectsResponseVariant2ProjectsItemPassportDeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemPassport.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemPassport(
+    connectorId: (json['connectorId'] as String?)!,
+    deploymentType: (json['deploymentType'] != null ? ListProjectsResponseVariant2ProjectsItemPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectorId': connectorId,
-        'deploymentType': deploymentType.toJson(),
-      };
+    'connectorId': connectorId,
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 /// Password protection settings returned without the secret password hash.
 class ListProjectsResponseVariant2ProjectsItemPasswordProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType
-      deploymentType;
+  final ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType deploymentType;
 
-  const ListProjectsResponseVariant2ProjectsItemPasswordProtection(
-      {required this.deploymentType});
+  const ListProjectsResponseVariant2ProjectsItemPasswordProtection({required this.deploymentType});
 
-  ListProjectsResponseVariant2ProjectsItemPasswordProtection Function(
-      {ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemPasswordProtection Function({ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemPasswordProtection _copyWith(
-          {Object? deploymentType = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemPasswordProtection(
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType,
-      );
+  ListProjectsResponseVariant2ProjectsItemPasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemPasswordProtection(
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemPasswordProtection.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemPasswordProtection(
-        deploymentType: (json['deploymentType'] != null
-            ? ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemPasswordProtection.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemPasswordProtection(
+    deploymentType: (json['deploymentType'] != null ? ListProjectsResponseVariant2ProjectsItemPasswordProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'deploymentType': deploymentType.toJson(),
-      };
+    'deploymentType': deploymentType.toJson(),
+  };
 }

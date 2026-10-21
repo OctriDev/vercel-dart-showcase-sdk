@@ -7,52 +7,34 @@ part of 'domains_registrar.dart';
 class SearchDomainsResponseResultsItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A valid domain name
   final String domain;
-
   /// `false` means the domain is unavailable or its availability could not be confirmed.
   final SearchDomainsResponseResultsItemVariant0Available available;
 
-  const SearchDomainsResponseResultsItemVariant0(
-      {required this.domain, required this.available});
+  const SearchDomainsResponseResultsItemVariant0({required this.domain, required this.available});
 
-  SearchDomainsResponseResultsItemVariant0 Function(
-          {String domain,
-          SearchDomainsResponseResultsItemVariant0Available available})
-      get copyWith => _copyWith;
+  SearchDomainsResponseResultsItemVariant0 Function({String domain, SearchDomainsResponseResultsItemVariant0Available available}) get copyWith => _copyWith;
 
-  SearchDomainsResponseResultsItemVariant0 _copyWith(
-          {Object? domain = sdkOmittedValue,
-          Object? available = sdkOmittedValue}) =>
-      SearchDomainsResponseResultsItemVariant0(
-        domain:
-            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-        available: identical(available, sdkOmittedValue)
-            ? this.available
-            : available as SearchDomainsResponseResultsItemVariant0Available,
-      );
+  SearchDomainsResponseResultsItemVariant0 _copyWith({Object? domain = sdkOmittedValue, Object? available = sdkOmittedValue}) => SearchDomainsResponseResultsItemVariant0(
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    available: identical(available, sdkOmittedValue) ? this.available : available as SearchDomainsResponseResultsItemVariant0Available,
+  );
 
-  factory SearchDomainsResponseResultsItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      SearchDomainsResponseResultsItemVariant0(
-        domain: (json['domain'] as String?)!,
-        available: (json['available'] != null
-            ? SearchDomainsResponseResultsItemVariant0Available.fromJson(
-                json['available'] as bool)
-            : null)!,
-      );
+  factory SearchDomainsResponseResultsItemVariant0.fromJson(Map<String, dynamic> json) => SearchDomainsResponseResultsItemVariant0(
+    domain: (json['domain'] as String?)!,
+    available: (json['available'] != null ? SearchDomainsResponseResultsItemVariant0Available.fromJson(json['available'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'domain': domain,
-        'available': available.toJson(),
-      };
+    'domain': domain,
+    'available': available.toJson(),
+  };
 }
 
 class SearchDomainsResponseResultsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A valid domain name
   final String domain;
   final SearchDomainsResponseResultsItemVariant1Available available;
@@ -61,67 +43,36 @@ class SearchDomainsResponseResultsItemVariant1 {
   final double renewalPrice;
   final bool premium;
 
-  const SearchDomainsResponseResultsItemVariant1(
-      {required this.domain,
-      required this.available,
-      required this.years,
-      required this.price,
-      required this.renewalPrice,
-      required this.premium});
+  const SearchDomainsResponseResultsItemVariant1({required this.domain, required this.available, required this.years, required this.price, required this.renewalPrice, required this.premium});
 
-  SearchDomainsResponseResultsItemVariant1 Function(
-      {String domain,
-      SearchDomainsResponseResultsItemVariant1Available available,
-      double years,
-      double price,
-      double renewalPrice,
-      bool premium}) get copyWith => _copyWith;
+  SearchDomainsResponseResultsItemVariant1 Function({String domain, SearchDomainsResponseResultsItemVariant1Available available, double years, double price, double renewalPrice, bool premium}) get copyWith => _copyWith;
 
-  SearchDomainsResponseResultsItemVariant1 _copyWith(
-          {Object? domain = sdkOmittedValue,
-          Object? available = sdkOmittedValue,
-          Object? years = sdkOmittedValue,
-          Object? price = sdkOmittedValue,
-          Object? renewalPrice = sdkOmittedValue,
-          Object? premium = sdkOmittedValue}) =>
-      SearchDomainsResponseResultsItemVariant1(
-        domain:
-            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-        available: identical(available, sdkOmittedValue)
-            ? this.available
-            : available as SearchDomainsResponseResultsItemVariant1Available,
-        years: identical(years, sdkOmittedValue) ? this.years : years as double,
-        price: identical(price, sdkOmittedValue) ? this.price : price as double,
-        renewalPrice: identical(renewalPrice, sdkOmittedValue)
-            ? this.renewalPrice
-            : renewalPrice as double,
-        premium: identical(premium, sdkOmittedValue)
-            ? this.premium
-            : premium as bool,
-      );
+  SearchDomainsResponseResultsItemVariant1 _copyWith({Object? domain = sdkOmittedValue, Object? available = sdkOmittedValue, Object? years = sdkOmittedValue, Object? price = sdkOmittedValue, Object? renewalPrice = sdkOmittedValue, Object? premium = sdkOmittedValue}) => SearchDomainsResponseResultsItemVariant1(
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    available: identical(available, sdkOmittedValue) ? this.available : available as SearchDomainsResponseResultsItemVariant1Available,
+    years: identical(years, sdkOmittedValue) ? this.years : years as double,
+    price: identical(price, sdkOmittedValue) ? this.price : price as double,
+    renewalPrice: identical(renewalPrice, sdkOmittedValue) ? this.renewalPrice : renewalPrice as double,
+    premium: identical(premium, sdkOmittedValue) ? this.premium : premium as bool,
+  );
 
-  factory SearchDomainsResponseResultsItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      SearchDomainsResponseResultsItemVariant1(
-        domain: (json['domain'] as String?)!,
-        available: (json['available'] != null
-            ? SearchDomainsResponseResultsItemVariant1Available.fromJson(
-                json['available'] as bool)
-            : null)!,
-        years: ((json['years'] as num?)?.toDouble())!,
-        price: ((json['price'] as num?)?.toDouble())!,
-        renewalPrice: ((json['renewalPrice'] as num?)?.toDouble())!,
-        premium: (json['premium'] as bool?)!,
-      );
+  factory SearchDomainsResponseResultsItemVariant1.fromJson(Map<String, dynamic> json) => SearchDomainsResponseResultsItemVariant1(
+    domain: (json['domain'] as String?)!,
+    available: (json['available'] != null ? SearchDomainsResponseResultsItemVariant1Available.fromJson(json['available'] as bool) : null)!,
+    years: ((json['years'] as num?)?.toDouble())!,
+    price: ((json['price'] as num?)?.toDouble())!,
+    renewalPrice: ((json['renewalPrice'] as num?)?.toDouble())!,
+    premium: (json['premium'] as bool?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'domain': domain,
-        'available': available.toJson(),
-        'years': years,
-        'price': price,
-        'renewalPrice': renewalPrice,
-        'premium': premium,
-      };
+    'domain': domain,
+    'available': available.toJson(),
+    'years': years,
+    'price': price,
+    'renewalPrice': renewalPrice,
+    'premium': premium,
+  };
 }
 
 sealed class SearchDomainsResponseResultsItem {
@@ -130,51 +81,24 @@ sealed class SearchDomainsResponseResultsItem {
   const SearchDomainsResponseResultsItem();
   factory SearchDomainsResponseResultsItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = SearchDomainsResponseResultsItemVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = SearchDomainsResponseResultsItemVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = SearchDomainsResponseResultsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(value); } } catch (_) {}
+      try { final value = SearchDomainsResponseResultsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(value); } } catch (_) {}
     }
-    try {
-      return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(
-          SearchDomainsResponseResultsItemVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(
-          SearchDomainsResponseResultsItemVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for SearchDomainsResponseResultsItem");
+    try { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(SearchDomainsResponseResultsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(SearchDomainsResponseResultsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for SearchDomainsResponseResultsItem");
   }
   Object? toJson();
 }
 
-final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0
-    extends SearchDomainsResponseResultsItem {
+final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0 extends SearchDomainsResponseResultsItem {
   final SearchDomainsResponseResultsItemVariant0 value;
-  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1
-    extends SearchDomainsResponseResultsItem {
+final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1 extends SearchDomainsResponseResultsItem {
   final SearchDomainsResponseResultsItemVariant1 value;
-  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

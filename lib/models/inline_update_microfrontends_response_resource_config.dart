@@ -8,696 +8,269 @@ class UpdateMicrofrontendsResponseResourceConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> buildMachineElasticLastUpdated;
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason>
-      buildMachineElasticReason;
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition>
-      buildMachineElasticTransition;
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection>
-      buildMachineSelection;
-  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineType>
-      buildMachineType;
-  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildQueue>
-      buildQueue;
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled>
-      elasticConcurrencyEnabled;
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta>
-      enableFunctionsBeta;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason> buildMachineElasticReason;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition> buildMachineElasticTransition;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection> buildMachineSelection;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineType> buildMachineType;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildQueue> buildQueue;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta> enableFunctionsBeta;
   final SdkOptional<UpdateMicrofrontendsResponseResourceConfigFluid> fluid;
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType>
-      functionDefaultMemoryType;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType> functionDefaultMemoryType;
   final List<String> functionDefaultRegions;
   final SdkOptional<double> functionDefaultTimeout;
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover>
-      functionZeroConfigFailover;
-  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled>
-      isNsnbDisabled;
-
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover> functionZeroConfigFailover;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled> isNsnbDisabled;
   /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
-  final SdkOptional<
-          UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine>
-      elasticBuildMachine;
+  final SdkOptional<UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine> elasticBuildMachine;
 
-  const UpdateMicrofrontendsResponseResourceConfig(
-      {this.buildMachineElasticLastUpdated = const SdkOmitted(),
-      this.buildMachineElasticReason = const SdkOmitted(),
-      this.buildMachineElasticTransition = const SdkOmitted(),
-      this.buildMachineSelection = const SdkOmitted(),
-      this.buildMachineType = const SdkOmitted(),
-      this.buildQueue = const SdkOmitted(),
-      this.elasticConcurrencyEnabled = const SdkOmitted(),
-      this.enableFunctionsBeta = const SdkOmitted(),
-      this.fluid = const SdkOmitted(),
-      this.functionDefaultMemoryType = const SdkOmitted(),
-      required this.functionDefaultRegions,
-      this.functionDefaultTimeout = const SdkOmitted(),
-      this.functionZeroConfigFailover = const SdkOmitted(),
-      this.isNsnbDisabled = const SdkOmitted(),
-      this.elasticBuildMachine = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseResourceConfig({this.buildMachineElasticLastUpdated = const SdkOmitted(), this.buildMachineElasticReason = const SdkOmitted(), this.buildMachineElasticTransition = const SdkOmitted(), this.buildMachineSelection = const SdkOmitted(), this.buildMachineType = const SdkOmitted(), this.buildQueue = const SdkOmitted(), this.elasticConcurrencyEnabled = const SdkOmitted(), this.enableFunctionsBeta = const SdkOmitted(), this.fluid = const SdkOmitted(), this.functionDefaultMemoryType = const SdkOmitted(), required this.functionDefaultRegions, this.functionDefaultTimeout = const SdkOmitted(), this.functionZeroConfigFailover = const SdkOmitted(), this.isNsnbDisabled = const SdkOmitted(), this.elasticBuildMachine = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseResourceConfig Function(
-      {SdkOptional<double> buildMachineElasticLastUpdated,
-      SdkOptional<
-              UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason>
-          buildMachineElasticReason,
-      SdkOptional<
-              UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition>
-          buildMachineElasticTransition,
-      SdkOptional<
-              UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection>
-          buildMachineSelection,
-      SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineType>
-          buildMachineType,
-      SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildQueue>
-          buildQueue,
-      SdkOptional<
-              UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled>
-          elasticConcurrencyEnabled,
-      SdkOptional<UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta>
-          enableFunctionsBeta,
-      SdkOptional<UpdateMicrofrontendsResponseResourceConfigFluid> fluid,
-      SdkOptional<
-              UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType>
-          functionDefaultMemoryType,
-      List<String> functionDefaultRegions,
-      SdkOptional<double> functionDefaultTimeout,
-      SdkOptional<
-              UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover>
-          functionZeroConfigFailover,
-      SdkOptional<UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled>
-          isNsnbDisabled,
-      SdkOptional<UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine>
-          elasticBuildMachine}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseResourceConfig Function({SdkOptional<double> buildMachineElasticLastUpdated, SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason> buildMachineElasticReason, SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition> buildMachineElasticTransition, SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection> buildMachineSelection, SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineType> buildMachineType, SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildQueue> buildQueue, SdkOptional<UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled, SdkOptional<UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta> enableFunctionsBeta, SdkOptional<UpdateMicrofrontendsResponseResourceConfigFluid> fluid, SdkOptional<UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType> functionDefaultMemoryType, List<String> functionDefaultRegions, SdkOptional<double> functionDefaultTimeout, SdkOptional<UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover> functionZeroConfigFailover, SdkOptional<UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled> isNsnbDisabled, SdkOptional<UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine> elasticBuildMachine}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseResourceConfig _copyWith(
-          {Object? buildMachineElasticLastUpdated = sdkOmittedValue,
-          Object? buildMachineElasticReason = sdkOmittedValue,
-          Object? buildMachineElasticTransition = sdkOmittedValue,
-          Object? buildMachineSelection = sdkOmittedValue,
-          Object? buildMachineType = sdkOmittedValue,
-          Object? buildQueue = sdkOmittedValue,
-          Object? elasticConcurrencyEnabled = sdkOmittedValue,
-          Object? enableFunctionsBeta = sdkOmittedValue,
-          Object? fluid = sdkOmittedValue,
-          Object? functionDefaultMemoryType = sdkOmittedValue,
-          Object? functionDefaultRegions = sdkOmittedValue,
-          Object? functionDefaultTimeout = sdkOmittedValue,
-          Object? functionZeroConfigFailover = sdkOmittedValue,
-          Object? isNsnbDisabled = sdkOmittedValue,
-          Object? elasticBuildMachine = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseResourceConfig(
-        buildMachineElasticLastUpdated:
-            identical(buildMachineElasticLastUpdated, sdkOmittedValue)
-                ? this.buildMachineElasticLastUpdated
-                : buildMachineElasticLastUpdated as SdkOptional<double>,
-        buildMachineElasticReason: identical(
-                buildMachineElasticReason, sdkOmittedValue)
-            ? this.buildMachineElasticReason
-            : buildMachineElasticReason as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason>,
-        buildMachineElasticTransition: identical(
-                buildMachineElasticTransition, sdkOmittedValue)
-            ? this.buildMachineElasticTransition
-            : buildMachineElasticTransition as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition>,
-        buildMachineSelection: identical(buildMachineSelection, sdkOmittedValue)
-            ? this.buildMachineSelection
-            : buildMachineSelection as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection>,
-        buildMachineType: identical(buildMachineType, sdkOmittedValue)
-            ? this.buildMachineType
-            : buildMachineType as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineType>,
-        buildQueue: identical(buildQueue, sdkOmittedValue)
-            ? this.buildQueue
-            : buildQueue as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigBuildQueue>,
-        elasticConcurrencyEnabled: identical(
-                elasticConcurrencyEnabled, sdkOmittedValue)
-            ? this.elasticConcurrencyEnabled
-            : elasticConcurrencyEnabled as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled>,
-        enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue)
-            ? this.enableFunctionsBeta
-            : enableFunctionsBeta as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta>,
-        fluid: identical(fluid, sdkOmittedValue)
-            ? this.fluid
-            : fluid
-                as SdkOptional<UpdateMicrofrontendsResponseResourceConfigFluid>,
-        functionDefaultMemoryType: identical(
-                functionDefaultMemoryType, sdkOmittedValue)
-            ? this.functionDefaultMemoryType
-            : functionDefaultMemoryType as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType>,
-        functionDefaultRegions:
-            identical(functionDefaultRegions, sdkOmittedValue)
-                ? this.functionDefaultRegions
-                : functionDefaultRegions as List<String>,
-        functionDefaultTimeout:
-            identical(functionDefaultTimeout, sdkOmittedValue)
-                ? this.functionDefaultTimeout
-                : functionDefaultTimeout as SdkOptional<double>,
-        functionZeroConfigFailover: identical(
-                functionZeroConfigFailover, sdkOmittedValue)
-            ? this.functionZeroConfigFailover
-            : functionZeroConfigFailover as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover>,
-        isNsnbDisabled: identical(isNsnbDisabled, sdkOmittedValue)
-            ? this.isNsnbDisabled
-            : isNsnbDisabled as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled>,
-        elasticBuildMachine: identical(elasticBuildMachine, sdkOmittedValue)
-            ? this.elasticBuildMachine
-            : elasticBuildMachine as SdkOptional<
-                UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine>,
-      );
+  UpdateMicrofrontendsResponseResourceConfig _copyWith({Object? buildMachineElasticLastUpdated = sdkOmittedValue, Object? buildMachineElasticReason = sdkOmittedValue, Object? buildMachineElasticTransition = sdkOmittedValue, Object? buildMachineSelection = sdkOmittedValue, Object? buildMachineType = sdkOmittedValue, Object? buildQueue = sdkOmittedValue, Object? elasticConcurrencyEnabled = sdkOmittedValue, Object? enableFunctionsBeta = sdkOmittedValue, Object? fluid = sdkOmittedValue, Object? functionDefaultMemoryType = sdkOmittedValue, Object? functionDefaultRegions = sdkOmittedValue, Object? functionDefaultTimeout = sdkOmittedValue, Object? functionZeroConfigFailover = sdkOmittedValue, Object? isNsnbDisabled = sdkOmittedValue, Object? elasticBuildMachine = sdkOmittedValue}) => UpdateMicrofrontendsResponseResourceConfig(
+    buildMachineElasticLastUpdated: identical(buildMachineElasticLastUpdated, sdkOmittedValue) ? this.buildMachineElasticLastUpdated : buildMachineElasticLastUpdated as SdkOptional<double>,
+    buildMachineElasticReason: identical(buildMachineElasticReason, sdkOmittedValue) ? this.buildMachineElasticReason : buildMachineElasticReason as SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason>,
+    buildMachineElasticTransition: identical(buildMachineElasticTransition, sdkOmittedValue) ? this.buildMachineElasticTransition : buildMachineElasticTransition as SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition>,
+    buildMachineSelection: identical(buildMachineSelection, sdkOmittedValue) ? this.buildMachineSelection : buildMachineSelection as SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection>,
+    buildMachineType: identical(buildMachineType, sdkOmittedValue) ? this.buildMachineType : buildMachineType as SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildMachineType>,
+    buildQueue: identical(buildQueue, sdkOmittedValue) ? this.buildQueue : buildQueue as SdkOptional<UpdateMicrofrontendsResponseResourceConfigBuildQueue>,
+    elasticConcurrencyEnabled: identical(elasticConcurrencyEnabled, sdkOmittedValue) ? this.elasticConcurrencyEnabled : elasticConcurrencyEnabled as SdkOptional<UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled>,
+    enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue) ? this.enableFunctionsBeta : enableFunctionsBeta as SdkOptional<UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta>,
+    fluid: identical(fluid, sdkOmittedValue) ? this.fluid : fluid as SdkOptional<UpdateMicrofrontendsResponseResourceConfigFluid>,
+    functionDefaultMemoryType: identical(functionDefaultMemoryType, sdkOmittedValue) ? this.functionDefaultMemoryType : functionDefaultMemoryType as SdkOptional<UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType>,
+    functionDefaultRegions: identical(functionDefaultRegions, sdkOmittedValue) ? this.functionDefaultRegions : functionDefaultRegions as List<String>,
+    functionDefaultTimeout: identical(functionDefaultTimeout, sdkOmittedValue) ? this.functionDefaultTimeout : functionDefaultTimeout as SdkOptional<double>,
+    functionZeroConfigFailover: identical(functionZeroConfigFailover, sdkOmittedValue) ? this.functionZeroConfigFailover : functionZeroConfigFailover as SdkOptional<UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover>,
+    isNsnbDisabled: identical(isNsnbDisabled, sdkOmittedValue) ? this.isNsnbDisabled : isNsnbDisabled as SdkOptional<UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled>,
+    elasticBuildMachine: identical(elasticBuildMachine, sdkOmittedValue) ? this.elasticBuildMachine : elasticBuildMachine as SdkOptional<UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine>,
+  );
 
-  factory UpdateMicrofrontendsResponseResourceConfig.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseResourceConfig(
-        buildMachineElasticLastUpdated:
-            json['buildMachineElasticLastUpdated'] != null
-                ? SdkPresent(((json['buildMachineElasticLastUpdated'] as num?)
-                    ?.toDouble())!)
-                : const SdkOmitted(),
-        buildMachineElasticReason: json['buildMachineElasticReason'] != null
-            ? SdkPresent((json['buildMachineElasticReason'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason
-                    .fromJson(json['buildMachineElasticReason'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        buildMachineElasticTransition: json['buildMachineElasticTransition'] !=
-                null
-            ? SdkPresent((json['buildMachineElasticTransition'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition
-                    .fromJson(json['buildMachineElasticTransition']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        buildMachineSelection: json['buildMachineSelection'] != null
-            ? SdkPresent((json['buildMachineSelection'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection
-                    .fromJson(json['buildMachineSelection'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        buildMachineType: json['buildMachineType'] != null
-            ? SdkPresent((json['buildMachineType'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigBuildMachineType
-                    .fromJson(json['buildMachineType'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        buildQueue: json['buildQueue'] != null
-            ? SdkPresent((json['buildQueue'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigBuildQueue.fromJson(
-                    json['buildQueue'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null
-            ? SdkPresent((json['elasticConcurrencyEnabled'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled
-                    .fromJson(json['elasticConcurrencyEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        enableFunctionsBeta: json['enableFunctionsBeta'] != null
-            ? SdkPresent((json['enableFunctionsBeta'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta
-                    .fromJson(json['enableFunctionsBeta'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        fluid: json['fluid'] != null
-            ? SdkPresent((json['fluid'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigFluid.fromJson(
-                    json['fluid'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        functionDefaultMemoryType: json['functionDefaultMemoryType'] != null
-            ? SdkPresent((json['functionDefaultMemoryType'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType
-                    .fromJson(json['functionDefaultMemoryType'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        functionDefaultRegions: ((json['functionDefaultRegions'] as List?)
-            ?.map((e) => e as String)
-            .toList())!,
-        functionDefaultTimeout: json['functionDefaultTimeout'] != null
-            ? SdkPresent(
-                ((json['functionDefaultTimeout'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        functionZeroConfigFailover: json['functionZeroConfigFailover'] != null
-            ? SdkPresent((json['functionZeroConfigFailover'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover
-                    .fromJson(json['functionZeroConfigFailover'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        isNsnbDisabled: json['isNSNBDisabled'] != null
-            ? SdkPresent((json['isNSNBDisabled'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled
-                    .fromJson(json['isNSNBDisabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        elasticBuildMachine: json['elasticBuildMachine'] != null
-            ? SdkPresent((json['elasticBuildMachine'] != null
-                ? UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine
-                    .fromJson(
-                        json['elasticBuildMachine'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateMicrofrontendsResponseResourceConfig.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseResourceConfig(
+    buildMachineElasticLastUpdated: json['buildMachineElasticLastUpdated'] != null ? SdkPresent(((json['buildMachineElasticLastUpdated'] as num?)?.toDouble())!) : const SdkOmitted(),
+    buildMachineElasticReason: json['buildMachineElasticReason'] != null ? SdkPresent((json['buildMachineElasticReason'] != null ? UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason.fromJson(json['buildMachineElasticReason'] as String) : null)!) : const SdkOmitted(),
+    buildMachineElasticTransition: json['buildMachineElasticTransition'] != null ? SdkPresent((json['buildMachineElasticTransition'] != null ? UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition.fromJson(json['buildMachineElasticTransition'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    buildMachineSelection: json['buildMachineSelection'] != null ? SdkPresent((json['buildMachineSelection'] != null ? UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection.fromJson(json['buildMachineSelection'] as String) : null)!) : const SdkOmitted(),
+    buildMachineType: json['buildMachineType'] != null ? SdkPresent((json['buildMachineType'] != null ? UpdateMicrofrontendsResponseResourceConfigBuildMachineType.fromJson(json['buildMachineType'] as String) : null)!) : const SdkOmitted(),
+    buildQueue: json['buildQueue'] != null ? SdkPresent((json['buildQueue'] != null ? UpdateMicrofrontendsResponseResourceConfigBuildQueue.fromJson(json['buildQueue'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null ? SdkPresent((json['elasticConcurrencyEnabled'] != null ? UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled.fromJson(json['elasticConcurrencyEnabled'] as bool) : null)!) : const SdkOmitted(),
+    enableFunctionsBeta: json['enableFunctionsBeta'] != null ? SdkPresent((json['enableFunctionsBeta'] != null ? UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta.fromJson(json['enableFunctionsBeta'] as bool) : null)!) : const SdkOmitted(),
+    fluid: json['fluid'] != null ? SdkPresent((json['fluid'] != null ? UpdateMicrofrontendsResponseResourceConfigFluid.fromJson(json['fluid'] as bool) : null)!) : const SdkOmitted(),
+    functionDefaultMemoryType: json['functionDefaultMemoryType'] != null ? SdkPresent((json['functionDefaultMemoryType'] != null ? UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType.fromJson(json['functionDefaultMemoryType'] as String) : null)!) : const SdkOmitted(),
+    functionDefaultRegions: ((json['functionDefaultRegions'] as List?)?.map((e) => e as String).toList())!,
+    functionDefaultTimeout: json['functionDefaultTimeout'] != null ? SdkPresent(((json['functionDefaultTimeout'] as num?)?.toDouble())!) : const SdkOmitted(),
+    functionZeroConfigFailover: json['functionZeroConfigFailover'] != null ? SdkPresent((json['functionZeroConfigFailover'] != null ? UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover.fromJson(json['functionZeroConfigFailover'] as bool) : null)!) : const SdkOmitted(),
+    isNsnbDisabled: json['isNSNBDisabled'] != null ? SdkPresent((json['isNSNBDisabled'] != null ? UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled.fromJson(json['isNSNBDisabled'] as bool) : null)!) : const SdkOmitted(),
+    elasticBuildMachine: json['elasticBuildMachine'] != null ? SdkPresent((json['elasticBuildMachine'] != null ? UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine.fromJson(json['elasticBuildMachine'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (buildMachineElasticLastUpdated) {
-          SdkPresent<double>(value: final value) => {
-              'buildMachineElasticLastUpdated': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineElasticReason) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason>(
-            value: final value
-          ) =>
-            {
-              'buildMachineElasticReason': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineElasticTransition) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition>(
-            value: final value
-          ) =>
-            {
-              'buildMachineElasticTransition': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineSelection) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection>(
-            value: final value
-          ) =>
-            {
-              'buildMachineSelection': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineType) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigBuildMachineType>(
-            value: final value
-          ) =>
-            {
-              'buildMachineType': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildQueue) {
-          SdkPresent<UpdateMicrofrontendsResponseResourceConfigBuildQueue>(
-            value: final value
-          ) =>
-            {
-              'buildQueue': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (elasticConcurrencyEnabled) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled>(
-            value: final value
-          ) =>
-            {
-              'elasticConcurrencyEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enableFunctionsBeta) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta>(
-            value: final value
-          ) =>
-            {
-              'enableFunctionsBeta': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (fluid) {
-          SdkPresent<UpdateMicrofrontendsResponseResourceConfigFluid>(
-            value: final value
-          ) =>
-            {
-              'fluid': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functionDefaultMemoryType) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType>(
-            value: final value
-          ) =>
-            {
-              'functionDefaultMemoryType': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'functionDefaultRegions': functionDefaultRegions,
-        ...switch (functionDefaultTimeout) {
-          SdkPresent<double>(value: final value) => {
-              'functionDefaultTimeout': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functionZeroConfigFailover) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover>(
-            value: final value
-          ) =>
-            {
-              'functionZeroConfigFailover': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (isNsnbDisabled) {
-          SdkPresent<UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled>(
-            value: final value
-          ) =>
-            {
-              'isNSNBDisabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (elasticBuildMachine) {
-          SdkPresent<
-                UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine>(
-            value: final value
-          ) =>
-            {
-              'elasticBuildMachine': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (buildMachineElasticLastUpdated) {
+      SdkPresent<double>(value: final value) => {'buildMachineElasticLastUpdated': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineElasticReason) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticReason>(value: final value) => {'buildMachineElasticReason': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineElasticTransition) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigBuildMachineElasticTransition>(value: final value) => {'buildMachineElasticTransition': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineSelection) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigBuildMachineSelection>(value: final value) => {'buildMachineSelection': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineType) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigBuildMachineType>(value: final value) => {'buildMachineType': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildQueue) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigBuildQueue>(value: final value) => {'buildQueue': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (elasticConcurrencyEnabled) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled>(value: final value) => {'elasticConcurrencyEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enableFunctionsBeta) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta>(value: final value) => {'enableFunctionsBeta': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (fluid) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigFluid>(value: final value) => {'fluid': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functionDefaultMemoryType) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType>(value: final value) => {'functionDefaultMemoryType': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'functionDefaultRegions': functionDefaultRegions,
+    ...switch (functionDefaultTimeout) {
+      SdkPresent<double>(value: final value) => {'functionDefaultTimeout': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functionZeroConfigFailover) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover>(value: final value) => {'functionZeroConfigFailover': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (isNsnbDisabled) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled>(value: final value) => {'isNSNBDisabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (elasticBuildMachine) {
+      SdkPresent<UpdateMicrofrontendsResponseResourceConfigElasticBuildMachine>(value: final value) => {'elasticBuildMachine': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
 class UpdateMicrofrontendsResponseRollbackDescription {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Timestamp of when the rollback was requested.
   final double createdAt;
-
   /// User-supplied explanation of why they rolled back the project. Limited to 250 characters.
   final String description;
-
   /// The user who rolled back the project.
   final String userId;
-
   /// The username of the user who rolled back the project.
   final String username;
 
-  const UpdateMicrofrontendsResponseRollbackDescription(
-      {required this.createdAt,
-      required this.description,
-      required this.userId,
-      required this.username});
+  const UpdateMicrofrontendsResponseRollbackDescription({required this.createdAt, required this.description, required this.userId, required this.username});
 
-  UpdateMicrofrontendsResponseRollbackDescription Function(
-      {double createdAt,
-      String description,
-      String userId,
-      String username}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseRollbackDescription Function({double createdAt, String description, String userId, String username}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseRollbackDescription _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? userId = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseRollbackDescription(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-        userId:
-            identical(userId, sdkOmittedValue) ? this.userId : userId as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  UpdateMicrofrontendsResponseRollbackDescription _copyWith({Object? createdAt = sdkOmittedValue, Object? description = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? username = sdkOmittedValue}) => UpdateMicrofrontendsResponseRollbackDescription(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory UpdateMicrofrontendsResponseRollbackDescription.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseRollbackDescription(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        description: (json['description'] as String?)!,
-        userId: (json['userId'] as String?)!,
-        username: (json['username'] as String?)!,
-      );
+  factory UpdateMicrofrontendsResponseRollbackDescription.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseRollbackDescription(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    description: (json['description'] as String?)!,
+    userId: (json['userId'] as String?)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'description': description,
-        'userId': userId,
-        'username': username,
-      };
+    'createdAt': createdAt,
+    'description': description,
+    'userId': userId,
+    'username': username,
+  };
 }
 
 /// The checks to evaluate. An empty array means nothing is evaluated.
 class UpdateMicrofrontendsResponseRollingReleaseGateChecksItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Request paths to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Matched exactly against the request path with any query string removed; no prefix or glob matching. Defaults to `[]` when omitted.
   final SdkOptional<List<String>> excludePaths;
-
   /// Response status codes to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.
   final SdkOptional<List<double>> excludeStatusCodes;
-
   /// Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.
   final SdkOptional<double> ingestWatermarkSeconds;
-
   /// A run fails only when the canary's error rate is higher and its one-sided Fisher p-value is below this significance level. Defaults to `0.05`; lower values require stronger evidence.
   final SdkOptional<double> significanceLevel;
-
   /// The metric this check evaluates.
   final UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType type_;
 
-  const UpdateMicrofrontendsResponseRollingReleaseGateChecksItem(
-      {this.excludePaths = const SdkOmitted(),
-      this.excludeStatusCodes = const SdkOmitted(),
-      this.ingestWatermarkSeconds = const SdkOmitted(),
-      this.significanceLevel = const SdkOmitted(),
-      required this.type_});
+  const UpdateMicrofrontendsResponseRollingReleaseGateChecksItem({this.excludePaths = const SdkOmitted(), this.excludeStatusCodes = const SdkOmitted(), this.ingestWatermarkSeconds = const SdkOmitted(), this.significanceLevel = const SdkOmitted(), required this.type_});
 
-  UpdateMicrofrontendsResponseRollingReleaseGateChecksItem Function(
-          {SdkOptional<List<String>> excludePaths,
-          SdkOptional<List<double>> excludeStatusCodes,
-          SdkOptional<double> ingestWatermarkSeconds,
-          SdkOptional<double> significanceLevel,
-          UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType type_})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseRollingReleaseGateChecksItem Function({SdkOptional<List<String>> excludePaths, SdkOptional<List<double>> excludeStatusCodes, SdkOptional<double> ingestWatermarkSeconds, SdkOptional<double> significanceLevel, UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseRollingReleaseGateChecksItem _copyWith(
-          {Object? excludePaths = sdkOmittedValue,
-          Object? excludeStatusCodes = sdkOmittedValue,
-          Object? ingestWatermarkSeconds = sdkOmittedValue,
-          Object? significanceLevel = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseRollingReleaseGateChecksItem(
-        excludePaths: identical(excludePaths, sdkOmittedValue)
-            ? this.excludePaths
-            : excludePaths as SdkOptional<List<String>>,
-        excludeStatusCodes: identical(excludeStatusCodes, sdkOmittedValue)
-            ? this.excludeStatusCodes
-            : excludeStatusCodes as SdkOptional<List<double>>,
-        ingestWatermarkSeconds:
-            identical(ingestWatermarkSeconds, sdkOmittedValue)
-                ? this.ingestWatermarkSeconds
-                : ingestWatermarkSeconds as SdkOptional<double>,
-        significanceLevel: identical(significanceLevel, sdkOmittedValue)
-            ? this.significanceLevel
-            : significanceLevel as SdkOptional<double>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType,
-      );
+  UpdateMicrofrontendsResponseRollingReleaseGateChecksItem _copyWith({Object? excludePaths = sdkOmittedValue, Object? excludeStatusCodes = sdkOmittedValue, Object? ingestWatermarkSeconds = sdkOmittedValue, Object? significanceLevel = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseRollingReleaseGateChecksItem(
+    excludePaths: identical(excludePaths, sdkOmittedValue) ? this.excludePaths : excludePaths as SdkOptional<List<String>>,
+    excludeStatusCodes: identical(excludeStatusCodes, sdkOmittedValue) ? this.excludeStatusCodes : excludeStatusCodes as SdkOptional<List<double>>,
+    ingestWatermarkSeconds: identical(ingestWatermarkSeconds, sdkOmittedValue) ? this.ingestWatermarkSeconds : ingestWatermarkSeconds as SdkOptional<double>,
+    significanceLevel: identical(significanceLevel, sdkOmittedValue) ? this.significanceLevel : significanceLevel as SdkOptional<double>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType,
+  );
 
-  factory UpdateMicrofrontendsResponseRollingReleaseGateChecksItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseRollingReleaseGateChecksItem(
-        excludePaths: json['excludePaths'] != null
-            ? SdkPresent(((json['excludePaths'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        excludeStatusCodes: json['excludeStatusCodes'] != null
-            ? SdkPresent(((json['excludeStatusCodes'] as List?)
-                ?.map((e) => (e as num).toDouble())
-                .toList())!)
-            : const SdkOmitted(),
-        ingestWatermarkSeconds: json['ingestWatermarkSeconds'] != null
-            ? SdkPresent(
-                ((json['ingestWatermarkSeconds'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        significanceLevel: json['significanceLevel'] != null
-            ? SdkPresent(((json['significanceLevel'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseRollingReleaseGateChecksItem.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseRollingReleaseGateChecksItem(
+    excludePaths: json['excludePaths'] != null ? SdkPresent(((json['excludePaths'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    excludeStatusCodes: json['excludeStatusCodes'] != null ? SdkPresent(((json['excludeStatusCodes'] as List?)?.map((e) => (e as num).toDouble()).toList())!) : const SdkOmitted(),
+    ingestWatermarkSeconds: json['ingestWatermarkSeconds'] != null ? SdkPresent(((json['ingestWatermarkSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
+    significanceLevel: json['significanceLevel'] != null ? SdkPresent(((json['significanceLevel'] as num?)?.toDouble())!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (excludePaths) {
-          SdkPresent<List<String>>(value: final value) => {
-              'excludePaths': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (excludeStatusCodes) {
-          SdkPresent<List<double>>(value: final value) => {
-              'excludeStatusCodes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ingestWatermarkSeconds) {
-          SdkPresent<double>(value: final value) => {
-              'ingestWatermarkSeconds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (significanceLevel) {
-          SdkPresent<double>(value: final value) => {
-              'significanceLevel': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    ...switch (excludePaths) {
+      SdkPresent<List<String>>(value: final value) => {'excludePaths': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (excludeStatusCodes) {
+      SdkPresent<List<double>>(value: final value) => {'excludeStatusCodes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ingestWatermarkSeconds) {
+      SdkPresent<double>(value: final value) => {'ingestWatermarkSeconds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (significanceLevel) {
+      SdkPresent<double>(value: final value) => {'significanceLevel': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 /// Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`.
 class UpdateMicrofrontendsResponseRollingReleaseGate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// What to do when the gate trips: pause the rollout, or roll it back.
   final UpdateMicrofrontendsResponseRollingReleaseGateAction action;
-
   /// The checks to evaluate. An empty array means nothing is evaluated.
   final List<UpdateMicrofrontendsResponseRollingReleaseGateChecksItem> checks;
-
   /// When true, a tripped gate is only reported — {@link action} is not taken.
   final UpdateMicrofrontendsResponseRollingReleaseGateDryRun dryRun;
-
   /// Whether automated gating is enabled for this project's rollouts.
   final UpdateMicrofrontendsResponseRollingReleaseGateEnabled enabled;
-
   /// How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.
   final SdkOptional<double> failureThreshold;
-
   /// How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.
   final SdkOptional<double> windowSize;
 
-  const UpdateMicrofrontendsResponseRollingReleaseGate(
-      {required this.action,
-      required this.checks,
-      required this.dryRun,
-      required this.enabled,
-      this.failureThreshold = const SdkOmitted(),
-      this.windowSize = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseRollingReleaseGate({required this.action, required this.checks, required this.dryRun, required this.enabled, this.failureThreshold = const SdkOmitted(), this.windowSize = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseRollingReleaseGate Function(
-      {UpdateMicrofrontendsResponseRollingReleaseGateAction action,
-      List<UpdateMicrofrontendsResponseRollingReleaseGateChecksItem> checks,
-      UpdateMicrofrontendsResponseRollingReleaseGateDryRun dryRun,
-      UpdateMicrofrontendsResponseRollingReleaseGateEnabled enabled,
-      SdkOptional<double> failureThreshold,
-      SdkOptional<double> windowSize}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseRollingReleaseGate Function({UpdateMicrofrontendsResponseRollingReleaseGateAction action, List<UpdateMicrofrontendsResponseRollingReleaseGateChecksItem> checks, UpdateMicrofrontendsResponseRollingReleaseGateDryRun dryRun, UpdateMicrofrontendsResponseRollingReleaseGateEnabled enabled, SdkOptional<double> failureThreshold, SdkOptional<double> windowSize}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseRollingReleaseGate _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? checks = sdkOmittedValue,
-          Object? dryRun = sdkOmittedValue,
-          Object? enabled = sdkOmittedValue,
-          Object? failureThreshold = sdkOmittedValue,
-          Object? windowSize = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseRollingReleaseGate(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as UpdateMicrofrontendsResponseRollingReleaseGateAction,
-        checks: identical(checks, sdkOmittedValue)
-            ? this.checks
-            : checks as List<
-                UpdateMicrofrontendsResponseRollingReleaseGateChecksItem>,
-        dryRun: identical(dryRun, sdkOmittedValue)
-            ? this.dryRun
-            : dryRun as UpdateMicrofrontendsResponseRollingReleaseGateDryRun,
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as UpdateMicrofrontendsResponseRollingReleaseGateEnabled,
-        failureThreshold: identical(failureThreshold, sdkOmittedValue)
-            ? this.failureThreshold
-            : failureThreshold as SdkOptional<double>,
-        windowSize: identical(windowSize, sdkOmittedValue)
-            ? this.windowSize
-            : windowSize as SdkOptional<double>,
-      );
+  UpdateMicrofrontendsResponseRollingReleaseGate _copyWith({Object? action = sdkOmittedValue, Object? checks = sdkOmittedValue, Object? dryRun = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? failureThreshold = sdkOmittedValue, Object? windowSize = sdkOmittedValue}) => UpdateMicrofrontendsResponseRollingReleaseGate(
+    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateMicrofrontendsResponseRollingReleaseGateAction,
+    checks: identical(checks, sdkOmittedValue) ? this.checks : checks as List<UpdateMicrofrontendsResponseRollingReleaseGateChecksItem>,
+    dryRun: identical(dryRun, sdkOmittedValue) ? this.dryRun : dryRun as UpdateMicrofrontendsResponseRollingReleaseGateDryRun,
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UpdateMicrofrontendsResponseRollingReleaseGateEnabled,
+    failureThreshold: identical(failureThreshold, sdkOmittedValue) ? this.failureThreshold : failureThreshold as SdkOptional<double>,
+    windowSize: identical(windowSize, sdkOmittedValue) ? this.windowSize : windowSize as SdkOptional<double>,
+  );
 
-  factory UpdateMicrofrontendsResponseRollingReleaseGate.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseRollingReleaseGate(
-        action: (json['action'] != null
-            ? UpdateMicrofrontendsResponseRollingReleaseGateAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        checks: ((json['checks'] as List?)
-            ?.map((e) =>
-                UpdateMicrofrontendsResponseRollingReleaseGateChecksItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        dryRun: (json['dryRun'] != null
-            ? UpdateMicrofrontendsResponseRollingReleaseGateDryRun.fromJson(
-                json['dryRun'] as bool)
-            : null)!,
-        enabled: (json['enabled'] != null
-            ? UpdateMicrofrontendsResponseRollingReleaseGateEnabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        failureThreshold: json['failureThreshold'] != null
-            ? SdkPresent(((json['failureThreshold'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        windowSize: json['windowSize'] != null
-            ? SdkPresent(((json['windowSize'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateMicrofrontendsResponseRollingReleaseGate.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseRollingReleaseGate(
+    action: (json['action'] != null ? UpdateMicrofrontendsResponseRollingReleaseGateAction.fromJson(json['action'] as String) : null)!,
+    checks: ((json['checks'] as List?)?.map((e) => UpdateMicrofrontendsResponseRollingReleaseGateChecksItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    dryRun: (json['dryRun'] != null ? UpdateMicrofrontendsResponseRollingReleaseGateDryRun.fromJson(json['dryRun'] as bool) : null)!,
+    enabled: (json['enabled'] != null ? UpdateMicrofrontendsResponseRollingReleaseGateEnabled.fromJson(json['enabled'] as bool) : null)!,
+    failureThreshold: json['failureThreshold'] != null ? SdkPresent(((json['failureThreshold'] as num?)?.toDouble())!) : const SdkOmitted(),
+    windowSize: json['windowSize'] != null ? SdkPresent(((json['windowSize'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'checks': checks.map((item) => item.toJson()).toList(),
-        'dryRun': dryRun.toJson(),
-        'enabled': enabled.toJson(),
-        ...switch (failureThreshold) {
-          SdkPresent<double>(value: final value) => {
-              'failureThreshold': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (windowSize) {
-          SdkPresent<double>(value: final value) => {
-              'windowSize': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'action': action.toJson(),
+    'checks': checks.map((item) => item.toJson()).toList(),
+    'dryRun': dryRun.toJson(),
+    'enabled': enabled.toJson(),
+    ...switch (failureThreshold) {
+      SdkPresent<double>(value: final value) => {'failureThreshold': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (windowSize) {
+      SdkPresent<double>(value: final value) => {'windowSize': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

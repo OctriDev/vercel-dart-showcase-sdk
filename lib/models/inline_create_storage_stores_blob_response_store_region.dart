@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateStorageStoresBlobResponseStoreRegion {
+
   final String value;
 
   const CreateStorageStoresBlobResponseStoreRegion._(this.value);
 
-  factory CreateStorageStoresBlobResponseStoreRegion.fromJson(String value) =>
-      CreateStorageStoresBlobResponseStoreRegion._(value);
+  factory CreateStorageStoresBlobResponseStoreRegion.fromJson(String value) => CreateStorageStoresBlobResponseStoreRegion._(value);
 
   static const arn1 = CreateStorageStoresBlobResponseStoreRegion._('arn1');
   static const bom1 = CreateStorageStoresBlobResponseStoreRegion._('bom1');
@@ -35,329 +35,257 @@ final class CreateStorageStoresBlobResponseStoreRegion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateStorageStoresBlobResponseStoreRegion &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreRegion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateStorageStoresBlobResponseStoreStatus {
+
   final String value;
 
   const CreateStorageStoresBlobResponseStoreStatus._(this.value);
 
-  factory CreateStorageStoresBlobResponseStoreStatus.fromJson(String value) =>
-      CreateStorageStoresBlobResponseStoreStatus._(value);
+  factory CreateStorageStoresBlobResponseStoreStatus.fromJson(String value) => CreateStorageStoresBlobResponseStoreStatus._(value);
 
-  static const available =
-      CreateStorageStoresBlobResponseStoreStatus._('available');
+  static const available = CreateStorageStoresBlobResponseStoreStatus._('available');
   static const error = CreateStorageStoresBlobResponseStoreStatus._('error');
-  static const initializing =
-      CreateStorageStoresBlobResponseStoreStatus._('initializing');
-  static const limitsExceededSuspended =
-      CreateStorageStoresBlobResponseStoreStatus._('limits-exceeded-suspended');
-  static const limitsExceededSuspendedStoreCount =
-      CreateStorageStoresBlobResponseStoreStatus._(
-          'limits-exceeded-suspended-store-count');
-  static const onboarding =
-      CreateStorageStoresBlobResponseStoreStatus._('onboarding');
-  static const suspended =
-      CreateStorageStoresBlobResponseStoreStatus._('suspended');
-  static const uninstalled =
-      CreateStorageStoresBlobResponseStoreStatus._('uninstalled');
+  static const initializing = CreateStorageStoresBlobResponseStoreStatus._('initializing');
+  static const limitsExceededSuspended = CreateStorageStoresBlobResponseStoreStatus._('limits-exceeded-suspended');
+  static const limitsExceededSuspendedStoreCount = CreateStorageStoresBlobResponseStoreStatus._('limits-exceeded-suspended-store-count');
+  static const onboarding = CreateStorageStoresBlobResponseStoreStatus._('onboarding');
+  static const suspended = CreateStorageStoresBlobResponseStoreStatus._('suspended');
+  static const uninstalled = CreateStorageStoresBlobResponseStoreStatus._('uninstalled');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateStorageStoresBlobResponseStoreStatus &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateStorageStoresBlobResponseStoreUsageQuotaExceeded {
+
   final bool value;
 
   const CreateStorageStoresBlobResponseStoreUsageQuotaExceeded._(this.value);
 
-  factory CreateStorageStoresBlobResponseStoreUsageQuotaExceeded.fromJson(
-          bool value) =>
-      CreateStorageStoresBlobResponseStoreUsageQuotaExceeded._(value);
+  factory CreateStorageStoresBlobResponseStoreUsageQuotaExceeded.fromJson(bool value) => CreateStorageStoresBlobResponseStoreUsageQuotaExceeded._(value);
 
-  static const false_ =
-      CreateStorageStoresBlobResponseStoreUsageQuotaExceeded._(false);
-  static const true_ =
-      CreateStorageStoresBlobResponseStoreUsageQuotaExceeded._(true);
+  static const false_ = CreateStorageStoresBlobResponseStoreUsageQuotaExceeded._(false);
+  static const true_ = CreateStorageStoresBlobResponseStoreUsageQuotaExceeded._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateStorageStoresBlobResponseStoreUsageQuotaExceeded &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateStorageStoresBlobResponseStoreUsageQuotaExceeded && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged {
+
   final bool value;
 
-  const ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(
-      this.value);
+  const ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(this.value);
 
-  factory ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged.fromJson(
-          bool value) =>
-      ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(value);
+  factory ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged.fromJson(bool value) => ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(value);
 
-  static const false_ =
-      ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(false);
-  static const true_ =
-      ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(true);
+  static const false_ = ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(false);
+  static const true_ = ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListAccessGroupsResponseVariant1AccessGroupsItemIsDsyncManaged && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The project role that will be added to this Access Group. "null" will remove this project level role.
 final class CreateAccessGroupRequestBodyProjectsItemRole {
+
   final String value;
 
   const CreateAccessGroupRequestBodyProjectsItemRole._(this.value);
 
-  factory CreateAccessGroupRequestBodyProjectsItemRole.fromJson(String value) =>
-      CreateAccessGroupRequestBodyProjectsItemRole._(value);
+  factory CreateAccessGroupRequestBodyProjectsItemRole.fromJson(String value) => CreateAccessGroupRequestBodyProjectsItemRole._(value);
 
   static const admin = CreateAccessGroupRequestBodyProjectsItemRole._('ADMIN');
-  static const projectViewer =
-      CreateAccessGroupRequestBodyProjectsItemRole._('PROJECT_VIEWER');
-  static const projectDeveloper =
-      CreateAccessGroupRequestBodyProjectsItemRole._('PROJECT_DEVELOPER');
+  static const projectViewer = CreateAccessGroupRequestBodyProjectsItemRole._('PROJECT_VIEWER');
+  static const projectDeveloper = CreateAccessGroupRequestBodyProjectsItemRole._('PROJECT_DEVELOPER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateAccessGroupRequestBodyProjectsItemRole &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateAccessGroupRequestBodyProjectsItemRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateAccessGroupResponseEntitlementsItem {
+
   final String value;
 
   const CreateAccessGroupResponseEntitlementsItem._(this.value);
 
-  factory CreateAccessGroupResponseEntitlementsItem.fromJson(String value) =>
-      CreateAccessGroupResponseEntitlementsItem._(value);
+  factory CreateAccessGroupResponseEntitlementsItem.fromJson(String value) => CreateAccessGroupResponseEntitlementsItem._(value);
 
   static const v0 = CreateAccessGroupResponseEntitlementsItem._('v0');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateAccessGroupResponseEntitlementsItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateAccessGroupResponseEntitlementsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The project role that will be added to this Access Group.
 final class CreateAccessGroupProjectRequestBodyRole {
+
   final String value;
 
   const CreateAccessGroupProjectRequestBodyRole._(this.value);
 
-  factory CreateAccessGroupProjectRequestBodyRole.fromJson(String value) =>
-      CreateAccessGroupProjectRequestBodyRole._(value);
+  factory CreateAccessGroupProjectRequestBodyRole.fromJson(String value) => CreateAccessGroupProjectRequestBodyRole._(value);
 
   static const admin = CreateAccessGroupProjectRequestBodyRole._('ADMIN');
-  static const projectViewer =
-      CreateAccessGroupProjectRequestBodyRole._('PROJECT_VIEWER');
-  static const projectDeveloper =
-      CreateAccessGroupProjectRequestBodyRole._('PROJECT_DEVELOPER');
+  static const projectViewer = CreateAccessGroupProjectRequestBodyRole._('PROJECT_VIEWER');
+  static const projectDeveloper = CreateAccessGroupProjectRequestBodyRole._('PROJECT_DEVELOPER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateAccessGroupProjectRequestBodyRole && other.value == value;
+  @override bool operator ==(Object other) => other is CreateAccessGroupProjectRequestBodyRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateAccessGroupProjectResponseRole {
+
   final String value;
 
   const CreateAccessGroupProjectResponseRole._(this.value);
 
-  factory CreateAccessGroupProjectResponseRole.fromJson(String value) =>
-      CreateAccessGroupProjectResponseRole._(value);
+  factory CreateAccessGroupProjectResponseRole.fromJson(String value) => CreateAccessGroupProjectResponseRole._(value);
 
   static const admin = CreateAccessGroupProjectResponseRole._('ADMIN');
-  static const projectDeveloper =
-      CreateAccessGroupProjectResponseRole._('PROJECT_DEVELOPER');
-  static const projectGuest =
-      CreateAccessGroupProjectResponseRole._('PROJECT_GUEST');
-  static const projectViewer =
-      CreateAccessGroupProjectResponseRole._('PROJECT_VIEWER');
+  static const projectDeveloper = CreateAccessGroupProjectResponseRole._('PROJECT_DEVELOPER');
+  static const projectGuest = CreateAccessGroupProjectResponseRole._('PROJECT_GUEST');
+  static const projectViewer = CreateAccessGroupProjectResponseRole._('PROJECT_VIEWER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateAccessGroupProjectResponseRole && other.value == value;
+  @override bool operator ==(Object other) => other is CreateAccessGroupProjectResponseRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ReadAccessGroupProjectResponseRole {
+
   final String value;
 
   const ReadAccessGroupProjectResponseRole._(this.value);
 
-  factory ReadAccessGroupProjectResponseRole.fromJson(String value) =>
-      ReadAccessGroupProjectResponseRole._(value);
+  factory ReadAccessGroupProjectResponseRole.fromJson(String value) => ReadAccessGroupProjectResponseRole._(value);
 
   static const admin = ReadAccessGroupProjectResponseRole._('ADMIN');
-  static const projectDeveloper =
-      ReadAccessGroupProjectResponseRole._('PROJECT_DEVELOPER');
-  static const projectGuest =
-      ReadAccessGroupProjectResponseRole._('PROJECT_GUEST');
-  static const projectViewer =
-      ReadAccessGroupProjectResponseRole._('PROJECT_VIEWER');
+  static const projectDeveloper = ReadAccessGroupProjectResponseRole._('PROJECT_DEVELOPER');
+  static const projectGuest = ReadAccessGroupProjectResponseRole._('PROJECT_GUEST');
+  static const projectViewer = ReadAccessGroupProjectResponseRole._('PROJECT_VIEWER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ReadAccessGroupProjectResponseRole && other.value == value;
+  @override bool operator ==(Object other) => other is ReadAccessGroupProjectResponseRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The project role that will be added to this Access Group.
 final class UpdateAccessGroupProjectRequestBodyRole {
+
   final String value;
 
   const UpdateAccessGroupProjectRequestBodyRole._(this.value);
 
-  factory UpdateAccessGroupProjectRequestBodyRole.fromJson(String value) =>
-      UpdateAccessGroupProjectRequestBodyRole._(value);
+  factory UpdateAccessGroupProjectRequestBodyRole.fromJson(String value) => UpdateAccessGroupProjectRequestBodyRole._(value);
 
   static const admin = UpdateAccessGroupProjectRequestBodyRole._('ADMIN');
-  static const projectViewer =
-      UpdateAccessGroupProjectRequestBodyRole._('PROJECT_VIEWER');
-  static const projectDeveloper =
-      UpdateAccessGroupProjectRequestBodyRole._('PROJECT_DEVELOPER');
+  static const projectViewer = UpdateAccessGroupProjectRequestBodyRole._('PROJECT_VIEWER');
+  static const projectDeveloper = UpdateAccessGroupProjectRequestBodyRole._('PROJECT_DEVELOPER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateAccessGroupProjectRequestBodyRole && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateAccessGroupProjectRequestBodyRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateAccessGroupProjectResponseRole {
+
   final String value;
 
   const UpdateAccessGroupProjectResponseRole._(this.value);
 
-  factory UpdateAccessGroupProjectResponseRole.fromJson(String value) =>
-      UpdateAccessGroupProjectResponseRole._(value);
+  factory UpdateAccessGroupProjectResponseRole.fromJson(String value) => UpdateAccessGroupProjectResponseRole._(value);
 
   static const admin = UpdateAccessGroupProjectResponseRole._('ADMIN');
-  static const projectDeveloper =
-      UpdateAccessGroupProjectResponseRole._('PROJECT_DEVELOPER');
-  static const projectGuest =
-      UpdateAccessGroupProjectResponseRole._('PROJECT_GUEST');
-  static const projectViewer =
-      UpdateAccessGroupProjectResponseRole._('PROJECT_VIEWER');
+  static const projectDeveloper = UpdateAccessGroupProjectResponseRole._('PROJECT_DEVELOPER');
+  static const projectGuest = UpdateAccessGroupProjectResponseRole._('PROJECT_GUEST');
+  static const projectViewer = UpdateAccessGroupProjectResponseRole._('PROJECT_VIEWER');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateAccessGroupProjectResponseRole && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateAccessGroupProjectResponseRole && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ReadAccessGroupResponseEntitlementsItem {
+
   final String value;
 
   const ReadAccessGroupResponseEntitlementsItem._(this.value);
 
-  factory ReadAccessGroupResponseEntitlementsItem.fromJson(String value) =>
-      ReadAccessGroupResponseEntitlementsItem._(value);
+  factory ReadAccessGroupResponseEntitlementsItem.fromJson(String value) => ReadAccessGroupResponseEntitlementsItem._(value);
 
   static const v0 = ReadAccessGroupResponseEntitlementsItem._('v0');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ReadAccessGroupResponseEntitlementsItem && other.value == value;
+  @override bool operator ==(Object other) => other is ReadAccessGroupResponseEntitlementsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

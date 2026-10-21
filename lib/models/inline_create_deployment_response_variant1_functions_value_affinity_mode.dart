@@ -5,82 +5,60 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateDeploymentResponseVariant1FunctionsValueAffinityMode {
+
   final String value;
 
-  const CreateDeploymentResponseVariant1FunctionsValueAffinityMode._(
-      this.value);
+  const CreateDeploymentResponseVariant1FunctionsValueAffinityMode._(this.value);
 
-  factory CreateDeploymentResponseVariant1FunctionsValueAffinityMode.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1FunctionsValueAffinityMode._(value);
+  factory CreateDeploymentResponseVariant1FunctionsValueAffinityMode.fromJson(String value) => CreateDeploymentResponseVariant1FunctionsValueAffinityMode._(value);
 
-  static const strict =
-      CreateDeploymentResponseVariant1FunctionsValueAffinityMode._('strict');
+  static const strict = CreateDeploymentResponseVariant1FunctionsValueAffinityMode._('strict');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1FunctionsValueAffinityMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1FunctionsValueAffinityMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1FunctionsValueArchitecture {
+
   final String value;
 
-  const CreateDeploymentResponseVariant1FunctionsValueArchitecture._(
-      this.value);
+  const CreateDeploymentResponseVariant1FunctionsValueArchitecture._(this.value);
 
-  factory CreateDeploymentResponseVariant1FunctionsValueArchitecture.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1FunctionsValueArchitecture._(value);
+  factory CreateDeploymentResponseVariant1FunctionsValueArchitecture.fromJson(String value) => CreateDeploymentResponseVariant1FunctionsValueArchitecture._(value);
 
-  static const arm64 =
-      CreateDeploymentResponseVariant1FunctionsValueArchitecture._('arm64');
-  static const x8664 =
-      CreateDeploymentResponseVariant1FunctionsValueArchitecture._('x86_64');
+  static const arm64 = CreateDeploymentResponseVariant1FunctionsValueArchitecture._('arm64');
+  static const x8664 = CreateDeploymentResponseVariant1FunctionsValueArchitecture._('x86_64');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1FunctionsValueArchitecture &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1FunctionsValueArchitecture && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Event type - must be "queue/v1beta" (REQUIRED)
 enum CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type {
   queueV1beta;
 
-  static CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type
-      fromJson(String value) {
+  static CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'queue/v1beta':
-        return CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type
-            .queueV1beta;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type: $value');
+      case 'queue/v1beta': return CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type
-            .queueV1beta:
-        return 'queue/v1beta';
+      case CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta: return 'queue/v1beta';
     }
   }
 
@@ -92,23 +70,16 @@ enum CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVaria
 enum CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type {
   queueV2beta;
 
-  static CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type
-      fromJson(String value) {
+  static CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'queue/v2beta':
-        return CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type
-            .queueV2beta;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type: $value');
+      case 'queue/v2beta': return CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type
-            .queueV2beta:
-        return 'queue/v2beta';
+      case CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta: return 'queue/v2beta';
     }
   }
 
@@ -120,23 +91,16 @@ enum CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVaria
 enum CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type {
   scheduleV1beta;
 
-  static CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type
-      fromJson(String value) {
+  static CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type fromJson(String value) {
     switch (value) {
-      case 'schedule/v1beta':
-        return CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type
-            .scheduleV1beta;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type: $value');
+      case 'schedule/v1beta': return CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type
-            .scheduleV1beta:
-        return 'schedule/v1beta';
+      case CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta: return 'schedule/v1beta';
     }
   }
 
@@ -145,142 +109,101 @@ enum CreateDeploymentResponseVariant1FunctionsValueExperimentalTriggersItemVaria
 }
 
 final class CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1 {
+
   final String value;
 
-  const CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1._(
-      this.value);
+  const CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1._(this.value);
 
-  factory CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1._(
-          value);
+  factory CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1.fromJson(String value) => CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1._(value);
 
-  static const max =
-      CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1._(
-          'max');
+  static const max = CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1._('max');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1FunctionsValueMaxDurationVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation {
+
   final bool value;
 
-  const CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(
-      this.value);
+  const CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(this.value);
 
-  factory CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(
-          value);
+  factory CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation.fromJson(bool value) => CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(
-          false);
-  static const true_ =
-      CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(
-          true);
+  static const false_ = CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(false);
+  static const true_ = CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1FunctionsValueSupportsCancellation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant0OwnerType {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant0OwnerType._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant0OwnerType.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant0OwnerType._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant0OwnerType.fromJson(String value) => CreateDeploymentResponseVariant1GitRepoVariant0OwnerType._(value);
 
-  static const team =
-      CreateDeploymentResponseVariant1GitRepoVariant0OwnerType._('team');
-  static const user =
-      CreateDeploymentResponseVariant1GitRepoVariant0OwnerType._('user');
+  static const team = CreateDeploymentResponseVariant1GitRepoVariant0OwnerType._('team');
+  static const user = CreateDeploymentResponseVariant1GitRepoVariant0OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant0OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant0OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant0Private {
+
   final bool value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant0Private._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant0Private.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant0Private._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant0Private.fromJson(bool value) => CreateDeploymentResponseVariant1GitRepoVariant0Private._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1GitRepoVariant0Private._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1GitRepoVariant0Private._(true);
+  static const false_ = CreateDeploymentResponseVariant1GitRepoVariant0Private._(false);
+  static const true_ = CreateDeploymentResponseVariant1GitRepoVariant0Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant0Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant0Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateDeploymentResponseVariant1GitRepoVariant0Type {
   gitlab;
 
-  static CreateDeploymentResponseVariant1GitRepoVariant0Type fromJson(
-      String value) {
+  static CreateDeploymentResponseVariant1GitRepoVariant0Type fromJson(String value) {
     switch (value) {
-      case 'gitlab':
-        return CreateDeploymentResponseVariant1GitRepoVariant0Type.gitlab;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1GitRepoVariant0Type: $value');
+      case 'gitlab': return CreateDeploymentResponseVariant1GitRepoVariant0Type.gitlab;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1GitRepoVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1GitRepoVariant0Type.gitlab:
-        return 'gitlab';
+      case CreateDeploymentResponseVariant1GitRepoVariant0Type.gitlab: return 'gitlab';
     }
   }
 
@@ -289,79 +212,60 @@ enum CreateDeploymentResponseVariant1GitRepoVariant0Type {
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant1OwnerType {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant1OwnerType._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant1OwnerType.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant1OwnerType._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant1OwnerType.fromJson(String value) => CreateDeploymentResponseVariant1GitRepoVariant1OwnerType._(value);
 
-  static const team =
-      CreateDeploymentResponseVariant1GitRepoVariant1OwnerType._('team');
-  static const user =
-      CreateDeploymentResponseVariant1GitRepoVariant1OwnerType._('user');
+  static const team = CreateDeploymentResponseVariant1GitRepoVariant1OwnerType._('team');
+  static const user = CreateDeploymentResponseVariant1GitRepoVariant1OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant1OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant1OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant1Private {
+
   final bool value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant1Private._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant1Private.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant1Private._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant1Private.fromJson(bool value) => CreateDeploymentResponseVariant1GitRepoVariant1Private._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1GitRepoVariant1Private._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1GitRepoVariant1Private._(true);
+  static const false_ = CreateDeploymentResponseVariant1GitRepoVariant1Private._(false);
+  static const true_ = CreateDeploymentResponseVariant1GitRepoVariant1Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant1Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant1Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateDeploymentResponseVariant1GitRepoVariant1Type {
   github;
 
-  static CreateDeploymentResponseVariant1GitRepoVariant1Type fromJson(
-      String value) {
+  static CreateDeploymentResponseVariant1GitRepoVariant1Type fromJson(String value) {
     switch (value) {
-      case 'github':
-        return CreateDeploymentResponseVariant1GitRepoVariant1Type.github;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1GitRepoVariant1Type: $value');
+      case 'github': return CreateDeploymentResponseVariant1GitRepoVariant1Type.github;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1GitRepoVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1GitRepoVariant1Type.github:
-        return 'github';
+      case CreateDeploymentResponseVariant1GitRepoVariant1Type.github: return 'github';
     }
   }
 

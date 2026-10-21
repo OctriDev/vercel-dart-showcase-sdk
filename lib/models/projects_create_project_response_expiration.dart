@@ -7,73 +7,52 @@ part of 'projects_create.dart';
 class CreateProjectResponseExpirationVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Unix ms timestamp when the project is scheduled to expire.
   final double expiresAt;
 
   const CreateProjectResponseExpirationVariant0({required this.expiresAt});
 
-  CreateProjectResponseExpirationVariant0 Function({double expiresAt})
-      get copyWith => _copyWith;
+  CreateProjectResponseExpirationVariant0 Function({double expiresAt}) get copyWith => _copyWith;
 
-  CreateProjectResponseExpirationVariant0 _copyWith(
-          {Object? expiresAt = sdkOmittedValue}) =>
-      CreateProjectResponseExpirationVariant0(
-        expiresAt: identical(expiresAt, sdkOmittedValue)
-            ? this.expiresAt
-            : expiresAt as double,
-      );
+  CreateProjectResponseExpirationVariant0 _copyWith({Object? expiresAt = sdkOmittedValue}) => CreateProjectResponseExpirationVariant0(
+    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
+  );
 
-  factory CreateProjectResponseExpirationVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseExpirationVariant0(
-        expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-      );
+  factory CreateProjectResponseExpirationVariant0.fromJson(Map<String, dynamic> json) => CreateProjectResponseExpirationVariant0(
+    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expiresAt': expiresAt,
-      };
+    'expiresAt': expiresAt,
+  };
 }
 
 class CreateProjectResponseExpirationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Unix ms timestamp when the project was locked.
   final double lockedAt;
-
   /// userId of the actor that triggered the lock (system or admin).
   final String lockedBy;
 
-  const CreateProjectResponseExpirationVariant1(
-      {required this.lockedAt, required this.lockedBy});
+  const CreateProjectResponseExpirationVariant1({required this.lockedAt, required this.lockedBy});
 
-  CreateProjectResponseExpirationVariant1 Function(
-      {double lockedAt, String lockedBy}) get copyWith => _copyWith;
+  CreateProjectResponseExpirationVariant1 Function({double lockedAt, String lockedBy}) get copyWith => _copyWith;
 
-  CreateProjectResponseExpirationVariant1 _copyWith(
-          {Object? lockedAt = sdkOmittedValue,
-          Object? lockedBy = sdkOmittedValue}) =>
-      CreateProjectResponseExpirationVariant1(
-        lockedAt: identical(lockedAt, sdkOmittedValue)
-            ? this.lockedAt
-            : lockedAt as double,
-        lockedBy: identical(lockedBy, sdkOmittedValue)
-            ? this.lockedBy
-            : lockedBy as String,
-      );
+  CreateProjectResponseExpirationVariant1 _copyWith({Object? lockedAt = sdkOmittedValue, Object? lockedBy = sdkOmittedValue}) => CreateProjectResponseExpirationVariant1(
+    lockedAt: identical(lockedAt, sdkOmittedValue) ? this.lockedAt : lockedAt as double,
+    lockedBy: identical(lockedBy, sdkOmittedValue) ? this.lockedBy : lockedBy as String,
+  );
 
-  factory CreateProjectResponseExpirationVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseExpirationVariant1(
-        lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
-        lockedBy: (json['lockedBy'] as String?)!,
-      );
+  factory CreateProjectResponseExpirationVariant1.fromJson(Map<String, dynamic> json) => CreateProjectResponseExpirationVariant1(
+    lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
+    lockedBy: (json['lockedBy'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'lockedAt': lockedAt,
-        'lockedBy': lockedBy,
-      };
+    'lockedAt': lockedAt,
+    'lockedBy': lockedBy,
+  };
 }
 
 sealed class CreateProjectResponseExpiration {
@@ -82,51 +61,24 @@ sealed class CreateProjectResponseExpiration {
   const CreateProjectResponseExpiration();
   factory CreateProjectResponseExpiration.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CreateProjectResponseExpirationVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseExpirationVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateProjectResponseExpirationVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0(value); } } catch (_) {}
+      try { final value = CreateProjectResponseExpirationVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1(value); } } catch (_) {}
     }
-    try {
-      return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0(
-          CreateProjectResponseExpirationVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1(
-          CreateProjectResponseExpirationVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateProjectResponseExpiration");
+    try { return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0(CreateProjectResponseExpirationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1(CreateProjectResponseExpirationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateProjectResponseExpiration");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0
-    extends CreateProjectResponseExpiration {
+final class CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0 extends CreateProjectResponseExpiration {
   final CreateProjectResponseExpirationVariant0 value;
-  const CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateProjectResponseExpirationCreateProjectResponseExpirationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1
-    extends CreateProjectResponseExpiration {
+final class CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1 extends CreateProjectResponseExpiration {
   final CreateProjectResponseExpirationVariant1 value;
-  const CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateProjectResponseExpirationCreateProjectResponseExpirationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

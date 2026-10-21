@@ -8,150 +8,92 @@ part of 'feature_flags.dart';
 class SegmentDataRulesItemOutcomeVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemOutcomeVariant0Type type_;
 
   const SegmentDataRulesItemOutcomeVariant0({required this.type_});
 
-  SegmentDataRulesItemOutcomeVariant0 Function(
-          {SegmentDataRulesItemOutcomeVariant0Type type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemOutcomeVariant0 Function({SegmentDataRulesItemOutcomeVariant0Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemOutcomeVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemOutcomeVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemOutcomeVariant0Type,
-      );
+  SegmentDataRulesItemOutcomeVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemOutcomeVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemOutcomeVariant0Type,
+  );
 
-  factory SegmentDataRulesItemOutcomeVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemOutcomeVariant0(
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemOutcomeVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemOutcomeVariant0.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemOutcomeVariant0(
+    type_: (json['type'] != null ? SegmentDataRulesItemOutcomeVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 /// Required object value serialized in the `base` wire field.
 class SegmentDataRulesItemOutcomeVariant1Base {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `attribute` wire field.
   final String attribute;
-
   /// Required `string` value serialized in the `kind` wire field.
   final String kind;
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemOutcomeVariant1BaseType type_;
 
-  const SegmentDataRulesItemOutcomeVariant1Base(
-      {required this.attribute, required this.kind, required this.type_});
+  const SegmentDataRulesItemOutcomeVariant1Base({required this.attribute, required this.kind, required this.type_});
 
-  SegmentDataRulesItemOutcomeVariant1Base Function(
-          {String attribute,
-          String kind,
-          SegmentDataRulesItemOutcomeVariant1BaseType type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemOutcomeVariant1Base Function({String attribute, String kind, SegmentDataRulesItemOutcomeVariant1BaseType type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemOutcomeVariant1Base _copyWith(
-          {Object? attribute = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemOutcomeVariant1Base(
-        attribute: identical(attribute, sdkOmittedValue)
-            ? this.attribute
-            : attribute as String,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemOutcomeVariant1BaseType,
-      );
+  SegmentDataRulesItemOutcomeVariant1Base _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemOutcomeVariant1Base(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemOutcomeVariant1BaseType,
+  );
 
-  factory SegmentDataRulesItemOutcomeVariant1Base.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemOutcomeVariant1Base(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemOutcomeVariant1BaseType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemOutcomeVariant1Base.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemOutcomeVariant1Base(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? SegmentDataRulesItemOutcomeVariant1BaseType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }
 
 /// Required object value serialized in the `outcome` wire field.
 class SegmentDataRulesItemOutcomeVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `base` wire field.
   final SegmentDataRulesItemOutcomeVariant1Base base_;
-
   /// Required `number` value serialized in the `passPromille` wire field.
   final double passPromille;
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemOutcomeVariant1Type type_;
 
-  const SegmentDataRulesItemOutcomeVariant1(
-      {required this.base_, required this.passPromille, required this.type_});
+  const SegmentDataRulesItemOutcomeVariant1({required this.base_, required this.passPromille, required this.type_});
 
-  SegmentDataRulesItemOutcomeVariant1 Function(
-      {SegmentDataRulesItemOutcomeVariant1Base base_,
-      double passPromille,
-      SegmentDataRulesItemOutcomeVariant1Type type_}) get copyWith => _copyWith;
+  SegmentDataRulesItemOutcomeVariant1 Function({SegmentDataRulesItemOutcomeVariant1Base base_, double passPromille, SegmentDataRulesItemOutcomeVariant1Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemOutcomeVariant1 _copyWith(
-          {Object? base_ = sdkOmittedValue,
-          Object? passPromille = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemOutcomeVariant1(
-        base_: identical(base_, sdkOmittedValue)
-            ? this.base_
-            : base_ as SegmentDataRulesItemOutcomeVariant1Base,
-        passPromille: identical(passPromille, sdkOmittedValue)
-            ? this.passPromille
-            : passPromille as double,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemOutcomeVariant1Type,
-      );
+  SegmentDataRulesItemOutcomeVariant1 _copyWith({Object? base_ = sdkOmittedValue, Object? passPromille = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemOutcomeVariant1(
+    base_: identical(base_, sdkOmittedValue) ? this.base_ : base_ as SegmentDataRulesItemOutcomeVariant1Base,
+    passPromille: identical(passPromille, sdkOmittedValue) ? this.passPromille : passPromille as double,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemOutcomeVariant1Type,
+  );
 
-  factory SegmentDataRulesItemOutcomeVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemOutcomeVariant1(
-        base_: (json['base'] != null
-            ? SegmentDataRulesItemOutcomeVariant1Base.fromJson(
-                json['base'] as Map<String, dynamic>)
-            : null)!,
-        passPromille: ((json['passPromille'] as num?)?.toDouble())!,
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemOutcomeVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemOutcomeVariant1.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemOutcomeVariant1(
+    base_: (json['base'] != null ? SegmentDataRulesItemOutcomeVariant1Base.fromJson(json['base'] as Map<String, dynamic>) : null)!,
+    passPromille: ((json['passPromille'] as num?)?.toDouble())!,
+    type_: (json['type'] != null ? SegmentDataRulesItemOutcomeVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'base': base_.toJson(),
-        'passPromille': passPromille,
-        'type': type_.toJson(),
-      };
+    'base': base_.toJson(),
+    'passPromille': passPromille,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class SegmentDataRulesItemOutcome {
@@ -160,50 +102,24 @@ sealed class SegmentDataRulesItemOutcome {
   const SegmentDataRulesItemOutcome();
   factory SegmentDataRulesItemOutcome.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = SegmentDataRulesItemOutcomeVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = SegmentDataRulesItemOutcomeVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = SegmentDataRulesItemOutcomeVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0(value); } } catch (_) {}
+      try { final value = SegmentDataRulesItemOutcomeVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1(value); } } catch (_) {}
     }
-    try {
-      return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0(
-          SegmentDataRulesItemOutcomeVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1(
-          SegmentDataRulesItemOutcomeVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0(SegmentDataRulesItemOutcomeVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1(SegmentDataRulesItemOutcomeVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for SegmentDataRulesItemOutcome");
   }
   Object? toJson();
 }
 
-final class SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0
-    extends SegmentDataRulesItemOutcome {
+final class SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0 extends SegmentDataRulesItemOutcome {
   final SegmentDataRulesItemOutcomeVariant0 value;
-  const SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1
-    extends SegmentDataRulesItemOutcome {
+final class SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1 extends SegmentDataRulesItemOutcome {
   final SegmentDataRulesItemOutcomeVariant1 value;
-  const SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemOutcomeSegmentDataRulesItemOutcomeVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

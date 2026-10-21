@@ -10,54 +10,32 @@ part of 'domains_registrar_tld.dart';
 class TldNotSupported {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `status` wire field.
   final TldNotSupportedStatus status;
-
   /// Required enumerated value serialized in the `code` wire field.
   final TldNotSupportedCode code;
-
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const TldNotSupported(
-      {required this.status, required this.code, required this.message});
+  const TldNotSupported({required this.status, required this.code, required this.message});
 
-  TldNotSupported Function(
-      {TldNotSupportedStatus status,
-      TldNotSupportedCode code,
-      String message}) get copyWith => _copyWith;
+  TldNotSupported Function({TldNotSupportedStatus status, TldNotSupportedCode code, String message}) get copyWith => _copyWith;
 
-  TldNotSupported _copyWith(
-          {Object? status = sdkOmittedValue,
-          Object? code = sdkOmittedValue,
-          Object? message = sdkOmittedValue}) =>
-      TldNotSupported(
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as TldNotSupportedStatus,
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as TldNotSupportedCode,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-      );
+  TldNotSupported _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => TldNotSupported(
+    status: identical(status, sdkOmittedValue) ? this.status : status as TldNotSupportedStatus,
+    code: identical(code, sdkOmittedValue) ? this.code : code as TldNotSupportedCode,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+  );
 
-  factory TldNotSupported.fromJson(Map<String, dynamic> json) =>
-      TldNotSupported(
-        status: (json['status'] != null
-            ? TldNotSupportedStatus.fromJson((json['status'] as num).toInt())
-            : null)!,
-        code: (json['code'] != null
-            ? TldNotSupportedCode.fromJson(json['code'] as String)
-            : null)!,
-        message: (json['message'] as String?)!,
-      );
+  factory TldNotSupported.fromJson(Map<String, dynamic> json) => TldNotSupported(
+    status: (json['status'] != null ? TldNotSupportedStatus.fromJson((json['status'] as num).toInt()) : null)!,
+    code: (json['code'] != null ? TldNotSupportedCode.fromJson(json['code'] as String) : null)!,
+    message: (json['message'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'status': status.toJson(),
-        'code': code.toJson(),
-        'message': message,
-      };
+    'status': status.toJson(),
+    'code': code.toJson(),
+    'message': message,
+  };
 }

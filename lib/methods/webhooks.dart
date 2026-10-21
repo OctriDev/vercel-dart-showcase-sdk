@@ -30,10 +30,8 @@ Future<CreateWebhookResponse> createWebhook(ClientConfig config,
   return (await sdkRequest<CreateWebhookResponse>('POST', '/v1/webhooks',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'url': url,
@@ -42,11 +40,11 @@ Future<CreateWebhookResponse> createWebhook(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createWebhook',
-          fromJsonRaw: (value) =>
-              CreateWebhookResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateWebhookResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists webhooks, optionally scoped to a project. Use `projectId` to retrieve webhooks associated with a specific project; omit it to list webhooks without that project filter. The project identifier must match the documented character pattern.
 ///
@@ -66,12 +64,9 @@ Future<dynamic> getWebhooks(ClientConfig config,
   return (await sdkRequest<dynamic>('GET', '/v1/webhooks',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getWebhooks',
@@ -79,6 +74,7 @@ Future<dynamic> getWebhooks(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a webhook by its identifier. Use `teamId` or `slug` to specify the team context for the request. The response includes the webhook URL, subscribed events, associated project IDs, and timestamps.
 ///
@@ -95,18 +91,16 @@ Future<GetWebhookResponse> getWebhook(ClientConfig config,
           'GET', '/v1/webhooks/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getWebhook',
-          fromJsonRaw: (value) =>
-              GetWebhookResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetWebhookResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a webhook by its identifier. Use `teamId` or `slug` to specify the team context for the request. The operation returns no response body when the deletion succeeds.
 ///
@@ -123,10 +117,8 @@ Future<void> deleteWebhook(ClientConfig config,
           'DELETE', '/v1/webhooks/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteWebhook',

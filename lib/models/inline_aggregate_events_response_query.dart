@@ -13,69 +13,39 @@ class AggregateEventsResponseQuery {
   final String since;
   final String until;
 
-  const AggregateEventsResponseQuery(
-      {this.filter = const SdkOmitted(),
-      this.groupBy = const SdkOmitted(),
-      required this.limit,
-      required this.since,
-      required this.until});
+  const AggregateEventsResponseQuery({this.filter = const SdkOmitted(), this.groupBy = const SdkOmitted(), required this.limit, required this.since, required this.until});
 
-  AggregateEventsResponseQuery Function(
-      {SdkOptional<String> filter,
-      SdkOptional<List<String>> groupBy,
-      double limit,
-      String since,
-      String until}) get copyWith => _copyWith;
+  AggregateEventsResponseQuery Function({SdkOptional<String> filter, SdkOptional<List<String>> groupBy, double limit, String since, String until}) get copyWith => _copyWith;
 
-  AggregateEventsResponseQuery _copyWith(
-          {Object? filter = sdkOmittedValue,
-          Object? groupBy = sdkOmittedValue,
-          Object? limit = sdkOmittedValue,
-          Object? since = sdkOmittedValue,
-          Object? until = sdkOmittedValue}) =>
-      AggregateEventsResponseQuery(
-        filter: identical(filter, sdkOmittedValue)
-            ? this.filter
-            : filter as SdkOptional<String>,
-        groupBy: identical(groupBy, sdkOmittedValue)
-            ? this.groupBy
-            : groupBy as SdkOptional<List<String>>,
-        limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
-        since: identical(since, sdkOmittedValue) ? this.since : since as String,
-        until: identical(until, sdkOmittedValue) ? this.until : until as String,
-      );
+  AggregateEventsResponseQuery _copyWith({Object? filter = sdkOmittedValue, Object? groupBy = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? since = sdkOmittedValue, Object? until = sdkOmittedValue}) => AggregateEventsResponseQuery(
+    filter: identical(filter, sdkOmittedValue) ? this.filter : filter as SdkOptional<String>,
+    groupBy: identical(groupBy, sdkOmittedValue) ? this.groupBy : groupBy as SdkOptional<List<String>>,
+    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
+    since: identical(since, sdkOmittedValue) ? this.since : since as String,
+    until: identical(until, sdkOmittedValue) ? this.until : until as String,
+  );
 
-  factory AggregateEventsResponseQuery.fromJson(Map<String, dynamic> json) =>
-      AggregateEventsResponseQuery(
-        filter: json['filter'] != null
-            ? SdkPresent((json['filter'] as String?)!)
-            : const SdkOmitted(),
-        groupBy: json['groupBy'] != null
-            ? SdkPresent(
-                ((json['groupBy'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        limit: ((json['limit'] as num?)?.toDouble())!,
-        since: (json['since'] as String?)!,
-        until: (json['until'] as String?)!,
-      );
+  factory AggregateEventsResponseQuery.fromJson(Map<String, dynamic> json) => AggregateEventsResponseQuery(
+    filter: json['filter'] != null ? SdkPresent((json['filter'] as String?)!) : const SdkOmitted(),
+    groupBy: json['groupBy'] != null ? SdkPresent(((json['groupBy'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    limit: ((json['limit'] as num?)?.toDouble())!,
+    since: (json['since'] as String?)!,
+    until: (json['until'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (filter) {
-          SdkPresent<String>(value: final value) => {
-              'filter': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (groupBy) {
-          SdkPresent<List<String>>(value: final value) => {
-              'groupBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'limit': limit,
-        'since': since,
-        'until': until,
-      };
+    ...switch (filter) {
+      SdkPresent<String>(value: final value) => {'filter': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (groupBy) {
+      SdkPresent<List<String>>(value: final value) => {'groupBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'limit': limit,
+    'since': since,
+    'until': until,
+  };
 }
 
 class AggregateEventsResponse {
@@ -85,43 +55,27 @@ class AggregateEventsResponse {
   final AggregateEventsResponseQuery query;
   final double version;
 
-  const AggregateEventsResponse(
-      {required this.data, required this.query, required this.version});
+  const AggregateEventsResponse({required this.data, required this.query, required this.version});
 
-  AggregateEventsResponse Function(
-      {dynamic data,
-      AggregateEventsResponseQuery query,
-      double version}) get copyWith => _copyWith;
+  AggregateEventsResponse Function({dynamic data, AggregateEventsResponseQuery query, double version}) get copyWith => _copyWith;
 
-  AggregateEventsResponse _copyWith(
-          {Object? data = sdkOmittedValue,
-          Object? query = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      AggregateEventsResponse(
-        data: identical(data, sdkOmittedValue) ? this.data : data as dynamic,
-        query: identical(query, sdkOmittedValue)
-            ? this.query
-            : query as AggregateEventsResponseQuery,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as double,
-      );
+  AggregateEventsResponse _copyWith({Object? data = sdkOmittedValue, Object? query = sdkOmittedValue, Object? version = sdkOmittedValue}) => AggregateEventsResponse(
+    data: identical(data, sdkOmittedValue) ? this.data : data as dynamic,
+    query: identical(query, sdkOmittedValue) ? this.query : query as AggregateEventsResponseQuery,
+    version: identical(version, sdkOmittedValue) ? this.version : version as double,
+  );
 
-  factory AggregateEventsResponse.fromJson(Map<String, dynamic> json) =>
-      AggregateEventsResponse(
-        data: (json['data'])!,
-        query: (json['query'] != null
-            ? AggregateEventsResponseQuery.fromJson(
-                json['query'] as Map<String, dynamic>)
-            : null)!,
-        version: ((json['version'] as num?)?.toDouble())!,
-      );
+  factory AggregateEventsResponse.fromJson(Map<String, dynamic> json) => AggregateEventsResponse(
+    data: (json['data'])!,
+    query: (json['query'] != null ? AggregateEventsResponseQuery.fromJson(json['query'] as Map<String, dynamic>) : null)!,
+    version: ((json['version'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data,
-        'query': query.toJson(),
-        'version': version,
-      };
+    'data': data,
+    'query': query.toJson(),
+    'version': version,
+  };
 }
 
 class CountPageviewsResponseQuery {
@@ -131,99 +85,61 @@ class CountPageviewsResponseQuery {
   final String since;
   final String until;
 
-  const CountPageviewsResponseQuery(
-      {this.filter = const SdkOmitted(),
-      required this.since,
-      required this.until});
+  const CountPageviewsResponseQuery({this.filter = const SdkOmitted(), required this.since, required this.until});
 
-  CountPageviewsResponseQuery Function(
-      {SdkOptional<String> filter,
-      String since,
-      String until}) get copyWith => _copyWith;
+  CountPageviewsResponseQuery Function({SdkOptional<String> filter, String since, String until}) get copyWith => _copyWith;
 
-  CountPageviewsResponseQuery _copyWith(
-          {Object? filter = sdkOmittedValue,
-          Object? since = sdkOmittedValue,
-          Object? until = sdkOmittedValue}) =>
-      CountPageviewsResponseQuery(
-        filter: identical(filter, sdkOmittedValue)
-            ? this.filter
-            : filter as SdkOptional<String>,
-        since: identical(since, sdkOmittedValue) ? this.since : since as String,
-        until: identical(until, sdkOmittedValue) ? this.until : until as String,
-      );
+  CountPageviewsResponseQuery _copyWith({Object? filter = sdkOmittedValue, Object? since = sdkOmittedValue, Object? until = sdkOmittedValue}) => CountPageviewsResponseQuery(
+    filter: identical(filter, sdkOmittedValue) ? this.filter : filter as SdkOptional<String>,
+    since: identical(since, sdkOmittedValue) ? this.since : since as String,
+    until: identical(until, sdkOmittedValue) ? this.until : until as String,
+  );
 
-  factory CountPageviewsResponseQuery.fromJson(Map<String, dynamic> json) =>
-      CountPageviewsResponseQuery(
-        filter: json['filter'] != null
-            ? SdkPresent((json['filter'] as String?)!)
-            : const SdkOmitted(),
-        since: (json['since'] as String?)!,
-        until: (json['until'] as String?)!,
-      );
+  factory CountPageviewsResponseQuery.fromJson(Map<String, dynamic> json) => CountPageviewsResponseQuery(
+    filter: json['filter'] != null ? SdkPresent((json['filter'] as String?)!) : const SdkOmitted(),
+    since: (json['since'] as String?)!,
+    until: (json['until'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (filter) {
-          SdkPresent<String>(value: final value) => {
-              'filter': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'since': since,
-        'until': until,
-      };
+    ...switch (filter) {
+      SdkPresent<String>(value: final value) => {'filter': value,},
+      _ => const <String, dynamic>{},
+    },
+    'since': since,
+    'until': until,
+  };
 }
 
 class CountPageviewsResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Typed representation of the `CountPageviewsResponseData` API schema.
   final CountPageviewsResponseData data;
   final CountPageviewsResponseQuery query;
   final double version;
 
-  const CountPageviewsResponse(
-      {required this.data, required this.query, required this.version});
+  const CountPageviewsResponse({required this.data, required this.query, required this.version});
 
-  CountPageviewsResponse Function(
-      {CountPageviewsResponseData data,
-      CountPageviewsResponseQuery query,
-      double version}) get copyWith => _copyWith;
+  CountPageviewsResponse Function({CountPageviewsResponseData data, CountPageviewsResponseQuery query, double version}) get copyWith => _copyWith;
 
-  CountPageviewsResponse _copyWith(
-          {Object? data = sdkOmittedValue,
-          Object? query = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      CountPageviewsResponse(
-        data: identical(data, sdkOmittedValue)
-            ? this.data
-            : data as CountPageviewsResponseData,
-        query: identical(query, sdkOmittedValue)
-            ? this.query
-            : query as CountPageviewsResponseQuery,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as double,
-      );
+  CountPageviewsResponse _copyWith({Object? data = sdkOmittedValue, Object? query = sdkOmittedValue, Object? version = sdkOmittedValue}) => CountPageviewsResponse(
+    data: identical(data, sdkOmittedValue) ? this.data : data as CountPageviewsResponseData,
+    query: identical(query, sdkOmittedValue) ? this.query : query as CountPageviewsResponseQuery,
+    version: identical(version, sdkOmittedValue) ? this.version : version as double,
+  );
 
-  factory CountPageviewsResponse.fromJson(Map<String, dynamic> json) =>
-      CountPageviewsResponse(
-        data: (json['data'] != null
-            ? CountPageviewsResponseData.fromJson(json['data'])
-            : null)!,
-        query: (json['query'] != null
-            ? CountPageviewsResponseQuery.fromJson(
-                json['query'] as Map<String, dynamic>)
-            : null)!,
-        version: ((json['version'] as num?)?.toDouble())!,
-      );
+  factory CountPageviewsResponse.fromJson(Map<String, dynamic> json) => CountPageviewsResponse(
+    data: (json['data'] != null ? CountPageviewsResponseData.fromJson(json['data']) : null)!,
+    query: (json['query'] != null ? CountPageviewsResponseQuery.fromJson(json['query'] as Map<String, dynamic>) : null)!,
+    version: ((json['version'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data.toJson(),
-        'query': query.toJson(),
-        'version': version,
-      };
+    'data': data.toJson(),
+    'query': query.toJson(),
+    'version': version,
+  };
 }
 
 class CountEventsResponseQuery {
@@ -233,99 +149,61 @@ class CountEventsResponseQuery {
   final String since;
   final String until;
 
-  const CountEventsResponseQuery(
-      {this.filter = const SdkOmitted(),
-      required this.since,
-      required this.until});
+  const CountEventsResponseQuery({this.filter = const SdkOmitted(), required this.since, required this.until});
 
-  CountEventsResponseQuery Function(
-      {SdkOptional<String> filter,
-      String since,
-      String until}) get copyWith => _copyWith;
+  CountEventsResponseQuery Function({SdkOptional<String> filter, String since, String until}) get copyWith => _copyWith;
 
-  CountEventsResponseQuery _copyWith(
-          {Object? filter = sdkOmittedValue,
-          Object? since = sdkOmittedValue,
-          Object? until = sdkOmittedValue}) =>
-      CountEventsResponseQuery(
-        filter: identical(filter, sdkOmittedValue)
-            ? this.filter
-            : filter as SdkOptional<String>,
-        since: identical(since, sdkOmittedValue) ? this.since : since as String,
-        until: identical(until, sdkOmittedValue) ? this.until : until as String,
-      );
+  CountEventsResponseQuery _copyWith({Object? filter = sdkOmittedValue, Object? since = sdkOmittedValue, Object? until = sdkOmittedValue}) => CountEventsResponseQuery(
+    filter: identical(filter, sdkOmittedValue) ? this.filter : filter as SdkOptional<String>,
+    since: identical(since, sdkOmittedValue) ? this.since : since as String,
+    until: identical(until, sdkOmittedValue) ? this.until : until as String,
+  );
 
-  factory CountEventsResponseQuery.fromJson(Map<String, dynamic> json) =>
-      CountEventsResponseQuery(
-        filter: json['filter'] != null
-            ? SdkPresent((json['filter'] as String?)!)
-            : const SdkOmitted(),
-        since: (json['since'] as String?)!,
-        until: (json['until'] as String?)!,
-      );
+  factory CountEventsResponseQuery.fromJson(Map<String, dynamic> json) => CountEventsResponseQuery(
+    filter: json['filter'] != null ? SdkPresent((json['filter'] as String?)!) : const SdkOmitted(),
+    since: (json['since'] as String?)!,
+    until: (json['until'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (filter) {
-          SdkPresent<String>(value: final value) => {
-              'filter': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'since': since,
-        'until': until,
-      };
+    ...switch (filter) {
+      SdkPresent<String>(value: final value) => {'filter': value,},
+      _ => const <String, dynamic>{},
+    },
+    'since': since,
+    'until': until,
+  };
 }
 
 class CountEventsResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Typed representation of the `CountEventsResponseData` API schema.
   final CountEventsResponseData data;
   final CountEventsResponseQuery query;
   final double version;
 
-  const CountEventsResponse(
-      {required this.data, required this.query, required this.version});
+  const CountEventsResponse({required this.data, required this.query, required this.version});
 
-  CountEventsResponse Function(
-      {CountEventsResponseData data,
-      CountEventsResponseQuery query,
-      double version}) get copyWith => _copyWith;
+  CountEventsResponse Function({CountEventsResponseData data, CountEventsResponseQuery query, double version}) get copyWith => _copyWith;
 
-  CountEventsResponse _copyWith(
-          {Object? data = sdkOmittedValue,
-          Object? query = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      CountEventsResponse(
-        data: identical(data, sdkOmittedValue)
-            ? this.data
-            : data as CountEventsResponseData,
-        query: identical(query, sdkOmittedValue)
-            ? this.query
-            : query as CountEventsResponseQuery,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as double,
-      );
+  CountEventsResponse _copyWith({Object? data = sdkOmittedValue, Object? query = sdkOmittedValue, Object? version = sdkOmittedValue}) => CountEventsResponse(
+    data: identical(data, sdkOmittedValue) ? this.data : data as CountEventsResponseData,
+    query: identical(query, sdkOmittedValue) ? this.query : query as CountEventsResponseQuery,
+    version: identical(version, sdkOmittedValue) ? this.version : version as double,
+  );
 
-  factory CountEventsResponse.fromJson(Map<String, dynamic> json) =>
-      CountEventsResponse(
-        data: (json['data'] != null
-            ? CountEventsResponseData.fromJson(json['data'])
-            : null)!,
-        query: (json['query'] != null
-            ? CountEventsResponseQuery.fromJson(
-                json['query'] as Map<String, dynamic>)
-            : null)!,
-        version: ((json['version'] as num?)?.toDouble())!,
-      );
+  factory CountEventsResponse.fromJson(Map<String, dynamic> json) => CountEventsResponse(
+    data: (json['data'] != null ? CountEventsResponseData.fromJson(json['data']) : null)!,
+    query: (json['query'] != null ? CountEventsResponseQuery.fromJson(json['query'] as Map<String, dynamic>) : null)!,
+    version: ((json['version'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data.toJson(),
-        'query': query.toJson(),
-        'version': version,
-      };
+    'data': data.toJson(),
+    'query': query.toJson(),
+    'version': version,
+  };
 }
 
 class CreateWebhookRequestBody {
@@ -335,52 +213,28 @@ class CreateWebhookRequestBody {
   final List<CreateWebhookRequestBodyEventsItem> events;
   final SdkOptional<List<String>> projectIds;
 
-  const CreateWebhookRequestBody(
-      {required this.url,
-      required this.events,
-      this.projectIds = const SdkOmitted()});
+  const CreateWebhookRequestBody({required this.url, required this.events, this.projectIds = const SdkOmitted()});
 
-  CreateWebhookRequestBody Function(
-      {String url,
-      List<CreateWebhookRequestBodyEventsItem> events,
-      SdkOptional<List<String>> projectIds}) get copyWith => _copyWith;
+  CreateWebhookRequestBody Function({String url, List<CreateWebhookRequestBodyEventsItem> events, SdkOptional<List<String>> projectIds}) get copyWith => _copyWith;
 
-  CreateWebhookRequestBody _copyWith(
-          {Object? url = sdkOmittedValue,
-          Object? events = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue}) =>
-      CreateWebhookRequestBody(
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        events: identical(events, sdkOmittedValue)
-            ? this.events
-            : events as List<CreateWebhookRequestBodyEventsItem>,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-      );
+  CreateWebhookRequestBody _copyWith({Object? url = sdkOmittedValue, Object? events = sdkOmittedValue, Object? projectIds = sdkOmittedValue}) => CreateWebhookRequestBody(
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    events: identical(events, sdkOmittedValue) ? this.events : events as List<CreateWebhookRequestBodyEventsItem>,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+  );
 
-  factory CreateWebhookRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateWebhookRequestBody(
-        url: (json['url'] as String?)!,
-        events: ((json['events'] as List?)
-            ?.map(
-                (e) => CreateWebhookRequestBodyEventsItem.fromJson(e as String))
-            .toList())!,
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory CreateWebhookRequestBody.fromJson(Map<String, dynamic> json) => CreateWebhookRequestBody(
+    url: (json['url'] as String?)!,
+    events: ((json['events'] as List?)?.map((e) => CreateWebhookRequestBodyEventsItem.fromJson(e as String)).toList())!,
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'url': url,
-        'events': events.map((item) => item.toJson()).toList(),
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'url': url,
+    'events': events.map((item) => item.toJson()).toList(),
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

@@ -6,196 +6,135 @@ part of 'inline.dart';
 // Inline operation models
 /// The type of matching to perform
 final class CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType {
+
   final String value;
 
-  const CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._(
-      this.value);
+  const CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._(this.value);
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType.fromJson(
-          String value) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._(
-          value);
+  factory CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType.fromJson(String value) => CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._(value);
 
-  static const endswith =
-      CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._(
-          'endsWith');
-  static const equals =
-      CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._(
-          'equals');
-  static const startswith =
-      CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._(
-          'startsWith');
+  static const endswith = CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._('endsWith');
+  static const equals = CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._('equals');
+  static const startswith = CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseCustomEnvironmentVariant0BranchMatcherType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode {
+
   final double value;
 
-  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode._(
-      this.value);
+  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode._(this.value);
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode.fromJson(
-          double value) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode
-          ._(value);
+  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode.fromJson(double value) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode._(value);
 
-  static const v301 =
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode
-          ._(301);
-  static const v302 =
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode
-          ._(302);
-  static const v307 =
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode
-          ._(307);
-  static const v308 =
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode
-          ._(308);
+  static const v301 = CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode._(301);
+  static const v302 = CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode._(302);
+  static const v307 = CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode._(307);
+  static const v308 = CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode._(308);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified {
+
   final bool value;
 
-  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(
-      this.value);
+  const CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(this.value);
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified.fromJson(
-          bool value) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(
-          value);
+  factory CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified.fromJson(bool value) => CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(value);
 
-  static const false_ =
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(
-          false);
-  static const true_ =
-      CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(
-          true);
+  static const false_ = CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(false);
+  static const true_ = CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseCustomEnvironmentVariant0DomainsItemVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of environment (production, preview, or development)
 final class CancelDeploymentResponseCustomEnvironmentVariant0Type {
+
   final String value;
 
   const CancelDeploymentResponseCustomEnvironmentVariant0Type._(this.value);
 
-  factory CancelDeploymentResponseCustomEnvironmentVariant0Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseCustomEnvironmentVariant0Type._(value);
+  factory CancelDeploymentResponseCustomEnvironmentVariant0Type.fromJson(String value) => CancelDeploymentResponseCustomEnvironmentVariant0Type._(value);
 
-  static const development =
-      CancelDeploymentResponseCustomEnvironmentVariant0Type._('development');
-  static const preview =
-      CancelDeploymentResponseCustomEnvironmentVariant0Type._('preview');
-  static const production =
-      CancelDeploymentResponseCustomEnvironmentVariant0Type._('production');
+  static const development = CancelDeploymentResponseCustomEnvironmentVariant0Type._('development');
+  static const preview = CancelDeploymentResponseCustomEnvironmentVariant0Type._('preview');
+  static const production = CancelDeploymentResponseCustomEnvironmentVariant0Type._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseCustomEnvironmentVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseCustomEnvironmentVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitRepoVariant0OwnerType {
+
   final String value;
 
   const CancelDeploymentResponseGitRepoVariant0OwnerType._(this.value);
 
-  factory CancelDeploymentResponseGitRepoVariant0OwnerType.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitRepoVariant0OwnerType._(value);
+  factory CancelDeploymentResponseGitRepoVariant0OwnerType.fromJson(String value) => CancelDeploymentResponseGitRepoVariant0OwnerType._(value);
 
-  static const team =
-      CancelDeploymentResponseGitRepoVariant0OwnerType._('team');
-  static const user =
-      CancelDeploymentResponseGitRepoVariant0OwnerType._('user');
+  static const team = CancelDeploymentResponseGitRepoVariant0OwnerType._('team');
+  static const user = CancelDeploymentResponseGitRepoVariant0OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitRepoVariant0OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitRepoVariant0OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitRepoVariant0Private {
+
   final bool value;
 
   const CancelDeploymentResponseGitRepoVariant0Private._(this.value);
 
-  factory CancelDeploymentResponseGitRepoVariant0Private.fromJson(bool value) =>
-      CancelDeploymentResponseGitRepoVariant0Private._(value);
+  factory CancelDeploymentResponseGitRepoVariant0Private.fromJson(bool value) => CancelDeploymentResponseGitRepoVariant0Private._(value);
 
   static const false_ = CancelDeploymentResponseGitRepoVariant0Private._(false);
   static const true_ = CancelDeploymentResponseGitRepoVariant0Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitRepoVariant0Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitRepoVariant0Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CancelDeploymentResponseGitRepoVariant0Type {
@@ -203,18 +142,14 @@ enum CancelDeploymentResponseGitRepoVariant0Type {
 
   static CancelDeploymentResponseGitRepoVariant0Type fromJson(String value) {
     switch (value) {
-      case 'gitlab':
-        return CancelDeploymentResponseGitRepoVariant0Type.gitlab;
-      default:
-        throw ArgumentError(
-            'Unknown CancelDeploymentResponseGitRepoVariant0Type: $value');
+      case 'gitlab': return CancelDeploymentResponseGitRepoVariant0Type.gitlab;
+      default: throw ArgumentError('Unknown CancelDeploymentResponseGitRepoVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CancelDeploymentResponseGitRepoVariant0Type.gitlab:
-        return 'gitlab';
+      case CancelDeploymentResponseGitRepoVariant0Type.gitlab: return 'gitlab';
     }
   }
 
@@ -223,56 +158,45 @@ enum CancelDeploymentResponseGitRepoVariant0Type {
 }
 
 final class CancelDeploymentResponseGitRepoVariant1OwnerType {
+
   final String value;
 
   const CancelDeploymentResponseGitRepoVariant1OwnerType._(this.value);
 
-  factory CancelDeploymentResponseGitRepoVariant1OwnerType.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitRepoVariant1OwnerType._(value);
+  factory CancelDeploymentResponseGitRepoVariant1OwnerType.fromJson(String value) => CancelDeploymentResponseGitRepoVariant1OwnerType._(value);
 
-  static const team =
-      CancelDeploymentResponseGitRepoVariant1OwnerType._('team');
-  static const user =
-      CancelDeploymentResponseGitRepoVariant1OwnerType._('user');
+  static const team = CancelDeploymentResponseGitRepoVariant1OwnerType._('team');
+  static const user = CancelDeploymentResponseGitRepoVariant1OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitRepoVariant1OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitRepoVariant1OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitRepoVariant1Private {
+
   final bool value;
 
   const CancelDeploymentResponseGitRepoVariant1Private._(this.value);
 
-  factory CancelDeploymentResponseGitRepoVariant1Private.fromJson(bool value) =>
-      CancelDeploymentResponseGitRepoVariant1Private._(value);
+  factory CancelDeploymentResponseGitRepoVariant1Private.fromJson(bool value) => CancelDeploymentResponseGitRepoVariant1Private._(value);
 
   static const false_ = CancelDeploymentResponseGitRepoVariant1Private._(false);
   static const true_ = CancelDeploymentResponseGitRepoVariant1Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitRepoVariant1Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitRepoVariant1Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CancelDeploymentResponseGitRepoVariant1Type {
@@ -280,18 +204,14 @@ enum CancelDeploymentResponseGitRepoVariant1Type {
 
   static CancelDeploymentResponseGitRepoVariant1Type fromJson(String value) {
     switch (value) {
-      case 'github':
-        return CancelDeploymentResponseGitRepoVariant1Type.github;
-      default:
-        throw ArgumentError(
-            'Unknown CancelDeploymentResponseGitRepoVariant1Type: $value');
+      case 'github': return CancelDeploymentResponseGitRepoVariant1Type.github;
+      default: throw ArgumentError('Unknown CancelDeploymentResponseGitRepoVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CancelDeploymentResponseGitRepoVariant1Type.github:
-        return 'github';
+      case CancelDeploymentResponseGitRepoVariant1Type.github: return 'github';
     }
   }
 
@@ -300,56 +220,45 @@ enum CancelDeploymentResponseGitRepoVariant1Type {
 }
 
 final class CancelDeploymentResponseGitRepoVariant2OwnerType {
+
   final String value;
 
   const CancelDeploymentResponseGitRepoVariant2OwnerType._(this.value);
 
-  factory CancelDeploymentResponseGitRepoVariant2OwnerType.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitRepoVariant2OwnerType._(value);
+  factory CancelDeploymentResponseGitRepoVariant2OwnerType.fromJson(String value) => CancelDeploymentResponseGitRepoVariant2OwnerType._(value);
 
-  static const team =
-      CancelDeploymentResponseGitRepoVariant2OwnerType._('team');
-  static const user =
-      CancelDeploymentResponseGitRepoVariant2OwnerType._('user');
+  static const team = CancelDeploymentResponseGitRepoVariant2OwnerType._('team');
+  static const user = CancelDeploymentResponseGitRepoVariant2OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitRepoVariant2OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitRepoVariant2OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitRepoVariant2Private {
+
   final bool value;
 
   const CancelDeploymentResponseGitRepoVariant2Private._(this.value);
 
-  factory CancelDeploymentResponseGitRepoVariant2Private.fromJson(bool value) =>
-      CancelDeploymentResponseGitRepoVariant2Private._(value);
+  factory CancelDeploymentResponseGitRepoVariant2Private.fromJson(bool value) => CancelDeploymentResponseGitRepoVariant2Private._(value);
 
   static const false_ = CancelDeploymentResponseGitRepoVariant2Private._(false);
   static const true_ = CancelDeploymentResponseGitRepoVariant2Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitRepoVariant2Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitRepoVariant2Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CancelDeploymentResponseGitRepoVariant2Type {
@@ -357,18 +266,14 @@ enum CancelDeploymentResponseGitRepoVariant2Type {
 
   static CancelDeploymentResponseGitRepoVariant2Type fromJson(String value) {
     switch (value) {
-      case 'bitbucket':
-        return CancelDeploymentResponseGitRepoVariant2Type.bitbucket;
-      default:
-        throw ArgumentError(
-            'Unknown CancelDeploymentResponseGitRepoVariant2Type: $value');
+      case 'bitbucket': return CancelDeploymentResponseGitRepoVariant2Type.bitbucket;
+      default: throw ArgumentError('Unknown CancelDeploymentResponseGitRepoVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CancelDeploymentResponseGitRepoVariant2Type.bitbucket:
-        return 'bitbucket';
+      case CancelDeploymentResponseGitRepoVariant2Type.bitbucket: return 'bitbucket';
     }
   }
 

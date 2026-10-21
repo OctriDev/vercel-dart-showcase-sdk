@@ -13,63 +13,33 @@ class GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnom
   final double totalRequestsMinute;
   final double zscore;
 
-  const GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue(
-      {required this.atMinute,
-      required this.avgRequests,
-      required this.stddevRequests,
-      required this.totalRequestsMinute,
-      required this.zscore});
+  const GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue({required this.atMinute, required this.avgRequests, required this.stddevRequests, required this.totalRequestsMinute, required this.zscore});
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue Function(
-      {String atMinute,
-      double avgRequests,
-      double stddevRequests,
-      double totalRequestsMinute,
-      double zscore}) get copyWith => _copyWith;
+  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue Function({String atMinute, double avgRequests, double stddevRequests, double totalRequestsMinute, double zscore}) get copyWith => _copyWith;
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue
-      _copyWith(
-              {Object? atMinute = sdkOmittedValue,
-              Object? avgRequests = sdkOmittedValue,
-              Object? stddevRequests = sdkOmittedValue,
-              Object? totalRequestsMinute = sdkOmittedValue,
-              Object? zscore = sdkOmittedValue}) =>
-          GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue(
-            atMinute: identical(atMinute, sdkOmittedValue)
-                ? this.atMinute
-                : atMinute as String,
-            avgRequests: identical(avgRequests, sdkOmittedValue)
-                ? this.avgRequests
-                : avgRequests as double,
-            stddevRequests: identical(stddevRequests, sdkOmittedValue)
-                ? this.stddevRequests
-                : stddevRequests as double,
-            totalRequestsMinute: identical(totalRequestsMinute, sdkOmittedValue)
-                ? this.totalRequestsMinute
-                : totalRequestsMinute as double,
-            zscore: identical(zscore, sdkOmittedValue)
-                ? this.zscore
-                : zscore as double,
-          );
+  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue _copyWith({Object? atMinute = sdkOmittedValue, Object? avgRequests = sdkOmittedValue, Object? stddevRequests = sdkOmittedValue, Object? totalRequestsMinute = sdkOmittedValue, Object? zscore = sdkOmittedValue}) => GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue(
+    atMinute: identical(atMinute, sdkOmittedValue) ? this.atMinute : atMinute as String,
+    avgRequests: identical(avgRequests, sdkOmittedValue) ? this.avgRequests : avgRequests as double,
+    stddevRequests: identical(stddevRequests, sdkOmittedValue) ? this.stddevRequests : stddevRequests as double,
+    totalRequestsMinute: identical(totalRequestsMinute, sdkOmittedValue) ? this.totalRequestsMinute : totalRequestsMinute as double,
+    zscore: identical(zscore, sdkOmittedValue) ? this.zscore : zscore as double,
+  );
 
-  factory GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue.fromJson(
-          Map<String, dynamic> json) =>
-      GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue(
-        atMinute: (json['at_minute'] as String?)!,
-        avgRequests: ((json['avg_requests'] as num?)?.toDouble())!,
-        stddevRequests: ((json['stddev_requests'] as num?)?.toDouble())!,
-        totalRequestsMinute:
-            ((json['total_requests_minute'] as num?)?.toDouble())!,
-        zscore: ((json['zscore'] as num?)?.toDouble())!,
-      );
+  factory GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue.fromJson(Map<String, dynamic> json) => GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue(
+    atMinute: (json['at_minute'] as String?)!,
+    avgRequests: ((json['avg_requests'] as num?)?.toDouble())!,
+    stddevRequests: ((json['stddev_requests'] as num?)?.toDouble())!,
+    totalRequestsMinute: ((json['total_requests_minute'] as num?)?.toDouble())!,
+    zscore: ((json['zscore'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'at_minute': atMinute,
-        'avg_requests': avgRequests,
-        'stddev_requests': stddevRequests,
-        'total_requests_minute': totalRequestsMinute,
-        'zscore': zscore,
-      };
+    'at_minute': atMinute,
+    'avg_requests': avgRequests,
+    'stddev_requests': stddevRequests,
+    'total_requests_minute': totalRequestsMinute,
+    'zscore': zscore,
+  };
 }
 
 class GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue {
@@ -78,138 +48,62 @@ class GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdos
   final String atMinute;
   final double totalReqs;
 
-  const GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue(
-      {required this.atMinute, required this.totalReqs});
+  const GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue({required this.atMinute, required this.totalReqs});
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue
-      Function({String atMinute, double totalReqs}) get copyWith => _copyWith;
+  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue Function({String atMinute, double totalReqs}) get copyWith => _copyWith;
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue
-      _copyWith(
-              {Object? atMinute = sdkOmittedValue,
-              Object? totalReqs = sdkOmittedValue}) =>
-          GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue(
-            atMinute: identical(atMinute, sdkOmittedValue)
-                ? this.atMinute
-                : atMinute as String,
-            totalReqs: identical(totalReqs, sdkOmittedValue)
-                ? this.totalReqs
-                : totalReqs as double,
-          );
+  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue _copyWith({Object? atMinute = sdkOmittedValue, Object? totalReqs = sdkOmittedValue}) => GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue(
+    atMinute: identical(atMinute, sdkOmittedValue) ? this.atMinute : atMinute as String,
+    totalReqs: identical(totalReqs, sdkOmittedValue) ? this.totalReqs : totalReqs as double,
+  );
 
-  factory GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue.fromJson(
-          Map<String, dynamic> json) =>
-      GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue(
-        atMinute: (json['atMinute'] as String?)!,
-        totalReqs: ((json['totalReqs'] as num?)?.toDouble())!,
-      );
+  factory GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue.fromJson(Map<String, dynamic> json) => GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue(
+    atMinute: (json['atMinute'] as String?)!,
+    totalReqs: ((json['totalReqs'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'atMinute': atMinute,
-        'totalReqs': totalReqs,
-      };
+    'atMinute': atMinute,
+    'totalReqs': totalReqs,
+  };
 }
 
 class GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          Map<String,
-              GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>>
-      anomalyAlerts;
-  final SdkOptional<
-          Map<String,
-              GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>>
-      ddosAlerts;
+  final SdkOptional<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>> anomalyAlerts;
+  final SdkOptional<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>> ddosAlerts;
 
-  const GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue(
-      {this.anomalyAlerts = const SdkOmitted(),
-      this.ddosAlerts = const SdkOmitted()});
+  const GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue({this.anomalyAlerts = const SdkOmitted(), this.ddosAlerts = const SdkOmitted()});
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue Function(
-      {SdkOptional<
-              Map<String,
-                  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>>
-          anomalyAlerts,
-      SdkOptional<
-              Map<String,
-                  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>>
-          ddosAlerts}) get copyWith => _copyWith;
+  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue Function({SdkOptional<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>> anomalyAlerts, SdkOptional<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>> ddosAlerts}) get copyWith => _copyWith;
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue
-      _copyWith(
-              {Object? anomalyAlerts = sdkOmittedValue,
-              Object? ddosAlerts = sdkOmittedValue}) =>
-          GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue(
-            anomalyAlerts: identical(anomalyAlerts, sdkOmittedValue)
-                ? this.anomalyAlerts
-                : anomalyAlerts as SdkOptional<
-                    Map<String,
-                        GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>>,
-            ddosAlerts: identical(ddosAlerts, sdkOmittedValue)
-                ? this.ddosAlerts
-                : ddosAlerts as SdkOptional<
-                    Map<String,
-                        GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>>,
-          );
+  GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue _copyWith({Object? anomalyAlerts = sdkOmittedValue, Object? ddosAlerts = sdkOmittedValue}) => GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue(
+    anomalyAlerts: identical(anomalyAlerts, sdkOmittedValue) ? this.anomalyAlerts : anomalyAlerts as SdkOptional<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>>,
+    ddosAlerts: identical(ddosAlerts, sdkOmittedValue) ? this.ddosAlerts : ddosAlerts as SdkOptional<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>>,
+  );
 
-  factory GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue.fromJson(
-          Map<String, dynamic> json) =>
-      GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue(
-        anomalyAlerts: json['anomalyAlerts'] != null
-            ? SdkPresent((json['anomalyAlerts'] == null
-                ? null
-                : Map<String, dynamic>.from(json['anomalyAlerts'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue
-                            .fromJson(value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-        ddosAlerts: json['ddosAlerts'] != null
-            ? SdkPresent((json['ddosAlerts'] == null
-                ? null
-                : Map<String, dynamic>.from(json['ddosAlerts'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue
-                            .fromJson(value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-      );
+  factory GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue.fromJson(Map<String, dynamic> json) => GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue(
+    anomalyAlerts: json['anomalyAlerts'] != null ? SdkPresent((json['anomalyAlerts'] == null ? null : Map<String, dynamic>.from(json['anomalyAlerts'] as Map).map((key, value) => MapEntry(key, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+    ddosAlerts: json['ddosAlerts'] != null ? SdkPresent((json['ddosAlerts'] == null ? null : Map<String, dynamic>.from(json['ddosAlerts'] as Map).map((key, value) => MapEntry(key, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (anomalyAlerts) {
-          SdkPresent<
-                Map<String,
-                    GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>>(
-            value: final value
-          ) =>
-            {
-              'anomalyAlerts':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ddosAlerts) {
-          SdkPresent<
-                Map<String,
-                    GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>>(
-            value: final value
-          ) =>
-            {
-              'ddosAlerts':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (anomalyAlerts) {
+      SdkPresent<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueAnomalyAlertsValue>>(value: final value) => {'anomalyAlerts': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ddosAlerts) {
+      SdkPresent<Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValueDdosAlertsValue>>(value: final value) => {'ddosAlerts': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetActiveAttackStatusResponseVariant1AnomaliesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final Map<String,
-          GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue>
-      affectedHostMap;
+  final Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue> affectedHostMap;
   final double atMinute;
   final double? endTime;
   final String ownerId;
@@ -217,97 +111,42 @@ class GetActiveAttackStatusResponseVariant1AnomaliesItem {
   final double startTime;
   final SdkOptional<String> state;
 
-  const GetActiveAttackStatusResponseVariant1AnomaliesItem(
-      {required this.affectedHostMap,
-      required this.atMinute,
-      required this.endTime,
-      required this.ownerId,
-      required this.projectId,
-      required this.startTime,
-      this.state = const SdkOmitted()});
+  const GetActiveAttackStatusResponseVariant1AnomaliesItem({required this.affectedHostMap, required this.atMinute, required this.endTime, required this.ownerId, required this.projectId, required this.startTime, this.state = const SdkOmitted()});
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItem Function(
-      {Map<String,
-              GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue>
-          affectedHostMap,
-      double atMinute,
-      double? endTime,
-      String ownerId,
-      String projectId,
-      double startTime,
-      SdkOptional<String> state}) get copyWith => _copyWith;
+  GetActiveAttackStatusResponseVariant1AnomaliesItem Function({Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue> affectedHostMap, double atMinute, double? endTime, String ownerId, String projectId, double startTime, SdkOptional<String> state}) get copyWith => _copyWith;
 
-  GetActiveAttackStatusResponseVariant1AnomaliesItem _copyWith(
-          {Object? affectedHostMap = sdkOmittedValue,
-          Object? atMinute = sdkOmittedValue,
-          Object? endTime = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? startTime = sdkOmittedValue,
-          Object? state = sdkOmittedValue}) =>
-      GetActiveAttackStatusResponseVariant1AnomaliesItem(
-        affectedHostMap: identical(affectedHostMap, sdkOmittedValue)
-            ? this.affectedHostMap
-            : affectedHostMap as Map<String,
-                GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue>,
-        atMinute: identical(atMinute, sdkOmittedValue)
-            ? this.atMinute
-            : atMinute as double,
-        endTime: identical(endTime, sdkOmittedValue)
-            ? this.endTime
-            : endTime as double?,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        startTime: identical(startTime, sdkOmittedValue)
-            ? this.startTime
-            : startTime as double,
-        state: identical(state, sdkOmittedValue)
-            ? this.state
-            : state as SdkOptional<String>,
-      );
+  GetActiveAttackStatusResponseVariant1AnomaliesItem _copyWith({Object? affectedHostMap = sdkOmittedValue, Object? atMinute = sdkOmittedValue, Object? endTime = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? startTime = sdkOmittedValue, Object? state = sdkOmittedValue}) => GetActiveAttackStatusResponseVariant1AnomaliesItem(
+    affectedHostMap: identical(affectedHostMap, sdkOmittedValue) ? this.affectedHostMap : affectedHostMap as Map<String, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue>,
+    atMinute: identical(atMinute, sdkOmittedValue) ? this.atMinute : atMinute as double,
+    endTime: identical(endTime, sdkOmittedValue) ? this.endTime : endTime as double?,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    startTime: identical(startTime, sdkOmittedValue) ? this.startTime : startTime as double,
+    state: identical(state, sdkOmittedValue) ? this.state : state as SdkOptional<String>,
+  );
 
-  factory GetActiveAttackStatusResponseVariant1AnomaliesItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetActiveAttackStatusResponseVariant1AnomaliesItem(
-        affectedHostMap: (json['affectedHostMap'] == null
-            ? null
-            : Map<String, dynamic>.from(json['affectedHostMap'] as Map).map(
-                (key, value) => MapEntry(
-                    key,
-                    GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue
-                        .fromJson(value as Map<String, dynamic>))))!,
-        atMinute: ((json['atMinute'] as num?)?.toDouble())!,
-        endTime: json.containsKey('endTime')
-            ? (json['endTime'] as num?)?.toDouble()
-            : throw ArgumentError.value(
-                null, 'endTime', 'Required property is missing'),
-        ownerId: (json['ownerId'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        startTime: ((json['startTime'] as num?)?.toDouble())!,
-        state: json['state'] != null
-            ? SdkPresent((json['state'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetActiveAttackStatusResponseVariant1AnomaliesItem.fromJson(Map<String, dynamic> json) => GetActiveAttackStatusResponseVariant1AnomaliesItem(
+    affectedHostMap: (json['affectedHostMap'] == null ? null : Map<String, dynamic>.from(json['affectedHostMap'] as Map).map((key, value) => MapEntry(key, GetActiveAttackStatusResponseVariant1AnomaliesItemAffectedHostMapValue.fromJson(value as Map<String, dynamic>))))!,
+    atMinute: ((json['atMinute'] as num?)?.toDouble())!,
+    endTime: json.containsKey('endTime') ? (json['endTime'] as num?)?.toDouble() : throw ArgumentError.value(null, 'endTime', 'Required property is missing'),
+    ownerId: (json['ownerId'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    startTime: ((json['startTime'] as num?)?.toDouble())!,
+    state: json['state'] != null ? SdkPresent((json['state'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'affectedHostMap':
-            affectedHostMap.map((key, value) => MapEntry(key, value.toJson())),
-        'atMinute': atMinute,
-        'endTime': endTime,
-        'ownerId': ownerId,
-        'projectId': projectId,
-        'startTime': startTime,
-        ...switch (state) {
-          SdkPresent<String>(value: final value) => {
-              'state': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'affectedHostMap': affectedHostMap.map((key, value) => MapEntry(key, value.toJson())),
+    'atMinute': atMinute,
+    'endTime': endTime,
+    'ownerId': ownerId,
+    'projectId': projectId,
+    'startTime': startTime,
+    ...switch (state) {
+      SdkPresent<String>(value: final value) => {'state': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetActiveAttackStatusResponseVariant1 {
@@ -317,32 +156,19 @@ class GetActiveAttackStatusResponseVariant1 {
 
   const GetActiveAttackStatusResponseVariant1({required this.anomalies});
 
-  GetActiveAttackStatusResponseVariant1 Function(
-          {List<GetActiveAttackStatusResponseVariant1AnomaliesItem> anomalies})
-      get copyWith => _copyWith;
+  GetActiveAttackStatusResponseVariant1 Function({List<GetActiveAttackStatusResponseVariant1AnomaliesItem> anomalies}) get copyWith => _copyWith;
 
-  GetActiveAttackStatusResponseVariant1 _copyWith(
-          {Object? anomalies = sdkOmittedValue}) =>
-      GetActiveAttackStatusResponseVariant1(
-        anomalies: identical(anomalies, sdkOmittedValue)
-            ? this.anomalies
-            : anomalies
-                as List<GetActiveAttackStatusResponseVariant1AnomaliesItem>,
-      );
+  GetActiveAttackStatusResponseVariant1 _copyWith({Object? anomalies = sdkOmittedValue}) => GetActiveAttackStatusResponseVariant1(
+    anomalies: identical(anomalies, sdkOmittedValue) ? this.anomalies : anomalies as List<GetActiveAttackStatusResponseVariant1AnomaliesItem>,
+  );
 
-  factory GetActiveAttackStatusResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetActiveAttackStatusResponseVariant1(
-        anomalies: ((json['anomalies'] as List?)
-            ?.map((e) =>
-                GetActiveAttackStatusResponseVariant1AnomaliesItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory GetActiveAttackStatusResponseVariant1.fromJson(Map<String, dynamic> json) => GetActiveAttackStatusResponseVariant1(
+    anomalies: ((json['anomalies'] as List?)?.map((e) => GetActiveAttackStatusResponseVariant1AnomaliesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'anomalies': anomalies.map((item) => item.toJson()).toList(),
-      };
+    'anomalies': anomalies.map((item) => item.toJson()).toList(),
+  };
 }
 
 class GetBypassIpResponsePagination {
@@ -351,31 +177,24 @@ class GetBypassIpResponsePagination {
   final String id;
   final String ownerId;
 
-  const GetBypassIpResponsePagination(
-      {required this.id, required this.ownerId});
+  const GetBypassIpResponsePagination({required this.id, required this.ownerId});
 
-  GetBypassIpResponsePagination Function({String id, String ownerId})
-      get copyWith => _copyWith;
+  GetBypassIpResponsePagination Function({String id, String ownerId}) get copyWith => _copyWith;
 
-  GetBypassIpResponsePagination _copyWith(
-          {Object? id = sdkOmittedValue, Object? ownerId = sdkOmittedValue}) =>
-      GetBypassIpResponsePagination(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-      );
+  GetBypassIpResponsePagination _copyWith({Object? id = sdkOmittedValue, Object? ownerId = sdkOmittedValue}) => GetBypassIpResponsePagination(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+  );
 
-  factory GetBypassIpResponsePagination.fromJson(Map<String, dynamic> json) =>
-      GetBypassIpResponsePagination(
-        id: (json['Id'] as String?)!,
-        ownerId: (json['OwnerId'] as String?)!,
-      );
+  factory GetBypassIpResponsePagination.fromJson(Map<String, dynamic> json) => GetBypassIpResponsePagination(
+    id: (json['Id'] as String?)!,
+    ownerId: (json['OwnerId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'Id': id,
-        'OwnerId': ownerId,
-      };
+    'Id': id,
+    'OwnerId': ownerId,
+  };
 }
 
 class GetBypassIpResponseResultItem {
@@ -396,185 +215,79 @@ class GetBypassIpResponseResultItem {
   final String updatedAt;
   final String updatedAtHour;
 
-  const GetBypassIpResponseResultItem(
-      {this.action = const SdkOmitted(),
-      this.actorId = const SdkOmitted(),
-      required this.createdAt,
-      this.deletedAt = const SdkOmitted(),
-      required this.domain,
-      this.expiresAt = const SdkOmitted(),
-      required this.id,
-      required this.ip,
-      this.isProjectRule = const SdkOmitted(),
-      this.note = const SdkOmitted(),
-      required this.ownerId,
-      this.projectId = const SdkOmitted(),
-      required this.updatedAt,
-      required this.updatedAtHour});
+  const GetBypassIpResponseResultItem({this.action = const SdkOmitted(), this.actorId = const SdkOmitted(), required this.createdAt, this.deletedAt = const SdkOmitted(), required this.domain, this.expiresAt = const SdkOmitted(), required this.id, required this.ip, this.isProjectRule = const SdkOmitted(), this.note = const SdkOmitted(), required this.ownerId, this.projectId = const SdkOmitted(), required this.updatedAt, required this.updatedAtHour});
 
-  GetBypassIpResponseResultItem Function(
-      {SdkOptional<GetBypassIpResponseResultItemAction> action,
-      SdkOptional<String> actorId,
-      String createdAt,
-      SdkOptional<String> deletedAt,
-      String domain,
-      SdkOptional<double?> expiresAt,
-      String id,
-      String ip,
-      SdkOptional<GetBypassIpResponseResultItemIsProjectRule> isProjectRule,
-      SdkOptional<String> note,
-      String ownerId,
-      SdkOptional<String> projectId,
-      String updatedAt,
-      String updatedAtHour}) get copyWith => _copyWith;
+  GetBypassIpResponseResultItem Function({SdkOptional<GetBypassIpResponseResultItemAction> action, SdkOptional<String> actorId, String createdAt, SdkOptional<String> deletedAt, String domain, SdkOptional<double?> expiresAt, String id, String ip, SdkOptional<GetBypassIpResponseResultItemIsProjectRule> isProjectRule, SdkOptional<String> note, String ownerId, SdkOptional<String> projectId, String updatedAt, String updatedAtHour}) get copyWith => _copyWith;
 
-  GetBypassIpResponseResultItem _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? actorId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? deletedAt = sdkOmittedValue,
-          Object? domain = sdkOmittedValue,
-          Object? expiresAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? ip = sdkOmittedValue,
-          Object? isProjectRule = sdkOmittedValue,
-          Object? note = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? updatedAtHour = sdkOmittedValue}) =>
-      GetBypassIpResponseResultItem(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<GetBypassIpResponseResultItemAction>,
-        actorId: identical(actorId, sdkOmittedValue)
-            ? this.actorId
-            : actorId as SdkOptional<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as String,
-        deletedAt: identical(deletedAt, sdkOmittedValue)
-            ? this.deletedAt
-            : deletedAt as SdkOptional<String>,
-        domain:
-            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-        expiresAt: identical(expiresAt, sdkOmittedValue)
-            ? this.expiresAt
-            : expiresAt as SdkOptional<double?>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
-        isProjectRule: identical(isProjectRule, sdkOmittedValue)
-            ? this.isProjectRule
-            : isProjectRule
-                as SdkOptional<GetBypassIpResponseResultItemIsProjectRule>,
-        note: identical(note, sdkOmittedValue)
-            ? this.note
-            : note as SdkOptional<String>,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as String,
-        updatedAtHour: identical(updatedAtHour, sdkOmittedValue)
-            ? this.updatedAtHour
-            : updatedAtHour as String,
-      );
+  GetBypassIpResponseResultItem _copyWith({Object? action = sdkOmittedValue, Object? actorId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? domain = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ip = sdkOmittedValue, Object? isProjectRule = sdkOmittedValue, Object? note = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedAtHour = sdkOmittedValue}) => GetBypassIpResponseResultItem(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<GetBypassIpResponseResultItemAction>,
+    actorId: identical(actorId, sdkOmittedValue) ? this.actorId : actorId as SdkOptional<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
+    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<String>,
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<double?>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
+    isProjectRule: identical(isProjectRule, sdkOmittedValue) ? this.isProjectRule : isProjectRule as SdkOptional<GetBypassIpResponseResultItemIsProjectRule>,
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
+    updatedAtHour: identical(updatedAtHour, sdkOmittedValue) ? this.updatedAtHour : updatedAtHour as String,
+  );
 
-  factory GetBypassIpResponseResultItem.fromJson(Map<String, dynamic> json) =>
-      GetBypassIpResponseResultItem(
-        action: json['Action'] != null
-            ? SdkPresent((json['Action'] != null
-                ? GetBypassIpResponseResultItemAction.fromJson(
-                    json['Action'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        actorId: json['ActorId'] != null
-            ? SdkPresent((json['ActorId'] as String?)!)
-            : const SdkOmitted(),
-        createdAt: (json['CreatedAt'] as String?)!,
-        deletedAt: json['DeletedAt'] != null
-            ? SdkPresent((json['DeletedAt'] as String?)!)
-            : const SdkOmitted(),
-        domain: (json['Domain'] as String?)!,
-        expiresAt: json.containsKey('ExpiresAt')
-            ? SdkPresent((json['ExpiresAt'] as num?)?.toDouble())
-            : const SdkOmitted(),
-        id: (json['Id'] as String?)!,
-        ip: (json['Ip'] as String?)!,
-        isProjectRule: json['IsProjectRule'] != null
-            ? SdkPresent((json['IsProjectRule'] != null
-                ? GetBypassIpResponseResultItemIsProjectRule.fromJson(
-                    json['IsProjectRule'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        note: json['Note'] != null
-            ? SdkPresent((json['Note'] as String?)!)
-            : const SdkOmitted(),
-        ownerId: (json['OwnerId'] as String?)!,
-        projectId: json['ProjectId'] != null
-            ? SdkPresent((json['ProjectId'] as String?)!)
-            : const SdkOmitted(),
-        updatedAt: (json['UpdatedAt'] as String?)!,
-        updatedAtHour: (json['UpdatedAtHour'] as String?)!,
-      );
+  factory GetBypassIpResponseResultItem.fromJson(Map<String, dynamic> json) => GetBypassIpResponseResultItem(
+    action: json['Action'] != null ? SdkPresent((json['Action'] != null ? GetBypassIpResponseResultItemAction.fromJson(json['Action'] as String) : null)!) : const SdkOmitted(),
+    actorId: json['ActorId'] != null ? SdkPresent((json['ActorId'] as String?)!) : const SdkOmitted(),
+    createdAt: (json['CreatedAt'] as String?)!,
+    deletedAt: json['DeletedAt'] != null ? SdkPresent((json['DeletedAt'] as String?)!) : const SdkOmitted(),
+    domain: (json['Domain'] as String?)!,
+    expiresAt: json.containsKey('ExpiresAt') ? SdkPresent((json['ExpiresAt'] as num?)?.toDouble()) : const SdkOmitted(),
+    id: (json['Id'] as String?)!,
+    ip: (json['Ip'] as String?)!,
+    isProjectRule: json['IsProjectRule'] != null ? SdkPresent((json['IsProjectRule'] != null ? GetBypassIpResponseResultItemIsProjectRule.fromJson(json['IsProjectRule'] as bool) : null)!) : const SdkOmitted(),
+    note: json['Note'] != null ? SdkPresent((json['Note'] as String?)!) : const SdkOmitted(),
+    ownerId: (json['OwnerId'] as String?)!,
+    projectId: json['ProjectId'] != null ? SdkPresent((json['ProjectId'] as String?)!) : const SdkOmitted(),
+    updatedAt: (json['UpdatedAt'] as String?)!,
+    updatedAtHour: (json['UpdatedAtHour'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<GetBypassIpResponseResultItemAction>(value: final value) =>
-            {
-              'Action': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (actorId) {
-          SdkPresent<String>(value: final value) => {
-              'ActorId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'CreatedAt': createdAt,
-        ...switch (deletedAt) {
-          SdkPresent<String>(value: final value) => {
-              'DeletedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'Domain': domain,
-        ...switch (expiresAt) {
-          SdkPresent<double?>(value: final value) => {
-              'ExpiresAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'Id': id,
-        'Ip': ip,
-        ...switch (isProjectRule) {
-          SdkPresent<GetBypassIpResponseResultItemIsProjectRule>(
-            value: final value
-          ) =>
-            {
-              'IsProjectRule': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'Note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'OwnerId': ownerId,
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'ProjectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'UpdatedAt': updatedAt,
-        'UpdatedAtHour': updatedAtHour,
-      };
+    ...switch (action) {
+      SdkPresent<GetBypassIpResponseResultItemAction>(value: final value) => {'Action': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (actorId) {
+      SdkPresent<String>(value: final value) => {'ActorId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'CreatedAt': createdAt,
+    ...switch (deletedAt) {
+      SdkPresent<String>(value: final value) => {'DeletedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'Domain': domain,
+    ...switch (expiresAt) {
+      SdkPresent<double?>(value: final value) => {'ExpiresAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'Id': id,
+    'Ip': ip,
+    ...switch (isProjectRule) {
+      SdkPresent<GetBypassIpResponseResultItemIsProjectRule>(value: final value) => {'IsProjectRule': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'Note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'OwnerId': ownerId,
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'ProjectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'UpdatedAt': updatedAt,
+    'UpdatedAtHour': updatedAtHour,
+  };
 }

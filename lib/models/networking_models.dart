@@ -8,7 +8,6 @@ part of 'networking.dart';
 class NetworkHostedZones {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The number of AWS Route53 Hosted Zones associated with the Network.
   final double count;
 
@@ -16,26 +15,23 @@ class NetworkHostedZones {
 
   NetworkHostedZones Function({double count}) get copyWith => _copyWith;
 
-  NetworkHostedZones _copyWith({Object? count = sdkOmittedValue}) =>
-      NetworkHostedZones(
-        count: identical(count, sdkOmittedValue) ? this.count : count as double,
-      );
+  NetworkHostedZones _copyWith({Object? count = sdkOmittedValue}) => NetworkHostedZones(
+    count: identical(count, sdkOmittedValue) ? this.count : count as double,
+  );
 
-  factory NetworkHostedZones.fromJson(Map<String, dynamic> json) =>
-      NetworkHostedZones(
-        count: ((json['count'] as num?)?.toDouble())!,
-      );
+  factory NetworkHostedZones.fromJson(Map<String, dynamic> json) => NetworkHostedZones(
+    count: ((json['count'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-      };
+    'count': count,
+  };
 }
 
 /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
 class NetworkPeeringConnections {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The number of AWS Route53 Hosted Zones associated with the Network.
   final double count;
 
@@ -43,490 +39,255 @@ class NetworkPeeringConnections {
 
   NetworkPeeringConnections Function({double count}) get copyWith => _copyWith;
 
-  NetworkPeeringConnections _copyWith({Object? count = sdkOmittedValue}) =>
-      NetworkPeeringConnections(
-        count: identical(count, sdkOmittedValue) ? this.count : count as double,
-      );
+  NetworkPeeringConnections _copyWith({Object? count = sdkOmittedValue}) => NetworkPeeringConnections(
+    count: identical(count, sdkOmittedValue) ? this.count : count as double,
+  );
 
-  factory NetworkPeeringConnections.fromJson(Map<String, dynamic> json) =>
-      NetworkPeeringConnections(
-        count: ((json['count'] as num?)?.toDouble())!,
-      );
+  factory NetworkPeeringConnections.fromJson(Map<String, dynamic> json) => NetworkPeeringConnections(
+    count: ((json['count'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-      };
+    'count': count,
+  };
 }
 
 /// Metadata about any projects associated with the Network.
 class NetworkProjects {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `number` value serialized in the `count` wire field.
   final double count;
-
   /// Required array value serialized in the `ids` wire field.
   final List<String> ids;
 
   const NetworkProjects({required this.count, required this.ids});
 
-  NetworkProjects Function({double count, List<String> ids}) get copyWith =>
-      _copyWith;
+  NetworkProjects Function({double count, List<String> ids}) get copyWith => _copyWith;
 
-  NetworkProjects _copyWith(
-          {Object? count = sdkOmittedValue, Object? ids = sdkOmittedValue}) =>
-      NetworkProjects(
-        count: identical(count, sdkOmittedValue) ? this.count : count as double,
-        ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
-      );
+  NetworkProjects _copyWith({Object? count = sdkOmittedValue, Object? ids = sdkOmittedValue}) => NetworkProjects(
+    count: identical(count, sdkOmittedValue) ? this.count : count as double,
+    ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
+  );
 
-  factory NetworkProjects.fromJson(Map<String, dynamic> json) =>
-      NetworkProjects(
-        count: ((json['count'] as num?)?.toDouble())!,
-        ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory NetworkProjects.fromJson(Map<String, dynamic> json) => NetworkProjects(
+    count: ((json['count'] as num?)?.toDouble())!,
+    ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-        'ids': ids,
-      };
+    'count': count,
+    'ids': ids,
+  };
 }
 
 /// Typed representation of the `Network` API schema.
 class Network {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The ID of the AWS Account in which the network exists.
   final String awsAccountId;
-
   /// The IDs of the AWS Availability Zones in which the network exists, if specified during creation.
   final SdkOptional<List<String>> awsAvailabilityZoneIds;
-
   /// The AWS Region in which the network exists.
   final String awsRegion;
-
   /// The CIDR range of the Network.
   final String cidr;
-
   /// The date at which the Network was created, represented as a UNIX timestamp since EPOCH.
   final double createdAt;
-
   /// Optional array value serialized in the `egressIpAddresses` wire field.
   final SdkOptional<List<String>> egressIpAddresses;
-
   /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
   final SdkOptional<NetworkHostedZones> hostedZones;
-
   /// The unique identifier of the Network.
   final String id;
-
   /// The name of the network.
   final String name;
-
   /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
   final SdkOptional<NetworkPeeringConnections> peeringConnections;
-
   /// Metadata about any projects associated with the Network.
   final SdkOptional<NetworkProjects> projects;
-
   /// The Vercel region in which the Network exists.
   final SdkOptional<String> region;
-
   /// The status of the Network.
   final NetworkStatus status;
-
   /// The unique identifier of the Team that owns the Network.
   final String teamId;
-
   /// The ID of the VPC which hosts the network.
   final SdkOptional<String> vpcId;
 
-  const Network(
-      {required this.awsAccountId,
-      this.awsAvailabilityZoneIds = const SdkOmitted(),
-      required this.awsRegion,
-      required this.cidr,
-      required this.createdAt,
-      this.egressIpAddresses = const SdkOmitted(),
-      this.hostedZones = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      this.peeringConnections = const SdkOmitted(),
-      this.projects = const SdkOmitted(),
-      this.region = const SdkOmitted(),
-      required this.status,
-      required this.teamId,
-      this.vpcId = const SdkOmitted()});
+  const Network({required this.awsAccountId, this.awsAvailabilityZoneIds = const SdkOmitted(), required this.awsRegion, required this.cidr, required this.createdAt, this.egressIpAddresses = const SdkOmitted(), this.hostedZones = const SdkOmitted(), required this.id, required this.name, this.peeringConnections = const SdkOmitted(), this.projects = const SdkOmitted(), this.region = const SdkOmitted(), required this.status, required this.teamId, this.vpcId = const SdkOmitted()});
 
-  Network Function(
-      {String awsAccountId,
-      SdkOptional<List<String>> awsAvailabilityZoneIds,
-      String awsRegion,
-      String cidr,
-      double createdAt,
-      SdkOptional<List<String>> egressIpAddresses,
-      SdkOptional<NetworkHostedZones> hostedZones,
-      String id,
-      String name,
-      SdkOptional<NetworkPeeringConnections> peeringConnections,
-      SdkOptional<NetworkProjects> projects,
-      SdkOptional<String> region,
-      NetworkStatus status,
-      String teamId,
-      SdkOptional<String> vpcId}) get copyWith => _copyWith;
+  Network Function({String awsAccountId, SdkOptional<List<String>> awsAvailabilityZoneIds, String awsRegion, String cidr, double createdAt, SdkOptional<List<String>> egressIpAddresses, SdkOptional<NetworkHostedZones> hostedZones, String id, String name, SdkOptional<NetworkPeeringConnections> peeringConnections, SdkOptional<NetworkProjects> projects, SdkOptional<String> region, NetworkStatus status, String teamId, SdkOptional<String> vpcId}) get copyWith => _copyWith;
 
-  Network _copyWith(
-          {Object? awsAccountId = sdkOmittedValue,
-          Object? awsAvailabilityZoneIds = sdkOmittedValue,
-          Object? awsRegion = sdkOmittedValue,
-          Object? cidr = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? egressIpAddresses = sdkOmittedValue,
-          Object? hostedZones = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? peeringConnections = sdkOmittedValue,
-          Object? projects = sdkOmittedValue,
-          Object? region = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue,
-          Object? vpcId = sdkOmittedValue}) =>
-      Network(
-        awsAccountId: identical(awsAccountId, sdkOmittedValue)
-            ? this.awsAccountId
-            : awsAccountId as String,
-        awsAvailabilityZoneIds:
-            identical(awsAvailabilityZoneIds, sdkOmittedValue)
-                ? this.awsAvailabilityZoneIds
-                : awsAvailabilityZoneIds as SdkOptional<List<String>>,
-        awsRegion: identical(awsRegion, sdkOmittedValue)
-            ? this.awsRegion
-            : awsRegion as String,
-        cidr: identical(cidr, sdkOmittedValue) ? this.cidr : cidr as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        egressIpAddresses: identical(egressIpAddresses, sdkOmittedValue)
-            ? this.egressIpAddresses
-            : egressIpAddresses as SdkOptional<List<String>>,
-        hostedZones: identical(hostedZones, sdkOmittedValue)
-            ? this.hostedZones
-            : hostedZones as SdkOptional<NetworkHostedZones>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        peeringConnections: identical(peeringConnections, sdkOmittedValue)
-            ? this.peeringConnections
-            : peeringConnections as SdkOptional<NetworkPeeringConnections>,
-        projects: identical(projects, sdkOmittedValue)
-            ? this.projects
-            : projects as SdkOptional<NetworkProjects>,
-        region: identical(region, sdkOmittedValue)
-            ? this.region
-            : region as SdkOptional<String>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as NetworkStatus,
-        teamId:
-            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-        vpcId: identical(vpcId, sdkOmittedValue)
-            ? this.vpcId
-            : vpcId as SdkOptional<String>,
-      );
+  Network _copyWith({Object? awsAccountId = sdkOmittedValue, Object? awsAvailabilityZoneIds = sdkOmittedValue, Object? awsRegion = sdkOmittedValue, Object? cidr = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? egressIpAddresses = sdkOmittedValue, Object? hostedZones = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? peeringConnections = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? region = sdkOmittedValue, Object? status = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? vpcId = sdkOmittedValue}) => Network(
+    awsAccountId: identical(awsAccountId, sdkOmittedValue) ? this.awsAccountId : awsAccountId as String,
+    awsAvailabilityZoneIds: identical(awsAvailabilityZoneIds, sdkOmittedValue) ? this.awsAvailabilityZoneIds : awsAvailabilityZoneIds as SdkOptional<List<String>>,
+    awsRegion: identical(awsRegion, sdkOmittedValue) ? this.awsRegion : awsRegion as String,
+    cidr: identical(cidr, sdkOmittedValue) ? this.cidr : cidr as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    egressIpAddresses: identical(egressIpAddresses, sdkOmittedValue) ? this.egressIpAddresses : egressIpAddresses as SdkOptional<List<String>>,
+    hostedZones: identical(hostedZones, sdkOmittedValue) ? this.hostedZones : hostedZones as SdkOptional<NetworkHostedZones>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    peeringConnections: identical(peeringConnections, sdkOmittedValue) ? this.peeringConnections : peeringConnections as SdkOptional<NetworkPeeringConnections>,
+    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<NetworkProjects>,
+    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<String>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as NetworkStatus,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+    vpcId: identical(vpcId, sdkOmittedValue) ? this.vpcId : vpcId as SdkOptional<String>,
+  );
 
   factory Network.fromJson(Map<String, dynamic> json) => Network(
-        awsAccountId: (json['awsAccountId'] as String?)!,
-        awsAvailabilityZoneIds: json['awsAvailabilityZoneIds'] != null
-            ? SdkPresent(((json['awsAvailabilityZoneIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        awsRegion: (json['awsRegion'] as String?)!,
-        cidr: (json['cidr'] as String?)!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        egressIpAddresses: json['egressIpAddresses'] != null
-            ? SdkPresent(((json['egressIpAddresses'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        hostedZones: json['hostedZones'] != null
-            ? SdkPresent((json['hostedZones'] != null
-                ? NetworkHostedZones.fromJson(
-                    json['hostedZones'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        peeringConnections: json['peeringConnections'] != null
-            ? SdkPresent((json['peeringConnections'] != null
-                ? NetworkPeeringConnections.fromJson(
-                    json['peeringConnections'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        projects: json['projects'] != null
-            ? SdkPresent((json['projects'] != null
-                ? NetworkProjects.fromJson(
-                    json['projects'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        region: json['region'] != null
-            ? SdkPresent((json['region'] as String?)!)
-            : const SdkOmitted(),
-        status: (json['status'] != null
-            ? NetworkStatus.fromJson(json['status'] as String)
-            : null)!,
-        teamId: (json['teamId'] as String?)!,
-        vpcId: json['vpcId'] != null
-            ? SdkPresent((json['vpcId'] as String?)!)
-            : const SdkOmitted(),
-      );
+    awsAccountId: (json['awsAccountId'] as String?)!,
+    awsAvailabilityZoneIds: json['awsAvailabilityZoneIds'] != null ? SdkPresent(((json['awsAvailabilityZoneIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    awsRegion: (json['awsRegion'] as String?)!,
+    cidr: (json['cidr'] as String?)!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    egressIpAddresses: json['egressIpAddresses'] != null ? SdkPresent(((json['egressIpAddresses'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    hostedZones: json['hostedZones'] != null ? SdkPresent((json['hostedZones'] != null ? NetworkHostedZones.fromJson(json['hostedZones'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    peeringConnections: json['peeringConnections'] != null ? SdkPresent((json['peeringConnections'] != null ? NetworkPeeringConnections.fromJson(json['peeringConnections'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    projects: json['projects'] != null ? SdkPresent((json['projects'] != null ? NetworkProjects.fromJson(json['projects'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    region: json['region'] != null ? SdkPresent((json['region'] as String?)!) : const SdkOmitted(),
+    status: (json['status'] != null ? NetworkStatus.fromJson(json['status'] as String) : null)!,
+    teamId: (json['teamId'] as String?)!,
+    vpcId: json['vpcId'] != null ? SdkPresent((json['vpcId'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'awsAccountId': awsAccountId,
-        ...switch (awsAvailabilityZoneIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'awsAvailabilityZoneIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'awsRegion': awsRegion,
-        'cidr': cidr,
-        'createdAt': createdAt,
-        ...switch (egressIpAddresses) {
-          SdkPresent<List<String>>(value: final value) => {
-              'egressIpAddresses': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hostedZones) {
-          SdkPresent<NetworkHostedZones>(value: final value) => {
-              'hostedZones': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        ...switch (peeringConnections) {
-          SdkPresent<NetworkPeeringConnections>(value: final value) => {
-              'peeringConnections': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projects) {
-          SdkPresent<NetworkProjects>(value: final value) => {
-              'projects': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (region) {
-          SdkPresent<String>(value: final value) => {
-              'region': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'status': status.toJson(),
-        'teamId': teamId,
-        ...switch (vpcId) {
-          SdkPresent<String>(value: final value) => {
-              'vpcId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'awsAccountId': awsAccountId,
+    ...switch (awsAvailabilityZoneIds) {
+      SdkPresent<List<String>>(value: final value) => {'awsAvailabilityZoneIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    'awsRegion': awsRegion,
+    'cidr': cidr,
+    'createdAt': createdAt,
+    ...switch (egressIpAddresses) {
+      SdkPresent<List<String>>(value: final value) => {'egressIpAddresses': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hostedZones) {
+      SdkPresent<NetworkHostedZones>(value: final value) => {'hostedZones': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    ...switch (peeringConnections) {
+      SdkPresent<NetworkPeeringConnections>(value: final value) => {'peeringConnections': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projects) {
+      SdkPresent<NetworkProjects>(value: final value) => {'projects': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (region) {
+      SdkPresent<String>(value: final value) => {'region': value,},
+      _ => const <String, dynamic>{},
+    },
+    'status': status.toJson(),
+    'teamId': teamId,
+    ...switch (vpcId) {
+      SdkPresent<String>(value: final value) => {'vpcId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// A PrivateLink endpoint, which connects a project to an AWS VPC endpoint service in a single region so that traffic reaches the service over AWS PrivateLink rather than the public internet.
 class PrivateLinkEndpoint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The regional DNS names assigned to the endpoint by AWS. Use these to reach the service when private DNS is not enabled.
   final SdkOptional<List<String>> awsDnsEntries;
-
   /// The AWS VPC endpoint service the endpoint connects to.
   final String awsServiceName;
-
   /// Timestamp in milliseconds since the UNIX epoch for when the endpoint was created.
   final double createdAt;
-
   /// The unique identifier of the PrivateLink endpoint.
   final String endpointId;
-
   /// The name of the PrivateLink endpoint, shown in the Vercel dashboard.
   final String name;
-
   /// The private DNS names of the endpoint service, populated when private DNS is enabled for the endpoint.
   final SdkOptional<List<String>> privateDnsNames;
-
   /// The identifier of the project the PrivateLink endpoint belongs to.
   final String projectId;
-
   /// The current state of the endpoint. - `creating`: the endpoint is being created. - `pending-acceptance`: waiting for the endpoint service owner to accept the connection. Only occurs for services that require manual acceptance. - `provisioning`: the connection was accepted and AWS is finishing setup. - `available`: the endpoint is fully provisioned and ready to use. - `rejected`: the endpoint service owner rejected the connection. - `failed`: the endpoint could not be provisioned. - `deleting`: the endpoint is being deleted.
   final PrivateLinkEndpointStatus status;
-
   /// A human-readable explanation of why the endpoint could not be provisioned. Only set when `status` is `failed`, and absent for every other status including `rejected`, since AWS does not report a rejection reason.
   final SdkOptional<String> statusMessage;
-
   /// The identifier of the team that owns the PrivateLink endpoint.
   final String teamId;
-
   /// Timestamp in milliseconds since the UNIX epoch for when the endpoint was last updated.
   final double updatedAt;
-
   /// The Vercel region the endpoint is provisioned in.
   final String vercelRegion;
-
   /// The identifier of the underlying AWS VPC endpoint. Absent until AWS has created the endpoint.
   final SdkOptional<String> vpcEndpointId;
 
-  const PrivateLinkEndpoint(
-      {this.awsDnsEntries = const SdkOmitted(),
-      required this.awsServiceName,
-      required this.createdAt,
-      required this.endpointId,
-      required this.name,
-      this.privateDnsNames = const SdkOmitted(),
-      required this.projectId,
-      required this.status,
-      this.statusMessage = const SdkOmitted(),
-      required this.teamId,
-      required this.updatedAt,
-      required this.vercelRegion,
-      this.vpcEndpointId = const SdkOmitted()});
+  const PrivateLinkEndpoint({this.awsDnsEntries = const SdkOmitted(), required this.awsServiceName, required this.createdAt, required this.endpointId, required this.name, this.privateDnsNames = const SdkOmitted(), required this.projectId, required this.status, this.statusMessage = const SdkOmitted(), required this.teamId, required this.updatedAt, required this.vercelRegion, this.vpcEndpointId = const SdkOmitted()});
 
-  PrivateLinkEndpoint Function(
-      {SdkOptional<List<String>> awsDnsEntries,
-      String awsServiceName,
-      double createdAt,
-      String endpointId,
-      String name,
-      SdkOptional<List<String>> privateDnsNames,
-      String projectId,
-      PrivateLinkEndpointStatus status,
-      SdkOptional<String> statusMessage,
-      String teamId,
-      double updatedAt,
-      String vercelRegion,
-      SdkOptional<String> vpcEndpointId}) get copyWith => _copyWith;
+  PrivateLinkEndpoint Function({SdkOptional<List<String>> awsDnsEntries, String awsServiceName, double createdAt, String endpointId, String name, SdkOptional<List<String>> privateDnsNames, String projectId, PrivateLinkEndpointStatus status, SdkOptional<String> statusMessage, String teamId, double updatedAt, String vercelRegion, SdkOptional<String> vpcEndpointId}) get copyWith => _copyWith;
 
-  PrivateLinkEndpoint _copyWith(
-          {Object? awsDnsEntries = sdkOmittedValue,
-          Object? awsServiceName = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? endpointId = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? privateDnsNames = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? statusMessage = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? vercelRegion = sdkOmittedValue,
-          Object? vpcEndpointId = sdkOmittedValue}) =>
-      PrivateLinkEndpoint(
-        awsDnsEntries: identical(awsDnsEntries, sdkOmittedValue)
-            ? this.awsDnsEntries
-            : awsDnsEntries as SdkOptional<List<String>>,
-        awsServiceName: identical(awsServiceName, sdkOmittedValue)
-            ? this.awsServiceName
-            : awsServiceName as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        endpointId: identical(endpointId, sdkOmittedValue)
-            ? this.endpointId
-            : endpointId as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        privateDnsNames: identical(privateDnsNames, sdkOmittedValue)
-            ? this.privateDnsNames
-            : privateDnsNames as SdkOptional<List<String>>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as PrivateLinkEndpointStatus,
-        statusMessage: identical(statusMessage, sdkOmittedValue)
-            ? this.statusMessage
-            : statusMessage as SdkOptional<String>,
-        teamId:
-            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-        vercelRegion: identical(vercelRegion, sdkOmittedValue)
-            ? this.vercelRegion
-            : vercelRegion as String,
-        vpcEndpointId: identical(vpcEndpointId, sdkOmittedValue)
-            ? this.vpcEndpointId
-            : vpcEndpointId as SdkOptional<String>,
-      );
+  PrivateLinkEndpoint _copyWith({Object? awsDnsEntries = sdkOmittedValue, Object? awsServiceName = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? endpointId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? privateDnsNames = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? status = sdkOmittedValue, Object? statusMessage = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? vercelRegion = sdkOmittedValue, Object? vpcEndpointId = sdkOmittedValue}) => PrivateLinkEndpoint(
+    awsDnsEntries: identical(awsDnsEntries, sdkOmittedValue) ? this.awsDnsEntries : awsDnsEntries as SdkOptional<List<String>>,
+    awsServiceName: identical(awsServiceName, sdkOmittedValue) ? this.awsServiceName : awsServiceName as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    endpointId: identical(endpointId, sdkOmittedValue) ? this.endpointId : endpointId as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    privateDnsNames: identical(privateDnsNames, sdkOmittedValue) ? this.privateDnsNames : privateDnsNames as SdkOptional<List<String>>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    status: identical(status, sdkOmittedValue) ? this.status : status as PrivateLinkEndpointStatus,
+    statusMessage: identical(statusMessage, sdkOmittedValue) ? this.statusMessage : statusMessage as SdkOptional<String>,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+    vercelRegion: identical(vercelRegion, sdkOmittedValue) ? this.vercelRegion : vercelRegion as String,
+    vpcEndpointId: identical(vpcEndpointId, sdkOmittedValue) ? this.vpcEndpointId : vpcEndpointId as SdkOptional<String>,
+  );
 
-  factory PrivateLinkEndpoint.fromJson(Map<String, dynamic> json) =>
-      PrivateLinkEndpoint(
-        awsDnsEntries: json['awsDnsEntries'] != null
-            ? SdkPresent(((json['awsDnsEntries'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        awsServiceName: (json['awsServiceName'] as String?)!,
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        endpointId: (json['endpointId'] as String?)!,
-        name: (json['name'] as String?)!,
-        privateDnsNames: json['privateDnsNames'] != null
-            ? SdkPresent(((json['privateDnsNames'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        projectId: (json['projectId'] as String?)!,
-        status: (json['status'] != null
-            ? PrivateLinkEndpointStatus.fromJson(json['status'] as String)
-            : null)!,
-        statusMessage: json['statusMessage'] != null
-            ? SdkPresent((json['statusMessage'] as String?)!)
-            : const SdkOmitted(),
-        teamId: (json['teamId'] as String?)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-        vercelRegion: (json['vercelRegion'] as String?)!,
-        vpcEndpointId: json['vpcEndpointId'] != null
-            ? SdkPresent((json['vpcEndpointId'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory PrivateLinkEndpoint.fromJson(Map<String, dynamic> json) => PrivateLinkEndpoint(
+    awsDnsEntries: json['awsDnsEntries'] != null ? SdkPresent(((json['awsDnsEntries'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    awsServiceName: (json['awsServiceName'] as String?)!,
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    endpointId: (json['endpointId'] as String?)!,
+    name: (json['name'] as String?)!,
+    privateDnsNames: json['privateDnsNames'] != null ? SdkPresent(((json['privateDnsNames'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    projectId: (json['projectId'] as String?)!,
+    status: (json['status'] != null ? PrivateLinkEndpointStatus.fromJson(json['status'] as String) : null)!,
+    statusMessage: json['statusMessage'] != null ? SdkPresent((json['statusMessage'] as String?)!) : const SdkOmitted(),
+    teamId: (json['teamId'] as String?)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+    vercelRegion: (json['vercelRegion'] as String?)!,
+    vpcEndpointId: json['vpcEndpointId'] != null ? SdkPresent((json['vpcEndpointId'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (awsDnsEntries) {
-          SdkPresent<List<String>>(value: final value) => {
-              'awsDnsEntries': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'awsServiceName': awsServiceName,
-        'createdAt': createdAt,
-        'endpointId': endpointId,
-        'name': name,
-        ...switch (privateDnsNames) {
-          SdkPresent<List<String>>(value: final value) => {
-              'privateDnsNames': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'projectId': projectId,
-        'status': status.toJson(),
-        ...switch (statusMessage) {
-          SdkPresent<String>(value: final value) => {
-              'statusMessage': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'teamId': teamId,
-        'updatedAt': updatedAt,
-        'vercelRegion': vercelRegion,
-        ...switch (vpcEndpointId) {
-          SdkPresent<String>(value: final value) => {
-              'vpcEndpointId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (awsDnsEntries) {
+      SdkPresent<List<String>>(value: final value) => {'awsDnsEntries': value,},
+      _ => const <String, dynamic>{},
+    },
+    'awsServiceName': awsServiceName,
+    'createdAt': createdAt,
+    'endpointId': endpointId,
+    'name': name,
+    ...switch (privateDnsNames) {
+      SdkPresent<List<String>>(value: final value) => {'privateDnsNames': value,},
+      _ => const <String, dynamic>{},
+    },
+    'projectId': projectId,
+    'status': status.toJson(),
+    ...switch (statusMessage) {
+      SdkPresent<String>(value: final value) => {'statusMessage': value,},
+      _ => const <String, dynamic>{},
+    },
+    'teamId': teamId,
+    'updatedAt': updatedAt,
+    'vercelRegion': vercelRegion,
+    ...switch (vpcEndpointId) {
+      SdkPresent<String>(value: final value) => {'vpcEndpointId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

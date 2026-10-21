@@ -41,36 +41,25 @@ Future<ListUserEventsResponse> listUserEvents(ClientConfig config,
   return (await sdkRequest<ListUserEventsResponse>('GET', '/v3/events',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'types': SdkQueryValue(SdkUtils.unwrapOptional(types),
-                style: 'form', explode: true),
-            'userId': SdkQueryValue(SdkUtils.unwrapOptional(userId),
-                style: 'form', explode: true),
-            'principalId': SdkQueryValue(SdkUtils.unwrapOptional(principalId),
-                style: 'form', explode: true),
-            'projectIds': SdkQueryValue(SdkUtils.unwrapOptional(projectIds),
-                style: 'form', explode: true),
-            'entityId': SdkQueryValue(SdkUtils.unwrapOptional(entityId),
-                style: 'form', explode: true),
-            'withPayload': SdkQueryValue(SdkUtils.unwrapOptional(withPayload),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'types': SdkQueryValue(SdkUtils.unwrapOptional(types), style: 'form', explode: true),
+            'userId': SdkQueryValue(SdkUtils.unwrapOptional(userId), style: 'form', explode: true),
+            'principalId': SdkQueryValue(SdkUtils.unwrapOptional(principalId), style: 'form', explode: true),
+            'projectIds': SdkQueryValue(SdkUtils.unwrapOptional(projectIds), style: 'form', explode: true),
+            'entityId': SdkQueryValue(SdkUtils.unwrapOptional(entityId), style: 'form', explode: true),
+            'withPayload': SdkQueryValue(SdkUtils.unwrapOptional(withPayload), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listUserEvents',
-          fromJsonRaw: (value) =>
-              ListUserEventsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListUserEventsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists user-facing event types and their descriptions, along with the event categories. Use `teamId` or `slug` to select the team context for the request. Refer to the returned types and categories when filtering or presenting user events.
 ///
@@ -85,18 +74,16 @@ Future<ListEventTypesResponse> listEventTypes(ClientConfig config,
   return (await sdkRequest<ListEventTypesResponse>('GET', '/v1/events/types',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listEventTypes',
-          fromJsonRaw: (value) =>
-              ListEventTypesResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListEventTypesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves information about the authenticated user. Use this endpoint to obtain the user information associated with the request's authentication context.
 ///
@@ -107,11 +94,11 @@ Future<GetAuthUserResponse> getAuthUser(ClientConfig config,
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getAuthUser',
-          fromJsonRaw: (value) =>
-              GetAuthUserResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetAuthUserResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Starts the authenticated user's account deletion process by sending a confirmation email. You must follow the link in that email to proceed with deletion; you can optionally include `reasons` to describe why the account is being deleted.
 ///
@@ -120,16 +107,14 @@ Future<GetAuthUserResponse> getAuthUser(ClientConfig config,
 /// [reasons] Optional array of objects that describe the reason why the User
 ///   account is being deleted.
 Future<RequestDeleteResponse> requestDelete(ClientConfig config,
-    {SdkOptional<List<RequestDeleteRequestBodyReasonsItem>> reasons =
-        const SdkOmitted(),
+    {SdkOptional<List<RequestDeleteRequestBodyReasonsItem>> reasons = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<RequestDeleteResponse>('DELETE', '/v1/user',
           config: config,
           body: {'reasons': SdkUtils.unwrapOptional(reasons)},
           decoder: SdkResponseDecoder.json,
           operationId: 'requestDelete',
-          fromJsonRaw: (value) =>
-              RequestDeleteResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RequestDeleteResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

@@ -8,504 +8,267 @@ part of 'inline.dart';
 class GetMicrofrontendsConfigForProjectResponseConfigOptions {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// If you want to disable the overrides for the site. For example, if you are managing rewrites between applications externally, you may wish to disable the overrides on the toolbar as they will have no effect. See https://vercel.com/docs/microfrontends/managing-microfrontends/vercel-toolbar#routing-overrides.
-  final SdkOptional<
-          GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides>
-      disableOverrides;
-
+  final SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides> disableOverrides;
   /// The port number used by the local proxy server. The default value is 3024. See https://vercel.com/docs/microfrontends/local-development.
   final SdkOptional<double> localProxyPort;
 
-  const GetMicrofrontendsConfigForProjectResponseConfigOptions(
-      {this.disableOverrides = const SdkOmitted(),
-      this.localProxyPort = const SdkOmitted()});
+  const GetMicrofrontendsConfigForProjectResponseConfigOptions({this.disableOverrides = const SdkOmitted(), this.localProxyPort = const SdkOmitted()});
 
-  GetMicrofrontendsConfigForProjectResponseConfigOptions Function(
-      {SdkOptional<
-              GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides>
-          disableOverrides,
-      SdkOptional<double> localProxyPort}) get copyWith => _copyWith;
+  GetMicrofrontendsConfigForProjectResponseConfigOptions Function({SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides> disableOverrides, SdkOptional<double> localProxyPort}) get copyWith => _copyWith;
 
-  GetMicrofrontendsConfigForProjectResponseConfigOptions _copyWith(
-          {Object? disableOverrides = sdkOmittedValue,
-          Object? localProxyPort = sdkOmittedValue}) =>
-      GetMicrofrontendsConfigForProjectResponseConfigOptions(
-        disableOverrides: identical(disableOverrides, sdkOmittedValue)
-            ? this.disableOverrides
-            : disableOverrides as SdkOptional<
-                GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides>,
-        localProxyPort: identical(localProxyPort, sdkOmittedValue)
-            ? this.localProxyPort
-            : localProxyPort as SdkOptional<double>,
-      );
+  GetMicrofrontendsConfigForProjectResponseConfigOptions _copyWith({Object? disableOverrides = sdkOmittedValue, Object? localProxyPort = sdkOmittedValue}) => GetMicrofrontendsConfigForProjectResponseConfigOptions(
+    disableOverrides: identical(disableOverrides, sdkOmittedValue) ? this.disableOverrides : disableOverrides as SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides>,
+    localProxyPort: identical(localProxyPort, sdkOmittedValue) ? this.localProxyPort : localProxyPort as SdkOptional<double>,
+  );
 
-  factory GetMicrofrontendsConfigForProjectResponseConfigOptions.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsConfigForProjectResponseConfigOptions(
-        disableOverrides: json['disableOverrides'] != null
-            ? SdkPresent((json['disableOverrides'] != null
-                ? GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides
-                    .fromJson(json['disableOverrides'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        localProxyPort: json['localProxyPort'] != null
-            ? SdkPresent(((json['localProxyPort'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsConfigForProjectResponseConfigOptions.fromJson(Map<String, dynamic> json) => GetMicrofrontendsConfigForProjectResponseConfigOptions(
+    disableOverrides: json['disableOverrides'] != null ? SdkPresent((json['disableOverrides'] != null ? GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides.fromJson(json['disableOverrides'] as bool) : null)!) : const SdkOmitted(),
+    localProxyPort: json['localProxyPort'] != null ? SdkPresent(((json['localProxyPort'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (disableOverrides) {
-          SdkPresent<
-                GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides>(
-            value: final value
-          ) =>
-            {
-              'disableOverrides': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (localProxyPort) {
-          SdkPresent<double>(value: final value) => {
-              'localProxyPort': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (disableOverrides) {
+      SdkPresent<GetMicrofrontendsConfigForProjectResponseConfigOptionsDisableOverrides>(value: final value) => {'disableOverrides': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (localProxyPort) {
+      SdkPresent<double>(value: final value) => {'localProxyPort': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// projectIds are added when the config is uploaded to s3 deployment assets.
 class GetMicrofrontendsConfigForProjectResponseConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// See https://openapi.vercel.sh/microfrontends.json.
   final SdkOptional<String> schema;
   final Map<String, dynamic> applications;
-
   /// Optional configuration options for the microfrontend.
-  final SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptions>
-      options;
-
+  final SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptions> options;
   /// The version of the microfrontends config schema.
-  final SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigVersion>
-      version;
+  final SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigVersion> version;
 
-  const GetMicrofrontendsConfigForProjectResponseConfig(
-      {this.schema = const SdkOmitted(),
-      required this.applications,
-      this.options = const SdkOmitted(),
-      this.version = const SdkOmitted()});
+  const GetMicrofrontendsConfigForProjectResponseConfig({this.schema = const SdkOmitted(), required this.applications, this.options = const SdkOmitted(), this.version = const SdkOmitted()});
 
-  GetMicrofrontendsConfigForProjectResponseConfig Function(
-      {SdkOptional<String> schema,
-      Map<String, dynamic> applications,
-      SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptions>
-          options,
-      SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigVersion>
-          version}) get copyWith => _copyWith;
+  GetMicrofrontendsConfigForProjectResponseConfig Function({SdkOptional<String> schema, Map<String, dynamic> applications, SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptions> options, SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigVersion> version}) get copyWith => _copyWith;
 
-  GetMicrofrontendsConfigForProjectResponseConfig _copyWith(
-          {Object? schema = sdkOmittedValue,
-          Object? applications = sdkOmittedValue,
-          Object? options = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      GetMicrofrontendsConfigForProjectResponseConfig(
-        schema: identical(schema, sdkOmittedValue)
-            ? this.schema
-            : schema as SdkOptional<String>,
-        applications: identical(applications, sdkOmittedValue)
-            ? this.applications
-            : applications as Map<String, dynamic>,
-        options: identical(options, sdkOmittedValue)
-            ? this.options
-            : options as SdkOptional<
-                GetMicrofrontendsConfigForProjectResponseConfigOptions>,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as SdkOptional<
-                GetMicrofrontendsConfigForProjectResponseConfigVersion>,
-      );
+  GetMicrofrontendsConfigForProjectResponseConfig _copyWith({Object? schema = sdkOmittedValue, Object? applications = sdkOmittedValue, Object? options = sdkOmittedValue, Object? version = sdkOmittedValue}) => GetMicrofrontendsConfigForProjectResponseConfig(
+    schema: identical(schema, sdkOmittedValue) ? this.schema : schema as SdkOptional<String>,
+    applications: identical(applications, sdkOmittedValue) ? this.applications : applications as Map<String, dynamic>,
+    options: identical(options, sdkOmittedValue) ? this.options : options as SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigOptions>,
+    version: identical(version, sdkOmittedValue) ? this.version : version as SdkOptional<GetMicrofrontendsConfigForProjectResponseConfigVersion>,
+  );
 
-  factory GetMicrofrontendsConfigForProjectResponseConfig.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsConfigForProjectResponseConfig(
-        schema: json['\$schema'] != null
-            ? SdkPresent((json['\$schema'] as String?)!)
-            : const SdkOmitted(),
-        applications: (json['applications'] == null
-            ? null
-            : json['applications'] as Map<String, dynamic>)!,
-        options: json['options'] != null
-            ? SdkPresent((json['options'] != null
-                ? GetMicrofrontendsConfigForProjectResponseConfigOptions
-                    .fromJson(json['options'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        version: json['version'] != null
-            ? SdkPresent((json['version'] != null
-                ? GetMicrofrontendsConfigForProjectResponseConfigVersion
-                    .fromJson(json['version'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsConfigForProjectResponseConfig.fromJson(Map<String, dynamic> json) => GetMicrofrontendsConfigForProjectResponseConfig(
+    schema: json['\$schema'] != null ? SdkPresent((json['\$schema'] as String?)!) : const SdkOmitted(),
+    applications: (json['applications'] == null ? null : json['applications'] as Map<String, dynamic>)!,
+    options: json['options'] != null ? SdkPresent((json['options'] != null ? GetMicrofrontendsConfigForProjectResponseConfigOptions.fromJson(json['options'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    version: json['version'] != null ? SdkPresent((json['version'] != null ? GetMicrofrontendsConfigForProjectResponseConfigVersion.fromJson(json['version'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (schema) {
-          SdkPresent<String>(value: final value) => {
-              '\$schema': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'applications': applications,
-        ...switch (options) {
-          SdkPresent<GetMicrofrontendsConfigForProjectResponseConfigOptions>(
-            value: final value
-          ) =>
-            {
-              'options': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (version) {
-          SdkPresent<GetMicrofrontendsConfigForProjectResponseConfigVersion>(
-            value: final value
-          ) =>
-            {
-              'version': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (schema) {
+      SdkPresent<String>(value: final value) => {'\$schema': value,},
+      _ => const <String, dynamic>{},
+    },
+    'applications': applications,
+    ...switch (options) {
+      SdkPresent<GetMicrofrontendsConfigForProjectResponseConfigOptions>(value: final value) => {'options': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (version) {
+      SdkPresent<GetMicrofrontendsConfigForProjectResponseConfigVersion>(value: final value) => {'version': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetMicrofrontendsConfigForProjectResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// projectIds are added when the config is uploaded to s3 deployment assets.
   final GetMicrofrontendsConfigForProjectResponseConfig? config;
 
   const GetMicrofrontendsConfigForProjectResponse({required this.config});
 
-  GetMicrofrontendsConfigForProjectResponse Function(
-          {GetMicrofrontendsConfigForProjectResponseConfig? config})
-      get copyWith => _copyWith;
+  GetMicrofrontendsConfigForProjectResponse Function({GetMicrofrontendsConfigForProjectResponseConfig? config}) get copyWith => _copyWith;
 
-  GetMicrofrontendsConfigForProjectResponse _copyWith(
-          {Object? config = sdkOmittedValue}) =>
-      GetMicrofrontendsConfigForProjectResponse(
-        config: identical(config, sdkOmittedValue)
-            ? this.config
-            : config as GetMicrofrontendsConfigForProjectResponseConfig?,
-      );
+  GetMicrofrontendsConfigForProjectResponse _copyWith({Object? config = sdkOmittedValue}) => GetMicrofrontendsConfigForProjectResponse(
+    config: identical(config, sdkOmittedValue) ? this.config : config as GetMicrofrontendsConfigForProjectResponseConfig?,
+  );
 
-  factory GetMicrofrontendsConfigForProjectResponse.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsConfigForProjectResponse(
-        config: json.containsKey('config')
-            ? json['config'] != null
-                ? GetMicrofrontendsConfigForProjectResponseConfig.fromJson(
-                    json['config'] as Map<String, dynamic>)
-                : null
-            : throw ArgumentError.value(
-                null, 'config', 'Required property is missing'),
-      );
+  factory GetMicrofrontendsConfigForProjectResponse.fromJson(Map<String, dynamic> json) => GetMicrofrontendsConfigForProjectResponse(
+    config: json.containsKey('config') ? json['config'] != null ? GetMicrofrontendsConfigForProjectResponseConfig.fromJson(json['config'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'config', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'config': config?.toJson(),
-      };
+    'config': config?.toJson(),
+  };
 }
 
 /// The default app for the new microfrontend group
 class CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The id of the project that will be used as the default app for the new microfrontend group
   final String projectId;
-
   /// The default route for the default app of the new microfrontend group
   final SdkOptional<String> defaultRoute;
 
-  const CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp(
-      {required this.projectId, this.defaultRoute = const SdkOmitted()});
+  const CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp({required this.projectId, this.defaultRoute = const SdkOmitted()});
 
-  CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp Function(
-      {String projectId,
-      SdkOptional<String> defaultRoute}) get copyWith => _copyWith;
+  CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp Function({String projectId, SdkOptional<String> defaultRoute}) get copyWith => _copyWith;
 
-  CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? defaultRoute = sdkOmittedValue}) =>
-      CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        defaultRoute: identical(defaultRoute, sdkOmittedValue)
-            ? this.defaultRoute
-            : defaultRoute as SdkOptional<String>,
-      );
+  CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp _copyWith({Object? projectId = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue}) => CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
+  );
 
-  factory CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp.fromJson(
-          Map<String, dynamic> json) =>
-      CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp(
-        projectId: (json['projectId'] as String?)!,
-        defaultRoute: json['defaultRoute'] != null
-            ? SdkPresent((json['defaultRoute'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp.fromJson(Map<String, dynamic> json) => CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp(
+    projectId: (json['projectId'] as String?)!,
+    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        ...switch (defaultRoute) {
-          SdkPresent<String>(value: final value) => {
-              'defaultRoute': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'projectId': projectId,
+    ...switch (defaultRoute) {
+      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The id of the project that will be used in the new microfrontend group
   final String projectId;
-
   /// The default route for the application in the new microfrontend group
   final SdkOptional<String> defaultRoute;
 
-  const CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem(
-      {required this.projectId, this.defaultRoute = const SdkOmitted()});
+  const CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem({required this.projectId, this.defaultRoute = const SdkOmitted()});
 
-  CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem
-          Function({String projectId, SdkOptional<String> defaultRoute})
-      get copyWith => _copyWith;
+  CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem Function({String projectId, SdkOptional<String> defaultRoute}) get copyWith => _copyWith;
 
-  CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem
-      _copyWith(
-              {Object? projectId = sdkOmittedValue,
-              Object? defaultRoute = sdkOmittedValue}) =>
-          CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem(
-            projectId: identical(projectId, sdkOmittedValue)
-                ? this.projectId
-                : projectId as String,
-            defaultRoute: identical(defaultRoute, sdkOmittedValue)
-                ? this.defaultRoute
-                : defaultRoute as SdkOptional<String>,
-          );
+  CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem _copyWith({Object? projectId = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue}) => CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
+  );
 
-  factory CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem(
-        projectId: (json['projectId'] as String?)!,
-        defaultRoute: json['defaultRoute'] != null
-            ? SdkPresent((json['defaultRoute'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem.fromJson(Map<String, dynamic> json) => CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem(
+    projectId: (json['projectId'] as String?)!,
+    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        ...switch (defaultRoute) {
-          SdkPresent<String>(value: final value) => {
-              'defaultRoute': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'projectId': projectId,
+    ...switch (defaultRoute) {
+      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateMicrofrontendsGroupWithApplicationsRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The name of the microfrontends group that will be used to identify the group
   final String groupName;
-
   /// The default app for the new microfrontend group
-  final CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp
-      defaultApp;
-
+  final CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp defaultApp;
   /// The list of other applications that will be used in the new microfrontend group
-  final List<
-          CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem>
-      otherApplications;
+  final List<CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem> otherApplications;
 
-  const CreateMicrofrontendsGroupWithApplicationsRequestBody(
-      {required this.groupName,
-      required this.defaultApp,
-      required this.otherApplications});
+  const CreateMicrofrontendsGroupWithApplicationsRequestBody({required this.groupName, required this.defaultApp, required this.otherApplications});
 
-  CreateMicrofrontendsGroupWithApplicationsRequestBody Function(
-      {String groupName,
-      CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp defaultApp,
-      List<CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem>
-          otherApplications}) get copyWith => _copyWith;
+  CreateMicrofrontendsGroupWithApplicationsRequestBody Function({String groupName, CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp defaultApp, List<CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem> otherApplications}) get copyWith => _copyWith;
 
-  CreateMicrofrontendsGroupWithApplicationsRequestBody _copyWith(
-          {Object? groupName = sdkOmittedValue,
-          Object? defaultApp = sdkOmittedValue,
-          Object? otherApplications = sdkOmittedValue}) =>
-      CreateMicrofrontendsGroupWithApplicationsRequestBody(
-        groupName: identical(groupName, sdkOmittedValue)
-            ? this.groupName
-            : groupName as String,
-        defaultApp: identical(defaultApp, sdkOmittedValue)
-            ? this.defaultApp
-            : defaultApp
-                as CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp,
-        otherApplications: identical(otherApplications, sdkOmittedValue)
-            ? this.otherApplications
-            : otherApplications as List<
-                CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem>,
-      );
+  CreateMicrofrontendsGroupWithApplicationsRequestBody _copyWith({Object? groupName = sdkOmittedValue, Object? defaultApp = sdkOmittedValue, Object? otherApplications = sdkOmittedValue}) => CreateMicrofrontendsGroupWithApplicationsRequestBody(
+    groupName: identical(groupName, sdkOmittedValue) ? this.groupName : groupName as String,
+    defaultApp: identical(defaultApp, sdkOmittedValue) ? this.defaultApp : defaultApp as CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp,
+    otherApplications: identical(otherApplications, sdkOmittedValue) ? this.otherApplications : otherApplications as List<CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem>,
+  );
 
-  factory CreateMicrofrontendsGroupWithApplicationsRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreateMicrofrontendsGroupWithApplicationsRequestBody(
-        groupName: (json['groupName'] as String?)!,
-        defaultApp: (json['defaultApp'] != null
-            ? CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp
-                .fromJson(json['defaultApp'] as Map<String, dynamic>)
-            : null)!,
-        otherApplications: ((json['otherApplications'] as List?)
-            ?.map((e) =>
-                CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory CreateMicrofrontendsGroupWithApplicationsRequestBody.fromJson(Map<String, dynamic> json) => CreateMicrofrontendsGroupWithApplicationsRequestBody(
+    groupName: (json['groupName'] as String?)!,
+    defaultApp: (json['defaultApp'] != null ? CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp.fromJson(json['defaultApp'] as Map<String, dynamic>) : null)!,
+    otherApplications: ((json['otherApplications'] as List?)?.map((e) => CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'groupName': groupName,
-        'defaultApp': defaultApp.toJson(),
-        'otherApplications':
-            otherApplications.map((item) => item.toJson()).toList(),
-      };
+    'groupName': groupName,
+    'defaultApp': defaultApp.toJson(),
+    'otherApplications': otherApplications.map((item) => item.toJson()).toList(),
+  };
 }
 
 class CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double createdAt;
-  final CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting
-      enablePolyrepoBranchRouting;
+  final CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting enablePolyrepoBranchRouting;
   final String fallbackEnvironment;
   final String id;
   final String name;
   final String slug;
   final double updatedAt;
 
-  const CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup(
-      {required this.createdAt,
-      required this.enablePolyrepoBranchRouting,
-      required this.fallbackEnvironment,
-      required this.id,
-      required this.name,
-      required this.slug,
-      required this.updatedAt});
+  const CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup({required this.createdAt, required this.enablePolyrepoBranchRouting, required this.fallbackEnvironment, required this.id, required this.name, required this.slug, required this.updatedAt});
 
-  CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup Function(
-      {double createdAt,
-      CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting
-          enablePolyrepoBranchRouting,
-      String fallbackEnvironment,
-      String id,
-      String name,
-      String slug,
-      double updatedAt}) get copyWith => _copyWith;
+  CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup Function({double createdAt, CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting enablePolyrepoBranchRouting, String fallbackEnvironment, String id, String name, String slug, double updatedAt}) get copyWith => _copyWith;
 
-  CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup
-      _copyWith(
-              {Object? createdAt = sdkOmittedValue,
-              Object? enablePolyrepoBranchRouting = sdkOmittedValue,
-              Object? fallbackEnvironment = sdkOmittedValue,
-              Object? id = sdkOmittedValue,
-              Object? name = sdkOmittedValue,
-              Object? slug = sdkOmittedValue,
-              Object? updatedAt = sdkOmittedValue}) =>
-          CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup(
-            createdAt: identical(createdAt, sdkOmittedValue)
-                ? this.createdAt
-                : createdAt as double,
-            enablePolyrepoBranchRouting: identical(
-                    enablePolyrepoBranchRouting, sdkOmittedValue)
-                ? this.enablePolyrepoBranchRouting
-                : enablePolyrepoBranchRouting
-                    as CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting,
-            fallbackEnvironment: identical(fallbackEnvironment, sdkOmittedValue)
-                ? this.fallbackEnvironment
-                : fallbackEnvironment as String,
-            id: identical(id, sdkOmittedValue) ? this.id : id as String,
-            name: identical(name, sdkOmittedValue) ? this.name : name as String,
-            slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-            updatedAt: identical(updatedAt, sdkOmittedValue)
-                ? this.updatedAt
-                : updatedAt as double,
-          );
+  CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup _copyWith({Object? createdAt = sdkOmittedValue, Object? enablePolyrepoBranchRouting = sdkOmittedValue, Object? fallbackEnvironment = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    enablePolyrepoBranchRouting: identical(enablePolyrepoBranchRouting, sdkOmittedValue) ? this.enablePolyrepoBranchRouting : enablePolyrepoBranchRouting as CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting,
+    fallbackEnvironment: identical(fallbackEnvironment, sdkOmittedValue) ? this.fallbackEnvironment : fallbackEnvironment as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup.fromJson(
-          Map<String, dynamic> json) =>
-      CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        enablePolyrepoBranchRouting: (json['enablePolyrepoBranchRouting'] !=
-                null
-            ? CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting
-                .fromJson(json['enablePolyrepoBranchRouting'] as bool)
-            : null)!,
-        fallbackEnvironment: (json['fallbackEnvironment'] as String?)!,
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup.fromJson(Map<String, dynamic> json) => CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup(
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    enablePolyrepoBranchRouting: (json['enablePolyrepoBranchRouting'] != null ? CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroupEnablePolyrepoBranchRouting.fromJson(json['enablePolyrepoBranchRouting'] as bool) : null)!,
+    fallbackEnvironment: (json['fallbackEnvironment'] as String?)!,
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'enablePolyrepoBranchRouting': enablePolyrepoBranchRouting.toJson(),
-        'fallbackEnvironment': fallbackEnvironment,
-        'id': id,
-        'name': name,
-        'slug': slug,
-        'updatedAt': updatedAt,
-      };
+    'createdAt': createdAt,
+    'enablePolyrepoBranchRouting': enablePolyrepoBranchRouting.toJson(),
+    'fallbackEnvironment': fallbackEnvironment,
+    'id': id,
+    'name': name,
+    'slug': slug,
+    'updatedAt': updatedAt,
+  };
 }
 
 class CreateMicrofrontendsGroupWithApplicationsResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup
-      newMicrofrontendsGroup;
+  final CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup newMicrofrontendsGroup;
 
-  const CreateMicrofrontendsGroupWithApplicationsResponse(
-      {required this.newMicrofrontendsGroup});
+  const CreateMicrofrontendsGroupWithApplicationsResponse({required this.newMicrofrontendsGroup});
 
-  CreateMicrofrontendsGroupWithApplicationsResponse Function(
-      {CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup
-          newMicrofrontendsGroup}) get copyWith => _copyWith;
+  CreateMicrofrontendsGroupWithApplicationsResponse Function({CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup newMicrofrontendsGroup}) get copyWith => _copyWith;
 
-  CreateMicrofrontendsGroupWithApplicationsResponse _copyWith(
-          {Object? newMicrofrontendsGroup = sdkOmittedValue}) =>
-      CreateMicrofrontendsGroupWithApplicationsResponse(
-        newMicrofrontendsGroup: identical(
-                newMicrofrontendsGroup, sdkOmittedValue)
-            ? this.newMicrofrontendsGroup
-            : newMicrofrontendsGroup
-                as CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup,
-      );
+  CreateMicrofrontendsGroupWithApplicationsResponse _copyWith({Object? newMicrofrontendsGroup = sdkOmittedValue}) => CreateMicrofrontendsGroupWithApplicationsResponse(
+    newMicrofrontendsGroup: identical(newMicrofrontendsGroup, sdkOmittedValue) ? this.newMicrofrontendsGroup : newMicrofrontendsGroup as CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup,
+  );
 
-  factory CreateMicrofrontendsGroupWithApplicationsResponse.fromJson(
-          Map<String, dynamic> json) =>
-      CreateMicrofrontendsGroupWithApplicationsResponse(
-        newMicrofrontendsGroup: (json['newMicrofrontendsGroup'] != null
-            ? CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup
-                .fromJson(
-                    json['newMicrofrontendsGroup'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CreateMicrofrontendsGroupWithApplicationsResponse.fromJson(Map<String, dynamic> json) => CreateMicrofrontendsGroupWithApplicationsResponse(
+    newMicrofrontendsGroup: (json['newMicrofrontendsGroup'] != null ? CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup.fromJson(json['newMicrofrontendsGroup'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'newMicrofrontendsGroup': newMicrofrontendsGroup.toJson(),
-      };
+    'newMicrofrontendsGroup': newMicrofrontendsGroup.toJson(),
+  };
 }

@@ -5,271 +5,200 @@ part of 'inline.dart';
 
 // Inline operation models
 final class ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(value);
 
-  static const allCustom =
-      ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
-          ._('all-custom');
+  static const allCustom = ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(value);
 
-  static const allCustom =
-      ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
-          ._('all-custom');
+  static const allCustom = ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset {
+
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-          ._(value);
+  factory ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(value);
 
-  static const allCustom =
-      ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-          ._('all-custom');
+  static const allCustom = ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Billing mode. Always 'flat' for flat-rate projects.
 final class ListProjectsResponseVariant2ProjectsItemUsageStatusKind {
+
   final String value;
 
   const ListProjectsResponseVariant2ProjectsItemUsageStatusKind._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemUsageStatusKind.fromJson(
-          String value) =>
-      ListProjectsResponseVariant2ProjectsItemUsageStatusKind._(value);
+  factory ListProjectsResponseVariant2ProjectsItemUsageStatusKind.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemUsageStatusKind._(value);
 
-  static const flat =
-      ListProjectsResponseVariant2ProjectsItemUsageStatusKind._('flat');
+  static const flat = ListProjectsResponseVariant2ProjectsItemUsageStatusKind._('flat');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectsResponseVariant2ProjectsItemUsageStatusKind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemUsageStatusKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
 final class ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(value);
+  factory ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemUsageStatusTeamThrottled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint).
 final class ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(value);
+  factory ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemUsageStatusThrottled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemV0 {
+
   final bool value;
 
   const ListProjectsResponseVariant2ProjectsItemV0._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemV0.fromJson(bool value) =>
-      ListProjectsResponseVariant2ProjectsItemV0._(value);
+  factory ListProjectsResponseVariant2ProjectsItemV0.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemV0._(value);
 
   static const false_ = ListProjectsResponseVariant2ProjectsItemV0._(false);
   static const true_ = ListProjectsResponseVariant2ProjectsItemV0._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectsResponseVariant2ProjectsItemV0 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemV0 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemV0Created {
+
   final bool value;
 
   const ListProjectsResponseVariant2ProjectsItemV0Created._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemV0Created.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemV0Created._(value);
+  factory ListProjectsResponseVariant2ProjectsItemV0Created.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemV0Created._(value);
 
-  static const false_ =
-      ListProjectsResponseVariant2ProjectsItemV0Created._(false);
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemV0Created._(true);
+  static const false_ = ListProjectsResponseVariant2ProjectsItemV0Created._(false);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemV0Created._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectsResponseVariant2ProjectsItemV0Created &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemV0Created && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData {
+
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData._(
-      this.value);
+  const ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData.fromJson(
-          bool value) =>
-      ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData._(value);
+  factory ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData._(value);
 
-  static const true_ =
-      ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData._(true);
+  static const true_ = ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemWebAnalyticsHasData && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Status code for domain redirect
 final class AddProjectDomainRequestBodyRedirectStatusCode {
+
   final int value;
 
   const AddProjectDomainRequestBodyRedirectStatusCode._(this.value);
 
-  factory AddProjectDomainRequestBodyRedirectStatusCode.fromJson(int value) =>
-      AddProjectDomainRequestBodyRedirectStatusCode._(value);
+  factory AddProjectDomainRequestBodyRedirectStatusCode.fromJson(int value) => AddProjectDomainRequestBodyRedirectStatusCode._(value);
 
   static const v301 = AddProjectDomainRequestBodyRedirectStatusCode._(301);
   static const v302 = AddProjectDomainRequestBodyRedirectStatusCode._(302);
@@ -278,25 +207,21 @@ final class AddProjectDomainRequestBodyRedirectStatusCode {
 
   int toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AddProjectDomainRequestBodyRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is AddProjectDomainRequestBodyRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class AddProjectDomainResponseRedirectStatusCode {
+
   final double value;
 
   const AddProjectDomainResponseRedirectStatusCode._(this.value);
 
-  factory AddProjectDomainResponseRedirectStatusCode.fromJson(double value) =>
-      AddProjectDomainResponseRedirectStatusCode._(value);
+  factory AddProjectDomainResponseRedirectStatusCode.fromJson(double value) => AddProjectDomainResponseRedirectStatusCode._(value);
 
   static const v301 = AddProjectDomainResponseRedirectStatusCode._(301);
   static const v302 = AddProjectDomainResponseRedirectStatusCode._(302);
@@ -305,64 +230,54 @@ final class AddProjectDomainResponseRedirectStatusCode {
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AddProjectDomainResponseRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is AddProjectDomainResponseRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class AddProjectDomainResponseVerified {
+
   final bool value;
 
   const AddProjectDomainResponseVerified._(this.value);
 
-  factory AddProjectDomainResponseVerified.fromJson(bool value) =>
-      AddProjectDomainResponseVerified._(value);
+  factory AddProjectDomainResponseVerified.fromJson(bool value) => AddProjectDomainResponseVerified._(value);
 
   static const false_ = AddProjectDomainResponseVerified._(false);
   static const true_ = AddProjectDomainResponseVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AddProjectDomainResponseVerified && other.value == value;
+  @override bool operator ==(Object other) => other is AddProjectDomainResponseVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// If true, the environment variable value will be decrypted
 final class FilterProjectEnvsDecrypt {
+
   final String value;
 
   const FilterProjectEnvsDecrypt._(this.value);
 
-  factory FilterProjectEnvsDecrypt.fromJson(String value) =>
-      FilterProjectEnvsDecrypt._(value);
+  factory FilterProjectEnvsDecrypt.fromJson(String value) => FilterProjectEnvsDecrypt._(value);
 
   static const true_ = FilterProjectEnvsDecrypt._('true');
   static const false_ = FilterProjectEnvsDecrypt._('false');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FilterProjectEnvsDecrypt && other.value == value;
+  @override bool operator ==(Object other) => other is FilterProjectEnvsDecrypt && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

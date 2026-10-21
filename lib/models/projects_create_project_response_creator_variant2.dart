@@ -10,43 +10,24 @@ class CreateProjectResponseCreatorVariant2 {
   final CreateProjectResponseCreatorVariant2Integration integration;
   final CreateProjectResponseCreatorVariant2Type type_;
 
-  const CreateProjectResponseCreatorVariant2(
-      {required this.integration, required this.type_});
+  const CreateProjectResponseCreatorVariant2({required this.integration, required this.type_});
 
-  CreateProjectResponseCreatorVariant2 Function(
-          {CreateProjectResponseCreatorVariant2Integration integration,
-          CreateProjectResponseCreatorVariant2Type type_})
-      get copyWith => _copyWith;
+  CreateProjectResponseCreatorVariant2 Function({CreateProjectResponseCreatorVariant2Integration integration, CreateProjectResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
 
-  CreateProjectResponseCreatorVariant2 _copyWith(
-          {Object? integration = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateProjectResponseCreatorVariant2(
-        integration: identical(integration, sdkOmittedValue)
-            ? this.integration
-            : integration as CreateProjectResponseCreatorVariant2Integration,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateProjectResponseCreatorVariant2Type,
-      );
+  CreateProjectResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateProjectResponseCreatorVariant2(
+    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as CreateProjectResponseCreatorVariant2Integration,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseCreatorVariant2Type,
+  );
 
-  factory CreateProjectResponseCreatorVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseCreatorVariant2(
-        integration: (json['integration'] != null
-            ? CreateProjectResponseCreatorVariant2Integration.fromJson(
-                json['integration'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? CreateProjectResponseCreatorVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateProjectResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => CreateProjectResponseCreatorVariant2(
+    integration: (json['integration'] != null ? CreateProjectResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? CreateProjectResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'integration': integration.toJson(),
-        'type': type_.toJson(),
-      };
+    'integration': integration.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class CreateProjectResponseCreatorVariant3 {
@@ -56,30 +37,19 @@ class CreateProjectResponseCreatorVariant3 {
 
   const CreateProjectResponseCreatorVariant3({required this.type_});
 
-  CreateProjectResponseCreatorVariant3 Function(
-          {CreateProjectResponseCreatorVariant3Type type_})
-      get copyWith => _copyWith;
+  CreateProjectResponseCreatorVariant3 Function({CreateProjectResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
 
-  CreateProjectResponseCreatorVariant3 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      CreateProjectResponseCreatorVariant3(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateProjectResponseCreatorVariant3Type,
-      );
+  CreateProjectResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => CreateProjectResponseCreatorVariant3(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseCreatorVariant3Type,
+  );
 
-  factory CreateProjectResponseCreatorVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseCreatorVariant3(
-        type_: (json['type'] != null
-            ? CreateProjectResponseCreatorVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateProjectResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => CreateProjectResponseCreatorVariant3(
+    type_: (json['type'] != null ? CreateProjectResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 sealed class CreateProjectResponseCreator {
@@ -88,93 +58,40 @@ sealed class CreateProjectResponseCreator {
   const CreateProjectResponseCreator();
   factory CreateProjectResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CreateProjectResponseCreatorVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseCreatorVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseCreatorVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateProjectResponseCreatorVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateProjectResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0(value); } } catch (_) {}
+      try { final value = CreateProjectResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1(value); } } catch (_) {}
+      try { final value = CreateProjectResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2(value); } } catch (_) {}
+      try { final value = CreateProjectResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3(value); } } catch (_) {}
     }
-    try {
-      return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0(
-          CreateProjectResponseCreatorVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1(
-          CreateProjectResponseCreatorVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2(
-          CreateProjectResponseCreatorVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3(
-          CreateProjectResponseCreatorVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateProjectResponseCreator");
+    try { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0(CreateProjectResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1(CreateProjectResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2(CreateProjectResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3(CreateProjectResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateProjectResponseCreator");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0
-    extends CreateProjectResponseCreator {
+final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0 extends CreateProjectResponseCreator {
   final CreateProjectResponseCreatorVariant0 value;
-  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1
-    extends CreateProjectResponseCreator {
+final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1 extends CreateProjectResponseCreator {
   final CreateProjectResponseCreatorVariant1 value;
-  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2
-    extends CreateProjectResponseCreator {
+final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2 extends CreateProjectResponseCreator {
   final CreateProjectResponseCreatorVariant2 value;
-  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3
-    extends CreateProjectResponseCreator {
+final class CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3 extends CreateProjectResponseCreator {
   final CreateProjectResponseCreatorVariant3 value;
-  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateProjectResponseCreatorCreateProjectResponseCreatorVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }

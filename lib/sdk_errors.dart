@@ -53,12 +53,9 @@ class SdkHttpError extends SdkError {
     String statusText = '',
     Map<String, Object? Function(Object?)> errors = const {},
   }) {
-    final create = statusCode >= 500
-        ? SdkInternalServerError.new
-        : _statusErrors[statusCode] ?? SdkHttpError.new;
+    final create = statusCode >= 500 ? SdkInternalServerError.new : _statusErrors[statusCode] ?? SdkHttpError.new;
     final status = '$statusCode';
-    final decode =
-        errors[status] ?? errors['${status[0]}XX'] ?? errors['default'];
+    final decode = errors[status] ?? errors['${status[0]}XX'] ?? errors['default'];
     Object? data;
     if (decode != null) {
       try {
@@ -67,11 +64,7 @@ class SdkHttpError extends SdkError {
         // A body that does not fit the declared model stays raw only.
       }
     }
-    return create(statusCode, rawBody,
-        headers: headers,
-        requestId: requestId,
-        statusText: statusText,
-        data: data);
+    return create(statusCode, rawBody, headers: headers, requestId: requestId, statusText: statusText, data: data);
   }
 
   /// Decodes the body into the model the API declares for this error, on the
@@ -81,8 +74,7 @@ class SdkHttpError extends SdkError {
 
   @override
   String toString() {
-    final status =
-        'HTTP $statusCode${statusText.trim().isEmpty ? '' : ' ${statusText.trim()}'}';
+    final status = 'HTTP $statusCode${statusText.trim().isEmpty ? '' : ' ${statusText.trim()}'}';
     final detail = _httpErrorDetail();
     return detail == null ? status : '$status: $detail';
   }
@@ -127,9 +119,7 @@ class SdkHttpError extends SdkError {
         break;
       }
     }
-    if (contentType != null &&
-        contentType.isNotEmpty &&
-        !contentType.startsWith('text/')) {
+    if (contentType != null && contentType.isNotEmpty && !contentType.startsWith('text/')) {
       return null;
     }
     return _normalizeHttpErrorDetail(text);
@@ -146,8 +136,7 @@ class SdkHttpError extends SdkError {
   }
 
   bool _isControlCodePoint(int codePoint) =>
-      codePoint < 0x20 ||
-      (codePoint >= 0x7f && codePoint <= 0x9f) ||
+      codePoint < 0x20 || (codePoint >= 0x7f && codePoint <= 0x9f) ||
       (codePoint >= 0xd800 && codePoint <= 0xdfff);
 }
 
@@ -156,8 +145,7 @@ class SdkHttpError extends SdkError {
 /// 200 {"ok": false, "error": "channel_not_found"}, and [code] holds that code.
 class SdkApiError extends SdkHttpError {
   final String? code;
-  SdkApiError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, this.code});
+  SdkApiError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, this.code});
 }
 
 /// Thrown for a 2xx response whose body does not decode into its declared
@@ -184,50 +172,42 @@ class SdkResponseDecodeError extends SdkError {
 }
 
 class SdkBadRequestError extends SdkHttpError {
-  SdkBadRequestError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkBadRequestError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 /// Returned for an HTTP 401 response.
 class SdkUnauthorizedError extends SdkHttpError {
-  SdkUnauthorizedError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkUnauthorizedError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 /// Returned for an HTTP 403 response.
 class SdkPermissionDeniedError extends SdkHttpError {
-  SdkPermissionDeniedError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkPermissionDeniedError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 /// Returned for an HTTP 404 response.
 class SdkNotFoundError extends SdkHttpError {
-  SdkNotFoundError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkNotFoundError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 /// Returned for an HTTP 409 response.
 class SdkConflictError extends SdkHttpError {
-  SdkConflictError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkConflictError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 /// Returned for an HTTP 422 response.
 class SdkUnprocessableEntityError extends SdkHttpError {
-  SdkUnprocessableEntityError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkUnprocessableEntityError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 /// Returned for an HTTP 429 response.
 class SdkRateLimitError extends SdkHttpError {
-  SdkRateLimitError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkRateLimitError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 /// Returned for any HTTP 5xx response.
 class SdkInternalServerError extends SdkHttpError {
-  SdkInternalServerError(super.statusCode, super.rawBody,
-      {super.headers, super.requestId, super.statusText, super.data});
+  SdkInternalServerError(super.statusCode, super.rawBody, {super.headers, super.requestId, super.statusText, super.data});
 }
 
 const _statusErrors = {
@@ -287,6 +267,10 @@ class SdkTimeoutError extends SdkError {
   String toString() =>
       'SdkTimeoutError: timed out after ${elapsed.inMilliseconds}ms';
 }
+
+
+
+
 
 /// Envelope returned by the low-level request layer.
 /// High-level SDK methods unwrap `.data` automatically.

@@ -5,285 +5,208 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemForced {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLatestDeploymentsItemForced._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemForced.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemForced._(value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemForced.fromJson(bool value) => UpdateMicrofrontendsResponseLatestDeploymentsItemForced._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemForced._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemForced._(true);
+  static const false_ = UpdateMicrofrontendsResponseLatestDeploymentsItemForced._(false);
+  static const true_ = UpdateMicrofrontendsResponseLatestDeploymentsItemForced._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLatestDeploymentsItemForced &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemForced && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemPlan {
+
   final String value;
 
   const UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemPlan.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._(value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemPlan.fromJson(String value) => UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._(value);
 
-  static const enterprise =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._('enterprise');
-  static const hobby =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._('hobby');
-  static const pro =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._('pro');
+  static const enterprise = UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._('enterprise');
+  static const hobby = UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._('hobby');
+  static const pro = UpdateMicrofrontendsResponseLatestDeploymentsItemPlan._('pro');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLatestDeploymentsItemPlan &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemPlan && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not preview comments are enabled for the deployment
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled {
+
   final bool value;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(
-      this.value);
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(
-          value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(
-          false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(
-          true);
+  static const false_ = UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(false);
+  static const true_ = UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemPreviewCommentsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate._(value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate.fromJson(bool value) => UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate._(true);
+  static const false_ = UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate._(false);
+  static const true_ = UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemPrivate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState {
+
   final String value;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._(
-      this.value);
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._(value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState.fromJson(String value) => UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._(value);
 
-  static const blocked =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('BLOCKED');
-  static const building =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('BUILDING');
-  static const canceled =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('CANCELED');
-  static const error =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('ERROR');
-  static const initializing =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._(
-          'INITIALIZING');
-  static const queued =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('QUEUED');
-  static const ready =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('READY');
+  static const blocked = UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('BLOCKED');
+  static const building = UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('BUILDING');
+  static const canceled = UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('CANCELED');
+  static const error = UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('ERROR');
+  static const initializing = UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('INITIALIZING');
+  static const queued = UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('QUEUED');
+  static const ready = UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState._('READY');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemReadyState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate {
+
   final String value;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._(
-      this.value);
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._(value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate.fromJson(String value) => UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._(value);
 
-  static const promoted =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._(
-          'PROMOTED');
-  static const rolling =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._(
-          'ROLLING');
-  static const staged =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._(
-          'STAGED');
+  static const promoted = UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._('PROMOTED');
+  static const rolling = UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._('ROLLING');
+  static const staged = UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate._('STAGED');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemReadySubstate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemType {
+
   final String value;
 
   const UpdateMicrofrontendsResponseLatestDeploymentsItemType._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemType.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemType._(value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemType.fromJson(String value) => UpdateMicrofrontendsResponseLatestDeploymentsItemType._(value);
 
-  static const lambdas =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemType._('LAMBDAS');
+  static const lambdas = UpdateMicrofrontendsResponseLatestDeploymentsItemType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLatestDeploymentsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache {
+
   final bool value;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(
-      this.value);
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(this.value);
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(value);
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache.fromJson(bool value) => UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(true);
+  static const false_ = UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(false);
+  static const true_ = UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLatestDeploymentsItemWithCache && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseLive {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLive._(this.value);
 
-  factory UpdateMicrofrontendsResponseLive.fromJson(bool value) =>
-      UpdateMicrofrontendsResponseLive._(value);
+  factory UpdateMicrofrontendsResponseLive.fromJson(bool value) => UpdateMicrofrontendsResponseLive._(value);
 
   static const false_ = UpdateMicrofrontendsResponseLive._(false);
   static const true_ = UpdateMicrofrontendsResponseLive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLive && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseNodeVersion {
+
   final String value;
 
   const UpdateMicrofrontendsResponseNodeVersion._(this.value);
 
-  factory UpdateMicrofrontendsResponseNodeVersion.fromJson(String value) =>
-      UpdateMicrofrontendsResponseNodeVersion._(value);
+  factory UpdateMicrofrontendsResponseNodeVersion.fromJson(String value) => UpdateMicrofrontendsResponseNodeVersion._(value);
 
   static const v10X = UpdateMicrofrontendsResponseNodeVersion._('10.x');
   static const v12X = UpdateMicrofrontendsResponseNodeVersion._('12.x');
@@ -298,71 +221,54 @@ final class UpdateMicrofrontendsResponseNodeVersion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseNodeVersion && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseNodeVersion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not to generate OpenID Connect JSON Web Tokens.
 final class UpdateMicrofrontendsResponseOidcTokenConfigEnabled {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseOidcTokenConfigEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseOidcTokenConfigEnabled.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseOidcTokenConfigEnabled._(value);
+  factory UpdateMicrofrontendsResponseOidcTokenConfigEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseOidcTokenConfigEnabled._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseOidcTokenConfigEnabled._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseOidcTokenConfigEnabled._(true);
+  static const false_ = UpdateMicrofrontendsResponseOidcTokenConfigEnabled._(false);
+  static const true_ = UpdateMicrofrontendsResponseOidcTokenConfigEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseOidcTokenConfigEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseOidcTokenConfigEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
 final class UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode {
+
   final String value;
 
   const UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode._(this.value);
 
-  factory UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode._(value);
+  factory UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode.fromJson(String value) => UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode._(value);
 
-  static const global =
-      UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode._('global');
-  static const team =
-      UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode._('team');
+  static const global = UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode._('global');
+  static const team = UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode._('team');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

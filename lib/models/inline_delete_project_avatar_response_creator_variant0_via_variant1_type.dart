@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type {
   integration;
 
-  static DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type fromJson(
-      String value) {
+  static DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type
-            .integration;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type: $value');
+      case 'integration': return DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type.integration;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type
-            .integration:
-        return 'integration';
+      case DeleteProjectAvatarResponseCreatorVariant0ViaVariant1Type.integration: return 'integration';
     }
   }
 
@@ -36,18 +29,14 @@ enum DeleteProjectAvatarResponseCreatorVariant1Type {
 
   static DeleteProjectAvatarResponseCreatorVariant1Type fromJson(String value) {
     switch (value) {
-      case 'app':
-        return DeleteProjectAvatarResponseCreatorVariant1Type.app;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseCreatorVariant1Type: $value');
+      case 'app': return DeleteProjectAvatarResponseCreatorVariant1Type.app;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseCreatorVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseCreatorVariant1Type.app:
-        return 'app';
+      case DeleteProjectAvatarResponseCreatorVariant1Type.app: return 'app';
     }
   }
 
@@ -60,18 +49,14 @@ enum DeleteProjectAvatarResponseCreatorVariant2Type {
 
   static DeleteProjectAvatarResponseCreatorVariant2Type fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return DeleteProjectAvatarResponseCreatorVariant2Type.integration;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseCreatorVariant2Type: $value');
+      case 'integration': return DeleteProjectAvatarResponseCreatorVariant2Type.integration;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseCreatorVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseCreatorVariant2Type.integration:
-        return 'integration';
+      case DeleteProjectAvatarResponseCreatorVariant2Type.integration: return 'integration';
     }
   }
 
@@ -84,18 +69,14 @@ enum DeleteProjectAvatarResponseCreatorVariant3Type {
 
   static DeleteProjectAvatarResponseCreatorVariant3Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return DeleteProjectAvatarResponseCreatorVariant3Type.system;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseCreatorVariant3Type: $value');
+      case 'system': return DeleteProjectAvatarResponseCreatorVariant3Type.system;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseCreatorVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseCreatorVariant3Type.system:
-        return 'system';
+      case DeleteProjectAvatarResponseCreatorVariant3Type.system: return 'system';
     }
   }
 
@@ -104,58 +85,39 @@ enum DeleteProjectAvatarResponseCreatorVariant3Type {
 }
 
 final class DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._(value);
+  factory DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._('preview');
-  static const production =
-      DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._('production');
+  static const preview = DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 
@@ -166,23 +128,16 @@ enum DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironment
 enum DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-      fromJson(String value) {
+  static DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'custom':
-        return DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom': return DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom:
-        return 'custom';
+      case DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
     }
   }
 
@@ -191,58 +146,39 @@ enum DeleteProjectAvatarResponseDeploymentPolicyDeploymentSourcesItemEnvironment
 }
 
 final class DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._(value);
+  factory DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._('preview');
-  static const production =
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._('production');
+  static const preview = DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 
@@ -253,23 +189,16 @@ enum DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVa
 enum DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-      fromJson(String value) {
+  static DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'custom':
-        return DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-            .custom;
-      default:
-        throw ArgumentError(
-            'Unknown DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom': return DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom;
+      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-            .custom:
-        return 'custom';
+      case DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
     }
   }
 
@@ -278,130 +207,84 @@ enum DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVa
 }
 
 final class DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider {
+
   final String value;
 
-  const DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(
-      this.value);
+  const DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(this.value);
 
-  factory DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
-          ._(value);
+  factory DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(String value) => DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(value);
 
-  static const bitbucket =
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
-          ._('bitbucket');
-  static const github =
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
-          ._('github');
+  static const bitbucket = DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('bitbucket');
+  static const github = DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('github');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider {
+
   final String value;
 
-  const DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(
-      this.value);
+  const DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(this.value);
 
-  factory DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
-          ._(value);
+  factory DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(String value) => DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(value);
 
-  static const gitlab =
-      DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
-          ._('gitlab');
+  static const gitlab = DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2 {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(
-      this.value);
+  const DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(this.value);
 
-  factory DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2
-          ._(value);
+  factory DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(bool value) => DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2
-          ._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2
-          ._(true);
+  static const false_ = DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(false);
+  static const true_ = DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2 {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(
-      this.value);
+  const DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(this.value);
 
-  factory DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2
-          ._(value);
+  factory DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(bool value) => DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2
-          ._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2
-          ._(true);
+  static const false_ = DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(false);
+  static const true_ = DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

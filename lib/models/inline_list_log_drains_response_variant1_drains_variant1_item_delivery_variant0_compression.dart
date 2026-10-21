@@ -5,121 +5,80 @@ part of 'inline.dart';
 
 // Inline operation models
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression
-          ._(value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression._(value);
 
-  static const gzip =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression
-          ._('gzip');
-  static const none =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression
-          ._('none');
+  static const gzip = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression._('gzip');
+  static const none = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Compression && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._(
-          value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._(value);
 
-  static const json =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._(
-          'json');
-  static const ndjson =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._(
-          'ndjson');
+  static const json = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._('json');
+  static const ndjson = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind
-          ._(value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind
-          ._('INTEGRATION_SECRET');
+  static const integrationSecret = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type {
   http;
 
-  static ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type
-      fromJson(String value) {
+  static ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type fromJson(String value) {
     switch (value) {
-      case 'http':
-        return ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type
-            .http;
-      default:
-        throw ArgumentError(
-            'Unknown ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type: $value');
+      case 'http': return ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type.http;
+      default: throw ArgumentError('Unknown ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type
-            .http:
-        return 'http';
+      case ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type.http: return 'http';
     }
   }
 
@@ -128,88 +87,59 @@ enum ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant0Type {
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._(
-          value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._(value);
 
-  static const json =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._(
-          'json');
-  static const proto =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._(
-          'proto');
+  static const json = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._('json');
+  static const proto = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding._('proto');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind
-          ._(value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind
-          ._('INTEGRATION_SECRET');
+  static const integrationSecret = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type {
   otlphttp;
 
-  static ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type
-      fromJson(String value) {
+  static ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type fromJson(String value) {
     switch (value) {
-      case 'otlphttp':
-        return ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type
-            .otlphttp;
-      default:
-        throw ArgumentError(
-            'Unknown ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type: $value');
+      case 'otlphttp': return ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type.otlphttp;
+      default: throw ArgumentError('Unknown ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type
-            .otlphttp:
-        return 'otlphttp';
+      case ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type.otlphttp: return 'otlphttp';
     }
   }
 
@@ -220,23 +150,16 @@ enum ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant1Type {
 enum ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type {
   clickhouse;
 
-  static ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type
-      fromJson(String value) {
+  static ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type fromJson(String value) {
     switch (value) {
-      case 'clickhouse':
-        return ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type
-            .clickhouse;
-      default:
-        throw ArgumentError(
-            'Unknown ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type: $value');
+      case 'clickhouse': return ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type.clickhouse;
+      default: throw ArgumentError('Unknown ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type
-            .clickhouse:
-        return 'clickhouse';
+      case ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type.clickhouse: return 'clickhouse';
     }
   }
 
@@ -245,178 +168,110 @@ enum ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant2Type {
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression
-          ._(value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression._(value);
 
-  static const none =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression
-          ._('none');
+  static const none = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Compression && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._(
-          value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._(value);
 
-  static const json =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._(
-          'json');
-  static const ndjson =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._(
-          'ndjson');
+  static const json = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._('json');
+  static const ndjson = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure
-          ._(value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure._(value);
 
-  static const hive =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure
-          ._('hive');
+  static const hive = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure._('hive');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3FileStructure && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._(value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._(value);
 
-  static const authenticatedRead =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._('authenticated-read');
-  static const awsExecRead =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._('aws-exec-read');
-  static const bucketOwnerFullControl =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._('bucket-owner-full-control');
-  static const bucketOwnerRead =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._('bucket-owner-read');
-  static const private =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._('private');
-  static const publicRead =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._('public-read');
-  static const publicReadWrite =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl
-          ._('public-read-write');
+  static const authenticatedRead = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._('authenticated-read');
+  static const awsExecRead = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._('aws-exec-read');
+  static const bucketOwnerFullControl = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._('bucket-owner-full-control');
+  static const bucketOwnerRead = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._('bucket-owner-read');
+  static const private = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._('private');
+  static const publicRead = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._('public-read');
+  static const publicReadWrite = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl._('public-read-write');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ObjectAcl && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption {
+
   final String value;
 
-  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption._(
-      this.value);
+  const ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption._(this.value);
 
-  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption.fromJson(
-          String value) =>
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption
-          ._(value);
+  factory ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption.fromJson(String value) => ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption._(value);
 
-  static const aes256 =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption
-          ._('AES256');
-  static const awsKms =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption
-          ._('aws:kms');
-  static const awsKmsDsse =
-      ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption
-          ._('aws:kms:dsse');
+  static const aes256 = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption._('AES256');
+  static const awsKms = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption._('aws:kms');
+  static const awsKmsDsse = ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption._('aws:kms:dsse');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListLogDrainsResponseVariant1DrainsVariant1ItemDeliveryVariant3ServerSideEncryption && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

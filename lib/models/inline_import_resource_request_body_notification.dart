@@ -12,144 +12,79 @@ class ImportResourceRequestBodyNotification {
   final SdkOptional<String> message;
   final SdkOptional<String> href;
 
-  const ImportResourceRequestBodyNotification(
-      {required this.level,
-      required this.title,
-      this.message = const SdkOmitted(),
-      this.href = const SdkOmitted()});
+  const ImportResourceRequestBodyNotification({required this.level, required this.title, this.message = const SdkOmitted(), this.href = const SdkOmitted()});
 
-  ImportResourceRequestBodyNotification Function(
-      {ImportResourceRequestBodyNotificationLevel level,
-      String title,
-      SdkOptional<String> message,
-      SdkOptional<String> href}) get copyWith => _copyWith;
+  ImportResourceRequestBodyNotification Function({ImportResourceRequestBodyNotificationLevel level, String title, SdkOptional<String> message, SdkOptional<String> href}) get copyWith => _copyWith;
 
-  ImportResourceRequestBodyNotification _copyWith(
-          {Object? level = sdkOmittedValue,
-          Object? title = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? href = sdkOmittedValue}) =>
-      ImportResourceRequestBodyNotification(
-        level: identical(level, sdkOmittedValue)
-            ? this.level
-            : level as ImportResourceRequestBodyNotificationLevel,
-        title: identical(title, sdkOmittedValue) ? this.title : title as String,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as SdkOptional<String>,
-        href: identical(href, sdkOmittedValue)
-            ? this.href
-            : href as SdkOptional<String>,
-      );
+  ImportResourceRequestBodyNotification _copyWith({Object? level = sdkOmittedValue, Object? title = sdkOmittedValue, Object? message = sdkOmittedValue, Object? href = sdkOmittedValue}) => ImportResourceRequestBodyNotification(
+    level: identical(level, sdkOmittedValue) ? this.level : level as ImportResourceRequestBodyNotificationLevel,
+    title: identical(title, sdkOmittedValue) ? this.title : title as String,
+    message: identical(message, sdkOmittedValue) ? this.message : message as SdkOptional<String>,
+    href: identical(href, sdkOmittedValue) ? this.href : href as SdkOptional<String>,
+  );
 
-  factory ImportResourceRequestBodyNotification.fromJson(
-          Map<String, dynamic> json) =>
-      ImportResourceRequestBodyNotification(
-        level: (json['level'] != null
-            ? ImportResourceRequestBodyNotificationLevel.fromJson(
-                json['level'] as String)
-            : null)!,
-        title: (json['title'] as String?)!,
-        message: json['message'] != null
-            ? SdkPresent((json['message'] as String?)!)
-            : const SdkOmitted(),
-        href: json['href'] != null
-            ? SdkPresent((json['href'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ImportResourceRequestBodyNotification.fromJson(Map<String, dynamic> json) => ImportResourceRequestBodyNotification(
+    level: (json['level'] != null ? ImportResourceRequestBodyNotificationLevel.fromJson(json['level'] as String) : null)!,
+    title: (json['title'] as String?)!,
+    message: json['message'] != null ? SdkPresent((json['message'] as String?)!) : const SdkOmitted(),
+    href: json['href'] != null ? SdkPresent((json['href'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'level': level.toJson(),
-        'title': title,
-        ...switch (message) {
-          SdkPresent<String>(value: final value) => {
-              'message': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (href) {
-          SdkPresent<String>(value: final value) => {
-              'href': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'level': level.toJson(),
+    'title': title,
+    ...switch (message) {
+      SdkPresent<String>(value: final value) => {'message': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (href) {
+      SdkPresent<String>(value: final value) => {'href': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// A map of environments to override values for the secret, used for setting different values across deployments in production, preview, and development environments. Note: the same value will be used for all deployments in the given environment.
 class ImportResourceRequestBodySecretsItemEnvironmentOverrides {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Value used for development environment.
   final SdkOptional<String> development;
-
   /// Value used for preview environment.
   final SdkOptional<String> preview;
-
   /// Value used for production environment.
   final SdkOptional<String> production;
 
-  const ImportResourceRequestBodySecretsItemEnvironmentOverrides(
-      {this.development = const SdkOmitted(),
-      this.preview = const SdkOmitted(),
-      this.production = const SdkOmitted()});
+  const ImportResourceRequestBodySecretsItemEnvironmentOverrides({this.development = const SdkOmitted(), this.preview = const SdkOmitted(), this.production = const SdkOmitted()});
 
-  ImportResourceRequestBodySecretsItemEnvironmentOverrides Function(
-      {SdkOptional<String> development,
-      SdkOptional<String> preview,
-      SdkOptional<String> production}) get copyWith => _copyWith;
+  ImportResourceRequestBodySecretsItemEnvironmentOverrides Function({SdkOptional<String> development, SdkOptional<String> preview, SdkOptional<String> production}) get copyWith => _copyWith;
 
-  ImportResourceRequestBodySecretsItemEnvironmentOverrides _copyWith(
-          {Object? development = sdkOmittedValue,
-          Object? preview = sdkOmittedValue,
-          Object? production = sdkOmittedValue}) =>
-      ImportResourceRequestBodySecretsItemEnvironmentOverrides(
-        development: identical(development, sdkOmittedValue)
-            ? this.development
-            : development as SdkOptional<String>,
-        preview: identical(preview, sdkOmittedValue)
-            ? this.preview
-            : preview as SdkOptional<String>,
-        production: identical(production, sdkOmittedValue)
-            ? this.production
-            : production as SdkOptional<String>,
-      );
+  ImportResourceRequestBodySecretsItemEnvironmentOverrides _copyWith({Object? development = sdkOmittedValue, Object? preview = sdkOmittedValue, Object? production = sdkOmittedValue}) => ImportResourceRequestBodySecretsItemEnvironmentOverrides(
+    development: identical(development, sdkOmittedValue) ? this.development : development as SdkOptional<String>,
+    preview: identical(preview, sdkOmittedValue) ? this.preview : preview as SdkOptional<String>,
+    production: identical(production, sdkOmittedValue) ? this.production : production as SdkOptional<String>,
+  );
 
-  factory ImportResourceRequestBodySecretsItemEnvironmentOverrides.fromJson(
-          Map<String, dynamic> json) =>
-      ImportResourceRequestBodySecretsItemEnvironmentOverrides(
-        development: json['development'] != null
-            ? SdkPresent((json['development'] as String?)!)
-            : const SdkOmitted(),
-        preview: json['preview'] != null
-            ? SdkPresent((json['preview'] as String?)!)
-            : const SdkOmitted(),
-        production: json['production'] != null
-            ? SdkPresent((json['production'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ImportResourceRequestBodySecretsItemEnvironmentOverrides.fromJson(Map<String, dynamic> json) => ImportResourceRequestBodySecretsItemEnvironmentOverrides(
+    development: json['development'] != null ? SdkPresent((json['development'] as String?)!) : const SdkOmitted(),
+    preview: json['preview'] != null ? SdkPresent((json['preview'] as String?)!) : const SdkOmitted(),
+    production: json['production'] != null ? SdkPresent((json['production'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (development) {
-          SdkPresent<String>(value: final value) => {
-              'development': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (preview) {
-          SdkPresent<String>(value: final value) => {
-              'preview': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (production) {
-          SdkPresent<String>(value: final value) => {
-              'production': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (development) {
+      SdkPresent<String>(value: final value) => {'development': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (preview) {
+      SdkPresent<String>(value: final value) => {'preview': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (production) {
+      SdkPresent<String>(value: final value) => {'production': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ImportResourceRequestBodySecretsItem {
@@ -158,278 +93,144 @@ class ImportResourceRequestBodySecretsItem {
   final String name;
   final String value;
   final SdkOptional<String> prefix;
-
   /// A map of environments to override values for the secret, used for setting different values across deployments in production, preview, and development environments. Note: the same value will be used for all deployments in the given environment.
-  final SdkOptional<ImportResourceRequestBodySecretsItemEnvironmentOverrides>
-      environmentOverrides;
+  final SdkOptional<ImportResourceRequestBodySecretsItemEnvironmentOverrides> environmentOverrides;
 
-  const ImportResourceRequestBodySecretsItem(
-      {required this.name,
-      required this.value,
-      this.prefix = const SdkOmitted(),
-      this.environmentOverrides = const SdkOmitted()});
+  const ImportResourceRequestBodySecretsItem({required this.name, required this.value, this.prefix = const SdkOmitted(), this.environmentOverrides = const SdkOmitted()});
 
-  ImportResourceRequestBodySecretsItem Function(
-      {String name,
-      String value,
-      SdkOptional<String> prefix,
-      SdkOptional<ImportResourceRequestBodySecretsItemEnvironmentOverrides>
-          environmentOverrides}) get copyWith => _copyWith;
+  ImportResourceRequestBodySecretsItem Function({String name, String value, SdkOptional<String> prefix, SdkOptional<ImportResourceRequestBodySecretsItemEnvironmentOverrides> environmentOverrides}) get copyWith => _copyWith;
 
-  ImportResourceRequestBodySecretsItem _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? value = sdkOmittedValue,
-          Object? prefix = sdkOmittedValue,
-          Object? environmentOverrides = sdkOmittedValue}) =>
-      ImportResourceRequestBodySecretsItem(
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        prefix: identical(prefix, sdkOmittedValue)
-            ? this.prefix
-            : prefix as SdkOptional<String>,
-        environmentOverrides: identical(environmentOverrides, sdkOmittedValue)
-            ? this.environmentOverrides
-            : environmentOverrides as SdkOptional<
-                ImportResourceRequestBodySecretsItemEnvironmentOverrides>,
-      );
+  ImportResourceRequestBodySecretsItem _copyWith({Object? name = sdkOmittedValue, Object? value = sdkOmittedValue, Object? prefix = sdkOmittedValue, Object? environmentOverrides = sdkOmittedValue}) => ImportResourceRequestBodySecretsItem(
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    prefix: identical(prefix, sdkOmittedValue) ? this.prefix : prefix as SdkOptional<String>,
+    environmentOverrides: identical(environmentOverrides, sdkOmittedValue) ? this.environmentOverrides : environmentOverrides as SdkOptional<ImportResourceRequestBodySecretsItemEnvironmentOverrides>,
+  );
 
-  factory ImportResourceRequestBodySecretsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ImportResourceRequestBodySecretsItem(
-        name: (json['name'] as String?)!,
-        value: (json['value'] as String?)!,
-        prefix: json['prefix'] != null
-            ? SdkPresent((json['prefix'] as String?)!)
-            : const SdkOmitted(),
-        environmentOverrides: json['environmentOverrides'] != null
-            ? SdkPresent((json['environmentOverrides'] != null
-                ? ImportResourceRequestBodySecretsItemEnvironmentOverrides
-                    .fromJson(
-                        json['environmentOverrides'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory ImportResourceRequestBodySecretsItem.fromJson(Map<String, dynamic> json) => ImportResourceRequestBodySecretsItem(
+    name: (json['name'] as String?)!,
+    value: (json['value'] as String?)!,
+    prefix: json['prefix'] != null ? SdkPresent((json['prefix'] as String?)!) : const SdkOmitted(),
+    environmentOverrides: json['environmentOverrides'] != null ? SdkPresent((json['environmentOverrides'] != null ? ImportResourceRequestBodySecretsItemEnvironmentOverrides.fromJson(json['environmentOverrides'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        'value': value,
-        ...switch (prefix) {
-          SdkPresent<String>(value: final value) => {
-              'prefix': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environmentOverrides) {
-          SdkPresent<ImportResourceRequestBodySecretsItemEnvironmentOverrides>(
-            value: final value
-          ) =>
-            {
-              'environmentOverrides': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'name': name,
+    'value': value,
+    ...switch (prefix) {
+      SdkPresent<String>(value: final value) => {'prefix': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environmentOverrides) {
+      SdkPresent<ImportResourceRequestBodySecretsItemEnvironmentOverrides>(value: final value) => {'environmentOverrides': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Applies only when the token is minted for one of these roles.
   final SdkOptional<List<String>> role;
-
   /// Applies only when the token is minted for one of these environments: `production`, `preview`, `development`, or a custom environment slug. A custom environment also matches `preview`.
   final SdkOptional<List<String>> environment;
 
-  const ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen(
-      {this.role = const SdkOmitted(), this.environment = const SdkOmitted()});
+  const ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen({this.role = const SdkOmitted(), this.environment = const SdkOmitted()});
 
-  ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen Function(
-      {SdkOptional<List<String>> role,
-      SdkOptional<List<String>> environment}) get copyWith => _copyWith;
+  ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen Function({SdkOptional<List<String>> role, SdkOptional<List<String>> environment}) get copyWith => _copyWith;
 
-  ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen _copyWith(
-          {Object? role = sdkOmittedValue,
-          Object? environment = sdkOmittedValue}) =>
-      ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen(
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as SdkOptional<List<String>>,
-        environment: identical(environment, sdkOmittedValue)
-            ? this.environment
-            : environment as SdkOptional<List<String>>,
-      );
+  ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen _copyWith({Object? role = sdkOmittedValue, Object? environment = sdkOmittedValue}) => ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen(
+    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<List<String>>,
+    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as SdkOptional<List<String>>,
+  );
 
-  factory ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen.fromJson(
-          Map<String, dynamic> json) =>
-      ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen(
-        role: json['role'] != null
-            ? SdkPresent(
-                ((json['role'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        environment: json['environment'] != null
-            ? SdkPresent(((json['environment'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen.fromJson(Map<String, dynamic> json) => ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen(
+    role: json['role'] != null ? SdkPresent(((json['role'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    environment: json['environment'] != null ? SdkPresent(((json['environment'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (role) {
-          SdkPresent<List<String>>(value: final value) => {
-              'role': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environment) {
-          SdkPresent<List<String>>(value: final value) => {
-              'environment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (role) {
+      SdkPresent<List<String>>(value: final value) => {'role': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environment) {
+      SdkPresent<List<String>>(value: final value) => {'environment': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ImportResourceRequestBodyCustomClaimsClaimRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen>
-      when_;
-
+  final SdkOptional<ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen> when_;
   /// Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
   final Map<String, dynamic> claims;
 
-  const ImportResourceRequestBodyCustomClaimsClaimRulesItem(
-      {this.when_ = const SdkOmitted(), required this.claims});
+  const ImportResourceRequestBodyCustomClaimsClaimRulesItem({this.when_ = const SdkOmitted(), required this.claims});
 
-  ImportResourceRequestBodyCustomClaimsClaimRulesItem Function(
-      {SdkOptional<ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen>
-          when_,
-      Map<String, dynamic> claims}) get copyWith => _copyWith;
+  ImportResourceRequestBodyCustomClaimsClaimRulesItem Function({SdkOptional<ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen> when_, Map<String, dynamic> claims}) get copyWith => _copyWith;
 
-  ImportResourceRequestBodyCustomClaimsClaimRulesItem _copyWith(
-          {Object? when_ = sdkOmittedValue,
-          Object? claims = sdkOmittedValue}) =>
-      ImportResourceRequestBodyCustomClaimsClaimRulesItem(
-        when_: identical(when_, sdkOmittedValue)
-            ? this.when_
-            : when_ as SdkOptional<
-                ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen>,
-        claims: identical(claims, sdkOmittedValue)
-            ? this.claims
-            : claims as Map<String, dynamic>,
-      );
+  ImportResourceRequestBodyCustomClaimsClaimRulesItem _copyWith({Object? when_ = sdkOmittedValue, Object? claims = sdkOmittedValue}) => ImportResourceRequestBodyCustomClaimsClaimRulesItem(
+    when_: identical(when_, sdkOmittedValue) ? this.when_ : when_ as SdkOptional<ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen>,
+    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as Map<String, dynamic>,
+  );
 
-  factory ImportResourceRequestBodyCustomClaimsClaimRulesItem.fromJson(
-          Map<String, dynamic> json) =>
-      ImportResourceRequestBodyCustomClaimsClaimRulesItem(
-        when_: json['when'] != null
-            ? SdkPresent((json['when'] != null
-                ? ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen
-                    .fromJson(json['when'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        claims: (json['claims'] == null
-            ? null
-            : json['claims'] as Map<String, dynamic>)!,
-      );
+  factory ImportResourceRequestBodyCustomClaimsClaimRulesItem.fromJson(Map<String, dynamic> json) => ImportResourceRequestBodyCustomClaimsClaimRulesItem(
+    when_: json['when'] != null ? SdkPresent((json['when'] != null ? ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen.fromJson(json['when'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    claims: (json['claims'] == null ? null : json['claims'] as Map<String, dynamic>)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (when_) {
-          SdkPresent<ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen>(
-            value: final value
-          ) =>
-            {
-              'when': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'claims': claims,
-      };
+    ...switch (when_) {
+      SdkPresent<ImportResourceRequestBodyCustomClaimsClaimRulesItemWhen>(value: final value) => {'when': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'claims': claims,
+  };
 }
 
 /// Custom claims embedded in the resource tokens Vercel mints for this resource.
 class ImportResourceRequestBodyCustomClaims {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Roles a deployment may request when minting a token. The selected role becomes the `sub` claim.
   final SdkOptional<List<String>> roles;
-
   /// Role used when the deployment does not request one. Required when `roles` is set.
   final SdkOptional<String> defaultRole;
-
   /// Ordered rules resolved at mint time. Later rules win and shallow-merge over earlier ones.
-  final SdkOptional<List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>>
-      claimRules;
+  final SdkOptional<List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>> claimRules;
 
-  const ImportResourceRequestBodyCustomClaims(
-      {this.roles = const SdkOmitted(),
-      this.defaultRole = const SdkOmitted(),
-      this.claimRules = const SdkOmitted()});
+  const ImportResourceRequestBodyCustomClaims({this.roles = const SdkOmitted(), this.defaultRole = const SdkOmitted(), this.claimRules = const SdkOmitted()});
 
-  ImportResourceRequestBodyCustomClaims Function(
-      {SdkOptional<List<String>> roles,
-      SdkOptional<String> defaultRole,
-      SdkOptional<List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>>
-          claimRules}) get copyWith => _copyWith;
+  ImportResourceRequestBodyCustomClaims Function({SdkOptional<List<String>> roles, SdkOptional<String> defaultRole, SdkOptional<List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>> claimRules}) get copyWith => _copyWith;
 
-  ImportResourceRequestBodyCustomClaims _copyWith(
-          {Object? roles = sdkOmittedValue,
-          Object? defaultRole = sdkOmittedValue,
-          Object? claimRules = sdkOmittedValue}) =>
-      ImportResourceRequestBodyCustomClaims(
-        roles: identical(roles, sdkOmittedValue)
-            ? this.roles
-            : roles as SdkOptional<List<String>>,
-        defaultRole: identical(defaultRole, sdkOmittedValue)
-            ? this.defaultRole
-            : defaultRole as SdkOptional<String>,
-        claimRules: identical(claimRules, sdkOmittedValue)
-            ? this.claimRules
-            : claimRules as SdkOptional<
-                List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>>,
-      );
+  ImportResourceRequestBodyCustomClaims _copyWith({Object? roles = sdkOmittedValue, Object? defaultRole = sdkOmittedValue, Object? claimRules = sdkOmittedValue}) => ImportResourceRequestBodyCustomClaims(
+    roles: identical(roles, sdkOmittedValue) ? this.roles : roles as SdkOptional<List<String>>,
+    defaultRole: identical(defaultRole, sdkOmittedValue) ? this.defaultRole : defaultRole as SdkOptional<String>,
+    claimRules: identical(claimRules, sdkOmittedValue) ? this.claimRules : claimRules as SdkOptional<List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>>,
+  );
 
-  factory ImportResourceRequestBodyCustomClaims.fromJson(
-          Map<String, dynamic> json) =>
-      ImportResourceRequestBodyCustomClaims(
-        roles: json['roles'] != null
-            ? SdkPresent(
-                ((json['roles'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        defaultRole: json['defaultRole'] != null
-            ? SdkPresent((json['defaultRole'] as String?)!)
-            : const SdkOmitted(),
-        claimRules: json['claimRules'] != null
-            ? SdkPresent(((json['claimRules'] as List?)
-                ?.map((e) => ImportResourceRequestBodyCustomClaimsClaimRulesItem
-                    .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory ImportResourceRequestBodyCustomClaims.fromJson(Map<String, dynamic> json) => ImportResourceRequestBodyCustomClaims(
+    roles: json['roles'] != null ? SdkPresent(((json['roles'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    defaultRole: json['defaultRole'] != null ? SdkPresent((json['defaultRole'] as String?)!) : const SdkOmitted(),
+    claimRules: json['claimRules'] != null ? SdkPresent(((json['claimRules'] as List?)?.map((e) => ImportResourceRequestBodyCustomClaimsClaimRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (roles) {
-          SdkPresent<List<String>>(value: final value) => {
-              'roles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultRole) {
-          SdkPresent<String>(value: final value) => {
-              'defaultRole': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (claimRules) {
-          SdkPresent<List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>>(
-            value: final value
-          ) =>
-            {
-              'claimRules': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (roles) {
+      SdkPresent<List<String>>(value: final value) => {'roles': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultRole) {
+      SdkPresent<String>(value: final value) => {'defaultRole': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (claimRules) {
+      SdkPresent<List<ImportResourceRequestBodyCustomClaimsClaimRulesItem>>(value: final value) => {'claimRules': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

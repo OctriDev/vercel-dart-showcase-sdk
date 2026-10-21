@@ -5,379 +5,270 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UploadProjectAvatarResponseTargetsValueWithCache {
+
   final bool value;
 
   const UploadProjectAvatarResponseTargetsValueWithCache._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueWithCache.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseTargetsValueWithCache._(value);
+  factory UploadProjectAvatarResponseTargetsValueWithCache.fromJson(bool value) => UploadProjectAvatarResponseTargetsValueWithCache._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseTargetsValueWithCache._(false);
+  static const false_ = UploadProjectAvatarResponseTargetsValueWithCache._(false);
   static const true_ = UploadProjectAvatarResponseTargetsValueWithCache._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseTargetsValueWithCache &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueWithCache && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTier {
+
   final String value;
 
   const UploadProjectAvatarResponseTier._(this.value);
 
-  factory UploadProjectAvatarResponseTier.fromJson(String value) =>
-      UploadProjectAvatarResponseTier._(value);
+  factory UploadProjectAvatarResponseTier.fromJson(String value) => UploadProjectAvatarResponseTier._(value);
 
   static const priority = UploadProjectAvatarResponseTier._('priority');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseTier && other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTier && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Which tracing destination this rule applies to. `internal` is the hidden Vercel production-tracing drain (internal delivery); `external` is any customer-configured drain. Derived from the owning drain's delivery type when project tracing is computed; absent on configs persisted before this field existed.
 final class UploadProjectAvatarResponseTracingSamplingRulesItemDestination {
+
   final String value;
 
-  const UploadProjectAvatarResponseTracingSamplingRulesItemDestination._(
-      this.value);
+  const UploadProjectAvatarResponseTracingSamplingRulesItemDestination._(this.value);
 
-  factory UploadProjectAvatarResponseTracingSamplingRulesItemDestination.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTracingSamplingRulesItemDestination._(value);
+  factory UploadProjectAvatarResponseTracingSamplingRulesItemDestination.fromJson(String value) => UploadProjectAvatarResponseTracingSamplingRulesItemDestination._(value);
 
-  static const external_ =
-      UploadProjectAvatarResponseTracingSamplingRulesItemDestination._(
-          'external');
-  static const internal =
-      UploadProjectAvatarResponseTracingSamplingRulesItemDestination._(
-          'internal');
+  static const external_ = UploadProjectAvatarResponseTracingSamplingRulesItemDestination._('external');
+  static const internal = UploadProjectAvatarResponseTracingSamplingRulesItemDestination._('internal');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseTracingSamplingRulesItemDestination &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTracingSamplingRulesItemDestination && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTracingSamplingRulesItemEnv {
+
   final String value;
 
   const UploadProjectAvatarResponseTracingSamplingRulesItemEnv._(this.value);
 
-  factory UploadProjectAvatarResponseTracingSamplingRulesItemEnv.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTracingSamplingRulesItemEnv._(value);
+  factory UploadProjectAvatarResponseTracingSamplingRulesItemEnv.fromJson(String value) => UploadProjectAvatarResponseTracingSamplingRulesItemEnv._(value);
 
-  static const preview =
-      UploadProjectAvatarResponseTracingSamplingRulesItemEnv._('preview');
-  static const production =
-      UploadProjectAvatarResponseTracingSamplingRulesItemEnv._('production');
+  static const preview = UploadProjectAvatarResponseTracingSamplingRulesItemEnv._('preview');
+  static const production = UploadProjectAvatarResponseTracingSamplingRulesItemEnv._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseTracingSamplingRulesItemEnv &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTracingSamplingRulesItemEnv && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Allow same-team Vercel CI access to preview and production deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value.
 final class UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository {
+
   final bool value;
 
-  const UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(
-      this.value);
+  const UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(this.value);
 
-  factory UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(
-          value);
+  factory UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(bool value) => UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(
-          false);
-  static const true_ =
-      UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(
-          true);
+  static const false_ = UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(false);
+  static const true_ = UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset {
+
   final String value;
 
-  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(
-      this.value);
+  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(this.value);
 
-  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset
-          ._(value);
+  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(String value) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(value);
 
-  static const allCustom =
-      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset
-          ._('all-custom');
+  static const allCustom = UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset {
+
   final String value;
 
-  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(
-      this.value);
+  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(this.value);
 
-  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
-          ._(value);
+  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(String value) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(value);
 
-  static const allCustom =
-      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
-          ._('all-custom');
+  static const allCustom = UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset {
+
   final String value;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(
-      this.value);
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(this.value);
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
-          ._(value);
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(String value) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(value);
 
-  static const allCustom =
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
-          ._('all-custom');
+  static const allCustom = UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset {
+
   final String value;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(
-      this.value);
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(this.value);
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
-          ._(value);
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(String value) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(value);
 
-  static const allCustom =
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
-          ._('all-custom');
+  static const allCustom = UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset {
+
   final String value;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(
-      this.value);
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(this.value);
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
-          ._(value);
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(String value) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(value);
 
-  static const allCustom =
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
-          ._('all-custom');
+  static const allCustom = UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset {
+
   final String value;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(
-      this.value);
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(this.value);
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-          ._(value);
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(String value) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(value);
 
-  static const allCustom =
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-          ._('all-custom');
+  static const allCustom = UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._('all-custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Billing mode. Always 'flat' for flat-rate projects.
 final class UploadProjectAvatarResponseUsageStatusKind {
+
   final String value;
 
   const UploadProjectAvatarResponseUsageStatusKind._(this.value);
 
-  factory UploadProjectAvatarResponseUsageStatusKind.fromJson(String value) =>
-      UploadProjectAvatarResponseUsageStatusKind._(value);
+  factory UploadProjectAvatarResponseUsageStatusKind.fromJson(String value) => UploadProjectAvatarResponseUsageStatusKind._(value);
 
   static const flat = UploadProjectAvatarResponseUsageStatusKind._('flat');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseUsageStatusKind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseUsageStatusKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
 final class UploadProjectAvatarResponseUsageStatusTeamThrottled {
+
   final bool value;
 
   const UploadProjectAvatarResponseUsageStatusTeamThrottled._(this.value);
 
-  factory UploadProjectAvatarResponseUsageStatusTeamThrottled.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseUsageStatusTeamThrottled._(value);
+  factory UploadProjectAvatarResponseUsageStatusTeamThrottled.fromJson(bool value) => UploadProjectAvatarResponseUsageStatusTeamThrottled._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseUsageStatusTeamThrottled._(false);
-  static const true_ =
-      UploadProjectAvatarResponseUsageStatusTeamThrottled._(true);
+  static const false_ = UploadProjectAvatarResponseUsageStatusTeamThrottled._(false);
+  static const true_ = UploadProjectAvatarResponseUsageStatusTeamThrottled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseUsageStatusTeamThrottled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseUsageStatusTeamThrottled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

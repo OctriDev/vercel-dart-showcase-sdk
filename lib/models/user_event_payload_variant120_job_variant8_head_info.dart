@@ -8,124 +8,76 @@ part of 'user.dart';
 class UserEventPayloadVariant120JobVariant8HeadInfo {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Owner (namespace) slug, e.g. `acme`.
   final String owner;
-
   /// Origin namespace id (`ns_…`).
   final String ownerId;
-
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
-
   /// Repository name, e.g. `api`.
   final String repo;
-
   /// Origin repository id.
   final String repoId;
-
   /// Required `string` value serialized in the `sha` wire field.
   final String sha;
 
-  const UserEventPayloadVariant120JobVariant8HeadInfo(
-      {required this.owner,
-      required this.ownerId,
-      required this.ref,
-      required this.repo,
-      required this.repoId,
-      required this.sha});
+  const UserEventPayloadVariant120JobVariant8HeadInfo({required this.owner, required this.ownerId, required this.ref, required this.repo, required this.repoId, required this.sha});
 
-  UserEventPayloadVariant120JobVariant8HeadInfo Function(
-      {String owner,
-      String ownerId,
-      String ref,
-      String repo,
-      String repoId,
-      String sha}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant8HeadInfo Function({String owner, String ownerId, String ref, String repo, String repoId, String sha}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant8HeadInfo _copyWith(
-          {Object? owner = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sha = sdkOmittedValue}) =>
-      UserEventPayloadVariant120JobVariant8HeadInfo(
-        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-      );
+  UserEventPayloadVariant120JobVariant8HeadInfo _copyWith({Object? owner = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant8HeadInfo(
+    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+  );
 
-  factory UserEventPayloadVariant120JobVariant8HeadInfo.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant120JobVariant8HeadInfo(
-        owner: (json['owner'] as String?)!,
-        ownerId: (json['ownerId'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: (json['repoId'] as String?)!,
-        sha: (json['sha'] as String?)!,
-      );
+  factory UserEventPayloadVariant120JobVariant8HeadInfo.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant8HeadInfo(
+    owner: (json['owner'] as String?)!,
+    ownerId: (json['ownerId'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: (json['repoId'] as String?)!,
+    sha: (json['sha'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'owner': owner,
-        'ownerId': ownerId,
-        'ref': ref,
-        'repo': repo,
-        'repoId': repoId,
-        'sha': sha,
-      };
+    'owner': owner,
+    'ownerId': ownerId,
+    'ref': ref,
+    'repo': repo,
+    'repoId': repoId,
+    'sha': sha,
+  };
 }
 
 /// Since March 2026 Records a successful NSNB auto-add result so later GitHub PR comments can deterministically explain why this SHA was allowed to deploy.
 class UserEventPayloadVariant120JobVariant8NsnbSideEffect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `action` wire field.
   final UserEventPayloadVariant120JobVariant8NsnbSideEffectAction action;
-
   /// Required `string` value serialized in the `gitUserLogin` wire field.
   final String gitUserLogin;
 
-  const UserEventPayloadVariant120JobVariant8NsnbSideEffect(
-      {required this.action, required this.gitUserLogin});
+  const UserEventPayloadVariant120JobVariant8NsnbSideEffect({required this.action, required this.gitUserLogin});
 
-  UserEventPayloadVariant120JobVariant8NsnbSideEffect Function(
-      {UserEventPayloadVariant120JobVariant8NsnbSideEffectAction action,
-      String gitUserLogin}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant8NsnbSideEffect Function({UserEventPayloadVariant120JobVariant8NsnbSideEffectAction action, String gitUserLogin}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant8NsnbSideEffect _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? gitUserLogin = sdkOmittedValue}) =>
-      UserEventPayloadVariant120JobVariant8NsnbSideEffect(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as UserEventPayloadVariant120JobVariant8NsnbSideEffectAction,
-        gitUserLogin: identical(gitUserLogin, sdkOmittedValue)
-            ? this.gitUserLogin
-            : gitUserLogin as String,
-      );
+  UserEventPayloadVariant120JobVariant8NsnbSideEffect _copyWith({Object? action = sdkOmittedValue, Object? gitUserLogin = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant8NsnbSideEffect(
+    action: identical(action, sdkOmittedValue) ? this.action : action as UserEventPayloadVariant120JobVariant8NsnbSideEffectAction,
+    gitUserLogin: identical(gitUserLogin, sdkOmittedValue) ? this.gitUserLogin : gitUserLogin as String,
+  );
 
-  factory UserEventPayloadVariant120JobVariant8NsnbSideEffect.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant120JobVariant8NsnbSideEffect(
-        action: (json['action'] != null
-            ? UserEventPayloadVariant120JobVariant8NsnbSideEffectAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        gitUserLogin: (json['gitUserLogin'] as String?)!,
-      );
+  factory UserEventPayloadVariant120JobVariant8NsnbSideEffect.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant8NsnbSideEffect(
+    action: (json['action'] != null ? UserEventPayloadVariant120JobVariant8NsnbSideEffectAction.fromJson(json['action'] as String) : null)!,
+    gitUserLogin: (json['gitUserLogin'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'gitUserLogin': gitUserLogin,
-      };
+    'action': action.toJson(),
+    'gitUserLogin': gitUserLogin,
+  };
 }

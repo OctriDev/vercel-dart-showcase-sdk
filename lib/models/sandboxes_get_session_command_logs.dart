@@ -10,43 +10,24 @@ class GetSessionCommandLogsResponseVariant0Data {
   final GetSessionCommandLogsResponseVariant0DataCode code;
   final GetSessionCommandLogsResponseVariant0DataMessage message;
 
-  const GetSessionCommandLogsResponseVariant0Data(
-      {required this.code, required this.message});
+  const GetSessionCommandLogsResponseVariant0Data({required this.code, required this.message});
 
-  GetSessionCommandLogsResponseVariant0Data Function(
-          {GetSessionCommandLogsResponseVariant0DataCode code,
-          GetSessionCommandLogsResponseVariant0DataMessage message})
-      get copyWith => _copyWith;
+  GetSessionCommandLogsResponseVariant0Data Function({GetSessionCommandLogsResponseVariant0DataCode code, GetSessionCommandLogsResponseVariant0DataMessage message}) get copyWith => _copyWith;
 
-  GetSessionCommandLogsResponseVariant0Data _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? message = sdkOmittedValue}) =>
-      GetSessionCommandLogsResponseVariant0Data(
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as GetSessionCommandLogsResponseVariant0DataCode,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as GetSessionCommandLogsResponseVariant0DataMessage,
-      );
+  GetSessionCommandLogsResponseVariant0Data _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => GetSessionCommandLogsResponseVariant0Data(
+    code: identical(code, sdkOmittedValue) ? this.code : code as GetSessionCommandLogsResponseVariant0DataCode,
+    message: identical(message, sdkOmittedValue) ? this.message : message as GetSessionCommandLogsResponseVariant0DataMessage,
+  );
 
-  factory GetSessionCommandLogsResponseVariant0Data.fromJson(
-          Map<String, dynamic> json) =>
-      GetSessionCommandLogsResponseVariant0Data(
-        code: (json['code'] != null
-            ? GetSessionCommandLogsResponseVariant0DataCode.fromJson(
-                json['code'] as String)
-            : null)!,
-        message: (json['message'] != null
-            ? GetSessionCommandLogsResponseVariant0DataMessage.fromJson(
-                json['message'] as String)
-            : null)!,
-      );
+  factory GetSessionCommandLogsResponseVariant0Data.fromJson(Map<String, dynamic> json) => GetSessionCommandLogsResponseVariant0Data(
+    code: (json['code'] != null ? GetSessionCommandLogsResponseVariant0DataCode.fromJson(json['code'] as String) : null)!,
+    message: (json['message'] != null ? GetSessionCommandLogsResponseVariant0DataMessage.fromJson(json['message'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code.toJson(),
-        'message': message.toJson(),
-      };
+    'code': code.toJson(),
+    'message': message.toJson(),
+  };
 }
 
 class GetSessionCommandLogsResponseVariant0 {
@@ -55,37 +36,24 @@ class GetSessionCommandLogsResponseVariant0 {
   final GetSessionCommandLogsResponseVariant0Data data;
   final String stream;
 
-  const GetSessionCommandLogsResponseVariant0(
-      {required this.data, required this.stream});
+  const GetSessionCommandLogsResponseVariant0({required this.data, required this.stream});
 
-  GetSessionCommandLogsResponseVariant0 Function(
-      {GetSessionCommandLogsResponseVariant0Data data,
-      String stream}) get copyWith => _copyWith;
+  GetSessionCommandLogsResponseVariant0 Function({GetSessionCommandLogsResponseVariant0Data data, String stream}) get copyWith => _copyWith;
 
-  GetSessionCommandLogsResponseVariant0 _copyWith(
-          {Object? data = sdkOmittedValue, Object? stream = sdkOmittedValue}) =>
-      GetSessionCommandLogsResponseVariant0(
-        data: identical(data, sdkOmittedValue)
-            ? this.data
-            : data as GetSessionCommandLogsResponseVariant0Data,
-        stream:
-            identical(stream, sdkOmittedValue) ? this.stream : stream as String,
-      );
+  GetSessionCommandLogsResponseVariant0 _copyWith({Object? data = sdkOmittedValue, Object? stream = sdkOmittedValue}) => GetSessionCommandLogsResponseVariant0(
+    data: identical(data, sdkOmittedValue) ? this.data : data as GetSessionCommandLogsResponseVariant0Data,
+    stream: identical(stream, sdkOmittedValue) ? this.stream : stream as String,
+  );
 
-  factory GetSessionCommandLogsResponseVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetSessionCommandLogsResponseVariant0(
-        data: (json['data'] != null
-            ? GetSessionCommandLogsResponseVariant0Data.fromJson(
-                json['data'] as Map<String, dynamic>)
-            : null)!,
-        stream: (json['stream'] as String?)!,
-      );
+  factory GetSessionCommandLogsResponseVariant0.fromJson(Map<String, dynamic> json) => GetSessionCommandLogsResponseVariant0(
+    data: (json['data'] != null ? GetSessionCommandLogsResponseVariant0Data.fromJson(json['data'] as Map<String, dynamic>) : null)!,
+    stream: (json['stream'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data.toJson(),
-        'stream': stream,
-      };
+    'data': data.toJson(),
+    'stream': stream,
+  };
 }
 
 class GetSessionCommandLogsResponseVariant1 {
@@ -94,31 +62,24 @@ class GetSessionCommandLogsResponseVariant1 {
   final String data;
   final String stream;
 
-  const GetSessionCommandLogsResponseVariant1(
-      {required this.data, required this.stream});
+  const GetSessionCommandLogsResponseVariant1({required this.data, required this.stream});
 
-  GetSessionCommandLogsResponseVariant1 Function({String data, String stream})
-      get copyWith => _copyWith;
+  GetSessionCommandLogsResponseVariant1 Function({String data, String stream}) get copyWith => _copyWith;
 
-  GetSessionCommandLogsResponseVariant1 _copyWith(
-          {Object? data = sdkOmittedValue, Object? stream = sdkOmittedValue}) =>
-      GetSessionCommandLogsResponseVariant1(
-        data: identical(data, sdkOmittedValue) ? this.data : data as String,
-        stream:
-            identical(stream, sdkOmittedValue) ? this.stream : stream as String,
-      );
+  GetSessionCommandLogsResponseVariant1 _copyWith({Object? data = sdkOmittedValue, Object? stream = sdkOmittedValue}) => GetSessionCommandLogsResponseVariant1(
+    data: identical(data, sdkOmittedValue) ? this.data : data as String,
+    stream: identical(stream, sdkOmittedValue) ? this.stream : stream as String,
+  );
 
-  factory GetSessionCommandLogsResponseVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetSessionCommandLogsResponseVariant1(
-        data: (json['data'] as String?)!,
-        stream: (json['stream'] as String?)!,
-      );
+  factory GetSessionCommandLogsResponseVariant1.fromJson(Map<String, dynamic> json) => GetSessionCommandLogsResponseVariant1(
+    data: (json['data'] as String?)!,
+    stream: (json['stream'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data,
-        'stream': stream,
-      };
+    'data': data,
+    'stream': stream,
+  };
 }
 
 sealed class GetSessionCommandLogsResponse {
@@ -127,51 +88,24 @@ sealed class GetSessionCommandLogsResponse {
   const GetSessionCommandLogsResponse();
   factory GetSessionCommandLogsResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetSessionCommandLogsResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetSessionCommandLogsResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetSessionCommandLogsResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0(value); } } catch (_) {}
+      try { final value = GetSessionCommandLogsResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0(
-          GetSessionCommandLogsResponseVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1(
-          GetSessionCommandLogsResponseVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetSessionCommandLogsResponse");
+    try { return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0(GetSessionCommandLogsResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1(GetSessionCommandLogsResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetSessionCommandLogsResponse");
   }
   Object? toJson();
 }
 
-final class GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0
-    extends GetSessionCommandLogsResponse {
+final class GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0 extends GetSessionCommandLogsResponse {
   final GetSessionCommandLogsResponseVariant0 value;
-  const GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1
-    extends GetSessionCommandLogsResponse {
+final class GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1 extends GetSessionCommandLogsResponse {
   final GetSessionCommandLogsResponseVariant1 value;
-  const GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetSessionCommandLogsResponseGetSessionCommandLogsResponseVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

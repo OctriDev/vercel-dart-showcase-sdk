@@ -8,163 +8,80 @@ part of 'deployments.dart';
 class CreateDeploymentResponseVariant1AttributionVercelUser {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Vercel user ID
   final String id;
-
   /// Team roles at time of deployment
   final SdkOptional<List<String>> teamRoles;
-
   /// Vercel username
   final String username;
 
-  const CreateDeploymentResponseVariant1AttributionVercelUser(
-      {required this.id,
-      this.teamRoles = const SdkOmitted(),
-      required this.username});
+  const CreateDeploymentResponseVariant1AttributionVercelUser({required this.id, this.teamRoles = const SdkOmitted(), required this.username});
 
-  CreateDeploymentResponseVariant1AttributionVercelUser Function(
-      {String id,
-      SdkOptional<List<String>> teamRoles,
-      String username}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1AttributionVercelUser Function({String id, SdkOptional<List<String>> teamRoles, String username}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1AttributionVercelUser _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? teamRoles = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1AttributionVercelUser(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        teamRoles: identical(teamRoles, sdkOmittedValue)
-            ? this.teamRoles
-            : teamRoles as SdkOptional<List<String>>,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  CreateDeploymentResponseVariant1AttributionVercelUser _copyWith({Object? id = sdkOmittedValue, Object? teamRoles = sdkOmittedValue, Object? username = sdkOmittedValue}) => CreateDeploymentResponseVariant1AttributionVercelUser(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    teamRoles: identical(teamRoles, sdkOmittedValue) ? this.teamRoles : teamRoles as SdkOptional<List<String>>,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory CreateDeploymentResponseVariant1AttributionVercelUser.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1AttributionVercelUser(
-        id: (json['id'] as String?)!,
-        teamRoles: json['teamRoles'] != null
-            ? SdkPresent(((json['teamRoles'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        username: (json['username'] as String?)!,
-      );
+  factory CreateDeploymentResponseVariant1AttributionVercelUser.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1AttributionVercelUser(
+    id: (json['id'] as String?)!,
+    teamRoles: json['teamRoles'] != null ? SdkPresent(((json['teamRoles'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (teamRoles) {
-          SdkPresent<List<String>>(value: final value) => {
-              'teamRoles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'username': username,
-      };
+    'id': id,
+    ...switch (teamRoles) {
+      SdkPresent<List<String>>(value: final value) => {'teamRoles': value,},
+      _ => const <String, dynamic>{},
+    },
+    'username': username,
+  };
 }
 
 /// Attribution metadata for the deployment, linking commit author to git and Vercel users. Only populated when the `enable-deployment-attribution` flag is enabled.
 class CreateDeploymentResponseVariant1Attribution {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Commit metadata from the git commit author
-  final SdkOptional<CreateDeploymentResponseVariant1AttributionCommitMeta>
-      commitMeta;
-
+  final SdkOptional<CreateDeploymentResponseVariant1AttributionCommitMeta> commitMeta;
   /// Git provider user associated with the commit author email (only set if resolved)
   final SdkOptional<CreateDeploymentResponseVariant1AttributionGitUser> gitUser;
-
   /// Vercel user linked to the git provider account (only set if resolved)
-  final SdkOptional<CreateDeploymentResponseVariant1AttributionVercelUser>
-      vercelUser;
+  final SdkOptional<CreateDeploymentResponseVariant1AttributionVercelUser> vercelUser;
 
-  const CreateDeploymentResponseVariant1Attribution(
-      {this.commitMeta = const SdkOmitted(),
-      this.gitUser = const SdkOmitted(),
-      this.vercelUser = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1Attribution({this.commitMeta = const SdkOmitted(), this.gitUser = const SdkOmitted(), this.vercelUser = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1Attribution Function(
-      {SdkOptional<CreateDeploymentResponseVariant1AttributionCommitMeta>
-          commitMeta,
-      SdkOptional<CreateDeploymentResponseVariant1AttributionGitUser> gitUser,
-      SdkOptional<CreateDeploymentResponseVariant1AttributionVercelUser>
-          vercelUser}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1Attribution Function({SdkOptional<CreateDeploymentResponseVariant1AttributionCommitMeta> commitMeta, SdkOptional<CreateDeploymentResponseVariant1AttributionGitUser> gitUser, SdkOptional<CreateDeploymentResponseVariant1AttributionVercelUser> vercelUser}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1Attribution _copyWith(
-          {Object? commitMeta = sdkOmittedValue,
-          Object? gitUser = sdkOmittedValue,
-          Object? vercelUser = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1Attribution(
-        commitMeta: identical(commitMeta, sdkOmittedValue)
-            ? this.commitMeta
-            : commitMeta as SdkOptional<
-                CreateDeploymentResponseVariant1AttributionCommitMeta>,
-        gitUser: identical(gitUser, sdkOmittedValue)
-            ? this.gitUser
-            : gitUser as SdkOptional<
-                CreateDeploymentResponseVariant1AttributionGitUser>,
-        vercelUser: identical(vercelUser, sdkOmittedValue)
-            ? this.vercelUser
-            : vercelUser as SdkOptional<
-                CreateDeploymentResponseVariant1AttributionVercelUser>,
-      );
+  CreateDeploymentResponseVariant1Attribution _copyWith({Object? commitMeta = sdkOmittedValue, Object? gitUser = sdkOmittedValue, Object? vercelUser = sdkOmittedValue}) => CreateDeploymentResponseVariant1Attribution(
+    commitMeta: identical(commitMeta, sdkOmittedValue) ? this.commitMeta : commitMeta as SdkOptional<CreateDeploymentResponseVariant1AttributionCommitMeta>,
+    gitUser: identical(gitUser, sdkOmittedValue) ? this.gitUser : gitUser as SdkOptional<CreateDeploymentResponseVariant1AttributionGitUser>,
+    vercelUser: identical(vercelUser, sdkOmittedValue) ? this.vercelUser : vercelUser as SdkOptional<CreateDeploymentResponseVariant1AttributionVercelUser>,
+  );
 
-  factory CreateDeploymentResponseVariant1Attribution.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1Attribution(
-        commitMeta: json['commitMeta'] != null
-            ? SdkPresent((json['commitMeta'] != null
-                ? CreateDeploymentResponseVariant1AttributionCommitMeta
-                    .fromJson(json['commitMeta'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        gitUser: json['gitUser'] != null
-            ? SdkPresent((json['gitUser'] != null
-                ? CreateDeploymentResponseVariant1AttributionGitUser.fromJson(
-                    json['gitUser'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        vercelUser: json['vercelUser'] != null
-            ? SdkPresent((json['vercelUser'] != null
-                ? CreateDeploymentResponseVariant1AttributionVercelUser
-                    .fromJson(json['vercelUser'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateDeploymentResponseVariant1Attribution.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1Attribution(
+    commitMeta: json['commitMeta'] != null ? SdkPresent((json['commitMeta'] != null ? CreateDeploymentResponseVariant1AttributionCommitMeta.fromJson(json['commitMeta'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    gitUser: json['gitUser'] != null ? SdkPresent((json['gitUser'] != null ? CreateDeploymentResponseVariant1AttributionGitUser.fromJson(json['gitUser'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    vercelUser: json['vercelUser'] != null ? SdkPresent((json['vercelUser'] != null ? CreateDeploymentResponseVariant1AttributionVercelUser.fromJson(json['vercelUser'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (commitMeta) {
-          SdkPresent<CreateDeploymentResponseVariant1AttributionCommitMeta>(
-            value: final value
-          ) =>
-            {
-              'commitMeta': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitUser) {
-          SdkPresent<CreateDeploymentResponseVariant1AttributionGitUser>(
-            value: final value
-          ) =>
-            {
-              'gitUser': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (vercelUser) {
-          SdkPresent<CreateDeploymentResponseVariant1AttributionVercelUser>(
-            value: final value
-          ) =>
-            {
-              'vercelUser': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (commitMeta) {
+      SdkPresent<CreateDeploymentResponseVariant1AttributionCommitMeta>(value: final value) => {'commitMeta': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitUser) {
+      SdkPresent<CreateDeploymentResponseVariant1AttributionGitUser>(value: final value) => {'gitUser': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (vercelUser) {
+      SdkPresent<CreateDeploymentResponseVariant1AttributionVercelUser>(value: final value) => {'vercelUser': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateDeploymentResponseVariant1Build {
@@ -174,24 +91,19 @@ class CreateDeploymentResponseVariant1Build {
 
   const CreateDeploymentResponseVariant1Build({required this.env});
 
-  CreateDeploymentResponseVariant1Build Function({List<String> env})
-      get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1Build Function({List<String> env}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1Build _copyWith(
-          {Object? env = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1Build(
-        env: identical(env, sdkOmittedValue) ? this.env : env as List<String>,
-      );
+  CreateDeploymentResponseVariant1Build _copyWith({Object? env = sdkOmittedValue}) => CreateDeploymentResponseVariant1Build(
+    env: identical(env, sdkOmittedValue) ? this.env : env as List<String>,
+  );
 
-  factory CreateDeploymentResponseVariant1Build.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1Build(
-        env: ((json['env'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory CreateDeploymentResponseVariant1Build.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1Build(
+    env: ((json['env'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'env': env,
-      };
+    'env': env,
+  };
 }
 
 /// Condensed check data. Retrieve individual check and check run data using api-checks v2 routes.
@@ -202,304 +114,146 @@ class CreateDeploymentResponseVariant1ChecksDeploymentAlias {
   final double startedAt;
   final CreateDeploymentResponseVariant1ChecksDeploymentAliasState state;
 
-  const CreateDeploymentResponseVariant1ChecksDeploymentAlias(
-      {this.completedAt = const SdkOmitted(),
-      required this.startedAt,
-      required this.state});
+  const CreateDeploymentResponseVariant1ChecksDeploymentAlias({this.completedAt = const SdkOmitted(), required this.startedAt, required this.state});
 
-  CreateDeploymentResponseVariant1ChecksDeploymentAlias Function(
-          {SdkOptional<double> completedAt,
-          double startedAt,
-          CreateDeploymentResponseVariant1ChecksDeploymentAliasState state})
-      get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ChecksDeploymentAlias Function({SdkOptional<double> completedAt, double startedAt, CreateDeploymentResponseVariant1ChecksDeploymentAliasState state}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ChecksDeploymentAlias _copyWith(
-          {Object? completedAt = sdkOmittedValue,
-          Object? startedAt = sdkOmittedValue,
-          Object? state = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1ChecksDeploymentAlias(
-        completedAt: identical(completedAt, sdkOmittedValue)
-            ? this.completedAt
-            : completedAt as SdkOptional<double>,
-        startedAt: identical(startedAt, sdkOmittedValue)
-            ? this.startedAt
-            : startedAt as double,
-        state: identical(state, sdkOmittedValue)
-            ? this.state
-            : state
-                as CreateDeploymentResponseVariant1ChecksDeploymentAliasState,
-      );
+  CreateDeploymentResponseVariant1ChecksDeploymentAlias _copyWith({Object? completedAt = sdkOmittedValue, Object? startedAt = sdkOmittedValue, Object? state = sdkOmittedValue}) => CreateDeploymentResponseVariant1ChecksDeploymentAlias(
+    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
+    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as double,
+    state: identical(state, sdkOmittedValue) ? this.state : state as CreateDeploymentResponseVariant1ChecksDeploymentAliasState,
+  );
 
-  factory CreateDeploymentResponseVariant1ChecksDeploymentAlias.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1ChecksDeploymentAlias(
-        completedAt: json['completedAt'] != null
-            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        startedAt: ((json['startedAt'] as num?)?.toDouble())!,
-        state: (json['state'] != null
-            ? CreateDeploymentResponseVariant1ChecksDeploymentAliasState
-                .fromJson(json['state'] as String)
-            : null)!,
-      );
+  factory CreateDeploymentResponseVariant1ChecksDeploymentAlias.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ChecksDeploymentAlias(
+    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    startedAt: ((json['startedAt'] as num?)?.toDouble())!,
+    state: (json['state'] != null ? CreateDeploymentResponseVariant1ChecksDeploymentAliasState.fromJson(json['state'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (completedAt) {
-          SdkPresent<double>(value: final value) => {
-              'completedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'startedAt': startedAt,
-        'state': state.toJson(),
-      };
+    ...switch (completedAt) {
+      SdkPresent<double>(value: final value) => {'completedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'startedAt': startedAt,
+    'state': state.toJson(),
+  };
 }
 
 class CreateDeploymentResponseVariant1Checks {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Condensed check data. Retrieve individual check and check run data using api-checks v2 routes.
   final CreateDeploymentResponseVariant1ChecksDeploymentAlias deploymentAlias;
 
   const CreateDeploymentResponseVariant1Checks({required this.deploymentAlias});
 
-  CreateDeploymentResponseVariant1Checks Function(
-      {CreateDeploymentResponseVariant1ChecksDeploymentAlias
-          deploymentAlias}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1Checks Function({CreateDeploymentResponseVariant1ChecksDeploymentAlias deploymentAlias}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1Checks _copyWith(
-          {Object? deploymentAlias = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1Checks(
-        deploymentAlias: identical(deploymentAlias, sdkOmittedValue)
-            ? this.deploymentAlias
-            : deploymentAlias
-                as CreateDeploymentResponseVariant1ChecksDeploymentAlias,
-      );
+  CreateDeploymentResponseVariant1Checks _copyWith({Object? deploymentAlias = sdkOmittedValue}) => CreateDeploymentResponseVariant1Checks(
+    deploymentAlias: identical(deploymentAlias, sdkOmittedValue) ? this.deploymentAlias : deploymentAlias as CreateDeploymentResponseVariant1ChecksDeploymentAlias,
+  );
 
-  factory CreateDeploymentResponseVariant1Checks.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1Checks(
-        deploymentAlias: (json['deployment-alias'] != null
-            ? CreateDeploymentResponseVariant1ChecksDeploymentAlias.fromJson(
-                json['deployment-alias'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CreateDeploymentResponseVariant1Checks.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1Checks(
+    deploymentAlias: (json['deployment-alias'] != null ? CreateDeploymentResponseVariant1ChecksDeploymentAlias.fromJson(json['deployment-alias'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'deployment-alias': deploymentAlias.toJson(),
-      };
+    'deployment-alias': deploymentAlias.toJson(),
+  };
 }
 
 /// Build resource configuration snapshot for this deployment.
 class CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Build resource configuration snapshot for this deployment.
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration>
-      configuration;
+  final SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration> configuration;
 
-  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue(
-      {this.configuration = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue Function(
-      {SdkOptional<
-              CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration>
-          configuration}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue Function({SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue _copyWith(
-          {Object? configuration = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue(
-        configuration: identical(configuration, sdkOmittedValue)
-            ? this.configuration
-            : configuration as SdkOptional<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration>,
-      );
+  CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue(
+    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration>,
+  );
 
-  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue(
-        configuration: json['configuration'] != null
-            ? SdkPresent((json['configuration'] != null
-                ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration
-                    .fromJson(json['configuration'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue(
+    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (configuration) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration>(
-            value: final value
-          ) =>
-            {
-              'configuration': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (configuration) {
+      SdkPresent<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Machine type that was used for the build.
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?>
-      purchaseType;
+  final SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?> purchaseType;
 
-  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine(
-      {this.purchaseType = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine({this.purchaseType = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine Function(
-      {SdkOptional<
-              CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?>
-          purchaseType}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine Function({SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?> purchaseType}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine _copyWith(
-          {Object? purchaseType = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine(
-        purchaseType: identical(purchaseType, sdkOmittedValue)
-            ? this.purchaseType
-            : purchaseType as SdkOptional<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?>,
-      );
+  CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine _copyWith({Object? purchaseType = sdkOmittedValue}) => CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine(
+    purchaseType: identical(purchaseType, sdkOmittedValue) ? this.purchaseType : purchaseType as SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?>,
+  );
 
-  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine(
-        purchaseType: json.containsKey('purchaseType')
-            ? SdkPresent(json['purchaseType'] != null
-                ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType
-                    .fromJson(json['purchaseType'] as String)
-                : null)
-            : const SdkOmitted(),
-      );
+  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine(
+    purchaseType: json.containsKey('purchaseType') ? SdkPresent(json['purchaseType'] != null ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType.fromJson(json['purchaseType'] as String) : null) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (purchaseType) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?>(
-            value: final value
-          ) =>
-            {
-              'purchaseType': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (purchaseType) {
+      SdkPresent<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType?>(value: final value) => {'purchaseType': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Build resource configuration snapshot for this deployment.
 class CreateDeploymentResponseVariant1ConfigResourceConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Build resource configuration snapshot for this deployment.
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue>
-      buildQueue;
-
+  final SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue> buildQueue;
   /// When elastic concurrency is used for this deployment, a value is set. The value tells the reason where the setting was coming from. - TEAM_SETTING: Inherited from team settings - PROJECT_SETTING: Inherited from project settings - SKIP_QUEUE: Manually triggered by user to skip the queues
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency>
-      elasticConcurrency;
-  final SdkOptional<
-          CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine>
-      buildMachine;
+  final SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency> elasticConcurrency;
+  final SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine> buildMachine;
 
-  const CreateDeploymentResponseVariant1ConfigResourceConfig(
-      {this.buildQueue = const SdkOmitted(),
-      this.elasticConcurrency = const SdkOmitted(),
-      this.buildMachine = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1ConfigResourceConfig({this.buildQueue = const SdkOmitted(), this.elasticConcurrency = const SdkOmitted(), this.buildMachine = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1ConfigResourceConfig Function(
-      {SdkOptional<
-              CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue>
-          buildQueue,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency>
-          elasticConcurrency,
-      SdkOptional<
-              CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine>
-          buildMachine}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ConfigResourceConfig Function({SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue> buildQueue, SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency> elasticConcurrency, SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine> buildMachine}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ConfigResourceConfig _copyWith(
-          {Object? buildQueue = sdkOmittedValue,
-          Object? elasticConcurrency = sdkOmittedValue,
-          Object? buildMachine = sdkOmittedValue}) =>
-      CreateDeploymentResponseVariant1ConfigResourceConfig(
-        buildQueue: identical(buildQueue, sdkOmittedValue)
-            ? this.buildQueue
-            : buildQueue as SdkOptional<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue>,
-        elasticConcurrency: identical(elasticConcurrency, sdkOmittedValue)
-            ? this.elasticConcurrency
-            : elasticConcurrency as SdkOptional<
-                CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency>,
-        buildMachine: identical(buildMachine, sdkOmittedValue)
-            ? this.buildMachine
-            : buildMachine as SdkOptional<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine>,
-      );
+  CreateDeploymentResponseVariant1ConfigResourceConfig _copyWith({Object? buildQueue = sdkOmittedValue, Object? elasticConcurrency = sdkOmittedValue, Object? buildMachine = sdkOmittedValue}) => CreateDeploymentResponseVariant1ConfigResourceConfig(
+    buildQueue: identical(buildQueue, sdkOmittedValue) ? this.buildQueue : buildQueue as SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue>,
+    elasticConcurrency: identical(elasticConcurrency, sdkOmittedValue) ? this.elasticConcurrency : elasticConcurrency as SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency>,
+    buildMachine: identical(buildMachine, sdkOmittedValue) ? this.buildMachine : buildMachine as SdkOptional<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine>,
+  );
 
-  factory CreateDeploymentResponseVariant1ConfigResourceConfig.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1ConfigResourceConfig(
-        buildQueue: json['buildQueue'] != null
-            ? SdkPresent((json['buildQueue'] != null
-                ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue
-                    .fromJson(json['buildQueue'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        elasticConcurrency: json['elasticConcurrency'] != null
-            ? SdkPresent((json['elasticConcurrency'] != null
-                ? CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency
-                    .fromJson(json['elasticConcurrency'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        buildMachine: json['buildMachine'] != null
-            ? SdkPresent((json['buildMachine'] != null
-                ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine
-                    .fromJson(json['buildMachine'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateDeploymentResponseVariant1ConfigResourceConfig.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ConfigResourceConfig(
+    buildQueue: json['buildQueue'] != null ? SdkPresent((json['buildQueue'] != null ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue.fromJson(json['buildQueue'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    elasticConcurrency: json['elasticConcurrency'] != null ? SdkPresent((json['elasticConcurrency'] != null ? CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency.fromJson(json['elasticConcurrency'] as String) : null)!) : const SdkOmitted(),
+    buildMachine: json['buildMachine'] != null ? SdkPresent((json['buildMachine'] != null ? CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine.fromJson(json['buildMachine'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (buildQueue) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue>(
-            value: final value
-          ) =>
-            {
-              'buildQueue': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (elasticConcurrency) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency>(
-            value: final value
-          ) =>
-            {
-              'elasticConcurrency': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachine) {
-          SdkPresent<
-                CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine>(
-            value: final value
-          ) =>
-            {
-              'buildMachine': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (buildQueue) {
+      SdkPresent<CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueue>(value: final value) => {'buildQueue': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (elasticConcurrency) {
+      SdkPresent<CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency>(value: final value) => {'elasticConcurrency': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachine) {
+      SdkPresent<CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachine>(value: final value) => {'buildMachine': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
