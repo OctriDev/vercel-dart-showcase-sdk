@@ -10,25 +10,42 @@ class EditProjectEnvResponseContentHintVariant0 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant0Type type_;
 
-  const EditProjectEnvResponseContentHintVariant0({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant0(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant0 Function({String storeId, EditProjectEnvResponseContentHintVariant0Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant0 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant0Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant0(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant0Type,
-  );
+  EditProjectEnvResponseContentHintVariant0 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant0(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant0Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant0(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant0(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant0Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant1 implements SdkJsonModel {
@@ -37,25 +54,42 @@ class EditProjectEnvResponseContentHintVariant1 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant1Type type_;
 
-  const EditProjectEnvResponseContentHintVariant1({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant1(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant1 Function({String storeId, EditProjectEnvResponseContentHintVariant1Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant1 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant1Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant1(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant1Type,
-  );
+  EditProjectEnvResponseContentHintVariant1 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant1(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant1Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant1(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant1(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant1Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant2 implements SdkJsonModel {
@@ -64,25 +98,42 @@ class EditProjectEnvResponseContentHintVariant2 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant2Type type_;
 
-  const EditProjectEnvResponseContentHintVariant2({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant2(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant2 Function({String storeId, EditProjectEnvResponseContentHintVariant2Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant2 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant2Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant2(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant2Type,
-  );
+  EditProjectEnvResponseContentHintVariant2 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant2(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant2Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant2.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant2(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant2(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant2Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant3 implements SdkJsonModel {
@@ -91,25 +142,42 @@ class EditProjectEnvResponseContentHintVariant3 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant3Type type_;
 
-  const EditProjectEnvResponseContentHintVariant3({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant3(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant3 Function({String storeId, EditProjectEnvResponseContentHintVariant3Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant3 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant3Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant3 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant3(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant3Type,
-  );
+  EditProjectEnvResponseContentHintVariant3 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant3(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant3Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant3.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant3(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant3Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant3(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant3Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant4 implements SdkJsonModel {
@@ -118,25 +186,42 @@ class EditProjectEnvResponseContentHintVariant4 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant4Type type_;
 
-  const EditProjectEnvResponseContentHintVariant4({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant4(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant4 Function({String storeId, EditProjectEnvResponseContentHintVariant4Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant4 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant4Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant4 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant4(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant4Type,
-  );
+  EditProjectEnvResponseContentHintVariant4 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant4(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant4Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant4.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant4(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant4Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant4(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant4Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant5 implements SdkJsonModel {
@@ -145,25 +230,42 @@ class EditProjectEnvResponseContentHintVariant5 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant5Type type_;
 
-  const EditProjectEnvResponseContentHintVariant5({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant5(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant5 Function({String storeId, EditProjectEnvResponseContentHintVariant5Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant5 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant5Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant5 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant5(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant5Type,
-  );
+  EditProjectEnvResponseContentHintVariant5 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant5(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant5Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant5.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant5(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant5Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant5(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant5Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant6 implements SdkJsonModel {
@@ -172,25 +274,42 @@ class EditProjectEnvResponseContentHintVariant6 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant6Type type_;
 
-  const EditProjectEnvResponseContentHintVariant6({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant6(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant6 Function({String storeId, EditProjectEnvResponseContentHintVariant6Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant6 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant6Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant6 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant6(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant6Type,
-  );
+  EditProjectEnvResponseContentHintVariant6 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant6(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant6Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant6.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant6(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant6Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant6(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant6Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant7 implements SdkJsonModel {
@@ -199,25 +318,42 @@ class EditProjectEnvResponseContentHintVariant7 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant7Type type_;
 
-  const EditProjectEnvResponseContentHintVariant7({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant7(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant7 Function({String storeId, EditProjectEnvResponseContentHintVariant7Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant7 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant7Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant7 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant7(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant7Type,
-  );
+  EditProjectEnvResponseContentHintVariant7 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant7(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant7Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant7.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant7(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant7Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant7(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant7Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant8 implements SdkJsonModel {
@@ -226,25 +362,42 @@ class EditProjectEnvResponseContentHintVariant8 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant8Type type_;
 
-  const EditProjectEnvResponseContentHintVariant8({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant8(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant8 Function({String storeId, EditProjectEnvResponseContentHintVariant8Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant8 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant8Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant8 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant8(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant8Type,
-  );
+  EditProjectEnvResponseContentHintVariant8 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant8(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant8Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant8.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant8(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant8Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant8(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant8Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class EditProjectEnvResponseContentHintVariant9 implements SdkJsonModel {
@@ -253,23 +406,40 @@ class EditProjectEnvResponseContentHintVariant9 implements SdkJsonModel {
   final String storeId;
   final EditProjectEnvResponseContentHintVariant9Type type_;
 
-  const EditProjectEnvResponseContentHintVariant9({required this.storeId, required this.type_});
+  const EditProjectEnvResponseContentHintVariant9(
+      {required this.storeId, required this.type_});
 
-  EditProjectEnvResponseContentHintVariant9 Function({String storeId, EditProjectEnvResponseContentHintVariant9Type type_}) get copyWith => _copyWith;
+  EditProjectEnvResponseContentHintVariant9 Function(
+          {String storeId, EditProjectEnvResponseContentHintVariant9Type type_})
+      get copyWith => _copyWith;
 
-  EditProjectEnvResponseContentHintVariant9 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => EditProjectEnvResponseContentHintVariant9(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as EditProjectEnvResponseContentHintVariant9Type,
-  );
+  EditProjectEnvResponseContentHintVariant9 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      EditProjectEnvResponseContentHintVariant9(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as EditProjectEnvResponseContentHintVariant9Type,
+      );
 
-  factory EditProjectEnvResponseContentHintVariant9.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(EditProjectEnvResponseContentHintVariant9(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? EditProjectEnvResponseContentHintVariant9Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory EditProjectEnvResponseContentHintVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          EditProjectEnvResponseContentHintVariant9(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? EditProjectEnvResponseContentHintVariant9Type.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }

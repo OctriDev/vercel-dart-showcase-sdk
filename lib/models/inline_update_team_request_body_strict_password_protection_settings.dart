@@ -5,107 +5,177 @@ part of 'inline.dart';
 
 // Inline operation models
 /// When enabled, adding, changing, or removing project password protection requires Owner role.
-class UpdateTeamRequestBodyStrictPasswordProtectionSettings implements SdkJsonModel {
+class UpdateTeamRequestBodyStrictPasswordProtectionSettings
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Enable or disable requiring Owner role to change project password protection.
   final bool enabled;
 
-  const UpdateTeamRequestBodyStrictPasswordProtectionSettings({required this.enabled});
+  const UpdateTeamRequestBodyStrictPasswordProtectionSettings(
+      {required this.enabled});
 
-  UpdateTeamRequestBodyStrictPasswordProtectionSettings Function({bool enabled}) get copyWith => _copyWith;
+  UpdateTeamRequestBodyStrictPasswordProtectionSettings Function({bool enabled})
+      get copyWith => _copyWith;
 
-  UpdateTeamRequestBodyStrictPasswordProtectionSettings _copyWith({Object? enabled = sdkOmittedValue}) => UpdateTeamRequestBodyStrictPasswordProtectionSettings(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
-  );
+  UpdateTeamRequestBodyStrictPasswordProtectionSettings _copyWith(
+          {Object? enabled = sdkOmittedValue}) =>
+      UpdateTeamRequestBodyStrictPasswordProtectionSettings(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as bool,
+      );
 
-  factory UpdateTeamRequestBodyStrictPasswordProtectionSettings.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateTeamRequestBodyStrictPasswordProtectionSettings(
-    enabled: (json['enabled'] as bool?)!,
-  ), json);
+  factory UpdateTeamRequestBodyStrictPasswordProtectionSettings.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateTeamRequestBodyStrictPasswordProtectionSettings(
+            enabled: (json['enabled'] as bool?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'enabled': enabled,
-  };
+        'enabled': enabled,
+      };
 }
 
 /// When enabled, creating and managing connectors requires Owner role.
 class UpdateTeamRequestBodyStrictConnectors implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Enable or disable requiring Owner role to manage connectors.
   final bool enabled;
 
   const UpdateTeamRequestBodyStrictConnectors({required this.enabled});
 
-  UpdateTeamRequestBodyStrictConnectors Function({bool enabled}) get copyWith => _copyWith;
+  UpdateTeamRequestBodyStrictConnectors Function({bool enabled}) get copyWith =>
+      _copyWith;
 
-  UpdateTeamRequestBodyStrictConnectors _copyWith({Object? enabled = sdkOmittedValue}) => UpdateTeamRequestBodyStrictConnectors(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
-  );
+  UpdateTeamRequestBodyStrictConnectors _copyWith(
+          {Object? enabled = sdkOmittedValue}) =>
+      UpdateTeamRequestBodyStrictConnectors(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as bool,
+      );
 
-  factory UpdateTeamRequestBodyStrictConnectors.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateTeamRequestBodyStrictConnectors(
-    enabled: (json['enabled'] as bool?)!,
-  ), json);
+  factory UpdateTeamRequestBodyStrictConnectors.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateTeamRequestBodyStrictConnectors(
+            enabled: (json['enabled'] as bool?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'enabled': enabled,
-  };
+        'enabled': enabled,
+      };
 }
 
 /// Build machine configuration.
 class UpdateTeamRequestBodyResourceConfigBuildMachine implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Default build machine type for new builds: standard, enhanced, turbo, or elastic.
-  final SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachineDefault> default_;
+  final SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachineDefault>
+      default_;
 
-  const UpdateTeamRequestBodyResourceConfigBuildMachine({this.default_ = const SdkOmitted()});
+  const UpdateTeamRequestBodyResourceConfigBuildMachine(
+      {this.default_ = const SdkOmitted()});
 
-  UpdateTeamRequestBodyResourceConfigBuildMachine Function({SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachineDefault> default_}) get copyWith => _copyWith;
+  UpdateTeamRequestBodyResourceConfigBuildMachine Function(
+      {SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachineDefault>
+          default_}) get copyWith => _copyWith;
 
-  UpdateTeamRequestBodyResourceConfigBuildMachine _copyWith({Object? default_ = sdkOmittedValue}) => UpdateTeamRequestBodyResourceConfigBuildMachine(
-    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachineDefault>,
-  );
+  UpdateTeamRequestBodyResourceConfigBuildMachine _copyWith(
+          {Object? default_ = sdkOmittedValue}) =>
+      UpdateTeamRequestBodyResourceConfigBuildMachine(
+        default_: identical(default_, sdkOmittedValue)
+            ? this.default_
+            : default_ as SdkOptional<
+                UpdateTeamRequestBodyResourceConfigBuildMachineDefault>,
+      );
 
-  factory UpdateTeamRequestBodyResourceConfigBuildMachine.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateTeamRequestBodyResourceConfigBuildMachine(
-    default_: json['default'] != null ? SdkPresent((json['default'] != null ? UpdateTeamRequestBodyResourceConfigBuildMachineDefault.fromJson(json['default'] as String) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateTeamRequestBodyResourceConfigBuildMachine.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateTeamRequestBodyResourceConfigBuildMachine(
+            default_: json['default'] != null
+                ? SdkPresent((json['default'] != null
+                    ? UpdateTeamRequestBodyResourceConfigBuildMachineDefault
+                        .fromJson(json['default'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (default_) {
-      SdkPresent<UpdateTeamRequestBodyResourceConfigBuildMachineDefault>(value: final value) => {'default': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (default_) {
+          SdkPresent<UpdateTeamRequestBodyResourceConfigBuildMachineDefault>(
+            value: final value
+          ) =>
+            {
+              'default': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Resource configuration for the team.
 class UpdateTeamRequestBodyResourceConfig implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Build machine configuration.
-  final SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachine> buildMachine;
+  final SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachine>
+      buildMachine;
 
-  const UpdateTeamRequestBodyResourceConfig({this.buildMachine = const SdkOmitted()});
+  const UpdateTeamRequestBodyResourceConfig(
+      {this.buildMachine = const SdkOmitted()});
 
-  UpdateTeamRequestBodyResourceConfig Function({SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachine> buildMachine}) get copyWith => _copyWith;
+  UpdateTeamRequestBodyResourceConfig Function(
+      {SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachine>
+          buildMachine}) get copyWith => _copyWith;
 
-  UpdateTeamRequestBodyResourceConfig _copyWith({Object? buildMachine = sdkOmittedValue}) => UpdateTeamRequestBodyResourceConfig(
-    buildMachine: identical(buildMachine, sdkOmittedValue) ? this.buildMachine : buildMachine as SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachine>,
-  );
+  UpdateTeamRequestBodyResourceConfig _copyWith(
+          {Object? buildMachine = sdkOmittedValue}) =>
+      UpdateTeamRequestBodyResourceConfig(
+        buildMachine: identical(buildMachine, sdkOmittedValue)
+            ? this.buildMachine
+            : buildMachine
+                as SdkOptional<UpdateTeamRequestBodyResourceConfigBuildMachine>,
+      );
 
-  factory UpdateTeamRequestBodyResourceConfig.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateTeamRequestBodyResourceConfig(
-    buildMachine: json['buildMachine'] != null ? SdkPresent((json['buildMachine'] != null ? UpdateTeamRequestBodyResourceConfigBuildMachine.fromJson(json['buildMachine'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateTeamRequestBodyResourceConfig.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateTeamRequestBodyResourceConfig(
+            buildMachine: json['buildMachine'] != null
+                ? SdkPresent((json['buildMachine'] != null
+                    ? UpdateTeamRequestBodyResourceConfigBuildMachine.fromJson(
+                        json['buildMachine'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (buildMachine) {
-      SdkPresent<UpdateTeamRequestBodyResourceConfigBuildMachine>(value: final value) => {'buildMachine': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (buildMachine) {
+          SdkPresent<UpdateTeamRequestBodyResourceConfigBuildMachine>(
+            value: final value
+          ) =>
+            {
+              'buildMachine': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

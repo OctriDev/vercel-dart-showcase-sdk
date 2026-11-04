@@ -4,139 +4,274 @@
 part of 'inline.dart';
 
 // Inline operation models
-class CreateConditionalBypassRequestBodyConditionGroupItem implements SdkJsonModel {
+class CreateConditionalBypassRequestBodyConditionGroupItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<CreateConditionalBypassRequestConditionGroupItemConditionsItem> conditions;
+  final List<CreateConditionalBypassRequestConditionGroupItemConditionsItem>
+      conditions;
 
-  const CreateConditionalBypassRequestBodyConditionGroupItem({required this.conditions});
+  const CreateConditionalBypassRequestBodyConditionGroupItem(
+      {required this.conditions});
 
-  CreateConditionalBypassRequestBodyConditionGroupItem Function({List<CreateConditionalBypassRequestConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
+  CreateConditionalBypassRequestBodyConditionGroupItem Function(
+      {List<CreateConditionalBypassRequestConditionGroupItemConditionsItem>
+          conditions}) get copyWith => _copyWith;
 
-  CreateConditionalBypassRequestBodyConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => CreateConditionalBypassRequestBodyConditionGroupItem(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<CreateConditionalBypassRequestConditionGroupItemConditionsItem>,
-  );
+  CreateConditionalBypassRequestBodyConditionGroupItem _copyWith(
+          {Object? conditions = sdkOmittedValue}) =>
+      CreateConditionalBypassRequestBodyConditionGroupItem(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<
+                CreateConditionalBypassRequestConditionGroupItemConditionsItem>,
+      );
 
-  factory CreateConditionalBypassRequestBodyConditionGroupItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateConditionalBypassRequestBodyConditionGroupItem(
-    conditions: ((json['conditions'] as List?)?.map((e) => CreateConditionalBypassRequestConditionGroupItemConditionsItem.fromJson(e)).toList())!,
-  ), json);
+  factory CreateConditionalBypassRequestBodyConditionGroupItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateConditionalBypassRequestBodyConditionGroupItem(
+            conditions: ((json['conditions'] as List?)
+                ?.map((e) =>
+                    CreateConditionalBypassRequestConditionGroupItemConditionsItem
+                        .fromJson(e))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+      };
 }
 
 class CreateConditionalBypassRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String domain;
-  final List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup;
+  final List<CreateConditionalBypassRequestBodyConditionGroupItem>
+      conditionGroup;
   final SdkOptional<String> note;
 
-  const CreateConditionalBypassRequestBody({required this.domain, required this.conditionGroup, this.note = const SdkOmitted()});
+  const CreateConditionalBypassRequestBody(
+      {required this.domain,
+      required this.conditionGroup,
+      this.note = const SdkOmitted()});
 
-  CreateConditionalBypassRequestBody Function({String domain, List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup, SdkOptional<String> note}) get copyWith => _copyWith;
+  CreateConditionalBypassRequestBody Function(
+      {String domain,
+      List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup,
+      SdkOptional<String> note}) get copyWith => _copyWith;
 
-  CreateConditionalBypassRequestBody _copyWith({Object? domain = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? note = sdkOmittedValue}) => CreateConditionalBypassRequestBody(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<CreateConditionalBypassRequestBodyConditionGroupItem>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-  );
+  CreateConditionalBypassRequestBody _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? conditionGroup = sdkOmittedValue,
+          Object? note = sdkOmittedValue}) =>
+      CreateConditionalBypassRequestBody(
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        conditionGroup: identical(conditionGroup, sdkOmittedValue)
+            ? this.conditionGroup
+            : conditionGroup
+                as List<CreateConditionalBypassRequestBodyConditionGroupItem>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+      );
 
-  factory CreateConditionalBypassRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateConditionalBypassRequestBody(
-    domain: (json['domain'] as String?)!,
-    conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => CreateConditionalBypassRequestBodyConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory CreateConditionalBypassRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateConditionalBypassRequestBody(
+            domain: (json['domain'] as String?)!,
+            conditionGroup: ((json['conditionGroup'] as List?)
+                ?.map((e) =>
+                    CreateConditionalBypassRequestBodyConditionGroupItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+            note: json['note'] != null
+                ? SdkPresent((json['note'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'domain': domain,
-    'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'domain': domain,
+        'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class CreateConditionalBypassResponseResultConditionGroupItemConditionsItem implements SdkJsonModel {
+class CreateConditionalBypassResponseResultConditionGroupItemConditionsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> key;
-  final SdkOptional<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg> neg;
-  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp op;
-  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType type_;
+  final SdkOptional<
+          CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>
+      neg;
+  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp
+      op;
+  final CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType
+      type_;
   final SdkOptional<dynamic> value;
 
-  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItem({this.key = const SdkOmitted(), this.neg = const SdkOmitted(), required this.op, required this.type_, this.value = const SdkOmitted()});
+  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
+      {this.key = const SdkOmitted(),
+      this.neg = const SdkOmitted(),
+      required this.op,
+      required this.type_,
+      this.value = const SdkOmitted()});
 
-  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem Function({SdkOptional<String> key, SdkOptional<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg> neg, CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp op, CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem Function(
+      {SdkOptional<String> key,
+      SdkOptional<
+              CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>
+          neg,
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp
+          op,
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType
+          type_,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem _copyWith({Object? key = sdkOmittedValue, Object? neg = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    neg: identical(neg, sdkOmittedValue) ? this.neg : neg as SdkOptional<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>,
-    op: identical(op, sdkOmittedValue) ? this.op : op as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  CreateConditionalBypassResponseResultConditionGroupItemConditionsItem
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? neg = sdkOmittedValue,
+              Object? op = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
+            key: identical(key, sdkOmittedValue)
+                ? this.key
+                : key as SdkOptional<String>,
+            neg: identical(neg, sdkOmittedValue)
+                ? this.neg
+                : neg as SdkOptional<
+                    CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>,
+            op: identical(op, sdkOmittedValue)
+                ? this.op
+                : op
+                    as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as SdkOptional<dynamic>,
+          );
 
-  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    neg: json['neg'] != null ? SdkPresent((json['neg'] != null ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg.fromJson(json['neg'] as bool) : null)!) : const SdkOmitted(),
-    op: (json['op'] != null ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp.fromJson(json['op'] as String) : null)!,
-    type_: (json['type'] != null ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType.fromJson(json['type'] as String) : null)!,
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  ), json);
+  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateConditionalBypassResponseResultConditionGroupItemConditionsItem(
+            key: json['key'] != null
+                ? SdkPresent((json['key'] as String?)!)
+                : const SdkOmitted(),
+            neg: json['neg'] != null
+                ? SdkPresent((json['neg'] != null
+                    ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg
+                        .fromJson(json['neg'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            op: (json['op'] != null
+                ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp
+                    .fromJson(json['op'] as String)
+                : null)!,
+            type_: (json['type'] != null
+                ? CreateConditionalBypassResponseResultConditionGroupItemConditionsItemType
+                    .fromJson(json['type'] as String)
+                : null)!,
+            value: json['value'] != null
+                ? SdkPresent((json['value'])!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (neg) {
-      SdkPresent<CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>(value: final value) => {'neg': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'op': op.toJson(),
-    'type': type_.toJson(),
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (neg) {
+          SdkPresent<
+                CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg>(
+            value: final value
+          ) =>
+            {
+              'neg': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'op': op.toJson(),
+        'type': type_.toJson(),
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class CreateConditionalBypassResponseResultConditionGroupItem implements SdkJsonModel {
+class CreateConditionalBypassResponseResultConditionGroupItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem> conditions;
+  final List<
+          CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>
+      conditions;
 
-  const CreateConditionalBypassResponseResultConditionGroupItem({required this.conditions});
+  const CreateConditionalBypassResponseResultConditionGroupItem(
+      {required this.conditions});
 
-  CreateConditionalBypassResponseResultConditionGroupItem Function({List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
+  CreateConditionalBypassResponseResultConditionGroupItem Function(
+      {List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>
+          conditions}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponseResultConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => CreateConditionalBypassResponseResultConditionGroupItem(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>,
-  );
+  CreateConditionalBypassResponseResultConditionGroupItem _copyWith(
+          {Object? conditions = sdkOmittedValue}) =>
+      CreateConditionalBypassResponseResultConditionGroupItem(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<
+                CreateConditionalBypassResponseResultConditionGroupItemConditionsItem>,
+      );
 
-  factory CreateConditionalBypassResponseResultConditionGroupItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateConditionalBypassResponseResultConditionGroupItem(
-    conditions: ((json['conditions'] as List?)?.map((e) => CreateConditionalBypassResponseResultConditionGroupItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory CreateConditionalBypassResponseResultConditionGroupItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateConditionalBypassResponseResultConditionGroupItem(
+            conditions: ((json['conditions'] as List?)
+                ?.map((e) =>
+                    CreateConditionalBypassResponseResultConditionGroupItemConditionsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+      };
 }
 
 class CreateConditionalBypassResponseResult implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String condition;
-  final List<CreateConditionalBypassResponseResultConditionGroupItem> conditionGroup;
+  final List<CreateConditionalBypassResponseResultConditionGroupItem>
+      conditionGroup;
   final String createdAt;
   final String domain;
   final String id;
@@ -144,46 +279,98 @@ class CreateConditionalBypassResponseResult implements SdkJsonModel {
   final String projectId;
   final String updatedAt;
 
-  const CreateConditionalBypassResponseResult({required this.condition, required this.conditionGroup, required this.createdAt, required this.domain, required this.id, this.note = const SdkOmitted(), required this.projectId, required this.updatedAt});
+  const CreateConditionalBypassResponseResult(
+      {required this.condition,
+      required this.conditionGroup,
+      required this.createdAt,
+      required this.domain,
+      required this.id,
+      this.note = const SdkOmitted(),
+      required this.projectId,
+      required this.updatedAt});
 
-  CreateConditionalBypassResponseResult Function({String condition, List<CreateConditionalBypassResponseResultConditionGroupItem> conditionGroup, String createdAt, String domain, String id, SdkOptional<String> note, String projectId, String updatedAt}) get copyWith => _copyWith;
+  CreateConditionalBypassResponseResult Function(
+      {String condition,
+      List<CreateConditionalBypassResponseResultConditionGroupItem>
+          conditionGroup,
+      String createdAt,
+      String domain,
+      String id,
+      SdkOptional<String> note,
+      String projectId,
+      String updatedAt}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponseResult _copyWith({Object? condition = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? domain = sdkOmittedValue, Object? id = sdkOmittedValue, Object? note = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateConditionalBypassResponseResult(
-    condition: identical(condition, sdkOmittedValue) ? this.condition : condition as String,
-    conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<CreateConditionalBypassResponseResultConditionGroupItem>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-  );
+  CreateConditionalBypassResponseResult _copyWith(
+          {Object? condition = sdkOmittedValue,
+          Object? conditionGroup = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? domain = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? note = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      CreateConditionalBypassResponseResult(
+        condition: identical(condition, sdkOmittedValue)
+            ? this.condition
+            : condition as String,
+        conditionGroup: identical(conditionGroup, sdkOmittedValue)
+            ? this.conditionGroup
+            : conditionGroup as List<
+                CreateConditionalBypassResponseResultConditionGroupItem>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+      );
 
-  factory CreateConditionalBypassResponseResult.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateConditionalBypassResponseResult(
-    condition: (json['condition'] as String?)!,
-    conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => CreateConditionalBypassResponseResultConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    createdAt: (json['createdAt'] as String?)!,
-    domain: (json['domain'] as String?)!,
-    id: (json['id'] as String?)!,
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    updatedAt: (json['updatedAt'] as String?)!,
-  ), json);
+  factory CreateConditionalBypassResponseResult.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateConditionalBypassResponseResult(
+            condition: (json['condition'] as String?)!,
+            conditionGroup: ((json['conditionGroup'] as List?)
+                ?.map((e) =>
+                    CreateConditionalBypassResponseResultConditionGroupItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+            createdAt: (json['createdAt'] as String?)!,
+            domain: (json['domain'] as String?)!,
+            id: (json['id'] as String?)!,
+            note: json['note'] != null
+                ? SdkPresent((json['note'] as String?)!)
+                : const SdkOmitted(),
+            projectId: (json['projectId'] as String?)!,
+            updatedAt: (json['updatedAt'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'condition': condition,
-    'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
-    'createdAt': createdAt,
-    'domain': domain,
-    'id': id,
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'updatedAt': updatedAt,
-  };
+        'condition': condition,
+        'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
+        'createdAt': createdAt,
+        'domain': domain,
+        'id': id,
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'updatedAt': updatedAt,
+      };
 }
 
 class CreateConditionalBypassResponse implements SdkJsonModel {
@@ -193,20 +380,31 @@ class CreateConditionalBypassResponse implements SdkJsonModel {
 
   const CreateConditionalBypassResponse({required this.result});
 
-  CreateConditionalBypassResponse Function({CreateConditionalBypassResponseResult result}) get copyWith => _copyWith;
+  CreateConditionalBypassResponse Function(
+      {CreateConditionalBypassResponseResult result}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponse _copyWith({Object? result = sdkOmittedValue}) => CreateConditionalBypassResponse(
-    result: identical(result, sdkOmittedValue) ? this.result : result as CreateConditionalBypassResponseResult,
-  );
+  CreateConditionalBypassResponse _copyWith(
+          {Object? result = sdkOmittedValue}) =>
+      CreateConditionalBypassResponse(
+        result: identical(result, sdkOmittedValue)
+            ? this.result
+            : result as CreateConditionalBypassResponseResult,
+      );
 
-  factory CreateConditionalBypassResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateConditionalBypassResponse(
-    result: (json['result'] != null ? CreateConditionalBypassResponseResult.fromJson(json['result'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory CreateConditionalBypassResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateConditionalBypassResponse(
+            result: (json['result'] != null
+                ? CreateConditionalBypassResponseResult.fromJson(
+                    json['result'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-  };
+        'result': result.toJson(),
+      };
 }
 
 class DeleteConditionalBypassResponse implements SdkJsonModel {
@@ -216,20 +414,29 @@ class DeleteConditionalBypassResponse implements SdkJsonModel {
 
   const DeleteConditionalBypassResponse({required this.ok});
 
-  DeleteConditionalBypassResponse Function({DeleteConditionalBypassResponseOk ok}) get copyWith => _copyWith;
+  DeleteConditionalBypassResponse Function(
+      {DeleteConditionalBypassResponseOk ok}) get copyWith => _copyWith;
 
-  DeleteConditionalBypassResponse _copyWith({Object? ok = sdkOmittedValue}) => DeleteConditionalBypassResponse(
-    ok: identical(ok, sdkOmittedValue) ? this.ok : ok as DeleteConditionalBypassResponseOk,
-  );
+  DeleteConditionalBypassResponse _copyWith({Object? ok = sdkOmittedValue}) =>
+      DeleteConditionalBypassResponse(
+        ok: identical(ok, sdkOmittedValue)
+            ? this.ok
+            : ok as DeleteConditionalBypassResponseOk,
+      );
 
-  factory DeleteConditionalBypassResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(DeleteConditionalBypassResponse(
-    ok: (json['ok'] != null ? DeleteConditionalBypassResponseOk.fromJson(json['ok'] as bool) : null)!,
-  ), json);
+  factory DeleteConditionalBypassResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          DeleteConditionalBypassResponse(
+            ok: (json['ok'] != null
+                ? DeleteConditionalBypassResponseOk.fromJson(json['ok'] as bool)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'ok': ok.toJson(),
-  };
+        'ok': ok.toJson(),
+      };
 }
 
 class GetSecurityFirewallEventsResponseActionsItem implements SdkJsonModel {
@@ -246,47 +453,106 @@ class GetSecurityFirewallEventsResponseActionsItem implements SdkJsonModel {
   final String? ruleName;
   final String startTime;
 
-  const GetSecurityFirewallEventsResponseActionsItem({required this.action, required this.actionType, required this.count, required this.endTime, required this.host, required this.isActive, required this.publicIp, required this.ruleId, required this.ruleName, required this.startTime});
+  const GetSecurityFirewallEventsResponseActionsItem(
+      {required this.action,
+      required this.actionType,
+      required this.count,
+      required this.endTime,
+      required this.host,
+      required this.isActive,
+      required this.publicIp,
+      required this.ruleId,
+      required this.ruleName,
+      required this.startTime});
 
-  GetSecurityFirewallEventsResponseActionsItem Function({String action, String actionType, double count, String endTime, String host, GetSecurityFirewallEventsResponseActionsItemIsActive isActive, String publicIp, String? ruleId, String? ruleName, String startTime}) get copyWith => _copyWith;
+  GetSecurityFirewallEventsResponseActionsItem Function(
+      {String action,
+      String actionType,
+      double count,
+      String endTime,
+      String host,
+      GetSecurityFirewallEventsResponseActionsItemIsActive isActive,
+      String publicIp,
+      String? ruleId,
+      String? ruleName,
+      String startTime}) get copyWith => _copyWith;
 
-  GetSecurityFirewallEventsResponseActionsItem _copyWith({Object? action = sdkOmittedValue, Object? actionType = sdkOmittedValue, Object? count = sdkOmittedValue, Object? endTime = sdkOmittedValue, Object? host = sdkOmittedValue, Object? isActive = sdkOmittedValue, Object? publicIp = sdkOmittedValue, Object? ruleId = sdkOmittedValue, Object? ruleName = sdkOmittedValue, Object? startTime = sdkOmittedValue}) => GetSecurityFirewallEventsResponseActionsItem(
-    action: identical(action, sdkOmittedValue) ? this.action : action as String,
-    actionType: identical(actionType, sdkOmittedValue) ? this.actionType : actionType as String,
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    endTime: identical(endTime, sdkOmittedValue) ? this.endTime : endTime as String,
-    host: identical(host, sdkOmittedValue) ? this.host : host as String,
-    isActive: identical(isActive, sdkOmittedValue) ? this.isActive : isActive as GetSecurityFirewallEventsResponseActionsItemIsActive,
-    publicIp: identical(publicIp, sdkOmittedValue) ? this.publicIp : publicIp as String,
-    ruleId: identical(ruleId, sdkOmittedValue) ? this.ruleId : ruleId as String?,
-    ruleName: identical(ruleName, sdkOmittedValue) ? this.ruleName : ruleName as String?,
-    startTime: identical(startTime, sdkOmittedValue) ? this.startTime : startTime as String,
-  );
+  GetSecurityFirewallEventsResponseActionsItem _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? actionType = sdkOmittedValue,
+          Object? count = sdkOmittedValue,
+          Object? endTime = sdkOmittedValue,
+          Object? host = sdkOmittedValue,
+          Object? isActive = sdkOmittedValue,
+          Object? publicIp = sdkOmittedValue,
+          Object? ruleId = sdkOmittedValue,
+          Object? ruleName = sdkOmittedValue,
+          Object? startTime = sdkOmittedValue}) =>
+      GetSecurityFirewallEventsResponseActionsItem(
+        action:
+            identical(action, sdkOmittedValue) ? this.action : action as String,
+        actionType: identical(actionType, sdkOmittedValue)
+            ? this.actionType
+            : actionType as String,
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        endTime: identical(endTime, sdkOmittedValue)
+            ? this.endTime
+            : endTime as String,
+        host: identical(host, sdkOmittedValue) ? this.host : host as String,
+        isActive: identical(isActive, sdkOmittedValue)
+            ? this.isActive
+            : isActive as GetSecurityFirewallEventsResponseActionsItemIsActive,
+        publicIp: identical(publicIp, sdkOmittedValue)
+            ? this.publicIp
+            : publicIp as String,
+        ruleId: identical(ruleId, sdkOmittedValue)
+            ? this.ruleId
+            : ruleId as String?,
+        ruleName: identical(ruleName, sdkOmittedValue)
+            ? this.ruleName
+            : ruleName as String?,
+        startTime: identical(startTime, sdkOmittedValue)
+            ? this.startTime
+            : startTime as String,
+      );
 
-  factory GetSecurityFirewallEventsResponseActionsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetSecurityFirewallEventsResponseActionsItem(
-    action: (json['action'] as String?)!,
-    actionType: (json['action_type'] as String?)!,
-    count: ((json['count'] as num?)?.toDouble())!,
-    endTime: (json['endTime'] as String?)!,
-    host: (json['host'] as String?)!,
-    isActive: (json['isActive'] != null ? GetSecurityFirewallEventsResponseActionsItemIsActive.fromJson(json['isActive'] as bool) : null)!,
-    publicIp: (json['public_ip'] as String?)!,
-    ruleId: json.containsKey('ruleId') ? json['ruleId'] as String? : throw ArgumentError.value(null, 'ruleId', 'Required property is missing'),
-    ruleName: json.containsKey('ruleName') ? json['ruleName'] as String? : throw ArgumentError.value(null, 'ruleName', 'Required property is missing'),
-    startTime: (json['startTime'] as String?)!,
-  ), json);
+  factory GetSecurityFirewallEventsResponseActionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetSecurityFirewallEventsResponseActionsItem(
+            action: (json['action'] as String?)!,
+            actionType: (json['action_type'] as String?)!,
+            count: ((json['count'] as num?)?.toDouble())!,
+            endTime: (json['endTime'] as String?)!,
+            host: (json['host'] as String?)!,
+            isActive: (json['isActive'] != null
+                ? GetSecurityFirewallEventsResponseActionsItemIsActive.fromJson(
+                    json['isActive'] as bool)
+                : null)!,
+            publicIp: (json['public_ip'] as String?)!,
+            ruleId: json.containsKey('ruleId')
+                ? json['ruleId'] as String?
+                : throw ArgumentError.value(
+                    null, 'ruleId', 'Required property is missing'),
+            ruleName: json.containsKey('ruleName')
+                ? json['ruleName'] as String?
+                : throw ArgumentError.value(
+                    null, 'ruleName', 'Required property is missing'),
+            startTime: (json['startTime'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'action': action,
-    'action_type': actionType,
-    'count': count,
-    'endTime': endTime,
-    'host': host,
-    'isActive': isActive.toJson(),
-    'public_ip': publicIp,
-    'ruleId': ruleId,
-    'ruleName': ruleName,
-    'startTime': startTime,
-  };
+        'action': action,
+        'action_type': actionType,
+        'count': count,
+        'endTime': endTime,
+        'host': host,
+        'isActive': isActive.toJson(),
+        'public_ip': publicIp,
+        'ruleId': ruleId,
+        'ruleName': ruleName,
+        'startTime': startTime,
+      };
 }

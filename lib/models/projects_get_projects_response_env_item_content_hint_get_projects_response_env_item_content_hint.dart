@@ -4,68 +4,101 @@
 part of 'projects_get.dart';
 
 // projects_get domain models
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant6 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant6
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant6 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant6(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant7 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant7
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant7 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant7(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant7(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant8 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant8
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant8 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant8(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant8(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant9 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant9
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant9 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant9(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant9(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant10 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant10
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant10 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant10(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant10(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant11 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant11
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant11 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant11(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant11(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant12 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant12
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant12 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant12(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant12(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant13 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant13
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant13 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant13(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant13(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant14 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant14
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant14 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant14(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant14(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant15 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant15
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant15 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant15(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant15(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant16 extends GetProjectsResponseEnvItemContentHint {
+final class GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant16
+    extends GetProjectsResponseEnvItemContentHint {
   final GetProjectsResponseEnvItemContentHintVariant16 value;
-  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseEnvItemContentHintGetProjectsResponseEnvItemContentHintVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

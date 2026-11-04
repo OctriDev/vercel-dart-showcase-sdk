@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum ListProjectsResponseItemEnvItemContentHintVariant2Type {
   redisRestApiToken;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant2Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant2Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-token': return ListProjectsResponseItemEnvItemContentHintVariant2Type.redisRestApiToken;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant2Type: $value');
+      case 'redis-rest-api-token':
+        return ListProjectsResponseItemEnvItemContentHintVariant2Type
+            .redisRestApiToken;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant2Type.redisRestApiToken: return 'redis-rest-api-token';
+      case ListProjectsResponseItemEnvItemContentHintVariant2Type
+            .redisRestApiToken:
+        return 'redis-rest-api-token';
     }
   }
 
@@ -27,16 +34,23 @@ enum ListProjectsResponseItemEnvItemContentHintVariant2Type {
 enum ListProjectsResponseItemEnvItemContentHintVariant3Type {
   redisRestApiReadOnlyToken;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant3Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant3Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-read-only-token': return ListProjectsResponseItemEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant3Type: $value');
+      case 'redis-rest-api-read-only-token':
+        return ListProjectsResponseItemEnvItemContentHintVariant3Type
+            .redisRestApiReadOnlyToken;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken: return 'redis-rest-api-read-only-token';
+      case ListProjectsResponseItemEnvItemContentHintVariant3Type
+            .redisRestApiReadOnlyToken:
+        return 'redis-rest-api-read-only-token';
     }
   }
 
@@ -47,16 +61,23 @@ enum ListProjectsResponseItemEnvItemContentHintVariant3Type {
 enum ListProjectsResponseItemEnvItemContentHintVariant4Type {
   blobReadWriteToken;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant4Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant4Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-read-write-token': return ListProjectsResponseItemEnvItemContentHintVariant4Type.blobReadWriteToken;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant4Type: $value');
+      case 'blob-read-write-token':
+        return ListProjectsResponseItemEnvItemContentHintVariant4Type
+            .blobReadWriteToken;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant4Type.blobReadWriteToken: return 'blob-read-write-token';
+      case ListProjectsResponseItemEnvItemContentHintVariant4Type
+            .blobReadWriteToken:
+        return 'blob-read-write-token';
     }
   }
 
@@ -67,16 +88,22 @@ enum ListProjectsResponseItemEnvItemContentHintVariant4Type {
 enum ListProjectsResponseItemEnvItemContentHintVariant5Type {
   blobStoreId;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant5Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant5Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-store-id': return ListProjectsResponseItemEnvItemContentHintVariant5Type.blobStoreId;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant5Type: $value');
+      case 'blob-store-id':
+        return ListProjectsResponseItemEnvItemContentHintVariant5Type
+            .blobStoreId;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant5Type.blobStoreId: return 'blob-store-id';
+      case ListProjectsResponseItemEnvItemContentHintVariant5Type.blobStoreId:
+        return 'blob-store-id';
     }
   }
 
@@ -87,16 +114,23 @@ enum ListProjectsResponseItemEnvItemContentHintVariant5Type {
 enum ListProjectsResponseItemEnvItemContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant6Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant6Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-webhook-public-key': return ListProjectsResponseItemEnvItemContentHintVariant6Type.blobWebhookPublicKey;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key':
+        return ListProjectsResponseItemEnvItemContentHintVariant6Type
+            .blobWebhookPublicKey;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
+      case ListProjectsResponseItemEnvItemContentHintVariant6Type
+            .blobWebhookPublicKey:
+        return 'blob-webhook-public-key';
     }
   }
 
@@ -107,16 +141,22 @@ enum ListProjectsResponseItemEnvItemContentHintVariant6Type {
 enum ListProjectsResponseItemEnvItemContentHintVariant7Type {
   postgresUrl;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant7Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant7Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url': return ListProjectsResponseItemEnvItemContentHintVariant7Type.postgresUrl;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant7Type: $value');
+      case 'postgres-url':
+        return ListProjectsResponseItemEnvItemContentHintVariant7Type
+            .postgresUrl;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant7Type.postgresUrl: return 'postgres-url';
+      case ListProjectsResponseItemEnvItemContentHintVariant7Type.postgresUrl:
+        return 'postgres-url';
     }
   }
 
@@ -127,16 +167,23 @@ enum ListProjectsResponseItemEnvItemContentHintVariant7Type {
 enum ListProjectsResponseItemEnvItemContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant8Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant8Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url-non-pooling': return ListProjectsResponseItemEnvItemContentHintVariant8Type.postgresUrlNonPooling;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling':
+        return ListProjectsResponseItemEnvItemContentHintVariant8Type
+            .postgresUrlNonPooling;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
+      case ListProjectsResponseItemEnvItemContentHintVariant8Type
+            .postgresUrlNonPooling:
+        return 'postgres-url-non-pooling';
     }
   }
 
@@ -147,16 +194,23 @@ enum ListProjectsResponseItemEnvItemContentHintVariant8Type {
 enum ListProjectsResponseItemEnvItemContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static ListProjectsResponseItemEnvItemContentHintVariant9Type fromJson(String value) {
+  static ListProjectsResponseItemEnvItemContentHintVariant9Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-prisma-url': return ListProjectsResponseItemEnvItemContentHintVariant9Type.postgresPrismaUrl;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemEnvItemContentHintVariant9Type: $value');
+      case 'postgres-prisma-url':
+        return ListProjectsResponseItemEnvItemContentHintVariant9Type
+            .postgresPrismaUrl;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemEnvItemContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemEnvItemContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
+      case ListProjectsResponseItemEnvItemContentHintVariant9Type
+            .postgresPrismaUrl:
+        return 'postgres-prisma-url';
     }
   }
 
@@ -165,38 +219,55 @@ enum ListProjectsResponseItemEnvItemContentHintVariant9Type {
 }
 
 final class ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key {
-
   final String value;
 
-  const ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key._(this.value);
+  const ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key._(
+      this.value);
 
-  factory ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key.fromJson(String value) => ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key._(value);
+  factory ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key.fromJson(
+          String value) =>
+      ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key._(
+          value);
 
-  static const xVercelIpCountry = ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key._('x-vercel-ip-country');
+  static const xVercelIpCountry =
+      ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key._(
+          'x-vercel-ip-country');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Key &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type {
   header;
 
-  static ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type fromJson(String value) {
+  static ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'header': return ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type.header;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type: $value');
+      case 'header':
+        return ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type
+            .header;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type.header: return 'header';
+      case ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type
+            .header:
+        return 'header';
     }
   }
 
@@ -207,16 +278,23 @@ enum ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant0Type {
 enum ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type {
   host;
 
-  static ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type fromJson(String value) {
+  static ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'host': return ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type.host;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type: $value');
+      case 'host':
+        return ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type
+            .host;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type.host: return 'host';
+      case ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type
+            .host:
+        return 'host';
     }
   }
 
@@ -225,44 +303,57 @@ enum ListProjectsResponseItemInternalRoutesItemVariant1HasItemVariant1Type {
 }
 
 final class ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction {
-
   final String value;
 
-  const ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction._(this.value);
+  const ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction._(
+      this.value);
 
-  factory ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction.fromJson(String value) => ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction._(value);
+  factory ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction.fromJson(
+          String value) =>
+      ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction._(value);
 
-  static const blockLegalCwc = ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction._('block_legal_cwc');
+  static const blockLegalCwc =
+      ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction._(
+          'block_legal_cwc');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseItemInternalRoutesItemVariant1MitigateAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseItemLinkVariant0Sourceless {
-
   final bool value;
 
   const ListProjectsResponseItemLinkVariant0Sourceless._(this.value);
 
-  factory ListProjectsResponseItemLinkVariant0Sourceless.fromJson(bool value) => ListProjectsResponseItemLinkVariant0Sourceless._(value);
+  factory ListProjectsResponseItemLinkVariant0Sourceless.fromJson(bool value) =>
+      ListProjectsResponseItemLinkVariant0Sourceless._(value);
 
   static const false_ = ListProjectsResponseItemLinkVariant0Sourceless._(false);
   static const true_ = ListProjectsResponseItemLinkVariant0Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseItemLinkVariant0Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseItemLinkVariant0Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListProjectsResponseItemLinkVariant0Type {
@@ -270,14 +361,18 @@ enum ListProjectsResponseItemLinkVariant0Type {
 
   static ListProjectsResponseItemLinkVariant0Type fromJson(String value) {
     switch (value) {
-      case 'github': return ListProjectsResponseItemLinkVariant0Type.github;
-      default: throw ArgumentError('Unknown ListProjectsResponseItemLinkVariant0Type: $value');
+      case 'github':
+        return ListProjectsResponseItemLinkVariant0Type.github;
+      default:
+        throw ArgumentError(
+            'Unknown ListProjectsResponseItemLinkVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemLinkVariant0Type.github: return 'github';
+      case ListProjectsResponseItemLinkVariant0Type.github:
+        return 'github';
     }
   }
 

@@ -9,95 +9,281 @@ class UpdateFlagSegmentRequestBodyData implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<UpdateFlagSegmentRequestBodyDataRulesItem>> rules;
-  final SdkOptional<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>> include;
-  final SdkOptional<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>> exclude;
+  final SdkOptional<
+          Map<
+              String,
+              Map<String,
+                  List<UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>
+      include;
+  final SdkOptional<
+          Map<
+              String,
+              Map<String,
+                  List<UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>
+      exclude;
 
-  const UpdateFlagSegmentRequestBodyData({this.rules = const SdkOmitted(), this.include = const SdkOmitted(), this.exclude = const SdkOmitted()});
+  const UpdateFlagSegmentRequestBodyData(
+      {this.rules = const SdkOmitted(),
+      this.include = const SdkOmitted(),
+      this.exclude = const SdkOmitted()});
 
-  UpdateFlagSegmentRequestBodyData Function({SdkOptional<List<UpdateFlagSegmentRequestBodyDataRulesItem>> rules, SdkOptional<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>> include, SdkOptional<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>> exclude}) get copyWith => _copyWith;
+  UpdateFlagSegmentRequestBodyData Function(
+      {SdkOptional<List<UpdateFlagSegmentRequestBodyDataRulesItem>> rules,
+      SdkOptional<
+              Map<
+                  String,
+                  Map<
+                      String,
+                      List<
+                          UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>
+          include,
+      SdkOptional<
+              Map<
+                  String,
+                  Map<
+                      String,
+                      List<
+                          UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>
+          exclude}) get copyWith => _copyWith;
 
-  UpdateFlagSegmentRequestBodyData _copyWith({Object? rules = sdkOmittedValue, Object? include = sdkOmittedValue, Object? exclude = sdkOmittedValue}) => UpdateFlagSegmentRequestBodyData(
-    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as SdkOptional<List<UpdateFlagSegmentRequestBodyDataRulesItem>>,
-    include: identical(include, sdkOmittedValue) ? this.include : include as SdkOptional<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>,
-    exclude: identical(exclude, sdkOmittedValue) ? this.exclude : exclude as SdkOptional<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>,
-  );
+  UpdateFlagSegmentRequestBodyData _copyWith(
+          {Object? rules = sdkOmittedValue,
+          Object? include = sdkOmittedValue,
+          Object? exclude = sdkOmittedValue}) =>
+      UpdateFlagSegmentRequestBodyData(
+        rules: identical(rules, sdkOmittedValue)
+            ? this.rules
+            : rules
+                as SdkOptional<List<UpdateFlagSegmentRequestBodyDataRulesItem>>,
+        include: identical(include, sdkOmittedValue)
+            ? this.include
+            : include as SdkOptional<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>,
+        exclude: identical(exclude, sdkOmittedValue)
+            ? this.exclude
+            : exclude as SdkOptional<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>,
+      );
 
-  factory UpdateFlagSegmentRequestBodyData.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateFlagSegmentRequestBodyData(
-    rules: json['rules'] != null ? SdkPresent(((json['rules'] as List?)?.map((e) => UpdateFlagSegmentRequestBodyDataRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    include: json['include'] != null ? SdkPresent((json['include'] == null ? null : Map<String, dynamic>.from(json['include'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => UpdateFlagSegmentRequestBodyDataIncludeValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))!) : const SdkOmitted(),
-    exclude: json['exclude'] != null ? SdkPresent((json['exclude'] == null ? null : Map<String, dynamic>.from(json['exclude'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => UpdateFlagSegmentRequestBodyDataExcludeValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))!) : const SdkOmitted(),
-  ), json);
+  factory UpdateFlagSegmentRequestBodyData.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateFlagSegmentRequestBodyData(
+            rules: json['rules'] != null
+                ? SdkPresent(((json['rules'] as List?)
+                    ?.map((e) =>
+                        UpdateFlagSegmentRequestBodyDataRulesItem.fromJson(
+                            e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+            include: json['include'] != null
+                ? SdkPresent((json['include'] == null
+                    ? null
+                    : Map<String, dynamic>.from(json['include'] as Map).map(
+                        (key, value) => MapEntry(
+                            key,
+                            Map<String, dynamic>.from(value as Map).map(
+                                (key, value) => MapEntry(
+                                    key,
+                                    (value as List)
+                                        .map((item) =>
+                                            UpdateFlagSegmentRequestBodyDataIncludeValueValueItem.fromJson(
+                                                item as Map<String, dynamic>))
+                                        .toList())))))!)
+                : const SdkOmitted(),
+            exclude: json['exclude'] != null
+                ? SdkPresent((json['exclude'] == null
+                    ? null
+                    : Map<String, dynamic>.from(json['exclude'] as Map).map(
+                        (key, value) => MapEntry(
+                            key,
+                            Map<String, dynamic>.from(value as Map).map(
+                                (key, value) => MapEntry(
+                                    key,
+                                    (value as List)
+                                        .map((item) =>
+                                            UpdateFlagSegmentRequestBodyDataExcludeValueValueItem.fromJson(
+                                                item as Map<String, dynamic>))
+                                        .toList())))))!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (rules) {
-      SdkPresent<List<UpdateFlagSegmentRequestBodyDataRulesItem>>(value: final value) => {'rules': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (include) {
-      SdkPresent<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>(value: final value) => {'include': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (exclude) {
-      SdkPresent<Map<String, Map<String, List<UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>(value: final value) => {'exclude': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (rules) {
+          SdkPresent<List<UpdateFlagSegmentRequestBodyDataRulesItem>>(
+            value: final value
+          ) =>
+            {
+              'rules': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (include) {
+          SdkPresent<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            UpdateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>(
+            value: final value
+          ) =>
+            {
+              'include': value.map((key, value) => MapEntry(
+                  key,
+                  value.map((key, value) => MapEntry(
+                      key, value.map((item) => item.toJson()).toList())))),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (exclude) {
+          SdkPresent<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            UpdateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>(
+            value: final value
+          ) =>
+            {
+              'exclude': value.map((key, value) => MapEntry(
+                  key,
+                  value.map((key, value) => MapEntry(
+                      key, value.map((item) => item.toJson()).toList())))),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateFlagSegmentRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>> operations;
+  final SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>>
+      operations;
   final SdkOptional<String> label;
   final SdkOptional<String> description;
+
   /// The data of the segment
   final SdkOptional<UpdateFlagSegmentRequestBodyData> data;
   final SdkOptional<String> hint;
 
-  const UpdateFlagSegmentRequestBody({this.operations = const SdkOmitted(), this.label = const SdkOmitted(), this.description = const SdkOmitted(), this.data = const SdkOmitted(), this.hint = const SdkOmitted()});
+  const UpdateFlagSegmentRequestBody(
+      {this.operations = const SdkOmitted(),
+      this.label = const SdkOmitted(),
+      this.description = const SdkOmitted(),
+      this.data = const SdkOmitted(),
+      this.hint = const SdkOmitted()});
 
-  UpdateFlagSegmentRequestBody Function({SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>> operations, SdkOptional<String> label, SdkOptional<String> description, SdkOptional<UpdateFlagSegmentRequestBodyData> data, SdkOptional<String> hint}) get copyWith => _copyWith;
+  UpdateFlagSegmentRequestBody Function(
+      {SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>> operations,
+      SdkOptional<String> label,
+      SdkOptional<String> description,
+      SdkOptional<UpdateFlagSegmentRequestBodyData> data,
+      SdkOptional<String> hint}) get copyWith => _copyWith;
 
-  UpdateFlagSegmentRequestBody _copyWith({Object? operations = sdkOmittedValue, Object? label = sdkOmittedValue, Object? description = sdkOmittedValue, Object? data = sdkOmittedValue, Object? hint = sdkOmittedValue}) => UpdateFlagSegmentRequestBody(
-    operations: identical(operations, sdkOmittedValue) ? this.operations : operations as SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    data: identical(data, sdkOmittedValue) ? this.data : data as SdkOptional<UpdateFlagSegmentRequestBodyData>,
-    hint: identical(hint, sdkOmittedValue) ? this.hint : hint as SdkOptional<String>,
-  );
+  UpdateFlagSegmentRequestBody _copyWith(
+          {Object? operations = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? data = sdkOmittedValue,
+          Object? hint = sdkOmittedValue}) =>
+      UpdateFlagSegmentRequestBody(
+        operations: identical(operations, sdkOmittedValue)
+            ? this.operations
+            : operations as SdkOptional<
+                List<UpdateFlagSegmentRequestBodyOperationsItem>>,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        data: identical(data, sdkOmittedValue)
+            ? this.data
+            : data as SdkOptional<UpdateFlagSegmentRequestBodyData>,
+        hint: identical(hint, sdkOmittedValue)
+            ? this.hint
+            : hint as SdkOptional<String>,
+      );
 
-  factory UpdateFlagSegmentRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateFlagSegmentRequestBody(
-    operations: json['operations'] != null ? SdkPresent(((json['operations'] as List?)?.map((e) => UpdateFlagSegmentRequestBodyOperationsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    data: json['data'] != null ? SdkPresent((json['data'] != null ? UpdateFlagSegmentRequestBodyData.fromJson(json['data'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    hint: json['hint'] != null ? SdkPresent((json['hint'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateFlagSegmentRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateFlagSegmentRequestBody(
+            operations: json['operations'] != null
+                ? SdkPresent(((json['operations'] as List?)
+                    ?.map((e) =>
+                        UpdateFlagSegmentRequestBodyOperationsItem.fromJson(
+                            e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+            label: json['label'] != null
+                ? SdkPresent((json['label'] as String?)!)
+                : const SdkOmitted(),
+            description: json['description'] != null
+                ? SdkPresent((json['description'] as String?)!)
+                : const SdkOmitted(),
+            data: json['data'] != null
+                ? SdkPresent((json['data'] != null
+                    ? UpdateFlagSegmentRequestBodyData.fromJson(
+                        json['data'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            hint: json['hint'] != null
+                ? SdkPresent((json['hint'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (operations) {
-      SdkPresent<List<UpdateFlagSegmentRequestBodyOperationsItem>>(value: final value) => {'operations': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (data) {
-      SdkPresent<UpdateFlagSegmentRequestBodyData>(value: final value) => {'data': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hint) {
-      SdkPresent<String>(value: final value) => {'hint': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (operations) {
+          SdkPresent<List<UpdateFlagSegmentRequestBodyOperationsItem>>(
+            value: final value
+          ) =>
+            {
+              'operations': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (data) {
+          SdkPresent<UpdateFlagSegmentRequestBodyData>(value: final value) => {
+              'data': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hint) {
+          SdkPresent<String>(value: final value) => {
+              'hint': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetDeploymentFeatureFlagsResponseStatus implements SdkJsonModel {
@@ -105,40 +291,72 @@ class GetDeploymentFeatureFlagsResponseStatus implements SdkJsonModel {
   static const String constructionSurface = 'named';
   final double createdAt;
   final String deploymentId;
+
   /// The number of flag definitions returned by the flags discovery endpoint.
   final double flagCount;
   final String projectId;
+
   /// The HTTP status code from the flags discovery endpoint.
   final double responseStatus;
 
-  const GetDeploymentFeatureFlagsResponseStatus({required this.createdAt, required this.deploymentId, required this.flagCount, required this.projectId, required this.responseStatus});
+  const GetDeploymentFeatureFlagsResponseStatus(
+      {required this.createdAt,
+      required this.deploymentId,
+      required this.flagCount,
+      required this.projectId,
+      required this.responseStatus});
 
-  GetDeploymentFeatureFlagsResponseStatus Function({double createdAt, String deploymentId, double flagCount, String projectId, double responseStatus}) get copyWith => _copyWith;
+  GetDeploymentFeatureFlagsResponseStatus Function(
+      {double createdAt,
+      String deploymentId,
+      double flagCount,
+      String projectId,
+      double responseStatus}) get copyWith => _copyWith;
 
-  GetDeploymentFeatureFlagsResponseStatus _copyWith({Object? createdAt = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? flagCount = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? responseStatus = sdkOmittedValue}) => GetDeploymentFeatureFlagsResponseStatus(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
-    flagCount: identical(flagCount, sdkOmittedValue) ? this.flagCount : flagCount as double,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    responseStatus: identical(responseStatus, sdkOmittedValue) ? this.responseStatus : responseStatus as double,
-  );
+  GetDeploymentFeatureFlagsResponseStatus _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? flagCount = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? responseStatus = sdkOmittedValue}) =>
+      GetDeploymentFeatureFlagsResponseStatus(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as String,
+        flagCount: identical(flagCount, sdkOmittedValue)
+            ? this.flagCount
+            : flagCount as double,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        responseStatus: identical(responseStatus, sdkOmittedValue)
+            ? this.responseStatus
+            : responseStatus as double,
+      );
 
-  factory GetDeploymentFeatureFlagsResponseStatus.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentFeatureFlagsResponseStatus(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    deploymentId: (json['deploymentId'] as String?)!,
-    flagCount: ((json['flagCount'] as num?)?.toDouble())!,
-    projectId: (json['projectId'] as String?)!,
-    responseStatus: ((json['responseStatus'] as num?)?.toDouble())!,
-  ), json);
+  factory GetDeploymentFeatureFlagsResponseStatus.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentFeatureFlagsResponseStatus(
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            deploymentId: (json['deploymentId'] as String?)!,
+            flagCount: ((json['flagCount'] as num?)?.toDouble())!,
+            projectId: (json['projectId'] as String?)!,
+            responseStatus: ((json['responseStatus'] as num?)?.toDouble())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'deploymentId': deploymentId,
-    'flagCount': flagCount,
-    'projectId': projectId,
-    'responseStatus': responseStatus,
-  };
+        'createdAt': createdAt,
+        'deploymentId': deploymentId,
+        'flagCount': flagCount,
+        'projectId': projectId,
+        'responseStatus': responseStatus,
+      };
 }
 
 class GetDeploymentFeatureFlagsResponse implements SdkJsonModel {
@@ -147,25 +365,48 @@ class GetDeploymentFeatureFlagsResponse implements SdkJsonModel {
   final List<Map<String, dynamic>> flags;
   final GetDeploymentFeatureFlagsResponseStatus? status;
 
-  const GetDeploymentFeatureFlagsResponse({required this.flags, required this.status});
+  const GetDeploymentFeatureFlagsResponse(
+      {required this.flags, required this.status});
 
-  GetDeploymentFeatureFlagsResponse Function({List<Map<String, dynamic>> flags, GetDeploymentFeatureFlagsResponseStatus? status}) get copyWith => _copyWith;
+  GetDeploymentFeatureFlagsResponse Function(
+          {List<Map<String, dynamic>> flags,
+          GetDeploymentFeatureFlagsResponseStatus? status})
+      get copyWith => _copyWith;
 
-  GetDeploymentFeatureFlagsResponse _copyWith({Object? flags = sdkOmittedValue, Object? status = sdkOmittedValue}) => GetDeploymentFeatureFlagsResponse(
-    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as List<Map<String, dynamic>>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as GetDeploymentFeatureFlagsResponseStatus?,
-  );
+  GetDeploymentFeatureFlagsResponse _copyWith(
+          {Object? flags = sdkOmittedValue,
+          Object? status = sdkOmittedValue}) =>
+      GetDeploymentFeatureFlagsResponse(
+        flags: identical(flags, sdkOmittedValue)
+            ? this.flags
+            : flags as List<Map<String, dynamic>>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as GetDeploymentFeatureFlagsResponseStatus?,
+      );
 
-  factory GetDeploymentFeatureFlagsResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentFeatureFlagsResponse(
-    flags: ((json['flags'] as List?)?.map((e) => e as Map<String, dynamic>).toList())!,
-    status: json.containsKey('status') ? json['status'] != null ? GetDeploymentFeatureFlagsResponseStatus.fromJson(json['status'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'status', 'Required property is missing'),
-  ), json);
+  factory GetDeploymentFeatureFlagsResponse.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentFeatureFlagsResponse(
+            flags: ((json['flags'] as List?)
+                ?.map((e) => e as Map<String, dynamic>)
+                .toList())!,
+            status: json.containsKey('status')
+                ? json['status'] != null
+                    ? GetDeploymentFeatureFlagsResponseStatus.fromJson(
+                        json['status'] as Map<String, dynamic>)
+                    : null
+                : throw ArgumentError.value(
+                    null, 'status', 'Required property is missing'),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'flags': flags,
-    'status': status?.toJson(),
-  };
+        'flags': flags,
+        'status': status?.toJson(),
+      };
 }
 
 /// Shared metadata for a Flags SDK key, safe to return on both LIST and CREATE. Never contains cleartext secrets.
@@ -178,61 +419,127 @@ class GetSdkKeysResponseDataItem implements SdkJsonModel {
   final String environment;
   final String hashKey;
   final SdkOptional<String> label;
+
   /// Partially-masked representation of the SDK key value, safe to display in UIs. The value is the `vf_&lt;type&gt;_` prefix followed by the first 3 characters of the secret portion and a fixed 8-character `*` mask (e.g. `vf_server_abc********`).
   final String partialKeyValue;
   final String projectId;
   final GetSdkKeysResponseDataItemType type_;
   final double updatedAt;
 
-  const GetSdkKeysResponseDataItem({required this.createdAt, required this.createdBy, this.deletedAt = const SdkOmitted(), required this.environment, required this.hashKey, this.label = const SdkOmitted(), required this.partialKeyValue, required this.projectId, required this.type_, required this.updatedAt});
+  const GetSdkKeysResponseDataItem(
+      {required this.createdAt,
+      required this.createdBy,
+      this.deletedAt = const SdkOmitted(),
+      required this.environment,
+      required this.hashKey,
+      this.label = const SdkOmitted(),
+      required this.partialKeyValue,
+      required this.projectId,
+      required this.type_,
+      required this.updatedAt});
 
-  GetSdkKeysResponseDataItem Function({double createdAt, String createdBy, SdkOptional<double> deletedAt, String environment, String hashKey, SdkOptional<String> label, String partialKeyValue, String projectId, GetSdkKeysResponseDataItemType type_, double updatedAt}) get copyWith => _copyWith;
+  GetSdkKeysResponseDataItem Function(
+      {double createdAt,
+      String createdBy,
+      SdkOptional<double> deletedAt,
+      String environment,
+      String hashKey,
+      SdkOptional<String> label,
+      String partialKeyValue,
+      String projectId,
+      GetSdkKeysResponseDataItemType type_,
+      double updatedAt}) get copyWith => _copyWith;
 
-  GetSdkKeysResponseDataItem _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? hashKey = sdkOmittedValue, Object? label = sdkOmittedValue, Object? partialKeyValue = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetSdkKeysResponseDataItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double>,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
-    hashKey: identical(hashKey, sdkOmittedValue) ? this.hashKey : hashKey as String,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    partialKeyValue: identical(partialKeyValue, sdkOmittedValue) ? this.partialKeyValue : partialKeyValue as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetSdkKeysResponseDataItemType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  GetSdkKeysResponseDataItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? deletedAt = sdkOmittedValue,
+          Object? environment = sdkOmittedValue,
+          Object? hashKey = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? partialKeyValue = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      GetSdkKeysResponseDataItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        deletedAt: identical(deletedAt, sdkOmittedValue)
+            ? this.deletedAt
+            : deletedAt as SdkOptional<double>,
+        environment: identical(environment, sdkOmittedValue)
+            ? this.environment
+            : environment as String,
+        hashKey: identical(hashKey, sdkOmittedValue)
+            ? this.hashKey
+            : hashKey as String,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        partialKeyValue: identical(partialKeyValue, sdkOmittedValue)
+            ? this.partialKeyValue
+            : partialKeyValue as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetSdkKeysResponseDataItemType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory GetSdkKeysResponseDataItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetSdkKeysResponseDataItem(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    deletedAt: json['deletedAt'] != null ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    environment: (json['environment'] as String?)!,
-    hashKey: (json['hashKey'] as String?)!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    partialKeyValue: (json['partialKeyValue'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    type_: (json['type'] != null ? GetSdkKeysResponseDataItemType.fromJson(json['type'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  ), json);
+  factory GetSdkKeysResponseDataItem.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetSdkKeysResponseDataItem(
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            createdBy: (json['createdBy'] as String?)!,
+            deletedAt: json['deletedAt'] != null
+                ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            environment: (json['environment'] as String?)!,
+            hashKey: (json['hashKey'] as String?)!,
+            label: json['label'] != null
+                ? SdkPresent((json['label'] as String?)!)
+                : const SdkOmitted(),
+            partialKeyValue: (json['partialKeyValue'] as String?)!,
+            projectId: (json['projectId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetSdkKeysResponseDataItemType.fromJson(
+                    json['type'] as String)
+                : null)!,
+            updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    ...switch (deletedAt) {
-      SdkPresent<double>(value: final value) => {'deletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'environment': environment,
-    'hashKey': hashKey,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    'partialKeyValue': partialKeyValue,
-    'projectId': projectId,
-    'type': type_.toJson(),
-    'updatedAt': updatedAt,
-  };
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        ...switch (deletedAt) {
+          SdkPresent<double>(value: final value) => {
+              'deletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'environment': environment,
+        'hashKey': hashKey,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'partialKeyValue': partialKeyValue,
+        'projectId': projectId,
+        'type': type_.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 class GetSdkKeysResponse implements SdkJsonModel {
@@ -242,20 +549,30 @@ class GetSdkKeysResponse implements SdkJsonModel {
 
   const GetSdkKeysResponse({required this.data});
 
-  GetSdkKeysResponse Function({List<GetSdkKeysResponseDataItem> data}) get copyWith => _copyWith;
+  GetSdkKeysResponse Function({List<GetSdkKeysResponseDataItem> data})
+      get copyWith => _copyWith;
 
-  GetSdkKeysResponse _copyWith({Object? data = sdkOmittedValue}) => GetSdkKeysResponse(
-    data: identical(data, sdkOmittedValue) ? this.data : data as List<GetSdkKeysResponseDataItem>,
-  );
+  GetSdkKeysResponse _copyWith({Object? data = sdkOmittedValue}) =>
+      GetSdkKeysResponse(
+        data: identical(data, sdkOmittedValue)
+            ? this.data
+            : data as List<GetSdkKeysResponseDataItem>,
+      );
 
-  factory GetSdkKeysResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetSdkKeysResponse(
-    data: ((json['data'] as List?)?.map((e) => GetSdkKeysResponseDataItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory GetSdkKeysResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetSdkKeysResponse(
+            data: ((json['data'] as List?)
+                ?.map((e) => GetSdkKeysResponseDataItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'data': data.map((item) => item.toJson()).toList(),
-  };
+        'data': data.map((item) => item.toJson()).toList(),
+      };
 }
 
 class CreateSdkKeyRequestBody implements SdkJsonModel {
@@ -265,29 +582,55 @@ class CreateSdkKeyRequestBody implements SdkJsonModel {
   final String environment;
   final SdkOptional<String> label;
 
-  const CreateSdkKeyRequestBody({required this.sdkKeyType, required this.environment, this.label = const SdkOmitted()});
+  const CreateSdkKeyRequestBody(
+      {required this.sdkKeyType,
+      required this.environment,
+      this.label = const SdkOmitted()});
 
-  CreateSdkKeyRequestBody Function({CreateSdkKeyRequestBodySdkKeyType sdkKeyType, String environment, SdkOptional<String> label}) get copyWith => _copyWith;
+  CreateSdkKeyRequestBody Function(
+      {CreateSdkKeyRequestBodySdkKeyType sdkKeyType,
+      String environment,
+      SdkOptional<String> label}) get copyWith => _copyWith;
 
-  CreateSdkKeyRequestBody _copyWith({Object? sdkKeyType = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? label = sdkOmittedValue}) => CreateSdkKeyRequestBody(
-    sdkKeyType: identical(sdkKeyType, sdkOmittedValue) ? this.sdkKeyType : sdkKeyType as CreateSdkKeyRequestBodySdkKeyType,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-  );
+  CreateSdkKeyRequestBody _copyWith(
+          {Object? sdkKeyType = sdkOmittedValue,
+          Object? environment = sdkOmittedValue,
+          Object? label = sdkOmittedValue}) =>
+      CreateSdkKeyRequestBody(
+        sdkKeyType: identical(sdkKeyType, sdkOmittedValue)
+            ? this.sdkKeyType
+            : sdkKeyType as CreateSdkKeyRequestBodySdkKeyType,
+        environment: identical(environment, sdkOmittedValue)
+            ? this.environment
+            : environment as String,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+      );
 
-  factory CreateSdkKeyRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateSdkKeyRequestBody(
-    sdkKeyType: (json['sdkKeyType'] != null ? CreateSdkKeyRequestBodySdkKeyType.fromJson(json['sdkKeyType'] as String) : null)!,
-    environment: (json['environment'] as String?)!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory CreateSdkKeyRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateSdkKeyRequestBody(
+            sdkKeyType: (json['sdkKeyType'] != null
+                ? CreateSdkKeyRequestBodySdkKeyType.fromJson(
+                    json['sdkKeyType'] as String)
+                : null)!,
+            environment: (json['environment'] as String?)!,
+            label: json['label'] != null
+                ? SdkPresent((json['label'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'sdkKeyType': sdkKeyType.toJson(),
-    'environment': environment,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'sdkKeyType': sdkKeyType.toJson(),
+        'environment': environment,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

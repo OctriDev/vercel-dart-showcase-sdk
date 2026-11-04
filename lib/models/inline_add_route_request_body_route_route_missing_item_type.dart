@@ -5,271 +5,325 @@ part of 'inline.dart';
 
 // Inline operation models
 final class AddRouteRequestBodyRouteRouteMissingItemType {
-
   final String value;
 
   const AddRouteRequestBodyRouteRouteMissingItemType._(this.value);
 
-  factory AddRouteRequestBodyRouteRouteMissingItemType.fromJson(String value) => AddRouteRequestBodyRouteRouteMissingItemType._(value);
+  factory AddRouteRequestBodyRouteRouteMissingItemType.fromJson(String value) =>
+      AddRouteRequestBodyRouteRouteMissingItemType._(value);
 
   static const host = AddRouteRequestBodyRouteRouteMissingItemType._('host');
-  static const header = AddRouteRequestBodyRouteRouteMissingItemType._('header');
-  static const cookie = AddRouteRequestBodyRouteRouteMissingItemType._('cookie');
+  static const header =
+      AddRouteRequestBodyRouteRouteMissingItemType._('header');
+  static const cookie =
+      AddRouteRequestBodyRouteRouteMissingItemType._('cookie');
   static const query = AddRouteRequestBodyRouteRouteMissingItemType._('query');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteRequestBodyRouteRouteMissingItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteRequestBodyRouteRouteMissingItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteRequestBodyRouteRouteTransformsItemOp {
-
   final String value;
 
   const AddRouteRequestBodyRouteRouteTransformsItemOp._(this.value);
 
-  factory AddRouteRequestBodyRouteRouteTransformsItemOp.fromJson(String value) => AddRouteRequestBodyRouteRouteTransformsItemOp._(value);
+  factory AddRouteRequestBodyRouteRouteTransformsItemOp.fromJson(
+          String value) =>
+      AddRouteRequestBodyRouteRouteTransformsItemOp._(value);
 
-  static const append = AddRouteRequestBodyRouteRouteTransformsItemOp._('append');
+  static const append =
+      AddRouteRequestBodyRouteRouteTransformsItemOp._('append');
   static const set_ = AddRouteRequestBodyRouteRouteTransformsItemOp._('set');
-  static const delete = AddRouteRequestBodyRouteRouteTransformsItemOp._('delete');
+  static const delete =
+      AddRouteRequestBodyRouteRouteTransformsItemOp._('delete');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteRequestBodyRouteRouteTransformsItemOp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteRequestBodyRouteRouteTransformsItemOp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteRequestBodyRouteRouteTransformsItemType {
-
   final String value;
 
   const AddRouteRequestBodyRouteRouteTransformsItemType._(this.value);
 
-  factory AddRouteRequestBodyRouteRouteTransformsItemType.fromJson(String value) => AddRouteRequestBodyRouteRouteTransformsItemType._(value);
+  factory AddRouteRequestBodyRouteRouteTransformsItemType.fromJson(
+          String value) =>
+      AddRouteRequestBodyRouteRouteTransformsItemType._(value);
 
-  static const requestHeaders = AddRouteRequestBodyRouteRouteTransformsItemType._('request.headers');
-  static const requestQuery = AddRouteRequestBodyRouteRouteTransformsItemType._('request.query');
-  static const responseHeaders = AddRouteRequestBodyRouteRouteTransformsItemType._('response.headers');
+  static const requestHeaders =
+      AddRouteRequestBodyRouteRouteTransformsItemType._('request.headers');
+  static const requestQuery =
+      AddRouteRequestBodyRouteRouteTransformsItemType._('request.query');
+  static const responseHeaders =
+      AddRouteRequestBodyRouteRouteTransformsItemType._('response.headers');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteRequestBodyRouteRouteTransformsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteRequestBodyRouteRouteTransformsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Pattern syntax type. If not provided, inferred from pattern.
 final class AddRouteRequestBodyRouteSrcSyntax {
-
   final String value;
 
   const AddRouteRequestBodyRouteSrcSyntax._(this.value);
 
-  factory AddRouteRequestBodyRouteSrcSyntax.fromJson(String value) => AddRouteRequestBodyRouteSrcSyntax._(value);
+  factory AddRouteRequestBodyRouteSrcSyntax.fromJson(String value) =>
+      AddRouteRequestBodyRouteSrcSyntax._(value);
 
   static const equals = AddRouteRequestBodyRouteSrcSyntax._('equals');
-  static const pathToRegexp = AddRouteRequestBodyRouteSrcSyntax._('path-to-regexp');
+  static const pathToRegexp =
+      AddRouteRequestBodyRouteSrcSyntax._('path-to-regexp');
   static const regex = AddRouteRequestBodyRouteSrcSyntax._('regex');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteRequestBodyRouteSrcSyntax && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteRequestBodyRouteSrcSyntax && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the routing rule is enabled. Defaults to true.
 final class AddRouteResponseRouteEnabled {
-
   final bool value;
 
   const AddRouteResponseRouteEnabled._(this.value);
 
-  factory AddRouteResponseRouteEnabled.fromJson(bool value) => AddRouteResponseRouteEnabled._(value);
+  factory AddRouteResponseRouteEnabled.fromJson(bool value) =>
+      AddRouteResponseRouteEnabled._(value);
 
   static const false_ = AddRouteResponseRouteEnabled._(false);
   static const true_ = AddRouteResponseRouteEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteEnabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteCaseSensitive {
-
   final bool value;
 
   const AddRouteResponseRouteRouteCaseSensitive._(this.value);
 
-  factory AddRouteResponseRouteRouteCaseSensitive.fromJson(bool value) => AddRouteResponseRouteRouteCaseSensitive._(value);
+  factory AddRouteResponseRouteRouteCaseSensitive.fromJson(bool value) =>
+      AddRouteResponseRouteRouteCaseSensitive._(value);
 
   static const false_ = AddRouteResponseRouteRouteCaseSensitive._(false);
   static const true_ = AddRouteResponseRouteRouteCaseSensitive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteCaseSensitive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteCaseSensitive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteCheck {
-
   final bool value;
 
   const AddRouteResponseRouteRouteCheck._(this.value);
 
-  factory AddRouteResponseRouteRouteCheck.fromJson(bool value) => AddRouteResponseRouteRouteCheck._(value);
+  factory AddRouteResponseRouteRouteCheck.fromJson(bool value) =>
+      AddRouteResponseRouteRouteCheck._(value);
 
   static const false_ = AddRouteResponseRouteRouteCheck._(false);
   static const true_ = AddRouteResponseRouteRouteCheck._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteCheck && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteCheck && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteContinue {
-
   final bool value;
 
   const AddRouteResponseRouteRouteContinue._(this.value);
 
-  factory AddRouteResponseRouteRouteContinue.fromJson(bool value) => AddRouteResponseRouteRouteContinue._(value);
+  factory AddRouteResponseRouteRouteContinue.fromJson(bool value) =>
+      AddRouteResponseRouteRouteContinue._(value);
 
   static const false_ = AddRouteResponseRouteRouteContinue._(false);
   static const true_ = AddRouteResponseRouteRouteContinue._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteContinue && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteContinue && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteImportant {
-
   final bool value;
 
   const AddRouteResponseRouteRouteImportant._(this.value);
 
-  factory AddRouteResponseRouteRouteImportant.fromJson(bool value) => AddRouteResponseRouteRouteImportant._(value);
+  factory AddRouteResponseRouteRouteImportant.fromJson(bool value) =>
+      AddRouteResponseRouteRouteImportant._(value);
 
   static const false_ = AddRouteResponseRouteRouteImportant._(false);
   static const true_ = AddRouteResponseRouteRouteImportant._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteImportant && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteImportant && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteMitigateAction {
-
   final String value;
 
   const AddRouteResponseRouteRouteMitigateAction._(this.value);
 
-  factory AddRouteResponseRouteRouteMitigateAction.fromJson(String value) => AddRouteResponseRouteRouteMitigateAction._(value);
+  factory AddRouteResponseRouteRouteMitigateAction.fromJson(String value) =>
+      AddRouteResponseRouteRouteMitigateAction._(value);
 
-  static const challenge = AddRouteResponseRouteRouteMitigateAction._('challenge');
+  static const challenge =
+      AddRouteResponseRouteRouteMitigateAction._('challenge');
   static const deny = AddRouteResponseRouteRouteMitigateAction._('deny');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteMitigateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteMitigateAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteOverride {
-
   final bool value;
 
   const AddRouteResponseRouteRouteOverride._(this.value);
 
-  factory AddRouteResponseRouteRouteOverride.fromJson(bool value) => AddRouteResponseRouteRouteOverride._(value);
+  factory AddRouteResponseRouteRouteOverride.fromJson(bool value) =>
+      AddRouteResponseRouteRouteOverride._(value);
 
   static const false_ = AddRouteResponseRouteRouteOverride._(false);
   static const true_ = AddRouteResponseRouteRouteOverride._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteOverride && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteOverride && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteRespectOriginCacheControl {
-
   final bool value;
 
   const AddRouteResponseRouteRouteRespectOriginCacheControl._(this.value);
 
-  factory AddRouteResponseRouteRouteRespectOriginCacheControl.fromJson(bool value) => AddRouteResponseRouteRouteRespectOriginCacheControl._(value);
+  factory AddRouteResponseRouteRouteRespectOriginCacheControl.fromJson(
+          bool value) =>
+      AddRouteResponseRouteRouteRespectOriginCacheControl._(value);
 
-  static const false_ = AddRouteResponseRouteRouteRespectOriginCacheControl._(false);
-  static const true_ = AddRouteResponseRouteRouteRespectOriginCacheControl._(true);
+  static const false_ =
+      AddRouteResponseRouteRouteRespectOriginCacheControl._(false);
+  static const true_ =
+      AddRouteResponseRouteRouteRespectOriginCacheControl._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteRespectOriginCacheControl && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteRespectOriginCacheControl &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class AddRouteResponseRouteRouteType {
-
   final String value;
 
   const AddRouteResponseRouteRouteType._(this.value);
 
-  factory AddRouteResponseRouteRouteType.fromJson(String value) => AddRouteResponseRouteRouteType._(value);
+  factory AddRouteResponseRouteRouteType.fromJson(String value) =>
+      AddRouteResponseRouteRouteType._(value);
 
   static const redirect = AddRouteResponseRouteRouteType._('redirect');
   static const rewrite = AddRouteResponseRouteRouteType._('rewrite');
@@ -278,10 +332,13 @@ final class AddRouteResponseRouteRouteType {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AddRouteResponseRouteRouteType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AddRouteResponseRouteRouteType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

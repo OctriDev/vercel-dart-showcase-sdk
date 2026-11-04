@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind {
   job;
 
-  static CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind fromJson(String value) {
+  static CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind
+      fromJson(String value) {
     switch (value) {
-      case 'job': return CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind.job;
-      default: throw ArgumentError('Unknown CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind: $value');
+      case 'job':
+        return CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind
+            .job;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind.job: return 'job';
+      case CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind
+            .job:
+        return 'job';
     }
   }
 
@@ -25,59 +32,88 @@ enum CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant2Kind
 }
 
 final class CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch {
-
   final bool value;
 
-  const CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(this.value);
+  const CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(
+      this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch.fromJson(bool value) => CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(value);
+  factory CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch.fromJson(
+          bool value) =>
+      CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch
+          ._(value);
 
-  static const false_ = CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(false);
-  static const true_ = CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch._(true);
+  static const false_ =
+      CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch
+          ._(false);
+  static const true_ =
+      CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3FailIfNoMatch &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job {
-
   final String value;
 
-  const CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job._(this.value);
+  const CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job._(
+      this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job.fromJson(String value) => CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job._(value);
+  factory CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
+          ._(value);
 
-  static const turborepo = CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job._('Turborepo');
+  static const turborepo =
+      CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job
+          ._('Turborepo');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Job &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind {
   turborepo;
 
-  static CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind fromJson(String value) {
+  static CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
+      fromJson(String value) {
     switch (value) {
-      case 'turborepo': return CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind.turborepo;
-      default: throw ArgumentError('Unknown CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind: $value');
+      case 'turborepo':
+        return CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
+            .turborepo;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind.turborepo: return 'turborepo';
+      case CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
+            .turborepo:
+        return 'turborepo';
     }
   }
 
@@ -86,131 +122,181 @@ enum CreateDeploymentCheckRunResponseVariant0SourceVariant4SelectionVariant3Kind
 }
 
 final class CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind {
-
   final String value;
 
-  const CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind._(this.value);
+  const CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind._(
+      this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind.fromJson(String value) => CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind._(value);
+  factory CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind._(value);
 
-  static const vercelCiCheck = CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind._('vercel-ci-check');
+  static const vercelCiCheck =
+      CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind._(
+          'vercel-ci-check');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentCheckRunResponseVariant0SourceVariant4SubKind &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentCheckRunResponseVariant0Status {
-
   final String value;
 
   const CreateDeploymentCheckRunResponseVariant0Status._(this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant0Status.fromJson(String value) => CreateDeploymentCheckRunResponseVariant0Status._(value);
+  factory CreateDeploymentCheckRunResponseVariant0Status.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant0Status._(value);
 
-  static const completed = CreateDeploymentCheckRunResponseVariant0Status._('completed');
-  static const queued = CreateDeploymentCheckRunResponseVariant0Status._('queued');
-  static const running = CreateDeploymentCheckRunResponseVariant0Status._('running');
+  static const completed =
+      CreateDeploymentCheckRunResponseVariant0Status._('completed');
+  static const queued =
+      CreateDeploymentCheckRunResponseVariant0Status._('queued');
+  static const running =
+      CreateDeploymentCheckRunResponseVariant0Status._('running');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant0Status && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentCheckRunResponseVariant0Status &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentCheckRunResponseVariant1Blocks {
-
   final String value;
 
   const CreateDeploymentCheckRunResponseVariant1Blocks._(this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant1Blocks.fromJson(String value) => CreateDeploymentCheckRunResponseVariant1Blocks._(value);
+  factory CreateDeploymentCheckRunResponseVariant1Blocks.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant1Blocks._(value);
 
-  static const buildStart = CreateDeploymentCheckRunResponseVariant1Blocks._('build-start');
-  static const deploymentAlias = CreateDeploymentCheckRunResponseVariant1Blocks._('deployment-alias');
-  static const deploymentPromotion = CreateDeploymentCheckRunResponseVariant1Blocks._('deployment-promotion');
-  static const deploymentStart = CreateDeploymentCheckRunResponseVariant1Blocks._('deployment-start');
+  static const buildStart =
+      CreateDeploymentCheckRunResponseVariant1Blocks._('build-start');
+  static const deploymentAlias =
+      CreateDeploymentCheckRunResponseVariant1Blocks._('deployment-alias');
+  static const deploymentPromotion =
+      CreateDeploymentCheckRunResponseVariant1Blocks._('deployment-promotion');
+  static const deploymentStart =
+      CreateDeploymentCheckRunResponseVariant1Blocks._('deployment-start');
   static const none = CreateDeploymentCheckRunResponseVariant1Blocks._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant1Blocks && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentCheckRunResponseVariant1Blocks &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentCheckRunResponseVariant1Conclusion {
-
   final String value;
 
   const CreateDeploymentCheckRunResponseVariant1Conclusion._(this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant1Conclusion.fromJson(String value) => CreateDeploymentCheckRunResponseVariant1Conclusion._(value);
+  factory CreateDeploymentCheckRunResponseVariant1Conclusion.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant1Conclusion._(value);
 
-  static const canceled = CreateDeploymentCheckRunResponseVariant1Conclusion._('canceled');
-  static const failed = CreateDeploymentCheckRunResponseVariant1Conclusion._('failed');
-  static const neutral = CreateDeploymentCheckRunResponseVariant1Conclusion._('neutral');
-  static const skipped = CreateDeploymentCheckRunResponseVariant1Conclusion._('skipped');
-  static const succeeded = CreateDeploymentCheckRunResponseVariant1Conclusion._('succeeded');
-  static const timeout = CreateDeploymentCheckRunResponseVariant1Conclusion._('timeout');
+  static const canceled =
+      CreateDeploymentCheckRunResponseVariant1Conclusion._('canceled');
+  static const failed =
+      CreateDeploymentCheckRunResponseVariant1Conclusion._('failed');
+  static const neutral =
+      CreateDeploymentCheckRunResponseVariant1Conclusion._('neutral');
+  static const skipped =
+      CreateDeploymentCheckRunResponseVariant1Conclusion._('skipped');
+  static const succeeded =
+      CreateDeploymentCheckRunResponseVariant1Conclusion._('succeeded');
+  static const timeout =
+      CreateDeploymentCheckRunResponseVariant1Conclusion._('timeout');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant1Conclusion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentCheckRunResponseVariant1Conclusion &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentCheckRunResponseVariant1Requires {
-
   final String value;
 
   const CreateDeploymentCheckRunResponseVariant1Requires._(this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant1Requires.fromJson(String value) => CreateDeploymentCheckRunResponseVariant1Requires._(value);
+  factory CreateDeploymentCheckRunResponseVariant1Requires.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant1Requires._(value);
 
-  static const buildReady = CreateDeploymentCheckRunResponseVariant1Requires._('build-ready');
-  static const deploymentUrl = CreateDeploymentCheckRunResponseVariant1Requires._('deployment-url');
-  static const none = CreateDeploymentCheckRunResponseVariant1Requires._('none');
+  static const buildReady =
+      CreateDeploymentCheckRunResponseVariant1Requires._('build-ready');
+  static const deploymentUrl =
+      CreateDeploymentCheckRunResponseVariant1Requires._('deployment-url');
+  static const none =
+      CreateDeploymentCheckRunResponseVariant1Requires._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant1Requires && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentCheckRunResponseVariant1Requires &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin {
   config;
 
-  static CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin fromJson(String value) {
+  static CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin fromJson(
+      String value) {
     switch (value) {
-      case 'config': return CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin.config;
-      default: throw ArgumentError('Unknown CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin: $value');
+      case 'config':
+        return CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin
+            .config;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin.config: return 'config';
+      case CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin.config:
+        return 'config';
     }
   }
 
@@ -219,38 +305,53 @@ enum CreateDeploymentCheckRunResponseVariant1SourceVariant0Origin {
 }
 
 final class CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind {
-
   final String value;
 
-  const CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind._(this.value);
+  const CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind._(
+      this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind.fromJson(String value) => CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind._(value);
+  factory CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind._(value);
 
-  static const vercelCi = CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind._('vercel-ci');
+  static const vercelCi =
+      CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind._(
+          'vercel-ci');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentCheckRunResponseVariant1SourceVariant0SubKind &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin {
   platform;
 
-  static CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin fromJson(String value) {
+  static CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin fromJson(
+      String value) {
     switch (value) {
-      case 'platform': return CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin.platform;
-      default: throw ArgumentError('Unknown CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin: $value');
+      case 'platform':
+        return CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin
+            .platform;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin.platform: return 'platform';
+      case CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin
+            .platform:
+        return 'platform';
     }
   }
 
@@ -259,21 +360,29 @@ enum CreateDeploymentCheckRunResponseVariant1SourceVariant1Origin {
 }
 
 final class CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind {
-
   final String value;
 
-  const CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind._(this.value);
+  const CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind._(
+      this.value);
 
-  factory CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind.fromJson(String value) => CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind._(value);
+  factory CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind.fromJson(
+          String value) =>
+      CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind._(value);
 
-  static const vercelCiSentinel = CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind._('vercel-ci-sentinel');
+  static const vercelCiSentinel =
+      CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind._(
+          'vercel-ci-sentinel');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentCheckRunResponseVariant1SourceVariant1SubKind &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

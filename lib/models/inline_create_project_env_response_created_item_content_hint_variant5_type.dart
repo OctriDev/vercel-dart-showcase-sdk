@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum CreateProjectEnvResponseCreatedItemContentHintVariant5Type {
   blobStoreId;
 
-  static CreateProjectEnvResponseCreatedItemContentHintVariant5Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedItemContentHintVariant5Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-store-id': return CreateProjectEnvResponseCreatedItemContentHintVariant5Type.blobStoreId;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedItemContentHintVariant5Type: $value');
+      case 'blob-store-id':
+        return CreateProjectEnvResponseCreatedItemContentHintVariant5Type
+            .blobStoreId;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedItemContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedItemContentHintVariant5Type.blobStoreId: return 'blob-store-id';
+      case CreateProjectEnvResponseCreatedItemContentHintVariant5Type
+            .blobStoreId:
+        return 'blob-store-id';
     }
   }
 
@@ -27,16 +34,23 @@ enum CreateProjectEnvResponseCreatedItemContentHintVariant5Type {
 enum CreateProjectEnvResponseCreatedItemContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static CreateProjectEnvResponseCreatedItemContentHintVariant6Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedItemContentHintVariant6Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-webhook-public-key': return CreateProjectEnvResponseCreatedItemContentHintVariant6Type.blobWebhookPublicKey;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedItemContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key':
+        return CreateProjectEnvResponseCreatedItemContentHintVariant6Type
+            .blobWebhookPublicKey;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedItemContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedItemContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
+      case CreateProjectEnvResponseCreatedItemContentHintVariant6Type
+            .blobWebhookPublicKey:
+        return 'blob-webhook-public-key';
     }
   }
 
@@ -47,16 +61,23 @@ enum CreateProjectEnvResponseCreatedItemContentHintVariant6Type {
 enum CreateProjectEnvResponseCreatedItemContentHintVariant7Type {
   postgresUrl;
 
-  static CreateProjectEnvResponseCreatedItemContentHintVariant7Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedItemContentHintVariant7Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url': return CreateProjectEnvResponseCreatedItemContentHintVariant7Type.postgresUrl;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedItemContentHintVariant7Type: $value');
+      case 'postgres-url':
+        return CreateProjectEnvResponseCreatedItemContentHintVariant7Type
+            .postgresUrl;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedItemContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedItemContentHintVariant7Type.postgresUrl: return 'postgres-url';
+      case CreateProjectEnvResponseCreatedItemContentHintVariant7Type
+            .postgresUrl:
+        return 'postgres-url';
     }
   }
 
@@ -67,16 +88,23 @@ enum CreateProjectEnvResponseCreatedItemContentHintVariant7Type {
 enum CreateProjectEnvResponseCreatedItemContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static CreateProjectEnvResponseCreatedItemContentHintVariant8Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedItemContentHintVariant8Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url-non-pooling': return CreateProjectEnvResponseCreatedItemContentHintVariant8Type.postgresUrlNonPooling;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedItemContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling':
+        return CreateProjectEnvResponseCreatedItemContentHintVariant8Type
+            .postgresUrlNonPooling;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedItemContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedItemContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
+      case CreateProjectEnvResponseCreatedItemContentHintVariant8Type
+            .postgresUrlNonPooling:
+        return 'postgres-url-non-pooling';
     }
   }
 
@@ -87,16 +115,23 @@ enum CreateProjectEnvResponseCreatedItemContentHintVariant8Type {
 enum CreateProjectEnvResponseCreatedItemContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static CreateProjectEnvResponseCreatedItemContentHintVariant9Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedItemContentHintVariant9Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-prisma-url': return CreateProjectEnvResponseCreatedItemContentHintVariant9Type.postgresPrismaUrl;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedItemContentHintVariant9Type: $value');
+      case 'postgres-prisma-url':
+        return CreateProjectEnvResponseCreatedItemContentHintVariant9Type
+            .postgresPrismaUrl;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedItemContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedItemContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
+      case CreateProjectEnvResponseCreatedItemContentHintVariant9Type
+            .postgresPrismaUrl:
+        return 'postgres-prisma-url';
     }
   }
 
@@ -109,14 +144,18 @@ enum CreateProjectResponseCreatorVariant0Type {
 
   static CreateProjectResponseCreatorVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user': return CreateProjectResponseCreatorVariant0Type.user;
-      default: throw ArgumentError('Unknown CreateProjectResponseCreatorVariant0Type: $value');
+      case 'user':
+        return CreateProjectResponseCreatorVariant0Type.user;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseCreatorVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseCreatorVariant0Type.user: return 'user';
+      case CreateProjectResponseCreatorVariant0Type.user:
+        return 'user';
     }
   }
 
@@ -127,16 +166,21 @@ enum CreateProjectResponseCreatorVariant0Type {
 enum CreateProjectResponseCreatorVariant0ViaVariant0Type {
   app;
 
-  static CreateProjectResponseCreatorVariant0ViaVariant0Type fromJson(String value) {
+  static CreateProjectResponseCreatorVariant0ViaVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'app': return CreateProjectResponseCreatorVariant0ViaVariant0Type.app;
-      default: throw ArgumentError('Unknown CreateProjectResponseCreatorVariant0ViaVariant0Type: $value');
+      case 'app':
+        return CreateProjectResponseCreatorVariant0ViaVariant0Type.app;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseCreatorVariant0ViaVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseCreatorVariant0ViaVariant0Type.app: return 'app';
+      case CreateProjectResponseCreatorVariant0ViaVariant0Type.app:
+        return 'app';
     }
   }
 
@@ -147,16 +191,21 @@ enum CreateProjectResponseCreatorVariant0ViaVariant0Type {
 enum CreateProjectResponseCreatorVariant0ViaVariant1Type {
   integration;
 
-  static CreateProjectResponseCreatorVariant0ViaVariant1Type fromJson(String value) {
+  static CreateProjectResponseCreatorVariant0ViaVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration': return CreateProjectResponseCreatorVariant0ViaVariant1Type.integration;
-      default: throw ArgumentError('Unknown CreateProjectResponseCreatorVariant0ViaVariant1Type: $value');
+      case 'integration':
+        return CreateProjectResponseCreatorVariant0ViaVariant1Type.integration;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseCreatorVariant0ViaVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseCreatorVariant0ViaVariant1Type.integration: return 'integration';
+      case CreateProjectResponseCreatorVariant0ViaVariant1Type.integration:
+        return 'integration';
     }
   }
 
@@ -169,14 +218,18 @@ enum CreateProjectResponseCreatorVariant1Type {
 
   static CreateProjectResponseCreatorVariant1Type fromJson(String value) {
     switch (value) {
-      case 'app': return CreateProjectResponseCreatorVariant1Type.app;
-      default: throw ArgumentError('Unknown CreateProjectResponseCreatorVariant1Type: $value');
+      case 'app':
+        return CreateProjectResponseCreatorVariant1Type.app;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseCreatorVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseCreatorVariant1Type.app: return 'app';
+      case CreateProjectResponseCreatorVariant1Type.app:
+        return 'app';
     }
   }
 
@@ -189,14 +242,18 @@ enum CreateProjectResponseCreatorVariant2Type {
 
   static CreateProjectResponseCreatorVariant2Type fromJson(String value) {
     switch (value) {
-      case 'integration': return CreateProjectResponseCreatorVariant2Type.integration;
-      default: throw ArgumentError('Unknown CreateProjectResponseCreatorVariant2Type: $value');
+      case 'integration':
+        return CreateProjectResponseCreatorVariant2Type.integration;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseCreatorVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseCreatorVariant2Type.integration: return 'integration';
+      case CreateProjectResponseCreatorVariant2Type.integration:
+        return 'integration';
     }
   }
 
@@ -209,14 +266,18 @@ enum CreateProjectResponseCreatorVariant3Type {
 
   static CreateProjectResponseCreatorVariant3Type fromJson(String value) {
     switch (value) {
-      case 'system': return CreateProjectResponseCreatorVariant3Type.system;
-      default: throw ArgumentError('Unknown CreateProjectResponseCreatorVariant3Type: $value');
+      case 'system':
+        return CreateProjectResponseCreatorVariant3Type.system;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseCreatorVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseCreatorVariant3Type.system: return 'system';
+      case CreateProjectResponseCreatorVariant3Type.system:
+        return 'system';
     }
   }
 
@@ -225,39 +286,58 @@ enum CreateProjectResponseCreatorVariant3Type {
 }
 
 final class CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target {
-
   final String value;
 
-  const CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(this.value);
+  const CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
+      this.value);
 
-  factory CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(value);
+  factory CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(
+          String value) =>
+      CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._(value);
 
-  static const preview = CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('preview');
-  static const production = CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('production');
+  static const preview =
+      CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._('preview');
+  static const production =
+      CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
+  static CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'system': return CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system;
-      default: throw ArgumentError('Unknown CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system':
+        return CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+            .system;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
+      case CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+            .system:
+        return 'system';
     }
   }
 
@@ -268,16 +348,23 @@ enum CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemV
 enum CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
+  static CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'custom': return CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom;
-      default: throw ArgumentError('Unknown CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom':
+        return CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+            .custom;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
+      case CreateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+            .custom:
+        return 'custom';
     }
   }
 

@@ -8,23 +8,33 @@ part of 'connect.dart';
 class ConnectReconsent implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The affected authorization scope. user means each affected user must authorize again.
   final ConnectReconsentScope scope;
 
   const ConnectReconsent({required this.scope});
 
-  ConnectReconsent Function({ConnectReconsentScope scope}) get copyWith => _copyWith;
+  ConnectReconsent Function({ConnectReconsentScope scope}) get copyWith =>
+      _copyWith;
 
-  ConnectReconsent _copyWith({Object? scope = sdkOmittedValue}) => ConnectReconsent(
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as ConnectReconsentScope,
-  );
+  ConnectReconsent _copyWith({Object? scope = sdkOmittedValue}) =>
+      ConnectReconsent(
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as ConnectReconsentScope,
+      );
 
-  factory ConnectReconsent.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ConnectReconsent(
-    scope: (json['scope'] != null ? ConnectReconsentScope.fromJson(json['scope'] as String) : null)!,
-  ), json);
+  factory ConnectReconsent.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ConnectReconsent(
+            scope: (json['scope'] != null
+                ? ConnectReconsentScope.fromJson(json['scope'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'scope': scope.toJson(),
-  };
+        'scope': scope.toJson(),
+      };
 }

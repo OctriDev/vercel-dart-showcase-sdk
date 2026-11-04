@@ -8,270 +8,410 @@ part of 'user.dart';
 class UserEventPayloadVariant163 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant163({required this.email, required this.name});
 
-  UserEventPayloadVariant163 Function({String email, String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant163 Function({String email, String name})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant163 _copyWith({Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant163(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant163 _copyWith(
+          {Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant163(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant163.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant163(
-    email: (json['email'] as String?)!,
-    name: (json['name'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant163.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant163(
+            email: (json['email'] as String?)!,
+            name: (json['name'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'email': email,
-    'name': name,
-  };
+        'email': email,
+        'name': name,
+      };
 }
 
 /// Required object value serialized in the `previousRule` wire field.
 class UserEventPayloadVariant164PreviousRule implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
 
   const UserEventPayloadVariant164PreviousRule({required this.email});
 
-  UserEventPayloadVariant164PreviousRule Function({String email}) get copyWith => _copyWith;
+  UserEventPayloadVariant164PreviousRule Function({String email})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant164PreviousRule _copyWith({Object? email = sdkOmittedValue}) => UserEventPayloadVariant164PreviousRule(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-  );
+  UserEventPayloadVariant164PreviousRule _copyWith(
+          {Object? email = sdkOmittedValue}) =>
+      UserEventPayloadVariant164PreviousRule(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+      );
 
-  factory UserEventPayloadVariant164PreviousRule.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant164PreviousRule(
-    email: (json['email'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant164PreviousRule.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant164PreviousRule(
+            email: (json['email'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'email': email,
-  };
+        'email': email,
+      };
 }
 
 /// Required object value serialized in the `team` wire field.
 class UserEventPayloadVariant164Team implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
 
-  const UserEventPayloadVariant164Team({required this.id, this.name = const SdkOmitted()});
+  const UserEventPayloadVariant164Team(
+      {required this.id, this.name = const SdkOmitted()});
 
-  UserEventPayloadVariant164Team Function({String id, SdkOptional<String> name}) get copyWith => _copyWith;
+  UserEventPayloadVariant164Team Function({String id, SdkOptional<String> name})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant164Team _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant164Team(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-  );
+  UserEventPayloadVariant164Team _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant164Team(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant164Team.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant164Team(
-    id: (json['id'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant164Team.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant164Team(
+            id: (json['id'] as String?)!,
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant164 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `previousRule` wire field.
   final UserEventPayloadVariant164PreviousRule previousRule;
+
   /// Required object value serialized in the `team` wire field.
   final UserEventPayloadVariant164Team team;
 
-  const UserEventPayloadVariant164({required this.previousRule, required this.team});
+  const UserEventPayloadVariant164(
+      {required this.previousRule, required this.team});
 
-  UserEventPayloadVariant164 Function({UserEventPayloadVariant164PreviousRule previousRule, UserEventPayloadVariant164Team team}) get copyWith => _copyWith;
+  UserEventPayloadVariant164 Function(
+      {UserEventPayloadVariant164PreviousRule previousRule,
+      UserEventPayloadVariant164Team team}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant164 _copyWith({Object? previousRule = sdkOmittedValue, Object? team = sdkOmittedValue}) => UserEventPayloadVariant164(
-    previousRule: identical(previousRule, sdkOmittedValue) ? this.previousRule : previousRule as UserEventPayloadVariant164PreviousRule,
-    team: identical(team, sdkOmittedValue) ? this.team : team as UserEventPayloadVariant164Team,
-  );
+  UserEventPayloadVariant164 _copyWith(
+          {Object? previousRule = sdkOmittedValue,
+          Object? team = sdkOmittedValue}) =>
+      UserEventPayloadVariant164(
+        previousRule: identical(previousRule, sdkOmittedValue)
+            ? this.previousRule
+            : previousRule as UserEventPayloadVariant164PreviousRule,
+        team: identical(team, sdkOmittedValue)
+            ? this.team
+            : team as UserEventPayloadVariant164Team,
+      );
 
-  factory UserEventPayloadVariant164.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant164(
-    previousRule: (json['previousRule'] != null ? UserEventPayloadVariant164PreviousRule.fromJson(json['previousRule'] as Map<String, dynamic>) : null)!,
-    team: (json['team'] != null ? UserEventPayloadVariant164Team.fromJson(json['team'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory UserEventPayloadVariant164.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant164(
+            previousRule: (json['previousRule'] != null
+                ? UserEventPayloadVariant164PreviousRule.fromJson(
+                    json['previousRule'] as Map<String, dynamic>)
+                : null)!,
+            team: (json['team'] != null
+                ? UserEventPayloadVariant164Team.fromJson(
+                    json['team'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'previousRule': previousRule.toJson(),
-    'team': team.toJson(),
-  };
+        'previousRule': previousRule.toJson(),
+        'team': team.toJson(),
+      };
 }
 
 /// Optional object value serialized in the `nextRule` wire field.
 class UserEventPayloadVariant165NextRule implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
 
   const UserEventPayloadVariant165NextRule({required this.email});
 
-  UserEventPayloadVariant165NextRule Function({String email}) get copyWith => _copyWith;
+  UserEventPayloadVariant165NextRule Function({String email}) get copyWith =>
+      _copyWith;
 
-  UserEventPayloadVariant165NextRule _copyWith({Object? email = sdkOmittedValue}) => UserEventPayloadVariant165NextRule(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-  );
+  UserEventPayloadVariant165NextRule _copyWith(
+          {Object? email = sdkOmittedValue}) =>
+      UserEventPayloadVariant165NextRule(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+      );
 
-  factory UserEventPayloadVariant165NextRule.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant165NextRule(
-    email: (json['email'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant165NextRule.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant165NextRule(
+            email: (json['email'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'email': email,
-  };
+        'email': email,
+      };
 }
 
 /// Optional object value serialized in the `previousRule` wire field.
 class UserEventPayloadVariant165PreviousRule implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
 
   const UserEventPayloadVariant165PreviousRule({required this.email});
 
-  UserEventPayloadVariant165PreviousRule Function({String email}) get copyWith => _copyWith;
+  UserEventPayloadVariant165PreviousRule Function({String email})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant165PreviousRule _copyWith({Object? email = sdkOmittedValue}) => UserEventPayloadVariant165PreviousRule(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-  );
+  UserEventPayloadVariant165PreviousRule _copyWith(
+          {Object? email = sdkOmittedValue}) =>
+      UserEventPayloadVariant165PreviousRule(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+      );
 
-  factory UserEventPayloadVariant165PreviousRule.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant165PreviousRule(
-    email: (json['email'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant165PreviousRule.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant165PreviousRule(
+            email: (json['email'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'email': email,
-  };
+        'email': email,
+      };
 }
 
 /// Required object value serialized in the `team` wire field.
 class UserEventPayloadVariant165Team implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
 
-  const UserEventPayloadVariant165Team({required this.id, this.name = const SdkOmitted()});
+  const UserEventPayloadVariant165Team(
+      {required this.id, this.name = const SdkOmitted()});
 
-  UserEventPayloadVariant165Team Function({String id, SdkOptional<String> name}) get copyWith => _copyWith;
+  UserEventPayloadVariant165Team Function({String id, SdkOptional<String> name})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant165Team _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant165Team(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-  );
+  UserEventPayloadVariant165Team _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant165Team(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant165Team.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant165Team(
-    id: (json['id'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant165Team.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant165Team(
+            id: (json['id'] as String?)!,
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant165 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `nextRule` wire field.
   final SdkOptional<UserEventPayloadVariant165NextRule> nextRule;
+
   /// Optional object value serialized in the `previousRule` wire field.
   final SdkOptional<UserEventPayloadVariant165PreviousRule> previousRule;
+
   /// Required object value serialized in the `team` wire field.
   final UserEventPayloadVariant165Team team;
 
-  const UserEventPayloadVariant165({this.nextRule = const SdkOmitted(), this.previousRule = const SdkOmitted(), required this.team});
+  const UserEventPayloadVariant165(
+      {this.nextRule = const SdkOmitted(),
+      this.previousRule = const SdkOmitted(),
+      required this.team});
 
-  UserEventPayloadVariant165 Function({SdkOptional<UserEventPayloadVariant165NextRule> nextRule, SdkOptional<UserEventPayloadVariant165PreviousRule> previousRule, UserEventPayloadVariant165Team team}) get copyWith => _copyWith;
+  UserEventPayloadVariant165 Function(
+      {SdkOptional<UserEventPayloadVariant165NextRule> nextRule,
+      SdkOptional<UserEventPayloadVariant165PreviousRule> previousRule,
+      UserEventPayloadVariant165Team team}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant165 _copyWith({Object? nextRule = sdkOmittedValue, Object? previousRule = sdkOmittedValue, Object? team = sdkOmittedValue}) => UserEventPayloadVariant165(
-    nextRule: identical(nextRule, sdkOmittedValue) ? this.nextRule : nextRule as SdkOptional<UserEventPayloadVariant165NextRule>,
-    previousRule: identical(previousRule, sdkOmittedValue) ? this.previousRule : previousRule as SdkOptional<UserEventPayloadVariant165PreviousRule>,
-    team: identical(team, sdkOmittedValue) ? this.team : team as UserEventPayloadVariant165Team,
-  );
+  UserEventPayloadVariant165 _copyWith(
+          {Object? nextRule = sdkOmittedValue,
+          Object? previousRule = sdkOmittedValue,
+          Object? team = sdkOmittedValue}) =>
+      UserEventPayloadVariant165(
+        nextRule: identical(nextRule, sdkOmittedValue)
+            ? this.nextRule
+            : nextRule as SdkOptional<UserEventPayloadVariant165NextRule>,
+        previousRule: identical(previousRule, sdkOmittedValue)
+            ? this.previousRule
+            : previousRule
+                as SdkOptional<UserEventPayloadVariant165PreviousRule>,
+        team: identical(team, sdkOmittedValue)
+            ? this.team
+            : team as UserEventPayloadVariant165Team,
+      );
 
-  factory UserEventPayloadVariant165.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant165(
-    nextRule: json['nextRule'] != null ? SdkPresent((json['nextRule'] != null ? UserEventPayloadVariant165NextRule.fromJson(json['nextRule'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    previousRule: json['previousRule'] != null ? SdkPresent((json['previousRule'] != null ? UserEventPayloadVariant165PreviousRule.fromJson(json['previousRule'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    team: (json['team'] != null ? UserEventPayloadVariant165Team.fromJson(json['team'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory UserEventPayloadVariant165.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant165(
+            nextRule: json['nextRule'] != null
+                ? SdkPresent((json['nextRule'] != null
+                    ? UserEventPayloadVariant165NextRule.fromJson(
+                        json['nextRule'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            previousRule: json['previousRule'] != null
+                ? SdkPresent((json['previousRule'] != null
+                    ? UserEventPayloadVariant165PreviousRule.fromJson(
+                        json['previousRule'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            team: (json['team'] != null
+                ? UserEventPayloadVariant165Team.fromJson(
+                    json['team'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (nextRule) {
-      SdkPresent<UserEventPayloadVariant165NextRule>(value: final value) => {'nextRule': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (previousRule) {
-      SdkPresent<UserEventPayloadVariant165PreviousRule>(value: final value) => {'previousRule': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'team': team.toJson(),
-  };
+        ...switch (nextRule) {
+          SdkPresent<UserEventPayloadVariant165NextRule>(value: final value) =>
+            {
+              'nextRule': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (previousRule) {
+          SdkPresent<UserEventPayloadVariant165PreviousRule>(
+            value: final value
+          ) =>
+            {
+              'previousRule': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'team': team.toJson(),
+      };
 }
 
 /// Optional object value serialized in the `deletedUser` wire field.
 class UserEventPayloadVariant166DeletedUser implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
+
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventPayloadVariant166DeletedUser({required this.email, required this.username});
+  const UserEventPayloadVariant166DeletedUser(
+      {required this.email, required this.username});
 
-  UserEventPayloadVariant166DeletedUser Function({String email, String username}) get copyWith => _copyWith;
+  UserEventPayloadVariant166DeletedUser Function(
+      {String email, String username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant166DeletedUser _copyWith({Object? email = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant166DeletedUser(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  UserEventPayloadVariant166DeletedUser _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant166DeletedUser(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory UserEventPayloadVariant166DeletedUser.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant166DeletedUser(
-    email: (json['email'] as String?)!,
-    username: (json['username'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant166DeletedUser.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant166DeletedUser(
+            email: (json['email'] as String?)!,
+            username: (json['username'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'email': email,
-    'username': username,
-  };
+        'email': email,
+        'username': username,
+      };
 }

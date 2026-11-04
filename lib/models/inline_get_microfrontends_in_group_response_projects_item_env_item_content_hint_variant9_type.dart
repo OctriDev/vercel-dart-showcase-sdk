@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-prisma-url': return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type.postgresPrismaUrl;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type: $value');
+      case 'postgres-prisma-url':
+        return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type
+            .postgresPrismaUrl;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
+      case GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type
+            .postgresPrismaUrl:
+        return 'postgres-prisma-url';
     }
   }
 
@@ -25,38 +32,55 @@ enum GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type 
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key {
-
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key.fromJson(
+          String value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
+          ._(value);
 
-  static const xVercelIpCountry = GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key._('x-vercel-ip-country');
+  static const xVercelIpCountry =
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
+          ._('x-vercel-ip-country');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type {
   header;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'header': return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type.header;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type: $value');
+      case 'header':
+        return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
+            .header;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type.header: return 'header';
+      case GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
+            .header:
+        return 'header';
     }
   }
 
@@ -67,16 +91,23 @@ enum GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasIt
 enum GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type {
   host;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'host': return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type.host;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type: $value');
+      case 'host':
+        return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
+            .host;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type.host: return 'host';
+      case GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
+            .host:
+        return 'host';
     }
   }
 
@@ -85,59 +116,87 @@ enum GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasIt
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction {
-
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction.fromJson(
+          String value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction
+          ._(value);
 
-  static const blockLegalCwc = GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction._('block_legal_cwc');
+  static const blockLegalCwc =
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction
+          ._('block_legal_cwc');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(
+          value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(
+          false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type {
   github;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'github': return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type.github;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type: $value');
+      case 'github':
+        return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type
+            .github;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type.github: return 'github';
+      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type.github:
+        return 'github';
     }
   }
 
@@ -146,39 +205,58 @@ enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant0Type {
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(
+          value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(
+          false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type {
   githubLimited;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'github-limited': return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type.githubLimited;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type: $value');
+      case 'github-limited':
+        return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type
+            .githubLimited;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type.githubLimited: return 'github-limited';
+      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type
+            .githubLimited:
+        return 'github-limited';
     }
   }
 
@@ -187,39 +265,58 @@ enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant1Type {
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(
+          value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(
+          false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type {
   githubCustomHost;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type fromJson(
+      String value) {
     switch (value) {
-      case 'github-custom-host': return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type.githubCustomHost;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type: $value');
+      case 'github-custom-host':
+        return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type
+            .githubCustomHost;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type.githubCustomHost: return 'github-custom-host';
+      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type
+            .githubCustomHost:
+        return 'github-custom-host';
     }
   }
 
@@ -228,39 +325,57 @@ enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant2Type {
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(
+          value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(
+          false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type {
   gitlab;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type fromJson(
+      String value) {
     switch (value) {
-      case 'gitlab': return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type.gitlab;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type: $value');
+      case 'gitlab':
+        return GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type
+            .gitlab;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type.gitlab: return 'gitlab';
+      case GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type.gitlab:
+        return 'gitlab';
     }
   }
 
@@ -269,22 +384,34 @@ enum GetMicrofrontendsInGroupResponseProjectsItemLinkVariant3Type {
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(
+          value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(
+          false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemLinkVariant4Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

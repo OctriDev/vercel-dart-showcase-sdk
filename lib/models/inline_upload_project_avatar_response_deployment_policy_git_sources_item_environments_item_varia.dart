@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
+  static UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'custom': return UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom':
+        return UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+            .custom;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
+      case UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+            .custom:
+        return 'custom';
     }
   }
 
@@ -25,122 +32,182 @@ enum UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVa
 }
 
 final class UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider {
-
   final String value;
 
-  const UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(this.value);
+  const UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(
+      this.value);
 
-  factory UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(String value) => UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(value);
+  factory UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._(value);
 
-  static const bitbucket = UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('bitbucket');
-  static const github = UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('github');
+  static const bitbucket =
+      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('bitbucket');
+  static const github =
+      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('github');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider {
-
   final String value;
 
-  const UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(this.value);
+  const UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(
+      this.value);
 
-  factory UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(String value) => UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(value);
+  factory UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          ._(value);
 
-  static const gitlab = UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._('gitlab');
+  static const gitlab =
+      UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          ._('gitlab');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2 {
-
   final bool value;
 
-  const UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(this.value);
+  const UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(
+      this.value);
 
-  factory UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(bool value) => UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(value);
+  factory UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+          ._(value);
 
-  static const false_ = UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(false);
-  static const true_ = UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(true);
+  static const false_ =
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+          ._(false);
+  static const true_ =
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseDismissedToastsItemValueVariant2CurrentValueVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2 {
-
   final bool value;
 
-  const UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(this.value);
+  const UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(
+      this.value);
 
-  factory UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(bool value) => UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(value);
+  factory UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(value);
 
-  static const false_ = UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(false);
-  static const true_ = UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(true);
+  static const false_ =
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(false);
+  static const true_ =
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseDismissedToastsItemValueVariant2PreviousValueVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseDismissedToastsItemValueVariant3 {
-
   final bool value;
 
-  const UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(this.value);
+  const UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(
+      this.value);
 
-  factory UploadProjectAvatarResponseDismissedToastsItemValueVariant3.fromJson(bool value) => UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(value);
+  factory UploadProjectAvatarResponseDismissedToastsItemValueVariant3.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(value);
 
-  static const false_ = UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(false);
-  static const true_ = UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(true);
+  static const false_ =
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(false);
+  static const true_ =
+      UploadProjectAvatarResponseDismissedToastsItemValueVariant3._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDismissedToastsItemValueVariant3 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseDismissedToastsItemValueVariant3 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UploadProjectAvatarResponseEnvItemContentHintVariant0Type {
   redisUrl;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant0Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-url': return UploadProjectAvatarResponseEnvItemContentHintVariant0Type.redisUrl;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant0Type: $value');
+      case 'redis-url':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant0Type
+            .redisUrl;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant0Type.redisUrl: return 'redis-url';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant0Type.redisUrl:
+        return 'redis-url';
     }
   }
 
@@ -151,16 +218,23 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant0Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant1Type {
   redisRestApiUrl;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant1Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-url': return UploadProjectAvatarResponseEnvItemContentHintVariant1Type.redisRestApiUrl;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant1Type: $value');
+      case 'redis-rest-api-url':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant1Type
+            .redisRestApiUrl;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant1Type.redisRestApiUrl: return 'redis-rest-api-url';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant1Type
+            .redisRestApiUrl:
+        return 'redis-rest-api-url';
     }
   }
 
@@ -171,16 +245,23 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant1Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant10Type {
   postgresUser;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant10Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant10Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-user': return UploadProjectAvatarResponseEnvItemContentHintVariant10Type.postgresUser;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant10Type: $value');
+      case 'postgres-user':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant10Type
+            .postgresUser;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant10Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant10Type.postgresUser: return 'postgres-user';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant10Type
+            .postgresUser:
+        return 'postgres-user';
     }
   }
 
@@ -191,16 +272,23 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant10Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant11Type {
   postgresHost;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant11Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant11Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-host': return UploadProjectAvatarResponseEnvItemContentHintVariant11Type.postgresHost;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant11Type: $value');
+      case 'postgres-host':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant11Type
+            .postgresHost;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant11Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant11Type.postgresHost: return 'postgres-host';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant11Type
+            .postgresHost:
+        return 'postgres-host';
     }
   }
 
@@ -211,16 +299,23 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant11Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant12Type {
   postgresPassword;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant12Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant12Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-password': return UploadProjectAvatarResponseEnvItemContentHintVariant12Type.postgresPassword;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant12Type: $value');
+      case 'postgres-password':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant12Type
+            .postgresPassword;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant12Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant12Type.postgresPassword: return 'postgres-password';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant12Type
+            .postgresPassword:
+        return 'postgres-password';
     }
   }
 
@@ -231,16 +326,23 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant12Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant13Type {
   postgresDatabase;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant13Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant13Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-database': return UploadProjectAvatarResponseEnvItemContentHintVariant13Type.postgresDatabase;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant13Type: $value');
+      case 'postgres-database':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant13Type
+            .postgresDatabase;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant13Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant13Type.postgresDatabase: return 'postgres-database';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant13Type
+            .postgresDatabase:
+        return 'postgres-database';
     }
   }
 
@@ -251,16 +353,23 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant13Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant14Type {
   postgresUrlNoSsl;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant14Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant14Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url-no-ssl': return UploadProjectAvatarResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant14Type: $value');
+      case 'postgres-url-no-ssl':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant14Type
+            .postgresUrlNoSsl;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant14Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl: return 'postgres-url-no-ssl';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant14Type
+            .postgresUrlNoSsl:
+        return 'postgres-url-no-ssl';
     }
   }
 
@@ -271,16 +380,23 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant14Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant15Type {
   integrationStoreSecret;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant15Type fromJson(String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant15Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration-store-secret': return UploadProjectAvatarResponseEnvItemContentHintVariant15Type.integrationStoreSecret;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant15Type: $value');
+      case 'integration-store-secret':
+        return UploadProjectAvatarResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant15Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant15Type.integrationStoreSecret: return 'integration-store-secret';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret:
+        return 'integration-store-secret';
     }
   }
 

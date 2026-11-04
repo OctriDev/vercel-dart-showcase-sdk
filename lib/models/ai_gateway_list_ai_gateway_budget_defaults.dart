@@ -8,23 +8,34 @@ part of 'ai_gateway.dart';
 class AiGatewayBudgetDefaultList implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `defaults` wire field.
   final List<AiGatewayBudgetDefault> defaults;
 
   const AiGatewayBudgetDefaultList({required this.defaults});
 
-  AiGatewayBudgetDefaultList Function({List<AiGatewayBudgetDefault> defaults}) get copyWith => _copyWith;
+  AiGatewayBudgetDefaultList Function({List<AiGatewayBudgetDefault> defaults})
+      get copyWith => _copyWith;
 
-  AiGatewayBudgetDefaultList _copyWith({Object? defaults = sdkOmittedValue}) => AiGatewayBudgetDefaultList(
-    defaults: identical(defaults, sdkOmittedValue) ? this.defaults : defaults as List<AiGatewayBudgetDefault>,
-  );
+  AiGatewayBudgetDefaultList _copyWith({Object? defaults = sdkOmittedValue}) =>
+      AiGatewayBudgetDefaultList(
+        defaults: identical(defaults, sdkOmittedValue)
+            ? this.defaults
+            : defaults as List<AiGatewayBudgetDefault>,
+      );
 
-  factory AiGatewayBudgetDefaultList.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(AiGatewayBudgetDefaultList(
-    defaults: ((json['defaults'] as List?)?.map((e) => AiGatewayBudgetDefault.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory AiGatewayBudgetDefaultList.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          AiGatewayBudgetDefaultList(
+            defaults: ((json['defaults'] as List?)
+                ?.map((e) =>
+                    AiGatewayBudgetDefault.fromJson(e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'defaults': defaults.map((item) => item.toJson()).toList(),
-  };
+        'defaults': defaults.map((item) => item.toJson()).toList(),
+      };
 }

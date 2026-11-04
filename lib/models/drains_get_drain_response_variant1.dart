@@ -29,121 +29,306 @@ class GetDrainResponseVariant1 implements SdkJsonModel {
   final SdkOptional<String> integrationWebsite;
   final SdkOptional<dynamic> projectAccess;
 
-  const GetDrainResponseVariant1({required this.createdAt, required this.delivery, this.disabledAt = const SdkOmitted(), this.disabledBy = const SdkOmitted(), this.disabledReason = const SdkOmitted(), this.firstErrorTimestamp = const SdkOmitted(), required this.id, required this.name, required this.ownerId, this.projectIds = const SdkOmitted(), this.sampling = const SdkOmitted(), required this.schemas, required this.source, this.status = const SdkOmitted(), this.teamId = const SdkOmitted(), required this.updatedAt, this.filterV2 = const SdkOmitted(), this.integrationConfigurationUri = const SdkOmitted(), this.integrationIcon = const SdkOmitted(), this.integrationWebsite = const SdkOmitted(), this.projectAccess = const SdkOmitted()});
+  const GetDrainResponseVariant1(
+      {required this.createdAt,
+      required this.delivery,
+      this.disabledAt = const SdkOmitted(),
+      this.disabledBy = const SdkOmitted(),
+      this.disabledReason = const SdkOmitted(),
+      this.firstErrorTimestamp = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      required this.ownerId,
+      this.projectIds = const SdkOmitted(),
+      this.sampling = const SdkOmitted(),
+      required this.schemas,
+      required this.source,
+      this.status = const SdkOmitted(),
+      this.teamId = const SdkOmitted(),
+      required this.updatedAt,
+      this.filterV2 = const SdkOmitted(),
+      this.integrationConfigurationUri = const SdkOmitted(),
+      this.integrationIcon = const SdkOmitted(),
+      this.integrationWebsite = const SdkOmitted(),
+      this.projectAccess = const SdkOmitted()});
 
-  GetDrainResponseVariant1 Function({double createdAt, dynamic delivery, SdkOptional<double> disabledAt, SdkOptional<String> disabledBy, SdkOptional<GetDrainResponseVariant1DisabledReason> disabledReason, SdkOptional<double> firstErrorTimestamp, String id, String name, String ownerId, SdkOptional<List<String>> projectIds, SdkOptional<List<GetDrainResponseVariant1SamplingItem>> sampling, GetDrainResponseVariant1Schemas schemas, dynamic source, SdkOptional<GetDrainResponseVariant1Status> status, SdkOptional<String?> teamId, double updatedAt, SdkOptional<GetDrainResponseVariant1FilterV2> filterV2, SdkOptional<String> integrationConfigurationUri, SdkOptional<String> integrationIcon, SdkOptional<String> integrationWebsite, SdkOptional<dynamic> projectAccess}) get copyWith => _copyWith;
+  GetDrainResponseVariant1 Function(
+      {double createdAt,
+      dynamic delivery,
+      SdkOptional<double> disabledAt,
+      SdkOptional<String> disabledBy,
+      SdkOptional<GetDrainResponseVariant1DisabledReason> disabledReason,
+      SdkOptional<double> firstErrorTimestamp,
+      String id,
+      String name,
+      String ownerId,
+      SdkOptional<List<String>> projectIds,
+      SdkOptional<List<GetDrainResponseVariant1SamplingItem>> sampling,
+      GetDrainResponseVariant1Schemas schemas,
+      dynamic source,
+      SdkOptional<GetDrainResponseVariant1Status> status,
+      SdkOptional<String?> teamId,
+      double updatedAt,
+      SdkOptional<GetDrainResponseVariant1FilterV2> filterV2,
+      SdkOptional<String> integrationConfigurationUri,
+      SdkOptional<String> integrationIcon,
+      SdkOptional<String> integrationWebsite,
+      SdkOptional<dynamic> projectAccess}) get copyWith => _copyWith;
 
-  GetDrainResponseVariant1 _copyWith({Object? createdAt = sdkOmittedValue, Object? delivery = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? disabledBy = sdkOmittedValue, Object? disabledReason = sdkOmittedValue, Object? firstErrorTimestamp = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? sampling = sdkOmittedValue, Object? schemas = sdkOmittedValue, Object? source = sdkOmittedValue, Object? status = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? filterV2 = sdkOmittedValue, Object? integrationConfigurationUri = sdkOmittedValue, Object? integrationIcon = sdkOmittedValue, Object? integrationWebsite = sdkOmittedValue, Object? projectAccess = sdkOmittedValue}) => GetDrainResponseVariant1(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    delivery: identical(delivery, sdkOmittedValue) ? this.delivery : delivery as dynamic,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    disabledBy: identical(disabledBy, sdkOmittedValue) ? this.disabledBy : disabledBy as SdkOptional<String>,
-    disabledReason: identical(disabledReason, sdkOmittedValue) ? this.disabledReason : disabledReason as SdkOptional<GetDrainResponseVariant1DisabledReason>,
-    firstErrorTimestamp: identical(firstErrorTimestamp, sdkOmittedValue) ? this.firstErrorTimestamp : firstErrorTimestamp as SdkOptional<double>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
-    sampling: identical(sampling, sdkOmittedValue) ? this.sampling : sampling as SdkOptional<List<GetDrainResponseVariant1SamplingItem>>,
-    schemas: identical(schemas, sdkOmittedValue) ? this.schemas : schemas as GetDrainResponseVariant1Schemas,
-    source: identical(source, sdkOmittedValue) ? this.source : source as dynamic,
-    status: identical(status, sdkOmittedValue) ? this.status : status as SdkOptional<GetDrainResponseVariant1Status>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String?>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    filterV2: identical(filterV2, sdkOmittedValue) ? this.filterV2 : filterV2 as SdkOptional<GetDrainResponseVariant1FilterV2>,
-    integrationConfigurationUri: identical(integrationConfigurationUri, sdkOmittedValue) ? this.integrationConfigurationUri : integrationConfigurationUri as SdkOptional<String>,
-    integrationIcon: identical(integrationIcon, sdkOmittedValue) ? this.integrationIcon : integrationIcon as SdkOptional<String>,
-    integrationWebsite: identical(integrationWebsite, sdkOmittedValue) ? this.integrationWebsite : integrationWebsite as SdkOptional<String>,
-    projectAccess: identical(projectAccess, sdkOmittedValue) ? this.projectAccess : projectAccess as SdkOptional<dynamic>,
-  );
+  GetDrainResponseVariant1 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? delivery = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? disabledBy = sdkOmittedValue,
+          Object? disabledReason = sdkOmittedValue,
+          Object? firstErrorTimestamp = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectIds = sdkOmittedValue,
+          Object? sampling = sdkOmittedValue,
+          Object? schemas = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? filterV2 = sdkOmittedValue,
+          Object? integrationConfigurationUri = sdkOmittedValue,
+          Object? integrationIcon = sdkOmittedValue,
+          Object? integrationWebsite = sdkOmittedValue,
+          Object? projectAccess = sdkOmittedValue}) =>
+      GetDrainResponseVariant1(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        delivery: identical(delivery, sdkOmittedValue)
+            ? this.delivery
+            : delivery as dynamic,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        disabledBy: identical(disabledBy, sdkOmittedValue)
+            ? this.disabledBy
+            : disabledBy as SdkOptional<String>,
+        disabledReason: identical(disabledReason, sdkOmittedValue)
+            ? this.disabledReason
+            : disabledReason
+                as SdkOptional<GetDrainResponseVariant1DisabledReason>,
+        firstErrorTimestamp: identical(firstErrorTimestamp, sdkOmittedValue)
+            ? this.firstErrorTimestamp
+            : firstErrorTimestamp as SdkOptional<double>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        projectIds: identical(projectIds, sdkOmittedValue)
+            ? this.projectIds
+            : projectIds as SdkOptional<List<String>>,
+        sampling: identical(sampling, sdkOmittedValue)
+            ? this.sampling
+            : sampling
+                as SdkOptional<List<GetDrainResponseVariant1SamplingItem>>,
+        schemas: identical(schemas, sdkOmittedValue)
+            ? this.schemas
+            : schemas as GetDrainResponseVariant1Schemas,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as dynamic,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as SdkOptional<GetDrainResponseVariant1Status>,
+        teamId: identical(teamId, sdkOmittedValue)
+            ? this.teamId
+            : teamId as SdkOptional<String?>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        filterV2: identical(filterV2, sdkOmittedValue)
+            ? this.filterV2
+            : filterV2 as SdkOptional<GetDrainResponseVariant1FilterV2>,
+        integrationConfigurationUri:
+            identical(integrationConfigurationUri, sdkOmittedValue)
+                ? this.integrationConfigurationUri
+                : integrationConfigurationUri as SdkOptional<String>,
+        integrationIcon: identical(integrationIcon, sdkOmittedValue)
+            ? this.integrationIcon
+            : integrationIcon as SdkOptional<String>,
+        integrationWebsite: identical(integrationWebsite, sdkOmittedValue)
+            ? this.integrationWebsite
+            : integrationWebsite as SdkOptional<String>,
+        projectAccess: identical(projectAccess, sdkOmittedValue)
+            ? this.projectAccess
+            : projectAccess as SdkOptional<dynamic>,
+      );
 
-  factory GetDrainResponseVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDrainResponseVariant1(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    delivery: (json['delivery'])!,
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledBy: json['disabledBy'] != null ? SdkPresent((json['disabledBy'] as String?)!) : const SdkOmitted(),
-    disabledReason: json['disabledReason'] != null ? SdkPresent((json['disabledReason'] != null ? GetDrainResponseVariant1DisabledReason.fromJson(json['disabledReason'] as String) : null)!) : const SdkOmitted(),
-    firstErrorTimestamp: json['firstErrorTimestamp'] != null ? SdkPresent(((json['firstErrorTimestamp'] as num?)?.toDouble())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    sampling: json['sampling'] != null ? SdkPresent(((json['sampling'] as List?)?.map((e) => GetDrainResponseVariant1SamplingItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    schemas: (json['schemas'] != null ? GetDrainResponseVariant1Schemas.fromJson(json['schemas'] as Map<String, dynamic>) : null)!,
-    source: (json['source'])!,
-    status: json['status'] != null ? SdkPresent((json['status'] != null ? GetDrainResponseVariant1Status.fromJson(json['status'] as String) : null)!) : const SdkOmitted(),
-    teamId: json.containsKey('teamId') ? SdkPresent(json['teamId'] as String?) : const SdkOmitted(),
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    filterV2: json['filterV2'] != null ? SdkPresent((json['filterV2'] != null ? GetDrainResponseVariant1FilterV2.fromJson(json['filterV2'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    integrationConfigurationUri: json['integrationConfigurationUri'] != null ? SdkPresent((json['integrationConfigurationUri'] as String?)!) : const SdkOmitted(),
-    integrationIcon: json['integrationIcon'] != null ? SdkPresent((json['integrationIcon'] as String?)!) : const SdkOmitted(),
-    integrationWebsite: json['integrationWebsite'] != null ? SdkPresent((json['integrationWebsite'] as String?)!) : const SdkOmitted(),
-    projectAccess: json['projectAccess'] != null ? SdkPresent((json['projectAccess'])!) : const SdkOmitted(),
-  ), json);
+  factory GetDrainResponseVariant1.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDrainResponseVariant1(
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            delivery: (json['delivery'])!,
+            disabledAt: json['disabledAt'] != null
+                ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            disabledBy: json['disabledBy'] != null
+                ? SdkPresent((json['disabledBy'] as String?)!)
+                : const SdkOmitted(),
+            disabledReason: json['disabledReason'] != null
+                ? SdkPresent((json['disabledReason'] != null
+                    ? GetDrainResponseVariant1DisabledReason.fromJson(
+                        json['disabledReason'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            firstErrorTimestamp: json['firstErrorTimestamp'] != null
+                ? SdkPresent(
+                    ((json['firstErrorTimestamp'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+            ownerId: (json['ownerId'] as String?)!,
+            projectIds: json['projectIds'] != null
+                ? SdkPresent(((json['projectIds'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            sampling: json['sampling'] != null
+                ? SdkPresent(((json['sampling'] as List?)
+                    ?.map((e) => GetDrainResponseVariant1SamplingItem.fromJson(
+                        e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+            schemas: (json['schemas'] != null
+                ? GetDrainResponseVariant1Schemas.fromJson(
+                    json['schemas'] as Map<String, dynamic>)
+                : null)!,
+            source: (json['source'])!,
+            status: json['status'] != null
+                ? SdkPresent((json['status'] != null
+                    ? GetDrainResponseVariant1Status.fromJson(
+                        json['status'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            teamId: json.containsKey('teamId')
+                ? SdkPresent(json['teamId'] as String?)
+                : const SdkOmitted(),
+            updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+            filterV2: json['filterV2'] != null
+                ? SdkPresent((json['filterV2'] != null
+                    ? GetDrainResponseVariant1FilterV2.fromJson(
+                        json['filterV2'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            integrationConfigurationUri: json['integrationConfigurationUri'] !=
+                    null
+                ? SdkPresent((json['integrationConfigurationUri'] as String?)!)
+                : const SdkOmitted(),
+            integrationIcon: json['integrationIcon'] != null
+                ? SdkPresent((json['integrationIcon'] as String?)!)
+                : const SdkOmitted(),
+            integrationWebsite: json['integrationWebsite'] != null
+                ? SdkPresent((json['integrationWebsite'] as String?)!)
+                : const SdkOmitted(),
+            projectAccess: json['projectAccess'] != null
+                ? SdkPresent((json['projectAccess'])!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'delivery': delivery,
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledBy) {
-      SdkPresent<String>(value: final value) => {'disabledBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledReason) {
-      SdkPresent<GetDrainResponseVariant1DisabledReason>(value: final value) => {'disabledReason': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (firstErrorTimestamp) {
-      SdkPresent<double>(value: final value) => {'firstErrorTimestamp': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    'ownerId': ownerId,
-    ...switch (projectIds) {
-      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sampling) {
-      SdkPresent<List<GetDrainResponseVariant1SamplingItem>>(value: final value) => {'sampling': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'schemas': schemas.toJson(),
-    'source': source,
-    ...switch (status) {
-      SdkPresent<GetDrainResponseVariant1Status>(value: final value) => {'status': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamId) {
-      SdkPresent<String?>(value: final value) => {'teamId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-    ...switch (filterV2) {
-      SdkPresent<GetDrainResponseVariant1FilterV2>(value: final value) => {'filterV2': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (integrationConfigurationUri) {
-      SdkPresent<String>(value: final value) => {'integrationConfigurationUri': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (integrationIcon) {
-      SdkPresent<String>(value: final value) => {'integrationIcon': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (integrationWebsite) {
-      SdkPresent<String>(value: final value) => {'integrationWebsite': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectAccess) {
-      SdkPresent<dynamic>(value: final value) => {'projectAccess': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        'delivery': delivery,
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledBy) {
+          SdkPresent<String>(value: final value) => {
+              'disabledBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledReason) {
+          SdkPresent<GetDrainResponseVariant1DisabledReason>(
+            value: final value
+          ) =>
+            {
+              'disabledReason': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (firstErrorTimestamp) {
+          SdkPresent<double>(value: final value) => {
+              'firstErrorTimestamp': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        'ownerId': ownerId,
+        ...switch (projectIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'projectIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sampling) {
+          SdkPresent<List<GetDrainResponseVariant1SamplingItem>>(
+            value: final value
+          ) =>
+            {
+              'sampling': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'schemas': schemas.toJson(),
+        'source': source,
+        ...switch (status) {
+          SdkPresent<GetDrainResponseVariant1Status>(value: final value) => {
+              'status': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamId) {
+          SdkPresent<String?>(value: final value) => {
+              'teamId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+        ...switch (filterV2) {
+          SdkPresent<GetDrainResponseVariant1FilterV2>(value: final value) => {
+              'filterV2': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (integrationConfigurationUri) {
+          SdkPresent<String>(value: final value) => {
+              'integrationConfigurationUri': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (integrationIcon) {
+          SdkPresent<String>(value: final value) => {
+              'integrationIcon': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (integrationWebsite) {
+          SdkPresent<String>(value: final value) => {
+              'integrationWebsite': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectAccess) {
+          SdkPresent<dynamic>(value: final value) => {
+              'projectAccess': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class GetDrainResponse {
@@ -152,11 +337,27 @@ sealed class GetDrainResponse {
   const GetDrainResponse();
   factory GetDrainResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetDrainResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainResponseGetDrainResponseVariant0(value); } } catch (_) {}
-      try { final value = GetDrainResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainResponseGetDrainResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = GetDrainResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetDrainResponseGetDrainResponseVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetDrainResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetDrainResponseGetDrainResponseVariant1(value);
+        }
+      } catch (_) {}
     }
-    try { return GetDrainResponseGetDrainResponseVariant0(GetDrainResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetDrainResponseGetDrainResponseVariant1(GetDrainResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return GetDrainResponseGetDrainResponseVariant0(
+          GetDrainResponseVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetDrainResponseGetDrainResponseVariant1(
+          GetDrainResponseVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for GetDrainResponse");
   }
   Object? toJson();
@@ -165,11 +366,13 @@ sealed class GetDrainResponse {
 final class GetDrainResponseGetDrainResponseVariant0 extends GetDrainResponse {
   final GetDrainResponseVariant0 value;
   const GetDrainResponseGetDrainResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class GetDrainResponseGetDrainResponseVariant1 extends GetDrainResponse {
   final GetDrainResponseVariant1 value;
   const GetDrainResponseGetDrainResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

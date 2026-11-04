@@ -7,23 +7,27 @@ part of 'misc.dart';
 final class RegistrantFieldRegistrantFieldVariant0 extends RegistrantField {
   final RegistrantFieldVariant0 value;
   const RegistrantFieldRegistrantFieldVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class RegistrantFieldRegistrantFieldVariant1 extends RegistrantField {
   final RegistrantFieldVariant1 value;
   const RegistrantFieldRegistrantFieldVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class RegistrantFieldRegistrantFieldVariant2 extends RegistrantField {
   final RegistrantFieldVariant2 value;
   const RegistrantFieldRegistrantFieldVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class RegistrantFieldRegistrantFieldVariant3 extends RegistrantField {
   final RegistrantFieldVariant3 value;
   const RegistrantFieldRegistrantFieldVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

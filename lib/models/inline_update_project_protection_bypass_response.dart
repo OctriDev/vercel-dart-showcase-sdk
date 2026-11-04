@@ -9,215 +9,380 @@ class UpdateProjectProtectionBypassResponse implements SdkJsonModel {
   static const String constructionSurface = 'named';
   final SdkOptional<Map<String, dynamic>> protectionBypass;
 
-  const UpdateProjectProtectionBypassResponse({this.protectionBypass = const SdkOmitted()});
+  const UpdateProjectProtectionBypassResponse(
+      {this.protectionBypass = const SdkOmitted()});
 
-  UpdateProjectProtectionBypassResponse Function({SdkOptional<Map<String, dynamic>> protectionBypass}) get copyWith => _copyWith;
+  UpdateProjectProtectionBypassResponse Function(
+          {SdkOptional<Map<String, dynamic>> protectionBypass})
+      get copyWith => _copyWith;
 
-  UpdateProjectProtectionBypassResponse _copyWith({Object? protectionBypass = sdkOmittedValue}) => UpdateProjectProtectionBypassResponse(
-    protectionBypass: identical(protectionBypass, sdkOmittedValue) ? this.protectionBypass : protectionBypass as SdkOptional<Map<String, dynamic>>,
-  );
+  UpdateProjectProtectionBypassResponse _copyWith(
+          {Object? protectionBypass = sdkOmittedValue}) =>
+      UpdateProjectProtectionBypassResponse(
+        protectionBypass: identical(protectionBypass, sdkOmittedValue)
+            ? this.protectionBypass
+            : protectionBypass as SdkOptional<Map<String, dynamic>>,
+      );
 
-  factory UpdateProjectProtectionBypassResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateProjectProtectionBypassResponse(
-    protectionBypass: json['protectionBypass'] != null ? SdkPresent((json['protectionBypass'] == null ? null : json['protectionBypass'] as Map<String, dynamic>)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateProjectProtectionBypassResponse.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateProjectProtectionBypassResponse(
+            protectionBypass: json['protectionBypass'] != null
+                ? SdkPresent((json['protectionBypass'] == null
+                    ? null
+                    : json['protectionBypass'] as Map<String, dynamic>)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (protectionBypass) {
-      SdkPresent<Map<String, dynamic>>(value: final value) => {'protectionBypass': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (protectionBypass) {
+          SdkPresent<Map<String, dynamic>>(value: final value) => {
+              'protectionBypass': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateProjectsRollbackDescriptionRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The reason for the rollback
   final SdkOptional<String> description;
 
-  const UpdateProjectsRollbackDescriptionRequestBody({this.description = const SdkOmitted()});
+  const UpdateProjectsRollbackDescriptionRequestBody(
+      {this.description = const SdkOmitted()});
 
-  UpdateProjectsRollbackDescriptionRequestBody Function({SdkOptional<String> description}) get copyWith => _copyWith;
+  UpdateProjectsRollbackDescriptionRequestBody Function(
+      {SdkOptional<String> description}) get copyWith => _copyWith;
 
-  UpdateProjectsRollbackDescriptionRequestBody _copyWith({Object? description = sdkOmittedValue}) => UpdateProjectsRollbackDescriptionRequestBody(
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-  );
+  UpdateProjectsRollbackDescriptionRequestBody _copyWith(
+          {Object? description = sdkOmittedValue}) =>
+      UpdateProjectsRollbackDescriptionRequestBody(
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+      );
 
-  factory UpdateProjectsRollbackDescriptionRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateProjectsRollbackDescriptionRequestBody(
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateProjectsRollbackDescriptionRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateProjectsRollbackDescriptionRequestBody(
+            description: json['description'] != null
+                ? SdkPresent((json['description'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateMicrofrontendsRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The unique group identifier to add this microfrontend to
   final SdkOptional<String> microfrontendsGroupId;
+
   /// Enable or disable microfrontends for the project
   final SdkOptional<bool> enabled;
+
   /// Whether the application is the default application for the microfrontends group
   final SdkOptional<bool> isDefaultApp;
+
   /// The default route used for screenshots and preview links for the project
   final SdkOptional<String> defaultRoute;
+
   /// Whether observability data should be routed to this project or a root project. Can only be set for child applications.
   final SdkOptional<bool> routeObservabilityToThisProject;
+
   /// Whether domains in this project should route as a microfrontend. Can only be set for child applications.
   final SdkOptional<bool> doNotRouteWithMicrofrontendsRouting;
 
-  const UpdateMicrofrontendsRequestBody({this.microfrontendsGroupId = const SdkOmitted(), this.enabled = const SdkOmitted(), this.isDefaultApp = const SdkOmitted(), this.defaultRoute = const SdkOmitted(), this.routeObservabilityToThisProject = const SdkOmitted(), this.doNotRouteWithMicrofrontendsRouting = const SdkOmitted()});
+  const UpdateMicrofrontendsRequestBody(
+      {this.microfrontendsGroupId = const SdkOmitted(),
+      this.enabled = const SdkOmitted(),
+      this.isDefaultApp = const SdkOmitted(),
+      this.defaultRoute = const SdkOmitted(),
+      this.routeObservabilityToThisProject = const SdkOmitted(),
+      this.doNotRouteWithMicrofrontendsRouting = const SdkOmitted()});
 
-  UpdateMicrofrontendsRequestBody Function({SdkOptional<String> microfrontendsGroupId, SdkOptional<bool> enabled, SdkOptional<bool> isDefaultApp, SdkOptional<String> defaultRoute, SdkOptional<bool> routeObservabilityToThisProject, SdkOptional<bool> doNotRouteWithMicrofrontendsRouting}) get copyWith => _copyWith;
+  UpdateMicrofrontendsRequestBody Function(
+          {SdkOptional<String> microfrontendsGroupId,
+          SdkOptional<bool> enabled,
+          SdkOptional<bool> isDefaultApp,
+          SdkOptional<String> defaultRoute,
+          SdkOptional<bool> routeObservabilityToThisProject,
+          SdkOptional<bool> doNotRouteWithMicrofrontendsRouting})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsRequestBody _copyWith({Object? microfrontendsGroupId = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue, Object? routeObservabilityToThisProject = sdkOmittedValue, Object? doNotRouteWithMicrofrontendsRouting = sdkOmittedValue}) => UpdateMicrofrontendsRequestBody(
-    microfrontendsGroupId: identical(microfrontendsGroupId, sdkOmittedValue) ? this.microfrontendsGroupId : microfrontendsGroupId as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<bool>,
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as SdkOptional<bool>,
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    routeObservabilityToThisProject: identical(routeObservabilityToThisProject, sdkOmittedValue) ? this.routeObservabilityToThisProject : routeObservabilityToThisProject as SdkOptional<bool>,
-    doNotRouteWithMicrofrontendsRouting: identical(doNotRouteWithMicrofrontendsRouting, sdkOmittedValue) ? this.doNotRouteWithMicrofrontendsRouting : doNotRouteWithMicrofrontendsRouting as SdkOptional<bool>,
-  );
+  UpdateMicrofrontendsRequestBody _copyWith(
+          {Object? microfrontendsGroupId = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? isDefaultApp = sdkOmittedValue,
+          Object? defaultRoute = sdkOmittedValue,
+          Object? routeObservabilityToThisProject = sdkOmittedValue,
+          Object? doNotRouteWithMicrofrontendsRouting = sdkOmittedValue}) =>
+      UpdateMicrofrontendsRequestBody(
+        microfrontendsGroupId: identical(microfrontendsGroupId, sdkOmittedValue)
+            ? this.microfrontendsGroupId
+            : microfrontendsGroupId as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<bool>,
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp as SdkOptional<bool>,
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        routeObservabilityToThisProject:
+            identical(routeObservabilityToThisProject, sdkOmittedValue)
+                ? this.routeObservabilityToThisProject
+                : routeObservabilityToThisProject as SdkOptional<bool>,
+        doNotRouteWithMicrofrontendsRouting:
+            identical(doNotRouteWithMicrofrontendsRouting, sdkOmittedValue)
+                ? this.doNotRouteWithMicrofrontendsRouting
+                : doNotRouteWithMicrofrontendsRouting as SdkOptional<bool>,
+      );
 
-  factory UpdateMicrofrontendsRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateMicrofrontendsRequestBody(
-    microfrontendsGroupId: json['microfrontendsGroupId'] != null ? SdkPresent((json['microfrontendsGroupId'] as String?)!) : const SdkOmitted(),
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] as bool?)!) : const SdkOmitted(),
-    isDefaultApp: json['isDefaultApp'] != null ? SdkPresent((json['isDefaultApp'] as bool?)!) : const SdkOmitted(),
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    routeObservabilityToThisProject: json['routeObservabilityToThisProject'] != null ? SdkPresent((json['routeObservabilityToThisProject'] as bool?)!) : const SdkOmitted(),
-    doNotRouteWithMicrofrontendsRouting: json['doNotRouteWithMicrofrontendsRouting'] != null ? SdkPresent((json['doNotRouteWithMicrofrontendsRouting'] as bool?)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateMicrofrontendsRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateMicrofrontendsRequestBody(
+            microfrontendsGroupId: json['microfrontendsGroupId'] != null
+                ? SdkPresent((json['microfrontendsGroupId'] as String?)!)
+                : const SdkOmitted(),
+            enabled: json['enabled'] != null
+                ? SdkPresent((json['enabled'] as bool?)!)
+                : const SdkOmitted(),
+            isDefaultApp: json['isDefaultApp'] != null
+                ? SdkPresent((json['isDefaultApp'] as bool?)!)
+                : const SdkOmitted(),
+            defaultRoute: json['defaultRoute'] != null
+                ? SdkPresent((json['defaultRoute'] as String?)!)
+                : const SdkOmitted(),
+            routeObservabilityToThisProject:
+                json['routeObservabilityToThisProject'] != null
+                    ? SdkPresent(
+                        (json['routeObservabilityToThisProject'] as bool?)!)
+                    : const SdkOmitted(),
+            doNotRouteWithMicrofrontendsRouting:
+                json['doNotRouteWithMicrofrontendsRouting'] != null
+                    ? SdkPresent(
+                        (json['doNotRouteWithMicrofrontendsRouting'] as bool?)!)
+                    : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (microfrontendsGroupId) {
-      SdkPresent<String>(value: final value) => {'microfrontendsGroupId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabled) {
-      SdkPresent<bool>(value: final value) => {'enabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isDefaultApp) {
-      SdkPresent<bool>(value: final value) => {'isDefaultApp': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (routeObservabilityToThisProject) {
-      SdkPresent<bool>(value: final value) => {'routeObservabilityToThisProject': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (doNotRouteWithMicrofrontendsRouting) {
-      SdkPresent<bool>(value: final value) => {'doNotRouteWithMicrofrontendsRouting': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (microfrontendsGroupId) {
+          SdkPresent<String>(value: final value) => {
+              'microfrontendsGroupId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabled) {
+          SdkPresent<bool>(value: final value) => {
+              'enabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isDefaultApp) {
+          SdkPresent<bool>(value: final value) => {
+              'isDefaultApp': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (routeObservabilityToThisProject) {
+          SdkPresent<bool>(value: final value) => {
+              'routeObservabilityToThisProject': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (doNotRouteWithMicrofrontendsRouting) {
+          SdkPresent<bool>(value: final value) => {
+              'doNotRouteWithMicrofrontendsRouting': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class UpdateMicrofrontendsResponseAliasItemDeploymentAliasError implements SdkJsonModel {
+class UpdateMicrofrontendsResponseAliasItemDeploymentAliasError
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String code;
   final String message;
 
-  const UpdateMicrofrontendsResponseAliasItemDeploymentAliasError({required this.code, required this.message});
+  const UpdateMicrofrontendsResponseAliasItemDeploymentAliasError(
+      {required this.code, required this.message});
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentAliasError Function({String code, String message}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseAliasItemDeploymentAliasError Function(
+      {String code, String message}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentAliasError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => UpdateMicrofrontendsResponseAliasItemDeploymentAliasError(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  UpdateMicrofrontendsResponseAliasItemDeploymentAliasError _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseAliasItemDeploymentAliasError(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentAliasError.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateMicrofrontendsResponseAliasItemDeploymentAliasError(
-    code: (json['code'] as String?)!,
-    message: (json['message'] as String?)!,
-  ), json);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentAliasError.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateMicrofrontendsResponseAliasItemDeploymentAliasError(
+            code: (json['code'] as String?)!,
+            message: (json['message'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'code': code,
-    'message': message,
-  };
+        'code': code,
+        'message': message,
+      };
 }
 
-class UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher implements SdkJsonModel {
+class UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The pattern to match against branch names
   final String pattern;
+
   /// The type of matching to perform
   final UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcherType type_;
 
-  const UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher({required this.pattern, required this.type_});
+  const UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher(
+      {required this.pattern, required this.type_});
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher Function({String pattern, UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcherType type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher Function(
+      {String pattern,
+      UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcherType
+          type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher(
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcherType,
-  );
+  UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher _copyWith(
+          {Object? pattern = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher(
+        pattern: identical(pattern, sdkOmittedValue)
+            ? this.pattern
+            : pattern as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcherType,
+      );
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher(
-    pattern: (json['pattern'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcherType.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcher(
+            pattern: (json['pattern'] as String?)!,
+            type_: (json['type'] != null
+                ? UpdateMicrofrontendsResponseAliasItemDeploymentBranchMatcherType
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'pattern': pattern,
-    'type': type_.toJson(),
-  };
+        'pattern': pattern,
+        'type': type_.toJson(),
+      };
 }
 
-class UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem implements SdkJsonModel {
+class UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> dest;
   final SdkOptional<String> src;
   final String use;
 
-  const UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem({this.dest = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
+  const UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem(
+      {this.dest = const SdkOmitted(),
+      this.src = const SdkOmitted(),
+      required this.use});
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem Function({SdkOptional<String> dest, SdkOptional<String> src, String use}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem Function(
+      {SdkOptional<String> dest,
+      SdkOptional<String> src,
+      String use}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem _copyWith({Object? dest = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem(
-    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-    use: identical(use, sdkOmittedValue) ? this.use : use as String,
-  );
+  UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem _copyWith(
+          {Object? dest = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? use = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem(
+        dest: identical(dest, sdkOmittedValue)
+            ? this.dest
+            : dest as SdkOptional<String>,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+        use: identical(use, sdkOmittedValue) ? this.use : use as String,
+      );
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem(
-    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-    use: (json['use'] as String?)!,
-  ), json);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateMicrofrontendsResponseAliasItemDeploymentBuildsItem(
+            dest: json['dest'] != null
+                ? SdkPresent((json['dest'] as String?)!)
+                : const SdkOmitted(),
+            src: json['src'] != null
+                ? SdkPresent((json['src'] as String?)!)
+                : const SdkOmitted(),
+            use: (json['use'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (dest) {
-      SdkPresent<String>(value: final value) => {'dest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    'use': use,
-  };
+        ...switch (dest) {
+          SdkPresent<String>(value: final value) => {
+              'dest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'use': use,
+      };
 }
 
-class UpdateMicrofrontendsResponseAliasItemDeploymentCreator implements SdkJsonModel {
+class UpdateMicrofrontendsResponseAliasItemDeploymentCreator
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String email;
@@ -226,38 +391,72 @@ class UpdateMicrofrontendsResponseAliasItemDeploymentCreator implements SdkJsonM
   final String uid;
   final String username;
 
-  const UpdateMicrofrontendsResponseAliasItemDeploymentCreator({required this.email, this.githubLogin = const SdkOmitted(), this.gitlabLogin = const SdkOmitted(), required this.uid, required this.username});
+  const UpdateMicrofrontendsResponseAliasItemDeploymentCreator(
+      {required this.email,
+      this.githubLogin = const SdkOmitted(),
+      this.gitlabLogin = const SdkOmitted(),
+      required this.uid,
+      required this.username});
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentCreator Function({String email, SdkOptional<String> githubLogin, SdkOptional<String> gitlabLogin, String uid, String username}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseAliasItemDeploymentCreator Function(
+      {String email,
+      SdkOptional<String> githubLogin,
+      SdkOptional<String> gitlabLogin,
+      String uid,
+      String username}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseAliasItemDeploymentCreator _copyWith({Object? email = sdkOmittedValue, Object? githubLogin = sdkOmittedValue, Object? gitlabLogin = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => UpdateMicrofrontendsResponseAliasItemDeploymentCreator(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    githubLogin: identical(githubLogin, sdkOmittedValue) ? this.githubLogin : githubLogin as SdkOptional<String>,
-    gitlabLogin: identical(gitlabLogin, sdkOmittedValue) ? this.gitlabLogin : gitlabLogin as SdkOptional<String>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  UpdateMicrofrontendsResponseAliasItemDeploymentCreator _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? githubLogin = sdkOmittedValue,
+          Object? gitlabLogin = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseAliasItemDeploymentCreator(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        githubLogin: identical(githubLogin, sdkOmittedValue)
+            ? this.githubLogin
+            : githubLogin as SdkOptional<String>,
+        gitlabLogin: identical(gitlabLogin, sdkOmittedValue)
+            ? this.gitlabLogin
+            : gitlabLogin as SdkOptional<String>,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory UpdateMicrofrontendsResponseAliasItemDeploymentCreator.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateMicrofrontendsResponseAliasItemDeploymentCreator(
-    email: (json['email'] as String?)!,
-    githubLogin: json['githubLogin'] != null ? SdkPresent((json['githubLogin'] as String?)!) : const SdkOmitted(),
-    gitlabLogin: json['gitlabLogin'] != null ? SdkPresent((json['gitlabLogin'] as String?)!) : const SdkOmitted(),
-    uid: (json['uid'] as String?)!,
-    username: (json['username'] as String?)!,
-  ), json);
+  factory UpdateMicrofrontendsResponseAliasItemDeploymentCreator.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateMicrofrontendsResponseAliasItemDeploymentCreator(
+            email: (json['email'] as String?)!,
+            githubLogin: json['githubLogin'] != null
+                ? SdkPresent((json['githubLogin'] as String?)!)
+                : const SdkOmitted(),
+            gitlabLogin: json['gitlabLogin'] != null
+                ? SdkPresent((json['gitlabLogin'] as String?)!)
+                : const SdkOmitted(),
+            uid: (json['uid'] as String?)!,
+            username: (json['username'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'email': email,
-    ...switch (githubLogin) {
-      SdkPresent<String>(value: final value) => {'githubLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitlabLogin) {
-      SdkPresent<String>(value: final value) => {'gitlabLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    'uid': uid,
-    'username': username,
-  };
+        'email': email,
+        ...switch (githubLogin) {
+          SdkPresent<String>(value: final value) => {
+              'githubLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitlabLogin) {
+          SdkPresent<String>(value: final value) => {
+              'gitlabLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'uid': uid,
+        'username': username,
+      };
 }

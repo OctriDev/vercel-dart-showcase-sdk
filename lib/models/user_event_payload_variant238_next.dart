@@ -8,275 +8,649 @@ part of 'user.dart';
 class UserEventPayloadVariant238Next implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `allowUnsafeScriptSrcKeywords` wire field.
-  final UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords allowUnsafeScriptSrcKeywords;
+  final UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords
+      allowUnsafeScriptSrcKeywords;
+
   /// Optional `string` value serialized in the `computedConnectSrc` wire field.
   final SdkOptional<String> computedConnectSrc;
+
   /// Optional `string` value serialized in the `computedConnectSrcPreview` wire field.
   final SdkOptional<String> computedConnectSrcPreview;
+
   /// Optional `string` value serialized in the `computedScriptSrc` wire field.
   final SdkOptional<String> computedScriptSrc;
+
   /// Optional `string` value serialized in the `computedScriptSrcPreview` wire field.
   final SdkOptional<String> computedScriptSrcPreview;
+
   /// Optional enumerated value serialized in the `connectSrcNotificationsEnabled` wire field.
-  final SdkOptional<UserEventPayloadVariant238NextConnectSrcNotificationsEnabled> connectSrcNotificationsEnabled;
+  final SdkOptional<
+          UserEventPayloadVariant238NextConnectSrcNotificationsEnabled>
+      connectSrcNotificationsEnabled;
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final UserEventPayloadVariant238NextEnabled enabled;
+
   /// Optional enumerated value serialized in the `enforcementScope` wire field.
-  final SdkOptional<UserEventPayloadVariant238NextEnforcementScope> enforcementScope;
+  final SdkOptional<UserEventPayloadVariant238NextEnforcementScope>
+      enforcementScope;
+
   /// Required `number` value serialized in the `enforcePercentage` wire field.
   final double enforcePercentage;
+
   /// Required `string` value serialized in the `mode` wire field.
   final String mode;
+
   /// Required enumerated value serialized in the `newResourceBlockingPolicy` wire field.
-  final UserEventPayloadVariant238NextNewResourceBlockingPolicy newResourceBlockingPolicy;
+  final UserEventPayloadVariant238NextNewResourceBlockingPolicy
+      newResourceBlockingPolicy;
+
   /// Optional enumerated value serialized in the `omitScriptNonce` wire field.
-  final SdkOptional<UserEventPayloadVariant238NextOmitScriptNonce> omitScriptNonce;
+  final SdkOptional<UserEventPayloadVariant238NextOmitScriptNonce>
+      omitScriptNonce;
 
-  const UserEventPayloadVariant238Next({required this.allowUnsafeScriptSrcKeywords, this.computedConnectSrc = const SdkOmitted(), this.computedConnectSrcPreview = const SdkOmitted(), this.computedScriptSrc = const SdkOmitted(), this.computedScriptSrcPreview = const SdkOmitted(), this.connectSrcNotificationsEnabled = const SdkOmitted(), required this.enabled, this.enforcementScope = const SdkOmitted(), required this.enforcePercentage, required this.mode, required this.newResourceBlockingPolicy, this.omitScriptNonce = const SdkOmitted()});
+  const UserEventPayloadVariant238Next(
+      {required this.allowUnsafeScriptSrcKeywords,
+      this.computedConnectSrc = const SdkOmitted(),
+      this.computedConnectSrcPreview = const SdkOmitted(),
+      this.computedScriptSrc = const SdkOmitted(),
+      this.computedScriptSrcPreview = const SdkOmitted(),
+      this.connectSrcNotificationsEnabled = const SdkOmitted(),
+      required this.enabled,
+      this.enforcementScope = const SdkOmitted(),
+      required this.enforcePercentage,
+      required this.mode,
+      required this.newResourceBlockingPolicy,
+      this.omitScriptNonce = const SdkOmitted()});
 
-  UserEventPayloadVariant238Next Function({UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords allowUnsafeScriptSrcKeywords, SdkOptional<String> computedConnectSrc, SdkOptional<String> computedConnectSrcPreview, SdkOptional<String> computedScriptSrc, SdkOptional<String> computedScriptSrcPreview, SdkOptional<UserEventPayloadVariant238NextConnectSrcNotificationsEnabled> connectSrcNotificationsEnabled, UserEventPayloadVariant238NextEnabled enabled, SdkOptional<UserEventPayloadVariant238NextEnforcementScope> enforcementScope, double enforcePercentage, String mode, UserEventPayloadVariant238NextNewResourceBlockingPolicy newResourceBlockingPolicy, SdkOptional<UserEventPayloadVariant238NextOmitScriptNonce> omitScriptNonce}) get copyWith => _copyWith;
+  UserEventPayloadVariant238Next Function(
+      {UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords
+          allowUnsafeScriptSrcKeywords,
+      SdkOptional<String> computedConnectSrc,
+      SdkOptional<String> computedConnectSrcPreview,
+      SdkOptional<String> computedScriptSrc,
+      SdkOptional<String> computedScriptSrcPreview,
+      SdkOptional<UserEventPayloadVariant238NextConnectSrcNotificationsEnabled>
+          connectSrcNotificationsEnabled,
+      UserEventPayloadVariant238NextEnabled enabled,
+      SdkOptional<UserEventPayloadVariant238NextEnforcementScope>
+          enforcementScope,
+      double enforcePercentage,
+      String mode,
+      UserEventPayloadVariant238NextNewResourceBlockingPolicy
+          newResourceBlockingPolicy,
+      SdkOptional<UserEventPayloadVariant238NextOmitScriptNonce>
+          omitScriptNonce}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant238Next _copyWith({Object? allowUnsafeScriptSrcKeywords = sdkOmittedValue, Object? computedConnectSrc = sdkOmittedValue, Object? computedConnectSrcPreview = sdkOmittedValue, Object? computedScriptSrc = sdkOmittedValue, Object? computedScriptSrcPreview = sdkOmittedValue, Object? connectSrcNotificationsEnabled = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? enforcementScope = sdkOmittedValue, Object? enforcePercentage = sdkOmittedValue, Object? mode = sdkOmittedValue, Object? newResourceBlockingPolicy = sdkOmittedValue, Object? omitScriptNonce = sdkOmittedValue}) => UserEventPayloadVariant238Next(
-    allowUnsafeScriptSrcKeywords: identical(allowUnsafeScriptSrcKeywords, sdkOmittedValue) ? this.allowUnsafeScriptSrcKeywords : allowUnsafeScriptSrcKeywords as UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords,
-    computedConnectSrc: identical(computedConnectSrc, sdkOmittedValue) ? this.computedConnectSrc : computedConnectSrc as SdkOptional<String>,
-    computedConnectSrcPreview: identical(computedConnectSrcPreview, sdkOmittedValue) ? this.computedConnectSrcPreview : computedConnectSrcPreview as SdkOptional<String>,
-    computedScriptSrc: identical(computedScriptSrc, sdkOmittedValue) ? this.computedScriptSrc : computedScriptSrc as SdkOptional<String>,
-    computedScriptSrcPreview: identical(computedScriptSrcPreview, sdkOmittedValue) ? this.computedScriptSrcPreview : computedScriptSrcPreview as SdkOptional<String>,
-    connectSrcNotificationsEnabled: identical(connectSrcNotificationsEnabled, sdkOmittedValue) ? this.connectSrcNotificationsEnabled : connectSrcNotificationsEnabled as SdkOptional<UserEventPayloadVariant238NextConnectSrcNotificationsEnabled>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UserEventPayloadVariant238NextEnabled,
-    enforcementScope: identical(enforcementScope, sdkOmittedValue) ? this.enforcementScope : enforcementScope as SdkOptional<UserEventPayloadVariant238NextEnforcementScope>,
-    enforcePercentage: identical(enforcePercentage, sdkOmittedValue) ? this.enforcePercentage : enforcePercentage as double,
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as String,
-    newResourceBlockingPolicy: identical(newResourceBlockingPolicy, sdkOmittedValue) ? this.newResourceBlockingPolicy : newResourceBlockingPolicy as UserEventPayloadVariant238NextNewResourceBlockingPolicy,
-    omitScriptNonce: identical(omitScriptNonce, sdkOmittedValue) ? this.omitScriptNonce : omitScriptNonce as SdkOptional<UserEventPayloadVariant238NextOmitScriptNonce>,
-  );
+  UserEventPayloadVariant238Next _copyWith(
+          {Object? allowUnsafeScriptSrcKeywords = sdkOmittedValue,
+          Object? computedConnectSrc = sdkOmittedValue,
+          Object? computedConnectSrcPreview = sdkOmittedValue,
+          Object? computedScriptSrc = sdkOmittedValue,
+          Object? computedScriptSrcPreview = sdkOmittedValue,
+          Object? connectSrcNotificationsEnabled = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? enforcementScope = sdkOmittedValue,
+          Object? enforcePercentage = sdkOmittedValue,
+          Object? mode = sdkOmittedValue,
+          Object? newResourceBlockingPolicy = sdkOmittedValue,
+          Object? omitScriptNonce = sdkOmittedValue}) =>
+      UserEventPayloadVariant238Next(
+        allowUnsafeScriptSrcKeywords: identical(
+                allowUnsafeScriptSrcKeywords, sdkOmittedValue)
+            ? this.allowUnsafeScriptSrcKeywords
+            : allowUnsafeScriptSrcKeywords
+                as UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords,
+        computedConnectSrc: identical(computedConnectSrc, sdkOmittedValue)
+            ? this.computedConnectSrc
+            : computedConnectSrc as SdkOptional<String>,
+        computedConnectSrcPreview:
+            identical(computedConnectSrcPreview, sdkOmittedValue)
+                ? this.computedConnectSrcPreview
+                : computedConnectSrcPreview as SdkOptional<String>,
+        computedScriptSrc: identical(computedScriptSrc, sdkOmittedValue)
+            ? this.computedScriptSrc
+            : computedScriptSrc as SdkOptional<String>,
+        computedScriptSrcPreview:
+            identical(computedScriptSrcPreview, sdkOmittedValue)
+                ? this.computedScriptSrcPreview
+                : computedScriptSrcPreview as SdkOptional<String>,
+        connectSrcNotificationsEnabled: identical(
+                connectSrcNotificationsEnabled, sdkOmittedValue)
+            ? this.connectSrcNotificationsEnabled
+            : connectSrcNotificationsEnabled as SdkOptional<
+                UserEventPayloadVariant238NextConnectSrcNotificationsEnabled>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as UserEventPayloadVariant238NextEnabled,
+        enforcementScope: identical(enforcementScope, sdkOmittedValue)
+            ? this.enforcementScope
+            : enforcementScope
+                as SdkOptional<UserEventPayloadVariant238NextEnforcementScope>,
+        enforcePercentage: identical(enforcePercentage, sdkOmittedValue)
+            ? this.enforcePercentage
+            : enforcePercentage as double,
+        mode: identical(mode, sdkOmittedValue) ? this.mode : mode as String,
+        newResourceBlockingPolicy:
+            identical(newResourceBlockingPolicy, sdkOmittedValue)
+                ? this.newResourceBlockingPolicy
+                : newResourceBlockingPolicy
+                    as UserEventPayloadVariant238NextNewResourceBlockingPolicy,
+        omitScriptNonce: identical(omitScriptNonce, sdkOmittedValue)
+            ? this.omitScriptNonce
+            : omitScriptNonce
+                as SdkOptional<UserEventPayloadVariant238NextOmitScriptNonce>,
+      );
 
-  factory UserEventPayloadVariant238Next.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant238Next(
-    allowUnsafeScriptSrcKeywords: (json['allowUnsafeScriptSrcKeywords'] != null ? UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords.fromJson(json['allowUnsafeScriptSrcKeywords'] as bool) : null)!,
-    computedConnectSrc: json['computedConnectSrc'] != null ? SdkPresent((json['computedConnectSrc'] as String?)!) : const SdkOmitted(),
-    computedConnectSrcPreview: json['computedConnectSrcPreview'] != null ? SdkPresent((json['computedConnectSrcPreview'] as String?)!) : const SdkOmitted(),
-    computedScriptSrc: json['computedScriptSrc'] != null ? SdkPresent((json['computedScriptSrc'] as String?)!) : const SdkOmitted(),
-    computedScriptSrcPreview: json['computedScriptSrcPreview'] != null ? SdkPresent((json['computedScriptSrcPreview'] as String?)!) : const SdkOmitted(),
-    connectSrcNotificationsEnabled: json['connectSrcNotificationsEnabled'] != null ? SdkPresent((json['connectSrcNotificationsEnabled'] != null ? UserEventPayloadVariant238NextConnectSrcNotificationsEnabled.fromJson(json['connectSrcNotificationsEnabled'] as bool) : null)!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? UserEventPayloadVariant238NextEnabled.fromJson(json['enabled'] as bool) : null)!,
-    enforcementScope: json['enforcementScope'] != null ? SdkPresent((json['enforcementScope'] != null ? UserEventPayloadVariant238NextEnforcementScope.fromJson(json['enforcementScope'] as String) : null)!) : const SdkOmitted(),
-    enforcePercentage: ((json['enforcePercentage'] as num?)?.toDouble())!,
-    mode: (json['mode'] as String?)!,
-    newResourceBlockingPolicy: (json['newResourceBlockingPolicy'] != null ? UserEventPayloadVariant238NextNewResourceBlockingPolicy.fromJson(json['newResourceBlockingPolicy'] as String) : null)!,
-    omitScriptNonce: json['omitScriptNonce'] != null ? SdkPresent((json['omitScriptNonce'] != null ? UserEventPayloadVariant238NextOmitScriptNonce.fromJson(json['omitScriptNonce'] as bool) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant238Next.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant238Next(
+            allowUnsafeScriptSrcKeywords:
+                (json['allowUnsafeScriptSrcKeywords'] != null
+                    ? UserEventPayloadVariant238NextAllowUnsafeScriptSrcKeywords
+                        .fromJson(json['allowUnsafeScriptSrcKeywords'] as bool)
+                    : null)!,
+            computedConnectSrc: json['computedConnectSrc'] != null
+                ? SdkPresent((json['computedConnectSrc'] as String?)!)
+                : const SdkOmitted(),
+            computedConnectSrcPreview: json['computedConnectSrcPreview'] != null
+                ? SdkPresent((json['computedConnectSrcPreview'] as String?)!)
+                : const SdkOmitted(),
+            computedScriptSrc: json['computedScriptSrc'] != null
+                ? SdkPresent((json['computedScriptSrc'] as String?)!)
+                : const SdkOmitted(),
+            computedScriptSrcPreview: json['computedScriptSrcPreview'] != null
+                ? SdkPresent((json['computedScriptSrcPreview'] as String?)!)
+                : const SdkOmitted(),
+            connectSrcNotificationsEnabled: json[
+                        'connectSrcNotificationsEnabled'] !=
+                    null
+                ? SdkPresent((json['connectSrcNotificationsEnabled'] != null
+                    ? UserEventPayloadVariant238NextConnectSrcNotificationsEnabled
+                        .fromJson(
+                            json['connectSrcNotificationsEnabled'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            enabled: (json['enabled'] != null
+                ? UserEventPayloadVariant238NextEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!,
+            enforcementScope: json['enforcementScope'] != null
+                ? SdkPresent((json['enforcementScope'] != null
+                    ? UserEventPayloadVariant238NextEnforcementScope.fromJson(
+                        json['enforcementScope'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            enforcePercentage:
+                ((json['enforcePercentage'] as num?)?.toDouble())!,
+            mode: (json['mode'] as String?)!,
+            newResourceBlockingPolicy:
+                (json['newResourceBlockingPolicy'] != null
+                    ? UserEventPayloadVariant238NextNewResourceBlockingPolicy
+                        .fromJson(json['newResourceBlockingPolicy'] as String)
+                    : null)!,
+            omitScriptNonce: json['omitScriptNonce'] != null
+                ? SdkPresent((json['omitScriptNonce'] != null
+                    ? UserEventPayloadVariant238NextOmitScriptNonce.fromJson(
+                        json['omitScriptNonce'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'allowUnsafeScriptSrcKeywords': allowUnsafeScriptSrcKeywords.toJson(),
-    ...switch (computedConnectSrc) {
-      SdkPresent<String>(value: final value) => {'computedConnectSrc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (computedConnectSrcPreview) {
-      SdkPresent<String>(value: final value) => {'computedConnectSrcPreview': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (computedScriptSrc) {
-      SdkPresent<String>(value: final value) => {'computedScriptSrc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (computedScriptSrcPreview) {
-      SdkPresent<String>(value: final value) => {'computedScriptSrcPreview': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectSrcNotificationsEnabled) {
-      SdkPresent<UserEventPayloadVariant238NextConnectSrcNotificationsEnabled>(value: final value) => {'connectSrcNotificationsEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    ...switch (enforcementScope) {
-      SdkPresent<UserEventPayloadVariant238NextEnforcementScope>(value: final value) => {'enforcementScope': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'enforcePercentage': enforcePercentage,
-    'mode': mode,
-    'newResourceBlockingPolicy': newResourceBlockingPolicy.toJson(),
-    ...switch (omitScriptNonce) {
-      SdkPresent<UserEventPayloadVariant238NextOmitScriptNonce>(value: final value) => {'omitScriptNonce': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'allowUnsafeScriptSrcKeywords': allowUnsafeScriptSrcKeywords.toJson(),
+        ...switch (computedConnectSrc) {
+          SdkPresent<String>(value: final value) => {
+              'computedConnectSrc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (computedConnectSrcPreview) {
+          SdkPresent<String>(value: final value) => {
+              'computedConnectSrcPreview': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (computedScriptSrc) {
+          SdkPresent<String>(value: final value) => {
+              'computedScriptSrc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (computedScriptSrcPreview) {
+          SdkPresent<String>(value: final value) => {
+              'computedScriptSrcPreview': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectSrcNotificationsEnabled) {
+          SdkPresent<
+                UserEventPayloadVariant238NextConnectSrcNotificationsEnabled>(
+            value: final value
+          ) =>
+            {
+              'connectSrcNotificationsEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        ...switch (enforcementScope) {
+          SdkPresent<UserEventPayloadVariant238NextEnforcementScope>(
+            value: final value
+          ) =>
+            {
+              'enforcementScope': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enforcePercentage': enforcePercentage,
+        'mode': mode,
+        'newResourceBlockingPolicy': newResourceBlockingPolicy.toJson(),
+        ...switch (omitScriptNonce) {
+          SdkPresent<UserEventPayloadVariant238NextOmitScriptNonce>(
+            value: final value
+          ) =>
+            {
+              'omitScriptNonce': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `previous` wire field.
 class UserEventPayloadVariant238Previous implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `allowUnsafeScriptSrcKeywords` wire field.
-  final UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords allowUnsafeScriptSrcKeywords;
+  final UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords
+      allowUnsafeScriptSrcKeywords;
+
   /// Optional `string` value serialized in the `computedConnectSrc` wire field.
   final SdkOptional<String> computedConnectSrc;
+
   /// Optional `string` value serialized in the `computedConnectSrcPreview` wire field.
   final SdkOptional<String> computedConnectSrcPreview;
+
   /// Optional `string` value serialized in the `computedScriptSrc` wire field.
   final SdkOptional<String> computedScriptSrc;
+
   /// Optional `string` value serialized in the `computedScriptSrcPreview` wire field.
   final SdkOptional<String> computedScriptSrcPreview;
+
   /// Optional enumerated value serialized in the `connectSrcNotificationsEnabled` wire field.
-  final SdkOptional<UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled> connectSrcNotificationsEnabled;
+  final SdkOptional<
+          UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled>
+      connectSrcNotificationsEnabled;
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final UserEventPayloadVariant238PreviousEnabled enabled;
+
   /// Optional enumerated value serialized in the `enforcementScope` wire field.
-  final SdkOptional<UserEventPayloadVariant238PreviousEnforcementScope> enforcementScope;
+  final SdkOptional<UserEventPayloadVariant238PreviousEnforcementScope>
+      enforcementScope;
+
   /// Required `number` value serialized in the `enforcePercentage` wire field.
   final double enforcePercentage;
+
   /// Required `string` value serialized in the `mode` wire field.
   final String mode;
+
   /// Required enumerated value serialized in the `newResourceBlockingPolicy` wire field.
-  final UserEventPayloadVariant238PreviousNewResourceBlockingPolicy newResourceBlockingPolicy;
+  final UserEventPayloadVariant238PreviousNewResourceBlockingPolicy
+      newResourceBlockingPolicy;
+
   /// Optional enumerated value serialized in the `omitScriptNonce` wire field.
-  final SdkOptional<UserEventPayloadVariant238PreviousOmitScriptNonce> omitScriptNonce;
+  final SdkOptional<UserEventPayloadVariant238PreviousOmitScriptNonce>
+      omitScriptNonce;
 
-  const UserEventPayloadVariant238Previous({required this.allowUnsafeScriptSrcKeywords, this.computedConnectSrc = const SdkOmitted(), this.computedConnectSrcPreview = const SdkOmitted(), this.computedScriptSrc = const SdkOmitted(), this.computedScriptSrcPreview = const SdkOmitted(), this.connectSrcNotificationsEnabled = const SdkOmitted(), required this.enabled, this.enforcementScope = const SdkOmitted(), required this.enforcePercentage, required this.mode, required this.newResourceBlockingPolicy, this.omitScriptNonce = const SdkOmitted()});
+  const UserEventPayloadVariant238Previous(
+      {required this.allowUnsafeScriptSrcKeywords,
+      this.computedConnectSrc = const SdkOmitted(),
+      this.computedConnectSrcPreview = const SdkOmitted(),
+      this.computedScriptSrc = const SdkOmitted(),
+      this.computedScriptSrcPreview = const SdkOmitted(),
+      this.connectSrcNotificationsEnabled = const SdkOmitted(),
+      required this.enabled,
+      this.enforcementScope = const SdkOmitted(),
+      required this.enforcePercentage,
+      required this.mode,
+      required this.newResourceBlockingPolicy,
+      this.omitScriptNonce = const SdkOmitted()});
 
-  UserEventPayloadVariant238Previous Function({UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords allowUnsafeScriptSrcKeywords, SdkOptional<String> computedConnectSrc, SdkOptional<String> computedConnectSrcPreview, SdkOptional<String> computedScriptSrc, SdkOptional<String> computedScriptSrcPreview, SdkOptional<UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled> connectSrcNotificationsEnabled, UserEventPayloadVariant238PreviousEnabled enabled, SdkOptional<UserEventPayloadVariant238PreviousEnforcementScope> enforcementScope, double enforcePercentage, String mode, UserEventPayloadVariant238PreviousNewResourceBlockingPolicy newResourceBlockingPolicy, SdkOptional<UserEventPayloadVariant238PreviousOmitScriptNonce> omitScriptNonce}) get copyWith => _copyWith;
+  UserEventPayloadVariant238Previous Function(
+      {UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords
+          allowUnsafeScriptSrcKeywords,
+      SdkOptional<String> computedConnectSrc,
+      SdkOptional<String> computedConnectSrcPreview,
+      SdkOptional<String> computedScriptSrc,
+      SdkOptional<String> computedScriptSrcPreview,
+      SdkOptional<
+              UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled>
+          connectSrcNotificationsEnabled,
+      UserEventPayloadVariant238PreviousEnabled enabled,
+      SdkOptional<UserEventPayloadVariant238PreviousEnforcementScope>
+          enforcementScope,
+      double enforcePercentage,
+      String mode,
+      UserEventPayloadVariant238PreviousNewResourceBlockingPolicy
+          newResourceBlockingPolicy,
+      SdkOptional<UserEventPayloadVariant238PreviousOmitScriptNonce>
+          omitScriptNonce}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant238Previous _copyWith({Object? allowUnsafeScriptSrcKeywords = sdkOmittedValue, Object? computedConnectSrc = sdkOmittedValue, Object? computedConnectSrcPreview = sdkOmittedValue, Object? computedScriptSrc = sdkOmittedValue, Object? computedScriptSrcPreview = sdkOmittedValue, Object? connectSrcNotificationsEnabled = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? enforcementScope = sdkOmittedValue, Object? enforcePercentage = sdkOmittedValue, Object? mode = sdkOmittedValue, Object? newResourceBlockingPolicy = sdkOmittedValue, Object? omitScriptNonce = sdkOmittedValue}) => UserEventPayloadVariant238Previous(
-    allowUnsafeScriptSrcKeywords: identical(allowUnsafeScriptSrcKeywords, sdkOmittedValue) ? this.allowUnsafeScriptSrcKeywords : allowUnsafeScriptSrcKeywords as UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords,
-    computedConnectSrc: identical(computedConnectSrc, sdkOmittedValue) ? this.computedConnectSrc : computedConnectSrc as SdkOptional<String>,
-    computedConnectSrcPreview: identical(computedConnectSrcPreview, sdkOmittedValue) ? this.computedConnectSrcPreview : computedConnectSrcPreview as SdkOptional<String>,
-    computedScriptSrc: identical(computedScriptSrc, sdkOmittedValue) ? this.computedScriptSrc : computedScriptSrc as SdkOptional<String>,
-    computedScriptSrcPreview: identical(computedScriptSrcPreview, sdkOmittedValue) ? this.computedScriptSrcPreview : computedScriptSrcPreview as SdkOptional<String>,
-    connectSrcNotificationsEnabled: identical(connectSrcNotificationsEnabled, sdkOmittedValue) ? this.connectSrcNotificationsEnabled : connectSrcNotificationsEnabled as SdkOptional<UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UserEventPayloadVariant238PreviousEnabled,
-    enforcementScope: identical(enforcementScope, sdkOmittedValue) ? this.enforcementScope : enforcementScope as SdkOptional<UserEventPayloadVariant238PreviousEnforcementScope>,
-    enforcePercentage: identical(enforcePercentage, sdkOmittedValue) ? this.enforcePercentage : enforcePercentage as double,
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as String,
-    newResourceBlockingPolicy: identical(newResourceBlockingPolicy, sdkOmittedValue) ? this.newResourceBlockingPolicy : newResourceBlockingPolicy as UserEventPayloadVariant238PreviousNewResourceBlockingPolicy,
-    omitScriptNonce: identical(omitScriptNonce, sdkOmittedValue) ? this.omitScriptNonce : omitScriptNonce as SdkOptional<UserEventPayloadVariant238PreviousOmitScriptNonce>,
-  );
+  UserEventPayloadVariant238Previous _copyWith(
+          {Object? allowUnsafeScriptSrcKeywords = sdkOmittedValue,
+          Object? computedConnectSrc = sdkOmittedValue,
+          Object? computedConnectSrcPreview = sdkOmittedValue,
+          Object? computedScriptSrc = sdkOmittedValue,
+          Object? computedScriptSrcPreview = sdkOmittedValue,
+          Object? connectSrcNotificationsEnabled = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? enforcementScope = sdkOmittedValue,
+          Object? enforcePercentage = sdkOmittedValue,
+          Object? mode = sdkOmittedValue,
+          Object? newResourceBlockingPolicy = sdkOmittedValue,
+          Object? omitScriptNonce = sdkOmittedValue}) =>
+      UserEventPayloadVariant238Previous(
+        allowUnsafeScriptSrcKeywords: identical(
+                allowUnsafeScriptSrcKeywords, sdkOmittedValue)
+            ? this.allowUnsafeScriptSrcKeywords
+            : allowUnsafeScriptSrcKeywords
+                as UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords,
+        computedConnectSrc: identical(computedConnectSrc, sdkOmittedValue)
+            ? this.computedConnectSrc
+            : computedConnectSrc as SdkOptional<String>,
+        computedConnectSrcPreview:
+            identical(computedConnectSrcPreview, sdkOmittedValue)
+                ? this.computedConnectSrcPreview
+                : computedConnectSrcPreview as SdkOptional<String>,
+        computedScriptSrc: identical(computedScriptSrc, sdkOmittedValue)
+            ? this.computedScriptSrc
+            : computedScriptSrc as SdkOptional<String>,
+        computedScriptSrcPreview:
+            identical(computedScriptSrcPreview, sdkOmittedValue)
+                ? this.computedScriptSrcPreview
+                : computedScriptSrcPreview as SdkOptional<String>,
+        connectSrcNotificationsEnabled: identical(
+                connectSrcNotificationsEnabled, sdkOmittedValue)
+            ? this.connectSrcNotificationsEnabled
+            : connectSrcNotificationsEnabled as SdkOptional<
+                UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as UserEventPayloadVariant238PreviousEnabled,
+        enforcementScope: identical(enforcementScope, sdkOmittedValue)
+            ? this.enforcementScope
+            : enforcementScope as SdkOptional<
+                UserEventPayloadVariant238PreviousEnforcementScope>,
+        enforcePercentage: identical(enforcePercentage, sdkOmittedValue)
+            ? this.enforcePercentage
+            : enforcePercentage as double,
+        mode: identical(mode, sdkOmittedValue) ? this.mode : mode as String,
+        newResourceBlockingPolicy: identical(
+                newResourceBlockingPolicy, sdkOmittedValue)
+            ? this.newResourceBlockingPolicy
+            : newResourceBlockingPolicy
+                as UserEventPayloadVariant238PreviousNewResourceBlockingPolicy,
+        omitScriptNonce: identical(omitScriptNonce, sdkOmittedValue)
+            ? this.omitScriptNonce
+            : omitScriptNonce as SdkOptional<
+                UserEventPayloadVariant238PreviousOmitScriptNonce>,
+      );
 
-  factory UserEventPayloadVariant238Previous.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant238Previous(
-    allowUnsafeScriptSrcKeywords: (json['allowUnsafeScriptSrcKeywords'] != null ? UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords.fromJson(json['allowUnsafeScriptSrcKeywords'] as bool) : null)!,
-    computedConnectSrc: json['computedConnectSrc'] != null ? SdkPresent((json['computedConnectSrc'] as String?)!) : const SdkOmitted(),
-    computedConnectSrcPreview: json['computedConnectSrcPreview'] != null ? SdkPresent((json['computedConnectSrcPreview'] as String?)!) : const SdkOmitted(),
-    computedScriptSrc: json['computedScriptSrc'] != null ? SdkPresent((json['computedScriptSrc'] as String?)!) : const SdkOmitted(),
-    computedScriptSrcPreview: json['computedScriptSrcPreview'] != null ? SdkPresent((json['computedScriptSrcPreview'] as String?)!) : const SdkOmitted(),
-    connectSrcNotificationsEnabled: json['connectSrcNotificationsEnabled'] != null ? SdkPresent((json['connectSrcNotificationsEnabled'] != null ? UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled.fromJson(json['connectSrcNotificationsEnabled'] as bool) : null)!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? UserEventPayloadVariant238PreviousEnabled.fromJson(json['enabled'] as bool) : null)!,
-    enforcementScope: json['enforcementScope'] != null ? SdkPresent((json['enforcementScope'] != null ? UserEventPayloadVariant238PreviousEnforcementScope.fromJson(json['enforcementScope'] as String) : null)!) : const SdkOmitted(),
-    enforcePercentage: ((json['enforcePercentage'] as num?)?.toDouble())!,
-    mode: (json['mode'] as String?)!,
-    newResourceBlockingPolicy: (json['newResourceBlockingPolicy'] != null ? UserEventPayloadVariant238PreviousNewResourceBlockingPolicy.fromJson(json['newResourceBlockingPolicy'] as String) : null)!,
-    omitScriptNonce: json['omitScriptNonce'] != null ? SdkPresent((json['omitScriptNonce'] != null ? UserEventPayloadVariant238PreviousOmitScriptNonce.fromJson(json['omitScriptNonce'] as bool) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant238Previous.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant238Previous(
+            allowUnsafeScriptSrcKeywords: (json[
+                        'allowUnsafeScriptSrcKeywords'] !=
+                    null
+                ? UserEventPayloadVariant238PreviousAllowUnsafeScriptSrcKeywords
+                    .fromJson(json['allowUnsafeScriptSrcKeywords'] as bool)
+                : null)!,
+            computedConnectSrc: json['computedConnectSrc'] != null
+                ? SdkPresent((json['computedConnectSrc'] as String?)!)
+                : const SdkOmitted(),
+            computedConnectSrcPreview: json['computedConnectSrcPreview'] != null
+                ? SdkPresent((json['computedConnectSrcPreview'] as String?)!)
+                : const SdkOmitted(),
+            computedScriptSrc: json['computedScriptSrc'] != null
+                ? SdkPresent((json['computedScriptSrc'] as String?)!)
+                : const SdkOmitted(),
+            computedScriptSrcPreview: json['computedScriptSrcPreview'] != null
+                ? SdkPresent((json['computedScriptSrcPreview'] as String?)!)
+                : const SdkOmitted(),
+            connectSrcNotificationsEnabled: json[
+                        'connectSrcNotificationsEnabled'] !=
+                    null
+                ? SdkPresent((json['connectSrcNotificationsEnabled'] != null
+                    ? UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled
+                        .fromJson(
+                            json['connectSrcNotificationsEnabled'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            enabled: (json['enabled'] != null
+                ? UserEventPayloadVariant238PreviousEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!,
+            enforcementScope: json['enforcementScope'] != null
+                ? SdkPresent((json['enforcementScope'] != null
+                    ? UserEventPayloadVariant238PreviousEnforcementScope
+                        .fromJson(json['enforcementScope'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            enforcePercentage:
+                ((json['enforcePercentage'] as num?)?.toDouble())!,
+            mode: (json['mode'] as String?)!,
+            newResourceBlockingPolicy: (json['newResourceBlockingPolicy'] !=
+                    null
+                ? UserEventPayloadVariant238PreviousNewResourceBlockingPolicy
+                    .fromJson(json['newResourceBlockingPolicy'] as String)
+                : null)!,
+            omitScriptNonce: json['omitScriptNonce'] != null
+                ? SdkPresent((json['omitScriptNonce'] != null
+                    ? UserEventPayloadVariant238PreviousOmitScriptNonce
+                        .fromJson(json['omitScriptNonce'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'allowUnsafeScriptSrcKeywords': allowUnsafeScriptSrcKeywords.toJson(),
-    ...switch (computedConnectSrc) {
-      SdkPresent<String>(value: final value) => {'computedConnectSrc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (computedConnectSrcPreview) {
-      SdkPresent<String>(value: final value) => {'computedConnectSrcPreview': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (computedScriptSrc) {
-      SdkPresent<String>(value: final value) => {'computedScriptSrc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (computedScriptSrcPreview) {
-      SdkPresent<String>(value: final value) => {'computedScriptSrcPreview': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectSrcNotificationsEnabled) {
-      SdkPresent<UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled>(value: final value) => {'connectSrcNotificationsEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    ...switch (enforcementScope) {
-      SdkPresent<UserEventPayloadVariant238PreviousEnforcementScope>(value: final value) => {'enforcementScope': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'enforcePercentage': enforcePercentage,
-    'mode': mode,
-    'newResourceBlockingPolicy': newResourceBlockingPolicy.toJson(),
-    ...switch (omitScriptNonce) {
-      SdkPresent<UserEventPayloadVariant238PreviousOmitScriptNonce>(value: final value) => {'omitScriptNonce': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'allowUnsafeScriptSrcKeywords': allowUnsafeScriptSrcKeywords.toJson(),
+        ...switch (computedConnectSrc) {
+          SdkPresent<String>(value: final value) => {
+              'computedConnectSrc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (computedConnectSrcPreview) {
+          SdkPresent<String>(value: final value) => {
+              'computedConnectSrcPreview': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (computedScriptSrc) {
+          SdkPresent<String>(value: final value) => {
+              'computedScriptSrc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (computedScriptSrcPreview) {
+          SdkPresent<String>(value: final value) => {
+              'computedScriptSrcPreview': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectSrcNotificationsEnabled) {
+          SdkPresent<
+                UserEventPayloadVariant238PreviousConnectSrcNotificationsEnabled>(
+            value: final value
+          ) =>
+            {
+              'connectSrcNotificationsEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        ...switch (enforcementScope) {
+          SdkPresent<UserEventPayloadVariant238PreviousEnforcementScope>(
+            value: final value
+          ) =>
+            {
+              'enforcementScope': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enforcePercentage': enforcePercentage,
+        'mode': mode,
+        'newResourceBlockingPolicy': newResourceBlockingPolicy.toJson(),
+        ...switch (omitScriptNonce) {
+          SdkPresent<UserEventPayloadVariant238PreviousOmitScriptNonce>(
+            value: final value
+          ) =>
+            {
+              'omitScriptNonce': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant238 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `next` wire field.
   final UserEventPayloadVariant238Next next;
+
   /// Required object value serialized in the `previous` wire field.
   final UserEventPayloadVariant238Previous? previous;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
 
-  const UserEventPayloadVariant238({required this.next, required this.previous, required this.projectId});
+  const UserEventPayloadVariant238(
+      {required this.next, required this.previous, required this.projectId});
 
-  UserEventPayloadVariant238 Function({UserEventPayloadVariant238Next next, UserEventPayloadVariant238Previous? previous, String projectId}) get copyWith => _copyWith;
+  UserEventPayloadVariant238 Function(
+      {UserEventPayloadVariant238Next next,
+      UserEventPayloadVariant238Previous? previous,
+      String projectId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant238 _copyWith({Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => UserEventPayloadVariant238(
-    next: identical(next, sdkOmittedValue) ? this.next : next as UserEventPayloadVariant238Next,
-    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as UserEventPayloadVariant238Previous?,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-  );
+  UserEventPayloadVariant238 _copyWith(
+          {Object? next = sdkOmittedValue,
+          Object? previous = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      UserEventPayloadVariant238(
+        next: identical(next, sdkOmittedValue)
+            ? this.next
+            : next as UserEventPayloadVariant238Next,
+        previous: identical(previous, sdkOmittedValue)
+            ? this.previous
+            : previous as UserEventPayloadVariant238Previous?,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+      );
 
-  factory UserEventPayloadVariant238.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant238(
-    next: (json['next'] != null ? UserEventPayloadVariant238Next.fromJson(json['next'] as Map<String, dynamic>) : null)!,
-    previous: json.containsKey('previous') ? json['previous'] != null ? UserEventPayloadVariant238Previous.fromJson(json['previous'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'previous', 'Required property is missing'),
-    projectId: (json['projectId'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant238.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant238(
+            next: (json['next'] != null
+                ? UserEventPayloadVariant238Next.fromJson(
+                    json['next'] as Map<String, dynamic>)
+                : null)!,
+            previous: json.containsKey('previous')
+                ? json['previous'] != null
+                    ? UserEventPayloadVariant238Previous.fromJson(
+                        json['previous'] as Map<String, dynamic>)
+                    : null
+                : throw ArgumentError.value(
+                    null, 'previous', 'Required property is missing'),
+            projectId: (json['projectId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'next': next.toJson(),
-    'previous': previous?.toJson(),
-    'projectId': projectId,
-  };
+        'next': next.toJson(),
+        'previous': previous?.toJson(),
+        'projectId': projectId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant239 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `headerName` wire field.
   final String headerName;
+
   /// Required `string` value serialized in the `justification` wire field.
   final String justification;
+
   /// Required `string` value serialized in the `previousStatus` wire field.
   final String previousStatus;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
 
-  const UserEventPayloadVariant239({required this.headerName, required this.justification, required this.previousStatus, required this.projectId});
+  const UserEventPayloadVariant239(
+      {required this.headerName,
+      required this.justification,
+      required this.previousStatus,
+      required this.projectId});
 
-  UserEventPayloadVariant239 Function({String headerName, String justification, String previousStatus, String projectId}) get copyWith => _copyWith;
+  UserEventPayloadVariant239 Function(
+      {String headerName,
+      String justification,
+      String previousStatus,
+      String projectId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant239 _copyWith({Object? headerName = sdkOmittedValue, Object? justification = sdkOmittedValue, Object? previousStatus = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => UserEventPayloadVariant239(
-    headerName: identical(headerName, sdkOmittedValue) ? this.headerName : headerName as String,
-    justification: identical(justification, sdkOmittedValue) ? this.justification : justification as String,
-    previousStatus: identical(previousStatus, sdkOmittedValue) ? this.previousStatus : previousStatus as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-  );
+  UserEventPayloadVariant239 _copyWith(
+          {Object? headerName = sdkOmittedValue,
+          Object? justification = sdkOmittedValue,
+          Object? previousStatus = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      UserEventPayloadVariant239(
+        headerName: identical(headerName, sdkOmittedValue)
+            ? this.headerName
+            : headerName as String,
+        justification: identical(justification, sdkOmittedValue)
+            ? this.justification
+            : justification as String,
+        previousStatus: identical(previousStatus, sdkOmittedValue)
+            ? this.previousStatus
+            : previousStatus as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+      );
 
-  factory UserEventPayloadVariant239.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant239(
-    headerName: (json['headerName'] as String?)!,
-    justification: (json['justification'] as String?)!,
-    previousStatus: (json['previousStatus'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant239.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant239(
+            headerName: (json['headerName'] as String?)!,
+            justification: (json['justification'] as String?)!,
+            previousStatus: (json['previousStatus'] as String?)!,
+            projectId: (json['projectId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'headerName': headerName,
-    'justification': justification,
-    'previousStatus': previousStatus,
-    'projectId': projectId,
-  };
+        'headerName': headerName,
+        'justification': justification,
+        'previousStatus': previousStatus,
+        'projectId': projectId,
+      };
 }

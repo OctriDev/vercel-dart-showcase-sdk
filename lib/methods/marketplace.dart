@@ -15,10 +15,13 @@ import '../types.dart';
 ///   clear the current notification.
 Future<void> updateInstallation(ClientConfig config,
     {required String integrationConfigurationId,
-    SdkOptional<UpdateInstallationRequestBodyStatus> status = const SdkOmitted(),
+    SdkOptional<UpdateInstallationRequestBodyStatus> status =
+        const SdkOmitted(),
     SdkOptional<String> externalId = const SdkOmitted(),
-    SdkOptional<UpdateInstallationRequestBodyBillingPlan> billingPlan = const SdkOmitted(),
-    SdkOptional<UpdateInstallationRequestNotification> notification = const SdkOmitted(),
+    SdkOptional<UpdateInstallationRequestBodyBillingPlan> billingPlan =
+        const SdkOmitted(),
+    SdkOptional<UpdateInstallationRequestNotification> notification =
+        const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<void>('PATCH',
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}',
@@ -35,7 +38,6 @@ Future<void> updateInstallation(ClientConfig config,
       .data;
 }
 
-
 /// Retrieves account contact information and the team name associated with an integration installation. Use the installation identifier to look up the best available contact, which can change as team members and their roles change.
 ///
 /// Fetches the best account or user’s contact info
@@ -47,11 +49,11 @@ Future<GetAccountInfoResponse> getAccountInfo(ClientConfig config,
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getAccountInfo',
-          fromJsonRaw: (value) => GetAccountInfoResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetAccountInfoResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves the role and other available information for a member of an integration installation. Use the member's user ID from the SSO OIDC token's `user_id` claim to identify the member.
 ///
@@ -65,21 +67,21 @@ Future<GetMemberResponse> getMember(ClientConfig config,
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getMember',
-          fromJsonRaw: (value) => GetMemberResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetMemberResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
 
-
 /// Rotates an installation credential by issuing a replacement access token. Authenticate with the credential being replaced and the integration's client secret; the previous credential remains valid until you explicitly revoke it, so store the replacement before completing that step.
 ///
 /// Issues a replacement access token for an installation, so a partner can rotate a credential it believes is compromised without the customer having to reinstall. Authenticated by the credential being replaced plus the integration's client secret: a leaked access token on its own cannot rotate itself, which would otherwise let an attacker take over the installation and lock the partner out. The previous credential intentionally stays valid so in-flight requests keep working. Retiring it is a separate, explicit operation — a partner is never left mid-rotation without a working credential.
-Future<RotateInstallationCredentialResponse>
-    rotateInstallationCredential(ClientConfig config,
-        {required String integrationConfigurationId,
-        required String clientSecret,
-        SdkOptional<String> clientId = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<RotateInstallationCredentialResponse> rotateInstallationCredential(
+    ClientConfig config,
+    {required String integrationConfigurationId,
+    required String clientSecret,
+    SdkOptional<String> clientId = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   validateLength('client_secret', clientSecret, max: 512);
 
   return (await sdkRequest<RotateInstallationCredentialResponse>('POST',
@@ -91,22 +93,22 @@ Future<RotateInstallationCredentialResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'rotateInstallationCredential',
-          fromJsonRaw: (value) => RotateInstallationCredentialResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RotateInstallationCredentialResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
 
-
 /// Revokes a superseded credential for an integration installation after you have rotated it. Authenticate with a live installation credential and the integration's client secret, then name the old credential in the request body; the last live credential cannot be revoked.
 ///
 /// Retires a superseded installation credential, so a partner can complete a rotation it started with `POST /credentials/rotate` — the leaked credential stops working without the customer having to reinstall. Authenticated by a live installation credential plus the integration's client secret. The credential to retire is named in the body rather than being the one that authenticates, so the ordinary flow is: rotate, store the replacement, then authenticate with the replacement and revoke the old one. Refuses to retire an installation's last live credential. Rotation exists so remediation is not customer-visible; revoking the only credential would undo that and leave the install needing a reinstall.
-Future<RevokeInstallationCredentialResponse>
-    revokeInstallationCredential(ClientConfig config,
-        {required String integrationConfigurationId,
-        required String token,
-        required String clientSecret,
-        SdkOptional<String> clientId = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<RevokeInstallationCredentialResponse> revokeInstallationCredential(
+    ClientConfig config,
+    {required String integrationConfigurationId,
+    required String token,
+    required String clientSecret,
+    SdkOptional<String> clientId = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   validateLength('token', token, max: 512);
   validateLength('client_secret', clientSecret, max: 512);
 
@@ -120,11 +122,11 @@ Future<RevokeInstallationCredentialResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'revokeInstallationCredential',
-          fromJsonRaw: (value) => RevokeInstallationCredentialResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RevokeInstallationCredentialResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Submits an event to notify Vercel about a change to an installation or one of its resources. Send an installation update when its billing plan changes outside Vercel, or a resource update when a linked resource's state changes; Vercel uses its read APIs to retrieve the updated state.
 ///
@@ -145,24 +147,23 @@ Future<void> createEvent(ClientConfig config,
       .data;
 }
 
-
 /// Lists the resources associated with an integration installation. Use the installation identifier to retrieve its resources, including each resource's partner and product identifiers and its name.
 ///
 /// Get all resources for a given installation ID.
-Future<GetIntegrationResourcesResponse>
-    getIntegrationResources(ClientConfig config,
-        {required String integrationConfigurationId,
-        RequestOptions? requestOptions}) async {
+Future<GetIntegrationResourcesResponse> getIntegrationResources(
+    ClientConfig config,
+    {required String integrationConfigurationId,
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetIntegrationResourcesResponse>('GET',
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getIntegrationResources',
-          fromJsonRaw: (value) => GetIntegrationResourcesResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetIntegrationResourcesResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a resource associated with an integration installation by its partner-provided ID. Use both path identifiers to scope the lookup to the installation that owns the resource.
 ///
@@ -172,21 +173,21 @@ Future<GetIntegrationResourcesResponse>
 ///   (installation) the resource belongs to
 /// [resourceId] The ID provided by the 3rd party provider for the given
 ///   resource
-Future<GetIntegrationResourceResponse>
-    getIntegrationResource(ClientConfig config,
-        {required String integrationConfigurationId,
-        required String resourceId,
-        RequestOptions? requestOptions}) async {
+Future<GetIntegrationResourceResponse> getIntegrationResource(
+    ClientConfig config,
+    {required String integrationConfigurationId,
+    required String resourceId,
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetIntegrationResourceResponse>('GET',
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getIntegrationResource',
-          fromJsonRaw: (value) => GetIntegrationResourceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetIntegrationResourceResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a resource owned by an installation. Use `integrationConfigurationId` and `resourceId` to identify the installation and resource to remove. A 204 response confirms the deletion without returning a response body.
 ///
@@ -204,7 +205,6 @@ Future<void> deleteIntegrationResource(ClientConfig config,
       .data;
 }
 
-
 /// Imports or upserts a resource into an integration installation, including resources created independently in the provider's system. Use this operation to synchronize an existing resource to Vercel; for a user-initiated import, call it before redirecting the user back to Vercel.
 ///
 /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel. When importing as part of the user-initiated import flow, call this endpoint before redirecting the user back to Vercel. See the [Import existing resources flow](https://vercel.com/docs/integrations/create-integration/marketplace-flows#import-existing-resources-flow) for the full contract.
@@ -217,13 +217,18 @@ Future<ImportResourceResponse> importResource(ClientConfig config,
     required String productId,
     required String name,
     required ImportResourceRequestBodyStatus status,
-    SdkOptional<ImportResourceRequestBodyOwnership> ownership = const SdkOmitted(),
+    SdkOptional<ImportResourceRequestBodyOwnership> ownership =
+        const SdkOmitted(),
     SdkOptional<Map<String, Object?>> metadata = const SdkOmitted(),
-    SdkOptional<ImportResourceRequestBodyBillingPlan> billingPlan = const SdkOmitted(),
-    SdkOptional<ImportResourceRequestBodyNotification> notification = const SdkOmitted(),
+    SdkOptional<ImportResourceRequestBodyBillingPlan> billingPlan =
+        const SdkOmitted(),
+    SdkOptional<ImportResourceRequestBodyNotification> notification =
+        const SdkOmitted(),
     SdkOptional<Map<String, Object?>> extras = const SdkOmitted(),
-    SdkOptional<List<ImportResourceRequestBodySecretsItem>> secrets = const SdkOmitted(),
-    SdkOptional<ImportResourceRequestBodyCustomClaims> customClaims = const SdkOmitted(),
+    SdkOptional<List<ImportResourceRequestBodySecretsItem>> secrets =
+        const SdkOmitted(),
+    SdkOptional<ImportResourceRequestBodyCustomClaims> customClaims =
+        const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<ImportResourceResponse>('PUT',
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}',
@@ -242,11 +247,11 @@ Future<ImportResourceResponse> importResource(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'importResource',
-          fromJsonRaw: (value) => ImportResourceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ImportResourceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates selected properties of an existing resource in an integration installation. Send only the fields you want to change; use the path identifiers to target the resource within its installation.
 ///
@@ -259,15 +264,19 @@ Future<ImportResourceResponse> importResource(ClientConfig config,
 Future<UpdateResourceResponse> updateResource(ClientConfig config,
     {required String integrationConfigurationId,
     required String resourceId,
-    SdkOptional<UpdateResourceRequestBodyOwnership> ownership = const SdkOmitted(),
+    SdkOptional<UpdateResourceRequestBodyOwnership> ownership =
+        const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<UpdateResourceRequestBodyStatus> status = const SdkOmitted(),
     SdkOptional<Map<String, Object?>> metadata = const SdkOmitted(),
-    SdkOptional<UpdateResourceRequestBodyBillingPlan> billingPlan = const SdkOmitted(),
-    SdkOptional<UpdateResourceRequestNotification> notification = const SdkOmitted(),
+    SdkOptional<UpdateResourceRequestBodyBillingPlan> billingPlan =
+        const SdkOmitted(),
+    SdkOptional<UpdateResourceRequestNotification> notification =
+        const SdkOmitted(),
     SdkOptional<Map<String, Object?>> extras = const SdkOmitted(),
     SdkOptional<dynamic> secrets = const SdkOmitted(),
-    SdkOptional<UpdateResourceRequestBodyCustomClaims> customClaims = const SdkOmitted(),
+    SdkOptional<UpdateResourceRequestBodyCustomClaims> customClaims =
+        const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateResourceResponse>('PATCH',
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}',
@@ -285,11 +294,11 @@ Future<UpdateResourceResponse> updateResource(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateResource',
-          fromJsonRaw: (value) => UpdateResourceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateResourceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Submits billing and usage data for an installation. Send the latest data at least daily, and ideally hourly, using the installation's billing period, billing entries, and usage metrics. Authorize the request with the installation's `credentials.access_token`.
 ///
@@ -333,7 +342,6 @@ Future<void> submitBillingData(ClientConfig config,
       .data;
 }
 
-
 /// Submits an invoice for an installation to the billing system for delivery to the customer. Include the invoice date, billing period, and invoice items; the resource must be eligible for the selected active subscription plan during that period. Send interim subscription usage data hourly before submitting the invoice.
 ///
 /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period. Use the `credentials.access_token` we provided in the Upsert Installation body to authorize this request. There are several limitations to the invoice submission: 1. A resource can only be billed once per the billing period and the billing plan. 2. The billing plan used to bill the resource must have been active for this resource during the billing period. 3. The billing plan used must be a subscription plan. 4. The interim usage data must be sent hourly for all types of subscriptions. See Send subscription billing and usage data API on how to send interim billing and usage data. 5. If provided, `externalId` must be unique for the installation.
@@ -353,7 +361,8 @@ Future<SubmitInvoiceResponse> submitInvoice(ClientConfig config,
     required List<SubmitInvoiceRequestBodyItemsItem> items,
     SdkOptional<String> externalId = const SdkOmitted(),
     SdkOptional<String> memo = const SdkOmitted(),
-    SdkOptional<List<SubmitInvoiceRequestBodyDiscountsItem>> discounts = const SdkOmitted(),
+    SdkOptional<List<SubmitInvoiceRequestBodyDiscountsItem>> discounts =
+        const SdkOmitted(),
     SdkOptional<bool> final_ = const SdkOmitted(),
     SdkOptional<SubmitInvoiceRequestBodyTest> test = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
@@ -374,11 +383,11 @@ Future<SubmitInvoiceResponse> submitInvoice(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'submitInvoice',
-          fromJsonRaw: (value) => SubmitInvoiceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              SubmitInvoiceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Finalizes an installation after a customer requests uninstall and you have submitted any remaining invoices. Finalization indicates that you will submit no further invoices and allows uninstall to proceed after outstanding invoices are paid. Authorize the request with the installation's `credentials.access_token`.
 ///
@@ -395,7 +404,6 @@ Future<void> finalizeInstallation(ClientConfig config,
       .data;
 }
 
-
 /// Retrieves invoice details and status for an installation. Use the installation and invoice identifiers to select the invoice, and use the returned state and timestamps to track its billing lifecycle. Consult billing events through webhooks when you need invoice event notifications.
 ///
 /// Get Invoice details and status for a given invoice ID. See [Billing Events with Webhooks documentation](https://vercel.com/docs/integrations/create-integration/marketplace-api#working-with-billing-events-through-webhooks) on how to receive invoice events. This endpoint is used to retrieve the invoice details.
@@ -408,11 +416,11 @@ Future<GetInvoiceResponse> getInvoice(ClientConfig config,
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getInvoice',
-          fromJsonRaw: (value) => GetInvoiceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetInvoiceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Submits a refund request for an invoice previously created through the invoice submission operation. Provide the refund reason and amount along with the `refund` action. The requested amount cannot exceed the invoice total.
 ///
@@ -440,7 +448,6 @@ Future<void> updateInvoice(ClientConfig config,
       .data;
 }
 
-
 /// Submits prepayment credit balances for an installation. Send the latest balances at least daily, and ideally hourly, so the billing system can use their USD values to evaluate automatic purchase thresholds. Authorize the request with the installation's `credentials.access_token`.
 ///
 /// Sends the prepayment balances. The partner should do this at least once a day and ideally once per hour. Use the `credentials.access_token` we provided in the Upsert Installation body to authorize this request.
@@ -464,7 +471,6 @@ Future<void> submitPrepaymentBalances(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Replaces the secrets for a resource connected to an installation. This operation is deprecated and has been replaced by PUT /v1/installations/{integrationConfigurationId}/resources/{resourceId}/secrets; existing connected projects may continue using old secrets until you redeploy them. Use `partial` to update only the supplied secrets instead of replacing the full set.
 ///
@@ -493,7 +499,6 @@ Future<void> updateResourceSecrets(ClientConfig config,
       .data;
 }
 
-
 /// Replaces the secrets for a resource connected to an installation. Existing connected projects may continue using old secrets because they are not redeployed automatically, while new project connections use the updated secrets. Set `partial` to `true` to overwrite only the supplied secrets rather than replacing all secrets.
 ///
 /// This endpoint updates the secrets of a resource. If a resource has projects connected, the connected secrets are updated with the new secrets. The old secrets may still be used by existing connected projects because they are not automatically redeployed. Redeployment is a manual action and must be completed by the user. All new project connections will use the new secrets. Use cases for this endpoint: - Resetting the credentials of a database in the partner. If the user requests the credentials to be updated in the partner’s application, the partner post the new set of secrets to Vercel, the user should redeploy their application and the expire the old credentials.
@@ -519,15 +524,17 @@ Future<void> updateResourceSecretsById(ClientConfig config,
       .data;
 }
 
-
 /// Creates one or more experimentation items for an integration resource. Supply an `items` array whose entries identify each item with `id`, `slug`, and `origin`; each item can also include category and descriptive metadata.
 ///
 /// Create one or multiple experimentation items
 Future<void>
-    createInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItems(ClientConfig config,
+    createInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItems(
+        ClientConfig config,
         {required String integrationConfigurationId,
         required String resourceId,
-        required List<CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItem> items,
+        required List<
+                CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItem>
+            items,
         RequestOptions? requestOptions}) async {
   validateItems('items', items, max: 50);
 
@@ -536,24 +543,27 @@ Future<void>
           config: config,
           body: {'items': items},
           decoder: SdkResponseDecoder.empty,
-          operationId: 'createInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItems',
+          operationId:
+              'createInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItems',
           options: requestOptions))
       .data;
 }
-
 
 /// Updates an existing experimentation item for an integration resource. Identify the item with `itemId` and provide its required `slug` and `origin`, along with any other fields you want to change.
 ///
 /// Patch an existing experimentation item
 Future<void>
-    updateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(ClientConfig config,
+    updateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(
+        ClientConfig config,
         {required String integrationConfigurationId,
         required String resourceId,
         required String itemId,
         required String slug,
         required String origin,
         SdkOptional<String> name = const SdkOmitted(),
-        SdkOptional<UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory> category = const SdkOmitted(),
+        SdkOptional<
+                UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory>
+            category = const SdkOmitted(),
         SdkOptional<String> description = const SdkOmitted(),
         SdkOptional<bool> isArchived = const SdkOmitted(),
         SdkOptional<double> createdAt = const SdkOmitted(),
@@ -568,8 +578,8 @@ Future<void>
     validateLength('description', description.value, max: 1024);
   }
 
-  return (await sdkRequest<void>('PATCH',
-          '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}/experimentation/items/${Uri.encodeComponent(itemId.toString())}',
+  return (await sdkRequest<void>(
+          'PATCH', '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}/experimentation/items/${Uri.encodeComponent(itemId.toString())}',
           config: config,
           body: {
             'slug': slug,
@@ -582,17 +592,18 @@ Future<void>
             'updatedAt': SdkUtils.unwrapOptional(updatedAt)
           },
           decoder: SdkResponseDecoder.empty,
-          operationId: 'updateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId',
+          operationId:
+              'updateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId',
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes an experimentation item from an integration resource. Use `integrationConfigurationId`, `resourceId`, and `itemId` to identify the item to remove.
 ///
 /// Delete an existing experimentation item
 Future<void>
-    deleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(ClientConfig config,
+    deleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(
+        ClientConfig config,
         {required String integrationConfigurationId,
         required String resourceId,
         required String itemId,
@@ -601,17 +612,18 @@ Future<void>
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}/experimentation/items/${Uri.encodeComponent(itemId.toString())}',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId: 'deleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId',
+          operationId:
+              'deleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId',
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves response metadata for a user-provided Global Config associated with an integration resource. Use this endpoint when the user has enabled Global Config syncing and you need to check the configuration without requesting its contents.
 ///
 /// When the user enabled Global Config syncing, then this endpoint can be used by the partner to fetch the contents of the Global Config.
 Future<void>
-    headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(ClientConfig config,
+    headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(
+        ClientConfig config,
         {required String integrationConfigurationId,
         required String resourceId,
         RequestOptions? requestOptions}) async {
@@ -619,47 +631,58 @@ Future<void>
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}/experimentation/global-config',
           config: config,
           decoder: SdkResponseDecoder.empty,
-          operationId: 'headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig',
+          operationId:
+              'headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig',
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves the contents of a user-provided Global Config for an integration resource. Use this endpoint when the user has enabled Global Config syncing; the response includes the configuration items, digest, and update time.
 ///
 /// When the user enabled Global Config syncing, then this endpoint can be used by the partner to fetch the contents of the Global Config.
 Future<GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse>
-    getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(ClientConfig config,
+    getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(
+        ClientConfig config,
         {required String integrationConfigurationId,
         required String resourceId,
         RequestOptions? requestOptions}) async {
-  return (await sdkRequest<GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse>('GET',
+  return (await sdkRequest<
+              GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse>(
+          'GET',
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}/experimentation/global-config',
           config: config,
           decoder: SdkResponseDecoder.json,
-          operationId: 'getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig',
-          fromJsonRaw: (value) => GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse.fromJson(value as Map<String, dynamic>),
+          operationId:
+              'getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig',
+          fromJsonRaw: (value) =>
+              GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse
+                  .fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Replaces the data in a user-provided Global Config for an integration resource. Use this endpoint to push configuration data when the user has enabled Global Config syncing, and provide the new value in `data`.
 ///
 /// When the user enabled Global Config syncing, then this endpoint can be used by the partner to push their configuration data into the relevant Global Config.
 Future<ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse>
-    replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(ClientConfig config,
+    replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(
+        ClientConfig config,
         {required String integrationConfigurationId,
         required String resourceId,
         required Map<String, dynamic> data,
         RequestOptions? requestOptions}) async {
-  return (await sdkRequest<ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse>('PUT',
+  return (await sdkRequest<
+              ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse>(
+          'PUT',
           '/v1/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}/experimentation/global-config',
           config: config,
           body: {'data': data},
           decoder: SdkResponseDecoder.json,
-          operationId: 'replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig',
-          fromJsonRaw: (value) => ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse.fromJson(value as Map<String, dynamic>),
+          operationId:
+              'replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig',
+          fromJsonRaw: (value) =>
+              ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse
+                  .fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

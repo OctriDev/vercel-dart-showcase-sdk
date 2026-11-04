@@ -5,258 +5,377 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateDeploymentResponseVariant1RoutesItemVariant1Handle {
-
   final String value;
 
   const CreateDeploymentResponseVariant1RoutesItemVariant1Handle._(this.value);
 
-  factory CreateDeploymentResponseVariant1RoutesItemVariant1Handle.fromJson(String value) => CreateDeploymentResponseVariant1RoutesItemVariant1Handle._(value);
+  factory CreateDeploymentResponseVariant1RoutesItemVariant1Handle.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle._(value);
 
-  static const error = CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('error');
-  static const filesystem = CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('filesystem');
-  static const hit = CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('hit');
-  static const miss = CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('miss');
-  static const resource = CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('resource');
-  static const rewrite = CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('rewrite');
+  static const error =
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('error');
+  static const filesystem =
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('filesystem');
+  static const hit =
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('hit');
+  static const miss =
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('miss');
+  static const resource =
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('resource');
+  static const rewrite =
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle._('rewrite');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1RoutesItemVariant1Handle && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1RoutesItemVariant1Handle &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1RoutesItemVariant2Continue {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(this.value);
+  const CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1RoutesItemVariant2Continue.fromJson(bool value) => CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(value);
+  factory CreateDeploymentResponseVariant1RoutesItemVariant2Continue.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(false);
-  static const true_ = CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1RoutesItemVariant2Continue._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1RoutesItemVariant2Continue && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1RoutesItemVariant2Continue &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1RoutesItemVariant2Middleware {
-
   final int value;
 
-  const CreateDeploymentResponseVariant1RoutesItemVariant2Middleware._(this.value);
+  const CreateDeploymentResponseVariant1RoutesItemVariant2Middleware._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1RoutesItemVariant2Middleware.fromJson(int value) => CreateDeploymentResponseVariant1RoutesItemVariant2Middleware._(value);
+  factory CreateDeploymentResponseVariant1RoutesItemVariant2Middleware.fromJson(
+          int value) =>
+      CreateDeploymentResponseVariant1RoutesItemVariant2Middleware._(value);
 
-  static const v0 = CreateDeploymentResponseVariant1RoutesItemVariant2Middleware._(0);
+  static const v0 =
+      CreateDeploymentResponseVariant1RoutesItemVariant2Middleware._(0);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1RoutesItemVariant2Middleware && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1RoutesItemVariant2Middleware &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The NSNB decision code for the seat block. TODO: We should consolidate block types.
 final class CreateDeploymentResponseVariant1SeatBlockBlockCode {
-
   final String value;
 
   const CreateDeploymentResponseVariant1SeatBlockBlockCode._(this.value);
 
-  factory CreateDeploymentResponseVariant1SeatBlockBlockCode.fromJson(String value) => CreateDeploymentResponseVariant1SeatBlockBlockCode._(value);
+  factory CreateDeploymentResponseVariant1SeatBlockBlockCode.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1SeatBlockBlockCode._(value);
 
-  static const commitAuthorRequired = CreateDeploymentResponseVariant1SeatBlockBlockCode._('COMMIT_AUTHOR_REQUIRED');
-  static const teamAccessRequired = CreateDeploymentResponseVariant1SeatBlockBlockCode._('TEAM_ACCESS_REQUIRED');
+  static const commitAuthorRequired =
+      CreateDeploymentResponseVariant1SeatBlockBlockCode._(
+          'COMMIT_AUTHOR_REQUIRED');
+  static const teamAccessRequired =
+      CreateDeploymentResponseVariant1SeatBlockBlockCode._(
+          'TEAM_ACCESS_REQUIRED');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1SeatBlockBlockCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1SeatBlockBlockCode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The git provider type associated with gitUserId.
 final class CreateDeploymentResponseVariant1SeatBlockGitProvider {
-
   final String value;
 
   const CreateDeploymentResponseVariant1SeatBlockGitProvider._(this.value);
 
-  factory CreateDeploymentResponseVariant1SeatBlockGitProvider.fromJson(String value) => CreateDeploymentResponseVariant1SeatBlockGitProvider._(value);
+  factory CreateDeploymentResponseVariant1SeatBlockGitProvider.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1SeatBlockGitProvider._(value);
 
-  static const bitbucket = CreateDeploymentResponseVariant1SeatBlockGitProvider._('bitbucket');
-  static const github = CreateDeploymentResponseVariant1SeatBlockGitProvider._('github');
-  static const gitlab = CreateDeploymentResponseVariant1SeatBlockGitProvider._('gitlab');
+  static const bitbucket =
+      CreateDeploymentResponseVariant1SeatBlockGitProvider._('bitbucket');
+  static const github =
+      CreateDeploymentResponseVariant1SeatBlockGitProvider._('github');
+  static const gitlab =
+      CreateDeploymentResponseVariant1SeatBlockGitProvider._('gitlab');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1SeatBlockGitProvider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1SeatBlockGitProvider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Determines if the user was verified during the block. In the git integration case, the commit sender was the author.
 final class CreateDeploymentResponseVariant1SeatBlockIsVerified {
-
   final bool value;
 
   const CreateDeploymentResponseVariant1SeatBlockIsVerified._(this.value);
 
-  factory CreateDeploymentResponseVariant1SeatBlockIsVerified.fromJson(bool value) => CreateDeploymentResponseVariant1SeatBlockIsVerified._(value);
+  factory CreateDeploymentResponseVariant1SeatBlockIsVerified.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1SeatBlockIsVerified._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1SeatBlockIsVerified._(false);
-  static const true_ = CreateDeploymentResponseVariant1SeatBlockIsVerified._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1SeatBlockIsVerified._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1SeatBlockIsVerified._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1SeatBlockIsVerified && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1SeatBlockIsVerified &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(
+          value);
 
-  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(false);
-  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(
+          false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigBundle &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+          ._(value);
 
-  static const v1gi = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory._('1Gi');
-  static const v2gi = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory._('2Gi');
-  static const v4gi = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory._('4Gi');
-  static const v8gi = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory._('8Gi');
+  static const v1gi =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+          ._('1Gi');
+  static const v2gi =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+          ._('2Gi');
+  static const v4gi =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+          ._('4Gi');
+  static const v8gi =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+          ._('8Gi');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(
+          value);
 
-  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(false);
-  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(
+          false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDebug &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+          ._(value);
 
-  static const strict = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode._('strict');
+  static const strict =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+          ._('strict');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture
+          ._(value);
 
-  static const arm64 = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture._('arm64');
-  static const x8664 = CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture._('x86_64');
+  static const arm64 =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture
+          ._('arm64');
+  static const x8664 =
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture
+          ._('x86_64');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueArchitecture &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Event type - must be "queue/v1beta" (REQUIRED)
 enum CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type {
   queueV1beta;
 
-  static CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type fromJson(String value) {
+  static CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'queue/v1beta': return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta;
-      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type: $value');
+      case 'queue/v1beta':
+        return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+            .queueV1beta;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta: return 'queue/v1beta';
+      case CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+            .queueV1beta:
+        return 'queue/v1beta';
     }
   }
 
@@ -268,16 +387,23 @@ enum CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsV
 enum CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type {
   queueV2beta;
 
-  static CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type fromJson(String value) {
+  static CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'queue/v2beta': return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta;
-      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type: $value');
+      case 'queue/v2beta':
+        return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type
+            .queueV2beta;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta: return 'queue/v2beta';
+      case CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type
+            .queueV2beta:
+        return 'queue/v2beta';
     }
   }
 

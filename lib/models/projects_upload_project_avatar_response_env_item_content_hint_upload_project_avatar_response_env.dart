@@ -4,68 +4,101 @@
 part of 'projects_upload.dart';
 
 // projects_upload domain models
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant6 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant6
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant6 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant6(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant7 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant7
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant7 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant7(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant7(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant8 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant8
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant8 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant8(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant8(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant9 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant9
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant9 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant9(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant9(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant10 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant10
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant10 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant10(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant10(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant11 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant11
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant11 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant11(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant11(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant12 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant12
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant12 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant12(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant12(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant13 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant13
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant13 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant13(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant13(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant14 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant14
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant14 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant14(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant14(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant15 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant15
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant15 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant15(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant15(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant16 extends UploadProjectAvatarResponseEnvItemContentHint {
+final class UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant16
+    extends UploadProjectAvatarResponseEnvItemContentHint {
   final UploadProjectAvatarResponseEnvItemContentHintVariant16 value;
-  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseEnvItemContentHintUploadProjectAvatarResponseEnvItemContentHintVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -4,272 +4,492 @@
 part of 'microfrontends.dart';
 
 // microfrontends domain models
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9 implements SdkJsonModel {
+class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }

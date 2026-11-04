@@ -11,20 +11,35 @@ class DeleteProjectAvatarResponseOptionsAllowlist implements SdkJsonModel {
 
   const DeleteProjectAvatarResponseOptionsAllowlist({required this.paths});
 
-  DeleteProjectAvatarResponseOptionsAllowlist Function({List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem> paths}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseOptionsAllowlist Function(
+          {List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem> paths})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseOptionsAllowlist _copyWith({Object? paths = sdkOmittedValue}) => DeleteProjectAvatarResponseOptionsAllowlist(
-    paths: identical(paths, sdkOmittedValue) ? this.paths : paths as List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem>,
-  );
+  DeleteProjectAvatarResponseOptionsAllowlist _copyWith(
+          {Object? paths = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseOptionsAllowlist(
+        paths: identical(paths, sdkOmittedValue)
+            ? this.paths
+            : paths
+                as List<DeleteProjectAvatarResponseOptionsAllowlistPathsItem>,
+      );
 
-  factory DeleteProjectAvatarResponseOptionsAllowlist.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(DeleteProjectAvatarResponseOptionsAllowlist(
-    paths: ((json['paths'] as List?)?.map((e) => DeleteProjectAvatarResponseOptionsAllowlistPathsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory DeleteProjectAvatarResponseOptionsAllowlist.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          DeleteProjectAvatarResponseOptionsAllowlist(
+            paths: ((json['paths'] as List?)
+                ?.map((e) =>
+                    DeleteProjectAvatarResponseOptionsAllowlistPathsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'paths': paths.map((item) => item.toJson()).toList(),
-  };
+        'paths': paths.map((item) => item.toJson()).toList(),
+      };
 }
 
 class DeleteProjectAvatarResponsePassport implements SdkJsonModel {
@@ -33,47 +48,82 @@ class DeleteProjectAvatarResponsePassport implements SdkJsonModel {
   final String connectorId;
   final DeleteProjectAvatarResponsePassportDeploymentType deploymentType;
 
-  const DeleteProjectAvatarResponsePassport({required this.connectorId, required this.deploymentType});
+  const DeleteProjectAvatarResponsePassport(
+      {required this.connectorId, required this.deploymentType});
 
-  DeleteProjectAvatarResponsePassport Function({String connectorId, DeleteProjectAvatarResponsePassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponsePassport Function(
+          {String connectorId,
+          DeleteProjectAvatarResponsePassportDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponsePassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => DeleteProjectAvatarResponsePassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as DeleteProjectAvatarResponsePassportDeploymentType,
-  );
+  DeleteProjectAvatarResponsePassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponsePassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as DeleteProjectAvatarResponsePassportDeploymentType,
+      );
 
-  factory DeleteProjectAvatarResponsePassport.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(DeleteProjectAvatarResponsePassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? DeleteProjectAvatarResponsePassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  ), json);
+  factory DeleteProjectAvatarResponsePassport.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          DeleteProjectAvatarResponsePassport(
+            connectorId: (json['connectorId'] as String?)!,
+            deploymentType: (json['deploymentType'] != null
+                ? DeleteProjectAvatarResponsePassportDeploymentType.fromJson(
+                    json['deploymentType'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Password protection settings returned without the secret password hash.
 class DeleteProjectAvatarResponsePasswordProtection implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final DeleteProjectAvatarResponsePasswordProtectionDeploymentType deploymentType;
+  final DeleteProjectAvatarResponsePasswordProtectionDeploymentType
+      deploymentType;
 
-  const DeleteProjectAvatarResponsePasswordProtection({required this.deploymentType});
+  const DeleteProjectAvatarResponsePasswordProtection(
+      {required this.deploymentType});
 
-  DeleteProjectAvatarResponsePasswordProtection Function({DeleteProjectAvatarResponsePasswordProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponsePasswordProtection Function(
+      {DeleteProjectAvatarResponsePasswordProtectionDeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponsePasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => DeleteProjectAvatarResponsePasswordProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as DeleteProjectAvatarResponsePasswordProtectionDeploymentType,
-  );
+  DeleteProjectAvatarResponsePasswordProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponsePasswordProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as DeleteProjectAvatarResponsePasswordProtectionDeploymentType,
+      );
 
-  factory DeleteProjectAvatarResponsePasswordProtection.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(DeleteProjectAvatarResponsePasswordProtection(
-    deploymentType: (json['deploymentType'] != null ? DeleteProjectAvatarResponsePasswordProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  ), json);
+  factory DeleteProjectAvatarResponsePasswordProtection.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          DeleteProjectAvatarResponsePasswordProtection(
+            deploymentType: (json['deploymentType'] != null
+                ? DeleteProjectAvatarResponsePasswordProtectionDeploymentType
+                    .fromJson(json['deploymentType'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }

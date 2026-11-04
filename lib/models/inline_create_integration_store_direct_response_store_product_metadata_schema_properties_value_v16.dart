@@ -4,7 +4,8 @@
 part of 'inline.dart';
 
 // Inline operation models
-class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem implements SdkJsonModel {
+class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> description;
@@ -13,69 +14,122 @@ class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVa
   final String label;
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem({this.description = const SdkOmitted(), this.disabled = const SdkOmitted(), this.hidden = const SdkOmitted(), required this.label, required this.value});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem(
+      {this.description = const SdkOmitted(),
+      this.disabled = const SdkOmitted(),
+      this.hidden = const SdkOmitted(),
+      required this.label,
+      required this.value});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem Function({SdkOptional<String> description, SdkOptional<dynamic> disabled, SdkOptional<dynamic> hidden, String label, String value}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem Function(
+      {SdkOptional<String> description,
+      SdkOptional<dynamic> disabled,
+      SdkOptional<dynamic> hidden,
+      String label,
+      String value}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem _copyWith({Object? description = sdkOmittedValue, Object? disabled = sdkOmittedValue, Object? hidden = sdkOmittedValue, Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem(
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    disabled: identical(disabled, sdkOmittedValue) ? this.disabled : disabled as SdkOptional<dynamic>,
-    hidden: identical(hidden, sdkOmittedValue) ? this.hidden : hidden as SdkOptional<dynamic>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem
+      _copyWith(
+              {Object? description = sdkOmittedValue,
+              Object? disabled = sdkOmittedValue,
+              Object? hidden = sdkOmittedValue,
+              Object? label = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem(
+            description: identical(description, sdkOmittedValue)
+                ? this.description
+                : description as SdkOptional<String>,
+            disabled: identical(disabled, sdkOmittedValue)
+                ? this.disabled
+                : disabled as SdkOptional<dynamic>,
+            hidden: identical(hidden, sdkOmittedValue)
+                ? this.hidden
+                : hidden as SdkOptional<dynamic>,
+            label: identical(label, sdkOmittedValue)
+                ? this.label
+                : label as String,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as String,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem(
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    disabled: json['disabled'] != null ? SdkPresent((json['disabled'])!) : const SdkOmitted(),
-    hidden: json['hidden'] != null ? SdkPresent((json['hidden'])!) : const SdkOmitted(),
-    label: (json['label'] as String?)!,
-    value: (json['value'] as String?)!,
-  ), json);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem(
+            description: json['description'] != null
+                ? SdkPresent((json['description'] as String?)!)
+                : const SdkOmitted(),
+            disabled: json['disabled'] != null
+                ? SdkPresent((json['disabled'])!)
+                : const SdkOmitted(),
+            hidden: json['hidden'] != null
+                ? SdkPresent((json['hidden'])!)
+                : const SdkOmitted(),
+            label: (json['label'] as String?)!,
+            value: (json['value'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabled) {
-      SdkPresent<dynamic>(value: final value) => {'disabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hidden) {
-      SdkPresent<dynamic>(value: final value) => {'hidden': value,},
-      _ => const <String, dynamic>{},
-    },
-    'label': label,
-    'value': value,
-  };
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabled) {
+          SdkPresent<dynamic>(value: final value) => {
+              'disabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hidden) {
+          SdkPresent<dynamic>(value: final value) => {
+              'hidden': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'label': label,
+        'value': value,
+      };
 }
 
-class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0 implements SdkJsonModel {
+class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0({required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
+      {required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0 Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4 implements SdkJsonModel {
+class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> default_;
@@ -83,208 +137,427 @@ class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVa
   final SdkOptional<double> maxLength;
   final SdkOptional<double> minLength;
   final SdkOptional<String> pattern;
-  final CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type type_;
-  final CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl uiControl;
+  final CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type
+      type_;
+  final CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl
+      uiControl;
   final SdkOptional<dynamic> uiDescription;
   final SdkOptional<dynamic> uiDisabled;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue> uiFormattedValue;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue>
+      uiFormattedValue;
   final SdkOptional<dynamic> uiHidden;
   final SdkOptional<String> uiLabel;
-  final List<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem> uiOptions;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly> uiPaidOnly;
+  final List<
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem>
+      uiOptions;
+  final SdkOptional<
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly>
+      uiPaidOnly;
   final SdkOptional<String> uiPlaceholder;
   final SdkOptional<dynamic> uiReadOnly;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4({this.default_ = const SdkOmitted(), this.description = const SdkOmitted(), this.maxLength = const SdkOmitted(), this.minLength = const SdkOmitted(), this.pattern = const SdkOmitted(), required this.type_, required this.uiControl, this.uiDescription = const SdkOmitted(), this.uiDisabled = const SdkOmitted(), this.uiFormattedValue = const SdkOmitted(), this.uiHidden = const SdkOmitted(), this.uiLabel = const SdkOmitted(), required this.uiOptions, this.uiPaidOnly = const SdkOmitted(), this.uiPlaceholder = const SdkOmitted(), this.uiReadOnly = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4(
+      {this.default_ = const SdkOmitted(),
+      this.description = const SdkOmitted(),
+      this.maxLength = const SdkOmitted(),
+      this.minLength = const SdkOmitted(),
+      this.pattern = const SdkOmitted(),
+      required this.type_,
+      required this.uiControl,
+      this.uiDescription = const SdkOmitted(),
+      this.uiDisabled = const SdkOmitted(),
+      this.uiFormattedValue = const SdkOmitted(),
+      this.uiHidden = const SdkOmitted(),
+      this.uiLabel = const SdkOmitted(),
+      required this.uiOptions,
+      this.uiPaidOnly = const SdkOmitted(),
+      this.uiPlaceholder = const SdkOmitted(),
+      this.uiReadOnly = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4 Function({SdkOptional<String> default_, SdkOptional<String> description, SdkOptional<double> maxLength, SdkOptional<double> minLength, SdkOptional<String> pattern, CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type type_, CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl uiControl, SdkOptional<dynamic> uiDescription, SdkOptional<dynamic> uiDisabled, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue> uiFormattedValue, SdkOptional<dynamic> uiHidden, SdkOptional<String> uiLabel, List<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem> uiOptions, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly> uiPaidOnly, SdkOptional<String> uiPlaceholder, SdkOptional<dynamic> uiReadOnly}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4 Function(
+      {SdkOptional<String> default_,
+      SdkOptional<String> description,
+      SdkOptional<double> maxLength,
+      SdkOptional<double> minLength,
+      SdkOptional<String> pattern,
+      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type
+          type_,
+      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl
+          uiControl,
+      SdkOptional<dynamic> uiDescription,
+      SdkOptional<dynamic> uiDisabled,
+      SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue>
+          uiFormattedValue,
+      SdkOptional<dynamic> uiHidden,
+      SdkOptional<String> uiLabel,
+      List<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem>
+          uiOptions,
+      SdkOptional<
+              CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly>
+          uiPaidOnly,
+      SdkOptional<String> uiPlaceholder,
+      SdkOptional<dynamic> uiReadOnly}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4 _copyWith({Object? default_ = sdkOmittedValue, Object? description = sdkOmittedValue, Object? maxLength = sdkOmittedValue, Object? minLength = sdkOmittedValue, Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? uiControl = sdkOmittedValue, Object? uiDescription = sdkOmittedValue, Object? uiDisabled = sdkOmittedValue, Object? uiFormattedValue = sdkOmittedValue, Object? uiHidden = sdkOmittedValue, Object? uiLabel = sdkOmittedValue, Object? uiOptions = sdkOmittedValue, Object? uiPaidOnly = sdkOmittedValue, Object? uiPlaceholder = sdkOmittedValue, Object? uiReadOnly = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4(
-    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<String>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    maxLength: identical(maxLength, sdkOmittedValue) ? this.maxLength : maxLength as SdkOptional<double>,
-    minLength: identical(minLength, sdkOmittedValue) ? this.minLength : minLength as SdkOptional<double>,
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as SdkOptional<String>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type,
-    uiControl: identical(uiControl, sdkOmittedValue) ? this.uiControl : uiControl as CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl,
-    uiDescription: identical(uiDescription, sdkOmittedValue) ? this.uiDescription : uiDescription as SdkOptional<dynamic>,
-    uiDisabled: identical(uiDisabled, sdkOmittedValue) ? this.uiDisabled : uiDisabled as SdkOptional<dynamic>,
-    uiFormattedValue: identical(uiFormattedValue, sdkOmittedValue) ? this.uiFormattedValue : uiFormattedValue as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue>,
-    uiHidden: identical(uiHidden, sdkOmittedValue) ? this.uiHidden : uiHidden as SdkOptional<dynamic>,
-    uiLabel: identical(uiLabel, sdkOmittedValue) ? this.uiLabel : uiLabel as SdkOptional<String>,
-    uiOptions: identical(uiOptions, sdkOmittedValue) ? this.uiOptions : uiOptions as List<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem>,
-    uiPaidOnly: identical(uiPaidOnly, sdkOmittedValue) ? this.uiPaidOnly : uiPaidOnly as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly>,
-    uiPlaceholder: identical(uiPlaceholder, sdkOmittedValue) ? this.uiPlaceholder : uiPlaceholder as SdkOptional<String>,
-    uiReadOnly: identical(uiReadOnly, sdkOmittedValue) ? this.uiReadOnly : uiReadOnly as SdkOptional<dynamic>,
-  );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4
+      _copyWith(
+              {Object? default_ = sdkOmittedValue,
+              Object? description = sdkOmittedValue,
+              Object? maxLength = sdkOmittedValue,
+              Object? minLength = sdkOmittedValue,
+              Object? pattern = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? uiControl = sdkOmittedValue,
+              Object? uiDescription = sdkOmittedValue,
+              Object? uiDisabled = sdkOmittedValue,
+              Object? uiFormattedValue = sdkOmittedValue,
+              Object? uiHidden = sdkOmittedValue,
+              Object? uiLabel = sdkOmittedValue,
+              Object? uiOptions = sdkOmittedValue,
+              Object? uiPaidOnly = sdkOmittedValue,
+              Object? uiPlaceholder = sdkOmittedValue,
+              Object? uiReadOnly = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4(
+            default_: identical(default_, sdkOmittedValue)
+                ? this.default_
+                : default_ as SdkOptional<String>,
+            description: identical(description, sdkOmittedValue)
+                ? this.description
+                : description as SdkOptional<String>,
+            maxLength: identical(maxLength, sdkOmittedValue)
+                ? this.maxLength
+                : maxLength as SdkOptional<double>,
+            minLength: identical(minLength, sdkOmittedValue)
+                ? this.minLength
+                : minLength as SdkOptional<double>,
+            pattern: identical(pattern, sdkOmittedValue)
+                ? this.pattern
+                : pattern as SdkOptional<String>,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type,
+            uiControl: identical(uiControl, sdkOmittedValue)
+                ? this.uiControl
+                : uiControl
+                    as CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl,
+            uiDescription: identical(uiDescription, sdkOmittedValue)
+                ? this.uiDescription
+                : uiDescription as SdkOptional<dynamic>,
+            uiDisabled: identical(uiDisabled, sdkOmittedValue)
+                ? this.uiDisabled
+                : uiDisabled as SdkOptional<dynamic>,
+            uiFormattedValue: identical(uiFormattedValue, sdkOmittedValue)
+                ? this.uiFormattedValue
+                : uiFormattedValue as SdkOptional<
+                    CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue>,
+            uiHidden: identical(uiHidden, sdkOmittedValue)
+                ? this.uiHidden
+                : uiHidden as SdkOptional<dynamic>,
+            uiLabel: identical(uiLabel, sdkOmittedValue)
+                ? this.uiLabel
+                : uiLabel as SdkOptional<String>,
+            uiOptions: identical(uiOptions, sdkOmittedValue)
+                ? this.uiOptions
+                : uiOptions as List<
+                    CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem>,
+            uiPaidOnly: identical(uiPaidOnly, sdkOmittedValue)
+                ? this.uiPaidOnly
+                : uiPaidOnly as SdkOptional<
+                    CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly>,
+            uiPlaceholder: identical(uiPlaceholder, sdkOmittedValue)
+                ? this.uiPlaceholder
+                : uiPlaceholder as SdkOptional<String>,
+            uiReadOnly: identical(uiReadOnly, sdkOmittedValue)
+                ? this.uiReadOnly
+                : uiReadOnly as SdkOptional<dynamic>,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4(
-    default_: json['default'] != null ? SdkPresent((json['default'] as String?)!) : const SdkOmitted(),
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    maxLength: json['maxLength'] != null ? SdkPresent(((json['maxLength'] as num?)?.toDouble())!) : const SdkOmitted(),
-    minLength: json['minLength'] != null ? SdkPresent(((json['minLength'] as num?)?.toDouble())!) : const SdkOmitted(),
-    pattern: json['pattern'] != null ? SdkPresent((json['pattern'] as String?)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type.fromJson(json['type'] as String) : null)!,
-    uiControl: (json['ui:control'] != null ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl.fromJson(json['ui:control'] as String) : null)!,
-    uiDescription: json['ui:description'] != null ? SdkPresent((json['ui:description'])!) : const SdkOmitted(),
-    uiDisabled: json['ui:disabled'] != null ? SdkPresent((json['ui:disabled'])!) : const SdkOmitted(),
-    uiFormattedValue: json['ui:formatted-value'] != null ? SdkPresent((json['ui:formatted-value'] != null ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue.fromJson(json['ui:formatted-value'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    uiHidden: json['ui:hidden'] != null ? SdkPresent((json['ui:hidden'])!) : const SdkOmitted(),
-    uiLabel: json['ui:label'] != null ? SdkPresent((json['ui:label'] as String?)!) : const SdkOmitted(),
-    uiOptions: ((json['ui:options'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    uiPaidOnly: json['ui:paid-only'] != null ? SdkPresent((json['ui:paid-only'] != null ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly.fromJson(json['ui:paid-only'] as bool) : null)!) : const SdkOmitted(),
-    uiPlaceholder: json['ui:placeholder'] != null ? SdkPresent((json['ui:placeholder'] as String?)!) : const SdkOmitted(),
-    uiReadOnly: json['ui:read-only'] != null ? SdkPresent((json['ui:read-only'])!) : const SdkOmitted(),
-  ), json);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4(
+            default_: json['default'] != null
+                ? SdkPresent((json['default'] as String?)!)
+                : const SdkOmitted(),
+            description: json['description'] != null
+                ? SdkPresent((json['description'] as String?)!)
+                : const SdkOmitted(),
+            maxLength: json['maxLength'] != null
+                ? SdkPresent(((json['maxLength'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            minLength: json['minLength'] != null
+                ? SdkPresent(((json['minLength'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            pattern: json['pattern'] != null
+                ? SdkPresent((json['pattern'] as String?)!)
+                : const SdkOmitted(),
+            type_: (json['type'] != null
+                ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+            uiControl: (json['ui:control'] != null
+                ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiControl
+                    .fromJson(json['ui:control'] as String)
+                : null)!,
+            uiDescription: json['ui:description'] != null
+                ? SdkPresent((json['ui:description'])!)
+                : const SdkOmitted(),
+            uiDisabled: json['ui:disabled'] != null
+                ? SdkPresent((json['ui:disabled'])!)
+                : const SdkOmitted(),
+            uiFormattedValue: json['ui:formatted-value'] != null
+                ? SdkPresent((json['ui:formatted-value'] != null
+                    ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue
+                        .fromJson(
+                            json['ui:formatted-value'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            uiHidden: json['ui:hidden'] != null
+                ? SdkPresent((json['ui:hidden'])!)
+                : const SdkOmitted(),
+            uiLabel: json['ui:label'] != null
+                ? SdkPresent((json['ui:label'] as String?)!)
+                : const SdkOmitted(),
+            uiOptions: ((json['ui:options'] as List?)
+                ?.map((e) =>
+                    CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+            uiPaidOnly: json['ui:paid-only'] != null
+                ? SdkPresent((json['ui:paid-only'] != null
+                    ? CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly
+                        .fromJson(json['ui:paid-only'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            uiPlaceholder: json['ui:placeholder'] != null
+                ? SdkPresent((json['ui:placeholder'] as String?)!)
+                : const SdkOmitted(),
+            uiReadOnly: json['ui:read-only'] != null
+                ? SdkPresent((json['ui:read-only'])!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (default_) {
-      SdkPresent<String>(value: final value) => {'default': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxLength) {
-      SdkPresent<double>(value: final value) => {'maxLength': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (minLength) {
-      SdkPresent<double>(value: final value) => {'minLength': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pattern) {
-      SdkPresent<String>(value: final value) => {'pattern': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    'ui:control': uiControl.toJson(),
-    ...switch (uiDescription) {
-      SdkPresent<dynamic>(value: final value) => {'ui:description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiDisabled) {
-      SdkPresent<dynamic>(value: final value) => {'ui:disabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiFormattedValue) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue>(value: final value) => {'ui:formatted-value': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiHidden) {
-      SdkPresent<dynamic>(value: final value) => {'ui:hidden': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiLabel) {
-      SdkPresent<String>(value: final value) => {'ui:label': value,},
-      _ => const <String, dynamic>{},
-    },
-    'ui:options': uiOptions.map((item) => item.toJson()).toList(),
-    ...switch (uiPaidOnly) {
-      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly>(value: final value) => {'ui:paid-only': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiPlaceholder) {
-      SdkPresent<String>(value: final value) => {'ui:placeholder': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiReadOnly) {
-      SdkPresent<dynamic>(value: final value) => {'ui:read-only': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (default_) {
+          SdkPresent<String>(value: final value) => {
+              'default': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxLength) {
+          SdkPresent<double>(value: final value) => {
+              'maxLength': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (minLength) {
+          SdkPresent<double>(value: final value) => {
+              'minLength': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pattern) {
+          SdkPresent<String>(value: final value) => {
+              'pattern': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        'ui:control': uiControl.toJson(),
+        ...switch (uiDescription) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiDisabled) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:disabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiFormattedValue) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiFormattedValue>(
+            value: final value
+          ) =>
+            {
+              'ui:formatted-value': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiHidden) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:hidden': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiLabel) {
+          SdkPresent<String>(value: final value) => {
+              'ui:label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ui:options': uiOptions.map((item) => item.toJson()).toList(),
+        ...switch (uiPaidOnly) {
+          SdkPresent<
+                CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly>(
+            value: final value
+          ) =>
+            {
+              'ui:paid-only': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiPlaceholder) {
+          SdkPresent<String>(value: final value) => {
+              'ui:placeholder': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiReadOnly) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:read-only': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1 implements SdkJsonModel {
+class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1({required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1(
+      {required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1 Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1
+      Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDescriptionVariant1(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0 implements SdkJsonModel {
+class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0({required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0(
+      {required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0 Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant0(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue implements SdkJsonModel {
+class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue({required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue(
+      {required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue
+      Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiFormattedValue(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0 implements SdkJsonModel {
+class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0({required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0(
+      {required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0 Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant0(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }

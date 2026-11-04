@@ -6,12 +6,12 @@ part of 'inline.dart';
 // Inline operation models
 /// VHS-readiness status, or `null` for a multi-platform index.
 final class VcrImageListItemStatus {
-
   final String value;
 
   const VcrImageListItemStatus._(this.value);
 
-  factory VcrImageListItemStatus.fromJson(String value) => VcrImageListItemStatus._(value);
+  factory VcrImageListItemStatus.fromJson(String value) =>
+      VcrImageListItemStatus._(value);
 
   static const errored = VcrImageListItemStatus._('errored');
   static const preparing = VcrImageListItemStatus._('preparing');
@@ -20,39 +20,44 @@ final class VcrImageListItemStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is VcrImageListItemStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is VcrImageListItemStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the repository is public. Images in public repositories can be pulled by anyone. Defaults to `false` (private).
 final class VcrRepositoryPublic {
-
   final bool value;
 
   const VcrRepositoryPublic._(this.value);
 
-  factory VcrRepositoryPublic.fromJson(bool value) => VcrRepositoryPublic._(value);
+  factory VcrRepositoryPublic.fromJson(bool value) =>
+      VcrRepositoryPublic._(value);
 
   static const false_ = VcrRepositoryPublic._(false);
   static const true_ = VcrRepositoryPublic._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is VcrRepositoryPublic && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is VcrRepositoryPublic && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
 final class VcrTagKind {
-
   final String value;
 
   const VcrTagKind._(this.value);
@@ -65,17 +70,18 @@ final class VcrTagKind {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is VcrTagKind && other.value == value;
+  @override
+  bool operator ==(Object other) => other is VcrTagKind && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// VHS-readiness status, or `null` for a multi-platform index.
 final class VcrTagStatus {
-
   final String value;
 
   const VcrTagStatus._(this.value);
@@ -89,22 +95,25 @@ final class VcrTagStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is VcrTagStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is VcrTagStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The budget scope to archive.
 final class ArchiveAiGatewayBudgetScopeType {
-
   final String value;
 
   const ArchiveAiGatewayBudgetScopeType._(this.value);
 
-  factory ArchiveAiGatewayBudgetScopeType.fromJson(String value) => ArchiveAiGatewayBudgetScopeType._(value);
+  factory ArchiveAiGatewayBudgetScopeType.fromJson(String value) =>
+      ArchiveAiGatewayBudgetScopeType._(value);
 
   static const team = ArchiveAiGatewayBudgetScopeType._('team');
   static const project = ArchiveAiGatewayBudgetScopeType._('project');
@@ -112,66 +121,82 @@ final class ArchiveAiGatewayBudgetScopeType {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ArchiveAiGatewayBudgetScopeType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ArchiveAiGatewayBudgetScopeType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem {
-
   final int value;
 
   const UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem._(this.value);
 
-  factory UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem.fromJson(int value) => UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem._(value);
+  factory UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem.fromJson(
+          int value) =>
+      UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem._(value);
 
   static const v50 = UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem._(50);
   static const v75 = UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem._(75);
-  static const v100 = UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem._(100);
+  static const v100 =
+      UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem._(100);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpsertAiGatewayBudgetRequestBodyRefreshPeriod {
-
   final String value;
 
   const UpsertAiGatewayBudgetRequestBodyRefreshPeriod._(this.value);
 
-  factory UpsertAiGatewayBudgetRequestBodyRefreshPeriod.fromJson(String value) => UpsertAiGatewayBudgetRequestBodyRefreshPeriod._(value);
+  factory UpsertAiGatewayBudgetRequestBodyRefreshPeriod.fromJson(
+          String value) =>
+      UpsertAiGatewayBudgetRequestBodyRefreshPeriod._(value);
 
   static const daily = UpsertAiGatewayBudgetRequestBodyRefreshPeriod._('daily');
-  static const weekly = UpsertAiGatewayBudgetRequestBodyRefreshPeriod._('weekly');
-  static const monthly = UpsertAiGatewayBudgetRequestBodyRefreshPeriod._('monthly');
+  static const weekly =
+      UpsertAiGatewayBudgetRequestBodyRefreshPeriod._('weekly');
+  static const monthly =
+      UpsertAiGatewayBudgetRequestBodyRefreshPeriod._('monthly');
   static const none = UpsertAiGatewayBudgetRequestBodyRefreshPeriod._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpsertAiGatewayBudgetRequestBodyRefreshPeriod && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpsertAiGatewayBudgetRequestBodyRefreshPeriod &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpsertAiGatewayBudgetRequestBodyScopeType {
-
   final String value;
 
   const UpsertAiGatewayBudgetRequestBodyScopeType._(this.value);
 
-  factory UpsertAiGatewayBudgetRequestBodyScopeType.fromJson(String value) => UpsertAiGatewayBudgetRequestBodyScopeType._(value);
+  factory UpsertAiGatewayBudgetRequestBodyScopeType.fromJson(String value) =>
+      UpsertAiGatewayBudgetRequestBodyScopeType._(value);
 
   static const team = UpsertAiGatewayBudgetRequestBodyScopeType._('team');
   static const project = UpsertAiGatewayBudgetRequestBodyScopeType._('project');
@@ -179,22 +204,26 @@ final class UpsertAiGatewayBudgetRequestBodyScopeType {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpsertAiGatewayBudgetRequestBodyScopeType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpsertAiGatewayBudgetRequestBodyScopeType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The budget default scope to delete.
 final class ArchiveAiGatewayBudgetDefaultScopeType {
-
   final String value;
 
   const ArchiveAiGatewayBudgetDefaultScopeType._(this.value);
 
-  factory ArchiveAiGatewayBudgetDefaultScopeType.fromJson(String value) => ArchiveAiGatewayBudgetDefaultScopeType._(value);
+  factory ArchiveAiGatewayBudgetDefaultScopeType.fromJson(String value) =>
+      ArchiveAiGatewayBudgetDefaultScopeType._(value);
 
   static const team = ArchiveAiGatewayBudgetDefaultScopeType._('team');
   static const project = ArchiveAiGatewayBudgetDefaultScopeType._('project');
@@ -203,78 +232,108 @@ final class ArchiveAiGatewayBudgetDefaultScopeType {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ArchiveAiGatewayBudgetDefaultScopeType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ArchiveAiGatewayBudgetDefaultScopeType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem {
-
   final int value;
 
-  const UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(this.value);
+  const UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(
+      this.value);
 
-  factory UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem.fromJson(int value) => UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(value);
+  factory UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem.fromJson(
+          int value) =>
+      UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(value);
 
-  static const v50 = UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(50);
-  static const v75 = UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(75);
-  static const v100 = UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(100);
+  static const v50 =
+      UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(50);
+  static const v75 =
+      UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(75);
+  static const v100 =
+      UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem._(100);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod {
-
   final String value;
 
   const UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._(this.value);
 
-  factory UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod.fromJson(String value) => UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._(value);
+  factory UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod.fromJson(
+          String value) =>
+      UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._(value);
 
-  static const daily = UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('daily');
-  static const weekly = UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('weekly');
-  static const monthly = UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('monthly');
-  static const none = UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('none');
+  static const daily =
+      UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('daily');
+  static const weekly =
+      UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('weekly');
+  static const monthly =
+      UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('monthly');
+  static const none =
+      UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpsertAiGatewayBudgetDefaultRequestBodyScopeType {
-
   final String value;
 
   const UpsertAiGatewayBudgetDefaultRequestBodyScopeType._(this.value);
 
-  factory UpsertAiGatewayBudgetDefaultRequestBodyScopeType.fromJson(String value) => UpsertAiGatewayBudgetDefaultRequestBodyScopeType._(value);
+  factory UpsertAiGatewayBudgetDefaultRequestBodyScopeType.fromJson(
+          String value) =>
+      UpsertAiGatewayBudgetDefaultRequestBodyScopeType._(value);
 
-  static const team = UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('team');
-  static const project = UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('project');
-  static const apiKey = UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('api-key');
-  static const user = UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('user');
+  static const team =
+      UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('team');
+  static const project =
+      UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('project');
+  static const apiKey =
+      UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('api-key');
+  static const user =
+      UpsertAiGatewayBudgetDefaultRequestBodyScopeType._('user');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpsertAiGatewayBudgetDefaultRequestBodyScopeType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpsertAiGatewayBudgetDefaultRequestBodyScopeType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

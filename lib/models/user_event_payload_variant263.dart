@@ -8,248 +8,465 @@ part of 'user.dart';
 class UserEventPayloadVariant263 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `branch` wire field.
   final String branch;
+
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant263({required this.branch, this.projectId = const SdkOmitted(), required this.projectName});
+  const UserEventPayloadVariant263(
+      {required this.branch,
+      this.projectId = const SdkOmitted(),
+      required this.projectName});
 
-  UserEventPayloadVariant263 Function({String branch, SdkOptional<String> projectId, String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant263 Function(
+      {String branch,
+      SdkOptional<String> projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant263 _copyWith({Object? branch = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant263(
-    branch: identical(branch, sdkOmittedValue) ? this.branch : branch as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  UserEventPayloadVariant263 _copyWith(
+          {Object? branch = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant263(
+        branch:
+            identical(branch, sdkOmittedValue) ? this.branch : branch as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory UserEventPayloadVariant263.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant263(
-    branch: (json['branch'] as String?)!,
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    projectName: (json['projectName'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant263.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant263(
+            branch: (json['branch'] as String?)!,
+            projectId: json['projectId'] != null
+                ? SdkPresent((json['projectId'] as String?)!)
+                : const SdkOmitted(),
+            projectName: (json['projectName'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'branch': branch,
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectName': projectName,
-  };
+        'branch': branch,
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectName': projectName,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant264 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `directoryListing` wire field.
   final UserEventPayloadVariant264DirectoryListing directoryListing;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant264({required this.directoryListing, required this.projectId, required this.projectName});
+  const UserEventPayloadVariant264(
+      {required this.directoryListing,
+      required this.projectId,
+      required this.projectName});
 
-  UserEventPayloadVariant264 Function({UserEventPayloadVariant264DirectoryListing directoryListing, String projectId, String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant264 Function(
+      {UserEventPayloadVariant264DirectoryListing directoryListing,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant264 _copyWith({Object? directoryListing = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant264(
-    directoryListing: identical(directoryListing, sdkOmittedValue) ? this.directoryListing : directoryListing as UserEventPayloadVariant264DirectoryListing,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  UserEventPayloadVariant264 _copyWith(
+          {Object? directoryListing = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant264(
+        directoryListing: identical(directoryListing, sdkOmittedValue)
+            ? this.directoryListing
+            : directoryListing as UserEventPayloadVariant264DirectoryListing,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory UserEventPayloadVariant264.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant264(
-    directoryListing: (json['directoryListing'] != null ? UserEventPayloadVariant264DirectoryListing.fromJson(json['directoryListing'] as bool) : null)!,
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant264.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant264(
+            directoryListing: (json['directoryListing'] != null
+                ? UserEventPayloadVariant264DirectoryListing.fromJson(
+                    json['directoryListing'] as bool)
+                : null)!,
+            projectId: (json['projectId'] as String?)!,
+            projectName: (json['projectName'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'directoryListing': directoryListing.toJson(),
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'directoryListing': directoryListing.toJson(),
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }
 
 /// Required object value serialized in the `prevProjectAnalytics` wire field.
 class UserEventPayloadVariant265PrevProjectAnalytics implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `number` value serialized in the `canceledAt` wire field.
   final SdkOptional<double?> canceledAt;
+
   /// Required `number` value serialized in the `disabledAt` wire field.
   final double disabledAt;
+
   /// Required `number` value serialized in the `enabledAt` wire field.
   final double enabledAt;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `number` value serialized in the `paidAt` wire field.
   final SdkOptional<double> paidAt;
+
   /// Optional `number` value serialized in the `sampleRatePercent` wire field.
   final SdkOptional<double?> sampleRatePercent;
+
   /// Optional `number` value serialized in the `spendLimitInDollars` wire field.
   final SdkOptional<double?> spendLimitInDollars;
 
-  const UserEventPayloadVariant265PrevProjectAnalytics({this.canceledAt = const SdkOmitted(), required this.disabledAt, required this.enabledAt, required this.id, this.paidAt = const SdkOmitted(), this.sampleRatePercent = const SdkOmitted(), this.spendLimitInDollars = const SdkOmitted()});
+  const UserEventPayloadVariant265PrevProjectAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      required this.disabledAt,
+      required this.enabledAt,
+      required this.id,
+      this.paidAt = const SdkOmitted(),
+      this.sampleRatePercent = const SdkOmitted(),
+      this.spendLimitInDollars = const SdkOmitted()});
 
-  UserEventPayloadVariant265PrevProjectAnalytics Function({SdkOptional<double?> canceledAt, double disabledAt, double enabledAt, String id, SdkOptional<double> paidAt, SdkOptional<double?> sampleRatePercent, SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
+  UserEventPayloadVariant265PrevProjectAnalytics Function(
+      {SdkOptional<double?> canceledAt,
+      double disabledAt,
+      double enabledAt,
+      String id,
+      SdkOptional<double> paidAt,
+      SdkOptional<double?> sampleRatePercent,
+      SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant265PrevProjectAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue, Object? sampleRatePercent = sdkOmittedValue, Object? spendLimitInDollars = sdkOmittedValue}) => UserEventPayloadVariant265PrevProjectAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double?>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as double,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-    sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue) ? this.sampleRatePercent : sampleRatePercent as SdkOptional<double?>,
-    spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue) ? this.spendLimitInDollars : spendLimitInDollars as SdkOptional<double?>,
-  );
+  UserEventPayloadVariant265PrevProjectAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue,
+          Object? sampleRatePercent = sdkOmittedValue,
+          Object? spendLimitInDollars = sdkOmittedValue}) =>
+      UserEventPayloadVariant265PrevProjectAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double?>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as double,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+        sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue)
+            ? this.sampleRatePercent
+            : sampleRatePercent as SdkOptional<double?>,
+        spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue)
+            ? this.spendLimitInDollars
+            : spendLimitInDollars as SdkOptional<double?>,
+      );
 
-  factory UserEventPayloadVariant265PrevProjectAnalytics.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant265PrevProjectAnalytics(
-    canceledAt: json.containsKey('canceledAt') ? SdkPresent((json['canceledAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
-    enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    sampleRatePercent: json.containsKey('sampleRatePercent') ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble()) : const SdkOmitted(),
-    spendLimitInDollars: json.containsKey('spendLimitInDollars') ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble()) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant265PrevProjectAnalytics.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant265PrevProjectAnalytics(
+            canceledAt: json.containsKey('canceledAt')
+                ? SdkPresent((json['canceledAt'] as num?)?.toDouble())
+                : const SdkOmitted(),
+            disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
+            enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
+            id: (json['id'] as String?)!,
+            paidAt: json['paidAt'] != null
+                ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            sampleRatePercent: json.containsKey('sampleRatePercent')
+                ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble())
+                : const SdkOmitted(),
+            spendLimitInDollars: json.containsKey('spendLimitInDollars')
+                ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble())
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double?>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'disabledAt': disabledAt,
-    'enabledAt': enabledAt,
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sampleRatePercent) {
-      SdkPresent<double?>(value: final value) => {'sampleRatePercent': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (spendLimitInDollars) {
-      SdkPresent<double?>(value: final value) => {'spendLimitInDollars': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double?>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'disabledAt': disabledAt,
+        'enabledAt': enabledAt,
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sampleRatePercent) {
+          SdkPresent<double?>(value: final value) => {
+              'sampleRatePercent': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (spendLimitInDollars) {
+          SdkPresent<double?>(value: final value) => {
+              'spendLimitInDollars': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `projectAnalytics` wire field.
 class UserEventPayloadVariant265ProjectAnalytics implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `number` value serialized in the `canceledAt` wire field.
   final SdkOptional<double?> canceledAt;
+
   /// Required `number` value serialized in the `disabledAt` wire field.
   final double disabledAt;
+
   /// Required `number` value serialized in the `enabledAt` wire field.
   final double enabledAt;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `number` value serialized in the `paidAt` wire field.
   final SdkOptional<double> paidAt;
+
   /// Optional `number` value serialized in the `sampleRatePercent` wire field.
   final SdkOptional<double?> sampleRatePercent;
+
   /// Optional `number` value serialized in the `spendLimitInDollars` wire field.
   final SdkOptional<double?> spendLimitInDollars;
 
-  const UserEventPayloadVariant265ProjectAnalytics({this.canceledAt = const SdkOmitted(), required this.disabledAt, required this.enabledAt, required this.id, this.paidAt = const SdkOmitted(), this.sampleRatePercent = const SdkOmitted(), this.spendLimitInDollars = const SdkOmitted()});
+  const UserEventPayloadVariant265ProjectAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      required this.disabledAt,
+      required this.enabledAt,
+      required this.id,
+      this.paidAt = const SdkOmitted(),
+      this.sampleRatePercent = const SdkOmitted(),
+      this.spendLimitInDollars = const SdkOmitted()});
 
-  UserEventPayloadVariant265ProjectAnalytics Function({SdkOptional<double?> canceledAt, double disabledAt, double enabledAt, String id, SdkOptional<double> paidAt, SdkOptional<double?> sampleRatePercent, SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
+  UserEventPayloadVariant265ProjectAnalytics Function(
+      {SdkOptional<double?> canceledAt,
+      double disabledAt,
+      double enabledAt,
+      String id,
+      SdkOptional<double> paidAt,
+      SdkOptional<double?> sampleRatePercent,
+      SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant265ProjectAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue, Object? sampleRatePercent = sdkOmittedValue, Object? spendLimitInDollars = sdkOmittedValue}) => UserEventPayloadVariant265ProjectAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double?>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as double,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-    sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue) ? this.sampleRatePercent : sampleRatePercent as SdkOptional<double?>,
-    spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue) ? this.spendLimitInDollars : spendLimitInDollars as SdkOptional<double?>,
-  );
+  UserEventPayloadVariant265ProjectAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue,
+          Object? sampleRatePercent = sdkOmittedValue,
+          Object? spendLimitInDollars = sdkOmittedValue}) =>
+      UserEventPayloadVariant265ProjectAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double?>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as double,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+        sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue)
+            ? this.sampleRatePercent
+            : sampleRatePercent as SdkOptional<double?>,
+        spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue)
+            ? this.spendLimitInDollars
+            : spendLimitInDollars as SdkOptional<double?>,
+      );
 
-  factory UserEventPayloadVariant265ProjectAnalytics.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant265ProjectAnalytics(
-    canceledAt: json.containsKey('canceledAt') ? SdkPresent((json['canceledAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
-    enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    sampleRatePercent: json.containsKey('sampleRatePercent') ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble()) : const SdkOmitted(),
-    spendLimitInDollars: json.containsKey('spendLimitInDollars') ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble()) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant265ProjectAnalytics.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant265ProjectAnalytics(
+            canceledAt: json.containsKey('canceledAt')
+                ? SdkPresent((json['canceledAt'] as num?)?.toDouble())
+                : const SdkOmitted(),
+            disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
+            enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
+            id: (json['id'] as String?)!,
+            paidAt: json['paidAt'] != null
+                ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            sampleRatePercent: json.containsKey('sampleRatePercent')
+                ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble())
+                : const SdkOmitted(),
+            spendLimitInDollars: json.containsKey('spendLimitInDollars')
+                ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble())
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double?>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'disabledAt': disabledAt,
-    'enabledAt': enabledAt,
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sampleRatePercent) {
-      SdkPresent<double?>(value: final value) => {'sampleRatePercent': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (spendLimitInDollars) {
-      SdkPresent<double?>(value: final value) => {'spendLimitInDollars': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double?>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'disabledAt': disabledAt,
+        'enabledAt': enabledAt,
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sampleRatePercent) {
+          SdkPresent<double?>(value: final value) => {
+              'sampleRatePercent': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (spendLimitInDollars) {
+          SdkPresent<double?>(value: final value) => {
+              'spendLimitInDollars': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant265 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `prevProjectAnalytics` wire field.
   final UserEventPayloadVariant265PrevProjectAnalytics? prevProjectAnalytics;
+
   /// Required object value serialized in the `projectAnalytics` wire field.
   final UserEventPayloadVariant265ProjectAnalytics? projectAnalytics;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
 
-  const UserEventPayloadVariant265({required this.prevProjectAnalytics, required this.projectAnalytics, required this.projectId, this.projectName = const SdkOmitted()});
+  const UserEventPayloadVariant265(
+      {required this.prevProjectAnalytics,
+      required this.projectAnalytics,
+      required this.projectId,
+      this.projectName = const SdkOmitted()});
 
-  UserEventPayloadVariant265 Function({UserEventPayloadVariant265PrevProjectAnalytics? prevProjectAnalytics, UserEventPayloadVariant265ProjectAnalytics? projectAnalytics, String projectId, SdkOptional<String> projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant265 Function(
+      {UserEventPayloadVariant265PrevProjectAnalytics? prevProjectAnalytics,
+      UserEventPayloadVariant265ProjectAnalytics? projectAnalytics,
+      String projectId,
+      SdkOptional<String> projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant265 _copyWith({Object? prevProjectAnalytics = sdkOmittedValue, Object? projectAnalytics = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant265(
-    prevProjectAnalytics: identical(prevProjectAnalytics, sdkOmittedValue) ? this.prevProjectAnalytics : prevProjectAnalytics as UserEventPayloadVariant265PrevProjectAnalytics?,
-    projectAnalytics: identical(projectAnalytics, sdkOmittedValue) ? this.projectAnalytics : projectAnalytics as UserEventPayloadVariant265ProjectAnalytics?,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-  );
+  UserEventPayloadVariant265 _copyWith(
+          {Object? prevProjectAnalytics = sdkOmittedValue,
+          Object? projectAnalytics = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant265(
+        prevProjectAnalytics: identical(prevProjectAnalytics, sdkOmittedValue)
+            ? this.prevProjectAnalytics
+            : prevProjectAnalytics
+                as UserEventPayloadVariant265PrevProjectAnalytics?,
+        projectAnalytics: identical(projectAnalytics, sdkOmittedValue)
+            ? this.projectAnalytics
+            : projectAnalytics as UserEventPayloadVariant265ProjectAnalytics?,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant265.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant265(
-    prevProjectAnalytics: json.containsKey('prevProjectAnalytics') ? json['prevProjectAnalytics'] != null ? UserEventPayloadVariant265PrevProjectAnalytics.fromJson(json['prevProjectAnalytics'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'prevProjectAnalytics', 'Required property is missing'),
-    projectAnalytics: json.containsKey('projectAnalytics') ? json['projectAnalytics'] != null ? UserEventPayloadVariant265ProjectAnalytics.fromJson(json['projectAnalytics'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'projectAnalytics', 'Required property is missing'),
-    projectId: (json['projectId'] as String?)!,
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant265.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant265(
+            prevProjectAnalytics: json.containsKey('prevProjectAnalytics')
+                ? json['prevProjectAnalytics'] != null
+                    ? UserEventPayloadVariant265PrevProjectAnalytics.fromJson(
+                        json['prevProjectAnalytics'] as Map<String, dynamic>)
+                    : null
+                : throw ArgumentError.value(null, 'prevProjectAnalytics',
+                    'Required property is missing'),
+            projectAnalytics: json.containsKey('projectAnalytics')
+                ? json['projectAnalytics'] != null
+                    ? UserEventPayloadVariant265ProjectAnalytics.fromJson(
+                        json['projectAnalytics'] as Map<String, dynamic>)
+                    : null
+                : throw ArgumentError.value(
+                    null, 'projectAnalytics', 'Required property is missing'),
+            projectId: (json['projectId'] as String?)!,
+            projectName: json['projectName'] != null
+                ? SdkPresent((json['projectName'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'prevProjectAnalytics': prevProjectAnalytics?.toJson(),
-    'projectAnalytics': projectAnalytics?.toJson(),
-    'projectId': projectId,
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'prevProjectAnalytics': prevProjectAnalytics?.toJson(),
+        'projectAnalytics': projectAnalytics?.toJson(),
+        'projectId': projectId,
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

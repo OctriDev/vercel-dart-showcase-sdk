@@ -4,31 +4,43 @@
 part of 'deployments.dart';
 
 // deployments domain models
-class GetDeploymentResponseVariant1LambdasItemOutputItem implements SdkJsonModel {
+class GetDeploymentResponseVariant1LambdasItemOutputItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String functionName;
   final String path;
 
-  const GetDeploymentResponseVariant1LambdasItemOutputItem({required this.functionName, required this.path});
+  const GetDeploymentResponseVariant1LambdasItemOutputItem(
+      {required this.functionName, required this.path});
 
-  GetDeploymentResponseVariant1LambdasItemOutputItem Function({String functionName, String path}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1LambdasItemOutputItem Function(
+      {String functionName, String path}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1LambdasItemOutputItem _copyWith({Object? functionName = sdkOmittedValue, Object? path = sdkOmittedValue}) => GetDeploymentResponseVariant1LambdasItemOutputItem(
-    functionName: identical(functionName, sdkOmittedValue) ? this.functionName : functionName as String,
-    path: identical(path, sdkOmittedValue) ? this.path : path as String,
-  );
+  GetDeploymentResponseVariant1LambdasItemOutputItem _copyWith(
+          {Object? functionName = sdkOmittedValue,
+          Object? path = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1LambdasItemOutputItem(
+        functionName: identical(functionName, sdkOmittedValue)
+            ? this.functionName
+            : functionName as String,
+        path: identical(path, sdkOmittedValue) ? this.path : path as String,
+      );
 
-  factory GetDeploymentResponseVariant1LambdasItemOutputItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1LambdasItemOutputItem(
-    functionName: (json['functionName'] as String?)!,
-    path: (json['path'] as String?)!,
-  ), json);
+  factory GetDeploymentResponseVariant1LambdasItemOutputItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1LambdasItemOutputItem(
+            functionName: (json['functionName'] as String?)!,
+            path: (json['path'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'functionName': functionName,
-    'path': path,
-  };
+        'functionName': functionName,
+        'path': path,
+      };
 }
 
 /// A partial representation of a Build used by the deployment endpoint.
@@ -38,194 +50,373 @@ class GetDeploymentResponseVariant1LambdasItem implements SdkJsonModel {
   final SdkOptional<double> createdAt;
   final SdkOptional<String?> entrypoint;
   final String id;
-  final SdkOptional<GetDeploymentResponseVariant1LambdasItemReadyState> readyState;
+  final SdkOptional<GetDeploymentResponseVariant1LambdasItemReadyState>
+      readyState;
   final SdkOptional<double> readyStateAt;
   final List<GetDeploymentResponseVariant1LambdasItemOutputItem> output;
 
-  const GetDeploymentResponseVariant1LambdasItem({this.createdAt = const SdkOmitted(), this.entrypoint = const SdkOmitted(), required this.id, this.readyState = const SdkOmitted(), this.readyStateAt = const SdkOmitted(), required this.output});
+  const GetDeploymentResponseVariant1LambdasItem(
+      {this.createdAt = const SdkOmitted(),
+      this.entrypoint = const SdkOmitted(),
+      required this.id,
+      this.readyState = const SdkOmitted(),
+      this.readyStateAt = const SdkOmitted(),
+      required this.output});
 
-  GetDeploymentResponseVariant1LambdasItem Function({SdkOptional<double> createdAt, SdkOptional<String?> entrypoint, String id, SdkOptional<GetDeploymentResponseVariant1LambdasItemReadyState> readyState, SdkOptional<double> readyStateAt, List<GetDeploymentResponseVariant1LambdasItemOutputItem> output}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1LambdasItem Function(
+          {SdkOptional<double> createdAt,
+          SdkOptional<String?> entrypoint,
+          String id,
+          SdkOptional<GetDeploymentResponseVariant1LambdasItemReadyState>
+              readyState,
+          SdkOptional<double> readyStateAt,
+          List<GetDeploymentResponseVariant1LambdasItemOutputItem> output})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1LambdasItem _copyWith({Object? createdAt = sdkOmittedValue, Object? entrypoint = sdkOmittedValue, Object? id = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? readyStateAt = sdkOmittedValue, Object? output = sdkOmittedValue}) => GetDeploymentResponseVariant1LambdasItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    entrypoint: identical(entrypoint, sdkOmittedValue) ? this.entrypoint : entrypoint as SdkOptional<String?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as SdkOptional<GetDeploymentResponseVariant1LambdasItemReadyState>,
-    readyStateAt: identical(readyStateAt, sdkOmittedValue) ? this.readyStateAt : readyStateAt as SdkOptional<double>,
-    output: identical(output, sdkOmittedValue) ? this.output : output as List<GetDeploymentResponseVariant1LambdasItemOutputItem>,
-  );
+  GetDeploymentResponseVariant1LambdasItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? entrypoint = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? readyState = sdkOmittedValue,
+          Object? readyStateAt = sdkOmittedValue,
+          Object? output = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1LambdasItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        entrypoint: identical(entrypoint, sdkOmittedValue)
+            ? this.entrypoint
+            : entrypoint as SdkOptional<String?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        readyState: identical(readyState, sdkOmittedValue)
+            ? this.readyState
+            : readyState as SdkOptional<
+                GetDeploymentResponseVariant1LambdasItemReadyState>,
+        readyStateAt: identical(readyStateAt, sdkOmittedValue)
+            ? this.readyStateAt
+            : readyStateAt as SdkOptional<double>,
+        output: identical(output, sdkOmittedValue)
+            ? this.output
+            : output
+                as List<GetDeploymentResponseVariant1LambdasItemOutputItem>,
+      );
 
-  factory GetDeploymentResponseVariant1LambdasItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1LambdasItem(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    entrypoint: json.containsKey('entrypoint') ? SdkPresent(json['entrypoint'] as String?) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    readyState: json['readyState'] != null ? SdkPresent((json['readyState'] != null ? GetDeploymentResponseVariant1LambdasItemReadyState.fromJson(json['readyState'] as String) : null)!) : const SdkOmitted(),
-    readyStateAt: json['readyStateAt'] != null ? SdkPresent(((json['readyStateAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    output: ((json['output'] as List?)?.map((e) => GetDeploymentResponseVariant1LambdasItemOutputItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory GetDeploymentResponseVariant1LambdasItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1LambdasItem(
+            createdAt: json['createdAt'] != null
+                ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            entrypoint: json.containsKey('entrypoint')
+                ? SdkPresent(json['entrypoint'] as String?)
+                : const SdkOmitted(),
+            id: (json['id'] as String?)!,
+            readyState: json['readyState'] != null
+                ? SdkPresent((json['readyState'] != null
+                    ? GetDeploymentResponseVariant1LambdasItemReadyState
+                        .fromJson(json['readyState'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            readyStateAt: json['readyStateAt'] != null
+                ? SdkPresent(((json['readyStateAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            output: ((json['output'] as List?)
+                ?.map((e) =>
+                    GetDeploymentResponseVariant1LambdasItemOutputItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (entrypoint) {
-      SdkPresent<String?>(value: final value) => {'entrypoint': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (readyState) {
-      SdkPresent<GetDeploymentResponseVariant1LambdasItemReadyState>(value: final value) => {'readyState': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (readyStateAt) {
-      SdkPresent<double>(value: final value) => {'readyStateAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'output': output.map((item) => item.toJson()).toList(),
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (entrypoint) {
+          SdkPresent<String?>(value: final value) => {
+              'entrypoint': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (readyState) {
+          SdkPresent<GetDeploymentResponseVariant1LambdasItemReadyState>(
+            value: final value
+          ) =>
+            {
+              'readyState': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (readyStateAt) {
+          SdkPresent<double>(value: final value) => {
+              'readyStateAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'output': output.map((item) => item.toJson()).toList(),
+      };
 }
 
-class GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1 implements SdkJsonModel {
+class GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Routing-only path used to select a route inside the target service.
   final SdkOptional<String> path;
   final String service;
+
   /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
-  final SdkOptional<GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type> type_;
+  final SdkOptional<
+          GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type>
+      type_;
 
-  const GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1({this.path = const SdkOmitted(), required this.service, this.type_ = const SdkOmitted()});
+  const GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(
+      {this.path = const SdkOmitted(),
+      required this.service,
+      this.type_ = const SdkOmitted()});
 
-  GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1 Function({SdkOptional<String> path, String service, SdkOptional<GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type> type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1 Function(
+      {SdkOptional<String> path,
+      String service,
+      SdkOptional<
+              GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type>
+          type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1 _copyWith({Object? path = sdkOmittedValue, Object? service = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(
-    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
-    service: identical(service, sdkOmittedValue) ? this.service : service as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type>,
-  );
+  GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1 _copyWith(
+          {Object? path = sdkOmittedValue,
+          Object? service = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(
+        path: identical(path, sdkOmittedValue)
+            ? this.path
+            : path as SdkOptional<String>,
+        service: identical(service, sdkOmittedValue)
+            ? this.service
+            : service as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<
+                GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type>,
+      );
 
-  factory GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(
-    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
-    service: (json['service'] as String?)!,
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-  ), json);
+  factory GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(
+            path: json['path'] != null
+                ? SdkPresent((json['path'] as String?)!)
+                : const SdkOmitted(),
+            service: (json['service'] as String?)!,
+            type_: json['type'] != null
+                ? SdkPresent((json['type'] != null
+                    ? GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type
+                        .fromJson(json['type'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (path) {
-      SdkPresent<String>(value: final value) => {'path': value,},
-      _ => const <String, dynamic>{},
-    },
-    'service': service,
-    ...switch (type_) {
-      SdkPresent<GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (path) {
+          SdkPresent<String>(value: final value) => {
+              'path': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'service': service,
+        ...switch (type_) {
+          SdkPresent<
+                GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1Type>(
+            value: final value
+          ) =>
+            {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class GetDeploymentResponseVariant1RoutesItemVariant0Destination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetDeploymentResponseVariant1RoutesItemVariant0Destination();
-  factory GetDeploymentResponseVariant1RoutesItemVariant0Destination.fromJson(Object? json) {
-    if (json is String) { return GetDeploymentResponseVariant1RoutesItemVariant0DestinationString(json); }
-    try { return GetDeploymentResponseVariant1RoutesItemVariant0DestinationGetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetDeploymentResponseVariant1RoutesItemVariant0Destination");
+  factory GetDeploymentResponseVariant1RoutesItemVariant0Destination.fromJson(
+      Object? json) {
+    if (json is String) {
+      return GetDeploymentResponseVariant1RoutesItemVariant0DestinationString(
+          json);
+    }
+    try {
+      return GetDeploymentResponseVariant1RoutesItemVariant0DestinationGetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(
+          GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetDeploymentResponseVariant1RoutesItemVariant0Destination");
   }
   Object? toJson();
 }
 
-final class GetDeploymentResponseVariant1RoutesItemVariant0DestinationString extends GetDeploymentResponseVariant1RoutesItemVariant0Destination {
+final class GetDeploymentResponseVariant1RoutesItemVariant0DestinationString
+    extends GetDeploymentResponseVariant1RoutesItemVariant0Destination {
   final String value;
-  const GetDeploymentResponseVariant1RoutesItemVariant0DestinationString(this.value);
-  @override Object? toJson() => value;
+  const GetDeploymentResponseVariant1RoutesItemVariant0DestinationString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class GetDeploymentResponseVariant1RoutesItemVariant0DestinationGetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1 extends GetDeploymentResponseVariant1RoutesItemVariant0Destination {
-  final GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1 value;
-  const GetDeploymentResponseVariant1RoutesItemVariant0DestinationGetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetDeploymentResponseVariant1RoutesItemVariant0DestinationGetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1
+    extends GetDeploymentResponseVariant1RoutesItemVariant0Destination {
+  final GetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1
+      value;
+  const GetDeploymentResponseVariant1RoutesItemVariant0DestinationGetDeploymentResponseVariant1RoutesItemVariant0DestinationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-class GetDeploymentResponseVariant1RoutesItemVariant0Locale implements SdkJsonModel {
+class GetDeploymentResponseVariant1RoutesItemVariant0Locale
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> cookie;
   final SdkOptional<Map<String, String>> redirect;
 
-  const GetDeploymentResponseVariant1RoutesItemVariant0Locale({this.cookie = const SdkOmitted(), this.redirect = const SdkOmitted()});
+  const GetDeploymentResponseVariant1RoutesItemVariant0Locale(
+      {this.cookie = const SdkOmitted(), this.redirect = const SdkOmitted()});
 
-  GetDeploymentResponseVariant1RoutesItemVariant0Locale Function({SdkOptional<String> cookie, SdkOptional<Map<String, String>> redirect}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1RoutesItemVariant0Locale Function(
+      {SdkOptional<String> cookie,
+      SdkOptional<Map<String, String>> redirect}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1RoutesItemVariant0Locale _copyWith({Object? cookie = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => GetDeploymentResponseVariant1RoutesItemVariant0Locale(
-    cookie: identical(cookie, sdkOmittedValue) ? this.cookie : cookie as SdkOptional<String>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<Map<String, String>>,
-  );
+  GetDeploymentResponseVariant1RoutesItemVariant0Locale _copyWith(
+          {Object? cookie = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1RoutesItemVariant0Locale(
+        cookie: identical(cookie, sdkOmittedValue)
+            ? this.cookie
+            : cookie as SdkOptional<String>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<Map<String, String>>,
+      );
 
-  factory GetDeploymentResponseVariant1RoutesItemVariant0Locale.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1RoutesItemVariant0Locale(
-    cookie: json['cookie'] != null ? SdkPresent((json['cookie'] as String?)!) : const SdkOmitted(),
-    redirect: json['redirect'] != null ? SdkPresent((json['redirect'] == null ? null : Map<String, dynamic>.from(json['redirect'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-  ), json);
+  factory GetDeploymentResponseVariant1RoutesItemVariant0Locale.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1RoutesItemVariant0Locale(
+            cookie: json['cookie'] != null
+                ? SdkPresent((json['cookie'] as String?)!)
+                : const SdkOmitted(),
+            redirect: json['redirect'] != null
+                ? SdkPresent((json['redirect'] == null
+                    ? null
+                    : Map<String, dynamic>.from(json['redirect'] as Map)
+                        .map((key, value) => MapEntry(key, value as String)))!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (cookie) {
-      SdkPresent<String>(value: final value) => {'cookie': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<Map<String, String>>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (cookie) {
+          SdkPresent<String>(value: final value) => {
+              'cookie': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class GetDeploymentResponseVariant1RoutesItemVariant0Mitigate implements SdkJsonModel {
+class GetDeploymentResponseVariant1RoutesItemVariant0Mitigate
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final GetDeploymentResponseVariant1RoutesItemVariant0MitigateAction action;
 
-  const GetDeploymentResponseVariant1RoutesItemVariant0Mitigate({required this.action});
+  const GetDeploymentResponseVariant1RoutesItemVariant0Mitigate(
+      {required this.action});
 
-  GetDeploymentResponseVariant1RoutesItemVariant0Mitigate Function({GetDeploymentResponseVariant1RoutesItemVariant0MitigateAction action}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1RoutesItemVariant0Mitigate Function(
+      {GetDeploymentResponseVariant1RoutesItemVariant0MitigateAction
+          action}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1RoutesItemVariant0Mitigate _copyWith({Object? action = sdkOmittedValue}) => GetDeploymentResponseVariant1RoutesItemVariant0Mitigate(
-    action: identical(action, sdkOmittedValue) ? this.action : action as GetDeploymentResponseVariant1RoutesItemVariant0MitigateAction,
-  );
+  GetDeploymentResponseVariant1RoutesItemVariant0Mitigate _copyWith(
+          {Object? action = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1RoutesItemVariant0Mitigate(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as GetDeploymentResponseVariant1RoutesItemVariant0MitigateAction,
+      );
 
-  factory GetDeploymentResponseVariant1RoutesItemVariant0Mitigate.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1RoutesItemVariant0Mitigate(
-    action: (json['action'] != null ? GetDeploymentResponseVariant1RoutesItemVariant0MitigateAction.fromJson(json['action'] as String) : null)!,
-  ), json);
+  factory GetDeploymentResponseVariant1RoutesItemVariant0Mitigate.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1RoutesItemVariant0Mitigate(
+            action: (json['action'] != null
+                ? GetDeploymentResponseVariant1RoutesItemVariant0MitigateAction
+                    .fromJson(json['action'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-  };
+        'action': action.toJson(),
+      };
 }
 
 sealed class GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq();
-  factory GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq.fromJson(Object? json) {
-    if (json is String) { return GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqString(json); }
-    if (json is num) { return GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqDouble(json.toDouble()); }
-    throw FormatException("No variant matched for GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq");
+  factory GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq.fromJson(
+      Object? json) {
+    if (json is String) {
+      return GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqString(
+          json);
+    }
+    if (json is num) {
+      return GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqDouble(
+          json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq");
   }
   Object? toJson();
 }
 
-final class GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqString extends GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq {
+final class GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqString
+    extends GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq {
   final String value;
-  const GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqString(this.value);
-  @override Object? toJson() => value;
+  const GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqDouble extends GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq {
+final class GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqDouble
+    extends GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1Eq {
   final double value;
-  const GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqDouble(this.value);
-  @override Object? toJson() => value;
+  const GetDeploymentResponseVariant1RoutesItemVariant0HasItemVariant0ValueVariant1EqDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }

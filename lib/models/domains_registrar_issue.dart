@@ -8,28 +8,42 @@ part of 'domains_registrar.dart';
 class Issue implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The path to the property where the issue occurred
   final List<PropertyKey> path;
+
   /// A descriptive message explaining the issue
   final String message;
 
   const Issue({required this.path, required this.message});
 
-  Issue Function({List<PropertyKey> path, String message}) get copyWith => _copyWith;
+  Issue Function({List<PropertyKey> path, String message}) get copyWith =>
+      _copyWith;
 
-  Issue _copyWith({Object? path = sdkOmittedValue, Object? message = sdkOmittedValue}) => Issue(
-    path: identical(path, sdkOmittedValue) ? this.path : path as List<PropertyKey>,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  Issue _copyWith(
+          {Object? path = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      Issue(
+        path: identical(path, sdkOmittedValue)
+            ? this.path
+            : path as List<PropertyKey>,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory Issue.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(Issue(
-    path: ((json['path'] as List?)?.map((e) => PropertyKey.fromJson(e)).toList())!,
-    message: (json['message'] as String?)!,
-  ), json);
+  factory Issue.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(
+      Issue(
+        path: ((json['path'] as List?)
+            ?.map((e) => PropertyKey.fromJson(e))
+            .toList())!,
+        message: (json['message'] as String?)!,
+      ),
+      json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'path': path.map((item) => item.toJson()).toList(),
-    'message': message,
-  };
+        'path': path.map((item) => item.toJson()).toList(),
+        'message': message,
+      };
 }

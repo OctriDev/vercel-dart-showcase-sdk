@@ -8,283 +8,509 @@ part of 'user.dart';
 class UserEventPayloadVariant225 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `directoryGroupId` wire field.
   final String directoryGroupId;
+
   /// Required `string` value serialized in the `directoryId` wire field.
   final String directoryId;
+
   /// Required `string` value serialized in the `groupName` wire field.
   final String groupName;
+
   /// Required object value serialized in the `next` wire field.
   final UserEventPayloadVariant225Next next;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
 
-  const UserEventPayloadVariant225({required this.directoryGroupId, required this.directoryId, required this.groupName, required this.next, required this.organizationId});
+  const UserEventPayloadVariant225(
+      {required this.directoryGroupId,
+      required this.directoryId,
+      required this.groupName,
+      required this.next,
+      required this.organizationId});
 
-  UserEventPayloadVariant225 Function({String directoryGroupId, String directoryId, String groupName, UserEventPayloadVariant225Next next, String organizationId}) get copyWith => _copyWith;
+  UserEventPayloadVariant225 Function(
+      {String directoryGroupId,
+      String directoryId,
+      String groupName,
+      UserEventPayloadVariant225Next next,
+      String organizationId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant225 _copyWith({Object? directoryGroupId = sdkOmittedValue, Object? directoryId = sdkOmittedValue, Object? groupName = sdkOmittedValue, Object? next = sdkOmittedValue, Object? organizationId = sdkOmittedValue}) => UserEventPayloadVariant225(
-    directoryGroupId: identical(directoryGroupId, sdkOmittedValue) ? this.directoryGroupId : directoryGroupId as String,
-    directoryId: identical(directoryId, sdkOmittedValue) ? this.directoryId : directoryId as String,
-    groupName: identical(groupName, sdkOmittedValue) ? this.groupName : groupName as String,
-    next: identical(next, sdkOmittedValue) ? this.next : next as UserEventPayloadVariant225Next,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-  );
+  UserEventPayloadVariant225 _copyWith(
+          {Object? directoryGroupId = sdkOmittedValue,
+          Object? directoryId = sdkOmittedValue,
+          Object? groupName = sdkOmittedValue,
+          Object? next = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue}) =>
+      UserEventPayloadVariant225(
+        directoryGroupId: identical(directoryGroupId, sdkOmittedValue)
+            ? this.directoryGroupId
+            : directoryGroupId as String,
+        directoryId: identical(directoryId, sdkOmittedValue)
+            ? this.directoryId
+            : directoryId as String,
+        groupName: identical(groupName, sdkOmittedValue)
+            ? this.groupName
+            : groupName as String,
+        next: identical(next, sdkOmittedValue)
+            ? this.next
+            : next as UserEventPayloadVariant225Next,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+      );
 
-  factory UserEventPayloadVariant225.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant225(
-    directoryGroupId: (json['directoryGroupId'] as String?)!,
-    directoryId: (json['directoryId'] as String?)!,
-    groupName: (json['groupName'] as String?)!,
-    next: (json['next'] != null ? UserEventPayloadVariant225Next.fromJson(json['next'] as Map<String, dynamic>) : null)!,
-    organizationId: (json['organizationId'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant225.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant225(
+            directoryGroupId: (json['directoryGroupId'] as String?)!,
+            directoryId: (json['directoryId'] as String?)!,
+            groupName: (json['groupName'] as String?)!,
+            next: (json['next'] != null
+                ? UserEventPayloadVariant225Next.fromJson(
+                    json['next'] as Map<String, dynamic>)
+                : null)!,
+            organizationId: (json['organizationId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'directoryGroupId': directoryGroupId,
-    'directoryId': directoryId,
-    'groupName': groupName,
-    'next': next.toJson(),
-    'organizationId': organizationId,
-  };
+        'directoryGroupId': directoryGroupId,
+        'directoryId': directoryId,
+        'groupName': groupName,
+        'next': next.toJson(),
+        'organizationId': organizationId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant226 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `directoryGroupId` wire field.
   final String directoryGroupId;
+
   /// Required `string` value serialized in the `directoryId` wire field.
   final String directoryId;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
 
-  const UserEventPayloadVariant226({required this.directoryGroupId, required this.directoryId, required this.organizationId});
+  const UserEventPayloadVariant226(
+      {required this.directoryGroupId,
+      required this.directoryId,
+      required this.organizationId});
 
-  UserEventPayloadVariant226 Function({String directoryGroupId, String directoryId, String organizationId}) get copyWith => _copyWith;
+  UserEventPayloadVariant226 Function(
+      {String directoryGroupId,
+      String directoryId,
+      String organizationId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant226 _copyWith({Object? directoryGroupId = sdkOmittedValue, Object? directoryId = sdkOmittedValue, Object? organizationId = sdkOmittedValue}) => UserEventPayloadVariant226(
-    directoryGroupId: identical(directoryGroupId, sdkOmittedValue) ? this.directoryGroupId : directoryGroupId as String,
-    directoryId: identical(directoryId, sdkOmittedValue) ? this.directoryId : directoryId as String,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-  );
+  UserEventPayloadVariant226 _copyWith(
+          {Object? directoryGroupId = sdkOmittedValue,
+          Object? directoryId = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue}) =>
+      UserEventPayloadVariant226(
+        directoryGroupId: identical(directoryGroupId, sdkOmittedValue)
+            ? this.directoryGroupId
+            : directoryGroupId as String,
+        directoryId: identical(directoryId, sdkOmittedValue)
+            ? this.directoryId
+            : directoryId as String,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+      );
 
-  factory UserEventPayloadVariant226.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant226(
-    directoryGroupId: (json['directoryGroupId'] as String?)!,
-    directoryId: (json['directoryId'] as String?)!,
-    organizationId: (json['organizationId'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant226.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant226(
+            directoryGroupId: (json['directoryGroupId'] as String?)!,
+            directoryId: (json['directoryId'] as String?)!,
+            organizationId: (json['organizationId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'directoryGroupId': directoryGroupId,
-    'directoryId': directoryId,
-    'organizationId': organizationId,
-  };
+        'directoryGroupId': directoryGroupId,
+        'directoryId': directoryId,
+        'organizationId': organizationId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant227 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `copiedDomains` wire field.
   final List<String> copiedDomains;
+
   /// Required enumerated value serialized in the `enabledOrganizationEmu` wire field.
   final UserEventPayloadVariant227EnabledOrganizationEmu enabledOrganizationEmu;
+
   /// Required array value serialized in the `enabledTeamIds` wire field.
   final List<String> enabledTeamIds;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
+
   /// Required `string` value serialized in the `teamSlug` wire field.
   final String teamSlug;
 
-  const UserEventPayloadVariant227({required this.copiedDomains, required this.enabledOrganizationEmu, required this.enabledTeamIds, required this.organizationId, required this.teamId, required this.teamSlug});
+  const UserEventPayloadVariant227(
+      {required this.copiedDomains,
+      required this.enabledOrganizationEmu,
+      required this.enabledTeamIds,
+      required this.organizationId,
+      required this.teamId,
+      required this.teamSlug});
 
-  UserEventPayloadVariant227 Function({List<String> copiedDomains, UserEventPayloadVariant227EnabledOrganizationEmu enabledOrganizationEmu, List<String> enabledTeamIds, String organizationId, String teamId, String teamSlug}) get copyWith => _copyWith;
+  UserEventPayloadVariant227 Function(
+      {List<String> copiedDomains,
+      UserEventPayloadVariant227EnabledOrganizationEmu enabledOrganizationEmu,
+      List<String> enabledTeamIds,
+      String organizationId,
+      String teamId,
+      String teamSlug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant227 _copyWith({Object? copiedDomains = sdkOmittedValue, Object? enabledOrganizationEmu = sdkOmittedValue, Object? enabledTeamIds = sdkOmittedValue, Object? organizationId = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? teamSlug = sdkOmittedValue}) => UserEventPayloadVariant227(
-    copiedDomains: identical(copiedDomains, sdkOmittedValue) ? this.copiedDomains : copiedDomains as List<String>,
-    enabledOrganizationEmu: identical(enabledOrganizationEmu, sdkOmittedValue) ? this.enabledOrganizationEmu : enabledOrganizationEmu as UserEventPayloadVariant227EnabledOrganizationEmu,
-    enabledTeamIds: identical(enabledTeamIds, sdkOmittedValue) ? this.enabledTeamIds : enabledTeamIds as List<String>,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    teamSlug: identical(teamSlug, sdkOmittedValue) ? this.teamSlug : teamSlug as String,
-  );
+  UserEventPayloadVariant227 _copyWith(
+          {Object? copiedDomains = sdkOmittedValue,
+          Object? enabledOrganizationEmu = sdkOmittedValue,
+          Object? enabledTeamIds = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? teamSlug = sdkOmittedValue}) =>
+      UserEventPayloadVariant227(
+        copiedDomains: identical(copiedDomains, sdkOmittedValue)
+            ? this.copiedDomains
+            : copiedDomains as List<String>,
+        enabledOrganizationEmu:
+            identical(enabledOrganizationEmu, sdkOmittedValue)
+                ? this.enabledOrganizationEmu
+                : enabledOrganizationEmu
+                    as UserEventPayloadVariant227EnabledOrganizationEmu,
+        enabledTeamIds: identical(enabledTeamIds, sdkOmittedValue)
+            ? this.enabledTeamIds
+            : enabledTeamIds as List<String>,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        teamSlug: identical(teamSlug, sdkOmittedValue)
+            ? this.teamSlug
+            : teamSlug as String,
+      );
 
-  factory UserEventPayloadVariant227.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant227(
-    copiedDomains: ((json['copiedDomains'] as List?)?.map((e) => e as String).toList())!,
-    enabledOrganizationEmu: (json['enabledOrganizationEmu'] != null ? UserEventPayloadVariant227EnabledOrganizationEmu.fromJson(json['enabledOrganizationEmu'] as bool) : null)!,
-    enabledTeamIds: ((json['enabledTeamIds'] as List?)?.map((e) => e as String).toList())!,
-    organizationId: (json['organizationId'] as String?)!,
-    teamId: (json['teamId'] as String?)!,
-    teamSlug: (json['teamSlug'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant227.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant227(
+            copiedDomains: ((json['copiedDomains'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            enabledOrganizationEmu: (json['enabledOrganizationEmu'] != null
+                ? UserEventPayloadVariant227EnabledOrganizationEmu.fromJson(
+                    json['enabledOrganizationEmu'] as bool)
+                : null)!,
+            enabledTeamIds: ((json['enabledTeamIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            organizationId: (json['organizationId'] as String?)!,
+            teamId: (json['teamId'] as String?)!,
+            teamSlug: (json['teamSlug'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'copiedDomains': copiedDomains,
-    'enabledOrganizationEmu': enabledOrganizationEmu.toJson(),
-    'enabledTeamIds': enabledTeamIds,
-    'organizationId': organizationId,
-    'teamId': teamId,
-    'teamSlug': teamSlug,
-  };
+        'copiedDomains': copiedDomains,
+        'enabledOrganizationEmu': enabledOrganizationEmu.toJson(),
+        'enabledTeamIds': enabledTeamIds,
+        'organizationId': organizationId,
+        'teamId': teamId,
+        'teamSlug': teamSlug,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant228 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final UserEventPayloadVariant228Enabled enabled;
+
   /// Required array value serialized in the `enforcedTeamIds` wire field.
   final List<String> enforcedTeamIds;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
+
   /// Required enumerated value serialized in the `previousEnabled` wire field.
   final UserEventPayloadVariant228PreviousEnabled previousEnabled;
+
   /// Required enumerated value serialized in the `trigger` wire field.
   final UserEventPayloadVariant228Trigger trigger;
+
   /// Required array value serialized in the `unenforcedTeamIds` wire field.
   final List<String> unenforcedTeamIds;
 
-  const UserEventPayloadVariant228({required this.enabled, required this.enforcedTeamIds, required this.organizationId, required this.previousEnabled, required this.trigger, required this.unenforcedTeamIds});
+  const UserEventPayloadVariant228(
+      {required this.enabled,
+      required this.enforcedTeamIds,
+      required this.organizationId,
+      required this.previousEnabled,
+      required this.trigger,
+      required this.unenforcedTeamIds});
 
-  UserEventPayloadVariant228 Function({UserEventPayloadVariant228Enabled enabled, List<String> enforcedTeamIds, String organizationId, UserEventPayloadVariant228PreviousEnabled previousEnabled, UserEventPayloadVariant228Trigger trigger, List<String> unenforcedTeamIds}) get copyWith => _copyWith;
+  UserEventPayloadVariant228 Function(
+      {UserEventPayloadVariant228Enabled enabled,
+      List<String> enforcedTeamIds,
+      String organizationId,
+      UserEventPayloadVariant228PreviousEnabled previousEnabled,
+      UserEventPayloadVariant228Trigger trigger,
+      List<String> unenforcedTeamIds}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant228 _copyWith({Object? enabled = sdkOmittedValue, Object? enforcedTeamIds = sdkOmittedValue, Object? organizationId = sdkOmittedValue, Object? previousEnabled = sdkOmittedValue, Object? trigger = sdkOmittedValue, Object? unenforcedTeamIds = sdkOmittedValue}) => UserEventPayloadVariant228(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UserEventPayloadVariant228Enabled,
-    enforcedTeamIds: identical(enforcedTeamIds, sdkOmittedValue) ? this.enforcedTeamIds : enforcedTeamIds as List<String>,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-    previousEnabled: identical(previousEnabled, sdkOmittedValue) ? this.previousEnabled : previousEnabled as UserEventPayloadVariant228PreviousEnabled,
-    trigger: identical(trigger, sdkOmittedValue) ? this.trigger : trigger as UserEventPayloadVariant228Trigger,
-    unenforcedTeamIds: identical(unenforcedTeamIds, sdkOmittedValue) ? this.unenforcedTeamIds : unenforcedTeamIds as List<String>,
-  );
+  UserEventPayloadVariant228 _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? enforcedTeamIds = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue,
+          Object? previousEnabled = sdkOmittedValue,
+          Object? trigger = sdkOmittedValue,
+          Object? unenforcedTeamIds = sdkOmittedValue}) =>
+      UserEventPayloadVariant228(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as UserEventPayloadVariant228Enabled,
+        enforcedTeamIds: identical(enforcedTeamIds, sdkOmittedValue)
+            ? this.enforcedTeamIds
+            : enforcedTeamIds as List<String>,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+        previousEnabled: identical(previousEnabled, sdkOmittedValue)
+            ? this.previousEnabled
+            : previousEnabled as UserEventPayloadVariant228PreviousEnabled,
+        trigger: identical(trigger, sdkOmittedValue)
+            ? this.trigger
+            : trigger as UserEventPayloadVariant228Trigger,
+        unenforcedTeamIds: identical(unenforcedTeamIds, sdkOmittedValue)
+            ? this.unenforcedTeamIds
+            : unenforcedTeamIds as List<String>,
+      );
 
-  factory UserEventPayloadVariant228.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant228(
-    enabled: (json['enabled'] != null ? UserEventPayloadVariant228Enabled.fromJson(json['enabled'] as bool) : null)!,
-    enforcedTeamIds: ((json['enforcedTeamIds'] as List?)?.map((e) => e as String).toList())!,
-    organizationId: (json['organizationId'] as String?)!,
-    previousEnabled: (json['previousEnabled'] != null ? UserEventPayloadVariant228PreviousEnabled.fromJson(json['previousEnabled'] as bool) : null)!,
-    trigger: (json['trigger'] != null ? UserEventPayloadVariant228Trigger.fromJson(json['trigger'] as String) : null)!,
-    unenforcedTeamIds: ((json['unenforcedTeamIds'] as List?)?.map((e) => e as String).toList())!,
-  ), json);
+  factory UserEventPayloadVariant228.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant228(
+            enabled: (json['enabled'] != null
+                ? UserEventPayloadVariant228Enabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!,
+            enforcedTeamIds: ((json['enforcedTeamIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            organizationId: (json['organizationId'] as String?)!,
+            previousEnabled: (json['previousEnabled'] != null
+                ? UserEventPayloadVariant228PreviousEnabled.fromJson(
+                    json['previousEnabled'] as bool)
+                : null)!,
+            trigger: (json['trigger'] != null
+                ? UserEventPayloadVariant228Trigger.fromJson(
+                    json['trigger'] as String)
+                : null)!,
+            unenforcedTeamIds: ((json['unenforcedTeamIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    'enforcedTeamIds': enforcedTeamIds,
-    'organizationId': organizationId,
-    'previousEnabled': previousEnabled.toJson(),
-    'trigger': trigger.toJson(),
-    'unenforcedTeamIds': unenforcedTeamIds,
-  };
+        'enabled': enabled.toJson(),
+        'enforcedTeamIds': enforcedTeamIds,
+        'organizationId': organizationId,
+        'previousEnabled': previousEnabled.toJson(),
+        'trigger': trigger.toJson(),
+        'unenforcedTeamIds': unenforcedTeamIds,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant229 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final UserEventPayloadVariant229Enabled enabled;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
+
   /// Required `string` value serialized in the `teamSlug` wire field.
   final String teamSlug;
 
-  const UserEventPayloadVariant229({required this.enabled, required this.organizationId, required this.teamId, required this.teamSlug});
+  const UserEventPayloadVariant229(
+      {required this.enabled,
+      required this.organizationId,
+      required this.teamId,
+      required this.teamSlug});
 
-  UserEventPayloadVariant229 Function({UserEventPayloadVariant229Enabled enabled, String organizationId, String teamId, String teamSlug}) get copyWith => _copyWith;
+  UserEventPayloadVariant229 Function(
+      {UserEventPayloadVariant229Enabled enabled,
+      String organizationId,
+      String teamId,
+      String teamSlug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant229 _copyWith({Object? enabled = sdkOmittedValue, Object? organizationId = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? teamSlug = sdkOmittedValue}) => UserEventPayloadVariant229(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UserEventPayloadVariant229Enabled,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    teamSlug: identical(teamSlug, sdkOmittedValue) ? this.teamSlug : teamSlug as String,
-  );
+  UserEventPayloadVariant229 _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? teamSlug = sdkOmittedValue}) =>
+      UserEventPayloadVariant229(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as UserEventPayloadVariant229Enabled,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        teamSlug: identical(teamSlug, sdkOmittedValue)
+            ? this.teamSlug
+            : teamSlug as String,
+      );
 
-  factory UserEventPayloadVariant229.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant229(
-    enabled: (json['enabled'] != null ? UserEventPayloadVariant229Enabled.fromJson(json['enabled'] as bool) : null)!,
-    organizationId: (json['organizationId'] as String?)!,
-    teamId: (json['teamId'] as String?)!,
-    teamSlug: (json['teamSlug'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant229.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant229(
+            enabled: (json['enabled'] != null
+                ? UserEventPayloadVariant229Enabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!,
+            organizationId: (json['organizationId'] as String?)!,
+            teamId: (json['teamId'] as String?)!,
+            teamSlug: (json['teamSlug'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    'organizationId': organizationId,
-    'teamId': teamId,
-    'teamSlug': teamSlug,
-  };
+        'enabled': enabled.toJson(),
+        'organizationId': organizationId,
+        'teamId': teamId,
+        'teamSlug': teamSlug,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant230 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
+
   /// Required `string` value serialized in the `slug` wire field.
   final String slug;
 
-  const UserEventPayloadVariant230({required this.organizationId, required this.slug});
+  const UserEventPayloadVariant230(
+      {required this.organizationId, required this.slug});
 
-  UserEventPayloadVariant230 Function({String organizationId, String slug}) get copyWith => _copyWith;
+  UserEventPayloadVariant230 Function({String organizationId, String slug})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant230 _copyWith({Object? organizationId = sdkOmittedValue, Object? slug = sdkOmittedValue}) => UserEventPayloadVariant230(
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-  );
+  UserEventPayloadVariant230 _copyWith(
+          {Object? organizationId = sdkOmittedValue,
+          Object? slug = sdkOmittedValue}) =>
+      UserEventPayloadVariant230(
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+      );
 
-  factory UserEventPayloadVariant230.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant230(
-    organizationId: (json['organizationId'] as String?)!,
-    slug: (json['slug'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant230.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant230(
+            organizationId: (json['organizationId'] as String?)!,
+            slug: (json['slug'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'organizationId': organizationId,
-    'slug': slug,
-  };
+        'organizationId': organizationId,
+        'slug': slug,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant231 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `billingPlan` wire field.
   final UserEventPayloadVariant231BillingPlan billingPlan;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
 
-  const UserEventPayloadVariant231({required this.billingPlan, required this.organizationId, required this.teamId});
+  const UserEventPayloadVariant231(
+      {required this.billingPlan,
+      required this.organizationId,
+      required this.teamId});
 
-  UserEventPayloadVariant231 Function({UserEventPayloadVariant231BillingPlan billingPlan, String organizationId, String teamId}) get copyWith => _copyWith;
+  UserEventPayloadVariant231 Function(
+      {UserEventPayloadVariant231BillingPlan billingPlan,
+      String organizationId,
+      String teamId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant231 _copyWith({Object? billingPlan = sdkOmittedValue, Object? organizationId = sdkOmittedValue, Object? teamId = sdkOmittedValue}) => UserEventPayloadVariant231(
-    billingPlan: identical(billingPlan, sdkOmittedValue) ? this.billingPlan : billingPlan as UserEventPayloadVariant231BillingPlan,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-  );
+  UserEventPayloadVariant231 _copyWith(
+          {Object? billingPlan = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue}) =>
+      UserEventPayloadVariant231(
+        billingPlan: identical(billingPlan, sdkOmittedValue)
+            ? this.billingPlan
+            : billingPlan as UserEventPayloadVariant231BillingPlan,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+      );
 
-  factory UserEventPayloadVariant231.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant231(
-    billingPlan: (json['billingPlan'] != null ? UserEventPayloadVariant231BillingPlan.fromJson(json['billingPlan'] as String) : null)!,
-    organizationId: (json['organizationId'] as String?)!,
-    teamId: (json['teamId'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant231.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant231(
+            billingPlan: (json['billingPlan'] != null
+                ? UserEventPayloadVariant231BillingPlan.fromJson(
+                    json['billingPlan'] as String)
+                : null)!,
+            organizationId: (json['organizationId'] as String?)!,
+            teamId: (json['teamId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'billingPlan': billingPlan.toJson(),
-    'organizationId': organizationId,
-    'teamId': teamId,
-  };
+        'billingPlan': billingPlan.toJson(),
+        'organizationId': organizationId,
+        'teamId': teamId,
+      };
 }

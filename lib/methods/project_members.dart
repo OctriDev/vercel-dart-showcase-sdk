@@ -35,12 +35,18 @@ Future<dynamic> getProjectMembers(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/members',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
+                style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
+                style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getProjectMembers',
@@ -48,7 +54,6 @@ Future<dynamic> getProjectMembers(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Adds a member to a project with a specified project role. Identify the member by `uid`, `username`, or `email`, and choose one of the supported roles.
 ///
@@ -85,8 +90,10 @@ Future<AddProjectMemberResponse> addProjectMember(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/members',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'role': role,
@@ -96,11 +103,11 @@ Future<AddProjectMemberResponse> addProjectMember(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'addProjectMember',
-          fromJsonRaw: (value) => AddProjectMemberResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              AddProjectMemberResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Removes a member from a specific project. Use `idOrName` to identify the project and `uid` to identify the member to remove. The response includes the project identifier.
 ///
@@ -120,12 +127,15 @@ Future<RemoveProjectMemberResponse> removeProjectMember(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/members/${Uri.encodeComponent(uid.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'removeProjectMember',
-          fromJsonRaw: (value) => RemoveProjectMemberResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RemoveProjectMemberResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

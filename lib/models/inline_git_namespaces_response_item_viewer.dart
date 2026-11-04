@@ -10,31 +10,59 @@ class GitNamespacesResponseItemViewer implements SdkJsonModel {
   final SdkOptional<GitNamespacesResponseItemViewerCanCreateApp> canCreateApp;
   final SdkOptional<dynamic> role;
 
-  const GitNamespacesResponseItemViewer({this.canCreateApp = const SdkOmitted(), this.role = const SdkOmitted()});
+  const GitNamespacesResponseItemViewer(
+      {this.canCreateApp = const SdkOmitted(), this.role = const SdkOmitted()});
 
-  GitNamespacesResponseItemViewer Function({SdkOptional<GitNamespacesResponseItemViewerCanCreateApp> canCreateApp, SdkOptional<dynamic> role}) get copyWith => _copyWith;
+  GitNamespacesResponseItemViewer Function(
+      {SdkOptional<GitNamespacesResponseItemViewerCanCreateApp> canCreateApp,
+      SdkOptional<dynamic> role}) get copyWith => _copyWith;
 
-  GitNamespacesResponseItemViewer _copyWith({Object? canCreateApp = sdkOmittedValue, Object? role = sdkOmittedValue}) => GitNamespacesResponseItemViewer(
-    canCreateApp: identical(canCreateApp, sdkOmittedValue) ? this.canCreateApp : canCreateApp as SdkOptional<GitNamespacesResponseItemViewerCanCreateApp>,
-    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<dynamic>,
-  );
+  GitNamespacesResponseItemViewer _copyWith(
+          {Object? canCreateApp = sdkOmittedValue,
+          Object? role = sdkOmittedValue}) =>
+      GitNamespacesResponseItemViewer(
+        canCreateApp: identical(canCreateApp, sdkOmittedValue)
+            ? this.canCreateApp
+            : canCreateApp
+                as SdkOptional<GitNamespacesResponseItemViewerCanCreateApp>,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as SdkOptional<dynamic>,
+      );
 
-  factory GitNamespacesResponseItemViewer.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GitNamespacesResponseItemViewer(
-    canCreateApp: json['canCreateApp'] != null ? SdkPresent((json['canCreateApp'] != null ? GitNamespacesResponseItemViewerCanCreateApp.fromJson(json['canCreateApp'] as bool) : null)!) : const SdkOmitted(),
-    role: json['role'] != null ? SdkPresent((json['role'])!) : const SdkOmitted(),
-  ), json);
+  factory GitNamespacesResponseItemViewer.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GitNamespacesResponseItemViewer(
+            canCreateApp: json['canCreateApp'] != null
+                ? SdkPresent((json['canCreateApp'] != null
+                    ? GitNamespacesResponseItemViewerCanCreateApp.fromJson(
+                        json['canCreateApp'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            role: json['role'] != null
+                ? SdkPresent((json['role'])!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (canCreateApp) {
-      SdkPresent<GitNamespacesResponseItemViewerCanCreateApp>(value: final value) => {'canCreateApp': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (role) {
-      SdkPresent<dynamic>(value: final value) => {'role': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canCreateApp) {
+          SdkPresent<GitNamespacesResponseItemViewerCanCreateApp>(
+            value: final value
+          ) =>
+            {
+              'canCreateApp': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (role) {
+          SdkPresent<dynamic>(value: final value) => {
+              'role': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GitNamespacesResponseItem implements SdkJsonModel {
@@ -42,7 +70,8 @@ class GitNamespacesResponseItem implements SdkJsonModel {
   static const String constructionSurface = 'named';
   final dynamic id;
   final SdkOptional<double> installationId;
-  final SdkOptional<GitNamespacesResponseItemIsAccessRestricted> isAccessRestricted;
+  final SdkOptional<GitNamespacesResponseItemIsAccessRestricted>
+      isAccessRestricted;
   final SdkOptional<String> name;
   final String ownerType;
   final String provider;
@@ -50,61 +79,145 @@ class GitNamespacesResponseItem implements SdkJsonModel {
   final String slug;
   final SdkOptional<GitNamespacesResponseItemViewer> viewer;
 
-  const GitNamespacesResponseItem({required this.id, this.installationId = const SdkOmitted(), this.isAccessRestricted = const SdkOmitted(), this.name = const SdkOmitted(), required this.ownerType, required this.provider, this.requireReauth = const SdkOmitted(), required this.slug, this.viewer = const SdkOmitted()});
+  const GitNamespacesResponseItem(
+      {required this.id,
+      this.installationId = const SdkOmitted(),
+      this.isAccessRestricted = const SdkOmitted(),
+      this.name = const SdkOmitted(),
+      required this.ownerType,
+      required this.provider,
+      this.requireReauth = const SdkOmitted(),
+      required this.slug,
+      this.viewer = const SdkOmitted()});
 
-  GitNamespacesResponseItem Function({dynamic id, SdkOptional<double> installationId, SdkOptional<GitNamespacesResponseItemIsAccessRestricted> isAccessRestricted, SdkOptional<String> name, String ownerType, String provider, SdkOptional<GitNamespacesResponseItemRequireReauth> requireReauth, String slug, SdkOptional<GitNamespacesResponseItemViewer> viewer}) get copyWith => _copyWith;
+  GitNamespacesResponseItem Function(
+          {dynamic id,
+          SdkOptional<double> installationId,
+          SdkOptional<GitNamespacesResponseItemIsAccessRestricted>
+              isAccessRestricted,
+          SdkOptional<String> name,
+          String ownerType,
+          String provider,
+          SdkOptional<GitNamespacesResponseItemRequireReauth> requireReauth,
+          String slug,
+          SdkOptional<GitNamespacesResponseItemViewer> viewer})
+      get copyWith => _copyWith;
 
-  GitNamespacesResponseItem _copyWith({Object? id = sdkOmittedValue, Object? installationId = sdkOmittedValue, Object? isAccessRestricted = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? provider = sdkOmittedValue, Object? requireReauth = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? viewer = sdkOmittedValue}) => GitNamespacesResponseItem(
-    id: identical(id, sdkOmittedValue) ? this.id : id as dynamic,
-    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as SdkOptional<double>,
-    isAccessRestricted: identical(isAccessRestricted, sdkOmittedValue) ? this.isAccessRestricted : isAccessRestricted as SdkOptional<GitNamespacesResponseItemIsAccessRestricted>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as String,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as String,
-    requireReauth: identical(requireReauth, sdkOmittedValue) ? this.requireReauth : requireReauth as SdkOptional<GitNamespacesResponseItemRequireReauth>,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    viewer: identical(viewer, sdkOmittedValue) ? this.viewer : viewer as SdkOptional<GitNamespacesResponseItemViewer>,
-  );
+  GitNamespacesResponseItem _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? installationId = sdkOmittedValue,
+          Object? isAccessRestricted = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ownerType = sdkOmittedValue,
+          Object? provider = sdkOmittedValue,
+          Object? requireReauth = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? viewer = sdkOmittedValue}) =>
+      GitNamespacesResponseItem(
+        id: identical(id, sdkOmittedValue) ? this.id : id as dynamic,
+        installationId: identical(installationId, sdkOmittedValue)
+            ? this.installationId
+            : installationId as SdkOptional<double>,
+        isAccessRestricted: identical(isAccessRestricted, sdkOmittedValue)
+            ? this.isAccessRestricted
+            : isAccessRestricted
+                as SdkOptional<GitNamespacesResponseItemIsAccessRestricted>,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        ownerType: identical(ownerType, sdkOmittedValue)
+            ? this.ownerType
+            : ownerType as String,
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as String,
+        requireReauth: identical(requireReauth, sdkOmittedValue)
+            ? this.requireReauth
+            : requireReauth
+                as SdkOptional<GitNamespacesResponseItemRequireReauth>,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        viewer: identical(viewer, sdkOmittedValue)
+            ? this.viewer
+            : viewer as SdkOptional<GitNamespacesResponseItemViewer>,
+      );
 
-  factory GitNamespacesResponseItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GitNamespacesResponseItem(
-    id: (json['id'])!,
-    installationId: json['installationId'] != null ? SdkPresent(((json['installationId'] as num?)?.toDouble())!) : const SdkOmitted(),
-    isAccessRestricted: json['isAccessRestricted'] != null ? SdkPresent((json['isAccessRestricted'] != null ? GitNamespacesResponseItemIsAccessRestricted.fromJson(json['isAccessRestricted'] as bool) : null)!) : const SdkOmitted(),
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    ownerType: (json['ownerType'] as String?)!,
-    provider: (json['provider'] as String?)!,
-    requireReauth: json['requireReauth'] != null ? SdkPresent((json['requireReauth'] != null ? GitNamespacesResponseItemRequireReauth.fromJson(json['requireReauth'] as bool) : null)!) : const SdkOmitted(),
-    slug: (json['slug'] as String?)!,
-    viewer: json['viewer'] != null ? SdkPresent((json['viewer'] != null ? GitNamespacesResponseItemViewer.fromJson(json['viewer'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory GitNamespacesResponseItem.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GitNamespacesResponseItem(
+            id: (json['id'])!,
+            installationId: json['installationId'] != null
+                ? SdkPresent(((json['installationId'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            isAccessRestricted: json['isAccessRestricted'] != null
+                ? SdkPresent((json['isAccessRestricted'] != null
+                    ? GitNamespacesResponseItemIsAccessRestricted.fromJson(
+                        json['isAccessRestricted'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+            ownerType: (json['ownerType'] as String?)!,
+            provider: (json['provider'] as String?)!,
+            requireReauth: json['requireReauth'] != null
+                ? SdkPresent((json['requireReauth'] != null
+                    ? GitNamespacesResponseItemRequireReauth.fromJson(
+                        json['requireReauth'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            slug: (json['slug'] as String?)!,
+            viewer: json['viewer'] != null
+                ? SdkPresent((json['viewer'] != null
+                    ? GitNamespacesResponseItemViewer.fromJson(
+                        json['viewer'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (installationId) {
-      SdkPresent<double>(value: final value) => {'installationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isAccessRestricted) {
-      SdkPresent<GitNamespacesResponseItemIsAccessRestricted>(value: final value) => {'isAccessRestricted': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    'ownerType': ownerType,
-    'provider': provider,
-    ...switch (requireReauth) {
-      SdkPresent<GitNamespacesResponseItemRequireReauth>(value: final value) => {'requireReauth': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slug': slug,
-    ...switch (viewer) {
-      SdkPresent<GitNamespacesResponseItemViewer>(value: final value) => {'viewer': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        ...switch (installationId) {
+          SdkPresent<double>(value: final value) => {
+              'installationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isAccessRestricted) {
+          SdkPresent<GitNamespacesResponseItemIsAccessRestricted>(
+            value: final value
+          ) =>
+            {
+              'isAccessRestricted': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ownerType': ownerType,
+        'provider': provider,
+        ...switch (requireReauth) {
+          SdkPresent<GitNamespacesResponseItemRequireReauth>(
+            value: final value
+          ) =>
+            {
+              'requireReauth': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slug': slug,
+        ...switch (viewer) {
+          SdkPresent<GitNamespacesResponseItemViewer>(value: final value) => {
+              'viewer': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class SearchRepoResponseVariant1Error implements SdkJsonModel {
@@ -113,25 +226,41 @@ class SearchRepoResponseVariant1Error implements SdkJsonModel {
   final SearchRepoResponseVariant1ErrorCode code;
   final String message;
 
-  const SearchRepoResponseVariant1Error({required this.code, required this.message});
+  const SearchRepoResponseVariant1Error(
+      {required this.code, required this.message});
 
-  SearchRepoResponseVariant1Error Function({SearchRepoResponseVariant1ErrorCode code, String message}) get copyWith => _copyWith;
+  SearchRepoResponseVariant1Error Function(
+      {SearchRepoResponseVariant1ErrorCode code,
+      String message}) get copyWith => _copyWith;
 
-  SearchRepoResponseVariant1Error _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => SearchRepoResponseVariant1Error(
-    code: identical(code, sdkOmittedValue) ? this.code : code as SearchRepoResponseVariant1ErrorCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  SearchRepoResponseVariant1Error _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      SearchRepoResponseVariant1Error(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as SearchRepoResponseVariant1ErrorCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory SearchRepoResponseVariant1Error.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchRepoResponseVariant1Error(
-    code: (json['code'] != null ? SearchRepoResponseVariant1ErrorCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  ), json);
+  factory SearchRepoResponseVariant1Error.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchRepoResponseVariant1Error(
+            code: (json['code'] != null
+                ? SearchRepoResponseVariant1ErrorCode.fromJson(
+                    json['code'] as String)
+                : null)!,
+            message: (json['message'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-    'message': message,
-  };
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 class SearchRepoResponseVariant1 implements SdkJsonModel {
@@ -141,20 +270,30 @@ class SearchRepoResponseVariant1 implements SdkJsonModel {
 
   const SearchRepoResponseVariant1({required this.error});
 
-  SearchRepoResponseVariant1 Function({SearchRepoResponseVariant1Error error}) get copyWith => _copyWith;
+  SearchRepoResponseVariant1 Function({SearchRepoResponseVariant1Error error})
+      get copyWith => _copyWith;
 
-  SearchRepoResponseVariant1 _copyWith({Object? error = sdkOmittedValue}) => SearchRepoResponseVariant1(
-    error: identical(error, sdkOmittedValue) ? this.error : error as SearchRepoResponseVariant1Error,
-  );
+  SearchRepoResponseVariant1 _copyWith({Object? error = sdkOmittedValue}) =>
+      SearchRepoResponseVariant1(
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as SearchRepoResponseVariant1Error,
+      );
 
-  factory SearchRepoResponseVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchRepoResponseVariant1(
-    error: (json['error'] != null ? SearchRepoResponseVariant1Error.fromJson(json['error'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory SearchRepoResponseVariant1.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchRepoResponseVariant1(
+            error: (json['error'] != null
+                ? SearchRepoResponseVariant1Error.fromJson(
+                    json['error'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'error': error.toJson(),
-  };
+        'error': error.toJson(),
+      };
 }
 
 class SearchRepoResponseVariant2GitAccount implements SdkJsonModel {
@@ -163,25 +302,41 @@ class SearchRepoResponseVariant2GitAccount implements SdkJsonModel {
   final String? namespaceId;
   final String provider;
 
-  const SearchRepoResponseVariant2GitAccount({required this.namespaceId, required this.provider});
+  const SearchRepoResponseVariant2GitAccount(
+      {required this.namespaceId, required this.provider});
 
-  SearchRepoResponseVariant2GitAccount Function({String? namespaceId, String provider}) get copyWith => _copyWith;
+  SearchRepoResponseVariant2GitAccount Function(
+      {String? namespaceId, String provider}) get copyWith => _copyWith;
 
-  SearchRepoResponseVariant2GitAccount _copyWith({Object? namespaceId = sdkOmittedValue, Object? provider = sdkOmittedValue}) => SearchRepoResponseVariant2GitAccount(
-    namespaceId: identical(namespaceId, sdkOmittedValue) ? this.namespaceId : namespaceId as String?,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as String,
-  );
+  SearchRepoResponseVariant2GitAccount _copyWith(
+          {Object? namespaceId = sdkOmittedValue,
+          Object? provider = sdkOmittedValue}) =>
+      SearchRepoResponseVariant2GitAccount(
+        namespaceId: identical(namespaceId, sdkOmittedValue)
+            ? this.namespaceId
+            : namespaceId as String?,
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as String,
+      );
 
-  factory SearchRepoResponseVariant2GitAccount.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchRepoResponseVariant2GitAccount(
-    namespaceId: json.containsKey('namespaceId') ? json['namespaceId'] as String? : throw ArgumentError.value(null, 'namespaceId', 'Required property is missing'),
-    provider: (json['provider'] as String?)!,
-  ), json);
+  factory SearchRepoResponseVariant2GitAccount.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchRepoResponseVariant2GitAccount(
+            namespaceId: json.containsKey('namespaceId')
+                ? json['namespaceId'] as String?
+                : throw ArgumentError.value(
+                    null, 'namespaceId', 'Required property is missing'),
+            provider: (json['provider'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'namespaceId': namespaceId,
-    'provider': provider,
-  };
+        'namespaceId': namespaceId,
+        'provider': provider,
+      };
 }
 
 class SearchRepoResponseVariant2ReposItemOwner implements SdkJsonModel {
@@ -190,25 +345,33 @@ class SearchRepoResponseVariant2ReposItemOwner implements SdkJsonModel {
   final String id;
   final String name;
 
-  const SearchRepoResponseVariant2ReposItemOwner({required this.id, required this.name});
+  const SearchRepoResponseVariant2ReposItemOwner(
+      {required this.id, required this.name});
 
-  SearchRepoResponseVariant2ReposItemOwner Function({String id, String name}) get copyWith => _copyWith;
+  SearchRepoResponseVariant2ReposItemOwner Function({String id, String name})
+      get copyWith => _copyWith;
 
-  SearchRepoResponseVariant2ReposItemOwner _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => SearchRepoResponseVariant2ReposItemOwner(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  SearchRepoResponseVariant2ReposItemOwner _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      SearchRepoResponseVariant2ReposItemOwner(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory SearchRepoResponseVariant2ReposItemOwner.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchRepoResponseVariant2ReposItemOwner(
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-  ), json);
+  factory SearchRepoResponseVariant2ReposItemOwner.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchRepoResponseVariant2ReposItemOwner(
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-  };
+        'id': id,
+        'name': name,
+      };
 }
 
 class SearchRepoResponseVariant2ReposItem implements SdkJsonModel {
@@ -226,50 +389,114 @@ class SearchRepoResponseVariant2ReposItem implements SdkJsonModel {
   final double updatedAt;
   final String url;
 
-  const SearchRepoResponseVariant2ReposItem({required this.defaultBranch, required this.id, required this.name, required this.namespace, required this.owner, required this.ownerType, required this.private, required this.provider, required this.slug, required this.updatedAt, required this.url});
+  const SearchRepoResponseVariant2ReposItem(
+      {required this.defaultBranch,
+      required this.id,
+      required this.name,
+      required this.namespace,
+      required this.owner,
+      required this.ownerType,
+      required this.private,
+      required this.provider,
+      required this.slug,
+      required this.updatedAt,
+      required this.url});
 
-  SearchRepoResponseVariant2ReposItem Function({String defaultBranch, String id, String name, String namespace, SearchRepoResponseVariant2ReposItemOwner owner, SearchRepoResponseVariant2ReposItemOwnerType ownerType, SearchRepoResponseVariant2ReposItemPrivate private, SearchRepoResponseVariant2ReposItemProvider provider, String slug, double updatedAt, String url}) get copyWith => _copyWith;
+  SearchRepoResponseVariant2ReposItem Function(
+      {String defaultBranch,
+      String id,
+      String name,
+      String namespace,
+      SearchRepoResponseVariant2ReposItemOwner owner,
+      SearchRepoResponseVariant2ReposItemOwnerType ownerType,
+      SearchRepoResponseVariant2ReposItemPrivate private,
+      SearchRepoResponseVariant2ReposItemProvider provider,
+      String slug,
+      double updatedAt,
+      String url}) get copyWith => _copyWith;
 
-  SearchRepoResponseVariant2ReposItem _copyWith({Object? defaultBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? namespace = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? private = sdkOmittedValue, Object? provider = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? url = sdkOmittedValue}) => SearchRepoResponseVariant2ReposItem(
-    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    namespace: identical(namespace, sdkOmittedValue) ? this.namespace : namespace as String,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as SearchRepoResponseVariant2ReposItemOwner,
-    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as SearchRepoResponseVariant2ReposItemOwnerType,
-    private: identical(private, sdkOmittedValue) ? this.private : private as SearchRepoResponseVariant2ReposItemPrivate,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as SearchRepoResponseVariant2ReposItemProvider,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  SearchRepoResponseVariant2ReposItem _copyWith(
+          {Object? defaultBranch = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? namespace = sdkOmittedValue,
+          Object? owner = sdkOmittedValue,
+          Object? ownerType = sdkOmittedValue,
+          Object? private = sdkOmittedValue,
+          Object? provider = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      SearchRepoResponseVariant2ReposItem(
+        defaultBranch: identical(defaultBranch, sdkOmittedValue)
+            ? this.defaultBranch
+            : defaultBranch as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        namespace: identical(namespace, sdkOmittedValue)
+            ? this.namespace
+            : namespace as String,
+        owner: identical(owner, sdkOmittedValue)
+            ? this.owner
+            : owner as SearchRepoResponseVariant2ReposItemOwner,
+        ownerType: identical(ownerType, sdkOmittedValue)
+            ? this.ownerType
+            : ownerType as SearchRepoResponseVariant2ReposItemOwnerType,
+        private: identical(private, sdkOmittedValue)
+            ? this.private
+            : private as SearchRepoResponseVariant2ReposItemPrivate,
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as SearchRepoResponseVariant2ReposItemProvider,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory SearchRepoResponseVariant2ReposItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchRepoResponseVariant2ReposItem(
-    defaultBranch: (json['defaultBranch'] as String?)!,
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    namespace: (json['namespace'] as String?)!,
-    owner: (json['owner'] != null ? SearchRepoResponseVariant2ReposItemOwner.fromJson(json['owner'] as Map<String, dynamic>) : null)!,
-    ownerType: (json['ownerType'] != null ? SearchRepoResponseVariant2ReposItemOwnerType.fromJson(json['ownerType'] as String) : null)!,
-    private: (json['private'] != null ? SearchRepoResponseVariant2ReposItemPrivate.fromJson(json['private'] as bool) : null)!,
-    provider: (json['provider'] != null ? SearchRepoResponseVariant2ReposItemProvider.fromJson(json['provider'] as String) : null)!,
-    slug: (json['slug'] as String?)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    url: (json['url'] as String?)!,
-  ), json);
+  factory SearchRepoResponseVariant2ReposItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchRepoResponseVariant2ReposItem(
+            defaultBranch: (json['defaultBranch'] as String?)!,
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+            namespace: (json['namespace'] as String?)!,
+            owner: (json['owner'] != null
+                ? SearchRepoResponseVariant2ReposItemOwner.fromJson(
+                    json['owner'] as Map<String, dynamic>)
+                : null)!,
+            ownerType: (json['ownerType'] != null
+                ? SearchRepoResponseVariant2ReposItemOwnerType.fromJson(
+                    json['ownerType'] as String)
+                : null)!,
+            private: (json['private'] != null
+                ? SearchRepoResponseVariant2ReposItemPrivate.fromJson(
+                    json['private'] as bool)
+                : null)!,
+            provider: (json['provider'] != null
+                ? SearchRepoResponseVariant2ReposItemProvider.fromJson(
+                    json['provider'] as String)
+                : null)!,
+            slug: (json['slug'] as String?)!,
+            updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+            url: (json['url'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'defaultBranch': defaultBranch,
-    'id': id,
-    'name': name,
-    'namespace': namespace,
-    'owner': owner.toJson(),
-    'ownerType': ownerType.toJson(),
-    'private': private.toJson(),
-    'provider': provider.toJson(),
-    'slug': slug,
-    'updatedAt': updatedAt,
-    'url': url,
-  };
+        'defaultBranch': defaultBranch,
+        'id': id,
+        'name': name,
+        'namespace': namespace,
+        'owner': owner.toJson(),
+        'ownerType': ownerType.toJson(),
+        'private': private.toJson(),
+        'provider': provider.toJson(),
+        'slug': slug,
+        'updatedAt': updatedAt,
+        'url': url,
+      };
 }

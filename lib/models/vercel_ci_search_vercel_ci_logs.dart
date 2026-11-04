@@ -4,146 +4,290 @@
 part of 'vercel_ci.dart';
 
 // vercel_ci domain models
-class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0 implements SdkJsonModel {
+class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result result;
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result
+      result;
 
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0({required this.result});
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
+      {required this.result});
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0 Function({SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result result}) get copyWith => _copyWith;
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0 Function(
+      {SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result
+          result}) get copyWith => _copyWith;
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0 _copyWith({Object? result = sdkOmittedValue}) => SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
-    result: identical(result, sdkOmittedValue) ? this.result : result as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result,
-  );
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0
+      _copyWith({Object? result = sdkOmittedValue}) =>
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
+            result: identical(result, sdkOmittedValue)
+                ? this.result
+                : result
+                    as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result,
+          );
 
-  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
-    result: (json['result'] != null ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result.fromJson(json['result'] as String) : null)!,
-  ), json);
+  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
+            result: (json['result'] != null
+                ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result
+                    .fromJson(json['result'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-  };
+        'result': result.toJson(),
+      };
 }
 
-class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1 implements SdkJsonModel {
+class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result result;
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result
+      result;
 
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1({required this.result});
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
+      {required this.result});
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1 Function({SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result result}) get copyWith => _copyWith;
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1 Function(
+      {SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result
+          result}) get copyWith => _copyWith;
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1 _copyWith({Object? result = sdkOmittedValue}) => SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
-    result: identical(result, sdkOmittedValue) ? this.result : result as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result,
-  );
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1
+      _copyWith({Object? result = sdkOmittedValue}) =>
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
+            result: identical(result, sdkOmittedValue)
+                ? this.result
+                : result
+                    as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result,
+          );
 
-  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
-    result: (json['result'] != null ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result.fromJson(json['result'] as String) : null)!,
-  ), json);
+  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
+            result: (json['result'] != null
+                ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result
+                    .fromJson(json['result'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-  };
+        'result': result.toJson(),
+      };
 }
 
-class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2 implements SdkJsonModel {
+class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result result;
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result
+      result;
   final String reason;
 
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2({required this.result, required this.reason});
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
+      {required this.result, required this.reason});
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2 Function({SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result result, String reason}) get copyWith => _copyWith;
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2 Function(
+      {SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result
+          result,
+      String reason}) get copyWith => _copyWith;
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
-    result: identical(result, sdkOmittedValue) ? this.result : result as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-  );
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2
+      _copyWith(
+              {Object? result = sdkOmittedValue,
+              Object? reason = sdkOmittedValue}) =>
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
+            result: identical(result, sdkOmittedValue)
+                ? this.result
+                : result
+                    as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result,
+            reason: identical(reason, sdkOmittedValue)
+                ? this.reason
+                : reason as String,
+          );
 
-  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
-    result: (json['result'] != null ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result.fromJson(json['result'] as String) : null)!,
-    reason: (json['reason'] as String?)!,
-  ), json);
+  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
+            result: (json['result'] != null
+                ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result
+                    .fromJson(json['result'] as String)
+                : null)!,
+            reason: (json['reason'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-    'reason': reason,
-  };
+        'result': result.toJson(),
+        'reason': reason,
+      };
 }
 
-class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3 implements SdkJsonModel {
+class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result result;
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result
+      result;
   final String reason;
 
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3({required this.result, required this.reason});
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
+      {required this.result, required this.reason});
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3 Function({SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result result, String reason}) get copyWith => _copyWith;
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3 Function(
+      {SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result
+          result,
+      String reason}) get copyWith => _copyWith;
 
-  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
-    result: identical(result, sdkOmittedValue) ? this.result : result as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-  );
+  SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3
+      _copyWith(
+              {Object? result = sdkOmittedValue,
+              Object? reason = sdkOmittedValue}) =>
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
+            result: identical(result, sdkOmittedValue)
+                ? this.result
+                : result
+                    as SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result,
+            reason: identical(reason, sdkOmittedValue)
+                ? this.reason
+                : reason as String,
+          );
 
-  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
-    result: (json['result'] != null ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result.fromJson(json['result'] as String) : null)!,
-    reason: (json['reason'] as String?)!,
-  ), json);
+  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
+            result: (json['result'] != null
+                ? SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result
+                    .fromJson(json['result'] as String)
+                : null)!,
+            reason: (json['reason'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-    'reason': reason,
-  };
+        'result': result.toJson(),
+        'reason': reason,
+      };
 }
 
 sealed class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion();
-  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion.fromJson(Object? json) {
+  factory SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(value); } } catch (_) {}
-      try { final value = SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(value); } } catch (_) {}
-      try { final value = SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(value); } } catch (_) {}
-      try { final value = SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(value); } } catch (_) {}
+      try {
+        final value =
+            SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion");
+    try {
+      return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
+          SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion");
   }
   Object? toJson();
 }
 
-final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0 extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0 value;
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0
+    extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0
+      value;
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1 extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1 value;
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1
+    extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1
+      value;
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2 extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2 value;
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2
+    extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2
+      value;
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3 extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
-  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3 value;
-  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+final class SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3
+    extends SearchVercelCiLogsResponseInvocationsItemTasksItemConclusion {
+  final SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3
+      value;
+  const SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionSearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

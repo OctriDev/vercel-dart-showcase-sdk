@@ -14,108 +14,252 @@ class ListProjectsDomainsResponseVariant1DomainsItem implements SdkJsonModel {
   final String name;
   final String projectId;
   final SdkOptional<String?> redirect;
-  final SdkOptional<ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?> redirectStatusCode;
+  final SdkOptional<
+          ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?>
+      redirectStatusCode;
   final SdkOptional<double> updatedAt;
+
   /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
-  final SdkOptional<List<ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>> verification;
+  final SdkOptional<
+          List<ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>>
+      verification;
+
   /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
   final ListProjectsDomainsResponseVariant1DomainsItemVerified verified;
 
-  const ListProjectsDomainsResponseVariant1DomainsItem({required this.apexName, this.createdAt = const SdkOmitted(), this.customEnvironmentId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), required this.name, required this.projectId, this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.verification = const SdkOmitted(), required this.verified});
+  const ListProjectsDomainsResponseVariant1DomainsItem(
+      {required this.apexName,
+      this.createdAt = const SdkOmitted(),
+      this.customEnvironmentId = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      required this.name,
+      required this.projectId,
+      this.redirect = const SdkOmitted(),
+      this.redirectStatusCode = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.verification = const SdkOmitted(),
+      required this.verified});
 
-  ListProjectsDomainsResponseVariant1DomainsItem Function({String apexName, SdkOptional<double> createdAt, SdkOptional<String?> customEnvironmentId, SdkOptional<String?> gitBranch, String name, String projectId, SdkOptional<String?> redirect, SdkOptional<ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?> redirectStatusCode, SdkOptional<double> updatedAt, SdkOptional<List<ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>> verification, ListProjectsDomainsResponseVariant1DomainsItemVerified verified}) get copyWith => _copyWith;
+  ListProjectsDomainsResponseVariant1DomainsItem Function(
+      {String apexName,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> customEnvironmentId,
+      SdkOptional<String?> gitBranch,
+      String name,
+      String projectId,
+      SdkOptional<String?> redirect,
+      SdkOptional<
+              ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?>
+          redirectStatusCode,
+      SdkOptional<double> updatedAt,
+      SdkOptional<
+              List<
+                  ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>>
+          verification,
+      ListProjectsDomainsResponseVariant1DomainsItemVerified
+          verified}) get copyWith => _copyWith;
 
-  ListProjectsDomainsResponseVariant1DomainsItem _copyWith({Object? apexName = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? verification = sdkOmittedValue, Object? verified = sdkOmittedValue}) => ListProjectsDomainsResponseVariant1DomainsItem(
-    apexName: identical(apexName, sdkOmittedValue) ? this.apexName : apexName as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String?>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
-    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    verification: identical(verification, sdkOmittedValue) ? this.verification : verification as SdkOptional<List<ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>>,
-    verified: identical(verified, sdkOmittedValue) ? this.verified : verified as ListProjectsDomainsResponseVariant1DomainsItemVerified,
-  );
+  ListProjectsDomainsResponseVariant1DomainsItem _copyWith(
+          {Object? apexName = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? customEnvironmentId = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? redirectStatusCode = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? verification = sdkOmittedValue,
+          Object? verified = sdkOmittedValue}) =>
+      ListProjectsDomainsResponseVariant1DomainsItem(
+        apexName: identical(apexName, sdkOmittedValue)
+            ? this.apexName
+            : apexName as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as SdkOptional<String?>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<String?>,
+        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
+            ? this.redirectStatusCode
+            : redirectStatusCode as SdkOptional<
+                ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        verification: identical(verification, sdkOmittedValue)
+            ? this.verification
+            : verification as SdkOptional<
+                List<
+                    ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>>,
+        verified: identical(verified, sdkOmittedValue)
+            ? this.verified
+            : verified
+                as ListProjectsDomainsResponseVariant1DomainsItemVerified,
+      );
 
-  factory ListProjectsDomainsResponseVariant1DomainsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListProjectsDomainsResponseVariant1DomainsItem(
-    apexName: (json['apexName'] as String?)!,
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    customEnvironmentId: json.containsKey('customEnvironmentId') ? SdkPresent(json['customEnvironmentId'] as String?) : const SdkOmitted(),
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
-    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    verification: json['verification'] != null ? SdkPresent(((json['verification'] as List?)?.map((e) => ListProjectsDomainsResponseVariant1DomainsItemVerificationItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    verified: (json['verified'] != null ? ListProjectsDomainsResponseVariant1DomainsItemVerified.fromJson(json['verified'] as bool) : null)!,
-  ), json);
+  factory ListProjectsDomainsResponseVariant1DomainsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListProjectsDomainsResponseVariant1DomainsItem(
+            apexName: (json['apexName'] as String?)!,
+            createdAt: json['createdAt'] != null
+                ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            customEnvironmentId: json.containsKey('customEnvironmentId')
+                ? SdkPresent(json['customEnvironmentId'] as String?)
+                : const SdkOmitted(),
+            gitBranch: json.containsKey('gitBranch')
+                ? SdkPresent(json['gitBranch'] as String?)
+                : const SdkOmitted(),
+            name: (json['name'] as String?)!,
+            projectId: (json['projectId'] as String?)!,
+            redirect: json.containsKey('redirect')
+                ? SdkPresent(json['redirect'] as String?)
+                : const SdkOmitted(),
+            redirectStatusCode: json.containsKey('redirectStatusCode')
+                ? SdkPresent(json['redirectStatusCode'] != null
+                    ? ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode
+                        .fromJson(
+                            (json['redirectStatusCode'] as num).toDouble())
+                    : null)
+                : const SdkOmitted(),
+            updatedAt: json['updatedAt'] != null
+                ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            verification: json['verification'] != null
+                ? SdkPresent(((json['verification'] as List?)
+                    ?.map((e) =>
+                        ListProjectsDomainsResponseVariant1DomainsItemVerificationItem
+                            .fromJson(e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+            verified: (json['verified'] != null
+                ? ListProjectsDomainsResponseVariant1DomainsItemVerified
+                    .fromJson(json['verified'] as bool)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'apexName': apexName,
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentId) {
-      SdkPresent<String?>(value: final value) => {'customEnvironmentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'projectId': projectId,
-    ...switch (redirect) {
-      SdkPresent<String?>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectStatusCode) {
-      SdkPresent<ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (verification) {
-      SdkPresent<List<ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>>(value: final value) => {'verification': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'verified': verified.toJson(),
-  };
+        'apexName': apexName,
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentId) {
+          SdkPresent<String?>(value: final value) => {
+              'customEnvironmentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'projectId': projectId,
+        ...switch (redirect) {
+          SdkPresent<String?>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectStatusCode) {
+          SdkPresent<
+                ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode?>(
+            value: final value
+          ) =>
+            {
+              'redirectStatusCode': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (verification) {
+          SdkPresent<
+                List<
+                    ListProjectsDomainsResponseVariant1DomainsItemVerificationItem>>(
+            value: final value
+          ) =>
+            {
+              'verification': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'verified': verified.toJson(),
+      };
 }
 
 class ListProjectsDomainsResponseVariant1 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<ListProjectsDomainsResponseVariant1DomainsItem> domains;
+
   /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
   final Pagination pagination;
 
-  const ListProjectsDomainsResponseVariant1({required this.domains, required this.pagination});
+  const ListProjectsDomainsResponseVariant1(
+      {required this.domains, required this.pagination});
 
-  ListProjectsDomainsResponseVariant1 Function({List<ListProjectsDomainsResponseVariant1DomainsItem> domains, Pagination pagination}) get copyWith => _copyWith;
+  ListProjectsDomainsResponseVariant1 Function(
+      {List<ListProjectsDomainsResponseVariant1DomainsItem> domains,
+      Pagination pagination}) get copyWith => _copyWith;
 
-  ListProjectsDomainsResponseVariant1 _copyWith({Object? domains = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListProjectsDomainsResponseVariant1(
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as List<ListProjectsDomainsResponseVariant1DomainsItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Pagination,
-  );
+  ListProjectsDomainsResponseVariant1 _copyWith(
+          {Object? domains = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListProjectsDomainsResponseVariant1(
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as List<ListProjectsDomainsResponseVariant1DomainsItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as Pagination,
+      );
 
-  factory ListProjectsDomainsResponseVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListProjectsDomainsResponseVariant1(
-    domains: ((json['domains'] as List?)?.map((e) => ListProjectsDomainsResponseVariant1DomainsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory ListProjectsDomainsResponseVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListProjectsDomainsResponseVariant1(
+            domains: ((json['domains'] as List?)
+                ?.map((e) =>
+                    ListProjectsDomainsResponseVariant1DomainsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!,
+            pagination: (json['pagination'] != null
+                ? Pagination.fromJson(
+                    json['pagination'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'domains': domains.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'domains': domains.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 sealed class ListProjectsDomainsResponse {
@@ -124,24 +268,50 @@ sealed class ListProjectsDomainsResponse {
   const ListProjectsDomainsResponse();
   factory ListProjectsDomainsResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = ListProjectsDomainsResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(value); } } catch (_) {}
-      try { final value = ListProjectsDomainsResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = ListProjectsDomainsResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = ListProjectsDomainsResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(ListProjectsDomainsResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(ListProjectsDomainsResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
+          ListProjectsDomainsResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
+          ListProjectsDomainsResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for ListProjectsDomainsResponse");
   }
   Object? toJson();
 }
 
-final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant0 extends ListProjectsDomainsResponse {
+final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant0
+    extends ListProjectsDomainsResponse {
   final ListProjectsDomainsResponseVariant0 value;
-  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant1 extends ListProjectsDomainsResponse {
+final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant1
+    extends ListProjectsDomainsResponse {
   final ListProjectsDomainsResponseVariant1 value;
-  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

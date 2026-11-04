@@ -4,14 +4,20 @@
 part of 'project_routes.dart';
 
 // project_routes domain models
-final class EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant0 extends EditRouteResponseRouteRouteTransformsItem {
+final class EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant0
+    extends EditRouteResponseRouteRouteTransformsItem {
   final EditRouteResponseRouteRouteTransformsItemVariant0 value;
-  const EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant1 extends EditRouteResponseRouteRouteTransformsItem {
+final class EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant1
+    extends EditRouteResponseRouteRouteTransformsItem {
   final EditRouteResponseRouteRouteTransformsItemVariant1 value;
-  const EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const EditRouteResponseRouteRouteTransformsItemEditRouteResponseRouteRouteTransformsItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

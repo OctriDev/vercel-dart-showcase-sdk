@@ -3,9 +3,124 @@
 
 import 'dart:convert';
 
-const _piiKeys = <String>{"authorization", "cookie", "set_cookie", "setcookie", "password", "passcode", "secret", "token", "api_key", "apikey", "access_token", "accesstoken", "refresh_token", "refreshtoken", "client_secret", "clientsecret", "email", "email_address", "emailaddress", "phone", "phone_number", "phonenumber", "address", "street_address", "streetaddress", "street", "city", "postal_code", "postalcode", "zip_code", "zipcode", "first_name", "firstname", "last_name", "lastname", "full_name", "fullname", "username", "user_name", "ip", "ip_address", "ipaddress", "user_agent", "useragent", "referrer", "url", "uri", "query", "latitude", "longitude", "ssn", "social_security_number", "socialsecuritynumber", "tax_id", "taxid", "national_id", "nationalid", "passport_number", "passportnumber", "date_of_birth", "dateofbirth", "birth_date", "birthdate", "headers", "body", "request_headers", "requestheaders", "request_body", "requestbody"};
+const _piiKeys = <String>{
+  "authorization",
+  "cookie",
+  "set_cookie",
+  "setcookie",
+  "password",
+  "passcode",
+  "secret",
+  "token",
+  "api_key",
+  "apikey",
+  "access_token",
+  "accesstoken",
+  "refresh_token",
+  "refreshtoken",
+  "client_secret",
+  "clientsecret",
+  "email",
+  "email_address",
+  "emailaddress",
+  "phone",
+  "phone_number",
+  "phonenumber",
+  "address",
+  "street_address",
+  "streetaddress",
+  "street",
+  "city",
+  "postal_code",
+  "postalcode",
+  "zip_code",
+  "zipcode",
+  "first_name",
+  "firstname",
+  "last_name",
+  "lastname",
+  "full_name",
+  "fullname",
+  "username",
+  "user_name",
+  "ip",
+  "ip_address",
+  "ipaddress",
+  "user_agent",
+  "useragent",
+  "referrer",
+  "url",
+  "uri",
+  "query",
+  "latitude",
+  "longitude",
+  "ssn",
+  "social_security_number",
+  "socialsecuritynumber",
+  "tax_id",
+  "taxid",
+  "national_id",
+  "nationalid",
+  "passport_number",
+  "passportnumber",
+  "date_of_birth",
+  "dateofbirth",
+  "birth_date",
+  "birthdate",
+  "headers",
+  "body",
+  "request_headers",
+  "requestheaders",
+  "request_body",
+  "requestbody"
+};
+
 /// Word runs matched anywhere inside a key (`billingEmail`, `stripe_secret_key`).
-const _piiSegments = <String>["_password_", "_passwd_", "_passphrase_", "_secret_", "_token_", "_api_key_", "_access_token_", "_refresh_token_", "_client_secret_", "_authorization_", "_cookie_", "_set_cookie_", "_credential_", "_private_key_", "_access_key_", "_session_id_", "_card_number_", "_credit_card_", "_cvv_", "_cvc_", "_email_", "_email_address_", "_phone_", "_phone_number_", "_address_", "_street_address_", "_postal_code_", "_zip_code_", "_first_name_", "_last_name_", "_full_name_", "_user_name_", "_user_agent_", "_ssn_", "_social_security_number_", "_tax_id_", "_national_id_", "_passport_number_", "_passport_", "_date_of_birth_", "_birth_date_", "_birthdate_", "_dob_"];
+const _piiSegments = <String>[
+  "_password_",
+  "_passwd_",
+  "_passphrase_",
+  "_secret_",
+  "_token_",
+  "_api_key_",
+  "_access_token_",
+  "_refresh_token_",
+  "_client_secret_",
+  "_authorization_",
+  "_cookie_",
+  "_set_cookie_",
+  "_credential_",
+  "_private_key_",
+  "_access_key_",
+  "_session_id_",
+  "_card_number_",
+  "_credit_card_",
+  "_cvv_",
+  "_cvc_",
+  "_email_",
+  "_email_address_",
+  "_phone_",
+  "_phone_number_",
+  "_address_",
+  "_street_address_",
+  "_postal_code_",
+  "_zip_code_",
+  "_first_name_",
+  "_last_name_",
+  "_full_name_",
+  "_user_name_",
+  "_user_agent_",
+  "_ssn_",
+  "_social_security_number_",
+  "_tax_id_",
+  "_national_id_",
+  "_passport_number_",
+  "_passport_",
+  "_date_of_birth_",
+  "_birth_date_",
+  "_birthdate_",
+  "_dob_"
+];
 const _piiRedactionMarker = '[REDACTED]';
 
 /// `stripeSecretKey`, `API-Key` and `first name` become `stripe_secret_key`, `api_key`, `first_name`.
@@ -41,8 +156,6 @@ dynamic sanitizeTelemetry(dynamic value, bool enabled) {
 }
 
 class ClientAuthConfig {
-
-
   String? bearerToken;
 
   OAuth2Auth? oauth2;
@@ -51,7 +164,6 @@ class ClientAuthConfig {
 
   ClientAuthConfig({this.bearerToken, this.oauth2, this.headers});
 }
-
 
 /// OAuth 2 credential. Set [accessToken] to attach a pre-acquired token, set
 /// [clientId]/[clientSecret] to have the SDK auto-fetch tokens via the
@@ -94,7 +206,8 @@ class OAuth2TokenRequest {
   final String refreshUrl;
   final List<String> scopes;
 
-  const OAuth2TokenRequest(this.scheme, this.tokenUrl, this.refreshUrl, this.scopes);
+  const OAuth2TokenRequest(
+      this.scheme, this.tokenUrl, this.refreshUrl, this.scopes);
 }
 
 /// Supplies access tokens for any OAuth 2 flow the application runs.
@@ -120,6 +233,7 @@ class LoggingConfig {
   String? release;
   Map<String, dynamic>? user;
   Map<String, dynamic>? tags;
+
   /// Redact common credentials and direct identifiers before telemetry (default true).
   bool filterPii;
 
@@ -195,6 +309,7 @@ class SdkRequest {
   String url;
   Map<String, String> headers;
   String? body;
+
   /// Raw request body bytes (e.g. application/octet-stream). When set, it is
   /// sent verbatim and takes precedence over [body].
   List<int>? bodyBytes;
@@ -213,8 +328,8 @@ class SdkRequest {
     this.operationId = "",
     this.attempt = 1,
     Map<String, Object?>? meta,
-  }) : headers = headers ?? <String, String>{},
-       meta = meta ?? <String, Object?>{};
+  })  : headers = headers ?? <String, String>{},
+        meta = meta ?? <String, Object?>{};
 }
 
 /// Raw response visible to middleware. [bodyBytes] is never text-decoded.
@@ -245,9 +360,8 @@ typedef SdkNext = Future<SdkRawResponse> Function(SdkRequest request);
 /// User-supplied request interceptor. Runs once per HTTP attempt — retries
 /// pass through the chain N times. Compose logging, tracing, caching, etc.
 /// without forking the generator.
-typedef Middleware = Future<SdkRawResponse> Function(SdkRequest request, SdkNext next);
-
-
+typedef Middleware = Future<SdkRawResponse> Function(
+    SdkRequest request, SdkNext next);
 
 class ClientConfig {
   String? baseUrl;
@@ -262,12 +376,11 @@ class ClientConfig {
     String requestId,
     Duration latency,
     int attempt,
-  )?
-  onResponse;
+  )? onResponse;
+
   /// User middleware chain. Replaced wholesale on configure(); to extend,
   /// read the current value and pass a list including the previous entries.
   List<Middleware> middleware;
-
 
   ClientConfig({
     this.baseUrl,
@@ -278,7 +391,6 @@ class ClientConfig {
     this.timeout,
     this.onResponse,
     List<Middleware>? middleware,
-
   }) : middleware = middleware ?? <Middleware>[];
 }
 

@@ -11,20 +11,34 @@ class UpdateProjectResponseOptionsAllowlist implements SdkJsonModel {
 
   const UpdateProjectResponseOptionsAllowlist({required this.paths});
 
-  UpdateProjectResponseOptionsAllowlist Function({List<UpdateProjectResponseOptionsAllowlistPathsItem> paths}) get copyWith => _copyWith;
+  UpdateProjectResponseOptionsAllowlist Function(
+          {List<UpdateProjectResponseOptionsAllowlistPathsItem> paths})
+      get copyWith => _copyWith;
 
-  UpdateProjectResponseOptionsAllowlist _copyWith({Object? paths = sdkOmittedValue}) => UpdateProjectResponseOptionsAllowlist(
-    paths: identical(paths, sdkOmittedValue) ? this.paths : paths as List<UpdateProjectResponseOptionsAllowlistPathsItem>,
-  );
+  UpdateProjectResponseOptionsAllowlist _copyWith(
+          {Object? paths = sdkOmittedValue}) =>
+      UpdateProjectResponseOptionsAllowlist(
+        paths: identical(paths, sdkOmittedValue)
+            ? this.paths
+            : paths as List<UpdateProjectResponseOptionsAllowlistPathsItem>,
+      );
 
-  factory UpdateProjectResponseOptionsAllowlist.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateProjectResponseOptionsAllowlist(
-    paths: ((json['paths'] as List?)?.map((e) => UpdateProjectResponseOptionsAllowlistPathsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory UpdateProjectResponseOptionsAllowlist.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateProjectResponseOptionsAllowlist(
+            paths: ((json['paths'] as List?)
+                ?.map((e) =>
+                    UpdateProjectResponseOptionsAllowlistPathsItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'paths': paths.map((item) => item.toJson()).toList(),
-  };
+        'paths': paths.map((item) => item.toJson()).toList(),
+      };
 }
 
 class UpdateProjectResponsePassport implements SdkJsonModel {
@@ -33,25 +47,42 @@ class UpdateProjectResponsePassport implements SdkJsonModel {
   final String connectorId;
   final UpdateProjectResponsePassportDeploymentType deploymentType;
 
-  const UpdateProjectResponsePassport({required this.connectorId, required this.deploymentType});
+  const UpdateProjectResponsePassport(
+      {required this.connectorId, required this.deploymentType});
 
-  UpdateProjectResponsePassport Function({String connectorId, UpdateProjectResponsePassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  UpdateProjectResponsePassport Function(
+          {String connectorId,
+          UpdateProjectResponsePassportDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  UpdateProjectResponsePassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UpdateProjectResponsePassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UpdateProjectResponsePassportDeploymentType,
-  );
+  UpdateProjectResponsePassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      UpdateProjectResponsePassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType as UpdateProjectResponsePassportDeploymentType,
+      );
 
-  factory UpdateProjectResponsePassport.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateProjectResponsePassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? UpdateProjectResponsePassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  ), json);
+  factory UpdateProjectResponsePassport.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateProjectResponsePassport(
+            connectorId: (json['connectorId'] as String?)!,
+            deploymentType: (json['deploymentType'] != null
+                ? UpdateProjectResponsePassportDeploymentType.fromJson(
+                    json['deploymentType'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Password protection settings returned without the secret password hash.
@@ -62,18 +93,32 @@ class UpdateProjectResponsePasswordProtection implements SdkJsonModel {
 
   const UpdateProjectResponsePasswordProtection({required this.deploymentType});
 
-  UpdateProjectResponsePasswordProtection Function({UpdateProjectResponsePasswordProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
+  UpdateProjectResponsePasswordProtection Function(
+      {UpdateProjectResponsePasswordProtectionDeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  UpdateProjectResponsePasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => UpdateProjectResponsePasswordProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UpdateProjectResponsePasswordProtectionDeploymentType,
-  );
+  UpdateProjectResponsePasswordProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      UpdateProjectResponsePasswordProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UpdateProjectResponsePasswordProtectionDeploymentType,
+      );
 
-  factory UpdateProjectResponsePasswordProtection.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateProjectResponsePasswordProtection(
-    deploymentType: (json['deploymentType'] != null ? UpdateProjectResponsePasswordProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  ), json);
+  factory UpdateProjectResponsePasswordProtection.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateProjectResponsePasswordProtection(
+            deploymentType: (json['deploymentType'] != null
+                ? UpdateProjectResponsePasswordProtectionDeploymentType
+                    .fromJson(json['deploymentType'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }

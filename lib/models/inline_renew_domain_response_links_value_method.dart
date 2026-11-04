@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models
 final class RenewDomainResponseLinksValueMethod {
-
   final String value;
 
   const RenewDomainResponseLinksValueMethod._(this.value);
 
-  factory RenewDomainResponseLinksValueMethod.fromJson(String value) => RenewDomainResponseLinksValueMethod._(value);
+  factory RenewDomainResponseLinksValueMethod.fromJson(String value) =>
+      RenewDomainResponseLinksValueMethod._(value);
 
   static const get_ = RenewDomainResponseLinksValueMethod._('GET');
   static const post = RenewDomainResponseLinksValueMethod._('POST');
@@ -20,53 +20,66 @@ final class RenewDomainResponseLinksValueMethod {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RenewDomainResponseLinksValueMethod && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RenewDomainResponseLinksValueMethod && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDomainTransferInResponseStatus {
-
   final String value;
 
   const GetDomainTransferInResponseStatus._(this.value);
 
-  factory GetDomainTransferInResponseStatus.fromJson(String value) => GetDomainTransferInResponseStatus._(value);
+  factory GetDomainTransferInResponseStatus.fromJson(String value) =>
+      GetDomainTransferInResponseStatus._(value);
 
   static const canceled = GetDomainTransferInResponseStatus._('canceled');
-  static const canceledPendingRefund = GetDomainTransferInResponseStatus._('canceled_pending_refund');
+  static const canceledPendingRefund =
+      GetDomainTransferInResponseStatus._('canceled_pending_refund');
   static const completed = GetDomainTransferInResponseStatus._('completed');
   static const created = GetDomainTransferInResponseStatus._('created');
   static const failed = GetDomainTransferInResponseStatus._('failed');
   static const pending = GetDomainTransferInResponseStatus._('pending');
-  static const pendingInsert = GetDomainTransferInResponseStatus._('pending_insert');
-  static const pendingNewAuthCode = GetDomainTransferInResponseStatus._('pending_new_auth_code');
-  static const pendingTransfer = GetDomainTransferInResponseStatus._('pending_transfer');
-  static const pendingUnlock = GetDomainTransferInResponseStatus._('pending_unlock');
-  static const pendingRegistryUnlock = GetDomainTransferInResponseStatus._('pending_registry_unlock');
+  static const pendingInsert =
+      GetDomainTransferInResponseStatus._('pending_insert');
+  static const pendingNewAuthCode =
+      GetDomainTransferInResponseStatus._('pending_new_auth_code');
+  static const pendingTransfer =
+      GetDomainTransferInResponseStatus._('pending_transfer');
+  static const pendingUnlock =
+      GetDomainTransferInResponseStatus._('pending_unlock');
+  static const pendingRegistryUnlock =
+      GetDomainTransferInResponseStatus._('pending_registry_unlock');
   static const rejected = GetDomainTransferInResponseStatus._('rejected');
-  static const submittingTransfer = GetDomainTransferInResponseStatus._('submitting_transfer');
+  static const submittingTransfer =
+      GetDomainTransferInResponseStatus._('submitting_transfer');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDomainTransferInResponseStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDomainTransferInResponseStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class TransferInDomainResponseLinksValueMethod {
-
   final String value;
 
   const TransferInDomainResponseLinksValueMethod._(this.value);
 
-  factory TransferInDomainResponseLinksValueMethod.fromJson(String value) => TransferInDomainResponseLinksValueMethod._(value);
+  factory TransferInDomainResponseLinksValueMethod.fromJson(String value) =>
+      TransferInDomainResponseLinksValueMethod._(value);
 
   static const get_ = TransferInDomainResponseLinksValueMethod._('GET');
   static const post = TransferInDomainResponseLinksValueMethod._('POST');
@@ -76,21 +89,24 @@ final class TransferInDomainResponseLinksValueMethod {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TransferInDomainResponseLinksValueMethod && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TransferInDomainResponseLinksValueMethod && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class BuyDomainsResponseLinksValueMethod {
-
   final String value;
 
   const BuyDomainsResponseLinksValueMethod._(this.value);
 
-  factory BuyDomainsResponseLinksValueMethod.fromJson(String value) => BuyDomainsResponseLinksValueMethod._(value);
+  factory BuyDomainsResponseLinksValueMethod.fromJson(String value) =>
+      BuyDomainsResponseLinksValueMethod._(value);
 
   static const get_ = BuyDomainsResponseLinksValueMethod._('GET');
   static const post = BuyDomainsResponseLinksValueMethod._('POST');
@@ -100,21 +116,24 @@ final class BuyDomainsResponseLinksValueMethod {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyDomainsResponseLinksValueMethod && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is BuyDomainsResponseLinksValueMethod && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetOrderResponseStatus {
-
   final String value;
 
   const GetOrderResponseStatus._(this.value);
 
-  factory GetOrderResponseStatus.fromJson(String value) => GetOrderResponseStatus._(value);
+  factory GetOrderResponseStatus.fromJson(String value) =>
+      GetOrderResponseStatus._(value);
 
   static const draft = GetOrderResponseStatus._('draft');
   static const purchasing = GetOrderResponseStatus._('purchasing');
@@ -123,170 +142,243 @@ final class GetOrderResponseStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetOrderResponseStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetOrderResponseStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateAttackChallengeModeResponseAttackModeEnabled {
-
   final bool value;
 
   const UpdateAttackChallengeModeResponseAttackModeEnabled._(this.value);
 
-  factory UpdateAttackChallengeModeResponseAttackModeEnabled.fromJson(bool value) => UpdateAttackChallengeModeResponseAttackModeEnabled._(value);
+  factory UpdateAttackChallengeModeResponseAttackModeEnabled.fromJson(
+          bool value) =>
+      UpdateAttackChallengeModeResponseAttackModeEnabled._(value);
 
-  static const false_ = UpdateAttackChallengeModeResponseAttackModeEnabled._(false);
-  static const true_ = UpdateAttackChallengeModeResponseAttackModeEnabled._(true);
+  static const false_ =
+      UpdateAttackChallengeModeResponseAttackModeEnabled._(false);
+  static const true_ =
+      UpdateAttackChallengeModeResponseAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateAttackChallengeModeResponseAttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateAttackChallengeModeResponseAttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class RemoveBypassIpResponseOk {
-
   final bool value;
 
   const RemoveBypassIpResponseOk._(this.value);
 
-  factory RemoveBypassIpResponseOk.fromJson(bool value) => RemoveBypassIpResponseOk._(value);
+  factory RemoveBypassIpResponseOk.fromJson(bool value) =>
+      RemoveBypassIpResponseOk._(value);
 
   static const false_ = RemoveBypassIpResponseOk._(false);
   static const true_ = RemoveBypassIpResponseOk._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RemoveBypassIpResponseOk && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RemoveBypassIpResponseOk && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetBypassIpResponseResultItemAction {
-
   final String value;
 
   const GetBypassIpResponseResultItemAction._(this.value);
 
-  factory GetBypassIpResponseResultItemAction.fromJson(String value) => GetBypassIpResponseResultItemAction._(value);
+  factory GetBypassIpResponseResultItemAction.fromJson(String value) =>
+      GetBypassIpResponseResultItemAction._(value);
 
   static const block = GetBypassIpResponseResultItemAction._('block');
   static const bypass = GetBypassIpResponseResultItemAction._('bypass');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetBypassIpResponseResultItemAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetBypassIpResponseResultItemAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetBypassIpResponseResultItemIsProjectRule {
-
   final bool value;
 
   const GetBypassIpResponseResultItemIsProjectRule._(this.value);
 
-  factory GetBypassIpResponseResultItemIsProjectRule.fromJson(bool value) => GetBypassIpResponseResultItemIsProjectRule._(value);
+  factory GetBypassIpResponseResultItemIsProjectRule.fromJson(bool value) =>
+      GetBypassIpResponseResultItemIsProjectRule._(value);
 
   static const false_ = GetBypassIpResponseResultItemIsProjectRule._(false);
   static const true_ = GetBypassIpResponseResultItemIsProjectRule._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetBypassIpResponseResultItemIsProjectRule && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetBypassIpResponseResultItemIsProjectRule &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteConditionalBypassResponseOk {
-
   final bool value;
 
   const DeleteConditionalBypassResponseOk._(this.value);
 
-  factory DeleteConditionalBypassResponseOk.fromJson(bool value) => DeleteConditionalBypassResponseOk._(value);
+  factory DeleteConditionalBypassResponseOk.fromJson(bool value) =>
+      DeleteConditionalBypassResponseOk._(value);
 
   static const false_ = DeleteConditionalBypassResponseOk._(false);
   static const true_ = DeleteConditionalBypassResponseOk._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteConditionalBypassResponseOk && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteConditionalBypassResponseOk && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg {
-
   final bool value;
 
-  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg._(this.value);
+  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg._(
+      this.value);
 
-  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg.fromJson(bool value) => CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg._(value);
+  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg.fromJson(
+          bool value) =>
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg
+          ._(value);
 
-  static const false_ = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg._(false);
-  static const true_ = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg._(true);
+  static const false_ =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg
+          ._(false);
+  static const true_ =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateConditionalBypassResponseResultConditionGroupItemConditionsItemNeg &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp {
-
   final String value;
 
-  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(this.value);
+  const CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+      this.value);
 
-  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp.fromJson(String value) => CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(value);
+  factory CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp.fromJson(
+          String value) =>
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          value);
 
-  static const eq = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('eq');
-  static const ex = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('ex');
-  static const gt = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('gt');
-  static const gte = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('gte');
-  static const inc = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('inc');
-  static const list = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('list');
-  static const lt = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('lt');
-  static const lte = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('lte');
-  static const neq = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('neq');
-  static const nex = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('nex');
-  static const ninc = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('ninc');
-  static const pre = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('pre');
-  static const re = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('re');
-  static const sub = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('sub');
-  static const suf = CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._('suf');
+  static const eq =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'eq');
+  static const ex =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'ex');
+  static const gt =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'gt');
+  static const gte =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'gte');
+  static const inc =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'inc');
+  static const list =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'list');
+  static const lt =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'lt');
+  static const lte =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'lte');
+  static const neq =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'neq');
+  static const nex =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'nex');
+  static const ninc =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'ninc');
+  static const pre =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'pre');
+  static const re =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          're');
+  static const sub =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'sub');
+  static const suf =
+      CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp._(
+          'suf');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateConditionalBypassResponseResultConditionGroupItemConditionsItemOp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

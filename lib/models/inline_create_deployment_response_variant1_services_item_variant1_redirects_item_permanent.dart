@@ -5,272 +5,420 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent
+          ._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent._(false);
-  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent
+          ._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RedirectsItemPermanent &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type
+          ._(value);
 
-  static const service = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type._('service');
+  static const service =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type
+          ._('service');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemDestinationVariant1Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type
+          ._(value);
 
-  static const host = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type._('host');
+  static const host =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type
+          ._('host');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant0Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type
+          ._(value);
 
-  static const cookie = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type._('cookie');
-  static const header = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type._('header');
-  static const query = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type._('query');
+  static const cookie =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type
+          ._('cookie');
+  static const header =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type
+          ._('header');
+  static const query =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type
+          ._('query');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemHasItemVariant1Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type
+          ._(value);
 
-  static const host = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type._('host');
+  static const host =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type
+          ._('host');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type
+          ._(value);
 
-  static const cookie = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type._('cookie');
-  static const header = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type._('header');
-  static const query = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type._('query');
+  static const cookie =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type
+          ._('cookie');
+  static const header =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type
+          ._('header');
+  static const query =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type
+          ._('query');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl
+          ._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl._(false);
-  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl
+          ._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemRespectOriginCacheControl &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp
+          ._(value);
 
-  static const set_ = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp._('set');
+  static const set_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp
+          ._('set');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType
+          ._(value);
 
-  static const requestPath = CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType._('request.path');
+  static const requestPath =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType
+          ._('request.path');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive
+          ._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive._(false);
-  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive
+          ._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0CaseSensitive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check
+          ._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check._(false);
-  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check
+          ._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Check &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue.fromJson(bool value) => CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue
+          ._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue._(false);
-  static const true_ = CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue
+          ._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0Continue &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
 final class CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._(this.value);
+  const CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type.fromJson(String value) => CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._(value);
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type
+          ._(value);
 
-  static const service = CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._('service');
+  static const service =
+      CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type
+          ._('service');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ServicesItemVariant1RoutesItemVariant0DestinationVariant1Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

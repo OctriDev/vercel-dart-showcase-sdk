@@ -5,287 +5,379 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UserEventPayloadVariant252RemovedUsersValueRole {
-
   final String value;
 
   const UserEventPayloadVariant252RemovedUsersValueRole._(this.value);
 
-  factory UserEventPayloadVariant252RemovedUsersValueRole.fromJson(String value) => UserEventPayloadVariant252RemovedUsersValueRole._(value);
+  factory UserEventPayloadVariant252RemovedUsersValueRole.fromJson(
+          String value) =>
+      UserEventPayloadVariant252RemovedUsersValueRole._(value);
 
-  static const billing = UserEventPayloadVariant252RemovedUsersValueRole._('BILLING');
-  static const contributor = UserEventPayloadVariant252RemovedUsersValueRole._('CONTRIBUTOR');
-  static const developer = UserEventPayloadVariant252RemovedUsersValueRole._('DEVELOPER');
-  static const member = UserEventPayloadVariant252RemovedUsersValueRole._('MEMBER');
-  static const owner = UserEventPayloadVariant252RemovedUsersValueRole._('OWNER');
-  static const security = UserEventPayloadVariant252RemovedUsersValueRole._('SECURITY');
-  static const viewer = UserEventPayloadVariant252RemovedUsersValueRole._('VIEWER');
-  static const viewerForPlus = UserEventPayloadVariant252RemovedUsersValueRole._('VIEWER_FOR_PLUS');
+  static const billing =
+      UserEventPayloadVariant252RemovedUsersValueRole._('BILLING');
+  static const contributor =
+      UserEventPayloadVariant252RemovedUsersValueRole._('CONTRIBUTOR');
+  static const developer =
+      UserEventPayloadVariant252RemovedUsersValueRole._('DEVELOPER');
+  static const member =
+      UserEventPayloadVariant252RemovedUsersValueRole._('MEMBER');
+  static const owner =
+      UserEventPayloadVariant252RemovedUsersValueRole._('OWNER');
+  static const security =
+      UserEventPayloadVariant252RemovedUsersValueRole._('SECURITY');
+  static const viewer =
+      UserEventPayloadVariant252RemovedUsersValueRole._('VIEWER');
+  static const viewerForPlus =
+      UserEventPayloadVariant252RemovedUsersValueRole._('VIEWER_FOR_PLUS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant252RemovedUsersValueRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant252RemovedUsersValueRole &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `actorType` wire field.
 final class UserEventPayloadVariant253ActorType {
-
   final String value;
 
   const UserEventPayloadVariant253ActorType._(this.value);
 
-  factory UserEventPayloadVariant253ActorType.fromJson(String value) => UserEventPayloadVariant253ActorType._(value);
+  factory UserEventPayloadVariant253ActorType.fromJson(String value) =>
+      UserEventPayloadVariant253ActorType._(value);
 
   static const admin = UserEventPayloadVariant253ActorType._('admin');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253ActorType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253ActorType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the plan change was system-initiated rather than human-initiated.
 final class UserEventPayloadVariant253Automated {
-
   final bool value;
 
   const UserEventPayloadVariant253Automated._(this.value);
 
-  factory UserEventPayloadVariant253Automated.fromJson(bool value) => UserEventPayloadVariant253Automated._(value);
+  factory UserEventPayloadVariant253Automated.fromJson(bool value) =>
+      UserEventPayloadVariant253Automated._(value);
 
   static const false_ = UserEventPayloadVariant253Automated._(false);
   static const true_ = UserEventPayloadVariant253Automated._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253Automated && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253Automated && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `isDowngrade` wire field.
 final class UserEventPayloadVariant253IsDowngrade {
-
   final bool value;
 
   const UserEventPayloadVariant253IsDowngrade._(this.value);
 
-  factory UserEventPayloadVariant253IsDowngrade.fromJson(bool value) => UserEventPayloadVariant253IsDowngrade._(value);
+  factory UserEventPayloadVariant253IsDowngrade.fromJson(bool value) =>
+      UserEventPayloadVariant253IsDowngrade._(value);
 
   static const false_ = UserEventPayloadVariant253IsDowngrade._(false);
   static const true_ = UserEventPayloadVariant253IsDowngrade._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253IsDowngrade && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253IsDowngrade && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `isReactivate` wire field.
 final class UserEventPayloadVariant253IsReactivate {
-
   final bool value;
 
   const UserEventPayloadVariant253IsReactivate._(this.value);
 
-  factory UserEventPayloadVariant253IsReactivate.fromJson(bool value) => UserEventPayloadVariant253IsReactivate._(value);
+  factory UserEventPayloadVariant253IsReactivate.fromJson(bool value) =>
+      UserEventPayloadVariant253IsReactivate._(value);
 
   static const false_ = UserEventPayloadVariant253IsReactivate._(false);
   static const true_ = UserEventPayloadVariant253IsReactivate._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253IsReactivate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253IsReactivate && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `isTrialUpgrade` wire field.
 final class UserEventPayloadVariant253IsTrialUpgrade {
-
   final bool value;
 
   const UserEventPayloadVariant253IsTrialUpgrade._(this.value);
 
-  factory UserEventPayloadVariant253IsTrialUpgrade.fromJson(bool value) => UserEventPayloadVariant253IsTrialUpgrade._(value);
+  factory UserEventPayloadVariant253IsTrialUpgrade.fromJson(bool value) =>
+      UserEventPayloadVariant253IsTrialUpgrade._(value);
 
   static const false_ = UserEventPayloadVariant253IsTrialUpgrade._(false);
   static const true_ = UserEventPayloadVariant253IsTrialUpgrade._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253IsTrialUpgrade && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253IsTrialUpgrade && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UserEventPayloadVariant253RemovedUsersValueConfirmed {
-
   final bool value;
 
   const UserEventPayloadVariant253RemovedUsersValueConfirmed._(this.value);
 
-  factory UserEventPayloadVariant253RemovedUsersValueConfirmed.fromJson(bool value) => UserEventPayloadVariant253RemovedUsersValueConfirmed._(value);
+  factory UserEventPayloadVariant253RemovedUsersValueConfirmed.fromJson(
+          bool value) =>
+      UserEventPayloadVariant253RemovedUsersValueConfirmed._(value);
 
-  static const false_ = UserEventPayloadVariant253RemovedUsersValueConfirmed._(false);
-  static const true_ = UserEventPayloadVariant253RemovedUsersValueConfirmed._(true);
+  static const false_ =
+      UserEventPayloadVariant253RemovedUsersValueConfirmed._(false);
+  static const true_ =
+      UserEventPayloadVariant253RemovedUsersValueConfirmed._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253RemovedUsersValueConfirmed && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253RemovedUsersValueConfirmed &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin {
-
   final String value;
 
-  const UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(this.value);
+  const UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+      this.value);
 
-  factory UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin.fromJson(String value) => UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(value);
+  factory UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin.fromJson(
+          String value) =>
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(value);
 
-  static const accountUpdate = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('account-update');
-  static const bitbucket = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('bitbucket');
-  static const dsync = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('dsync');
-  static const feedback = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('feedback');
-  static const github = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('github');
-  static const gitlab = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('gitlab');
-  static const import_ = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('import');
-  static const link = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('link');
-  static const mail = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('mail');
-  static const nsnbAutoApprove = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('nsnb-auto-approve');
-  static const nsnbHobbyUpgrade = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('nsnb-hobby-upgrade');
-  static const nsnbInvite = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('nsnb-invite');
-  static const nsnbRedeploy = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('nsnb-redeploy');
-  static const nsnbRedeployAttributionCard = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('nsnb-redeploy-attribution-card');
-  static const nsnbRequestAccess = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('nsnb-request-access');
-  static const nsnbViewerUpgrade = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('nsnb-viewer-upgrade');
-  static const organizationTeams = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('organization-teams');
-  static const saml = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('saml');
-  static const teams = UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('teams');
+  static const accountUpdate =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'account-update');
+  static const bitbucket =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'bitbucket');
+  static const dsync =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('dsync');
+  static const feedback =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('feedback');
+  static const github =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('github');
+  static const gitlab =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('gitlab');
+  static const import_ =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('import');
+  static const link =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('link');
+  static const mail =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('mail');
+  static const nsnbAutoApprove =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'nsnb-auto-approve');
+  static const nsnbHobbyUpgrade =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'nsnb-hobby-upgrade');
+  static const nsnbInvite =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'nsnb-invite');
+  static const nsnbRedeploy =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'nsnb-redeploy');
+  static const nsnbRedeployAttributionCard =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'nsnb-redeploy-attribution-card');
+  static const nsnbRequestAccess =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'nsnb-request-access');
+  static const nsnbViewerUpgrade =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'nsnb-viewer-upgrade');
+  static const organizationTeams =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._(
+          'organization-teams');
+  static const saml =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('saml');
+  static const teams =
+      UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin._('teams');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253RemovedUsersValueJoinedFromOrigin &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UserEventPayloadVariant253RemovedUsersValueRole {
-
   final String value;
 
   const UserEventPayloadVariant253RemovedUsersValueRole._(this.value);
 
-  factory UserEventPayloadVariant253RemovedUsersValueRole.fromJson(String value) => UserEventPayloadVariant253RemovedUsersValueRole._(value);
+  factory UserEventPayloadVariant253RemovedUsersValueRole.fromJson(
+          String value) =>
+      UserEventPayloadVariant253RemovedUsersValueRole._(value);
 
-  static const billing = UserEventPayloadVariant253RemovedUsersValueRole._('BILLING');
-  static const contributor = UserEventPayloadVariant253RemovedUsersValueRole._('CONTRIBUTOR');
-  static const developer = UserEventPayloadVariant253RemovedUsersValueRole._('DEVELOPER');
-  static const member = UserEventPayloadVariant253RemovedUsersValueRole._('MEMBER');
-  static const owner = UserEventPayloadVariant253RemovedUsersValueRole._('OWNER');
-  static const security = UserEventPayloadVariant253RemovedUsersValueRole._('SECURITY');
-  static const viewer = UserEventPayloadVariant253RemovedUsersValueRole._('VIEWER');
-  static const viewerForPlus = UserEventPayloadVariant253RemovedUsersValueRole._('VIEWER_FOR_PLUS');
+  static const billing =
+      UserEventPayloadVariant253RemovedUsersValueRole._('BILLING');
+  static const contributor =
+      UserEventPayloadVariant253RemovedUsersValueRole._('CONTRIBUTOR');
+  static const developer =
+      UserEventPayloadVariant253RemovedUsersValueRole._('DEVELOPER');
+  static const member =
+      UserEventPayloadVariant253RemovedUsersValueRole._('MEMBER');
+  static const owner =
+      UserEventPayloadVariant253RemovedUsersValueRole._('OWNER');
+  static const security =
+      UserEventPayloadVariant253RemovedUsersValueRole._('SECURITY');
+  static const viewer =
+      UserEventPayloadVariant253RemovedUsersValueRole._('VIEWER');
+  static const viewerForPlus =
+      UserEventPayloadVariant253RemovedUsersValueRole._('VIEWER_FOR_PLUS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant253RemovedUsersValueRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant253RemovedUsersValueRole &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `enabled` wire field.
 final class UserEventPayloadVariant254Enabled {
-
   final bool value;
 
   const UserEventPayloadVariant254Enabled._(this.value);
 
-  factory UserEventPayloadVariant254Enabled.fromJson(bool value) => UserEventPayloadVariant254Enabled._(value);
+  factory UserEventPayloadVariant254Enabled.fromJson(bool value) =>
+      UserEventPayloadVariant254Enabled._(value);
 
   static const false_ = UserEventPayloadVariant254Enabled._(false);
   static const true_ = UserEventPayloadVariant254Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant254Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant254Enabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `actorType` wire field.
 final class UserEventPayloadVariant256ActorType {
-
   final String value;
 
   const UserEventPayloadVariant256ActorType._(this.value);
 
-  factory UserEventPayloadVariant256ActorType.fromJson(String value) => UserEventPayloadVariant256ActorType._(value);
+  factory UserEventPayloadVariant256ActorType.fromJson(String value) =>
+      UserEventPayloadVariant256ActorType._(value);
 
   static const admin = UserEventPayloadVariant256ActorType._('admin');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant256ActorType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant256ActorType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `scope` wire field.
 final class UserEventPayloadVariant257Scope {
-
   final String value;
 
   const UserEventPayloadVariant257Scope._(this.value);
 
-  factory UserEventPayloadVariant257Scope.fromJson(String value) => UserEventPayloadVariant257Scope._(value);
+  factory UserEventPayloadVariant257Scope.fromJson(String value) =>
+      UserEventPayloadVariant257Scope._(value);
 
   static const network = UserEventPayloadVariant257Scope._('network');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant257Scope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant257Scope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

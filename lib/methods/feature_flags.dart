@@ -56,24 +56,38 @@ Future<ListFlagsV2Response> listFlagsV2(ClientConfig config,
           '/v2/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/flags',
           config: config,
           query: {
-            'state': SdkQueryValue(SdkUtils.unwrapOptional(state), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags), style: 'form', explode: true),
-            'createdBy': SdkQueryValue(SdkUtils.unwrapOptional(createdBy), style: 'form', explode: true),
-            'maintainerIds': SdkQueryValue(SdkUtils.unwrapOptional(maintainerIds), style: 'form', explode: true),
-            'includeMarketplaceFlags': SdkQueryValue(SdkUtils.unwrapOptional(includeMarketplaceFlags), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'state': SdkQueryValue(SdkUtils.unwrapOptional(state),
+                style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
+                style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags),
+                style: 'form', explode: true),
+            'createdBy': SdkQueryValue(SdkUtils.unwrapOptional(createdBy),
+                style: 'form', explode: true),
+            'maintainerIds': SdkQueryValue(
+                SdkUtils.unwrapOptional(maintainerIds),
+                style: 'form',
+                explode: true),
+            'includeMarketplaceFlags': SdkQueryValue(
+                SdkUtils.unwrapOptional(includeMarketplaceFlags),
+                style: 'form',
+                explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listFlagsV2',
-          fromJsonRaw: (value) => ListFlagsV2Response.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListFlagsV2Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists feature flags for a project, with optional filtering by state, slug or description, and tags. Use the `cursor` to continue through paginated results, or omit `limit` to retrieve all flags. The `withMetadata` parameter is deprecated; resolve creator identity separately or use the single-flag endpoint when you need that metadata.
 ///
@@ -117,22 +131,30 @@ Future<ListFlagsResponse> listFlags(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/flags',
           config: config,
           query: {
-            'state': SdkQueryValue(SdkUtils.unwrapOptional(state), style: 'form', explode: true),
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'state': SdkQueryValue(SdkUtils.unwrapOptional(state),
+                style: 'form', explode: true),
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
+                style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listFlags',
-          fromJsonRaw: (value) => ListFlagsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListFlagsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a feature flag for a project with a unique project-level slug, a flag kind, and environment configuration. Supply `slug`, `kind`, and `environments`; the flag kind must be boolean, string, number, or JSON. Configure optional variants, state, maintainers, and tags as needed.
 ///
@@ -160,7 +182,8 @@ Future<CreateFlagResponse> createFlag(ClientConfig config,
     required Map<String, CreateFlagRequestBodyEnvironmentsValue> environments,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug_2 = const SdkOmitted(),
-    SdkOptional<List<CreateFlagRequestBodyVariantsItem>> variants = const SdkOmitted(),
+    SdkOptional<List<CreateFlagRequestBodyVariantsItem>> variants =
+        const SdkOmitted(),
     SdkOptional<double> seed = const SdkOmitted(),
     SdkOptional<String> description = const SdkOmitted(),
     SdkOptional<CreateFlagRequestBodyState> state = const SdkOmitted(),
@@ -183,8 +206,10 @@ Future<CreateFlagResponse> createFlag(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/flags',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2),
+                style: 'form', explode: true)
           },
           body: {
             'slug': slug,
@@ -200,11 +225,11 @@ Future<CreateFlagResponse> createFlag(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createFlag',
-          fromJsonRaw: (value) => CreateFlagResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateFlagResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a feature flag by its ID or slug within a project. Use `ifMatch` to send an ETag condition and `withMetadata` to include metadata in the response. The result contains the flag configuration, including its environments, variants, and current state.
 ///
@@ -229,10 +254,14 @@ Future<Flag> getFlag(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/flags/${Uri.encodeComponent(flagIdOrSlug.toString())}',
           config: config,
           query: {
-            'ifMatch': SdkQueryValue(SdkUtils.unwrapOptional(ifMatch), style: 'form', explode: true),
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'ifMatch': SdkQueryValue(SdkUtils.unwrapOptional(ifMatch),
+                style: 'form', explode: true),
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getFlag',
@@ -240,7 +269,6 @@ Future<Flag> getFlag(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Updates selected properties of an existing feature flag without requiring the full configuration. Supply only the fields to change, such as `variants`, `environments`, or `state`; any environment configuration you provide must include its required settings. Use `ifMatch` when you need to condition the update on an ETag.
 ///
@@ -273,8 +301,10 @@ Future<UpdateFlagResponse> updateFlag(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String> createdBy = const SdkOmitted(),
     SdkOptional<String> message = const SdkOmitted(),
-    SdkOptional<List<UpdateFlagRequestBodyVariantsItem>> variants = const SdkOmitted(),
-    SdkOptional<Map<String, UpdateFlagRequestBodyEnvironmentsValue>> environments = const SdkOmitted(),
+    SdkOptional<List<UpdateFlagRequestBodyVariantsItem>> variants =
+        const SdkOmitted(),
+    SdkOptional<Map<String, UpdateFlagRequestBodyEnvironmentsValue>>
+        environments = const SdkOmitted(),
     SdkOptional<double> seed = const SdkOmitted(),
     SdkOptional<String> description = const SdkOmitted(),
     SdkOptional<UpdateFlagRequestBodyState> state = const SdkOmitted(),
@@ -296,10 +326,14 @@ Future<UpdateFlagResponse> updateFlag(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/flags/${Uri.encodeComponent(flagIdOrSlug.toString())}',
           config: config,
           query: {
-            'ifMatch': SdkQueryValue(SdkUtils.unwrapOptional(ifMatch), style: 'form', explode: true),
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'ifMatch': SdkQueryValue(SdkUtils.unwrapOptional(ifMatch),
+                style: 'form', explode: true),
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'createdBy': SdkUtils.unwrapOptional(createdBy),
@@ -315,11 +349,11 @@ Future<UpdateFlagResponse> updateFlag(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateFlag',
-          fromJsonRaw: (value) => UpdateFlagResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateFlagResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a feature flag from a project permanently. Use this operation only when you no longer need the flag, because deletion cannot be undone; archive the flag instead if you may need it later. A 204 response has no response body.
 ///
@@ -344,17 +378,20 @@ Future<void> deleteFlag(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/flags/${Uri.encodeComponent(flagIdOrSlug.toString())}',
           config: config,
           query: {
-            'ifMatch': SdkQueryValue(SdkUtils.unwrapOptional(ifMatch), style: 'form', explode: true),
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'ifMatch': SdkQueryValue(SdkUtils.unwrapOptional(ifMatch),
+                style: 'form', explode: true),
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteFlag',
           options: requestOptions))
       .data;
 }
-
 
 /// Lists the versions recorded for a feature flag in a project. Use `cursor` to continue through the results and `environment` to filter versions by environment. The response includes pagination information alongside the version records.
 ///
@@ -383,20 +420,26 @@ Future<ListFlagVersionsResponse> listFlagVersions(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/flags/${Uri.encodeComponent(flagIdOrSlug.toString())}/versions',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
-            'environment': SdkQueryValue(SdkUtils.unwrapOptional(environment), style: 'form', explode: true),
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
+                style: 'form', explode: true),
+            'environment': SdkQueryValue(SdkUtils.unwrapOptional(environment),
+                style: 'form', explode: true),
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listFlagVersions',
-          fromJsonRaw: (value) => ListFlagVersionsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListFlagVersionsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves feature flag settings for a project. Use these settings to inspect whether flags are enabled, which environments are configured, and the project's flag-related metadata.
 ///
@@ -414,16 +457,18 @@ Future<GetFlagSettingsResponse> getFlagSettings(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/settings',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getFlagSettings',
-          fromJsonRaw: (value) => GetFlagSettingsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetFlagSettingsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates feature flag settings for a project, including whether flags are enabled and which environments are synchronized. Send only the settings fields you want to change; entity and attribute entries have required fields and size limits. The response contains the resulting settings.
 ///
@@ -438,7 +483,8 @@ Future<UpdateFlagSettingsResponse> updateFlagSettings(ClientConfig config,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<bool> enabled = const SdkOmitted(),
-    SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>> entities = const SdkOmitted(),
+    SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>> entities =
+        const SdkOmitted(),
     SdkOptional<List<String>> environments = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (entities is SdkPresent<List<UpdateFlagSettingsRequestBodyEntitiesItem>>) {
@@ -449,8 +495,10 @@ Future<UpdateFlagSettingsResponse> updateFlagSettings(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/settings',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'enabled': SdkUtils.unwrapOptional(enabled),
@@ -459,11 +507,11 @@ Future<UpdateFlagSettingsResponse> updateFlagSettings(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateFlagSettings',
-          fromJsonRaw: (value) => UpdateFlagSettingsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateFlagSettingsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists feature flag settings for projects in a team. Use `limit` to control the maximum number of settings returned and `cursor` to continue through the results.
 ///
@@ -487,9 +535,12 @@ Future<dynamic> listTeamFlagSettings(ClientConfig config,
           '/v1/teams/${Uri.encodeComponent(teamId.toString())}/feature-flags/settings',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listTeamFlagSettings',
@@ -497,7 +548,6 @@ Future<dynamic> listTeamFlagSettings(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Lists feature flags across all projects in a team. Filter the results by state, kind, tags, creator, maintainers, or search text, and use `cursor` to continue through the results. The response includes an opaque next cursor for pagination.
 ///
@@ -548,24 +598,38 @@ Future<ListTeamFlagsV2Response> listTeamFlagsV2(ClientConfig config,
           '/v2/teams/${Uri.encodeComponent(teamId.toString())}/feature-flags/flags',
           config: config,
           query: {
-            'state': SdkQueryValue(SdkUtils.unwrapOptional(state), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'kind': SdkQueryValue(SdkUtils.unwrapOptional(kind), style: 'form', explode: true),
-            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags), style: 'form', explode: true),
-            'createdBy': SdkQueryValue(SdkUtils.unwrapOptional(createdBy), style: 'form', explode: true),
-            'maintainerIds': SdkQueryValue(SdkUtils.unwrapOptional(maintainerIds), style: 'form', explode: true),
-            'includeMarketplaceFlags': SdkQueryValue(SdkUtils.unwrapOptional(includeMarketplaceFlags), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'state': SdkQueryValue(SdkUtils.unwrapOptional(state),
+                style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
+                style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'kind': SdkQueryValue(SdkUtils.unwrapOptional(kind),
+                style: 'form', explode: true),
+            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags),
+                style: 'form', explode: true),
+            'createdBy': SdkQueryValue(SdkUtils.unwrapOptional(createdBy),
+                style: 'form', explode: true),
+            'maintainerIds': SdkQueryValue(
+                SdkUtils.unwrapOptional(maintainerIds),
+                style: 'form',
+                explode: true),
+            'includeMarketplaceFlags': SdkQueryValue(
+                SdkUtils.unwrapOptional(includeMarketplaceFlags),
+                style: 'form',
+                explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listTeamFlagsV2',
-          fromJsonRaw: (value) => ListTeamFlagsV2Response.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListTeamFlagsV2Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists feature flags across all projects in a team. Filter the results by state, kind, tags, or search text, and use `cursor` to continue through the results. The `withMetadata` parameter is deprecated; resolve creator identity separately instead.
 ///
@@ -606,22 +670,30 @@ Future<ListTeamFlagsResponse> listTeamFlags(ClientConfig config,
           '/v1/teams/${Uri.encodeComponent(teamId.toString())}/feature-flags/flags',
           config: config,
           query: {
-            'state': SdkQueryValue(SdkUtils.unwrapOptional(state), style: 'form', explode: true),
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'kind': SdkQueryValue(SdkUtils.unwrapOptional(kind), style: 'form', explode: true),
-            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'state': SdkQueryValue(SdkUtils.unwrapOptional(state),
+                style: 'form', explode: true),
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
+                style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'kind': SdkQueryValue(SdkUtils.unwrapOptional(kind),
+                style: 'form', explode: true),
+            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listTeamFlags',
-          fromJsonRaw: (value) => ListTeamFlagsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListTeamFlagsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a feature flag segment for a project. Supply `slug`, `label`, `data`, and `hint`; `data` can define segment rules and include or exclude data. A 201 response returns the created segment with its generated identifier.
 ///
@@ -647,8 +719,10 @@ Future<CreateFlagSegmentResponse> createFlagSegment(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/segments',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2),
+                style: 'form', explode: true)
           },
           body: {
             'slug': slug,
@@ -660,11 +734,11 @@ Future<CreateFlagSegmentResponse> createFlagSegment(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createFlagSegment',
-          fromJsonRaw: (value) => CreateFlagSegmentResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateFlagSegmentResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists feature flag segments defined for a project. Use `withMetadata` to control whether metadata is included in the segment records.
 ///
@@ -684,17 +758,20 @@ Future<ListFlagSegmentsResponse> listFlagSegments(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/segments',
           config: config,
           query: {
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listFlagSegments',
-          fromJsonRaw: (value) => ListFlagSegmentsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListFlagSegmentsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a feature flag segment from a project by its identifier or slug. Use `withMetadata` to control whether the response includes segment metadata.
 ///
@@ -716,17 +793,20 @@ Future<Segment> getFlagSegment(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/segments/${Uri.encodeComponent(segmentIdOrSlug.toString())}',
           config: config,
           query: {
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getFlagSegment',
-          fromJsonRaw: (value) => Segment.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              Segment.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a feature flag segment from a project. Use `projectIdOrName` and `segmentIdOrSlug` to identify the project and segment to remove. Set `withMetadata` to include metadata in the response when the operation returns a representation.
 ///
@@ -748,16 +828,18 @@ Future<void> deleteFlagSegment(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/segments/${Uri.encodeComponent(segmentIdOrSlug.toString())}',
           config: config,
           query: {
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteFlagSegment',
           options: requestOptions))
       .data;
 }
-
 
 /// Updates an existing feature flag segment in a project. Use `projectIdOrName` and `segmentIdOrSlug` to identify the project and segment, and send only the segment properties you want to change. The `operations` entries can add or remove values from the segment's include or exclude fields.
 ///
@@ -775,7 +857,8 @@ Future<UpdateFlagSegmentResponse> updateFlagSegment(ClientConfig config,
     SdkOptional<bool> withMetadata = const SdkOmitted(),
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>> operations = const SdkOmitted(),
+    SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>> operations =
+        const SdkOmitted(),
     SdkOptional<String> label = const SdkOmitted(),
     SdkOptional<String> description = const SdkOmitted(),
     SdkOptional<UpdateFlagSegmentRequestBodyData> data = const SdkOmitted(),
@@ -785,9 +868,12 @@ Future<UpdateFlagSegmentResponse> updateFlagSegment(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/segments/${Uri.encodeComponent(segmentIdOrSlug.toString())}',
           config: config,
           query: {
-            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'withMetadata': SdkQueryValue(SdkUtils.unwrapOptional(withMetadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'operations': SdkUtils.unwrapOptional(operations),
@@ -803,33 +889,34 @@ Future<UpdateFlagSegmentResponse> updateFlagSegment(ClientConfig config,
       .data;
 }
 
-
 /// Retrieves the feature flags associated with a deployment. Use `deploymentId` to identify the deployment whose flags you need. The response includes the flags and status information for the deployment.
 ///
 /// Retrieve the feature flags of a deployment.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetDeploymentFeatureFlagsResponse>
-    getDeploymentFeatureFlags(ClientConfig config,
-        {required String deploymentId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<GetDeploymentFeatureFlagsResponse> getDeploymentFeatureFlags(
+    ClientConfig config,
+    {required String deploymentId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetDeploymentFeatureFlagsResponse>('GET',
           '/v1/deployments/${Uri.encodeComponent(deploymentId.toString())}/feature-flags',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDeploymentFeatureFlags',
-          fromJsonRaw: (value) => GetDeploymentFeatureFlagsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDeploymentFeatureFlagsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists the SDK keys for a project. Use `projectIdOrName` to select the project whose keys you want to inspect. The response contains safe key metadata and does not include cleartext secrets.
 ///
@@ -847,16 +934,18 @@ Future<GetSdkKeysResponse> getSdkKeys(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/sdk-keys',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSdkKeys',
-          fromJsonRaw: (value) => GetSdkKeysResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetSdkKeysResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates an SDK key for a project. Supply `sdkKeyType` and `environment` in the request body, and optionally provide a `label` to identify the key. The response includes the cleartext key value, which is disclosed only when the key is created.
 ///
@@ -877,8 +966,10 @@ Future<FlagsSdkKeyWithSecrets> createSdkKey(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/sdk-keys',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'sdkKeyType': sdkKeyType,
@@ -887,11 +978,11 @@ Future<FlagsSdkKeyWithSecrets> createSdkKey(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createSdkKey',
-          fromJsonRaw: (value) => FlagsSdkKeyWithSecrets.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              FlagsSdkKeyWithSecrets.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes an SDK key from a project. Use `projectIdOrName` and `hashKey` to identify the project and key to remove. The operation removes the key rather than merely hiding it from the project’s key list.
 ///
@@ -911,8 +1002,10 @@ Future<void> deleteSdkKey(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectIdOrName.toString())}/feature-flags/sdk-keys/${Uri.encodeComponent(hashKey.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteSdkKey',

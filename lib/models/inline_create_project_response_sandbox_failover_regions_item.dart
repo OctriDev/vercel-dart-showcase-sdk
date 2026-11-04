@@ -5,12 +5,13 @@ part of 'inline.dart';
 
 // Inline operation models
 final class CreateProjectResponseSandboxFailoverRegionsItem {
-
   final String value;
 
   const CreateProjectResponseSandboxFailoverRegionsItem._(this.value);
 
-  factory CreateProjectResponseSandboxFailoverRegionsItem.fromJson(String value) => CreateProjectResponseSandboxFailoverRegionsItem._(value);
+  factory CreateProjectResponseSandboxFailoverRegionsItem.fromJson(
+          String value) =>
+      CreateProjectResponseSandboxFailoverRegionsItem._(value);
 
   static const arn1 = CreateProjectResponseSandboxFailoverRegionsItem._('arn1');
   static const bom1 = CreateProjectResponseSandboxFailoverRegionsItem._('bom1');
@@ -34,21 +35,25 @@ final class CreateProjectResponseSandboxFailoverRegionsItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSandboxFailoverRegionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSandboxFailoverRegionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSandboxRegion {
-
   final String value;
 
   const CreateProjectResponseSandboxRegion._(this.value);
 
-  factory CreateProjectResponseSandboxRegion.fromJson(String value) => CreateProjectResponseSandboxRegion._(value);
+  factory CreateProjectResponseSandboxRegion.fromJson(String value) =>
+      CreateProjectResponseSandboxRegion._(value);
 
   static const arn1 = CreateProjectResponseSandboxRegion._('arn1');
   static const bom1 = CreateProjectResponseSandboxRegion._('bom1');
@@ -72,221 +77,277 @@ final class CreateProjectResponseSandboxRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSandboxRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSandboxRegion && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityAttackModeEnabled {
-
   final bool value;
 
   const CreateProjectResponseSecurityAttackModeEnabled._(this.value);
 
-  factory CreateProjectResponseSecurityAttackModeEnabled.fromJson(bool value) => CreateProjectResponseSecurityAttackModeEnabled._(value);
+  factory CreateProjectResponseSecurityAttackModeEnabled.fromJson(bool value) =>
+      CreateProjectResponseSecurityAttackModeEnabled._(value);
 
   static const false_ = CreateProjectResponseSecurityAttackModeEnabled._(false);
   static const true_ = CreateProjectResponseSecurityAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityAttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityAttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityBotIdEnabled {
-
   final bool value;
 
   const CreateProjectResponseSecurityBotIdEnabled._(this.value);
 
-  factory CreateProjectResponseSecurityBotIdEnabled.fromJson(bool value) => CreateProjectResponseSecurityBotIdEnabled._(value);
+  factory CreateProjectResponseSecurityBotIdEnabled.fromJson(bool value) =>
+      CreateProjectResponseSecurityBotIdEnabled._(value);
 
   static const false_ = CreateProjectResponseSecurityBotIdEnabled._(false);
   static const true_ = CreateProjectResponseSecurityBotIdEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityBotIdEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityBotIdEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityFirewallEnabled {
-
   final bool value;
 
   const CreateProjectResponseSecurityFirewallEnabled._(this.value);
 
-  factory CreateProjectResponseSecurityFirewallEnabled.fromJson(bool value) => CreateProjectResponseSecurityFirewallEnabled._(value);
+  factory CreateProjectResponseSecurityFirewallEnabled.fromJson(bool value) =>
+      CreateProjectResponseSecurityFirewallEnabled._(value);
 
   static const false_ = CreateProjectResponseSecurityFirewallEnabled._(false);
   static const true_ = CreateProjectResponseSecurityFirewallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityFirewallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityFirewallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityFirewallSeawallEnabled {
-
   final bool value;
 
   const CreateProjectResponseSecurityFirewallSeawallEnabled._(this.value);
 
-  factory CreateProjectResponseSecurityFirewallSeawallEnabled.fromJson(bool value) => CreateProjectResponseSecurityFirewallSeawallEnabled._(value);
+  factory CreateProjectResponseSecurityFirewallSeawallEnabled.fromJson(
+          bool value) =>
+      CreateProjectResponseSecurityFirewallSeawallEnabled._(value);
 
-  static const false_ = CreateProjectResponseSecurityFirewallSeawallEnabled._(false);
-  static const true_ = CreateProjectResponseSecurityFirewallSeawallEnabled._(true);
+  static const false_ =
+      CreateProjectResponseSecurityFirewallSeawallEnabled._(false);
+  static const true_ =
+      CreateProjectResponseSecurityFirewallSeawallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityFirewallSeawallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityFirewallSeawallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityJa3Enabled {
-
   final bool value;
 
   const CreateProjectResponseSecurityJa3Enabled._(this.value);
 
-  factory CreateProjectResponseSecurityJa3Enabled.fromJson(bool value) => CreateProjectResponseSecurityJa3Enabled._(value);
+  factory CreateProjectResponseSecurityJa3Enabled.fromJson(bool value) =>
+      CreateProjectResponseSecurityJa3Enabled._(value);
 
   static const false_ = CreateProjectResponseSecurityJa3Enabled._(false);
   static const true_ = CreateProjectResponseSecurityJa3Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityJa3Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityJa3Enabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityJa4Enabled {
-
   final bool value;
 
   const CreateProjectResponseSecurityJa4Enabled._(this.value);
 
-  factory CreateProjectResponseSecurityJa4Enabled.fromJson(bool value) => CreateProjectResponseSecurityJa4Enabled._(value);
+  factory CreateProjectResponseSecurityJa4Enabled.fromJson(bool value) =>
+      CreateProjectResponseSecurityJa4Enabled._(value);
 
   static const false_ = CreateProjectResponseSecurityJa4Enabled._(false);
   static const true_ = CreateProjectResponseSecurityJa4Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityJa4Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityJa4Enabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityLogHeadersVariant1 {
-
   final String value;
 
   const CreateProjectResponseSecurityLogHeadersVariant1._(this.value);
 
-  factory CreateProjectResponseSecurityLogHeadersVariant1.fromJson(String value) => CreateProjectResponseSecurityLogHeadersVariant1._(value);
+  factory CreateProjectResponseSecurityLogHeadersVariant1.fromJson(
+          String value) =>
+      CreateProjectResponseSecurityLogHeadersVariant1._(value);
 
   static const unknown = CreateProjectResponseSecurityLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityLogHeadersVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityLogHeadersVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityManagedRulesAiBotsAction {
-
   final String value;
 
   const CreateProjectResponseSecurityManagedRulesAiBotsAction._(this.value);
 
-  factory CreateProjectResponseSecurityManagedRulesAiBotsAction.fromJson(String value) => CreateProjectResponseSecurityManagedRulesAiBotsAction._(value);
+  factory CreateProjectResponseSecurityManagedRulesAiBotsAction.fromJson(
+          String value) =>
+      CreateProjectResponseSecurityManagedRulesAiBotsAction._(value);
 
-  static const challenge = CreateProjectResponseSecurityManagedRulesAiBotsAction._('challenge');
-  static const deny = CreateProjectResponseSecurityManagedRulesAiBotsAction._('deny');
-  static const log = CreateProjectResponseSecurityManagedRulesAiBotsAction._('log');
+  static const challenge =
+      CreateProjectResponseSecurityManagedRulesAiBotsAction._('challenge');
+  static const deny =
+      CreateProjectResponseSecurityManagedRulesAiBotsAction._('deny');
+  static const log =
+      CreateProjectResponseSecurityManagedRulesAiBotsAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityManagedRulesAiBotsAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityManagedRulesAiBotsAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityManagedRulesAiBotsActive {
-
   final bool value;
 
   const CreateProjectResponseSecurityManagedRulesAiBotsActive._(this.value);
 
-  factory CreateProjectResponseSecurityManagedRulesAiBotsActive.fromJson(bool value) => CreateProjectResponseSecurityManagedRulesAiBotsActive._(value);
+  factory CreateProjectResponseSecurityManagedRulesAiBotsActive.fromJson(
+          bool value) =>
+      CreateProjectResponseSecurityManagedRulesAiBotsActive._(value);
 
-  static const false_ = CreateProjectResponseSecurityManagedRulesAiBotsActive._(false);
-  static const true_ = CreateProjectResponseSecurityManagedRulesAiBotsActive._(true);
+  static const false_ =
+      CreateProjectResponseSecurityManagedRulesAiBotsActive._(false);
+  static const true_ =
+      CreateProjectResponseSecurityManagedRulesAiBotsActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityManagedRulesAiBotsActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityManagedRulesAiBotsActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseSecurityManagedRulesBotFilterAction {
-
   final String value;
 
   const CreateProjectResponseSecurityManagedRulesBotFilterAction._(this.value);
 
-  factory CreateProjectResponseSecurityManagedRulesBotFilterAction.fromJson(String value) => CreateProjectResponseSecurityManagedRulesBotFilterAction._(value);
+  factory CreateProjectResponseSecurityManagedRulesBotFilterAction.fromJson(
+          String value) =>
+      CreateProjectResponseSecurityManagedRulesBotFilterAction._(value);
 
-  static const challenge = CreateProjectResponseSecurityManagedRulesBotFilterAction._('challenge');
-  static const deny = CreateProjectResponseSecurityManagedRulesBotFilterAction._('deny');
-  static const log = CreateProjectResponseSecurityManagedRulesBotFilterAction._('log');
+  static const challenge =
+      CreateProjectResponseSecurityManagedRulesBotFilterAction._('challenge');
+  static const deny =
+      CreateProjectResponseSecurityManagedRulesBotFilterAction._('deny');
+  static const log =
+      CreateProjectResponseSecurityManagedRulesBotFilterAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseSecurityManagedRulesBotFilterAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseSecurityManagedRulesBotFilterAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

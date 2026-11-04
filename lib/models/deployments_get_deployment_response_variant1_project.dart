@@ -12,148 +12,299 @@ class GetDeploymentResponseVariant1Project implements SdkJsonModel {
   final String id;
   final String name;
 
-  const GetDeploymentResponseVariant1Project({this.framework = const SdkOmitted(), required this.id, required this.name});
+  const GetDeploymentResponseVariant1Project(
+      {this.framework = const SdkOmitted(),
+      required this.id,
+      required this.name});
 
-  GetDeploymentResponseVariant1Project Function({SdkOptional<String?> framework, String id, String name}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1Project Function(
+      {SdkOptional<String?> framework,
+      String id,
+      String name}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1Project _copyWith({Object? framework = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetDeploymentResponseVariant1Project(
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<String?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  GetDeploymentResponseVariant1Project _copyWith(
+          {Object? framework = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1Project(
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<String?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory GetDeploymentResponseVariant1Project.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1Project(
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] as String?) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-  ), json);
+  factory GetDeploymentResponseVariant1Project.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1Project(
+            framework: json.containsKey('framework')
+                ? SdkPresent(json['framework'] as String?)
+                : const SdkOmitted(),
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (framework) {
-      SdkPresent<String?>(value: final value) => {'framework': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-  };
+        ...switch (framework) {
+          SdkPresent<String?>(value: final value) => {
+              'framework': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+      };
 }
 
-class GetDeploymentResponseVariant1ProjectSettingsSpeedInsights implements SdkJsonModel {
+class GetDeploymentResponseVariant1ProjectSettingsSpeedInsights
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> canceledAt;
+
   /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
   final SdkOptional<double> dataReceivedAt;
   final SdkOptional<double> disabledAt;
   final SdkOptional<double> enabledAt;
-  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData> hasData;
+  final SdkOptional<
+      GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData> hasData;
   final String id;
   final SdkOptional<double> paidAt;
 
-  const GetDeploymentResponseVariant1ProjectSettingsSpeedInsights({this.canceledAt = const SdkOmitted(), this.dataReceivedAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id, this.paidAt = const SdkOmitted()});
+  const GetDeploymentResponseVariant1ProjectSettingsSpeedInsights(
+      {this.canceledAt = const SdkOmitted(),
+      this.dataReceivedAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id,
+      this.paidAt = const SdkOmitted()});
 
-  GetDeploymentResponseVariant1ProjectSettingsSpeedInsights Function({SdkOptional<double> canceledAt, SdkOptional<double> dataReceivedAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData> hasData, String id, SdkOptional<double> paidAt}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ProjectSettingsSpeedInsights Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> dataReceivedAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<
+              GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData>
+          hasData,
+      String id,
+      SdkOptional<double> paidAt}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ProjectSettingsSpeedInsights _copyWith({Object? canceledAt = sdkOmittedValue, Object? dataReceivedAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue}) => GetDeploymentResponseVariant1ProjectSettingsSpeedInsights(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue) ? this.dataReceivedAt : dataReceivedAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-  );
+  GetDeploymentResponseVariant1ProjectSettingsSpeedInsights _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? dataReceivedAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1ProjectSettingsSpeedInsights(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue)
+            ? this.dataReceivedAt
+            : dataReceivedAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData as SdkOptional<
+                GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+      );
 
-  factory GetDeploymentResponseVariant1ProjectSettingsSpeedInsights.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1ProjectSettingsSpeedInsights(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    dataReceivedAt: json['dataReceivedAt'] != null ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  ), json);
+  factory GetDeploymentResponseVariant1ProjectSettingsSpeedInsights.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1ProjectSettingsSpeedInsights(
+            canceledAt: json['canceledAt'] != null
+                ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            dataReceivedAt: json['dataReceivedAt'] != null
+                ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            disabledAt: json['disabledAt'] != null
+                ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            enabledAt: json['enabledAt'] != null
+                ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            hasData: json['hasData'] != null
+                ? SdkPresent((json['hasData'] != null
+                    ? GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData
+                        .fromJson(json['hasData'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            id: (json['id'] as String?)!,
+            paidAt: json['paidAt'] != null
+                ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dataReceivedAt) {
-      SdkPresent<double>(value: final value) => {'dataReceivedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dataReceivedAt) {
+          SdkPresent<double>(value: final value) => {
+              'dataReceivedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<
+                GetDeploymentResponseVariant1ProjectSettingsSpeedInsightsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class GetDeploymentResponseVariant1ProjectSettingsWebAnalytics implements SdkJsonModel {
+class GetDeploymentResponseVariant1ProjectSettingsWebAnalytics
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> canceledAt;
   final SdkOptional<double> disabledAt;
   final SdkOptional<double> enabledAt;
-  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData> hasData;
+  final SdkOptional<
+      GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData> hasData;
   final String id;
 
-  const GetDeploymentResponseVariant1ProjectSettingsWebAnalytics({this.canceledAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id});
+  const GetDeploymentResponseVariant1ProjectSettingsWebAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id});
 
-  GetDeploymentResponseVariant1ProjectSettingsWebAnalytics Function({SdkOptional<double> canceledAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData> hasData, String id}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ProjectSettingsWebAnalytics Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<
+              GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData>
+          hasData,
+      String id}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ProjectSettingsWebAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue}) => GetDeploymentResponseVariant1ProjectSettingsWebAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  GetDeploymentResponseVariant1ProjectSettingsWebAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1ProjectSettingsWebAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData as SdkOptional<
+                GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory GetDeploymentResponseVariant1ProjectSettingsWebAnalytics.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1ProjectSettingsWebAnalytics(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  ), json);
+  factory GetDeploymentResponseVariant1ProjectSettingsWebAnalytics.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1ProjectSettingsWebAnalytics(
+            canceledAt: json['canceledAt'] != null
+                ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            disabledAt: json['disabledAt'] != null
+                ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            enabledAt: json['enabledAt'] != null
+                ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            hasData: json['hasData'] != null
+                ? SdkPresent((json['hasData'] != null
+                    ? GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData
+                        .fromJson(json['hasData'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            id: (json['id'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<
+                GetDeploymentResponseVariant1ProjectSettingsWebAnalyticsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }
 
 class GetDeploymentResponseVariant1ProjectSettings implements SdkJsonModel {
@@ -162,78 +313,202 @@ class GetDeploymentResponseVariant1ProjectSettings implements SdkJsonModel {
   final SdkOptional<String?> buildCommand;
   final SdkOptional<String?> commandForIgnoringBuildStep;
   final SdkOptional<String?> devCommand;
-  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsFramework?> framework;
+  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsFramework?>
+      framework;
   final SdkOptional<String?> installCommand;
-  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsNodeVersion> nodeVersion;
+  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsNodeVersion>
+      nodeVersion;
   final SdkOptional<String?> outputDirectory;
-  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsights> speedInsights;
-  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalytics> webAnalytics;
+  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsights>
+      speedInsights;
+  final SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalytics>
+      webAnalytics;
 
-  const GetDeploymentResponseVariant1ProjectSettings({this.buildCommand = const SdkOmitted(), this.commandForIgnoringBuildStep = const SdkOmitted(), this.devCommand = const SdkOmitted(), this.framework = const SdkOmitted(), this.installCommand = const SdkOmitted(), this.nodeVersion = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.speedInsights = const SdkOmitted(), this.webAnalytics = const SdkOmitted()});
+  const GetDeploymentResponseVariant1ProjectSettings(
+      {this.buildCommand = const SdkOmitted(),
+      this.commandForIgnoringBuildStep = const SdkOmitted(),
+      this.devCommand = const SdkOmitted(),
+      this.framework = const SdkOmitted(),
+      this.installCommand = const SdkOmitted(),
+      this.nodeVersion = const SdkOmitted(),
+      this.outputDirectory = const SdkOmitted(),
+      this.speedInsights = const SdkOmitted(),
+      this.webAnalytics = const SdkOmitted()});
 
-  GetDeploymentResponseVariant1ProjectSettings Function({SdkOptional<String?> buildCommand, SdkOptional<String?> commandForIgnoringBuildStep, SdkOptional<String?> devCommand, SdkOptional<GetDeploymentResponseVariant1ProjectSettingsFramework?> framework, SdkOptional<String?> installCommand, SdkOptional<GetDeploymentResponseVariant1ProjectSettingsNodeVersion> nodeVersion, SdkOptional<String?> outputDirectory, SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsights> speedInsights, SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalytics> webAnalytics}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ProjectSettings Function(
+      {SdkOptional<String?> buildCommand,
+      SdkOptional<String?> commandForIgnoringBuildStep,
+      SdkOptional<String?> devCommand,
+      SdkOptional<GetDeploymentResponseVariant1ProjectSettingsFramework?>
+          framework,
+      SdkOptional<String?> installCommand,
+      SdkOptional<GetDeploymentResponseVariant1ProjectSettingsNodeVersion>
+          nodeVersion,
+      SdkOptional<String?> outputDirectory,
+      SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsights>
+          speedInsights,
+      SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalytics>
+          webAnalytics}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ProjectSettings _copyWith({Object? buildCommand = sdkOmittedValue, Object? commandForIgnoringBuildStep = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? speedInsights = sdkOmittedValue, Object? webAnalytics = sdkOmittedValue}) => GetDeploymentResponseVariant1ProjectSettings(
-    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String?>,
-    commandForIgnoringBuildStep: identical(commandForIgnoringBuildStep, sdkOmittedValue) ? this.commandForIgnoringBuildStep : commandForIgnoringBuildStep as SdkOptional<String?>,
-    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String?>,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<GetDeploymentResponseVariant1ProjectSettingsFramework?>,
-    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String?>,
-    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as SdkOptional<GetDeploymentResponseVariant1ProjectSettingsNodeVersion>,
-    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String?>,
-    speedInsights: identical(speedInsights, sdkOmittedValue) ? this.speedInsights : speedInsights as SdkOptional<GetDeploymentResponseVariant1ProjectSettingsSpeedInsights>,
-    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<GetDeploymentResponseVariant1ProjectSettingsWebAnalytics>,
-  );
+  GetDeploymentResponseVariant1ProjectSettings _copyWith(
+          {Object? buildCommand = sdkOmittedValue,
+          Object? commandForIgnoringBuildStep = sdkOmittedValue,
+          Object? devCommand = sdkOmittedValue,
+          Object? framework = sdkOmittedValue,
+          Object? installCommand = sdkOmittedValue,
+          Object? nodeVersion = sdkOmittedValue,
+          Object? outputDirectory = sdkOmittedValue,
+          Object? speedInsights = sdkOmittedValue,
+          Object? webAnalytics = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant1ProjectSettings(
+        buildCommand: identical(buildCommand, sdkOmittedValue)
+            ? this.buildCommand
+            : buildCommand as SdkOptional<String?>,
+        commandForIgnoringBuildStep:
+            identical(commandForIgnoringBuildStep, sdkOmittedValue)
+                ? this.commandForIgnoringBuildStep
+                : commandForIgnoringBuildStep as SdkOptional<String?>,
+        devCommand: identical(devCommand, sdkOmittedValue)
+            ? this.devCommand
+            : devCommand as SdkOptional<String?>,
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<
+                GetDeploymentResponseVariant1ProjectSettingsFramework?>,
+        installCommand: identical(installCommand, sdkOmittedValue)
+            ? this.installCommand
+            : installCommand as SdkOptional<String?>,
+        nodeVersion: identical(nodeVersion, sdkOmittedValue)
+            ? this.nodeVersion
+            : nodeVersion as SdkOptional<
+                GetDeploymentResponseVariant1ProjectSettingsNodeVersion>,
+        outputDirectory: identical(outputDirectory, sdkOmittedValue)
+            ? this.outputDirectory
+            : outputDirectory as SdkOptional<String?>,
+        speedInsights: identical(speedInsights, sdkOmittedValue)
+            ? this.speedInsights
+            : speedInsights as SdkOptional<
+                GetDeploymentResponseVariant1ProjectSettingsSpeedInsights>,
+        webAnalytics: identical(webAnalytics, sdkOmittedValue)
+            ? this.webAnalytics
+            : webAnalytics as SdkOptional<
+                GetDeploymentResponseVariant1ProjectSettingsWebAnalytics>,
+      );
 
-  factory GetDeploymentResponseVariant1ProjectSettings.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDeploymentResponseVariant1ProjectSettings(
-    buildCommand: json.containsKey('buildCommand') ? SdkPresent(json['buildCommand'] as String?) : const SdkOmitted(),
-    commandForIgnoringBuildStep: json.containsKey('commandForIgnoringBuildStep') ? SdkPresent(json['commandForIgnoringBuildStep'] as String?) : const SdkOmitted(),
-    devCommand: json.containsKey('devCommand') ? SdkPresent(json['devCommand'] as String?) : const SdkOmitted(),
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? GetDeploymentResponseVariant1ProjectSettingsFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    installCommand: json.containsKey('installCommand') ? SdkPresent(json['installCommand'] as String?) : const SdkOmitted(),
-    nodeVersion: json['nodeVersion'] != null ? SdkPresent((json['nodeVersion'] != null ? GetDeploymentResponseVariant1ProjectSettingsNodeVersion.fromJson(json['nodeVersion'] as String) : null)!) : const SdkOmitted(),
-    outputDirectory: json.containsKey('outputDirectory') ? SdkPresent(json['outputDirectory'] as String?) : const SdkOmitted(),
-    speedInsights: json['speedInsights'] != null ? SdkPresent((json['speedInsights'] != null ? GetDeploymentResponseVariant1ProjectSettingsSpeedInsights.fromJson(json['speedInsights'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? GetDeploymentResponseVariant1ProjectSettingsWebAnalytics.fromJson(json['webAnalytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory GetDeploymentResponseVariant1ProjectSettings.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDeploymentResponseVariant1ProjectSettings(
+            buildCommand: json.containsKey('buildCommand')
+                ? SdkPresent(json['buildCommand'] as String?)
+                : const SdkOmitted(),
+            commandForIgnoringBuildStep:
+                json.containsKey('commandForIgnoringBuildStep')
+                    ? SdkPresent(json['commandForIgnoringBuildStep'] as String?)
+                    : const SdkOmitted(),
+            devCommand: json.containsKey('devCommand')
+                ? SdkPresent(json['devCommand'] as String?)
+                : const SdkOmitted(),
+            framework: json.containsKey('framework')
+                ? SdkPresent(json['framework'] != null
+                    ? GetDeploymentResponseVariant1ProjectSettingsFramework
+                        .fromJson(json['framework'] as String)
+                    : null)
+                : const SdkOmitted(),
+            installCommand: json.containsKey('installCommand')
+                ? SdkPresent(json['installCommand'] as String?)
+                : const SdkOmitted(),
+            nodeVersion: json['nodeVersion'] != null
+                ? SdkPresent((json['nodeVersion'] != null
+                    ? GetDeploymentResponseVariant1ProjectSettingsNodeVersion
+                        .fromJson(json['nodeVersion'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            outputDirectory: json.containsKey('outputDirectory')
+                ? SdkPresent(json['outputDirectory'] as String?)
+                : const SdkOmitted(),
+            speedInsights: json['speedInsights'] != null
+                ? SdkPresent((json['speedInsights'] != null
+                    ? GetDeploymentResponseVariant1ProjectSettingsSpeedInsights
+                        .fromJson(json['speedInsights'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            webAnalytics: json['webAnalytics'] != null
+                ? SdkPresent((json['webAnalytics'] != null
+                    ? GetDeploymentResponseVariant1ProjectSettingsWebAnalytics
+                        .fromJson(json['webAnalytics'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (buildCommand) {
-      SdkPresent<String?>(value: final value) => {'buildCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (commandForIgnoringBuildStep) {
-      SdkPresent<String?>(value: final value) => {'commandForIgnoringBuildStep': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (devCommand) {
-      SdkPresent<String?>(value: final value) => {'devCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (framework) {
-      SdkPresent<GetDeploymentResponseVariant1ProjectSettingsFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (installCommand) {
-      SdkPresent<String?>(value: final value) => {'installCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (nodeVersion) {
-      SdkPresent<GetDeploymentResponseVariant1ProjectSettingsNodeVersion>(value: final value) => {'nodeVersion': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (outputDirectory) {
-      SdkPresent<String?>(value: final value) => {'outputDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (speedInsights) {
-      SdkPresent<GetDeploymentResponseVariant1ProjectSettingsSpeedInsights>(value: final value) => {'speedInsights': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webAnalytics) {
-      SdkPresent<GetDeploymentResponseVariant1ProjectSettingsWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (buildCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'buildCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (commandForIgnoringBuildStep) {
+          SdkPresent<String?>(value: final value) => {
+              'commandForIgnoringBuildStep': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (devCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'devCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (framework) {
+          SdkPresent<GetDeploymentResponseVariant1ProjectSettingsFramework?>(
+            value: final value
+          ) =>
+            {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (installCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'installCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (nodeVersion) {
+          SdkPresent<GetDeploymentResponseVariant1ProjectSettingsNodeVersion>(
+            value: final value
+          ) =>
+            {
+              'nodeVersion': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (outputDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'outputDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (speedInsights) {
+          SdkPresent<GetDeploymentResponseVariant1ProjectSettingsSpeedInsights>(
+            value: final value
+          ) =>
+            {
+              'speedInsights': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webAnalytics) {
+          SdkPresent<GetDeploymentResponseVariant1ProjectSettingsWebAnalytics>(
+            value: final value
+          ) =>
+            {
+              'webAnalytics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

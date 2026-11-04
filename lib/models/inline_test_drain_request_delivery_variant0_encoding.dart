@@ -5,274 +5,324 @@ part of 'inline.dart';
 
 // Inline operation models
 final class TestDrainRequestDeliveryVariant0Encoding {
-
   final String value;
 
   const TestDrainRequestDeliveryVariant0Encoding._(this.value);
 
-  factory TestDrainRequestDeliveryVariant0Encoding.fromJson(String value) => TestDrainRequestDeliveryVariant0Encoding._(value);
+  factory TestDrainRequestDeliveryVariant0Encoding.fromJson(String value) =>
+      TestDrainRequestDeliveryVariant0Encoding._(value);
 
   static const json = TestDrainRequestDeliveryVariant0Encoding._('json');
   static const ndjson = TestDrainRequestDeliveryVariant0Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TestDrainRequestDeliveryVariant0Encoding && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TestDrainRequestDeliveryVariant0Encoding && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class TestDrainRequestDeliveryVariant1Encoding {
-
   final String value;
 
   const TestDrainRequestDeliveryVariant1Encoding._(this.value);
 
-  factory TestDrainRequestDeliveryVariant1Encoding.fromJson(String value) => TestDrainRequestDeliveryVariant1Encoding._(value);
+  factory TestDrainRequestDeliveryVariant1Encoding.fromJson(String value) =>
+      TestDrainRequestDeliveryVariant1Encoding._(value);
 
   static const proto = TestDrainRequestDeliveryVariant1Encoding._('proto');
   static const json = TestDrainRequestDeliveryVariant1Encoding._('json');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TestDrainRequestDeliveryVariant1Encoding && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TestDrainRequestDeliveryVariant1Encoding && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class TestDrainRequestDeliveryVariant2Compression {
-
   final String value;
 
   const TestDrainRequestDeliveryVariant2Compression._(this.value);
 
-  factory TestDrainRequestDeliveryVariant2Compression.fromJson(String value) => TestDrainRequestDeliveryVariant2Compression._(value);
+  factory TestDrainRequestDeliveryVariant2Compression.fromJson(String value) =>
+      TestDrainRequestDeliveryVariant2Compression._(value);
 
   static const none = TestDrainRequestDeliveryVariant2Compression._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TestDrainRequestDeliveryVariant2Compression && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TestDrainRequestDeliveryVariant2Compression &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class TestDrainRequestDeliveryVariant2Encoding {
-
   final String value;
 
   const TestDrainRequestDeliveryVariant2Encoding._(this.value);
 
-  factory TestDrainRequestDeliveryVariant2Encoding.fromJson(String value) => TestDrainRequestDeliveryVariant2Encoding._(value);
+  factory TestDrainRequestDeliveryVariant2Encoding.fromJson(String value) =>
+      TestDrainRequestDeliveryVariant2Encoding._(value);
 
   static const json = TestDrainRequestDeliveryVariant2Encoding._('json');
   static const ndjson = TestDrainRequestDeliveryVariant2Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TestDrainRequestDeliveryVariant2Encoding && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TestDrainRequestDeliveryVariant2Encoding && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class TestDrainRequestDeliveryVariant2FileStructure {
-
   final String value;
 
   const TestDrainRequestDeliveryVariant2FileStructure._(this.value);
 
-  factory TestDrainRequestDeliveryVariant2FileStructure.fromJson(String value) => TestDrainRequestDeliveryVariant2FileStructure._(value);
+  factory TestDrainRequestDeliveryVariant2FileStructure.fromJson(
+          String value) =>
+      TestDrainRequestDeliveryVariant2FileStructure._(value);
 
   static const hive = TestDrainRequestDeliveryVariant2FileStructure._('hive');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TestDrainRequestDeliveryVariant2FileStructure && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TestDrainRequestDeliveryVariant2FileStructure &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class TestDrainRequestDeliveryVariant2ObjectAcl {
-
   final String value;
 
   const TestDrainRequestDeliveryVariant2ObjectAcl._(this.value);
 
-  factory TestDrainRequestDeliveryVariant2ObjectAcl.fromJson(String value) => TestDrainRequestDeliveryVariant2ObjectAcl._(value);
+  factory TestDrainRequestDeliveryVariant2ObjectAcl.fromJson(String value) =>
+      TestDrainRequestDeliveryVariant2ObjectAcl._(value);
 
   static const private = TestDrainRequestDeliveryVariant2ObjectAcl._('private');
-  static const bucketOwnerRead = TestDrainRequestDeliveryVariant2ObjectAcl._('bucket-owner-read');
-  static const bucketOwnerFullControl = TestDrainRequestDeliveryVariant2ObjectAcl._('bucket-owner-full-control');
+  static const bucketOwnerRead =
+      TestDrainRequestDeliveryVariant2ObjectAcl._('bucket-owner-read');
+  static const bucketOwnerFullControl =
+      TestDrainRequestDeliveryVariant2ObjectAcl._('bucket-owner-full-control');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TestDrainRequestDeliveryVariant2ObjectAcl && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TestDrainRequestDeliveryVariant2ObjectAcl &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class TestDrainRequestDeliveryVariant2ServerSideEncryption {
-
   final String value;
 
   const TestDrainRequestDeliveryVariant2ServerSideEncryption._(this.value);
 
-  factory TestDrainRequestDeliveryVariant2ServerSideEncryption.fromJson(String value) => TestDrainRequestDeliveryVariant2ServerSideEncryption._(value);
+  factory TestDrainRequestDeliveryVariant2ServerSideEncryption.fromJson(
+          String value) =>
+      TestDrainRequestDeliveryVariant2ServerSideEncryption._(value);
 
-  static const aes256 = TestDrainRequestDeliveryVariant2ServerSideEncryption._('AES256');
-  static const awsKms = TestDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms');
-  static const awsKmsDsse = TestDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms:dsse');
+  static const aes256 =
+      TestDrainRequestDeliveryVariant2ServerSideEncryption._('AES256');
+  static const awsKms =
+      TestDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms');
+  static const awsKmsDsse =
+      TestDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms:dsse');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TestDrainRequestDeliveryVariant2ServerSideEncryption && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TestDrainRequestDeliveryVariant2ServerSideEncryption &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class TldNotSupportedCode {
-
   final String value;
 
   const TldNotSupportedCode._(this.value);
 
-  factory TldNotSupportedCode.fromJson(String value) => TldNotSupportedCode._(value);
+  factory TldNotSupportedCode.fromJson(String value) =>
+      TldNotSupportedCode._(value);
 
   static const tldNotSupported = TldNotSupportedCode._('tld_not_supported');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TldNotSupportedCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TldNotSupportedCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class TldNotSupportedStatus {
-
   final int value;
 
   const TldNotSupportedStatus._(this.value);
 
-  factory TldNotSupportedStatus.fromJson(int value) => TldNotSupportedStatus._(value);
+  factory TldNotSupportedStatus.fromJson(int value) =>
+      TldNotSupportedStatus._(value);
 
   static const v400 = TldNotSupportedStatus._(400);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TldNotSupportedStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TldNotSupportedStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class TooManyDomainsCode {
-
   final String value;
 
   const TooManyDomainsCode._(this.value);
 
-  factory TooManyDomainsCode.fromJson(String value) => TooManyDomainsCode._(value);
+  factory TooManyDomainsCode.fromJson(String value) =>
+      TooManyDomainsCode._(value);
 
   static const tooManyDomains = TooManyDomainsCode._('too_many_domains');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TooManyDomainsCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TooManyDomainsCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class TooManyDomainsStatus {
-
   final int value;
 
   const TooManyDomainsStatus._(this.value);
 
-  factory TooManyDomainsStatus.fromJson(int value) => TooManyDomainsStatus._(value);
+  factory TooManyDomainsStatus.fromJson(int value) =>
+      TooManyDomainsStatus._(value);
 
   static const v400 = TooManyDomainsStatus._(400);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TooManyDomainsStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TooManyDomainsStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class TooManyRequestsCode {
-
   final String value;
 
   const TooManyRequestsCode._(this.value);
 
-  factory TooManyRequestsCode.fromJson(String value) => TooManyRequestsCode._(value);
+  factory TooManyRequestsCode.fromJson(String value) =>
+      TooManyRequestsCode._(value);
 
   static const tooManyRequests = TooManyRequestsCode._('too_many_requests');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TooManyRequestsCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TooManyRequestsCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class TooManyRequestsStatus {
-
   final int value;
 
   const TooManyRequestsStatus._(this.value);
 
-  factory TooManyRequestsStatus.fromJson(int value) => TooManyRequestsStatus._(value);
+  factory TooManyRequestsStatus.fromJson(int value) =>
+      TooManyRequestsStatus._(value);
 
   static const v429 = TooManyRequestsStatus._(429);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TooManyRequestsStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TooManyRequestsStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

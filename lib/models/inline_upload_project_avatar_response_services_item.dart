@@ -7,55 +7,113 @@ part of 'inline.dart';
 class UploadProjectAvatarResponseServicesItem implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Framework slug, when the service has one (omitted otherwise).
   final SdkOptional<UploadProjectAvatarResponseServicesItemFramework> framework;
+
   /// Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds.
   final SdkOptional<String> runtime;
+
   /// Service name from the deployment (Service.name).
   final String serviceName;
+
   /// Service kind (Service.type). Omitted for schemas that do not define one.
-  final SdkOptional<UploadProjectAvatarResponseServicesItemServiceType> serviceType;
+  final SdkOptional<UploadProjectAvatarResponseServicesItemServiceType>
+      serviceType;
 
-  const UploadProjectAvatarResponseServicesItem({this.framework = const SdkOmitted(), this.runtime = const SdkOmitted(), required this.serviceName, this.serviceType = const SdkOmitted()});
+  const UploadProjectAvatarResponseServicesItem(
+      {this.framework = const SdkOmitted(),
+      this.runtime = const SdkOmitted(),
+      required this.serviceName,
+      this.serviceType = const SdkOmitted()});
 
-  UploadProjectAvatarResponseServicesItem Function({SdkOptional<UploadProjectAvatarResponseServicesItemFramework> framework, SdkOptional<String> runtime, String serviceName, SdkOptional<UploadProjectAvatarResponseServicesItemServiceType> serviceType}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseServicesItem Function(
+      {SdkOptional<UploadProjectAvatarResponseServicesItemFramework> framework,
+      SdkOptional<String> runtime,
+      String serviceName,
+      SdkOptional<UploadProjectAvatarResponseServicesItemServiceType>
+          serviceType}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseServicesItem _copyWith({Object? framework = sdkOmittedValue, Object? runtime = sdkOmittedValue, Object? serviceName = sdkOmittedValue, Object? serviceType = sdkOmittedValue}) => UploadProjectAvatarResponseServicesItem(
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<UploadProjectAvatarResponseServicesItemFramework>,
-    runtime: identical(runtime, sdkOmittedValue) ? this.runtime : runtime as SdkOptional<String>,
-    serviceName: identical(serviceName, sdkOmittedValue) ? this.serviceName : serviceName as String,
-    serviceType: identical(serviceType, sdkOmittedValue) ? this.serviceType : serviceType as SdkOptional<UploadProjectAvatarResponseServicesItemServiceType>,
-  );
+  UploadProjectAvatarResponseServicesItem _copyWith(
+          {Object? framework = sdkOmittedValue,
+          Object? runtime = sdkOmittedValue,
+          Object? serviceName = sdkOmittedValue,
+          Object? serviceType = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseServicesItem(
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<
+                UploadProjectAvatarResponseServicesItemFramework>,
+        runtime: identical(runtime, sdkOmittedValue)
+            ? this.runtime
+            : runtime as SdkOptional<String>,
+        serviceName: identical(serviceName, sdkOmittedValue)
+            ? this.serviceName
+            : serviceName as String,
+        serviceType: identical(serviceType, sdkOmittedValue)
+            ? this.serviceType
+            : serviceType as SdkOptional<
+                UploadProjectAvatarResponseServicesItemServiceType>,
+      );
 
-  factory UploadProjectAvatarResponseServicesItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseServicesItem(
-    framework: json['framework'] != null ? SdkPresent((json['framework'] != null ? UploadProjectAvatarResponseServicesItemFramework.fromJson(json['framework'] as String) : null)!) : const SdkOmitted(),
-    runtime: json['runtime'] != null ? SdkPresent((json['runtime'] as String?)!) : const SdkOmitted(),
-    serviceName: (json['serviceName'] as String?)!,
-    serviceType: json['serviceType'] != null ? SdkPresent((json['serviceType'] != null ? UploadProjectAvatarResponseServicesItemServiceType.fromJson(json['serviceType'] as String) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UploadProjectAvatarResponseServicesItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseServicesItem(
+            framework: json['framework'] != null
+                ? SdkPresent((json['framework'] != null
+                    ? UploadProjectAvatarResponseServicesItemFramework.fromJson(
+                        json['framework'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            runtime: json['runtime'] != null
+                ? SdkPresent((json['runtime'] as String?)!)
+                : const SdkOmitted(),
+            serviceName: (json['serviceName'] as String?)!,
+            serviceType: json['serviceType'] != null
+                ? SdkPresent((json['serviceType'] != null
+                    ? UploadProjectAvatarResponseServicesItemServiceType
+                        .fromJson(json['serviceType'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (framework) {
-      SdkPresent<UploadProjectAvatarResponseServicesItemFramework>(value: final value) => {'framework': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (runtime) {
-      SdkPresent<String>(value: final value) => {'runtime': value,},
-      _ => const <String, dynamic>{},
-    },
-    'serviceName': serviceName,
-    ...switch (serviceType) {
-      SdkPresent<UploadProjectAvatarResponseServicesItemServiceType>(value: final value) => {'serviceType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (framework) {
+          SdkPresent<UploadProjectAvatarResponseServicesItemFramework>(
+            value: final value
+          ) =>
+            {
+              'framework': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (runtime) {
+          SdkPresent<String>(value: final value) => {
+              'runtime': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'serviceName': serviceName,
+        ...switch (serviceType) {
+          SdkPresent<UploadProjectAvatarResponseServicesItemServiceType>(
+            value: final value
+          ) =>
+            {
+              'serviceType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadProjectAvatarResponseSpeedInsights implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> canceledAt;
+
   /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
   final SdkOptional<double> dataReceivedAt;
   final SdkOptional<double> disabledAt;
@@ -64,95 +122,231 @@ class UploadProjectAvatarResponseSpeedInsights implements SdkJsonModel {
   final String id;
   final SdkOptional<double> paidAt;
 
-  const UploadProjectAvatarResponseSpeedInsights({this.canceledAt = const SdkOmitted(), this.dataReceivedAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id, this.paidAt = const SdkOmitted()});
+  const UploadProjectAvatarResponseSpeedInsights(
+      {this.canceledAt = const SdkOmitted(),
+      this.dataReceivedAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id,
+      this.paidAt = const SdkOmitted()});
 
-  UploadProjectAvatarResponseSpeedInsights Function({SdkOptional<double> canceledAt, SdkOptional<double> dataReceivedAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<UploadProjectAvatarResponseSpeedInsightsHasData> hasData, String id, SdkOptional<double> paidAt}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseSpeedInsights Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> dataReceivedAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<UploadProjectAvatarResponseSpeedInsightsHasData> hasData,
+      String id,
+      SdkOptional<double> paidAt}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseSpeedInsights _copyWith({Object? canceledAt = sdkOmittedValue, Object? dataReceivedAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue}) => UploadProjectAvatarResponseSpeedInsights(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue) ? this.dataReceivedAt : dataReceivedAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<UploadProjectAvatarResponseSpeedInsightsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-  );
+  UploadProjectAvatarResponseSpeedInsights _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? dataReceivedAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseSpeedInsights(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue)
+            ? this.dataReceivedAt
+            : dataReceivedAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData
+                as SdkOptional<UploadProjectAvatarResponseSpeedInsightsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+      );
 
-  factory UploadProjectAvatarResponseSpeedInsights.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseSpeedInsights(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    dataReceivedAt: json['dataReceivedAt'] != null ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? UploadProjectAvatarResponseSpeedInsightsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  ), json);
+  factory UploadProjectAvatarResponseSpeedInsights.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseSpeedInsights(
+            canceledAt: json['canceledAt'] != null
+                ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            dataReceivedAt: json['dataReceivedAt'] != null
+                ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            disabledAt: json['disabledAt'] != null
+                ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            enabledAt: json['enabledAt'] != null
+                ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            hasData: json['hasData'] != null
+                ? SdkPresent((json['hasData'] != null
+                    ? UploadProjectAvatarResponseSpeedInsightsHasData.fromJson(
+                        json['hasData'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            id: (json['id'] as String?)!,
+            paidAt: json['paidAt'] != null
+                ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dataReceivedAt) {
-      SdkPresent<double>(value: final value) => {'dataReceivedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<UploadProjectAvatarResponseSpeedInsightsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dataReceivedAt) {
+          SdkPresent<double>(value: final value) => {
+              'dataReceivedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<UploadProjectAvatarResponseSpeedInsightsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadProjectAvatarResponseSsoProtection implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom;
-  final SdkOptional<UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom;
+  final SdkOptional<
+          UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>
+      april2026SecurityIncidentMigrationAppliedFrom;
+  final SdkOptional<
+          UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?>
+      cve55182MigrationAppliedFrom;
   final UploadProjectAvatarResponseSsoProtectionDeploymentType deploymentType;
 
-  const UploadProjectAvatarResponseSsoProtection({this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(), this.cve55182MigrationAppliedFrom = const SdkOmitted(), required this.deploymentType});
+  const UploadProjectAvatarResponseSsoProtection(
+      {this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(),
+      this.cve55182MigrationAppliedFrom = const SdkOmitted(),
+      required this.deploymentType});
 
-  UploadProjectAvatarResponseSsoProtection Function({SdkOptional<UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom, SdkOptional<UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom, UploadProjectAvatarResponseSsoProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseSsoProtection Function(
+      {SdkOptional<
+              UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>
+          april2026SecurityIncidentMigrationAppliedFrom,
+      SdkOptional<
+              UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?>
+          cve55182MigrationAppliedFrom,
+      UploadProjectAvatarResponseSsoProtectionDeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseSsoProtection _copyWith({Object? april2026SecurityIncidentMigrationAppliedFrom = sdkOmittedValue, Object? cve55182MigrationAppliedFrom = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UploadProjectAvatarResponseSsoProtection(
-    april2026SecurityIncidentMigrationAppliedFrom: identical(april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue) ? this.april2026SecurityIncidentMigrationAppliedFrom : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>,
-    cve55182MigrationAppliedFrom: identical(cve55182MigrationAppliedFrom, sdkOmittedValue) ? this.cve55182MigrationAppliedFrom : cve55182MigrationAppliedFrom as SdkOptional<UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?>,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UploadProjectAvatarResponseSsoProtectionDeploymentType,
-  );
+  UploadProjectAvatarResponseSsoProtection _copyWith(
+          {Object? april2026SecurityIncidentMigrationAppliedFrom =
+              sdkOmittedValue,
+          Object? cve55182MigrationAppliedFrom = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseSsoProtection(
+        april2026SecurityIncidentMigrationAppliedFrom: identical(
+                april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue)
+            ? this.april2026SecurityIncidentMigrationAppliedFrom
+            : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<
+                UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>,
+        cve55182MigrationAppliedFrom: identical(
+                cve55182MigrationAppliedFrom, sdkOmittedValue)
+            ? this.cve55182MigrationAppliedFrom
+            : cve55182MigrationAppliedFrom as SdkOptional<
+                UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?>,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UploadProjectAvatarResponseSsoProtectionDeploymentType,
+      );
 
-  factory UploadProjectAvatarResponseSsoProtection.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseSsoProtection(
-    april2026SecurityIncidentMigrationAppliedFrom: json.containsKey('april2026SecurityIncidentMigrationAppliedFrom') ? SdkPresent(json['april2026SecurityIncidentMigrationAppliedFrom'] != null ? UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom.fromJson(json['april2026SecurityIncidentMigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
-    cve55182MigrationAppliedFrom: json.containsKey('cve55182MigrationAppliedFrom') ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null ? UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom.fromJson(json['cve55182MigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
-    deploymentType: (json['deploymentType'] != null ? UploadProjectAvatarResponseSsoProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseSsoProtection.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseSsoProtection(
+            april2026SecurityIncidentMigrationAppliedFrom: json.containsKey(
+                    'april2026SecurityIncidentMigrationAppliedFrom')
+                ? SdkPresent(json[
+                            'april2026SecurityIncidentMigrationAppliedFrom'] !=
+                        null
+                    ? UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+                        .fromJson(json[
+                                'april2026SecurityIncidentMigrationAppliedFrom']
+                            as String)
+                    : null)
+                : const SdkOmitted(),
+            cve55182MigrationAppliedFrom: json
+                    .containsKey('cve55182MigrationAppliedFrom')
+                ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null
+                    ? UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom
+                        .fromJson(
+                            json['cve55182MigrationAppliedFrom'] as String)
+                    : null)
+                : const SdkOmitted(),
+            deploymentType: (json['deploymentType'] != null
+                ? UploadProjectAvatarResponseSsoProtectionDeploymentType
+                    .fromJson(json['deploymentType'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
-      SdkPresent<UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>(value: final value) => {'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (cve55182MigrationAppliedFrom) {
-      SdkPresent<UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?>(value: final value) => {'cve55182MigrationAppliedFrom': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'deploymentType': deploymentType.toJson(),
-  };
+        ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
+          SdkPresent<
+                UploadProjectAvatarResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?>(
+            value: final value
+          ) =>
+            {
+              'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (cve55182MigrationAppliedFrom) {
+          SdkPresent<
+                UploadProjectAvatarResponseSsoProtectionCve55182MigrationAppliedFrom?>(
+            value: final value
+          ) =>
+            {
+              'cve55182MigrationAppliedFrom': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseStaticIps implements SdkJsonModel {
@@ -162,119 +356,204 @@ class UploadProjectAvatarResponseStaticIps implements SdkJsonModel {
   final UploadProjectAvatarResponseStaticIpsEnabled enabled;
   final List<String> regions;
 
-  const UploadProjectAvatarResponseStaticIps({required this.builds, required this.enabled, required this.regions});
+  const UploadProjectAvatarResponseStaticIps(
+      {required this.builds, required this.enabled, required this.regions});
 
-  UploadProjectAvatarResponseStaticIps Function({UploadProjectAvatarResponseStaticIpsBuilds builds, UploadProjectAvatarResponseStaticIpsEnabled enabled, List<String> regions}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseStaticIps Function(
+      {UploadProjectAvatarResponseStaticIpsBuilds builds,
+      UploadProjectAvatarResponseStaticIpsEnabled enabled,
+      List<String> regions}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseStaticIps _copyWith({Object? builds = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? regions = sdkOmittedValue}) => UploadProjectAvatarResponseStaticIps(
-    builds: identical(builds, sdkOmittedValue) ? this.builds : builds as UploadProjectAvatarResponseStaticIpsBuilds,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UploadProjectAvatarResponseStaticIpsEnabled,
-    regions: identical(regions, sdkOmittedValue) ? this.regions : regions as List<String>,
-  );
+  UploadProjectAvatarResponseStaticIps _copyWith(
+          {Object? builds = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? regions = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseStaticIps(
+        builds: identical(builds, sdkOmittedValue)
+            ? this.builds
+            : builds as UploadProjectAvatarResponseStaticIpsBuilds,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as UploadProjectAvatarResponseStaticIpsEnabled,
+        regions: identical(regions, sdkOmittedValue)
+            ? this.regions
+            : regions as List<String>,
+      );
 
-  factory UploadProjectAvatarResponseStaticIps.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseStaticIps(
-    builds: (json['builds'] != null ? UploadProjectAvatarResponseStaticIpsBuilds.fromJson(json['builds'] as bool) : null)!,
-    enabled: (json['enabled'] != null ? UploadProjectAvatarResponseStaticIpsEnabled.fromJson(json['enabled'] as bool) : null)!,
-    regions: ((json['regions'] as List?)?.map((e) => e as String).toList())!,
-  ), json);
+  factory UploadProjectAvatarResponseStaticIps.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseStaticIps(
+            builds: (json['builds'] != null
+                ? UploadProjectAvatarResponseStaticIpsBuilds.fromJson(
+                    json['builds'] as bool)
+                : null)!,
+            enabled: (json['enabled'] != null
+                ? UploadProjectAvatarResponseStaticIpsEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!,
+            regions:
+                ((json['regions'] as List?)?.map((e) => e as String).toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'builds': builds.toJson(),
-    'enabled': enabled.toJson(),
-    'regions': regions,
-  };
+        'builds': builds.toJson(),
+        'enabled': enabled.toJson(),
+        'regions': regions,
+      };
 }
 
-class UploadProjectAvatarResponseTargetsValueAliasError implements SdkJsonModel {
+class UploadProjectAvatarResponseTargetsValueAliasError
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String code;
   final String message;
 
-  const UploadProjectAvatarResponseTargetsValueAliasError({required this.code, required this.message});
+  const UploadProjectAvatarResponseTargetsValueAliasError(
+      {required this.code, required this.message});
 
-  UploadProjectAvatarResponseTargetsValueAliasError Function({String code, String message}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTargetsValueAliasError Function(
+      {String code, String message}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTargetsValueAliasError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => UploadProjectAvatarResponseTargetsValueAliasError(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  UploadProjectAvatarResponseTargetsValueAliasError _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTargetsValueAliasError(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory UploadProjectAvatarResponseTargetsValueAliasError.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseTargetsValueAliasError(
-    code: (json['code'] as String?)!,
-    message: (json['message'] as String?)!,
-  ), json);
+  factory UploadProjectAvatarResponseTargetsValueAliasError.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseTargetsValueAliasError(
+            code: (json['code'] as String?)!,
+            message: (json['message'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'code': code,
-    'message': message,
-  };
+        'code': code,
+        'message': message,
+      };
 }
 
-class UploadProjectAvatarResponseTargetsValueBranchMatcher implements SdkJsonModel {
+class UploadProjectAvatarResponseTargetsValueBranchMatcher
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The pattern to match against branch names
   final String pattern;
+
   /// The type of matching to perform
   final UploadProjectAvatarResponseTargetsValueBranchMatcherType type_;
 
-  const UploadProjectAvatarResponseTargetsValueBranchMatcher({required this.pattern, required this.type_});
+  const UploadProjectAvatarResponseTargetsValueBranchMatcher(
+      {required this.pattern, required this.type_});
 
-  UploadProjectAvatarResponseTargetsValueBranchMatcher Function({String pattern, UploadProjectAvatarResponseTargetsValueBranchMatcherType type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTargetsValueBranchMatcher Function(
+          {String pattern,
+          UploadProjectAvatarResponseTargetsValueBranchMatcherType type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTargetsValueBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseTargetsValueBranchMatcher(
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseTargetsValueBranchMatcherType,
-  );
+  UploadProjectAvatarResponseTargetsValueBranchMatcher _copyWith(
+          {Object? pattern = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTargetsValueBranchMatcher(
+        pattern: identical(pattern, sdkOmittedValue)
+            ? this.pattern
+            : pattern as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UploadProjectAvatarResponseTargetsValueBranchMatcherType,
+      );
 
-  factory UploadProjectAvatarResponseTargetsValueBranchMatcher.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseTargetsValueBranchMatcher(
-    pattern: (json['pattern'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseTargetsValueBranchMatcherType.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseTargetsValueBranchMatcher.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseTargetsValueBranchMatcher(
+            pattern: (json['pattern'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseTargetsValueBranchMatcherType
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'pattern': pattern,
-    'type': type_.toJson(),
-  };
+        'pattern': pattern,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseTargetsValueBuildsItem implements SdkJsonModel {
+class UploadProjectAvatarResponseTargetsValueBuildsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> dest;
   final SdkOptional<String> src;
   final String use;
 
-  const UploadProjectAvatarResponseTargetsValueBuildsItem({this.dest = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
+  const UploadProjectAvatarResponseTargetsValueBuildsItem(
+      {this.dest = const SdkOmitted(),
+      this.src = const SdkOmitted(),
+      required this.use});
 
-  UploadProjectAvatarResponseTargetsValueBuildsItem Function({SdkOptional<String> dest, SdkOptional<String> src, String use}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTargetsValueBuildsItem Function(
+      {SdkOptional<String> dest,
+      SdkOptional<String> src,
+      String use}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTargetsValueBuildsItem _copyWith({Object? dest = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => UploadProjectAvatarResponseTargetsValueBuildsItem(
-    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-    use: identical(use, sdkOmittedValue) ? this.use : use as String,
-  );
+  UploadProjectAvatarResponseTargetsValueBuildsItem _copyWith(
+          {Object? dest = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? use = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTargetsValueBuildsItem(
+        dest: identical(dest, sdkOmittedValue)
+            ? this.dest
+            : dest as SdkOptional<String>,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+        use: identical(use, sdkOmittedValue) ? this.use : use as String,
+      );
 
-  factory UploadProjectAvatarResponseTargetsValueBuildsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseTargetsValueBuildsItem(
-    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-    use: (json['use'] as String?)!,
-  ), json);
+  factory UploadProjectAvatarResponseTargetsValueBuildsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseTargetsValueBuildsItem(
+            dest: json['dest'] != null
+                ? SdkPresent((json['dest'] as String?)!)
+                : const SdkOmitted(),
+            src: json['src'] != null
+                ? SdkPresent((json['src'] as String?)!)
+                : const SdkOmitted(),
+            use: (json['use'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (dest) {
-      SdkPresent<String>(value: final value) => {'dest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    'use': use,
-  };
+        ...switch (dest) {
+          SdkPresent<String>(value: final value) => {
+              'dest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'use': use,
+      };
 }

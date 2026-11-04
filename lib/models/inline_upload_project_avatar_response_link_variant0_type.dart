@@ -9,14 +9,18 @@ enum UploadProjectAvatarResponseLinkVariant0Type {
 
   static UploadProjectAvatarResponseLinkVariant0Type fromJson(String value) {
     switch (value) {
-      case 'github': return UploadProjectAvatarResponseLinkVariant0Type.github;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseLinkVariant0Type: $value');
+      case 'github':
+        return UploadProjectAvatarResponseLinkVariant0Type.github;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseLinkVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseLinkVariant0Type.github: return 'github';
+      case UploadProjectAvatarResponseLinkVariant0Type.github:
+        return 'github';
     }
   }
 
@@ -25,24 +29,31 @@ enum UploadProjectAvatarResponseLinkVariant0Type {
 }
 
 final class UploadProjectAvatarResponseLinkVariant1Sourceless {
-
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant1Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant1Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant1Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant1Sourceless.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseLinkVariant1Sourceless._(value);
 
-  static const false_ = UploadProjectAvatarResponseLinkVariant1Sourceless._(false);
-  static const true_ = UploadProjectAvatarResponseLinkVariant1Sourceless._(true);
+  static const false_ =
+      UploadProjectAvatarResponseLinkVariant1Sourceless._(false);
+  static const true_ =
+      UploadProjectAvatarResponseLinkVariant1Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant1Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseLinkVariant1Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UploadProjectAvatarResponseLinkVariant1Type {
@@ -50,14 +61,18 @@ enum UploadProjectAvatarResponseLinkVariant1Type {
 
   static UploadProjectAvatarResponseLinkVariant1Type fromJson(String value) {
     switch (value) {
-      case 'github-limited': return UploadProjectAvatarResponseLinkVariant1Type.githubLimited;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseLinkVariant1Type: $value');
+      case 'github-limited':
+        return UploadProjectAvatarResponseLinkVariant1Type.githubLimited;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseLinkVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseLinkVariant1Type.githubLimited: return 'github-limited';
+      case UploadProjectAvatarResponseLinkVariant1Type.githubLimited:
+        return 'github-limited';
     }
   }
 
@@ -66,24 +81,31 @@ enum UploadProjectAvatarResponseLinkVariant1Type {
 }
 
 final class UploadProjectAvatarResponseLinkVariant2Sourceless {
-
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant2Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant2Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant2Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant2Sourceless.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseLinkVariant2Sourceless._(value);
 
-  static const false_ = UploadProjectAvatarResponseLinkVariant2Sourceless._(false);
-  static const true_ = UploadProjectAvatarResponseLinkVariant2Sourceless._(true);
+  static const false_ =
+      UploadProjectAvatarResponseLinkVariant2Sourceless._(false);
+  static const true_ =
+      UploadProjectAvatarResponseLinkVariant2Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant2Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseLinkVariant2Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UploadProjectAvatarResponseLinkVariant2Type {
@@ -91,14 +113,18 @@ enum UploadProjectAvatarResponseLinkVariant2Type {
 
   static UploadProjectAvatarResponseLinkVariant2Type fromJson(String value) {
     switch (value) {
-      case 'github-custom-host': return UploadProjectAvatarResponseLinkVariant2Type.githubCustomHost;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseLinkVariant2Type: $value');
+      case 'github-custom-host':
+        return UploadProjectAvatarResponseLinkVariant2Type.githubCustomHost;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseLinkVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseLinkVariant2Type.githubCustomHost: return 'github-custom-host';
+      case UploadProjectAvatarResponseLinkVariant2Type.githubCustomHost:
+        return 'github-custom-host';
     }
   }
 
@@ -107,24 +133,31 @@ enum UploadProjectAvatarResponseLinkVariant2Type {
 }
 
 final class UploadProjectAvatarResponseLinkVariant3Sourceless {
-
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant3Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant3Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant3Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant3Sourceless.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseLinkVariant3Sourceless._(value);
 
-  static const false_ = UploadProjectAvatarResponseLinkVariant3Sourceless._(false);
-  static const true_ = UploadProjectAvatarResponseLinkVariant3Sourceless._(true);
+  static const false_ =
+      UploadProjectAvatarResponseLinkVariant3Sourceless._(false);
+  static const true_ =
+      UploadProjectAvatarResponseLinkVariant3Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant3Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseLinkVariant3Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UploadProjectAvatarResponseLinkVariant3Type {
@@ -132,14 +165,18 @@ enum UploadProjectAvatarResponseLinkVariant3Type {
 
   static UploadProjectAvatarResponseLinkVariant3Type fromJson(String value) {
     switch (value) {
-      case 'gitlab': return UploadProjectAvatarResponseLinkVariant3Type.gitlab;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseLinkVariant3Type: $value');
+      case 'gitlab':
+        return UploadProjectAvatarResponseLinkVariant3Type.gitlab;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseLinkVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseLinkVariant3Type.gitlab: return 'gitlab';
+      case UploadProjectAvatarResponseLinkVariant3Type.gitlab:
+        return 'gitlab';
     }
   }
 
@@ -148,24 +185,31 @@ enum UploadProjectAvatarResponseLinkVariant3Type {
 }
 
 final class UploadProjectAvatarResponseLinkVariant4Sourceless {
-
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant4Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant4Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant4Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant4Sourceless.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseLinkVariant4Sourceless._(value);
 
-  static const false_ = UploadProjectAvatarResponseLinkVariant4Sourceless._(false);
-  static const true_ = UploadProjectAvatarResponseLinkVariant4Sourceless._(true);
+  static const false_ =
+      UploadProjectAvatarResponseLinkVariant4Sourceless._(false);
+  static const true_ =
+      UploadProjectAvatarResponseLinkVariant4Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant4Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseLinkVariant4Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UploadProjectAvatarResponseLinkVariant4Type {
@@ -173,14 +217,18 @@ enum UploadProjectAvatarResponseLinkVariant4Type {
 
   static UploadProjectAvatarResponseLinkVariant4Type fromJson(String value) {
     switch (value) {
-      case 'bitbucket': return UploadProjectAvatarResponseLinkVariant4Type.bitbucket;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseLinkVariant4Type: $value');
+      case 'bitbucket':
+        return UploadProjectAvatarResponseLinkVariant4Type.bitbucket;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseLinkVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseLinkVariant4Type.bitbucket: return 'bitbucket';
+      case UploadProjectAvatarResponseLinkVariant4Type.bitbucket:
+        return 'bitbucket';
     }
   }
 
@@ -189,24 +237,31 @@ enum UploadProjectAvatarResponseLinkVariant4Type {
 }
 
 final class UploadProjectAvatarResponseLinkVariant5Sourceless {
-
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant5Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant5Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant5Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant5Sourceless.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseLinkVariant5Sourceless._(value);
 
-  static const false_ = UploadProjectAvatarResponseLinkVariant5Sourceless._(false);
-  static const true_ = UploadProjectAvatarResponseLinkVariant5Sourceless._(true);
+  static const false_ =
+      UploadProjectAvatarResponseLinkVariant5Sourceless._(false);
+  static const true_ =
+      UploadProjectAvatarResponseLinkVariant5Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant5Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseLinkVariant5Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UploadProjectAvatarResponseLinkVariant5Type {
@@ -214,14 +269,18 @@ enum UploadProjectAvatarResponseLinkVariant5Type {
 
   static UploadProjectAvatarResponseLinkVariant5Type fromJson(String value) {
     switch (value) {
-      case 'vercel': return UploadProjectAvatarResponseLinkVariant5Type.vercel;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseLinkVariant5Type: $value');
+      case 'vercel':
+        return UploadProjectAvatarResponseLinkVariant5Type.vercel;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseLinkVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseLinkVariant5Type.vercel: return 'vercel';
+      case UploadProjectAvatarResponseLinkVariant5Type.vercel:
+        return 'vercel';
     }
   }
 
@@ -230,24 +289,31 @@ enum UploadProjectAvatarResponseLinkVariant5Type {
 }
 
 final class UploadProjectAvatarResponseLinkVariant6Sourceless {
-
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant6Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant6Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant6Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant6Sourceless.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseLinkVariant6Sourceless._(value);
 
-  static const false_ = UploadProjectAvatarResponseLinkVariant6Sourceless._(false);
-  static const true_ = UploadProjectAvatarResponseLinkVariant6Sourceless._(true);
+  static const false_ =
+      UploadProjectAvatarResponseLinkVariant6Sourceless._(false);
+  static const true_ =
+      UploadProjectAvatarResponseLinkVariant6Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant6Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseLinkVariant6Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UploadProjectAvatarResponseLinkVariant6Type {
@@ -255,14 +321,18 @@ enum UploadProjectAvatarResponseLinkVariant6Type {
 
   static UploadProjectAvatarResponseLinkVariant6Type fromJson(String value) {
     switch (value) {
-      case 'v0': return UploadProjectAvatarResponseLinkVariant6Type.v0;
-      default: throw ArgumentError('Unknown UploadProjectAvatarResponseLinkVariant6Type: $value');
+      case 'v0':
+        return UploadProjectAvatarResponseLinkVariant6Type.v0;
+      default:
+        throw ArgumentError(
+            'Unknown UploadProjectAvatarResponseLinkVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseLinkVariant6Type.v0: return 'v0';
+      case UploadProjectAvatarResponseLinkVariant6Type.v0:
+        return 'v0';
     }
   }
 
@@ -271,22 +341,29 @@ enum UploadProjectAvatarResponseLinkVariant6Type {
 }
 
 final class UploadProjectAvatarResponseLinkVariant7Sourceless {
-
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant7Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant7Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant7Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant7Sourceless.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseLinkVariant7Sourceless._(value);
 
-  static const false_ = UploadProjectAvatarResponseLinkVariant7Sourceless._(false);
-  static const true_ = UploadProjectAvatarResponseLinkVariant7Sourceless._(true);
+  static const false_ =
+      UploadProjectAvatarResponseLinkVariant7Sourceless._(false);
+  static const true_ =
+      UploadProjectAvatarResponseLinkVariant7Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant7Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseLinkVariant7Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

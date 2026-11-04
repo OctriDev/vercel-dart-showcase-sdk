@@ -4,80 +4,185 @@
 part of 'sandboxes.dart';
 
 // sandboxes domain models
-class UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem implements SdkJsonModel {
+class UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<Map<String, String>> headers;
 
-  const UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem({this.headers = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem(
+      {this.headers = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem Function({SdkOptional<Map<String, String>> headers}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem
+          Function({SdkOptional<Map<String, String>> headers})
+      get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem _copyWith({Object? headers = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem(
-    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as SdkOptional<Map<String, String>>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem
+      _copyWith({Object? headers = sdkOmittedValue}) =>
+          UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem(
+            headers: identical(headers, sdkOmittedValue)
+                ? this.headers
+                : headers as SdkOptional<Map<String, String>>,
+          );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem(
-    headers: json['headers'] != null ? SdkPresent((json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-  ), json);
+  factory UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem(
+            headers: json['headers'] != null
+                ? SdkPresent((json['headers'] == null
+                    ? null
+                    : Map<String, dynamic>.from(json['headers'] as Map)
+                        .map((key, value) => MapEntry(key, value as String)))!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (headers) {
-      SdkPresent<Map<String, String>>(value: final value) => {'headers': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (headers) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'headers': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem implements SdkJsonModel {
+class UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.
-  final SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch> match;
-  final SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>> transform;
+  final SdkOptional<
+          UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch>
+      match;
+  final SdkOptional<
+          List<
+              UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>>
+      transform;
+
   /// HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment.
   final SdkOptional<String> forwardUrl;
+
   /// Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.
-  final SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse> response;
+  final SdkOptional<
+          UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse>
+      response;
 
-  const UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem({this.match = const SdkOmitted(), this.transform = const SdkOmitted(), this.forwardUrl = const SdkOmitted(), this.response = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem(
+      {this.match = const SdkOmitted(),
+      this.transform = const SdkOmitted(),
+      this.forwardUrl = const SdkOmitted(),
+      this.response = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem Function({SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch> match, SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>> transform, SdkOptional<String> forwardUrl, SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse> response}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem Function(
+      {SdkOptional<
+              UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch>
+          match,
+      SdkOptional<
+              List<
+                  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>>
+          transform,
+      SdkOptional<String> forwardUrl,
+      SdkOptional<
+              UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse>
+          response}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem _copyWith({Object? match = sdkOmittedValue, Object? transform = sdkOmittedValue, Object? forwardUrl = sdkOmittedValue, Object? response = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem(
-    match: identical(match, sdkOmittedValue) ? this.match : match as SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch>,
-    transform: identical(transform, sdkOmittedValue) ? this.transform : transform as SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>>,
-    forwardUrl: identical(forwardUrl, sdkOmittedValue) ? this.forwardUrl : forwardUrl as SdkOptional<String>,
-    response: identical(response, sdkOmittedValue) ? this.response : response as SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem _copyWith(
+          {Object? match = sdkOmittedValue,
+          Object? transform = sdkOmittedValue,
+          Object? forwardUrl = sdkOmittedValue,
+          Object? response = sdkOmittedValue}) =>
+      UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem(
+        match: identical(match, sdkOmittedValue)
+            ? this.match
+            : match as SdkOptional<
+                UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch>,
+        transform: identical(transform, sdkOmittedValue)
+            ? this.transform
+            : transform as SdkOptional<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>>,
+        forwardUrl: identical(forwardUrl, sdkOmittedValue)
+            ? this.forwardUrl
+            : forwardUrl as SdkOptional<String>,
+        response: identical(response, sdkOmittedValue)
+            ? this.response
+            : response as SdkOptional<
+                UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse>,
+      );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem(
-    match: json['match'] != null ? SdkPresent((json['match'] != null ? UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch.fromJson(json['match'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    transform: json['transform'] != null ? SdkPresent(((json['transform'] as List?)?.map((e) => UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    forwardUrl: json['forwardURL'] != null ? SdkPresent((json['forwardURL'] as String?)!) : const SdkOmitted(),
-    response: json['response'] != null ? SdkPresent((json['response'] != null ? UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse.fromJson(json['response'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItem(
+            match: json['match'] != null
+                ? SdkPresent((json['match'] != null
+                    ? UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch
+                        .fromJson(json['match'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            transform: json['transform'] != null
+                ? SdkPresent(((json['transform'] as List?)
+                    ?.map((e) =>
+                        UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem
+                            .fromJson(e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+            forwardUrl: json['forwardURL'] != null
+                ? SdkPresent((json['forwardURL'] as String?)!)
+                : const SdkOmitted(),
+            response: json['response'] != null
+                ? SdkPresent((json['response'] != null
+                    ? UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse
+                        .fromJson(json['response'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (match) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch>(value: final value) => {'match': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transform) {
-      SdkPresent<List<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>>(value: final value) => {'transform': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (forwardUrl) {
-      SdkPresent<String>(value: final value) => {'forwardURL': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (response) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse>(value: final value) => {'response': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (match) {
+          SdkPresent<
+                UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatch>(
+            value: final value
+          ) =>
+            {
+              'match': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transform) {
+          SdkPresent<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemTransformItem>>(
+            value: final value
+          ) =>
+            {
+              'transform': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (forwardUrl) {
+          SdkPresent<String>(value: final value) => {
+              'forwardURL': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (response) {
+          SdkPresent<
+                UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemResponse>(
+            value: final value
+          ) =>
+            {
+              'response': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateSandboxRequestNetworkPolicyVariant1 implements SdkJsonModel {
@@ -86,31 +191,61 @@ class UpdateSandboxRequestNetworkPolicyVariant1 implements SdkJsonModel {
   final SdkOptional<dynamic> allow;
   final SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1Subnets> subnets;
 
-  const UpdateSandboxRequestNetworkPolicyVariant1({this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant1(
+      {this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant1 Function({SdkOptional<dynamic> allow, SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1Subnets> subnets}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant1 Function(
+      {SdkOptional<dynamic> allow,
+      SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1Subnets>
+          subnets}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant1 _copyWith({Object? allow = sdkOmittedValue, Object? subnets = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant1(
-    allow: identical(allow, sdkOmittedValue) ? this.allow : allow as SdkOptional<dynamic>,
-    subnets: identical(subnets, sdkOmittedValue) ? this.subnets : subnets as SdkOptional<UpdateSandboxRequestNetworkPolicyVariant1Subnets>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant1 _copyWith(
+          {Object? allow = sdkOmittedValue,
+          Object? subnets = sdkOmittedValue}) =>
+      UpdateSandboxRequestNetworkPolicyVariant1(
+        allow: identical(allow, sdkOmittedValue)
+            ? this.allow
+            : allow as SdkOptional<dynamic>,
+        subnets: identical(subnets, sdkOmittedValue)
+            ? this.subnets
+            : subnets as SdkOptional<
+                UpdateSandboxRequestNetworkPolicyVariant1Subnets>,
+      );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateSandboxRequestNetworkPolicyVariant1(
-    allow: json['allow'] != null ? SdkPresent((json['allow'])!) : const SdkOmitted(),
-    subnets: json['subnets'] != null ? SdkPresent((json['subnets'] != null ? UpdateSandboxRequestNetworkPolicyVariant1Subnets.fromJson(json['subnets'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UpdateSandboxRequestNetworkPolicyVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateSandboxRequestNetworkPolicyVariant1(
+            allow: json['allow'] != null
+                ? SdkPresent((json['allow'])!)
+                : const SdkOmitted(),
+            subnets: json['subnets'] != null
+                ? SdkPresent((json['subnets'] != null
+                    ? UpdateSandboxRequestNetworkPolicyVariant1Subnets.fromJson(
+                        json['subnets'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (allow) {
-      SdkPresent<dynamic>(value: final value) => {'allow': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (subnets) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicyVariant1Subnets>(value: final value) => {'subnets': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (allow) {
+          SdkPresent<dynamic>(value: final value) => {
+              'allow': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (subnets) {
+          SdkPresent<UpdateSandboxRequestNetworkPolicyVariant1Subnets>(
+            value: final value
+          ) =>
+            {
+              'subnets': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class UpdateSandboxRequestNetworkPolicy {
@@ -119,24 +254,51 @@ sealed class UpdateSandboxRequestNetworkPolicy {
   const UpdateSandboxRequestNetworkPolicy();
   factory UpdateSandboxRequestNetworkPolicy.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateSandboxRequestNetworkPolicyVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0(value); } } catch (_) {}
-      try { final value = UpdateSandboxRequestNetworkPolicyVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1(value); } } catch (_) {}
+      try {
+        final value = UpdateSandboxRequestNetworkPolicyVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateSandboxRequestNetworkPolicyVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0(UpdateSandboxRequestNetworkPolicyVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1(UpdateSandboxRequestNetworkPolicyVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateSandboxRequestNetworkPolicy");
+    try {
+      return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0(
+          UpdateSandboxRequestNetworkPolicyVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1(
+          UpdateSandboxRequestNetworkPolicyVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateSandboxRequestNetworkPolicy");
   }
   Object? toJson();
 }
 
-final class UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0 extends UpdateSandboxRequestNetworkPolicy {
+final class UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0
+    extends UpdateSandboxRequestNetworkPolicy {
   final UpdateSandboxRequestNetworkPolicyVariant0 value;
-  const UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1 extends UpdateSandboxRequestNetworkPolicy {
+final class UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1
+    extends UpdateSandboxRequestNetworkPolicy {
   final UpdateSandboxRequestNetworkPolicyVariant1 value;
-  const UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateSandboxRequestNetworkPolicyUpdateSandboxRequestNetworkPolicyVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

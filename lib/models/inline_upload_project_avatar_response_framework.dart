@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UploadProjectAvatarResponseFramework {
-
   final String value;
 
   const UploadProjectAvatarResponseFramework._(this.value);
 
-  factory UploadProjectAvatarResponseFramework.fromJson(String value) => UploadProjectAvatarResponseFramework._(value);
+  factory UploadProjectAvatarResponseFramework.fromJson(String value) =>
+      UploadProjectAvatarResponseFramework._(value);
 
   static const actixWeb = UploadProjectAvatarResponseFramework._('actix-web');
   static const angular = UploadProjectAvatarResponseFramework._('angular');
@@ -21,17 +21,21 @@ final class UploadProjectAvatarResponseFramework {
   static const brunch = UploadProjectAvatarResponseFramework._('brunch');
   static const bun = UploadProjectAvatarResponseFramework._('bun');
   static const container = UploadProjectAvatarResponseFramework._('container');
-  static const createReactApp = UploadProjectAvatarResponseFramework._('create-react-app');
+  static const createReactApp =
+      UploadProjectAvatarResponseFramework._('create-react-app');
   static const django = UploadProjectAvatarResponseFramework._('django');
-  static const docusaurus = UploadProjectAvatarResponseFramework._('docusaurus');
-  static const docusaurus2 = UploadProjectAvatarResponseFramework._('docusaurus-2');
+  static const docusaurus =
+      UploadProjectAvatarResponseFramework._('docusaurus');
+  static const docusaurus2 =
+      UploadProjectAvatarResponseFramework._('docusaurus-2');
   static const dojo = UploadProjectAvatarResponseFramework._('dojo');
   static const eleventy = UploadProjectAvatarResponseFramework._('eleventy');
   static const elysia = UploadProjectAvatarResponseFramework._('elysia');
   static const ember = UploadProjectAvatarResponseFramework._('ember');
   static const eve = UploadProjectAvatarResponseFramework._('eve');
   static const express = UploadProjectAvatarResponseFramework._('express');
-  static const factoryEve = UploadProjectAvatarResponseFramework._('factory-eve');
+  static const factoryEve =
+      UploadProjectAvatarResponseFramework._('factory-eve');
   static const fastapi = UploadProjectAvatarResponseFramework._('fastapi');
   static const fasthtml = UploadProjectAvatarResponseFramework._('fasthtml');
   static const fastify = UploadProjectAvatarResponseFramework._('fastify');
@@ -44,8 +48,10 @@ final class UploadProjectAvatarResponseFramework {
   static const hono = UploadProjectAvatarResponseFramework._('hono');
   static const hugo = UploadProjectAvatarResponseFramework._('hugo');
   static const hydrogen = UploadProjectAvatarResponseFramework._('hydrogen');
-  static const ionicAngular = UploadProjectAvatarResponseFramework._('ionic-angular');
-  static const ionicReact = UploadProjectAvatarResponseFramework._('ionic-react');
+  static const ionicAngular =
+      UploadProjectAvatarResponseFramework._('ionic-angular');
+  static const ionicReact =
+      UploadProjectAvatarResponseFramework._('ionic-react');
   static const jekyll = UploadProjectAvatarResponseFramework._('jekyll');
   static const koa = UploadProjectAvatarResponseFramework._('koa');
   static const mastra = UploadProjectAvatarResponseFramework._('mastra');
@@ -59,7 +65,8 @@ final class UploadProjectAvatarResponseFramework {
   static const polymer = UploadProjectAvatarResponseFramework._('polymer');
   static const preact = UploadProjectAvatarResponseFramework._('preact');
   static const python = UploadProjectAvatarResponseFramework._('python');
-  static const reactRouter = UploadProjectAvatarResponseFramework._('react-router');
+  static const reactRouter =
+      UploadProjectAvatarResponseFramework._('react-router');
   static const redwoodjs = UploadProjectAvatarResponseFramework._('redwoodjs');
   static const remix = UploadProjectAvatarResponseFramework._('remix');
   static const ruby = UploadProjectAvatarResponseFramework._('ruby');
@@ -70,15 +77,20 @@ final class UploadProjectAvatarResponseFramework {
   static const sapper = UploadProjectAvatarResponseFramework._('sapper');
   static const scully = UploadProjectAvatarResponseFramework._('scully');
   static const services = UploadProjectAvatarResponseFramework._('services');
-  static const solidstart = UploadProjectAvatarResponseFramework._('solidstart');
-  static const solidstart1 = UploadProjectAvatarResponseFramework._('solidstart-1');
+  static const solidstart =
+      UploadProjectAvatarResponseFramework._('solidstart');
+  static const solidstart1 =
+      UploadProjectAvatarResponseFramework._('solidstart-1');
   static const stencil = UploadProjectAvatarResponseFramework._('stencil');
   static const storybook = UploadProjectAvatarResponseFramework._('storybook');
   static const svelte = UploadProjectAvatarResponseFramework._('svelte');
   static const sveltekit = UploadProjectAvatarResponseFramework._('sveltekit');
-  static const sveltekit1 = UploadProjectAvatarResponseFramework._('sveltekit-1');
-  static const tanstackStart = UploadProjectAvatarResponseFramework._('tanstack-start');
-  static const tanstackStartLovable = UploadProjectAvatarResponseFramework._('tanstack-start-lovable');
+  static const sveltekit1 =
+      UploadProjectAvatarResponseFramework._('sveltekit-1');
+  static const tanstackStart =
+      UploadProjectAvatarResponseFramework._('tanstack-start');
+  static const tanstackStartLovable =
+      UploadProjectAvatarResponseFramework._('tanstack-start-lovable');
   static const umijs = UploadProjectAvatarResponseFramework._('umijs');
   static const vite = UploadProjectAvatarResponseFramework._('vite');
   static const vitepress = UploadProjectAvatarResponseFramework._('vitepress');
@@ -89,206 +101,281 @@ final class UploadProjectAvatarResponseFramework {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseFramework && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should comment on commits
 final class UploadProjectAvatarResponseGitCommentsOnCommit {
-
   final bool value;
 
   const UploadProjectAvatarResponseGitCommentsOnCommit._(this.value);
 
-  factory UploadProjectAvatarResponseGitCommentsOnCommit.fromJson(bool value) => UploadProjectAvatarResponseGitCommentsOnCommit._(value);
+  factory UploadProjectAvatarResponseGitCommentsOnCommit.fromJson(bool value) =>
+      UploadProjectAvatarResponseGitCommentsOnCommit._(value);
 
   static const false_ = UploadProjectAvatarResponseGitCommentsOnCommit._(false);
   static const true_ = UploadProjectAvatarResponseGitCommentsOnCommit._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitCommentsOnCommit && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseGitCommentsOnCommit &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should comment on PRs
 final class UploadProjectAvatarResponseGitCommentsOnPullRequest {
-
   final bool value;
 
   const UploadProjectAvatarResponseGitCommentsOnPullRequest._(this.value);
 
-  factory UploadProjectAvatarResponseGitCommentsOnPullRequest.fromJson(bool value) => UploadProjectAvatarResponseGitCommentsOnPullRequest._(value);
+  factory UploadProjectAvatarResponseGitCommentsOnPullRequest.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseGitCommentsOnPullRequest._(value);
 
-  static const false_ = UploadProjectAvatarResponseGitCommentsOnPullRequest._(false);
-  static const true_ = UploadProjectAvatarResponseGitCommentsOnPullRequest._(true);
+  static const false_ =
+      UploadProjectAvatarResponseGitCommentsOnPullRequest._(false);
+  static const true_ =
+      UploadProjectAvatarResponseGitCommentsOnPullRequest._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitCommentsOnPullRequest && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseGitCommentsOnPullRequest &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseGitForkProtection {
-
   final bool value;
 
   const UploadProjectAvatarResponseGitForkProtection._(this.value);
 
-  factory UploadProjectAvatarResponseGitForkProtection.fromJson(bool value) => UploadProjectAvatarResponseGitForkProtection._(value);
+  factory UploadProjectAvatarResponseGitForkProtection.fromJson(bool value) =>
+      UploadProjectAvatarResponseGitForkProtection._(value);
 
   static const false_ = UploadProjectAvatarResponseGitForkProtection._(false);
   static const true_ = UploadProjectAvatarResponseGitForkProtection._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitForkProtection && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseGitForkProtection &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseGitLFS {
-
   final bool value;
 
   const UploadProjectAvatarResponseGitLFS._(this.value);
 
-  factory UploadProjectAvatarResponseGitLFS.fromJson(bool value) => UploadProjectAvatarResponseGitLFS._(value);
+  factory UploadProjectAvatarResponseGitLFS.fromJson(bool value) =>
+      UploadProjectAvatarResponseGitLFS._(value);
 
   static const false_ = UploadProjectAvatarResponseGitLFS._(false);
   static const true_ = UploadProjectAvatarResponseGitLFS._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitLFS && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseGitLFS && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether consolidated commit status is enabled.
 final class UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled {
-
   final bool value;
 
-  const UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(this.value);
+  const UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(
+      this.value);
 
-  factory UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(bool value) => UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(value);
+  factory UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(value);
 
-  static const false_ = UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(false);
-  static const true_ = UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled._(true);
+  static const false_ =
+      UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(false);
+  static const true_ =
+      UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to propagate individual deployment failures to the consolidated status.
 final class UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures {
-
   final bool value;
 
-  const UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(this.value);
+  const UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(
+      this.value);
 
-  factory UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures.fromJson(bool value) => UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(value);
+  factory UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
+          ._(value);
 
-  static const false_ = UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(false);
-  static const true_ = UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures._(true);
+  static const false_ =
+      UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
+          ._(false);
+  static const true_ =
+      UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseGitProviderOptionsConsolidatedGitCommitStatusPropagateFailures &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead
 final class UploadProjectAvatarResponseGitProviderOptionsCreateDeployments {
-
   final String value;
 
-  const UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._(this.value);
+  const UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._(
+      this.value);
 
-  factory UploadProjectAvatarResponseGitProviderOptionsCreateDeployments.fromJson(String value) => UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._(value);
+  factory UploadProjectAvatarResponseGitProviderOptionsCreateDeployments.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._(value);
 
-  static const disabled = UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._('disabled');
-  static const enabled = UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._('enabled');
+  static const disabled =
+      UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._(
+          'disabled');
+  static const enabled =
+      UploadProjectAvatarResponseGitProviderOptionsCreateDeployments._(
+          'enabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitProviderOptionsCreateDeployments && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseGitProviderOptionsCreateDeployments &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`.
 final class UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents {
-
   final bool value;
 
-  const UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents._(this.value);
+  const UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents._(
+      this.value);
 
-  factory UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents.fromJson(bool value) => UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents._(value);
+  factory UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents
+          ._(value);
 
-  static const false_ = UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents._(false);
-  static const true_ = UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents._(true);
+  static const false_ =
+      UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents
+          ._(false);
+  static const true_ =
+      UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseGitProviderOptionsDisableRepositoryDispatchEvents &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
 final class UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus {
-
   final bool value;
 
-  const UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(this.value);
+  const UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(
+      this.value);
 
-  factory UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus.fromJson(bool value) => UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(value);
+  factory UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(value);
 
-  static const false_ = UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(false);
-  static const true_ = UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(true);
+  static const false_ =
+      UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(false);
+  static const true_ =
+      UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseGitProviderOptionsGitCommitStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

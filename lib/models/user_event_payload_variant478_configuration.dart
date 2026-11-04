@@ -8,267 +8,413 @@ part of 'user.dart';
 class UserEventPayloadVariant478Configuration implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
 
-  const UserEventPayloadVariant478Configuration({required this.id, this.name = const SdkOmitted()});
+  const UserEventPayloadVariant478Configuration(
+      {required this.id, this.name = const SdkOmitted()});
 
-  UserEventPayloadVariant478Configuration Function({String id, SdkOptional<String> name}) get copyWith => _copyWith;
+  UserEventPayloadVariant478Configuration Function(
+      {String id, SdkOptional<String> name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant478Configuration _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant478Configuration(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-  );
+  UserEventPayloadVariant478Configuration _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant478Configuration(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant478Configuration.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant478Configuration(
-    id: (json['id'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant478Configuration.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant478Configuration(
+            id: (json['id'] as String?)!,
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `peering` wire field.
 class UserEventPayloadVariant478Peering implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `accountId` wire field.
   final String accountId;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `region` wire field.
   final String region;
+
   /// Required `string` value serialized in the `vpcId` wire field.
   final String vpcId;
 
-  const UserEventPayloadVariant478Peering({required this.accountId, required this.id, required this.region, required this.vpcId});
+  const UserEventPayloadVariant478Peering(
+      {required this.accountId,
+      required this.id,
+      required this.region,
+      required this.vpcId});
 
-  UserEventPayloadVariant478Peering Function({String accountId, String id, String region, String vpcId}) get copyWith => _copyWith;
+  UserEventPayloadVariant478Peering Function(
+      {String accountId,
+      String id,
+      String region,
+      String vpcId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant478Peering _copyWith({Object? accountId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? region = sdkOmittedValue, Object? vpcId = sdkOmittedValue}) => UserEventPayloadVariant478Peering(
-    accountId: identical(accountId, sdkOmittedValue) ? this.accountId : accountId as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    region: identical(region, sdkOmittedValue) ? this.region : region as String,
-    vpcId: identical(vpcId, sdkOmittedValue) ? this.vpcId : vpcId as String,
-  );
+  UserEventPayloadVariant478Peering _copyWith(
+          {Object? accountId = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? vpcId = sdkOmittedValue}) =>
+      UserEventPayloadVariant478Peering(
+        accountId: identical(accountId, sdkOmittedValue)
+            ? this.accountId
+            : accountId as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        region:
+            identical(region, sdkOmittedValue) ? this.region : region as String,
+        vpcId: identical(vpcId, sdkOmittedValue) ? this.vpcId : vpcId as String,
+      );
 
-  factory UserEventPayloadVariant478Peering.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant478Peering(
-    accountId: (json['accountId'] as String?)!,
-    id: (json['id'] as String?)!,
-    region: (json['region'] as String?)!,
-    vpcId: (json['vpcId'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant478Peering.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant478Peering(
+            accountId: (json['accountId'] as String?)!,
+            id: (json['id'] as String?)!,
+            region: (json['region'] as String?)!,
+            vpcId: (json['vpcId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'accountId': accountId,
-    'id': id,
-    'region': region,
-    'vpcId': vpcId,
-  };
+        'accountId': accountId,
+        'id': id,
+        'region': region,
+        'vpcId': vpcId,
+      };
 }
 
 /// Required object value serialized in the `team` wire field.
 class UserEventPayloadVariant478Team implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant478Team({required this.id, required this.name});
 
-  UserEventPayloadVariant478Team Function({String id, String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant478Team Function({String id, String name})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant478Team _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant478Team(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant478Team _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant478Team(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant478Team.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant478Team(
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant478Team.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant478Team(
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-  };
+        'id': id,
+        'name': name,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant478 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `configuration` wire field.
   final UserEventPayloadVariant478Configuration configuration;
+
   /// Required object value serialized in the `peering` wire field.
   final UserEventPayloadVariant478Peering peering;
+
   /// Required object value serialized in the `team` wire field.
   final UserEventPayloadVariant478Team team;
 
-  const UserEventPayloadVariant478({required this.configuration, required this.peering, required this.team});
+  const UserEventPayloadVariant478(
+      {required this.configuration, required this.peering, required this.team});
 
-  UserEventPayloadVariant478 Function({UserEventPayloadVariant478Configuration configuration, UserEventPayloadVariant478Peering peering, UserEventPayloadVariant478Team team}) get copyWith => _copyWith;
+  UserEventPayloadVariant478 Function(
+      {UserEventPayloadVariant478Configuration configuration,
+      UserEventPayloadVariant478Peering peering,
+      UserEventPayloadVariant478Team team}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant478 _copyWith({Object? configuration = sdkOmittedValue, Object? peering = sdkOmittedValue, Object? team = sdkOmittedValue}) => UserEventPayloadVariant478(
-    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as UserEventPayloadVariant478Configuration,
-    peering: identical(peering, sdkOmittedValue) ? this.peering : peering as UserEventPayloadVariant478Peering,
-    team: identical(team, sdkOmittedValue) ? this.team : team as UserEventPayloadVariant478Team,
-  );
+  UserEventPayloadVariant478 _copyWith(
+          {Object? configuration = sdkOmittedValue,
+          Object? peering = sdkOmittedValue,
+          Object? team = sdkOmittedValue}) =>
+      UserEventPayloadVariant478(
+        configuration: identical(configuration, sdkOmittedValue)
+            ? this.configuration
+            : configuration as UserEventPayloadVariant478Configuration,
+        peering: identical(peering, sdkOmittedValue)
+            ? this.peering
+            : peering as UserEventPayloadVariant478Peering,
+        team: identical(team, sdkOmittedValue)
+            ? this.team
+            : team as UserEventPayloadVariant478Team,
+      );
 
-  factory UserEventPayloadVariant478.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant478(
-    configuration: (json['configuration'] != null ? UserEventPayloadVariant478Configuration.fromJson(json['configuration'] as Map<String, dynamic>) : null)!,
-    peering: (json['peering'] != null ? UserEventPayloadVariant478Peering.fromJson(json['peering'] as Map<String, dynamic>) : null)!,
-    team: (json['team'] != null ? UserEventPayloadVariant478Team.fromJson(json['team'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory UserEventPayloadVariant478.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant478(
+            configuration: (json['configuration'] != null
+                ? UserEventPayloadVariant478Configuration.fromJson(
+                    json['configuration'] as Map<String, dynamic>)
+                : null)!,
+            peering: (json['peering'] != null
+                ? UserEventPayloadVariant478Peering.fromJson(
+                    json['peering'] as Map<String, dynamic>)
+                : null)!,
+            team: (json['team'] != null
+                ? UserEventPayloadVariant478Team.fromJson(
+                    json['team'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'configuration': configuration.toJson(),
-    'peering': peering.toJson(),
-    'team': team.toJson(),
-  };
+        'configuration': configuration.toJson(),
+        'peering': peering.toJson(),
+        'team': team.toJson(),
+      };
 }
 
 /// Required object value serialized in the `configuration` wire field.
 class UserEventPayloadVariant479Configuration implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
 
-  const UserEventPayloadVariant479Configuration({required this.id, this.name = const SdkOmitted()});
+  const UserEventPayloadVariant479Configuration(
+      {required this.id, this.name = const SdkOmitted()});
 
-  UserEventPayloadVariant479Configuration Function({String id, SdkOptional<String> name}) get copyWith => _copyWith;
+  UserEventPayloadVariant479Configuration Function(
+      {String id, SdkOptional<String> name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant479Configuration _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant479Configuration(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-  );
+  UserEventPayloadVariant479Configuration _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant479Configuration(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant479Configuration.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant479Configuration(
-    id: (json['id'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant479Configuration.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant479Configuration(
+            id: (json['id'] as String?)!,
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `peering` wire field.
 class UserEventPayloadVariant479Peering implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
 
-  const UserEventPayloadVariant479Peering({required this.id, this.name = const SdkOmitted()});
+  const UserEventPayloadVariant479Peering(
+      {required this.id, this.name = const SdkOmitted()});
 
-  UserEventPayloadVariant479Peering Function({String id, SdkOptional<String> name}) get copyWith => _copyWith;
+  UserEventPayloadVariant479Peering Function(
+      {String id, SdkOptional<String> name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant479Peering _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant479Peering(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-  );
+  UserEventPayloadVariant479Peering _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant479Peering(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant479Peering.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant479Peering(
-    id: (json['id'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant479Peering.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant479Peering(
+            id: (json['id'] as String?)!,
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `team` wire field.
 class UserEventPayloadVariant479Team implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant479Team({required this.id, required this.name});
 
-  UserEventPayloadVariant479Team Function({String id, String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant479Team Function({String id, String name})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant479Team _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant479Team(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant479Team _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant479Team(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant479Team.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant479Team(
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant479Team.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant479Team(
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-  };
+        'id': id,
+        'name': name,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant479 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `configuration` wire field.
   final UserEventPayloadVariant479Configuration configuration;
+
   /// Required object value serialized in the `peering` wire field.
   final UserEventPayloadVariant479Peering peering;
+
   /// Required object value serialized in the `team` wire field.
   final UserEventPayloadVariant479Team team;
 
-  const UserEventPayloadVariant479({required this.configuration, required this.peering, required this.team});
+  const UserEventPayloadVariant479(
+      {required this.configuration, required this.peering, required this.team});
 
-  UserEventPayloadVariant479 Function({UserEventPayloadVariant479Configuration configuration, UserEventPayloadVariant479Peering peering, UserEventPayloadVariant479Team team}) get copyWith => _copyWith;
+  UserEventPayloadVariant479 Function(
+      {UserEventPayloadVariant479Configuration configuration,
+      UserEventPayloadVariant479Peering peering,
+      UserEventPayloadVariant479Team team}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant479 _copyWith({Object? configuration = sdkOmittedValue, Object? peering = sdkOmittedValue, Object? team = sdkOmittedValue}) => UserEventPayloadVariant479(
-    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as UserEventPayloadVariant479Configuration,
-    peering: identical(peering, sdkOmittedValue) ? this.peering : peering as UserEventPayloadVariant479Peering,
-    team: identical(team, sdkOmittedValue) ? this.team : team as UserEventPayloadVariant479Team,
-  );
+  UserEventPayloadVariant479 _copyWith(
+          {Object? configuration = sdkOmittedValue,
+          Object? peering = sdkOmittedValue,
+          Object? team = sdkOmittedValue}) =>
+      UserEventPayloadVariant479(
+        configuration: identical(configuration, sdkOmittedValue)
+            ? this.configuration
+            : configuration as UserEventPayloadVariant479Configuration,
+        peering: identical(peering, sdkOmittedValue)
+            ? this.peering
+            : peering as UserEventPayloadVariant479Peering,
+        team: identical(team, sdkOmittedValue)
+            ? this.team
+            : team as UserEventPayloadVariant479Team,
+      );
 
-  factory UserEventPayloadVariant479.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant479(
-    configuration: (json['configuration'] != null ? UserEventPayloadVariant479Configuration.fromJson(json['configuration'] as Map<String, dynamic>) : null)!,
-    peering: (json['peering'] != null ? UserEventPayloadVariant479Peering.fromJson(json['peering'] as Map<String, dynamic>) : null)!,
-    team: (json['team'] != null ? UserEventPayloadVariant479Team.fromJson(json['team'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory UserEventPayloadVariant479.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant479(
+            configuration: (json['configuration'] != null
+                ? UserEventPayloadVariant479Configuration.fromJson(
+                    json['configuration'] as Map<String, dynamic>)
+                : null)!,
+            peering: (json['peering'] != null
+                ? UserEventPayloadVariant479Peering.fromJson(
+                    json['peering'] as Map<String, dynamic>)
+                : null)!,
+            team: (json['team'] != null
+                ? UserEventPayloadVariant479Team.fromJson(
+                    json['team'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'configuration': configuration.toJson(),
-    'peering': peering.toJson(),
-    'team': team.toJson(),
-  };
+        'configuration': configuration.toJson(),
+        'peering': peering.toJson(),
+        'team': team.toJson(),
+      };
 }

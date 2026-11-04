@@ -7,180 +7,444 @@ part of 'inline.dart';
 class CreateSharedEnvVariableResponseCreatedItem implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// whether or not this env varible applies to custom environments
-  final SdkOptional<CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments> applyToAllCustomEnvironments;
+  final SdkOptional<
+          CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments>
+      applyToAllCustomEnvironments;
+
   /// A user provided comment that describes what this Shared Env Var is for.
   final SdkOptional<String> comment;
+
   /// The date when the Shared Env Var was created.
   final SdkOptional<String> created;
+
   /// Timestamp for when the Shared Env Var was created.
   final SdkOptional<double> createdAt;
+
   /// The unique identifier of the user who created the Shared Env Var.
   final SdkOptional<String?> createdBy;
+
   /// The custom environment IDs that this Shared Env Var is scoped to.
   final SdkOptional<List<String>> customEnvironmentIds;
+
   /// whether or not this env variable is decrypted
-  final SdkOptional<CreateSharedEnvVariableResponseCreatedItemDecrypted> decrypted;
+  final SdkOptional<CreateSharedEnvVariableResponseCreatedItemDecrypted>
+      decrypted;
+
   /// Timestamp for when the Shared Env Var was (soft) deleted.
   final SdkOptional<double> deletedAt;
+
   /// The unique identifier of the user who deleted the Shared Env Var.
   final SdkOptional<String?> deletedBy;
+
   /// The unique identifier of the Shared Env Var.
   final SdkOptional<String> id;
+
   /// The name of the Shared Env Var.
   final SdkOptional<String> key;
+
   /// The last editor full name or username.
   final SdkOptional<String> lastEditedByDisplayName;
+
   /// Typed representation of the `CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal` API schema.
-  final SdkOptional<CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal> lastEditedByPrincipal;
+  final SdkOptional<
+          CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal>
+      lastEditedByPrincipal;
+
   /// The unique identifier of the owner (team) the Shared Env Var was created for.
   final SdkOptional<String?> ownerId;
+
   /// The unique identifiers of the projects which the Shared Env Var is linked to.
   final SdkOptional<List<String>> projectId;
+
   /// environments this env variable targets
-  final SdkOptional<List<CreateSharedEnvVariableResponseCreatedItemTargetItem>> target;
+  final SdkOptional<List<CreateSharedEnvVariableResponseCreatedItemTargetItem>>
+      target;
+
   /// The type of this cosmos doc instance, if blank, assume secret.
   final SdkOptional<CreateSharedEnvVariableResponseCreatedItemType> type_;
+
   /// Timestamp for when the Shared Env Var was last updated.
   final SdkOptional<double> updatedAt;
+
   /// The unique identifier of the user who last updated the Shared Env Var.
   final SdkOptional<String?> updatedBy;
+
   /// The value of the Shared Env Var.
   final SdkOptional<String> value;
 
-  const CreateSharedEnvVariableResponseCreatedItem({this.applyToAllCustomEnvironments = const SdkOmitted(), this.comment = const SdkOmitted(), this.created = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.createdBy = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted(), this.decrypted = const SdkOmitted(), this.deletedAt = const SdkOmitted(), this.deletedBy = const SdkOmitted(), this.id = const SdkOmitted(), this.key = const SdkOmitted(), this.lastEditedByDisplayName = const SdkOmitted(), this.lastEditedByPrincipal = const SdkOmitted(), this.ownerId = const SdkOmitted(), this.projectId = const SdkOmitted(), this.target = const SdkOmitted(), this.type_ = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted(), this.value = const SdkOmitted()});
+  const CreateSharedEnvVariableResponseCreatedItem(
+      {this.applyToAllCustomEnvironments = const SdkOmitted(),
+      this.comment = const SdkOmitted(),
+      this.created = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.createdBy = const SdkOmitted(),
+      this.customEnvironmentIds = const SdkOmitted(),
+      this.decrypted = const SdkOmitted(),
+      this.deletedAt = const SdkOmitted(),
+      this.deletedBy = const SdkOmitted(),
+      this.id = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.lastEditedByDisplayName = const SdkOmitted(),
+      this.lastEditedByPrincipal = const SdkOmitted(),
+      this.ownerId = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      this.type_ = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.updatedBy = const SdkOmitted(),
+      this.value = const SdkOmitted()});
 
-  CreateSharedEnvVariableResponseCreatedItem Function({SdkOptional<CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments> applyToAllCustomEnvironments, SdkOptional<String> comment, SdkOptional<String> created, SdkOptional<double> createdAt, SdkOptional<String?> createdBy, SdkOptional<List<String>> customEnvironmentIds, SdkOptional<CreateSharedEnvVariableResponseCreatedItemDecrypted> decrypted, SdkOptional<double> deletedAt, SdkOptional<String?> deletedBy, SdkOptional<String> id, SdkOptional<String> key, SdkOptional<String> lastEditedByDisplayName, SdkOptional<CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal> lastEditedByPrincipal, SdkOptional<String?> ownerId, SdkOptional<List<String>> projectId, SdkOptional<List<CreateSharedEnvVariableResponseCreatedItemTargetItem>> target, SdkOptional<CreateSharedEnvVariableResponseCreatedItemType> type_, SdkOptional<double> updatedAt, SdkOptional<String?> updatedBy, SdkOptional<String> value}) get copyWith => _copyWith;
+  CreateSharedEnvVariableResponseCreatedItem Function(
+      {SdkOptional<
+              CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments>
+          applyToAllCustomEnvironments,
+      SdkOptional<String> comment,
+      SdkOptional<String> created,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> createdBy,
+      SdkOptional<List<String>> customEnvironmentIds,
+      SdkOptional<CreateSharedEnvVariableResponseCreatedItemDecrypted>
+          decrypted,
+      SdkOptional<double> deletedAt,
+      SdkOptional<String?> deletedBy,
+      SdkOptional<String> id,
+      SdkOptional<String> key,
+      SdkOptional<String> lastEditedByDisplayName,
+      SdkOptional<
+              CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal>
+          lastEditedByPrincipal,
+      SdkOptional<String?> ownerId,
+      SdkOptional<List<String>> projectId,
+      SdkOptional<List<CreateSharedEnvVariableResponseCreatedItemTargetItem>>
+          target,
+      SdkOptional<CreateSharedEnvVariableResponseCreatedItemType> type_,
+      SdkOptional<double> updatedAt,
+      SdkOptional<String?> updatedBy,
+      SdkOptional<String> value}) get copyWith => _copyWith;
 
-  CreateSharedEnvVariableResponseCreatedItem _copyWith({Object? applyToAllCustomEnvironments = sdkOmittedValue, Object? comment = sdkOmittedValue, Object? created = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue, Object? decrypted = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? deletedBy = sdkOmittedValue, Object? id = sdkOmittedValue, Object? key = sdkOmittedValue, Object? lastEditedByDisplayName = sdkOmittedValue, Object? lastEditedByPrincipal = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateSharedEnvVariableResponseCreatedItem(
-    applyToAllCustomEnvironments: identical(applyToAllCustomEnvironments, sdkOmittedValue) ? this.applyToAllCustomEnvironments : applyToAllCustomEnvironments as SdkOptional<CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments>,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-    created: identical(created, sdkOmittedValue) ? this.created : created as SdkOptional<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String?>,
-    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
-    decrypted: identical(decrypted, sdkOmittedValue) ? this.decrypted : decrypted as SdkOptional<CreateSharedEnvVariableResponseCreatedItemDecrypted>,
-    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double>,
-    deletedBy: identical(deletedBy, sdkOmittedValue) ? this.deletedBy : deletedBy as SdkOptional<String?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    lastEditedByDisplayName: identical(lastEditedByDisplayName, sdkOmittedValue) ? this.lastEditedByDisplayName : lastEditedByDisplayName as SdkOptional<String>,
-    lastEditedByPrincipal: identical(lastEditedByPrincipal, sdkOmittedValue) ? this.lastEditedByPrincipal : lastEditedByPrincipal as SdkOptional<CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal>,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as SdkOptional<String?>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<List<String>>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<List<CreateSharedEnvVariableResponseCreatedItemTargetItem>>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<CreateSharedEnvVariableResponseCreatedItemType>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String?>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-  );
+  CreateSharedEnvVariableResponseCreatedItem _copyWith(
+          {Object? applyToAllCustomEnvironments = sdkOmittedValue,
+          Object? comment = sdkOmittedValue,
+          Object? created = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? customEnvironmentIds = sdkOmittedValue,
+          Object? decrypted = sdkOmittedValue,
+          Object? deletedAt = sdkOmittedValue,
+          Object? deletedBy = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? lastEditedByDisplayName = sdkOmittedValue,
+          Object? lastEditedByPrincipal = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedBy = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      CreateSharedEnvVariableResponseCreatedItem(
+        applyToAllCustomEnvironments: identical(
+                applyToAllCustomEnvironments, sdkOmittedValue)
+            ? this.applyToAllCustomEnvironments
+            : applyToAllCustomEnvironments as SdkOptional<
+                CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments>,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+        created: identical(created, sdkOmittedValue)
+            ? this.created
+            : created as SdkOptional<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as SdkOptional<String?>,
+        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
+            ? this.customEnvironmentIds
+            : customEnvironmentIds as SdkOptional<List<String>>,
+        decrypted: identical(decrypted, sdkOmittedValue)
+            ? this.decrypted
+            : decrypted as SdkOptional<
+                CreateSharedEnvVariableResponseCreatedItemDecrypted>,
+        deletedAt: identical(deletedAt, sdkOmittedValue)
+            ? this.deletedAt
+            : deletedAt as SdkOptional<double>,
+        deletedBy: identical(deletedBy, sdkOmittedValue)
+            ? this.deletedBy
+            : deletedBy as SdkOptional<String?>,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        lastEditedByDisplayName:
+            identical(lastEditedByDisplayName, sdkOmittedValue)
+                ? this.lastEditedByDisplayName
+                : lastEditedByDisplayName as SdkOptional<String>,
+        lastEditedByPrincipal: identical(lastEditedByPrincipal, sdkOmittedValue)
+            ? this.lastEditedByPrincipal
+            : lastEditedByPrincipal as SdkOptional<
+                CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal>,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as SdkOptional<String?>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<List<String>>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<
+                List<CreateSharedEnvVariableResponseCreatedItemTargetItem>>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as SdkOptional<CreateSharedEnvVariableResponseCreatedItemType>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        updatedBy: identical(updatedBy, sdkOmittedValue)
+            ? this.updatedBy
+            : updatedBy as SdkOptional<String?>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+      );
 
-  factory CreateSharedEnvVariableResponseCreatedItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateSharedEnvVariableResponseCreatedItem(
-    applyToAllCustomEnvironments: json['applyToAllCustomEnvironments'] != null ? SdkPresent((json['applyToAllCustomEnvironments'] != null ? CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments.fromJson(json['applyToAllCustomEnvironments'] as bool) : null)!) : const SdkOmitted(),
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-    created: json['created'] != null ? SdkPresent((json['created'] as String?)!) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    createdBy: json.containsKey('createdBy') ? SdkPresent(json['createdBy'] as String?) : const SdkOmitted(),
-    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    decrypted: json['decrypted'] != null ? SdkPresent((json['decrypted'] != null ? CreateSharedEnvVariableResponseCreatedItemDecrypted.fromJson(json['decrypted'] as bool) : null)!) : const SdkOmitted(),
-    deletedAt: json['deletedAt'] != null ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    deletedBy: json.containsKey('deletedBy') ? SdkPresent(json['deletedBy'] as String?) : const SdkOmitted(),
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    lastEditedByDisplayName: json['lastEditedByDisplayName'] != null ? SdkPresent((json['lastEditedByDisplayName'] as String?)!) : const SdkOmitted(),
-    lastEditedByPrincipal: json['lastEditedByPrincipal'] != null ? SdkPresent((json['lastEditedByPrincipal'] != null ? CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal.fromJson(json['lastEditedByPrincipal']) : null)!) : const SdkOmitted(),
-    ownerId: json.containsKey('ownerId') ? SdkPresent(json['ownerId'] as String?) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent(((json['projectId'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent(((json['target'] as List?)?.map((e) => CreateSharedEnvVariableResponseCreatedItemTargetItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? CreateSharedEnvVariableResponseCreatedItemType.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    updatedBy: json.containsKey('updatedBy') ? SdkPresent(json['updatedBy'] as String?) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory CreateSharedEnvVariableResponseCreatedItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateSharedEnvVariableResponseCreatedItem(
+            applyToAllCustomEnvironments: json[
+                        'applyToAllCustomEnvironments'] !=
+                    null
+                ? SdkPresent((json['applyToAllCustomEnvironments'] != null
+                    ? CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments
+                        .fromJson(json['applyToAllCustomEnvironments'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            comment: json['comment'] != null
+                ? SdkPresent((json['comment'] as String?)!)
+                : const SdkOmitted(),
+            created: json['created'] != null
+                ? SdkPresent((json['created'] as String?)!)
+                : const SdkOmitted(),
+            createdAt: json['createdAt'] != null
+                ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            createdBy: json.containsKey('createdBy')
+                ? SdkPresent(json['createdBy'] as String?)
+                : const SdkOmitted(),
+            customEnvironmentIds: json['customEnvironmentIds'] != null
+                ? SdkPresent(((json['customEnvironmentIds'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            decrypted: json['decrypted'] != null
+                ? SdkPresent((json['decrypted'] != null
+                    ? CreateSharedEnvVariableResponseCreatedItemDecrypted
+                        .fromJson(json['decrypted'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            deletedAt: json['deletedAt'] != null
+                ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            deletedBy: json.containsKey('deletedBy')
+                ? SdkPresent(json['deletedBy'] as String?)
+                : const SdkOmitted(),
+            id: json['id'] != null
+                ? SdkPresent((json['id'] as String?)!)
+                : const SdkOmitted(),
+            key: json['key'] != null
+                ? SdkPresent((json['key'] as String?)!)
+                : const SdkOmitted(),
+            lastEditedByDisplayName: json['lastEditedByDisplayName'] != null
+                ? SdkPresent((json['lastEditedByDisplayName'] as String?)!)
+                : const SdkOmitted(),
+            lastEditedByPrincipal: json['lastEditedByPrincipal'] != null
+                ? SdkPresent((json['lastEditedByPrincipal'] != null
+                    ? CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal
+                        .fromJson(json['lastEditedByPrincipal'])
+                    : null)!)
+                : const SdkOmitted(),
+            ownerId: json.containsKey('ownerId')
+                ? SdkPresent(json['ownerId'] as String?)
+                : const SdkOmitted(),
+            projectId: json['projectId'] != null
+                ? SdkPresent(((json['projectId'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            target: json['target'] != null
+                ? SdkPresent(((json['target'] as List?)
+                    ?.map((e) =>
+                        CreateSharedEnvVariableResponseCreatedItemTargetItem
+                            .fromJson(e as String))
+                    .toList())!)
+                : const SdkOmitted(),
+            type_: json['type'] != null
+                ? SdkPresent((json['type'] != null
+                    ? CreateSharedEnvVariableResponseCreatedItemType.fromJson(
+                        json['type'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            updatedAt: json['updatedAt'] != null
+                ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            updatedBy: json.containsKey('updatedBy')
+                ? SdkPresent(json['updatedBy'] as String?)
+                : const SdkOmitted(),
+            value: json['value'] != null
+                ? SdkPresent((json['value'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (applyToAllCustomEnvironments) {
-      SdkPresent<CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments>(value: final value) => {'applyToAllCustomEnvironments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (created) {
-      SdkPresent<String>(value: final value) => {'created': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdBy) {
-      SdkPresent<String?>(value: final value) => {'createdBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentIds) {
-      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (decrypted) {
-      SdkPresent<CreateSharedEnvVariableResponseCreatedItemDecrypted>(value: final value) => {'decrypted': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deletedAt) {
-      SdkPresent<double>(value: final value) => {'deletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deletedBy) {
-      SdkPresent<String?>(value: final value) => {'deletedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastEditedByDisplayName) {
-      SdkPresent<String>(value: final value) => {'lastEditedByDisplayName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastEditedByPrincipal) {
-      SdkPresent<CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal>(value: final value) => {'lastEditedByPrincipal': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ownerId) {
-      SdkPresent<String?>(value: final value) => {'ownerId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<List<String>>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<List<CreateSharedEnvVariableResponseCreatedItemTargetItem>>(value: final value) => {'target': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (type_) {
-      SdkPresent<CreateSharedEnvVariableResponseCreatedItemType>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedBy) {
-      SdkPresent<String?>(value: final value) => {'updatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (applyToAllCustomEnvironments) {
+          SdkPresent<
+                CreateSharedEnvVariableResponseCreatedItemApplyToAllCustomEnvironments>(
+            value: final value
+          ) =>
+            {
+              'applyToAllCustomEnvironments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (created) {
+          SdkPresent<String>(value: final value) => {
+              'created': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdBy) {
+          SdkPresent<String?>(value: final value) => {
+              'createdBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'customEnvironmentIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (decrypted) {
+          SdkPresent<CreateSharedEnvVariableResponseCreatedItemDecrypted>(
+            value: final value
+          ) =>
+            {
+              'decrypted': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deletedAt) {
+          SdkPresent<double>(value: final value) => {
+              'deletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deletedBy) {
+          SdkPresent<String?>(value: final value) => {
+              'deletedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastEditedByDisplayName) {
+          SdkPresent<String>(value: final value) => {
+              'lastEditedByDisplayName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastEditedByPrincipal) {
+          SdkPresent<
+                CreateSharedEnvVariableResponseCreatedItemLastEditedByPrincipal>(
+            value: final value
+          ) =>
+            {
+              'lastEditedByPrincipal': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ownerId) {
+          SdkPresent<String?>(value: final value) => {
+              'ownerId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<List<String>>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<
+                List<CreateSharedEnvVariableResponseCreatedItemTargetItem>>(
+            value: final value
+          ) =>
+            {
+              'target': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (type_) {
+          SdkPresent<CreateSharedEnvVariableResponseCreatedItemType>(
+            value: final value
+          ) =>
+            {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedBy) {
+          SdkPresent<String?>(value: final value) => {
+              'updatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateSharedEnvVariableResponseFailedItemError implements SdkJsonModel {
@@ -198,79 +462,173 @@ class CreateSharedEnvVariableResponseFailedItemError implements SdkJsonModel {
   final SdkOptional<dynamic> target;
   final SdkOptional<dynamic> value;
 
-  const CreateSharedEnvVariableResponseFailedItemError({this.action = const SdkOmitted(), required this.code, this.envVarId = const SdkOmitted(), this.envVarKey = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.key = const SdkOmitted(), this.link = const SdkOmitted(), required this.message, this.project = const SdkOmitted(), this.target = const SdkOmitted(), this.value = const SdkOmitted()});
+  const CreateSharedEnvVariableResponseFailedItemError(
+      {this.action = const SdkOmitted(),
+      required this.code,
+      this.envVarId = const SdkOmitted(),
+      this.envVarKey = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.link = const SdkOmitted(),
+      required this.message,
+      this.project = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      this.value = const SdkOmitted()});
 
-  CreateSharedEnvVariableResponseFailedItemError Function({SdkOptional<String> action, String code, SdkOptional<String> envVarId, SdkOptional<String> envVarKey, SdkOptional<String> gitBranch, SdkOptional<String> key, SdkOptional<String> link, String message, SdkOptional<String> project, SdkOptional<dynamic> target, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  CreateSharedEnvVariableResponseFailedItemError Function(
+      {SdkOptional<String> action,
+      String code,
+      SdkOptional<String> envVarId,
+      SdkOptional<String> envVarKey,
+      SdkOptional<String> gitBranch,
+      SdkOptional<String> key,
+      SdkOptional<String> link,
+      String message,
+      SdkOptional<String> project,
+      SdkOptional<dynamic> target,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  CreateSharedEnvVariableResponseFailedItemError _copyWith({Object? action = sdkOmittedValue, Object? code = sdkOmittedValue, Object? envVarId = sdkOmittedValue, Object? envVarKey = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? key = sdkOmittedValue, Object? link = sdkOmittedValue, Object? message = sdkOmittedValue, Object? project = sdkOmittedValue, Object? target = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateSharedEnvVariableResponseFailedItemError(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<String>,
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    envVarId: identical(envVarId, sdkOmittedValue) ? this.envVarId : envVarId as SdkOptional<String>,
-    envVarKey: identical(envVarKey, sdkOmittedValue) ? this.envVarKey : envVarKey as SdkOptional<String>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<String>,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<String>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  CreateSharedEnvVariableResponseFailedItemError _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? envVarId = sdkOmittedValue,
+          Object? envVarKey = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? link = sdkOmittedValue,
+          Object? message = sdkOmittedValue,
+          Object? project = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      CreateSharedEnvVariableResponseFailedItemError(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<String>,
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        envVarId: identical(envVarId, sdkOmittedValue)
+            ? this.envVarId
+            : envVarId as SdkOptional<String>,
+        envVarKey: identical(envVarKey, sdkOmittedValue)
+            ? this.envVarKey
+            : envVarKey as SdkOptional<String>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        link: identical(link, sdkOmittedValue)
+            ? this.link
+            : link as SdkOptional<String>,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as SdkOptional<String>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<dynamic>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<dynamic>,
+      );
 
-  factory CreateSharedEnvVariableResponseFailedItemError.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateSharedEnvVariableResponseFailedItemError(
-    action: json['action'] != null ? SdkPresent((json['action'] as String?)!) : const SdkOmitted(),
-    code: (json['code'] as String?)!,
-    envVarId: json['envVarId'] != null ? SdkPresent((json['envVarId'] as String?)!) : const SdkOmitted(),
-    envVarKey: json['envVarKey'] != null ? SdkPresent((json['envVarKey'] as String?)!) : const SdkOmitted(),
-    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    link: json['link'] != null ? SdkPresent((json['link'] as String?)!) : const SdkOmitted(),
-    message: (json['message'] as String?)!,
-    project: json['project'] != null ? SdkPresent((json['project'] as String?)!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  ), json);
+  factory CreateSharedEnvVariableResponseFailedItemError.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateSharedEnvVariableResponseFailedItemError(
+            action: json['action'] != null
+                ? SdkPresent((json['action'] as String?)!)
+                : const SdkOmitted(),
+            code: (json['code'] as String?)!,
+            envVarId: json['envVarId'] != null
+                ? SdkPresent((json['envVarId'] as String?)!)
+                : const SdkOmitted(),
+            envVarKey: json['envVarKey'] != null
+                ? SdkPresent((json['envVarKey'] as String?)!)
+                : const SdkOmitted(),
+            gitBranch: json['gitBranch'] != null
+                ? SdkPresent((json['gitBranch'] as String?)!)
+                : const SdkOmitted(),
+            key: json['key'] != null
+                ? SdkPresent((json['key'] as String?)!)
+                : const SdkOmitted(),
+            link: json['link'] != null
+                ? SdkPresent((json['link'] as String?)!)
+                : const SdkOmitted(),
+            message: (json['message'] as String?)!,
+            project: json['project'] != null
+                ? SdkPresent((json['project'] as String?)!)
+                : const SdkOmitted(),
+            target: json['target'] != null
+                ? SdkPresent((json['target'])!)
+                : const SdkOmitted(),
+            value: json['value'] != null
+                ? SdkPresent((json['value'])!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<String>(value: final value) => {'action': value,},
-      _ => const <String, dynamic>{},
-    },
-    'code': code,
-    ...switch (envVarId) {
-      SdkPresent<String>(value: final value) => {'envVarId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (envVarKey) {
-      SdkPresent<String>(value: final value) => {'envVarKey': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (link) {
-      SdkPresent<String>(value: final value) => {'link': value,},
-      _ => const <String, dynamic>{},
-    },
-    'message': message,
-    ...switch (project) {
-      SdkPresent<String>(value: final value) => {'project': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<dynamic>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<String>(value: final value) => {
+              'action': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'code': code,
+        ...switch (envVarId) {
+          SdkPresent<String>(value: final value) => {
+              'envVarId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (envVarKey) {
+          SdkPresent<String>(value: final value) => {
+              'envVarKey': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (link) {
+          SdkPresent<String>(value: final value) => {
+              'link': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'message': message,
+        ...switch (project) {
+          SdkPresent<String>(value: final value) => {
+              'project': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<dynamic>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateSharedEnvVariableResponseFailedItem implements SdkJsonModel {
@@ -280,18 +638,31 @@ class CreateSharedEnvVariableResponseFailedItem implements SdkJsonModel {
 
   const CreateSharedEnvVariableResponseFailedItem({required this.error});
 
-  CreateSharedEnvVariableResponseFailedItem Function({CreateSharedEnvVariableResponseFailedItemError error}) get copyWith => _copyWith;
+  CreateSharedEnvVariableResponseFailedItem Function(
+          {CreateSharedEnvVariableResponseFailedItemError error})
+      get copyWith => _copyWith;
 
-  CreateSharedEnvVariableResponseFailedItem _copyWith({Object? error = sdkOmittedValue}) => CreateSharedEnvVariableResponseFailedItem(
-    error: identical(error, sdkOmittedValue) ? this.error : error as CreateSharedEnvVariableResponseFailedItemError,
-  );
+  CreateSharedEnvVariableResponseFailedItem _copyWith(
+          {Object? error = sdkOmittedValue}) =>
+      CreateSharedEnvVariableResponseFailedItem(
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as CreateSharedEnvVariableResponseFailedItemError,
+      );
 
-  factory CreateSharedEnvVariableResponseFailedItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateSharedEnvVariableResponseFailedItem(
-    error: (json['error'] != null ? CreateSharedEnvVariableResponseFailedItemError.fromJson(json['error'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory CreateSharedEnvVariableResponseFailedItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateSharedEnvVariableResponseFailedItem(
+            error: (json['error'] != null
+                ? CreateSharedEnvVariableResponseFailedItemError.fromJson(
+                    json['error'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'error': error.toJson(),
-  };
+        'error': error.toJson(),
+      };
 }

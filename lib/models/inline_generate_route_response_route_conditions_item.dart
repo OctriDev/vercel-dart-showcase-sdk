@@ -13,40 +13,87 @@ class GenerateRouteResponseRouteConditionsItem implements SdkJsonModel {
   final GenerateRouteResponseRouteConditionsItemOperator operator_;
   final SdkOptional<String> value;
 
-  const GenerateRouteResponseRouteConditionsItem({required this.field, this.key = const SdkOmitted(), required this.missing, required this.operator_, this.value = const SdkOmitted()});
+  const GenerateRouteResponseRouteConditionsItem(
+      {required this.field,
+      this.key = const SdkOmitted(),
+      required this.missing,
+      required this.operator_,
+      this.value = const SdkOmitted()});
 
-  GenerateRouteResponseRouteConditionsItem Function({GenerateRouteResponseRouteConditionsItemField field, SdkOptional<String> key, GenerateRouteResponseRouteConditionsItemMissing missing, GenerateRouteResponseRouteConditionsItemOperator operator_, SdkOptional<String> value}) get copyWith => _copyWith;
+  GenerateRouteResponseRouteConditionsItem Function(
+      {GenerateRouteResponseRouteConditionsItemField field,
+      SdkOptional<String> key,
+      GenerateRouteResponseRouteConditionsItemMissing missing,
+      GenerateRouteResponseRouteConditionsItemOperator operator_,
+      SdkOptional<String> value}) get copyWith => _copyWith;
 
-  GenerateRouteResponseRouteConditionsItem _copyWith({Object? field = sdkOmittedValue, Object? key = sdkOmittedValue, Object? missing = sdkOmittedValue, Object? operator_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GenerateRouteResponseRouteConditionsItem(
-    field: identical(field, sdkOmittedValue) ? this.field : field as GenerateRouteResponseRouteConditionsItemField,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    missing: identical(missing, sdkOmittedValue) ? this.missing : missing as GenerateRouteResponseRouteConditionsItemMissing,
-    operator_: identical(operator_, sdkOmittedValue) ? this.operator_ : operator_ as GenerateRouteResponseRouteConditionsItemOperator,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-  );
+  GenerateRouteResponseRouteConditionsItem _copyWith(
+          {Object? field = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? missing = sdkOmittedValue,
+          Object? operator_ = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GenerateRouteResponseRouteConditionsItem(
+        field: identical(field, sdkOmittedValue)
+            ? this.field
+            : field as GenerateRouteResponseRouteConditionsItemField,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        missing: identical(missing, sdkOmittedValue)
+            ? this.missing
+            : missing as GenerateRouteResponseRouteConditionsItemMissing,
+        operator_: identical(operator_, sdkOmittedValue)
+            ? this.operator_
+            : operator_ as GenerateRouteResponseRouteConditionsItemOperator,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+      );
 
-  factory GenerateRouteResponseRouteConditionsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GenerateRouteResponseRouteConditionsItem(
-    field: (json['field'] != null ? GenerateRouteResponseRouteConditionsItemField.fromJson(json['field'] as String) : null)!,
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    missing: (json['missing'] != null ? GenerateRouteResponseRouteConditionsItemMissing.fromJson(json['missing'] as bool) : null)!,
-    operator_: (json['operator'] != null ? GenerateRouteResponseRouteConditionsItemOperator.fromJson(json['operator'] as String) : null)!,
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory GenerateRouteResponseRouteConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GenerateRouteResponseRouteConditionsItem(
+            field: (json['field'] != null
+                ? GenerateRouteResponseRouteConditionsItemField.fromJson(
+                    json['field'] as String)
+                : null)!,
+            key: json['key'] != null
+                ? SdkPresent((json['key'] as String?)!)
+                : const SdkOmitted(),
+            missing: (json['missing'] != null
+                ? GenerateRouteResponseRouteConditionsItemMissing.fromJson(
+                    json['missing'] as bool)
+                : null)!,
+            operator_: (json['operator'] != null
+                ? GenerateRouteResponseRouteConditionsItemOperator.fromJson(
+                    json['operator'] as String)
+                : null)!,
+            value: json['value'] != null
+                ? SdkPresent((json['value'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'field': field.toJson(),
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    'missing': missing.toJson(),
-    'operator': operator_.toJson(),
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'field': field.toJson(),
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'missing': missing.toJson(),
+        'operator': operator_.toJson(),
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GenerateRouteResponseRoutePathCondition implements SdkJsonModel {
@@ -55,25 +102,40 @@ class GenerateRouteResponseRoutePathCondition implements SdkJsonModel {
   final GenerateRouteResponseRoutePathConditionSyntax syntax;
   final String value;
 
-  const GenerateRouteResponseRoutePathCondition({required this.syntax, required this.value});
+  const GenerateRouteResponseRoutePathCondition(
+      {required this.syntax, required this.value});
 
-  GenerateRouteResponseRoutePathCondition Function({GenerateRouteResponseRoutePathConditionSyntax syntax, String value}) get copyWith => _copyWith;
+  GenerateRouteResponseRoutePathCondition Function(
+      {GenerateRouteResponseRoutePathConditionSyntax syntax,
+      String value}) get copyWith => _copyWith;
 
-  GenerateRouteResponseRoutePathCondition _copyWith({Object? syntax = sdkOmittedValue, Object? value = sdkOmittedValue}) => GenerateRouteResponseRoutePathCondition(
-    syntax: identical(syntax, sdkOmittedValue) ? this.syntax : syntax as GenerateRouteResponseRoutePathConditionSyntax,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  GenerateRouteResponseRoutePathCondition _copyWith(
+          {Object? syntax = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GenerateRouteResponseRoutePathCondition(
+        syntax: identical(syntax, sdkOmittedValue)
+            ? this.syntax
+            : syntax as GenerateRouteResponseRoutePathConditionSyntax,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory GenerateRouteResponseRoutePathCondition.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GenerateRouteResponseRoutePathCondition(
-    syntax: (json['syntax'] != null ? GenerateRouteResponseRoutePathConditionSyntax.fromJson(json['syntax'] as String) : null)!,
-    value: (json['value'] as String?)!,
-  ), json);
+  factory GenerateRouteResponseRoutePathCondition.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GenerateRouteResponseRoutePathCondition(
+            syntax: (json['syntax'] != null
+                ? GenerateRouteResponseRoutePathConditionSyntax.fromJson(
+                    json['syntax'] as String)
+                : null)!,
+            value: (json['value'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'syntax': syntax.toJson(),
-    'value': value,
-  };
+        'syntax': syntax.toJson(),
+        'value': value,
+      };
 }
 
 class GenerateRouteResponseRoute implements SdkJsonModel {
@@ -85,37 +147,83 @@ class GenerateRouteResponseRoute implements SdkJsonModel {
   final String name;
   final GenerateRouteResponseRoutePathCondition pathCondition;
 
-  const GenerateRouteResponseRoute({required this.actions, this.conditions = const SdkOmitted(), required this.description, required this.name, required this.pathCondition});
+  const GenerateRouteResponseRoute(
+      {required this.actions,
+      this.conditions = const SdkOmitted(),
+      required this.description,
+      required this.name,
+      required this.pathCondition});
 
-  GenerateRouteResponseRoute Function({List<GenerateRouteResponseRouteActionsItem> actions, SdkOptional<List<GenerateRouteResponseRouteConditionsItem>> conditions, String description, String name, GenerateRouteResponseRoutePathCondition pathCondition}) get copyWith => _copyWith;
+  GenerateRouteResponseRoute Function(
+      {List<GenerateRouteResponseRouteActionsItem> actions,
+      SdkOptional<List<GenerateRouteResponseRouteConditionsItem>> conditions,
+      String description,
+      String name,
+      GenerateRouteResponseRoutePathCondition
+          pathCondition}) get copyWith => _copyWith;
 
-  GenerateRouteResponseRoute _copyWith({Object? actions = sdkOmittedValue, Object? conditions = sdkOmittedValue, Object? description = sdkOmittedValue, Object? name = sdkOmittedValue, Object? pathCondition = sdkOmittedValue}) => GenerateRouteResponseRoute(
-    actions: identical(actions, sdkOmittedValue) ? this.actions : actions as List<GenerateRouteResponseRouteActionsItem>,
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as SdkOptional<List<GenerateRouteResponseRouteConditionsItem>>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    pathCondition: identical(pathCondition, sdkOmittedValue) ? this.pathCondition : pathCondition as GenerateRouteResponseRoutePathCondition,
-  );
+  GenerateRouteResponseRoute _copyWith(
+          {Object? actions = sdkOmittedValue,
+          Object? conditions = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? pathCondition = sdkOmittedValue}) =>
+      GenerateRouteResponseRoute(
+        actions: identical(actions, sdkOmittedValue)
+            ? this.actions
+            : actions as List<GenerateRouteResponseRouteActionsItem>,
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions
+                as SdkOptional<List<GenerateRouteResponseRouteConditionsItem>>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        pathCondition: identical(pathCondition, sdkOmittedValue)
+            ? this.pathCondition
+            : pathCondition as GenerateRouteResponseRoutePathCondition,
+      );
 
-  factory GenerateRouteResponseRoute.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GenerateRouteResponseRoute(
-    actions: ((json['actions'] as List?)?.map((e) => GenerateRouteResponseRouteActionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    conditions: json['conditions'] != null ? SdkPresent(((json['conditions'] as List?)?.map((e) => GenerateRouteResponseRouteConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    description: (json['description'] as String?)!,
-    name: (json['name'] as String?)!,
-    pathCondition: (json['pathCondition'] != null ? GenerateRouteResponseRoutePathCondition.fromJson(json['pathCondition'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory GenerateRouteResponseRoute.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GenerateRouteResponseRoute(
+            actions: ((json['actions'] as List?)
+                ?.map((e) => GenerateRouteResponseRouteActionsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!,
+            conditions: json['conditions'] != null
+                ? SdkPresent(((json['conditions'] as List?)
+                    ?.map((e) =>
+                        GenerateRouteResponseRouteConditionsItem.fromJson(
+                            e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+            description: (json['description'] as String?)!,
+            name: (json['name'] as String?)!,
+            pathCondition: (json['pathCondition'] != null
+                ? GenerateRouteResponseRoutePathCondition.fromJson(
+                    json['pathCondition'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'actions': actions.map((item) => item.toJson()).toList(),
-    ...switch (conditions) {
-      SdkPresent<List<GenerateRouteResponseRouteConditionsItem>>(value: final value) => {'conditions': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'description': description,
-    'name': name,
-    'pathCondition': pathCondition.toJson(),
-  };
+        'actions': actions.map((item) => item.toJson()).toList(),
+        ...switch (conditions) {
+          SdkPresent<List<GenerateRouteResponseRouteConditionsItem>>(
+            value: final value
+          ) =>
+            {
+              'conditions': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'description': description,
+        'name': name,
+        'pathCondition': pathCondition.toJson(),
+      };
 }
 
 class GenerateRouteResponse implements SdkJsonModel {
@@ -124,103 +232,204 @@ class GenerateRouteResponse implements SdkJsonModel {
   final SdkOptional<String> error;
   final SdkOptional<GenerateRouteResponseRoute> route;
 
-  const GenerateRouteResponse({this.error = const SdkOmitted(), this.route = const SdkOmitted()});
+  const GenerateRouteResponse(
+      {this.error = const SdkOmitted(), this.route = const SdkOmitted()});
 
-  GenerateRouteResponse Function({SdkOptional<String> error, SdkOptional<GenerateRouteResponseRoute> route}) get copyWith => _copyWith;
+  GenerateRouteResponse Function(
+      {SdkOptional<String> error,
+      SdkOptional<GenerateRouteResponseRoute> route}) get copyWith => _copyWith;
 
-  GenerateRouteResponse _copyWith({Object? error = sdkOmittedValue, Object? route = sdkOmittedValue}) => GenerateRouteResponse(
-    error: identical(error, sdkOmittedValue) ? this.error : error as SdkOptional<String>,
-    route: identical(route, sdkOmittedValue) ? this.route : route as SdkOptional<GenerateRouteResponseRoute>,
-  );
+  GenerateRouteResponse _copyWith(
+          {Object? error = sdkOmittedValue, Object? route = sdkOmittedValue}) =>
+      GenerateRouteResponse(
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as SdkOptional<String>,
+        route: identical(route, sdkOmittedValue)
+            ? this.route
+            : route as SdkOptional<GenerateRouteResponseRoute>,
+      );
 
-  factory GenerateRouteResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GenerateRouteResponse(
-    error: json['error'] != null ? SdkPresent((json['error'] as String?)!) : const SdkOmitted(),
-    route: json['route'] != null ? SdkPresent((json['route'] != null ? GenerateRouteResponseRoute.fromJson(json['route'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory GenerateRouteResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GenerateRouteResponse(
+            error: json['error'] != null
+                ? SdkPresent((json['error'] as String?)!)
+                : const SdkOmitted(),
+            route: json['route'] != null
+                ? SdkPresent((json['route'] != null
+                    ? GenerateRouteResponseRoute.fromJson(
+                        json['route'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (error) {
-      SdkPresent<String>(value: final value) => {'error': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (route) {
-      SdkPresent<GenerateRouteResponseRoute>(value: final value) => {'route': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (error) {
+          SdkPresent<String>(value: final value) => {
+              'error': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (route) {
+          SdkPresent<GenerateRouteResponseRoute>(value: final value) => {
+              'route': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// A version of routing rules stored in S3.
 class GetRouteVersionsResponseVersionsItem implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The staging alias for previewing this version.
   final SdkOptional<String> alias;
+
   /// The user who created this version.
   final String createdBy;
+
   /// Unique identifier for the version.
   final String id;
+
   /// Whether this version is currently live in production.
   final SdkOptional<GetRouteVersionsResponseVersionsItemIsLive> isLive;
+
   /// Whether this version is staged and not yet promoted to production.
   final SdkOptional<GetRouteVersionsResponseVersionsItemIsStaging> isStaging;
+
   /// Timestamp of when this version was last modified.
   final double lastModified;
+
   /// The number of routing rules in this version.
   final SdkOptional<double> ruleCount;
+
   /// The S3 key where the routing rules are stored.
   final String s3Key;
 
-  const GetRouteVersionsResponseVersionsItem({this.alias = const SdkOmitted(), required this.createdBy, required this.id, this.isLive = const SdkOmitted(), this.isStaging = const SdkOmitted(), required this.lastModified, this.ruleCount = const SdkOmitted(), required this.s3Key});
+  const GetRouteVersionsResponseVersionsItem(
+      {this.alias = const SdkOmitted(),
+      required this.createdBy,
+      required this.id,
+      this.isLive = const SdkOmitted(),
+      this.isStaging = const SdkOmitted(),
+      required this.lastModified,
+      this.ruleCount = const SdkOmitted(),
+      required this.s3Key});
 
-  GetRouteVersionsResponseVersionsItem Function({SdkOptional<String> alias, String createdBy, String id, SdkOptional<GetRouteVersionsResponseVersionsItemIsLive> isLive, SdkOptional<GetRouteVersionsResponseVersionsItemIsStaging> isStaging, double lastModified, SdkOptional<double> ruleCount, String s3Key}) get copyWith => _copyWith;
+  GetRouteVersionsResponseVersionsItem Function(
+      {SdkOptional<String> alias,
+      String createdBy,
+      String id,
+      SdkOptional<GetRouteVersionsResponseVersionsItemIsLive> isLive,
+      SdkOptional<GetRouteVersionsResponseVersionsItemIsStaging> isStaging,
+      double lastModified,
+      SdkOptional<double> ruleCount,
+      String s3Key}) get copyWith => _copyWith;
 
-  GetRouteVersionsResponseVersionsItem _copyWith({Object? alias = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isLive = sdkOmittedValue, Object? isStaging = sdkOmittedValue, Object? lastModified = sdkOmittedValue, Object? ruleCount = sdkOmittedValue, Object? s3Key = sdkOmittedValue}) => GetRouteVersionsResponseVersionsItem(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isLive: identical(isLive, sdkOmittedValue) ? this.isLive : isLive as SdkOptional<GetRouteVersionsResponseVersionsItemIsLive>,
-    isStaging: identical(isStaging, sdkOmittedValue) ? this.isStaging : isStaging as SdkOptional<GetRouteVersionsResponseVersionsItemIsStaging>,
-    lastModified: identical(lastModified, sdkOmittedValue) ? this.lastModified : lastModified as double,
-    ruleCount: identical(ruleCount, sdkOmittedValue) ? this.ruleCount : ruleCount as SdkOptional<double>,
-    s3Key: identical(s3Key, sdkOmittedValue) ? this.s3Key : s3Key as String,
-  );
+  GetRouteVersionsResponseVersionsItem _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isLive = sdkOmittedValue,
+          Object? isStaging = sdkOmittedValue,
+          Object? lastModified = sdkOmittedValue,
+          Object? ruleCount = sdkOmittedValue,
+          Object? s3Key = sdkOmittedValue}) =>
+      GetRouteVersionsResponseVersionsItem(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isLive: identical(isLive, sdkOmittedValue)
+            ? this.isLive
+            : isLive as SdkOptional<GetRouteVersionsResponseVersionsItemIsLive>,
+        isStaging: identical(isStaging, sdkOmittedValue)
+            ? this.isStaging
+            : isStaging
+                as SdkOptional<GetRouteVersionsResponseVersionsItemIsStaging>,
+        lastModified: identical(lastModified, sdkOmittedValue)
+            ? this.lastModified
+            : lastModified as double,
+        ruleCount: identical(ruleCount, sdkOmittedValue)
+            ? this.ruleCount
+            : ruleCount as SdkOptional<double>,
+        s3Key: identical(s3Key, sdkOmittedValue) ? this.s3Key : s3Key as String,
+      );
 
-  factory GetRouteVersionsResponseVersionsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetRouteVersionsResponseVersionsItem(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    createdBy: (json['createdBy'] as String?)!,
-    id: (json['id'] as String?)!,
-    isLive: json['isLive'] != null ? SdkPresent((json['isLive'] != null ? GetRouteVersionsResponseVersionsItemIsLive.fromJson(json['isLive'] as bool) : null)!) : const SdkOmitted(),
-    isStaging: json['isStaging'] != null ? SdkPresent((json['isStaging'] != null ? GetRouteVersionsResponseVersionsItemIsStaging.fromJson(json['isStaging'] as bool) : null)!) : const SdkOmitted(),
-    lastModified: ((json['lastModified'] as num?)?.toDouble())!,
-    ruleCount: json['ruleCount'] != null ? SdkPresent(((json['ruleCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-    s3Key: (json['s3Key'] as String?)!,
-  ), json);
+  factory GetRouteVersionsResponseVersionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetRouteVersionsResponseVersionsItem(
+            alias: json['alias'] != null
+                ? SdkPresent((json['alias'] as String?)!)
+                : const SdkOmitted(),
+            createdBy: (json['createdBy'] as String?)!,
+            id: (json['id'] as String?)!,
+            isLive: json['isLive'] != null
+                ? SdkPresent((json['isLive'] != null
+                    ? GetRouteVersionsResponseVersionsItemIsLive.fromJson(
+                        json['isLive'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            isStaging: json['isStaging'] != null
+                ? SdkPresent((json['isStaging'] != null
+                    ? GetRouteVersionsResponseVersionsItemIsStaging.fromJson(
+                        json['isStaging'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            lastModified: ((json['lastModified'] as num?)?.toDouble())!,
+            ruleCount: json['ruleCount'] != null
+                ? SdkPresent(((json['ruleCount'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            s3Key: (json['s3Key'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdBy': createdBy,
-    'id': id,
-    ...switch (isLive) {
-      SdkPresent<GetRouteVersionsResponseVersionsItemIsLive>(value: final value) => {'isLive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isStaging) {
-      SdkPresent<GetRouteVersionsResponseVersionsItemIsStaging>(value: final value) => {'isStaging': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'lastModified': lastModified,
-    ...switch (ruleCount) {
-      SdkPresent<double>(value: final value) => {'ruleCount': value,},
-      _ => const <String, dynamic>{},
-    },
-    's3Key': s3Key,
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdBy': createdBy,
+        'id': id,
+        ...switch (isLive) {
+          SdkPresent<GetRouteVersionsResponseVersionsItemIsLive>(
+            value: final value
+          ) =>
+            {
+              'isLive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isStaging) {
+          SdkPresent<GetRouteVersionsResponseVersionsItemIsStaging>(
+            value: final value
+          ) =>
+            {
+              'isStaging': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'lastModified': lastModified,
+        ...switch (ruleCount) {
+          SdkPresent<double>(value: final value) => {
+              'ruleCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        's3Key': s3Key,
+      };
 }
 
 class GetRouteVersionsResponse implements SdkJsonModel {
@@ -230,20 +439,31 @@ class GetRouteVersionsResponse implements SdkJsonModel {
 
   const GetRouteVersionsResponse({required this.versions});
 
-  GetRouteVersionsResponse Function({List<GetRouteVersionsResponseVersionsItem> versions}) get copyWith => _copyWith;
+  GetRouteVersionsResponse Function(
+          {List<GetRouteVersionsResponseVersionsItem> versions})
+      get copyWith => _copyWith;
 
-  GetRouteVersionsResponse _copyWith({Object? versions = sdkOmittedValue}) => GetRouteVersionsResponse(
-    versions: identical(versions, sdkOmittedValue) ? this.versions : versions as List<GetRouteVersionsResponseVersionsItem>,
-  );
+  GetRouteVersionsResponse _copyWith({Object? versions = sdkOmittedValue}) =>
+      GetRouteVersionsResponse(
+        versions: identical(versions, sdkOmittedValue)
+            ? this.versions
+            : versions as List<GetRouteVersionsResponseVersionsItem>,
+      );
 
-  factory GetRouteVersionsResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetRouteVersionsResponse(
-    versions: ((json['versions'] as List?)?.map((e) => GetRouteVersionsResponseVersionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory GetRouteVersionsResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetRouteVersionsResponse(
+            versions: ((json['versions'] as List?)
+                ?.map((e) => GetRouteVersionsResponseVersionsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'versions': versions.map((item) => item.toJson()).toList(),
-  };
+        'versions': versions.map((item) => item.toJson()).toList(),
+      };
 }
 
 class UpdateRouteVersionsRequestBody implements SdkJsonModel {
@@ -252,23 +472,36 @@ class UpdateRouteVersionsRequestBody implements SdkJsonModel {
   final String id;
   final UpdateRouteVersionsRequestBodyAction action;
 
-  const UpdateRouteVersionsRequestBody({required this.id, required this.action});
+  const UpdateRouteVersionsRequestBody(
+      {required this.id, required this.action});
 
-  UpdateRouteVersionsRequestBody Function({String id, UpdateRouteVersionsRequestBodyAction action}) get copyWith => _copyWith;
+  UpdateRouteVersionsRequestBody Function(
+      {String id,
+      UpdateRouteVersionsRequestBodyAction action}) get copyWith => _copyWith;
 
-  UpdateRouteVersionsRequestBody _copyWith({Object? id = sdkOmittedValue, Object? action = sdkOmittedValue}) => UpdateRouteVersionsRequestBody(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateRouteVersionsRequestBodyAction,
-  );
+  UpdateRouteVersionsRequestBody _copyWith(
+          {Object? id = sdkOmittedValue, Object? action = sdkOmittedValue}) =>
+      UpdateRouteVersionsRequestBody(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UpdateRouteVersionsRequestBodyAction,
+      );
 
-  factory UpdateRouteVersionsRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateRouteVersionsRequestBody(
-    id: (json['id'] as String?)!,
-    action: (json['action'] != null ? UpdateRouteVersionsRequestBodyAction.fromJson(json['action'] as String) : null)!,
-  ), json);
+  factory UpdateRouteVersionsRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateRouteVersionsRequestBody(
+            id: (json['id'] as String?)!,
+            action: (json['action'] != null
+                ? UpdateRouteVersionsRequestBodyAction.fromJson(
+                    json['action'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'action': action.toJson(),
-  };
+        'id': id,
+        'action': action.toJson(),
+      };
 }

@@ -23,17 +23,24 @@ Future<List<GitNamespacesResponseItem>> gitNamespaces(ClientConfig config,
           'GET', '/v1/integrations/git-namespaces',
           config: config,
           query: {
-            'host': SdkQueryValue(SdkUtils.unwrapOptional(host), style: 'form', explode: true),
-            'provider': SdkQueryValue(SdkUtils.unwrapOptional(provider), style: 'form', explode: true),
-            'viewerMetadata': SdkQueryValue(SdkUtils.unwrapOptional(viewerMetadata), style: 'form', explode: true)
+            'host': SdkQueryValue(SdkUtils.unwrapOptional(host),
+                style: 'form', explode: true),
+            'provider': SdkQueryValue(SdkUtils.unwrapOptional(provider),
+                style: 'form', explode: true),
+            'viewerMetadata': SdkQueryValue(
+                SdkUtils.unwrapOptional(viewerMetadata),
+                style: 'form',
+                explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'gitNamespaces',
-          fromJsonRaw: (value) => (value as List).map((item) => GitNamespacesResponseItem.fromJson(item as Map<String, dynamic>)).toList(),
+          fromJsonRaw: (value) => (value as List)
+              .map((item) => GitNamespacesResponseItem.fromJson(
+                  item as Map<String, dynamic>))
+              .toList(),
           options: requestOptions))
       .data;
 }
-
 
 /// Searches for Git repositories linked to a namespace for a supported provider. Use `namespaceId` and `provider` to narrow the search, or omit them to let the API infer values from the authenticated user; `query` can filter the repositories. Supply `host` when using a custom Git host.
 ///
@@ -55,13 +62,22 @@ Future<dynamic> searchRepo(ClientConfig config,
   return (await sdkRequest<dynamic>('GET', '/v1/integrations/search-repo',
           config: config,
           query: {
-            'query': SdkQueryValue(SdkUtils.unwrapOptional(query), style: 'form', explode: true),
-            'namespaceId': SdkQueryValue(SdkUtils.unwrapOptional(namespaceId), style: 'form', explode: true),
-            'provider': SdkQueryValue(SdkUtils.unwrapOptional(provider), style: 'form', explode: true),
-            'installationId': SdkQueryValue(SdkUtils.unwrapOptional(installationId), style: 'form', explode: true),
-            'host': SdkQueryValue(SdkUtils.unwrapOptional(host), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'query': SdkQueryValue(SdkUtils.unwrapOptional(query),
+                style: 'form', explode: true),
+            'namespaceId': SdkQueryValue(SdkUtils.unwrapOptional(namespaceId),
+                style: 'form', explode: true),
+            'provider': SdkQueryValue(SdkUtils.unwrapOptional(provider),
+                style: 'form', explode: true),
+            'installationId': SdkQueryValue(
+                SdkUtils.unwrapOptional(installationId),
+                style: 'form',
+                explode: true),
+            'host': SdkQueryValue(SdkUtils.unwrapOptional(host),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'searchRepo',
@@ -69,7 +85,6 @@ Future<dynamic> searchRepo(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Lists billing plans for an integration and product. Use `integrationIdOrSlug` and `productIdOrSlug` to identify them, and use `source` to filter by the source of the request. You can also provide `integrationConfigurationId` or `metadata` to scope the plan lookup.
 ///
@@ -90,19 +105,26 @@ Future<GetBillingPlansResponse> getBillingPlans(ClientConfig config,
           '/v1/integrations/integration/${Uri.encodeComponent(integrationIdOrSlug.toString())}/products/${Uri.encodeComponent(productIdOrSlug.toString())}/plans',
           config: config,
           query: {
-            'integrationConfigurationId': SdkQueryValue(SdkUtils.unwrapOptional(integrationConfigurationId), style: 'form', explode: true),
-            'metadata': SdkQueryValue(SdkUtils.unwrapOptional(metadata), style: 'form', explode: true),
-            'source': SdkQueryValue(SdkUtils.unwrapOptional(source), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'integrationConfigurationId': SdkQueryValue(
+                SdkUtils.unwrapOptional(integrationConfigurationId),
+                style: 'form',
+                explode: true),
+            'metadata': SdkQueryValue(SdkUtils.unwrapOptional(metadata),
+                style: 'form', explode: true),
+            'source': SdkQueryValue(SdkUtils.unwrapOptional(source),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getBillingPlans',
-          fromJsonRaw: (value) => GetBillingPlansResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetBillingPlansResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Connects a provisioned integration resource to a project. Supply `projectId` in the request body to establish the connection, and optionally choose which environments receive environment variables or mark those variables as sensitive. Use this operation for a resource that has already been provisioned through an integration.
 ///
@@ -123,20 +145,22 @@ Future<void> connectIntegrationResourceToProject(ClientConfig config,
           '/v1/integrations/installations/${Uri.encodeComponent(integrationConfigurationId.toString())}/resources/${Uri.encodeComponent(resourceId.toString())}/connections',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'projectId': projectId,
             'envVarEnvironments': SdkUtils.unwrapOptional(envVarEnvironments),
-            'makeEnvVarsSensitive': SdkUtils.unwrapOptional(makeEnvVarsSensitive)
+            'makeEnvVarsSensitive':
+                SdkUtils.unwrapOptional(makeEnvVarsSensitive)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'connectIntegrationResourceToProject',
           options: requestOptions))
       .data;
 }
-
 
 /// Lists integration configurations for the authenticated user or team. Set `view` to `account` or `project` to choose the configuration scope, and use the optional filters to narrow results by installation type, integration, or team. The `project` view excludes configurations generated for the authorization flow.
 ///
@@ -147,7 +171,8 @@ Future<void> connectIntegrationResourceToProject(ClientConfig config,
 /// [slug] The Team slug to perform the request on behalf of.
 Future<dynamic> getConfigurations(ClientConfig config,
     {required GetConfigurationsView view,
-    SdkOptional<GetConfigurationsInstallationType> installationType = const SdkOmitted(),
+    SdkOptional<GetConfigurationsInstallationType> installationType =
+        const SdkOmitted(),
     SdkOptional<String> integrationIdOrSlug = const SdkOmitted(),
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
@@ -156,10 +181,18 @@ Future<dynamic> getConfigurations(ClientConfig config,
           config: config,
           query: {
             'view': SdkQueryValue(view, style: 'form', explode: true),
-            'installationType': SdkQueryValue(SdkUtils.unwrapOptional(installationType), style: 'form', explode: true),
-            'integrationIdOrSlug': SdkQueryValue(SdkUtils.unwrapOptional(integrationIdOrSlug), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'installationType': SdkQueryValue(
+                SdkUtils.unwrapOptional(installationType),
+                style: 'form',
+                explode: true),
+            'integrationIdOrSlug': SdkQueryValue(
+                SdkUtils.unwrapOptional(integrationIdOrSlug),
+                style: 'form',
+                explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConfigurations',
@@ -167,7 +200,6 @@ Future<dynamic> getConfigurations(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves an integration configuration by its identifier. Use `teamId` or `slug` to make the request on behalf of a team, and access is limited to the configuration's owner. The response contains the configuration details.
 ///
@@ -185,8 +217,10 @@ Future<GetConfigurationResponse> getConfiguration(ClientConfig config,
           '/v1/integrations/configuration/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConfiguration',
@@ -194,7 +228,6 @@ Future<GetConfigurationResponse> getConfiguration(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes an integration configuration and all resources associated with it. Use `id` to identify the configuration and `teamId` or `slug` to make the request on behalf of a team. Deletion also removes associated webhooks, log drains, and project environment variables.
 ///
@@ -211,15 +244,16 @@ Future<void> deleteConfiguration(ClientConfig config,
           '/v1/integrations/configuration/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteConfiguration',
           options: requestOptions))
       .data;
 }
-
 
 /// Lists the products available for an integration configuration. Use `id` to select the configuration, and use `teamId` or `slug` when making the request on behalf of a team. Each product includes a `metadataSchema` describing its required and optional metadata fields.
 ///
@@ -228,26 +262,28 @@ Future<void> deleteConfiguration(ClientConfig config,
 /// [id] ID of the integration configuration
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetConfigurationProductsResponse>
-    getConfigurationProducts(ClientConfig config,
-        {required String id,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<GetConfigurationProductsResponse> getConfigurationProducts(
+    ClientConfig config,
+    {required String id,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetConfigurationProductsResponse>('GET',
           '/v1/integrations/configuration/${Uri.encodeComponent(id.toString())}/products',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConfigurationProducts',
-          fromJsonRaw: (value) => GetConfigurationProductsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetConfigurationProductsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates an integration store and handles free or paid billing plans. Supply `name`, `integrationConfigurationId`, and `integrationProductIdOrSlug`; omit `billingPlanId` to discover a free plan or provide one for a paid resource. Use `paymentMethodId` when you need to select a payment method other than the default.
 ///
@@ -271,33 +307,38 @@ Future<GetConfigurationProductsResponse>
 ///   default payment method if not provided.
 /// [prepaymentAmountCents] Amount in cents for prepayment billing plans.
 ///   Required only for prepayment plans with variable amounts.
-Future<CreateIntegrationStoreDirectResponse>
-    createIntegrationStoreDirect(ClientConfig config,
-        {required String name,
-        required String integrationConfigurationId,
-        required String integrationProductIdOrSlug,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<Map<String, dynamic>> metadata = const SdkOmitted(),
-        SdkOptional<String> externalId = const SdkOmitted(),
-        SdkOptional<Map<String, Object?>> protocolSettings = const SdkOmitted(),
-        SdkOptional<CreateIntegrationStoreDirectRequestBodySource> source = const SdkOmitted(),
-        SdkOptional<String> billingPlanId = const SdkOmitted(),
-        SdkOptional<String> paymentMethodId = const SdkOmitted(),
-        SdkOptional<double> prepaymentAmountCents = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CreateIntegrationStoreDirectResponse> createIntegrationStoreDirect(
+    ClientConfig config,
+    {required String name,
+    required String integrationConfigurationId,
+    required String integrationProductIdOrSlug,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<Map<String, dynamic>> metadata = const SdkOmitted(),
+    SdkOptional<String> externalId = const SdkOmitted(),
+    SdkOptional<Map<String, Object?>> protocolSettings = const SdkOmitted(),
+    SdkOptional<CreateIntegrationStoreDirectRequestBodySource> source =
+        const SdkOmitted(),
+    SdkOptional<String> billingPlanId = const SdkOmitted(),
+    SdkOptional<String> paymentMethodId = const SdkOmitted(),
+    SdkOptional<double> prepaymentAmountCents = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 128);
-  sdkValidatePattern('integrationConfigurationId', integrationConfigurationId, '^icfg_[a-zA-Z0-9]+\$');
+  sdkValidatePattern('integrationConfigurationId', integrationConfigurationId,
+      '^icfg_[a-zA-Z0-9]+\$');
   if (prepaymentAmountCents is SdkPresent<double>) {
-    validateRange('prepaymentAmountCents', prepaymentAmountCents.value, min: 50);
+    validateRange('prepaymentAmountCents', prepaymentAmountCents.value,
+        min: 50);
   }
 
   return (await sdkRequest<CreateIntegrationStoreDirectResponse>(
           'POST', '/v1/storage/stores/integration/direct',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -309,11 +350,13 @@ Future<CreateIntegrationStoreDirectResponse>
             'source': SdkUtils.unwrapOptional(source),
             'billingPlanId': SdkUtils.unwrapOptional(billingPlanId),
             'paymentMethodId': SdkUtils.unwrapOptional(paymentMethodId),
-            'prepaymentAmountCents': SdkUtils.unwrapOptional(prepaymentAmountCents)
+            'prepaymentAmountCents':
+                SdkUtils.unwrapOptional(prepaymentAmountCents)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createIntegrationStoreDirect',
-          fromJsonRaw: (value) => CreateIntegrationStoreDirectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateIntegrationStoreDirectResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

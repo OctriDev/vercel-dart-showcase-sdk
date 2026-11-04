@@ -13,34 +13,62 @@ class GetCertByIdResponse implements SdkJsonModel {
   final double expiresAt;
   final String id;
 
-  const GetCertByIdResponse({required this.autoRenew, required this.cns, required this.createdAt, required this.expiresAt, required this.id});
+  const GetCertByIdResponse(
+      {required this.autoRenew,
+      required this.cns,
+      required this.createdAt,
+      required this.expiresAt,
+      required this.id});
 
-  GetCertByIdResponse Function({GetCertByIdResponseAutoRenew autoRenew, List<String> cns, double createdAt, double expiresAt, String id}) get copyWith => _copyWith;
+  GetCertByIdResponse Function(
+      {GetCertByIdResponseAutoRenew autoRenew,
+      List<String> cns,
+      double createdAt,
+      double expiresAt,
+      String id}) get copyWith => _copyWith;
 
-  GetCertByIdResponse _copyWith({Object? autoRenew = sdkOmittedValue, Object? cns = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? id = sdkOmittedValue}) => GetCertByIdResponse(
-    autoRenew: identical(autoRenew, sdkOmittedValue) ? this.autoRenew : autoRenew as GetCertByIdResponseAutoRenew,
-    cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  GetCertByIdResponse _copyWith(
+          {Object? autoRenew = sdkOmittedValue,
+          Object? cns = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      GetCertByIdResponse(
+        autoRenew: identical(autoRenew, sdkOmittedValue)
+            ? this.autoRenew
+            : autoRenew as GetCertByIdResponseAutoRenew,
+        cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory GetCertByIdResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetCertByIdResponse(
-    autoRenew: (json['autoRenew'] != null ? GetCertByIdResponseAutoRenew.fromJson(json['autoRenew'] as bool) : null)!,
-    cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-  ), json);
+  factory GetCertByIdResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetCertByIdResponse(
+            autoRenew: (json['autoRenew'] != null
+                ? GetCertByIdResponseAutoRenew.fromJson(
+                    json['autoRenew'] as bool)
+                : null)!,
+            cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+            id: (json['id'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'autoRenew': autoRenew.toJson(),
-    'cns': cns,
-    'createdAt': createdAt,
-    'expiresAt': expiresAt,
-    'id': id,
-  };
+        'autoRenew': autoRenew.toJson(),
+        'cns': cns,
+        'createdAt': createdAt,
+        'expiresAt': expiresAt,
+        'id': id,
+      };
 }
 
 class GetCertsResponseCertsItem implements SdkJsonModel {
@@ -52,89 +80,149 @@ class GetCertsResponseCertsItem implements SdkJsonModel {
   final double expiresAt;
   final String id;
 
-  const GetCertsResponseCertsItem({required this.autoRenew, required this.cns, required this.createdAt, required this.expiresAt, required this.id});
+  const GetCertsResponseCertsItem(
+      {required this.autoRenew,
+      required this.cns,
+      required this.createdAt,
+      required this.expiresAt,
+      required this.id});
 
-  GetCertsResponseCertsItem Function({GetCertsResponseCertsItemAutoRenew autoRenew, List<String> cns, double createdAt, double expiresAt, String id}) get copyWith => _copyWith;
+  GetCertsResponseCertsItem Function(
+      {GetCertsResponseCertsItemAutoRenew autoRenew,
+      List<String> cns,
+      double createdAt,
+      double expiresAt,
+      String id}) get copyWith => _copyWith;
 
-  GetCertsResponseCertsItem _copyWith({Object? autoRenew = sdkOmittedValue, Object? cns = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? id = sdkOmittedValue}) => GetCertsResponseCertsItem(
-    autoRenew: identical(autoRenew, sdkOmittedValue) ? this.autoRenew : autoRenew as GetCertsResponseCertsItemAutoRenew,
-    cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  GetCertsResponseCertsItem _copyWith(
+          {Object? autoRenew = sdkOmittedValue,
+          Object? cns = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      GetCertsResponseCertsItem(
+        autoRenew: identical(autoRenew, sdkOmittedValue)
+            ? this.autoRenew
+            : autoRenew as GetCertsResponseCertsItemAutoRenew,
+        cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory GetCertsResponseCertsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetCertsResponseCertsItem(
-    autoRenew: (json['autoRenew'] != null ? GetCertsResponseCertsItemAutoRenew.fromJson(json['autoRenew'] as bool) : null)!,
-    cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-  ), json);
+  factory GetCertsResponseCertsItem.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetCertsResponseCertsItem(
+            autoRenew: (json['autoRenew'] != null
+                ? GetCertsResponseCertsItemAutoRenew.fromJson(
+                    json['autoRenew'] as bool)
+                : null)!,
+            cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+            id: (json['id'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'autoRenew': autoRenew.toJson(),
-    'cns': cns,
-    'createdAt': createdAt,
-    'expiresAt': expiresAt,
-    'id': id,
-  };
+        'autoRenew': autoRenew.toJson(),
+        'cns': cns,
+        'createdAt': createdAt,
+        'expiresAt': expiresAt,
+        'id': id,
+      };
 }
 
 class GetCertsResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<GetCertsResponseCertsItem> certs;
+
   /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
   final Pagination pagination;
 
   const GetCertsResponse({required this.certs, required this.pagination});
 
-  GetCertsResponse Function({List<GetCertsResponseCertsItem> certs, Pagination pagination}) get copyWith => _copyWith;
+  GetCertsResponse Function(
+      {List<GetCertsResponseCertsItem> certs,
+      Pagination pagination}) get copyWith => _copyWith;
 
-  GetCertsResponse _copyWith({Object? certs = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => GetCertsResponse(
-    certs: identical(certs, sdkOmittedValue) ? this.certs : certs as List<GetCertsResponseCertsItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Pagination,
-  );
+  GetCertsResponse _copyWith(
+          {Object? certs = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      GetCertsResponse(
+        certs: identical(certs, sdkOmittedValue)
+            ? this.certs
+            : certs as List<GetCertsResponseCertsItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as Pagination,
+      );
 
-  factory GetCertsResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetCertsResponse(
-    certs: ((json['certs'] as List?)?.map((e) => GetCertsResponseCertsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory GetCertsResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetCertsResponse(
+            certs: ((json['certs'] as List?)
+                ?.map((e) => GetCertsResponseCertsItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!,
+            pagination: (json['pagination'] != null
+                ? Pagination.fromJson(
+                    json['pagination'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'certs': certs.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'certs': certs.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 class IssueCertRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The common names the cert should be issued for
   final SdkOptional<List<String>> cns;
 
   const IssueCertRequestBody({this.cns = const SdkOmitted()});
 
-  IssueCertRequestBody Function({SdkOptional<List<String>> cns}) get copyWith => _copyWith;
+  IssueCertRequestBody Function({SdkOptional<List<String>> cns}) get copyWith =>
+      _copyWith;
 
-  IssueCertRequestBody _copyWith({Object? cns = sdkOmittedValue}) => IssueCertRequestBody(
-    cns: identical(cns, sdkOmittedValue) ? this.cns : cns as SdkOptional<List<String>>,
-  );
+  IssueCertRequestBody _copyWith({Object? cns = sdkOmittedValue}) =>
+      IssueCertRequestBody(
+        cns: identical(cns, sdkOmittedValue)
+            ? this.cns
+            : cns as SdkOptional<List<String>>,
+      );
 
-  factory IssueCertRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(IssueCertRequestBody(
-    cns: json['cns'] != null ? SdkPresent(((json['cns'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  ), json);
+  factory IssueCertRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          IssueCertRequestBody(
+            cns: json['cns'] != null
+                ? SdkPresent(
+                    ((json['cns'] as List?)?.map((e) => e as String).toList())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (cns) {
-      SdkPresent<List<String>>(value: final value) => {'cns': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (cns) {
+          SdkPresent<List<String>>(value: final value) => {
+              'cns': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class IssueCertResponse implements SdkJsonModel {
@@ -146,76 +234,129 @@ class IssueCertResponse implements SdkJsonModel {
   final double expiresAt;
   final String id;
 
-  const IssueCertResponse({required this.autoRenew, required this.cns, required this.createdAt, required this.expiresAt, required this.id});
+  const IssueCertResponse(
+      {required this.autoRenew,
+      required this.cns,
+      required this.createdAt,
+      required this.expiresAt,
+      required this.id});
 
-  IssueCertResponse Function({IssueCertResponseAutoRenew autoRenew, List<String> cns, double createdAt, double expiresAt, String id}) get copyWith => _copyWith;
+  IssueCertResponse Function(
+      {IssueCertResponseAutoRenew autoRenew,
+      List<String> cns,
+      double createdAt,
+      double expiresAt,
+      String id}) get copyWith => _copyWith;
 
-  IssueCertResponse _copyWith({Object? autoRenew = sdkOmittedValue, Object? cns = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? id = sdkOmittedValue}) => IssueCertResponse(
-    autoRenew: identical(autoRenew, sdkOmittedValue) ? this.autoRenew : autoRenew as IssueCertResponseAutoRenew,
-    cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  IssueCertResponse _copyWith(
+          {Object? autoRenew = sdkOmittedValue,
+          Object? cns = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      IssueCertResponse(
+        autoRenew: identical(autoRenew, sdkOmittedValue)
+            ? this.autoRenew
+            : autoRenew as IssueCertResponseAutoRenew,
+        cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory IssueCertResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(IssueCertResponse(
-    autoRenew: (json['autoRenew'] != null ? IssueCertResponseAutoRenew.fromJson(json['autoRenew'] as bool) : null)!,
-    cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-  ), json);
+  factory IssueCertResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          IssueCertResponse(
+            autoRenew: (json['autoRenew'] != null
+                ? IssueCertResponseAutoRenew.fromJson(json['autoRenew'] as bool)
+                : null)!,
+            cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+            id: (json['id'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'autoRenew': autoRenew.toJson(),
-    'cns': cns,
-    'createdAt': createdAt,
-    'expiresAt': expiresAt,
-    'id': id,
-  };
+        'autoRenew': autoRenew.toJson(),
+        'cns': cns,
+        'createdAt': createdAt,
+        'expiresAt': expiresAt,
+        'id': id,
+      };
 }
 
 class UploadCertRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The certificate authority
   final String ca;
+
   /// The certificate key
   final String key;
+
   /// The certificate
   final String cert;
+
   /// Skip validation of the certificate
   final SdkOptional<bool> skipValidation;
 
-  const UploadCertRequestBody({required this.ca, required this.key, required this.cert, this.skipValidation = const SdkOmitted()});
+  const UploadCertRequestBody(
+      {required this.ca,
+      required this.key,
+      required this.cert,
+      this.skipValidation = const SdkOmitted()});
 
-  UploadCertRequestBody Function({String ca, String key, String cert, SdkOptional<bool> skipValidation}) get copyWith => _copyWith;
+  UploadCertRequestBody Function(
+      {String ca,
+      String key,
+      String cert,
+      SdkOptional<bool> skipValidation}) get copyWith => _copyWith;
 
-  UploadCertRequestBody _copyWith({Object? ca = sdkOmittedValue, Object? key = sdkOmittedValue, Object? cert = sdkOmittedValue, Object? skipValidation = sdkOmittedValue}) => UploadCertRequestBody(
-    ca: identical(ca, sdkOmittedValue) ? this.ca : ca as String,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    cert: identical(cert, sdkOmittedValue) ? this.cert : cert as String,
-    skipValidation: identical(skipValidation, sdkOmittedValue) ? this.skipValidation : skipValidation as SdkOptional<bool>,
-  );
+  UploadCertRequestBody _copyWith(
+          {Object? ca = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? cert = sdkOmittedValue,
+          Object? skipValidation = sdkOmittedValue}) =>
+      UploadCertRequestBody(
+        ca: identical(ca, sdkOmittedValue) ? this.ca : ca as String,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        cert: identical(cert, sdkOmittedValue) ? this.cert : cert as String,
+        skipValidation: identical(skipValidation, sdkOmittedValue)
+            ? this.skipValidation
+            : skipValidation as SdkOptional<bool>,
+      );
 
-  factory UploadCertRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadCertRequestBody(
-    ca: (json['ca'] as String?)!,
-    key: (json['key'] as String?)!,
-    cert: (json['cert'] as String?)!,
-    skipValidation: json['skipValidation'] != null ? SdkPresent((json['skipValidation'] as bool?)!) : const SdkOmitted(),
-  ), json);
+  factory UploadCertRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadCertRequestBody(
+            ca: (json['ca'] as String?)!,
+            key: (json['key'] as String?)!,
+            cert: (json['cert'] as String?)!,
+            skipValidation: json['skipValidation'] != null
+                ? SdkPresent((json['skipValidation'] as bool?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'ca': ca,
-    'key': key,
-    'cert': cert,
-    ...switch (skipValidation) {
-      SdkPresent<bool>(value: final value) => {'skipValidation': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'ca': ca,
+        'key': key,
+        'cert': cert,
+        ...switch (skipValidation) {
+          SdkPresent<bool>(value: final value) => {
+              'skipValidation': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadCertResponse implements SdkJsonModel {
@@ -227,32 +368,60 @@ class UploadCertResponse implements SdkJsonModel {
   final double expiresAt;
   final String id;
 
-  const UploadCertResponse({required this.autoRenew, required this.cns, required this.createdAt, required this.expiresAt, required this.id});
+  const UploadCertResponse(
+      {required this.autoRenew,
+      required this.cns,
+      required this.createdAt,
+      required this.expiresAt,
+      required this.id});
 
-  UploadCertResponse Function({UploadCertResponseAutoRenew autoRenew, List<String> cns, double createdAt, double expiresAt, String id}) get copyWith => _copyWith;
+  UploadCertResponse Function(
+      {UploadCertResponseAutoRenew autoRenew,
+      List<String> cns,
+      double createdAt,
+      double expiresAt,
+      String id}) get copyWith => _copyWith;
 
-  UploadCertResponse _copyWith({Object? autoRenew = sdkOmittedValue, Object? cns = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? id = sdkOmittedValue}) => UploadCertResponse(
-    autoRenew: identical(autoRenew, sdkOmittedValue) ? this.autoRenew : autoRenew as UploadCertResponseAutoRenew,
-    cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  UploadCertResponse _copyWith(
+          {Object? autoRenew = sdkOmittedValue,
+          Object? cns = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      UploadCertResponse(
+        autoRenew: identical(autoRenew, sdkOmittedValue)
+            ? this.autoRenew
+            : autoRenew as UploadCertResponseAutoRenew,
+        cns: identical(cns, sdkOmittedValue) ? this.cns : cns as List<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory UploadCertResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadCertResponse(
-    autoRenew: (json['autoRenew'] != null ? UploadCertResponseAutoRenew.fromJson(json['autoRenew'] as bool) : null)!,
-    cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-  ), json);
+  factory UploadCertResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadCertResponse(
+            autoRenew: (json['autoRenew'] != null
+                ? UploadCertResponseAutoRenew.fromJson(
+                    json['autoRenew'] as bool)
+                : null)!,
+            cns: ((json['cns'] as List?)?.map((e) => e as String).toList())!,
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+            id: (json['id'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'autoRenew': autoRenew.toJson(),
-    'cns': cns,
-    'createdAt': createdAt,
-    'expiresAt': expiresAt,
-    'id': id,
-  };
+        'autoRenew': autoRenew.toJson(),
+        'cns': cns,
+        'createdAt': createdAt,
+        'expiresAt': expiresAt,
+        'id': id,
+      };
 }

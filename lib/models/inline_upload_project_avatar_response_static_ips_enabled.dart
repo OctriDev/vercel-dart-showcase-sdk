@@ -5,286 +5,377 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UploadProjectAvatarResponseStaticIpsEnabled {
-
   final bool value;
 
   const UploadProjectAvatarResponseStaticIpsEnabled._(this.value);
 
-  factory UploadProjectAvatarResponseStaticIpsEnabled.fromJson(bool value) => UploadProjectAvatarResponseStaticIpsEnabled._(value);
+  factory UploadProjectAvatarResponseStaticIpsEnabled.fromJson(bool value) =>
+      UploadProjectAvatarResponseStaticIpsEnabled._(value);
 
   static const false_ = UploadProjectAvatarResponseStaticIpsEnabled._(false);
   static const true_ = UploadProjectAvatarResponseStaticIpsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseStaticIpsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseStaticIpsEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1 {
-
   final bool value;
 
-  const UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(this.value);
+  const UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(
+      this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1.fromJson(bool value) => UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(value);
+  factory UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(value);
 
-  static const false_ = UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(false);
-  static const true_ = UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(true);
+  static const false_ =
+      UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(false);
+  static const true_ =
+      UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueAliasAssignedVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of matching to perform
 final class UploadProjectAvatarResponseTargetsValueBranchMatcherType {
-
   final String value;
 
   const UploadProjectAvatarResponseTargetsValueBranchMatcherType._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueBranchMatcherType.fromJson(String value) => UploadProjectAvatarResponseTargetsValueBranchMatcherType._(value);
+  factory UploadProjectAvatarResponseTargetsValueBranchMatcherType.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseTargetsValueBranchMatcherType._(value);
 
-  static const endswith = UploadProjectAvatarResponseTargetsValueBranchMatcherType._('endsWith');
-  static const equals = UploadProjectAvatarResponseTargetsValueBranchMatcherType._('equals');
-  static const startswith = UploadProjectAvatarResponseTargetsValueBranchMatcherType._('startsWith');
+  static const endswith =
+      UploadProjectAvatarResponseTargetsValueBranchMatcherType._('endsWith');
+  static const equals =
+      UploadProjectAvatarResponseTargetsValueBranchMatcherType._('equals');
+  static const startswith =
+      UploadProjectAvatarResponseTargetsValueBranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueBranchMatcherType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueBranchMatcherType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueChecksConclusion {
-
   final String value;
 
   const UploadProjectAvatarResponseTargetsValueChecksConclusion._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueChecksConclusion.fromJson(String value) => UploadProjectAvatarResponseTargetsValueChecksConclusion._(value);
+  factory UploadProjectAvatarResponseTargetsValueChecksConclusion.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseTargetsValueChecksConclusion._(value);
 
-  static const canceled = UploadProjectAvatarResponseTargetsValueChecksConclusion._('canceled');
-  static const failed = UploadProjectAvatarResponseTargetsValueChecksConclusion._('failed');
-  static const skipped = UploadProjectAvatarResponseTargetsValueChecksConclusion._('skipped');
-  static const succeeded = UploadProjectAvatarResponseTargetsValueChecksConclusion._('succeeded');
+  static const canceled =
+      UploadProjectAvatarResponseTargetsValueChecksConclusion._('canceled');
+  static const failed =
+      UploadProjectAvatarResponseTargetsValueChecksConclusion._('failed');
+  static const skipped =
+      UploadProjectAvatarResponseTargetsValueChecksConclusion._('skipped');
+  static const succeeded =
+      UploadProjectAvatarResponseTargetsValueChecksConclusion._('succeeded');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueChecksConclusion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueChecksConclusion &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueChecksState {
-
   final String value;
 
   const UploadProjectAvatarResponseTargetsValueChecksState._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueChecksState.fromJson(String value) => UploadProjectAvatarResponseTargetsValueChecksState._(value);
+  factory UploadProjectAvatarResponseTargetsValueChecksState.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseTargetsValueChecksState._(value);
 
-  static const completed = UploadProjectAvatarResponseTargetsValueChecksState._('completed');
-  static const registered = UploadProjectAvatarResponseTargetsValueChecksState._('registered');
-  static const running = UploadProjectAvatarResponseTargetsValueChecksState._('running');
+  static const completed =
+      UploadProjectAvatarResponseTargetsValueChecksState._('completed');
+  static const registered =
+      UploadProjectAvatarResponseTargetsValueChecksState._('registered');
+  static const running =
+      UploadProjectAvatarResponseTargetsValueChecksState._('running');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueChecksState && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueChecksState &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled {
-
   final bool value;
 
-  const UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(this.value);
+  const UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(
+      this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled.fromJson(bool value) => UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(value);
+  factory UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(value);
 
-  static const false_ = UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(false);
-  static const true_ = UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(true);
+  static const false_ =
+      UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(false);
+  static const true_ =
+      UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueConnectBuildsEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueForced {
-
   final bool value;
 
   const UploadProjectAvatarResponseTargetsValueForced._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueForced.fromJson(bool value) => UploadProjectAvatarResponseTargetsValueForced._(value);
+  factory UploadProjectAvatarResponseTargetsValueForced.fromJson(bool value) =>
+      UploadProjectAvatarResponseTargetsValueForced._(value);
 
   static const false_ = UploadProjectAvatarResponseTargetsValueForced._(false);
   static const true_ = UploadProjectAvatarResponseTargetsValueForced._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueForced && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueForced &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValuePlan {
-
   final String value;
 
   const UploadProjectAvatarResponseTargetsValuePlan._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValuePlan.fromJson(String value) => UploadProjectAvatarResponseTargetsValuePlan._(value);
+  factory UploadProjectAvatarResponseTargetsValuePlan.fromJson(String value) =>
+      UploadProjectAvatarResponseTargetsValuePlan._(value);
 
-  static const enterprise = UploadProjectAvatarResponseTargetsValuePlan._('enterprise');
+  static const enterprise =
+      UploadProjectAvatarResponseTargetsValuePlan._('enterprise');
   static const hobby = UploadProjectAvatarResponseTargetsValuePlan._('hobby');
   static const pro = UploadProjectAvatarResponseTargetsValuePlan._('pro');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValuePlan && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValuePlan &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not preview comments are enabled for the deployment
 final class UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled {
-
   final bool value;
 
-  const UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(this.value);
+  const UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(
+      this.value);
 
-  factory UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled.fromJson(bool value) => UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(value);
+  factory UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(value);
 
-  static const false_ = UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(false);
-  static const true_ = UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(true);
+  static const false_ =
+      UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(false);
+  static const true_ =
+      UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValuePreviewCommentsEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValuePrivate {
-
   final bool value;
 
   const UploadProjectAvatarResponseTargetsValuePrivate._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValuePrivate.fromJson(bool value) => UploadProjectAvatarResponseTargetsValuePrivate._(value);
+  factory UploadProjectAvatarResponseTargetsValuePrivate.fromJson(bool value) =>
+      UploadProjectAvatarResponseTargetsValuePrivate._(value);
 
   static const false_ = UploadProjectAvatarResponseTargetsValuePrivate._(false);
   static const true_ = UploadProjectAvatarResponseTargetsValuePrivate._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValuePrivate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValuePrivate &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueReadyState {
-
   final String value;
 
   const UploadProjectAvatarResponseTargetsValueReadyState._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueReadyState.fromJson(String value) => UploadProjectAvatarResponseTargetsValueReadyState._(value);
+  factory UploadProjectAvatarResponseTargetsValueReadyState.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseTargetsValueReadyState._(value);
 
-  static const blocked = UploadProjectAvatarResponseTargetsValueReadyState._('BLOCKED');
-  static const building = UploadProjectAvatarResponseTargetsValueReadyState._('BUILDING');
-  static const canceled = UploadProjectAvatarResponseTargetsValueReadyState._('CANCELED');
-  static const error = UploadProjectAvatarResponseTargetsValueReadyState._('ERROR');
-  static const initializing = UploadProjectAvatarResponseTargetsValueReadyState._('INITIALIZING');
-  static const queued = UploadProjectAvatarResponseTargetsValueReadyState._('QUEUED');
-  static const ready = UploadProjectAvatarResponseTargetsValueReadyState._('READY');
+  static const blocked =
+      UploadProjectAvatarResponseTargetsValueReadyState._('BLOCKED');
+  static const building =
+      UploadProjectAvatarResponseTargetsValueReadyState._('BUILDING');
+  static const canceled =
+      UploadProjectAvatarResponseTargetsValueReadyState._('CANCELED');
+  static const error =
+      UploadProjectAvatarResponseTargetsValueReadyState._('ERROR');
+  static const initializing =
+      UploadProjectAvatarResponseTargetsValueReadyState._('INITIALIZING');
+  static const queued =
+      UploadProjectAvatarResponseTargetsValueReadyState._('QUEUED');
+  static const ready =
+      UploadProjectAvatarResponseTargetsValueReadyState._('READY');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueReadyState && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueReadyState &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueReadySubstate {
-
   final String value;
 
   const UploadProjectAvatarResponseTargetsValueReadySubstate._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueReadySubstate.fromJson(String value) => UploadProjectAvatarResponseTargetsValueReadySubstate._(value);
+  factory UploadProjectAvatarResponseTargetsValueReadySubstate.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseTargetsValueReadySubstate._(value);
 
-  static const promoted = UploadProjectAvatarResponseTargetsValueReadySubstate._('PROMOTED');
-  static const rolling = UploadProjectAvatarResponseTargetsValueReadySubstate._('ROLLING');
-  static const staged = UploadProjectAvatarResponseTargetsValueReadySubstate._('STAGED');
+  static const promoted =
+      UploadProjectAvatarResponseTargetsValueReadySubstate._('PROMOTED');
+  static const rolling =
+      UploadProjectAvatarResponseTargetsValueReadySubstate._('ROLLING');
+  static const staged =
+      UploadProjectAvatarResponseTargetsValueReadySubstate._('STAGED');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueReadySubstate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueReadySubstate &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseTargetsValueType {
-
   final String value;
 
   const UploadProjectAvatarResponseTargetsValueType._(this.value);
 
-  factory UploadProjectAvatarResponseTargetsValueType.fromJson(String value) => UploadProjectAvatarResponseTargetsValueType._(value);
+  factory UploadProjectAvatarResponseTargetsValueType.fromJson(String value) =>
+      UploadProjectAvatarResponseTargetsValueType._(value);
 
-  static const lambdas = UploadProjectAvatarResponseTargetsValueType._('LAMBDAS');
+  static const lambdas =
+      UploadProjectAvatarResponseTargetsValueType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTargetsValueType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTargetsValueType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

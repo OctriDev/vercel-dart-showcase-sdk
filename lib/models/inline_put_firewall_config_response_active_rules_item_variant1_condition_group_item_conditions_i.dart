@@ -5,76 +5,158 @@ part of 'inline.dart';
 
 // Inline operation models
 final class PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType {
-
   final String value;
 
-  const PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._(this.value);
+  const PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._(
+      this.value);
 
-  factory PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType.fromJson(String value) => PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._(value);
+  factory PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType.fromJson(
+          String value) =>
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._(value);
 
-  static const botCategory = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_category');
-  static const botName = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_name');
-  static const botProtection = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_protection');
-  static const botStatus = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_status');
-  static const cookie = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('cookie');
-  static const domainEnvironment = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('domain_environment');
-  static const environment = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('environment');
-  static const geoAsNumber = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_as_number');
-  static const geoCity = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_city');
-  static const geoContinent = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_continent');
-  static const geoCountry = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_country');
-  static const geoCountryRegion = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_country_region');
-  static const header = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('header');
-  static const host = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('host');
-  static const ipAddress = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('ip_address');
-  static const ja3Digest = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('ja3_digest');
-  static const ja4Digest = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('ja4_digest');
-  static const method = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('method');
-  static const path = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('path');
-  static const protocol = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('protocol');
-  static const query = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('query');
-  static const rateLimitApiId = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('rate_limit_api_id');
-  static const rawPath = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('raw_path');
-  static const region = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('region');
-  static const responseCode = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('response_code');
-  static const route = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('route');
-  static const ruleset = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('ruleset');
-  static const scheme = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('scheme');
-  static const serverAction = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('server_action');
-  static const sharedCondition = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('shared_condition');
-  static const targetPath = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('target_path');
-  static const trafficSource = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('traffic_source');
-  static const trustedSource = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('trusted_source');
-  static const userAgent = PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType._('user_agent');
+  static const botCategory =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_category');
+  static const botName =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_name');
+  static const botProtection =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_protection');
+  static const botStatus =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_status');
+  static const cookie =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('cookie');
+  static const domainEnvironment =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('domain_environment');
+  static const environment =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('environment');
+  static const geoAsNumber =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_as_number');
+  static const geoCity =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_city');
+  static const geoContinent =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_continent');
+  static const geoCountry =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_country');
+  static const geoCountryRegion =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_country_region');
+  static const header =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('header');
+  static const host =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('host');
+  static const ipAddress =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ip_address');
+  static const ja3Digest =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ja3_digest');
+  static const ja4Digest =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ja4_digest');
+  static const method =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('method');
+  static const path =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('path');
+  static const protocol =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('protocol');
+  static const query =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('query');
+  static const rateLimitApiId =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('rate_limit_api_id');
+  static const rawPath =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('raw_path');
+  static const region =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('region');
+  static const responseCode =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('response_code');
+  static const route =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('route');
+  static const ruleset =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ruleset');
+  static const scheme =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('scheme');
+  static const serverAction =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('server_action');
+  static const sharedCondition =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('shared_condition');
+  static const targetPath =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('target_path');
+  static const trafficSource =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('traffic_source');
+  static const trustedSource =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('trusted_source');
+  static const userAgent =
+      PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('user_agent');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is PutFirewallConfigResponseActiveRulesItemVariant1ConditionGroupItemConditionsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveRulesItemVariant1Valid {
-
   final bool value;
 
   const PutFirewallConfigResponseActiveRulesItemVariant1Valid._(this.value);
 
-  factory PutFirewallConfigResponseActiveRulesItemVariant1Valid.fromJson(bool value) => PutFirewallConfigResponseActiveRulesItemVariant1Valid._(value);
+  factory PutFirewallConfigResponseActiveRulesItemVariant1Valid.fromJson(
+          bool value) =>
+      PutFirewallConfigResponseActiveRulesItemVariant1Valid._(value);
 
-  static const false_ = PutFirewallConfigResponseActiveRulesItemVariant1Valid._(false);
+  static const false_ =
+      PutFirewallConfigResponseActiveRulesItemVariant1Valid._(false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveRulesItemVariant1Valid && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveRulesItemVariant1Valid &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum RegistrantFieldVariant0Type {
@@ -82,14 +164,17 @@ enum RegistrantFieldVariant0Type {
 
   static RegistrantFieldVariant0Type fromJson(String value) {
     switch (value) {
-      case 'string': return RegistrantFieldVariant0Type.string;
-      default: throw ArgumentError('Unknown RegistrantFieldVariant0Type: $value');
+      case 'string':
+        return RegistrantFieldVariant0Type.string;
+      default:
+        throw ArgumentError('Unknown RegistrantFieldVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RegistrantFieldVariant0Type.string: return 'string';
+      case RegistrantFieldVariant0Type.string:
+        return 'string';
     }
   }
 
@@ -102,14 +187,17 @@ enum RegistrantFieldVariant1Type {
 
   static RegistrantFieldVariant1Type fromJson(String value) {
     switch (value) {
-      case 'enum': return RegistrantFieldVariant1Type.enum_;
-      default: throw ArgumentError('Unknown RegistrantFieldVariant1Type: $value');
+      case 'enum':
+        return RegistrantFieldVariant1Type.enum_;
+      default:
+        throw ArgumentError('Unknown RegistrantFieldVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RegistrantFieldVariant1Type.enum_: return 'enum';
+      case RegistrantFieldVariant1Type.enum_:
+        return 'enum';
     }
   }
 
@@ -122,14 +210,17 @@ enum RegistrantFieldVariant2Type {
 
   static RegistrantFieldVariant2Type fromJson(String value) {
     switch (value) {
-      case 'acknowledgement': return RegistrantFieldVariant2Type.acknowledgement;
-      default: throw ArgumentError('Unknown RegistrantFieldVariant2Type: $value');
+      case 'acknowledgement':
+        return RegistrantFieldVariant2Type.acknowledgement;
+      default:
+        throw ArgumentError('Unknown RegistrantFieldVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RegistrantFieldVariant2Type.acknowledgement: return 'acknowledgement';
+      case RegistrantFieldVariant2Type.acknowledgement:
+        return 'acknowledgement';
     }
   }
 
@@ -142,14 +233,17 @@ enum RegistrantFieldVariant3Type {
 
   static RegistrantFieldVariant3Type fromJson(String value) {
     switch (value) {
-      case 'notice': return RegistrantFieldVariant3Type.notice;
-      default: throw ArgumentError('Unknown RegistrantFieldVariant3Type: $value');
+      case 'notice':
+        return RegistrantFieldVariant3Type.notice;
+      default:
+        throw ArgumentError('Unknown RegistrantFieldVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RegistrantFieldVariant3Type.notice: return 'notice';
+      case RegistrantFieldVariant3Type.notice:
+        return 'notice';
     }
   }
 
@@ -160,16 +254,21 @@ enum RegistrantFieldVariant3Type {
 enum RemoveProjectEnvResponseItemContentHintVariant0Type {
   redisUrl;
 
-  static RemoveProjectEnvResponseItemContentHintVariant0Type fromJson(String value) {
+  static RemoveProjectEnvResponseItemContentHintVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-url': return RemoveProjectEnvResponseItemContentHintVariant0Type.redisUrl;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseItemContentHintVariant0Type: $value');
+      case 'redis-url':
+        return RemoveProjectEnvResponseItemContentHintVariant0Type.redisUrl;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseItemContentHintVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseItemContentHintVariant0Type.redisUrl: return 'redis-url';
+      case RemoveProjectEnvResponseItemContentHintVariant0Type.redisUrl:
+        return 'redis-url';
     }
   }
 
@@ -180,16 +279,22 @@ enum RemoveProjectEnvResponseItemContentHintVariant0Type {
 enum RemoveProjectEnvResponseItemContentHintVariant1Type {
   redisRestApiUrl;
 
-  static RemoveProjectEnvResponseItemContentHintVariant1Type fromJson(String value) {
+  static RemoveProjectEnvResponseItemContentHintVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-url': return RemoveProjectEnvResponseItemContentHintVariant1Type.redisRestApiUrl;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseItemContentHintVariant1Type: $value');
+      case 'redis-rest-api-url':
+        return RemoveProjectEnvResponseItemContentHintVariant1Type
+            .redisRestApiUrl;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseItemContentHintVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseItemContentHintVariant1Type.redisRestApiUrl: return 'redis-rest-api-url';
+      case RemoveProjectEnvResponseItemContentHintVariant1Type.redisRestApiUrl:
+        return 'redis-rest-api-url';
     }
   }
 
@@ -200,16 +305,22 @@ enum RemoveProjectEnvResponseItemContentHintVariant1Type {
 enum RemoveProjectEnvResponseItemContentHintVariant10Type {
   postgresUser;
 
-  static RemoveProjectEnvResponseItemContentHintVariant10Type fromJson(String value) {
+  static RemoveProjectEnvResponseItemContentHintVariant10Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-user': return RemoveProjectEnvResponseItemContentHintVariant10Type.postgresUser;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseItemContentHintVariant10Type: $value');
+      case 'postgres-user':
+        return RemoveProjectEnvResponseItemContentHintVariant10Type
+            .postgresUser;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseItemContentHintVariant10Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseItemContentHintVariant10Type.postgresUser: return 'postgres-user';
+      case RemoveProjectEnvResponseItemContentHintVariant10Type.postgresUser:
+        return 'postgres-user';
     }
   }
 
@@ -220,16 +331,22 @@ enum RemoveProjectEnvResponseItemContentHintVariant10Type {
 enum RemoveProjectEnvResponseItemContentHintVariant11Type {
   postgresHost;
 
-  static RemoveProjectEnvResponseItemContentHintVariant11Type fromJson(String value) {
+  static RemoveProjectEnvResponseItemContentHintVariant11Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-host': return RemoveProjectEnvResponseItemContentHintVariant11Type.postgresHost;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseItemContentHintVariant11Type: $value');
+      case 'postgres-host':
+        return RemoveProjectEnvResponseItemContentHintVariant11Type
+            .postgresHost;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseItemContentHintVariant11Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseItemContentHintVariant11Type.postgresHost: return 'postgres-host';
+      case RemoveProjectEnvResponseItemContentHintVariant11Type.postgresHost:
+        return 'postgres-host';
     }
   }
 
@@ -240,16 +357,23 @@ enum RemoveProjectEnvResponseItemContentHintVariant11Type {
 enum RemoveProjectEnvResponseItemContentHintVariant12Type {
   postgresPassword;
 
-  static RemoveProjectEnvResponseItemContentHintVariant12Type fromJson(String value) {
+  static RemoveProjectEnvResponseItemContentHintVariant12Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-password': return RemoveProjectEnvResponseItemContentHintVariant12Type.postgresPassword;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseItemContentHintVariant12Type: $value');
+      case 'postgres-password':
+        return RemoveProjectEnvResponseItemContentHintVariant12Type
+            .postgresPassword;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseItemContentHintVariant12Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseItemContentHintVariant12Type.postgresPassword: return 'postgres-password';
+      case RemoveProjectEnvResponseItemContentHintVariant12Type
+            .postgresPassword:
+        return 'postgres-password';
     }
   }
 
@@ -260,16 +384,23 @@ enum RemoveProjectEnvResponseItemContentHintVariant12Type {
 enum RemoveProjectEnvResponseItemContentHintVariant13Type {
   postgresDatabase;
 
-  static RemoveProjectEnvResponseItemContentHintVariant13Type fromJson(String value) {
+  static RemoveProjectEnvResponseItemContentHintVariant13Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-database': return RemoveProjectEnvResponseItemContentHintVariant13Type.postgresDatabase;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseItemContentHintVariant13Type: $value');
+      case 'postgres-database':
+        return RemoveProjectEnvResponseItemContentHintVariant13Type
+            .postgresDatabase;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseItemContentHintVariant13Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseItemContentHintVariant13Type.postgresDatabase: return 'postgres-database';
+      case RemoveProjectEnvResponseItemContentHintVariant13Type
+            .postgresDatabase:
+        return 'postgres-database';
     }
   }
 

@@ -7,40 +7,73 @@ part of 'inline.dart';
 class ExchangeSsoTokenRequestBodyVariant1 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The refresh token received from previous token exchange
   final String refreshToken;
+
   /// The integration client id
   final String clientId;
+
   /// The integration client secret
   final String clientSecret;
+
   /// The grant type, when using x-www-form-urlencoded content type
   final ExchangeSsoTokenRequestBodyVariant1GrantType grantType;
 
-  const ExchangeSsoTokenRequestBodyVariant1({required this.refreshToken, required this.clientId, required this.clientSecret, required this.grantType});
+  const ExchangeSsoTokenRequestBodyVariant1(
+      {required this.refreshToken,
+      required this.clientId,
+      required this.clientSecret,
+      required this.grantType});
 
-  ExchangeSsoTokenRequestBodyVariant1 Function({String refreshToken, String clientId, String clientSecret, ExchangeSsoTokenRequestBodyVariant1GrantType grantType}) get copyWith => _copyWith;
+  ExchangeSsoTokenRequestBodyVariant1 Function(
+          {String refreshToken,
+          String clientId,
+          String clientSecret,
+          ExchangeSsoTokenRequestBodyVariant1GrantType grantType})
+      get copyWith => _copyWith;
 
-  ExchangeSsoTokenRequestBodyVariant1 _copyWith({Object? refreshToken = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? clientSecret = sdkOmittedValue, Object? grantType = sdkOmittedValue}) => ExchangeSsoTokenRequestBodyVariant1(
-    refreshToken: identical(refreshToken, sdkOmittedValue) ? this.refreshToken : refreshToken as String,
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
-    clientSecret: identical(clientSecret, sdkOmittedValue) ? this.clientSecret : clientSecret as String,
-    grantType: identical(grantType, sdkOmittedValue) ? this.grantType : grantType as ExchangeSsoTokenRequestBodyVariant1GrantType,
-  );
+  ExchangeSsoTokenRequestBodyVariant1 _copyWith(
+          {Object? refreshToken = sdkOmittedValue,
+          Object? clientId = sdkOmittedValue,
+          Object? clientSecret = sdkOmittedValue,
+          Object? grantType = sdkOmittedValue}) =>
+      ExchangeSsoTokenRequestBodyVariant1(
+        refreshToken: identical(refreshToken, sdkOmittedValue)
+            ? this.refreshToken
+            : refreshToken as String,
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as String,
+        clientSecret: identical(clientSecret, sdkOmittedValue)
+            ? this.clientSecret
+            : clientSecret as String,
+        grantType: identical(grantType, sdkOmittedValue)
+            ? this.grantType
+            : grantType as ExchangeSsoTokenRequestBodyVariant1GrantType,
+      );
 
-  factory ExchangeSsoTokenRequestBodyVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ExchangeSsoTokenRequestBodyVariant1(
-    refreshToken: (json['refresh_token'] as String?)!,
-    clientId: (json['client_id'] as String?)!,
-    clientSecret: (json['client_secret'] as String?)!,
-    grantType: (json['grant_type'] != null ? ExchangeSsoTokenRequestBodyVariant1GrantType.fromJson(json['grant_type'] as String) : null)!,
-  ), json);
+  factory ExchangeSsoTokenRequestBodyVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ExchangeSsoTokenRequestBodyVariant1(
+            refreshToken: (json['refresh_token'] as String?)!,
+            clientId: (json['client_id'] as String?)!,
+            clientSecret: (json['client_secret'] as String?)!,
+            grantType: (json['grant_type'] != null
+                ? ExchangeSsoTokenRequestBodyVariant1GrantType.fromJson(
+                    json['grant_type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'refresh_token': refreshToken,
-    'client_id': clientId,
-    'client_secret': clientSecret,
-    'grant_type': grantType.toJson(),
-  };
+        'refresh_token': refreshToken,
+        'client_id': clientId,
+        'client_secret': clientSecret,
+        'grant_type': grantType.toJson(),
+      };
 }
 
 class CreateAuthTokenRequestBody implements SdkJsonModel {
@@ -48,73 +81,115 @@ class CreateAuthTokenRequestBody implements SdkJsonModel {
   static const String constructionSurface = 'named';
   final String name;
   final SdkOptional<double> expiresAt;
+
   /// The ID of the project to scope this token to
   final SdkOptional<String> projectId;
 
-  const CreateAuthTokenRequestBody({required this.name, this.expiresAt = const SdkOmitted(), this.projectId = const SdkOmitted()});
+  const CreateAuthTokenRequestBody(
+      {required this.name,
+      this.expiresAt = const SdkOmitted(),
+      this.projectId = const SdkOmitted()});
 
-  CreateAuthTokenRequestBody Function({String name, SdkOptional<double> expiresAt, SdkOptional<String> projectId}) get copyWith => _copyWith;
+  CreateAuthTokenRequestBody Function(
+      {String name,
+      SdkOptional<double> expiresAt,
+      SdkOptional<String> projectId}) get copyWith => _copyWith;
 
-  CreateAuthTokenRequestBody _copyWith({Object? name = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => CreateAuthTokenRequestBody(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<double>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-  );
+  CreateAuthTokenRequestBody _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      CreateAuthTokenRequestBody(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as SdkOptional<double>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+      );
 
-  factory CreateAuthTokenRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateAuthTokenRequestBody(
-    name: (json['name'] as String?)!,
-    expiresAt: json['expiresAt'] != null ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory CreateAuthTokenRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateAuthTokenRequestBody(
+            name: (json['name'] as String?)!,
+            expiresAt: json['expiresAt'] != null
+                ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            projectId: json['projectId'] != null
+                ? SdkPresent((json['projectId'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'name': name,
-    ...switch (expiresAt) {
-      SdkPresent<double>(value: final value) => {'expiresAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        ...switch (expiresAt) {
+          SdkPresent<double>(value: final value) => {
+              'expiresAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Successful response.
 class CreateAuthTokenResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The authentication token's actual value. This token is only provided in this response, and can never be retrieved again in the future. Be sure to save it somewhere safe!
   final String bearerToken;
+
   /// Authentication token metadata.
   final AuthToken token;
 
-  const CreateAuthTokenResponse({required this.bearerToken, required this.token});
+  const CreateAuthTokenResponse(
+      {required this.bearerToken, required this.token});
 
-  CreateAuthTokenResponse Function({String bearerToken, AuthToken token}) get copyWith => _copyWith;
+  CreateAuthTokenResponse Function({String bearerToken, AuthToken token})
+      get copyWith => _copyWith;
 
-  CreateAuthTokenResponse _copyWith({Object? bearerToken = sdkOmittedValue, Object? token = sdkOmittedValue}) => CreateAuthTokenResponse(
-    bearerToken: identical(bearerToken, sdkOmittedValue) ? this.bearerToken : bearerToken as String,
-    token: identical(token, sdkOmittedValue) ? this.token : token as AuthToken,
-  );
+  CreateAuthTokenResponse _copyWith(
+          {Object? bearerToken = sdkOmittedValue,
+          Object? token = sdkOmittedValue}) =>
+      CreateAuthTokenResponse(
+        bearerToken: identical(bearerToken, sdkOmittedValue)
+            ? this.bearerToken
+            : bearerToken as String,
+        token:
+            identical(token, sdkOmittedValue) ? this.token : token as AuthToken,
+      );
 
-  factory CreateAuthTokenResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateAuthTokenResponse(
-    bearerToken: (json['bearerToken'] as String?)!,
-    token: (json['token'] != null ? AuthToken.fromJson(json['token'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory CreateAuthTokenResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateAuthTokenResponse(
+            bearerToken: (json['bearerToken'] as String?)!,
+            token: (json['token'] != null
+                ? AuthToken.fromJson(json['token'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'bearerToken': bearerToken,
-    'token': token.toJson(),
-  };
+        'bearerToken': bearerToken,
+        'token': token.toJson(),
+      };
 }
 
 /// Successful response.
 class GetAuthTokenResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Authentication token metadata.
   final AuthToken token;
 
@@ -122,24 +197,32 @@ class GetAuthTokenResponse implements SdkJsonModel {
 
   GetAuthTokenResponse Function({AuthToken token}) get copyWith => _copyWith;
 
-  GetAuthTokenResponse _copyWith({Object? token = sdkOmittedValue}) => GetAuthTokenResponse(
-    token: identical(token, sdkOmittedValue) ? this.token : token as AuthToken,
-  );
+  GetAuthTokenResponse _copyWith({Object? token = sdkOmittedValue}) =>
+      GetAuthTokenResponse(
+        token:
+            identical(token, sdkOmittedValue) ? this.token : token as AuthToken,
+      );
 
-  factory GetAuthTokenResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetAuthTokenResponse(
-    token: (json['token'] != null ? AuthToken.fromJson(json['token'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory GetAuthTokenResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetAuthTokenResponse(
+            token: (json['token'] != null
+                ? AuthToken.fromJson(json['token'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'token': token.toJson(),
-  };
+        'token': token.toJson(),
+      };
 }
 
 /// Authentication token successfully deleted.
 class DeleteAuthTokenResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The unique identifier of the token that was deleted.
   final String tokenId;
 
@@ -147,129 +230,270 @@ class DeleteAuthTokenResponse implements SdkJsonModel {
 
   DeleteAuthTokenResponse Function({String tokenId}) get copyWith => _copyWith;
 
-  DeleteAuthTokenResponse _copyWith({Object? tokenId = sdkOmittedValue}) => DeleteAuthTokenResponse(
-    tokenId: identical(tokenId, sdkOmittedValue) ? this.tokenId : tokenId as String,
-  );
+  DeleteAuthTokenResponse _copyWith({Object? tokenId = sdkOmittedValue}) =>
+      DeleteAuthTokenResponse(
+        tokenId: identical(tokenId, sdkOmittedValue)
+            ? this.tokenId
+            : tokenId as String,
+      );
 
-  factory DeleteAuthTokenResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(DeleteAuthTokenResponse(
-    tokenId: (json['tokenId'] as String?)!,
-  ), json);
+  factory DeleteAuthTokenResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          DeleteAuthTokenResponse(
+            tokenId: (json['tokenId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'tokenId': tokenId,
-  };
+        'tokenId': tokenId,
+      };
 }
 
 /// Optional AI Gateway quota configuration for the API key.
 class CreateApiKeysRequestBodyAiGatewayQuota implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The quota limit amount.
   final double limitAmount;
+
   /// Whether to include BYOK (Bring Your Own Key) usage in the quota.
   final SdkOptional<bool> includeByokInQuota;
+
   /// How often the quota refreshes.
-  final SdkOptional<CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod> refreshPeriod;
+  final SdkOptional<CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod>
+      refreshPeriod;
+
   /// Spend percentages (a subset of [50, 75, 100]) at which to send a spend alert.
-  final SdkOptional<List<CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>> alertThresholds;
+  final SdkOptional<
+          List<CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>>
+      alertThresholds;
 
-  const CreateApiKeysRequestBodyAiGatewayQuota({required this.limitAmount, this.includeByokInQuota = const SdkOmitted(), this.refreshPeriod = const SdkOmitted(), this.alertThresholds = const SdkOmitted()});
+  const CreateApiKeysRequestBodyAiGatewayQuota(
+      {required this.limitAmount,
+      this.includeByokInQuota = const SdkOmitted(),
+      this.refreshPeriod = const SdkOmitted(),
+      this.alertThresholds = const SdkOmitted()});
 
-  CreateApiKeysRequestBodyAiGatewayQuota Function({double limitAmount, SdkOptional<bool> includeByokInQuota, SdkOptional<CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod> refreshPeriod, SdkOptional<List<CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>> alertThresholds}) get copyWith => _copyWith;
+  CreateApiKeysRequestBodyAiGatewayQuota Function(
+      {double limitAmount,
+      SdkOptional<bool> includeByokInQuota,
+      SdkOptional<CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod>
+          refreshPeriod,
+      SdkOptional<
+              List<CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>>
+          alertThresholds}) get copyWith => _copyWith;
 
-  CreateApiKeysRequestBodyAiGatewayQuota _copyWith({Object? limitAmount = sdkOmittedValue, Object? includeByokInQuota = sdkOmittedValue, Object? refreshPeriod = sdkOmittedValue, Object? alertThresholds = sdkOmittedValue}) => CreateApiKeysRequestBodyAiGatewayQuota(
-    limitAmount: identical(limitAmount, sdkOmittedValue) ? this.limitAmount : limitAmount as double,
-    includeByokInQuota: identical(includeByokInQuota, sdkOmittedValue) ? this.includeByokInQuota : includeByokInQuota as SdkOptional<bool>,
-    refreshPeriod: identical(refreshPeriod, sdkOmittedValue) ? this.refreshPeriod : refreshPeriod as SdkOptional<CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod>,
-    alertThresholds: identical(alertThresholds, sdkOmittedValue) ? this.alertThresholds : alertThresholds as SdkOptional<List<CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>>,
-  );
+  CreateApiKeysRequestBodyAiGatewayQuota _copyWith(
+          {Object? limitAmount = sdkOmittedValue,
+          Object? includeByokInQuota = sdkOmittedValue,
+          Object? refreshPeriod = sdkOmittedValue,
+          Object? alertThresholds = sdkOmittedValue}) =>
+      CreateApiKeysRequestBodyAiGatewayQuota(
+        limitAmount: identical(limitAmount, sdkOmittedValue)
+            ? this.limitAmount
+            : limitAmount as double,
+        includeByokInQuota: identical(includeByokInQuota, sdkOmittedValue)
+            ? this.includeByokInQuota
+            : includeByokInQuota as SdkOptional<bool>,
+        refreshPeriod: identical(refreshPeriod, sdkOmittedValue)
+            ? this.refreshPeriod
+            : refreshPeriod as SdkOptional<
+                CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod>,
+        alertThresholds: identical(alertThresholds, sdkOmittedValue)
+            ? this.alertThresholds
+            : alertThresholds as SdkOptional<
+                List<
+                    CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>>,
+      );
 
-  factory CreateApiKeysRequestBodyAiGatewayQuota.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateApiKeysRequestBodyAiGatewayQuota(
-    limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
-    includeByokInQuota: json['includeByokInQuota'] != null ? SdkPresent((json['includeByokInQuota'] as bool?)!) : const SdkOmitted(),
-    refreshPeriod: json['refreshPeriod'] != null ? SdkPresent((json['refreshPeriod'] != null ? CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod.fromJson(json['refreshPeriod'] as String) : null)!) : const SdkOmitted(),
-    alertThresholds: json['alertThresholds'] != null ? SdkPresent(((json['alertThresholds'] as List?)?.map((e) => CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem.fromJson((e as num).toInt())).toList())!) : const SdkOmitted(),
-  ), json);
+  factory CreateApiKeysRequestBodyAiGatewayQuota.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateApiKeysRequestBodyAiGatewayQuota(
+            limitAmount: ((json['limitAmount'] as num?)?.toDouble())!,
+            includeByokInQuota: json['includeByokInQuota'] != null
+                ? SdkPresent((json['includeByokInQuota'] as bool?)!)
+                : const SdkOmitted(),
+            refreshPeriod: json['refreshPeriod'] != null
+                ? SdkPresent((json['refreshPeriod'] != null
+                    ? CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod
+                        .fromJson(json['refreshPeriod'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            alertThresholds: json['alertThresholds'] != null
+                ? SdkPresent(((json['alertThresholds'] as List?)
+                    ?.map((e) =>
+                        CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem
+                            .fromJson((e as num).toInt()))
+                    .toList())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'limitAmount': limitAmount,
-    ...switch (includeByokInQuota) {
-      SdkPresent<bool>(value: final value) => {'includeByokInQuota': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (refreshPeriod) {
-      SdkPresent<CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod>(value: final value) => {'refreshPeriod': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (alertThresholds) {
-      SdkPresent<List<CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>>(value: final value) => {'alertThresholds': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'limitAmount': limitAmount,
+        ...switch (includeByokInQuota) {
+          SdkPresent<bool>(value: final value) => {
+              'includeByokInQuota': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (refreshPeriod) {
+          SdkPresent<CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod>(
+            value: final value
+          ) =>
+            {
+              'refreshPeriod': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (alertThresholds) {
+          SdkPresent<
+                List<
+                    CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem>>(
+            value: final value
+          ) =>
+            {
+              'alertThresholds': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateApiKeysRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The API key's purpose, which restricts how it can be used.
   final String purpose;
+
   /// An optional project to restrict the API key to.
   final SdkOptional<String> projectId;
+
   /// An optional name for the API key.
   final SdkOptional<String> name;
+
   /// The API key's expiration, expressed as a UNIX timestamp in milliseconds.
   final SdkOptional<double> expiresAt;
+
   /// Optional AI Gateway quota configuration for the API key.
   final SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota> aiGatewayQuota;
+
   /// Optional generic metadata for the API key. The accepted shape depends on the key's `purpose` and is validated on creation; for `ai-gateway` keys this accepts `environment`.
   final SdkOptional<Map<String, Object?>> metadata;
 
-  const CreateApiKeysRequestBody({required this.purpose, this.projectId = const SdkOmitted(), this.name = const SdkOmitted(), this.expiresAt = const SdkOmitted(), this.aiGatewayQuota = const SdkOmitted(), this.metadata = const SdkOmitted()});
+  const CreateApiKeysRequestBody(
+      {required this.purpose,
+      this.projectId = const SdkOmitted(),
+      this.name = const SdkOmitted(),
+      this.expiresAt = const SdkOmitted(),
+      this.aiGatewayQuota = const SdkOmitted(),
+      this.metadata = const SdkOmitted()});
 
-  CreateApiKeysRequestBody Function({String purpose, SdkOptional<String> projectId, SdkOptional<String> name, SdkOptional<double> expiresAt, SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota> aiGatewayQuota, SdkOptional<Map<String, Object?>> metadata}) get copyWith => _copyWith;
+  CreateApiKeysRequestBody Function(
+      {String purpose,
+      SdkOptional<String> projectId,
+      SdkOptional<String> name,
+      SdkOptional<double> expiresAt,
+      SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota> aiGatewayQuota,
+      SdkOptional<Map<String, Object?>> metadata}) get copyWith => _copyWith;
 
-  CreateApiKeysRequestBody _copyWith({Object? purpose = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? aiGatewayQuota = sdkOmittedValue, Object? metadata = sdkOmittedValue}) => CreateApiKeysRequestBody(
-    purpose: identical(purpose, sdkOmittedValue) ? this.purpose : purpose as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<double>,
-    aiGatewayQuota: identical(aiGatewayQuota, sdkOmittedValue) ? this.aiGatewayQuota : aiGatewayQuota as SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota>,
-    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<Map<String, Object?>>,
-  );
+  CreateApiKeysRequestBody _copyWith(
+          {Object? purpose = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? aiGatewayQuota = sdkOmittedValue,
+          Object? metadata = sdkOmittedValue}) =>
+      CreateApiKeysRequestBody(
+        purpose: identical(purpose, sdkOmittedValue)
+            ? this.purpose
+            : purpose as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as SdkOptional<double>,
+        aiGatewayQuota: identical(aiGatewayQuota, sdkOmittedValue)
+            ? this.aiGatewayQuota
+            : aiGatewayQuota
+                as SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota>,
+        metadata: identical(metadata, sdkOmittedValue)
+            ? this.metadata
+            : metadata as SdkOptional<Map<String, Object?>>,
+      );
 
-  factory CreateApiKeysRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateApiKeysRequestBody(
-    purpose: (json['purpose'] as String?)!,
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    expiresAt: json['expiresAt'] != null ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    aiGatewayQuota: json['aiGatewayQuota'] != null ? SdkPresent((json['aiGatewayQuota'] != null ? CreateApiKeysRequestBodyAiGatewayQuota.fromJson(json['aiGatewayQuota'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] == null ? null : Map<String, dynamic>.from(json['metadata'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
-  ), json);
+  factory CreateApiKeysRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateApiKeysRequestBody(
+            purpose: (json['purpose'] as String?)!,
+            projectId: json['projectId'] != null
+                ? SdkPresent((json['projectId'] as String?)!)
+                : const SdkOmitted(),
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+            expiresAt: json['expiresAt'] != null
+                ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            aiGatewayQuota: json['aiGatewayQuota'] != null
+                ? SdkPresent((json['aiGatewayQuota'] != null
+                    ? CreateApiKeysRequestBodyAiGatewayQuota.fromJson(
+                        json['aiGatewayQuota'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            metadata: json['metadata'] != null
+                ? SdkPresent((json['metadata'] == null
+                    ? null
+                    : Map<String, dynamic>.from(json['metadata'] as Map)
+                        .map((key, value) => MapEntry(key, value)))!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'purpose': purpose,
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiresAt) {
-      SdkPresent<double>(value: final value) => {'expiresAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (aiGatewayQuota) {
-      SdkPresent<CreateApiKeysRequestBodyAiGatewayQuota>(value: final value) => {'aiGatewayQuota': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (metadata) {
-      SdkPresent<Map<String, Object?>>(value: final value) => {'metadata': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'purpose': purpose,
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiresAt) {
+          SdkPresent<double>(value: final value) => {
+              'expiresAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (aiGatewayQuota) {
+          SdkPresent<CreateApiKeysRequestBodyAiGatewayQuota>(
+            value: final value
+          ) =>
+            {
+              'aiGatewayQuota': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (metadata) {
+          SdkPresent<Map<String, Object?>>(value: final value) => {
+              'metadata': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -4,266 +4,519 @@
 part of 'inline.dart';
 
 // Inline operation models
-class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6 implements SdkJsonModel {
+class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> default_;
   final SdkOptional<String> description;
   final SdkOptional<List<String>> example;
-  final GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items items;
+  final GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items
+      items;
   final SdkOptional<double> maxItems;
   final SdkOptional<double> minItems;
-  final GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type type_;
-  final GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl uiControl;
+  final GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type
+      type_;
+  final GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl
+      uiControl;
   final SdkOptional<dynamic> uiDescription;
   final SdkOptional<dynamic> uiDisabled;
-  final SdkOptional<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue> uiFormattedValue;
+  final SdkOptional<
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue>
+      uiFormattedValue;
   final SdkOptional<dynamic> uiHidden;
   final SdkOptional<String> uiLabel;
-  final List<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem> uiOptions;
-  final SdkOptional<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly> uiPaidOnly;
+  final List<
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem>
+      uiOptions;
+  final SdkOptional<
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly>
+      uiPaidOnly;
   final SdkOptional<String> uiPlaceholder;
   final SdkOptional<dynamic> uiReadOnly;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6({this.default_ = const SdkOmitted(), this.description = const SdkOmitted(), this.example = const SdkOmitted(), required this.items, this.maxItems = const SdkOmitted(), this.minItems = const SdkOmitted(), required this.type_, required this.uiControl, this.uiDescription = const SdkOmitted(), this.uiDisabled = const SdkOmitted(), this.uiFormattedValue = const SdkOmitted(), this.uiHidden = const SdkOmitted(), this.uiLabel = const SdkOmitted(), required this.uiOptions, this.uiPaidOnly = const SdkOmitted(), this.uiPlaceholder = const SdkOmitted(), this.uiReadOnly = const SdkOmitted()});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6(
+      {this.default_ = const SdkOmitted(),
+      this.description = const SdkOmitted(),
+      this.example = const SdkOmitted(),
+      required this.items,
+      this.maxItems = const SdkOmitted(),
+      this.minItems = const SdkOmitted(),
+      required this.type_,
+      required this.uiControl,
+      this.uiDescription = const SdkOmitted(),
+      this.uiDisabled = const SdkOmitted(),
+      this.uiFormattedValue = const SdkOmitted(),
+      this.uiHidden = const SdkOmitted(),
+      this.uiLabel = const SdkOmitted(),
+      required this.uiOptions,
+      this.uiPaidOnly = const SdkOmitted(),
+      this.uiPlaceholder = const SdkOmitted(),
+      this.uiReadOnly = const SdkOmitted()});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6 Function({SdkOptional<List<String>> default_, SdkOptional<String> description, SdkOptional<List<String>> example, GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items items, SdkOptional<double> maxItems, SdkOptional<double> minItems, GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type type_, GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl uiControl, SdkOptional<dynamic> uiDescription, SdkOptional<dynamic> uiDisabled, SdkOptional<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue> uiFormattedValue, SdkOptional<dynamic> uiHidden, SdkOptional<String> uiLabel, List<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem> uiOptions, SdkOptional<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly> uiPaidOnly, SdkOptional<String> uiPlaceholder, SdkOptional<dynamic> uiReadOnly}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6 Function(
+      {SdkOptional<List<String>> default_,
+      SdkOptional<String> description,
+      SdkOptional<List<String>> example,
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items
+          items,
+      SdkOptional<double> maxItems,
+      SdkOptional<double> minItems,
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type
+          type_,
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl
+          uiControl,
+      SdkOptional<dynamic> uiDescription,
+      SdkOptional<dynamic> uiDisabled,
+      SdkOptional<
+              GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue>
+          uiFormattedValue,
+      SdkOptional<dynamic> uiHidden,
+      SdkOptional<String> uiLabel,
+      List<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem>
+          uiOptions,
+      SdkOptional<
+              GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly>
+          uiPaidOnly,
+      SdkOptional<String> uiPlaceholder,
+      SdkOptional<dynamic> uiReadOnly}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6 _copyWith({Object? default_ = sdkOmittedValue, Object? description = sdkOmittedValue, Object? example = sdkOmittedValue, Object? items = sdkOmittedValue, Object? maxItems = sdkOmittedValue, Object? minItems = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? uiControl = sdkOmittedValue, Object? uiDescription = sdkOmittedValue, Object? uiDisabled = sdkOmittedValue, Object? uiFormattedValue = sdkOmittedValue, Object? uiHidden = sdkOmittedValue, Object? uiLabel = sdkOmittedValue, Object? uiOptions = sdkOmittedValue, Object? uiPaidOnly = sdkOmittedValue, Object? uiPlaceholder = sdkOmittedValue, Object? uiReadOnly = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6(
-    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<List<String>>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    example: identical(example, sdkOmittedValue) ? this.example : example as SdkOptional<List<String>>,
-    items: identical(items, sdkOmittedValue) ? this.items : items as GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items,
-    maxItems: identical(maxItems, sdkOmittedValue) ? this.maxItems : maxItems as SdkOptional<double>,
-    minItems: identical(minItems, sdkOmittedValue) ? this.minItems : minItems as SdkOptional<double>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type,
-    uiControl: identical(uiControl, sdkOmittedValue) ? this.uiControl : uiControl as GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl,
-    uiDescription: identical(uiDescription, sdkOmittedValue) ? this.uiDescription : uiDescription as SdkOptional<dynamic>,
-    uiDisabled: identical(uiDisabled, sdkOmittedValue) ? this.uiDisabled : uiDisabled as SdkOptional<dynamic>,
-    uiFormattedValue: identical(uiFormattedValue, sdkOmittedValue) ? this.uiFormattedValue : uiFormattedValue as SdkOptional<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue>,
-    uiHidden: identical(uiHidden, sdkOmittedValue) ? this.uiHidden : uiHidden as SdkOptional<dynamic>,
-    uiLabel: identical(uiLabel, sdkOmittedValue) ? this.uiLabel : uiLabel as SdkOptional<String>,
-    uiOptions: identical(uiOptions, sdkOmittedValue) ? this.uiOptions : uiOptions as List<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem>,
-    uiPaidOnly: identical(uiPaidOnly, sdkOmittedValue) ? this.uiPaidOnly : uiPaidOnly as SdkOptional<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly>,
-    uiPlaceholder: identical(uiPlaceholder, sdkOmittedValue) ? this.uiPlaceholder : uiPlaceholder as SdkOptional<String>,
-    uiReadOnly: identical(uiReadOnly, sdkOmittedValue) ? this.uiReadOnly : uiReadOnly as SdkOptional<dynamic>,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6
+      _copyWith(
+              {Object? default_ = sdkOmittedValue,
+              Object? description = sdkOmittedValue,
+              Object? example = sdkOmittedValue,
+              Object? items = sdkOmittedValue,
+              Object? maxItems = sdkOmittedValue,
+              Object? minItems = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? uiControl = sdkOmittedValue,
+              Object? uiDescription = sdkOmittedValue,
+              Object? uiDisabled = sdkOmittedValue,
+              Object? uiFormattedValue = sdkOmittedValue,
+              Object? uiHidden = sdkOmittedValue,
+              Object? uiLabel = sdkOmittedValue,
+              Object? uiOptions = sdkOmittedValue,
+              Object? uiPaidOnly = sdkOmittedValue,
+              Object? uiPlaceholder = sdkOmittedValue,
+              Object? uiReadOnly = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6(
+            default_: identical(default_, sdkOmittedValue)
+                ? this.default_
+                : default_ as SdkOptional<List<String>>,
+            description: identical(description, sdkOmittedValue)
+                ? this.description
+                : description as SdkOptional<String>,
+            example: identical(example, sdkOmittedValue)
+                ? this.example
+                : example as SdkOptional<List<String>>,
+            items: identical(items, sdkOmittedValue)
+                ? this.items
+                : items
+                    as GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items,
+            maxItems: identical(maxItems, sdkOmittedValue)
+                ? this.maxItems
+                : maxItems as SdkOptional<double>,
+            minItems: identical(minItems, sdkOmittedValue)
+                ? this.minItems
+                : minItems as SdkOptional<double>,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type,
+            uiControl: identical(uiControl, sdkOmittedValue)
+                ? this.uiControl
+                : uiControl
+                    as GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl,
+            uiDescription: identical(uiDescription, sdkOmittedValue)
+                ? this.uiDescription
+                : uiDescription as SdkOptional<dynamic>,
+            uiDisabled: identical(uiDisabled, sdkOmittedValue)
+                ? this.uiDisabled
+                : uiDisabled as SdkOptional<dynamic>,
+            uiFormattedValue: identical(uiFormattedValue, sdkOmittedValue)
+                ? this.uiFormattedValue
+                : uiFormattedValue as SdkOptional<
+                    GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue>,
+            uiHidden: identical(uiHidden, sdkOmittedValue)
+                ? this.uiHidden
+                : uiHidden as SdkOptional<dynamic>,
+            uiLabel: identical(uiLabel, sdkOmittedValue)
+                ? this.uiLabel
+                : uiLabel as SdkOptional<String>,
+            uiOptions: identical(uiOptions, sdkOmittedValue)
+                ? this.uiOptions
+                : uiOptions as List<
+                    GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem>,
+            uiPaidOnly: identical(uiPaidOnly, sdkOmittedValue)
+                ? this.uiPaidOnly
+                : uiPaidOnly as SdkOptional<
+                    GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly>,
+            uiPlaceholder: identical(uiPlaceholder, sdkOmittedValue)
+                ? this.uiPlaceholder
+                : uiPlaceholder as SdkOptional<String>,
+            uiReadOnly: identical(uiReadOnly, sdkOmittedValue)
+                ? this.uiReadOnly
+                : uiReadOnly as SdkOptional<dynamic>,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6(
-    default_: json['default'] != null ? SdkPresent(((json['default'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    example: json['example'] != null ? SdkPresent(((json['example'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    items: (json['items'] != null ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items.fromJson(json['items'] as Map<String, dynamic>) : null)!,
-    maxItems: json['maxItems'] != null ? SdkPresent(((json['maxItems'] as num?)?.toDouble())!) : const SdkOmitted(),
-    minItems: json['minItems'] != null ? SdkPresent(((json['minItems'] as num?)?.toDouble())!) : const SdkOmitted(),
-    type_: (json['type'] != null ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type.fromJson(json['type'] as String) : null)!,
-    uiControl: (json['ui:control'] != null ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl.fromJson(json['ui:control'] as String) : null)!,
-    uiDescription: json['ui:description'] != null ? SdkPresent((json['ui:description'])!) : const SdkOmitted(),
-    uiDisabled: json['ui:disabled'] != null ? SdkPresent((json['ui:disabled'])!) : const SdkOmitted(),
-    uiFormattedValue: json['ui:formatted-value'] != null ? SdkPresent((json['ui:formatted-value'] != null ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue.fromJson(json['ui:formatted-value'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    uiHidden: json['ui:hidden'] != null ? SdkPresent((json['ui:hidden'])!) : const SdkOmitted(),
-    uiLabel: json['ui:label'] != null ? SdkPresent((json['ui:label'] as String?)!) : const SdkOmitted(),
-    uiOptions: ((json['ui:options'] as List?)?.map((e) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    uiPaidOnly: json['ui:paid-only'] != null ? SdkPresent((json['ui:paid-only'] != null ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly.fromJson(json['ui:paid-only'] as bool) : null)!) : const SdkOmitted(),
-    uiPlaceholder: json['ui:placeholder'] != null ? SdkPresent((json['ui:placeholder'] as String?)!) : const SdkOmitted(),
-    uiReadOnly: json['ui:read-only'] != null ? SdkPresent((json['ui:read-only'])!) : const SdkOmitted(),
-  ), json);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6(
+            default_: json['default'] != null
+                ? SdkPresent(((json['default'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            description: json['description'] != null
+                ? SdkPresent((json['description'] as String?)!)
+                : const SdkOmitted(),
+            example: json['example'] != null
+                ? SdkPresent(((json['example'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            items: (json['items'] != null
+                ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Items
+                    .fromJson(json['items'] as Map<String, dynamic>)
+                : null)!,
+            maxItems: json['maxItems'] != null
+                ? SdkPresent(((json['maxItems'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            minItems: json['minItems'] != null
+                ? SdkPresent(((json['minItems'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            type_: (json['type'] != null
+                ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+            uiControl: (json['ui:control'] != null
+                ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiControl
+                    .fromJson(json['ui:control'] as String)
+                : null)!,
+            uiDescription: json['ui:description'] != null
+                ? SdkPresent((json['ui:description'])!)
+                : const SdkOmitted(),
+            uiDisabled: json['ui:disabled'] != null
+                ? SdkPresent((json['ui:disabled'])!)
+                : const SdkOmitted(),
+            uiFormattedValue: json['ui:formatted-value'] != null
+                ? SdkPresent((json['ui:formatted-value'] != null
+                    ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue
+                        .fromJson(
+                            json['ui:formatted-value'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            uiHidden: json['ui:hidden'] != null
+                ? SdkPresent((json['ui:hidden'])!)
+                : const SdkOmitted(),
+            uiLabel: json['ui:label'] != null
+                ? SdkPresent((json['ui:label'] as String?)!)
+                : const SdkOmitted(),
+            uiOptions: ((json['ui:options'] as List?)
+                ?.map((e) =>
+                    GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiOptionsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+            uiPaidOnly: json['ui:paid-only'] != null
+                ? SdkPresent((json['ui:paid-only'] != null
+                    ? GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly
+                        .fromJson(json['ui:paid-only'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            uiPlaceholder: json['ui:placeholder'] != null
+                ? SdkPresent((json['ui:placeholder'] as String?)!)
+                : const SdkOmitted(),
+            uiReadOnly: json['ui:read-only'] != null
+                ? SdkPresent((json['ui:read-only'])!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (default_) {
-      SdkPresent<List<String>>(value: final value) => {'default': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (example) {
-      SdkPresent<List<String>>(value: final value) => {'example': value,},
-      _ => const <String, dynamic>{},
-    },
-    'items': items.toJson(),
-    ...switch (maxItems) {
-      SdkPresent<double>(value: final value) => {'maxItems': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (minItems) {
-      SdkPresent<double>(value: final value) => {'minItems': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    'ui:control': uiControl.toJson(),
-    ...switch (uiDescription) {
-      SdkPresent<dynamic>(value: final value) => {'ui:description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiDisabled) {
-      SdkPresent<dynamic>(value: final value) => {'ui:disabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiFormattedValue) {
-      SdkPresent<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue>(value: final value) => {'ui:formatted-value': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiHidden) {
-      SdkPresent<dynamic>(value: final value) => {'ui:hidden': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiLabel) {
-      SdkPresent<String>(value: final value) => {'ui:label': value,},
-      _ => const <String, dynamic>{},
-    },
-    'ui:options': uiOptions.map((item) => item.toJson()).toList(),
-    ...switch (uiPaidOnly) {
-      SdkPresent<GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly>(value: final value) => {'ui:paid-only': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiPlaceholder) {
-      SdkPresent<String>(value: final value) => {'ui:placeholder': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uiReadOnly) {
-      SdkPresent<dynamic>(value: final value) => {'ui:read-only': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (default_) {
+          SdkPresent<List<String>>(value: final value) => {
+              'default': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (example) {
+          SdkPresent<List<String>>(value: final value) => {
+              'example': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'items': items.toJson(),
+        ...switch (maxItems) {
+          SdkPresent<double>(value: final value) => {
+              'maxItems': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (minItems) {
+          SdkPresent<double>(value: final value) => {
+              'minItems': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        'ui:control': uiControl.toJson(),
+        ...switch (uiDescription) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiDisabled) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:disabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiFormattedValue) {
+          SdkPresent<
+                GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiFormattedValue>(
+            value: final value
+          ) =>
+            {
+              'ui:formatted-value': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiHidden) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:hidden': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiLabel) {
+          SdkPresent<String>(value: final value) => {
+              'ui:label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ui:options': uiOptions.map((item) => item.toJson()).toList(),
+        ...switch (uiPaidOnly) {
+          SdkPresent<
+                GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant6UiPaidOnly>(
+            value: final value
+          ) =>
+            {
+              'ui:paid-only': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiPlaceholder) {
+          SdkPresent<String>(value: final value) => {
+              'ui:placeholder': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uiReadOnly) {
+          SdkPresent<dynamic>(value: final value) => {
+              'ui:read-only': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1 implements SdkJsonModel {
+class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDescriptionVariant1(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0 implements SdkJsonModel {
+class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiDisabledVariant0(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue implements SdkJsonModel {
+class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiFormattedValue(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0 implements SdkJsonModel {
+class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiHiddenVariant0(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0 implements SdkJsonModel {
+class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0DisabledVariant0(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
-class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0 implements SdkJsonModel {
+class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0(
-    expr: (json['expr'] as String?)!,
-  ), json);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant7UiOptionsItemVariant0HiddenVariant0(
+            expr: (json['expr'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }

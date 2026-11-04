@@ -11,28 +11,47 @@ class GetFlagSettingsResponseEntitiesItem implements SdkJsonModel {
   final String kind;
   final String label;
 
-  const GetFlagSettingsResponseEntitiesItem({required this.attributes, required this.kind, required this.label});
+  const GetFlagSettingsResponseEntitiesItem(
+      {required this.attributes, required this.kind, required this.label});
 
-  GetFlagSettingsResponseEntitiesItem Function({List<GetFlagSettingsResponseEntitiesItemAttributesItem> attributes, String kind, String label}) get copyWith => _copyWith;
+  GetFlagSettingsResponseEntitiesItem Function(
+      {List<GetFlagSettingsResponseEntitiesItemAttributesItem> attributes,
+      String kind,
+      String label}) get copyWith => _copyWith;
 
-  GetFlagSettingsResponseEntitiesItem _copyWith({Object? attributes = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? label = sdkOmittedValue}) => GetFlagSettingsResponseEntitiesItem(
-    attributes: identical(attributes, sdkOmittedValue) ? this.attributes : attributes as List<GetFlagSettingsResponseEntitiesItemAttributesItem>,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-  );
+  GetFlagSettingsResponseEntitiesItem _copyWith(
+          {Object? attributes = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? label = sdkOmittedValue}) =>
+      GetFlagSettingsResponseEntitiesItem(
+        attributes: identical(attributes, sdkOmittedValue)
+            ? this.attributes
+            : attributes
+                as List<GetFlagSettingsResponseEntitiesItemAttributesItem>,
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+        label: identical(label, sdkOmittedValue) ? this.label : label as String,
+      );
 
-  factory GetFlagSettingsResponseEntitiesItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetFlagSettingsResponseEntitiesItem(
-    attributes: ((json['attributes'] as List?)?.map((e) => GetFlagSettingsResponseEntitiesItemAttributesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    kind: (json['kind'] as String?)!,
-    label: (json['label'] as String?)!,
-  ), json);
+  factory GetFlagSettingsResponseEntitiesItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetFlagSettingsResponseEntitiesItem(
+            attributes: ((json['attributes'] as List?)
+                ?.map((e) =>
+                    GetFlagSettingsResponseEntitiesItemAttributesItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!,
+            kind: (json['kind'] as String?)!,
+            label: (json['label'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'attributes': attributes.map((item) => item.toJson()).toList(),
-    'kind': kind,
-    'label': label,
-  };
+        'attributes': attributes.map((item) => item.toJson()).toList(),
+        'kind': kind,
+        'label': label,
+      };
 }
 
 class GetFlagSettingsResponseMetadata implements SdkJsonModel {
@@ -45,43 +64,86 @@ class GetFlagSettingsResponseMetadata implements SdkJsonModel {
   final double packSizeInBytes;
   final double segmentCount;
 
-  const GetFlagSettingsResponseMetadata({required this.activeFlagCount, required this.archivedFlagCount, this.configUpdatedAt = const SdkOmitted(), this.packRevision = const SdkOmitted(), required this.packSizeInBytes, required this.segmentCount});
+  const GetFlagSettingsResponseMetadata(
+      {required this.activeFlagCount,
+      required this.archivedFlagCount,
+      this.configUpdatedAt = const SdkOmitted(),
+      this.packRevision = const SdkOmitted(),
+      required this.packSizeInBytes,
+      required this.segmentCount});
 
-  GetFlagSettingsResponseMetadata Function({double activeFlagCount, double archivedFlagCount, SdkOptional<double> configUpdatedAt, SdkOptional<double> packRevision, double packSizeInBytes, double segmentCount}) get copyWith => _copyWith;
+  GetFlagSettingsResponseMetadata Function(
+      {double activeFlagCount,
+      double archivedFlagCount,
+      SdkOptional<double> configUpdatedAt,
+      SdkOptional<double> packRevision,
+      double packSizeInBytes,
+      double segmentCount}) get copyWith => _copyWith;
 
-  GetFlagSettingsResponseMetadata _copyWith({Object? activeFlagCount = sdkOmittedValue, Object? archivedFlagCount = sdkOmittedValue, Object? configUpdatedAt = sdkOmittedValue, Object? packRevision = sdkOmittedValue, Object? packSizeInBytes = sdkOmittedValue, Object? segmentCount = sdkOmittedValue}) => GetFlagSettingsResponseMetadata(
-    activeFlagCount: identical(activeFlagCount, sdkOmittedValue) ? this.activeFlagCount : activeFlagCount as double,
-    archivedFlagCount: identical(archivedFlagCount, sdkOmittedValue) ? this.archivedFlagCount : archivedFlagCount as double,
-    configUpdatedAt: identical(configUpdatedAt, sdkOmittedValue) ? this.configUpdatedAt : configUpdatedAt as SdkOptional<double>,
-    packRevision: identical(packRevision, sdkOmittedValue) ? this.packRevision : packRevision as SdkOptional<double>,
-    packSizeInBytes: identical(packSizeInBytes, sdkOmittedValue) ? this.packSizeInBytes : packSizeInBytes as double,
-    segmentCount: identical(segmentCount, sdkOmittedValue) ? this.segmentCount : segmentCount as double,
-  );
+  GetFlagSettingsResponseMetadata _copyWith(
+          {Object? activeFlagCount = sdkOmittedValue,
+          Object? archivedFlagCount = sdkOmittedValue,
+          Object? configUpdatedAt = sdkOmittedValue,
+          Object? packRevision = sdkOmittedValue,
+          Object? packSizeInBytes = sdkOmittedValue,
+          Object? segmentCount = sdkOmittedValue}) =>
+      GetFlagSettingsResponseMetadata(
+        activeFlagCount: identical(activeFlagCount, sdkOmittedValue)
+            ? this.activeFlagCount
+            : activeFlagCount as double,
+        archivedFlagCount: identical(archivedFlagCount, sdkOmittedValue)
+            ? this.archivedFlagCount
+            : archivedFlagCount as double,
+        configUpdatedAt: identical(configUpdatedAt, sdkOmittedValue)
+            ? this.configUpdatedAt
+            : configUpdatedAt as SdkOptional<double>,
+        packRevision: identical(packRevision, sdkOmittedValue)
+            ? this.packRevision
+            : packRevision as SdkOptional<double>,
+        packSizeInBytes: identical(packSizeInBytes, sdkOmittedValue)
+            ? this.packSizeInBytes
+            : packSizeInBytes as double,
+        segmentCount: identical(segmentCount, sdkOmittedValue)
+            ? this.segmentCount
+            : segmentCount as double,
+      );
 
-  factory GetFlagSettingsResponseMetadata.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetFlagSettingsResponseMetadata(
-    activeFlagCount: ((json['activeFlagCount'] as num?)?.toDouble())!,
-    archivedFlagCount: ((json['archivedFlagCount'] as num?)?.toDouble())!,
-    configUpdatedAt: json['configUpdatedAt'] != null ? SdkPresent(((json['configUpdatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    packRevision: json['packRevision'] != null ? SdkPresent(((json['packRevision'] as num?)?.toDouble())!) : const SdkOmitted(),
-    packSizeInBytes: ((json['packSizeInBytes'] as num?)?.toDouble())!,
-    segmentCount: ((json['segmentCount'] as num?)?.toDouble())!,
-  ), json);
+  factory GetFlagSettingsResponseMetadata.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetFlagSettingsResponseMetadata(
+            activeFlagCount: ((json['activeFlagCount'] as num?)?.toDouble())!,
+            archivedFlagCount:
+                ((json['archivedFlagCount'] as num?)?.toDouble())!,
+            configUpdatedAt: json['configUpdatedAt'] != null
+                ? SdkPresent(((json['configUpdatedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            packRevision: json['packRevision'] != null
+                ? SdkPresent(((json['packRevision'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            packSizeInBytes: ((json['packSizeInBytes'] as num?)?.toDouble())!,
+            segmentCount: ((json['segmentCount'] as num?)?.toDouble())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'activeFlagCount': activeFlagCount,
-    'archivedFlagCount': archivedFlagCount,
-    ...switch (configUpdatedAt) {
-      SdkPresent<double>(value: final value) => {'configUpdatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (packRevision) {
-      SdkPresent<double>(value: final value) => {'packRevision': value,},
-      _ => const <String, dynamic>{},
-    },
-    'packSizeInBytes': packSizeInBytes,
-    'segmentCount': segmentCount,
-  };
+        'activeFlagCount': activeFlagCount,
+        'archivedFlagCount': archivedFlagCount,
+        ...switch (configUpdatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'configUpdatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (packRevision) {
+          SdkPresent<double>(value: final value) => {
+              'packRevision': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'packSizeInBytes': packSizeInBytes,
+        'segmentCount': segmentCount,
+      };
 }
 
 class GetFlagSettingsResponse implements SdkJsonModel {
@@ -97,116 +159,238 @@ class GetFlagSettingsResponse implements SdkJsonModel {
   final GetFlagSettingsResponseTypeName typeName;
   final SdkOptional<double> updatedAt;
 
-  const GetFlagSettingsResponse({this.createdAt = const SdkOmitted(), required this.enabled, required this.entities, required this.environments, required this.metadata, this.ownerId = const SdkOmitted(), required this.projectId, required this.typeName, this.updatedAt = const SdkOmitted()});
+  const GetFlagSettingsResponse(
+      {this.createdAt = const SdkOmitted(),
+      required this.enabled,
+      required this.entities,
+      required this.environments,
+      required this.metadata,
+      this.ownerId = const SdkOmitted(),
+      required this.projectId,
+      required this.typeName,
+      this.updatedAt = const SdkOmitted()});
 
-  GetFlagSettingsResponse Function({SdkOptional<double> createdAt, GetFlagSettingsResponseEnabled enabled, List<GetFlagSettingsResponseEntitiesItem> entities, List<String> environments, GetFlagSettingsResponseMetadata metadata, SdkOptional<String> ownerId, String projectId, GetFlagSettingsResponseTypeName typeName, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  GetFlagSettingsResponse Function(
+      {SdkOptional<double> createdAt,
+      GetFlagSettingsResponseEnabled enabled,
+      List<GetFlagSettingsResponseEntitiesItem> entities,
+      List<String> environments,
+      GetFlagSettingsResponseMetadata metadata,
+      SdkOptional<String> ownerId,
+      String projectId,
+      GetFlagSettingsResponseTypeName typeName,
+      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  GetFlagSettingsResponse _copyWith({Object? createdAt = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? entities = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? typeName = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetFlagSettingsResponse(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as GetFlagSettingsResponseEnabled,
-    entities: identical(entities, sdkOmittedValue) ? this.entities : entities as List<GetFlagSettingsResponseEntitiesItem>,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<String>,
-    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as GetFlagSettingsResponseMetadata,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    typeName: identical(typeName, sdkOmittedValue) ? this.typeName : typeName as GetFlagSettingsResponseTypeName,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-  );
+  GetFlagSettingsResponse _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? entities = sdkOmittedValue,
+          Object? environments = sdkOmittedValue,
+          Object? metadata = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? typeName = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      GetFlagSettingsResponse(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as GetFlagSettingsResponseEnabled,
+        entities: identical(entities, sdkOmittedValue)
+            ? this.entities
+            : entities as List<GetFlagSettingsResponseEntitiesItem>,
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as List<String>,
+        metadata: identical(metadata, sdkOmittedValue)
+            ? this.metadata
+            : metadata as GetFlagSettingsResponseMetadata,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        typeName: identical(typeName, sdkOmittedValue)
+            ? this.typeName
+            : typeName as GetFlagSettingsResponseTypeName,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+      );
 
-  factory GetFlagSettingsResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetFlagSettingsResponse(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? GetFlagSettingsResponseEnabled.fromJson(json['enabled'] as bool) : null)!,
-    entities: ((json['entities'] as List?)?.map((e) => GetFlagSettingsResponseEntitiesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    environments: ((json['environments'] as List?)?.map((e) => e as String).toList())!,
-    metadata: (json['metadata'] != null ? GetFlagSettingsResponseMetadata.fromJson(json['metadata'] as Map<String, dynamic>) : null)!,
-    ownerId: json['ownerId'] != null ? SdkPresent((json['ownerId'] as String?)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    typeName: (json['typeName'] != null ? GetFlagSettingsResponseTypeName.fromJson(json['typeName'] as String) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  ), json);
+  factory GetFlagSettingsResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetFlagSettingsResponse(
+            createdAt: json['createdAt'] != null
+                ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            enabled: (json['enabled'] != null
+                ? GetFlagSettingsResponseEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!,
+            entities: ((json['entities'] as List?)
+                ?.map((e) => GetFlagSettingsResponseEntitiesItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!,
+            environments: ((json['environments'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            metadata: (json['metadata'] != null
+                ? GetFlagSettingsResponseMetadata.fromJson(
+                    json['metadata'] as Map<String, dynamic>)
+                : null)!,
+            ownerId: json['ownerId'] != null
+                ? SdkPresent((json['ownerId'] as String?)!)
+                : const SdkOmitted(),
+            projectId: (json['projectId'] as String?)!,
+            typeName: (json['typeName'] != null
+                ? GetFlagSettingsResponseTypeName.fromJson(
+                    json['typeName'] as String)
+                : null)!,
+            updatedAt: json['updatedAt'] != null
+                ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    'entities': entities.map((item) => item.toJson()).toList(),
-    'environments': environments,
-    'metadata': metadata.toJson(),
-    ...switch (ownerId) {
-      SdkPresent<String>(value: final value) => {'ownerId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'typeName': typeName.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        'entities': entities.map((item) => item.toJson()).toList(),
+        'environments': environments,
+        'metadata': metadata.toJson(),
+        ...switch (ownerId) {
+          SdkPresent<String>(value: final value) => {
+              'ownerId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'typeName': typeName.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem implements SdkJsonModel {
+class UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String label;
   final String value;
 
-  const UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem({required this.label, required this.value});
+  const UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem(
+      {required this.label, required this.value});
 
-  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem Function({String label, String value}) get copyWith => _copyWith;
+  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem Function(
+      {String label, String value}) get copyWith => _copyWith;
 
-  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem _copyWith({Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem(
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem _copyWith(
+          {Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem(
+        label: identical(label, sdkOmittedValue) ? this.label : label as String,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem(
-    label: (json['label'] as String?)!,
-    value: (json['value'] as String?)!,
-  ), json);
+  factory UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem(
+            label: (json['label'] as String?)!,
+            value: (json['value'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'label': label,
-    'value': value,
-  };
+        'label': label,
+        'value': value,
+      };
 }
 
-class UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem implements SdkJsonModel {
+class UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String key;
   final String type_;
-  final SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>> labels;
+  final SdkOptional<
+          List<
+              UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>>
+      labels;
 
-  const UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem({required this.key, required this.type_, this.labels = const SdkOmitted()});
+  const UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem(
+      {required this.key,
+      required this.type_,
+      this.labels = const SdkOmitted()});
 
-  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem Function({String key, String type_, SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>> labels}) get copyWith => _copyWith;
+  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem Function(
+      {String key,
+      String type_,
+      SdkOptional<
+              List<
+                  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>>
+          labels}) get copyWith => _copyWith;
 
-  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? labels = sdkOmittedValue}) => UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-    labels: identical(labels, sdkOmittedValue) ? this.labels : labels as SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>>,
-  );
+  UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? labels = sdkOmittedValue}) =>
+      UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem(
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+        labels: identical(labels, sdkOmittedValue)
+            ? this.labels
+            : labels as SdkOptional<
+                List<
+                    UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>>,
+      );
 
-  factory UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem(
-    key: (json['key'] as String?)!,
-    type_: (json['type'] as String?)!,
-    labels: json['labels'] != null ? SdkPresent(((json['labels'] as List?)?.map((e) => UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  ), json);
+  factory UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem(
+            key: (json['key'] as String?)!,
+            type_: (json['type'] as String?)!,
+            labels: json['labels'] != null
+                ? SdkPresent(((json['labels'] as List?)
+                    ?.map((e) =>
+                        UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem
+                            .fromJson(e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'type': type_,
-    ...switch (labels) {
-      SdkPresent<List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>>(value: final value) => {'labels': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'key': key,
+        'type': type_,
+        ...switch (labels) {
+          SdkPresent<
+                List<
+                    UpdateFlagSettingsRequestBodyEntitiesItemAttributesItemLabelsItem>>(
+            value: final value
+          ) =>
+            {
+              'labels': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateFlagSettingsRequestBodyEntitiesItem implements SdkJsonModel {
@@ -214,30 +398,51 @@ class UpdateFlagSettingsRequestBodyEntitiesItem implements SdkJsonModel {
   static const String constructionSurface = 'named';
   final String kind;
   final String label;
-  final List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem> attributes;
+  final List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem>
+      attributes;
 
-  const UpdateFlagSettingsRequestBodyEntitiesItem({required this.kind, required this.label, required this.attributes});
+  const UpdateFlagSettingsRequestBodyEntitiesItem(
+      {required this.kind, required this.label, required this.attributes});
 
-  UpdateFlagSettingsRequestBodyEntitiesItem Function({String kind, String label, List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem> attributes}) get copyWith => _copyWith;
+  UpdateFlagSettingsRequestBodyEntitiesItem Function(
+      {String kind,
+      String label,
+      List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem>
+          attributes}) get copyWith => _copyWith;
 
-  UpdateFlagSettingsRequestBodyEntitiesItem _copyWith({Object? kind = sdkOmittedValue, Object? label = sdkOmittedValue, Object? attributes = sdkOmittedValue}) => UpdateFlagSettingsRequestBodyEntitiesItem(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-    attributes: identical(attributes, sdkOmittedValue) ? this.attributes : attributes as List<UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem>,
-  );
+  UpdateFlagSettingsRequestBodyEntitiesItem _copyWith(
+          {Object? kind = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? attributes = sdkOmittedValue}) =>
+      UpdateFlagSettingsRequestBodyEntitiesItem(
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+        label: identical(label, sdkOmittedValue) ? this.label : label as String,
+        attributes: identical(attributes, sdkOmittedValue)
+            ? this.attributes
+            : attributes as List<
+                UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem>,
+      );
 
-  factory UpdateFlagSettingsRequestBodyEntitiesItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateFlagSettingsRequestBodyEntitiesItem(
-    kind: (json['kind'] as String?)!,
-    label: (json['label'] as String?)!,
-    attributes: ((json['attributes'] as List?)?.map((e) => UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory UpdateFlagSettingsRequestBodyEntitiesItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateFlagSettingsRequestBodyEntitiesItem(
+            kind: (json['kind'] as String?)!,
+            label: (json['label'] as String?)!,
+            attributes: ((json['attributes'] as List?)
+                ?.map((e) =>
+                    UpdateFlagSettingsRequestBodyEntitiesItemAttributesItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'kind': kind,
-    'label': label,
-    'attributes': attributes.map((item) => item.toJson()).toList(),
-  };
+        'kind': kind,
+        'label': label,
+        'attributes': attributes.map((item) => item.toJson()).toList(),
+      };
 }
 
 class UpdateFlagSettingsRequestBody implements SdkJsonModel {
@@ -245,38 +450,80 @@ class UpdateFlagSettingsRequestBody implements SdkJsonModel {
   static const String constructionSurface = 'named';
   final SdkOptional<bool> enabled;
   final SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>> entities;
+
   /// The environments to sync
   final SdkOptional<List<String>> environments;
 
-  const UpdateFlagSettingsRequestBody({this.enabled = const SdkOmitted(), this.entities = const SdkOmitted(), this.environments = const SdkOmitted()});
+  const UpdateFlagSettingsRequestBody(
+      {this.enabled = const SdkOmitted(),
+      this.entities = const SdkOmitted(),
+      this.environments = const SdkOmitted()});
 
-  UpdateFlagSettingsRequestBody Function({SdkOptional<bool> enabled, SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>> entities, SdkOptional<List<String>> environments}) get copyWith => _copyWith;
+  UpdateFlagSettingsRequestBody Function(
+      {SdkOptional<bool> enabled,
+      SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>> entities,
+      SdkOptional<List<String>> environments}) get copyWith => _copyWith;
 
-  UpdateFlagSettingsRequestBody _copyWith({Object? enabled = sdkOmittedValue, Object? entities = sdkOmittedValue, Object? environments = sdkOmittedValue}) => UpdateFlagSettingsRequestBody(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<bool>,
-    entities: identical(entities, sdkOmittedValue) ? this.entities : entities as SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>>,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as SdkOptional<List<String>>,
-  );
+  UpdateFlagSettingsRequestBody _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? entities = sdkOmittedValue,
+          Object? environments = sdkOmittedValue}) =>
+      UpdateFlagSettingsRequestBody(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<bool>,
+        entities: identical(entities, sdkOmittedValue)
+            ? this.entities
+            : entities
+                as SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>>,
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as SdkOptional<List<String>>,
+      );
 
-  factory UpdateFlagSettingsRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UpdateFlagSettingsRequestBody(
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] as bool?)!) : const SdkOmitted(),
-    entities: json['entities'] != null ? SdkPresent(((json['entities'] as List?)?.map((e) => UpdateFlagSettingsRequestBodyEntitiesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    environments: json['environments'] != null ? SdkPresent(((json['environments'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  ), json);
+  factory UpdateFlagSettingsRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UpdateFlagSettingsRequestBody(
+            enabled: json['enabled'] != null
+                ? SdkPresent((json['enabled'] as bool?)!)
+                : const SdkOmitted(),
+            entities: json['entities'] != null
+                ? SdkPresent(((json['entities'] as List?)
+                    ?.map((e) =>
+                        UpdateFlagSettingsRequestBodyEntitiesItem.fromJson(
+                            e as Map<String, dynamic>))
+                    .toList())!)
+                : const SdkOmitted(),
+            environments: json['environments'] != null
+                ? SdkPresent(((json['environments'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (enabled) {
-      SdkPresent<bool>(value: final value) => {'enabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (entities) {
-      SdkPresent<List<UpdateFlagSettingsRequestBodyEntitiesItem>>(value: final value) => {'entities': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (environments) {
-      SdkPresent<List<String>>(value: final value) => {'environments': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enabled) {
+          SdkPresent<bool>(value: final value) => {
+              'enabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (entities) {
+          SdkPresent<List<UpdateFlagSettingsRequestBodyEntitiesItem>>(
+            value: final value
+          ) =>
+            {
+              'entities': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (environments) {
+          SdkPresent<List<String>>(value: final value) => {
+              'environments': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -10,275 +10,488 @@ class ListVercelCiTaskAnalysisTasksResponse implements SdkJsonModel {
   final List<ListVercelCiTaskAnalysisTasksResponseTasksItem> tasks;
   final ListVercelCiTaskAnalysisTasksResponsePagination pagination;
 
-  const ListVercelCiTaskAnalysisTasksResponse({required this.tasks, required this.pagination});
+  const ListVercelCiTaskAnalysisTasksResponse(
+      {required this.tasks, required this.pagination});
 
-  ListVercelCiTaskAnalysisTasksResponse Function({List<ListVercelCiTaskAnalysisTasksResponseTasksItem> tasks, ListVercelCiTaskAnalysisTasksResponsePagination pagination}) get copyWith => _copyWith;
+  ListVercelCiTaskAnalysisTasksResponse Function(
+          {List<ListVercelCiTaskAnalysisTasksResponseTasksItem> tasks,
+          ListVercelCiTaskAnalysisTasksResponsePagination pagination})
+      get copyWith => _copyWith;
 
-  ListVercelCiTaskAnalysisTasksResponse _copyWith({Object? tasks = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListVercelCiTaskAnalysisTasksResponse(
-    tasks: identical(tasks, sdkOmittedValue) ? this.tasks : tasks as List<ListVercelCiTaskAnalysisTasksResponseTasksItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListVercelCiTaskAnalysisTasksResponsePagination,
-  );
+  ListVercelCiTaskAnalysisTasksResponse _copyWith(
+          {Object? tasks = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListVercelCiTaskAnalysisTasksResponse(
+        tasks: identical(tasks, sdkOmittedValue)
+            ? this.tasks
+            : tasks as List<ListVercelCiTaskAnalysisTasksResponseTasksItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListVercelCiTaskAnalysisTasksResponsePagination,
+      );
 
-  factory ListVercelCiTaskAnalysisTasksResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiTaskAnalysisTasksResponse(
-    tasks: ((json['tasks'] as List?)?.map((e) => ListVercelCiTaskAnalysisTasksResponseTasksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? ListVercelCiTaskAnalysisTasksResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory ListVercelCiTaskAnalysisTasksResponse.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiTaskAnalysisTasksResponse(
+            tasks: ((json['tasks'] as List?)
+                ?.map((e) =>
+                    ListVercelCiTaskAnalysisTasksResponseTasksItem.fromJson(
+                        e as Map<String, dynamic>))
+                .toList())!,
+            pagination: (json['pagination'] != null
+                ? ListVercelCiTaskAnalysisTasksResponsePagination.fromJson(
+                    json['pagination'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'tasks': tasks.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'tasks': tasks.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
-class ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String reason;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped({required this.reason});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
+      {required this.reason});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped Function({String reason}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped Function(
+      {String reason}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped _copyWith({Object? reason = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped _copyWith(
+          {Object? reason = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
+        reason:
+            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
-    reason: (json['reason'] as String?)!,
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
+            reason: (json['reason'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'reason': reason,
-  };
+        'reason': reason,
+      };
 }
 
-class ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double startedAt;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted({required this.startedAt});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted(
+      {required this.startedAt});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted Function({double startedAt}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted
+      Function({double startedAt}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted _copyWith({Object? startedAt = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted(
-    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as double,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted
+      _copyWith({Object? startedAt = sdkOmittedValue}) =>
+          ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted(
+            startedAt: identical(startedAt, sdkOmittedValue)
+                ? this.startedAt
+                : startedAt as double,
+          );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted(
-    startedAt: ((json['startedAt'] as num?)?.toDouble())!,
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingStarted(
+            startedAt: ((json['startedAt'] as num?)?.toDouble())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'startedAt': startedAt,
-  };
+        'startedAt': startedAt,
+      };
 }
 
-class ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String reason;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed({required this.reason});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed(
+      {required this.reason});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed Function({String reason}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed
+      Function({String reason}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed _copyWith({Object? reason = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed(
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed
+      _copyWith({Object? reason = sdkOmittedValue}) =>
+          ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed(
+            reason: identical(reason, sdkOmittedValue)
+                ? this.reason
+                : reason as String,
+          );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed(
-    reason: (json['reason'] as String?)!,
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemBootstrappingFailed(
+            reason: (json['reason'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'reason': reason,
-  };
+        'reason': reason,
+      };
 }
 
-class ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String sandboxSnapshotId;
   final String workingDirectory;
   final SdkOptional<double> snapshottedAt;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted({required this.sandboxSnapshotId, required this.workingDirectory, this.snapshottedAt = const SdkOmitted()});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted(
+      {required this.sandboxSnapshotId,
+      required this.workingDirectory,
+      this.snapshottedAt = const SdkOmitted()});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted Function({String sandboxSnapshotId, String workingDirectory, SdkOptional<double> snapshottedAt}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted Function(
+      {String sandboxSnapshotId,
+      String workingDirectory,
+      SdkOptional<double> snapshottedAt}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted _copyWith({Object? sandboxSnapshotId = sdkOmittedValue, Object? workingDirectory = sdkOmittedValue, Object? snapshottedAt = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted(
-    sandboxSnapshotId: identical(sandboxSnapshotId, sdkOmittedValue) ? this.sandboxSnapshotId : sandboxSnapshotId as String,
-    workingDirectory: identical(workingDirectory, sdkOmittedValue) ? this.workingDirectory : workingDirectory as String,
-    snapshottedAt: identical(snapshottedAt, sdkOmittedValue) ? this.snapshottedAt : snapshottedAt as SdkOptional<double>,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted
+      _copyWith(
+              {Object? sandboxSnapshotId = sdkOmittedValue,
+              Object? workingDirectory = sdkOmittedValue,
+              Object? snapshottedAt = sdkOmittedValue}) =>
+          ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted(
+            sandboxSnapshotId: identical(sandboxSnapshotId, sdkOmittedValue)
+                ? this.sandboxSnapshotId
+                : sandboxSnapshotId as String,
+            workingDirectory: identical(workingDirectory, sdkOmittedValue)
+                ? this.workingDirectory
+                : workingDirectory as String,
+            snapshottedAt: identical(snapshottedAt, sdkOmittedValue)
+                ? this.snapshottedAt
+                : snapshottedAt as SdkOptional<double>,
+          );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted(
-    sandboxSnapshotId: (json['sandboxSnapshotId'] as String?)!,
-    workingDirectory: (json['workingDirectory'] as String?)!,
-    snapshottedAt: json['snapshottedAt'] != null ? SdkPresent(((json['snapshottedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxSnapshotted(
+            sandboxSnapshotId: (json['sandboxSnapshotId'] as String?)!,
+            workingDirectory: (json['workingDirectory'] as String?)!,
+            snapshottedAt: json['snapshottedAt'] != null
+                ? SdkPresent(((json['snapshottedAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'sandboxSnapshotId': sandboxSnapshotId,
-    'workingDirectory': workingDirectory,
-    ...switch (snapshottedAt) {
-      SdkPresent<double>(value: final value) => {'snapshottedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'sandboxSnapshotId': sandboxSnapshotId,
+        'workingDirectory': workingDirectory,
+        ...switch (snapshottedAt) {
+          SdkPresent<double>(value: final value) => {
+              'snapshottedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String sandboxName;
   final String workingDirectory;
   final SdkOptional<double> readyAt;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed({required this.sandboxName, required this.workingDirectory, this.readyAt = const SdkOmitted()});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed(
+      {required this.sandboxName,
+      required this.workingDirectory,
+      this.readyAt = const SdkOmitted()});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed Function({String sandboxName, String workingDirectory, SdkOptional<double> readyAt}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed Function(
+      {String sandboxName,
+      String workingDirectory,
+      SdkOptional<double> readyAt}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed _copyWith({Object? sandboxName = sdkOmittedValue, Object? workingDirectory = sdkOmittedValue, Object? readyAt = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed(
-    sandboxName: identical(sandboxName, sdkOmittedValue) ? this.sandboxName : sandboxName as String,
-    workingDirectory: identical(workingDirectory, sdkOmittedValue) ? this.workingDirectory : workingDirectory as String,
-    readyAt: identical(readyAt, sdkOmittedValue) ? this.readyAt : readyAt as SdkOptional<double>,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed _copyWith(
+          {Object? sandboxName = sdkOmittedValue,
+          Object? workingDirectory = sdkOmittedValue,
+          Object? readyAt = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed(
+        sandboxName: identical(sandboxName, sdkOmittedValue)
+            ? this.sandboxName
+            : sandboxName as String,
+        workingDirectory: identical(workingDirectory, sdkOmittedValue)
+            ? this.workingDirectory
+            : workingDirectory as String,
+        readyAt: identical(readyAt, sdkOmittedValue)
+            ? this.readyAt
+            : readyAt as SdkOptional<double>,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed(
-    sandboxName: (json['sandboxName'] as String?)!,
-    workingDirectory: (json['workingDirectory'] as String?)!,
-    readyAt: json['readyAt'] != null ? SdkPresent(((json['readyAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemSandboxNamed(
+            sandboxName: (json['sandboxName'] as String?)!,
+            workingDirectory: (json['workingDirectory'] as String?)!,
+            readyAt: json['readyAt'] != null
+                ? SdkPresent(((json['readyAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'sandboxName': sandboxName,
-    'workingDirectory': workingDirectory,
-    ...switch (readyAt) {
-      SdkPresent<double>(value: final value) => {'readyAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'sandboxName': sandboxName,
+        'workingDirectory': workingDirectory,
+        ...switch (readyAt) {
+          SdkPresent<double>(value: final value) => {
+              'readyAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<String> names;
-  final SdkOptional<ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0> source;
+  final SdkOptional<
+          ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0>
+      source;
   final SdkOptional<double> scheduledAt;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated({required this.names, this.source = const SdkOmitted(), this.scheduledAt = const SdkOmitted()});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated(
+      {required this.names,
+      this.source = const SdkOmitted(),
+      this.scheduledAt = const SdkOmitted()});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated Function({List<String> names, SdkOptional<ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0> source, SdkOptional<double> scheduledAt}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated Function(
+      {List<String> names,
+      SdkOptional<
+              ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0>
+          source,
+      SdkOptional<double> scheduledAt}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated _copyWith({Object? names = sdkOmittedValue, Object? source = sdkOmittedValue, Object? scheduledAt = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated(
-    names: identical(names, sdkOmittedValue) ? this.names : names as List<String>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0>,
-    scheduledAt: identical(scheduledAt, sdkOmittedValue) ? this.scheduledAt : scheduledAt as SdkOptional<double>,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated
+      _copyWith(
+              {Object? names = sdkOmittedValue,
+              Object? source = sdkOmittedValue,
+              Object? scheduledAt = sdkOmittedValue}) =>
+          ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated(
+            names: identical(names, sdkOmittedValue)
+                ? this.names
+                : names as List<String>,
+            source: identical(source, sdkOmittedValue)
+                ? this.source
+                : source as SdkOptional<
+                    ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0>,
+            scheduledAt: identical(scheduledAt, sdkOmittedValue)
+                ? this.scheduledAt
+                : scheduledAt as SdkOptional<double>,
+          );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated(
-    names: ((json['names'] as List?)?.map((e) => e as String).toList())!,
-    source: json['source'] != null ? SdkPresent((json['source'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0.fromJson(json['source'] as String) : null)!) : const SdkOmitted(),
-    scheduledAt: json['scheduledAt'] != null ? SdkPresent(((json['scheduledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreated(
+            names:
+                ((json['names'] as List?)?.map((e) => e as String).toList())!,
+            source: json['source'] != null
+                ? SdkPresent((json['source'] != null
+                    ? ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0
+                        .fromJson(json['source'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            scheduledAt: json['scheduledAt'] != null
+                ? SdkPresent(((json['scheduledAt'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'names': names,
-    ...switch (source) {
-      SdkPresent<ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0>(value: final value) => {'source': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scheduledAt) {
-      SdkPresent<double>(value: final value) => {'scheduledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'names': names,
+        ...switch (source) {
+          SdkPresent<
+                ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0>(
+            value: final value
+          ) =>
+            {
+              'source': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scheduledAt) {
+          SdkPresent<double>(value: final value) => {
+              'scheduledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double completedAt;
-  final SdkOptional<ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0> conclusion;
+  final SdkOptional<
+          ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0>
+      conclusion;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted({required this.completedAt, this.conclusion = const SdkOmitted()});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted(
+      {required this.completedAt, this.conclusion = const SdkOmitted()});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted Function({double completedAt, SdkOptional<ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0> conclusion}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted Function(
+      {double completedAt,
+      SdkOptional<
+              ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0>
+          conclusion}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted _copyWith({Object? completedAt = sdkOmittedValue, Object? conclusion = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted(
-    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as double,
-    conclusion: identical(conclusion, sdkOmittedValue) ? this.conclusion : conclusion as SdkOptional<ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0>,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted _copyWith(
+          {Object? completedAt = sdkOmittedValue,
+          Object? conclusion = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted(
+        completedAt: identical(completedAt, sdkOmittedValue)
+            ? this.completedAt
+            : completedAt as double,
+        conclusion: identical(conclusion, sdkOmittedValue)
+            ? this.conclusion
+            : conclusion as SdkOptional<
+                ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0>,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted(
-    completedAt: ((json['completedAt'] as num?)?.toDouble())!,
-    conclusion: json['conclusion'] != null ? SdkPresent((json['conclusion'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0.fromJson(json['conclusion'] as String) : null)!) : const SdkOmitted(),
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemCompleted(
+            completedAt: ((json['completedAt'] as num?)?.toDouble())!,
+            conclusion: json['conclusion'] != null
+                ? SdkPresent((json['conclusion'] != null
+                    ? ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0
+                        .fromJson(json['conclusion'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'completedAt': completedAt,
-    ...switch (conclusion) {
-      SdkPresent<ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0>(value: final value) => {'conclusion': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'completedAt': completedAt,
+        ...switch (conclusion) {
+          SdkPresent<
+                ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0>(
+            value: final value
+          ) =>
+            {
+              'conclusion': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The terminal setup result. Omitted while invocation setup is still running.
-class ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0 result;
+  final ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0
+      result;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion({required this.result});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion(
+      {required this.result});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion Function({ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0 result}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion Function(
+      {ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0
+          result}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion _copyWith({Object? result = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion(
-    result: identical(result, sdkOmittedValue) ? this.result : result as ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion _copyWith(
+          {Object? result = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion(
+        result: identical(result, sdkOmittedValue)
+            ? this.result
+            : result
+                as ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion(
-    result: (json['result'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0.fromJson(json['result'] as String) : null)!,
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusion(
+            result: (json['result'] != null
+                ? ListVercelCiInvocationAttemptsResponseAttemptsItemSetupConclusionResultVariant0
+                    .fromJson(json['result'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-  };
+        'result': result.toJson(),
+      };
 }
 
 /// The aggregate outcome of every job in the invocation. Omitted while jobs are still running. Any failed job → "failed"; any (non-cascade) skipped job → "skipped"; else "succeeded". Present on completed invocations written after the field shipped; absent on older rows.
-class ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion implements SdkJsonModel {
+class ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0 result;
+  final ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0
+      result;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion({required this.result});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion(
+      {required this.result});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion Function({ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0 result}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion Function(
+      {ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0
+          result}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion _copyWith({Object? result = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion(
-    result: identical(result, sdkOmittedValue) ? this.result : result as ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion _copyWith(
+          {Object? result = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion(
+        result: identical(result, sdkOmittedValue)
+            ? this.result
+            : result
+                as ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion(
-    result: (json['result'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0.fromJson(json['result'] as String) : null)!,
-  ), json);
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusion(
+            result: (json['result'] != null
+                ? ListVercelCiInvocationAttemptsResponseAttemptsItemRunConclusionResultVariant0
+                    .fromJson(json['result'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-  };
+        'result': result.toJson(),
+      };
 }

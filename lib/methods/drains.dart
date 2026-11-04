@@ -25,8 +25,10 @@ Future<CreateDrainResponse> createDrain(ClientConfig config,
     SdkOptional<List<String>> projectIds = const SdkOmitted(),
     SdkOptional<CreateDrainRequestBodyFilter> filter = const SdkOmitted(),
     SdkOptional<CreateDrainRequestDelivery> delivery = const SdkOmitted(),
-    SdkOptional<List<CreateDrainRequestBodySamplingItem>> sampling = const SdkOmitted(),
-    SdkOptional<List<CreateDrainRequestBodyTransformsItem>> transforms = const SdkOmitted(),
+    SdkOptional<List<CreateDrainRequestBodySamplingItem>> sampling =
+        const SdkOmitted(),
+    SdkOptional<List<CreateDrainRequestBodyTransformsItem>> transforms =
+        const SdkOmitted(),
     SdkOptional<CreateDrainRequestSource> source = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (sampling is SdkPresent<List<CreateDrainRequestBodySamplingItem>>) {
@@ -36,8 +38,10 @@ Future<CreateDrainResponse> createDrain(ClientConfig config,
   return (await sdkRequest<CreateDrainResponse>('POST', '/v1/drains',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -57,7 +61,6 @@ Future<CreateDrainResponse> createDrain(ClientConfig config,
       .data;
 }
 
-
 /// Lists drains owned by the authenticated team. Use `projectId` to filter the results and `includeMetadata` to control whether metadata is included; metadata is excluded by default.
 ///
 /// Allows to retrieve the list of Drains of the authenticated team.
@@ -73,18 +76,24 @@ Future<GetDrainsResponse> getDrains(ClientConfig config,
   return (await sdkRequest<GetDrainsResponse>('GET', '/v1/drains',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
-            'includeMetadata': SdkQueryValue(SdkUtils.unwrapOptional(includeMetadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
+                style: 'form', explode: true),
+            'includeMetadata': SdkQueryValue(
+                SdkUtils.unwrapOptional(includeMetadata),
+                style: 'form',
+                explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDrains',
-          fromJsonRaw: (value) => GetDrainsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetDrainsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a specific Drain identified by its path parameter. Use `teamId` or `slug` to perform the request on behalf of a team. The successful response has no content.
 ///
@@ -101,15 +110,16 @@ Future<void> deleteDrain(ClientConfig config,
           'DELETE', '/v1/drains/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteDrain',
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a Drain by its identifier. Use `id` in the path to select the Drain, and use `teamId` or `slug` to make the request on behalf of a team.
 ///
@@ -126,8 +136,10 @@ Future<GetDrainResponse> getDrain(ClientConfig config,
           'GET', '/v1/drains/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDrain',
@@ -135,7 +147,6 @@ Future<GetDrainResponse> getDrain(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Updates the configuration of an existing Drain. Send only the fields you want to change, such as `name`, `delivery`, or `status`; `status` can be `enabled` or `disabled`. You can also update its project scope, schemas, sampling rules, transforms, filter, or source.
 ///
@@ -155,10 +166,13 @@ Future<UpdateDrainResponse> updateDrain(ClientConfig config,
     SdkOptional<UpdateDrainRequestBodyProjects> projects = const SdkOmitted(),
     SdkOptional<List<String>?> projectIds = const SdkOmitted(),
     SdkOptional<UpdateDrainRequestFilter> filter = const SdkOmitted(),
-    SdkOptional<Map<String, UpdateDrainRequestBodySchemasValue>> schemas = const SdkOmitted(),
+    SdkOptional<Map<String, UpdateDrainRequestBodySchemasValue>> schemas =
+        const SdkOmitted(),
     SdkOptional<UpdateDrainRequestDelivery> delivery = const SdkOmitted(),
-    SdkOptional<List<UpdateDrainRequestBodySamplingItem>?> sampling = const SdkOmitted(),
-    SdkOptional<List<UpdateDrainRequestBodyTransformsItem>?> transforms = const SdkOmitted(),
+    SdkOptional<List<UpdateDrainRequestBodySamplingItem>?> sampling =
+        const SdkOmitted(),
+    SdkOptional<List<UpdateDrainRequestBodyTransformsItem>?> transforms =
+        const SdkOmitted(),
     SdkOptional<UpdateDrainRequestBodyStatus> status = const SdkOmitted(),
     SdkOptional<UpdateDrainRequestSource> source = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
@@ -173,8 +187,10 @@ Future<UpdateDrainResponse> updateDrain(ClientConfig config,
           'PATCH', '/v1/drains/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
@@ -195,7 +211,6 @@ Future<UpdateDrainResponse> updateDrain(ClientConfig config,
       .data;
 }
 
-
 /// Validates a Drain delivery configuration by sending sample events. Provide `schemas` and `delivery` to check the configuration without creating or updating a Drain. The response reports the validation result.
 ///
 /// Validate the delivery configuration of a Drain using sample events.
@@ -213,8 +228,10 @@ Future<dynamic> testDrain(ClientConfig config,
   return (await sdkRequest<dynamic>('POST', '/v1/drains/test',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'schemas': schemas, 'delivery': delivery},
           decoder: SdkResponseDecoder.json,

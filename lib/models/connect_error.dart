@@ -8,40 +8,57 @@ part of 'connect.dart';
 class ConnectErrorError implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Stable machine-readable error code.
   final String code;
+
   /// Human-readable error message.
   final String message;
   final Map<String, dynamic> additionalProperties;
 
-  const ConnectErrorError({required this.code, required this.message, this.additionalProperties = const <String, dynamic>{}});
+  const ConnectErrorError(
+      {required this.code,
+      required this.message,
+      this.additionalProperties = const <String, dynamic>{}});
 
-  ConnectErrorError Function({String code, String message}) get copyWith => _copyWith;
+  ConnectErrorError Function({String code, String message}) get copyWith =>
+      _copyWith;
 
-  ConnectErrorError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => ConnectErrorError(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-    additionalProperties: additionalProperties,
-  );
+  ConnectErrorError _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      ConnectErrorError(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+        additionalProperties: additionalProperties,
+      );
 
-  factory ConnectErrorError.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ConnectErrorError(
-    code: (json['code'] as String?)!,
-    message: (json['message'] as String?)!,
-    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'code', 'message'}.contains(key)),
-  ), json);
+  factory ConnectErrorError.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ConnectErrorError(
+            code: (json['code'] as String?)!,
+            message: (json['message'] as String?)!,
+            additionalProperties: Map.of(json)
+              ..removeWhere(
+                  (key, _) => const <String>{'code', 'message'}.contains(key)),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...additionalProperties,
-    'code': code,
-    'message': message,
-  };
+        ...additionalProperties,
+        'code': code,
+        'message': message,
+      };
 }
 
 /// Error response returned by a Connect API operation.
 class ConnectError implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Error details.
   final ConnectErrorError error;
 
@@ -50,15 +67,21 @@ class ConnectError implements SdkJsonModel {
   ConnectError Function({ConnectErrorError error}) get copyWith => _copyWith;
 
   ConnectError _copyWith({Object? error = sdkOmittedValue}) => ConnectError(
-    error: identical(error, sdkOmittedValue) ? this.error : error as ConnectErrorError,
-  );
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as ConnectErrorError,
+      );
 
-  factory ConnectError.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ConnectError(
-    error: (json['error'] != null ? ConnectErrorError.fromJson(json['error'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory ConnectError.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(
+      ConnectError(
+        error: (json['error'] != null
+            ? ConnectErrorError.fromJson(json['error'] as Map<String, dynamic>)
+            : null)!,
+      ),
+      json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'error': error.toJson(),
-  };
+        'error': error.toJson(),
+      };
 }

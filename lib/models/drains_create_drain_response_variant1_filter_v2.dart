@@ -10,25 +10,42 @@ class CreateDrainResponseVariant1FilterV2 implements SdkJsonModel {
   final dynamic filter;
   final CreateDrainResponseVariant1FilterV2Version version;
 
-  const CreateDrainResponseVariant1FilterV2({required this.filter, required this.version});
+  const CreateDrainResponseVariant1FilterV2(
+      {required this.filter, required this.version});
 
-  CreateDrainResponseVariant1FilterV2 Function({dynamic filter, CreateDrainResponseVariant1FilterV2Version version}) get copyWith => _copyWith;
+  CreateDrainResponseVariant1FilterV2 Function(
+          {dynamic filter, CreateDrainResponseVariant1FilterV2Version version})
+      get copyWith => _copyWith;
 
-  CreateDrainResponseVariant1FilterV2 _copyWith({Object? filter = sdkOmittedValue, Object? version = sdkOmittedValue}) => CreateDrainResponseVariant1FilterV2(
-    filter: identical(filter, sdkOmittedValue) ? this.filter : filter as dynamic,
-    version: identical(version, sdkOmittedValue) ? this.version : version as CreateDrainResponseVariant1FilterV2Version,
-  );
+  CreateDrainResponseVariant1FilterV2 _copyWith(
+          {Object? filter = sdkOmittedValue,
+          Object? version = sdkOmittedValue}) =>
+      CreateDrainResponseVariant1FilterV2(
+        filter: identical(filter, sdkOmittedValue)
+            ? this.filter
+            : filter as dynamic,
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as CreateDrainResponseVariant1FilterV2Version,
+      );
 
-  factory CreateDrainResponseVariant1FilterV2.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateDrainResponseVariant1FilterV2(
-    filter: (json['filter'])!,
-    version: (json['version'] != null ? CreateDrainResponseVariant1FilterV2Version.fromJson(json['version'] as String) : null)!,
-  ), json);
+  factory CreateDrainResponseVariant1FilterV2.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateDrainResponseVariant1FilterV2(
+            filter: (json['filter'])!,
+            version: (json['version'] != null
+                ? CreateDrainResponseVariant1FilterV2Version.fromJson(
+                    json['version'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'filter': filter,
-    'version': version.toJson(),
-  };
+        'filter': filter,
+        'version': version.toJson(),
+      };
 }
 
 class CreateDrainResponseVariant1ProjectAccessVariant0 implements SdkJsonModel {
@@ -37,25 +54,47 @@ class CreateDrainResponseVariant1ProjectAccessVariant0 implements SdkJsonModel {
   final CreateDrainResponseVariant1ProjectAccessVariant0Access access;
   final CreateDrainResponseVariant1ProjectAccessVariant0ManagedBy managedBy;
 
-  const CreateDrainResponseVariant1ProjectAccessVariant0({required this.access, required this.managedBy});
+  const CreateDrainResponseVariant1ProjectAccessVariant0(
+      {required this.access, required this.managedBy});
 
-  CreateDrainResponseVariant1ProjectAccessVariant0 Function({CreateDrainResponseVariant1ProjectAccessVariant0Access access, CreateDrainResponseVariant1ProjectAccessVariant0ManagedBy managedBy}) get copyWith => _copyWith;
+  CreateDrainResponseVariant1ProjectAccessVariant0 Function(
+          {CreateDrainResponseVariant1ProjectAccessVariant0Access access,
+          CreateDrainResponseVariant1ProjectAccessVariant0ManagedBy managedBy})
+      get copyWith => _copyWith;
 
-  CreateDrainResponseVariant1ProjectAccessVariant0 _copyWith({Object? access = sdkOmittedValue, Object? managedBy = sdkOmittedValue}) => CreateDrainResponseVariant1ProjectAccessVariant0(
-    access: identical(access, sdkOmittedValue) ? this.access : access as CreateDrainResponseVariant1ProjectAccessVariant0Access,
-    managedBy: identical(managedBy, sdkOmittedValue) ? this.managedBy : managedBy as CreateDrainResponseVariant1ProjectAccessVariant0ManagedBy,
-  );
+  CreateDrainResponseVariant1ProjectAccessVariant0 _copyWith(
+          {Object? access = sdkOmittedValue,
+          Object? managedBy = sdkOmittedValue}) =>
+      CreateDrainResponseVariant1ProjectAccessVariant0(
+        access: identical(access, sdkOmittedValue)
+            ? this.access
+            : access as CreateDrainResponseVariant1ProjectAccessVariant0Access,
+        managedBy: identical(managedBy, sdkOmittedValue)
+            ? this.managedBy
+            : managedBy
+                as CreateDrainResponseVariant1ProjectAccessVariant0ManagedBy,
+      );
 
-  factory CreateDrainResponseVariant1ProjectAccessVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateDrainResponseVariant1ProjectAccessVariant0(
-    access: (json['access'] != null ? CreateDrainResponseVariant1ProjectAccessVariant0Access.fromJson(json['access'] as String) : null)!,
-    managedBy: (json['managedBy'] != null ? CreateDrainResponseVariant1ProjectAccessVariant0ManagedBy.fromJson(json['managedBy'] as String) : null)!,
-  ), json);
+  factory CreateDrainResponseVariant1ProjectAccessVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateDrainResponseVariant1ProjectAccessVariant0(
+            access: (json['access'] != null
+                ? CreateDrainResponseVariant1ProjectAccessVariant0Access
+                    .fromJson(json['access'] as String)
+                : null)!,
+            managedBy: (json['managedBy'] != null
+                ? CreateDrainResponseVariant1ProjectAccessVariant0ManagedBy
+                    .fromJson(json['managedBy'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'access': access.toJson(),
-    'managedBy': managedBy.toJson(),
-  };
+        'access': access.toJson(),
+        'managedBy': managedBy.toJson(),
+      };
 }
 
 class CreateDrainResponseVariant1ProjectAccessVariant1 implements SdkJsonModel {
@@ -65,28 +104,58 @@ class CreateDrainResponseVariant1ProjectAccessVariant1 implements SdkJsonModel {
   final List<String> projectIds;
   final CreateDrainResponseVariant1ProjectAccessVariant1ManagedBy managedBy;
 
-  const CreateDrainResponseVariant1ProjectAccessVariant1({required this.access, required this.projectIds, required this.managedBy});
+  const CreateDrainResponseVariant1ProjectAccessVariant1(
+      {required this.access,
+      required this.projectIds,
+      required this.managedBy});
 
-  CreateDrainResponseVariant1ProjectAccessVariant1 Function({CreateDrainResponseVariant1ProjectAccessVariant1Access access, List<String> projectIds, CreateDrainResponseVariant1ProjectAccessVariant1ManagedBy managedBy}) get copyWith => _copyWith;
+  CreateDrainResponseVariant1ProjectAccessVariant1 Function(
+          {CreateDrainResponseVariant1ProjectAccessVariant1Access access,
+          List<String> projectIds,
+          CreateDrainResponseVariant1ProjectAccessVariant1ManagedBy managedBy})
+      get copyWith => _copyWith;
 
-  CreateDrainResponseVariant1ProjectAccessVariant1 _copyWith({Object? access = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? managedBy = sdkOmittedValue}) => CreateDrainResponseVariant1ProjectAccessVariant1(
-    access: identical(access, sdkOmittedValue) ? this.access : access as CreateDrainResponseVariant1ProjectAccessVariant1Access,
-    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as List<String>,
-    managedBy: identical(managedBy, sdkOmittedValue) ? this.managedBy : managedBy as CreateDrainResponseVariant1ProjectAccessVariant1ManagedBy,
-  );
+  CreateDrainResponseVariant1ProjectAccessVariant1 _copyWith(
+          {Object? access = sdkOmittedValue,
+          Object? projectIds = sdkOmittedValue,
+          Object? managedBy = sdkOmittedValue}) =>
+      CreateDrainResponseVariant1ProjectAccessVariant1(
+        access: identical(access, sdkOmittedValue)
+            ? this.access
+            : access as CreateDrainResponseVariant1ProjectAccessVariant1Access,
+        projectIds: identical(projectIds, sdkOmittedValue)
+            ? this.projectIds
+            : projectIds as List<String>,
+        managedBy: identical(managedBy, sdkOmittedValue)
+            ? this.managedBy
+            : managedBy
+                as CreateDrainResponseVariant1ProjectAccessVariant1ManagedBy,
+      );
 
-  factory CreateDrainResponseVariant1ProjectAccessVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateDrainResponseVariant1ProjectAccessVariant1(
-    access: (json['access'] != null ? CreateDrainResponseVariant1ProjectAccessVariant1Access.fromJson(json['access'] as String) : null)!,
-    projectIds: ((json['projectIds'] as List?)?.map((e) => e as String).toList())!,
-    managedBy: (json['managedBy'] != null ? CreateDrainResponseVariant1ProjectAccessVariant1ManagedBy.fromJson(json['managedBy'] as String) : null)!,
-  ), json);
+  factory CreateDrainResponseVariant1ProjectAccessVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateDrainResponseVariant1ProjectAccessVariant1(
+            access: (json['access'] != null
+                ? CreateDrainResponseVariant1ProjectAccessVariant1Access
+                    .fromJson(json['access'] as String)
+                : null)!,
+            projectIds: ((json['projectIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            managedBy: (json['managedBy'] != null
+                ? CreateDrainResponseVariant1ProjectAccessVariant1ManagedBy
+                    .fromJson(json['managedBy'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'access': access.toJson(),
-    'projectIds': projectIds,
-    'managedBy': managedBy.toJson(),
-  };
+        'access': access.toJson(),
+        'projectIds': projectIds,
+        'managedBy': managedBy.toJson(),
+      };
 }
 
 sealed class CreateDrainResponseVariant1ProjectAccess {
@@ -95,26 +164,55 @@ sealed class CreateDrainResponseVariant1ProjectAccess {
   const CreateDrainResponseVariant1ProjectAccess();
   factory CreateDrainResponseVariant1ProjectAccess.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CreateDrainResponseVariant1ProjectAccessVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0(value); } } catch (_) {}
-      try { final value = CreateDrainResponseVariant1ProjectAccessVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            CreateDrainResponseVariant1ProjectAccessVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            CreateDrainResponseVariant1ProjectAccessVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0(CreateDrainResponseVariant1ProjectAccessVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1(CreateDrainResponseVariant1ProjectAccessVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CreateDrainResponseVariant1ProjectAccess");
+    try {
+      return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0(
+          CreateDrainResponseVariant1ProjectAccessVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1(
+          CreateDrainResponseVariant1ProjectAccessVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateDrainResponseVariant1ProjectAccess");
   }
   Object? toJson();
 }
 
-final class CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0 extends CreateDrainResponseVariant1ProjectAccess {
+final class CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0
+    extends CreateDrainResponseVariant1ProjectAccess {
   final CreateDrainResponseVariant1ProjectAccessVariant0 value;
-  const CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1 extends CreateDrainResponseVariant1ProjectAccess {
+final class CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1
+    extends CreateDrainResponseVariant1ProjectAccess {
   final CreateDrainResponseVariant1ProjectAccessVariant1 value;
-  const CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateDrainResponseVariant1ProjectAccessCreateDrainResponseVariant1ProjectAccessVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class CreateDrainResponseVariant1SamplingItem implements SdkJsonModel {
@@ -125,35 +223,76 @@ class CreateDrainResponseVariant1SamplingItem implements SdkJsonModel {
   final SdkOptional<String> requestPath;
   final CreateDrainResponseVariant1SamplingItemType type_;
 
-  const CreateDrainResponseVariant1SamplingItem({this.env = const SdkOmitted(), required this.rate, this.requestPath = const SdkOmitted(), required this.type_});
+  const CreateDrainResponseVariant1SamplingItem(
+      {this.env = const SdkOmitted(),
+      required this.rate,
+      this.requestPath = const SdkOmitted(),
+      required this.type_});
 
-  CreateDrainResponseVariant1SamplingItem Function({SdkOptional<CreateDrainResponseVariant1SamplingItemEnv> env, double rate, SdkOptional<String> requestPath, CreateDrainResponseVariant1SamplingItemType type_}) get copyWith => _copyWith;
+  CreateDrainResponseVariant1SamplingItem Function(
+          {SdkOptional<CreateDrainResponseVariant1SamplingItemEnv> env,
+          double rate,
+          SdkOptional<String> requestPath,
+          CreateDrainResponseVariant1SamplingItemType type_})
+      get copyWith => _copyWith;
 
-  CreateDrainResponseVariant1SamplingItem _copyWith({Object? env = sdkOmittedValue, Object? rate = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDrainResponseVariant1SamplingItem(
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<CreateDrainResponseVariant1SamplingItemEnv>,
-    rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
-    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as SdkOptional<String>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDrainResponseVariant1SamplingItemType,
-  );
+  CreateDrainResponseVariant1SamplingItem _copyWith(
+          {Object? env = sdkOmittedValue,
+          Object? rate = sdkOmittedValue,
+          Object? requestPath = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CreateDrainResponseVariant1SamplingItem(
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<CreateDrainResponseVariant1SamplingItemEnv>,
+        rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
+        requestPath: identical(requestPath, sdkOmittedValue)
+            ? this.requestPath
+            : requestPath as SdkOptional<String>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateDrainResponseVariant1SamplingItemType,
+      );
 
-  factory CreateDrainResponseVariant1SamplingItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateDrainResponseVariant1SamplingItem(
-    env: json['env'] != null ? SdkPresent((json['env'] != null ? CreateDrainResponseVariant1SamplingItemEnv.fromJson(json['env'] as String) : null)!) : const SdkOmitted(),
-    rate: ((json['rate'] as num?)?.toDouble())!,
-    requestPath: json['requestPath'] != null ? SdkPresent((json['requestPath'] as String?)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? CreateDrainResponseVariant1SamplingItemType.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory CreateDrainResponseVariant1SamplingItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateDrainResponseVariant1SamplingItem(
+            env: json['env'] != null
+                ? SdkPresent((json['env'] != null
+                    ? CreateDrainResponseVariant1SamplingItemEnv.fromJson(
+                        json['env'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            rate: ((json['rate'] as num?)?.toDouble())!,
+            requestPath: json['requestPath'] != null
+                ? SdkPresent((json['requestPath'] as String?)!)
+                : const SdkOmitted(),
+            type_: (json['type'] != null
+                ? CreateDrainResponseVariant1SamplingItemType.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (env) {
-      SdkPresent<CreateDrainResponseVariant1SamplingItemEnv>(value: final value) => {'env': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'rate': rate,
-    ...switch (requestPath) {
-      SdkPresent<String>(value: final value) => {'requestPath': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-  };
+        ...switch (env) {
+          SdkPresent<CreateDrainResponseVariant1SamplingItemEnv>(
+            value: final value
+          ) =>
+            {
+              'env': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'rate': rate,
+        ...switch (requestPath) {
+          SdkPresent<String>(value: final value) => {
+              'requestPath': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+      };
 }

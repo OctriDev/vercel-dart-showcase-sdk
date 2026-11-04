@@ -8,275 +8,507 @@ part of 'user.dart';
 class UserEventPayloadVariant254 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `currency` wire field.
   final SdkOptional<String> currency;
+
   /// Optional enumerated value serialized in the `enabled` wire field.
   final SdkOptional<UserEventPayloadVariant254Enabled> enabled;
+
   /// Optional `number` value serialized in the `price` wire field.
   final SdkOptional<double> price;
 
-  const UserEventPayloadVariant254({this.currency = const SdkOmitted(), this.enabled = const SdkOmitted(), this.price = const SdkOmitted()});
+  const UserEventPayloadVariant254(
+      {this.currency = const SdkOmitted(),
+      this.enabled = const SdkOmitted(),
+      this.price = const SdkOmitted()});
 
-  UserEventPayloadVariant254 Function({SdkOptional<String> currency, SdkOptional<UserEventPayloadVariant254Enabled> enabled, SdkOptional<double> price}) get copyWith => _copyWith;
+  UserEventPayloadVariant254 Function(
+      {SdkOptional<String> currency,
+      SdkOptional<UserEventPayloadVariant254Enabled> enabled,
+      SdkOptional<double> price}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant254 _copyWith({Object? currency = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? price = sdkOmittedValue}) => UserEventPayloadVariant254(
-    currency: identical(currency, sdkOmittedValue) ? this.currency : currency as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<UserEventPayloadVariant254Enabled>,
-    price: identical(price, sdkOmittedValue) ? this.price : price as SdkOptional<double>,
-  );
+  UserEventPayloadVariant254 _copyWith(
+          {Object? currency = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? price = sdkOmittedValue}) =>
+      UserEventPayloadVariant254(
+        currency: identical(currency, sdkOmittedValue)
+            ? this.currency
+            : currency as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<UserEventPayloadVariant254Enabled>,
+        price: identical(price, sdkOmittedValue)
+            ? this.price
+            : price as SdkOptional<double>,
+      );
 
-  factory UserEventPayloadVariant254.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant254(
-    currency: json['currency'] != null ? SdkPresent((json['currency'] as String?)!) : const SdkOmitted(),
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? UserEventPayloadVariant254Enabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-    price: json['price'] != null ? SdkPresent(((json['price'] as num?)?.toDouble())!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant254.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant254(
+            currency: json['currency'] != null
+                ? SdkPresent((json['currency'] as String?)!)
+                : const SdkOmitted(),
+            enabled: json['enabled'] != null
+                ? SdkPresent((json['enabled'] != null
+                    ? UserEventPayloadVariant254Enabled.fromJson(
+                        json['enabled'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            price: json['price'] != null
+                ? SdkPresent(((json['price'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (currency) {
-      SdkPresent<String>(value: final value) => {'currency': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabled) {
-      SdkPresent<UserEventPayloadVariant254Enabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (price) {
-      SdkPresent<double>(value: final value) => {'price': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (currency) {
+          SdkPresent<String>(value: final value) => {
+              'currency': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabled) {
+          SdkPresent<UserEventPayloadVariant254Enabled>(value: final value) => {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (price) {
+          SdkPresent<double>(value: final value) => {
+              'price': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant255 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `previewDeploymentSuffix` wire field.
   final SdkOptional<String?> previewDeploymentSuffix;
+
   /// Optional `string` value serialized in the `previousPreviewDeploymentSuffix` wire field.
   final SdkOptional<String?> previousPreviewDeploymentSuffix;
 
-  const UserEventPayloadVariant255({this.previewDeploymentSuffix = const SdkOmitted(), this.previousPreviewDeploymentSuffix = const SdkOmitted()});
+  const UserEventPayloadVariant255(
+      {this.previewDeploymentSuffix = const SdkOmitted(),
+      this.previousPreviewDeploymentSuffix = const SdkOmitted()});
 
-  UserEventPayloadVariant255 Function({SdkOptional<String?> previewDeploymentSuffix, SdkOptional<String?> previousPreviewDeploymentSuffix}) get copyWith => _copyWith;
+  UserEventPayloadVariant255 Function(
+          {SdkOptional<String?> previewDeploymentSuffix,
+          SdkOptional<String?> previousPreviewDeploymentSuffix})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant255 _copyWith({Object? previewDeploymentSuffix = sdkOmittedValue, Object? previousPreviewDeploymentSuffix = sdkOmittedValue}) => UserEventPayloadVariant255(
-    previewDeploymentSuffix: identical(previewDeploymentSuffix, sdkOmittedValue) ? this.previewDeploymentSuffix : previewDeploymentSuffix as SdkOptional<String?>,
-    previousPreviewDeploymentSuffix: identical(previousPreviewDeploymentSuffix, sdkOmittedValue) ? this.previousPreviewDeploymentSuffix : previousPreviewDeploymentSuffix as SdkOptional<String?>,
-  );
+  UserEventPayloadVariant255 _copyWith(
+          {Object? previewDeploymentSuffix = sdkOmittedValue,
+          Object? previousPreviewDeploymentSuffix = sdkOmittedValue}) =>
+      UserEventPayloadVariant255(
+        previewDeploymentSuffix:
+            identical(previewDeploymentSuffix, sdkOmittedValue)
+                ? this.previewDeploymentSuffix
+                : previewDeploymentSuffix as SdkOptional<String?>,
+        previousPreviewDeploymentSuffix:
+            identical(previousPreviewDeploymentSuffix, sdkOmittedValue)
+                ? this.previousPreviewDeploymentSuffix
+                : previousPreviewDeploymentSuffix as SdkOptional<String?>,
+      );
 
-  factory UserEventPayloadVariant255.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant255(
-    previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix') ? SdkPresent(json['previewDeploymentSuffix'] as String?) : const SdkOmitted(),
-    previousPreviewDeploymentSuffix: json.containsKey('previousPreviewDeploymentSuffix') ? SdkPresent(json['previousPreviewDeploymentSuffix'] as String?) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant255.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant255(
+            previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix')
+                ? SdkPresent(json['previewDeploymentSuffix'] as String?)
+                : const SdkOmitted(),
+            previousPreviewDeploymentSuffix: json
+                    .containsKey('previousPreviewDeploymentSuffix')
+                ? SdkPresent(json['previousPreviewDeploymentSuffix'] as String?)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (previewDeploymentSuffix) {
-      SdkPresent<String?>(value: final value) => {'previewDeploymentSuffix': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (previousPreviewDeploymentSuffix) {
-      SdkPresent<String?>(value: final value) => {'previousPreviewDeploymentSuffix': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (previewDeploymentSuffix) {
+          SdkPresent<String?>(value: final value) => {
+              'previewDeploymentSuffix': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (previousPreviewDeploymentSuffix) {
+          SdkPresent<String?>(value: final value) => {
+              'previousPreviewDeploymentSuffix': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant256 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `previousTeamSuffix` wire field.
   final String? previousTeamSuffix;
+
   /// Required `number` value serialized in the `projectCount` wire field.
   final double projectCount;
+
   /// Required `string` value serialized in the `reason` wire field.
   final String reason;
+
   /// Okta user id.
   final String actorId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant256ActorType actorType;
 
-  const UserEventPayloadVariant256({required this.previousTeamSuffix, required this.projectCount, required this.reason, required this.actorId, this.actorName = const SdkOmitted(), required this.actorType});
+  const UserEventPayloadVariant256(
+      {required this.previousTeamSuffix,
+      required this.projectCount,
+      required this.reason,
+      required this.actorId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType});
 
-  UserEventPayloadVariant256 Function({String? previousTeamSuffix, double projectCount, String reason, String actorId, SdkOptional<String> actorName, UserEventPayloadVariant256ActorType actorType}) get copyWith => _copyWith;
+  UserEventPayloadVariant256 Function(
+      {String? previousTeamSuffix,
+      double projectCount,
+      String reason,
+      String actorId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant256ActorType actorType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant256 _copyWith({Object? previousTeamSuffix = sdkOmittedValue, Object? projectCount = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? actorId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue}) => UserEventPayloadVariant256(
-    previousTeamSuffix: identical(previousTeamSuffix, sdkOmittedValue) ? this.previousTeamSuffix : previousTeamSuffix as String?,
-    projectCount: identical(projectCount, sdkOmittedValue) ? this.projectCount : projectCount as double,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-    actorId: identical(actorId, sdkOmittedValue) ? this.actorId : actorId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant256ActorType,
-  );
+  UserEventPayloadVariant256 _copyWith(
+          {Object? previousTeamSuffix = sdkOmittedValue,
+          Object? projectCount = sdkOmittedValue,
+          Object? reason = sdkOmittedValue,
+          Object? actorId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue}) =>
+      UserEventPayloadVariant256(
+        previousTeamSuffix: identical(previousTeamSuffix, sdkOmittedValue)
+            ? this.previousTeamSuffix
+            : previousTeamSuffix as String?,
+        projectCount: identical(projectCount, sdkOmittedValue)
+            ? this.projectCount
+            : projectCount as double,
+        reason:
+            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+        actorId: identical(actorId, sdkOmittedValue)
+            ? this.actorId
+            : actorId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant256ActorType,
+      );
 
-  factory UserEventPayloadVariant256.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant256(
-    previousTeamSuffix: json.containsKey('previousTeamSuffix') ? json['previousTeamSuffix'] as String? : throw ArgumentError.value(null, 'previousTeamSuffix', 'Required property is missing'),
-    projectCount: ((json['projectCount'] as num?)?.toDouble())!,
-    reason: (json['reason'] as String?)!,
-    actorId: (json['actorId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant256ActorType.fromJson(json['actorType'] as String) : null)!,
-  ), json);
+  factory UserEventPayloadVariant256.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant256(
+            previousTeamSuffix: json.containsKey('previousTeamSuffix')
+                ? json['previousTeamSuffix'] as String?
+                : throw ArgumentError.value(
+                    null, 'previousTeamSuffix', 'Required property is missing'),
+            projectCount: ((json['projectCount'] as num?)?.toDouble())!,
+            reason: (json['reason'] as String?)!,
+            actorId: (json['actorId'] as String?)!,
+            actorName: json['actorName'] != null
+                ? SdkPresent((json['actorName'] as String?)!)
+                : const SdkOmitted(),
+            actorType: (json['actorType'] != null
+                ? UserEventPayloadVariant256ActorType.fromJson(
+                    json['actorType'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'previousTeamSuffix': previousTeamSuffix,
-    'projectCount': projectCount,
-    'reason': reason,
-    'actorId': actorId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-  };
+        'previousTeamSuffix': previousTeamSuffix,
+        'projectCount': projectCount,
+        'reason': reason,
+        'actorId': actorId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+      };
 }
 
 /// Required object value serialized in the `endpoint` wire field.
 class UserEventPayloadVariant257Endpoint implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `awsServiceName` wire field.
   final String awsServiceName;
+
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Optional array value serialized in the `privateDnsNames` wire field.
   final SdkOptional<List<String>> privateDnsNames;
+
   /// Required `string` value serialized in the `vercelRegion` wire field.
   final String vercelRegion;
 
-  const UserEventPayloadVariant257Endpoint({required this.awsServiceName, required this.configurationId, required this.id, required this.name, this.privateDnsNames = const SdkOmitted(), required this.vercelRegion});
+  const UserEventPayloadVariant257Endpoint(
+      {required this.awsServiceName,
+      required this.configurationId,
+      required this.id,
+      required this.name,
+      this.privateDnsNames = const SdkOmitted(),
+      required this.vercelRegion});
 
-  UserEventPayloadVariant257Endpoint Function({String awsServiceName, String configurationId, String id, String name, SdkOptional<List<String>> privateDnsNames, String vercelRegion}) get copyWith => _copyWith;
+  UserEventPayloadVariant257Endpoint Function(
+      {String awsServiceName,
+      String configurationId,
+      String id,
+      String name,
+      SdkOptional<List<String>> privateDnsNames,
+      String vercelRegion}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant257Endpoint _copyWith({Object? awsServiceName = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? privateDnsNames = sdkOmittedValue, Object? vercelRegion = sdkOmittedValue}) => UserEventPayloadVariant257Endpoint(
-    awsServiceName: identical(awsServiceName, sdkOmittedValue) ? this.awsServiceName : awsServiceName as String,
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    privateDnsNames: identical(privateDnsNames, sdkOmittedValue) ? this.privateDnsNames : privateDnsNames as SdkOptional<List<String>>,
-    vercelRegion: identical(vercelRegion, sdkOmittedValue) ? this.vercelRegion : vercelRegion as String,
-  );
+  UserEventPayloadVariant257Endpoint _copyWith(
+          {Object? awsServiceName = sdkOmittedValue,
+          Object? configurationId = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? privateDnsNames = sdkOmittedValue,
+          Object? vercelRegion = sdkOmittedValue}) =>
+      UserEventPayloadVariant257Endpoint(
+        awsServiceName: identical(awsServiceName, sdkOmittedValue)
+            ? this.awsServiceName
+            : awsServiceName as String,
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        privateDnsNames: identical(privateDnsNames, sdkOmittedValue)
+            ? this.privateDnsNames
+            : privateDnsNames as SdkOptional<List<String>>,
+        vercelRegion: identical(vercelRegion, sdkOmittedValue)
+            ? this.vercelRegion
+            : vercelRegion as String,
+      );
 
-  factory UserEventPayloadVariant257Endpoint.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant257Endpoint(
-    awsServiceName: (json['awsServiceName'] as String?)!,
-    configurationId: (json['configurationId'] as String?)!,
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    privateDnsNames: json['privateDnsNames'] != null ? SdkPresent(((json['privateDnsNames'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    vercelRegion: (json['vercelRegion'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant257Endpoint.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant257Endpoint(
+            awsServiceName: (json['awsServiceName'] as String?)!,
+            configurationId: (json['configurationId'] as String?)!,
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+            privateDnsNames: json['privateDnsNames'] != null
+                ? SdkPresent(((json['privateDnsNames'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            vercelRegion: (json['vercelRegion'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'awsServiceName': awsServiceName,
-    'configurationId': configurationId,
-    'id': id,
-    'name': name,
-    ...switch (privateDnsNames) {
-      SdkPresent<List<String>>(value: final value) => {'privateDnsNames': value,},
-      _ => const <String, dynamic>{},
-    },
-    'vercelRegion': vercelRegion,
-  };
+        'awsServiceName': awsServiceName,
+        'configurationId': configurationId,
+        'id': id,
+        'name': name,
+        ...switch (privateDnsNames) {
+          SdkPresent<List<String>>(value: final value) => {
+              'privateDnsNames': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'vercelRegion': vercelRegion,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant257 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `endpoint` wire field.
   final UserEventPayloadVariant257Endpoint endpoint;
+
   /// Optional `string` value serialized in the `networkName` wire field.
   final SdkOptional<String> networkName;
+
   /// Required enumerated value serialized in the `scope` wire field.
   final UserEventPayloadVariant257Scope scope;
 
-  const UserEventPayloadVariant257({required this.endpoint, this.networkName = const SdkOmitted(), required this.scope});
+  const UserEventPayloadVariant257(
+      {required this.endpoint,
+      this.networkName = const SdkOmitted(),
+      required this.scope});
 
-  UserEventPayloadVariant257 Function({UserEventPayloadVariant257Endpoint endpoint, SdkOptional<String> networkName, UserEventPayloadVariant257Scope scope}) get copyWith => _copyWith;
+  UserEventPayloadVariant257 Function(
+      {UserEventPayloadVariant257Endpoint endpoint,
+      SdkOptional<String> networkName,
+      UserEventPayloadVariant257Scope scope}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant257 _copyWith({Object? endpoint = sdkOmittedValue, Object? networkName = sdkOmittedValue, Object? scope = sdkOmittedValue}) => UserEventPayloadVariant257(
-    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as UserEventPayloadVariant257Endpoint,
-    networkName: identical(networkName, sdkOmittedValue) ? this.networkName : networkName as SdkOptional<String>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as UserEventPayloadVariant257Scope,
-  );
+  UserEventPayloadVariant257 _copyWith(
+          {Object? endpoint = sdkOmittedValue,
+          Object? networkName = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      UserEventPayloadVariant257(
+        endpoint: identical(endpoint, sdkOmittedValue)
+            ? this.endpoint
+            : endpoint as UserEventPayloadVariant257Endpoint,
+        networkName: identical(networkName, sdkOmittedValue)
+            ? this.networkName
+            : networkName as SdkOptional<String>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as UserEventPayloadVariant257Scope,
+      );
 
-  factory UserEventPayloadVariant257.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant257(
-    endpoint: (json['endpoint'] != null ? UserEventPayloadVariant257Endpoint.fromJson(json['endpoint'] as Map<String, dynamic>) : null)!,
-    networkName: json['networkName'] != null ? SdkPresent((json['networkName'] as String?)!) : const SdkOmitted(),
-    scope: (json['scope'] != null ? UserEventPayloadVariant257Scope.fromJson(json['scope'] as String) : null)!,
-  ), json);
+  factory UserEventPayloadVariant257.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant257(
+            endpoint: (json['endpoint'] != null
+                ? UserEventPayloadVariant257Endpoint.fromJson(
+                    json['endpoint'] as Map<String, dynamic>)
+                : null)!,
+            networkName: json['networkName'] != null
+                ? SdkPresent((json['networkName'] as String?)!)
+                : const SdkOmitted(),
+            scope: (json['scope'] != null
+                ? UserEventPayloadVariant257Scope.fromJson(
+                    json['scope'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'endpoint': endpoint.toJson(),
-    ...switch (networkName) {
-      SdkPresent<String>(value: final value) => {'networkName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'scope': scope.toJson(),
-  };
+        'endpoint': endpoint.toJson(),
+        ...switch (networkName) {
+          SdkPresent<String>(value: final value) => {
+              'networkName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'scope': scope.toJson(),
+      };
 }
 
 /// Required object value serialized in the `endpoint` wire field.
 class UserEventPayloadVariant258Endpoint implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `awsServiceName` wire field.
   final String awsServiceName;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Optional array value serialized in the `privateDnsNames` wire field.
   final SdkOptional<List<String>> privateDnsNames;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `vercelRegion` wire field.
   final String vercelRegion;
 
-  const UserEventPayloadVariant258Endpoint({required this.awsServiceName, required this.id, required this.name, this.privateDnsNames = const SdkOmitted(), required this.projectId, required this.vercelRegion});
+  const UserEventPayloadVariant258Endpoint(
+      {required this.awsServiceName,
+      required this.id,
+      required this.name,
+      this.privateDnsNames = const SdkOmitted(),
+      required this.projectId,
+      required this.vercelRegion});
 
-  UserEventPayloadVariant258Endpoint Function({String awsServiceName, String id, String name, SdkOptional<List<String>> privateDnsNames, String projectId, String vercelRegion}) get copyWith => _copyWith;
+  UserEventPayloadVariant258Endpoint Function(
+      {String awsServiceName,
+      String id,
+      String name,
+      SdkOptional<List<String>> privateDnsNames,
+      String projectId,
+      String vercelRegion}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant258Endpoint _copyWith({Object? awsServiceName = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? privateDnsNames = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? vercelRegion = sdkOmittedValue}) => UserEventPayloadVariant258Endpoint(
-    awsServiceName: identical(awsServiceName, sdkOmittedValue) ? this.awsServiceName : awsServiceName as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    privateDnsNames: identical(privateDnsNames, sdkOmittedValue) ? this.privateDnsNames : privateDnsNames as SdkOptional<List<String>>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    vercelRegion: identical(vercelRegion, sdkOmittedValue) ? this.vercelRegion : vercelRegion as String,
-  );
+  UserEventPayloadVariant258Endpoint _copyWith(
+          {Object? awsServiceName = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? privateDnsNames = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? vercelRegion = sdkOmittedValue}) =>
+      UserEventPayloadVariant258Endpoint(
+        awsServiceName: identical(awsServiceName, sdkOmittedValue)
+            ? this.awsServiceName
+            : awsServiceName as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        privateDnsNames: identical(privateDnsNames, sdkOmittedValue)
+            ? this.privateDnsNames
+            : privateDnsNames as SdkOptional<List<String>>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        vercelRegion: identical(vercelRegion, sdkOmittedValue)
+            ? this.vercelRegion
+            : vercelRegion as String,
+      );
 
-  factory UserEventPayloadVariant258Endpoint.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant258Endpoint(
-    awsServiceName: (json['awsServiceName'] as String?)!,
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    privateDnsNames: json['privateDnsNames'] != null ? SdkPresent(((json['privateDnsNames'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    vercelRegion: (json['vercelRegion'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant258Endpoint.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant258Endpoint(
+            awsServiceName: (json['awsServiceName'] as String?)!,
+            id: (json['id'] as String?)!,
+            name: (json['name'] as String?)!,
+            privateDnsNames: json['privateDnsNames'] != null
+                ? SdkPresent(((json['privateDnsNames'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            projectId: (json['projectId'] as String?)!,
+            vercelRegion: (json['vercelRegion'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'awsServiceName': awsServiceName,
-    'id': id,
-    'name': name,
-    ...switch (privateDnsNames) {
-      SdkPresent<List<String>>(value: final value) => {'privateDnsNames': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'vercelRegion': vercelRegion,
-  };
+        'awsServiceName': awsServiceName,
+        'id': id,
+        'name': name,
+        ...switch (privateDnsNames) {
+          SdkPresent<List<String>>(value: final value) => {
+              'privateDnsNames': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'vercelRegion': vercelRegion,
+      };
 }

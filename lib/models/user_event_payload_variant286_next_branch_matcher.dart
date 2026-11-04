@@ -8,257 +8,478 @@ part of 'user.dart';
 class UserEventPayloadVariant286NextBranchMatcher implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The pattern to match against branch names
   final String pattern;
+
   /// The type of matching to perform
   final UserEventPayloadVariant286NextBranchMatcherType type_;
 
-  const UserEventPayloadVariant286NextBranchMatcher({required this.pattern, required this.type_});
+  const UserEventPayloadVariant286NextBranchMatcher(
+      {required this.pattern, required this.type_});
 
-  UserEventPayloadVariant286NextBranchMatcher Function({String pattern, UserEventPayloadVariant286NextBranchMatcherType type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant286NextBranchMatcher Function(
+          {String pattern,
+          UserEventPayloadVariant286NextBranchMatcherType type_})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant286NextBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant286NextBranchMatcher(
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant286NextBranchMatcherType,
-  );
+  UserEventPayloadVariant286NextBranchMatcher _copyWith(
+          {Object? pattern = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UserEventPayloadVariant286NextBranchMatcher(
+        pattern: identical(pattern, sdkOmittedValue)
+            ? this.pattern
+            : pattern as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventPayloadVariant286NextBranchMatcherType,
+      );
 
-  factory UserEventPayloadVariant286NextBranchMatcher.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant286NextBranchMatcher(
-    pattern: (json['pattern'] as String?)!,
-    type_: (json['type'] != null ? UserEventPayloadVariant286NextBranchMatcherType.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UserEventPayloadVariant286NextBranchMatcher.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant286NextBranchMatcher(
+            pattern: (json['pattern'] as String?)!,
+            type_: (json['type'] != null
+                ? UserEventPayloadVariant286NextBranchMatcherType.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'pattern': pattern,
-    'type': type_.toJson(),
-  };
+        'pattern': pattern,
+        'type': type_.toJson(),
+      };
 }
 
 /// Required object value serialized in the `next` wire field.
 class UserEventPayloadVariant286Next implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `branchMatcher` wire field.
   final SdkOptional<UserEventPayloadVariant286NextBranchMatcher> branchMatcher;
 
-  const UserEventPayloadVariant286Next({this.branchMatcher = const SdkOmitted()});
+  const UserEventPayloadVariant286Next(
+      {this.branchMatcher = const SdkOmitted()});
 
-  UserEventPayloadVariant286Next Function({SdkOptional<UserEventPayloadVariant286NextBranchMatcher> branchMatcher}) get copyWith => _copyWith;
+  UserEventPayloadVariant286Next Function(
+      {SdkOptional<UserEventPayloadVariant286NextBranchMatcher>
+          branchMatcher}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant286Next _copyWith({Object? branchMatcher = sdkOmittedValue}) => UserEventPayloadVariant286Next(
-    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<UserEventPayloadVariant286NextBranchMatcher>,
-  );
+  UserEventPayloadVariant286Next _copyWith(
+          {Object? branchMatcher = sdkOmittedValue}) =>
+      UserEventPayloadVariant286Next(
+        branchMatcher: identical(branchMatcher, sdkOmittedValue)
+            ? this.branchMatcher
+            : branchMatcher
+                as SdkOptional<UserEventPayloadVariant286NextBranchMatcher>,
+      );
 
-  factory UserEventPayloadVariant286Next.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant286Next(
-    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? UserEventPayloadVariant286NextBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant286Next.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant286Next(
+            branchMatcher: json['branchMatcher'] != null
+                ? SdkPresent((json['branchMatcher'] != null
+                    ? UserEventPayloadVariant286NextBranchMatcher.fromJson(
+                        json['branchMatcher'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (branchMatcher) {
-      SdkPresent<UserEventPayloadVariant286NextBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (branchMatcher) {
+          SdkPresent<UserEventPayloadVariant286NextBranchMatcher>(
+            value: final value
+          ) =>
+            {
+              'branchMatcher': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `branchMatcher` wire field.
 class UserEventPayloadVariant286PreviousBranchMatcher implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The pattern to match against branch names
   final String pattern;
+
   /// The type of matching to perform
   final UserEventPayloadVariant286PreviousBranchMatcherType type_;
 
-  const UserEventPayloadVariant286PreviousBranchMatcher({required this.pattern, required this.type_});
+  const UserEventPayloadVariant286PreviousBranchMatcher(
+      {required this.pattern, required this.type_});
 
-  UserEventPayloadVariant286PreviousBranchMatcher Function({String pattern, UserEventPayloadVariant286PreviousBranchMatcherType type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant286PreviousBranchMatcher Function(
+          {String pattern,
+          UserEventPayloadVariant286PreviousBranchMatcherType type_})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant286PreviousBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant286PreviousBranchMatcher(
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant286PreviousBranchMatcherType,
-  );
+  UserEventPayloadVariant286PreviousBranchMatcher _copyWith(
+          {Object? pattern = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UserEventPayloadVariant286PreviousBranchMatcher(
+        pattern: identical(pattern, sdkOmittedValue)
+            ? this.pattern
+            : pattern as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventPayloadVariant286PreviousBranchMatcherType,
+      );
 
-  factory UserEventPayloadVariant286PreviousBranchMatcher.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant286PreviousBranchMatcher(
-    pattern: (json['pattern'] as String?)!,
-    type_: (json['type'] != null ? UserEventPayloadVariant286PreviousBranchMatcherType.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UserEventPayloadVariant286PreviousBranchMatcher.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant286PreviousBranchMatcher(
+            pattern: (json['pattern'] as String?)!,
+            type_: (json['type'] != null
+                ? UserEventPayloadVariant286PreviousBranchMatcherType.fromJson(
+                    json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'pattern': pattern,
-    'type': type_.toJson(),
-  };
+        'pattern': pattern,
+        'type': type_.toJson(),
+      };
 }
 
 /// Required object value serialized in the `previous` wire field.
 class UserEventPayloadVariant286Previous implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `branchMatcher` wire field.
-  final SdkOptional<UserEventPayloadVariant286PreviousBranchMatcher> branchMatcher;
+  final SdkOptional<UserEventPayloadVariant286PreviousBranchMatcher>
+      branchMatcher;
 
-  const UserEventPayloadVariant286Previous({this.branchMatcher = const SdkOmitted()});
+  const UserEventPayloadVariant286Previous(
+      {this.branchMatcher = const SdkOmitted()});
 
-  UserEventPayloadVariant286Previous Function({SdkOptional<UserEventPayloadVariant286PreviousBranchMatcher> branchMatcher}) get copyWith => _copyWith;
+  UserEventPayloadVariant286Previous Function(
+      {SdkOptional<UserEventPayloadVariant286PreviousBranchMatcher>
+          branchMatcher}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant286Previous _copyWith({Object? branchMatcher = sdkOmittedValue}) => UserEventPayloadVariant286Previous(
-    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<UserEventPayloadVariant286PreviousBranchMatcher>,
-  );
+  UserEventPayloadVariant286Previous _copyWith(
+          {Object? branchMatcher = sdkOmittedValue}) =>
+      UserEventPayloadVariant286Previous(
+        branchMatcher: identical(branchMatcher, sdkOmittedValue)
+            ? this.branchMatcher
+            : branchMatcher
+                as SdkOptional<UserEventPayloadVariant286PreviousBranchMatcher>,
+      );
 
-  factory UserEventPayloadVariant286Previous.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant286Previous(
-    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? UserEventPayloadVariant286PreviousBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant286Previous.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant286Previous(
+            branchMatcher: json['branchMatcher'] != null
+                ? SdkPresent((json['branchMatcher'] != null
+                    ? UserEventPayloadVariant286PreviousBranchMatcher.fromJson(
+                        json['branchMatcher'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (branchMatcher) {
-      SdkPresent<UserEventPayloadVariant286PreviousBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (branchMatcher) {
+          SdkPresent<UserEventPayloadVariant286PreviousBranchMatcher>(
+            value: final value
+          ) =>
+            {
+              'branchMatcher': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant286 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `customEnvironmentId` wire field.
   final String customEnvironmentId;
+
   /// Required `string` value serialized in the `customEnvironmentSlug` wire field.
   final String customEnvironmentSlug;
+
   /// Required object value serialized in the `next` wire field.
   final UserEventPayloadVariant286Next next;
+
   /// Required object value serialized in the `previous` wire field.
   final UserEventPayloadVariant286Previous previous;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant286({required this.customEnvironmentId, required this.customEnvironmentSlug, required this.next, required this.previous, required this.projectId, required this.projectName});
+  const UserEventPayloadVariant286(
+      {required this.customEnvironmentId,
+      required this.customEnvironmentSlug,
+      required this.next,
+      required this.previous,
+      required this.projectId,
+      required this.projectName});
 
-  UserEventPayloadVariant286 Function({String customEnvironmentId, String customEnvironmentSlug, UserEventPayloadVariant286Next next, UserEventPayloadVariant286Previous previous, String projectId, String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant286 Function(
+      {String customEnvironmentId,
+      String customEnvironmentSlug,
+      UserEventPayloadVariant286Next next,
+      UserEventPayloadVariant286Previous previous,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant286 _copyWith({Object? customEnvironmentId = sdkOmittedValue, Object? customEnvironmentSlug = sdkOmittedValue, Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant286(
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as String,
-    customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue) ? this.customEnvironmentSlug : customEnvironmentSlug as String,
-    next: identical(next, sdkOmittedValue) ? this.next : next as UserEventPayloadVariant286Next,
-    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as UserEventPayloadVariant286Previous,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  UserEventPayloadVariant286 _copyWith(
+          {Object? customEnvironmentId = sdkOmittedValue,
+          Object? customEnvironmentSlug = sdkOmittedValue,
+          Object? next = sdkOmittedValue,
+          Object? previous = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant286(
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as String,
+        customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue)
+            ? this.customEnvironmentSlug
+            : customEnvironmentSlug as String,
+        next: identical(next, sdkOmittedValue)
+            ? this.next
+            : next as UserEventPayloadVariant286Next,
+        previous: identical(previous, sdkOmittedValue)
+            ? this.previous
+            : previous as UserEventPayloadVariant286Previous,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory UserEventPayloadVariant286.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant286(
-    customEnvironmentId: (json['customEnvironmentId'] as String?)!,
-    customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
-    next: (json['next'] != null ? UserEventPayloadVariant286Next.fromJson(json['next'] as Map<String, dynamic>) : null)!,
-    previous: (json['previous'] != null ? UserEventPayloadVariant286Previous.fromJson(json['previous'] as Map<String, dynamic>) : null)!,
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant286.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant286(
+            customEnvironmentId: (json['customEnvironmentId'] as String?)!,
+            customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
+            next: (json['next'] != null
+                ? UserEventPayloadVariant286Next.fromJson(
+                    json['next'] as Map<String, dynamic>)
+                : null)!,
+            previous: (json['previous'] != null
+                ? UserEventPayloadVariant286Previous.fromJson(
+                    json['previous'] as Map<String, dynamic>)
+                : null)!,
+            projectId: (json['projectId'] as String?)!,
+            projectName: (json['projectName'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'customEnvironmentId': customEnvironmentId,
-    'customEnvironmentSlug': customEnvironmentSlug,
-    'next': next.toJson(),
-    'previous': previous.toJson(),
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'customEnvironmentId': customEnvironmentId,
+        'customEnvironmentSlug': customEnvironmentSlug,
+        'next': next.toJson(),
+        'previous': previous.toJson(),
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant287 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `customEnvironmentId` wire field.
   final String customEnvironmentId;
+
   /// Required `string` value serialized in the `customEnvironmentSlug` wire field.
   final String customEnvironmentSlug;
+
   /// Required enumerated value serialized in the `enableSchedulesByDefault` wire field.
-  final UserEventPayloadVariant287EnableSchedulesByDefault enableSchedulesByDefault;
+  final UserEventPayloadVariant287EnableSchedulesByDefault
+      enableSchedulesByDefault;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant287({required this.customEnvironmentId, required this.customEnvironmentSlug, required this.enableSchedulesByDefault, required this.projectId, required this.projectName});
+  const UserEventPayloadVariant287(
+      {required this.customEnvironmentId,
+      required this.customEnvironmentSlug,
+      required this.enableSchedulesByDefault,
+      required this.projectId,
+      required this.projectName});
 
-  UserEventPayloadVariant287 Function({String customEnvironmentId, String customEnvironmentSlug, UserEventPayloadVariant287EnableSchedulesByDefault enableSchedulesByDefault, String projectId, String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant287 Function(
+      {String customEnvironmentId,
+      String customEnvironmentSlug,
+      UserEventPayloadVariant287EnableSchedulesByDefault
+          enableSchedulesByDefault,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant287 _copyWith({Object? customEnvironmentId = sdkOmittedValue, Object? customEnvironmentSlug = sdkOmittedValue, Object? enableSchedulesByDefault = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant287(
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as String,
-    customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue) ? this.customEnvironmentSlug : customEnvironmentSlug as String,
-    enableSchedulesByDefault: identical(enableSchedulesByDefault, sdkOmittedValue) ? this.enableSchedulesByDefault : enableSchedulesByDefault as UserEventPayloadVariant287EnableSchedulesByDefault,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  UserEventPayloadVariant287 _copyWith(
+          {Object? customEnvironmentId = sdkOmittedValue,
+          Object? customEnvironmentSlug = sdkOmittedValue,
+          Object? enableSchedulesByDefault = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant287(
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as String,
+        customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue)
+            ? this.customEnvironmentSlug
+            : customEnvironmentSlug as String,
+        enableSchedulesByDefault:
+            identical(enableSchedulesByDefault, sdkOmittedValue)
+                ? this.enableSchedulesByDefault
+                : enableSchedulesByDefault
+                    as UserEventPayloadVariant287EnableSchedulesByDefault,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory UserEventPayloadVariant287.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant287(
-    customEnvironmentId: (json['customEnvironmentId'] as String?)!,
-    customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
-    enableSchedulesByDefault: (json['enableSchedulesByDefault'] != null ? UserEventPayloadVariant287EnableSchedulesByDefault.fromJson(json['enableSchedulesByDefault'] as bool) : null)!,
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant287.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant287(
+            customEnvironmentId: (json['customEnvironmentId'] as String?)!,
+            customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
+            enableSchedulesByDefault: (json['enableSchedulesByDefault'] != null
+                ? UserEventPayloadVariant287EnableSchedulesByDefault.fromJson(
+                    json['enableSchedulesByDefault'] as bool)
+                : null)!,
+            projectId: (json['projectId'] as String?)!,
+            projectName: (json['projectName'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'customEnvironmentId': customEnvironmentId,
-    'customEnvironmentSlug': customEnvironmentSlug,
-    'enableSchedulesByDefault': enableSchedulesByDefault.toJson(),
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'customEnvironmentId': customEnvironmentId,
+        'customEnvironmentSlug': customEnvironmentSlug,
+        'enableSchedulesByDefault': enableSchedulesByDefault.toJson(),
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant288 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `customEnvironmentId` wire field.
   final String customEnvironmentId;
+
   /// Required `string` value serialized in the `customEnvironmentSlug` wire field.
   final String customEnvironmentSlug;
+
   /// Optional enumerated value serialized in the `enableSchedulesByDefault` wire field.
-  final SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault> enableSchedulesByDefault;
+  final SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault>
+      enableSchedulesByDefault;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant288({required this.customEnvironmentId, required this.customEnvironmentSlug, this.enableSchedulesByDefault = const SdkOmitted(), required this.projectId, required this.projectName});
+  const UserEventPayloadVariant288(
+      {required this.customEnvironmentId,
+      required this.customEnvironmentSlug,
+      this.enableSchedulesByDefault = const SdkOmitted(),
+      required this.projectId,
+      required this.projectName});
 
-  UserEventPayloadVariant288 Function({String customEnvironmentId, String customEnvironmentSlug, SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault> enableSchedulesByDefault, String projectId, String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant288 Function(
+      {String customEnvironmentId,
+      String customEnvironmentSlug,
+      SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault>
+          enableSchedulesByDefault,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant288 _copyWith({Object? customEnvironmentId = sdkOmittedValue, Object? customEnvironmentSlug = sdkOmittedValue, Object? enableSchedulesByDefault = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant288(
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as String,
-    customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue) ? this.customEnvironmentSlug : customEnvironmentSlug as String,
-    enableSchedulesByDefault: identical(enableSchedulesByDefault, sdkOmittedValue) ? this.enableSchedulesByDefault : enableSchedulesByDefault as SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  UserEventPayloadVariant288 _copyWith(
+          {Object? customEnvironmentId = sdkOmittedValue,
+          Object? customEnvironmentSlug = sdkOmittedValue,
+          Object? enableSchedulesByDefault = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant288(
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as String,
+        customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue)
+            ? this.customEnvironmentSlug
+            : customEnvironmentSlug as String,
+        enableSchedulesByDefault:
+            identical(enableSchedulesByDefault, sdkOmittedValue)
+                ? this.enableSchedulesByDefault
+                : enableSchedulesByDefault as SdkOptional<
+                    UserEventPayloadVariant288EnableSchedulesByDefault>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory UserEventPayloadVariant288.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant288(
-    customEnvironmentId: (json['customEnvironmentId'] as String?)!,
-    customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
-    enableSchedulesByDefault: json['enableSchedulesByDefault'] != null ? SdkPresent((json['enableSchedulesByDefault'] != null ? UserEventPayloadVariant288EnableSchedulesByDefault.fromJson(json['enableSchedulesByDefault'] as bool) : null)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant288.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant288(
+            customEnvironmentId: (json['customEnvironmentId'] as String?)!,
+            customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
+            enableSchedulesByDefault: json['enableSchedulesByDefault'] != null
+                ? SdkPresent((json['enableSchedulesByDefault'] != null
+                    ? UserEventPayloadVariant288EnableSchedulesByDefault
+                        .fromJson(json['enableSchedulesByDefault'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            projectId: (json['projectId'] as String?)!,
+            projectName: (json['projectName'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'customEnvironmentId': customEnvironmentId,
-    'customEnvironmentSlug': customEnvironmentSlug,
-    ...switch (enableSchedulesByDefault) {
-      SdkPresent<UserEventPayloadVariant288EnableSchedulesByDefault>(value: final value) => {'enableSchedulesByDefault': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'customEnvironmentId': customEnvironmentId,
+        'customEnvironmentSlug': customEnvironmentSlug,
+        ...switch (enableSchedulesByDefault) {
+          SdkPresent<UserEventPayloadVariant288EnableSchedulesByDefault>(
+            value: final value
+          ) =>
+            {
+              'enableSchedulesByDefault': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }

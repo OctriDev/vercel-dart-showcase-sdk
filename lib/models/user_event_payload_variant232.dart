@@ -8,280 +8,478 @@ part of 'user.dart';
 class UserEventPayloadVariant232 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enforced` wire field.
   final UserEventPayloadVariant232Enforced enforced;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
+
   /// Required `string` value serialized in the `organizationSlug` wire field.
   final String organizationSlug;
+
   /// Required enumerated value serialized in the `previousEnforced` wire field.
   final UserEventPayloadVariant232PreviousEnforced previousEnforced;
 
-  const UserEventPayloadVariant232({required this.enforced, required this.organizationId, required this.organizationSlug, required this.previousEnforced});
+  const UserEventPayloadVariant232(
+      {required this.enforced,
+      required this.organizationId,
+      required this.organizationSlug,
+      required this.previousEnforced});
 
-  UserEventPayloadVariant232 Function({UserEventPayloadVariant232Enforced enforced, String organizationId, String organizationSlug, UserEventPayloadVariant232PreviousEnforced previousEnforced}) get copyWith => _copyWith;
+  UserEventPayloadVariant232 Function(
+          {UserEventPayloadVariant232Enforced enforced,
+          String organizationId,
+          String organizationSlug,
+          UserEventPayloadVariant232PreviousEnforced previousEnforced})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant232 _copyWith({Object? enforced = sdkOmittedValue, Object? organizationId = sdkOmittedValue, Object? organizationSlug = sdkOmittedValue, Object? previousEnforced = sdkOmittedValue}) => UserEventPayloadVariant232(
-    enforced: identical(enforced, sdkOmittedValue) ? this.enforced : enforced as UserEventPayloadVariant232Enforced,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-    organizationSlug: identical(organizationSlug, sdkOmittedValue) ? this.organizationSlug : organizationSlug as String,
-    previousEnforced: identical(previousEnforced, sdkOmittedValue) ? this.previousEnforced : previousEnforced as UserEventPayloadVariant232PreviousEnforced,
-  );
+  UserEventPayloadVariant232 _copyWith(
+          {Object? enforced = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue,
+          Object? organizationSlug = sdkOmittedValue,
+          Object? previousEnforced = sdkOmittedValue}) =>
+      UserEventPayloadVariant232(
+        enforced: identical(enforced, sdkOmittedValue)
+            ? this.enforced
+            : enforced as UserEventPayloadVariant232Enforced,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+        organizationSlug: identical(organizationSlug, sdkOmittedValue)
+            ? this.organizationSlug
+            : organizationSlug as String,
+        previousEnforced: identical(previousEnforced, sdkOmittedValue)
+            ? this.previousEnforced
+            : previousEnforced as UserEventPayloadVariant232PreviousEnforced,
+      );
 
-  factory UserEventPayloadVariant232.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant232(
-    enforced: (json['enforced'] != null ? UserEventPayloadVariant232Enforced.fromJson(json['enforced'] as bool) : null)!,
-    organizationId: (json['organizationId'] as String?)!,
-    organizationSlug: (json['organizationSlug'] as String?)!,
-    previousEnforced: (json['previousEnforced'] != null ? UserEventPayloadVariant232PreviousEnforced.fromJson(json['previousEnforced'] as bool) : null)!,
-  ), json);
+  factory UserEventPayloadVariant232.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant232(
+            enforced: (json['enforced'] != null
+                ? UserEventPayloadVariant232Enforced.fromJson(
+                    json['enforced'] as bool)
+                : null)!,
+            organizationId: (json['organizationId'] as String?)!,
+            organizationSlug: (json['organizationSlug'] as String?)!,
+            previousEnforced: (json['previousEnforced'] != null
+                ? UserEventPayloadVariant232PreviousEnforced.fromJson(
+                    json['previousEnforced'] as bool)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'enforced': enforced.toJson(),
-    'organizationId': organizationId,
-    'organizationSlug': organizationSlug,
-    'previousEnforced': previousEnforced.toJson(),
-  };
+        'enforced': enforced.toJson(),
+        'organizationId': organizationId,
+        'organizationSlug': organizationSlug,
+        'previousEnforced': previousEnforced.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant233 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `mode` wire field.
   final UserEventPayloadVariant233Mode mode;
+
   /// Required `string` value serialized in the `organizationId` wire field.
   final String organizationId;
+
   /// Required enumerated value serialized in the `previousMode` wire field.
   final UserEventPayloadVariant233PreviousMode previousMode;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
+
   /// Required `string` value serialized in the `teamName` wire field.
   final String teamName;
 
-  const UserEventPayloadVariant233({required this.mode, required this.organizationId, required this.previousMode, required this.teamId, required this.teamName});
+  const UserEventPayloadVariant233(
+      {required this.mode,
+      required this.organizationId,
+      required this.previousMode,
+      required this.teamId,
+      required this.teamName});
 
-  UserEventPayloadVariant233 Function({UserEventPayloadVariant233Mode mode, String organizationId, UserEventPayloadVariant233PreviousMode previousMode, String teamId, String teamName}) get copyWith => _copyWith;
+  UserEventPayloadVariant233 Function(
+      {UserEventPayloadVariant233Mode mode,
+      String organizationId,
+      UserEventPayloadVariant233PreviousMode previousMode,
+      String teamId,
+      String teamName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant233 _copyWith({Object? mode = sdkOmittedValue, Object? organizationId = sdkOmittedValue, Object? previousMode = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? teamName = sdkOmittedValue}) => UserEventPayloadVariant233(
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as UserEventPayloadVariant233Mode,
-    organizationId: identical(organizationId, sdkOmittedValue) ? this.organizationId : organizationId as String,
-    previousMode: identical(previousMode, sdkOmittedValue) ? this.previousMode : previousMode as UserEventPayloadVariant233PreviousMode,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    teamName: identical(teamName, sdkOmittedValue) ? this.teamName : teamName as String,
-  );
+  UserEventPayloadVariant233 _copyWith(
+          {Object? mode = sdkOmittedValue,
+          Object? organizationId = sdkOmittedValue,
+          Object? previousMode = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? teamName = sdkOmittedValue}) =>
+      UserEventPayloadVariant233(
+        mode: identical(mode, sdkOmittedValue)
+            ? this.mode
+            : mode as UserEventPayloadVariant233Mode,
+        organizationId: identical(organizationId, sdkOmittedValue)
+            ? this.organizationId
+            : organizationId as String,
+        previousMode: identical(previousMode, sdkOmittedValue)
+            ? this.previousMode
+            : previousMode as UserEventPayloadVariant233PreviousMode,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        teamName: identical(teamName, sdkOmittedValue)
+            ? this.teamName
+            : teamName as String,
+      );
 
-  factory UserEventPayloadVariant233.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant233(
-    mode: (json['mode'] != null ? UserEventPayloadVariant233Mode.fromJson(json['mode'] as String) : null)!,
-    organizationId: (json['organizationId'] as String?)!,
-    previousMode: (json['previousMode'] != null ? UserEventPayloadVariant233PreviousMode.fromJson(json['previousMode'] as String) : null)!,
-    teamId: (json['teamId'] as String?)!,
-    teamName: (json['teamName'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant233.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant233(
+            mode: (json['mode'] != null
+                ? UserEventPayloadVariant233Mode.fromJson(
+                    json['mode'] as String)
+                : null)!,
+            organizationId: (json['organizationId'] as String?)!,
+            previousMode: (json['previousMode'] != null
+                ? UserEventPayloadVariant233PreviousMode.fromJson(
+                    json['previousMode'] as String)
+                : null)!,
+            teamId: (json['teamId'] as String?)!,
+            teamName: (json['teamName'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'mode': mode.toJson(),
-    'organizationId': organizationId,
-    'previousMode': previousMode.toJson(),
-    'teamId': teamId,
-    'teamName': teamName,
-  };
+        'mode': mode.toJson(),
+        'organizationId': organizationId,
+        'previousMode': previousMode.toJson(),
+        'teamId': teamId,
+        'teamName': teamName,
+      };
 }
 
 /// Optional object value serialized in the `siftRoute` wire field.
 class UserEventPayloadVariant234SiftRoute implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant234SiftRoute({required this.name});
 
-  UserEventPayloadVariant234SiftRoute Function({String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant234SiftRoute Function({String name}) get copyWith =>
+      _copyWith;
 
-  UserEventPayloadVariant234SiftRoute _copyWith({Object? name = sdkOmittedValue}) => UserEventPayloadVariant234SiftRoute(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant234SiftRoute _copyWith(
+          {Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant234SiftRoute(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant234SiftRoute.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant234SiftRoute(
-    name: (json['name'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant234SiftRoute.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant234SiftRoute(
+            name: (json['name'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'name': name,
-  };
+        'name': name,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant234 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `blockReason` wire field.
   final SdkOptional<String> blockReason;
+
   /// Required `string` value serialized in the `cause` wire field.
   final String cause;
+
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
+
   /// Optional object value serialized in the `siftRoute` wire field.
   final SdkOptional<UserEventPayloadVariant234SiftRoute> siftRoute;
+
   /// Required `string` value serialized in the `source` wire field.
   final String source;
 
-  const UserEventPayloadVariant234({this.blockReason = const SdkOmitted(), required this.cause, required this.ownerId, this.siftRoute = const SdkOmitted(), required this.source});
+  const UserEventPayloadVariant234(
+      {this.blockReason = const SdkOmitted(),
+      required this.cause,
+      required this.ownerId,
+      this.siftRoute = const SdkOmitted(),
+      required this.source});
 
-  UserEventPayloadVariant234 Function({SdkOptional<String> blockReason, String cause, String ownerId, SdkOptional<UserEventPayloadVariant234SiftRoute> siftRoute, String source}) get copyWith => _copyWith;
+  UserEventPayloadVariant234 Function(
+      {SdkOptional<String> blockReason,
+      String cause,
+      String ownerId,
+      SdkOptional<UserEventPayloadVariant234SiftRoute> siftRoute,
+      String source}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant234 _copyWith({Object? blockReason = sdkOmittedValue, Object? cause = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? siftRoute = sdkOmittedValue, Object? source = sdkOmittedValue}) => UserEventPayloadVariant234(
-    blockReason: identical(blockReason, sdkOmittedValue) ? this.blockReason : blockReason as SdkOptional<String>,
-    cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    siftRoute: identical(siftRoute, sdkOmittedValue) ? this.siftRoute : siftRoute as SdkOptional<UserEventPayloadVariant234SiftRoute>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as String,
-  );
+  UserEventPayloadVariant234 _copyWith(
+          {Object? blockReason = sdkOmittedValue,
+          Object? cause = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? siftRoute = sdkOmittedValue,
+          Object? source = sdkOmittedValue}) =>
+      UserEventPayloadVariant234(
+        blockReason: identical(blockReason, sdkOmittedValue)
+            ? this.blockReason
+            : blockReason as SdkOptional<String>,
+        cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        siftRoute: identical(siftRoute, sdkOmittedValue)
+            ? this.siftRoute
+            : siftRoute as SdkOptional<UserEventPayloadVariant234SiftRoute>,
+        source:
+            identical(source, sdkOmittedValue) ? this.source : source as String,
+      );
 
-  factory UserEventPayloadVariant234.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant234(
-    blockReason: json['blockReason'] != null ? SdkPresent((json['blockReason'] as String?)!) : const SdkOmitted(),
-    cause: (json['cause'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    siftRoute: json['siftRoute'] != null ? SdkPresent((json['siftRoute'] != null ? UserEventPayloadVariant234SiftRoute.fromJson(json['siftRoute'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    source: (json['source'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant234.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant234(
+            blockReason: json['blockReason'] != null
+                ? SdkPresent((json['blockReason'] as String?)!)
+                : const SdkOmitted(),
+            cause: (json['cause'] as String?)!,
+            ownerId: (json['ownerId'] as String?)!,
+            siftRoute: json['siftRoute'] != null
+                ? SdkPresent((json['siftRoute'] != null
+                    ? UserEventPayloadVariant234SiftRoute.fromJson(
+                        json['siftRoute'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            source: (json['source'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (blockReason) {
-      SdkPresent<String>(value: final value) => {'blockReason': value,},
-      _ => const <String, dynamic>{},
-    },
-    'cause': cause,
-    'ownerId': ownerId,
-    ...switch (siftRoute) {
-      SdkPresent<UserEventPayloadVariant234SiftRoute>(value: final value) => {'siftRoute': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'source': source,
-  };
+        ...switch (blockReason) {
+          SdkPresent<String>(value: final value) => {
+              'blockReason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'cause': cause,
+        'ownerId': ownerId,
+        ...switch (siftRoute) {
+          SdkPresent<UserEventPayloadVariant234SiftRoute>(value: final value) =>
+            {
+              'siftRoute': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'source': source,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant235 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `cause` wire field.
   final String cause;
+
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
+
   /// Optional `string` value serialized in the `reason` wire field.
   final SdkOptional<String?> reason;
+
   /// Required `string` value serialized in the `source` wire field.
   final String source;
 
-  const UserEventPayloadVariant235({required this.cause, required this.ownerId, this.reason = const SdkOmitted(), required this.source});
+  const UserEventPayloadVariant235(
+      {required this.cause,
+      required this.ownerId,
+      this.reason = const SdkOmitted(),
+      required this.source});
 
-  UserEventPayloadVariant235 Function({String cause, String ownerId, SdkOptional<String?> reason, String source}) get copyWith => _copyWith;
+  UserEventPayloadVariant235 Function(
+      {String cause,
+      String ownerId,
+      SdkOptional<String?> reason,
+      String source}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant235 _copyWith({Object? cause = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? source = sdkOmittedValue}) => UserEventPayloadVariant235(
-    cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<String?>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as String,
-  );
+  UserEventPayloadVariant235 _copyWith(
+          {Object? cause = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? reason = sdkOmittedValue,
+          Object? source = sdkOmittedValue}) =>
+      UserEventPayloadVariant235(
+        cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        reason: identical(reason, sdkOmittedValue)
+            ? this.reason
+            : reason as SdkOptional<String?>,
+        source:
+            identical(source, sdkOmittedValue) ? this.source : source as String,
+      );
 
-  factory UserEventPayloadVariant235.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant235(
-    cause: (json['cause'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    reason: json.containsKey('reason') ? SdkPresent(json['reason'] as String?) : const SdkOmitted(),
-    source: (json['source'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant235.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant235(
+            cause: (json['cause'] as String?)!,
+            ownerId: (json['ownerId'] as String?)!,
+            reason: json.containsKey('reason')
+                ? SdkPresent(json['reason'] as String?)
+                : const SdkOmitted(),
+            source: (json['source'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'cause': cause,
-    'ownerId': ownerId,
-    ...switch (reason) {
-      SdkPresent<String?>(value: final value) => {'reason': value,},
-      _ => const <String, dynamic>{},
-    },
-    'source': source,
-  };
+        'cause': cause,
+        'ownerId': ownerId,
+        ...switch (reason) {
+          SdkPresent<String?>(value: final value) => {
+              'reason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'source': source,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant236 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `blockReason` wire field.
   final SdkOptional<String> blockReason;
+
   /// Required `string` value serialized in the `cause` wire field.
   final String cause;
+
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
+
   /// Required `string` value serialized in the `source` wire field.
   final String source;
 
-  const UserEventPayloadVariant236({this.blockReason = const SdkOmitted(), required this.cause, required this.ownerId, required this.source});
+  const UserEventPayloadVariant236(
+      {this.blockReason = const SdkOmitted(),
+      required this.cause,
+      required this.ownerId,
+      required this.source});
 
-  UserEventPayloadVariant236 Function({SdkOptional<String> blockReason, String cause, String ownerId, String source}) get copyWith => _copyWith;
+  UserEventPayloadVariant236 Function(
+      {SdkOptional<String> blockReason,
+      String cause,
+      String ownerId,
+      String source}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant236 _copyWith({Object? blockReason = sdkOmittedValue, Object? cause = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? source = sdkOmittedValue}) => UserEventPayloadVariant236(
-    blockReason: identical(blockReason, sdkOmittedValue) ? this.blockReason : blockReason as SdkOptional<String>,
-    cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    source: identical(source, sdkOmittedValue) ? this.source : source as String,
-  );
+  UserEventPayloadVariant236 _copyWith(
+          {Object? blockReason = sdkOmittedValue,
+          Object? cause = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? source = sdkOmittedValue}) =>
+      UserEventPayloadVariant236(
+        blockReason: identical(blockReason, sdkOmittedValue)
+            ? this.blockReason
+            : blockReason as SdkOptional<String>,
+        cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        source:
+            identical(source, sdkOmittedValue) ? this.source : source as String,
+      );
 
-  factory UserEventPayloadVariant236.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant236(
-    blockReason: json['blockReason'] != null ? SdkPresent((json['blockReason'] as String?)!) : const SdkOmitted(),
-    cause: (json['cause'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    source: (json['source'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant236.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant236(
+            blockReason: json['blockReason'] != null
+                ? SdkPresent((json['blockReason'] as String?)!)
+                : const SdkOmitted(),
+            cause: (json['cause'] as String?)!,
+            ownerId: (json['ownerId'] as String?)!,
+            source: (json['source'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (blockReason) {
-      SdkPresent<String>(value: final value) => {'blockReason': value,},
-      _ => const <String, dynamic>{},
-    },
-    'cause': cause,
-    'ownerId': ownerId,
-    'source': source,
-  };
+        ...switch (blockReason) {
+          SdkPresent<String>(value: final value) => {
+              'blockReason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'cause': cause,
+        'ownerId': ownerId,
+        'source': source,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant237 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `cause` wire field.
   final String cause;
+
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
+
   /// Required `string` value serialized in the `source` wire field.
   final String source;
 
-  const UserEventPayloadVariant237({required this.cause, required this.ownerId, required this.source});
+  const UserEventPayloadVariant237(
+      {required this.cause, required this.ownerId, required this.source});
 
-  UserEventPayloadVariant237 Function({String cause, String ownerId, String source}) get copyWith => _copyWith;
+  UserEventPayloadVariant237 Function(
+      {String cause, String ownerId, String source}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant237 _copyWith({Object? cause = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? source = sdkOmittedValue}) => UserEventPayloadVariant237(
-    cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    source: identical(source, sdkOmittedValue) ? this.source : source as String,
-  );
+  UserEventPayloadVariant237 _copyWith(
+          {Object? cause = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? source = sdkOmittedValue}) =>
+      UserEventPayloadVariant237(
+        cause: identical(cause, sdkOmittedValue) ? this.cause : cause as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        source:
+            identical(source, sdkOmittedValue) ? this.source : source as String,
+      );
 
-  factory UserEventPayloadVariant237.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant237(
-    cause: (json['cause'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    source: (json['source'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant237.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant237(
+            cause: (json['cause'] as String?)!,
+            ownerId: (json['ownerId'] as String?)!,
+            source: (json['source'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'cause': cause,
-    'ownerId': ownerId,
-    'source': source,
-  };
+        'cause': cause,
+        'ownerId': ownerId,
+        'source': source,
+      };
 }

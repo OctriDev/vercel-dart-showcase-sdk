@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum GetVercelCiInvocationResponseInvocationStatusVariant8 {
   jobsOnHiveCompleted;
 
-  static GetVercelCiInvocationResponseInvocationStatusVariant8 fromJson(String value) {
+  static GetVercelCiInvocationResponseInvocationStatusVariant8 fromJson(
+      String value) {
     switch (value) {
-      case 'jobs_on_hive_completed': return GetVercelCiInvocationResponseInvocationStatusVariant8.jobsOnHiveCompleted;
-      default: throw ArgumentError('Unknown GetVercelCiInvocationResponseInvocationStatusVariant8: $value');
+      case 'jobs_on_hive_completed':
+        return GetVercelCiInvocationResponseInvocationStatusVariant8
+            .jobsOnHiveCompleted;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiInvocationResponseInvocationStatusVariant8: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationResponseInvocationStatusVariant8.jobsOnHiveCompleted: return 'jobs_on_hive_completed';
+      case GetVercelCiInvocationResponseInvocationStatusVariant8
+            .jobsOnHiveCompleted:
+        return 'jobs_on_hive_completed';
     }
   }
 
@@ -27,16 +34,23 @@ enum GetVercelCiInvocationResponseInvocationStatusVariant8 {
 enum GetVercelCiInvocationResponseInvocationStatusVariant9 {
   jobsOnHiveFailed;
 
-  static GetVercelCiInvocationResponseInvocationStatusVariant9 fromJson(String value) {
+  static GetVercelCiInvocationResponseInvocationStatusVariant9 fromJson(
+      String value) {
     switch (value) {
-      case 'jobs_on_hive_failed': return GetVercelCiInvocationResponseInvocationStatusVariant9.jobsOnHiveFailed;
-      default: throw ArgumentError('Unknown GetVercelCiInvocationResponseInvocationStatusVariant9: $value');
+      case 'jobs_on_hive_failed':
+        return GetVercelCiInvocationResponseInvocationStatusVariant9
+            .jobsOnHiveFailed;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiInvocationResponseInvocationStatusVariant9: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationResponseInvocationStatusVariant9.jobsOnHiveFailed: return 'jobs_on_hive_failed';
+      case GetVercelCiInvocationResponseInvocationStatusVariant9
+            .jobsOnHiveFailed:
+        return 'jobs_on_hive_failed';
     }
   }
 
@@ -47,16 +61,23 @@ enum GetVercelCiInvocationResponseInvocationStatusVariant9 {
 enum ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0 {
   command;
 
-  static ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0 fromJson(String value) {
+  static ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'command': return ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0.command;
-      default: throw ArgumentError('Unknown ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0: $value');
+      case 'command':
+        return ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0
+            .command;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0.command: return 'command';
+      case ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0
+            .command:
+        return 'command';
     }
   }
 
@@ -67,16 +88,23 @@ enum ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant0 {
 enum ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1 {
   turbo;
 
-  static ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1 fromJson(String value) {
+  static ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'turbo': return ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1.turbo;
-      default: throw ArgumentError('Unknown ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1: $value');
+      case 'turbo':
+        return ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1
+            .turbo;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1.turbo: return 'turbo';
+      case ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1
+            .turbo:
+        return 'turbo';
     }
   }
 
@@ -87,16 +115,22 @@ enum ListVercelCiJobDefinitionsResponseJobDefinitionsItemKindVariant1 {
 enum GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0 {
   command;
 
-  static GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0 fromJson(String value) {
+  static GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0 fromJson(
+      String value) {
     switch (value) {
-      case 'command': return GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0.command;
-      default: throw ArgumentError('Unknown GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0: $value');
+      case 'command':
+        return GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0
+            .command;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0.command: return 'command';
+      case GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0.command:
+        return 'command';
     }
   }
 
@@ -107,16 +141,21 @@ enum GetVercelCiJobDefinitionResponseJobDefinitionKindVariant0 {
 enum GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1 {
   turbo;
 
-  static GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1 fromJson(String value) {
+  static GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1 fromJson(
+      String value) {
     switch (value) {
-      case 'turbo': return GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1.turbo;
-      default: throw ArgumentError('Unknown GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1: $value');
+      case 'turbo':
+        return GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1.turbo;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1.turbo: return 'turbo';
+      case GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1.turbo:
+        return 'turbo';
     }
   }
 
@@ -125,33 +164,36 @@ enum GetVercelCiJobDefinitionResponseJobDefinitionKindVariant1 {
 }
 
 final class GetVercelCiJobRunLogsFollow {
-
   final int value;
 
   const GetVercelCiJobRunLogsFollow._(this.value);
 
-  factory GetVercelCiJobRunLogsFollow.fromJson(int value) => GetVercelCiJobRunLogsFollow._(value);
+  factory GetVercelCiJobRunLogsFollow.fromJson(int value) =>
+      GetVercelCiJobRunLogsFollow._(value);
 
   static const v0 = GetVercelCiJobRunLogsFollow._(0);
   static const v1 = GetVercelCiJobRunLogsFollow._(1);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetVercelCiJobRunLogsFollow && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetVercelCiJobRunLogsFollow && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetVercelCiJobRunLogsLevelItem {
-
   final String value;
 
   const GetVercelCiJobRunLogsLevelItem._(this.value);
 
-  factory GetVercelCiJobRunLogsLevelItem.fromJson(String value) => GetVercelCiJobRunLogsLevelItem._(value);
+  factory GetVercelCiJobRunLogsLevelItem.fromJson(String value) =>
+      GetVercelCiJobRunLogsLevelItem._(value);
 
   static const trace = GetVercelCiJobRunLogsLevelItem._('trace');
   static const debug = GetVercelCiJobRunLogsLevelItem._('debug');
@@ -164,43 +206,49 @@ final class GetVercelCiJobRunLogsLevelItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetVercelCiJobRunLogsLevelItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetVercelCiJobRunLogsLevelItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// When 1, stream log lines as newline-delimited JSON until the task run finishes.
 final class GetVercelCiTaskRunLogsFollow {
-
   final int value;
 
   const GetVercelCiTaskRunLogsFollow._(this.value);
 
-  factory GetVercelCiTaskRunLogsFollow.fromJson(int value) => GetVercelCiTaskRunLogsFollow._(value);
+  factory GetVercelCiTaskRunLogsFollow.fromJson(int value) =>
+      GetVercelCiTaskRunLogsFollow._(value);
 
   static const v0 = GetVercelCiTaskRunLogsFollow._(0);
   static const v1 = GetVercelCiTaskRunLogsFollow._(1);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetVercelCiTaskRunLogsFollow && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetVercelCiTaskRunLogsFollow && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetVercelCiTaskRunLogsLevelItem {
-
   final String value;
 
   const GetVercelCiTaskRunLogsLevelItem._(this.value);
 
-  factory GetVercelCiTaskRunLogsLevelItem.fromJson(String value) => GetVercelCiTaskRunLogsLevelItem._(value);
+  factory GetVercelCiTaskRunLogsLevelItem.fromJson(String value) =>
+      GetVercelCiTaskRunLogsLevelItem._(value);
 
   static const trace = GetVercelCiTaskRunLogsLevelItem._('trace');
   static const debug = GetVercelCiTaskRunLogsLevelItem._('debug');
@@ -213,21 +261,24 @@ final class GetVercelCiTaskRunLogsLevelItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetVercelCiTaskRunLogsLevelItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetVercelCiTaskRunLogsLevelItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetVercelCiInvocationLogsLevelItem {
-
   final String value;
 
   const GetVercelCiInvocationLogsLevelItem._(this.value);
 
-  factory GetVercelCiInvocationLogsLevelItem.fromJson(String value) => GetVercelCiInvocationLogsLevelItem._(value);
+  factory GetVercelCiInvocationLogsLevelItem.fromJson(String value) =>
+      GetVercelCiInvocationLogsLevelItem._(value);
 
   static const trace = GetVercelCiInvocationLogsLevelItem._('trace');
   static const debug = GetVercelCiInvocationLogsLevelItem._('debug');
@@ -235,26 +286,30 @@ final class GetVercelCiInvocationLogsLevelItem {
   static const info = GetVercelCiInvocationLogsLevelItem._('info');
   static const warn = GetVercelCiInvocationLogsLevelItem._('warn');
   static const error = GetVercelCiInvocationLogsLevelItem._('error');
-  static const systemerror = GetVercelCiInvocationLogsLevelItem._('systemError');
+  static const systemerror =
+      GetVercelCiInvocationLogsLevelItem._('systemError');
   static const fatal = GetVercelCiInvocationLogsLevelItem._('fatal');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetVercelCiInvocationLogsLevelItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetVercelCiInvocationLogsLevelItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetVercelCiTaskLogsConclusionItem {
-
   final String value;
 
   const GetVercelCiTaskLogsConclusionItem._(this.value);
 
-  factory GetVercelCiTaskLogsConclusionItem.fromJson(String value) => GetVercelCiTaskLogsConclusionItem._(value);
+  factory GetVercelCiTaskLogsConclusionItem.fromJson(String value) =>
+      GetVercelCiTaskLogsConclusionItem._(value);
 
   static const succeeded = GetVercelCiTaskLogsConclusionItem._('succeeded');
   static const cached = GetVercelCiTaskLogsConclusionItem._('cached');
@@ -263,10 +318,13 @@ final class GetVercelCiTaskLogsConclusionItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetVercelCiTaskLogsConclusionItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetVercelCiTaskLogsConclusionItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

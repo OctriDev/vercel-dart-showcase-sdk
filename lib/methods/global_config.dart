@@ -21,16 +21,20 @@ Future<List<GetEdgeConfigsResponseItem>> getEdgeConfigs(ClientConfig config,
           'GET', '/v1/global-config',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigs',
-          fromJsonRaw: (value) => (value as List).map((item) => GetEdgeConfigsResponseItem.fromJson(item as Map<String, dynamic>)).toList(),
+          fromJsonRaw: (value) => (value as List)
+              .map((item) => GetEdgeConfigsResponseItem.fromJson(
+                  item as Map<String, dynamic>))
+              .toList(),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a Global Config for the authenticated user or specified team. Supply a `slug` that is at most 64 characters and contains only letters, numbers, underscores, or hyphens; you can also provide initial `items`.
 ///
@@ -51,17 +55,19 @@ Future<CreateEdgeConfigResponse> createEdgeConfig(ClientConfig config,
           'POST', '/v1/global-config',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2),
+                style: 'form', explode: true)
           },
           body: {'slug': slug, 'items': SdkUtils.unwrapOptional(items)},
           decoder: SdkResponseDecoder.json,
           operationId: 'createEdgeConfig',
-          fromJsonRaw: (value) => CreateEdgeConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateEdgeConfigResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a Global Config by its identifier. Use `teamId` or `slug` to make the request on behalf of a team when needed.
 ///
@@ -78,16 +84,18 @@ Future<GetEdgeConfigResponse> getEdgeConfig(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfig',
-          fromJsonRaw: (value) => GetEdgeConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetEdgeConfigResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Replaces a Global Config's name. Supply the required `slug` in the request body; use `teamId` or `slug` to make the request on behalf of a team when needed.
 ///
@@ -108,17 +116,19 @@ Future<UpdateEdgeConfigResponse> updateEdgeConfig(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug_2),
+                style: 'form', explode: true)
           },
           body: {'slug': slug},
           decoder: SdkResponseDecoder.json,
           operationId: 'updateEdgeConfig',
-          fromJsonRaw: (value) => UpdateEdgeConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateEdgeConfigResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a Global Config by its identifier. Use `teamId` or `slug` to make the request on behalf of a team when needed; deletion removes the specified Global Config.
 ///
@@ -135,15 +145,16 @@ Future<void> deleteEdgeConfig(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteEdgeConfig',
           options: requestOptions))
       .data;
 }
-
 
 /// Lists all items in a Global Config. Use the `edgeConfigId` path parameter to select the config; it must begin with the `ecfg_` prefix.
 ///
@@ -162,16 +173,20 @@ Future<List<GlobalConfigItem>> getEdgeConfigItems(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/items',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigItems',
-          fromJsonRaw: (value) => (value as List).map((item) => GlobalConfigItem.fromJson(item as Map<String, dynamic>)).toList(),
+          fromJsonRaw: (value) => (value as List)
+              .map((item) =>
+                  GlobalConfigItem.fromJson(item as Map<String, dynamic>))
+              .toList(),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates multiple items in a Global Config in one request. Supply the required `items` array with the item operations to apply; the `edgeConfigId` must begin with the `ecfg_` prefix.
 ///
@@ -191,17 +206,19 @@ Future<PatchEdgeConfigItemsResponse> patchEdgeConfigItems(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/items',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'items': items},
           decoder: SdkResponseDecoder.json,
           operationId: 'patchEdgeConfigItems',
-          fromJsonRaw: (value) => PatchEdgeConfigItemsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => PatchEdgeConfigItemsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves the schema associated with a Global Config. Use `edgeConfigId` to select the config and `teamId` or `slug` to make the request on behalf of a team when needed.
 ///
@@ -218,8 +235,10 @@ Future<Map<String, dynamic>> getEdgeConfigSchema(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/schema',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigSchema',
@@ -227,7 +246,6 @@ Future<Map<String, dynamic>> getEdgeConfigSchema(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Updates the schema for a Global Config. Supply the required `definition` object; use `dryRun` to request a schema update without applying it, if supported by the API.
 ///
@@ -246,9 +264,12 @@ Future<Map<String, dynamic>> patchEdgeConfigSchema(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/schema',
           config: config,
           query: {
-            'dryRun': SdkQueryValue(SdkUtils.unwrapOptional(dryRun), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'dryRun': SdkQueryValue(SdkUtils.unwrapOptional(dryRun),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'definition': definition},
           decoder: SdkResponseDecoder.json,
@@ -257,7 +278,6 @@ Future<Map<String, dynamic>> patchEdgeConfigSchema(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes the schema associated with a Global Config. Use `edgeConfigId` to select the config and `teamId` or `slug` to make the request on behalf of a team when needed.
 ///
@@ -274,15 +294,16 @@ Future<void> deleteEdgeConfigSchema(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/schema',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteEdgeConfigSchema',
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a specific item from a Global Config. Supply the config identifier and item key to select the item; the config identifier must begin with the `ecfg_` prefix.
 ///
@@ -302,16 +323,18 @@ Future<GlobalConfigItem> getEdgeConfigItem(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/item/${Uri.encodeComponent(edgeConfigItemKey.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigItem',
-          fromJsonRaw: (value) => GlobalConfigItem.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GlobalConfigItem.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists the tokens associated with a Global Config. Use `edgeConfigId` to select the Global Config and optionally `teamId` or `slug` to make the request on behalf of a team. The response includes token metadata and a masked token representation.
 ///
@@ -328,16 +351,20 @@ Future<List<GlobalConfigToken>> getEdgeConfigTokens(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/tokens',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigTokens',
-          fromJsonRaw: (value) => (value as List).map((item) => GlobalConfigToken.fromJson(item as Map<String, dynamic>)).toList(),
+          fromJsonRaw: (value) => (value as List)
+              .map((item) =>
+                  GlobalConfigToken.fromJson(item as Map<String, dynamic>))
+              .toList(),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes one or more tokens from an existing Global Config. Provide token values or token IDs in the request body to choose which tokens to delete. Each supplied list must contain at least one item.
 ///
@@ -364,8 +391,10 @@ Future<void> deleteEdgeConfigTokens(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/tokens',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'tokens': SdkUtils.unwrapOptional(tokens),
@@ -376,7 +405,6 @@ Future<void> deleteEdgeConfigTokens(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves metadata for a specific Global Config token. Use `edgeConfigId` and `token` to identify the token whose metadata you need. The response includes a partially masked token representation and may include the full token for backwards compatibility.
 ///
@@ -394,16 +422,18 @@ Future<GlobalConfigToken> getEdgeConfigToken(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/token/${Uri.encodeComponent(token.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigToken',
-          fromJsonRaw: (value) => GlobalConfigToken.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GlobalConfigToken.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a token for an existing Global Config. Provide a `label` to identify the token, with a maximum length of 52 characters. The 201 response includes the new token and its ID.
 ///
@@ -424,17 +454,19 @@ Future<CreateEdgeConfigTokenResponse> createEdgeConfigToken(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/token',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'label': label},
           decoder: SdkResponseDecoder.json,
           operationId: 'createEdgeConfigToken',
-          fromJsonRaw: (value) => CreateEdgeConfigTokenResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateEdgeConfigTokenResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a specific version of a Global Config from backup storage. Use `edgeConfigId` and `edgeConfigBackupVersionId` to select the Global Config and backup version. The response contains the backup data and its associated metadata.
 ///
@@ -452,8 +484,10 @@ Future<GetEdgeConfigBackupResponse> getEdgeConfigBackup(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/backups/${Uri.encodeComponent(edgeConfigBackupVersionId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigBackup',
@@ -462,36 +496,37 @@ Future<GetEdgeConfigBackupResponse> getEdgeConfigBackup(ClientConfig config,
       .data;
 }
 
-
 /// Restores a specific backup version of a Global Config. Use `edgeConfigId` and `edgeConfigBackupVersionId` to select the Global Config and the version to restore. The response reports the resulting digest, previous digest, restored backup version, and status.
 ///
 /// Restores a Global Config backup.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<RestoreEdgeConfigBackupResponse>
-    restoreEdgeConfigBackup(ClientConfig config,
-        {required String edgeConfigId,
-        required String edgeConfigBackupVersionId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<RestoreEdgeConfigBackupResponse> restoreEdgeConfigBackup(
+    ClientConfig config,
+    {required String edgeConfigId,
+    required String edgeConfigBackupVersionId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   sdkValidatePattern('edgeConfigId', edgeConfigId, '^ecfg_');
 
   return (await sdkRequest<RestoreEdgeConfigBackupResponse>('POST',
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/backups/${Uri.encodeComponent(edgeConfigBackupVersionId.toString())}/restore',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'restoreEdgeConfigBackup',
-          fromJsonRaw: (value) => RestoreEdgeConfigBackupResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RestoreEdgeConfigBackupResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists backups of a Global Config. Use `next` to continue from a pagination cursor, `limit` to control the number of results, and `metadata` to filter the backups. The response includes backup records and pagination information.
 ///
@@ -515,15 +550,21 @@ Future<GetEdgeConfigBackupsResponse> getEdgeConfigBackups(ClientConfig config,
           '/v1/global-config/${Uri.encodeComponent(edgeConfigId.toString())}/backups',
           config: config,
           query: {
-            'next': SdkQueryValue(SdkUtils.unwrapOptional(next), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'metadata': SdkQueryValue(SdkUtils.unwrapOptional(metadata), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'next': SdkQueryValue(SdkUtils.unwrapOptional(next),
+                style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'metadata': SdkQueryValue(SdkUtils.unwrapOptional(metadata),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getEdgeConfigBackups',
-          fromJsonRaw: (value) => GetEdgeConfigBackupsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetEdgeConfigBackupsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

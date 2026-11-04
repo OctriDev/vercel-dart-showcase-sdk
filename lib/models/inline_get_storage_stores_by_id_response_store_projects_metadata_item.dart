@@ -4,120 +4,299 @@
 part of 'inline.dart';
 
 // Inline operation models
-class GetStorageStoresByIdResponseStoreProjectsMetadataItem implements SdkJsonModel {
+class GetStorageStoresByIdResponseStoreProjectsMetadataItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments> deployments;
+  final SdkOptional<
+          GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments>
+      deployments;
   final List<String> environments;
   final List<String> environmentVariables;
   final String? envVarPrefix;
-  final SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?> framework;
+  final SdkOptional<
+          GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?>
+      framework;
   final String id;
   final SdkOptional<String> latestDeployment;
-  final SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive> makeEnvVarsSensitive;
+  final SdkOptional<
+          GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive>
+      makeEnvVarsSensitive;
   final String name;
   final String projectId;
 
-  const GetStorageStoresByIdResponseStoreProjectsMetadataItem({this.deployments = const SdkOmitted(), required this.environments, required this.environmentVariables, required this.envVarPrefix, this.framework = const SdkOmitted(), required this.id, this.latestDeployment = const SdkOmitted(), this.makeEnvVarsSensitive = const SdkOmitted(), required this.name, required this.projectId});
+  const GetStorageStoresByIdResponseStoreProjectsMetadataItem(
+      {this.deployments = const SdkOmitted(),
+      required this.environments,
+      required this.environmentVariables,
+      required this.envVarPrefix,
+      this.framework = const SdkOmitted(),
+      required this.id,
+      this.latestDeployment = const SdkOmitted(),
+      this.makeEnvVarsSensitive = const SdkOmitted(),
+      required this.name,
+      required this.projectId});
 
-  GetStorageStoresByIdResponseStoreProjectsMetadataItem Function({SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments> deployments, List<String> environments, List<String> environmentVariables, String? envVarPrefix, SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?> framework, String id, SdkOptional<String> latestDeployment, SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive> makeEnvVarsSensitive, String name, String projectId}) get copyWith => _copyWith;
+  GetStorageStoresByIdResponseStoreProjectsMetadataItem Function(
+      {SdkOptional<
+              GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments>
+          deployments,
+      List<String> environments,
+      List<String> environmentVariables,
+      String? envVarPrefix,
+      SdkOptional<
+              GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?>
+          framework,
+      String id,
+      SdkOptional<String> latestDeployment,
+      SdkOptional<
+              GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive>
+          makeEnvVarsSensitive,
+      String name,
+      String projectId}) get copyWith => _copyWith;
 
-  GetStorageStoresByIdResponseStoreProjectsMetadataItem _copyWith({Object? deployments = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? environmentVariables = sdkOmittedValue, Object? envVarPrefix = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? id = sdkOmittedValue, Object? latestDeployment = sdkOmittedValue, Object? makeEnvVarsSensitive = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => GetStorageStoresByIdResponseStoreProjectsMetadataItem(
-    deployments: identical(deployments, sdkOmittedValue) ? this.deployments : deployments as SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments>,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<String>,
-    environmentVariables: identical(environmentVariables, sdkOmittedValue) ? this.environmentVariables : environmentVariables as List<String>,
-    envVarPrefix: identical(envVarPrefix, sdkOmittedValue) ? this.envVarPrefix : envVarPrefix as String?,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    latestDeployment: identical(latestDeployment, sdkOmittedValue) ? this.latestDeployment : latestDeployment as SdkOptional<String>,
-    makeEnvVarsSensitive: identical(makeEnvVarsSensitive, sdkOmittedValue) ? this.makeEnvVarsSensitive : makeEnvVarsSensitive as SdkOptional<GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-  );
+  GetStorageStoresByIdResponseStoreProjectsMetadataItem _copyWith(
+          {Object? deployments = sdkOmittedValue,
+          Object? environments = sdkOmittedValue,
+          Object? environmentVariables = sdkOmittedValue,
+          Object? envVarPrefix = sdkOmittedValue,
+          Object? framework = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? latestDeployment = sdkOmittedValue,
+          Object? makeEnvVarsSensitive = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      GetStorageStoresByIdResponseStoreProjectsMetadataItem(
+        deployments: identical(deployments, sdkOmittedValue)
+            ? this.deployments
+            : deployments as SdkOptional<
+                GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments>,
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as List<String>,
+        environmentVariables: identical(environmentVariables, sdkOmittedValue)
+            ? this.environmentVariables
+            : environmentVariables as List<String>,
+        envVarPrefix: identical(envVarPrefix, sdkOmittedValue)
+            ? this.envVarPrefix
+            : envVarPrefix as String?,
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<
+                GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        latestDeployment: identical(latestDeployment, sdkOmittedValue)
+            ? this.latestDeployment
+            : latestDeployment as SdkOptional<String>,
+        makeEnvVarsSensitive: identical(makeEnvVarsSensitive, sdkOmittedValue)
+            ? this.makeEnvVarsSensitive
+            : makeEnvVarsSensitive as SdkOptional<
+                GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+      );
 
-  factory GetStorageStoresByIdResponseStoreProjectsMetadataItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetStorageStoresByIdResponseStoreProjectsMetadataItem(
-    deployments: json['deployments'] != null ? SdkPresent((json['deployments'] != null ? GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments.fromJson(json['deployments'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    environments: ((json['environments'] as List?)?.map((e) => e as String).toList())!,
-    environmentVariables: ((json['environmentVariables'] as List?)?.map((e) => e as String).toList())!,
-    envVarPrefix: json.containsKey('envVarPrefix') ? json['envVarPrefix'] as String? : throw ArgumentError.value(null, 'envVarPrefix', 'Required property is missing'),
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    latestDeployment: json['latestDeployment'] != null ? SdkPresent((json['latestDeployment'] as String?)!) : const SdkOmitted(),
-    makeEnvVarsSensitive: json['makeEnvVarsSensitive'] != null ? SdkPresent((json['makeEnvVarsSensitive'] != null ? GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive.fromJson(json['makeEnvVarsSensitive'] as bool) : null)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-  ), json);
+  factory GetStorageStoresByIdResponseStoreProjectsMetadataItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetStorageStoresByIdResponseStoreProjectsMetadataItem(
+            deployments: json['deployments'] != null
+                ? SdkPresent((json['deployments'] != null
+                    ? GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments
+                        .fromJson(json['deployments'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            environments: ((json['environments'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            environmentVariables: ((json['environmentVariables'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            envVarPrefix: json.containsKey('envVarPrefix')
+                ? json['envVarPrefix'] as String?
+                : throw ArgumentError.value(
+                    null, 'envVarPrefix', 'Required property is missing'),
+            framework: json.containsKey('framework')
+                ? SdkPresent(json['framework'] != null
+                    ? GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework
+                        .fromJson(json['framework'] as String)
+                    : null)
+                : const SdkOmitted(),
+            id: (json['id'] as String?)!,
+            latestDeployment: json['latestDeployment'] != null
+                ? SdkPresent((json['latestDeployment'] as String?)!)
+                : const SdkOmitted(),
+            makeEnvVarsSensitive: json['makeEnvVarsSensitive'] != null
+                ? SdkPresent((json['makeEnvVarsSensitive'] != null
+                    ? GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive
+                        .fromJson(json['makeEnvVarsSensitive'] as bool)
+                    : null)!)
+                : const SdkOmitted(),
+            name: (json['name'] as String?)!,
+            projectId: (json['projectId'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (deployments) {
-      SdkPresent<GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments>(value: final value) => {'deployments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'environments': environments,
-    'environmentVariables': environmentVariables,
-    'envVarPrefix': envVarPrefix,
-    ...switch (framework) {
-      SdkPresent<GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (latestDeployment) {
-      SdkPresent<String>(value: final value) => {'latestDeployment': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (makeEnvVarsSensitive) {
-      SdkPresent<GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive>(value: final value) => {'makeEnvVarsSensitive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'projectId': projectId,
-  };
+        ...switch (deployments) {
+          SdkPresent<
+                GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments>(
+            value: final value
+          ) =>
+            {
+              'deployments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'environments': environments,
+        'environmentVariables': environmentVariables,
+        'envVarPrefix': envVarPrefix,
+        ...switch (framework) {
+          SdkPresent<
+                GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?>(
+            value: final value
+          ) =>
+            {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (latestDeployment) {
+          SdkPresent<String>(value: final value) => {
+              'latestDeployment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (makeEnvVarsSensitive) {
+          SdkPresent<
+                GetStorageStoresByIdResponseStoreProjectsMetadataItemMakeEnvVarsSensitive>(
+            value: final value
+          ) =>
+            {
+              'makeEnvVarsSensitive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'projectId': projectId,
+      };
 }
 
 class GetStorageStoresByIdResponseStore implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetStorageStoresByIdResponseStoreProjectFilter> projectFilter;
-  final List<GetStorageStoresByIdResponseStoreProjectsMetadataItem> projectsMetadata;
+  final SdkOptional<GetStorageStoresByIdResponseStoreProjectFilter>
+      projectFilter;
+  final List<GetStorageStoresByIdResponseStoreProjectsMetadataItem>
+      projectsMetadata;
   final GetStorageStoresByIdResponseStoreStatus? status;
   final SdkOptional<double> totalConnectedProjects;
   final GetStorageStoresByIdResponseStoreUsageQuotaExceeded usageQuotaExceeded;
 
-  const GetStorageStoresByIdResponseStore({this.projectFilter = const SdkOmitted(), required this.projectsMetadata, required this.status, this.totalConnectedProjects = const SdkOmitted(), required this.usageQuotaExceeded});
+  const GetStorageStoresByIdResponseStore(
+      {this.projectFilter = const SdkOmitted(),
+      required this.projectsMetadata,
+      required this.status,
+      this.totalConnectedProjects = const SdkOmitted(),
+      required this.usageQuotaExceeded});
 
-  GetStorageStoresByIdResponseStore Function({SdkOptional<GetStorageStoresByIdResponseStoreProjectFilter> projectFilter, List<GetStorageStoresByIdResponseStoreProjectsMetadataItem> projectsMetadata, GetStorageStoresByIdResponseStoreStatus? status, SdkOptional<double> totalConnectedProjects, GetStorageStoresByIdResponseStoreUsageQuotaExceeded usageQuotaExceeded}) get copyWith => _copyWith;
+  GetStorageStoresByIdResponseStore Function(
+      {SdkOptional<GetStorageStoresByIdResponseStoreProjectFilter>
+          projectFilter,
+      List<GetStorageStoresByIdResponseStoreProjectsMetadataItem>
+          projectsMetadata,
+      GetStorageStoresByIdResponseStoreStatus? status,
+      SdkOptional<double> totalConnectedProjects,
+      GetStorageStoresByIdResponseStoreUsageQuotaExceeded
+          usageQuotaExceeded}) get copyWith => _copyWith;
 
-  GetStorageStoresByIdResponseStore _copyWith({Object? projectFilter = sdkOmittedValue, Object? projectsMetadata = sdkOmittedValue, Object? status = sdkOmittedValue, Object? totalConnectedProjects = sdkOmittedValue, Object? usageQuotaExceeded = sdkOmittedValue}) => GetStorageStoresByIdResponseStore(
-    projectFilter: identical(projectFilter, sdkOmittedValue) ? this.projectFilter : projectFilter as SdkOptional<GetStorageStoresByIdResponseStoreProjectFilter>,
-    projectsMetadata: identical(projectsMetadata, sdkOmittedValue) ? this.projectsMetadata : projectsMetadata as List<GetStorageStoresByIdResponseStoreProjectsMetadataItem>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as GetStorageStoresByIdResponseStoreStatus?,
-    totalConnectedProjects: identical(totalConnectedProjects, sdkOmittedValue) ? this.totalConnectedProjects : totalConnectedProjects as SdkOptional<double>,
-    usageQuotaExceeded: identical(usageQuotaExceeded, sdkOmittedValue) ? this.usageQuotaExceeded : usageQuotaExceeded as GetStorageStoresByIdResponseStoreUsageQuotaExceeded,
-  );
+  GetStorageStoresByIdResponseStore _copyWith(
+          {Object? projectFilter = sdkOmittedValue,
+          Object? projectsMetadata = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? totalConnectedProjects = sdkOmittedValue,
+          Object? usageQuotaExceeded = sdkOmittedValue}) =>
+      GetStorageStoresByIdResponseStore(
+        projectFilter: identical(projectFilter, sdkOmittedValue)
+            ? this.projectFilter
+            : projectFilter
+                as SdkOptional<GetStorageStoresByIdResponseStoreProjectFilter>,
+        projectsMetadata: identical(projectsMetadata, sdkOmittedValue)
+            ? this.projectsMetadata
+            : projectsMetadata
+                as List<GetStorageStoresByIdResponseStoreProjectsMetadataItem>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as GetStorageStoresByIdResponseStoreStatus?,
+        totalConnectedProjects:
+            identical(totalConnectedProjects, sdkOmittedValue)
+                ? this.totalConnectedProjects
+                : totalConnectedProjects as SdkOptional<double>,
+        usageQuotaExceeded: identical(usageQuotaExceeded, sdkOmittedValue)
+            ? this.usageQuotaExceeded
+            : usageQuotaExceeded
+                as GetStorageStoresByIdResponseStoreUsageQuotaExceeded,
+      );
 
-  factory GetStorageStoresByIdResponseStore.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetStorageStoresByIdResponseStore(
-    projectFilter: json['projectFilter'] != null ? SdkPresent((json['projectFilter'] != null ? GetStorageStoresByIdResponseStoreProjectFilter.fromJson(json['projectFilter'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    projectsMetadata: ((json['projectsMetadata'] as List?)?.map((e) => GetStorageStoresByIdResponseStoreProjectsMetadataItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    status: json.containsKey('status') ? json['status'] != null ? GetStorageStoresByIdResponseStoreStatus.fromJson(json['status'] as String) : null : throw ArgumentError.value(null, 'status', 'Required property is missing'),
-    totalConnectedProjects: json['totalConnectedProjects'] != null ? SdkPresent(((json['totalConnectedProjects'] as num?)?.toDouble())!) : const SdkOmitted(),
-    usageQuotaExceeded: (json['usageQuotaExceeded'] != null ? GetStorageStoresByIdResponseStoreUsageQuotaExceeded.fromJson(json['usageQuotaExceeded'] as bool) : null)!,
-  ), json);
+  factory GetStorageStoresByIdResponseStore.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetStorageStoresByIdResponseStore(
+            projectFilter: json['projectFilter'] != null
+                ? SdkPresent((json['projectFilter'] != null
+                    ? GetStorageStoresByIdResponseStoreProjectFilter.fromJson(
+                        json['projectFilter'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            projectsMetadata: ((json['projectsMetadata'] as List?)
+                ?.map((e) =>
+                    GetStorageStoresByIdResponseStoreProjectsMetadataItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!,
+            status: json.containsKey('status')
+                ? json['status'] != null
+                    ? GetStorageStoresByIdResponseStoreStatus.fromJson(
+                        json['status'] as String)
+                    : null
+                : throw ArgumentError.value(
+                    null, 'status', 'Required property is missing'),
+            totalConnectedProjects: json['totalConnectedProjects'] != null
+                ? SdkPresent(
+                    ((json['totalConnectedProjects'] as num?)?.toDouble())!)
+                : const SdkOmitted(),
+            usageQuotaExceeded: (json['usageQuotaExceeded'] != null
+                ? GetStorageStoresByIdResponseStoreUsageQuotaExceeded.fromJson(
+                    json['usageQuotaExceeded'] as bool)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (projectFilter) {
-      SdkPresent<GetStorageStoresByIdResponseStoreProjectFilter>(value: final value) => {'projectFilter': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectsMetadata': projectsMetadata.map((item) => item.toJson()).toList(),
-    'status': status?.toJson(),
-    ...switch (totalConnectedProjects) {
-      SdkPresent<double>(value: final value) => {'totalConnectedProjects': value,},
-      _ => const <String, dynamic>{},
-    },
-    'usageQuotaExceeded': usageQuotaExceeded.toJson(),
-  };
+        ...switch (projectFilter) {
+          SdkPresent<GetStorageStoresByIdResponseStoreProjectFilter>(
+            value: final value
+          ) =>
+            {
+              'projectFilter': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectsMetadata':
+            projectsMetadata.map((item) => item.toJson()).toList(),
+        'status': status?.toJson(),
+        ...switch (totalConnectedProjects) {
+          SdkPresent<double>(value: final value) => {
+              'totalConnectedProjects': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'usageQuotaExceeded': usageQuotaExceeded.toJson(),
+      };
 }
 
 class GetStorageStoresByIdResponse implements SdkJsonModel {
@@ -127,20 +306,30 @@ class GetStorageStoresByIdResponse implements SdkJsonModel {
 
   const GetStorageStoresByIdResponse({required this.store});
 
-  GetStorageStoresByIdResponse Function({GetStorageStoresByIdResponseStore store}) get copyWith => _copyWith;
+  GetStorageStoresByIdResponse Function(
+      {GetStorageStoresByIdResponseStore store}) get copyWith => _copyWith;
 
-  GetStorageStoresByIdResponse _copyWith({Object? store = sdkOmittedValue}) => GetStorageStoresByIdResponse(
-    store: identical(store, sdkOmittedValue) ? this.store : store as GetStorageStoresByIdResponseStore,
-  );
+  GetStorageStoresByIdResponse _copyWith({Object? store = sdkOmittedValue}) =>
+      GetStorageStoresByIdResponse(
+        store: identical(store, sdkOmittedValue)
+            ? this.store
+            : store as GetStorageStoresByIdResponseStore,
+      );
 
-  factory GetStorageStoresByIdResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetStorageStoresByIdResponse(
-    store: (json['store'] != null ? GetStorageStoresByIdResponseStore.fromJson(json['store'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory GetStorageStoresByIdResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetStorageStoresByIdResponse(
+            store: (json['store'] != null
+                ? GetStorageStoresByIdResponseStore.fromJson(
+                    json['store'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'store': store.toJson(),
-  };
+        'store': store.toJson(),
+      };
 }
 
 class CreateStorageStoresBlobRequestBody implements SdkJsonModel {
@@ -151,128 +340,247 @@ class CreateStorageStoresBlobRequestBody implements SdkJsonModel {
   final SdkOptional<CreateStorageStoresBlobRequestBodyAccess> access;
   final SdkOptional<String> projectId;
 
-  const CreateStorageStoresBlobRequestBody({required this.name, this.region = const SdkOmitted(), this.access = const SdkOmitted(), this.projectId = const SdkOmitted()});
+  const CreateStorageStoresBlobRequestBody(
+      {required this.name,
+      this.region = const SdkOmitted(),
+      this.access = const SdkOmitted(),
+      this.projectId = const SdkOmitted()});
 
-  CreateStorageStoresBlobRequestBody Function({String name, SdkOptional<CreateStorageStoresBlobRequestBodyRegion> region, SdkOptional<CreateStorageStoresBlobRequestBodyAccess> access, SdkOptional<String> projectId}) get copyWith => _copyWith;
+  CreateStorageStoresBlobRequestBody Function(
+      {String name,
+      SdkOptional<CreateStorageStoresBlobRequestBodyRegion> region,
+      SdkOptional<CreateStorageStoresBlobRequestBodyAccess> access,
+      SdkOptional<String> projectId}) get copyWith => _copyWith;
 
-  CreateStorageStoresBlobRequestBody _copyWith({Object? name = sdkOmittedValue, Object? region = sdkOmittedValue, Object? access = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => CreateStorageStoresBlobRequestBody(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<CreateStorageStoresBlobRequestBodyRegion>,
-    access: identical(access, sdkOmittedValue) ? this.access : access as SdkOptional<CreateStorageStoresBlobRequestBodyAccess>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-  );
+  CreateStorageStoresBlobRequestBody _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? access = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      CreateStorageStoresBlobRequestBody(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        region: identical(region, sdkOmittedValue)
+            ? this.region
+            : region as SdkOptional<CreateStorageStoresBlobRequestBodyRegion>,
+        access: identical(access, sdkOmittedValue)
+            ? this.access
+            : access as SdkOptional<CreateStorageStoresBlobRequestBodyAccess>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+      );
 
-  factory CreateStorageStoresBlobRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateStorageStoresBlobRequestBody(
-    name: (json['name'] as String?)!,
-    region: json['region'] != null ? SdkPresent((json['region'] != null ? CreateStorageStoresBlobRequestBodyRegion.fromJson(json['region'] as String) : null)!) : const SdkOmitted(),
-    access: json['access'] != null ? SdkPresent((json['access'] != null ? CreateStorageStoresBlobRequestBodyAccess.fromJson(json['access'] as String) : null)!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory CreateStorageStoresBlobRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateStorageStoresBlobRequestBody(
+            name: (json['name'] as String?)!,
+            region: json['region'] != null
+                ? SdkPresent((json['region'] != null
+                    ? CreateStorageStoresBlobRequestBodyRegion.fromJson(
+                        json['region'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            access: json['access'] != null
+                ? SdkPresent((json['access'] != null
+                    ? CreateStorageStoresBlobRequestBodyAccess.fromJson(
+                        json['access'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+            projectId: json['projectId'] != null
+                ? SdkPresent((json['projectId'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'name': name,
-    ...switch (region) {
-      SdkPresent<CreateStorageStoresBlobRequestBodyRegion>(value: final value) => {'region': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (access) {
-      SdkPresent<CreateStorageStoresBlobRequestBodyAccess>(value: final value) => {'access': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        ...switch (region) {
+          SdkPresent<CreateStorageStoresBlobRequestBodyRegion>(
+            value: final value
+          ) =>
+            {
+              'region': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (access) {
+          SdkPresent<CreateStorageStoresBlobRequestBodyAccess>(
+            value: final value
+          ) =>
+            {
+              'access': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class CreateStorageStoresBlobResponseStoreProjectFilterGit implements SdkJsonModel {
+class CreateStorageStoresBlobResponseStoreProjectFilterGit
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> owners;
   final dynamic providers;
   final SdkOptional<List<String>> repos;
 
-  const CreateStorageStoresBlobResponseStoreProjectFilterGit({this.owners = const SdkOmitted(), required this.providers, this.repos = const SdkOmitted()});
+  const CreateStorageStoresBlobResponseStoreProjectFilterGit(
+      {this.owners = const SdkOmitted(),
+      required this.providers,
+      this.repos = const SdkOmitted()});
 
-  CreateStorageStoresBlobResponseStoreProjectFilterGit Function({SdkOptional<List<String>> owners, dynamic providers, SdkOptional<List<String>> repos}) get copyWith => _copyWith;
+  CreateStorageStoresBlobResponseStoreProjectFilterGit Function(
+      {SdkOptional<List<String>> owners,
+      dynamic providers,
+      SdkOptional<List<String>> repos}) get copyWith => _copyWith;
 
-  CreateStorageStoresBlobResponseStoreProjectFilterGit _copyWith({Object? owners = sdkOmittedValue, Object? providers = sdkOmittedValue, Object? repos = sdkOmittedValue}) => CreateStorageStoresBlobResponseStoreProjectFilterGit(
-    owners: identical(owners, sdkOmittedValue) ? this.owners : owners as SdkOptional<List<String>>,
-    providers: identical(providers, sdkOmittedValue) ? this.providers : providers as dynamic,
-    repos: identical(repos, sdkOmittedValue) ? this.repos : repos as SdkOptional<List<String>>,
-  );
+  CreateStorageStoresBlobResponseStoreProjectFilterGit _copyWith(
+          {Object? owners = sdkOmittedValue,
+          Object? providers = sdkOmittedValue,
+          Object? repos = sdkOmittedValue}) =>
+      CreateStorageStoresBlobResponseStoreProjectFilterGit(
+        owners: identical(owners, sdkOmittedValue)
+            ? this.owners
+            : owners as SdkOptional<List<String>>,
+        providers: identical(providers, sdkOmittedValue)
+            ? this.providers
+            : providers as dynamic,
+        repos: identical(repos, sdkOmittedValue)
+            ? this.repos
+            : repos as SdkOptional<List<String>>,
+      );
 
-  factory CreateStorageStoresBlobResponseStoreProjectFilterGit.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateStorageStoresBlobResponseStoreProjectFilterGit(
-    owners: json['owners'] != null ? SdkPresent(((json['owners'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    providers: (json['providers'])!,
-    repos: json['repos'] != null ? SdkPresent(((json['repos'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  ), json);
+  factory CreateStorageStoresBlobResponseStoreProjectFilterGit.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateStorageStoresBlobResponseStoreProjectFilterGit(
+            owners: json['owners'] != null
+                ? SdkPresent(((json['owners'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+            providers: (json['providers'])!,
+            repos: json['repos'] != null
+                ? SdkPresent(((json['repos'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (owners) {
-      SdkPresent<List<String>>(value: final value) => {'owners': value,},
-      _ => const <String, dynamic>{},
-    },
-    'providers': providers,
-    ...switch (repos) {
-      SdkPresent<List<String>>(value: final value) => {'repos': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (owners) {
+          SdkPresent<List<String>>(value: final value) => {
+              'owners': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'providers': providers,
+        ...switch (repos) {
+          SdkPresent<List<String>>(value: final value) => {
+              'repos': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class CreateStorageStoresBlobResponseStoreProjectFilter implements SdkJsonModel {
+class CreateStorageStoresBlobResponseStoreProjectFilter
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<CreateStorageStoresBlobResponseStoreProjectFilterGit> git;
 
-  const CreateStorageStoresBlobResponseStoreProjectFilter({this.git = const SdkOmitted()});
+  const CreateStorageStoresBlobResponseStoreProjectFilter(
+      {this.git = const SdkOmitted()});
 
-  CreateStorageStoresBlobResponseStoreProjectFilter Function({SdkOptional<CreateStorageStoresBlobResponseStoreProjectFilterGit> git}) get copyWith => _copyWith;
+  CreateStorageStoresBlobResponseStoreProjectFilter Function(
+      {SdkOptional<CreateStorageStoresBlobResponseStoreProjectFilterGit>
+          git}) get copyWith => _copyWith;
 
-  CreateStorageStoresBlobResponseStoreProjectFilter _copyWith({Object? git = sdkOmittedValue}) => CreateStorageStoresBlobResponseStoreProjectFilter(
-    git: identical(git, sdkOmittedValue) ? this.git : git as SdkOptional<CreateStorageStoresBlobResponseStoreProjectFilterGit>,
-  );
+  CreateStorageStoresBlobResponseStoreProjectFilter _copyWith(
+          {Object? git = sdkOmittedValue}) =>
+      CreateStorageStoresBlobResponseStoreProjectFilter(
+        git: identical(git, sdkOmittedValue)
+            ? this.git
+            : git as SdkOptional<
+                CreateStorageStoresBlobResponseStoreProjectFilterGit>,
+      );
 
-  factory CreateStorageStoresBlobResponseStoreProjectFilter.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateStorageStoresBlobResponseStoreProjectFilter(
-    git: json['git'] != null ? SdkPresent((json['git'] != null ? CreateStorageStoresBlobResponseStoreProjectFilterGit.fromJson(json['git'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  ), json);
+  factory CreateStorageStoresBlobResponseStoreProjectFilter.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateStorageStoresBlobResponseStoreProjectFilter(
+            git: json['git'] != null
+                ? SdkPresent((json['git'] != null
+                    ? CreateStorageStoresBlobResponseStoreProjectFilterGit
+                        .fromJson(json['git'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (git) {
-      SdkPresent<CreateStorageStoresBlobResponseStoreProjectFilterGit>(value: final value) => {'git': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (git) {
+          SdkPresent<CreateStorageStoresBlobResponseStoreProjectFilterGit>(
+            value: final value
+          ) =>
+            {
+              'git': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
-class CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem implements SdkJsonModel {
+class CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<String> environments;
   final String slug;
 
-  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem({required this.environments, required this.slug});
+  const CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem(
+      {required this.environments, required this.slug});
 
-  CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem Function({List<String> environments, String slug}) get copyWith => _copyWith;
+  CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem
+          Function({List<String> environments, String slug})
+      get copyWith => _copyWith;
 
-  CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem _copyWith({Object? environments = sdkOmittedValue, Object? slug = sdkOmittedValue}) => CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem(
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<String>,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-  );
+  CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem
+      _copyWith(
+              {Object? environments = sdkOmittedValue,
+              Object? slug = sdkOmittedValue}) =>
+          CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem(
+            environments: identical(environments, sdkOmittedValue)
+                ? this.environments
+                : environments as List<String>,
+            slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+          );
 
-  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem(
-    environments: ((json['environments'] as List?)?.map((e) => e as String).toList())!,
-    slug: (json['slug'] as String?)!,
-  ), json);
+  factory CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsActionsItem(
+            environments: ((json['environments'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+            slug: (json['slug'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'environments': environments,
-    'slug': slug,
-  };
+        'environments': environments,
+        'slug': slug,
+      };
 }

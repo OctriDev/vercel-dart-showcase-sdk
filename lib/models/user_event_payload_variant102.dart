@@ -8,180 +8,293 @@ part of 'user.dart';
 class UserEventPayloadVariant102 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `githubLogin` wire field.
   final String githubLogin;
+
   /// Required `string` value serialized in the `host` wire field.
   final String host;
 
-  const UserEventPayloadVariant102({required this.githubLogin, required this.host});
+  const UserEventPayloadVariant102(
+      {required this.githubLogin, required this.host});
 
-  UserEventPayloadVariant102 Function({String githubLogin, String host}) get copyWith => _copyWith;
+  UserEventPayloadVariant102 Function({String githubLogin, String host})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant102 _copyWith({Object? githubLogin = sdkOmittedValue, Object? host = sdkOmittedValue}) => UserEventPayloadVariant102(
-    githubLogin: identical(githubLogin, sdkOmittedValue) ? this.githubLogin : githubLogin as String,
-    host: identical(host, sdkOmittedValue) ? this.host : host as String,
-  );
+  UserEventPayloadVariant102 _copyWith(
+          {Object? githubLogin = sdkOmittedValue,
+          Object? host = sdkOmittedValue}) =>
+      UserEventPayloadVariant102(
+        githubLogin: identical(githubLogin, sdkOmittedValue)
+            ? this.githubLogin
+            : githubLogin as String,
+        host: identical(host, sdkOmittedValue) ? this.host : host as String,
+      );
 
-  factory UserEventPayloadVariant102.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant102(
-    githubLogin: (json['githubLogin'] as String?)!,
-    host: (json['host'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant102.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant102(
+            githubLogin: (json['githubLogin'] as String?)!,
+            host: (json['host'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'githubLogin': githubLogin,
-    'host': host,
-  };
+        'githubLogin': githubLogin,
+        'host': host,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant103 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `gitlabEmail` wire field.
   final String gitlabEmail;
+
   /// Required `string` value serialized in the `gitlabLogin` wire field.
   final String gitlabLogin;
+
   /// Optional `string` value serialized in the `gitlabName` wire field.
   final SdkOptional<String> gitlabName;
+
   /// Optional `string` value serialized in the `zeitAccount` wire field.
   final SdkOptional<String> zeitAccount;
+
   /// Optional `string` value serialized in the `zeitAccountType` wire field.
   final SdkOptional<String> zeitAccountType;
 
-  const UserEventPayloadVariant103({required this.gitlabEmail, required this.gitlabLogin, this.gitlabName = const SdkOmitted(), this.zeitAccount = const SdkOmitted(), this.zeitAccountType = const SdkOmitted()});
+  const UserEventPayloadVariant103(
+      {required this.gitlabEmail,
+      required this.gitlabLogin,
+      this.gitlabName = const SdkOmitted(),
+      this.zeitAccount = const SdkOmitted(),
+      this.zeitAccountType = const SdkOmitted()});
 
-  UserEventPayloadVariant103 Function({String gitlabEmail, String gitlabLogin, SdkOptional<String> gitlabName, SdkOptional<String> zeitAccount, SdkOptional<String> zeitAccountType}) get copyWith => _copyWith;
+  UserEventPayloadVariant103 Function(
+      {String gitlabEmail,
+      String gitlabLogin,
+      SdkOptional<String> gitlabName,
+      SdkOptional<String> zeitAccount,
+      SdkOptional<String> zeitAccountType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant103 _copyWith({Object? gitlabEmail = sdkOmittedValue, Object? gitlabLogin = sdkOmittedValue, Object? gitlabName = sdkOmittedValue, Object? zeitAccount = sdkOmittedValue, Object? zeitAccountType = sdkOmittedValue}) => UserEventPayloadVariant103(
-    gitlabEmail: identical(gitlabEmail, sdkOmittedValue) ? this.gitlabEmail : gitlabEmail as String,
-    gitlabLogin: identical(gitlabLogin, sdkOmittedValue) ? this.gitlabLogin : gitlabLogin as String,
-    gitlabName: identical(gitlabName, sdkOmittedValue) ? this.gitlabName : gitlabName as SdkOptional<String>,
-    zeitAccount: identical(zeitAccount, sdkOmittedValue) ? this.zeitAccount : zeitAccount as SdkOptional<String>,
-    zeitAccountType: identical(zeitAccountType, sdkOmittedValue) ? this.zeitAccountType : zeitAccountType as SdkOptional<String>,
-  );
+  UserEventPayloadVariant103 _copyWith(
+          {Object? gitlabEmail = sdkOmittedValue,
+          Object? gitlabLogin = sdkOmittedValue,
+          Object? gitlabName = sdkOmittedValue,
+          Object? zeitAccount = sdkOmittedValue,
+          Object? zeitAccountType = sdkOmittedValue}) =>
+      UserEventPayloadVariant103(
+        gitlabEmail: identical(gitlabEmail, sdkOmittedValue)
+            ? this.gitlabEmail
+            : gitlabEmail as String,
+        gitlabLogin: identical(gitlabLogin, sdkOmittedValue)
+            ? this.gitlabLogin
+            : gitlabLogin as String,
+        gitlabName: identical(gitlabName, sdkOmittedValue)
+            ? this.gitlabName
+            : gitlabName as SdkOptional<String>,
+        zeitAccount: identical(zeitAccount, sdkOmittedValue)
+            ? this.zeitAccount
+            : zeitAccount as SdkOptional<String>,
+        zeitAccountType: identical(zeitAccountType, sdkOmittedValue)
+            ? this.zeitAccountType
+            : zeitAccountType as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant103.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant103(
-    gitlabEmail: (json['gitlabEmail'] as String?)!,
-    gitlabLogin: (json['gitlabLogin'] as String?)!,
-    gitlabName: json['gitlabName'] != null ? SdkPresent((json['gitlabName'] as String?)!) : const SdkOmitted(),
-    zeitAccount: json['zeitAccount'] != null ? SdkPresent((json['zeitAccount'] as String?)!) : const SdkOmitted(),
-    zeitAccountType: json['zeitAccountType'] != null ? SdkPresent((json['zeitAccountType'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant103.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant103(
+            gitlabEmail: (json['gitlabEmail'] as String?)!,
+            gitlabLogin: (json['gitlabLogin'] as String?)!,
+            gitlabName: json['gitlabName'] != null
+                ? SdkPresent((json['gitlabName'] as String?)!)
+                : const SdkOmitted(),
+            zeitAccount: json['zeitAccount'] != null
+                ? SdkPresent((json['zeitAccount'] as String?)!)
+                : const SdkOmitted(),
+            zeitAccountType: json['zeitAccountType'] != null
+                ? SdkPresent((json['zeitAccountType'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'gitlabEmail': gitlabEmail,
-    'gitlabLogin': gitlabLogin,
-    ...switch (gitlabName) {
-      SdkPresent<String>(value: final value) => {'gitlabName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (zeitAccount) {
-      SdkPresent<String>(value: final value) => {'zeitAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (zeitAccountType) {
-      SdkPresent<String>(value: final value) => {'zeitAccountType': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'gitlabEmail': gitlabEmail,
+        'gitlabLogin': gitlabLogin,
+        ...switch (gitlabName) {
+          SdkPresent<String>(value: final value) => {
+              'gitlabName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (zeitAccount) {
+          SdkPresent<String>(value: final value) => {
+              'zeitAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (zeitAccountType) {
+          SdkPresent<String>(value: final value) => {
+              'zeitAccountType': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant104 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `gitlabLogin` wire field.
   final String gitlabLogin;
+
   /// Required `number` value serialized in the `gitlabUserId` wire field.
   final double gitlabUserId;
 
-  const UserEventPayloadVariant104({required this.gitlabLogin, required this.gitlabUserId});
+  const UserEventPayloadVariant104(
+      {required this.gitlabLogin, required this.gitlabUserId});
 
-  UserEventPayloadVariant104 Function({String gitlabLogin, double gitlabUserId}) get copyWith => _copyWith;
+  UserEventPayloadVariant104 Function({String gitlabLogin, double gitlabUserId})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant104 _copyWith({Object? gitlabLogin = sdkOmittedValue, Object? gitlabUserId = sdkOmittedValue}) => UserEventPayloadVariant104(
-    gitlabLogin: identical(gitlabLogin, sdkOmittedValue) ? this.gitlabLogin : gitlabLogin as String,
-    gitlabUserId: identical(gitlabUserId, sdkOmittedValue) ? this.gitlabUserId : gitlabUserId as double,
-  );
+  UserEventPayloadVariant104 _copyWith(
+          {Object? gitlabLogin = sdkOmittedValue,
+          Object? gitlabUserId = sdkOmittedValue}) =>
+      UserEventPayloadVariant104(
+        gitlabLogin: identical(gitlabLogin, sdkOmittedValue)
+            ? this.gitlabLogin
+            : gitlabLogin as String,
+        gitlabUserId: identical(gitlabUserId, sdkOmittedValue)
+            ? this.gitlabUserId
+            : gitlabUserId as double,
+      );
 
-  factory UserEventPayloadVariant104.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant104(
-    gitlabLogin: (json['gitlabLogin'] as String?)!,
-    gitlabUserId: ((json['gitlabUserId'] as num?)?.toDouble())!,
-  ), json);
+  factory UserEventPayloadVariant104.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant104(
+            gitlabLogin: (json['gitlabLogin'] as String?)!,
+            gitlabUserId: ((json['gitlabUserId'] as num?)?.toDouble())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'gitlabLogin': gitlabLogin,
-    'gitlabUserId': gitlabUserId,
-  };
+        'gitlabLogin': gitlabLogin,
+        'gitlabUserId': gitlabUserId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant105 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `bitbucketEmail` wire field.
   final String bitbucketEmail;
+
   /// Required `string` value serialized in the `bitbucketLogin` wire field.
   final String bitbucketLogin;
+
   /// Optional `string` value serialized in the `bitbucketName` wire field.
   final SdkOptional<String> bitbucketName;
 
-  const UserEventPayloadVariant105({required this.bitbucketEmail, required this.bitbucketLogin, this.bitbucketName = const SdkOmitted()});
+  const UserEventPayloadVariant105(
+      {required this.bitbucketEmail,
+      required this.bitbucketLogin,
+      this.bitbucketName = const SdkOmitted()});
 
-  UserEventPayloadVariant105 Function({String bitbucketEmail, String bitbucketLogin, SdkOptional<String> bitbucketName}) get copyWith => _copyWith;
+  UserEventPayloadVariant105 Function(
+      {String bitbucketEmail,
+      String bitbucketLogin,
+      SdkOptional<String> bitbucketName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant105 _copyWith({Object? bitbucketEmail = sdkOmittedValue, Object? bitbucketLogin = sdkOmittedValue, Object? bitbucketName = sdkOmittedValue}) => UserEventPayloadVariant105(
-    bitbucketEmail: identical(bitbucketEmail, sdkOmittedValue) ? this.bitbucketEmail : bitbucketEmail as String,
-    bitbucketLogin: identical(bitbucketLogin, sdkOmittedValue) ? this.bitbucketLogin : bitbucketLogin as String,
-    bitbucketName: identical(bitbucketName, sdkOmittedValue) ? this.bitbucketName : bitbucketName as SdkOptional<String>,
-  );
+  UserEventPayloadVariant105 _copyWith(
+          {Object? bitbucketEmail = sdkOmittedValue,
+          Object? bitbucketLogin = sdkOmittedValue,
+          Object? bitbucketName = sdkOmittedValue}) =>
+      UserEventPayloadVariant105(
+        bitbucketEmail: identical(bitbucketEmail, sdkOmittedValue)
+            ? this.bitbucketEmail
+            : bitbucketEmail as String,
+        bitbucketLogin: identical(bitbucketLogin, sdkOmittedValue)
+            ? this.bitbucketLogin
+            : bitbucketLogin as String,
+        bitbucketName: identical(bitbucketName, sdkOmittedValue)
+            ? this.bitbucketName
+            : bitbucketName as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant105.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant105(
-    bitbucketEmail: (json['bitbucketEmail'] as String?)!,
-    bitbucketLogin: (json['bitbucketLogin'] as String?)!,
-    bitbucketName: json['bitbucketName'] != null ? SdkPresent((json['bitbucketName'] as String?)!) : const SdkOmitted(),
-  ), json);
+  factory UserEventPayloadVariant105.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant105(
+            bitbucketEmail: (json['bitbucketEmail'] as String?)!,
+            bitbucketLogin: (json['bitbucketLogin'] as String?)!,
+            bitbucketName: json['bitbucketName'] != null
+                ? SdkPresent((json['bitbucketName'] as String?)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'bitbucketEmail': bitbucketEmail,
-    'bitbucketLogin': bitbucketLogin,
-    ...switch (bitbucketName) {
-      SdkPresent<String>(value: final value) => {'bitbucketName': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'bitbucketEmail': bitbucketEmail,
+        'bitbucketLogin': bitbucketLogin,
+        ...switch (bitbucketName) {
+          SdkPresent<String>(value: final value) => {
+              'bitbucketName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant106 implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `bitbucketAccountId` wire field.
   final String bitbucketAccountId;
+
   /// Required `string` value serialized in the `bitbucketLogin` wire field.
   final String bitbucketLogin;
 
-  const UserEventPayloadVariant106({required this.bitbucketAccountId, required this.bitbucketLogin});
+  const UserEventPayloadVariant106(
+      {required this.bitbucketAccountId, required this.bitbucketLogin});
 
-  UserEventPayloadVariant106 Function({String bitbucketAccountId, String bitbucketLogin}) get copyWith => _copyWith;
+  UserEventPayloadVariant106 Function(
+      {String bitbucketAccountId,
+      String bitbucketLogin}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant106 _copyWith({Object? bitbucketAccountId = sdkOmittedValue, Object? bitbucketLogin = sdkOmittedValue}) => UserEventPayloadVariant106(
-    bitbucketAccountId: identical(bitbucketAccountId, sdkOmittedValue) ? this.bitbucketAccountId : bitbucketAccountId as String,
-    bitbucketLogin: identical(bitbucketLogin, sdkOmittedValue) ? this.bitbucketLogin : bitbucketLogin as String,
-  );
+  UserEventPayloadVariant106 _copyWith(
+          {Object? bitbucketAccountId = sdkOmittedValue,
+          Object? bitbucketLogin = sdkOmittedValue}) =>
+      UserEventPayloadVariant106(
+        bitbucketAccountId: identical(bitbucketAccountId, sdkOmittedValue)
+            ? this.bitbucketAccountId
+            : bitbucketAccountId as String,
+        bitbucketLogin: identical(bitbucketLogin, sdkOmittedValue)
+            ? this.bitbucketLogin
+            : bitbucketLogin as String,
+      );
 
-  factory UserEventPayloadVariant106.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant106(
-    bitbucketAccountId: (json['bitbucketAccountId'] as String?)!,
-    bitbucketLogin: (json['bitbucketLogin'] as String?)!,
-  ), json);
+  factory UserEventPayloadVariant106.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant106(
+            bitbucketAccountId: (json['bitbucketAccountId'] as String?)!,
+            bitbucketLogin: (json['bitbucketLogin'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'bitbucketAccountId': bitbucketAccountId,
-    'bitbucketLogin': bitbucketLogin,
-  };
+        'bitbucketAccountId': bitbucketAccountId,
+        'bitbucketLogin': bitbucketLogin,
+      };
 }

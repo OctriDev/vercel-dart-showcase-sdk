@@ -43,8 +43,10 @@ Future<CreateCheckResponse> createCheck(ClientConfig config,
           '/v1/deployments/${Uri.encodeComponent(deploymentId.toString())}/checks',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -56,11 +58,11 @@ Future<CreateCheckResponse> createCheck(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createCheck',
-          fromJsonRaw: (value) => CreateCheckResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateCheckResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists the checks created for a deployment. Use `deploymentId` to select the deployment whose checks you want to inspect. This operation is closing down and will be removed on a date not specified in the API definition.
 ///
@@ -80,16 +82,18 @@ Future<ListChecksResponse> listChecks(ClientConfig config,
           '/v1/deployments/${Uri.encodeComponent(deploymentId.toString())}/checks',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listChecks',
-          fromJsonRaw: (value) => ListChecksResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListChecksResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves the details of a single check for a deployment. Use `deploymentId` and `checkId` to identify the deployment and check. This operation is closing down and will be removed on a date not specified in the API definition.
 ///
@@ -111,16 +115,18 @@ Future<GetCheckResponse> getCheck(ClientConfig config,
           '/v1/deployments/${Uri.encodeComponent(deploymentId.toString())}/checks/${Uri.encodeComponent(checkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getCheck',
-          fromJsonRaw: (value) => GetCheckResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetCheckResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates an existing check for a deployment. Supply the check fields you want to change, such as `status`, `conclusion`, or `output`; call the operation with OAuth2 authentication. A 200 response returns the updated check object.
 ///
@@ -147,7 +153,8 @@ Future<UpdateCheckResponse> updateCheck(ClientConfig config,
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<String> path = const SdkOmitted(),
     SdkOptional<UpdateCheckRequestBodyStatus> status = const SdkOmitted(),
-    SdkOptional<UpdateCheckRequestBodyConclusion> conclusion = const SdkOmitted(),
+    SdkOptional<UpdateCheckRequestBodyConclusion> conclusion =
+        const SdkOmitted(),
     SdkOptional<String> detailsUrl = const SdkOmitted(),
     SdkOptional<UpdateCheckRequestBodyOutput> output = const SdkOmitted(),
     SdkOptional<String> externalId = const SdkOmitted(),
@@ -163,8 +170,10 @@ Future<UpdateCheckResponse> updateCheck(ClientConfig config,
           '/v1/deployments/${Uri.encodeComponent(deploymentId.toString())}/checks/${Uri.encodeComponent(checkId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
@@ -177,11 +186,11 @@ Future<UpdateCheckResponse> updateCheck(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateCheck',
-          fromJsonRaw: (value) => UpdateCheckResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateCheckResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Triggers another run of a selected check that has failed. Use `deploymentId` and `checkId` to identify the deployment and check, and set `autoUpdate` to mark the check as running. This operation is closing down and will be removed on a date not specified in the API definition.
 ///
@@ -205,9 +214,12 @@ Future<Map<String, dynamic>> rerequestCheck(ClientConfig config,
           '/v1/deployments/${Uri.encodeComponent(deploymentId.toString())}/checks/${Uri.encodeComponent(checkId.toString())}/rerequest',
           config: config,
           query: {
-            'autoUpdate': SdkQueryValue(SdkUtils.unwrapOptional(autoUpdate), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'autoUpdate': SdkQueryValue(SdkUtils.unwrapOptional(autoUpdate),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'rerequestCheck',

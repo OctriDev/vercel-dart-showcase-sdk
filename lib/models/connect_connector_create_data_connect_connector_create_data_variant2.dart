@@ -4,62 +4,90 @@
 part of 'connect.dart';
 
 // connect domain models
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant2 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant2
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant2 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant3 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant3
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant3 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant4 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant4
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant4 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant4(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant5 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant5
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant5 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant5(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant5(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant6 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant6
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant6 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant6(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant7 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant7
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant7 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant7(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant7(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant8 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant8
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant8 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant8(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant8(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant9 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant9
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant9 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant9(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant9(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant10 extends ConnectConnectorCreateData {
+final class ConnectConnectorCreateDataConnectConnectorCreateDataVariant10
+    extends ConnectConnectorCreateData {
   final ConnectConnectorCreateDataVariant10 value;
-  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant10(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorCreateDataConnectConnectorCreateDataVariant10(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 final class ConnectConnectorCreateDataMap extends ConnectConnectorCreateData {
   final Map<String, Object?> value;
   const ConnectConnectorCreateDataMap(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }

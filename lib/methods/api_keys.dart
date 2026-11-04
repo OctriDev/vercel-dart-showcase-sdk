@@ -22,7 +22,8 @@ Future<CreateApiKeysResponse> createApiKeys(ClientConfig config,
     SdkOptional<String> projectId = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<double> expiresAt = const SdkOmitted(),
-    SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota> aiGatewayQuota = const SdkOmitted(),
+    SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota> aiGatewayQuota =
+        const SdkOmitted(),
     SdkOptional<Map<String, Object?>> metadata = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<CreateApiKeysResponse>('POST', '/api-keys',
@@ -37,7 +38,8 @@ Future<CreateApiKeysResponse> createApiKeys(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createApiKeys',
-          fromJsonRaw: (value) => CreateApiKeysResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateApiKeysResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

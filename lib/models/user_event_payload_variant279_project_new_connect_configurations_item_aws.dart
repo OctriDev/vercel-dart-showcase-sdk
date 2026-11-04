@@ -5,290 +5,595 @@ part of 'user.dart';
 
 // user domain models
 /// Optional object value serialized in the `aws` wire field.
-class UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws implements SdkJsonModel {
+class UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `securityGroupId` wire field.
   final SdkOptional<String> securityGroupId;
+
   /// Required array value serialized in the `subnetIds` wire field.
   final List<String> subnetIds;
 
-  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws({this.securityGroupId = const SdkOmitted(), required this.subnetIds});
+  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws(
+      {this.securityGroupId = const SdkOmitted(), required this.subnetIds});
 
-  UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws Function({SdkOptional<String> securityGroupId, List<String> subnetIds}) get copyWith => _copyWith;
+  UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws Function(
+      {SdkOptional<String> securityGroupId,
+      List<String> subnetIds}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws _copyWith({Object? securityGroupId = sdkOmittedValue, Object? subnetIds = sdkOmittedValue}) => UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws(
-    securityGroupId: identical(securityGroupId, sdkOmittedValue) ? this.securityGroupId : securityGroupId as SdkOptional<String>,
-    subnetIds: identical(subnetIds, sdkOmittedValue) ? this.subnetIds : subnetIds as List<String>,
-  );
+  UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws _copyWith(
+          {Object? securityGroupId = sdkOmittedValue,
+          Object? subnetIds = sdkOmittedValue}) =>
+      UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws(
+        securityGroupId: identical(securityGroupId, sdkOmittedValue)
+            ? this.securityGroupId
+            : securityGroupId as SdkOptional<String>,
+        subnetIds: identical(subnetIds, sdkOmittedValue)
+            ? this.subnetIds
+            : subnetIds as List<String>,
+      );
 
-  factory UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws(
-    securityGroupId: json['securityGroupId'] != null ? SdkPresent((json['securityGroupId'] as String?)!) : const SdkOmitted(),
-    subnetIds: ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
-  ), json);
+  factory UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws(
+            securityGroupId: json['securityGroupId'] != null
+                ? SdkPresent((json['securityGroupId'] as String?)!)
+                : const SdkOmitted(),
+            subnetIds: ((json['subnetIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (securityGroupId) {
-      SdkPresent<String>(value: final value) => {'securityGroupId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'subnetIds': subnetIds,
-  };
+        ...switch (securityGroupId) {
+          SdkPresent<String>(value: final value) => {
+              'securityGroupId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'subnetIds': subnetIds,
+      };
 }
 
 sealed class UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId();
-  factory UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId.fromJson(Object? json) {
-    if (json is String) { return UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdString(json); }
-    try { return UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1(UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId");
+  factory UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId.fromJson(
+      Object? json) {
+    if (json is String) {
+      return UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdString(
+          json);
+    }
+    try {
+      return UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1(
+          UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1
+              .fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdString extends UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId {
+final class UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdString
+    extends UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId {
   final String value;
-  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdString(this.value);
-  @override Object? toJson() => value;
+  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1 extends UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId {
-  final UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1 value;
-  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1
+    extends UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvId {
+  final UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1
+      value;
+  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectNewConnectConfigurationsItemEnvIdVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Required object value serialized in the `newConnectConfigurations[]` wire field.
-class UserEventPayloadVariant279ProjectNewConnectConfigurationsItem implements SdkJsonModel {
+class UserEventPayloadVariant279ProjectNewConnectConfigurationsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `aws` wire field.
-  final SdkOptional<UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws> aws;
+  final SdkOptional<
+      UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws> aws;
+
   /// Required enumerated value serialized in the `buildsEnabled` wire field.
-  final UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled buildsEnabled;
+  final UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled
+      buildsEnabled;
+
   /// Required `string` value serialized in the `connectConfigurationId` wire field.
   final String connectConfigurationId;
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Optional `string` value serialized in the `dc` wire field.
   final SdkOptional<String> dc;
+
   /// Required API value serialized in the `envId` wire field.
   final String envId;
+
   /// Required enumerated value serialized in the `passive` wire field.
-  final UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive passive;
+  final UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive
+      passive;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
-  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItem({this.aws = const SdkOmitted(), required this.buildsEnabled, required this.connectConfigurationId, required this.createdAt, this.dc = const SdkOmitted(), required this.envId, required this.passive, required this.updatedAt});
+  const UserEventPayloadVariant279ProjectNewConnectConfigurationsItem(
+      {this.aws = const SdkOmitted(),
+      required this.buildsEnabled,
+      required this.connectConfigurationId,
+      required this.createdAt,
+      this.dc = const SdkOmitted(),
+      required this.envId,
+      required this.passive,
+      required this.updatedAt});
 
-  UserEventPayloadVariant279ProjectNewConnectConfigurationsItem Function({SdkOptional<UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws> aws, UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled buildsEnabled, String connectConfigurationId, double createdAt, SdkOptional<String> dc, String envId, UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive passive, double updatedAt}) get copyWith => _copyWith;
+  UserEventPayloadVariant279ProjectNewConnectConfigurationsItem Function(
+      {SdkOptional<
+              UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws>
+          aws,
+      UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled
+          buildsEnabled,
+      String connectConfigurationId,
+      double createdAt,
+      SdkOptional<String> dc,
+      String envId,
+      UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive
+          passive,
+      double updatedAt}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant279ProjectNewConnectConfigurationsItem _copyWith({Object? aws = sdkOmittedValue, Object? buildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? dc = sdkOmittedValue, Object? envId = sdkOmittedValue, Object? passive = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UserEventPayloadVariant279ProjectNewConnectConfigurationsItem(
-    aws: identical(aws, sdkOmittedValue) ? this.aws : aws as SdkOptional<UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws>,
-    buildsEnabled: identical(buildsEnabled, sdkOmittedValue) ? this.buildsEnabled : buildsEnabled as UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled,
-    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    dc: identical(dc, sdkOmittedValue) ? this.dc : dc as SdkOptional<String>,
-    envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
-    passive: identical(passive, sdkOmittedValue) ? this.passive : passive as UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  UserEventPayloadVariant279ProjectNewConnectConfigurationsItem _copyWith(
+          {Object? aws = sdkOmittedValue,
+          Object? buildsEnabled = sdkOmittedValue,
+          Object? connectConfigurationId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? dc = sdkOmittedValue,
+          Object? envId = sdkOmittedValue,
+          Object? passive = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UserEventPayloadVariant279ProjectNewConnectConfigurationsItem(
+        aws: identical(aws, sdkOmittedValue)
+            ? this.aws
+            : aws as SdkOptional<
+                UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws>,
+        buildsEnabled: identical(buildsEnabled, sdkOmittedValue)
+            ? this.buildsEnabled
+            : buildsEnabled
+                as UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled,
+        connectConfigurationId:
+            identical(connectConfigurationId, sdkOmittedValue)
+                ? this.connectConfigurationId
+                : connectConfigurationId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        dc: identical(dc, sdkOmittedValue)
+            ? this.dc
+            : dc as SdkOptional<String>,
+        envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
+        passive: identical(passive, sdkOmittedValue)
+            ? this.passive
+            : passive
+                as UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory UserEventPayloadVariant279ProjectNewConnectConfigurationsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant279ProjectNewConnectConfigurationsItem(
-    aws: json['aws'] != null ? SdkPresent((json['aws'] != null ? UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws.fromJson(json['aws'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildsEnabled: (json['buildsEnabled'] != null ? UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled.fromJson(json['buildsEnabled'] as bool) : null)!,
-    connectConfigurationId: (json['connectConfigurationId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    dc: json['dc'] != null ? SdkPresent((json['dc'] as String?)!) : const SdkOmitted(),
-    envId: (json['envId'] as String?)!,
-    passive: (json['passive'] != null ? UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive.fromJson(json['passive'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  ), json);
+  factory UserEventPayloadVariant279ProjectNewConnectConfigurationsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant279ProjectNewConnectConfigurationsItem(
+            aws: json['aws'] != null
+                ? SdkPresent((json['aws'] != null
+                    ? UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws
+                        .fromJson(json['aws'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            buildsEnabled: (json['buildsEnabled'] != null
+                ? UserEventPayloadVariant279ProjectNewConnectConfigurationsItemBuildsEnabled
+                    .fromJson(json['buildsEnabled'] as bool)
+                : null)!,
+            connectConfigurationId:
+                (json['connectConfigurationId'] as String?)!,
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            dc: json['dc'] != null
+                ? SdkPresent((json['dc'] as String?)!)
+                : const SdkOmitted(),
+            envId: (json['envId'] as String?)!,
+            passive: (json['passive'] != null
+                ? UserEventPayloadVariant279ProjectNewConnectConfigurationsItemPassive
+                    .fromJson(json['passive'] as bool)
+                : null)!,
+            updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (aws) {
-      SdkPresent<UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws>(value: final value) => {'aws': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'buildsEnabled': buildsEnabled.toJson(),
-    'connectConfigurationId': connectConfigurationId,
-    'createdAt': createdAt,
-    ...switch (dc) {
-      SdkPresent<String>(value: final value) => {'dc': value,},
-      _ => const <String, dynamic>{},
-    },
-    'envId': envId,
-    'passive': passive.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (aws) {
+          SdkPresent<
+                UserEventPayloadVariant279ProjectNewConnectConfigurationsItemAws>(
+            value: final value
+          ) =>
+            {
+              'aws': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'buildsEnabled': buildsEnabled.toJson(),
+        'connectConfigurationId': connectConfigurationId,
+        'createdAt': createdAt,
+        ...switch (dc) {
+          SdkPresent<String>(value: final value) => {
+              'dc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'envId': envId,
+        'passive': passive.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 /// Optional object value serialized in the `aws` wire field.
-class UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws implements SdkJsonModel {
+class UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `securityGroupId` wire field.
   final SdkOptional<String> securityGroupId;
+
   /// Required array value serialized in the `subnetIds` wire field.
   final List<String> subnetIds;
 
-  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws({this.securityGroupId = const SdkOmitted(), required this.subnetIds});
+  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws(
+      {this.securityGroupId = const SdkOmitted(), required this.subnetIds});
 
-  UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws Function({SdkOptional<String> securityGroupId, List<String> subnetIds}) get copyWith => _copyWith;
+  UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws Function(
+      {SdkOptional<String> securityGroupId,
+      List<String> subnetIds}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws _copyWith({Object? securityGroupId = sdkOmittedValue, Object? subnetIds = sdkOmittedValue}) => UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws(
-    securityGroupId: identical(securityGroupId, sdkOmittedValue) ? this.securityGroupId : securityGroupId as SdkOptional<String>,
-    subnetIds: identical(subnetIds, sdkOmittedValue) ? this.subnetIds : subnetIds as List<String>,
-  );
+  UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws _copyWith(
+          {Object? securityGroupId = sdkOmittedValue,
+          Object? subnetIds = sdkOmittedValue}) =>
+      UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws(
+        securityGroupId: identical(securityGroupId, sdkOmittedValue)
+            ? this.securityGroupId
+            : securityGroupId as SdkOptional<String>,
+        subnetIds: identical(subnetIds, sdkOmittedValue)
+            ? this.subnetIds
+            : subnetIds as List<String>,
+      );
 
-  factory UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws(
-    securityGroupId: json['securityGroupId'] != null ? SdkPresent((json['securityGroupId'] as String?)!) : const SdkOmitted(),
-    subnetIds: ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
-  ), json);
+  factory UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws(
+            securityGroupId: json['securityGroupId'] != null
+                ? SdkPresent((json['securityGroupId'] as String?)!)
+                : const SdkOmitted(),
+            subnetIds: ((json['subnetIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (securityGroupId) {
-      SdkPresent<String>(value: final value) => {'securityGroupId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'subnetIds': subnetIds,
-  };
+        ...switch (securityGroupId) {
+          SdkPresent<String>(value: final value) => {
+              'securityGroupId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'subnetIds': subnetIds,
+      };
 }
 
 sealed class UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId();
-  factory UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId.fromJson(Object? json) {
-    if (json is String) { return UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdString(json); }
-    try { return UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1(UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId");
+  factory UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId.fromJson(
+      Object? json) {
+    if (json is String) {
+      return UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdString(
+          json);
+    }
+    try {
+      return UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1(
+          UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1
+              .fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdString extends UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId {
+final class UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdString
+    extends UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId {
   final String value;
-  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdString(this.value);
-  @override Object? toJson() => value;
+  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1 extends UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId {
-  final UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1 value;
-  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1
+    extends UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvId {
+  final UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1
+      value;
+  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdUserEventPayloadVariant279ProjectOldConnectConfigurationsItemEnvIdVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Required object value serialized in the `oldConnectConfigurations[]` wire field.
-class UserEventPayloadVariant279ProjectOldConnectConfigurationsItem implements SdkJsonModel {
+class UserEventPayloadVariant279ProjectOldConnectConfigurationsItem
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `aws` wire field.
-  final SdkOptional<UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws> aws;
+  final SdkOptional<
+      UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws> aws;
+
   /// Required enumerated value serialized in the `buildsEnabled` wire field.
-  final UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled buildsEnabled;
+  final UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled
+      buildsEnabled;
+
   /// Required `string` value serialized in the `connectConfigurationId` wire field.
   final String connectConfigurationId;
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Optional `string` value serialized in the `dc` wire field.
   final SdkOptional<String> dc;
+
   /// Required API value serialized in the `envId` wire field.
   final String envId;
+
   /// Required enumerated value serialized in the `passive` wire field.
-  final UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive passive;
+  final UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive
+      passive;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
-  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItem({this.aws = const SdkOmitted(), required this.buildsEnabled, required this.connectConfigurationId, required this.createdAt, this.dc = const SdkOmitted(), required this.envId, required this.passive, required this.updatedAt});
+  const UserEventPayloadVariant279ProjectOldConnectConfigurationsItem(
+      {this.aws = const SdkOmitted(),
+      required this.buildsEnabled,
+      required this.connectConfigurationId,
+      required this.createdAt,
+      this.dc = const SdkOmitted(),
+      required this.envId,
+      required this.passive,
+      required this.updatedAt});
 
-  UserEventPayloadVariant279ProjectOldConnectConfigurationsItem Function({SdkOptional<UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws> aws, UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled buildsEnabled, String connectConfigurationId, double createdAt, SdkOptional<String> dc, String envId, UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive passive, double updatedAt}) get copyWith => _copyWith;
+  UserEventPayloadVariant279ProjectOldConnectConfigurationsItem Function(
+      {SdkOptional<
+              UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws>
+          aws,
+      UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled
+          buildsEnabled,
+      String connectConfigurationId,
+      double createdAt,
+      SdkOptional<String> dc,
+      String envId,
+      UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive
+          passive,
+      double updatedAt}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant279ProjectOldConnectConfigurationsItem _copyWith({Object? aws = sdkOmittedValue, Object? buildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? dc = sdkOmittedValue, Object? envId = sdkOmittedValue, Object? passive = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UserEventPayloadVariant279ProjectOldConnectConfigurationsItem(
-    aws: identical(aws, sdkOmittedValue) ? this.aws : aws as SdkOptional<UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws>,
-    buildsEnabled: identical(buildsEnabled, sdkOmittedValue) ? this.buildsEnabled : buildsEnabled as UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled,
-    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    dc: identical(dc, sdkOmittedValue) ? this.dc : dc as SdkOptional<String>,
-    envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
-    passive: identical(passive, sdkOmittedValue) ? this.passive : passive as UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  UserEventPayloadVariant279ProjectOldConnectConfigurationsItem _copyWith(
+          {Object? aws = sdkOmittedValue,
+          Object? buildsEnabled = sdkOmittedValue,
+          Object? connectConfigurationId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? dc = sdkOmittedValue,
+          Object? envId = sdkOmittedValue,
+          Object? passive = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UserEventPayloadVariant279ProjectOldConnectConfigurationsItem(
+        aws: identical(aws, sdkOmittedValue)
+            ? this.aws
+            : aws as SdkOptional<
+                UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws>,
+        buildsEnabled: identical(buildsEnabled, sdkOmittedValue)
+            ? this.buildsEnabled
+            : buildsEnabled
+                as UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled,
+        connectConfigurationId:
+            identical(connectConfigurationId, sdkOmittedValue)
+                ? this.connectConfigurationId
+                : connectConfigurationId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        dc: identical(dc, sdkOmittedValue)
+            ? this.dc
+            : dc as SdkOptional<String>,
+        envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
+        passive: identical(passive, sdkOmittedValue)
+            ? this.passive
+            : passive
+                as UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory UserEventPayloadVariant279ProjectOldConnectConfigurationsItem.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant279ProjectOldConnectConfigurationsItem(
-    aws: json['aws'] != null ? SdkPresent((json['aws'] != null ? UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws.fromJson(json['aws'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildsEnabled: (json['buildsEnabled'] != null ? UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled.fromJson(json['buildsEnabled'] as bool) : null)!,
-    connectConfigurationId: (json['connectConfigurationId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    dc: json['dc'] != null ? SdkPresent((json['dc'] as String?)!) : const SdkOmitted(),
-    envId: (json['envId'] as String?)!,
-    passive: (json['passive'] != null ? UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive.fromJson(json['passive'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  ), json);
+  factory UserEventPayloadVariant279ProjectOldConnectConfigurationsItem.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant279ProjectOldConnectConfigurationsItem(
+            aws: json['aws'] != null
+                ? SdkPresent((json['aws'] != null
+                    ? UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws
+                        .fromJson(json['aws'] as Map<String, dynamic>)
+                    : null)!)
+                : const SdkOmitted(),
+            buildsEnabled: (json['buildsEnabled'] != null
+                ? UserEventPayloadVariant279ProjectOldConnectConfigurationsItemBuildsEnabled
+                    .fromJson(json['buildsEnabled'] as bool)
+                : null)!,
+            connectConfigurationId:
+                (json['connectConfigurationId'] as String?)!,
+            createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+            dc: json['dc'] != null
+                ? SdkPresent((json['dc'] as String?)!)
+                : const SdkOmitted(),
+            envId: (json['envId'] as String?)!,
+            passive: (json['passive'] != null
+                ? UserEventPayloadVariant279ProjectOldConnectConfigurationsItemPassive
+                    .fromJson(json['passive'] as bool)
+                : null)!,
+            updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (aws) {
-      SdkPresent<UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws>(value: final value) => {'aws': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'buildsEnabled': buildsEnabled.toJson(),
-    'connectConfigurationId': connectConfigurationId,
-    'createdAt': createdAt,
-    ...switch (dc) {
-      SdkPresent<String>(value: final value) => {'dc': value,},
-      _ => const <String, dynamic>{},
-    },
-    'envId': envId,
-    'passive': passive.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (aws) {
+          SdkPresent<
+                UserEventPayloadVariant279ProjectOldConnectConfigurationsItemAws>(
+            value: final value
+          ) =>
+            {
+              'aws': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'buildsEnabled': buildsEnabled.toJson(),
+        'connectConfigurationId': connectConfigurationId,
+        'createdAt': createdAt,
+        ...switch (dc) {
+          SdkPresent<String>(value: final value) => {
+              'dc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'envId': envId,
+        'passive': passive.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 /// Required object value serialized in the `project` wire field.
 class UserEventPayloadVariant279Project implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
+
   /// Required array value serialized in the `newConnectConfigurations` wire field.
-  final List<UserEventPayloadVariant279ProjectNewConnectConfigurationsItem>? newConnectConfigurations;
+  final List<UserEventPayloadVariant279ProjectNewConnectConfigurationsItem>?
+      newConnectConfigurations;
+
   /// Required array value serialized in the `oldConnectConfigurations` wire field.
-  final List<UserEventPayloadVariant279ProjectOldConnectConfigurationsItem>? oldConnectConfigurations;
+  final List<UserEventPayloadVariant279ProjectOldConnectConfigurationsItem>?
+      oldConnectConfigurations;
 
-  const UserEventPayloadVariant279Project({required this.id, this.name = const SdkOmitted(), required this.newConnectConfigurations, required this.oldConnectConfigurations});
+  const UserEventPayloadVariant279Project(
+      {required this.id,
+      this.name = const SdkOmitted(),
+      required this.newConnectConfigurations,
+      required this.oldConnectConfigurations});
 
-  UserEventPayloadVariant279Project Function({String id, SdkOptional<String> name, List<UserEventPayloadVariant279ProjectNewConnectConfigurationsItem>? newConnectConfigurations, List<UserEventPayloadVariant279ProjectOldConnectConfigurationsItem>? oldConnectConfigurations}) get copyWith => _copyWith;
+  UserEventPayloadVariant279Project Function(
+      {String id,
+      SdkOptional<String> name,
+      List<UserEventPayloadVariant279ProjectNewConnectConfigurationsItem>?
+          newConnectConfigurations,
+      List<UserEventPayloadVariant279ProjectOldConnectConfigurationsItem>?
+          oldConnectConfigurations}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant279Project _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? newConnectConfigurations = sdkOmittedValue, Object? oldConnectConfigurations = sdkOmittedValue}) => UserEventPayloadVariant279Project(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    newConnectConfigurations: identical(newConnectConfigurations, sdkOmittedValue) ? this.newConnectConfigurations : newConnectConfigurations as List<UserEventPayloadVariant279ProjectNewConnectConfigurationsItem>?,
-    oldConnectConfigurations: identical(oldConnectConfigurations, sdkOmittedValue) ? this.oldConnectConfigurations : oldConnectConfigurations as List<UserEventPayloadVariant279ProjectOldConnectConfigurationsItem>?,
-  );
+  UserEventPayloadVariant279Project _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? newConnectConfigurations = sdkOmittedValue,
+          Object? oldConnectConfigurations = sdkOmittedValue}) =>
+      UserEventPayloadVariant279Project(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        newConnectConfigurations: identical(
+                newConnectConfigurations, sdkOmittedValue)
+            ? this.newConnectConfigurations
+            : newConnectConfigurations as List<
+                UserEventPayloadVariant279ProjectNewConnectConfigurationsItem>?,
+        oldConnectConfigurations: identical(
+                oldConnectConfigurations, sdkOmittedValue)
+            ? this.oldConnectConfigurations
+            : oldConnectConfigurations as List<
+                UserEventPayloadVariant279ProjectOldConnectConfigurationsItem>?,
+      );
 
-  factory UserEventPayloadVariant279Project.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UserEventPayloadVariant279Project(
-    id: (json['id'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    newConnectConfigurations: json.containsKey('newConnectConfigurations') ? (json['newConnectConfigurations'] as List?)?.map((e) => UserEventPayloadVariant279ProjectNewConnectConfigurationsItem.fromJson(e as Map<String, dynamic>)).toList() : throw ArgumentError.value(null, 'newConnectConfigurations', 'Required property is missing'),
-    oldConnectConfigurations: json.containsKey('oldConnectConfigurations') ? (json['oldConnectConfigurations'] as List?)?.map((e) => UserEventPayloadVariant279ProjectOldConnectConfigurationsItem.fromJson(e as Map<String, dynamic>)).toList() : throw ArgumentError.value(null, 'oldConnectConfigurations', 'Required property is missing'),
-  ), json);
+  factory UserEventPayloadVariant279Project.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UserEventPayloadVariant279Project(
+            id: (json['id'] as String?)!,
+            name: json['name'] != null
+                ? SdkPresent((json['name'] as String?)!)
+                : const SdkOmitted(),
+            newConnectConfigurations: json
+                    .containsKey('newConnectConfigurations')
+                ? (json['newConnectConfigurations'] as List?)
+                    ?.map((e) =>
+                        UserEventPayloadVariant279ProjectNewConnectConfigurationsItem
+                            .fromJson(e as Map<String, dynamic>))
+                    .toList()
+                : throw ArgumentError.value(null, 'newConnectConfigurations',
+                    'Required property is missing'),
+            oldConnectConfigurations: json
+                    .containsKey('oldConnectConfigurations')
+                ? (json['oldConnectConfigurations'] as List?)
+                    ?.map((e) =>
+                        UserEventPayloadVariant279ProjectOldConnectConfigurationsItem
+                            .fromJson(e as Map<String, dynamic>))
+                    .toList()
+                : throw ArgumentError.value(null, 'oldConnectConfigurations',
+                    'Required property is missing'),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    'newConnectConfigurations': newConnectConfigurations?.map((item) => item.toJson()).toList(),
-    'oldConnectConfigurations': oldConnectConfigurations?.map((item) => item.toJson()).toList(),
-  };
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'newConnectConfigurations':
+            newConnectConfigurations?.map((item) => item.toJson()).toList(),
+        'oldConnectConfigurations':
+            oldConnectConfigurations?.map((item) => item.toJson()).toList(),
+      };
 }

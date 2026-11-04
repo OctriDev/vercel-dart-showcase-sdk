@@ -12,28 +12,46 @@ class ListDrivesResponse implements SdkJsonModel {
 
   const ListDrivesResponse({required this.drives, required this.pagination});
 
-  ListDrivesResponse Function({List<Drive> drives, ListDrivesResponsePagination pagination}) get copyWith => _copyWith;
+  ListDrivesResponse Function(
+      {List<Drive> drives,
+      ListDrivesResponsePagination pagination}) get copyWith => _copyWith;
 
-  ListDrivesResponse _copyWith({Object? drives = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListDrivesResponse(
-    drives: identical(drives, sdkOmittedValue) ? this.drives : drives as List<Drive>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListDrivesResponsePagination,
-  );
+  ListDrivesResponse _copyWith(
+          {Object? drives = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListDrivesResponse(
+        drives: identical(drives, sdkOmittedValue)
+            ? this.drives
+            : drives as List<Drive>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListDrivesResponsePagination,
+      );
 
-  factory ListDrivesResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListDrivesResponse(
-    drives: ((json['drives'] as List?)?.map((e) => Drive.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? ListDrivesResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory ListDrivesResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListDrivesResponse(
+            drives: ((json['drives'] as List?)
+                ?.map((e) => Drive.fromJson(e as Map<String, dynamic>))
+                .toList())!,
+            pagination: (json['pagination'] != null
+                ? ListDrivesResponsePagination.fromJson(
+                    json['pagination'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'drives': drives.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'drives': drives.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 class GetDriveResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Vercel Sandbox Drive.
   final Drive drive;
 
@@ -41,66 +59,111 @@ class GetDriveResponse implements SdkJsonModel {
 
   GetDriveResponse Function({Drive drive}) get copyWith => _copyWith;
 
-  GetDriveResponse _copyWith({Object? drive = sdkOmittedValue}) => GetDriveResponse(
-    drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
-  );
+  GetDriveResponse _copyWith({Object? drive = sdkOmittedValue}) =>
+      GetDriveResponse(
+        drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
+      );
 
-  factory GetDriveResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetDriveResponse(
-    drive: (json['drive'] != null ? Drive.fromJson(json['drive'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory GetDriveResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetDriveResponse(
+            drive: (json['drive'] != null
+                ? Drive.fromJson(json['drive'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'drive': drive.toJson(),
-  };
+        'drive': drive.toJson(),
+      };
 }
 
 class GetOrCreateDriveRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The project ID or name to associate the drive with. Required unless using a Vercel OIDC token scoped to a project.
   final SdkOptional<String> projectId;
+
   /// Maximum drive size in bytes. Must be a multiple of 4096 bytes. Defaults to 1 TiB when omitted (1 GiB for Hobby). The maximum quota is 16 TiB. Request a quota above 16 TiB at https://vercel.com/help.
   final SdkOptional<int> maxSizeBytes;
+
   /// Region where the drive is stored. Defaults to iad1.
   final SdkOptional<GetOrCreateDriveRequestBodyRegion> region;
 
-  const GetOrCreateDriveRequestBody({this.projectId = const SdkOmitted(), this.maxSizeBytes = const SdkOmitted(), this.region = const SdkOmitted()});
+  const GetOrCreateDriveRequestBody(
+      {this.projectId = const SdkOmitted(),
+      this.maxSizeBytes = const SdkOmitted(),
+      this.region = const SdkOmitted()});
 
-  GetOrCreateDriveRequestBody Function({SdkOptional<String> projectId, SdkOptional<int> maxSizeBytes, SdkOptional<GetOrCreateDriveRequestBodyRegion> region}) get copyWith => _copyWith;
+  GetOrCreateDriveRequestBody Function(
+          {SdkOptional<String> projectId,
+          SdkOptional<int> maxSizeBytes,
+          SdkOptional<GetOrCreateDriveRequestBodyRegion> region})
+      get copyWith => _copyWith;
 
-  GetOrCreateDriveRequestBody _copyWith({Object? projectId = sdkOmittedValue, Object? maxSizeBytes = sdkOmittedValue, Object? region = sdkOmittedValue}) => GetOrCreateDriveRequestBody(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    maxSizeBytes: identical(maxSizeBytes, sdkOmittedValue) ? this.maxSizeBytes : maxSizeBytes as SdkOptional<int>,
-    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<GetOrCreateDriveRequestBodyRegion>,
-  );
+  GetOrCreateDriveRequestBody _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? maxSizeBytes = sdkOmittedValue,
+          Object? region = sdkOmittedValue}) =>
+      GetOrCreateDriveRequestBody(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        maxSizeBytes: identical(maxSizeBytes, sdkOmittedValue)
+            ? this.maxSizeBytes
+            : maxSizeBytes as SdkOptional<int>,
+        region: identical(region, sdkOmittedValue)
+            ? this.region
+            : region as SdkOptional<GetOrCreateDriveRequestBodyRegion>,
+      );
 
-  factory GetOrCreateDriveRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetOrCreateDriveRequestBody(
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    maxSizeBytes: json['maxSizeBytes'] != null ? SdkPresent(((json['maxSizeBytes'] as num?)?.toInt())!) : const SdkOmitted(),
-    region: json['region'] != null ? SdkPresent((json['region'] != null ? GetOrCreateDriveRequestBodyRegion.fromJson(json['region'] as String) : null)!) : const SdkOmitted(),
-  ), json);
+  factory GetOrCreateDriveRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetOrCreateDriveRequestBody(
+            projectId: json['projectId'] != null
+                ? SdkPresent((json['projectId'] as String?)!)
+                : const SdkOmitted(),
+            maxSizeBytes: json['maxSizeBytes'] != null
+                ? SdkPresent(((json['maxSizeBytes'] as num?)?.toInt())!)
+                : const SdkOmitted(),
+            region: json['region'] != null
+                ? SdkPresent((json['region'] != null
+                    ? GetOrCreateDriveRequestBodyRegion.fromJson(
+                        json['region'] as String)
+                    : null)!)
+                : const SdkOmitted(),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (maxSizeBytes) {
-      SdkPresent<int>(value: final value) => {'maxSizeBytes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (region) {
-      SdkPresent<GetOrCreateDriveRequestBodyRegion>(value: final value) => {'region': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (maxSizeBytes) {
+          SdkPresent<int>(value: final value) => {
+              'maxSizeBytes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (region) {
+          SdkPresent<GetOrCreateDriveRequestBodyRegion>(value: final value) => {
+              'region': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetOrCreateDriveResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Vercel Sandbox Drive.
   final Drive drive;
 
@@ -108,23 +171,30 @@ class GetOrCreateDriveResponse implements SdkJsonModel {
 
   GetOrCreateDriveResponse Function({Drive drive}) get copyWith => _copyWith;
 
-  GetOrCreateDriveResponse _copyWith({Object? drive = sdkOmittedValue}) => GetOrCreateDriveResponse(
-    drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
-  );
+  GetOrCreateDriveResponse _copyWith({Object? drive = sdkOmittedValue}) =>
+      GetOrCreateDriveResponse(
+        drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
+      );
 
-  factory GetOrCreateDriveResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetOrCreateDriveResponse(
-    drive: (json['drive'] != null ? Drive.fromJson(json['drive'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory GetOrCreateDriveResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetOrCreateDriveResponse(
+            drive: (json['drive'] != null
+                ? Drive.fromJson(json['drive'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'drive': drive.toJson(),
-  };
+        'drive': drive.toJson(),
+      };
 }
 
 class DeleteDriveResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Vercel Sandbox Drive.
   final Drive drive;
 
@@ -132,23 +202,30 @@ class DeleteDriveResponse implements SdkJsonModel {
 
   DeleteDriveResponse Function({Drive drive}) get copyWith => _copyWith;
 
-  DeleteDriveResponse _copyWith({Object? drive = sdkOmittedValue}) => DeleteDriveResponse(
-    drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
-  );
+  DeleteDriveResponse _copyWith({Object? drive = sdkOmittedValue}) =>
+      DeleteDriveResponse(
+        drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
+      );
 
-  factory DeleteDriveResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(DeleteDriveResponse(
-    drive: (json['drive'] != null ? Drive.fromJson(json['drive'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory DeleteDriveResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          DeleteDriveResponse(
+            drive: (json['drive'] != null
+                ? Drive.fromJson(json['drive'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'drive': drive.toJson(),
-  };
+        'drive': drive.toJson(),
+      };
 }
 
 class ForkDriveRequestBody implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Name for the forked drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).
   final String name;
 
@@ -156,23 +233,28 @@ class ForkDriveRequestBody implements SdkJsonModel {
 
   ForkDriveRequestBody Function({String name}) get copyWith => _copyWith;
 
-  ForkDriveRequestBody _copyWith({Object? name = sdkOmittedValue}) => ForkDriveRequestBody(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  ForkDriveRequestBody _copyWith({Object? name = sdkOmittedValue}) =>
+      ForkDriveRequestBody(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory ForkDriveRequestBody.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ForkDriveRequestBody(
-    name: (json['name'] as String?)!,
-  ), json);
+  factory ForkDriveRequestBody.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ForkDriveRequestBody(
+            name: (json['name'] as String?)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'name': name,
-  };
+        'name': name,
+      };
 }
 
 class ForkDriveResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Vercel Sandbox Drive.
   final Drive drive;
 
@@ -180,18 +262,24 @@ class ForkDriveResponse implements SdkJsonModel {
 
   ForkDriveResponse Function({Drive drive}) get copyWith => _copyWith;
 
-  ForkDriveResponse _copyWith({Object? drive = sdkOmittedValue}) => ForkDriveResponse(
-    drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
-  );
+  ForkDriveResponse _copyWith({Object? drive = sdkOmittedValue}) =>
+      ForkDriveResponse(
+        drive: identical(drive, sdkOmittedValue) ? this.drive : drive as Drive,
+      );
 
-  factory ForkDriveResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ForkDriveResponse(
-    drive: (json['drive'] != null ? Drive.fromJson(json['drive'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory ForkDriveResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ForkDriveResponse(
+            drive: (json['drive'] != null
+                ? Drive.fromJson(json['drive'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'drive': drive.toJson(),
-  };
+        'drive': drive.toJson(),
+      };
 }
 
 class ListSessionSnapshotsResponseVariant1Pagination implements SdkJsonModel {
@@ -200,25 +288,36 @@ class ListSessionSnapshotsResponseVariant1Pagination implements SdkJsonModel {
   final double count;
   final String? next;
 
-  const ListSessionSnapshotsResponseVariant1Pagination({required this.count, required this.next});
+  const ListSessionSnapshotsResponseVariant1Pagination(
+      {required this.count, required this.next});
 
-  ListSessionSnapshotsResponseVariant1Pagination Function({double count, String? next}) get copyWith => _copyWith;
+  ListSessionSnapshotsResponseVariant1Pagination Function(
+      {double count, String? next}) get copyWith => _copyWith;
 
-  ListSessionSnapshotsResponseVariant1Pagination _copyWith({Object? count = sdkOmittedValue, Object? next = sdkOmittedValue}) => ListSessionSnapshotsResponseVariant1Pagination(
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-  );
+  ListSessionSnapshotsResponseVariant1Pagination _copyWith(
+          {Object? count = sdkOmittedValue, Object? next = sdkOmittedValue}) =>
+      ListSessionSnapshotsResponseVariant1Pagination(
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+      );
 
-  factory ListSessionSnapshotsResponseVariant1Pagination.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListSessionSnapshotsResponseVariant1Pagination(
-    count: ((json['count'] as num?)?.toDouble())!,
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-  ), json);
+  factory ListSessionSnapshotsResponseVariant1Pagination.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListSessionSnapshotsResponseVariant1Pagination(
+            count: ((json['count'] as num?)?.toDouble())!,
+            next: json.containsKey('next')
+                ? json['next'] as String?
+                : throw ArgumentError.value(
+                    null, 'next', 'Required property is missing'),
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'count': count,
-    'next': next,
-  };
+        'count': count,
+        'next': next,
+      };
 }
 
 class ListSessionSnapshotsResponseVariant1 implements SdkJsonModel {
@@ -227,47 +326,76 @@ class ListSessionSnapshotsResponseVariant1 implements SdkJsonModel {
   final ListSessionSnapshotsResponseVariant1Pagination pagination;
   final List<Snapshot> snapshots;
 
-  const ListSessionSnapshotsResponseVariant1({required this.pagination, required this.snapshots});
+  const ListSessionSnapshotsResponseVariant1(
+      {required this.pagination, required this.snapshots});
 
-  ListSessionSnapshotsResponseVariant1 Function({ListSessionSnapshotsResponseVariant1Pagination pagination, List<Snapshot> snapshots}) get copyWith => _copyWith;
+  ListSessionSnapshotsResponseVariant1 Function(
+      {ListSessionSnapshotsResponseVariant1Pagination pagination,
+      List<Snapshot> snapshots}) get copyWith => _copyWith;
 
-  ListSessionSnapshotsResponseVariant1 _copyWith({Object? pagination = sdkOmittedValue, Object? snapshots = sdkOmittedValue}) => ListSessionSnapshotsResponseVariant1(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListSessionSnapshotsResponseVariant1Pagination,
-    snapshots: identical(snapshots, sdkOmittedValue) ? this.snapshots : snapshots as List<Snapshot>,
-  );
+  ListSessionSnapshotsResponseVariant1 _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? snapshots = sdkOmittedValue}) =>
+      ListSessionSnapshotsResponseVariant1(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListSessionSnapshotsResponseVariant1Pagination,
+        snapshots: identical(snapshots, sdkOmittedValue)
+            ? this.snapshots
+            : snapshots as List<Snapshot>,
+      );
 
-  factory ListSessionSnapshotsResponseVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(ListSessionSnapshotsResponseVariant1(
-    pagination: (json['pagination'] != null ? ListSessionSnapshotsResponseVariant1Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-    snapshots: ((json['snapshots'] as List?)?.map((e) => Snapshot.fromJson(e as Map<String, dynamic>)).toList())!,
-  ), json);
+  factory ListSessionSnapshotsResponseVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          ListSessionSnapshotsResponseVariant1(
+            pagination: (json['pagination'] != null
+                ? ListSessionSnapshotsResponseVariant1Pagination.fromJson(
+                    json['pagination'] as Map<String, dynamic>)
+                : null)!,
+            snapshots: ((json['snapshots'] as List?)
+                ?.map((e) => Snapshot.fromJson(e as Map<String, dynamic>))
+                .toList())!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'pagination': pagination.toJson(),
-    'snapshots': snapshots.map((item) => item.toJson()).toList(),
-  };
+        'pagination': pagination.toJson(),
+        'snapshots': snapshots.map((item) => item.toJson()).toList(),
+      };
 }
 
 class GetSessionSnapshotResponse implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Snapshot of a Vercel Sandbox session (v2 API).
   final Snapshot snapshot;
 
   const GetSessionSnapshotResponse({required this.snapshot});
 
-  GetSessionSnapshotResponse Function({Snapshot snapshot}) get copyWith => _copyWith;
+  GetSessionSnapshotResponse Function({Snapshot snapshot}) get copyWith =>
+      _copyWith;
 
-  GetSessionSnapshotResponse _copyWith({Object? snapshot = sdkOmittedValue}) => GetSessionSnapshotResponse(
-    snapshot: identical(snapshot, sdkOmittedValue) ? this.snapshot : snapshot as Snapshot,
-  );
+  GetSessionSnapshotResponse _copyWith({Object? snapshot = sdkOmittedValue}) =>
+      GetSessionSnapshotResponse(
+        snapshot: identical(snapshot, sdkOmittedValue)
+            ? this.snapshot
+            : snapshot as Snapshot,
+      );
 
-  factory GetSessionSnapshotResponse.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(GetSessionSnapshotResponse(
-    snapshot: (json['snapshot'] != null ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>) : null)!,
-  ), json);
+  factory GetSessionSnapshotResponse.fromJson(Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          GetSessionSnapshotResponse(
+            snapshot: (json['snapshot'] != null
+                ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'snapshot': snapshot.toJson(),
-  };
+        'snapshot': snapshot.toJson(),
+      };
 }

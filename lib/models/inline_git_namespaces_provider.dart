@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GitNamespacesProvider {
-
   final String value;
 
   const GitNamespacesProvider._(this.value);
 
-  factory GitNamespacesProvider.fromJson(String value) => GitNamespacesProvider._(value);
+  factory GitNamespacesProvider.fromJson(String value) =>
+      GitNamespacesProvider._(value);
 
   static const github = GitNamespacesProvider._('github');
   static const githubLimited = GitNamespacesProvider._('github-limited');
@@ -20,106 +20,134 @@ final class GitNamespacesProvider {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GitNamespacesProvider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GitNamespacesProvider && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GitNamespacesResponseItemIsAccessRestricted {
-
   final bool value;
 
   const GitNamespacesResponseItemIsAccessRestricted._(this.value);
 
-  factory GitNamespacesResponseItemIsAccessRestricted.fromJson(bool value) => GitNamespacesResponseItemIsAccessRestricted._(value);
+  factory GitNamespacesResponseItemIsAccessRestricted.fromJson(bool value) =>
+      GitNamespacesResponseItemIsAccessRestricted._(value);
 
   static const false_ = GitNamespacesResponseItemIsAccessRestricted._(false);
   static const true_ = GitNamespacesResponseItemIsAccessRestricted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GitNamespacesResponseItemIsAccessRestricted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GitNamespacesResponseItemIsAccessRestricted &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GitNamespacesResponseItemRequireReauth {
-
   final bool value;
 
   const GitNamespacesResponseItemRequireReauth._(this.value);
 
-  factory GitNamespacesResponseItemRequireReauth.fromJson(bool value) => GitNamespacesResponseItemRequireReauth._(value);
+  factory GitNamespacesResponseItemRequireReauth.fromJson(bool value) =>
+      GitNamespacesResponseItemRequireReauth._(value);
 
   static const false_ = GitNamespacesResponseItemRequireReauth._(false);
   static const true_ = GitNamespacesResponseItemRequireReauth._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GitNamespacesResponseItemRequireReauth && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GitNamespacesResponseItemRequireReauth && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GitNamespacesResponseItemViewerCanCreateApp {
-
   final bool value;
 
   const GitNamespacesResponseItemViewerCanCreateApp._(this.value);
 
-  factory GitNamespacesResponseItemViewerCanCreateApp.fromJson(bool value) => GitNamespacesResponseItemViewerCanCreateApp._(value);
+  factory GitNamespacesResponseItemViewerCanCreateApp.fromJson(bool value) =>
+      GitNamespacesResponseItemViewerCanCreateApp._(value);
 
   static const false_ = GitNamespacesResponseItemViewerCanCreateApp._(false);
   static const true_ = GitNamespacesResponseItemViewerCanCreateApp._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GitNamespacesResponseItemViewerCanCreateApp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GitNamespacesResponseItemViewerCanCreateApp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0 {
-
   final String value;
 
-  const ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0._(this.value);
+  const ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0._(
+      this.value);
 
-  factory ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0.fromJson(String value) => ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0._(value);
+  factory ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0.fromJson(
+          String value) =>
+      ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0
+          ._(value);
 
-  static const production = ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0._('production');
-  static const preview = ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0._('preview');
-  static const development = ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0._('development');
+  static const production =
+      ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0
+          ._('production');
+  static const preview =
+      ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0
+          ._('preview');
+  static const development =
+      ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0
+          ._('development');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ConnectIntegrationResourceToProjectRequestBodyEnvVarEnvironmentsItemVariant0 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetBillingPlansSource {
-
   final String value;
 
   const GetBillingPlansSource._(this.value);
 
-  factory GetBillingPlansSource.fromJson(String value) => GetBillingPlansSource._(value);
+  factory GetBillingPlansSource.fromJson(String value) =>
+      GetBillingPlansSource._(value);
 
   static const marketplace = GetBillingPlansSource._('marketplace');
   static const deployButton = GetBillingPlansSource._('deploy-button');
@@ -129,110 +157,133 @@ final class GetBillingPlansSource {
   static const cli = GetBillingPlansSource._('cli');
   static const oauth = GetBillingPlansSource._('oauth');
   static const backoffice = GetBillingPlansSource._('backoffice');
-  static const importRecommendedIntegrations = GetBillingPlansSource._('import-recommended-integrations');
+  static const importRecommendedIntegrations =
+      GetBillingPlansSource._('import-recommended-integrations');
   static const organization = GetBillingPlansSource._('organization');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetBillingPlansSource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetBillingPlansSource && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetBillingPlansResponsePlansItemDisabled {
-
   final bool value;
 
   const GetBillingPlansResponsePlansItemDisabled._(this.value);
 
-  factory GetBillingPlansResponsePlansItemDisabled.fromJson(bool value) => GetBillingPlansResponsePlansItemDisabled._(value);
+  factory GetBillingPlansResponsePlansItemDisabled.fromJson(bool value) =>
+      GetBillingPlansResponsePlansItemDisabled._(value);
 
   static const false_ = GetBillingPlansResponsePlansItemDisabled._(false);
   static const true_ = GetBillingPlansResponsePlansItemDisabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetBillingPlansResponsePlansItemDisabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetBillingPlansResponsePlansItemDisabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetBillingPlansResponsePlansItemPaymentMethodRequired {
-
   final bool value;
 
   const GetBillingPlansResponsePlansItemPaymentMethodRequired._(this.value);
 
-  factory GetBillingPlansResponsePlansItemPaymentMethodRequired.fromJson(bool value) => GetBillingPlansResponsePlansItemPaymentMethodRequired._(value);
+  factory GetBillingPlansResponsePlansItemPaymentMethodRequired.fromJson(
+          bool value) =>
+      GetBillingPlansResponsePlansItemPaymentMethodRequired._(value);
 
-  static const false_ = GetBillingPlansResponsePlansItemPaymentMethodRequired._(false);
-  static const true_ = GetBillingPlansResponsePlansItemPaymentMethodRequired._(true);
+  static const false_ =
+      GetBillingPlansResponsePlansItemPaymentMethodRequired._(false);
+  static const true_ =
+      GetBillingPlansResponsePlansItemPaymentMethodRequired._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetBillingPlansResponsePlansItemPaymentMethodRequired && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetBillingPlansResponsePlansItemPaymentMethodRequired &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetBillingPlansResponsePlansItemScope {
-
   final String value;
 
   const GetBillingPlansResponsePlansItemScope._(this.value);
 
-  factory GetBillingPlansResponsePlansItemScope.fromJson(String value) => GetBillingPlansResponsePlansItemScope._(value);
+  factory GetBillingPlansResponsePlansItemScope.fromJson(String value) =>
+      GetBillingPlansResponsePlansItemScope._(value);
 
-  static const installation = GetBillingPlansResponsePlansItemScope._('installation');
+  static const installation =
+      GetBillingPlansResponsePlansItemScope._('installation');
   static const resource = GetBillingPlansResponsePlansItemScope._('resource');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetBillingPlansResponsePlansItemScope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetBillingPlansResponsePlansItemScope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetBillingPlansResponsePlansItemType {
-
   final String value;
 
   const GetBillingPlansResponsePlansItemType._(this.value);
 
-  factory GetBillingPlansResponsePlansItemType.fromJson(String value) => GetBillingPlansResponsePlansItemType._(value);
+  factory GetBillingPlansResponsePlansItemType.fromJson(String value) =>
+      GetBillingPlansResponsePlansItemType._(value);
 
-  static const prepayment = GetBillingPlansResponsePlansItemType._('prepayment');
-  static const subscription = GetBillingPlansResponsePlansItemType._('subscription');
+  static const prepayment =
+      GetBillingPlansResponsePlansItemType._('prepayment');
+  static const subscription =
+      GetBillingPlansResponsePlansItemType._('subscription');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetBillingPlansResponsePlansItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetBillingPlansResponsePlansItemType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class SearchRepoProvider {
-
   final String value;
 
   const SearchRepoProvider._(this.value);
 
-  factory SearchRepoProvider.fromJson(String value) => SearchRepoProvider._(value);
+  factory SearchRepoProvider.fromJson(String value) =>
+      SearchRepoProvider._(value);
 
   static const github = SearchRepoProvider._('github');
   static const githubLimited = SearchRepoProvider._('github-limited');
@@ -243,51 +294,62 @@ final class SearchRepoProvider {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SearchRepoProvider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SearchRepoProvider && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class SearchRepoResponseVariant1ErrorCode {
-
   final String value;
 
   const SearchRepoResponseVariant1ErrorCode._(this.value);
 
-  factory SearchRepoResponseVariant1ErrorCode.fromJson(String value) => SearchRepoResponseVariant1ErrorCode._(value);
+  factory SearchRepoResponseVariant1ErrorCode.fromJson(String value) =>
+      SearchRepoResponseVariant1ErrorCode._(value);
 
-  static const installationNotFound = SearchRepoResponseVariant1ErrorCode._('installation_not_found');
+  static const installationNotFound =
+      SearchRepoResponseVariant1ErrorCode._('installation_not_found');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SearchRepoResponseVariant1ErrorCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SearchRepoResponseVariant1ErrorCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class SearchRepoResponseVariant2ReposItemOwnerType {
-
   final String value;
 
   const SearchRepoResponseVariant2ReposItemOwnerType._(this.value);
 
-  factory SearchRepoResponseVariant2ReposItemOwnerType.fromJson(String value) => SearchRepoResponseVariant2ReposItemOwnerType._(value);
+  factory SearchRepoResponseVariant2ReposItemOwnerType.fromJson(String value) =>
+      SearchRepoResponseVariant2ReposItemOwnerType._(value);
 
   static const team = SearchRepoResponseVariant2ReposItemOwnerType._('team');
   static const user = SearchRepoResponseVariant2ReposItemOwnerType._('user');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SearchRepoResponseVariant2ReposItemOwnerType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SearchRepoResponseVariant2ReposItemOwnerType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

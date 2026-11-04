@@ -6,56 +6,71 @@ part of 'inline.dart';
 // Inline operation models
 /// Required enumerated value serialized in the `wildcards` wire field.
 final class UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards {
-
   final bool value;
 
-  const UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(this.value);
+  const UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(
+      this.value);
 
-  factory UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards.fromJson(bool value) => UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(value);
+  factory UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards.fromJson(
+          bool value) =>
+      UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(value);
 
-  static const false_ = UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(false);
-  static const true_ = UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(true);
+  static const false_ =
+      UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(false);
+  static const true_ =
+      UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the token was issued with RFC 9396 authorization details.
 final class UserEventPayloadVariant491HasAuthorizationDetails {
-
   final bool value;
 
   const UserEventPayloadVariant491HasAuthorizationDetails._(this.value);
 
-  factory UserEventPayloadVariant491HasAuthorizationDetails.fromJson(bool value) => UserEventPayloadVariant491HasAuthorizationDetails._(value);
+  factory UserEventPayloadVariant491HasAuthorizationDetails.fromJson(
+          bool value) =>
+      UserEventPayloadVariant491HasAuthorizationDetails._(value);
 
-  static const false_ = UserEventPayloadVariant491HasAuthorizationDetails._(false);
-  static const true_ = UserEventPayloadVariant491HasAuthorizationDetails._(true);
+  static const false_ =
+      UserEventPayloadVariant491HasAuthorizationDetails._(false);
+  static const true_ =
+      UserEventPayloadVariant491HasAuthorizationDetails._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant491HasAuthorizationDetails && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant491HasAuthorizationDetails &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// How the token was issued. Always `'manual'` for explicit PAT creation.
 final class UserEventPayloadVariant491Origin {
-
   final String value;
 
   const UserEventPayloadVariant491Origin._(this.value);
 
-  factory UserEventPayloadVariant491Origin.fromJson(String value) => UserEventPayloadVariant491Origin._(value);
+  factory UserEventPayloadVariant491Origin.fromJson(String value) =>
+      UserEventPayloadVariant491Origin._(value);
 
   static const app = UserEventPayloadVariant491Origin._('app');
   static const apple = UserEventPayloadVariant491Origin._('apple');
@@ -64,7 +79,8 @@ final class UserEventPayloadVariant491Origin {
   static const email = UserEventPayloadVariant491Origin._('email');
   static const emu = UserEventPayloadVariant491Origin._('emu');
   static const github = UserEventPayloadVariant491Origin._('github');
-  static const githubWebhook = UserEventPayloadVariant491Origin._('github-webhook');
+  static const githubWebhook =
+      UserEventPayloadVariant491Origin._('github-webhook');
   static const gitlab = UserEventPayloadVariant491Origin._('gitlab');
   static const google = UserEventPayloadVariant491Origin._('google');
   static const invite = UserEventPayloadVariant491Origin._('invite');
@@ -73,48 +89,56 @@ final class UserEventPayloadVariant491Origin {
   static const passkey = UserEventPayloadVariant491Origin._('passkey');
   static const saml = UserEventPayloadVariant491Origin._('saml');
   static const sms = UserEventPayloadVariant491Origin._('sms');
-  static const tokenExchangeOidc = UserEventPayloadVariant491Origin._('token-exchange-oidc');
+  static const tokenExchangeOidc =
+      UserEventPayloadVariant491Origin._('token-exchange-oidc');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant491Origin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant491Origin && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Present when `scope` is `'project'`.
 final class UserEventPayloadVariant491ProjectScope {
-
   final String value;
 
   const UserEventPayloadVariant491ProjectScope._(this.value);
 
-  factory UserEventPayloadVariant491ProjectScope.fromJson(String value) => UserEventPayloadVariant491ProjectScope._(value);
+  factory UserEventPayloadVariant491ProjectScope.fromJson(String value) =>
+      UserEventPayloadVariant491ProjectScope._(value);
 
   static const account = UserEventPayloadVariant491ProjectScope._('account');
-  static const projectOnly = UserEventPayloadVariant491ProjectScope._('project-only');
+  static const projectOnly =
+      UserEventPayloadVariant491ProjectScope._('project-only');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant491ProjectScope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant491ProjectScope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
 final class UserEventPayloadVariant491Scope {
-
   final String value;
 
   const UserEventPayloadVariant491Scope._(this.value);
 
-  factory UserEventPayloadVariant491Scope.fromJson(String value) => UserEventPayloadVariant491Scope._(value);
+  factory UserEventPayloadVariant491Scope.fromJson(String value) =>
+      UserEventPayloadVariant491Scope._(value);
 
   static const project = UserEventPayloadVariant491Scope._('project');
   static const team = UserEventPayloadVariant491Scope._('team');
@@ -122,130 +146,148 @@ final class UserEventPayloadVariant491Scope {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant491Scope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant491Scope && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `source` wire field.
 final class UserEventPayloadVariant491Source {
-
   final String value;
 
   const UserEventPayloadVariant491Source._(this.value);
 
-  factory UserEventPayloadVariant491Source.fromJson(String value) => UserEventPayloadVariant491Source._(value);
+  factory UserEventPayloadVariant491Source.fromJson(String value) =>
+      UserEventPayloadVariant491Source._(value);
 
   static const v0 = UserEventPayloadVariant491Source._('v0');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant491Source && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant491Source && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The token prefix used when showing a safe checksum-style fingerprint.
 final class UserEventPayloadVariant491TokenPrefix {
-
   final String value;
 
   const UserEventPayloadVariant491TokenPrefix._(this.value);
 
-  factory UserEventPayloadVariant491TokenPrefix.fromJson(String value) => UserEventPayloadVariant491TokenPrefix._(value);
+  factory UserEventPayloadVariant491TokenPrefix.fromJson(String value) =>
+      UserEventPayloadVariant491TokenPrefix._(value);
 
   static const vcp = UserEventPayloadVariant491TokenPrefix._('vcp_');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant491TokenPrefix && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant491TokenPrefix && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `expired` wire field.
 final class UserEventPayloadVariant492Expired {
-
   final bool value;
 
   const UserEventPayloadVariant492Expired._(this.value);
 
-  factory UserEventPayloadVariant492Expired.fromJson(bool value) => UserEventPayloadVariant492Expired._(value);
+  factory UserEventPayloadVariant492Expired.fromJson(bool value) =>
+      UserEventPayloadVariant492Expired._(value);
 
   static const false_ = UserEventPayloadVariant492Expired._(false);
   static const true_ = UserEventPayloadVariant492Expired._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492Expired && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492Expired && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `leaked` wire field.
 final class UserEventPayloadVariant492Leaked {
-
   final bool value;
 
   const UserEventPayloadVariant492Leaked._(this.value);
 
-  factory UserEventPayloadVariant492Leaked.fromJson(bool value) => UserEventPayloadVariant492Leaked._(value);
+  factory UserEventPayloadVariant492Leaked.fromJson(bool value) =>
+      UserEventPayloadVariant492Leaked._(value);
 
   static const false_ = UserEventPayloadVariant492Leaked._(false);
   static const true_ = UserEventPayloadVariant492Leaked._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492Leaked && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492Leaked && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `logoutSource` wire field.
 final class UserEventPayloadVariant492LogoutSource {
-
   final String value;
 
   const UserEventPayloadVariant492LogoutSource._(this.value);
 
-  factory UserEventPayloadVariant492LogoutSource.fromJson(String value) => UserEventPayloadVariant492LogoutSource._(value);
+  factory UserEventPayloadVariant492LogoutSource.fromJson(String value) =>
+      UserEventPayloadVariant492LogoutSource._(value);
 
   static const v0 = UserEventPayloadVariant492LogoutSource._('v0');
   static const vercel = UserEventPayloadVariant492LogoutSource._('vercel');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492LogoutSource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492LogoutSource && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `origin` wire field.
 final class UserEventPayloadVariant492Origin {
-
   final String value;
 
   const UserEventPayloadVariant492Origin._(this.value);
 
-  factory UserEventPayloadVariant492Origin.fromJson(String value) => UserEventPayloadVariant492Origin._(value);
+  factory UserEventPayloadVariant492Origin.fromJson(String value) =>
+      UserEventPayloadVariant492Origin._(value);
 
   static const app = UserEventPayloadVariant492Origin._('app');
   static const apple = UserEventPayloadVariant492Origin._('apple');
@@ -254,7 +296,8 @@ final class UserEventPayloadVariant492Origin {
   static const email = UserEventPayloadVariant492Origin._('email');
   static const emu = UserEventPayloadVariant492Origin._('emu');
   static const github = UserEventPayloadVariant492Origin._('github');
-  static const githubWebhook = UserEventPayloadVariant492Origin._('github-webhook');
+  static const githubWebhook =
+      UserEventPayloadVariant492Origin._('github-webhook');
   static const gitlab = UserEventPayloadVariant492Origin._('gitlab');
   static const google = UserEventPayloadVariant492Origin._('google');
   static const invite = UserEventPayloadVariant492Origin._('invite');
@@ -263,14 +306,18 @@ final class UserEventPayloadVariant492Origin {
   static const passkey = UserEventPayloadVariant492Origin._('passkey');
   static const saml = UserEventPayloadVariant492Origin._('saml');
   static const sms = UserEventPayloadVariant492Origin._('sms');
-  static const tokenExchangeOidc = UserEventPayloadVariant492Origin._('token-exchange-oidc');
+  static const tokenExchangeOidc =
+      UserEventPayloadVariant492Origin._('token-exchange-oidc');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant492Origin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant492Origin && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

@@ -7,16 +7,21 @@ part of 'inline.dart';
 enum CreateDrainResponseVariant0FilterV2FilterVariant0Type {
   basic;
 
-  static CreateDrainResponseVariant0FilterV2FilterVariant0Type fromJson(String value) {
+  static CreateDrainResponseVariant0FilterV2FilterVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'basic': return CreateDrainResponseVariant0FilterV2FilterVariant0Type.basic;
-      default: throw ArgumentError('Unknown CreateDrainResponseVariant0FilterV2FilterVariant0Type: $value');
+      case 'basic':
+        return CreateDrainResponseVariant0FilterV2FilterVariant0Type.basic;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDrainResponseVariant0FilterV2FilterVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant0FilterV2FilterVariant0Type.basic: return 'basic';
+      case CreateDrainResponseVariant0FilterV2FilterVariant0Type.basic:
+        return 'basic';
     }
   }
 
@@ -27,16 +32,21 @@ enum CreateDrainResponseVariant0FilterV2FilterVariant0Type {
 enum CreateDrainResponseVariant0FilterV2FilterVariant1Type {
   odata;
 
-  static CreateDrainResponseVariant0FilterV2FilterVariant1Type fromJson(String value) {
+  static CreateDrainResponseVariant0FilterV2FilterVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'odata': return CreateDrainResponseVariant0FilterV2FilterVariant1Type.odata;
-      default: throw ArgumentError('Unknown CreateDrainResponseVariant0FilterV2FilterVariant1Type: $value');
+      case 'odata':
+        return CreateDrainResponseVariant0FilterV2FilterVariant1Type.odata;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDrainResponseVariant0FilterV2FilterVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant0FilterV2FilterVariant1Type.odata: return 'odata';
+      case CreateDrainResponseVariant0FilterV2FilterVariant1Type.odata:
+        return 'odata';
     }
   }
 
@@ -45,85 +55,106 @@ enum CreateDrainResponseVariant0FilterV2FilterVariant1Type {
 }
 
 final class CreateDrainResponseVariant0FilterV2Version {
-
   final String value;
 
   const CreateDrainResponseVariant0FilterV2Version._(this.value);
 
-  factory CreateDrainResponseVariant0FilterV2Version.fromJson(String value) => CreateDrainResponseVariant0FilterV2Version._(value);
+  factory CreateDrainResponseVariant0FilterV2Version.fromJson(String value) =>
+      CreateDrainResponseVariant0FilterV2Version._(value);
 
   static const v2 = CreateDrainResponseVariant0FilterV2Version._('v2');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0FilterV2Version && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant0FilterV2Version &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDrainResponseVariant0SamplingItemEnv {
-
   final String value;
 
   const CreateDrainResponseVariant0SamplingItemEnv._(this.value);
 
-  factory CreateDrainResponseVariant0SamplingItemEnv.fromJson(String value) => CreateDrainResponseVariant0SamplingItemEnv._(value);
+  factory CreateDrainResponseVariant0SamplingItemEnv.fromJson(String value) =>
+      CreateDrainResponseVariant0SamplingItemEnv._(value);
 
-  static const preview = CreateDrainResponseVariant0SamplingItemEnv._('preview');
-  static const production = CreateDrainResponseVariant0SamplingItemEnv._('production');
+  static const preview =
+      CreateDrainResponseVariant0SamplingItemEnv._('preview');
+  static const production =
+      CreateDrainResponseVariant0SamplingItemEnv._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0SamplingItemEnv && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant0SamplingItemEnv &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDrainResponseVariant0SamplingItemType {
-
   final String value;
 
   const CreateDrainResponseVariant0SamplingItemType._(this.value);
 
-  factory CreateDrainResponseVariant0SamplingItemType.fromJson(String value) => CreateDrainResponseVariant0SamplingItemType._(value);
+  factory CreateDrainResponseVariant0SamplingItemType.fromJson(String value) =>
+      CreateDrainResponseVariant0SamplingItemType._(value);
 
-  static const headSampling = CreateDrainResponseVariant0SamplingItemType._('head_sampling');
+  static const headSampling =
+      CreateDrainResponseVariant0SamplingItemType._('head_sampling');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0SamplingItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant0SamplingItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Informational marker for a system-owned default drain.
 final class CreateDrainResponseVariant0SourceVariant0DefaultFor {
-
   final String value;
 
   const CreateDrainResponseVariant0SourceVariant0DefaultFor._(this.value);
 
-  factory CreateDrainResponseVariant0SourceVariant0DefaultFor.fromJson(String value) => CreateDrainResponseVariant0SourceVariant0DefaultFor._(value);
+  factory CreateDrainResponseVariant0SourceVariant0DefaultFor.fromJson(
+          String value) =>
+      CreateDrainResponseVariant0SourceVariant0DefaultFor._(value);
 
-  static const eveTracing = CreateDrainResponseVariant0SourceVariant0DefaultFor._('eve-tracing');
+  static const eveTracing =
+      CreateDrainResponseVariant0SourceVariant0DefaultFor._('eve-tracing');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0SourceVariant0DefaultFor && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant0SourceVariant0DefaultFor &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum CreateDrainResponseVariant0SourceVariant0Kind {
@@ -131,14 +162,18 @@ enum CreateDrainResponseVariant0SourceVariant0Kind {
 
   static CreateDrainResponseVariant0SourceVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'self-served': return CreateDrainResponseVariant0SourceVariant0Kind.selfServed;
-      default: throw ArgumentError('Unknown CreateDrainResponseVariant0SourceVariant0Kind: $value');
+      case 'self-served':
+        return CreateDrainResponseVariant0SourceVariant0Kind.selfServed;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDrainResponseVariant0SourceVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant0SourceVariant0Kind.selfServed: return 'self-served';
+      case CreateDrainResponseVariant0SourceVariant0Kind.selfServed:
+        return 'self-served';
     }
   }
 
@@ -151,14 +186,18 @@ enum CreateDrainResponseVariant0SourceVariant1Kind {
 
   static CreateDrainResponseVariant0SourceVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'integration': return CreateDrainResponseVariant0SourceVariant1Kind.integration;
-      default: throw ArgumentError('Unknown CreateDrainResponseVariant0SourceVariant1Kind: $value');
+      case 'integration':
+        return CreateDrainResponseVariant0SourceVariant1Kind.integration;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDrainResponseVariant0SourceVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant0SourceVariant1Kind.integration: return 'integration';
+      case CreateDrainResponseVariant0SourceVariant1Kind.integration:
+        return 'integration';
     }
   }
 
@@ -167,12 +206,12 @@ enum CreateDrainResponseVariant0SourceVariant1Kind {
 }
 
 final class CreateDrainResponseVariant0Status {
-
   final String value;
 
   const CreateDrainResponseVariant0Status._(this.value);
 
-  factory CreateDrainResponseVariant0Status.fromJson(String value) => CreateDrainResponseVariant0Status._(value);
+  factory CreateDrainResponseVariant0Status.fromJson(String value) =>
+      CreateDrainResponseVariant0Status._(value);
 
   static const disabled = CreateDrainResponseVariant0Status._('disabled');
   static const enabled = CreateDrainResponseVariant0Status._('enabled');
@@ -180,89 +219,119 @@ final class CreateDrainResponseVariant0Status {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0Status && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant0Status && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDrainResponseVariant1DeliveryVariant0Compression {
-
   final String value;
 
   const CreateDrainResponseVariant1DeliveryVariant0Compression._(this.value);
 
-  factory CreateDrainResponseVariant1DeliveryVariant0Compression.fromJson(String value) => CreateDrainResponseVariant1DeliveryVariant0Compression._(value);
+  factory CreateDrainResponseVariant1DeliveryVariant0Compression.fromJson(
+          String value) =>
+      CreateDrainResponseVariant1DeliveryVariant0Compression._(value);
 
-  static const gzip = CreateDrainResponseVariant1DeliveryVariant0Compression._('gzip');
-  static const none = CreateDrainResponseVariant1DeliveryVariant0Compression._('none');
+  static const gzip =
+      CreateDrainResponseVariant1DeliveryVariant0Compression._('gzip');
+  static const none =
+      CreateDrainResponseVariant1DeliveryVariant0Compression._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant1DeliveryVariant0Compression && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant1DeliveryVariant0Compression &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDrainResponseVariant1DeliveryVariant0Encoding {
-
   final String value;
 
   const CreateDrainResponseVariant1DeliveryVariant0Encoding._(this.value);
 
-  factory CreateDrainResponseVariant1DeliveryVariant0Encoding.fromJson(String value) => CreateDrainResponseVariant1DeliveryVariant0Encoding._(value);
+  factory CreateDrainResponseVariant1DeliveryVariant0Encoding.fromJson(
+          String value) =>
+      CreateDrainResponseVariant1DeliveryVariant0Encoding._(value);
 
-  static const json = CreateDrainResponseVariant1DeliveryVariant0Encoding._('json');
-  static const ndjson = CreateDrainResponseVariant1DeliveryVariant0Encoding._('ndjson');
+  static const json =
+      CreateDrainResponseVariant1DeliveryVariant0Encoding._('json');
+  static const ndjson =
+      CreateDrainResponseVariant1DeliveryVariant0Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant1DeliveryVariant0Encoding && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant1DeliveryVariant0Encoding &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind {
-
   final String value;
 
-  const CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(this.value);
+  const CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(
+      this.value);
 
-  factory CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind.fromJson(String value) => CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(value);
+  factory CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind.fromJson(
+          String value) =>
+      CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(value);
 
-  static const integrationSecret = CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._('INTEGRATION_SECRET');
+  static const integrationSecret =
+      CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(
+          'INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant1DeliveryVariant0SecretVariant1Kind &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum CreateDrainResponseVariant1DeliveryVariant0Type {
   http;
 
-  static CreateDrainResponseVariant1DeliveryVariant0Type fromJson(String value) {
+  static CreateDrainResponseVariant1DeliveryVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'http': return CreateDrainResponseVariant1DeliveryVariant0Type.http;
-      default: throw ArgumentError('Unknown CreateDrainResponseVariant1DeliveryVariant0Type: $value');
+      case 'http':
+        return CreateDrainResponseVariant1DeliveryVariant0Type.http;
+      default:
+        throw ArgumentError(
+            'Unknown CreateDrainResponseVariant1DeliveryVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant1DeliveryVariant0Type.http: return 'http';
+      case CreateDrainResponseVariant1DeliveryVariant0Type.http:
+        return 'http';
     }
   }
 
@@ -271,22 +340,29 @@ enum CreateDrainResponseVariant1DeliveryVariant0Type {
 }
 
 final class CreateDrainResponseVariant1DeliveryVariant1Encoding {
-
   final String value;
 
   const CreateDrainResponseVariant1DeliveryVariant1Encoding._(this.value);
 
-  factory CreateDrainResponseVariant1DeliveryVariant1Encoding.fromJson(String value) => CreateDrainResponseVariant1DeliveryVariant1Encoding._(value);
+  factory CreateDrainResponseVariant1DeliveryVariant1Encoding.fromJson(
+          String value) =>
+      CreateDrainResponseVariant1DeliveryVariant1Encoding._(value);
 
-  static const json = CreateDrainResponseVariant1DeliveryVariant1Encoding._('json');
-  static const proto = CreateDrainResponseVariant1DeliveryVariant1Encoding._('proto');
+  static const json =
+      CreateDrainResponseVariant1DeliveryVariant1Encoding._('json');
+  static const proto =
+      CreateDrainResponseVariant1DeliveryVariant1Encoding._('proto');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDrainResponseVariant1DeliveryVariant1Encoding && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDrainResponseVariant1DeliveryVariant1Encoding &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

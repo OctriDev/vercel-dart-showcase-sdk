@@ -4,272 +4,472 @@
 part of 'projects_upload.dart';
 
 // projects_upload domain models
-class UploadProjectAvatarResponseEnvItemContentHintVariant0 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant0
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant0Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant0({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant0(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant0 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant0Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant0 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant0Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant0(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant0Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant0 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant0(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant0Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant0.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant0(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant0(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant0Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant1 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant1
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant1Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant1({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant1(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant1 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant1Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant1 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant1Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant1(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant1Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant1 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant1(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant1Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant1.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant1(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant1(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant1Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant2 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant2
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant2Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant2({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant2(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant2 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant2Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant2 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant2Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant2(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant2Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant2 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant2(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant2Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant2.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant2(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant2(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant2Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant3 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant3
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant3Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant3({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant3(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant3 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant3Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant3 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant3Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant3 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant3(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant3Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant3 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant3(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant3Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant3.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant3(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant3Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant3(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant3Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant4 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant4
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant4Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant4({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant4(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant4 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant4Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant4 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant4Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant4 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant4(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant4Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant4 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant4(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant4Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant4.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant4(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant4Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant4(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant4Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant5 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant5
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant5Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant5({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant5(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant5 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant5Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant5 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant5Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant5 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant5(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant5Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant5 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant5(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant5Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant5.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant5(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant5Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant5(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant5Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant6 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant6
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant6Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant6({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant6(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant6 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant6Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant6 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant6Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant6 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant6(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant6Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant6 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant6(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant6Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant6.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant6(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant6Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant6(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant6Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant7 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant7
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant7Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant7({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant7(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant7 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant7Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant7 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant7Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant7 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant7(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant7Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant7 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant7(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant7Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant7.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant7(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant7Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant7(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant7Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant8 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant8
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant8Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant8({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant8(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant8 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant8Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant8 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant8Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant8 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant8(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant8Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant8 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant8(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant8Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant8.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant8(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant8Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant8(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant8Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
-class UploadProjectAvatarResponseEnvItemContentHintVariant9 implements SdkJsonModel {
+class UploadProjectAvatarResponseEnvItemContentHintVariant9
+    implements SdkJsonModel {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
   final UploadProjectAvatarResponseEnvItemContentHintVariant9Type type_;
 
-  const UploadProjectAvatarResponseEnvItemContentHintVariant9({required this.storeId, required this.type_});
+  const UploadProjectAvatarResponseEnvItemContentHintVariant9(
+      {required this.storeId, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant9 Function({String storeId, UploadProjectAvatarResponseEnvItemContentHintVariant9Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemContentHintVariant9 Function(
+          {String storeId,
+          UploadProjectAvatarResponseEnvItemContentHintVariant9Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemContentHintVariant9 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemContentHintVariant9(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemContentHintVariant9Type,
-  );
+  UploadProjectAvatarResponseEnvItemContentHintVariant9 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseEnvItemContentHintVariant9(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UploadProjectAvatarResponseEnvItemContentHintVariant9Type,
+      );
 
-  factory UploadProjectAvatarResponseEnvItemContentHintVariant9.fromJson(Map<String, dynamic> json) => sdkKeepRawJson(UploadProjectAvatarResponseEnvItemContentHintVariant9(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemContentHintVariant9Type.fromJson(json['type'] as String) : null)!,
-  ), json);
+  factory UploadProjectAvatarResponseEnvItemContentHintVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      sdkKeepRawJson(
+          UploadProjectAvatarResponseEnvItemContentHintVariant9(
+            storeId: (json['storeId'] as String?)!,
+            type_: (json['type'] != null
+                ? UploadProjectAvatarResponseEnvItemContentHintVariant9Type
+                    .fromJson(json['type'] as String)
+                : null)!,
+          ),
+          json);
 
   @override
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
